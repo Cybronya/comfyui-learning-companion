@@ -1,38 +1,41 @@
 ---
 name: unknown_workflow_generic_85
 type: Unknown Workflow
-frequency: 18
+frequency: 16
 level: moderate
-coverage: 0.981944
-common_nodes: [LoadImage, RunningHub DreamO, SaveImage]
+coverage: 0.828
+common_nodes: [Image Comparer (rgthree), LoadImage, RealRestorerApplyDevices, RealRestorerLoadPipeline, RealRestorerRun, SaveImage]
 problems: []
 missing: []
-members: ["图片生成/图生图/DreamO + IP,ID,Style_1925663555176337409.json", 图片生成/图生图/DreamO IP风格一致主体更换实验版V3(需要抽卡！不炸显存版)_1925886376980467714.json, 图片生成/图生图/DreamO 双图融合_1926233838349938689.json, 图片生成/图生图/DreamO人物一致性_1926144702796500994.json, 图片生成/图生图/DreamO人物一致性_1926454640617922562.json, 图片生成/图生图/DreamO人物一致性动作编辑背景融合工作流V2（不炸显存）_1925928354346651649.json, 图片生成/图生图/DreamO单人换脸_1926471520141611010.json, 图片生成/图生图/DreamO单人换脸换装_1926491012795932673.json, 图片生成/图生图/DreamO双人融合一致性工作流V2（不炸显存）_1925968531849187329.json, 图片生成/图生图/DreamO多人换脸_1926473823258877954.json, 图片生成/图生图/DreamO多人换装_1926486318728253441.json, 图片生成/图生图/DreamO多图一致性_1926452410628345857.json, 图片生成/图生图/DreamO换装_1926474716523995137.json, 图片生成/图生图/DreamO毕业礼盒原服装版_1928260943740813313.json, 图片生成/图生图/DreamO毕业礼盒换装版_1928277135717187585.json, 图片生成/图生图/DreamO风格人物一致性_1926461837213339650.json, 图片生成/图生图/DreamO风格多人物一致性_1926466212845490178.json, 平台全量/旅拍机-旅拍照片-备选DreamO-慢速高耗_2071278853120684033.json]
+members: [图片生成/图生图/EitanStudio图像去雾噪点_2044690437016920065.json, 图片生成/图生图/RealRestorer 图像修复多用途合集_2040991755759259650.json, 图片生成/图生图/RealRestorer最强模糊修复--动态模糊修复_2039575355018711041.json, 图片生成/图生图/图像一键修复 RealRestorer_2039597593205936130.json, 图片生成/图生图/图像优化重塑  RealRestorer 去除 摩尔纹  伪影 噪点 变通透 等等功能_2039591361053204482.json, 图片生成/图生图/拯救废片 动态模糊修复 照片修复 RealRestorer最强模糊修复_2039882381393403906.json, 图片生成/图生图/模糊修复-去除光影-RealRestorer-图片处理_2039728081501425665.json, 图片生成/图生图/（低光恢复）RealRestorer最强模糊修复V1_2039519963916017666.json, 图片生成/图生图/（修复清晰度去除伪影）RealRestorer最强模糊修复V1_2039514489401380866.json, 图片生成/图生图/（动态模糊修复）RealRestorer最强模糊修复V1_2038799677977534465.json, 图片生成/图生图/（去摩尔纹）RealRestorer最强模糊修复V1_2039520147588784130.json, 图片生成/图生图/（去除反光）RealRestorer最强模糊修复V1_2039521232843968513.json, 图片生成/图生图/（去除噪点）RealRestorer最强模糊修复V1_2039520319232282626.json, 图片生成/图生图/（去雾）RealRestorer最强模糊修复V1_2039516759367098370.json, 图片生成/图生图/（除炫光）RealRestorer最强模糊修复V1_2039519749205397506.json, 图片生成/图生图/（雨水清除）RealRestorer最强模糊修复V1_2039520925116276737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_85
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/DreamO + IP,ID,Style_1925663555176337409.json、图片生成/图生图/DreamO IP风格一致主体更换实验版V3(需要抽卡！不炸显存版)_1925886376980467714.json、图片生成/图生图/DreamO 双图融合_1926233838349938689.json、图片生成/图生图/DreamO人物一致性_1926144702796500994.json、图片生成/图生图/DreamO人物一致性_1926454640617922562.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/EitanStudio图像去雾噪点_2044690437016920065.json、图片生成/图生图/RealRestorer 图像修复多用途合集_2040991755759259650.json、图片生成/图生图/RealRestorer最强模糊修复--动态模糊修复_2039575355018711041.json、图片生成/图生图/图像一键修复 RealRestorer_2039597593205936130.json、图片生成/图生图/图像优化重塑  RealRestorer 去除 摩尔纹  伪影 噪点 变通透 等等功能_2039591361053204482.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `RunningHub DreamO`
+- `RealRestorerApplyDevices`
+- `RealRestorerLoadPipeline`
+- `RealRestorerRun`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 17/18 个有
-- `easy cleanGpuUsed` —— 17/18 个有
-- `PDIMAGE_LongerSize` —— 16/18 个有
-- `ImageResize+` —— 13/18 个有
-- `Primitive string [Crystools]` —— 13/18 个有
+- `CR Prompt Text` —— 15/16 个有
+- `ImageConcanate` —— 11/16 个有
+- `AddLabel` —— 10/16 个有
+- `PreviewImage` —— 3/16 个有
+- `easy positive` —— 1/16 个有
 
 ## 典型参数
 

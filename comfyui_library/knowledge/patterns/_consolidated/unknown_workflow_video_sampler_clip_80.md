@@ -3,89 +3,62 @@ name: unknown_workflow_video_sampler_clip_80
 type: Unknown Workflow
 frequency: 8
 level: strong
-coverage: 0.771875
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ColorMatch, ImageResizeKJv2, ImageScaleBy, KSamplerAdvanced, LoadImage, ModelSamplingSD3, Pick From Batch (mtb), PreviewImage, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+coverage: 0.951875
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/smoothMix图生视频_1983520094011760642.json, 平台全量/头发图生视频 （大幅度摆动）浮云 12.18 替代MJ_2001186817330249730.json, 视频生成/图生视频/Comfy挑战赛8（诡影映画）-Smooth恐怖版图生视频_1983768746911277058.json, 视频生成/图生视频/Dasiwa V9模型VS Wan2.2 Smooth V2模型图生视频对比_2011762813080965122.json, 视频生成/图生视频/Dasiwa Vs Remix V2 VS  Smooth图生视频对比工作流V1_1991464228328521730.json, 视频生成/图生视频/Hunyuanvideo 1.5 12 steps Vs Wan2.2 Smooth图生视频对比V1_1997502737183084545.json, 视频生成/图生视频/Hunyuanvideo Vs Wan2.2 Smooth图生视频对比工作流V1_1992820026646523905.json, 视频生成/图生视频/Wan2.2 Smooth  V1模型VS V2模型图生视频对比_2010545068549083138.json]
+members: [视频生成/图生视频/Wan 2.2 Image to Video_2037082773323780097.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_2114564471111905282.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_2114671381353943042.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 图生视频加速版_1950026797163438082.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 图生视频（工作室自用）_2027632357276131329.json, 视频生成/图生视频/Wan2.2 14B+LightX2V超极速图生视频_1952642819863318529.json, 视频生成/图生视频/Wan2.2 图生视频-极速版_1950032039593558017.json, 视频生成/图生视频/wan2.2极速图生视频+推理增强版_2029088291949121537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_80
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/smoothMix图生视频_1983520094011760642.json、平台全量/头发图生视频 （大幅度摆动）浮云 12.18 替代MJ_2001186817330249730.json、视频生成/图生视频/Comfy挑战赛8（诡影映画）-Smooth恐怖版图生视频_1983768746911277058.json、视频生成/图生视频/Dasiwa V9模型VS Wan2.2 Smooth V2模型图生视频对比_2011762813080965122.json、视频生成/图生视频/Dasiwa Vs Remix V2 VS  Smooth图生视频对比工作流V1_1991464228328521730.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 Image to Video_2037082773323780097.json、视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_2114564471111905282.json、视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_2114671381353943042.json、视频生成/图生视频/Wan2.2 14B+LightX2V 图生视频加速版_1950026797163438082.json、视频生成/图生视频/Wan2.2 14B+LightX2V 图生视频（工作室自用）_2027632357276131329.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ColorMatch`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
 - `KSamplerAdvanced`
 - `LoadImage`
 - `ModelSamplingSD3`
-- `Pick From Batch (mtb)`
-- `PreviewImage`
-- `SaveImage`
-- `Seed (rgthree)`
-- `UNETLoader`
+- `PathchSageAttentionKJ`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 7/8 个有
-- `JWInteger` —— 7/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
+- `LayerUtility: PurgeVRAM` —— 7/8 个有
 - `LoraLoaderModelOnly` —— 7/8 个有
-- `easy cleanGpuUsed` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `AILab_QwenVL` —— 5/8 个有
-- `AddLabel` —— 5/8 个有
-- `ImageConcanate` —— 5/8 个有
-- `LayerUtility: PurgeVRAM` —— 5/8 个有
-- `PathchSageAttentionKJ` —— 5/8 个有
-- `RH_LLMAPI_NODE` —— 5/8 个有
-- `RIFE VFI` —— 5/8 个有
-- `PrimitiveStringMultiline` —— 4/8 个有
-- `StringConcatenate` —— 4/8 个有
-- `UnetLoaderGGUF` —— 3/8 个有
-- `BasicScheduler` —— 2/8 个有
-- `CFGGuider` —— 2/8 个有
-- `DualCLIPLoader` —— 2/8 个有
-- `EasyCache` —— 2/8 个有
-- `HunyuanVideo15ImageToVideo` —— 2/8 个有
-- `KSamplerSelect` —— 2/8 个有
-- `ModelPatchTorchSettings` —— 2/8 个有
-- `RandomNoise` —— 2/8 个有
-- `SamplerCustomAdvanced` —— 2/8 个有
-- `VAEDecodeTiled` —— 2/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `PDIMAGE_LongerSize` —— 1/8 个有
-- `PainterI2V` —— 1/8 个有
-- `Power Lora Loader (rgthree)` —— 1/8 个有
-- `RunningHub Deepcleaner` —— 1/8 个有
-- `mxSlider2D` —— 1/8 个有
+- `UNETLoader` —— 7/8 个有
+- `JWInteger` —— 3/8 个有
+- `SimpleMath+` —— 2/8 个有
+- `easy int` —— 2/8 个有
+- `CLIPVisionEncode` —— 1/8 个有
+- `CLIPVisionLoader` —— 1/8 个有
+- `ConditioningZeroOut` —— 1/8 个有
+- `FL_RIFE` —— 1/8 个有
+- `ImageResize+` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `UnetLoaderGGUF` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
 | 采样步数 | fixed | - | 8 | 88% |
-| Prompt 约束强度(CFG) | 8 | 6 - 8 | 8 | 87% |
+| Prompt 约束强度(CFG) | 6 | 6 - 8 | 8 | 89% |
 | 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler_ancestral | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 100% |
+| 调度器 | lcm | - | 8 | 88% |
+| 重绘幅度 | simple | - | 8 | 88% |
 
 ## 常见问题
 
@@ -94,7 +67,7 @@ source: knowledge_consolidation
 ## 建议与风险
 
 - 采样步数 最常用 fixed，8 个样本，一致性 88%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，8 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，8 个样本，取值集中（一致性 89%）
 - 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 调度器 最常用 lcm，8 个样本，一致性 88%
+- 重绘幅度 最常用 simple，8 个样本，一致性 88%

@@ -1,70 +1,75 @@
 ---
 name: unknown_workflow_video_sampler_vae_98
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.816833
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, FantasyTalkingModelLoader, FantasyTalkingWav2VecEmbeds, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.7426
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/逼真自然数字人-图像+音频驱动-FantasyTalking-Wan2.1_1918301411795472385.json, 视频生成/图生视频/(修复版)FantasyTalking阿里数字人对口型框架(wan2.1)_1917005137418850305.json, 视频生成/图生视频/FantasyTalking WAN2.1 数字人口播，完美对嘴型_1917980090234241025.json, 视频生成/图生视频/FantasyTalking+Cosyvoice2数字人4倍加速优化版V2（base）_1917274525388705794.json, 视频生成/图生视频/FantasyTalking+Cosyvoice数字人Skyreels v2 I2V稳定加速版V2_1917039782952632322.json, 视频生成/图生视频/FantasyTalking对口型_1917403331021438977.json]
+members: [视频生成/图生视频/FusionX-Phantom 多图融合14B高清版_1934266873917956097.json, 视频生成/图生视频/FusionX-VACE多图融合_1934249713015156738.json, 视频生成/图生视频/FusionX-VACE深度_姿势二选一视频转绘_1934166540621107202.json, 视频生成/图生视频/Wan VACE视频编辑参考深度出视频-KJ版_1908545903828082690.json, 视频生成/图生视频/控制人物动作、跳舞视频、wan2.1 vace_1926291391310184449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_98
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/逼真自然数字人-图像+音频驱动-FantasyTalking-Wan2.1_1918301411795472385.json、视频生成/图生视频/(修复版)FantasyTalking阿里数字人对口型框架(wan2.1)_1917005137418850305.json、视频生成/图生视频/FantasyTalking WAN2.1 数字人口播，完美对嘴型_1917980090234241025.json、视频生成/图生视频/FantasyTalking+Cosyvoice2数字人4倍加速优化版V2（base）_1917274525388705794.json、视频生成/图生视频/FantasyTalking+Cosyvoice数字人Skyreels v2 I2V稳定加速版V2_1917039782952632322.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/FusionX-Phantom 多图融合14B高清版_1934266873917956097.json、视频生成/图生视频/FusionX-VACE多图融合_1934249713015156738.json、视频生成/图生视频/FusionX-VACE深度_姿势二选一视频转绘_1934166540621107202.json、视频生成/图生视频/Wan VACE视频编辑参考深度出视频-KJ版_1908545903828082690.json、视频生成/图生视频/控制人物动作、跳舞视频、wan2.1 vace_1926291391310184449.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `FantasyTalkingModelLoader`
-- `FantasyTalkingWav2VecEmbeds`
-- `LoadAudio`
+全部 5 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 5/6 个有
-- `GetNode` —— 4/6 个有
-- `INTConstant` —— 4/6 个有
-- `ImageResizeKJ` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `SetNode` —— 4/6 个有
-- `WanVideoContextOptions` —— 3/6 个有
-- `WanVideoTorchCompileSettings` —— 3/6 个有
-- `ImageConcanate` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `NTCosyVoiceCrossLingualSampler` —— 2/6 个有
-- `NTCosyVoiceInstruct2Sampler` —— 2/6 个有
-- `NTCosyVoiceZeroShotSampler` —— 2/6 个有
-- `PreviewAudio` —— 2/6 个有
-- `Primitive integer [Crystools]` —— 2/6 个有
-- `Text Multiline` —— 2/6 个有
-- `VHS_LoadVideo` —— 2/6 个有
-- `WanVideoEnhanceAVideo` —— 2/6 个有
-- `WanVideoExperimentalArgs` —— 2/6 个有
-- `WanVideoSLG` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `WanVideoVRAMManagement` —— 1/6 个有
+- `LayerUtility: ImageRemoveAlpha` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `WanVideoVACEEncode` —— 4/5 个有
+- `CR Text` —— 3/5 个有
+- `DepthAnything_V2` —— 3/5 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 3/5 个有
+- `JWInteger` —— 3/5 个有
+- `LayerMask: BiRefNetUltraV2` —— 3/5 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `VHS_LoadVideo` —— 3/5 个有
+- `WanVideoApplyNAG` —— 3/5 个有
+- `WanVideoTeaCache` —— 3/5 个有
+- `WanVideoTextEncodeSingle` —— 3/5 个有
+- `MathExpression|pysssss` —— 2/5 个有
+- `WanVideoTextEncode` —— 2/5 个有
+- `WanVideoVACEModelSelect` —— 2/5 个有
+- `easy imageSize` —— 2/5 个有
+- `AIO_Preprocessor` —— 1/5 个有
+- `ImageConcanate` —— 1/5 个有
+- `ImagePadKJ` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `InspyrenetRembg` —— 1/5 个有
+- `Note _O` —— 1/5 个有
+- `Primitive integer [Crystools]` —— 1/5 个有
+- `WanVideoEncode` —— 1/5 个有
+- `WanVideoPhantomEmbeds` —— 1/5 个有
 
 ## 典型参数
 

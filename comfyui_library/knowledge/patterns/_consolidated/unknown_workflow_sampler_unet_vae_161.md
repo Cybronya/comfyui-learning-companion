@@ -1,64 +1,71 @@
 ---
 name: unknown_workflow_sampler_unet_vae_161
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.902375
-common_nodes: [CLIPLoader, CR Text, EmptyLatentImage, GetImageSize, Image Comparer (rgthree), ImageConcatMulti, KSampler, LoadImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.955143
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen_image_2.1多图编辑——换装_物品迁移_2108004646777352194.json, 图片生成/图生图/qwen-2.1  多图编辑 Multi-Image Editing 换装换脸Costume and_2108715805969043458.json, 图片生成/图生图/qwen-2.1 照片转实景摄影 Photo-to-Real-Scene Conversion_2108715825342541826.json, 图片生成/图生图/qwen-2.1照片转实景_2108087844450422786.json, 图片生成/图生图/qwen_image_2.1多图编辑_2101901671612895234.json, 图片生成/图生图/换装换脸qwen-2.1++多图编辑+Multi-Image+Editing+Costume+and_2110904028644331521.json, 图片生成/图生图/换装摆姿势qwen-2.1+多图编辑_2116860205077188610.json, 平台全量/Qwen_image_2.1多图编辑——换装_物品迁移_2101922870967488513.json]
+members: [图片生成/文生图/AI Video Studio PR插件VIP专用短视频最新工作流_2107706140200099841.json, 图片生成/文生图/AI Video Studio 专用短视频生成工作流_2107634472081510402.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧专用工作流_2103080690807037953.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成单人对口型_2095494977097916418.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成工作流_2102629858160496642.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成最新工作流_2093552366741180417.json, 视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成（多人）工作流_2095674532345499649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_161
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen_image_2.1多图编辑——换装_物品迁移_2108004646777352194.json、图片生成/图生图/qwen-2.1  多图编辑 Multi-Image Editing 换装换脸Costume and_2108715805969043458.json、图片生成/图生图/qwen-2.1 照片转实景摄影 Photo-to-Real-Scene Conversion_2108715825342541826.json、图片生成/图生图/qwen-2.1照片转实景_2108087844450422786.json、图片生成/图生图/qwen_image_2.1多图编辑_2101901671612895234.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/AI Video Studio PR插件VIP专用短视频最新工作流_2107706140200099841.json、图片生成/文生图/AI Video Studio 专用短视频生成工作流_2107634472081510402.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧专用工作流_2103080690807037953.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成单人对口型_2095494977097916418.json、视频生成/文生视频/AI Video Studio PR插件VIP专用短剧生成工作流_2102629858160496642.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `EmptyLatentImage`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageConcatMulti`
-- `KSampler`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `EasyCache`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `XinbaoImageStandardizer` —— 6/8 个有
-- `ComfySwitchNode` —— 4/8 个有
-- `ImpactInt` —— 4/8 个有
-- `QwenPERewriteT8` —— 4/8 个有
-- `ShowText|pysssss` —— 4/8 个有
-- `easy imageScaleDownToSize` —— 4/8 个有
-- `LoraLoaderModelOnly` —— 2/8 个有
-- `图像缩放V2_孤海` —— 2/8 个有
-- `PreviewImage` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/7 个有
+- `CR Text` —— 5/7 个有
+- `ImageUpscaleWithModel` —— 5/7 个有
+- `LazySwitchKJ_UTK` —— 5/7 个有
+- `PrimitiveFloat` —— 5/7 个有
+- `TextConcatenate_UTK` —— 5/7 个有
+- `UpscaleModelLoader` —— 5/7 个有
+- `easy boolean` —— 5/7 个有
+- `Apply Whisper` —— 4/7 个有
+- `AudioCrop` —— 4/7 个有
+- `DF_Int_to_Float` —— 4/7 个有
+- `FB_Qwen3TTSDialogueInference` —— 4/7 个有
+- `FB_Qwen3TTSRoleBank` —— 4/7 个有
+- `FB_Qwen3TTSVoiceClonePrompt` —— 4/7 个有
+- `ImpactSwitch` —— 4/7 个有
+- `VHS_VideoCombine` —— 4/7 个有
+- `CreateVideo` —— 3/7 个有
+- `SaveVideo` —— 3/7 个有
+- `VAEDecodeAudio` —— 3/7 个有
+- `ImageScaleBy` —— 2/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 1088 | 1088 - 1088 | 8 | 100% |
-| 高度 | 2048 | 2048 - 2048 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,10 +73,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1088，观测区间 1088 - 1088，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 2048，观测区间 2048 - 2048，8 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

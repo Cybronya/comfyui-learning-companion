@@ -1,69 +1,68 @@
 ---
 name: unknown_workflow_sampler_unet_vae_90
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.898
-common_nodes: [CLIPLoader, KSampler, LoadImage, PreviewImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 10
+level: moderate
+coverage: 0.8989
+common_nodes: [CLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-image2.1-人像多角度生成_2101942834889838593.json, 图片生成/图生图/Qwen-image2.1-人像多角度生成_2108744184894148609.json, 图片生成/图生图/Qwen-image2.1-人像多角度生成_2110187888993456130.json, 图片生成/图生图/Qwen-image2.1-人物转白模_2107713734658584577.json, 图片生成/图生图/Qwen-image2.1-动作迁移2_2107475110847401986.json, 图片生成/图生图/Qwen-image2.1-单图编辑（4步加速）_2102723958306066433.json, 图片生成/图生图/Qwen-image2.1-图像人像+角度操控（AnyAngl-lora）_2105204359549243394.json, 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2102382946584977410.json, 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2105644895645032449.json, 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2105682659937705986.json, 图片生成/图生图/Qwen-image2.1-角色四视图及三视图生成_2103034276039188481.json, 图片生成/图生图/Qwen-image2.1-透明图层抠图_2102747243479658497.json]
+members: [图片生成/图生图/Costume Changes and Face Swaps Flux3_klein 图像编辑_2113428085260513281.json, 图片生成/图生图/Flux3 图片强化_2114538601471111169.json, 图片生成/图生图/Flux3-Klein-图像编辑_2111109110757412866.json, 图片生成/图生图/Moss-image-局部重绘_2112544404337676289.json, 图片生成/图生图/Qwen-image2.1-万能局部重绘_2108164582689824769.json, 图片生成/图生图/Qwen-image2.1-万能局部重绘_2110648449984196609.json, 图片生成/图生图/Qwen-image2.1-万能局部重绘_2111278068961730562.json, 图片生成/图生图/flux3_klein_image_edit图像编辑_2110972221408763906.json, 图片生成/图生图/flux3_klein_image_edit图像编辑_2112068355019599874.json, 图片生成/图生图/（9图）flux3_klein_image_edit图像编辑_2111089818842255361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_90
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1-人像多角度生成_2101942834889838593.json、图片生成/图生图/Qwen-image2.1-人像多角度生成_2108744184894148609.json、图片生成/图生图/Qwen-image2.1-人像多角度生成_2110187888993456130.json、图片生成/图生图/Qwen-image2.1-人物转白模_2107713734658584577.json、图片生成/图生图/Qwen-image2.1-动作迁移2_2107475110847401986.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Costume Changes and Face Swaps Flux3_klein 图像编辑_2113428085260513281.json、图片生成/图生图/Flux3 图片强化_2114538601471111169.json、图片生成/图生图/Flux3-Klein-图像编辑_2111109110757412866.json、图片生成/图生图/Moss-image-局部重绘_2112544404337676289.json、图片生成/图生图/Qwen-image2.1-万能局部重绘_2108164582689824769.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
+- **样本数**：10
+- **可信度**：中等可信
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `KSampler`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/12 个有
-- `LoraLoaderModelOnly` —— 9/12 个有
-- `CR Prompt Text` —— 4/12 个有
-- `QwenMultiangleCameraNode` —— 4/12 个有
-- `easy promptList` —— 4/12 个有
-- `easy showAnything` —— 4/12 个有
-- `EmptyLatentImage` —— 1/12 个有
+- `Image Comparer (rgthree)` —— 9/10 个有
+- `CLIPTextEncode` —— 7/10 个有
+- `ReferenceMultiLatent` —— 6/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
+- `CR Text` —— 4/10 个有
+- `InpaintModelConditioning` —— 4/10 个有
+- `Mask Fill Holes` —— 4/10 个有
+- `TextGenerate` —— 4/10 个有
+- `TextEncodeQwenImage21` —— 3/10 个有
+- `Int` —— 2/10 个有
+- `JjkText` —— 2/10 个有
+- `ConditioningZeroOut` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 6 - 25 | 12 | 59% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| 宽度 | 1560 | - | 1 | 100% |
-| 高度 | 904 | - | 1 | 100% |
+| 采样步数 | 25 | 16 - 50 | 10 | 66% |
+| Prompt 约束强度(CFG) | 1.75 | 1 - 3.5 | 10 | 45% |
+| 采样算法 | euler | - | 10 | 60% |
+| 调度器 | simple | - | 10 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 6 - 25，12 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 16 - 50，10 个样本
+- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 3.5，10 个样本，取值分散，一致性仅 45%
+- 采样算法 最常用 euler，10 个样本，一致性 60%
+- 调度器 最常用 simple，10 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）

@@ -1,76 +1,81 @@
 ---
 name: unknown_workflow_lora_sampler_clip_88
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.933857
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelApplySimple, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.7405
+common_nodes: [Audio Duration (mtb), AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, ImageBatch, ImageFromBatch, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, WanInfiniteTalkToVideo, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [图片生成/图生图/无需提示词，图生IP三视图_1911780889070895106.json, 图片生成/图生图/照片一键转绘 全能图片G-4o 吉卜力风格_1913046305365553153.json, 图片生成/图生图/美式喜剧风格插画_全能图片G4o(同款)_1909846224130797569.json, 平台全量/F.1 复古风格头像_1889917217784602625.json, 平台全量/Flux一键像素风头像_1866030337162637314.json, 平台全量/【转吉卜力风格】全能图片G-4o版吉卜力风格_1908754978499141634.json, 平台全量/超女superwoman_1867824818929418242.json]
+members: [数字人/数字人/infinite_talk_双人官流-长视频-循环-自动版_2018616978436526082.json, 数字人/数字人/infinite数字人-官流长视频循环自动版_2018616944190038017.json, 数字人/数字人/官方循环-infinitetalk_2018923804638056449.json, 视频生成/图生视频/官方循环-infinitetalk_2019285651199369217.json, 视频生成/文生视频/单人InfiniteTalk无限时长原生循环_2018256491320451073.json, 视频生成/文生视频/双人InfiniteTalk无限时长原生循环_2018267797146570753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_88
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/无需提示词，图生IP三视图_1911780889070895106.json、图片生成/图生图/照片一键转绘 全能图片G-4o 吉卜力风格_1913046305365553153.json、图片生成/图生图/美式喜剧风格插画_全能图片G4o(同款)_1909846224130797569.json、平台全量/F.1 复古风格头像_1889917217784602625.json、平台全量/Flux一键像素风头像_1866030337162637314.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/infinite_talk_双人官流-长视频-循环-自动版_2018616978436526082.json、数字人/数字人/infinite数字人-官流长视频循环自动版_2018616944190038017.json、数字人/数字人/官方循环-infinitetalk_2018923804638056449.json、视频生成/图生视频/官方循环-infinitetalk_2019285651199369217.json、视频生成/文生视频/单人InfiniteTalk无限时长原生循环_2018256491320451073.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 6 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
 - `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `ConditioningZeroOut`
+- `ImageBatch`
+- `ImageFromBatch`
 - `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelPatchLoader`
+- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `StyleModelApplySimple`
-- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `WanInfiniteTalkToVideo`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyPulidFlux` —— 6/7 个有
-- `PulidEvaClipLoader` —— 6/7 个有
-- `PulidFluxModelLoader` —— 6/7 个有
-- `PulidInsightFaceLoader` —— 6/7 个有
-- `ModelSamplingFlux` —— 5/7 个有
-- `EmptySD3LatentImage` —— 4/7 个有
-- `PreviewImage` —— 2/7 个有
-- `VAEEncode` —— 2/7 个有
-- `CR SDXL Aspect Ratio` —— 1/7 个有
-- `CR Text` —— 1/7 个有
-- `ConditioningZeroOut` —— 1/7 个有
-- `ControlNetApplySD3` —— 1/7 个有
-- `ControlNetLoader` —— 1/7 个有
-- `DF_Get_image_size` —— 1/7 个有
-- `EmptyLatentImage` —— 1/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `ImageResizeKJ` —— 1/7 个有
-- `RH_Captioner` —— 1/7 个有
-- `ShowText|pysssss` —— 1/7 个有
-- `easy promptConcat` —— 1/7 个有
+- `AudioConcat` —— 5/6 个有
+- `SimpleMath+` —— 5/6 个有
+- `MelBandRoFormerModelLoader` —— 4/6 个有
+- `MelBandRoFormerSampler` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `AudioCrop` —— 3/6 个有
+- `CreateVideo` —— 3/6 个有
+- `PreviewAudio` —— 3/6 个有
+- `SaveVideo` —— 3/6 个有
+- `VHS_VideoCombine` —— 3/6 个有
+- `GetNode` —— 2/6 个有
+- `LayerUtility: BooleanOperatorV2` —— 2/6 个有
+- `LayerUtility: If ` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `SimpleCalculatorKJ` —— 2/6 个有
+- `TrimAudioDuration` —— 2/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `MaskPreview+` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `PrimitiveString` —— 1/6 个有
+- `easy sam3ImageSegmentation` —— 1/6 个有
+- `easy sam3ModelLoader` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
-| 宽度 | 1536 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

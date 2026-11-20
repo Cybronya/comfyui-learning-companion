@@ -1,70 +1,80 @@
 ---
 name: text_to_image_lora_sampler_clip_511
 type: Text To Image
-frequency: 4
-level: moderate
-coverage: 0.894
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.762333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, SaveImageKJ, TextEncodeQwenImageEditPlus, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/超唯美生图：ZIT动漫大模+写实幻想曲lora_1994702476790075393.json, 图片生成/文生图/（Lora版）Anima 自动提示词文生图V1_2059972222953017346.json, 图片生成/文生图/（风格Lora版）Anima 自动_反推提示词_2073959866328432640.json, 图片生成/文生图/（风格Lora版）Anima+自动_反推提示词_2074373405180260354.json]
+members: [图片生成/图生图/LH-DMT版本-2.生图片类-048.Qwen一致性多角度写真摄影_2016524960361095169.json, 图片生成/图生图/Qwen-多角度真人摄影一致性图生图_1989605255010766849.json, 数字人/数字人/Dataset gen - QWEN - Icekiub v4_1978295273489326081.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_511
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/超唯美生图：ZIT动漫大模+写实幻想曲lora_1994702476790075393.json、图片生成/文生图/（Lora版）Anima 自动提示词文生图V1_2059972222953017346.json、图片生成/文生图/（风格Lora版）Anima 自动_反推提示词_2073959866328432640.json、图片生成/文生图/（风格Lora版）Anima+自动_反推提示词_2074373405180260354.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LH-DMT版本-2.生图片类-048.Qwen一致性多角度写真摄影_2016524960361095169.json、图片生成/图生图/Qwen-多角度真人摄影一致性图生图_1989605255010766849.json、数字人/数字人/Dataset gen - QWEN - Icekiub v4_1978295273489326081.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `UNETLoader`
+- `SaveImageKJ`
+- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `RHLLMChatNode` —— 3/4 个有
-- `RH_Captioner` —— 2/4 个有
-- `CheckpointLoaderSimple` —— 1/4 个有
-- `JDCN_StringToList` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
+- `PrimitiveString` —— 2/3 个有
+- `UnetLoaderGGUF` —— 2/3 个有
+- `easy promptLine` —— 2/3 个有
+- `CR Prompt List` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `StringConcatenate` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
+- `easy promptList` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 40 | 12 - 40 | 4 | 63% |
-| Prompt 约束强度(CFG) | 4.5 | 1.1 - 4.5 | 4 | 60% |
-| 采样算法 | er_sde | - | 4 | 75% |
-| 调度器 | beta | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 1068 | 1024 - 3056 | 4 | 44% |
-| 高度 | 1528 | 1080 - 1984 | 4 | 79% |
+| 宽度 | 512 | 512 - 512 | 3 | 100% |
+| 高度 | 512 | 512 - 512 | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 40，观测区间 12 - 40，4 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1.1 - 4.5，4 个样本
-- 采样算法 最常用 er_sde，4 个样本，一致性 75%
-- 调度器 最常用 beta，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1068，观测区间 1024 - 3056，4 个样本，取值分散，一致性仅 44%
-- 高度 中位数 1528，观测区间 1080 - 1984，4 个样本
+- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

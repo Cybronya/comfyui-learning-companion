@@ -1,69 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_201
 type: Unknown Workflow
-frequency: 7
+frequency: 5
 level: strong
-coverage: 0.878143
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.8258
+common_nodes: [CLIPLoader, Image Comparer (rgthree), KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json, 图片生成/文生图/Qwen Image 2.1文生图_2101902260690313218.json, 图片生成/文生图/Qwen Image 2.1透明图层+文生图！_2101836586576072706.json, 图片生成/文生图/Qwen Image 文生图_2102936313539416066.json, 图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json, 图片生成/文生图/Qwen-Image-2.1 text -image_2108513111039893506.json, 图片生成/文生图/Qwen-Image-2.1 文生图标准版_2104450148830109698.json]
+members: [图片生成/图生图/2026版Klein溶图专用【一致性强】_2047118708908232706.json, 图片生成/图生图/4步极速_真人转3D动漫_Flux2-Klein_2035916830765752321.json, 图片生成/图生图/KLEIN+BFS换头升级_2029476056725458945.json, 图片生成/图生图/qwen_image_edit 一键溶图（保留细节）_1968723830762086401.json, 图片生成/图生图/小红书开源FireRed Image Edit 1.1最强一键换装_2031672315548798977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_201
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图_2101861903931887617.json、图片生成/文生图/Qwen Image 2.1文生图_2101902260690313218.json、图片生成/文生图/Qwen Image 2.1透明图层+文生图！_2101836586576072706.json、图片生成/文生图/Qwen Image 文生图_2102936313539416066.json、图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/2026版Klein溶图专用【一致性强】_2047118708908232706.json、图片生成/图生图/4步极速_真人转3D动漫_Flux2-Klein_2035916830765752321.json、图片生成/图生图/KLEIN+BFS换头升级_2029476056725458945.json、图片生成/图生图/qwen_image_edit 一键溶图（保留细节）_1968723830762086401.json、图片生成/图生图/小红书开源FireRed Image Edit 1.1最强一键换装_2031672315548798977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `ResolutionSelector`
+- `LoadImage`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 4/7 个有
-- `CR Text` —— 3/7 个有
-- `PathchSageAttentionKJ` —— 2/7 个有
-- `CompressImages` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `JjkText` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `Anything Everywhere3` —— 3/5 个有
+- `GetImageSize` —— 3/5 个有
+- `PainterFluxImageEdit` —— 3/5 个有
+- `ConditioningZeroOut` —— 2/5 个有
+- `ImageScaleToTotalPixels` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `ModelSamplingAuraFlow` —— 2/5 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 2/5 个有
+- `AILab_QwenVL` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 25 - 50 | 7 | 75% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1024 | 864 - 1024 | 7 | 94% |
-| 高度 | 1024 | 1024 - 1536 | 7 | 84% |
+| 采样步数 | 4 | 4 - 8 | 5 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 25 - 50，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 864 - 1024，7 个样本，取值集中（一致性 94%）
-- 高度 中位数 1024，观测区间 1024 - 1536，7 个样本，取值集中（一致性 84%）
+- 采样步数 中位数 4，观测区间 4 - 8，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

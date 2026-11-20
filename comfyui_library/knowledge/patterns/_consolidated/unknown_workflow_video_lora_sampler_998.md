@@ -3,50 +3,73 @@ name: unknown_workflow_video_lora_sampler_998
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.893
-common_nodes: [CR SDXL Aspect Ratio, DWPreprocessor, ImageBlend, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MyOpenPoseNode, OpenposePreprocessor, PrimitiveString, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.88
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, CreateCFGScheduleFloatList, DownloadAndLoadWav2VecModel, Float, GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadAudio, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SaveAudio, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTextEncodeCached, WanVideoVAELoader, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [平台全量/舞蹈动作迁移(面部保持)_1950737193834860546.json, 数字人/数字人/动作迁移同时保持面部特征_1970663729157337090.json]
+members: [视频生成/文生视频/(Pro Max版)完爆OVI文生视频带配音数字人无限时长工作流--48G版_1975469825285820418.json, 视频生成/文生视频/(Pro高质量)跨模态仿OVI无限时长文生视频含配音数字人工作流V1（支持中文）_1975180560664498177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_998
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/舞蹈动作迁移(面部保持)_1950737193834860546.json、数字人/数字人/动作迁移同时保持面部特征_1970663729157337090.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/(Pro Max版)完爆OVI文生视频带配音数字人无限时长工作流--48G版_1975469825285820418.json、视频生成/文生视频/(Pro高质量)跨模态仿OVI无限时长文生视频含配音数字人工作流V1（支持中文）_1975180560664498177.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR SDXL Aspect Ratio`
-- `DWPreprocessor`
-- `ImageBlend`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `DownloadAndLoadWav2VecModel`
+- `Float`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
+- `LoadAudio`
 - `LoadWanVideoT5TextEncoder`
-- `MyOpenPoseNode`
-- `OpenposePreprocessor`
-- `PrimitiveString`
-- `ReActorFaceSwap`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SaveAudio`
+- `SetNode`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageResizeToClosest`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
+
+**可变部分**（部分 workflow 才有）：
+- `GetNode` —— 1/2 个有
+- `ImageFromBatch+` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `WanVideoTorchCompileSettings` —— 1/2 个有
 
 ## 典型参数
 

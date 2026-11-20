@@ -1,64 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_79
 type: Unknown Workflow
-frequency: 13
-level: strong
-coverage: 0.794462
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 12
+level: moderate
+coverage: 0.927917
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image 图生图 支持中文字体_1990712081664139265.json, 图片生成/图生图/Qwen-Image创意字体，一键直出-图生图_2008858589422690305.json, 图片生成/图生图/中文字体设计Qwen-Image图生图_2019564571903660034.json, 图片生成/文生图/Qwen-Image文生图 中文书法字体标题设计_1953729540789075969.json, 图片生成/文生图/中文字体设计  -  Qwen-Image图生图_1955892796286795777.json, 图片生成/文生图/中文字体设计 - 媲美即梦 -  Qwen-Image图生图_1953067660055613442.json, 图片生成/文生图/中秋节文字一键生成 - Qwen-Image文生图_1970162502074068993.json, 图片生成/文生图/双11大促活动字体一键生成 Qwen-Image文生图_1973238135855386626.json, 图片生成/文生图/双11年终大促+-+活动字体一键成_1970152346649063426.json, 图片生成/文生图/高级感艺术字生成（自带提示词模板）_1972314392975110146.json, 平台全量/QWen-Image中文字体设计_1954943735462182913.json, 平台全量/Qwen-千问多字体直出-字体设计 中文字体设计 - 媲美即梦 -  Qwen-Image图生图_1991742119616393218.json, 平台全量/字体设计，一键直出_1985917018920628225.json]
+members: [图片生成/图生图/电商产品场景图生成_2069077696059105281.json, 图片生成/图生图/电商产品换材质 flux2 klein_2026838584275247105.json, 图片生成/图生图/电商产品精修快速版_2044583021092802562.json, 图片生成/图生图/电商产品精修美化细节高清放大_2069464540449959937.json, 图片生成/图生图/电商任意角度打光 flux2 klein_2012726242851692545.json, 图片生成/图生图/电商移除图片指定位置内容_2026115966425374721.json, 图片生成/图生图/老孙AI 产品精修_2090283355492413441.json, 图片生成/图生图/🦖Flux2-klein单图编辑_2013897331980111873.json, 图片生成/文生图/AI一键生成12张绝美新年写真集_2024044240682098690.json, 图片生成/文生图/FLUX.2 Klein 4B工作流，8G显存1秒生成1张图片！_2012164022556172289.json, 图片生成/文生图/FLUX2 Klein 9B Consistency 一致性工作流_2073316611037163521.json, 图片生成/文生图/Flux2-Klein全家桶-多功能版_2016042987171614722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_79
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Qwen-Image 图生图 支持中文字体_1990712081664139265.json、图片生成/图生图/Qwen-Image创意字体，一键直出-图生图_2008858589422690305.json、图片生成/图生图/中文字体设计Qwen-Image图生图_2019564571903660034.json、图片生成/文生图/Qwen-Image文生图 中文书法字体标题设计_1953729540789075969.json、图片生成/文生图/中文字体设计  -  Qwen-Image图生图_1955892796286795777.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/电商产品场景图生成_2069077696059105281.json、图片生成/图生图/电商产品换材质 flux2 klein_2026838584275247105.json、图片生成/图生图/电商产品精修快速版_2044583021092802562.json、图片生成/图生图/电商产品精修美化细节高清放大_2069464540449959937.json、图片生成/图生图/电商任意角度打光 flux2 klein_2012726242851692545.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 12/13 个有
-- `Text Multiline` —— 12/13 个有
-- `easy showAnything` —— 12/13 个有
-- `Int` —— 11/13 个有
-- `LoadImage` —— 11/13 个有
-- `RH_Captioner` —— 11/13 个有
-- `ImpactSwitch` —— 10/13 个有
-- `PrimitiveBoolean` —— 10/13 个有
-- `easy ifElse` —— 10/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/13 个有
-- `FluxResolutionNode` —— 5/13 个有
-- `CR Text Replace` —— 4/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/13 个有
-- `PreviewImage` —— 4/13 个有
-- `Prompt_Text` —— 1/13 个有
+- `EmptyFlux2LatentImage` —— 11/12 个有
+- `GetImageSize` —— 11/12 个有
+- `Image Comparer (rgthree)` —— 8/12 个有
+- `ImageScaleToTotalPixels` —— 8/12 个有
+- `LoraLoaderModelOnly` —— 4/12 个有
+- `ConstrainImage|pysssss` —— 3/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/12 个有
+- `JjkText` —— 3/12 个有
+- `Label (rgthree)` —— 2/12 个有
+- `CR Latent Input Switch` —— 1/12 个有
+- `Colored Image (mtb)` —— 1/12 个有
+- `HAIGC_LoadImagesFromZip` —— 1/12 个有
+- `InpaintModelConditioning` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
+- `Qwen2.5` —— 1/12 个有
+- `QwenMultiangleLightningNode` —— 1/12 个有
+- `UnetLoaderGGUF` —— 1/12 个有
+- `easy cleanGpuUsed` —— 1/12 个有
+- `easy imageColorMatch` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 13 | 87% |
-| Prompt 约束强度(CFG) | 2.5 | 2.5 - 4 | 13 | 85% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,8 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，13 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 4，13 个样本，取值集中（一致性 85%）
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

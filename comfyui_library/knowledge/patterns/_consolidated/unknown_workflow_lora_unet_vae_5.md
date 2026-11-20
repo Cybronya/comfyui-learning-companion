@@ -1,47 +1,57 @@
 ---
 name: unknown_workflow_lora_unet_vae_5
 type: Unknown Workflow
-frequency: 11
-level: moderate
-coverage: 0.950818
-common_nodes: [CLIPLoader, CreateVideo, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.863667
+common_nodes: [CLIPLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/202610-minimax-h3-导演台-V2.0_2109257515652444161.json, 视频生成/图生视频/H3 导演台-R2V参考主体生视频_2089168093019987970.json, 视频生成/图生视频/MiniMax-导演台全能工作流_2086789063905988610.json, 视频生成/图生视频/Minimax-多参考长视频生成（导演台长视频）_2088245444265734145.json, 视频生成/图生视频/minimax导演台工作流_2090286084860235778.json, 视频生成/图生视频/minimax导演台工作流_2091395255663939586.json, 视频生成/文生视频/MINIMAX-H3导演台工作流_2092196369317580801.json, 视频生成/文生视频/MiniMax H3 Director 全能导演台_2093465779391000578.json, 视频生成/文生视频/Minimax-文生长视频生成（导演台长视频）_2087530746138423297.json, 视频生成/文生视频/minimax导演台工作流_2079449672288129026.json, 视频生成/文生视频/【开源】Minimax_H3 导演台参考生长视频_2089264892179206146.json]
+members: [图片生成/图生图/Qwen Image 2.1 一键透视光影融图｜产品完美融入背景_2109059569963069441.json, 图片生成/图生图/Qwen Image 2.1 一键透视光影融图｜产品完美融入背景_2109192704059072513.json, 图片生成/图生图/Qwen Image 2.1 一键透视光影融图｜产品完美融入背景_2110678471289696258.json, 图片生成/图生图/Qwen image 2.1 一键模特换装｜服装迁移_2111691946950483969.json, 图片生成/图生图/Qwen image 2.1 人物姿势图转白模_2107830881904848898.json, 图片生成/图生图/Qwen image 2.1 动漫人物转真人_2107971466020081665.json, 图片生成/图生图/Qwen-image2.1-图像角色多角度lora_2111388449549930497.json, 图片生成/图生图/Qwen-image2.1-图像高清修复_2111633650839285761.json, 图片生成/图生图/Qwen-image2.1-服装迁移_2111640579607195649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_unet_vae_5
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/202610-minimax-h3-导演台-V2.0_2109257515652444161.json、视频生成/图生视频/H3 导演台-R2V参考主体生视频_2089168093019987970.json、视频生成/图生视频/MiniMax-导演台全能工作流_2086789063905988610.json、视频生成/图生视频/Minimax-多参考长视频生成（导演台长视频）_2088245444265734145.json、视频生成/图生视频/minimax导演台工作流_2090286084860235778.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 一键透视光影融图｜产品完美融入背景_2109059569963069441.json、图片生成/图生图/Qwen Image 2.1 一键透视光影融图｜产品完美融入背景_2109192704059072513.json、图片生成/图生图/Qwen Image 2.1 一键透视光影融图｜产品完美融入背景_2110678471289696258.json、图片生成/图生图/Qwen image 2.1 一键模特换装｜服装迁移_2111691946950483969.json、图片生成/图生图/Qwen image 2.1 人物姿势图转白模_2107830881904848898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
-- `CreateVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 10/11 个有
-- `MiniMaxH3Director` —— 7/11 个有
-- `PathchSageAttentionKJ` —— 6/11 个有
-- `ComfyMiniMaxH3Director` —— 4/11 个有
-- `ModelAttentionBackend` —— 3/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `SolAttnMiniMax` —— 1/11 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `KSampler` —— 6/9 个有
+- `VAEDecode` —— 6/9 个有
+- `孤海注释` —— 6/9 个有
+- `ImpactInt` —— 5/9 个有
+- `Int` —— 4/9 个有
+- `KSampler (Efficient)` —— 3/9 个有
+- `easy seed` —— 3/9 个有
+- `PreviewImage` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 25 - 30 | 9 | 91% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
@@ -49,4 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 25 - 30，9 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）

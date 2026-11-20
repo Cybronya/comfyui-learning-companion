@@ -1,94 +1,78 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_36
 type: Unknown Workflow
-frequency: 6
+frequency: 4
 level: strong
-coverage: 0.850667
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, DeepTranslatorTextNode, DualCLIPLoader, FluxGuidance, GetImageSize+, ImageConcanate, ImageCrop+, ImageResizeKJ, ImageToMask, InpaintModelConditioning, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskGrow, LayerStyle: ColorOverlay V2, LayerUtility: ColorImage V2, LoadImage, PreviewImage, SaveImage, StyleModelLoader, Switch any [Crystools], UNETLoader, VAEDecode, VAELoader]
+coverage: 0.92725
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GetImageSize, InpaintModelConditioning, Joy_caption_two, Joy_caption_two_load, KSampler, LayerUtility: ImageShift, LoadImage, MathExpression|pysssss, PreviewImage, SaveImage, StringConcatenate, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX FILL自动遮罩换装_1956561807777431554.json, 图片生成/图生图/【丙丙版哪吒】最强换头术，太乙真人换哪吒_1898375384982081537.json, 图片生成/图生图/【很强】电商产品迁移指定场景细节版_1942158807361601537.json, 图片生成/图生图/【电商】产品迁移指定场景plus完美细节版_1904379336580046850.json, 图片生成/图生图/【电商】电商产品指定场景【手机壳版】_1904358996265050114.json, 平台全量/【趣味】【飞翔鲸】王炸！FLUX+ACE++换头_1890052281759571970.json]
+members: [图片生成/图生图/无缝衔接——四方连续（升级版）_2009277350545985537.json, 图片生成/图生图/无缝贴图 _ 贴图无缝处理_1965422039286824962.json, 图片生成/图生图/无缝贴图——四方连续（升级版）_1978667632985526273.json, 图片生成/图生图/砖形无缝贴图_1970702047538540546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_36
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FLUX FILL自动遮罩换装_1956561807777431554.json、图片生成/图生图/【丙丙版哪吒】最强换头术，太乙真人换哪吒_1898375384982081537.json、图片生成/图生图/【很强】电商产品迁移指定场景细节版_1942158807361601537.json、图片生成/图生图/【电商】产品迁移指定场景plus完美细节版_1904379336580046850.json、图片生成/图生图/【电商】电商产品指定场景【手机壳版】_1904358996265050114.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/无缝衔接——四方连续（升级版）_2009277350545985537.json、图片生成/图生图/无缝贴图 _ 贴图无缝处理_1965422039286824962.json、图片生成/图生图/无缝贴图——四方连续（升级版）_1978667632985526273.json、图片生成/图生图/砖形无缝贴图_1970702047538540546.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DeepTranslatorTextNode`
+- `ConditioningZeroOut`
+- `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `GetImageSize+`
-- `ImageConcanate`
-- `ImageCrop+`
-- `ImageResizeKJ`
-- `ImageToMask`
+- `GetImageSize`
 - `InpaintModelConditioning`
+- `Joy_caption_two`
+- `Joy_caption_two_load`
 - `KSampler`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerMask: MaskGrow`
-- `LayerStyle: ColorOverlay V2`
-- `LayerUtility: ColorImage V2`
+- `LayerUtility: ImageShift`
 - `LoadImage`
+- `MathExpression|pysssss`
 - `PreviewImage`
 - `SaveImage`
-- `StyleModelLoader`
-- `Switch any [Crystools]`
-- `UNETLoader`
+- `StringConcatenate`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ColorPicker` —— 4/6 个有
-- `LayerUtility: CropByMask V2` —— 4/6 个有
-- `LayerUtility: ImageScaleRestore V2` —— 4/6 个有
-- `LoraLoaderModelOnly` —— 4/6 个有
-- `MaskPreview+` —— 4/6 个有
-- `MaskToImage` —— 4/6 个有
-- `ReduxAdvanced` —— 4/6 个有
-- `JjkText` —— 3/6 个有
-- `LayerMask: ObjectDetectorYOLO8` —— 3/6 个有
-- `LayerMask: SAM2Ultra` —— 3/6 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 3/6 个有
-- `TeaCache` —— 3/6 个有
-- `Display Any (rgthree)` —— 2/6 个有
-- `InpaintCrop` —— 2/6 个有
-- `InpaintStitch` —— 2/6 个有
-- `LayerMask: PersonMaskUltra` —— 2/6 个有
-- `LayerUtility: GetImageSize` —— 2/6 个有
-- `LayerUtility: RestoreCropBox` —— 2/6 个有
-- `RHHiddenNodes` —— 2/6 个有
-- `SimpleMath+` —— 2/6 个有
-- `AddMask` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `LayerMask: PersonMaskUltra V2` —— 1/6 个有
-- `LayerUtility: CropByMask` —— 1/6 个有
-- `Mask Threshold Region` —— 1/6 个有
-- `PowerfulMaskCrop` —— 1/6 个有
-- `SubtractMask` —— 1/6 个有
-- `easy sam3ImageSegmentation` —— 1/6 个有
-- `easy sam3ModelLoader` —— 1/6 个有
+- `ImageAndMaskPreview` —— 3/4 个有
+- `ImageConcatFromBatch` —— 3/4 个有
+- `ImageResize+` —— 3/4 个有
+- `ImageRotate` —— 3/4 个有
+- `ImageToMask` —— 3/4 个有
+- `MaskBlur+` —— 3/4 个有
+- `RHHiddenNodes` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `easy int` —— 3/4 个有
+- `ImageBatchRepeatInterleaving` —— 2/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `CropMask` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `ImageCrop` —— 1/4 个有
+- `ImpactMakeImageBatch` —— 1/4 个有
+- `MaskMathOps` —— 1/4 个有
+- `MaskPreview` —— 1/4 个有
+- `UNETLoader` —— 1/4 个有
+- `easy makeImageForICLora` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25.5 | 25 - 26 | 6 | 98% |
-| Prompt 约束强度(CFG) | 1.5 | 1 - 2 | 6 | 76% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | normal | - | 6 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 30 | 30 - 30 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | normal | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -96,8 +80,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25.5，观测区间 25 - 26，6 个样本，取值集中（一致性 98%）
-- Prompt 约束强度(CFG) 中位数 1.5，观测区间 1 - 2，6 个样本
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 normal，6 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，观测区间 30 - 30，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 normal，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

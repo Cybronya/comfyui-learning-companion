@@ -1,96 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_574
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8504
-common_nodes: [Bjornulf_ShowFloat, Bjornulf_ShowInt, Float, Float to Int, GetNode, ImageConcanate, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, PreviewImage, RH_Captioner, RH_Translator, RMBG, Seed, SetNode, SimpleMath+, StringReplace, Text, TextConcatenate_UTK, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy indexAnything, easy showAnything]
+coverage: 0.78525
+common_nodes: [CR Text, GetImageSizeAndCount, ImageFromBatch+, ImageResizeKJ, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, RH_LLMAPI_NODE, Text Concatenate, VHS_LoadVideo, VHS_VideoCombine, Wan22PromptSelector, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/MInimaxH3 VS Bernini 画质对比1_2087174134588596225.json, 平台全量/bernini人物替换1_2082733910588477442.json, 平台全量/bernini人物替换2_2082800807296196609.json, 平台全量/bernini人物替换3_2082852280767963137.json, 平台全量/bernini多人场景人物替换_2083097868851830786.json]
+members: [视频生成/图生视频/Wan2.1_T2V_lynx+VACE姿势参考_1977712133079191553.json, 视频生成/图生视频/Wan2.1_T2V_lynx+VACE视频换脸_1977718414808678401.json, 视频生成/图生视频/完美参考人脸lynx加VACE精准姿势迁移_1977047772987838465.json, 视频生成/图生视频/顶配视频换脸lynx+VACE完美一致性_1977047808907857921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_574
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/MInimaxH3 VS Bernini 画质对比1_2087174134588596225.json、平台全量/bernini人物替换1_2082733910588477442.json、平台全量/bernini人物替换2_2082800807296196609.json、平台全量/bernini人物替换3_2082852280767963137.json、平台全量/bernini多人场景人物替换_2083097868851830786.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.1_T2V_lynx+VACE姿势参考_1977712133079191553.json、视频生成/图生视频/Wan2.1_T2V_lynx+VACE视频换脸_1977718414808678401.json、视频生成/图生视频/完美参考人脸lynx加VACE精准姿势迁移_1977047772987838465.json、视频生成/图生视频/顶配视频换脸lynx+VACE完美一致性_1977047808907857921.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Bjornulf_ShowFloat`
-- `Bjornulf_ShowInt`
-- `Float`
-- `Float to Int`
-- `GetNode`
-- `ImageConcanate`
-- `Int`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `GetImageSizeAndCount`
+- `ImageFromBatch+`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
 - `PreviewImage`
-- `RH_Captioner`
-- `RH_Translator`
-- `RMBG`
-- `Seed`
-- `SetNode`
-- `SimpleMath+`
-- `StringReplace`
-- `Text`
-- `TextConcatenate_UTK`
+- `RH_LLMAPI_NODE`
+- `Text Concatenate`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus Bernini`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ContextOptions`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SamplerExtraArgs`
-- `WanAnimatePlus Samplerv2`
-- `WanAnimatePlus Schedulerv2`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
-- `easy indexAnything`
+- `Wan22PromptSelector`
+- `WanVideoAddLynxEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 4/5 个有
-- `CR Image Grid Panel` —— 4/5 个有
-- `ColorPickerMW` —— 4/5 个有
-- `ETN_ApplyMaskToImage` —— 4/5 个有
-- `ExtractStoryboards_xuhuan1024` —— 4/5 个有
-- `FillMaskWithColor` —— 4/5 个有
-- `GetImageSize` —— 4/5 个有
-- `ImageResizeKJv2` —— 4/5 个有
-- `InspyrenetRembg` —— 4/5 个有
-- `InvertMask` —— 4/5 个有
-- `LayerUtility: ImageBlendAdvance V2` —— 4/5 个有
-- `MinNode` —— 4/5 个有
-- `PurgeVRAM_UTK` —— 4/5 个有
-- `SaveImage` —— 4/5 个有
-- `easy mathInt` —— 4/5 个有
-- `PointsEditor` —— 3/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `SeCModelLoader` —— 3/5 个有
-- `SeCVideoSegmentation` —— 3/5 个有
-- `easy batchAnything` —— 3/5 个有
-- `CLIPTextEncode` —— 1/5 个有
-- `CheckpointLoaderSimple` —— 1/5 个有
-- `DepthAnything_V2` —— 1/5 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 1/5 个有
-- `RHHiddenNodes` —— 1/5 个有
-- `RTXVideoSuperResolution` —— 1/5 个有
-- `SAM3_TrackToMask` —— 1/5 个有
-- `SAM3_VideoTrack` —— 1/5 个有
+- `GetNode` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `AIO_Preprocessor` —— 2/4 个有
+- `BlockifyMask` —— 2/4 个有
+- `DepthAnything_V2` —— 2/4 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 2/4 个有
+- `DrawMaskOnImage` —— 2/4 个有
+- `GrowMask` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `ImageFromBatch` —— 2/4 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 2/4 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 2/4 个有
+- `MaskPreview+` —— 2/4 个有
+- `SeCModelLoader` —— 2/4 个有
+- `SeCVideoSegmentation` —— 2/4 个有
 
 ## 典型参数
 

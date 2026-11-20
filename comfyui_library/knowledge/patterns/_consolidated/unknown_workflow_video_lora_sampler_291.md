@@ -1,65 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_291
 type: Unknown Workflow
-frequency: 10
+frequency: 8
 level: moderate
-coverage: 0.9746
-common_nodes: [DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.883
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, ImageToMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddTTMLatents, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/infinite+wan2.1多人对口型_1960541577531842561.json, 视频生成/图生视频/双人对话对口型_1994221474806513665.json, 视频生成/图生视频/口播唱歌数字人InfiniteTalk 对口型_1970330754632851457.json, 视频生成/图生视频/图生视频-基于InfiniteTalk_2005465061298761730.json, 视频生成/图生视频/对嘴型·数字人·影视·唱歌·讲话对口型·超自然现实有喘息细节_2015414691312443393.json, 视频生成/图生视频/情歌对唱妹妹坐船头_1989787883399729154.json, 视频生成/图生视频/打大富翁_1990048687038623745.json, 视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_1978726455507095554.json, 视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_2009633003546353665.json, 视频生成/文生视频/数字人对口型深情歌唱_1989702067088486402.json]
+members: [视频生成/图生视频/(手动工具版)TTM路径编辑图生视频V1_1990441820280807425.json, 视频生成/图生视频/TTM-视频主体轨迹移动控制_1991157733022085121.json, 视频生成/图生视频/TTM任意编辑视频生成-Aiwood_1990244516261228546.json, 视频生成/图生视频/TTM编辑轨迹动作引导生成视频_1990327033626587137.json, 视频生成/图生视频/Time-to-Move框架：关键帧引导生成AI视频，精确控制视频元素移动！_1990969622830718977.json, 视频生成/图生视频/Wan2_2_I2V_TimeToMove 运动控制图生视频_1991333399692685313.json, 视频生成/图生视频/wanvideo2_2_I2V_A14B_TimeToMove_example_1990459550644002818.json, 视频生成/图生视频/精确版 TTM-视频主体轨迹移动控制_1999381454922579970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_291
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/infinite+wan2.1多人对口型_1960541577531842561.json、视频生成/图生视频/双人对话对口型_1994221474806513665.json、视频生成/图生视频/口播唱歌数字人InfiniteTalk 对口型_1970330754632851457.json、视频生成/图生视频/图生视频-基于InfiniteTalk_2005465061298761730.json、视频生成/图生视频/对嘴型·数字人·影视·唱歌·讲话对口型·超自然现实有喘息细节_2015414691312443393.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/(手动工具版)TTM路径编辑图生视频V1_1990441820280807425.json、视频生成/图生视频/TTM-视频主体轨迹移动控制_1991157733022085121.json、视频生成/图生视频/TTM任意编辑视频生成-Aiwood_1990244516261228546.json、视频生成/图生视频/TTM编辑轨迹动作引导生成视频_1990327033626587137.json、视频生成/图生视频/Time-to-Move框架：关键帧引导生成AI视频，精确控制视频元素移动！_1990969622830718977.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+全部 8 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `ImageToMask`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddTTMLatents`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 9/10 个有
-- `CLIPVisionLoader` —— 9/10 个有
-- `WanVideoClipVisionEncode` —— 9/10 个有
-- `AudioSeparation` —— 7/10 个有
-- `ImageResizeKJv2` —— 6/10 个有
-- `INTConstant` —— 5/10 个有
-- `SeparateMasks` —— 5/10 个有
-- `PreviewAudio` —— 4/10 个有
-- `Anything Everywhere` —— 3/10 个有
-- `MaskPreview+` —— 3/10 个有
-- `PreviewImage` —— 3/10 个有
-- `AudioPlay` —— 2/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/10 个有
-- `孤海图像缩放按像素` —— 2/10 个有
-- `GetImageSize` —— 1/10 个有
-- `ImageScaleToMegapixels` —— 1/10 个有
-- `MaskPreview` —— 1/10 个有
-- `UpscaleModelLoader` —— 1/10 个有
-- `VHS_LoadVideo` —— 1/10 个有
+- `ImageConcatMulti` —— 7/8 个有
+- `LoadImage` —— 7/8 个有
+- `WanVideoTorchCompileSettings` —— 7/8 个有
+- `AILab_QwenVL` —— 1/8 个有
+- `CLIPLoader` —— 1/8 个有
+- `CLIPTextEncode` —— 1/8 个有
+- `CR Prompt Text` —— 1/8 个有
+- `JWInteger` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `VHS_SelectImages` —— 1/8 个有
+- `WanVideoImageToVideoEncode_v2` —— 1/8 个有
+- `WanVideoTextEmbedBridge` —— 1/8 个有
 
 ## 典型参数
 

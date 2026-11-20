@@ -3,76 +3,81 @@ name: text_to_image_lora_sampler_clip_534
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.946667
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, RH_Translator, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.892
+common_nodes: [AddLabel, CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize, GetImagesFromBatchIndexed, GetVideoComponents, JjkText, KSampler, LoadVideoWithFilename, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy imageScaleDownBy, easy indexAnything, easy mathInt, solarL_SaveImagesToZip, workflow>合并]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Kontext-图案提取_1948678862908588034.json, 图片生成/图生图/KontextNunchakuDevInpainting头发变金色_1944280237490442241.json, 图片生成/图生图/KontextNunchakuDevInpainting换成剃须刀_1944997524240523265.json]
+members: [图片生成/图生图/视频二创神器_姿势提取加角色设定提取，角色一致性图生图_2110439126616072193.json, 图片生成/图生图/视频二创神器_姿势提取加角色设定提取，角色一致性图生图_2114178239458529282.json, 图片生成/图生图/视频姿势提取二创｜角色设定图生图角色一致性_2092199662181765122.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_534
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Kontext-图案提取_1948678862908588034.json、图片生成/图生图/KontextNunchakuDevInpainting头发变金色_1944280237490442241.json、图片生成/图生图/KontextNunchakuDevInpainting换成剃须刀_1944997524240523265.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/视频二创神器_姿势提取加角色设定提取，角色一致性图生图_2110439126616072193.json、图片生成/图生图/视频二创神器_姿势提取加角色设定提取，角色一致性图生图_2114178239458529282.json、图片生成/图生图/视频姿势提取二创｜角色设定图生图角色一致性_2092199662181765122.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AddLabel`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
+- `GetImageSize`
+- `GetImagesFromBatchIndexed`
+- `GetVideoComponents`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
+- `LoadVideoWithFilename`
 - `LoraLoaderModelOnly`
-- `RH_Translator`
-- `ReferenceLatent`
+- `PreviewImage`
 - `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy batchAnything`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageScaleDownBy`
+- `easy indexAnything`
+- `easy mathInt`
+- `solarL_SaveImagesToZip`
+- `workflow>合并`
 
 **可变部分**（部分 workflow 才有）：
-- `Kontext Inpainting Conditioning` —— 2/3 个有
-- `ModelSamplingFlux` —— 2/3 个有
-- `NunchakuFluxDiTLoader` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `JjkShowText` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `Text Find and Replace` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
-- `UNETLoader` —— 1/3 个有
+- `孤海注释` —— 2/3 个有
+- `EmptyImage` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1024 | 1024 - 1248 | 3 | 90% |
-| 高度 | 1536 | 832 - 1536 | 3 | 74% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1248，3 个样本，取值集中（一致性 90%）
-- 高度 中位数 1536，观测区间 832 - 1536，3 个样本
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

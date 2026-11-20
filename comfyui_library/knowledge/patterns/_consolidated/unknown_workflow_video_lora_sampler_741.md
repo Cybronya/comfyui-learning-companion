@@ -1,69 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_741
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: strong
-coverage: 0.8355
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, Fast Bypasser (rgthree), GetNode, ImpactInt, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, wanBlockSwap]
+coverage: 0.781667
+common_nodes: [CLIPLoader, CLIPTextEncode, Compare, GetImageSize, GetNode, ImageResize+, JWInteger, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RHHiddenNodes, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_Unbatch, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo, easy batchAnything, easy cleanGpuUsed, easy ifElse, easy imageListToImageBatch, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 图生视频(MOE官方流)｜Light2v 加速版_2104706846383759362.json, 视频生成/图生视频/【wan2.2 i2v】light2v 1030蒸馏加速主模型 MOE官方流  动态增强V2版_1988440123446616065.json, 视频生成/图生视频/【wan2.2 i2v】light2v 1030蒸馏加速主模型 MOE官方流-视频放大- 动态增强V2版_1989332274598563842.json, 视频生成/图生视频/【wan2.2 图生视频】light2v蒸馏加速主模型 MOE官方流_1978326367861366785.json]
+members: [视频生成/图生视频/【九镜联动·超燃短片一键制作】全能图片pro 故事分镜V2-Wan2.2 FMLM 关键帧联动_1989325404936826881.json, 视频生成/图生视频/【五镜联动·一键制作】分镜_关键帧联动_1989305168229486593.json, 视频生成/图生视频/【五镜联动·超燃短片一键制作】全能图片pro 故事分镜V2-Wan2.2 FMLM 关键帧联动_1988497511591665666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_741
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频(MOE官方流)｜Light2v 加速版_2104706846383759362.json、视频生成/图生视频/【wan2.2 i2v】light2v 1030蒸馏加速主模型 MOE官方流  动态增强V2版_1988440123446616065.json、视频生成/图生视频/【wan2.2 i2v】light2v 1030蒸馏加速主模型 MOE官方流-视频放大- 动态增强V2版_1989332274598563842.json、视频生成/图生视频/【wan2.2 图生视频】light2v蒸馏加速主模型 MOE官方流_1978326367861366785.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【九镜联动·超燃短片一键制作】全能图片pro 故事分镜V2-Wan2.2 FMLM 关键帧联动_1989325404936826881.json、视频生成/图生视频/【五镜联动·一键制作】分镜_关键帧联动_1989305168229486593.json、视频生成/图生视频/【五镜联动·超燃短片一键制作】全能图片pro 故事分镜V2-Wan2.2 FMLM 关键帧联动_1988497511591665666.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `Fast Bypasser (rgthree)`
+- `Compare`
+- `GetImageSize`
 - `GetNode`
-- `ImpactInt`
+- `ImageResize+`
+- `JWInteger`
 - `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `Mute / Bypass Repeater (rgthree)`
 - `PathchSageAttentionKJ`
+- `PreviewImage`
+- `RHHiddenNodes`
 - `SetNode`
-- `SimpleMath+`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_Unbatch`
 - `VHS_VideoCombine`
+- `WanFirstMiddleLastFrameToVideo`
+- `easy batchAnything`
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `easy imageListToImageBatch`
 - `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `RIFE VFI` —— 3/4 个有
-- `WanImageToVideo` —— 3/4 个有
-- `PainterI2V` —— 2/4 个有
-- `Seed (rgthree)` —— 2/4 个有
-- `CR Upscale Image` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `ColorMatch` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `Int` —— 1/3 个有
+- `RH_Nano_Banana_Image2Image` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | dpmpp_2m_sde | - | 4 | 100% |
-| 重绘幅度 | beta | - | 4 | 100% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -71,8 +75,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_2m_sde，4 个样本，一致性 100%
-- 重绘幅度 最常用 beta，4 个样本，一致性 100%
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

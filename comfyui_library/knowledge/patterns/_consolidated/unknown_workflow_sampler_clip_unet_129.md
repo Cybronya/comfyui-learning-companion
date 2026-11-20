@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_129
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.9408
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, KSamplerSelect, LoadImage, ManualSigmas, RandomNoise, ReferenceMultiLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: moderate
+coverage: 0.972444
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux-3-Image-Klein 多图编辑_2110969114528403457.json, 图片生成/图生图/Flux-3-Image-Klein 多图编辑_2111237868306911233.json, 图片生成/图生图/Flux-3平面图转彩平图_2111287781887668226.json, 图片生成/图生图/Flux3加速版多图编辑V1_2114191708626964481.json, 图片生成/图生图/Flux3加速版多图编辑V1_2115243280651870209.json, 图片生成/图生图/Flux3加速版多图编辑_2111040326122164225.json, 图片生成/图生图/Flux3加速版多图编辑_2111060681888976898.json, 图片生成/图生图/户型平面图转成3D軸测空间框模型图_2111292703928573954.json, 图片生成/图生图/（双图）Flux-3-Image-Klein 多图编辑_2111219534840549378.json, 图片生成/文生图/Flux-3-Image-Klein 多图编辑_2111347095805452290.json]
+members: [图片生成/图生图/FLUX.2-KLEIN-单图编辑-高清直出_2019989626764664833.json, 图片生成/图生图/FLUX.2-KLEIN-双图编辑-高清直出_2019989419784146946.json, 图片生成/图生图/FLUX2-Klein Flux-2-Klein-9B 多图编辑  电商产品场景 万能迁移 光影一致_2025034756479524865.json, 图片生成/图生图/Flux 2 klein 4b 强力换头_2038542238401171457.json, 图片生成/图生图/Flux 2 klein 4b 换头工作流_2012867203107917825.json, 图片生成/图生图/Flux 2 klein 9b 100% 只换脸工作流_2016484736058793986.json, 图片生成/图生图/Flux 2 klein 9b 换脸非换头工作流_2017157128376557570.json, 图片生成/图生图/Flux klein100%换脸工作流（不改发型）_2030855449922248705.json, 图片生成/图生图/亚秒级40秒100%换脸工作流 V1.00404_2040329795237584898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_129
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Flux-3-Image-Klein 多图编辑_2110969114528403457.json、图片生成/图生图/Flux-3-Image-Klein 多图编辑_2111237868306911233.json、图片生成/图生图/Flux-3平面图转彩平图_2111287781887668226.json、图片生成/图生图/Flux3加速版多图编辑V1_2114191708626964481.json、图片生成/图生图/Flux3加速版多图编辑V1_2115243280651870209.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/FLUX.2-KLEIN-单图编辑-高清直出_2019989626764664833.json、图片生成/图生图/FLUX.2-KLEIN-双图编辑-高清直出_2019989419784146946.json、图片生成/图生图/FLUX2-Klein Flux-2-Klein-9B 多图编辑  电商产品场景 万能迁移 光影一致_2025034756479524865.json、图片生成/图生图/Flux 2 klein 4b 强力换头_2038542238401171457.json、图片生成/图生图/Flux 2 klein 4b 换头工作流_2012867203107917825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
+全部 9 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
 - `KSamplerSelect`
 - `LoadImage`
-- `ManualSigmas`
 - `RandomNoise`
-- `ReferenceMultiLatent`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 7/10 个有
-- `CR Text` —— 6/10 个有
-- `EmptyLatentImage` —— 6/10 个有
-- `Image Comparer (rgthree)` —— 6/10 个有
-- `Latent Switch (JPS)` —— 6/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/10 个有
-- `PreviewImage` —— 3/10 个有
-- `ImageConcanate` —— 2/10 个有
-- `516073c1-94a8-4a5f-b628-aeec1f52d354` —— 1/10 个有
-- `JjkText` —— 1/10 个有
-- `RH_RhartImageG2ImageToImage` —— 1/10 个有
+- `ImageScaleToTotalPixels` —— 7/9 个有
+- `Image Comparer (rgthree)` —— 6/9 个有
+- `LayerColor: Brightness & Contrast` —— 4/9 个有
+- `LayerUtility: CropByMask V2` —— 4/9 个有
+- `MaskPreview` —— 3/9 个有
+- `ycFaceMaskCreator` —— 3/9 个有
+- `CustomAddLabel` —— 2/9 个有
+- `ImageResizeKJv2` —— 2/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `SeedVR2` —— 2/9 个有
+- `Text` —— 2/9 个有
+- `FaceToMask` —— 1/9 个有
+- `ImageConcanate` —— 1/9 个有
+- `ImageConcatMulti` —— 1/9 个有
+- `LoraLoaderModelOnly` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 6 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,5 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

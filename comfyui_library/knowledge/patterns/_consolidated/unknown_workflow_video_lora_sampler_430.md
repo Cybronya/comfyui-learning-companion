@@ -1,68 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_430
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.541857
-common_nodes: [CLIPVisionLoader, ComfyMathExpression, DrawViTPose, GetNode, ImageResizeKJv2, Int, LoadImage, MinNode, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything, 图像缩放V2_孤海]
+coverage: 0.947333
+common_nodes: [AudioCrop, CLIPVisionLoader, ImageResizeKJv2, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/动作迁移Animate2.0Fast  15s稳定版  低显存可用_2066846449693974530.json, 数字人/数字人/动作迁移 后背摇专用Lite版 低显存可用_2067544740731641857.json, 数字人/数字人/动作迁移 后背摇专用pro版 丝滑长视频_2067780097234526209.json, 视频生成/图生视频/Animate动作迁移-自适应最终版（支持1080P）_2067136692997414914.json, 视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067232861400428545.json, 视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067890192308072449.json, 视频生成/图生视频/动作迁移_2072250195357818881.json]
+members: [视频生成/图生视频/数字人图片单人_1964652057074520065.json, 视频生成/图生视频/虚拟演播室数字人_2045009566550724610.json, 视频生成/文生视频/infinitetalk单人-100%对口型_1986675627816349697.json, 视频生成/文生视频/infinitetalk单人_1962411738001969154.json, 视频生成/文生视频/infinitetalk单人_1979004243053023234.json, 视频生成/文生视频/最强的数字人，声音克隆+文本驱动+图生视频_2078774161115275266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_430
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/动作迁移Animate2.0Fast  15s稳定版  低显存可用_2066846449693974530.json、数字人/数字人/动作迁移 后背摇专用Lite版 低显存可用_2067544740731641857.json、数字人/数字人/动作迁移 后背摇专用pro版 丝滑长视频_2067780097234526209.json、视频生成/图生视频/Animate动作迁移-自适应最终版（支持1080P）_2067136692997414914.json、视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067232861400428545.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/数字人图片单人_1964652057074520065.json、视频生成/图生视频/虚拟演播室数字人_2045009566550724610.json、视频生成/文生视频/infinitetalk单人-100%对口型_1986675627816349697.json、视频生成/文生视频/infinitetalk单人_1962411738001969154.json、视频生成/文生视频/infinitetalk单人_1979004243053023234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `AudioCrop`
 - `CLIPVisionLoader`
-- `ComfyMathExpression`
-- `DrawViTPose`
-- `GetNode`
 - `ImageResizeKJv2`
 - `Int`
+- `LoadAudio`
 - `LoadImage`
-- `MinNode`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
+- `ToInt`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 - `easy showAnything`
-- `图像缩放V2_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
-- `GIMMVFI_interpolate` —— 5/7 个有
-- `ImpactSwitch` —— 5/7 个有
-- `InversionDemoLazySwitch` —— 5/7 个有
-- `PrimitiveBoolean` —— 5/7 个有
-- `WanVideoLoraSelect` —— 5/7 个有
-- `easy anythingIndexSwitch` —— 5/7 个有
-- `CM_FloatToInt` —— 4/7 个有
+- `AudioSeparation` —— 5/6 个有
+- `DownloadAndLoadWav2VecModel` —— 5/6 个有
+- `RH_GetAudioDuration` —— 5/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `Apply Whisper` —— 1/6 个有
+- `AudioGetTempo` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `GetCurrentTimeNode` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `OmniVoiceLongformTTS` —— 1/6 个有
+- `OmniVoiceMultiSpeakerTTS` —— 1/6 个有
+- `OmniVoiceVoiceDesignTTS` —— 1/6 个有
+- `OmniVoiceWhisperLoader` —— 1/6 个有
+- `SaveAudio` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/6 个有
+- `WanVideoUni3C_embeds` —— 1/6 个有
+- `Wav2VecModelLoader` —— 1/6 个有
+- `easy int` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,88 +1,75 @@
 ---
 name: image_to_image_sampler_clip_unet_62
 type: Image To Image
-frequency: 8
-level: moderate
-coverage: 0.49725
-common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, PlaySound|pysssss, PreviewImage, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+frequency: 7
+level: strong
+coverage: 0.978429
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/YZ金鱼-Z_Image-图文生图&洗图&高清修复v1_2053381046279917570.json, 图片生成/图生图/ProReal Pipeline_2001169170496712705.json, 图片生成/图生图/Z-Image-图文生图-洗图-高清修复 z image zimage_1995761280600387585.json, 图片生成/图生图/去照片AI味道_2009622540498505729.json, 图片生成/图生图/洗图_1941160724741963777.json, 图片生成/图生图/洗图工作流_2031338925985370113.json, 图片生成/文生图/YZ金鱼-Z_Image-图文生图&洗图&高清修复v1_1993975579062059010.json, 图片生成/文生图/Z-Image-图文生图-洗图-高清修复 z image zimage_2007444305413148674.json]
+members: [图片生成/图生图/flux2_klein_真人转动漫_2037850764009283585.json, 图片生成/图生图/【楚心钟陌】klein极速动漫转真人_2015778697990643714.json, 图片生成/图生图/【遇见AI】longcat_image_基础文生图_2059112298840682497.json, 图片生成/文生图/FLUX2 Klein 文生图 和 图生图 工作流（AI小王子）_2015993179522207746.json, 图片生成/文生图/FLUX2+Klein+文生图+和+图生图+工作流_2059094392811642881.json, 图片生成/文生图/FLUX2+Klein+文生图+和+图生图+工作流_2064315210042789890.json, 图片生成/文生图/flux2 klein_2034072060485439490.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_62
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/YZ金鱼-Z_Image-图文生图&洗图&高清修复v1_2053381046279917570.json、图片生成/图生图/ProReal Pipeline_2001169170496712705.json、图片生成/图生图/Z-Image-图文生图-洗图-高清修复 z image zimage_1995761280600387585.json、图片生成/图生图/去照片AI味道_2009622540498505729.json、图片生成/图生图/洗图_1941160724741963777.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/flux2_klein_真人转动漫_2037850764009283585.json、图片生成/图生图/【楚心钟陌】klein极速动漫转真人_2015778697990643714.json、图片生成/图生图/【遇见AI】longcat_image_基础文生图_2059112298840682497.json、图片生成/文生图/FLUX2 Klein 文生图 和 图生图 工作流（AI小王子）_2015993179522207746.json、图片生成/文生图/FLUX2+Klein+文生图+和+图生图+工作流_2059094392811642881.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `EmptyFlux2LatentImage`
 - `KSampler`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
+- `ReferenceLatent`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 7/8 个有
-- `CR SDXL Aspect Ratio` —— 7/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
-- `GetImageSize` —— 7/8 个有
-- `ImageScaleBy` —— 7/8 个有
-- `Qwen3_VQA` —— 7/8 个有
-- `SeedVR2` —— 7/8 个有
-- `SeedVR2BlockSwap` —— 7/8 个有
-- `SeedVR2ExtraArgs` —— 7/8 个有
-- `ShowText|pysssss` —— 7/8 个有
-- `LayerUtility: ImageReel` —— 6/8 个有
-- `LayerUtility: ImageReelComposit` —— 6/8 个有
-- `Float` —— 1/8 个有
-- `Lora Loader Stack (rgthree)` —— 1/8 个有
-- `LoraLoaderModelOnly` —— 1/8 个有
-- `SeedVR2LoadDiTModel` —— 1/8 个有
-- `SeedVR2LoadVAEModel` —— 1/8 个有
-- `SeedVR2VideoUpscaler` —— 1/8 个有
-- `UnetLoaderGGUF` —— 1/8 个有
-- `VAEDecodeTiled` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
+- `easy cleanGpuUsed` —— 6/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
+- `Image Comparer (rgthree)` —— 2/7 个有
+- `LoraLoaderModelOnly` —— 2/7 个有
+- `ConditioningZeroOut` —— 1/7 个有
+- `GetImageSize` —— 1/7 个有
+- `Getter` —— 1/7 个有
+- `Setter` —— 1/7 个有
+- `easy imageScaleDownToSize` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 8 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.53 | 8 | 84% |
-| 采样算法 | euler | - | 8 | 88% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 0.65 | 0.25 - 0.65 | 8 | 69% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 21/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，8 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.53，8 个样本，取值集中（一致性 84%）
-- 采样算法 最常用 euler，8 个样本，一致性 88%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 0.65，观测区间 0.25 - 0.65，8 个样本
-- 高发问题（7/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（21/7 个样本）：Steps较低可能导致细节不足

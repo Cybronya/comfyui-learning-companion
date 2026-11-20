@@ -1,82 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_unet_61
 type: Unknown Workflow
-frequency: 11
-level: moderate
-coverage: 0.859182
-common_nodes: [BasicScheduler, CLIPLoader, KSamplerSelect, LoraLoaderModelOnly, ModelAttentionBackend, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 10
+level: strong
+coverage: 0.9108
+common_nodes: [CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Mini MAX-H3加速版图生视频1080p_2114685347656454146.json, 视频生成/图生视频/MiniMax H3 导演skill+双采2k直出_2106288951286915073.json, 视频生成/图生视频/MiniMax-H3-导演skill-双采2k直出.json, 视频生成/文生视频/MiniMax H3 导演skill+双采2k直出_2103795804296273922.json, 视频生成/文生视频/MiniMax H3全能插件+音频设计_2097244728222896129.json, 视频生成/文生视频/MiniMax H3去除人物油腻（单采高质量加速版）_2092133541474816001.json, 视频生成/文生视频/MiniMax H3增强画面电影感_2092881815047598082.json, 视频生成/文生视频/MiniMax H3新版8步768p加速（单采高质量）_2094009829802205186.json, 视频生成/文生视频/MiniMax_H3_REF2VA-Upscale 双采样视频生成工作流_2092581047509807105.json, 视频生成/文生视频/Minimax H3 多参数视频生成 768p 加速 LoRA 两步生成_2095762977566846977.json, 视频生成/文生视频/minimax h3综合型工作流第一人称，男友视角_2108015047955013633.json]
+members: [图片生成/图生图/【LG】QWEN2511极简极低偏移换装_2004542473714237441.json, 图片生成/图生图/动漫光斑光影增强_qwen 2511_2025486195010052098.json, 图片生成/图生图/史上最强-小红书动漫转写实真人_2043235575892807682.json, 图片生成/图生图/史上最强-小红书动漫转写实真人（FireRed_OmniRealism）_2037918131322101761.json, 图片生成/图生图/史上最强-小红书动漫转写实真人（FireRed_OmniRealism）_2038424926553640962.json, 图片生成/图生图/小红书FireRed-Image-Edit1.1（单图、双图、三图编辑）_2029922206393831425.json, 图片生成/图生图/小红书_动漫转写实真人_2083827042285604866.json, 图片生成/图生图/小红书模型动漫转真人_2067301137937686530.json, 图片生成/图生图/涂鸦控制_海报设计_2026556702794977281.json, 图片生成/图生图/涂鸦控制_海报设计_2026672287650418690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_61
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Mini MAX-H3加速版图生视频1080p_2114685347656454146.json、视频生成/图生视频/MiniMax H3 导演skill+双采2k直出_2106288951286915073.json、视频生成/图生视频/MiniMax-H3-导演skill-双采2k直出.json、视频生成/文生视频/MiniMax H3 导演skill+双采2k直出_2103795804296273922.json、视频生成/文生视频/MiniMax H3全能插件+音频设计_2097244728222896129.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/【LG】QWEN2511极简极低偏移换装_2004542473714237441.json、图片生成/图生图/动漫光斑光影增强_qwen 2511_2025486195010052098.json、图片生成/图生图/史上最强-小红书动漫转写实真人_2043235575892807682.json、图片生成/图生图/史上最强-小红书动漫转写实真人（FireRed_OmniRealism）_2037918131322101761.json、图片生成/图生图/史上最强-小红书动漫转写实真人（FireRed_OmniRealism）_2038424926553640962.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BasicScheduler`
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
-- `KSamplerSelect`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelAttentionBackend`
-- `ResolutionSelector`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 10/11 个有
-- `MiniMaxH3SigmaShift` —— 10/11 个有
-- `PrimitiveFloat` —— 10/11 个有
-- `PrimitiveStringMultiline` —— 10/11 个有
-- `LoadImage` —— 9/11 个有
-- `ModelPreviewOverrideKJ` —— 9/11 个有
-- `ComfyMathExpression` —— 8/11 个有
-- `Label (rgthree)` —— 8/11 个有
-- `MiniMaxH3ReferenceToVideo` —— 8/11 个有
-- `VHS_VideoCombine` —— 8/11 个有
-- `BasicGuider` —— 7/11 个有
-- `MiniMaxH3Unified` —— 7/11 个有
-- `RandomNoise` —— 7/11 个有
-- `SamplerCustomAdvanced` —— 7/11 个有
-- `H3SigmaRefiner` —— 5/11 个有
-- `LTXVSeparateAVLatent` —— 5/11 个有
-- `ConditioningZeroOut` —— 4/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
-- `LTXVConcatAVLatent` —— 4/11 个有
-- `MinimaxH3LatentUpscaler3D` —— 4/11 个有
-- `SelfLiftH3Sampler` —— 4/11 个有
-- `CreateVideo` —— 3/11 个有
-- `SaveVideo` —— 3/11 个有
-- `SplitSigmas` —— 3/11 个有
-- `ExtendIntermediateSigmas` —— 1/11 个有
-- `Float` —— 1/11 个有
-- `GetVideoComponents` —— 1/11 个有
-- `LoadVideo` —— 1/11 个有
-- `ManualSigmas` —— 1/11 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/11 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 1/11 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 1/11 个有
-- `SolAttnMiniMax` —— 1/11 个有
+- `Easy_QwenEdit2509` —— 9/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/10 个有
+- `Image Comparer (rgthree)` —— 5/10 个有
+- `Seed (rgthree)` —— 4/10 个有
+- `CR Text` —— 2/10 个有
+- `AFL:QwenEditPlusFastuseV2` —— 1/10 个有
+- `ImageResizeKJv2` —— 1/10 个有
+- `easy int` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 8 | 10 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 50% |
+| 调度器 | simple | - | 10 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 8，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 50%
+- 调度器 最常用 simple，10 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

@@ -1,52 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_396
 type: Unknown Workflow
-frequency: 8
+frequency: 6
 level: moderate
-coverage: 0.918375
-common_nodes: [Float, ImpactInt, JjkText, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, PreviewAudio, RH_Translator, String, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.5405
+common_nodes: [CLIPVisionLoader, ComfyMathExpression, DrawViTPose, GetNode, ImageResizeKJv2, Int, LoadImage, MinNode, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything, 图像缩放V2_孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/万物皆可切【7步采样，超级加速_1936025799948668929.json, 视频生成/图生视频/万物皆可切【7步采样，超级加速】加强版_1938918571034468353.json, 视频生成/图生视频/刀切水果食品琉璃玻璃材质钻石水晶水果汉堡蔬菜刀切_1935907853976657921.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_1935265768021872641.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2052577563448496129.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2054447841707347969.json, 视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2056272340383789058.json, 视频生成/图生视频/解压切水果小说配视频-图生视频+wan2.1+lora_2031988264575438849.json]
+members: [数字人/数字人/动作迁移 后背摇专用Lite版 低显存可用_2067544740731641857.json, 数字人/数字人/动作迁移 后背摇专用pro版 丝滑长视频_2067780097234526209.json, 视频生成/图生视频/Animate动作迁移-自适应最终版（支持1080P）_2067136692997414914.json, 视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067232861400428545.json, 视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067890192308072449.json, 视频生成/图生视频/动作迁移_2072250195357818881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_396
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/万物皆可切【7步采样，超级加速_1936025799948668929.json、视频生成/图生视频/万物皆可切【7步采样，超级加速】加强版_1938918571034468353.json、视频生成/图生视频/刀切水果食品琉璃玻璃材质钻石水晶水果汉堡蔬菜刀切_1935907853976657921.json、视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_1935265768021872641.json、视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2052577563448496129.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/动作迁移 后背摇专用Lite版 低显存可用_2067544740731641857.json、数字人/数字人/动作迁移 后背摇专用pro版 丝滑长视频_2067780097234526209.json、视频生成/图生视频/Animate动作迁移-自适应最终版（支持1080P）_2067136692997414914.json、视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067232861400428545.json、视频生成/图生视频/一键动作迁移_一键跳舞_抖音_2067890192308072449.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `Float`
-- `ImpactInt`
-- `JjkText`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+全部 6 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `ComfyMathExpression`
+- `DrawViTPose`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `MMAudioFeatureUtilsLoader`
-- `MMAudioModelLoader`
-- `MMAudioSampler`
-- `PreviewAudio`
-- `RH_Translator`
-- `String`
+- `MinNode`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 - `easy cleanGpuUsed`
+- `easy showAnything`
+- `图像缩放V2_孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `CM_FloatToInt` —— 4/6 个有
+- `DownloadAndLoadGIMMVFIModel` —— 4/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `GIMMVFI_interpolate` —— 4/6 个有
+- `ImpactSwitch` —— 4/6 个有
+- `InversionDemoLazySwitch` —— 4/6 个有
+- `PrimitiveBoolean` —— 4/6 个有
+- `WanVideoLoraSelect` —— 4/6 个有
+- `easy anythingIndexSwitch` —— 4/6 个有
 
 ## 典型参数
 

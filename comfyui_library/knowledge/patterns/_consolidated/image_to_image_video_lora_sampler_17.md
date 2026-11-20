@@ -1,120 +1,86 @@
 ---
 name: image_to_image_video_lora_sampler_17
 type: Image To Image
-frequency: 3
-level: strong
-coverage: 0.761667
-common_nodes: [AdvancedLivePortrait, AutoCropFaces, CLIPLoader, CLIPVisionLoader, CR Prompt Text, ConditioningZeroOut, ExpressionEditor, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, Float, FluxKontextImageScale, GetImageSizeAndCount, GetNode, Image Comparer (rgthree), ImageConcanate, ImageConcatMulti, ImageRemoveAlpha_UTK, ImageResizeKJv2, Int, JWInteger, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskPreview+, ModelSamplingAuraFlow, OnnxDetectionModelLoader, PainterFluxImageEdit, PixelSmileConditioning, PoseAndFaceDetection, PreviewAny, PreviewImage, RMBG, ReplaceText, SDPoseOODLoader, SDPoseOODProcessor, SaveImage, SetNode, SolidMask, Text, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddFantasyPortrait, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, YOLOModelLoader, easy ifElse, easy isMaskEmpty, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: [Steps较低可能导致细节不足]
+frequency: 2
+level: weak
+coverage: 0.919
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, GetNode, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, Power Lora Loader (rgthree), PreviewImage, ReferenceLatent, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFreeInitArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/全能面部表情编辑与驱动_2065051559821668354.json, 视频生成/图生视频/全能面部表情编辑与驱动_2067049648237400065.json, 视频生成/图生视频/全能面部表情编辑与驱动_2068183647156527106.json]
+members: [图片生成/文生图/flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json, 视频生成/图生视频/kontext + ani全能视频S 图片任意动漫风格转换 + 图生视频_1945865001003610114.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能面部表情编辑与驱动_2065051559821668354.json、视频生成/图生视频/全能面部表情编辑与驱动_2067049648237400065.json、视频生成/图生视频/全能面部表情编辑与驱动_2068183647156527106.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json、视频生成/图生视频/kontext + ani全能视频S 图片任意动漫风格转换 + 图生视频_1945865001003610114.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：76%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AdvancedLivePortrait`
-- `AutoCropFaces`
-- `CLIPLoader`
+全部 2 个 workflow 都包含：
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
 - `ConditioningZeroOut`
-- `ExpressionEditor`
-- `FantasyPortraitFaceDetector`
-- `FantasyPortraitModelLoader`
-- `Float`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
 - `FluxKontextImageScale`
-- `GetImageSizeAndCount`
 - `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImageConcatMulti`
-- `ImageRemoveAlpha_UTK`
-- `ImageResizeKJv2`
-- `Int`
-- `JWInteger`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MaskPreview+`
-- `ModelSamplingAuraFlow`
-- `OnnxDetectionModelLoader`
-- `PainterFluxImageEdit`
-- `PixelSmileConditioning`
-- `PoseAndFaceDetection`
-- `PreviewAny`
+- `LoadWanVideoT5TextEncoder`
+- `Power Lora Loader (rgthree)`
 - `PreviewImage`
-- `RMBG`
-- `ReplaceText`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `SaveImage`
+- `ReferenceLatent`
 - `SetNode`
-- `SolidMask`
-- `Text`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAddFantasyPortrait`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoFreeInitArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
-- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `YOLOModelLoader`
-- `easy ifElse`
-- `easy isMaskEmpty`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+
+**可变部分**（部分 workflow 才有）：
+- `GetImageSize` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | res_multistep | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 10 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（9/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

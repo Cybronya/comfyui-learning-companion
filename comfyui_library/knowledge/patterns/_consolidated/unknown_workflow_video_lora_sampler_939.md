@@ -1,59 +1,83 @@
 ---
 name: unknown_workflow_video_lora_sampler_939
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.872333
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.5015
+common_nodes: [AnyIsEmpty, BooleanUnary, CLIPLoader, CLIPTextEncode, CM_IntToFloat, CRTFirstLastFrameSelector, EmptyImage, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, Int, JoinStrings, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, MultiplyNode, PathchSageAttentionKJ, PrimitiveBoolean, Qwen3_VQA, RIFE VFI, SaveImage, SetNode, ShellAgentPluginOutputText, StringReplace, TextInput_, ToString, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, easy boolean, easy cleanGpuUsed, easy ifElse, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan 2.2 文生视频（优化版）_1951554035532902402.json, 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_1950555101742223362.json, 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json]
+members: [视频生成/图生视频/wan2.2首尾帧生视频+自动提示词+视频补帧+视频尾1帧_2032372108323459074.json, 视频生成/图生视频/wan2.2首尾帧生视频（附自动提示词）_2013562059773972482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_939
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan 2.2 文生视频（优化版）_1951554035532902402.json、视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_1950555101742223362.json、视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2首尾帧生视频+自动提示词+视频补帧+视频尾1帧_2032372108323459074.json、视频生成/图生视频/wan2.2首尾帧生视频（附自动提示词）_2013562059773972482.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `LoadWanVideoT5TextEncoder`
+全部 2 个 workflow 都包含：
+- `AnyIsEmpty`
+- `BooleanUnary`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CM_IntToFloat`
+- `CRTFirstLastFrameSelector`
+- `EmptyImage`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `Int`
+- `JoinStrings`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `MultiplyNode`
+- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `Qwen3_VQA`
+- `RIFE VFI`
+- `SaveImage`
+- `SetNode`
+- `ShellAgentPluginOutputText`
+- `StringReplace`
+- `TextInput_`
+- `ToString`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanFirstLastFrameToVideo`
+- `easy boolean`
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 2/3 个有
-- `Primitive integer [Crystools]` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `SeargePromptText` —— 1/3 个有
-- `ShowText` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `Wan22PromptSelector` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `DuckHideNode` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | normal | - | 2 | 100% |
 
 ## 常见问题
 
@@ -61,4 +85,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 normal，2 个样本，一致性 100%
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

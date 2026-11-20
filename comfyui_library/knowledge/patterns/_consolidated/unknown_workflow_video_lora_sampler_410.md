@@ -1,69 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_410
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.973857
-common_nodes: [INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.5815
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LowVRAMCheckpointLoader, ManualSigmas, RandomNoise, SamplerCustomAdvanced, VAEDecode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/【gen全能视频Si】wan2.2图生视频（极简加速版）_1963812148127551490.json, 平台全量/Wan2.2首尾帧视频 KJ版_1952619482592284674.json, 平台全量/wan2.2Fun-VACE+Controlnet_1967843717660966913.json, 视频生成/图生视频/8-图转视频 Wan2.2 14b Optional Last Frame_2053486047740350466.json, 视频生成/图生视频/Wan2.2 Fun Vace视频驱动图片——动作迁移_1966850900927057922.json, 视频生成/图生视频/wan2.2Fun-VACE 动作迁移_1966739330226139137.json, 视频生成/图生视频/wan2.2官方 VACE 人物姿态迁移 KJ流【推荐】_1967834051866406914.json]
+members: [视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2065971442394689538.json, 视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2067900124038254593.json, 视频生成/图生视频/MSR - 多图参考视频生成 - LTX2.3_2068177667341508609.json, 视频生成/图生视频/MSR_角色道具参考-ltx2.3_2067174173994213378.json, 视频生成/图生视频/MSR继续进化，LTX-2.3 超强多图参考_2076230597940432898.json, 视频生成/文生视频/多参考图与高动态视频生成_ Ltx 2.3 Licon-MSR_2063854107001180161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_410
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/【gen全能视频Si】wan2.2图生视频（极简加速版）_1963812148127551490.json、平台全量/Wan2.2首尾帧视频 KJ版_1952619482592284674.json、平台全量/wan2.2Fun-VACE+Controlnet_1967843717660966913.json、视频生成/图生视频/8-图转视频 Wan2.2 14b Optional Last Frame_2053486047740350466.json、视频生成/图生视频/Wan2.2 Fun Vace视频驱动图片——动作迁移_1966850900927057922.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2065971442394689538.json、视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2067900124038254593.json、视频生成/图生视频/MSR - 多图参考视频生成 - LTX2.3_2068177667341508609.json、视频生成/图生视频/MSR_角色道具参考-ltx2.3_2067174173994213378.json、视频生成/图生视频/MSR继续进化，LTX-2.3 超强多图参考_2076230597940432898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `EmptyLTXVLatentVideo`
 - `INTConstant`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 6/7 个有
-- `ImageResizeKJv2` —— 6/7 个有
-- `VHS_LoadVideo` —— 4/7 个有
-- `VHS_VideoInfo` —— 4/7 个有
-- `WanVideoVACEEncode` —— 4/7 个有
-- `WanVideoVACEModelSelect` —— 4/7 个有
-- `DWPreprocessor` —— 3/7 个有
-- `ImageConcatMulti` —— 3/7 个有
-- `WanVideoImageToVideoEncode` —— 3/7 个有
-- `GetImageSizeAndCount` —— 2/7 个有
-- `PurgeVRAM_UTK` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `DepthAnythingV2Preprocessor` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `ImageScaleByAspectRatio_UTK` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
-- `RIFE VFI` —— 1/7 个有
-- `Seed (rgthree)` —— 1/7 个有
-- `SimpleMath+` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `ComfyMathExpression` —— 4/6 个有
+- `GetNode` —— 4/6 个有
+- `LTXVAddGuideMulti` —— 4/6 个有
+- `SetNode` —— 4/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `KenChenLLMGeminiBananaImageCollageNode` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `PrimitiveInt` —— 2/6 个有
+- `ShowText|pysssss` —— 2/6 个有
+- `llama_cpp_instruct_adv` —— 2/6 个有
+- `llama_cpp_model_loader` —— 2/6 个有
+- `llama_cpp_parameters` —— 2/6 个有
+- `孤海注释` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 145 | 145 - 241 | 6 | 74% |
+| 高度 | 24 | 24 - 50 | 6 | 62% |
 
 ## 常见问题
 
@@ -71,4 +78,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 145，观测区间 145 - 241，6 个样本
+- 高度 中位数 24，观测区间 24 - 50，6 个样本

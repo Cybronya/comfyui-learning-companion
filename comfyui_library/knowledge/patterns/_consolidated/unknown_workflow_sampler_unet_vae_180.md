@@ -1,72 +1,64 @@
 ---
 name: unknown_workflow_sampler_unet_vae_180
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: strong
-coverage: 0.877429
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, ImageFromBatch, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy imageConcat]
+coverage: 0.900333
+common_nodes: [CLIPLoader, CR Text, EmptyLatentImage, GetImageSize, Image Comparer (rgthree), ImageConcatMulti, KSampler, LoadImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/图片人物替换-MiniMax H3图像编辑_2116089881633058817.json, 图片生成/图生图/人物替换-minimax图像编辑API版_2115622056388812802.json, 图片生成/图生图/人物替换-minimax图像编辑API版_2115669277599686658.json, 图片生成/图生图/人物迁移-minimax图像编辑（API版）_2102450365731008514.json, 图片生成/图生图/人物迁移-minimax图像编辑（免费版）_2104550573549903874.json, 图片生成/图生图/服装迁移-超高一致性-h3图像编辑_2106818747007852545.json, 平台全量/人物替换-minimax图像编辑（API版）_2117193297327382530.json]
+members: [图片生成/图生图/Qwen_image_2.1多图编辑——换装_物品迁移_2108004646777352194.json, 图片生成/图生图/qwen-2.1  多图编辑 Multi-Image Editing 换装换脸Costume and_2108715805969043458.json, 图片生成/图生图/qwen-2.1 照片转实景摄影 Photo-to-Real-Scene Conversion_2108715825342541826.json, 图片生成/图生图/qwen-2.1照片转实景_2108087844450422786.json, 图片生成/图生图/qwen_image_2.1多图编辑_2101901671612895234.json, 图片生成/图生图/换装换脸qwen-2.1++多图编辑+Multi-Image+Editing+Costume+and_2110904028644331521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_180
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/图片人物替换-MiniMax H3图像编辑_2116089881633058817.json、图片生成/图生图/人物替换-minimax图像编辑API版_2115622056388812802.json、图片生成/图生图/人物替换-minimax图像编辑API版_2115669277599686658.json、图片生成/图生图/人物迁移-minimax图像编辑（API版）_2102450365731008514.json、图片生成/图生图/人物迁移-minimax图像编辑（免费版）_2104550573549903874.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen_image_2.1多图编辑——换装_物品迁移_2108004646777352194.json、图片生成/图生图/qwen-2.1  多图编辑 Multi-Image Editing 换装换脸Costume and_2108715805969043458.json、图片生成/图生图/qwen-2.1 照片转实景摄影 Photo-to-Real-Scene Conversion_2108715825342541826.json、图片生成/图生图/qwen-2.1照片转实景_2108087844450422786.json、图片生成/图生图/qwen_image_2.1多图编辑_2101901671612895234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CR Text`
-- `ComfyMathExpression`
-- `ImageFromBatch`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `EmptyLatentImage`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageConcatMulti`
+- `KSampler`
 - `LoadImage`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 6/7 个有
-- `GetImageSize` —— 6/7 个有
-- `ImageScaleToTotalPixels` —— 6/7 个有
-- `LoraLoader` —— 6/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/7 个有
-- `easy imageInsetCrop` —— 6/7 个有
-- `RHLLMChatNode` —— 5/7 个有
-- `MiniMaxH3UnifiedToVideo` —— 4/7 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/7 个有
-- `Qwen3VL_Chat` —— 2/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `ImageScaleBy` —— 1/7 个有
-- `ImageUpscaleWithModel` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `UpscaleModelLoader` —— 1/7 个有
-- `VAEDecodeAudio` —— 1/7 个有
+- `XinbaoImageStandardizer` —— 5/6 个有
+- `ComfySwitchNode` —— 3/6 个有
+- `ImpactInt` —— 3/6 个有
+- `QwenPERewriteT8` —— 3/6 个有
+- `ShowText|pysssss` —— 3/6 个有
+- `easy imageScaleDownToSize` —— 3/6 个有
+- `LoraLoaderModelOnly` —— 2/6 个有
+- `PreviewImage` —— 1/6 个有
+- `图像缩放V2_孤海` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 6 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 25 | 25 - 25 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1088 | 1088 - 1088 | 6 | 100% |
+| 高度 | 2048 | 2048 - 2048 | 6 | 100% |
 
 ## 常见问题
 
@@ -74,5 +66,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1088，观测区间 1088 - 1088，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 2048，观测区间 2048 - 2048，6 个样本，取值集中（一致性 100%）

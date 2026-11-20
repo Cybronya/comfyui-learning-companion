@@ -2,82 +2,62 @@
 name: unknown_workflow_video_sampler_clip_96
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.874571
-common_nodes: [BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVConditioning, LTXVPreprocess, LoadImage, ModelSamplingSD3, PrimitiveInt, SamplerCustom, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+level: weak
+coverage: 0.906143
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/YJ-LTX2.3-图生视频_2060617208614703105.json, 视频生成/图生视频/电商图生15秒视频 指定配音 Ltx2.3_2042797388833755137.json, 视频生成/图生视频/电商多图生15秒视频 保持人物一致性  Ltx2.3_2042139178611253249.json, 视频生成/图生视频/电商数字人图生15秒视频 指定说话音频 Ltx2.3_2043889875862163457.json, 视频生成/图生视频/空白工作流_2072161079689572354.json, 视频生成/文生视频/LTX2.3-亲子对话-文生视频工作流--搞笑视频_2083450669406711809.json, 视频生成/文生视频/LTX2.3图生视频_2071785997519646721.json]
+members: [视频生成/图生视频/Wan2.2  图生视频_2018573357712674817.json, 视频生成/图生视频/Wan2.2  极速图生视频_2068892657300099074.json, 视频生成/图生视频/Wan2.2 14+图生视频_1949911395070599170.json, 视频生成/图生视频/Wan2.2 14B 6步超极速图生视频_1949992607571206146.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1 浮云_1996104036933910529.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1949877835465932801.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1950344638181892097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_96
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/YJ-LTX2.3-图生视频_2060617208614703105.json、视频生成/图生视频/电商图生15秒视频 指定配音 Ltx2.3_2042797388833755137.json、视频生成/图生视频/电商多图生15秒视频 保持人物一致性  Ltx2.3_2042139178611253249.json、视频生成/图生视频/电商数字人图生15秒视频 指定说话音频 Ltx2.3_2043889875862163457.json、视频生成/图生视频/空白工作流_2072161079689572354.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan2.2  图生视频_2018573357712674817.json、视频生成/图生视频/Wan2.2  极速图生视频_2068892657300099074.json、视频生成/图生视频/Wan2.2 14+图生视频_1949911395070599170.json、视频生成/图生视频/Wan2.2 14B 6步超极速图生视频_1949992607571206146.json、视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1 浮云_1996104036933910529.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVConditioning`
-- `LTXVPreprocess`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `ModelSamplingSD3`
-- `PrimitiveInt`
-- `SamplerCustom`
+- `PathchSageAttentionKJ`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVAudioVAEDecode` —— 6/7 个有
-- `LTXVConcatAVLatent` —— 6/7 个有
-- `LTXVEmptyLatentAudio` —— 6/7 个有
-- `LTXVImgToVideoInplaceKJ` —— 6/7 个有
-- `LTXVSeparateAVLatent` —— 6/7 个有
-- `Int` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 4/7 个有
-- `SimpleMath+` —— 4/7 个有
-- `CR Text` —— 3/7 个有
-- `ImageFromBatch+` —— 3/7 个有
-- `JjkText` —— 3/7 个有
-- `MathExpression|pysssss` —— 3/7 个有
-- `DF_Int_to_Float` —— 2/7 个有
-- `PathchSageAttentionKJ` —— 2/7 个有
-- `GetNode` —— 1/7 个有
-- `LTXVAudioVAEEncode` —— 1/7 个有
-- `LTXVImgToVideoConditionOnly` —— 1/7 个有
-- `LoadAudio` —— 1/7 个有
-- `PrimitiveBoolean` —— 1/7 个有
-- `SetLatentNoiseMask` —— 1/7 个有
-- `SetNode` —— 1/7 个有
-- `SolidMask` —— 1/7 个有
-- `VRAMReserver` —— 1/7 个有
-- `easy getNode` —— 1/7 个有
-- `easy setNode` —— 1/7 个有
+- `JWInteger` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `Int` —— 2/7 个有
+- `MathExpression|pysssss` —— 2/7 个有
+- `ColorMatch` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `LoadImagesFromURL` —— 1/7 个有
+- `PMRF` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `Primitive integer [Crystools]` —— 1/7 个有
+- `TeaCache` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+| 采样步数 | fixed | - | 7 | 86% |
+| Prompt 约束强度(CFG) | 6 | 6 - 20 | 7 | 39% |
+| 采样算法 | 1 | 1 - 3.5 | 7 | 36% |
+| 调度器 | lcm | - | 7 | 86% |
+| 重绘幅度 | simple | - | 7 | 100% |
 
 ## 常见问题
 
@@ -85,5 +65,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，7 个样本，一致性 86%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 20，7 个样本，取值分散，一致性仅 39%
+- 采样算法 中位数 1，观测区间 1 - 3.5，7 个样本，取值分散，一致性仅 36%
+- 调度器 最常用 lcm，7 个样本，一致性 86%
+- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

@@ -1,66 +1,85 @@
 ---
 name: unknown_workflow_sampler_clip_unet_258
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.909333
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8128
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Text, DeepTranslatorTextNode, DualCLIPLoader, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, FluxKontextImageScale, GetImageSize+, ImageConcanate, KSamplerSelect, LoadImage, ModelSamplingFlux, PreviewImage, RH_LLMAPI_NODE, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/wan2.2-ti2v-5B图生图_1952197317170548738.json, 图片生成/文生图/Flux3_Klein图像编辑工作流_2111476889922662402.json, 图片生成/文生图/RH-PSAPI插件用-文生图_2068260936263233538.json, 图片生成/文生图/wan2.2-ti2v-5B文生图_1951273402428502018.json, 平台全量/FLUX 3 图像编辑_2114204084717842433.json, 视频生成/图生视频/wan2.2-5B图生视频女人飞走_1951274276659867650.json]
+members: [图片生成/图生图/Kontext  基础单图编辑版_1943937775508815873.json, 图片生成/图生图/Kontext 一键扩图_1950452572160180226.json, 图片生成/图生图/🥎Kontext 一句话改变人物方向 自动润色版🤹_1938590655125839873.json, 图片生成/图生图/🥎【真王炸】Kontext 开源—单图编辑版🤹_1938440067062894593.json, 图片生成/图生图/🥎【真王炸】Kontext 开源—双图组合版🤹_1938440356646031361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_258
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/wan2.2-ti2v-5B图生图_1952197317170548738.json、图片生成/文生图/Flux3_Klein图像编辑工作流_2111476889922662402.json、图片生成/文生图/RH-PSAPI插件用-文生图_2068260936263233538.json、图片生成/文生图/wan2.2-ti2v-5B文生图_1951273402428502018.json、平台全量/FLUX 3 图像编辑_2114204084717842433.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Kontext  基础单图编辑版_1943937775508815873.json、图片生成/图生图/Kontext 一键扩图_1950452572160180226.json、图片生成/图生图/🥎Kontext 一句话改变人物方向 自动润色版🤹_1938590655125839873.json、图片生成/图生图/🥎【真王炸】Kontext 开源—单图编辑版🤹_1938440067062894593.json、图片生成/图生图/🥎【真王炸】Kontext 开源—双图组合版🤹_1938440356646031361.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `KSampler`
+- `CR Text`
+- `DeepTranslatorTextNode`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `GetImageSize+`
+- `ImageConcanate`
+- `KSamplerSelect`
+- `LoadImage`
+- `ModelSamplingFlux`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/6 个有
-- `SaveImage` —— 5/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `ModelSamplingSD3` —— 3/6 个有
-- `VHS_VideoCombine` —— 3/6 个有
-- `Wan22ImageToVideoLatent` —— 3/6 个有
-- `ReferenceMultiLatent` —— 2/6 个有
-- `EmptyFlux2LatentImage` —— 1/6 个有
-- `QwenImageLatentAspectRatio` —— 1/6 个有
+- `easy showAnything` —— 4/5 个有
+- `Any Switch (rgthree)` —— 1/5 个有
+- `Anything Everywhere` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `ImagePadForOutpaintMasked_UTK` —— 1/5 个有
+- `ImpactInt` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `LoadKontextPresets` —— 1/5 个有
+- `LoraLoader` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `SDXLPromptStyler` —— 1/5 个有
+- `SetNode` —— 1/5 个有
+- `UltimateSDUpscale` —— 1/5 个有
+- `UpscaleModelLoader` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 23 | 4 - 30 | 6 | 53% |
-| Prompt 约束强度(CFG) | 3 | 1 - 5 | 6 | 33% |
-| 采样算法 | uni_pc | - | 6 | 50% |
-| 调度器 | simple | - | 6 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| LoRA 模型强度 | 0.6 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 23，观测区间 4 - 30，6 个样本
-- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 5，6 个样本，取值分散，一致性仅 33%
-- 采样算法 最常用 uni_pc，6 个样本，一致性 50%
-- 调度器 最常用 simple，6 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

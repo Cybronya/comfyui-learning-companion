@@ -1,76 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_376
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.9095
-common_nodes: [AILab_QwenVL, BasicScheduler, BerniniConditioning, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, GetNode, INTConstant, ImageResizeKJv2, ImageScaleDownToSize, ImageScaleToMaxDimension, JjkText, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RIFE VFI, RandomNoise, SamplerCustom, SamplerCustomAdvanced, Seed, SetNode, SimpleMath+, SplitSigmas, UNETLoader, VAEDecode, VAEEncodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy positive]
+frequency: 7
+level: moderate
+coverage: 0.902
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！_2074480608352493569.json, 视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！_2074489565452267522.json, 视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！_2107040499428319233.json, 视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！_2107086497366237186.json, 视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！艾橘溪_2074313627301146626.json, 视频生成/图生视频/Bernini多图参考生视频+音效生成！KJ版！_2074666900642156545.json, 视频生成/图生视频/Bernini多图参考生视频+音效生成！KJ版！_2081637298290122753.json, 视频生成/图生视频/多人视频动作生成 Bernini+R2V多图参考+图生视频+音效生成 KJ版_2074654211740094466.json]
+members: [视频生成/图生视频/图生(URL)视频-高动态卡通动漫_1986727820116307970.json, 视频生成/图生视频/图生视频KJ版Wan2.2新版高噪模型V210s以上_1978653622206664706.json, 视频生成/图生视频/图生视频加速版Wan2.2 (Palingenesis版)_1972165369475559425.json, 视频生成/图生视频/图生视频加速版Wan2.2_1983833483145584642.json, 视频生成/图生视频/图生视频加速版Wan2.2高动态卡通动漫_1972615288426520578.json, 视频生成/图生视频/图生视频加速版高质量Lightx2v+1030+差异模型高低噪图生视频V1(手动提示词)_1984923228604940289.json, 视频生成/图生视频/（自用）KJ版Wan2.2图生视频超级加速版V3（大幅度提高速度）_1952588298072068097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_376
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！_2074480608352493569.json、视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！_2074489565452267522.json、视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！_2107040499428319233.json、视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！_2107086497366237186.json、视频生成/图生视频/Bernini R2V多图参考+图生视频+音效生成！KJ版！艾橘溪_2074313627301146626.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/图生(URL)视频-高动态卡通动漫_1986727820116307970.json、视频生成/图生视频/图生视频KJ版Wan2.2新版高噪模型V210s以上_1978653622206664706.json、视频生成/图生视频/图生视频加速版Wan2.2 (Palingenesis版)_1972165369475559425.json、视频生成/图生视频/图生视频加速版Wan2.2_1983833483145584642.json、视频生成/图生视频/图生视频加速版Wan2.2高动态卡通动漫_1972615288426520578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicScheduler`
-- `BerniniConditioning`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `GetNode`
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
 - `INTConstant`
-- `ImageResizeKJv2`
-- `ImageScaleDownToSize`
-- `ImageScaleToMaxDimension`
-- `JjkText`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVideoMask`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
-- `RIFE VFI`
-- `RandomNoise`
-- `SamplerCustom`
-- `SamplerCustomAdvanced`
-- `Seed`
-- `SetNode`
-- `SimpleMath+`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncodeTiled`
-- `VAELoader`
-- `VAELoaderKJ`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `easy positive`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Float` —— 6/7 个有
+- `GetImageSizeAndCount` —— 6/7 个有
+- `LoadImage` —— 6/7 个有
+- `WanVideoScheduler` —— 6/7 个有
+- `WanVideoSigmaToStep` —— 6/7 个有
+- `WanVideoTorchCompileSettings` —— 6/7 个有
+- `MathExpression|pysssss` —— 5/7 个有
+- `WanVideoSetBlockSwap` —— 4/7 个有
+- `WanVideoSetLoRAs` —— 4/7 个有
+- `Int` —— 3/7 个有
+- `LayerUtility: PurgeVRAM` —— 2/7 个有
+- `GridAnnotation` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `LoadImagesFromURL` —— 1/7 个有
+- `LoadLatent` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `SaveLatent` —— 1/7 个有
+- `math_calculate` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 129 | 129 - 129 | 8 | 100% |
-| 高度 | 24 | 24 - 24 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,5 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 129，观测区间 129 - 129，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，8 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

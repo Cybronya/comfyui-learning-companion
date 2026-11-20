@@ -3,93 +3,64 @@ name: image_to_image_controlnet_inpaint_lora_8
 type: Image To Image
 frequency: 4
 level: strong
-coverage: 0.8475
-common_nodes: [AIO_Preprocessor, ApplyInstantID, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ConditioningZeroOut, ControlNetApplySD3, ControlNetLoader, Crop Face, DifferentialDiffusion, DualCLIPLoader, EmptyImage, FaceAnalysisModels, FaceSegmentation, FluxGuidance, Get Image Size, GrowMaskWithBlur, Image To Mask, ImageConcanate, ImageInvert, ImageResize+, ImageResizeKJv2, ImageScaleToMegapixels, InpaintCrop, InpaintModelConditioning, InpaintResize, InpaintStitch, InstantIDFaceAnalysis, InstantIDModelLoader, KSampler, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, Load RetinaFace, LoadImage, LoraLoaderModelOnly, MaskPreview+, PlaySound|pysssss, PreviewImage, SaveImage, SetUnionControlNetType, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageCropFromMask]
+coverage: 0.83025
+common_nodes: [CLIPLoader, CLIPTextEncode, ControlNetInpaintingAliMamaApply, ControlNetLoader, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, MaskPreview+, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX+Fill+redux+control生图+换脸保持人物和场景一致性_1922083596960727042.json, 图片生成/图生图/这不是玩具！首尾帧生图利器，redux+fill+control生图+姿态编辑（可选）_1921875986818744321.json, 平台全量/人物一致自定义克隆姿态_1921935257149325314.json, 平台全量/龙明首尾帧，redux+fill+control生图+姿态编辑_1928677714235133954.json]
+members: [图片生成/图生图/Qwen 局部重绘，极小区域重绘（完美无缝加速版-InstantX）_1966480322672144386.json, 图片生成/图生图/千问Qwen-Image-inpaint完美加速扩图工作流_1967425764293533698.json, 图片生成/图生图/千问局部重绘（Qwen Inpaint-InstantX）加速V2_1966468855948324866.json, 图片生成/图生图/千问扩图（完美加速版-InstantX）_1966457213625774081.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_inpaint_lora_8
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FLUX+Fill+redux+control生图+换脸保持人物和场景一致性_1922083596960727042.json、图片生成/图生图/这不是玩具！首尾帧生图利器，redux+fill+control生图+姿态编辑（可选）_1921875986818744321.json、平台全量/人物一致自定义克隆姿态_1921935257149325314.json、平台全量/龙明首尾帧，redux+fill+control生图+姿态编辑_1928677714235133954.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen 局部重绘，极小区域重绘（完美无缝加速版-InstantX）_1966480322672144386.json、图片生成/图生图/千问Qwen-Image-inpaint完美加速扩图工作流_1967425764293533698.json、图片生成/图生图/千问局部重绘（Qwen Inpaint-InstantX）加速V2_1966468855948324866.json、图片生成/图生图/千问扩图（完美加速版-InstantX）_1966457213625774081.json）
 
 - **类型**：Image To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `ApplyInstantID`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `ControlNetApplySD3`
+- `ControlNetInpaintingAliMamaApply`
 - `ControlNetLoader`
-- `Crop Face`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `FaceAnalysisModels`
-- `FaceSegmentation`
-- `FluxGuidance`
-- `Get Image Size`
-- `GrowMaskWithBlur`
-- `Image To Mask`
-- `ImageConcanate`
-- `ImageInvert`
-- `ImageResize+`
-- `ImageResizeKJv2`
-- `ImageScaleToMegapixels`
-- `InpaintCrop`
-- `InpaintModelConditioning`
-- `InpaintResize`
-- `InpaintStitch`
-- `InstantIDFaceAnalysis`
-- `InstantIDModelLoader`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `LayerMask: LoadFlorence2Model`
-- `LayerUtility: Florence2Image2Prompt`
-- `Load RetinaFace`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `MaskPreview+`
-- `PlaySound|pysssss`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
 - `SaveImage`
-- `SetUnionControlNetType`
-- `StyleModelApply`
-- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `easy imageCropFromMask`
 
 **可变部分**（部分 workflow 才有）：
-- `Hina.PoseEditor3D` —— 3/4 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 3/4 个有
-- `AutoCropFaces` —— 1/4 个有
-- `CLIPTextEncode (NSP)` —— 1/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `TextInput_` —— 3/4 个有
+- `GrowMaskWithBlur` —— 2/4 个有
+- `ImagePadForOutpaint` —— 2/4 个有
+- `InpaintCropImproved` —— 1/4 个有
+- `InpaintStitchImproved` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `JWFloat` —— 1/4 个有
+- `LayerMask: MaskGrow` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.8 | 0.8 - 0.95 | 4 | 92% |
-| 采样步数 | 28 | 28 - 40 | 4 | 83% |
+| 采样步数 | 4 | 4 - 5 | 4 | 90% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
 | 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
@@ -100,10 +71,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.8，观测区间 0.8 - 0.95，4 个样本，取值集中（一致性 92%）
-- 采样步数 中位数 28，观测区间 28 - 40，4 个样本，取值集中（一致性 83%）
+- 采样步数 中位数 4，观测区间 4 - 5，4 个样本，取值集中（一致性 90%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 高发问题（4/4 个样本）：Steps较低可能导致细节不足

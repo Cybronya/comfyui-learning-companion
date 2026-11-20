@@ -1,85 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_152
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: moderate
-coverage: 0.678857
-common_nodes: [CLIPVisionLoader, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.981583
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/Wan Animate2.2动作迁移（无限时长）_2005534329495322626.json, 平台全量/Wan Animate姿势迁移KJ版_1990428195201716225.json, 平台全量/Wan Animate角色替换KJ版_1990777123520585729.json, 平台全量/Wan2.2 Animate V2全自动视频人物替换_1978460418932887554.json, 平台全量/【直出高清】人物跳舞动作迁移Wan2.2+Animate+V2版本（超快5分钟）_1975571105782083586.json, 平台全量/动作迁移人物替换图生视频Wan2.2 Animate V2版本（支持10s）_1975502091256991746.json, 平台全量/🦖Wan Animate2.2动物迁移_1975784351843659777.json, 数字人/数字人/Wan2.2 Animate V2替换视频人物，保留原声_1983884901671993345.json, 视频生成/图生视频/(骨骼自适应)Wan2.2 Animate V2模型Move模式运动迁移V1_1998610915446677506.json, 视频生成/图生视频/Wan Animate2.2主体迁移（自动裁剪脸部，增强主体一致性）v3_1972998201764655106.json, 视频生成/图生视频/（自用）Wan Animate KJ V2版Move模式视频V2（换装前置）_1977660761738739714.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Mix主体混合版V2_1974413564041670657.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Move运动迁移Uni3c运镜版V1_1974430400560893954.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Move运动迁移V1_1974423112462766082.json]
+members: [图片生成/反推提示词/59tsspws_2052395707415441409.json, 数字人/数字人/wan2.2图生视频+丝袜美女转圈=艾橘溪_2039691203502940162.json, 视频生成/图生视频/004.Wan视频之源005.首尾关键帧_2035336872209162242.json, 视频生成/图生视频/360度旋转版本(Wan2.2万相)工作流_2014940591578157057.json, 视频生成/图生视频/wan2.2图生视频+丝袜美女转圈=艾橘溪_1893899363629051906.json, 视频生成/图生视频/wan2.2图生视频+双模出图(结构+细节)_2052404579370848257.json, 视频生成/图生视频/wan2.2图生视频+美女转圈_2075491553438683138.json, 视频生成/图生视频/wan2.2图生视频+美女转圈。绝绝子，好用！_2031551233101664258.json, 视频生成/图生视频/wan2.2图生视频+美女转圈。绝绝子，好用！_2043583359116382210.json, 视频生成/图生视频/wan2.2图生视频_2080097509229293570.json, 视频生成/图生视频/通义万相WAN2.2_KJ加速版_高低噪声双lora在线本地通用_补帧_1952913426868858882.json, 视频生成/图生视频/通义万相WAN2.2_KJ加速版_高噪声lora在线本地通用_补帧_1952709897437777921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_152
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（平台全量/Wan Animate2.2动作迁移（无限时长）_2005534329495322626.json、平台全量/Wan Animate姿势迁移KJ版_1990428195201716225.json、平台全量/Wan Animate角色替换KJ版_1990777123520585729.json、平台全量/Wan2.2 Animate V2全自动视频人物替换_1978460418932887554.json、平台全量/【直出高清】人物跳舞动作迁移Wan2.2+Animate+V2版本（超快5分钟）_1975571105782083586.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/反推提示词/59tsspws_2052395707415441409.json、数字人/数字人/wan2.2图生视频+丝袜美女转圈=艾橘溪_2039691203502940162.json、视频生成/图生视频/004.Wan视频之源005.首尾关键帧_2035336872209162242.json、视频生成/图生视频/360度旋转版本(Wan2.2万相)工作流_2014940591578157057.json、视频生成/图生视频/wan2.2图生视频+丝袜美女转圈=艾橘溪_1893899363629051906.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `CLIPVisionLoader`
+全部 12 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `LoadWanVideoT5TextEncoder`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 13/14 个有
-- `OnnxDetectionModelLoader` —— 13/14 个有
-- `PoseAndFaceDetection` —— 13/14 个有
-- `WanVideoSetLoRAs` —— 13/14 个有
-- `WanVideoTorchCompileSettings` —— 13/14 个有
-- `BlockifyMask` —— 12/14 个有
-- `DrawMaskOnImage` —— 12/14 个有
-- `DrawViTPose` —— 12/14 个有
-- `GrowMask` —— 12/14 个有
-- `ImageConcatMulti` —— 12/14 个有
-- `ImageResizeKJv2` —— 12/14 个有
-- `CR Prompt Text` —— 11/14 个有
-- `JWInteger` —— 11/14 个有
-- `ACE_ImageFaceCrop` —— 10/14 个有
-- `DownloadAndLoadSAM2Model` —— 10/14 个有
-- `GetNode` —— 10/14 个有
-- `Sam2Segmentation` —— 10/14 个有
-- `SetNode` —— 10/14 个有
-- `PointsEditor` —— 9/14 个有
-- `PoseRetargetPromptHelper` —— 9/14 个有
-- `easy showAnything` —— 9/14 个有
-- `WanVideoContextOptions` —— 7/14 个有
-- `WanVideoEncode` —— 7/14 个有
-- `WanVideoUni3C_ControlnetLoader` —— 7/14 个有
-- `WanVideoUni3C_embeds` —— 7/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/14 个有
-- `VHS_VideoInfo` —— 4/14 个有
-- `SimpleMath+` —— 3/14 个有
-- `DF_Int_to_Float` —— 2/14 个有
-- `MathExpression|pysssss` —— 2/14 个有
-- `PixelPerfectResolution` —— 2/14 个有
-- `RMBG` —— 2/14 个有
-- `SaveImage` —— 2/14 个有
-- `AnimalPosePreprocessor` —— 1/14 个有
-- `Bjornulf_ShowInt` —— 1/14 个有
-- `DWPreprocessor` —— 1/14 个有
-- `EmptyImage` —— 1/14 个有
-- `INTConstant` —— 1/14 个有
-- `PoseDetectionOneToAllAnimation` —— 1/14 个有
-- `TT_img_enc_v2` —— 1/14 个有
-- `easy anythingIndexSwitch` —— 1/14 个有
+- `GetImageSizeAndCount` —— 11/12 个有
+- `Int` —— 11/12 个有
+- `VHS_VideoCombine` —— 11/12 个有
+- `WanVideoTorchCompileSettings` —— 11/12 个有
+- `LayerUtility: PurgeVRAM` —— 8/12 个有
+- `SimpleMath+` —— 8/12 个有
+- `Fast Groups Muter (rgthree)` —— 3/12 个有
+- `RIFE VFI` —— 3/12 个有
+- `CreateVideo` —— 1/12 个有
+- `JjkText` —— 1/12 个有
+- `RTXVideoSuperResolution` —— 1/12 个有
+- `SaveVideo` —— 1/12 个有
+- `WanVideoLoraSelectMulti` —— 1/12 个有
+- `WanVideoSLG` —— 1/12 个有
 
 ## 典型参数
 

@@ -3,85 +3,81 @@ name: text_to_image_lora_sampler_clip_720
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8435
-common_nodes: [ApplyPulidFlux, CLIPTextEncode, CLIPTextEncodeFlux, DeepTranslatorTextNode, DualCLIPLoader, EmptyLatentImage, FaceAnalysisModels, FaceBoundingBox, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: []
+coverage: 0.904
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, JjkText, KSampler, LoadAudio, LongCatVoiceCloneTTS, LoraLoaderModelOnly, OmniVoiceLongformTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, PreviewAny, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/固定 脸部 姿态 一致_1877348762656960513.json, 平台全量/cosplay 角色装扮_1890032826270752769.json]
+members: [音频生成/音频生成/声音设计与克隆多合一｜音频生成工作流一键处理_2094758455860097025.json, 音频生成/音频生成/声音设计与声音克隆多合一整合｜高质量音频生成_2094539411865296898.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_720
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/固定 脸部 姿态 一致_1877348762656960513.json、平台全量/cosplay 角色装扮_1890032826270752769.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/声音设计与克隆多合一｜音频生成工作流一键处理_2094758455860097025.json、音频生成/音频生成/声音设计与声音克隆多合一整合｜高质量音频生成_2094539411865296898.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyPulidFlux`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPTextEncodeFlux`
-- `DeepTranslatorTextNode`
-- `DualCLIPLoader`
+- `CR Prompt Text`
 - `EmptyLatentImage`
-- `FaceAnalysisModels`
-- `FaceBoundingBox`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
+- `LoadAudio`
+- `LongCatVoiceCloneTTS`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `SaveImage`
+- `OmniVoiceLongformTTS`
+- `OmniVoiceVoiceCloneTTS`
+- `OmniVoiceVoiceDesignTTS`
+- `PreviewAny`
+- `PreviewAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `ControlNetApplyAdvanced` —— 1/2 个有
-- `ControlNetLoader` —— 1/2 个有
-- `Joy_caption_two` —— 1/2 个有
-- `Joy_caption_two_load` —— 1/2 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 1/2 个有
-- `LayerUtility: ColorPicker` —— 1/2 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/2 个有
-- `PortraitMaster_中文版` —— 1/2 个有
-- `SetShakkerLabsUnionControlNetType` —— 1/2 个有
-- `Text Concatenate (JPS)` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
+| 宽度 | 80 | - | 2 | 100% |
+| 高度 | 80 | - | 2 | 100% |
+| 采样步数 | 4 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
+| 采样算法 | er_sde | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1536 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
+- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

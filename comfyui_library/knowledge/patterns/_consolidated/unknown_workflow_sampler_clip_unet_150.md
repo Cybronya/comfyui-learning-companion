@@ -1,55 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_150
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.947889
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, ManualSigmas, RandomNoise, ReferenceMultiLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.873875
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX3 KLEIN--工作流合集_2111157512895549441.json, 图片生成/图生图/FLUX3.0Klein文生图单双多图编辑全套工作流_2110917466762338306.json, 图片生成/图生图/Flux3 Amumu 图像编辑邪修_2110875194008096769.json, 图片生成/图生图/Flux3加速版多图编辑-sd-int8_2111151836345491457.json, 图片生成/图生图/Flux3图像编辑_2111273434834624514.json, 图片生成/图生图/Flux3图像编辑_2114630236741656578.json, 图片生成/图生图/Flux3图像编辑_2114890375834980354.json, 图片生成/图生图/Flux3多图编辑加速版_2111354552862728193.json, 图片生成/文生图/FLUX3 KLEIN--工作流合集_2111003999917924353.json]
+members: [图片生成/图生图/FluxKlein局部重绘_指定区域_人物替换加速高质量_2033369130442690561.json, 图片生成/图生图/Klein-一致性_2028302502973677570.json, 图片生成/图生图/Klein-马克笔转绘（清新日系）_2034116719706378241.json, 图片生成/图生图/Klein一致性加强_2030832629217497090.json, 图片生成/图生图/Klein人物一致性发型衣服换脸一致性增强换衣服换发色换脸_2029595679181508609.json, 图片生成/图生图/NEW　Flux2-Klein-9B双图编辑_2013810307679916034.json, 图片生成/图生图/SQ-效果图优化工作流_2112780528683409410.json, 图片生成/图生图/bg_2068900398752157698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_150
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/FLUX3 KLEIN--工作流合集_2111157512895549441.json、图片生成/图生图/FLUX3.0Klein文生图单双多图编辑全套工作流_2110917466762338306.json、图片生成/图生图/Flux3 Amumu 图像编辑邪修_2110875194008096769.json、图片生成/图生图/Flux3加速版多图编辑-sd-int8_2111151836345491457.json、图片生成/图生图/Flux3图像编辑_2111273434834624514.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FluxKlein局部重绘_指定区域_人物替换加速高质量_2033369130442690561.json、图片生成/图生图/Klein-一致性_2028302502973677570.json、图片生成/图生图/Klein-马克笔转绘（清新日系）_2034116719706378241.json、图片生成/图生图/Klein一致性加强_2030832629217497090.json、图片生成/图生图/Klein人物一致性发型衣服换脸一致性增强换衣服换发色换脸_2029595679181508609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
+全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `KSamplerSelect`
 - `LoadImage`
-- `ManualSigmas`
 - `RandomNoise`
-- `ReferenceMultiLatent`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 6/9 个有
-- `CR Prompt Text` —— 4/9 个有
-- `QwenPERewriteT8` —— 4/9 个有
-- `MuyeTextEditOutput` —— 3/9 个有
-- `PrimitiveInt` —— 3/9 个有
-- `孤海注释` —— 3/9 个有
-- `忽略多组孤海` —— 3/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
-- `Text` —— 2/9 个有
-- `llama_cpp_instruct_adv` —— 2/9 个有
-- `llama_cpp_model_loader` —— 2/9 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `EmptyFlux2LatentImage` —— 7/8 个有
+- `ImageScaleToTotalPixels` —— 7/8 个有
+- `LayerUtility: ImageReel` —— 7/8 个有
+- `LayerUtility: ImageReelComposit` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `CR Text` —— 6/8 个有
+- `GetImageSize` —— 6/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `Image Comparer (rgthree)` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `JWFloat` —— 2/8 个有
+- `MaskToImage` —— 2/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `GrowMaskWithBlur` —— 1/8 个有
+- `ImageCompositeMasked` —— 1/8 个有
+- `InpaintModelConditioning` —— 1/8 个有
+- `InvertMask` —— 1/8 个有
+- `Mask Fill Holes` —— 1/8 个有
+- `MaskPreview` —— 1/8 个有
+- `SegmentV2` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 

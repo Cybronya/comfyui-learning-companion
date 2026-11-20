@@ -1,68 +1,65 @@
 ---
 name: unknown_workflow_upscale_sampler_unet_3
 type: Unknown Workflow
-frequency: 12
+frequency: 9
 level: strong
-coverage: 0.8205
-common_nodes: [CLIPLoader, Fast Groups Bypasser (rgthree), INTConstant, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, PreviewImage, QwenImage21Cache, ResolutionSelector, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.780333
+common_nodes: [GoohaiUniversalSlider, KSamplerAdvanced, LayerFilter: GaussianBlur, LoadImage, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy imageSizeByLongerSide, 图像缩放V2_孤海, 数学运算_孤海]
 problems: []
 missing: []
-members: [图片生成/图生图/qwen image2.1 加速版三图图生图_2108114179877068802.json, 图片生成/图生图/qwen image2.1 加速版单图生图（90秒出图）_2108082938335289346.json, 图片生成/图生图/qwen image2.1 加速版双图图生图_2108108729798455297.json, 图片生成/图生图/qwen_image2.1_加速版单图生图90秒出图_2112719052429938689.json, 图片生成/图生图/qwen_image2.1_加速版单图生图90秒出图_2114998186719932417.json, 图片生成/图生图/角色三视图_Qwen_image_2.1_2116667200378593281.json, 图片生成/文生图/qwen image2.1加速版文生图（90秒出图）_2108080480087269377.json, 图片生成/文生图/qwen_image2.1加速版文生图90秒出图_2112439839751753729.json, 图片生成/文生图/qwen_image2.1加速版文生图90秒出图_2114998535027511298.json, 图片生成/文生图/文生图-qwen image2.1-t8pe加速版_2106329151098671105.json, 图片生成/文生图/文生图-qwen_image2.1-t8pe加速版_2116696483385921537.json, 平台全量/角色三视图_Qwen_image_2.1_2117471005680693250.json]
+members: [图片生成/图生图/VOSR2+SEEDVR2 图像极速高清修复_2100956577120477185.json, 图片生成/图生图/VOSR2+SEEDVR2极速高清修复_2099087328559067138.json, 图片生成/图生图/VOSR2+SEEDVR2极速高清修复_2102331563605323778.json, 图片生成/图生图/VOSR2+SEEDVR2极速高清修复_2110573178627121154.json, 图片生成/图生图/VOSR2+SEEDVR2极速高清修复_2111274289356951553.json, 图片生成/图生图/VOSR2+SEEDVR2极速高清修复_2113785678315216898.json, 图片生成/图生图/老孙AI 极速高清修复_2109085132496916482.json, 图片生成/文生图/AI高清修复丨VOSR2＋SeedVR2丨双模型放大·细节增强_2108075849978302466.json, 图片生成/文生图/AI高清修复丨VOSR2＋SeedVR2丨双模型放大·细节增强_2110702654283407361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_unet_3
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/qwen image2.1 加速版三图图生图_2108114179877068802.json、图片生成/图生图/qwen image2.1 加速版单图生图（90秒出图）_2108082938335289346.json、图片生成/图生图/qwen image2.1 加速版双图图生图_2108108729798455297.json、图片生成/图生图/qwen_image2.1_加速版单图生图90秒出图_2112719052429938689.json、图片生成/图生图/qwen_image2.1_加速版单图生图90秒出图_2114998186719932417.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/VOSR2+SEEDVR2 图像极速高清修复_2100956577120477185.json、图片生成/图生图/VOSR2+SEEDVR2极速高清修复_2099087328559067138.json、图片生成/图生图/VOSR2+SEEDVR2极速高清修复_2102331563605323778.json、图片生成/图生图/VOSR2+SEEDVR2极速高清修复_2110573178627121154.json、图片生成/图生图/VOSR2+SEEDVR2极速高清修复_2111274289356951553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `KSampler`
-- `PreviewImage`
-- `QwenImage21Cache`
-- `ResolutionSelector`
+全部 9 个 workflow 都包含：
+- `GoohaiUniversalSlider`
+- `KSamplerAdvanced`
+- `LayerFilter: GaussianBlur`
+- `LoadImage`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TextEncodeQwenImage21`
+- `SeedVR2Conditioning`
+- `SeedVR2PostProcessing`
+- `SeedVR2Preprocess`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `easy imageSizeByLongerSide`
+- `图像缩放V2_孤海`
+- `数学运算_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 10/12 个有
-- `QwenPERewriteT8` —— 10/12 个有
-- `easy cleanGpuUsed` —— 10/12 个有
-- `LoadImage` —— 7/12 个有
-- `EmptyLatentImage` —— 5/12 个有
-- `ResizeAndPadImage` —— 5/12 个有
-- `ComfySwitchNode` —— 2/12 个有
-- `EmptyFlux2LatentImage` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
+- `PreviewImage` —— 7/9 个有
+- `孤海注释` —— 7/9 个有
+- `忽略多组孤海` —— 7/9 个有
+- `Image Comparer (rgthree)` —— 6/9 个有
+- `GH_ImageVideoComparer` —— 3/9 个有
+- `ComfySwitchNode` —— 2/9 个有
+- `PrimitiveBoolean` —— 2/9 个有
+- `EmptyImage` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 40 | 25 - 40 | 12 | 85% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 采样步数 | fixed | - | 9 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | 1 | 1 - 1 | 9 | 100% |
+| 调度器 | sa_solver | - | 9 | 100% |
+| 重绘幅度 | beta57 | - | 9 | 100% |
 
 ## 常见问题
 
@@ -70,10 +67,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 40，观测区间 25 - 40，12 个样本，取值集中（一致性 85%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，9 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 调度器 最常用 sa_solver，9 个样本，一致性 100%
+- 重绘幅度 最常用 beta57，9 个样本，一致性 100%

@@ -1,61 +1,58 @@
 ---
 name: unknown_workflow_video_sampler_vae_41
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.974
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.8465
+common_nodes: [CLIPVisionLoader, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频——SmoothMix_1978778369921847298.json, 视频生成/图生视频/Wan2.2图生视频（KJ版）_1950839891598966785.json, 视频生成/图生视频/Wan2.2首尾帧_1972692156160888834.json, 视频生成/图生视频/Wan2.2首尾帧加速版_1959587431169339394.json, 视频生成/图生视频/Wan2.2首尾帧图片生视频_1955274783857393666.json, 视频生成/图生视频/Wan2.2首尾帧视频_1954784687051857922.json, 视频生成/图生视频/Wan2_2_I2V_720p_2071492329428570114.json, 视频生成/图生视频/wan2.2 图生视频，kj版8步加速_1960977035327934465.json, 视频生成/图生视频/表情包动起来_2019289555643408385.json, 视频生成/图生视频/静态生成动态图生视频动态表情包_2067311490910220289.json, 视频生成/图生视频/首尾帧图生视频加速版V2.0（Wan2.2）_1964951415749791746.json]
+members: [视频生成/图生视频/Uni3C运镜参考_1929726931179094017.json, 视频生成/图生视频/WAN2.1 FusionX 占满显存效果拉满之（图生视频）_1935000181781766145.json, 视频生成/图生视频/Wan2.1 Kijai 图生视频_1947893136549904385.json, 视频生成/图生视频/Wan2.1 特效LoRa触发词合集_1948691890660081665.json, 视频生成/图生视频/Wan2.1_官方工作流_I2V_k神版本_720P_1930306829082071042.json, 视频生成/图生视频/wan2.1_lora_官方工作流_K神版_480P_1930311338440998914.json, 视频生成/图生视频/wan2.1_lora_官方工作流_K神版_480P_1930415960338108418.json, 视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《360度旋转》_1917932584058425345.json, 视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《大摆锤舞蹈》_1917823045400985602.json, 视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《强风特效》_1917833994954539009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_41
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频——SmoothMix_1978778369921847298.json、视频生成/图生视频/Wan2.2图生视频（KJ版）_1950839891598966785.json、视频生成/图生视频/Wan2.2首尾帧_1972692156160888834.json、视频生成/图生视频/Wan2.2首尾帧加速版_1959587431169339394.json、视频生成/图生视频/Wan2.2首尾帧图片生视频_1955274783857393666.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Uni3C运镜参考_1929726931179094017.json、视频生成/图生视频/WAN2.1 FusionX 占满显存效果拉满之（图生视频）_1935000181781766145.json、视频生成/图生视频/Wan2.1 Kijai 图生视频_1947893136549904385.json、视频生成/图生视频/Wan2.1 特效LoRa触发词合集_1948691890660081665.json、视频生成/图生视频/Wan2.1_官方工作流_I2V_k神版本_720P_1930306829082071042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `INTConstant`
+全部 10 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `ImageResizeKJ`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoT5TextEncoder` —— 10/11 个有
-- `WanVideoLoraSelect` —— 10/11 个有
-- `WanVideoTextEncode` —— 10/11 个有
-- `WanVideoSetBlockSwap` —— 9/11 个有
-- `WanVideoSetLoRAs` —— 9/11 个有
-- `WanVideoTorchCompileSettings` —— 8/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/11 个有
-- `CR Prompt Text` —— 5/11 个有
-- `ImageResizeKJv2` —— 5/11 个有
-- `JWInteger` —— 5/11 个有
-- `WanVideoSetRadialAttention` —— 2/11 个有
-- `CM_IntToFloat` —— 1/11 个有
-- `GetImageSize` —— 1/11 个有
-- `LazySwitch2way` —— 1/11 个有
-- `SimpleMath+` —— 1/11 个有
-- `WanVideoTextEncodeCached` —— 1/11 个有
-- `easy compare` —— 1/11 个有
-- `easy imageSize` —— 1/11 个有
-- `easy int` —— 1/11 个有
-- `easy seed` —— 1/11 个有
+- `WanVideoBlockSwap` —— 9/10 个有
+- `WanVideoTorchCompileSettings` —— 9/10 个有
+- `WanVideoLoraSelect` —— 6/10 个有
+- `WanVideoVRAMManagement` —— 5/10 个有
+- `PreviewImage` —— 4/10 个有
+- `LoadImageFromUrl` —— 2/10 个有
+- `Note Plus (mtb)` —— 2/10 个有
+- `SaveAnimatedWEBP` —— 2/10 个有
+- `INTConstant` —— 1/10 个有
+- `VHS_LoadVideo` —— 1/10 个有
+- `WanVideoEncode` —— 1/10 个有
+- `WanVideoExperimentalArgs` —— 1/10 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/10 个有
+- `WanVideoUni3C_embeds` —— 1/10 个有
 
 ## 典型参数
 

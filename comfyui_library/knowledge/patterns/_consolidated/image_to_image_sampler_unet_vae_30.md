@@ -1,34 +1,33 @@
 ---
 name: image_to_image_sampler_unet_vae_30
 type: Image To Image
-frequency: 9
+frequency: 7
 level: strong
-coverage: 0.784778
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.876
+common_nodes: [ConditioningZeroOut, FluxKontextImageScale, Image Comparer (rgthree), KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/kontext_室内家具产品融图打光_1957494164843851777.json, 平台全量/kontextz最强溶图打光_1950070206964129793.json, 平台全量/kontext去水印_2004032774371721217.json, 平台全量/kontext完美去水印_1991470595630120962.json, 平台全量/kontext换装工作流_1941780121483374593.json, 平台全量/kontext深度图提取_1950934454166552577.json, 平台全量/产品精修 重新打光 极速版 电商产品 拍摄产品一键精修 清除产品表面的灰尘、划痕和微小瑕疵。优化照明_2034854170599104514.json, 平台全量/产品精修_1966408833457401857.json, 平台全量/摄影丨波光粼粼效果_1963218450141384705.json]
+members: [图片生成/图生图/千问QwenEdit 2511一致性图像编辑_2003754623812968450.json, 图片生成/图生图/千问QwenEdit plus一致性图像编辑_1970379059131785217.json, 图片生成/图生图/千问图像编辑，一致性编辑，无像素漂移，感谢Jason_1965208291238400002.json, 图片生成/图生图/去水印_1995428633756020737.json, 图片生成/图生图/图片去水印-Kontext版_1973776280980164610.json, 图片生成/图生图/图片去水印-Kontext版_1979713173710344193.json, 图片生成/图生图/图片去水印_2046787355851362305.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_30
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/kontext_室内家具产品融图打光_1957494164843851777.json、平台全量/kontextz最强溶图打光_1950070206964129793.json、平台全量/kontext去水印_2004032774371721217.json、平台全量/kontext完美去水印_1991470595630120962.json、平台全量/kontext换装工作流_1941780121483374593.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/千问QwenEdit 2511一致性图像编辑_2003754623812968450.json、图片生成/图生图/千问QwenEdit plus一致性图像编辑_1970379059131785217.json、图片生成/图生图/千问图像编辑，一致性编辑，无像素漂移，感谢Jason_1965208291238400002.json、图片生成/图生图/去水印_1995428633756020737.json、图片生成/图生图/图片去水印-Kontext版_1973776280980164610.json…）
 
 - **类型**：Image To Image
-- **样本数**：9
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `FluxKontextImageScale`
+- `Image Comparer (rgthree)`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -36,37 +35,44 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 8/9 个有
-- `PreviewImage` —— 8/9 个有
-- `CLIPTextEncode` —— 7/9 个有
-- `FluxKontextImageScale` —— 7/9 个有
-- `LoraLoaderModelOnly` —— 5/9 个有
-- `ResizeLongestToNode` —— 3/9 个有
-- `LayerMask: BiRefNetUltraV2` —— 2/9 个有
-- `LayerMask: LoadBiRefNetModel` —— 2/9 个有
-- `RHHiddenNodes` —— 2/9 个有
-- `ImageStitch` —— 1/9 个有
-- `easy int` —— 1/9 个有
-- `easy seed` —— 1/9 个有
+- `CLIPTextEncode` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `ReferenceLatent` —— 5/7 个有
+- `DualCLIPLoader` —— 4/7 个有
+- `FluxGuidance` —— 4/7 个有
+- `CLIPLoader` —— 3/7 个有
+- `GroundingDinoModelLoader (segment anything)` —— 3/7 个有
+- `GroundingDinoSAMSegment (segment anything)` —— 3/7 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `MaskPreview` —— 3/7 个有
+- `SAMModelLoader (segment anything)` —— 3/7 个有
+- `CR Prompt Text` —— 2/7 个有
+- `Text` —— 2/7 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/7 个有
+- `FancyTimerNode` —— 1/7 个有
+- `easy getNode` —— 1/7 个有
+- `easy setNode` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 9 | 81% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 56% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 采样步数 | 20 | 8 - 20 | 7 | 60% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 57% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，9 个样本，取值集中（一致性 81%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 56%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 8 - 20，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 57%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

@@ -1,69 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_635
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.7098
-common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CFGGuider, CLIPTextEncode, ComfySwitchNodeV2, EmptyMiniMaxH3LatentAV, Fast Groups Bypasser (rgthree), FeiHouEasyH3RH, FeiHouEasyH3RHDurationCrop, FeiHouEasyH3RHFaceRefine, FeiHouEasyH3RHLoraStack, FeiHouEasyH3RHOutput, FeiHouEasyH3RHPromptPreview, FeiHouEasyH3RHRemixLoader, FeiHouEasyH3RHResolution, GetNode, ImageResizeKJv2, ImpactImageInfo, KSamplerSelect, LoadImage, MiniMaxH3AddGuide, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RHSettingsNode, RandomSeedNoise, SamplerCustomAdvanced, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
+frequency: 3
+level: strong
+coverage: 0.799
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, INTConstant, ImageLoader, ImageResizeKJv2, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ModelSamplingSD3, MultiplePathsInput, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, YC_textReplaceNode, easy showAnything, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2101863503865929729.json, 视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2101223899563380737.json, 视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2110561566671331329.json, 视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2111005524354490369.json, 视频生成/文生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2091354551029948418.json]
+members: [图片生成/图生图/片场探班首尾帧驱动一镜到底运镜Smooth Mix Wan 2.2 I2V High_2004828661687742466.json, 视频生成/图生视频/明星合影相遇图生视频首尾帧V3_2003113307240374273.json, 视频生成/图生视频/电影片场转场合影图生视频（首尾帧）_2003436959081111553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_635
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2101863503865929729.json、视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2101223899563380737.json、视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2110561566671331329.json、视频生成/图生视频/极致简化_MiniMax_H3_Remix_无限画布式操作_+_全功能_+_提示词反推_+_双采样_2111005524354490369.json、视频生成/文生视频/极致简化 MiniMax H3 Remix 无限画布式操作 + 全功能 + 提示词反推 + 双采样_2091354551029948418.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/片场探班首尾帧驱动一镜到底运镜Smooth Mix Wan 2.2 I2V High_2004828661687742466.json、视频生成/图生视频/明星合影相遇图生视频首尾帧V3_2003113307240374273.json、视频生成/图生视频/电影片场转场合影图生视频（首尾帧）_2003436959081111553.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNodeV2`
-- `EmptyMiniMaxH3LatentAV`
-- `Fast Groups Bypasser (rgthree)`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHDurationCrop`
-- `FeiHouEasyH3RHFaceRefine`
-- `FeiHouEasyH3RHLoraStack`
-- `FeiHouEasyH3RHOutput`
-- `FeiHouEasyH3RHPromptPreview`
-- `FeiHouEasyH3RHRemixLoader`
-- `FeiHouEasyH3RHResolution`
-- `GetNode`
+- `CR Prompt Text`
+- `INTConstant`
+- `ImageLoader`
 - `ImageResizeKJv2`
-- `ImpactImageInfo`
-- `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RHSettingsNode`
-- `RandomSeedNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
+- `Int`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `MultiplePathsInput`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `Qwen3_VQA`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `WanFirstLastFrameToVideo`
+- `YC_textReplaceNode`
+- `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 3/5 个有
-- `EmptyImage` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
+- `Any To Any` —— 2/3 个有
+- `HunyuanVideoFoley` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `SaveLatent` —— 2/3 个有
+- `VAEEncode` —— 2/3 个有
+- `VHS_SelectFilename` —— 2/3 个有
+- `CR Integer To String` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | normal | - | 3 | 100% |
 
 ## 常见问题
 
@@ -71,4 +79,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 normal，3 个样本，一致性 100%

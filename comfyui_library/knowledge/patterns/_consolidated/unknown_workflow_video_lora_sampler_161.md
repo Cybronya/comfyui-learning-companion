@@ -1,97 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_161
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: moderate
-coverage: 0.494857
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, INTConstant, ImageResizeKJv2, JoinStrings, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.816
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxH3VAEDecodeFast, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, PrimitiveFloat, QwenH3PromptLocal, ResolutionSelector, RunningHub Deepcleaner, SelfLiftAvatarH3Sampler, UNETLoader, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/LTX2.3数字人说话唱歌对口型+全节点注释_2054546076002209794.json, 数字人/数字人/Ltx2.3数字人说话-极速参数优化-202606_2068623008067051522.json, 数字人/数字人/ltx+tts_2077270862549577730.json, 数字人/数字人/数字人视频生成：LTX2.3 BGM+TTS优化版_2083187553284476929.json, 视频生成/图生视频/LTX2.3+音频驱动_2084104031198343170.json, 视频生成/图生视频/LTX2.3图片转数字人kj版_说话唱歌对口型_2043611581572976641.json, 视频生成/图生视频/LTX2.3图片转数字人kj版_说话唱歌对口型_2043656293486956545.json, 视频生成/图生视频/LTX2.3数字人_2044745216434900994.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型！优化升级kj版！_2044045789097369601.json, 视频生成/图生视频/数字人带货视频LTX2.3_2083076708705587201.json, 视频生成/图生视频/数字人说话唱歌LTV2.0_图片对口型_2082357953612566530.json, 视频生成/图生视频/数字人说话唱歌LTV2.0_图片对口型_2083114579193843713.json, 视频生成/图生视频/数字人说话带货视频-文本驱动-升级版_2082813113300250626.json, 视频生成/图生视频/最新LTX2.3数字人1.1模型 数字人唱歌对口型极速版_2046477938211692546.json]
+members: [视频生成/图生视频/123_2107820492894855170.json, 视频生成/图生视频/CGDselflift+2xVAE+锐化放大模型工作流_2110638154041618433.json, 视频生成/图生视频/MiniMax H3_selflift+2xVAE+锐化放大工作流_2105110415595364353.json, 视频生成/图生视频/Minimax-H3_2109624727416430594.json, 视频生成/图生视频/MinimaxH3-图生视频-高清2K_2105896544250720257.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104877137932148737.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104929413359030273.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104933693600129025.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2110566290069999618.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2111010022284161026.json, 视频生成/图生视频/锐化工作流_2113864371016392706.json, 视频生成/文生视频/MimaxH3锐化高清放大采样工作流_2105086382539624449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_161
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/LTX2.3数字人说话唱歌对口型+全节点注释_2054546076002209794.json、数字人/数字人/Ltx2.3数字人说话-极速参数优化-202606_2068623008067051522.json、数字人/数字人/ltx+tts_2077270862549577730.json、数字人/数字人/数字人视频生成：LTX2.3 BGM+TTS优化版_2083187553284476929.json、视频生成/图生视频/LTX2.3+音频驱动_2084104031198343170.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/123_2107820492894855170.json、视频生成/图生视频/CGDselflift+2xVAE+锐化放大模型工作流_2110638154041618433.json、视频生成/图生视频/MiniMax H3_selflift+2xVAE+锐化放大工作流_2105110415595364353.json、视频生成/图生视频/Minimax-H3_2109624727416430594.json、视频生成/图生视频/MinimaxH3-图生视频-高清2K_2105896544250720257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `BasicScheduler`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `JoinStrings`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `H3SigmaRefiner`
 - `KSamplerSelect`
-- `LTX2AttentionTunerPatch`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3VAEDecodeFast`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PreviewAny`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `TrimAudioDuration`
+- `QwenH3PromptLocal`
+- `ResolutionSelector`
+- `RunningHub Deepcleaner`
+- `SelfLiftAvatarH3Sampler`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 13/14 个有
-- `LatentUpscaleModelLoader` —— 13/14 个有
-- `LayerUtility: PurgeVRAM` —— 13/14 个有
-- `SimpleCalculatorKJ` —— 13/14 个有
-- `ComfySwitchNode` —— 12/14 个有
-- `GetImageSize` —— 12/14 个有
-- `LTXVCropGuides` —— 12/14 个有
-- `MelBandRoFormerModelLoader` —— 12/14 个有
-- `MelBandRoFormerSampler` —— 12/14 个有
-- `ResizeImageMaskNode` —— 12/14 个有
-- `SimpleMath+` —— 7/14 个有
-- `Compare` —— 6/14 个有
-- `InversionDemoLazySwitch` —— 6/14 个有
-- `easy showAnything` —— 6/14 个有
-- `Int` —— 5/14 个有
-- `IndexTTS2_Basic` —— 3/14 个有
-- `JjkText` —— 3/14 个有
-- `SaveAudio` —— 3/14 个有
-- `GetAudioDurationFromAudio` —— 2/14 个有
-- `1hew_AudioDuration` —— 1/14 个有
-- `AudioTrim` —— 1/14 个有
-- `ColorMatchV2` —— 1/14 个有
-- `PreviewAudio` —— 1/14 个有
-- `PreviewImage` —— 1/14 个有
-- `Qwen3_VQA` —— 1/14 个有
-- `RH_GetAudioDuration` —— 1/14 个有
-- `RH_LLMAPI_NODE` —— 1/14 个有
-- `SoundFlow_Mixer` —— 1/14 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/14 个有
-- `easy indexTTSGenerateSimple` —— 1/14 个有
+- `Fast Groups Muter (rgthree)` —— 10/12 个有
+- `VAEDecode` —— 9/12 个有
+- `Image Comparer (rgthree)` —— 8/12 个有
+- `ImageFromBatch` —— 8/12 个有
+- `JjkText` —— 2/12 个有
+- `BlockSparseAttention` —— 1/12 个有
+- `PrimitiveStringMultiline` —— 1/12 个有
+- `Text` —— 1/12 个有
 
 ## 典型参数
 

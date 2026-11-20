@@ -3,89 +3,65 @@ name: unknown_workflow_video_lora_sampler_984
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.513
-common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DownloadAndLoadNLFModel, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, EmptyImage, FaceMaskFromPoseKeypoints, Fast Groups Bypasser (rgthree), FloatConstant, GetImageRangeFromBatch, GetNode, GrowMask, GrowMaskWithBlur, INTConstant, ImageBatchMulti, ImageCropByMaskAndResize, ImageFromBatch, ImageResizeKJv2, KSampler, LayerUtility: ImageBlendAdvance, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, NLFPredict, OnnxDetectionModelLoader, PathchSageAttentionKJ, PixelPerfectResolution, PointsEditor, PoseAndFaceDetection, PoseDetectionOneToAllAnimation, PoseDetectionVitPoseToDWPose, PreviewImage, RenderNLFPoses, SDPoseOODLoader, SDPoseOODProcessor, Sam2Segmentation, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleCalculatorKJ, TorchCompileModelWanVideoV2, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, YOLOModelLoader, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageRemBg, easy seed, easy showAnything]
+coverage: 0.459
+common_nodes: [Anything Everywhere3, AudioEncoderEncode, AudioEncoderLoader, AudioInfo, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, GetNode, ImageBatchOneOrMore, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, ModelSamplingSD3, PrimitiveInt, SetNode, SimpleMath+, ToInt, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy forLoopEnd, easy forLoopStart, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/WanAnimate官流终极版，长视频不再偏色和闪烁_2009088209187250178.json, 数字人/数字人/WanAnimate官流无限长视频--动作迁移替换人物_1981049534899961858.json]
+members: [视频生成/图生视频/电商数字人 长视频双人图片对口型_2019939783627247617.json, 视频生成/图生视频/电商数字人图片对口型 单人长视频版_2019245927545966594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_984
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/WanAnimate官流终极版，长视频不再偏色和闪烁_2009088209187250178.json、数字人/数字人/WanAnimate官流无限长视频--动作迁移替换人物_1981049534899961858.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/电商数字人 长视频双人图片对口型_2019939783627247617.json、视频生成/图生视频/电商数字人图片对口型 单人长视频版_2019245927545966594.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BlockifyMask`
+- `Anything Everywhere3`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioInfo`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DownloadAndLoadNLFModel`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `EmptyImage`
-- `FaceMaskFromPoseKeypoints`
-- `Fast Groups Bypasser (rgthree)`
-- `FloatConstant`
-- `GetImageRangeFromBatch`
+- `ConditioningZeroOut`
 - `GetNode`
-- `GrowMask`
-- `GrowMaskWithBlur`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageCropByMaskAndResize`
+- `ImageBatchOneOrMore`
 - `ImageFromBatch`
 - `ImageResizeKJv2`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: ImageBlendAdvance`
-- `LayerUtility: PurgeVRAM`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `MathExpression|pysssss`
+- `ModelPatchLoader`
 - `ModelSamplingSD3`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PathchSageAttentionKJ`
-- `PixelPerfectResolution`
-- `PointsEditor`
-- `PoseAndFaceDetection`
-- `PoseDetectionOneToAllAnimation`
-- `PoseDetectionVitPoseToDWPose`
-- `PreviewImage`
-- `RenderNLFPoses`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `Sam2Segmentation`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
+- `PrimitiveInt`
 - `SetNode`
-- `SimpleCalculatorKJ`
-- `TorchCompileModelWanVideoV2`
-- `TrimVideoLatent`
-- `UnetLoaderGGUF`
+- `SimpleMath+`
+- `ToInt`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimateToVideo`
-- `YOLOModelLoader`
-- `easy cleanGpuUsed`
+- `WanInfiniteTalkToVideo`
 - `easy forLoopEnd`
 - `easy forLoopStart`
-- `easy imageRemBg`
-- `easy seed`
 - `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `AudioConcat` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 
@@ -94,7 +70,7 @@ source: knowledge_consolidation
 | 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
+| 调度器 | normal | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
@@ -108,7 +84,7 @@ source: knowledge_consolidation
 - 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
+- 调度器 最常用 normal，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

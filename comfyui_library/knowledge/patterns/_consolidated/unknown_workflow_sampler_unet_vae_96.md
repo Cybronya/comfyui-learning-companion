@@ -1,67 +1,59 @@
 ---
 name: unknown_workflow_sampler_unet_vae_96
 type: Unknown Workflow
-frequency: 12
+frequency: 10
 level: moderate
-coverage: 0.806
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.9575
+common_nodes: [CLIPLoader, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 双图15秒原生有声视频 12G低显存增强版_2085579097249505282.json, 视频生成/图生视频/MiniMax H3 咕嘎FC_2085282461919039490.json, 视频生成/图生视频/MiniMax H3 图生视频 升级版_2085717836827287553.json, 视频生成/图生视频/MiniMax H3 多参考图_视频生成视频_2088037369399300097.json, 视频生成/图生视频/MiniMax H3 多参考生视频（本地版）_2084663749595721729.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2084140670419300353.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2084157109444366337.json, 视频生成/图生视频/MiniMaxH3_参考生视频量化加速版_文本_图像_音频_视频_2100207410085457921.json, 视频生成/图生视频/MiniMaxH3_参考生视频量化加速版_文本_图像_音频_视频_2101876284900073474.json, 视频生成/图生视频/电商产品展示 MiniMax H3 图生视频_2086081191966498817.json, 视频生成/图生视频/电商产品视频 图生视频增强版_2095009978229813249.json, 视频生成/文生视频/MiniMaxH3全能参考生视频1080P开源版（9图3视频3音频）_2084893038450663426.json]
+members: [图片生成/图生图/【遇见AI】FLUX2-klein-9b，多图参考（qwen版clip）_2012417850039869441.json, 图片生成/图生图/【遇见AI】FLUX2-klein-9b，多图参考（条件串联）_2012413491184930818.json, 图片生成/图生图/【遇见AI】FLUX2-klein-base-4b，图像编辑_2012012542809350145.json, 图片生成/图生图/【遇见AI】FLUX2-klein-base-9b，图像编辑_2012020744510775298.json, 图片生成/图生图/【遇见AI】FLUX2多图参考_1993593282003402754.json, 图片生成/图生图/【遇见AI】texture2albedo-v2光影移除lora，基于klein9b模型_2071132171263369217.json, 图片生成/图生图/【阡陌】FLUX-2-Klein 9B base版单图编辑工作流_2016508238623154177.json, 图片生成/图生图/一次出图100张 海量图生图 多角度 保持人物一致 Flux2 Klein 9B Klein  一图_2027279328433676290.json, 图片生成/图生图/一键高品质产品精修Klein_2014308186299310082.json, 图片生成/图生图/万物迁移工作流_2036348251548426241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_96
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 双图15秒原生有声视频 12G低显存增强版_2085579097249505282.json、视频生成/图生视频/MiniMax H3 咕嘎FC_2085282461919039490.json、视频生成/图生视频/MiniMax H3 图生视频 升级版_2085717836827287553.json、视频生成/图生视频/MiniMax H3 多参考图_视频生成视频_2088037369399300097.json、视频生成/图生视频/MiniMax H3 多参考生视频（本地版）_2084663749595721729.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/【遇见AI】FLUX2-klein-9b，多图参考（qwen版clip）_2012417850039869441.json、图片生成/图生图/【遇见AI】FLUX2-klein-9b，多图参考（条件串联）_2012413491184930818.json、图片生成/图生图/【遇见AI】FLUX2-klein-base-4b，图像编辑_2012012542809350145.json、图片生成/图生图/【遇见AI】FLUX2-klein-base-9b，图像编辑_2012020744510775298.json、图片生成/图生图/【遇见AI】FLUX2多图参考_1993593282003402754.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
+- `Flux2Scheduler`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 11/12 个有
-- `CreateVideo` —— 11/12 个有
-- `PrimitiveFloat` —— 11/12 个有
-- `ResolutionSelector` —— 11/12 个有
-- `SaveVideo` —— 11/12 个有
-- `LoadAudio` —— 9/12 个有
-- `VHS_LoadVideo` —— 6/12 个有
-- `JjkText` —— 3/12 个有
-- `PreviewImage` —— 3/12 个有
-- `EmptyImage` —— 2/12 个有
-- `SeedVR2LoadDiTModel` —— 2/12 个有
-- `SeedVR2LoadVAEModel` —— 2/12 个有
-- `SeedVR2VideoUpscaler` —— 2/12 个有
-- `easy cleanGpuUsed` —— 2/12 个有
-- `EasyCache` —— 1/12 个有
-- `INTConstant` —— 1/12 个有
-- `ImageScaleToTotalPixels` —— 1/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/12 个有
-- `PainterVRAM` —— 1/12 个有
-- `PathchSageAttentionKJ` —— 1/12 个有
-- `PreviewAny` —— 1/12 个有
-- `RHLLMChatNode` —— 1/12 个有
-- `RTXVideoSuperResolution` —— 1/12 个有
-- `VHS_VideoCombine` —— 1/12 个有
+- `CLIPTextEncode` —— 9/10 个有
+- `ReferenceLatent` —— 9/10 个有
+- `BasicGuider` —— 6/10 个有
+- `FluxGuidance` —— 6/10 个有
+- `ImageScaleToTotalPixels` —— 5/10 个有
+- `CFGGuider` —— 4/10 个有
+- `EmptyFlux2LatentImage` —— 4/10 个有
+- `Image Comparer (rgthree)` —— 4/10 个有
+- `ConditioningZeroOut` —— 3/10 个有
+- `GetImageSize` —— 3/10 个有
+- `ImpactImageInfo` —— 3/10 个有
+- `GetImageSizeAndCount` —— 2/10 个有
+- `LoraLoaderModelOnly` —— 2/10 个有
+- `CR Prompt List` —— 1/10 个有
+- `ColorMatch` —— 1/10 个有
+- `TextEncodeQwenImageEditPlus` —— 1/10 个有
+- `easy imageSize` —— 1/10 个有
+- `easy promptLine` —— 1/10 个有
 
 ## 典型参数
 

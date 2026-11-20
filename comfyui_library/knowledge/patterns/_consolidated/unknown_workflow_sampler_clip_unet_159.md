@@ -1,61 +1,64 @@
 ---
 name: unknown_workflow_sampler_clip_unet_159
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.925556
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.924625
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/千府AI-Flux.2_Klein高清洗图工作流_2032316645363949570.json, 图片生成/图生图/千府AI-FluxKlein室内风格迁移工作流_2031990406266753026.json, 图片生成/图生图/千府AI-FluxKlein效果图风格转换工作流_2013475853849595906.json, 图片生成/图生图/千府AI-FluxKlein立面风格迁移工作流_2031957779518332929.json, 图片生成/图生图/漫画转欧美美女（解禁模型）：Flux2 Klein 9B_2055197694913720322.json, 图片生成/图生图/老照片修复 -｜Flux-Klein｜底模_2054444918260682753.json, 图片生成/图生图/老照片修复 -｜Flux-Klein｜底模_2069231901122056194.json, 图片生成/图生图/脱衣服穿衣服_2080345607318884353.json, 图片生成/图生图/高清放大_2072576146432159746.json]
+members: [图片生成/图生图/▶2_Flux2Klein-单图及多图编辑_2066881431275663361.json, 图片生成/图生图/【1月】高质量图像编辑 Flux2-Klein-9B_2012162088738758658.json, 图片生成/图生图/【Flux2 Klein】 双图编辑+换装lora版本_2030255334941528065.json, 图片生成/图生图/【Flux2 Klein】 （加密版）双图编辑+换装lora版本_2049724297060552705.json, 图片生成/图生图/【工作台】 双图编辑+换装lora版本（常规）_2075804075794456578.json, 图片生成/图生图/【推荐动漫转真人】Flux2 Klein_史上最强动漫转写实真人_2017575897674551298.json, 图片生成/图生图/一键去水印FLUX2-klein-增强版_2028855059450171393.json, 图片生成/图生图/最强万物迁移 f2k_9b_anything change clothes_2026650952215826434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_159
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/千府AI-Flux.2_Klein高清洗图工作流_2032316645363949570.json、图片生成/图生图/千府AI-FluxKlein室内风格迁移工作流_2031990406266753026.json、图片生成/图生图/千府AI-FluxKlein效果图风格转换工作流_2013475853849595906.json、图片生成/图生图/千府AI-FluxKlein立面风格迁移工作流_2031957779518332929.json、图片生成/图生图/漫画转欧美美女（解禁模型）：Flux2 Klein 9B_2055197694913720322.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/▶2_Flux2Klein-单图及多图编辑_2066881431275663361.json、图片生成/图生图/【1月】高质量图像编辑 Flux2-Klein-9B_2012162088738758658.json、图片生成/图生图/【Flux2 Klein】 双图编辑+换装lora版本_2030255334941528065.json、图片生成/图生图/【Flux2 Klein】 （加密版）双图编辑+换装lora版本_2049724297060552705.json、图片生成/图生图/【工作台】 双图编辑+换装lora版本（常规）_2075804075794456578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
+- `GetImageSize`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 8/9 个有
-- `LoraLoaderModelOnly` —— 8/9 个有
-- `GetImageSize` —— 7/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
-- `Image Comparer (rgthree)` —— 6/9 个有
-- `ConditioningZeroOut` —— 5/9 个有
-- `Anything Everywhere` —— 4/9 个有
-- `ModelPatchTorchSettings` —— 4/9 个有
-- `ImitationHueNode` —— 2/9 个有
-- `Text Multiline` —— 2/9 个有
-- `AIO_Preprocessor` —— 1/9 个有
-- `ImageBlend` —— 1/9 个有
-- `ImageColorMatch+` —— 1/9 个有
-- `ImageResizeKJv2` —— 1/9 个有
-- `JsonPromptNode` —— 1/9 个有
-- `LayerUtility: PurgeVRAM` —— 1/9 个有
-- `easy int` —— 1/9 个有
+- `CR Text` —— 7/8 个有
+- `ReferenceLatent` —— 7/8 个有
+- `VAEEncode` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `ImageConcanate` —— 4/8 个有
+- `ImageScaleToTotalPixels` —— 4/8 个有
+- `easy imageScaleDownToSize` —— 4/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `ConditioningAddImageReference` —— 1/8 个有
+- `CustomAddLabel` —— 1/8 个有
+- `DuckHideNode` —— 1/8 个有
+- `JWInteger` —— 1/8 个有
+- `Load Lora` —— 1/8 个有
+- `PDIMAGE_LongerSize` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `SeedVR2` —— 1/8 个有
+- `SeedVR2BlockSwap` —— 1/8 个有
+- `SeedVR2ExtraArgs` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 

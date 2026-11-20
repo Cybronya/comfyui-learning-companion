@@ -3,93 +3,73 @@ name: unknown_workflow_upscale_latent_upscale_lora_65
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 0.699
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLTXVLatentVideo, JoinStrings, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, MemoryCleaner, PrimitiveFloat, Qwen3_VQA, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SeedGenerator, ShowText|pysssss, SimpleCalculatorKJ, VAEDecodeTiled, easy cleanGpuUsed, easy showAnything, ttN concat]
+coverage: 0.8098
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX 2.3 多图生视频 （V1版 增强人脸一致性，+转场 +VBVR 理解复杂运动，正确物理运动_2049390145010409474.json, 视频生成/图生视频/LTX 2.3 首尾帧视频 一致性+转场+VBVR复杂运动_2052747841218596866.json, 视频生成/图生视频/LTX 2.3 首尾帧视频｜ 丝滑转场｜+转场 LoRA （强化运动连贯性）+VBVR 理解复杂运_2044451540315938817.json, 视频生成/文生视频/LTX 2.3 复杂动作版｜文生视频 & 图生视频 ｜V1.1版（人脸一致性）+ VBVR 理解复杂_2044309375526899714.json, 视频生成/文生视频/图生视频 & 文生视频｜+ HDR + 工业级自动调色（避免死黑过曝）｜LTX2.3_2047750461792460802.json]
+members: [视频生成/文生视频/LTX 2.3 自动生成播客视频_2035631355412877313.json, 视频生成/文生视频/LTX-2 文生视频官方版_2008956000639918082.json, 视频生成/文生视频/LTX-2 文生视频官方版_2073297832060211201.json, 视频生成/文生视频/LTX-2 文生视频运镜控制_2073298030320775169.json, 视频生成/文生视频/LTX-2 文生视频适配LoRA 1080P_2073300625739313153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_65
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX 2.3 多图生视频 （V1版 增强人脸一致性，+转场 +VBVR 理解复杂运动，正确物理运动_2049390145010409474.json、视频生成/图生视频/LTX 2.3 首尾帧视频 一致性+转场+VBVR复杂运动_2052747841218596866.json、视频生成/图生视频/LTX 2.3 首尾帧视频｜ 丝滑转场｜+转场 LoRA （强化运动连贯性）+VBVR 理解复杂运_2044451540315938817.json、视频生成/文生视频/LTX 2.3 复杂动作版｜文生视频 & 图生视频 ｜V1.1版（人脸一致性）+ VBVR 理解复杂_2044309375526899714.json、视频生成/文生视频/图生视频 & 文生视频｜+ HDR + 工业级自动调色（避免死黑过曝）｜LTX2.3_2047750461792460802.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/LTX 2.3 自动生成播客视频_2035631355412877313.json、视频生成/文生视频/LTX-2 文生视频官方版_2008956000639918082.json、视频生成/文生视频/LTX-2 文生视频官方版_2073297832060211201.json、视频生成/文生视频/LTX-2 文生视频运镜控制_2073298030320775169.json、视频生成/文生视频/LTX-2 文生视频适配LoRA 1080P_2073300625739313153.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CR Text`
-- `ComfyMathExpression`
+- `CheckpointLoaderSimple`
+- `CreateVideo`
 - `EmptyLTXVLatentVideo`
-- `JoinStrings`
 - `KSamplerSelect`
-- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MemoryCleaner`
-- `PrimitiveFloat`
-- `Qwen3_VQA`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SeedGenerator`
-- `ShowText|pysssss`
-- `SimpleCalculatorKJ`
+- `SaveVideo`
 - `VAEDecodeTiled`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `CheckpointLoaderSimple` —— 4/5 个有
-- `CreateVideo` —— 4/5 个有
-- `ImageResizeKJv2` —— 4/5 个有
-- `LTXAVTextEncoderLoader` —— 4/5 个有
-- `LTXVAudioVAELoader` —— 4/5 个有
-- `LTXVCropGuides` —— 4/5 个有
-- `LTXVImgToVideoInplace` —— 4/5 个有
-- `CM_FloatToInt` —— 3/5 个有
-- `INTConstant` —— 3/5 个有
-- `LTXVChunkFeedForward` —— 3/5 个有
-- `LoadImage` —— 3/5 个有
-- `ModelPatchTorchSettings` —— 3/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `SaveVideo` —— 3/5 个有
-- `ImageLoader` —— 2/5 个有
-- `ImageStitch` —— 2/5 个有
-- `LTXVImgToVideoInplaceKJ` —— 2/5 个有
-- `PrimitiveBoolean` —— 2/5 个有
-- `PrimitiveInt` —— 2/5 个有
-- `PromptRelayEncode` —— 2/5 个有
-- `VHS_VideoCombine` —— 2/5 个有
-- `DualCLIPLoader` —— 1/5 个有
-- `Image Levels Adjustment` —— 1/5 个有
-- `ImageSharpen` —— 1/5 个有
-- `LTX2SamplingPreviewOverride` —— 1/5 个有
-- `LTXVAddGuideMulti` —— 1/5 个有
-- `LTXVEnhanceAVideoKJ` —— 1/5 个有
-- `LTXVHDRDecodePostprocess` —— 1/5 个有
-- `LTXVImgToVideoConditionOnly` —— 1/5 个有
-- `MultiplePathsInput` —— 1/5 个有
-- `ResizeImageMaskNode` —— 1/5 个有
-- `UNETLoader` —— 1/5 个有
-- `VAELoaderKJ` —— 1/5 个有
-- `easy imageSize` —— 1/5 个有
+- `EmptyImage` —— 4/5 个有
+- `GetImageSize` —— 4/5 个有
+- `ImageScaleBy` —— 4/5 个有
+- `PrimitiveFloat` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `LTXVScheduler` —— 3/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `CR String To Combo` —— 1/5 个有
+- `Float to Int` —— 1/5 个有
+- `ImpactStringSelector` —— 1/5 个有
+- `JWStringReplace` —— 1/5 个有
+- `LTXVImgToVideoInplace` —— 1/5 个有
+- `LTXVPreprocess` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `PurgeVRAM_UTK` —— 1/5 个有
+- `RH_LLMAPI_NODE` —— 1/5 个有
+- `RH_LLMAPI_Pro_Node` —— 1/5 个有
+- `ShowAnything|Mie` —— 1/5 个有
+- `Switch` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
+- `intToFloat _O` —— 1/5 个有
 
 ## 典型参数
 

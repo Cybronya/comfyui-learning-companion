@@ -1,71 +1,90 @@
 ---
 name: unknown_workflow_video_lora_sampler_737
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.55675
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.535667
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, DisableNoise, Fast Groups Bypasser (rgthree), ForLoopClose, ForLoopOpen, GetNode, ImageBatchExtendWithOverlap, ImpactInt, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RIFEInterpolation, RTXVideoSuperResolution, RandomNoise, SamplerCustomAdvanced, ScheduledCFGGuidance, SetNode, SomethingToString, SplitSigmas, String Replace (mtb), UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_GetImageCount, VHS_VideoCombine, WanImageToVideoSVIPro, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan Animate2.2动作迁移V3(Move) 骨骼增强版_2073292954780917762.json, 视频生成/图生视频/Wan2.2 Animate人物动作+表情迁移_1972599286972231682.json, 视频生成/图生视频/animate+move视频动作模仿_2042582047956410370.json, 视频生成/图生视频/姿态声音Animate Wan2.2 增强更新版人物一致性百分百_1974720060226973697.json]
+members: [视频生成/图生视频/wan2.2图生视频_2048784808272207873.json, 视频生成/图生视频/wan2.2无限图生视频工作流_2041333413067628545.json, 视频生成/文生视频/wan2.2无限文视频工作流_2042218145586356225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_737
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan Animate2.2动作迁移V3(Move) 骨骼增强版_2073292954780917762.json、视频生成/图生视频/Wan2.2 Animate人物动作+表情迁移_1972599286972231682.json、视频生成/图生视频/animate+move视频动作模仿_2042582047956410370.json、视频生成/图生视频/姿态声音Animate Wan2.2 增强更新版人物一致性百分百_1974720060226973697.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2图生视频_2048784808272207873.json、视频生成/图生视频/wan2.2无限图生视频工作流_2041333413067628545.json、视频生成/文生视频/wan2.2无限文视频工作流_2042218145586356225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageSizeAndCount`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DisableNoise`
+- `Fast Groups Bypasser (rgthree)`
+- `ForLoopClose`
+- `ForLoopOpen`
 - `GetNode`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `ImageBatchExtendWithOverlap`
+- `ImpactInt`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RIFEInterpolation`
+- `RTXVideoSuperResolution`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `ScheduledCFGGuidance`
 - `SetNode`
-- `VHS_LoadVideo`
+- `SomethingToString`
+- `SplitSigmas`
+- `String Replace (mtb)`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `VHS_GetImageCount`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanImageToVideoSVIPro`
+- `easy promptLine`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
-- `ImageConcatMulti` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
-- `DWPreprocessor` —— 2/4 个有
-- `DrawViTPose` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `EmptyImage` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `PixelPerfectResolution` —— 1/4 个有
-- `PoseDetectionOneToAllAnimation` —— 1/4 个有
-- `PoseRetargetPromptHelper` —— 1/4 个有
-- `Primitive integer [Crystools]` —— 1/4 个有
-- `VHS_VideoInfo` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
-- `easy anythingIndexSwitch` —— 1/4 个有
+- `LoadImage` —— 2/3 个有
+- `PainterVRAM` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `UnloadModel` —— 2/3 个有
+- `DuckHideNode` —— 1/3 个有
+- `EmptySD3LatentImage` —— 1/3 个有
+- `KSampler` —— 1/3 个有
+- `ModelSamplingAuraFlow` —— 1/3 个有
+- `Text Concatenate` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 10 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | simple | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 

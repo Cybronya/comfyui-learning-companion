@@ -1,75 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_135
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: strong
-coverage: 0.920333
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ProcessString, SaveImage, UNETLoader, VAEDecode, VAELoader, easy promptLine, easy showAnything]
+coverage: 1
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/分镜剧照洗图+帧境衔接+人物多角度+分镜场景视角生成+Qwen+edit+空间光影质感重绘_2068855572929273858.json, 图片生成/图生图/分镜剧照洗图+帧境衔接+人物多角度+分镜场景视角生成+Qwen+edit+空间光影质感重绘_2077289226323972097.json, 图片生成/图生图/分镜图生成_2116004429735485442.json, 图片生成/图生图/分镜图生成（人物）_2116064057198465026.json, 图片生成/文生图/分镜剧照洗图 帧境衔接 人物多角度 分镜场景视角生成 Qwen edit 空间光影质感重绘_2066884811427508226.json, 平台全量/分镜剧照洗图 帧境衔接 人物多角度 分镜场景视角生成 Qwen edit 空间光影质感重绘_2066694025385697282.json]
+members: [图片生成/图生图/FireRed 局部重绘改图_2083841089588523009.json, 图片生成/图生图/FireRedImageedit1.1小红书局部重绘改图_2053381577794699265.json, 图片生成/图生图/FireRedImageedit1.1小红书局部重绘改图_2056041789731164161.json, 图片生成/图生图/千问图像编辑2511 双图编辑一致性_2013173412998418434.json, 图片生成/图生图/小红书开源模型FireRed-Image-edit1.1局部重绘改图p图改字_2029809441138286593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_135
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/分镜剧照洗图+帧境衔接+人物多角度+分镜场景视角生成+Qwen+edit+空间光影质感重绘_2068855572929273858.json、图片生成/图生图/分镜剧照洗图+帧境衔接+人物多角度+分镜场景视角生成+Qwen+edit+空间光影质感重绘_2077289226323972097.json、图片生成/图生图/分镜图生成_2116004429735485442.json、图片生成/图生图/分镜图生成（人物）_2116064057198465026.json、图片生成/文生图/分镜剧照洗图 帧境衔接 人物多角度 分镜场景视角生成 Qwen edit 空间光影质感重绘_2066884811427508226.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FireRed 局部重绘改图_2083841089588523009.json、图片生成/图生图/FireRedImageedit1.1小红书局部重绘改图_2053381577794699265.json、图片生成/图生图/FireRedImageedit1.1小红书局部重绘改图_2056041789731164161.json、图片生成/图生图/千问图像编辑2511 双图编辑一致性_2013173412998418434.json、图片生成/图生图/小红书开源模型FireRed-Image-edit1.1局部重绘改图p图改字_2029809441138286593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `ProcessString`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `TextEncodeQwenImageEditPlus` —— 5/6 个有
-- `CR SDXL Aspect Ratio` —— 4/6 个有
-- `RH_Captioner` —— 4/6 个有
-- `Anything Everywhere3` —— 2/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `JjkText` —— 2/6 个有
-- `LayerUtility: TextJoin` —— 2/6 个有
-- `RH_LLMAPI_NODE` —— 2/6 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/6 个有
+- `CR Prompt Text` —— 4/5 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `InpaintModelConditioning` —— 4/5 个有
+- `Int` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `MaskFillHoles` —— 3/5 个有
+- `EmptySD3LatentImage` —— 1/5 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 6 | 55% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 83% |
-| 调度器 | simple | - | 6 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 8 | 8 - 8 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 83%
-- 调度器 最常用 simple，6 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（5/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

@@ -1,79 +1,71 @@
 ---
 name: text_to_image_sampler_clip_unet_59
 type: Text To Image
-frequency: 12
-level: weak
-coverage: 0.91125
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 11
+level: moderate
+coverage: 0.851818
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/【开箱即用】KREA-2-FP8_文生图基础流_新任生图王者_风格万变_2069375033096622081.json, 图片生成/文生图/【极速版】Krea2 Trubo美商极高文生图_V2版_2105216145447014402.json, 图片生成/文生图/【通义-ZImage文生图】最强小参数大猛兽！ 极致速度、极致质量、极致性价比。_1994129975662100482.json, 图片生成/文生图/【遇见AI】Krea2 Lip BIting 咬嘴唇lora_2082379890434854914.json, 图片生成/文生图/【遇见AI】Krea2文生图基础工作流_2069621635891679234.json, 图片生成/文生图/【遇见AI】Z-image turbo基础文生图_2053775081775611905.json, 图片生成/文生图/【遇见AI】Z-image 基础文生图_2053780457782816769.json, 图片生成/文生图/【遇见AI】boogu image base基础工作流_2067907838378340354.json, 图片生成/文生图/【遇见AI】boogu image turbo 基础工作流_2067908137574813697.json, 图片生成/文生图/丰盈美女_2094380168788922369.json, 图片生成/文生图/丰盈美女写真生成｜文生图人像一键高清出图工作流_2094808157049671682.json, 图片生成/文生图/全能图片2.1工作流合集 图像编辑一站式方案_2109731020932210690.json]
+members: [图片生成/文生图/Z-image-刘亦菲专用_1996450752195338242.json, 图片生成/文生图/Z-image-暗黑浮世绘_1997401855502258178.json, 图片生成/文生图/Z-image-神级文生图-20秒超快速出图TEXT TO IMAGE_1993958594863366145.json, 图片生成/文生图/Z-image文生图_1993860952581931009.json, 图片生成/文生图/Z-image文生图人像摄影2K版_1994574159525126145.json, 图片生成/文生图/Z-image文生图工作流_2009195465652314113.json, 图片生成/文生图/Z-image文生图（最新加速版）_1996623220235182081.json, 图片生成/文生图/Z-image文生图（非收敛-随机种子生效版）_1996582595745955841.json, 图片生成/文生图/z-image-turbo flow dpo版文生图 自用_2050564898463207426.json, 图片生成/文生图/森哥AI文生图-超自然人像-20秒快速出图_2051690409042161666.json, 图片生成/文生图/（Z-image）dpmpp-2m-sde对比euler-文生图_1995128750184574977.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_59
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/【开箱即用】KREA-2-FP8_文生图基础流_新任生图王者_风格万变_2069375033096622081.json、图片生成/文生图/【极速版】Krea2 Trubo美商极高文生图_V2版_2105216145447014402.json、图片生成/文生图/【通义-ZImage文生图】最强小参数大猛兽！ 极致速度、极致质量、极致性价比。_1994129975662100482.json、图片生成/文生图/【遇见AI】Krea2 Lip BIting 咬嘴唇lora_2082379890434854914.json、图片生成/文生图/【遇见AI】Krea2文生图基础工作流_2069621635891679234.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Z-image-刘亦菲专用_1996450752195338242.json、图片生成/文生图/Z-image-暗黑浮世绘_1997401855502258178.json、图片生成/文生图/Z-image-神级文生图-20秒超快速出图TEXT TO IMAGE_1993958594863366145.json、图片生成/文生图/Z-image文生图_1993860952581931009.json、图片生成/文生图/Z-image文生图人像摄影2K版_1994574159525126145.json…）
 
 - **类型**：Text To Image
-- **样本数**：12
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
-- `SaveImage`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecode` —— 11/12 个有
-- `ConditioningZeroOut` —— 10/12 个有
-- `LoadImage` —— 9/12 个有
-- `LoraLoaderModelOnly` —— 7/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/12 个有
-- `JjkText` —— 2/12 个有
-- `ResolutionSelector` —— 2/12 个有
-- `solarL_SaveImagesToZip` —— 2/12 个有
-- `孤海注释` —— 2/12 个有
-- `Image Comparer (rgthree)` —— 1/12 个有
-- `ImageStitch` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `RH_RhartImageNNb21ImageToImage` —— 1/12 个有
-- `RH_RhartImageNNb21TextToImage` —— 1/12 个有
-- `VAEDecodeTiled` —— 1/12 个有
+- `ConditioningZeroOut` —— 10/11 个有
+- `SaveImage` —— 10/11 个有
+- `CR Prompt Text` —— 8/11 个有
+- `easy promptLine` —— 7/11 个有
+- `GetNode` —— 6/11 个有
+- `SetNode` —— 6/11 个有
+- `LoraLoaderModelOnly` —— 5/11 个有
+- `easy seed` —— 3/11 个有
+- `LoadImage` —— 2/11 个有
+- `HAIGC_SaveImagesToZip` —— 1/11 个有
+- `ZML_ImageEncryption` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 40 | 12 | 8% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 12 | 26% |
-| 采样算法 | er_sde | - | 12 | 50% |
-| 调度器 | simple | - | 12 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| 宽度 | 1024 | 80 - 1920 | 12 | 43% |
-| 高度 | 1052 | 80 - 1536 | 12 | 56% |
+| 采样步数 | 10 | 10 - 12 | 11 | 94% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 11 | 62% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 73% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 1080 | 768 - 1920 | 11 | 65% |
+| 高度 | 1080 | 1024 - 1920 | 11 | 75% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 11/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 1/12 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 40，12 个样本，取值分散，一致性仅 8%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，12 个样本，取值分散，一致性仅 26%
-- 采样算法 最常用 er_sde，12 个样本，一致性 50%
-- 调度器 最常用 simple，12 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 80 - 1920，12 个样本，取值分散，一致性仅 43%
-- 高度 中位数 1052，观测区间 80 - 1536，12 个样本
-- 高发问题（11/12 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 10 - 12，11 个样本，取值集中（一致性 94%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，11 个样本
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 73%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，观测区间 768 - 1920，11 个样本
+- 高度 中位数 1080，观测区间 1024 - 1920，11 个样本

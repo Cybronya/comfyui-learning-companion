@@ -1,51 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_vae_94
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.8442
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, FantasyTalkingModelLoader, FantasyTalkingWav2VecEmbeds, INTConstant, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/Wan2.1 视频转视频（视频风格、动作模仿）工作流_1991468942290010114.json, 平台全量/Wan2.1-KJ-视频到视频编辑_1895342414981169154.json, 平台全量/Wan2.1（阿里万相）视频转视频_1904483791740796930.json, 平台全量/Wan2.2-视频转视频720P_1970385610391363585.json, 平台全量/wan2.2 视频转绘生成一镜到底vlog_1955563712885264385.json, 数字人/数字人/wan2.2 视频转绘生成一镜到底vlog_1954830072336179202.json]
+members: [视频生成/图生视频/(修复版)FantasyTalking阿里数字人对口型框架(wan2.1)_1917005137418850305.json, 视频生成/图生视频/FantasyTalking WAN2.1 数字人口播，完美对嘴型_1917980090234241025.json, 视频生成/图生视频/FantasyTalking wan数字人工作流（静态肖像→超拟真说话视频）_1916975987429408770.json, 视频生成/图生视频/FantasyTalking+INDEX TTS带配音图生视频数字人_1917158732864884738.json, 视频生成/图生视频/FantasyTalking对口型_1917403331021438977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_94
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Wan2.1 视频转视频（视频风格、动作模仿）工作流_1991468942290010114.json、平台全量/Wan2.1-KJ-视频到视频编辑_1895342414981169154.json、平台全量/Wan2.1（阿里万相）视频转视频_1904483791740796930.json、平台全量/Wan2.2-视频转视频720P_1970385610391363585.json、平台全量/wan2.2 视频转绘生成一镜到底vlog_1955563712885264385.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/(修复版)FantasyTalking阿里数字人对口型框架(wan2.1)_1917005137418850305.json、视频生成/图生视频/FantasyTalking WAN2.1 数字人口播，完美对嘴型_1917980090234241025.json、视频生成/图生视频/FantasyTalking wan数字人工作流（静态肖像→超拟真说话视频）_1916975987429408770.json、视频生成/图生视频/FantasyTalking+INDEX TTS带配音图生视频数字人_1917158732864884738.json、视频生成/图生视频/FantasyTalking对口型_1917403331021438977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `FantasyTalkingModelLoader`
+- `FantasyTalkingWav2VecEmbeds`
+- `INTConstant`
+- `LoadAudio`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 4/6 个有
-- `ImageResizeKJ` —— 4/6 个有
-- `WanVideoBlockSwap` —— 4/6 个有
-- `WanVideoContextOptions` —— 3/6 个有
-- `WanVideoLoraSelect` —— 3/6 个有
-- `ImageResizeKJv2` —— 2/6 个有
-- `WanVideoTorchCompileSettings` —— 2/6 个有
-- `CM_IntToFloat` —— 1/6 个有
-- `Primitive integer [Crystools]` —— 1/6 个有
-- `Primitive string [Crystools]` —— 1/6 个有
-- `VHS_VideoInfo` —— 1/6 个有
+- `CreateCFGScheduleFloatList` —— 4/5 个有
+- `ImageResizeKJ` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `ImageConcanate` —— 3/5 个有
+- `Primitive integer [Crystools]` —— 3/5 个有
+- `Text Multiline` —— 3/5 个有
+- `GetNode` —— 2/5 个有
+- `Note Plus (mtb)` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `VHS_LoadVideo` —— 2/5 个有
+- `WanVideoContextOptions` —— 2/5 个有
+- `WanVideoTorchCompileSettings` —— 2/5 个有
+- `ImageUpscaleWithModel` —— 1/5 个有
+- `ImpactInt` —— 1/5 个有
+- `IndexTTSNode` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `LayerUtility: PurgeVRAM` —— 1/5 个有
+- `MathExpression|pysssss` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `UpscaleModelLoader` —— 1/5 个有
+- `WanVideoVRAMManagement` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 

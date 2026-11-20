@@ -3,70 +3,52 @@ name: text_to_image_lora_sampler_clip_525
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.652667
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, DapaoMakeImageBatchNode, EmptyLatentImage, ExecutionBlocker, GetNode, ImpactNeg, JjkText, JsonExtractString, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveBoolean, PrimitiveInt, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.778
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageLoader, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MultiTextConcatenate, RH_LLMAPI_Pro_Node, SaveImage, Text, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy showAnything, solarL_SaveImagesToZip, ttN concat, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/Qwen Image 2.1图像编辑4步加速版，反推提示词图生图高效处理工具_2103938725637091330.json, 图片生成/图生图/Qwen image 2.1提示词强化｜反推提示词自动扩写｜文生图效果翻倍_2102233840218632193.json, 图片生成/图生图/提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938.json]
+members: [图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词多图版_2100644030144147458.json, 图片生成/图生图/全能图片G2.5一键生成影视分镜关键帧｜全流程提示词多图版，图生图反推不费脑_2100460642460323841.json, 图片生成/图生图/影视分镜关键帧提示词｜GP-T2.0多图版反推图生图_2092574881362833409.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_525
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1图像编辑4步加速版，反推提示词图生图高效处理工具_2103938725637091330.json、图片生成/图生图/Qwen image 2.1提示词强化｜反推提示词自动扩写｜文生图效果翻倍_2102233840218632193.json、图片生成/图生图/提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词多图版_2100644030144147458.json、图片生成/图生图/全能图片G2.5一键生成影视分镜关键帧｜全流程提示词多图版，图生图反推不费脑_2100460642460323841.json、图片生成/图生图/影视分镜关键帧提示词｜GP-T2.0多图版反推图生图_2092574881362833409.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Replace`
-- `DapaoMakeImageBatchNode`
 - `EmptyLatentImage`
-- `ExecutionBlocker`
-- `GetNode`
-- `ImpactNeg`
+- `ImageLoader`
 - `JjkText`
-- `JsonExtractString`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
+- `MultiTextConcatenate`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `SetNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
+- `ttN concat`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_SaveTxt` —— 2/3 个有
-- `MathExpression_UTK` —— 2/3 个有
-- `RHLLMChatNode` —— 2/3 个有
-- `CM_BoolToInt` —— 1/3 个有
-- `ComfySwitchNode` —— 1/3 个有
-- `ImageRGBA2RGB` —— 1/3 个有
-- `ImageScaleToTotalPixels` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `QwenImage21Cache` —— 1/3 个有
-- `SaveImageAdvanced` —— 1/3 个有
-- `SaveLatent` —— 1/3 个有
-- `TextEncodeQwenImage21` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 2/3 个有
+- `easy saveText` —— 2/3 个有
+- `PreviewImage` —— 1/3 个有
+- `RH_RhartImageG2ImageToImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -84,7 +66,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -95,4 +77,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

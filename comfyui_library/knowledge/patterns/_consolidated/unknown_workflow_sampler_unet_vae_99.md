@@ -1,67 +1,66 @@
 ---
 name: unknown_workflow_sampler_unet_vae_99
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.699364
-common_nodes: [CLIPLoader, KSampler, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8392
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen image 2.1图片编辑-1图_2112357928580763649.json, 图片生成/图生图/Qwen image 2.1图片编辑-2图_2112352357722972162.json, 图片生成/图生图/Qwen image 2.1图片编辑-3图_2112358020758990850.json, 图片生成/图生图/Qwen image 2.1图片编辑-4图_2112358074219581441.json, 图片生成/图生图/Qwen image 2.1图片编辑-5图_2112359254878412802.json, 图片生成/图生图/Qwen image 2.1图片编辑-6图_2112359295756099586.json, 图片生成/图生图/Qwen-Image 2.1 重磅升级：一键抠图直出 PNG，无缝重塑图像工作流！_2106021474862723074.json, 图片生成/图生图/Qwen-Image 2.1：生图、改图、拼图，一个模型全搞定_2102215048675545090.json, 图片生成/图生图/Qwen-Image-2.1 图像编辑，最多 10 张参考图，图生图_2103753279908966401.json, 图片生成/图生图/QwenImage2.1-图像编辑换头_2101872643862523905.json, 图片生成/图生图/qwen image 2.1 编辑_2101987550209593345.json]
+members: [视频生成/图生视频/MiniMax H3图生视频Org开源版_2084180933296607233.json, 视频生成/图生视频/MiniMax H3图生视频_2089703971740020737.json, 视频生成/图生视频/MiniMax H3图生视频工作流低显存加速版 开源 FL2VA_2084432209041252353.json, 视频生成/图生视频/MiniMax H3图生视频（Sage加速）2608_2085826329311801346.json, 视频生成/图生视频/MiniMax H3首尾帧视频工作流低显存加速版 开源 FL2VA_2084428374197497858.json, 视频生成/图生视频/MiniMax-H3 图生视频（首尾帧）_2084150513402204161.json, 视频生成/图生视频/Minimax-H3-单_双图生视频-sage+cache双重提速-平均3分半钟出5秒！_2084572403178500098.json, 视频生成/图生视频/video_minimax_h3_i2v_fast_2085261516613443585.json, 视频生成/文生视频/MiniMax H3图生视频工作流_2084631760146620417.json, 视频生成/文生视频/MiniMax H3文生视频（Sage加速）2608_2085826303927869442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_99
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1图片编辑-1图_2112357928580763649.json、图片生成/图生图/Qwen image 2.1图片编辑-2图_2112352357722972162.json、图片生成/图生图/Qwen image 2.1图片编辑-3图_2112358020758990850.json、图片生成/图生图/Qwen image 2.1图片编辑-4图_2112358074219581441.json、图片生成/图生图/Qwen image 2.1图片编辑-5图_2112359254878412802.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3图生视频Org开源版_2084180933296607233.json、视频生成/图生视频/MiniMax H3图生视频_2089703971740020737.json、视频生成/图生视频/MiniMax H3图生视频工作流低显存加速版 开源 FL2VA_2084432209041252353.json、视频生成/图生视频/MiniMax H3图生视频（Sage加速）2608_2085826329311801346.json、视频生成/图生视频/MiniMax H3首尾帧视频工作流低显存加速版 开源 FL2VA_2084428374197497858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
-- `QwenImage21Cache`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 10/11 个有
-- `EmptyLatentImage` —— 10/11 个有
-- `PrimitiveStringMultiline` —— 9/11 个有
-- `SaveImageAdvanced` —— 9/11 个有
-- `Int` —— 6/11 个有
-- `SDVN Load Image Url` —— 6/11 个有
-- `LoadImage` —— 5/11 个有
-- `ResolutionSelector` —— 4/11 个有
-- `BatchImagesNode` —— 3/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/11 个有
-- `TextGenerateLTX2Prompt` —— 3/11 个有
-- `GetNode` —— 2/11 个有
-- `SetNode` —— 2/11 个有
-- `ImageConcatMulti` —— 1/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
-- `Text` —— 1/11 个有
-- `孤海注释` —— 1/11 个有
+- `LoadImage` —— 9/10 个有
+- `CreateVideo` —— 8/10 个有
+- `ResolutionSelector` —— 8/10 个有
+- `SaveVideo` —— 8/10 个有
+- `PathchSageAttentionKJ` —— 7/10 个有
+- `CR Prompt Text` —— 5/10 个有
+- `EasyCache` —— 5/10 个有
+- `ImageScaleToTotalPixels` —— 5/10 个有
+- `GetImageSize` —— 4/10 个有
+- `VHS_VideoCombine` —— 4/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/10 个有
+- `SolAttnPatch` —— 3/10 个有
+- `FlashVSRInitPipe` —— 2/10 个有
+- `FlashVSRNodeAdv` —— 2/10 个有
+- `Label (rgthree)` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `CR Text` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
+- `SpectrumSDXL` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 50 | 25 - 50 | 11 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 16 | 16 - 1024 | 10 | 0% |
-| 高度 | 1024 | 1024 - 1024 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,10 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 25 - 50，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 16，观测区间 16 - 1024，10 个样本，取值分散，一致性仅 0%
-- 高度 中位数 1024，观测区间 1024 - 1024，10 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,83 +1,79 @@
 ---
 name: unknown_workflow_lora_clip_unet_10
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.855571
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), GetImageSize, ImageScaleToTotalPixels, ImageSharpen, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, workflow>自定义采样器]
-problems: []
+frequency: 5
+level: moderate
+coverage: 0.8676
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Zimage-Klein高清洗图双采样放大_2058022601766821890.json, 图片生成/图生图/高清洗图Zimage双采样Klein放大_2048324311714369537.json, 图片生成/文生图/Zimage+生图+洗图+双采样+Klein放大_2070378304154193922.json, 图片生成/文生图/最新全能模型G-image2_4K放大版_极速生图_图像编辑_2046761253904846850.json, 图片生成/文生图/生图_洗图_Zimage双采样+Klein放大_2020509073417969666.json, 图片生成/文生图/高清洗图Zimage双采样放大Klein_2050607497655926786.json, 平台全量/Zimage-Klein高清洗图双采样放大_2058209852551421953.json]
+members: [图片生成/文生图/ernie+klein双采_2045055189861801985.json, 图片生成/文生图/ernie+zit双采样_2045054582375587842.json, 图片生成/文生图/zimage base 加速高质量lora最高20倍提速_2021771055412547585.json, 图片生成/文生图/zimage base_电影级风格LORA测试_2059298671640010754.json, 图片生成/文生图/百度ernie+zit双采样_2045695437658656770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_clip_unet_10
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Zimage-Klein高清洗图双采样放大_2058022601766821890.json、图片生成/图生图/高清洗图Zimage双采样Klein放大_2048324311714369537.json、图片生成/文生图/Zimage+生图+洗图+双采样+Klein放大_2070378304154193922.json、图片生成/文生图/最新全能模型G-image2_4K放大版_极速生图_图像编辑_2046761253904846850.json、图片生成/文生图/生图_洗图_Zimage双采样+Klein放大_2020509073417969666.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/ernie+klein双采_2045055189861801985.json、图片生成/文生图/ernie+zit双采样_2045054582375587842.json、图片生成/文生图/zimage base 加速高质量lora最高20倍提速_2021771055412547585.json、图片生成/文生图/zimage base_电影级风格LORA测试_2059298671640010754.json、图片生成/文生图/百度ernie+zit双采样_2045695437658656770.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `ImageSharpen`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `workflow>自定义采样器`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 6/7 个有
-- `KSamplerAdvanced` —— 6/7 个有
-- `ModelSamplingAuraFlow` —— 6/7 个有
-- `ShowText|pysssss` —— 6/7 个有
-- `easy clearCacheAll` —— 6/7 个有
-- `workflow>LLama-ccp提示词反推` —— 6/7 个有
-- `EmptyLatentImage` —— 2/7 个有
-- `TextInput_` —— 2/7 个有
-- `CR Image Input Switch` —— 1/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `RH_RhartImageG2ImageToImage` —— 1/7 个有
-- `RH_RhartImageG2TextToImage` —— 1/7 个有
+- `ModelSamplingAuraFlow` —— 4/5 个有
+- `EmptyFlux2LatentImage` —— 3/5 个有
+- `KSamplerAdvanced` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `KSampler` —— 2/5 个有
+- `SDXLEmptyLatentSizePicker+` —— 2/5 个有
+- `VAEEncode` —— 2/5 个有
+- `AddLabel` —— 1/5 个有
+- `CR Text Concatenate` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `SetNode` —— 1/5 个有
+- `easy imageConcat` —— 1/5 个有
+- `easy promptLine` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 12 | 12 - 12 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | res_multistep | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 100% |
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1536 | - | 2 | 100% |
+| 采样步数 | randomize | - | 5 | 60% |
+| Prompt 约束强度(CFG) | 8 | 1 - 8 | 5 | 34% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 5 | 60% |
+| 重绘幅度 | simple | - | 5 | 40% |
+| 宽度 | 768x1344 (0.57) | - | 2 | 50% |
+| 高度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 res_multistep，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，5 个样本，一致性 60%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 8，5 个样本，取值分散，一致性仅 34%
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，5 个样本，一致性 60%
+- 重绘幅度 最常用 simple，5 个样本，一致性 40%
+- 宽度 最常用 768x1344 (0.57)，2 个样本，一致性 50%
+- 高度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（3/5 个样本）：Steps较低可能导致细节不足

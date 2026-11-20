@@ -1,33 +1,35 @@
 ---
 name: image_to_image_sampler_clip_unet_40
 type: Image To Image
-frequency: 11
-level: moderate
-coverage: 0.874182
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, ModelSamplingSD3, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.919333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/wan2.2 洗图工作流_1976841960134791170.json, 图片生成/图生图/wan2.2洗图工作流_1968904972467359746.json, 图片生成/图生图/图片精修 质感修复Texture Restoration Retouching_2098943295606059009.json, 图片生成/图生图/图片精修_质感修复Texture_Restoration_Retouching_2099340238937219074.json, 图片生成/图生图/图片精修_质感修复Texture_Restoration_Retouching_2099671834458419202.json, 图片生成/图生图/洗-通用_2029742240196730882.json, 图片生成/图生图/洗-通用_2110187075365593090.json, 图片生成/图生图/电商图生图增加人物皮肤真实感 MagicWan_1991442796139737090.json, 平台全量/产品的通用洗图_2003014787867000834.json, 平台全量/洗-人像_1959887316636610561.json, 平台全量/洗-通用_1959895812576849922.json]
+members: [图片生成/图生图/Flux-kontext 通用三视图v2_1939134527006822401.json, 图片生成/图生图/Flux-kontext 通用三视图v2_1956579410549854210.json, 图片生成/图生图/Flux-kontext完美去水印_2074376725714268161.json, 图片生成/图生图/Flux-终章_1938425347513716737.json, 图片生成/图生图/JC自用Kontext改图_1952574001413599234.json, 图片生成/图生图/Kontext  图像遮罩修改_1942399861767737346.json, 图片生成/图生图/Kontext Dev涂抹遮罩精准修图_1940228497220747266.json, 图片生成/图生图/Kontext Dev生成三视图-一句话改图时代开启_1949672728417718273.json, 图片生成/图生图/kontext 人物三视图_1942403251813945346.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_40
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/wan2.2 洗图工作流_1976841960134791170.json、图片生成/图生图/wan2.2洗图工作流_1968904972467359746.json、图片生成/图生图/图片精修 质感修复Texture Restoration Retouching_2098943295606059009.json、图片生成/图生图/图片精修_质感修复Texture_Restoration_Retouching_2099340238937219074.json、图片生成/图生图/图片精修_质感修复Texture_Restoration_Retouching_2099671834458419202.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux-kontext 通用三视图v2_1939134527006822401.json、图片生成/图生图/Flux-kontext 通用三视图v2_1956579410549854210.json、图片生成/图生图/Flux-kontext完美去水印_2074376725714268161.json、图片生成/图生图/Flux-终章_1938425347513716737.json、图片生成/图生图/JC自用Kontext改图_1952574001413599234.json…）
 
 - **类型**：Image To Image
-- **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CLIPLoader`
+全部 9 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
-- `ModelSamplingSD3`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -35,29 +37,30 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 10/11 个有
-- `LoraLoader` —— 10/11 个有
-- `PathchSageAttentionKJ` —— 10/11 个有
-- `easy imageScaleDownToSize` —— 8/11 个有
-- `CFGZeroStarAndInit` —— 2/11 个有
-- `Florence2ModelLoader` —— 2/11 个有
-- `Florence2Run` —— 2/11 个有
-- `ImageScaleBy` —— 1/11 个有
-- `LayerUtility: ImageReel` —— 1/11 个有
-- `LayerUtility: ImageReelComposit` —— 1/11 个有
-- `StringFunction|pysssss` —— 1/11 个有
+- `FluxKontextImageScale` —— 8/9 个有
+- `PreviewImage` —— 4/9 个有
+- `RH_Translator` —— 4/9 个有
+- `ConstrainImage|pysssss` —— 3/9 个有
+- `Image Blank` —— 3/9 个有
+- `Image Comparer (rgthree)` —— 3/9 个有
+- `ImageStitch` —— 3/9 个有
+- `LayerUtility: ImageScaleRestore` —— 3/9 个有
+- `MaskToImage` —— 2/9 个有
+- `Mix Color By Mask` —— 2/9 个有
+- `CR SDXL Aspect Ratio` —— 1/9 个有
+- `RMBG` —— 1/9 个有
+- `ResizeImageMixlab` —— 1/9 个有
+- `Text Multiline` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.4 | 0.4 - 1 | 10 | 62% |
-| LoRA 文本强度 | 0.4 | 0.4 - 1 | 10 | 62% |
-| 采样步数 | 10 | 10 - 25 | 11 | 59% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | res_2m | - | 11 | 73% |
-| 调度器 | beta | - | 11 | 73% |
-| 重绘幅度 | 0.3 | 0.12 - 0.75 | 11 | 53% |
+| 采样步数 | 20 | 20 - 25 | 9 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
@@ -65,10 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.4，观测区间 0.4 - 1，10 个样本
-- LoRA 文本强度 中位数 0.4，观测区间 0.4 - 1，10 个样本
-- 采样步数 中位数 10，观测区间 10 - 25，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2m，11 个样本，一致性 73%
-- 调度器 最常用 beta，11 个样本，一致性 73%
-- 重绘幅度 中位数 0.3，观测区间 0.12 - 0.75，11 个样本
+- 采样步数 中位数 20，观测区间 20 - 25，9 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）

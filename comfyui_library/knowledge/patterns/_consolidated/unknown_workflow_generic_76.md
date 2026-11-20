@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_76
 type: Unknown Workflow
-frequency: 19
+frequency: 17
 level: moderate
-coverage: 0.798211
-common_nodes: [MuyeTextEditOutput, PreviewAny, RH_LLMAPI_Pro_Node, easy saveText]
+coverage: 0.803118
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/2.1.小说 转成 剧本_2031699309548277761.json, 图片生成/文生图/生成人物系统提示词_api_2016742675545858049.json, 图片生成/文生图/脱敏工作流_2013600929546768386.json, 图片生成/文生图/自见剧本改分镜_2037876386517491713.json, 图片生成/文生图/超能视频2.0文本洗稿工作流_2037097837971906562.json, 平台全量/AI动画 PROMPT - Workflow_2013936049558392833.json, 平台全量/人物设计_api_2016706092721508353.json, 平台全量/剧本到分镜_2046436416799903746.json, 平台全量/剧本改分镜+自检_2014335676501729282.json, 平台全量/剧本改分镜-api_2016696411076694017.json, 平台全量/剧本改编专用_2010538678568886274.json, 平台全量/剧本角色提取_2046443446734426113.json, 平台全量/场景提取_2046445603277770754.json, 平台全量/场景设计_api_2016709895541760002.json, 平台全量/场景设计提示词_2046420575958081537.json, 平台全量/生成场景系统提示词_api_2016700889096003585.json, 平台全量/网文改剧本_2014555817424457730.json, 平台全量/网文改剧本修改_api_2016685923156627458.json, 视频生成/文生视频/2.6.脱敏提示词_2031735091793240065.json]
+members: [图片生成/图生图/Seedance2.0-全能参考+生真人视频_2066710531104395266.json, 图片生成/文生图/4.1懂车帝分镜头1_2039309046368444418.json, 图片生成/文生图/万能编辑 换装换脸单图_多图编辑 电商产品模特展示 服饰迁移 展示多图融合  全能图片多图融 合_2061631872727339009.json, 视频生成/图生视频/SD2.0fast_2039546707423272961.json, 视频生成/图生视频/Seedance 2.0 fast全能参考生视频-真人参考_2046129845834354689.json, 视频生成/图生视频/Seedance2.0  生长视频_2080856590562979842.json, 视频生成/图生视频/Seedance2.0 Fast全能参考视频  分镜图加产品白底图加脚本_2069253062396571649.json, 视频生成/图生视频/Seedance2.0 Fast全能参考视频 人物替换_2041416684765974530.json, 视频生成/图生视频/Seedance2.0 Fast全能参考视频（RH版）_2054421039081369601.json, 视频生成/图生视频/Seedance2.0-Fast_多模态视频_2042721470069088257.json, 视频生成/图生视频/Wan2.7 万用视频工作流，带货视频洗，带货视频换脸，带货视频跳舞，绿幕人物和场景组合_2046638707599482882.json, 视频生成/图生视频/Wan2.7 视频换脸_2044689517751308290.json, 视频生成/图生视频/Wan2.7+换装换脸动作迁移 视频编辑_2082280794994864129.json, 视频生成/图生视频/Wan2.7+视频编辑 换装换脸 人物角色替换 真实自然_2061645895619407873.json, 视频生成/图生视频/视频换脸 Video Face Swap_2096415335573446658.json, 视频生成/文生视频/Seedance 2.0 Fast 全能参考视频｜文生视频｜图生视频｜视频参考｜支持4K_2097465752587685890.json, 视频生成/文生视频/Seedance 2.0 Mini 全能参考多模态视频｜支持4K_2097604936262574082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_76
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/文生图/2.1.小说 转成 剧本_2031699309548277761.json、图片生成/文生图/生成人物系统提示词_api_2016742675545858049.json、图片生成/文生图/脱敏工作流_2013600929546768386.json、图片生成/文生图/自见剧本改分镜_2037876386517491713.json、图片生成/文生图/超能视频2.0文本洗稿工作流_2037097837971906562.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Seedance2.0-全能参考+生真人视频_2066710531104395266.json、图片生成/文生图/4.1懂车帝分镜头1_2039309046368444418.json、图片生成/文生图/万能编辑 换装换脸单图_多图编辑 电商产品模特展示 服饰迁移 展示多图融合  全能图片多图融 合_2061631872727339009.json、视频生成/图生视频/SD2.0fast_2039546707423272961.json、视频生成/图生视频/Seedance 2.0 fast全能参考生视频-真人参考_2046129845834354689.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：17
 - **可信度**：中等可信
 - **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `MuyeTextEditOutput`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `easy saveText`
+全部 17 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/19 个有
-- `SeargeTextInputV2` —— 1/19 个有
+- `LoadVideo` —— 14/17 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 10/17 个有
+- `RH_AlibabaWan27VideoEdit` —— 6/17 个有
+- `LoadAudio` —— 3/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/17 个有
+- `MuyeTextEditOutput` —— 2/17 个有
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 1/17 个有
 
 ## 典型参数
 

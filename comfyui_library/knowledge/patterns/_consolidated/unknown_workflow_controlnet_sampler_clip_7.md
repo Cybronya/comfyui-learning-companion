@@ -1,71 +1,74 @@
 ---
 name: unknown_workflow_controlnet_sampler_clip_7
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.951667
-common_nodes: [AIO_Preprocessor, CLIPTextEncode, ControlNetApplyAdvanced, ControlNetLoader, DualCLIPLoader, EmptySD3LatentImage, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 5
+level: moderate
+coverage: 0.8588
+common_nodes: [CLIPLoader, CLIPTextEncode, CannyEdgePreprocessor, DepthAnythingV2Preprocessor, EmptySD3LatentImage, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX.1-controlnet工作流_2088611300489392130.json, 图片生成/图生图/Flux.1+ controlnet工作流_2109991263348019202.json, 图片生成/图生图/flux1controlnet工作流_2115645049852743682.json, 图片生成/文生图/F.1一键毛坯变精装工作流 Bot_LXX V3.0_1930576899993686018.json, 平台全量/FLUX.1 Controlnet工作流_2118259281589002241.json, 平台全量/图片风格重绘工作流_1984154656723107842.json]
+members: [图片生成/文生图/Z-Image_controlnet_2056259479821438978.json, 图片生成/文生图/Z-Image_turbo控制ControlNet-2601_2020760393320243201.json, 图片生成/文生图/Z-Image_turbo控制图像姿势_2041507138564005890.json, 图片生成/文生图/Z-Image_turbo控制姿态ControlNe_2038525013095092225.json, 图片生成/文生图/Z-Image_turbo造像模型线性&深度预处理器工作流_2050112161892052994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_7
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FLUX.1-controlnet工作流_2088611300489392130.json、图片生成/图生图/Flux.1+ controlnet工作流_2109991263348019202.json、图片生成/图生图/flux1controlnet工作流_2115645049852743682.json、图片生成/文生图/F.1一键毛坯变精装工作流 Bot_LXX V3.0_1930576899993686018.json、平台全量/FLUX.1 Controlnet工作流_2118259281589002241.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Z-Image_controlnet_2056259479821438978.json、图片生成/文生图/Z-Image_turbo控制ControlNet-2601_2020760393320243201.json、图片生成/文生图/Z-Image_turbo控制图像姿势_2041507138564005890.json、图片生成/文生图/Z-Image_turbo控制姿态ControlNe_2038525013095092225.json、图片生成/文生图/Z-Image_turbo造像模型线性&深度预处理器工作流_2050112161892052994.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AIO_Preprocessor`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ControlNetApplyAdvanced`
-- `ControlNetLoader`
-- `DualCLIPLoader`
+- `CannyEdgePreprocessor`
+- `DepthAnythingV2Preprocessor`
 - `EmptySD3LatentImage`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `ModelPatchLoader`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `QwenImageDiffsynthControlnet`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxGuidance` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `SetUnionControlNetType` —— 4/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
-- `PreviewImage` —— 2/6 个有
-- `ImageResizeKJ` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/6 个有
-- `Preview from image [Crystools]` —— 1/6 个有
+- `DWPreprocessor` —— 4/5 个有
+- `GetImageSize` —— 4/5 个有
+- `CR Text` —— 1/5 个有
+- `Get Image Size` —— 1/5 个有
+- `HEDPreprocessor` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 6 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| ControlNet 权重 | 0.6 | 0.38 - 0.65 | 6 | 85% |
+| 采样步数 | 8 | 8 - 20 | 5 | 54% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | res_multistep | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 0.6，观测区间 0.38 - 0.65，6 个样本，取值集中（一致性 85%）
+- 采样步数 中位数 8，观测区间 8 - 20，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（4/5 个样本）：Steps较低可能导致细节不足

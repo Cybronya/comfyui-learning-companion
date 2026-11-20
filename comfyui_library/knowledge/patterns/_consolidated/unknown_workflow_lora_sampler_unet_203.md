@@ -1,75 +1,88 @@
 ---
 name: unknown_workflow_lora_sampler_unet_203
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.91825
-common_nodes: [CFGNorm, CLIPLoader, CR Text, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy imageScaleDownToSize]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.797333
+common_nodes: [BasicScheduler, CR Prompt Text, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewImage, PromptRelayEncode, SamplerCustom, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VisualizeSigmasKJ]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-2509-全能换背景_2003643161689899010.json, 图片生成/图生图/qwen-edit-2509-电商换背景_1989217669691879425.json, 图片生成/图生图/qwen-edit-2509双图编辑万物迁移_1978724036937191426.json, 图片生成/图生图/qwen-edit-图片精修_1988195106761129986.json]
+members: [图片生成/反推提示词/76tsspdjt_2052667532313669633.json, 图片生成/图生图/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2057109101624258561.json, 图片生成/图生图/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制+自动计算帧数_2069651466062745602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_203
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-2509-全能换背景_2003643161689899010.json、图片生成/图生图/qwen-edit-2509-电商换背景_1989217669691879425.json、图片生成/图生图/qwen-edit-2509双图编辑万物迁移_1978724036937191426.json、图片生成/图生图/qwen-edit-图片精修_1988195106761129986.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/76tsspdjt_2052667532313669633.json、图片生成/图生图/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2057109101624258561.json、图片生成/图生图/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制+自动计算帧数_2069651466062745602.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGNorm`
-- `CLIPLoader`
-- `CR Text`
-- `Image Comparer (rgthree)`
-- `KSampler`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `PromptRelayEncode`
+- `SamplerCustom`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
-- `easy imageScaleDownToSize`
+- `VAELoaderKJ`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 3/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `LayerUtility: ImageReel` —— 2/4 个有
-- `LayerUtility: ImageReelComposit` —— 2/4 个有
-- `ConditioningClamp` —— 1/4 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
-- `LayerMask: LoadBiRefNetModel` —— 1/4 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/4 个有
-- `easy imageRemBg` —— 1/4 个有
+- `JWInteger` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `CLIPTextEncode` —— 1/3 个有
+- `CM_IntBinaryOperation` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `JWStringConcat` —— 1/3 个有
+- `JWStringSplit` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `SomethingToString` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `llama_cpp_instruct_adv` —— 1/3 个有
+- `llama_cpp_model_loader` —— 1/3 个有
+- `llama_cpp_parameters` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 14 | 8 - 20 | 4 | 57% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 2.5 | 4 | 57% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | beta57 | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 489 | 489 - 489 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 14，观测区间 8 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 2.5，4 个样本
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 beta57，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（2/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 489，观测区间 489 - 489，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

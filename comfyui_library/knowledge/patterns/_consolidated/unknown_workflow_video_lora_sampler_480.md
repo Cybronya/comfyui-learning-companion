@@ -1,84 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_480
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.830333
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Integer To String, CR String To Number, CR Text, EmptySD3LatentImage, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, ModelSamplingSD3, PathchSageAttentionKJ, PlaySound|pysssss, PreviewImage, RHHiddenNodes, ReadExcelData, ShowText|pysssss, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy forLoopEnd, easy forLoopStart, easy mathInt, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: moderate
+coverage: 0.5676
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CS-MultiImageLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, GetNode, ImageResizeKJv2, KSamplerSelect, Label (rgthree), LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveStringMultiline, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+problems: []
 missing: []
-members: [图片生成/文生图/动漫短剧全自动工作流V4.1_1966707230915670018.json, 平台全量/动漫短剧全自动工作流V4.1_2036683305214550018.json, 视频生成/文生视频/wanduDMDJV1.0_1967613409602801666.json, 视频生成/文生视频/动漫短剧 全自动工作流 可指定分镜个数 上手简单效果好_2004470132204335105.json, 视频生成/文生视频/动漫短剧 全自动工作流 可指定分镜个数 上手简单效果好_2008541055511175170.json, 视频生成/文生视频/动漫短剧全自动工作流V4.1_2067305785524318209.json]
+members: [视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json, 视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2107354460371636226.json, 视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2075049712163581954.json, 视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2100839392154841090.json, 视频生成/图生视频/ComfyUI SCAIL 2 极简长视频生成 单图_2100862026611519490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_480
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/动漫短剧全自动工作流V4.1_1966707230915670018.json、平台全量/动漫短剧全自动工作流V4.1_2036683305214550018.json、视频生成/文生视频/wanduDMDJV1.0_1967613409602801666.json、视频生成/文生视频/动漫短剧 全自动工作流 可指定分镜个数 上手简单效果好_2004470132204335105.json、视频生成/文生视频/动漫短剧 全自动工作流 可指定分镜个数 上手简单效果好_2008541055511175170.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json、视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2107354460371636226.json、视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2075049712163581954.json、视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2100839392154841090.json、视频生成/图生视频/ComfyUI SCAIL 2 极简长视频生成 单图_2100862026611519490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Integer To String`
-- `CR String To Number`
-- `CR Text`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `CLIPVisionLoader`
+- `CS-MultiImageLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `DownloadAndLoadGIMMVFIModel`
+- `Fast Groups Bypasser (rgthree)`
+- `GIMMVFI_interpolate`
+- `GetNode`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `Label (rgthree)`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `ReadExcelData`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
-- `UNETLoader`
-- `VAEDecode`
+- `PrimitiveStringMultiline`
+- `SCAIL2ScheduledLongVideoWithSAM`
+- `SCAIL2SegmentPlanBuilder`
+- `SetNode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy mathInt`
-- `easy showAnything`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 5/6 个有
-- `LoadImage` —— 4/6 个有
+- `LoadImage` —— 4/5 个有
+- `SaveImage` —— 4/5 个有
+- `FilmGrain` —— 3/5 个有
+- `ComfySwitchNode` —— 2/5 个有
+- `GetImageSize` —— 2/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `PrimitiveBoolean` —— 2/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `SCAIL2AlignReferenceFaceToCrop` —— 2/5 个有
+- `SCAIL2FaceCompositeBack` —— 2/5 个有
+- `SCAIL2HeadTrackCrop` —— 2/5 个有
+- `SimpleMath+` —— 2/5 个有
+- `easy ifElse` —— 2/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 6 | 100% |
-| 采样算法 | 0 | 0 - 0 | 6 | 100% |
-| 调度器 | lcm | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 0，观测区间 0 - 0，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

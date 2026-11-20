@@ -1,69 +1,79 @@
 ---
 name: unknown_workflow_sampler_clip_unet_248
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.669333
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
+frequency: 5
+level: strong
+coverage: 0.6374
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, DualCLIPLoader, FlipSigmas, FluxForwardODESampler, FluxReverseODESampler, InFluxModelSamplingPred, LoadImage, OutFluxModelSamplingPred, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘) 阿贵_2035301463336951810.json, 图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089728958869889026.json, 图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089729449523769346.json, 图片生成/图生图/Flux2 Klein  动漫转真实照片 增强细节_2110543060793913345.json, 图片生成/图生图/Flux2-Klein 多图编辑版：通用版_2093566736946786306.json, 平台全量/FLUX2-Klein-9b图像编辑_2096871214949163010.json]
+members: [图片生成/图生图/10_产品精修_2074323611346882561.json, 图片生成/图生图/23.tonnie-flux万物精修、重塑_1997964839077208065.json, 图片生成/图生图/Flux逆采样修图_1926603675945570306.json, 图片生成/图生图/一键精修，图片精修_1961613590690205697.json, 图片生成/图生图/反差修图_2071109475523719169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_248
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘) 阿贵_2035301463336951810.json、图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089728958869889026.json、图片生成/图生图/FLUX2-Klein-9b图像编辑(支持扩图，图片编辑，高清放大，局部重绘)_阿贵_2089729449523769346.json、图片生成/图生图/Flux2 Klein  动漫转真实照片 增强细节_2110543060793913345.json、图片生成/图生图/Flux2-Klein 多图编辑版：通用版_2093566736946786306.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/10_产品精修_2074323611346882561.json、图片生成/图生图/23.tonnie-flux万物精修、重塑_1997964839077208065.json、图片生成/图生图/Flux逆采样修图_1926603675945570306.json、图片生成/图生图/一键精修，图片精修_1961613590690205697.json、图片生成/图生图/反差修图_2071109475523719169.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `FlipSigmas`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
+- `InFluxModelSamplingPred`
 - `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
+- `OutFluxModelSamplingPred`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `MuyeTextEditOutput` —— 5/6 个有
-- `Any Switch (rgthree)` —— 4/6 个有
-- `DapaoImagePadDirectionNode` —— 4/6 个有
-- `ImageCompositorNode` —— 4/6 个有
-- `Int` —— 4/6 个有
-- `LayerUtility: ColorImage` —— 4/6 个有
-- `MaskFillHoles` —— 4/6 个有
-- `RHHiddenNodes` —— 4/6 个有
-- `RH_Translator` —— 4/6 个有
-- `ConditioningZeroOut` —— 2/6 个有
-- `EmptyFlux2LatentImage` —— 2/6 个有
-- `Anything Everywhere` —— 1/6 个有
-- `ColorMatch` —— 1/6 个有
+- `FluxDeGuidance` —— 4/5 个有
+- `GetNode` —— 4/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `Joy_caption_two` —— 4/5 个有
+- `Joy_caption_two_load` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `ImageBlend` —— 3/5 个有
+- `LayerColor: Brightness & Contrast` —— 3/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `easy hiresFix` —— 3/5 个有
+- `easy imageSize` —— 3/5 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/5 个有
+- `LayerMask: LoadBiRefNetModel` —— 2/5 个有
+- `LoraLoader` —— 2/5 个有
+- `PreviewBridge` —— 2/5 个有
+- `ColorMatch` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `FluxGuidance` —— 1/5 个有
+- `Get Image Size` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `ImageScaleBy` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 1/5 个有
+- `ShowText|pysssss` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 0.95 | - | 2 | 95% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -71,4 +81,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.95，样本不足，未给区间，2 个样本，取值集中（一致性 95%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

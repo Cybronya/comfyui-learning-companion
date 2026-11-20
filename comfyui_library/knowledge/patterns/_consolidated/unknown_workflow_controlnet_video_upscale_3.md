@@ -1,106 +1,89 @@
 ---
 name: unknown_workflow_controlnet_video_upscale_3
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.579
-common_nodes: [Bjornulf_FreeVRAM, Bjornulf_ShowInt, CLIPLoader, CLIPVisionLoader, ConditioningZeroOut, DrawMaskOnImage, DrawViTPose, Fast Groups Muter (rgthree), GetNode, INTConstant, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImageScale, ImageUpscaleWithModelBatched, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, RIFE VFI, SDPoseOODLoader, SDPoseOODProcessor, SaveImage, SetNode, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+frequency: 2
+level: weak
+coverage: 0.838
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, INTConstant, ImageResizeKJv2, ImageScale, ImageUpscaleWithModel, JWInteger, JWIntegerToString, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PlaySound|pysssss, PreviewImage, RH_Captioner, RH_Translator, RIFE VFI, SimpleMath+, Text Concatenate, UpscaleModelLoader, VHS_DuplicateImages, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy anythingIndexSwitch, easy compare, easy ifElse, easy imageScaleDownToSize, easy imageSize, easy showAnything]
+problems: []
 missing: []
-members: [平台全量/美女跳舞带一键换装_1996654543251415041.json, 视频生成/图生视频/动作迁移人物换装模特一体化_2064594523124232193.json, 视频生成/图生视频/最强换装换模特迁移动作，换衣服换人一键跟跳（高阶版）_2065167482889007106.json, 视频生成/图生视频/最强换装换模特迁移动作，换衣服换人模仿跳舞_2063232908294451201.json, 视频生成/图生视频/超强换装换动作换模特一体化全局输出_2053105004701069313.json, 视频生成/图生视频/超强换装换动作换模特一体化全局输出_2066760634758426626.json, 视频生成/图生视频/超强换装换动作换模特一体化全局输出（超级懒人版）_2068050463907471361.json]
+members: [视频生成/图生视频/Wan2.1  Multitalk数字人图片开口唱歌稳定放大功能齐全版_1957680451332796417.json, 音频生成/音频生成/Wan2.1  Multitalk音乐数字人_1938926634802012162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_upscale_3
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/美女跳舞带一键换装_1996654543251415041.json、视频生成/图生视频/动作迁移人物换装模特一体化_2064594523124232193.json、视频生成/图生视频/最强换装换模特迁移动作，换衣服换人一键跟跳（高阶版）_2065167482889007106.json、视频生成/图生视频/最强换装换模特迁移动作，换衣服换人模仿跳舞_2063232908294451201.json、视频生成/图生视频/超强换装换动作换模特一体化全局输出_2053105004701069313.json…）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.1  Multitalk数字人图片开口唱歌稳定放大功能齐全版_1957680451332796417.json、音频生成/音频生成/Wan2.1  Multitalk音乐数字人_1938926634802012162.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：58%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Bjornulf_FreeVRAM`
-- `Bjornulf_ShowInt`
-- `CLIPLoader`
+全部 2 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `Fast Groups Muter (rgthree)`
-- `GetNode`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
 - `INTConstant`
-- `ImageConcatMulti`
-- `ImageFromBatch`
 - `ImageResizeKJv2`
 - `ImageScale`
-- `ImageUpscaleWithModelBatched`
-- `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `ImageUpscaleWithModel`
+- `JWInteger`
+- `JWIntegerToString`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PlaySound|pysssss`
 - `PreviewImage`
+- `RH_Captioner`
+- `RH_Translator`
 - `RIFE VFI`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
-- `UNETLoader`
+- `SimpleMath+`
+- `Text Concatenate`
 - `UpscaleModelLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VHS_DuplicateImages`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `TT_img_enc` —— 6/7 个有
-- `TT_img_enc_v2` —— 1/7 个有
+- `easy anythingIndexSwitch`
+- `easy compare`
+- `easy ifElse`
+- `easy imageScaleDownToSize`
+- `easy imageSize`
+- `easy showAnything`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

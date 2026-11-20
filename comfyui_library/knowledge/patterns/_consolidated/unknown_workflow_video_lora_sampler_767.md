@@ -1,59 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_767
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.85975
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.794333
+common_nodes: [ApplyFaceProcessor, CR Text, FaceProcessorLoader, GetNode, ImageConcanate, ImageConcatMulti, ImageFromBatch+, ImageResizeKJv2, InspyrenetRembg, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/角色PV动画制作_2096613890909102081.json, 视频生成/图生视频/速享minimaxh3 pika_2116488588115406850.json, 视频生成/图生视频/速享minimaxh3_pika_2116670120620814337.json, 视频生成/图生视频/速享minimaxh3_pika_2116681952676900866.json]
+members: [视频生成/图生视频/👍最美最专角色姿态迁移+面部一致性视频生成工作流（VACE+stand-in）♥_1979202292152963074.json, 视频生成/图生视频/😍跳舞姿态迁移面部一致（VACE+stand-in）😍_1958798691941445634.json, 视频生成/文生视频/Wan2.1+姿势参考+Stand-In一致性文生视频_1956406110863458305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_767
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/角色PV动画制作_2096613890909102081.json、视频生成/图生视频/速享minimaxh3 pika_2116488588115406850.json、视频生成/图生视频/速享minimaxh3_pika_2116670120620814337.json、视频生成/图生视频/速享minimaxh3_pika_2116681952676900866.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/👍最美最专角色姿态迁移+面部一致性视频生成工作流（VACE+stand-in）♥_1979202292152963074.json、视频生成/图生视频/😍跳舞姿态迁移面部一致（VACE+stand-in）😍_1958798691941445634.json、视频生成/文生视频/Wan2.1+姿势参考+Stand-In一致性文生视频_1956406110863458305.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+全部 3 个 workflow 都包含：
+- `ApplyFaceProcessor`
+- `CR Text`
+- `FaceProcessorLoader`
+- `GetNode`
+- `ImageConcanate`
+- `ImageConcatMulti`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `InspyrenetRembg`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ManualSigmas` —— 3/4 个有
-- `BasicScheduler` —— 1/4 个有
-- `H3SigmaRefiner` —— 1/4 个有
-- `JsonExtractString` —— 1/4 个有
-- `MiniMaxH3SigmaShift` —— 1/4 个有
-- `RegexReplace` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `SolAttnPatch` —— 1/4 个有
-- `StringConcatenate` —— 1/4 个有
-- `TextGenerate` —— 1/4 个有
-- `easy convertAnything` —— 1/4 个有
+- `AIO_Preprocessor` —— 2/3 个有
+- `ImpactInt` —— 2/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `MultiTalkModelLoader` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `OpenposePreprocessor` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `Text Concatenate` —— 1/3 个有
+- `Wan22PromptSelector` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
+- `easy imageScaleDownToSize` —— 1/3 个有
 
 ## 典型参数
 

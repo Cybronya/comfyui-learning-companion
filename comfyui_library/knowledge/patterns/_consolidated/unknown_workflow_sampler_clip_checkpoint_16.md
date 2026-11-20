@@ -1,68 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_checkpoint_16
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.7775
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSamplerAdvanced, SaveImage, VAEDecode]
-problems: []
+coverage: 0.7846
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentAudio, KSampler, VAEDecodeAudio]
+problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
 missing: []
-members: [comfyui-workflow-templates-json/sdxl_refiner_prompt_example.json, comfyui-workflow-templates-json/sdxl_simple_example.json, 图片生成/文生图/简单文生图_1946739229718405122.json, 图片生成/文生图/超酷炫魔法瓶_2056664936935411713.json, 平台全量/3D立体模型_1778064031223975938.json, 平台全量/扩散步骤_2003366768905232385.json]
+members: [comfyui-workflow-templates-json/audio_stable_audio_example.json, 音频生成/音频生成/Stable Audio3，音乐生成，音频生成，背景音乐生成，视频bgm_2058786934591410178.json, 音频生成/音频生成/【遇见AI】stable-audio-3 背景音模型medium_2057667229650608129.json, 音频生成/音频生成/【遇见AI】stable-audio-3 背景音模型small_music_2041013207766142977.json, 音频生成/音频生成/【遇见AI】stable-audio-3 音效模型small_sfx_2040651445770395650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_16
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/sdxl_refiner_prompt_example.json、comfyui-workflow-templates-json/sdxl_simple_example.json、图片生成/文生图/简单文生图_1946739229718405122.json、图片生成/文生图/超酷炫魔法瓶_2056664936935411713.json、平台全量/3D立体模型_1778064031223975938.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/audio_stable_audio_example.json、音频生成/音频生成/Stable Audio3，音乐生成，音频生成，背景音乐生成，视频bgm_2058786934591410178.json、音频生成/音频生成/【遇见AI】stable-audio-3 背景音模型medium_2057667229650608129.json、音频生成/音频生成/【遇见AI】stable-audio-3 背景音模型small_music_2041013207766142977.json、音频生成/音频生成/【遇见AI】stable-audio-3 音效模型small_sfx_2040651445770395650.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
 - **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
-- `SaveImage`
-- `VAEDecode`
+- `EmptyLatentAudio`
+- `KSampler`
+- `VAEDecodeAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 2/6 个有
-- `VAEEncode` —— 2/6 个有
-- `LoadImage` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
+- `SaveAudioMP3` —— 4/5 个有
+- `LoadImage` —— 3/5 个有
+- `PrimitiveFloat` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `SaveAudioAdvanced` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 512 - 1024 | 6 | 67% |
-| 高度 | 640 | 512 - 1024 | 6 | 68% |
-| 采样步数 | randomize | - | 6 | 67% |
-| Prompt 约束强度(CFG) | 22.5 | 20 - 25 | 6 | 89% |
-| 采样算法 | 8 | 5.7 - 8 | 6 | 89% |
-| 调度器 | euler | - | 6 | 67% |
-| 重绘幅度 | normal | - | 6 | 67% |
-| LoRA 模型强度 | 0.61 | - | 2 | 85% |
-| LoRA 文本强度 | 0.75 | - | 2 | 67% |
+| 宽度 | 60 | 47.6 - 60 | 5 | 91% |
+| 高度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 8 | 8 - 50 | 5 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.98 | 5 | 11% |
+| 采样算法 | lcm | - | 5 | 80% |
+| 调度器 | simple | - | 5 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 5/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 1024，6 个样本
-- 高度 中位数 640，观测区间 512 - 1024，6 个样本
-- 采样步数 最常用 randomize，6 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 22.5，观测区间 20 - 25，6 个样本，取值集中（一致性 89%）
-- 采样算法 中位数 8，观测区间 5.7 - 8，6 个样本，取值集中（一致性 89%）
-- 调度器 最常用 euler，6 个样本，一致性 67%
-- 重绘幅度 最常用 normal，6 个样本，一致性 67%
-- LoRA 模型强度 中位数 0.61，样本不足，未给区间，2 个样本，取值集中（一致性 85%）
-- LoRA 文本强度 中位数 0.75，样本不足，未给区间，2 个样本
-- 风险：Prompt 约束强度(CFG) 观测到 25，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 60，观测区间 47.6 - 60，5 个样本，取值集中（一致性 91%）
+- 高度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 50，5 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.98，5 个样本，取值分散，一致性仅 11%
+- 采样算法 最常用 lcm，5 个样本，一致性 80%
+- 调度器 最常用 simple，5 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：发现KSampler但没有VAEDecode
+- 高发问题（4/5 个样本）：Steps较低可能导致细节不足

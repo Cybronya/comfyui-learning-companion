@@ -1,68 +1,78 @@
 ---
 name: unknown_workflow_sampler_clip_checkpoint_26
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.89625
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptySD3LatentImage, KSampler, SaveImage, TripleCLIPLoader, VAEDecode]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.686333
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ComfySwitchNode, EmptyLatentAudio, JsonExtractString, KSampler, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, SaveAudioMP3, StringReplace, TextGenerate, VAEDecodeAudio]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/文生图/01.SD3.5_文生图_1990215639241510914.json, 图片生成/文生图/SD3.5文生图官方工作流FP16_1930199196047982593.json, 图片生成/文生图/SD3基础工作流_1807671903036354561.json, 图片生成/文生图/sd3.5_large Turbo版 官方文生图示例_1848727011702476802.json]
+members: [音频生成/音频生成/极速纯音乐生成 Stable Audio 3_2096940154840764418.json, 音频生成/音频生成/超快纯音乐生成stable audio 3_2058029063868084225.json, 音频生成/音频生成/音乐模型stable_audio_3_medium_2061789894426578945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_26
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/01.SD3.5_文生图_1990215639241510914.json、图片生成/文生图/SD3.5文生图官方工作流FP16_1930199196047982593.json、图片生成/文生图/SD3基础工作流_1807671903036354561.json、图片生成/文生图/sd3.5_large Turbo版 官方文生图示例_1848727011702476802.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/极速纯音乐生成 Stable Audio 3_2096940154840764418.json、音频生成/音频生成/超快纯音乐生成stable audio 3_2058029063868084225.json、音频生成/音频生成/音乐模型stable_audio_3_medium_2061789894426578945.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `EmptySD3LatentImage`
+- `ComfySwitchNode`
+- `EmptyLatentAudio`
+- `JsonExtractString`
 - `KSampler`
-- `SaveImage`
-- `TripleCLIPLoader`
-- `VAEDecode`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `SaveAudioMP3`
+- `StringReplace`
+- `TextGenerate`
+- `VAEDecodeAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningCombine` —— 3/4 个有
-- `ConditioningSetTimestepRange` —— 3/4 个有
-- `ConditioningZeroOut` —— 3/4 个有
-- `ModelSamplingSD3` —— 3/4 个有
-- `CLIPLoader` —— 2/4 个有
-- `DualCLIPLoader` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `HD UltimateSDUpscale` —— 1/4 个有
-- `UpscaleModelLoader` —— 1/4 个有
+- `ComfyMathExpression` —— 2/3 个有
+- `CustomCombo` —— 2/3 个有
+- `GetNode` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `easy string` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 29 | 4 - 30 | 4 | 52% |
-| Prompt 约束强度(CFG) | 4.975 | 1 - 5.5 | 4 | 55% |
-| 采样算法 | dpmpp_2m | - | 4 | 75% |
-| 调度器 | sgm_uniform | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 60 | 60 - 60 | 3 | 100% |
+| 高度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | lcm | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 29，观测区间 4 - 30，4 个样本
-- Prompt 约束强度(CFG) 中位数 4.975，观测区间 1 - 5.5，4 个样本
-- 采样算法 最常用 dpmpp_2m，4 个样本，一致性 75%
-- 调度器 最常用 sgm_uniform，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 60，观测区间 60 - 60，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 lcm，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode

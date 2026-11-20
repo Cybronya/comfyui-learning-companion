@@ -1,41 +1,41 @@
 ---
 name: unknown_workflow_generic_79
 type: Unknown Workflow
-frequency: 19
+frequency: 17
 level: moderate
-coverage: 0.865684
-common_nodes: [Apply Whisper, AudioCrop, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
+coverage: 0.854706
+common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [平台全量/Qwen3 TT声音克隆_2016704753803202562.json, 平台全量/Qwen3_TTS_声音克隆_2119252025451044865.json, 平台全量/Qwen3_TTS_声音克隆_2119269195132268546.json, 数字人/数字人/qwen3-voice-clone-v1-workflow_2079910944641212417.json, 数字人/数字人/声音克隆 文案版_2052943957910409217.json, 视频生成/图生视频/Qwen3 TTS 语音克隆_2037007176320950273.json, 音频生成/音频生成/Qwen3 TTS 一键声音克隆_2014695099287998466.json, 音频生成/音频生成/Qwen3 TTS 单声音克隆-老祺虾说_2029550073687838722.json, 音频生成/音频生成/Qwen3 TTS 声音克隆-3秒克隆你的声音_2014677921528553473.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2014607135769894913.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2014685779439652866.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2014980105134678017.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2015035039628664833.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016149639522684930.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016153141720391681.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2016362071453077505.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2019614184744427522.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2036000318839857153.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2059272363556036610.json]
+members: [图片生成/图生图/一键漫剧分镜流（付费版-0.15一张）_2014196469145804801.json, 图片生成/图生图/人物一致性换脸_2011281776274055169.json, 图片生成/图生图/全能图片V1 pro&2-多图编辑-10张图版本（1k-4k）_1992869116912488450.json, 图片生成/图生图/全能图片V12 最强融图模型_支持文生图_多图生图_2007007181320753154.json, 图片生成/图生图/全能图片V12 最强融图模型_支持文生图_多图生图_2095471365771063298.json, 图片生成/图生图/全能图片V12 最强融图模型_支持文生图_多图生图_2095475232596381697.json, 图片生成/图生图/最强图片编辑_2028450780205813761.json, 图片生成/图生图/电商图工作流_2042093393085472770.json, 图片生成/图生图/美术设定集+角色风格统一_香交2线稿重渲染_2042487174494429185.json, 图片生成/文生图/AI图像生成合集_2033448495897645057.json, 图片生成/文生图/一键漫剧分镜出图（付费版0.15_张）_2046512551038558209.json, 图片生成/文生图/一键漫剧分镜流（付费版-0.15一张）林耀_2014706595141263361.json, 图片生成/文生图/全能图片N1pro  支持文生图_图生图_2046573324553162754.json, 图片生成/文生图/全能图片V12 最强图片生成  支持文生图_图生图_1991748886129897473.json, 图片生成/文生图/全能图片V12 最强图片生成  支持文生图_图生图_2020916888674508801.json, 图片生成/文生图/文生图，图生图，0.2一张_2033778277202010114.json, 图片生成/文生图/🍌2全能图片PRO改良版加入了镜头控制支持文生图_图生图_2007385918830813185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_79
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（平台全量/Qwen3 TT声音克隆_2016704753803202562.json、平台全量/Qwen3_TTS_声音克隆_2119252025451044865.json、平台全量/Qwen3_TTS_声音克隆_2119269195132268546.json、数字人/数字人/qwen3-voice-clone-v1-workflow_2079910944641212417.json、数字人/数字人/声音克隆 文案版_2052943957910409217.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/一键漫剧分镜流（付费版-0.15一张）_2014196469145804801.json、图片生成/图生图/人物一致性换脸_2011281776274055169.json、图片生成/图生图/全能图片V1 pro&2-多图编辑-10张图版本（1k-4k）_1992869116912488450.json、图片生成/图生图/全能图片V12 最强融图模型_支持文生图_多图生图_2007007181320753154.json、图片生成/图生图/全能图片V12 最强融图模型_支持文生图_多图生图_2095471365771063298.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText|pysssss`
+全部 17 个 workflow 都包含：
+- `CR Text`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 3/19 个有
-- `MuyeTextEditOutput` —— 3/19 个有
-- `SaveAudioMP3` —— 1/19 个有
-- `Text Multiline` —— 1/19 个有
+- `ImageConcatMulti` —— 15/17 个有
+- `ImageStitch` —— 14/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 11/17 个有
+- `easy imageConcat` —— 2/17 个有
+- `LayerUtility: TextJoin` —— 1/17 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/17 个有
+- `VNCCS_VisualPositionControl` —— 1/17 个有
 
 ## 典型参数
 

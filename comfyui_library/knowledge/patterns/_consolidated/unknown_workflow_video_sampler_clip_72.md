@@ -1,53 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_clip_72
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.914889
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.941875
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, JWInteger, KSamplerSelect, LTXVBaseSampler, LTXVConditioning, LoadImage, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, VAEDecode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/5秒图生视频生成 - Wan2.1_1898064124872740866.json, 视频生成/图生视频/KJ-Wan2.1-图生视频_1895074790560956417.json, 视频生成/图生视频/KJ纯净版_图生视频_480p_1919644489483223042.json, 视频生成/图生视频/WANI2V彩色烟雾视频制作器-彩烟特效ZYP原创_1907459006556999682.json, 视频生成/图生视频/WAN复杂动作防崩图生视频工作流_1895519547200307202.json, 视频生成/图生视频/Wan图生视频高精度FP32版480P模型V1_1894619685634355201.json, 视频生成/图生视频/Wan图生视频高质量BF16版720P模型V1_1894653329455362049.json, 视频生成/图生视频/Wan图生视频高质量BF16版720P模型V1_1894658014006390785.json, 视频生成/图生视频/Wan无限延长抽帧图生视频工作流_1894765811745816578.json]
+members: [图片生成/图生图/LTXV 13B高动态首尾帧优化版V1_1921482288666722305.json, 视频生成/图生视频/LTXV 0.98 平衡版图生视频双模式V1_1947700858089783297.json, 视频生成/图生视频/LTXV 0.98高动态首尾帧优化版V1_1947702607479455746.json, 视频生成/图生视频/LTXV 13B 图生视频潜空间放大（不炸显存）V1测试版_1921503421558620162.json, 视频生成/图生视频/LTXV 13B稳定优化版图生视频双模式V1_1921491930432339969.json, 视频生成/图生视频/Ltxv 13B Extend视频扩展优化稳定版（不炸显存）V2_1921497557317402626.json, 视频生成/图生视频/【LTXV 13B】图生视频稳定优化版_1922465822680481794.json, 视频生成/图生视频/图生视频+空间or时间放大(LTXVideo 13B 0.9.7)_1920645310174138370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_72
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/5秒图生视频生成 - Wan2.1_1898064124872740866.json、视频生成/图生视频/KJ-Wan2.1-图生视频_1895074790560956417.json、视频生成/图生视频/KJ纯净版_图生视频_480p_1919644489483223042.json、视频生成/图生视频/WANI2V彩色烟雾视频制作器-彩烟特效ZYP原创_1907459006556999682.json、视频生成/图生视频/WAN复杂动作防崩图生视频工作流_1895519547200307202.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/LTXV 13B高动态首尾帧优化版V1_1921482288666722305.json、视频生成/图生视频/LTXV 0.98 平衡版图生视频双模式V1_1947700858089783297.json、视频生成/图生视频/LTXV 0.98高动态首尾帧优化版V1_1947702607479455746.json、视频生成/图生视频/LTXV 13B 图生视频潜空间放大（不炸显存）V1测试版_1921503421558620162.json、视频生成/图生视频/LTXV 13B稳定优化版图生视频双模式V1_1921491930432339969.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `JWInteger`
+- `KSamplerSelect`
+- `LTXVBaseSampler`
+- `LTXVConditioning`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `RandomNoise`
+- `STGAdvancedPresets`
+- `STGGuiderAdvanced`
+- `Set VAE Decoder Noise`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 6/9 个有
-- `WanVideoTorchCompileSettings` —— 6/9 个有
-- `Note Plus (mtb)` —— 4/9 个有
-- `GetImageSizeAndCount` —— 2/9 个有
-- `Note _O` —— 2/9 个有
-- `WanVideoEnhanceAVideo` —— 2/9 个有
-- `ImageFromBatch+` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `SaveLatent` —— 1/9 个有
-- `String Literal` —— 1/9 个有
-- `VHS_LoadVideo` —— 1/9 个有
-- `WanVideoLoraSelect` —— 1/9 个有
+- `GetImageSizeAndCount` —— 7/8 个有
+- `LayerUtility: ImageAutoCrop V3` —— 7/8 个有
+- `ImageConcanate` —— 6/8 个有
+- `JWImageResizeByLongerSide` —— 6/8 个有
+- `LTXQ8Patch` —— 6/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 6/8 个有
+- `Note Plus (mtb)` —— 6/8 个有
+- `RH_Captioner` —— 6/8 个有
+- `ImpactSwitch` —— 5/8 个有
+- `StringConstantMultiline` —— 5/8 个有
+- `Text Concatenate` —— 5/8 个有
+- `CR Prompt Text` —— 3/8 个有
+- `ImageBatch` —— 2/8 个有
+- `ImageResizeKJ` —— 2/8 个有
+- `LTXVAdainLatent` —— 2/8 个有
+- `LTXVFilmGrain` —— 2/8 个有
+- `LTXVLatentUpsampler` —— 2/8 个有
+- `LTXVLatentUpsamplerModelLoader` —— 2/8 个有
+- `LTXVTiledSampler` —— 2/8 个有
+- `SplitSigmas` —— 2/8 个有
+- `VAEDecodeTiled` —— 2/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `JWString` —— 1/8 个有
+- `LTXVExtendSampler` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 

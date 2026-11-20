@@ -1,58 +1,93 @@
 ---
 name: unknown_workflow_sampler_clip_unet_448
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.917
-common_nodes: [CLIPTextEncode, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.839
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Latent Batch Size, ConstrainImage|pysssss, DepthAnythingV2Preprocessor, DualCLIPLoader, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LayerFilter: FilmV2, LayerFilter: HDREffects, LayerUtility: TextJoin, LoadImage, PortraitMaster, PortraitMasterMakeup, PortraitMasterSkinDetails, PortraitMasterStylePose, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image 双模型双采样非常版_2048543200930963458.json, 图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json, 图片生成/文生图/墨沫白皙质感Z -Image工作流_2067629087857926145.json]
+members: [图片生成/图生图/洗图V1-dy红薯过审加噪颗粒阴影_2022769389350690818.json, 图片生成/文生图/炼丹所需工作流+打标_1920288590247694337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_448
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-image 双模型双采样非常版_2048543200930963458.json、图片生成/文生图/【老金驿站】Z-imageBase两步采样高清出图工作流_2017100420610527233.json、图片生成/文生图/墨沫白皙质感Z -Image工作流_2067629087857926145.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/洗图V1-dy红薯过审加噪颗粒阴影_2022769389350690818.json、图片生成/文生图/炼丹所需工作流+打标_1920288590247694337.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Latent Batch Size`
+- `ConstrainImage|pysssss`
+- `DepthAnythingV2Preprocessor`
+- `DualCLIPLoader`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `LayerFilter: FilmV2`
+- `LayerFilter: HDREffects`
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `PortraitMaster`
+- `PortraitMasterMakeup`
+- `PortraitMasterSkinDetails`
+- `PortraitMasterStylePose`
+- `PreviewImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
+- `StyleModelApply`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `ConditioningZeroOut` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `CLIPLoaderGGUF` —— 1/3 个有
-- `CompressImages` —— 1/3 个有
-- `INTConstant` —— 1/3 个有
-- `easy promptList` —— 1/3 个有
+- `ArgosTranslateTextNode` —— 1/2 个有
+- `Batch_joy_caption_two_advanced` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `ControlNetApplyAdvanced` —— 1/2 个有
+- `ControlNetLoader` —— 1/2 个有
+- `DeepTranslatorTextNode` —— 1/2 个有
+- `EmptyLatentImage` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `Joy_caption_two` —— 1/2 个有
+- `Joy_caption_two_load` —— 1/2 个有
+- `Joy_extra_options` —— 1/2 个有
+- `LayerFilter: AddGrain` —— 1/2 个有
+- `LayerFilter: MotionBlur` —— 1/2 个有
+- `LoraLoader` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `SetUnionControlNetType` —— 1/2 个有
+- `StringFunction|pysssss` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 896 | 768 - 1280 | 3 | 78% |
-| 高度 | 1152 | 1024 - 1856 | 3 | 73% |
-| 采样步数 | randomize | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 9 | 3 - 12 | 3 | 53% |
-| 采样算法 | 1 | 1 - 3 | 3 | 43% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 67% |
+| LoRA 模型强度 | 0.5 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
+| ControlNet 权重 | 0.3 | - | 1 | 100% |
+| 宽度 | 768 | - | 1 | 100% |
+| 高度 | 1024 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -60,10 +95,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 896，观测区间 768 - 1280，3 个样本
-- 高度 中位数 1152，观测区间 1024 - 1856，3 个样本
-- 采样步数 最常用 randomize，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 9，观测区间 3 - 12，3 个样本
-- 采样算法 中位数 1，观测区间 1 - 3，3 个样本，取值分散，一致性仅 43%
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

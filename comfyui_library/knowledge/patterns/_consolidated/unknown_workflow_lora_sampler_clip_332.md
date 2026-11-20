@@ -3,68 +3,76 @@ name: unknown_workflow_lora_sampler_clip_332
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8305
-common_nodes: [Anything Everywhere, Anything Everywhere3, BasicGuider, BasicScheduler, CLIPSetLastLayer, CLIPTextEncode, CR Text, CR Text Concatenate, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, Int, KSamplerSelect, Lora Loader, LoraLoaderModelOnly, ModelSamplingFlux, PreviewImage, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.4645
+common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatch, CreateVideo, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetNode, INTConstant, ImageResizeKJv2, ImpactSwitch, Int, InversionDemoLazyMixImages, Joy_caption_two_advanced, Joy_caption_two_load, Joy_extra_options, KSamplerAdvanced, LayerUtility: DeepSeekAPI, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RMBG, SaveVideo, SetNode, ShowText|pysssss, SolidColorBatched, TextInputNode, UNETLoader, VAEDecode, VAELoader, WanFirstLastFrameToVideo, WanSkipEndFrameImages_F2, easy cleanGpuUsed, wanBlockSwap]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux_lora测试_1964375837015425025.json, 图片生成/文生图/Flux_佗寂风--室内设计-文生图_1964596165473878018.json]
+members: [视频生成/图生视频/WAN2.2-RemixV2-I2V完美循环工作流_2013492650959179778.json, 视频生成/图生视频/WAN2.2完美动画首尾循环，速度快，效果好_2049402530379075585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_332
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux_lora测试_1964375837015425025.json、图片生成/文生图/Flux_佗寂风--室内设计-文生图_1964596165473878018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.2-RemixV2-I2V完美循环工作流_2013492650959179778.json、视频生成/图生视频/WAN2.2完美动画首尾循环，速度快，效果好_2049402530379075585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `Anything Everywhere3`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPSetLastLayer`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
+- `ColorMatch`
+- `CreateVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Muter (rgthree)`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
 - `Int`
-- `KSamplerSelect`
-- `Lora Loader`
+- `InversionDemoLazyMixImages`
+- `Joy_caption_two_advanced`
+- `Joy_caption_two_load`
+- `Joy_extra_options`
+- `KSamplerAdvanced`
+- `LayerUtility: DeepSeekAPI`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
 - `PreviewImage`
-- `RH_Translator`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `RMBG`
+- `SaveVideo`
+- `SetNode`
+- `ShowText|pysssss`
+- `SolidColorBatched`
+- `TextInputNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `WanFirstLastFrameToVideo`
+- `WanSkipEndFrameImages_F2`
+- `easy cleanGpuUsed`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `CR Float To String` —— 1/2 个有
-- `Create Grid Image from Batch` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImpactFloat` —— 1/2 个有
-- `ImpactMakeImageBatch` —— 1/2 个有
-- `JoinStrings` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
+- `easy int` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | normal | - | 2 | 100% |
 
 ## 常见问题
 
@@ -72,4 +80,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 normal，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

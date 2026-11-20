@@ -1,67 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_clip_145
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.949
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.85875
+common_nodes: [CLIPTextEncode, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, DualCLIPLoader, Florence2ModelLoader, Florence2Run, FluxGuidance, FluxResolutionNode, HfImageToRGB, ImageBlend, ImageResize+, ImageResizeKJ, InstructPixToPixConditioning, KSampler, LoadImage, LoraLoaderModelOnly, MaskToSEGS, MiDaS-DepthMapPreprocessor, PreviewImage, SEGSPreview, SaveImage, TextCombinerTwo, VAEDecode, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/图生图/test-faceswap_2067439662989402114.json, 图片生成/图生图/换脸工作流111_2081385261786812418.json, 图片生成/文生图/Bfs Klein人物换脸V1_2019423087078412290.json, 数字人/数字人/Klein换脸2.0_2026196400396046338.json, 数字人/数字人/短剧资产_Klein_true_V3人物资产制作(角色定版三视图）V2_2086611011628519426.json]
+members: [图片生成/图生图/【最新】史努比 Snoopy 漫画风格_1912885985607385090.json, 图片生成/图生图/一秒走进Snoopy史努比漫画_1908452854783483906.json, 图片生成/图生图/一键把图片改成动漫头像工作流_1890976119351316482.json, 图片生成/文生图/一键生成史努比动漫style_1893202623359823873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_145
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/test-faceswap_2067439662989402114.json、图片生成/图生图/换脸工作流111_2081385261786812418.json、图片生成/文生图/Bfs Klein人物换脸V1_2019423087078412290.json、数字人/数字人/Klein换脸2.0_2026196400396046338.json、数字人/数字人/短剧资产_Klein_true_V3人物资产制作(角色定版三视图）V2_2086611011628519426.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【最新】史努比 Snoopy 漫画风格_1912885985607385090.json、图片生成/图生图/一秒走进Snoopy史努比漫画_1908452854783483906.json、图片生成/图生图/一键把图片改成动漫头像工作流_1890976119351316482.json、图片生成/文生图/一键生成史努比动漫style_1893202623359823873.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `KSamplerSelect`
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `DualCLIPLoader`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `FluxResolutionNode`
+- `HfImageToRGB`
+- `ImageBlend`
+- `ImageResize+`
+- `ImageResizeKJ`
+- `InstructPixToPixConditioning`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `MaskToSEGS`
+- `MiDaS-DepthMapPreprocessor`
+- `PreviewImage`
+- `SEGSPreview`
 - `SaveImage`
-- `UNETLoader`
+- `TextCombinerTwo`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `AutoCropFaces` —— 3/5 个有
-- `DifferentialDiffusion` —— 3/5 个有
-- `ImageConcanate` —— 3/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `FluxKontextImageScale` —— 1/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `ImageStitch` —— 1/5 个有
-- `JWString` —— 1/5 个有
-- `LayerUtility: ImageReel` —— 1/5 个有
-- `LayerUtility: ImageReelComposit` —— 1/5 个有
-- `Load RetinaFace` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `SegmentV2` —— 1/5 个有
-- `json_to_bbox` —— 1/5 个有
+- `RH_Captioner` —— 3/4 个有
+- `TextInput_` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `VAELoader` —— 3/4 个有
+- `ControlNetApplyAdvanced` —— 2/4 个有
+- `ControlNetLoader` —— 2/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `workflow/clip` —— 1/4 个有
+- `workflow/cn` —— 1/4 个有
+- `workflow/模型` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | normal | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| ControlNet 权重 | 0.42 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -69,4 +77,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 normal，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.42，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

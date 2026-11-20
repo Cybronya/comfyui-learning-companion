@@ -1,69 +1,83 @@
 ---
 name: unknown_workflow_video_upscale_lora_27
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.492667
-common_nodes: [CR Text, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, ImageScaleToMegapixels, ImpactControlBridge, ImpactInt, ImpactSwitch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadJsonFromText, LoadWanVideoT5TextEncoder, RHHiddenNodes, RH_Captioner, RH_LLMAPI_NODE, Seed (rgthree), SetNode, StringFunction|pysssss, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTextEncodeSingle, WanVideoVAELoader, easy ifElse, easy mathInt, easy negative, easy showAnything]
+frequency: 2
+level: weak
+coverage: 0.99
+common_nodes: [ColorMatch, GODMT_ListGetByIndex, GODMT_SplitString, GetImageRangeFromBatch, GetImageSize+, ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Captioner, RH_Prompter, SaveImage, Text Multiline, TextInput_, TextPreview, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy float, easy forLoopEnd, easy forLoopStart, easy promptConcat]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1971101417341652994.json, 视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1981765455167791105.json, 视频生成/图生视频/顶级丝滑！Wan2.2图生视频最优加速版【锁定5秒+全自动参数】_1973100539745538049.json]
+members: [数字人/数字人/MultiTalk_FusionX_无限图生数字人_1939304835680485377.json, 视频生成/图生视频/FusionX_Vace_无限图生视频_1939266325271461889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_27
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1971101417341652994.json、视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1981765455167791105.json、视频生成/图生视频/顶级丝滑！Wan2.2图生视频最优加速版【锁定5秒+全自动参数】_1973100539745538049.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/MultiTalk_FusionX_无限图生数字人_1939304835680485377.json、视频生成/图生视频/FusionX_Vace_无限图生视频_1939266325271461889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetNode`
-- `ImageScaleToMegapixels`
-- `ImpactControlBridge`
-- `ImpactInt`
-- `ImpactSwitch`
-- `Int`
+全部 2 个 workflow 都包含：
+- `ColorMatch`
+- `GODMT_ListGetByIndex`
+- `GODMT_SplitString`
+- `GetImageRangeFromBatch`
+- `GetImageSize+`
+- `ImageUpscaleWithModel`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadJsonFromText`
 - `LoadWanVideoT5TextEncoder`
-- `RHHiddenNodes`
+- `MathExpression|pysssss`
 - `RH_Captioner`
-- `RH_LLMAPI_NODE`
-- `Seed (rgthree)`
-- `SetNode`
-- `StringFunction|pysssss`
+- `RH_Prompter`
+- `SaveImage`
+- `Text Multiline`
+- `TextInput_`
+- `TextPreview`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy ifElse`
-- `easy mathInt`
-- `easy negative`
-- `easy showAnything`
+- `easy batchAnything`
+- `easy float`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `GLM_Vision_ImageToPrompt` —— 2/3 个有
-- `ImageCASharpening+` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `Audio Duration (mtb)` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
+- `CLIPVisionLoader` —— 1/2 个有
+- `ComparingTwoFrames_` —— 1/2 个有
+- `DownloadAndLoadWav2VecModel` —— 1/2 个有
+- `JWFloatMin` —— 1/2 个有
+- `JWFloatToString` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MultiTalkModelLoader` —— 1/2 个有
+- `MultiTalkWav2VecEmbeds` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `WanVideoClipVisionEncode` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `WanVideoImageToVideoEncode` —— 1/2 个有
+- `WanVideoMagCache` —— 1/2 个有
+- `WanVideoVACEEncode` —— 1/2 个有
+- `WanVideoVACEStartToEndFrame` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
@@ -75,4 +89,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

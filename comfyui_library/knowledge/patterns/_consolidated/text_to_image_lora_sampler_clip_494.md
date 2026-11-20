@@ -3,70 +3,59 @@ name: text_to_image_lora_sampler_clip_494
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.665
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, CR Text Concatenate, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, ImpactSwitch, Int, KSampler, LoadImage, LoraLoaderModelOnly, PreviewAny, SaveImage, SetNode, Switch any [Crystools], TTResolutionSelector, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy convertAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.8695
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, SaveAudio, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2-文生图-可切换参考风格_2071220949994786817.json, 图片生成/文生图/Krea2-文生图-可切换参考风格_2072500761992458242.json, 图片生成/文生图/Krea2-文生图-可切换参考风格_2072857163869020162.json, 图片生成/文生图/Krea2-文生图-智能扩写+风格参考_2072514453173792770.json]
+members: [音频生成/音频生成/VOXCPM2声音克隆语音克隆 音色复刻音频生成_2104716560517656577.json, 音频生成/音频生成/VoxCPM2基础工作流｜语音合成音频生成_2095137648078839810.json, 音频生成/音频生成/VoxCPM2基础工作流｜音频生成语音合成处理_2095112468350717954.json, 音频生成/音频生成/indexTTS2高保真语音克隆｜文本转语音音色复刻_2089443854935220225.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_494
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Krea2-文生图-可切换参考风格_2071220949994786817.json、图片生成/文生图/Krea2-文生图-可切换参考风格_2072500761992458242.json、图片生成/文生图/Krea2-文生图-可切换参考风格_2072857163869020162.json、图片生成/文生图/Krea2-文生图-智能扩写+风格参考_2072514453173792770.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VOXCPM2声音克隆语音克隆 音色复刻音频生成_2104716560517656577.json、音频生成/音频生成/VoxCPM2基础工作流｜语音合成音频生成_2095137648078839810.json、音频生成/音频生成/VoxCPM2基础工作流｜音频生成语音合成处理_2095112468350717954.json、音频生成/音频生成/indexTTS2高保真语音克隆｜文本转语音音色复刻_2089443854935220225.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Text`
-- `CR Text Concatenate`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `ImpactSwitch`
-- `Int`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
-- `SaveImage`
-- `SetNode`
-- `Switch any [Crystools]`
-- `TTResolutionSelector`
+- `SaveAudio`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy convertAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ZML_BooleanSwitch` —— 3/4 个有
-- `easy boolean` —— 1/4 个有
-- `忽略多组孤海` —— 1/4 个有
+- `RunningHub_VoxCPM_Generate` —— 3/4 个有
+- `RunningHub_VoxCPM_LoadModel` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `IndexTTS2_Basic` —— 1/4 个有
+- `Qwen3ASRLoader` —— 1/4 个有
+- `Qwen3ASRTranscribe` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 4 | 100% |
-| 高度 | 512 | 512 - 512 | 4 | 100% |
-| 采样步数 | 8 | 8 - 8 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler_ancestral | - | 4 | 100% |
-| 调度器 | beta57 | - | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 80 | 80 - 80 | 4 | 100% |
+| 高度 | 80 | 80 - 80 | 4 | 100% |
 
 ## 常见问题
 
@@ -76,11 +65,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
-- 调度器 最常用 beta57，4 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
 - 高发问题（4/4 个样本）：Steps较低可能导致细节不足

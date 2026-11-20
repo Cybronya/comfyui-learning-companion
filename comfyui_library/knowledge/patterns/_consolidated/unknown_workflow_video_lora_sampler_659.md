@@ -1,60 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_659
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.75175
-common_nodes: [BFSHeadSwapBerniniConditioning, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CustomCombo, Image Crop Face, ImageResizeKJv2, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewAny, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RIFE VFI, RTXVideoSuperResolution, RegexExtract, SamplerCustom, ShowText|pysssss, SplitSigmas, StringConcatenate, StringReplace, TextGenerate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 0.633
+common_nodes: [AudioCrop, AudioInfo, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, Float, Int, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, SamplerCustom, SetLatentNoiseMask, SimpleMath+, SolidMask, Text, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/Bernini视频换头_换脸   精准迁移 真实自然_2077207599019282434.json, 平台全量/Bernini视频换头！换脸！艾橘溪_2076903367976243201.json, 平台全量/Video Face Swap视频换脸_2099672600371875841.json, 平台全量/视频换头 换脸 Bernini 极速版_2080126186260361217.json]
+members: [数字人/数字人/ltx2.3文本驱动-声音设计_2100950016872505346.json, 视频生成/图生视频/数字人：ltx2.3极速蒸馏版-文本驱动-声音设计_2034445280996761602.json, 视频生成/文生视频/LTX2.3极速版 图生视频 图片音频双驱动 自动生提示词 优化版_2034787261849538562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_659
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Bernini视频换头_换脸   精准迁移 真实自然_2077207599019282434.json、平台全量/Bernini视频换头！换脸！艾橘溪_2076903367976243201.json、平台全量/Video Face Swap视频换脸_2099672600371875841.json、平台全量/视频换头 换脸 Bernini 极速版_2080126186260361217.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/ltx2.3文本驱动-声音设计_2100950016872505346.json、视频生成/图生视频/数字人：ltx2.3极速蒸馏版-文本驱动-声音设计_2034445280996761602.json、视频生成/文生视频/LTX2.3极速版 图生视频 图片音频双驱动 自动生提示词 优化版_2034787261849538562.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BFSHeadSwapBerniniConditioning`
+全部 3 个 workflow 都包含：
+- `AudioCrop`
+- `AudioInfo`
 - `BasicScheduler`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CustomCombo`
-- `Image Crop Face`
-- `ImageResizeKJv2`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `Float`
 - `Int`
 - `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveFloat`
+- `PathchSageAttentionKJ`
 - `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RIFE VFI`
-- `RTXVideoSuperResolution`
-- `RegexExtract`
 - `SamplerCustom`
-- `ShowText|pysssss`
-- `SplitSigmas`
-- `StringConcatenate`
-- `StringReplace`
-- `TextGenerate`
+- `SetLatentNoiseMask`
+- `SimpleMath+`
+- `SolidMask`
+- `Text`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
-- `VHS_LoadVideo`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Apply Whisper` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `InversionDemoLazySwitch` —— 2/3 个有
+- `LTXVLatentUpsampler` —— 2/3 个有
+- `LatentUpscaleModelLoader` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `Qwen3TTSModelLoader` —— 2/3 个有
+- `Qwen3TTSVoiceClone` —— 2/3 个有
+- `Qwen3TTSVoiceDesign` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `ShowText` —— 2/3 个有
+- `StringSubstring` —— 2/3 个有
+- `llama_cpp_instruct_adv` —— 2/3 个有
+- `llama_cpp_model_loader` —— 2/3 个有
+- `llama_cpp_parameters` —— 2/3 个有
+- `MelBandRoFormerModelLoader` —— 1/3 个有
+- `MelBandRoFormerSampler` —— 1/3 个有
+- `Qwen3_VQA_Plus` —— 1/3 个有
 
 ## 典型参数
 

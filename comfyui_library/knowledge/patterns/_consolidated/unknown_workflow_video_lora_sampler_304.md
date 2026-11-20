@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_video_lora_sampler_304
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.926444
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.92125
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, LoadImage, LoadWanVideoT5TextEncoder, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/【kj版+VBVR】Wan2_2首尾帧生视频_2038129032830652418.json, 图片生成/图生图/极简——Wan2.2 KJ 图生视频_1951508080301387777.json, 图片生成/图生图/🐳SVI2.0PRO长视频生成 图生视频 简易版🦋_2005507420082368514.json, 视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_1952003952139292673.json, 视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_2061786208002465793.json, 视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_2061806465001803778.json, 视频生成/图生视频/WAN2.2图生快速流_1950145303941922817.json, 视频生成/图生视频/【VBVR+KJ】最强参考Wan2.2图生视频_分块处理低显存版_2038129014153420801.json, 视频生成/文生视频/光文字流转V1（尾帧实验版）_1966039188808396801.json]
+members: [视频生成/图生视频/Stand In Face Swap换脸_1960243766210801666.json, 视频生成/图生视频/Stand In Face Swap视频换脸V2（背景洗图版）_1956781749314228225.json, 视频生成/图生视频/Stand-In超级人物一致性图生视频_1956951152292192258.json, 视频生成/图生视频/Stand-In身份一致性参考视频_1955673336359653378.json, 视频生成/图生视频/Stand-In面部参考生成视频_1956191796604882946.json, 视频生成/图生视频/stand in 视频换脸+视频高清放大V1_1959190374550024194.json, 视频生成/图生视频/（自用）Stand In Face Swap视频换脸V2（背景洗图版）_1958204271017791490.json, 视频生成/文生视频/（自用）Stand In Face Swap视频换脸V2_1956898077279969282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_304
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/【kj版+VBVR】Wan2_2首尾帧生视频_2038129032830652418.json、图片生成/图生图/极简——Wan2.2 KJ 图生视频_1951508080301387777.json、图片生成/图生图/🐳SVI2.0PRO长视频生成 图生视频 简易版🦋_2005507420082368514.json、视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_1952003952139292673.json、视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_2061786208002465793.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Stand In Face Swap换脸_1960243766210801666.json、视频生成/图生视频/Stand In Face Swap视频换脸V2（背景洗图版）_1956781749314228225.json、视频生成/图生视频/Stand-In超级人物一致性图生视频_1956951152292192258.json、视频生成/图生视频/Stand-In身份一致性参考视频_1955673336359653378.json、视频生成/图生视频/Stand-In面部参考生成视频_1956191796604882946.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `INTConstant`
+全部 8 个 workflow 都包含：
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `VHS_VideoCombine`
+- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
@@ -40,25 +41,27 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 8/9 个有
-- `ImpactInt` —— 5/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
-- `WanVideoTorchCompileSettings` —— 5/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `SimpleMath+` —— 4/9 个有
-- `MathExpression|pysssss` —— 2/9 个有
-- `PrimitiveStringMultiline` —— 2/9 个有
-- `easy convertAnything` —— 2/9 个有
-- `CR Text` —— 1/9 个有
-- `ImageResize+` —— 1/9 个有
-- `JWInteger` —— 1/9 个有
-- `ModelScopeImageGeneration` —— 1/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `SaveImage` —— 1/9 个有
-- `WanVideoContextOptions` —— 1/9 个有
-- `WanVideoLoraSelectMulti` —— 1/9 个有
-- `easy anythingIndexSwitch` —— 1/9 个有
-- `easy promptConcat` —— 1/9 个有
+- `PreviewImage` —— 7/8 个有
+- `VHS_VideoCombine` —— 7/8 个有
+- `CR Prompt Text` —— 5/8 个有
+- `JWInteger` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
+- `VHS_LoadVideo` —— 5/8 个有
+- `VideoInputPreprocessor` —— 5/8 个有
+- `ImageConcatMulti` —— 4/8 个有
+- `VHS_VideoInfo` —— 4/8 个有
+- `Primitive integer [Crystools]` —— 3/8 个有
+- `WanVideoTorchCompileSettings` —— 3/8 个有
+- `LatentLoaderAdvanced` —— 2/8 个有
+- `SaveImage` —— 2/8 个有
+- `SaveLatent` —— 2/8 个有
+- `FaceOnlyModeSwitch` —— 1/8 个有
+- `ImageConcanate` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
+- `ReActorFaceSwap` —— 1/8 个有
+- `SeedVR2` —— 1/8 个有
+- `VHS_VideoInfoLoaded` —— 1/8 个有
+- `VideoBackgroundRestorer` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,73 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_592
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9036
-common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+coverage: 0.875
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR String To Combo, ImageResizeKJ, ImpactInt, ImpactStringSelector, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RH_Captioner, RH_LLMAPI_NODE, SimpleMath+, SplitStringByDelimiter, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/One-To-All TI2V动作迁移工作流V1 cfg_2000814945631600641.json, 视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json, 视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json, 视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json, 视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json]
+members: [视频生成/图生视频/万相2.1运镜控制LORA十合一集合_1964309918603988994.json, 视频生成/图生视频/万相2.1运镜控制LORA十合一集合_2018166622560718849.json, 视频生成/图生视频/自己用：wan2.1_10个运镜lora_1940692152370311170.json, 视频生成/文生视频/【大炮视频】wan2.1_10个运镜lora 简单方便，让你图生视频充满灵性~_1931150479697620994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_592
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/One-To-All TI2V动作迁移工作流V1 cfg_2000814945631600641.json、视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json、视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json、视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json、视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/万相2.1运镜控制LORA十合一集合_1964309918603988994.json、视频生成/图生视频/万相2.1运镜控制LORA十合一集合_2018166622560718849.json、视频生成/图生视频/自己用：wan2.1_10个运镜lora_1940692152370311170.json、视频生成/文生视频/【大炮视频】wan2.1_10个运镜lora 简单方便，让你图生视频充满灵性~_1931150479697620994.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR String To Combo`
+- `ImageResizeKJ`
+- `ImpactInt`
+- `ImpactStringSelector`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewImage`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `RH_Captioner`
+- `RH_LLMAPI_NODE`
+- `SimpleMath+`
+- `SplitStringByDelimiter`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddOneToAllPoseEmbeds`
-- `WanVideoAddOneToAllReferenceEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `CR Prompt Text` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `JWInteger` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 2/5 个有
-- `Qwen3_VQA` —— 2/5 个有
-- `WanVideoTorchCompileSettings` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `INTConstant` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `WanVideoContextOptions` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `JoinStringMulti` —— 2/4 个有
+- `JoinStrings` —— 2/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 14 | 8 - 20 | 4 | 57% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 6 | 4 | 29% |
+| 采样算法 | uni_pc | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 14，观测区间 8 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 6，4 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 uni_pc，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（2/4 个样本）：Steps较低可能导致细节不足

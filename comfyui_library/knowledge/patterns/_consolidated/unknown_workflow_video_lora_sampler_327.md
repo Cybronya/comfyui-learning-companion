@@ -1,87 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_327
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.905556
-common_nodes: [AudioCropProcessUTK, AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Float To Integer, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: moderate
+coverage: 0.963714
+common_nodes: [Apply Whisper, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, SoundFlow_TrimAudio, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy anythingIndexSwitch]
+problems: []
 missing: []
-members: [视频生成/图生视频/(官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_1961096934272471041.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人视频驱动视频工作流V1_1961096971735994369.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人骨骼驱动视频工作流V1_1961257200578707457.json, 视频生成/图生视频/WAN2.2 S2V -生万物林永健煮个蛋名场面_1962687799453462530.json, 视频生成/图生视频/WAN2.2 S2V -让图片会唱歌_1962685286419415042.json, 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1960895773552644098.json, 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1961341007348568066.json, 视频生成/图生视频/Wan2.2+S2V数字人视频驱动视频工作流_1965758281866219521.json]
+members: [图片生成/反推提示词/69-tszrvideo_2053019815362744322.json, 图片生成/反推提示词/99视频数字人spszr放大_2046871555069714433.json, 图片生成/反推提示词/数字人形象_2062166224678772738.json, 数字人/数字人/infinite视频单人对口型_2003664453008826370.json, 数字人/数字人/最强视频数字人对口型万相wan2.1+InfiniteTalk+VoxCPM TTS超长超自然_1960272591191748610.json, 数字人/数字人/视频数字人对口型_2017542922996031489.json, 视频生成/图生视频/【亲测好用】最强视频数字人对口型万相wan2.1Q8+InfiniteTalk+VoxCPM TTS超长超自然_1994362409961857025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_327
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_1961096934272471041.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人视频驱动视频工作流V1_1961096971735994369.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人骨骼驱动视频工作流V1_1961257200578707457.json、视频生成/图生视频/WAN2.2 S2V -生万物林永健煮个蛋名场面_1962687799453462530.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/69-tszrvideo_2053019815362744322.json、图片生成/反推提示词/99视频数字人spszr放大_2046871555069714433.json、图片生成/反推提示词/数字人形象_2062166224678772738.json、数字人/数字人/infinite视频单人对口型_2003664453008826370.json、数字人/数字人/最强视频数字人对口型万相wan2.1+InfiniteTalk+VoxCPM TTS超长超自然_1960272591191748610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioCropProcessUTK`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Float To Integer`
-- `KSampler`
-- `LoadAudio`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+全部 7 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `SimpleMath+`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_VideoCombine`
-- `WanSoundImageToVideo`
-- `wanBlockSwap`
+- `SoundFlow_TrimAudio`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 8/9 个有
-- `UNETLoader` —— 8/9 个有
-- `VHS_LoadVideo` —— 8/9 个有
-- `PreviewImage` —— 7/9 个有
-- `ContextWindowsManual` —— 5/9 个有
-- `ImageFromBatch+` —— 5/9 个有
-- `JWFloat` —— 5/9 个有
-- `JWInteger` —— 5/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `Display Any (rgthree)` —— 3/9 个有
-- `SaveLatent` —— 3/9 个有
-- `CR Prompt Text` —— 2/9 个有
-- `SaveImage` —— 2/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
-- `OpenposePreprocessor` —— 1/9 个有
-- `UnetLoaderGGUF` —— 1/9 个有
+- `Float to Int` —— 6/7 个有
+- `LoadAudio` —— 6/7 个有
+- `RH_GetAudioDuration` —— 6/7 个有
+- `VHS_LoadVideo` —— 6/7 个有
+- `String Literal` —— 4/7 个有
+- `VHS_VideoCombine` —— 4/7 个有
+- `VoxCPM_TTS` —— 4/7 个有
+- `CreateVideo` —— 3/7 个有
+- `ImageConcatMulti` —— 3/7 个有
+- `IndexTTS2_Emotion` —— 3/7 个有
+- `RTXVideoSuperResolution` —— 3/7 个有
+- `SaveVideo` —— 3/7 个有
+- `Audio Duration (mtb)` —— 1/7 个有
+- `LoadVideoFromUrl` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `VHS_LoadAudio` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 9 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | uni_pc | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

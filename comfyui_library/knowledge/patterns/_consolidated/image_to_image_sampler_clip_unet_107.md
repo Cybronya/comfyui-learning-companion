@@ -1,71 +1,78 @@
 ---
 name: image_to_image_sampler_clip_unet_107
 type: Image To Image
-frequency: 6
-level: moderate
-coverage: 0.9865
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.91
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/2倍加速！FLUX2 Klein 文生图 和 图生图 工作流（基于AI小王子加速优化）_2027362675549806594.json, 图片生成/文生图/2倍加速！FLUX2 Klein 文生图 和 图生图 工作流（基于AI小王子加速优化）_2038096758793838593.json, 图片生成/文生图/FLUX.2 Klein 超快速 文生图_图生图_多图编辑_2020865739288223746.json, 图片生成/文生图/Flux2图像编辑工作流_1993535727956852738.json, 图片生成/文生图/flux Klein 工作流合集 文生图 图生图_2044235028636377090.json, 图片生成/文生图/亚秒级生成4k图！RTX+Flux2 klein图片编辑&文生图_2037896191970643970.json]
+members: [图片生成/图生图/003.FLUX.2智能综合012.图生图洗图_2035264685058035713.json, 图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-006.flux-2-klein-多角度转换流_2026629969102774274.json, 图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-008.flux-2-klein-图生图洗图流_2026630101286264834.json, 图片生成/图生图/照片多角度转换_2039558607653572610.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_107
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/2倍加速！FLUX2 Klein 文生图 和 图生图 工作流（基于AI小王子加速优化）_2027362675549806594.json、图片生成/文生图/2倍加速！FLUX2 Klein 文生图 和 图生图 工作流（基于AI小王子加速优化）_2038096758793838593.json、图片生成/文生图/FLUX.2 Klein 超快速 文生图_图生图_多图编辑_2020865739288223746.json、图片生成/文生图/Flux2图像编辑工作流_1993535727956852738.json、图片生成/文生图/flux Klein 工作流合集 文生图 图生图_2044235028636377090.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合012.图生图洗图_2035264685058035713.json、图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-006.flux-2-klein-多角度转换流_2026629969102774274.json、图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-008.flux-2-klein-图生图洗图流_2026630101286264834.json、图片生成/图生图/照片多角度转换_2039558607653572610.json）
 
 - **类型**：Image To Image
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
 - `KSampler`
 - `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 5/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `ZML_PreviewImage` —— 3/6 个有
-- `FluxGuidance` —— 1/6 个有
-- `ImageScaleToTotalPixels` —— 1/6 个有
-- `RTXVideoSuperResolution` —— 1/6 个有
-- `UnetLoaderGGUF` —— 1/6 个有
-- `easy imageSize` —— 1/6 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `UnetLoaderGGUF` —— 3/4 个有
+- `ColorMatch` —— 2/4 个有
+- `EmptyFlux2LatentImage` —— 2/4 个有
+- `QwenMultiangleCameraNode` —— 2/4 个有
+- `ReferenceLatent` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `DownloadAndLoadFlorence2Model` —— 1/4 个有
+- `EasySizeSimpleImage` —— 1/4 个有
+- `Florence2Run` —— 1/4 个有
+- `RAMCleanup` —— 1/4 个有
+- `WujiCleaner` —— 1/4 个有
+- `图像缩放V2_孤海` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 5.5 | 4 - 20 | 6 | 28% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 6 | 6 - 6 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 0.8 | 0.6 - 1 | 4 | 75% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 19/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 5.5，观测区间 4 - 20，6 个样本，取值分散，一致性仅 28%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（19/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 0.8，观测区间 0.6 - 1，4 个样本
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

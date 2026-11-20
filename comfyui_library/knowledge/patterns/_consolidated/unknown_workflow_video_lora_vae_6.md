@@ -1,70 +1,74 @@
 ---
 name: unknown_workflow_video_lora_vae_6
 type: Unknown Workflow
-frequency: 8
+frequency: 3
 level: moderate
-coverage: 0.920375
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.775333
+common_nodes: [Any Switch (rgthree), Fast Groups Muter (rgthree), GetImagesFromBatchIndexed, GetVideoComponents, Int, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PreviewImage, SimpleMath+, VHS_LoadVideo, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoVAELoader, easy framesEditor, easy int, easy sam3ModelLoader, easy sam3VideoSegmentation, easy sam3Visualization, workflow>wanAnimate 采样, workflow>图像拼合, workflow>背景与主体遮罩, workflow>获取对象遮罩, workflow>角色图加序号, workflow>面部与姿势检测]
 problems: []
 missing: []
-members: [数字人/数字人/最强数字人InfiniteTalk_1981009825838546946.json, 数字人/数字人/空白工作流_1942131715920052225.json, 数字人/数字人/语音克隆、双人版wanvideo_infinitetalk_工作流_1960735901263564801.json, 视频生成/图生视频/Aiwood-infinitetalk双人对话_1957826997610446849.json, 视频生成/图生视频/Digital Avatars for E-commerce InfiniteTalk +数字人带货_2095704577696948225.json, 视频生成/图生视频/InfiniteTalk+IndexTTS+Kontext数字人带货_1958084173951094786.json, 视频生成/图生视频/MultiTalk+IndexTTS+Kontext数字人带货_1937830211084029954.json, 音频生成/音频生成/InfiniteTalk+数字人口播带货_1973224776535814145.json]
+members: [数字人/数字人/游戏影视多人二创 · 第二步多人物角色替换（已知问题已修复）_2002697580251344898.json, 视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换影视多人二创多角色替换V2_2010224538218401794.json, 视频生成/图生视频/影视二创系列 · 多角色主体替换_1999055940060147714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/最强数字人InfiniteTalk_1981009825838546946.json、数字人/数字人/空白工作流_1942131715920052225.json、数字人/数字人/语音克隆、双人版wanvideo_infinitetalk_工作流_1960735901263564801.json、视频生成/图生视频/Aiwood-infinitetalk双人对话_1957826997610446849.json、视频生成/图生视频/Digital Avatars for E-commerce InfiniteTalk +数字人带货_2095704577696948225.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/游戏影视多人二创 · 第二步多人物角色替换（已知问题已修复）_2002697580251344898.json、视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换影视多人二创多角色替换V2_2010224538218401794.json、视频生成/图生视频/影视二创系列 · 多角色主体替换_1999055940060147714.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Fast Groups Muter (rgthree)`
+- `GetImagesFromBatchIndexed`
+- `GetVideoComponents`
+- `Int`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `VHS_VideoCombine`
+- `OnnxDetectionModelLoader`
+- `PreviewImage`
+- `SimpleMath+`
+- `VHS_LoadVideo`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy framesEditor`
+- `easy int`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
+- `easy sam3Visualization`
+- `workflow>wanAnimate 采样`
+- `workflow>图像拼合`
+- `workflow>背景与主体遮罩`
+- `workflow>获取对象遮罩`
+- `workflow>角色图加序号`
+- `workflow>面部与姿势检测`
 
 **可变部分**（部分 workflow 才有）：
-- `MultiTalkWav2VecEmbeds` —— 7/8 个有
-- `PreviewAudio` —— 7/8 个有
-- `WanVideoSampler` —— 7/8 个有
-- `INTConstant` —— 6/8 个有
-- `WanVideoTorchCompileSettings` —— 6/8 个有
-- `IndexTTSRun` —— 5/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 5/8 个有
-- `String Literal` —— 5/8 个有
-- `WanVideoImageToVideoMultiTalk` —— 5/8 个有
-- `ImageConcanate` —— 4/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
-- `PreviewImage` —— 4/8 个有
-- `RH_ComfyFluxKontext` —— 4/8 个有
-- `RH_Translator` —— 4/8 个有
-- `SaveImage` —— 4/8 个有
-- `WanVideoImageToVideoEncode` —— 2/8 个有
-- `GetNode` —— 1/8 个有
-- `IndexTTSNode` —— 1/8 个有
-- `MaskPreview+` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `SeparateMasks` —— 1/8 个有
-- `SetNode` —— 1/8 个有
-- `Text` —— 1/8 个有
+- `CreateVideo` —— 2/3 个有
+- `LoadVideo` —— 2/3 个有
+- `MuyeLoadImage` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `SaveVideo` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `WanVideoSetBlockSwap` —— 2/3 个有
+- `WanVideoSetLoRAs` —— 2/3 个有
+- `easy blocker` —— 2/3 个有
+- `easy indexAnything` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `LoadVideoWithFilename` —— 1/3 个有
+- `PoseDetectionOneToAllAnimation` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
+- `SaveVideoRGBA` —— 1/3 个有
+- `WanVideoLoraSelect` —— 1/3 个有
 
 ## 典型参数
 

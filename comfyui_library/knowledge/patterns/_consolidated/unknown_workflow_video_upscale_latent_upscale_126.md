@@ -3,22 +3,22 @@ name: unknown_workflow_video_upscale_latent_upscale_126
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.621
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, ManualSigmas, PreviewImage, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.746667
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RegexExtract, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy positive, easy promptLine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTXv2.3音频加载+图片加载=生成完美一致性数字人_2031753479793942530.json, 视频生成/图生视频/video_ltx2_3_i2v_kijai_three_stage_2039715377143353346.json, 视频生成/图生视频/video_ltx2_3_i2v_kijai_three_stage_2041087454286979073.json]
+members: [视频生成/文生视频/LTX2.3全栈式短剧生成V10（lora版）_2043329392163688450.json, 视频生成/文生视频/LTX2.3全栈式短视频生成V9（ID-lora单人版）_2044031772660342786.json, 视频生成/文生视频/LTX2.3全栈式短视频生成V9（单人Lora版）_2041880704421732354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_126
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTXv2.3音频加载+图片加载=生成完美一致性数字人_2031753479793942530.json、视频生成/图生视频/video_ltx2_3_i2v_kijai_three_stage_2039715377143353346.json、视频生成/图生视频/video_ltx2_3_i2v_kijai_three_stage_2041087454286979073.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTX2.3全栈式短剧生成V10（lora版）_2043329392163688450.json、视频生成/文生视频/LTX2.3全栈式短视频生成V9（ID-lora单人版）_2044031772660342786.json、视频生成/文生视频/LTX2.3全栈式短视频生成V9（单人Lora版）_2041880704421732354.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
@@ -29,58 +29,56 @@ source: knowledge_consolidation
 - `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
 - `GetNode`
-- `ImageResizeKJv2`
+- `INTConstant`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
+- `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PreviewImage`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `RegexExtract`
 - `SamplerCustomAdvanced`
 - `SetNode`
 - `UNETLoader`
 - `VAEDecodeTiled`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy batchAnything`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy positive`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVAudioVAEDecode` —— 2/3 个有
-- `LTXVEmptyLatentAudio` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `LoraLoader` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `ResizeImagesByLongerEdge` —— 2/3 个有
-- `CM_FloatToInt` —— 1/3 个有
-- `LTX2_NAG` —— 1/3 个有
-- `LTXVAudioVAEEncode` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `PrimitiveBoolean` —— 1/3 个有
-- `SDVN Load Image Url` —— 1/3 个有
-- `SetLatentNoiseMask` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `SolidMask` —— 1/3 个有
-- `String` —— 1/3 个有
-- `VHS_LoadAudioUpload` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `LongTextToList` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `TrimVideoLatent` —— 2/3 个有
+- `easy indexAnything` —— 2/3 个有
+- `LTXVReferenceAudio` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `easy ifElse` —— 1/3 个有
+- `easy mathString` —— 1/3 个有
+- `easy promptList` —— 1/3 个有
+- `easy promptReplace` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -88,7 +86,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

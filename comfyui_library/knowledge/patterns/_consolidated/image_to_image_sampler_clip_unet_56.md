@@ -1,33 +1,31 @@
 ---
 name: image_to_image_sampler_clip_unet_56
 type: Image To Image
-frequency: 9
+frequency: 7
 level: moderate
-coverage: 0.907556
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.892429
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z-image 平替Flux2 图片反推_1994616402810114049.json, 图片生成/图生图/Z-image-turbo 图生图 洗图 ai变真人_1982650838457958402.json, 图片生成/图生图/Z-image自动洗图-图生图image to image_1994249998170865666.json, 图片生成/图生图/z-image【超强图片编辑】图像编辑_1994750669573791745.json, 图片生成/图生图/z-image图生图-洗图工作流_1994593121038180354.json, 图片生成/图生图/洗图+高清+Z-image_2008362271537373186.json, 图片生成/图生图/（换脸版-lora支持）Red-Z-image + Qwen3自动二阶段真实感洗图2K版_1998250117671059458.json, 图片生成/图生图/（换脸版-lora支持）Red-Z-image + Qwen3自动二阶段真实感洗图2K版_2003338801550327809.json, 图片生成/图生图/（自用）成人摄影Z-image + Qwen3自动洗图2K版_1993954685472227329.json]
+members: [图片生成/图生图/FLUX2-Klein单图、多图编辑工作流_2068602290797375490.json, 图片生成/图生图/FLUX板块：FLUX.2-Klein图洗图工作流_2049795289871073281.json, 图片生成/图生图/Flux 2 Klein 9B Edit_2063304186351149058.json, 图片生成/图生图/Flux-2 Klein 双图编辑_2093268073829724161.json, 图片生成/图生图/Flux-2-klein-多图精准控制编辑工作流-万能贴_2016050666283732994.json, 图片生成/图生图/Flux2 Klein_2055322613999783938.json, 图片生成/图生图/flux-2klein单图_多图编辑_2038533995062890497.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_56
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Z-image 平替Flux2 图片反推_1994616402810114049.json、图片生成/图生图/Z-image-turbo 图生图 洗图 ai变真人_1982650838457958402.json、图片生成/图生图/Z-image自动洗图-图生图image to image_1994249998170865666.json、图片生成/图生图/z-image【超强图片编辑】图像编辑_1994750669573791745.json、图片生成/图生图/z-image图生图-洗图工作流_1994593121038180354.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/FLUX2-Klein单图、多图编辑工作流_2068602290797375490.json、图片生成/图生图/FLUX板块：FLUX.2-Klein图洗图工作流_2049795289871073281.json、图片生成/图生图/Flux 2 Klein 9B Edit_2063304186351149058.json、图片生成/图生图/Flux-2 Klein 双图编辑_2093268073829724161.json、图片生成/图生图/Flux-2-klein-多图精准控制编辑工作流-万能贴_2016050666283732994.json…）
 
 - **类型**：Image To Image
-- **样本数**：9
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `SaveImage`
 - `UNETLoader`
@@ -36,47 +34,41 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 8/9 个有
-- `Qwen3_VQA` —— 8/9 个有
-- `easy showAnything` —— 8/9 个有
-- `Any To Any` —— 5/9 个有
-- `VHS_VideoCombine` —— 5/9 个有
-- `Float` —— 4/9 个有
-- `ImageConcanate` —— 4/9 个有
-- `VHS_SelectFilename` —— 4/9 个有
-- `CR Prompt Text` —— 3/9 个有
-- `LoraLoaderModelOnly` —— 2/9 个有
-- `Text Concatenate` —— 2/9 个有
-- `DuckHideNode` —— 1/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `Image Comparer (rgthree)` —— 1/9 个有
-- `ImageConcatMulti` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `PrimitiveInt` —— 1/9 个有
-- `TT_img_enc` —— 1/9 个有
-- `TT_img_enc_v2` —— 1/9 个有
+- `ReferenceLatent` —— 6/7 个有
+- `ImageScaleToTotalPixels` —— 5/7 个有
+- `EmptyFlux2LatentImage` —— 4/7 个有
+- `Image Comparer (rgthree)` —— 4/7 个有
+- `ConditioningZeroOut` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `GetImageSize` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `BiRefNetRMBG` —— 1/7 个有
+- `FastCanvas` —— 1/7 个有
+- `FastCanvasTool` —— 1/7 个有
+- `ImagePadForOutpaint` —— 1/7 个有
+- `ImageScaleToMaxDimension` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 9 | 94% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2 | 9 | 72% |
-| 采样算法 | euler | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 78% |
-| 重绘幅度 | 1 | 0.3 - 1 | 9 | 76% |
+| 采样步数 | 8 | 4 - 8 | 7 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 0.3 - 1 | 7 | 73% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，9 个样本，取值集中（一致性 94%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，9 个样本
-- 采样算法 最常用 euler，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 78%
-- 重绘幅度 中位数 1，观测区间 0.3 - 1，9 个样本
+- 采样步数 中位数 8，观测区间 4 - 8，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.3 - 1，7 个样本
+- 高发问题（9/7 个样本）：Steps较低可能导致细节不足

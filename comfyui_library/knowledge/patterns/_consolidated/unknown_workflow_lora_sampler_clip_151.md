@@ -1,71 +1,70 @@
 ---
 name: unknown_workflow_lora_sampler_clip_151
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.8088
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.951
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, ColorCorrect, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Image Comparer (rgthree), ImpactInt, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MuyeTextEditOutput, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAELoader, 取色器_孤海]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/游戏_动漫角色设计（画风参考文生图）二次元可用_2055120295245172737.json, 图片生成/文生图/图1给姿势，图2给脸｜Flux Klein 双图融合工作流【全节点注释】_2070728938242011138.json, 数字人/数字人/Klein9B姿态姿势变换_2071404584735698945.json, 数字人/数字人/Klein9B深度+线稿+法线+硬边缘控制图片编辑_2071404639500722177.json, 数字人/数字人/发型替换  - Klein_2083890877629558785.json]
+members: [图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2086642122295439361.json, 图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2090271814491660290.json, 图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731406929940481.json, 图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731592951521282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_151
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/游戏_动漫角色设计（画风参考文生图）二次元可用_2055120295245172737.json、图片生成/文生图/图1给姿势，图2给脸｜Flux Klein 双图融合工作流【全节点注释】_2070728938242011138.json、数字人/数字人/Klein9B姿态姿势变换_2071404584735698945.json、数字人/数字人/Klein9B深度+线稿+法线+硬边缘控制图片编辑_2071404639500722177.json、数字人/数字人/发型替换  - Klein_2083890877629558785.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2086642122295439361.json、图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2090271814491660290.json、图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731406929940481.json、图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731592951521282.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Flux2Scheduler`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
+- `CR Text Replace`
+- `ColorCorrect`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Image Comparer (rgthree)`
+- `ImpactInt`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
+- `MuyeTextEditOutput`
 - `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/5 个有
-- `EmptyFlux2LatentImage` —— 4/5 个有
-- `ImageConcatMulti` —— 4/5 个有
-- `AIO_Preprocessor` —— 3/5 个有
-- `CR Text` —— 3/5 个有
-- `GetImageSize` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `CR Text Concatenate` —— 2/5 个有
-- `GetImageSize+` —— 1/5 个有
-- `INTConstant` —— 1/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
-- `llama_cpp_instruct_adv` —— 1/5 个有
-- `llama_cpp_model_loader` —— 1/5 个有
+- `取色器_孤海`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler_ancestral | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

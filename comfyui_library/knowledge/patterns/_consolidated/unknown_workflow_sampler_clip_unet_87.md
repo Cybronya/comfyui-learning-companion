@@ -1,59 +1,66 @@
 ---
 name: unknown_workflow_sampler_clip_unet_87
 type: Unknown Workflow
-frequency: 13
-level: weak
-coverage: 0.975385
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
+frequency: 11
+level: moderate
+coverage: 0.945091
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1956141417343143938.json, 图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194.json, 图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1958426008351358977.json, 图片生成/文生图/Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321.json, 图片生成/文生图/Wan2.2：文生图·2K原生高清，定义视觉新标准！图像创作_人像摄影_写实摄影_国风美女_1950418164367671297.json, 视频生成/文生视频/Wan2.2-T2V-250928-dyno-动效丝滑+速度提升-强烈推荐_1975738907180576770.json, 视频生成/文生视频/Wan2.2_文生视频_4步极速版_ComfyUI官方流_2017117561548185601.json, 视频生成/文生视频/Wan2.2_文生视频_4步极速版_ComfyUI官方流_2044033029278011394.json, 视频生成/文生视频/Wan2.2文生视频_1985711544086474753.json, 视频生成/文生视频/Wan2.2文生视频_1997925759635324929.json, 视频生成/文生视频/Wan2.2文生视频_2007645581098881026.json, 视频生成/文生视频/Wan2.2文生视频工作流_1963477743868547073.json, 视频生成/文生视频/Wan2.2特效 盒子装世界 Wan2.2 Jason版_1973586919907004418.json]
+members: [comfyui-workflow-templates-json/image_omnigen2_image_edit.json, 图片生成/图生图/AI脑洞狮--Flux-Klein图像编辑，实现人物换装、换场景、扩图等应用_2031388345238032386.json, 图片生成/图生图/Ai产品精修渲染放大V4.1_2043861761803165698.json, 图片生成/图生图/Ai产品精修渲染放大V4.1_2097148886946238466.json, 图片生成/图生图/Ai产品精修渲染放大V4.1_2097243679089053697.json, 图片生成/图生图/CG风格转绘极简工作流_2022333968351236098.json, 图片生成/图生图/F.2Klein9b产品渲染精修_2058016361133207554.json, 图片生成/图生图/FLUX.2 Klein 9B Distilled 一键数据集创建_2051105222591819778.json, 图片生成/图生图/Flux2 Klein-单图编辑：一致性保持_2014169468368330753.json, 图片生成/图生图/Flux2-Klein9b 万能提取服装 服装3D展示 精修褶皱_2032609919714725889.json, 图片生成/图生图/klein高一致性高清修复_2030545132830859266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_87
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1956141417343143938.json、图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194.json、图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1958426008351358977.json、图片生成/文生图/Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321.json、图片生成/文生图/Wan2.2：文生图·2K原生高清，定义视觉新标准！图像创作_人像摄影_写实摄影_国风美女_1950418164367671297.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（comfyui-workflow-templates-json/image_omnigen2_image_edit.json、图片生成/图生图/AI脑洞狮--Flux-Klein图像编辑，实现人物换装、换场景、扩图等应用_2031388345238032386.json、图片生成/图生图/Ai产品精修渲染放大V4.1_2043861761803165698.json、图片生成/图生图/Ai产品精修渲染放大V4.1_2097148886946238466.json、图片生成/图生图/Ai产品精修渲染放大V4.1_2097243679089053697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `ModelSamplingSD3`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PathchSageAttentionKJ` —— 10/13 个有
-- `LoraLoaderModelOnly` —— 9/13 个有
-- `VHS_VideoCombine` —— 8/13 个有
-- `Text` —— 6/13 个有
-- `easy int` —— 6/13 个有
-- `GetImageRangeFromBatch` —— 5/13 个有
-- `SaveImage` —— 5/13 个有
-- `Wan_video_prompt_generator` —— 5/13 个有
-- `CFGZeroStar` —— 1/13 个有
-- `WanVideoNAG` —— 1/13 个有
-- `easy cleanGpuUsed` —— 1/13 个有
+- `CFGGuider` —— 10/11 个有
+- `EmptyFlux2LatentImage` —— 10/11 个有
+- `Flux2Scheduler` —— 10/11 个有
+- `GetImageSize` —— 10/11 个有
+- `ConditioningZeroOut` —— 9/11 个有
+- `Image Comparer (rgthree)` —— 7/11 个有
+- `ImageScaleToTotalPixels` —— 7/11 个有
+- `LoraLoaderModelOnly` —— 7/11 个有
+- `ConstrainImage|pysssss` —— 4/11 个有
+- `CR Prompt List` —— 2/11 个有
+- `ColorMatch` —— 2/11 个有
+- `BasicScheduler` —— 1/11 个有
+- `DualCFGGuider` —— 1/11 个有
+- `EmptySD3LatentImage` —— 1/11 个有
+- `Fast Groups Muter (rgthree)` —— 1/11 个有
+- `Flux2KleinRefLatentController` —— 1/11 个有
+- `Flux2KleinTextRefBalance` —— 1/11 个有
+- `GetImageSize+` —— 1/11 个有
+- `ImageSharpen` —— 1/11 个有
+- `PreviewImage` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 13 | 69% |
-| Prompt 约束强度(CFG) | 14 | 6 - 20 | 13 | 61% |
-| 采样算法 | 3.5 | 1 - 3.5 | 13 | 58% |
-| 调度器 | euler | - | 13 | 92% |
-| 重绘幅度 | simple | - | 13 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,9 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，13 个样本，一致性 69%
-- Prompt 约束强度(CFG) 中位数 14，观测区间 6 - 20，13 个样本
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，13 个样本
-- 调度器 最常用 euler，13 个样本，一致性 92%
-- 重绘幅度 最常用 simple，13 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,61 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_206
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.88375
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.798571
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/电商产品场景图生成_2065142735723646978.json, 图片生成/文生图/节点系列05-Seed (rgthree)_2034898646168248322.json, 平台全量/单图编辑 + 1张参考图（替换产品、服装、材质、背景）Flux2 Klein_2044764770087215105.json, 平台全量/单图编辑 + 2 张参考图（替换产品、服装、材质、背景）Flux2 Klein_2044767420467912705.json, 平台全量/单图编辑+ 局部重绘｜Flux2 Klein_2044714257614381058.json, 平台全量/单图编辑（去水印、产品精修、换材质、局部修改、人物美颜、替换背景）Flux2 Klein_2044763056986656770.json, 平台全量/图片-局部重绘_2022511882833235970.json, 平台全量/扩图 Flux2 Klein_2044771728571768833.json]
+members: [图片生成/文生图/ideogram4_2083390180580483074.json, 图片生成/文生图/ideogram4_光学眼镜模特(+提示词优化+KJ)_2072942885963657217.json, 图片生成/文生图/ideogram4摇卡_光学眼镜模特(+提示词优化)_2072938272011153409.json, 图片生成/文生图/设计师专用模型Ideogram4美学大师文生图_2064893847733362689.json, 图片生成/文生图/（贞贞-图图版）Ideogram4智能JSON格式简易版文生图（可选质量模式）V2_2067794610629472257.json, 图片生成/文生图/（贞贞版-新训练23500）Ideogram4智能JSON格式简易版文生图（可选质量模式）V2_2068037566401703938.json, 图片生成/文生图/（贞贞版）Ideogram4智能JSON格式简易版文生图（可选质量模式）V2_2067263113581391873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_206
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/电商产品场景图生成_2065142735723646978.json、图片生成/文生图/节点系列05-Seed (rgthree)_2034898646168248322.json、平台全量/单图编辑 + 1张参考图（替换产品、服装、材质、背景）Flux2 Klein_2044764770087215105.json、平台全量/单图编辑 + 2 张参考图（替换产品、服装、材质、背景）Flux2 Klein_2044767420467912705.json、平台全量/单图编辑+ 局部重绘｜Flux2 Klein_2044714257614381058.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/ideogram4_2083390180580483074.json、图片生成/文生图/ideogram4_光学眼镜模特(+提示词优化+KJ)_2072942885963657217.json、图片生成/文生图/ideogram4摇卡_光学眼镜模特(+提示词优化)_2072938272011153409.json、图片生成/文生图/设计师专用模型Ideogram4美学大师文生图_2064893847733362689.json、图片生成/文生图/（贞贞-图图版）Ideogram4智能JSON格式简易版文生图（可选质量模式）V2_2067794610629472257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
+全部 7 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyNumberConvert`
 - `ConditioningZeroOut`
-- `Flux2Scheduler`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
-- `EmptyFlux2LatentImage` —— 5/8 个有
-- `DifferentialDiffusion` —— 3/8 个有
-- `InpaintModelConditioning` —— 3/8 个有
-- `PreviewImage` —— 3/8 个有
-- `GetImageSize` —— 2/8 个有
-- `AddLabel` —— 1/8 个有
-- `ImagePadForOutpaint` —— 1/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `ImageScaleToTotalPixels` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `MaskFillHoles` —— 1/8 个有
-- `Qwen2.5` —— 1/8 个有
-- `Seed (rgthree)` —— 1/8 个有
-- `Text` —— 1/8 个有
-- `easy convertAnything` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `PreviewAny` —— 5/7 个有
+- `ResolutionSelector` —— 5/7 个有
+- `ComfyMathExpression` —— 4/7 个有
+- `Ideogram4PromptBuilderKJ` —— 4/7 个有
+- `PrimitiveInt` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `RH_LLMAPI_Pro_Node` —— 4/7 个有
+- `easy anythingIndexSwitch` —— 4/7 个有
+- `easy showAnything` —— 4/7 个有
+- `CR Prompt Text` —— 3/7 个有
+- `CustomCombo` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `AspectRatio` —— 2/7 个有
+- `CR Text` —— 2/7 个有
+- `PreviewTextNode` —— 2/7 个有
+- `RHLLMChatNode` —— 2/7 个有
+- `GetNode` —— 1/7 个有
+- `MathExpression|pysssss` —— 1/7 个有
+- `MuyeTextEditOutput` —— 1/7 个有
+- `SetNode` —— 1/7 个有
 
 ## 典型参数
 

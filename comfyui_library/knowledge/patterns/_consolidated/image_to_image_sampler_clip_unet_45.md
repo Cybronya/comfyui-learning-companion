@@ -1,67 +1,67 @@
 ---
 name: image_to_image_sampler_clip_unet_45
 type: Image To Image
-frequency: 10
+frequency: 8
 level: strong
-coverage: 0.925
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, ImageScaleDownToSize, KSampler, LoadImage, SaveImage, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.778375
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, ImageStitch, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX-krea + LoRA 洗图｜高质量图像_1951115644588728322.json, 图片生成/图生图/FLUX-krea最新模型图生图更真实_1951086054793224194.json, 图片生成/图生图/Flux.1 Krea Dev图生图【逼真质感 无AI味】_1951177506269409281.json, 图片生成/图生图/Flux.1 Krea Dev：图生图革新，独特风格再塑！Krea去除AI感_图生图洗图_1951069893238173698.json, 图片生成/图生图/Flux.1-Krea-Dev图生图-无AI味超细节_1951506881573498882.json, 图片生成/图生图/Flux.1-Krea-Dev图生图-无AI味逼真质感_1950940521936125954.json, 图片生成/图生图/Flux.1-Krea-Dev图生图｜无 AI 感洗图_1951117735654793217.json, 图片生成/图生图/Flux图生图-电影感无AI味_1991140862363041793.json, 图片生成/图生图/无AI特征逼真质感生图Flux.1-Krea_1991133381247238146.json, 图片生成/文生图/FLUX-krea最新模型图生图（超级真实去AI味+自动提示词+批量）_1951085916716736514.json]
+members: [图片生成/图生图/KonText一句话P图！提示词改图=开源版=艾橘溪_1928485579321909249.json, 图片生成/图生图/KonText一句话改图，技术有限，创意无限！_1941126778633273346.json, 图片生成/图生图/Kontext Dev 人物妆容修改_1942405018597142529.json, 图片生成/图生图/Kontext Dev 基础工作流ZGL_1943863852666617858.json, 图片生成/图生图/Kontext Dev 模型｜多人场景动作融合_1938995027278548994.json, 图片生成/图生图/flux_1_kontex终于等来了，模型基础效果_1938275066096582657.json, 图片生成/图生图/flux_kontext_dev_单图-提示词更听话_1938613725001605122.json, 图片生成/图生图/【非API】 Kontext Dev 模型｜多图融合_1938484652631851009.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_45
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FLUX-krea + LoRA 洗图｜高质量图像_1951115644588728322.json、图片生成/图生图/FLUX-krea最新模型图生图更真实_1951086054793224194.json、图片生成/图生图/Flux.1 Krea Dev图生图【逼真质感 无AI味】_1951177506269409281.json、图片生成/图生图/Flux.1 Krea Dev：图生图革新，独特风格再塑！Krea去除AI感_图生图洗图_1951069893238173698.json、图片生成/图生图/Flux.1-Krea-Dev图生图-无AI味超细节_1951506881573498882.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/KonText一句话P图！提示词改图=开源版=艾橘溪_1928485579321909249.json、图片生成/图生图/KonText一句话改图，技术有限，创意无限！_1941126778633273346.json、图片生成/图生图/Kontext Dev 人物妆容修改_1942405018597142529.json、图片生成/图生图/Kontext Dev 基础工作流ZGL_1943863852666617858.json、图片生成/图生图/Kontext Dev 模型｜多人场景动作融合_1938995027278548994.json…）
 
 - **类型**：Image To Image
-- **样本数**：10
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
-- `ImageScaleDownToSize`
+- `FluxGuidance`
+- `ImageStitch`
 - `KSampler`
 - `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
-- `Text Concatenate`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 9/10 个有
-- `RepeatLatentBatch` —— 9/10 个有
-- `easy showAnything` —— 7/10 个有
-- `ImageStitch` —— 6/10 个有
-- `ShowText|pysssss` —— 3/10 个有
-- `LoraLoaderModelOnly` —— 2/10 个有
-- `RH_LLMAPI_NODE` —— 2/10 个有
-- `RH_Translator` —— 2/10 个有
-- `Florence2ModelLoader` —— 1/10 个有
-- `Florence2Run` —— 1/10 个有
-- `NunchakuFluxDiTLoader` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `PrimitiveFloat` —— 1/10 个有
-- `easy imageConcat` —— 1/10 个有
+- `EmptySD3LatentImage` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `FluxKontextImageScale` —— 6/8 个有
+- `RH_Translator` —— 4/8 个有
+- `LoadImageOutput` —— 3/8 个有
+- `ImageResizeKJv2` —— 2/8 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/8 个有
+- `LayerMask: LoadBiRefNetModel` —— 2/8 个有
+- `ShowText|pysssss` —— 2/8 个有
+- `Kontext Inpainting Conditioning` —— 1/8 个有
+- `LayerUtility: ImageScaleRestore V2` —— 1/8 个有
+- `LayerUtility: PurgeVRAM` —— 1/8 个有
+- `RH_LLMAPI_NODE` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 10 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 0.95 | 0.6 - 1 | 10 | 85% |
+| 采样步数 | 20 | 20 - 30 | 8 | 81% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
@@ -69,8 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 0.95，观测区间 0.6 - 1，10 个样本，取值集中（一致性 85%）
+- 采样步数 中位数 20，观测区间 20 - 30，8 个样本，取值集中（一致性 81%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

@@ -1,61 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_496
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.673833
-common_nodes: [GetNode, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+frequency: 5
+level: strong
+coverage: 0.922
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageFromBatch+, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
 problems: []
 missing: []
-members: [平台全量/一键视频转绘_1983554543327846402.json, 平台全量/视频一键转绘_1980552466741809153.json, 平台全量/视频转换视频风格转换ditto视频风格转换加速版（10s以上）_1980568740637134849.json, 平台全量/视频转绘-转真人_1997956555716878338.json, 平台全量/视频转绘视频风格转换ditto视频风格转换加速版（10s以上）_1980558222274809857.json, 平台全量/视频风格转绘加速版（10s以上）_2001670639868080129.json]
+members: [视频生成/图生视频/Wan2.2 Vace图生视频加速版V1_1950024322967584770.json, 视频生成/图生视频/Wan2.2 Vace图生视频加速版_1950473499028738049.json, 视频生成/图生视频/Wan2.2 Vace首尾帧_1950473543098290177.json, 视频生成/图生视频/Wan2.2 Vace首尾帧女孩变动漫_1950544723431903234.json, 视频生成/图生视频/Wan2.2 Vace首尾帧实验版V1_1950053355886436353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_496
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/一键视频转绘_1983554543327846402.json、平台全量/视频一键转绘_1980552466741809153.json、平台全量/视频转换视频风格转换ditto视频风格转换加速版（10s以上）_1980568740637134849.json、平台全量/视频转绘-转真人_1997956555716878338.json、平台全量/视频转绘视频风格转换ditto视频风格转换加速版（10s以上）_1980558222274809857.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Vace图生视频加速版V1_1950024322967584770.json、视频生成/图生视频/Wan2.2 Vace图生视频加速版_1950473499028738049.json、视频生成/图生视频/Wan2.2 Vace首尾帧_1950473543098290177.json、视频生成/图生视频/Wan2.2 Vace首尾帧女孩变动漫_1950544723431903234.json、视频生成/图生视频/Wan2.2 Vace首尾帧实验版V1_1950053355886436353.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `GetNode`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
-- `VHS_LoadVideo`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ImageFromBatch+`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `TrimVideoLatent`
+- `UnetLoaderGGUF`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 5/6 个有
-- `WanVideoSLG` —— 5/6 个有
-- `WanVideoTorchCompileSettings` —— 5/6 个有
-- `ImageConcanate` —— 3/6 个有
-- `ImageResizeKJv2` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `MathExpression|pysssss` —— 3/6 个有
-- `PrimitiveStringMultiline` —— 3/6 个有
-- `CLIPTextEncode` —— 2/6 个有
-- `MathExpression_UTK` —— 2/6 个有
-- `ImageStitch` —— 1/6 个有
-- `JWStringMultiline` —— 1/6 个有
-- `VHS_VideoInfo` —— 1/6 个有
+- `JWInteger` —— 4/5 个有
+- `ImageBatch` —— 3/5 个有
+- `ImageResizeKJv2` —— 3/5 个有
+- `ImageToMask` —— 3/5 个有
+- `MaskToImage` —— 3/5 个有
+- `MathExpression|pysssss` —— 3/5 个有
+- `RepeatImageBatch` —— 3/5 个有
+- `SolidMask` —— 3/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `ImageConcanate` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `SDVN Image Repeat` —— 2/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 5 | 60% |
+| Prompt 约束强度(CFG) | 10 | 8 - 10 | 5 | 89% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | lcm | - | 5 | 100% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
@@ -63,4 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，5 个样本，一致性 60%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 8 - 10，5 个样本，取值集中（一致性 89%）
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，5 个样本，一致性 100%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%

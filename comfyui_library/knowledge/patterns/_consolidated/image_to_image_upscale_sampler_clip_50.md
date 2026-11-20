@@ -1,93 +1,88 @@
 ---
 name: image_to_image_upscale_sampler_clip_50
 type: Image To Image
-frequency: 3
-level: strong
-coverage: 0.907667
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Florence2ModelLoader, Florence2Run, Image Comparer (rgthree), ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, Latent Noise Injection, LoadImage, ModelSamplingAuraFlow, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 2
+level: weak
+coverage: 0.85
+common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, DF_Integer, Fast Groups Bypasser (rgthree), Get resolution [Crystools], Image Comparer (rgthree), ImageCASharpening+, ImageFromBatch, ImageResize+, ImageScaleBy, ImageUpscaleWithModel, ImpactMakeAnyList, ImpactMinMax, Int, JWFloat, KSampler, Label (rgthree), Latent Noise Injection, LayerUtility: PurgeVRAM V2, LoadImage, PreviewImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UltimateSDUpscaleNoUpscale, Upscale Model Loader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageSize, easy int]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen-Image洗图放大全自动BF16版本_1988252998306545665.json, 图片生成/文生图/Qwen-Image洗图放大全自动Nunchaku版本_1988205105407246337.json, 图片生成/文生图/Qwen-Image超清放大_1988253883254358017.json]
+members: [数字人/数字人/增强真实感增强质感去ai感2.0_2013168387253342210.json, 数字人/数字人/增强真实感增强质感去ai感2.0_2027208631271301121.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_sampler_clip_50
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen-Image洗图放大全自动BF16版本_1988252998306545665.json、图片生成/文生图/Qwen-Image洗图放大全自动Nunchaku版本_1988205105407246337.json、图片生成/文生图/Qwen-Image超清放大_1988253883254358017.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/增强真实感增强质感去ai感2.0_2013168387253342210.json、数字人/数字人/增强真实感增强质感去ai感2.0_2027208631271301121.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGNorm`
+全部 2 个 workflow 都包含：
+- `AILab_QwenVL`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Florence2ModelLoader`
-- `Florence2Run`
+- `DF_Integer`
+- `Fast Groups Bypasser (rgthree)`
+- `Get resolution [Crystools]`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `ImageCASharpening+`
+- `ImageFromBatch`
+- `ImageResize+`
+- `ImageScaleBy`
 - `ImageUpscaleWithModel`
+- `ImpactMakeAnyList`
+- `ImpactMinMax`
+- `Int`
+- `JWFloat`
 - `KSampler`
+- `Label (rgthree)`
 - `Latent Noise Injection`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
+- `SeedVR2`
+- `SimpleMath+`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
-- `UpscaleModelLoader`
-- `VAEDecodeTiled`
+- `UNETLoader`
+- `UltimateSDUpscaleNoUpscale`
+- `Upscale Model Loader`
+- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-
-**可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 2/3 个有
-- `ControlNetApplyAdvanced` —— 2/3 个有
-- `ControlNetLoader` —— 2/3 个有
-- `EmptySD3LatentImage` —— 2/3 个有
-- `ImageInvert` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `LoadLotusModel` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `LotusSampler` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `VAEDecode` —— 2/3 个有
-- `NunchakuQwenImageDiTLoader` —— 1/3 个有
-- `NunchakuQwenImageLoraStack` —— 1/3 个有
+- `easy cleanGpuUsed`
+- `easy imageSize`
+- `easy int`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1.1 | 1.1 - 1.1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 0.35 | 0.35 - 0.35 | 3 | 100% |
-| ControlNet 权重 | 0.6 | - | 2 | 100% |
+| 采样步数 | 2 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | er_sde | - | 2 | 100% |
+| 调度器 | sgm_uniform | - | 2 | 100% |
+| 重绘幅度 | 0.15 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 1/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.1，观测区间 1.1 - 1.1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 0.35，观测区间 0.35 - 0.35，3 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 0.6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（5/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，2 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.15，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,64 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_379
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.9085
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, H3ExactRecover, H3InjectSchedule, H3JerkHeatmap, H3JerkOracle, H3TimeSmear, H3V2VInit, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text Multiline, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAELoader, VHS_VideoCombine]
+coverage: 0.747571
+common_nodes: [CR Text, GetNode, JWInteger, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Primitive integer [Crystools], SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json, 视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json, 视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json, 视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json, 视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088568398233038849.json, 视频生成/文生视频/Minimax H3开源版 拖影强化版文生视频工作流_2088607540094521346.json, 视频生成/文生视频/Minimax H3拖影强化文生视频工作流_2088291098631434242.json]
+members: [视频生成/文生视频/wan2.2文生视频V3.0（4步加速lora+kj版本）_1954108894912114689.json, 视频生成/文生视频/wan2.2文生视频超级加速——飞翔荷兰人_1971154804091326465.json, 视频生成/文生视频/wan2.2文生视频超级加速（4步加速lora+kj版本）_2020056477867708417.json, 视频生成/文生视频/【2倍提速】Wan2.2+14B Seko 4步加速文生视频v1_1954103661171503106.json, 视频生成/文生视频/【KJ版】Wan2.2 14B加速文生视频-智能扩写提示词_1950844539659550722.json, 视频生成/文生视频/【KJ版】Wan2.2+14B 4步加速文生视频-智能扩写版_1953642911277744130.json, 视频生成/文生视频/【KJ版】Wan2.2+14B Seko Lora 4步加速文生视频-智能扩写版v2_1954106485791977474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_379
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3战斗专用视频工作流Supermate_2088565137006481410.json、视频生成/图生视频/Minimax-H3-图生视频-拖影修复_2088984353446653953.json、视频生成/图生视频/MinimaxH3-参考生视频-残影优化工作流_2089951187620683778.json、视频生成/图生视频/MinimaxH3拖影强化参考生视频工作流_2088291115316371458.json、视频生成/文生视频/Minimax H3-文生视频-残影优化工作流_2089951230276751361.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/wan2.2文生视频V3.0（4步加速lora+kj版本）_1954108894912114689.json、视频生成/文生视频/wan2.2文生视频超级加速——飞翔荷兰人_1971154804091326465.json、视频生成/文生视频/wan2.2文生视频超级加速（4步加速lora+kj版本）_2020056477867708417.json、视频生成/文生视频/【2倍提速】Wan2.2+14B Seko 4步加速文生视频v1_1954103661171503106.json、视频生成/文生视频/【KJ版】Wan2.2 14B加速文生视频-智能扩写提示词_1950844539659550722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `H3ExactRecover`
-- `H3InjectSchedule`
-- `H3JerkHeatmap`
-- `H3JerkOracle`
-- `H3TimeSmear`
-- `H3V2VInit`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `Text Multiline`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncode`
-- `VAELoader`
+全部 7 个 workflow 都包含：
+- `CR Text`
+- `GetNode`
+- `JWInteger`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `Primitive integer [Crystools]`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 6/8 个有
-- `SaveVideo` —— 6/8 个有
-- `H3AudioRecover` —— 4/8 个有
-- `LoadImage` —— 4/8 个有
-- `MiniMaxH3ImageToVideo` —— 4/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 4/8 个有
-- `ModelPreviewOverrideKJ` —— 4/8 个有
-- `孤海注释` —— 2/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `MemoryCleaner` —— 1/8 个有
+- `FloatToSigmas` —— 6/7 个有
+- `StringToFloatList` —— 6/7 个有
+- `RH_LLMAPI_NODE` —— 5/7 个有
+- `ImpactSwitch` —— 4/7 个有
+- `Text Concatenate` —— 4/7 个有
+- `Wan22PromptSelector` —— 4/7 个有
+- `easy showAnything` —— 4/7 个有
+- `WanVideoContextOptions` —— 2/7 个有
+- `CreateCFGScheduleFloatList` —— 1/7 个有
+- `CreateVideo` —— 1/7 个有
+- `PreViewVideo` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
 
 ## 典型参数
 

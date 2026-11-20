@@ -1,94 +1,75 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_20
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.743625
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelLoader, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
+frequency: 7
+level: strong
+coverage: 0.889
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Image Comparer (rgthree), LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX网红复制流_1906249305932353538.json, 图片生成/图生图/Fast upscale Flux_1937350990159101953.json, 图片生成/图生图/Flux人像图片4K超清放大V2.3_1955463868035186690.json, 图片生成/图生图/「无需抽卡」图片+Lora网红脸一键融合_2040308225584664577.json, 图片生成/图生图/「无需抽卡」图片+Lora网红脸一键融合_2041807805040037890.json, 图片生成/图生图/「无需抽卡」图片+Lora网红脸融合_1885348084627697665.json, 图片生成/图生图/一键生成网红脸，上传一张模特图片融合_2017607231864311810.json, 平台全量/FluxRedux无尽美人_1859958510967549954.json]
+members: [图片生成/图生图/flux2klein 4K高清放大_2041033443819130881.json, 图片生成/图生图/flux2洗图+放大_2101535680026464257.json, 图片生成/图生图/klein9b白底生背景家具美式中古风格支持_2055473199701348354.json, 图片生成/图生图/klein9b白底自动匹配背景家具美式风_2059563878874439681.json, 图片生成/图生图/老孙AI 一键OK 老照片修复_2088443376889847809.json, 图片生成/图生图/老郑一键老照片修复_2088421738475515906.json, 图片生成/图生图/蒜香卡普klein9b白底生背景家具美式中古风格支持2048px_2051843695250554881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FLUX网红复制流_1906249305932353538.json、图片生成/图生图/Fast upscale Flux_1937350990159101953.json、图片生成/图生图/Flux人像图片4K超清放大V2.3_1955463868035186690.json、图片生成/图生图/「无需抽卡」图片+Lora网红脸一键融合_2040308225584664577.json、图片生成/图生图/「无需抽卡」图片+Lora网红脸一键融合_2041807805040037890.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/flux2klein 4K高清放大_2041033443819130881.json、图片生成/图生图/flux2洗图+放大_2101535680026464257.json、图片生成/图生图/klein9b白底生背景家具美式中古风格支持_2055473199701348354.json、图片生成/图生图/klein9b白底自动匹配背景家具美式风_2059563878874439681.json、图片生成/图生图/老孙AI 一键OK 老照片修复_2088443376889847809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Image Comparer (rgthree)`
 - `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `StyleModelLoader`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 7/8 个有
-- `Florence2Run` —— 7/8 个有
-- `Image Comparer (rgthree)` —— 7/8 个有
-- `ImageResizeKJ` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `StyleModelApply` —— 7/8 个有
-- `EmptySD3LatentImage` —— 6/8 个有
-- `GetNode` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `VAEDecode` —— 6/8 个有
-- `easy cleanGpuUsed` —— 6/8 个有
-- `DepthAnythingPreprocessor` —— 5/8 个有
-- `DisableNoise` —— 5/8 个有
-- `DownloadAndLoadFlorence2Model` —— 5/8 个有
-- `LayerFilter: FilmV2` —— 5/8 个有
-- `ModelSamplingFlux` —— 5/8 个有
-- `PlaySound|pysssss` —— 5/8 个有
-- `ShowText|pysssss` —— 5/8 个有
-- `SplitSigmasDenoise` —— 5/8 个有
-- `Florence2ModelLoader` —— 2/8 个有
-- `easy imageListToImageBatch` —— 2/8 个有
-- `Anything Everywhere3` —— 1/8 个有
-- `CR Text` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `ImageListToImageBatch` —— 1/8 个有
-- `ImageResize+` —— 1/8 个有
-- `ImpactSwitch` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `LoraLoader` —— 1/8 个有
-- `ReduxAdvanced` —— 1/8 个有
-- `String Literal` —— 1/8 个有
-- `Text Concatenate (JPS)` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `Flux2Scheduler` —— 5/7 个有
+- `KSamplerSelect` —— 5/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
+- `ImageScaleToTotalPixels` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `Float` —— 3/7 个有
+- `GetImageSize` —— 3/7 个有
+- `LoraLoader` —— 3/7 个有
+- `PlaySound|pysssss` —— 3/7 个有
+- `PrimitiveStringMultiline` —— 3/7 个有
+- `easy getNode` —— 3/7 个有
+- `easy setNode` —— 3/7 个有
+- `ImageScaleBy` —— 2/7 个有
+- `RHHiddenNodes` —— 2/7 个有
+- `easy cleanGpuUsed` —— 2/7 个有
+- `ImageBlur` —— 1/7 个有
+- `easy clearCacheAll` —— 1/7 个有
+- `easy imageColorMatch` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -96,4 +77,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

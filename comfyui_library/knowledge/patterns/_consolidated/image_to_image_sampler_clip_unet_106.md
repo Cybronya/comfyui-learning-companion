@@ -1,33 +1,35 @@
 ---
 name: image_to_image_sampler_clip_unet_106
 type: Image To Image
-frequency: 6
+frequency: 4
 level: strong
-coverage: 0.977333
-common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.94325
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, ImageConcanate, KSampler, LoadImage, MathExpression|pysssss, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/2031316609993805825.json, 图片生成/文生图/87time # 34 写实人像 细腻皮肤 不油腻_1959641912976289793.json, 图片生成/文生图/FLUX图生图（洗图）工作流_2048585634318651394.json, 图片生成/文生图/FLUX工作流_2100147250554040322.json, 图片生成/文生图/FLUX模型工作流搭建-文生图、图生图（洗图）_1962526879636959233.json, 数字人/数字人/FLUX工作流以及文生图洗图_2065662763309031426.json]
+members: [图片生成/图生图/(志佬开源)Qwen Edit像素偏移问题解决方案V1_1965046472079196162.json, 图片生成/图生图/Flux_Kontext一键生成三视图多视图_2007434930359373826.json, 图片生成/图生图/Kontext一键三视图_2013256248480763905.json, 图片生成/图生图/Kontext一键生成三视图_1948948289014702082.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_106
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/2031316609993805825.json、图片生成/文生图/87time # 34 写实人像 细腻皮肤 不油腻_1959641912976289793.json、图片生成/文生图/FLUX图生图（洗图）工作流_2048585634318651394.json、图片生成/文生图/FLUX工作流_2100147250554040322.json、图片生成/文生图/FLUX模型工作流搭建-文生图、图生图（洗图）_1962526879636959233.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/(志佬开源)Qwen Edit像素偏移问题解决方案V1_1965046472079196162.json、图片生成/图生图/Flux_Kontext一键生成三视图多视图_2007434930359373826.json、图片生成/图生图/Kontext一键三视图_2013256248480763905.json、图片生成/图生图/Kontext一键生成三视图_1948948289014702082.json）
 
 - **类型**：Image To Image
-- **样本数**：6
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPTextEncodeFlux`
+全部 4 个 workflow 都包含：
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
+- `ImageConcanate`
 - `KSampler`
 - `LoadImage`
+- `MathExpression|pysssss`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -35,36 +37,44 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 4/6 个有
-- `EmptyLatentImage` —— 2/6 个有
-- `LoraLoaderModelOnly` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `ImageUpscaleWithModel` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `UpscaleModelLoader` —— 1/6 个有
+- `DualCLIPLoader` —— 3/4 个有
+- `EmptyImage` —— 3/4 个有
+- `FluxGuidance` —— 3/4 个有
+- `FluxKontextImageScale` —— 3/4 个有
+- `GetImageSize+` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `CLIPLoader` —— 1/4 个有
+- `CR Simple Image Compare` —— 1/4 个有
+- `DF_Get_image_size` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageCrop` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
+- `Text _O` —— 1/4 个有
+- `seed _O` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 16 - 25 | 6 | 87% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 0.7 | 0.35 - 1 | 6 | 56% |
-| 宽度 | 896 | - | 2 | 86% |
-| 高度 | 1024 | - | 2 | 100% |
+| 采样步数 | 20 | 8 - 20 | 4 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 16 - 25，6 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 0.7，观测区间 0.35 - 1，6 个样本
-- 宽度 中位数 896，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 8 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（2/4 个样本）：Steps较低可能导致细节不足

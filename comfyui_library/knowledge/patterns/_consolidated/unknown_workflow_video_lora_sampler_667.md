@@ -1,70 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_667
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.859
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, GetImageRangeFromBatch, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVideoMask, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.526333
+common_nodes: [BlockifyMask, CLIPVisionLoader, ConvertAny2Int, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, LayerUtility: ImageBlend, LoadImage, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, SetNode, SoundFlow_TrimAudio, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy float, easy int]
 problems: []
 missing: []
-members: [平台全量/LTX2.3-视频增加音效，提高帧率_2073044359297196033.json, 平台全量/LTX2.3-音效配音_2045054104585637890.json, 音频生成/音频生成/LTX2.3-无声视频音效设计优化版V2_2030312017944383489.json, 音频生成/音频生成/LTX2.3-无声视频音效设计优化版V2_2076279979465330690.json]
+members: [数字人/数字人/长视频wan_animate-自动人物替换+动作迁移+InfiniteTalk对口型-电商数字人_1975573542223876097.json, 数字人/数字人/长视频wan_animate-自动人物替换+动作迁移-唱歌跳舞_1972675635229446145.json, 视频生成/图生视频/wan_animate+KJ版+长视频全自动+替换人物+动作迁移+首尾帧丢弃_1972178005500030977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_667
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/LTX2.3-视频增加音效，提高帧率_2073044359297196033.json、平台全量/LTX2.3-音效配音_2045054104585637890.json、音频生成/音频生成/LTX2.3-无声视频音效设计优化版V2_2030312017944383489.json、音频生成/音频生成/LTX2.3-无声视频音效设计优化版V2_2076279979465330690.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/长视频wan_animate-自动人物替换+动作迁移+InfiniteTalk对口型-电商数字人_1975573542223876097.json、数字人/数字人/长视频wan_animate-自动人物替换+动作迁移-唱歌跳舞_1972675635229446145.json、视频生成/图生视频/wan_animate+KJ版+长视频全自动+替换人物+动作迁移+首尾帧丢弃_1972178005500030977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
+全部 3 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `ConvertAny2Int`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `DrawViTPose`
 - `GetImageRangeFromBatch`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVideoMask`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageBlend`
+- `LoadImage`
 - `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEEncode`
-- `VAELoaderKJ`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `Sam2Segmentation`
+- `SetNode`
+- `SoundFlow_TrimAudio`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy float`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecode` —— 1/4 个有
-- `VAEDecodeTiled` —— 1/4 个有
+- `CR Text` —— 2/3 个有
+- `AudioCrop` —— 1/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `DownloadAndLoadWav2VecModel` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `MultiTalkModelLoader` —— 1/3 个有
+- `MultiTalkWav2VecEmbeds` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoImageToVideoMultiTalk` —— 1/3 个有
+- `WanVideoLoraSelect` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 25 - 25 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -72,5 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

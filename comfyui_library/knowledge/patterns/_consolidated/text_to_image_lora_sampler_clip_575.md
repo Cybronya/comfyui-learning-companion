@@ -3,66 +3,55 @@ name: text_to_image_lora_sampler_clip_575
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.626667
-common_nodes: [CLIPLoader, CLIPTextEncode, CS_Preview_Any, DF_Text_Box, EmptyLatentImage, Fast Groups Bypasser (rgthree), FastGroupsBypassSwitch, GetNode, GoohaiRatioAndResolution, GoohaiRouteBlocker, ImageScaleToTotalPixels, JWFloat, JjkText, KSampler, KSamplerAdvanced, LatentSwitch, LoadImage, LoraLoaderModelOnly, PDIMAGE_LongerSize, PreviewImage, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenImagePromptOptimizer, ReferenceLatent, RestoreQwenImage21GH, SaveImage, SetNode, ShowText|pysssss, TextEncodeQwenImage21GH, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.903667
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, EmptySD3LatentImage, GODMT_BatchToList, GODMT_SplitString, ImageMergeNode, Int, JjkConcat, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, SizeSelector, Text, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy boolean, easy getNode, easy ifElse, easy setNode, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1文生图图像编辑V2 GH加速版，媲美全能图片G2.5方案_2105800342549127170.json, 图片生成/文生图/QwenImage 2.1 V2 GH加速版｜文生图图像编辑 媲美全能图片G2.5_2105562013975011330.json, 图片生成/文生图/千问2.1文生图加图像编辑孤海加速版，媲美全能图片G2.5方案_2105709104563048449.json]
+members: [数字人/数字人/Qwen-Edit-2511一键生成｜人物三视图影视角色资产图_2094728018261536769.json, 数字人/数字人/Qwen-Edit-2511人物三视图影视短剧角色资产图一键生成_2088220739148275714.json, 数字人/数字人/Qwen-Edit-2511角色三视图一键生成｜短剧角色资产图_2094502182212165634.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_575
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图图像编辑V2 GH加速版，媲美全能图片G2.5方案_2105800342549127170.json、图片生成/文生图/QwenImage 2.1 V2 GH加速版｜文生图图像编辑 媲美全能图片G2.5_2105562013975011330.json、图片生成/文生图/千问2.1文生图加图像编辑孤海加速版，媲美全能图片G2.5方案_2105709104563048449.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Qwen-Edit-2511一键生成｜人物三视图影视角色资产图_2094728018261536769.json、数字人/数字人/Qwen-Edit-2511人物三视图影视短剧角色资产图一键生成_2088220739148275714.json、数字人/数字人/Qwen-Edit-2511角色三视图一键生成｜短剧角色资产图_2094502182212165634.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CS_Preview_Any`
-- `DF_Text_Box`
+- `CR Text`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FastGroupsBypassSwitch`
-- `GetNode`
-- `GoohaiRatioAndResolution`
-- `GoohaiRouteBlocker`
-- `ImageScaleToTotalPixels`
-- `JWFloat`
+- `EmptySD3LatentImage`
+- `GODMT_BatchToList`
+- `GODMT_SplitString`
+- `ImageMergeNode`
+- `Int`
+- `JjkConcat`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LatentSwitch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PDIMAGE_LongerSize`
-- `PreviewImage`
-- `QwenImage21BlockCacheT8`
-- `QwenImage21SageAttentionT8`
-- `QwenImage21SpectrumT8`
-- `QwenImagePromptOptimizer`
-- `ReferenceLatent`
-- `RestoreQwenImage21GH`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `TextEncodeQwenImage21GH`
+- `SizeSelector`
+- `Text`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
+- `easy boolean`
+- `easy getNode`
+- `easy ifElse`
+- `easy setNode`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
 
 ## 典型参数
 
@@ -80,7 +69,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -91,4 +80,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（12/3 个样本）：Steps较低可能导致细节不足

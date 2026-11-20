@@ -3,58 +3,55 @@ name: text_to_image_lora_sampler_clip_646
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.867
-common_nodes: [CLIPLoader, CLIPTextEncode, DF_Integer, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LG_Color_Match_V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RHHiddenNodes, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), ImpactInt, JjkText, KSampler, LayerMask: MaskGrow, LayerUtility: HLFrequencyDetailRestore, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Moss商业级真实感放大 高光锁透亮细节精修处理工具_2114083426931400706.json, 图片生成/图生图/无损放大人像专用｜图生图细节增强画质不缩水_2110763959346360321.json]
+members: [图片生成/图生图/光影融合4.0工作流｜皮肤质感不变图生图画质优化_2097507489922240514.json, 图片生成/图生图/溶图重新打光处理｜F.2_Klein人像细节迁移图生图_2096321366617317377.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_646
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Moss商业级真实感放大 高光锁透亮细节精修处理工具_2114083426931400706.json、图片生成/图生图/无损放大人像专用｜图生图细节增强画质不缩水_2110763959346360321.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/光影融合4.0工作流｜皮肤质感不变图生图画质优化_2097507489922240514.json、图片生成/图生图/溶图重新打光处理｜F.2_Klein人像细节迁移图生图_2096321366617317377.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DF_Integer`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `Image Comparer (rgthree)`
+- `ImpactInt`
 - `JjkText`
 - `KSampler`
-- `LG_Color_Match_V2`
+- `LayerMask: MaskGrow`
+- `LayerUtility: HLFrequencyDetailRestore`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `JWFloat` —— 1/2 个有
-- `PainterFluxImageEdit` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `SkipLayerGuidanceDiTSimple` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `easy imageColorMatch` —— 1/2 个有
+- `DualCLIPLoader` —— 1/2 个有
+- `FluxGuidance` —— 1/2 个有
+- `InspyrenetRembg` —— 1/2 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/2 个有
 
 ## 典型参数
 
@@ -72,7 +69,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -83,5 +80,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

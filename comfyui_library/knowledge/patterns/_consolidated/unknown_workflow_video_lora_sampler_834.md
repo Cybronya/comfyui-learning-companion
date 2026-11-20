@@ -1,63 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_834
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.888333
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+frequency: 2
+level: weak
+coverage: 0.7425
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), KSamplerAdvanced, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVCropGuides, LTXVSeparateAVLatent, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PainterFrameExtractor, PainterLTX2Vomni, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, PromptRelayEncode, RIFEInterpolation, SamplerCustom, SimpleComparison+, SimpleMath+, SplitSigmas, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_GetImageCount, VHS_VideoCombine, easy ifElse, easy promptConcat]
 problems: []
 missing: []
-members: [平台全量/长视频连续生成：Wan2.2 14B+LightX2V 12步超极速高质量视频连续生视频V1_1959621304016121857.json, 视频生成/图生视频/90秒81帧6步超极速图生视频_1995392959409479682.json, 视频生成/图生视频/AA--金子雨特效lora-wan2.2 加速图生视频+独立放大插帧_2003814653497122818.json]
+members: [视频生成/图生视频/Bernini + LTX2.3 参考生视频+自定义音频_2079522335211745282.json, 视频生成/图生视频/Bernini + LTX2.3 参考生视频_2079543216025726977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_834
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/长视频连续生成：Wan2.2 14B+LightX2V 12步超极速高质量视频连续生视频V1_1959621304016121857.json、视频生成/图生视频/90秒81帧6步超极速图生视频_1995392959409479682.json、视频生成/图生视频/AA--金子雨特效lora-wan2.2 加速图生视频+独立放大插帧_2003814653497122818.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Bernini + LTX2.3 参考生视频+自定义音频_2079522335211745282.json、视频生成/图生视频/Bernini + LTX2.3 参考生视频_2079543216025726977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `BasicScheduler`
+- `BerniniConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `Fast Groups Bypasser (rgthree)`
 - `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `PainterFrameExtractor`
+- `PainterLTX2Vomni`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `PromptRelayEncode`
+- `RIFEInterpolation`
+- `SamplerCustom`
+- `SimpleComparison+`
+- `SimpleMath+`
+- `SplitSigmas`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
+- `VAELoaderKJ`
+- `VHS_GetImageCount`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `easy ifElse`
+- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `JWInteger` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `Image Size to Number` —— 1/3 个有
-- `ImageScaleToTotalPixels` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `SomethingToString` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `VHS_MergeImages` —— 1/3 个有
-- `VHS_SelectImages` —— 1/3 个有
-- `easy mathInt` —— 1/3 个有
+- `LTXVAudioVAEEncode` —— 1/2 个有
+- `LTXVEmptyLatentAudio` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `SetLatentNoiseMask` —— 1/2 个有
+- `SolidMask` —— 1/2 个有
+- `TrimAudioDuration` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 6 | 6 - 12 | 3 | 65% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | lcm | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 采样步数 | fixed | - | 2 | 50% |
+| Prompt 约束强度(CFG) | 9 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | linear_quadratic | - | 2 | 100% |
+| 宽度 | 1 | - | 1 | 100% |
+| 高度 | 30 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -65,8 +87,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 12，3 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 采样步数 最常用 fixed，2 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 9，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 linear_quadratic，2 个样本，一致性 100%
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

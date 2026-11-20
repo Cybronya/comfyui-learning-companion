@@ -2,63 +2,83 @@
 name: unknown_workflow_lora_sampler_unet_197
 type: Unknown Workflow
 frequency: 4
-level: moderate
-coverage: 0.6525
-common_nodes: [CFGGuider, CLIPLoader, CR Prompt Text, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, Load Lora, LoadImage, LoraLoaderModelOnly, MultiTextConcatenate, PainterFluxImageEdit, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, 忽略多组孤海]
-problems: []
+level: strong
+coverage: 0.945
+common_nodes: [CFGNorm, CLIPLoader, GetImageSizeAndCount, ImageLoader, ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, MemoryCleaner, ModelSamplingAuraFlow, PreviewImage, Qwen3_VQA, SaveImage, StringFunction|pysssss, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, easy imageConcat, easy int, easy positive, easy saveText, easy seed, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2096882637192388610.json, 图片生成/图生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2097174326075289602.json, 图片生成/文生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2067154895031066625.json, 平台全量/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2082730445174820866.json]
+members: [图片生成/图生图/生图-三图编辑自动-qwen-Edit-2509-8步_1997651030190002178.json, 图片生成/图生图/生图-单图编辑自动-qwen-Edit-2509-8步_1997694987175399426.json, 图片生成/图生图/生图-双图编辑自动-qwen-Edit-2509-8步_1997651021717508097.json, 图片生成/图生图/生图-四图编辑自动-qwen-edit-2509-8步_1997900858333519873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_197
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2096882637192388610.json、图片生成/图生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2097174326075289602.json、图片生成/文生图/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2067154895031066625.json、平台全量/Flux2Klein升级版-trueV2老照片修复、文生图和洗图、单图及多图编辑_2082730445174820866.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/生图-三图编辑自动-qwen-Edit-2509-8步_1997651030190002178.json、图片生成/图生图/生图-单图编辑自动-qwen-Edit-2509-8步_1997694987175399426.json、图片生成/图生图/生图-双图编辑自动-qwen-Edit-2509-8步_1997651021717508097.json、图片生成/图生图/生图-四图编辑自动-qwen-edit-2509-8步_1997900858333519873.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
+- `CFGNorm`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `GetNode`
-- `Image Comparer (rgthree)`
+- `GetImageSizeAndCount`
+- `ImageLoader`
 - `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `Load Lora`
-- `LoadImage`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `MultiTextConcatenate`
-- `PainterFluxImageEdit`
+- `MemoryCleaner`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `Qwen3_VQA`
 - `SaveImage`
-- `SetNode`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `忽略多组孤海`
+- `easy anythingIndexSwitch`
+- `easy imageConcat`
+- `easy int`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 1/4 个有
+- `MultiplePathsInput` —— 3/4 个有
+- `NunchakuQwenImageDiTLoader` —— 3/4 个有
+- `TextEncodeQwenImageEditPlus` —— 3/4 个有
+- `VAEEncode` —— 3/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `Qwen3VL_Advanced` —— 2/4 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/4 个有
+- `MultiplePathsInputPlus` —— 1/4 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

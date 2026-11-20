@@ -1,77 +1,75 @@
 ---
 name: unknown_workflow_sampler_clip_unet_133
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.8504
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, Krea2SizePreset, Krea2StyleReference, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 9
+level: moderate
+coverage: 0.815556
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, Ideogram4PromptBuilderKJ, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Krea2 单图风格参考_2074315052915712001.json, 图片生成/图生图/Krea2 单图风格迁移_2074085764102709250.json, 图片生成/图生图/Krea2-真风格迁移（单图）_2081019058392227841.json, 图片生成/图生图/Krea2风格参考_2073729211445108737.json, 图片生成/图生图/Krea2风格参考产品设计_2082828018342522882.json, 图片生成/图生图/[Krea_2_·_08.2]_双图风格迁移_两张参考图，如何控制各自影响？_2098214446819799041.json, 图片生成/文生图/Krea2 风格参考_2073576483880259585.json, 图片生成/文生图/Krea2-风格参考_2073836086790541314.json, 平台全量/Krea2风格转换的设计_2080703174951915522.json, 平台全量/[Krea 2 · 08.1] 风格迁移：不用 LoRA，一张参考图直接迁移视觉风格_2095752635822460930.json]
+members: [图片生成/图生图/Ideogram4一键图生图_2066102111875719170.json, 图片生成/文生图/Ideogram 4 + KJ Prompt Builder可视化构图导演_2062786765001412609.json, 图片生成/文生图/Ideogram 4 内部使用版本_2071291697438478337.json, 图片生成/文生图/Ideogram 4 文生图最优实现_2070104029690159105.json, 图片生成/文生图/Ideogram 4文生图8步加速最优实现_2070104035256000514.json, 图片生成/文生图/Ideogram4 文生图-写实摄影专用工作流_2066088865739399169.json, 图片生成/文生图/Ideogram4自定义文生图_超绝美感_2064900969019822082.json, 图片生成/文生图/ideogram4 文生图 精准写实摄影 数字人_2065236680147296257.json, 图片生成/文生图/ideogram4 文生图_1943017003487543298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_133
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Krea2 单图风格参考_2074315052915712001.json、图片生成/图生图/Krea2 单图风格迁移_2074085764102709250.json、图片生成/图生图/Krea2-真风格迁移（单图）_2081019058392227841.json、图片生成/图生图/Krea2风格参考_2073729211445108737.json、图片生成/图生图/Krea2风格参考产品设计_2082828018342522882.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Ideogram4一键图生图_2066102111875719170.json、图片生成/文生图/Ideogram 4 + KJ Prompt Builder可视化构图导演_2062786765001412609.json、图片生成/文生图/Ideogram 4 内部使用版本_2071291697438478337.json、图片生成/文生图/Ideogram 4 文生图最优实现_2070104029690159105.json、图片生成/文生图/Ideogram 4文生图8步加速最优实现_2070104035256000514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
 - `ConditioningZeroOut`
-- `KSampler`
-- `Krea2SizePreset`
-- `Krea2StyleReference`
-- `LoadImage`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4PromptBuilderKJ`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `PrimitiveInt`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Krea2StyleTransfer` —— 9/10 个有
-- `PreviewImage` —— 7/10 个有
-- `Krea2TwoStyleReferences` —— 4/10 个有
-- `Krea2TwoStyleTransfer` —— 4/10 个有
-- `Anything Everywhere` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `GetNode` —— 2/10 个有
-- `ImageConcatMulti` —— 2/10 个有
-- `PathchSageAttentionKJ` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `ImageStitch` —— 1/10 个有
-- `LoraLoaderModelOnly` —— 1/10 个有
-- `RH_Translator` —— 1/10 个有
-- `Seed (rgthree)` —— 1/10 个有
+- `CustomCombo` —— 5/9 个有
+- `CR Text` —— 4/9 个有
+- `LoraLoaderModelOnly` —— 4/9 个有
+- `BasicScheduler` —— 3/9 个有
+- `ModelSamplingAuraFlow` —— 3/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `GetObjectFromJson` —— 1/9 个有
+- `GetTextFromJson` —— 1/9 个有
+- `LayerColor: BrightnessContrastV2` —— 1/9 个有
+- `Light-Tool: DeserializeJsonString` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `RH_Translator` —— 1/9 个有
+- `StringConstantMultiline` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
+- `孤海注释` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 10 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler_ancestral | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，10 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,69 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_345
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.740333
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, ImageBatchExtendWithOverlap, ImageFromBatch+, JDCN_StringToList, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, SetNode, Text, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy indexAnything]
+frequency: 7
+level: moderate
+coverage: 0.899714
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, Int, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/漫剧分镜视频1_2028866399321460738.json, 视频生成/图生视频/漫剧分镜视频2_2028877052505497602.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206584266399745.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206599869206529.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027227746778226690.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027240499706335233.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027250620972929026.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027258275158302721.json, 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027266835749543937.json]
+members: [数字人/数字人/数字人-图片对口型唱歌_口播（infinitetalk）_1988257488845889538.json, 数字人/数字人/超自然图片数字人对口型（根叔）_1977237089068687361.json, 视频生成/图生视频/CCC的InfiniteTalk数字人_2026963272511000578.json, 视频生成/图生视频/IndexTTS2+InfiniteTalk图生数字人单人-B站UP主@好奇漫步!音频数字人同时生成_1983563401169444866.json, 视频生成/图生视频/Infinite Talk单人版_1968672721771143169.json, 视频生成/图生视频/Infinite Talk数字人_2069716627356217345.json, 视频生成/图生视频/蓝天AI口播工作流_2080617453847138306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_345
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/漫剧分镜视频1_2028866399321460738.json、视频生成/图生视频/漫剧分镜视频2_2028877052505497602.json、视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206584266399745.json、视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206599869206529.json、视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027227746778226690.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/数字人-图片对口型唱歌_口播（infinitetalk）_1988257488845889538.json、数字人/数字人/超自然图片数字人对口型（根叔）_1977237089068687361.json、视频生成/图生视频/CCC的InfiniteTalk数字人_2026963272511000578.json、视频生成/图生视频/IndexTTS2+InfiniteTalk图生数字人单人-B站UP主@好奇漫步!音频数字人同时生成_1983563401169444866.json、视频生成/图生视频/Infinite Talk单人版_1968672721771143169.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：74%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageFromBatch+`
-- `JDCN_StringToList`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+全部 7 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `Int`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `SetNode`
-- `Text`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
-- `easy indexAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoaderGGUF` —— 2/9 个有
-- `Load3D` —— 1/9 个有
-- `LoadEXR` —— 1/9 个有
-- `LoadSRT` —— 1/9 个有
-- `Loader` —— 1/9 个有
-- `load_GGUF` —— 1/9 个有
+- `LoadWanVideoT5TextEncoder` —— 6/7 个有
+- `ToInt` —— 6/7 个有
+- `WanVideoTextEncode` —— 6/7 个有
+- `Audio Duration (mtb)` —— 3/7 个有
+- `RH_GetAudioDuration` —— 3/7 个有
+- `SaveAudio` —— 3/7 个有
+- `CR Text` —— 2/7 个有
+- `IndexTTS2_Emotion` —— 2/7 个有
+- `PrimitiveFloat` —— 2/7 个有
+- `CM_IntToFloat` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `ImageUpscaleWithModel` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `SeedVR2` —— 1/7 个有
+- `SeedVR2BlockSwap` —— 1/7 个有
+- `Upscale Model Loader` —— 1/7 个有
+- `WanVideoTextEncodeCached` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 9 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -71,8 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，9 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

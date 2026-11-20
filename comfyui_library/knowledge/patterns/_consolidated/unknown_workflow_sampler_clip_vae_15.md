@@ -1,73 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_vae_15
 type: Unknown Workflow
-frequency: 13
+frequency: 11
 level: moderate
-coverage: 0.908769
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
-problems: []
+coverage: 0.901
+common_nodes: [CLIPLoader, CLIPTextEncode, CR SDXL Aspect Ratio, KSampler, ModelSamplingAuraFlow, SaveImage, Text Multiline, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json, 图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json, 图片生成/文生图/FLUX.2 Turbo_2006076343817084929.json, 图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json, 图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json, 图片生成/文生图/FLUX.2祭出加速LoRA：能否再战Z-Image一雪前耻？_2008141326423957505.json, 图片生成/文生图/FLUX2 Dev FP8 8步加速 文生图_图片编辑_2073296125880262657.json, 图片生成/文生图/FLUX2 Dev FP8 文生图_图片编辑_2073281827388874753.json, 图片生成/文生图/FLUX2 混合模型_1993521841442586625.json, 图片生成/文生图/Flux2 文生图_图生图_图像修改_多图参考工作流_1993868752053796866.json, 图片生成/文生图/flux.2图像编辑测试（单图）_1995053515309506561.json, 图片生成/文生图/【AI小兵哥】Flux.2-多图编辑工作流_1994221492407828481.json, 图片生成/文生图/最强开源 FLUX2系列合集_1993708586574479361.json]
+members: [图片生成/反推提示词/38bgb_2049808434131939330.json, 图片生成/文生图/Nunchaku8步加速千问文生图_1962382351810564097.json, 图片生成/文生图/Nunchaku千问文生图_1959849718341906433.json, 图片生成/文生图/Nunchaku千问文生图超快_1959997422854418434.json, 图片生成/文生图/QWen-Image 8步加速_1955523693487296514.json, 图片生成/文生图/QWen-Image 表情包 解锁你的情绪新表达_1955541581090754561.json, 图片生成/文生图/QWen-Image8步加速中文渲染_1955336945507471361.json, 图片生成/文生图/Qwen-Image文生图+提示词优化器_1953302071052333057.json, 图片生成/文生图/中文书法字体设计 - 媲美即梦 - Qwen-Image文生图_1953065521521618946.json, 图片生成/文生图/中文书法字体设计 -文生图-中文字体logo-书法字体设计-艺术字_2021848205499043842.json, 图片生成/文生图/千问Qwen-image中文书法字体设计 - 媲美即梦_2002775003546415106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_15
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/FLUX.2 Klein 4B 文生图_2012080117027184642.json、图片生成/文生图/FLUX.2 Klein 9B 文生图_2012074303356936193.json、图片生成/文生图/FLUX.2 Turbo_2006076343817084929.json、图片生成/文生图/FLUX.2 开源啦！ComfyUI 原生支持，图像生成+编辑一体工作流来啦！_1995474199747682305.json、图片生成/文生图/FLUX.2多图参考编辑_1994778617873883137.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/反推提示词/38bgb_2049808434131939330.json、图片生成/文生图/Nunchaku8步加速千问文生图_1962382351810564097.json、图片生成/文生图/Nunchaku千问文生图_1959849718341906433.json、图片生成/文生图/Nunchaku千问文生图超快_1959997422854418434.json、图片生成/文生图/QWen-Image 8步加速_1955523693487296514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BasicGuider`
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `CR SDXL Aspect Ratio`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `Text Multiline`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 12/13 个有
-- `ImageScaleToTotalPixels` —— 11/13 个有
-- `LoadImage` —— 11/13 个有
-- `ReferenceLatent` —— 11/13 个有
-- `VAEEncode` —— 11/13 个有
-- `ModelPatchTorchSettings` —— 5/13 个有
-- `UnetLoaderGGUF` —— 4/13 个有
-- `LoraLoaderModelOnly` —— 3/13 个有
-- `PathchSageAttentionKJ` —— 3/13 个有
-- `PreviewImage` —— 3/13 个有
-- `ApplySageAttention` —— 2/13 个有
-- `CR Text` —— 2/13 个有
-- `Int Literal` —— 2/13 个有
-- `Label (rgthree)` —— 2/13 个有
-- `easy int` —— 2/13 个有
-- `DeepTranslatorTextNode` —— 1/13 个有
-- `EasyCache` —— 1/13 个有
-- `ImageConcanate` —— 1/13 个有
-- `ImpactInt` —— 1/13 个有
-- `RH_Captioner` —— 1/13 个有
-- `easy cleanGpuUsed` —— 1/13 个有
-- `easy showAnything` —— 1/13 个有
+- `UNETLoader` —— 8/11 个有
+- `easy showAnything` —— 8/11 个有
+- `LoraLoaderModelOnly` —— 5/11 个有
+- `EmptySD3LatentImage` —— 4/11 个有
+- `ConditioningZeroOut` —— 3/11 个有
+- `NunchakuQwenImageDiTLoader` —— 3/11 个有
+- `RH_LLMAPI_NODE` —— 3/11 个有
+- `StringReplace` —— 3/11 个有
+- `ImpactInt` —— 1/11 个有
+- `TextInput_` —— 1/11 个有
+- `easy anythingIndexSwitch` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 8 - 20 | 11 | 68% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 4 | 11 | 61% |
+| 采样算法 | euler | - | 11 | 91% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 8 - 20，11 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 4，11 个样本
+- 采样算法 最常用 euler，11 个样本，一致性 91%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）

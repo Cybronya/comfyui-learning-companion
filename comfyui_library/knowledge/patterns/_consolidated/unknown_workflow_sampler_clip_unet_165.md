@@ -1,71 +1,83 @@
 ---
 name: unknown_workflow_sampler_clip_unet_165
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.808556
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, PrimitiveStringMultiline, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.730625
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/MOSS｜真实感暴击 · 人像肌感_2115381303557316610.json, 图片生成/文生图/MOSS｜真实感暴击_·_人像肌感_2115961100352180226.json, 图片生成/文生图/MOSS｜真实感暴击_·_人像肌感_2115972097389457409.json, 图片生成/文生图/Moss Base 更好的光影质感_2115636685873700865.json, 图片生成/文生图/Moss base+sft模型共存_2114927677521088513.json, 图片生成/文生图/Moss 动漫风格 8步文生图_2115995274912034817.json, 图片生成/文生图/Moss 双模8步高质量文生图_2115711030461558785.json, 图片生成/文生图/提示词优化Moss-image Base文生图高质量加速版20261022_2112951536082051073.json, 平台全量/MOSS｜真实感暴击 · 人像肌感_2119603126348115969.json]
+members: [图片生成/文生图/Ideogram 4文生图（API调用）_2062012575637917697.json, 图片生成/文生图/Ideogram 4文生图（免费自动版）_2062732665601744898.json, 图片生成/文生图/Ideogram 4文生图（手动版）_2063099793219608578.json, 图片生成/文生图/Ideogram4 手动控制区域（KJ）_2063831079253012481.json, 图片生成/文生图/Ideogram4新开源智能JSON格式文生图_2064948644645793794.json, 图片生成/文生图/Ideogram4智能JSON格式文生图_2064134445258596354.json, 图片生成/文生图/VividMuse Ideogram4 workflow_2064337095640047618.json, 图片生成/文生图/ideogram4 自用版_2067414472725192705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_165
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/MOSS｜真实感暴击 · 人像肌感_2115381303557316610.json、图片生成/文生图/MOSS｜真实感暴击_·_人像肌感_2115961100352180226.json、图片生成/文生图/MOSS｜真实感暴击_·_人像肌感_2115972097389457409.json、图片生成/文生图/Moss Base 更好的光影质感_2115636685873700865.json、图片生成/文生图/Moss base+sft模型共存_2114927677521088513.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Ideogram 4文生图（API调用）_2062012575637917697.json、图片生成/文生图/Ideogram 4文生图（免费自动版）_2062732665601744898.json、图片生成/文生图/Ideogram 4文生图（手动版）_2063099793219608578.json、图片生成/文生图/Ideogram4 手动控制区域（KJ）_2063831079253012481.json、图片生成/文生图/Ideogram4新开源智能JSON格式文生图_2064948644645793794.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `DualModelGuider`
 - `EmptyFlux2LatentImage`
-- `KSampler`
-- `PrimitiveStringMultiline`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 7/9 个有
-- `MOSSMergePreset` —— 7/9 个有
-- `SkipLayerGuidanceDiTSimple` —— 7/9 个有
-- `ResolutionSelector` —— 5/9 个有
-- `孤海注释` —— 5/9 个有
-- `GoohaiRatioAndResolution` —— 4/9 个有
-- `Note Plus (mtb)` —— 3/9 个有
-- `PreviewAny` —— 2/9 个有
-- `MOSSImageBlockCacheT8` —— 1/9 个有
-- `MOSSImagePromptEnhancerT8` —— 1/9 个有
-- `MOSSPromptEnhancerLocal` —— 1/9 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
+- `PrimitiveInt` —— 7/8 个有
+- `CR Text` —— 5/8 个有
+- `TextGenerate` —— 5/8 个有
+- `easy showAnything` —— 5/8 个有
+- `GetNode` —— 4/8 个有
+- `Int` —— 4/8 个有
+- `LoadImage` —— 4/8 个有
+- `PreviewAny` —— 4/8 个有
+- `SetNode` —— 4/8 个有
+- `Ideogram4PromptBuilderKJ` —— 3/8 个有
+- `PrimitiveStringMultiline` —— 3/8 个有
+- `StringConcatenate` —— 2/8 个有
+- `CLIPLoaderGGUF` —— 1/8 个有
+- `CustomCombo` —— 1/8 个有
+- `DeepTranslatorTextNode` —— 1/8 个有
+- `ImpactSwitch` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `RHLLMChatNode` —— 1/8 个有
+- `Seed (rgthree)` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
+- `easy promptList` —— 1/8 个有
+- `取色器_孤海` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 8 - 50 | 9 | 46% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 3.5 | 9 | 56% |
-| 采样算法 | er_sde | - | 9 | 56% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 8 - 50，9 个样本，取值分散，一致性仅 46%
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 3.5，9 个样本
-- 采样算法 最常用 er_sde，9 个样本，一致性 56%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

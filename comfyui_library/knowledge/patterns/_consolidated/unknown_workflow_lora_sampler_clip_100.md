@@ -1,74 +1,84 @@
 ---
 name: unknown_workflow_lora_sampler_clip_100
 type: Unknown Workflow
-frequency: 6
-level: weak
-coverage: 0.9505
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, ImageToMask, InvertMask, JoinImageWithAlpha, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: moderate
+coverage: 0.8562
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageResizeKJv2, ImageScaleToTotalPixels, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_wan2.1_alpha_t2v_14B.json, 平台全量/123123123_1977905569497579521.json, 平台全量/AI视频抠图大师：Wan-Alpha，生成没有背景图的宠物狗展示视频_1975387186184982530.json, 平台全量/透明视频生成_1990675594662862850.json, 视频生成/文生视频/wan-alpha透明视频素材制作_1978258359084310529.json, 视频生成/文生视频/小工具 wan-alpha透明图层_1973643031427551234.json]
+members: [图片生成/图生图/KINGHERE-klein摄影溶图+KLEIN高清放大V4_2040852851857035265.json, 图片生成/图生图/Klein高清重绘放大_2032838566539169794.json, 图片生成/图生图/▶F2K-高清重绘_2046072734924414977.json, 图片生成/图生图/▶Flux2_Klein-换脸高一致性编辑流+KV加速流_2060565541210910722.json, 图片生成/图生图/▶Flux2_Klein-高清重绘+高一致性编辑流+KV加速流_2041692902253924353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_100
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan2.1_alpha_t2v_14B.json、平台全量/123123123_1977905569497579521.json、平台全量/AI视频抠图大师：Wan-Alpha，生成没有背景图的宠物狗展示视频_1975387186184982530.json、平台全量/透明视频生成_1990675594662862850.json、视频生成/文生视频/wan-alpha透明视频素材制作_1978258359084310529.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/KINGHERE-klein摄影溶图+KLEIN高清放大V4_2040852851857035265.json、图片生成/图生图/Klein高清重绘放大_2032838566539169794.json、图片生成/图生图/▶F2K-高清重绘_2046072734924414977.json、图片生成/图生图/▶Flux2_Klein-换脸高一致性编辑流+KV加速流_2060565541210910722.json、图片生成/图生图/▶Flux2_Klein-高清重绘+高一致性编辑流+KV加速流_2041692902253924353.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `ImageToMask`
-- `InvertMask`
-- `JoinImageWithAlpha`
-- `KSampler`
+- `CR Prompt Text`
+- `CR Text Concatenate`
+- `ColorMatch`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `Seed (rgthree)`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 4/6 个有
-- `SaveVideoRGBA` —— 4/6 个有
-- `SaveAnimatedWEBP` —— 2/6 个有
-- `CR SDXL Aspect Ratio` —— 1/6 个有
-- `ImageFromBatch` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `PrimitiveFloat` —— 1/6 个有
-- `PrimitiveString` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `VHS_VideoCombine` —— 1/6 个有
+- `Florence2ModelLoader` —— 2/5 个有
+- `Florence2Run` —— 2/5 个有
+- `FluxKVCache` —— 2/5 个有
+- `WD14Tagger|pysssss` —— 2/5 个有
+- `BiRefNetRMBG` —— 1/5 个有
+- `ConstrainImage|pysssss` —— 1/5 个有
+- `Crop (mtb)` —— 1/5 个有
+- `DetailTransfer` —— 1/5 个有
+- `GetImageSize+` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `LayerMask: MaskGrow` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SeedVR2LoadDiTModel` —— 1/5 个有
+- `SeedVR2LoadVAEModel` —— 1/5 个有
+- `SeedVR2VideoUpscaler` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 20 | 6 | 19% |
-| Prompt 约束强度(CFG) | 1 | 1 - 6 | 6 | 12% |
-| 采样算法 | uni_pc | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 20，6 个样本，取值分散，一致性仅 19%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，6 个样本，取值分散，一致性仅 12%
-- 采样算法 最常用 uni_pc，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（4/6 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

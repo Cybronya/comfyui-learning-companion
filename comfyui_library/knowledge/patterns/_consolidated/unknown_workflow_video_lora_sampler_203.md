@@ -1,69 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_203
 type: Unknown Workflow
-frequency: 12
+frequency: 10
 level: moderate
-coverage: 0.954417
-common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, PreviewAudio, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader, easy int]
+coverage: 0.9141
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SplineEditor, VHS_VideoCombine, WanVideoAddWanMoveTracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, WanVideoWanDrawWanMoveTracks]
 problems: []
 missing: []
-members: [视频生成/图生视频/Humo单人数字人_1967417931208515586.json, 视频生成/图生视频/Humo电商展示+语音_2015598941240299522.json, 视频生成/图生视频/Humo电商展示+语音by Aiwood_1966919364043739138.json, 视频生成/图生视频/Humo电商展示+语音by+Aiwood_2037340771631767553.json, 视频生成/图生视频/Humo电商展示+语音生成_2051558209323839489.json, 视频生成/图生视频/Humo电商展示+语音生成_2052711289109139457.json, 视频生成/图生视频/Humo电商展示+语音生成_2069759679651209218.json, 视频生成/图生视频/Humo电商带货视频制作_1994443189438324738.json, 视频生成/图生视频/电商带货，投喂产品图加模特即可_2037199894196264961.json, 视频生成/文生视频/Humo音频生视频-by Aiwood_1966919444201136129.json, 视频生成/文生视频/humo单图参考+配音_1968279752563937282.json, 音频生成/音频生成/12.Humo电商展示+语音_录音_2000793155027038209.json]
+members: [图片生成/图生图/新版轨迹控制-Wan-move_1998583110839230466.json, 数字人/数字人/Wanmove轨迹控制运动_1999275955468238849.json, 视频生成/图生视频/Wan-Move轨迹控制运动_2015351351290630146.json, 视频生成/图生视频/Wan-Move：通过潜在轨迹引导实现可控运动的视频生成_2000407963032485890.json, 视频生成/图生视频/WanMove-轨迹引导运动_1999719285188685825.json, 视频生成/图生视频/Wanmove轨迹控制_2000380802502455298.json, 视频生成/图生视频/Wanmove轨迹控制运动_1999041056794628098.json, 视频生成/图生视频/Wanmove轨迹控制运动_1999430361350275074.json, 视频生成/图生视频/Wanmove轨迹控制运动视频_2007414676862279682.json, 视频生成/图生视频/图生视频 轨迹控制 稳定好玩~【wan2.1】_1999451312800624642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_203
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Humo单人数字人_1967417931208515586.json、视频生成/图生视频/Humo电商展示+语音_2015598941240299522.json、视频生成/图生视频/Humo电商展示+语音by Aiwood_1966919364043739138.json、视频生成/图生视频/Humo电商展示+语音by+Aiwood_2037340771631767553.json、视频生成/图生视频/Humo电商展示+语音生成_2051558209323839489.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/新版轨迹控制-Wan-move_1998583110839230466.json、数字人/数字人/Wanmove轨迹控制运动_1999275955468238849.json、视频生成/图生视频/Wan-Move轨迹控制运动_2015351351290630146.json、视频生成/图生视频/Wan-Move：通过潜在轨迹引导实现可控运动的视频生成_2000407963032485890.json、视频生成/图生视频/WanMove-轨迹引导运动_1999719285188685825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `HuMoEmbeds`
-- `INTConstant`
+全部 10 个 workflow 都包含：
+- `CLIPVisionLoader`
 - `ImageResizeKJv2`
-- `LoadAudio`
 - `LoadImage`
-- `PreviewAudio`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `ToInt`
+- `LoadWanVideoT5TextEncoder`
+- `RepeatImageBatch`
+- `SplineEditor`
 - `VHS_VideoCombine`
+- `WanVideoAddWanMoveTracks`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
-- `easy int`
+- `WanVideoWanDrawWanMoveTracks`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 11/12 个有
-- `Display Int (rgthree)` —— 11/12 个有
-- `ImageBatchMulti` —— 11/12 个有
-- `PreviewImage` —— 11/12 个有
-- `SoundFlow_TrimAudio` —— 11/12 个有
-- `ImageConcanate` —— 10/12 个有
-- `LoadWanVideoT5TextEncoder` —— 10/12 个有
-- `WanVideoTextEncode` —— 10/12 个有
-- `easy imageRemBg` —— 10/12 个有
-- `RecordAudio` —— 9/12 个有
-- `WanVideoSetBlockSwap` —— 2/12 个有
-- `WanVideoSetLoRAs` —— 2/12 个有
-- `WanVideoTextEncodeCached` —— 2/12 个有
-- `ImageConcatMulti` —— 1/12 个有
-- `MelBandRoFormerModelLoader` —— 1/12 个有
-- `MelBandRoFormerSampler` —— 1/12 个有
-- `NormalizeAudioLoudness` —— 1/12 个有
-- `PrimitiveStringMultiline` —— 1/12 个有
-- `SaveImage` —— 1/12 个有
+- `WanVideoTorchCompileSettings` —— 8/10 个有
+- `INTConstant` —— 5/10 个有
+- `easy showAnything` —— 3/10 个有
+- `CR Text` —— 2/10 个有
+- `SimpleMath+` —— 2/10 个有
+- `CR SDXL Aspect Ratio` —— 1/10 个有
+- `FL_PathAnimator` —— 1/10 个有
+- `Getter` —— 1/10 个有
+- `ImpactInt` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `LayerUtility: TextBox` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
+- `Setter` —— 1/10 个有
+- `Text` —— 1/10 个有
 
 ## 典型参数
 

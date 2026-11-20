@@ -1,78 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_421
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.707571
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, DrawBBoxes, ImageResizeKJv2, LTXVConcatAVLatent, LoadImage, LoraLoaderModelOnly, MVEx_MaskCleanup, MVEx_MaskToLatentSpace, MVEx_SubjectCrop, MVEx_SubjectUncrop, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PreviewAnimation, RandomNoise, ResolutionSelector, SAM3_TrackPreview, SAM3_TrackToMask, SAM3_VideoTrack, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.4605
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, ImageResizeKJv2, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy imageRemBg]
 problems: []
 missing: []
-members: [平台全量/Minimax_H3｜单人 & 多人中选一人替换｜+ 遮罩选人 + Character Swap V1.5 人物替换 LoRA_2106890082614603777.json, 平台全量/minimax_h3_角色替换_2113272648531800065.json, 数字人/数字人/minimax_h3_角色替换_2113147355452235777.json, 视频生成/图生视频/H3 Character Swap 1.5｜SAM 3.1 精准角色替换·VDN8 加速版_2113162325590102018.json, 视频生成/图生视频/H3 Character Swap 1.5｜SAM 3.1 精准角色替换·VDN8 加速版_2114606057728335873.json, 视频生成/图生视频/H3_Character_Swap_1.5｜SAM_3.1_精准角色替换·VDN8_加速版_2115232128324694017.json, 视频生成/图生视频/替换多人视频中的人物采用人物遮罩（简单提示词+h3_character_swap_mask）_2113250622324690946.json]
+members: [视频生成/图生视频/scall2  单人动作迁移_2069034704543764482.json, 视频生成/图生视频/scall2单人循环动作迁移_2069027789755469826.json, 视频生成/图生视频/女装带货_2074116583454236674.json, 视频生成/图生视频/数字人女装带货视频_2082802589850230786.json, 视频生成/图生视频/视频主角想换就换！SCAIL2人物替换工作流｜全节点注释直接抄_2065014891525795842.json, 视频生成/文生视频/SCAIL2-动作迁移（二创、跳舞、动作）_2064755609194549249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_421
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/Minimax_H3｜单人 & 多人中选一人替换｜+ 遮罩选人 + Character Swap V1.5 人物替换 LoRA_2106890082614603777.json、平台全量/minimax_h3_角色替换_2113272648531800065.json、数字人/数字人/minimax_h3_角色替换_2113147355452235777.json、视频生成/图生视频/H3 Character Swap 1.5｜SAM 3.1 精准角色替换·VDN8 加速版_2113162325590102018.json、视频生成/图生视频/H3 Character Swap 1.5｜SAM 3.1 精准角色替换·VDN8 加速版_2114606057728335873.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/scall2  单人动作迁移_2069034704543764482.json、视频生成/图生视频/scall2单人循环动作迁移_2069027789755469826.json、视频生成/图生视频/女装带货_2074116583454236674.json、视频生成/图生视频/数字人女装带货视频_2082802589850230786.json、视频生成/图生视频/视频主角想换就换！SCAIL2人物替换工作流｜全节点注释直接抄_2065014891525795842.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 6 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `DrawBBoxes`
+- `DiffusionModelLoaderKJ`
 - `ImageResizeKJv2`
-- `LTXVConcatAVLatent`
+- `Int`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MVEx_MaskCleanup`
-- `MVEx_MaskToLatentSpace`
-- `MVEx_SubjectCrop`
-- `MVEx_SubjectUncrop`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `PreviewAnimation`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SAM3_TrackPreview`
-- `SAM3_TrackToMask`
 - `SAM3_VideoTrack`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `UNETLoader`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncode`
-- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanSCAILToVideo`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPreviewOverrideKJ` —— 6/7 个有
-- `PrimitiveFloat` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 6/7 个有
-- `ResizeImageMaskNode` —— 6/7 个有
-- `BasicScheduler` —— 4/7 个有
-- `GetNode` —— 4/7 个有
-- `KSamplerSelect` —— 4/7 个有
-- `ModelAttentionBackend` —— 4/7 个有
-- `SetNode` —— 4/7 个有
-- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 3/7 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 3/7 个有
-- `Anything Everywhere3` —— 1/7 个有
-- `BlockSparseAttention` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 5/6 个有
+- `GetNode` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `easy batchAnything` —— 5/6 个有
+- `easy forLoopEnd` —— 5/6 个有
+- `easy forLoopStart` —— 5/6 个有
+- `VHS_VideoInfo` —— 4/6 个有
+- `easy showAnything` —— 4/6 个有
+- `ComfyMathExpression` —— 3/6 个有
+- `DF_Int_to_Float` —— 2/6 个有
+- `ImageConcatMulti` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `MathExpression|pysssss` —— 2/6 个有
+- `ModelSamplingSD3` —— 2/6 个有
+- `TTResolutionSelector` —— 2/6 个有
+- `VHS_VideoInfoLoaded` —— 2/6 个有
+- `CR Text` —— 1/6 个有
+- `Fast Groups Muter (rgthree)` —— 1/6 个有
+- `ImpactConditionalBranch` —— 1/6 个有
+- `Mute / Bypass Relay (rgthree)` —— 1/6 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/6 个有
+- `PrimitiveBoolean` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
 
 ## 典型参数
 

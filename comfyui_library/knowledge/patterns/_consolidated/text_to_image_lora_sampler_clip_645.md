@@ -3,58 +3,53 @@ name: text_to_image_lora_sampler_clip_645
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.9015
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimpleWithSwitch, CompressImages, ConditioningZeroOut, EmptyLatentImage, FlowMatchEulerDiscreteScheduler (Custom), FluxKontextImageScale, FluxKontextMultiReferenceLatentMethod, Image Filter Adjustments, JjkText, KSampler, KSamplerSelect, Krea2OstrisEditModelPatch, LoadImage, LoraLoader, LoraLoaderModelOnly, PrimitiveInt, ResizeImageMaskNode, SamplerCustom, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SplitSigmasDenoise, TextEncodeKrea2OstrisEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy loraStack, easy loraStackApply, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.7285
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, EmptyLatentImage, FluxKontextImageScale, GetNode, Image Comparer (rgthree), ImpactSwitch, JjkText, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PlaySound|pysssss, ReferenceLatent, SaveImage, SetNode, Text Multiline, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy promptLine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2动漫转真人放大Z洗图｜图生图超真实写实风格_2091590712671428609.json, 图片生成/图生图/动漫转真人写实神作｜Krea2放大+Z洗图图生图_2091761742648004610.json]
+members: [图片生成/图生图/人物多视角5套｜Qwen image Edit 2511角色一致性_2090543724999827457.json, 图片生成/图生图/人物多视角5套｜Qwen image Edit 2511角色设计一致性出图_2090846663916212225.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_645
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Krea2动漫转真人放大Z洗图｜图生图超真实写实风格_2091590712671428609.json、图片生成/图生图/动漫转真人写实神作｜Krea2放大+Z洗图图生图_2091761742648004610.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人物多视角5套｜Qwen image Edit 2511角色一致性_2090543724999827457.json、图片生成/图生图/人物多视角5套｜Qwen image Edit 2511角色设计一致性出图_2090846663916212225.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimpleWithSwitch`
-- `CompressImages`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `FlowMatchEulerDiscreteScheduler (Custom)`
 - `FluxKontextImageScale`
-- `FluxKontextMultiReferenceLatentMethod`
-- `Image Filter Adjustments`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImpactSwitch`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `Krea2OstrisEditModelPatch`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
-- `LoraLoader`
 - `LoraLoaderModelOnly`
-- `PrimitiveInt`
-- `ResizeImageMaskNode`
-- `SamplerCustom`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
-- `SplitSigmasDenoise`
-- `TextEncodeKrea2OstrisEdit`
+- `ModelSamplingAuraFlow`
+- `PlaySound|pysssss`
+- `ReferenceLatent`
+- `SaveImage`
+- `SetNode`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `easy loraStack`
-- `easy loraStackApply`
+- `easy promptLine`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
@@ -67,8 +62,6 @@ source: knowledge_consolidation
 | 采样算法 | er_sde | - | 2 | 100% |
 | 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| LoRA 模型强度 | 0.5 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
 | 宽度 | 80 | - | 2 | 100% |
 | 高度 | 80 | - | 2 | 100% |
 
@@ -85,8 +78,6 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，2 个样本，一致性 100%
 - 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（4/2 个样本）：Steps较低可能导致细节不足

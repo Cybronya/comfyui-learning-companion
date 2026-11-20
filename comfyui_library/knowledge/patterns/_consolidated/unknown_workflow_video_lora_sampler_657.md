@@ -1,100 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_657
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.6245
-common_nodes: [ApplyFaceProcessor, Bjornulf_ShowInt, DWPreprocessor, DownloadAndLoadWav2VecModel, FaceProcessorLoader, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJv2, Label (rgthree), LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, SetNode, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy forLoopEnd, easy forLoopStart]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.771
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, Fast Groups Bypasser (rgthree), INTConstant, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame, easy clearCacheAll, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/AI把你变成男高音帕瓦罗蒂，给猫主子开唱《哈基米起床》_1968950372482105345.json, 平台全量/AI换人术：一键把你变成乐队主唱_1964157713515167746.json, 平台全量/🚀让我们一起跳“上车舞”吧！AI换人术把你变成喊麦舞王！🔥_1967267545176739841.json, 音频生成/音频生成/AI换人术一键让你开跳“上车舞”，IndexTTS2自定义喊麦语音内容！_1966927012281638914.json]
+members: [数字人/数字人/iyuandou补充人脸素材首尾帧工作流_1986340826437603330.json, 视频生成/图生视频/Work-Fisher  -  全新AIO-MAGE-长视频_1968320251140157442.json, 视频生成/图生视频/iyuandou补充人脸素材工作流_1984201838234845185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_657
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/AI把你变成男高音帕瓦罗蒂，给猫主子开唱《哈基米起床》_1968950372482105345.json、平台全量/AI换人术：一键把你变成乐队主唱_1964157713515167746.json、平台全量/🚀让我们一起跳“上车舞”吧！AI换人术把你变成喊麦舞王！🔥_1967267545176739841.json、音频生成/音频生成/AI换人术一键让你开跳“上车舞”，IndexTTS2自定义喊麦语音内容！_1966927012281638914.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/iyuandou补充人脸素材首尾帧工作流_1986340826437603330.json、视频生成/图生视频/Work-Fisher  -  全新AIO-MAGE-长视频_1968320251140157442.json、视频生成/图生视频/iyuandou补充人脸素材工作流_1984201838234845185.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `Bjornulf_ShowInt`
-- `DWPreprocessor`
-- `DownloadAndLoadWav2VecModel`
-- `FaceProcessorLoader`
-- `GetImageRangeFromBatch`
-- `GetNode`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `Fast Groups Bypasser (rgthree)`
 - `INTConstant`
-- `ImageBatchMulti`
-- `ImageResizeKJv2`
-- `Label (rgthree)`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewImage`
-- `SetNode`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAddStandInLatent`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
+- `WanVaceToVideo`
 - `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `easy clearCacheAll`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `DepthAnything_V2` —— 3/4 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 3/4 个有
-- `AudioCrop` —— 2/4 个有
-- `AudioSeparation` —— 2/4 个有
-- `CLIPVisionLoader` —— 2/4 个有
-- `GetImageSizeAndCount` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `PreviewAudio` —— 2/4 个有
-- `WanVideoClipVisionEncode` —— 2/4 个有
-- `WanVideoImageToVideoMultiTalk` —— 2/4 个有
-- `WanVideoTextEncodeCached` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `GroundingDinoModelLoader (segment anything)` —— 1/4 个有
-- `GroundingDinoSAMSegment (segment anything)` —— 1/4 个有
-- `GrowMaskWithBlur` —— 1/4 个有
-- `IndexTTS2Run` —— 1/4 个有
-- `MaskToImage` —— 1/4 个有
-- `MelBandRoFormerModelLoader` —— 1/4 个有
-- `MelBandRoFormerSampler` —— 1/4 个有
-- `Mix Color By Mask` —— 1/4 个有
-- `NormalizeAudioLoudness` —— 1/4 个有
-- `PrimitiveString` —— 1/4 个有
-- `SAMModelLoader (segment anything)` —— 1/4 个有
-- `SaveAudio` —— 1/4 个有
-- `ttN text` —— 1/4 个有
+- `TorchCompileModelWanVideoV2` —— 2/3 个有
+- `ImageBatch` —— 1/3 个有
+- `ImageColorMatch+` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `StringLength` —— 1/3 个有
+- `VHS_LoadVideoPath` —— 1/3 个有
+- `VHS_PruneOutputs` —— 1/3 个有
+- `VHS_SelectFilename` —— 1/3 个有
+- `VHS_SplitImages` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（5/3 个样本）：Steps较低可能导致细节不足

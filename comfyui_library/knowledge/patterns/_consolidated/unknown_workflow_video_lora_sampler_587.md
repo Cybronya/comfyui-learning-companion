@@ -1,96 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_587
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.51
-common_nodes: [BatchImagesNode, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, ImageResizeKJv2, LoadImage, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SetNode, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings]
+frequency: 4
+level: strong
+coverage: 0.98975
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, INTConstant, ImageFromBatch+, JWInteger, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SaveImage, TT_img_enc, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/视频-动作迁移-v2-wan2.1-SCAIL2_2079575176957743105.json, 视频生成/图生视频/SCAIL2多视角参考_2077936156414668802.json, 视频生成/图生视频/scail2加强终极人物替换_2081353014853595138.json, 视频生成/图生视频/scail2替换背景_2080680296361586689.json, 视频生成/图生视频/scaile2多参多角色指定角色替换_2081628200786026497.json]
+members: [视频生成/图生视频/wan2.2 Lighnining 1108 VS  1217 VS 10+4原版文生视频_2001622181756977154.json, 视频生成/文生视频/Wan2.2 lightx2v 1217文生视频V1_2001672195485122562.json, 视频生成/文生视频/wan2.2 smooth Vs Lightning V2+混合低噪对比T2V工作流_1987359372651245570.json, 视频生成/文生视频/wan2.2 smooth Vs Lightning V2混合低噪+原版10+4对比T2V工作流_1987403122442219521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_587
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/视频-动作迁移-v2-wan2.1-SCAIL2_2079575176957743105.json、视频生成/图生视频/SCAIL2多视角参考_2077936156414668802.json、视频生成/图生视频/scail2加强终极人物替换_2081353014853595138.json、视频生成/图生视频/scail2替换背景_2080680296361586689.json、视频生成/图生视频/scaile2多参多角色指定角色替换_2081628200786026497.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/wan2.2 Lighnining 1108 VS  1217 VS 10+4原版文生视频_2001622181756977154.json、视频生成/文生视频/Wan2.2 lightx2v 1217文生视频V1_2001672195485122562.json、视频生成/文生视频/wan2.2 smooth Vs Lightning V2+混合低噪对比T2V工作流_1987359372651245570.json、视频生成/文生视频/wan2.2 smooth Vs Lightning V2混合低噪+原版10+4对比T2V工作流_1987403122442219521.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BatchImagesNode`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `GetNode`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
-- `SetNode`
+- `EmptyHunyuanLatentVideo`
+- `INTConstant`
+- `ImageFromBatch+`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SaveImage`
+- `TT_img_enc`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode V2`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
-- `WanAnimatePlus SamplerFromSettings`
-- `WanAnimatePlus SamplerSettings`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus VAELoader`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `VHS_LoadVideo` —— 4/5 个有
-- `easy clearCacheAll` —— 4/5 个有
-- `PlaySound|pysssss` —— 3/5 个有
-- `PrimitiveBoolean` —— 3/5 个有
-- `SimpleMath+` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `easy mathInt` —— 3/5 个有
-- `ImageConcatenate_UTK` —— 2/5 个有
-- `RHHiddenNodes` —— 2/5 个有
-- `RMBG` —— 2/5 个有
-- `Text` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `CM_FloatToInt` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `FillMaskWithColor` —— 1/5 个有
-- `GetImageSizeAndCount` —— 1/5 个有
-- `GrowMask` —— 1/5 个有
-- `INTConstant` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `InvertMask` —— 1/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `MemoryCleaner` —— 1/5 个有
-- `PointsEditor` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
-- `SeCModelLoader` —— 1/5 个有
-- `SeCVideoSegmentation` —— 1/5 个有
-- `VHS_LoadVideoFFmpeg` —— 1/5 个有
-- `WanAnimatePlus ContextOptions` —— 1/5 个有
-- `easy indexAnything` —— 1/5 个有
-- `easy seed` —— 1/5 个有
+- `DownloadAndLoadGIMMVFIModel` —— 3/4 个有
+- `GIMMVFI_interpolate` —— 3/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `ImageSharpen` —— 3/4 个有
+- `TorchCompileModel` —— 3/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `Text Multiline` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `easy seed` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `AddLabel` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 12 | 12 - 12 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | uni_pc | - | 4 | 100% |
+| 重绘幅度 | beta | - | 4 | 100% |
 
 ## 常见问题
 
@@ -98,4 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 uni_pc，4 个样本，一致性 100%
+- 重绘幅度 最常用 beta，4 个样本，一致性 100%

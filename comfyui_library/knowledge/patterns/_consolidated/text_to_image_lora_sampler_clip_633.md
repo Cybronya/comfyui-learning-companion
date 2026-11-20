@@ -3,32 +3,32 @@ name: text_to_image_lora_sampler_clip_633
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8415
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, EmptyLatentImage, Image Comparer (rgthree), Int, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8735
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2 Klein9b多图融合编辑｜图生图高质量合成_2095298654922956802.json, 图片生成/图生图/Moss image洗图工作流 图像优化修复处理生成工具_2113417278246187009.json]
+members: [图片生成/图生图/QwenEdit2511真人转动漫｜CG幻想风格化图生图绘制_2093133017576464385.json, 图片生成/图生图/自动矫正角度重布光源｜全能电商产品溶图生成_2092944358944366593.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_633
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein9b多图融合编辑｜图生图高质量合成_2095298654922956802.json、图片生成/图生图/Moss image洗图工作流 图像优化修复处理生成工具_2113417278246187009.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/QwenEdit2511真人转动漫｜CG幻想风格化图生图绘制_2093133017576464385.json、图片生成/图生图/自动矫正角度重布光源｜全能电商产品溶图生成_2092944358944366593.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `Image Comparer (rgthree)`
-- `Int`
 - `JjkText`
 - `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
@@ -38,22 +38,20 @@ source: knowledge_consolidation
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `PDRatioSelector` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `easy int` —— 1/2 个有
-- `easy isNone` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `ratio_selector` —— 1/2 个有
+- `Anything Everywhere3` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `Text Input [Dream]` —— 1/2 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/2 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/2 个有
+- `easy setNode` —— 1/2 个有
 
 ## 典型参数
 
@@ -71,7 +69,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -82,5 +80,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

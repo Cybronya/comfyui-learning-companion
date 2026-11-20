@@ -1,90 +1,83 @@
 ---
 name: text_to_image_upscale_sampler_clip_31
 type: Text To Image
-frequency: 4
-level: weak
-coverage: 0.88175
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageResize+, ImageScaleBy, KSampler, PrimitiveStringMultiline, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.711
+common_nodes: [AILab_QwenVL, Anything Everywhere, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), ImageLoader, ImageScaleToTotalPixels, Int, KSampler, LayerUtility: PurgeVRAM V2, MaraScottIsEmptyOrNone_v1, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/文生图/VividMuse Krea2 + Z-Image Dual Sample + HiRes_2077026212198838273.json, 图片生成/文生图/VividMuse 红潮 ERNIE RedMIX_2048760839439650817.json, 图片生成/文生图/krea2+moss极致双采（注释内有模型和节点下载链接）_2115332254028353537.json, 图片生成/文生图/人像 Krea2 + Z-Image_2080846052952993794.json]
+members: [图片生成/图生图/qwen3VL反推ZImage生图SeedVR25高清修复电影场景写实肖像动漫角色_2063539361647513602.json, 图片生成/文生图/qwen3VL反推+Z-Image生图+SeedVR2.5高清修复，电影场景_写实肖像_动漫角色_1995712593509617666.json, 图片生成/文生图/文生图，自动洗图，qwen3VL+Z-Image+SeedVR_2012875973548580865.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_sampler_clip_31
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/VividMuse Krea2 + Z-Image Dual Sample + HiRes_2077026212198838273.json、图片生成/文生图/VividMuse 红潮 ERNIE RedMIX_2048760839439650817.json、图片生成/文生图/krea2+moss极致双采（注释内有模型和节点下载链接）_2115332254028353537.json、图片生成/文生图/人像 Krea2 + Z-Image_2080846052952993794.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/qwen3VL反推ZImage生图SeedVR25高清修复电影场景写实肖像动漫角色_2063539361647513602.json、图片生成/文生图/qwen3VL反推+Z-Image生图+SeedVR2.5高清修复，电影场景_写实肖像_动漫角色_1995712593509617666.json、图片生成/文生图/文生图，自动洗图，qwen3VL+Z-Image+SeedVR_2012875973548580865.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
+- `Anything Everywhere`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
 - `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
+- `ImageLoader`
+- `ImageScaleToTotalPixels`
+- `Int`
 - `KSampler`
-- `PrimitiveStringMultiline`
+- `LayerUtility: PurgeVRAM V2`
+- `MaraScottIsEmptyOrNone_v1`
 - `SaveImage`
-- `Seed (rgthree)`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy ifElse`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 3/4 个有
-- `ResolutionSelector` —— 3/4 个有
-- `VAEEncode` —— 3/4 个有
-- `easy promptList` —— 3/4 个有
-- `KSamplerAdvanced` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `easy loraStack` —— 2/4 个有
-- `easy loraStackApply` —— 2/4 个有
-- `CheckpointLoaderSimple` —— 1/4 个有
-- `HAIGC_SaveImagesToZip` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `ModelSamplingAuraFlow` —— 1/4 个有
-- `easy imageSize` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `PreviewAny` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `GetImageSize` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `QwenImageLatentAspectRatio` —— 1/3 个有
+- `ShowAnything|Mie` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 512 - 1024 | 4 | 67% |
-| 高度 | 768 | 512 - 1536 | 4 | 53% |
-| 采样步数 | 10 | 5 - 25 | 3 | 36% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 8 | 4 | 8% |
-| 采样算法 | euler_ancestral | - | 4 | 25% |
-| 调度器 | simple | - | 4 | 50% |
-| 重绘幅度 | 0.36 | 0.35 - 1 | 3 | 47% |
+| 采样步数 | 10 | 10 - 10 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 544 | 544 - 544 | 3 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 1024，4 个样本
-- 高度 中位数 768，观测区间 512 - 1536，4 个样本
-- 采样步数 中位数 10，观测区间 5 - 25，3 个样本，取值分散，一致性仅 36%
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 8，4 个样本，取值分散，一致性仅 8%
-- 采样算法 最常用 euler_ancestral，4 个样本，一致性 25%
-- 调度器 最常用 simple，4 个样本，一致性 50%
-- 重绘幅度 中位数 0.36，观测区间 0.35 - 1，3 个样本，取值分散，一致性仅 47%
-- 高发问题（3/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 544，观测区间 544 - 544，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）

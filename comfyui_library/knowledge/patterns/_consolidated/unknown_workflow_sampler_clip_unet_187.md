@@ -1,68 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_187
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.924625
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: strong
+coverage: 0.941286
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, DualCLIPLoader, FlipSigmas, FluxDeGuidance, FluxForwardODESampler, FluxReverseODESampler, InFluxModelSamplingPred, Joy_caption_two, Joy_caption_two_load, LoadImage, OutFluxModelSamplingPred, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/▶2_Flux2Klein-单图及多图编辑_2066881431275663361.json, 图片生成/图生图/【1月】高质量图像编辑 Flux2-Klein-9B_2012162088738758658.json, 图片生成/图生图/【Flux2 Klein】 双图编辑+换装lora版本_2030255334941528065.json, 图片生成/图生图/【Flux2 Klein】 （加密版）双图编辑+换装lora版本_2049724297060552705.json, 图片生成/图生图/【工作台】 双图编辑+换装lora版本（常规）_2075804075794456578.json, 图片生成/图生图/【推荐动漫转真人】Flux2 Klein_史上最强动漫转写实真人_2017575897674551298.json, 图片生成/图生图/一键去水印FLUX2-klein-增强版_2028855059450171393.json, 图片生成/图生图/最强万物迁移 f2k_9b_anything change clothes_2026650952215826434.json]
+members: [图片生成/图生图/6月最新-宠物油画风转绘 细节一致性超高 FLUX逆采样_1937540216741892097.json, 图片生成/图生图/Flux逆采样_在线生图_1896893612884664322.json, 图片生成/图生图/人物宠物油画风格化转换，细节一致性高，FLUX_2016511200237981698.json, 图片生成/图生图/内衣精修工作流_2018139651474722818.json, 图片生成/图生图/宠物油画风转绘+细节一致性超高+FLUX逆采样_2028654614836420609.json, 图片生成/图生图/最新-宠物油画风转绘 细节一致性超高 FLUX逆采样_2026123070141898753.json, 图片生成/图生图/油画·人物宠物风景风格化转换，细节一致性高，FLUX_2016517105818013697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_187
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/▶2_Flux2Klein-单图及多图编辑_2066881431275663361.json、图片生成/图生图/【1月】高质量图像编辑 Flux2-Klein-9B_2012162088738758658.json、图片生成/图生图/【Flux2 Klein】 双图编辑+换装lora版本_2030255334941528065.json、图片生成/图生图/【Flux2 Klein】 （加密版）双图编辑+换装lora版本_2049724297060552705.json、图片生成/图生图/【工作台】 双图编辑+换装lora版本（常规）_2075804075794456578.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/6月最新-宠物油画风转绘 细节一致性超高 FLUX逆采样_1937540216741892097.json、图片生成/图生图/Flux逆采样_在线生图_1896893612884664322.json、图片生成/图生图/人物宠物油画风格化转换，细节一致性高，FLUX_2016511200237981698.json、图片生成/图生图/内衣精修工作流_2018139651474722818.json、图片生成/图生图/宠物油画风转绘+细节一致性超高+FLUX逆采样_2028654614836420609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `KSamplerSelect`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `FlipSigmas`
+- `FluxDeGuidance`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
+- `InFluxModelSamplingPred`
+- `Joy_caption_two`
+- `Joy_caption_two_load`
 - `LoadImage`
-- `RandomNoise`
+- `OutFluxModelSamplingPred`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 7/8 个有
-- `ReferenceLatent` —— 7/8 个有
-- `VAEEncode` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 6/8 个有
-- `ImageConcanate` —— 4/8 个有
-- `ImageScaleToTotalPixels` —— 4/8 个有
-- `easy imageScaleDownToSize` —— 4/8 个有
-- `Image Comparer (rgthree)` —— 3/8 个有
-- `ConditioningAddImageReference` —— 1/8 个有
-- `CustomAddLabel` —— 1/8 个有
-- `DuckHideNode` —— 1/8 个有
-- `JWInteger` —— 1/8 个有
-- `Load Lora` —— 1/8 个有
-- `PDIMAGE_LongerSize` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `SeedVR2` —— 1/8 个有
-- `SeedVR2BlockSwap` —— 1/8 个有
-- `SeedVR2ExtraArgs` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `ConstrainImage|pysssss` —— 6/7 个有
+- `Image Comparer (rgthree)` —— 6/7 个有
+- `LoraLoader` —— 6/7 个有
+- `ColorMatch` —— 5/7 个有
+- `ConcatText_Zho` —— 5/7 个有
+- `GetImageSize+` —— 5/7 个有
+- `ImageScale` —— 5/7 个有
+- `ImpactInt` —— 5/7 个有
+- `Float` —— 1/7 个有
+- `Get Image Size` —— 1/7 个有
+- `ImageResize+` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `LayerUtility: HLFrequencyDetailRestore` —— 1/7 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 0.8 | 0.8 - 1 | 6 | 91% |
+| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -70,4 +73,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，6 个样本，取值集中（一致性 91%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

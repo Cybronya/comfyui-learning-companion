@@ -1,72 +1,77 @@
 ---
 name: unknown_workflow_video_upscale_lora_12
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8356
-common_nodes: [Anything Everywhere, CLIPVisionLoader, CR Text, ColorMatch, DWPreprocessor, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, INTConstant, ImageResizeKJv2, ImageUpscaleWithModel, LoadImage, MathExpression|pysssss, PixelPerfectResolution, SetNode, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.601
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, ImageResizeKJ, ImageSmartSharpen+, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SeargePromptText, SetNode, ShowText|pysssss, SimpleCondition+, VHS_VideoCombine, Video_Upscale_With_Model, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan Animate 动作迁移（整活版）_1987934084561350657.json, 视频生成/图生视频/Wan Animate 动作迁移（背景不变）_1984675303345766402.json, 视频生成/图生视频/Wan Animate 视频换人物（主体迁移）_1984537427039633410.json, 视频生成/图生视频/Wan Animate 视频换人物（主体迁移）_2070675644220002306.json, 视频生成/图生视频/Wan Animate动作迁移V2（长视频可用，不劣化）_2015730877476642818.json]
+members: [视频生成/图生视频/【FusionX】图生视频-kj 8步加速版_1935512780151914497.json, 视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json, 视频生成/图生视频/🈚️运镜控制-图生视频+Lightx2v+Fun-wan-720p_1947363483677511682.json, 视频生成/图生视频/🈚️首尾帧-FLF2V-kj-Lightx2v-wan-720p_1947347376895840258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_12
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan Animate 动作迁移（整活版）_1987934084561350657.json、视频生成/图生视频/Wan Animate 动作迁移（背景不变）_1984675303345766402.json、视频生成/图生视频/Wan Animate 视频换人物（主体迁移）_1984537427039633410.json、视频生成/图生视频/Wan Animate 视频换人物（主体迁移）_2070675644220002306.json、视频生成/图生视频/Wan Animate动作迁移V2（长视频可用，不劣化）_2015730877476642818.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【FusionX】图生视频-kj 8步加速版_1935512780151914497.json、视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json、视频生成/图生视频/🈚️运镜控制-图生视频+Lightx2v+Fun-wan-720p_1947363483677511682.json、视频生成/图生视频/🈚️首尾帧-FLF2V-kj-Lightx2v-wan-720p_1947347376895840258.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPVisionLoader`
-- `CR Text`
-- `ColorMatch`
-- `DWPreprocessor`
+全部 4 个 workflow 都包含：
 - `DownloadAndLoadGIMMVFIModel`
 - `GIMMVFI_interpolate`
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `ImageUpscaleWithModel`
+- `ImageResizeKJ`
+- `ImageSmartSharpen+`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PixelPerfectResolution`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `SeargePromptText`
 - `SetNode`
-- `UpscaleModelLoader`
-- `VHS_LoadVideo`
+- `ShowText|pysssss`
+- `SimpleCondition+`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `Video_Upscale_With_Model`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_ImageFaceCrop` —— 4/5 个有
-- `OnnxDetectionModelLoader` —— 4/5 个有
-- `PoseAndFaceDetection` —— 4/5 个有
-- `VHS_VideoInfo` —— 3/5 个有
-- `BlockifyMask` —— 2/5 个有
-- `DF_Int_to_Float` —— 2/5 个有
-- `DrawMaskOnImage` —— 2/5 个有
-- `GrowMask` —— 2/5 个有
-- `MaskToImage` —— 2/5 个有
-- `SeCModelLoader` —— 2/5 个有
-- `SeCVideoSegmentation` —— 2/5 个有
-- `WanVideoContextOptions` —— 1/5 个有
-- `easy imageRemBg` —— 1/5 个有
+- `Int` —— 3/4 个有
+- `RH_Captioner` —— 3/4 个有
+- `WanVideoClipVisionEncode` —— 3/4 个有
+- `WanVideoFreeInitArgs` —— 3/4 个有
+- `CLIPVisionLoader` —— 2/4 个有
+- `MathExpression|pysssss` —— 2/4 个有
+- `WanVideoEasyCache` —— 2/4 个有
+- `WanVideoExperimentalArgs` —— 2/4 个有
+- `WanVideoSLG` —— 2/4 个有
+- `WanVideoSetRadialAttention` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `ADE_CameraPoseBasic` —— 1/4 个有
+- `CameraPoseVisualizer` —— 1/4 个有
+- `GetImageSize` —— 1/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `LoadWanVideoClipTextEncoder` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
+- `WanVideoFunCameraEmbeds` —— 1/4 个有
+- `WanVideoMagCache` —— 1/4 个有
+- `WanVideoTeaCache` —— 1/4 个有
+- `easy imageConcat` —— 1/4 个有
+- `easy seed` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,69 +3,73 @@ name: unknown_workflow_lora_sampler_clip_171
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 0.94125
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8825
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveBoolean, RH_Captioner, TextBox, UNETLoader, VAEDecode, VAELoader, WanImageToVideo, easy ifElse, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/AI素影绘_1924800227784781826.json, 图片生成/图生图/Flux文生图换脸写真 一键生图系列_1907042022929096706.json, 图片生成/文生图/Flux文生图PuLid换脸-双重曝光·黑白艺术海报_1954772987443503106.json, 图片生成/文生图/Flux模型文生图换脸加contral_1913513255921250305.json]
+members: [视频生成/图生视频/Wan2.2 电影级画面图生视频_1950023437323517954.json, 视频生成/图生视频/Wan2.2-高速版-直出720p -自动提示词_1949982975842803713.json, 视频生成/图生视频/wan2.2_14B_自动提示词优化_图生视频-加速版-KJ模型_1950557926803099649.json, 视频生成/图生视频/图生视频工作流_2013427076698742785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_171
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/AI素影绘_1924800227784781826.json、图片生成/图生图/Flux文生图换脸写真 一键生图系列_1907042022929096706.json、图片生成/文生图/Flux文生图PuLid换脸-双重曝光·黑白艺术海报_1954772987443503106.json、图片生成/文生图/Flux模型文生图换脸加contral_1913513255921250305.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 电影级画面图生视频_1950023437323517954.json、视频生成/图生视频/Wan2.2-高速版-直出720p -自动提示词_1949982975842803713.json、视频生成/图生视频/wan2.2_14B_自动提示词优化_图生视频-加速版-KJ模型_1950557926803099649.json、视频生成/图生视频/图生视频工作流_2013427076698742785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxGuidance`
-- `KSamplerSelect`
+- `CR Text Replace`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `RH_Captioner`
+- `TextBox`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `WanImageToVideo`
+- `easy ifElse`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ControlNetLoader` —— 2/4 个有
-- `LineArtPreprocessor` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `AIO_Preprocessor` —— 1/4 个有
-- `AutoCropFaces` —— 1/4 个有
-- `ControlNetApplyAdvanced` —— 1/4 个有
-- `ControlNetApplySD3` —— 1/4 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/4 个有
-- `LayerUtility: TextJoin` —— 1/4 个有
-- `PoseNode` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `SetUnionControlNetType` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `ImpactSwitch` —— 3/4 个有
+- `JWInteger` —— 3/4 个有
+- `Primitive integer [Crystools]` —— 3/4 个有
+- `SimpleMath+` —— 3/4 个有
+- `VHS_VideoCombine` —— 3/4 个有
+- `ImageResizeKJ` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `CreateVideo` —— 1/4 个有
+- `ImpactInt` —— 1/4 个有
+- `LoadImagesFromURL` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
+- `SaveVideo` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1004 | 896 - 1024 | 4 | 95% |
-| 高度 | 1344 | 1152 - 1536 | 4 | 90% |
-| ControlNet 权重 | 0.6 | - | 2 | 83% |
+| 采样步数 | fixed | - | 4 | 75% |
+| Prompt 约束强度(CFG) | 7 | 6 - 8 | 4 | 90% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | lcm | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -73,6 +77,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1004，观测区间 896 - 1024，4 个样本，取值集中（一致性 95%）
-- 高度 中位数 1344，观测区间 1152 - 1536，4 个样本，取值集中（一致性 90%）
-- ControlNet 权重 中位数 0.6，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
+- 采样步数 最常用 fixed，4 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 6 - 8，4 个样本，取值集中（一致性 90%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

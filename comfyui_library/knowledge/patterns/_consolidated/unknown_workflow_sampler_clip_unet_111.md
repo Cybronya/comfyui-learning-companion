@@ -1,40 +1,34 @@
 ---
 name: unknown_workflow_sampler_clip_unet_111
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.900182
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImagePadForOutpaint, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy seed]
+coverage: 0.8975
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2-klein 扩图_局部重绘_2013083035629002753.json, 图片生成/图生图/flux 2 klein 无缝扩图+局部重绘_2017924280838791170.json, 图片生成/图生图/klein 扩图_2018209439236493313.json, 图片生成/图生图/klein 扩图_局部重绘_2012965333056888833.json, 图片生成/图生图/klein 扩图_局部重绘_2016153153808371714.json, 图片生成/图生图/klein单图编辑_2014331376341880834.json, 图片生成/图生图/klein单图编辑_2026469050368397313.json, 图片生成/图生图/klein扩图工作流_2013942199481798658.json, 平台全量/Flux 2 klein 4b   扩图_局部重绘 图像万能编辑 无缝扩图_2015322072406298626.json, 平台全量/Flux2 klein 9B  扩图_局部重绘 klein_2014210317215076353.json, 平台全量/局部重绘+极限扩图 Flux-2-klein-9B  极速自然无缝扩图 无痕真实扩图   图像边界外_2061701599482966017.json]
+members: [图片生成/图生图/Flux2-Klein三视图_2047955676676231169.json, 图片生成/图生图/Flux2-Klein人物角色三视图3D国漫CG风格（图生图）_2090025230700990466.json, 图片生成/图生图/Flux2-klein9B单图+双图编辑工作流_2012386786735034369.json, 图片生成/图生图/Flux2-klein单图+双图编辑_2012711003414339585.json, 图片生成/图生图/Flux2Klein动漫转写实真人+细节增强_2063438140592975874.json, 图片生成/图生图/Flux2Klein动漫转真实+细节增强_2060937329581318146.json, 图片生成/图生图/Klein - 万物迁移_2064542485938008065.json, 图片生成/图生图/Klein - 万物迁移_2067150065982070785.json, 图片生成/图生图/Klein - 万物迁移_2086300867355037698.json, 图片生成/图生图/产品精修工作流_2032002851513307137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_111
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Flux2-klein 扩图_局部重绘_2013083035629002753.json、图片生成/图生图/flux 2 klein 无缝扩图+局部重绘_2017924280838791170.json、图片生成/图生图/klein 扩图_2018209439236493313.json、图片生成/图生图/klein 扩图_局部重绘_2012965333056888833.json、图片生成/图生图/klein 扩图_局部重绘_2016153153808371714.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein三视图_2047955676676231169.json、图片生成/图生图/Flux2-Klein人物角色三视图3D国漫CG风格（图生图）_2090025230700990466.json、图片生成/图生图/Flux2-klein9B单图+双图编辑工作流_2012386786735034369.json、图片生成/图生图/Flux2-klein单图+双图编辑_2012711003414339585.json、图片生成/图生图/Flux2Klein动漫转写实真人+细节增强_2063438140592975874.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
-- `ImagePadForOutpaint`
-- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
 - `LoadImage`
-- `PreviewImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -43,28 +37,35 @@ source: knowledge_consolidation
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 10/11 个有
-- `ColorMatch` —— 9/11 个有
-- `DrawMaskOnImage` —— 8/11 个有
-- `Image Comparer (rgthree)` —— 5/11 个有
-- `BasicScheduler` —— 2/11 个有
-- `GetNode` —— 2/11 个有
-- `ImageSharpen` —— 2/11 个有
-- `JWInteger` —— 2/11 个有
-- `LayerFilter: Sharp & Soft` —— 2/11 个有
-- `LayerUtility: PurgeVRAM` —— 2/11 个有
-- `SetNode` —— 2/11 个有
-- `图像缩放V2_孤海` —— 2/11 个有
-- `CustomAddLabel` —— 1/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `Label (rgthree)` —— 1/11 个有
+- `EmptyFlux2LatentImage` —— 9/10 个有
+- `PreviewImage` —— 9/10 个有
+- `ConditioningZeroOut` —— 8/10 个有
+- `GetImageSize` —— 8/10 个有
+- `ImageScaleToTotalPixels` —— 8/10 个有
+- `LoraLoaderModelOnly` —— 7/10 个有
+- `CR Text` —— 5/10 个有
+- `PrimitiveFloat` —— 4/10 个有
+- `Image Comparer (rgthree)` —— 3/10 个有
+- `Anything Everywhere` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
+- `easy imageConcat` —— 2/10 个有
+- `CR Text Concatenate` —— 1/10 个有
+- `EmptyLatentImage` —— 1/10 个有
+- `ImageCompositeMasked` —— 1/10 个有
+- `JjkText` —— 1/10 个有
+- `LayerColor: ColorAdapter` —— 1/10 个有
+- `MaskBlur+` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
+- `ttN concat` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 576 | - | 1 | 100% |
 
 ## 常见问题
 

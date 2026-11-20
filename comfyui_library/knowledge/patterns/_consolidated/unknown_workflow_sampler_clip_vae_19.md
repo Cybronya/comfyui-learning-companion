@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_sampler_clip_vae_19
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.921583
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
+frequency: 9
+level: moderate
+coverage: 0.878333
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/吉卜力风格化_1905893406915088385.json, 图片生成/图生图/图片一键转灵魂画手风格_2024788264820936705.json, 图片生成/图生图/提取物品_1947232272145666049.json, 图片生成/图生图/文字编辑图片 Flux kontext dev_1938542570844938242.json, 图片生成/图生图/电商服装去除图片人物_1943097905094025218.json, 图片生成/图生图/移除物品_1947235737038168065.json, 平台全量/万物迁移 便利贴版_1950400459452407810.json, 平台全量/图片转灵魂画手风格_1949809882229817346.json, 平台全量/电商一键生成国风背景产品图_1946939348957687810.json, 平台全量/电商产品图换背景 kontext_1956251539327340546.json, 平台全量/电商去除图片马赛克_1938881900268474369.json, 平台全量/真人转彩铅画_1955107741595570178.json]
+members: [图片生成/图生图/【晨晨的AI应用包005】随机风格生成-通过FLUX2-Klein_2012057296452460546.json, 图片生成/图生图/工作流基础系列2-Klein双（多）图编辑工作流-基础向讲解此工作流_2012071492288258050.json, 图片生成/图生图/工作流基础系列3-Klein局部编辑工作流-基础向讲解此工作流_2044322503283187713.json, 图片生成/图生图/熊熊-Flux2 Klein局部重绘+图片去水印+物品迁移_2044458513019179010.json, 图片生成/图生图/精修Flux-2 Klein_2036724091914293250.json, 图片生成/图生图/精修白底（产品需要调整提示词）_2037844081199550466.json, 图片生成/图生图/精修白底（产品需要调整提示词）_2053018735723724802.json, 图片生成/图生图/组件系列8-FLUX.2-Klein单图编辑_2058753653384765441.json, 图片生成/图生图/自用瓶子修图工作流_2045810602009960450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_19
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/吉卜力风格化_1905893406915088385.json、图片生成/图生图/图片一键转灵魂画手风格_2024788264820936705.json、图片生成/图生图/提取物品_1947232272145666049.json、图片生成/图生图/文字编辑图片 Flux kontext dev_1938542570844938242.json、图片生成/图生图/电商服装去除图片人物_1943097905094025218.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/【晨晨的AI应用包005】随机风格生成-通过FLUX2-Klein_2012057296452460546.json、图片生成/图生图/工作流基础系列2-Klein双（多）图编辑工作流-基础向讲解此工作流_2012071492288258050.json、图片生成/图生图/工作流基础系列3-Klein局部编辑工作流-基础向讲解此工作流_2044322503283187713.json、图片生成/图生图/熊熊-Flux2 Klein局部重绘+图片去水印+物品迁移_2044458513019179010.json、图片生成/图生图/精修Flux-2 Klein_2036724091914293250.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 9 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelSamplingFlux`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
@@ -39,29 +40,27 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 11/12 个有
-- `FluxKontextImageScale` —— 11/12 个有
-- `ReferenceLatent` —— 11/12 个有
-- `CheckpointLoaderSimple` —— 10/12 个有
-- `RepeatLatentBatch` —— 9/12 个有
-- `easy imageSize` —— 8/12 个有
-- `LoraLoader` —— 7/12 个有
-- `Text` —— 4/12 个有
-- `RH_Translator` —— 3/12 个有
-- `GetImageSize` —— 2/12 个有
-- `JjkText` —— 2/12 个有
-- `PrimitiveString` —— 2/12 个有
-- `StringReplace` —— 2/12 个有
-- `UNETLoader` —— 2/12 个有
-- `ImageResize+` —— 1/12 个有
-- `LoraLoaderModelOnly` —— 1/12 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `Text` —— 8/9 个有
+- `UNETLoader` —— 8/9 个有
+- `CR Text` —— 5/9 个有
+- `EmptyFlux2LatentImage` —— 5/9 个有
+- `ShowText` —— 5/9 个有
+- `GetImageSize` —— 4/9 个有
+- `GetNode` —— 4/9 个有
+- `ImpactSwitch` —— 4/9 个有
+- `SetNode` —— 4/9 个有
+- `TextCombinerTwo` —— 4/9 个有
+- `Seed (rgthree)` —— 3/9 个有
+- `PreviewImage` —— 2/9 个有
+- `DrawMaskOnImage` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `RandomPrompt` —— 1/9 个有
+- `UnetLoaderGGUF` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 7 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,5 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

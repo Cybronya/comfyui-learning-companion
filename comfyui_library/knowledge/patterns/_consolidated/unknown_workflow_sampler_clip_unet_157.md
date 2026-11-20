@@ -1,60 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_157
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.983556
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.814875
+common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/flux2 klein 任意位置皮肤完美克隆（无限制）_2012907749159473153.json, 图片生成/图生图/flux2-Klein-单图编辑（4B）_2012091014151938050.json, 图片生成/图生图/flux2-Klein-单图编辑（9B）_2012088384096833537.json, 图片生成/图生图/flux2-Klein-图像多角度生成_2012189967140786177.json, 图片生成/图生图/flux2-Klein-换脸(色差偏移修正版)_2012337568234344450.json, 图片生成/图生图/flux2-Klein-最快换脸_2012192553822593025.json, 图片生成/图生图/flux2.klein一键高清换装_2077230946503446529.json, 图片生成/图生图/kleinface 换头换脸工作流 Flux2-Klein-9B 人物换头AI智能面部替换高清换头脸_2016848786680713218.json, 平台全量/建筑多角度编辑-Flux2-Klein_9B_2039170306304122881.json]
+members: [图片生成/图生图/ideogram4-文生图_2062877551839760386.json, 图片生成/文生图/Ideogram 4.0 精准排版工作流（自然语言输入 + 画面分区控制）_2063868933291204609.json, 图片生成/文生图/Ideogram 4文生图_2062771352070873090.json, 图片生成/文生图/Ideogram 4｜结构化视觉海报_文生图生成器_2092654375297708034.json, 图片生成/文生图/Ideogram4  KJ节点_文生图_2064149542085414914.json, 图片生成/文生图/Ideogram4  KJ节点_文生图（含案例）_2063967049952620546.json, 图片生成/文生图/Ideogram4 区域编辑文生图_2063261187504164866.json, 图片生成/文生图/ideogram4_t2i文生图+Ideogram 4 Prompt Builder KJ_2064175389697724418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_157
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/flux2 klein 任意位置皮肤完美克隆（无限制）_2012907749159473153.json、图片生成/图生图/flux2-Klein-单图编辑（4B）_2012091014151938050.json、图片生成/图生图/flux2-Klein-单图编辑（9B）_2012088384096833537.json、图片生成/图生图/flux2-Klein-图像多角度生成_2012189967140786177.json、图片生成/图生图/flux2-Klein-换脸(色差偏移修正版)_2012337568234344450.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/ideogram4-文生图_2062877551839760386.json、图片生成/文生图/Ideogram 4.0 精准排版工作流（自然语言输入 + 画面分区控制）_2063868933291204609.json、图片生成/文生图/Ideogram 4文生图_2062771352070873090.json、图片生成/文生图/Ideogram 4｜结构化视觉海报_文生图生成器_2092654375297708034.json、图片生成/文生图/Ideogram4  KJ节点_文生图_2064149542085414914.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CFGGuider`
+全部 8 个 workflow 都包含：
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `KSamplerSelect`
-- `LoadImage`
+- `ComfyNumberConvert`
+- `DualModelGuider`
+- `EmptyFlux2LatentImage`
+- `Ideogram4Scheduler`
+- `JsonExtractString`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
+- `SaveImage`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 8/9 个有
-- `EmptyFlux2LatentImage` —— 7/9 个有
-- `GetImageSize` —— 7/9 个有
-- `FluxKontextImageScale` —— 6/9 个有
-- `Image Comparer (rgthree)` —— 3/9 个有
-- `ImageScaleToTotalPixels` —— 3/9 个有
-- `QwenMultiangleCameraNode` —— 2/9 个有
-- `YC Color Match` —— 2/9 个有
-- `easy int` —— 2/9 个有
-- `easy promptList` —— 2/9 个有
-- `DuckHideNode` —— 1/9 个有
-- `ImageResize+` —— 1/9 个有
-- `ImageSmartSharpen+` —— 1/9 个有
-- `SaveImageAndMetadata_` —— 1/9 个有
-- `ShowText|pysssss` —— 1/9 个有
-- `easy positive` —— 1/9 个有
+- `ComfyMathExpression` —— 7/8 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `KSamplerSelect` —— 7/8 个有
+- `Ideogram4PromptBuilderKJ` —— 6/8 个有
+- `PreviewImage` —— 6/8 个有
+- `CustomCombo` —— 5/8 个有
+- `ResolutionSelector` —— 5/8 个有
+- `PreviewAny` —— 4/8 个有
+- `PrimitiveStringMultiline` —— 4/8 个有
+- `ShowText|pysssss` —— 4/8 个有
+- `CR Prompt Text` —— 3/8 个有
+- `ImageConcatMulti` —— 2/8 个有
+- `LoadImage` —— 2/8 个有
+- `easy anythingIndexSwitch` —— 2/8 个有
+- `AILab_QwenVL` —— 1/8 个有
+- `ImageBlend` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `SDVN Any Show` —— 1/8 个有
+- `SamplerEulerAncestral` —— 1/8 个有
+- `TTResolutionSelector` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `easy ifElse` —— 1/8 个有
+- `llama_cpp_instruct_adv` —— 1/8 个有
+- `llama_cpp_model_loader` —— 1/8 个有
 
 ## 典型参数
 

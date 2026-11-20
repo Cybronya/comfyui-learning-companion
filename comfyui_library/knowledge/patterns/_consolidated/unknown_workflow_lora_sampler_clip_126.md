@@ -1,72 +1,73 @@
 ---
 name: unknown_workflow_lora_sampler_clip_126
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: strong
-coverage: 0.9865
-common_nodes: [BasicScheduler, CLIPTextEncode, CM_FloatToInt, CR Text, DualCLIPLoader, ImageConcanate, KSamplerSelect, LTXVAddGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, SamplerCustom, UNETLoader, VAEDecode, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoInfo]
-problems: []
+coverage: 0.941
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, ImageToMask, InvertMask, JoinImageWithAlpha, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, SaveVideoRGBA, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/(自用)N版 LTX2.3 Edit Anything视频编辑V1_2052776354835386370.json, 视频生成/图生视频/LTX2.3 Edit Anything视频编辑_2053463786572529666.json, 视频生成/图生视频/LTX2.3 Edit 视频编辑_2053043034979356673.json, 视频生成/图生视频/LTX2.3Edit Anything视频编辑工作流_2053027400342097921.json, 视频生成/图生视频/图生视频重要_2053455525341343746.json, 视频生成/图生视频/视频生视频 高清版_2054000800241856513.json]
+members: [视频生成/文生视频/wan-alpha透明视频素材制作_1978258359084310529.json, 视频生成/文生视频/wan-alpha透明视频素材制作_1978685377798098945.json, 视频生成/文生视频/wan_alpha_t2v_14B透明视频wan alpha透明通道视频，让视频素材拥有无限可能，S_1979855577771839489.json, 视频生成/文生视频/小工具 wan-alpha透明图层_1973643031427551234.json, 视频生成/文生视频/透明视频素材制作_1978705872639692801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_126
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/(自用)N版 LTX2.3 Edit Anything视频编辑V1_2052776354835386370.json、视频生成/图生视频/LTX2.3 Edit Anything视频编辑_2053463786572529666.json、视频生成/图生视频/LTX2.3 Edit 视频编辑_2053043034979356673.json、视频生成/图生视频/LTX2.3Edit Anything视频编辑工作流_2053027400342097921.json、视频生成/图生视频/图生视频重要_2053455525341343746.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/wan-alpha透明视频素材制作_1978258359084310529.json、视频生成/文生视频/wan-alpha透明视频素材制作_1978685377798098945.json、视频生成/文生视频/wan_alpha_t2v_14B透明视频wan alpha透明通道视频，让视频素材拥有无限可能，S_1979855577771839489.json、视频生成/文生视频/小工具 wan-alpha透明图层_1973643031427551234.json、视频生成/文生视频/透明视频素材制作_1978705872639692801.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CR Text`
-- `DualCLIPLoader`
-- `ImageConcanate`
-- `KSamplerSelect`
-- `LTXVAddGuide`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `EmptyHunyuanLatentVideo`
+- `ImageToMask`
+- `InvertMask`
+- `JoinImageWithAlpha`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `SamplerCustom`
+- `ModelSamplingSD3`
+- `SaveVideoRGBA`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
-- `VHS_VideoInfo`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 5/6 个有
-- `DuckHideNode` —— 1/6 个有
-- `Float to Int` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `TT_img_enc` —— 1/6 个有
-- `TT_img_enc_v2` —— 1/6 个有
+- `SaveImage` —— 4/5 个有
+- `PreviewImage` —— 2/5 个有
+- `CR Text Concatenate` —— 1/5 个有
+- `GetImageRangeFromBatch` —— 1/5 个有
+- `MaskPreview+` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `VHS_VideoCombine` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | uni_pc | - | 5 | 80% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，5 个样本，一致性 80%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

@@ -1,67 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_444
 type: Unknown Workflow
-frequency: 7
+frequency: 5
 level: moderate
-coverage: 0.854
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.66
+common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, CR Text, ConditioningZeroOut, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetNode, H3SigmaRefiner, KSamplerSelect, Label (rgthree), LoraLoaderModelOnly, MemoryCleaner, MiniMaxChunkFeedForward, MiniMaxH3Unified, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, RH_DLSS5Enhance, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_SelectImages, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/InfiniteTalk With Sa2VA 多人_1988439303661469698.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957827307850530818.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957977430084481025.json, 视频生成/图生视频/InfiniteTalk图生视频数字人V3-个人使用版_1969944110868164610.json, 视频生成/图生视频/InfiniteTalk对口型_1958082253886803970.json, 视频生成/图生视频/Wan2.1 InfiniTetalk 图像数字人配口型 KJ节点版_2044728496185937922.json, 视频生成/图生视频/wanvideo_infinitetalk_单人工作流_1958061014984118274.json]
+members: [图片生成/图生图/MinimaxH3超快数字人_2109460248967860226.json, 图片生成/文生图/Minimax_H3_直出_4K_LoRA_去油化_+_H3_统一插件_+_自提升渐进式采样工作流_2114320225515692033.json, 视频生成/图生视频/MinimaxH3超快数字人_2109085639286280194.json, 视频生成/文生视频/1002海螺H3三采极致高分辨率工作流（最长20秒放大到4K）_2105901782873493506.json, 视频生成/文生视频/文戏不油—三采极致高分辨率工作流_2104527536003833858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_444
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk With Sa2VA 多人_1988439303661469698.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957827307850530818.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957977430084481025.json、视频生成/图生视频/InfiniteTalk图生视频数字人V3-个人使用版_1969944110868164610.json、视频生成/图生视频/InfiniteTalk对口型_1958082253886803970.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MinimaxH3超快数字人_2109460248967860226.json、图片生成/文生图/Minimax_H3_直出_4K_LoRA_去油化_+_H3_统一插件_+_自提升渐进式采样工作流_2114320225515692033.json、视频生成/图生视频/MinimaxH3超快数字人_2109085639286280194.json、视频生成/文生视频/1002海螺H3三采极致高分辨率工作流（最长20秒放大到4K）_2105901782873493506.json、视频生成/文生视频/文戏不油—三采极致高分辨率工作流_2104527536003833858.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+全部 5 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `CR Text`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Muter (rgthree)`
+- `GetNode`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `MemoryCleaner`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3Unified`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PreviewImage`
+- `RH_DLSS5Enhance`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_SelectImages`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 6/7 个有
-- `AudioSeparation` —— 6/7 个有
-- `LoadImage` —— 6/7 个有
-- `INTConstant` —— 5/7 个有
-- `ImageResizeKJv2` —— 5/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `WanVideoTorchCompileSettings` —— 3/7 个有
-- `GetImageSizeAndCount` —— 2/7 个有
-- `GetNode` —— 2/7 个有
-- `PreviewAny` —— 2/7 个有
-- `SetNode` —— 2/7 个有
-- `VHS_LoadVideo` —— 2/7 个有
-- `GrowMaskWithBlur` —— 1/7 个有
-- `MaskPreview+` —— 1/7 个有
-- `PixaromaLabel` —— 1/7 个有
-- `PixaromaResolution` —— 1/7 个有
-- `PlaySound|pysssss` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `Sa2VANodeTpl` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `FlashVSRInitPipe` —— 4/5 个有
+- `FlashVSRNodeAdv` —— 4/5 个有
+- `INTConstant` —— 4/5 个有
+- `LTXVSeparateAVLatent` —— 4/5 个有
+- `MiniMaxH3VAEDecodeFast` —— 4/5 个有
+- `VOSR2ModelLoader` —— 4/5 个有
+- `VOSR2Upscale` —— 4/5 个有
+- `SelfLiftH3Sampler` —— 3/5 个有
+- `VAEDecodeAudio` —— 3/5 个有
+- `SelfLiftAvatarH3Sampler` —— 2/5 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/5 个有
+- `EmptyImage` —— 1/5 个有
 
 ## 典型参数
 

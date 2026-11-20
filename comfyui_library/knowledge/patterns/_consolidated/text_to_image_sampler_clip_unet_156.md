@@ -2,69 +2,61 @@
 name: text_to_image_sampler_clip_unet_156
 type: Text To Image
 frequency: 4
-level: strong
-coverage: 1
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ReduxAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.89025
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Ai仿色_2076037068798644226.json, 图片生成/图生图/flux-redux洗图_1936060130024919042.json, 平台全量/Ai商业版 追色-仿色_1890332096861491202.json, 平台全量/Flux保持人脸一致洗图工作流_1953794475141332993.json]
+members: [图片生成/图生图/QWEN-EDIT-PLUS 换脸和可控姿势的OOTD工作流_1970783578869145601.json, 图片生成/图生图/Qwen Edit 2509  MultipleAngles -转换视角_1993290281585934338.json, 图片生成/图生图/[1月] 最强视角切换(Qwen 96视角)_2009597776102952961.json, 图片生成/图生图/qwen_image_多图合一-图片编辑_1970819754611118082.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_156
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Ai仿色_2076037068798644226.json、图片生成/图生图/flux-redux洗图_1936060130024919042.json、平台全量/Ai商业版 追色-仿色_1890332096861491202.json、平台全量/Flux保持人脸一致洗图工作流_1953794475141332993.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/QWEN-EDIT-PLUS 换脸和可控姿势的OOTD工作流_1970783578869145601.json、图片生成/图生图/Qwen Edit 2509  MultipleAngles -转换视角_1993290281585934338.json、图片生成/图生图/[1月] 最强视角切换(Qwen 96视角)_2009597776102952961.json、图片生成/图生图/qwen_image_多图合一-图片编辑_1970819754611118082.json）
 
 - **类型**：Text To Image
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ReduxAdvanced`
 - `SaveImage`
-- `StyleModelLoader`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
 - `LoraLoaderModelOnly` —— 3/4 个有
-- `ControlNetApplyAdvanced` —— 2/4 个有
-- `ControlNetLoader` —— 2/4 个有
-- `DetailTransfer` —— 2/4 个有
-- `LayerColor: Brightness & Contrast` —— 2/4 个有
-- `ModelSamplingFlux` —— 2/4 个有
-- `ApplyPulidFlux` —— 1/4 个有
-- `EcomIDFaceAnalysis` —— 1/4 个有
-- `Florence2` —— 1/4 个有
-- `LayerMask: LoadFlorence2Model` —— 1/4 个有
-- `PulidFluxEvaClipLoader` —— 1/4 个有
-- `PulidFluxModelLoader` —— 1/4 个有
+- `PreviewImage` —— 3/4 个有
+- `AIO_Preprocessor` —— 2/4 个有
+- `CR Text` —— 2/4 个有
+- `DF_Get_image_size` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `FluxGuidance` —— 1/4 个有
+- `Image Stitch` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `Int` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 8 - 25 | 4 | 44% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1680 | 1280 - 1920 | 4 | 83% |
+| 高度 | 1080 | 720 - 1920 | 4 | 63% |
+| 采样步数 | 14 | 8 - 20 | 4 | 57% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 4 | 81% |
 | 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 50% |
+| 调度器 | simple | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 512 | 512 - 512 | 4 | 100% |
-| 高度 | 512 | 512 - 512 | 4 | 100% |
-| ControlNet 权重 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -74,12 +66,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 8 - 25，4 个样本，取值分散，一致性仅 44%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1680，观测区间 1280 - 1920，4 个样本，取值集中（一致性 83%）
+- 高度 中位数 1080，观测区间 720 - 1920，4 个样本
+- 采样步数 中位数 14，观测区间 8 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，4 个样本，取值集中（一致性 81%）
 - 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 50%
+- 调度器 最常用 simple，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/4 个样本）：Steps较低可能导致细节不足

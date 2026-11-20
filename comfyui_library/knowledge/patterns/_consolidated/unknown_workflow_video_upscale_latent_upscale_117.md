@@ -3,81 +3,75 @@ name: unknown_workflow_video_upscale_latent_upscale_117
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.754333
-common_nodes: [AudioCrop, Bjornulf_ShowFloat, Bjornulf_ShowInt, CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVReferenceAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression_UTK, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PainterAudioLength, PreviewImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SeedGenerator, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SimpleMath+, SolidMask, TTResolutionSelector, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.477
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ExtendIntermediateSigmas, Fast Groups Bypasser (rgthree), GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PreviewImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3 MV数字人（强化面部一致性）_2048028402485043202.json, 视频生成/图生视频/LTX2.3 单图mv ID-LoRA （增强人脸一致、口型准确、动态协调）_2046304725880016898.json, 音频生成/音频生成/LTX2.3 MV数字人（moss长音频加强面部一致性）_2049272954013360129.json]
+members: [视频生成/图生视频/minimax H3 单图单音频动画工作流_2094569760485892098.json, 视频生成/图生视频/minimax 影视剧 多参工作流 高清 运动不模糊_2088628741688877058.json, 视频生成/图生视频/兼具质量和速度的数字人_2089306091665580034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_117
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 MV数字人（强化面部一致性）_2048028402485043202.json、视频生成/图生视频/LTX2.3 单图mv ID-LoRA （增强人脸一致、口型准确、动态协调）_2046304725880016898.json、音频生成/音频生成/LTX2.3 MV数字人（moss长音频加强面部一致性）_2049272954013360129.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimax H3 单图单音频动画工作流_2094569760485892098.json、视频生成/图生视频/minimax 影视剧 多参工作流 高清 运动不模糊_2088628741688877058.json、视频生成/图生视频/兼具质量和速度的数字人_2089306091665580034.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `Bjornulf_ShowFloat`
-- `Bjornulf_ShowInt`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CR Text`
-- `CheckpointLoaderSimple`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
 - `ComfyMathExpression`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `ExtendIntermediateSigmas`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVReferenceAudio`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression_UTK`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PainterAudioLength`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
 - `PreviewImage`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SeedGenerator`
-- `SetLatentNoiseMask`
 - `SetNode`
-- `SimpleCalculatorKJ`
-- `SimpleMath+`
-- `SolidMask`
-- `TTResolutionSelector`
-- `VAEDecodeTiled`
+- `Text Multiline`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `LTXVPreprocess` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `MossTTSModelLoader` —— 1/3 个有
-- `MossTTSVoiceDesign` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `LoraLoaderBypassModelOnly` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `VAEDecodeAudio` —— 2/3 个有
+- `easy ab` —— 2/3 个有
+- `HeartMuLa_Transcribe` —— 1/3 个有
+- `MelBandRoFormerModelLoader` —— 1/3 个有
+- `MelBandRoFormerSampler` —— 1/3 个有
+- `MiniMaxH3HybridLoader` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `SoundFlow_GetLength` —— 1/3 个有
+- `TTP_text_mix` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `VRGDG_AudioCrop` —— 1/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/3 个有
 
 ## 典型参数
 

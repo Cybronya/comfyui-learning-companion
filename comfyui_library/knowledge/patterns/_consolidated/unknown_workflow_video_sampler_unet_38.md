@@ -1,65 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_unet_38
 type: Unknown Workflow
-frequency: 11
+frequency: 8
 level: moderate
-coverage: 0.881364
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, MiniMaxH3DualClockSamplerT8, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.889625
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/基础 MiniMaxH3单图单采工作流_2087793260977803266.json, 图片生成/文生图/INT8 Turbo 4 步加速版_2103075017385922562.json, 图片生成/文生图/Minimax H3快速版 短剧漫剧 创意视频文生视频（新加速LORA）_2111076319747465217.json, 图片生成/文生图/Minimax-H3-文生视频(双时钟+8步极速)_2085735853296541698.json, 平台全量/(双时钟-8步高质量极速)Minimax参考生视频V1_2086139051047997442.json, 平台全量/(双时钟-8步高质量极速)Minimax参考生视频V1（600步新加速LORA）_2086295954956832770.json, 平台全量/MiniMaxH3单图卡点换装工作流_2085754048258592770.json, 平台全量/MiniMaxH3多参卡点换装工作流_2085754084744843265.json, 平台全量/MiniMaxH3多图参考_2089525993865306113.json, 数字人/数字人/MiniMax H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）_2115371370363318273.json, 视频生成/视频生视频/MiniMax H3 视频复刻 角色替换-二创翻拍_2106096378328993794.json]
+members: [视频生成/图生视频/MiniMaxH3-双角色+指定背景3图生视频！加速版！_2089258074396774402.json, 视频生成/图生视频/MiniMaxH3多参MV生成工作流 By 像素幻想Lab_2087128116820013058.json, 视频生成/图生视频/MiniMaxH3首尾帧工作流 By 像素幻想Lab_2087128132951298049.json, 视频生成/图生视频/Minimax-H3 多参考图  电商服装视频_2089669546205601794.json, 视频生成/图生视频/Minimax-H3 多参考图_2085260972230537218.json, 视频生成/图生视频/minMax+H3+二采放大_2091513919167885314.json, 视频生成/图生视频/人像VLOG丨MiniMax-H3丨三图参考·音画生成_2100863837363851266.json, 视频生成/图生视频/人像VLOG丨MiniMax-H3丨三图参考·音画生成_2101132610901733377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_38
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/基础 MiniMaxH3单图单采工作流_2087793260977803266.json、图片生成/文生图/INT8 Turbo 4 步加速版_2103075017385922562.json、图片生成/文生图/Minimax H3快速版 短剧漫剧 创意视频文生视频（新加速LORA）_2111076319747465217.json、图片生成/文生图/Minimax-H3-文生视频(双时钟+8步极速)_2085735853296541698.json、平台全量/(双时钟-8步高质量极速)Minimax参考生视频V1_2086139051047997442.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3-双角色+指定背景3图生视频！加速版！_2089258074396774402.json、视频生成/图生视频/MiniMaxH3多参MV生成工作流 By 像素幻想Lab_2087128116820013058.json、视频生成/图生视频/MiniMaxH3首尾帧工作流 By 像素幻想Lab_2087128132951298049.json、视频生成/图生视频/Minimax-H3 多参考图  电商服装视频_2089669546205601794.json、视频生成/图生视频/Minimax-H3 多参考图_2085260972230537218.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `MiniMaxH3DualClockSamplerT8`
+- `KSamplerSelect`
+- `LoadImage`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 10/11 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 10/11 个有
-- `ResolutionSelector` —— 10/11 个有
-- `LoadImage` —— 9/11 个有
-- `MiniMaxH3AudioConditioningT8` —— 9/11 个有
-- `CR Prompt Text` —— 7/11 个有
-- `MiniMaxH3AVDecodeT8` —— 7/11 个有
-- `VAEDecode` —— 4/11 个有
-- `VAEDecodeAudio` —— 4/11 个有
-- `VHS_LoadVideo` —— 4/11 个有
-- `Int` —— 3/11 个有
-- `ModelAttentionBackend` —— 3/11 个有
-- `CM_FloatToInt` —— 2/11 个有
-- `DA3Inference` —— 2/11 个有
-- `DA3Render` —— 2/11 个有
-- `Float` —— 2/11 个有
-- `LoadDA3Model` —— 2/11 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/11 个有
-- `ShowAnything|Mie` —— 2/11 个有
-- `SolAttnMiniMax` —— 2/11 个有
-- `VHS_LoadVideoFFmpeg` —— 2/11 个有
-- `VHS_VideoInfo` —— 2/11 个有
-- `LoadVideo` —— 1/11 个有
-- `LoraLoaderModelOnly` —— 1/11 个有
-- `孤海注释` —— 1/11 个有
+- `MiniMaxH3ReferenceToVideo` —— 7/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/8 个有
+- `ImageResizeKJv2` —— 4/8 个有
+- `ImageScaleToTotalPixels` —— 4/8 个有
+- `JjkText` —— 3/8 个有
+- `LoadAudio` —— 2/8 个有
+- `LoraLoaderBypassModelOnly` —— 2/8 个有
+- `LoraLoaderModelOnly` —— 2/8 个有
+- `PathchSageAttentionKJ` —— 2/8 个有
+- `RHMiniMaxH3PromptOptimizerMedia` —— 2/8 个有
+- `Audio Duration (mtb)` —— 1/8 个有
+- `ImageConcanate` —— 1/8 个有
+- `LTXVConcatAVLatent` —— 1/8 个有
+- `LTXVSeparateAVLatent` —— 1/8 个有
+- `MiniMaxH3ImageToVideo` —— 1/8 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,83 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_vae_50
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.6632
-common_nodes: [Any Switch (rgthree), DownloadAndLoadFlorence2Model, Florence2Run, GetImageRangeFromBatch, GetNode, GrowMaskWithBlur, ImageCompositeMasked, ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, SetNode, SolidMask, VHS_DuplicateMasks, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy imageSize]
+coverage: 0.953111
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, RHHiddenNodes, RandomNoise, SamplerCustomAdvanced, Text, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/最新视频去水印（三种方案任意切换）_1935175040575143938.json, 平台全量/最新视频去水印（三种方案任意切换）_1977342122468757506.json, 平台全量/极简-视频去文字水印_1951207757150101505.json, 平台全量/视频去字幕和水印_2041029377902780417.json, 平台全量/视频去字幕和水印_2046062618506432513.json, 平台全量/视频去字幕和水印_2048575374195433473.json, 平台全量/视频去水印（minimax-remover）_1938080032948404226.json, 平台全量/视频去水印（minimax-remover）_1992158027252035586.json, 平台全量/视频去除移动文字 水印_2029033243114217473.json, 数字人/数字人/视频去字幕和水印_2042434276649603073.json]
+members: [视频生成/图生视频/MInimaxH3_Ref2AV_bf16-lightx2v_1.0八步加速V2_2088193284681322497.json, 视频生成/图生视频/MInimaxH3_Ref2AV_bf16-lightx2v_1.0八步加速_2088188664793878530.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0正式版8步加速_2087456117239668737.json, 视频生成/图生视频/MinimaxH3八步加速极速版T1_2088232222376681473.json, 视频生成/图生视频/minimaxH3先锋艺术_2088544149321633794.json, 视频生成/图生视频/minimaxH3多参提示词优化_2086425483746566146.json, 视频生成/图生视频/minimaxh3-三图参考生视频-15秒动作科幻题材_2097201624564457473.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T10_2085752202936803329.json, 视频生成/图生视频/图生视频提示词运镜_2086862647512879105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_50
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/最新视频去水印（三种方案任意切换）_1935175040575143938.json、平台全量/最新视频去水印（三种方案任意切换）_1977342122468757506.json、平台全量/极简-视频去文字水印_1951207757150101505.json、平台全量/视频去字幕和水印_2041029377902780417.json、平台全量/视频去字幕和水印_2046062618506432513.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MInimaxH3_Ref2AV_bf16-lightx2v_1.0八步加速V2_2088193284681322497.json、视频生成/图生视频/MInimaxH3_Ref2AV_bf16-lightx2v_1.0八步加速_2088188664793878530.json、视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0正式版8步加速_2087456117239668737.json、视频生成/图生视频/MinimaxH3八步加速极速版T1_2088232222376681473.json、视频生成/图生视频/minimaxH3先锋艺术_2088544149321633794.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `ImageCompositeMasked`
-- `ImageConcanate`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `PreviewImage`
-- `SetNode`
-- `SolidMask`
-- `VHS_DuplicateMasks`
-- `VHS_LoadVideo`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RHHiddenNodes`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `Text`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoMiniMaxRemoverEmbeds`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadSAM2Model` —— 8/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/10 个有
-- `JWInteger` —— 8/10 个有
-- `PointsEditor` —— 8/10 个有
-- `Sam2Segmentation` —— 8/10 个有
-- `easy compare` —— 8/10 个有
-- `easy ifElse` —— 8/10 个有
-- `easy imageScaleDownToSize` —— 8/10 个有
-- `LoadImage` —— 6/10 个有
-- `PreviewBridge` —— 6/10 个有
-- `SaveImage` —— 4/10 个有
-- `easy showAnything` —— 4/10 个有
-- `BBoxesToSAM2` —— 2/10 个有
-- `DownloadAndLoadQwenModel` —— 2/10 个有
-- `Fast Groups Muter (rgthree)` —— 2/10 个有
-- `JjkText` —— 2/10 个有
-- `LayerMask: LoadSAM2Model` —— 2/10 个有
-- `LayerMask: MaskPreview` —— 2/10 个有
-- `LayerMask: SAM2UltraV2` —— 2/10 个有
-- `Mask Fill Holes` —— 2/10 个有
-- `QwenVLDetection` —— 2/10 个有
-- `easy batchAnything` —— 2/10 个有
-- `easy clearCacheAll` —— 2/10 个有
-- `easy forLoopEnd` —— 2/10 个有
-- `easy forLoopStart` —— 2/10 个有
+- `ResolutionSelector` —— 7/9 个有
+- `easy MiniMaxH3ReferenceToVideoBridge` —— 7/9 个有
+- `ImageConcatenateMulti_UTK` —— 6/9 个有
+- `ComfyMathExpression` —— 5/9 个有
+- `EnhancedLoadDiffusionModel` —— 5/9 个有
+- `LoraLoaderBypassModelOnly` —— 5/9 个有
+- `PreviewImage` —— 5/9 个有
+- `PrimitiveFloat` —— 5/9 个有
+- `UNETLoader` —— 4/9 个有
+- `CreateVideo` —— 2/9 个有
+- `Int` —— 2/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
+- `LoraLoaderModelOnly` —— 2/9 个有
+- `MiniMaxH3ImageToVideo` —— 2/9 个有
+- `SaveVideo` —— 2/9 个有
+- `Images to RGB` —— 1/9 个有
+- `InspyrenetRembg` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 

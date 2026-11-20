@@ -1,115 +1,83 @@
 ---
 name: image_to_image_controlnet_ipadapter_upscale
 type: Image To Image
-frequency: 8
-level: moderate
-coverage: 0.7835
-common_nodes: [AnyLineArtPreprocessor_aux, BasicScheduler, BrushNet, BrushNetLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, DetailTransfer, DownloadAndLoadFlorence2Model, DualCLIPLoader, Florence2Run, FluxGuidance, ICLightConditioning, IPAdapterAdvanced, IPAdapterUnifiedLoader, InvertMask, KSampler, KSamplerSelect, LayerMask: MaskGrow, LayerMask: MaskPreview, LayerUtility: ImageBlend, LayerUtility: ImageBlendAdvance, LayerUtility: ImageScaleByAspectRatio V2, LightSource, LoadAndApplyICLightUnet, LoadImage, LoraLoader, PreviewImage, SamplerCustom, SaveImage, ShowText|pysssss, Text Concatenate, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.909
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, DualCLIPLoader, IPAdapterAdvanced, IPAdapterModelLoader, Image Save, KSampler, KSamplerSelect, LoadImage, OpenposePreprocessor, PreviewImage, RandomNoise, SDXLEmptyLatentSizePicker+, SamplerCustomAdvanced, SaveImage, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/产品换背景   白底换背景   风格迁移 放大 ic控光 F1修复_1889253088036052993.json, 图片生成/图生图/白底图一键改背景空白工作流_1897559365912580097.json, 平台全量/2025」Flux模型生成产品背景图_1896098010688847873.json, 平台全量/2025」Flux模型生成产品背景图_1934257156625494017.json, 平台全量/产品一键生成背景简单易用_1934763244274032641.json, 平台全量/产品背景生成_1911087994957430786.json, 平台全量/安-产品一键生成背景简单易用_1934430671362547713.json, 平台全量/静物白底换背景一键生成，含风格迁移_放大_ic控光_F1修复_1895728764959719425.json]
+members: [图片生成/图生图/Flux 人物一致性，多视角人物_1915228748579540994.json, 图片生成/图生图/flux人物多视角一键生成_1917156480104206337.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_ipadapter_upscale
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/产品换背景   白底换背景   风格迁移 放大 ic控光 F1修复_1889253088036052993.json、图片生成/图生图/白底图一键改背景空白工作流_1897559365912580097.json、平台全量/2025」Flux模型生成产品背景图_1896098010688847873.json、平台全量/2025」Flux模型生成产品背景图_1934257156625494017.json、平台全量/产品一键生成背景简单易用_1934763244274032641.json…）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux 人物一致性，多视角人物_1915228748579540994.json、图片生成/图生图/flux人物多视角一键生成_1917156480104206337.json）
 
 - **类型**：Image To Image
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `AnyLineArtPreprocessor_aux`
+全部 2 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `BrushNet`
-- `BrushNetLoader`
 - `CLIPTextEncode`
 - `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
 - `ControlNetApplyAdvanced`
 - `ControlNetLoader`
-- `DetailTransfer`
-- `DownloadAndLoadFlorence2Model`
 - `DualCLIPLoader`
-- `Florence2Run`
-- `FluxGuidance`
-- `ICLightConditioning`
 - `IPAdapterAdvanced`
-- `IPAdapterUnifiedLoader`
-- `InvertMask`
+- `IPAdapterModelLoader`
+- `Image Save`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerMask: MaskGrow`
-- `LayerMask: MaskPreview`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageBlendAdvance`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LightSource`
-- `LoadAndApplyICLightUnet`
 - `LoadImage`
-- `LoraLoader`
+- `OpenposePreprocessor`
 - `PreviewImage`
-- `SamplerCustom`
+- `RandomNoise`
+- `SDXLEmptyLatentSizePicker+`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
-- `Text Concatenate`
+- `UNETLoader`
 - `UltimateSDUpscale`
 - `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageSize`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 7/8 个有
-- `UNETLoader` —— 7/8 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 6/8 个有
-- `DeepTranslatorTextNode` —— 4/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
-- `easy clearCacheAll` —— 4/8 个有
-- `ArgosTranslateTextNode` —— 3/8 个有
-- `RepeatLatentBatch` —— 3/8 个有
-- `Anything Everywhere3` —— 2/8 个有
-- `ConditioningZeroOut` —— 2/8 个有
-- `DifferentialDiffusion` —— 2/8 个有
-- `ImageConcanate` —— 2/8 个有
-- `ImageCrop+` —— 2/8 个有
-- `ImageToMask` —— 2/8 个有
-- `InspyrenetRembgAdvanced` —— 2/8 个有
-- `LayerUtility: ColorImage V2` —— 2/8 个有
-- `LayerUtility: GetImageSize` —— 2/8 个有
-- `LoraLoaderModelOnly` —— 2/8 个有
-- `RHHiddenNodes` —— 2/8 个有
-- `SUPIR_Upscale` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.9 | 0.8 - 0.9 | 8 | 96% |
-| 采样步数 | 25 | 20 - 35 | 8 | 75% |
-| Prompt 约束强度(CFG) | 3 | 1 - 6 | 8 | 45% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | normal | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| LoRA 模型强度 | 0.6 | 0.6 - 0.9 | 8 | 81% |
-| LoRA 文本强度 | 1 | 1 - 1 | 8 | 100% |
+| ControlNet 权重 | 1 | - | 2 | 100% |
+| 宽度 | 1216x832 (1.46) | - | 2 | 100% |
+| 高度 | 1 | - | 2 | 100% |
+| 采样步数 | 4 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 2 | - | 2 | 100% |
+| 采样算法 | dpmpp_sde | - | 2 | 100% |
+| 调度器 | karras | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.9，观测区间 0.8 - 0.9，8 个样本，取值集中（一致性 96%）
-- 采样步数 中位数 25，观测区间 20 - 35，8 个样本
-- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 6，8 个样本，取值分散，一致性仅 45%
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 normal，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.6，观测区间 0.6 - 0.9，8 个样本，取值集中（一致性 81%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 最常用 1216x832 (1.46)，2 个样本，一致性 100%
+- 高度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_sde，2 个样本，一致性 100%
+- 调度器 最常用 karras，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_463
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.87775
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.85425
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen image 2.1无痕扩图 指定大小零偏移零色差工具_2113723580210044929.json, 图片生成/图生图/Qwen image 2.1模特一键换装，服装迁移商品替换_2112341971791597570.json, 图片生成/图生图/Qwen image2.1万能局部重绘 图片局部修改精准控制_2108621339333578754.json, 图片生成/图生图/Qwen image2.1万能局部重绘低像素重绘 精准控制改图_2109734236285657090.json]
+members: [图片生成/图生图/透明抠图一键导出｜AI透明背景图像提取图生图_2093833685442326529.json, 图片生成/图生图/透明抠图一键快速生成｜老孙AI图生图高清处理_2094043648282415105.json, 图片生成/文生图/G2.5 Sunburst文生图 4K画质经济型高效输出_2098290011564240898.json, 图片生成/文生图/全能图片G image 2.5文生图｜最强生图模型直出高清_2110691325665439746.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_463
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen image 2.1无痕扩图 指定大小零偏移零色差工具_2113723580210044929.json、图片生成/图生图/Qwen image 2.1模特一键换装，服装迁移商品替换_2112341971791597570.json、图片生成/图生图/Qwen image2.1万能局部重绘 图片局部修改精准控制_2108621339333578754.json、图片生成/图生图/Qwen image2.1万能局部重绘低像素重绘 精准控制改图_2109734236285657090.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/透明抠图一键导出｜AI透明背景图像提取图生图_2093833685442326529.json、图片生成/图生图/透明抠图一键快速生成｜老孙AI图生图高清处理_2094043648282415105.json、图片生成/文生图/G2.5 Sunburst文生图 4K画质经济型高效输出_2098290011564240898.json、图片生成/文生图/全能图片G image 2.5文生图｜最强生图模型直出高清_2110691325665439746.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
@@ -26,14 +26,10 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -41,20 +37,15 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `InpaintModelConditioning` —— 2/4 个有
-- `Mask Fill Holes` —— 2/4 个有
-- `Any Switch (rgthree)` —— 1/4 个有
-- `DapaoImagePadDirectionNode` —— 1/4 个有
-- `GetImageSize` —— 1/4 个有
-- `ImageScale` —— 1/4 个有
-- `ImpactInt` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `LayerUtility: CropByMask V2` —— 1/4 个有
-- `LayerUtility: ImageScaleRestore V2` —— 1/4 个有
-- `LayerUtility: RestoreCropBox` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `Switch any [Crystools]` —— 1/4 个有
-- `长边短边` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `Anything Everywhere` —— 2/4 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/4 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 2/4 个有
+- `LayerMask: MaskPreview` —— 2/4 个有
+- `Mute / Bypass Relay (rgthree)` —— 2/4 个有
+- `Mute / Bypass Repeater (rgthree)` —— 2/4 个有
+- `RH_RhartImageG25FlareTextToImage` —— 2/4 个有
 
 ## 典型参数
 

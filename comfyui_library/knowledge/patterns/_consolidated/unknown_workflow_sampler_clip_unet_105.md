@@ -1,93 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_unet_105
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.775167
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, Int, JoinStrings, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelPatchTorchSettings, PathchSageAttentionKJ, Qwen3_VQA, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: []
+frequency: 11
+level: weak
+coverage: 0.842273
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/DaSiWa图生视频（支持18禁_真人_漫画）_2010525636460290050.json, 视频生成/图生视频/DasiWa首尾帧生视频_2030701260868947970.json, 视频生成/图生视频/I2V-丝滑快速首中尾帧图生视频_2037924097656623106.json, 视频生成/图生视频/LightX2V+FMLF首中尾帧三图生视频【动态长视频】_1991681950526160898.json, 视频生成/图生视频/QIANSUI+DaSiWaWAN2.2图生视频（首尾帧）_2008202129441296385.json, 视频生成/图生视频/WAN 万相 最强图生视频  单图  首尾帧  三图首尾帧 短剧生成 AI网剧 动漫视频生成_2015695642802266113.json, 视频生成/图生视频/WAN2.2  最新图生视频 单图 首尾帧 三图首尾帧 万相 短剧生成 AI网剧 动漫视频主角光环_2015990748520390658.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2073934911119118338.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2073959208336322562.json, 视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）_2074661334712676354.json, 视频生成/图生视频/WAN2.视频生成（提示词优化版）_2079370650996789249.json, 视频生成/图生视频/wan2.2首帧生视频（附自动生提示词）输出【一段视频 + 尾帧图 + 提示词文本文件】_2015119585170690050.json]
+members: [图片生成/文生图/Z image 直出高清基础流 v1_2002028004870111233.json, 图片生成/文生图/Z image 直出高清基础流 v2_2003053873344462850.json, 图片生成/文生图/Z-image  zimage  文生图  工作流_2042926754704134145.json, 图片生成/文生图/Z-image_zimage_文生图_超真实感_2042921269569527810.json, 图片生成/文生图/ZIT基础文生图_2088289408716992513.json, 图片生成/文生图/Z_Image_Turbo-文生图_2063504172338737154.json, 图片生成/文生图/Zimage base fp8一键出模特大片_2016314793744932866.json, 图片生成/文生图/【老金驿站】Qwen提速20%生成工作流_1953252280764141569.json, 图片生成/文生图/最强最新Qwen image2512文生图工作流0707_2074521092005388289.json, 图片生成/文生图/最新qwen image2512文生图基础工作流_2013152895679602689.json, 图片生成/文生图/最新qwen+image2512文生图基础工作流_2094968730156621826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_105
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/DaSiWa图生视频（支持18禁_真人_漫画）_2010525636460290050.json、视频生成/图生视频/DasiWa首尾帧生视频_2030701260868947970.json、视频生成/图生视频/I2V-丝滑快速首中尾帧图生视频_2037924097656623106.json、视频生成/图生视频/LightX2V+FMLF首中尾帧三图生视频【动态长视频】_1991681950526160898.json、视频生成/图生视频/QIANSUI+DaSiWaWAN2.2图生视频（首尾帧）_2008202129441296385.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Z image 直出高清基础流 v1_2002028004870111233.json、图片生成/文生图/Z image 直出高清基础流 v2_2003053873344462850.json、图片生成/文生图/Z-image  zimage  文生图  工作流_2042926754704134145.json、图片生成/文生图/Z-image_zimage_文生图_超真实感_2042921269569527810.json、图片生成/文生图/ZIT基础文生图_2088289408716992513.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：78%
+- **样本数**：11
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `INTConstant`
-- `Int`
-- `JoinStrings`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `ShowText|pysssss`
-- `TextInput_`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 11/12 个有
-- `RIFE VFI` —— 11/12 个有
-- `VHS_VideoCombine` —— 11/12 个有
-- `ModelSamplingSD3` —— 10/12 个有
-- `easy cleanGpuUsed` —— 10/12 个有
-- `PreviewImage` —— 9/12 个有
-- `WanFirstLastFrameToVideo` —— 9/12 个有
-- `ImageBatchMulti` —— 8/12 个有
-- `ImageResizeKJv2` —— 8/12 个有
-- `PainterI2V` —— 8/12 个有
-- `PrimitiveInt` —— 8/12 个有
-- `WanMultiFrameRefToVideo` —— 8/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/12 个有
-- `SimpleMath+` —— 6/12 个有
-- `LoraLoaderModelOnly` —— 5/12 个有
-- `CRTFirstLastFrameSelector` —— 2/12 个有
-- `DuckHideNode` —— 2/12 个有
-- `GetNode` —— 2/12 个有
-- `SaveImage` —— 2/12 个有
-- `SetNode` —— 2/12 个有
-- `wanBlockSwap` —— 2/12 个有
-- `CM_IntToFloat` —— 1/12 个有
-- `ImageStitch` —— 1/12 个有
-- `MultiplyNode` —— 1/12 个有
-- `SDVN Fast Groups Bypasser` —— 1/12 个有
-- `ShellAgentPluginOutputText` —— 1/12 个有
-- `WanImageToVideo` —— 1/12 个有
+- `EmptySD3LatentImage` —— 8/11 个有
+- `PreviewImage` —— 7/11 个有
+- `ConditioningZeroOut` —— 6/11 个有
+- `Text Multiline` —— 6/11 个有
+- `CFGNorm` —— 5/11 个有
+- `LoraLoaderModelOnly` —— 3/11 个有
+- `QwenImageLatentAspectRatio` —— 3/11 个有
+- `Display Any (rgthree)` —— 2/11 个有
+- `PathchSageAttentionKJ` —— 2/11 个有
+- `QwenImageEngineer` —— 2/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 12 | 50% |
-| Prompt 约束强度(CFG) | 4 | 4 - 6 | 12 | 80% |
-| 采样算法 | 1 | 1 - 1 | 12 | 100% |
-| 调度器 | euler | - | 12 | 100% |
-| 重绘幅度 | simple | - | 12 | 75% |
+| 采样步数 | 15 | 8 - 50 | 11 | 26% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 11 | 42% |
+| 采样算法 | euler | - | 11 | 73% |
+| 调度器 | simple | - | 11 | 82% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，12 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 6，12 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，12 个样本，一致性 100%
-- 重绘幅度 最常用 simple，12 个样本，一致性 75%
+- 采样步数 中位数 15，观测区间 8 - 50，11 个样本，取值分散，一致性仅 26%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，11 个样本，取值分散，一致性仅 42%
+- 采样算法 最常用 euler，11 个样本，一致性 73%
+- 调度器 最常用 simple，11 个样本，一致性 82%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）

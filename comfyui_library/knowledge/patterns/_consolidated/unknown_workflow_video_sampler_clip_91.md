@@ -2,66 +2,72 @@
 name: unknown_workflow_video_sampler_clip_91
 type: Unknown Workflow
 frequency: 7
-level: moderate
-coverage: 0.953
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Primitive string [Crystools], VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 0.831714
+common_nodes: [CLIPTextEncode, KSampler, LoadImage, ModelSamplingSD3, VAEDecode, VHS_VideoCombine, WanImageToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/360度旋转特效-wan图生视频KJ_1899625950118629378.json, 视频生成/图生视频/Wan2.1-阿里万相-图生视频(KJ版)_1894528926553911297.json, 视频生成/图生视频/杀手-视频特效_1901443764307509249.json, 视频生成/图生视频/肌肉男魅力特效-wan图生视频KJ_1899678523555008513.json, 视频生成/图生视频/膨胀特效-wan图生视频KJ_1899620141431439362.json, 视频生成/图生视频/跨屏幕牵手-Wan2.1图生视频_1896568283456528386.json, 视频生成/文生视频/Wan2.1-阿里万相开源文_图生视频(KJ版)_1894584540348743681.json]
+members: [视频生成/图生视频/AIO-V10大一统图生视频-Wan2.2_1950716655997489154.json, 视频生成/图生视频/AIO-V10大一统图生视频-Wan2.2_1986735841529819137.json, 视频生成/图生视频/AIO-V10大一统图生视频-Wan2.2_1986737706749390849.json, 视频生成/图生视频/Wan2.2 - I2V - rapid-aio AI_2009175166516989953.json, 视频生成/图生视频/Wan2.2 动态海报工作流 LIXOAXIAO_1956058743224061953.json, 视频生成/图生视频/Wan2.2-i2v-rapid-aio-融合模型图生视频+4步快速生成_1951969446145544194.json, 视频生成/图生视频/Wan2.2大一统图生视频-RAPIO-AIO_1951895309616099329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_91
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/360度旋转特效-wan图生视频KJ_1899625950118629378.json、视频生成/图生视频/Wan2.1-阿里万相-图生视频(KJ版)_1894528926553911297.json、视频生成/图生视频/杀手-视频特效_1901443764307509249.json、视频生成/图生视频/肌肉男魅力特效-wan图生视频KJ_1899678523555008513.json、视频生成/图生视频/膨胀特效-wan图生视频KJ_1899620141431439362.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/AIO-V10大一统图生视频-Wan2.2_1950716655997489154.json、视频生成/图生视频/AIO-V10大一统图生视频-Wan2.2_1986735841529819137.json、视频生成/图生视频/AIO-V10大一统图生视频-Wan2.2_1986737706749390849.json、视频生成/图生视频/Wan2.2 - I2V - rapid-aio AI_2009175166516989953.json、视频生成/图生视频/Wan2.2 动态海报工作流 LIXOAXIAO_1956058743224061953.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `CLIPTextEncode`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `Primitive string [Crystools]`
+- `ModelSamplingSD3`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Note _O` —— 5/7 个有
-- `CR Text Concatenate` —— 4/7 个有
-- `RH_Captioner` —— 4/7 个有
-- `String Replace (mtb)` —— 4/7 个有
-- `WanVideoLoraSelect` —— 4/7 个有
-- `CM_IntToFloat` —— 3/7 个有
-- `ImageScaleDownToSize` —— 3/7 个有
-- `LayerUtility: PurgeVRAM` —— 3/7 个有
-- `WanVideoEmptyEmbeds` —— 2/7 个有
-- `WanVideoExperimentalArgs` —— 2/7 个有
-- `easy cleanGpuUsed` —— 2/7 个有
+- `PrimitiveInt` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `MathExpression|pysssss` —— 5/7 个有
+- `CLIPVisionEncode` —— 4/7 个有
+- `CLIPVisionLoader` —— 4/7 个有
+- `CheckpointLoaderSimple` —— 4/7 个有
+- `Primitive integer [Crystools]` —— 4/7 个有
+- `CLIPLoader` —— 3/7 个有
+- `UNETLoader` —— 3/7 个有
+- `VAELoader` —— 3/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `Video_Upscale_With_Model` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 8 | 7 | 70% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | sa_solver | - | 7 | 86% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 8，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，7 个样本，一致性 86%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

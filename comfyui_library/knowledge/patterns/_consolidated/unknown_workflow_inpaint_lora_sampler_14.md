@@ -1,81 +1,71 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_14
 type: Unknown Workflow
-frequency: 10
+frequency: 7
 level: strong
-coverage: 0.945
-common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImageCrop, ImageGenResolutionFromImage, InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.853714
+common_nodes: [CLIPLoader, ConditioningZeroOut, GrowMaskWithBlur, Image Comparer (rgthree), InpaintCropImproved, InpaintStitchImproved, KSampler, LoadImage, LoraLoaderModelOnly, MaskPreview+, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, TextInput_, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy isMaskEmpty]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/ACE++_Portrait_Reface_换脸_1956950372058107905.json, 图片生成/图生图/M_ACE_Plus_LoRA_subject_refence主体一致性生成_1956725732975022081.json, 图片生成/图生图/Scepter-ace ++ 更方便地更换所有东西_1911609850827108353.json, 图片生成/图生图/服装图案迁移_1900869896836915201.json, 平台全量/ACE++_1900446190285090817.json, 平台全量/ACE++换脸物品迁移文字交互_1914492547505553410.json, 平台全量/Ace指定物品指定场景迁移【AI小王子】_1915597965904515074.json, 平台全量/Scepter-ACE Plus ++ replaces everything_1888054181469511681.json, 平台全量/一键超自然换脸 脸部遮罩迁移 flux portrait  高还原度 一键脸部超自然迁移_1999664835598184450.json, 平台全量/服装图案迁移工作流（Flux Fill+Ace++）_1964876963393490946.json]
+members: [图片生成/图生图/局部批图p图修改文字美工电商图文修改_2067435903903166466.json, 图片生成/图生图/局部批图p图修改文字美工电商图文修改_2067549170898132994.json, 图片生成/图生图/局部批图p图修改文字美工电商图文修改_2082712829043499009.json, 图片生成/图生图/局部重绘_2081739421422022657.json, 图片生成/图生图/局部重绘_P图改字_2073664975360585729.json, 图片生成/图生图/局部重绘_P图改字（美工必备）_2005210269997559809.json, 图片生成/图生图/局部重绘_P图改字（美工必备）_2056598235896176642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/ACE++_Portrait_Reface_换脸_1956950372058107905.json、图片生成/图生图/M_ACE_Plus_LoRA_subject_refence主体一致性生成_1956725732975022081.json、图片生成/图生图/Scepter-ace ++ 更方便地更换所有东西_1911609850827108353.json、图片生成/图生图/服装图案迁移_1900869896836915201.json、平台全量/ACE++_1900446190285090817.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/局部批图p图修改文字美工电商图文修改_2067435903903166466.json、图片生成/图生图/局部批图p图修改文字美工电商图文修改_2067549170898132994.json、图片生成/图生图/局部批图p图修改文字美工电商图文修改_2082712829043499009.json、图片生成/图生图/局部重绘_2081739421422022657.json、图片生成/图生图/局部重绘_P图改字_2073664975360585729.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CLIPTextEncode`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `ImageCrop`
-- `ImageGenResolutionFromImage`
-- `InpaintModelConditioning`
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
+- `InpaintCropImproved`
+- `InpaintStitchImproved`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MaskPreview+`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy ifElse`
+- `easy isMaskEmpty`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 9/10 个有
-- `ImageConcanate` —— 9/10 个有
-- `ImageResize+` —— 9/10 个有
-- `ImageToMask` —— 9/10 个有
-- `MaskToImage` —— 9/10 个有
-- `PreviewImage` —— 8/10 个有
-- `ImagePadForOutpaint` —— 5/10 个有
-- `RMBG` —— 4/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
-- `LoadImageFromUrl` —— 2/10 个有
-- `Note Plus (mtb)` —— 2/10 个有
-- `CR Text` —— 1/10 个有
-- `ConditioningZeroOut` —— 1/10 个有
-- `DeepTranslatorTextNode` —— 1/10 个有
-- `Image Comparer (rgthree)` —— 1/10 个有
-- `ImageScale` —— 1/10 个有
-- `SUPIR_Upscale` —— 1/10 个有
+- `ETN_LoadMaskBase64` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 28 | 20 - 50 | 10 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | normal | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 8 | 8 - 8 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 28，观测区间 20 - 50，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 normal，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

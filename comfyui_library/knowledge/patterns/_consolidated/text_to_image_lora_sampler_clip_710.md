@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_710
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.7935
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, KSampler, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.801
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, RH_RhartImageG2OfficialImageToImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveImage, SaveVideo, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/qwen_image_edit-2509 文生图_2026532700005339137.json, 图片生成/文生图/👾怪獸-Z-Image 文生图圣诞特集👾_1996136993329496065.json]
+members: [视频生成/图生视频/街拍服装带货短视频｜全自动生成电商展示工作流_2095974453359501314.json, 视频生成/文生视频/MiniMax H3全能导演台｜文生图生视频三合一_2092352270485770241.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_710
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/qwen_image_edit-2509 文生图_2026532700005339137.json、图片生成/文生图/👾怪獸-Z-Image 文生图圣诞特集👾_1996136993329496065.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/街拍服装带货短视频｜全自动生成电商展示工作流_2095974453359501314.json、视频生成/文生视频/MiniMax H3全能导演台｜文生图生视频三合一_2092352270485770241.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
@@ -27,49 +27,59 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `CR Text`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
 - `SaveImage`
+- `SaveVideo`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `LayerUtility: TextJoin` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `PD_JoinStringMultiLine` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `Qwen3_VQA` —— 1/2 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 7 | - | 2 | 57% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 50% |
-| 调度器 | simple | - | 2 | 100% |
+| 采样步数 | 4 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
+| 采样算法 | er_sde | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 924 | - | 2 | 83% |
-| 高度 | 1644 | - | 2 | 83% |
+| 宽度 | 80 | - | 2 | 100% |
+| 高度 | 80 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 7，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 50%
-- 调度器 最常用 simple，2 个样本，一致性 100%
+- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 924，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
-- 高度 中位数 1644，样本不足，未给区间，2 个样本，取值集中（一致性 83%）
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

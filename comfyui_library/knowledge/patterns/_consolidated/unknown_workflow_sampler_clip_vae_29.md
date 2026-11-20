@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_sampler_clip_vae_29
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 0.841
+coverage: 0.842857
 common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Integer To String, CR Split String, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, INTConstant, Int, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, StringToInt, Text Concatenate, VAEDecode, VAEEncode, VAELoader, easy compare, easy ifElse]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext Dev单图模式_1938266634446635009.json, 图片生成/图生图/Kontext单图编辑_1938411645796548610.json, 图片生成/图生图/Kontext用嘴改图王炸模型开源_1938368955515867137.json, 图片生成/图生图/超强模型Kontext单图编辑Nunchaku+Lora双加速版_1950218051007463425.json, 图片生成/图生图/超强模型Kontext单图编辑版_1940596276108963841.json, 图片生成/图生图/超强模型Kontext双图编辑Nunchaku+Lora双加速版_1950227095365533698.json, 图片生成/文生图/[Kontext]flux1-dev-kontext开源版本_1938374526730178562.json, 平台全量/超强模型Kontext双图编辑版_1940793052925685761.json]
+members: [图片生成/图生图/Kontext Dev单图模式_1938266634446635009.json, 图片生成/图生图/Kontext单图编辑_1938411645796548610.json, 图片生成/图生图/Kontext用嘴改图王炸模型开源_1938368955515867137.json, 图片生成/图生图/超强模型Kontext单图编辑Nunchaku+Lora双加速版_1950218051007463425.json, 图片生成/图生图/超强模型Kontext单图编辑版_1940596276108963841.json, 图片生成/图生图/超强模型Kontext双图编辑Nunchaku+Lora双加速版_1950227095365533698.json, 图片生成/文生图/[Kontext]flux1-dev-kontext开源版本_1938374526730178562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_29
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Kontext Dev单图模式_1938266634446635009.json、图片生成/图生图/Kontext单图编辑_1938411645796548610.json、图片生成/图生图/Kontext用嘴改图王炸模型开源_1938368955515867137.json、图片生成/图生图/超强模型Kontext单图编辑Nunchaku+Lora双加速版_1950218051007463425.json、图片生成/图生图/超强模型Kontext单图编辑版_1940596276108963841.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Kontext Dev单图模式_1938266634446635009.json、图片生成/图生图/Kontext单图编辑_1938411645796548610.json、图片生成/图生图/Kontext用嘴改图王炸模型开源_1938368955515867137.json、图片生成/图生图/超强模型Kontext单图编辑Nunchaku+Lora双加速版_1950218051007463425.json、图片生成/图生图/超强模型Kontext单图编辑版_1940596276108963841.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
 - **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
@@ -49,28 +49,28 @@ source: knowledge_consolidation
 - `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 6/8 个有
-- `FluxResolutionNode` —— 5/8 个有
-- `ImageConcanate` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `RH_Translator` —— 5/8 个有
-- `CR Text` —— 4/8 个有
-- `ETN_ReferenceImage` —— 4/8 个有
-- `FluxKontextImageScale` —— 4/8 个有
-- `GetImageSize` —— 4/8 个有
-- `GetImageSize+` —— 4/8 个有
-- `PrimitiveStringMultiline` —— 4/8 个有
-- `RH_LLMAPI_NODE` —— 4/8 个有
-- `ShowText|pysssss` —— 4/8 个有
-- `easy showAnything` —— 4/8 个有
-- `DeepTranslatorTextNode` —— 3/8 个有
-- `JWStringGetLine` —— 3/8 个有
-- `EmptyImage` —— 2/8 个有
-- `ImpactInt` —— 2/8 个有
-- `NunchakuFluxDiTLoader` —— 2/8 个有
-- `NunchakuFluxLoraLoader` —— 2/8 个有
-- `CLIPVisionLoader` —— 1/8 个有
-- `StyleModelLoader` —— 1/8 个有
+- `UNETLoader` —— 5/7 个有
+- `ETN_ReferenceImage` —— 4/7 个有
+- `FluxResolutionNode` —— 4/7 个有
+- `GetImageSize` —— 4/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `RH_Translator` —— 4/7 个有
+- `easy showAnything` —— 4/7 个有
+- `CR Text` —— 3/7 个有
+- `DeepTranslatorTextNode` —— 3/7 个有
+- `FluxKontextImageScale` —— 3/7 个有
+- `GetImageSize+` —— 3/7 个有
+- `JWStringGetLine` —— 3/7 个有
+- `RH_LLMAPI_NODE` —— 3/7 个有
+- `ShowText|pysssss` —— 3/7 个有
+- `NunchakuFluxDiTLoader` —— 2/7 个有
+- `NunchakuFluxLoraLoader` —— 2/7 个有
+- `CLIPVisionLoader` —— 1/7 个有
+- `EmptyImage` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `StyleModelLoader` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,75 +1,82 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_17
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.902
-common_nodes: [AdvancedVisionLoader, CLIPTextEncode, CLIPVisionEncode, DualCLIPLoader, FluxGuidance, InpaintModelConditioning, KSampler, LayerMask: MaskGrow, LayerUtility: CropByMask V2, LayerUtility: ICMask, LayerUtility: ICMaskCropBack, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, SaveImage, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.9148
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, CR Color Panel, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GrowMaskWithBlur, ImageCompositeMasked, ImageCrop+, InpaintCrop, InpaintModelConditioning, InpaintStitch, Int, KSamplerSelect, LayerMask: MaskGrow, LayerMask: MaskPreview, LayerUtility: CropByMask V2, LayerUtility: ImageBlendAdvance, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, MaskPreview+, ModelSamplingFlux, PreviewImage, RMBG, RandomNoise, ReduxAdvanced, SamplerCustomAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy makeImageForICLora]
 problems: []
 missing: []
-members: [图片生成/图生图/万物迁移-Redux-512+Pulid-人物-强劲参考_1913094549655486465.json, 图片生成/图生图/万物迁移-Redux-512-强劲参考_1913041299597946882.json, 图片生成/图生图/万物迁移V2-ICE+Redux512强强联合_1925163632135761922.json, 图片生成/图生图/平台用-汽车轮毂商标局部修复_2059452336480808962.json, 图片生成/图生图/汽车轮毂商标局部修复_1984676237534707714.json, 图片生成/图生图/车身替换-Fill&Redux_2062346798567608321.json, 图片生成/图生图/🦖产品强力迁移-超强参考_1925804870501093378.json, 平台全量/万物迁移-局部二次迁移-Redux-512-强劲参考_1917404896793137154.json]
+members: [图片生成/图生图/Flux 万物迁移_1983079864918024194.json, 图片生成/图生图/万物迁移（字节最新重绘模型）_1969029474002104321.json, 图片生成/图生图/万物迁移（河南ai之神）_1958511419870310401.json, 图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1936726800812904450.json, 图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1975103087293632513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/万物迁移-Redux-512+Pulid-人物-强劲参考_1913094549655486465.json、图片生成/图生图/万物迁移-Redux-512-强劲参考_1913041299597946882.json、图片生成/图生图/万物迁移V2-ICE+Redux512强强联合_1925163632135761922.json、图片生成/图生图/平台用-汽车轮毂商标局部修复_2059452336480808962.json、图片生成/图生图/汽车轮毂商标局部修复_1984676237534707714.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux 万物迁移_1983079864918024194.json、图片生成/图生图/万物迁移（字节最新重绘模型）_1969029474002104321.json、图片生成/图生图/万物迁移（河南ai之神）_1958511419870310401.json、图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1936726800812904450.json、图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1975103087293632513.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `AdvancedVisionLoader`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Color Panel`
+- `ConditioningZeroOut`
+- `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
+- `GrowMaskWithBlur`
+- `ImageCompositeMasked`
+- `ImageCrop+`
+- `InpaintCrop`
 - `InpaintModelConditioning`
-- `KSampler`
+- `InpaintStitch`
+- `Int`
+- `KSamplerSelect`
 - `LayerMask: MaskGrow`
+- `LayerMask: MaskPreview`
 - `LayerUtility: CropByMask V2`
-- `LayerUtility: ICMask`
-- `LayerUtility: ICMaskCropBack`
-- `LayerUtility: RestoreCropBox`
+- `LayerUtility: ImageBlendAdvance`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `Mask Fill Holes`
+- `MaskPreview+`
+- `ModelSamplingFlux`
+- `PreviewImage`
+- `RMBG`
+- `RandomNoise`
+- `ReduxAdvanced`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `StyleModelApply`
 - `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy makeImageForICLora`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `Image Comparer (rgthree)` —— 3/8 个有
-- `Mask Fill Holes` —— 2/8 个有
-- `Mask_image2mask` —— 2/8 个有
-- `ApplyPulidFlux` —— 1/8 个有
-- `CR Text` —— 1/8 个有
-- `GetImageSize+` —— 1/8 个有
-- `Image Blank` —— 1/8 个有
-- `ImageCompositeMasked` —— 1/8 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/8 个有
-- `PulidFluxEvaClipLoader` —— 1/8 个有
-- `PulidFluxInsightFaceLoader` —— 1/8 个有
-- `PulidFluxModelLoader` —— 1/8 个有
-- `easy ifElse` —— 1/8 个有
+- `Get Image Size` —— 4/5 个有
+- `IsMaskEmpty` —— 4/5 个有
+- `LayerUtility: ImageReel` —— 4/5 个有
+- `LayerUtility: ImageReelComposit` —— 4/5 个有
+- `Seed (rgthree)` —— 4/5 个有
+- `easy anythingIndexSwitch` —— 4/5 个有
+- `easy convertAnything` —— 4/5 个有
+- `BiRefNetRMBG` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `LayerUtility: CropByMask` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 25 - 30 | 8 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,8 +84,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 30，8 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

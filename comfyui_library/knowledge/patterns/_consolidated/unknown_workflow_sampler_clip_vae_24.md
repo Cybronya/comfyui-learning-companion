@@ -1,69 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_vae_24
 type: Unknown Workflow
-frequency: 10
+frequency: 8
 level: moderate
-coverage: 0.8274
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
-problems: []
+coverage: 0.933125
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/FLUX2-Klein-9B-base-Q8(mac m芯片本地可用)-基础文生图_2056983301881155585.json, 图片生成/文生图/FLUX2Klein 文生图 flux克莱因文生图Basic Text-to-lmage_2015976117517164545.json, 图片生成/文生图/FLUX新王炸 Klein 文生图急速10秒出图_2016041654972583938.json, 图片生成/文生图/Flux-2-Klein-4B （文生图）_2011880923473645570.json, 图片生成/文生图/Flux-Klein-9b文生图_2078378043567075329.json, 图片生成/文生图/Flux2 Klein-文生图 加速版10秒出图_2012172099653214210.json, 图片生成/文生图/Flux2-Klein文生图+图生图_2012291526050717697.json, 图片生成/文生图/YJ-FAST-flux2klein为模特更换衣服裤子-jianan-tmp1-step1_2034278138842193922.json, 图片生成/文生图/二次元老婆秒变真人！ComfyUI动漫转写实，脸不变质感拉满_2059589704609255426.json, 图片生成/文生图/产品抠图透明背景精修版+全节点注释_2090760561532424194.json]
+members: [图片生成/文生图/Nunchaku-qwen image文生图_1965030044580069377.json, 图片生成/文生图/Nunchaku1.0正式版+ Qwen-Image：速度与质量的终极平衡！文生图_1965259047710674945.json, 图片生成/文生图/Nunchaku超级加速 Qwen Image文生图_1966409848168624130.json, 图片生成/文生图/Qwen Image封面生成-日拱一卒_1958095012225495041.json, 图片生成/文生图/Qwen Image文生图_1954799878556704770.json, 图片生成/文生图/Qwen image pruning——权重瘦身版_2073209712295899137.json, 图片生成/文生图/Qwen 文生图(二次元)_2057795247358435330.json, 图片生成/文生图/文生图-产品创意海报_2059206447187193858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_24
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/FLUX2-Klein-9B-base-Q8(mac m芯片本地可用)-基础文生图_2056983301881155585.json、图片生成/文生图/FLUX2Klein 文生图 flux克莱因文生图Basic Text-to-lmage_2015976117517164545.json、图片生成/文生图/FLUX新王炸 Klein 文生图急速10秒出图_2016041654972583938.json、图片生成/文生图/Flux-2-Klein-4B （文生图）_2011880923473645570.json、图片生成/文生图/Flux-Klein-9b文生图_2078378043567075329.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Nunchaku-qwen image文生图_1965030044580069377.json、图片生成/文生图/Nunchaku1.0正式版+ Qwen-Image：速度与质量的终极平衡！文生图_1965259047710674945.json、图片生成/文生图/Nunchaku超级加速 Qwen Image文生图_1966409848168624130.json、图片生成/文生图/Qwen Image封面生成-日拱一卒_1958095012225495041.json、图片生成/文生图/Qwen Image文生图_1954799878556704770.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CFGGuider`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 9/10 个有
-- `LoadImage` —— 5/10 个有
-- `easy int` —— 5/10 个有
-- `ConditioningZeroOut` —— 4/10 个有
-- `PrimitiveInt` —— 4/10 个有
-- `PrimitiveStringMultiline` —— 4/10 个有
-- `ReferenceLatent` —— 4/10 个有
-- `Seed (rgthree)` —— 4/10 个有
-- `VAEEncode` —— 4/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/10 个有
-- `LoraLoaderModelOnly` —— 3/10 个有
-- `CR Text` —— 2/10 个有
-- `GetImageSize` —— 2/10 个有
-- `AddLabel` —— 1/10 个有
-- `GGUFLoaderKJ` —— 1/10 个有
-- `ImageSmartSharpen+` —— 1/10 个有
-- `ImpactInt` —— 1/10 个有
-- `LayerMask: BiRefNetUltra` —— 1/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `UNETLoader` —— 5/8 个有
+- `JjkText` —— 4/8 个有
+- `CFGNorm` —— 3/8 个有
+- `LoadImage` —— 3/8 个有
+- `NunchakuQwenImageDiTLoader` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 2/8 个有
+- `Text` —— 2/8 个有
+- `CR SDXL Aspect Ratio` —— 1/8 个有
+- `LayerUtility: TextJoin` —— 1/8 个有
+- `TextCombinerTwo` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 8 - 30 | 8 | 59% |
+| Prompt 约束强度(CFG) | 3 | 1 - 4 | 8 | 67% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 8 - 30，8 个样本
+- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 4，8 个样本
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

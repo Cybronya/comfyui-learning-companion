@@ -1,88 +1,86 @@
 ---
 name: unknown_workflow_video_lora_sampler_558
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.7492
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.8215
+common_nodes: [AudioCrop, BasicScheduler, CLIPTextEncode, CM_IntToFloat, CR Text, DapaoSmartMemoryOptimizerNode, Display Int (rgthree), DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, Get resolution [Crystools], KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveString, SamplerCustom, SetLatentNoiseMask, SimpleMath+, SolidMask, SoundFlow_GetLength, Switch any [Crystools], ToInt, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, ZML_ArithmeticComparison, easy cleanGpuUsed, easy int, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2 Animate sec自动抠像人物替换_2057002999330988034.json, 图片生成/图生图/Wan2.2Animate点编辑器指定替换人物局部_2028106785063702529.json, 平台全量/Wan Animate V2+SeC视频角色替换_2058762900847812610.json, 平台全量/Wan Animate视频换背景_2059962221534474241.json, 平台全量/Wan2.2 Animate 高质量视频换背景_2010992426214760449.json]
+members: [视频生成/图生视频/LTX2.3视频MV版2_2061422103609569282.json, 视频生成/图生视频/LTX2.3视频MV版3_2061422054284554242.json, 视频生成/图生视频/ltx2.3视频MV_2056299096574619650.json, 视频生成/图生视频/急速图生视频mv抽卡必备_2051941097793966081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_558
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Animate sec自动抠像人物替换_2057002999330988034.json、图片生成/图生图/Wan2.2Animate点编辑器指定替换人物局部_2028106785063702529.json、平台全量/Wan Animate V2+SeC视频角色替换_2058762900847812610.json、平台全量/Wan Animate视频换背景_2059962221534474241.json、平台全量/Wan2.2 Animate 高质量视频换背景_2010992426214760449.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3视频MV版2_2061422103609569282.json、视频生成/图生视频/LTX2.3视频MV版3_2061422054284554242.json、视频生成/图生视频/ltx2.3视频MV_2056299096574619650.json、视频生成/图生视频/急速图生视频mv抽卡必备_2051941097793966081.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `ImageResizeKJv2`
+全部 4 个 workflow 都包含：
+- `AudioCrop`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CM_IntToFloat`
+- `CR Text`
+- `DapaoSmartMemoryOptimizerNode`
+- `Display Int (rgthree)`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `Get resolution [Crystools]`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `PrimitiveString`
+- `SamplerCustom`
+- `SetLatentNoiseMask`
+- `SimpleMath+`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `Switch any [Crystools]`
+- `ToInt`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `ZML_ArithmeticComparison`
+- `easy cleanGpuUsed`
+- `easy int`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 4/5 个有
-- `GrowMaskWithBlur` —— 4/5 个有
-- `INTConstant` —— 4/5 个有
-- `ImageConcatMulti` —— 4/5 个有
-- `DrawViTPose` —— 3/5 个有
-- `GetNode` —— 3/5 个有
-- `ImageCompositeMasked` —— 3/5 个有
-- `ImageFromBatch` —— 3/5 个有
-- `ImageResize+` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `VHS_VideoInfo` —— 3/5 个有
-- `WanVideoContextOptions` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
-- `AILab_QwenVL` —— 2/5 个有
-- `EmptyImage` —— 2/5 个有
-- `LayerMask: MaskInvert` —— 2/5 个有
-- `MaskToImage` —— 2/5 个有
-- `PDIMAGE_LongerSize` —— 2/5 个有
-- `PointsEditor` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `TTP_text_mix` —— 2/5 个有
-- `TextInput_` —— 2/5 个有
-- `ACE_ImageFaceCrop` —— 1/5 个有
-- `CR SDXL Aspect Ratio` —— 1/5 个有
-- `ClothesSegment` —— 1/5 个有
-- `CoordinatePlotter` —— 1/5 个有
-- `GrowMask` —— 1/5 个有
-- `ImageRepeat` —— 1/5 个有
-- `JWInteger` —— 1/5 个有
-- `LayerMask: MaskPreview` —— 1/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `easy clearCacheAll` —— 1/5 个有
-- `easy imageRemBg` —— 1/5 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `Display Any (rgthree)` —— 3/4 个有
+- `LTXVImgToVideoInplaceKJ` —— 3/4 个有
+- `RH_Captioner` —— 3/4 个有
+- `CrossFadeImages` —— 2/4 个有
+- `FrameSelector` —— 2/4 个有
+- `GetImageSizeAndCount` —— 2/4 个有
+- `GetNode` —— 2/4 个有
+- `ImageBatchMulti` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `LTXVAddGuideMultiDynamic` —— 2/4 个有
+- `LTXVCropGuides` —— 2/4 个有
+- `Make Image Batch` —— 2/4 个有
+- `MathExpression|pysssss` —— 2/4 个有
+- `MelBandRoFormerModelLoader` —— 2/4 个有
+- `MelBandRoFormerSampler` —— 2/4 个有
+- `NormalizeAudioLoudness` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `DeepTranslatorTextNode` —— 1/4 个有
 
 ## 典型参数
 

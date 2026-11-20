@@ -3,61 +3,50 @@ name: text_to_image_upscale_lora_sampler_107
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.821
-common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, INTConstant, Image Comparer (rgthree), ImageScaleToTotalPixels, JjkText, KSampler, LayerUtility: TextJoin, LoraLoaderModelOnly, PreviewImage, QwenImage21Cache, ResolutionSelector, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader, easy setNode, easy showAnything, solarL_SaveImagesToZip]
+coverage: 0.917333
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, GetVideoComponents, JjkText, KSampler, KSamplerSelect, LTXVConditioning, LTXVLoopingSampler, LTXVSpatioTemporalTiledVAEDecode, LoadVideo, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SaveVideo, UNETLoader, VAEDecode, VAEEncodeTiled, VAELoader, Yuan_RTXVideoUpscaleH3, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1短剧资产系列场景篇｜环境场景道具批量生成｜分镜更省事_2102620341595103233.json, 图片生成/文生图/Qwen Image 2.1角色设计参考表，四视图多角度角色一致性文生图_2102832066093215745.json, 视频生成/文生视频/Qwen_Image_2.1角色设计参考表，四视图多角度角色一致性文生图_2106173881030627329.json]
+members: [数字人/数字人/LTX2.5极速视频超清放大｜生成式高清重绘视频生视频_2092080582749679617.json, 数字人/数字人/LTX2.5极速视频超清放大｜生成式高清重绘视频生视频_2092370707253653505.json, 视频生成/文生视频/LTX2.5极速视频超清放大｜生成式高清重绘视频生视频_2089393120260743170.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_107
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1短剧资产系列场景篇｜环境场景道具批量生成｜分镜更省事_2102620341595103233.json、图片生成/文生图/Qwen Image 2.1角色设计参考表，四视图多角度角色一致性文生图_2102832066093215745.json、视频生成/文生视频/Qwen_Image_2.1角色设计参考表，四视图多角度角色一致性文生图_2106173881030627329.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/LTX2.5极速视频超清放大｜生成式高清重绘视频生视频_2092080582749679617.json、数字人/数字人/LTX2.5极速视频超清放大｜生成式高清重绘视频生视频_2092370707253653505.json、视频生成/文生视频/LTX2.5极速视频超清放大｜生成式高清重绘视频生视频_2089393120260743170.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Anything Everywhere3`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `INTConstant`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `GetVideoComponents`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: TextJoin`
+- `KSamplerSelect`
+- `LTXVConditioning`
+- `LTXVLoopingSampler`
+- `LTXVSpatioTemporalTiledVAEDecode`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `QwenImage21Cache`
-- `ResolutionSelector`
-- `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `TextEncodeQwenImage21`
-- `TextGenerateLTX2Prompt`
+- `ManualSigmas`
+- `RandomNoise`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncodeTiled`
 - `VAELoader`
-- `easy setNode`
-- `easy showAnything`
+- `Yuan_RTXVideoUpscaleH3`
 - `solarL_SaveImagesToZip`
-
-**可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 2/3 个有
-- `EmptyImage` —— 1/3 个有
+- `孤海注释`
 
 ## 典型参数
 
@@ -75,7 +64,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -86,4 +75,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，3 个样本，一致性 100%
 - 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/3 个样本）：Steps较低可能导致细节不足

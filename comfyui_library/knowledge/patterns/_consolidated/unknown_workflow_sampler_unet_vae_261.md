@@ -1,68 +1,75 @@
 ---
 name: unknown_workflow_sampler_unet_vae_261
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.8662
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ImageToVideo, MiniMaxH3SigmaShift, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.836
+common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, SaveAudioMP3, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio, VAELoader]
+problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/MiniMax H3 高质感低显存文生视频｜16G_24G 可跑｜真人感优化_2105308028953255937.json, 平台全量/H3-DMAD 4步文生视频_2117540373450018817.json, 平台全量/H3-DMAD 8步文生视频_2117536220883546113.json, 视频生成/文生视频/fastvideo_fasth3_文生视频-9：16口播5秒_2101846484743450626.json, 视频生成/文生视频/fastvideo_fasth3_文生视频_2101835354880962561.json]
+members: [音频生成/音频生成/ACE STEP1.5 音乐生成_2019710020950167553.json, 音频生成/音频生成/ACE Step v1.5 歌曲创作_2048677518881853442.json, 音频生成/音频生成/ACE Step1.5+qwen3.5歌词歌曲创作_2046534389982564354.json, 音频生成/音频生成/ACE step-XL-turbo-自动歌词音乐生成_2048231420753092609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_261
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/MiniMax H3 高质感低显存文生视频｜16G_24G 可跑｜真人感优化_2105308028953255937.json、平台全量/H3-DMAD 4步文生视频_2117540373450018817.json、平台全量/H3-DMAD 8步文生视频_2117536220883546113.json、视频生成/文生视频/fastvideo_fasth3_文生视频-9：16口播5秒_2101846484743450626.json、视频生成/文生视频/fastvideo_fasth3_文生视频_2101835354880962561.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/ACE STEP1.5 音乐生成_2019710020950167553.json、音频生成/音频生成/ACE Step v1.5 歌曲创作_2048677518881853442.json、音频生成/音频生成/ACE Step1.5+qwen3.5歌词歌曲创作_2046534389982564354.json、音频生成/音频生成/ACE step-XL-turbo-自动歌词音乐生成_2048231420753092609.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3SigmaShift`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+全部 4 个 workflow 都包含：
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyAceStep1.5LatentAudio`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `SaveAudioMP3`
+- `TextEncodeAceStepAudio1.5`
 - `UNETLoader`
-- `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `ModelAttentionBackend` —— 3/5 个有
-- `BlockSparseAttention` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `GetVideoComponents` —— 1/5 个有
-- `ImageScale` —— 1/5 个有
-- `MiniMaxChunkFeedForward` —— 1/5 个有
-- `MiniMaxLowVRAMAttention` —— 1/5 个有
-- `SeedVR2LoadDiTModel` —— 1/5 个有
-- `SeedVR2LoadVAEModel` —— 1/5 个有
-- `SeedVR2VideoUpscaler` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `CR Prompt Text` —— 2/4 个有
+- `PrimitiveFloat` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `easy seed` —— 2/4 个有
+- `llama_cpp_instruct_adv` —— 2/4 个有
+- `llama_cpp_model_loader` —— 2/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `RegexExtract` —— 1/4 个有
+- `llama_cpp_parameters` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 10 | 4 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 4/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 10，4 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：发现KSampler但没有VAEDecode
+- 高发问题（3/4 个样本）：Steps较低可能导致细节不足

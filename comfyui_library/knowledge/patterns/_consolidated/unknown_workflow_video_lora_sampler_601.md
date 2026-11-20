@@ -1,58 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_601
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9082
-common_nodes: [CR Prompt Text, JWInteger, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFreeInitArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy int]
+coverage: 0.8005
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, EasyCache, Label (rgthree), LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnPatch, SpectrumApplyMiniMaxH3, UNETLoader, UniBlockSwap, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/AniWan图生视频_1945815960743800834.json, 视频生成/图生视频/AniWan图生视频加速版_1947158911092305922.json, 视频生成/图生视频/🤠【大炮视频】AniWan图生视频灵动加速版🤠_1945677633763909634.json, 视频生成/图生视频/🤠【大炮视频】AniWan运镜参考图生视频+灵动运镜版🤠_1945637624423882753.json, 视频生成/文生视频/🤠【大炮视频】AniWan文生视频灵动加速版🤠_1945683257658888194.json]
+members: [视频生成/图生视频/新4步lora三阶加速不降质多参条件生视频工作流 开源MiniMax H3 FL2VA_2092519340435402753.json, 视频生成/图生视频/新4步lora三阶加速不降质尾帧生视频工作流 开源MiniMax H3 FL2VA_2089808482114560002.json, 视频生成/图生视频/新4步加速lora提速不降质图生视频工作流 开源MiniMax H3 FL2VA_2086037089392619521.json, 视频生成/图生视频/新4步加速lora提速不降质多条件参考视频工作流 开源MiniMax H3 FL2VA_2086043448649539585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_601
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/AniWan图生视频_1945815960743800834.json、视频生成/图生视频/AniWan图生视频加速版_1947158911092305922.json、视频生成/图生视频/🤠【大炮视频】AniWan图生视频灵动加速版🤠_1945677633763909634.json、视频生成/图生视频/🤠【大炮视频】AniWan运镜参考图生视频+灵动运镜版🤠_1945637624423882753.json、视频生成/文生视频/🤠【大炮视频】AniWan文生视频灵动加速版🤠_1945683257658888194.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/新4步lora三阶加速不降质多参条件生视频工作流 开源MiniMax H3 FL2VA_2092519340435402753.json、视频生成/图生视频/新4步lora三阶加速不降质尾帧生视频工作流 开源MiniMax H3 FL2VA_2089808482114560002.json、视频生成/图生视频/新4步加速lora提速不降质图生视频工作流 开源MiniMax H3 FL2VA_2086037089392619521.json、视频生成/图生视频/新4步加速lora提速不降质多条件参考视频工作流 开源MiniMax H3 FL2VA_2086043448649539585.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
 - `CR Prompt Text`
-- `JWInteger`
-- `LoadWanVideoT5TextEncoder`
+- `ComfyMathExpression`
+- `EasyCache`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SolAttnPatch`
+- `SpectrumApplyMiniMaxH3`
+- `UNETLoader`
+- `UniBlockSwap`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoFreeInitArgs`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `WanVideoImageToVideoEncode` —— 4/5 个有
-- `ImageConcanate` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `WanVideoEmptyEmbeds` —— 1/5 个有
-- `WanVideoEncode` —— 1/5 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/5 个有
-- `WanVideoUni3C_embeds` —— 1/5 个有
+- `LoadImage` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `ModelAttentionBackend` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `SolAttnMiniMax` —— 2/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `BasicScheduler` —— 1/4 个有
+- `CS-MultiImageLoader` —— 1/4 个有
+- `KSamplerSelect` —— 1/4 个有
+- `LoadAudio` —— 1/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/4 个有
+- `MiniMaxH3SigmaShift` —— 1/4 个有
+- `VHS_LoadAudioUpload` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,64 +3,81 @@ name: unknown_workflow_video_upscale_lora_21
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.406333
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, Fast Groups Bypasser (rgthree), FloatConstant, GetNode, GrowMask, INTConstant, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RIFE VFI, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy sam3ModelLoader, easy sam3VideoSegmentation]
+coverage: 0.631667
+common_nodes: [DownloadAndLoadWav2VecModel, FaceRestoreCFWithModel, FaceRestoreModelLoader, Float, GetNode, ImageFromBatch+, ImageResize+, ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, Note _O, PreviewAudio, PrimitiveBoolean, RH_Captioner, RH_GetAudioDuration, ReActorFaceSwap, SetNode, SimpleMath+, Text Concatenate, Text Multiline, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/WAN2.2一键人物替换，人物一致性强！_2001257092776423425.json, 视频生成/图生视频/人物替换x凡人二创V2.0_2029486015072706561.json, 视频生成/图生视频/人物替换x凡人二创_2002281060912230402.json]
+members: [视频生成/图生视频/子易奇谭V2.0beta_1965268707083735042.json, 视频生成/图生视频/子易奇谭V2.0【仅首帧+wan2.2 insight】_1973648860415397889.json, 视频生成/图生视频/子易奇谭V2.0仅首帧_1965183125162704897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_21
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/WAN2.2一键人物替换，人物一致性强！_2001257092776423425.json、视频生成/图生视频/人物替换x凡人二创V2.0_2029486015072706561.json、视频生成/图生视频/人物替换x凡人二创_2002281060912230402.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/子易奇谭V2.0beta_1965268707083735042.json、视频生成/图生视频/子易奇谭V2.0【仅首帧+wan2.2 insight】_1973648860415397889.json、视频生成/图生视频/子易奇谭V2.0仅首帧_1965183125162704897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：41%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FloatConstant`
+- `DownloadAndLoadWav2VecModel`
+- `FaceRestoreCFWithModel`
+- `FaceRestoreModelLoader`
+- `Float`
 - `GetNode`
-- `GrowMask`
-- `INTConstant`
+- `ImageFromBatch+`
+- `ImageResize+`
+- `ImageUpscaleWithModel`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `RIFE VFI`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
+- `LoadWanVideoT5TextEncoder`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `NormalizeAudioLoudness`
+- `Note _O`
+- `PreviewAudio`
+- `PrimitiveBoolean`
+- `RH_Captioner`
+- `RH_GetAudioDuration`
+- `ReActorFaceSwap`
 - `SetNode`
-- `VHS_LoadVideo`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
+- `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BiRefNetRMBG` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
-- `YOLOModelLoader` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `CLIPVisionLoader` —— 1/3 个有
+- `CreateCFGScheduleFloatList` —— 1/3 个有
+- `GetImageRangeFromBatch` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/3 个有
+- `StringToFloatList` —— 1/3 个有
+- `WanVideoClipVisionEncode` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoImageToVideoMultiTalk` —— 1/3 个有
+- `WanVideoScheduler` —— 1/3 个有
+- `WanVideoSigmaToStep` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,91 +1,84 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_94
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.687333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetImageSize+, ImageResize+, ImageScaleBy, KSamplerAdvanced, LoraLoaderModelOnly, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.4245
+common_nodes: [AIO_Preprocessor, Anything Everywhere, CLIPLoader, ConditioningZeroOut, Fast Groups Bypasser (rgthree), FlashVSRNode, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LayerColor: Brightness & Contrast, LayerColor: BrightnessContrastV2, LoadImage, LoraLoaderModelOnly, PlaySound|pysssss, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, ShowText|pysssss, TextEncodeQwenImageEditPlusPro_lrzjason, UnetLoaderGGUF, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageRemBg, llama_cpp_instruct_adv, llama_cpp_model_loader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-image D-OPSD文生图+高清修复_2059661332814852097.json, 图片生成/文生图/z-image BEYOND超越真实   文生图细节增强 噪声返回2次采样+seedvr2分块放大_2006269781057478658.json, 图片生成/文生图/zimage高级文生图，三阶段采样，带seedvr2+ttp放大，效果可达到商用级别_2004212112182439937.json]
+members: [图片生成/图生图/Qwen-Edit-2511-照片质感转换&重打光_2069983182677700610.json, 图片生成/图生图/YZ金鱼-Qwen-Edit-2509-进阶高清修复&照片质感转换&重打光_1990318149092429825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_94
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-image D-OPSD文生图+高清修复_2059661332814852097.json、图片生成/文生图/z-image BEYOND超越真实   文生图细节增强 噪声返回2次采样+seedvr2分块放大_2006269781057478658.json、图片生成/文生图/zimage高级文生图，三阶段采样，带seedvr2+ttp放大，效果可达到商用级别_2004212112182439937.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit-2511-照片质感转换&重打光_2069983182677700610.json、图片生成/图生图/YZ金鱼-Qwen-Edit-2509-进阶高清修复&照片质感转换&重打光_1990318149092429825.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：42%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `Anything Everywhere`
 - `CLIPLoader`
-- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `GetImageSize+`
-- `ImageResize+`
-- `ImageScaleBy`
-- `KSamplerAdvanced`
+- `Fast Groups Bypasser (rgthree)`
+- `FlashVSRNode`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `KSampler`
+- `LayerColor: Brightness & Contrast`
+- `LayerColor: BrightnessContrastV2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `PlaySound|pysssss`
 - `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `UNETLoader`
+- `SetNode`
+- `ShowText|pysssss`
+- `TextEncodeQwenImageEditPlusPro_lrzjason`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+- `easy imageRemBg`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `KOOK_ImageCompression` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `easy seed` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `CR SDXL Aspect Ratio` —— 1/3 个有
-- `Image to Noise` —— 1/3 个有
-- `ImageCASharpening+` —— 1/3 个有
-- `LatentBlend` —— 1/3 个有
-- `LatentColorMatch` —— 1/3 个有
-- `LayerColor: Brightness & Contrast` —— 1/3 个有
-- `MemoryCleaner` —— 1/3 个有
-- `RunningHub Deepcleaner` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
-- `孤海注释` —— 1/3 个有
+- `easy imageConcat` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 10 | 8 - 15 | 3 | 73% |
-| 采样算法 | 1 | 1 - 2 | 3 | 65% |
-| 调度器 | euler | - | 3 | 67% |
-| 重绘幅度 | simple | - | 3 | 67% |
-| 宽度 | 992 | - | 2 | 97% |
-| 高度 | 1480 | - | 2 | 86% |
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | beta57 | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 8 - 15，3 个样本
-- 采样算法 中位数 1，观测区间 1 - 2，3 个样本
-- 调度器 最常用 euler，3 个样本，一致性 67%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
-- 宽度 中位数 992，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
-- 高度 中位数 1480，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 beta57，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

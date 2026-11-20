@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_567
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.896
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Image2.5 Seedance等API接入生图生视频，低成本文生图文生视频方案_2103934036086444034.json, 图片生成/文生图/Image2.5全能图像文生图 高品质文本到图像生成_2098269388993548289.json, 图片生成/文生图/Krea2 Trubo极速文生图｜美商极高出图快 颜值党直呼内行_2105557272117202946.json]
+members: [图片生成/文生图/全能图片2.1工作流合集 图像编辑一站式方案_2109731020932210690.json, 图片生成/文生图/全能图片G IMAGE 2.5 Sunburst编辑流｜一致性在线，改图不跑偏_2099524674781794306.json, 图片生成/文生图/独立站图片批量改尺寸｜反推提示词文生图工作流_2095950532711116801.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_567
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Image2.5 Seedance等API接入生图生视频，低成本文生图文生视频方案_2103934036086444034.json、图片生成/文生图/Image2.5全能图像文生图 高品质文本到图像生成_2098269388993548289.json、图片生成/文生图/Krea2 Trubo极速文生图｜美商极高出图快 颜值党直呼内行_2105557272117202946.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片2.1工作流合集 图像编辑一站式方案_2109731020932210690.json、图片生成/文生图/全能图片G IMAGE 2.5 Sunburst编辑流｜一致性在线，改图不跑偏_2099524674781794306.json、图片生成/文生图/独立站图片批量改尺寸｜反推提示词文生图工作流_2095950532711116801.json）
 
 - **类型**：Text To Image
 - **样本数**：3
@@ -28,6 +28,7 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
@@ -37,15 +38,14 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `QZ_ResolutionPreset` —— 1/3 个有
-- `RH_RhartImageG25FlareTextToImage` —— 1/3 个有
-- `RH_Screenwriter` —— 1/3 个有
-- `WujiAPI` —— 1/3 个有
-- `WujiClosedSourceGenerator` —— 1/3 个有
-- `WujiUpscaler2` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `ImageScale` —— 1/3 个有
+- `ImageStitch` —— 1/3 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/3 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 1/3 个有
+- `RH_RhartImageNNb21ImageToImage` —— 1/3 个有
+- `RH_RhartImageNNb21TextToImage` —— 1/3 个有
 
 ## 典型参数
 

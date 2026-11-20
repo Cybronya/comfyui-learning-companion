@@ -1,34 +1,37 @@
 ---
 name: image_to_image_lora_sampler_clip_68
 type: Image To Image
-frequency: 6
+frequency: 4
 level: strong
-coverage: 0.953167
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.85775
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [平台全量/3D虚拟模特-服装展示-隐形模特-Klein_2040956278956101633.json, 平台全量/Flux-Klein-9B_平铺图转3D镂空平铺图_2054499457647038465.json, 平台全量/人物角色保持图像一致性 视频首尾帧图片生成  模特网红分镜洗图 Flux2-Klein-9B_2042128373140426754.json, 平台全量/换脸+换头  换脸pro 完美写实换脸换装 +写实人物一致性   4K版_2061992973981802498.json, 平台全量/电商服饰展示 3D立体虚拟模特 Flux 2 Klein 9B_2035533446818308098.json, 平台全量/电商服饰展示 服饰提取 3D立体虚拟模特 服装展示 隐形模特Flux 2 Klein 9B_2034097306227712002.json]
+members: [图片生成/图生图/Kontext+lora新版产品溶图_1961704631699181570.json, 图片生成/图生图/Kontext1--三视图+细化_1985957193465962497.json, 图片生成/图生图/flux_kontext_dev（附Presets插件，解放双手，无需手写触发词）_1956999676890157057.json, 图片生成/图生图/kontext 产品融合场景2.0 (光影lora)_1954190048486944770.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_68
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/3D虚拟模特-服装展示-隐形模特-Klein_2040956278956101633.json、平台全量/Flux-Klein-9B_平铺图转3D镂空平铺图_2054499457647038465.json、平台全量/人物角色保持图像一致性 视频首尾帧图片生成  模特网红分镜洗图 Flux2-Klein-9B_2042128373140426754.json、平台全量/换脸+换头  换脸pro 完美写实换脸换装 +写实人物一致性   4K版_2061992973981802498.json、平台全量/电商服饰展示 3D立体虚拟模特 Flux 2 Klein 9B_2035533446818308098.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Kontext+lora新版产品溶图_1961704631699181570.json、图片生成/图生图/Kontext1--三视图+细化_1985957193465962497.json、图片生成/图生图/flux_kontext_dev（附Presets插件，解放双手，无需手写触发词）_1956999676890157057.json、图片生成/图生图/kontext 产品融合场景2.0 (光影lora)_1954190048486944770.json）
 
 - **类型**：Image To Image
-- **样本数**：6
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
 - `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
@@ -37,39 +40,43 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageSize` —— 4/6 个有
-- `Image Comparer (rgthree)` —— 3/6 个有
-- `ImageConcanate` —— 3/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
-- `ImageResizeKJv2` —— 2/6 个有
-- `LayerUtility: FluxKontextImageScale` —— 2/6 个有
-- `AspectRatioSelect` —— 1/6 个有
-- `ConstrainImage|pysssss` —— 1/6 个有
-- `RH_RhartImageG2ImageToImage` —— 1/6 个有
-- `SaveImageWebsocket` —— 1/6 个有
-- `easy imageColorMatch` —— 1/6 个有
+- `EmptySD3LatentImage` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ImageStitch` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `FastCanvas` —— 2/4 个有
+- `FastCanvasTool` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `easy imageDetailTransfer` —— 2/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `ImageResize+` —— 1/4 个有
+- `ImpactInt` —— 1/4 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/4 个有
+- `LayerUtility: ImageAutoCrop V2` —— 1/4 个有
+- `LoadKontextPresets` —— 1/4 个有
+- `ModelSamplingFlux` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 5 | 4 - 5 | 6 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 5，观测区间 4 - 5，6 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

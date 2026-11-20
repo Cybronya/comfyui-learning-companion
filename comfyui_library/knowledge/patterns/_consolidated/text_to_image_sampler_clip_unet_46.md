@@ -1,79 +1,69 @@
 ---
 name: text_to_image_sampler_clip_unet_46
 type: Text To Image
-frequency: 13
+frequency: 12
 level: moderate
-coverage: 0.945769
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.993583
+common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Krea2-raw+turbo两次采样对比单采样turbo-_2074526672380063745.json, 图片生成/文生图/Krea2基础文生图_2070504244750405634.json, 图片生成/文生图/Moody Krea 2 Mix -文生图_2084479377294843906.json, 图片生成/文生图/Ovis-image文生图工作流_1996530154350452738.json, 图片生成/文生图/Qwen-Image-通义千问-文生图_海报设计_1953818850963935234.json, 图片生成/文生图/Qwen-Image官方工作流-满血版BF16_1953997948080279554.json, 图片生成/文生图/Qwen-image 图片生成基础工作流_1957086467483734017.json, 图片生成/文生图/Qwen-千问文生图工作流+LORA（电商运营海报）_1993309631191728130.json, 图片生成/文生图/Z image 文生图_1993886895799205889.json, 图片生成/文生图/Z-Image Turbo 文生图_2009309148017598465.json, 图片生成/文生图/Z-Image镜片·光学镜片场景生成_2044682719262674946.json, 图片生成/文生图/Z-image最强真实人物细节多场景生成_2003710733722525697.json, 图片生成/文生图/超智能提示词反推照片V2_2004362690019684353.json]
+members: [图片生成/文生图/2031276815041433602.json, 图片生成/文生图/F1文生图精细调节人像_1924680451447771137.json, 图片生成/文生图/FLUX1文生图260814_2088196242147987458.json, 图片生成/文生图/FLUX工作流_2106376251710722050.json, 图片生成/文生图/Flux文生图+高清放大工作流_1915239700771045377.json, 图片生成/文生图/Flux文生图工作流_1912760478278348801.json, 图片生成/文生图/Flux文生图工作流_1980482521886576641.json, 图片生成/文生图/Flux文生图工作流_1985255145997017090.json, 图片生成/文生图/Flux文生图工作流_2007992047759790082.json, 图片生成/文生图/Flux文生图工作流（带lora版）_2084186114449043458.json, 图片生成/文生图/flux+lora出图_1901871929287188482.json, 图片生成/文生图/flux文生图工作流_1980484330449453058.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_46
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Krea2-raw+turbo两次采样对比单采样turbo-_2074526672380063745.json、图片生成/文生图/Krea2基础文生图_2070504244750405634.json、图片生成/文生图/Moody Krea 2 Mix -文生图_2084479377294843906.json、图片生成/文生图/Ovis-image文生图工作流_1996530154350452738.json、图片生成/文生图/Qwen-Image-通义千问-文生图_海报设计_1953818850963935234.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/2031276815041433602.json、图片生成/文生图/F1文生图精细调节人像_1924680451447771137.json、图片生成/文生图/FLUX1文生图260814_2088196242147987458.json、图片生成/文生图/FLUX工作流_2106376251710722050.json、图片生成/文生图/Flux文生图+高清放大工作流_1915239700771045377.json…）
 
 - **类型**：Text To Image
-- **样本数**：13
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CLIPLoader`
+全部 12 个 workflow 都包含：
 - `CLIPTextEncode`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
 - `KSampler`
 - `SaveImage`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 12/13 个有
-- `VAEDecode` —— 12/13 个有
-- `ModelSamplingAuraFlow` —— 7/13 个有
-- `AspectRatio` —— 3/13 个有
-- `LoraLoader` —— 3/13 个有
-- `PreviewImage` —— 3/13 个有
-- `easy promptList` —— 3/13 个有
-- `TTResolutionSelector` —— 2/13 个有
-- `ConditioningNoiseInjection` —— 1/13 个有
-- `Fast Groups Muter (rgthree)` —— 1/13 个有
-- `KSamplerAdvanced` —— 1/13 个有
-- `VAEDecodeTiled` —— 1/13 个有
+- `CLIPTextEncodeFlux` —— 11/12 个有
+- `DF_Text_Box` —— 9/12 个有
+- `FluxLoraLoader` —— 7/12 个有
+- `LoraLoaderModelOnly` —— 4/12 个有
+- `FluxResolutionNode` —— 1/12 个有
+- `PMRF` —— 1/12 个有
+- `PortraitMaster_中文版` —— 1/12 个有
+- `easy positive` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 50 | 13 | 32% |
-| Prompt 约束强度(CFG) | 1 | 1 - 5 | 13 | 27% |
-| 采样算法 | euler | - | 13 | 77% |
-| 调度器 | simple | - | 13 | 92% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
-| 宽度 | 1080 | 512 - 1920 | 13 | 63% |
-| 高度 | 1280 | 512 - 2160 | 13 | 69% |
-| LoRA 模型强度 | 0.8 | 0.8 - 1 | 3 | 89% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 768 | 768 - 1024 | 12 | 88% |
+| 高度 | 1024 | 1024 - 1536 | 12 | 83% |
+| 采样步数 | 25 | 20 - 30 | 12 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 8 | 12 | 0% |
+| 采样算法 | dpmpp_2m | - | 12 | 75% |
+| 调度器 | sgm_uniform | - | 12 | 75% |
+| 重绘幅度 | 1 | 0.8 - 1 | 12 | 94% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 1/13 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 50，13 个样本，取值分散，一致性仅 32%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，13 个样本，取值分散，一致性仅 27%
-- 采样算法 最常用 euler，13 个样本，一致性 77%
-- 调度器 最常用 simple，13 个样本，一致性 92%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 512 - 1920，13 个样本
-- 高度 中位数 1280，观测区间 512 - 2160，13 个样本
-- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，3 个样本，取值集中（一致性 89%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 768 - 1024，12 个样本，取值集中（一致性 88%）
+- 高度 中位数 1024，观测区间 1024 - 1536，12 个样本，取值集中（一致性 83%）
+- 采样步数 中位数 25，观测区间 20 - 30，12 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，12 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 dpmpp_2m，12 个样本，一致性 75%
+- 调度器 最常用 sgm_uniform，12 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 0.8 - 1，12 个样本，取值集中（一致性 94%）

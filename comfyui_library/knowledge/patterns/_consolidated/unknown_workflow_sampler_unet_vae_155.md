@@ -1,78 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_155
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.913
-common_nodes: [Anything Everywhere3, CLIPLoader, CR Text, Flux2Scheduler, GrowMaskWithBlur, KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, easy imageSize]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.969429
+common_nodes: [CLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux.2 Klein 9B 局部重绘+换头换脸+更换服装+万能图像编辑+极速版_2023278303158738945.json, 平台全量/FLUX.2-Klein 9B 局部重绘 换头换脸 更换服装 万能图像编辑 极速版_2015613529612619777.json, 平台全量/FLUX2-klein 局部重绘 人物模特换脸 换装 万能迁移_2028284451557482498.json, 平台全量/FLUX2-klein局部重绘_2013137002941648897.json, 平台全量/FLUX2-klein无瑕图像扩展_2013643647295688705.json, 平台全量/Flux2-Klein 电商产品更换背景 人物模特换场景  产品 插画 动漫卡通人物_2028280999972446209.json, 平台全量/Flux2-Klein更换背景（不局限于产品，插画，人物）_2015983814044033025.json, 平台全量/局部重绘 换头换脸 更换服装 FLUX.2-Klein 9B  万能图像编辑 极速版_2020769671242326018.json]
+members: [图片生成/图生图/ins手持特写LoRA图生图-穿戴甲重绘工作流_2095018721914998785.json, 图片生成/图生图/qwen_image_edit_api_1970688531532312578.json, 图片生成/图生图/qwen_image_edit_test_1973974361189298178.json, 图片生成/图生图/qwen_image_edit_test_1989618857050599425.json, 图片生成/图生图/【橘子AI】Qwen Image Edit Plus（不偏移）_1971481241100959746.json, 图片生成/图生图/真人转动漫多画风_2056308762197184514.json, 图片生成/图生图/高泛化性的“全能换装”——换装、换鞋、换帽同步进行_2046195318701690881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_155
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux.2 Klein 9B 局部重绘+换头换脸+更换服装+万能图像编辑+极速版_2023278303158738945.json、平台全量/FLUX.2-Klein 9B 局部重绘 换头换脸 更换服装 万能图像编辑 极速版_2015613529612619777.json、平台全量/FLUX2-klein 局部重绘 人物模特换脸 换装 万能迁移_2028284451557482498.json、平台全量/FLUX2-klein局部重绘_2013137002941648897.json、平台全量/FLUX2-klein无瑕图像扩展_2013643647295688705.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/ins手持特写LoRA图生图-穿戴甲重绘工作流_2095018721914998785.json、图片生成/图生图/qwen_image_edit_api_1970688531532312578.json、图片生成/图生图/qwen_image_edit_test_1973974361189298178.json、图片生成/图生图/qwen_image_edit_test_1989618857050599425.json、图片生成/图生图/【橘子AI】Qwen Image Edit Plus（不偏移）_1971481241100959746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `Anything Everywhere3`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Text`
-- `Flux2Scheduler`
-- `GrowMaskWithBlur`
-- `KSamplerSelect`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+- `KSampler`
 - `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
-- `CLIPTextEncode` —— 6/8 个有
-- `DifferentialDiffusion` —— 6/8 个有
-- `ImageAndMaskPreview` —— 6/8 个有
-- `InpaintModelConditioning` —— 6/8 个有
-- `VAEEncode` —— 6/8 个有
-- `CFGGuider` —— 5/8 个有
-- `KOOK_SaveJPGImage` —— 5/8 个有
-- `Mask Fill Holes` —— 5/8 个有
-- `BasicGuider` —— 3/8 个有
-- `FluxGuidance` —— 3/8 个有
-- `ImagePadForOutpaint` —— 3/8 个有
-- `ImitationHueNode` —— 3/8 个有
-- `PreviewImage` —— 3/8 个有
-- `CR Text Concatenate` —— 2/8 个有
-- `DeepTranslatorTextNode` —— 2/8 个有
-- `MaskPreview+` —— 2/8 个有
-- `PainterFluxImageEdit` —— 2/8 个有
-- `Qwen3_VQA` —— 2/8 个有
-- `SAM3Segment` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `RMBG` —— 1/8 个有
+- `CFGNorm` —— 6/7 个有
+- `EmptySD3LatentImage` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `ModelSamplingAuraFlow` —— 6/7 个有
+- `TextEncodeQwenImageEditPlus` —— 6/7 个有
+- `CLIPTextEncode` —— 5/7 个有
+- `FluxKontextImageScale` —— 3/7 个有
+- `Text` —— 3/7 个有
+- `GetImageSize+` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 2/7 个有
+- `Int` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 8 | 6 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 8，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/7 个样本）：Steps较低可能导致细节不足

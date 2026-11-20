@@ -1,80 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_262
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.4934
-common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddOneToAllExtendEmbeds, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.883222
+common_nodes: [BasicGuider, CLIPLoader, LoraLoaderModelOnly, MiniMaxH3Unified, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/OneToAll Animation Loop 循环长视频工作流_2000042146692464641.json, 平台全量/用AI让动漫角色跳“套马杆”！One to All Animation实现卡通手办舞蹈自由_1999822656335642626.json, 视频生成/图生视频/Wan2.1 OneToAll人物模仿动作跳舞工作流（超真实）_2062171748241596417.json, 视频生成/图生视频/Wan21_OneToAllAnimation_automatic_1998679386968743937.json, 视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json, 视频生成/图生视频/Wan21_OneToAllAnimation_跳舞视频生成-基础版_2054099257644331010.json, 视频生成/图生视频/Wan_OneToAllAnimation_视频动作迁移(单人)_2006242992251740162.json, 视频生成/图生视频/🐱OneToAll视频姿势参考（骨骼驱动）-言灵ru😼_2000904519246639105.json, 视频生成/文生视频/One-to-All Animation角色动画与图像姿态迁移延长流_1999029619397382145.json, 视频生成/文生视频/OneToAllAnimation_动作迁移长视频for循环流 课程同步免费升级_1999868233400414209.json]
+members: [视频生成/图生视频/minimaxH3数字人工作流 全能插件加速版_2085693921774104577.json, 视频生成/文生视频/H3生成视频_2095427697911615489.json, 视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3 一体化工作流_2099131023387881473.json, 视频生成/文生视频/MiniMax H3去除人物油腻（单采高质量加速版）_2092133541474816001.json, 视频生成/文生视频/MiniMax H3增强画面电影感_2092881815047598082.json, 视频生成/文生视频/MiniMax H3新版8步768p加速（单采高质量）_2094009829802205186.json, 视频生成/文生视频/MinimaxH3l全功能加速工作流（lightx2V版加速lora）_2086063010979864577.json, 视频生成/文生视频/MinimaxH3全功能加速工作流（lightx2V加速版）V3_2090441419977740290.json, 视频生成/文生视频/MinimaxH3全功能加速工作流（目前有bug等rh修复）_2085696451409170433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_262
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/OneToAll Animation Loop 循环长视频工作流_2000042146692464641.json、平台全量/用AI让动漫角色跳“套马杆”！One to All Animation实现卡通手办舞蹈自由_1999822656335642626.json、视频生成/图生视频/Wan2.1 OneToAll人物模仿动作跳舞工作流（超真实）_2062171748241596417.json、视频生成/图生视频/Wan21_OneToAllAnimation_automatic_1998679386968743937.json、视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/minimaxH3数字人工作流 全能插件加速版_2085693921774104577.json、视频生成/文生视频/H3生成视频_2095427697911615489.json、视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3 一体化工作流_2099131023387881473.json、视频生成/文生视频/MiniMax H3去除人物油腻（单采高质量加速版）_2092133541474816001.json、视频生成/文生视频/MiniMax H3增强画面电影感_2092881815047598082.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewImage`
-- `SetNode`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3Unified`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddOneToAllExtendEmbeds`
-- `WanVideoAddOneToAllPoseEmbeds`
-- `WanVideoAddOneToAllReferenceEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatConstant` —— 9/10 个有
-- `VHS_LoadVideo` —— 9/10 个有
-- `WanVideoScheduler` —— 9/10 个有
-- `MathExpression|pysssss` —— 4/10 个有
-- `WanVideoTorchCompileSettings` —— 4/10 个有
-- `easy forLoopEnd` —— 4/10 个有
-- `easy forLoopStart` —— 4/10 个有
-- `MaskPreview+` —— 3/10 个有
-- `Bjornulf_ShowInt` —— 1/10 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/10 个有
-- `GIMMVFI_interpolate` —— 1/10 个有
-- `ImageConcatMulti` —— 1/10 个有
-- `ImpactInt` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
-- `LayerUtility: PurgeVRAM` —— 1/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/10 个有
-- `SaveImage` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
-- `VHS_GetImageCount` —— 1/10 个有
-- `VHS_LoadVideoFFmpeg` —— 1/10 个有
-- `VHS_VideoInfoLoaded` —— 1/10 个有
+- `BasicScheduler` —— 8/9 个有
+- `KSamplerSelect` —— 8/9 个有
+- `Label (rgthree)` —— 8/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
+- `CR Text` —— 6/9 个有
+- `MiniMaxH3AVDecodeT8` —— 6/9 个有
+- `ModelPreviewOverrideKJ` —— 6/9 个有
+- `ModelAttentionBackend` —— 5/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `MiniMaxH3SigmaShift` —— 4/9 个有
+- `PathchSageAttentionKJ` —— 4/9 个有
+- `VAEDecode` —— 4/9 个有
+- `VAEDecodeAudio` —— 4/9 个有
+- `PrimitiveFloat` —— 3/9 个有
+- `PrimitiveStringMultiline` —— 3/9 个有
+- `H3SigmaRefiner` —— 2/9 个有
+- `LoadImage` —— 2/9 个有
+- `MiniMaxH3DualClockSamplerT8` —— 1/9 个有
+- `SolAttnMiniMax` —— 1/9 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/9 个有
 
 ## 典型参数
 
