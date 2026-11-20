@@ -1,71 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_183
 type: Unknown Workflow
-frequency: 13
-level: moderate
-coverage: 0.841538
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 11
+level: strong
+coverage: 0.798636
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, ShowText|pysssss, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/优化加速升级Wan Animate动作迁移v2版_1983091241221038082.json, 视频生成/图生视频/全新 Animate美女跳舞动作迁移V8极速版_2017854030659194882.json, 视频生成/图生视频/全新图片跳舞 保留原图背景 Animate Wan2.2_2018250280189562881.json, 视频生成/图生视频/啊癫 全新图片跳舞 保留原图背景 Animate Wan2.2_1970493244759044098.json, 视频生成/图生视频/图生视频 -快生成- AI动作模仿+跳舞+剑舞-Animate wan2.2_2034534867488219137.json, 视频生成/图生视频/图生视频 快生成 AI动作模仿+跳舞+剑舞-Animate wan2.2_2034431517451096065.json, 视频生成/图生视频/图生视频 快生成 AI动作模仿+跳舞+剑舞-Animate wan2.2_2046830049172656129.json, 视频生成/图生视频/图生视频+快生成Animate+wan2.2_2047135621176627201.json, 视频生成/图生视频/新版动作迁移美女跳舞！Wan2.2-Animate V2超极速版_1974863458778918913.json, 视频生成/图生视频/美女图片生成跳舞视频_1975800896795881473.json, 视频生成/图生视频/美女跳舞视频复刻_1975790920316620801.json, 视频生成/图生视频/高清流畅！AI动作模仿+跳舞+剑舞=AnimaAI动作模仿+跳舞+剑舞=Animate wan2.2_2047571961420713986.json, 视频生成/文生视频/Wan2.2 Animate美女图片跳舞 视频动作迁移_1970282441866964994.json]
+members: [数字人/数字人/Scail2 TTP多参+内循环_2071752283070754818.json, 数字人/数字人/Scail2 长视频内循环人物角色替换迁移面部一致优化_2074324647696490497.json, 视频生成/图生视频/Scail2 TTP多参+内循环+面部强化_2071860174570221570.json, 视频生成/图生视频/Scail2 TTP多参+内循环+面部强化_2072501093262774273.json, 视频生成/图生视频/Scail2 TTP多参+内循环+面部强化人物角色替换_2071400172424351746.json, 视频生成/图生视频/Scail2 多图参考+面部修复 全身跳舞面部不崩 内部自循环 长视频直出_2072215231262191617.json, 视频生成/图生视频/Scail2+动作迁移+多参面+部强化+内循环长视频_2072162271043870721.json, 视频生成/图生视频/Scail2+角色替换+多参面+内循环长视频_2072986209936297986.json, 视频生成/图生视频/Scail2+角色替换+多参面+内循环长视频_2073313220749967360.json, 视频生成/图生视频/Scail2-多图参考+面部修复-全身视频面部不崩-循环长视频直出_2073299453481668610.json, 视频生成/图生视频/Scail2-脸部自适应-姿势迁移-重打光_2071800002871123969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_183
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/优化加速升级Wan Animate动作迁移v2版_1983091241221038082.json、视频生成/图生视频/全新 Animate美女跳舞动作迁移V8极速版_2017854030659194882.json、视频生成/图生视频/全新图片跳舞 保留原图背景 Animate Wan2.2_2018250280189562881.json、视频生成/图生视频/啊癫 全新图片跳舞 保留原图背景 Animate Wan2.2_1970493244759044098.json、视频生成/图生视频/图生视频 -快生成- AI动作模仿+跳舞+剑舞-Animate wan2.2_2034534867488219137.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/Scail2 TTP多参+内循环_2071752283070754818.json、数字人/数字人/Scail2 长视频内循环人物角色替换迁移面部一致优化_2074324647696490497.json、视频生成/图生视频/Scail2 TTP多参+内循环+面部强化_2071860174570221570.json、视频生成/图生视频/Scail2 TTP多参+内循环+面部强化_2072501093262774273.json、视频生成/图生视频/Scail2 TTP多参+内循环+面部强化人物角色替换_2071400172424351746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `ImageCropByMaskAndResize`
+- `CheckpointLoaderSimple`
 - `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
-- `PixelPerfectResolution`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SCAIL2ScheduledLongVideoWithSAM`
+- `SCAIL2SegmentPlanBuilder`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 12/13 个有
-- `JWInteger` —— 12/13 个有
-- `LayerUtility: PurgeVRAM` —— 12/13 个有
-- `SetNode` —— 12/13 个有
-- `WanVideoLoraSelectMulti` —— 12/13 个有
-- `easy cleanGpuUsed` —— 12/13 个有
-- `Text` —— 10/13 个有
-- `SimpleMath+` —— 7/13 个有
-- `PrimitiveInt` —— 5/13 个有
-- `ttN float` —— 5/13 个有
-- `ImageConcatMulti` —— 4/13 个有
-- `ImpactInt` —— 2/13 个有
-- `PrimitiveStringMultiline` —— 2/13 个有
-- `CR Prompt Text` —— 1/13 个有
-- `FirstFrameSelector` —— 1/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/13 个有
-- `RHHiddenNodes` —— 1/13 个有
+- `SCAIL2ChunkKeyframeExtractor` —— 10/11 个有
+- `SCAIL2KeyframeMatrixViewer` —— 10/11 个有
+- `GetImageSize` —— 9/11 个有
+- `ImageConcatMulti` —— 9/11 个有
+- `MaskToImage` —— 9/11 个有
+- `PreviewImage` —— 9/11 个有
+- `SCAIL2AlignReferenceFaceToCrop` —— 9/11 个有
+- `SCAIL2FaceCompositeBack` —— 9/11 个有
+- `SCAIL2HeadTrackCrop` —— 9/11 个有
+- `CR Text` —— 6/11 个有
+- `SimpleMath+` —— 6/11 个有
+- `Int` —— 5/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/11 个有
+- `GetNode` —— 3/11 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/11 个有
+- `RH_RhartImageG2ImageToImage` —— 3/11 个有
+- `SaveImage` —— 3/11 个有
+- `SetNode` —— 3/11 个有
+- `TTResolutionSelector` —— 3/11 个有
+- `easy int` —— 3/11 个有
+- `CreateVideo` —— 2/11 个有
+- `FlashVSR_SM_KSampler` —— 2/11 个有
+- `FlashVSR_SM_Model` —— 2/11 个有
+- `SaveVideo` —— 2/11 个有
+- `孤海注释` —— 2/11 个有
+- `Note Plus (mtb)` —— 1/11 个有
+- `PrimitiveStringMultiline` —— 1/11 个有
+- `WanAnimatePlus LoraSelectMulti` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.34378e+09 | - | 2 | 82% |
+| Prompt 约束强度(CFG) | randomize | - | 2 | 100% |
+| 采样算法 | 2 | - | 2 | 100% |
+| 调度器 | 3.5 | - | 2 | 100% |
+| 重绘幅度 | 11 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -73,4 +89,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1.34378e+09，样本不足，未给区间，2 个样本，取值集中（一致性 82%）
+- Prompt 约束强度(CFG) 最常用 randomize，2 个样本，一致性 100%
+- 采样算法 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.59208e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

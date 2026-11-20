@@ -1,112 +1,89 @@
 ---
 name: image_to_image_inpaint_upscale_lora
 type: Image To Image
-frequency: 11
+frequency: 9
 level: strong
-coverage: 0.824091
-common_nodes: [BatchCropFromMask, BboxToInt, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Combine Prompt, CR Simple Image Compare, CheckpointLoaderSimple, Cut By Mask, DifferentialDiffusion, DownloadAndLoadFlorence2Model, DualCLIPLoader, EmptyImage, FaceParse(FaceParsing), FaceParsingModelLoader(FaceParsing), FaceParsingProcessorLoader(FaceParsing), FaceParsingResultsParser(FaceParsing), Florence2Run, FluxGuidance, Get resolution [Crystools], GrowMaskWithBlur, Image Comparer (rgthree), ImageCompositeMasked, ImageConcanate, ImageResizeKJ, ImageToMask, ImageUpscaleWithModel, InpaintModelConditioning, Int, InvertMask, KSampler, KSamplerAdvanced, LayerColor: ColorAdapter, LayerMask: PersonMaskUltra, LayerMask: PersonMaskUltra V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, MaskComposite, MaskPreview+, MaskSmooth+, MaskToImage, MathExpression|pysssss, Power Lora Loader (rgthree), PreviewBridge, PreviewImage, RHHiddenNodes, RH_Captioner, SaveImage, SetLatentNoiseMask, ShowText|pysssss, StyleModelApply, StyleModelLoader, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy imageInsetCrop, easy showAnything]
-problems: []
+coverage: 0.915556
+common_nodes: [Any Switch (rgthree), BasicScheduler, CFGNorm, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, DetailDaemonSamplerNode, Florence2ModelLoader, Florence2Run, FluxKontextImageScale, FluxKontextMultiReferenceLatentMethod, ImpactMakeAnyList, InpaintModelConditioning, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewBridge, QwenMultiangleCameraNode, SamplerCustom, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy positive, easy promptConcat, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/图片换脸-高清放大-去AI感-高清修复图片_2055897052659363842.json, 图片生成/图生图/图片换脸-高清放大-去AI感-高清修复图片_2055929233310011393.json, 图片生成/图生图/图片换脸-高清放大-去AI感-高清修复图片_2079536132789985282.json, 图片生成/图生图/换脸+高清放大去AI高清修复_1920734252449595394.json, 图片生成/图生图/换脸100%相识度，高清放大去AI高清修复，保留2张照片1是人脸痣都100%相识，2是皮肤去AI化_1971715229170266113.json, 图片生成/图生图/换脸100%相识度，高清放大去AI高清修复，保留2张照片1是人脸痣都100%相识，2是皮肤去AI化_1975071074062872577.json, 图片生成/图生图/换脸只要两张图片高清放大去AI高清修复图片换脸最高级直接换头发型都换了_2037844745040437250.json, 平台全量/一键换脸（带高清放大+去AI味工作流）_1924102774207016962.json, 平台全量/换脸100%相识度，高清放大去AI高清修复，保留2张照片1是人脸痣都100%相识，2是皮肤去AI化_1905622440859602946.json, 平台全量/换脸只要两张图片高清放大去AI高清修复图片换脸最高级直接换头发型都换了_2005513058409742338.json, 平台全量/龙明换脸100%相识度_1935012666618650625.json]
+members: [图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2013834742021492738.json, 图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2017084440501030913.json, 图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2020717254878437377.json, 图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2021398281284231170.json, 图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2048664696554786818.json, 图片生成/图生图/qwen-edit-2511-多视角生成人物角色_2019578379158167554.json, 图片生成/图生图/qwen-edit-2511模型应用：多视角控制生成技术实现高效人物角色设计与创作_2057375800537731074.json, 图片生成/图生图/万能相机视角 人物角色设计 镜头自由调节 qwen-edit-2511 多视角控制生成  提升角色一_2046107252137922562.json, 图片生成/图生图/摄影机角度 万能相机视角 qwen-edit-2511 人物角色一致+镜头自由调节 +多视角控制生成_2019573056892571649.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_inpaint_upscale_lora
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/图片换脸-高清放大-去AI感-高清修复图片_2055897052659363842.json、图片生成/图生图/图片换脸-高清放大-去AI感-高清修复图片_2055929233310011393.json、图片生成/图生图/图片换脸-高清放大-去AI感-高清修复图片_2079536132789985282.json、图片生成/图生图/换脸+高清放大去AI高清修复_1920734252449595394.json、图片生成/图生图/换脸100%相识度，高清放大去AI高清修复，保留2张照片1是人脸痣都100%相识，2是皮肤去AI化_1971715229170266113.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2013834742021492738.json、图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2017084440501030913.json、图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2020717254878437377.json、图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2021398281284231170.json、图片生成/图生图/qwen-edit-2511-多视角控制生成-人物角色设计_2048664696554786818.json…）
 
 - **类型**：Image To Image
-- **样本数**：11
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BatchCropFromMask`
-- `BboxToInt`
+全部 9 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `BasicScheduler`
+- `CFGNorm`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Combine Prompt`
-- `CR Simple Image Compare`
 - `CheckpointLoaderSimple`
-- `Cut By Mask`
-- `DifferentialDiffusion`
-- `DownloadAndLoadFlorence2Model`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `FaceParse(FaceParsing)`
-- `FaceParsingModelLoader(FaceParsing)`
-- `FaceParsingProcessorLoader(FaceParsing)`
-- `FaceParsingResultsParser(FaceParsing)`
+- `DetailDaemonSamplerNode`
+- `Florence2ModelLoader`
 - `Florence2Run`
-- `FluxGuidance`
-- `Get resolution [Crystools]`
-- `GrowMaskWithBlur`
-- `Image Comparer (rgthree)`
-- `ImageCompositeMasked`
-- `ImageConcanate`
-- `ImageResizeKJ`
-- `ImageToMask`
-- `ImageUpscaleWithModel`
+- `FluxKontextImageScale`
+- `FluxKontextMultiReferenceLatentMethod`
+- `ImpactMakeAnyList`
 - `InpaintModelConditioning`
-- `Int`
-- `InvertMask`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LayerColor: ColorAdapter`
-- `LayerMask: PersonMaskUltra`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
 - `LoadImage`
-- `MaskComposite`
-- `MaskPreview+`
-- `MaskSmooth+`
-- `MaskToImage`
-- `MathExpression|pysssss`
-- `Power Lora Loader (rgthree)`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PreviewBridge`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `RH_Captioner`
+- `QwenMultiangleCameraNode`
+- `SamplerCustom`
 - `SaveImage`
-- `SetLatentNoiseMask`
+- `Seed (rgthree)`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `ShowText|pysssss`
-- `StyleModelApply`
-- `StyleModelLoader`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageInsetCrop`
+- `easy positive`
+- `easy promptConcat`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerMask: MaskPreview` —— 10/11 个有
-- `easy cleanGpuUsed` —— 8/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 11 | 100% |
-| Prompt 约束强度(CFG) | 0.7 | 0.7 - 0.7 | 11 | 100% |
-| 采样算法 | dpmpp_2m | - | 11 | 100% |
-| 调度器 | normal | - | 11 | 100% |
-| 重绘幅度 | 0.2 | 0.2 - 0.2 | 11 | 100% |
+| 采样步数 | 4 | 4 - 4 | 9 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler_ancestral | - | 9 | 100% |
+| 调度器 | sgm_uniform | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 0.7，观测区间 0.7 - 0.7，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，11 个样本，一致性 100%
-- 调度器 最常用 normal，11 个样本，一致性 100%
-- 重绘幅度 中位数 0.2，观测区间 0.2 - 0.2，11 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 0.7，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）
+- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，9 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

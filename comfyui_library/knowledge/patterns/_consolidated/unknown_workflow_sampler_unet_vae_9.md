@@ -1,74 +1,71 @@
 ---
 name: unknown_workflow_sampler_unet_vae_9
 type: Unknown Workflow
-frequency: 29
-level: moderate
-coverage: 0.846241
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 24
+level: strong
+coverage: 0.721208
+common_nodes: [CLIPLoader, DF_Text_Box, GoohaiRatioAndResolution, GoohaiRouteBlocker, KSampler, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenImagePromptOptimizer, RestoreQwenImage21GH, SaveImage, TextEncodeQwenImage21GH, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3多条件参考视频工作流低显存加速版 开源 Ref2VA_2084437517675352065.json, 视频生成/图生视频/MiniMax+H3+参考图图生视频工作流_2084234953285525505.json, 视频生成/图生视频/MiniMax+H3参考生视频6倍加速80GB满配版_2087405259374292993.json, 视频生成/图生视频/MiniMax+H3参考生视频_2084466111193636865.json, 视频生成/图生视频/MiniMax-H3 Ref2va 参考生视频标准版_2095421074551951361.json, 视频生成/图生视频/MiniMax_H3_Fast_2114224611851329538.json, 视频生成/图生视频/Minimax H3 多参生视频_2084365914140659713.json, 视频生成/图生视频/Minimax H3多参视频生成_2084926235125305346.json, 视频生成/图生视频/Minimax H3多图参考视频生成+全节点注释_2099072693512531970.json, 视频生成/图生视频/MinimaxH3开源版参考生视频(8step加速版)_2092363444539453442.json, 视频生成/图生视频/MinimaxH3开源版参考生视频(8step加速版)_2092936286209396737.json, 视频生成/图生视频/MinimaxH3开源版参考生视频(8step加速版)_2094336398261309442.json, 视频生成/图生视频/MinimaxH3开源版参考生视频(8step加速版)_2109218798602641409.json, 视频生成/图生视频/Minimax_H3多图参考视频生成+全节点注释_2099778923717550082.json, 视频生成/图生视频/Minimax_H3多图参考视频生成+全节点注释_2100038725966319618.json, 视频生成/图生视频/minimaxH3多参考视频工作流_2084285648122499073.json, 视频生成/文生视频/MiniMax H3 多模态参考生视频（SageAttention 加速版）_2085990402720616449.json, 视频生成/文生视频/MiniMax H3+ 新4步LoRa + 参考图图生视频工作流_2092505916875829250.json, 视频生成/文生视频/MiniMax H3参考生视频6倍加速24GB通用版_2086411688710066177.json, 视频生成/文生视频/MiniMax H3参考生视频6倍加速48GB高配版_2086459494866968577.json, 视频生成/文生视频/MiniMax H3参考生视频6倍加速80GB满配版_2086411609148313601.json, 视频生成/文生视频/Minimax H3 多模态--综合应用流_2085249742157729793.json, 视频生成/文生视频/Minimax H3多参视频生成+全节点注释_2084873538615472129.json, 视频生成/文生视频/Minimax+H3+Multi-parameter+Reference+Raw+Video_2084191041938345986.json, 视频生成/文生视频/MinimaxH3-全能参考生视频-夏_2093873460580802561.json, 视频生成/文生视频/MinimaxH3开源版 9-3-3参考生视频_2095459758181535745.json, 视频生成/文生视频/minimaxH3多参考视频工作流（超级加速版）_2080928622717784066.json, 视频生成/文生视频/【5】全能多模态--多参视频生成（真正平替seedance）--ref2va模型_2087209584539820034.json, 视频生成/文生视频/海螺MiniMaxH3开源版Turbo 全模式视频整合流_2087092258339385345.json]
+members: [图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json, 图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2105315513315450881.json, 图片生成/图生图/AI图像创作丨Qwen Image 2.1丨文生图 _ 图像编辑_2112739173701607425.json, 图片生成/图生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词_2111365987026169857.json, 图片生成/图生图/AI生图编辑丨Qwen-Image_2.1丨多图参考·智能提示词_2110913318310469634.json, 图片生成/图生图/AI生图编辑丨Qwen-Image_2.1丨多图参考·智能提示词_2111733672293519361.json, 图片生成/图生图/Qwen Image 2.1 图像扩展_2107511073355161601.json, 图片生成/图生图/Qwen Image 2.1 图像编辑API测试_2113833350678011906.json, 图片生成/图生图/Qwen Image 2.1 图像编辑、多图编辑_2109090992728137730.json, 图片生成/图生图/Qwen Image 2.1 局部修改_2107669259315924994.json, 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2111080180189061121.json, 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2113277852639653890.json, 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2113870876239286274.json, 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化工作台_2105131610982141954.json, 图片生成/图生图/Qwen Image 2.1 文生、多图像编辑一体化_2105870849386573825.json, 图片生成/图生图/Qwen Image 2.1 文生图_单图编辑、多图编辑图像编辑一体化_2105160468577996801.json, 图片生成/图生图/Qwen-Image-2.1_T8加速简洁版中文繁体招牌王_2114260404120678402.json, 图片生成/图生图/Qwen_Image_2.1_局部修改_2111275285760012290.json, 图片生成/图生图/服装迁移图像编辑Clothing Transfer Image Editing Qwen  2.1_2111978235830562818.json, 图片生成/图生图/服装迁移图像编辑一体化Qwen Image 2.1_2110580002868781057.json, 图片生成/文生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词_2108120997114245121.json, 图片生成/文生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词_2110936615257464834.json, 图片生成/文生图/Qwen Image 2.1 文生+图像编辑一体化_2105178276711976962.json, 图片生成/文生图/Qwen-Image-2.1 T8加速简洁版（中文繁体招牌王）_2111331245375451137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3多条件参考视频工作流低显存加速版 开源 Ref2VA_2084437517675352065.json、视频生成/图生视频/MiniMax+H3+参考图图生视频工作流_2084234953285525505.json、视频生成/图生视频/MiniMax+H3参考生视频6倍加速80GB满配版_2087405259374292993.json、视频生成/图生视频/MiniMax+H3参考生视频_2084466111193636865.json、视频生成/图生视频/MiniMax-H3 Ref2va 参考生视频标准版_2095421074551951361.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json、图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2105315513315450881.json、图片生成/图生图/AI图像创作丨Qwen Image 2.1丨文生图 _ 图像编辑_2112739173701607425.json、图片生成/图生图/AI生图编辑丨Qwen-Image 2.1丨多图参考·智能提示词_2111365987026169857.json、图片生成/图生图/AI生图编辑丨Qwen-Image_2.1丨多图参考·智能提示词_2110913318310469634.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：29
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：24
+- **可信度**：强结论
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 29 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 24 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `DF_Text_Box`
+- `GoohaiRatioAndResolution`
+- `GoohaiRouteBlocker`
+- `KSampler`
+- `QwenImage21BlockCacheT8`
+- `QwenImage21SageAttentionT8`
+- `QwenImage21SpectrumT8`
+- `QwenImagePromptOptimizer`
+- `RestoreQwenImage21GH`
+- `SaveImage`
+- `TextEncodeQwenImage21GH`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 28/29 个有
-- `PrimitiveFloat` —— 28/29 个有
-- `LoadAudio` —— 24/29 个有
-- `PrimitiveStringMultiline` —— 20/29 个有
-- `PathchSageAttentionKJ` —— 17/29 个有
-- `LoadVideo` —— 16/29 个有
-- `LoraLoaderModelOnly` —— 15/29 个有
-- `EasyCache` —— 14/29 个有
-- `GetVideoComponents` —— 13/29 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 11/29 个有
-- `CR Prompt Text` —— 8/29 个有
-- `VHS_LoadVideo` —— 6/29 个有
-- `ImageResizeKJv2` —— 5/29 个有
-- `Label (rgthree)` —— 3/29 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/29 个有
-- `CS-MultiImageLoader` —— 1/29 个有
-- `Int` —— 1/29 个有
-- `MiniMaxH3ImageToVideo` —— 1/29 个有
-- `ModelPreviewOverrideKJ` —— 1/29 个有
-- `MuyeTextEditOutput` —— 1/29 个有
-- `PlaySound|pysssss` —— 1/29 个有
-- `PrimitiveInt` —— 1/29 个有
-- `Seed (rgthree)` —— 1/29 个有
-- `VHS_LoadAudioUpload` —— 1/29 个有
-- `孤海注释` —— 1/29 个有
+- `LoadImageGoohai` —— 22/24 个有
+- `Image Comparer (rgthree)` —— 21/24 个有
+- `LoadImage` —— 21/24 个有
+- `忽略多组孤海` —— 21/24 个有
+- `ShowText|pysssss` —— 20/24 个有
+- `GetNode` —— 19/24 个有
+- `SetNode` —— 19/24 个有
+- `孤海注释` —— 17/24 个有
+- `ComfySwitchNode` —— 5/24 个有
+- `PrimitiveBoolean` —— 5/24 个有
+- `GoohaiAnyExists` —— 4/24 个有
+- `GoohaiDisplayAny` —— 4/24 个有
+- `LoraLoaderModelOnly` —— 4/24 个有
+- `easy ifElse` —— 4/24 个有
+- `CM_FloatToInt` —— 1/24 个有
+- `PreviewImage` —— 1/24 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 30 | 30 - 30 | 24 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 24 | 100% |
+| 采样算法 | euler | - | 24 | 100% |
+| 调度器 | simple | - | 24 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
 
 ## 常见问题
 
@@ -76,4 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 30，观测区间 30 - 30，24 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，24 个样本，一致性 100%
+- 调度器 最常用 simple，24 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）

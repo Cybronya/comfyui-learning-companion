@@ -3,54 +3,72 @@ name: text_to_image_lora_sampler_clip_267
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.902875
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, SaveAudio, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.839625
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/IndexTTS2声线克隆 音色复刻音频生成方案_2108611918436069378.json, 数字人/数字人/IndexTTS2声线克隆神器｜一键复刻原声的数字人配音工作流_2108367981469323266.json, 数字人/数字人/TTS2声音克隆加情感参考 音色复刻自然方案_2110245936260796418.json, 数字人/数字人/TTS2声音克隆加情感参考 音色复刻自然方案_2110372280114176002.json, 音频生成/音频生成/Index TTS 2.5语音合成合集｜高质量音频生成制作_2096747098271207425.json, 音频生成/音频生成/IndexTTS2.5多角色配音工作流｜SRT剧本自动语音合成_2097427732920619009.json, 音频生成/音频生成/TTS2.5双人对话工作流，音频生成语音合成处理工具_2107566962367885313.json, 音频生成/音频生成/index TTS 2.5双人对话 音频生成方案_2109721870319837185.json]
+members: [视频生成/图生视频/MiniMax H3 Ref顶级多参V2 短剧图生视频不偏色处理工具_2112988405880676353.json, 视频生成/图生视频/MiniMax H3 Ref顶级多参不偏色不油光图生视频处理工具_2102134491904036866.json, 视频生成/图生视频/MiniMax H3 Semantic Bridge LCM高清图生视频文戏专用工作流，图生视频方案_2107901152405835778.json, 视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM｜高清图生视频文戏_2107683302575534082.json, 视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM｜高清图生视频文戏专用工作流_2101857846328651777.json, 视频生成/图生视频/Minimax H3 Ref顶级多参工作流，色彩还原精准不偏色不油光_2114440721209053186.json, 视频生成/图生视频/Minimax H3 ref顶级多参v2短剧向｜多图参考剧情连贯_2112917449279631361.json, 视频生成/图生视频/Minimax H3去油保护光影｜视频去AI油光质感自用款_2103073378214174722.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_267
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/IndexTTS2声线克隆 音色复刻音频生成方案_2108611918436069378.json、数字人/数字人/IndexTTS2声线克隆神器｜一键复刻原声的数字人配音工作流_2108367981469323266.json、数字人/数字人/TTS2声音克隆加情感参考 音色复刻自然方案_2110245936260796418.json、数字人/数字人/TTS2声音克隆加情感参考 音色复刻自然方案_2110372280114176002.json、音频生成/音频生成/Index TTS 2.5语音合成合集｜高质量音频生成制作_2096747098271207425.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Ref顶级多参V2 短剧图生视频不偏色处理工具_2112988405880676353.json、视频生成/图生视频/MiniMax H3 Ref顶级多参不偏色不油光图生视频处理工具_2102134491904036866.json、视频生成/图生视频/MiniMax H3 Semantic Bridge LCM高清图生视频文戏专用工作流，图生视频方案_2107901152405835778.json、视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM｜高清图生视频文戏_2107683302575534082.json、视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM｜高清图生视频文戏专用工作流_2101857846328651777.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `H3SigmaRefiner`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveAudio`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 5/8 个有
-- `easy downloadIndexTTSAndLoadModel` —— 5/8 个有
-- `easy indexTTSGenerateSimple` —— 5/8 个有
-- `T8_IndexTTS25_DialogueGenerate` —— 4/8 个有
-- `T8_IndexTTS25_DialogueScript` —— 4/8 个有
-- `T8_IndexTTS25_ModelLoader` —— 4/8 个有
-- `T8_IndexTTS25_RoleLibrary` —— 4/8 个有
-- `T8_IndexTTS25_VoiceProfile` —— 4/8 个有
-- `easy indexTTSEmotionVector` —— 4/8 个有
-- `CR Prompt Text` —— 3/8 个有
-- `Fast Groups Muter (rgthree)` —— 2/8 个有
-- `T8_IndexTTS25_SamplingConfig` —— 2/8 个有
-- `easy indexTTSEmotionMerge` —— 2/8 个有
+- `ComfyMathExpression` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/8 个有
+- `ImageResizeKJv2` —— 5/8 个有
+- `PrimitiveFloat` —— 5/8 个有
+- `QwenH3PromptLocal` —— 5/8 个有
+- `CreateVideo` —— 4/8 个有
+- `SaveImage` —— 4/8 个有
+- `SaveVideo` —— 4/8 个有
+- `VHS_VideoCombine` —— 4/8 个有
+- `YC_ShowText` —— 4/8 个有
+- `GetNode` —— 3/8 个有
+- `Int` —— 3/8 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 3/8 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 3/8 个有
+- `RH_Screenwriter` —— 3/8 个有
+- `SetNode` —— 3/8 个有
+- `WujiCleaner` —— 3/8 个有
+- `WujiH3PromptEnhancer` —— 3/8 个有
+- `easy promptConcat` —— 3/8 个有
+- `MiniMaxH3AudioConditioningT8` —— 2/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
 
 ## 典型参数
 

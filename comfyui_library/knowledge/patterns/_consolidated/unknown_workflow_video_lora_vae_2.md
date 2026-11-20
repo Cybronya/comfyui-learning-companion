@@ -1,89 +1,73 @@
 ---
 name: unknown_workflow_video_lora_vae_2
 type: Unknown Workflow
-frequency: 30
+frequency: 21
 level: moderate
-coverage: 0.685933
-common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, ImageResizeKJv2, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoVAELoader]
+coverage: 0.724905
+common_nodes: [DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/SCAIL动作迁移-支持多人(二创必选)_2000467442830897154.json, 视频生成/图生视频/SCAIL动作迁移，单人，双人，多人，_2001114629822705666.json, 视频生成/图生视频/SCAIL动作迁移：多人同框互动迁移_2002634251973607426.json, 视频生成/图生视频/SCAIL动作迁移：支持复杂运动+比例自适应调整（单人版）_2001969039012446209.json, 视频生成/图生视频/SCAIL单人动作迁移！_2002968528913350658.json, 视频生成/图生视频/SCAIL单人工作流(丝滑转身)_2000600692651945986.json, 视频生成/图生视频/SCAIL多人动作迁移_2000399886270988289.json, 视频生成/图生视频/SCAIL多人动作迁移，丝滑转场！_2005557624877838338.json, 视频生成/图生视频/SCAIL多人支持达成！！_2000993380874190849.json, 视频生成/图生视频/SCAIL多人支持达成！！多人跳舞动作迁移_2067304320042889217.json, 视频生成/图生视频/SCAIL多人支持达成！！多人跳舞随便生成！！_2029588365741400065.json, 视频生成/图生视频/SCAIL多人迁移工作流_2001174211215454210.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2033149801218445314.json, 视频生成/图生视频/SCAIL大模型：一键生成AI跳舞视频，支持多人同时跳舞_2034849971790417922.json, 视频生成/图生视频/SCAIL大模型：一键生成AI跳舞视频，支持多人同时跳舞，让你开跳胜利之舞！_2012336078342070273.json, 视频生成/图生视频/SCAIL大模型：一键生成AI跳舞视频，支持多人同时跳舞，让你开跳胜利之舞！_2013828137846579202.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2011155503241498626.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2011274698348306434.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2012844488661671938.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2014244087540490242.json, 视频生成/图生视频/SCAIL，丝滑转身，支持双人对打，支持单人_2015057760655773697.json, 视频生成/图生视频/SCAIL，动作迁移_2000401352083767297.json, 视频生成/图生视频/SCAIL，支持丝滑转身，支持双人对打_2000311901097783298.json, 视频生成/图生视频/Scail 单人跳舞_2006276580754071554.json, 视频生成/图生视频/Scail 多人v2_2004474067589754881.json, 视频生成/图生视频/Scail_KJ_动作迁移_2008813540995502081.json, 视频生成/图生视频/Scail动作复刻工作流_2008843749622816769.json, 视频生成/图生视频/Wan SCAIL 支持单人_双人角色替换_2000383741266624513.json, 视频生成/图生视频/Wan Scail 姿势复刻_2000390740419244034.json, 视频生成/文生视频/SCAIL+ 全能图片V1 Pro伪背景替换_2001645245022498817.json]
+members: [视频生成/图生视频/InfiniteTalk数字人图片双人对口型_2007459382434471938.json, 视频生成/图生视频/Lip-syncing + Emotional Voice-over对口型+情感口播++数字人_2097495815702007810.json, 视频生成/图生视频/MV唱歌  对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062430418598711297.json, 视频生成/图生视频/MV唱歌  对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062556213728071682.json, 视频生成/图生视频/Multitalk多人对话(爱屋复制版)_1940924821561884673.json, 视频生成/图生视频/infinitetalk双人对话唱歌【支持长时间语音】_1965302801381380098.json, 视频生成/图生视频/infinitetalk双人对话版支持长时间语音_2026541463353434114.json, 视频生成/图生视频/【阿良绘】双人说话_数字人InfiniteTalk驱动（默认低动态）_2019698233995436034.json, 视频生成/图生视频/双人(多人)对口型数字人_2040690138828771330.json, 视频生成/图生视频/双人对话图生视频_2026471529856372738.json, 视频生成/图生视频/双人对话图生视频_2057657277599010818.json, 视频生成/图生视频/双人播客+电商带货+双人对话图生视频_2020864511145676802.json, 视频生成/图生视频/图生对口型-rh-InfiniTetalk-单人图像-模板_2006359490202963970.json, 视频生成/图生视频/图转视频_Wan2.1+ InfiniteTalk 数字人对口型三人版多人版_2053305138537873409.json, 视频生成/图生视频/图转视频_Wan2.1+ InfiniteTalk 数字人对口型双人版操作简单效果佳_2052944892057407490.json, 视频生成/图生视频/数字人 对口型 图生视频 短视频带货 口播短视频 电商自媒体适用 InfiniteTalk_2033009151844032514.json, 视频生成/图生视频/数字人单人图像_2013190934099402754.json, 视频生成/图生视频/（单人）InfiniteTalk超自然数字人对口型图像驱动_2009261993735233537.json, 视频生成/图生视频/😙infinitetalk 迎接双人有灵魂的AI对话，音色、情绪无缝切换【支持长时间语音】🌙_1978989792249679873.json, 视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_1964871891532005378.json, 视频生成/图生视频/🥳infinitetalk双人对话版【支持长时间语音】🐟_2001550158074658818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_vae_2
 
-> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（视频生成/图生视频/SCAIL动作迁移-支持多人(二创必选)_2000467442830897154.json、视频生成/图生视频/SCAIL动作迁移，单人，双人，多人，_2001114629822705666.json、视频生成/图生视频/SCAIL动作迁移：多人同框互动迁移_2002634251973607426.json、视频生成/图生视频/SCAIL动作迁移：支持复杂运动+比例自适应调整（单人版）_2001969039012446209.json、视频生成/图生视频/SCAIL单人动作迁移！_2002968528913350658.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk数字人图片双人对口型_2007459382434471938.json、视频生成/图生视频/Lip-syncing + Emotional Voice-over对口型+情感口播++数字人_2097495815702007810.json、视频生成/图生视频/MV唱歌  对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062430418598711297.json、视频生成/图生视频/MV唱歌  对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062556213728071682.json、视频生成/图生视频/Multitalk多人对话(爱屋复制版)_1940924821561884673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：30
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 30 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadNLFModel`
-- `ImageResizeKJv2`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `RenderNLFPoses`
-- `VHS_LoadVideo`
+全部 21 个 workflow 都包含：
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 29/30 个有
-- `WanVideoSetBlockSwap` —— 29/30 个有
-- `WanVideoSetLoRAs` —— 29/30 个有
-- `GetImageSizeAndCount` —— 28/30 个有
-- `WanVideoContextOptions` —— 28/30 个有
-- `WanVideoSamplerExtraArgs` —— 27/30 个有
-- `WanVideoSamplerv2` —— 27/30 个有
-- `WanVideoSchedulerv2` —— 27/30 个有
-- `WanVideoTorchCompileSettings` —— 27/30 个有
-- `INTConstant` —— 26/30 个有
-- `ImageConcatMulti` —— 26/30 个有
-- `FloatConstant` —— 25/30 个有
-- `GetNode` —— 24/30 个有
-- `SetNode` —— 24/30 个有
-- `WanVideoEncode` —— 23/30 个有
-- `WanVideoUni3C_ControlnetLoader` —— 23/30 个有
-- `WanVideoUni3C_embeds` —— 23/30 个有
-- `LoadWanVideoT5TextEncoder` —— 19/30 个有
-- `SimpleMath+` —— 19/30 个有
-- `WanVideoTextEncode` —— 19/30 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 18/30 个有
-- `DWPreprocessor` —— 18/30 个有
-- `SimpleCalculatorKJ` —— 11/30 个有
-- `WanVideoTextEncodeCached` —— 11/30 个有
-- `PreviewImage` —— 7/30 个有
-- `Int` —— 5/30 个有
-- `Label (rgthree)` —— 3/30 个有
-- `WanVideoSampler` —— 3/30 个有
-- `WanVideoScheduler` —— 3/30 个有
-- `ConvertAny2Float` —— 2/30 个有
-- `Text` —— 2/30 个有
-- `easy showAnything` —— 2/30 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/30 个有
-- `GetImage` —— 1/30 个有
-- `ImageLoader` —— 1/30 个有
-- `JWImageExtractFromBatch` —— 1/30 个有
-- `JWInteger` —— 1/30 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/30 个有
-- `SDPoseOODLoader` —— 1/30 个有
-- `SaveImage` —— 1/30 个有
-- `TextInput_` —— 1/30 个有
+- `AudioSeparation` —— 20/21 个有
+- `CLIPVisionLoader` —— 20/21 个有
+- `WanVideoClipVisionEncode` —— 20/21 个有
+- `WanVideoSampler` —— 20/21 个有
+- `GetNode` —— 19/21 个有
+- `SetNode` —— 19/21 个有
+- `AudioCrop` —— 16/21 个有
+- `easy int` —— 16/21 个有
+- `Audio Duration (mtb)` —— 15/21 个有
+- `GetImageRangeFromBatch` —— 15/21 个有
+- `WanVideoTorchCompileSettings` —— 15/21 个有
+- `PlaySound|pysssss` —— 14/21 个有
+- `PreviewAudio` —— 14/21 个有
+- `easy showAnything` —— 12/21 个有
+- `Anything Everywhere` —— 11/21 个有
+- `SeparateMasks` —— 9/21 个有
+- `ImageCASharpening+` —— 8/21 个有
+- `ColorCorrectOfUtils` —— 7/21 个有
+- `CR Text` —— 5/21 个有
+- `LayerMask: MaskPreview` —— 4/21 个有
+- `MaskPreview+` —— 4/21 个有
+- `Note Plus (mtb)` —— 2/21 个有
+- `RHHiddenNodes` —— 2/21 个有
+- `GetAudioDurationFromAudio` —— 1/21 个有
+- `JWInteger` —— 1/21 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/21 个有
+- `Text Multiline (Code Compatible)` —— 1/21 个有
 
 ## 典型参数
 

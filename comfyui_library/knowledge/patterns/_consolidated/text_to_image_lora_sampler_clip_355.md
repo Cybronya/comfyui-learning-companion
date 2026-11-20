@@ -3,57 +3,78 @@ name: text_to_image_lora_sampler_clip_355
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.891167
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.930167
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3BlockCacheT8, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, ResolutionSelector, SaveVideo, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1 PE文生图优化版｜出图质量再打磨｜细节党放心冲_2102587044131336194.json, 图片生成/文生图/Qwen Image 2.1 Turbo文生图工作流，指令生图速度快质量高_2114481503345405954.json, 图片生成/文生图/Qwen Image 2.1 Turbo文生图，创意形象快速直出_2110829189711622145.json, 图片生成/文生图/Qwen Image 2.1 Turbo文生图｜一句话生成高质量图片_2114173392453722113.json, 图片生成/文生图/Qwen Image 2.1 V2文生图，文本到图像生成升级版本工作流_2103243206614937601.json, 图片生成/文生图/Qwen_Image_2.1_Turbo文生图工作流，指令生图速度快质量高_2116821106115043330.json]
+members: [视频生成/图生视频/MiniMax H3无限时长数字人 音频驱动长视频处理工具_2113387983046012930.json, 视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人 长视频口播方案_2108997643908243457.json, 视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人，一张图一段音频生成口播视频_2106835559971901442.json, 视频生成/图生视频/MiniMax H3极速音频驱动数字人图生视频处理工具_2101747277764317185.json, 视频生成/图生视频/MiniMax H3音频驱动数字人｜无限时长极速出片_2106641111426097153.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人，一张图一段音频生成口播视频_2110540152014729218.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_355
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 PE文生图优化版｜出图质量再打磨｜细节党放心冲_2102587044131336194.json、图片生成/文生图/Qwen Image 2.1 Turbo文生图工作流，指令生图速度快质量高_2114481503345405954.json、图片生成/文生图/Qwen Image 2.1 Turbo文生图，创意形象快速直出_2110829189711622145.json、图片生成/文生图/Qwen Image 2.1 Turbo文生图｜一句话生成高质量图片_2114173392453722113.json、图片生成/文生图/Qwen Image 2.1 V2文生图，文本到图像生成升级版本工作流_2103243206614937601.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3无限时长数字人 音频驱动长视频处理工具_2113387983046012930.json、视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人 长视频口播方案_2108997643908243457.json、视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人，一张图一段音频生成口播视频_2106835559971901442.json、视频生成/图生视频/MiniMax H3极速音频驱动数字人图生视频处理工具_2101747277764317185.json、视频生成/图生视频/MiniMax H3音频驱动数字人｜无限时长极速出片_2106641111426097153.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxH3BlockCacheT8`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 5/6 个有
-- `ResolutionSelector` —— 5/6 个有
+- `AudioConcat` —— 5/6 个有
+- `BasicScheduler` —— 5/6 个有
+- `BatchImagesNode` —— 5/6 个有
+- `ComfySwitchNode` —— 5/6 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `Float` —— 5/6 个有
+- `GetImageRangeFromBatch` —— 5/6 个有
+- `Int` —— 5/6 个有
+- `SaveImage` —— 5/6 个有
+- `SelfLiftAvatarH3Sampler` —— 5/6 个有
+- `TrimAudioDuration` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `easy compare` —— 5/6 个有
+- `easy forLoopEnd` —— 5/6 个有
+- `easy forLoopStart` —— 5/6 个有
 - `孤海注释` —— 5/6 个有
-- `CFGGuider` —— 4/6 个有
-- `KSamplerSelect` —— 4/6 个有
-- `ManualSigmas` —— 4/6 个有
-- `RandomNoise` —— 4/6 个有
-- `SamplerCustomAdvanced` —— 4/6 个有
-- `PreviewAny` —— 3/6 个有
-- `PrimitiveStringMultiline` —— 2/6 个有
-- `SaveImageAdvanced` —— 2/6 个有
-- `TextGenerate` —— 2/6 个有
-- `ComfySwitchNode` —— 1/6 个有
-- `QwenPECanvasT8` —— 1/6 个有
-- `QwenPERewriteT8` —— 1/6 个有
-- `RegexExtract` —— 1/6 个有
-- `StringConcatenate` —— 1/6 个有
+- `RIFE VFI` —— 4/6 个有
+- `AuKAudioTrim` —— 1/6 个有
+- `BasicGuider` —— 1/6 个有
+- `EmptyImage` —— 1/6 个有
+- `ManualSigmas` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RandomNoise` —— 1/6 个有
+- `SamplerCustomAdvanced` —— 1/6 个有
 
 ## 典型参数
 

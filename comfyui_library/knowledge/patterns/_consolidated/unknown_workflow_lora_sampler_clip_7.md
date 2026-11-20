@@ -1,77 +1,70 @@
 ---
 name: unknown_workflow_lora_sampler_clip_7
 type: Unknown Workflow
-frequency: 40
-level: strong
-coverage: 0.911925
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, INTConstant, ImageCASharpening+, KSamplerAdvanced, LayerColor: BrightnessContrastV2, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SimpleMath+, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 33
+level: moderate
+coverage: 0.985727
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen+2512+Z+image+Kook+瑶光lora+真实风格直出4K_2071773132813332482.json, 图片生成/文生图/KOOK_Qwen 2512+Z image 瑶光_2043313360514588673.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2043533333153452034.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2043878799707738114.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2044252369940127746.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2070048265176969218.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2070062887393120257.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2070412176237613058.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2070435301809541122.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2071469415845158914.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2071470018994462721.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2072114921881554946.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2072601511238135809.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2074007901743697921.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2074012115446362114.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2074699373409296386.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2075096530461224962.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2075502475276275713.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2076582059249848321.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2077562497040740353.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2078333055156183042.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2081905215112044546.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2084899766546288642.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2086640447367237633.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2087453571561377793.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2087806141706358786.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2089629285559656450.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2089632505556193282.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2090242266555305985.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2090712672529637378.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2094963982766530562.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2095674863267700737.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2100031237707624450.json, 图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2115709917154861058.json, 图片生成/文生图/Qwen+2512+Z+image+Kook+瑶光lora+真实风格直出4K_2082645959003164674.json, 图片生成/文生图/Qwen+2512+Z+image+Kook+瑶光lora+真实风格直出4K_2084477734251745282.json, 图片生成/文生图/Qwen+2512+Z+image+Kook+瑶光lora+真实风格直出4K_2084663997974007809.json, 图片生成/文生图/Qwen_2512+Z_image_Kook_瑶光lora_真实风格直出4K_2090071753090486273.json, 图片生成/文生图/Qwen_2512+Z_image_Kook_瑶光lora_真实风格直出4K_2101091202295750657.json, 图片生成/文生图/瑶光文生图_2043913904434188289.json]
+members: [图片生成/图生图/千问文生图-超写实风格V4。_2066441527123070977.json, 图片生成/图生图/千问文生图-超写实风格V4。_2070041358575947777.json, 图片生成/文生图/12月最新文生图 Qwen 2512 标准模型非FP8_2007791461693136897.json, 图片生成/文生图/AI模特文生图_2005619684131172353.json, 图片生成/文生图/DreamCore-梦核_2073300420767862785.json, 图片生成/文生图/Qwen 2512文生图_2007744253128089601.json, 图片生成/文生图/Qwen-Image文生图（亚洲复古胶片摄影）_2063953908111859714.json, 图片生成/文生图/Qwen-image Lora 文生图_1981766660744986626.json, 图片生成/文生图/Qwen-image Lora_2007472820174987265.json, 图片生成/文生图/qwen-image文生图-超写实风格V4。_2054466280689807362.json, 图片生成/文生图/qwen-image文生图-超写实风格电商图片文生图中文输入英文输入提示词_2067604904981647362.json, 图片生成/文生图/qwen-image文生图-超写实风格电商图片文生图中文输入英文输入提示词_2082433240765386754.json, 图片生成/文生图/qwen文生图-超写实风格V4。_2054841790506782721.json, 图片生成/文生图/千问文生图-超写实风格V4_2032033177165897730.json, 图片生成/文生图/千问文生图-超写实风格V4。_1996850075932532737.json, 图片生成/文生图/千问文生图-超写实风格V4。_2038886359821197313.json, 图片生成/文生图/千问文生图-超写实风格V4。_2049682901758951426.json, 图片生成/文生图/千问文生图-超写实风格V4。_2054112333609357313.json, 图片生成/文生图/千问文生图-超写实风格V4。_2054120989398708226.json, 图片生成/文生图/千问文生图-超写实风格V4。_2056933090823598081.json, 图片生成/文生图/千问文生图-超写实风格V4。_2058722964627083266.json, 图片生成/文生图/千问文生图-超写实风格V4。_2059928485799485442.json, 图片生成/文生图/千问文生图-超写实风格V4。_2059929962727174145.json, 图片生成/文生图/千问文生图-超写实风格V4。_2061999718896586753.json, 图片生成/文生图/千问文生图-超写实风格V4。_2064145427351556097.json, 图片生成/文生图/千问文生图-超写实风格V4。_2068933719162970113.json, 图片生成/文生图/千问文生图-超写实风格V4。_2072205725044133890.json, 图片生成/文生图/千问文生图-超写实风格V4。_2077559719371304962.json, 图片生成/文生图/千问文生图-超写实风格V4。_2078034646411071489.json, 图片生成/文生图/千问文生图-超写实风格V4。_2078825624730431490.json, 图片生成/文生图/千问文生图-超写实风格V4。_2079363498722816002.json, 图片生成/文生图/千问文生图-超写实风格V4。_2084453286693920770.json, 图片生成/文生图/千问文生图-超写实风格V4。_2088095437621391362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_7
 
-> 由 `engine/knowledge_consolidation` 从 40 个 workflow 归纳得出（图片生成/图生图/Qwen+2512+Z+image+Kook+瑶光lora+真实风格直出4K_2071773132813332482.json、图片生成/文生图/KOOK_Qwen 2512+Z image 瑶光_2043313360514588673.json、图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2043533333153452034.json、图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2043878799707738114.json、图片生成/文生图/Qwen 2512+Z image Kook 瑶光lora 真实风格直出4K_2044252369940127746.json…）
+> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/图生图/千问文生图-超写实风格V4。_2066441527123070977.json、图片生成/图生图/千问文生图-超写实风格V4。_2070041358575947777.json、图片生成/文生图/12月最新文生图 Qwen 2512 标准模型非FP8_2007791461693136897.json、图片生成/文生图/AI模特文生图_2005619684131172353.json、图片生成/文生图/DreamCore-梦核_2073300420767862785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：40
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：33
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 40 个 workflow 都包含：
+全部 33 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `EmptyLatentImage`
-- `INTConstant`
-- `ImageCASharpening+`
-- `KSamplerAdvanced`
-- `LayerColor: BrightnessContrastV2`
+- `EmptySD3LatentImage`
+- `KSampler`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 39/40 个有
-- `SeedVR2LoadDiTModel` —— 39/40 个有
-- `SeedVR2LoadVAEModel` —— 39/40 个有
-- `SeedVR2VideoUpscaler` —— 39/40 个有
-- `DuckHideNode` —— 1/40 个有
-- `EmptyImage` —— 1/40 个有
-- `LoadImage` —— 1/40 个有
-- `PreviewImage` —— 1/40 个有
+- `easy cleanGpuUsed` —— 30/33 个有
+- `CR Text` —— 28/33 个有
+- `CR Text Concatenate` —— 26/33 个有
+- `String` —— 26/33 个有
+- `PrimitiveStringMultiline` —— 4/33 个有
+- `ConditioningZeroOut` —— 3/33 个有
+- `FluxResolutionNode` —— 2/33 个有
+- `Int` —— 1/33 个有
+- `JWInteger` —— 1/33 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 40 | 100% |
-| Prompt 约束强度(CFG) | 10 | 8 - 10 | 40 | 97% |
-| 采样算法 | 1 | 1 - 1 | 40 | 100% |
-| 调度器 | res_2m | - | 40 | 100% |
-| 重绘幅度 | sgm_uniform | - | 40 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 40 | 100% |
-| 高度 | 1536 | 1536 - 1536 | 40 | 100% |
+| 采样步数 | 20 | 4 - 50 | 33 | 64% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 33 | 74% |
+| 采样算法 | euler | - | 33 | 94% |
+| 调度器 | beta57 | - | 33 | 85% |
+| 重绘幅度 | 1 | 1 - 1 | 33 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/33 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，40 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 8 - 10，40 个样本，取值集中（一致性 97%）
-- 采样算法 中位数 1，观测区间 1 - 1，40 个样本，取值集中（一致性 100%）
-- 调度器 最常用 res_2m，40 个样本，一致性 100%
-- 重绘幅度 最常用 sgm_uniform，40 个样本，一致性 100%
-- 宽度 中位数 1024，观测区间 1024 - 1024，40 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，观测区间 1536 - 1536，40 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 4 - 50，33 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，33 个样本
+- 采样算法 最常用 euler，33 个样本，一致性 94%
+- 调度器 最常用 beta57，33 个样本，一致性 85%
+- 重绘幅度 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）

@@ -3,17 +3,17 @@ name: text_to_image_upscale_sampler_clip_6
 type: Text To Image
 frequency: 13
 level: weak
-coverage: 0.897615
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize+, ImageResize+, ImageScaleBy, KSampler, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.903692
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), KSampler, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-Image文生图_2064637986431660033.json, 图片生成/文生图/Z-Image文生图在线8K直出处理工具_2101022161568878593.json, 图片生成/文生图/Z-Image文生图在线8K直出处理生成工具_2102132899192590337.json, 图片生成/文生图/Z-Image文生图超高清放大处理生成工具_2101767584369700866.json, 图片生成/文生图/Z-Image文生图（_2003443734752706561.json, 图片生成/文生图/Z-Image文生图（_2039874309291778050.json, 图片生成/文生图/Z-Image文生图（可大尺度）_2004890910724943874.json, 图片生成/文生图/Z-Image文生图｜写实人像出图再超高清放大细节拉满_2101540955382960129.json, 图片生成/文生图/Z-Image生图超清8K—阿浩_2039872802718752770.json, 图片生成/文生图/一键生成文生图｜Z-Image在线8K直出_2095597425204482049.json, 图片生成/文生图/文生图Z-Image在线8K直出工作流｜高清放大一步到位出大图_2101928584578424833.json, 图片生成/文生图/文生图在线8K直出｜Z-Image一键高清放大生成_2095842600501735425.json, 图片生成/文生图/自动优化提示词洗图｜文生图+图生图反推提示词工作流_2089378084058394625.json]
+members: [图片生成/图生图/Z-IMAGE：图生图反推+高清放大_1996194694038167554.json, 图片生成/图生图/Z-Image 图生图 反推_1995485709760913410.json, 图片生成/图生图/Z-Image 图生图 反推_2005808646812565505.json, 图片生成/图生图/Z-Image+Qwen3VQA 反推图生图_1996873578433978370.json, 图片生成/图生图/Z-Image图生图反推｜人像写真提示词生成_2090906960488124417.json, 图片生成/图生图/Z-image  图生图 反推+高清放大_1997242707649183746.json, 图片生成/图生图/seedvr2图像高清放大｜图生图画质增强一键直出_2091296292063506433.json, 图片生成/图生图/seedvr2图像高清放大｜图生图画质增强直出_2091005891771461634.json, 图片生成/图生图/一键反推提示词｜Z-Image人像写真图生图_2091221735055126530.json, 图片生成/图生图/千问图像反推+Z-Image+SeedVR2 高清放大_1997203090476580866.json, 图片生成/图生图/反推提示词＋相似图片生成（图生图） 硕阳_2003404747770109954.json, 图片生成/文生图/Krea2 Turbo+RAW加速版双方案文生图处理工作流_2102150335660908546.json, 图片生成/文生图/Krea2-turbo 版+RAW加速版双方案 2026.9.20更新_2071073541021323265.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_sampler_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/Z-Image文生图_2064637986431660033.json、图片生成/文生图/Z-Image文生图在线8K直出处理工具_2101022161568878593.json、图片生成/文生图/Z-Image文生图在线8K直出处理生成工具_2102132899192590337.json、图片生成/文生图/Z-Image文生图超高清放大处理生成工具_2101767584369700866.json、图片生成/文生图/Z-Image文生图（_2003443734752706561.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Z-IMAGE：图生图反推+高清放大_1996194694038167554.json、图片生成/图生图/Z-Image 图生图 反推_1995485709760913410.json、图片生成/图生图/Z-Image 图生图 反推_2005808646812565505.json、图片生成/图生图/Z-Image+Qwen3VQA 反推图生图_1996873578433978370.json、图片生成/图生图/Z-Image图生图反推｜人像写真提示词生成_2090906960488124417.json…）
 
 - **类型**：Text To Image
 - **样本数**：13
@@ -26,75 +26,62 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `GetImageSize+`
-- `ImageResize+`
-- `ImageScaleBy`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 12/13 个有
-- `PrimitiveFloat` —— 10/13 个有
-- `Text Multiline` —— 10/13 个有
-- `LoraLoaderModelOnly` —— 9/13 个有
-- `JjkText` —— 8/13 个有
-- `solarL_SaveImagesToZip` —— 8/13 个有
-- `孤海注释` —— 8/13 个有
-- `DyPE_FLUX` —— 4/13 个有
-- `CheckpointLoaderSimple` —— 3/13 个有
-- `ConditioningZeroOut` —— 3/13 个有
-- `ImageCASharpening+` —— 3/13 个有
-- `KSamplerAdvanced` —— 3/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/13 个有
-- `easy cleanGpuUsed` —— 3/13 个有
-- `easy int` —— 3/13 个有
-- `Int` —— 2/13 个有
-- `DapaoImageAspectRatioResizeNode` —— 1/13 个有
-- `DapaoImageCompressionNode` —— 1/13 个有
-- `DapaoImageRatioLimitNode` —— 1/13 个有
-- `DapaoSafeSaveImage` —— 1/13 个有
-- `Dapao_LlamaChat` —— 1/13 个有
-- `ImpactSwitch` —— 1/13 个有
-- `LoadImage` —— 1/13 个有
-- `Seed (rgthree)` —— 1/13 个有
-- `easy positive` —— 1/13 个有
-- `easy showAnything` —— 1/13 个有
+- `ConditioningZeroOut` —— 11/13 个有
+- `ImageScaleBy` —— 11/13 个有
+- `LoadImage` —— 11/13 个有
+- `Qwen3_VQA` —— 9/13 个有
+- `ShowAnything|Mie` —— 9/13 个有
+- `VAEEncode` —— 8/13 个有
+- `GetImageSize` —— 7/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/13 个有
+- `LoraLoaderModelOnly` —— 6/13 个有
+- `JjkText` —— 5/13 个有
+- `solarL_SaveImagesToZip` —— 5/13 个有
+- `孤海注释` —— 5/13 个有
+- `Fast Groups Muter (rgthree)` —— 3/13 个有
+- `CR Text Concatenate` —— 2/13 个有
+- `PrimitiveStringMultiline` —— 2/13 个有
+- `Text` —— 2/13 个有
+- `easy clearCacheAll` —— 2/13 个有
+- `easy int` —— 2/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 9 | 13 | 63% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 13 | 46% |
-| 采样算法 | er_sde | - | 13 | 62% |
-| 调度器 | beta | - | 13 | 62% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
-| 宽度 | 80 | 80 - 1920 | 13 | 0% |
-| 高度 | 80 | 80 - 1920 | 13 | 0% |
+| 采样步数 | 9 | 4 - 9 | 13 | 66% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 13 | 27% |
+| 采样算法 | euler | - | 13 | 46% |
+| 调度器 | simple | - | 13 | 46% |
+| 重绘幅度 | 1 | 0.9 - 1 | 13 | 97% |
+| 宽度 | 1024 | 80 - 1080 | 13 | 30% |
+| 高度 | 1680 | 80 - 1920 | 13 | 24% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 22/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 9，13 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，13 个样本，取值分散，一致性仅 46%
-- 采样算法 最常用 er_sde，13 个样本，一致性 62%
-- 调度器 最常用 beta，13 个样本，一致性 62%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1920，13 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1920，13 个样本，取值分散，一致性仅 0%
-- 高发问题（18/13 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 9，观测区间 4 - 9，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，13 个样本，取值分散，一致性仅 27%
+- 采样算法 最常用 euler，13 个样本，一致性 46%
+- 调度器 最常用 simple，13 个样本，一致性 46%
+- 重绘幅度 中位数 1，观测区间 0.9 - 1，13 个样本，取值集中（一致性 97%）
+- 宽度 中位数 1024，观测区间 80 - 1080，13 个样本，取值分散，一致性仅 30%
+- 高度 中位数 1680，观测区间 80 - 1920，13 个样本，取值分散，一致性仅 24%
+- 高发问题（22/13 个样本）：Steps较低可能导致细节不足

@@ -1,83 +1,99 @@
 ---
 name: text_to_image_upscale_lora_sampler_22
 type: Text To Image
-frequency: 10
+frequency: 9
 level: strong
-coverage: 0.902
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.849556
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, CR Prompt List, CR Text, ColorCorrectOfUtils, DapaoImageCompressionNode, EmptyLatentImage, GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageUpscaleWithModel, KSampler, LayerFilter: FilmV2, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, PreviewImage, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, String Literal, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, easy int, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/4K写实增强放大｜Krea2 + SeedVR文生图高清处理_2095102546200322050.json, 图片生成/文生图/Krea2 turbo 4K放大｜文生图高清美少女生成_2095953325475852289.json, 图片生成/文生图/Krea2+SeedVR双链路增强｜文生图4K写实放大直出_2110753734966992897.json, 图片生成/文生图/Krea2+SeedVR放大4K写实增强二版｜文生图高清放大写实一步到位不返工_2100478328087072770.json, 图片生成/文生图/Krea2与SeedVR放大4K写实增强｜文生图高清画质提升_2097047991512293378.json, 图片生成/文生图/Krea2写实增强SeedVR精修版｜文生图真实质感再上一档_2099147440539660289.json, 图片生成/文生图/Krea2加SeedVR放大4K写实增强处理_2100294226142654465.json, 图片生成/文生图/Krea2加SeedVR放大4K写实增强处理工具_2100653749168590849.json, 图片生成/文生图/Krea2加SeedVR放大4K写实增强｜文生图再叠高清放大，写实质感直接拉满_2100455779584266241.json, 图片生成/文生图/Krea2加SeedVR放大增强，4K写实文生图质感升级_2110847767793983490.json]
+members: [图片生成/文生图/001.Z-image生图巅峰019.瑶光真实+优化文生图_2037451201033277442.json, 图片生成/文生图/001.Z-image生图巅峰019.瑶光真实+优化文生图_2037701182256320514.json, 图片生成/文生图/Z-IMAGE 极致美学真实质感 优化提示词出图_2035517633864404994.json, 图片生成/文生图/Z-IMAGE 极致美学真实质感 优化提示词出图_2036778854009802753.json, 图片生成/文生图/Z-IMAGE 极致美学真实质感 优化提示词出图_2036779249297788929.json, 图片生成/文生图/Z-IMAGE 极致美学真实质感 优化提示词出图_2036798123510599682.json, 图片生成/文生图/Z-IMAGE 极致美学真实质感_2039286549157777409.json, 图片生成/文生图/ZIB-piaopiao-202605121843_2054127511310741505.json, 图片生成/文生图/改Z-IMAGE 极致美学真实质感20260407_2041489569769594882.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_22
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/4K写实增强放大｜Krea2 + SeedVR文生图高清处理_2095102546200322050.json、图片生成/文生图/Krea2 turbo 4K放大｜文生图高清美少女生成_2095953325475852289.json、图片生成/文生图/Krea2+SeedVR双链路增强｜文生图4K写实放大直出_2110753734966992897.json、图片生成/文生图/Krea2+SeedVR放大4K写实增强二版｜文生图高清放大写实一步到位不返工_2100478328087072770.json、图片生成/文生图/Krea2与SeedVR放大4K写实增强｜文生图高清画质提升_2097047991512293378.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/001.Z-image生图巅峰019.瑶光真实+优化文生图_2037451201033277442.json、图片生成/文生图/001.Z-image生图巅峰019.瑶光真实+优化文生图_2037701182256320514.json、图片生成/文生图/Z-IMAGE 极致美学真实质感 优化提示词出图_2035517633864404994.json、图片生成/文生图/Z-IMAGE 极致美学真实质感 优化提示词出图_2036778854009802753.json、图片生成/文生图/Z-IMAGE 极致美学真实质感 优化提示词出图_2036779249297788929.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `CR Prompt List`
+- `CR Text`
+- `ColorCorrectOfUtils`
+- `DapaoImageCompressionNode`
 - `EmptyLatentImage`
-- `JjkText`
+- `GetImageSize+`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
 - `KSampler`
+- `LayerFilter: FilmV2`
+- `LayerUtility: PurgeVRAM`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
 - `SaveImage`
+- `Seed (rgthree)`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `String Literal`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 9/10 个有
-- `EmptySD3LatentImage` —— 9/10 个有
-- `ImpactInt` —— 9/10 个有
-- `Lora Loader Stack (rgthree)` —— 9/10 个有
-- `ModelSamplingAuraFlow` —— 9/10 个有
-- `PreviewImage` —— 9/10 个有
-- `Text` —— 9/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 8/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
-- `ResolutionSelector` —— 1/10 个有
-- `TextConcatenate` —— 1/10 个有
+- `RH_LLMAPI_Pro_Node` —— 7/9 个有
+- `LoadImage` —— 3/9 个有
+- `Note Plus (mtb)` —— 3/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
+- `PrimitiveBoolean` —— 2/9 个有
+- `RH_LLMAPI_NODE` —— 2/9 个有
+- `String` —— 2/9 个有
+- `TT_img_enc_v2` —— 2/9 个有
+- `ZML_SwitchOutput` —— 2/9 个有
+- `ttN text` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 10 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
-| 采样算法 | er_sde | - | 10 | 100% |
-| 调度器 | beta | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 80 | 80 - 80 | 10 | 100% |
-| 高度 | 80 | 80 - 80 | 10 | 100% |
+| 宽度 | 1080 | 1080 - 1080 | 9 | 100% |
+| 高度 | 1920 | 1920 - 1920 | 9 | 100% |
+| 采样步数 | 8 | 8 - 8 | 9 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | res_2s | - | 9 | 100% |
+| 调度器 | bong_tangent | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 20/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，10 个样本，一致性 100%
-- 调度器 最常用 beta，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高发问题（20/10 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1080，观测区间 1080 - 1080，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，观测区间 1920 - 1920，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，9 个样本，一致性 100%
+- 调度器 最常用 bong_tangent，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

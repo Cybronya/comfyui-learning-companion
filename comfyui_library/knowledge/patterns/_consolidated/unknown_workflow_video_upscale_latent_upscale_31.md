@@ -1,111 +1,92 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_31
 type: Unknown Workflow
-frequency: 10
-level: moderate
-coverage: 0.6087
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ExtendIntermediateSigmas, GetNode, JoinStringMulti, KSamplerSelect, LTX2AttentionTunerPatch, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3HybridLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, PromptRelayEncode, PurgeVRAM_UTK, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, StringConcatenate, StringLength, StringSubstring, ToString, UNETLoader, VAEDecode, VAEEncode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, string_util_StrFind]
+frequency: 11
+level: strong
+coverage: 0.451091
+common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleCalculatorKJ, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/H3电影质感LoRA + 双剑合并 MiniMax H3 + LTX2.5 多参视频生成_2119991313163706369.json, 视频生成/图生视频/MiniMax H3参考生视频-LTX2.5 MSR二采放大-音频参考-自动提示词优化-V1.1_2088533956374384642.json, 视频生成/图生视频/MiniMax_H3_+_LTX2.5_多参视频生成_2100857766603747330.json, 视频生成/图生视频/MiniMax_H3_+_LTX2.5_多参视频生成_2101128738648973314.json, 视频生成/图生视频/双剑合并 MiniMax H3 + LTX2.5 多参视频生成_2100072493146005505.json, 视频生成/图生视频/双剑合并_MiniMax_H3_+_LTX2.5_多参视频生成_2100190663353655298.json, 视频生成/图生视频/双剑合并_MiniMax_H3_+_LTX2.5_多参视频生成_2100922356238733313.json, 视频生成/图生视频/双剑合璧_MiniMax_H3_+_LTX2.5_多参视频生成_2105108981030146049.json, 视频生成/文生视频/(SBAPI)MiniMaxH3+LTX25多参视频(三分镜角色包匹配)_2104882747050389505.json, 视频生成/文生视频/双剑合璧 MiniMax H3 + LTX2.5 多参视频生成_2102770042948644866.json]
+members: [视频生成/图生视频/AI控制人物表情！LTX2.3图生视频！B站艾橘溪！_2055850166728577025.json, 视频生成/图生视频/AI控制人物表情！LTX2.3图生视频！_2059931289700102145.json, 视频生成/图生视频/LTX-2.3图生视频（极速版）_2045427683621871617.json, 视频生成/图生视频/LTX-2.3首中尾三图生视频（极速版）_2045565510112251906.json, 视频生成/图生视频/LTX2.3 -1.1蒸馏闪电版-目前最快的ltx_2044453497332043777.json, 视频生成/图生视频/LTX2.3 一键控制人物表情 图生视频_2055968633255407618.json, 视频生成/图生视频/LTX2.3 一键控制人物表情 图生视频_2079551168036032513.json, 视频生成/图生视频/LTX2.3 快速蒸馏版（自动提示词）_2044570790150017026.json, 视频生成/图生视频/数字人直播、影视预演，情绪演绎 表情调节 人物表情控制，视频生成ltx2.3_2082710649158848514.json, 视频生成/图生视频/数字人表情调节 人物表情控制，视频生成_2081587131981590529.json, 视频生成/图生视频/最新精准AI控制人物表情！LTX2.3图生视频！_2058014119055421441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_31
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/H3电影质感LoRA + 双剑合并 MiniMax H3 + LTX2.5 多参视频生成_2119991313163706369.json、视频生成/图生视频/MiniMax H3参考生视频-LTX2.5 MSR二采放大-音频参考-自动提示词优化-V1.1_2088533956374384642.json、视频生成/图生视频/MiniMax_H3_+_LTX2.5_多参视频生成_2100857766603747330.json、视频生成/图生视频/MiniMax_H3_+_LTX2.5_多参视频生成_2101128738648973314.json、视频生成/图生视频/双剑合并 MiniMax H3 + LTX2.5 多参视频生成_2100072493146005505.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/AI控制人物表情！LTX2.3图生视频！B站艾橘溪！_2055850166728577025.json、视频生成/图生视频/AI控制人物表情！LTX2.3图生视频！_2059931289700102145.json、视频生成/图生视频/LTX-2.3图生视频（极速版）_2045427683621871617.json、视频生成/图生视频/LTX-2.3首中尾三图生视频（极速版）_2045565510112251906.json、视频生成/图生视频/LTX2.3 -1.1蒸馏闪电版-目前最快的ltx_2044453497332043777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BasicGuider`
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
+全部 11 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ExtendIntermediateSigmas`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
 - `GetNode`
-- `JoinStringMulti`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTX2AttentionTunerPatch`
+- `LTX2_NAG`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3HybridLoader`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `PromptRelayEncode`
-- `PurgeVRAM_UTK`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
 - `SetNode`
-- `SolidMask`
-- `StringConcatenate`
-- `StringLength`
-- `StringSubstring`
-- `ToString`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
+- `SimpleCalculatorKJ`
+- `VAEDecodeTiled`
 - `VAELoader`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `string_util_StrFind`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 9/10 个有
-- `LTXAddVideoICLoRAGuide` —— 9/10 个有
-- `LTXICLoRALoaderModelOnly` —— 9/10 个有
-- `LiconMSR` —— 9/10 个有
-- `EmptyImage` —— 3/10 个有
-- `PreviewImage` —— 3/10 个有
-- `ComfyUILTX25MSRICLoRALoader` —— 1/10 个有
-- `ComfyUILTX25MSRMultiReferenceGuide` —— 1/10 个有
-- `DF_String_Concatenate` —— 1/10 个有
-- `DF_Text_Box` —— 1/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `H3SigmaRefiner` —— 1/10 个有
-- `JWStringGetLine` —— 1/10 个有
-- `JjkConcat` —— 1/10 个有
-- `JjkShowText` —— 1/10 个有
-- `LTXVDualCFGGuider` —— 1/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `ReplaceString` —— 1/10 个有
-- `StringConstant` —— 1/10 个有
-- `easy promptReplace` —— 1/10 个有
+- `LTXVScheduler` —— 10/11 个有
+- `LTXVImgToVideoConditionOnly` —— 9/11 个有
+- `CheckpointLoaderSimple` —— 8/11 个有
+- `PrimitiveStringMultiline` —— 8/11 个有
+- `CR Text Concatenate` —— 7/11 个有
+- `JWInteger` —— 7/11 个有
+- `JjkText` —— 7/11 个有
+- `ModelPatchTorchSettings` —— 7/11 个有
+- `PathchSageAttentionKJ` —— 7/11 个有
+- `ShowText|pysssss` —— 7/11 个有
+- `easy anythingIndexSwitch` —— 7/11 个有
+- `LTX2SamplingPreviewOverride` —— 4/11 个有
+- `LTXVImgToVideoInplace` —— 4/11 个有
+- `ResizeImagesByLongerEdge` —— 4/11 个有
+- `UNETLoader` —— 4/11 个有
+- `ImageScaleBy` —— 3/11 个有
+- `Seed (rgthree)` —— 2/11 个有
+- `CR Prompt Text` —— 1/11 个有
+- `CR Text` —— 1/11 个有
+- `ConcatTextOfUtils` —— 1/11 个有
+- `LTXVAddGuideMulti` —— 1/11 个有
+- `LTXVCropGuides` —— 1/11 个有
+- `LTXVImgToVideoInplaceKJ` —— 1/11 个有
+- `RH_LLMAPI_Pro_Node` —— 1/11 个有
+- `ResizeImageMaskNode` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 121 | 97 - 121 | 11 | 91% |
+| 高度 | 24 | 24 - 25 | 11 | 98% |
 
 ## 常见问题
 
@@ -113,4 +94,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 121，观测区间 97 - 121，11 个样本，取值集中（一致性 91%）
+- 高度 中位数 24，观测区间 24 - 25，11 个样本，取值集中（一致性 98%）

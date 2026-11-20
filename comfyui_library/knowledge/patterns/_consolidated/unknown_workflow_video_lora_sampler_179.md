@@ -1,68 +1,98 @@
 ---
 name: unknown_workflow_video_lora_sampler_179
 type: Unknown Workflow
-frequency: 13
+frequency: 11
 level: moderate
-coverage: 0.829077
-common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.551636
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetNode, GrowMask, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Infinite talk数字人动态加强高版V4（对口型）_2016403173090533378.json, 视频生成/图生视频/Infinite talk数字人动态加强高版（Lightx2v+Rcm）_2007798909330001921.json, 视频生成/图生视频/Infinite talk（Lightx2v+Rcm）-数字人说话-1分钟不变色-超长稳定-水哥_2014643345397653506.json, 视频生成/图生视频/Infinite+talk数字人动态加强高版V4（Lightx2v+Rcm）_2014497648656523265.json, 视频生成/图生视频/InfiniteTalk ：(KJ) 图片驱动、数字人单人对口型_2003092894418370562.json, 视频生成/图生视频/InfiniteTalk（Lightx2v+Rcm） -数字人唱歌-长时稳定不变色_2014949900475174914.json, 视频生成/图生视频/全能图片V1+infinite talk数字人动态加强高版v4（lightx2v+rcm）_1995303342127689730.json, 视频生成/图生视频/凡工自用贞贞Infinite talk数字人_2039336418778030081.json, 视频生成/图生视频/唱歌对口型 Infinite talk数字人动态加强高版V4（唱歌数字人） 稳定运行版_2016109597077020673.json, 视频生成/图生视频/唱歌视频制作（图片+音频对口型）_2082392926398799873.json, 视频生成/图生视频/商用-数字人动态控制高清版_1996720816832270337.json, 视频生成/图生视频/音色克隆 对口型数字人Infinite+Talk 带语气情感_2041353094105141250.json, 视频生成/图生视频/音频+图片=数字人对口型 -阿浩_2026920632201515010.json]
+members: [图片生成/图生图/Wan2.2-Animate_去AI感新版动作迁移，美女跳舞（体型自适应 脸部更一致）_1971077076524638209.json, 数字人/数字人/Wan Animate V2版 视频多人场景精准替换_1970675787114422273.json, 数字人/数字人/Wan2.2 Animate V2替换视频人物，保留原声_1983884901671993345.json, 视频生成/图生视频/(骨骼自适应)Wan2.2 Animate V2模型Move模式运动迁移V1_1998610915446677506.json, 视频生成/图生视频/Wan2.2 Animate 双重脸部一致性优化Mix主体迁移版V1（ED作者参数版）_1971950073557020673.json, 视频生成/图生视频/Wan2.2 Animate 双重脸部一致性优化Mix主体迁移版V2（ED实验版）_1971886866809221121.json, 视频生成/图生视频/Wan2.2 Animate 多重组合脸部一致性优化Mix主体迁移加速版V2（ED实验版）_1971891163009642497.json, 视频生成/图生视频/Wan2.2 Animate高质量电商换模特_1972598111484968962.json, 视频生成/图生视频/溪南人物替换，影视、动漫二创V2_1998309417806389249.json, 视频生成/图生视频/超自动化+超多功能+拉满质量wan2.2 animate超长时长优化 t8 kj v2 不超级版_1975795950243418113.json, 视频生成/图生视频/超自动化+超多功能+拉满质量wan2.2 animate超长时长优化 t8 kj v2 不超级版_1988846148821585921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_179
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/Infinite talk数字人动态加强高版V4（对口型）_2016403173090533378.json、视频生成/图生视频/Infinite talk数字人动态加强高版（Lightx2v+Rcm）_2007798909330001921.json、视频生成/图生视频/Infinite talk（Lightx2v+Rcm）-数字人说话-1分钟不变色-超长稳定-水哥_2014643345397653506.json、视频生成/图生视频/Infinite+talk数字人动态加强高版V4（Lightx2v+Rcm）_2014497648656523265.json、视频生成/图生视频/InfiniteTalk ：(KJ) 图片驱动、数字人单人对口型_2003092894418370562.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Wan2.2-Animate_去AI感新版动作迁移，美女跳舞（体型自适应 脸部更一致）_1971077076524638209.json、数字人/数字人/Wan Animate V2版 视频多人场景精准替换_1970675787114422273.json、数字人/数字人/Wan2.2 Animate V2替换视频人物，保留原声_1983884901671993345.json、视频生成/图生视频/(骨骼自适应)Wan2.2 Animate V2模型Move模式运动迁移V1_1998610915446677506.json、视频生成/图生视频/Wan2.2 Animate 双重脸部一致性优化Mix主体迁移版V1（ED作者参数版）_1971950073557020673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `AudioSeparation`
+全部 11 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GetNode`
+- `GrowMask`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 12/13 个有
-- `PreviewAny` —— 12/13 个有
-- `JWFloat` —— 11/13 个有
-- `LoadAudio` —— 11/13 个有
-- `Audio Duration (mtb)` —— 2/13 个有
-- `Float` —— 2/13 个有
-- `ImageResize+` —— 2/13 个有
-- `Int` —— 2/13 个有
-- `PreviewImage` —— 2/13 个有
-- `PrimitiveFloat` —— 2/13 个有
-- `RH_Nano_Banana_Image2Image` —— 2/13 个有
-- `RH_Translator` —— 2/13 个有
-- `SimpleMath+` —— 2/13 个有
-- `VHS_LoadVideoFFmpeg` —— 2/13 个有
-- `VHS_VideoInfoLoaded` —— 2/13 个有
-- `Audio Cut (mtb)` —— 1/13 个有
-- `MathExpression|pysssss` —— 1/13 个有
+- `GetImageSizeAndCount` —— 10/11 个有
+- `ImageConcatMulti` —— 10/11 个有
+- `ImageResizeKJv2` —— 10/11 个有
+- `PointsEditor` —— 10/11 个有
+- `PoseRetargetPromptHelper` —— 10/11 个有
+- `DownloadAndLoadSAM2Model` —— 9/11 个有
+- `JWInteger` —— 9/11 个有
+- `Sam2Segmentation` —— 9/11 个有
+- `WanVideoTorchCompileSettings` —— 9/11 个有
+- `WanVideoEncode` —— 8/11 个有
+- `WanVideoUni3C_ControlnetLoader` —— 8/11 个有
+- `WanVideoUni3C_embeds` —— 8/11 个有
+- `ACE_ImageFaceCrop` —— 7/11 个有
+- `WanVideoContextOptions` —— 7/11 个有
+- `CR Prompt Text` —— 6/11 个有
+- `PrimitiveStringMultiline` —— 3/11 个有
+- `DF_Text_Box` —— 2/11 个有
+- `Float to Int` —— 2/11 个有
+- `Int` —— 2/11 个有
+- `JWLoopImageSequence` —— 2/11 个有
+- `RHHiddenNodes` —— 2/11 个有
+- `SeCModelLoader` —— 2/11 个有
+- `SeCVideoSegmentation` —— 2/11 个有
+- `SimpleMath+` —— 2/11 个有
+- `easy float` —— 2/11 个有
+- `Anything Everywhere` —— 1/11 个有
+- `EmptyImage` —— 1/11 个有
+- `ImageBatch` —— 1/11 个有
+- `ImageFromBatch+` —— 1/11 个有
+- `ImageResize+` —— 1/11 个有
+- `LayerMask: MaskPreview` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `LayerUtility: PurgeVRAM` —— 1/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
+- `MathExpression|pysssss` —— 1/11 个有
+- `Note Plus (mtb)` —— 1/11 个有
+- `PoseDetectionOneToAllAnimation` —— 1/11 个有
+- `PreviewImage` —— 1/11 个有
+- `RepeatImageBatch` —— 1/11 个有
+- `SaveImage` —— 1/11 个有
+- `easy anythingIndexSwitch` —— 1/11 个有
+- `easy cleanGpuUsed` —— 1/11 个有
+- `easy forLoopEnd` —— 1/11 个有
+- `easy forLoopStart` —— 1/11 个有
 
 ## 典型参数
 

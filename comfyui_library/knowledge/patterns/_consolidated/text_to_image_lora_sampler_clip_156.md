@@ -3,100 +3,65 @@ name: text_to_image_lora_sampler_clip_156
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.757182
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.890909
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3 NVIDIA VFX HDR 4倍FPS 视频超采样处理工具_2113007348188016641.json, 视频生成/图生视频/MiniMax H3 Ref顶级多参V2 短剧图生视频不偏色处理工具_2112988405880676353.json, 视频生成/图生视频/MiniMax H3 Ref顶级多参不偏色不油光图生视频处理工具_2102134491904036866.json, 视频生成/图生视频/MiniMax H3六图可选图生视频混合模型潜空间高清直出工作流，图生视频方案_2107977180578930690.json, 视频生成/图生视频/MiniMax H3双采潜空间放大图生视频处理工作流_2101380889010855937.json, 视频生成/图生视频/minimaxh3selflift二采音频参考｜三重加持稳定出片_2106239244355325953.json, 视频生成/图生视频/minimaxh3音频参考加持，selflift二采流程一键出片_2110442485200809985.json, 视频生成/图生视频/minimaxh3音频参考加持，selflift二采流程一键出片_2113817190343471105.json, 视频生成/图生视频/显存终极优化｜MINIMAX-H3视频图生视频工作流_2090556860897259521.json, 视频生成/图生视频/武打戏特化制作｜MINIMAX-H3视频生视频图生视频_2092210437902393346.json, 视频生成/文生视频/MiniMax H3 SelfLift加二采加音频参考工作流，文生视频视频生视频图生视频_2106518365966786562.json]
+members: [图片生成/文生图/Qwen Image 2.1文生图带优化处理生成工具_2102462790022819841.json, 图片生成/文生图/Qwen Image 2.1文生图带优化，开源最强图片模型文本到图像方案_2103623073571368962.json, 图片生成/文生图/Qwen Image 2.1文生图标准版 高质量画面稳定出图_2105033394219474945.json, 图片生成/文生图/Qwen image 2.1文生图美少女特调｜写实风格出图细腻｜二次元真人两相宜_2102246172638408706.json, 图片生成/文生图/Qwen image 2.1文生图，高清创意形象快速生成_2110841563134914562.json, 图片生成/文生图/Qwen image 2.1文生图｜简洁高效直出高质量画面_2110710655673266177.json, 图片生成/文生图/Qwen-image2.1开源文生图｜提示词自动优化直出好图_2105261065113264129.json, 图片生成/文生图/Qwen-image2.1文生图开源王者｜优化提示词一步到位_2105264371466334209.json, 图片生成/文生图/开源最强Qwen-image2.1文生图｜自带提示词优化加持_2105257763684311042.json, 图片生成/文生图/开源最强图片模型Qwen image2.1文生图带优化 高质量画面直出_2105421946069536770.json, 图片生成/文生图/开源最强图片模型Qwen image2.1文生图带优化 高质量画面直出_2105423398204698625.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_156
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 NVIDIA VFX HDR 4倍FPS 视频超采样处理工具_2113007348188016641.json、视频生成/图生视频/MiniMax H3 Ref顶级多参V2 短剧图生视频不偏色处理工具_2112988405880676353.json、视频生成/图生视频/MiniMax H3 Ref顶级多参不偏色不油光图生视频处理工具_2102134491904036866.json、视频生成/图生视频/MiniMax H3六图可选图生视频混合模型潜空间高清直出工作流，图生视频方案_2107977180578930690.json、视频生成/图生视频/MiniMax H3双采潜空间放大图生视频处理工作流_2101380889010855937.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图带优化处理生成工具_2102462790022819841.json、图片生成/文生图/Qwen Image 2.1文生图带优化，开源最强图片模型文本到图像方案_2103623073571368962.json、图片生成/文生图/Qwen Image 2.1文生图标准版 高质量画面稳定出图_2105033394219474945.json、图片生成/文生图/Qwen image 2.1文生图美少女特调｜写实风格出图细腻｜二次元真人两相宜_2102246172638408706.json、图片生成/文生图/Qwen image 2.1文生图，高清创意形象快速生成_2110841563134914562.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `H3SigmaRefiner` —— 10/11 个有
-- `PrimitiveStringMultiline` —— 10/11 个有
-- `孤海注释` —— 10/11 个有
-- `BasicGuider` —— 9/11 个有
-- `CreateVideo` —— 9/11 个有
-- `LTXVConcatAVLatent` —— 9/11 个有
-- `LTXVSeparateAVLatent` —— 9/11 个有
-- `GetNode` —— 8/11 个有
-- `MiniMaxChunkFeedForward` —— 8/11 个有
-- `MiniMaxLowVRAMAttention` —— 8/11 个有
-- `MinimaxH3LatentUpscaler3D` —— 8/11 个有
-- `SaveImage` —— 8/11 个有
-- `SetNode` —— 8/11 个有
-- `LoadAudio` —— 7/11 个有
-- `MiniMaxH3SigmaShift` —— 7/11 个有
-- `ModelPreviewOverrideKJ` —— 7/11 个有
-- `ModelAttentionBackend` —— 6/11 个有
-- `VHS_VideoCombine` —— 6/11 个有
-- `SaveVideo` —— 5/11 个有
-- `ConditioningZeroOut` —— 4/11 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/11 个有
-- `PlaySound|pysssss` —— 4/11 个有
-- `SelfLiftAvatarH3Sampler` —— 4/11 个有
-- `SplitSigmas` —— 4/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/11 个有
-- `PreviewImage` —— 3/11 个有
-- `CFGGuider` —— 2/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
-- `QwenH3PromptLocal` —— 2/11 个有
-- `VHS_LoadVideo` —— 2/11 个有
-- `YC_ShowText` —— 2/11 个有
-- `EmptyImage` —— 1/11 个有
-- `ImageResizeKJv2` —— 1/11 个有
-- `MiniMaxH3BlockCacheT8` —— 1/11 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/11 个有
-- `RTXTrueHDR` —— 1/11 个有
-- `RTXVideoFrameGeneration` —— 1/11 个有
-- `RTXVideoSuperResolutionV2` —— 1/11 个有
-- `SolAttnMiniMax` —— 1/11 个有
-- `Textbox` —— 1/11 个有
+- `CR Text` —— 10/11 个有
+- `TextGenerateLTX2Prompt` —— 10/11 个有
+- `easy showAnything` —— 10/11 个有
+- `CR Prompt List` —— 7/11 个有
+- `ImpactInt` —— 7/11 个有
+- `Seed (rgthree)` —— 7/11 个有
+- `String Literal` —— 7/11 个有
+- `QwenImage21Cache` —— 3/11 个有
+- `EmptySD3LatentImage` —— 2/11 个有
+- `ResolutionSelector` —— 2/11 个有
+- `Note Plus (mtb)` —— 1/11 个有
+- `SaveImageAdvanced` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | 80 - 80 | 11 | 100% |
+| 高度 | 80 | 80 - 80 | 11 | 100% |
 | 采样步数 | 4 | 4 - 4 | 11 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 11 | 100% |
 | 采样算法 | er_sde | - | 11 | 100% |
 | 调度器 | beta | - | 11 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 80 | 80 - 80 | 11 | 100% |
-| 高度 | 80 | 80 - 80 | 11 | 100% |
 
 ## 常见问题
 
@@ -106,11 +71,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，11 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，11 个样本，一致性 100%
 - 调度器 最常用 beta，11 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
 - 高发问题（11/11 个样本）：Steps较低可能导致细节不足

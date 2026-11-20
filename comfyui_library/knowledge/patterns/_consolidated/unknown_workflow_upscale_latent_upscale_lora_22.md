@@ -1,70 +1,97 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_22
 type: Unknown Workflow
-frequency: 13
-level: moderate
-coverage: 0.970846
-common_nodes: [BasicScheduler, CFGGuider, CheckpointLoaderSimple, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ]
+frequency: 12
+level: strong
+coverage: 0.888833
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VAEDecodeTiled, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX导演工作流_2059458319999397889.json, 视频生成/图生视频/LTX导演工作流_2061429598319104001.json, 视频生成/图生视频/LTX导演工作流！运镜分镜随心所动！_2056296631754117121.json, 视频生成/图生视频/LTX导演工作流！运镜分镜随心所动！_2057419629450063874.json, 视频生成/图生视频/LTX导演工作流！运镜分镜随心所动！_2058649918318923777.json, 视频生成/图生视频/LTX导演工作流！音视频随心_2055635483195133953.json, 视频生成/图生视频/LTX导演面板_2061446032973713410.json, 视频生成/图生视频/万象AI+LTX2.3导演台工作流 -（分镜图+音频+提示词+视频时长随意控制）_2058003640417349634.json, 视频生成/图生视频/好用的LTX2.3导演全能控制-运镜分镜一网打进_2055095279413669890.json, 视频生成/图生视频/完美掌控LTX2.3-LTX Director-导演版分镜工作流-更强的控制性_2067766430577287169.json, 视频生成/图生视频/超好玩LTX2.3导演控制台-运镜分镜-不传音频版v2.0_2056028640659427329.json, 视频生成/文生视频/LTX 2.3 Director 导演工作台 ComfyUI 在线工作流_2060986578205503489.json, 视频生成/文生视频/LTX2.3导演分镜_2055938221086912513.json]
+members: [图片生成/文生图/多图一致性，LTX+2.3，_2045784883724820481.json, 视频生成/图生视频/LTX-2.3+Qwen3.5电影_2030820457208877058.json, 视频生成/图生视频/LTX2.3 i2v 丝滑过度转场+变身效果_2037117341531643906.json, 视频生成/图生视频/LTX2.3 i2v 优化版  提升画面质量~减少运动崩坏_2042604454435889153.json, 视频生成/图生视频/LTX2.3 i2v 优化版_2030584551327670273.json, 视频生成/图生视频/LTX2.3 多图丝滑过度转场+变身效果_2037112524918755329.json, 视频生成/图生视频/LTX2.3+i2v+优化版_2034102193380401154.json, 视频生成/图生视频/LTX2.3-首中尾3帧变身转场特效_2040262792845987841.json, 视频生成/图生视频/Ltx2.3 首尾帧 丝滑过度转场+变身效果_2037115894140248065.json, 视频生成/图生视频/Ltx2.3 首尾帧 优化版_2030985719384121346.json, 视频生成/图生视频/多图一致性，LTX+2.3+首中尾三图+多图参考，顺滑转场，符合物理逻辑，强引导参考，_2044285849671569409.json, 视频生成/图生视频/多图生视频ltx2.3_2049770281983549442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_22
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/LTX导演工作流_2059458319999397889.json、视频生成/图生视频/LTX导演工作流_2061429598319104001.json、视频生成/图生视频/LTX导演工作流！运镜分镜随心所动！_2056296631754117121.json、视频生成/图生视频/LTX导演工作流！运镜分镜随心所动！_2057419629450063874.json、视频生成/图生视频/LTX导演工作流！运镜分镜随心所动！_2058649918318923777.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/多图一致性，LTX+2.3，_2045784883724820481.json、视频生成/图生视频/LTX-2.3+Qwen3.5电影_2030820457208877058.json、视频生成/图生视频/LTX2.3 i2v 丝滑过度转场+变身效果_2037117341531643906.json、视频生成/图生视频/LTX2.3 i2v 优化版  提升画面质量~减少运动崩坏_2042604454435889153.json、视频生成/图生视频/LTX2.3 i2v 优化版_2030584551327670273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `BasicScheduler`
+全部 12 个 workflow 都包含：
 - `CFGGuider`
+- `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXDirectorGuide`
+- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `VAELoaderKJ`
+- `VAEDecodeTiled`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXDirector` —— 12/13 个有
-- `VAEDecodeTiled` —— 12/13 个有
-- `CreateVideo` —— 11/13 个有
-- `SaveVideo` —— 10/13 个有
-- `LoadImage` —— 3/13 个有
-- `VHS_VideoCombine` —— 3/13 个有
-- `PathchSageAttentionKJ` —— 2/13 个有
-- `UNETLoader` —— 2/13 个有
-- `CS-LTXGridDirector` —— 1/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
-- `GetVideoComponents` —— 1/13 个有
-- `LTXFloatToInt` —— 1/13 个有
-- `LayerUtility: ColorImage` —— 1/13 个有
-- `PrimitiveFloat` —— 1/13 个有
-- `SaveAudio` —— 1/13 个有
-- `VAEDecode` —— 1/13 个有
-- `easy imageSize` —— 1/13 个有
+- `LTX2_NAG` —— 11/12 个有
+- `SaveVideo` —— 11/12 个有
+- `ResizeImageMaskNode` —— 9/12 个有
+- `ImageResizeKJv2` —— 8/12 个有
+- `LTXVImgToVideoInplace` —— 7/12 个有
+- `PrimitiveStringMultiline` —— 7/12 个有
+- `LTXVImgToVideoInplaceKJ` —— 5/12 个有
+- `CR Text` —— 4/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/12 个有
+- `ShowText|pysssss` —— 4/12 个有
+- `CR Text Concatenate` —— 3/12 个有
+- `INTConstant` —— 3/12 个有
+- `ImageBatchMulti` —— 3/12 个有
+- `ImageFromBatch+` —— 3/12 个有
+- `ImageStitch` —— 3/12 个有
+- `LTXVAddGuideMulti` —— 3/12 个有
+- `SimpleCalculatorKJ` —— 3/12 个有
+- `SimpleMath+` —— 3/12 个有
+- `easy showAnything` —— 3/12 个有
+- `Bjornulf_ShowInt` —— 2/12 个有
+- `LTXVFirstLastFrameControl_TTP` —— 2/12 个有
+- `LTXVImgToVideoConditionOnly` —— 2/12 个有
+- `SamplerCustom` —— 2/12 个有
+- `AspectRatio` —— 1/12 个有
+- `ImageConcanateOfUtils` —— 1/12 个有
+- `PrimitiveBoolean` —— 1/12 个有
+- `QZ_ResolutionPreset` —— 1/12 个有
+- `SaveImage` —— 1/12 个有
+- `TT_img_enc_v2` —— 1/12 个有
+- `Text` —— 1/12 个有
+- `easy cleanGpuUsed` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 12 | 100% |
+| 高度 | 25 | 25 - 25 | 12 | 100% |
 
 ## 常见问题
 
@@ -72,4 +99,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，12 个样本，取值集中（一致性 100%）

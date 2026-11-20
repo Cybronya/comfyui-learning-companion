@@ -1,78 +1,83 @@
 ---
 name: unknown_workflow_video_lora_sampler_131
 type: Unknown Workflow
-frequency: 15
-level: strong
-coverage: 0.743333
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GetNode, ImageBatchExtendWithOverlap, ImageFromBatch+, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, SetNode, Text, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+frequency: 14
+level: moderate
+coverage: 0.544714
+common_nodes: [BatchCount+, CLIPVisionLoader, DrawViTPose, ImageBatch, ImageFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, RepeatImageBatch, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy float, easy mathInt]
 problems: []
 missing: []
-members: [图片生成/图生图/修仙-漫剧图生视频优化版_2014595984575176706.json, 视频生成/图生视频/水池高清特效_2014865724992393217.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027295499975397377.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027312644432076802.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027802000825524225.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027917338749706242.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027920287546740737.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027921761626492930.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2028112885385269249.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2028125555844976641.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2028393492883443713.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2028664634638606338.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2028827198974595073.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2028846638088851458.json, 视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2028859143251038209.json]
+members: [视频生成/图生视频/【动作迁移】wan22animate_单人版_2098717884812976129.json, 视频生成/图生视频/动作迁移_2045891229149302786.json, 视频生成/图生视频/跑高精细的用这个动作迁移，动作高仿，需要高显存跑_2056901108127330305.json, 视频生成/图生视频/跑高精细的用这个动作迁移，还是这个版本动作模仿的好_2074305725089804289.json, 视频生成/图生视频/高精动作模仿 只模仿动作跳舞模仿 1：1复刻动作_2078408880727609346.json, 视频生成/图生视频/高精动作模仿 只模仿动作跳舞模仿 1：1复刻动作_2078464035640668161.json, 视频生成/图生视频/高精动作模仿 只模仿动作跳舞模仿 1：1复刻动作_2099818962723889154.json, 视频生成/图生视频/高精动作模仿 只模仿动作跳舞模仿 1：1复刻动作_2099839308415979522.json, 视频生成/图生视频/高精动作模仿_2080183256737210370.json, 视频生成/图生视频/高精动作模仿，只模仿动作，1：1复刻动作_2077952800755118081.json, 视频生成/图生视频/高精动作模仿，只模仿动作，1：1复刻动作_2078675405703307266.json, 视频生成/图生视频/高精细1_1复刻动作迁移，动作模仿plus版_2084239498350776322.json, 视频生成/图生视频/高精细1：1复刻动作模仿，动作迁移_2078075351011520514.json, 视频生成/图生视频/高质量动作迁移人物精细 高级强化版_2083007472301858818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_131
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/修仙-漫剧图生视频优化版_2014595984575176706.json、视频生成/图生视频/水池高清特效_2014865724992393217.json、视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027295499975397377.json、视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027312644432076802.json、视频生成/图生视频/漫剧分镜视频 Real AI video リアルAIビデオ_2027802000825524225.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/【动作迁移】wan22animate_单人版_2098717884812976129.json、视频生成/图生视频/动作迁移_2045891229149302786.json、视频生成/图生视频/跑高精细的用这个动作迁移，动作高仿，需要高显存跑_2056901108127330305.json、视频生成/图生视频/跑高精细的用这个动作迁移，还是这个版本动作模仿的好_2074305725089804289.json、视频生成/图生视频/高精动作模仿 只模仿动作跳舞模仿 1：1复刻动作_2078408880727609346.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：强结论
-- **平均知识覆盖**：74%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageFromBatch+`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+全部 14 个 workflow 都包含：
+- `BatchCount+`
+- `CLIPVisionLoader`
+- `DrawViTPose`
+- `ImageBatch`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `PreviewImage`
-- `PrimitiveFloat`
-- `SetNode`
-- `Text`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `RepeatImageBatch`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy float`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `JDCN_StringToList` —— 13/15 个有
-- `JWInteger` —— 13/15 个有
-- `easy indexAnything` —— 13/15 个有
-- `ImageConcatMulti` —— 2/15 个有
-- `ImageResizeKJv2` —— 2/15 个有
-- `Int` —— 2/15 个有
-- `LoadVQVAE` —— 2/15 个有
-- `RH_Captioner` —— 2/15 个有
-- `RunningHub Deepcleaner` —— 2/15 个有
-- `TextConcatenate_UTK` —— 2/15 个有
-- `easy showAnything` —— 2/15 个有
-- `Load Cache` —— 1/15 个有
-- `Load Lora` —— 1/15 个有
-- `LoadDust3r` —— 1/15 个有
-- `Ruyi_LoadLora` —— 1/15 个有
-- `[Comfy3D] Load 3DGS` —— 1/15 个有
-- `load_FLUX` —— 1/15 个有
-- `load_SD35` —— 1/15 个有
+- `GetNode` —— 13/14 个有
+- `MemoryCleaner` —— 13/14 个有
+- `SetNode` —— 13/14 个有
+- `VRAMReserver` —— 13/14 个有
+- `Int` —— 12/14 个有
+- `RHHiddenNodes` —— 12/14 个有
+- `VHS_LoadVideo` —— 12/14 个有
+- `easy cleanGpuUsed` —— 12/14 个有
+- `easy showAnything` —— 12/14 个有
+- `VHS_LoadVideoFFmpeg` —— 2/14 个有
+- `easy int` —— 2/14 个有
+- `CM_FloatToInt` —— 1/14 个有
+- `CR Text` —— 1/14 个有
+- `CreateVideo` —— 1/14 个有
+- `ImageConcatMulti` —— 1/14 个有
+- `Label (rgthree)` —— 1/14 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/14 个有
+- `SDPoseOODLoader` —— 1/14 个有
+- `SDPoseOODProcessor` —— 1/14 个有
+- `SaveVideo` —— 1/14 个有
+- `easy promptConcat` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 15 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 15 | 100% |
-| 采样算法 | 1 | 1 - 1 | 15 | 100% |
-| 调度器 | euler | - | 15 | 100% |
-| 重绘幅度 | simple | - | 15 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -80,8 +85,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，15 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，15 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，15 个样本，一致性 100%
-- 重绘幅度 最常用 simple，15 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

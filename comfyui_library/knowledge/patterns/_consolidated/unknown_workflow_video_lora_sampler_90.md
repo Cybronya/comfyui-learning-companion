@@ -1,81 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_90
 type: Unknown Workflow
-frequency: 18
+frequency: 17
 level: moderate
-coverage: 0.588389
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything]
+coverage: 0.806059
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/Animate最强人物角色替换_1996874171823136769.json, 平台全量/WAN-Animate 角色替换+动作迁移+面部表情参考_1982646100882538497.json, 平台全量/【KJ加速版】Wan2.2-Animate 角色替换+动作迁移+面部表情参考_1984791110570688513.json, 平台全量/【角色替换】Wan2.2-Animate-视频换脸+换装 最强+视频人物角色替换_1981598271481225217.json, 平台全量/【角色替换】Wan2.2-Animate-视频换脸+换装 浮云1.7_2008750095314980866.json, 平台全量/视频-动作声音迁移Animate Wan2.2_1976300726697725954.json, 平台全量/🤩Animate最强王炸—人物角色替换🤩_1970370563443204097.json, 数字人/数字人/最强王炸—电商人物角色替换🤩_1971904577454993410.json, 视频生成/图生视频/Animate人物角色替换_1970083557895008257.json, 视频生成/图生视频/Animate最强角色替换_1978476869785899009.json, 视频生成/图生视频/Wan2.2 Animate最强 视频人物角色替换V2版 15秒以上稳如老狗 工作流_1980483253431877633.json, 视频生成/图生视频/人物角色替换Animate    V2版_1979152858195070977.json, 视频生成/图生视频/人物角色替换Animate_1971412866429599745.json, 视频生成/图生视频/人物角色替换_2032500996332593153.json, 视频生成/图生视频/极品！！！全能视频S人物替换实现一致性 Animate V2_2039247939687686145.json, 视频生成/图生视频/视频人物替换、爆款复刻-3.0_1975554150689845250.json, 视频生成/图生视频/🤩Animate最强王炸—人物角色替换V2版🤩_1975078914978656258.json, 视频生成/图生视频/🤩Animate最强王炸—人物角色替换🤩_1969652122914594818.json]
+members: [数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-上传图片+视频_2005461284432867330.json, 数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-上传图片+视频_2040435287494496257.json, 数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-让视频中人物对口型_2043637832853495809.json, 数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）_1987115917920374785.json, 数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）_2040422606603554817.json, 数字人/数字人/Infinite Talk数字人唱歌（无限时长+高动态）_1984893484589072385.json, 数字人/数字人/Infinite Talk极速高质量提示词调度动作控制图生视频数字人_1989385286754947073.json, 数字人/数字人/multitalk自用2_2031936631246163970.json, 数字人/数字人/新版极速Infinite Talk图片数字人--自动计算_1988907314344243202.json, 视频生成/图生视频/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-上传图片+视频_2007804749827022850.json, 视频生成/图生视频/Infinite Talk数字人唱歌（无限时长+高动态）_1969431253688721410.json, 视频生成/图生视频/Infinite talk数字人动态加强高版（Lightx2v+Rcm多重注意力机制）_1984675339228102657.json, 视频生成/图生视频/数字人对口型唱歌-Infinite Talk_2050200100416311298.json, 视频生成/图生视频/新版极速Infinite Talk图片数字人--自动计算_1988898686707044353.json, 视频生成/图生视频/爆火的西游记人物唱歌 ， Infinite talk 数字人（循环流不爆显存）除非到了平台的时长限制_1980902275004678145.json, 视频生成/图生视频/自动计算帧数！Infinite Talk极速数字人。  基于T8star-Aix版本改造_1984094280551694338.json, 音频生成/音频生成/Infinite Talk-对口型说话+唱歌无限时长+高动态_2021031552670507010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_90
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（平台全量/Animate最强人物角色替换_1996874171823136769.json、平台全量/WAN-Animate 角色替换+动作迁移+面部表情参考_1982646100882538497.json、平台全量/【KJ加速版】Wan2.2-Animate 角色替换+动作迁移+面部表情参考_1984791110570688513.json、平台全量/【角色替换】Wan2.2-Animate-视频换脸+换装 最强+视频人物角色替换_1981598271481225217.json、平台全量/【角色替换】Wan2.2-Animate-视频换脸+换装 浮云1.7_2008750095314980866.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-上传图片+视频_2005461284432867330.json、数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-上传图片+视频_2040435287494496257.json、数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）-让视频中人物对口型_2043637832853495809.json、数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）_1987115917920374785.json、数字人/数字人/Infinite Talk-数字人对口型唱歌（无限时长+高动态）_2040422606603554817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 17 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 17/18 个有
-- `CR Text` —— 17/18 个有
-- `DrawMaskOnImage` —— 17/18 个有
-- `EmptyImage` —— 17/18 个有
-- `GrowMask` —— 17/18 个有
-- `ImageConcatMulti` —— 17/18 个有
-- `ImpactInt` —— 17/18 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 17/18 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 17/18 个有
-- `SimpleMath+` —— 17/18 个有
-- `easy promptConcat` —— 17/18 个有
-- `DrawViTPose` —— 12/18 个有
-- `OnnxDetectionModelLoader` —— 12/18 个有
-- `PoseAndFaceDetection` —— 12/18 个有
-- `RH_LLMAPI_NODE` —— 11/18 个有
-- `AudioSeparation` —— 7/18 个有
-- `DownloadAndLoadWav2VecModel` —— 7/18 个有
-- `MultiTalkModelLoader` —— 7/18 个有
-- `MultiTalkWav2VecEmbeds` —— 7/18 个有
-- `DWPreprocessor` —— 6/18 个有
-- `FaceMaskFromPoseKeypoints` —— 6/18 个有
-- `ImageCropByMaskAndResize` —— 6/18 个有
-- `PixelPerfectResolution` —— 6/18 个有
-- `RH_Captioner` —— 6/18 个有
-- `easy cleanGpuUsed` —— 6/18 个有
-- `Note Plus (mtb)` —— 3/18 个有
-- `CR Prompt Text` —— 1/18 个有
-- `JWInteger` —— 1/18 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/18 个有
-- `PoseRetargetPromptHelper` —— 1/18 个有
-- `SaveAudioMP3` —— 1/18 个有
+- `GetImageSizeAndCount` —— 16/17 个有
+- `LoadImage` —— 16/17 个有
+- `PreviewAny` —— 16/17 个有
+- `SimpleMath+` —— 16/17 个有
+- `ToInt` —— 16/17 个有
+- `SoundFlow_GetLength` —— 12/17 个有
+- `Display Int (rgthree)` —— 11/17 个有
+- `GetNode` —— 11/17 个有
+- `SetNode` —— 11/17 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/17 个有
+- `Float` —— 8/17 个有
+- `ImageResizeKJv2` —— 8/17 个有
+- `Int` —— 8/17 个有
+- `JWInteger` —— 8/17 个有
+- `AddLabel` —— 5/17 个有
+- `RH_GetAudioDuration` —— 4/17 个有
+- `TTResolutionSelector` —— 4/17 个有
+- `VHS_LoadVideo` —— 4/17 个有
+- `easy int` —— 4/17 个有
+- `easy showAnything` —— 4/17 个有
+- `ImageConcatMulti` —— 3/17 个有
+- `Bjornulf_ShowInt` —— 1/17 个有
+- `JWFloat` —— 1/17 个有
+- `Label (rgthree)` —— 1/17 个有
 
 ## 典型参数
 

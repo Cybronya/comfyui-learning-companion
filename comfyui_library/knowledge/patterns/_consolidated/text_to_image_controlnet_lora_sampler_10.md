@@ -1,82 +1,108 @@
 ---
 name: text_to_image_controlnet_lora_sampler_10
 type: Text To Image
-frequency: 4
-level: moderate
-coverage: 0.921
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, EmptyLatentImage, ImageResize+, KSampler, LoadImage, LoraLoader, PreviewImage, SaveImage, VAEDecode, Zoe-DepthMapPreprocessor]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.855333
+common_nodes: [Bookmark (rgthree), CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetLoader, CropWithPadInfo_EditUtils, DWPreprocessor, DrawMaskOnImage, EmptyLatentImage, GetImageSize, GrowMaskWithBlur, Image Comparer (rgthree), ImageScaleBy, JjkText, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadRembgByBiRefNetModel, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, PrimitiveBoolean, PrimitiveStringMultiline, QwenEditOutputExtractor_EditUtils, QwenEditTextEncode_EditUtils, ReferenceLatent, RembgByBiRefNetAdvanced, SaveImage, SetUnionControlNetType, SolidMask, UNETLoader, VAEDecode, VAELoader, ZML_SelectTextV2, easy ifElse, easy isNone, easy sam3ImageSegmentation, easy sam3ModelLoader, llama_cpp_instruct_adv, llama_cpp_model_loader, mxSlider, solarL_SaveImagesToZip, ttN concat, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/毛毡风格化_1797854717544624130.json, 平台全量/艺术字体_1778261827810025474.json, 平台全量/艺术插画制作_1790258952844464130.json, 平台全量/艺术海报设计_1782682521612365825.json]
+members: [图片生成/图生图/QE2511 人物换装终极版｜上传原图服装图直接跑｜图生图_2096860144335417345.json, 图片生成/图生图/QE2511人物换装终极版｜角色一致性图生图生成_2096670787649490946.json, 图片生成/图生图/人物换装终QE2511_极版ENG角色一致性图生图_2082024707943129090.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_lora_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/毛毡风格化_1797854717544624130.json、平台全量/艺术字体_1778261827810025474.json、平台全量/艺术插画制作_1790258952844464130.json、平台全量/艺术海报设计_1782682521612365825.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QE2511 人物换装终极版｜上传原图服装图直接跑｜图生图_2096860144335417345.json、图片生成/图生图/QE2511人物换装终极版｜角色一致性图生图生成_2096670787649490946.json、图片生成/图生图/人物换装终QE2511_极版ENG角色一致性图生图_2082024707943129090.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Bookmark (rgthree)`
+- `CFGNorm`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
 - `ControlNetApplyAdvanced`
 - `ControlNetLoader`
+- `CropWithPadInfo_EditUtils`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
 - `EmptyLatentImage`
-- `ImageResize+`
+- `GetImageSize`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
+- `JjkText`
 - `KSampler`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoader`
+- `LoadRembgByBiRefNetModel`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveStringMultiline`
+- `QwenEditOutputExtractor_EditUtils`
+- `QwenEditTextEncode_EditUtils`
+- `ReferenceLatent`
+- `RembgByBiRefNetAdvanced`
 - `SaveImage`
+- `SetUnionControlNetType`
+- `SolidMask`
+- `UNETLoader`
 - `VAEDecode`
-- `Zoe-DepthMapPreprocessor`
+- `VAELoader`
+- `ZML_SelectTextV2`
+- `easy ifElse`
+- `easy isNone`
+- `easy sam3ImageSegmentation`
+- `easy sam3ModelLoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `mxSlider`
+- `solarL_SaveImagesToZip`
+- `ttN concat`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageUpscaleWithModel` —— 3/4 个有
-- `UpscaleModelLoader` —— 3/4 个有
-- `VAEEncode` —— 3/4 个有
-- `Canny` —— 2/4 个有
-- `IPAdapter` —— 2/4 个有
-- `IPAdapterUnifiedLoader` —— 2/4 个有
-- `Text Concatenate` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `WD14Tagger|pysssss` —— 2/4 个有
-- `DWPreprocessor` —— 1/4 个有
+- `easy imageSizeBySide` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 800 | 512 - 960 | 4 | 79% |
-| 高度 | 1044 | 512 - 1064 | 4 | 74% |
-| ControlNet 权重 | 0.6 | 0.5 - 1 | 4 | 72% |
-| 采样步数 | 25 | 20 - 30 | 4 | 80% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 4 | 100% |
-| 采样算法 | dpmpp_2m | - | 4 | 50% |
-| 调度器 | karras | - | 4 | 100% |
-| 重绘幅度 | 0.65 | 0.4 - 1 | 4 | 68% |
-| LoRA 模型强度 | 0.5 | 0.2 - 1 | 4 | 42% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| ControlNet 权重 | 3 | 2 - 3 | 3 | 82% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 800，观测区间 512 - 960，4 个样本
-- 高度 中位数 1044，观测区间 512 - 1064，4 个样本
-- ControlNet 权重 中位数 0.6，观测区间 0.5 - 1，4 个样本
-- 采样步数 中位数 25，观测区间 20 - 30，4 个样本，取值集中（一致性 80%）
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，4 个样本，一致性 50%
-- 调度器 最常用 karras，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.65，观测区间 0.4 - 1，4 个样本
-- LoRA 模型强度 中位数 0.5，观测区间 0.2 - 1，4 个样本，取值分散，一致性仅 42%
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 3，观测区间 2 - 3，3 个样本，取值集中（一致性 82%）
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

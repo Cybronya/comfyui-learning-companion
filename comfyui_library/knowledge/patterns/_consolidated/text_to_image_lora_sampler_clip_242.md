@@ -3,51 +3,76 @@ name: text_to_image_lora_sampler_clip_242
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.8695
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.90025
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Flux2Scheduler, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/GP·T2.5搭配全能图片V2，角色一致性文生图图生图三件套_2113806381106163713.json, 图片生成/图生图/全能图片G2.5全能图片V2文生图图生图处理生成工具_2102151973511454722.json, 图片生成/图生图/全能图片G2.5换装 虚拟试衣图生图处理工具_2099929509331034114.json, 图片生成/图生图/全能图片G2.5换装+虚拟试衣图生图处理工具_2101571060582928385.json, 图片生成/图生图/平铺图白底精修处理｜抠图去水印图生图商品优化_2097056787252989954.json, 图片生成/图生图/黑鹤出品｜SeedVR2高清放大工作流｜图生图画质提升必备工具_2101846943638056961.json, 图片生成/文生图/GP·T2.5搭配全能图片V2，角色一致性文生图图生图三件套_2110455043114758145.json, 图片生成/文生图/全能图片全能图片G2.5文生图与图生图 角色一致性高质量创作_2098123716503891970.json]
+members: [图片生成/图生图/Flux2-Klein智能扩图｜图片外补全图生图工作流_2093112866625900545.json, 图片生成/图生图/Flux2Klein 4B加速版多图编辑 高效换头换脸_2098106416744722433.json, 图片生成/图生图/Flux2Klein多图编辑4B加速｜写实换头换脸图生图_2090541141182734337.json, 图片生成/图生图/Flux2Klein换内衣｜图生图服装替换_2089687838047694850.json, 图片生成/图生图/Klein 9B商业级光影融合工作流零偏移处理_2100306858379669505.json, 图片生成/图生图/PS级扩图无需参数，角色一致性图生图扩图方案_2110823025108148226.json, 图片生成/图生图/flux-2-klein-9b去文字利器｜图生图轻松抹除画面文字_2105226424310394881.json, 图片生成/图生图/皮带纹路质感优化 lora增强光感清晰度与细节_2098300203974619138.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_242
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/GP·T2.5搭配全能图片V2，角色一致性文生图图生图三件套_2113806381106163713.json、图片生成/图生图/全能图片G2.5全能图片V2文生图图生图处理生成工具_2102151973511454722.json、图片生成/图生图/全能图片G2.5换装 虚拟试衣图生图处理工具_2099929509331034114.json、图片生成/图生图/全能图片G2.5换装+虚拟试衣图生图处理工具_2101571060582928385.json、图片生成/图生图/平铺图白底精修处理｜抠图去水印图生图商品优化_2097056787252989954.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein智能扩图｜图片外补全图生图工作流_2093112866625900545.json、图片生成/图生图/Flux2Klein 4B加速版多图编辑 高效换头换脸_2098106416744722433.json、图片生成/图生图/Flux2Klein多图编辑4B加速｜写实换头换脸图生图_2090541141182734337.json、图片生成/图生图/Flux2Klein换内衣｜图生图服装替换_2089687838047694850.json、图片生成/图生图/Klein 9B商业级光影融合工作流零偏移处理_2100306858379669505.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `Flux2Scheduler`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 7/8 个有
-- `孤海注释` —— 7/8 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 6/8 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 5/8 个有
-- `RH_RhartImageG2ImageToImage` —— 4/8 个有
-- `SeedVR2` —— 4/8 个有
-- `SeedVR2BlockSwap` —— 4/8 个有
-- `easy int` —— 3/8 个有
-- `RH_RhartImageNNb21ImageToImage` —— 2/8 个有
-- `PreviewImage` —— 1/8 个有
-- `SaveImageAndMetadata_` —— 1/8 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `EmptyFlux2LatentImage` —— 5/8 个有
+- `CR Text` —— 4/8 个有
+- `Image Comparer (rgthree)` —— 4/8 个有
+- `ImageScaleToTotalPixels` —— 4/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `GetImageSize` —— 3/8 个有
+- `ImageConcanate` —— 3/8 个有
+- `JWFloat` —— 3/8 个有
+- `ImagePadForOutpaint` —— 2/8 个有
+- `ImageSmartSharpen+` —— 2/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `Seed (rgthree)` —— 2/8 个有
+- `easy int` —— 2/8 个有
+- `CR Text Input Switch (4 way)` —— 1/8 个有
+- `DifferentialDiffusion` —— 1/8 个有
+- `ImageResize+` —— 1/8 个有
+- `ImpactSwitch` —— 1/8 个有
+- `InpaintModelConditioning` —— 1/8 个有
+- `InspyrenetRembg` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
+- `ShowText` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `TextCombinerTwo` —— 1/8 个有
+- `easy imageColorMatch` —— 1/8 个有
+- `easy imageScaleDownToSize` —— 1/8 个有
+- `easy imageSize` —— 1/8 个有
 
 ## 典型参数
 

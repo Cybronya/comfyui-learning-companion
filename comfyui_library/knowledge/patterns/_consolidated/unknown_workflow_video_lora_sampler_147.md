@@ -1,83 +1,92 @@
 ---
 name: unknown_workflow_video_lora_sampler_147
 type: Unknown Workflow
-frequency: 14
+frequency: 13
 level: moderate
-coverage: 0.906643
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, H3SigmaRefiner, ImageFromBatch, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByShorterEdge, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.606769
+common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, GetNode, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, SimpleCalculatorKJ, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/海螺H3_人物替换专用流v1.5_2113448330415140866.json, 图片生成/图生图/海螺H3_人物替换专用流v1.5_2114638887707561986.json, 图片生成/图生图/海螺H3_人物替换专用流v1.5_2115297585513717762.json, 平台全量/H3人物替换专用流v1.5_整理_2113195063688908801.json, 平台全量/MINIMAX-H3 动作迁移，人物替换_2087467565630185474.json, 平台全量/MINIMAX-H3 动作迁移，人物替换_2118984204234092545.json, 平台全量/minimaxH3 人物替换_2115322147085307905.json, 平台全量/海螺H3 人物替换专用流v2.5_2109427848829300738.json, 数字人/数字人/MiNimax超写实人物替换丨动作迁移_2115414771980922881.json, 视频生成/图生视频/H3 人物替换专用流（村头东 二狗子流）_2109969385438932994.json, 视频生成/图生视频/MiniMax H3 超级人物替换专用工作流V3.0_2115634910269624321.json, 视频生成/图生视频/MiniMax_H3_超级人物替换专用工作流V3.0_2116043600340537346.json, 视频生成/图生视频/海螺H3_人物替换专用流v1.5_2113771024394309634.json, 视频生成/图生视频/海螺H3_人物替换专用流v1.5_2113784739583848450.json]
+members: [视频生成/图生视频/SCAIL 动作迁移_2038819844543483905.json, 视频生成/图生视频/SCAIL 动作迁移（高清版）_2004486159680106498.json, 视频生成/图生视频/SCAIL 动作迁移（高清版）_2015614153280462849.json, 视频生成/图生视频/SCAIL_3D姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2001927280328884225.json, 视频生成/图生视频/SCAIL_pose_control：丝滑动作迁移-适配各种风格也适合多人_2003448511268069377.json, 视频生成/图生视频/SCAIL动作迁移 单人_多人统一版_2073307615077163010.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2011341601720766466.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2041436850325295106.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2042104629911101442.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2054250246871494658.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人多动物同时跳舞_2048599310039785473.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈_2049441031812288514.json, 视频生成/图生视频/萌宠跳舞（高清版）需要48gPlus运行_2013817943620067329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_147
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/海螺H3_人物替换专用流v1.5_2113448330415140866.json、图片生成/图生图/海螺H3_人物替换专用流v1.5_2114638887707561986.json、图片生成/图生图/海螺H3_人物替换专用流v1.5_2115297585513717762.json、平台全量/H3人物替换专用流v1.5_整理_2113195063688908801.json、平台全量/MINIMAX-H3 动作迁移，人物替换_2087467565630185474.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/SCAIL 动作迁移_2038819844543483905.json、视频生成/图生视频/SCAIL 动作迁移（高清版）_2004486159680106498.json、视频生成/图生视频/SCAIL 动作迁移（高清版）_2015614153280462849.json、视频生成/图生视频/SCAIL_3D姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2001927280328884225.json、视频生成/图生视频/SCAIL_pose_control：丝滑动作迁移-适配各种风格也适合多人_2003448511268069377.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `H3SigmaRefiner`
-- `ImageFromBatch`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
+全部 13 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadNLFModel`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResizeImagesByShorterEdge`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
+- `RenderNLFPoses`
+- `SetNode`
+- `SimpleCalculatorKJ`
 - `VHS_VideoCombine`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVConcatAVLatent` —— 13/14 个有
-- `LTXVSeparateAVLatent` —— 13/14 个有
-- `MinimaxH3LatentUpscaler3D` —— 13/14 个有
-- `ModelAttentionBackend` —— 13/14 个有
-- `ModelPreviewOverrideKJ` —— 13/14 个有
-- `VAEDecodeAudio` —— 13/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 12/14 个有
-- `VHS_VideoInfo` —— 12/14 个有
-- `ImageExpandBatch+` —— 11/14 个有
-- `MiniMaxH3AddGuide` —— 11/14 个有
-- `TrimAudioDuration` —— 11/14 个有
-- `VHS_LoadVideoFFmpeg` —— 11/14 个有
-- `GetImageSize` —— 10/14 个有
-- `ImageBatch` —— 10/14 个有
-- `ImageBatchMulti` —— 10/14 个有
-- `RepeatImageBatch` —— 10/14 个有
-- `easy forLoopEnd` —— 10/14 个有
-- `easy forLoopStart` —— 10/14 个有
-- `AudioConcat` —— 9/14 个有
-- `PreviewImage` —— 5/14 个有
-- `EmptyImage` —— 4/14 个有
-- `VHS_LoadVideo` —— 3/14 个有
-- `easy showAnything` —— 2/14 个有
-- `忽略多组孤海` —— 2/14 个有
-- `LatentUpscaleModelLoader` —— 1/14 个有
-- `MiniMaxH3LatentUpscaleWithModel` —— 1/14 个有
-- `PathchSageAttentionKJ` —— 1/14 个有
-- `VideoTemporalCrop` —— 1/14 个有
+- `INTConstant` —— 12/13 个有
+- `ImageResizeKJv2` —— 12/13 个有
+- `VHS_LoadVideo` —— 12/13 个有
+- `WanVideoEncode` —— 12/13 个有
+- `WanVideoUni3C_ControlnetLoader` —— 12/13 个有
+- `WanVideoUni3C_embeds` —— 12/13 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 10/13 个有
+- `DWPreprocessor` —— 10/13 个有
+- `ImageConcatMulti` —— 10/13 个有
+- `WanVideoTorchCompileSettings` —— 9/13 个有
+- `FloatConstant` —— 8/13 个有
+- `JjkText` —— 7/13 个有
+- `Int` —— 4/13 个有
+- `RHHiddenNodes` —— 4/13 个有
+- `intToFloat _O` —— 3/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/13 个有
+- `AddLabel` —— 1/13 个有
+- `CR Prompt Text` —— 1/13 个有
+- `GroundingDinoModelLoader_SDPose` —— 1/13 个有
+- `ImpactSwitch` —— 1/13 个有
+- `Label (rgthree)` —— 1/13 个有
+- `PixelPerfectResolution` —— 1/13 个有
+- `RIFE VFI` —— 1/13 个有
+- `SDPoseOODLoader` —— 1/13 个有
+- `SDPoseOODProcessor` —— 1/13 个有
+- `TwoWaySwitch` —— 1/13 个有
+- `VHS_LoadVideoFFmpeg` —— 1/13 个有
+- `VHS_VideoInfo` —— 1/13 个有
+- `YOLOModelLoader` —— 1/13 个有
+- `easy imageSize` —— 1/13 个有
+- `easy int` —— 1/13 个有
+- `easy showAnything` —— 1/13 个有
+- `ttN text` —— 1/13 个有
 
 ## 典型参数
 

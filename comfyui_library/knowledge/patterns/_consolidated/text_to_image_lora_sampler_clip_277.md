@@ -3,27 +3,28 @@ name: text_to_image_lora_sampler_clip_277
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.863125
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8965
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax H3超级长视频1-10顺序生成 自动合并输出_2098819352618426369.json, 视频生成/文生视频/全模态多参考视频生成器｜MiniMax H3视频生成直出_2092021354127253506.json, 视频生成/文生视频/全模态多参考视频生成｜MiniMax H3时间线控制+独立音频_2091205063564943362.json, 视频生成/文生视频/六段式自动生成自动校验MiniMax H3 Ref2VA剧本直出9图参考成片原生音画同步_2088355373936893954.json, 视频生成/文生视频/多参考全模态视频生成｜MiniMax H3文图视频生_2092207503110135809.json, 视频生成/文生视频/多素材联合参考video_minimax_h3_r2v_2085451709555499009.json, 视频生成/文生视频/官方流优化版｜H3 文生视频 图生视频全能直出_2089335705678991361.json, 视频生成/文生视频/官方长视频工作流｜H3文生图生视频生成直出_2092731706536194050.json]
+members: [视频生成/图生视频/自行车图生视频测试工作流，图生视频处理方案_2106875364315324417.json, 视频生成/图生视频/自行车图生视频测试工作流，图生视频处理方案_2109447261494272002.json, 视频生成/文生视频/H3参考生视频量化加速版文本图像音频视频多模态_2100678580580732929.json, 视频生成/文生视频/全模态多参考视频生成器｜MiniMax H3一键直出_2090902980487892993.json, 视频生成/文生视频/全模态多参考视频生成器｜MiniMax H3文生图生视频_2092019899022528514.json, 视频生成/文生视频/全模态多参考视频生成器｜MiniMax H3视频生成直出_2092021354127253506.json, 视频生成/文生视频/全模态多参考视频生成｜MiniMax H3时间线控制+独立音频_2091205063564943362.json, 视频生成/文生视频/量化加速参考生视频｜MiniMaxH3 文本图像音视频全参考_2089345982659121153.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_277
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3超级长视频1-10顺序生成 自动合并输出_2098819352618426369.json、视频生成/文生视频/全模态多参考视频生成器｜MiniMax H3视频生成直出_2092021354127253506.json、视频生成/文生视频/全模态多参考视频生成｜MiniMax H3时间线控制+独立音频_2091205063564943362.json、视频生成/文生视频/六段式自动生成自动校验MiniMax H3 Ref2VA剧本直出9图参考成片原生音画同步_2088355373936893954.json、视频生成/文生视频/多参考全模态视频生成｜MiniMax H3文图视频生_2092207503110135809.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/自行车图生视频测试工作流，图生视频处理方案_2106875364315324417.json、视频生成/图生视频/自行车图生视频测试工作流，图生视频处理方案_2109447261494272002.json、视频生成/文生视频/H3参考生视频量化加速版文本图像音频视频多模态_2100678580580732929.json、视频生成/文生视频/全模态多参考视频生成器｜MiniMax H3一键直出_2090902980487892993.json、视频生成/文生视频/全模态多参考视频生成器｜MiniMax H3文生图生视频_2092019899022528514.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
@@ -31,44 +32,40 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 7/8 个有
-- `LoadAudio` —— 7/8 个有
-- `VAEDecodeAudio` —— 7/8 个有
-- `BasicScheduler` —— 6/8 个有
-- `ComfySwitchNode` —— 3/8 个有
-- `PrimitiveBoolean` —— 3/8 个有
-- `VHS_LoadVideo` —— 3/8 个有
-- `ManualSigmas` —— 2/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/8 个有
-- `ModelPreviewOverrideKJ` —— 2/8 个有
-- `AudioConcatenate` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `GetImageRangeFromBatch` —— 1/8 个有
-- `ImageBatch` —— 1/8 个有
-- `MiniMaxH3AVDecodeT8` —— 1/8 个有
-- `MiniMaxH3AddGuide` —— 1/8 个有
-- `MiniMaxH3BlockCacheT8` —— 1/8 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/8 个有
-- `RHLLMChatNode` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `VRAM_Debug` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
+- `孤海注释` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 6/8 个有
+- `GetVideoComponents` —— 4/8 个有
+- `LoadVideo` —— 4/8 个有
+- `SaveImage` —— 3/8 个有
+- `BlockSparseAttention` —— 2/8 个有
+- `MiniMaxH3MotionContext` —— 2/8 个有
+- `MiniMaxH3MotionContextChain` —— 2/8 个有
+- `MiniMaxH3MotionContextLoadLatent` —— 2/8 个有
+- `MiniMaxH3MotionContextSaveLatent` —— 2/8 个有
+- `MiniMaxH3MotionContextTrim` —— 2/8 个有
+- `ModelAttentionBackend` —— 2/8 个有
+- `Text Multiline` —— 2/8 个有
+- `VHS_LoadVideo` —— 2/8 个有
+- `ViggleAnimateConditioningWindowed` —— 2/8 个有
+- `EmptyImage` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
 
 ## 典型参数
 

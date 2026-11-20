@@ -3,61 +3,88 @@ name: text_to_image_upscale_lora_sampler_31
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.855375
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerAdvanced, LayerFilter: GaussianBlur, LoadImage, LoraLoaderModelOnly, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy imageSizeByLongerSide, solarL_SaveImagesToZip, 图像缩放V2_孤海, 孤海注释, 数学运算_孤海]
+coverage: 0.905375
+common_nodes: [AILab_QwenVL, AdvancedLyingSigmaSampler, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, DisableNoise, EmptyLatentImage, FlipSigmas, Float, FluxDeGuidance, FluxForwardODESampler, FluxReverseODESampler, Get resolution [Crystools], Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageUpscaleWithModel, InFluxModelSamplingPred, JWFloat, JjkText, KSampler, KSamplerSelect, Latent Noise Injection, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, OutFluxModelSamplingPred, PreviewImage, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UNETLoader_Any, UltimateSDUpscaleCustomSample, Upscale Model Loader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageColorMatch, easy int, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/VOSR2+SEEDVR2极速修复组合｜人像高清放大细节拉满_2103674542743965697.json, 图片生成/图生图/VOSR2+SEEDVR2极速高清修复图生图处理工具_2102178943565656066.json, 图片生成/图生图/VOSR2加SEEDVR2极速修复，图生图高清放大增强_2111242477129785345.json, 图片生成/图生图/VOSR2加SEEDVR2极速修复，精修高清放大增强_2111950792403021825.json, 图片生成/图生图/VOSR2加SEEDVR2极速高清修复 视频图像分辨率提升画质增强_2108605537767219201.json, 图片生成/图生图/极速高清修复画质增强 图片分辨率提升细节恢复方案_2109789400812048386.json, 图片生成/文生图/VOSR2+SeedVR2双模型高清修复｜放大细节增强工作流_2108436387690278913.json, 视频生成/图生视频/VOSR2+SEEDVR2极速高清修复视频处理生成工具_2104440069619802114.json]
+members: [图片生成/图生图/Z-image+Klein+SeedVR2去AI感｜商业级图片真实感放大_2100888588719312897.json, 图片生成/图生图/Z-image加Klein加SeedVR2去AI感商业级图片真实感放大_2099939087326208001.json, 图片生成/图生图/Z-image加Klein加SeedVR2去AI感商业级图片真实感放大_2100174854598254593.json, 图片生成/图生图/Z-image加Klein加SeedVR2去AI感商业级图片真实感放大_2100554114043305985.json, 图片生成/图生图/Z-image加Klein加SeedVR2去AI感商业级图片真实感放大_2101863276178141185.json, 图片生成/图生图/最真实的高清放大工作流，海报制作图生图利器_2111936649461583873.json, 图片生成/图生图/高清放大真实细节精修｜画质增强图生图工作流_2095561199550291970.json, 图片生成/文生图/高清放大真实细节精修｜画质增强图生图工作流（干净02）_2104408365530177537.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_31
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/VOSR2+SEEDVR2极速修复组合｜人像高清放大细节拉满_2103674542743965697.json、图片生成/图生图/VOSR2+SEEDVR2极速高清修复图生图处理工具_2102178943565656066.json、图片生成/图生图/VOSR2加SEEDVR2极速修复，图生图高清放大增强_2111242477129785345.json、图片生成/图生图/VOSR2加SEEDVR2极速修复，精修高清放大增强_2111950792403021825.json、图片生成/图生图/VOSR2加SEEDVR2极速高清修复 视频图像分辨率提升画质增强_2108605537767219201.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Z-image+Klein+SeedVR2去AI感｜商业级图片真实感放大_2100888588719312897.json、图片生成/图生图/Z-image加Klein加SeedVR2去AI感商业级图片真实感放大_2099939087326208001.json、图片生成/图生图/Z-image加Klein加SeedVR2去AI感商业级图片真实感放大_2100174854598254593.json、图片生成/图生图/Z-image加Klein加SeedVR2去AI感商业级图片真实感放大_2100554114043305985.json、图片生成/图生图/Z-image加Klein加SeedVR2去AI感商业级图片真实感放大_2101863276178141185.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `AILab_QwenVL`
+- `AdvancedLyingSigmaSampler`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
+- `ConditioningZeroOut`
+- `DisableNoise`
 - `EmptyLatentImage`
+- `FlipSigmas`
+- `Float`
+- `FluxDeGuidance`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
+- `Get resolution [Crystools]`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
+- `InFluxModelSamplingPred`
+- `JWFloat`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LayerFilter: GaussianBlur`
+- `KSamplerSelect`
+- `Latent Noise Injection`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `NunchakuFluxDiTLoader`
+- `NunchakuTextEncoderLoader`
+- `OutFluxModelSamplingPred`
+- `PreviewImage`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
+- `UNETLoader_Any`
+- `UltimateSDUpscaleCustomSample`
+- `Upscale Model Loader`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEEncode`
 - `VAELoader`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
-- `easy imageSizeByLongerSide`
+- `easy cleanGpuUsed`
+- `easy imageColorMatch`
+- `easy int`
 - `solarL_SaveImagesToZip`
-- `图像缩放V2_孤海`
-- `孤海注释`
-- `数学运算_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `GoohaiUniversalSlider` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `GH_ImageVideoComparer` —— 4/8 个有
-- `Image Comparer (rgthree)` —— 4/8 个有
-- `ComfySwitchNode` —— 1/8 个有
-- `DF_Integer` —— 1/8 个有
-- `EmptyImage` —— 1/8 个有
-- `PrimitiveBoolean` —— 1/8 个有
+- `孤海注释` —— 5/8 个有
+- `EmptyImage` —— 4/8 个有
+- `LayerColor: RGB` —— 3/8 个有
 
 ## 典型参数
 
@@ -75,7 +102,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 33/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -86,4 +113,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 高发问题（33/8 个样本）：Steps较低可能导致细节不足

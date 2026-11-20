@@ -1,88 +1,108 @@
 ---
 name: text_to_image_lora_sampler_clip_280
 type: Text To Image
-frequency: 7
-level: weak
-coverage: 0.867143
-common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.782875
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/30.tonnie-Qwen image -Cn控制和重绘_2001784908882276353.json, 图片生成/图生图/87time # 36 Qwen CN 控制_1959935600843501569.json, 图片生成/图生图/Anima -深度控制动漫生成_2061785993358954498.json, 图片生成/图生图/Anima -线条控制动漫生成_2061793535317331970.json, 图片生成/图生图/Anima正式版-图生图工作流-反推提示词_2056974464365187073.json, 图片生成/图生图/Anima正式版-图生图工作流-反推提示词_2088250786076782594.json, 图片生成/图生图/Anima正式版图生图反推提示词-动漫角色美少女工作流_2087397362699427841.json]
+members: [视频生成/文生视频/全能插件双采1080p｜MiniMax H3 8步加速高清视频_2090562080675033089.json, 视频生成/文生视频/单采高质量加速版｜MiniMax H3去除人物油腻处理_2092550530987020289.json, 视频生成/文生视频/双采样V2版｜MinimaxH3文生图生视频全能高速生成_2089771004057972737.json, 视频生成/文生视频/双采样V2版｜MinimaxH3文生图生视频角色表演_2091658421383815170.json, 视频生成/文生视频/双采样高清提速V2｜MinimaxH3音画同步角色表演_2091828773837697025.json, 视频生成/文生视频/小脸不崩运动不糊｜H3高清优化版文生图生视频_2089773922295304193.json, 视频生成/文生视频/智能提示词优化｜海螺minimaxH3加速双采样高清放大工作流_2089801693700648962.json, 视频生成/文生视频/混合模型sigma强化潜空间放大｜minimaxH3高清直出不油腻_2091282726027616257.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_280
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/30.tonnie-Qwen image -Cn控制和重绘_2001784908882276353.json、图片生成/图生图/87time # 36 Qwen CN 控制_1959935600843501569.json、图片生成/图生图/Anima -深度控制动漫生成_2061785993358954498.json、图片生成/图生图/Anima -线条控制动漫生成_2061793535317331970.json、图片生成/图生图/Anima正式版-图生图工作流-反推提示词_2056974464365187073.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/全能插件双采1080p｜MiniMax H3 8步加速高清视频_2090562080675033089.json、视频生成/文生视频/单采高质量加速版｜MiniMax H3去除人物油腻处理_2092550530987020289.json、视频生成/文生视频/双采样V2版｜MinimaxH3文生图生视频全能高速生成_2089771004057972737.json、视频生成/文生视频/双采样V2版｜MinimaxH3文生图生视频角色表演_2091658421383815170.json、视频生成/文生视频/双采样高清提速V2｜MinimaxH3音画同步角色表演_2091828773837697025.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AIO_Preprocessor`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `PreviewImage`
-- `SaveImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
-- `AnimaLLLiteApply` —— 5/7 个有
-- `CR Prompt Text` —— 5/7 个有
-- `ShowText|pysssss` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
-- `ModelSamplingAuraFlow` —— 4/7 个有
-- `Image Comparer (rgthree)` —— 3/7 个有
-- `JoinStringMulti` —— 3/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/7 个有
-- `PainterFluxImageEdit` —— 3/7 个有
-- `RH_LLMAPI_Pro_Node` —— 3/7 个有
-- `easy imageColorMatch` —— 3/7 个有
-- `QwenImageDiffsynthControlnet` —— 2/7 个有
-- `llama_cpp_instruct_adv` —— 2/7 个有
-- `llama_cpp_model_loader` —— 2/7 个有
-- `JjkText` —— 1/7 个有
-- `Mask Fill Holes` —— 1/7 个有
-- `solarL_SaveImagesToZip` —— 1/7 个有
-- `孤海注释` —— 1/7 个有
+- `H3SigmaRefiner` —— 7/8 个有
+- `LTXVConcatAVLatent` —— 7/8 个有
+- `LTXVSeparateAVLatent` —— 7/8 个有
+- `SplitSigmas` —— 7/8 个有
+- `SolAttnMiniMax` —— 6/8 个有
+- `VHS_VideoCombine` —— 6/8 个有
+- `MiniMaxH3Unified` —— 5/8 个有
+- `PrimitiveFloat` —— 5/8 个有
+- `VAEDecodeAudio` —— 5/8 个有
+- `CR Text` —— 4/8 个有
+- `Label (rgthree)` —— 4/8 个有
+- `MinimaxH3LatentUpscalerNode3D` —— 4/8 个有
+- `PrimitiveStringMultiline` —— 4/8 个有
+- `ComfyMathExpression` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `GetNode` —— 3/8 个有
+- `LoadImage` —— 3/8 个有
+- `MiniMaxH3AVDecodeT8` —— 3/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/8 个有
+- `MinimaxH3LatentUpscaler3D` —— 3/8 个有
+- `SetNode` —— 3/8 个有
+- `CreateVideo` —— 2/8 个有
+- `SaveVideo` —— 2/8 个有
+- `ExtendIntermediateSigmas` —— 1/8 个有
+- `INTConstant` —— 1/8 个有
+- `MuyeTextEditOutput` —— 1/8 个有
+- `PathchSageAttentionKJ` —— 1/8 个有
+- `ResizeShortestToNode` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `StariAI-MiniMaxH3-Skill` —— 1/8 个有
+- `easy float` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 720 | 80 - 1024 | 7 | 57% |
-| 高度 | 1280 | 80 - 1536 | 7 | 51% |
-| 采样步数 | 8 | 4 - 8 | 7 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 7 | 18% |
-| 采样算法 | er_sde | - | 7 | 43% |
-| 调度器 | beta | - | 7 | 57% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
+| 采样算法 | er_sde | - | 8 | 100% |
+| 调度器 | beta | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 80 | 80 - 80 | 8 | 100% |
+| 高度 | 80 | 80 - 80 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 720，观测区间 80 - 1024，7 个样本
-- 高度 中位数 1280，观测区间 80 - 1536，7 个样本
-- 采样步数 中位数 8，观测区间 4 - 8，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，7 个样本，取值分散，一致性仅 18%
-- 采样算法 最常用 er_sde，7 个样本，一致性 43%
-- 调度器 最常用 beta，7 个样本，一致性 57%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（9/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，8 个样本，一致性 100%
+- 调度器 最常用 beta，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

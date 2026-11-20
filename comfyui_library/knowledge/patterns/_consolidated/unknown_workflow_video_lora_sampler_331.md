@@ -1,78 +1,106 @@
 ---
 name: unknown_workflow_video_lora_sampler_331
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.87
-common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, Fast Groups Bypasser (rgthree), GuHaiAutoImageSplit, ImageScaleToTotalPixels, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewImage, SamplerCustom, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.545143
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetNode, ImageFromBatch, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, PrimitiveBoolean, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanContextWindowsManual, WanSCAILToVideo, easy imageRemBg, easy int, easy showAnything]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_2078887009887809537.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-30秒直出_2063484969040834562.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2063953334742114305.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版_2063277846595981313.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2063095957193056258.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2064190064883757058.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪，电商产品宣传_2070140251913412610.json, 视频生成/图生视频/LTX2.3-最新导演台_2063451462600052737.json, 视频生成/图生视频/导演台LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2077620703326728194.json]
+members: [图片生成/图生图/SCAIL2视频角色替换工作流_2114262578267512834.json, 数字人/数字人/SCAIL2-官方工作流-单参考图_2070690004116008961.json, 数字人/数字人/SCAIL2-官方工作流-多参考图_2070395563316703233.json, 数字人/数字人/scail2纯血官流（多参）_2071488701808599041.json, 数字人/数字人/动作迁移人物替换最新Scail2(多参考图版)V3_2078363419417333761.json, 视频生成/图生视频/SCAIL2视频换人_角色替换-雯雯的后宫_2076246273501515777.json, 视频生成/图生视频/电商带货 剧情模仿 动作迁移最新Scail2多参考图_2076969142116245505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_331
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_2078887009887809537.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-30秒直出_2063484969040834562.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2063953334742114305.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版_2063277846595981313.json、视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2063095957193056258.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/SCAIL2视频角色替换工作流_2114262578267512834.json、数字人/数字人/SCAIL2-官方工作流-单参考图_2070690004116008961.json、数字人/数字人/SCAIL2-官方工作流-多参考图_2070395563316703233.json、数字人/数字人/scail2纯血官流（多参）_2071488701808599041.json、数字人/数字人/动作迁移人物替换最新Scail2(多参考图版)V3_2078363419417333761.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `GuHaiAutoImageSplit`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `GetNode`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
 - `PreviewImage`
-- `SamplerCustom`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `PrimitiveBoolean`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SetNode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `VHS_VideoInfoLoaded`
+- `WanContextWindowsManual`
+- `WanSCAILToVideo`
+- `easy imageRemBg`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXDirectorGuide` —— 7/9 个有
-- `YusuLTXDirector` —— 6/9 个有
-- `CheckpointLoaderSimple` —— 5/9 个有
-- `CreateVideo` —— 5/9 个有
-- `GetVideoComponents` —— 5/9 个有
-- `UNETLoader` —— 4/9 个有
-- `孤海注释` —— 3/9 个有
-- `Label (rgthree)` —— 2/9 个有
-- `Yusu-LTXDirector` —— 2/9 个有
-- `YusuLTXDirectorGuide` —— 2/9 个有
-- `CS-LTXGridDirector` —— 1/9 个有
-- `MuyeTextEditOutput` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
+- `ImpactConditionalBranch` —— 6/7 个有
+- `VAEDecodeTiled` —— 6/7 个有
+- `Fast Groups Muter (rgthree)` —— 5/7 个有
+- `MuyeTextEditOutput` —— 5/7 个有
+- `easy getNode` —— 5/7 个有
+- `easy setNode` —— 5/7 个有
+- `ComfyMathExpression` —— 4/7 个有
+- `ImageBatchMulti` —— 4/7 个有
+- `VAEDecode` —— 4/7 个有
+- `DownloadAndLoadGIMMVFIModel` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `GIMMVFI_interpolate` —— 3/7 个有
+- `ImpactSwitch` —— 3/7 个有
+- `Int` —— 3/7 个有
+- `MinNode` —— 3/7 个有
+- `easy cleanGpuUsed` —— 3/7 个有
+- `easy float` —— 3/7 个有
+- `图像缩放V2_孤海` —— 3/7 个有
+- `AFL:ImageSwitch` —— 2/7 个有
+- `ImpactIfNone` —— 2/7 个有
+- `InversionDemoLazySwitch` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `Text` —— 2/7 个有
+- `Vignette` —— 1/7 个有
+- `easy anythingIndexSwitch` —— 1/7 个有
+- `忽略多组孤海` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 6 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 3/7 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 6，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

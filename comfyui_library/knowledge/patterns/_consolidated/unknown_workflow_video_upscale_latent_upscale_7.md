@@ -1,73 +1,96 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_7
 type: Unknown Workflow
-frequency: 23
-level: moderate
-coverage: 0.886087
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, ManualSigmas, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+frequency: 22
+level: strong
+coverage: 0.595409
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, TTResolutionSelector, Text, VAEDecodeTiled, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/minimax_h3_r2v_3d_scene_2099337853850443778.json, 平台全量/minimax_h3_r2v_3d_scene_2100403033669726209.json, 平台全量/minimax_h3_r2v_3d_scene_2100491365909090306.json, 平台全量/扣篮的案例_2117999817048813570.json, 平台全量/跳舞全自动生成-Minimax H3_2119017540117684225.json, 视频生成/图生视频/Characters Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+H3+_2104367488405434370.json, 视频生成/图生视频/H3 People Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+_2107279313535062017.json, 视频生成/图生视频/H3+6宫格故事板StoryBoard 生成10~15流畅视频_2093301213247922177.json, 视频生成/图生视频/H3_People_Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+_2107331983230717954.json, 视频生成/图生视频/H3_People_Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+_2107443341985148930.json, 视频生成/图生视频/People+Dancing人物跳舞多种舞蹈风格+跳舞自动机-Minimax+H3+_2110176278711193602.json, 视频生成/图生视频/Videos of People Dancing人物跳舞视频多种舞蹈风格 H3_2100759098823372802.json, 视频生成/图生视频/minimax_h3_r2v_Latent%20Upscaler3_2090611335280287745.json, 视频生成/图生视频/人物跳舞多种舞蹈风格 跳舞自动机-Minimax+H3_2096768052938498049.json, 视频生成/图生视频/人物跳舞多种舞蹈风格+Minimax+H3跳舞自动机_2098950158401761282.json, 视频生成/图生视频/动态壁纸无缝循环(API版)-minimax高质量2k_2093395150411227138.json, 视频生成/图生视频/动态壁纸无缝循环(免费版)-minimax高质量2k_2094661317192937473.json, 视频生成/图生视频/电商广告宣传片-MiniMax H3_2093024927996792834.json, 视频生成/图生视频/跳舞自动机-Minimax H3_2096079611061952513.json, 视频生成/文生视频/动漫短剧工作流（一键直出1080P竖屏短剧提示词未自动优化）_2093587306430160898.json, 视频生成/文生视频/（0825）二采放大1080P12秒-提示词未自动优化_2092123279141195777.json, 视频生成/文生视频/（0826）万象二采放大1080P横屏12秒-提示词未自动优化（增加动态lora）_2092578809114619905.json, 视频生成/文生视频/（0826）万象二采放大1080P竖屏12秒-提示词未自动优化（增加动态lora）_2092617053390856194.json]
+members: [视频生成/图生视频/LTX-2.3 文&图生视频（双采高动态版）_2042065827050033153.json, 视频生成/图生视频/LTX-2.3首尾帧_2031962115128430594.json, 视频生成/图生视频/LTX-2.3首尾帧（双采高动态版）_2042066721300815873.json, 视频生成/图生视频/LTX2.3四宫格图生视频_2050412323076091906.json, 视频生成/图生视频/opsv-LTX2.3-4帧合一剧情_2050847417603502081.json, 视频生成/图生视频/opsv-LTX2.3-4帧合一剧情_2054591035602423809.json, 视频生成/图生视频/testCl图生视频_2052031676158627841.json, 视频生成/图生视频/testD_2052075045547192321.json, 视频生成/图生视频/【优化版】LTX-2.3首尾帧_2032479656754028546.json, 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042239582070116353.json, 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042767802834100226.json, 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042852519000416258.json, 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2053503554211594241.json, 视频生成/图生视频/四宫格剧情视频生成画音同步-LTX-2.3 图生视频_2037164842150268930.json, 视频生成/图生视频/图生视频5号_2052391533508345857.json, 视频生成/图生视频/图生视频三号_2052341833979703297.json, 视频生成/图生视频/小兔图生视频_2050965347808882690.json, 视频生成/图生视频/新新新四宫格图生视频_2050947229229301761.json, 视频生成/图生视频/测试A_断开LLM正面词_2051990736962367489.json, 视频生成/图生视频/测试B_删MultiText_2051999667881295873.json, 视频生成/图生视频/测试版1_随风1秒_2051983699100614658.json, 视频生成/文生视频/LTX2.3-四宫格剧情生成-音画同步-图生视频_2050173609158684674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_7
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（平台全量/minimax_h3_r2v_3d_scene_2099337853850443778.json、平台全量/minimax_h3_r2v_3d_scene_2100403033669726209.json、平台全量/minimax_h3_r2v_3d_scene_2100491365909090306.json、平台全量/扣篮的案例_2117999817048813570.json、平台全量/跳舞全自动生成-Minimax H3_2119017540117684225.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3 文&图生视频（双采高动态版）_2042065827050033153.json、视频生成/图生视频/LTX-2.3首尾帧_2031962115128430594.json、视频生成/图生视频/LTX-2.3首尾帧（双采高动态版）_2042066721300815873.json、视频生成/图生视频/LTX2.3四宫格图生视频_2050412323076091906.json、视频生成/图生视频/opsv-LTX2.3-4帧合一剧情_2050847417603502081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：22
+- **可信度**：强结论
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 22 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LoadImage`
+- `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `SetNode`
+- `SimpleMath+`
+- `TTResolutionSelector`
+- `Text`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 22/23 个有
-- `MiniMaxH3SigmaShift` —— 22/23 个有
-- `ModelPreviewOverrideKJ` —— 22/23 个有
-- `SplitSigmas` —— 22/23 个有
-- `ResolutionSelector` —— 21/23 个有
-- `LoadImage` —— 20/23 个有
-- `PrimitiveFloat` —— 20/23 个有
-- `RHHiddenNodes` —— 13/23 个有
-- `easy showAnything` —— 13/23 个有
-- `CR Prompt Text` —— 10/23 个有
-- `PrimitiveStringMultiline` —— 10/23 个有
-- `INTConstant` —— 4/23 个有
-- `VHS_LoadVideo` —— 4/23 个有
-- `VHS_VideoInfo` —— 3/23 个有
-- `DapaoImageAspectRatioResizeNode` —— 2/23 个有
-- `EmptyImage` —— 2/23 个有
-- `PreviewImage` —— 2/23 个有
-- `easy cleanGpuUsed` —— 2/23 个有
-- `ResizeShortestToNode` —— 1/23 个有
-- `Text Multiline` —— 1/23 个有
-- `easy clearCacheAll` —— 1/23 个有
+- `LTXVImgToVideoInplaceKJ` —— 21/22 个有
+- `ImageScaleBy` —— 19/22 个有
+- `LTXVImgToVideoConditionOnly` —— 19/22 个有
+- `CR Text Replace` —— 18/22 个有
+- `ComfyMathExpression` —— 18/22 个有
+- `FloatConstant` —— 18/22 个有
+- `GuHaiAutoImageSplit` —— 18/22 个有
+- `ImageFromBatch+` —— 18/22 个有
+- `PreviewImage` —— 18/22 个有
+- `RH_Utils` —— 16/22 个有
+- `MultiTextConcatenate` —— 15/22 个有
+- `CR Text` —— 6/22 个有
+- `CustomAddLabel` —— 4/22 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/22 个有
+- `LTXVPreprocess` —— 4/22 个有
+- `Label (rgthree)` —— 4/22 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/22 个有
+- `SaveImage` —— 4/22 个有
+- `ImageConcatMulti` —— 3/22 个有
+- `DualCLIPLoader` —— 2/22 个有
+- `ImageStitch` —— 2/22 个有
+- `PreviewAny` —— 2/22 个有
+- `ShowText|pysssss` —— 2/22 个有
+- `TextGenerateLTX2Prompt` —— 2/22 个有
+- `easy convertAnything` —— 2/22 个有
+- `PrimitiveBoolean` —— 1/22 个有
+- `easy cleanGpuUsed` —— 1/22 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 22 | 100% |
+| 高度 | 25 | 25 - 25 | 22 | 100% |
 
 ## 常见问题
 
@@ -75,4 +98,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，22 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，22 个样本，取值集中（一致性 100%）

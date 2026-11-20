@@ -1,93 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_75
 type: Unknown Workflow
-frequency: 21
+frequency: 19
 level: moderate
-coverage: 0.496143
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, INTConstant, ImageResizeKJv2, Int, LoadImage, PlaySound|pysssss, PreviewImage, PrimitiveBoolean, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SetNode, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings]
+coverage: 0.513789
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/SCAIL-2 高阶多参工作流Plus版 V1 【多图 + 多角色参考 + 动作迁移 + 背景替换】_2066016614352510977.json, 平台全量/Scail 2单人多参动作迁移_人物替换_2068904795259367425.json, 平台全量/Scail 2新无限长视频人物替换  高清画质不崩_2078413061978943490.json, 平台全量/Scail-2 高阶工作流【多图 + 多角色参考 + 动作迁移 + 背景替换】_2066433916898205698.json, 平台全量/Scail2 超长视频二阶段采样无劣化示例流_2078428772977696769.json, 平台全量/Scail2无劣化工作流_2083063638461599745.json, 平台全量/（Relight版）Scail 2人物替换_无限时长_2080286451320836097.json, 数字人/数字人/Scail2 重打光 动作迁移 多角色参考_2077716545614204929.json, 数字人/数字人/人物替换-动作迁移 Relight + Scail 2_2077740490937683969.json, 数字人/数字人/电商商用Scail-2 高级版工作流【多图 + 多角色参考 + 动作迁移 + 背景替换】-肥猴&wuwu版_2067262704208932866.json, 视频生成/图生视频/(Relight版)Scail 2新方案无限长视频无劣化多参动作迁移V1_2077358900407529474.json, 视频生成/图生视频/(上下文)Scail 2单人多参人物替换V3（肥猴+Wuwu版本）_2066604420628041729.json, 视频生成/图生视频/(上下文)Scail 2单人多参动作迁移+背景替换V5（肥猴+Wuwu版本）_2066603013753630721.json, 视频生成/图生视频/(上下文)Scail 2单人多参动作迁移V5（肥猴+Wuwu版本）_2066543884603314177.json, 视频生成/图生视频/(上下文)Scail 2多人多参人物替换V5（肥猴+Wuwu版本）_2066782151881875457.json, 视频生成/图生视频/(上下文)Scail 2多人多参动作迁移V2（肥猴+Wuwu版本）_2066741675816476673.json, 视频生成/图生视频/(帧窗口)Scail 2单人单参人物替换加速版V5_2068262147108458498.json, 视频生成/图生视频/Scail 2-7月新方案无限长视频无劣化多参动作迁移-(Relight版)_2078042149253378050.json, 视频生成/图生视频/Scail 2新方案无限长视频无劣化多参动作迁移V1_2076912417958883329.json, 视频生成/图生视频/Scail-2 高阶工作流Plus版 v1.5 【多图 + 多角色参考 + 动作迁移 + 背景替换】_2067873915053101058.json, 视频生成/图生视频/Scail2 重打光 动作迁移 多角色参考_2084830615622471682.json]
+members: [视频生成/图生视频/MiniMax H3官方工作流 _ 首尾帧生成视频_2090003109429989378.json, 视频生成/图生视频/MiniMax+H3  9 图_2088611634561503233.json, 视频生成/图生视频/MiniMax+H3+lightx2v+8step_2088449363017293825.json, 视频生成/图生视频/MiniMax+H3-8.24_2091826993972203521.json, 视频生成/图生视频/MiniMax+H3-二采优化版_2102312716324130817.json, 视频生成/图生视频/MiniMax+H3-多参考生视频-优化版0909_2097580929232498689.json, 视频生成/图生视频/MiniMax+H3-多参考生视频（9图片+3视频+3音频）_2101587742454009857.json, 视频生成/图生视频/MiniMax+H3-多参考生视频（9图片+3视频+3音频）二采_2109901185510629378.json, 视频生成/图生视频/MiniMax_H3-多参考7P3A2V生视频-二采优化版_2100561807021797378.json, 视频生成/图生视频/MiniMax_H3-多参考7P3A2V生视频-优化版_2100555142960603138.json, 视频生成/图生视频/Minimax H3 Singularity V2双采工作流_2111850491918512130.json, 视频生成/图生视频/Minimax H3 game aisee_2102192548696641537.json, 视频生成/图生视频/Minimax_H3_第三视角游戏UI_2102925824583356417.json, 视频生成/图生视频/Minimax_H3_第三视角游戏UI_2103671322130862082.json, 视频生成/图生视频/Minimax_H3_第三视角游戏UI_2104844593358524418.json, 视频生成/文生视频/0912Singularity模型双采放大_2098568338380247042.json, 视频生成/文生视频/0916台词优化正反打镜头Singularity模型双采放大_2100172773640458242.json, 视频生成/文生视频/Minimax H3 Singularity 超双采放大（参考生视频）_2098158457118609410.json, 视频生成/文生视频/Minimax H3 第三视角（游戏UI）_2100511191582994433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_75
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（平台全量/SCAIL-2 高阶多参工作流Plus版 V1 【多图 + 多角色参考 + 动作迁移 + 背景替换】_2066016614352510977.json、平台全量/Scail 2单人多参动作迁移_人物替换_2068904795259367425.json、平台全量/Scail 2新无限长视频人物替换  高清画质不崩_2078413061978943490.json、平台全量/Scail-2 高阶工作流【多图 + 多角色参考 + 动作迁移 + 背景替换】_2066433916898205698.json、平台全量/Scail2 超长视频二阶段采样无劣化示例流_2078428772977696769.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3官方工作流 _ 首尾帧生成视频_2090003109429989378.json、视频生成/图生视频/MiniMax+H3  9 图_2088611634561503233.json、视频生成/图生视频/MiniMax+H3+lightx2v+8step_2088449363017293825.json、视频生成/图生视频/MiniMax+H3-8.24_2091826993972203521.json、视频生成/图生视频/MiniMax+H3-二采优化版_2102312716324130817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
+全部 19 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `Int`
+- `KSamplerSelect`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus SamplerFromSettings`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus VAELoader`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 20/21 个有
-- `WanAnimatePlus ClipVisionEncode` —— 20/21 个有
-- `SimpleMath+` —— 19/21 个有
-- `WanAnimatePlus SamplerSettings` —— 19/21 个有
-- `AutoRefCollage` —— 18/21 个有
-- `GetImageRangeFromBatch` —— 18/21 个有
-- `ComfyMathExpression` —— 17/21 个有
-- `VHS_LoadVideo` —— 12/21 个有
-- `ImageBatchMulti` —— 11/21 个有
-- `Seed (rgthree)` —— 11/21 个有
-- `easy cleanGpuUsed` —— 11/21 个有
-- `BatchImagesNode` —— 10/21 个有
-- `WanAnimatePlus ClipVisionEncode V2` —— 10/21 个有
-- `WanAnimatePlus SCAIL_2 TwoPhase Settings` —— 10/21 个有
-- `easy clearCacheAll` —— 10/21 个有
-- `VHS_LoadVideoFFmpeg` —— 9/21 个有
-- `WanAnimatePlus ContextOptions` —— 9/21 个有
-- `WanVideoContextOptions` —— 9/21 个有
-- `GIMMVFI_interpolate` —— 7/21 个有
-- `ComfySwitchNode` —— 6/21 个有
-- `DownloadAndLoadGIMMVFIModel` —— 6/21 个有
-- `JjkText` —— 3/21 个有
-- `Label (rgthree)` —— 3/21 个有
-- `ToBoolNode` —— 3/21 个有
-- `EmptyImage` —— 2/21 个有
-- `Evaluate Integers` —— 2/21 个有
-- `FastCanvas` —— 2/21 个有
-- `FastCanvasTool` —— 2/21 个有
-- `FastGroupsBypassSwitch` —— 2/21 个有
-- `RMBG` —— 2/21 个有
-- `WanAnimatePlus Easy SamplerSettings` —— 2/21 个有
-- `CR Text` —— 1/21 个有
-- `ImageConcatMulti` —— 1/21 个有
-- `RIFE VFI` —— 1/21 个有
-- `TTP_Expand_And_Mask` —— 1/21 个有
-- `easy boolean` —— 1/21 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 18/19 个有
+- `VAEDecode` —— 18/19 个有
+- `VAEDecodeAudio` —— 18/19 个有
+- `LoadAudio` —— 17/19 个有
+- `PrimitiveFloat` —— 17/19 个有
+- `LTXVConcatAVLatent` —— 15/19 个有
+- `LTXVSeparateAVLatent` —— 15/19 个有
+- `SplitSigmas` —— 15/19 个有
+- `VHS_LoadVideo` —— 14/19 个有
+- `easy float` —— 14/19 个有
+- `忽略多组孤海` —— 13/19 个有
+- `MinimaxH3LatentUpscaler3D` —— 10/19 个有
+- `ModelAttentionBackend` —— 10/19 个有
+- `Text` —— 10/19 个有
+- `BlockSparseAttention` —— 9/19 个有
+- `DisableNoise` —— 9/19 个有
+- `ExtendIntermediateSigmas` —— 9/19 个有
+- `Lora Loader Stack (rgthree)` —— 9/19 个有
+- `MiniMaxChunkFeedForward` —— 9/19 个有
+- `MiniMaxLowVRAMAttention` —— 9/19 个有
+- `PrimitiveStringMultiline` —— 9/19 个有
+- `LatentUpscaleBy` —— 5/19 个有
+- `PreviewImage` —— 3/19 个有
+- `EmptyImage` —— 2/19 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/19 个有
+- `Float` —— 2/19 个有
+- `SigmasGraph` —— 2/19 个有
+- `孤海注释` —— 2/19 个有
+- `CreateVideo` —— 1/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/19 个有
+- `MiniMaxH3AVDecodeT8` —— 1/19 个有
+- `RunningHub Deepcleaner` —— 1/19 个有
 
 ## 典型参数
 

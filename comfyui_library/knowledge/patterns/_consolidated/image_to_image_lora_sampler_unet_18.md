@@ -1,38 +1,40 @@
 ---
 name: image_to_image_lora_sampler_unet_18
 type: Image To Image
-frequency: 20
+frequency: 18
 level: strong
-coverage: 0.64275
-common_nodes: [CFGNorm, CLIPLoader, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SetNode, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.664389
+common_nodes: [CFGNorm, CLIPLoader, CR Prompt Text, Fast Groups Bypasser (rgthree), INTConstant, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PlaySound|pysssss, ReferenceLatent, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Edit 2509_转二次元3D手办风格（Anyto3Dfigure）_1999188815258546178.json, 图片生成/图生图/Qwen  最强 动漫 转 真人 写实真人 高清放大_2009936800520867842.json, 图片生成/图生图/Qwen Edit_图转3D渲染风格_1997967874390155266.json, 图片生成/图生图/Qwen image Edit 2511图像编辑工作流_2003529388635398145.json, 图片生成/图生图/Qwen-史上最强动漫转写实真人-Anything to Real Characters_1991953881183703042.json, 图片生成/图生图/【推荐】Edit 2509_转二次元3D手办风格（Anyto3Dfigure）_2008549502336114690.json, 图片生成/图生图/【推荐】一键转二次元手办正式版_2008557296925806594.json, 图片生成/图生图/一键转二次元手办_2033094077641662465.json, 图片生成/图生图/动漫人物转真人（上传图片即可）_2034460014009651202.json, 图片生成/图生图/动漫转真人 漫展  二次元 专用_2034186126080086018.json, 图片生成/图生图/动漫转真人 漫展  二次元 专用_2034207299950088193.json, 图片生成/图生图/动漫转真人-极致真实一键转真人_2031234025892880385.json, 图片生成/图生图/动漫转真人-极致真实（漫展和大博主都在用）_2029178379903180801.json, 图片生成/图生图/动漫转真人（漫展和大博主都在用）_2042917129619509249.json, 图片生成/图生图/幻模工坊_一键转二次元手办正式版_2000535766075834370.json, 图片生成/图生图/最强动漫转真人_2034095236443545602.json, 图片生成/图生图/绅士需要的动漫转真人-好！_2037561602001608705.json, 平台全量/Qwen Edit_图转全息图_2014548940825305089.json, 平台全量/Qwen Edit_图转动漫风格_1998059077286682625.json, 平台全量/Qwen-Edit 图片特效大师-加特效、滤镜、扩图、换背景、光影-二次元_1989613830688960514.json]
+members: [图片生成/反推提示词/Qwen-Edit-2511支持一键多角度，多场景分镜_2004063103497191426.json, 图片生成/图生图/002.Qwen编辑之王018.单图 双图 三图编辑_2034661175719370753.json, 图片生成/图生图/251225001.002.Qwen-Edit-2511-支持 单图 双图 三图编辑_2004198351618928642.json, 图片生成/图生图/LH-DMT版本-2.生图片类-042.Qwen-Edit-2511-支持 单图 双图 三图编辑_2016524711785664514.json, 图片生成/图生图/Qwen Image Edit 2511 合集_2004214649702805506.json, 图片生成/图生图/Qwen-2511单_双_三图编辑_2010241309461716993.json, 图片生成/图生图/Qwen-Edit-2511-一键多角度，多场景分镜_2003696921707487234.json, 图片生成/图生图/Qwen-Edit-2511-一键多角度，多场景分镜_2054221184434229250.json, 图片生成/图生图/Qwen-Edit-2511-单图+双图+三图编辑_2004033881311485953.json, 图片生成/图生图/Qwen-Edit-2511-支持 单图 双图 三图编辑_2003703615871197186.json, 图片生成/图生图/Qwen-Edit-2511-支持 单图 双图 三图编辑_2003752282514726913.json, 图片生成/图生图/Qwen-Edit-2511-支持 单图 双图 三图编辑_2042169776323170305.json, 图片生成/图生图/Qwen-Edit-2511-支持 单图 双图 三图编辑_2062798695934021633.json, 图片生成/图生图/Qwen-edit 简易一键3D皮克斯 Qwen-edit 简易一键3D皮克斯_2005154361963671553.json, 图片生成/图生图/Qwen-edit-2511 明星代言｜手持产品替换_2005156061877334017.json, 图片生成/图生图/最新的Qwenimage-Edit-升级版2511合集_2003763847158767617.json, 数字人/数字人/qwen-edit-Lora分镜生图 场景生图_2092240467063824386.json, 数字人/数字人/qwen-edit-Lora训练专用_2046420912991379457.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_18
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/Edit 2509_转二次元3D手办风格（Anyto3Dfigure）_1999188815258546178.json、图片生成/图生图/Qwen  最强 动漫 转 真人 写实真人 高清放大_2009936800520867842.json、图片生成/图生图/Qwen Edit_图转3D渲染风格_1997967874390155266.json、图片生成/图生图/Qwen image Edit 2511图像编辑工作流_2003529388635398145.json、图片生成/图生图/Qwen-史上最强动漫转写实真人-Anything to Real Characters_1991953881183703042.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/反推提示词/Qwen-Edit-2511支持一键多角度，多场景分镜_2004063103497191426.json、图片生成/图生图/002.Qwen编辑之王018.单图 双图 三图编辑_2034661175719370753.json、图片生成/图生图/251225001.002.Qwen-Edit-2511-支持 单图 双图 三图编辑_2004198351618928642.json、图片生成/图生图/LH-DMT版本-2.生图片类-042.Qwen-Edit-2511-支持 单图 双图 三图编辑_2016524711785664514.json、图片生成/图生图/Qwen Image Edit 2511 合集_2004214649702805506.json…）
 
 - **类型**：Image To Image
-- **样本数**：20
+- **样本数**：18
 - **可信度**：强结论
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 18 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `GetNode`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `PlaySound|pysssss`
+- `ReferenceLatent`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEdit`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
@@ -40,45 +42,41 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Get_image_size` —— 19/20 个有
-- `DF_Integer` —— 19/20 个有
-- `ImageColorMatchAdobe+` —— 19/20 个有
-- `ImageResize+` —— 19/20 个有
-- `ImageScaleToTotalPixels` —— 19/20 个有
-- `ImpactMinMax` —— 19/20 个有
-- `SeedVR2` —— 19/20 个有
-- `SeedVR2BlockSwap` —— 19/20 个有
-- `SimpleMath+` —— 19/20 个有
-- `TTP_Image_Assy` —— 19/20 个有
-- `TTP_Image_Tile_Batch` —— 19/20 个有
-- `Fast Groups Muter (rgthree)` —— 12/20 个有
-- `PreviewImage` —— 9/20 个有
-- `Image Comparer (rgthree)` —— 8/20 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/20 个有
-- `JWInteger` —— 1/20 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/20 个有
+- `Image Comparer (rgthree)` —— 13/18 个有
+- `LayerUtility: ImageReel` —— 13/18 个有
+- `LayerUtility: ImageReelComposit` —— 13/18 个有
+- `PreviewImage` —— 13/18 个有
+- `JWStringConcat` —— 5/18 个有
+- `Qwen3_VQA` —— 5/18 个有
+- `Text Multiline` —— 5/18 个有
+- `easy promptLine` —— 5/18 个有
+- `easy showAnything` —— 5/18 个有
+- `JjkText` —— 1/18 个有
+- `RAMCleanup` —— 1/18 个有
+- `VRAMCleanup` —— 1/18 个有
+- `easy cleanGpuUsed` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 9 | 20 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 20 | 100% |
-| 采样算法 | res_2m | - | 20 | 75% |
-| 调度器 | sgm_uniform | - | 20 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+| 采样步数 | 4 | 4 - 4 | 18 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
+| 采样算法 | euler_ancestral | - | 18 | 61% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 18 | 56% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 20/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 49/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 9，20 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2m，20 个样本，一致性 75%
-- 调度器 最常用 sgm_uniform，20 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 高发问题（20/20 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，18 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，18 个样本，一致性 61%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，18 个样本，一致性 56%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 高发问题（49/18 个样本）：Steps较低可能导致细节不足

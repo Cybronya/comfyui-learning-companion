@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_274
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.76575
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.930125
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/首尾帧图文一键生视频｜MiniMax H3加速版数字人_2095958370124656641.json, 视频生成/图生视频/首尾帧生视频！加速版MiniMaxH3转场特效数字人图生视频_2085455030794145794.json, 视频生成/文生视频/24GB通用版6倍加速参考生视频｜MiniMax H3文生图生视频生视频工作流_2087179601289236482.json, 视频生成/文生视频/48GB高配版6倍加速参考生视频｜MiniMax H3文生图生视频工作流_2087157477258383362.json, 视频生成/文生视频/H3全能参考生视频MiniMax视频生视频图生视频_2086209628857266177.json, 视频生成/文生视频/开源加速版MiniMax h3海螺多参文生视频图生视频音频参考_2085178835024306178.json, 视频生成/视频生视频/免手写提示词 MiniMax H3角色一致性图生视频人物替换_2106531233084821505.json, 视频生成/视频生视频/智能反推提示词免手写 Minimax H3角色一致性人物替换图生视频方案_2106158187798941698.json]
+members: [视频生成/图生视频/SBAPI MinimaxH3三分镜参考生成视频工作流 多模态输入_2109723354918907905.json, 视频生成/图生视频/SBAPI_MinimaxH3三分镜参考，文生视频图生视频联动_2111195384482721793.json, 视频生成/图生视频/SBAPI_MinimaxH3三连分镜参考出片｜文生视频图生视频一条龙_2111053464666206209.json, 视频生成/图生视频/h3 r2v runninghub tts v2｜图生视频音频驱动生成_2091306513502654466.json, 视频生成/图生视频/minimax_h3_turbo_v4_step600_ema图生视频加速模型_2105146341893693442.json, 视频生成/图生视频/step600_ema_kitchen_attn｜图生视频专业增强模型工作流_2113888199780163585.json, 视频生成/文生视频/minmaxH3单采加速三连发｜文生视频图生视频 又快又稳出片神器_2105532532883283969.json, 视频生成/文生视频/minmaxH3单采加速多场景｜文生视频视频生视频图生视频全支持_2105530783984340993.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_274
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/首尾帧图文一键生视频｜MiniMax H3加速版数字人_2095958370124656641.json、视频生成/图生视频/首尾帧生视频！加速版MiniMaxH3转场特效数字人图生视频_2085455030794145794.json、视频生成/文生视频/24GB通用版6倍加速参考生视频｜MiniMax H3文生图生视频生视频工作流_2087179601289236482.json、视频生成/文生视频/48GB高配版6倍加速参考生视频｜MiniMax H3文生图生视频工作流_2087157477258383362.json、视频生成/文生视频/H3全能参考生视频MiniMax视频生视频图生视频_2086209628857266177.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/SBAPI MinimaxH3三分镜参考生成视频工作流 多模态输入_2109723354918907905.json、视频生成/图生视频/SBAPI_MinimaxH3三分镜参考，文生视频图生视频联动_2111195384482721793.json、视频生成/图生视频/SBAPI_MinimaxH3三连分镜参考出片｜文生视频图生视频一条龙_2111053464666206209.json、视频生成/图生视频/h3 r2v runninghub tts v2｜图生视频音频驱动生成_2091306513502654466.json、视频生成/图生视频/minimax_h3_turbo_v4_step600_ema图生视频加速模型_2105146341893693442.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
@@ -35,7 +35,9 @@ source: knowledge_consolidation
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
@@ -45,33 +47,30 @@ source: knowledge_consolidation
 - `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 7/8 个有
-- `EasyCache` —— 6/8 个有
-- `GetNode` —— 6/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `PathchSageAttentionKJ` —— 5/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `ImageResizeKJv2` —— 3/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/8 个有
-- `PrimitiveStringMultiline` —— 3/8 个有
+- `LoadAudio` —— 5/8 个有
+- `ExtendIntermediateSigmas` —— 4/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/8 个有
+- `DF_String_Concatenate` —— 3/8 个有
+- `DF_Text_Box` —— 3/8 个有
+- `JWStringGetLine` —— 3/8 个有
+- `JjkConcat` —— 3/8 个有
+- `JjkShowText` —— 3/8 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 3/8 个有
+- `MiniMaxH3SigmaShift` —— 3/8 个有
+- `ModelAttentionBackend` —— 3/8 个有
+- `ReplaceString` —— 3/8 个有
+- `StringConstant` —— 3/8 个有
 - `VHS_LoadVideo` —— 3/8 个有
-- `CR Prompt Text` —— 2/8 个有
-- `LoadAudio` —— 2/8 个有
-- `MiniMaxH3ImageToVideo` —— 2/8 个有
-- `PrimitiveInt` —— 2/8 个有
-- `RHHiddenNodes` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `AILab_QwenVL_Advanced` —— 1/8 个有
-- `DF_Int_to_Float` —— 1/8 个有
-- `Image Stitch` —— 1/8 个有
-- `ImageScaleDownToSize` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `ShowAnything|Mie` —— 1/8 个有
-- `easy imageScaleDownToSize` —— 1/8 个有
-- `easy positive` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
+- `SaveImage` —— 2/8 个有
+- `MiniMaxH3AudioLatentControlT8` —— 1/8 个有
+- `MiniMaxH3TurboLoRA` —— 1/8 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/8 个有
+- `easy indexTTSAudioMerge` —— 1/8 个有
+- `easy indexTTSGenerate` —— 1/8 个有
 
 ## 典型参数
 

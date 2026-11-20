@@ -1,105 +1,80 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_9
 type: Unknown Workflow
-frequency: 22
-level: strong
-coverage: 0.569091
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageScaleBy, KSamplerSelect, LTX2AudioLatentNormalizingSampling, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, VRAM_Debug, easy showAnything]
+frequency: 21
+level: moderate
+coverage: 0.439286
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy float]
 problems: []
 missing: []
-members: [平台全量/多角色对话动画片：Qwen3 TTS + LTX 2_2017400391800983554.json, 数字人/数字人/用Qwen3-TTS模仿良子配音，搭配LTX-2生成AI漫画短剧！_2015453390020550658.json, 视频生成/图生视频/Qwen3-TTS+LTX2.0实现数字人生成_2021101495378251777.json, 视频生成/图生视频/一键生成多角色对话动画片，Qwen3-TTS LTX-2工作流！_2059439736070172674.json, 视频生成/图生视频/用Qwen3-TTS模仿良子配音，搭配LTX-2生成AI漫画短剧！_2015355446395146242.json, 视频生成/文生视频/一键生成双人卡通对话动画片_2017220821856555010.json, 视频生成/文生视频/一键生成多角色对话动画片（抖音热门视频）_2067981012499521537.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2_2020138354452471809.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2016013037911678977.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2017584036574666753.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2017592253887287298.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2017893549232103425.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2021972520756318209.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2043169271936716801.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2064917154838966274.json, 视频生成/文生视频/一键生成多角色对话动画片，Qwen3-TTS+++LTX-2工作流！_2043550997179535361.json, 视频生成/文生视频/一键生成多角色对话，Qwen3-TTS + LTX-2工作流！_2036334772938612737.json, 视频生成/文生视频/一键生成宠物博客，一键生成多角色动画，Qwen3-TTS + LTX-2工作流！_2019605828466122754.json, 视频生成/文生视频/无脑流！一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流2.0版本，动漫拆解，长视频也可行！_2027664655996428289.json, 视频生成/文生视频/无脑流！一键生成多角色对话动画片，Qwen3-TTS + LTX-2工作流！_2027660032065675265.json, 视频生成/文生视频/超好用🔥一键生成多动画角色对话-可按需调整_2054913994544164866.json, 视频生成/文生视频/😽多角色对话TTS克隆+LTX音画同步视频生成😽_2018253329977057281.json]
+members: [视频生成/图生视频/H3二采工作流_2107807033440428033.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2107500379746430977.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2113553458224783362.json, 视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！加放大_2110238781872889857.json, 视频生成/图生视频/H3动作迁移！9分钟可出视频！_2103098076767543298.json, 视频生成/图生视频/H3最强二采【唐僧彩蛋】_2107659032340287490.json, 视频生成/图生视频/H3最强二采【飓风京剧】_2107672314556010498.json, 视频生成/图生视频/H3最强二采，吊打SelfLift【虚空折叠流】_2107371063817621505.json, 视频生成/图生视频/H3最强二采，音画俱佳_2107833447233441793.json, 视频生成/图生视频/H3最强全能工作流之言出法随_2100506302412840961.json, 视频生成/图生视频/H3最强全能工作流之言出法随_2101855618586988546.json, 视频生成/图生视频/H3最强全能工作流之言出法随_2102665425023750145.json, 视频生成/图生视频/H3最强动作工作流-真武大弟篇【金鱼佬框架--吃猪侠定制版】_2098093642488565761.json, 视频生成/图生视频/H3最强双采FL2-736P高清PRO-焚诀展开篇_2101855011373404161.json, 视频生成/图生视频/H3最强双采FL2-736P高清PRO-焚诀展开篇_2102664968234692610.json, 视频生成/图生视频/H3超强工作流_2107296344921698306.json, 视频生成/图生视频/MMH3全能参考生视频自用调优版（附带视频续接教程）_2096409310929702913.json, 视频生成/图生视频/MiniMax H3-多参考生视频-优化版_2108223200814518274.json, 视频生成/图生视频/MiniMax H3-多参考生视频-优化版_2108234638559899650.json, 视频生成/图生视频/MiniMax H3-多参考生视频-去油王版_2094419718181572610.json, 视频生成/图生视频/MiniMax H3-多参考生视频-去油王版_2111461486425100290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_9
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（平台全量/多角色对话动画片：Qwen3 TTS + LTX 2_2017400391800983554.json、数字人/数字人/用Qwen3-TTS模仿良子配音，搭配LTX-2生成AI漫画短剧！_2015453390020550658.json、视频生成/图生视频/Qwen3-TTS+LTX2.0实现数字人生成_2021101495378251777.json、视频生成/图生视频/一键生成多角色对话动画片，Qwen3-TTS LTX-2工作流！_2059439736070172674.json、视频生成/图生视频/用Qwen3-TTS模仿良子配音，搭配LTX-2生成AI漫画短剧！_2015355446395146242.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/H3二采工作流_2107807033440428033.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2107500379746430977.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！_2113553458224783362.json、视频生成/图生视频/H3动作迁移2.0！进阶版，史诗强化！加放大_2110238781872889857.json、视频生成/图生视频/H3动作迁移！9分钟可出视频！_2103098076767543298.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
-- **可信度**：强结论
-- **平均知识覆盖**：57%
+- **样本数**：21
+- **可信度**：中等可信
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CR Text`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `GetNode`
-- `ImageScaleBy`
+全部 21 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTX2AudioLatentNormalizingSampling`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsampler`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
-- `ManualSigmas`
+- `LoadAudio`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SimpleCalculatorKJ`
-- `SolidMask`
-- `VAEDecodeTiled`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VRAM_Debug`
-- `easy showAnything`
+- `easy float`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 21/22 个有
-- `DualCLIPLoaderGGUF` —— 21/22 个有
-- `INTConstant` —— 21/22 个有
-- `LoraLoaderModelOnly` —— 21/22 个有
-- `PreviewAudio` —— 21/22 个有
-- `LTXVChunkFeedForward` —— 20/22 个有
-- `UnetLoaderGGUF` —— 20/22 个有
-- `EmptyImage` —— 19/22 个有
-- `FB_Qwen3TTSDialogueInference` —— 19/22 个有
-- `FB_Qwen3TTSRoleBank` —— 19/22 个有
-- `FB_Qwen3TTSVoiceClonePrompt` —— 19/22 个有
-- `LayerUtility: PurgeVRAM V2` —— 19/22 个有
-- `FB_Qwen3TTSVoiceDesign` —— 17/22 个有
-- `Label (rgthree)` —— 5/22 个有
-- `LoadAudio` —— 5/22 个有
-- `Qwen3TTSModelLoader` —— 4/22 个有
-- `Qwen3TTSVoiceClone` —— 4/22 个有
-- `AudioCrop` —— 3/22 个有
-- `ImageResizeKJv2` —— 3/22 个有
-- `LTXVImgToVideoInplace` —— 3/22 个有
-- `LTXVPreprocess` —— 3/22 个有
-- `LoadImage` —— 3/22 个有
-- `ResizeImagesByLongerEdge` —— 3/22 个有
-- `SimpleMath+` —— 3/22 个有
-- `Apply Whisper` —— 2/22 个有
-- `SaveAudio` —— 2/22 个有
-- `CR Prompt Text` —— 1/22 个有
-- `CheckpointLoaderSimple` —— 1/22 个有
-- `DualCLIPLoader` —— 1/22 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/22 个有
-- `ImpactInt` —— 1/22 个有
-- `MuyeSizeSelector` —— 1/22 个有
-- `Note Plus (mtb)` —— 1/22 个有
-- `SaveAudioMP3` —— 1/22 个有
-- `ShowText|pysssss` —— 1/22 个有
-- `UNETLoader` —— 1/22 个有
+- `BasicGuider` —— 20/21 个有
+- `GetNode` —— 20/21 个有
+- `SetNode` —— 20/21 个有
+- `Text` —— 20/21 个有
+- `VHS_LoadVideo` —— 20/21 个有
+- `忽略多组孤海` —— 19/21 个有
+- `EmptyImage` —— 3/21 个有
+- `PreviewImage` —— 2/21 个有
+- `孤海注释` —— 2/21 个有
+- `Anything Everywhere` —— 1/21 个有
+- `CFGGuider` —— 1/21 个有
+- `CR Text Concatenate` —— 1/21 个有
+- `ConditioningZeroOut` —— 1/21 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/21 个有
+- `GH_AudioVideoMerger` —— 1/21 个有
+- `ImageScale` —— 1/21 个有
+- `ImageScaleToTotalPixels` —— 1/21 个有
+- `JjkText` —— 1/21 个有
+- `ModelPreviewOverrideKJ` —— 1/21 个有
+- `SeedVR2LoadDiTModel` —— 1/21 个有
+- `SeedVR2LoadVAEModel` —— 1/21 个有
+- `SeedVR2VideoUpscaler` —— 1/21 个有
+- `easy cleanGpuUsed` —— 1/21 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 121 | 121 - 121 | 22 | 100% |
-| 高度 | 25 | 25 - 25 | 22 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -107,5 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 121 - 121，22 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，22 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

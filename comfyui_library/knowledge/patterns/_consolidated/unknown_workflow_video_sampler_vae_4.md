@@ -1,76 +1,56 @@
 ---
 name: unknown_workflow_video_sampler_vae_4
 type: Unknown Workflow
-frequency: 33
+frequency: 35
 level: moderate
-coverage: 0.836485
-common_nodes: [CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.987714
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 超强联合图生视频_2120480981013585922.json, 平台全量/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 超强联合图生视频_2120493841332658178.json, 数字人/数字人/Infinite Talk极速i2v数字人_2004371161725235201.json, 数字人/数字人/Infinite Talk极速高质量提示词调度动作控制图生视频数字人_1989385286754947073.json, 数字人/数字人/Infinite talk数字人V4（Lightx2v+Rcm） 浮云12.13_1999724771006967810.json, 数字人/数字人/Infinite talk数字人动态加强版（高配）_1995458935610126337.json, 数字人/数字人/Infinite talk数字人唱歌演讲-动态加强版-Lightx2v+Rcm_1995380884033482754.json, 数字人/数字人/Infinite talk数字人高动态_1994070165069430785.json, 数字人/数字人/Infinite+Talk极速高质量提示词调度动作控制图生视频数字人_2011856786051043329.json, 数字人/数字人/Infinite+talk数字人_2029101372448186369.json, 数字人/数字人/Infinite+talk数字人动态加强（Lightx2v）单人数字人双人数字人长视频数字人图片驱动_1983526893024681985.json, 数字人/数字人/Infinite+数字人口播_2062231795483103234.json, 数字人/数字人/Infinite数字人对口型音频驱动_表情自然_可编辑动作_2114523899093405698.json, 数字人/数字人/Qwen3+TTS+声音克隆+Infinite数字人_2086035517946290178.json, 数字人/数字人/aimv_1960595428544774145.json, 数字人/数字人/talk数字人动态加强高版效果好但速度较慢_2046152991190814721.json, 数字人/数字人/【CQ808】数字人动态加强高版V4（Lightx2v+Rcm）_2031311339875995649.json, 数字人/数字人/任意帧数 Infinite talk数字人动态加强高版V4.0（Lightx2v+Rcm）_2021561301633343490.json, 数字人/数字人/动态加强Lightx2v_2039254220645343233.json, 数字人/数字人/对口型唱歌_2080155260299071489.json, 数字人/数字人/对口型数字人_2034109292449636353.json, 数字人/数字人/对口型数字人_2034542725546119169.json, 数字人/数字人/对口型数字人_2053944255672012801.json, 数字人/数字人/带货Infinite+talk数字人动态加强高版V3（Lightx2v+Rcm多重注意力机制）_1985644227155636225.json, 数字人/数字人/新版极速Infinite Talk图片数字人--自动计算_1988907314344243202.json, 视频生成/图生视频/Infinite talk数字人动态加强高版（Lightx2v+Rcm多重注意力机制）_1984675339228102657.json, 视频生成/图生视频/InfiniteTalk高动态_1985744717117890562.json, 视频生成/图生视频/Infinite对口型数字人 最强音色克隆带语气情感 音频生成数字人 声音克隆_2061786776032866305.json, 视频生成/图生视频/Infinite对口型数字人 最强音色克隆带语气情感 音频生成数字人 声音克隆_2081267787426787330.json, 视频生成/图生视频/Infinite数字人对口型（音频驱动 表情自然 可编辑动作）_2110374253521625090.json, 视频生成/图生视频/新版极速Infinite Talk图片数字人--自动计算_1988898686707044353.json, 视频生成/图生视频/自动计算帧数！Infinite Talk极速数字人。  基于T8star-Aix版本改造_1984094280551694338.json, 音频生成/音频生成/(歌曲数字人)全流程精准口型高强动作V4_1989287142675369986.json]
+members: [视频生成/图生视频/【Wan2.1系列】TeaCache视频生成加速外挂_1916742861977751553.json, 视频生成/图生视频/【Wan2.1系列】图生视频工作流_1914283396808306690.json, 视频生成/图生视频/【人物特效】Strong Wind 大风吹 特效_1913412975162552322.json, 视频生成/图生视频/一键生成吻屏视频_2034885482387083266.json, 视频生成/图生视频/万相视频-万物切切乐_1936085964831772673.json, 视频生成/图生视频/万相视频-万物漏气 超级加速版快速生成_1936088683596648450.json, 视频生成/图生视频/万相视频-深情接吻 超级加速版快速生成_1936098801763405825.json, 视频生成/图生视频/刀切Labubu短视频生成 WAN2.1_1937498299152646145.json, 视频生成/图生视频/单图参考图生视频_2072861939096702977.json, 视频生成/图生视频/单图生成吻屏-MAGREF 图生视频_2029023080860884994.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_1932593243689263106.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_1935907722095157250.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_1963139208418406401.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2067073325549051906.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2067543097009070082.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2069607660957298690.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2071484855296286721.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2075211940145754113.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2075529541229039617.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2075529801041014786.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2076596033949360129.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2076614896099352578.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2077671450340839425.json, 视频生成/图生视频/吻屏-MAGREF单图参考图生视频_2080534588438441986.json, 视频生成/图生视频/吻屏-MAGREF单图生视频_1995763601367502849.json, 视频生成/图生视频/吻屏视频生成器（图生视频）-MAGREF_2032000865069961218.json, 视频生成/图生视频/图生视频-wan2.1 法相魔法幻想 视觉特效_2035963740117540866.json, 视频生成/文生视频/wan2.1 MAGREF 天使张开翅膀动画_1935508018886791169.json, 视频生成/文生视频/wan2.1 人物华丽变身变装_1949634225363918849.json, 视频生成/文生视频/wan2.1 人物模特变身特效_1940219782467862530.json, 视频生成/文生视频/wan2.1 无人机航拍_1943534867973873665.json, 视频生成/文生视频/wan2.1 水下潜水动画_1937316067234758658.json, 视频生成/文生视频/wan2.1 法相魔法幻想 视觉特效_1935860061073760257.json, 视频生成/文生视频/wan2.1 美女举手跳舞热情舞蹈_1948914179688865793.json, 视频生成/文生视频/wan2.1 美女模特T台走猫步_1938411233160921090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（平台全量/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 超强联合图生视频_2120480981013585922.json、平台全量/Qwen3 TTS 声音克隆+Infinite数字人动态加强版 超强联合图生视频_2120493841332658178.json、数字人/数字人/Infinite Talk极速i2v数字人_2004371161725235201.json、数字人/数字人/Infinite Talk极速高质量提示词调度动作控制图生视频数字人_1989385286754947073.json、数字人/数字人/Infinite talk数字人V4（Lightx2v+Rcm） 浮云12.13_1999724771006967810.json…）
+> 由 `engine/knowledge_consolidation` 从 35 个 workflow 归纳得出（视频生成/图生视频/【Wan2.1系列】TeaCache视频生成加速外挂_1916742861977751553.json、视频生成/图生视频/【Wan2.1系列】图生视频工作流_1914283396808306690.json、视频生成/图生视频/【人物特效】Strong Wind 大风吹 特效_1913412975162552322.json、视频生成/图生视频/一键生成吻屏视频_2034885482387083266.json、视频生成/图生视频/万相视频-万物切切乐_1936085964831772673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：33
+- **样本数**：35
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 33 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+全部 35 个 workflow 都包含：
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 32/33 个有
-- `AudioSeparation` —— 32/33 个有
-- `JWInteger` —— 32/33 个有
-- `PreviewAny` —— 31/33 个有
-- `MultiTalkModelLoader` —— 30/33 个有
-- `WanVideoBlockSwap` —— 30/33 个有
-- `WanVideoLoraSelect` —— 30/33 个有
-- `WanVideoModelLoader` —— 30/33 个有
-- `JWFloat` —— 24/33 个有
-- `easy showAnything` —— 10/33 个有
-- `AudioToFPS` —— 8/33 个有
-- `SimpleMath+` —— 7/33 个有
-- `RH_GetAudioDuration` —— 6/33 个有
-- `ToInt` —— 6/33 个有
-- `Int` —— 5/33 个有
-- `LayerUtility: PurgeVRAM V2` —— 5/33 个有
-- `CR Text` —— 4/33 个有
-- `RHHiddenNodes` —— 4/33 个有
-- `SaveAudio` —— 4/33 个有
-- `Bjornulf_ShowInt` —— 3/33 个有
-- `MathExpression|pysssss` —— 3/33 个有
-- `PreviewAudio` —— 3/33 个有
-- `Qwen3TTSModelLoader` —— 3/33 个有
-- `Qwen3TTSVoiceClone` —— 3/33 个有
-- `WhisperSTT` —— 3/33 个有
-- `easy cleanGpuUsed` —— 3/33 个有
-- `Comfly_api_set` —— 1/33 个有
-- `Comfly_suno_custom` —— 1/33 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/33 个有
-- `easy int` —— 1/33 个有
+- `WanVideoBlockSwap` —— 34/35 个有
+- `WanVideoEnhanceAVideo` —— 34/35 个有
+- `WanVideoLoraSelect` —— 33/35 个有
+- `CLIPVisionLoader` —— 31/35 个有
+- `WanVideoTorchCompileSettings` —— 29/35 个有
+- `Primitive integer [Crystools]` —— 28/35 个有
+- `Text Multiline` —— 28/35 个有
+- `WanVideoVACEModelSelect` —— 26/35 个有
+- `LoadWanVideoClipTextEncoder` —— 4/35 个有
+- `Text` —— 3/35 个有
+- `ColorMatch` —— 1/35 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/35 个有
+- `ImageScaleToTotalPixels` —— 1/35 个有
+- `easy imageSize` —— 1/35 个有
 
 ## 典型参数
 

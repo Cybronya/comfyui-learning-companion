@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_212
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.879889
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.882222
+common_nodes: [CLIPLoader, CLIPTextEncode, CM_FloatToInt, CM_FloatUnaryOperation, CM_IntToFloat, CR Prompt Text, EmptyLatentImage, FL_ImageBatchToGrid, FluxKontextMultiReferenceLatentMethod, GetImageSizeAndCount, ImageListToBatch+, Int, JWIntegerToString, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, ProcessString, Qwen3_VQA_Plus, RH_LLMAPI_NODE, SaveImage, StringFunction|pysssss, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine, easy saveText, easy seed, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen2.1替换主体工作流，图生图主体更换处理方案_2103910976172154882.json, 图片生成/图生图/Qwen2.1漫转真｜图生图漫画转写实 二次元一键变真人质感_2104112523195801601.json, 图片生成/图生图/Qwen2.1自定义修改工作流，千问驱动图生图自定义编辑工具_2103912464470597634.json, 图片生成/图生图/Qwen_Image_2.1单图编辑角色四视图工作流，角色设计图生图处理工具_2110158334325256194.json, 图片生成/图生图/Qwen_Image_2.1图生图工作流，人像写真风格化图生图处理方案_2109102844388397058.json, 图片生成/图生图/qwen2.1去除卡片 图片元素精准移除_2104692967377293313.json, 图片生成/图生图/qwen2.1去除油腻｜图生图人像修图 AI感一扫自然出片_2104109391455809538.json, 图片生成/图生图/qwen2.1替换主体工作流｜产品模特随意换场景不翻车_2103712617431912449.json, 图片生成/图生图/画面去油腻 qwen2.1图片质感清爽优化_2104333923810635777.json]
+members: [图片生成/图生图/Qwen-Edit NextScene｜图生图多分镜自动生成 8步写实写真_2097535884341112834.json, 图片生成/图生图/Qwen-Edit-NextScene-2511｜多分镜自动图生图8步一致性出图_2092615856743342081.json, 图片生成/图生图/Qwen-Edit-NextScene2511｜图生图多分镜自动8步_2107675125259792386.json, 图片生成/图生图/Qwen-Edit多分镜图生图｜NextScene 2511八步自动分镜_2099917725115179009.json, 图片生成/图生图/图生图加多分镜自动Qwen Edit NextScene 2511 8步工作流，角色一致性图生图_2107928830039117826.json, 图片生成/图生图/图生图加多分镜自动Qwen Edit NextScene 2511 8步工作流，角色一致性图生图_2107963550802210817.json, 图片生成/图生图/多分镜自动出图｜Qwen-Edit NextScene 2511八步，角色一致性_2099881138817949697.json, 图片生成/图生图/多分镜自动图生图｜Qwen-Edit-NextScene-2511-8步生成_2095101182455934978.json, 图片生成/图生图/多分镜自动生成｜Qwen Edit NextScene 2511图生图8步一致性出图_2090876709213138946.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_212
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen2.1替换主体工作流，图生图主体更换处理方案_2103910976172154882.json、图片生成/图生图/Qwen2.1漫转真｜图生图漫画转写实 二次元一键变真人质感_2104112523195801601.json、图片生成/图生图/Qwen2.1自定义修改工作流，千问驱动图生图自定义编辑工具_2103912464470597634.json、图片生成/图生图/Qwen_Image_2.1单图编辑角色四视图工作流，角色设计图生图处理工具_2110158334325256194.json、图片生成/图生图/Qwen_Image_2.1图生图工作流，人像写真风格化图生图处理方案_2109102844388397058.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit NextScene｜图生图多分镜自动生成 8步写实写真_2097535884341112834.json、图片生成/图生图/Qwen-Edit-NextScene-2511｜多分镜自动图生图8步一致性出图_2092615856743342081.json、图片生成/图生图/Qwen-Edit-NextScene2511｜图生图多分镜自动8步_2107675125259792386.json、图片生成/图生图/Qwen-Edit多分镜图生图｜NextScene 2511八步自动分镜_2099917725115179009.json、图片生成/图生图/图生图加多分镜自动Qwen Edit NextScene 2511 8步工作流，角色一致性图生图_2107928830039117826.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
@@ -25,31 +25,43 @@ source: knowledge_consolidation
 全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CM_FloatUnaryOperation`
+- `CM_IntToFloat`
+- `CR Prompt Text`
 - `EmptyLatentImage`
+- `FL_ImageBatchToGrid`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetImageSizeAndCount`
+- `ImageListToBatch+`
+- `Int`
+- `JWIntegerToString`
 - `JjkText`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PrimitiveStringMultiline`
+- `ProcessString`
+- `Qwen3_VQA_Plus`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `StringFunction|pysssss`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy promptLine`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 8/9 个有
-- `Anything Everywhere3` —— 7/9 个有
-- `孤海注释` —— 7/9 个有
-- `Text` —— 6/9 个有
-- `ImageToMask` —— 5/9 个有
-- `PixaromaInpaintCrop` —— 5/9 个有
-- `PixaromaUncrop` —— 5/9 个有
-- `ImageColorMatch+` —— 3/9 个有
-- `EmptyImage` —— 2/9 个有
-- `Image Remove Alpha JK` —— 2/9 个有
-- `ResolutionSelector` —— 2/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `CFGNorm` —— 8/9 个有
+- `ModelSamplingAuraFlow` —— 8/9 个有
 
 ## 典型参数
 
@@ -67,7 +79,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -78,4 +90,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 高发问题（18/9 个样本）：Steps较低可能导致细节不足

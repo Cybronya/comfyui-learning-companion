@@ -3,62 +3,72 @@ name: text_to_image_lora_sampler_clip_263
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.789125
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ComfySwitchNode, ConditioningZeroOut, EmptyLatentImage, EmptyYuE2LatentAudio, JjkText, KSampler, LoraLoaderModelOnly, PreviewAny, PrimitiveBoolean, PrimitiveString, PrimitiveStringMultiline, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, YuE2GenerateABC, YuE2GenerateMusic, solarL_SaveImagesToZip]
+coverage: 0.915
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2114263696510898178.json, 图片生成/文生图/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2115292899146555394.json, 音频生成/音频生成/YuE2官方文生音乐工作流｜AI作曲生成原创音乐_2106992486311874561.json, 音频生成/音频生成/YuE2文本转音乐｜一句话描述生成完整曲子，配乐创作零门槛_2107313406511501314.json, 音频生成/音频生成/YuE2文生音乐ComfyUI官方版音频生成处理工作流_2101389597929459714.json, 音频生成/音频生成/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2110539658919759874.json, 音频生成/音频生成/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2110890424977158146.json, 音频生成/音频生成/文本转音乐YuE2工作流，音频生成文本到音乐创作工具_2107596310319816705.json]
+members: [图片生成/文生图/MiniMax H3高质感低显存文生视频16G24G可跑真人感优化，文生视频方案_2107557534063218690.json, 图片生成/文生图/MiniMax H3高质感低显存文生视频｜16G_24G显卡可跑，真人感优化_2107307665390133250.json, 图片生成/文生图/Minimax H3二采提速｜高分辨率生成细节修复修脸去伪影_2088753229877301249.json, 视频生成/文生视频/FastH3 V2首尾帧视频 文生视频图生视频处理_2100685040215740418.json, 视频生成/文生视频/FastH3图生视频 高效视频生成处理工具_2100661665351168002.json, 视频生成/文生视频/FastVideo FastH3文生视频工作流，文生视频高效文本到视频生成方案_2107907010388914178.json, 视频生成/文生视频/FastVideo FastH3文生视频｜提示词直出视频不绕路_2107692375844941826.json, 视频生成/文生视频/H3 LightX2V二采高清文生视频图生视频生成_2088217634990018561.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_263
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2114263696510898178.json、图片生成/文生图/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2115292899146555394.json、音频生成/音频生成/YuE2官方文生音乐工作流｜AI作曲生成原创音乐_2106992486311874561.json、音频生成/音频生成/YuE2文本转音乐｜一句话描述生成完整曲子，配乐创作零门槛_2107313406511501314.json、音频生成/音频生成/YuE2文生音乐ComfyUI官方版音频生成处理工作流_2101389597929459714.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/MiniMax H3高质感低显存文生视频16G24G可跑真人感优化，文生视频方案_2107557534063218690.json、图片生成/文生图/MiniMax H3高质感低显存文生视频｜16G_24G显卡可跑，真人感优化_2107307665390133250.json、图片生成/文生图/Minimax H3二采提速｜高分辨率生成细节修复修脸去伪影_2088753229877301249.json、视频生成/文生视频/FastH3 V2首尾帧视频 文生视频图生视频处理_2100685040215740418.json、视频生成/文生视频/FastH3图生视频 高效视频生成处理工具_2100661665351168002.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `EmptyYuE2LatentAudio`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `SaveAudioAdvanced`
-- `SeedNode`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `YuE2GenerateABC`
-- `YuE2GenerateMusic`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 5/8 个有
-- `孤海注释` —— 5/8 个有
-- `EmptyImage` —— 3/8 个有
-- `PreviewImage` —— 3/8 个有
-- `LoadImage` —— 2/8 个有
-- `Audio Duration (mtb)` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `PrimitiveInt` —— 1/8 个有
-- `RepeatImageBatch` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `VHS_VideoCombine` —— 1/8 个有
+- `ModelAttentionBackend` —— 7/8 个有
+- `MiniMaxH3SigmaShift` —— 6/8 个有
+- `BlockSparseAttention` —— 4/8 个有
+- `LoadImage` —— 4/8 个有
+- `SaveImage` —— 4/8 个有
+- `GetVideoComponents` —— 2/8 个有
+- `ImageResizeKJv2` —— 2/8 个有
+- `ImageScale` —— 2/8 个有
+- `MiniMaxChunkFeedForward` —— 2/8 个有
+- `MiniMaxLowVRAMAttention` —— 2/8 个有
+- `PT_H3ConcatAVLatent` —— 2/8 个有
+- `SeedVR2LoadDiTModel` —— 2/8 个有
+- `SeedVR2LoadVAEModel` —— 2/8 个有
+- `SeedVR2VideoUpscaler` —— 2/8 个有
+- `VAEEncode` —— 2/8 个有
+- `VAEEncodeAudio` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `GetImageSize` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 1/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/8 个有
+- `PathchSageAttentionKJ` —— 1/8 个有
 
 ## 典型参数
 

@@ -3,56 +3,67 @@ name: text_to_image_lora_sampler_clip_282
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.893714
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CR Prompt Text, DF_Get_image_size, EmptyLatentImage, ImageScaleToTotalPixels, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.876
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PrimitiveInt, PrimitiveStringMultiline, RegexExtract, SaveImage, UNETLoader, VAEDecode, VAELoader, YUAN_TXTConvertAny, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, easy batchAnything, easy forLoopEnd, easy forLoopStart, sch_split_text, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Boogu Edit图像编辑优化版图生图工作流，局部重绘图生图处理工具_2103988876833542145.json, 图片生成/图生图/Boogu Edit图像编辑优化版图生图工作流，局部重绘图生图处理方案_2103990521432731649.json, 图片生成/图生图/Boogu+VR2.5光学眼镜场景｜OpticScene质感写真｜镜片反光都真实_2102607039821336578.json, 图片生成/图生图/boogu edit优化改图工作流｜上传图输提示词精准局部重绘_2103692889040707585.json, 图片生成/图生图/boogu edit优化版图像编辑，图生图局部重绘稳出图_2112332507399147522.json, 图片生成/图生图/boogu edit图像编辑优化版｜图生图局部重绘多用途｜日常修图好帮手_2112055812716843010.json, 图片生成/图生图/boogu edit图像编辑优化版｜局部重绘图生图细致改图_2103691242205966338.json]
+members: [图片生成/反推提示词/短剧拍档V11.5 千问qwen image 2.1一键生成人物道具场景资产_2104341680827748353.json, 图片生成/文生图/Krea2版短剧拍档V10.0｜人物道具场景全资产反推提示词图生图_2092557531926327297.json, 图片生成/文生图/image 2版短剧拍档V10.0｜人物道具场景资产一键生成全节点注释_2092554666830811137.json, 图片生成/文生图/场景角色一站式生成 短剧拍档全资产制作支持多图编辑_2098099264600760321.json, 图片生成/文生图/短剧拍档V10.0 Krea2版｜场景角色一键生成全节点注释_2092323335656005634.json, 图片生成/文生图/短剧拍档V11.1一键生成全部资产｜人物道具场景全节点注释_2097936336417284098.json, 图片生成/文生图/短剧拍档资产生成工作流｜人物道具场景一键批量出图_2097851274552233985.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_282
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Boogu Edit图像编辑优化版图生图工作流，局部重绘图生图处理工具_2103988876833542145.json、图片生成/图生图/Boogu Edit图像编辑优化版图生图工作流，局部重绘图生图处理方案_2103990521432731649.json、图片生成/图生图/Boogu+VR2.5光学眼镜场景｜OpticScene质感写真｜镜片反光都真实_2102607039821336578.json、图片生成/图生图/boogu edit优化改图工作流｜上传图输提示词精准局部重绘_2103692889040707585.json、图片生成/图生图/boogu edit优化版图像编辑，图生图局部重绘稳出图_2112332507399147522.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/短剧拍档V11.5 千问qwen image 2.1一键生成人物道具场景资产_2104341680827748353.json、图片生成/文生图/Krea2版短剧拍档V10.0｜人物道具场景全资产反推提示词图生图_2092557531926327297.json、图片生成/文生图/image 2版短剧拍档V10.0｜人物道具场景资产一键生成全节点注释_2092554666830811137.json、图片生成/文生图/场景角色一站式生成 短剧拍档全资产制作支持多图编辑_2098099264600760321.json、图片生成/文生图/短剧拍档V10.0 Krea2版｜场景角色一键生成全节点注释_2092323335656005634.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `DF_Get_image_size`
+- `CR Text`
 - `EmptyLatentImage`
-- `ImageScaleToTotalPixels`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SamplerCustom`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RegexExtract`
 - `SaveImage`
-- `TextEncodeBooguEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `YUAN_TXTConvertAny`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTParagraphSplitter`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `sch_split_text`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 6/7 个有
-- `PreviewImage` —— 6/7 个有
-- `easy cleanGpuUsed` —— 6/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `SeedVR2LoadDiTModel` —— 1/7 个有
-- `SeedVR2LoadVAEModel` —— 1/7 个有
-- `SeedVR2VideoUpscaler` —— 1/7 个有
+- `RH_RhartImageG2TextToImage` —— 4/7 个有
+- `YuanMultiImage` —— 4/7 个有
+- `BasicScheduler` —— 2/7 个有
+- `CFGGuider` —— 2/7 个有
+- `ComfySwitchNode` —— 2/7 个有
+- `KSamplerSelect` —— 2/7 个有
+- `PrimitiveBoolean` —— 2/7 个有
+- `RandomNoise` —— 2/7 个有
+- `SamplerCustomAdvanced` —— 2/7 个有
+- `Anything Everywhere3` —— 1/7 个有
+- `LoadImage` —— 1/7 个有
+- `QwenImage21Cache` —— 1/7 个有
+- `ResolutionSelector` —— 1/7 个有
+- `Seed (rgthree)` —— 1/7 个有
+- `TextEncodeQwenImage21` —— 1/7 个有
+- `TextGenerateLTX2Prompt` —— 1/7 个有
 
 ## 典型参数
 

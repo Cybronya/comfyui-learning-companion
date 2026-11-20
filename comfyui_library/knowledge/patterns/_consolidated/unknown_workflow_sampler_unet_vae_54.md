@@ -1,78 +1,89 @@
 ---
 name: unknown_workflow_sampler_unet_vae_54
 type: Unknown Workflow
-frequency: 15
-level: moderate
-coverage: 0.773733
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoaderKJ]
-problems: []
+frequency: 13
+level: strong
+coverage: 0.573846
+common_nodes: [Any Switch (rgthree), CLIPLoader, CR Prompt Text, EmptyLatentImage, KSampler, LoadImage, PathchSageAttentionKJ, PixaromaGroupSwitch, QwenImage21Cache, QwenPERewriteT8, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/MSR六宫格LTX2.3导演台_2072988146970742785.json, 图片生成/图生图/【Work-Fisher】全自动六宫格LTX2.3导演台_2073426994209050626.json, 平台全量/LTX2.3-导演分镜节点2.0-参考视频生成_2071062549084327938.json, 平台全量/LTX2.3-导演分镜节点2.0-视频延长_2071060329731280897.json, 平台全量/LTX2.3-导演分镜节点2.0-视频编辑（局部重绘）_2070872825044488194.json, 视频生成/图生视频/LTX+2.3 Director 6宫格 _ 单图 简化版工作流-用于集成_2064037629812895745.json, 视频生成/图生视频/LTX2.3-图生视频+导演分镜节点2.0_2070497842334097410.json, 视频生成/图生视频/LTX2.3-图生视频+导演分镜节点_2055988767751720962.json, 视频生成/图生视频/LTX2.3-图生视频+导演分镜节点（自定义音频版）_2056019458614931458.json, 视频生成/图生视频/LTX2.3-自动剧情-全自动宫格导演台_2068587096239071233.json, 视频生成/图生视频/LTX导演台_2075025517912346625.json, 视频生成/图生视频/aidir-LTX2.3-LTX Director-全自动宫格导演台-自动剧情_2070124907555545090.json, 视频生成/图生视频/aidir-LTX2.3-LTX Director-六宫格全自动宫格导演台-自动剧情_2070402488083238913.json, 视频生成/图生视频/【Work-Fisher】全自动六宫格LTX2.3导演台_2062044647668666370.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台（短剧使用）_2071479057736355841.json]
+members: [图片生成/反推提示词/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2103948729811300354.json, 图片生成/反推提示词/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json, 图片生成/图生图/Qwen Image 2.1 图像编辑工作流V1.0（2026开源最强模型）_2107740009477533698.json, 图片生成/图生图/Qwen Image 2.1 图像编辑（2026开源最强模型）V1.0_2107721379499036673.json, 图片生成/图生图/Qwen Image 2.1 图像编辑（2026开源最强模型）_2107721422918475777.json, 图片生成/图生图/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2105178155706314754.json, 图片生成/图生图/Qwen_Image_2.1_图生图_图像编辑2026开源最强模型工作流V1.0_2110537442909581314.json, 图片生成/图生图/Qwen_Image_2.1_图生图_图像编辑2026开源最强模型工作流_2110645691214286849.json, 图片生成/图生图/Qwen_Image_2.1_图生图_图像编辑2026开源最强模型工作流_2111275657190793218.json, 图片生成/图生图/多图编辑Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2107725897594925057.json, 图片生成/文生图/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流_2108147300043419649.json, 图片生成/文生图/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流_2108160778015698945.json, 图片生成/文生图/Qwen Image 2.1 海报生成专属工作流_2107142517820051458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_54
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/MSR六宫格LTX2.3导演台_2072988146970742785.json、图片生成/图生图/【Work-Fisher】全自动六宫格LTX2.3导演台_2073426994209050626.json、平台全量/LTX2.3-导演分镜节点2.0-参考视频生成_2071062549084327938.json、平台全量/LTX2.3-导演分镜节点2.0-视频延长_2071060329731280897.json、平台全量/LTX2.3-导演分镜节点2.0-视频编辑（局部重绘）_2070872825044488194.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2103948729811300354.json、图片生成/反推提示词/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json、图片生成/图生图/Qwen Image 2.1 图像编辑工作流V1.0（2026开源最强模型）_2107740009477533698.json、图片生成/图生图/Qwen Image 2.1 图像编辑（2026开源最强模型）V1.0_2107721379499036673.json、图片生成/图生图/Qwen Image 2.1 图像编辑（2026开源最强模型）_2107721422918475777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **样本数**：13
+- **可信度**：强结论
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+全部 13 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `EmptyLatentImage`
+- `KSampler`
+- `LoadImage`
+- `PathchSageAttentionKJ`
+- `PixaromaGroupSwitch`
+- `QwenImage21Cache`
+- `QwenPERewriteT8`
+- `SaveImage`
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 14/15 个有
-- `LoadImage` —— 10/15 个有
-- `VHS_VideoCombine` —— 10/15 个有
-- `CS-LTXGridDirector` —— 9/15 个有
-- `GetNode` —— 9/15 个有
-- `SetNode` —— 9/15 个有
-- `easy cleanGpuUsed` —— 9/15 个有
-- `PreviewAny` —— 8/15 个有
-- `RH_LLMAPI_Pro_Node` —— 8/15 个有
-- `LTXDirector` —— 7/15 个有
-- `CreateVideo` —— 6/15 个有
-- `PathchSageAttentionKJ` —— 6/15 个有
-- `SaveVideo` —— 6/15 个有
-- `TTResolutionSelector` —— 6/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/15 个有
-- `ModelPreviewOverrideKJ` —— 4/15 个有
-- `Int` —— 3/15 个有
-- `JjkText` —— 3/15 个有
-- `RH_Utils` —— 3/15 个有
-- `ttN concat` —— 3/15 个有
-- `孤海注释` —— 3/15 个有
-- `ComfySwitchNode` —— 2/15 个有
-- `LiconMSR` —— 1/15 个有
+- `CR Text Concatenate` —— 12/13 个有
+- `Fast Bypasser (rgthree)` —— 12/13 个有
+- `GetNode` —— 12/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/13 个有
+- `LoraLoaderModelOnly` —— 12/13 个有
+- `Mute / Bypass Repeater (rgthree)` —— 12/13 个有
+- `ResolutionSelector` —— 12/13 个有
+- `SetNode` —— 12/13 个有
+- `ShowText|pysssss` —— 12/13 个有
+- `Fast Groups Muter (rgthree)` —— 11/13 个有
+- `PixaromaLabel` —— 11/13 个有
+- `ModelAttentionBackend` —— 2/13 个有
+- `PixaromaResolution` —— 2/13 个有
+- `PreviewAny` —— 2/13 个有
+- `EmptyImage` —— 1/13 个有
+- `PreviewImage` —— 1/13 个有
+- `VRAM_Debug` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 40 | 8 - 40 | 13 | 77% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 13 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 13 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 40，观测区间 8 - 40，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，13 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，13 个样本，取值集中（一致性 100%）
+- 高发问题（12/13 个样本）：Steps较低可能导致细节不足

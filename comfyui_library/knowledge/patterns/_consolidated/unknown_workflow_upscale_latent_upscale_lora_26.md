@@ -1,32 +1,32 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_26
 type: Unknown Workflow
-frequency: 12
+frequency: 11
 level: strong
-coverage: 0.87225
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.899727
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled]
 problems: []
 missing: []
-members: [图片生成/图生图/酱板鸭视频生成器 一键生成多国语言酱板鸭视频 支持OpenClaw_2049510722668859394.json, 图片生成/文生图/LTX2.3-transition-lora-丝滑转场-i2v视频-自动提示词_2040078621276114946.json, 视频生成/图生视频/3.0最新图生视频 （懒人版）你提想法帮你实现_2066087069847482370.json, 视频生成/图生视频/LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_2039704492752510977.json, 视频生成/图生视频/LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_2039914050452201474.json, 视频生成/图生视频/LTX2.3-transition-lora-丝滑转场-i2v-多图-自动提示词_2040291923272933378.json, 视频生成/图生视频/ltx2.3 图生视频_2042446425367257089.json, 视频生成/图生视频/酱板鸭视频生成器 一键生成多国语言酱板鸭视频 支持OpenClaw_2049507628333670402.json, 视频生成/图生视频/酱板鸭视频生成器（LTX-2.3版）：一键生成多国语言对话的酱板鸭视频，支持OpenClaw调用！_2037239092089458690.json, 视频生成/文生视频/LTX-2.3+Qwen3.5生成宠物播客视频_2030535698637398018.json, 视频生成/文生视频/LTX-2.3+Qwen3.5生成武打电影视频_2030549062293921794.json, 视频生成/文生视频/LTX2.3-transition-lora-丝滑转场-t2v视频-自动提示词_2040215269943021570.json]
+members: [图片生成/文生图/LTX2.3 3.5系列套件｜三阶高清文生视频_2067477095336464386.json, 视频生成/图生视频/3图参考_2057833759952687106.json, 视频生成/图生视频/LTX 2.3 三阶段采样四图首尾帧工作流_2036624444684247042.json, 视频生成/图生视频/LTX 2.3 的 100% 实力释放三阶段采样多图首尾帧工作流_2034914796595847170.json, 视频生成/图生视频/LTX2.3 多图参考生视频_2061938954978553858.json, 视频生成/图生视频/LTX2.3+文生视频+3.1｜三阶高清精修_2062353588676030465.json, 视频生成/文生视频/3图参考_2052698977556021250.json, 视频生成/文生视频/4图参考_2052698989765644290.json, 视频生成/文生视频/4图参考音频驱动_2052700211776110593.json, 视频生成/文生视频/LTX2.3 3.5系列套件｜首帧高相似视频_2067652016737968129.json, 视频生成/文生视频/LTX2.3 多图参考重大更新｜多图导入 + 10S相似度锁定，角色稳定不乱_2061671863138476034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_26
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/酱板鸭视频生成器 一键生成多国语言酱板鸭视频 支持OpenClaw_2049510722668859394.json、图片生成/文生图/LTX2.3-transition-lora-丝滑转场-i2v视频-自动提示词_2040078621276114946.json、视频生成/图生视频/3.0最新图生视频 （懒人版）你提想法帮你实现_2066087069847482370.json、视频生成/图生视频/LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_2039704492752510977.json、视频生成/图生视频/LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_2039914050452201474.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/LTX2.3 3.5系列套件｜三阶高清文生视频_2067477095336464386.json、视频生成/图生视频/3图参考_2057833759952687106.json、视频生成/图生视频/LTX 2.3 三阶段采样四图首尾帧工作流_2036624444684247042.json、视频生成/图生视频/LTX 2.3 的 100% 实力释放三阶段采样多图首尾帧工作流_2034914796595847170.json、视频生成/图生视频/LTX2.3 多图参考生视频_2061938954978553858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
 - `CheckpointLoaderSimple`
-- `ComfyMathExpression`
 - `CreateVideo`
 - `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
@@ -35,61 +35,73 @@ source: knowledge_consolidation
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `VAEDecodeTiled`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVImgToVideoInplace` —— 11/12 个有
-- `LTXVPreprocess` —— 11/12 个有
-- `LoadImage` —— 11/12 个有
-- `ResizeImagesByLongerEdge` —— 11/12 个有
-- `PrimitiveBoolean` —— 10/12 个有
-- `PreviewAny` —— 9/12 个有
-- `PrimitiveInt` —— 9/12 个有
-- `PrimitiveStringMultiline` —— 8/12 个有
-- `ImageResizeKJv2` —— 7/12 个有
-- `CustomAddLabel` —— 5/12 个有
-- `Int` —— 5/12 个有
-- `Label (rgthree)` —— 5/12 个有
-- `RH_Utils` —— 5/12 个有
-- `ResizeImageMaskNode` —— 5/12 个有
-- `TTResolutionSelector` —— 5/12 个有
-- `CR Text` —— 4/12 个有
-- `SimpleMath+` —— 4/12 个有
-- `JWFloat` —— 3/12 个有
-- `LTX2_NAG` —— 3/12 个有
-- `StringReplace` —— 3/12 个有
-- `string_util_StrConcat` —— 3/12 个有
-- `ttN concat` —— 3/12 个有
-- `CR Text Concatenate` —— 2/12 个有
-- `Evaluate Integers` —— 2/12 个有
-- `JjkText` —— 2/12 个有
-- `MultiTextConcatenate` —— 2/12 个有
-- `SDVN Any Show` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
-- `ImageStitch` —— 1/12 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/12 个有
-- `MathExpression|pysssss` —— 1/12 个有
-- `ShowAnything|Mie` —— 1/12 个有
+- `LTXVPreprocess` —— 10/11 个有
+- `LoadImage` —— 10/11 个有
+- `image_scale_pixel_v2` —— 10/11 个有
+- `LTX2_NAG` —— 9/11 个有
+- `LTXVImgToVideoConditionOnly` —— 9/11 个有
+- `PrimitiveBoolean` —— 9/11 个有
+- `Seed Everywhere` —— 9/11 个有
+- `Text` —— 9/11 个有
+- `VRAMReserver` —— 9/11 个有
+- `GetImageSize+` —— 8/11 个有
+- `ImageResizeKJv2` —— 8/11 个有
+- `JWImageSequenceExtractFromBatch` —— 8/11 个有
+- `LTXVAddGuideMulti` —— 8/11 个有
+- `PromptRelaySmartEncode` —— 7/11 个有
+- `VHS_VideoCombine` —— 7/11 个有
+- `Int` —— 6/11 个有
+- `PreviewImage` —— 6/11 个有
+- `easy showAnything` —— 6/11 个有
+- `STGGuiderAdvanced` —— 5/11 个有
+- `SaveVideo` —— 5/11 个有
+- `Sigmas Easing` —— 5/11 个有
+- `LTXFaceDetector` —— 4/11 个有
+- `LTXLatentAnchorAware` —— 4/11 个有
+- `LTXLikenessAnchor` —— 4/11 个有
+- `LTXLikenessGuide` —— 4/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/11 个有
+- `PromptRelayAdvancedOptions` —— 4/11 个有
+- `PromptRelayEncodeTimeline` —— 4/11 个有
+- `SimpleMath+` —— 4/11 个有
+- `LTXICLoRALoaderModelOnly` —— 3/11 个有
+- `Image_Resize_longsize` —— 2/11 个有
+- `LTXVAudioVAEEncode` —— 2/11 个有
+- `LoadAudio` —— 2/11 个有
+- `ResizeImageMaskNode` —— 2/11 个有
+- `ResizeLongestToNode` —— 2/11 个有
+- `Audio Duration (mtb)` —— 1/11 个有
+- `DF_Integer` —— 1/11 个有
+- `Float` —— 1/11 个有
+- `GetLatentSizeAndCount` —— 1/11 个有
+- `JWInteger` —— 1/11 个有
+- `MelBandRoFormerModelLoader` —— 1/11 个有
+- `MelBandRoFormerSampler` —— 1/11 个有
+- `SetLatentNoiseMask` —— 1/11 个有
+- `SolidMask` —— 1/11 个有
+- `TextBox` —— 1/11 个有
+- `TrimAudioDuration` —— 1/11 个有
+- `easy mathInt` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 12 | 100% |
-| 高度 | 25 | 25 - 25 | 12 | 100% |
+| 宽度 | 97 | 97 - 121 | 11 | 93% |
+| 高度 | 25 | 25 - 25 | 11 | 100% |
 
 ## 常见问题
 
@@ -97,5 +109,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，12 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，12 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 121，11 个样本，取值集中（一致性 93%）
+- 高度 中位数 25，观测区间 25 - 25，11 个样本，取值集中（一致性 100%）

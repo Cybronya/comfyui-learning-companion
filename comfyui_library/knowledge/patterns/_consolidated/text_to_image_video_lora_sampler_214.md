@@ -3,54 +3,92 @@ name: text_to_image_video_lora_sampler_214
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8745
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageConcanate, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, RIFE VFI, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.6095
+common_nodes: [AudioConcat, BasicGuider, BlockSparseAttention, CLIPLoader, CLIPTextEncode, CM_FloatToInt, ColorTransfer, ComfyMathExpression, ComfySwitchNode, CreateVideo, EmptyAudio, EmptyLatentImage, Float, GetNode, GetVideoComponents, ImageAddNoise, ImageBatchMulti, ImageFromBatch, Int, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, ManualSigmas, MemoryManager, MiniMaxH3AddGuide, MiniMaxH3PromptEnhancerT8, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaDropdown, PreviewAny, PreviewAudio, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize, RandomNoise, RepeatImageBatch, ResizeShortestToNode, ResolutionSelector, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, StringMergeNode, StringToNumber, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VideoFrameSample, VideoTemporalCrop, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI视频换脸工作流｜一键人脸替换直出成片_2090601453319708673.json, 数字人/数字人/人物表情变化｜Liveportrait数字人角色表演_2091237518711812098.json]
+members: [数字人/数字人/MiniMaxH3综合工作流 数字人替换动作迁移长视频工具_2113707746108461057.json, 数字人/数字人/MinimaxH3综合工作流｜数字人人物替换动作迁移断点续接_2113536562838466562.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_214
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/AI视频换脸工作流｜一键人脸替换直出成片_2090601453319708673.json、数字人/数字人/人物表情变化｜Liveportrait数字人角色表演_2091237518711812098.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/MiniMaxH3综合工作流 数字人替换动作迁移长视频工具_2113707746108461057.json、数字人/数字人/MinimaxH3综合工作流｜数字人人物替换动作迁移断点续接_2113536562838466562.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AudioConcat`
+- `BasicGuider`
+- `BlockSparseAttention`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
+- `ColorTransfer`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `CreateVideo`
+- `EmptyAudio`
 - `EmptyLatentImage`
-- `ImageConcanate`
+- `Float`
+- `GetNode`
+- `GetVideoComponents`
+- `ImageAddNoise`
+- `ImageBatchMulti`
+- `ImageFromBatch`
+- `Int`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `RIFE VFI`
+- `ManualSigmas`
+- `MemoryManager`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3PromptEnhancerT8`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PixaromaDropdown`
+- `PreviewAny`
+- `PreviewAudio`
+- `RH_IndexTTS25_Loader`
+- `RH_IndexTTS25_Synthesize`
+- `RandomNoise`
+- `RepeatImageBatch`
+- `ResizeShortestToNode`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
+- `StringMergeNode`
+- `StringToNumber`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_GetImageCount`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VideoFrameSample`
+- `VideoTemporalCrop`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AdvancedLivePortrait` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `CR Value` —— 1/2 个有
-- `ExpressionEditor` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ReActorFaceSwap` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `VHS_VideoInfo` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 

@@ -2,79 +2,105 @@
 name: unknown_workflow_video_upscale_latent_upscale_34
 type: Unknown Workflow
 frequency: 10
-level: moderate
-coverage: 0.5278
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+level: strong
+coverage: 0.8139
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, ImageResizeKJv2, ImageScaleToTotalPixels, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy int, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/高清 替换（借鉴）_2108884315378642945.json, 视频生成/图生视频/H3 多参考双采｜5秒一致性版_2098723223021113346.json, 视频生成/图生视频/H3短剧生成新模型_2102294100425920514.json, 视频生成/图生视频/H3融合模型专属双采【16步高清PLUS 低显存危！】_2111450243706482690.json, 视频生成/图生视频/MiniMax H3-多参考生视频 快速高质量_2098739556991455233.json, 视频生成/图生视频/MiniMax H3-多参考生视频-720p_2094616194417516546.json, 视频生成/图生视频/MiniMax H3-多参考生视频-优化版_2094397865706737666.json, 视频生成/图生视频/MiniMax H3-多参考生视频-自用_2099876679551377409.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-优化版_2099771867585409025.json, 视频生成/图生视频/MiniMax_H3-多参考生视频-优化版_2100032660772057090.json]
+members: [图片生成/文生图/LTX2.3数字人-(修仙传角色)_2064873985099255809.json, 数字人/数字人/LTX2.3数字人30S只要10分钟-(预置凡人修仙传角色)_2067452419683995650.json, 数字人/数字人/LTX2.3高动态数字人带一致性保持(预置凡人修仙传角色)_2064430603466010626.json, 视频生成/图生视频/30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json, 视频生成/图生视频/LTX2.3 动漫数字人特制版_2069018499376312322.json, 视频生成/图生视频/LTX2.3数字人30S只要10分钟-(小海豚老师教唱歌学员专用)_2069213658181365761.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2068898654504706050.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2069966527956344833.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2075040945753640962.json, 视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2095739123867938818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_34
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/高清 替换（借鉴）_2108884315378642945.json、视频生成/图生视频/H3 多参考双采｜5秒一致性版_2098723223021113346.json、视频生成/图生视频/H3短剧生成新模型_2102294100425920514.json、视频生成/图生视频/H3融合模型专属双采【16步高清PLUS 低显存危！】_2111450243706482690.json、视频生成/图生视频/MiniMax H3-多参考生视频 快速高质量_2098739556991455233.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/LTX2.3数字人-(修仙传角色)_2064873985099255809.json、数字人/数字人/LTX2.3数字人30S只要10分钟-(预置凡人修仙传角色)_2067452419683995650.json、数字人/数字人/LTX2.3高动态数字人带一致性保持(预置凡人修仙传角色)_2064430603466010626.json、视频生成/图生视频/30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json、视频生成/图生视频/LTX2.3 动漫数字人特制版_2069018499376312322.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+- `CFGGuider`
+- `CLIPTextEncode`
 - `ComfyMathExpression`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `PrimitiveFloat`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAudio`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleMath+`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecodeAudio` —— 9/10 个有
-- `easy float` —— 9/10 个有
-- `GetNode` —— 8/10 个有
-- `LoadAudio` —— 8/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
-- `SetNode` —— 8/10 个有
-- `Text` —— 8/10 个有
-- `忽略多组孤海` —— 8/10 个有
-- `LoraLoaderModelOnly` —— 6/10 个有
-- `ModelAttentionBackend` —— 4/10 个有
-- `llama_cpp_instruct_adv` —— 4/10 个有
-- `llama_cpp_model_loader` —— 4/10 个有
-- `llama_cpp_parameters` —— 4/10 个有
-- `ShowText|pysssss` —— 3/10 个有
-- `Lora Loader Stack (rgthree)` —— 2/10 个有
-- `PrimitiveStringMultiline` —— 2/10 个有
-- `SolAttnMiniMax` —— 2/10 个有
-- `BlockSparseAttention` —— 1/10 个有
-- `MiniMaxH3SigmaShift` —— 1/10 个有
-- `ModelPreviewOverrideKJ` —— 1/10 个有
-- `PreviewAny` —— 1/10 个有
-- `PrimitiveInt` —— 1/10 个有
-- `ResizeImageMaskNode` —— 1/10 个有
-- `easy cleanGpuUsed` —— 1/10 个有
-- `easy loraStack` —— 1/10 个有
-- `easy loraStackApply` —— 1/10 个有
+- `CM_IntUnaryCondition` —— 9/10 个有
+- `CR Prompt Text` —— 9/10 个有
+- `CR String To Boolean` —— 9/10 个有
+- `ImpactConditionalBranch` —— 9/10 个有
+- `IndexTTS2Run` —— 9/10 个有
+- `PrimitiveFloat` —— 9/10 个有
+- `easy anythingIndexSwitch` —— 9/10 个有
+- `BasicScheduler` —— 8/10 个有
+- `JoinStrings` —— 8/10 个有
+- `LTXVTiledVAEDecode` —— 8/10 个有
+- `ModelSamplingSD3` —— 7/10 个有
+- `JoinStringMulti` —— 2/10 个有
+- `LTXVLatentUpsampler` —— 2/10 个有
+- `LTXVScheduler` —— 2/10 个有
+- `ManualSigmas` —— 2/10 个有
+- `VAEDecode` —— 2/10 个有
+- `ComfySwitchNode` —— 1/10 个有
+- `Evaluate Strings` —— 1/10 个有
+- `LTX2SamplingPreviewOverride` —— 1/10 个有
+- `ResolutionSelector` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
+- `easy float` —— 1/10 个有
+- `llama_cpp_instruct_adv` —— 1/10 个有
+- `llama_cpp_model_loader` —— 1/10 个有
+- `llama_cpp_parameters` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 10 | 100% |
+| 高度 | 25 | 25 - 25 | 10 | 100% |
 
 ## 常见问题
 
@@ -82,4 +108,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）

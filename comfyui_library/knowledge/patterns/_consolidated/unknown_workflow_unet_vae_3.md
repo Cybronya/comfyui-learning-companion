@@ -1,83 +1,87 @@
 ---
 name: unknown_workflow_unet_vae_3
 type: Unknown Workflow
-frequency: 19
-level: weak
-coverage: 0.945842
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 16
+level: moderate
+coverage: 0.873437
+common_nodes: [CLIPLoader, CR Prompt Text, ComfySwitchNode, EmptyLatentImage, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [comfyui-workflow-templates-json/flux_schnell_full_text_to_image.json, 图片生成/图生图/OneReward Fill局部重绘工作流_2068347330910310401.json, 图片生成/图生图/OneReward Fill扩图工作流_2068355013654695937.json, 图片生成/图生图/OneReward_Fill局部重绘、扩图工作流_2038613347419033601.json, 图片生成/图生图/OneReward_Fill局部重绘工作流_2008781795990446082.json, 图片生成/图生图/OneReward_Fill扩图工作流_2008787024437841921.json, 图片生成/图生图/flux-扩图_1977705117887725570.json, 图片生成/图生图/tonnie-flux-fill扩图_1992516908226506754.json, 图片生成/文生图/00.flux生成脸模_许老师专用_1976289488496402434.json, 平台全量/Fill One reward扩图工作流_1966517903581491201.json, 平台全量/Fill-OneReward局部重绘_1965834350589841409.json, 平台全量/Flux 扩展图像流_2081307166522298369.json, 平台全量/Flux-Fill-OneReward扩图_1966404380306157569.json, 平台全量/Flux-Fill-dev_OneReward_扩图-图像边界外扩_1890257481967476738.json, 平台全量/Flux-fill-OneReward局部重绘工作流_2003858175654830082.json, 平台全量/Flux-fill-Oneward超强扩图(原图无损)_1986104126394302465.json, 平台全量/Flux1-OneReward(扩图工作流)_2031262107773181953.json, 平台全量/完美扩图-Flux-OneReward_1989245729254289410.json, 平台全量/扩图   flux.1-onereward-fp8模型_2062721666807058433.json]
+members: [图片生成/反推提示词/Qwen Image 2.1 PE 文生图_2102401855983808514.json, 图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json, 图片生成/图生图/BF16小字不崩-Qwen_image_2.1图片编辑_2104378058986844161.json, 图片生成/图生图/BFS换脸6步加速版Qwen_Image_2.1图像编辑_2108752507940986881.json, 图片生成/图生图/BFS换脸6步加速版Qwen_Image_2.1图像编辑_2110554314409332737.json, 图片生成/图生图/Qwen 2.1 图像编辑（4步加速）_2102704302576988161.json, 图片生成/图生图/Qwen Image 2.1 PE 图像编辑-t8加速版_2105710865591922690.json, 图片生成/图生图/Qwen Image 2.1 PE 图像编辑2609_2106042591421747201.json, 图片生成/图生图/Qwen Image 2.1 参考人物姿势_2102935036923310081.json, 图片生成/图生图/Qwen Image 2.1 整张图像编辑_2102952588135194626.json, 图片生成/图生图/多图编辑丨Qwen-Image 2.1丨T8加速_2113204332517748738.json, 图片生成/图生图/（最强T8版加速）Qwen Image 2.1 PE（Un） 图像编辑v2_2108627010334584834.json, 图片生成/文生图/AI人像编辑丨Qwen Image 2.1 Turbo_2110593367078952962.json, 图片生成/文生图/Qwen Image 2.1 t8加速PE+int8加速版_2109835098110648321.json, 图片生成/文生图/Qwen Image 2.1 t8加速PE+int8加速版_2110684372931268609.json, 图片生成/文生图/（最强T8版加速）Qwen Image 2.1 PE(Un) 文生图v2_2108631026816868353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（comfyui-workflow-templates-json/flux_schnell_full_text_to_image.json、图片生成/图生图/OneReward Fill局部重绘工作流_2068347330910310401.json、图片生成/图生图/OneReward Fill扩图工作流_2068355013654695937.json、图片生成/图生图/OneReward_Fill局部重绘、扩图工作流_2038613347419033601.json、图片生成/图生图/OneReward_Fill局部重绘工作流_2008781795990446082.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1 PE 文生图_2102401855983808514.json、图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json、图片生成/图生图/BF16小字不崩-Qwen_image_2.1图片编辑_2104378058986844161.json、图片生成/图生图/BFS换脸6步加速版Qwen_Image_2.1图像编辑_2108752507940986881.json、图片生成/图生图/BFS换脸6步加速版Qwen_Image_2.1图像编辑_2110554314409332737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：16
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
+全部 16 个 workflow 都包含：
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `ResolutionSelector`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `InpaintModelConditioning` —— 17/19 个有
-- `LoadImage` —— 17/19 个有
-- `KSampler` —— 16/19 个有
-- `ImagePadForOutpaint` —— 12/19 个有
-- `DifferentialDiffusion` —— 11/19 个有
-- `FluxGuidance` —— 11/19 个有
-- `CLIPTextEncode` —— 10/19 个有
-- `CLIPTextEncodeFlux` —— 9/19 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/19 个有
-- `LoraLoaderModelOnly` —— 9/19 个有
-- `PreviewImage` —— 9/19 个有
-- `Image Comparer (rgthree)` —— 6/19 个有
-- `GrowMaskWithBlur` —— 5/19 个有
-- `RH_Translator` —— 5/19 个有
-- `ImageComposite+` —— 4/19 个有
-- `LayerMask: MaskGrow` —— 4/19 个有
-- `KSamplerAdvanced` —— 3/19 个有
-- `easy clearCacheAll` —— 3/19 个有
-- `EmptySD3LatentImage` —— 2/19 个有
-- `easy cleanGpuUsed` —— 2/19 个有
-- `easy seed` —— 2/19 个有
-- `ImageAndMaskPreview` —— 1/19 个有
-- `ImagePadForOutpaintMasked` —— 1/19 个有
-- `MemoryCleaner` —— 1/19 个有
-- `PreviewTextNode` —— 1/19 个有
-- `easy ifElse` —— 1/19 个有
+- `LoadImage` —— 14/16 个有
+- `QwenPERewriteT8` —— 14/16 个有
+- `easy cleanGpuUsed` —— 14/16 个有
+- `easy showAnything` —— 14/16 个有
+- `QwenImage21Cache` —— 12/16 个有
+- `QwenImage21SageAttentionT8` —— 12/16 个有
+- `KSampler` —— 10/16 个有
+- `LoraLoaderModelOnly` —— 9/16 个有
+- `QwenImage21BlockCacheT8` —— 8/16 个有
+- `QwenImage21SpectrumT8` —— 8/16 个有
+- `CFGGuider` —— 6/16 个有
+- `KSamplerSelect` —— 6/16 个有
+- `ManualSigmas` —— 6/16 个有
+- `RandomNoise` —— 6/16 个有
+- `SamplerCustomAdvanced` —— 6/16 个有
+- `ConcatTextOfUtils` —— 2/16 个有
+- `LoraLoaderBypassModelOnly` —— 2/16 个有
+- `SaveImageAdvanced` —— 2/16 个有
+- `孤海注释` —— 2/16 个有
+- `AIO_Preprocessor` —— 1/16 个有
+- `EmptyImage` —— 1/16 个有
+- `PreviewImage` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 27 | 16 | 66% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 19 | 0% |
-| 采样算法 | euler | - | 19 | 79% |
-| 调度器 | simple | - | 19 | 47% |
-| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
+| 采样步数 | 40 | 4 - 50 | 10 | 34% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 1024 | 1024 - 1152 | 16 | 97% |
+| 高度 | 1024 | 1024 - 2016 | 16 | 78% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 27，16 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，19 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，19 个样本，一致性 79%
-- 调度器 最常用 simple，19 个样本，一致性 47%
-- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 40，观测区间 4 - 50，10 个样本，取值分散，一致性仅 34%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1152，16 个样本，取值集中（一致性 97%）
+- 高度 中位数 1024，观测区间 1024 - 2016，16 个样本

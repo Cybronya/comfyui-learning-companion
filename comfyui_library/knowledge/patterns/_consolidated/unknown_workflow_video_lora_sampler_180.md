@@ -1,101 +1,91 @@
 ---
 name: unknown_workflow_video_lora_sampler_180
 type: Unknown Workflow
-frequency: 13
-level: moderate
-coverage: 0.606769
-common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, GetNode, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, SimpleCalculatorKJ, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
-problems: []
+frequency: 11
+level: strong
+coverage: 0.370182
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageBatch, ImageFromBatch, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/SCAIL 动作迁移_2038819844543483905.json, 视频生成/图生视频/SCAIL 动作迁移（高清版）_2004486159680106498.json, 视频生成/图生视频/SCAIL 动作迁移（高清版）_2015614153280462849.json, 视频生成/图生视频/SCAIL_3D姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2001927280328884225.json, 视频生成/图生视频/SCAIL_pose_control：丝滑动作迁移-适配各种风格也适合多人_2003448511268069377.json, 视频生成/图生视频/SCAIL动作迁移 单人_多人统一版_2073307615077163010.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2011341601720766466.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2041436850325295106.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2042104629911101442.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2054250246871494658.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人多动物同时跳舞_2048599310039785473.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈_2049441031812288514.json, 视频生成/图生视频/萌宠跳舞（高清版）需要48gPlus运行_2013817943620067329.json]
+members: [图片生成/图生图/凤希AI单数字人无限时长对口型（默认80秒）_2021523374865915905.json, 数字人/数字人/InfiniteTalk-Comfyui官流长视频无衰减_2017911925878820866.json, 数字人/数字人/infinitetalk官流_2018550714829643777.json, 视频生成/图生视频/InfiniteTalk 音频驱动 无衰减超长视频生成  一键数字人视频生成_2019318204899794946.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018199752789204993.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018680802581684225.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018684694845460482.json, 视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减版，需要更多长度直接复制采样即可！_2027300224661721090.json, 视频生成/图生视频/【阿良绘】数字人长视频无衰减（分段生成）InfiniteTalk_2020782430164094977.json, 视频生成/图生视频/新InfiniteTalk-Comfyui官方流多段组合无限长视频数字人_2018872300161998849.json, 视频生成/图生视频/最新infinite模型长视频无色差 20s视频只要12分钟_2018523773288321026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_180
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/SCAIL 动作迁移_2038819844543483905.json、视频生成/图生视频/SCAIL 动作迁移（高清版）_2004486159680106498.json、视频生成/图生视频/SCAIL 动作迁移（高清版）_2015614153280462849.json、视频生成/图生视频/SCAIL_3D姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2001927280328884225.json、视频生成/图生视频/SCAIL_pose_control：丝滑动作迁移-适配各种风格也适合多人_2003448511268069377.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/凤希AI单数字人无限时长对口型（默认80秒）_2021523374865915905.json、数字人/数字人/InfiniteTalk-Comfyui官流长视频无衰减_2017911925878820866.json、数字人/数字人/infinitetalk官流_2018550714829643777.json、视频生成/图生视频/InfiniteTalk 音频驱动 无衰减超长视频生成  一键数字人视频生成_2019318204899794946.json、视频生成/图生视频/InfiniteTalk-Comfyui官流长视频无衰减_2018199752789204993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：37%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadNLFModel`
-- `GetImageSizeAndCount`
 - `GetNode`
+- `ImageBatch`
+- `ImageFromBatch`
+- `KSampler`
+- `LoadAudio`
 - `LoadImage`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `RenderNLFPoses`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
 - `SetNode`
-- `SimpleCalculatorKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanInfiniteTalkToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 12/13 个有
-- `ImageResizeKJv2` —— 12/13 个有
-- `VHS_LoadVideo` —— 12/13 个有
-- `WanVideoEncode` —— 12/13 个有
-- `WanVideoUni3C_ControlnetLoader` —— 12/13 个有
-- `WanVideoUni3C_embeds` —— 12/13 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 10/13 个有
-- `DWPreprocessor` —— 10/13 个有
-- `ImageConcatMulti` —— 10/13 个有
-- `WanVideoTorchCompileSettings` —— 9/13 个有
-- `FloatConstant` —— 8/13 个有
-- `JjkText` —— 7/13 个有
-- `Int` —— 4/13 个有
-- `RHHiddenNodes` —— 4/13 个有
-- `intToFloat _O` —— 3/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/13 个有
-- `AddLabel` —— 1/13 个有
-- `CR Prompt Text` —— 1/13 个有
-- `GroundingDinoModelLoader_SDPose` —— 1/13 个有
-- `ImpactSwitch` —— 1/13 个有
-- `Label (rgthree)` —— 1/13 个有
-- `PixelPerfectResolution` —— 1/13 个有
-- `RIFE VFI` —— 1/13 个有
-- `SDPoseOODLoader` —— 1/13 个有
-- `SDPoseOODProcessor` —— 1/13 个有
-- `TwoWaySwitch` —— 1/13 个有
-- `VHS_LoadVideoFFmpeg` —— 1/13 个有
-- `VHS_VideoInfo` —— 1/13 个有
-- `YOLOModelLoader` —— 1/13 个有
-- `easy imageSize` —— 1/13 个有
-- `easy int` —— 1/13 个有
-- `easy showAnything` —— 1/13 个有
-- `ttN text` —— 1/13 个有
+- `AudioCrop` —— 10/11 个有
+- `AudioSeparation` —— 10/11 个有
+- `ConditioningZeroOut` —— 10/11 个有
+- `INTConstant` —— 10/11 个有
+- `ModelSamplingSD3` —— 10/11 个有
+- `PreviewAudio` —— 10/11 个有
+- `CreateVideo` —— 1/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `MelBandRoFormerModelLoader` —— 1/11 个有
+- `MelBandRoFormerSampler` —— 1/11 个有
+- `PreviewAny` —— 1/11 个有
+- `PrimitiveFloat` —— 1/11 个有
+- `PrimitiveInt` —— 1/11 个有
+- `PrimitiveStringMultiline` —— 1/11 个有
+- `SaveVideo` —— 1/11 个有
+- `StringConcatenate` —— 1/11 个有
+- `easy imageScaleDown` —— 1/11 个有
+- `easy int` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 11 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 82% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 87/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 82%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 高发问题（87/11 个样本）：Steps较低可能导致细节不足

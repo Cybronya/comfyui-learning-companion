@@ -1,75 +1,92 @@
 ---
 name: unknown_workflow_sampler_vae_11
 type: Unknown Workflow
-frequency: 25
+frequency: 22
 level: moderate
-coverage: 0.94004
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, CreateVideo, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, VAEDecode]
-problems: []
+coverage: 0.828091
+common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, PreviewImage, RH_LLMAPI_NODE, SaveImage, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流_2068690343561879554.json, 视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流_2068939406005854210.json, 视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流【加速版】_2068922121077747714.json, 视频生成/图生视频/LTX导演台2.0+3DREAK-白模驱动视频工作流_2074134750515777537.json, 视频生成/图生视频/LTX导演台2.0+3DREAK-白模驱动视频工作流_2074150490602033154.json, 视频生成/图生视频/LTX导演台2.0+3DREAK-白模驱动视频工作流_2074307854646996994.json, 视频生成/图生视频/LTX导演台2.0_2069677041460539394.json, 视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2069021020295618562.json, 视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2076638289418870785.json, 视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2082428035797708802.json, 视频生成/图生视频/LTX导演台2.0白模驱动视频工作流_2074291321979891714.json, 视频生成/图生视频/LTX导演台2.0白模驱动视频工作流_2074299424884477953.json, 视频生成/图生视频/ltx2.3导演分镜台视频生成 图生视频，首帧、中间帧、尾帧，_2059276164383985666.json, 视频生成/图生视频/ltx导演节点_2057350661624393729.json, 视频生成/图生视频/【阿良绘】LTX Director _ 导演工作流 V2_2064886980097429505.json, 视频生成/图生视频/【阿良绘】LTX Director _ 导演工作流 V2_2073289175195205632.json, 视频生成/图生视频/【阿良绘】LTX Director导演工作流_2059132036383858689.json, 视频生成/图生视频/人脸一致性-LTX导演台2.0+dasiwaV3_2075476336205983745.json, 视频生成/图生视频/多图参考-LTX2.3导演界面_2056691705071620098.json, 视频生成/图生视频/电商首尾帧生成视频 Ltx Director_2072669818989404161.json, 视频生成/图生视频/视频编辑，视频创作 LTX导演台V2_2069660528036892673.json, 视频生成/文生视频/LTX Director 2.0：全能视频编辑与导演时间线_2068936813363941377.json, 视频生成/文生视频/LTX Director 导演工作台 (2采)_2064170624049827841.json, 视频生成/文生视频/LTX2.3导演台V2+图生视频工作流_2072015806417956866.json, 视频生成/文生视频/LTX_2.3_Director_2.0_多功能导演台7.11优化版工作流_2075912339274162178.json]
+members: [图片生成/图生图/Nunchaku-千问Edit2509图像编辑-单图_1971195509471952898.json, 图片生成/图生图/Nunchaku-千问Edit2509图像编辑-多图融合_1971196973699284993.json, 图片生成/图生图/Qwen Image Edit 2511-单图编辑-提示词优化_2003833825832648705.json, 图片生成/图生图/Qwen Image Edit 2511-多图编辑-提示词优化_2003830071397892098.json, 图片生成/图生图/Qwen_image_Edit_2511千问图片编辑-单图_2003744147611762690.json, 图片生成/图生图/【Supermate】千问Edit2511图像编辑-脸部融合_2003714145767833601.json, 图片生成/图生图/千问Edit2509-单图-效果图转换手绘_1974725230688120833.json, 图片生成/图生图/千问Edit2509图像编辑-单图_1970831316243648513.json, 图片生成/图生图/千问Edit2509图像编辑-多图融合_1970858618352504834.json, 图片生成/图生图/千问Edit2509配合lora-单图-效果图转换手绘_1981990651577409537.json, 图片生成/图生图/千问Edit2511图像编辑-单图_2003636801959043074.json, 图片生成/图生图/千问Edit2511图像编辑-单图_2071099776166350849.json, 图片生成/图生图/千问Edit2511图像编辑-单图_2071102894794960897.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2003558265445335041.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2003625306432913410.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2003650176382345217.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2065079427427557377.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2065096059185098753.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2065416364688502786.json, 图片生成/图生图/千问Edit2511图像编辑_2003705719016833025.json, 图片生成/图生图/千问Edit2511多图编辑_2003716186049290242.json, 图片生成/图生图/老照片修复·超强悍_2010981023328243714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_11
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流_2068690343561879554.json、视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流_2068939406005854210.json、视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流【加速版】_2068922121077747714.json、视频生成/图生视频/LTX导演台2.0+3DREAK-白模驱动视频工作流_2074134750515777537.json、视频生成/图生视频/LTX导演台2.0+3DREAK-白模驱动视频工作流_2074150490602033154.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/Nunchaku-千问Edit2509图像编辑-单图_1971195509471952898.json、图片生成/图生图/Nunchaku-千问Edit2509图像编辑-多图融合_1971196973699284993.json、图片生成/图生图/Qwen Image Edit 2511-单图编辑-提示词优化_2003833825832648705.json、图片生成/图生图/Qwen Image Edit 2511-多图编辑-提示词优化_2003830071397892098.json、图片生成/图生图/Qwen_image_Edit_2511千问图片编辑-单图_2003744147611762690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
+- **样本数**：22
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+全部 22 个 workflow 都包含：
+- `CLIPLoader`
 - `ConditioningZeroOut`
-- `CreateVideo`
-- `KSamplerSelect`
-- `LTXDirector`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `LoadImage`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 24/25 个有
-- `LTXVConditioning` —— 24/25 个有
-- `VAELoaderKJ` —— 23/25 个有
-- `LTXVLatentUpsampler` —— 21/25 个有
-- `LatentUpscaleModelLoader` —— 21/25 个有
-- `SaveVideo` —— 21/25 个有
-- `UNETLoader` —— 21/25 个有
-- `ModelPreviewOverrideKJ` —— 18/25 个有
-- `VAELoader` —— 17/25 个有
-- `LTXDirectorCropGuides` —— 16/25 个有
-- `LoraLoaderModelOnly` —— 10/25 个有
-- `LTX2SamplingPreviewOverride` —— 7/25 个有
-- `LTXVCropGuides` —— 7/25 个有
-- `VHS_VideoCombine` —— 6/25 个有
-- `GetVideoComponents` —— 5/25 个有
-- `CheckpointLoaderSimple` —— 4/25 个有
-- `GetNode` —— 2/25 个有
-- `LTXAVTextEncoderLoader` —— 2/25 个有
-- `LTXVAudioVAELoader` —— 2/25 个有
-- `SetNode` —— 2/25 个有
-- `PathchSageAttentionKJ` —— 1/25 个有
-- `TTResolutionSelector` —— 1/25 个有
-- `Text` —— 1/25 个有
+- `EmptyLatentImage` —— 21/22 个有
+- `UNETLoader` —— 21/22 个有
+- `FluxKontextImageScale` —— 20/22 个有
+- `LoraLoaderModelOnly` —— 20/22 个有
+- `easy showAnything` —— 20/22 个有
+- `FluxResolutionNode` —— 19/22 个有
+- `LayerUtility: ImageReel` —— 12/22 个有
+- `LayerUtility: ImageReelComposit` —— 12/22 个有
+- `ImageConcanate` —— 11/22 个有
+- `ImpactSwitch` —— 10/22 个有
+- `Image Comparer (rgthree)` —— 3/22 个有
+- `AIO_Preprocessor` —— 2/22 个有
+- `AddLabel` —— 2/22 个有
+- `GetNode` —— 2/22 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/22 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/22 个有
+- `NunchakuQwenImageDiTLoader` —— 2/22 个有
+- `PrimitiveInt` —— 2/22 个有
+- `SetNode` —— 2/22 个有
+- `ShowText|pysssss` —— 2/22 个有
+- `Int` —— 1/22 个有
+- `OpenposePreprocessor` —— 1/22 个有
+- `TextInputBasic` —— 1/22 个有
+- `easy promptLine` —— 1/22 个有
+- `workflow>面部修复` —— 1/22 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 20 | 22 | 62% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 22 | 62% |
+| 采样算法 | euler | - | 22 | 95% |
+| 调度器 | simple | - | 22 | 59% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 宽度 | 512 | 512 - 512 | 21 | 100% |
+| 高度 | 512 | 512 - 512 | 21 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 20/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 20，22 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，22 个样本
+- 采样算法 最常用 euler，22 个样本，一致性 95%
+- 调度器 最常用 simple，22 个样本，一致性 59%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，21 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，21 个样本，取值集中（一致性 100%）
+- 高发问题（20/22 个样本）：Steps较低可能导致细节不足

@@ -2,89 +2,106 @@
 name: unknown_workflow_video_sampler_vae_29
 type: Unknown Workflow
 frequency: 12
-level: moderate
-coverage: 0.671167
-common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], RH_Captioner, SetNode, ShowText|pysssss, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 0.736917
+common_nodes: [FluxResolutionNode, Int, JWInteger, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_Captioner, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [平台全量/VACE14B-极致完美动作姿势迁移_1926653380469624833.json, 平台全量/吉卜力Ghibli视频转绘_CausVid3-9步VACE关键帧+姿势视频转换工作流_1978328443202985986.json, 平台全量/通义万相统一模型FusionX-VACE视频转绘美女跳舞转绘_1934542153010094082.json, 平台全量/通过动作Pose迁移极速WanVACE+CausVid（3-9步生图步骤）_1938069669180018690.json, 视频生成/图生视频/3-9步极速WanVACE_Pose迁移_1932617969560383490.json, 视频生成/图生视频/AccVid加速+VACE14B-极致完美动作姿势迁移_1927527393152634881.json, 视频生成/图生视频/吉卜力视频转绘_CausVid3-9步VACE关键帧+姿势和深度双控制_1925046681505886210.json, 视频生成/图生视频/突击侦查动作迁移-FLORA版本-动作迁移FusionX_1934654875315675138.json, 视频生成/图生视频/突击侦查动作迁移-FusionX-VACE大师级视频_1933860099905773569.json, 视频生成/图生视频/舞蹈迁移-FusionX-VACE大师级视频_1933562748272033793.json, 视频生成/图生视频/舞蹈迁移-FusionX-VACE大师级视频ott_1940038425300860930.json, 视频生成/图生视频/通义万相统一模型FusionX-LORA版本美女跳舞转绘工作流_1935676000963321857.json]
+members: [视频生成/图生视频/COS专用--图生视频-优化版-wan2.1-VACE_1932694201777672193.json, 视频生成/图生视频/VACE 14B-图生视频(可自动提示词)+全节点注释_2052305268150677505.json, 视频生成/图生视频/VACE 14B-图生视频(可自动提示词)_1922977171818598402.json, 视频生成/图生视频/VACE 14B-图生视频(可自动提示词)_1924455095239364609.json, 视频生成/图生视频/VACE 14B-图生视频(可自动提示词)_1972857610967928833.json, 视频生成/图生视频/VACE 14B-图生视频(可自动提示词)_2057436928223571969.json, 视频生成/图生视频/VACE+14B-图生视频(可自动提示词)+修复报错+全节点注释_2047301907374415874.json, 视频生成/图生视频/图生视频---VACE 14B_2068063600496959490.json, 视频生成/图生视频/图生视频_1947183216568754178.json, 视频生成/图生视频/图生视频自动配环境音，电源分镜制作(可自动提示词)_1981756791207927809.json, 视频生成/文生视频/VACE 14B-文生视频(自动扩写提示词)_1922918246369083394.json, 视频生成/文生视频/VACE 14B-文生视频(自动扩写提示词)_1930813054726897666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_29
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（平台全量/VACE14B-极致完美动作姿势迁移_1926653380469624833.json、平台全量/吉卜力Ghibli视频转绘_CausVid3-9步VACE关键帧+姿势视频转换工作流_1978328443202985986.json、平台全量/通义万相统一模型FusionX-VACE视频转绘美女跳舞转绘_1934542153010094082.json、平台全量/通过动作Pose迁移极速WanVACE+CausVid（3-9步生图步骤）_1938069669180018690.json、视频生成/图生视频/3-9步极速WanVACE_Pose迁移_1932617969560383490.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/COS专用--图生视频-优化版-wan2.1-VACE_1932694201777672193.json、视频生成/图生视频/VACE 14B-图生视频(可自动提示词)+全节点注释_2052305268150677505.json、视频生成/图生视频/VACE 14B-图生视频(可自动提示词)_1922977171818598402.json、视频生成/图生视频/VACE 14B-图生视频(可自动提示词)_1924455095239364609.json、视频生成/图生视频/VACE 14B-图生视频(可自动提示词)_1972857610967928833.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **可信度**：强结论
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImagePadKJ`
-- `ImageResizeKJ`
-- `LoadImage`
+- `FluxResolutionNode`
+- `Int`
+- `JWInteger`
+- `JjkText`
 - `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
+- `MathExpression|pysssss`
 - `RH_Captioner`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 11/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 11/12 个有
-- `WanVideoLoraSelect` —— 11/12 个有
+- `Evaluate Integers` —— 11/12 个有
+- `InversionDemoLazyIndexSwitch` —— 11/12 个有
+- `MMAudioFeatureUtilsLoader` —— 11/12 个有
+- `MMAudioModelLoader` —— 11/12 个有
+- `MMAudioSampler` —— 11/12 个有
+- `RH_Prompter` —— 11/12 个有
+- `SaveAudio` —— 11/12 个有
+- `TextCombinerTwo` —— 11/12 个有
+- `AudioCombine` —— 10/12 个有
+- `CLIPLoader` —— 10/12 个有
+- `CLIPTextEncode` —— 10/12 个有
+- `CheckpointLoaderSimple` —— 10/12 个有
 - `ColorMatch` —— 10/12 个有
-- `DWPreprocessor` —— 9/12 个有
-- `ImageBlend` —— 9/12 个有
-- `Zoe-DepthMapPreprocessor` —— 5/12 个有
-- `GetImageRangeFromBatch` —— 4/12 个有
-- `PreviewImage` —— 3/12 个有
-- `WanVideoExperimentalArgs` —— 3/12 个有
-- `WanVideoSLG` —— 3/12 个有
-- `WanVideoTeaCache` —— 3/12 个有
-- `easy cleanGpuUsed` —— 3/12 个有
-- `DepthAnything_V2` —— 2/12 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 2/12 个有
-- `EasyControlGenerate` —— 2/12 个有
-- `EasyControlLoadFlux` —— 2/12 个有
-- `EasyControlLoadLora` —— 2/12 个有
-- `ImageResizeTo8x` —— 2/12 个有
-- `Bjornulf_ShowInt` —— 1/12 个有
-- `Bookmark (rgthree)` —— 1/12 个有
-- `LeReS-DepthMapPreprocessor` —— 1/12 个有
-- `PrimitiveStringMultiline` —— 1/12 个有
-- `WanVideoEnhanceAVideo` —— 1/12 个有
-- `WanVideoVACEStartToEndFrame` —— 1/12 个有
+- `EmptyLatentAudio` —— 10/12 个有
+- `ImageConcatMulti` —— 10/12 个有
+- `ImageResize+` —— 10/12 个有
+- `KSampler` —— 10/12 个有
+- `LoadImage` —— 10/12 个有
+- `RH_Translator` —— 10/12 个有
+- `VAEDecodeAudio` —— 10/12 个有
+- `PreviewAudio` —— 9/12 个有
+- `PreviewImage` —— 9/12 个有
+- `ImpactSwitch` —— 8/12 个有
+- `Note _O` —— 8/12 个有
+- `ImageFromBatch+` —— 2/12 个有
+- `easy int` —— 2/12 个有
+- `easy textSwitch` —— 2/12 个有
+- `Label (rgthree)` —— 1/12 个有
+- `RH_LLMAPI_NODE` —— 1/12 个有
+- `easy anythingIndexSwitch` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 40 | 40 - 40 | 10 | 100% |
+| 高度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 60 | 60 - 60 | 10 | 100% |
+| Prompt 约束强度(CFG) | 7 | 7 - 7 | 10 | 100% |
+| 采样算法 | dpmpp_3m_sde_gpu | - | 10 | 100% |
+| 调度器 | exponential | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 10/12 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 40，观测区间 40 - 40，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 60，观测区间 60 - 60，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 7，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_3m_sde_gpu，10 个样本，一致性 100%
+- 调度器 最常用 exponential，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/12 个样本）：发现KSampler但没有VAEDecode

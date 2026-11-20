@@ -1,91 +1,101 @@
 ---
 name: unknown_workflow_video_lora_sampler_254
 type: Unknown Workflow
-frequency: 10
-level: moderate
-coverage: 0.5662
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
-problems: []
+frequency: 9
+level: strong
+coverage: 0.836222
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Apply LoRA Stack, CR Seed, CR Text, CheckpointLoaderSimple, ComfySwitchNode, ConditioningZeroOut, Convert Masks to Images, DiffusionModelLoaderKJ, INTConstant, Image Batch, ImageCompositeMasked, ImageScale, InvertMask, KSampler, LoadImage, ModelSamplingSD3, PrimitiveBoolean, SAM3_TrackPreview, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanContextWindowsManual, WanSCAILToVideo, easy loraStack]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Wan2.2-Animate_去AI感新版动作迁移，美女跳舞（体型自适应 脸部更一致）_1971077076524638209.json, 图片生成/图生图/动作迁移人物替换主体替换_2115623566283730946.json, 图片生成/图生图/动作迁移人物替换主体替换_2115670232718204929.json, 平台全量/Wan2.2-Animate_超真实自然_1971528949555773442.json, 平台全量/Wan2.2-适合半身_1977190297144840194.json, 平台全量/【橘子AI】Wan animate_万能替换_1980919592434487297.json, 平台全量/动作模仿动作迁移人物替换WanAnimate2.2_1971104745878392833.json, 数字人/数字人/动作迁移人物替换WanAnimate2.2_1990379558673289217.json, 视频生成/图生视频/自用动作模仿动作迁移_2013906240371429377.json, 视频生成/文生视频/图生视频 极速版 动作模仿 动作迁移 人物替换 Wan 2.2_2044310101514788865.json]
+members: [视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2086023874776489986.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111375323014189057.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111428969907179521.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2113537441683562498.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流小珠光同款_2104108308775915521.json, 视频生成/图生视频/SCAIL2 动作迁移&角色替换(官方工作流)_2077936004870266882.json, 视频生成/图生视频/Scail2-长视频动作迁移_2093937361074872322.json, 视频生成/图生视频/Scail2-长视频角色替换_2093940597882179585.json, 视频生成/图生视频/🔪🔪终极效率版！SCAIL-2动作迁移&角色替换拆解工作流03集_2089247269597048834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_254
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Wan2.2-Animate_去AI感新版动作迁移，美女跳舞（体型自适应 脸部更一致）_1971077076524638209.json、图片生成/图生图/动作迁移人物替换主体替换_2115623566283730946.json、图片生成/图生图/动作迁移人物替换主体替换_2115670232718204929.json、平台全量/Wan2.2-Animate_超真实自然_1971528949555773442.json、平台全量/Wan2.2-适合半身_1977190297144840194.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2086023874776489986.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111375323014189057.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111428969907179521.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2113537441683562498.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流小珠光同款_2104108308775915521.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BlockifyMask`
+全部 9 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `CR Apply LoRA Stack`
+- `CR Seed`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `ComfySwitchNode`
+- `ConditioningZeroOut`
+- `Convert Masks to Images`
+- `DiffusionModelLoaderKJ`
+- `INTConstant`
+- `Image Batch`
+- `ImageCompositeMasked`
+- `ImageScale`
+- `InvertMask`
+- `KSampler`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `Sam2Segmentation`
-- `SetNode`
+- `ModelSamplingSD3`
+- `PrimitiveBoolean`
+- `SAM3_TrackPreview`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VHS_VideoInfoLoaded`
+- `WanContextWindowsManual`
+- `WanSCAILToVideo`
+- `easy loraStack`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 9/10 个有
-- `GetImageSizeAndCount` —— 7/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/10 个有
-- `MathExpression|pysssss` —— 7/10 个有
-- `PreviewImage` —— 7/10 个有
-- `WanVideoTorchCompileSettings` —— 7/10 个有
-- `CR Text` —— 4/10 个有
-- `DownloadAndLoadGIMMVFIModel` —— 4/10 个有
-- `GIMMVFI_interpolate` —— 4/10 个有
-- `INTConstant` —— 4/10 个有
-- `ImageBlend` —— 4/10 个有
-- `Anything Everywhere` —— 3/10 个有
-- `ImageFromBatch` —— 3/10 个有
-- `ImpactInt` —— 3/10 个有
-- `PoseRetargetPromptHelper` —— 3/10 个有
-- `PrimitiveStringMultiline` —— 3/10 个有
-- `RHHiddenNodes` —— 3/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
-- `easy showAnything` —— 3/10 个有
-- `Textbox` —— 2/10 个有
-- `ClothesSegment` —— 1/10 个有
-- `PointsEditor` —— 1/10 个有
-- `SeCModelLoader` —— 1/10 个有
-- `SeCVideoSegmentation` —— 1/10 个有
+- `FastGroupsBypassSwitch` —— 8/9 个有
+- `GetNode` —— 8/9 个有
+- `SetNode` —— 8/9 个有
+- `Text` —— 2/9 个有
+- `Any Switch (rgthree)` —— 1/9 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/9 个有
+- `EmptyImage` —— 1/9 个有
+- `Fast Groups Muter (rgthree)` —— 1/9 个有
+- `Fast Muter (rgthree)` —— 1/9 个有
+- `GIMMVFI_interpolate` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `LazySwitch2way` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `Seed (rgthree)` —— 1/9 个有
+- `easy convertAnything` —— 1/9 个有
+- `孤海注释` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 8 | 9 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 9 | 89% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 8，9 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m_sde_gpu，9 个样本，一致性 89%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

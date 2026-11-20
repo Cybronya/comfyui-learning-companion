@@ -1,56 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_49
 type: Unknown Workflow
-frequency: 26
-level: moderate
-coverage: 0.920269
-common_nodes: [Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 22
+level: strong
+coverage: 0.734227
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text Concatenate, Florence2ModelLoader, Florence2Run, INTConstant, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/上传图片就可实现泼水变装_2035705926753193985.json, 视频生成/图生视频/泼水变装+换装=通义万相=艾橘溪_1930223716829970433.json, 视频生成/图生视频/泼水变装+换装=通义万相=艾橘溪_1956253952461426689.json, 视频生成/图生视频/泼水变装+换装=通义万相_1996610177388388353.json, 视频生成/图生视频/泼水变装+换装=通义万相_2065267287250259969.json, 视频生成/图生视频/泼水变装+换装_1953668981687287809.json, 视频生成/图生视频/泼水变装+换装_1976135458428162050.json, 视频生成/图生视频/泼水变装+换装_2006375007433269250.json, 视频生成/图生视频/泼水变装_1976842256592392193.json, 视频生成/图生视频/泼水变装_1977972192019447810.json, 视频生成/图生视频/泼水变装_1978305034586873857.json, 视频生成/图生视频/通义万相模型：泼水变装与换装特效视频制作工作流_2018188936127975425.json, 视频生成/图生视频/通义万相模型：泼水变装与换装特效视频制作工作流_2068686422604861441.json, 视频生成/图生视频/通义万相视频生成加速版_1932259606163353602.json, 视频生成/文生视频/WAN2.1 泼水换装 画风真实 运行流畅 可更换lora_1931880994263990273.json, 视频生成/文生视频/WAN2.1+万物皆可喷火，视频特效_1933729063255367681.json, 视频生成/文生视频/WAN2.1+运镜能量光柱特效+可更换lora_1932238187564101633.json, 视频生成/文生视频/wan2.1 美女做鬼脸 伸舌头表情视频动画_1932596754137411585.json, 视频生成/文生视频/最新WAN2.1 步行街美女团队走向镜头动画_1932262844979736577.json, 视频生成/文生视频/泼水变装+换装=通义万相_1951219952894324738.json, 视频生成/文生视频/泼水变装+换装_1950029325979533313.json, 视频生成/文生视频/泼水变装+换装_1991050908614205442.json, 视频生成/文生视频/泼水变装-通义万相_1944994913614483458.json, 视频生成/文生视频/泼水变装666_1942406850870710274.json, 视频生成/文生视频/泼水变装_1940983307876331522.json, 视频生成/文生视频/泼水变装_1942044343698145281.json]
+members: [视频生成/图生视频/WAN21特图生视频效合集_1930497096028426242.json, 视频生成/图生视频/Wan图生视频_运镜_1931553417045409794.json, 视频生成/图生视频/wan2.1 运镜lora_1927308974876692481.json, 视频生成/图生视频/一键电影运镜视频_1929861352612073473.json, 视频生成/图生视频/图片生成运镜视频（电影级）123_1929395097194938370.json, 视频生成/图生视频/图片生成运镜视频（电影级）_2043240803773980674.json, 视频生成/图生视频/图片生成运镜视频（电影级）_2043244111414697986.json, 视频生成/图生视频/图片生成运镜视频（电影运镜）_1929565877887471617.json, 视频生成/图生视频/图片运镜_2007615510288011266.json, 视频生成/图生视频/图生视频--效果超出想象---WAN21特图生视频效合集_2048597647006633986.json, 视频生成/图生视频/图生视频--效果超出想象---WAN21特图生视频效合集_2048657356048834561.json, 视频生成/图生视频/图生视频丨运镜视频合集（11款）_1978647980314136577.json, 视频生成/图生视频/电影1图片转运镜视频_1929869489117237249.json, 视频生成/图生视频/电影级别 运镜 图生视频 合集_1996871652937977858.json, 视频生成/图生视频/电影级别图片生成运镜视频_1929847163700854786.json, 视频生成/图生视频/电影级别运镜图生视频_1930122679813095426.json, 视频生成/图生视频/电影级别运镜图生视频合集_1930199609451384834.json, 视频生成/图生视频/电影级别运镜图生视频合集_1937550595018375170.json, 视频生成/图生视频/电影级别运镜图生视频合集_1980239592316186626.json, 视频生成/图生视频/电影级别运镜图生视频合集_1989638202606669825.json, 视频生成/图生视频/龙明wan2.1 运镜lora_1934983961166684161.json, 视频生成/文生视频/图片生成运镜视频（电影级）123_1951765085700214786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_49
 
-> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（视频生成/图生视频/上传图片就可实现泼水变装_2035705926753193985.json、视频生成/图生视频/泼水变装+换装=通义万相=艾橘溪_1930223716829970433.json、视频生成/图生视频/泼水变装+换装=通义万相=艾橘溪_1956253952461426689.json、视频生成/图生视频/泼水变装+换装=通义万相_1996610177388388353.json、视频生成/图生视频/泼水变装+换装=通义万相_2065267287250259969.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/WAN21特图生视频效合集_1930497096028426242.json、视频生成/图生视频/Wan图生视频_运镜_1931553417045409794.json、视频生成/图生视频/wan2.1 运镜lora_1927308974876692481.json、视频生成/图生视频/一键电影运镜视频_1929861352612073473.json、视频生成/图生视频/图片生成运镜视频（电影级）123_1929395097194938370.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：26
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：22
+- **可信度**：强结论
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 26 个 workflow 都包含：
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 22 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Text Concatenate`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
+- `WanVideoTeaCacheKJ`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 25/26 个有
-- `LayerUtility: PurgeVRAM` —— 14/26 个有
-- `WanVideoClipVisionEncode` —— 14/26 个有
-- `WanVideoImageToVideoEncode` —— 14/26 个有
-- `ImageSizeAndBatchSize` —— 12/26 个有
-- `WanVideoImageClipEncode` —— 12/26 个有
-- `ImageScale` —— 1/26 个有
-- `RIFE VFI` —— 1/26 个有
+- `Fast Groups Bypasser (rgthree)` —— 19/22 个有
+- `PrimitiveString` —— 19/22 个有
+- `VHS_LoadVideo` —— 19/22 个有
+- `CR Prompt Text` —— 13/22 个有
+- `ShowText|pysssss` —— 10/22 个有
+- `easy getNode` —— 9/22 个有
+- `easy setNode` —— 9/22 个有
+- `CR Text` —— 6/22 个有
+- `Primitive integer [Crystools]` —— 1/22 个有
+- `easy anythingIndexSwitch` —— 1/22 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 22 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 22 | 100% |
+| 采样算法 | uni_pc | - | 22 | 100% |
+| 调度器 | simple | - | 22 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
 
 ## 常见问题
 
@@ -58,4 +74,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，22 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，22 个样本，一致性 100%
+- 调度器 最常用 simple，22 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）

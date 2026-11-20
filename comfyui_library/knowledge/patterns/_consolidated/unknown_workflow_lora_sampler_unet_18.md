@@ -1,84 +1,78 @@
 ---
 name: unknown_workflow_lora_sampler_unet_18
 type: Unknown Workflow
-frequency: 21
-level: moderate
-coverage: 0.857381
-common_nodes: [BasicGuider, CLIPLoader, DF_Text_Box, GH_CropRestore, GH_MaskCropV2, Get Image Size, GetNode, GoohaiAnyExists, GoohaiDisplayAny, GulfSeaImageMergeMask, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ColorImage, LoraLoaderModelOnly, ManualSigmas, QwenImagePromptOptimizer, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, TextEncodeQwenImage21GH, UNETLoader, VAEDecode, VAELoader, easy ifElse, 图像缩放V2_孤海, 图像缩放范围孤海, 忽略多组孤海]
-problems: []
+frequency: 20
+level: strong
+coverage: 0.87095
+common_nodes: [CLIPLoader, JDCN_StringToList, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2111655921838546945.json, 图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2113206858398920706.json, 图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2114913551306543105.json, 图片生成/图生图/Qwen Image 2.1 单图局部重绘_2116005732993822721.json, 图片生成/图生图/Qwen Image 2.1💗 移除_局部重绘编辑工作流详拆工作流系列14集_2113097808990531585.json, 图片生成/图生图/Qwen_2.1_移除_局部重绘_2113462305160777729.json, 图片生成/图生图/Qwen_2.1_移除_局部重绘_Turbo_2113773453261234178.json, 图片生成/图生图/Qwen_2.1_移除_局部重绘_Turbo_2113810483525541889.json, 图片生成/图生图/Qwen_Image_2.1_单图局部重绘_2116045005327519745.json, 图片生成/图生图/Qwen_Image_2.1💗_移除_局部重绘编辑工作流详拆工作流系列14集_2116668564726960129.json, 图片生成/图生图/千问2.1 精准删除和定制重绘 GH优化版 像素无漂移_2113107421391581185.json, 图片生成/图生图/图像删除和定制重绘 Qwen2.1_2114328793446965249.json, 图片生成/图生图/局部重绘丨Qwen-Image 2.1丨物体移除_2113145473245736961.json, 图片生成/图生图/移除 _ 局部重绘  2_2115794441410801665.json, 图片生成/图生图/移除 _ 局部重绘  Turbo_2115758913655238657.json, 图片生成/图生图/老孙AI Qwen 2.1 移除 _ 局部重绘_2113088082609266690.json, 平台全量/Qwen 2.1 移除 _ 局部重绘  Turbo_2112941555953782786.json, 平台全量/Qwen 2.1 移除 _ 局部重绘  Turbo_2119993870032400386.json, 平台全量/Qwen 2.1 移除丨局部重绘_2113149125553377282.json, 平台全量/移除 _ 重绘1102_2117132741937557505.json, 数字人/数字人/Qwen2.1图像删除与定制重绘｜指定区域清除随心再创作_2114682241522692098.json]
+members: [图片生成/图生图/FireRed模特写真套图一致性工作流_2032310944155570178.json, 图片生成/图生图/IP打造多场景生成V2.0_2031530143709143042.json, 图片生成/图生图/Qwen-Edit-2509人物固定多场景生成_1991136693919264769.json, 图片生成/图生图/Qwen-美女一键写真大片_2042090297726869505.json, 图片生成/图生图/Qwen2509人物固定多场景生成_1995445677461266433.json, 图片生成/图生图/qwen-image_qwen_模特套图_分镜头_九宫格套图_2032013275688345602.json, 图片生成/图生图/人物一致性-生成多场景_2012765654553731073.json, 图片生成/图生图/人物一致性-生成多场景（Qwen-人物IP打造）_1990331943755673602.json, 图片生成/图生图/人物一致性-生成多场景（Qwen-人物IP打造）_1995512081849966594.json, 图片生成/图生图/人物一键极致写真两种方案_1996923193854201857.json, 图片生成/图生图/人物不变 多张生成 不同背景姿势服饰V3.0_2032109068378185729.json, 图片生成/图生图/固定人物IP 多张多场景生成V3.0（IP打造）_2031743464865533954.json, 图片生成/图生图/女模特多场景摆拍（Qwen-人物IP打造）_1991886389321027585.json, 图片生成/图生图/模特套图 出图质量高 简单上手_2031725899757916162.json, 图片生成/图生图/模特套图工作流V2(升级可本地部署）_1982986515359891457.json, 图片生成/图生图/模特套图工作流V2(升级可本地部署）_2039503858971451394.json, 图片生成/图生图/模特套图工作流V2(升级可本地部署）_2046107754628128770.json, 图片生成/图生图/模特套图工作流V3(大幅度提升人物一致性和指令遵循）_1983376779484274690.json, 图片生成/图生图/模特套图工作流V4(提升姿态幅度及差异化）_1985516927198109698.json, 图片生成/图生图/自动换背景-姿势服饰-人物不变_2032280897092849666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_18
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2111655921838546945.json、图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2113206858398920706.json、图片生成/图生图/Qwen 2.1 移除 _ 局部重绘  Turbo_2114913551306543105.json、图片生成/图生图/Qwen Image 2.1 单图局部重绘_2116005732993822721.json、图片生成/图生图/Qwen Image 2.1💗 移除_局部重绘编辑工作流详拆工作流系列14集_2113097808990531585.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/FireRed模特写真套图一致性工作流_2032310944155570178.json、图片生成/图生图/IP打造多场景生成V2.0_2031530143709143042.json、图片生成/图生图/Qwen-Edit-2509人物固定多场景生成_1991136693919264769.json、图片生成/图生图/Qwen-美女一键写真大片_2042090297726869505.json、图片生成/图生图/Qwen2509人物固定多场景生成_1995445677461266433.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：20
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
-- `BasicGuider`
+全部 20 个 workflow 都包含：
 - `CLIPLoader`
-- `DF_Text_Box`
-- `GH_CropRestore`
-- `GH_MaskCropV2`
-- `Get Image Size`
-- `GetNode`
-- `GoohaiAnyExists`
-- `GoohaiDisplayAny`
-- `GulfSeaImageMergeMask`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LayerUtility: ColorImage`
+- `JDCN_StringToList`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `QwenImagePromptOptimizer`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImage21GH`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy ifElse`
-- `图像缩放V2_孤海`
-- `图像缩放范围孤海`
-- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImageGoohai` —— 18/21 个有
-- `GoohaiUniversalSlider` —— 17/21 个有
-- `孤海注释` —— 13/21 个有
-- `PreviewImage` —— 11/21 个有
-- `LoadImage` —— 6/21 个有
-- `EmptyImage` —— 3/21 个有
-- `INTConstant` —— 3/21 个有
-- `MaskPreview` —— 3/21 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/21 个有
-- `easy getNode` —— 2/21 个有
-- `easy setNode` —— 2/21 个有
-- `Any Switch (rgthree)` —— 1/21 个有
-- `ImageToMask` —— 1/21 个有
-- `ImpactSwitch` —— 1/21 个有
-- `LayerColor: Brightness & Contrast` —— 1/21 个有
-- `Mask Invert` —— 1/21 个有
-- `ShowText|pysssss` —— 1/21 个有
+- `RH_LLMAPI_NODE` —— 18/20 个有
+- `AILab_QwenVL` —— 16/20 个有
+- `CR Text` —— 16/20 个有
+- `EmptySD3LatentImage` —— 15/20 个有
+- `ProcessString` —— 15/20 个有
+- `CR Text Replace` —— 14/20 个有
+- `TextEncodeQwenImageEdit` —— 14/20 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 14/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/20 个有
+- `GetImageSize` —— 6/20 个有
+- `TextEncodeQwenImageEditPlus` —— 6/20 个有
+- `Anything Everywhere` —— 4/20 个有
+- `MuyeTextEditOutput` —— 1/20 个有
+- `Qwen3VL_Chat` —— 1/20 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/20 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 4 - 8 | 20 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 20 | 100% |
+| 采样算法 | er_sde | - | 20 | 90% |
+| 调度器 | kl_optimal | - | 20 | 35% |
+| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 25/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 4 - 8，20 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，20 个样本，一致性 90%
+- 调度器 最常用 kl_optimal，20 个样本，一致性 35%
+- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 高发问题（25/20 个样本）：Steps较低可能导致细节不足

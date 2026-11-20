@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_107
 type: Text To Image
 frequency: 13
 level: strong
-coverage: 0.885692
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.897154
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/krea2四视图生成流加强版｜角色设定图生图_2095213399323004929.json, 图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090149383538036738.json, 图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090615604003827713.json, 图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090631125050937346.json, 图片生成/图生图/上传参考图生成角色四视图 Krea2资产库简易版_2104321390848598018.json, 图片生成/图生图/上传图片一键生成四视图【短剧资产专用】_2096435540651503618.json, 图片生成/图生图/单图编辑图片处理｜pipi-krea2换装图生图_2095582778946580482.json, 图片生成/图生图/四视图生成加强版｜krea2图生图角色设计_2095493686284079106.json, 图片生成/图生图/四视图角色设定表｜Krea2一键生成角色一致性设计_2090897661913292802.json, 图片生成/图生图/四视图角色资产库｜Krea2分镜出图图生图生成_2095118168535687170.json, 图片生成/图生图/四视图角色资产库｜Krea2分镜出图角色设计图生图_2092611870934003713.json, 图片生成/图生图/换装编辑一键处理｜pipi-krea2图生图工作流_2095581266308591618.json, 图片生成/图生图/真实人与漫剧角色四视图｜角色一致性设定图生成_2095964023656370177.json]
+members: [图片生成/图生图/Qwen2.1单图编辑工作流，风格化图生图单图编辑处理工具_2107594764458745858.json, 图片生成/图生图/Qwen2.1双图组合工作流，风格化图生图双图融合处理工具_2107593203762417666.json, 图片生成/图生图/Qwen2.1双图组合｜两张图片智能融合风格化，千问2.1图生图玩法_2107293954797555714.json, 图片生成/图生图/Qwen2.1双图组合｜两张图片智能融合风格化，千问2.1图生图玩法_2109523834180292610.json, 图片生成/图生图/Qwen2.1透明抠图工作流，图生图抠图背景移除处理工具_2107591647239426050.json, 图片生成/图生图/Qwen2.1透明抠图｜一键抠出透明背景素材，电商设计抠图必备神器_2107290862001680386.json, 图片生成/图生图/Qwen2.1透明抠图｜一键抠出透明背景素材，电商设计抠图必备神器_2109524566442856449.json, 图片生成/图生图/Qwen_Image_2.1一键抠图PNG通道输出，透明背景图生图工具_2105110544796708866.json, 图片生成/图生图/Qwen_Image_2.1自动分镜短剧分镜生成，图生图快速产出故事板_2105851031333728258.json, 图片生成/图生图/Qwen_Image_2.1自动分镜短剧分镜生成，支持三视图参考的图生图工作流_2104738814660014082.json, 图片生成/图生图/qwen-image-2.1一键抠图｜PNG透明通道直出｜抠图发丝级细节保留_2102320037234302977.json, 图片生成/文生图/Qwen-image 2.1 Turbo文生图，图生图高效出片_2110863379169636354.json, 图片生成/文生图/QwenImage2.1 turbo专用工作流 高效改图方案_2109710779971891202.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_107
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/krea2四视图生成流加强版｜角色设定图生图_2095213399323004929.json、图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090149383538036738.json、图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090615604003827713.json、图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090631125050937346.json、图片生成/图生图/上传参考图生成角色四视图 Krea2资产库简易版_2104321390848598018.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Qwen2.1单图编辑工作流，风格化图生图单图编辑处理工具_2107594764458745858.json、图片生成/图生图/Qwen2.1双图组合工作流，风格化图生图双图融合处理工具_2107593203762417666.json、图片生成/图生图/Qwen2.1双图组合｜两张图片智能融合风格化，千问2.1图生图玩法_2107293954797555714.json、图片生成/图生图/Qwen2.1双图组合｜两张图片智能融合风格化，千问2.1图生图玩法_2109523834180292610.json、图片生成/图生图/Qwen2.1透明抠图工作流，图生图抠图背景移除处理工具_2107591647239426050.json…）
 
 - **类型**：Text To Image
 - **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -26,37 +26,35 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 10/13 个有
-- `Krea2EditGroundedEncode` —— 10/13 个有
-- `Krea2EditModelPatch` —— 10/13 个有
-- `PreviewImage` —— 10/13 个有
-- `孤海注释` —— 10/13 个有
-- `Image Comparer (rgthree)` —— 5/13 个有
-- `ReferenceLatent` —— 5/13 个有
-- `AddLabel` —— 4/13 个有
-- `GetImageSize` —— 4/13 个有
-- `ImageConcatMulti` —— 4/13 个有
-- `EmptyFlux2LatentImage` —— 3/13 个有
-- `ColorMatchV2` —— 2/13 个有
-- `ConditioningZeroOut` —— 2/13 个有
-- `String Literal` —— 2/13 个有
-- `easy loraStack` —— 2/13 个有
-- `easy loraStackApply` —— 2/13 个有
-- `GetNode` —— 1/13 个有
-- `SetNode` —— 1/13 个有
+- `BasicGuider` —— 9/13 个有
+- `RandomNoise` —— 9/13 个有
+- `SamplerCustomAdvanced` —— 9/13 个有
+- `QwenImage21FunPDDLoader` —— 7/13 个有
+- `孤海注释` —— 7/13 个有
+- `EmptyImage` —— 6/13 个有
+- `PreviewImage` —— 6/13 个有
+- `PrimitiveInt` —— 6/13 个有
+- `QwenImage21Cache` —— 6/13 个有
+- `SaveImageAdvanced` —— 5/13 个有
+- `ComfySwitchNode` —— 4/13 个有
+- `PrimitiveStringMultiline` —— 4/13 个有
+- `ResolutionSelector` —— 4/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/13 个有
+- `KSamplerSelect` —— 2/13 个有
+- `ManualSigmas` —— 2/13 个有
+- `PrimitiveBoolean` —— 2/13 个有
 
 ## 典型参数
 
@@ -74,7 +72,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -85,4 +83,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
-- 高发问题（18/13 个样本）：Steps较低可能导致细节不足
+- 高发问题（13/13 个样本）：Steps较低可能导致细节不足

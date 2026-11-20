@@ -1,71 +1,81 @@
 ---
 name: unknown_workflow_lora_sampler_clip_11
 type: Unknown Workflow
-frequency: 32
+frequency: 26
 level: moderate
-coverage: 0.869375
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, GetImageSize+, ImpactInt, ImpactStringSelector, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingFlux, Note Plus (mtb), PatchModelPatcherOrder, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SimpleMath+, SplitStringByDelimiter, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+coverage: 0.706885
+common_nodes: [AILab_QwenVL, BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, GetNode, ImageResizeKJv2, Int, JjkText, KSamplerSelect, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SAM3_VideoTrack, SCAIL2FitVideo, SCAIL2ReferencePack, SCAIL2ReferenceSAMBuilder, SCAIL2SimpleVideo, SetNode, ShowText|pysssss, SimpleMath+, VAELoader, VHS_LoadVideo, WanChunkFeedForward]
 problems: []
 missing: []
-members: [图片生成/反推提示词/44wannengxiutu_2050090286637957121.json, 图片生成/图生图/Kontext  万物转3D建模_1946449711450742786.json, 图片生成/图生图/Kontext  人物一键化妆_1946464517763293186.json, 图片生成/图生图/Kontext  人物一键卸装_1946464411671228417.json, 图片生成/图生图/Kontext  人物转高科技机器人_1946464324572311553.json, 图片生成/图生图/Kontext  照片增加真实感_1946464375696683010.json, 图片生成/图生图/Kontext  照片转电影画风_1946464341873815553.json, 图片生成/图生图/Kontext  照片转电影质感_1946464358019031041.json, 图片生成/图生图/Kontext  高质量 2D转真人_1946449800739086337.json, 图片生成/图生图/Kontext 一键模特人物提取服装_1946448768716664833.json, 图片生成/图生图/Kontext 万物转刺绣_1946449317751058434.json, 图片生成/图生图/Kontext 万物转卡通三视图_1946449110914490369.json, 图片生成/图生图/Kontext 万物转国画_1946449667493097473.json, 图片生成/图生图/Kontext 万物转手工刺绣_1946449204686544897.json, 图片生成/图生图/Kontext 万物转昭和动漫风格_1946449292790755330.json, 图片生成/图生图/Kontext 万物转皮克斯效果_1946449589136449537.json, 图片生成/图生图/Kontext 万物转线稿图_1946449476006342658.json, 图片生成/图生图/Kontext 照片转中式漫画_1946464453496827906.json, 图片生成/图生图/Kontext 高质量 动漫转真人_1946449239335690242.json, 图片生成/图生图/Kontext 高质量_1946444813908762626.json, 图片生成/图生图/Kontext 高质量万物转冰淇淋_1946445665753788417.json, 图片生成/图生图/Kontext 高质量万物转粒子效果_1946445504071757826.json, 图片生成/图生图/Kontext 高质量人物转皮克斯_1946449257848008705.json, 图片生成/图生图/Kontext 高质量商品一键换背景_1946449074598866946.json, 图片生成/图生图/Kontext 高质量老照片修复_1943257162980204546.json, 图片生成/图生图/Kontext 高质量转动漫风格_1946464307133734914.json, 图片生成/图生图/Kontext万物转手稿三视图_1946449760654123010.json, 图片生成/图生图/Kontext万物转搞笑漫画_1946449541965967362.json, 图片生成/图生图/Kontext卡通转真人_1946449434163965953.json, 图片生成/图生图/Kontext真人转卡通效果_1946449625446539266.json, 图片生成/图生图/万物一键转青花瓷_1946464532015538178.json, 图片生成/图生图/🥎Kontext 高质量22个lora一键切换 无忧版🤹_1943187209547628545.json]
+members: [图片生成/图生图/好的角色替换工作流_2100929637391101954.json, 数字人/数字人/全新Scail2动作模仿！  60秒Ai女友跳舞长视频生成！_2079804507982229505.json, 视频生成/图生视频/60-Second Extended Dance Video60秒超长跳舞视频Scail2动作迁移_2097856216323158017.json, 视频生成/图生视频/60秒女装跳舞长视频_模仿动作迁移_2076620724726493186.json, 视频生成/图生视频/AI合成动作迁移，换人物生成_2079002206828847106.json, 视频生成/图生视频/AI萌宠摇头晃脑舞_2082095205276278786.json, 视频生成/图生视频/Ai动物跳舞V5=Scail2萌宠图片跳舞=B站艾橘溪_1917146270526541826.json, 视频生成/图生视频/Ai可爱3d动物跳舞 Scail2萌宠图片 Animate视频动作迁移_2073677579319595010.json, 视频生成/图生视频/Ai可爱3d动物跳舞 Scail2萌宠图片 Animate视频动作迁移_2079088525298978817.json, 视频生成/图生视频/Ai可爱3d动物跳舞 Scail2萌宠图片 Animate视频动作迁移_2079398832160464898.json, 视频生成/图生视频/Ai可爱3d动物跳舞 Scail2萌宠图片 Animate视频动作迁移_2094979514341355521.json, 视频生成/图生视频/S2动作迁移_2082013212127621121.json, 视频生成/图生视频/Scail2 角色替换-双人视频换人_2077636977960247297.json, 视频生成/图生视频/Scail2Ai角色替换_2083001289599963137.json, 视频生成/图生视频/Scail2Ai角色替换_2091705858479706114.json, 视频生成/图生视频/Scail2人物替换_2101952140779548674.json, 视频生成/图生视频/Scail2视频换人_单人双人_2100945104092622850.json, 视频生成/图生视频/Scail2视频换人单人_双人角色替换动物迁移动作复刻跳舞模仿_2108918962233896962.json, 视频生成/图生视频/Scail2视频换人单人_双人角色替换动物迁移动作复刻跳舞模仿_2109225565583667202.json, 视频生成/图生视频/动作迁移Scail2角色替换+单人双人自由切换！视频换人！_2071830027674677249.json, 视频生成/图生视频/单人_双人 Scail2视频换人 图生视频 跳舞 唱歌 数字人  Ai角色替换！_2077927519470317586.json, 视频生成/图生视频/单人_双人 动作迁移 Scail2视频换人 图生视频 跳舞 唱歌 数字人  Ai角色替换！_2077935643409342466.json, 视频生成/图生视频/可爱3d动物跳舞 Animate视频动作迁移 Scail2萌宠图片_2073668911907827714.json, 视频生成/图生视频/图片+Animate视频动作迁移_2079079880154771457.json, 视频生成/图生视频/角色替换+单人双人视频换人Scail2_2077293957519855618.json, 视频生成/图生视频/角色替换-多人-Scail2_2079496824431403009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_11
 
-> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/反推提示词/44wannengxiutu_2050090286637957121.json、图片生成/图生图/Kontext  万物转3D建模_1946449711450742786.json、图片生成/图生图/Kontext  人物一键化妆_1946464517763293186.json、图片生成/图生图/Kontext  人物一键卸装_1946464411671228417.json、图片生成/图生图/Kontext  人物转高科技机器人_1946464324572311553.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/图生图/好的角色替换工作流_2100929637391101954.json、数字人/数字人/全新Scail2动作模仿！  60秒Ai女友跳舞长视频生成！_2079804507982229505.json、视频生成/图生视频/60-Second Extended Dance Video60秒超长跳舞视频Scail2动作迁移_2097856216323158017.json、视频生成/图生视频/60秒女装跳舞长视频_模仿动作迁移_2076620724726493186.json、视频生成/图生视频/AI合成动作迁移，换人物生成_2079002206828847106.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：32
+- **样本数**：26
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 32 个 workflow 都包含：
-- `BasicGuider`
+全部 26 个 workflow 都包含：
+- `AILab_QwenVL`
 - `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
-- `GetImageSize+`
-- `ImpactInt`
-- `ImpactStringSelector`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
+- `JjkText`
 - `KSamplerSelect`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
-- `Note Plus (mtb)`
-- `PatchModelPatcherOrder`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `Seed (rgthree)`
+- `ModelSamplingSD3`
+- `PrimitiveInt`
+- `SAM3_VideoTrack`
+- `SCAIL2FitVideo`
+- `SCAIL2ReferencePack`
+- `SCAIL2ReferenceSAMBuilder`
+- `SCAIL2SimpleVideo`
+- `SetNode`
+- `ShowText|pysssss`
 - `SimpleMath+`
-- `SplitStringByDelimiter`
-- `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
+- `VHS_LoadVideo`
+- `WanChunkFeedForward`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 31/32 个有
-- `Image Comparer (rgthree)` —— 31/32 个有
-- `ImageConcanate` —— 31/32 个有
-- `SeedVR2` —— 31/32 个有
-- `TeaCache` —— 31/32 个有
-- `UnetLoaderGGUF` —— 31/32 个有
-- `ImageScaleBy` —— 30/32 个有
-- `LayerUtility: ImageMaskScaleAs` —— 30/32 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 30/32 个有
-- `MathExpression|pysssss` —— 30/32 个有
-- `PrimitiveFloat` —— 30/32 个有
-- `easy cleanGpuUsed` —— 30/32 个有
-- `PreviewImage` —— 1/32 个有
-- `UNETLoader` —— 1/32 个有
+- `VHS_VideoCombine` —— 22/26 个有
+- `INTConstant` —— 14/26 个有
+- `ImageConcatMulti` —— 14/26 个有
+- `PreviewImage` —— 14/26 个有
+- `easy compare` —— 14/26 个有
+- `easy ifElse` —— 14/26 个有
+- `GetImageSizeAndCount` —— 8/26 个有
+- `GetVideoComponents` —— 8/26 个有
+- `OverlayVideos` —— 8/26 个有
+- `VideoToPath` —— 8/26 个有
+- `easy cleanGpuUsed` —— 8/26 个有
+- `RIFE VFI` —— 6/26 个有
+- `CreateVideo` —— 4/26 个有
+- `SaveVideo` —— 4/26 个有
+- `DownloadAndLoadGIMMVFIModel` —— 3/26 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/26 个有
+- `GIMMVFI_interpolate` —— 3/26 个有
+- `ImageColorMatch+` —— 2/26 个有
+- `孤海注释` —— 2/26 个有
+- `EmptyImage` —— 1/26 个有
+- `FlashVSRNode` —— 1/26 个有
+- `SaveImage` —— 1/26 个有
+- `Sleep` —— 1/26 个有
 
 ## 典型参数
 

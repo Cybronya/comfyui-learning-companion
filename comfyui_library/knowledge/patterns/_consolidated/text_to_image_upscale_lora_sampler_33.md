@@ -1,100 +1,91 @@
 ---
 name: text_to_image_upscale_lora_sampler_33
 type: Text To Image
-frequency: 8
+frequency: 7
 level: strong
-coverage: 0.905375
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, FastFilmGrain, GetImageSize+, ImageCASharpening+, ImageResize+, ImageScaleBy, KSampler, LayerColor: BrightnessContrastV2, LoraLoaderModelOnly, RunningHub Deepcleaner, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.869429
+common_nodes: [CLIPLoader, CLIPTextEncode, CM_FloatToInt, CR Text, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PixaromaLoraLoader, PixaromaTextJoinTwo, PreviewImage, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader, YC Color Match, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/ZB瑶光加密自动优化_2037050547345301505.json, 图片生成/文生图/ZB瑶光加密自动优化极速无扩图_2037071390456680450.json, 图片生成/文生图/ZIMAGE-瑶光文生图_2036262515121856513.json, 图片生成/文生图/Zimage-瑶光文生图工作流_2048264071597789186.json, 图片生成/文生图/Zimage_瑶光-真实人像与海报_2034978396467367938.json, 图片生成/文生图/Zimage_真实人像与海报+qwen3.5 反推 无限制_2035586422165475330.json, 图片生成/文生图/Zimage强化+瑶光+晓玉V3（文生图）_2042119298440765442.json, 图片生成/文生图/（自用）ZB瑶光-自写词-无扩图极速版_2037064604660011009.json]
+members: [图片生成/图生图/Flux2局部重绘加放大，遮罩控制区域编辑换装配饰发型图生图方案_2103571954241458177.json, 图片生成/图生图/Flux2洗图加放大控尺寸 图片优化分辨率可调_2105116266620080129.json, 图片生成/图生图/Flux2洗图加放大控尺寸，图生图高清修复分辨率提升工具_2103570471265587202.json, 图片生成/图生图/Flux2洗图加放大控尺寸｜图生图精修一步到位_2100830289231704066.json, 图片生成/图生图/Flux2洗图放大控尺寸｜图生图画质重塑｜输出尺寸自己说了算_2104824382769160194.json, 图片生成/图生图/flux2局部重绘加放大 图片局部修改分辨率提升_2105114830226153474.json, 图片生成/图生图/flux2局部重绘加放大｜图生图二合一｜改完直接出高清_2104822887134875649.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_33
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/ZB瑶光加密自动优化_2037050547345301505.json、图片生成/文生图/ZB瑶光加密自动优化极速无扩图_2037071390456680450.json、图片生成/文生图/ZIMAGE-瑶光文生图_2036262515121856513.json、图片生成/文生图/Zimage-瑶光文生图工作流_2048264071597789186.json、图片生成/文生图/Zimage_瑶光-真实人像与海报_2034978396467367938.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2局部重绘加放大，遮罩控制区域编辑换装配饰发型图生图方案_2103571954241458177.json、图片生成/图生图/Flux2洗图加放大控尺寸 图片优化分辨率可调_2105116266620080129.json、图片生成/图生图/Flux2洗图加放大控尺寸，图生图高清修复分辨率提升工具_2103570471265587202.json、图片生成/图生图/Flux2洗图加放大控尺寸｜图生图精修一步到位_2100830289231704066.json、图片生成/图生图/Flux2洗图放大控尺寸｜图生图画质重塑｜输出尺寸自己说了算_2104824382769160194.json…）
 
 - **类型**：Text To Image
-- **样本数**：8
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CR Text`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `FastFilmGrain`
-- `GetImageSize+`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImageScaleBy`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `JjkText`
 - `KSampler`
-- `LayerColor: BrightnessContrastV2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RunningHub Deepcleaner`
+- `PixaromaLoraLoader`
+- `PixaromaTextJoinTwo`
+- `PreviewImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `YC Color Match`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `KOOK_SaveJPGImage` —— 6/8 个有
-- `CR Text` —— 5/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
-- `PrimitiveBoolean` —— 3/8 个有
-- `TT_img_enc_v2` —— 3/8 个有
-- `ZML_SwitchOutput` —— 3/8 个有
-- `DapaoPromptNode` —— 2/8 个有
-- `RH_LLMAPI_NODE` —— 2/8 个有
-- `llama_cpp_instruct_adv` —— 2/8 个有
-- `llama_cpp_model_loader` —— 2/8 个有
-- `llama_cpp_parameters` —— 2/8 个有
-- `CR Text Concatenate` —— 1/8 个有
-- `CR Text Replace` —— 1/8 个有
-- `Fast Bypasser (rgthree)` —— 1/8 个有
-- `Fast Groups Muter (rgthree)` —— 1/8 个有
-- `ImpactSwitch` —— 1/8 个有
-- `JDCN_StringToList` —— 1/8 个有
-- `LoadImage` —— 1/8 个有
-- `MemoryCleaner` —— 1/8 个有
-- `ProcessString` —— 1/8 个有
-- `ShowText|pysssss` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `Float` —— 6/7 个有
+- `FloatConstant` —— 4/7 个有
+- `FluxGuidance` —— 4/7 个有
+- `GrowMaskWithBlur` —— 3/7 个有
+- `Kontext Inpainting Conditioning` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
+- `Text Multiline` —— 3/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 1080 - 1080 | 8 | 100% |
-| 高度 | 1920 | 1920 - 1920 | 8 | 100% |
-| 采样步数 | 8 | 8 - 8 | 8 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | res_2s | - | 8 | 100% |
-| 调度器 | bong_tangent | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
+| 采样算法 | er_sde | - | 7 | 100% |
+| 调度器 | beta | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 80 | 80 - 80 | 7 | 100% |
+| 高度 | 80 | 80 - 80 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 14/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 1080 - 1080，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，观测区间 1920 - 1920，8 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，8 个样本，一致性 100%
-- 调度器 最常用 bong_tangent，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，7 个样本，一致性 100%
+- 调度器 最常用 beta，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
+- 高发问题（14/7 个样本）：Steps较低可能导致细节不足

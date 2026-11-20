@@ -2,98 +2,86 @@
 name: text_to_image_lora_sampler_clip_183
 type: Text To Image
 frequency: 10
-level: strong
-coverage: 0.8767
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: weak
+coverage: 0.8771
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MINIMAX H3多参生视频，文生视频图生视频双模式_2110819887017975810.json, 视频生成/图生视频/MINIMAX H3多图参考生视频 多张参考图输入角色一致性更强_2104657812193370114.json, 视频生成/图生视频/MINIMAX H3多图参考生视频 多模态输入视频生成_2109333013833273345.json, 视频生成/图生视频/MINIMAX H3多图参考生视频工作流，视频生视频图生视频处理方案_2108265068692598785.json, 视频生成/图生视频/MINIMAX H3多图参考生视频工作流，视频生视频图生视频方案_2106813670759157761.json, 视频生成/图生视频/MINIMAX-H3多图参考生视频｜多图输入角色一致生成_2094860073762902017.json, 视频生成/图生视频/MINIMAX-H3多图参考生视频｜视频生视频图生视频_2090436400712863745.json, 视频生成/图生视频/MINIMAX-H3多图参考生视频｜视频生视频图生视频都行_2114245257616519170.json, 视频生成/图生视频/MINIMAX-H3多图参考｜多张图片参考生成连贯视频_2101575258661806082.json, 视频生成/图生视频/MImax H3超强开源视频加速-图生视频工作流_2087344640801464322.json]
+members: [图片生成/文生图/千问2.1文生图_2103829231951241218.json, 图片生成/文生图/千问2.1文生图官方原生架构｜一键出图带海报制作｜新手友好_2104813513557504002.json, 图片生成/文生图/千问2.1文生图自动优化版｜一句话提示词直出精美图片_2103726338984210433.json, 图片生成/文生图/千问2.1文生图｜轻量好上手 文生图出图稳定效果在线_2104035483096539138.json, 图片生成/文生图/千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json, 图片生成/文生图/文生图MOSS文生图2K极速版｜美少女写实风秒出图_2114228750840852482.json, 数字人/数字人/Qwen 2.1透明背景抠图，一键生成PNG透明图生图工具_2102899365059846146.json, 数字人/数字人/Qwen Image 2.1文生图处理生成工具_2102554303809544193.json, 视频生成/图生视频/Qwen_2.1透明背景抠图，一键生成PNG透明图生图工具_2104737318635659265.json, 视频生成/图生视频/Qwen_Image_2.1透明背景抠图，PNG通道输出图生图专用工作流_2105508227860492289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_183
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MINIMAX H3多参生视频，文生视频图生视频双模式_2110819887017975810.json、视频生成/图生视频/MINIMAX H3多图参考生视频 多张参考图输入角色一致性更强_2104657812193370114.json、视频生成/图生视频/MINIMAX H3多图参考生视频 多模态输入视频生成_2109333013833273345.json、视频生成/图生视频/MINIMAX H3多图参考生视频工作流，视频生视频图生视频处理方案_2108265068692598785.json、视频生成/图生视频/MINIMAX H3多图参考生视频工作流，视频生视频图生视频方案_2106813670759157761.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/千问2.1文生图_2103829231951241218.json、图片生成/文生图/千问2.1文生图官方原生架构｜一键出图带海报制作｜新手友好_2104813513557504002.json、图片生成/文生图/千问2.1文生图自动优化版｜一句话提示词直出精美图片_2103726338984210433.json、图片生成/文生图/千问2.1文生图｜轻量好上手 文生图出图稳定效果在线_2104035483096539138.json、图片生成/文生图/千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
-- **可信度**：强结论
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 9/10 个有
-- `PrimitiveFloat` —— 9/10 个有
-- `PrimitiveStringMultiline` —— 9/10 个有
-- `SaveImage` —— 5/10 个有
-- `ApplyFaceProcessor` —— 1/10 个有
-- `CompressImages` —— 1/10 个有
-- `FaceProcessorLoader` —— 1/10 个有
-- `GetVideoComponents` —— 1/10 个有
-- `ImageFromBatch` —— 1/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
-- `MathExpression|pysssss` —— 1/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/10 个有
-- `PreviewAny` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `RH_Astra` —— 1/10 个有
-- `SaveMP4` —— 1/10 个有
-- `SeedVR2` —— 1/10 个有
-- `SeedVR2BlockSwap` —— 1/10 个有
-- `VHS_VideoCombine` —— 1/10 个有
-- `easy float` —— 1/10 个有
+- `TextEncodeQwenImage21` —— 9/10 个有
+- `PreviewImage` —— 8/10 个有
+- `easy showAnything` —— 8/10 个有
+- `ResolutionSelector` —— 7/10 个有
+- `孤海注释` —— 7/10 个有
+- `FastGroupsBypassSwitch` —— 6/10 个有
+- `TextGenerateLTX2Prompt` —— 5/10 个有
+- `LoadImage` —— 3/10 个有
+- `QwenImage21Cache` —— 3/10 个有
+- `TextCombinerTwo` —— 3/10 个有
+- `CM_FloatToInt` —— 2/10 个有
+- `CR Text` —— 2/10 个有
+- `EmptyImage` —— 2/10 个有
+- `GetNode` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `ComfySwitchNode` —— 1/10 个有
+- `EmptyFlux2LatentImage` —— 1/10 个有
+- `ImageConcatMulti` —— 1/10 个有
+- `SaveImageAdvanced` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 10 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
-| 采样算法 | er_sde | - | 10 | 100% |
-| 调度器 | beta | - | 10 | 100% |
+| 宽度 | 80 | 80 - 1024 | 10 | 0% |
+| 高度 | 80 | 80 - 1024 | 10 | 0% |
+| 采样步数 | 4 | 4 - 50 | 10 | 0% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 10 | 75% |
+| 采样算法 | er_sde | - | 10 | 90% |
+| 调度器 | beta | - | 10 | 90% |
 | 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
-| 宽度 | 80 | 80 - 80 | 10 | 100% |
-| 高度 | 80 | 80 - 80 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，10 个样本，一致性 100%
-- 调度器 最常用 beta，10 个样本，一致性 100%
+- 宽度 中位数 80，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1024，10 个样本，取值分散，一致性仅 0%
+- 采样步数 中位数 4，观测区间 4 - 50，10 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，10 个样本
+- 采样算法 最常用 er_sde，10 个样本，一致性 90%
+- 调度器 最常用 beta，10 个样本，一致性 90%
 - 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：Steps较低可能导致细节不足
+- 高发问题（12/10 个样本）：Steps较低可能导致细节不足

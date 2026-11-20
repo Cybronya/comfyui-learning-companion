@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_153
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.886545
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.848636
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/官方稳定版全能视频X图生视频创意生成工作流_2088405018243325953.json, 图片生成/图生图/官方稳定版图生视频｜全能视频X其它图片处理其他创意工作流_2088383430127079426.json, 图片生成/图生图/宠物拟人工作流｜毛孩子照片秒变拟人角色，新奇创意_2099899324359602178.json, 图片生成/图生图/室内效果图分阶修复专家｜精修图生图 老房子秒变样板间_2105510590549676033.json, 图片生成/图生图/建筑效果图重新渲染｜光源布光自由控制重出图_2101547236311257089.json, 图片生成/图生图/手办创建_2108026254615203841.json, 图片生成/图生图/手办创建图生图，照片一键变收藏级手办模型_2112272916351111169.json, 图片生成/图生图/手办创建工作流｜图生图一键生成手办设计稿_2114066290829783041.json, 图片生成/图生图/空白工作流_2112112425230225410.json, 图片生成/文生图/全能图片G IMAGE 2.5 Sunburst编辑流｜一致性在线，改图不跑偏_2099524674781794306.json, 图片生成/文生图/全能图片G2.5多宫格故事板 Seedance2.0_2.5与H3通用分镜_2098702107397414913.json]
+members: [图片生成/图生图/一键换装商品替换｜Seedream-v5-pro图生图直出_2090560787105533953.json, 图片生成/图生图/一键换装完美保纹理｜Seedream-v5-pro商品替换图生图_2090864701696724993.json, 图片生成/图生图/人物皮肤质感优化搭配克莱因高清放大，人像写真级图生图高清修复_2102894507539910658.json, 图片生成/图生图/人物皮肤质感优化搭配克莱因高清放大，人像写真级图生图高清修复_2104741711716114434.json, 图片生成/图生图/人物皮肤质感克莱因高清 人像写真高清放大处理_2099939435751239681.json, 图片生成/图生图/人物皮肤质感克莱因高清_人像写真高清放大处理_2100182790968012801.json, 图片生成/图生图/人物皮肤质感克莱因高清_人像写真高清放大处理_2101482977904644097.json, 图片生成/图生图/人物皮肤质感克莱因高清_人像写真高清放大处理_2101868155126771713.json, 图片生成/图生图/人物皮肤质感克莱因高清_人像写真高清放大处理_2102212532319641601.json, 图片生成/图生图/人物皮肤质感加克莱因高清工作流，精修图生图高清放大处理方案_2105813111113601026.json, 图片生成/图生图/克莱因高清人物皮肤质感流｜毛孔光泽都真实，人像出图高级感_2099540747157594114.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_153
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/官方稳定版全能视频X图生视频创意生成工作流_2088405018243325953.json、图片生成/图生图/官方稳定版图生视频｜全能视频X其它图片处理其他创意工作流_2088383430127079426.json、图片生成/图生图/宠物拟人工作流｜毛孩子照片秒变拟人角色，新奇创意_2099899324359602178.json、图片生成/图生图/室内效果图分阶修复专家｜精修图生图 老房子秒变样板间_2105510590549676033.json、图片生成/图生图/建筑效果图重新渲染｜光源布光自由控制重出图_2101547236311257089.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/一键换装商品替换｜Seedream-v5-pro图生图直出_2090560787105533953.json、图片生成/图生图/一键换装完美保纹理｜Seedream-v5-pro商品替换图生图_2090864701696724993.json、图片生成/图生图/人物皮肤质感优化搭配克莱因高清放大，人像写真级图生图高清修复_2102894507539910658.json、图片生成/图生图/人物皮肤质感优化搭配克莱因高清放大，人像写真级图生图高清修复_2104741711716114434.json、图片生成/图生图/人物皮肤质感克莱因高清 人像写真高清放大处理_2099939435751239681.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
@@ -26,28 +26,31 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 10/11 个有
-- `SaveImage` —— 9/11 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 5/11 个有
-- `CheckpointLoaderSimple` —— 2/11 个有
-- `PrimitiveStringMultiline` —— 2/11 个有
-- `RH_RhartVideoGOfficialImageToVideo` —— 2/11 个有
-- `SaveVideo` —— 2/11 个有
-- `TextEncodeQwenImageEditPlus` —— 2/11 个有
-- `RHHiddenNodes` —— 1/11 个有
-- `RH_RhartImageG2ImageToImage` —— 1/11 个有
-- `RH_SeedreamV5ProImageToImage` —— 1/11 个有
-- `ShowText|pysssss` —— 1/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/11 个有
+- `workflow>klein高清` —— 8/11 个有
+- `workflow>人物皮肤高清` —— 6/11 个有
+- `孤海注释` —— 6/11 个有
+- `PreviewImage` —— 4/11 个有
+- `EmptyImage` —— 3/11 个有
+- `workflow>krea2高清` —— 3/11 个有
+- `CR Text` —— 2/11 个有
+- `LayerUtility: ImageReel` —— 2/11 个有
+- `LayerUtility: ImageReelComposit` —— 2/11 个有
+- `RH_SeedreamV5ProImageToImage` —— 2/11 个有
+- `图像缩放V2_孤海` —— 2/11 个有
+- `workflow>克莱因高清` —— 1/11 个有
 
 ## 典型参数
 
@@ -65,7 +68,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -76,4 +79,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高发问题（14/11 个样本）：Steps较低可能导致细节不足
+- 高发问题（11/11 个样本）：Steps较低可能导致细节不足

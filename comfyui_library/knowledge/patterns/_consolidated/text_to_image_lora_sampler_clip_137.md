@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_137
 type: Text To Image
 frequency: 12
-level: weak
-coverage: 0.871083
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.89325
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/Qwen2511-角色复刻极简工作流_2083813171214770177.json, 数字人/数字人/角色复刻极简工作流｜Qwen2511数字人快速生成_2088770876085985282.json, 视频生成/图生视频/H3 MAX旗舰模型图生视频 工作流让静态图片动起来_2098636207260524546.json, 视频生成/图生视频/H3 MAX旗舰模型图生视频｜让静态图片自然动起来_2098699818653802497.json, 视频生成/图生视频/H3 MAX首尾帧工作流｜旗舰模型双图过渡生成_2095597681195446273.json, 视频生成/图生视频/H3 Max Turbo图生视频 首尾帧视频生成工具_2099943877296877569.json, 视频生成/图生视频/H3 Max Turbo图生视频首尾帧生成全节点注释_2100286294709596162.json, 视频生成/图生视频/H3 Max智能运镜工作流 AI看图自动运镜处理_2100658647239053314.json, 视频生成/图生视频/H3 Max智能运镜工作流 AI看图自动运镜处理_2100669399102476290.json, 视频生成/图生视频/旗舰模型图片动起来｜H3 MAX图生视频工作流_2095861857969074178.json, 视频生成/文生视频/AI看图自动运镜｜H3 MAX智能运镜文生视频_2095836375957458946.json, 视频生成/文生视频/H3 Max Turbo图生视频首尾帧生成 全节点注释_2099926302546550786.json]
+members: [图片生成/图生图/心然·寻源Qwen2.1文生图｜文生图图生图双模式｜出图稳定值得收藏_2102218247461490690.json, 图片生成/文生图/BF16精度Qwen Image 2.1文生图，小字不崩高质量文字渲染工作流_2102872573246791681.json, 图片生成/文生图/BF16精度Qwen_Image_2.1文生图，小字不崩高质量文字渲染工作流_2105503929613250561.json, 图片生成/文生图/ComfyUI出MJ最强版 CG幻想角色设计文生图工具_2113341315332272129.json, 图片生成/文生图/MJ风格工作流V2.0｜美学一键复刻_2112481146184486913.json, 图片生成/文生图/Qwen Image 2.1文生图 官方模板，原生2K高清文本到图像方案_2103550536535601154.json, 图片生成/文生图/Qwen2.1_BF16官方文生图工作流｜海报制作字体设计一次到位_2104058681204764674.json, 图片生成/文生图/Qwen2.1提示词增强文生图 写实画面质量跃升_2104764071617851393.json, 图片生成/文生图/Qwen2.1提示词增强文生图 写实画面质量跃升_2105438700263006209.json, 图片生成/文生图/Qwen2.1文图生图提示词增强工作流，文生图人像写真图生图处理方案_2107586964294815746.json, 图片生成/文生图/Qwen2.1文生图提示词增强版｜人像写真质感拉满，出图更精致_2104540403243507714.json, 图片生成/文生图/Qwen_Image_2.1文生图｜官方PE参数 老许Gary出品海报制作利器_2105515254531837953.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_137
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/Qwen2511-角色复刻极简工作流_2083813171214770177.json、数字人/数字人/角色复刻极简工作流｜Qwen2511数字人快速生成_2088770876085985282.json、视频生成/图生视频/H3 MAX旗舰模型图生视频 工作流让静态图片动起来_2098636207260524546.json、视频生成/图生视频/H3 MAX旗舰模型图生视频｜让静态图片自然动起来_2098699818653802497.json、视频生成/图生视频/H3 MAX首尾帧工作流｜旗舰模型双图过渡生成_2095597681195446273.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/心然·寻源Qwen2.1文生图｜文生图图生图双模式｜出图稳定值得收藏_2102218247461490690.json、图片生成/文生图/BF16精度Qwen Image 2.1文生图，小字不崩高质量文字渲染工作流_2102872573246791681.json、图片生成/文生图/BF16精度Qwen_Image_2.1文生图，小字不崩高质量文字渲染工作流_2105503929613250561.json、图片生成/文生图/ComfyUI出MJ最强版 CG幻想角色设计文生图工具_2113341315332272129.json、图片生成/文生图/MJ风格工作流V2.0｜美学一键复刻_2112481146184486913.json…）
 
 - **类型**：Text To Image
 - **样本数**：12
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -26,54 +26,59 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
+- `ResolutionSelector`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 11/12 个有
-- `solarL_SaveImagesToZip` —— 11/12 个有
-- `孤海注释` —— 11/12 个有
-- `LoadImage` —— 10/12 个有
-- `SaveVideo` —— 10/12 个有
-- `SaveImage` —— 8/12 个有
-- `PrimitiveStringMultiline` —— 7/12 个有
-- `RH_MinimaxHailuoH3MaxImageToVideo` —— 7/12 个有
-- `RH_MinimaxH3MaxTurboImageToVideo` —— 3/12 个有
-- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 3/12 个有
-- `CR Text` —— 2/12 个有
-- `Image Comparer (rgthree)` —— 2/12 个有
-- `ResizeImageMaskNode` —— 2/12 个有
-- `TTResolutionSelector` —— 2/12 个有
-- `TextEncodeQwenImageEditPlus` —— 2/12 个有
+- `TextEncodeQwenImage21` —— 10/12 个有
+- `孤海注释` —— 10/12 个有
+- `ConditioningZeroOut` —— 7/12 个有
+- `TextGenerate` —— 6/12 个有
+- `CR Prompt Text` —— 5/12 个有
+- `StringConstantMultiline` —— 5/12 个有
+- `PreviewImage` —— 4/12 个有
+- `SaveImageAdvanced` —— 4/12 个有
+- `easy clearCacheAll` —— 4/12 个有
+- `SetNode` —— 3/12 个有
+- `ConditioningKrea2Rebalance` —— 2/12 个有
+- `EmptyImage` —— 2/12 个有
+- `PreviewAny` —— 2/12 个有
+- `GetNode` —— 1/12 个有
+- `LoadImage` —— 1/12 个有
+- `easy saveText` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | 80 - 80 | 12 | 100% |
+| 高度 | 80 | 80 - 80 | 12 | 100% |
 | 采样步数 | 4 | 4 - 4 | 12 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 12 | 77% |
-| 采样算法 | er_sde | - | 12 | 92% |
-| 调度器 | beta | - | 12 | 92% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 12 | 100% |
+| 采样算法 | er_sde | - | 12 | 100% |
+| 调度器 | beta | - | 12 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| 宽度 | 80 | 80 - 512 | 12 | 0% |
-| 高度 | 80 | 80 - 512 | 12 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
+- 宽度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，12 个样本
-- 采样算法 最常用 er_sde，12 个样本，一致性 92%
-- 调度器 最常用 beta，12 个样本，一致性 92%
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，12 个样本，一致性 100%
+- 调度器 最常用 beta，12 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 512，12 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 512，12 个样本，取值分散，一致性仅 0%
-- 高发问题（13/12 个样本）：Steps较低可能导致细节不足
+- 高发问题（15/12 个样本）：Steps较低可能导致细节不足

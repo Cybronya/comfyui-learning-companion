@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_91
 type: Text To Image
 frequency: 14
-level: strong
-coverage: 0.899786
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: weak
+coverage: 0.9105
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/H3人物三视图和场景图生成优化版V3工具-参考双图_2101865637562904577.json, 图片生成/图生图/Image-2.5九图图生图版本 多图编辑处理_2098304496907669505.json, 图片生成/图生图/InspyrenetRembg智能抠图 图生图一键去除背景_2094216339488600065.json, 图片生成/图生图/MiniMax H3人物三视图可生成场景图生图处理工具_2102137579343794177.json, 图片生成/图生图/Minimax H3人物三视图和场景图生成 超清优化版_2105125698879975425.json, 图片生成/图生图/Minimax H3人物三视图和场景图生成超清优化版 角色设定批量产出_2109367390558580737.json, 图片生成/图生图/openAI生图工作流｜图生图创意绘图模板直出_2097897249505374210.json, 图片生成/图生图/openAI生图工作流｜图生图图片生成处理_2097844315547594753.json, 图片生成/图生图/openAI生图工作流｜智能图生图创意绘制方案_2097898857920294913.json, 图片生成/图生图/上衣替换换衣服｜Image2服装替换展示图生图生成_2094802942401536001.json, 图片生成/图生图/人物三视图场景图｜Minimax H3超清优化版图生图_2092918394403250177.json, 图片生成/图生图/俯视图拆九宫格平视分镜横板｜全能图像G低价渠道，图生图分镜省时省力_2100441395935924225.json, 图片生成/图生图/超清优化人物三视图场景图｜Minimax H3图生图生成_2092718678612729857.json, 图片生成/文生图/H3人物三视图和场景图生成优化版V3工具_2100664259473657857.json]
+members: [图片生成/文生图/Qwen t2m_2040622346905587714.json, 图片生成/文生图/krea2-turbo-极简极速文生图小说用_2103827094890434561.json, 图片生成/文生图/krea2-turbo极简极速文生图｜小说配图专用 文生图秒出插画_2104056464099864578.json, 图片生成/文生图/krea2基础文生图工作流｜物品摄影人像写真生成_2097777800206970882.json, 图片生成/文生图/krea2基础文生图工作流｜物品摄影人像写真生成_2101478583771422722.json, 图片生成/文生图/丰盈美女人像写真生成｜文生图高质量出图工作流_2094542170748448770.json, 图片生成/文生图/冷冬圣诞夜漫画风出图｜动漫角色分镜文生图_2096901929984151554.json, 图片生成/文生图/动漫二次元风格文生图｜创意插画一键生成工具_2101181321061167106.json, 图片生成/文生图/动漫女孩文生图工作流｜动漫角色插画配图｜小说插图轻松出图_2101862601419481090.json, 图片生成/文生图/小说配图极速直出 krea2 turbo极简文生图工作流_2104314139870060545.json, 图片生成/文生图/文生图基础流｜krea2文生图图生图双模式_2089846295853879298.json, 图片生成/文生图/极速版Krea2 Trubo文生图｜美商极高V2版 美感直接拉满_2105551057450524673.json, 图片生成/文生图/精致漫画风文生图工作流｜动漫角色封面插图｜叙事感拉满出片_2101869067136233474.json, 图片生成/文生图/视频跟练｜文生图打造跟练画面素材，健身舞蹈教学好帮手_2107363684484993025.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_91
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/H3人物三视图和场景图生成优化版V3工具-参考双图_2101865637562904577.json、图片生成/图生图/Image-2.5九图图生图版本 多图编辑处理_2098304496907669505.json、图片生成/图生图/InspyrenetRembg智能抠图 图生图一键去除背景_2094216339488600065.json、图片生成/图生图/MiniMax H3人物三视图可生成场景图生图处理工具_2102137579343794177.json、图片生成/图生图/Minimax H3人物三视图和场景图生成 超清优化版_2105125698879975425.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Qwen t2m_2040622346905587714.json、图片生成/文生图/krea2-turbo-极简极速文生图小说用_2103827094890434561.json、图片生成/文生图/krea2-turbo极简极速文生图｜小说配图专用 文生图秒出插画_2104056464099864578.json、图片生成/文生图/krea2基础文生图工作流｜物品摄影人像写真生成_2097777800206970882.json、图片生成/文生图/krea2基础文生图工作流｜物品摄影人像写真生成_2101478583771422722.json…）
 
 - **类型**：Text To Image
 - **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
@@ -26,56 +26,51 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2ImageToImage` —— 12/14 个有
-- `CR Prompt Text` —— 9/14 个有
-- `CR Text Concatenate` —— 7/14 个有
-- `KOOK_SaveJPGImage` —— 7/14 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 2/14 个有
-- `EmptyImage` —— 1/14 个有
-- `GuHaiAutoImageSplit` —— 1/14 个有
-- `InspyrenetRembg` —— 1/14 个有
-- `MaskPreview+` —— 1/14 个有
-- `PreviewImage` —— 1/14 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 1/14 个有
-- `easy showAnything` —— 1/14 个有
+- `UNETLoader` —— 13/14 个有
+- `JjkText` —— 12/14 个有
+- `solarL_SaveImagesToZip` —— 12/14 个有
+- `孤海注释` —— 12/14 个有
+- `ConditioningZeroOut` —— 9/14 个有
+- `CheckpointLoaderSimple` —— 6/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/14 个有
+- `Seed (rgthree)` —— 3/14 个有
+- `ResolutionSelector` —— 1/14 个有
+- `TT_img_enc` —— 1/14 个有
+- `VRAM_Debug` —— 1/14 个有
+- `easy imageSwitch` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 14 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 14 | 100% |
-| 采样算法 | er_sde | - | 14 | 100% |
-| 调度器 | beta | - | 14 | 100% |
+| 宽度 | 80 | 80 - 1280 | 14 | 0% |
+| 高度 | 80 | 80 - 1920 | 14 | 0% |
+| 采样步数 | 4 | 4 - 6 | 14 | 87% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 14 | 69% |
+| 采样算法 | er_sde | - | 14 | 86% |
+| 调度器 | beta | - | 14 | 86% |
 | 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
-| 宽度 | 80 | 80 - 80 | 14 | 100% |
-| 高度 | 80 | 80 - 80 | 14 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，14 个样本，一致性 100%
-- 调度器 最常用 beta，14 个样本，一致性 100%
+- 宽度 中位数 80，观测区间 80 - 1280，14 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1920，14 个样本，取值分散，一致性仅 0%
+- 采样步数 中位数 4，观测区间 4 - 6，14 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，14 个样本
+- 采样算法 最常用 er_sde，14 个样本，一致性 86%
+- 调度器 最常用 beta，14 个样本，一致性 86%
 - 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 高发问题（14/14 个样本）：Steps较低可能导致细节不足
+- 高发问题（18/14 个样本）：Steps较低可能导致细节不足

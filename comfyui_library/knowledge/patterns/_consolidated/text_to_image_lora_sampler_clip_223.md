@@ -3,84 +3,56 @@ name: text_to_image_lora_sampler_clip_223
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.749778
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.902556
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2103271632474300417.json, 视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2105721669728956418.json, 视频生成/图生视频/H3打斗工作流，图生视频高动态动作场景创作工具_2106489548766269442.json, 视频生成/图生视频/H3打斗工作流｜图生视频 打造拳拳到肉的打斗名场面_2105501306726207490.json, 视频生成/图生视频/H3打斗特效视频生成 武打动作画面直出方案_2110369061031989249.json, 视频生成/图生视频/minimax h3最强动作迁移｜视频图生视频直出_2092048558504628226.json, 视频生成/图生视频/高质量打斗视频专用双采无加速 文生图生视频处理工具_2112970802692972545.json, 视频生成/文生视频/H3突破15秒长视频不劣化工作流拆解系列_2100272112148766722.json, 视频生成/文生视频/H3突破15秒长视频不劣化｜工作流拆解系列生成_2095301463194034178.json]
+members: [数字人/数字人/声音克隆上传参考音频生成语音数字人处理工具_2101412401496285186.json, 视频生成/文生视频/Breeze_TTS_2声音导演工作流，视频生视频音频生成处理工具_2107329668998320130.json, 视频生成/文生视频/Breeze_TTS_2声音导演工作流，视频生视频音频生成处理工具_2107441806513369089.json, 音频生成/音频生成/Breeze TTS 2声音设计 AI语音克隆音频生成_2098859602187210753.json, 音频生成/音频生成/Breeze TTS 2声音设计工作流｜一句话定制专属数字人音色｜音频生成_2099141974749179905.json, 音频生成/音频生成/Breeze TTS2 Clone语音克隆工作流，音频生成工具_2106527599907393538.json, 音频生成/音频生成/Breeze TTS2声音设计工作流｜音频生成自定义音色_2108419117261873153.json, 音频生成/音频生成/Breeze-TTS2-Clone声音克隆｜音频生成复刻音色超像_2106271449236459521.json, 音频生成/音频生成/开源TTS标杆｜Breeze 2高质量声音设计生成_2096571329003741185.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_223
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2103271632474300417.json、视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2105721669728956418.json、视频生成/图生视频/H3打斗工作流，图生视频高动态动作场景创作工具_2106489548766269442.json、视频生成/图生视频/H3打斗工作流｜图生视频 打造拳拳到肉的打斗名场面_2105501306726207490.json、视频生成/图生视频/H3打斗特效视频生成 武打动作画面直出方案_2110369061031989249.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/声音克隆上传参考音频生成语音数字人处理工具_2101412401496285186.json、视频生成/文生视频/Breeze_TTS_2声音导演工作流，视频生视频音频生成处理工具_2107329668998320130.json、视频生成/文生视频/Breeze_TTS_2声音导演工作流，视频生视频音频生成处理工具_2107441806513369089.json、音频生成/音频生成/Breeze TTS 2声音设计 AI语音克隆音频生成_2098859602187210753.json、音频生成/音频生成/Breeze TTS 2声音设计工作流｜一句话定制专属数字人音色｜音频生成_2099141974749179905.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `T8_BreezeTTS_Generate`
+- `T8_BreezeTTS_GenerationSettings`
+- `T8_BreezeTTS_ModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ExtendIntermediateSigmas` —— 8/9 个有
-- `GetNode` —— 7/9 个有
-- `SetNode` —— 7/9 个有
-- `SolAttnMiniMax` —— 7/9 个有
-- `VAEDecodeAudio` —— 7/9 个有
-- `DisableNoise` —— 6/9 个有
-- `SaveImage` —— 6/9 个有
-- `SplitSigmasDenoise` —— 6/9 个有
-- `easy cleanGpuUsed` —— 6/9 个有
-- `ModelPreviewOverrideKJ` —— 5/9 个有
-- `VHS_LoadVideo` —— 5/9 个有
-- `INTConstant` —— 4/9 个有
-- `LoadAudio` —— 4/9 个有
-- `ResizeShortestToNode` —— 4/9 个有
-- `MiniMaxH3AddGuide` —— 3/9 个有
-- `BlockSparseAttention` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `Fast Groups Muter (rgthree)` —— 2/9 个有
-- `GetImageRangeFromBatch` —— 2/9 个有
-- `H3SigmaRefiner` —— 2/9 个有
-- `ImageScaleToTotalPixels` —— 2/9 个有
-- `MiniMaxH3AVDecodeT8` —— 2/9 个有
-- `Text Concatenate` —— 2/9 个有
-- `easy showAnything` —— 2/9 个有
-- `EmptyImage` —— 1/9 个有
-- `ImageResizeKJv2` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `RTXVideoSuperResolution` —— 1/9 个有
-- `UniBlockSwapTE` —— 1/9 个有
+- `SaveAudio` —— 7/9 个有
+- `孤海注释` —— 7/9 个有
+- `CR Prompt Text` —— 6/9 个有
+- `Apply Whisper` —— 5/9 个有
+- `LoadAudio` —— 5/9 个有
+- `T8_BreezeTTS_DesignRequest` —— 4/9 个有
+- `T8_BreezeTTS_CloneRequest` —— 3/9 个有
+- `EmptyImage` —— 2/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/9 个有
+- `PreviewAudio` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `PrimitiveStringMultiline` —— 2/9 个有
+- `SaveAudioMP3` —— 2/9 个有
+- `T8_BreezeTTS_DirectionRequest` —— 2/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
 
 ## 典型参数
 

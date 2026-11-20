@@ -1,110 +1,102 @@
 ---
 name: text_to_image_video_lora_sampler_77
 type: Text To Image
-frequency: 11
+frequency: 10
 level: strong
-coverage: 0.844
-common_nodes: [AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, solarL_SaveImagesToZip]
+coverage: 0.9218
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/InfiniTetalk配口型｜Wan2.1图像数字人KJ节点版_2094339522954874882.json, 视频生成/图生视频/InfiniTetalk音频驱动数字人｜电商带货图生视频_2096311256083951618.json, 视频生成/图生视频/InfiniteTalk超自然数字人对口型情感口播工作流，图生视频数字人工具_2106150910039781377.json, 视频生成/图生视频/InfiniteTalk超自然数字人对口型情感口播工作流，图生视频数字人工具_2106480253395881985.json, 视频生成/图生视频/InfiniteTalk超自然数字人对口型情感口播工作流，图生视频数字人方案_2106502944366616577.json, 视频生成/图生视频/Wan2.1 InfiniTetalk图像数字人配口型KJ节点人物特效_2088176935515021313.json, 视频生成/图生视频/对口型情感口播数字人InfiniTetalk超自然数字人对口型工作流，数字人图生视频方案_2108338478210699265.json, 视频生成/图生视频/对口型情感口播数字人InfiniTetalk超自然数字人对口型工作流，数字人图生视频方案_2108440403677634562.json, 视频生成/图生视频/数字人口播工作流，文生视频数字人图生视频处理方案_2110538752048328706.json, 视频生成/图生视频/音频驱动开口说话｜InfiniTetalk数字人电商带货_2096557364114714626.json, 视频生成/文生视频/口播视频量产神器｜数字人文生图生视频全能_2096622690554699778.json]
+members: [视频生成/图生视频/MiniMax H3全能参考生视频加速版 多重加速高清输出_2098827453300039682.json, 视频生成/图生视频/MiniMax H3参考生视频4步加速 6参考图图生视频处理工具_2113015406763003906.json, 视频生成/图生视频/MiniMax H3参考生视频电商带货｜创意产品展示新玩法_2108086527170531330.json, 视频生成/图生视频/MiniMax H3打戏战斗特效图生视频处理工作流_2102501974091583489.json, 视频生成/图生视频/MiniMax H3视频复刻加速版，数字人参考生视频与长视频直出工作流_2102827221554651137.json, 视频生成/图生视频/MiniMax H3视频复刻数字人加速版｜参考生视频长视频直出｜口播福音_2102608437405372417.json, 视频生成/图生视频/MiniMax H3视频复刻数字人换人换产品文案不换原声保留_2108718797380218882.json, 视频生成/图生视频/MiniMax H3视频复刻数字人视频换人换产品换文案语音替换_2108676232131997697.json, 视频生成/图生视频/MiniMax_H3视频复刻数字人｜换人换产品文案不换原声保留_2107986135334088706.json, 视频生成/图生视频/MiniMax_H3视频复刻数字人｜视频换人换产品换文案语音替换_2107984724403777537.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_77
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/InfiniTetalk配口型｜Wan2.1图像数字人KJ节点版_2094339522954874882.json、视频生成/图生视频/InfiniTetalk音频驱动数字人｜电商带货图生视频_2096311256083951618.json、视频生成/图生视频/InfiniteTalk超自然数字人对口型情感口播工作流，图生视频数字人工具_2106150910039781377.json、视频生成/图生视频/InfiniteTalk超自然数字人对口型情感口播工作流，图生视频数字人工具_2106480253395881985.json、视频生成/图生视频/InfiniteTalk超自然数字人对口型情感口播工作流，图生视频数字人方案_2106502944366616577.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3全能参考生视频加速版 多重加速高清输出_2098827453300039682.json、视频生成/图生视频/MiniMax H3参考生视频4步加速 6参考图图生视频处理工具_2113015406763003906.json、视频生成/图生视频/MiniMax H3参考生视频电商带货｜创意产品展示新玩法_2108086527170531330.json、视频生成/图生视频/MiniMax H3打戏战斗特效图生视频处理工作流_2102501974091583489.json、视频生成/图生视频/MiniMax H3视频复刻加速版，数字人参考生视频与长视频直出工作流_2102827221554651137.json…）
 
 - **类型**：Text To Image
-- **样本数**：11
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 10 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SolAttnMiniMax`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 10/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/11 个有
-- `SetNode` —— 10/11 个有
-- `孤海注释` —— 10/11 个有
-- `Audio Duration (mtb)` —— 9/11 个有
-- `GetImageRangeFromBatch` —— 9/11 个有
-- `MathExpression|pysssss` —— 9/11 个有
-- `PlaySound|pysssss` —— 9/11 个有
-- `SaveImage` —— 6/11 个有
-- `WanVideoTorchCompileSettings` —— 6/11 个有
-- `PreviewAudio` —— 4/11 个有
-- `easy int` —— 4/11 个有
-- `Anything Everywhere` —— 3/11 个有
-- `easy showAnything` —— 3/11 个有
-- `ColorCorrectOfUtils` —— 2/11 个有
-- `INTConstant` —— 2/11 个有
-- `ImageCASharpening+` —— 2/11 个有
-- `IndexTTS2Run` —— 2/11 个有
-- `PreviewAny` —— 2/11 个有
-- `PrimitiveStringMultiline` —— 2/11 个有
-- `GetImageSizeAndCount` —— 1/11 个有
-- `ImageResizeKJv2` —— 1/11 个有
-- `LogicUtil_SleepNodeAny` —— 1/11 个有
-- `PixaromaResolution` —— 1/11 个有
-- `PreviewImage` —— 1/11 个有
+- `CR Prompt Text` —— 9/10 个有
+- `LoraLoaderBypassModelOnly` —— 9/10 个有
+- `ModelAttentionBackend` —— 9/10 个有
+- `孤海注释` —— 8/10 个有
+- `VHS_LoadVideo` —— 7/10 个有
+- `SaveImage` —— 6/10 个有
+- `EmptyImage` —— 4/10 个有
+- `PreviewImage` —— 4/10 个有
+- `ExtendIntermediateSigmas` —— 2/10 个有
+- `CR Text` —— 1/10 个有
+- `H3SigmaRefiner` —— 1/10 个有
+- `IntToString` —— 1/10 个有
+- `LoadAudio` —— 1/10 个有
+- `MiniMaxChunkFeedForward` —— 1/10 个有
+- `MiniMaxH3BlockCacheT8` —— 1/10 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 1/10 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 1/10 个有
+- `MiniMaxLowVRAMAttention` —— 1/10 个有
+- `ModelPreviewOverrideKJ` —— 1/10 个有
+- `PathchSageAttentionKJ` —— 1/10 个有
+- `PreviewAny` —— 1/10 个有
+- `Seed_` —— 1/10 个有
+- `text-util-join-text` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 11 | 100% |
-| 高度 | 80 | 80 - 80 | 11 | 100% |
-| 采样步数 | 4 | 4 - 4 | 11 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 11 | 100% |
-| 采样算法 | er_sde | - | 11 | 100% |
-| 调度器 | beta | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
+| 采样算法 | er_sde | - | 10 | 100% |
+| 调度器 | beta | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 80 | 80 - 80 | 10 | 100% |
+| 高度 | 80 | 80 - 80 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，11 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，11 个样本，一致性 100%
-- 调度器 最常用 beta，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，10 个样本，一致性 100%
+- 调度器 最常用 beta，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高发问题（12/10 个样本）：Steps较低可能导致细节不足

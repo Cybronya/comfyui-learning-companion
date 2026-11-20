@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_150
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.894636
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.871091
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1批量一键抠图透明背景生成 自动识别主体电商产品图_2105354969548419074.json, 图片生成/图生图/Qwen Image 2.1角色四视图及三视图生成，图生图角色设计方案_2103618237505294338.json, 图片生成/图生图/Qwen Image 2.1透明图层抠图｜主体分离PNG直出_2103035249222574081.json, 图片生成/图生图/Qwen image 2.1角色表生成 角色设定图生图处理工具_2113695669427982338.json, 图片生成/图生图/Qwen image2.1替换工作流_2109602458845667330.json, 图片生成/图生图/Qwen image2.1最佳换头换脸 人物面部精准替换_2104627780217561090.json, 图片生成/图生图/Qwen-Image-2.1批量一键抠图，透明背景电商产品图_2111562469469679618.json, 图片生成/图生图/Qwen-Image-2.1批量抠图神器｜自动识别主体一键透明背景电商图_2105112588618125313.json, 图片生成/图生图/Qwen-image2.1扩图工作流｜图生图智能扩展画幅 边缘补全自然_2104027097525211138.json, 图片生成/图生图/Qwen-image2.1最佳换头换脸｜图生图精准换脸不崩脸_2104521060145258498.json, 图片生成/图生图/画面向外扩展补全 Qwen image2.1智能扩图工作流_2104303227163467778.json]
+members: [图片生成/图生图/Qwen Image 2.1图像编辑修复版，角色一致性图生图抠图多场景工具_2103593422190899202.json, 图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102548100928856066.json, 图片生成/图生图/Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170.json, 图片生成/图生图/Qwen Image 2.1图像编辑工作流，图生图图像处理方案_2107519626568622081.json, 图片生成/图生图/Qwen Image 2.1图像编辑流｜局部重绘换装一键搞定_2108041550201708545.json, 图片生成/图生图/Qwen Image 2.1图生图工作流图片编辑，商品替换换装多场景工具_2103607408328273922.json, 图片生成/图生图/Qwen Image 2.1图生图工作流图片编辑，商品替换换装多场景工具_2103971820344004609.json, 图片生成/图生图/Qwen Image 2.1多图编辑图生图处理生成工具_2102105087035400194.json, 图片生成/图生图/Qwen image 2.1图片编辑｜图生图改图如此简单 指哪改哪_2105534138802593793.json, 图片生成/文生图/QWen2.1文生图工作流｜千问模型文字生图轻松创作_2106996835603800065.json, 图片生成/文生图/Qwen 2.1文生图工作流，高质量文本到图像生成方案_2107183009446326274.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_150
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1批量一键抠图透明背景生成 自动识别主体电商产品图_2105354969548419074.json、图片生成/图生图/Qwen Image 2.1角色四视图及三视图生成，图生图角色设计方案_2103618237505294338.json、图片生成/图生图/Qwen Image 2.1透明图层抠图｜主体分离PNG直出_2103035249222574081.json、图片生成/图生图/Qwen image 2.1角色表生成 角色设定图生图处理工具_2113695669427982338.json、图片生成/图生图/Qwen image2.1替换工作流_2109602458845667330.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1图像编辑修复版，角色一致性图生图抠图多场景工具_2103593422190899202.json、图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102548100928856066.json、图片生成/图生图/Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170.json、图片生成/图生图/Qwen Image 2.1图像编辑工作流，图生图图像处理方案_2107519626568622081.json、图片生成/图生图/Qwen Image 2.1图像编辑流｜局部重绘换装一键搞定_2108041550201708545.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
@@ -29,29 +29,34 @@ source: knowledge_consolidation
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
+- `SaveImage`
 - `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 10/11 个有
-- `SaveImage` —— 10/11 个有
-- `孤海注释` —— 10/11 个有
-- `LoadImage` —— 8/11 个有
-- `CR Prompt Text` —— 6/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/11 个有
-- `QwenImage21Cache` —— 4/11 个有
-- `HAIGC_SaveImagesToZip` —— 3/11 个有
-- `ImageScaleToTotalPixels` —— 3/11 个有
-- `RHHiddenNodes` —— 3/11 个有
-- `RHUploadZip_V2` —— 3/11 个有
-- `easy imageSize` —— 3/11 个有
-- `DrawMaskOnImage` —— 2/11 个有
-- `ImagePadForOutpaint` —— 2/11 个有
-- `YYZZipImageSave` —— 1/11 个有
-- `easy promptLine` —— 1/11 个有
+- `ComfySwitchNode` —— 10/11 个有
+- `QwenImage21Cache` —— 10/11 个有
+- `LoadImage` —— 9/11 个有
+- `ResolutionSelector` —— 8/11 个有
+- `PrimitiveStringMultiline` —— 6/11 个有
+- `SaveImageAdvanced` —— 6/11 个有
+- `TextGenerate` —— 5/11 个有
+- `PreviewAny` —— 4/11 个有
+- `BatchImagesNode` —— 3/11 个有
+- `CR Prompt Text` —— 3/11 个有
+- `CR Text` —— 2/11 个有
+- `ImageCompare` —— 2/11 个有
+- `PrimitiveBoolean` —— 2/11 个有
+- `PrimitiveInt` —— 2/11 个有
+- `CM_FloatToInt` —— 1/11 个有
+- `QwenPERewriteT8` —— 1/11 个有
+- `Text` —— 1/11 个有
+- `TextConcatenator` —— 1/11 个有
+- `easy showAnything` —— 1/11 个有
 
 ## 典型参数
 
@@ -69,7 +74,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -80,4 +85,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，11 个样本，取值集中（一致性 100%）
-- 高发问题（13/11 个样本）：Steps较低可能导致细节不足
+- 高发问题（12/11 个样本）：Steps较低可能导致细节不足

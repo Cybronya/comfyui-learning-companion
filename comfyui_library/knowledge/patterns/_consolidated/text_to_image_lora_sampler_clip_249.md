@@ -2,119 +2,100 @@
 name: text_to_image_lora_sampler_clip_249
 type: Text To Image
 frequency: 8
-level: weak
-coverage: 0.741875
-common_nodes: [Any Switch (rgthree), CFGGuider, CLIPLoader, CLIPTextEncode, CR Text Concatenate, ColorMatch, ComfySwitchNode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GH_ImageVideoComparer, GetImageSize, Image Compare (mtb), ImageScaleToTotalPixels, ImageSharpen, JsonExtractString, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewAny, PreviewImage, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, ResolutionSelector, SDPoseOODLoader, SDPoseOODProcessor, SamplerCustomAdvanced, SaveImage, SaveImageAdvanced, Seed (rgthree), SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetLatentNoiseMask, TextConcatenator, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAEEncode, VAELoader, YOLOModelLoader, 孤海注释]
+level: strong
+coverage: 0.886125
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, ComfyMathExpression, EmptyLatentImage, ImageFromBatch, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy imageConcat, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen image2.1最强开源模型 图像编辑整合处理工具_2114088484360245249.json, 图片生成/图生图/Qwen image2.1最强开源模型图像编辑整合工作流 全能改图_2105410925342846978.json, 图片生成/图生图/Qwen image2.1最强开源模型图像编辑整合工作流 全能改图_2108654377069273089.json, 图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2104823312131125249.json, 图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2110573536854233089.json, 图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2111274795575894018.json, 图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2113460425001095170.json, 图片生成/图生图/Qwen_image2.1图像编辑整合包，最强开源模型图生图_2110492929373589505.json]
+members: [图片生成/图生图/Minimax图像编辑API版｜图生图换人角色一致稳定输出_2110678895354793985.json, 图片生成/图生图/Minimax图像编辑免费版｜局部重绘人物替换角色一致性不崩_2110677343311327233.json, 图片生成/图生图/minimax图像编辑API版人物替换，局部重绘角色一致_2110835438633181185.json, 图片生成/图生图/人物迁移MiniMax图像编辑API版工作流，局部重绘角色一致性图生图方案_2107254089863229441.json, 图片生成/图生图/人物迁移MiniMax图像编辑免费版工作流，局部重绘角色一致性图生图方案_2107251066072035329.json, 图片生成/图生图/人物迁移minimax图像编辑API版｜局部重绘角色一致性_2107008432187461634.json, 图片生成/图生图/人物迁移minimax图像编辑免费版｜局部重绘角色一致性_2106999934523371522.json, 图片生成/图生图/服装迁移超高一致性H3图像编辑工作流，风格迁移图生图图案迁移工具_2107222093061513218.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_249
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen image2.1最强开源模型 图像编辑整合处理工具_2114088484360245249.json、图片生成/图生图/Qwen image2.1最强开源模型图像编辑整合工作流 全能改图_2105410925342846978.json、图片生成/图生图/Qwen image2.1最强开源模型图像编辑整合工作流 全能改图_2108654377069273089.json、图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2104823312131125249.json、图片生成/图生图/Qwen_image2.1-最强开源模型，图像编辑整合工作流_2110573536854233089.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Minimax图像编辑API版｜图生图换人角色一致稳定输出_2110678895354793985.json、图片生成/图生图/Minimax图像编辑免费版｜局部重绘人物替换角色一致性不崩_2110677343311327233.json、图片生成/图生图/minimax图像编辑API版人物替换，局部重绘角色一致_2110835438633181185.json、图片生成/图生图/人物迁移MiniMax图像编辑API版工作流，局部重绘角色一致性图生图方案_2107254089863229441.json、图片生成/图生图/人物迁移MiniMax图像编辑免费版工作流，局部重绘角色一致性图生图方案_2107251066072035329.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CFGGuider`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Concatenate`
-- `ColorMatch`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
+- `CR Text`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GH_ImageVideoComparer`
-- `GetImageSize`
-- `Image Compare (mtb)`
-- `ImageScaleToTotalPixels`
-- `ImageSharpen`
-- `JsonExtractString`
+- `ImageFromBatch`
+- `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewAny`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ReferenceLatent`
-- `ResolutionSelector`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `SaveImageAdvanced`
-- `Seed (rgthree)`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetLatentNoiseMask`
-- `TextConcatenator`
-- `TextEncodeQwenImage21`
-- `TextGenerate`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `YOLOModelLoader`
+- `easy imageConcat`
+- `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawMaskOnImage` —— 7/8 个有
-- `GetNode` —— 7/8 个有
-- `INTConstant` —— 7/8 个有
-- `ImageConcanate` —— 7/8 个有
-- `InpaintCropImproved` —— 7/8 个有
-- `InpaintStitchImproved` —— 7/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
-- `SetNode` —— 7/8 个有
-- `SimpleMath+` —— 7/8 个有
-- `JjkText` —— 4/8 个有
-- `solarL_SaveImagesToZip` —— 4/8 个有
-- `忽略多组孤海` —— 4/8 个有
-- `EmptyImage` —— 1/8 个有
-- `ImageAndMaskPreview` —— 1/8 个有
-- `LayerMask: MaskGrow` —— 1/8 个有
-- `MaskFillHoles` —— 1/8 个有
-- `孤海图像缩放按像素` —— 1/8 个有
+- `Fast Groups Muter (rgthree)` —— 7/8 个有
+- `GetImageSize` —— 7/8 个有
+- `ImageScaleToTotalPixels` —— 7/8 个有
+- `LoraLoader` —— 7/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
+- `MiniMaxH3UnifiedToVideo` —— 7/8 个有
+- `easy imageInsetCrop` —— 7/8 个有
+- `RHLLMChatNode` —— 5/8 个有
+- `Qwen3VL_Chat` —— 3/8 个有
+- `ImageScaleBy` —— 1/8 个有
+- `ImageUpscaleWithModel` —— 1/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/8 个有
+- `PrimitiveInt` —— 1/8 个有
+- `UpscaleModelLoader` —— 1/8 个有
+- `VAEDecodeAudio` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 552 | 80 - 1024 | 8 | 14% |
-| 高度 | 552 | 80 - 1024 | 8 | 14% |
-| 采样步数 | 17 | 4 - 30 | 8 | 24% |
-| Prompt 约束强度(CFG) | 2.75 | 1 - 4.5 | 8 | 36% |
-| 采样算法 | er_sde | - | 8 | 50% |
-| 调度器 | beta | - | 8 | 50% |
+| LoRA 模型强度 | 1 | 1 - 1 | 7 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 80 | 80 - 80 | 8 | 100% |
+| 高度 | 80 | 80 - 80 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
+| 采样算法 | er_sde | - | 8 | 100% |
+| 调度器 | beta | - | 8 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 552，观测区间 80 - 1024，8 个样本，取值分散，一致性仅 14%
-- 高度 中位数 552，观测区间 80 - 1024，8 个样本，取值分散，一致性仅 14%
-- 采样步数 中位数 17，观测区间 4 - 30，8 个样本，取值分散，一致性仅 24%
-- Prompt 约束强度(CFG) 中位数 2.75，观测区间 1 - 4.5，8 个样本，取值分散，一致性仅 36%
-- 采样算法 最常用 er_sde，8 个样本，一致性 50%
-- 调度器 最常用 beta，8 个样本，一致性 50%
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，8 个样本，一致性 100%
+- 调度器 最常用 beta，8 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（4/8 个样本）：Steps较低可能导致细节不足
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

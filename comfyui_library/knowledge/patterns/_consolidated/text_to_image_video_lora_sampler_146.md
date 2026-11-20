@@ -3,70 +3,78 @@ name: text_to_image_video_lora_sampler_146
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8962
-common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, EmptyMiniMaxH3LatentAV, ImageConcatMulti, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AddGuide, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, solarL_SaveImagesToZip]
+coverage: 0.8908
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/H3纹理增强 视频细节纹理清晰度提升 画质优化处理_2099563913955336194.json, 图片生成/图生图/H3纹理增强视频超分 视频细节纹理清晰度提升_2099214022326444033.json, 视频生成/图生视频/H3_LMS视频高清修复_视频超分处理工具_2100423960998535170.json, 视频生成/图生视频/H3高清质感修复 视频画质增强处理生成工具_2099935023137910785.json, 视频生成/图生视频/H3高清质感修复_视频画质增强处理生成工具_2100513015132151810.json]
+members: [视频生成/图生视频/Minimax动态壁纸无缝循环 API版2K高质量生成工具_2113704499201265666.json, 视频生成/图生视频/Minimax参考图模式 多模态输入视频生成_2109765711622139905.json, 视频生成/图生视频/Qwen3.8全自动写提示词｜H3多参视频生成省心流_2096267936318185473.json, 视频生成/图生视频/动态壁纸无缝循环API版｜minimax高质量2K循环视频直出_2113526160729657346.json, 视频生成/图生视频/参考视频人物替换｜Qwen3.8反推提示词H3视频生成_2096280706988204034.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_146
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/H3纹理增强 视频细节纹理清晰度提升 画质优化处理_2099563913955336194.json、图片生成/图生图/H3纹理增强视频超分 视频细节纹理清晰度提升_2099214022326444033.json、视频生成/图生视频/H3_LMS视频高清修复_视频超分处理工具_2100423960998535170.json、视频生成/图生视频/H3高清质感修复 视频画质增强处理生成工具_2099935023137910785.json、视频生成/图生视频/H3高清质感修复_视频画质增强处理生成工具_2100513015132151810.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Minimax动态壁纸无缝循环 API版2K高质量生成工具_2113704499201265666.json、视频生成/图生视频/Minimax参考图模式 多模态输入视频生成_2109765711622139905.json、视频生成/图生视频/Qwen3.8全自动写提示词｜H3多参视频生成省心流_2096267936318185473.json、视频生成/图生视频/动态壁纸无缝循环API版｜minimax高质量2K循环视频直出_2113526160729657346.json、视频生成/图生视频/参考视频人物替换｜Qwen3.8反推提示词H3视频生成_2096280706988204034.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `EmptyMiniMaxH3LatentAV`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxLowVRAMAttention`
+- `MiniMaxH3ReferenceToVideo`
 - `ModelAttentionBackend`
-- `PrimitiveStringMultiline`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 4/5 个有
-- `ComfyNumberConvert` —— 4/5 个有
-- `ModelPreviewOverrideKJ` —— 4/5 个有
-- `PrimitiveInt` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `PreviewAny` —— 3/5 个有
-- `孤海注释` —— 3/5 个有
-- `EmptyImage` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/5 个有
-- `SolAttnMiniMax` —— 1/5 个有
+- `LTXVConcatAVLatent` —— 4/5 个有
+- `LTXVSeparateAVLatent` —— 4/5 个有
+- `ManualSigmas` —— 4/5 个有
+- `MiniMaxH3SigmaShift` —— 4/5 个有
+- `MinimaxH3LatentUpscaler3D` —— 4/5 个有
+- `SaveImage` —— 4/5 个有
+- `SplitSigmas` —— 4/5 个有
+- `ResolutionSelector` —— 3/5 个有
+- `DapaoImageAspectRatioResizeNode` —— 2/5 个有
+- `Float to Int` —— 2/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `MiniMaxH3PromptEnhancerT8` —— 2/5 个有
+- `MuyeTextEditOutput` —— 2/5 个有
+- `PreviewAny` —— 2/5 个有
+- `RHHiddenNodes` —— 2/5 个有
+- `ShellAgentPluginOutputText` —— 2/5 个有
+- `VHS_LoadVideo` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `ConditioningZeroOut` —— 1/5 个有
+- `H3SigmaRefiner` —— 1/5 个有
+- `ImageResizeKJv2` —— 1/5 个有
+- `LoadAudio` —— 1/5 个有
+- `LoadVideo` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `SelfLiftH3Sampler` —— 1/5 个有
 
 ## 典型参数
 

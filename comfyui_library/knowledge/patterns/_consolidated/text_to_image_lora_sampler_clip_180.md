@@ -2,87 +2,92 @@
 name: text_to_image_lora_sampler_clip_180
 type: Text To Image
 frequency: 10
-level: weak
-coverage: 0.8503
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, Image Comparer (rgthree), KSampler, LoraLoaderModelOnly, PrimitiveStringMultiline, ResizeImageMaskNode, ResolutionSelector, SaveImage, Seed (rgthree), SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SkipLayerGuidanceDiTSimple, TextGenerate, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, easy cleanGpuUsed, easy showAnything]
+level: strong
+coverage: 0.7909
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, EmptyYuE2LatentAudio, JjkText, KSampler, LoraLoaderModelOnly, PreviewAny, PrimitiveStringMultiline, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, YuE2GenerateMusic, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/黑鹤001 MOSS-Image 文生图流整合移植RH版｜一键出图高清直出_2114161760012955650.json, 图片生成/文生图/黑鹤001 MOSS-Image-生图流（整合移植RH 版）_2114008445971161090.json, 平台全量/MOSS Turbo 八步生图_2119876669409423362.json, 平台全量/pipi-MOSS文生图提示词优化+seedVR2放大_2118457277727469569.json, 平台全量/pipi-MOSS文生图提示词优化+seedVR2放大_2119695228968984577.json, 平台全量/pipi-MOSS文生图提示词优化+seedVR2放大_2119711495486533633.json, 平台全量/pipi-MOSS文生图提示词优化+seedVR2放大_2119715014327234561.json, 平台全量/pipi-MOSS文生图提示词优化+seedVR2放大_2120049632129667074.json, 平台全量/pipi-MOSS文生图提示词优化+seedVR2放大_2120054990969593858.json, 平台全量/pipi-MOSS文生图提示词优化+seedVR2放大_2120079479115706369.json]
+members: [图片生成/文生图/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2114263696510898178.json, 音频生成/音频生成/YuE2官方文生音乐工作流｜AI作曲生成原创音乐_2106992486311874561.json, 音频生成/音频生成/YuE2文本转音乐｜一句话描述生成完整曲子，配乐创作零门槛_2107313406511501314.json, 音频生成/音频生成/YuE2文生音乐ComfyUI官方版音频生成处理工作流_2101389597929459714.json, 音频生成/音频生成/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2110539658919759874.json, 音频生成/音频生成/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2110890424977158146.json, 音频生成/音频生成/YuE2音乐翻唱ComfyUI官方版音频生成处理工作流_2101391122361839617.json, 音频生成/音频生成/Yue2音乐翻唱官方工作流，音频生成音乐翻唱处理工具_2107246415910105090.json, 音频生成/音频生成/audio_yue2_music_cover音频生成｜AI翻唱一键搞定_2106987749390770177.json, 音频生成/音频生成/文本转音乐YuE2工作流，音频生成文本到音乐创作工具_2107596310319816705.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_180
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/黑鹤001 MOSS-Image 文生图流整合移植RH版｜一键出图高清直出_2114161760012955650.json、图片生成/文生图/黑鹤001 MOSS-Image-生图流（整合移植RH 版）_2114008445971161090.json、平台全量/MOSS Turbo 八步生图_2119876669409423362.json、平台全量/pipi-MOSS文生图提示词优化+seedVR2放大_2118457277727469569.json、平台全量/pipi-MOSS文生图提示词优化+seedVR2放大_2119695228968984577.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2114263696510898178.json、音频生成/音频生成/YuE2官方文生音乐工作流｜AI作曲生成原创音乐_2106992486311874561.json、音频生成/音频生成/YuE2文本转音乐｜一句话描述生成完整曲子，配乐创作零门槛_2107313406511501314.json、音频生成/音频生成/YuE2文生音乐ComfyUI官方版音频生成处理工作流_2101389597929459714.json、音频生成/音频生成/YuE2文生音乐ComfyUI官方版，音频生成好听又好用_2110539658919759874.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
+- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
+- `EmptyYuE2LatentAudio`
+- `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
+- `PreviewAny`
 - `PrimitiveStringMultiline`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
-- `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
-- `SkipLayerGuidanceDiTSimple`
-- `TextGenerate`
+- `SaveAudioAdvanced`
+- `SeedNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `YuE2GenerateMusic`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerAdvanced` —— 3/10 个有
-- `LatentUpscaleBy` —— 3/10 个有
-- `LoadImageOutput` —— 3/10 个有
-- `孤海注释` —— 3/10 个有
-- `忽略多组孤海` —— 2/10 个有
-- `JjkText` —— 1/10 个有
-- `solarL_SaveImagesToZip` —— 1/10 个有
+- `ComfySwitchNode` —— 9/10 个有
+- `PrimitiveBoolean` —— 9/10 个有
+- `孤海注释` —— 8/10 个有
+- `PrimitiveString` —— 7/10 个有
+- `YuE2GenerateABC` —— 7/10 个有
+- `PrimitiveFloat` —— 5/10 个有
+- `AudioEncoderLoader` —— 3/10 个有
+- `LoadAudio` —— 3/10 个有
+- `LoadImage` —— 3/10 个有
+- `PrimitiveInt` —— 3/10 个有
+- `SheetSage2AudioToABC` —— 3/10 个有
+- `Audio Duration (mtb)` —— 2/10 个有
+- `EmptyImage` —— 2/10 个有
+- `MathExpression|pysssss` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `RepeatImageBatch` —— 2/10 个有
+- `SaveImage` —— 2/10 个有
+- `VHS_VideoCombine` —— 2/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 80 - 1024 | 10 | 70% |
-| 高度 | 1024 | 80 - 1024 | 10 | 70% |
-| 采样步数 | 1 | 1 - 4 | 8 | 28% |
-| Prompt 约束强度(CFG) | 1 | 1 - 25 | 10 | 0% |
-| 采样算法 | euler | - | 10 | 70% |
-| 调度器 | simple | - | 10 | 70% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
+| 采样算法 | er_sde | - | 10 | 100% |
+| 调度器 | beta | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 80 | 80 - 80 | 10 | 100% |
+| 高度 | 80 | 80 - 80 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 80 - 1024，10 个样本
-- 高度 中位数 1024，观测区间 80 - 1024，10 个样本
-- 采样步数 中位数 1，观测区间 1 - 4，8 个样本，取值分散，一致性仅 28%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 25，10 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，10 个样本，一致性 70%
-- 调度器 最常用 simple，10 个样本，一致性 70%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 25，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 高发问题（14/10 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，10 个样本，一致性 100%
+- 调度器 最常用 beta，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

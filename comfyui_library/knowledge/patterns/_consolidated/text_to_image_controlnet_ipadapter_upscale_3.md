@@ -1,88 +1,99 @@
 ---
 name: text_to_image_controlnet_ipadapter_upscale_3
 type: Text To Image
-frequency: 3
-level: strong
-coverage: 0.86
-common_nodes: [AIO_Preprocessor, Anything Everywhere, BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ConditioningZeroOut, ControlNetApplySD3, ControlNetLoader, DualCLIPLoader, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, GetImageSize, IPAdapterAdvanced, IPAdapterUnifiedLoader, Image Comparer (rgthree), KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoader, LoraLoaderModelOnly, ModelSamplingFlux, PixelPerfectResolution, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, SetUnionControlNetType, ShowText|pysssss, String, Text Concatenate, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, Zoe_DepthAnythingPreprocessor]
+frequency: 2
+level: weak
+coverage: 0.862
+common_nodes: [AIO_Preprocessor, BodySegment, BrushNet, BrushNetLoader, CLIPTextEncode, CLIPVisionLoader, CR Text, CheckpointLoaderSimple, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetLoader, DetailTransfer, DualCLIPLoader, EmptyLatentImage, FaceDetailer, FluxGuidance, GrowMaskWithBlur, ICLightConditioning, IPAdapter, IPAdapterAdvanced, IPAdapterUnifiedLoader, Image Comparer (rgthree), Image Overlay, InspyrenetRembg, Joy_caption, Joy_caption_load, KSampler, LayerUtility: ExtendCanvas, LayerUtility: ImageBlend, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextJoin, LoadAndApplyICLightUnet, LoadImage, LoraLoader, LoraLoaderModelOnly, MaskPreview+, PreviewImage, RH_Captioner, SAMLoader, SUPIR_Upscale, SaveImage, SetLatentNoiseMask, ShowText|pysssss, UNETLoader, UltralyticsDetectorProvider, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy getNode, easy imageColorMatch, easy imageSize, easy setNode, easy showAnything, preview_mask]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux转绘+XL线稿+depth+IPA毛坯房生效果图_1935282658937339906.json, 平台全量/zmj毛坯房转室内效果图_2016474847748038658.json, 平台全量/毛坯房转室内效果图_1882062091547705346.json]
+members: [图片生成/图生图/【升级版】一键人像换背景+自适应环境打光+FLUX优化+_2022610568435212290.json, 图片生成/图生图/一键人像换背景+自适应环境打光+FLUX优化_1977930130830020609.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_ipadapter_upscale_3
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux转绘+XL线稿+depth+IPA毛坯房生效果图_1935282658937339906.json、平台全量/zmj毛坯房转室内效果图_2016474847748038658.json、平台全量/毛坯房转室内效果图_1882062091547705346.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【升级版】一键人像换背景+自适应环境打光+FLUX优化+_2022610568435212290.json、图片生成/图生图/一键人像换背景+自适应环境打光+FLUX优化_1977930130830020609.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：强结论
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
 - **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `AIO_Preprocessor`
-- `Anything Everywhere`
-- `BasicGuider`
-- `BasicScheduler`
+- `BodySegment`
+- `BrushNet`
+- `BrushNetLoader`
 - `CLIPTextEncode`
 - `CLIPVisionLoader`
+- `CR Text`
 - `CheckpointLoaderSimple`
 - `ConditioningZeroOut`
-- `ControlNetApplySD3`
+- `ControlNetApplyAdvanced`
 - `ControlNetLoader`
+- `DetailTransfer`
 - `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
+- `FaceDetailer`
 - `FluxGuidance`
-- `GetImageSize`
+- `GrowMaskWithBlur`
+- `ICLightConditioning`
+- `IPAdapter`
 - `IPAdapterAdvanced`
 - `IPAdapterUnifiedLoader`
 - `Image Comparer (rgthree)`
+- `Image Overlay`
+- `InspyrenetRembg`
+- `Joy_caption`
+- `Joy_caption_load`
 - `KSampler`
-- `KSamplerSelect`
+- `LayerUtility: ExtendCanvas`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageRemoveAlpha`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `LayerUtility: TextJoin`
+- `LoadAndApplyICLightUnet`
 - `LoadImage`
 - `LoraLoader`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
-- `PixelPerfectResolution`
+- `MaskPreview+`
 - `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `RH_Captioner`
+- `SAMLoader`
+- `SUPIR_Upscale`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
-- `SetUnionControlNetType`
+- `SetLatentNoiseMask`
 - `ShowText|pysssss`
-- `String`
-- `Text Concatenate`
 - `UNETLoader`
-- `UltimateSDUpscale`
-- `UpscaleModelLoader`
+- `UltralyticsDetectorProvider`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `Zoe_DepthAnythingPreprocessor`
+- `easy cleanGpuUsed`
+- `easy getNode`
+- `easy imageColorMatch`
+- `easy imageSize`
+- `easy setNode`
+- `easy showAnything`
+- `preview_mask`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 0.7 | 0.7 - 0.7 | 3 | 100% |
-| 采样步数 | 32 | 32 - 32 | 3 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | dpmpp_2m | - | 3 | 100% |
-| 调度器 | karras | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 512 | 512 - 512 | 3 | 100% |
-| 高度 | 512 | 512 - 512 | 3 | 100% |
+| 采样步数 | 25 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | normal | - | 2 | 100% |
+| 重绘幅度 | 0.2 | - | 2 | 100% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
+| LoRA 模型强度 | 0.4 | - | 2 | 100% |
+| LoRA 文本强度 | 0.4 | - | 2 | 100% |
+| ControlNet 权重 | 0.25 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -90,13 +101,14 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.7，观测区间 0.7 - 0.7，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 32，观测区间 32 - 32，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，3 个样本，一致性 100%
-- 调度器 最常用 karras，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 normal，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

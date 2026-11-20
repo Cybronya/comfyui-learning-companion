@@ -1,68 +1,83 @@
 ---
 name: unknown_workflow_lora_sampler_unet_42
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: moderate
-coverage: 0.936643
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.866917
+common_nodes: [CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Minimax H3 单图生视频工作流加速版_2106591527647662081.json, 视频生成/图生视频/Minimax H3 单图生视频工作流（极速15秒1080P）_2090716594468118530.json, 视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2090749193135681538.json, 视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2101259585813311489.json, 视频生成/图生视频/Minimax H3 模仿跳舞工作流（动作迁移、舞蹈模仿、自动生成提示词）_2102956330800734209.json, 视频生成/图生视频/minimax h3图生视频_2092555129097641986.json, 视频生成/文生视频/AI视频生成v2_2089671693664083970.json, 视频生成/文生视频/Minimax H3 AI萌宠视频工作流（宠物带货15秒1080P）_2092564221451132930.json, 视频生成/文生视频/Minimax H3 文生视频写实加速工作流（含提示词模版10秒1080P）_2095431233298853890.json, 视频生成/文生视频/Minimax H3 文生视频工作流（4步加速、支持15秒1080P）_2090647966460768258.json, 视频生成/文生视频/Minimax 多图参考生视频，超级好用！_2089722417114607617.json, 视频生成/文生视频/Minimax+H3+文生视频写实加速工作流（含提示词模版10秒1080P）_2092135642640769026.json, 视频生成/视频生视频/Minimax H3 文生视频工作流（4步加速、支持15秒1080P）_2090647966460768258.json, 视频生成/视频生视频/Minimax H3 模仿跳舞工作流（动作迁移、舞蹈模仿、自动生成提示词）_2102956330800734209.json]
+members: [图片生成/图生图/Qwen_Image_Edit_2511图像编辑工作流_2021566239163817986.json, 图片生成/图生图/Qwen千问图像编辑工作流【加速 LoRA 提速版】：原版)_2024150471530778626.json, 图片生成/图生图/Qwen千问图像编辑工作流【加速 LoRA 提速版】：原版qwen_image_edit_2509_1986636154382516225.json, 图片生成/图生图/Qwen千问图像编辑工作流【加速 LoRA 提速版】：原版qwen_image_edit_2509_2002996055396478977.json, 图片生成/图生图/Qwen千问图片编辑工作流PLUS（Qwen-edit-plus）_2012389576106582017.json, 图片生成/图生图/qwen 2511 单图编辑_2005278089867395074.json, 图片生成/图生图/qwen+image+2511双图编辑工作流_2016859064726200321.json, 图片生成/图生图/qwen-图像编辑_2079860798289170433.json, 图片生成/图生图/千问Qwen图生图 edit工作流基础款_1991849542488485889.json, 图片生成/图生图/千问图片编辑工作流_1980251429120225281.json, 图片生成/图生图/千问图片编辑教学_2009529082400215042.json, 图片生成/图生图/千问多功能工作流_1989535712292818946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_42
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 单图生视频工作流加速版_2106591527647662081.json、视频生成/图生视频/Minimax H3 单图生视频工作流（极速15秒1080P）_2090716594468118530.json、视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2090749193135681538.json、视频生成/图生视频/Minimax H3 唱歌对口型数字人工作流（含提示词模版）_2101259585813311489.json、视频生成/图生视频/Minimax H3 模仿跳舞工作流（动作迁移、舞蹈模仿、自动生成提示词）_2102956330800734209.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen_Image_Edit_2511图像编辑工作流_2021566239163817986.json、图片生成/图生图/Qwen千问图像编辑工作流【加速 LoRA 提速版】：原版)_2024150471530778626.json、图片生成/图生图/Qwen千问图像编辑工作流【加速 LoRA 提速版】：原版qwen_image_edit_2509_1986636154382516225.json、图片生成/图生图/Qwen千问图像编辑工作流【加速 LoRA 提速版】：原版qwen_image_edit_2509_2002996055396478977.json、图片生成/图生图/Qwen千问图片编辑工作流PLUS（Qwen-edit-plus）_2012389576106582017.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
-- `CreateVideo`
-- `KSamplerSelect`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyModelAdapter`
-- `MiniMaxH3EasyOutput`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3TurboLoRA` —— 13/14 个有
-- `SpectrumApplyMiniMaxH3` —— 11/14 个有
-- `LoadImage` —— 10/14 个有
-- `ExtendIntermediateSigmas` —— 6/14 个有
-- `LoadVideo` —— 5/14 个有
-- `LoadAudio` —— 3/14 个有
-- `PDGeminiAPIKey` —— 2/14 个有
-- `PreviewTextNode` —— 2/14 个有
-- `MiniMaxH3EasyMediaLoader` —— 1/14 个有
-- `PrimitiveFloat` —— 1/14 个有
-- `PrimitiveInt` —— 1/14 个有
-- `PrimitiveStringMultiline` —— 1/14 个有
+- `ConditioningZeroOut` —— 11/12 个有
+- `EmptyLatentImage` —— 11/12 个有
+- `ImageUpscaleWithModel` —— 11/12 个有
+- `UpscaleModelLoader` —— 11/12 个有
+- `FluxKontextImageScale` —— 10/12 个有
+- `PreviewImage` —— 10/12 个有
+- `CFGNorm` —— 9/12 个有
+- `TextEncodeQwenImageEditPlus` —— 9/12 个有
+- `Image Comparer (rgthree)` —— 8/12 个有
+- `CR Text` —— 4/12 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 4/12 个有
+- `FluxResolutionNode` —— 2/12 个有
+- `ImageConcanate` —— 2/12 个有
+- `DWPreprocessor` —— 1/12 个有
+- `ImageResize+` —— 1/12 个有
+- `ModelSamplingAuraFlow` —— 1/12 个有
+- `UnetLoaderGGUF` —— 1/12 个有
+- `easy imageSave` —— 1/12 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 512 - 1560 | 11 | 70% |
+| 高度 | 1536 | 512 - 1536 | 11 | 65% |
+| 采样步数 | 8 | 4 - 15 | 12 | 62% |
+| Prompt 约束强度(CFG) | 1 | 0.6 - 1 | 12 | 89% |
+| 采样算法 | euler_ancestral | - | 12 | 67% |
+| 调度器 | simple | - | 12 | 92% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 512 - 1560，11 个样本
+- 高度 中位数 1536，观测区间 512 - 1536，11 个样本
+- 采样步数 中位数 8，观测区间 4 - 15，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 0.6 - 1，12 个样本，取值集中（一致性 89%）
+- 采样算法 最常用 euler_ancestral，12 个样本，一致性 67%
+- 调度器 最常用 simple，12 个样本，一致性 92%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 0.6，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

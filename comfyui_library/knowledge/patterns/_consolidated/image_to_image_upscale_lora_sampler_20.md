@@ -2,75 +2,98 @@
 name: image_to_image_upscale_lora_sampler_20
 type: Image To Image
 frequency: 8
-level: weak
-coverage: 0.859625
-common_nodes: [CLIPLoader, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, Krea2OstrisEditModelPatch, LoadImage, LoraLoaderModelOnly, PDIMAGE_LongerSize, UNETLoader, VAEDecode, VAEEncode, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy imageSave]
+level: moderate
+coverage: 0.7915
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetImageSize+, Image Comparer (rgthree), ImageCASharpening+, ImageResize+, ImageScaleBy, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, PrimitiveFloat, RH_Captioner, RunningHub Deepcleaner, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea 2+MJ美学图生图_无提示词极速版_2113875961979691010.json, 图片生成/图生图/Krea 2+MJ美学图生图_无提示词极速版_2113886437203595266.json, 图片生成/图生图/无提示词_极速图生图_Krea 2+MJ美学_2108177950792314881.json, 图片生成/图生图/最强动漫转真实_Krea2双采+高清放大_2107987954869301250.json, 图片生成/图生图/最强动漫转真实_Krea2双采+高清放大_2108449947493429250.json, 图片生成/图生图/最强动漫转真实_Krea2双采+高清放大_2110562308006178817.json, 图片生成/图生图/最强动漫转真实_Krea2双采+高清放大_2111006118758670337.json, 平台全量/Krea2 动漫转真实｜双采 + Vosr 2 高清放大_2118315317763076097.json]
+members: [图片生成/图生图/⭐️⭐️⭐️⭐️⭐️换装神器——Klein 9B+Z image+SeedVR2修复_2019578876753616897.json, 图片生成/图生图/动漫短剧动漫人物图片高清放大工作流（Flux2-Klein高清放大8K）更像更好_2013564631800877057.json, 图片生成/图生图/多重放大工作流，配置最新的模型v2.0_2094267872523677698.json, 图片生成/图生图/多重放大工作流，配置最新的模型v2.0_2096809518779953153.json, 图片生成/图生图/多重放大工作流，配置最新的模型v2.0_2097154271379808258.json, 图片生成/图生图/高清放大Flux2-Klein_2021925905211334657.json, 数字人/数字人/强强联合 Flux2-Klein 修复 + Z-Image 洗图 + TTP分块放大到8K_2043517178133090306.json, 数字人/数字人/提高图片清晰度-阿浩_2026865402130731010.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_20
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Krea 2+MJ美学图生图_无提示词极速版_2113875961979691010.json、图片生成/图生图/Krea 2+MJ美学图生图_无提示词极速版_2113886437203595266.json、图片生成/图生图/无提示词_极速图生图_Krea 2+MJ美学_2108177950792314881.json、图片生成/图生图/最强动漫转真实_Krea2双采+高清放大_2107987954869301250.json、图片生成/图生图/最强动漫转真实_Krea2双采+高清放大_2108449947493429250.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/⭐️⭐️⭐️⭐️⭐️换装神器——Klein 9B+Z image+SeedVR2修复_2019578876753616897.json、图片生成/图生图/动漫短剧动漫人物图片高清放大工作流（Flux2-Klein高清放大8K）更像更好_2013564631800877057.json、图片生成/图生图/多重放大工作流，配置最新的模型v2.0_2094267872523677698.json、图片生成/图生图/多重放大工作流，配置最新的模型v2.0_2096809518779953153.json、图片生成/图生图/多重放大工作流，配置最新的模型v2.0_2097154271379808258.json…）
 
 - **类型**：Image To Image
 - **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `CLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
+- `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `GetImageSize+`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImageScaleBy`
 - `KSampler`
-- `Krea2OstrisEditModelPatch`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PDIMAGE_LongerSize`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `RH_Captioner`
+- `RunningHub Deepcleaner`
+- `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
-- `easy imageSave`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Seed (rgthree)` —— 5/8 个有
-- `workflow>Krea 2 Ostris Edit` —— 4/8 个有
-- `CR Apply LoRA Stack` —— 3/8 个有
-- `CR LoRA Stack` —— 3/8 个有
-- `ConditioningZeroOut` —— 3/8 个有
-- `SaveImage` —— 3/8 个有
-- `TextEncodeKrea2OstrisEdit` —— 3/8 个有
-- `2e128825-a67c-4b93-96a9-2e26cd2e8b46` —— 1/8 个有
+- `LatentUpscaleBy` —— 7/8 个有
+- `LayerUtility: ImageMaskScaleAs` —— 7/8 个有
+- `LayerUtility: ImageReel` —— 7/8 个有
+- `LayerUtility: ImageReelComposit` —— 7/8 个有
+- `ReferenceLatent` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `Anything Everywhere3` —— 1/8 个有
+- `CropWithPadInfo_EditUtils` —— 1/8 个有
+- `EditTextEncode_EditUtils` —— 1/8 个有
+- `Flux2KleinConfigPreparer_EditUtils` —— 1/8 个有
+- `Flux2KleinModelConfig_EditUtils` —— 1/8 个有
+- `Flux2KleinOutputExtractor_EditUtils` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `WujiCleaner` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 8 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | er_sde | - | 8 | 62% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 0.15 | 0.15 - 1 | 8 | 12% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 8 | 8 | 22% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | simple | - | 8 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，8 个样本，一致性 62%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 0.15，观测区间 0.15 - 1，8 个样本，取值分散，一致性仅 12%
-- 高发问题（13/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 8，8 个样本，取值分散，一致性仅 22%
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 simple，8 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（10/8 个样本）：Steps较低可能导致细节不足

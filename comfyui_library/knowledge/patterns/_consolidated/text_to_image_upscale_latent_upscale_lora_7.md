@@ -3,78 +3,87 @@ name: text_to_image_upscale_latent_upscale_lora_7
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.9245
-common_nodes: [BlockifyMask, CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, EmptyLatentImage, FluxKontextMultiReferenceLatentMethod, GH_CropRestore, GH_MaskCropV2, Get Image Size, GrowMaskWithBlur, GulfSeaImageMergeMask, Image Comparer (rgthree), Images to RGB, JjkText, KSampler, LG_Color_Match_V2, LatentUpscaleBy, LayerUtility: BooleanOperatorV2, LayerUtility: ColorImage, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, ReferenceLatent, SZ_KleinTiledKSampler, SaveImage, StringLength, TextEncodeQwenImageEditPlusCustom_lrzjason, TextEncodeQwenImageEditPlus_lrzjason, TextInput_, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy ifElse, easy imageSizeByLongerSide, solarL_SaveImagesToZip, 图像缩放V2_孤海, 图像缩放范围孤海, 布尔孤海, 数学运算_孤海]
+coverage: 0.630667
+common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, Int, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, SolAttnPatch, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen 2511移除加局部重绘高品质｜擦除不留死角｜细节修图更干净_2102644646395600897.json, 图片生成/图生图/Qwen2511移除物体与局部重绘高品质工作流，清空提示词即移除输入即重绘_2102842820901036034.json, 图片生成/图生图/Qwen2511移除物体与局部重绘高品质工作流，清空提示词即移除输入即重绘_2105860216289054722.json, 图片生成/图生图/图像修复Qwen2511+Flux2-Klein｜消除局部重绘图生图修复_2114291807931691010.json, 图片生成/文生图/Qwen2511+Flux2-Klein图像修复｜消除瑕疵局部重绘_2108442417715306498.json, 图片生成/文生图/图像修复Qwen2511加Flux2 Klein消除局部重绘 图片精修方案_2108640223453343745.json]
+members: [视频生成/图生视频/H3 1080P超高画质优先8加2工作流，图生视频高清画质创作方案_2106858310698889218.json, 视频生成/图生视频/H3-1080p超高画质8+2方案｜图生视频画质优先_2106592511757217793.json, 视频生成/图生视频/H3_1080P超高画质优先8加2工作流，图生视频高清画质创作方案_2110159798837796865.json, 视频生成/图生视频/H3超高画质8加2工作流，1080P图生视频创作方案_2110874325975920642.json, 视频生成/文生视频/文生图参双通道｜Minimax H3二采高清放大V4.2_2096580832021540866.json, 视频生成/文生视频/文生图参生视频二采放大｜Minimax H3数字人V4.1_2095957755088695298.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_latent_upscale_lora_7
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen 2511移除加局部重绘高品质｜擦除不留死角｜细节修图更干净_2102644646395600897.json、图片生成/图生图/Qwen2511移除物体与局部重绘高品质工作流，清空提示词即移除输入即重绘_2102842820901036034.json、图片生成/图生图/Qwen2511移除物体与局部重绘高品质工作流，清空提示词即移除输入即重绘_2105860216289054722.json、图片生成/图生图/图像修复Qwen2511+Flux2-Klein｜消除局部重绘图生图修复_2114291807931691010.json、图片生成/文生图/Qwen2511+Flux2-Klein图像修复｜消除瑕疵局部重绘_2108442417715306498.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/H3 1080P超高画质优先8加2工作流，图生视频高清画质创作方案_2106858310698889218.json、视频生成/图生视频/H3-1080p超高画质8+2方案｜图生视频画质优先_2106592511757217793.json、视频生成/图生视频/H3_1080P超高画质优先8加2工作流，图生视频高清画质创作方案_2110159798837796865.json、视频生成/图生视频/H3超高画质8加2工作流，1080P图生视频创作方案_2110874325975920642.json、视频生成/文生视频/文生图参双通道｜Minimax H3二采高清放大V4.2_2096580832021540866.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BlockifyMask`
-- `CFGNorm`
+- `Any Switch (rgthree)`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `FluxKontextMultiReferenceLatentMethod`
-- `GH_CropRestore`
-- `GH_MaskCropV2`
-- `Get Image Size`
-- `GrowMaskWithBlur`
-- `GulfSeaImageMergeMask`
-- `Image Comparer (rgthree)`
-- `Images to RGB`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `Int`
 - `JjkText`
 - `KSampler`
-- `LG_Color_Match_V2`
-- `LatentUpscaleBy`
-- `LayerUtility: BooleanOperatorV2`
-- `LayerUtility: ColorImage`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenEditConfigPreparer`
-- `ReferenceLatent`
-- `SZ_KleinTiledKSampler`
-- `SaveImage`
-- `StringLength`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
-- `TextEncodeQwenImageEditPlus_lrzjason`
-- `TextInput_`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MiniMaxLowVRAMAttention`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetNode`
+- `SolAttnPatch`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy ifElse`
-- `easy imageSizeByLongerSide`
 - `solarL_SaveImagesToZip`
-- `图像缩放V2_孤海`
-- `图像缩放范围孤海`
-- `布尔孤海`
-- `数学运算_孤海`
 
 **可变部分**（部分 workflow 才有）：
 - `孤海注释` —— 5/6 个有
-- `LoadImageMask` —— 3/6 个有
-- `PrimitiveBoolean` —— 3/6 个有
-- `StringTrim` —— 3/6 个有
-- `ThresholdMask` —— 3/6 个有
-- `EmptyImage` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
+- `Astra` —— 4/6 个有
+- `CR Prompt Text` —— 4/6 个有
+- `GetImageSize` —— 4/6 个有
+- `GetVideoComponents` —— 4/6 个有
+- `ImageCrop` —— 4/6 个有
+- `ImageScale` —— 4/6 个有
+- `ImpactConditionalBranch` —— 4/6 个有
+- `布尔孤海` —— 4/6 个有
+- `SaveImage` —— 3/6 个有
+- `EmptyImage` —— 2/6 个有
+- `LoadAudio` —— 2/6 个有
+- `MiniMaxH3ImageToVideo` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `PrimitiveStringMultiline` —— 2/6 个有
+- `VHS_LoadVideo` —— 2/6 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/6 个有
+- `ModelPreviewOverrideKJ` —— 1/6 个有
+- `easy boolean` —— 1/6 个有
+- `easy ifElse` —— 1/6 个有
+- `忽略多组孤海` —— 1/6 个有
 
 ## 典型参数
 
@@ -92,7 +101,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -103,4 +112,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高发问题（18/6 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/6 个样本）：Steps较低可能导致细节不足

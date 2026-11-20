@@ -1,84 +1,101 @@
 ---
 name: image_to_image_upscale_sampler_clip_10
 type: Image To Image
-frequency: 12
-level: strong
-coverage: 0.857583
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageListToImageBatch, ImageUpscaleWithModel, KSampler, LoadImage, ModelSamplingSD3, PreviewImage, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy imageBatchToImageList]
-problems: [Steps较低可能导致细节不足]
+frequency: 10
+level: weak
+coverage: 0.9167
+common_nodes: [CLIPTextEncode, Image Comparer (rgthree), ImageUpscaleWithModel, KSampler, LoadImage, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/wan高清写实放大api_1957979462142935041.json, 图片生成/图生图/【CQ808】高清放大-WAN2.2_联合_TTP_超级-键4K放大_2115962186911801345.json, 图片生成/图生图/【CQ808】高清放大-WAN2.2_联合_TTP_超级-键4K放大_2115973086964183041.json, 图片生成/图生图/万相2.2高清放大TTP放大_1946954453464952834.json, 图片生成/文生图/Wan2.2 TTP高阶放大（全网ID ：楚门的AI世界）_1950100432455647233.json, 平台全量/Upscaler高清放大修复画面细节 增加清晰度_1965943372391321602.json, 平台全量/Wan2.2 - 14B - 加速版 - TTP 图片放大_1950200138313678850.json, 平台全量/Wan2.2-14B加速版TTP图片放大ttp加速插画图片放大图片高清图片细节放大_1998608845691846658.json, 平台全量/【CQ808】高清放大-WAN2.2 联合 TTP 超级-键4K放大_2033473002561609729.json, 平台全量/【CQ808】高清放大-WAN2.2 联合 TTP 超级-键4K放大_2047202358995718145.json, 平台全量/图片增强4K_1951210818199334913.json, 平台全量/图片高清-V2版本_2051154656180617217.json]
+members: [图片生成/图生图/4K无损人像放大_1970494670352621570.json, 图片生成/图生图/FLUX TTP分块高清放大_1910944667330932737.json, 图片生成/图生图/FULX高清放大-提速增质_2068164749141037057.json, 图片生成/图生图/Klein_一致性高清放大_2081656038633332738.json, 图片生成/图生图/Klein_一致性高清放大_2083363280915099649.json, 图片生成/图生图/Klein_一致性高清放大_2083375107824771074.json, 图片生成/图生图/Klein_一致性高清放大_2087385336187023362.json, 图片生成/图生图/Klein_多角度视角切换_2083359034417172482.json, 图片生成/图生图/Klein_多角度视角切换_2083369368465002497.json, 图片生成/图生图/全能万物迁移（产品、颜色、服装、饰品、光影迁移）_2088527787975069697.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_sampler_clip_10
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/wan高清写实放大api_1957979462142935041.json、图片生成/图生图/【CQ808】高清放大-WAN2.2_联合_TTP_超级-键4K放大_2115962186911801345.json、图片生成/图生图/【CQ808】高清放大-WAN2.2_联合_TTP_超级-键4K放大_2115973086964183041.json、图片生成/图生图/万相2.2高清放大TTP放大_1946954453464952834.json、图片生成/文生图/Wan2.2 TTP高阶放大（全网ID ：楚门的AI世界）_1950100432455647233.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/4K无损人像放大_1970494670352621570.json、图片生成/图生图/FLUX TTP分块高清放大_1910944667330932737.json、图片生成/图生图/FULX高清放大-提速增质_2068164749141037057.json、图片生成/图生图/Klein_一致性高清放大_2081656038633332738.json、图片生成/图生图/Klein_一致性高清放大_2083363280915099649.json…）
 
 - **类型**：Image To Image
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：10
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPLoader`
+全部 10 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ImageListToImageBatch`
+- `Image Comparer (rgthree)`
 - `ImageUpscaleWithModel`
 - `KSampler`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `PreviewImage`
 - `SaveImage`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
 - `UNETLoader`
 - `UpscaleModelLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 11/12 个有
-- `easy cleanGpuUsed` —— 11/12 个有
-- `ImageScaleToTotalPixels` —— 10/12 个有
-- `Label (rgthree)` —— 5/12 个有
-- `Image Comparer (rgthree)` —— 4/12 个有
-- `Anything Everywhere3` —— 2/12 个有
-- `ConstrainImage|pysssss` —— 2/12 个有
-- `GetImageSize` —— 1/12 个有
-- `LayerUtility: BooleanOperatorV2` —— 1/12 个有
-- `LayerUtility: If ` —— 1/12 个有
-- `MathExpression|pysssss` —— 1/12 个有
-- `easy imageScaleDownToSize` —— 1/12 个有
-- `easy int` —— 1/12 个有
-- `easy showAnything` —— 1/12 个有
+- `ConditioningZeroOut` —— 9/10 个有
+- `FluxGuidance` —— 9/10 个有
+- `ImageListToImageBatch` —— 9/10 个有
+- `LoraLoaderModelOnly` —— 9/10 个有
+- `CLIPLoader` —— 8/10 个有
+- `ImageScaleToTotalPixels` —— 8/10 个有
+- `ImpactImageBatchToImageList` —— 8/10 个有
+- `VAEEncodeTiled` —— 8/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/10 个有
+- `PrimitiveInt` —— 7/10 个有
+- `ReferenceLatent` —— 7/10 个有
+- `SZ_KleinTiledKSampler` —— 7/10 个有
+- `DualCLIPLoader` —— 3/10 个有
+- `GetImageSize+` —— 3/10 个有
+- `PainterFluxImageEdit` —— 3/10 个有
+- `VAEDecode` —— 3/10 个有
+- `Fast Groups Muter (rgthree)` —— 2/10 个有
+- `ImageResizeKJ` —— 2/10 个有
+- `JoinStrings` —— 2/10 个有
+- `LayerUtility: TextBox` —— 2/10 个有
+- `QwenMultiangleCameraNode` —— 2/10 个有
+- `easy imageBatchToImageList` —— 2/10 个有
+- `Anything Everywhere` —— 1/10 个有
+- `CR Text` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `ImageResize+` —— 1/10 个有
+- `LoraLoader` —— 1/10 个有
+- `ModelSamplingSD3` —— 1/10 个有
+- `PixaromaLabel` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `easy imageListToImageBatch` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 6 - 10 | 12 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | heun | - | 12 | 92% |
-| 调度器 | beta | - | 12 | 92% |
-| 重绘幅度 | 0.1 | 0.08 - 0.2 | 12 | 73% |
+| 采样步数 | 6 | 4 - 25 | 10 | 18% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 10 | 96% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | kl_optimal | - | 10 | 50% |
+| 重绘幅度 | 0.4 | 0.1 - 1 | 10 | 41% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 24/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 7/10 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 6 - 10，12 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 heun，12 个样本，一致性 92%
-- 调度器 最常用 beta，12 个样本，一致性 92%
-- 重绘幅度 中位数 0.1，观测区间 0.08 - 0.2，12 个样本
-- 风险：重绘幅度 观测到 0.08，低于常用下限 0.1（）
+- 采样步数 中位数 6，观测区间 4 - 25，10 个样本，取值分散，一致性仅 18%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，10 个样本，取值集中（一致性 96%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 kl_optimal，10 个样本，一致性 50%
+- 重绘幅度 中位数 0.4，观测区间 0.1 - 1，10 个样本，取值分散，一致性仅 41%
+- 高发问题（24/10 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/10 个样本）：发现KSampler但没有VAEDecode

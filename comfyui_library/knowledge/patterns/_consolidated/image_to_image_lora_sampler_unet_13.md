@@ -1,33 +1,30 @@
 ---
 name: image_to_image_lora_sampler_unet_13
 type: Image To Image
-frequency: 24
+frequency: 23
 level: strong
-coverage: 0.809833
-common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.84
+common_nodes: [CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen edit 2511一键96个分镜图_2026570422766018562.json, 图片生成/图生图/Qwen-Edit-2511-多图编辑_2003681947601805313.json, 图片生成/图生图/Qwen-image-edit2511-风格多样化 创意玩法_2010195628764176385.json, 图片生成/图生图/Qwen-image-edit2511：创意变色龙！一张底图，指尖轻点解锁数十种风格_2010011563326967809.json, 图片生成/图生图/image2，gemini2，Qwen2511文字生成对比_2049381140200427521.json, 图片生成/图生图/qwen 2511 DFL补角度专用 99种角度 12种表情 总计1188张素材_2090830266335055873.json, 图片生成/图生图/一键生成96个分镜图+多角度=Multiple angles Qwen edit 2511_2009138997611728898.json, 图片生成/图生图/一键生成96个分镜图+多角度=Multiple angles Qwen edit 2511_2016818211605450754.json, 图片生成/图生图/一键生成几十张分镜图Qwen+edit+2511-打包zip_2010994201273569282.json, 图片生成/图生图/一键生成多个分镜图Qwen edit 2511-压缩包一次下载_2010894656611033090.json, 图片生成/图生图/一键生成多个分镜图多角度（最大96）_2030651649445863425.json, 图片生成/图生图/人物模特多角度 zip打包 生成96个分镜图 Multiple Qwen edit 2511！_2087070956895432706.json, 图片生成/图生图/千问edit2511：创意变色龙解锁数十种风格26127_2016127266601832449.json, 图片生成/图生图/单图出十二分镜超强一致_2027074826434781185.json, 图片生成/图生图/多角度人物多角度多场景Qwen-multiple-angles版_2059528095010480130.json, 图片生成/图生图/多角度人物多角度多场景Qwen-multiple-angles版_2059928373580877826.json, 图片生成/图生图/模特12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2061085110698594305.json, 图片生成/图生图/超好用🔥12种镜头场景生成多角度人物-ai动漫短剧_2057338973592317953.json, 图片生成/文生图/一键生成96个分镜图+多角度Qwen edit 2511_2017806745929785346.json, 平台全量/ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles_2069433873641074689.json, 平台全量/ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2069358574702260225.json, 平台全量/人物模特角色 zip打包下载  一键生成96个分镜图+多角度 Qwen edit 25_2037047620518023169.json, 平台全量/全方位视图 _ 一致性 _ 96分镜_1893731127096684545.json, 平台全量/至多100张分镜图片 Qwen Image Edit 全方位视图 智能多角度 人物角色一致性  无限_2011991329814880257.json]
+members: [图片生成/图生图/Qwen_Edit_2511多角度_2055560720015732738.json, 图片生成/图生图/Qwen_Edit_2511多角度同出_2056331114276540418.json, 图片生成/图生图/Qwen_Edit_2511改图_2055536614876688385.json, 图片生成/图生图/Qwen_Multiangle_2511图片角度自由控制_2010971058458861569.json, 图片生成/图生图/Qwen_Multiangle_2511图片角度自由控制_2038483773788000257.json, 图片生成/图生图/Qwen_Multiangle_2511自由控制图片角度_2038555716276981761.json, 图片生成/图生图/Qwen_image_Edit_2511_单图编辑_2004473601208315905.json, 图片生成/图生图/Qwen_image_Edit_2511_多图编辑_2004495314616811522.json, 图片生成/图生图/apple sharp高斯泼溅成图_2011269417006534657.json, 图片生成/图生图/apple sharp高斯泼溅成图_2025921551727595521.json, 图片生成/图生图/mutiangle旋转摄像头生成多角度人物图片_2021198244126138369.json, 图片生成/图生图/qwen  分镜 精准镜头视角控制器  模特套图 商品套图_2046923407031275521.json, 图片生成/图生图/qwen  精准镜头控制器 图生图 多视角  Qwen Multiangle Camera_2041768515669069826.json, 图片生成/图生图/qwen  精准镜头控制器 多视角套图  镜头选择_2041695143425744897.json, 图片生成/图生图/qwen  精准镜头控制器 模特套图  镜头选择_2039528560959950849.json, 图片生成/图生图/场景生成多视角_2013145425766780929.json, 图片生成/图生图/场景生成多视角_2101477990000582658.json, 图片生成/图生图/多角度切换相机控制 复刻场景 Qwen 人物产品多角度_2069217388083634178.json, 图片生成/图生图/多角度镜头控制（人像摄影 漫剧镜头 场景）_2050550918256578562.json, 图片生成/图生图/工作流基础系列11-QwenImageEdit2511单图编辑_2004000394919485442.json, 图片生成/图生图/工作流基础系列12-QwenImageEdit2511双图编辑_2004026267299135489.json, 图片生成/图生图/组件系列12-QWEN-EDIT-2511单图编辑_2059098441153859586.json, 图片生成/图生图/组件系列13-QWEN-EDIT-2511多图编辑_2059099538136322050.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_13
 
-> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/Qwen edit 2511一键96个分镜图_2026570422766018562.json、图片生成/图生图/Qwen-Edit-2511-多图编辑_2003681947601805313.json、图片生成/图生图/Qwen-image-edit2511-风格多样化 创意玩法_2010195628764176385.json、图片生成/图生图/Qwen-image-edit2511：创意变色龙！一张底图，指尖轻点解锁数十种风格_2010011563326967809.json、图片生成/图生图/image2，gemini2，Qwen2511文字生成对比_2049381140200427521.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/Qwen_Edit_2511多角度_2055560720015732738.json、图片生成/图生图/Qwen_Edit_2511多角度同出_2056331114276540418.json、图片生成/图生图/Qwen_Edit_2511改图_2055536614876688385.json、图片生成/图生图/Qwen_Multiangle_2511图片角度自由控制_2010971058458861569.json、图片生成/图生图/Qwen_Multiangle_2511图片角度自由控制_2038483773788000257.json…）
 
 - **类型**：Image To Image
-- **样本数**：24
+- **样本数**：23
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 24 个 workflow 都包含：
-- `CFGNorm`
+全部 23 个 workflow 都包含：
 - `CLIPLoader`
-- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
@@ -39,42 +36,47 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 22/24 个有
-- `INTConstant` —— 19/24 个有
-- `LayerUtility: PurgeVRAM` —— 19/24 个有
-- `easy promptLine` —— 19/24 个有
-- `Text` —— 13/24 个有
-- `HAIGC_SaveImagesToZip` —— 12/24 个有
-- `GetNode` —— 9/24 个有
-- `SetNode` —— 9/24 个有
-- `PlaySound|pysssss` —— 7/24 个有
-- `PreviewImage` —— 4/24 个有
-- `MultiTextConcatenate` —— 3/24 个有
-- `easy anythingIndexSwitch` —— 3/24 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/24 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/24 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 22/23 个有
+- `CFGNorm` —— 20/23 个有
+- `PreviewImage` —— 14/23 个有
+- `QwenMultiangleCameraNode` —— 14/23 个有
+- `easy showAnything` —— 13/23 个有
+- `Image Comparer (rgthree)` —— 11/23 个有
+- `ImageScaleToTotalPixels` —— 11/23 个有
+- `easy promptList` —— 10/23 个有
+- `GetNode` —— 8/23 个有
+- `SetNode` —— 8/23 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/23 个有
+- `CR Text` —— 4/23 个有
+- `FluxKontextImageScale` —— 4/23 个有
+- `Seed (rgthree)` —— 4/23 个有
+- `ImpactMakeAnyList` —— 3/23 个有
+- `KepStringList` —— 2/23 个有
+- `ReferenceLatent` —— 2/23 个有
+- `Text Concatenate` —— 1/23 个有
+- `easy string` —— 1/23 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 24 | 79% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2 | 24 | 81% |
-| 采样算法 | euler | - | 24 | 100% |
-| 调度器 | simple | - | 24 | 96% |
-| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
+| 采样步数 | 6 | 4 - 8 | 23 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 23 | 100% |
+| 采样算法 | euler | - | 23 | 100% |
+| 调度器 | simple | - | 23 | 100% |
+| 重绘幅度 | 1 | 0.9 - 1 | 23 | 98% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 24/24 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 23/23 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，24 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，24 个样本，取值集中（一致性 81%）
-- 采样算法 最常用 euler，24 个样本，一致性 100%
-- 调度器 最常用 simple，24 个样本，一致性 96%
-- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
-- 高发问题（24/24 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 6，观测区间 4 - 8，23 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，23 个样本，一致性 100%
+- 调度器 最常用 simple，23 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.9 - 1，23 个样本，取值集中（一致性 98%）
+- 高发问题（23/23 个样本）：Steps较低可能导致细节不足

@@ -1,28 +1,28 @@
 ---
 name: text_to_image_sampler_clip_unet_10
 type: Text To Image
-frequency: 25
+frequency: 26
 level: weak
-coverage: 0.93044
+coverage: 0.948115
 common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/z_image_Doodle style 风格工作流_2014354573992927233.json, 图片生成/文生图/zimage奇幻天宫_2087361360895242241.json, 图片生成/文生图/zimage广告图直出_2016732158576041986.json, 图片生成/文生图/zimage文生图+lora仙逆姚惜雪_2005983053098991617.json, 图片生成/文生图/zimage文生图+全息翼界lora_2014158819462488066.json, 图片生成/文生图/【GUGU】CG唯美画风LORA工作流_2001845384953643010.json, 图片生成/文生图/俯视户外Z-image文生图真实人像质感御姐美女_2041474359600091138.json, 图片生成/文生图/千问qwen-image-2.1文生图_2108106051034894338.json, 图片生成/文生图/千问qwen-image-2.1文生图_2112373946829066242.json, 图片生成/文生图/千问qwen-image-2.1文生图_2113920786338770946.json, 图片生成/文生图/千问qwen-image-2.1文生图｜人像写真美少女风格随心出_2114280952854831105.json, 图片生成/文生图/千问qwen-image-2.1文生图｜官方架构一键出图｜_2107739693239590914.json, 图片生成/文生图/千问qwen-image-2.1文生图｜官方架构一键出图｜_2110564054040403969.json, 图片生成/文生图/千问qwen-image-2.1文生图｜官方架构一键出图｜_2111007985395916802.json, 图片生成/文生图/千问qwen-image-2.1文生图｜官方架构一键出图｜注意仅供学习不可商用_2104770730121588737.json, 图片生成/文生图/图图工作流人像写真｜Krea2文生图摄影出图_2095578272632496130.json, 图片生成/文生图/图图组合文生图玩法｜Krea2 多图融合一键出图_2096264881749184513.json, 图片生成/文生图/文生图ZImage工作流｜多段提示词同时出图神器_2100813214991863810.json, 图片生成/文生图/文生图全能直出｜G-2图片生成 电商平面设计利器_2089464781400002562.json, 图片生成/文生图/文生图基础流｜krea2文生图图生图双模式_2089846295853879298.json, 图片生成/文生图/极速版Krea2 Trubo文生图｜美商极高V2版 美感直接拉满_2105551057450524673.json, 图片生成/文生图/没有AI味文生图｜Z-image Turbo真实模型工作流_2093450819793408001.json, 图片生成/文生图/没有AI味的模型｜Z-image Tubro文生图一键生成_2093784427087360002.json, 平台全量/赛博玄幻修仙者文生图｜CG幻想中国风，动漫角色设计感强_2099925911368982529.json, 平台全量/赛博玄幻湘灵女主｜文生图出中国风动漫女主，幻想感拉满_2099928335701860354.json]
+members: [图片生成/文生图/ernie文生图质感_2044774941454766081.json, 图片生成/文生图/ideogram4_2062708650468265986.json, 图片生成/文生图/krea2 turbo文生图 极致美学_2069948625094012930.json, 图片生成/文生图/krea2 turbo文生图_2069631042172055554.json, 图片生成/文生图/krea2 turbo文生图_2069632468088606722.json, 图片生成/文生图/krea2 turbo文生图_2069636296083075074.json, 图片生成/文生图/krea2 turbo文生图（最新开源，质量极高，速度极快）_2069769763433304066.json, 图片生成/文生图/krea2 文生图 无LORA_2093341821593284609.json, 图片生成/文生图/krea2-Afterlight（光影美学文生图）_2083839367738642434.json, 图片生成/文生图/krea2_ID13_v2_融合prompt_单分支_2086591602310602754.json, 图片生成/文生图/krea2_turbo_基础文生图工作流_2078078374207115266.json, 图片生成/文生图/krea2_对比流_官方vsAnima配方_random_2086586562653024257.json, 图片生成/文生图/krea2基础文生图_2071164326781734914.json, 图片生成/文生图/krea2基础文生图文生图工作流_2089571734700773377.json, 图片生成/文生图/krea2基础文生图高清出图工作流_2089673479443533826.json, 图片生成/文生图/krea2文生图_2087794601284431873.json, 图片生成/文生图/zimage奇幻天宫_2087361360895242241.json, 图片生成/文生图/zimage广告图直出_2016732158576041986.json, "图片生成/文生图/图图的 8D 极光黑丝 Z-Image 工作流_Tutu's Aurora 8D HiSilk Z-Image workflow_2070753635646136322.json", "图片生成/文生图/图图的 PVC 护士服 Z-Image 工作流_Tutu's PVC Nurse Outfit Z-Image workflow_2070438619709526017.json", "图片生成/文生图/图图的大网渔网袜 Z-Image 工作流_Tutu's HiSilk Fishnet Z-Image workflow_2070751109303586818.json", "图片生成/文生图/图图的洛丽塔黑江雫服装工作流_Tutu's Lolita Shizuku Kuroe Outfit workflow_2070374570158284801.json", "图片生成/文生图/图图的长款旗袍风蕾丝连衣裙工作流_Tutu's Long Qipao Lace Dress workflow_2070419601577570306.json", "图片生成/文生图/图图的黑色配饰连体服 Z-Image 工作流_Tutu's HiSilk Black Accessories Z-Image workflow_2070527635050033153.json", "图片生成/文生图/图图的黑色配饰连体服 Z-Image 工作流_Tutu's HiSilk Black Accessories Z-Image workflow_2070749678974627841.json", 图片生成/文生图/（贞贞版）Z image Art文生图_2017605115783421953.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_10
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/文生图/z_image_Doodle style 风格工作流_2014354573992927233.json、图片生成/文生图/zimage奇幻天宫_2087361360895242241.json、图片生成/文生图/zimage广告图直出_2016732158576041986.json、图片生成/文生图/zimage文生图+lora仙逆姚惜雪_2005983053098991617.json、图片生成/文生图/zimage文生图+全息翼界lora_2014158819462488066.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/文生图/ernie文生图质感_2044774941454766081.json、图片生成/文生图/ideogram4_2062708650468265986.json、图片生成/文生图/krea2 turbo文生图 极致美学_2069948625094012930.json、图片生成/文生图/krea2 turbo文生图_2069631042172055554.json、图片生成/文生图/krea2 turbo文生图_2069632468088606722.json…）
 
 - **类型**：Text To Image
-- **样本数**：25
+- **样本数**：26
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
+全部 26 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
@@ -33,45 +33,38 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 22/25 个有
-- `LoraLoaderModelOnly` —— 22/25 个有
-- `JjkText` —— 19/25 个有
-- `solarL_SaveImagesToZip` —— 18/25 个有
-- `PreviewImage` —— 12/25 个有
-- `孤海注释` —— 12/25 个有
-- `ModelSamplingAuraFlow` —— 5/25 个有
-- `EmptySD3LatentImage` —— 4/25 个有
-- `ZImageLoraModelOnly` —— 3/25 个有
-- `PIP_StringConcatenation` —— 1/25 个有
-- `PathchSageAttentionKJ` —— 1/25 个有
-- `PromptBatchQueue` —— 1/25 个有
-- `RH_RhartImageG2TextToImage` —— 1/25 个有
+- `ConditioningZeroOut` —— 21/26 个有
+- `LoraLoaderModelOnly` —— 18/26 个有
+- `ConditioningKrea2Rebalance` —— 2/26 个有
+- `PrimitiveInt` —— 2/26 个有
+- `CompressImages` —— 1/26 个有
+- `TextConcat` —— 1/26 个有
+- `Textbox` —— 1/26 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 25 | 25 | 27% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 25 | 59% |
-| 采样算法 | er_sde | - | 25 | 72% |
-| 调度器 | beta | - | 25 | 72% |
-| 重绘幅度 | 1 | 1 - 1 | 25 | 100% |
-| 宽度 | 80 | 80 - 1920 | 25 | 0% |
-| 高度 | 80 | 80 - 1920 | 25 | 0% |
+| 采样步数 | 10 | 8 - 40 | 26 | 41% |
+| Prompt 约束强度(CFG) | 1 | 1 - 8 | 26 | 0% |
+| 采样算法 | euler | - | 26 | 35% |
+| 调度器 | simple | - | 26 | 58% |
+| 重绘幅度 | 1 | 1 - 1 | 26 | 100% |
+| 宽度 | 1080 | 752 - 1920 | 26 | 72% |
+| 高度 | 1536 | 1024 - 1920 | 26 | 80% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 35/25 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/26 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 25，25 个样本，取值分散，一致性仅 27%
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，25 个样本
-- 采样算法 最常用 er_sde，25 个样本，一致性 72%
-- 调度器 最常用 beta，25 个样本，一致性 72%
-- 重绘幅度 中位数 1，观测区间 1 - 1，25 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1920，25 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1920，25 个样本，取值分散，一致性仅 0%
-- 高发问题（35/25 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 8 - 40，26 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，26 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 euler，26 个样本，一致性 35%
+- 调度器 最常用 simple，26 个样本，一致性 58%
+- 重绘幅度 中位数 1，观测区间 1 - 1，26 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，观测区间 752 - 1920，26 个样本
+- 高度 中位数 1536，观测区间 1024 - 1920，26 个样本，取值集中（一致性 80%）

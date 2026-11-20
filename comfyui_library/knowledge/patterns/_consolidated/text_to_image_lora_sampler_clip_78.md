@@ -2,22 +2,22 @@
 name: text_to_image_lora_sampler_clip_78
 type: Text To Image
 frequency: 15
-level: weak
-coverage: 0.891733
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.892467
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/Z-image turbo 文生图 - 图生图-图片反推生图_2103816033600622593.json, 图片生成/反推提示词/Z-image turbo 文生图 - 图生图-图片反推生图_2103831107908227073.json, 图片生成/反推提示词/Z-image turbo三合一 文生图图生图加图片反推提示词_2104271484683374593.json, 图片生成/反推提示词/Z-image turbo出图三玩法 反推提示词文生图图生图全支持_2104310974978285570.json, 图片生成/反推提示词/Z-image turbo图片反推生图｜文生图图生图 反推提示词还原神图_2104066068133277698.json, 图片生成/反推提示词/Z-image turbo文生图图生图｜图片反推生图 反推提示词一键复刻_2104042748226654209.json, 图片生成/图生图/FLUX3图像编辑方案，局部重绘换背景随心控_2111588628790071298.json, 图片生成/图生图/Z image超真实高清洗图无AI感 照片级质感图片优化_2105031763482472449.json, 图片生成/图生图/Z-image turbo 图片反推生图 -文生图 - 图生图_2079541950725844994.json, 图片生成/图生图/Z-image turbo 文生图 - 图生图-图片反推生图_2007738512891715586.json, 图片生成/图生图/Z-image_turbo_文生图_-_图生图-图片反推生图_2108387804148494338.json, 图片生成/图生图/Z-image_turbo_文生图_-_图生图-图片反推生图_2110182398058131457.json, 图片生成/图生图/Z-image_turbo图片反推生图，文生图图生图两相宜_2110871171519574017.json, 图片生成/图生图/超清质感修复｜klein高清放大写实图生图_2093740247157919745.json, 图片生成/文生图/Z-image turbo 图片反推生图 -文生图 - 图生图_2055905347117821953.json]
+members: [图片生成/文生图/剧情生成天花板｜故事板一键产出SD2绘图声纹参考全套_2089839351608991746.json, 数字人/数字人/HeyGem视频换声工作流｜语音迁移保留原画面_2106623816477794305.json, 数字人/数字人/HeyGem语音迁移换声｜视频配音一键替换原声_2097222877983625217.json, 数字人/数字人/Heygem真人对口型数字人｜口播长视频快速生成书评国学情感_2110692840987783169.json, 视频生成/图生视频/Seedance 2.0支持留空真人全参视频处理工作流_2102163252150099970.json, 视频生成/图生视频/Seedance2.0全参工作流支持留空支持真人视频生成_2100302038222598146.json, 视频生成/图生视频/Seedance2.0全参工作流支持留空真人，图生视频视频生视频全能力覆盖_2103230482023538689.json, 视频生成/图生视频/Seedance2.0全参工作流｜支持留空真人视频生视频生成_2097408085110386689.json, 视频生成/图生视频/地表最强Seedance2.0全参工作流，支持提示词留空与真人视频生成_2114418486465359873.json, 视频生成/图生视频/地表最强Seedance2.0全参工作流｜支持提示词留空与真人视频生成_2108012548770582530.json, 视频生成/图生视频/地表最强Seedance2.0全参工作流｜支持留空支持真人视频生视频_2114241488833048578.json, 视频生成/图生视频/地表最强Seedance2.0支持留空支持真人全参工作流，视频生视频图生视频方案_2108261699794063362.json, 视频生成/图生视频/留空真人全参工作流｜Seedance2.0地表最强视频生成_2093481519183654913.json, 视频生成/图生视频/真人对口型口播｜Heygem书评国学情感数字人超长视频_2091209074963730434.json, 视频生成/文生视频/MiniMax H3多模态视频生成 超低成本每秒两毛钱_2098276360841162754.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_78
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/反推提示词/Z-image turbo 文生图 - 图生图-图片反推生图_2103816033600622593.json、图片生成/反推提示词/Z-image turbo 文生图 - 图生图-图片反推生图_2103831107908227073.json、图片生成/反推提示词/Z-image turbo三合一 文生图图生图加图片反推提示词_2104271484683374593.json、图片生成/反推提示词/Z-image turbo出图三玩法 反推提示词文生图图生图全支持_2104310974978285570.json、图片生成/反推提示词/Z-image turbo图片反推生图｜文生图图生图 反推提示词还原神图_2104066068133277698.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/剧情生成天花板｜故事板一键产出SD2绘图声纹参考全套_2089839351608991746.json、数字人/数字人/HeyGem视频换声工作流｜语音迁移保留原画面_2106623816477794305.json、数字人/数字人/HeyGem语音迁移换声｜视频配音一键替换原声_2097222877983625217.json、数字人/数字人/Heygem真人对口型数字人｜口播长视频快速生成书评国学情感_2110692840987783169.json、视频生成/图生视频/Seedance 2.0支持留空真人全参视频处理工作流_2102163252150099970.json…）
 
 - **类型**：Text To Image
 - **样本数**：15
-- **可信度**：弱结论（样本不足）
+- **可信度**：强结论
 - **平均知识覆盖**：89%
 
 ## 共有节点
@@ -26,63 +26,56 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `SaveImage`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 14/15 个有
-- `ImageResizeKJv2` —— 14/15 个有
-- `SeedVR2LoadDiTModel` —— 14/15 个有
-- `SeedVR2LoadVAEModel` —— 14/15 个有
-- `SeedVR2VideoUpscaler` —— 14/15 个有
-- `ShowText|pysssss` —— 13/15 个有
-- `JoinStrings` —— 12/15 个有
-- `Qwen3_VQA` —— 12/15 个有
-- `SomethingToString` —— 12/15 个有
-- `StringConstantMultiline` —— 12/15 个有
-- `TurboWanVAELoader` —— 12/15 个有
-- `JjkText` —— 8/15 个有
-- `solarL_SaveImagesToZip` —— 8/15 个有
-- `孤海注释` —— 8/15 个有
-- `ReferenceLatent` —— 2/15 个有
-- `AILab_QwenVL` —— 1/15 个有
-- `KSamplerAdvanced` —— 1/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/15 个有
-- `SetNode` —— 1/15 个有
-- `easy imageColorMatch` —— 1/15 个有
+- `LoadVideo` —— 12/15 个有
+- `LoadImage` —— 11/15 个有
+- `PreviewAny` —— 10/15 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 10/15 个有
+- `SaveImage` —— 7/15 个有
+- `RH_HeyGemNode` —— 4/15 个有
+- `AudioCrop` —— 2/15 个有
+- `CR Prompt Text` —— 2/15 个有
+- `CreateVideo` —— 2/15 个有
+- `VHS_LoadVideo` —— 2/15 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/15 个有
+- `忽略多组孤海` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 15 | 66% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 15 | 39% |
-| 采样算法 | er_sde | - | 15 | 53% |
-| 调度器 | beta | - | 15 | 53% |
+| 采样步数 | 4 | 4 - 4 | 15 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 15 | 100% |
+| 采样算法 | er_sde | - | 15 | 100% |
+| 调度器 | beta | - | 15 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
-| 宽度 | 80 | 80 - 1024 | 15 | 10% |
-| 高度 | 80 | 80 - 1536 | 15 | 4% |
+| 宽度 | 80 | 80 - 80 | 15 | 100% |
+| 高度 | 80 | 80 - 80 | 15 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 21/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，15 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，15 个样本，取值分散，一致性仅 39%
-- 采样算法 最常用 er_sde，15 个样本，一致性 53%
-- 调度器 最常用 beta，15 个样本，一致性 53%
+- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，15 个样本，一致性 100%
+- 调度器 最常用 beta，15 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1024，15 个样本，取值分散，一致性仅 10%
-- 高度 中位数 80，观测区间 80 - 1536，15 个样本，取值分散，一致性仅 4%
-- 高发问题（21/15 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
+- 高发问题（15/15 个样本）：Steps较低可能导致细节不足

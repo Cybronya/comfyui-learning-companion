@@ -1,81 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_vae_4
 type: Unknown Workflow
-frequency: 16
-level: moderate
-coverage: 0.814
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxResolutionNode, ImageResize+, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
+frequency: 15
+level: strong
+coverage: 0.973667
+common_nodes: [CLIPLoader, CLIPTextEncode, Fast Bypasser (rgthree), ImpactInt, KSamplerAdvanced, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, PrimitiveStringMultiline, Seed (rgthree), SimpleMath+, VAEDecode, VAELoader, WanImageToVideo, wanBlockSwap]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext 开源模型+ Nunchaku FLUX 加速工作流_1939912219494621186.json, 图片生成/图生图/Kontext+双图-万能改图_z_2014654807981694978.json, 图片生成/图生图/Kontext-一键换姿势（人物保真）_1951246872604274689.json, 图片生成/图生图/kontext Dev 模特产品替换_1938883953208315906.json, 图片生成/图生图/【IP形象一致性】Nun-Kontext-Dev（人物篇）_1941401692749643778.json, 图片生成/图生图/【万物合影】Nun-Kontext-Dev_1942272809550942209.json, 图片生成/图生图/【产品一致性】Nun-Kontext-Dev（静物篇）_1942155136640905218.json, 图片生成/图生图/【单图编辑】Flux-Kontext-Dev（基础流）_1938510905971769345.json, 图片生成/图生图/【图像去水印】Flux-Kontext-Dev_1943231517701128194.json, 图片生成/图生图/【灵魂画手风格】Nun-Kontext-Dev（加速版）_1939972321711157249.json, 图片生成/图生图/【超全风格转绘】Nun-Kontext-Dev（加更）_1940331067989753857.json, 图片生成/图生图/一键去水印工作流_1948188735107137537.json, 图片生成/图生图/照相馆专用-老照片高清修复上色工作流_1948187584666185729.json, 图片生成/文生图/【灵魂画手风格】抖音火爆视频专用（加速版）_2024382098097836034.json, 平台全量/Flux-Kontext-Dev【图像去水印】_1961694959504179201.json, 平台全量/【老照片修复】-Flux-Kontext图像编辑-老照片上色（超级版）_1940667483986751489.json]
+members: [图片生成/反推提示词/24ttovfast_2049408859428626433.json, 视频生成/图生视频/文生视频Wan2.2-Smooth+Mix++RTX超分+Qwen3.5_2053671434622386177.json, 视频生成/文生视频/Wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2036248908665462786.json, 视频生成/文生视频/Wan2.2 Smoothmix全自动提示词4步加速渲染工作流_2043337939740004354.json, 视频生成/文生视频/wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2041684980501323777.json, 视频生成/文生视频/wan2.2文生视频_2005367694092365826.json, 视频生成/文生视频/文生视频Wan2.2 GGUF 4步采样生成1k视频_2050852999907557378.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix +RTX超分+Qwen3.5自动提示词+补帧动态电影感极速渲染_2038233332701470721.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix +RTX超分+Qwen3.5自动提示词+补帧动态电影感极速渲染_2045817559047475201.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix 超丝滑动态电影感画质极速渲染 工作流_1981303771013742594.json, 视频生成/文生视频/文生视频Wan2.2-Smooth Mix_2051648863991279617.json, 视频生成/文生视频/文生视频_2008897153195839489.json, 视频生成/文生视频/文生视频_2011579787898261505.json, 视频生成/文生视频/极速渲染优化！Wan2.2 SmoothMix+RTX+Qwen3.5提示词优化_2048029118243020801.json, 视频生成/文生视频/🌈老许Gary：文生视频Wan2.2-Smooth Mix_2045834738073604098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/Kontext 开源模型+ Nunchaku FLUX 加速工作流_1939912219494621186.json、图片生成/图生图/Kontext+双图-万能改图_z_2014654807981694978.json、图片生成/图生图/Kontext-一键换姿势（人物保真）_1951246872604274689.json、图片生成/图生图/kontext Dev 模特产品替换_1938883953208315906.json、图片生成/图生图/【IP形象一致性】Nun-Kontext-Dev（人物篇）_1941401692749643778.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/反推提示词/24ttovfast_2049408859428626433.json、视频生成/图生视频/文生视频Wan2.2-Smooth+Mix++RTX超分+Qwen3.5_2053671434622386177.json、视频生成/文生视频/Wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2036248908665462786.json、视频生成/文生视频/Wan2.2 Smoothmix全自动提示词4步加速渲染工作流_2043337939740004354.json、视频生成/文生视频/wan2.2 SmoothMix V3.0高动态电影质感 文生视频+补帧_2041684980501323777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **样本数**：15
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 15 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxGuidance`
-- `FluxResolutionNode`
-- `ImageResize+`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `Fast Bypasser (rgthree)`
+- `ImpactInt`
+- `KSamplerAdvanced`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `Mute / Bypass Repeater (rgthree)`
+- `PathchSageAttentionKJ`
+- `PrimitiveStringMultiline`
+- `Seed (rgthree)`
+- `SimpleMath+`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `WanImageToVideo`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 14/16 个有
-- `ModelSamplingFlux` —— 14/16 个有
-- `PreviewImage` —— 14/16 个有
-- `Anything Everywhere` —— 13/16 个有
-- `CM_IntToBool` —— 13/16 个有
-- `CR Text` —— 13/16 个有
-- `ImpactConditionalBranch` —— 13/16 个有
-- `Int` —— 13/16 个有
-- `easy cleanGpuUsed` —— 13/16 个有
-- `Image Comparer (rgthree)` —— 12/16 个有
-- `easy showAnything` —— 12/16 个有
-- `NunchakuFluxDiTLoader` —— 11/16 个有
-- `RH_Translator` —— 11/16 个有
-- `RHHiddenNodes` —— 7/16 个有
-- `UNETLoader` —— 5/16 个有
-- `CR Text Concatenate` —— 2/16 个有
-- `ImageConcanate` —— 2/16 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/16 个有
-- `RMBG` —— 2/16 个有
-- `ShowText|pysssss` —— 2/16 个有
-- `ttN concat` —— 2/16 个有
-- `FluxKontextImageScale` —— 1/16 个有
-- `GetNode` —— 1/16 个有
-- `ImageStitch` —— 1/16 个有
-- `ImpactSwitch` —— 1/16 个有
-- `SetNode` —— 1/16 个有
-- `easy imageRemBg` —— 1/16 个有
+- `ImageScaleBy` —— 14/15 个有
+- `UNETLoader` —— 14/15 个有
+- `VHS_VideoCombine` —— 14/15 个有
+- `RIFE VFI` —— 13/15 个有
+- `LoraLoaderModelOnly` —— 9/15 个有
+- `RTXVideoSuperResolution` —— 9/15 个有
+- `ShowText` —— 7/15 个有
+- `llama_cpp_instruct_adv` —— 7/15 个有
+- `llama_cpp_model_loader` —— 7/15 个有
+- `easy cleanGpuUsed` —— 6/15 个有
+- `Wan22PromptSelector` —— 2/15 个有
+- `easy promptConcat` —— 2/15 个有
+- `CreateVideo` —— 1/15 个有
+- `Int` —— 1/15 个有
+- `SaveImage` —— 1/15 个有
+- `SaveVideo` —— 1/15 个有
+- `UnetLoaderGGUF` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 1024 | 16 | 67% |
-| 高度 | 512 | 512 - 1280 | 16 | 54% |
+| 采样步数 | fixed | - | 15 | 73% |
+| Prompt 约束强度(CFG) | 6 | 4 - 8 | 15 | 78% |
+| 采样算法 | 1 | 1 - 1 | 15 | 100% |
+| 调度器 | euler_ancestral | - | 15 | 100% |
+| 重绘幅度 | simple | - | 15 | 100% |
 
 ## 常见问题
 
@@ -83,5 +75,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 1024，16 个样本
-- 高度 中位数 512，观测区间 512 - 1280，16 个样本
+- 采样步数 最常用 fixed，15 个样本，一致性 73%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，15 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，15 个样本，一致性 100%
+- 重绘幅度 最常用 simple，15 个样本，一致性 100%
