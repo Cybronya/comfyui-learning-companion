@@ -1032,7 +1032,9 @@ def test_save_and_load_roundtrip_real():
             loaded.workflows_using("KSampler")
             == qy.workflows_using("KSampler")
         )
-        print(f"  {store.summary()}")
+        # summary 传已加载的图 —— 不重新读盘
+        # （大图下再 load 一遍 848MB 的图会直接 MemoryError）
+        print(f"  {store.summary(loaded.graph)}")
 
     print("真实图存取正确 [OK]\n")
 

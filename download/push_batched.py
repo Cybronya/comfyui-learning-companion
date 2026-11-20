@@ -393,16 +393,19 @@ def main():
     if not pending:
         # 没有待推文件 = 远端内容已与目标一致，这是**正常终态**，
         # 不能拿「树等于 parent」当失败判据 —— 后面还要做最终 force push
-        # 把 master 指回（脱敏版）目标提交。
+        # 把 master 指回目标提交。
         print(f"无待推文件，跳过批次预检（远端已含 {len(check_files)} 个目标文件）", flush=True)
     else:
         if ptree == parent_tree:
             print("预检失败: 构造树等于 parent 树，注入未生效")
             return 1
-        if n_entries <= parent_n:
-            print(f"预检失败: 索引条目 {n_entries} 未超过 parent 的 {parent_n}")
+        # 条目数检查只在「新增文件」场景有意义：
+        # 覆盖已有文件（内容不同但路径相同）时条目数不变是**正常**的，
+        # 用它判失败会误报（实测：覆盖 10160 个脱敏版文件时条目数持平）。
+        if n_entries < parent_n:
+            print(f"预检失败: 索引条目 {n_entries} 少于 parent 的 {parent_n}")
             return 1
-        print(f"预检通过 (探针树 {ptree[:10]}, 索引条目 {n_entries} > parent {parent_n})，开始推送\n",
+        print(f"预检通过 (探针树 {ptree[:10]}, 索引条目 {n_entries}，parent {parent_n})，开始推送\n",
               flush=True)
     try:
         probe_idx.unlink()
@@ -454,7 +457,7 @@ def main():
                 if not e:
                     continue
                 mode = e[0]
-                sha = push_sha.get(f, e[2])   # 含密钥的用脱敏版 sha
+                sha = push_sha.get(f, e[2])   # 原样 blob（不脱敏，AGENTS.md 3.7）
                 lines.append(f"{mode} {sha}\t{f}")
             # 删除项: 0 SP <空 sha1> TAB <path>
             for f in deleted:

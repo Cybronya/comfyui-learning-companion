@@ -16,10 +16,9 @@
     }
 """
 
-import json
 from pathlib import Path
 from typing import Dict, List, Any
-from ..atomic_write import atomic_write_json
+from ..streaming_json import iter_dict_of_arrays, write_json_dict_of_arrays
 
 
 class KnowledgeIndex:
@@ -52,14 +51,23 @@ class KnowledgeIndex:
 
     def load(self) -> None:
         """
-        从文件加载索引
+        从文件加载索引（**流式**）
+
+        真实库的检索索引有 **593MB**，`json.load()` 整读会 OOM
+        （`MemoryError` 的 str 是空的，控制台只打出
+        「加载检索索引失败:」四个字，2026-11-20 实测踩到）。
+
+        改成逐元素读：任何时刻内存里只有一条记录。
         """
         if self.path.exists():
             try:
+                # utf-8-sig：项目约定读 JSON 一律用它
+                self.index = {}
                 with open(self.path, "r", encoding="utf-8-sig") as f:
-                    self.index = json.load(f)
+                    for keyword, item in iter_dict_of_arrays(f):
+                        self.index.setdefault(keyword, []).append(item)
             except Exception as e:
-                print(f"加载检索索引失败: {e}")
+                print(f"加载检索索引失败: {type(e).__name__}: {e}")
                 self.index = {}
         else:
             self.index = {}
@@ -139,13 +147,16 @@ class KnowledgeIndex:
 
     def save(self) -> None:
         """
-        保存到文件
+        保存到文件（**流式**，大索引不 OOM）
         """
         try:
             self.path.parent.mkdir(parents=True, exist_ok=True)
 
-            atomic_write_json(
-                self.path, self.index, indent=4, ensure_ascii=False
+            write_json_dict_of_arrays(
+                self.path,
+                ((keyword, items)
+                 for keyword, items in self.index.items()),
+                indent=4,
             )
         except Exception as e:
-            print(f"保存检索索引失败: {e}")
+            print(f"保存检索索引失败: {type(e).__name__}: {e}")
