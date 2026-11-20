@@ -40,7 +40,7 @@ Other
 
 常见取值：
 
-- `["模特讲解产品", "veo_3_1-fast", "REDACTED0000000000000000000000000000000000000000000", "720x1280", "720p", "8", false, 5, 120`（1 次）
+- `["模特讲解产品", "veo_3_1-fast", "sk-Tqx2fXCyvvWhuWGWn5BvHT5rKLFBTibNZ3pwq4JDItKHVwEH", "720x1280", "720p", "8", false, 5, 120`（1 次）
 
 ## 可信度
 

@@ -3,35 +3,33 @@ name: unknown_workflow_generic_1514
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.667
-common_nodes: [CR Text, JoinStrings, Qwen3_VQA, SaveImage, ShowText|pysssss]
+coverage: 0.882
+common_nodes: [CR Image Border, CR Image Size, Image Stitch, ImageScale, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/LH-DMT-LTX2.0-001.文生视频提示词_2016312532721471489.json, 图片生成/反推提示词/LH-DMT-LTX2.0-002.图生视频提示词_2016312549058285570.json]
+members: [图片生成/图生图/完美四宫格拼图_1934875135209840641.json, 图片生成/图生图/极速拼图基础工作流 Image Stitch_1937831782890782721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1514
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/LH-DMT-LTX2.0-001.文生视频提示词_2016312532721471489.json、图片生成/反推提示词/LH-DMT-LTX2.0-002.图生视频提示词_2016312549058285570.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/完美四宫格拼图_1934875135209840641.json、图片生成/图生图/极速拼图基础工作流 Image Stitch_1937831782890782721.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `JoinStrings`
-- `Qwen3_VQA`
+- `CR Image Border`
+- `CR Image Size`
+- `Image Stitch`
+- `ImageScale`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
-- `ShowText|pysssss`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `MuyeLoadImage` —— 1/2 个有
 
 ## 典型参数
 

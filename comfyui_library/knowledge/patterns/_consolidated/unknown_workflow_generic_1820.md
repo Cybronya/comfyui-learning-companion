@@ -3,39 +3,29 @@ name: unknown_workflow_generic_1820
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.535
-common_nodes: [1hew_ImageGridSplit, EmptyImage, LoadImage, PreviewAny, PreviewImage, PrimitiveStringMultiline, RHLLMChatNode, RH_RhartImageG2OfficialImageToImage, SaveImage]
+coverage: 1
+common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/文生图/NPC生成器，九宫格，支持纯文本或带参考图两种模式_2092490650733334529.json, 图片生成/文生图/敌人生成器，九宫格，支持纯文本或带参考图两种模式_2092507233866309633.json]
+members: [音频生成/音频生成/Qwen3-TTS-声音设计_2014677861742944257.json, 音频生成/音频生成/【AI播草机】QWEN3TTS声音设计_2036070340555706370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1820
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/NPC生成器，九宫格，支持纯文本或带参考图两种模式_2092490650733334529.json、图片生成/文生图/敌人生成器，九宫格，支持纯文本或带参考图两种模式_2092507233866309633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-声音设计_2014677861742944257.json、音频生成/音频生成/【AI播草机】QWEN3TTS声音设计_2036070340555706370.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `1hew_ImageGridSplit`
-- `EmptyImage`
-- `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RHLLMChatNode`
-- `RH_RhartImageG2OfficialImageToImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialTextToImage` —— 1/2 个有
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudioMP3`
 
 ## 典型参数
 

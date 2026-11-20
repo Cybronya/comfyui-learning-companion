@@ -39,7 +39,7 @@ Image Processing
 
 常见取值：
 
-- `["保持人物的一致性，人物穿上了帅气的西装，全身照", "gpt-image-2", "1K（标清）", "1:1（正方形）", 1, "REDACTED000000000000000000000000000", "png", "auto"`（1 次）
+- `["保持人物的一致性，人物穿上了帅气的西装，全身照", "gpt-image-2", "1K（标清）", "1:1（正方形）", 1, "sk-gDvQXTgQMRaaxksKHEnjNtv8DWHT0PLk", "png", "auto"`（1 次）
 
 ## 可信度
 

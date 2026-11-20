@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [PD_JoinStringMultiLine, RH_RhartImageNProTextToImage, SaveImage, easy positive]
+common_nodes: [OmniVoiceVoiceDesignTTS, PreviewAudio, SaveAudio, Textbox]
 problems: []
 missing: []
-members: [图片生成/文生图/04.14JJL工作流正面提示词_2043982678051000322.json, 图片生成/文生图/急急令工作流正负提示词_2041075531373879298.json]
+members: [音频生成/音频生成/Omnivoice-TTS 语音设计 ComfyUI工作流_2047570104958853122.json, 音频生成/音频生成/Omnivoice-TTS 语音设计_2092504342405402625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1808
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/04.14JJL工作流正面提示词_2043982678051000322.json、图片生成/文生图/急急令工作流正负提示词_2041075531373879298.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Omnivoice-TTS 语音设计 ComfyUI工作流_2047570104958853122.json、音频生成/音频生成/Omnivoice-TTS 语音设计_2092504342405402625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,10 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PD_JoinStringMultiLine`
-- `RH_RhartImageNProTextToImage`
-- `SaveImage`
-- `easy positive`
-
-**可变部分**（部分 workflow 才有）：
-- `easy negative` —— 1/2 个有
+- `OmniVoiceVoiceDesignTTS`
+- `PreviewAudio`
+- `SaveAudio`
+- `Textbox`
 
 ## 典型参数
 

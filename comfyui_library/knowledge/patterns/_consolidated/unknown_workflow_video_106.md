@@ -1,43 +1,35 @@
 ---
 name: unknown_workflow_video_106
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.479
-common_nodes: [GetNode, ImageToMask, LayerUtility: LaMa, LoadImage, MaskToImage, PreviewImage, RepeatImageBatch, SetNode, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [ImageResizeKJ, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/可灵即梦抖音豆包等固定位置视频去水印_1930086558941220866.json, 平台全量/图像-视频去水印（手动）_1920314470160072706.json, 平台全量/视频去固定水印_1831276188043014145.json, 视频生成/图生视频/图像-视频去水印（手动）_1915155144491864066.json]
+members: [视频生成/图生视频/FramePack丝滑首尾帧图生视频_1915017542644002818.json, 视频生成/图生视频/framepack_首尾帧_1914526532704923650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_106
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/可灵即梦抖音豆包等固定位置视频去水印_1930086558941220866.json、平台全量/图像-视频去水印（手动）_1920314470160072706.json、平台全量/视频去固定水印_1831276188043014145.json、视频生成/图生视频/图像-视频去水印（手动）_1915155144491864066.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack丝滑首尾帧图生视频_1915017542644002818.json、视频生成/图生视频/framepack_首尾帧_1914526532704923650.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GetNode`
-- `ImageToMask`
-- `LayerUtility: LaMa`
+全部 2 个 workflow 都包含：
+- `ImageResizeKJ`
 - `LoadImage`
-- `MaskToImage`
-- `PreviewImage`
-- `RepeatImageBatch`
-- `SetNode`
-- `VHS_LoadVideo`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `SaveImage` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
+- `KepStringLiteral` —— 1/2 个有
 
 ## 典型参数
 
@@ -49,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

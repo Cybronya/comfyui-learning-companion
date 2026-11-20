@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_966
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [DuckHideNode, FlashVSRNode, SaveImage, VHS_LoadVideo, easy cleanGpuUsed]
+coverage: 0.933333
+common_nodes: [LoadImage, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [平台全量/FlashVSR 2-60_2033051151771373570.json, 平台全量/FlashVSR 视频修复1080-4K加密_2035647191276064770.json, 平台全量/‎_2030265433256890369.json, 平台全量/‎_2041466601467289603.json]
+members: [图片生成/图生图/KONTEXT修图_1963078047991828481.json, 图片生成/图生图/全能图片 G-2.0 多图编辑_2047593986470187009.json, 图片生成/图生图/全能图片 G-2.0 文生图_2047502840112877570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_966
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/FlashVSR 2-60_2033051151771373570.json、平台全量/FlashVSR 视频修复1080-4K加密_2035647191276064770.json、平台全量/‎_2030265433256890369.json、平台全量/‎_2041466601467289603.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/KONTEXT修图_1963078047991828481.json、图片生成/图生图/全能图片 G-2.0 多图编辑_2047593986470187009.json、图片生成/图生图/全能图片 G-2.0 文生图_2047502840112877570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DuckHideNode`
-- `FlashVSRNode`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `RH_Translator`
 - `SaveImage`
-- `VHS_LoadVideo`
-- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartImageG2ImageToImage` —— 2/3 个有
+- `workflow>kontextdev` —— 1/3 个有
 
 ## 典型参数
 

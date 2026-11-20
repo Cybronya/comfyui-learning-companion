@@ -38,7 +38,7 @@ Other
 
 常见取值：
 
-- `["https://love.qinyan.icu/v1", "gemini-3-pro-preview", "REDACTED0000000000000000000000000000000000000000000", "# 我的图片生成工`（1 次）
+- `["https://love.qinyan.icu/v1", "gemini-3-pro-preview", "sk-ReA2DbTScf64DnH9683867BdA7464fC0Ad0e7a2bD338A480", "# 我的图片生成工`（1 次）
 
 ## 可信度
 

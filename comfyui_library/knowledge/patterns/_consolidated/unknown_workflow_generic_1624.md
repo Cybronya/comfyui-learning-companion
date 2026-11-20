@@ -3,29 +3,31 @@ name: unknown_workflow_generic_1624
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6945
-common_nodes: [LoadImage, RelayGPTImage2Generator, SaveImage]
+coverage: 0.763
+common_nodes: [RH_Nano_Banana2_Gemini31Flash_Batch, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/image2 单张低至1分钱(价格根据市场会有浮动)_2064931794776059906.json, 平台全量/image2需api_2117543607971434497.json]
+members: [图片生成/文生图/全能图片2 文生图_批量8张_目前单价1毛6_张_2045084707506888705.json, 图片生成/文生图/哥哥的工作流_2041076091535757314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1624
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/image2 单张低至1分钱(价格根据市场会有浮动)_2064931794776059906.json、平台全量/image2需api_2117543607971434497.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片2 文生图_批量8张_目前单价1毛6_张_2045084707506888705.json、图片生成/文生图/哥哥的工作流_2041076091535757314.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RelayGPTImage2Generator`
+- `RH_Nano_Banana2_Gemini31Flash_Batch`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_upscale_36
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.721
-common_nodes: [Image Comparer (rgthree), LoadImage, SUPIR_Upscale, SaveImage]
+frequency: 2
+level: weak
+coverage: 0.875
+common_nodes: [Google-Gemini-PL, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [平台全量/SUPIR放大，完美细节，无损图像放大工具_1953733104391344129.json, 平台全量/supir图片高清放大_1978437966995591169.json, 平台全量/【图片超分】SUPIR-基础超分_1998571399511965697.json, 平台全量/超级放大保留细节超好用_1931906103804624897.json]
+members: [图片生成/图生图/Gemini 2.0 细节修改+高清放大_1904715758629519362.json, 图片生成/文生图/谷歌Gemini生图_1912139284466597890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_36
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/SUPIR放大，完美细节，无损图像放大工具_1953733104391344129.json、平台全量/supir图片高清放大_1978437966995591169.json、平台全量/【图片超分】SUPIR-基础超分_1998571399511965697.json、平台全量/超级放大保留细节超好用_1931906103804624897.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Gemini 2.0 细节修改+高清放大_1904715758629519362.json、图片生成/文生图/谷歌Gemini生图_1912139284466597890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+全部 2 个 workflow 都包含：
+- `Google-Gemini-PL`
 - `LoadImage`
-- `SUPIR_Upscale`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `PreviewImage` —— 1/4 个有
-- `easy float` —— 1/4 个有
+- `CR Upscale Image` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 
@@ -43,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

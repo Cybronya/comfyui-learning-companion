@@ -3,35 +3,35 @@ name: unknown_workflow_generic_1889
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.615
-common_nodes: [CR Prompt Text, Comfly_nano_banana, ImageConcanate, JWImageResizeByLongerSide, LoadImage, PreviewImage, PrimitiveString, RH_Translator, SaveImage]
+coverage: 0.8165
+common_nodes: [AudioCrop, Int, JWIntegerToString, LoadAudio, SaveAudio, Save_Audio]
 problems: []
 missing: []
-members: [平台全量/Cross-space interaction_1963959474979524609.json, 平台全量/Social Role Creation_1963961183663476738.json]
+members: [音频生成/音频生成/音频裁剪工具_1962356789394259970.json, 音频生成/音频生成/音频裁剪工具_2046141481777373186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1889
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/Cross-space interaction_1963959474979524609.json、平台全量/Social Role Creation_1963961183663476738.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/音频裁剪工具_1962356789394259970.json、音频生成/音频生成/音频裁剪工具_2046141481777373186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_nano_banana`
-- `ImageConcanate`
-- `JWImageResizeByLongerSide`
-- `LoadImage`
-- `PreviewImage`
-- `PrimitiveString`
-- `RH_Translator`
-- `SaveImage`
+- `AudioCrop`
+- `Int`
+- `JWIntegerToString`
+- `LoadAudio`
+- `SaveAudio`
+- `Save_Audio`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

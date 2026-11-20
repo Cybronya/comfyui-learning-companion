@@ -1,46 +1,34 @@
 ---
 name: unknown_workflow_generic_901
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.68775
-common_nodes: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), ImageBatchGet, LayerUtility: LaMa, LoadImage, MaskToImage, PreviewImage, SAMModelLoader (segment anything), SaveImage]
+coverage: 1
+common_nodes: [MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, MeshyTextToModelNode, MeshyTextureNode, SaveGLB]
 problems: []
 missing: []
-members: [图片生成/图生图/图像去水印+放大_1942480718805274626.json, 图片生成/图生图/图像去水印（全自动）_1915291152122318850.json, 图片生成/图生图/图片去水印-稳定高效版_1931584333021118465.json, 平台全量/Advance 基础低配去水印工作流_2032850446993334274.json]
+members: [comfyui-workflow-templates-json/api_meshy7_1_text_to_model.json, comfyui-workflow-templates-json/api_meshy7_text_to_model.json, comfyui-workflow-templates-json/api_meshy_text_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_901
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/图像去水印+放大_1942480718805274626.json、图片生成/图生图/图像去水印（全自动）_1915291152122318850.json、图片生成/图生图/图片去水印-稳定高效版_1931584333021118465.json、平台全量/Advance 基础低配去水印工作流_2032850446993334274.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_meshy7_1_text_to_model.json、comfyui-workflow-templates-json/api_meshy7_text_to_model.json、comfyui-workflow-templates-json/api_meshy_text_to_model.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GroundingDinoModelLoader (segment anything)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `ImageBatchGet`
-- `LayerUtility: LaMa`
-- `LoadImage`
-- `MaskToImage`
-- `PreviewImage`
-- `SAMModelLoader (segment anything)`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageToMask` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `VHS_DuplicateMasks` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `Image Comparer (rgthree)` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `PMRF` —— 1/4 个有
+全部 3 个 workflow 都包含：
+- `MeshyAnimateModelNode`
+- `MeshyRefineNode`
+- `MeshyRigModelNode`
+- `MeshyTextToModelNode`
+- `MeshyTextureNode`
+- `SaveGLB`
 
 ## 典型参数
 

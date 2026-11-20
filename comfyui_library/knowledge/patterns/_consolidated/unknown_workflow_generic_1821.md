@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [RH_RhartImageNProOfficialTextToImageUltra, SaveImage]
+common_nodes: [AnySwitch, FB_Qwen3TTSVoiceClone, Label (rgthree), LoadAudio, SaveAudio, Text Multiline, VHS_LoadAudio, WhisperSTT]
 problems: []
 missing: []
-members: [图片生成/文生图/NPro_OfficialTextToImageUltra_v1.0_2033838757945810945.json, 图片生成/文生图/全能图片PRO-文生图Ultra-官方稳定版_2061683897083187201.json]
+members: ["音频生成/音频生成/Qwen3-TTS语音克隆,设计_2016159449999740930.json", "音频生成/音频生成/Qwen3-TTS语音克隆,设计_2016181702023974914.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1821
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/NPro_OfficialTextToImageUltra_v1.0_2033838757945810945.json、图片生成/文生图/全能图片PRO-文生图Ultra-官方稳定版_2061683897083187201.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS语音克隆,设计_2016159449999740930.json、音频生成/音频生成/Qwen3-TTS语音克隆,设计_2016181702023974914.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,8 +23,14 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartImageNProOfficialTextToImageUltra`
-- `SaveImage`
+- `AnySwitch`
+- `FB_Qwen3TTSVoiceClone`
+- `Label (rgthree)`
+- `LoadAudio`
+- `SaveAudio`
+- `Text Multiline`
+- `VHS_LoadAudio`
+- `WhisperSTT`
 
 ## 典型参数
 

@@ -1,39 +1,33 @@
 ---
 name: unknown_workflow_video_93
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.616
-common_nodes: [JWInteger, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [ColorCorrectOfUtils, ImageCropV2, PrimitiveBoundingBox, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/FlashVSR视频放大+RIFE插帧_2008534784552738818.json, 平台全量/FlashVSR视频放大+RIFE插帧_2046400503122235393.json, 平台全量/minimax H3超分助手-FlashVSR视频4K放大_2088616639217627138.json, 平台全量/视频插帧RIFE VFI-综合速度和质量-建议放大后插帧_2094997589262430210.json]
+members: [图片生成/图生图/视频切割转GIF自动切图比例自定义MP4转GIF_2072663952676442114.json, 视频生成/图生视频/视频切割转GIF自动切图比例自定义MP4转视频MP4_2072514567850258434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_93
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/FlashVSR视频放大+RIFE插帧_2008534784552738818.json、平台全量/FlashVSR视频放大+RIFE插帧_2046400503122235393.json、平台全量/minimax H3超分助手-FlashVSR视频4K放大_2088616639217627138.json、平台全量/视频插帧RIFE VFI-综合速度和质量-建议放大后插帧_2094997589262430210.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/视频切割转GIF自动切图比例自定义MP4转GIF_2072663952676442114.json、视频生成/图生视频/视频切割转GIF自动切图比例自定义MP4转视频MP4_2072514567850258434.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JWInteger`
+全部 2 个 workflow 都包含：
+- `ColorCorrectOfUtils`
+- `ImageCropV2`
+- `PrimitiveBoundingBox`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `CM_FloatBinaryOperation` —— 3/4 个有
-- `CM_IntToFloat` —— 3/4 个有
-- `FlashVSRNode` —— 3/4 个有
-- `RIFE VFI` —— 3/4 个有
 
 ## 典型参数
 
@@ -45,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

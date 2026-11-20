@@ -3,39 +3,37 @@ name: unknown_workflow_generic_1611
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8255
-common_nodes: [Get Image Size, Image Comparer (rgthree), ImageResize+, ImageScaleToTotalPixels, LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap, easy compare, easy ifElse]
+coverage: 0.654
+common_nodes: [CR Text Concatenate, GetNode, LoadImage, PreviewAny, SaveImage, SetNode, TextInput_]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2高清放大流_2003292714370260994.json, 图片生成/图生图/seedvr2 超高清无损放大 文字、人像等都非常给力_1975487646812213250.json]
+members: [图片生成/文生图/YH_G2_v002_2053042954142531586.json, 图片生成/文生图/生图2-v2.2_2028309826870190082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1611
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2高清放大流_2003292714370260994.json、图片生成/图生图/seedvr2 超高清无损放大 文字、人像等都非常给力_1975487646812213250.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/YH_G2_v002_2053042954142531586.json、图片生成/文生图/生图2-v2.2_2028309826870190082.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Get Image Size`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleToTotalPixels`
+- `CR Text Concatenate`
+- `GetNode`
 - `LoadImage`
+- `PreviewAny`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `easy compare`
-- `easy ifElse`
+- `SetNode`
+- `TextInput_`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

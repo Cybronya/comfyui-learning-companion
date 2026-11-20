@@ -3,32 +3,34 @@ name: unknown_workflow_generic_1812
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [BagelModelLoader, BagelTextToImage, SaveImage]
+coverage: 0.8
+common_nodes: [FB_Qwen3TTSVoiceClone, LoadAudio, PreviewAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/Bagel文生图_1926988360424837121.json, 图片生成/文生图/Bagel文生图_1937463028348559362.json]
+members: [音频生成/音频生成/Qwen3 TTS 音色克隆_2018615046120673282.json, 音频生成/音频生成/Qwen3-TTS 语音合成-声音克隆_2015145651453042689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1812
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Bagel文生图_1926988360424837121.json、图片生成/文生图/Bagel文生图_1937463028348559362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 音色克隆_2018615046120673282.json、音频生成/音频生成/Qwen3-TTS 语音合成-声音克隆_2015145651453042689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BagelModelLoader`
-- `BagelTextToImage`
-- `SaveImage`
+- `FB_Qwen3TTSVoiceClone`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive string [Crystools]` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

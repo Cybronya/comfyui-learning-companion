@@ -3,31 +3,33 @@ name: unknown_workflow_generic_1600
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9285
-common_nodes: [CR Prompt Text, LoadImage, RunningHub Ovi Image to Video, RunningHub Ovi Model Loader, SaveVideo]
+coverage: 1
+common_nodes: [BFL_ComfyFluxKontext, Comfly_Flux_Kontext, DeepTranslatorTextNode, ImageConcanate, LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Ovi-外贸电商数字人-视频生成-一键生成带声音的视频_1983508190111408129.json, 视频生成/图生视频/Ovi跨模态图生视频数字人V2（英语音频）_1974947075743944706.json]
+members: [图片生成/文生图/Kontext-pro一句话修改文字_1931550667134185473.json, 图片生成/文生图/Kontext一句话转绘吉卜力风格_1931273202180227074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1600
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Ovi-外贸电商数字人-视频生成-一键生成带声音的视频_1983508190111408129.json、视频生成/图生视频/Ovi跨模态图生视频数字人V2（英语音频）_1974947075743944706.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Kontext-pro一句话修改文字_1931550667134185473.json、图片生成/文生图/Kontext一句话转绘吉卜力风格_1931273202180227074.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
+- `BFL_ComfyFluxKontext`
+- `Comfly_Flux_Kontext`
+- `DeepTranslatorTextNode`
+- `ImageConcanate`
 - `LoadImage`
-- `RunningHub Ovi Image to Video`
-- `RunningHub Ovi Model Loader`
-- `SaveVideo`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 ## 典型参数
 

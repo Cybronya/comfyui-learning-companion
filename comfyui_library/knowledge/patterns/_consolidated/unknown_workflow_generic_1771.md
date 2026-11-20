@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1771
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.74
-common_nodes: [AIO_Preprocessor, ImageResize+, LoadImage, PreviewImage, SaveImage]
+coverage: 0.4125
+common_nodes: [LoadImage, RH_RhartAudioSunoV55Custom, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/生成灰度图_1932669229575327745.json, 平台全量/LG Relight Ultra 3D自定义色彩多光源打光工作流_1927791252316504065.json]
+members: [音频生成/音频生成/04_深夜孤独_SunoV5.5Custom+全节点注释_2058869624992788481.json, 音频生成/音频生成/RH Suno_Custom_1972969509088833537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1771
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/生成灰度图_1932669229575327745.json、平台全量/LG Relight Ultra 3D自定义色彩多光源打光工作流_1927791252316504065.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/04_深夜孤独_SunoV5.5Custom+全节点注释_2058869624992788481.json、音频生成/音频生成/RH Suno_Custom_1972969509088833537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `ImageResize+`
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `RH_RhartAudioSunoV55Custom`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `LG_Relight_Ultra` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

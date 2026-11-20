@@ -3,38 +3,34 @@ name: unknown_workflow_generic_1602
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [CR Text Concatenate, Fast Groups Muter (rgthree), ImagePass, LoadImage, Notif-PlaySound, RH_Nano_Banana2_Image2Image, SaveImage, TextInput_]
+coverage: 0.9285
+common_nodes: [CR Prompt Text, SaveAudio, TDQwen3TTSModelLoader, TDQwen3TTSVoiceDesign]
 problems: []
 missing: []
-members: [图片生成/图生图/Qiyu_图片编辑_2025920137546698754.json, 图片生成/文生图/Qiyu_十图参考_2025920174733398017.json]
+members: [图片生成/文生图/N06-Qwen3TTS音频创造_2102308187058823169.json, 音频生成/音频生成/N06-Qwen3TTS音频创造_2101875104526454786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1602
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qiyu_图片编辑_2025920137546698754.json、图片生成/文生图/Qiyu_十图参考_2025920174733398017.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/N06-Qwen3TTS音频创造_2102308187058823169.json、音频生成/音频生成/N06-Qwen3TTS音频创造_2101875104526454786.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text Concatenate`
-- `Fast Groups Muter (rgthree)`
-- `ImagePass`
-- `LoadImage`
-- `Notif-PlaySound`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `TextInput_`
+- `CR Prompt Text`
+- `SaveAudio`
+- `TDQwen3TTSModelLoader`
+- `TDQwen3TTSVoiceDesign`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

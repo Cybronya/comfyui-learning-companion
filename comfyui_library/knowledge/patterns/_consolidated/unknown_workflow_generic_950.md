@@ -1,39 +1,34 @@
 ---
 name: unknown_workflow_generic_950
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.84525
-common_nodes: [LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, SaveVideo, Text Multiline]
+coverage: 1
+common_nodes: [LoadImage, RunningHub_DreamFit_SD, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能视频S25（老程)_2019700616704036866.json, 视频生成/图生视频/全能视频V3.1首尾帧工作流（老程）_2015721236034232322.json, 视频生成/图生视频/海螺2.3智能体首帧I2V（老程）_2017032362168688641.json, 视频生成/图生视频/（昆昆）_2046917681038761985.json]
+members: [图片生成/图生图/DreamFit 服装模特_1920840169744695297.json, 图片生成/图生图/DreamFit 节点服装参考图生成服装模特_1921200576476954625.json, 图片生成/文生图/DreamFit换装_1921093033519955970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_950
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能视频S25（老程)_2019700616704036866.json、视频生成/图生视频/全能视频V3.1首尾帧工作流（老程）_2015721236034232322.json、视频生成/图生视频/海螺2.3智能体首帧I2V（老程）_2017032362168688641.json、视频生成/图生视频/（昆昆）_2046917681038761985.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/DreamFit 服装模特_1920840169744695297.json、图片生成/图生图/DreamFit 节点服装参考图生成服装模特_1921200576476954625.json、图片生成/文生图/DreamFit换装_1921093033519955970.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `SaveVideo`
-- `Text Multiline`
+- `RunningHub_DreamFit_SD`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Veo3_Image2Video` —— 2/4 个有
-- `RH_Hailuo_Image2Video` —— 1/4 个有
-- `RH_Sora2_I2V_PRO` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `Primitive string [Crystools]` —— 1/3 个有
 
 ## 典型参数
 

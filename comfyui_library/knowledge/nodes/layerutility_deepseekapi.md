@@ -38,7 +38,7 @@ Other
 
 常见取值：
 
-- `["deepseek-chat", 4096, 1, 1, 0, 0, 8, "You are a helpful assistant.", "", "REDACTED000000000000000000000000000"]`（2 次）
+- `["deepseek-chat", 4096, 1, 1, 0, 0, 8, "You are a helpful assistant.", "", "sk-47518ef4d0a9408086dccdfb02228453"]`（2 次）
 
 ## 可信度
 

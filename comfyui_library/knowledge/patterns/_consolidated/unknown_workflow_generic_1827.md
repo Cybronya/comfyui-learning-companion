@@ -3,33 +3,32 @@ name: unknown_workflow_generic_1827
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.625
-common_nodes: [CR Text, LoadImage, SaveImage]
+coverage: 1
+common_nodes: [LoadAudio, SaveAudioMP3, SeedVCRun]
 problems: []
 missing: []
-members: [图片生成/文生图/Seedream-V5-Lite-文生图 工作流+全节点注释_2076249045282156546.json, 图片生成/文生图/image-2.5文生图 极速版image2.5_全能图片G2.5_全能图片G image2.5+全节点注释_2097918475661561858.json]
+members: [音频生成/音频生成/SeedVc V2唱歌克隆-歌声音色工作流_2094776962861584386.json, 音频生成/音频生成/[发布版]百变音君-导入音频mp3wav版_2035954459041337346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1827
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedream-V5-Lite-文生图 工作流+全节点注释_2076249045282156546.json、图片生成/文生图/image-2.5文生图 极速版image2.5_全能图片G2.5_全能图片G image2.5+全节点注释_2097918475661561858.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/SeedVc V2唱歌克隆-歌声音色工作流_2094776962861584386.json、音频生成/音频生成/[发布版]百变音君-导入音频mp3wav版_2035954459041337346.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `SaveImage`
+- `LoadAudio`
+- `SaveAudioMP3`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25OfficialTokenFlareTextToImage` —— 1/2 个有
-- `RH_SeedreamV5LiteTextToImage` —— 1/2 个有
+- `AudioSeparation` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,36 +3,30 @@ name: unknown_workflow_generic_1650
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LayerMask: BenUltra, LayerMask: LoadBenModel, LayerUtility: ImageRemoveAlpha, LoadImageFromURL, SaveImage]
+coverage: 0.833
+common_nodes: [CR Prompt Text, QwenImageModelLoader, RH_QwenImageGenerator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/一键去背景-白底_1964606168800874497.json, 图片生成/图生图/一键去背景-通用_1975817031788441601.json]
+members: [图片生成/文生图/阿里开源！Qwen-Image文生图V1（解决复杂中文问题！）_1952546223993622529.json, 图片生成/文生图/阿里开源！Qwen-Image文生图V1（解决复杂中文问题！）_1954741337885175809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1650
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键去背景-白底_1964606168800874497.json、图片生成/图生图/一键去背景-通用_1975817031788441601.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/阿里开源！Qwen-Image文生图V1（解决复杂中文问题！）_1952546223993622529.json、图片生成/文生图/阿里开源！Qwen-Image文生图V1（解决复杂中文问题！）_1954741337885175809.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerMask: BenUltra`
-- `LayerMask: LoadBenModel`
-- `LayerUtility: ImageRemoveAlpha`
-- `LoadImageFromURL`
+- `CR Prompt Text`
+- `QwenImageModelLoader`
+- `RH_QwenImageGenerator`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: If ` —— 1/2 个有
-- `LayerUtility: StringCondition` —— 1/2 个有
-- `easy string` —— 1/2 个有
 
 ## 典型参数
 

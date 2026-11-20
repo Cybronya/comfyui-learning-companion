@@ -3,39 +3,30 @@ name: unknown_workflow_generic_1723
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9475
-common_nodes: [DF_Get_image_size, Fast Groups Bypasser (rgthree), ImageConcanate, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, RunningHub DreamO, SaveImage]
+coverage: 0.9
+common_nodes: [CR Text, LoadImage, RH_Grok_Video3, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/字节DreamO人物一致性工作流_1928280982921560065.json, "图片生成/文生图/字节DreamO最全使用指南(IP,ID,Style全解析)_1925781452347379713.json"]
+members: [视频生成/图生视频/图生视频GVideo3（2毛钱一条支持1080p）支持真人_1999003099111022593.json, 视频生成/文生视频/+Video3+文生视频_2001282743042535426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1723
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/字节DreamO人物一致性工作流_1928280982921560065.json、图片生成/文生图/字节DreamO最全使用指南(IP,ID,Style全解析)_1925781452347379713.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生视频GVideo3（2毛钱一条支持1080p）支持真人_1999003099111022593.json、视频生成/文生视频/+Video3+文生视频_2001282743042535426.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DF_Get_image_size`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcanate`
-- `ImageResizeKJv2`
-- `ImageScaleDownToSize`
+- `CR Text`
 - `LoadImage`
-- `RunningHub DreamO`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `RH_Grok_Video3`
+- `SaveVideo`
 
 ## 典型参数
 

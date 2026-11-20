@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1884
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [APISR_ModelLoader_Zho, APISR_Zho, Image Comparer (rgthree), LoadImage, SaveImage]
+coverage: 0.9
+common_nodes: [LoadAudio, SaveAudioMP3, Text Multiline]
 problems: []
 missing: []
-members: [平台全量/APISR专门针对动漫的高清放大_1972627989563396097.json, 平台全量/二次元图片使用专用放大模型放大_2042121843716399106.json]
+members: [音频生成/音频生成/荒哥影视解说克隆配音专用_1978289352662999041.json, 音频生成/音频生成/长语音克隆_2030936664209625089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1884
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/APISR专门针对动漫的高清放大_1972627989563396097.json、平台全量/二次元图片使用专用放大模型放大_2042121843716399106.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/荒哥影视解说克隆配音专用_1978289352662999041.json、音频生成/音频生成/长语音克隆_2030936664209625089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `APISR_ModelLoader_Zho`
-- `APISR_Zho`
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `SaveImage`
+- `LoadAudio`
+- `SaveAudioMP3`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `IndexTTSRun` —— 1/2 个有
+- `VibeVoiceSingleSpeakerNode` —— 1/2 个有
 
 ## 典型参数
 

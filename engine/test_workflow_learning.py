@@ -15,7 +15,7 @@ import sys
 import json
 import shutil
 from pathlib import Path
-from tempfile import TemporaryDirectory
+from engine.tmp_workspace import TemporaryDirectory
 
 #: D5 会清空真实学习目录（comfyui_library/workflows/learning/，现在是 2 万+
 #: 条记录）再全量重学，单轮半小时起步，中途被杀 = 知识库半残。

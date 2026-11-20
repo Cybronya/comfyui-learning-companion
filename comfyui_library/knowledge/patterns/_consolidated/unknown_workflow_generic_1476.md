@@ -3,28 +3,33 @@ name: unknown_workflow_generic_1476
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5
-common_nodes: [8b66c757-fe2f-4184-91f3-479a19deb565, SaveAudioAdvanced]
+coverage: 1
+common_nodes: [MuyeTextEditOutput, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/audio_stable_audio_3_medium.json, comfyui-workflow-templates-json/audio_stable_audio_3_medium_base.json]
+members: [图片生成/图生图/全能图片V1 Pro_1996148150660448258.json, 图片生成/文生图/竖屏分镜工作流_2019773828372631553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1476
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/audio_stable_audio_3_medium.json、comfyui-workflow-templates-json/audio_stable_audio_3_medium_base.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V1 Pro_1996148150660448258.json、图片生成/文生图/竖屏分镜工作流_2019773828372631553.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `8b66c757-fe2f-4184-91f3-479a19deb565`
-- `SaveAudioAdvanced`
+- `MuyeTextEditOutput`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `Load Image From Url (mtb)` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

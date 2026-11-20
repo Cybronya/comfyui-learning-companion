@@ -3,45 +3,33 @@ name: unknown_workflow_generic_1502
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.672
-common_nodes: [AILab_QwenVL, Bjornulf_ShowInt, Fast Groups Bypasser (rgthree), ImageScale, ImageScaleBy, ImageScaleToTotalPixels, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy saveText, easy showAnything]
+coverage: 0.708
+common_nodes: [AspectRatioSelect, JjkText, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/反推提示词/AA--LORA工具--Qwen-VL批量反推打标-批量缩放_2000885609906438145.json, 图片生成/反推提示词/LORA工具：Qwen-VL批量打标+反推+图像批量缩放_2031220088656891905.json]
+members: [图片生成/图生图/图片裂变 9宫格分镜图 洗图_2051838113256882177.json, 图片生成/图生图/超好用🔥图片裂变-分镜_2052606941188370434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1502
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/AA--LORA工具--Qwen-VL批量反推打标-批量缩放_2000885609906438145.json、图片生成/反推提示词/LORA工具：Qwen-VL批量打标+反推+图像批量缩放_2031220088656891905.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图片裂变 9宫格分镜图 洗图_2051838113256882177.json、图片生成/图生图/超好用🔥图片裂变-分镜_2052606941188370434.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `Bjornulf_ShowInt`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageScale`
-- `ImageScaleBy`
-- `ImageScaleToTotalPixels`
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
+- `AspectRatioSelect`
+- `JjkText`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy saveText`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
+- `ShowText|pysssss`
 
 ## 典型参数
 

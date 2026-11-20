@@ -3,33 +3,32 @@ name: unknown_workflow_generic_1071
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.847
-common_nodes: [RecraftColorRGB, RecraftControls, SaveSVGNode]
+coverage: 1
+common_nodes: [LoadImage, RH_Midjourney, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_vector_gen.json]
+members: [图片生成/文生图/MJ生图（昆昆）_2020704610586988546.json, 图片生成/文生图/MJ生图（老程）_2019660837929095169.json, 图片生成/文生图/RH_Midjourney Oref_1940837882426978306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1071
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_vector_gen.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/MJ生图（昆昆）_2020704610586988546.json、图片生成/文生图/MJ生图（老程）_2019660837929095169.json、图片生成/文生图/RH_Midjourney Oref_1940837882426978306.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RecraftColorRGB`
-- `RecraftControls`
-- `SaveSVGNode`
+- `LoadImage`
+- `RH_Midjourney`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RecraftV4TextToVectorNode` —— 2/3 个有
-- `RecraftTextToVectorNode` —— 1/3 个有
+- `1hew_ImageGridSplit` —— 2/3 个有
 
 ## 典型参数
 

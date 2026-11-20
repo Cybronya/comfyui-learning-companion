@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_1223
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.755667
-common_nodes: [LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LoadImage, SaveImage]
+frequency: 2
+level: weak
+coverage: 0.833
+common_nodes: [ImageCompare, LoadImage, Painter, SaveImageAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/移除产品背景+建立透明背景图+全节点注释_2057763002581078017.json, 平台全量/安-抠图王，细致到发丝_1935726958787686402.json, 平台全量/电商产品抠图_1928091323943763970.json]
+members: [comfyui-workflow-templates-json/api_bria_eraser.json, comfyui-workflow-templates-json/api_bria_genfill.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1223
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/移除产品背景+建立透明背景图+全节点注释_2057763002581078017.json、平台全量/安-抠图王，细致到发丝_1935726958787686402.json、平台全量/电商产品抠图_1928091323943763970.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_eraser.json、comfyui-workflow-templates-json/api_bria_genfill.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModel`
+全部 2 个 workflow 都包含：
+- `ImageCompare`
 - `LoadImage`
-- `SaveImage`
+- `Painter`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageRemoveAlpha` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `BriaEraser` —— 1/2 个有
+- `BriaGenFill` —— 1/2 个有
 
 ## 典型参数
 
@@ -42,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

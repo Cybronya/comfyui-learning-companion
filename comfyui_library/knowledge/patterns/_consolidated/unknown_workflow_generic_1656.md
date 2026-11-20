@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [LoadImage, workflow>主图]
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/主图生成自动输出套图_2075136767392571394.json, 图片生成/图生图/详情生成自动输出A+_2059211747990532098.json]
+members: [数字人/数字人/G 2.0参考图像，角色定妆照_2094843073481240577.json, 数字人/数字人/全能图片G-2.0-图生图-低价渠道版_2049488440575660034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1656
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/主图生成自动输出套图_2075136767392571394.json、图片生成/图生图/详情生成自动输出A+_2059211747990532098.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/G 2.0参考图像，角色定妆照_2094843073481240577.json、数字人/数字人/全能图片G-2.0-图生图-低价渠道版_2049488440575660034.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -24,7 +24,11 @@ source: knowledge_consolidation
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `workflow>主图`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `PlaySound|pysssss` —— 1/2 个有
 
 ## 典型参数
 

@@ -38,7 +38,7 @@ Other
 
 常见取值：
 
-- `["描述这张图片。", "硅基流动API", "REDACTED0000000000000000000000000000000000000000000", "[siliconflow]Qwen/Qwen3-VL-235B-A22B-Inst`（1 次）
+- `["描述这张图片。", "硅基流动API", "sk-hedsrwhrhqlggkseqkkvcfxkjkpcuhbizmtpgifolmjgslpm", "[siliconflow]Qwen/Qwen3-VL-235B-A22B-Inst`（1 次）
 
 ## 可信度
 

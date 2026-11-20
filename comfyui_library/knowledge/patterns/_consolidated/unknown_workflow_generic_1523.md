@@ -3,38 +3,33 @@ name: unknown_workflow_generic_1523
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.799
-common_nodes: [MultiplePathsInput, Qwen3_VQA, RH_Sora2_T2V, SaveVideo, VideoLoader, easy showAnything]
+coverage: 1
+common_nodes: [CR Prompt Text, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Qwen3VL：全系反推提示词，解析图像 DNA，精准复刻！_1981862000647127042.json, 视频生成/文生视频/【阡陌】Qwen3-VL视频反推提示词全能视频S自动文生视频_1983422798716706818.json]
+members: [图片生成/图生图/批量+改色(G-2.0)_2045144708422307842.json, 图片生成/文生图/Image2.0文生图_2046782365061615618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1523
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Qwen3VL：全系反推提示词，解析图像 DNA，精准复刻！_1981862000647127042.json、视频生成/文生视频/【阡陌】Qwen3-VL视频反推提示词全能视频S自动文生视频_1983422798716706818.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量+改色(G-2.0)_2045144708422307842.json、图片生成/文生图/Image2.0文生图_2046782365061615618.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `MultiplePathsInput`
-- `Qwen3_VQA`
-- `RH_Sora2_T2V`
-- `SaveVideo`
-- `VideoLoader`
-- `easy showAnything`
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `ImageLoader` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
+- `LayerUtility: TextJoin` —— 1/2 个有
 
 ## 典型参数
 

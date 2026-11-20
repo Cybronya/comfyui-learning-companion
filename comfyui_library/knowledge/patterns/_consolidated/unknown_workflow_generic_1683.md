@@ -3,40 +3,33 @@ name: unknown_workflow_generic_1683
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9305
-common_nodes: [CR Prompt Text, ImageBatchMulti, LoadImage, PreviewAny, SaveImage, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 1
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V2（Google Gemma-4）多图编辑_2042609394663297026.json, 图片生成/文生图/全能图片G2（image-2.0）文生图_多图编辑_2053092636742955010.json]
+members: [视频生成/图生视频/Kling_V26StdMotionControl_v2.6_2033808851971088386.json, 视频生成/图生视频/Kling_V30ProMotionControl_v3.0_2033808877589897217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1683
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V2（Google Gemma-4）多图编辑_2042609394663297026.json、图片生成/文生图/全能图片G2（image-2.0）文生图_多图编辑_2053092636742955010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Kling_V26StdMotionControl_v2.6_2033808851971088386.json、视频生成/图生视频/Kling_V30ProMotionControl_v3.0_2033808877589897217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `ImageBatchMulti`
 - `LoadImage`
-- `PreviewAny`
-- `SaveImage`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
+- `RH_KlingV26StdMotionControl` —— 1/2 个有
+- `RH_KlingV30ProMotionControl` —— 1/2 个有
 
 ## 典型参数
 

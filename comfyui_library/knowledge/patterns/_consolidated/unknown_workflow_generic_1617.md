@@ -3,46 +3,33 @@ name: unknown_workflow_generic_1617
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.955
-common_nodes: [AudioConcat, AudioSeparation, CR Prompt List, ConvertAny2Float, EmptyAudio, FL_Math, HAIGC_SaveImagesToZip, JjkText, ListCounter //Inspire, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudioMP3, TrimAudioDuration, VHS_LoadVideo, ZML_SplitText, easy forLoopEnd, easy forLoopStart, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.8705
+common_nodes: [LoadImage, Preview from image [Crystools], RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/VoxCPM影视台词口译_2073319256003010561.json, 图片生成/图生图/VoxCPM影视台词编辑_2073319068358234113.json]
+members: [图片生成/文生图/xj_2033491347738464257.json, 图片生成/文生图/真人过审_2063974293893115905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1617
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/VoxCPM影视台词口译_2073319256003010561.json、图片生成/图生图/VoxCPM影视台词编辑_2073319068358234113.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/xj_2033491347738464257.json、图片生成/文生图/真人过审_2063974293893115905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `AudioSeparation`
-- `CR Prompt List`
-- `ConvertAny2Float`
-- `EmptyAudio`
-- `FL_Math`
-- `HAIGC_SaveImagesToZip`
-- `JjkText`
-- `ListCounter //Inspire`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudioMP3`
-- `TrimAudioDuration`
-- `VHS_LoadVideo`
-- `ZML_SplitText`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `LoadImage`
+- `Preview from image [Crystools]`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 

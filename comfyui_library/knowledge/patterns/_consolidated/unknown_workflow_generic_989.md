@@ -1,36 +1,34 @@
 ---
 name: unknown_workflow_generic_989
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.5845
-common_nodes: [JjkText, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 1
+common_nodes: [LoadImage, MaskToImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3-TTS 声音设计_2100181833643290626.json, 音频生成/音频生成/Qwen3 TTS 最强声音设计开源工作流_2095543500996694017.json, 音频生成/音频生成/TTS 声音设计工作流_2094023501610053634.json, 音频生成/音频生成/电商定制声音风格_2014869455171489794.json]
+members: [图片生成/图生图/getMask_2068898122893455362.json, 图片生成/图生图/std-template_2090728493364629505.json, 图片生成/图生图/抠图工作流_2029822035639144450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_989
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Qwen3-TTS 声音设计_2100181833643290626.json、音频生成/音频生成/Qwen3 TTS 最强声音设计开源工作流_2095543500996694017.json、音频生成/音频生成/TTS 声音设计工作流_2094023501610053634.json、音频生成/音频生成/电商定制声音风格_2014869455171489794.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/getMask_2068898122893455362.json、图片生成/图生图/std-template_2090728493364629505.json、图片生成/图生图/抠图工作流_2029822035639144450.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `MaskToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `SegmentV2` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,45 +1,30 @@
 ---
 name: unknown_workflow_generic_1230
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.671667
-common_nodes: [GetImageSize, ImageBatch, ImageBatchMulti, ImageCrop, ImageFromBatch, LoadImage, PreviewImage, PrimitiveInt, RH_Nano_Banana2_Image2Image, ResizeAndPadImage, SaveImage, SimpleMath+]
+frequency: 2
+level: weak
+coverage: 0.8335
+common_nodes: [ByteDanceTextToVideoNode, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/谷歌2pro-产品展示四宫格_2013547352367304705.json, 图片生成/图生图/谷歌2pro-模特一键多姿态换装_2013606535192125441.json, 平台全量/3x3产品广告生成_2004480649346117633.json]
+members: [comfyui-workflow-templates-json/api_bytedance_seedance1_5_text_to_video.json, comfyui-workflow-templates-json/api_bytedance_text_to_video.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1230
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/谷歌2pro-产品展示四宫格_2013547352367304705.json、图片生成/图生图/谷歌2pro-模特一键多姿态换装_2013606535192125441.json、平台全量/3x3产品广告生成_2004480649346117633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seedance1_5_text_to_video.json、comfyui-workflow-templates-json/api_bytedance_text_to_video.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GetImageSize`
-- `ImageBatch`
-- `ImageBatchMulti`
-- `ImageCrop`
-- `ImageFromBatch`
-- `LoadImage`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RH_Nano_Banana2_Image2Image`
-- `ResizeAndPadImage`
-- `SaveImage`
-- `SimpleMath+`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
+全部 2 个 workflow 都包含：
+- `ByteDanceTextToVideoNode`
+- `SaveVideo`
 
 ## 典型参数
 
@@ -51,4 +36,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

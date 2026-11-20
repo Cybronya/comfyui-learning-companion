@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+common_nodes: [LoadImage, RH_RhartImageNG31FlashImageToImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_bria_video_replace_background.json, comfyui-workflow-templates-json/api_happyhorse1_0_video_edit.json, 平台全量/HappyHorse 视频风格编辑_2059204179687727105.json]
+members: [图片生成/图生图/遮挡区域原图还原修补_2061654525315997697.json, 图片生成/文生图/全能图片2_2063784932719284225.json, 数字人/数字人/全能图片V2-图生图-低价渠道版_2067973139832852482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1060
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_video_replace_background.json、comfyui-workflow-templates-json/api_happyhorse1_0_video_edit.json、平台全量/HappyHorse 视频风格编辑_2059204179687727105.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/遮挡区域原图还原修补_2061654525315997697.json、图片生成/文生图/全能图片2_2063784932719284225.json、数字人/数字人/全能图片V2-图生图-低价渠道版_2067973139832852482.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -24,12 +24,11 @@ source: knowledge_consolidation
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `RH_RhartImageNG31FlashImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `HappyHorseVideoEditApi` —— 2/3 个有
-- `BriaVideoReplaceBackground` —— 1/3 个有
+- `KepStringLiteral` —— 1/3 个有
 
 ## 典型参数
 

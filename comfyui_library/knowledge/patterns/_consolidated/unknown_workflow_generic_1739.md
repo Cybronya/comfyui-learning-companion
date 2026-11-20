@@ -3,48 +3,31 @@ name: unknown_workflow_generic_1739
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.86
-common_nodes: [Any To String (mtb), Bjornulf_CombineTexts, Bjornulf_ShowInt, ComfyMathExpression, ImageScaleToTotalPixels, Int, IntToText, PreviewAny, PreviewImage, PrimitiveBoolean, RHBatchImages:, RHExtractImage, RHLLMChatNode, RHUploadZip, RH_Nano_Banana2_Gemini31Flash, SaveImage, Text, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy imageCount]
+coverage: 0.8335
+common_nodes: [RH_KlingVideoO3ProTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/批量替换人物并保证人物一致性全能图片版_2085349994269331457.json, 数字人/数字人/批量替换人物并保证人物一致性全能图片版_2085349994269331457.json]
+members: [视频生成/文生视频/Kling O3 Pro文生视频工作流｜可灵 O3 旗舰文生视频_2099453244815794177.json, 视频生成/文生视频/Kling_VideoO3ProTextToVideo_v3.0_2033816805126443010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1739
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量替换人物并保证人物一致性全能图片版_2085349994269331457.json、数字人/数字人/批量替换人物并保证人物一致性全能图片版_2085349994269331457.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Kling O3 Pro文生视频工作流｜可灵 O3 旗舰文生视频_2099453244815794177.json、视频生成/文生视频/Kling_VideoO3ProTextToVideo_v3.0_2033816805126443010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any To String (mtb)`
-- `Bjornulf_CombineTexts`
-- `Bjornulf_ShowInt`
-- `ComfyMathExpression`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `IntToText`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHLLMChatNode`
-- `RHUploadZip`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `Text`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy imageCount`
+- `RH_KlingVideoO3ProTextToVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

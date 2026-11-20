@@ -1,53 +1,39 @@
 ---
 name: unknown_workflow_video_98
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.903
-common_nodes: [BboxDetectorSEGS, CropMask, FaceRestoreCFWithModel, FaceRestoreModelLoader, ImageComposite+, ImageCrop+, ImageListToImageBatch, ImageResize+, ImpactImageBatchToImageList, LayerColor: Brightness & Contrast, LoadImage, Mask Crop Region, MaskBlur+, PreviewImage, ReActorFaceSwap, SAMDetectorCombined, SAMLoader, UltralyticsDetectorProvider, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.906
+common_nodes: [AudioCrop, Int, LoadAudio, Primitive integer [Crystools], RHHiddenNodes, VHS_LoadVideo, VHS_VideoCombine, easy mathInt]
 problems: []
 missing: []
-members: [平台全量/Reactor视频换脸+SAM分割v1_2107472866123014146.json, 平台全量/reactor视频快速换脸（支持侧脸换脸）_1892122251351777282.json, 平台全量/最稳定！Reactor视频换脸_1916314329816170497.json, 视频生成/图生视频/旅拍机-淘汰-视频ReActor稳定版-SAM加载失败_2071227862950170625.json]
+members: [数字人/数字人/对口型_2067514765030809602.json, 音频生成/音频生成/latentsync1.6-视频数字人对口型_1979949959439093762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_98
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Reactor视频换脸+SAM分割v1_2107472866123014146.json、平台全量/reactor视频快速换脸（支持侧脸换脸）_1892122251351777282.json、平台全量/最稳定！Reactor视频换脸_1916314329816170497.json、视频生成/图生视频/旅拍机-淘汰-视频ReActor稳定版-SAM加载失败_2071227862950170625.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/对口型_2067514765030809602.json、音频生成/音频生成/latentsync1.6-视频数字人对口型_1979949959439093762.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BboxDetectorSEGS`
-- `CropMask`
-- `FaceRestoreCFWithModel`
-- `FaceRestoreModelLoader`
-- `ImageComposite+`
-- `ImageCrop+`
-- `ImageListToImageBatch`
-- `ImageResize+`
-- `ImpactImageBatchToImageList`
-- `LayerColor: Brightness & Contrast`
-- `LoadImage`
-- `Mask Crop Region`
-- `MaskBlur+`
-- `PreviewImage`
-- `ReActorFaceSwap`
-- `SAMDetectorCombined`
-- `SAMLoader`
-- `UltralyticsDetectorProvider`
+全部 2 个 workflow 都包含：
+- `AudioCrop`
+- `Int`
+- `LoadAudio`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `GPENO Face Restoration` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
-- `ReActorBuildFaceModel` —— 1/4 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 
@@ -59,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

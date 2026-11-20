@@ -3,59 +3,29 @@ name: unknown_workflow_generic_1698
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.929
-common_nodes: [BitwiseAndMask, CR Text, Display Any (rgthree), GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), ImageBatchGet, ImageBorder, ImageScale, ImageToMask, LayerUtility: LaMa, LoadImage, MaskFromColor+, MaskToImage, Masks Combine Regions, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, RH_LLMAPI_NODE, SAMModelLoader (segment anything), SaveImage, SeedVR2, SeedVR2BlockSwap, VHS_DuplicateMasks, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy imageCount, easy imageSize, easy int, easy showAnything, ttN concat]
+coverage: 0.9
+common_nodes: [LoadImage, RH_YouchuanImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/去水印+高清放大批量工作流_1983749663184592898.json, 平台全量/seedvr2图片高清去rh水印高清放大批量图片打包zip批量高清处理去rh水印工作流_2011773260723134465.json]
+members: [视频生成/图生视频/YouchuanImageToVideo_2038489173111349250.json, 视频生成/图生视频/悠船 图生视频_2080579297277992961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1698
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/去水印+高清放大批量工作流_1983749663184592898.json、平台全量/seedvr2图片高清去rh水印高清放大批量图片打包zip批量高清处理去rh水印工作流_2011773260723134465.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/YouchuanImageToVideo_2038489173111349250.json、视频生成/图生视频/悠船 图生视频_2080579297277992961.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BitwiseAndMask`
-- `CR Text`
-- `Display Any (rgthree)`
-- `GroundingDinoModelLoader (segment anything)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `ImageBatchGet`
-- `ImageBorder`
-- `ImageScale`
-- `ImageToMask`
-- `LayerUtility: LaMa`
 - `LoadImage`
-- `MaskFromColor+`
-- `MaskToImage`
-- `Masks Combine Regions`
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
-- `RH_LLMAPI_NODE`
-- `SAMModelLoader (segment anything)`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `VHS_DuplicateMasks`
-- `easy cleanGpuUsed`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy imageSize`
-- `easy int`
-- `easy showAnything`
-- `ttN concat`
+- `RH_YouchuanImageToVideo`
+- `SaveVideo`
 
 ## 典型参数
 

@@ -3,45 +3,34 @@ name: unknown_workflow_generic_1566
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.796
-common_nodes: [CR Integer To String, CR Text, FluxKontextImageScale, FluxResolutionNode, GetImageSize+, ImageConcanate, Int, JoinStrings, LoadImage, PreviewImage, RH_ComfyFluxKontext, RH_LLMAPI_NODE, RH_Translator, SaveImage, easy compare, easy ifElse]
+coverage: 0.9165
+common_nodes: [LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext Pro_Max单图模式_1949739835357618178.json, 图片生成/图生图/Flux Kontext Pro_Max双图模式_1949765475255410689.json]
+members: [图片生成/图生图/美团Longcat 图片修改  物体一致_2000799376035508225.json, 图片生成/图生图/美团Longcat-image-edit图片编辑_1998997397575491586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1566
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux Kontext Pro_Max单图模式_1949739835357618178.json、图片生成/图生图/Flux Kontext Pro_Max双图模式_1949765475255410689.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/美团Longcat 图片修改  物体一致_2000799376035508225.json、图片生成/图生图/美团Longcat-image-edit图片编辑_1998997397575491586.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Integer To String`
-- `CR Text`
-- `FluxKontextImageScale`
-- `FluxResolutionNode`
-- `GetImageSize+`
-- `ImageConcanate`
-- `Int`
-- `JoinStrings`
 - `LoadImage`
-- `PreviewImage`
-- `RH_ComfyFluxKontext`
-- `RH_LLMAPI_NODE`
-- `RH_Translator`
+- `LongCatImageEdit`
+- `LongCatImageModelLoader`
 - `SaveImage`
-- `easy compare`
-- `easy ifElse`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Display Any (rgthree)` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

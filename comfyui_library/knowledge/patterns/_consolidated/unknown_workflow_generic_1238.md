@@ -1,33 +1,36 @@
 ---
 name: unknown_workflow_generic_1238
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.889
-common_nodes: [RH_SeedreamV45TextToImage, SaveImage]
+frequency: 2
+level: weak
+coverage: 0.845
+common_nodes: [BatchImagesNode, KlingOmniProEditVideoNode, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/03豆包_SeedreamV4.5_文生图+全节点注释_2058541001270185986.json, 图片生成/文生图/2031456151346356226.json, 图片生成/文生图/SeedreamV45_TextToImage_v4.5_2034593612121509889.json]
+members: [comfyui-workflow-templates-json/api_kling_o3_video_edit.json, comfyui-workflow-templates-json/api_kling_omni_edit_video.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1238
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/03豆包_SeedreamV4.5_文生图+全节点注释_2058541001270185986.json、图片生成/文生图/2031456151346356226.json、图片生成/文生图/SeedreamV45_TextToImage_v4.5_2034593612121509889.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_kling_o3_video_edit.json、comfyui-workflow-templates-json/api_kling_omni_edit_video.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_SeedreamV45TextToImage`
-- `SaveImage`
+全部 2 个 workflow 都包含：
+- `BatchImagesNode`
+- `KlingOmniProEditVideoNode`
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/3 个有
+- `Video Slice` —— 1/2 个有
 
 ## 典型参数
 
@@ -39,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

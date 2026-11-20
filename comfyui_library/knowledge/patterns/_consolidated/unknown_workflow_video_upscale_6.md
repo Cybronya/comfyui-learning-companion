@@ -1,32 +1,31 @@
 ---
 name: unknown_workflow_video_upscale_6
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.714
-common_nodes: [PrimitiveInt, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, VOSR2ModelLoader, VOSR2Upscale]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, VOSR2ModelLoader, VOSR2Upscale]
 problems: []
 missing: []
-members: [平台全量/VOSR2.0视频高清放大_2097183632657043458.json, 平台全量/VOSR2.0视频高清放大_2097191385798631425.json, 平台全量/VOSR2.0视频高清放大_2097192299393536001.json, 平台全量/VOSR2.0视频高清放大_2097194282020073474.json, 平台全量/VOSR2.0视频高清放大_2097196241435324418.json, 平台全量/VOSR2.0视频高清放大_2097199805620641794.json, 平台全量/VOSR2.0视频高清放大_2097202090635513858.json]
+members: [图片生成/文生图/VOSR2超分放大_2098210361257320450.json, 视频生成/图生视频/VOSR2超分放大_2102791853279113217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_6
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/VOSR2.0视频高清放大_2097183632657043458.json、平台全量/VOSR2.0视频高清放大_2097191385798631425.json、平台全量/VOSR2.0视频高清放大_2097192299393536001.json、平台全量/VOSR2.0视频高清放大_2097194282020073474.json、平台全量/VOSR2.0视频高清放大_2097196241435324418.json…）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/VOSR2超分放大_2098210361257320450.json、视频生成/图生视频/VOSR2超分放大_2102791853279113217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `PrimitiveInt`
+全部 2 个 workflow 都包含：
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
+- `VHS_VideoInfoLoaded`
 - `VOSR2ModelLoader`
 - `VOSR2Upscale`
 
@@ -40,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [RH_RhartImageG2TextToImage, SaveImage, Text]
+common_nodes: [CR Prompt Text, RH_RhartVideoSparkvideo20TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/洗稿_2058734103784153089.json, 图片生成/文生图/RH 全能图片G-2.0-文生图-低价渠道版_2068881078068269058.json]
+members: [视频生成/文生视频/地表最强超能视频2.0_文生视频_2037432892325896193.json, 视频生成/文生视频/地表最强超能视频2.0文生视频工作流_2037483817732153345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1766
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/洗稿_2058734103784153089.json、图片生成/文生图/RH 全能图片G-2.0-文生图-低价渠道版_2068881078068269058.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/地表最强超能视频2.0_文生视频_2037432892325896193.json、视频生成/文生视频/地表最强超能视频2.0文生视频工作流_2037483817732153345.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,9 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-- `Text`
-
-**可变部分**（部分 workflow 才有）：
-- `JWStringConcat` —— 1/2 个有
-- `RHSettingsNode` —— 1/2 个有
+- `CR Prompt Text`
+- `RH_RhartVideoSparkvideo20TextToVideo`
+- `SaveVideo`
 
 ## 典型参数
 

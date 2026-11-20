@@ -3,32 +3,33 @@ name: unknown_workflow_generic_1790
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.714
-common_nodes: [CR Image Grid Panel, ExtractStoryboards_xuhuan1024, ImageListToBatch+, SaveImage, VHS_LoadVideo, easy showAnything]
+coverage: 0.9
+common_nodes: [LoadAudio, RH_FireRedAudioEdit, RH_FireRedAudioLoader, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/视频分镜关键帧分割和提取_2015109665272631297.json, 平台全量/视频分镜关键帧分割和提取_2000015536161423361.json]
+members: [音频生成/音频生成/FireRed声学编辑-音高语速调整工作流_2094342675284717570.json, 音频生成/音频生成/FireRed语义编辑-AI改写音频工作流_2094342618711941121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1790
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/视频分镜关键帧分割和提取_2015109665272631297.json、平台全量/视频分镜关键帧分割和提取_2000015536161423361.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/FireRed声学编辑-音高语速调整工作流_2094342675284717570.json、音频生成/音频生成/FireRed语义编辑-AI改写音频工作流_2094342618711941121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Image Grid Panel`
-- `ExtractStoryboards_xuhuan1024`
-- `ImageListToBatch+`
-- `SaveImage`
-- `VHS_LoadVideo`
-- `easy showAnything`
+- `LoadAudio`
+- `RH_FireRedAudioEdit`
+- `RH_FireRedAudioLoader`
+- `SaveAudioMP3`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

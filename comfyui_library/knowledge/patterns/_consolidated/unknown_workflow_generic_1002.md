@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_1002
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+common_nodes: [LoadImage, RMBG, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json, 视频生成/图生视频/Seedance2.0 图生视频_2034437907250941954.json, 视频生成/图生视频/全能视频S 图生视频 多并发_2005488750375436290.json, 视频生成/图生视频/动漫短剧文生视频-完美版_2005624902294142978.json]
+members: [图片生成/图生图/产品快速抠图工作流_2112016536545357825.json, 图片生成/图生图/扣角色_1945729607377047553.json, 图片生成/图生图/抠出主体_2103388321719345153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1002
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json、视频生成/图生视频/Seedance2.0 图生视频_2034437907250941954.json、视频生成/图生视频/全能视频S 图生视频 多并发_2005488750375436290.json、视频生成/图生视频/动漫短剧文生视频-完美版_2005624902294142978.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品快速抠图工作流_2112016536545357825.json、图片生成/图生图/扣角色_1945729607377047553.json、图片生成/图生图/抠出主体_2103388321719345153.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RMBG`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 3/4 个有
-- `RH_CinematicVideoGenerator` —— 2/4 个有
-- `RH_Sora2_I2V_Batch` —— 2/4 个有
-- `RH_Veo3_I2V_Batch` —— 1/4 个有
+- `MaskToImage` —— 1/3 个有
+- `SaveImageAdvanced` —— 1/3 个有
 
 ## 典型参数
 

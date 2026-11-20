@@ -3,39 +3,31 @@ name: unknown_workflow_generic_1643
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7905
-common_nodes: [ArgosTranslateTextNode, Image Comparer (rgthree), LayerMask: SegmentAnythingUltra V2, LayerUtility: ColorPicker, LayerUtility: ImageCombineAlpha, LayerUtility: ImageRemoveAlpha, LoadImage, SaveImage]
+coverage: 0.818
+common_nodes: [AILab_QwenVL, CR Text, CR Text Concatenate, QWEN_TextDisplay, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/【商用】服装一键抠图_1926590900036866049.json, 平台全量/SegmentAnything 指定物体抠图_1920319941298556930.json]
+members: [图片生成/文生图/提示词润色工作流_2100519921724780546.json, 图片生成/文生图/提示词润色工作流｜简单描述自动润色绝佳提示词_2100846135970713601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1643
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【商用】服装一键抠图_1926590900036866049.json、平台全量/SegmentAnything 指定物体抠图_1920319941298556930.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/提示词润色工作流_2100519921724780546.json、图片生成/文生图/提示词润色工作流｜简单描述自动润色绝佳提示词_2100846135970713601.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ArgosTranslateTextNode`
-- `Image Comparer (rgthree)`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LayerUtility: ColorPicker`
-- `LayerUtility: ImageCombineAlpha`
-- `LayerUtility: ImageRemoveAlpha`
-- `LoadImage`
+- `AILab_QwenVL`
+- `CR Text`
+- `CR Text Concatenate`
+- `QWEN_TextDisplay`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `easy imageInterrogator` —— 1/2 个有
 
 ## 典型参数
 

@@ -39,7 +39,7 @@ Other
 
 常见取值：
 
-- `["", "relax mode", "", "REDACTED0000000000000000000000000000000000000000000", "3:4", "v 7", false, false, 966336083, "ra`（1 次）
+- `["", "relax mode", "", "sk-sLUhG5HyS6eqobKqNhOtbdW5rjcRh2yUyTwvPIlNTqIced4A", "3:4", "v 7", false, false, 966336083, "ra`（1 次）
 
 ## 可信度
 

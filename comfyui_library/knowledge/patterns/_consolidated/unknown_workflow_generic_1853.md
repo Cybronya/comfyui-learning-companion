@@ -3,29 +3,32 @@ name: unknown_workflow_generic_1853
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_SeedreamV5ProTextToImage, SaveImage, Text]
+coverage: 0.75
+common_nodes: [PreviewAudio, VHS_LoadVideo, WhisperSTT, WhisperTurboRun, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json, 图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json]
+members: [音频生成/音频生成/whisper视频音频提取字幕-hypit词级对齐_2103000779522142209.json, 音频生成/音频生成/whisper视频音频提取字幕_2015231272511082498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1853
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json、图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/whisper视频音频提取字幕-hypit词级对齐_2103000779522142209.json、音频生成/音频生成/whisper视频音频提取字幕_2015231272511082498.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_SeedreamV5ProTextToImage`
-- `SaveImage`
-- `Text`
+- `PreviewAudio`
+- `VHS_LoadVideo`
+- `WhisperSTT`
+- `WhisperTurboRun`
+- `easy saveText`
+- `easy showAnything`
 
 ## 典型参数
 

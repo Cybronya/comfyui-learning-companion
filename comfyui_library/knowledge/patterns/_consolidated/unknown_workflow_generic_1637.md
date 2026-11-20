@@ -3,33 +3,31 @@ name: unknown_workflow_generic_1637
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9215
-common_nodes: [AILab_QwenVL, CR Text Concatenate, LayerUtility: TextJoin, LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
+coverage: 1
+common_nodes: [Label (rgthree), LoadImage, RH_SeedreamV5LiteImageToImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/xiaochengxufengmian2_2098337796535705601.json, 图片生成/图生图/xiaochengxufengmian_2097996522347655169.json]
+members: [图片生成/文生图/图像编辑 Seedream 5.0 Pro_2075496762244165634.json, 图片生成/文生图/图像编辑 Seedream V5 Lite（图生图）_2075564369907380225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1637
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/xiaochengxufengmian2_2098337796535705601.json、图片生成/图生图/xiaochengxufengmian_2097996522347655169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/图像编辑 Seedream 5.0 Pro_2075496762244165634.json、图片生成/文生图/图像编辑 Seedream V5 Lite（图生图）_2075564369907380225.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CR Text Concatenate`
-- `LayerUtility: TextJoin`
+- `Label (rgthree)`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
+- `RH_SeedreamV5LiteImageToImage`
+- `RH_SeedreamV5ProImageToImage`
 - `SaveImage`
-- `Text`
 
 ## 典型参数
 

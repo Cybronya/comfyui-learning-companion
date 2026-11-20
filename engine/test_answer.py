@@ -14,7 +14,7 @@ r"""
 import sys
 import json
 from pathlib import Path
-from tempfile import TemporaryDirectory
+from engine.tmp_workspace import TemporaryDirectory
 
 project_root = Path(__file__).parent.parent
 if str(project_root) not in sys.path:

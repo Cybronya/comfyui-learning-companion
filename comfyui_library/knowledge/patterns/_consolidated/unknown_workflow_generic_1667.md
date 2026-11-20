@@ -3,38 +3,33 @@ name: unknown_workflow_generic_1667
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.806
-common_nodes: [CR Text, Fast Groups Muter (rgthree), LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage, ShowText|pysssss, easy promptConcat]
+coverage: 0.675
+common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-2 场景资产卡生成_2064207992073056258.json, 图片生成/文生图/全能图片G-全家桶 短剧角色卡生成_2055978530139328514.json]
+members: [数字人/数字人/情绪角色配音-自用已跑通_2093602790840029185.json, 音频生成/音频生成/心然·寻源-IndexTTS2音色克隆_2047710017704431618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1667
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G-2 场景资产卡生成_2064207992073056258.json、图片生成/文生图/全能图片G-全家桶 短剧角色卡生成_2055978530139328514.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/情绪角色配音-自用已跑通_2093602790840029185.json、音频生成/音频生成/心然·寻源-IndexTTS2音色克隆_2047710017704431618.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Muter (rgthree)`
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-- `ShowText|pysssss`
-- `easy promptConcat`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudioAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `AudioCrop` —— 1/2 个有
 
 ## 典型参数
 

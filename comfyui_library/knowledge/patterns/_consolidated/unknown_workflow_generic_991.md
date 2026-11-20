@@ -1,40 +1,31 @@
 ---
 name: unknown_workflow_generic_991
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.92375
-common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 1
+common_nodes: [RHUploadZip_V2, SaveImage, SeedVR2]
 problems: []
 missing: []
-members: [数字人/数字人/TTS2声音克隆，语音模仿，可以调情绪【大熊】_1968892195413610497.json, 音频生成/音频生成/TTS2声音克隆_1981924852229652481.json, 音频生成/音频生成/声音模仿，TTS2，数字人声音生成_1966648412252909570.json, 音频生成/音频生成/超自然声音克隆（根叔）_1977239597547704322.json]
+members: [图片生成/图生图/zip批量放大-SeedVR2工作流_2094968735055564801.json, 图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096503819977977857.json, 图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096810280884981762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_991
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/TTS2声音克隆，语音模仿，可以调情绪【大熊】_1968892195413610497.json、音频生成/音频生成/TTS2声音克隆_1981924852229652481.json、音频生成/音频生成/声音模仿，TTS2，数字人声音生成_1966648412252909570.json、音频生成/音频生成/超自然声音克隆（根叔）_1977239597547704322.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/zip批量放大-SeedVR2工作流_2094968735055564801.json、图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096503819977977857.json、图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096810280884981762.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `GetVideoComponents` —— 3/4 个有
-- `Note _O` —— 3/4 个有
-- `PreviewAudio` —— 3/4 个有
-- `LoadVideo` —— 2/4 个有
-- `SaveAudioAdvanced` —— 1/4 个有
+全部 3 个 workflow 都包含：
+- `RHUploadZip_V2`
+- `SaveImage`
+- `SeedVR2`
 
 ## 典型参数
 

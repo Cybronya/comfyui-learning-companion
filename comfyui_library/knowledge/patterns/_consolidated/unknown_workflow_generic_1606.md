@@ -3,40 +3,32 @@ name: unknown_workflow_generic_1606
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.902
-common_nodes: [ImageConcatMulti, ImageRemoveBackground+, JWImageResizeByLongerSide, LayerMask: SegmentAnythingUltra V2, LoadImage, MaskPreview+, PreviewImage, ReLight, RemBGSession+, SaveImage, Switch any [Crystools]]
+coverage: 1
+common_nodes: [RH_RhartImageNG31FlashTextToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/Relight超自然多圈层精细微调图片3D实时快速打光V1_1918497741616381954.json, 图片生成/图生图/电影级高级光源控制 ｜RELIGHT 多层控制_1918516387831021569.json]
+members: [图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json, 图片生成/文生图/分镜图生成_2046068941402939394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1606
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Relight超自然多圈层精细微调图片3D实时快速打光V1_1918497741616381954.json、图片生成/图生图/电影级高级光源控制 ｜RELIGHT 多层控制_1918516387831021569.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json、图片生成/文生图/分镜图生成_2046068941402939394.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageConcatMulti`
-- `ImageRemoveBackground+`
-- `JWImageResizeByLongerSide`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LoadImage`
-- `MaskPreview+`
-- `PreviewImage`
-- `ReLight`
-- `RemBGSession+`
+- `RH_RhartImageNG31FlashTextToImage`
 - `SaveImage`
-- `Switch any [Crystools]`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/2 个有
+- `RHSettingsNode` —— 1/2 个有
 
 ## 典型参数
 

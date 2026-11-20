@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_1285
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 1
-common_nodes: [FlashVSRNode, LoadImage, SaveImage]
+frequency: 2
+level: weak
+coverage: 0.6
+common_nodes: [CLIPLoader, GetVideoComponents, LoadVideo, SaveImage, ShowText|pysssss, TextGenerate, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/Flash VSR-图片高清-图片放大-速度快效果好_2048704630007275521.json, 平台全量/FlashVR2 图像高清放大_1988596775688781826.json, 平台全量/FlashVSR 图片高清放大 保持人物一致性 满血版&速度平衡版_2034166458661474306.json]
+members: [图片生成/反推提示词/Gemma4 FT_2098902714246852609.json, 图片生成/反推提示词/Gemma4 视频 FT_2111444664237776898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1285
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Flash VSR-图片高清-图片放大-速度快效果好_2048704630007275521.json、平台全量/FlashVR2 图像高清放大_1988596775688781826.json、平台全量/FlashVSR 图片高清放大 保持人物一致性 满血版&速度平衡版_2034166458661474306.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Gemma4 FT_2098902714246852609.json、图片生成/反推提示词/Gemma4 视频 FT_2111444664237776898.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `FlashVSRNode`
-- `LoadImage`
+全部 2 个 workflow 都包含：
+- `CLIPLoader`
+- `GetVideoComponents`
+- `LoadVideo`
 - `SaveImage`
+- `ShowText|pysssss`
+- `TextGenerate`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/3 个有
-- `CustomAddLabel` —— 1/3 个有
+- `LoadImage` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 
@@ -41,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

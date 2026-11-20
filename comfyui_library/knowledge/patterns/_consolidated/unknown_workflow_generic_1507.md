@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1507
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, LoadImage, SaveImage]
+coverage: 0.922
+common_nodes: [LoadImage, PreviewImage, SaveImage, easy imageConcat]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Florence2反推模型_1910292359735668738.json, 图片生成/图生图/tonnie-florence2反推_1993304438395912194.json]
+members: [图片生成/图生图/多图拼接_1992877878245388289.json, 图片生成/图生图/拼图工作流（2×4、5×2）_2112550774663368706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1507
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Florence2反推模型_1910292359735668738.json、图片生成/图生图/tonnie-florence2反推_1993304438395912194.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/多图拼接_1992877878245388289.json、图片生成/图生图/拼图工作流（2×4、5×2）_2112550774663368706.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LayerMask: LoadFlorence2Model`
-- `LayerUtility: Florence2Image2Prompt`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
+- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `Display Any (rgthree)` —— 1/2 个有
-- `TextPreview` —— 1/2 个有
+- `Image Batch` —— 1/2 个有
+- `YuanImageGridComposite` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,41 +1,33 @@
 ---
 name: unknown_workflow_generic_1232
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.898333
-common_nodes: [CR Prompt List, CR Text, CR Text Replace, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [GeminiNanoBanana2V2, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/随机裂变 _ 景别、视角、姿态 _  全能图片V1 2_1945324800808243202.json, 平台全量/全能图片v1 2 模特套图裂变 高一致性多姿生成  全能图片V12.0 +高清放大 随机裂_2004718215680978946.json, 平台全量/随机裂变 _ 景别、视角、姿态 _ Seedream 4.5_1943383737818378241.json]
+members: [comfyui-workflow-templates-json/api_google_nano_banana2_image_edit.json, comfyui-workflow-templates-json/api_google_nano_banana2_text_to_image.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1232
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/随机裂变 _ 景别、视角、姿态 _  全能图片V1 2_1945324800808243202.json、平台全量/全能图片v1 2 模特套图裂变 高一致性多姿生成  全能图片V12.0 +高清放大 随机裂_2004718215680978946.json、平台全量/随机裂变 _ 景别、视角、姿态 _ Seedream 4.5_1943383737818378241.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_nano_banana2_image_edit.json、comfyui-workflow-templates-json/api_google_nano_banana2_text_to_image.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt List`
-- `CR Text`
-- `CR Text Replace`
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
+全部 2 个 workflow 都包含：
+- `GeminiNanoBanana2V2`
 - `SaveImage`
-- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `ConstrainImage|pysssss` —— 1/3 个有
-- `RH_Jimeng4_Image2Image` —— 1/3 个有
-- `easy promptConcat` —— 1/3 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 
@@ -47,4 +39,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

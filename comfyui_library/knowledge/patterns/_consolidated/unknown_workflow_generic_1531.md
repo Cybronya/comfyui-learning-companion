@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1531
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9285
-common_nodes: [LoadImage, SaveImage, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/反推提示词/▶千问Qwen3.5-提示词反推_2059196803807006722.json, 图片生成/反推提示词/千问3.5 LLAMA本地推理，FT_2111584531978477570.json]
+members: [图片生成/图生图/拆解_2061750263232425985.json, 图片生成/图生图/最新G image2  图生图官方全量稳定版 V1.0_2058466590206816257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1531
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/▶千问Qwen3.5-提示词反推_2059196803807006722.json、图片生成/反推提示词/千问3.5 LLAMA本地推理，FT_2111584531978477570.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/拆解_2061750263232425985.json、图片生成/图生图/最新G image2  图生图官方全量稳定版 V1.0_2058466590206816257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
+- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `ShowText|fofo` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `easy promptConcat` —— 1/2 个有
 
 ## 典型参数
 

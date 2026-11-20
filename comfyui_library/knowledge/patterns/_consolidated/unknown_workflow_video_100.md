@@ -1,49 +1,35 @@
 ---
 name: unknown_workflow_video_100
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.7445
-common_nodes: [AddLabel, CoordinatePlotter, ImageConcanate, ImageConcatMulti, ImageFromBatch, PointsEditor, PreviewImage, PrimitiveInt, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [RIFE VFI, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/SecNode_动态遮罩_1978516734611181570.json, 平台全量/SecNodes+Sam2丝滑稳定视频遮罩V2_1976911209616347138.json, 平台全量/comfyUI-sec-workflow_1977998184624652289.json, 视频生成/文生视频/SecNodes视频遮罩提取_1977650345428045825.json]
+members: [数字人/数字人/高效好用的视频放大工作流_1951861195303276546.json, 视频生成/图生视频/（2倍补帧）16帧到32帧_1978659630287048706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_100
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/SecNode_动态遮罩_1978516734611181570.json、平台全量/SecNodes+Sam2丝滑稳定视频遮罩V2_1976911209616347138.json、平台全量/comfyUI-sec-workflow_1977998184624652289.json、视频生成/文生视频/SecNodes视频遮罩提取_1977650345428045825.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/高效好用的视频放大工作流_1951861195303276546.json、视频生成/图生视频/（2倍补帧）16帧到32帧_1978659630287048706.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AddLabel`
-- `CoordinatePlotter`
-- `ImageConcanate`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `PointsEditor`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
+全部 2 个 workflow 都包含：
+- `RIFE VFI`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawMaskOnImage` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `DownloadAndLoadSAM2Model` —— 1/4 个有
-- `ImageAndMaskPreview_UTK` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `Sam2Segmentation` —— 1/4 个有
+- `UpscaleImageByUsingModel` —— 1/2 个有
+- `UpscaleModelLoader` —— 1/2 个有
 
 ## 典型参数
 
@@ -55,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

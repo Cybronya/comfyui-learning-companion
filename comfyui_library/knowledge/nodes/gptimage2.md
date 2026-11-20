@@ -39,8 +39,8 @@ Image Processing
 
 常见取值：
 
-- `["https://img-cn.65535.space", "REDACTED00000000000000000000000000000000000000000000000000000000000", "给女孩带上眼镜，", 300, "`（4 次）
-- `["https://api.xstx.info", "REDACTED0000000000000000000000000000000000000000000", "给女孩带上眼镜，", 300, "auto", "auto", "png"]`（4 次）
+- `["https://img-cn.65535.space", "sk-5c5ae61a2ba9ca6c63d1c0c3bb80feff0a13d986ce996623d5193299b9d93351", "给女孩带上眼镜，", 300, "`（4 次）
+- `["https://api.xstx.info", "sk-cpVzCf8MRJ3doiJUBOaHvOV3tPeWYfayUV91IEgkijpgCcEN", "给女孩带上眼镜，", 300, "auto", "auto", "png"]`（4 次）
 
 ## 可信度
 

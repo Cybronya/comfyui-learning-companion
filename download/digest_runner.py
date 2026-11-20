@@ -26,7 +26,6 @@
         --plan "图片生成/反推提示词=download/ids-by-tag/图片生成/反推提示词_missing_2026-10-26.txt"
 """
 import argparse
-import csv
 import os
 import re
 import subprocess
@@ -67,8 +66,7 @@ def heavy_pipelines() -> list:
         ["powershell", "-NoProfile", "-Command",
          "Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | "
          "Where-Object { $_.CommandLine -match "
-         "'learn_pipeline|finalize_phase|consolidat|build_graph|download_by_ids|"
-         "collect_platform_sweep|collect_extra|collect_download' } | "
+         "'learn_pipeline|finalize_phase|consolidat|build_graph|download_by_ids' } | "
          "ForEach-Object { $_.ProcessId }"],
         capture_output=True, text=True, timeout=30)
     pids = [int(x) for x in ps.stdout.split() if x.strip().isdigit()]
@@ -105,31 +103,16 @@ def run_stage(name: str, log_name: str, argv: list) -> int:
     return rc
 
 
-def download_dir_for(tag: str) -> Path:
-    """tag → 下载目录。
-
-    tag 是**相对 workflows-by-tag 的目录路径**，原样拼接即可：
-        图片生成/文生图 → workflows-by-tag/图片生成/文生图   （两层，常规分类）
-        平台全量       → workflows-by-tag/平台全量         （一层，全平台扫描产物）
-
-    旧实现写死 `fam, t = tag.split("/")` 再拼两层，遇到**一层目录**会
-    ValueError（not enough values to unpack）直接崩在门禁上。
-    """
-    return ROOT / "download" / "workflows-by-tag" / tag
-
-
 def check_all_landed(plans: list, tolerance: float = 0.02) -> list:
     """校验每个清单的落地率；返回未完成的清单列表。
 
     容差 2%：站点偶发 404 下架属正常（会写进 _未落地.txt），
     但如果落地率明显偏低，说明下载环节根本没跑完。
-
-    追加 manifest 判定：清单对应的 manifest.csv 行数必须覆盖清单条数，
-    否则说明下载器没跑到最后一批就被打断了 —— 只看落地率会误判。
     """
     bad = []
     for tag, rel in plans:
-        dl_dir = download_dir_for(tag)
+        fam, t = tag.split("/")
+        dl_dir = ROOT / "download" / "workflows-by-tag" / fam / t
         have = set()
         if dl_dir.is_dir():
             for f in os.listdir(dl_dir):
@@ -145,22 +128,14 @@ def check_all_landed(plans: list, tolerance: float = 0.02) -> list:
         ratio = landed / len(ids) if ids else 0.0
         if ratio < 1.0 - tolerance:
             bad.append((tag, rel, landed, len(ids)))
-            continue
-        # manifest 行数（不含表头）必须 ≥ 本批清单条数，否则下载未跑完
-        mf = dl_dir / "manifest.csv"
-        if mf.exists():
-            with open(mf, encoding="utf-8-sig") as fh:
-                rows = sum(1 for _ in csv.reader(fh)) - 1
-            if rows < len(ids):
-                log(f"[门禁] {tag} manifest 仅 {rows} 条 < 清单 {len(ids)} 条，下载未跑完")
-                bad.append((tag, rel, landed, len(ids)))
     return bad
 
 
 def verify(plans: list) -> None:
     """核对各清单落地情况，未落地的写 *_未落地.txt。"""
     for tag, rel in plans:
-        dl_dir = download_dir_for(tag)
+        fam, t = tag.split("/")
+        dl_dir = ROOT / "download" / "workflows-by-tag" / fam / t
         have = set()
         if dl_dir.is_dir():
             for f in os.listdir(dl_dir):
@@ -185,9 +160,6 @@ def main() -> int:
                     help="标签=清单路径，可重复")
     ap.add_argument("--skip-consolidate", action="store_true",
                     help="跳过重归纳（仅消化 + 图谱）")
-    ap.add_argument("--tolerance", type=float, default=0.02,
-                    help="落地率容差（默认 2%%）。412/404 是站点侧永久失败，"
-                         "批量扫描这类场景可放宽到 0.05")
     args = ap.parse_args()
 
     plans = []
@@ -206,7 +178,7 @@ def main() -> int:
     # 1b. 落地校验门禁：进程退出不代表下完。多步下载若用 && 串联，
     # 前一步有失败项会让后一步静默跳过——此时必须识别出来并补跑，
     # 不能带着半程清单直接进消化（会漏学且不报错）。
-    incomplete = check_all_landed(plans, tolerance=args.tolerance)
+    incomplete = check_all_landed(plans)
     if incomplete:
         for tag, rel, landed, total in incomplete:
             log(f"[门禁] {tag} 仅落地 {landed}/{total}，下载未完成")

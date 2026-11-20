@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_1296
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.704667
-common_nodes: [LoadImage, LoadVideo, RH_DLSS5Enhance, SaveImage, SaveVideo]
+frequency: 2
+level: weak
+coverage: 0.6905
+common_nodes: [PreviewAny, RHUploadPdf, RunningHub DeepSeekOCR Infer(Pdf), SaveImage, easy saveText]
 problems: []
 missing: []
-members: [平台全量/RH DLSS5 Enhance（降噪 _ 超分增强）_2097966301909180418.json, 平台全量/RH DLSS5 Enhance（降噪 _ 超分增强）_2098312836412952578.json, 数字人/数字人/DLSS5 视频&图片超分 DLSS5 Video & Image Super Resolution_2098215518149898241.json]
+members: [图片生成/反推提示词/PDF+DeepSeekOCR V1_1998839826889760769.json, 视频生成/图生视频/PDF上传+DeepSeekOCR 在线识别_1998752851130208257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1296
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/RH DLSS5 Enhance（降噪 _ 超分增强）_2097966301909180418.json、平台全量/RH DLSS5 Enhance（降噪 _ 超分增强）_2098312836412952578.json、数字人/数字人/DLSS5 视频&图片超分 DLSS5 Video & Image Super Resolution_2098215518149898241.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/PDF+DeepSeekOCR V1_1998839826889760769.json、视频生成/图生视频/PDF上传+DeepSeekOCR 在线识别_1998752851130208257.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `LoadVideo`
-- `RH_DLSS5Enhance`
+全部 2 个 workflow 都包含：
+- `PreviewAny`
+- `RHUploadPdf`
+- `RunningHub DeepSeekOCR Infer(Pdf)`
 - `SaveImage`
-- `SaveVideo`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_DLSS5FrameInterpolation` —— 2/3 个有
-- `孤海注释` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
+- `LoadImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 
@@ -44,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

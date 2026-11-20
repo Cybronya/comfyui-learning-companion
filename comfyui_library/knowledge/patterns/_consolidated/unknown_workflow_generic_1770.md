@@ -3,34 +3,32 @@ name: unknown_workflow_generic_1770
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.65
-common_nodes: [LoadImage, PreviewImage, SaveImage, easy imageRemBg]
+coverage: 0.5835
+common_nodes: [LoadImage, RH_RhartAudioSunoV55Single, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/生图-图生成白底图-RMBG-2.0_2000595975032930305.json, 图片生成/图生图/电商修图之一键去背景_2047286262729543682.json]
+members: [音频生成/音频生成/01_快乐治愈_SunoV5.5Single+全节点注释_2058869686774878209.json, 音频生成/音频生成/RH Suno_Single_1972958729199030273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1770
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/生图-图生成白底图-RMBG-2.0_2000595975032930305.json、图片生成/图生图/电商修图之一键去背景_2047286262729543682.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/01_快乐治愈_SunoV5.5Single+全节点注释_2058869686774878209.json、音频生成/音频生成/RH Suno_Single_1972958729199030273.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-- `easy imageRemBg`
+- `RH_RhartAudioSunoV55Single`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 1/2 个有
-- `MaskPreview` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

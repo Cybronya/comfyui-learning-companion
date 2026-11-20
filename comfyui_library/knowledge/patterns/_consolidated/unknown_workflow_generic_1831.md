@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1831
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, Text]
+coverage: 1
+common_nodes: [CR Text, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/image2 网红破屏 3D 提示词生成器+全节点注释_2056695584635047938.json, 图片生成/文生图/全能图片 pro网红破屏 3D 提示词生成器+全节点注释_2056690837379182594.json]
+members: [音频生成/音频生成/Spark TTS_2081270765382619137.json, 音频生成/音频生成/声音克隆-IndexTTS1.5_2008546817318854658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1831
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/image2 网红破屏 3D 提示词生成器+全节点注释_2056695584635047938.json、图片生成/文生图/全能图片 pro网红破屏 3D 提示词生成器+全节点注释_2056690837379182594.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Spark TTS_2081270765382619137.json、音频生成/音频生成/声音克隆-IndexTTS1.5_2008546817318854658.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `Text`
+- `CR Text`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
-- `RH_RhartImageNProTextToImage` —— 1/2 个有
+- `IndexTTSRun` —— 1/2 个有
+- `SparkTTSClone` —— 1/2 个有
 
 ## 典型参数
 

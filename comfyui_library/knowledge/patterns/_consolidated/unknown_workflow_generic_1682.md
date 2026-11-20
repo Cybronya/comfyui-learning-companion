@@ -3,34 +3,29 @@ name: unknown_workflow_generic_1682
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.714
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, RH_KlingO1_StartToEnd, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V2-Lite 图生图｜低价渠道版_2093848420694970369.json, 图片生成/图生图/全能图片V2-Lite 图生图｜官方稳定版_2093852252271366145.json]
+members: [视频生成/图生视频/Kling_O1_StartToEnd_v1.0_2033795843916042241.json, 视频生成/图生视频/可灵 O1 Start-to-End_2027740927002943490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1682
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V2-Lite 图生图｜低价渠道版_2093848420694970369.json、图片生成/图生图/全能图片V2-Lite 图生图｜官方稳定版_2093852252271366145.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Kling_O1_StartToEnd_v1.0_2033795843916042241.json、视频生成/图生视频/可灵 O1 Start-to-End_2027740927002943490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartImageNG31FlashLiteImageToImage` —— 1/2 个有
-- `RH_RhartImageNG31FlashLiteOfficialImageToImage` —— 1/2 个有
+- `RH_KlingO1_StartToEnd`
+- `SaveVideo`
 
 ## 典型参数
 

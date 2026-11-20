@@ -11,7 +11,7 @@ Knowledge Evolution 模块测试
 
 import sys
 from pathlib import Path
-from tempfile import TemporaryDirectory
+from engine.tmp_workspace import TemporaryDirectory
 
 # 兼容从 engine/ 目录直接运行
 project_root = Path(__file__).parent.parent

@@ -3,36 +3,34 @@ name: unknown_workflow_generic_1684
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [CR Text, Int, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.7665
+common_nodes: [JjkText, LoadImage, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片plus_2041476418479071234.json, 平台全量/电商模特无限特裂变-姿势裂变+视角裂变+场景裂变_2043530961954017282.json]
+members: [视频生成/图生视频/MiniMax H3-地图旅游_2084246353793871874.json, 视频生成/图生视频/电商产品服装展示 多模态 minimax H3_2080142968727625730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1684
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片plus_2041476418479071234.json、平台全量/电商模特无限特裂变-姿势裂变+视角裂变+场景裂变_2043530961954017282.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3-地图旅游_2084246353793871874.json、视频生成/图生视频/电商产品服装展示 多模态 minimax H3_2080142968727625730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Int`
+- `JjkText`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+- `RH_MinimaxHailuoH3MultimodalToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner_Pro` —— 1/2 个有
-- `Repeater|pysssss` —— 1/2 个有
-- `easy imageSplitGrid` —— 1/2 个有
+- `LoadVideo` —— 1/2 个有
+- `RHLLMChatNode` —— 1/2 个有
 
 ## 典型参数
 

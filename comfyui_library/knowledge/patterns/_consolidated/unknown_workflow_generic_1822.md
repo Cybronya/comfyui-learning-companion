@@ -3,40 +3,34 @@ name: unknown_workflow_generic_1822
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [Bounded Image Crop, Bounded Image Crop with Mask, Get Image Size, ImageResize+, ImageToMask, LoadImage, RH_Translator, ResizeImageMixlab, SaveImage]
+coverage: 0.938
+common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, Fast Groups Bypasser (rgthree), Label (rgthree), LoadAudio, SaveAudioMP3, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/PS专供版_1977997691026296833.json, 图片生成/文生图/全能图像G官方低价集合渠道版本_2082280708223094785.json]
+members: [音频生成/音频生成/Qwen3-TTS语音设计与克隆_2015020168870633473.json, 音频生成/音频生成/🎭 Qwen3-TTS_2015015194291867650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1822
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/PS专供版_1977997691026296833.json、图片生成/文生图/全能图像G官方低价集合渠道版本_2082280708223094785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS语音设计与克隆_2015020168870633473.json、音频生成/音频生成/🎭 Qwen3-TTS_2015015194291867650.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bounded Image Crop`
-- `Bounded Image Crop with Mask`
-- `Get Image Size`
-- `ImageResize+`
-- `ImageToMask`
-- `LoadImage`
-- `RH_Translator`
-- `ResizeImageMixlab`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
-- `RH_RhartImageNProEdit` —— 1/2 个有
+- `FB_Qwen3TTSCustomVoice`
+- `FB_Qwen3TTSVoiceClone`
+- `FB_Qwen3TTSVoiceDesign`
+- `Fast Groups Bypasser (rgthree)`
+- `Label (rgthree)`
+- `LoadAudio`
+- `SaveAudioMP3`
+- `Text`
 
 ## 典型参数
 

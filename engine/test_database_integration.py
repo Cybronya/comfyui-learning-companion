@@ -18,7 +18,7 @@ database 集成测试 —— 三个引擎模块接入 WorkflowDatabase
 import json
 import sys
 from pathlib import Path
-from tempfile import TemporaryDirectory
+from engine.tmp_workspace import TemporaryDirectory
 
 project_root = Path(__file__).parent.parent
 if str(project_root) not in sys.path:

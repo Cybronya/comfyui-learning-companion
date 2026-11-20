@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1493
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4375
-common_nodes: [PrimitiveStringMultiline, SaveImage, StringConcatenate]
+coverage: 0.8165
+common_nodes: [Int, JjkText, RH_Jimeng_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/template_qwen_Image_2512_360_lora.json, 图片生成/文生图/krea2_turbo_t2i_int8_角色三视图_2076487283330600962.json]
+members: [图片生成/图生图/即梦AI-图生图_1956238387508379649.json, 图片生成/文生图/即梦AI-文生图_1956240320285560833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1493
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_qwen_Image_2512_360_lora.json、图片生成/文生图/krea2_turbo_t2i_int8_角色三视图_2076487283330600962.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦AI-图生图_1956238387508379649.json、图片生成/文生图/即梦AI-文生图_1956240320285560833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
+- `Int`
+- `JjkText`
+- `RH_Jimeng_Image2Image`
 - `SaveImage`
-- `StringConcatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `c3c58f7e-2004-43ae-8b06-a956294bf7f4` —— 1/2 个有
-- `workflow>krea2` —— 1/2 个有
+- `LoadImageFromUrl` —— 1/2 个有
 
 ## 典型参数
 

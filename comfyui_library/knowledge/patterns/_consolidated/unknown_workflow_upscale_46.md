@@ -1,42 +1,31 @@
 ---
 name: unknown_workflow_upscale_46
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.779
-common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageResize+, JjkText, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [LoadImage, RH_TopazlabsImageUpscaleHighFidelityV3, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1961237176921034753.json, 图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1964853890552315905.json, 平台全量/图片-最强全能图片V1一句话编辑+高清放大_1966839051913453569.json]
+members: [图片生成/图生图/画质修复工作流｜Topaz_低清老图一键修复增强_2099321949850791938.json, 图片生成/图生图/画质修复工作流｜Topaz_低清老图一键修复增强_2099666011086741505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_46
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1961237176921034753.json、图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1964853890552315905.json、平台全量/图片-最强全能图片V1一句话编辑+高清放大_1966839051913453569.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/画质修复工作流｜Topaz_低清老图一键修复增强_2099321949850791938.json、图片生成/图生图/画质修复工作流｜Topaz_低清老图一键修复增强_2099666011086741505.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `JjkText`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+全部 2 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana_Image2Image`
+- `RH_TopazlabsImageUpscaleHighFidelityV3`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `ConstrainImage|pysssss` —— 1/3 个有
-- `SUPIR_Upscale` —— 1/3 个有
 
 ## 典型参数
 
@@ -48,4 +37,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

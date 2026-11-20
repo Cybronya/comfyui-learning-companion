@@ -1,41 +1,34 @@
 ---
 name: unknown_workflow_video_upscale_11
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.9172
-common_nodes: [FaceRestoreCFWithModel, FaceRestoreModelLoader, ImageResize+, ImageUpscaleWithModel, LayerColor: Brightness & Contrast, LoadImage, ReActorFaceSwap, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.7145
+common_nodes: [LoadImage, ReActorFaceSwap, SUPIR_Upscale, SaveImage, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/快速换脸_1919744550246481921.json, 平台全量/视频换脸_1815327610992844802.json, 平台全量/视频换脸_1818285423667097602.json, 平台全量/视频换脸_1821411017007239170.json, 视频生成/图生视频/【视频流】Reactor视频换脸_1819030257314758658.json]
+members: [视频生成/图生视频/ReActor 视频换脸｜一键生成工作流_1914673923576004610.json, 视频生成/图生视频/视频换脸_高精度_1960645585621647362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_11
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/快速换脸_1919744550246481921.json、平台全量/视频换脸_1815327610992844802.json、平台全量/视频换脸_1818285423667097602.json、平台全量/视频换脸_1821411017007239170.json、视频生成/图生视频/【视频流】Reactor视频换脸_1819030257314758658.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/ReActor 视频换脸｜一键生成工作流_1914673923576004610.json、视频生成/图生视频/视频换脸_高精度_1960645585621647362.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `FaceRestoreCFWithModel`
-- `FaceRestoreModelLoader`
-- `ImageResize+`
-- `ImageUpscaleWithModel`
-- `LayerColor: Brightness & Contrast`
+全部 2 个 workflow 都包含：
 - `LoadImage`
 - `ReActorFaceSwap`
-- `UpscaleModelLoader`
+- `SUPIR_Upscale`
+- `SaveImage`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/5 个有
 
 ## 典型参数
 
@@ -47,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

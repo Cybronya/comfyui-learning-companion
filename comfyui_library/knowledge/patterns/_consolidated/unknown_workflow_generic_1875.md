@@ -3,45 +3,33 @@ name: unknown_workflow_generic_1875
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4585
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_gpt_image_2, Comfly_gpt_image_2_S2A, Fast Groups Muter (rgthree), GetNode, JjkText, LoadImage, PreviewAny, RHSettingsNode, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage, SetNode, easy showAnything]
+coverage: 0.8
+common_nodes: [Fast Groups Bypasser (rgthree), HeartMuLa_Generate, PreviewAny, RH_LLMAPI_Pro_Node, SaveAudio, ShowText, text_mul_Split]
 problems: []
 missing: []
-members: [图片生成/文生图/鸡皮提-G-image2【RH_贞贞节点】_2073281096026177536.json, 图片生成/文生图/鸡皮提-image2新增4K【贞贞节点】_2046774339177025537.json]
+members: [音频生成/音频生成/开源版SUNO-HeartMuLa_2015490868731453442.json, 音频生成/音频生成/开源版SUNO-HeartMuLa：一句话生成一首歌_2014987354955583489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1875
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/鸡皮提-G-image2【RH_贞贞节点】_2073281096026177536.json、图片生成/文生图/鸡皮提-image2新增4K【贞贞节点】_2046774339177025537.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/开源版SUNO-HeartMuLa_2015490868731453442.json、音频生成/音频生成/开源版SUNO-HeartMuLa：一句话生成一首歌_2014987354955583489.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_gpt_image_2`
-- `Comfly_gpt_image_2_S2A`
-- `Fast Groups Muter (rgthree)`
-- `GetNode`
-- `JjkText`
-- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `HeartMuLa_Generate`
 - `PreviewAny`
-- `RHSettingsNode`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-- `SetNode`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `Comfly_gpt_image_2_official` —— 1/2 个有
-- `Comfly_gpt_image_2_official_ratio` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudio`
+- `ShowText`
+- `text_mul_Split`
 
 ## 典型参数
 

@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_1269
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.8
-common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage, Text]
+frequency: 2
+level: weak
+coverage: 0.4375
+common_nodes: [PrimitiveStringMultiline, SaveImage, StringConcatenate]
 problems: []
 missing: []
-members: [图片生成/文生图/抄分镜_自己创意分镜_改图_全能图像2_1毛6_张_需要充值RH钱包使用。_2044431350509346818.json, 图片生成/文生图/文生图_2043222598250668034.json, 图片生成/文生图/漫剧、短剧资产：一次性生成场景三视图+四特写（4K 0.2元_次）_2045428913467297793.json]
+members: [comfyui-workflow-templates-json/template_qwen_Image_2512_360_lora.json, 图片生成/文生图/krea2_turbo_t2i_int8_角色三视图_2076487283330600962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1269
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/抄分镜_自己创意分镜_改图_全能图像2_1毛6_张_需要充值RH钱包使用。_2044431350509346818.json、图片生成/文生图/文生图_2043222598250668034.json、图片生成/文生图/漫剧、短剧资产：一次性生成场景三视图+四特写（4K 0.2元_次）_2045428913467297793.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_qwen_Image_2512_360_lora.json、图片生成/文生图/krea2_turbo_t2i_int8_角色三视图_2076487283330600962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RH_Nano_Banana2_Gemini31Flash`
+全部 2 个 workflow 都包含：
+- `PrimitiveStringMultiline`
 - `SaveImage`
-- `Text`
+- `StringConcatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `easy showAnything` —— 1/3 个有
-- `ttN text3BOX_3WAYconcat` —— 1/3 个有
+- `c3c58f7e-2004-43ae-8b06-a956294bf7f4` —— 1/2 个有
+- `workflow>krea2` —— 1/2 个有
 
 ## 典型参数
 
@@ -42,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

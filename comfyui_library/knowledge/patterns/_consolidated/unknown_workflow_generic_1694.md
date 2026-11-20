@@ -3,50 +3,33 @@ name: unknown_workflow_generic_1694
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8235
-common_nodes: [Bjornulf_ShowInt, CR Combine Prompt, List Length, LoadImage, PreviewAny, Qwen3VL_Chat, StringFromList, Text, Text Multiline, TextSplitByDelimiter, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, RH_ViduReferenceToVideoQ2, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/单一sku批量修改尺寸并生成白底图_2062400828316667906.json, 视频生成/文生视频/根据文案生成多分镜-seedance2_2067943168498298882.json]
+members: [视频生成/图生视频/ViduReferenceToVideoQ2_2038488597191462913.json, 视频生成/图生视频/对镜头自拍_2044681213067141122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1694
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/单一sku批量修改尺寸并生成白底图_2062400828316667906.json、视频生成/文生视频/根据文案生成多分镜-seedance2_2067943168498298882.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/ViduReferenceToVideoQ2_2038488597191462913.json、视频生成/图生视频/对镜头自拍_2044681213067141122.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `CR Combine Prompt`
-- `List Length`
 - `LoadImage`
-- `PreviewAny`
-- `Qwen3VL_Chat`
-- `StringFromList`
-- `Text`
-- `Text Multiline`
-- `TextSplitByDelimiter`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy showAnything`
+- `RH_ViduReferenceToVideoQ2`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RHLLMChatNode` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `Text List` —— 1/2 个有
-- `TextCombinerTwo` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `ShowText` —— 1/2 个有
 
 ## 典型参数
 

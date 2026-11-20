@@ -1,37 +1,33 @@
 ---
 name: unknown_workflow_generic_1039
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.9445
-common_nodes: [LoadAudio, MultiLinePromptIndex]
+coverage: 0.822333
+common_nodes: [RH_YouchuanTextToImageV61, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 单人语音克隆_1954805801275801602.json, 音频生成/音频生成/IndexTTS声音克隆_1956254605715886082.json, 音频生成/音频生成/Index双人会话_1961897925611864065.json, 音频生成/音频生成/index-TTS2.0-双人会话_1967134000714223618.json]
+members: [图片生成/图生图/悠船图生图-v61_2080588685870981121.json, 图片生成/文生图/Youchuan_TextToImageV61_v6.1_2034593996743380993.json, 图片生成/文生图/悠船文生图-v61_2080617587951620098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1039
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 单人语音克隆_1954805801275801602.json、音频生成/音频生成/IndexTTS声音克隆_1956254605715886082.json、音频生成/音频生成/Index双人会话_1961897925611864065.json、音频生成/音频生成/index-TTS2.0-双人会话_1967134000714223618.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/悠船图生图-v61_2080588685870981121.json、图片生成/文生图/Youchuan_TextToImageV61_v6.1_2034593996743380993.json、图片生成/文生图/悠船文生图-v61_2080617587951620098.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `MultiLinePromptIndex`
+全部 3 个 workflow 都包含：
+- `RH_YouchuanTextToImageV61`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTSRun` —— 3/4 个有
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 3/4 个有
-- `PreviewAudio` —— 2/4 个有
-- `IndexTTS2Run` —— 1/4 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 

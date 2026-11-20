@@ -3,41 +3,28 @@ name: unknown_workflow_generic_1158
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.871667
-common_nodes: [CR Text, EG_ZZ_TMTX, GrowMaskWithBlur, Int, LoadImage, RMBG, SaveImage, SimpleMath+]
+coverage: 1
+common_nodes: [RH_ViduQ3_Text2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/一键抠图_1991274179580506113.json, 图片生成/图生图/全能图片V12溶图-超强真实感-自动修复_1992096852359311361.json, 图片生成/图生图/自动抠图透明背景_1992102190592618497.json]
+members: [视频生成/文生视频/ViduQ3-Pro文生视频_2018252495025348610.json, 视频生成/文生视频/ViduQ3-Pro文生视频_2020035296959664129.json, 视频生成/文生视频/ViduQ3-Pro文生视频（RH版）_2054440245751500802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1158
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键抠图_1991274179580506113.json、图片生成/图生图/全能图片V12溶图-超强真实感-自动修复_1992096852359311361.json、图片生成/图生图/自动抠图透明背景_1992102190592618497.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/ViduQ3-Pro文生视频_2018252495025348610.json、视频生成/文生视频/ViduQ3-Pro文生视频_2020035296959664129.json、视频生成/文生视频/ViduQ3-Pro文生视频（RH版）_2054440245751500802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `EG_ZZ_TMTX`
-- `GrowMaskWithBlur`
-- `Int`
-- `LoadImage`
-- `RMBG`
-- `SaveImage`
-- `SimpleMath+`
-
-**可变部分**（部分 workflow 才有）：
-- `Sa2VANodeTpl` —— 2/3 个有
-- `easy imageCropFromMask` —— 2/3 个有
-- `FastCanvas` —— 1/3 个有
-- `FastCanvasTool` —— 1/3 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
+- `RH_ViduQ3_Text2Video`
+- `SaveVideo`
 
 ## 典型参数
 

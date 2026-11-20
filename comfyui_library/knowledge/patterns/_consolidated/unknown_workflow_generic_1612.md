@@ -3,35 +3,32 @@ name: unknown_workflow_generic_1612
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.789
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_SeedreamV5ProImageToImage, RH_SeedreamV5ProTextToImage, SaveImage, TTResolutionSelector]
+coverage: 1
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream V5 PRO 图生图_2080131585785032705.json, 图片生成/文生图/Seedream V5 PRO 文生图_2080111392610410498.json]
+members: [图片生成/文生图/flux kontext 超强图像编辑_1930578598372233218.json, 图片生成/文生图/空白工作流_1943139855897681921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1612
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Seedream V5 PRO 图生图_2080131585785032705.json、图片生成/文生图/Seedream V5 PRO 文生图_2080111392610410498.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/flux kontext 超强图像编辑_1930578598372233218.json、图片生成/文生图/空白工作流_1943139855897681921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `RH_SeedreamV5ProImageToImage`
-- `RH_SeedreamV5ProTextToImage`
+- `RH_ComfyFluxKontext`
 - `SaveImage`
-- `TTResolutionSelector`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
+- `Image Stitch` —— 1/2 个有
 
 ## 典型参数
 

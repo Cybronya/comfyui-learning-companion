@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_1373
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.598333
-common_nodes: [Bjornulf_CombineTexts, JjkText, LoadImage, RH_Captioner_Pro, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/最强电商图片制作产品广告视频 sparkVideo_2038200358085857282.json, 视频生成/图生视频/电商超能视频产品展示 图生视频 自动配音 sparkVideo_2038080987548094465.json, 视频生成/图生视频/超能视频制作动漫视频 高可控性 sparkvideo_2038797037273092098.json]
+members: [图片生成/图生图/Image 2封面生成_2052340276496216066.json, 图片生成/图生图/Image 2生图工作流_2048602671271124994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1373
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/最强电商图片制作产品广告视频 sparkVideo_2038200358085857282.json、视频生成/图生视频/电商超能视频产品展示 图生视频 自动配音 sparkVideo_2038080987548094465.json、视频生成/图生视频/超能视频制作动漫视频 高可控性 sparkvideo_2038797037273092098.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Image 2封面生成_2052340276496216066.json、图片生成/图生图/Image 2生图工作流_2048602671271124994.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Bjornulf_CombineTexts`
-- `JjkText`
+全部 2 个 workflow 都包含：
 - `LoadImage`
-- `RH_Captioner_Pro`
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
-- `SaveVideo`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkShowText` —— 2/3 个有
-- `PreviewAny` —— 1/3 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `Text` —— 1/3 个有
+- `Seed (rgthree)` —— 1/2 个有
+- `TextInputNode` —— 1/2 个有
 
 ## 典型参数
 
@@ -47,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

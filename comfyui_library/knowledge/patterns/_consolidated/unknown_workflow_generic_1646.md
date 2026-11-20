@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1646
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7225
-common_nodes: [LoadImage, MaskColorize, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.75
+common_nodes: [LoadImage, RHLLMChatNode, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/【美食摄影V1】实拍+精修+置景+微调_2003770791701454849.json, 图片生成/图生图/图像编辑精准指令P图_2001205900209778689.json]
+members: [图片生成/文生图/空白工作流rr_2078234563565940738.json, 数字人/数字人/空白工作流rr_2078413430951858178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1646
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【美食摄影V1】实拍+精修+置景+微调_2003770791701454849.json、图片生成/图生图/图像编辑精准指令P图_2001205900209778689.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/空白工作流rr_2078234563565940738.json、数字人/数字人/空白工作流rr_2078413430951858178.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `MaskColorize`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+- `RHLLMChatNode`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Mute / Bypass Relay (rgthree)` —— 1/2 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `SaveText` —— 1/2 个有
 
 ## 典型参数
 

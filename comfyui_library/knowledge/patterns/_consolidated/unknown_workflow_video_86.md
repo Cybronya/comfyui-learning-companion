@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_video_86
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, RunningHub_FramePack_F1, SeargePromptText, VHS_VideoCombine]
+common_nodes: [HunyuanVideoFoley, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/一分钟图生视频_2038508118556020738.json, 视频生成/图生视频/图生视频--FramePack_1930833546175250433.json, 视频生成/图生视频/最新图生视频_2048952108606562305.json, 视频生成/图生视频/最新图生视频_2052286643062755330.json, 视频生成/图生视频/🦖最新稳定FramePack-F1_1919582733343850497.json]
+members: [音频生成/音频生成/comfyui-foley_1963862742736277506.json, 音频生成/音频生成/comfyui-foley_1970182744674365441.json, 音频生成/音频生成/混元Foley-无声视频配音_1962360285673754626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_86
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/一分钟图生视频_2038508118556020738.json、视频生成/图生视频/图生视频--FramePack_1930833546175250433.json、视频生成/图生视频/最新图生视频_2048952108606562305.json、视频生成/图生视频/最新图生视频_2052286643062755330.json、视频生成/图生视频/🦖最新稳定FramePack-F1_1919582733343850497.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/comfyui-foley_1963862742736277506.json、音频生成/音频生成/comfyui-foley_1970182744674365441.json、音频生成/音频生成/混元Foley-无声视频配音_1962360285673754626.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RunningHub_FramePack_F1`
-- `SeargePromptText`
+全部 3 个 workflow 都包含：
+- `HunyuanVideoFoley`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 3/5 个有
+- `RH_Translator` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
 
 ## 典型参数
 

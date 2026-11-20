@@ -3,33 +3,32 @@ name: unknown_workflow_generic_1542
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [RH_Translator, ShowText|pysssss, easy saveText]
+coverage: 1
+common_nodes: [LoadImage, ReActorFaceSwap, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/推理-翻译-RH_1978415640702816258.json, 平台全量/Translator_2000548743583854593.json]
+members: [图片生成/图生图/最新超强换脸_ 无需提示词 只需两个节点_1909608326835990530.json, 图片生成/图生图/生图-图换脸-Reactor_1972659385921150977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1542
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/推理-翻译-RH_1978415640702816258.json、平台全量/Translator_2000548743583854593.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新超强换脸_ 无需提示词 只需两个节点_1909608326835990530.json、图片生成/图生图/生图-图换脸-Reactor_1972659385921150977.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_Translator`
-- `ShowText|pysssss`
-- `easy saveText`
+- `LoadImage`
+- `ReActorFaceSwap`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatchMulti` —— 1/2 个有
-- `easy positive` —— 1/2 个有
+- `ReActorRestoreFace` —— 1/2 个有
 
 ## 典型参数
 

@@ -3,29 +3,31 @@ name: unknown_workflow_generic_1065
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [HappyHorseReferenceVideoApi, LoadImage, SaveVideo]
+coverage: 0.889
+common_nodes: [RH_SeedreamV45TextToImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_happyhorse1_0_r2v.json, comfyui-workflow-templates-json/api_happyhorse1_1_r2v.json, 平台全量/HappyHorse 参考图视频生成_2059204156430307330.json]
+members: [图片生成/文生图/03豆包_SeedreamV4.5_文生图+全节点注释_2058541001270185986.json, 图片生成/文生图/2031456151346356226.json, 图片生成/文生图/SeedreamV45_TextToImage_v4.5_2034593612121509889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1065
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_happyhorse1_0_r2v.json、comfyui-workflow-templates-json/api_happyhorse1_1_r2v.json、平台全量/HappyHorse 参考图视频生成_2059204156430307330.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/03豆包_SeedreamV4.5_文生图+全节点注释_2058541001270185986.json、图片生成/文生图/2031456151346356226.json、图片生成/文生图/SeedreamV45_TextToImage_v4.5_2034593612121509889.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `HappyHorseReferenceVideoApi`
-- `LoadImage`
-- `SaveVideo`
+- `RH_SeedreamV45TextToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 

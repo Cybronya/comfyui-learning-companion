@@ -18,6 +18,11 @@ download/*
 __pycache__/
 *.pyc
 
+# 项目内临时工作区（见 AGENTS.md 3.6「临时文件与工作区纪律」）
+# 所有临时文件/临时目录/临时库只允许落在 <项目根>/.tmp/ 下，
+# 绝不使用 C 盘系统 TEMP。整目录可随时删除重建，不入库。
+/.tmp/
+
 # 运行期副产物（都可由源码重新生成，不入库）
 # 上下文与经验：跑测试会写脏，见 AGENTS.md 3.1
 engine/context/context_store.json
