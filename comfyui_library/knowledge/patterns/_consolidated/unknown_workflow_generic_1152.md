@@ -3,44 +3,34 @@ name: unknown_workflow_generic_1152
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.483333
-common_nodes: [CR Text Concatenate, LoadImagesFromURL, LoadMultiImage, PrimitiveString, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, RH_RhartImageG2ImageToImage, SaveImage, Text Find and Replace, Text Multiline, ZML_MergeText, easy promptLine, easy showAnything]
+coverage: 0.454667
+common_nodes: [CR Prompt Text, Comfly_api_set, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/【Auto-Generate-Goods-Detail】自动生成产品详情页-API调用_2069077738174115842.json, 图片生成/图生图/【Auto-Generate-Goods-Detail】自动生成产品详情页-无文字版-API调用_2065355371576913922.json, 平台全量/【Auto-Generate-Goods-Detail】自动生成产品详情页-API调用_2064943518187085825.json]
+members: [视频生成/文生视频/(贞贞AI工坊)Vidu Q2文生视频（基准约等于0.984元_5S-具体根据官方积分计算）_1995088415303643138.json, 视频生成/文生视频/全能视频G 文生视频(贞贞的AI工坊API版)V2_1998603254915325954.json, 视频生成/文生视频/（支持真人-图像参考）SeeDance2.0平替T2V 新版全能G视频15S(贞贞的工坊API版)_2028108211923980289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1152
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【Auto-Generate-Goods-Detail】自动生成产品详情页-API调用_2069077738174115842.json、图片生成/图生图/【Auto-Generate-Goods-Detail】自动生成产品详情页-无文字版-API调用_2065355371576913922.json、平台全量/【Auto-Generate-Goods-Detail】自动生成产品详情页-API调用_2064943518187085825.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/(贞贞AI工坊)Vidu Q2文生视频（基准约等于0.984元_5S-具体根据官方积分计算）_1995088415303643138.json、视频生成/文生视频/全能视频G 文生视频(贞贞的AI工坊API版)V2_1998603254915325954.json、视频生成/文生视频/（支持真人-图像参考）SeeDance2.0平替T2V 新版全能G视频15S(贞贞的工坊API版)_2028108211923980289.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text Concatenate`
-- `LoadImagesFromURL`
-- `LoadMultiImage`
-- `PrimitiveString`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `Text Find and Replace`
-- `Text Multiline`
-- `ZML_MergeText`
-- `easy promptLine`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `SaveVideo`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR String To Combo` —— 2/3 个有
-- `RHHiddenNodes` —— 2/3 个有
-- `JjkText` —— 1/3 个有
+- `ComflyGrok3VideoApi` —— 2/3 个有
+- `Comfly_vidu_text2video` —— 1/3 个有
 
 ## 典型参数
 

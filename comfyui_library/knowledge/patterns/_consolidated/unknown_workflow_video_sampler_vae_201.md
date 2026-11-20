@@ -1,58 +1,45 @@
 ---
 name: unknown_workflow_video_sampler_vae_201
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.863333
-common_nodes: [ADE_CameraPoseBasic, CameraPoseVisualizer, INTConstant, ImageConcatMulti, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoFunCameraEmbeds, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 2
+level: weak
+coverage: 0.7085
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/【💫书墨】Fun Control Camera视频运镜_1917932586730196994.json, 视频生成/图生视频/万相运镜控制图生视频 Fun Camera_1924473517754994690.json, 视频生成/文生视频/最新阿里Wan2.1图生视频运镜控制_1929007015320829954.json]
+members: [视频生成/文生视频/【电影质感】MoviiGen文生视频（参数调优）_1923309184865980418.json, 视频生成/文生视频/通义万相 WAN2.1 文生视频，超高可控性_1894646862492905473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_201
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【💫书墨】Fun Control Camera视频运镜_1917932586730196994.json、视频生成/图生视频/万相运镜控制图生视频 Fun Camera_1924473517754994690.json、视频生成/文生视频/最新阿里Wan2.1图生视频运镜控制_1929007015320829954.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/【电影质感】MoviiGen文生视频（参数调优）_1923309184865980418.json、视频生成/文生视频/通义万相 WAN2.1 文生视频，超高可控性_1894646862492905473.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ADE_CameraPoseBasic`
-- `CameraPoseVisualizer`
-- `INTConstant`
-- `ImageConcatMulti`
-- `LoadImage`
+全部 2 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoFunCameraEmbeds`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `GIMMVFI_interpolate` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `LayerUtility: TextBox` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `WanVideoLoraSelect` —— 1/3 个有
+- `Anything Everywhere` —— 1/2 个有
+- `CogVideoEnhanceAVideo` —— 1/2 个有
+- `ImageCASharpening+` —— 1/2 个有
+- `WanVideoExperimentalArgs` —— 1/2 个有
+- `WanVideoSLG` —— 1/2 个有
+- `WanVideoSetBlockSwap` —— 1/2 个有
 
 ## 典型参数
 
@@ -64,4 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

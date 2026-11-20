@@ -3,33 +3,36 @@ name: unknown_workflow_generic_1068
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.891667
-common_nodes: [BatchImagesNode, LoadImage, SaveVideo]
+coverage: 0.649667
+common_nodes: [Comfly_api_set, SaveImage, Text, easy showAnything]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_kling_o3_flf2v.json, comfyui-workflow-templates-json/api_kling_o3_i2v.json, comfyui-workflow-templates-json/api_kling_omni_i2v.json]
+members: [图片生成/文生图/G-IMAGE2 图片编辑_2047577011262070785.json, 图片生成/文生图/G-IMAGE2文生图_2047345239874084865.json, 图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用（贞贞AI工坊版）_2002953990503559170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1068
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_kling_o3_flf2v.json、comfyui-workflow-templates-json/api_kling_o3_i2v.json、comfyui-workflow-templates-json/api_kling_omni_i2v.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/G-IMAGE2 图片编辑_2047577011262070785.json、图片生成/文生图/G-IMAGE2文生图_2047345239874084865.json、图片生成/文生图/全能图片V1Pro-输出9张单独表情图-训练lora适用（贞贞AI工坊版）_2002953990503559170.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BatchImagesNode`
-- `LoadImage`
-- `SaveVideo`
+- `Comfly_api_set`
+- `SaveImage`
+- `Text`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `KlingOmniProImageToVideoNode` —— 2/3 个有
-- `KlingOmniProFirstLastFrameNode` —— 1/3 个有
+- `Comfly_gpt_image_2_official` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `Comfly_nano_banana2_edit` —— 1/3 个有
 
 ## 典型参数
 

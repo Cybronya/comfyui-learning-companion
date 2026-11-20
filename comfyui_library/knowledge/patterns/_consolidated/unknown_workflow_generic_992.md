@@ -1,36 +1,42 @@
 ---
 name: unknown_workflow_generic_992
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.95
-common_nodes: [LoadAudio, SaveAudio, SparkTTSClone]
+coverage: 0.984
+common_nodes: [1hew_ImageGridSplit, JWStringGetLine, JjkConcat, LoadImage, PreviewImage, SaveImage, StringConcatenate, Textbox, easy string, preview_text]
 problems: []
 missing: []
-members: [数字人/数字人/懒羊羊语音_1908849898094272513.json, 音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json, 音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json, 音频生成/音频生成/万能声音模仿器_1909785195850203138.json]
+members: [图片生成/图生图/一键9分镜高清图(G-P-T-Image2)_2049348109787992065.json, 图片生成/文生图/一键9分镜高清图_2038889918159654914.json, 图片生成/文生图/一键四分镜高清图_2046623781430501377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_992
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/懒羊羊语音_1908849898094272513.json、音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json、音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json、音频生成/音频生成/万能声音模仿器_1909785195850203138.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键9分镜高清图(G-P-T-Image2)_2049348109787992065.json、图片生成/文生图/一键9分镜高清图_2038889918159654914.json、图片生成/文生图/一键四分镜高清图_2046623781430501377.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `SparkTTSClone`
+全部 3 个 workflow 都包含：
+- `1hew_ImageGridSplit`
+- `JWStringGetLine`
+- `JjkConcat`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
+- `StringConcatenate`
+- `Textbox`
+- `easy string`
+- `preview_text`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 2/4 个有
-- `TextBox` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
+- `RH_RhartImageG2ImageToImage` —— 1/3 个有
 
 ## 典型参数
 

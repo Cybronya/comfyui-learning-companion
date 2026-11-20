@@ -3,37 +3,37 @@ name: unknown_workflow_generic_1207
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [GetImageSize+, ImageCompositeMasked, InspyrenetRembg, LayerUtility: ColorImage, SaveImage, SplitImageWithAlpha]
+coverage: 0.863
+common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/抠白底图（适合产品）_1907655582273138689.json, 平台全量/电商产品抠白底图（一键快速输出）_1990263221057712129.json, 平台全量/电商产品抠白底图（一键快速输出）_1990333623750545410.json]
+members: [音频生成/音频生成/opsv-声音克隆_2061483328276090881.json, 音频生成/音频生成/声音克隆 Qwen3 TTS 真实复制音频   极速版 音色参考_2017868031271116802.json, 音频生成/音频生成/最新Qwen3 TTS 声音克隆_2018610702222626817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1207
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/抠白底图（适合产品）_1907655582273138689.json、平台全量/电商产品抠白底图（一键快速输出）_1990263221057712129.json、平台全量/电商产品抠白底图（一键快速输出）_1990333623750545410.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/opsv-声音克隆_2061483328276090881.json、音频生成/音频生成/声音克隆 Qwen3 TTS 真实复制音频   极速版 音色参考_2017868031271116802.json、音频生成/音频生成/最新Qwen3 TTS 声音克隆_2018610702222626817.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `GetImageSize+`
-- `ImageCompositeMasked`
-- `InspyrenetRembg`
-- `LayerUtility: ColorImage`
-- `SaveImage`
-- `SplitImageWithAlpha`
+- `Apply Whisper`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/3 个有
-- `LoadImageFromUrl` —— 1/3 个有
-- `LoadImagesFromURL` —— 1/3 个有
+- `AudioCrop` —— 2/3 个有
+- `Float` —— 1/3 个有
+- `TextInputBasic` —— 1/3 个有
 
 ## 典型参数
 

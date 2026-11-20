@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_generic_919
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.8355
-common_nodes: [CR Text Replace, LoadImage, Repeater|pysssss, SaveImage, ShowText|pysssss]
+coverage: 0.888667
+common_nodes: [CR Prompt Text, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/服装迁移+提取_服装提取白底图生成_2030286406332981250.json, 平台全量/修改姿态 _ 一致性 _  全能图片V1 2_1916784560158212097.json, 平台全量/修改姿态 _ 角色一致性 _ 即梦_豆包 4.5_1870084762135339009.json, 平台全量/提取服装 祛除褶皱 3D展示_1910981622316105730.json]
+members: [图片生成/反推提示词/MiniMax H3标准格式提示词 自动优化生成_2101487343038459905.json, 图片生成/反推提示词/MiniMax H3标准格式提示词一键快速生成_2101408511698755585.json, 图片生成/图生图/Seedance 2.5实测全套素材_2083133574567514114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_919
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/服装迁移+提取_服装提取白底图生成_2030286406332981250.json、平台全量/修改姿态 _ 一致性 _  全能图片V1 2_1916784560158212097.json、平台全量/修改姿态 _ 角色一致性 _ 即梦_豆包 4.5_1870084762135339009.json、平台全量/提取服装 祛除褶皱 3D展示_1910981622316105730.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/MiniMax H3标准格式提示词 自动优化生成_2101487343038459905.json、图片生成/反推提示词/MiniMax H3标准格式提示词一键快速生成_2101408511698755585.json、图片生成/图生图/Seedance 2.5实测全套素材_2083133574567514114.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text Replace`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `Repeater|pysssss`
 - `SaveImage`
-- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 3/4 个有
-- `MuyeTextEditOutput` —— 2/4 个有
-- `RH_LLMAPI_Pro_Node` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `RH_Jimeng4_Image2Image` —— 1/4 个有
+- `LoadVideo` —— 2/3 个有
+- `MiniMaxH3PromptEnhancerT8` —— 2/3 个有
+- `PreviewAny` —— 2/3 个有
 
 ## 典型参数
 

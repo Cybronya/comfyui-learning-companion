@@ -3,58 +3,35 @@ name: unknown_workflow_generic_870
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8755
-common_nodes: [DF_Integer, Get Image Size, Image Comparer (rgthree), ImageFromBatch, ImageResize+, ImpactMinMax, LoadImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.9445
+common_nodes: [LoadAudio, MultiLinePromptIndex]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2 终极强化版高清工作流_1964342535374163970.json, 图片生成/图生图/一致性+全能图片V1 老照片修复_1976496032466997249.json, 平台全量/8K-seedVR2 万物高清放大（分块）_1960851607594438657.json, 数字人/数字人/seedVR2_万物高清放大（分块）_1970437657622966274.json]
+members: [音频生成/音频生成/IndexTTS 单人语音克隆_1954805801275801602.json, 音频生成/音频生成/IndexTTS声音克隆_1956254605715886082.json, 音频生成/音频生成/Index双人会话_1961897925611864065.json, 音频生成/音频生成/index-TTS2.0-双人会话_1967134000714223618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_870
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/seedVR2 终极强化版高清工作流_1964342535374163970.json、图片生成/图生图/一致性+全能图片V1 老照片修复_1976496032466997249.json、平台全量/8K-seedVR2 万物高清放大（分块）_1960851607594438657.json、数字人/数字人/seedVR2_万物高清放大（分块）_1970437657622966274.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 单人语音克隆_1954805801275801602.json、音频生成/音频生成/IndexTTS声音克隆_1956254605715886082.json、音频生成/音频生成/Index双人会话_1961897925611864065.json、音频生成/音频生成/index-TTS2.0-双人会话_1967134000714223618.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `DF_Integer`
-- `Get Image Size`
-- `Image Comparer (rgthree)`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImpactMinMax`
-- `LoadImage`
-- `SaveImage`
-- `SeedVR2`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
+- `LoadAudio`
+- `MultiLinePromptIndex`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCASharpening+` —— 3/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `ColorMatch` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `ImageScaleBy` —— 1/4 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `PrimitiveFloat` —— 1/4 个有
-- `RH_Nano_Banana_Image2Image` —— 1/4 个有
-- `SeedVR2BlockSwap` —— 1/4 个有
-- `Textbox` —— 1/4 个有
+- `IndexTTSRun` —— 3/4 个有
+- `SaveAudio` —— 3/4 个有
+- `SaveAudioMP3` —— 3/4 个有
+- `PreviewAudio` —— 2/4 个有
+- `IndexTTS2Run` —— 1/4 个有
 
 ## 典型参数
 

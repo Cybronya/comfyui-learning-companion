@@ -1,34 +1,45 @@
 ---
 name: unknown_workflow_generic_913
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.86675
-common_nodes: [ImitationHueNode, LoadImage, SaveImage]
+coverage: 0.744
+common_nodes: [BatchImagesNode, ComfyMathExpression, CreateVideo, GetImageSize, GetVideoComponents, LoadImage, LoadVideo, PreviewAny, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/智能一键调色（仿参考图相似调色）_1913288331504091138.json, 平台全量/图片调色_2028828566011514882.json, 平台全量/追色_1890299859185049601.json, 平台全量/追色工作流_1914147701368520706.json]
+members: [comfyui-workflow-templates-json/video_wan21_scail2_character_replacement.json, comfyui-workflow-templates-json/video_wan21_scail2_character_replacement_int8.json, comfyui-workflow-templates-json/video_wan_animate2_distilled.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_913
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/智能一键调色（仿参考图相似调色）_1913288331504091138.json、平台全量/图片调色_2028828566011514882.json、平台全量/追色_1890299859185049601.json、平台全量/追色工作流_1914147701368520706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan21_scail2_character_replacement.json、comfyui-workflow-templates-json/video_wan21_scail2_character_replacement_int8.json、comfyui-workflow-templates-json/video_wan_animate2_distilled.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImitationHueNode`
+全部 3 个 workflow 都包含：
+- `BatchImagesNode`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetImageSize`
+- `GetVideoComponents`
 - `LoadImage`
-- `SaveImage`
+- `LoadVideo`
+- `PreviewAny`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/4 个有
+- `56bf150b-bd14-4513-8e03-335e1972ba62` —— 2/3 个有
+- `d1ab1953-6167-4827-b44e-b4108cea5702` —— 2/3 个有
+- `11706f8a-428d-4ef9-b24f-863f651c1b0b` —— 1/3 个有
+- `79280513-53b2-4417-93f8-f3e116bb6736` —— 1/3 个有
+- `7aac4913-f6e2-463e-9ca4-7f9f18363819` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 

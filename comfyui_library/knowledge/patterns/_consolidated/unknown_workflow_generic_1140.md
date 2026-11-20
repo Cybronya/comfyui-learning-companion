@@ -3,38 +3,33 @@ name: unknown_workflow_generic_1140
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.931333
-common_nodes: [EmptyImage, LoadAudio, LoadImage, LoadVideo, PreviewImage, SaveVideo]
+coverage: 0.741667
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance2.5全参工作流_2101625313246666753.json, 图片生成/文生图/Moss-image(文生图+可选提示词增强MOSS-Image-SFT_原始50步_25步_8步极速生图加速按需3选1+可选无损超分高清放大_2113558751847469057.json, 视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2101626273922641921.json]
+members: [视频生成/图生视频/全能视频X-图生视频-官方稳定版-v1.5_2061780304490229761.json, 视频生成/文生视频/全能视频X-图生视频-官方稳定版-v1.5+全节点注释_2062165375168630785.json, 视频生成/文生视频/秒出视频fal MiniMax H3 Max Turbo 文生视频+全节点注释_2099368885240819714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1140
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Seedance2.5全参工作流_2101625313246666753.json、图片生成/文生图/Moss-image(文生图+可选提示词增强MOSS-Image-SFT_原始50步_25步_8步极速生图加速按需3选1+可选无损超分高清放大_2113558751847469057.json、视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2101626273922641921.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能视频X-图生视频-官方稳定版-v1.5_2061780304490229761.json、视频生成/文生视频/全能视频X-图生视频-官方稳定版-v1.5+全节点注释_2062165375168630785.json、视频生成/文生视频/秒出视频fal MiniMax H3 Max Turbo 文生视频+全节点注释_2099368885240819714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `EmptyImage`
-- `LoadAudio`
 - `LoadImage`
-- `LoadVideo`
-- `PreviewImage`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 2/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/3 个有
-- `ttN text` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `RH_RhartVideoGOfficialImageToVideoV15` —— 2/3 个有
+- `RH_MinimaxH3MaxTurboTextToVideo` —— 1/3 个有
 
 ## 典型参数
 

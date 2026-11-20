@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_1014
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.8875
-common_nodes: [LoadImage, RH_Sora2_I2V_Realistic, SaveVideo]
+coverage: 0.737
+common_nodes: [EmptyImage, JjkText, LoadImage, MultiTextConcatenate, PreviewImage, PreviewTextNode, RH_RhartImageG2ImageToImage, SaveImage, Text, Text Multiline, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S-图生视频-真人版_2002650348009451521.json, 视频生成/图生视频/全能视频S图生视频-调用官方API版本_1999471392632471554.json, 视频生成/图生视频/全能视频S图生视频官方版本(注意价格)_2016060142260850690.json, 视频生成/图生视频/梭罗2图生视频全能视频S（12s版本）（官方稳定版)_2018182569270972417.json]
+members: [图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1014
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频S-图生视频-真人版_2002650348009451521.json、视频生成/图生视频/全能视频S图生视频-调用官方API版本_1999471392632471554.json、视频生成/图生视频/全能视频S图生视频官方版本(注意价格)_2016060142260850690.json、视频生成/图生视频/梭罗2图生视频全能视频S（12s版本）（官方稳定版)_2018182569270972417.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `EmptyImage`
+- `JjkText`
 - `LoadImage`
-- `RH_Sora2_I2V_Realistic`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `MultiTextConcatenate`
+- `PreviewImage`
+- `PreviewTextNode`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `Text`
+- `Text Multiline`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 

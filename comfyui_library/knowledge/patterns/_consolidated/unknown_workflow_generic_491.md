@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_491
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.621143
-common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.969667
+common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/IndexTTS2语音克隆-声音克隆-音色克隆文本转语音，情绪克隆-单人语气克隆无杂音情绪配音_2107141738631614465.json, 数字人/数字人/KAIJI-旁白克隆tts_2089155671882289154.json, 数字人/数字人/声音克隆IndexTTS2史上最强音色克隆带语气_2101971529436323842.json, 音频生成/音频生成/IndexTTS2 音频参考生成_2059553748699148289.json, 音频生成/音频生成/IndexTTS2语音克隆-声音克隆-音色克隆文本转语音，情绪克隆-单人语气克隆无杂音情绪配音_2088097963410280449.json, 音频生成/音频生成/格调_声音克隆20250302_1991401007521333250.json, 音频生成/音频生成/老杨_IndexTTS2声音克隆_1971258334726832130.json]
+members: [图片生成/图生图/（更新）场景不同角度四视图_2043181705120456705.json, 图片生成/文生图/2029799611912687617.json, 图片生成/文生图/pro图生图_文生图_2000852529531453442.json, 图片生成/文生图/场景不同角度四视图_2041036054748209153.json, 图片生成/文生图/故事版（全能图片G2生成故事板）_2053645502633259010.json, 视频生成/文生视频/3.2.提取（人_场）+ 分镜组_2031746525692436481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_491
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/IndexTTS2语音克隆-声音克隆-音色克隆文本转语音，情绪克隆-单人语气克隆无杂音情绪配音_2107141738631614465.json、数字人/数字人/KAIJI-旁白克隆tts_2089155671882289154.json、数字人/数字人/声音克隆IndexTTS2史上最强音色克隆带语气_2101971529436323842.json、音频生成/音频生成/IndexTTS2 音频参考生成_2059553748699148289.json、音频生成/音频生成/IndexTTS2语音克隆-声音克隆-音色克隆文本转语音，情绪克隆-单人语气克隆无杂音情绪配音_2088097963410280449.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/（更新）场景不同角度四视图_2043181705120456705.json、图片生成/文生图/2029799611912687617.json、图片生成/文生图/pro图生图_文生图_2000852529531453442.json、图片生成/文生图/场景不同角度四视图_2041036054748209153.json、图片生成/文生图/故事版（全能图片G2生成故事板）_2053645502633259010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+全部 6 个 workflow 都包含：
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 5/7 个有
-- `GetNode` —— 4/7 个有
-- `SetNode` —— 4/7 个有
-- `Float` —— 2/7 个有
-- `AudioPlay` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
+- `LoadImage` —— 5/6 个有
+- `MuyeTextEditOutput` —— 5/6 个有
+- `ImageStitch` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
 
 ## 典型参数
 

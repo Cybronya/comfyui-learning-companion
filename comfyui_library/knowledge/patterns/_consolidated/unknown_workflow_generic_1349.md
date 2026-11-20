@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_1349
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+frequency: 2
+level: weak
+coverage: 0.7335
+common_nodes: [BagelImageEdit, BagelModelLoader, ImageConcatMulti, ImageScaleDownToSize, LoadImage, SaveImage, SetNode, ShowText|pysssss, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0 Fast全能图生视频_2039887389845364738.json, 视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2065639949671686145.json, 视频生成/图生视频/wan2.7图生视频参考_2041786158845267970.json]
+members: [图片生成/图生图/Bagel豆包图像编辑_1929349250503622658.json, 图片生成/图生图/字节图像编辑 BaGEL豆包图像编辑_1928430466213302274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1349
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast全能图生视频_2039887389845364738.json、视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2065639949671686145.json、视频生成/图生视频/wan2.7图生视频参考_2041786158845267970.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Bagel豆包图像编辑_1929349250503622658.json、图片生成/图生图/字节图像编辑 BaGEL豆包图像编辑_1928430466213302274.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `BagelImageEdit`
+- `BagelModelLoader`
+- `ImageConcatMulti`
+- `ImageScaleDownToSize`
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
+- `SetNode`
+- `ShowText|pysssss`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/3 个有
-- `Textbox` —— 2/3 个有
-- `RH_AlibabaWan27ReferenceToVideo` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
 
 ## 典型参数
 
@@ -41,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

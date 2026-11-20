@@ -3,29 +3,37 @@ name: unknown_workflow_generic_1061
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.933333
-common_nodes: [ByteDanceFirstLastFrameNode, LoadImage, SaveVideo]
+coverage: 0.901
+common_nodes: [ColorMatch, ImageConcanate, ImageScaleBy, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, PrimitiveFloat, SaveImage, SeedVR2, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_bytedance_flf2v.json, comfyui-workflow-templates-json/api_bytedance_seedance1_5_flf2v.json, 平台全量/Seedance 首尾帧视频生成_2059204142534582274.json]
+members: [图片生成/图生图/高清修复+超清放大_1959455054111649793.json, 图片生成/图生图/高清修复+超清放大_1962145972216381442.json, 图片生成/文生图/高清修复（最新）_1943208890689609730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1061
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_flf2v.json、comfyui-workflow-templates-json/api_bytedance_seedance1_5_flf2v.json、平台全量/Seedance 首尾帧视频生成_2059204142534582274.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/高清修复+超清放大_1959455054111649793.json、图片生成/图生图/高清修复+超清放大_1962145972216381442.json、图片生成/文生图/高清修复（最新）_1943208890689609730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ByteDanceFirstLastFrameNode`
+- `ColorMatch`
+- `ImageConcanate`
+- `ImageScaleBy`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `SaveVideo`
+- `MathExpression|pysssss`
+- `PrimitiveFloat`
+- `SaveImage`
+- `SeedVR2`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

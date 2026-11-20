@@ -3,40 +3,34 @@ name: unknown_workflow_generic_849
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.65775
-common_nodes: [ConstrainImage|pysssss, ImageConcatMulti, LoadImage, RH_LLMAPI_NODE, RH_Translator, SaveImage, Text Multiline, easy showAnything]
+coverage: 0.78675
+common_nodes: [LoadImage, PreviewAny, RH_Veo3_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Generative Pre-trained Transformer2.0 Image生图_2042522381096325121.json, 图片生成/图生图/全能图片V2_2031286131135877121.json, 图片生成/图生图/全能图片V2_2042522446858821634.json, 图片生成/图生图/全能图片编辑演示-双图_2029747949034541057.json]
+members: [视频生成/图生视频/首尾帧全能视频V3.1首尾帧图生视频_1980555612541112322.json, 视频生成/图生视频/🦖全能视频V3.1 Image2Video_1980089000780271618.json, 视频生成/文生视频/全能视频V3.1首尾帧视频工作流_2096563117215010818.json, 视频生成/文生视频/首尾帧视频（全能视频V3.1）_1902533703103361026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_849
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Generative Pre-trained Transformer2.0 Image生图_2042522381096325121.json、图片生成/图生图/全能图片V2_2031286131135877121.json、图片生成/图生图/全能图片V2_2042522446858821634.json、图片生成/图生图/全能图片编辑演示-双图_2029747949034541057.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/首尾帧全能视频V3.1首尾帧图生视频_1980555612541112322.json、视频生成/图生视频/🦖全能视频V3.1 Image2Video_1980089000780271618.json、视频生成/文生视频/全能视频V3.1首尾帧视频工作流_2096563117215010818.json、视频生成/文生视频/首尾帧视频（全能视频V3.1）_1902533703103361026.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ConstrainImage|pysssss`
-- `ImageConcatMulti`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_Translator`
-- `SaveImage`
-- `Text Multiline`
-- `easy showAnything`
+- `PreviewAny`
+- `RH_Veo3_Image2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
-- `RH_RhartImageG2ImageToImage` —— 1/4 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/4 个有
+- `ShellAgentPluginOutputText` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

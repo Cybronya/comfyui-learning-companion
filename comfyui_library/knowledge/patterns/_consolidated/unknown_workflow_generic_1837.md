@@ -3,44 +3,34 @@ name: unknown_workflow_generic_1837
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.84
-common_nodes: [LoadImage, MuyeTextEditOutput, PreviewAny, PreviewImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, Text Multiline, easy saveText, easy showAnything]
+coverage: 0.736
+common_nodes: [CR Prompt Text, DF_Text_Box, IndexTTS2Run, LoadAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/一键成片嘎嘎地（提示词+图片）_2015786171237928962.json, 图片生成/文生图/广告宣传片图文工作流_2039013770806169602.json]
+members: [音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_1971861536375566337.json, 音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_2087798191793201154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1837
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一键成片嘎嘎地（提示词+图片）_2015786171237928962.json、图片生成/文生图/广告宣传片图文工作流_2039013770806169602.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_1971861536375566337.json、音频生成/音频生成/TTS2生成双人对话(双人都可用3种情感调节方式)_2087798191793201154.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `MuyeTextEditOutput`
-- `PreviewAny`
-- `PreviewImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `Text Multiline`
-- `easy saveText`
-- `easy showAnything`
+- `CR Prompt Text`
+- `DF_Text_Box`
+- `IndexTTS2Run`
+- `LoadAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `LoadVideo` —— 1/2 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `ShellAgentPluginOutputText` —— 1/2 个有
+- `SaveAudio` —— 1/2 个有
+- `SaveAudioMP3` —— 1/2 个有
 
 ## 典型参数
 

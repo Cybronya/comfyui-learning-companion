@@ -1,42 +1,35 @@
 ---
 name: unknown_workflow_upscale_21
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8304
-common_nodes: [Image Comparer (rgthree), ImageTile+, ImageUntile+, ImageUpscaleWithModel, LoadImage, SaveImage, UpscaleModelLoader]
+coverage: 0.857
+common_nodes: [LoadImage, PrimitiveStringMultiline, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux.1 kontext 变胖后样子，并高清放大_1936685016862609410.json, 图片生成/图生图/Flux.1 kontext 老照片修复，并高清放大_1933804536005840897.json, 图片生成/图生图/RMBG一键抠图_抠像_去背景-透明背景_2020007419199361025.json, 图片生成/图生图/人像高清放大后人物抠像_1932419244866871298.json, 图片生成/图生图/人像高清放大，人像高清修复_1932294830721069057.json]
+members: [图片生成/图生图/角色战技连招设定卡Seedance2.0_2.5、MiniMaxH3专用_2096504821145759745.json, 图片生成/图生图/角色战技连招设定卡Seedance2.0_2.5、MiniMaxH3专用_2103297365963792385.json, 图片生成/图生图/角色战技连招设定卡Seedance2.0_2.5、MiniMaxH3专用_2104488662011572226.json, 图片生成/图生图/详情页_2111464256758697986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_21
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux.1 kontext 变胖后样子，并高清放大_1936685016862609410.json、图片生成/图生图/Flux.1 kontext 老照片修复，并高清放大_1933804536005840897.json、图片生成/图生图/RMBG一键抠图_抠像_去背景-透明背景_2020007419199361025.json、图片生成/图生图/人像高清放大后人物抠像_1932419244866871298.json、图片生成/图生图/人像高清放大，人像高清修复_1932294830721069057.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/角色战技连招设定卡Seedance2.0_2.5、MiniMaxH3专用_2096504821145759745.json、图片生成/图生图/角色战技连招设定卡Seedance2.0_2.5、MiniMaxH3专用_2103297365963792385.json、图片生成/图生图/角色战技连招设定卡Seedance2.0_2.5、MiniMaxH3专用_2104488662011572226.json、图片生成/图生图/详情页_2111464256758697986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageTile+`
-- `ImageUntile+`
-- `ImageUpscaleWithModel`
+全部 4 个 workflow 都包含：
 - `LoadImage`
+- `PrimitiveStringMultiline`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_ComfyFluxKontext` —— 2/5 个有
-- `RMBG` —— 2/5 个有
-- `TextNode` —— 2/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `Text` —— 1/5 个有
+- `WujiUpscaler` —— 3/4 个有
 
 ## 典型参数
 

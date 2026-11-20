@@ -1,52 +1,39 @@
 ---
 name: unknown_workflow_upscale_vae_34
 type: Unknown Workflow
-frequency: 6
+frequency: 4
 level: moderate
-coverage: 0.882
-common_nodes: [GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageScaleDownBy]
+coverage: 0.8495
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/反推提示词/分块_扣图_反推SeedVR2常用工具集搭建好的含模型_2010003083014705154.json, 图片生成/图生图/SeedVR2模糊+变高清v2+支持4k8K出图_2044796576966643714.json, 图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054196306217840642.json, 图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054368025943519234.json, 图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054411504459501570.json, 图片生成/图生图/模糊+变高清v2 支持4k_8K出图_2015651335382769666.json]
+members: [图片生成/图生图/SeedVR2简单放大_2101433189830057985.json, 图片生成/图生图/Seedvr2高清工作流_2055454834110812162.json, 图片生成/图生图/seedVR2图片高清放大_2032355636960305154.json, 图片生成/图生图/seedvr2 放大_2074418010059788289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_34
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/分块_扣图_反推SeedVR2常用工具集搭建好的含模型_2010003083014705154.json、图片生成/图生图/SeedVR2模糊+变高清v2+支持4k8K出图_2044796576966643714.json、图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054196306217840642.json、图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054368025943519234.json、图片生成/图生图/SeedVR2模糊变高清支持4k8K出图_2054411504459501570.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SeedVR2简单放大_2101433189830057985.json、图片生成/图生图/Seedvr2高清工作流_2055454834110812162.json、图片生成/图生图/seedVR2图片高清放大_2032355636960305154.json、图片生成/图生图/seedvr2 放大_2074418010059788289.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `GetImageSize+`
+全部 4 个 workflow 都包含：
 - `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy imageScaleDownBy`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `easy clearCacheAll` —— 5/6 个有
-- `Qwen3_VQA` —— 1/6 个有
-- `RMBG` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
+- `Int` —— 1/4 个有
+- `ZML_DualInteger` —— 1/4 个有
+- `easy imageSize` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_1357
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+frequency: 2
+level: weak
+coverage: 0.8605
+common_nodes: [CR Text, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, LoadImage, RH_RhartImageG2ImageToImage, RegexReplace, SaveImage, easy promptConcat]
 problems: []
 missing: []
-members: [视频生成/图生视频/Vidu-q2-图生视频 8秒价格  540p 0.44元_次  720p 1.53元_次  1080p 2.3元_次_2049313624082092034.json, 视频生成/图生视频/ViduImageToVideoQ2Turbo_2038488435215831041.json, 视频生成/图生视频/地表最强超能视频2.0-Fast图生视频-支持真人工作流_2037495235391000577.json]
+members: [图片生成/图生图/G PT-image 2穿搭商品主图 自动提示词_2096107883325902850.json, 图片生成/图生图/服装pod-插画改印花图案_2094219839891140609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1357
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Vidu-q2-图生视频 8秒价格  540p 0.44元_次  720p 1.53元_次  1080p 2.3元_次_2049313624082092034.json、视频生成/图生视频/ViduImageToVideoQ2Turbo_2038488435215831041.json、视频生成/图生视频/地表最强超能视频2.0-Fast图生视频-支持真人工作流_2037495235391000577.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G PT-image 2穿搭商品主图 自动提示词_2096107883325902850.json、图片生成/图生图/服装pod-插画改印花图案_2094219839891140609.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `CR Text`
+- `Dapao_LlamaCaption`
+- `Dapao_LlamaCaptionOptions`
 - `LoadImage`
-- `SaveVideo`
+- `RH_RhartImageG2ImageToImage`
+- `RegexReplace`
+- `SaveImage`
+- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `RH_ViduImageToVideoQ2Turbo` —— 2/3 个有
-- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 1/3 个有
+- `HAIGC_SaveImagesToZip` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
@@ -41,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

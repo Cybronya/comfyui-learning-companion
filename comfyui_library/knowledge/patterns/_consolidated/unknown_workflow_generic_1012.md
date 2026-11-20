@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_1012
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.72925
-common_nodes: [JjkText, SaveVideo]
+coverage: 0.563
+common_nodes: [Bookmark (rgthree), Fast Groups Bypasser (rgthree), LoadImage, MultiTextConcatenate, PreviewAny, RH_Nano_Banana2_Image2Image, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/低价版seedance2.5图生视频_2085952821035356161.json, 视频生成/图生视频/低价版seedance2.5图生视频_2087376823624757250.json, 视频生成/图生视频/即梦视频2.0全能视频-图生视频超能视频2.0_2036325097518145537.json, 视频生成/文生视频/即梦视频2.0全能视频-文生视频超能视频2.0_2036329132295987202.json]
+members: [图片生成/图生图/全能图片2完整提示词工作流_2016663123318542337.json, 图片生成/文生图/全能图片2完整提示词工作流_2005419771304833025.json, 图片生成/文生图/角色设计+角色场景融合_2027292825938829313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1012
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/低价版seedance2.5图生视频_2085952821035356161.json、视频生成/图生视频/低价版seedance2.5图生视频_2087376823624757250.json、视频生成/图生视频/即梦视频2.0全能视频-图生视频超能视频2.0_2036325097518145537.json、视频生成/文生视频/即梦视频2.0全能视频-文生视频超能视频2.0_2036329132295987202.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片2完整提示词工作流_2016663123318542337.json、图片生成/文生图/全能图片2完整提示词工作流_2005419771304833025.json、图片生成/文生图/角色设计+角色场景融合_2027292825938829313.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `Bookmark (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `MultiTextConcatenate`
+- `PreviewAny`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `RH_BytedanceSeedance25TokenImageToVideo` —— 2/4 个有
-- `RH_CinematicVideoGenerator` —— 2/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

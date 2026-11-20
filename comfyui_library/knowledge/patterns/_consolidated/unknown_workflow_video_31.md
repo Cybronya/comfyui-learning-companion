@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_video_31
 type: Unknown Workflow
-frequency: 7
+frequency: 4
 level: moderate
-coverage: 0.619429
-common_nodes: [RHHiddenNodes, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.6975
+common_nodes: [AILab_QwenVL, PreviewAny]
 problems: []
 missing: []
-members: [图片生成/图生图/照片视频换脸工作流_1888099813794447362.json, 图片生成/文生图/图生视频、文生视频、动作迁移、MiniMax H3、LTX、Wan - 去AI感、增强真实感_2100218352814874625.json, 平台全量/图生视频、文生视频、动作迁移、MiniMax_H3、LTX、Wan_-_去AI感、增强真实感_2101497115632553985.json, 平台全量/图生视频、文生视频、动作迁移、MiniMax_H3、LTX、Wan_-_去AI感、增强真实感_2102661082069422081.json, 平台全量/图生视频、文生视频、动作迁移、MiniMax_H3、LTX、Wan_-_去AI感、增强真实感_2117481132567654402.json, 平台全量/照片视频换脸工作流_1917130161274159106.json, 平台全量/稳定 视频视频换脸_1983460631963738114.json]
+members: [图片生成/反推提示词/Qwen3-VL-8B 视频反推提示词_2053010880551505922.json, 图片生成/反推提示词/视频反推Qwen3 VL 8B_2069990597007597569.json, 图片生成/反推提示词/视频反推，Qwen3 VL_2069990533380005889.json, 图片生成/文生图/Qwen3 VL电商反推图片提示词+全节点注释_2070119852093820930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_31
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/照片视频换脸工作流_1888099813794447362.json、图片生成/文生图/图生视频、文生视频、动作迁移、MiniMax H3、LTX、Wan - 去AI感、增强真实感_2100218352814874625.json、平台全量/图生视频、文生视频、动作迁移、MiniMax_H3、LTX、Wan_-_去AI感、增强真实感_2101497115632553985.json、平台全量/图生视频、文生视频、动作迁移、MiniMax_H3、LTX、Wan_-_去AI感、增强真实感_2102661082069422081.json、平台全量/图生视频、文生视频、动作迁移、MiniMax_H3、LTX、Wan_-_去AI感、增强真实感_2117481132567654402.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/Qwen3-VL-8B 视频反推提示词_2053010880551505922.json、图片生成/反推提示词/视频反推Qwen3 VL 8B_2069990597007597569.json、图片生成/反推提示词/视频反推，Qwen3 VL_2069990533380005889.json、图片生成/文生图/Qwen3 VL电商反推图片提示词+全节点注释_2070119852093820930.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `RHHiddenNodes`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
+全部 4 个 workflow 都包含：
+- `AILab_QwenVL`
+- `PreviewAny`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/7 个有
-- `孤海注释` —— 4/7 个有
-- `PreviewImage` —— 2/7 个有
+- `CR Prompt Text` —— 3/4 个有
+- `ShellAgentPluginOutputText` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `ImageLoader` —— 2/4 个有
+- `SaveImage` —— 2/4 个有
+- `VHS_VideoCombine` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 

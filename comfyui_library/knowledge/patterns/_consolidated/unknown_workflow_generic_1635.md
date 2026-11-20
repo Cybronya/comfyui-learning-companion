@@ -3,40 +3,44 @@ name: unknown_workflow_generic_1635
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [GroundingDinoModelLoader (segment anything2), GroundingDinoSAMSegment (segment anything), ImpactDilateMask, JoinImageWithAlpha, LoadImage, MaskBlur+, SAMModelLoader (segment anything), SaveImage]
+coverage: 0.906
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Image Batch, ImageConcanate, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, Text List, ToString]
 problems: []
 missing: []
-members: [图片生成/图生图/sim-双层背景锯齿修复抠图_2003432165843058689.json, 图片生成/图生图/双层背景锯齿修复抠图_2003311540587593729.json]
+members: [图片生成/文生图/可乐-小说剧本生成分镜提示词_2008160689906520065.json, 视频生成/图生视频/可乐-漫剧分镜生成视频_2008539333560639489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1635
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/sim-双层背景锯齿修复抠图_2003432165843058689.json、图片生成/图生图/双层背景锯齿修复抠图_2003311540587593729.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/可乐-小说剧本生成分镜提示词_2008160689906520065.json、视频生成/图生视频/可乐-漫剧分镜生成视频_2008539333560639489.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GroundingDinoModelLoader (segment anything2)`
-- `GroundingDinoSAMSegment (segment anything)`
-- `ImpactDilateMask`
-- `JoinImageWithAlpha`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Batch`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MaskBlur+`
-- `SAMModelLoader (segment anything)`
-- `SaveImage`
+- `PreviewImage`
+- `Text List`
+- `ToString`
 
 **可变部分**（部分 workflow 才有）：
-- `InvertMask` —— 1/2 个有
-- `MaskFillHole` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `PreviewBridge` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `RH_Sora2_I2V` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 

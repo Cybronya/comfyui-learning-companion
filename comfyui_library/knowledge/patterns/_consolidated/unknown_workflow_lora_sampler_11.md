@@ -3,37 +3,36 @@ name: unknown_workflow_lora_sampler_11
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [ImageConcatMulti, ImageResizeKJv2, LoadImage, PreviewImage, RunningHub OmniConsistency LoraLoader, RunningHub OmniConsistency Sampler, SaveImage]
+coverage: 0.917
+common_nodes: [FluxTextDrawGlyph, FluxTextLoraLoader, FluxTextPipeLine, FluxTextSampler, ImageStitch, LoadImage, MaskToImage, PreviewImage, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/OmniConsistency转绘（3D）_1930847426591305730.json, 图片生成/图生图/OmniConsistency转绘（水墨）_1929143547914784770.json]
+members: [图片生成/文生图/FluxText中文渲染和编辑_1942946326105776130.json, 图片生成/文生图/FluxText中文渲染和编辑_2052291394882023425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/OmniConsistency转绘（3D）_1930847426591305730.json、图片生成/图生图/OmniConsistency转绘（水墨）_1929143547914784770.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/FluxText中文渲染和编辑_1942946326105776130.json、图片生成/文生图/FluxText中文渲染和编辑_2052291394882023425.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+- `FluxTextDrawGlyph`
+- `FluxTextLoraLoader`
+- `FluxTextPipeLine`
+- `FluxTextSampler`
+- `ImageStitch`
 - `LoadImage`
+- `MaskToImage`
 - `PreviewImage`
-- `RunningHub OmniConsistency LoraLoader`
-- `RunningHub OmniConsistency Sampler`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 1/2 个有
-- `TextSwitchCase` —— 1/2 个有
+- `Text Multiline`
 
 ## 典型参数
 

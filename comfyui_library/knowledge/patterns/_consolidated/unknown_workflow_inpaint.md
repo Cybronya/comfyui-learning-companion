@@ -1,50 +1,40 @@
 ---
 name: unknown_workflow_inpaint
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.7078
-common_nodes: [BiRefNet_Hugo, GrowMask, INPAINT_ExpandMask, InspyrenetRembg, InvertMask, JoinImageWithAlpha, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: RmBgUltra V2, LayerMask: SegmentAnythingUltra V2, LayerUtility: ImageRemoveAlpha, LoadImage, PreviewImage, RMBG, SaveImage]
+coverage: 0.86825
+common_nodes: [CR Text, GrowMaskWithBlur, INPAINT_MaskedFill, ImageScale, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能抠图 能应对毛发 玻璃_1921584351258279938.json, 图片生成/图生图/全能自动抠图工作流_1987847916989648897.json, 平台全量/【全能抠图】一键批量抠图 抠毛发 抠玻璃_1917838389754925057.json, 平台全量/全能抠图 八种抠图最全面_1935172450475024386.json, 平台全量/全能抠图 能应对毛发 玻璃_1916308814780366850.json]
+members: [图片生成/图生图/hs_ 全能图片V1 2，效果图配景局部迁移_1991862778034188289.json, 图片生成/图生图/全能图片V1局部修改_1994970971058659329.json, 图片生成/文生图/全能图片V12-0.25元一次_1991544351375441921.json, 图片生成/文生图/全能图片V12-0.25元一次_1997470281025404930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能抠图 能应对毛发 玻璃_1921584351258279938.json、图片生成/图生图/全能自动抠图工作流_1987847916989648897.json、平台全量/【全能抠图】一键批量抠图 抠毛发 抠玻璃_1917838389754925057.json、平台全量/全能抠图 八种抠图最全面_1935172450475024386.json、平台全量/全能抠图 能应对毛发 玻璃_1916308814780366850.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/hs_ 全能图片V1 2，效果图配景局部迁移_1991862778034188289.json、图片生成/图生图/全能图片V1局部修改_1994970971058659329.json、图片生成/文生图/全能图片V12-0.25元一次_1991544351375441921.json、图片生成/文生图/全能图片V12-0.25元一次_1997470281025404930.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BiRefNet_Hugo`
-- `GrowMask`
-- `INPAINT_ExpandMask`
-- `InspyrenetRembg`
-- `InvertMask`
-- `JoinImageWithAlpha`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerMask: RmBgUltra V2`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LayerUtility: ImageRemoveAlpha`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `GrowMaskWithBlur`
+- `INPAINT_MaskedFill`
+- `ImageScale`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewImage`
-- `RMBG`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ETN_Translate` —— 4/5 个有
-- `DeepTranslatorTextNode` —— 1/5 个有
-- `Image Compare (mtb)` —— 1/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
+- `ImageConcanate` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

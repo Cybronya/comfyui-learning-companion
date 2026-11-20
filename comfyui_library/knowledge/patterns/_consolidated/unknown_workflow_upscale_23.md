@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_upscale_23
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.8666
-common_nodes: [LoadImage, SUPIR_Upscale, SaveImage]
+coverage: 0.755667
+common_nodes: [ImageCompare, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/SUPIR高清放大_1929152001744211970.json, 图片生成/图生图/一键超级放大-可在线运行_1909071667459727361.json, 图片生成/图生图/图片放大修复细节_1897938893076156417.json, 平台全量/supir 图像无损放大 增加细节_1923687583178477569.json, 平台全量/【遇见AI】放大的5种高级方法-SUPIR放大_2032755015848300546.json]
+members: [comfyui-workflow-templates-json/utility_recraft_crisp_image_upscale.json, comfyui-workflow-templates-json/utility_seedvr2_3b_int8_upscale_image.json, comfyui-workflow-templates-json/utility_seedvr2_7b_int8_upscale_image.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_23
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/SUPIR高清放大_1929152001744211970.json、图片生成/图生图/一键超级放大-可在线运行_1909071667459727361.json、图片生成/图生图/图片放大修复细节_1897938893076156417.json、平台全量/supir 图像无损放大 增加细节_1923687583178477569.json、平台全量/【遇见AI】放大的5种高级方法-SUPIR放大_2032755015848300546.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/utility_recraft_crisp_image_upscale.json、comfyui-workflow-templates-json/utility_seedvr2_3b_int8_upscale_image.json、comfyui-workflow-templates-json/utility_seedvr2_7b_int8_upscale_image.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `ImageCompare`
 - `LoadImage`
-- `SUPIR_Upscale`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Simple Image Compare` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
+- `1970dcb4-982a-4c01-a373-4d239a3041e4` —— 2/3 个有
+- `RecraftCrispUpscaleNode` —— 1/3 个有
 
 ## 典型参数
 

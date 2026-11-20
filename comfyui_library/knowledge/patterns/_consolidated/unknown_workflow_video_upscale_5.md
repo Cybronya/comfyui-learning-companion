@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_video_upscale_5
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.857143
-common_nodes: [ImageUpscaleWithModel, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.793
+common_nodes: [FaceRestoreCFWithModel, FaceRestoreModelLoader, ImageResize+, ImageUpscaleWithModel, LayerColor: Brightness & Contrast, LoadImage, PreviewImage, ReActorFaceSwap, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/AI Video Studio PR插件VIP专用视频降噪_2090371304447893506.json, 平台全量/自动视频4倍放大4x视频放大fool_1919694922004500481.json, 平台全量/视频快速放大_1972593615681814530.json, 平台全量/视频高清放大-极简版_1884186697608085505.json, 平台全量/视频高清放大-极简版_1884189189603315713.json, 平台全量/视频高清放大第2代｜RealESRGAN 实景逐帧放大（4×）_1979853729920880641.json, 平台全量/视频高清放大，第1代｜ESRGAN 逐帧放大_1979817149134966786.json]
+members: [图片生成/图生图/快速换脸_1919744550246481921.json, 视频生成/图生视频/【视频流】Reactor视频换脸_1819030257314758658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_5
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/AI Video Studio PR插件VIP专用视频降噪_2090371304447893506.json、平台全量/自动视频4倍放大4x视频放大fool_1919694922004500481.json、平台全量/视频快速放大_1972593615681814530.json、平台全量/视频高清放大-极简版_1884186697608085505.json、平台全量/视频高清放大-极简版_1884189189603315713.json…）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/快速换脸_1919744550246481921.json、视频生成/图生视频/【视频流】Reactor视频换脸_1819030257314758658.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `FaceRestoreCFWithModel`
+- `FaceRestoreModelLoader`
+- `ImageResize+`
 - `ImageUpscaleWithModel`
+- `LayerColor: Brightness & Contrast`
+- `LoadImage`
+- `PreviewImage`
+- `ReActorFaceSwap`
 - `UpscaleModelLoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `VHS_VideoInfo` —— 3/7 个有
-- `LoadImage` —— 2/7 个有
 
 ## 典型参数
 
@@ -42,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,38 +3,31 @@ name: unknown_workflow_generic_845
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.78
-common_nodes: [ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
+coverage: 0.75025
+common_nodes: [RH_Sora2_T2V_PRO, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext三图模式_1938500281393176578.json, 图片生成/图生图/Flux Kontext双图模式_1937089697271173121.json, 图片生成/图生图/flux Kontext三图模式_1937094945591185409.json, 平台全量/Flux Kontext三图模式人物画脸谱换背景_1937742240431411201.json]
+members: [视频生成/图生视频/全能视频S2   25秒文生视频_2027211931253215233.json, 视频生成/文生视频/全能视频S Pro 文生视频 (15-25秒) 钞能力版_1990018283019620353.json, 视频生成/文生视频/全能视频S2 Pro 文生视频_1987731621698801665.json, 视频生成/文生视频/文生视频工作流｜全能视频S 2 Pro 最长二十五秒_2100471530965790722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_845
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux Kontext三图模式_1938500281393176578.json、图片生成/图生图/Flux Kontext双图模式_1937089697271173121.json、图片生成/图生图/flux Kontext三图模式_1937094945591185409.json、平台全量/Flux Kontext三图模式人物画脸谱换背景_1937742240431411201.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频S2   25秒文生视频_2027211931253215233.json、视频生成/文生视频/全能视频S Pro 文生视频 (15-25秒) 钞能力版_1990018283019620353.json、视频生成/文生视频/全能视频S2 Pro 文生视频_1987731621698801665.json、视频生成/文生视频/文生视频工作流｜全能视频S 2 Pro 最长二十五秒_2100471530965790722.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ImageConcanate`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PreviewImage`
-- `RH_ComfyFluxKontext`
-- `RH_Translator`
-- `SaveImage`
+- `RH_Sora2_T2V_PRO`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: CropByMask V2` —— 3/4 个有
-- `LayerUtility: ImageRemoveAlpha` —— 3/4 个有
-- `RMBG` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
 
 ## 典型参数
 

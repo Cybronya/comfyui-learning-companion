@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_727
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.7034
-common_nodes: [SaveImage]
+coverage: 0.913
+common_nodes: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), InvertMask, InvertMask (segment anything), LayerUtility: CropByMask, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SAMLoader, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json, 图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json, 图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json, 图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json, 图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json]
+members: [图片生成/图生图/co 批量裁剪新2_2071504923543556097.json, 图片生成/图生图/co 批量裁剪新3_2071519463295508482.json, 图片生成/图生图/co裁剪1_2075961816714407937.json, 图片生成/图生图/co裁剪_2075131937269829633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_727
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json、图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json、图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json、图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json、图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/co 批量裁剪新2_2071504923543556097.json、图片生成/图生图/co 批量裁剪新3_2071519463295508482.json、图片生成/图生图/co裁剪1_2075961816714407937.json、图片生成/图生图/co裁剪_2075131937269829633.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `InvertMask`
+- `InvertMask (segment anything)`
+- `LayerUtility: CropByMask`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `SAMLoader`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 4/5 个有
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 4/5 个有
-- `RHLLMChatNode` —— 3/5 个有
-- `RH_RhartImageG2TextToImage` —— 2/5 个有
+- `GroupSwitcher` —— 2/4 个有
 
 ## 典型参数
 

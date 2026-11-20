@@ -3,30 +3,31 @@ name: unknown_workflow_generic_809
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.857
-common_nodes: [65c22b29-59aa-496b-89c6-55a603658670, 7b34ab90-36f9-45ba-a665-71d418f0df18, LoadImage, SaveImage]
+coverage: 0.875
+common_nodes: [SaveAudioMP3, SparkTTS_VoiceCreator]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json]
+members: [数字人/数字人/AI声音生成器_1972181358317596673.json, 音频生成/音频生成/AI声音生成器_2014666051899891713.json, 音频生成/音频生成/AI声音生成器_2089691701567909890.json, 音频生成/音频生成/声音_2018550234237902850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_809
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/AI声音生成器_1972181358317596673.json、音频生成/音频生成/AI声音生成器_2014666051899891713.json、音频生成/音频生成/AI声音生成器_2089691701567909890.json、音频生成/音频生成/声音_2018550234237902850.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `65c22b29-59aa-496b-89c6-55a603658670`
-- `7b34ab90-36f9-45ba-a665-71d418f0df18`
-- `LoadImage`
-- `SaveImage`
+- `SaveAudioMP3`
+- `SparkTTS_VoiceCreator`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveAudio` —— 2/4 个有
 
 ## 典型参数
 

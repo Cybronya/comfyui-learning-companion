@@ -1,41 +1,46 @@
 ---
 name: unknown_workflow_vae_7
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.682
-common_nodes: [FluxKontextImageScale, GoogleTranslateTextNode, ImageConcatMulti, ImageStitch, LoadImage, PreviewImage, SaveImage, Text Multiline, VAEEncode, VAELoader, easy showAnything, workflow>Edit, workflow>FLUX.1 Kontext Image Edit]
+frequency: 2
+level: weak
+coverage: 0.9165
+common_nodes: [Hy3D21CameraConfig, Hy3D21LoadImageWithTransparency, Hy3D21VAEDecode, Hy3D21VAELoader, Hy3DExportMesh, Hy3DMeshGenerator, Hy3DMeshUVWrap, Hy3DMultiViewsGenerator, Hy3DPostprocessMesh, INTConstant, SaveImage, StringConstant]
 problems: []
 missing: []
-members: [图片生成/图生图/美甲艺术_Kontext-DEV开源ComfyUI官方版_1938415345692512257.json, 平台全量/电商商品展示_Kontext-DEV开源ComfyUI官方版_1938393843954024449.json, 平台全量/电商商品展示_Kontext-DEV开源ComfyUI官方版_1939273177384067074.json, 平台全量/美甲艺术_Kontext-DEV开源ComfyUI官方版_1939280448814030849.json]
+members: [图片生成/图生图/Hunyuan3D 2.1六视图工作流_1938058287684456450.json, 图片生成/图生图/Hunyuan3D 2.1建模及高质量贴图_1938043464606990337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_vae_7
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/美甲艺术_Kontext-DEV开源ComfyUI官方版_1938415345692512257.json、平台全量/电商商品展示_Kontext-DEV开源ComfyUI官方版_1938393843954024449.json、平台全量/电商商品展示_Kontext-DEV开源ComfyUI官方版_1939273177384067074.json、平台全量/美甲艺术_Kontext-DEV开源ComfyUI官方版_1939280448814030849.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Hunyuan3D 2.1六视图工作流_1938058287684456450.json、图片生成/图生图/Hunyuan3D 2.1建模及高质量贴图_1938043464606990337.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `FluxKontextImageScale`
-- `GoogleTranslateTextNode`
-- `ImageConcatMulti`
-- `ImageStitch`
-- `LoadImage`
-- `PreviewImage`
+全部 2 个 workflow 都包含：
+- `Hy3D21CameraConfig`
+- `Hy3D21LoadImageWithTransparency`
+- `Hy3D21VAEDecode`
+- `Hy3D21VAELoader`
+- `Hy3DExportMesh`
+- `Hy3DMeshGenerator`
+- `Hy3DMeshUVWrap`
+- `Hy3DMultiViewsGenerator`
+- `Hy3DPostprocessMesh`
+- `INTConstant`
 - `SaveImage`
-- `Text Multiline`
-- `VAEEncode`
-- `VAELoader`
-- `easy showAnything`
-- `workflow>Edit`
-- `workflow>FLUX.1 Kontext Image Edit`
+- `StringConstant`
+
+**可变部分**（部分 workflow 才有）：
+- `Hy3DBakeMultiViews` —— 1/2 个有
+- `Hy3DInPaint` —— 1/2 个有
+- `Preview3D` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 
@@ -47,4 +52,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

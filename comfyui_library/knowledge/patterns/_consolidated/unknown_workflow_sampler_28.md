@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_sampler_28
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.924
-common_nodes: [ImageConcanate, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage]
+coverage: 1
+common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/UniWorld全功能教学测评版工作流_1931014137621753858.json, 图片生成/图生图/北大开源！极速版-UniWorld图像编辑工作流_1930941963011600385.json, 图片生成/图生图/最新UniWorld图像编辑工作流_1931244323105648642.json, 图片生成/图生图/极速版-UniWorld万物擦除工作流_1931045634722476034.json, 图片生成/图生图/极速版-UniWorld主体替换风格不变编辑工作流V1_1931045885848039426.json, 图片生成/图生图/极速版-UniWorld吉卜力风格转绘工作流_1931046093231206402.json]
+members: [图片生成/图生图/字节-BitDance-文生图_2020025833859059714.json, 图片生成/文生图/2029733758898806786.json, 图片生成/文生图/BitDance 文生图_2026539870499377153.json, 图片生成/文生图/BitDance-14B-64x_2026611465637072898.json, 图片生成/文生图/BitDance文生图大模型：真人照片生成能力实测！_2027013975447183361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_28
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/UniWorld全功能教学测评版工作流_1931014137621753858.json、图片生成/图生图/北大开源！极速版-UniWorld图像编辑工作流_1930941963011600385.json、图片生成/图生图/最新UniWorld图像编辑工作流_1931244323105648642.json、图片生成/图生图/极速版-UniWorld万物擦除工作流_1931045634722476034.json、图片生成/图生图/极速版-UniWorld主体替换风格不变编辑工作流V1_1931045885848039426.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/字节-BitDance-文生图_2020025833859059714.json、图片生成/文生图/2029733758898806786.json、图片生成/文生图/BitDance 文生图_2026539870499377153.json、图片生成/文生图/BitDance-14B-64x_2026611465637072898.json、图片生成/文生图/BitDance文生图大模型：真人照片生成能力实测！_2027013975447183361.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageConcanate`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `RunningHubUniWorldSampler`
-- `RunningUniworldModelLoader`
+全部 5 个 workflow 都包含：
+- `BitDanceDecode`
+- `BitDanceLoader`
+- `BitDanceResolution`
+- `BitDanceSampler`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
-- `PDIMAGE_LongerSize` —— 5/6 个有
-- `DeepTranslatorTextNode` —— 1/6 个有
+- `BitDanceTextEncodeCached` —— 3/5 个有
+- `CR Text` —— 3/5 个有
+- `BitDanceTextEncode` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
 
 ## 典型参数
 

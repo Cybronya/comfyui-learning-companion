@@ -1,46 +1,38 @@
 ---
 name: unknown_workflow_sampler_75
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.78
-common_nodes: [Fast Groups Muter (rgthree), HeartMuLa_Generate, ImpactSwitch, Int, LoadAudio, MultiLineLyrics, MultiLinePromptACES, RHHiddenNodes, RH_Suno_Custom, SaveAudio, SongGeneration_Loader, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2, Text Find and Replace, TextBox, Textbox, WujiCleaner]
+frequency: 2
+level: weak
+coverage: 0.866
+common_nodes: [LoadImage, RH_Translator, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/A I 音乐最强创作_2021032340893470721.json, 音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_1938171429001019394.json, 音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_2013529203962023937.json]
+members: [图片生成/图生图/OneReward图生图重绘_1965637128468185090.json, 图片生成/图生图/图像编辑 _ OneReward局部重绘_1966741107927396353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_75
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/A I 音乐最强创作_2021032340893470721.json、音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_1938171429001019394.json、音频生成/音频生成/HeartMu、SunoV5 、腾讯SongGeneration三合一手自一体AI音乐最强创作_2013529203962023937.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/OneReward图生图重绘_1965637128468185090.json、图片生成/图生图/图像编辑 _ OneReward局部重绘_1966741107927396353.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `HeartMuLa_Generate`
-- `ImpactSwitch`
-- `Int`
-- `LoadAudio`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `RHHiddenNodes`
-- `RH_Suno_Custom`
-- `SaveAudio`
-- `SongGeneration_Loader`
-- `SongGeneration_Sampler`
-- `SongGeneration_Stage1`
-- `SongGeneration_Stage2`
-- `Text Find and Replace`
-- `TextBox`
-- `Textbox`
-- `WujiCleaner`
+全部 2 个 workflow 都包含：
+- `LoadImage`
+- `RH_Translator`
+- `RunningHub OneReward Loader`
+- `RunningHub OneReward Sampler`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 
@@ -52,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

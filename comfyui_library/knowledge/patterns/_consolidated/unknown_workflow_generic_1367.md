@@ -1,38 +1,48 @@
 ---
 name: unknown_workflow_generic_1367
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.716667
-common_nodes: [CR Text, LoadImage, PreviewAny, RH_LLMAPI_NODE, SaveVideo]
+frequency: 2
+level: weak
+coverage: 0.4175
+common_nodes: [GetNode, Image Comparer (rgthree), Int, JjkText, LoadImage, RH_Captioner, RH_Nano_Banana_Image2Image, SaveImage, SetNode, ShowText|pysssss, StringFunction|pysssss, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S图生视频（高清无水印+支持横屏竖屏+自动提示词优化）_1984621354714611714.json, 视频生成/图生视频/全能视频S图生视频（高清无水印+支持横屏竖屏+自动提示词优化）_2009919049580417026.json, 视频生成/文生视频/全能视频S文生视频每天免费5个视频后面0.05每条（高清无水印+支持横屏竖屏+自动提示词优化）_1984613944016977921.json]
+members: [图片生成/图生图/GTYH_V1.5-2_1984502909108895745.json, 图片生成/图生图/GTYH_V1.6_1985246203967381505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1367
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能视频S图生视频（高清无水印+支持横屏竖屏+自动提示词优化）_1984621354714611714.json、视频生成/图生视频/全能视频S图生视频（高清无水印+支持横屏竖屏+自动提示词优化）_2009919049580417026.json、视频生成/文生视频/全能视频S文生视频每天免费5个视频后面0.05每条（高清无水印+支持横屏竖屏+自动提示词优化）_1984613944016977921.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/GTYH_V1.5-2_1984502909108895745.json、图片生成/图生图/GTYH_V1.6_1985246203967381505.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：42%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
+全部 2 个 workflow 都包含：
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `Int`
+- `JjkText`
 - `LoadImage`
-- `PreviewAny`
-- `RH_LLMAPI_NODE`
-- `SaveVideo`
+- `RH_Captioner`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `SetNode`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `RH_Sora2_I2V` —— 2/3 个有
-- `RH_Sora2_T2V` —— 1/3 个有
+- `Big Image Switch [Dream]` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Image Switch (JPS)` —— 1/2 个有
+- `ImpactStringSelector` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
 
 ## 典型参数
 
@@ -44,4 +54,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

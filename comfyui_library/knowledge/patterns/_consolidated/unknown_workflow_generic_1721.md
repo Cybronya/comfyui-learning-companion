@@ -3,35 +3,35 @@ name: unknown_workflow_generic_1721
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9535
-common_nodes: [CR Text, LoadImage, MultiTextConcatenate, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.944
+common_nodes: [CR Text, LoadImage, PreviewTextNode, RH_LLMAPI_Pro_Node, ShellAgentPluginOutputText, Text Multiline, TextPreview, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/字体设计_全能图片G_2054030361105059841.json, 图片生成/图生图/车辆多角度展示图_2062497651697999873.json]
+members: [视频生成/图生视频/医疗科普短视频文案_分镜脚本工作流【超哥AIGC】_2045054526599729153.json, 视频生成/图生视频/超哥医疗科普短视频文案工作流_2043158105994829826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1721
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/字体设计_全能图片G_2054030361105059841.json、图片生成/图生图/车辆多角度展示图_2062497651697999873.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/医疗科普短视频文案_分镜脚本工作流【超哥AIGC】_2045054526599729153.json、视频生成/图生视频/超哥医疗科普短视频文案工作流_2043158105994829826.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Text`
 - `LoadImage`
-- `MultiTextConcatenate`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25FlareImageToImage` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `PreviewTextNode`
+- `RH_LLMAPI_Pro_Node`
+- `ShellAgentPluginOutputText`
+- `Text Multiline`
+- `TextPreview`
+- `easy saveText`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -3,29 +3,37 @@ name: unknown_workflow_generic_1484
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [LoadImage, SaveImageAdvanced, d069257b-0abc-4d5a-9a19-579e0fe5bd8d]
+coverage: 0.8945
+common_nodes: [CR Text, RHHiddenNodes, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, SaveImage, easy imageConcat, easy showAnything]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_mage_flow_edit_int8.json, comfyui-workflow-templates-json/image_mage_flow_edit_turbo_int8.json]
+members: [图片生成/图生图/全能视频S-分镜头制作-图（以URL方式上传）生分镜头_1992902561994788866.json, 视频生成/图生视频/电商产品分镜制作，全能视频生成_2017177175027359745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1484
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_mage_flow_edit_int8.json、comfyui-workflow-templates-json/image_mage_flow_edit_turbo_int8.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能视频S-分镜头制作-图（以URL方式上传）生分镜头_1992902561994788866.json、视频生成/图生视频/电商产品分镜制作，全能视频生成_2017177175027359745.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `SaveImageAdvanced`
-- `d069257b-0abc-4d5a-9a19-579e0fe5bd8d`
+- `CR Text`
+- `RHHiddenNodes`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `easy imageConcat`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Light-Tool: LoadImageFromURL` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

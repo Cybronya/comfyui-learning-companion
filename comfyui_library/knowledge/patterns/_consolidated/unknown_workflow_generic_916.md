@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_916
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.78475
-common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2]
+coverage: 0.877667
+common_nodes: [CR Prompt Text, Flux3PELoader, Flux3PromptEnhance, JWInteger, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/最新SeedVR 3B图像快速高清放大工作流_1938104653961957377.json, 图片生成/图生图/最新SeedVR 7B图像高清放大工作流_1938072823007219714.json, 平台全量/seed图像放大_2020073801639272449.json, 平台全量/图像高清放大 SeedVR2_1938281959670087681.json]
+members: [图片生成/反推提示词/Flux3 Klein PE提示词强化_2111363661150375937.json, 图片生成/反推提示词/Flux3+Klein+PE提示词强化_2111485319303491586.json, 图片生成/反推提示词/Flux3_Klein_PE提示词强化_2114184883919736833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_916
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/最新SeedVR 3B图像快速高清放大工作流_1938104653961957377.json、图片生成/图生图/最新SeedVR 7B图像高清放大工作流_1938072823007219714.json、平台全量/seed图像放大_2020073801639272449.json、平台全量/图像高清放大 SeedVR2_1938281959670087681.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/Flux3 Klein PE提示词强化_2111363661150375937.json、图片生成/反推提示词/Flux3+Klein+PE提示词强化_2111485319303491586.json、图片生成/反推提示词/Flux3_Klein_PE提示词强化_2114184883919736833.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `Flux3PELoader`
+- `Flux3PromptEnhance`
+- `JWInteger`
 - `LoadImage`
 - `SaveImage`
-- `SeedVR2`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 

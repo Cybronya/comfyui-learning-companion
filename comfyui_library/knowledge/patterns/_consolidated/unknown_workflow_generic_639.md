@@ -3,33 +3,33 @@ name: unknown_workflow_generic_639
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7384
-common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
+coverage: 0.9142
+common_nodes: [LoadImage, RH_Hailuo_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json, comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json, comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json]
+members: [视频生成/图生视频/海螺 Hailuo2.3 Image2Video_1987125607056257026.json, 视频生成/图生视频/海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json, 视频生成/图生视频/海螺2.3+Hailuo2.3+MiniMax图生视频+动态表现力+风格化呈现和复杂动作更加流畅_2021400714517417986.json, 视频生成/图生视频/海螺2.3图生视频hailuo2.3_1987019541161119746.json, 视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_639
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json、comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json、comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/海螺 Hailuo2.3 Image2Video_1987125607056257026.json、视频生成/图生视频/海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json、视频生成/图生视频/海螺2.3+Hailuo2.3+MiniMax图生视频+动态表现力+风格化呈现和复杂动作更加流畅_2021400714517417986.json、视频生成/图生视频/海螺2.3图生视频hailuo2.3_1987019541161119746.json、视频生成/文生视频/海螺Hailuo2.3 图生视频_2016515954171191298.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `ImageCompare`
 - `LoadImage`
-- `SaveImageAdvanced`
+- `RH_Hailuo_Image2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `790255fa-100b-4dda-9ab5-e5e1731951db` —— 3/5 个有
-- `bc1c967a-7f6a-4be9-a372-dad16e4f28e3` —— 2/5 个有
+- `PreviewAny` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
 
 ## 典型参数
 

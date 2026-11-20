@@ -3,34 +3,34 @@ name: unknown_workflow_generic_802
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.80175
-common_nodes: [LoadVideo, SaveVideo]
+coverage: 0.9305
+common_nodes: [CR Text, RHLLMChatNode, RH_RhartImageG2OfficialTextToImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json, comfyui-workflow-templates-json/api_seedance2_5_video_editing.json, comfyui-workflow-templates-json/api_seedance2_5_video_extend.json]
+members: [图片生成/文生图/出屏效果 裸眼3D_2058725576176914434.json, 图片生成/文生图/网红冲出手机屏幕 裸眼3D展示_2056633550748864514.json, 图片生成/文生图/网红破屏而出 裸眼3D展示_2056260911157039105.json, 图片生成/文生图/网红破屏而出 裸眼3D展示_2056518368462721025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_802
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json、comfyui-workflow-templates-json/api_seedance2_5_video_editing.json、comfyui-workflow-templates-json/api_seedance2_5_video_extend.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/出屏效果 裸眼3D_2058725576176914434.json、图片生成/文生图/网红冲出手机屏幕 裸眼3D展示_2056633550748864514.json、图片生成/文生图/网红破屏而出 裸眼3D展示_2056260911157039105.json、图片生成/文生图/网红破屏而出 裸眼3D展示_2056518368462721025.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadVideo`
-- `SaveVideo`
+- `CR Text`
+- `RHLLMChatNode`
+- `RH_RhartImageG2OfficialTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Video Slice` —— 3/4 个有
-- `ByteDance2ReferenceNodeV2` —— 2/4 个有
-- `GeminiVideoOmniV2` —— 2/4 个有
-- `d9aa59a4-3784-4796-9f1b-5b467fb41fa1` —— 1/4 个有
+- `StringFunction|pysssss` —— 3/4 个有
+- `Note Plus (mtb)` —— 2/4 个有
 
 ## 典型参数
 

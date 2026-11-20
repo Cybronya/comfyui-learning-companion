@@ -1,44 +1,41 @@
 ---
 name: unknown_workflow_upscale_vae_43
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.8064
-common_nodes: [Image Comparer (rgthree), LoadImage, ResizeImagesByLongerEdge, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed, easy clearCacheAll, easy int]
+coverage: 0.731667
+common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [平台全量/图片高清放大 -速度快效果好 SeedVR2.5+Flash VSR 无损高清图像高清放大 细节还原_2052628503069249537.json, 平台全量/图片高清放大 SeedVR2.5+Flash VSR-速度快效果好 无损高清图像高清放大 细节还原、_2052576796171882498.json, 平台全量/无损高清图像高清放大 最新版SeedVR2.5版 细节还原、低显存友好！_2038496478062186498.json, 平台全量/最新版SeedVR2.5版 无损高清图像高清放大  细节还原、低显存友好！_2040992604074024961.json, 数字人/数字人/YJ-APP-SeedVR2.5高清放大_2038204911585857538.json]
+members: [图片生成/图生图/批量极速一键无损图片高清放大seedvr2_2064578354401075201.json, 图片生成/图生图/组件系列4-图片高清放大-SeedVR2_2058735195414687746.json, 图片生成/图生图/（Seedvr2分块）万物高清放大修复不改变原细节V8.0_2042398439320854530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_43
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/图片高清放大 -速度快效果好 SeedVR2.5+Flash VSR 无损高清图像高清放大 细节还原_2052628503069249537.json、平台全量/图片高清放大 SeedVR2.5+Flash VSR-速度快效果好 无损高清图像高清放大 细节还原、_2052576796171882498.json、平台全量/无损高清图像高清放大 最新版SeedVR2.5版 细节还原、低显存友好！_2038496478062186498.json、平台全量/最新版SeedVR2.5版 无损高清图像高清放大  细节还原、低显存友好！_2040992604074024961.json、数字人/数字人/YJ-APP-SeedVR2.5高清放大_2038204911585857538.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/批量极速一键无损图片高清放大seedvr2_2064578354401075201.json、图片生成/图生图/组件系列4-图片高清放大-SeedVR2_2058735195414687746.json、图片生成/图生图/（Seedvr2分块）万物高清放大修复不改变原细节V8.0_2042398439320854530.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `Image Comparer (rgthree)`
 - `LoadImage`
-- `ResizeImagesByLongerEdge`
+- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 2/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `FlashVSRNode` —— 2/5 个有
-- `Int` —— 2/5 个有
+- `HAIGC_LoadImagesFromZip` —— 1/3 个有
+- `PIP_图像联结` —— 1/3 个有
+- `RH_BatchImages` —— 1/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 

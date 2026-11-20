@@ -3,38 +3,36 @@ name: unknown_workflow_generic_1478
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7525
-common_nodes: [147b517e-5ea6-4fba-84f7-46851be6e4ce, GetImageSize, ImageCompare, LoadImage, PreviewImage, ResizeImageMaskNode, SaveImage]
+coverage: 0.778
+common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageResize+, JjkText, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_anima_lllite_any_control_to_image.json, comfyui-workflow-templates-json/image_anima_lllite_depth_control_to_image.json]
+members: [图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1961237176921034753.json, 图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1964853890552315905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1478
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_anima_lllite_any_control_to_image.json、comfyui-workflow-templates-json/image_anima_lllite_depth_control_to_image.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1961237176921034753.json、图片生成/图生图/全能图片V1最强编辑模型（支持多种编辑模式）_1964853890552315905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `147b517e-5ea6-4fba-84f7-46851be6e4ce`
-- `GetImageSize`
-- `ImageCompare`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `JjkText`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
 - `PreviewImage`
-- `ResizeImageMaskNode`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `28eb0ec0-5d35-42e9-8cb3-d1161dc5a231` —— 1/2 个有
-- `Canny` —— 1/2 个有
-- `ImageInvert` —— 1/2 个有
 
 ## 典型参数
 

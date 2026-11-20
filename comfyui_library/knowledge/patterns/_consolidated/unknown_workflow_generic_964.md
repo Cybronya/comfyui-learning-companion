@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_generic_964
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.91325
-common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage, Text]
+coverage: 0.592
+common_nodes: [HYPIRImageRestoration, Image Comparer (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [平台全量/Aux预处理器香蕉双人动作参考_1997472911923560449.json, 平台全量/全能图片V1简单工作流_1961792075358474241.json, 平台全量/大香蕉  全能图片V1_1963895385922179073.json, 平台全量/香蕉双人动作参考_1983775404098035713.json]
+members: [图片生成/图生图/HYPIR 高清放大（央视推荐）_1951868106232811521.json, 图片生成/图生图/HYPIR-无损高清修复_1965092092236189697.json, 图片生成/图生图/RTX4k超分+HYPIR高清放大加二次修复_2038617804471017473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_964
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Aux预处理器香蕉双人动作参考_1997472911923560449.json、平台全量/全能图片V1简单工作流_1961792075358474241.json、平台全量/大香蕉  全能图片V1_1963895385922179073.json、平台全量/香蕉双人动作参考_1983775404098035713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/HYPIR 高清放大（央视推荐）_1951868106232811521.json、图片生成/图生图/HYPIR-无损高清修复_1965092092236189697.json、图片生成/图生图/RTX4k超分+HYPIR高清放大加二次修复_2038617804471017473.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `HYPIRImageRestoration`
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/4 个有
-- `AIO_Preprocessor` —— 1/4 个有
-- `AnyLineArtPreprocessor_aux` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `FluxKontextImageScale` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
 
 ## 典型参数
 

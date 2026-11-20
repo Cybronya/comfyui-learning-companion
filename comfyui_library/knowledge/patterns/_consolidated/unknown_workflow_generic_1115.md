@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, RHSettingsNode, SaveImage, StringConstant]
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/AI换装丨Wan2.7PRO_2077234172925661186.json, 图片生成/图生图/Wan2.7-服装改色_2078016586287509505.json, 图片生成/图生图/改色丨电商服装改色_2076540202029502465.json]
+members: [视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033799658945908737.json, 视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033804143860649986.json, 视频生成/图生视频/Kling_V26ProMotionControl_v2.6_2033808723172397057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1115
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AI换装丨Wan2.7PRO_2077234172925661186.json、图片生成/图生图/Wan2.7-服装改色_2078016586287509505.json、图片生成/图生图/改色丨电商服装改色_2076540202029502465.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033799658945908737.json、视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033804143860649986.json、视频生成/图生视频/Kling_V26ProMotionControl_v2.6_2033808723172397057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -24,13 +24,12 @@ source: knowledge_consolidation
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RHSettingsNode`
-- `SaveImage`
-- `StringConstant`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan27ImageEditPro` —— 2/3 个有
-- `RH_AlibabaWan27ImageEdit` —— 1/3 个有
+- `RH_KlingO1_VideoEdit` —— 2/3 个有
+- `RH_KlingV26ProMotionControl` —— 1/3 个有
 
 ## 典型参数
 

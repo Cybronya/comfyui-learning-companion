@@ -3,39 +3,33 @@ name: unknown_workflow_generic_644
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8132
-common_nodes: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, SaveImage]
+coverage: 0.8284
+common_nodes: [RH_Sora2_T2V, RH_Translator, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Joy-Caption-Beta-One_1936246760434208770.json, 图片生成/反推提示词/Joy3反推提示词_1951286525193564161.json, 图片生成/反推提示词/最强JoyCaption3图像反推提示词_2074044403320188930.json, 图片生成/反推提示词/最强JoyCaption3图像反推提示词_2074053430632607745.json, 图片生成/反推提示词/自用反推提示词_1966095069008883713.json]
+members: [视频生成/文生视频/全能视频S 文生视频_1974241273257267201.json, 视频生成/文生视频/全能视频S文生视频（根叔）_1977225512030478337.json, 视频生成/文生视频/全能视频S文生视频（横版_竖版），无水印，速度快_1986026989498892290.json, 视频生成/文生视频/全能视频S横版15s高清文生视频_1975767839640563713.json, 视频生成/文生视频/全能视频S竖版15s高清文生视频_1975464849478168578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_644
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/Joy-Caption-Beta-One_1936246760434208770.json、图片生成/反推提示词/Joy3反推提示词_1951286525193564161.json、图片生成/反推提示词/最强JoyCaption3图像反推提示词_2074044403320188930.json、图片生成/反推提示词/最强JoyCaption3图像反推提示词_2074053430632607745.json、图片生成/反推提示词/自用反推提示词_1966095069008883713.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/全能视频S 文生视频_1974241273257267201.json、视频生成/文生视频/全能视频S文生视频（根叔）_1977225512030478337.json、视频生成/文生视频/全能视频S文生视频（横版_竖版），无水印，速度快_1986026989498892290.json、视频生成/文生视频/全能视频S横版15s高清文生视频_1975767839640563713.json、视频生成/文生视频/全能视频S竖版15s高清文生视频_1975464849478168578.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: JoyCaptionBeta1ExtraOptions`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LoadImage`
-- `SaveImage`
+- `RH_Sora2_T2V`
+- `RH_Translator`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `PreviewTextNode` —— 2/5 个有
-- `Bjornulf_ShowStringText` —— 1/5 个有
+- `Text` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
 
 ## 典型参数
 

@@ -3,37 +3,34 @@ name: unknown_workflow_generic_1618
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.647
-common_nodes: [AIO_Preprocessor, GetNode, IDM-VTON, Image Comparer (rgthree), ImageResizeKJ, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PipelineLoader, SaveImage, SetNode]
+coverage: 1
+common_nodes: [PreviewTextNode, RH_LLMAPI_Pro_Node, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/WUBUIDM-VTON换装_2072622152456695810.json, 平台全量/IDM-VTON换装_1896950902497124353.json]
+members: [图片生成/文生图/【一键大片】复刻工作流（九宫格分镜图）_2028382299754078209.json, 图片生成/文生图/全能 G-image2.0【一键大片】复刻（九宫格分镜图）_2052973260589027329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1618
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/WUBUIDM-VTON换装_2072622152456695810.json、平台全量/IDM-VTON换装_1896950902497124353.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/【一键大片】复刻工作流（九宫格分镜图）_2028382299754078209.json、图片生成/文生图/全能 G-image2.0【一键大片】复刻（九宫格分镜图）_2052973260589027329.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `GetNode`
-- `IDM-VTON`
-- `Image Comparer (rgthree)`
-- `ImageResizeKJ`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PipelineLoader`
+- `PreviewTextNode`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `SetNode`
+- `Text Multiline`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `RH_RhartImageG2TextToImage` —— 1/2 个有
 
 ## 典型参数
 

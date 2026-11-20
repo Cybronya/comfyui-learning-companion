@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_video_82
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.88
-common_nodes: [VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.738
+common_nodes: [GetVideoComponents, LoadImage, SaveVideo, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/视频转视频一键换脸_1901238671687696386.json, 视频生成/图生视频/一张图片-视频换脸_1928761802551889921.json, 视频生成/图生视频/一键图片转视频_1890497294351900674.json, 视频生成/图生视频/视频一键换脸_1901238609075412993.json, 视频生成/图生视频/超简单高质量视频换脸工作流（小显存的福音）_2051913797467684865.json]
+members: [视频生成/图生视频/海螺Hailuo H3图生视频（RH版）_2084004108700311553.json, 视频生成/图生视频/海螺Hailuo H3多参考生视频（可9图3视频3音频）_2084009862207463426.json, 视频生成/图生视频/海螺Hailuo H3首尾帧视频_2083997798533521409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_82
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/视频转视频一键换脸_1901238671687696386.json、视频生成/图生视频/一张图片-视频换脸_1928761802551889921.json、视频生成/图生视频/一键图片转视频_1890497294351900674.json、视频生成/图生视频/视频一键换脸_1901238609075412993.json、视频生成/图生视频/超简单高质量视频换脸工作流（小显存的福音）_2051913797467684865.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/海螺Hailuo H3图生视频（RH版）_2084004108700311553.json、视频生成/图生视频/海螺Hailuo H3多参考生视频（可9图3视频3音频）_2084009862207463426.json、视频生成/图生视频/海螺Hailuo H3首尾帧视频_2083997798533521409.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `VHS_LoadVideo`
+全部 3 个 workflow 都包含：
+- `GetVideoComponents`
+- `LoadImage`
+- `SaveVideo`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `ReActorFaceSwap` —— 4/5 个有
-- `VHS_VideoInfo` —— 1/5 个有
-- `workflow/视频` —— 1/5 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 2/3 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/3 个有
 
 ## 典型参数
 

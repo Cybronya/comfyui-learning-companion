@@ -3,17 +3,17 @@ name: unknown_workflow_generic_806
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.9
-common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
+coverage: 0.895
+common_nodes: [MuyeTextEditOutput, PreviewAny, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, easy saveText]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_nano_banana_2_1_image_edit.json, comfyui-workflow-templates-json/api_nano_banana_2_lite_image_edit.json, comfyui-workflow-templates-json/api_topaz_image_enhance_bloom2.json, comfyui-workflow-templates-json/api_topaz_image_enhance_wonder3_5.json]
+members: [图片生成/文生图/漫剧全流程_2035404823050326017.json, 视频生成/图生视频/全流程创作_2048893816224096257.json, 视频生成/文生视频/3.1 文字 ___ 图片（合集）_2031732127598907393.json, 视频生成/文生视频/s2一键出视频（10并发）_2013964208718749697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_806
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_nano_banana_2_1_image_edit.json、comfyui-workflow-templates-json/api_nano_banana_2_lite_image_edit.json、comfyui-workflow-templates-json/api_topaz_image_enhance_bloom2.json、comfyui-workflow-templates-json/api_topaz_image_enhance_wonder3_5.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/漫剧全流程_2035404823050326017.json、视频生成/图生视频/全流程创作_2048893816224096257.json、视频生成/文生视频/3.1 文字 ___ 图片（合集）_2031732127598907393.json、视频生成/文生视频/s2一键出视频（10并发）_2013964208718749697.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
@@ -23,13 +23,22 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ImageCompare`
-- `LoadImage`
-- `SaveImageAdvanced`
+- `MuyeTextEditOutput`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `GeminiNanoBanana2V2` —— 2/4 个有
-- `TopazImageEnhanceV2` —— 2/4 个有
+- `LoadImage` —— 3/4 个有
+- `PreviewImage` —— 2/4 个有
+- `SaveVideo` —— 2/4 个有
+- `RH_Nano_Banana2_Image2Image_Batch` —— 1/4 个有
+- `RH_Sora2_I2V` —— 1/4 个有
+- `RH_Sora2_I2V_Batch` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

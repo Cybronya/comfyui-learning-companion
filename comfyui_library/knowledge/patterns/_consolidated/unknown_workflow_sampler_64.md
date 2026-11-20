@@ -3,35 +3,41 @@ name: unknown_workflow_sampler_64
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.942333
-common_nodes: [LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.886
+common_nodes: [Apply Whisper, AudioCrop, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/USO风格迁多三合一工作流！_1964595430032068610.json, 图片生成/文生图/字节USO风格迁移_1962533944346456065.json, 平台全量/Flux最强IPA风格迁移USO_1962484649480073217.json]
+members: [音频生成/音频生成/IndexTTS2长文本音频-克隆音色带情感_2052017251003445249.json, 音频生成/音频生成/Qwen3-tts声音克隆_2051922867775918081.json, 音频生成/音频生成/韩老魔来当配音员辣-声音克隆_2012083044638789633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_64
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/USO风格迁多三合一工作流！_1964595430032068610.json、图片生成/文生图/字节USO风格迁移_1962533944346456065.json、平台全量/Flux最强IPA风格迁移USO_1962484649480073217.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2长文本音频-克隆音色带情感_2052017251003445249.json、音频生成/音频生成/Qwen3-tts声音克隆_2051922867775918081.json、音频生成/音频生成/韩老魔来当配音员辣-声音克隆_2012083044638789633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
-- `SaveImage`
+- `Apply Whisper`
+- `AudioCrop`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 2/3 个有
+- `Qwen3TTSModelLoader` —— 2/3 个有
+- `Qwen3TTSVoiceClone` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `IndexTTS2Run` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
 
 ## 典型参数
 

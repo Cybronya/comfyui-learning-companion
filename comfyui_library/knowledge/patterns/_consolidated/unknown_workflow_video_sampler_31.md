@@ -1,44 +1,39 @@
 ---
 name: unknown_workflow_video_sampler_31
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.7048
-common_nodes: [DiffuEraserLoader, DiffuEraserSampler, DownloadAndLoadSAM2Model, GrowMaskWithBlur, MaskToImage, PointsEditor, PreviewAnimation, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+frequency: 2
+level: weak
+coverage: 0.8285
+common_nodes: [GetVideoComponents, Int, JjkText, LayerUtility: ImageScaleByAspectRatio V2, RunningHub Void Mask Reasoner, RunningHub Void Pass Loader, RunningHub Void Pass Sampler, RunningHub Void Point Editor, SaveVideo, VHS_VideoCombine, floatToInt _O]
 problems: []
 missing: []
-members: [平台全量/视频-万物消除_1989165974425309186.json, 平台全量/视频-万物消除（详细讲解使用）_1915522326769631234.json, 平台全量/视频-万物消除（详细讲解使用）_2056227025672736770.json, 视频生成/图生视频/视频-万物消除详细讲解使用_2115958497782358018.json, 视频生成/图生视频/视频-万物消除详细讲解使用_2115969922005291009.json]
+members: [数字人/数字人/水印移除 视频移除 奈飞Void_2047249130749173762.json, 数字人/数字人/视频编辑 视频擦除 Netflix void_2047231208416878593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_31
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/视频-万物消除_1989165974425309186.json、平台全量/视频-万物消除（详细讲解使用）_1915522326769631234.json、平台全量/视频-万物消除（详细讲解使用）_2056227025672736770.json、视频生成/图生视频/视频-万物消除详细讲解使用_2115958497782358018.json、视频生成/图生视频/视频-万物消除详细讲解使用_2115969922005291009.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/水印移除 视频移除 奈飞Void_2047249130749173762.json、数字人/数字人/视频编辑 视频擦除 Netflix void_2047231208416878593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `DiffuEraserLoader`
-- `DiffuEraserSampler`
-- `DownloadAndLoadSAM2Model`
-- `GrowMaskWithBlur`
-- `MaskToImage`
-- `PointsEditor`
-- `PreviewAnimation`
-- `Sam2Segmentation`
-- `VHS_LoadVideo`
+全部 2 个 workflow 都包含：
+- `GetVideoComponents`
+- `Int`
+- `JjkText`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `RunningHub Void Mask Reasoner`
+- `RunningHub Void Pass Loader`
+- `RunningHub Void Pass Sampler`
+- `RunningHub Void Point Editor`
+- `SaveVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-
-**可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `VHS_VideoInfoSource` —— 2/5 个有
+- `floatToInt _O`
 
 ## 典型参数
 
@@ -50,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_951
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.9305
-common_nodes: [CR Text, RHLLMChatNode, RH_RhartImageG2OfficialTextToImage, SaveImage]
+coverage: 0.952333
+common_nodes: [LoadImage, RunningHub DreamOmni2 Edit Pipeline, RunningHub DreamOmni2 Editor, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/出屏效果 裸眼3D_2058725576176914434.json, 图片生成/文生图/网红冲出手机屏幕 裸眼3D展示_2056633550748864514.json, 图片生成/文生图/网红破屏而出 裸眼3D展示_2056260911157039105.json, 图片生成/文生图/网红破屏而出 裸眼3D展示_2056518368462721025.json]
+members: [图片生成/图生图/DreamOmni2 Editor_1983009134293463042.json, 图片生成/图生图/comfyUI-DreamOmni2-editor_1977667148745269250.json, 图片生成/图生图/🦖DreamOmni2超强多图编辑（加tips）_1977581755668549633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_951
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/出屏效果 裸眼3D_2058725576176914434.json、图片生成/文生图/网红冲出手机屏幕 裸眼3D展示_2056633550748864514.json、图片生成/文生图/网红破屏而出 裸眼3D展示_2056260911157039105.json、图片生成/文生图/网红破屏而出 裸眼3D展示_2056518368462721025.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/DreamOmni2 Editor_1983009134293463042.json、图片生成/图生图/comfyUI-DreamOmni2-editor_1977667148745269250.json、图片生成/图生图/🦖DreamOmni2超强多图编辑（加tips）_1977581755668549633.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
-- `RHLLMChatNode`
-- `RH_RhartImageG2OfficialTextToImage`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `RunningHub DreamOmni2 Edit Pipeline`
+- `RunningHub DreamOmni2 Editor`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `StringFunction|pysssss` —— 3/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
+- `ttN text` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,36 +3,34 @@ name: unknown_workflow_sampler_24
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.789167
-common_nodes: [LoadImage, LoadPhysicEditPipe, PhysicEditSampler, PreviewImage, SaveImage]
+coverage: 1
+common_nodes: [LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/PhysicEdit基础工作流_2029512280718712833.json, 图片生成/图生图/PhysicEdit基础工作流_2031034307896152065.json, 图片生成/图生图/PhysicEdit真实物理感知图像编辑V2_2030248379762085889.json, 图片生成/图生图/物理感知图像编辑_2030822500543766529.json, 平台全量/PhysicEdit真实物理感知图像编辑_2031381187616313346.json, 平台全量/去除AI感 高质量洗图  PhysicEdit - 物理感知图像编辑 真实摄影写实图生图_2031532857788731394.json]
+members: [音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json, 音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json, 音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json, 音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json, 音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json, 音频生成/音频生成/IndexTTS极速版_1969791131460530178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_24
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/PhysicEdit基础工作流_2029512280718712833.json、图片生成/图生图/PhysicEdit基础工作流_2031034307896152065.json、图片生成/图生图/PhysicEdit真实物理感知图像编辑V2_2030248379762085889.json、图片生成/图生图/物理感知图像编辑_2030822500543766529.json、平台全量/PhysicEdit真实物理感知图像编辑_2031381187616313346.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/CosyVoice2 音色克隆 文字转语音_1930885403375808514.json、音频生成/音频生成/CosyVoice2语音克隆_1919569381775577090.json、音频生成/音频生成/CosyVoice2语音克隆_1921498765306560513.json、音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json、音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadImage`
-- `LoadPhysicEditPipe`
-- `PhysicEditSampler`
-- `PreviewImage`
-- `SaveImage`
+- `LoadAudio`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `PIP_图像联结` —— 1/6 个有
+- `IndexTTSRun` —— 3/6 个有
+- `NTCosyVoiceInstruct2Sampler` —— 3/6 个有
+- `PreviewAudio` —— 1/6 个有
 
 ## 典型参数
 

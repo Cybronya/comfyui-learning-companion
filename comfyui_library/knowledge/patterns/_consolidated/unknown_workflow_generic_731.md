@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_731
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.441
-common_nodes: [JjkText, LayerUtility: TextJoin, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 1
+common_nodes: [InspyrenetRembg, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/image_gemini.json_2068966122443067394.json, 图片生成/文生图/image_gemini.json_2097156637671911425.json, 图片生成/文生图/image_gemini.json_2097576911659687937.json, 图片生成/文生图/image_health.json_2069357857212026881.json, 图片生成/文生图/image_health_2069300295536037890.json]
+members: [图片生成/图生图/一键去背景+遮罩生成 Inspyrenet Rembg_1937460712161886209.json, 图片生成/图生图/一键抠图_2026831606878572545.json, 图片生成/图生图/一键抠图_2070166368229609474.json, 图片生成/图生图/快速抠像_2052668485251149826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_731
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/image_gemini.json_2068966122443067394.json、图片生成/文生图/image_gemini.json_2097156637671911425.json、图片生成/文生图/image_gemini.json_2097576911659687937.json、图片生成/文生图/image_health.json_2069357857212026881.json、图片生成/文生图/image_health_2069300295536037890.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键去背景+遮罩生成 Inspyrenet Rembg_1937460712161886209.json、图片生成/图生图/一键抠图_2026831606878572545.json、图片生成/图生图/一键抠图_2070166368229609474.json、图片生成/图生图/快速抠像_2052668485251149826.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JjkText`
-- `LayerUtility: TextJoin`
-- `RH_Nano_Banana2_Gemini31Flash`
+全部 4 个 workflow 都包含：
+- `InspyrenetRembg`
+- `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy promptList` —— 3/5 个有
-- `LoadImage` —— 2/5 个有
+- `LayerUtility: ImageCombineAlpha` —— 2/4 个有
+- `preview_mask` —— 1/4 个有
 
 ## 典型参数
 

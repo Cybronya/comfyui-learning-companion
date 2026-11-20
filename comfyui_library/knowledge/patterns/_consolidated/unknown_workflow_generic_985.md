@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_985
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.97725
-common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, RH_FireRedAudioLoader, RH_FireRedAudioTTS, SaveAudio, ShowAnything|Mie]
+coverage: 0.785667
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Jimeng4_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/Firered Audio TTS语音克隆_2095458588989935617.json, 音频生成/音频生成/Firered Audio TTS最新语音克隆 音色迁移_2093956704869380097.json, 音频生成/音频生成/Firered Audio TTS语音克隆2608_2094001329831243777.json, 音频生成/音频生成/Firered Audio TTS语音克隆_2093553357762949121.json]
+members: [图片生成/图生图/Seedream 4.0 -即梦4.0-电商白底图生成背景_1967597729549619202.json, 图片生成/图生图/Seedream 5.0 图像编辑_1890354200113762306.json, 图片生成/图生图/胸部增大神器，一键调整！_2005615225422442497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_985
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Firered Audio TTS语音克隆_2095458588989935617.json、音频生成/音频生成/Firered Audio TTS最新语音克隆 音色迁移_2093956704869380097.json、音频生成/音频生成/Firered Audio TTS语音克隆2608_2094001329831243777.json、音频生成/音频生成/Firered Audio TTS语音克隆_2093553357762949121.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Seedream 4.0 -即梦4.0-电商白底图生成背景_1967597729549619202.json、图片生成/图生图/Seedream 5.0 图像编辑_1890354200113762306.json、图片生成/图生图/胸部增大神器，一键调整！_2005615225422442497.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Apply Whisper`
-- `CR Prompt Text`
-- `LoadAudio`
-- `RH_FireRedAudioLoader`
-- `RH_FireRedAudioTTS`
-- `SaveAudio`
-- `ShowAnything|Mie`
+全部 3 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `RH_Jimeng4_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/4 个有
-- `AudioSeparation` —— 1/4 个有
-- `SaveAudioMP3` —— 1/4 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `workflow>提示词` —— 1/3 个有
 
 ## 典型参数
 

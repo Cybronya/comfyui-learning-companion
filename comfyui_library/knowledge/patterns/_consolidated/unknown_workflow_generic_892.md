@@ -3,41 +3,35 @@ name: unknown_workflow_generic_892
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.744
-common_nodes: [JjkText, LoadImage, MultiTextConcatenate, PreviewImage, PreviewTextNode, RH_RhartImageG2ImageToImage, SaveImage, Text, Text Multiline, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 1
+common_nodes: [CM_IntToFloat, IndexTTSRun, LoadAudio, Primitive integer [Crystools], SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json, 图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json, 平台全量/全能图片G-Image2+ 产品详情页-海报设计_2062023913923764226.json]
+members: [音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json, 音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json, 音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json, 音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_892
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2098959790092406786.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2099071417689137153.json、图片生成/图生图/全能图片G-Image2+_产品详情页-海报设计_2100026527743299585.json、平台全量/全能图片G-Image2+ 产品详情页-海报设计_2062023913923764226.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/双人播客-Index-TTS 1.5_1935646610862821378.json、音频生成/音频生成/双人播客工作流-Index-TTS 1.5_1936815704551362562.json、音频生成/音频生成/新Index-TTS 1.5双人语音克隆_1932353527044014081.json、音频生成/音频生成/最新Index-TTS 1.5双人语音克隆_1932303690743672833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `MultiTextConcatenate`
-- `PreviewImage`
-- `PreviewTextNode`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `Text`
+- `CM_IntToFloat`
+- `IndexTTSRun`
+- `LoadAudio`
+- `Primitive integer [Crystools]`
+- `SaveAudio`
 - `Text Multiline`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 3/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
 
 ## 典型参数
 

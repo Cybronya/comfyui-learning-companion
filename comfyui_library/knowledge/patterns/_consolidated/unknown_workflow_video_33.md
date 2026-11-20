@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_video_33
 type: Unknown Workflow
-frequency: 7
+frequency: 4
 level: moderate
-coverage: 0.836714
-common_nodes: [FlashVSRNode, ImageConcatMulti, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+coverage: 1
+common_nodes: [LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/FlashVSR 视频超分辨率修复 极速低显存版_1981175709534130177.json, 平台全量/FlashVSR 视频超分辨率修复 极速低显存版_1997908743067172866.json, 平台全量/FlashVSR 视频超分辨率修复 极速低显存版_2004488405570519041.json, 平台全量/FlashVSR 视频超分辨率修复 极速低显存版_2011780719294554114.json, 平台全量/FlashVSR-视频放大-高清修复-速度快，显存占用低_1981716787383410689.json, 平台全量/FlashVSR_去AI感版_2070419798810521602.json, 平台全量/WH-FlashVSR 视频放大，高清放大，分辨率修复 ，低显存可用_2005285367668502529.json]
+members: [图片生成/图生图/FramePack图生视频_1913074969763377154.json, 视频生成/图生视频/60长视频-FramePack  RH吕神源码版_1913036712988110850.json, 视频生成/图生视频/87工具流 FramePack  图生视频_1913506656041299970.json, 视频生成/图生视频/FramePack_1913209812224569346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_33
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/FlashVSR 视频超分辨率修复 极速低显存版_1981175709534130177.json、平台全量/FlashVSR 视频超分辨率修复 极速低显存版_1997908743067172866.json、平台全量/FlashVSR 视频超分辨率修复 极速低显存版_2004488405570519041.json、平台全量/FlashVSR 视频超分辨率修复 极速低显存版_2011780719294554114.json、平台全量/FlashVSR-视频放大-高清修复-速度快，显存占用低_1981716787383410689.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FramePack图生视频_1913074969763377154.json、视频生成/图生视频/60长视频-FramePack  RH吕神源码版_1913036712988110850.json、视频生成/图生视频/87工具流 FramePack  图生视频_1913506656041299970.json、视频生成/图生视频/FramePack_1913209812224569346.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `FlashVSRNode`
-- `ImageConcatMulti`
-- `VHS_LoadVideo`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScale` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `Note Plus (mtb)` —— 1/7 个有
+- `ImageResizeKJ` —— 2/4 个有
+- `String Literal` —— 2/4 个有
+- `DeepTranslatorTextNode` —— 1/4 个有
 
 ## 典型参数
 

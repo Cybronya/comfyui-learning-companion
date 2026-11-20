@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_generic_540
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.945833
-common_nodes: [CR Prompt Text, CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, StringConcatenate, Text, easy showAnything]
+coverage: 0.667
+common_nodes: [LoadImage, LoadVideo, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/9宫格分镜稳定版_2086323864497377281.json, 图片生成/图生图/【xscm】横竖屏9宫格稳定_2032477724102627330.json, 图片生成/文生图/【CQ808】25宫格-竖屏稳定版本V3.0_2019809108249026562.json, 图片生成/文生图/【CQ808】九宫格_竖版_2020833810031579138.json, 图片生成/文生图/【海皮】横竖屏9宫格分镜稳定版_2027391147160641537.json, 图片生成/文生图/【海皮】横竖屏9宫格稳定版_2028685414927699970.json]
+members: [图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿_2035898936522706945.json, 图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020683295532523522.json, 图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020694319270727682.json, 图片生成/反推提示词/Seedance 2.0 - 即梦爆款视频反推洗稿器_2021444820882956290.json, 图片生成/反推提示词/视频反推提示词_1971893542417264641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_540
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/9宫格分镜稳定版_2086323864497377281.json、图片生成/图生图/【xscm】横竖屏9宫格稳定_2032477724102627330.json、图片生成/文生图/【CQ808】25宫格-竖屏稳定版本V3.0_2019809108249026562.json、图片生成/文生图/【CQ808】九宫格_竖版_2020833810031579138.json、图片生成/文生图/【海皮】横竖屏9宫格分镜稳定版_2027391147160641537.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿_2035898936522706945.json、图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020683295532523522.json、图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020694319270727682.json、图片生成/反推提示词/Seedance 2.0 - 即梦爆款视频反推洗稿器_2021444820882956290.json、图片生成/反推提示词/视频反推提示词_1971893542417264641.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
+- `LoadVideo`
 - `SaveImage`
-- `StringConcatenate`
-- `Text`
-- `easy showAnything`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 5/6 个有
-- `JjkConcat` —— 4/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `RHHiddenNodes` —— 4/5 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 1/5 个有
 
 ## 典型参数
 

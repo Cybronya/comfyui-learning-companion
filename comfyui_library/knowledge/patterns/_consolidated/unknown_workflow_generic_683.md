@@ -1,46 +1,36 @@
 ---
 name: unknown_workflow_generic_683
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8364
-common_nodes: [CR Text, CR Text Concatenate, EG_ZZ_TMTX, GrowMaskWithBlur, ImageResize+, Int, JjkText, LoadImage, PreviewAny, PreviewImage, Qwen3_VQA_Plus, RH_Nano_Banana2_Image2Image, RMBG, Sa2VANodeTpl, SaveImage, SimpleMath+, easy imageCropFromMask, ttN concat]
+coverage: 0.69575
+common_nodes: [LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/Z一键IP文创衍生品_1992810214971822081.json, 图片生成/图生图/一键文创产品衍生_2034878693360803842.json, 图片生成/图生图/不纳纳2 一键IP文创衍生品_2028743374336954370.json, 图片生成/图生图/图生图 文创产品衍生_2034547988042878978.json, 平台全量/一键IP文创衍生品_2032026078952296450.json]
+members: [图片生成/反推提示词/9宫格（分镜提示词）生成_2045423681421189121.json, 图片生成/反推提示词/Gemini图片反推提示词（抖音短视频标题）_2045423604183080961.json, 图片生成/反推提示词/图片反推提示词_2014875557577629697.json, 图片生成/图生图/DeepSeek V4反推图片提示词+全节点注释_2093636491682603009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_683
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Z一键IP文创衍生品_1992810214971822081.json、图片生成/图生图/一键文创产品衍生_2034878693360803842.json、图片生成/图生图/不纳纳2 一键IP文创衍生品_2028743374336954370.json、图片生成/图生图/图生图 文创产品衍生_2034547988042878978.json、平台全量/一键IP文创衍生品_2032026078952296450.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/9宫格（分镜提示词）生成_2045423681421189121.json、图片生成/反推提示词/Gemini图片反推提示词（抖音短视频标题）_2045423604183080961.json、图片生成/反推提示词/图片反推提示词_2014875557577629697.json、图片生成/图生图/DeepSeek V4反推图片提示词+全节点注释_2093636491682603009.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `EG_ZZ_TMTX`
-- `GrowMaskWithBlur`
-- `ImageResize+`
-- `Int`
-- `JjkText`
+全部 4 个 workflow 都包含：
 - `LoadImage`
 - `PreviewAny`
-- `PreviewImage`
-- `Qwen3_VQA_Plus`
-- `RH_Nano_Banana2_Image2Image`
-- `RMBG`
-- `Sa2VANodeTpl`
-- `SaveImage`
-- `SimpleMath+`
-- `easy imageCropFromMask`
-- `ttN concat`
+- `RH_LLMAPI_Pro_Node`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 

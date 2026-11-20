@@ -3,31 +3,34 @@ name: unknown_workflow_sampler_110
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, LoadVideo, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, SaveVideo]
+coverage: 0.833
+common_nodes: [CR Prompt Text, LoadAudio, RunningHub StepAudioEditX ModelLoader, SaveAudio]
 problems: []
 missing: []
-members: [平台全量/RunningHub 视频换脸_2009101444678426625.json, 视频生成/图生视频/AI视频一键换脸嘎嘎好用版V1.0_2030823583953461249.json]
+members: [音频生成/音频生成/Step-Audio-EditX音频情感编辑V1_1989397953339117569.json, 音频生成/音频生成/Step-Audio-EditX音频降噪V1_1989337213710331906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_110
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/RunningHub 视频换脸_2009101444678426625.json、视频生成/图生视频/AI视频一键换脸嘎嘎好用版V1.0_2030823583953461249.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Step-Audio-EditX音频情感编辑V1_1989397953339117569.json、音频生成/音频生成/Step-Audio-EditX音频降噪V1_1989337213710331906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `LoadVideo`
-- `RunningHub_DreamID-V_Loader`
-- `RunningHub_DreamID-V_Sampler`
-- `SaveVideo`
+- `CR Prompt Text`
+- `LoadAudio`
+- `RunningHub StepAudioEditX ModelLoader`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `RunningHub StepAudioEditX Sampler(Denoise)` —— 1/2 个有
+- `RunningHub StepAudioEditX Sampler(Emotion)` —— 1/2 个有
 
 ## 典型参数
 

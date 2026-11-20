@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_generic_442
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.923857
-common_nodes: [CR Text, Image Comparer (rgthree), LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, SaveImage]
+coverage: 0.816667
+common_nodes: [BagelImageEdit, BagelModelLoader, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream-v5-pro 服装迁移 局部重绘 一键换装 人物模特服饰换装 换装换脸 高度一致风_2075413877227085826.json, 图片生成/图生图/Seedream-v5-pro-一键换装_2075086947890065409.json, 图片生成/图生图/Seedream-v5-pro-人物换装_2090628354536992769.json, 图片生成/图生图/Seedreamv5-pro-双图编辑_2080273415088459777.json, 图片生成/图生图/一键换装-全能图片-G-2.5图生图 高质版_2098256908510654465.json, 图片生成/图生图/一键换装Seedream-v5-pro 服装迁移 局部重绘  人物模特服饰换装 换装换脸 高度一致风_2075423755916103682.json, 图片生成/图生图/换脸换装 全能图片 图生图 高质量版_2099308533576716290.json]
+members: [图片生成/图生图/Bagel Image edit_1926942217695318017.json, 图片生成/图生图/Bagel7B图片编辑工作流_1928409415701905410.json, 图片生成/图生图/Bagel图像编辑工作流V2（10倍加速版）_1926955301952475138.json, 图片生成/图生图/Bagel图片编辑+提示词反推+姿态控制_1927210420652900354.json, 图片生成/图生图/Bagel图片编辑_1926994181229805569.json, 图片生成/图生图/字节 BaGEL 图像编辑模型｜一致性_1928680125632778241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_442
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream-v5-pro 服装迁移 局部重绘 一键换装 人物模特服饰换装 换装换脸 高度一致风_2075413877227085826.json、图片生成/图生图/Seedream-v5-pro-一键换装_2075086947890065409.json、图片生成/图生图/Seedream-v5-pro-人物换装_2090628354536992769.json、图片生成/图生图/Seedreamv5-pro-双图编辑_2080273415088459777.json、图片生成/图生图/一键换装-全能图片-G-2.5图生图 高质版_2098256908510654465.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Bagel Image edit_1926942217695318017.json、图片生成/图生图/Bagel7B图片编辑工作流_1928409415701905410.json、图片生成/图生图/Bagel图像编辑工作流V2（10倍加速版）_1926955301952475138.json、图片生成/图生图/Bagel图片编辑+提示词反推+姿态控制_1927210420652900354.json、图片生成/图生图/Bagel图片编辑_1926994181229805569.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text`
-- `Image Comparer (rgthree)`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+全部 6 个 workflow 都包含：
+- `BagelImageEdit`
+- `BagelModelLoader`
 - `LoadImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_SeedreamV5ProImageToImage` —— 5/7 个有
-- `图像缩放V2_孤海` —— 5/7 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 2/7 个有
+- `ImageConcanate` —— 3/6 个有
+- `ShowText|pysssss` —— 3/6 个有
+- `Bjornulf_ShowStringText` —— 2/6 个有
 
 ## 典型参数
 

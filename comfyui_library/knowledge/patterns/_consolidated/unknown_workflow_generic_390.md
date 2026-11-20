@@ -1,34 +1,35 @@
 ---
 name: unknown_workflow_generic_390
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_AlibabaHappyhorse10ImageToVideo, SaveVideo]
+coverage: 0.871429
+common_nodes: [QwenImageModelLoader, RH_QwenImageGenerator, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Happyhorse 1.0 图生视频_2048774252291170306.json, 视频生成/图生视频/happy horse图生视频_2048976027916967937.json, 视频生成/图生视频/happyhores图生视频_2050538420602195970.json, 视频生成/图生视频/happyhorse1.0-图生视频_2048955130673897473.json, 视频生成/图生视频/快乐马_图生视频 Happyhorse_I2V_2048700129443581953.json, 视频生成/文生视频/Happyhorse 1.0 快乐小马上线，图生视频，文生视频_2049488676387819522.json, 视频生成/文生视频/Happyhorse_I2V 快乐马_图生视频_2048669199937048577.json, 视频生成/文生视频/happyhores图片视频_2063141843059175426.json]
+members: [图片生成/文生图/Qwen Image 模型RH原生版_1953120796073988098.json, 图片生成/文生图/Qwen-Image-文生图体验V2_1952630018197393409.json, 图片生成/文生图/Qwen-image 出图支持中文_1952532640446517249.json, 图片生成/文生图/Qwen-image即梦平替_1892980078345666562.json, 图片生成/文生图/Qwen-image红色高跟鞋_1953036797132664834.json, 图片生成/文生图/通义千问最强文生图Qwen-image_1991336700263661570.json, 图片生成/文生图/通义干问-文生图（超强效果）_1952710383297564673.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_390
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Happyhorse 1.0 图生视频_2048774252291170306.json、视频生成/图生视频/happy horse图生视频_2048976027916967937.json、视频生成/图生视频/happyhores图生视频_2050538420602195970.json、视频生成/图生视频/happyhorse1.0-图生视频_2048955130673897473.json、视频生成/图生视频/快乐马_图生视频 Happyhorse_I2V_2048700129443581953.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen Image 模型RH原生版_1953120796073988098.json、图片生成/文生图/Qwen-Image-文生图体验V2_1952630018197393409.json、图片生成/文生图/Qwen-image 出图支持中文_1952532640446517249.json、图片生成/文生图/Qwen-image即梦平替_1892980078345666562.json、图片生成/文生图/Qwen-image红色高跟鞋_1953036797132664834.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadImage`
-- `RH_AlibabaHappyhorse10ImageToVideo`
-- `SaveVideo`
+全部 7 个 workflow 都包含：
+- `QwenImageModelLoader`
+- `RH_QwenImageGenerator`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `RH_QwenImagePromptEnhancer` —— 1/7 个有
 
 ## 典型参数
 

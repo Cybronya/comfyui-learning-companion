@@ -1,59 +1,42 @@
 ---
 name: unknown_workflow_video_upscale_lora_30
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.925667
-common_nodes: [CreateCFGScheduleFloatList, ImageResizeKJv2, ImageUpscaleWithModel, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], RIFE VFI, SimpleMath+, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
+frequency: 2
+level: weak
+coverage: 0.7695
+common_nodes: [CLIPLoader, CR Load LoRA, ComfyMiniMaxH3Director, CustomCombo, LoraLoaderModelOnly, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, PreviewAny, StringToNumber, TextSwitchCase, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版-高清放大+30帧补帧_1955296499754307586.json, 视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版-高清放大+补帧+New_1955172399558770689.json, 视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版放大补帧生成2K高清视频_1950107460180860930.json]
+members: [视频生成/图生视频/MiniMax H3 导演台全能工作流-ref2va-全能参考_2110567905564909569.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流-图生视频-人物去油_2110348948257988609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_30
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版-高清放大+30帧补帧_1955296499754307586.json、视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版-高清放大+补帧+New_1955172399558770689.json、视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版放大补帧生成2K高清视频_1950107460180860930.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 导演台全能工作流-ref2va-全能参考_2110567905564909569.json、视频生成/图生视频/MiniMax H3 导演台全能工作流-图生视频-人物去油_2110348948257988609.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `ImageResizeKJv2`
-- `ImageUpscaleWithModel`
-- `JWInteger`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `RIFE VFI`
-- `SimpleMath+`
+全部 2 个 workflow 都包含：
+- `CLIPLoader`
+- `CR Load LoRA`
+- `ComfyMiniMaxH3Director`
+- `CustomCombo`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3DirectorRefine`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PreviewAny`
+- `StringToNumber`
+- `TextSwitchCase`
+- `UNETLoader`
 - `UpscaleModelLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `Text Multiline` —— 1/3 个有
 
 ## 典型参数
 
@@ -65,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

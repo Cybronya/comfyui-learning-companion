@@ -3,37 +3,37 @@ name: unknown_workflow_generic_1755
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8535
-common_nodes: [GetImageSizeAndCount, ImpactMinMax, LoadImage, Primitive integer [Crystools], SaveImage, SeedVR2, SeedVR2BlockSwap, easy mathInt]
+coverage: 0.822
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, RunningHub Ovi Image to Video, RunningHub Ovi Model Loader, RunningHub Ovi Text to Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/最新Sharp一键图像4K高清放大-SeedVR2_1938062795428511746.json, 平台全量/最新Sharp一键图像4K高清放大-SeedVR2_1947156024224833537.json]
+members: [视频生成/文生视频/ovi音频视频一起生成v1（英语音频）小全能视频S_1974990263888293889.json, 视频生成/文生视频/【gen全能视频Si】ovi文_图生视频-开源版小“全能视频s”_1976508685440651266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1755
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新Sharp一键图像4K高清放大-SeedVR2_1938062795428511746.json、平台全量/最新Sharp一键图像4K高清放大-SeedVR2_1947156024224833537.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/ovi音频视频一起生成v1（英语音频）小全能视频S_1974990263888293889.json、视频生成/文生视频/【gen全能视频Si】ovi文_图生视频-开源版小“全能视频s”_1976508685440651266.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImpactMinMax`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `Primitive integer [Crystools]`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `easy mathInt`
+- `RunningHub Ovi Image to Video`
+- `RunningHub Ovi Model Loader`
+- `RunningHub Ovi Text to Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Simple Image Compare` —— 1/2 个有
+- `FluxResolutionNode` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

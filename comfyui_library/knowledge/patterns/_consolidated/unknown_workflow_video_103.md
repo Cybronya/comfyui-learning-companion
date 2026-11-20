@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_video_103
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.96675
-common_nodes: [Bookmark (rgthree), GetVideoComponents, LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo, SeedVR2BlockSwap, SeedVR2GGUF, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.829
+common_nodes: [CR Text, LoadImage, Primitive integer [Crystools], RHHiddenNodes, RunningHub_FramePack_F1, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2060579752272023554.json, 数字人/数字人/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2061103057252999170.json, 数字人/数字人/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2080646696647880705.json, 数字人/数字人/heygem口播数字人电商口播二次高清放大1024工作流里面可自定义_1977293437747777537.json]
+members: [视频生成/图生视频/FramePack-F1图生视频(帧率+时长+提示词自动优化)_1932965781720236033.json, 视频生成/图生视频/FramePack-F1图生视频(帧率优化+时长优化+提示词优化)_1920125027860287490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_103
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2060579752272023554.json、数字人/数字人/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2061103057252999170.json、数字人/数字人/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2080646696647880705.json、数字人/数字人/heygem口播数字人电商口播二次高清放大1024工作流里面可自定义_1977293437747777537.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack-F1图生视频(帧率+时长+提示词自动优化)_1932965781720236033.json、视频生成/图生视频/FramePack-F1图生视频(帧率优化+时长优化+提示词优化)_1920125027860287490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Bookmark (rgthree)`
-- `GetVideoComponents`
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `SaveVideo`
-- `SeedVR2BlockSwap`
-- `SeedVR2GGUF`
+全部 2 个 workflow 都包含：
+- `CR Text`
+- `LoadImage`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RunningHub_FramePack_F1`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowAnything|Mie` —— 3/4 个有
+- `ConcatTextOfUtils` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 
@@ -46,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

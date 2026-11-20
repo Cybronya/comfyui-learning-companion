@@ -1,50 +1,43 @@
 ---
 name: unknown_workflow_lora_unet_vae_13
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.831667
-common_nodes: [CLIPLoader, CreateVideo, GetImageSize, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorSelfLift, ModelAttentionBackend, PlaySound|pysssss, PreviewAny, SaveImage, SaveVideo, UNETLoader, VAELoader, easy imageChooser, kkVideoFirstLastFrames]
+frequency: 2
+level: weak
+coverage: 0.912
+common_nodes: [CLIPLoader, CreateVideo, LoraLoaderModelOnly, MiniMaxH3Director, PathchSageAttentionKJ, SaveVideo, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [平台全量/MiniMax+H3+SelfLift导演台全能工作流直出1080P_2118334849953128450.json, 视频生成/图生视频/MiniMax+H3+SelfLift导演台+RH Upscale_2104255482696388609.json, 视频生成/图生视频/MiniMax+H3+SelfLift导演台全能工作流直出1080P_2102745336082165762.json]
+members: [视频生成/文生视频/MiniMax H3 导演台-文生视频 图生视频 首尾帧生视频 视频转视频 参考素材转视频_2088428364578250753.json, 视频生成/文生视频/【开源】Minimax_H3 导演台参考生长视频_2089264892179206146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_unet_vae_13
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/MiniMax+H3+SelfLift导演台全能工作流直出1080P_2118334849953128450.json、视频生成/图生视频/MiniMax+H3+SelfLift导演台+RH Upscale_2104255482696388609.json、视频生成/图生视频/MiniMax+H3+SelfLift导演台全能工作流直出1080P_2102745336082165762.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 导演台-文生视频 图生视频 首尾帧生视频 视频转视频 参考素材转视频_2088428364578250753.json、视频生成/文生视频/【开源】Minimax_H3 导演台参考生长视频_2089264892179206146.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CreateVideo`
-- `GetImageSize`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
 - `MiniMaxH3Director`
-- `MiniMaxH3DirectorFaceRefine`
-- `MiniMaxH3DirectorSelfLift`
-- `ModelAttentionBackend`
-- `PlaySound|pysssss`
-- `PreviewAny`
-- `SaveImage`
+- `PathchSageAttentionKJ`
 - `SaveVideo`
 - `UNETLoader`
 - `VAELoader`
-- `easy imageChooser`
-- `kkVideoFirstLastFrames`
 
 **可变部分**（部分 workflow 才有）：
-- `Astra` —— 1/3 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 1/3 个有
-- `RH_Upscale` —— 1/3 个有
+- `CR Model Input Switch` —— 1/2 个有
+- `EasyCache` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `SolAttnPatch` —— 1/2 个有
 
 ## 典型参数
 
@@ -56,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

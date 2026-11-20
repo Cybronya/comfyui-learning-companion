@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_571
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.749167
-common_nodes: [JjkText, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json, 平台全量/genmini-3分镜提示词_2033465067198488577.json, 平台全量/一致性风格分镜头 _ gemini-3.1_1962491138013835265.json, 平台全量/很牛叉 品牌故事 电商统一调性故事版详情页   风格自定义 高度调性统一高端详情页_2066526980174073857.json, 数字人/数字人/全能图片2.0  多角度镜头控制 一致性风格分镜头  gemini-3.1 多角度可视化控制_2028998340662272001.json, 视频生成/图生视频/S1-1 牛叉产品特效炸裂视频，参考十六宫格底图  产品特效_2050616496979755010.json]
+members: [图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json, 图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json, 图片生成/图生图/xxx-image2_2053839405277827073.json, 图片生成/图生图/提取头部_2095356769915727873.json, 图片生成/图生图/道具图生成_2094712567414476802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_571
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json、平台全量/genmini-3分镜提示词_2033465067198488577.json、平台全量/一致性风格分镜头 _ gemini-3.1_1962491138013835265.json、平台全量/很牛叉 品牌故事 电商统一调性故事版详情页   风格自定义 高度调性统一高端详情页_2066526980174073857.json、数字人/数字人/全能图片2.0  多角度镜头控制 一致性风格分镜头  gemini-3.1 多角度可视化控制_2028998340662272001.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json、图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json、图片生成/图生图/xxx-image2_2053839405277827073.json、图片生成/图生图/提取头部_2095356769915727873.json、图片生成/图生图/道具图生成_2094712567414476802.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `JjkText`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `easy showAnything`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 4/6 个有
-- `easy promptLine` —— 4/6 个有
-- `ProcessString` —— 3/6 个有
-- `RHHiddenNodes` —— 2/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
+- `TextConcatenator` —— 3/5 个有
+- `ratio_selector` —— 1/5 个有
 
 ## 典型参数
 

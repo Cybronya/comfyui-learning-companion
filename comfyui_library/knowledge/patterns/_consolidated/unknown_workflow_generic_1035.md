@@ -1,46 +1,41 @@
 ---
 name: unknown_workflow_generic_1035
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.69325
-common_nodes: [CR Text, GetTextFromJson, HeartMuLa_Generate, ImpactSwitch, Int, LoadJsonFromText, RH_LLMAPI_NODE, SaveAudio, Text Concatenate, Text Find and Replace, Text Multiline, TextBox, Textbox, easy showAnything]
+coverage: 0.732333
+common_nodes: [Fast Groups Bypasser (rgthree), GuHaiAutoImageSplit, ImageScaleToTotalPixels, Int, LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014218264380973058.json, 音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014237962199900161.json, 音频生成/音频生成/HeartMuLa音乐生成_2014687206341877762.json, 音频生成/音频生成/HeartMuLa音乐生成_2026198043434950657.json]
+members: [图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2063824519722258433.json, 图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2064895248429576193.json, 图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2092527712081629185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1035
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014218264380973058.json、音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014237962199900161.json、音频生成/音频生成/HeartMuLa音乐生成_2014687206341877762.json、音频生成/音频生成/HeartMuLa音乐生成_2026198043434950657.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2063824519722258433.json、图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2064895248429576193.json、图片生成/图生图/宫格图故事板高清放大-宫格图故事板分割_2092527712081629185.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
-- `GetTextFromJson`
-- `HeartMuLa_Generate`
-- `ImpactSwitch`
+全部 3 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `GuHaiAutoImageSplit`
+- `ImageScaleToTotalPixels`
 - `Int`
-- `LoadJsonFromText`
-- `RH_LLMAPI_NODE`
-- `SaveAudio`
-- `Text Concatenate`
-- `Text Find and Replace`
-- `Text Multiline`
-- `TextBox`
-- `Textbox`
-- `easy showAnything`
+- `LoadImage`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `PreviewImage` —— 2/3 个有
+- `孤海注释` —— 2/3 个有
 
 ## 典型参数
 

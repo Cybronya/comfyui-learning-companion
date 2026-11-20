@@ -3,33 +3,38 @@ name: unknown_workflow_generic_1496
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5145
-common_nodes: [LoadImage, MaskPreview, PreviewImage]
+coverage: 0.981
+common_nodes: [CR Text, JjkShowText, LayerUtility: TextJoin, LoadImage, RHSettingsNode, RH_LLMAPI_Pro_Node, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/utility_birefnet_remove_background.json, comfyui-workflow-templates-json/utility_moge_depth_estimation.json]
+members: [图片生成/图生图/参考爆款的拍摄角度_2065011048004018177.json, 图片生成/图生图/鞋子多角度白底主图生成_2062560206743232514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1496
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/utility_birefnet_remove_background.json、comfyui-workflow-templates-json/utility_moge_depth_estimation.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/参考爆款的拍摄角度_2065011048004018177.json、图片生成/图生图/鞋子多角度白底主图生成_2062560206743232514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
+- `JjkShowText`
+- `LayerUtility: TextJoin`
 - `LoadImage`
-- `MaskPreview`
-- `PreviewImage`
+- `RHSettingsNode`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `5b40ca21-ba1a-41d5-b403-4d2d7acdc195` —— 1/2 个有
-- `ca1fac5f-abe5-4729-b7fe-2299f6630a65` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 1/2 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/2 个有
 
 ## 典型参数
 

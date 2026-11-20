@@ -1,39 +1,40 @@
 ---
 name: unknown_workflow_generic_1045
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.60425
-common_nodes: [LoadAudio, OmniVoiceVoiceCloneTTS, OmniVoiceWhisperLoader, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.698333
+common_nodes: [BagelImageEdit, BagelModelLoader, BagelTextToImage, Fast Groups Muter (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/OmniVoice全家桶（声音设计、声音克隆、多人对话）_2041860013710385153.json, 音频生成/音频生成/OmniVoice声音克隆，支持长文本_2041842845698494466.json, 音频生成/音频生成/极速声音设计 声音克隆 OmniVoice全家桶 一键完成 支持长文本_2042041960168431617.json, 音频生成/音频生成/长文本语音克隆，语音设计 OmniVoice 极简操作 极速完成_2042047387706859522.json]
+members: [图片生成/图生图/文改图 _ Bagel（字节豆包开源模型）_1927260628178862081.json, 图片生成/文生图/Bagel多模态理解生成模型 全能图像编辑_1927010906134237186.json, 图片生成/文生图/文生图 _ Bagel（字节豆包开源模型）_1927255252204998657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1045
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/OmniVoice全家桶（声音设计、声音克隆、多人对话）_2041860013710385153.json、音频生成/音频生成/OmniVoice声音克隆，支持长文本_2041842845698494466.json、音频生成/音频生成/极速声音设计 声音克隆 OmniVoice全家桶 一键完成 支持长文本_2042041960168431617.json、音频生成/音频生成/长文本语音克隆，语音设计 OmniVoice 极简操作 极速完成_2042047387706859522.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/文改图 _ Bagel（字节豆包开源模型）_1927260628178862081.json、图片生成/文生图/Bagel多模态理解生成模型 全能图像编辑_1927010906134237186.json、图片生成/文生图/文生图 _ Bagel（字节豆包开源模型）_1927255252204998657.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceWhisperLoader`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+全部 3 个 workflow 都包含：
+- `BagelImageEdit`
+- `BagelModelLoader`
+- `BagelTextToImage`
+- `Fast Groups Muter (rgthree)`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `OmniVoiceMultiSpeakerTTS` —— 3/4 个有
-- `OmniVoiceVoiceDesignTTS` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `LoadImage` —— 2/4 个有
+- `TextBox` —— 2/3 个有
+- `BagelImageUnderstanding` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,35 +1,50 @@
 ---
 name: unknown_workflow_generic_1413
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.752667
-common_nodes: [CR Prompt Text, LoadAudio, SaveAudio]
+frequency: 2
+level: weak
+coverage: 0.7195
+common_nodes: [Bjornulf_ShowInt, GH_MaskCropV2, GetNode, GoohaiUniversalSlider, LoadImage, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, SetNode, easy forLoopEnd, easy forLoopStart, easy imageCount]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat- AudioDiT方言克隆 (单人)TTS_2039648509820936193.json, 音频生成/音频生成/VibeVoice超长音频单人语音版V1_1963150289400475650.json, 音频生成/音频生成/VibeVoice超长音频多人语音版V2_1963137306507055105.json]
+members: [图片生成/图生图/lora制作 _ 裁剪+主体白模 _ for循环 zip批量_2102296238237503490.json, 图片生成/图生图/批量裁剪面部 1：1_2104751652443086849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1413
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LongCat- AudioDiT方言克隆 (单人)TTS_2039648509820936193.json、音频生成/音频生成/VibeVoice超长音频单人语音版V1_1963150289400475650.json、音频生成/音频生成/VibeVoice超长音频多人语音版V2_1963137306507055105.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/lora制作 _ 裁剪+主体白模 _ for循环 zip批量_2102296238237503490.json、图片生成/图生图/批量裁剪面部 1：1_2104751652443086849.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudio`
+全部 2 个 workflow 都包含：
+- `Bjornulf_ShowInt`
+- `GH_MaskCropV2`
+- `GetNode`
+- `GoohaiUniversalSlider`
+- `LoadImage`
+- `PreviewImage`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `SaveImage`
+- `SetNode`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
 
 **可变部分**（部分 workflow 才有）：
-- `VibeVoiceTTS` —— 2/3 个有
-- `LongCatVoiceCloneTTS` —— 1/3 个有
+- `ConstrainImage|pysssss` —— 1/2 个有
+- `GrowMaskWithBlur` —— 1/2 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/2 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/2 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/2 个有
 
 ## 典型参数
 
@@ -41,4 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

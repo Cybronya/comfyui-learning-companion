@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_953
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.70225
-common_nodes: [BreezeTTS2LoadModel, BreezeTTS2VoiceDesign, CR Prompt Text, SaveAudio]
+coverage: 0.717667
+common_nodes: [LoadImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/声音设计_方言设计_2101869105568641025.json, 音频生成/音频生成/声音设计 方言设计_2100192848959332353.json, 音频生成/音频生成/声音设计_方言设计_2105120675768913921.json, 音频生成/音频生成/声音设计_方言设计_2105498022892363778.json]
+members: [图片生成/图生图/FLUX kontext 双图结合_1931347207402749954.json, 图片生成/图生图/FLUX.1 Kontext  一键直出三视图_1933873735386451969.json, 图片生成/图生图/Flux Kontext一句话改图，最新最强大！_1928732820825608193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_953
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/声音设计_方言设计_2101869105568641025.json、音频生成/音频生成/声音设计 方言设计_2100192848959332353.json、音频生成/音频生成/声音设计_方言设计_2105120675768913921.json、音频生成/音频生成/声音设计_方言设计_2105498022892363778.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX kontext 双图结合_1931347207402749954.json、图片生成/图生图/FLUX.1 Kontext  一键直出三视图_1933873735386451969.json、图片生成/图生图/Flux Kontext一句话改图，最新最强大！_1928732820825608193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BreezeTTS2LoadModel`
-- `BreezeTTS2VoiceDesign`
-- `CR Prompt Text`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `ConstrainImage|pysssss` —— 2/3 个有
+- `ImageConcanate` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `PrimitiveString` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,65 +1,55 @@
 ---
 name: unknown_workflow_upscale_vae_63
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.573667
-common_nodes: [Any Switch (rgthree), Bookmark (rgthree), Fast Groups Bypasser (rgthree), GetNode, Image Comparer (rgthree), Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, PlaySound|pysssss, PrimitiveFloat, PrimitiveStringMultiline, RHHiddenNodes, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, easy int]
+frequency: 2
+level: weak
+coverage: 0.8405
+common_nodes: [ImageFromBatch+, ImageScaleToTotalPixels, ImageTile+, JoinImageWithAlpha, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed, easy clearCacheAll, easy imageSize, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/图片高清修复_2032779228466384897.json, 平台全量/图片超清重绘放大V1_2012862147813974018.json, 数字人/数字人/图片重绘高清放大-阿浩_2026840504096268290.json]
+members: [图片生成/文生图/AI动画 IMAGE - Workflow V1.0_2027604910757388289.json, 视频生成/文生视频/5.1 工具：拆图+放大_2031785449819217921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_63
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/图片高清修复_2032779228466384897.json、平台全量/图片超清重绘放大V1_2012862147813974018.json、数字人/数字人/图片重绘高清放大-阿浩_2026840504096268290.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI动画 IMAGE - Workflow V1.0_2027604910757388289.json、视频生成/文生视频/5.1 工具：拆图+放大_2031785449819217921.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Bookmark (rgthree)`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `Label (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+全部 2 个 workflow 都包含：
+- `ImageFromBatch+`
+- `ImageScaleToTotalPixels`
+- `ImageTile+`
+- `JoinImageWithAlpha`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
+- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SetNode`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy imageSize`
 - `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `StringLength` —— 2/3 个有
-- `Switch any [Crystools]` —— 2/3 个有
-- `easy compare` —— 2/3 个有
-- `IntToText` —— 1/3 个有
-- `LoraLoaderVanilla` —— 1/3 个有
-- `SeedVR2TorchCompileSettings` —— 1/3 个有
-- `StringToInt` —— 1/3 个有
+- `CR Prompt Text` —— 1/2 个有
+- `INTConstant` —— 1/2 个有
+- `ImageResize+` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `easy imageInsetCrop` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,4 +57,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

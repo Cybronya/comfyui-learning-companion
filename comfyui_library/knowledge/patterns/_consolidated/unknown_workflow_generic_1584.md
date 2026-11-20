@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+common_nodes: [CR Prompt Text, ImageScaleToTotalPixels, LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Image 2封面生成_2052340276496216066.json, 图片生成/图生图/Image 2生图工作流_2048602671271124994.json]
+members: [图片生成/图生图/（自用）LongCat Edit单图像编辑（换装前置）_1997711874340925441.json, 图片生成/文生图/水墨画l图像生成V2-longcat-image-edit_2000828999762931714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1584
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Image 2封面生成_2052340276496216066.json、图片生成/图生图/Image 2生图工作流_2048602671271124994.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/（自用）LongCat Edit单图像编辑（换装前置）_1997711874340925441.json、图片生成/文生图/水墨画l图像生成V2-longcat-image-edit_2000828999762931714.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,17 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Prompt Text`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
+- `LongCatImageEdit`
+- `LongCatImageModelLoader`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Seed (rgthree)` —— 1/2 个有
-- `TextInputNode` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 1/2 个有
+- `TT_img_enc` —— 1/2 个有
+- `TT_img_enc_v2` —— 1/2 个有
 
 ## 典型参数
 

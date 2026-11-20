@@ -3,33 +3,43 @@ name: unknown_workflow_generic_1552
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [DisplayImageFromURL, ImageScale, SaveImage]
+coverage: 0.717
+common_nodes: [GH_CropRestore, GH_MaskCropV2, GoohaiUniversalSlider, GrowMaskWithBlur, Image Comparer (rgthree), JjkText, LoadImage, MaskPreview+, PreviewImage, RH_RhartImageG25SunburstImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/0-正后产品压缩_2094712818472935426.json, 图片生成/图生图/7-换装后四宫格切割1-1...2-3...3-4_2094712804384268290.json]
+members: [图片生成/图生图/海报单台赛车替换 G2.5_2100836195877081090.json, 图片生成/图生图/细节修复 _ 参考版 _ G2.5_2100862299090280450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1552
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/0-正后产品压缩_2094712818472935426.json、图片生成/图生图/7-换装后四宫格切割1-1...2-3...3-4_2094712804384268290.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/海报单台赛车替换 G2.5_2100836195877081090.json、图片生成/图生图/细节修复 _ 参考版 _ G2.5_2100862299090280450.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DisplayImageFromURL`
-- `ImageScale`
+- `GH_CropRestore`
+- `GH_MaskCropV2`
+- `GoohaiUniversalSlider`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
+- `JjkText`
+- `LoadImage`
+- `MaskPreview+`
+- `PreviewImage`
+- `RH_RhartImageG25SunburstImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageGridtoBatch` —— 1/2 个有
-- `RotateImageNode` —— 1/2 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `MaskFillHoles` —— 1/2 个有
 
 ## 典型参数
 

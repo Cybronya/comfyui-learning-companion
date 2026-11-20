@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_1256
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.889
-common_nodes: [CR Prompt Text, LoadImage, SaveImage]
+frequency: 2
+level: weak
+coverage: 0.7525
+common_nodes: [147b517e-5ea6-4fba-84f7-46851be6e4ce, GetImageSize, ImageCompare, LoadImage, PreviewImage, ResizeImageMaskNode, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G+Image+1.5图片修改+1.4每张 10s极速出图 高质量，低画质没有用_2001560758108450818.json, 图片生成/文生图/（每天免费5次1k low）全能图片G image 1.5(rh api版)_2002077598610014209.json, 平台全量/RunningHub_全能图片G_Image_2.5_九图编辑_原映射_api_2117652716037173249.json]
+members: [comfyui-workflow-templates-json/image_anima_lllite_any_control_to_image.json, comfyui-workflow-templates-json/image_anima_lllite_depth_control_to_image.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1256
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G+Image+1.5图片修改+1.4每张 10s极速出图 高质量，低画质没有用_2001560758108450818.json、图片生成/文生图/（每天免费5次1k low）全能图片G image 1.5(rh api版)_2002077598610014209.json、平台全量/RunningHub_全能图片G_Image_2.5_九图编辑_原映射_api_2117652716037173249.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_anima_lllite_any_control_to_image.json、comfyui-workflow-templates-json/image_anima_lllite_depth_control_to_image.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
+全部 2 个 workflow 都包含：
+- `147b517e-5ea6-4fba-84f7-46851be6e4ce`
+- `GetImageSize`
+- `ImageCompare`
 - `LoadImage`
+- `PreviewImage`
+- `ResizeImageMaskNode`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_GPT_Image15` —— 2/3 个有
-- `RH_RhartImageG25FlareImageToImage` —— 1/3 个有
+- `28eb0ec0-5d35-42e9-8cb3-d1161dc5a231` —— 1/2 个有
+- `Canny` —— 1/2 个有
+- `ImageInvert` —— 1/2 个有
 
 ## 典型参数
 
@@ -41,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,36 +3,38 @@ name: unknown_workflow_sampler_88
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.866
-common_nodes: [LoadImage, RH_Translator, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage]
+coverage: 0.95
+common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/OneReward图生图重绘_1965637128468185090.json, 图片生成/图生图/图像编辑 _ OneReward局部重绘_1966741107927396353.json]
+members: [图片生成/文生图/Qwen3-TTS克隆音色_2014976486570205186.json, 音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_88
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/OneReward图生图重绘_1965637128468185090.json、图片生成/图生图/图像编辑 _ OneReward局部重绘_1966741107927396353.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen3-TTS克隆音色_2014976486570205186.json、音频生成/音频生成/Qwen3 TTS语音复刻（阿里最新开源）_2014610323709366274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_Translator`
-- `RunningHub OneReward Loader`
-- `RunningHub OneReward Sampler`
-- `SaveImage`
+- `Apply Whisper`
+- `CR Prompt Text`
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `ShowAnything|Mie` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

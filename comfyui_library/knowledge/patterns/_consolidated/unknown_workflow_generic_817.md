@@ -3,39 +3,38 @@ name: unknown_workflow_generic_817
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.905
-common_nodes: [CR Text, LoadImage, SaveImage, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.92375
+common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/反推提示词/MinMaxH3-文戏-视频提示词-反推-模板_2090740562419863554.json, 图片生成/反推提示词/MinMaxH3-武戏-视频提示词反推-模板_2090740646373060610.json, 图片生成/反推提示词/Qwen3.5扩写minimax+H3提示词-图生、多参_2092264936377507842.json, 图片生成/反推提示词/文生视频-提示词-模板_2090736130575654914.json]
+members: [数字人/数字人/TTS2声音克隆，语音模仿，可以调情绪【大熊】_1968892195413610497.json, 音频生成/音频生成/TTS2声音克隆_1981924852229652481.json, 音频生成/音频生成/声音模仿，TTS2，数字人声音生成_1966648412252909570.json, 音频生成/音频生成/超自然声音克隆（根叔）_1977239597547704322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_817
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/MinMaxH3-文戏-视频提示词-反推-模板_2090740562419863554.json、图片生成/反推提示词/MinMaxH3-武戏-视频提示词反推-模板_2090740646373060610.json、图片生成/反推提示词/Qwen3.5扩写minimax+H3提示词-图生、多参_2092264936377507842.json、图片生成/反推提示词/文生视频-提示词-模板_2090736130575654914.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/TTS2声音克隆，语音模仿，可以调情绪【大熊】_1968892195413610497.json、音频生成/音频生成/TTS2声音克隆_1981924852229652481.json、音频生成/音频生成/声音模仿，TTS2，数字人声音生成_1966648412252909570.json、音频生成/音频生成/超自然声音克隆（根叔）_1977239597547704322.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `SaveImage`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `CR Prompt Text`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveText` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `Image Batch` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `GetVideoComponents` —— 3/4 个有
+- `Note _O` —— 3/4 个有
+- `PreviewAudio` —— 3/4 个有
+- `LoadVideo` —— 2/4 个有
+- `SaveAudioAdvanced` —— 1/4 个有
 
 ## 典型参数
 

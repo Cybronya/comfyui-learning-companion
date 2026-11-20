@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_video_sampler_17
 type: Unknown Workflow
-frequency: 8
+frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [CM_FloatToInt, GetVideoComponents, LoadImage, LoadVideo, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine]
+coverage: 0.793667
+common_nodes: [Echo_LoadModel, Echo_Sampler, ImageResizeAdvanced, LoadAudio, LoadImage, PreviewImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/DreamID-V视频换脸（不报错版）_2007392676399816706.json, 平台全量/极速视频换脸 DreamID-V视频换脸_2021037534406516737.json, 平台全量/视频真实换脸 DreamID-V 超强视频换脸_2017057144763322370.json, 数字人/数字人/DreamID-V视频换脸_2008974813620084738.json, 视频生成/图生视频/DreamID-V视频换脸  精准换脸 口形匹配_2011458263312769025.json, 视频生成/图生视频/DreamID-V视频换脸_2009239491415908354.json, 视频生成/图生视频/DreamID-V视频换脸_2029470335698997249.json, 视频生成/图生视频/视频换脸_2013142770868822018.json]
+members: [图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json, 视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json, 视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/DreamID-V视频换脸（不报错版）_2007392676399816706.json、平台全量/极速视频换脸 DreamID-V视频换脸_2021037534406516737.json、平台全量/视频真实换脸 DreamID-V 超强视频换脸_2017057144763322370.json、数字人/数字人/DreamID-V视频换脸_2008974813620084738.json、视频生成/图生视频/DreamID-V视频换脸  精准换脸 口形匹配_2011458263312769025.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/「6秒出图」Joy_caption极速反推_1889337750003376130.json、视频生成/图生视频/Comfyui  音频驱动数字人物角色说话动画_1923972042498953217.json、视频生成/图生视频/Echomimic_V2数字人工作流_1906287369073659905.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CM_FloatToInt`
-- `GetVideoComponents`
+全部 3 个 workflow 都包含：
+- `Echo_LoadModel`
+- `Echo_Sampler`
+- `ImageResizeAdvanced`
+- `LoadAudio`
 - `LoadImage`
-- `LoadVideo`
-- `RunningHub_DreamID-V_Loader`
-- `RunningHub_DreamID-V_Sampler`
+- `PreviewImage`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `easy imageCount` —— 7/8 个有
-- `INTConstant` —— 1/8 个有
-- `SimpleMath+` —— 1/8 个有
 
 ## 典型参数
 

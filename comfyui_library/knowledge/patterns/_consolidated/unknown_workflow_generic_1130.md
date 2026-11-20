@@ -3,38 +3,34 @@ name: unknown_workflow_generic_1130
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.907333
-common_nodes: [LoadImage, RH_ComfyFluxKontext, RH_Translator, SaveImage, easy imageScaleDownToSize]
+coverage: 0.866667
+common_nodes: [LoadAudio, LoadImage, RH_Wan26_I2V, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontex自定义图案编辑_1936063787571007489.json, 平台全量/kontext 丨万物合影 合并图像 场景人物生成_1937855571322408961.json, 平台全量/美甲艺术_支持自定义图案_Kontext一键轻松搞定_1929451448138940418.json]
+members: [视频生成/图生视频/Wan2.6 I2V_2000815926377316353.json, 视频生成/图生视频/Wan2.6图生视频I2V_2007613994982445058.json, 视频生成/图生视频/图生视频-Wan2.6-电影级视频模型-能演戏懂运镜的全能选手_2001093556196569089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1130
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Kontex自定义图案编辑_1936063787571007489.json、平台全量/kontext 丨万物合影 合并图像 场景人物生成_1937855571322408961.json、平台全量/美甲艺术_支持自定义图案_Kontext一键轻松搞定_1929451448138940418.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.6 I2V_2000815926377316353.json、视频生成/图生视频/Wan2.6图生视频I2V_2007613994982445058.json、视频生成/图生视频/图生视频-Wan2.6-电影级视频模型-能演戏懂运镜的全能选手_2001093556196569089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `RH_ComfyFluxKontext`
-- `RH_Translator`
-- `SaveImage`
-- `easy imageScaleDownToSize`
+- `RH_Wan26_I2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `JWStringReplace` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `easy showAnything` —— 2/3 个有
+- `CR Text` —— 1/3 个有
 
 ## 典型参数
 

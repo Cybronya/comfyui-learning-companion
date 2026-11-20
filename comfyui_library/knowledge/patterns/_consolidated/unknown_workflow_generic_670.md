@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_670
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.684
-common_nodes: [ImageConcanate, LoadImage, PreviewImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.78025
+common_nodes: [ByteDanceSeedreamNodeV3, SaveImageAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext 多图融合一致性【 多图组合版】_1975500793417699329.json, 平台全量/CG迷-Kontext多图迁移融合工作流_1931059021006962690.json, 平台全量/FLUX Kontext【AI小王子】_1931629710399176706.json, 平台全量/【大炮精选】Kontext 多图融合一致性【 多图组合版】_1929418052864000001.json, 视频生成/图生视频/电商版Kontext 多图融合一致性【 多图组合版】_1968470354614202370.json]
+members: [comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json, comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_670
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Kontext 多图融合一致性【 多图组合版】_1975500793417699329.json、平台全量/CG迷-Kontext多图迁移融合工作流_1931059021006962690.json、平台全量/FLUX Kontext【AI小王子】_1931629710399176706.json、平台全量/【大炮精选】Kontext 多图融合一致性【 多图组合版】_1929418052864000001.json、视频生成/图生视频/电商版Kontext 多图融合一致性【 多图组合版】_1968470354614202370.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_flash_t2i.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_lite_image_edit.json、comfyui-workflow-templates-json/api_bytedance_seedream_5_0_pro_image_edit.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageConcanate`
-- `LoadImage`
-- `PreviewImage`
-- `RH_ComfyFluxKontext`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `ByteDanceSeedreamNodeV3`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Image_scale_to_side` —— 3/5 个有
-- `easy imageRemBg` —— 3/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
+- `LoadImage` —— 3/4 个有
+- `Painter` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

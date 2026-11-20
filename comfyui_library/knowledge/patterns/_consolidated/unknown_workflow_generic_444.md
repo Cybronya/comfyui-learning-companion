@@ -1,50 +1,35 @@
 ---
 name: unknown_workflow_generic_444
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.711571
-common_nodes: [PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.9
+common_nodes: [LoadImage, RH_DLSS5Enhance, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/ZIP批量上传图片，for循环处理多张图片演示实例_1937380001987633154.json, 图片生成/图生图/光影色彩复制_1979028901223632897.json, 图片生成/图生图/全能图片V1 批量图生图_1951955999404052481.json, 图片生成/图生图/全能图片V1图像编辑批量版_1980671977885188098.json, 图片生成/图生图/全能图片V1批量光影及色彩调整_1977651576317845506.json, 图片生成/图生图/图片批量换脸_1993511250852331522.json, 图片生成/图生图/图片换背景-单图或者批量_1968613096191401985.json]
+members: [图片生成/图生图/DLSS5图像放大增强体验_2097227894618681345.json, 图片生成/图生图/Dlss5_2100083324332109826.json, 图片生成/图生图/Dlss5_2102590795344867329.json, 图片生成/图生图/【TUT】DLSS5-图片高清放大-2k_2100363059654127617.json, 图片生成/图生图/千府AI-DLSS5人脸洗图工作流_2109494182321672194.json, 图片生成/图生图/千府AI-DLSS5洗图工作流_2101508878457462786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_444
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/ZIP批量上传图片，for循环处理多张图片演示实例_1937380001987633154.json、图片生成/图生图/光影色彩复制_1979028901223632897.json、图片生成/图生图/全能图片V1 批量图生图_1951955999404052481.json、图片生成/图生图/全能图片V1图像编辑批量版_1980671977885188098.json、图片生成/图生图/全能图片V1批量光影及色彩调整_1977651576317845506.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/DLSS5图像放大增强体验_2097227894618681345.json、图片生成/图生图/Dlss5_2100083324332109826.json、图片生成/图生图/Dlss5_2102590795344867329.json、图片生成/图生图/【TUT】DLSS5-图片高清放大-2k_2100363059654127617.json、图片生成/图生图/千府AI-DLSS5人脸洗图工作流_2109494182321672194.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `RH_DLSS5Enhance`
 - `SaveImage`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowInt` —— 6/7 个有
-- `LoadImage` —— 5/7 个有
-- `RH_Nano_Banana_Image2Image` —— 5/7 个有
-- `ImageScaleDownToSize` —— 3/7 个有
-- `RH_Translator` —— 2/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `CR Text` —— 1/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `JjkText` —— 1/7 个有
-- `ReActorFaceSwap` —— 1/7 个有
-- `easy imageRemBg` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 3/6 个有
+- `ShunjingAIShade` —— 3/6 个有
 
 ## 典型参数
 

@@ -3,36 +3,38 @@ name: unknown_workflow_generic_1515
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.845
-common_nodes: [LoadImage, PrimitiveStringMultiline, RH_Captioner_Pro, SaveImage, StringConcatenate]
+coverage: 0.9115
+common_nodes: [Image Comparer (rgthree), ImageComposite+, LayerMask: LoadSegmentAnythingModels, LayerMask: MaskPreview, LayerMask: SegmentAnythingUltra V3, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/LLM 反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099630333841989634.json, 图片生成/图生图/反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099304187879313410.json]
+members: [图片生成/图生图/宠物变假模特LORA数据集素材_1991486638113112066.json, 图片生成/图生图/宠物变假模特LORA数据集素材_1991497280823967746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1515
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/LLM 反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099630333841989634.json、图片生成/图生图/反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099304187879313410.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/宠物变假模特LORA数据集素材_1991486638113112066.json、图片生成/图生图/宠物变假模特LORA数据集素材_1991497280823967746.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `ImageComposite+`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: MaskPreview`
+- `LayerMask: SegmentAnythingUltra V3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RH_Captioner_Pro`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `StringConcatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `RH_SeedreamV5ProImageToImage` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `Image Rembg (Remove Background)` —— 1/2 个有
 
 ## 典型参数
 

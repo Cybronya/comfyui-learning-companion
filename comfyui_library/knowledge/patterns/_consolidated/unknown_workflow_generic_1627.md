@@ -3,48 +3,33 @@ name: unknown_workflow_generic_1627
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7195
-common_nodes: [Bjornulf_ShowInt, GH_MaskCropV2, GetNode, GoohaiUniversalSlider, LoadImage, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, SetNode, easy forLoopEnd, easy forLoopStart, easy imageCount]
+coverage: 0.5
+common_nodes: [PreviewImage, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/lora制作 _ 裁剪+主体白模 _ for循环 zip批量_2102296238237503490.json, 图片生成/图生图/批量裁剪面部 1：1_2104751652443086849.json]
+members: [图片生成/文生图/全能图片G-2.0文生图(低价渠道版)_2082295443026956290.json, 图片生成/文生图/😲老许Gary：ImageV2 最强文生图丨强到离谱！_2046852754919919617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1627
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/lora制作 _ 裁剪+主体白模 _ for循环 zip批量_2102296238237503490.json、图片生成/图生图/批量裁剪面部 1：1_2104751652443086849.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G-2.0文生图(低价渠道版)_2082295443026956290.json、图片生成/文生图/😲老许Gary：ImageV2 最强文生图丨强到离谱！_2046852754919919617.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `GH_MaskCropV2`
-- `GetNode`
-- `GoohaiUniversalSlider`
-- `LoadImage`
 - `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
-- `SetNode`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
 
 **可变部分**（部分 workflow 才有）：
-- `ConstrainImage|pysssss` —— 1/2 个有
-- `GrowMaskWithBlur` —— 1/2 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/2 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/2 个有
-- `LayerMask: PersonMaskUltra V2` —— 1/2 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

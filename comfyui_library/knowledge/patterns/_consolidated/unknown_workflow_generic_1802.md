@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1802
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [AILab_QwenVL, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, ShowText]
+coverage: 0.7
+common_nodes: [LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/🍌香蕉  2 & Pro_ 许梦捷_2000369410886037505.json, 图片生成/文生图/2031174389567332354.json]
+members: [音频生成/音频生成/IndexTTS2情感声音克隆-参考音色工作流_2094568109851111426.json, 音频生成/音频生成/IndexTTS2情感迁移-参考音色工作流_2094575121431355393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1802
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/🍌香蕉  2 & Pro_ 许梦捷_2000369410886037505.json、图片生成/文生图/2031174389567332354.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2情感声音克隆-参考音色工作流_2094568109851111426.json、音频生成/音频生成/IndexTTS2情感迁移-参考音色工作流_2094575121431355393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `ShowText`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `MultipleImagesInput` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `easy promptConcat` —— 1/2 个有
+- `IndexTTS2EmotionAudioNode` —— 1/2 个有
+- `IndexTTS2EmotionTextNode` —— 1/2 个有
 
 ## 典型参数
 

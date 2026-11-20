@@ -1,33 +1,36 @@
 ---
 name: unknown_workflow_generic_469
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.928571
-common_nodes: [RH_YouchuanTextToImageV7, SaveImage]
+coverage: 0.939167
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/悠船图生图V7_2080582721025433602.json, 图片生成/文生图/Youchuan_TextToImageV7_v7.0_2034593971820826626.json, 图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2038873329037221890.json, 图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2043197697796083713.json, 图片生成/文生图/mj_min_03_cosmic_clock_wallpaper_v7_2038876805108604929.json, 图片生成/文生图/mj_min_04_neon_shake_ad_v7_2038878034027089921.json, 图片生成/文生图/悠船文生图-v7_2080614372568817665.json]
+members: [图片生成/图生图/一键自动矫正裁剪-证件照-蓝白红自行调节_2067454386472841218.json, 图片生成/图生图/全能图片Pro_2044989873957900290.json, 图片生成/图生图/全能图片Pro双图编辑_2035949319622234114.json, 图片生成/图生图/全能图片Pro多图编辑_2035942456222556162.json, 图片生成/图生图/证件照 （蓝白红）（全能图像编辑）_2015052050962321410.json, 图片生成/图生图/证件照3.0_1979925264920645634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_469
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/悠船图生图V7_2080582721025433602.json、图片生成/文生图/Youchuan_TextToImageV7_v7.0_2034593971820826626.json、图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2038873329037221890.json、图片生成/文生图/mj_min_01_korean_studio_portrait_v7_2043197697796083713.json、图片生成/文生图/mj_min_03_cosmic_clock_wallpaper_v7_2038876805108604929.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/一键自动矫正裁剪-证件照-蓝白红自行调节_2067454386472841218.json、图片生成/图生图/全能图片Pro_2044989873957900290.json、图片生成/图生图/全能图片Pro双图编辑_2035949319622234114.json、图片生成/图生图/全能图片Pro多图编辑_2035942456222556162.json、图片生成/图生图/证件照 （蓝白红）（全能图像编辑）_2015052050962321410.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `RH_YouchuanTextToImageV7`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `RH_Translator`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/7 个有
+- `PreviewAny` —— 3/6 个有
+- `TextCombinerTwo` —— 3/6 个有
 
 ## 典型参数
 

@@ -1,46 +1,41 @@
 ---
 name: unknown_workflow_controlnet_face_detailer_clip
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.896
-common_nodes: [ApplyEcomIDAdvanced, CLIPTextEncode, CheckpointLoaderSimple, ControlNetLoader, EcomIDFaceAnalysis, EcomID_PulidModelLoader, FaceDetailer, LoadImage, SaveImage, UltralyticsDetectorProvider]
+frequency: 2
+level: weak
+coverage: 0.875
+common_nodes: [ApplyEcomIDAdvanced, CLIPTextEncode, CheckpointLoaderSimple, ControlNetLoader, EcomIDEvaClipLoader, EcomIDFaceAnalysis, EcomID_PulidModelLoader, FaceDetailer, InstantID_IPA_ModelLoader, LoadImage, PreviewImage, SaveImage, UltralyticsDetectorProvider]
 problems: []
 missing: []
-members: [图片生成/图生图/ECOMID最强一键换脸_1906692970094153729.json, 图片生成/图生图/SDXL ECOMID最强一键换脸_1912030837712584706.json, 平台全量/EcomID 高清换脸丨极高相似度EcomID 换脸_1912425718477979650.json]
+members: [图片生成/图生图/ECOMID最强一键换脸_1906692970094153729.json, 图片生成/图生图/SDXL ECOMID最强一键换脸_1912030837712584706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_face_detailer_clip
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/ECOMID最强一键换脸_1906692970094153729.json、图片生成/图生图/SDXL ECOMID最强一键换脸_1912030837712584706.json、平台全量/EcomID 高清换脸丨极高相似度EcomID 换脸_1912425718477979650.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ECOMID最强一键换脸_1906692970094153729.json、图片生成/图生图/SDXL ECOMID最强一键换脸_1912030837712584706.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `ApplyEcomIDAdvanced`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
 - `ControlNetLoader`
+- `EcomIDEvaClipLoader`
 - `EcomIDFaceAnalysis`
 - `EcomID_PulidModelLoader`
 - `FaceDetailer`
+- `InstantID_IPA_ModelLoader`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
 - `UltralyticsDetectorProvider`
-
-**可变部分**（部分 workflow 才有）：
-- `EcomIDEvaClipLoader` —— 2/3 个有
-- `InstantID_IPA_ModelLoader` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `InstantIDModelLoader` —— 1/3 个有
-- `PulidEvaClipLoader` —— 1/3 个有
-- `SAMLoader` —— 1/3 个有
 
 ## 典型参数
 
@@ -52,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

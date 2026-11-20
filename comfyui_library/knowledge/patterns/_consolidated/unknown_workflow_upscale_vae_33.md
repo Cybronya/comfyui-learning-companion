@@ -1,46 +1,40 @@
 ---
 name: unknown_workflow_upscale_vae_33
 type: Unknown Workflow
-frequency: 7
+frequency: 4
 level: moderate
-coverage: 0.579429
-common_nodes: [Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, PlaySound|pysssss, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.89
+common_nodes: [ImageScaleBy, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [平台全量/高清放大_鲨鱼辣椒_2038476535178465282.json, 数字人/数字人/YZ金鱼-数字人多角度定妆造_1993619967620874241.json, 数字人/数字人/【CQ808】数字人多角度设计_2115955927760330753.json, 数字人/数字人/【CQ808】数字人多角度设计_2115967784218877954.json, 数字人/数字人/人物多角度设计+(全能图像编辑)_2040786402035634178.json, 数字人/数字人/数字人多角度设计 (全能图像编辑)_2035337776383664129.json, 数字人/数字人/数字人多角度设计_1992113820950745089.json]
+members: [图片生成/图生图/SeedVR2_高清放大可批量_2097170882073546754.json, 图片生成/图生图/SeedVR2_高清放大可批量_2097509265190768641.json, 图片生成/图生图/单图放大_seedVR2_4K_2005946235443970049.json, 图片生成/图生图/最好的高清放大_2011245583637422082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_33
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/高清放大_鲨鱼辣椒_2038476535178465282.json、数字人/数字人/YZ金鱼-数字人多角度定妆造_1993619967620874241.json、数字人/数字人/【CQ808】数字人多角度设计_2115955927760330753.json、数字人/数字人/【CQ808】数字人多角度设计_2115967784218877954.json、数字人/数字人/人物多角度设计+(全能图像编辑)_2040786402035634178.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SeedVR2_高清放大可批量_2097170882073546754.json、图片生成/图生图/SeedVR2_高清放大可批量_2097509265190768641.json、图片生成/图生图/单图放大_seedVR2_4K_2005946235443970049.json、图片生成/图生图/最好的高清放大_2011245583637422082.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+全部 4 个 workflow 都包含：
+- `ImageScaleBy`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 6/7 个有
-- `CR Text` —— 5/7 个有
-- `CR Text Concatenate` —— 5/7 个有
-- `ShowText|pysssss` —— 5/7 个有
-- `easy imageIndexSwitch` —— 5/7 个有
-- `easy int` —— 3/7 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `HAIGC_SaveImagesToZip` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `RHUploadZip_V2` —— 2/4 个有
 
 ## 典型参数
 

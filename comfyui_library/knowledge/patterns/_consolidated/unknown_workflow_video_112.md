@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_video_112
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.2675
-common_nodes: [GetNode, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, ModelPreviewOverrideKJ, RHHiddenNodes, SetNode, VHS_VideoCombine, easy float]
+frequency: 2
+level: weak
+coverage: 0.778
+common_nodes: [GetVideoComponents, JjkText, LoadImage, SaveVideo, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI电影级工作流（优化版）Minimax H3 （影视专用）_2109554088999481345.json, 视频生成/文生视频/跃崎影业AI电影工作流优化版Minimax_H3_电影级_2113795833912193026.json, 视频生成/文生视频/跃崎影业AI电影工作流优化版Minimax_H3_电影级_2113806356401713153.json, 视频生成/文生视频/跃崎影业AI电影工作流（优化版）Minimax H3 电影级_2108315651088674818.json]
+members: [视频生成/图生视频/Seedance2.5min前后帧室内白天夜晚光影变化_2074319853363752961.json, 视频生成/图生视频/Seedance2.5min多图生视频_2083009273801564162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_112
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI电影级工作流（优化版）Minimax H3 （影视专用）_2109554088999481345.json、视频生成/文生视频/跃崎影业AI电影工作流优化版Minimax_H3_电影级_2113795833912193026.json、视频生成/文生视频/跃崎影业AI电影工作流优化版Minimax_H3_电影级_2113806356401713153.json、视频生成/文生视频/跃崎影业AI电影工作流（优化版）Minimax H3 电影级_2108315651088674818.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Seedance2.5min前后帧室内白天夜晚光影变化_2074319853363752961.json、视频生成/图生视频/Seedance2.5min多图生视频_2083009273801564162.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：27%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GetNode`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyMediaLoader`
-- `ModelPreviewOverrideKJ`
-- `RHHiddenNodes`
-- `SetNode`
+全部 2 个 workflow 都包含：
+- `GetVideoComponents`
+- `JjkText`
+- `LoadImage`
+- `SaveVideo`
 - `VHS_VideoCombine`
-- `easy float`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
+- `RHLLMChatNode` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 1/2 个有
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 1/2 个有
 
 ## 典型参数
 
@@ -46,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

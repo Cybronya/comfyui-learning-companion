@@ -3,42 +3,36 @@ name: unknown_workflow_generic_1861
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6515
-common_nodes: [Any Switch (rgthree), DeepTranslatorTextNode, Fast Groups Bypasser (rgthree), Int, InvertMask, JoinImageWithAlpha, LayerMask: SegformerB2ClothesUltra, LayerMask: SegmentAnythingUltra V2, Load Image Batch, LoadImage, MaskBlur+, Masks Add, PlaySound|pysssss, SDMatteApply, SaveImage, TextInput_]
+coverage: 0.757
+common_nodes: [LoadAudio, LoadImage, SaveAudio, TextInput_, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/抠图_1989160854727831554.json, 平台全量/QT102-智能抠图 支持语抠图，选择服装抠图，批量抠图_1946847960661680130.json]
+members: [音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆_1980114922279440386.json, 音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆双人_多人对话_1980263429552431105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1861
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/抠图_1989160854727831554.json、平台全量/QT102-智能抠图 支持语抠图，选择服装抠图，批量抠图_1946847960661680130.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆_1980114922279440386.json、音频生成/音频生成/【阡陌】IndexTTS2最强AI音色语音克隆双人_多人对话_1980263429552431105.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `DeepTranslatorTextNode`
-- `Fast Groups Bypasser (rgthree)`
-- `Int`
-- `InvertMask`
-- `JoinImageWithAlpha`
-- `LayerMask: SegformerB2ClothesUltra`
-- `LayerMask: SegmentAnythingUltra V2`
-- `Load Image Batch`
+- `LoadAudio`
 - `LoadImage`
-- `MaskBlur+`
-- `Masks Add`
-- `PlaySound|pysssss`
-- `SDMatteApply`
-- `SaveImage`
+- `SaveAudio`
 - `TextInput_`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `IndexTTS2_Basic` —— 1/2 个有
+- `IndexTTS2_MultiTalk` —— 1/2 个有
+- `IndexTTS2_SpeakerEmotionConfig` —— 1/2 个有
 
 ## 典型参数
 

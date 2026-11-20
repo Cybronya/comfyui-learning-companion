@@ -3,38 +3,34 @@ name: unknown_workflow_generic_818
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7955
-common_nodes: [AILab_MiniCPM_4_V, LayerUtility: PurgeVRAM, LoadImage, LoadVideo, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.95
+common_nodes: [LoadAudio, SaveAudio, SparkTTSClone]
 problems: []
 missing: []
-members: [图片生成/反推提示词/MiniCpm 4.5视频反推打标神器_1962065895927562241.json, 平台全量/MiniCpm V4.5视频反推-二创利器_1982383188003692545.json, 平台全量/视频反推打标神器MiniCpm 4.5_1968161694964920322.json, 视频生成/图生视频/MiniCpm V4.5视频反推-二创神器_1976505950364372994.json]
+members: [数字人/数字人/懒羊羊语音_1908849898094272513.json, 音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json, 音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json, 音频生成/音频生成/万能声音模仿器_1909785195850203138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_818
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/MiniCpm 4.5视频反推打标神器_1962065895927562241.json、平台全量/MiniCpm V4.5视频反推-二创利器_1982383188003692545.json、平台全量/视频反推打标神器MiniCpm 4.5_1968161694964920322.json、视频生成/图生视频/MiniCpm V4.5视频反推-二创神器_1976505950364372994.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/懒羊羊语音_1908849898094272513.json、音频生成/音频生成/Spark TTS 快速语音克隆_1958715166907068418.json、音频生成/音频生成/Spark TTS语音克隆_1922617169425698817.json、音频生成/音频生成/万能声音模仿器_1909785195850203138.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AILab_MiniCPM_4_V`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `LoadVideo`
-- `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
+- `LoadAudio`
+- `SaveAudio`
+- `SparkTTSClone`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 2/4 个有
-- `LayerMask: RemBgUltra` —— 1/4 个有
-- `SaveText|pysssss` —— 1/4 个有
+- `Text Multiline` —— 2/4 个有
+- `TextBox` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

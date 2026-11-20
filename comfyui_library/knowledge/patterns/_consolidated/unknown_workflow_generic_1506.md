@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1506
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7685
-common_nodes: [DownloadAndLoadFlorence2Model, Florence2Run, LoadImage, SaveImage, ShowText|pysssss]
+coverage: 0.9
+common_nodes: [AddLabel, EmptyImage, Fast Groups Bypasser (rgthree), ImageConcanate, ImageConcatMulti, LoadImage, PreviewImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Florence 2 图像反推合集_1980101031394709505.json, 图片生成/反推提示词/蒜-图生文工作流_1994991261130141698.json]
+members: [图片生成/图生图/多图参考生图（Flux-Kontext）_1929708640507432961.json, 图片生成/图生图/多图参考生图（Flux-Kontext）_2045822064275230721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1506
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Florence 2 图像反推合集_1980101031394709505.json、图片生成/反推提示词/蒜-图生文工作流_1994991261130141698.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/多图参考生图（Flux-Kontext）_1929708640507432961.json、图片生成/图生图/多图参考生图（Flux-Kontext）_2045822064275230721.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
+- `AddLabel`
+- `EmptyImage`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcanate`
+- `ImageConcatMulti`
 - `LoadImage`
+- `PreviewImage`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
 - `SaveImage`
-- `ShowText|pysssss`
-
-**可变部分**（部分 workflow 才有）：
-- `MaskPreview` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

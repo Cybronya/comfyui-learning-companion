@@ -3,56 +3,35 @@ name: unknown_workflow_generic_1794
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9125
-common_nodes: [AILab_MaskCombiner, BlurMaskFast, CR Image Input Switch (4 way), ComfySwitchNode, EmptyImage, GetImageSize, GrowMask, Image Generate Gradient, ImageCompositeMasked, InvertMask, JoinImageWithAlpha, LoadBackgroundRemovalModel, LoadImage, Mask Fill Holes, MaskComposite, MaskSplitFilter, MaskToImage, PreviewTextNode, RH_Translator, RemapMaskRange, RemoveBackground, SAM3Segment, SaveImage, StringConstant, ThresholdMask, mask_select_mask, string_util_StrLower]
+coverage: 0.5835
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_custom, SaveAudio, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/超级抠图工作流_2081756633809637377.json, 平台全量/图图原创｜完美可控抠图工作流_2080467167908294657.json]
+members: [音频生成/音频生成/Gemini3+Suno5.5自定义音色生成音乐(配合suno.md手册使用)_2058500139739860994.json, 音频生成/音频生成/Suno 4.5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1968716288388419585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1794
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/超级抠图工作流_2081756633809637377.json、平台全量/图图原创｜完美可控抠图工作流_2080467167908294657.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Gemini3+Suno5.5自定义音色生成音乐(配合suno.md手册使用)_2058500139739860994.json、音频生成/音频生成/Suno 4.5+音乐进阶版-自定义歌词曲风API版V1 (基准0.5_两首歌)_1968716288388419585.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AILab_MaskCombiner`
-- `BlurMaskFast`
-- `CR Image Input Switch (4 way)`
-- `ComfySwitchNode`
-- `EmptyImage`
-- `GetImageSize`
-- `GrowMask`
-- `Image Generate Gradient`
-- `ImageCompositeMasked`
-- `InvertMask`
-- `JoinImageWithAlpha`
-- `LoadBackgroundRemovalModel`
-- `LoadImage`
-- `Mask Fill Holes`
-- `MaskComposite`
-- `MaskSplitFilter`
-- `MaskToImage`
-- `PreviewTextNode`
-- `RH_Translator`
-- `RemapMaskRange`
-- `RemoveBackground`
-- `SAM3Segment`
-- `SaveImage`
-- `StringConstant`
-- `ThresholdMask`
-- `mask_select_mask`
-- `string_util_StrLower`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_suno_custom`
+- `SaveAudio`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/2 个有
+- `Comfly_LLm_API` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
 
 ## 典型参数
 

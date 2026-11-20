@@ -3,31 +3,36 @@ name: unknown_workflow_generic_1505
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5
-common_nodes: [LoadImage, PreviewImage, RunningHub DeepSeekOCR Infer, ShowText|pysssss, easy saveText]
+coverage: 0.7205
+common_nodes: [Float, JjkText, LoadImage, RH_RhartImageG2ImageToImage, RTXVideoSuperResolution, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/DeepSeekOCR文本识别，文字提取保存txt格式_2056618036148400130.json, 平台全量/DeepSeekOCR文本识别，文字提取保存txt格式_1987418521221181442.json]
+members: [图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2047343738472636417.json, 图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2068227538463322114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1505
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/DeepSeekOCR文本识别，文字提取保存txt格式_2056618036148400130.json、平台全量/DeepSeekOCR文本识别，文字提取保存txt格式_1987418521221181442.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2047343738472636417.json、图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2068227538463322114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Float`
+- `JjkText`
 - `LoadImage`
-- `PreviewImage`
-- `RunningHub DeepSeekOCR Infer`
-- `ShowText|pysssss`
-- `easy saveText`
+- `RH_RhartImageG2ImageToImage`
+- `RTXVideoSuperResolution`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `FlashVSRNode` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,46 +1,39 @@
 ---
 name: unknown_workflow_generic_602
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.857
-common_nodes: [Any Switch (rgthree), AudioSeparation, CR Prompt Text, Fast Groups Bypasser (rgthree), Float, GetVideoComponents, LoadAudio, LoadVideo, NormalizeAudioLoudness, RH_HeyGemNode, SaveAudioMP3, SaveVideo, SoundFlow_TrimAudio, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, WujiCleaner, easy cleanGpuUsed]
+coverage: 0.733
+common_nodes: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, RH_Nano_Banana2_Image2Image, SaveImage, Text Find and Replace, Textbox]
 problems: []
 missing: []
-members: [平台全量/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2100427156076716034.json, 数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2095083353186856961.json, 数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2108533493696389121.json, 数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移（测试）_2100411233353682945.json, 音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094617252501999617.json, 音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094657788659191809.json]
+members: [图片生成/图生图/爆火日历拼贴_2018199541769572353.json, 图片生成/图生图/爆火日历拼贴_2033536167555112961.json, 图片生成/图生图/马年财神照一键生成器_2018959404229468161.json, 图片生成/文生图/2031240935438290946.json, 图片生成/文生图/灵感趋势_2032381412757741570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_602
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2100427156076716034.json、数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2095083353186856961.json、数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2108533493696389121.json、数字人/数字人/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移（测试）_2100411233353682945.json、音频生成/音频生成/HeyGem +IndexTTS2.5视频生视频数字人快速语音迁移_2094617252501999617.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/爆火日历拼贴_2018199541769572353.json、图片生成/图生图/爆火日历拼贴_2033536167555112961.json、图片生成/图生图/马年财神照一键生成器_2018959404229468161.json、图片生成/文生图/2031240935438290946.json、图片生成/文生图/灵感趋势_2032381412757741570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AudioSeparation`
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Float`
-- `GetVideoComponents`
-- `LoadAudio`
-- `LoadVideo`
-- `NormalizeAudioLoudness`
-- `RH_HeyGemNode`
-- `SaveAudioMP3`
-- `SaveVideo`
-- `SoundFlow_TrimAudio`
-- `T8_IndexTTS25_EmotionControl`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `WujiCleaner`
-- `easy cleanGpuUsed`
+全部 5 个 workflow 都包含：
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `Text Find and Replace`
+- `Textbox`
+
+**可变部分**（部分 workflow 才有）：
+- `JWDatetimeString` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
 
 ## 典型参数
 

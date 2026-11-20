@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_1034
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.95825
-common_nodes: [LoadAudio, SaveAudio]
+coverage: 0.751333
+common_nodes: [Joy_caption_two, Joy_caption_two_load, LoadImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json, 音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json, 音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json, 音频生成/音频生成/生成双人对话声音_2035281634374717442.json]
+members: [图片生成/图生图/实用图像提示词打标器 - LoRA 训练_1922570625221627906.json, 图片生成/文生图/CG迷-joy caption2 提示词反推 工作流_2034929045535723522.json, 图片生成/文生图/CG迷-joy caption2提示词反推工作流_1926919908653961217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1034
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/FishAudio TTS双人对话语音克隆_2033516438488621057.json、音频生成/音频生成/INDEX TTS RUN-1.5-情感语音克隆_2063993855673987073.json、音频生成/音频生成/双人声音模仿，两人声音克隆-TTS_1958690514981830658.json、音频生成/音频生成/生成双人对话声音_2035281634374717442.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/实用图像提示词打标器 - LoRA 训练_1922570625221627906.json、图片生成/文生图/CG迷-joy caption2 提示词反推 工作流_2034929045535723522.json、图片生成/文生图/CG迷-joy caption2提示词反推工作流_1926919908653961217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `Joy_caption_two`
+- `Joy_caption_two_load`
+- `LoadImage`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 3/4 个有
-- `FishS2MultiSpeakerTTS` —— 2/4 个有
-- `IndexTTSRun` —— 2/4 个有
+- `Joy_caption_two_advanced` —— 2/3 个有
+- `Joy_extra_options` —— 2/3 个有
 
 ## 典型参数
 

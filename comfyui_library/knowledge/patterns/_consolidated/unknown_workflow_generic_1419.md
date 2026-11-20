@@ -1,32 +1,42 @@
 ---
 name: unknown_workflow_generic_1419
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.944333
-common_nodes: [CR Text, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, SaveAudio]
+frequency: 2
+level: weak
+coverage: 1
+common_nodes: [GroundingDinoModelLoader (segment anything2), GroundingDinoSAMSegment (segment anything), ImpactDilateMask, JoinImageWithAlpha, LoadImage, MaskBlur+, SAMModelLoader (segment anything), SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/QWEN3 TTS声音预设_2015077846502346754.json, 音频生成/音频生成/Qwen3 TTS-自定义声音_2060681341087338498.json, 音频生成/音频生成/方言语音（qwen3-tts）_2014719044716335105.json]
+members: [图片生成/图生图/sim-双层背景锯齿修复抠图_2003432165843058689.json, 图片生成/图生图/双层背景锯齿修复抠图_2003311540587593729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1419
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/QWEN3 TTS声音预设_2015077846502346754.json、音频生成/音频生成/Qwen3 TTS-自定义声音_2060681341087338498.json、音频生成/音频生成/方言语音（qwen3-tts）_2014719044716335105.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/sim-双层背景锯齿修复抠图_2003432165843058689.json、图片生成/图生图/双层背景锯齿修复抠图_2003311540587593729.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `SaveAudio`
+全部 2 个 workflow 都包含：
+- `GroundingDinoModelLoader (segment anything2)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `ImpactDilateMask`
+- `JoinImageWithAlpha`
+- `LoadImage`
+- `MaskBlur+`
+- `SAMModelLoader (segment anything)`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `InvertMask` —— 1/2 个有
+- `MaskFillHole` —— 1/2 个有
+- `MaskToImage` —— 1/2 个有
+- `PreviewBridge` —— 1/2 个有
 
 ## 典型参数
 
@@ -38,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

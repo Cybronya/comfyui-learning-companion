@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_714
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8534
-common_nodes: [AILab_QwenVL, LoadImage, RH_RhartImageG2TextToImage, SaveImage, ShowAnything|Mie, easy saveText, easy showAnything]
+coverage: 1
+common_nodes: [LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/千禧记忆2.0_2060285625940668418.json, 图片生成/图生图/千禧记忆3.0_2060291603901804545.json, 图片生成/图生图/千禧记忆4.0_2060336919338373122.json, 图片生成/图生图/千禧记忆_2057448789543309313.json, 图片生成/图生图/千禧记忆_2060185952689156097.json]
+members: [图片生成/图生图/RMBG-2抠图+修边_2063215332772372482.json, 图片生成/图生图/万能急速抠图_2082289989509017601.json, 图片生成/图生图/万能急速抠图_2082295216089952258.json, 图片生成/图生图/抠图_1995412855149277186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_714
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/千禧记忆2.0_2060285625940668418.json、图片生成/图生图/千禧记忆3.0_2060291603901804545.json、图片生成/图生图/千禧记忆4.0_2060336919338373122.json、图片生成/图生图/千禧记忆_2057448789543309313.json、图片生成/图生图/千禧记忆_2060185952689156097.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/RMBG-2抠图+修边_2063215332772372482.json、图片生成/图生图/万能急速抠图_2082289989509017601.json、图片生成/图生图/万能急速抠图_2082295216089952258.json、图片生成/图生图/抠图_1995412855149277186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AILab_QwenVL`
+全部 4 个 workflow 都包含：
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
 - `LoadImage`
-- `RH_RhartImageG2TextToImage`
 - `SaveImage`
-- `ShowAnything|Mie`
-- `easy saveText`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialTextToImage` —— 3/5 个有
-- `io-text-save` —— 2/5 个有
-- `preview_text` —— 2/5 个有
+- `GrowMaskWithBlur` —— 1/4 个有
+- `ImageCombineAlpha_UTK` —— 1/4 个有
 
 ## 典型参数
 

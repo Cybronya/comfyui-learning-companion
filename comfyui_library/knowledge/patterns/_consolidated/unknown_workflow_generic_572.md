@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_572
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.883833
-common_nodes: [CR Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 1
+common_nodes: [Bjornulf_ShowStringText, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图像2（ai教程22配套生图）_2063646104750747649.json, 图片生成/图生图/全能图像王-全能图片_2056671805045305346.json, 图片生成/图生图/全能图像王V2-单次0.08_2028802465369432066.json, 图片生成/图生图/全能图像王V2-单次0.08_2039901168859615234.json, 图片生成/图生图/全能图片2.0(支持10图)_2029126241206411265.json, 图片生成/图生图/汽车脚垫类构图 for minimax h3-许总专用_2092903841497960449.json]
+members: [图片生成/图生图/joycaption2精准反推提示词_1911978098747998209.json, 图片生成/图生图/「详细到手上的戒指」极致精准反推提示词_1889627968720003073.json, 图片生成/文生图/图片反推提示词Qwen3 VQA_2051569934068662273.json, 图片生成/文生图/图片反推提示词Qwen3 VQA_2051722960624467969.json, 数字人/数字人/图片反推提示词Qwen3 VQA_2051911648453120002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_572
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能图像2（ai教程22配套生图）_2063646104750747649.json、图片生成/图生图/全能图像王-全能图片_2056671805045305346.json、图片生成/图生图/全能图像王V2-单次0.08_2028802465369432066.json、图片生成/图生图/全能图像王V2-单次0.08_2039901168859615234.json、图片生成/图生图/全能图片2.0(支持10图)_2029126241206411265.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/joycaption2精准反推提示词_1911978098747998209.json、图片生成/图生图/「详细到手上的戒指」极致精准反推提示词_1889627968720003073.json、图片生成/文生图/图片反推提示词Qwen3 VQA_2051569934068662273.json、图片生成/文生图/图片反推提示词Qwen3 VQA_2051722960624467969.json、数字人/数字人/图片反推提示词Qwen3 VQA_2051911648453120002.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Text`
+全部 5 个 workflow 都包含：
+- `Bjornulf_ShowStringText`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 2/6 个有
-- `GetRandomIntegerInRange` —— 1/6 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/6 个有
+- `Qwen3_VQA` —— 3/5 个有
+- `easy saveText` —— 2/5 个有
+- `workflow>升级版反推提示词` —— 2/5 个有
 
 ## 典型参数
 

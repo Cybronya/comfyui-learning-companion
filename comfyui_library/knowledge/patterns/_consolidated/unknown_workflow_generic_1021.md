@@ -1,34 +1,43 @@
 ---
 name: unknown_workflow_generic_1021
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.87075
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
+coverage: 0.782333
+common_nodes: [Image Comparer (rgthree), ImageResize+, LoadImage, RH_Nano_Banana_Image2Image, SaveImage, SeedVR2, SeedVR2BlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/电商模特展示多频显示细节工作流 V2.0_2069570506952630273.json, 视频生成/文生视频/Seedance2.0 Fast_全能视频工作流_2040013164200333313.json, 视频生成/文生视频/Seedance2.0 视频_2071873218658525185.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-九图混合生视频】工作流_2037776682970517505.json]
+members: [图片生成/图生图/全能图片V1多图编辑SeedVR2放大（Gemini 2.5 Flash）_1975551685550583810.json, 图片生成/图生图/全能图片V1多图编辑带放大（Gemini 2.5 Flash）_1975929583885225985.json, 图片生成/图生图/放大测试_1988504992279609346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1021
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/电商模特展示多频显示细节工作流 V2.0_2069570506952630273.json、视频生成/文生视频/Seedance2.0 Fast_全能视频工作流_2040013164200333313.json、视频生成/文生视频/Seedance2.0 视频_2071873218658525185.json、视频生成/文生视频/【超能视频Seedance2.0 SD2.0-九图混合生视频】工作流_2037776682970517505.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1多图编辑SeedVR2放大（Gemini 2.5 Flash）_1975551685550583810.json、图片生成/图生图/全能图片V1多图编辑带放大（Gemini 2.5 Flash）_1975929583885225985.json、图片生成/图生图/放大测试_1988504992279609346.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `ImageResize+`
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
-- `SaveVideo`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 2/4 个有
+- `PreviewImage` —— 2/3 个有
+- `RH_Translator` —— 2/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `easy imageChooser` —— 1/3 个有
 
 ## 典型参数
 

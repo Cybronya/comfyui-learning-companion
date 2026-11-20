@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_generic_907
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.7875
-common_nodes: [ImageConcanate, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Sora2_I2V, SaveVideo]
+coverage: 0.889
+common_nodes: [LoadImage, Save3DAdvanced, TripoConversionNode, TripoRetargetNode, TripoRigNode, TripoTextureNodeV2]
 problems: []
 missing: []
-members: [图片生成/图生图/大峰 多图 RH 全能视频S Image to Video（图生15秒 标清）_1981683880346435586.json, 视频生成/图生视频/两图 RH 全能视频S Image to Video_1991763972546457601.json, 视频生成/图生视频/全能视频S 多参宗 双图三图融合工作流（全网首发）_1975854697837932545.json, 视频生成/图生视频/多图 生成视频_1987532707100037122.json]
+members: [comfyui-workflow-templates-json/api_tripo3_1_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p2_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p2_multiview_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_907
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/大峰 多图 RH 全能视频S Image to Video（图生15秒 标清）_1981683880346435586.json、视频生成/图生视频/两图 RH 全能视频S Image to Video_1991763972546457601.json、视频生成/图生视频/全能视频S 多参宗 双图三图融合工作流（全网首发）_1975854697837932545.json、视频生成/图生视频/多图 生成视频_1987532707100037122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_tripo3_1_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p2_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p2_multiview_to_model.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageConcanate`
-- `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Sora2_I2V`
-- `SaveVideo`
+- `Save3DAdvanced`
+- `TripoConversionNode`
+- `TripoRetargetNode`
+- `TripoRigNode`
+- `TripoTextureNodeV2`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 3/4 个有
-- `CR Prompt Text` —— 2/4 个有
-- `RH_Translator` —— 1/4 个有
+- `TripoImageToModelNodeV2` —— 1/3 个有
+- `TripoPSeriesImageToModelNode` —— 1/3 个有
+- `TripoPSeriesMultiviewToModelNode` —— 1/3 个有
 
 ## 典型参数
 

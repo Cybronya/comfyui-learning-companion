@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_video_72
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.9094
-common_nodes: [FlashVSRInitPipe, FlashVSRNodeAdv, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.889
+common_nodes: [CustomAddLabel, GetVideoComponents, LoadImage, SaveVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/Flashvsr视频放大(收藏）_2033893057749323778.json, 平台全量/工作流视频篇11-视频高清放大-无水印保存FlashVSR_2018314767634538498.json, 平台全量/视频高清修复Video Upscaler 视频高清放大 Flash VSR_2042428397258805249.json, 平台全量/视频高清放大!Flash VSR 1.1_1904004552155373569.json, 平台全量/视频高清放大!Flash VSR 1.1_2042127002836148225.json]
+members: [视频生成/图生视频/Happyhorse1.0-快乐马-视频新王-图生视频_2048747607035482114.json, 视频生成/图生视频/Seedance2.0 Fast 图生视频-不用排队（真人支持）_2048319245276155906.json, 视频生成/图生视频/Seedance2.0 Fast 图生视频（首尾帧）-不用排队（真人支持）_2048058912468901890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_72
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/Flashvsr视频放大(收藏）_2033893057749323778.json、平台全量/工作流视频篇11-视频高清放大-无水印保存FlashVSR_2018314767634538498.json、平台全量/视频高清修复Video Upscaler 视频高清放大 Flash VSR_2042428397258805249.json、平台全量/视频高清放大!Flash VSR 1.1_1904004552155373569.json、平台全量/视频高清放大!Flash VSR 1.1_2042127002836148225.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Happyhorse1.0-快乐马-视频新王-图生视频_2048747607035482114.json、视频生成/图生视频/Seedance2.0 Fast 图生视频-不用排队（真人支持）_2048319245276155906.json、视频生成/图生视频/Seedance2.0 Fast 图生视频（首尾帧）-不用排队（真人支持）_2048058912468901890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `FlashVSRInitPipe`
-- `FlashVSRNodeAdv`
-- `VHS_LoadVideo`
+全部 3 个 workflow 都包含：
+- `CustomAddLabel`
+- `GetVideoComponents`
+- `LoadImage`
+- `SaveVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoInfo` —— 4/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
+- `RH_RhartVideoSparkvideo20FastImageToVideo` —— 2/3 个有
+- `JjkText` —— 1/3 个有
+- `RH_AlibabaHappyhorse10ImageToVideo` —— 1/3 个有
 
 ## 典型参数
 

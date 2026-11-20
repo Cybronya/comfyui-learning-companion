@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_937
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.6945
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_gpt_image_2_official_ratio, SaveImage]
+coverage: 0.888667
+common_nodes: [Float, ImageConcanate, LoadImage, PMRF, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/Kpop-16宫格模板（Image2.0文生图）_2049420472596570114.json, 图片生成/文生图/image2.0（支持4K、支持图像比例设置）_2048020009162645505.json, 图片生成/文生图/全能图片G-2  分镜 低价渠道版_2053121368287399938.json, 图片生成/文生图/全能图片G-2.0工作流合集（低价版or官方版可选）_2046836759497023490.json]
+members: [图片生成/图生图/1秒快速放大PMRF｜人像高清修复神器_1933871448991649793.json, 图片生成/图生图/PMRF通用极速图像修复（一阶段）_1937848425897725953.json, 图片生成/图生图/人像高清修复神器PMRF-1秒放大2倍_1932990661115215873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_937
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Kpop-16宫格模板（Image2.0文生图）_2049420472596570114.json、图片生成/文生图/image2.0（支持4K、支持图像比例设置）_2048020009162645505.json、图片生成/文生图/全能图片G-2  分镜 低价渠道版_2053121368287399938.json、图片生成/文生图/全能图片G-2.0工作流合集（低价版or官方版可选）_2046836759497023490.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/1秒快速放大PMRF｜人像高清修复神器_1933871448991649793.json、图片生成/图生图/PMRF通用极速图像修复（一阶段）_1937848425897725953.json、图片生成/图生图/人像高清修复神器PMRF-1秒放大2倍_1932990661115215873.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_gpt_image_2_official_ratio`
+全部 3 个 workflow 都包含：
+- `Float`
+- `ImageConcanate`
+- `LoadImage`
+- `PMRF`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `PreviewImage` —— 1/4 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 1/4 个有
+- `PreviewImage` —— 2/3 个有
 
 ## 典型参数
 

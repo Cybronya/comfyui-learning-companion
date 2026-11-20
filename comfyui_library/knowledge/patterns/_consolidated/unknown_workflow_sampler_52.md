@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_sampler_52
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.93775
-common_nodes: [LoadImage, RH_Captioner, RH_Translator, RunningHub USO Loader, RunningHub USO Sampler, SaveImage, ttN concat]
+coverage: 0.891667
+common_nodes: [CR Prompt Text, HiDreamSampler, LayerUtility: PurgeVRAM V2, LoadImage, RH_Captioner, SaveImage, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/字节USO-FLUX-三图参考-国风卡通插画机械手臂武士_1964493011042320385.json, 图片生成/图生图/字节USO-FLUX-三图参考-复古插画风格钟馗_1964497122773057537.json, 图片生成/图生图/字节USO-FLUX-三图参考-手绘风格人物_1964481031518699521.json, 图片生成/图生图/字节USO-FLUX-三图参考-风格叠加人物_1964488718046347266.json]
+members: [图片生成/图生图/【最新】HiDream洗图Fast模式_1912883187176144897.json, 图片生成/图生图/🦖HiDream洗图Fast模式_1912678873383825409.json, 图片生成/文生图/HiDream工作流，媲美flux_1911595429279035393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_52
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/字节USO-FLUX-三图参考-国风卡通插画机械手臂武士_1964493011042320385.json、图片生成/图生图/字节USO-FLUX-三图参考-复古插画风格钟馗_1964497122773057537.json、图片生成/图生图/字节USO-FLUX-三图参考-手绘风格人物_1964481031518699521.json、图片生成/图生图/字节USO-FLUX-三图参考-风格叠加人物_1964488718046347266.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【最新】HiDream洗图Fast模式_1912883187176144897.json、图片生成/图生图/🦖HiDream洗图Fast模式_1912678873383825409.json、图片生成/文生图/HiDream工作流，媲美flux_1911595429279035393.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `HiDreamSampler`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `RH_Captioner`
-- `RH_Translator`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
 - `SaveImage`
-- `ttN concat`
+- `easy promptConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 3/4 个有
+- `CLIPTextEncode` —— 2/3 个有
+- `NunchakuTextEncoderLoader` —— 2/3 个有
 
 ## 典型参数
 

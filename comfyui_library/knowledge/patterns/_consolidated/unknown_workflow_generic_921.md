@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_921
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.714
-common_nodes: [ConstrainImage|pysssss, ImageNoiseAugmentation, Int, KuwaharaBlur, LoadImage, PreviewImage, RH_Captioner_Pro, RH_RhartImageG25SunburstImageToImage, SaveImage, easy showAnything]
+coverage: 0.718667
+common_nodes: [LoadImage, RH_LLMAPI_NODE, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/洗图2.5 image 全能图片G 2.5  洗模特图_2108083670073565185.json, 图片生成/图生图/洗图2.5_2105303692416217089.json, 图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2111996562686697474.json, 图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2113462212210814977.json]
+members: [图片生成/反推提示词/RH-LLM 中文翻译成英文_1922295319269167106.json, 图片生成/反推提示词/图生视频提示词优化_1992742171172294657.json, 视频生成/图生视频/图生视频提示词优化_1989332533642973186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_921
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/洗图2.5 image 全能图片G 2.5  洗模特图_2108083670073565185.json、图片生成/图生图/洗图2.5_2105303692416217089.json、图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2111996562686697474.json、图片生成/图生图/洗图2.5_image_全能图片G_2.5_洗模特图_2113462212210814977.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/RH-LLM 中文翻译成英文_1922295319269167106.json、图片生成/反推提示词/图生视频提示词优化_1992742171172294657.json、视频生成/图生视频/图生视频提示词优化_1989332533642973186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ConstrainImage|pysssss`
-- `ImageNoiseAugmentation`
-- `Int`
-- `KuwaharaBlur`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Captioner_Pro`
-- `RH_RhartImageG25SunburstImageToImage`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `easy showAnything`
+- `ShowText|pysssss`
+
+**可变部分**（部分 workflow 才有）：
+- `easy imageConcat` —— 2/3 个有
+- `JjkText` —— 1/3 个有
 
 ## 典型参数
 

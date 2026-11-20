@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_upscale_17
 type: Unknown Workflow
-frequency: 7
+frequency: 4
 level: moderate
-coverage: 0.947571
-common_nodes: [ImageUpscaleWithModel, LoadImage, SaveImage, UpscaleModelLoader]
+coverage: 0.623
+common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage, VOSR2Upscale]
 problems: []
 missing: []
-members: [图片生成/图生图/普通放大--不透明1011_2109121126667476994.json, 图片生成/图生图/超分+加噪声增加真实度_1981305628402638849.json, 图片生成/图生图/高清放大_基础版_2068227997240479746.json, 平台全量/AI图片放大-超分模型通用增强_2103055480837992449.json, 平台全量/ComfyUi-放大图片工作流_1934947788910469121.json, 平台全量/图像高清放大-极简版_1884416735188078593.json, 数字人/数字人/超分+加噪声增加真实度_1982730089727180802.json]
+members: [图片生成/图生图/LEON_无损放大_细节恢复_强化文字_2097209556941230081.json, 图片生成/图生图/VOSR图像文字4K超快速放大_2112161469726027778.json, 数字人/数字人/图像无损高清放大 - Vosr2_2097147455497400321.json, 数字人/数字人/图像高清放大  Vosr 2_2097144545875161090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_17
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/普通放大--不透明1011_2109121126667476994.json、图片生成/图生图/超分+加噪声增加真实度_1981305628402638849.json、图片生成/图生图/高清放大_基础版_2068227997240479746.json、平台全量/AI图片放大-超分模型通用增强_2103055480837992449.json、平台全量/ComfyUi-放大图片工作流_1934947788910469121.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/LEON_无损放大_细节恢复_强化文字_2097209556941230081.json、图片生成/图生图/VOSR图像文字4K超快速放大_2112161469726027778.json、数字人/数字人/图像无损高清放大 - Vosr2_2097147455497400321.json、数字人/数字人/图像高清放大  Vosr 2_2097144545875161090.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ImageUpscaleWithModel`
+全部 4 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
-- `UpscaleModelLoader`
+- `VOSR2Upscale`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerFilter: AddGrain` —— 2/7 个有
-- `easy ifElse` —— 1/7 个有
+- `VOSR2ModelLoader` —— 3/4 个有
+- `ImageScaleBy` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
 
 ## 典型参数
 

@@ -3,38 +3,32 @@ name: unknown_workflow_generic_1169
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.636
-common_nodes: [EmptyImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage]
+coverage: 0.904667
+common_nodes: [AceMusicCaptionInput, AceMusicGenerator, AceMusicLyricsInput, AceMusicModelLoader, AceMusicSettings, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/人物皮肤质感+克莱因高清_2098953990485659649.json, 图片生成/图生图/人物皮肤质感+克莱因高清_2099065680569135105.json, 图片生成/图生图/人物皮肤质感20260918_2100064763102453761.json]
+members: [音频生成/音频生成/AceMusic 基础工作流_2020095556718170113.json, 音频生成/音频生成/AceMusic 基础工作流拆解_2027393917607485442.json, 音频生成/音频生成/AceMusic 文字生歌曲_2021001344487792641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1169
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/人物皮肤质感+克莱因高清_2098953990485659649.json、图片生成/图生图/人物皮肤质感+克莱因高清_2099065680569135105.json、图片生成/图生图/人物皮肤质感20260918_2100064763102453761.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AceMusic 基础工作流_2020095556718170113.json、音频生成/音频生成/AceMusic 基础工作流拆解_2027393917607485442.json、音频生成/音频生成/AceMusic 文字生歌曲_2021001344487792641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `EmptyImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `workflow>人物皮肤高清` —— 2/3 个有
-- `workflow>克莱因高清` —— 2/3 个有
-- `079f5e98-37c7-4806-8985-e77c74f4c5bd` —— 1/3 个有
-- `ad4f8d11-08d9-45ad-9fa8-ebe32802f93f` —— 1/3 个有
+- `AceMusicCaptionInput`
+- `AceMusicGenerator`
+- `AceMusicLyricsInput`
+- `AceMusicModelLoader`
+- `AceMusicSettings`
+- `SaveAudio`
 
 ## 典型参数
 

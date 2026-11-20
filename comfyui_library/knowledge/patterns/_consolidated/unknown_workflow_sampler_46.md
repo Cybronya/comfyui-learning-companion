@@ -3,40 +3,38 @@ name: unknown_workflow_sampler_46
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.698
-common_nodes: [LoadImage, LoadQwenImageDiffSynthiPipe, PreviewImage, PrimitiveStringMultiline, QwenImageDiffSynthSampler, SaveImage, SetControlArgs]
+coverage: 1
+common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, BitDanceTextEncodeCached, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image控制 Canny_1956688249889460225.json, 图片生成/图生图/Qwen-Image控制 Depth_1956649792756486146.json, 图片生成/图生图/洗图神器！Qwen-Image图生图之Canny_1955746699391090689.json, 图片生成/图生图/洗图神器！Qwen-Image图生图之Depth_1955880534075428865.json]
+members: [图片生成/文生图/Comfyui-bitdance 基础工作流+高清放大_2026864308029759490.json, 图片生成/文生图/Comfyui-bitdance 基础工作流_2026597170824093698.json, 图片生成/文生图/Comfyui-bitdance 基础工作流_2027274705597636610.json, 图片生成/文生图/Comfyui-bitdance 文生图_2027213134947160065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_46
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-Image控制 Canny_1956688249889460225.json、图片生成/图生图/Qwen-Image控制 Depth_1956649792756486146.json、图片生成/图生图/洗图神器！Qwen-Image图生图之Canny_1955746699391090689.json、图片生成/图生图/洗图神器！Qwen-Image图生图之Depth_1955880534075428865.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Comfyui-bitdance 基础工作流+高清放大_2026864308029759490.json、图片生成/文生图/Comfyui-bitdance 基础工作流_2026597170824093698.json、图片生成/文生图/Comfyui-bitdance 基础工作流_2027274705597636610.json、图片生成/文生图/Comfyui-bitdance 文生图_2027213134947160065.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadImage`
-- `LoadQwenImageDiffSynthiPipe`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenImageDiffSynthSampler`
+- `BitDanceDecode`
+- `BitDanceLoader`
+- `BitDanceResolution`
+- `BitDanceSampler`
+- `BitDanceTextEncodeCached`
 - `SaveImage`
-- `SetControlArgs`
 
 **可变部分**（部分 workflow 才有）：
-- `Canny` —— 2/4 个有
-- `DepthAnythingV2Preprocessor` —— 2/4 个有
-- `LayerUtility: ImageScaleRestore V2` —— 2/4 个有
-- `QwenImageRatio2Size` —— 2/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
+- `CustomAddLabel` —— 1/4 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
+- `SeedVR2` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 

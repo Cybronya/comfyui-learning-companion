@@ -3,43 +3,35 @@ name: unknown_workflow_generic_1803
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.872
-common_nodes: [CR Prompt Text, Int, LoadImage, PreviewImage, RH_LLMAPI_Pro_Node, SaveImage, Switch, Text, easy showAnything]
+coverage: 0.6
+common_nodes: [IndexTTS2Run, LoadAudio, PrimitiveStringMultiline, SaveAudio, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/🦖25宫格分镜_2027984658763354114.json, 图片生成/文生图/🦖9宫格分镜_2042530499960250369.json]
+members: [音频生成/音频生成/IndexTTS2最强情感音色克隆配音生成_2072007287950102530.json, 音频生成/音频生成/声音克隆IndexTTS2史上最强音色克隆_2042450571629699074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1803
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/🦖25宫格分镜_2027984658763354114.json、图片生成/文生图/🦖9宫格分镜_2042530499960250369.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2最强情感音色克隆配音生成_2072007287950102530.json、音频生成/音频生成/声音克隆IndexTTS2史上最强音色克隆_2042450571629699074.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Int`
-- `LoadImage`
-- `PreviewImage`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `Switch`
-- `Text`
-- `easy showAnything`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudio`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `RH_DolaSeedream50ProImageToImage` —— 1/2 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `TwoWaySwitch` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
 
 ## 典型参数
 

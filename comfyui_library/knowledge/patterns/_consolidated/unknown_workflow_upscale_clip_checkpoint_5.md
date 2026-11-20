@@ -3,39 +3,38 @@ name: unknown_workflow_upscale_clip_checkpoint_5
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ImageResizeKJ, LoadImage, SEGSPreview, SaveImage, UltimateSDUpscale, UpscaleModelLoader, workflow>参数设置, workflow>面部参考]
+coverage: 0.9445
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, LoadImage, SaveImage, UltimateSDUpscale, UpscaleModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G4o-皮克斯风格转绘  可爱手办3D_1916382300597059585.json, 图片生成/图生图/全能图片G4o-皮克斯风格转绘 面部参考 可爱手办3D虚拟数字人-StarAI_1910489911601102850.json]
+members: [图片生成/图生图/图生图高清放大_1976293746537046018.json, 图片生成/图生图/画质修复_2071077359658299393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_clip_checkpoint_5
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G4o-皮克斯风格转绘  可爱手办3D_1916382300597059585.json、图片生成/图生图/全能图片G4o-皮克斯风格转绘 面部参考 可爱手办3D虚拟数字人-StarAI_1910489911601102850.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图生图高清放大_1976293746537046018.json、图片生成/图生图/画质修复_2071077359658299393.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ImageResizeKJ`
 - `LoadImage`
-- `SEGSPreview`
 - `SaveImage`
 - `UltimateSDUpscale`
 - `UpscaleModelLoader`
-- `workflow>参数设置`
-- `workflow>面部参考`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/2 个有
+- `AV_VAELoader` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `WD14Tagger|pysssss` —— 1/2 个有
 
 ## 典型参数
 

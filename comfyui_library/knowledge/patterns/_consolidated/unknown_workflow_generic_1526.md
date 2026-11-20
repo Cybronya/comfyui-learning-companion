@@ -3,33 +3,41 @@ name: unknown_workflow_generic_1526
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8545
-common_nodes: [CR Prompt Text, RH_LLMAPI_Pro_Node, SaveText, easy showAnything]
+coverage: 0.8035
+common_nodes: [CR Text, CR Text Replace, GetTextFromJson, LoadImage, LoadJsonFromText, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/反推提示词/gemini-3.1剧本分镜_2034528584521486337.json, 图片生成/反推提示词/空白工作流1_2093355696602566657.json]
+members: [图片生成/图生图/批量服装电商多角度自动生成多个环境背景真实_2065057600143716353.json, 图片生成/图生图/电商服装一键生成多背景Ai自动出背景图_2065054479896109057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1526
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/gemini-3.1剧本分镜_2034528584521486337.json、图片生成/反推提示词/空白工作流1_2093355696602566657.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量服装电商多角度自动生成多个环境背景真实_2065057600143716353.json、图片生成/图生图/电商服装一键生成多背景Ai自动出背景图_2065054479896109057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
+- `CR Text`
+- `CR Text Replace`
+- `GetTextFromJson`
+- `LoadImage`
+- `LoadJsonFromText`
 - `RH_LLMAPI_Pro_Node`
-- `SaveText`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 

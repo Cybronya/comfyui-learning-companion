@@ -3,36 +3,39 @@ name: unknown_workflow_generic_1146
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LoadImage, SaveImage]
+coverage: 0.598333
+common_nodes: [Bjornulf_CombineTexts, JjkText, LoadImage, RH_Captioner_Pro, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/logo 剪裁_1970051206548758529.json, 图片生成/图生图/把衣服从白底图抠下来_1965984905970839554.json, 平台全量/sam2_ultra_example_1903966740169003009.json]
+members: [视频生成/图生视频/最强电商图片制作产品广告视频 sparkVideo_2038200358085857282.json, 视频生成/图生视频/电商超能视频产品展示 图生视频 自动配音 sparkVideo_2038080987548094465.json, 视频生成/图生视频/超能视频制作动漫视频 高可控性 sparkvideo_2038797037273092098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1146
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/logo 剪裁_1970051206548758529.json、图片生成/图生图/把衣服从白底图抠下来_1965984905970839554.json、平台全量/sam2_ultra_example_1903966740169003009.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/最强电商图片制作产品广告视频 sparkVideo_2038200358085857282.json、视频生成/图生视频/电商超能视频产品展示 图生视频 自动配音 sparkVideo_2038080987548094465.json、视频生成/图生视频/超能视频制作动漫视频 高可控性 sparkvideo_2038797037273092098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LayerMask: LoadFlorence2Model`
-- `LayerMask: ObjectDetectorFL2`
+- `Bjornulf_CombineTexts`
+- `JjkText`
 - `LoadImage`
-- `SaveImage`
+- `RH_Captioner_Pro`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerMask: SAM2Ultra` —— 2/3 个有
-- `BoundingBox_Cropper` —— 1/3 个有
-- `LayerMask: ObjectDetectorYOLO8` —— 1/3 个有
-- `LayerMask: ObjectDetectorYOLOWorld` —— 1/3 个有
+- `JjkShowText` —— 2/3 个有
+- `PreviewAny` —— 1/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `Text` —— 1/3 个有
 
 ## 典型参数
 

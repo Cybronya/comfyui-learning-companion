@@ -3,34 +3,38 @@ name: unknown_workflow_generic_1198
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.581
-common_nodes: [ImageResizeKJv2, LoadImage, PrimitiveInt, SaveImage]
+coverage: 0.767667
+common_nodes: [FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, LoadAudio, RH_LLMAPI_Pro_Node, SaveAudio, WhisperSTT]
 problems: []
 missing: []
-members: [图片生成/图生图/子宫格图组成宫格图_2066764493312577537.json, 平台全量/图片裁剪 _ 480P 横-竖屏_1972506776082051073.json, 平台全量/图片裁剪 _ 480P 横-竖屏_2088143741210157058.json]
+members: [音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json, 音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json, 音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1198
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/子宫格图组成宫格图_2066764493312577537.json、平台全量/图片裁剪 _ 480P 横-竖屏_1972506776082051073.json、平台全量/图片裁剪 _ 480P 横-竖屏_2088143741210157058.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json、音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json、音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ImageResizeKJv2`
-- `LoadImage`
-- `PrimitiveInt`
-- `SaveImage`
+- `FB_Qwen3TTSVoiceClone`
+- `FB_Qwen3TTSVoiceDesign`
+- `LoadAudio`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudio`
+- `WhisperSTT`
 
 **可变部分**（部分 workflow 才有）：
-- `InversionDemoLazyIndexSwitch` —— 2/3 个有
-- `ImageGridComposite2x2` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 

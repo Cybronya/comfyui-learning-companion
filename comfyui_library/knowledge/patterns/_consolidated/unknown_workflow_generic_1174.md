@@ -3,42 +3,38 @@ name: unknown_workflow_generic_1174
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.828
-common_nodes: [CR Prompt List, CR Text, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2TextToImage, RegexReplace, SaveImage, String Literal, easy showAnything]
+coverage: 0.974333
+common_nodes: [DramaBoxLoader, DramaBoxTTS, DramaBoxVoiceClone, LoadAudio, Textbox]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片 G2.0！一键复刻高端海报主图_2051902318651686914.json, 图片生成/文生图/Gemma4+全能图片G-2.0一键复刻海报主图_2047143310644482049.json, 图片生成/文生图/主图生成 主图风格迁移 全能图片G-Image 2.0一键复刻海报主图_2056920936493969410.json]
+members: [音频生成/音频生成/DramaBox TTS 文生语音 声音克隆 音色迁移 高表现力 导演级情绪化语音合成_2056607103107821570.json, 音频生成/音频生成/DramaBox TTS-声音克隆_2056428882772971521.json, 音频生成/音频生成/DramaBox TTS-声音克隆生成工作流_2056243564417470466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1174
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片 G2.0！一键复刻高端海报主图_2051902318651686914.json、图片生成/文生图/Gemma4+全能图片G-2.0一键复刻海报主图_2047143310644482049.json、图片生成/文生图/主图生成 主图风格迁移 全能图片G-Image 2.0一键复刻海报主图_2056920936493969410.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/DramaBox TTS 文生语音 声音克隆 音色迁移 高表现力 导演级情绪化语音合成_2056607103107821570.json、音频生成/音频生成/DramaBox TTS-声音克隆_2056428882772971521.json、音频生成/音频生成/DramaBox TTS-声音克隆生成工作流_2056243564417470466.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt List`
-- `CR Text`
-- `Dapao_LlamaCaption`
-- `Dapao_LlamaCaptionOptions`
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `RH_RhartImageG2TextToImage`
-- `RegexReplace`
-- `SaveImage`
-- `String Literal`
-- `easy showAnything`
+- `DramaBoxLoader`
+- `DramaBoxTTS`
+- `DramaBoxVoiceClone`
+- `LoadAudio`
+- `Textbox`
 
 **可变部分**（部分 workflow 才有）：
-- `llama_cpp_instruct_adv` —— 2/3 个有
-- `llama_cpp_model_loader` —— 2/3 个有
-- `llama_cpp_parameters` —— 2/3 个有
+- `SaveAudio` —— 2/3 个有
+- `SaveAudioMP3` —— 2/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `TrimAudioDuration` —— 1/3 个有
 
 ## 典型参数
 

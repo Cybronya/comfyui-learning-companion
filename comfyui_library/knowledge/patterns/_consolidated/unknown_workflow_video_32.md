@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_video_32
 type: Unknown Workflow
-frequency: 7
+frequency: 4
 level: moderate
-coverage: 0.823857
-common_nodes: [FlashVSRInitPipe, FlashVSRNodeAdv, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.688
+common_nodes: [AILab_MiniCPM_4_V_Advanced, GetVideoComponents, HunyuanVideoFoley, LoadVideo, Text Multiline, VHS_VideoCombine, easy clearCacheAll, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/48.tonnie-Flash VSR视频高清放大_2007576870799282178.json, 平台全量/Flash VSR视频高清修复Video Upscaler 视频高清放大_2046758742028455937.json, 平台全量/FlashVSR视频放大-高级版-颜色修正_2095538216630837249.json, 平台全量/FlashVSR视频高清放大(wan2.1的vae)无水印保存_2004107489744437249.json, 平台全量/FlashVSR视频高清放大(wan2.1的vae)无水印保存_2011999771782811649.json, 平台全量/FlashVSR视频高清放大(wan2.1的vae)无水印保存_2012011460917989378.json, 平台全量/视频超清放大FlashVSR Ultra Fast 1.1 Ful｜超高质量｜颜色修正｜高级版_2095637694381645826.json]
+members: [图片生成/反推提示词/混元Foley+MiniCPM-V4.5视频自动配音_1961795982843383809.json, 图片生成/反推提示词/混元Foley+MiniCPM视频自动配音_1961976315123580929.json, 音频生成/音频生成/混元Foley视频配音_1973296901665763329.json, 音频生成/音频生成/混元Foley视频音效工作流_1964156752734339073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_32
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/48.tonnie-Flash VSR视频高清放大_2007576870799282178.json、平台全量/Flash VSR视频高清修复Video Upscaler 视频高清放大_2046758742028455937.json、平台全量/FlashVSR视频放大-高级版-颜色修正_2095538216630837249.json、平台全量/FlashVSR视频高清放大(wan2.1的vae)无水印保存_2004107489744437249.json、平台全量/FlashVSR视频高清放大(wan2.1的vae)无水印保存_2011999771782811649.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/混元Foley+MiniCPM-V4.5视频自动配音_1961795982843383809.json、图片生成/反推提示词/混元Foley+MiniCPM视频自动配音_1961976315123580929.json、音频生成/音频生成/混元Foley视频配音_1973296901665763329.json、音频生成/音频生成/混元Foley视频音效工作流_1964156752734339073.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `FlashVSRInitPipe`
-- `FlashVSRNodeAdv`
-- `VHS_LoadVideo`
+全部 4 个 workflow 都包含：
+- `AILab_MiniCPM_4_V_Advanced`
+- `GetVideoComponents`
+- `HunyuanVideoFoley`
+- `LoadVideo`
+- `Text Multiline`
 - `VHS_VideoCombine`
+- `easy clearCacheAll`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoInfo` —— 6/7 个有
-- `JWInteger` —— 2/7 个有
-- `ShowAnything|Mie` —— 2/7 个有
-- `ImageConcanate` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `VHS_VideoInfo` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,34 +1,36 @@
 ---
 name: unknown_workflow_generic_938
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.85
+common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
 problems: []
 missing: []
-members: [图片生成/文生图/MJ生图（昆昆）_2020704610586988546.json, 图片生成/文生图/MJ生图（老程）_2019660837929095169.json, 图片生成/文生图/RH_Midjourney Oref_1940837882426978306.json, 平台全量/多宫格裁切（老程）_2019667981722193922.json]
+members: [图片生成/图生图/33.tonnie-图像、文字高清修复放大（seedvr2）_2003200741047173121.json, 图片生成/图生图/SeedVR2 Upscaler高清图片放大seedvr2模型高清图片模糊图片处理扩大放大图片高清图_2016451842145787905.json, 图片生成/文生图/放大到2048_1983527423545417730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_938
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/MJ生图（昆昆）_2020704610586988546.json、图片生成/文生图/MJ生图（老程）_2019660837929095169.json、图片生成/文生图/RH_Midjourney Oref_1940837882426978306.json、平台全量/多宫格裁切（老程）_2019667981722193922.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/33.tonnie-图像、文字高清修复放大（seedvr2）_2003200741047173121.json、图片生成/图生图/SeedVR2 Upscaler高清图片放大seedvr2模型高清图片模糊图片处理扩大放大图片高清图_2016451842145787905.json、图片生成/文生图/放大到2048_1983527423545417730.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `LoadImage`
 - `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_ImageGridSplit` —— 3/4 个有
-- `RH_Midjourney` —— 3/4 个有
+- `HYPIRAdvancedRestoration` —— 1/3 个有
+- `HYPIRImageRestoration` —— 1/3 个有
 
 ## 典型参数
 

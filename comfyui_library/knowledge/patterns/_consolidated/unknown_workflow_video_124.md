@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_video_124
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 1
-common_nodes: [ImageScaleToTotalPixels, LoadImage, Note Plus (mtb), SaveImage, VHS_VideoCombine, workflow>参数设置, workflow>面部参考]
+frequency: 2
+level: weak
+coverage: 0.6145
+common_nodes: [CubeRotationNode, Int, LoadImage, PrimitiveFloat, Reroute (rgthree), VHS_VideoCombine, 孤海-取色器]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json, 图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json, 图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json]
+members: [视频生成/图生视频/图片生成立方体旋转效果视频_1978743150502105089.json, 视频生成/图生视频/多图生成立方体旋转效果视频_1979076576564383745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_124
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json、图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json、图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图片生成立方体旋转效果视频_1978743150502105089.json、视频生成/图生视频/多图生成立方体旋转效果视频_1979076576564383745.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
+全部 2 个 workflow 都包含：
+- `CubeRotationNode`
+- `Int`
 - `LoadImage`
-- `Note Plus (mtb)`
-- `SaveImage`
+- `PrimitiveFloat`
+- `Reroute (rgthree)`
 - `VHS_VideoCombine`
-- `workflow>参数设置`
-- `workflow>面部参考`
+- `孤海-取色器`
 
 **可变部分**（部分 workflow 才有）：
-- `workflow>过度动画` —— 2/3 个有
+- `CR Image Size` —— 1/2 个有
+- `ImageCombine` —— 1/2 个有
+- `ImageScale` —— 1/2 个有
 
 ## 典型参数
 
@@ -44,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

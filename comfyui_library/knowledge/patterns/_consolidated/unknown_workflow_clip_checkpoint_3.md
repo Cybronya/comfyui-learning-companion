@@ -3,43 +3,44 @@ name: unknown_workflow_clip_checkpoint_3
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7825
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, DrawBBoxes, GetImageSize, LayerUtility: ColorImage, LayerUtility: ImageBlend V2, LoadImage, MaskPreview, MaskToImage, PreviewImage, SAM3_Detect, SaveImage, Text]
+coverage: 0.905
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, GetImageSize+, Image Repeat Tile To Size, ImageCompositeMasked, ImageScale, Int, LoadImage, MathExpression|pysssss, RHHiddenNodes, RH_RhartImageG2ImageToImage, SAM3_Detect, SaveImage, ShowText|pysssss, TextGenerate, YCMaskBlur, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/sam3.1目标检测+AI框选_2113224728176578562.json, 图片生成/图生图/sam3.1目标检测_2112924412260478977.json]
+members: [图片生成/图生图/调整印花大小工作流5月28日_2060261853200207873.json, 图片生成/图生图/调整印花大小工作流5月28日_2060271870632615937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_clip_checkpoint_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/sam3.1目标检测+AI框选_2113224728176578562.json、图片生成/图生图/sam3.1目标检测_2112924412260478977.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/调整印花大小工作流5月28日_2060261853200207873.json、图片生成/图生图/调整印花大小工作流5月28日_2060271870632615937.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `DrawBBoxes`
-- `GetImageSize`
-- `LayerUtility: ColorImage`
-- `LayerUtility: ImageBlend V2`
+- `GetImageSize+`
+- `Image Repeat Tile To Size`
+- `ImageCompositeMasked`
+- `ImageScale`
+- `Int`
 - `LoadImage`
-- `MaskPreview`
-- `MaskToImage`
-- `PreviewImage`
+- `MathExpression|pysssss`
+- `RHHiddenNodes`
+- `RH_RhartImageG2ImageToImage`
 - `SAM3_Detect`
 - `SaveImage`
-- `Text`
-
-**可变部分**（部分 workflow 才有）：
-- `CreateBoundingBoxes` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `ShowText|pysssss`
+- `TextGenerate`
+- `YCMaskBlur`
+- `easy showAnything`
 
 ## 典型参数
 

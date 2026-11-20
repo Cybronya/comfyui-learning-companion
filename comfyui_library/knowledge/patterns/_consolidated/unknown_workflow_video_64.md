@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_video_64
 type: Unknown Workflow
-frequency: 6
+frequency: 3
 level: moderate
-coverage: 0.737667
-common_nodes: [GetVideoComponents, JjkText, LoadImage, VHS_VideoCombine]
+coverage: 0.963
+common_nodes: [AudioCrop, AudioSeparation, LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VideoLengthAdjuster]
 problems: []
 missing: []
-members: [视频生成/图生视频/RH 全能视频X-图生视频-官方稳定版-v1.5-1.89元_秒_2062214162574561282.json, 视频生成/图生视频/video-全能视频X-图生视频-低价渠道版-v1.5-0.03元_秒_2062176319126986754.json, 视频生成/图生视频/图生视频，添加人物室内空间漫游_2075146371707006978.json, 视频生成/图生视频/室内设计空间氛围感优化，图生视频_2073411885793366017.json, 视频生成/文生视频/图生视频 文生视频 小Seedance 比肩快乐马 超高性价比  0.03元_秒 Gro-k来袭_2061446476634607618.json, 视频生成/文生视频/文生视频，图生视频  3分钱_秒_2061441853798572033.json]
+members: [数字人/数字人/余温-音频参考对口型工作流_2114373807736713217.json, 数字人/数字人/余温-音频参考驱动对口型数字人工作流｜口型同步视频生视频_2114626685239910401.json, 数字人/数字人/视频口型同步_latentsync1.6_1941464262185480193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_64
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频X-图生视频-官方稳定版-v1.5-1.89元_秒_2062214162574561282.json、视频生成/图生视频/video-全能视频X-图生视频-低价渠道版-v1.5-0.03元_秒_2062176319126986754.json、视频生成/图生视频/图生视频，添加人物室内空间漫游_2075146371707006978.json、视频生成/图生视频/室内设计空间氛围感优化，图生视频_2073411885793366017.json、视频生成/文生视频/图生视频 文生视频 小Seedance 比肩快乐马 超高性价比  0.03元_秒 Gro-k来袭_2061446476634607618.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/余温-音频参考对口型工作流_2114373807736713217.json、数字人/数字人/余温-音频参考驱动对口型数字人工作流｜口型同步视频生视频_2114626685239910401.json、数字人/数字人/视频口型同步_latentsync1.6_1941464262185480193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `GetVideoComponents`
-- `JjkText`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `LatentSyncNode`
+- `LoadAudio`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGImageToVideo` —— 5/6 个有
-- `SaveVideo` —— 4/6 个有
-- `easy showAnything` —— 3/6 个有
-- `RH_RhartVideoGOfficialImageToVideoV15` —— 2/6 个有
+- `VHS_VideoInfo`
+- `VideoLengthAdjuster`
 
 ## 典型参数
 

@@ -3,34 +3,35 @@ name: unknown_workflow_generic_1835
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [PreviewTextNode, RH_LLMAPI_Pro_Node, SaveImage, Text Multiline]
+coverage: 0.3935
+common_nodes: [AudioCrop, CR Prompt Text, Comfly_api_set, Comfly_suno_upload, Comfly_suno_upload_extend, JWInteger, LoadAudio, SaveAudio, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/【一键大片】复刻工作流（九宫格分镜图）_2028382299754078209.json, 图片生成/文生图/全能 G-image2.0【一键大片】复刻（九宫格分镜图）_2052973260589027329.json]
+members: [音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_1988566168644534274.json, 音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_2054018548460204033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1835
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/【一键大片】复刻工作流（九宫格分镜图）_2028382299754078209.json、图片生成/文生图/全能 G-image2.0【一键大片】复刻（九宫格分镜图）_2052973260589027329.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_1988566168644534274.json、音频生成/音频生成/Suno V5歌曲续写V1(贞贞的AI工坊版-基准0.5元2首)_2054018548460204033.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：39%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PreviewTextNode`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `Text Multiline`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
+- `AudioCrop`
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_suno_upload`
+- `Comfly_suno_upload_extend`
+- `JWInteger`
+- `LoadAudio`
+- `SaveAudio`
+- `easy showAnything`
 
 ## 典型参数
 

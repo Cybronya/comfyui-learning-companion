@@ -1,33 +1,43 @@
 ---
 name: unknown_workflow_generic_972
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.875
-common_nodes: [RH_RhartVideoGTextToVideo, SaveVideo]
+coverage: 0.821
+common_nodes: [FaceAnalysisModels, FaceEmbedDistance, InsertAnythingImageProcessor, InsertAnythingInferencer, InsertAnythingLoader, LayerMask: PersonMaskUltra V2, LoadImage, MaskOption, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [平台全量/RH 全能视频X-文生视频-低价渠道版最长30秒_2036124917040685058.json, 视频生成/图生视频/RH 全能视频X-文生视频-低价渠道版最长30秒（RH版）_2054431332775800834.json, 视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json, 视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json]
+members: [图片生成/图生图/Nunchaku_InsertAnything换脸_1922491323624935426.json, 图片生成/图生图/快速换脸+一致性｜insertAnything 修图_1922611624191082498.json, 图片生成/图生图/换脸工作流高清出图nsertAnything_1964261096339197954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_972
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/RH 全能视频X-文生视频-低价渠道版最长30秒_2036124917040685058.json、视频生成/图生视频/RH 全能视频X-文生视频-低价渠道版最长30秒（RH版）_2054431332775800834.json、视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json、视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Nunchaku_InsertAnything换脸_1922491323624935426.json、图片生成/图生图/快速换脸+一致性｜insertAnything 修图_1922611624191082498.json、图片生成/图生图/换脸工作流高清出图nsertAnything_1964261096339197954.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `RH_RhartVideoGTextToVideo`
-- `SaveVideo`
+全部 3 个 workflow 都包含：
+- `FaceAnalysisModels`
+- `FaceEmbedDistance`
+- `InsertAnythingImageProcessor`
+- `InsertAnythingInferencer`
+- `InsertAnythingLoader`
+- `LayerMask: PersonMaskUltra V2`
+- `LoadImage`
+- `MaskOption`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 1/4 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `PreviewMask_` —— 1/3 个有
 
 ## 典型参数
 

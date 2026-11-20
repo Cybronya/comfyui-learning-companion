@@ -3,36 +3,31 @@ name: unknown_workflow_generic_858
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.809
-common_nodes: [LoadImage, ReActorFaceSwapOpt, ReActorOptions, SaveImage]
+coverage: 0.91675
+common_nodes: [RH_Hailuo_Text2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/ReActor换脸放置脸部阻挡版_2022179155944673282.json, 图片生成/图生图/ReActo简易换脸_2022177926304763906.json, 平台全量/多人换脸简单高质量工作流（速度极快）_2051963625044234241.json, 平台全量/旅拍机-旅拍照片-快版单张-ReActor-可用_2071274449416048642.json]
+members: [视频生成/文生视频/海螺 Hailuo2.3 Text2Video_1987125185855819777.json, 视频生成/文生视频/海螺 Hailuo2.3 文生视频_2016535777877954561.json, 视频生成/文生视频/海螺 Hailuo2.3 文生视频（RH版）_2054441559625609218.json, 视频生成/文生视频/海螺2.3文生视频Hailuo2.3_1987155775351099394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_858
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/ReActor换脸放置脸部阻挡版_2022179155944673282.json、图片生成/图生图/ReActo简易换脸_2022177926304763906.json、平台全量/多人换脸简单高质量工作流（速度极快）_2051963625044234241.json、平台全量/旅拍机-旅拍照片-快版单张-ReActor-可用_2071274449416048642.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/海螺 Hailuo2.3 Text2Video_1987125185855819777.json、视频生成/文生视频/海螺 Hailuo2.3 文生视频_2016535777877954561.json、视频生成/文生视频/海螺 Hailuo2.3 文生视频（RH版）_2054441559625609218.json、视频生成/文生视频/海螺2.3文生视频Hailuo2.3_1987155775351099394.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadImage`
-- `ReActorFaceSwapOpt`
-- `ReActorOptions`
-- `SaveImage`
+- `RH_Hailuo_Text2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `ReActorFaceBoost` —— 2/4 个有
-- `PreviewImage` —— 1/4 个有
-- `ReActorMaskHelper` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

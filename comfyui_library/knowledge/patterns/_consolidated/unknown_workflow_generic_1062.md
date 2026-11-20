@@ -3,29 +3,33 @@ name: unknown_workflow_generic_1062
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.904
-common_nodes: [GrokImageEditNodeV2, LoadImage, SaveImage]
+coverage: 0.738
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_grok_image_edit.json, comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json, comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json]
+members: [图片生成/图生图/高清修复_2013057417436733441.json, 图片生成/文生图/AI漫剧分镜工作流-四宫格九宫格分镜制作_2011636537980624897.json, 图片生成/文生图/Gemini 3 -全能图片pro文生图+图生图_2012424841223217153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1062
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_grok_image_edit.json、comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json、comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/高清修复_2013057417436733441.json、图片生成/文生图/AI漫剧分镜工作流-四宫格九宫格分镜制作_2011636537980624897.json、图片生成/文生图/Gemini 3 -全能图片pro文生图+图生图_2012424841223217153.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `GrokImageEditNodeV2`
+- `Image Comparer (rgthree)`
 - `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `HAIGC_SavePSD` —— 1/3 个有
 
 ## 典型参数
 

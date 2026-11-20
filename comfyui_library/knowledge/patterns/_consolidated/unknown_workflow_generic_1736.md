@@ -3,47 +3,34 @@ name: unknown_workflow_generic_1736
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.666
-common_nodes: [Bjornulf_ShowInt, GetNode, LoadImage, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, SetNode, Text, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.8055
+common_nodes: [CR Prompt Text, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/批量上传局部重绘v2_2062012357316005890.json, 图片生成/图生图/批量上传局部重绘全能图片G2_2062779401909133313.json]
+members: [视频生成/文生视频/(支持真人)超能视频2.0多图参考R2V视频生成V2（1秒1元）_2033903081225723906.json, 视频生成/文生视频/全能视频SPRO文生视频25s_1986041672855420930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1736
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量上传局部重绘v2_2062012357316005890.json、图片生成/图生图/批量上传局部重绘全能图片G2_2062779401909133313.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/(支持真人)超能视频2.0多图参考R2V视频生成V2（1秒1元）_2033903081225723906.json、视频生成/文生视频/全能视频SPRO文生视频25s_1986041672855420930.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `GetNode`
+- `CR Prompt Text`
 - `LoadImage`
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
-- `SaveImage`
-- `SetNode`
-- `Text`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
+- `SaveVideo`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageListToImageBatch` —— 1/2 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage_Batch` —— 1/2 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
+- `RH_CinematicVideoGenerator` —— 1/2 个有
+- `RH_Sora2_T2V_PRO` —— 1/2 个有
 
 ## 典型参数
 

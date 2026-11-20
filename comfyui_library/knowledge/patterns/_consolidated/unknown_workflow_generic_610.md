@@ -1,34 +1,36 @@
 ---
 name: unknown_workflow_generic_610
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.9305
-common_nodes: [ExpressionEditor, LoadImage, SaveImage]
+coverage: 0.441
+common_nodes: [JjkText, LayerUtility: TextJoin, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [平台全量/表情控制 - 光_1853813014423015426.json, 平台全量/表情编辑器_1887205140804325377.json, 数字人/数字人/人物表情修改_1970662182843260930.json, 数字人/数字人/人物表情控制，表情迁移，简易表情控制器plus加强_2031386476444917761.json, 数字人/数字人/表情修改(可实现闭眼改睁眼，微笑，搞怪表情等)_1932363892964139009.json, 数字人/数字人/表情编辑_1988454897383292930.json]
+members: [图片生成/文生图/image_gemini.json_2068966122443067394.json, 图片生成/文生图/image_gemini.json_2097156637671911425.json, 图片生成/文生图/image_gemini.json_2097576911659687937.json, 图片生成/文生图/image_health.json_2069357857212026881.json, 图片生成/文生图/image_health_2069300295536037890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_610
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/表情控制 - 光_1853813014423015426.json、平台全量/表情编辑器_1887205140804325377.json、数字人/数字人/人物表情修改_1970662182843260930.json、数字人/数字人/人物表情控制，表情迁移，简易表情控制器plus加强_2031386476444917761.json、数字人/数字人/表情修改(可实现闭眼改睁眼，微笑，搞怪表情等)_1932363892964139009.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/image_gemini.json_2068966122443067394.json、图片生成/文生图/image_gemini.json_2097156637671911425.json、图片生成/文生图/image_gemini.json_2097576911659687937.json、图片生成/文生图/image_health.json_2069357857212026881.json、图片生成/文生图/image_health_2069300295536037890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ExpressionEditor`
-- `LoadImage`
+全部 5 个 workflow 都包含：
+- `JjkText`
+- `LayerUtility: TextJoin`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Simple Image Compare` —— 1/6 个有
+- `easy promptList` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
 
 ## 典型参数
 

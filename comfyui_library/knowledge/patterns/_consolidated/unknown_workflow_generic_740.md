@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_generic_740
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8514
-common_nodes: [LoadImage, LoadVideo, SaveVideo]
+coverage: 0.819
+common_nodes: [CR Text, LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [平台全量/Kling 2.6 Pro动作控制工作流｜动作迁移新版_2099453283554390017.json, 平台全量/Wan2.7 视频编辑_2041546213291462658.json, 平台全量/视频换背景工作流｜Wan 2.7 视频编辑 一键替换场景背景_2098698147127189506.json, 视频生成/图生视频/Kling_V26ProMotionControl_v2.6_2033808723172397057.json, 视频生成/图生视频/Wan2.7 视频编辑_2041454710699335681.json]
+members: [图片生成/图生图/二次元转高品质3D渲染-二次元转3D渲染_2031736951576993793.json, 图片生成/图生图/产品四视图_2028407879283249153.json, 图片生成/图生图/超高清画面-高品质3D渲染_2032021311031087106.json, 图片生成/文生图/NBP2_2019662681011130369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_740
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/Kling 2.6 Pro动作控制工作流｜动作迁移新版_2099453283554390017.json、平台全量/Wan2.7 视频编辑_2041546213291462658.json、平台全量/视频换背景工作流｜Wan 2.7 视频编辑 一键替换场景背景_2098698147127189506.json、视频生成/图生视频/Kling_V26ProMotionControl_v2.6_2033808723172397057.json、视频生成/图生视频/Wan2.7 视频编辑_2041454710699335681.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/二次元转高品质3D渲染-二次元转3D渲染_2031736951576993793.json、图片生成/图生图/产品四视图_2028407879283249153.json、图片生成/图生图/超高清画面-高品质3D渲染_2032021311031087106.json、图片生成/文生图/NBP2_2019662681011130369.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `PreviewImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `RH_AlibabaWan27VideoEdit` —— 3/5 个有
-- `RH_KlingV26ProMotionControl` —— 2/5 个有
+- `CustomAddLabel` —— 2/4 个有
+- `ImageBatchMulti` —— 1/4 个有
 
 ## 典型参数
 

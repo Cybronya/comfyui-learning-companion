@@ -3,33 +3,36 @@ name: unknown_workflow_generic_1188
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, MuyeTextEditOutput, RH_RhartImageNNb21ImageToImage, SaveImage]
+coverage: 0.776333
+common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, LoadImage, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V2.1批量复刻参考姿势｜低价渠道版分镜动作迁移_2114771687857287170.json, 图片生成/图生图/（10图）2.1 还可以_2117048180360695810.json, 平台全量/全能图片V2.1-批量复刻参考姿势-低价渠道版_2114254741789306881.json]
+members: [音频生成/音频生成/IndexTTS2音色_情绪克隆 ，单人_双人模式灵活切换+文本输入_2004200072495722498.json, 音频生成/音频生成/声音克隆_1998644155763056642.json, 音频生成/音频生成/🎙️ Indexation 最强语音克隆 带情绪控制🎙️_1972308186080407554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1188
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V2.1批量复刻参考姿势｜低价渠道版分镜动作迁移_2114771687857287170.json、图片生成/图生图/（10图）2.1 还可以_2117048180360695810.json、平台全量/全能图片V2.1-批量复刻参考姿势-低价渠道版_2114254741789306881.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2音色_情绪克隆 ，单人_双人模式灵活切换+文本输入_2004200072495722498.json、音频生成/音频生成/声音克隆_1998644155763056642.json、音频生成/音频生成/🎙️ Indexation 最强语音克隆 带情绪控制🎙️_1972308186080407554.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `IndexTTS2Run`
+- `LoadAudio`
 - `LoadImage`
-- `MuyeTextEditOutput`
-- `RH_RhartImageNNb21ImageToImage`
-- `SaveImage`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RHUploadZip_V2` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
 
 ## 典型参数
 

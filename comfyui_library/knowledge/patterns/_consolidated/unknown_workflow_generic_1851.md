@@ -3,38 +3,35 @@ name: unknown_workflow_generic_1851
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.66
-common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.693
+common_nodes: [CR Text, RH_LLMAPI_NODE, RH_Suno_Single, SaveAudio, ShellAgentPluginOutputText, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片模型-七合一在线工作流-支持单图-双图-多图编辑-产品融图_2040757454119641090.json, 平台全量/室内外AI出图_2035380086886637569.json]
+members: [音频生成/音频生成/suno音乐V5（自动歌词版）_1973000499152687105.json, 音频生成/音频生成/suno音乐V5（自动歌词）-自用留存版本_1985230387066585090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1851
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片模型-七合一在线工作流-支持单图-双图-多图编辑-产品融图_2040757454119641090.json、平台全量/室内外AI出图_2035380086886637569.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/suno音乐V5（自动歌词版）_1973000499152687105.json、音频生成/音频生成/suno音乐V5（自动歌词）-自用留存版本_1985230387066585090.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+- `CR Text`
+- `RH_LLMAPI_NODE`
+- `RH_Suno_Single`
+- `SaveAudio`
+- `ShellAgentPluginOutputText`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `ImageBatch` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

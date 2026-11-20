@@ -3,34 +3,37 @@ name: unknown_workflow_generic_1099
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.682667
-common_nodes: [LoadImage, RH_Translator, SaveImage, ShowText|pysssss]
+coverage: 1
+common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/最强图片反推提示词_1910889734980468737.json, 图片生成/图生图/图片反推提示词基础工作流 RunningHub Captioner_1937827090836144129.json, 平台全量/RH翻译插件(极简易用版)_1897350757945921537.json]
+members: [数字人/数字人/Heygem数字人+IndexTTS文字对口型_2019828616909037570.json, 数字人/数字人/英文对口型_2032779537045524482.json, 音频生成/音频生成/Heygem数字人+IndexTTS文字对口型_1945485523890708482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1099
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/最强图片反推提示词_1910889734980468737.json、图片生成/图生图/图片反推提示词基础工作流 RunningHub Captioner_1937827090836144129.json、平台全量/RH翻译插件(极简易用版)_1897350757945921537.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Heygem数字人+IndexTTS文字对口型_2019828616909037570.json、数字人/数字人/英文对口型_2032779537045524482.json、音频生成/音频生成/Heygem数字人+IndexTTS文字对口型_1945485523890708482.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_Translator`
-- `SaveImage`
-- `ShowText|pysssss`
+- `CR Prompt Text`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `LoadVideo`
+- `RH_HeyGemNode`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 2/3 个有
-- `DeepTranslatorTextNode` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `SaveAudio` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 

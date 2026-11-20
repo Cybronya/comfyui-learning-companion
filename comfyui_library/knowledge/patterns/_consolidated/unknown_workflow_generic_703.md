@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_703
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8114
-common_nodes: [LoadImage, PrimitiveStringMultiline, SaveImage]
+coverage: 0.75025
+common_nodes: [RH_Flux_2_Max_TextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-2.0图像编辑(低价渠道版)_2063927277263613953.json, 图片生成/图生图/全能图片G-2工作流_2052268737931300865.json, 图片生成/图生图/双人直播丨全能图片G-2.0丨双图合成·身份区分_2113116720075468801.json, 图片生成/图生图/多视角衣物4张图输入_2111409107944169474.json, 图片生成/图生图/衣服上身_2110736152847282178.json]
+members: [图片生成/图生图/Flux 2 Max文生图工作流｜高清细节文字准确_2099677259371204610.json, 图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100392892232724482.json, 图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100424167614148610.json, 图片生成/文生图/全能图片F.2 Max文生图_2008823751370088449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_703
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片G-2.0图像编辑(低价渠道版)_2063927277263613953.json、图片生成/图生图/全能图片G-2工作流_2052268737931300865.json、图片生成/图生图/双人直播丨全能图片G-2.0丨双图合成·身份区分_2113116720075468801.json、图片生成/图生图/多视角衣物4张图输入_2111409107944169474.json、图片生成/图生图/衣服上身_2110736152847282178.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux 2 Max文生图工作流｜高清细节文字准确_2099677259371204610.json、图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100392892232724482.json、图片生成/文生图/Flux_2_Max文生图工作流｜高清细节文字准确_2100424167614148610.json、图片生成/文生图/全能图片F.2 Max文生图_2008823751370088449.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `PrimitiveStringMultiline`
+全部 4 个 workflow 都包含：
+- `RH_Flux_2_Max_TextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2ImageToImage` —— 4/5 个有
-- `PreviewImage` —— 2/5 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
 
 ## 典型参数
 

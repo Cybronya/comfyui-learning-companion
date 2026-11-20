@@ -1,48 +1,36 @@
 ---
 name: unknown_workflow_generic_969
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.83925
-common_nodes: [BBoxesToSAM2, DownloadAndLoadQwenModel, DownloadAndLoadSAM2Model, LayerMask: LoadSAM2Model, LayerMask: SAM2UltraV2, LoadImage, MaskToImage, PreviewImage, QwenVLDetection, Sam2Segmentation, SaveImage, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
 problems: []
 missing: []
-members: [平台全量/Qwen2.5-VL 最强精准智能遮罩_1935163347505455105.json, 平台全量/精准遮罩识别神器-QwenVLDetection_1934079838322122754.json, 平台全量/精准遮罩识别神器-QwenVLDetection_1934241970233503745.json, 平台全量/调取api-0606-万物擦除_1934210369529278465.json]
+members: [图片生成/图生图/LongCat图片编辑ComfyUI工作流_1999394554459586561.json, 图片生成/图生图/Longcat-Edit图像编辑（须plus才能运行）_1997647030237507585.json, 图片生成/文生图/longcat-image-edit_1998293505271300098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_969
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Qwen2.5-VL 最强精准智能遮罩_1935163347505455105.json、平台全量/精准遮罩识别神器-QwenVLDetection_1934079838322122754.json、平台全量/精准遮罩识别神器-QwenVLDetection_1934241970233503745.json、平台全量/调取api-0606-万物擦除_1934210369529278465.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LongCat图片编辑ComfyUI工作流_1999394554459586561.json、图片生成/图生图/Longcat-Edit图像编辑（须plus才能运行）_1997647030237507585.json、图片生成/文生图/longcat-image-edit_1998293505271300098.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BBoxesToSAM2`
-- `DownloadAndLoadQwenModel`
-- `DownloadAndLoadSAM2Model`
-- `LayerMask: LoadSAM2Model`
-- `LayerMask: SAM2UltraV2`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `MaskToImage`
-- `PreviewImage`
-- `QwenVLDetection`
-- `Sam2Segmentation`
+- `LongCatImageEdit`
+- `LongCatImageModelLoader`
 - `SaveImage`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 3/4 个有
-- `Text Multiline` —— 2/4 个有
-- `EmptyImage` —— 1/4 个有
-- `GetImageSize` —— 1/4 个有
-- `TextInput_` —— 1/4 个有
-- `preview_mask` —— 1/4 个有
+- `Label (rgthree)` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 

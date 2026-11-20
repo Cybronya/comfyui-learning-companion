@@ -1,31 +1,35 @@
 ---
 name: unknown_workflow_generic_604
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_Vidu_Reference2Video, SaveVideo]
+coverage: 0.6676
+common_nodes: [JjkText, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [平台全量/Viduq2 多张参考生视频(角色一致性)_1983011619116580866.json, 视频生成/图生视频/Viduq2 多张参考图生视频(角色一致性)_2006996903858282497.json, 视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1983565386849427457.json, 视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1988300971249942530.json, 视频生成/图生视频/Viduq2+多张参考生视频(角色一致性)_1986365685037232129.json, 视频生成/图生视频/杨先生的动画课-多图参考优秀工作流VIDU_1984531859684081665.json]
+members: [图片生成/图生图/角色雕塑_1966709018846801921.json, 图片生成/文生图/-全能图片V1 现任最强编辑工具_1960902587279183873.json, 图片生成/文生图/全能图片V1人物卡通形象同框_1966482684086267906.json, 图片生成/文生图/全能图片V1包装设计_1961061276023767042.json, 图片生成/文生图/🦖香蕉改图（全能图片V1，默认手办）_1960521014704861186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_604
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Viduq2 多张参考生视频(角色一致性)_1983011619116580866.json、视频生成/图生视频/Viduq2 多张参考图生视频(角色一致性)_2006996903858282497.json、视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1983565386849427457.json、视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1988300971249942530.json、视频生成/图生视频/Viduq2+多张参考生视频(角色一致性)_1986365685037232129.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/角色雕塑_1966709018846801921.json、图片生成/文生图/-全能图片V1 现任最强编辑工具_1960902587279183873.json、图片生成/文生图/全能图片V1人物卡通形象同框_1966482684086267906.json、图片生成/文生图/全能图片V1包装设计_1961061276023767042.json、图片生成/文生图/🦖香蕉改图（全能图片V1，默认手办）_1960521014704861186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `RH_Vidu_Reference2Video`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `JjkText`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 4/5 个有
+- `CR Text Replace` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,52 +1,48 @@
 ---
 name: unknown_workflow_video_sampler_43
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.6945
-common_nodes: [DiffuEraserLoader, DiffuEraserSampler, Fast Groups Muter (rgthree), FlashVSRNode, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VHS_VideoInfoLoaded, easy compare, easy ifElse, easy showAnything]
+frequency: 2
+level: weak
+coverage: 0.8935
+common_nodes: [Float, Float to Int, GetVideoComponents, ImageConcatenate_UTK, ImageFromBatch, ImageResizeKJv2, JWInteger, LoadImage, LoadVideo, MathExpression|pysssss, PreviewImage, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine, easy indexAnything]
 problems: []
 missing: []
-members: [平台全量/新版全能视频S高清修复+去水印基于wan2.2_1992297040050974721.json, 平台全量/（12月20更新）全能视频S高清修复+去水印_1981178677461417986.json, 视频生成/图生视频/全能视频S高清修复加去水印（最新版）_1993299080321368065.json, 视频生成/图生视频/全能视频S高清修复去水印（最强优化）_1993311600947953666.json]
+members: [视频生成/图生视频/高品质视频换脸漫剧电商服装分镜_2075028961758900226.json, 视频生成/图生视频/高质量视频换脸术_2075400573410697217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_43
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/新版全能视频S高清修复+去水印基于wan2.2_1992297040050974721.json、平台全量/（12月20更新）全能视频S高清修复+去水印_1981178677461417986.json、视频生成/图生视频/全能视频S高清修复加去水印（最新版）_1993299080321368065.json、视频生成/图生视频/全能视频S高清修复去水印（最强优化）_1993311600947953666.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/高品质视频换脸漫剧电商服装分镜_2075028961758900226.json、视频生成/图生视频/高质量视频换脸术_2075400573410697217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DiffuEraserLoader`
-- `DiffuEraserSampler`
-- `Fast Groups Muter (rgthree)`
-- `FlashVSRNode`
+全部 2 个 workflow 都包含：
+- `Float`
+- `Float to Int`
+- `GetVideoComponents`
+- `ImageConcatenate_UTK`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
 - `LoadImage`
-- `MaskToImage`
-- `RepeatImageBatch`
-- `VHS_LoadVideo`
+- `LoadVideo`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `RunningHub_DreamID-V_Loader`
+- `RunningHub_DreamID-V_Sampler`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `VHS_VideoInfoLoaded`
-- `easy compare`
-- `easy ifElse`
-- `easy showAnything`
+- `easy indexAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 3/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/4 个有
-- `ImageToMask` —— 1/4 个有
-- `RunningHub Deepcleaner` —— 1/4 个有
-- `easy int` —— 1/4 个有
+- `DF_Get_image_size` —— 1/2 个有
+- `GradientImage` —— 1/2 个有
+- `easy mathInt` —— 1/2 个有
 
 ## 典型参数
 
@@ -58,4 +54,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

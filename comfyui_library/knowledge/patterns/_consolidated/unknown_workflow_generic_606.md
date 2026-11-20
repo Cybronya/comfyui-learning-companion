@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_606
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.828
-common_nodes: [IndexTTS2Run, LoadAudio, PreviewAudio, Text Multiline]
+coverage: 0.7034
+common_nodes: [SaveImage]
 problems: []
 missing: []
-members: [平台全量/人声与情绪迁移_2004955775565004802.json, 数字人/数字人/IndexTTS2最强配音带感情模型-V2_2015271792365015041.json, 音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json, 音频生成/音频生成/IndexTTS2_人声与情绪迁移_双人对话+单人说话工作流_1968294270253838337.json, 音频生成/音频生成/IndexTTS2最强配音带感情模型-V2_1983545218752552962.json, 音频生成/音频生成/二创_声音克隆-人声与情绪迁移_双人对话+单人说话_2004610297493159937.json]
+members: [图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json, 图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json, 图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json, 图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json, 图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_606
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/人声与情绪迁移_2004955775565004802.json、数字人/数字人/IndexTTS2最强配音带感情模型-V2_2015271792365015041.json、音频生成/音频生成/IndexTTS2_openclaw_2038560524585148417.json、音频生成/音频生成/IndexTTS2_人声与情绪迁移_双人对话+单人说话工作流_1968294270253838337.json、音频生成/音频生成/IndexTTS2最强配音带感情模型-V2_1983545218752552962.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/API 全能文生图 G image 2.5！高质量版本1_2097966052218068994.json、图片生成/文生图/G-image-2.5-文生图-高品质版_2097935227732709378.json、图片生成/文生图/LLM+G2.0文生图，九宫格_2098347156565487618.json、图片生成/文生图/LLM+全能图片G-2.5文生图_2098363707494584321.json、图片生成/文生图/人物生成（全能G-2）_2080481586897833985.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PreviewAudio`
-- `Text Multiline`
+全部 5 个 workflow 都包含：
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 5/6 个有
-- `SaveAudio` —— 5/6 个有
-- `SaveAudioMP3` —— 3/6 个有
-- `VHS_LoadVideo` —— 2/6 个有
-- `LoadImage` —— 1/6 个有
+- `JjkText` —— 4/5 个有
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 4/5 个有
+- `RHLLMChatNode` —— 3/5 个有
+- `RH_RhartImageG2TextToImage` —— 2/5 个有
 
 ## 典型参数
 

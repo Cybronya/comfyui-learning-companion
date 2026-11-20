@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_1018
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.79475
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.857
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频X-图生视频-官方稳定版_2049847091299667969.json, 视频生成/图生视频/全能视频X-图生视频-官方稳定版_2061770036007759873.json, 视频生成/图生视频/全能视频X-图生视频-官方稳定版_2115637875734835202.json, 视频生成/图生视频/图生视频 指定说话内容 wan2.7_2041801468629491714.json]
+members: [图片生成/图生图/全能图片V1 -分镜出片_1964514664849788930.json, 图片生成/图生图/全能图片V1 一键生成美式证件照_1967506570152173570.json, 图片生成/图生图/全能图片V1合集_1960632354417049602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1018
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频X-图生视频-官方稳定版_2049847091299667969.json、视频生成/图生视频/全能视频X-图生视频-官方稳定版_2061770036007759873.json、视频生成/图生视频/全能视频X-图生视频-官方稳定版_2115637875734835202.json、视频生成/图生视频/图生视频 指定说话内容 wan2.7_2041801468629491714.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1 -分镜出片_1964514664849788930.json、图片生成/图生图/全能图片V1 一键生成美式证件照_1967506570152173570.json、图片生成/图生图/全能图片V1合集_1960632354417049602.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGOfficialImageToVideo` —— 3/4 个有
-- `JjkText` —— 2/4 个有
-- `RH_AlibabaWan27ImageToVideo` —— 1/4 个有
+- `CR Prompt Text` —— 2/3 个有
+- `ImageStitch` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,32 +3,35 @@ name: unknown_workflow_generic_1191
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.863
-common_nodes: [LoadImage, PrimitiveInt, RH_RhartImageG2ImageToImage, SaveImage, TextInput_, easy promptLine]
+coverage: 1
+common_nodes: [CR Text, LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/参考背景风格种草图_2064594198262804482.json, 图片生成/图生图/种草图生成_2047193652753080321.json, 图片生成/图生图/种草图生成_2061636648290578433.json]
+members: [音频生成/音频生成/LongCat-AudioDiT-V3_2044072981504204802.json, 音频生成/音频生成/LongCat-AudioDiT-V4_2044081275895554049.json, 音频生成/音频生成/三款开源TTS大模型横评，LongCat-AudioDiT完胜🐱_2044068675002572802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1191
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/参考背景风格种草图_2064594198262804482.json、图片生成/图生图/种草图生成_2047193652753080321.json、图片生成/图生图/种草图生成_2061636648290578433.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-V3_2044072981504204802.json、音频生成/音频生成/LongCat-AudioDiT-V4_2044081275895554049.json、音频生成/音频生成/三款开源TTS大模型横评，LongCat-AudioDiT完胜🐱_2044068675002572802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `PrimitiveInt`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `TextInput_`
-- `easy promptLine`
+- `CR Text`
+- `LoadAudio`
+- `LongCatVoiceCloneTTS`
+- `NormalizeAudioLoudness`
+- `SaveAudioMP3`
+
+**可变部分**（部分 workflow 才有）：
+- `Apply Whisper` —— 2/3 个有
+- `TrimAudioDuration` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,40 +1,44 @@
 ---
 name: unknown_workflow_sampler_53
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [BitDanceDecode, BitDanceLoader, BitDanceResolution, BitDanceSampler, BitDanceTextEncodeCached, SaveImage]
+coverage: 0.924
+common_nodes: [ImageAndMaskPreview, ImageStitch, InvertMask, LoadImage, MaskPreview, PreviewImage, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/文生图/Comfyui-bitdance 基础工作流+高清放大_2026864308029759490.json, 图片生成/文生图/Comfyui-bitdance 基础工作流_2026597170824093698.json, 图片生成/文生图/Comfyui-bitdance 基础工作流_2027274705597636610.json, 图片生成/文生图/Comfyui-bitdance 文生图_2027213134947160065.json]
+members: [图片生成/图生图/换背景 _ OneReward-Fill_1966173106291249153.json, 图片生成/图生图/换背景-字节OneReward-Fill_1966394196582150145.json, 图片生成/图生图/重绘换背景-字节OneReward-Fill重绘_1965807959672557570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_53
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Comfyui-bitdance 基础工作流+高清放大_2026864308029759490.json、图片生成/文生图/Comfyui-bitdance 基础工作流_2026597170824093698.json、图片生成/文生图/Comfyui-bitdance 基础工作流_2027274705597636610.json、图片生成/文生图/Comfyui-bitdance 文生图_2027213134947160065.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换背景 _ OneReward-Fill_1966173106291249153.json、图片生成/图生图/换背景-字节OneReward-Fill_1966394196582150145.json、图片生成/图生图/重绘换背景-字节OneReward-Fill重绘_1965807959672557570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BitDanceDecode`
-- `BitDanceLoader`
-- `BitDanceResolution`
-- `BitDanceSampler`
-- `BitDanceTextEncodeCached`
+全部 3 个 workflow 都包含：
+- `ImageAndMaskPreview`
+- `ImageStitch`
+- `InvertMask`
+- `LoadImage`
+- `MaskPreview`
+- `PreviewImage`
+- `RunningHub OneReward Loader`
+- `RunningHub OneReward Sampler`
 - `SaveImage`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 1/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `SeedVR2` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `Text Multiline` —— 2/3 个有
+- `InspyrenetRembgLoader` —— 1/3 个有
+- `InspyrenetRembgProcess` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
 
 ## 典型参数
 

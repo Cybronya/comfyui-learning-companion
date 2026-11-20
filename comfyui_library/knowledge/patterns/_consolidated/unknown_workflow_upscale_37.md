@@ -1,36 +1,42 @@
 ---
 name: unknown_workflow_upscale_37
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 1
-common_nodes: [ImageUpscaleWithModel, LoadImage, SaveImage, UpscaleModelLoader]
+frequency: 2
+level: weak
+coverage: 0.683
+common_nodes: [BiRefNet_ModelLoader_Zho, BiRefNet_Zho, InspyrenetRembg, LayerMask: BiRefNetUltra, LayerMask: SegmentAnythingUltra V2, LoadImage, PreviewImage, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [平台全量/图片4倍放大+九宫格4X放大切片（9张）_2033118961411301378.json, 平台全量/图片放大像素增强_2044590969957388290.json, 平台全量/尺寸放大器_1826534435230543873.json, 平台全量/空间效果图快速放大｜默认4K_2118595861491048450.json]
+members: [图片生成/图生图/Image Masking Collection7合1抠图+抠图去除背景_2097859749982334977.json, 图片生成/图生图/抠图_2062353508631928833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_37
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/图片4倍放大+九宫格4X放大切片（9张）_2033118961411301378.json、平台全量/图片放大像素增强_2044590969957388290.json、平台全量/尺寸放大器_1826534435230543873.json、平台全量/空间效果图快速放大｜默认4K_2118595861491048450.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Image Masking Collection7合1抠图+抠图去除背景_2097859749982334977.json、图片生成/图生图/抠图_2062353508631928833.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageUpscaleWithModel`
+全部 2 个 workflow 都包含：
+- `BiRefNet_ModelLoader_Zho`
+- `BiRefNet_Zho`
+- `InspyrenetRembg`
+- `LayerMask: BiRefNetUltra`
+- `LayerMask: SegmentAnythingUltra V2`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
-- `UpscaleModelLoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_ImageGridSplit` —— 1/4 个有
-- `ImageScaleToMaxDimension` —— 1/4 个有
+- `ImageUpscaleWithModel` —— 1/2 个有
+- `Upscale Model Loader` —— 1/2 个有
+- `YUAN_TXTConvertAny` —— 1/2 个有
 
 ## 典型参数
 
@@ -42,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

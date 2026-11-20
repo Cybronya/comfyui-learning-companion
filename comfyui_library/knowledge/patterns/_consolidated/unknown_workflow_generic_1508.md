@@ -3,33 +3,37 @@ name: unknown_workflow_generic_1508
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [LoadImage, SaveImage, ShowText|pysssss]
+coverage: 0.9175
+common_nodes: [CR Text, LoadImage, PreviewImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Gemini2.0-图片反推_1902593401592688642.json, 图片生成/反推提示词/Joy Beta1全新模式打标器_1922601658482659330.json]
+members: [图片生成/图生图/大波服装设计工作流_2037704375614840833.json, 视频生成/图生视频/老Y新的故事板V2+sd生成_2055005421135507457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1508
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Gemini2.0-图片反推_1902593401592688642.json、图片生成/反推提示词/Joy Beta1全新模式打标器_1922601658482659330.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/大波服装设计工作流_2037704375614840833.json、视频生成/图生视频/老Y新的故事板V2+sd生成_2055005421135507457.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
 - `LoadImage`
+- `PreviewImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
 - `SaveImage`
-- `ShowText|pysssss`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Gemini_Flash_200_Exp` —— 1/2 个有
-- `JJC_JoyCaption` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
+- `Video Slice` —— 1/2 个有
 
 ## 典型参数
 

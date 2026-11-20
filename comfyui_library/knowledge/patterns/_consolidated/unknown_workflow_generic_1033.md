@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_1033
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.9285
-common_nodes: [CR Prompt Text, RH_FireRedAudioLoader, RH_FireRedAudioVoiceDesign]
+coverage: 0.756333
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, StringReplace, ttN text]
 problems: []
 missing: []
-members: [音频生成/音频生成/FireRed Audio声音设计2608_2094001340199559170.json, 音频生成/音频生成/Firered Audio Design声音设计_2093559894883528706.json, 音频生成/音频生成/声音设计 普通话_2098600265346797569.json, 音频生成/音频生成/声音设计-配音-Firered Audio Design-语音合成-小红书_2094283616619679745.json]
+members: [图片生成/图生图/复刻顶级杂志风格的高级菜单（专属定制 如有需要请私信作者）_2024132509759442945.json, 图片生成/图生图/酒楼菜单一键出图_2076588754659270657.json, 图片生成/文生图/Z-Image-base文生图稳定工作流_2016193578510323713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1033
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/FireRed Audio声音设计2608_2094001340199559170.json、音频生成/音频生成/Firered Audio Design声音设计_2093559894883528706.json、音频生成/音频生成/声音设计 普通话_2098600265346797569.json、音频生成/音频生成/声音设计-配音-Firered Audio Design-语音合成-小红书_2094283616619679745.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/复刻顶级杂志风格的高级菜单（专属定制 如有需要请私信作者）_2024132509759442945.json、图片生成/图生图/酒楼菜单一键出图_2076588754659270657.json、图片生成/文生图/Z-Image-base文生图稳定工作流_2016193578510323713.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_FireRedAudioLoader`
-- `RH_FireRedAudioVoiceDesign`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `StringReplace`
+- `ttN text`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioAdvanced` —— 1/4 个有
+- `PreviewAny` —— 2/3 个有
+- `Text` —— 2/3 个有
 
 ## 典型参数
 

@@ -3,33 +3,41 @@ name: unknown_workflow_generic_1816
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Text, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.596
+common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImpactSwitch, Label (rgthree), LoadAudio, SaveAudioMP3, SetNode, TextInput_, WhisperSTT, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/Image G 2.0 巨构文生图-低价渠道版_2094844368493568001.json, 图片生成/文生图/RPTimage2_2059197846456463362.json]
+members: [音频生成/音频生成/Qwen3-TTS 2人_单人对话音频生成(支持上传音色克隆或 文字描述生成音色)_2018391521661292545.json, 音频生成/音频生成/Qwen3-TTS 8人及以下对话音频生成(支持上传音色克隆或 文字描述生成音色)_2017578327875264513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1816
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Image G 2.0 巨构文生图-低价渠道版_2094844368493568001.json、图片生成/文生图/RPTimage2_2059197846456463362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS 2人_单人对话音频生成(支持上传音色克隆或 文字描述生成音色)_2018391521661292545.json、音频生成/音频生成/Qwen3-TTS 8人及以下对话音频生成(支持上传音色克隆或 文字描述生成音色)_2017578327875264513.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RHLLMChatNode` —— 1/2 个有
-- `SaveImageNode` —— 1/2 个有
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `FB_Qwen3TTSVoiceDesign`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `INTConstant`
+- `ImpactSwitch`
+- `Label (rgthree)`
+- `LoadAudio`
+- `SaveAudioMP3`
+- `SetNode`
+- `TextInput_`
+- `WhisperSTT`
+- `easy showAnything`
 
 ## 典型参数
 

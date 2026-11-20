@@ -1,30 +1,36 @@
 ---
 name: unknown_workflow_generic_939
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [RH_RhartImageNProOfficialTextToImage, SaveImage]
+common_nodes: [CR Overlay Text, ImageConcanate, LoadImage, SaveImage, TY360Roundtrip]
 problems: []
 missing: []
-members: [图片生成/文生图/NPro_OfficialTextToImage_v1.0_2033838667017494530.json, 图片生成/文生图/全能图片PRO-文生图-官方稳定版 API专用_2081655488500035586.json, 图片生成/文生图/全能图片PRO-文生图-官方稳定版 API专用_2081655611904839681.json, 图片生成/文生图/全能图片PRO-文生图-官方稳定版_2061683310832742401.json]
+members: [图片生成/图生图/360-全景照片四视图查看_2043940803164246018.json, 图片生成/图生图/360-全景照片四视图查看_2044253691791806465.json, 图片生成/图生图/360-全景照片四视图查看_2044706751290810369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_939
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/NPro_OfficialTextToImage_v1.0_2033838667017494530.json、图片生成/文生图/全能图片PRO-文生图-官方稳定版 API专用_2081655488500035586.json、图片生成/文生图/全能图片PRO-文生图-官方稳定版 API专用_2081655611904839681.json、图片生成/文生图/全能图片PRO-文生图-官方稳定版_2061683310832742401.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/360-全景照片四视图查看_2043940803164246018.json、图片生成/图生图/360-全景照片四视图查看_2044253691791806465.json、图片生成/图生图/360-全景照片四视图查看_2044706751290810369.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `RH_RhartImageNProOfficialTextToImage`
+全部 3 个 workflow 都包含：
+- `CR Overlay Text`
+- `ImageConcanate`
+- `LoadImage`
 - `SaveImage`
+- `TY360Roundtrip`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Image Border` —— 2/3 个有
 
 ## 典型参数
 

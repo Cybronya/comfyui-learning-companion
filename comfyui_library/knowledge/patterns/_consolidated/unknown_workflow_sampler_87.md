@@ -3,33 +3,38 @@ name: unknown_workflow_sampler_87
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [InstantIR_Loader, InstantIR_Sampler, LoadImage, SaveImage]
+coverage: 0.9545
+common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, LoadAudio, PreviewAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/InstantIR万能图像模糊变高清修复V1_1937854843388084226.json, 平台全量/InstantIR低分辨率修复_1856762382893928450.json]
+members: [图片生成/文生图/Qwen3-TTS&预设声音&自定义声音设计_2015365617691402241.json, 音频生成/音频生成/Qwen-TTS  高效音频工作流_2061358596834811906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_87
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/InstantIR万能图像模糊变高清修复V1_1937854843388084226.json、平台全量/InstantIR低分辨率修复_1856762382893928450.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Qwen3-TTS&预设声音&自定义声音设计_2015365617691402241.json、音频生成/音频生成/Qwen-TTS  高效音频工作流_2061358596834811906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `InstantIR_Loader`
-- `InstantIR_Sampler`
-- `LoadImage`
-- `SaveImage`
+- `FB_Qwen3TTSCustomVoice`
+- `FB_Qwen3TTSVoiceClone`
+- `FB_Qwen3TTSVoiceDesign`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
+- `Apply Whisper` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

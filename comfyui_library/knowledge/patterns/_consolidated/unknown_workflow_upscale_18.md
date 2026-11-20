@@ -1,31 +1,37 @@
 ---
 name: unknown_workflow_upscale_18
 type: Unknown Workflow
-frequency: 6
+frequency: 4
 level: moderate
-coverage: 0.958333
-common_nodes: [LoadImage, RH_TopazLabs_ImageUpscale, SaveImage]
+coverage: 0.833
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_RFMSR_ModelLoader, RH_RFMSR_Upscale, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/TopazLabs 图像放大（RH版）_2054441994121949185.json, 图片生成/图生图/TopazLabs图片高清放大_2054474158792298497.json, 图片生成/文生图/TopazLabs 图片放大_2016515954276044801.json, 平台全量/TopazLabs 图像放大_2007746446900076545.json, 平台全量/TopazLabs-高清放大_2080619371113836545.json, 平台全量/图片放大工作流｜Topaz 最高六倍 人脸增强_2100471587886682114.json]
+members: [图片生成/图生图/RFMSR Upscale 高清放大_2026216768892571649.json, 图片生成/图生图/图片放大修复_RFMSR_2082377090774687745.json, 图片生成/图生图/图片放大修复_RFMSR_2084971950656548865.json, 图片生成/图生图/图片放大修复_RFMSR_2085175418247798786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_18
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/TopazLabs 图像放大（RH版）_2054441994121949185.json、图片生成/图生图/TopazLabs图片高清放大_2054474158792298497.json、图片生成/文生图/TopazLabs 图片放大_2016515954276044801.json、平台全量/TopazLabs 图像放大_2007746446900076545.json、平台全量/TopazLabs-高清放大_2080619371113836545.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/RFMSR Upscale 高清放大_2026216768892571649.json、图片生成/图生图/图片放大修复_RFMSR_2082377090774687745.json、图片生成/图生图/图片放大修复_RFMSR_2084971950656548865.json、图片生成/图生图/图片放大修复_RFMSR_2085175418247798786.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `RH_TopazLabs_ImageUpscale`
+- `RH_RFMSR_ModelLoader`
+- `RH_RFMSR_Upscale`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `easy cleanGpuUsed` —— 3/4 个有
+- `JWImageResizeByLongerSide` —— 1/4 个有
 
 ## 典型参数
 

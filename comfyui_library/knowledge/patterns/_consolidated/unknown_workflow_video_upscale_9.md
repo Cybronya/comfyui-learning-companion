@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_video_upscale_9
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 1
-common_nodes: [ImageUpscaleWithModel, RIFE VFI, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.757
+common_nodes: [ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MultiplyNode, PrimitiveInt, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, ttN text]
 problems: []
 missing: []
-members: [平台全量/插针_1932372347771088897.json, 平台全量/插针_1962535539100499969.json, 平台全量/简易视频放大，速度很快_1855255635318149122.json, 平台全量/视频RIFE补帧+高清放大_1905264298359459842.json, 平台全量/视频插帧_2058281860144394242.json, 平台全量/视频补帧放大_2011389540434452482.json]
+members: [视频生成/图生视频/Framepack F1图生视频(高清放大+补帧)_1919981556402950146.json, 视频生成/图生视频/敏神framepack首尾帧(高清放大+补帧)_1916132186154799106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_9
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/插针_1932372347771088897.json、平台全量/插针_1962535539100499969.json、平台全量/简易视频放大，速度很快_1855255635318149122.json、平台全量/视频RIFE补帧+高清放大_1905264298359459842.json、平台全量/视频插帧_2058281860144394242.json…）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Framepack F1图生视频(高清放大+补帧)_1919981556402950146.json、视频生成/图生视频/敏神framepack首尾帧(高清放大+补帧)_1916132186154799106.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `ImageUpscaleWithModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `MultiplyNode`
+- `PrimitiveInt`
 - `RIFE VFI`
 - `UpscaleModelLoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `ttN text`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 2/6 个有
+- `RunningHub_FramePack` —— 1/2 个有
+- `RunningHub_FramePack_F1` —— 1/2 个有
 
 ## 典型参数
 
@@ -42,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

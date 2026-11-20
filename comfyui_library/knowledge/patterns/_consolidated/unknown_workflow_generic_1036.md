@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_generic_1036
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.73175
-common_nodes: [HeartMuLa_Generate, RH_LLMAPI_NODE, SaveAudio, Text Multiline, easy showAnything]
+coverage: 1
+common_nodes: [ImageLoaderAdvanced, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json, 音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json, 音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json, 音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json]
+members: [图片生成/图生图/家居效果图_2012368922061836289.json, 图片生成/图生图/展厅效果图_2041433442071613441.json, 图片生成/文生图/家居产品家具沙发床生成效果图扩图美化图生图_2069484216743714818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1036
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa音乐歌曲生成3B版-高级版-自动生成歌词和风格_2015364173215043586.json、音频生成/音频生成/一句话生成音乐HeartMuLa音乐歌曲生成3B RL-自动提示词_2015627001817735169.json、音频生成/音频生成/不输 suno V5 HeartMuLa音乐歌曲生成3B版-自动提示词-自动生成歌词和风格_2014714999842803713.json、音频生成/音频生成/唱歌，自动歌词，一句话生成音乐歌曲，作词作曲_2015764300027142145.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/家居效果图_2012368922061836289.json、图片生成/图生图/展厅效果图_2041433442071613441.json、图片生成/文生图/家居产品家具沙发床生成效果图扩图美化图生图_2069484216743714818.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `RH_LLMAPI_NODE`
-- `SaveAudio`
-- `Text Multiline`
-- `easy showAnything`
+全部 3 个 workflow 都包含：
+- `ImageLoaderAdvanced`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 2/4 个有
-- `LoadImage` —— 1/4 个有
+- `ImageConcanate` —— 2/3 个有
+- `TT_img_enc` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,38 +1,31 @@
 ---
 name: unknown_workflow_generic_530
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.794
-common_nodes: [Qwen3_VQA, SaveImage, easy showAnything]
+coverage: 0.86
+common_nodes: [ByteDance2ReferenceNodeV2, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Qwen3 VQA图片反推视频提示词V1_1999477689276825601.json, 图片生成/反推提示词/Qwen3 VQA首尾帧图片反推提示词_1999645493368156162.json, 图片生成/反推提示词/Qwen3+VQA图片反推JSON格式提示词_1999643010478600193.json, 图片生成/反推提示词/千问图片反推_1986006571178176514.json, 图片生成/反推提示词/图像提示词反推（超详细版）QWEN3 VL_2015765733640249346.json, 图片生成/反推提示词/视频反推提示词_2000036361459691521.json]
+members: [comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json, comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json, comfyui-workflow-templates-json/api_seedance2_5_r2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_530
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/Qwen3 VQA图片反推视频提示词V1_1999477689276825601.json、图片生成/反推提示词/Qwen3 VQA首尾帧图片反推提示词_1999645493368156162.json、图片生成/反推提示词/Qwen3+VQA图片反推JSON格式提示词_1999643010478600193.json、图片生成/反推提示词/千问图片反推_1986006571178176514.json、图片生成/反推提示词/图像提示词反推（超详细版）QWEN3 VL_2015765733640249346.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json、comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json、comfyui-workflow-templates-json/api_seedance2_5_r2v.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Qwen3_VQA`
-- `SaveImage`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageLoader` —— 5/6 个有
-- `MultiplePathsInput` —— 3/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `LoadImage` —— 1/6 个有
-- `VideoLoader` —— 1/6 个有
+全部 5 个 workflow 都包含：
+- `ByteDance2ReferenceNodeV2`
+- `LoadImage`
+- `SaveVideo`
 
 ## 典型参数
 

@@ -1,51 +1,45 @@
 ---
 name: unknown_workflow_sampler_clip_checkpoint_27
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.79975
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptySD3LatentImage, KSampler, SaveImage, VAEDecode]
+frequency: 2
+level: weak
+coverage: 0.929
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DualCLIPLoader, Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LucidFlux_SM_Cond, LucidFlux_SM_Encode, LucidFlux_SM_KSampler, LucidFlux_SM_Model, SaveImage, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Netayume Lumina 动漫文生图_2078655787282554882.json, 图片生成/文生图/SD 3.5 官方工作流（教学用）_1955937848417550338.json, 图片生成/文生图/image_netayume_lumina_t2i_2059957968740900865.json, 图片生成/文生图/【遇见AI】sd3_medium_basic文生图_2039206201413607426.json]
+members: [图片生成/图生图/LucidFlux图像修复V2_1976309147899699201.json, 图片生成/图生图/高清修复LucidFlux图像修复V2_1981313653012070402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_27
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Netayume Lumina 动漫文生图_2078655787282554882.json、图片生成/文生图/SD 3.5 官方工作流（教学用）_1955937848417550338.json、图片生成/文生图/image_netayume_lumina_t2i_2059957968740900865.json、图片生成/文生图/【遇见AI】sd3_medium_basic文生图_2039206201413607426.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/LucidFlux图像修复V2_1976309147899699201.json、图片生成/图生图/高清修复LucidFlux图像修复V2_1981313653012070402.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
+- `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `DualCLIPLoader`
+- `Image Comparer (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LucidFlux_SM_Cond`
+- `LucidFlux_SM_Encode`
+- `LucidFlux_SM_KSampler`
+- `LucidFlux_SM_Model`
 - `SaveImage`
-- `VAEDecode`
-
-**可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `StringConcatenate` —— 2/4 个有
-- `TripleCLIPLoader` —— 2/4 个有
-- `ModelSamplingSD3` —— 1/4 个有
+- `VAELoader`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 29 | 20 - 30 | 4 | 85% |
-| Prompt 约束强度(CFG) | 4.25 | 4 - 5.45 | 4 | 87% |
-| 采样算法 | res_multistep | - | 4 | 50% |
-| 调度器 | simple | - | 4 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -53,8 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 29，观测区间 20 - 30，4 个样本，取值集中（一致性 85%）
-- Prompt 约束强度(CFG) 中位数 4.25，观测区间 4 - 5.45，4 个样本，取值集中（一致性 87%）
-- 采样算法 最常用 res_multistep，4 个样本，一致性 50%
-- 调度器 最常用 simple，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

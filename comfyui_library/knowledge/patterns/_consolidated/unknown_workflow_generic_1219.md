@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1219
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.803667
-common_nodes: [EcommercePromptGenerator, ImpactSwitch, Int, JjkShowText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, String, Text Input [Dream]]
+coverage: 0.747333
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/电商详情页眼镜案例_2098984516898611202.json, 图片生成/图生图/电商详情页眼镜案例_2100162321741074434.json, 图片生成/图生图/电商详情页（眼镜案例）_2015765538475085825.json]
+members: [音频生成/音频生成/最新INDEXTTS语音迁移v2-自用款_1954844251291041793.json, 音频生成/音频生成/杰洛特批量克隆生成音频，情绪控制版本_2048684668932857857.json, 音频生成/音频生成/🦖TTS2克隆+模仿+情绪_2006245075122130946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1219
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/电商详情页眼镜案例_2098984516898611202.json、图片生成/图生图/电商详情页眼镜案例_2100162321741074434.json、图片生成/图生图/电商详情页（眼镜案例）_2015765538475085825.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/最新INDEXTTS语音迁移v2-自用款_1954844251291041793.json、音频生成/音频生成/杰洛特批量克隆生成音频，情绪控制版本_2048684668932857857.json、音频生成/音频生成/🦖TTS2克隆+模仿+情绪_2006245075122130946.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `EcommercePromptGenerator`
-- `ImpactSwitch`
-- `Int`
-- `JjkShowText`
-- `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `String`
-- `Text Input [Dream]`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `FL_Audio_Separation` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `Note _O` —— 1/3 个有
 
 ## 典型参数
 

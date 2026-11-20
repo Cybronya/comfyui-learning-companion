@@ -3,37 +3,37 @@ name: unknown_workflow_generic_1838
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.556
-common_nodes: [Anything Everywhere, Image Comparer (rgthree), LayerFilter: HDREffects, LoadImage, PreviewImage, SaveImage]
+coverage: 0.916
+common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, OmniVoiceLongformTTS, OmniVoiceVoiceCloneTTS, OmniVoiceWhisperLoader, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/一键运行：HYPIR 高级修复、洗图_1965238970269487105.json, 平台全量/一键运行：SeedVR2 高清放大修复_1997195574116028418.json]
+members: [音频生成/音频生成/TTS_2073064988377436162.json, 音频生成/音频生成/omnivoice-tts 语音克隆_2041461507283755010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1838
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一键运行：HYPIR 高级修复、洗图_1965238970269487105.json、平台全量/一键运行：SeedVR2 高清放大修复_1997195574116028418.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/TTS_2073064988377436162.json、音频生成/音频生成/omnivoice-tts 语音克隆_2041461507283755010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `Image Comparer (rgthree)`
-- `LayerFilter: HDREffects`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadAudio`
+- `OmniVoiceLongformTTS`
+- `OmniVoiceVoiceCloneTTS`
+- `OmniVoiceWhisperLoader`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `HYPIRAdvancedRestoration` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `SeedVR2` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `SaveAudioMP3` —— 1/2 个有
+- `TrimAudio` —— 1/2 个有
 
 ## 典型参数
 

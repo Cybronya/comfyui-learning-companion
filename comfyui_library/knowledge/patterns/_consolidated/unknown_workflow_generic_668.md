@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_668
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.5694
-common_nodes: [HYPIRImageRestoration, Image Comparer (rgthree), LoadImage, SaveImage]
+coverage: 0.712
+common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/HYPIR 高清放大（央视推荐）_1951868106232811521.json, 图片生成/图生图/HYPIR-无损高清修复_1965092092236189697.json, 图片生成/图生图/RTX4k超分+HYPIR高清放大加二次修复_2038617804471017473.json, 平台全量/HYPIR-高清放大加二次修复_1952616890394980354.json, 平台全量/HYPIR高清放大_2046048684638478337.json]
+members: [comfyui-workflow-templates-json/api_bfl_flux3_image_bboxes.json, comfyui-workflow-templates-json/api_bfl_flux3_image_edit.json, comfyui-workflow-templates-json/api_ideogram_v4_5_image_edit.json, comfyui-workflow-templates-json/api_ideogram_v4_5_precise_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_668
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/HYPIR 高清放大（央视推荐）_1951868106232811521.json、图片生成/图生图/HYPIR-无损高清修复_1965092092236189697.json、图片生成/图生图/RTX4k超分+HYPIR高清放大加二次修复_2038617804471017473.json、平台全量/HYPIR-高清放大加二次修复_1952616890394980354.json、平台全量/HYPIR高清放大_2046048684638478337.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bfl_flux3_image_bboxes.json、comfyui-workflow-templates-json/api_bfl_flux3_image_edit.json、comfyui-workflow-templates-json/api_ideogram_v4_5_image_edit.json、comfyui-workflow-templates-json/api_ideogram_v4_5_precise_image_edit.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `HYPIRImageRestoration`
-- `Image Comparer (rgthree)`
+全部 4 个 workflow 都包含：
+- `ImageCompare`
 - `LoadImage`
-- `SaveImage`
+- `SaveImageAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `FluxKontextImageScale` —— 2/5 个有
-- `RTXVideoSuperResolution` —— 1/5 个有
+- `CreateBoundingBoxes` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `BuildJsonPromptIdeogram` —— 2/4 个有
+- `Flux3ImageNode` —— 2/4 个有
+- `IdeogramEditApi` —— 1/4 个有
+- `IdeogramPreciseEditApi` —— 1/4 个有
 
 ## 典型参数
 

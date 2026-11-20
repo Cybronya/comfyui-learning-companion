@@ -1,34 +1,38 @@
 ---
 name: unknown_workflow_generic_930
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartImageNG31FlashImageToImage, SaveImage]
+coverage: 0.844
+common_nodes: [AILab_QwenVL, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/遮挡区域原图还原修补_2061654525315997697.json, 图片生成/文生图/全能图片2_2063784932719284225.json, 平台全量/全能图片V2_2072130057983848449.json, 数字人/数字人/全能图片V2-图生图-低价渠道版_2067973139832852482.json]
+members: [图片生成/反推提示词/反推图片提示词_2001227398739787777.json, 图片生成/反推提示词/反推提示词 （qwenVL）_2030186443896791042.json, 图片生成/图生图/Qwen3打标_2004433567914622978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_930
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/遮挡区域原图还原修补_2061654525315997697.json、图片生成/文生图/全能图片2_2063784932719284225.json、平台全量/全能图片V2_2072130057983848449.json、数字人/数字人/全能图片V2-图生图-低价渠道版_2067973139832852482.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/反推图片提示词_2001227398739787777.json、图片生成/反推提示词/反推提示词 （qwenVL）_2030186443896791042.json、图片生成/图生图/Qwen3打标_2004433567914622978.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_RhartImageNG31FlashImageToImage`
-- `SaveImage`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `KepStringLiteral` —— 1/4 个有
+- `CR Text` —— 2/3 个有
+- `easy seed` —— 2/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 

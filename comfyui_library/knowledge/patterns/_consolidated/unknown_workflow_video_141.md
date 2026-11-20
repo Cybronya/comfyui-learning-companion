@@ -1,46 +1,41 @@
 ---
 name: unknown_workflow_video_141
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.612
-common_nodes: [Image Comparer (rgthree), Int, LayerFilter: GaussianBlur, LoadImage, PreviewImage, PrimitiveInt, SaveImage, SeedVR2, SeedVR2BlockSwap, easy cleanGpuUsed]
+frequency: 2
+level: weak
+coverage: 0.9645
+common_nodes: [Apply Whisper, AudioSeparation, LatentSyncNode, SaveAudio, ShowText, TextNode, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/SeedVR2图像、视频高清放大_2029087050854572033.json, 平台全量/SeedVR2图像高清放大_1938133082388238338.json, 平台全量/SeedVR2图像高清放大_1968219340812201986.json]
+members: [视频生成/文生视频/视频数字人(保持原视频 原音色+文字驱动)_1965826441835360258.json, 音频生成/音频生成/视频对口型(保持原音色)_1927663661807222785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_141
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/SeedVR2图像、视频高清放大_2029087050854572033.json、平台全量/SeedVR2图像高清放大_1938133082388238338.json、平台全量/SeedVR2图像高清放大_1968219340812201986.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/视频数字人(保持原视频 原音色+文字驱动)_1965826441835360258.json、音频生成/音频生成/视频对口型(保持原音色)_1927663661807222785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `Int`
-- `LayerFilter: GaussianBlur`
-- `LoadImage`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `easy cleanGpuUsed`
+全部 2 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioSeparation`
+- `LatentSyncNode`
+- `SaveAudio`
+- `ShowText`
+- `TextNode`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/3 个有
-- `SeedVR2ExtraArgs` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
-- `VHS_VideoInfo` —— 1/3 个有
+- `CosyVoiceNode` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `VHS_VideoInfo` —— 1/2 个有
 
 ## 典型参数
 
@@ -52,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -3,33 +3,37 @@ name: unknown_workflow_generic_1860
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7735
-common_nodes: [CR Text, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.8095
+common_nodes: [Audio To Text (mtb), FB_Qwen3TTSVoiceClone, Load Whisper (mtb), LoadAudio, SaveAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/文生图/巨物美食摄影_自动提示词_2064340664837558274.json, 图片生成/文生图/真实感拉爆！全能图片G2文生图_2046754127727824897.json]
+members: [音频生成/音频生成/【遇见AI】Qwen3-TTS 语音克隆，预设声音，声音设计_2056175763291951105.json, 音频生成/音频生成/【遇见AI】Qwen3-TTS声音克隆_2015650426556784641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1860
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/巨物美食摄影_自动提示词_2064340664837558274.json、图片生成/文生图/真实感拉爆！全能图片G2文生图_2046754127727824897.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【遇见AI】Qwen3-TTS 语音克隆，预设声音，声音设计_2056175763291951105.json、音频生成/音频生成/【遇见AI】Qwen3-TTS声音克隆_2015650426556784641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
+- `Audio To Text (mtb)`
+- `FB_Qwen3TTSVoiceClone`
+- `Load Whisper (mtb)`
+- `LoadAudio`
+- `SaveAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `GenericAPILLMNode` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
+- `FB_Qwen3TTSCustomVoice` —— 1/2 个有
+- `FB_Qwen3TTSVoiceDesign` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

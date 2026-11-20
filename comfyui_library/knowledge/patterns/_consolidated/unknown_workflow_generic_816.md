@@ -3,37 +3,34 @@ name: unknown_workflow_generic_816
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8665
-common_nodes: [CR Prompt Text, Flux3PELoader, Flux3PromptEnhance, JWInteger, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.5845
+common_nodes: [JjkText, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Flux3 Klein PE提示词强化_2111363661150375937.json, 图片生成/反推提示词/Flux3+Klein+PE提示词强化_2111485319303491586.json, 图片生成/反推提示词/Flux3_Klein_PE提示词强化_2114184883919736833.json, 图片生成/反推提示词/Flux3_Klein_PE提示词强化_2115243956865945602.json]
+members: [数字人/数字人/Qwen3-TTS 声音设计_2100181833643290626.json, 音频生成/音频生成/Qwen3 TTS 最强声音设计开源工作流_2095543500996694017.json, 音频生成/音频生成/TTS 声音设计工作流_2094023501610053634.json, 音频生成/音频生成/电商定制声音风格_2014869455171489794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_816
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/Flux3 Klein PE提示词强化_2111363661150375937.json、图片生成/反推提示词/Flux3+Klein+PE提示词强化_2111485319303491586.json、图片生成/反推提示词/Flux3_Klein_PE提示词强化_2114184883919736833.json、图片生成/反推提示词/Flux3_Klein_PE提示词强化_2115243956865945602.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Qwen3-TTS 声音设计_2100181833643290626.json、音频生成/音频生成/Qwen3 TTS 最强声音设计开源工作流_2095543500996694017.json、音频生成/音频生成/TTS 声音设计工作流_2094023501610053634.json、音频生成/音频生成/电商定制声音风格_2014869455171489794.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Flux3PELoader`
-- `Flux3PromptEnhance`
-- `JWInteger`
-- `LoadImage`
-- `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
+- `JjkText`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/4 个有
+- `Float` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 

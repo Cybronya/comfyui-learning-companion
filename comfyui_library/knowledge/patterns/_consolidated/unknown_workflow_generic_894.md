@@ -3,41 +3,37 @@ name: unknown_workflow_generic_894
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.83675
-common_nodes: [ImageResize+, LoadImage, RH_Nano_Banana_Image2Image, SaveImage, SeedVR2, SeedVR2BlockSwap]
+coverage: 0.448
+common_nodes: [AudioCrop, CR Text, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1多图编辑SeedVR2放大（Gemini 2.5 Flash）_1975551685550583810.json, 图片生成/图生图/全能图片V1多图编辑带放大（Gemini 2.5 Flash）_1975929583885225985.json, 图片生成/图生图/放大测试_1988504992279609346.json, 平台全量/RH__全能图片V1_1970443291122692097.json]
+members: [音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频+全节点注释_2087369744059031555.json, 音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频_2102020830707408898.json, 音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+全节点注释_2086671379549741057.json, 音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+文案_2093659321568677890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_894
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片V1多图编辑SeedVR2放大（Gemini 2.5 Flash）_1975551685550583810.json、图片生成/图生图/全能图片V1多图编辑带放大（Gemini 2.5 Flash）_1975929583885225985.json、图片生成/图生图/放大测试_1988504992279609346.json、平台全量/RH__全能图片V1_1970443291122692097.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频+全节点注释_2087369744059031555.json、音频生成/音频生成/声音克隆IndexTTS-2.5 上传参考音频_2102020830707408898.json、音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+全节点注释_2086671379549741057.json、音频生成/音频生成/声音克隆IndexTTS2 Run 上传参考音频+文案_2093659321568677890.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `ImageResize+`
-- `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+- `AudioCrop`
+- `CR Text`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `RH_Translator` —— 3/4 个有
-- `Int` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `easy imageChooser` —— 1/4 个有
+- `IndexTTS2Run` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `RH_IndexTTS25_Loader` —— 2/4 个有
+- `RH_IndexTTS25_Synthesize` —— 2/4 个有
 
 ## 典型参数
 

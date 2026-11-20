@@ -3,36 +3,37 @@ name: unknown_workflow_generic_1565
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7735
-common_nodes: [JjkText, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Translator, SaveImage]
+coverage: 0.875
+common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, LayerMask: MaskPreview, LayerUtility: ImageCombineAlpha, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/BerniniFul  单图编辑之王_2067440218583683074.json, 图片生成/图生图/MJ v7.0图生图_2054470647832694785.json]
+members: [图片生成/图生图/线稿+扣图 全能图片G_2075044348831555585.json, 图片生成/图生图/线稿+扣图_2046069094440509442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1565
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/BerniniFul  单图编辑之王_2067440218583683074.json、图片生成/图生图/MJ v7.0图生图_2054470647832694785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/线稿+扣图 全能图片G_2075044348831555585.json、图片生成/图生图/线稿+扣图_2046069094440509442.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `BRIA_RMBG_ModelLoader_Zho`
+- `BRIA_RMBG_Zho`
+- `LayerMask: MaskPreview`
+- `LayerUtility: ImageCombineAlpha`
 - `LoadImage`
-- `RH_Translator`
+- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RHBerniniFullImageToImage` —— 1/2 个有
-- `RH_Midjourney` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

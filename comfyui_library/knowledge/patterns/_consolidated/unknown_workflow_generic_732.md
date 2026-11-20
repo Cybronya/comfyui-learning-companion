@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_732
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.7602
-common_nodes: [RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.65625
+common_nodes: [JjkText, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片2API-文生图_2039908654614319106.json, 图片生成/文生图/全能图片2API-文生图_2039909277426520066.json, 图片生成/文生图/星宸2.0_2031896640361078785.json, 图片生成/文生图/最强漫剧_游戏_电影角色设计分稿_模板_2052927383690330113.json, 图片生成/文生图/萧哥4K文生图V2.0Flash(8分一张图)_2028012592207241218.json]
+members: [图片生成/图生图/一键发型生成器_2016788282524311553.json, 图片生成/图生图/人物+卡通形象同框_2021392001899438081.json, 图片生成/图生图/最强多图参考生图  全能图片V1_1960958404489621505.json, 图片生成/图生图/电商多图参考生图  全能图片V1_1960958186801049602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_732
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图片2API-文生图_2039908654614319106.json、图片生成/文生图/全能图片2API-文生图_2039909277426520066.json、图片生成/文生图/星宸2.0_2031896640361078785.json、图片生成/文生图/最强漫剧_游戏_电影角色设计分稿_模板_2052927383690330113.json、图片生成/文生图/萧哥4K文生图V2.0Flash(8分一张图)_2028012592207241218.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键发型生成器_2016788282524311553.json、图片生成/图生图/人物+卡通形象同框_2021392001899438081.json、图片生成/图生图/最强多图参考生图  全能图片V1_1960958404489621505.json、图片生成/图生图/电商多图参考生图  全能图片V1_1960958186801049602.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `RH_Nano_Banana2_Gemini31Flash`
+全部 4 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 4/5 个有
-- `CR Text` —— 1/5 个有
-- `Constant Number` —— 1/5 个有
+- `Image Stitch` —— 1/4 个有
+- `JjkConcat` —— 1/4 个有
 
 ## 典型参数
 

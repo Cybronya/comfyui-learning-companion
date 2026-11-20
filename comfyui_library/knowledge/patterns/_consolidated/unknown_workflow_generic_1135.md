@@ -3,31 +3,46 @@ name: unknown_workflow_generic_1135
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.6
-common_nodes: [CR Text, ImageCompare, LoadImage, SaveImage, bc1c967a-7f6a-4be9-a372-dad16e4f28e3]
+coverage: 0.582
+common_nodes: [Bookmark (rgthree), Fast Groups Bypasser (rgthree), GetNode, JWString, LoadImage, MultiLinePromptIndex, MultiLinePromptMG, MultiTextConcatenate, PreviewAny, RH_Hailuo_Image2Video, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, RH_Sora2_I2V, RH_Veo3_Image2Video, SaveImage, SaveVideo, SetNode, Text, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image-2.1 换装V3（高一致性_无偏移）_2115914110125821954.json, 图片生成/图生图/Qwen-Image-2.1_换装V3高一致性_无偏移_2115988274660601857.json, 图片生成/图生图/Qwen-Image-2.1_换装V3高一致性_无偏移_2116001910057693186.json]
+members: [视频生成/图生视频/全流程工作流_2017334255008878594.json, 视频生成/图生视频/全流程工作流（老程）_2018275721206046722.json, 视频生成/文生视频/人物分镜视频一套工作流_2018508990946217986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1135
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-2.1 换装V3（高一致性_无偏移）_2115914110125821954.json、图片生成/图生图/Qwen-Image-2.1_换装V3高一致性_无偏移_2115988274660601857.json、图片生成/图生图/Qwen-Image-2.1_换装V3高一致性_无偏移_2116001910057693186.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全流程工作流_2017334255008878594.json、视频生成/图生视频/全流程工作流（老程）_2018275721206046722.json、视频生成/文生视频/人物分镜视频一套工作流_2018508990946217986.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `ImageCompare`
+- `Bookmark (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `JWString`
 - `LoadImage`
+- `MultiLinePromptIndex`
+- `MultiLinePromptMG`
+- `MultiTextConcatenate`
+- `PreviewAny`
+- `RH_Hailuo_Image2Video`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
+- `RH_Sora2_I2V`
+- `RH_Veo3_Image2Video`
 - `SaveImage`
-- `bc1c967a-7f6a-4be9-a372-dad16e4f28e3`
+- `SaveVideo`
+- `SetNode`
+- `Text`
+- `Text Multiline`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -3,31 +3,39 @@ name: unknown_workflow_generic_1543
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.667
-common_nodes: [JjkText, LoadImage, QWEN_TextDisplay, RHLLMChatNode, easy saveText]
+coverage: 0.9475
+common_nodes: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, RHHiddenNodes, RH_Nano_Banana2_Gemini31Flash, SaveImage, String, easy int]
 problems: []
 missing: []
-members: [图片生成/反推提示词/漫剧对战打斗分镜脚本生成LLM_2109432771574849538.json, 图片生成/反推提示词/街头拳皇格斗对战SKILL-LLM_2110003190858076162.json]
+members: [图片生成/图生图/服装创意平铺图（一）_2028055107497107457.json, 图片生成/图生图/服装创意平铺图（二）_2028354295661334529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1543
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/漫剧对战打斗分镜脚本生成LLM_2109432771574849538.json、图片生成/反推提示词/街头拳皇格斗对战SKILL-LLM_2110003190858076162.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/服装创意平铺图（一）_2028055107497107457.json、图片生成/图生图/服装创意平铺图（二）_2028354295661334529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
-- `QWEN_TextDisplay`
-- `RHLLMChatNode`
-- `easy saveText`
+- `RHHiddenNodes`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `String`
+- `easy int`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

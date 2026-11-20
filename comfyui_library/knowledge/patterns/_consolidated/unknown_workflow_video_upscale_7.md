@@ -1,47 +1,39 @@
 ---
 name: unknown_workflow_video_upscale_7
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.839857
-common_nodes: [CR Float To Integer, ImageFromBatch, ImageGenResolutionFromImage, ImageResizeKJ, ImageUpscaleWithModelBatched, InversionDemoLazySwitch, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, PrimitiveBoolean, RHHiddenNodes, RIFE VFI, StringConstantMultiline, TextToNumber, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy anythingIndexSwitch, easy showAnything]
+frequency: 2
+level: weak
+coverage: 0.929
+common_nodes: [Fast Groups Bypasser (rgthree), ImageConcanate, KEEP_FaceUpscaleImage, KEEP_ModelLoader, KEEP_ProcessImageSequence, LoadImage, PrimitiveBoolean, SaveImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [平台全量/视频高清放大2倍补帧_1987652403707228162.json, 平台全量/视频高清放大2倍补帧，可择是否1080P输出或者2倍输出，可选是否2倍插帧（分辨率自适应）_1902993528975167490.json, 平台全量/视频高清放大2倍补帧，可择是否1080P输出或者2倍输出，可选是否2倍插帧（分辨率自适应）_1977343654958387201.json, 平台全量/视频高清放大_1972201794661249025.json, 平台全量/视频高清放大_1987443063549308930.json, 平台全量/视频高清放大补帧（根叔）_1977769590753218562.json, 数字人/数字人/视频高清放大2倍补帧输出_1979059388159791106.json]
+members: [数字人/数字人/KEEP视频人脸超分高清修复_1937544696421859329.json, 视频生成/图生视频/KEEP视频画面人物超分高清修复_1937882105940459522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_7
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/视频高清放大2倍补帧_1987652403707228162.json、平台全量/视频高清放大2倍补帧，可择是否1080P输出或者2倍输出，可选是否2倍插帧（分辨率自适应）_1902993528975167490.json、平台全量/视频高清放大2倍补帧，可择是否1080P输出或者2倍输出，可选是否2倍插帧（分辨率自适应）_1977343654958387201.json、平台全量/视频高清放大_1972201794661249025.json、平台全量/视频高清放大_1987443063549308930.json…）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/KEEP视频人脸超分高清修复_1937544696421859329.json、视频生成/图生视频/KEEP视频画面人物超分高清修复_1937882105940459522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Float To Integer`
-- `ImageFromBatch`
-- `ImageGenResolutionFromImage`
-- `ImageResizeKJ`
-- `ImageUpscaleWithModelBatched`
-- `InversionDemoLazySwitch`
-- `LayerUtility: PurgeVRAM V2`
-- `MathExpression|pysssss`
+全部 2 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcanate`
+- `KEEP_FaceUpscaleImage`
+- `KEEP_ModelLoader`
+- `KEEP_ProcessImageSequence`
+- `LoadImage`
 - `PrimitiveBoolean`
-- `RHHiddenNodes`
-- `RIFE VFI`
-- `StringConstantMultiline`
-- `TextToNumber`
-- `UpscaleModelLoader`
+- `SaveImage`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `easy anythingIndexSwitch`
-- `easy showAnything`
+- `VHS_VideoInfo`
 
 ## 典型参数
 
@@ -53,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

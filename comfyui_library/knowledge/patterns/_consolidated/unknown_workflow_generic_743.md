@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_743
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.8598
-common_nodes: [LoadImage, Note Plus (mtb), RHHiddenNodes, SaveImage]
+coverage: 0.97925
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [平台全量/[书墨🛫]万物皆成“冰”——冰雕世界_1872370480228265985.json, 平台全量/[书墨🛫]全系光光光光效_1875932989099331586.json, 平台全量/[书墨🛫]移除大物体保留背景工作流_1870049248405262337.json, 平台全量/[书墨🛬]万物皆可“绒”——针织世界_1870885512230903809.json, 平台全量/【书墨🛫】糖糖糖糖糖！_1875149090127306754.json]
+members: [图片生成/图生图/全能G2.0【角色】【场景】【道具】一键AI角色多视图设计方案_2050252669406720001.json, 图片生成/图生图/全能图片G-2.0-图生图-低价渠道版0.1_张_2049757243993800705.json, 图片生成/图生图/跨境电商套图设计_2047501995749154817.json, 图片生成/文生图/【全能】上传角色一键生成9宫格漫剧分镜图_2053654211375710209.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_743
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/[书墨🛫]万物皆成“冰”——冰雕世界_1872370480228265985.json、平台全量/[书墨🛫]全系光光光光效_1875932989099331586.json、平台全量/[书墨🛫]移除大物体保留背景工作流_1870049248405262337.json、平台全量/[书墨🛬]万物皆可“绒”——针织世界_1870885512230903809.json、平台全量/【书墨🛫】糖糖糖糖糖！_1875149090127306754.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能G2.0【角色】【场景】【道具】一键AI角色多视图设计方案_2050252669406720001.json、图片生成/图生图/全能图片G-2.0-图生图-低价渠道版0.1_张_2049757243993800705.json、图片生成/图生图/跨境电商套图设计_2047501995749154817.json、图片生成/文生图/【全能】上传角色一键生成9宫格漫剧分镜图_2053654211375710209.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `Note Plus (mtb)`
-- `RHHiddenNodes`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `LayerMask: MaskPreview` —— 1/5 个有
+- `PreviewTextNode` —— 2/4 个有
+- `RH_LLMAPI_Pro_Node` —— 2/4 个有
 
 ## 典型参数
 

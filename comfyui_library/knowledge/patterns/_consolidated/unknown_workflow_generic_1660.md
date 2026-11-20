@@ -3,42 +3,33 @@ name: unknown_workflow_generic_1660
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7885
-common_nodes: [CR Prompt Text, DF_Integer, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, RHHiddenNodes, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2TextToImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs]
+coverage: 0.6875
+common_nodes: [SaveAudio, TDQwen3TTSModelLoader, TDQwen3TTSVoiceDesign]
 problems: []
 missing: []
-members: [图片生成/图生图/全能G2-Images 2.0文生图+图文生图工作流-二流合集_2046812229017804802.json, 图片生成/文生图/全能G2-Images 2.0文生图+八张图文生图工作流_2058924668106657794.json]
+members: [数字人/数字人/VoxCPM2语音克隆音色设计全能新王者_2114306949566255106.json, 音频生成/音频生成/A-17 Qwen3-TTS 音色设计 无需录音 文生音频 10国语言_2107472276244484097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1660
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能G2-Images 2.0文生图+图文生图工作流-二流合集_2046812229017804802.json、图片生成/文生图/全能G2-Images 2.0文生图+八张图文生图工作流_2058924668106657794.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/VoxCPM2语音克隆音色设计全能新王者_2114306949566255106.json、音频生成/音频生成/A-17 Qwen3-TTS 音色设计 无需录音 文生音频 10国语言_2107472276244484097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `DF_Integer`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `RHHiddenNodes`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
+- `SaveAudio`
+- `TDQwen3TTSModelLoader`
+- `TDQwen3TTSVoiceDesign`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_generic_554
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.984833
-common_nodes: [JoinImageWithAlpha, LayerMask: SegmentAnythingUltra V2, LoadImage, MaskPreview+, SDMatteApply, SaveImage]
+coverage: 0.718
+common_nodes: [Display Any (rgthree), PrimitiveStringMultiline, RH_LLMAPI_NODE, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/SDMatte高精度半透明图像抠图V2_1956216471452045313.json, 图片生成/图生图/SDmatte高精度抠图，毛发、玻璃、水珠、婚纱等等完美抠出_1956524137772711938.json, 图片生成/图生图/最强抠图神器SDMatte_1955981530273337346.json, 平台全量/【高精度抠图】半透明图像抠-SDMatte高精度_2001839165744529409.json, 平台全量/抠图-透明体_1957383865436401665.json, 平台全量/抠图V2-高精度(SDMatte)_1956705509330051074.json]
+members: [图片生成/图生图/API  一键出6_9_25宫格 分镜图_2023967401880064002.json, 图片生成/图生图/一键出25分镜头图生图版本_2021191787578134529.json, 图片生成/文生图/一键出25分镜头文生图版本_2021188154425876482.json, 图片生成/文生图/一键出4分镜头文生图版本_2021413450899005441.json, 图片生成/文生图/一键出9分镜头文生图版本_2021416602603884545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_554
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SDMatte高精度半透明图像抠图V2_1956216471452045313.json、图片生成/图生图/SDmatte高精度抠图，毛发、玻璃、水珠、婚纱等等完美抠出_1956524137772711938.json、图片生成/图生图/最强抠图神器SDMatte_1955981530273337346.json、平台全量/【高精度抠图】半透明图像抠-SDMatte高精度_2001839165744529409.json、平台全量/抠图-透明体_1957383865436401665.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/API  一键出6_9_25宫格 分镜图_2023967401880064002.json、图片生成/图生图/一键出25分镜头图生图版本_2021191787578134529.json、图片生成/文生图/一键出25分镜头文生图版本_2021188154425876482.json、图片生成/文生图/一键出4分镜头文生图版本_2021413450899005441.json、图片生成/文生图/一键出9分镜头文生图版本_2021416602603884545.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `JoinImageWithAlpha`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LoadImage`
-- `MaskPreview+`
-- `SDMatteApply`
+全部 5 个 workflow 都包含：
+- `Display Any (rgthree)`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Mask Invert` —— 5/6 个有
-- `ImageConcanate` —— 3/6 个有
-- `InvertMask` —— 1/6 个有
-- `LayerUtility: ImageCombineAlpha` —— 1/6 个有
-- `SDMatteModelLoader` —— 1/6 个有
+- `LoadImage` —— 2/5 个有
+- `RHHiddenNodes` —— 1/5 个有
 
 ## 典型参数
 

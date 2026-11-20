@@ -1,41 +1,40 @@
 ---
 name: unknown_workflow_generic_987
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.81375
-common_nodes: [CR Text, LoadAudio, MegaTTS3Run, SaveAudioMP3, VHS_LoadVideo]
+coverage: 1
+common_nodes: [CR Image Border, ImageConcanate, ImageScale, LoadImage, SaveImage, ZML_ColorPicker]
 problems: []
 missing: []
-members: [数字人/数字人/MegaTTS3语音克隆_1971842025928716290.json, 音频生成/音频生成/MegaTTS3声音克隆（可上传视频或者音频读取）_1978037114388492290.json, 音频生成/音频生成/MegaTTS3语音克隆_1963825162070233090.json, 音频生成/音频生成/超还原音色--MegaTTS3语音克隆_1996207369795289090.json]
+members: [图片生成/图生图/comfyui工作流封面制作_5_1890057677169471490.json, 图片生成/图生图/拼图_九宫格_1916440388461334530.json, 图片生成/图生图/拼图_四宫格_1916482426011320322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_987
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/MegaTTS3语音克隆_1971842025928716290.json、音频生成/音频生成/MegaTTS3声音克隆（可上传视频或者音频读取）_1978037114388492290.json、音频生成/音频生成/MegaTTS3语音克隆_1963825162070233090.json、音频生成/音频生成/超还原音色--MegaTTS3语音克隆_1996207369795289090.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/comfyui工作流封面制作_5_1890057677169471490.json、图片生成/图生图/拼图_九宫格_1916440388461334530.json、图片生成/图生图/拼图_四宫格_1916482426011320322.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `MegaTTS3Run`
-- `SaveAudioMP3`
-- `VHS_LoadVideo`
+全部 3 个 workflow 都包含：
+- `CR Image Border`
+- `ImageConcanate`
+- `ImageScale`
+- `LoadImage`
+- `SaveImage`
+- `ZML_ColorPicker`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 3/4 个有
-- `InversionDemoLazySwitch` —— 2/4 个有
-- `PrimitiveInt` —— 2/4 个有
-- `easy anythingIndexSwitch` —— 2/4 个有
-- `LoadImage` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
+- `ConstrainImage|pysssss` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `CR Overlay Text` —— 1/3 个有
+- `easy imageInsetCrop` —— 1/3 个有
 
 ## 典型参数
 

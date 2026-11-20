@@ -1,45 +1,32 @@
 ---
 name: unknown_workflow_generic_784
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.922
-common_nodes: [Apply Whisper, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.4
+common_nodes: [JjkText, PrimitiveInt, RHBerniniFullTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS全套语音生成-克隆_设计_自定义_2014687730025893889.json, 音频生成/音频生成/Qwen3-TTS+音色设计+音色克隆+自定义情绪_2044002856012881922.json, 音频生成/音频生成/qwen3tts声音克隆语音克隆声音_2015611402869809154.json, 音频生成/音频生成/【Ai剪辑师必备】语音模型集合版Qwen3&TTSIndexTTS2【Supermate】_2018828838146416641.json, 音频生成/音频生成/语音模型集合版Qwen3&TTSIndexTTS2谁家强_2016104177868476417.json]
+members: [图片生成/文生图/Bernini-Full 文生图_2067217800464257026.json, 图片生成/文生图/Bernini-Full 文生图工作流_2066784369590759426.json, 图片生成/文生图/Bernini-Full 文生图工作流_2068852285685452801.json, 图片生成/文生图/（满血版）Bernini-Full 文生图工作流_2066950035262230530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_784
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS全套语音生成-克隆_设计_自定义_2014687730025893889.json、音频生成/音频生成/Qwen3-TTS+音色设计+音色克隆+自定义情绪_2044002856012881922.json、音频生成/音频生成/qwen3tts声音克隆语音克隆声音_2015611402869809154.json、音频生成/音频生成/【Ai剪辑师必备】语音模型集合版Qwen3&TTSIndexTTS2【Supermate】_2018828838146416641.json、音频生成/音频生成/语音模型集合版Qwen3&TTSIndexTTS2谁家强_2016104177868476417.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Bernini-Full 文生图_2067217800464257026.json、图片生成/文生图/Bernini-Full 文生图工作流_2066784369590759426.json、图片生成/文生图/Bernini-Full 文生图工作流_2068852285685452801.json、图片生成/文生图/（满血版）Bernini-Full 文生图工作流_2066950035262230530.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：40%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Apply Whisper`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 4/5 个有
-- `Qwen3TTSVoiceDesign` —— 4/5 个有
-- `Qwen3TTSCustomVoice` —— 3/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `Text` —— 3/5 个有
-- `Fast Groups Muter (rgthree)` —— 2/5 个有
-- `easy downloadIndexTTSAndLoadModel` —— 2/5 个有
-- `easy indexTTSEmotionVector` —— 2/5 个有
-- `easy indexTTSGenerateSimple` —— 2/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
+全部 4 个 workflow 都包含：
+- `JjkText`
+- `PrimitiveInt`
+- `RHBerniniFullTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

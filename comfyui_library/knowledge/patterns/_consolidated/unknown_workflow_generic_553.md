@@ -1,37 +1,39 @@
 ---
 name: unknown_workflow_generic_553
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.642667
-common_nodes: [LoadImage, RTXVideoSuperResolution, SaveImage]
+coverage: 0.8152
+common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_NODE, SaveImage, TextConcat, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/RTX 一键图片4K高清_2035000663045836802.json, 图片生成/图生图/RTX 最快图片超分(按倍数)_2031928332501131265.json, 图片生成/图生图/RTX单图最优放大、倍数安全限制、预览与对比（关注收藏领批量版本）_2032333205403082754.json, 平台全量/Nvidia RTX 极速超分辨率高清放大｜仅适用于 Nvidia RTX GPU_2032465761507221505.json, 平台全量/Nvidia-RTX-图像放大（极速）_2032086468457402370.json, 平台全量/RTX Video Super Resolution图像快速放大_2031970180615639041.json]
+members: [图片生成/图生图/2 名猫角色概念精细拆解工作表_2000606865862127617.json, 图片生成/图生图/全能图片V12银杏叶摄影_1996412735279742977.json, 图片生成/文生图/2 旅行手账生成器_2000243378887458818.json, 图片生成/文生图/chibi卡通水彩画全画面_2010238121534824449.json, 图片生成/文生图/提示词工程模版-动物养殖_2001558213789138946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_553
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/RTX 一键图片4K高清_2035000663045836802.json、图片生成/图生图/RTX 最快图片超分(按倍数)_2031928332501131265.json、图片生成/图生图/RTX单图最优放大、倍数安全限制、预览与对比（关注收藏领批量版本）_2032333205403082754.json、平台全量/Nvidia RTX 极速超分辨率高清放大｜仅适用于 Nvidia RTX GPU_2032465761507221505.json、平台全量/Nvidia-RTX-图像放大（极速）_2032086468457402370.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/2 名猫角色概念精细拆解工作表_2000606865862127617.json、图片生成/图生图/全能图片V12银杏叶摄影_1996412735279742977.json、图片生成/文生图/2 旅行手账生成器_2000243378887458818.json、图片生成/文生图/chibi卡通水彩画全画面_2010238121534824449.json、图片生成/文生图/提示词工程模版-动物养殖_2001558213789138946.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `RTXVideoSuperResolution`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
+- `TextConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 5/6 个有
-- `PrimitiveFloat` —— 5/6 个有
-- `NumberClamp` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
+- `AILab_QwenVL` —— 2/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/5 个有
 
 ## 典型参数
 

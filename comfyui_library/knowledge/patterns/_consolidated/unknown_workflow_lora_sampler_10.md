@@ -3,39 +3,37 @@ name: unknown_workflow_lora_sampler_10
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [ImageConcatMulti, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, NunchakuFluxDiTLoader, SaveImage, Stack_LoRA, Text Multiline, chx_Ksampler_Kontext, sum_load_adv]
+coverage: 0.875
+common_nodes: [ImageConcatMulti, ImageResizeKJv2, LoadImage, PreviewImage, RunningHub OmniConsistency LoraLoader, RunningHub OmniConsistency Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext效率节点-多次连续编辑_1947145920976969730.json, 图片生成/图生图/Kontext效率节点-连续编辑_1947894219659718658.json]
+members: [图片生成/图生图/OmniConsistency转绘（3D）_1930847426591305730.json, 图片生成/图生图/OmniConsistency转绘（水墨）_1929143547914784770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext效率节点-多次连续编辑_1947145920976969730.json、图片生成/图生图/Kontext效率节点-连续编辑_1947894219659718658.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/OmniConsistency转绘（3D）_1930847426591305730.json、图片生成/图生图/OmniConsistency转绘（水墨）_1929143547914784770.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `ImageConcatMulti`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
+- `PreviewImage`
+- `RunningHub OmniConsistency LoraLoader`
+- `RunningHub OmniConsistency Sampler`
 - `SaveImage`
-- `Stack_LoRA`
-- `Text Multiline`
-- `chx_Ksampler_Kontext`
-- `sum_load_adv`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 1/2 个有
+- `DeepTranslatorTextNode` —— 1/2 个有
+- `TextSwitchCase` —— 1/2 个有
 
 ## 典型参数
 

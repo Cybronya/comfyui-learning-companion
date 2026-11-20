@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_1015
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.775
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.776333
+common_nodes: [CR Text Concatenate, Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, PreviewImage, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S2   25秒图生视频_2027213914072686593.json, 视频生成/图生视频/全能视频X-图生视频-低价渠道版_2082456750208409601.json, 视频生成/图生视频/全能视频x图生视频低价版 6-30s 仅0.21元_秒_2052572897696333826.json, 视频生成/文生视频/全能视频S图生视频 （横版_竖版），无水印，速度快_2015429548715810818.json]
+members: [图片生成/图生图/全能图片G-image2.5_2099336261852024833.json, 图片生成/图生图/全能图片V1 pro-建筑效果图-固定随机种子_1995414974153547778.json, 图片生成/文生图/NB pro_1992811429535477761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1015
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频S2   25秒图生视频_2027213914072686593.json、视频生成/图生视频/全能视频X-图生视频-低价渠道版_2082456750208409601.json、视频生成/图生视频/全能视频x图生视频低价版 6-30s 仅0.21元_秒_2052572897696333826.json、视频生成/文生视频/全能视频S图生视频 （横版_竖版），无水印，速度快_2015429548715810818.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G-image2.5_2099336261852024833.json、图片生成/图生图/全能图片V1 pro-建筑效果图-固定随机种子_1995414974153547778.json、图片生成/文生图/NB pro_1992811429535477761.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
 - **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CR Text Concatenate`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `SaveVideo`
+- `PreviewImage`
+- `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `RH_RhartVideoGImageToVideo` —— 2/4 个有
-- `RH_Sora2_I2V_PRO` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/3 个有
 
 ## 典型参数
 

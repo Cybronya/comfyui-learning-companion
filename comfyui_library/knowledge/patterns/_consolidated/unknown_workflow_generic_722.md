@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_722
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9778
-common_nodes: [LoadImage, ReActorFaceSwap, SaveImage]
+coverage: 0.933
+common_nodes: [LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/最新超强换脸_ 无需提示词 只需两个节点_1909608326835990530.json, 图片生成/图生图/生图-图换脸-Reactor_1972659385921150977.json, 平台全量/-___________-V3_2070863983611043841.json, 平台全量/CG迷-Reactor换脸工作流_1927061791317118978.json, 平台全量/ReActor图片换脸_1982833217940127745.json]
+members: [图片生成/图生图/YH_G官方_v001_20260709_2075058738821681153.json, 图片生成/图生图/最新G image2  图生图官方全量稳定版 V1.0_2048027176750026754.json, 图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V1.0_2059076871203151874.json, 图片生成/图生图/测试IMAGE2.0_2050163442417446914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_722
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/最新超强换脸_ 无需提示词 只需两个节点_1909608326835990530.json、图片生成/图生图/生图-图换脸-Reactor_1972659385921150977.json、平台全量/-___________-V3_2070863983611043841.json、平台全量/CG迷-Reactor换脸工作流_1927061791317118978.json、平台全量/ReActor图片换脸_1982833217940127745.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YH_G官方_v001_20260709_2075058738821681153.json、图片生成/图生图/最新G image2  图生图官方全量稳定版 V1.0_2048027176750026754.json、图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V1.0_2059076871203151874.json、图片生成/图生图/测试IMAGE2.0_2050163442417446914.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `ReActorFaceSwap`
+- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ReActorFaceBoost` —— 2/5 个有
-- `ReActorRestoreFace` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `StringFunction|pysssss` —— 1/4 个有
 
 ## 典型参数
 

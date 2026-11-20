@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_282
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.817111
-common_nodes: [ShowText|pysssss, StringFunction|pysssss, easy positive, easy saveText, easy seed]
+coverage: 0.97225
+common_nodes: [GeminiImage2Node, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/推理-角色-RH_1972588816584355842.json, 图片生成/文生图/推理-文生图提示词-RH_1972595214646968321.json, 图片生成/文生图/推理-文生图提示词-qwen3VL_1983729157060403201.json, 平台全量/推理-中心-RH_1994089031571095553.json, 平台全量/推理-生成分镜-RH_2008510669439635457.json, 平台全量/推理-生成剧本-RH_2014158394369773569.json, 平台全量/推理-生成小说-RH_2014158344096845825.json, 数字人/数字人/剧本与分镜脚本_2093149535890661378.json, 视频生成/图生视频/推理-图生视频提示词-R H_1972214627054645249.json]
+members: [comfyui-workflow-templates-json/templates-assemble_dieline.json, comfyui-workflow-templates-json/templates-character_sheet.json, comfyui-workflow-templates-json/templates-color_illustration.json, comfyui-workflow-templates-json/templates-subject_holding_product.app.json, comfyui-workflow-templates-json/templates-subject_product_swap.app.json, comfyui-workflow-templates-json/utility_nanobanana_pro_ai_image_fix.json, comfyui-workflow-templates-json/utility_nanobanana_pro_illustration_upscale.json, comfyui-workflow-templates-json/utility_nanobanana_pro_product_upscale.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_282
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/推理-角色-RH_1972588816584355842.json、图片生成/文生图/推理-文生图提示词-RH_1972595214646968321.json、图片生成/文生图/推理-文生图提示词-qwen3VL_1983729157060403201.json、平台全量/推理-中心-RH_1994089031571095553.json、平台全量/推理-生成分镜-RH_2008510669439635457.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/templates-assemble_dieline.json、comfyui-workflow-templates-json/templates-character_sheet.json、comfyui-workflow-templates-json/templates-color_illustration.json、comfyui-workflow-templates-json/templates-subject_holding_product.app.json、comfyui-workflow-templates-json/templates-subject_product_swap.app.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `ShowText|pysssss`
-- `StringFunction|pysssss`
-- `easy positive`
-- `easy saveText`
-- `easy seed`
+全部 8 个 workflow 都包含：
+- `GeminiImage2Node`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 8/9 个有
-- `Text Multiline` —— 2/9 个有
-- `AILab_QwenVL` —— 1/9 个有
-- `LoadImage` —— 1/9 个有
+- `e20a7fb5-3d72-41c9-a78c-fdf287ec46ec` —— 2/8 个有
+- `ImageStitch` —— 1/8 个有
 
 ## 典型参数
 

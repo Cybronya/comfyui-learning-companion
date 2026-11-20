@@ -3,33 +3,37 @@ name: unknown_workflow_generic_1809
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.714
-common_nodes: [CR Text, Dapao_LlamaChat, PrimitiveInt, RH_RhartImageG2TextToImage, SaveImage, easy showAnything, easy textSwitch]
+coverage: 0.6485
+common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSTrain, FB_Qwen3TTSVoiceClone, PreviewAny, PreviewAudio, RHUploadZip_V2, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变_真香_的高清文生图海报设计多种风格_2066072969440485377.json, 图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变真香的高清文生图海报设计多种风格_2069038840697937921.json]
+members: [音频生成/音频生成/Qwen TTS音频训练及生成V1_2016917327547207682.json, 音频生成/音频生成/Qwen3-TTS 音色训练(微调)_2017147809501290497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1809
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变_真香_的高清文生图海报设计多种风格_2066072969440485377.json、图片生成/文生图/1毛就能让甲方闭嘴！专治老板！！设计狗保命指南！刁钻需求秒变真香的高清文生图海报设计多种风格_2069038840697937921.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen TTS音频训练及生成V1_2016917327547207682.json、音频生成/音频生成/Qwen3-TTS 音色训练(微调)_2017147809501290497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `Dapao_LlamaChat`
-- `PrimitiveInt`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
-- `easy showAnything`
-- `easy textSwitch`
+- `FB_Qwen3TTSCustomVoice`
+- `FB_Qwen3TTSTrain`
+- `FB_Qwen3TTSVoiceClone`
+- `PreviewAny`
+- `PreviewAudio`
+- `RHUploadZip_V2`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Prompt Text` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

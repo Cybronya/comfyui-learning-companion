@@ -1,40 +1,44 @@
 ---
 name: unknown_workflow_generic_1423
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.767667
-common_nodes: [FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceDesign, LoadAudio, RH_LLMAPI_Pro_Node, SaveAudio, WhisperSTT]
+frequency: 2
+level: weak
+coverage: 0.719
+common_nodes: [AspectRatioSelect, CR Text Replace, LoadImage, RH_Captioner_Pro, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json, 音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json, 音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json]
+members: [图片生成/图生图/⭐️ 图片裂变3.0_2054452770756931586.json, 图片生成/图生图/一键自动图片裂变_2070393869317009409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1423
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS-音色克隆与语音生成！_2069748297203539969.json、音频生成/音频生成/Qwen3-TTS语音设计，克隆与生成！_2013963982889033729.json、音频生成/音频生成/Qwen3-TTS音色推理生成，音色克隆_2018569189182672897.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/⭐️ 图片裂变3.0_2054452770756931586.json、图片生成/图生图/一键自动图片裂变_2070393869317009409.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `FB_Qwen3TTSVoiceClone`
-- `FB_Qwen3TTSVoiceDesign`
-- `LoadAudio`
+全部 2 个 workflow 都包含：
+- `AspectRatioSelect`
+- `CR Text Replace`
+- `LoadImage`
+- `RH_Captioner_Pro`
 - `RH_LLMAPI_Pro_Node`
-- `SaveAudio`
-- `WhisperSTT`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `Fast Bypasser (rgthree)` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 
@@ -46,4 +50,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

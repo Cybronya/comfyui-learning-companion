@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_968
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.79
-common_nodes: [LoadImage, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
+coverage: 0.689
+common_nodes: [Image Comparer (rgthree), LoadImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [平台全量/H3官方多模态换品-仅大于15秒双段_2102232689838477313.json, 平台全量/MiniMax H3 多模态参考视频生成工作流_2083454876222316545.json, 视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json, 视频生成/图生视频/H3官方多模态换品-仅大于15秒双段_2102316839295606786.json]
+members: [图片生成/图生图/LEON_无损放大_细节恢复_强化肌理_2097259845492764673.json, 图片生成/图生图/QT106-超低像素放大 文字修复，512像素高清修复到2K以上，电商详情页文字修复等_1956896827691950082.json, 图片生成/图生图/SeedVR2图片放大高清修复精修局部重绘-适合电商、自媒体、娱乐博主_2048085145378365441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_968
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/H3官方多模态换品-仅大于15秒双段_2102232689838477313.json、平台全量/MiniMax H3 多模态参考视频生成工作流_2083454876222316545.json、视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json、视频生成/图生视频/H3官方多模态换品-仅大于15秒双段_2102316839295606786.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LEON_无损放大_细节恢复_强化肌理_2097259845492764673.json、图片生成/图生图/QT106-超低像素放大 文字修复，512像素高清修复到2K以上，电商详情页文字修复等_1956896827691950082.json、图片生成/图生图/SeedVR2图片放大高清修复精修局部重绘-适合电商、自媒体、娱乐博主_2048085145378365441.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `SaveVideo`
+- `RHHiddenNodes`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `VideoConcatenate` —— 2/4 个有
-- `EmptyImage` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `easy int` —— 1/3 个有
+- `ttN int` —— 1/3 个有
 
 ## 典型参数
 

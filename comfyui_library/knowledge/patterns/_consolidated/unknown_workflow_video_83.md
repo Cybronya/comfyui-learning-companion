@@ -1,48 +1,36 @@
 ---
 name: unknown_workflow_video_83
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.804
-common_nodes: [GODMT_GetLength, GetImagesFromBatchIndexed, GetVideoComponents, Int2String, LoadVideo, MathExpression|pysssss, MiniCPM_VQA_Polished, Text Concatenate]
+coverage: 1
+common_nodes: [CustomAddLabel, GetVideoComponents, SaveVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/视频配音thinkSound_1944040041750597634.json, 音频生成/音频生成/ThinkSound_视频配音_1945061836188237825.json, 音频生成/音频生成/【gen全能视频Si】thinksound视频自动配音_1960925313461096449.json, 音频生成/音频生成/视频自动配音 HunyuanFoley_1943716345018191873.json, 音频生成/音频生成/视频自动配音 HunyuanFoley_1962811677538430977.json]
+members: [视频生成/文生视频/Seedance2.0  文生视频-不用排队_2048435469758767106.json, 视频生成/文生视频/Seedance2.0 Fast 文生视频-不用排队_2048319192440512513.json, 视频生成/文生视频/地表最强超能视频2.0-文生视频-不用排队（真人支持）_2037726847458353153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_83
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/视频配音thinkSound_1944040041750597634.json、音频生成/音频生成/ThinkSound_视频配音_1945061836188237825.json、音频生成/音频生成/【gen全能视频Si】thinksound视频自动配音_1960925313461096449.json、音频生成/音频生成/视频自动配音 HunyuanFoley_1943716345018191873.json、音频生成/音频生成/视频自动配音 HunyuanFoley_1962811677538430977.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0  文生视频-不用排队_2048435469758767106.json、视频生成/文生视频/Seedance2.0 Fast 文生视频-不用排队_2048319192440512513.json、视频生成/文生视频/地表最强超能视频2.0-文生视频-不用排队（真人支持）_2037726847458353153.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `GODMT_GetLength`
-- `GetImagesFromBatchIndexed`
+全部 3 个 workflow 都包含：
+- `CustomAddLabel`
 - `GetVideoComponents`
-- `Int2String`
-- `LoadVideo`
-- `MathExpression|pysssss`
-- `MiniCPM_VQA_Polished`
-- `Text Concatenate`
+- `SaveVideo`
+- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
-- `PrimitiveString` —— 4/5 个有
-- `RunningHub ThinkSound` —— 4/5 个有
-- `SaveVideo` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `HunyuanVideoFoley` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `ShowText` —— 1/5 个有
-- `String` —— 1/5 个有
-- `VHS_VideoCombine` —— 1/5 个有
+- `RH_RhartVideoSparkvideo20TextToVideo` —— 2/3 个有
+- `RH_RhartVideoSparkvideo20FastTextToVideo` —— 1/3 个有
 
 ## 典型参数
 

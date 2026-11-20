@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_1053
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.8855
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker, RunningHub_VoxCPM_MultiSpeaker_ListReference, SaveAudio]
+coverage: 0.977667
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2 音色生成加克隆_2062446997575127041.json, 音频生成/音频生成/VoxCPM2_2046154672154611714.json, 音频生成/音频生成/VoxCPM2_声音复刻、多人对话_2046544038047784961.json, 音频生成/音频生成/VoxCPM2语音克隆音色设计全能新王者_2046583137286758402.json]
+members: [图片生成/图生图/短剧分镜全能图片G2_2052630118471872514.json, 图片生成/文生图/Image 2图像模型_2048040470286180353.json, 图片生成/文生图/鸡屁替2_全能图像G2.0-全家桶_文_图生_2K_4k_官方_低价_2047113685168037889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1053
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 音色生成加克隆_2062446997575127041.json、音频生成/音频生成/VoxCPM2_2046154672154611714.json、音频生成/音频生成/VoxCPM2_声音复刻、多人对话_2046544038047784961.json、音频生成/音频生成/VoxCPM2语音克隆音色设计全能新王者_2046583137286758402.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/短剧分镜全能图片G2_2052630118471872514.json、图片生成/文生图/Image 2图像模型_2048040470286180353.json、图片生成/文生图/鸡屁替2_全能图像G2.0-全家桶_文_图生_2K_4k_官方_低价_2047113685168037889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `RunningHub_VoxCPM_LoadModel`
-- `RunningHub_VoxCPM_MultiSpeaker`
-- `RunningHub_VoxCPM_MultiSpeaker_ListReference`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/4 个有
-- `Text Multiline` —— 1/4 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `RH_RhartImageV1TextToImage` —— 1/3 个有
 
 ## 典型参数
 

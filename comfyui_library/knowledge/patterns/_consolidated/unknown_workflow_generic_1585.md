@@ -3,35 +3,43 @@ name: unknown_workflow_generic_1585
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.909
-common_nodes: [InstantCharacterGenerate, InstantCharacterLoadModel, LoadImage, RH_LLMAPI_NODE, RunningHub_Omini_Subject, SaveImage, TextBox, easy cleanGpuUsed, easy showAnything]
+coverage: 0.872
+common_nodes: [CR Prompt Text, Int, LoadImage, PreviewImage, RH_LLMAPI_Pro_Node, SaveImage, Switch, Text, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/InstantCharacter VS OminiControl_1914521770274058242.json, 图片生成/图生图/角色一致性InstantCharacter+VS+OminiControl_1914668086782324737.json]
+members: [图片生成/图生图/🦖25宫格分镜_2027984658763354114.json, 图片生成/文生图/🦖9宫格分镜_2042530499960250369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1585
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/InstantCharacter VS OminiControl_1914521770274058242.json、图片生成/图生图/角色一致性InstantCharacter+VS+OminiControl_1914668086782324737.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/🦖25宫格分镜_2027984658763354114.json、图片生成/文生图/🦖9宫格分镜_2042530499960250369.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `InstantCharacterGenerate`
-- `InstantCharacterLoadModel`
+- `CR Prompt Text`
+- `Int`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RunningHub_Omini_Subject`
+- `PreviewImage`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `TextBox`
-- `easy cleanGpuUsed`
+- `Switch`
+- `Text`
 - `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/2 个有
+- `RH_DolaSeedream50ProImageToImage` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `StringConcatenate` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `TwoWaySwitch` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,45 +1,41 @@
 ---
 name: unknown_workflow_upscale_vae_41
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.7518
-common_nodes: [LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.773667
+common_nodes: [GuHaiAutoImageSplit, Image Comparer (rgthree), LayerUtility: Integer, LoadImage, PreviewImage, PrimitiveBoolean, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [平台全量/A.纯放大_2021840360942604289.json, 平台全量/▶SeedVR2图像放大_2045074853597810690.json, 平台全量/▶SeedVR2无损高清放大_2034983520405299202.json, 平台全量/▶无损高清放大4k可跑_2001472869601341441.json, 平台全量/【晨晨的AI应用包002】图片SeedVR2放大_2011285505522016258.json]
+members: [图片生成/图生图/九宫格分镜图切割+高清放大_2056538757553278978.json, 图片生成/图生图/九宫格分镜图切割+高清放大_2100409520630624258.json, 图片生成/图生图/分镜宫格图切割+高清放大_2056195168637865986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_41
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/A.纯放大_2021840360942604289.json、平台全量/▶SeedVR2图像放大_2045074853597810690.json、平台全量/▶SeedVR2无损高清放大_2034983520405299202.json、平台全量/▶无损高清放大4k可跑_2001472869601341441.json、平台全量/【晨晨的AI应用包002】图片SeedVR2放大_2011285505522016258.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/九宫格分镜图切割+高清放大_2056538757553278978.json、图片生成/图生图/九宫格分镜图切割+高清放大_2100409520630624258.json、图片生成/图生图/分镜宫格图切割+高清放大_2056195168637865986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `GuHaiAutoImageSplit`
+- `Image Comparer (rgthree)`
+- `LayerUtility: Integer`
 - `LoadImage`
 - `PreviewImage`
+- `PrimitiveBoolean`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/5 个有
-- `ImageScaleToTotalPixels` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `LayerUtility: ImageReel` —— 2/5 个有
-- `LayerUtility: ImageReelComposit` —— 2/5 个有
-- `Float` —— 1/5 个有
-- `GetImage` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `MinNode` —— 1/5 个有
+- `Int` —— 2/3 个有
 
 ## 典型参数
 

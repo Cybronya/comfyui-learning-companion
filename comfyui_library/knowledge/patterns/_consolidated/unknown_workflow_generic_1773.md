@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1773
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [ImageBatchOneOrMore, KOOK_SaveJPGImage, LayerColor: Brightness & Contrast, LoadImage, RHHiddenNodes]
+coverage: 0.798
+common_nodes: [IndexTTS2_MultiTalk, IndexTTS2_SpeakerEmotionConfig, LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/电商主图  去灰提亮 增加视觉冲击_2081278219482918914.json, 平台全量/电商主图和详情 去灰提亮【1张图片1RH币】_2049539572001939457.json]
+members: [音频生成/音频生成/4人语音对话-IndexTTS2_1966718865164152834.json, 音频生成/音频生成/IndexTTS2四人语音克隆（可调节情绪）_1967092016792395778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1773
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商主图  去灰提亮 增加视觉冲击_2081278219482918914.json、平台全量/电商主图和详情 去灰提亮【1张图片1RH币】_2049539572001939457.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/4人语音对话-IndexTTS2_1966718865164152834.json、音频生成/音频生成/IndexTTS2四人语音克隆（可调节情绪）_1967092016792395778.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageBatchOneOrMore`
-- `KOOK_SaveJPGImage`
-- `LayerColor: Brightness & Contrast`
-- `LoadImage`
-- `RHHiddenNodes`
+- `IndexTTS2_MultiTalk`
+- `IndexTTS2_SpeakerEmotionConfig`
+- `LoadAudio`
+- `SaveAudio`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `DetailTransfer` —— 1/2 个有
-- `LayerColor: AutoBrightness` —— 1/2 个有
+- `IndexTTS2_ModelManager` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

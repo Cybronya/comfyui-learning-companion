@@ -3,38 +3,35 @@ name: unknown_workflow_generic_1530
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.883
-common_nodes: [LoadImage, SaveImage, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.778
+common_nodes: [GetImageSize, Image Comparer (rgthree), LayerStyle: ColorOverlay V2, LayerUtility: ColorImage, LoadImage, LoadRembgByBiRefNetModel, PreviewImage, RembgByBiRefNet, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/minimax 视频提示词_2084603841881927681.json, 图片生成/反推提示词/qwen3反推_2031249324046295042.json]
+members: [图片生成/图生图/抠图之王Birefnet_一键抠图工作流_1998740736449335297.json, 图片生成/文生图/ComfyUI之抠图之王Birefnet II抠图工作流_2001318570191618049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1530
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/minimax 视频提示词_2084603841881927681.json、图片生成/反推提示词/qwen3反推_2031249324046295042.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/抠图之王Birefnet_一键抠图工作流_1998740736449335297.json、图片生成/文生图/ComfyUI之抠图之王Birefnet II抠图工作流_2001318570191618049.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `LayerStyle: ColorOverlay V2`
+- `LayerUtility: ColorImage`
 - `LoadImage`
+- `LoadRembgByBiRefNetModel`
+- `PreviewImage`
+- `RembgByBiRefNet`
 - `SaveImage`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ImageBatchMulti` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

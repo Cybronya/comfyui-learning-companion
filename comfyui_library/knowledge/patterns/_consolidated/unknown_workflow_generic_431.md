@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_431
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.818857
-common_nodes: [HYPIRImageRestoration, LoadImage, SaveImage]
+coverage: 0.783333
+common_nodes: [LoadImage, Qwen3_VQA, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/Hypir高清方大_1958615133377425409.json, 图片生成/图生图/一键4K高清-HYPIR_1951702848679694337.json, 图片生成/图生图/超强一键4K高清-HYPIR_1953382286504939522.json, 图片生成/图生图/超强一键4K高清-HYPIR_1957740835741822978.json, 平台全量/HYPER一键超清_1962854275221270530.json, 平台全量/HYPIR 高级修复 _ 放大_1992815166979108865.json, 平台全量/一键图像4K高清放大-HYPIR（mysell）_1954431504887771138.json]
+members: [图片生成/反推提示词/千府AI-反推JSON提示词-Qwen3VL_2020037405838942210.json, 图片生成/反推提示词/图片反推提示词_2051916282529894401.json, 图片生成/反推提示词/提示词反推_2044030137276043265.json, 图片生成/图生图/image.image_2069326978557235202.json, 图片生成/图生图/mage.image_2069658845688975362.json, 图片生成/图生图/图片描述_2069323228547477506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_431
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Hypir高清方大_1958615133377425409.json、图片生成/图生图/一键4K高清-HYPIR_1951702848679694337.json、图片生成/图生图/超强一键4K高清-HYPIR_1953382286504939522.json、图片生成/图生图/超强一键4K高清-HYPIR_1957740835741822978.json、平台全量/HYPER一键超清_1962854275221270530.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/千府AI-反推JSON提示词-Qwen3VL_2020037405838942210.json、图片生成/反推提示词/图片反推提示词_2051916282529894401.json、图片生成/反推提示词/提示词反推_2044030137276043265.json、图片生成/图生图/image.image_2069326978557235202.json、图片生成/图生图/mage.image_2069658845688975362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `HYPIRImageRestoration`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `Qwen3_VQA`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 6/7 个有
-- `ImageConcatMulti` —— 4/7 个有
-- `ConstrainImage|pysssss` —— 1/7 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `Reverse_prompt_node` —— 1/6 个有
 
 ## 典型参数
 

@@ -3,33 +3,34 @@ name: unknown_workflow_sampler_62
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.755667
-common_nodes: [LBMSampler, LoadImage, LoadLBMModel, SaveImage]
+coverage: 0.833333
+common_nodes: [SaveAudio, SongGeneration_Sampler, SongGeneration_Stage1, SongGeneration_Stage2]
 problems: []
 missing: []
-members: [图片生成/图生图/照片打光_1922998771649531906.json, 平台全量/LBM协调光线_1922845969187225602.json, 平台全量/电商修图之图片打光_1925469414601183234.json]
+members: [音频生成/音频生成/AI歌曲生成_1950367419039662082.json, 音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json, 音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_62
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/照片打光_1922998771649531906.json、平台全量/LBM协调光线_1922845969187225602.json、平台全量/电商修图之图片打光_1925469414601183234.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI歌曲生成_1950367419039662082.json、音频生成/音频生成/SongGeneration音乐生成_1937460168747589634.json、音频生成/音频生成/SongGeneration音乐生成工作流V2_1937378199859052545.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LBMSampler`
-- `LoadImage`
-- `LoadLBMModel`
-- `SaveImage`
+- `SaveAudio`
+- `SongGeneration_Sampler`
+- `SongGeneration_Stage1`
+- `SongGeneration_Stage2`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,31 +3,31 @@ name: unknown_workflow_generic_1202
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.822333
-common_nodes: [RH_YouchuanTextToImageNiji6, SaveImage]
+coverage: 0.904667
+common_nodes: [LoadAudio, SaveAudio, SparkTTSClone, Text Multiline, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/悠船图生图-niji6_2080596827015045121.json, 图片生成/文生图/Youchuan_TextToImageNiji6_v6.0_2034593870482247681.json, 图片生成/文生图/悠船文生图-niji6_2080619618204479489.json]
+members: [音频生成/音频生成/SparkTTS语音克隆+文本转语音-风行AI_2001279382247309314.json, 音频生成/音频生成/SparkTTS语音克隆+文本转语音=B站艾橘溪_1961437800946188290.json, 音频生成/音频生成/SparkTTS语音克隆+文本转语音生成_1962033032519684097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1202
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/悠船图生图-niji6_2080596827015045121.json、图片生成/文生图/Youchuan_TextToImageNiji6_v6.0_2034593870482247681.json、图片生成/文生图/悠船文生图-niji6_2080619618204479489.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/SparkTTS语音克隆+文本转语音-风行AI_2001279382247309314.json、音频生成/音频生成/SparkTTS语音克隆+文本转语音=B站艾橘溪_1961437800946188290.json、音频生成/音频生成/SparkTTS语音克隆+文本转语音生成_1962033032519684097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RH_YouchuanTextToImageNiji6`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/3 个有
+- `LoadAudio`
+- `SaveAudio`
+- `SparkTTSClone`
+- `Text Multiline`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

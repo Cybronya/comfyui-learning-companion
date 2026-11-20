@@ -1,41 +1,34 @@
 ---
 name: unknown_workflow_generic_555
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.826167
-common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
+coverage: 0.8688
+common_nodes: [AIO_Preprocessor, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2高清放大工作流_1992496783276437506.json, 图片生成/图生图/Seedvr高清放大_1993206227960266753.json, 图片生成/图生图/image_SeedVR2_模型放大_图片_2014761023877685249.json, 图片生成/图生图/seedvr2高清放大_1959466074016264193.json, 图片生成/图生图/全能图片V1 2 & Pro 全能图片V1 2 & Pro - 双通道分离_1993155103792316418.json, 图片生成/图生图/放大_2081305934164480002.json]
+members: [图片生成/图生图/AUX-Preprocessor_2068683667567890433.json, 图片生成/图生图/【CQ808】深度图生成_2054508777520549890.json, 图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054415809010774018.json, 图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054428621338619905.json, 图片生成/图生图/生成线稿工作流_1973003798635483138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_555
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SeedVR2高清放大工作流_1992496783276437506.json、图片生成/图生图/Seedvr高清放大_1993206227960266753.json、图片生成/图生图/image_SeedVR2_模型放大_图片_2014761023877685249.json、图片生成/图生图/seedvr2高清放大_1959466074016264193.json、图片生成/图生图/全能图片V1 2 & Pro 全能图片V1 2 & Pro - 双通道分离_1993155103792316418.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/AUX-Preprocessor_2068683667567890433.json、图片生成/图生图/【CQ808】深度图生成_2054508777520549890.json、图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054415809010774018.json、图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054428621338619905.json、图片生成/图生图/生成线稿工作流_1973003798635483138.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `LoadImage`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/6 个有
-- `SeedVR2ExtraArgs` —— 4/6 个有
-- `ImageScaleBy` —— 3/6 个有
-- `GetNode` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
-- `SetNode` —— 1/6 个有
+- `MakeListNode` —— 2/5 个有
 
 ## 典型参数
 

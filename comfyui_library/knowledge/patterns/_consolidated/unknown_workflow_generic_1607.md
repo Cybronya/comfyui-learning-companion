@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1607
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.583
-common_nodes: [Anything Everywhere, BiRefNet_Hugo, InvertMask, JoinImageWithAlpha, LoadImage, MaskPreview, PreviewImage, SDMatteApply, SaveImage]
+coverage: 0.866
+common_nodes: [CR Prompt Text, HAIGC_LoadImagesFromZip, Int, RunningHubRVCOneClickTrain, ShellAgentPluginOutputText, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/SDMatte 高精度抠图 蒲公英_1957733733205114881.json, 平台全量/SDMatte 高精度抠图 蒲公英_1957628646452293633.json]
+members: [图片生成/文生图/RVC模型训练器_2101876081258229762.json, 音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1607
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SDMatte 高精度抠图 蒲公英_1957733733205114881.json、平台全量/SDMatte 高精度抠图 蒲公英_1957628646452293633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RVC模型训练器_2101876081258229762.json、音频生成/音频生成/心然·寻源-RVC模型训练器_2100912929473392642.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `BiRefNet_Hugo`
-- `InvertMask`
-- `JoinImageWithAlpha`
-- `LoadImage`
-- `MaskPreview`
-- `PreviewImage`
-- `SDMatteApply`
-- `SaveImage`
+- `CR Prompt Text`
+- `HAIGC_LoadImagesFromZip`
+- `Int`
+- `RunningHubRVCOneClickTrain`
+- `ShellAgentPluginOutputText`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_682
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
+coverage: 0.875
+common_nodes: [LoadImage, SaveImage, workflow>光影优化V3]
 problems: []
 missing: []
-members: [图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json, 图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json, 图片生成/图生图/xxx-image2_2053839405277827073.json, 图片生成/图生图/提取头部_2095356769915727873.json, 图片生成/图生图/道具图生成_2094712567414476802.json]
+members: [图片生成/反推提示词/06gtpzjgy（gai）_2055286948872376322.json, 图片生成/反推提示词/6phzimoovsq_2059683158005731330.json, 图片生成/图生图/光影优化-给图片添加自然光影_2053001754442252289.json, 图片生成/图生图/光影优化V3（个人原创）_2037109850139795457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_682
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片G--image-单图编辑_2047138899423662081.json、图片生成/图生图/YJ-APP-全能图片G--image-双图编辑_2047127324696518658.json、图片生成/图生图/xxx-image2_2053839405277827073.json、图片生成/图生图/提取头部_2095356769915727873.json、图片生成/图生图/道具图生成_2094712567414476802.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/06gtpzjgy（gai）_2055286948872376322.json、图片生成/反推提示词/6phzimoovsq_2059683158005731330.json、图片生成/图生图/光影优化-给图片添加自然光影_2053001754442252289.json、图片生成/图生图/光影优化V3（个人原创）_2037109850139795457.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `Text`
+- `workflow>光影优化V3`
 
 **可变部分**（部分 workflow 才有）：
-- `TextConcatenator` —— 3/5 个有
-- `ratio_selector` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `ShellAgentPluginOutputText` —— 1/4 个有
 
 ## 典型参数
 

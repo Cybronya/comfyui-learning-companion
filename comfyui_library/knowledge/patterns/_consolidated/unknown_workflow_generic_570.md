@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_generic_570
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.948667
-common_nodes: [AddBackgroundNode, CR Image Border, ConstrainImage|pysssss, HivisionNode, ImageConcatMulti, LoadImage, SaveImage, ZHHivisionParamsNode]
+coverage: 0.9142
+common_nodes: [LoadImage, SaveImage, Textbox]
 problems: []
 missing: []
-members: [图片生成/图生图/全能image2证件照一键定制（尺寸-颜色-可选）_2049779561692405762.json, 图片生成/图生图/证件照一键定制（尺寸-颜色-可选）_2040779713601343490.json, 平台全量/一键证件照（尺寸底色+发型服装一键可调）_2016802474048364546.json, 平台全量/一键证件照（自动美颜+换发型_服装）证件照   一键在线运行 HivisionIDPhotos_2003633764746051585.json, 平台全量/一键证件照（自动美颜+换发型_服装）证件照   一键在线运行 HivisionIDPhotos_2082752940028293122.json, 平台全量/证件照 _ 一键在线运行_1890366219684597761.json]
+members: [图片生成/图生图/Wan 2.7图像编辑_2041793103803195393.json, 图片生成/图生图/一键生成：三视图+结构拆解+产品包装设计_2028333514961199105.json, 图片生成/图生图/产品三视图（专属定制工作流 如有需要请联系作者~）_2027977280902930433.json, 图片生成/图生图/强大的图像编辑 _  全能图片V12.0 🍌_1999017759847632897.json, 图片生成/图生图/撕开封印_2042846750888693762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_570
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能image2证件照一键定制（尺寸-颜色-可选）_2049779561692405762.json、图片生成/图生图/证件照一键定制（尺寸-颜色-可选）_2040779713601343490.json、平台全量/一键证件照（尺寸底色+发型服装一键可调）_2016802474048364546.json、平台全量/一键证件照（自动美颜+换发型_服装）证件照   一键在线运行 HivisionIDPhotos_2003633764746051585.json、平台全量/一键证件照（自动美颜+换发型_服装）证件照   一键在线运行 HivisionIDPhotos_2082752940028293122.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Wan 2.7图像编辑_2041793103803195393.json、图片生成/图生图/一键生成：三视图+结构拆解+产品包装设计_2028333514961199105.json、图片生成/图生图/产品三视图（专属定制工作流 如有需要请联系作者~）_2027977280902930433.json、图片生成/图生图/强大的图像编辑 _  全能图片V12.0 🍌_1999017759847632897.json、图片生成/图生图/撕开封印_2042846750888693762.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AddBackgroundNode`
-- `CR Image Border`
-- `ConstrainImage|pysssss`
-- `HivisionNode`
-- `ImageConcatMulti`
+全部 5 个 workflow 都包含：
 - `LoadImage`
 - `SaveImage`
-- `ZHHivisionParamsNode`
+- `Textbox`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Jimeng4_Image2Image` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
-- `RH_RhartImageNG31FlashLiteImageToImage` —— 1/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
+- `RH_AlibabaWan27ImageEditPro` —— 1/5 个有
+- `StringReplace` —— 1/5 个有
 
 ## 典型参数
 

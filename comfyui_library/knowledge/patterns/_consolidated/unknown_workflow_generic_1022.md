@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_1022
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.78675
-common_nodes: [LoadImage, PreviewAny, RH_Veo3_Image2Video, SaveVideo]
+coverage: 0.815
+common_nodes: [Fast Groups Bypasser (rgthree), ImageScale, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, easy imageSize]
 problems: []
 missing: []
-members: [视频生成/图生视频/首尾帧全能视频V3.1首尾帧图生视频_1980555612541112322.json, 视频生成/图生视频/🦖全能视频V3.1 Image2Video_1980089000780271618.json, 视频生成/文生视频/全能视频V3.1首尾帧视频工作流_2096563117215010818.json, 视频生成/文生视频/首尾帧视频（全能视频V3.1）_1902533703103361026.json]
+members: [图片生成/图生图/全能图片V1工作流V2_1964342391165603842.json, 图片生成/图生图/全能图片V1漫展 Coser 海报_1981983555289006081.json, 图片生成/图生图/漫展 coser 合照_1981985352799920129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1022
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/首尾帧全能视频V3.1首尾帧图生视频_1980555612541112322.json、视频生成/图生视频/🦖全能视频V3.1 Image2Video_1980089000780271618.json、视频生成/文生视频/全能视频V3.1首尾帧视频工作流_2096563117215010818.json、视频生成/文生视频/首尾帧视频（全能视频V3.1）_1902533703103361026.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1工作流V2_1964342391165603842.json、图片生成/图生图/全能图片V1漫展 Coser 海报_1981983555289006081.json、图片生成/图生图/漫展 coser 合照_1981985352799920129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `ImageScale`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewAny`
-- `RH_Veo3_Image2Video`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `ShellAgentPluginOutputText` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `easy imageSize`
 
 ## 典型参数
 

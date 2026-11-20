@@ -3,56 +3,39 @@ name: unknown_workflow_video_sampler_clip_186
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.790667
-common_nodes: [ImageConcanate, ImageSizeInfo, JWImageResizeByLongerSide, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MarwanFaceCropping, PreviewImage, TTP_Expand_And_Mask, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, LoadImage, TurboDiffusionI2VSampler, TurboWanModelLoader, TurboWanVAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/通义万相KISS图生视频WAN工作流V1_1895031951948972033.json, 视频生成/图生视频/给偶像一个爱的抱抱V2(修复报错及稳定性)_1895076353941307393.json, 视频生成/图生视频/赛博KISS图生视频WAN工作流V2（修复报错和稳定性）_1894963534298546178.json]
+members: [视频生成/图生视频/Comfyui_turbodiffusion 基础流_2004011027131998210.json, 视频生成/图生视频/Turbodiffusion 720P图生视频_2005307433616637953.json, 视频生成/文生视频/图生视频Turbodiffusion_一键实用版_2023029733558067202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_186
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/通义万相KISS图生视频WAN工作流V1_1895031951948972033.json、视频生成/图生视频/给偶像一个爱的抱抱V2(修复报错及稳定性)_1895076353941307393.json、视频生成/图生视频/赛博KISS图生视频WAN工作流V2（修复报错和稳定性）_1894963534298546178.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Comfyui_turbodiffusion 基础流_2004011027131998210.json、视频生成/图生视频/Turbodiffusion 720P图生视频_2005307433616637953.json、视频生成/文生视频/图生视频Turbodiffusion_一键实用版_2023029733558067202.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ImageConcanate`
-- `ImageSizeInfo`
-- `JWImageResizeByLongerSide`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerUtility: PurgeVRAM`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `MarwanFaceCropping`
-- `PreviewImage`
-- `TTP_Expand_And_Mask`
+- `TurboDiffusionI2VSampler`
+- `TurboWanModelLoader`
+- `TurboWanVAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 2/3 个有
-- `WanVideoExperimentalArgs` —— 2/3 个有
-- `WanVideoSLG` —— 2/3 个有
-- `WanVideoTeaCache` —— 2/3 个有
-- `Note _O` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `IfInnerExecute` —— 1/3 个有
+- `ImpactInt` —— 1/3 个有
+- `easy compare` —— 1/3 个有
 
 ## 典型参数
 

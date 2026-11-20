@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_511
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.960571
-common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 1
+common_nodes: [RH_RhartVideoGImageToVideo, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json, 音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json, 音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json, 音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json, 音频生成/音频生成/文字控制 音色+情绪参考_2035374770505650177.json, 音频生成/音频生成/文字控制 音色+情绪参考_2083374388392583169.json, 音频生成/音频生成/音色克隆-基于IndexTTS_2005256954396241922.json]
+members: [视频生成/文生视频/GOZAO-文图生视频-0图_2078368647386587138.json, 视频生成/文生视频/GOZAO-文图生视频-1图_2078370079468777474.json, 视频生成/文生视频/GOZAO-文图生视频-2图_2078379042386046978.json, 视频生成/文生视频/GOZAO-文图生视频-3图_2078380576075247617.json, 视频生成/文生视频/GOZAO-文图生视频-4图_2078382913359540225.json, 视频生成/文生视频/GOZAO-文图生视频-5图_2078384505290842114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_511
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_1967574110937182209.json、音频生成/音频生成/INDEX TTS 2.0声音克隆最强王者_2025923155293900802.json、音频生成/音频生成/Indextts2.0声音克隆王者归来（四种玩法汇总）_1965684268200509441.json、音频生成/音频生成/indextts2.0声音克隆王炸级更新（四种玩法汇总）_1965625164736118786.json、音频生成/音频生成/文字控制 音色+情绪参考_2035374770505650177.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/GOZAO-文图生视频-0图_2078368647386587138.json、视频生成/文生视频/GOZAO-文图生视频-1图_2078370079468777474.json、视频生成/文生视频/GOZAO-文图生视频-2图_2078379042386046978.json、视频生成/文生视频/GOZAO-文图生视频-3图_2078380576075247617.json、视频生成/文生视频/GOZAO-文图生视频-4图_2078382913359540225.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `RH_RhartVideoGImageToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 4/7 个有
-- `LoadVideo` —— 2/7 个有
+- `LoadImage` —— 5/6 个有
 
 ## 典型参数
 

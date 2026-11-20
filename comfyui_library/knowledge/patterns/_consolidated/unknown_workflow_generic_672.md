@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_672
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.3608
-common_nodes: [JjkText, LoadImage, PlaySound|pysssss, PreviewImage, SaveImage, 孤海注释]
+coverage: 0.816
+common_nodes: [GeminiVideoOmniV2, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850.json, 图片生成/图生图/RH全能V8.2_美学艺术图像模型_文生图+图生图_2100141125607706626.json, 图片生成/文生图/MJ悠船V7基础流_2058747215417528321.json, 图片生成/文生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2095314632121610241.json, 图片生成/文生图/RH全能V8.2_美学艺术图像模型_文生图+图生图_2100062487323435009.json]
+members: [comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_i2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_r2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_t2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_672
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850.json、图片生成/图生图/RH全能V8.2_美学艺术图像模型_文生图+图生图_2100141125607706626.json、图片生成/文生图/MJ悠船V7基础流_2058747215417528321.json、图片生成/文生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2095314632121610241.json、图片生成/文生图/RH全能V8.2_美学艺术图像模型_文生图+图生图_2100062487323435009.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_i2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_r2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_t2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：36%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `SaveImage`
-- `孤海注释`
+全部 4 个 workflow 都包含：
+- `GeminiVideoOmniV2`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_YouchuanTextToImageV82Fast` —— 4/5 个有
-- `RH_Midjourney` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
+- `LoadImage` —— 3/4 个有
+- `PreviewAny` —— 1/4 个有
+- `b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5` —— 1/4 个有
 
 ## 典型参数
 

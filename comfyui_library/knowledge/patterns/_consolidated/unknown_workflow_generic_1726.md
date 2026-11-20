@@ -3,38 +3,31 @@ name: unknown_workflow_generic_1726
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9115
-common_nodes: [Image Comparer (rgthree), ImageComposite+, LayerMask: LoadSegmentAnythingModels, LayerMask: MaskPreview, LayerMask: SegmentAnythingUltra V3, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.8
+common_nodes: [LoadImage, PreviewImage, RH_Jimeng4_Image2Image, RH_Jimeng_Image2Video_V2, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/宠物变假模特LORA数据集素材_1991486638113112066.json, 图片生成/图生图/宠物变假模特LORA数据集素材_1991497280823967746.json]
+members: [视频生成/图生视频/太极大师 豆包 seedream4.5转绘+seedance1.0视频推理_1998431269535014914.json, 视频生成/图生视频/太空梦想家 豆包 seedream4.5转绘+seedance1.0视频推理_1998308744410882049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1726
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/宠物变假模特LORA数据集素材_1991486638113112066.json、图片生成/图生图/宠物变假模特LORA数据集素材_1991497280823967746.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/太极大师 豆包 seedream4.5转绘+seedance1.0视频推理_1998431269535014914.json、视频生成/图生视频/太空梦想家 豆包 seedream4.5转绘+seedance1.0视频推理_1998308744410882049.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageComposite+`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: MaskPreview`
-- `LayerMask: SegmentAnythingUltra V3`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Rembg (Remove Background)` —— 1/2 个有
+- `PreviewImage`
+- `RH_Jimeng4_Image2Image`
+- `RH_Jimeng_Image2Video_V2`
+- `SaveVideo`
 
 ## 典型参数
 

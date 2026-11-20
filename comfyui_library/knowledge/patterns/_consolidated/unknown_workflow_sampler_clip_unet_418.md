@@ -1,34 +1,36 @@
 ---
 name: unknown_workflow_sampler_clip_unet_418
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.864333
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 2
+level: weak
+coverage: 0.8165
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/写实风格图生图_1905140867475378177.json, 图片生成/文生图/FLUX SRPO 文生图 _ Joy 3 反推文生图，腾讯开源新模型！真实性和美学质量提高超3倍！_1966878604049125377.json, 图片生成/文生图/WaveSpeed FLUX工作流加速神器_1879120968877830146.json]
+members: [图片生成/图生图/01-flux2（三视图）_2015672899671166977.json, 图片生成/文生图/【遇见AI】FLUX2基础文生图_1993593869338165249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_418
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/写实风格图生图_1905140867475378177.json、图片生成/文生图/FLUX SRPO 文生图 _ Joy 3 反推文生图，腾讯开源新模型！真实性和美学质量提高超3倍！_1966878604049125377.json、图片生成/文生图/WaveSpeed FLUX工作流加速神器_1879120968877830146.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/01-flux2（三视图）_2015672899671166977.json、图片生成/文生图/【遇见AI】FLUX2基础文生图_1993593869338165249.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 2 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `ModelSamplingFlux`
+- `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
@@ -37,19 +39,13 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyFBCacheOnModel` —— 2/3 个有
-- `EmptySD3LatentImage` —— 2/3 个有
-- `FluxGuidance` —— 2/3 个有
-- `LayerUtility: JoyCaptionBeta1` —— 2/3 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `EnhancedCompileModel` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
-- `Lora Loader Stack (rgthree)` —— 1/3 个有
-- `String Literal` —— 1/3 个有
-- `Text Concatenate` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
+- `ImpactConditionalBranch` —— 1/2 个有
+- `LayerUtility: ImageReel` —— 1/2 个有
+- `LayerUtility: ImageReelComposit` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `Primitive boolean [Crystools]` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `Seed (rgthree)` —— 1/2 个有
 
 ## 典型参数
 
@@ -61,4 +57,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_sampler_73
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub OmniWeaving Loader, SaveVideo]
+frequency: 2
+level: weak
+coverage: 0.9585
+common_nodes: [EasyFunction_Lite, LoadImage, SaveImage, Storydiffusion_Model_Loader, Storydiffusion_Sampler]
 problems: []
 missing: []
-members: [视频生成/图生视频/OmniWeaving图生视频I2V_2042119826201649153.json, 视频生成/图生视频/OmniWeaving多参图生视频（最多4参考图）_2042119081003847682.json, 视频生成/图生视频/OmniWeaving首尾帧FFL2V_2042124474220290049.json]
+members: [图片生成/图生图/Infinite You人物一致性故事分镜工作流_1905307560910442497.json, 图片生成/图生图/InfiniteYou StoryDiffusion_1904953215173971969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_73
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/OmniWeaving图生视频I2V_2042119826201649153.json、视频生成/图生视频/OmniWeaving多参图生视频（最多4参考图）_2042119081003847682.json、视频生成/图生视频/OmniWeaving首尾帧FFL2V_2042124474220290049.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Infinite You人物一致性故事分镜工作流_1905307560910442497.json、图片生成/图生图/InfiniteYou StoryDiffusion_1904953215173971969.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
+全部 2 个 workflow 都包含：
+- `EasyFunction_Lite`
 - `LoadImage`
-- `RunningHub OmniWeaving Loader`
-- `SaveVideo`
+- `SaveImage`
+- `Storydiffusion_Model_Loader`
+- `Storydiffusion_Sampler`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub OmniWeaving Sampler(I2V)` —— 1/3 个有
-- `RunningHub OmniWeaving Sampler(Interpolation)` —— 1/3 个有
-- `RunningHub OmniWeaving Sampler(Ref2V)` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 
@@ -44,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

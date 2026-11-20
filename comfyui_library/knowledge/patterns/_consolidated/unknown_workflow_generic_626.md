@@ -1,33 +1,34 @@
 ---
 name: unknown_workflow_generic_626
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.875
-common_nodes: [FishS2TTS, SaveAudio]
+coverage: 1
+common_nodes: [LoadImage, RH_Kling25_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio S2 TTS--语音生成_2033210073123659777.json, 音频生成/音频生成/FishAudio S2 TTS语音生成_2033118271662198785.json, 音频生成/音频生成/FishAudio S2 TTS语音生成_2033497444893335553.json, 音频生成/音频生成/FishAudio S2 TTS语音生成_2040334032201850881.json, 音频生成/音频生成/FishAudio S2 语音生成_2033361939409145857.json, 音频生成/音频生成/情感标签-文本转语音-FishAudio S2 TTS_2033180769274830850.json]
+members: [视频生成/图生视频/Kling_25_Image2Video_v2.5_2033747494940712961.json, 视频生成/图生视频/可灵 Kling v2.5图生视频 (Turbo-Std)_2015989000204460034.json, 视频生成/图生视频/可灵2.5 Turbo-Std图生视频-阿浩_2041082785955319810.json, 视频生成/图生视频/可灵2.5图生视频Klingv2.5_1988180318677024770.json, 视频生成/图生视频/可灵图生视频 V2.5 Turbo-Std(0.21_秒)_2039889505292914690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_626
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2 TTS--语音生成_2033210073123659777.json、音频生成/音频生成/FishAudio S2 TTS语音生成_2033118271662198785.json、音频生成/音频生成/FishAudio S2 TTS语音生成_2033497444893335553.json、音频生成/音频生成/FishAudio S2 TTS语音生成_2040334032201850881.json、音频生成/音频生成/FishAudio S2 语音生成_2033361939409145857.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Kling_25_Image2Video_v2.5_2033747494940712961.json、视频生成/图生视频/可灵 Kling v2.5图生视频 (Turbo-Std)_2015989000204460034.json、视频生成/图生视频/可灵2.5 Turbo-Std图生视频-阿浩_2041082785955319810.json、视频生成/图生视频/可灵2.5图生视频Klingv2.5_1988180318677024770.json、视频生成/图生视频/可灵图生视频 V2.5 Turbo-Std(0.21_秒)_2039889505292914690.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `FishS2TTS`
-- `SaveAudio`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `RH_Kling25_Image2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 5/6 个有
+- `GetRandomIntegerInRange` —— 1/5 个有
 
 ## 典型参数
 

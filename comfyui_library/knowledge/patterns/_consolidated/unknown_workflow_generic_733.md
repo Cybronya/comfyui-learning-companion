@@ -1,33 +1,41 @@
 ---
 name: unknown_workflow_generic_733
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.571
-common_nodes: [CR Text, LayerUtility: RoundedRectangle, PrimitiveInt, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.952
+common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, LayerMask: MaskPreview, LayerUtility: ImageCombineAlpha, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json, 平台全量/全能图片G_image2.0软件图标制作_2065038608842715137.json]
+members: [图片生成/图生图/一键抠图-透明背景_2069258206609760257.json, 图片生成/图生图/一键抠图-透明背景_2071503241636044802.json, 图片生成/图生图/五虎素材透明底图_2046146651005390849.json, 图片生成/图生图/线稿+扣图 全能图片2_2075064024932372481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_733
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json、图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json、平台全量/全能图片G_image2.0软件图标制作_2065038608842715137.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键抠图-透明背景_2069258206609760257.json、图片生成/图生图/一键抠图-透明背景_2071503241636044802.json、图片生成/图生图/五虎素材透明底图_2046146651005390849.json、图片生成/图生图/线稿+扣图 全能图片2_2075064024932372481.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Text`
-- `LayerUtility: RoundedRectangle`
-- `PrimitiveInt`
-- `RH_RhartImageG2TextToImage`
+全部 4 个 workflow 都包含：
+- `BRIA_RMBG_ModelLoader_Zho`
+- `BRIA_RMBG_Zho`
+- `LayerMask: MaskPreview`
+- `LayerUtility: ImageCombineAlpha`
+- `LoadImage`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `PreviewImage` —— 2/4 个有
+- `JWStringConcat` —— 1/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
+- `Text Input [Dream]` —— 1/4 个有
 
 ## 典型参数
 

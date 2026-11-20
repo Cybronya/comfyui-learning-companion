@@ -1,39 +1,46 @@
 ---
 name: unknown_workflow_generic_725
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.733
-common_nodes: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, RH_Nano_Banana2_Image2Image, SaveImage, Text Find and Replace, Textbox]
+coverage: 0.8295
+common_nodes: [CR Text, CR Text Concatenate, EG_ZZ_TMTX, GrowMaskWithBlur, ImageResize+, Int, JjkText, LoadImage, PreviewAny, PreviewImage, Qwen3_VQA_Plus, RH_Nano_Banana2_Image2Image, RMBG, Sa2VANodeTpl, SaveImage, SimpleMath+, easy imageCropFromMask, ttN concat]
 problems: []
 missing: []
-members: [图片生成/图生图/爆火日历拼贴_2018199541769572353.json, 图片生成/图生图/爆火日历拼贴_2033536167555112961.json, 图片生成/图生图/马年财神照一键生成器_2018959404229468161.json, 图片生成/文生图/2031240935438290946.json, 图片生成/文生图/灵感趋势_2032381412757741570.json]
+members: [图片生成/图生图/Z一键IP文创衍生品_1992810214971822081.json, 图片生成/图生图/一键文创产品衍生_2034878693360803842.json, 图片生成/图生图/不纳纳2 一键IP文创衍生品_2028743374336954370.json, 图片生成/图生图/图生图 文创产品衍生_2034547988042878978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_725
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/爆火日历拼贴_2018199541769572353.json、图片生成/图生图/爆火日历拼贴_2033536167555112961.json、图片生成/图生图/马年财神照一键生成器_2018959404229468161.json、图片生成/文生图/2031240935438290946.json、图片生成/文生图/灵感趋势_2032381412757741570.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Z一键IP文创衍生品_1992810214971822081.json、图片生成/图生图/一键文创产品衍生_2034878693360803842.json、图片生成/图生图/不纳纳2 一键IP文创衍生品_2028743374336954370.json、图片生成/图生图/图生图 文创产品衍生_2034547988042878978.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `CR Text Concatenate`
+- `EG_ZZ_TMTX`
+- `GrowMaskWithBlur`
+- `ImageResize+`
+- `Int`
+- `JjkText`
+- `LoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `Qwen3_VQA_Plus`
 - `RH_Nano_Banana2_Image2Image`
+- `RMBG`
+- `Sa2VANodeTpl`
 - `SaveImage`
-- `Text Find and Replace`
-- `Textbox`
-
-**可变部分**（部分 workflow 才有）：
-- `JWDatetimeString` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `easy showAnything` —— 4/5 个有
+- `SimpleMath+`
+- `easy imageCropFromMask`
+- `ttN concat`
 
 ## 典型参数
 

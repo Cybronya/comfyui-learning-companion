@@ -1,49 +1,39 @@
 ---
 name: unknown_workflow_generic_580
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.877333
-common_nodes: [Fast Groups Muter (rgthree), Image Comparer (rgthree), InspyrenetRembg, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerMask: SegmentAnythingUltra V2, LayerUtility: ImageCombineAlpha, LayerUtility: ImageRemoveAlpha, LoadImage, SaveImage]
+coverage: 0.8564
+common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/抠图_一键抠图王_1982503060440260610.json, 图片生成/图生图/最强抠图_指定物品抠图_移除背景_2066793905529638913.json, 平台全量/双抠图版本-可单图_批量_1951305753791508481.json, 平台全量/抠图丨当前最强抠图_1876479952211107842.json, 平台全量/最强抠图 指定物品抠图 移除背景_2066383567063699458.json, 平台全量/最强抠图丨导入图片一键抠图封装版本_1937709722461978625.json]
+members: [图片生成/图生图/一键生成电商产品多角度图_2033194396656607234.json, 图片生成/图生图/一键生成电影短剧漫剧分镜图_2033181472785440770.json, 图片生成/图生图/杨媛媛 相机直出图_2032008952333996033.json, 图片生成/图生图/韩文豪1_2031918176165961729.json, 视频生成/图生视频/9分镜图_2038856574608871426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_580
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/抠图_一键抠图王_1982503060440260610.json、图片生成/图生图/最强抠图_指定物品抠图_移除背景_2066793905529638913.json、平台全量/双抠图版本-可单图_批量_1951305753791508481.json、平台全量/抠图丨当前最强抠图_1876479952211107842.json、平台全量/最强抠图 指定物品抠图 移除背景_2066383567063699458.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键生成电商产品多角度图_2033194396656607234.json、图片生成/图生图/一键生成电影短剧漫剧分镜图_2033181472785440770.json、图片生成/图生图/杨媛媛 相机直出图_2032008952333996033.json、图片生成/图生图/韩文豪1_2031918176165961729.json、视频生成/图生视频/9分镜图_2038856574608871426.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `Image Comparer (rgthree)`
-- `InspyrenetRembg`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModel`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LayerUtility: ImageCombineAlpha`
-- `LayerUtility: ImageRemoveAlpha`
+全部 5 个 workflow 都包含：
 - `LoadImage`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ColorPicker` —— 4/6 个有
-- `BiRefNet_ModelLoader_Zho` —— 3/6 个有
-- `BiRefNet_Zho` —— 3/6 个有
-- `ArgosTranslateTextNode` —— 2/6 个有
-- `BaiduTranslateNode` —— 2/6 个有
-- `RH_Translator` —— 2/6 个有
-- `Int2Any_AS` —— 1/6 个有
-- `LoadImagesFromPath` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
+- `PromptBatchQueue` —— 4/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
+- `easy showAnything` —— 3/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `CR Text` —— 1/5 个有
 
 ## 典型参数
 

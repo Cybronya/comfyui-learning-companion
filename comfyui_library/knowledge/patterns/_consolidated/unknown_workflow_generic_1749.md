@@ -3,33 +3,34 @@ name: unknown_workflow_generic_1749
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8925
-common_nodes: [ImageConcanate, LoadImage, PreviewImage, SaveImage]
+coverage: 0.7915
+common_nodes: [CR Text, LoadImage, LoadVideo, RH_BytedanceSeedance20GlobalMiniMultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/昭君王_1904329618944331778.json, 平台全量/九张图直接合成九宫格_人设一致性锁死+多角色同框管理系统-1_2022890317480988674.json]
+members: [视频生成/文生视频/Seedance2.0+mini全能参考视频+全节点注释_2069729393471213570.json, 视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1749
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/昭君王_1904329618944331778.json、平台全量/九张图直接合成九宫格_人设一致性锁死+多角色同框管理系统-1_2022890317480988674.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0+mini全能参考视频+全节点注释_2069729393471213570.json、视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ImageConcanate`
+- `CR Text`
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `LoadVideo`
+- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Jimeng4_Image2Image` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
 
 ## 典型参数
 

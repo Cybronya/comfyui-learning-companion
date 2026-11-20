@@ -1,45 +1,40 @@
 ---
 name: unknown_workflow_generic_1044
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.78475
-common_nodes: [LoadAudio, NormalizeAudioLoudness, OmniVoiceLongformTTS, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, PrimitiveStringMultiline, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio, easy promptList]
+coverage: 0.762
+common_nodes: [LoadImage, PreviewImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/OmniVoice  声音工作室 _声音设计_克隆_单人多人文本配音_支持多语种_2104260955243896834.json, 音频生成/音频生成/OmniVoice TTS 音色设计-音色克隆-长文本配音-多人对话配音_2087023379034501121.json, 音频生成/音频生成/OmniVoice 语音克隆生成多人对话_2042042968219062273.json, 音频生成/音频生成/VividMuse OmniVoice 工作流合集_2041521160264880130.json]
+members: [图片生成/图生图/换装，换头，换身体，一步到位_2037368174110314498.json, 图片生成/图生图/电商必备 小红📕_抖🎵 爆款封面复刻【 1.0 】_2029004696811216897.json, 图片生成/文生图/骏马新程剧本分镜 9 宫格出图_2023098659730104322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1044
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/OmniVoice  声音工作室 _声音设计_克隆_单人多人文本配音_支持多语种_2104260955243896834.json、音频生成/音频生成/OmniVoice TTS 音色设计-音色克隆-长文本配音-多人对话配音_2087023379034501121.json、音频生成/音频生成/OmniVoice 语音克隆生成多人对话_2042042968219062273.json、音频生成/音频生成/VividMuse OmniVoice 工作流合集_2041521160264880130.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换装，换头，换身体，一步到位_2037368174110314498.json、图片生成/图生图/电商必备 小红📕_抖🎵 爆款封面复刻【 1.0 】_2029004696811216897.json、图片生成/文生图/骏马新程剧本分镜 9 宫格出图_2023098659730104322.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `NormalizeAudioLoudness`
-- `OmniVoiceLongformTTS`
-- `OmniVoiceMultiSpeakerTTS`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceVoiceDesignTTS`
-- `PrimitiveStringMultiline`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudio`
-- `easy promptList`
+全部 3 个 workflow 都包含：
+- `LoadImage`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `忽略多组孤海` —— 2/4 个有
-- `JWStringToFloat` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
+- `CR Prompt Text` —— 2/3 个有
+- `RH_LLMAPI_Pro_Node` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `easy imageConcat` —— 2/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `Text Concatenate` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_472
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.791
-common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.958333
+common_nodes: [RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/高清修复_2013057417436733441.json, 图片生成/文生图/AI漫剧分镜工作流-四宫格九宫格分镜制作_2011636537980624897.json, 图片生成/文生图/Gemini 3 -全能图片pro文生图+图生图_2012424841223217153.json, 平台全量/CAD平面转3d立体平面图（风格迁移）_2035885656995532802.json, 平台全量/毛坯转效果图双图（迁移）_2035990526708686849.json, 平台全量/毛坯转效果图（提示词描述）_2035342509236297730.json, 平台全量/线稿白模转效果图_2036001801287241729.json]
+members: [图片生成/图生图/人物镜头多角度工作流_1995421577741316097.json, 图片生成/图生图/艺术-变化-字_2113128685749497858.json, 图片生成/图生图/通用超清放大 图片质感增强细节_2064237641620606977.json, 图片生成/图生图/高精密产品精修放大文字细节保留_2012070168532357121.json, 图片生成/文生图/G2大模型一键生成=商业图-广告图-产品图_2047112135699861505.json, 视频生成/图生视频/商业图-广告图-产品图提示词一键生成-G2大模型_1965450548570935297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_472
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/高清修复_2013057417436733441.json、图片生成/文生图/AI漫剧分镜工作流-四宫格九宫格分镜制作_2011636537980624897.json、图片生成/文生图/Gemini 3 -全能图片pro文生图+图生图_2012424841223217153.json、平台全量/CAD平面转3d立体平面图（风格迁移）_2035885656995532802.json、平台全量/毛坯转效果图双图（迁移）_2035990526708686849.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/人物镜头多角度工作流_1995421577741316097.json、图片生成/图生图/艺术-变化-字_2113128685749497858.json、图片生成/图生图/通用超清放大 图片质感增强细节_2064237641620606977.json、图片生成/图生图/高精密产品精修放大文字细节保留_2012070168532357121.json、图片生成/文生图/G2大模型一键生成=商业图-广告图-产品图_2047112135699861505.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
+全部 6 个 workflow 都包含：
+- `RHHiddenNodes`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 4/7 个有
-- `HAIGC_SavePSD` —— 1/7 个有
+- `LoadImage` —— 4/6 个有
+- `Text Multiline` —— 3/6 个有
+- `easy promptLine` —— 1/6 个有
 
 ## 典型参数
 

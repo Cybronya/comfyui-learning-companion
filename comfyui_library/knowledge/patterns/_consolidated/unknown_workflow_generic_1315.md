@@ -1,54 +1,48 @@
 ---
 name: unknown_workflow_generic_1315
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.77
-common_nodes: [DownloadAndLoadFlorence2Model, DownloadAndLoadSAM2Model, Florence2Run, Florence2toCoordinates, GrowMask, Image Rembg (Remove Background), Image Remove Background Rembg (mtb), ImageAndMaskPreview, ImageResize+, InspyrenetRembg, InvertMask, LayerMask: SegmentAnythingUltra V2, LoadImage, MaskPreview+, MaskToImage, PreviewImage, Sam2Segmentation, SaveImage, easy imageRemBg, ttN imageREMBG]
+frequency: 2
+level: weak
+coverage: 0.8435
+common_nodes: [GetImageSizeAndCount, PreviewAny, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, ToString, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy saveText]
 problems: []
 missing: []
-members: [平台全量/抠图背景移除节点对比_1825807159816032257.json, 平台全量/背景移除节点对比_1820333233749037057.json, 平台全量/背景移除节点对比_1820797600005296129.json]
+members: [图片生成/反推提示词/压缩包批量打标工作流_2030176517560475650.json, 图片生成/文生图/批量图片打标V2_2005802387858227201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1315
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/抠图背景移除节点对比_1825807159816032257.json、平台全量/背景移除节点对比_1820333233749037057.json、平台全量/背景移除节点对比_1820797600005296129.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/压缩包批量打标工作流_2030176517560475650.json、图片生成/文生图/批量图片打标V2_2005802387858227201.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DownloadAndLoadFlorence2Model`
-- `DownloadAndLoadSAM2Model`
-- `Florence2Run`
-- `Florence2toCoordinates`
-- `GrowMask`
-- `Image Rembg (Remove Background)`
-- `Image Remove Background Rembg (mtb)`
-- `ImageAndMaskPreview`
-- `ImageResize+`
-- `InspyrenetRembg`
-- `InvertMask`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LoadImage`
-- `MaskPreview+`
-- `MaskToImage`
+全部 2 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `PreviewAny`
 - `PreviewImage`
-- `Sam2Segmentation`
-- `SaveImage`
-- `easy imageRemBg`
-- `ttN imageREMBG`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `ToString`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `easy getNode` —— 2/3 个有
-- `easy setNode` —— 2/3 个有
-- `GetNode` —— 1/3 个有
-- `SetNode` —— 1/3 个有
+- `AILab_QwenVL` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/2 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/2 个有
+- `MultiTextConcatenate` —— 1/2 个有
+- `Save image with extra metadata [Crystools]` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 
@@ -60,4 +54,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

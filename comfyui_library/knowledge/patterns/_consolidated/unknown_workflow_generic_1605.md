@@ -3,40 +3,40 @@ name: unknown_workflow_generic_1605
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9775
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageV1Edit, RH_RhartImageV1OfficialEdit, RH_SeedreamV45ImageToImage, RH_SeedreamV4ImageToImage, RH_SeedreamV5LiteImageToImage, SaveImage]
+coverage: 1
+common_nodes: [Bounded Image Crop, Bounded Image Crop with Mask, Get Image Size, ImageResize+, ImageToMask, LoadImage, RH_Translator, ResizeImageMixlab, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/RH-api生图合集_2047513433892986881.json, 图片生成/图生图/RH-api生图合集_2114321101349281793.json]
+members: [图片生成/文生图/PS专供版_1977997691026296833.json, 图片生成/文生图/全能图像G官方低价集合渠道版本_2082280708223094785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1605
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/RH-api生图合集_2047513433892986881.json、图片生成/图生图/RH-api生图合集_2114321101349281793.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/PS专供版_1977997691026296833.json、图片生成/文生图/全能图像G官方低价集合渠道版本_2082280708223094785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Bounded Image Crop`
+- `Bounded Image Crop with Mask`
+- `Get Image Size`
+- `ImageResize+`
+- `ImageToMask`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageV1Edit`
-- `RH_RhartImageV1OfficialEdit`
-- `RH_SeedreamV45ImageToImage`
-- `RH_SeedreamV4ImageToImage`
-- `RH_SeedreamV5LiteImageToImage`
+- `RH_Translator`
+- `ResizeImageMixlab`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SeedVR2` —— 1/2 个有
-- `SeedVR2BlockSwap` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
+- `RH_RhartImageNProEdit` —— 1/2 个有
 
 ## 典型参数
 

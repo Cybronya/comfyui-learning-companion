@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_739
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9818
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 1
+common_nodes: [ImageBatchGet, LoadImage, SaveImage, easy imageSplitGrid]
 problems: []
 missing: []
-members: [平台全量/IndexTTS2.5多角色对话-SRT剧本配音工作流_2098966418065813505.json, 音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json, 音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json, 音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json, 音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json]
+members: [图片生成/图生图/九宫格全格子倒序排列_2028051566497894401.json, 图片生成/图生图/四宫格，分割工作流  适用Midjourney V7 孤独万岁， 胶片感_2003427585814085634.json, 图片生成/图生图/解说漫-四宫格分割_2061008752047902722.json, 视频生成/图生视频/图片四宫格 生成+分割_2028645285680914434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_739
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/IndexTTS2.5多角色对话-SRT剧本配音工作流_2098966418065813505.json、音频生成/音频生成/Index TTS 2.5 合集_2094055661276590082.json、音频生成/音频生成/IndexTTS 2.5  多人对话+自动语速控制+音色克隆_2101931946589904897.json、音频生成/音频生成/IndexTTS 2.5多人对话2608_2094622243149139970.json、音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2089775759383678977.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/九宫格全格子倒序排列_2028051566497894401.json、图片生成/图生图/四宫格，分割工作流  适用Midjourney V7 孤独万岁， 胶片感_2003427585814085634.json、图片生成/图生图/解说漫-四宫格分割_2061008752047902722.json、视频生成/图生视频/图片四宫格 生成+分割_2028645285680914434.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+全部 4 个 workflow 都包含：
+- `ImageBatchGet`
+- `LoadImage`
+- `SaveImage`
+- `easy imageSplitGrid`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/5 个有
-- `easy indexTTSGenerateSimple` —— 1/5 个有
+- `ImageConcanate` —— 1/4 个有
 
 ## 典型参数
 

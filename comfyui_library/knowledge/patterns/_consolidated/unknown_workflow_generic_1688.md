@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1688
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.882
-common_nodes: [CR Text, CR Text Concatenate, CR Text Replace, Display Any (rgthree), ImageTile+, LoadImage, PreviewImage, RH_LLMAPI_NODE, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, RH_BytedanceSeedance20GlobalMiniMultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/分镜九宫格_2025181878906523650.json, 图片生成/文生图/分镜九宫格三段式_2027341114012864513.json]
+members: [视频生成/图生视频/SD mini 四参考图_2101864721564659714.json, 视频生成/图生视频/（自用）Seedance2.0多参Mini过场动画（RH版）_2088707198355599362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1688
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/分镜九宫格_2025181878906523650.json、图片生成/文生图/分镜九宫格三段式_2027341114012864513.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SD mini 四参考图_2101864721564659714.json、视频生成/图生视频/（自用）Seedance2.0多参Mini过场动画（RH版）_2088707198355599362.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `Display Any (rgthree)`
-- `ImageTile+`
 - `LoadImage`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+- `RH_BytedanceSeedance20GlobalMiniMultimodalVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Prompt Text` —— 1/2 个有
+- `ConcatTextOfUtils` —— 1/2 个有
 
 ## 典型参数
 

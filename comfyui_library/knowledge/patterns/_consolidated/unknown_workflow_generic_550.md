@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_550
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, LoadOmniGen2Model, OmniGen2, RH_Translator, SaveImage]
+coverage: 0.8188
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/OmniGen2 图生图风格转换_1947862771910197250.json, 图片生成/图生图/OmniGen2_1936534944283807746.json, 图片生成/图生图/OmniGen2图像编辑加速版_1937462767471509506.json, 图片生成/图生图/OmniGen2图片编辑（超越豆包一众模型）_2000834317058273282.json, 图片生成/图生图/haiilo-Gen2图生图修改_1947757539401314306.json, 图片生成/文生图/OmniGen2-万能改图_1956247216224698370.json]
+members: [图片生成/图生图/004.RMBG2.0一键抠图.json_2092170782251245569.json, 图片生成/图生图/007.其他-功能风格001.一键抠图_2035399330865090562.json, 图片生成/图生图/Eiffe-一键发丝透明抠图（商用抠图）_2038824649479426049.json, 图片生成/图生图/大碗有料整合-抠图_2010549321225216001.json, 图片生成/图生图/抠图简单易用_1915824544420921345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_550
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/OmniGen2 图生图风格转换_1947862771910197250.json、图片生成/图生图/OmniGen2_1936534944283807746.json、图片生成/图生图/OmniGen2图像编辑加速版_1937462767471509506.json、图片生成/图生图/OmniGen2图片编辑（超越豆包一众模型）_2000834317058273282.json、图片生成/图生图/haiilo-Gen2图生图修改_1947757539401314306.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/004.RMBG2.0一键抠图.json_2092170782251245569.json、图片生成/图生图/007.其他-功能风格001.一键抠图_2035399330865090562.json、图片生成/图生图/Eiffe-一键发丝透明抠图（商用抠图）_2038824649479426049.json、图片生成/图生图/大碗有料整合-抠图_2010549321225216001.json、图片生成/图生图/抠图简单易用_1915824544420921345.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `LoadOmniGen2Model`
-- `OmniGen2`
-- `RH_Translator`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 5/6 个有
+- `PreviewImage` —— 4/5 个有
+- `RMBG` —— 4/5 个有
+- `MaskPreview+` —— 3/5 个有
+- `MaskToImage` —— 2/5 个有
+- `BiRefNet_Hugo` —— 1/5 个有
+- `easy imageRemBg` —— 1/5 个有
 
 ## 典型参数
 

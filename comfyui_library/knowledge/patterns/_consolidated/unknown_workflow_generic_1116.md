@@ -3,43 +3,36 @@ name: unknown_workflow_generic_1116
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.753333
-common_nodes: [CR Text, CR Text Concatenate, CR Text Replace, Fast Groups Muter (rgthree), GetNode, ImageTile+, ImpactMakeImageBatch, LoadImage, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, SaveImage, SetNode, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, RH_MinimaxHailuoH3ImageToVideo, RH_MinimaxHailuoH3MultimodalToVideo, RH_MinimaxHailuoH3TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/AI漫剧分镜_2026825510570958849.json, 平台全量/AI分镜图绘制_2009914882161909761.json, 视频生成/图生视频/AI分镜图绘制_2022161330945396737.json]
+members: [视频生成/图生视频/MiniMax 新一代H3视频模型文生视频_首尾视频_多模态视频工作流 V1.0_2083024782769090561.json, 视频生成/文生视频/Minimax H3_2083108762361098242.json, 视频生成/文生视频/minmax h3_2084101316028227586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1116
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AI漫剧分镜_2026825510570958849.json、平台全量/AI分镜图绘制_2009914882161909761.json、视频生成/图生视频/AI分镜图绘制_2022161330945396737.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax 新一代H3视频模型文生视频_首尾视频_多模态视频工作流 V1.0_2083024782769090561.json、视频生成/文生视频/Minimax H3_2083108762361098242.json、视频生成/文生视频/minmax h3_2084101316028227586.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `Fast Groups Muter (rgthree)`
-- `GetNode`
-- `ImageTile+`
-- `ImpactMakeImageBatch`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `SetNode`
-- `easy showAnything`
+- `RH_MinimaxHailuoH3ImageToVideo`
+- `RH_MinimaxHailuoH3MultimodalToVideo`
+- `RH_MinimaxHailuoH3TextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/3 个有
+- `Text` —— 1/3 个有
 
 ## 典型参数
 

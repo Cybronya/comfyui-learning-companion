@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_1443
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.907333
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+frequency: 2
+level: weak
+coverage: 0.986
+common_nodes: [CR Text, EcommercePromptGenerator, JDCN_ListToString, LoadImage, RH_Nano_Banana2_Image2Image_Batch, SaveImage, easy int, easy showAnything, easy string, list_ListSlice]
 problems: []
 missing: []
-members: [音频生成/音频生成/文字转语音，音色克隆_2021917857117900801.json, 音频生成/音频生成/电商数字人-TTS2 情感滑块_1971488007771635713.json, 音频生成/音频生成/音频克隆_2034507663702233090.json]
+members: [图片生成/图生图/一键电商详情页主图套图V2 超大批量可选语言（最多20张）_2001121164858716162.json, 图片生成/图生图/一键电商详情页主图套图V2+超大批量可选语言（最多20张） (1)_2038568647987306498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1443
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/文字转语音，音色克隆_2021917857117900801.json、音频生成/音频生成/电商数字人-TTS2 情感滑块_1971488007771635713.json、音频生成/音频生成/音频克隆_2034507663702233090.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键电商详情页主图套图V2 超大批量可选语言（最多20张）_2001121164858716162.json、图片生成/图生图/一键电商详情页主图套图V2+超大批量可选语言（最多20张） (1)_2038568647987306498.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `easy indexTTSEmotionVector` —— 2/3 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/3 个有
+全部 2 个 workflow 都包含：
+- `CR Text`
+- `EcommercePromptGenerator`
+- `JDCN_ListToString`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image_Batch`
+- `SaveImage`
+- `easy int`
+- `easy showAnything`
+- `easy string`
+- `list_ListSlice`
 
 ## 典型参数
 
@@ -44,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_generic_1307
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.7
-common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage]
+frequency: 2
+level: weak
+coverage: 0.7635
+common_nodes: [Joy_caption_two, Joy_caption_two_advanced, Joy_caption_two_load, Joy_extra_options, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [平台全量/一键极致完美抠图_1988783217140445185.json, 平台全量/图片去水印【2025-2-24】_2009303175735549953.json, 平台全量/简易去水印手工mask_1917408200092483586.json]
+members: [图片生成/反推提示词/joy caption2 反推提示词_1904210529462951937.json, 图片生成/反推提示词/joy caption2 反推提示词工作流_1920866029717884930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1307
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/一键极致完美抠图_1988783217140445185.json、平台全量/图片去水印【2025-2-24】_2009303175735549953.json、平台全量/简易去水印手工mask_1917408200092483586.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/joy caption2 反推提示词_1904210529462951937.json、图片生成/反推提示词/joy caption2 反推提示词工作流_1920866029717884930.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+全部 2 个 workflow 都包含：
+- `Joy_caption_two`
+- `Joy_caption_two_advanced`
+- `Joy_caption_two_load`
+- `Joy_extra_options`
 - `LoadImage`
 - `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RemoveWatermarkNode` —— 2/3 个有
-- `RMBG` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
 
 ## 典型参数
 
@@ -41,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

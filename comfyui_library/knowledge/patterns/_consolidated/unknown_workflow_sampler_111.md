@@ -3,35 +3,36 @@ name: unknown_workflow_sampler_111
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.538
-common_nodes: [Float, LoadAudio, LoadAudioUI, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PurgeVRAM_UTK, SaveAudioAdvanced, YuE2ModelLoader, YuE2ReferenceVoiceCover]
+coverage: 0.8885
+common_nodes: [CR Prompt Text, LoadAudio, RunningHub StepAudioEditX ModelLoader, RunningHub StepAudioEditX Sampler(Style), SaveAudio]
 problems: []
 missing: []
-members: [平台全量/▶▷MiniMaxH3-加速视频流整合_2119100779914153985.json, 数字人/数字人/Yue2声纹参考翻唱(25-30秒每段)-歌曲音色替换懒人版_2111142173721845761.json]
+members: [音频生成/音频生成/Step-Audio-EditX音频风格编辑V1_1989397944975675394.json, 音频生成/音频生成/音频编辑 2.0 【Step-Audio-EditX】_1989662883296538625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_111
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/▶▷MiniMaxH3-加速视频流整合_2119100779914153985.json、数字人/数字人/Yue2声纹参考翻唱(25-30秒每段)-歌曲音色替换懒人版_2111142173721845761.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Step-Audio-EditX音频风格编辑V1_1989397944975675394.json、音频生成/音频生成/音频编辑 2.0 【Step-Audio-EditX】_1989662883296538625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Float`
+- `CR Prompt Text`
 - `LoadAudio`
-- `LoadAudioUI`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PurgeVRAM_UTK`
-- `SaveAudioAdvanced`
-- `YuE2ModelLoader`
-- `YuE2ReferenceVoiceCover`
+- `RunningHub StepAudioEditX ModelLoader`
+- `RunningHub StepAudioEditX Sampler(Style)`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 1/2 个有
+- `RunningHub StepAudioEditX Sampler(Emotion)` —— 1/2 个有
+- `RunningHub StepAudioEditX Sampler(Paralinguistic)` —— 1/2 个有
 
 ## 典型参数
 

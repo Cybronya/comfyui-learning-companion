@@ -3,31 +3,37 @@ name: unknown_workflow_generic_1856
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [Label (rgthree), LoadImage, RH_SeedreamV5LiteImageToImage, RH_SeedreamV5ProImageToImage, SaveImage]
+coverage: 0.843
+common_nodes: [LoadAudio, SaveAudioMP3, TDQwen3TTSCustomVoice, TDQwen3TTSModelLoader, TDQwen3TTSVoiceClone, TDQwen3TTSVoiceDesign]
 problems: []
 missing: []
-members: [图片生成/文生图/图像编辑 Seedream 5.0 Pro_2075496762244165634.json, 图片生成/文生图/图像编辑 Seedream V5 Lite（图生图）_2075564369907380225.json]
+members: [音频生成/音频生成/【Supermate】 QWEN3 TTS TD节点工作流_2015819820255682561.json, 音频生成/音频生成/真人配音_Qwen3-TD-TTS_2036601489619161089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1856
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/图像编辑 Seedream 5.0 Pro_2075496762244165634.json、图片生成/文生图/图像编辑 Seedream V5 Lite（图生图）_2075564369907380225.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【Supermate】 QWEN3 TTS TD节点工作流_2015819820255682561.json、音频生成/音频生成/真人配音_Qwen3-TD-TTS_2036601489619161089.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Label (rgthree)`
-- `LoadImage`
-- `RH_SeedreamV5LiteImageToImage`
-- `RH_SeedreamV5ProImageToImage`
-- `SaveImage`
+- `LoadAudio`
+- `SaveAudioMP3`
+- `TDQwen3TTSCustomVoice`
+- `TDQwen3TTSModelLoader`
+- `TDQwen3TTSVoiceClone`
+- `TDQwen3TTSVoiceDesign`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

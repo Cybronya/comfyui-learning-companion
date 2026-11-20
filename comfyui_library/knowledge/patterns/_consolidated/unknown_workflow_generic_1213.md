@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1213
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.75
-common_nodes: [ConstrainImage|pysssss, Image Comparer (rgthree), ImageAndMaskPreview, ImagePadForOutpaint, LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.909
+common_nodes: [AudioCrop, AudioSeparation, LoadAudio, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/无缝扩图 Nano 全能图片V1 2  pro 真正的无痕扩图_2004772767058853889.json, 平台全量/全能图片V1 2 _ 扩图_1868540216209211393.json, 平台全量/无缝扩图 Nano 全能图片V1 2  pro 真正的无痕扩图_2001096988093542401.json]
+members: [音频生成/音频生成/分离人声与背景声音（分离歌声和音乐）_1981180042384408578.json, 音频生成/音频生成/分离背景和人声_2014668966366552066.json, 音频生成/音频生成/分离背景和人声工作流_2002746035225128961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1213
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/无缝扩图 Nano 全能图片V1 2  pro 真正的无痕扩图_2004772767058853889.json、平台全量/全能图片V1 2 _ 扩图_1868540216209211393.json、平台全量/无缝扩图 Nano 全能图片V1 2  pro 真正的无痕扩图_2001096988093542401.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/分离人声与背景声音（分离歌声和音乐）_1981180042384408578.json、音频生成/音频生成/分离背景和人声_2014668966366552066.json、音频生成/音频生成/分离背景和人声工作流_2002746035225128961.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ConstrainImage|pysssss`
-- `Image Comparer (rgthree)`
-- `ImageAndMaskPreview`
-- `ImagePadForOutpaint`
-- `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+- `AudioCrop`
+- `AudioSeparation`
+- `LoadAudio`
+- `SaveAudioMP3`
+
+**可变部分**（部分 workflow 才有）：
+- `MergeAudioMW` —— 1/3 个有
+- `easy imageSave` —— 1/3 个有
 
 ## 典型参数
 

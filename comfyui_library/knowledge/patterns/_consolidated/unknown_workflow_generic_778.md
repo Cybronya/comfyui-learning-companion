@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_778
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9334
-common_nodes: [IndexTTSRun, LoadAudio, SaveAudio]
+coverage: 0.65
+common_nodes: [JjkText, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json, 音频生成/音频生成/Index-TTS1.5新版语音克隆，急速体验_1924716212561825794.json, 音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json, 音频生成/音频生成/IndexTTS_V1.5语音迁移_1926946067093311490.json, 音频生成/音频生成/IndexTTS声音克隆_1926159271489146881.json]
+members: [图片生成/图生图/角色卡制作工作流_2052015917642596354.json, 图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2051599273845895169.json, 图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2055501465065672705.json, 图片生成/文生图/全能图像G Image 2.0文生图 ：从语言到视觉的生成引擎_文生图全能图片G2.0_2046517455052345346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_778
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Index-TTS 1.5极速语音克隆_1924398424782008321.json、音频生成/音频生成/Index-TTS1.5新版语音克隆，急速体验_1924716212561825794.json、音频生成/音频生成/IndexTTS 双人版对话语音克隆V1_1933123039095599106.json、音频生成/音频生成/IndexTTS_V1.5语音迁移_1926946067093311490.json、音频生成/音频生成/IndexTTS声音克隆_1926159271489146881.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/角色卡制作工作流_2052015917642596354.json、图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2051599273845895169.json、图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2055501465065672705.json、图片生成/文生图/全能图像G Image 2.0文生图 ：从语言到视觉的生成引擎_文生图全能图片G2.0_2046517455052345346.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `IndexTTSRun`
-- `LoadAudio`
-- `SaveAudio`
+全部 4 个 workflow 都包含：
+- `JjkText`
+- `RH_RhartImageG2TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/5 个有
-- `Text Multiline` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
+- `LoadImage` —— 3/4 个有
+- `RH_LLMAPI_Pro_Node` —— 3/4 个有
+- `RHHiddenNodes` —— 2/4 个有
 
 ## 典型参数
 

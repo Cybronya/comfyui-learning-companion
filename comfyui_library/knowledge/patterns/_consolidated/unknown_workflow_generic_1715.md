@@ -3,36 +3,36 @@ name: unknown_workflow_generic_1715
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7205
-common_nodes: [Float, JjkText, LoadImage, RH_RhartImageG2ImageToImage, RTXVideoSuperResolution, SaveImage]
+coverage: 0.4595
+common_nodes: [Comfly_Googel_Veo3, LoadImage, RH_Translator, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2047343738472636417.json, 图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2068227538463322114.json]
+members: [视频生成/图生视频/全能视频V3.1+你的名字+爆款复刻+拍摄现场花絮_2000283848959291394.json, 视频生成/图生视频/全能视频V3.1+最终幻想+爆款复刻+转场粒子效果+首尾帧_2000853660760408065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1715
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2047343738472636417.json、图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2068227538463322114.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频V3.1+你的名字+爆款复刻+拍摄现场花絮_2000283848959291394.json、视频生成/图生视频/全能视频V3.1+最终幻想+爆款复刻+转场粒子效果+首尾帧_2000853660760408065.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Float`
-- `JjkText`
+- `Comfly_Googel_Veo3`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `RTXVideoSuperResolution`
-- `SaveImage`
+- `RH_Translator`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FlashVSRNode` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `Comfly_api_set` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

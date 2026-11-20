@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_679
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9846
-common_nodes: [ImageStitch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Jimeng4_Image2Image, SaveImage]
+coverage: 0.6
+common_nodes: [CLIPLoader, PreviewAny, TextGenerate]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream4.0【单图】一致性图像编辑_1968714568174325762.json, 图片生成/图生图/Seedream4.0【多图】一致性图像编辑 【 多人合影+姿势参考 】_1968710540304502786.json, 图片生成/图生图/人物姿势参考-既梦4.0一致性图像编辑_1968122621973901313.json, 图片生成/图生图/合影姿势参考-既梦4.0一致性图像编辑_1968113697153515522.json, 图片生成/图生图/家具整理和布置-既梦4.0图像编辑_1967955987967651842.json]
+members: [comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json, comfyui-workflow-templates-json/llm_qwen3_text_gen.json, comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json, 图片生成/反推提示词/图像反推提示词_qwen3.5_2063048577647202305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_679
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Seedream4.0【单图】一致性图像编辑_1968714568174325762.json、图片生成/图生图/Seedream4.0【多图】一致性图像编辑 【 多人合影+姿势参考 】_1968710540304502786.json、图片生成/图生图/人物姿势参考-既梦4.0一致性图像编辑_1968122621973901313.json、图片生成/图生图/合影姿势参考-既梦4.0一致性图像编辑_1968113697153515522.json、图片生成/图生图/家具整理和布置-既梦4.0图像编辑_1967955987967651842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/llm_qwen3_5_text_gen.json、comfyui-workflow-templates-json/llm_qwen3_text_gen.json、comfyui-workflow-templates-json/llm_qwen3vl_text_gen.json、图片生成/反推提示词/图像反推提示词_qwen3.5_2063048577647202305.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageStitch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `RH_Jimeng4_Image2Image`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `PreviewAny`
+- `TextGenerate`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 1/5 个有
+- `LoadImage` —— 3/4 个有
+- `easy saveText` —— 1/4 个有
 
 ## 典型参数
 

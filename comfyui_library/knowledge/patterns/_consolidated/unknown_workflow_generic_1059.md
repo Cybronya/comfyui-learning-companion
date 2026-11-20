@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_generic_1059
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.91475
-common_nodes: [DF_Text, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, JjkText, LayerUtility: PurgeVRAM V2, SaveAudio]
+coverage: 0.723667
+common_nodes: [CR Text, Int, LoadImage, PrimitiveFloat, RH_Jimeng4_Image2Image, Repeater|pysssss, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/多人物声音克隆 Qwen3 TTS_2015264650748760065.json, 音频生成/音频生成/多人物配音 可编辑角色声音 Qwen3TTS_2015257162548776961.json, 音频生成/音频生成/多角色声音克隆配音 Qwen3 TTS_2015260825090527234.json, 音频生成/音频生成/多角色编辑配音 Qwen3TTS_2015252252562300930.json]
+members: [图片生成/图生图/豆包_即梦4.5 图片编辑  Jimeng4.5_5.0 doubao-seedream-4.5_5_2032325756549865473.json, 图片生成/图生图/超能SeeDream 4.6 多图参考一键复刻设计工作流 V1.0_2039854638148620289.json, 图片生成/图生图/超能SeeDream 5.0+全节点注释_2039892774471868418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1059
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/多人物声音克隆 Qwen3 TTS_2015264650748760065.json、音频生成/音频生成/多人物配音 可编辑角色声音 Qwen3TTS_2015257162548776961.json、音频生成/音频生成/多角色声音克隆配音 Qwen3 TTS_2015260825090527234.json、音频生成/音频生成/多角色编辑配音 Qwen3TTS_2015252252562300930.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/豆包_即梦4.5 图片编辑  Jimeng4.5_5.0 doubao-seedream-4.5_5_2032325756549865473.json、图片生成/图生图/超能SeeDream 4.6 多图参考一键复刻设计工作流 V1.0_2039854638148620289.json、图片生成/图生图/超能SeeDream 5.0+全节点注释_2039892774471868418.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DF_Text`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `JjkText`
-- `LayerUtility: PurgeVRAM V2`
-- `SaveAudio`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `Int`
+- `LoadImage`
+- `PrimitiveFloat`
+- `RH_Jimeng4_Image2Image`
+- `Repeater|pysssss`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `WhisperSTT` —— 3/4 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/4 个有
+- `MuyeTextEditOutput` —— 1/3 个有
+- `SmartImageConcat` —— 1/3 个有
 
 ## 典型参数
 

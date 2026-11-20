@@ -1,44 +1,38 @@
 ---
 name: unknown_workflow_generic_1304
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.823667
-common_nodes: [LoadAudio, OmniVoiceLongformTTS, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, OmniVoiceWhisperLoader, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio]
+frequency: 2
+level: weak
+coverage: 0.875
+common_nodes: [Joy_caption_two_advanced, Joy_caption_two_load, Joy_extra_options, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/omnivoice-TTS全家桶_2041811077431828481.json, 数字人/数字人/OmniVoice-TTS-支持600种语言_2041885496275640322.json, 音频生成/音频生成/OmniVoice 600+种语言_声音克隆_声音设计_多说话人对白_2041778769148518402.json]
+members: [图片生成/反推提示词/Uncensor图像反推（无限制版）v3_1972570968969375746.json, 图片生成/图生图/图像反推Uncensor_1986331615280463874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1304
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/omnivoice-TTS全家桶_2041811077431828481.json、数字人/数字人/OmniVoice-TTS-支持600种语言_2041885496275640322.json、音频生成/音频生成/OmniVoice 600+种语言_声音克隆_声音设计_多说话人对白_2041778769148518402.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Uncensor图像反推（无限制版）v3_1972570968969375746.json、图片生成/图生图/图像反推Uncensor_1986331615280463874.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceLongformTTS`
-- `OmniVoiceMultiSpeakerTTS`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceVoiceDesignTTS`
-- `OmniVoiceWhisperLoader`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudio`
+全部 2 个 workflow 都包含：
+- `Joy_caption_two_advanced`
+- `Joy_caption_two_load`
+- `Joy_extra_options`
+- `LoadImage`
+- `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `RH_Translator` —— 1/2 个有
 
 ## 典型参数
 
@@ -50,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

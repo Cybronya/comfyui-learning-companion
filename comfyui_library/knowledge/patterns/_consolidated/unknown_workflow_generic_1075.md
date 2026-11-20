@@ -3,37 +3,35 @@ name: unknown_workflow_generic_1075
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.889
-common_nodes: [LoadImage, Save3DAdvanced, TripoConversionNode, TripoRetargetNode, TripoRigNode, TripoTextureNodeV2]
+coverage: 0.869
+common_nodes: [EmptyImage, JWInteger, LoadVideo, PreviewImage, RH_Astra, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_tripo3_1_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p2_image_to_model.json, comfyui-workflow-templates-json/api_tripo_p2_multiview_to_model.json]
+members: [图片生成/文生图/Topaz_Video_高清放大（5分钟完成30s4k超分）_2101300464980680706.json, 视频生成/图生视频/Topaz_Video_高清放大V1非星光_2104379567917064194.json, 视频生成/图生视频/Topaz_Video星光放大V1_2104376622597099522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1075
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_tripo3_1_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p2_image_to_model.json、comfyui-workflow-templates-json/api_tripo_p2_multiview_to_model.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Topaz_Video_高清放大（5分钟完成30s4k超分）_2101300464980680706.json、视频生成/图生视频/Topaz_Video_高清放大V1非星光_2104379567917064194.json、视频生成/图生视频/Topaz_Video星光放大V1_2104376622597099522.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `Save3DAdvanced`
-- `TripoConversionNode`
-- `TripoRetargetNode`
-- `TripoRigNode`
-- `TripoTextureNodeV2`
+- `EmptyImage`
+- `JWInteger`
+- `LoadVideo`
+- `PreviewImage`
+- `RH_Astra`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `TripoImageToModelNodeV2` —— 1/3 个有
-- `TripoPSeriesImageToModelNode` —— 1/3 个有
-- `TripoPSeriesMultiviewToModelNode` —— 1/3 个有
+- `RunningHub Deepcleaner` —— 2/3 个有
 
 ## 典型参数
 

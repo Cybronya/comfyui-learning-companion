@@ -1,43 +1,38 @@
 ---
 name: unknown_workflow_video_22
 type: Unknown Workflow
-frequency: 9
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [GrowMask, INTConstant, ImageBatch, ImageCompositeMasked, ImageResizeKJv2, ImageToMask, InvertMask, LayerColor: BrightnessContrastV2, LoadAudio, LoadImage, LoadImageMask, MaskBlur+, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.5552
+common_nodes: [HunyuanVideoFoley, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/vlog滑屏转场_2013490499956514818.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_1959597724477894657.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2011235737471029250.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2031202509624184834.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2039877279874031617.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2050882588805480449.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2057267742750892033.json, 视频生成/图生视频/滑屏转场视频_2059150379807494146.json, 视频生成/文生视频/抖音剪映同款滑屏转场视频_1961976286589730817.json]
+members: [图片生成/反推提示词/腾讯混元foley视频音效配音_1966053082960400385.json, 数字人/数字人/foley视频音效生成_2029426909465022466.json, 数字人/数字人/foley视频音效生成_2029480814936858626.json, 音频生成/音频生成/foley视频音效生成_1965242321535160321.json, 音频生成/音频生成/foley视频音效生成_1982736535470645250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_22
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/vlog滑屏转场_2013490499956514818.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_1959597724477894657.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2011235737471029250.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2031202509624184834.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2039877279874031617.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/腾讯混元foley视频音效配音_1966053082960400385.json、数字人/数字人/foley视频音效生成_2029426909465022466.json、数字人/数字人/foley视频音效生成_2029480814936858626.json、音频生成/音频生成/foley视频音效生成_1965242321535160321.json、音频生成/音频生成/foley视频音效生成_1982736535470645250.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `GrowMask`
-- `INTConstant`
-- `ImageBatch`
-- `ImageCompositeMasked`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `InvertMask`
-- `LayerColor: BrightnessContrastV2`
-- `LoadAudio`
-- `LoadImage`
-- `LoadImageMask`
-- `MaskBlur+`
-- `RepeatImageBatch`
+全部 5 个 workflow 都包含：
+- `HunyuanVideoFoley`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveAudio` —— 4/5 个有
+- `PrimitiveInt` —— 2/5 个有
+- `PrimitiveString` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,42 +3,39 @@ name: unknown_workflow_generic_1167
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.529333
-common_nodes: [CR Text, Float, HAIGC_VideoSubtitleEnhanced, ImpactConditionalBranch, LayerMask: MaskBoxDetect, LoadImage, MultiMaskSelectorNode, PrimitiveBoolean, SaveImage, 孤海-取色器]
+coverage: 0.946
+common_nodes: [AudioCrop, AudioSeparation, LoadAudio, PreviewAudio, SaveAudio, SaveAudioMP3, SparkTTS_AudioRecorder, SparkTTS_VoiceCreator, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionAudio, easy indexTTSEmotionMerge, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [图片生成/图生图/产品海报制作（可自定义字体颜色渐变色）_1993684311503208450.json, 图片生成/图生图/海报制作参考模板（可自定义字体颜色渐变色投影更多超强功能）_1984427840852672514.json, 图片生成/图生图/生图-海报制作(遮罩)_2008810578072047618.json]
+members: [音频生成/音频生成/AI声音+声音克隆（SparkTTS+IndexTTS-2）_2064242992818511874.json, 音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_1988937576591527937.json, 音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_2006924053776441346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1167
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品海报制作（可自定义字体颜色渐变色）_1993684311503208450.json、图片生成/图生图/海报制作参考模板（可自定义字体颜色渐变色投影更多超强功能）_1984427840852672514.json、图片生成/图生图/生图-海报制作(遮罩)_2008810578072047618.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AI声音+声音克隆（SparkTTS+IndexTTS-2）_2064242992818511874.json、音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_1988937576591527937.json、音频生成/音频生成/AI声音（SparkTTS+IndexTTS 2）_2006924053776441346.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
-- `Float`
-- `HAIGC_VideoSubtitleEnhanced`
-- `ImpactConditionalBranch`
-- `LayerMask: MaskBoxDetect`
-- `LoadImage`
-- `MultiMaskSelectorNode`
-- `PrimitiveBoolean`
-- `SaveImage`
-- `孤海-取色器`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/3 个有
-- `MaskPreview` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `AudioCrop`
+- `AudioSeparation`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
+- `SaveAudioMP3`
+- `SparkTTS_AudioRecorder`
+- `SparkTTS_VoiceCreator`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSEmotionAudio`
+- `easy indexTTSEmotionMerge`
+- `easy indexTTSEmotionVector`
+- `easy indexTTSGenerateSimple`
 
 ## 典型参数
 

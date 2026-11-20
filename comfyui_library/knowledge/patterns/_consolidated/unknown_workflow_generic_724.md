@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_724
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9342
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, Text]
+coverage: 0.6305
+common_nodes: [Comfly_gpt_image_2, Fast Groups Bypasser (rgthree), LoadImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/测试按钮_2072942393598500865.json, 图片生成/图生图/牛皮纸单盒_2049691312600961026.json, 图片生成/图生图/牛皮纸卷纸_2049675181253201921.json, 图片生成/图生图/牛皮纸多盒_2049695227673321474.json, 图片生成/文生图/（G-2.0+全能图片）地表最强组合图片工作流_2047340732758888450.json]
+members: [图片生成/图生图/YJ-APP-全能图片G--image-三图编辑_2047136214855196673.json, 图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2054398965772234753.json, 图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2057669827359240194.json, 图片生成/文生图/YJ-APP-全能图片G--image-文生图_2047217543684825089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_724
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/测试按钮_2072942393598500865.json、图片生成/图生图/牛皮纸单盒_2049691312600961026.json、图片生成/图生图/牛皮纸卷纸_2049675181253201921.json、图片生成/图生图/牛皮纸多盒_2049695227673321474.json、图片生成/文生图/（G-2.0+全能图片）地表最强组合图片工作流_2047340732758888450.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片G--image-三图编辑_2047136214855196673.json、图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2054398965772234753.json、图片生成/图生图/全能图片Gimage2.0贞贞工坊api调用低价_2057669827359240194.json、图片生成/文生图/YJ-APP-全能图片G--image-文生图_2047217543684825089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `Comfly_gpt_image_2`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 - `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `JWStringConcat` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `RH_RhartImageG2TextToImage` —— 1/5 个有
+- `String` —— 2/4 个有
 
 ## 典型参数
 

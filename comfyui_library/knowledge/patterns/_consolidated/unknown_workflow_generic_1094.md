@@ -3,36 +3,37 @@ name: unknown_workflow_generic_1094
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.818
-common_nodes: [AILab_MiniCPM_4_V, CreateVideo, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, ShowText|pysssss, VHS_LoadVideo, VHS_VideoInfoLoaded, easy positive, easy promptReplace, easy saveText]
+coverage: 0.974333
+common_nodes: [CR Text, LoadImage, RHLLMChatNode, RH_RhartImageG2OfficialTextToImage, RH_RhartImageNG31FlashOfficialImageToImage, SaveImage, StringFunction|pysssss, 忽略多组孤海]
 problems: []
 missing: []
-members: [图片生成/反推提示词/反推-视频提示词2-MiniCPM_2076642367251247105.json, 视频生成/文生视频/反推-视频提示词2-MiniCPM_1972214732772077570.json, 视频生成/文生视频/反推-视频提示词2-MiniCPM_2066055892665430016.json]
+members: [图片生成/文生图/网红飒爽高张力场景图_支持换脸_2056643722447777794.json, 图片生成/文生图/美女飒爽高张力网红场景图_2056521212540571650.json, 图片生成/文生图/飒爽高张力-网红场景图_支持换脸_2056638909488123906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1094
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/反推-视频提示词2-MiniCPM_2076642367251247105.json、视频生成/文生视频/反推-视频提示词2-MiniCPM_1972214732772077570.json、视频生成/文生视频/反推-视频提示词2-MiniCPM_2066055892665430016.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/网红飒爽高张力场景图_支持换脸_2056643722447777794.json、图片生成/文生图/美女飒爽高张力网红场景图_2056521212540571650.json、图片生成/文生图/飒爽高张力-网红场景图_支持换脸_2056638909488123906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_MiniCPM_4_V`
-- `CreateVideo`
-- `GetImageSizeAndCount`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `ShowText|pysssss`
-- `VHS_LoadVideo`
-- `VHS_VideoInfoLoaded`
-- `easy positive`
-- `easy promptReplace`
-- `easy saveText`
+- `CR Text`
+- `LoadImage`
+- `RHLLMChatNode`
+- `RH_RhartImageG2OfficialTextToImage`
+- `RH_RhartImageNG31FlashOfficialImageToImage`
+- `SaveImage`
+- `StringFunction|pysssss`
+- `忽略多组孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 

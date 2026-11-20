@@ -3,50 +3,39 @@ name: unknown_workflow_sampler_checkpoint
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.886
-common_nodes: [CheckpointLoaderSimple, DF_Get_image_size, GrowMask, Image Blend by Mask, Image Blending Mode, Image Comparer (rgthree), Image Filter Adjustments, Image Levels Adjustment, ImageBlur, ImageCompositeMasked, ImageInvert, ImageRemoveBackground+, ImageResizeKJv2, LBMSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadLBMModel, MaskToImage, PreviewImage, SaveImage, TransparentBGSession+, easy hiresFix]
+coverage: 0.462
+common_nodes: [CR Text, CheckpointLoaderSimple, Fast Groups Muter (rgthree), Int, RH_Screenwriter, SaveImage, ShowText|pysssss, WujiCleaner, WujiCostumeDesigner, WujiDirector, WujiEditor, WujiSampler, WujiStoryboardArtist]
 problems: []
 missing: []
-members: [图片生成/图生图/图片-换背景-打光_1972669271623028738.json, 平台全量/lbm打光工作流 防细节丢失_1928257364128841729.json]
+members: [图片生成/文生图/AI漫剧短剧各类提示词生成器，资产库图像生成_2043368521987526658.json, 图片生成/文生图/AI漫剧短剧各类提示词生成器，资产库图像生成_2044268617847545857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图片-换背景-打光_1972669271623028738.json、平台全量/lbm打光工作流 防细节丢失_1928257364128841729.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI漫剧短剧各类提示词生成器，资产库图像生成_2043368521987526658.json、图片生成/文生图/AI漫剧短剧各类提示词生成器，资产库图像生成_2044268617847545857.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
 - `CheckpointLoaderSimple`
-- `DF_Get_image_size`
-- `GrowMask`
-- `Image Blend by Mask`
-- `Image Blending Mode`
-- `Image Comparer (rgthree)`
-- `Image Filter Adjustments`
-- `Image Levels Adjustment`
-- `ImageBlur`
-- `ImageCompositeMasked`
-- `ImageInvert`
-- `ImageRemoveBackground+`
-- `ImageResizeKJv2`
-- `LBMSampler`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadLBMModel`
-- `MaskToImage`
-- `PreviewImage`
+- `Fast Groups Muter (rgthree)`
+- `Int`
+- `RH_Screenwriter`
 - `SaveImage`
-- `TransparentBGSession+`
-- `easy hiresFix`
+- `ShowText|pysssss`
+- `WujiCleaner`
+- `WujiCostumeDesigner`
+- `WujiDirector`
+- `WujiEditor`
+- `WujiSampler`
+- `WujiStoryboardArtist`
 
 ## 典型参数
 

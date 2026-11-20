@@ -3,31 +3,35 @@ name: unknown_workflow_generic_1876
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_RhartImageNG31FlashLiteTextToImage, SaveImage]
+coverage: 0.854
+common_nodes: [PreviewAudio, SaveAudioMP3, WooshLoadFlow, WooshSample, WooshTextEncode]
 problems: []
 missing: []
-members: [图片生成/文生图/（0.07_每张）全能图片2.0lite-文生图_2076965885146918914.json, 平台全量/文生图（设计）-全能图片B2-1K经济版_2120367144885116929.json]
+members: [音频生成/音频生成/影视_短视频必备：一键文字生成逼真音效（Woosh）_2076229994212319234.json, 音频生成/音频生成/🔥 剪辑师救星：丢进视频，AI 自动生成踩点音效！_2076261491841523713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1876
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/（0.07_每张）全能图片2.0lite-文生图_2076965885146918914.json、平台全量/文生图（设计）-全能图片B2-1K经济版_2120367144885116929.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/影视_短视频必备：一键文字生成逼真音效（Woosh）_2076229994212319234.json、音频生成/音频生成/🔥 剪辑师救星：丢进视频，AI 自动生成踩点音效！_2076261491841523713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartImageNG31FlashLiteTextToImage`
-- `SaveImage`
+- `PreviewAudio`
+- `SaveAudioMP3`
+- `WooshLoadFlow`
+- `WooshSample`
+- `WooshTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
+- `WooshLoadVideo` —— 1/2 个有
 
 ## 典型参数
 

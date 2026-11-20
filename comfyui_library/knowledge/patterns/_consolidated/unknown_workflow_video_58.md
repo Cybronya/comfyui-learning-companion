@@ -1,46 +1,38 @@
 ---
 name: unknown_workflow_video_58
 type: Unknown Workflow
-frequency: 6
+frequency: 3
 level: moderate
-coverage: 0.6305
-common_nodes: [ImageBatch, ImageResizeKJ, PrimitiveInt, SimpleMath+, VHS_LoadVideo, VHS_SplitImages, VHS_VideoCombine, VHS_VideoInfoSource]
+coverage: 1
+common_nodes: [Bjornulf_ShowInt, GetImageSizeAndCount, ImageCompositeMasked, ImageRemoveBackground+, ImageResizeKJv2, RepeatImageBatch, TransparentBGSession+, VHS_LoadVideo, VHS_SplitImages, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/女装童装视频3D翻转转场效果+加倍延长视频时间+全节点注释_2069778878041776129.json, 平台全量/女装童装视频3D翻转转场效果+加倍延长视频时间+全节点注释_2096565579313410050.json, 平台全量/视频3D翻转转场效果_1978846998466039810.json, 平台全量/视频变形转场效果_1978826728254640129.json, 平台全量/视频叠加转场效果_1978714240305483778.json, 平台全量/视频抖动转场效果_1978497854941581314.json]
+members: [图片生成/图生图/晴空碧野白云飞特效_2044281157335912450.json, 数字人/数字人/大雪纷飞特效_2044074187223994369.json, 视频生成/图生视频/火山爆发特效_2043002610755571714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_58
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/女装童装视频3D翻转转场效果+加倍延长视频时间+全节点注释_2069778878041776129.json、平台全量/女装童装视频3D翻转转场效果+加倍延长视频时间+全节点注释_2096565579313410050.json、平台全量/视频3D翻转转场效果_1978846998466039810.json、平台全量/视频变形转场效果_1978826728254640129.json、平台全量/视频叠加转场效果_1978714240305483778.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/晴空碧野白云飞特效_2044281157335912450.json、数字人/数字人/大雪纷飞特效_2044074187223994369.json、视频生成/图生视频/火山爆发特效_2043002610755571714.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageBatch`
-- `ImageResizeKJ`
-- `PrimitiveInt`
-- `SimpleMath+`
+全部 3 个 workflow 都包含：
+- `Bjornulf_ShowInt`
+- `GetImageSizeAndCount`
+- `ImageCompositeMasked`
+- `ImageRemoveBackground+`
+- `ImageResizeKJv2`
+- `RepeatImageBatch`
+- `TransparentBGSession+`
 - `VHS_LoadVideo`
 - `VHS_SplitImages`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/6 个有
-- `easy showAnything` —— 4/6 个有
-- `VideoFlip3DTransitionNode` —— 3/6 个有
-- `HAIGC_VideoFlip` —— 2/6 个有
-- `CR Text` —— 1/6 个有
-- `VideoCrossfadeNode` —— 1/6 个有
-- `VideoShakeTransitionNode` —— 1/6 个有
-- `VideoWarpTransitionNode` —— 1/6 个有
 
 ## 典型参数
 

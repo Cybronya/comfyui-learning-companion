@@ -1,41 +1,45 @@
 ---
 name: unknown_workflow_video_66
 type: Unknown Workflow
-frequency: 6
+frequency: 3
 level: moderate
-coverage: 0.616167
-common_nodes: [CR Text, RH_Sora2_T2V, SaveVideo, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 0.817667
+common_nodes: [DownloadAndLoadMimicMotionModel, GetImageSizeAndCount, ImageCASharpening+, ImageScale, LoadImage, MimicMotionGetPoses, RIFE VFI, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S一键文生15秒视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1976899254511976449.json, 视频生成/文生视频/全能视频S一键文生视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1976335331958067201.json, 视频生成/文生视频/全能视频S一键文生视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1977008492265512962.json, 视频生成/文生视频/全能视频S一键文生视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1977367937801691138.json, 视频生成/文生视频/全能视频S文生视频批量版_1976663867738800130.json, 视频生成/文生视频/全能视频S文生视频无水印更新横竖屏可选_1973425254745944066.json]
+members: [视频生成/图生视频/AI图片跳舞！美女跳舞=艾橘溪=MimicMotion_1886593147164610561.json, 视频生成/图生视频/AI图片跳舞！美女跳舞MimicMotion_2043500616089079810.json, 视频生成/图生视频/一键美女视频跳舞机V9_1894254277496340482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_66
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/全能视频S一键文生15秒视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1976899254511976449.json、视频生成/文生视频/全能视频S一键文生视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1976335331958067201.json、视频生成/文生视频/全能视频S一键文生视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1977008492265512962.json、视频生成/文生视频/全能视频S一键文生视频：无水印带货视频 描述词【中文或者英文都可以】= 生成无水印高清带货视频_1977367937801691138.json、视频生成/文生视频/全能视频S文生视频批量版_1976663867738800130.json…）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/AI图片跳舞！美女跳舞=艾橘溪=MimicMotion_1886593147164610561.json、视频生成/图生视频/AI图片跳舞！美女跳舞MimicMotion_2043500616089079810.json、视频生成/图生视频/一键美女视频跳舞机V9_1894254277496340482.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Text`
-- `RH_Sora2_T2V`
-- `SaveVideo`
-- `VHS_LoadVideoPath`
+全部 3 个 workflow 都包含：
+- `DownloadAndLoadMimicMotionModel`
+- `GetImageSizeAndCount`
+- `ImageCASharpening+`
+- `ImageScale`
+- `LoadImage`
+- `MimicMotionGetPoses`
+- `RIFE VFI`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SeedVR2` —— 2/6 个有
-- `CR Prompt List` —— 1/6 个有
-- `Glow` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `workflow>MimicMotion Sampler` —— 2/3 个有
+- `workflow>图像缩放` —— 2/3 个有
+- `workflow/MimicMotion Sampler` —— 1/3 个有
+- `workflow/图像缩放` —— 1/3 个有
 
 ## 典型参数
 

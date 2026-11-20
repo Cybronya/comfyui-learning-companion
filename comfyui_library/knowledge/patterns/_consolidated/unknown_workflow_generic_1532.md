@@ -3,55 +3,46 @@ name: unknown_workflow_generic_1532
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8285
-common_nodes: [AudioSeparation, Label (rgthree), LoadAudio, LoadImage, LoadVideo, MultiTextConcatenate, PreviewAudio, PrimitiveBoolean, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideoNode, Text, easy getAudioFromVideo, easy ifElse, easy saveText, easy showAnything, 忽略多组孤海]
+coverage: 0.758
+common_nodes: [CR Text, Image Comparer (rgthree), LayerMask: MaskGrow, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskPreview, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy imageDetailTransfer, easy imageRemBg, easy imageSize]
 problems: []
 missing: []
-members: [图片生成/反推提示词/【定制专用】爆款视频一键复刻，支持自定义修改提示词和背景配音_2096889341128822785.json, 图片生成/反推提示词/【定制工作流】爆款视频复刻支持自定义修改提示词和背景音色_2097268725526392833.json]
+members: [图片生成/图生图/换背景_2045416894164901890.json, 图片生成/图生图/溶图_2012039867399675905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1532
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/【定制专用】爆款视频一键复刻，支持自定义修改提示词和背景配音_2096889341128822785.json、图片生成/反推提示词/【定制工作流】爆款视频复刻支持自定义修改提示词和背景音色_2097268725526392833.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/换背景_2045416894164901890.json、图片生成/图生图/溶图_2012039867399675905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioSeparation`
-- `Label (rgthree)`
-- `LoadAudio`
+- `CR Text`
+- `Image Comparer (rgthree)`
+- `LayerMask: MaskGrow`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadVideo`
-- `MultiTextConcatenate`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
-- `SaveVideoNode`
-- `Text`
-- `easy getAudioFromVideo`
-- `easy ifElse`
-- `easy saveText`
-- `easy showAnything`
-- `忽略多组孤海`
+- `MaskPreview`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `easy imageDetailTransfer`
+- `easy imageRemBg`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `OmniVoiceVoiceCloneTTS` —— 1/2 个有
-- `Qwen3ASRLoader` —— 1/2 个有
-- `Qwen3ASRTranscribe` —— 1/2 个有
-- `RH_AlibabaWan30ReferenceToVideo` —— 1/2 个有
-- `RH_GetAudioDuration` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `HAIGC_SavePSD` —— 1/2 个有
+- `LayerStyle: Stroke V2` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
+- `取色器_孤海` —— 1/2 个有
 
 ## 典型参数
 

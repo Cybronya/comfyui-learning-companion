@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_926
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.65
-common_nodes: [JjkText, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.935333
+common_nodes: [CR Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, easy saveText]
 problems: []
 missing: []
-members: [图片生成/图生图/角色卡制作工作流_2052015917642596354.json, 图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2051599273845895169.json, 图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2055501465065672705.json, 图片生成/文生图/全能图像G Image 2.0文生图 ：从语言到视觉的生成引擎_文生图全能图片G2.0_2046517455052345346.json]
+members: [图片生成/反推提示词/剧本反推分镜_2042083429155606530.json, 图片生成/文生图/【4K _ 0.1】动作故事分镜设计【官方低价渠道】_2053407315327504385.json, 图片生成/文生图/一句话生成时尚大片广告海报_2029133261347229698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_926
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/角色卡制作工作流_2052015917642596354.json、图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2051599273845895169.json、图片生成/文生图/AI漫剧V2-第一步-角色卡制作_2055501465065672705.json、图片生成/文生图/全能图像G Image 2.0文生图 ：从语言到视觉的生成引擎_文生图全能图片G2.0_2046517455052345346.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/剧本反推分镜_2042083429155606530.json、图片生成/文生图/【4K _ 0.1】动作故事分镜设计【官方低价渠道】_2053407315327504385.json、图片生成/文生图/一句话生成时尚大片广告海报_2029133261347229698.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `RH_RhartImageG2TextToImage`
+全部 3 个 workflow 都包含：
+- `CR Text`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `RH_LLMAPI_Pro_Node` —— 3/4 个有
-- `RHHiddenNodes` —— 2/4 个有
+- `PreviewAny` —— 2/3 个有
+- `RH_RhartImageG2ImageToImage` —— 2/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/3 个有
+- `ShowText` —— 1/3 个有
+- `StringFunction|pysssss` —— 1/3 个有
 
 ## 典型参数
 

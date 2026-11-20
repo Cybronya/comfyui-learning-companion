@@ -3,34 +3,41 @@ name: unknown_workflow_sampler_69
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.725
-common_nodes: [LoadImage, PreviewImage, SapiensLoader, SapiensSampler]
+coverage: 1
+common_nodes: [Bjornulf_FreeVRAM, CR Prompt Text, LoadAudio, LongCatVoiceCloneTTS, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
 problems: []
 missing: []
-members: [平台全量/Sapiens facebookresearch人像分割模型_1856042765657182210.json, 平台全量/好用的人体分割插件 sapiens_1850821097402028034.json, 平台全量/抠手抠脚抠头发_1889220230349250561.json]
+members: [音频生成/音频生成/真实语音克隆_2039357695987290113.json, 音频生成/音频生成/超级声音克隆 高品质克隆原声音质_2074092844897361921.json, 音频生成/音频生成/超逼真声音克隆_2039768853735022594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_69
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Sapiens facebookresearch人像分割模型_1856042765657182210.json、平台全量/好用的人体分割插件 sapiens_1850821097402028034.json、平台全量/抠手抠脚抠头发_1889220230349250561.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/真实语音克隆_2039357695987290113.json、音频生成/音频生成/超级声音克隆 高品质克隆原声音质_2074092844897361921.json、音频生成/音频生成/超逼真声音克隆_2039768853735022594.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `PreviewImage`
-- `SapiensLoader`
-- `SapiensSampler`
+- `Bjornulf_FreeVRAM`
+- `CR Prompt Text`
+- `LoadAudio`
+- `LongCatVoiceCloneTTS`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
-- `ImageConcanate` —— 1/3 个有
+- `Int` —— 2/3 个有
+- `SoundFlow_GainPitchControl` —— 2/3 个有
+- `Switch` —— 2/3 个有
 
 ## 典型参数
 

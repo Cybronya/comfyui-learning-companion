@@ -3,36 +3,37 @@ name: unknown_workflow_generic_1742
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [AutoDownloadBiRefNetModel, LayerUtility: ImageRemoveAlpha, LoadImage, PreviewImage, RembgByBiRefNet, SaveImage]
+coverage: 0.9445
+common_nodes: [InversionDemoLazySwitch, PrimitiveBoolean, RH_Prompter, RH_Translator, RH_Veo3_Text2Video, SaveVideo, ShowText]
 problems: []
 missing: []
-members: [图片生成/图生图/抠图保存PNG或者指定底JPG_2054474779054362626.json, 平台全量/抠图保存PNG或JPG格式_2077589265768341505.json]
+members: [视频生成/文生视频/RH_全能视频V3文生视频_TK_1957059501363793922.json, 视频生成/文生视频/全能视频 V3文生视频_1945050682493714434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1742
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/抠图保存PNG或者指定底JPG_2054474779054362626.json、平台全量/抠图保存PNG或JPG格式_2077589265768341505.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/RH_全能视频V3文生视频_TK_1957059501363793922.json、视频生成/文生视频/全能视频 V3文生视频_1945050682493714434.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AutoDownloadBiRefNetModel`
-- `LayerUtility: ImageRemoveAlpha`
-- `LoadImage`
-- `PreviewImage`
-- `RembgByBiRefNet`
-- `SaveImage`
+- `InversionDemoLazySwitch`
+- `PrimitiveBoolean`
+- `RH_Prompter`
+- `RH_Translator`
+- `RH_Veo3_Text2Video`
+- `SaveVideo`
+- `ShowText`
 
 **可变部分**（部分 workflow 才有）：
 - `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 

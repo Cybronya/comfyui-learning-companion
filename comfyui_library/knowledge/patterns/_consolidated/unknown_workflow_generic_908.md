@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_908
 type: Unknown Workflow
-frequency: 4
+frequency: 3
 level: moderate
-coverage: 0.90425
-common_nodes: [LoadImage, RMBG, SAM3Segment, SaveImage]
+coverage: 0.611
+common_nodes: [ResolutionSelector, SaveImage, b0e5ca93-2731-42b9-8e0a-d28ea851ff81]
 problems: []
 missing: []
-members: [图片生成/图生图/常用抠图工作流RMBG-2.0_2035960868583776257.json, 平台全量/常用的抠图插件RMBG-2.0_2018572198042148865.json, 平台全量/抠图_2068235011769323521.json, 平台全量/自动抠图&局部提示词抠图工作流_2048681127795232769.json]
+members: [comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json, comfyui-workflow-templates-json/image_krea2_turbo_t2i.json, comfyui-workflow-templates-json/image_krea2_turbo_t2i_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_908
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/常用抠图工作流RMBG-2.0_2035960868583776257.json、平台全量/常用的抠图插件RMBG-2.0_2018572198042148865.json、平台全量/抠图_2068235011769323521.json、平台全量/自动抠图&局部提示词抠图工作流_2048681127795232769.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json、comfyui-workflow-templates-json/image_krea2_turbo_t2i.json、comfyui-workflow-templates-json/image_krea2_turbo_t2i_int8.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RMBG`
-- `SAM3Segment`
+全部 3 个 workflow 都包含：
+- `ResolutionSelector`
 - `SaveImage`
+- `b0e5ca93-2731-42b9-8e0a-d28ea851ff81`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_ColorInput` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `LayerMask: MaskPreview` —— 3/4 个有
-- `MaskPreview+` —— 1/4 个有
+- `GetImageSize` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 

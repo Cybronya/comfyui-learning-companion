@@ -1,32 +1,37 @@
 ---
 name: unknown_workflow_video_105
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 1
-common_nodes: [NanFengH3MultiReferenceGeneratorV15, RunningHub Deepcleaner, SaveVideo, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.9165
+common_nodes: [ImageResizeKJ, LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/minimaxH3_电影&MV一键工作流v15_2119267208365957122.json, 平台全量/minimaxH3_电影&MV一键工作流v15_2119380822422810626.json, 视频生成/图生视频/minimaxH3 电影&MV一键工作流v15_2115373721186820098.json, 视频生成/视频生视频/minimaxH3 电影&MV一键工作流v15_2115373721186820098.json]
+members: [视频生成/图生视频/FramePack_1913093088577843201.json, 视频生成/文生视频/当前多模态视频生成SOTA！FramePack长视频生成_1913067858023383042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_105
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/minimaxH3_电影&MV一键工作流v15_2119267208365957122.json、平台全量/minimaxH3_电影&MV一键工作流v15_2119380822422810626.json、视频生成/图生视频/minimaxH3 电影&MV一键工作流v15_2115373721186820098.json、视频生成/视频生视频/minimaxH3 电影&MV一键工作流v15_2115373721186820098.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack_1913093088577843201.json、视频生成/文生视频/当前多模态视频生成SOTA！FramePack长视频生成_1913067858023383042.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `NanFengH3MultiReferenceGeneratorV15`
-- `RunningHub Deepcleaner`
-- `SaveVideo`
+全部 2 个 workflow 都包含：
+- `ImageResizeKJ`
+- `LoadImage`
+- `RunningHub_FramePack`
+- `SeargePromptText`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `LTXVPromptEnhancer` —— 1/2 个有
+- `LTXVPromptEnhancerLoader` —— 1/2 个有
 
 ## 典型参数
 
@@ -38,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

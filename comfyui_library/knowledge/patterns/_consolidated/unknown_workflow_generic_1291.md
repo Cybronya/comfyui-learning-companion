@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_generic_1291
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.717667
-common_nodes: [CreateVideo, Fast Groups Bypasser (rgthree), GetVideoComponents, LoadImage, LoadVideo, RTXVideoSuperResolution, SaveVideo]
+frequency: 2
+level: weak
+coverage: 0.845
+common_nodes: [LoadImage, PrimitiveStringMultiline, RH_Captioner_Pro, SaveImage, StringConcatenate]
 problems: []
 missing: []
-members: [平台全量/Nvidia_RTX_Nodes 极速视频放大+图像放大_2032352666210275330.json, 视频生成/文生视频/全能图生＆文生视频  可生成6~30秒 0.03元_秒_2045072922934513666.json, 视频生成/文生视频/全能视频X  图生视频+文生视频  价渠道版 可生成30秒_2036665170331701249.json]
+members: [图片生成/反推提示词/LLM 反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099630333841989634.json, 图片生成/图生图/反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099304187879313410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1291
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Nvidia_RTX_Nodes 极速视频放大+图像放大_2032352666210275330.json、视频生成/文生视频/全能图生＆文生视频  可生成6~30秒 0.03元_秒_2045072922934513666.json、视频生成/文生视频/全能视频X  图生视频+文生视频  价渠道版 可生成30秒_2036665170331701249.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/LLM 反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099630333841989634.json、图片生成/图生图/反推提示词工作流｜Gemini 3 参考图反推提示词 一键重绘复刻_2099304187879313410.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetVideoComponents`
+全部 2 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `RTXVideoSuperResolution`
-- `SaveVideo`
+- `PrimitiveStringMultiline`
+- `RH_Captioner_Pro`
+- `SaveImage`
+- `StringConcatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGImageToVideo` —— 2/3 个有
-- `RH_RhartVideoGTextToVideo` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `SaveImageJPG_GH` —— 1/3 个有
+- `LoadVideo` —— 1/2 个有
+- `RH_SeedreamV5ProImageToImage` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
@@ -47,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

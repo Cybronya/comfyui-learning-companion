@@ -3,38 +3,31 @@ name: unknown_workflow_generic_1118
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.711333
-common_nodes: [BagelImageEdit, BagelModelLoader, ImageConcatMulti, ImageScaleDownToSize, LoadImage, SaveImage, SetNode, ShowText|pysssss, Text Multiline]
+coverage: 0.833333
+common_nodes: [RH_RhartVideoGTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Bagel豆包图像编辑_1929349250503622658.json, 图片生成/图生图/字节图像编辑 BaGEL豆包图像编辑_1928430466213302274.json, 平台全量/加速BAGEL开源版豆包图像编辑_1928420861374808066.json]
+members: [视频生成/图生视频/RH 全能视频X-文生视频-低价渠道版最长30秒（RH版）_2054431332775800834.json, 视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json, 视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1118
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Bagel豆包图像编辑_1929349250503622658.json、图片生成/图生图/字节图像编辑 BaGEL豆包图像编辑_1928430466213302274.json、平台全量/加速BAGEL开源版豆包图像编辑_1928420861374808066.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频X-文生视频-低价渠道版最长30秒（RH版）_2054431332775800834.json、视频生成/文生视频/全能视频X 文生低价30秒_2068346397249859586.json、视频生成/文生视频/全能视频X文生图-低价渠道版_2085247084659302402.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BagelImageEdit`
-- `BagelModelLoader`
-- `ImageConcatMulti`
-- `ImageScaleDownToSize`
-- `LoadImage`
-- `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Multiline`
+- `RH_RhartVideoGTextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 

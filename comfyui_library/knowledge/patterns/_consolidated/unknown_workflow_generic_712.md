@@ -1,31 +1,38 @@
 ---
 name: unknown_workflow_generic_712
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartVideoV31FastOfficialImageToVideo, SaveVideo]
+coverage: 0.96425
+common_nodes: [LoadImage, RunningHub Ovi Image to Video, RunningHub Ovi Model Loader, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能视频V3.1-fast-图生视频-官方稳定版_2114636391509487618.json, 图片生成/图生图/全能视频V3.1-fast-图生视频-官方稳定版_2115295406723788802.json, 视频生成/图生视频/RhartVideoV31FastOfficialImageToVideo_2038486995583897602.json, 视频生成/图生视频/全能视频V3.1-fast-图生视频-官方稳定版_2028703097123512321.json, 视频生成/文生视频/全能视频V3.1-fast-图生视频-官方稳定版_2046140835774861313.json]
+members: [图片生成/图生图/Ovi-外贸电商数字人-视频生成-一键生成带声音的视频_1983508190111408129.json, 数字人/数字人/OVI文生视频+图生视频_1975284228587958273.json, 视频生成/图生视频/Ovi跨模态图生视频数字人V2（英语音频）_1974947075743944706.json, 视频生成/文生视频/OVI文生视频+图生视频_2073214031992803330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_712
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能视频V3.1-fast-图生视频-官方稳定版_2114636391509487618.json、图片生成/图生图/全能视频V3.1-fast-图生视频-官方稳定版_2115295406723788802.json、视频生成/图生视频/RhartVideoV31FastOfficialImageToVideo_2038486995583897602.json、视频生成/图生视频/全能视频V3.1-fast-图生视频-官方稳定版_2028703097123512321.json、视频生成/文生视频/全能视频V3.1-fast-图生视频-官方稳定版_2046140835774861313.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Ovi-外贸电商数字人-视频生成-一键生成带声音的视频_1983508190111408129.json、数字人/数字人/OVI文生视频+图生视频_1975284228587958273.json、视频生成/图生视频/Ovi跨模态图生视频数字人V2（英语音频）_1974947075743944706.json、视频生成/文生视频/OVI文生视频+图生视频_2073214031992803330.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartVideoV31FastOfficialImageToVideo`
+- `RunningHub Ovi Image to Video`
+- `RunningHub Ovi Model Loader`
 - `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Prompt Text` —— 2/4 个有
+- `RunningHub Ovi Text to Video` —— 2/4 个有
+- `GroupSwitcher` —— 1/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 

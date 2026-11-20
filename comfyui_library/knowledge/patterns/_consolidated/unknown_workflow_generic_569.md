@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_generic_569
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.586833
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.935
+common_nodes: [CR Prompt Text, ImageConcanate, JWInteger, LoadImage, RunningHub_Step1XEdit, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全品类电商产品创意海报_2048405470121041921.json, 图片生成/图生图/全能图片 2.1家装专业制图（六大分析图)_2108737949612470274.json, 图片生成/图生图/电商产品详情页功能模块组_2044346912115007489.json, 图片生成/图生图/电商服装全方位展示九张图_2044587285609455618.json, 图片生成/文生图/image 2美妆产品使用对比图+全节点注释_2056716376823390210.json, 图片生成/文生图/image2 多图融合+全节点注释_2056268804812005378.json]
+members: [图片生成/图生图/Step1X-Edit图像编辑_1932611234569068545.json, 图片生成/图生图/Step1X-Edit多模态超强一致性图像生成_1917021061748031489.json, 图片生成/图生图/Step1X-Edit平替全能图片G-4O，重磅来袭！_1917392996323758082.json, 图片生成/图生图/Step1X-Edit强一致性图像编辑_1920018651477643265.json, 图片生成/图生图/Step1X-Edit强一致性图像编辑（非真人版）_1916752400680419330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_569
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全品类电商产品创意海报_2048405470121041921.json、图片生成/图生图/全能图片 2.1家装专业制图（六大分析图)_2108737949612470274.json、图片生成/图生图/电商产品详情页功能模块组_2044346912115007489.json、图片生成/图生图/电商服装全方位展示九张图_2044587285609455618.json、图片生成/文生图/image 2美妆产品使用对比图+全节点注释_2056716376823390210.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Step1X-Edit图像编辑_1932611234569068545.json、图片生成/图生图/Step1X-Edit多模态超强一致性图像生成_1917021061748031489.json、图片生成/图生图/Step1X-Edit平替全能图片G-4O，重磅来袭！_1917392996323758082.json、图片生成/图生图/Step1X-Edit强一致性图像编辑_1920018651477643265.json、图片生成/图生图/Step1X-Edit强一致性图像编辑（非真人版）_1916752400680419330.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `ImageConcanate`
+- `JWInteger`
 - `LoadImage`
+- `RunningHub_Step1XEdit`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 5/6 个有
-- `RHHiddenNodes` —— 5/6 个有
-- `RH_RhartImageG2ImageToImage` —— 2/6 个有
-- `RH_RhartImageNNb21ImageToImage` —— 1/6 个有
+- `Note Plus (mtb)` —— 2/5 个有
 
 ## 典型参数
 

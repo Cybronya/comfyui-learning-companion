@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_video_95
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.95
-common_nodes: [LoadImage, RunningHub_FramePack, VHS_VideoCombine]
+frequency: 2
+level: weak
+coverage: 0.793
+common_nodes: [CR String To Combo, CR Text Concatenate, ImpactStringSelector, ImpactSwitch, Int, LayerUtility: ImageMaskScaleAs, LoadImage, MathExpression|pysssss, PrimitiveBoolean, PrimitiveString, TransitionImagesMulti, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/FramePack巨偶互动_1913408833358655489.json, 平台全量/FramePack首尾帧_1914904336642600962.json, 视频生成/图生视频/FramePack丝滑首尾帧图生视频_1915017542644002818.json, 视频生成/图生视频/framepack_首尾帧_1914526532704923650.json]
+members: [图片生成/文生图/封面7种转场3.0_1943525069970677762.json, 视频生成/图生视频/封面神器 _ 7种转场效果_1943498791872065538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_95
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/FramePack巨偶互动_1913408833358655489.json、平台全量/FramePack首尾帧_1914904336642600962.json、视频生成/图生视频/FramePack丝滑首尾帧图生视频_1915017542644002818.json、视频生成/图生视频/framepack_首尾帧_1914526532704923650.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/封面7种转场3.0_1943525069970677762.json、视频生成/图生视频/封面神器 _ 7种转场效果_1943498791872065538.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 2 个 workflow 都包含：
+- `CR String To Combo`
+- `CR Text Concatenate`
+- `ImpactStringSelector`
+- `ImpactSwitch`
+- `Int`
+- `LayerUtility: ImageMaskScaleAs`
 - `LoadImage`
-- `RunningHub_FramePack`
+- `MathExpression|pysssss`
+- `PrimitiveBoolean`
+- `PrimitiveString`
+- `TransitionImagesMulti`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `KepStringLiteral` —— 3/4 个有
-- `ImageResizeKJ` —— 2/4 个有
-- `PrimitiveInt` —— 1/4 个有
 
 ## 典型参数
 
@@ -42,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

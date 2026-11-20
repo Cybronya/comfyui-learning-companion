@@ -3,33 +3,30 @@ name: unknown_workflow_generic_803
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.816
-common_nodes: [GeminiVideoOmniV2, SaveVideo]
+coverage: 0.5
+common_nodes: [CR Text, PrimitiveInt, RH_SeedreamV5ProTextToImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_i2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_r2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_t2v.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json]
+members: [图片生成/文生图/即梦5.0Pro文生图_2075419122514620418.json, 图片生成/文生图/即梦5.0Pro文生图_2075429466570051585.json, 图片生成/文生图/即梦seedream5.0Pro文生图_2075411140364034050.json, 图片生成/文生图/即梦seedream5.0Pro文生图_2083458068712611842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_803
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_i2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_r2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_t2v.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/即梦5.0Pro文生图_2075419122514620418.json、图片生成/文生图/即梦5.0Pro文生图_2075429466570051585.json、图片生成/文生图/即梦seedream5.0Pro文生图_2075411140364034050.json、图片生成/文生图/即梦seedream5.0Pro文生图_2083458068712611842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `GeminiVideoOmniV2`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `PreviewAny` —— 1/4 个有
-- `b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5` —— 1/4 个有
+- `CR Text`
+- `PrimitiveInt`
+- `RH_SeedreamV5ProTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

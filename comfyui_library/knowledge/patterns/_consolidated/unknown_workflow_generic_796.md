@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_796
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.9666
-common_nodes: [LoadAudio, PreviewAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.82325
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_gpt_image_2_official_ratio, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/indextts基础款_2014667772751515650.json, 音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json, 音频生成/音频生成/单人情感参考音IndexTTS2_2063194819257790466.json, 音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json, 音频生成/音频生成/空白工作流_2063266975324921857.json]
+members: [图片生成/文生图/全能图片G-image2 -文生图（贞贞版）_2049480689837412354.json, 图片生成/文生图/全能图片G-image2跑图（贞贞工坊API）_2052200484747915265.json, 图片生成/文生图/文生图超强工具工作流3.0升级版文字输出图片_2069458080454242305.json, 图片生成/文生图/自用_2051621105437294593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_796
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/indextts基础款_2014667772751515650.json、音频生成/音频生成/【CQ808】indexTTS2-语音模仿_2016024681224081410.json、音频生成/音频生成/单人情感参考音IndexTTS2_2063194819257790466.json、音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json、音频生成/音频生成/空白工作流_2063266975324921857.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图片G-image2 -文生图（贞贞版）_2049480689837412354.json、图片生成/文生图/全能图片G-image2跑图（贞贞工坊API）_2052200484747915265.json、图片生成/文生图/文生图超强工具工作流3.0升级版文字输出图片_2069458080454242305.json、图片生成/文生图/自用_2051621105437294593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `PreviewAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_gpt_image_2_official_ratio`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 4/5 个有
-- `SaveAudioMP3` —— 1/5 个有
-- `TextInput_` —— 1/5 个有
-- `easy indexTTSEmotionAudio` —— 1/5 个有
+- `easy showAnything` —— 3/4 个有
+- `LoadImage` —— 2/4 个有
+- `RH_LLMAPI_Pro_Node` —— 1/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
+- `RH_RhartImageNProEdit` —— 1/4 个有
+- `TT_img_enc` —— 1/4 个有
 
 ## 典型参数
 

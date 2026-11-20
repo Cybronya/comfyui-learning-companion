@@ -3,42 +3,37 @@ name: unknown_workflow_generic_1151
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.678333
-common_nodes: [AspectRatioSelect, CR Text Replace, LoadImage, RH_Captioner_Pro, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, ShowText|pysssss, easy saveText]
+coverage: 0.818
+common_nodes: [Fast Groups Bypasser (rgthree), IndexTTSRun, LoadAudio, LoadImage, MultiLinePromptIndex, SaveAudioMP3, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/⭐️ 图片裂变3.0_2054452770756931586.json, 图片生成/图生图/一键自动图片裂变_2070393869317009409.json, 平台全量/图片裂变3.0【一键自动版】_1890270427451891713.json]
+members: [视频生成/图生视频/👿IndexTTS 单-双 语音克隆 效果稳定 极速出效果👿_1954714957638201345.json, 音频生成/音频生成/HeGenAI-IndexTTS2_1965425636045148161.json, 音频生成/音频生成/🐲 IndexTTS 单_双 语音克隆 效果稳定 极速出效果🐲_1963526521779736578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1151
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/⭐️ 图片裂变3.0_2054452770756931586.json、图片生成/图生图/一键自动图片裂变_2070393869317009409.json、平台全量/图片裂变3.0【一键自动版】_1890270427451891713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/👿IndexTTS 单-双 语音克隆 效果稳定 极速出效果👿_1954714957638201345.json、音频生成/音频生成/HeGenAI-IndexTTS2_1965425636045148161.json、音频生成/音频生成/🐲 IndexTTS 单_双 语音克隆 效果稳定 极速出效果🐲_1963526521779736578.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AspectRatioSelect`
-- `CR Text Replace`
+- `Fast Groups Bypasser (rgthree)`
+- `IndexTTSRun`
+- `LoadAudio`
 - `LoadImage`
-- `RH_Captioner_Pro`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `MultiLinePromptIndex`
+- `SaveAudioMP3`
 - `SaveImage`
-- `ShowText|pysssss`
-- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Bypasser (rgthree)` —— 2/3 个有
-- `Mute / Bypass Repeater (rgthree)` —— 2/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `IndexTTS2Run` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,46 +1,37 @@
 ---
 name: unknown_workflow_generic_547
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.636333
-common_nodes: [ImageLoader, JjkText, MultiTextConcatenate, RH_LLMAPI_Pro_Node, SaveImage, Text, easy cleanGpuUsed, easy showAnything, ttN concat]
+coverage: 0.9314
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程提示词-多图版_2092226117246742530.json, 图片生成/图生图/一键生成专业影视分镜与关键帧全流程提示词-image2_2052212257190359041.json, 图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2100166630381805569.json, 图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2102576863053963265.json, 平台全量/GP-T2.0一键生成专业影视分镜与关键帧全流程提示词-多图版_2051989894217650177.json, 视频生成/图生视频/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2101493126711042050.json]
+members: [图片生成/图生图/-全能图片V1-一键转手办建模原版V1_1961282875477966849.json, 图片生成/图生图/-全能图片V1-蜡笔小新风格转换v22_1965054781519708161.json, 图片生成/图生图/-全能图片V1多图编辑产品融合，换背景，穿衣等_1962726052797788162.json, 图片生成/图生图/一键生成龙珠分身_1961722590039621633.json, 图片生成/图生图/全能图片V1：与自己和解_1998313406258143233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_547
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程提示词-多图版_2092226117246742530.json、图片生成/图生图/一键生成专业影视分镜与关键帧全流程提示词-image2_2052212257190359041.json、图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2100166630381805569.json、图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2102576863053963265.json、平台全量/GP-T2.0一键生成专业影视分镜与关键帧全流程提示词-多图版_2051989894217650177.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/-全能图片V1-一键转手办建模原版V1_1961282875477966849.json、图片生成/图生图/-全能图片V1-蜡笔小新风格转换v22_1965054781519708161.json、图片生成/图生图/-全能图片V1多图编辑产品融合，换背景，穿衣等_1962726052797788162.json、图片生成/图生图/一键生成龙珠分身_1961722590039621633.json、图片生成/图生图/全能图片V1：与自己和解_1998313406258143233.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageLoader`
-- `JjkText`
-- `MultiTextConcatenate`
-- `RH_LLMAPI_Pro_Node`
+全部 5 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `Text`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/6 个有
-- `easy saveText` —— 4/6 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 3/6 个有
-- `RH_RhartImageG2ImageToImage` —— 2/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/6 个有
-- `TextPreview` —— 1/6 个有
+- `ImageResize+` —— 4/5 个有
+- `Image Comparer (rgthree)` —— 2/5 个有
+- `Text` —— 2/5 个有
+- `ImageConcanate` —— 1/5 个有
 
 ## 典型参数
 

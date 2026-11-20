@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_671
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: moderate
-coverage: 0.7334
-common_nodes: [Image Comparer (rgthree), LoadImage, RHHiddenNodes, SaveImage]
+coverage: 0.80175
+common_nodes: [LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/LEON_无损放大_细节恢复_强化肌理_2097259845492764673.json, 图片生成/图生图/QT106-超低像素放大 文字修复，512像素高清修复到2K以上，电商详情页文字修复等_1956896827691950082.json, 图片生成/图生图/SeedVR2图片放大高清修复精修局部重绘-适合电商、自媒体、娱乐博主_2048085145378365441.json, 图片生成/图生图/模特背景迁移_1925382400518369282.json, 平台全量/换衣_1987430797621833729.json]
+members: [comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json, comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json, comfyui-workflow-templates-json/api_seedance2_5_video_editing.json, comfyui-workflow-templates-json/api_seedance2_5_video_extend.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_671
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/LEON_无损放大_细节恢复_强化肌理_2097259845492764673.json、图片生成/图生图/QT106-超低像素放大 文字修复，512像素高清修复到2K以上，电商详情页文字修复等_1956896827691950082.json、图片生成/图生图/SeedVR2图片放大高清修复精修局部重绘-适合电商、自媒体、娱乐博主_2048085145378365441.json、图片生成/图生图/模特背景迁移_1925382400518369282.json、平台全量/换衣_1987430797621833729.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_edit.json、comfyui-workflow-templates-json/api_google_gemini_omni_flash_1_1_extend.json、comfyui-workflow-templates-json/api_seedance2_5_video_editing.json、comfyui-workflow-templates-json/api_seedance2_5_video_extend.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `RHHiddenNodes`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy int` —— 1/5 个有
-- `ttN int` —— 1/5 个有
+- `Video Slice` —— 3/4 个有
+- `ByteDance2ReferenceNodeV2` —— 2/4 个有
+- `GeminiVideoOmniV2` —— 2/4 个有
+- `d9aa59a4-3784-4796-9f1b-5b467fb41fa1` —— 1/4 个有
 
 ## 典型参数
 

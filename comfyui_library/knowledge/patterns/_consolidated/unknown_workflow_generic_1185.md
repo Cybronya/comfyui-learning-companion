@@ -3,36 +3,34 @@ name: unknown_workflow_generic_1185
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.641
-common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage]
+coverage: 1
+common_nodes: [CR Prompt Text, IndexTTSProNode, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1 多图编辑_1960643693772496897.json, 图片生成/图生图/图片去水印-_全能图片V1_1977232989971193857.json, 图片生成/图生图/简单图像一键抠图_2046485388142841857.json]
+members: [音频生成/音频生成/IndexTTS-Pro单角色有声小说语音克隆_1962841986283835393.json, 音频生成/音频生成/IndexTTS-Pro双角色有声小说语音克隆_1962846731278979074.json, 音频生成/音频生成/IndexTTS声音克隆增强版_1933344642262048769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1185
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片V1 多图编辑_1960643693772496897.json、图片生成/图生图/图片去水印-_全能图片V1_1977232989971193857.json、图片生成/图生图/简单图像一键抠图_2046485388142841857.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS-Pro单角色有声小说语音克隆_1962841986283835393.json、音频生成/音频生成/IndexTTS-Pro双角色有声小说语音克隆_1962846731278979074.json、音频生成/音频生成/IndexTTS声音克隆增强版_1933344642262048769.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `CR Prompt Text`
+- `IndexTTSProNode`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana_Image2Image` —— 2/3 个有
-- `easy imageRemBg` —— 2/3 个有
-- `ImageAndMaskPreview` —— 1/3 个有
-- `MaskToImage` —— 1/3 个有
+- `Save_Audio` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,39 +1,36 @@
 ---
 name: unknown_workflow_generic_1325
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.725333
-common_nodes: [CR Text, LoadAudio, SaveAudio, TDQwen3TTSModelLoader, TDQwen3TTSVoiceClone, TDQwen3TTSVoiceDesign, Text Multiline]
+frequency: 2
+level: weak
+coverage: 0.7855
+common_nodes: [LoadImage, RH_Captioner_Pro, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [平台全量/音频-单人文本克隆音色设计配音-Qwen3+TTS_2076948657341034498.json, 音频生成/音频生成/音频-单人文本克隆音色设计配音-Qwen3+TTS_2064151132636794882.json, 音频生成/音频生成/音频-单人文本配音方言TD Qwen3 TTS_2064540877611163650.json]
+members: [图片生成/反推提示词/豆包Seed1.6Vision视频反推（0.02元一次）保存TXT-CSV格式_1979367975281135618.json, 图片生成/文生图/Qwen3-VL-Plus满血版反推提示词（0.02元一次）_2073399691634626562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1325
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/音频-单人文本克隆音色设计配音-Qwen3+TTS_2076948657341034498.json、音频生成/音频生成/音频-单人文本克隆音色设计配音-Qwen3+TTS_2064151132636794882.json、音频生成/音频生成/音频-单人文本配音方言TD Qwen3 TTS_2064540877611163650.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/豆包Seed1.6Vision视频反推（0.02元一次）保存TXT-CSV格式_1979367975281135618.json、图片生成/文生图/Qwen3-VL-Plus满血版反推提示词（0.02元一次）_2073399691634626562.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `SaveAudio`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSVoiceClone`
-- `TDQwen3TTSVoiceDesign`
-- `Text Multiline`
+全部 2 个 workflow 都包含：
+- `LoadImage`
+- `RH_Captioner_Pro`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `忽略多组孤海` —— 1/3 个有
+- `LoadVideo` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 
@@ -45,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

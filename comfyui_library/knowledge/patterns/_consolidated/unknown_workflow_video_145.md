@@ -1,47 +1,44 @@
 ---
 name: unknown_workflow_video_145
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.512333
-common_nodes: [Audio Cut (mtb), DF_Int_to_Float, GetNode, JoinStrings, LatentSyncNode, LoadAudio, SetNode, SimpleMath+, String Literal, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster, easy float, easy int, easy seed]
+frequency: 2
+level: weak
+coverage: 0.769
+common_nodes: [Audio Duration (mtb), Compare, ImageRepeat, IndexTTSProNode, LoadAudio, LoadImage, MathExpression|pysssss, NovelTextStructureNode, Primitive integer [Crystools], RHHiddenNodes, SaveAudio, Text Concatenate, Text Multiline, VHS_VideoCombine, easy ifElse, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/真人视频对口型 latentsync1.5-不可用_2046069152032497666.json, 平台全量/视频对口型_1921717913320095745.json, 音频生成/音频生成/视频对口型必备 最强视频唇齿同步 latentsync1.5_1909586154608390145.json]
+members: [音频生成/音频生成/index小说文案声音克隆对话朗读_1933111959048859650.json, 音频生成/音频生成/小说文案→有声书克隆_1932806676258902018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_145
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/真人视频对口型 latentsync1.5-不可用_2046069152032497666.json、平台全量/视频对口型_1921717913320095745.json、音频生成/音频生成/视频对口型必备 最强视频唇齿同步 latentsync1.5_1909586154608390145.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/index小说文案声音克隆对话朗读_1933111959048859650.json、音频生成/音频生成/小说文案→有声书克隆_1932806676258902018.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Audio Cut (mtb)`
-- `DF_Int_to_Float`
-- `GetNode`
-- `JoinStrings`
-- `LatentSyncNode`
+全部 2 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `Compare`
+- `ImageRepeat`
+- `IndexTTSProNode`
 - `LoadAudio`
-- `SetNode`
-- `SimpleMath+`
-- `String Literal`
-- `VHS_LoadVideo`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `NovelTextStructureNode`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `SaveAudio`
+- `Text Concatenate`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `VideoLengthAdjuster`
-- `easy float`
-- `easy int`
-- `easy seed`
-
-**可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
+- `easy ifElse`
+- `easy showAnything`
 
 ## 典型参数
 
@@ -53,4 +50,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

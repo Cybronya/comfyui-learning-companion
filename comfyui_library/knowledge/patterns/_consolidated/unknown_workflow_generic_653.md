@@ -3,36 +3,33 @@ name: unknown_workflow_generic_653
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9028
-common_nodes: [MuyeTextEditOutput, PreviewAny, RH_LLMAPI_Pro_Node, Text, easy saveText]
+coverage: 0.8532
+common_nodes: [CR Prompt Text, MossTTSModelLoader, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/反推提示词/即梦seedance提示词_2051145502170853378.json, 图片生成/图生图/【海皮】Seedance2.0 分镜提示词_2024673661352943617.json, 图片生成/文生图/【808】Seedance2.0剧本新增站位关系V3.1_2039643479717978113.json, 图片生成/文生图/【808】首席 AI 视频分镜导演 (V3.9 )_2042157149765242882.json, 视频生成/图生视频/【808】首席 AI 视频分镜导演 (V5.6)_2049743641312276481.json]
+members: [音频生成/音频生成/Moss TTS声音设计 ｜文生音频｜声音设计_2095852828559503361.json, 音频生成/音频生成/Moss TTS声音设计_2071775414388879361.json, 音频生成/音频生成/Moss TTS音效生成V2模型_2076262987660357634.json, 音频生成/音频生成/Moss TTS音效生成_2076493543895560193.json, 音频生成/音频生成/moss音效生成_2076557226864635906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_653
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/即梦seedance提示词_2051145502170853378.json、图片生成/图生图/【海皮】Seedance2.0 分镜提示词_2024673661352943617.json、图片生成/文生图/【808】Seedance2.0剧本新增站位关系V3.1_2039643479717978113.json、图片生成/文生图/【808】首席 AI 视频分镜导演 (V3.9 )_2042157149765242882.json、视频生成/图生视频/【808】首席 AI 视频分镜导演 (V5.6)_2049743641312276481.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Moss TTS声音设计 ｜文生音频｜声音设计_2095852828559503361.json、音频生成/音频生成/Moss TTS声音设计_2071775414388879361.json、音频生成/音频生成/Moss TTS音效生成V2模型_2076262987660357634.json、音频生成/音频生成/Moss TTS音效生成_2076493543895560193.json、音频生成/音频生成/moss音效生成_2076557226864635906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `MuyeTextEditOutput`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `Text`
-- `easy saveText`
+- `CR Prompt Text`
+- `MossTTSModelLoader`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `CR Text Concatenate` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
+- `MossSoundEffectV2Generate` —— 3/5 个有
+- `MossTTSVoiceDesign` —— 2/5 个有
 
 ## 典型参数
 

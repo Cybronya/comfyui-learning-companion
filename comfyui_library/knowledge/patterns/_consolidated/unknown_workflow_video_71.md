@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_video_71
 type: Unknown Workflow
-frequency: 5
+frequency: 3
 level: moderate
-coverage: 0.96
-common_nodes: [FlashVSRNode, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 1
+common_nodes: [JWInteger, LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/FlashVSR 视频高清放大 保持人物一致性 满血版&速度平衡版 视频放大_2033975622493540353.json, 平台全量/FlashVSR视频高清放大_1981705057970331649.json, 平台全量/flashvsr高清放大_2020870524292829185.json, 平台全量/视频超分_2062732891897024514.json, 平台全量/视频超清_2055204647404621825.json]
+members: [视频生成/图生视频/FramePack首尾帧V1_1914146936495243265.json, 视频生成/图生视频/FramePack首尾帧效果目前最好的开源视频模型_1914282850546581505.json, 视频生成/图生视频/新版 FramePack首尾帧_1919358127622258690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_71
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/FlashVSR 视频高清放大 保持人物一致性 满血版&速度平衡版 视频放大_2033975622493540353.json、平台全量/FlashVSR视频高清放大_1981705057970331649.json、平台全量/flashvsr高清放大_2020870524292829185.json、平台全量/视频超分_2062732891897024514.json、平台全量/视频超清_2055204647404621825.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FramePack首尾帧V1_1914146936495243265.json、视频生成/图生视频/FramePack首尾帧效果目前最好的开源视频模型_1914282850546581505.json、视频生成/图生视频/新版 FramePack首尾帧_1919358127622258690.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `FlashVSRNode`
-- `VHS_LoadVideo`
+全部 3 个 workflow 都包含：
+- `JWInteger`
+- `LoadImage`
+- `RunningHub_FramePack`
+- `SeargePromptText`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `VHS_VideoInfo` —— 4/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
-- `VideoInfoSource` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 

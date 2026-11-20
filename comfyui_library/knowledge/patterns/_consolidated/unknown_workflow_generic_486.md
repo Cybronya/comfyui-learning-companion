@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_486
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: moderate
-coverage: 0.892857
-common_nodes: [LoadImage, RH_Jimeng_Image2Video_V2, SaveVideo]
+coverage: 1
+common_nodes: [KOOK_SaveJPGImage, LoadImage, RH_RhartImageG2ImageToImage, Text Input [DVB]]
 problems: []
 missing: []
-members: [平台全量/即梦AI-首尾帧图生视频_1977944011312877569.json, 平台全量/即梦图生视频3.0 PRO_1983785132270264322.json, 视频生成/图生视频/即梦图生视频3.0 PRO_1984096040829812737.json, 视频生成/图生视频/即梦图生视频3.0 PRO_1986435365529677826.json, 视频生成/图生视频/图生视频 修改局部_1991867400045875201.json, 视频生成/图生视频/开业大吉 豆包 seedream4.5转绘+seedance1.0视频推理_1998420316537913346.json, 视频生成/图生视频/最新即梦图生视频3.0 PRO 图生视频 API调用 无水印_1994588476685361153.json]
+members: [图片生成/图生图/指定改3D_2064889231591436289.json, 图片生成/图生图/细节图-参考图_2072133270866845698.json, 图片生成/图生图/细节图-文案_2059821759330873345.json, 图片生成/图生图/裤子-换裤子_2059827667343597569.json, 图片生成/图生图/详情主图-方案1_2059815684909133826.json, 图片生成/图生图/详情主图-方案2，3，4_2059815701082361857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_486
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/即梦AI-首尾帧图生视频_1977944011312877569.json、平台全量/即梦图生视频3.0 PRO_1983785132270264322.json、视频生成/图生视频/即梦图生视频3.0 PRO_1984096040829812737.json、视频生成/图生视频/即梦图生视频3.0 PRO_1986435365529677826.json、视频生成/图生视频/图生视频 修改局部_1991867400045875201.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/指定改3D_2064889231591436289.json、图片生成/图生图/细节图-参考图_2072133270866845698.json、图片生成/图生图/细节图-文案_2059821759330873345.json、图片生成/图生图/裤子-换裤子_2059827667343597569.json、图片生成/图生图/详情主图-方案1_2059815684909133826.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `KOOK_SaveJPGImage`
 - `LoadImage`
-- `RH_Jimeng_Image2Video_V2`
-- `SaveVideo`
+- `RH_RhartImageG2ImageToImage`
+- `Text Input [DVB]`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 3/7 个有
-- `ImageResize+` —— 1/7 个有
+- `JWStringConcat` —— 5/6 个有
 
 ## 典型参数
 
