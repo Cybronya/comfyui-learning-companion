@@ -5667,7 +5667,7 @@
 				3570
 			],
 			"widgets_values":[
-				"ltx2.3-ic-watermREDACTED000000000000000.safetensors",
+				"ltx2.3-ic-watermark-remove-general-lora.safetensors",
 				1
 			],
 			"inputs":[
@@ -11799,7 +11799,7 @@
 				12892.4150390625
 			],
 			"widgets_values":[
-				"ltx2.3-ic-watermREDACTED000000000000000.safetensors",
+				"ltx2.3-ic-watermark-remove-general-lora.safetensors",
 				1
 			],
 			"inputs":[
@@ -18064,7 +18064,7 @@
 				22012.4140625
 			],
 			"widgets_values":[
-				"ltx2.3-ic-watermREDACTED000000000000000.safetensors",
+				"ltx2.3-ic-watermark-remove-general-lora.safetensors",
 				1
 			],
 			"inputs":[
