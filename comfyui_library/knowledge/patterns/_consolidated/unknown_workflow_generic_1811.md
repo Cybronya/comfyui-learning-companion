@@ -3,31 +3,33 @@ name: unknown_workflow_generic_1811
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.286
-common_nodes: [JjkText, LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, SaveAudio]
+coverage: 0.8
+common_nodes: [LoadAudio, SaveAudio, Text Multiline]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 自定义预设声音_2014525596830797826.json, 音频生成/音频生成/多角色声音预设 Qwen3 TTS 自定义预设声音  训练专属声音模板_2022854958600687617.json]
+members: [图片生成/文生图/AI音乐仅1分钟生成4分钟长段完整音乐_1923984524676354049.json, 平台全量/IndexTTS2 2.0｜效果最好_2118204808653004802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1811
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 自定义预设声音_2014525596830797826.json、音频生成/音频生成/多角色声音预设 Qwen3 TTS 自定义预设声音  训练专属声音模板_2022854958600687617.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI音乐仅1分钟生成4分钟长段完整音乐_1923984524676354049.json、平台全量/IndexTTS2 2.0｜效果最好_2118204808653004802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：29%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
 - `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
 - `SaveAudio`
+- `Text Multiline`
+
+**可变部分**（部分 workflow 才有）：
+- `DiffRhythmRun` —— 1/2 个有
+- `IndexTTS2BaseNode` —— 1/2 个有
 
 ## 典型参数
 

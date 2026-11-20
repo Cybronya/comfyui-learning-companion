@@ -3,46 +3,42 @@ name: unknown_workflow_sampler_91
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.619
-common_nodes: [Anything Everywhere3, Efficient Loader, KSampler (Efficient), PreviewImage, Prompts Everywhere, SaveImage]
+coverage: 0.9165
+common_nodes: [CR Prompt Text, ImageConcanate, JWInteger, LoadImage, Note Plus (mtb), RunningHub_UNO_Loadmodel, RunningHub_UNO_Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/一键运行：效率节点放大最简工作流，新人必备_1950475247025901569.json, 图片生成/文生图/效率节点文生图新人必备_1950456581726060545.json]
+members: [图片生成/图生图/UNO双图融合主题一致性工作流V1_1910340168090615809.json, 图片生成/图生图/Uno单图主题编辑一致性工作流_1910317954465001473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_91
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一键运行：效率节点放大最简工作流，新人必备_1950475247025901569.json、图片生成/文生图/效率节点文生图新人必备_1950456581726060545.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/UNO双图融合主题一致性工作流V1_1910340168090615809.json、图片生成/图生图/Uno单图主题编辑一致性工作流_1910317954465001473.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Anything Everywhere3`
-- `Efficient Loader`
-- `KSampler (Efficient)`
-- `PreviewImage`
-- `Prompts Everywhere`
+- `CR Prompt Text`
+- `ImageConcanate`
+- `JWInteger`
+- `LoadImage`
+- `Note Plus (mtb)`
+- `RunningHub_UNO_Loadmodel`
+- `RunningHub_UNO_Sampler`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `UltimateSDUpscale` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `ImageBatch` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -50,9 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,64 +1,109 @@
 ---
 name: image_to_image_inpaint_upscale_face_detailer
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.757
-common_nodes: [CLIPTextEncode, CR Text, CheckpointLoaderSimple, DeepTranslatorTextNode, FaceDetailer, Float, GrowMaskWithBlur, Image Comparer (rgthree), ImageAndMaskPreview, ImageScaleBy, InpaintModelConditioning, KSampler, LayerMask: MaskPreview, LoadImage, LoraLoaderModelOnly, PreviewImage, RH_Captioner, SAMLoader, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UltralyticsDetectorProvider, VAEDecode, VAEEncode, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.854
+common_nodes: [Any Switch (rgthree), Bounded Image Blend with Mask, Bounded Image Crop with Mask, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, FaceDetailer, Fast Bypasser (rgthree), Fast Groups Bypasser (rgthree), FluxGuidance, GetImageSize+, Image Comparer (rgthree), ImageCompositeMasked, ImageListToImageBatch, ImageResize+, ImageScale, ImageToMask, ImpactImageBatchToImageList, InpaintCrop, InpaintModelConditioning, InpaintStitch, JWImageResizeByLongerSide, JWMaskResize, KSampler, LayerMask: MaskGrow, LayerMask: SegformerB2ClothesUltra, LayerMask: SegmentAnythingUltra V2, LayerUtility: ColorImage, LayerUtility: ColorImage V2, LayerUtility: ColorPicker, LayerUtility: ImageBlendAdvance, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleRestore V2, LayerUtility: PurgeVRAM, LoadImage, MaskPreview+, MaskToImage, MathExpression|pysssss, PreviewImage, RepeatLatentBatch, SAMLoader, SaveImage, SetLatentNoiseMask, StyleModelApply, StyleModelLoader, UNETLoader, UltimateSDUpscale, UltralyticsDetectorProvider, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy clearCacheAll, easy float, easy ifElse, easy imageConcat, easy imageCropFromMask, easy imageSize, easy imageSizeBySide, easy int, easy isMaskEmpty, easy positive, easy seed]
 problems: []
 missing: []
-members: [图片生成/图生图/iL、Pony、XL通用动漫洗图修复_2073959860875837440.json, 视频生成/图生视频/王炸！iL、Pony、XL通用动漫洗图修复_2074498675400859650.json]
+members: [图片生成/图生图/【RICK团队】万物迁移V2_1906537202107748353.json, 平台全量/RH万物迁移V2_1928284820558725121.json, 平台全量/万物迁移2.0_1954922658841313282.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_inpaint_upscale_face_detailer
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/iL、Pony、XL通用动漫洗图修复_2073959860875837440.json、视频生成/图生视频/王炸！iL、Pony、XL通用动漫洗图修复_2074498675400859650.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【RICK团队】万物迁移V2_1906537202107748353.json、平台全量/RH万物迁移V2_1928284820558725121.json、平台全量/万物迁移2.0_1954922658841313282.json）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Bounded Image Blend with Mask`
+- `Bounded Image Crop with Mask`
 - `CLIPTextEncode`
-- `CR Text`
-- `CheckpointLoaderSimple`
-- `DeepTranslatorTextNode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DifferentialDiffusion`
+- `DualCLIPLoader`
 - `FaceDetailer`
-- `Float`
-- `GrowMaskWithBlur`
+- `Fast Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `FluxGuidance`
+- `GetImageSize+`
 - `Image Comparer (rgthree)`
-- `ImageAndMaskPreview`
-- `ImageScaleBy`
+- `ImageCompositeMasked`
+- `ImageListToImageBatch`
+- `ImageResize+`
+- `ImageScale`
+- `ImageToMask`
+- `ImpactImageBatchToImageList`
+- `InpaintCrop`
 - `InpaintModelConditioning`
+- `InpaintStitch`
+- `JWImageResizeByLongerSide`
+- `JWMaskResize`
 - `KSampler`
-- `LayerMask: MaskPreview`
+- `LayerMask: MaskGrow`
+- `LayerMask: SegformerB2ClothesUltra`
+- `LayerMask: SegmentAnythingUltra V2`
+- `LayerUtility: ColorImage`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ColorPicker`
+- `LayerUtility: ImageBlendAdvance`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleRestore V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `MaskPreview+`
+- `MaskToImage`
+- `MathExpression|pysssss`
 - `PreviewImage`
-- `RH_Captioner`
+- `RepeatLatentBatch`
 - `SAMLoader`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
+- `SetLatentNoiseMask`
+- `StyleModelApply`
+- `StyleModelLoader`
+- `UNETLoader`
+- `UltimateSDUpscale`
 - `UltralyticsDetectorProvider`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
-- `easy showAnything`
+- `VAELoader`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy float`
+- `easy ifElse`
+- `easy imageConcat`
+- `easy imageCropFromMask`
+- `easy imageSize`
+- `easy imageSizeBySide`
+- `easy int`
+- `easy isMaskEmpty`
+- `easy positive`
+- `easy seed`
+
+**可变部分**（部分 workflow 才有）：
+- `JWImageResize` —— 2/3 个有
+- `Preview Chooser` —— 2/3 个有
+- `easy imageChooser` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | normal | - | 2 | 100% |
-| 重绘幅度 | 0.25 | - | 2 | 100% |
+| 采样步数 | 25 | 25 - 25 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 0.25 | 0.25 - 0.25 | 3 | 100% |
 
 ## 常见问题
 
@@ -66,9 +111,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 normal，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 0.25，观测区间 0.25 - 0.25，3 个样本，取值集中（一致性 100%）

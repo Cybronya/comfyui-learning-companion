@@ -3,69 +3,78 @@ name: text_to_image_lora_sampler_clip_572
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.868
-common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, Image Comparer (rgthree), JjkText, JoinStrings, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Lora Loader, RH_RhartImageNG31FlashImageToImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: []
+coverage: 0.901667
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DaSiWa_LLMPromptWriter, EmptyImage, EmptyLatentImage, INTConstant, JjkText, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, ResizeImageMaskNode, SaveImage, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/文生图_图生图_全能图片三合一工作流_1955452266036674562.json, 图片生成/文生图/文生图_图生图_全能图片三合一工作流_2069693848510623745.json, 图片生成/文生图/文生图_图生图_全能图片三合一工作流_2069699625069666305.json]
+members: [图片生成/文生图/Krea2单双参考人物套图 人像写真批量生成方案_2110253494568574978.json, 图片生成/文生图/Krea2单双参考人物套图 人像写真批量生成方案_2110367813318828033.json, 图片生成/文生图/Krea2单双参考人物套图写真 人像写真批量生成_2109775101934788610.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_572
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/文生图_图生图_全能图片三合一工作流_1955452266036674562.json、图片生成/文生图/文生图_图生图_全能图片三合一工作流_2069693848510623745.json、图片生成/文生图/文生图_图生图_全能图片三合一工作流_2069699625069666305.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea2单双参考人物套图 人像写真批量生成方案_2110253494568574978.json、图片生成/文生图/Krea2单双参考人物套图 人像写真批量生成方案_2110367813318828033.json、图片生成/文生图/Krea2单双参考人物套图写真 人像写真批量生成_2109775101934788610.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AILab_QwenVL`
+- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
+- `DaSiWa_LLMPromptWriter`
+- `EmptyImage`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `Image Comparer (rgthree)`
+- `INTConstant`
 - `JjkText`
-- `JoinStrings`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Krea2EditGroundedEncode`
+- `Krea2EditModelPatch`
 - `LoadImage`
-- `Lora Loader`
-- `RH_RhartImageNG31FlashImageToImage`
+- `LoraLoaderModelOnly`
+- `ModelAttentionBackend`
+- `ResizeImageMaskNode`
 - `SaveImage`
+- `Text Concatenate`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `easy showAnything`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 15 | 15 - 15 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler_ancestral | - | 3 | 100% |
-| 调度器 | FlowMatchEulerDiscreteScheduler | - | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1080 | 1080 - 1080 | 3 | 100% |
-| 高度 | 1560 | 1560 - 1560 | 3 | 100% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 15，观测区间 15 - 15，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，3 个样本，一致性 100%
-- 调度器 最常用 FlowMatchEulerDiscreteScheduler，3 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 1080 - 1080，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1560，观测区间 1560 - 1560，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高发问题（8/3 个样本）：Steps较低可能导致细节不足

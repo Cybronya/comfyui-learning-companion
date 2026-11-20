@@ -3,43 +3,32 @@ name: unknown_workflow_sampler_58
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.980333
-common_nodes: [AudioConcat, EmptyAudio, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveVideo]
+coverage: 0.857
+common_nodes: [ImageConcanate, LoadImage, PrimitiveStringMultiline, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/05.01_2050111045171195905.json, 数字人/数字人/FlashHead声音克隆极速数字人_2028103957326864386.json, 数字人/数字人/FlashHead极速数字人_2028357670490611713.json]
+members: [图片生成/图生图/UniWord一句话移除人物_1931206886530723841.json, 图片生成/图生图/UniWord图像编辑_1932787965162573826.json, 图片生成/图生图/Uniworld转吉普力风格_1931458785959981058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_58
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/05.01_2050111045171195905.json、数字人/数字人/FlashHead声音克隆极速数字人_2028103957326864386.json、数字人/数字人/FlashHead极速数字人_2028357670490611713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/UniWord一句话移除人物_1931206886530723841.json、图片生成/图生图/UniWord图像编辑_1932787965162573826.json、图片生成/图生图/Uniworld转吉普力风格_1931458785959981058.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioConcat`
-- `EmptyAudio`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `ImageConcanate`
 - `LoadImage`
-- `RunningHub SoulX-FlashHead Loader`
-- `RunningHub SoulX-FlashHead Sampler`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 1/3 个有
-- `AudioCrop` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `Qwen3TTSModelLoader` —— 1/3 个有
-- `Qwen3TTSVoiceClone` —— 1/3 个有
-- `Text` —— 1/3 个有
+- `PrimitiveStringMultiline`
+- `RunningHubUniWorldSampler`
+- `RunningUniworldModelLoader`
+- `SaveImage`
 
 ## 典型参数
 

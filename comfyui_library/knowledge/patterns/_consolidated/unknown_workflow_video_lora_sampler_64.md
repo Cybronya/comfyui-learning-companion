@@ -1,80 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_64
 type: Unknown Workflow
-frequency: 20
+frequency: 23
 level: moderate
-coverage: 0.7895
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.784783
+common_nodes: [DownloadAndLoadFlorence2Model, Florence2Run, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, StringFunction|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/MultiTalk数字人唱歌-16G可玩_1942781589854031873.json, 数字人/数字人/MultiTalk数字人唱歌-16G可玩（优化版本）_1942816414530998274.json, 数字人/数字人/aiMVClip应用版_1985609275160645633.json, 数字人/数字人/稳定质量Multitalk--最新最强数字人_1936158876121337857.json, 视频生成/图生视频/MultiTalk 单人脱口秀｜KJ加速版_1936701399797501953.json, 视频生成/图生视频/MultiTalk+AniWan单人KJ高质量加速稳定版V4（UNI3C运镜-脸部稳定版）_1948784661829492737.json, 视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_1998945387329282050.json, 视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云_1998778583533412354.json, 视频生成/图生视频/MultiTalk+Aniwan单人KJ高质量加速稳定版V4（脸部一致性版）_1948782335715094529.json, 视频生成/图生视频/MultiTalk+UNI3C运镜_1986856996743876610.json, 视频生成/图生视频/MultiTalk_图生视频_1936815365949149186.json, 视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版(无clipvision版)_1936345879362310145.json, 视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版V2（大幅度增加时长）_1936304565509607426.json, 视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版（UNI3C运镜版）_1936341490123837441.json, 视频生成/图生视频/MultiTalk数字人口播单人版_1940606353897402370.json, 视频生成/图生视频/MultiTalk最强数字人插件16G可玩，音频+图片=王炸数字人_1937864518498455553.json, 视频生成/图生视频/Multitalk+aniwan数字人，可说话演讲可唱歌_1940356622893953026.json, 视频生成/图生视频/Multitalk数字人（极速版）_1937674986381295618.json, 视频生成/图生视频/ani ③-Multitalk数字人_1945034637402099713.json, 音频生成/音频生成/Multitalk+aniwan数字人，可说话演讲可唱歌_1949746352932741121.json]
+members: [视频生成/图生视频/【动态壁纸】 Wan2.1 图生视频_1926653775266877442.json, 视频生成/图生视频/【塞尔达传说】动漫动态壁纸-一键生成_1928668581439946753.json, 视频生成/图生视频/动态壁纸 Wan @般度五子_2070959715483475969.json, 视频生成/图生视频/动态壁纸_2054373287651749889.json, 视频生成/图生视频/动态壁纸_2054382753839362050.json, 视频生成/图生视频/动态壁纸_2054473798069563394.json, 视频生成/图生视频/动态壁纸_2054478953833877505.json, 视频生成/图生视频/动态壁纸一键制作_1928368447712051201.json, 视频生成/图生视频/动漫动态壁纸-一键生成_1926535706535993346.json, 视频生成/图生视频/动漫动态壁纸-一键生成，唯美！_2033441724210618370.json, 视频生成/图生视频/动漫动态壁纸-一键生成，唯美！_2043932369274540034.json, 视频生成/图生视频/图生图-动漫动态壁纸-一键生成_2067234276629901314.json, 视频生成/图生视频/支持苹果 Live 动态壁纸｜一键生成_1933695456268738561.json, 视频生成/图生视频/超顺滑动漫动态壁纸-图生图一键生成_2053629546980753409.json, 视频生成/图生视频/超顺滑动漫动态壁纸-图生图一键生成_2053662483356893185.json, 视频生成/图生视频/超顺滑动漫动态壁纸-图生图一键生成_2053670474537816066.json, 视频生成/图生视频/超顺滑动漫动态壁纸-图生图一键生成_2053675574866001922.json, 视频生成/图生视频/超顺滑动漫动态壁纸-图生图一键生成_2053993835801391105.json, 视频生成/图生视频/超顺滑动漫动态壁纸-图生图一键生成_2054045816519708674.json, 视频生成/图生视频/超顺滑动漫动态壁纸-图生图一键生成_2056564858732240898.json, 视频生成/图生视频/超顺滑动漫动态壁纸-图生图一键生成_2071593615868129282.json, 视频生成/图生视频/超顺滑动漫动态壁纸-图生图一键生成_2071596547552403457.json, 视频生成/图生视频/超顺滑动漫动态壁纸_2078863256298545153.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_64
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（数字人/数字人/MultiTalk数字人唱歌-16G可玩_1942781589854031873.json、数字人/数字人/MultiTalk数字人唱歌-16G可玩（优化版本）_1942816414530998274.json、数字人/数字人/aiMVClip应用版_1985609275160645633.json、数字人/数字人/稳定质量Multitalk--最新最强数字人_1936158876121337857.json、视频生成/图生视频/MultiTalk 单人脱口秀｜KJ加速版_1936701399797501953.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/【动态壁纸】 Wan2.1 图生视频_1926653775266877442.json、视频生成/图生视频/【塞尔达传说】动漫动态壁纸-一键生成_1928668581439946753.json、视频生成/图生视频/动态壁纸 Wan @般度五子_2070959715483475969.json、视频生成/图生视频/动态壁纸_2054373287651749889.json、视频生成/图生视频/动态壁纸_2054382753839362050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+全部 23 个 workflow 都包含：
+- `DownloadAndLoadFlorence2Model`
+- `Florence2Run`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
+- `StringFunction|pysssss`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 19/20 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 19/20 个有
-- `PrimitiveFloat` —— 19/20 个有
-- `TextInput_` —— 19/20 个有
-- `WanVideoClipVisionEncode` —— 19/20 个有
-- `LayerUtility: PurgeVRAM` —— 18/20 个有
-- `JWIntegerToString` —— 17/20 个有
-- `easy showAnything` —— 17/20 个有
-- `JWInteger` —— 16/20 个有
-- `PrimitiveInt` —— 14/20 个有
-- `VHS_LoadVideo` —— 7/20 个有
-- `WanVideoEncode` —— 7/20 个有
-- `WanVideoUni3C_ControlnetLoader` —— 7/20 个有
-- `WanVideoUni3C_embeds` —— 7/20 个有
-- `ImageResizeKJ` —— 6/20 个有
-- `WanVideoEnhanceAVideo` —— 4/20 个有
-- `WanVideoExperimentalArgs` —— 4/20 个有
-- `WanVideoSLG` —— 4/20 个有
-- `SaveAudio` —— 3/20 个有
-- `WanVideoEasyCache` —— 3/20 个有
-- `WanVideoFreeInitArgs` —— 3/20 个有
-- `WanVideoSetRadialAttention` —— 3/20 个有
-- `WanVideoContextOptions` —— 2/20 个有
-- `CR Text` —— 1/20 个有
-- `CreateCFGScheduleFloatList` —— 1/20 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/20 个有
-- `ImageResizeKJv2` —— 1/20 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/20 个有
-- `PreviewAudio` —— 1/20 个有
-- `WanVideoTorchCompileSettings` —— 1/20 个有
+- `Int` —— 22/23 个有
+- `MathExpression|pysssss` —— 22/23 个有
+- `WanVideoSLG` —— 22/23 个有
+- `WanVideoTeaCache` —— 22/23 个有
+- `Anything Everywhere` —— 21/23 个有
+- `CogVideoEnhanceAVideo` —— 21/23 个有
+- `WanVideoSetBlockSwap` —— 21/23 个有
+- `easy cleanGpuUsed` —— 21/23 个有
+- `ImageCASharpening+` —— 2/23 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/23 个有
+- `WanVideoEnhanceAVideo` —— 2/23 个有
+- `WanVideoVACEModelSelect` —— 2/23 个有
+- `Bjornulf_ShowInt` —— 1/23 个有
+- `PreviewImage` —— 1/23 个有
+- `WanVideoLoraSelectMulti` —— 1/23 个有
 
 ## 典型参数
 

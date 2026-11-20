@@ -1,55 +1,63 @@
 ---
 name: unknown_workflow_lora_sampler_clip_56
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.85575
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, DualCLIPLoader, FramePackFindNearestBucket, FramePackLoraSelect, FramePackSingleFrameSampler, ImageResize+, JWInteger, LoadFramePackModel, LoadImage, SaveImage, VAEDecodeTiled, VAEEncode, VAELoader]
+coverage: 0.821667
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DeepTranslatorTextNode, DualCLIPLoader, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleRestore V2, LoadImage, LoraLoaderModelOnly, MaskToSEGS, ModelSamplingFlux, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SDXL Empty Latent Image (rgthree), SEGSPreview, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, String Literal, Text Concatenate, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FramePack 人物动作编辑_1933859523817820161.json, 图片生成/图生图/FramePack 图生图｜动漫换背景_1935152830489796610.json, 图片生成/图生图/FramePack单图动作编辑_1945759748434305026.json, 图片生成/图生图/FramePack图像编辑-单帧动作编辑V1_1932773456045821954.json, 图片生成/图生图/FramePack图像编辑（人物一致性多图动作参考）V1_1932773473997787138.json, 图片生成/图生图/非常好用！FramePack图像编辑-单帧动作编辑_1933156434433744898.json, 数字人/数字人/首尾帧实现-FramePack单帧图编辑_1933112972015218689.json, 视频生成/图生视频/动漫换背景打光-FramePack单帧图编辑_1935136983549157377.json]
+members: [图片生成/图生图/一键照片转3D盲盒，贴合人脸和场景_1941682167602954241.json, 图片生成/图生图/一键照片转毛线盲盒，可爱版_2026926362723885058.json, 图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_1941716546383462401.json, 图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_2052555748349104130.json, 图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_2052565783896702977.json, 图片生成/图生图/一键照片鱿鱼游戏手办，真人形象保持一致_1941770037835546625.json, 图片生成/图生图/快去3D打印自己的玩偶形象，只需要上传一张照片就可快速生成自己的玩偶形象，贴合人脸和场景。_2016392018859139073.json, 图片生成/图生图/照片一键转毛线盲盒，复刻人脸和场景_2052586316793167874.json, 图片生成/图生图/真人照片转毛线盲盒，贴合人脸和场景_2053010892828229633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_56
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FramePack 人物动作编辑_1933859523817820161.json、图片生成/图生图/FramePack 图生图｜动漫换背景_1935152830489796610.json、图片生成/图生图/FramePack单图动作编辑_1945759748434305026.json、图片生成/图生图/FramePack图像编辑-单帧动作编辑V1_1932773456045821954.json、图片生成/图生图/FramePack图像编辑（人物一致性多图动作参考）V1_1932773473997787138.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/一键照片转3D盲盒，贴合人脸和场景_1941682167602954241.json、图片生成/图生图/一键照片转毛线盲盒，可爱版_2026926362723885058.json、图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_1941716546383462401.json、图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_2052555748349104130.json、图片生成/图生图/一键照片转毛线盲盒，贴合人脸和场景_2052565783896702977.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
+- `DeepTranslatorTextNode`
 - `DualCLIPLoader`
-- `FramePackFindNearestBucket`
-- `FramePackLoraSelect`
-- `FramePackSingleFrameSampler`
-- `ImageResize+`
-- `JWInteger`
-- `LoadFramePackModel`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleRestore V2`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `MaskToSEGS`
+- `ModelSamplingFlux`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RandomNoise`
+- `SDXL Empty Latent Image (rgthree)`
+- `SEGSPreview`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `VAEDecodeTiled`
-- `VAEEncode`
+- `ShowText|pysssss`
+- `String Literal`
+- `Text Concatenate`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 7/8 个有
-- `ImageConcatMulti` —— 7/8 个有
-- `FramePackTorchCompileSettings` —— 6/8 个有
-- `GetNode` —— 4/8 个有
-- `SetNode` —— 4/8 个有
-- `Image Rembg (Remove Background)` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `ChinesePrompt_Mix` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `Molmo7BDbnb` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 

@@ -3,34 +3,51 @@ name: unknown_workflow_generic_1787
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8165
-common_nodes: [IndexTTS2_ModelManager, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.633
+common_nodes: [BiRefNet_ModelLoader_Zho, BiRefNet_Zho, Fast Groups Muter (rgthree), GetImageSize+, GetNode, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), Image Comparer (rgthree), InspyrenetRembg, InvertMask, JoinImageWithAlpha, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerMask: SegmentAnythingUltra V2, LayerUtility: ImageCombineAlpha, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask Batch, MaskPreview+, RMBG, ResizeMask, SAMLoader, SaveImage, SetNode]
 problems: []
 missing: []
-members: [音频生成/音频生成/Easy IndexTTS2基础语音合成-文本转语音工作流_2094755880007987201.json, 音频生成/音频生成/Easy IndexTTS2多角色情感对话-情绪配音工作流_2094753739939868673.json]
+members: [图片生成/图生图/自用抠图_2082349884757331970.json, 平台全量/抠图合集 · 多种抠图方法整合V2.0【待发布】_2039333366947913730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1787
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Easy IndexTTS2基础语音合成-文本转语音工作流_2094755880007987201.json、音频生成/音频生成/Easy IndexTTS2多角色情感对话-情绪配音工作流_2094753739939868673.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/自用抠图_2082349884757331970.json、平台全量/抠图合集 · 多种抠图方法整合V2.0【待发布】_2039333366947913730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2_ModelManager`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2_Basic` —— 1/2 个有
-- `IndexTTS2_EmotionVoiceMultiTalk` —— 1/2 个有
+- `BiRefNet_ModelLoader_Zho`
+- `BiRefNet_Zho`
+- `Fast Groups Muter (rgthree)`
+- `GetImageSize+`
+- `GetNode`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `Image Comparer (rgthree)`
+- `InspyrenetRembg`
+- `InvertMask`
+- `JoinImageWithAlpha`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModel`
+- `LayerMask: SegmentAnythingUltra V2`
+- `LayerUtility: ImageCombineAlpha`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `Mask Batch`
+- `MaskPreview+`
+- `RMBG`
+- `ResizeMask`
+- `SAMLoader`
+- `SaveImage`
+- `SetNode`
 
 ## 典型参数
 

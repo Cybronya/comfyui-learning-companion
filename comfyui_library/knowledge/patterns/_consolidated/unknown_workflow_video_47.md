@@ -1,59 +1,49 @@
 ---
 name: unknown_workflow_video_47
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.788
-common_nodes: [ForLoopClose, ForLoopOpen, GetImageSize, ImageCropByMask, ImageFromBatch+, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, MaskFix+, MathExpression|pysssss, PlaySound|pysssss, PointsEditor, PreviewImage, PrimitiveInt, QuadMaskWarper, RTXVideoSuperResolution, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy batchAnything, easy indexAnything, easy showAnything]
+coverage: 0.989667
+common_nodes: [ImageResizeKJv2, Images to RGB, MaskPreview+, MaskToImage, RH_Translator, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy imageBatchToImageList, easy imageListToImageBatch]
 problems: []
 missing: []
-members: [视频生成/图生视频/举牌特效1漫剧电商服装分镜真人_2072948552581599233.json, 视频生成/图生视频/举牌特效2漫剧电商服装分镜真人_2073066511052398593.json, 视频生成/图生视频/举牌特效3漫剧电商服装分镜真人_2073276265880182786.json, 视频生成/图生视频/举牌特效4漫剧电商服装分镜真人_2073276252827512833.json]
+members: [图片生成/图生图/Sam3语义分割遮罩模型-Sam3 Segmentation_1991908961492291586.json, 平台全量/Sam3精准语义分割遮罩模型-Sam3 Segmentation-视频遮罩获取_2018851292554207234.json, 平台全量/Sam3语义分割遮罩_1992848049842049025.json, 平台全量/Sam3语义分割遮罩模型-Sam3 Segmentation_1991610436030308353.json, 平台全量/Sam3语义分割遮罩模型-Sam3 Segmentation_1991926394104115201.json, 平台全量/Sam3语义分割遮罩模型-Sam3 Segmentation_2007087851925671937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_47
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/举牌特效1漫剧电商服装分镜真人_2072948552581599233.json、视频生成/图生视频/举牌特效2漫剧电商服装分镜真人_2073066511052398593.json、视频生成/图生视频/举牌特效3漫剧电商服装分镜真人_2073276265880182786.json、视频生成/图生视频/举牌特效4漫剧电商服装分镜真人_2073276252827512833.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Sam3语义分割遮罩模型-Sam3 Segmentation_1991908961492291586.json、平台全量/Sam3精准语义分割遮罩模型-Sam3 Segmentation-视频遮罩获取_2018851292554207234.json、平台全量/Sam3语义分割遮罩_1992848049842049025.json、平台全量/Sam3语义分割遮罩模型-Sam3 Segmentation_1991610436030308353.json、平台全量/Sam3语义分割遮罩模型-Sam3 Segmentation_1991926394104115201.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ForLoopClose`
-- `ForLoopOpen`
-- `GetImageSize`
-- `ImageCropByMask`
-- `ImageFromBatch+`
+全部 6 个 workflow 都包含：
 - `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
-- `MaskFix+`
-- `MathExpression|pysssss`
-- `PlaySound|pysssss`
-- `PointsEditor`
-- `PreviewImage`
-- `PrimitiveInt`
-- `QuadMaskWarper`
-- `RTXVideoSuperResolution`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
+- `Images to RGB`
+- `MaskPreview+`
+- `MaskToImage`
+- `RH_Translator`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `easy batchAnything`
-- `easy indexAnything`
-- `easy showAnything`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/4 个有
-- `Bjornulf_ShowInt` —— 2/4 个有
-- `ImagePadKJ` —— 2/4 个有
-- `Images to RGB` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `ImageConcatenate_UTK` —— 1/4 个有
+- `INTConstant` —— 5/6 个有
+- `LoadSAM3Model` —— 5/6 个有
+- `SAM3Segmentation` —— 5/6 个有
+- `CR SDXL Aspect Ratio` —— 1/6 个有
+- `CustomAddLabel` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `easy sam3ModelLoader` —— 1/6 个有
+- `easy sam3VideoSegmentation` —— 1/6 个有
 
 ## 典型参数
 

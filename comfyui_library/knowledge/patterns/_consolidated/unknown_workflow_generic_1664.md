@@ -3,34 +3,35 @@ name: unknown_workflow_generic_1664
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8995
-common_nodes: [JjkText, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 1
+common_nodes: [AnyBooleanSwitch, CR Text, LoadImage, SaveImage, easy boolean]
 problems: []
 missing: []
-members: [数字人/数字人/全能图片 Pro_2013623319089647618.json, 视频生成/图生视频/全网最强超能视频2.0 多模态9图参考 生真人视频工作流 V1.0_2039203508150341633.json]
+members: [图片生成/图生图/全能图片2.0-10图参考编辑_2029013588903469057.json, 图片生成/图生图/全能图片PRO-10图参考编辑_2029467668931153921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1664
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/全能图片 Pro_2013623319089647618.json、视频生成/图生视频/全网最强超能视频2.0 多模态9图参考 生真人视频工作流 V1.0_2039203508150341633.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片2.0-10图参考编辑_2029013588903469057.json、图片生成/图生图/全能图片PRO-10图参考编辑_2029467668931153921.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
+- `AnyBooleanSwitch`
+- `CR Text`
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+- `SaveImage`
+- `easy boolean`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageNProEdit` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,67 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_119
 type: Unknown Workflow
-frequency: 10
-level: weak
-coverage: 0.9213
-common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 11
+level: moderate
+coverage: 0.977727
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/ComfyUI官方示例16：HiDream-I1文生图工作流 _ ComfyUI从入门到精通_1934213208926285826.json, 图片生成/文生图/FLUX Krea文生图_1950966820087988225.json, 图片生成/文生图/FLUX Krea文生图，低“AI味”，真实感_1959107680914845697.json, 图片生成/文生图/FLUX Krea文生图，低“AI味”，真实感_1991804904345907201.json, 图片生成/文生图/FLUX-Krea-BLAZE_1951967199781179393.json, 图片生成/文生图/Flux Krea 基础文生图工作流｜批量生产_1951122744584904705.json, 图片生成/文生图/Flux Krea 文生图 批量版_1951100464836321282.json, 图片生成/文生图/Flux Krea 文生图_1951056396223754242.json, 图片生成/文生图/Hidream 基础文生图_1913248213732683777.json, 图片生成/文生图/flux1-krea-dev（修正手脚细节）_1951256026077188097.json]
+members: [图片生成/文生图/Flux文生图（自动润色提示词）_1937568663094628354.json, 图片生成/文生图/Flux版IP三视图角色生成_1923645200881602562.json, 图片生成/文生图/Flux版IP三视图角色生成_1991794796115210242.json, 图片生成/文生图/Flux版_IP三视图角色一致性生成_1923655528982245378.json, 图片生成/文生图/IP三视图角色生成工作流_1929042246597820418.json, 图片生成/文生图/flux1-krea-dev 文生图_1951288327628599298.json, 图片生成/文生图/flux双lora批量出图_1900015521121579010.json, 图片生成/文生图/flux底膜双lora批量工作流5通道_1902172176840335361.json, 图片生成/文生图/flux文生图基础工作流+双lora_1887374428500549633.json, 图片生成/文生图/flux文生图多通道测试lora_1905507891238080513.json, 图片生成/文生图/最强文生图 flux krea 加强人物真实感_1952013936583495682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_119
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/ComfyUI官方示例16：HiDream-I1文生图工作流 _ ComfyUI从入门到精通_1934213208926285826.json、图片生成/文生图/FLUX Krea文生图_1950966820087988225.json、图片生成/文生图/FLUX Krea文生图，低“AI味”，真实感_1959107680914845697.json、图片生成/文生图/FLUX Krea文生图，低“AI味”，真实感_1991804904345907201.json、图片生成/文生图/FLUX-Krea-BLAZE_1951967199781179393.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Flux文生图（自动润色提示词）_1937568663094628354.json、图片生成/文生图/Flux版IP三视图角色生成_1923645200881602562.json、图片生成/文生图/Flux版IP三视图角色生成_1991794796115210242.json、图片生成/文生图/Flux版_IP三视图角色一致性生成_1923655528982245378.json、图片生成/文生图/IP三视图角色生成工作流_1929042246597820418.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 8/10 个有
-- `DualCLIPLoader` —— 8/10 个有
-- `CR Prompt List` —— 2/10 个有
-- `Image Comparer (rgthree)` —— 2/10 个有
-- `ModelSamplingSD3` —— 2/10 个有
-- `QuadrupleCLIPLoader` —— 2/10 个有
-- `Fans Prompt Styler Negative` —— 1/10 个有
-- `FluxKontextImageScale` —— 1/10 个有
-- `HYPIRImageRestoration` —— 1/10 个有
+- `LoraLoader` —— 8/11 个有
+- `CR Text` —— 3/11 个有
+- `CR Text Concatenate` —— 3/11 个有
+- `PMRF` —— 3/11 个有
+- `RH_Translator` —— 3/11 个有
+- `FluxGuidance` —— 2/11 个有
+- `Bjornulf_ShowStringText` —— 1/11 个有
+- `RH_LLMAPI_NODE` —— 1/11 个有
+- `TeaCache` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 50 | 10 | 51% |
-| Prompt 约束强度(CFG) | 1 | 1 - 5 | 10 | 14% |
-| 采样算法 | euler | - | 10 | 70% |
-| 调度器 | simple | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 1200 | 512 - 1920 | 11 | 68% |
+| 高度 | 1080 | 512 - 2560 | 11 | 60% |
+| LoRA 模型强度 | 1 | 0.8 - 1 | 8 | 91% |
+| LoRA 文本强度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 50，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，10 个样本，取值分散，一致性仅 14%
-- 采样算法 最常用 euler，10 个样本，一致性 70%
-- 调度器 最常用 simple，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1200，观测区间 512 - 1920，11 个样本
+- 高度 中位数 1080，观测区间 512 - 2560，11 个样本
+- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，8 个样本，取值集中（一致性 91%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

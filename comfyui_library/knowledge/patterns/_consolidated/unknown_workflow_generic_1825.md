@@ -3,38 +3,31 @@ name: unknown_workflow_generic_1825
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.949
-common_nodes: [Apply Whisper, AudioCrop, CR Text, LoadAudio, PreviewAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText|pysssss, SoundFlow_Concatenator, SynVowTextSplitter, TextPreview]
+coverage: 1
+common_nodes: [RH_SeedanceV15ProTextToVideoFast, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3TTS（文本分为3段）_2033793004783276034.json, 音频生成/音频生成/千问语音合成（文本分段）_2032834024103743490.json]
+members: [图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json, 视频生成/文生视频/SeedanceV15ProTextToVideoFast_2038487835606519810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1825
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3TTS（文本分为3段）_2033793004783276034.json、音频生成/音频生成/千问语音合成（文本分段）_2032834024103743490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json、视频生成/文生视频/SeedanceV15ProTextToVideoFast_2038487835606519810.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `CR Text`
-- `LoadAudio`
-- `PreviewAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText|pysssss`
-- `SoundFlow_Concatenator`
-- `SynVowTextSplitter`
-- `TextPreview`
+- `RH_SeedanceV15ProTextToVideoFast`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `MuyeTextEditOutput` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,116 +1,102 @@
 ---
 name: text_to_image_video_lora_sampler_50
 type: Text To Image
-frequency: 15
+frequency: 16
 level: strong
-coverage: 0.884
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.89975
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Minimax H3全能参考Selflift双采 Sage加速高质量直出_2110247054734880770.json, 视频生成/图生视频/Minimax H3全能参考Selflift双采 Sage加速高质量直出_2110372049079324674.json, 视频生成/图生视频/Minimax H3动作增强修复双采｜高动态脸部兼顾_2098773573254082561.json, 视频生成/图生视频/Minimax H3高质量高速度全能参考 Selflift双采Sage加速版_2110248726794162177.json, 视频生成/图生视频/Minimax H3高质量高速度全能参考 Selflift双采Sage加速版_2110362722650124289.json, 视频生成/图生视频/Minimax-H3lora)ENG8步多参生视频(双时钟图生极速2分钟出5秒ENG_2087129153064751106.json, 视频生成/图生视频/MinimaxH3全能参考高清放大｜9图12素材去噪加放大_2111315771795267585.json, 视频生成/图生视频/MinimaxH3双模双采hybird+remix｜双加速实验工作流_2094864494676762625.json, 视频生成/图生视频/Singularity真实人物双采流｜角色一致性高保真_2098716861327298562.json, 视频生成/图生视频/hybird+remix双模双采｜MinimaxH3双加速实验生成_2095055333248032769.json, 视频生成/图生视频/minmax潜空间放大姿势迁移｜图生视频新玩法_2097908550017306625.json, 视频生成/图生视频/双模双采hybird+remix｜MinimaxH3图生视频双larry加速_2093078463535210498.json, 视频生成/图生视频/双模双采加速｜MinimaxH3 hybrid+remix双larry工作流_2093241754479845378.json, 视频生成/图生视频/同模双采动态修复工作流｜H3图生视频画质增强生成_2097104202756608002.json, 视频生成/图生视频/多参生视频10秒直出｜Minimax二采768P升1080P高清_2090146522963992578.json]
+members: [视频生成/文生视频/Minimax_H3开源版8步极速文生视频｜600步新加速LORA加持｜短剧漫剧场景特效角色设计全能_2104444733849423874.json, 视频生成/文生视频/Minimax双时钟加速版图生视频文生视频生成_2088175309471444994.json, 视频生成/文生视频/h3开源版H3数字人加速四倍MiniMax图生视频口播数字宫格图片_2086259776987684865.json, 视频生成/文生视频/h3开源版H3数字人单人数字人图生视频口播数字人T8加速版MiniMax_2086264262372188162.json, 视频生成/文生视频/minimaxH3文生视频light2v8步lora双时钟生成工作流_2088272475523211266.json, 视频生成/文生视频/minimax三图工作流｜文生图生视频一键生成_2091309114570919938.json, 视频生成/文生视频/八步极速Minimax H3开源版 短剧漫剧创意视频新加速lora_2098305874950443010.json, 视频生成/文生视频/加速版单采参考生视频｜MiniMax H3长视频直出_2101171837278449665.json, 视频生成/文生视频/参考生成多模态视频｜Minimax H3文生视频生视频_2095567468348661762.json, 视频生成/文生视频/参考生成文生图生视频生视频｜Minimax H3视频生成工作流_2088390683336994818.json, 视频生成/文生视频/双时钟8步lora极速2分钟出5秒｜Minimax-H3图生多参生视频工作流_2087191069569146881.json, 视频生成/文生视频/双时钟8步lora极速4分钟出15秒480P｜Minimax-H3文生视频工作流_2087215608109821953.json, 视频生成/文生视频/开源版8步极速｜MiniMax H3文生视频跳舞创意_2093813895210299394.json, 视频生成/文生视频/开源版文生视频8步极速｜Minimax H3跳舞短剧漫剧创意生成_2095558045421101058.json, 视频生成/视频生视频/MiniMax H3视频复刻视频编辑视频翻拍二创与指定角色替换长视频直出方案_2106075579454943233.json, 视频生成/视频生视频/MiniMax H3视频复刻角色替换二创翻拍工作流，视频生视频图生视频方案_2106616300503134209.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_50
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/Minimax H3全能参考Selflift双采 Sage加速高质量直出_2110247054734880770.json、视频生成/图生视频/Minimax H3全能参考Selflift双采 Sage加速高质量直出_2110372049079324674.json、视频生成/图生视频/Minimax H3动作增强修复双采｜高动态脸部兼顾_2098773573254082561.json、视频生成/图生视频/Minimax H3高质量高速度全能参考 Selflift双采Sage加速版_2110248726794162177.json、视频生成/图生视频/Minimax H3高质量高速度全能参考 Selflift双采Sage加速版_2110362722650124289.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/文生视频/Minimax_H3开源版8步极速文生视频｜600步新加速LORA加持｜短剧漫剧场景特效角色设计全能_2104444733849423874.json、视频生成/文生视频/Minimax双时钟加速版图生视频文生视频生成_2088175309471444994.json、视频生成/文生视频/h3开源版H3数字人加速四倍MiniMax图生视频口播数字宫格图片_2086259776987684865.json、视频生成/文生视频/h3开源版H3数字人单人数字人图生视频口播数字人T8加速版MiniMax_2086264262372188162.json、视频生成/文生视频/minimaxH3文生视频light2v8步lora双时钟生成工作流_2088272475523211266.json…）
 
 - **类型**：Text To Image
-- **样本数**：15
+- **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ResolutionSelector`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 14/15 个有
-- `KSamplerSelect` —— 14/15 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 14/15 个有
-- `PrimitiveFloat` —— 14/15 个有
-- `H3SigmaRefiner` —— 12/15 个有
-- `PrimitiveStringMultiline` —— 12/15 个有
-- `BasicGuider` —— 11/15 个有
-- `RandomNoise` —— 11/15 个有
-- `SamplerCustomAdvanced` —— 11/15 个有
-- `LTXVConcatAVLatent` —— 10/15 个有
-- `LTXVSeparateAVLatent` —— 10/15 个有
-- `LoadAudio` —— 10/15 个有
-- `MiniMaxH3ReferenceToVideo` —— 9/15 个有
-- `MinimaxH3LatentUpscaler3D` —— 9/15 个有
-- `VAEDecodeAudio` —— 9/15 个有
-- `MiniMaxH3SigmaShift` —— 8/15 个有
-- `ModelAttentionBackend` —— 8/15 个有
-- `SplitSigmas` —— 8/15 个有
-- `MiniMaxH3TurboLoRA` —— 7/15 个有
-- `ModelPreviewOverrideKJ` —— 7/15 个有
-- `MiniMaxH3AVDecodeT8` —— 6/15 个有
-- `MiniMaxH3AudioConditioningT8` —— 6/15 个有
-- `SaveImage` —— 6/15 个有
-- `Seed (rgthree)` —— 5/15 个有
-- `ShellAgentPluginVideoCombineEncrypt` —— 5/15 个有
-- `easy cleanGpuUsed` —— 5/15 个有
-- `ConditioningZeroOut` —— 4/15 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/15 个有
-- `LoraLoaderBypassModelOnly` —— 4/15 个有
-- `SelfLiftH3Sampler` —— 4/15 个有
-- `CR Prompt Text` —— 2/15 个有
-- `GetNode` —— 2/15 个有
-- `MiniMaxLowVRAMAttention` —— 2/15 个有
-- `SetNode` —— 2/15 个有
-- `SolAttnMiniMax` —— 2/15 个有
-- `ManualSigmas` —— 1/15 个有
-- `MiniMaxH3BlockCacheT8` —— 1/15 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/15 个有
-- `MiniMaxH3HybridArtifactBuilderT8Advanced` —— 1/15 个有
-- `MiniMaxH3HybridLoader` —— 1/15 个有
-- `MiniMaxH3HybridModelLoaderT8Advanced` —— 1/15 个有
-- `MiniMaxH3HybridPairInspectorT8Advanced` —— 1/15 个有
-- `MiniMaxH3VRAMPolicyT8Advanced` —— 1/15 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/15 个有
-- `easy int` —— 1/15 个有
+- `LoraLoaderBypassModelOnly` —— 15/16 个有
+- `MiniMaxH3DualClockSamplerT8` —— 15/16 个有
+- `ResolutionSelector` —— 15/16 个有
+- `CR Prompt Text` —— 14/16 个有
+- `孤海注释` —— 13/16 个有
+- `LoadImage` —— 10/16 个有
+- `ModelAttentionBackend` —— 10/16 个有
+- `LoadAudio` —— 4/16 个有
+- `LoadVideo` —— 4/16 个有
+- `SaveImage` —— 3/16 个有
+- `SolAttnMiniMax` —— 3/16 个有
+- `VHS_LoadVideo` —— 3/16 个有
+- `GetVideoComponents` —— 2/16 个有
+- `Int` —— 2/16 个有
+- `CR Text` —— 1/16 个有
+- `DA3Inference` —— 1/16 个有
+- `DA3Render` —— 1/16 个有
+- `EmptyImage` —— 1/16 个有
+- `ImageScaleToTotalPixels` —— 1/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/16 个有
+- `LoadDA3Model` —— 1/16 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/16 个有
+- `PreviewImage` —— 1/16 个有
+- `PrimitiveStringMultiline` —— 1/16 个有
+- `ShowAnything|Mie` —— 1/16 个有
+- `VHS_LoadVideoFFmpeg` —— 1/16 个有
+- `VHS_VideoInfo` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 15 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 15 | 100% |
-| 采样算法 | er_sde | - | 15 | 100% |
-| 调度器 | beta | - | 15 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
-| 宽度 | 80 | 80 - 80 | 15 | 100% |
-| 高度 | 80 | 80 - 80 | 15 | 100% |
+| 宽度 | 80 | 80 - 80 | 16 | 100% |
+| 高度 | 80 | 80 - 80 | 16 | 100% |
+| 采样步数 | 4 | 4 - 4 | 16 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 16 | 100% |
+| 采样算法 | er_sde | - | 16 | 100% |
+| 调度器 | beta | - | 16 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，15 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，15 个样本，一致性 100%
-- 调度器 最常用 beta，15 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
-- 高发问题（15/15 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，16 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，16 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，16 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，16 个样本，一致性 100%
+- 调度器 最常用 beta，16 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 高发问题（16/16 个样本）：Steps较低可能导致细节不足

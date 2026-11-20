@@ -1,97 +1,70 @@
 ---
 name: unknown_workflow_lora_sampler_clip_25
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: strong
-coverage: 0.838917
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo]
+coverage: 0.652071
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/首尾帧ltx2_3_style_transition+全节点注释_2057807645574254594.json, 视频生成/图生视频/6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json, 视频生成/图生视频/7-LTX 2.3（音频转视频）Image + Audio to Video_2053481289776414721.json, 视频生成/图生视频/Heishen-video_ltx2_3_id_lora_2041874975627415554.json, 视频生成/图生视频/LTX-2.3-Image Audio to Video-distilled-lora-1.1_2044225142284357633.json, 视频生成/图生视频/LTX-2.3图生视频，声画同步_2035291558307700737.json, 视频生成/图生视频/LTX-2.3高动态MV无限时长，一张图一段音频一键生成。_2037366573874290689.json, 视频生成/图生视频/LTX2.3 图 + 音频数字人对口型_2043593704170070018.json, 视频生成/图生视频/LTX2.3-图像音频生视频，口型同步_2031297244112101377.json, 视频生成/图生视频/LTX2.3-数字人（支持双人对话）_2031346405217935361.json, 视频生成/图生视频/LTX2.3_数字人口播_v1.0_（mv数字人）_2054790441681342465.json, 视频生成/图生视频/LTX2.3_数字人口播_v1.1_（自定义音频_图像生视频）_2054484478025838593.json]
+members: [图片生成/文生图/矢量风格插画Flux+矢量Lora生图_1932014239752323074.json, 图片生成/文生图/简易贴纸制作工作流_1913052188661481473.json, 平台全量/10S生成室内设计图_1893206230348017666.json, 平台全量/Couple Profile Design-双角色设计【Context LoRA】_1856611294731522050.json, 平台全量/Film Storyboard-电影故事板【Context LoRA】_1856225714939760641.json, 平台全量/Font Design-字体设计【Context LoRA】_1856277609574174722.json, 平台全量/Home Decoration-家居装饰【Context LoRA】_1856281624013836289.json, 平台全量/Portrait Illustration-肖像插图【Context LoRA】_1856600733977366529.json, 平台全量/Portrait Photography-人像摄影【Context LoRA】_1856534151095848961.json, 平台全量/Runninghub Oneshot Prompter_1872524884764192770.json, 平台全量/Sandstorm Visual Effect-沙尘暴视觉效果【Context LoRA】_1856603877087891458.json, 平台全量/Sparklers Visual Effect-烟花视觉效果【Context LoRA】_1856569778264477698.json, 平台全量/Visual Identity Design-视觉识别设计【Context LoRA】_1856562720681103362.json, 平台全量/ppt-templates【Context LoRA】_1856547498772074498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_25
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/首尾帧ltx2_3_style_transition+全节点注释_2057807645574254594.json、视频生成/图生视频/6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json、视频生成/图生视频/7-LTX 2.3（音频转视频）Image + Audio to Video_2053481289776414721.json、视频生成/图生视频/Heishen-video_ltx2_3_id_lora_2041874975627415554.json、视频生成/图生视频/LTX-2.3-Image Audio to Video-distilled-lora-1.1_2044225142284357633.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/矢量风格插画Flux+矢量Lora生图_1932014239752323074.json、图片生成/文生图/简易贴纸制作工作流_1913052188661481473.json、平台全量/10S生成室内设计图_1893206230348017666.json、平台全量/Couple Profile Design-双角色设计【Context LoRA】_1856611294731522050.json、平台全量/Film Storyboard-电影故事板【Context LoRA】_1856225714939760641.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CFGGuider`
+全部 14 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LoraLoader`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `KSamplerSelect` —— 11/12 个有
-- `LTXVLatentUpsampler` —— 11/12 个有
-- `LatentUpscaleModelLoader` —— 11/12 个有
-- `ResizeImagesByLongerEdge` —— 11/12 个有
-- `LTXVImgToVideoInplace` —— 10/12 个有
-- `LoadAudio` —— 10/12 个有
-- `SolidMask` —— 10/12 个有
-- `VAEDecodeTiled` —— 10/12 个有
-- `LTXVAudioVAEEncode` —— 9/12 个有
-- `PrimitiveFloat` —— 9/12 个有
-- `PrimitiveStringMultiline` —— 9/12 个有
-- `SetLatentNoiseMask` —— 9/12 个有
-- `PrimitiveBoolean` —— 8/12 个有
-- `ResizeImageMaskNode` —— 8/12 个有
-- `TrimAudioDuration` —— 8/12 个有
-- `easy cleanGpuUsed` —— 5/12 个有
-- `PreviewAny` —— 4/12 个有
-- `LTXVEmptyLatentAudio` —— 3/12 个有
-- `LoraLoader` —— 3/12 个有
-- `TextGenerateLTX2Prompt` —— 3/12 个有
-- `GetImageSize` —— 2/12 个有
-- `ImageResizeKJv2` —— 2/12 个有
-- `SimpleMath+` —— 2/12 个有
-- `SoundFlow_GetLength` —— 2/12 个有
-- `VAEDecode` —— 2/12 个有
-- `easy clearCacheAll` —— 2/12 个有
-- `AudioCrop` —— 1/12 个有
-- `ImageResize+` —— 1/12 个有
-- `LTXVAddGuide` —— 1/12 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/12 个有
-- `LTXVReferenceAudio` —— 1/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
-- `Qwen3ASRLoader_DFT` —— 1/12 个有
-- `Qwen3ASRTranscribe_DFT` —— 1/12 个有
-- `RecordAudio` —— 1/12 个有
-- `SamplerEulerAncestral` —— 1/12 个有
-- `StringConcatenate` —— 1/12 个有
+- `EmptySD3LatentImage` —— 13/14 个有
+- `FluxGuidance` —— 13/14 个有
+- `JjkText` —— 13/14 个有
+- `ShowText|pysssss` —— 12/14 个有
+- `TextCombinerTwo` —— 12/14 个有
+- `Label (rgthree)` —— 11/14 个有
+- `ModelSamplingFlux` —— 11/14 个有
+- `PreviewImage` —— 11/14 个有
+- `TextCombinerSix` —— 11/14 个有
+- `RH_Prompter` —— 5/14 个有
+- `FluxResolutionNode` —— 2/14 个有
+- `BlurFusionForegroundEstimation` —— 1/14 个有
+- `EmptyLatentImage` —— 1/14 个有
+- `GetMaskByBiRefNet` —— 1/14 个有
+- `LoadRembgByBiRefNetModel` —— 1/14 个有
+- `PatchModelAddDownscale` —— 1/14 个有
+- `RH_OneShot_Prompter` —— 1/14 个有
+- `RembgByBiRefNet` —— 1/14 个有
+- `StringFunction|pysssss` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 1 | 0.65 - 1 | 14 | 90% |
+| LoRA 文本强度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 1280 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -99,7 +72,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 0.65 - 1，14 个样本，取值集中（一致性 90%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）

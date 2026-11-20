@@ -3,36 +3,29 @@ name: unknown_workflow_generic_1451
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6165
-common_nodes: [LoadImage, PreviewImage, PrimitiveString, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.875
+common_nodes: [ByteDanceImageToVideoNode, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/亿薪海报_2102278162146222081.json, 图片生成/文生图/全能图片G-单图模式-支持PS插件_2047191235810562049.json]
+members: [comfyui-workflow-templates-json/api_bytedance_image_to_video.json, comfyui-workflow-templates-json/api_bytedance_seedance1_5_image_to_video.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1451
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/亿薪海报_2102278162146222081.json、图片生成/文生图/全能图片G-单图模式-支持PS插件_2047191235810562049.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_image_to_video.json、comfyui-workflow-templates-json/api_bytedance_seedance1_5_image_to_video.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `ByteDanceImageToVideoNode`
 - `LoadImage`
-- `PreviewImage`
-- `PrimitiveString`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 1/2 个有
-- `RHSettingsNode` —— 1/2 个有
-- `StringReplace` —— 1/2 个有
+- `SaveVideo`
 
 ## 典型参数
 

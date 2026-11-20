@@ -1,35 +1,34 @@
 ---
 name: unknown_workflow_generic_265
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.972222
-common_nodes: [LoadImage, RH_CinematicVideoGenerator, SaveVideo]
+coverage: 0.7467
+common_nodes: [RH_MinimaxHailuoH3TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/(支持真人)超能视频2.0多图参考（1秒1元）_2034958305579241473.json, 视频生成/图生视频/SD2.0不排队工作流_2034160236482797570.json, 视频生成/图生视频/Seedance2.0_豆包_即梦全能视频SD2.0+图生视频(体验版)_2037083730082271234.json, 视频生成/图生视频/全能视频SD2.0 图生视频(体验版)_2033892661203046402.json, 视频生成/图生视频/全能视频超能视频2.0—Ai漫剧—Ai短剧_2034157040687390722.json, 视频生成/图生视频/支持多图生视频全能视频SD2.0 (体验版)_2035937654084214786.json, 视频生成/图生视频/豆包seedance2.0_2036359930034262018.json, 视频生成/图生视频/超能视频2.0，不排队_2035380351849209858.json, 视频生成/文生视频/(支持真人)超能视频2.0视频生成_2034258331358994434.json]
+members: [图片生成/文生图/海螺Hailuo H3文生视频_2083156802023284737.json, 视频生成/图生视频/MiniMax-H3满血版文生视频_2083612694288097281.json, 视频生成/文生视频/MiniMax H3 文生视频（RH API 版）_2083829023389601793.json, 视频生成/文生视频/MiniMax-H3 文生视频_2083029507518324737.json, 视频生成/文生视频/MiniMax-H3 文生视频_2083070394210283521.json, 视频生成/文生视频/MiniMax-H3 文生视频_2083540113329577985.json, 视频生成/文生视频/Minimax H3 文生视频工作流（2K视频直出）_2083093802167922689.json, 视频生成/文生视频/Minimax H3-文生图_2083243371103084546.json, 视频生成/文生视频/海螺H3(minimax H3)文生视频_2083372577329864705.json, 视频生成/文生视频/海螺Hailuo H3文生视频（RH版）_2083013266611204097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_265
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(支持真人)超能视频2.0多图参考（1秒1元）_2034958305579241473.json、视频生成/图生视频/SD2.0不排队工作流_2034160236482797570.json、视频生成/图生视频/Seedance2.0_豆包_即梦全能视频SD2.0+图生视频(体验版)_2037083730082271234.json、视频生成/图生视频/全能视频SD2.0 图生视频(体验版)_2033892661203046402.json、视频生成/图生视频/全能视频超能视频2.0—Ai漫剧—Ai短剧_2034157040687390722.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/海螺Hailuo H3文生视频_2083156802023284737.json、视频生成/图生视频/MiniMax-H3满血版文生视频_2083612694288097281.json、视频生成/文生视频/MiniMax H3 文生视频（RH API 版）_2083829023389601793.json、视频生成/文生视频/MiniMax-H3 文生视频_2083029507518324737.json、视频生成/文生视频/MiniMax-H3 文生视频_2083070394210283521.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadImage`
-- `RH_CinematicVideoGenerator`
+全部 10 个 workflow 都包含：
+- `RH_MinimaxHailuoH3TextToVideo`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/9 个有
-- `easy seed` —— 1/9 个有
+- `easy showAnything` —— 4/10 个有
+- `Label (rgthree)` —— 1/10 个有
 
 ## 典型参数
 

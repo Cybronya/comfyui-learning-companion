@@ -1,84 +1,72 @@
 ---
 name: unknown_workflow_controlnet_video_lora_32
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4945
-common_nodes: [BBoxYOLO, BodyRatioMapperProportionTransfer, BodyRatioMapperSDPoseRender, CLIPVisionLoader, CheckpointLoaderSimple, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageResizeKJv2, ImpactConditionalBranch, JjkText, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PlaySound|pysssss, PoseAndFaceDetection, PoseJSONToPoseKeypoint, PoseKeypointPreview, PreviewImage, PrimitiveBoolean, SDPoseKeypointExtractor, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, YOLOModelLoader]
+frequency: 4
+level: moderate
+coverage: 0.60625
+common_nodes: [Anything Everywhere, CR Prompt Text, CreateCFGScheduleFloatList, FloatConstant, GetNode, INTConstant, ImageResizeKJ, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveInt, Seed (rgthree), SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/merged_wf_v5_api_2064278343247294465.json, 视频生成/图生视频/Wan2.2+Animate+动作迁移天花板级工作流（加强版）_2069239719984189441.json]
+members: [视频生成/图生视频/04-04-01-WAN2.2-Uni3C+运镜控制图生视频_1990968895060254722.json, 视频生成/图生视频/04-04-02-WAN2.2-Uni3C+Omniconsistency转绘_1990968940883025922.json, 视频生成/图生视频/wan2.2图片反推+镜头控制_2000506448629166082.json, 视频生成/图生视频/天蝎猫--wan2.2图片反推+镜头控制_2002900702877892610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_32
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/merged_wf_v5_api_2064278343247294465.json、视频生成/图生视频/Wan2.2+Animate+动作迁移天花板级工作流（加强版）_2069239719984189441.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/04-04-01-WAN2.2-Uni3C+运镜控制图生视频_1990968895060254722.json、视频生成/图生视频/04-04-02-WAN2.2-Uni3C+Omniconsistency转绘_1990968940883025922.json、视频生成/图生视频/wan2.2图片反推+镜头控制_2000506448629166082.json、视频生成/图生视频/天蝎猫--wan2.2图片反推+镜头控制_2002900702877892610.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：49%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BBoxYOLO`
-- `BodyRatioMapperProportionTransfer`
-- `BodyRatioMapperSDPoseRender`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `Fast Groups Bypasser (rgthree)`
+全部 4 个 workflow 都包含：
+- `Anything Everywhere`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `FloatConstant`
 - `GetNode`
 - `INTConstant`
-- `ImageResizeKJv2`
-- `ImpactConditionalBranch`
-- `JjkText`
-- `LayerUtility: PurgeVRAM V2`
+- `ImageResizeKJ`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PlaySound|pysssss`
-- `PoseAndFaceDetection`
-- `PoseJSONToPoseKeypoint`
-- `PoseKeypointPreview`
+- `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `PrimitiveBoolean`
-- `SDPoseKeypointExtractor`
+- `PrimitiveInt`
+- `Seed (rgthree)`
 - `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoTextEncodeCached`
+- `WanVideoSampler`
+- `WanVideoScheduler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `YOLOModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageBatchMulti` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `VHS_LoadVideoFFmpeg` —— 1/2 个有
-- `VHS_VideoInfo` —— 1/2 个有
-- `WanVideoContextOptions` —— 1/2 个有
-- `WanVideoSampler` —— 1/2 个有
-- `WanVideoSamplerFromSettings` —— 1/2 个有
-- `WanVideoSamplerSettings` —— 1/2 个有
-- `WanVideoSetBlockSwap` —— 1/2 个有
-- `WanVideoSetLoRAs` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `ImageConcanate` —— 3/4 个有
+- `Qwen3_VQA` —— 2/4 个有
+- `Text Multiline (Code Compatible)` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `ImageFromBatch+` —— 1/4 个有
+- `RH_Jimeng_Image2Video_V2` —— 1/4 个有
+- `RunningHub OmniConsistency LoraLoader` —— 1/4 个有
+- `RunningHub OmniConsistency Sampler` —— 1/4 个有
+- `SaveVideo` —— 1/4 个有
+- `VideoLoader` —— 1/4 个有
 
 ## 典型参数
 
@@ -90,4 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

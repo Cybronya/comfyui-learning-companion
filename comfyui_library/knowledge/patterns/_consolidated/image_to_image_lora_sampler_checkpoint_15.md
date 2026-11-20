@@ -3,68 +3,47 @@ name: image_to_image_lora_sampler_checkpoint_15
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.8375
-common_nodes: [Bjornulf_ShowInt, CFGNorm, CLIPLoader, CR Prompt Text, CheckpointLoaderSimple, ConditioningZeroOut, GetNode, ImageScaleToTotalPixels, Int, JDCN_StringToList, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveInt, ProcessString, SetNode, Text Concatenate, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy anythingIndexSwitch, easy imageListToImageBatch]
+coverage: 0.914
+common_nodes: [CR Text, CheckpointLoaderSimple, ConditioningZeroOut, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/【CQ808】相同人物多姿势_Qwen_V.10_2014193044886654978.json, 图片生成/图生图/一图万变，思维决定舞台大小z-image2511+zip输出_2006898766586056706.json]
+members: [图片生成/图生图/WH-AI-Studio-Qwen2511万能单图修改器_2015621556352847873.json, 图片生成/图生图/WH-AI-Studio-万向镜头可视调节+提示词改动作（Qwen-Edit）_2011066245751246850.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_checkpoint_15
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【CQ808】相同人物多姿势_Qwen_V.10_2014193044886654978.json、图片生成/图生图/一图万变，思维决定舞台大小z-image2511+zip输出_2006898766586056706.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/WH-AI-Studio-Qwen2511万能单图修改器_2015621556352847873.json、图片生成/图生图/WH-AI-Studio-万向镜头可视调节+提示词改动作（Qwen-Edit）_2011066245751246850.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `CFGNorm`
-- `CLIPLoader`
-- `CR Prompt Text`
+- `CR Text`
 - `CheckpointLoaderSimple`
 - `ConditioningZeroOut`
-- `GetNode`
-- `ImageScaleToTotalPixels`
-- `Int`
-- `JDCN_StringToList`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PrimitiveInt`
-- `ProcessString`
-- `SetNode`
-- `Text Concatenate`
+- `PreviewImage`
+- `SaveImage`
 - `TextEncodeQwenImageEditPlus`
-- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchCount+` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `CompressImages` —— 1/2 个有
-- `DuckHideNode` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Manual XY Entry Info` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RHBatchImages:` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `TT_img_enc_v2` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
-- `easy imageCount` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `QwenMultiangleCameraNode` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
+- `easy imageConcat` —— 1/2 个有
+- `easy promptConcat` —— 1/2 个有
 
 ## 典型参数
 

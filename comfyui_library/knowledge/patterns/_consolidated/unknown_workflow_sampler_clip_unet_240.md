@@ -3,22 +3,22 @@ name: unknown_workflow_sampler_clip_unet_240
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.933833
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.893833
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/千问2512文生图海报、图片设计_2093310820385116161.json, 图片生成/文生图/小红书风格加黑丝_2003393169008041986.json, 图片生成/文生图/小腰精_01_2037141728938958849.json, 图片生成/文生图/小腰精_胸部_2103720016867848193.json, 图片生成/文生图/文生图  boogu_2067835171948290050.json, 图片生成/文生图/文生图(人像)_2006960061226164225.json]
+members: [comfyui-workflow-templates-json/video_wan2_2_5B_ti2v.json, comfyui-workflow-templates-json/video_wan_ati.json, comfyui-workflow-templates-json/wan2.1_flf2v_720_f16.json, 图片生成/图生图/WanFLF2V + CausVid lora速度提升首尾帧视频_1936806458011062274.json, 视频生成/图生视频/03-04-01-WAN2.1-首尾帧生成视频-FLF2V-原生_1989234682468372481.json, 视频生成/图生视频/电商首尾帧生图（高清稳定版）wan21 flf2v_2012067791884521474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_240
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/千问2512文生图海报、图片设计_2093310820385116161.json、图片生成/文生图/小红书风格加黑丝_2003393169008041986.json、图片生成/文生图/小腰精_01_2037141728938958849.json、图片生成/文生图/小腰精_胸部_2103720016867848193.json、图片生成/文生图/文生图  boogu_2067835171948290050.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan2_2_5B_ti2v.json、comfyui-workflow-templates-json/video_wan_ati.json、comfyui-workflow-templates-json/wan2.1_flf2v_720_f16.json、图片生成/图生图/WanFLF2V + CausVid lora速度提升首尾帧视频_1936806458011062274.json、视频生成/图生视频/03-04-01-WAN2.1-首尾帧生成视频-FLF2V-原生_1989234682468372481.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -26,47 +26,48 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `KSampler`
-- `SaveImage`
+- `LoadImage`
+- `ModelSamplingSD3`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 5/6 个有
-- `EmptySD3LatentImage` —— 4/6 个有
-- `LoraLoader` —— 4/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `QwenImageLatentAspectRatio` —— 2/6 个有
-- `ConditioningCombine` —— 1/6 个有
-- `ConditioningSetTimestepRange` —— 1/6 个有
-- `VideoLinearCFGGuidance` —— 1/6 个有
+- `CLIPVisionEncode` —— 5/6 个有
+- `CLIPVisionLoader` —— 5/6 个有
+- `WanFirstLastFrameToVideo` —— 4/6 个有
+- `CreateVideo` —— 3/6 个有
+- `SaveVideo` —— 3/6 个有
+- `VHS_VideoCombine` —— 3/6 个有
+- `JjkText` —— 1/6 个有
+- `LoraLoader` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `Wan22ImageToVideoLatent` —— 1/6 个有
+- `WanTrackToVideo` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8.5 | 4 - 12 | 6 | 71% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 6 | 0% |
-| 采样算法 | euler | - | 6 | 50% |
-| 调度器 | simple | - | 6 | 67% |
+| 采样步数 | 20 | 4 - 20 | 6 | 56% |
+| Prompt 约束强度(CFG) | 3 | 1 - 5 | 6 | 48% |
+| 采样算法 | uni_pc | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| LoRA 模型强度 | 1 | 0.8 - 1 | 4 | 91% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8.5，观测区间 4 - 12，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，6 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，6 个样本，一致性 50%
-- 调度器 最常用 simple，6 个样本，一致性 67%
+- 采样步数 中位数 20，观测区间 4 - 20，6 个样本
+- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 5，6 个样本，取值分散，一致性仅 48%
+- 采样算法 最常用 uni_pc，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，4 个样本，取值集中（一致性 91%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/6 个样本）：Steps较低可能导致细节不足

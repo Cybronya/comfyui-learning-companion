@@ -3,43 +3,41 @@ name: unknown_workflow_vae_2
 type: Unknown Workflow
 frequency: 11
 level: moderate
-coverage: 0.874909
-common_nodes: [CreateVideo, PrimitiveStringMultiline, RHMiniMaxH3ModelLoader, RHMiniMaxH3TextEncoderLoader, RHMiniMaxH3VAELoader, SaveVideo]
+coverage: 0.783909
+common_nodes: [FluxKontextImageScale, LoadImage, SaveImage, VAEEncode, VAELoader, workflow>Edit]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3 MAX图生视频工作流｜旗舰模型图片动起来_2095422142685990913.json, 视频生成/图生视频/H3 MAX首尾帧工作流｜旗舰模型双图过渡_2095433147952484353.json, 视频生成/图生视频/H3双采口播工作流｜照片+文案自动配音数字人_2095417328619057153.json, 视频生成/图生视频/H3音画同步-参考视频工作流_2094956326815358978.json, 视频生成/图生视频/H3首尾帧转场-过渡视频工作流_2094949587558686721.json, 视频生成/图生视频/MiniMax H3上下文参考生视频-AI看图自动写镜头工作流_2096426915707047938.json, 视频生成/图生视频/MiniMax H3上下文参考视频+图生视频-融合运镜与角色工作流_2096427200533848066.json, 视频生成/图生视频/MiniMax H3上下文多参考生视频-多图融合工作流_2096426983138877441.json, 视频生成/图生视频/MiniMax H3全能参考-图音视频多素材再生工作流_2095040014278287362.json, 视频生成/图生视频/MiniMax H3全能参考30秒-图音视频多素材拼接工作流_2096903622029303810.json, 视频生成/图生视频/MiniMax H3全能参考60秒-图音视频多素材拼接工作流_2096903657953513473.json]
+members: [图片生成/图生图/Flux Kontext ImageEdit _集成节点_Borges_1951600552453066754.json, 图片生成/图生图/Flux.1 Kontext Dev 组节点工作流_1938332187412336641.json, 图片生成/图生图/Kontext多图编辑_1938409009307385858.json, 图片生成/文生图/三图融场景布置ComfyUI官方版_1942769069844008962.json, 图片生成/文生图/三图融场景布置ComfyUI官方版_1942769843042979841.json, 平台全量/三图融场景_Kontext-DEV开源ComfyUI-FastCanvas Tool_1939850302440775681.json, 平台全量/三图融场景_Kontext-DEV开源ComfyUI官方版_1938881906878697474.json, 平台全量/三图融场景布置(家具_地标打卡等)_Kontext-DEV开源ComfyUI官方版_1938404629254180865.json, 平台全量/多人合影_Kontext-DEV开源ComfyUI官方版_1938536260644306945.json, 平台全量/电商商品展示_Kontext-DEV开源ComfyUI官方版-Remove BG_1940344282739773441.json, 平台全量/电商商品展示_Kontext-DEV开源ComfyUI官方版-Remove BG_1940555439333601281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_vae_2
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/H3 MAX图生视频工作流｜旗舰模型图片动起来_2095422142685990913.json、视频生成/图生视频/H3 MAX首尾帧工作流｜旗舰模型双图过渡_2095433147952484353.json、视频生成/图生视频/H3双采口播工作流｜照片+文案自动配音数字人_2095417328619057153.json、视频生成/图生视频/H3音画同步-参考视频工作流_2094956326815358978.json、视频生成/图生视频/H3首尾帧转场-过渡视频工作流_2094949587558686721.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Flux Kontext ImageEdit _集成节点_Borges_1951600552453066754.json、图片生成/图生图/Flux.1 Kontext Dev 组节点工作流_1938332187412336641.json、图片生成/图生图/Kontext多图编辑_1938409009307385858.json、图片生成/文生图/三图融场景布置ComfyUI官方版_1942769069844008962.json、图片生成/文生图/三图融场景布置ComfyUI官方版_1942769843042979841.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `CreateVideo`
-- `PrimitiveStringMultiline`
-- `RHMiniMaxH3ModelLoader`
-- `RHMiniMaxH3TextEncoderLoader`
-- `RHMiniMaxH3VAELoader`
-- `SaveVideo`
+- `FluxKontextImageScale`
+- `LoadImage`
+- `SaveImage`
+- `VAEEncode`
+- `VAELoader`
+- `workflow>Edit`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 10/11 个有
-- `RHMiniMaxH3RefGen` —— 7/11 个有
-- `LoadAudio` —— 4/11 个有
-- `RHMiniMaxH3VideoGen` —— 4/11 个有
-- `LoadVideo` —— 3/11 个有
-- `PrimitiveFloat` —— 3/11 个有
-- `Video Slice` —— 3/11 个有
-- `VideoConcatenate` —— 2/11 个有
-- `OmniVoiceVoiceDesignTTS` —— 1/11 个有
+- `ImageStitch` —— 9/11 个有
+- `PreviewImage` —— 9/11 个有
+- `ImageConcatMulti` —— 8/11 个有
+- `FastCanvas` —— 3/11 个有
+- `FastCanvasTool` —— 3/11 个有
+- `easy imageRemBg` —— 3/11 个有
+- `Note Plus (mtb)` —— 1/11 个有
 
 ## 典型参数
 

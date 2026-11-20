@@ -1,39 +1,43 @@
 ---
 name: unknown_workflow_generic_202
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.6313
-common_nodes: [LoadVideo, ShowText|pysssss, easy saveText]
+coverage: 0.664545
+common_nodes: [CR Text Concatenate, ImageScale, JjkText, LayerUtility: TextJoin, LoadImage, SaveImage, ShowAnything|Mie, easy promptList]
 problems: []
 missing: []
-members: [图片生成/反推提示词/SD2.0+Seedance 2.0+反推视频提示词+Gemini 3.5+全节点注释_2093914172546437121.json, 图片生成/反推提示词/反推视频提示词-2_2107404573160853506.json, 图片生成/反推提示词/支持15s+反推视频提示词+视频反推提示词+Gemini 3.1 Pro_2028875338754822145.json, 图片生成/反推提示词/最强反推视频提示词+支持15s_2089364684322459650.json, 图片生成/反推提示词/短视频爆款 脚本洗稿 2.0_2038181497189961729.json, 图片生成/反推提示词/短视频爆款视频拆解 娱乐版 1.0_2022360036948840450.json, 图片生成/反推提示词/短视频爆款视频拆解 娱乐版_2102329266594729985.json, 图片生成/文生图/Gemini 3.5 flash+反推视频提示词+视频反推提示词+全节点注释_2058525227860185089.json, 图片生成/文生图/RHTV同款一次0.02+反推提示词+反推视频提示词+视频提示词+视频反推视频+全节点注释_2058528863780696065.json, 图片生成/文生图/SD2.0+Seedance 2.0+反推视频提示词+Gemini 3.5+全节点注释_2058528703394701314.json]
+members: [图片生成/图生图/Landing Page_2088148744884801538.json, 图片生成/图生图/Landing Page_2094980922335653890.json, 图片生成/图生图/Landing Page_2095445804625514497.json, 图片生成/图生图/Share Widget_2088163958049038338.json, 图片生成/图生图/Share Widget_2094984076674560002.json, 图片生成/图生图/Share Widget_2100890338922688513.json, 图片生成/图生图/check-in share image_2088162132742467585.json, 图片生成/图生图/check-in share image_2094986000056541186.json, 图片生成/图生图/check-in share image_2099410605252890626.json, 图片生成/图生图/luodixiangqingye_2095457838620565505.json, 图片生成/图生图/luodixiangqingye_2100892567083765762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_202
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/SD2.0+Seedance 2.0+反推视频提示词+Gemini 3.5+全节点注释_2093914172546437121.json、图片生成/反推提示词/反推视频提示词-2_2107404573160853506.json、图片生成/反推提示词/支持15s+反推视频提示词+视频反推提示词+Gemini 3.1 Pro_2028875338754822145.json、图片生成/反推提示词/最强反推视频提示词+支持15s_2089364684322459650.json、图片生成/反推提示词/短视频爆款 脚本洗稿 2.0_2038181497189961729.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Landing Page_2088148744884801538.json、图片生成/图生图/Landing Page_2094980922335653890.json、图片生成/图生图/Landing Page_2095445804625514497.json、图片生成/图生图/Share Widget_2088163958049038338.json、图片生成/图生图/Share Widget_2094984076674560002.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LoadVideo`
-- `ShowText|pysssss`
-- `easy saveText`
+全部 11 个 workflow 都包含：
+- `CR Text Concatenate`
+- `ImageScale`
+- `JjkText`
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `SaveImage`
+- `ShowAnything|Mie`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_Pro_Node` —— 9/10 个有
-- `RHHiddenNodes` —— 7/10 个有
-- `easy positive` —— 7/10 个有
-- `LoadImage` —— 3/10 个有
-- `CR Prompt Text` —— 2/10 个有
-- `RH_RhartTextG3FlashPreviewVideoToText` —— 1/10 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 8/11 个有
+- `ImageBatchMultiple+` —— 5/11 个有
+- `ImageFromBatch+` —— 5/11 个有
+- `RH_RhartImageG25FlareImageToImage` —— 2/11 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/11 个有
 
 ## 典型参数
 

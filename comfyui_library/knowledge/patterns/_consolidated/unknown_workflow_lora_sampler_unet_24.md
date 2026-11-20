@@ -1,80 +1,70 @@
 ---
 name: unknown_workflow_lora_sampler_unet_24
 type: Unknown Workflow
-frequency: 18
+frequency: 19
 level: strong
-coverage: 0.641
-common_nodes: [Anything Everywhere3, CFGNorm, CLIPLoader, CR Text, GetNode, JDCN_StringToList, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ProcessString, RH_LLMAPI_NODE, SaveImage, SetNode, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.942158
+common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FireRed-Image-Edit 1.1 上传图片一键分镜_2033173454689669122.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2053434132474150914.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2054157894966366210.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2073017193691963394.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2077016584656343041.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2083919554585128961.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2101264219399344129.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2111789094073360385.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2111795349353488385.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜与关键帧全流程提示词_2046960867496960002.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜与关键帧全流程提示词_2056914263595376641.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜与关键帧全流程提示词_2057278935905431553.json, 图片生成/图生图/h3分镜图FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程去水印_2086670579725324289.json, 图片生成/图生图/一键分镜工作流V2（支持动漫和真人）_2031222012189872129.json, 图片生成/图生图/一键分镜工作流V2（支持动漫和真人）_2073952433583255554.json, 图片生成/图生图/圣诞气氛一键达_1995787953970483202.json, 图片生成/图生图/换装-圣诞氛围冬季换装_1996749447172431874.json, 图片生成/图生图/超好用🔥单图一键生成专业影视分镜与关键帧全流程提示词 新_2052579231091175425.json]
+members: [图片生成/图生图/qwen_肤质优化_2072888068935340033.json, 图片生成/图生图/seedance2.0真人过审核方法（适用于豆包、即梦、小云雀）_2037113635297828866.json, 图片生成/图生图/seedance2.0真人过审脸部拆解（适用于即梦）fast_2037525850534453249.json, 图片生成/图生图/一键换装 一键换衣  电商服装展示   FireRed-Image-Edit_2114784136190840833.json, 图片生成/图生图/一键换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2101599676305854466.json, 图片生成/图生图/一键换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2110816443343396866.json, 图片生成/图生图/三视图-Qwen2511-高度一致性_2071975841445269506.json, 图片生成/图生图/三视图-三视图一键生成-Qwen-Edit-2511-保持高度一致性_2023398149548675073.json, 图片生成/图生图/即梦、小云雀、豆包、seedance2.0真人过审核方法-Qwen-2511_2036336291356352513.json, 图片生成/图生图/即梦、小云雀、豆包、超能视频2.0真人过审核方法-Qwen-2511_2034590390044598273.json, 图片生成/图生图/双图服装试 穿电商换装_2100599874197737474.json, 图片生成/图生图/小红书  FireRed-Image-Edit   换装 换衣  电商服装展示_2093008142111166466.json, 图片生成/图生图/换装+换衣 Outfit Changes  Clothing Changes FireRed_2102936109482336257.json, 图片生成/图生图/换装商用级 高度一致性 高清_2104130241412292610.json, 图片生成/图生图/换装简洁版 换衣简洁版   电商服装展示 FireRed-Image-Edit 小红书_2079795242282340354.json, 图片生成/图生图/电商换装丨双图服装试穿_2100138204581163009.json, 图片生成/图生图/电商换装丨双图服装试穿_2101857775021281282.json, 图片生成/图生图/电商换装丨双图服装试穿_2102673132061552641.json, 图片生成/图生图/电商服装展示_换装 换衣_2078741577014534146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_24
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/FireRed-Image-Edit 1.1 上传图片一键分镜_2033173454689669122.json、图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2053434132474150914.json、图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2054157894966366210.json、图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2073017193691963394.json、图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程提示词_2077016584656343041.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/qwen_肤质优化_2072888068935340033.json、图片生成/图生图/seedance2.0真人过审核方法（适用于豆包、即梦、小云雀）_2037113635297828866.json、图片生成/图生图/seedance2.0真人过审脸部拆解（适用于即梦）fast_2037525850534453249.json、图片生成/图生图/一键换装 一键换衣  电商服装展示   FireRed-Image-Edit_2114784136190840833.json、图片生成/图生图/一键换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2101599676305854466.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：19
 - **可信度**：强结论
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `Anything Everywhere3`
-- `CFGNorm`
+全部 19 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Text`
-- `GetNode`
-- `JDCN_StringToList`
+- `ConditioningZeroOut`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `ProcessString`
-- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 14/18 个有
-- `MultiTextConcatenate` —— 14/18 个有
-- `ttN concat` —— 14/18 个有
-- `JjkText` —— 13/18 个有
-- `easy showAnything` —— 13/18 个有
-- `llama_cpp_instruct_adv` —— 13/18 个有
-- `llama_cpp_model_loader` —— 13/18 个有
-- `llama_cpp_parameters` —— 13/18 个有
-- `Text` —— 1/18 个有
+- `PreviewImage` —— 13/19 个有
+- `PIP_图像联结` —— 12/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/19 个有
+- `EmptySD3LatentImage` —— 6/19 个有
+- `CustomAddLabel` —— 5/19 个有
+- `Image Comparer (rgthree)` —— 1/19 个有
+- `SeedVR2` —— 1/19 个有
+- `SeedVR2BlockSwap` —— 1/19 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 8 | 18 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
-| 采样算法 | er_sde | - | 18 | 100% |
-| 调度器 | FlowMatchEulerDiscreteScheduler | - | 18 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+| 采样步数 | 4 | 4 - 8 | 19 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 19 | 100% |
+| 采样算法 | euler | - | 19 | 68% |
+| 调度器 | simple | - | 19 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 19 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 23/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 8，18 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，18 个样本，一致性 100%
-- 调度器 最常用 FlowMatchEulerDiscreteScheduler，18 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 高发问题（18/18 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，19 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，19 个样本，一致性 68%
+- 调度器 最常用 simple，19 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
+- 高发问题（23/19 个样本）：Steps较低可能导致细节不足

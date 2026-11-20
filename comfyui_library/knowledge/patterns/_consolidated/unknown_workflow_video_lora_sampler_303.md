@@ -1,85 +1,92 @@
 ---
 name: unknown_workflow_video_lora_sampler_303
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.861375
-common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.742778
+common_nodes: [Anything Everywhere, CLIPVisionLoader, CR String To Number, CR Text, CogVideoEnhanceAVideo, ColorCorrectOfUtils, CreateCFGScheduleFloatList, FluxResolutionNode, GetNode, ImageCASharpening+, ImageResize+, Int, InversionDemoLazyIndexSwitch, JWInteger, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Scail动作迁移_2001603322555559938.json, 视频生成/图生视频/Scail单_双人动作迁移自由切换版_2024108725971193857.json, 视频生成/图生视频/Scail单人动作迁移(720P-Uni3c运镜版)V2_2000630427444539394.json, 视频生成/图生视频/Scail单人动作迁移(720P高质量版)V2_2000617753667137537.json, 视频生成/图生视频/Scail双人动作迁移_2012140955029213186.json, 视频生成/图生视频/Scail多人动作迁移(720P高质量版)V2_2011401964541710338.json, 视频生成/图生视频/Scail：单人动作迁移_2003684559344574466.json, 视频生成/图生视频/Wan+Scail多人姿势控制_2001210415457632258.json]
+members: [图片生成/图生图/【Z-自动表情包】NBPro-wan2.2动态_1991720211024015362.json, 图片生成/图生图/【生成表情包定制V2】 全能图片Pro-wan2.2动态_2065157094633988097.json, 图片生成/图生图/【表情包定制V2】全能图片Pro+wan2.2动态，静态+动态_2012705166142738433.json, 图片生成/图生图/动态表情包定制_2007359970110607362.json, 图片生成/图生图/超好用🔥表情包制作-9宫格表情包_2069325782664704002.json, 图片生成/文生图/表情包定制-直出9宫格表情包-自动拆分-GIF格式-V3_2072237916960677889.json, 视频生成/图生视频/表情包定制(可拆分)_2041003408856977412.json, 视频生成/图生视频/表情包定制-直出9宫格表情包-自动拆分-GIF格式-V3_2058188130242621442.json, 视频生成/图生视频/表情包定制-直出9宫格表情包-自动拆分-GIF格式-V3_2068868048580333570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_303
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Scail动作迁移_2001603322555559938.json、视频生成/图生视频/Scail单_双人动作迁移自由切换版_2024108725971193857.json、视频生成/图生视频/Scail单人动作迁移(720P-Uni3c运镜版)V2_2000630427444539394.json、视频生成/图生视频/Scail单人动作迁移(720P高质量版)V2_2000617753667137537.json、视频生成/图生视频/Scail双人动作迁移_2012140955029213186.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/【Z-自动表情包】NBPro-wan2.2动态_1991720211024015362.json、图片生成/图生图/【生成表情包定制V2】 全能图片Pro-wan2.2动态_2065157094633988097.json、图片生成/图生图/【表情包定制V2】全能图片Pro+wan2.2动态，静态+动态_2012705166142738433.json、图片生成/图生图/动态表情包定制_2007359970110607362.json、图片生成/图生图/超好用🔥表情包制作-9宫格表情包_2069325782664704002.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `Anything Everywhere`
 - `CLIPVisionLoader`
-- `DownloadAndLoadNLFModel`
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
+- `CR String To Number`
+- `CR Text`
+- `CogVideoEnhanceAVideo`
+- `ColorCorrectOfUtils`
+- `CreateCFGScheduleFloatList`
+- `FluxResolutionNode`
+- `GetNode`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `Int`
+- `InversionDemoLazyIndexSwitch`
 - `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `MathExpression|pysssss`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `RenderNLFPoses`
-- `VHS_LoadVideo`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSLG`
+- `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 7/8 个有
-- `ImageConcatMulti` —— 7/8 个有
-- `RunningHub Deepcleaner` —— 7/8 个有
-- `WanVideoContextOptions` —— 7/8 个有
-- `WanVideoEncode` —— 7/8 个有
-- `WanVideoSamplerExtraArgs` —— 7/8 个有
-- `WanVideoUni3C_ControlnetLoader` —— 7/8 个有
-- `WanVideoUni3C_embeds` —— 7/8 个有
-- `PDIMAGE_LongerSize` —— 6/8 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 3/8 个有
-- `DWPreprocessor` —— 3/8 个有
-- `CM_IntToFloat` —— 1/8 个有
-- `DF_Int_to_Float` —— 1/8 个有
-- `Evaluate Integers` —— 1/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
-- `If ANY execute A else B` —— 1/8 个有
-- `ImageFromBatch+` —— 1/8 个有
-- `ImpactSwitch` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `Inversed Switch` —— 1/8 个有
-- `Logic Boolean` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `Text` —— 1/8 个有
-- `easy int` —— 1/8 个有
+- `SaveImage` —— 8/9 个有
+- `RHHiddenNodes` —— 7/9 个有
+- `Fast Groups Muter (rgthree)` —— 5/9 个有
+- `ImageCropV2` —— 5/9 个有
+- `ImageResizeKJ` —— 5/9 个有
+- `ImageScale` —— 5/9 个有
+- `PrimitiveBoundingBox` —— 5/9 个有
+- `RH_LLMAPI_Pro_Node` —— 5/9 个有
+- `RH_Nano_Banana2_Image2Image` —— 5/9 个有
+- `VHS_LoadVideo` —— 5/9 个有
+- `VHS_VideoInfo` —— 5/9 个有
+- `Any Switch (rgthree)` —— 4/9 个有
+- `Comfly_api_set` —— 4/9 个有
+- `Comfly_gpt_image_2_official_ratio` —— 4/9 个有
+- `RH_RhartImageG2ImageToImage` —— 4/9 个有
+- `EG_ZZ_TMTX` —— 1/9 个有
+- `Float` —— 1/9 个有
+- `GrowMaskWithBlur` —— 1/9 个有
+- `PreviewAny` —— 1/9 个有
+- `Qwen3_VQA_Plus` —— 1/9 个有
+- `RMBG` —— 1/9 个有
+- `Sa2VANodeTpl` —— 1/9 个有
+- `SimpleMath+` —— 1/9 个有
+- `TT_img_enc` —— 1/9 个有
+- `easy imageCropFromMask` —— 1/9 个有
 
 ## 典型参数
 

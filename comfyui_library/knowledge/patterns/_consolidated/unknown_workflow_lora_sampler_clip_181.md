@@ -1,64 +1,69 @@
 ---
 name: unknown_workflow_lora_sampler_clip_181
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.898333
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CR Model Input Switch, EmptyImage, EmptyLatentImage, Fast Groups Muter (rgthree), FluxGuidance, ImageBatch, KSamplerSelect, LayerUtility: BooleanOperator, LoadImage, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RH_Captioner, RH_LLMAPI_NODE, RandomNoise, SamplerCustomAdvanced, SaveImage, StringToInt, TextBox, VAEDecode, VAELoader, easy ifElse, easy imageSize, easy int, easy showAnything, easy textSwitch]
+frequency: 4
+level: moderate
+coverage: 0.9
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), JoinStrings, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, Qwen3_VQA, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX文生图【手写_反推】Nunchaku提速4连图_1957729971551961089.json, 图片生成/文生图/FLUX文生图 _ Nunchaku提速（4张）_1911226009696333826.json, 图片生成/文生图/FLUX文生图【手写_反推】Nunchaku提速4连图_1929402516499283970.json]
+members: [图片生成/图生图/一键参考渲染_2035713942202359809.json, 图片生成/图生图/庭院手绘转照片_2038555710916661249.json, 图片生成/图生图/建筑-klein草图参考渲染工作流_2038424398755008513.json, 平台全量/庭院_阳台专属放大_2040346189668814849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_181
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX文生图【手写_反推】Nunchaku提速4连图_1957729971551961089.json、图片生成/文生图/FLUX文生图 _ Nunchaku提速（4张）_1911226009696333826.json、图片生成/文生图/FLUX文生图【手写_反推】Nunchaku提速4连图_1929402516499283970.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键参考渲染_2035713942202359809.json、图片生成/图生图/庭院手绘转照片_2038555710916661249.json、图片生成/图生图/建筑-klein草图参考渲染工作流_2038424398755008513.json、平台全量/庭院_阳台专属放大_2040346189668814849.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
+- **样本数**：4
+- **可信度**：中等可信
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Model Input Switch`
-- `EmptyImage`
-- `EmptyLatentImage`
-- `Fast Groups Muter (rgthree)`
-- `FluxGuidance`
-- `ImageBatch`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
+- `JoinStrings`
 - `KSamplerSelect`
-- `LayerUtility: BooleanOperator`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader`
-- `NunchakuTextEncoderLoader`
-- `RH_Captioner`
-- `RH_LLMAPI_NODE`
+- `LoraLoaderModelOnly`
+- `Qwen3_VQA`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `StringToInt`
-- `TextBox`
+- `ShowText|pysssss`
+- `TextInput_`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy ifElse`
-- `easy imageSize`
-- `easy int`
 - `easy showAnything`
-- `easy textSwitch`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageScaleBy` —— 3/4 个有
+- `SeedVR2LoadDiTModel` —— 3/4 个有
+- `SeedVR2LoadVAEModel` —— 3/4 个有
+- `SeedVR2VideoUpscaler` —— 3/4 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `GetImageSize` —— 2/4 个有
+- `LayerUtility: ImageReel` —— 2/4 个有
+- `LayerUtility: ImageReelComposit` —— 2/4 个有
+- `VRAMReserver` —— 2/4 个有
+- `MuyeLoadImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 3 | 100% |
-| 高度 | 512 | 512 - 512 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,5 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

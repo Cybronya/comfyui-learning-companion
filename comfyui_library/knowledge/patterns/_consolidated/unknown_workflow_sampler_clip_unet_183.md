@@ -1,58 +1,65 @@
 ---
 name: unknown_workflow_sampler_clip_unet_183
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.861143
-common_nodes: [BasicScheduler, CLIPTextEncode, CreateVideo, DualCLIPLoader, KSamplerSelect, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.9845
+common_nodes: [CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/hunyuan_video_text_to_video.json, 图片生成/反推提示词/73wenshengshipws_2052614102392033282.json, 图片生成/文生图/文生视频加速版_1993105222903988226.json, 视频生成/文生视频/HunyuanVideo 1.5 480P 8步LightX2V文生视频加速版V1_1992951299952099329.json, 视频生成/文生视频/HunyuanVideo 1.5 720P 20步优化版文生视频_1992813591025831937.json, 视频生成/文生视频/Image_capybara_v0_1_text_to_video_fast_2027049393966292993.json, 视频生成/文生视频/video_hunyuan_video_1.5_720p_t2v-混元Video1.5大模型——文生视频工作流_1994019108255629313.json]
+members: [图片生成/图生图/flux2.0图生图_1994969105419657218.json, 图片生成/图生图/flux2_klein双图编辑_2038872372450697217.json, 图片生成/图生图/【遇见AI】FLUX2-klein-4b，spritesheet四视图，fal版lora_2014170035505340418.json, 图片生成/图生图/【遇见AI】FLUX2-klein-4b，图像编辑_2012010188076748802.json, 图片生成/图生图/【遇见AI】FLUX2-klein-9b，图像编辑_2012018380978524162.json, 图片生成/文生图/flux2_文生图+图片参考_1993696007951237121.json, 平台全量/【遇见AI】FLUX2-klein-4b，background-remove去背景，fal版lora_2013531368650711041.json, 平台全量/🦖漫转真（Flux2DEV单图编辑）_1993971762100633602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_183
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/hunyuan_video_text_to_video.json、图片生成/反推提示词/73wenshengshipws_2052614102392033282.json、图片生成/文生图/文生视频加速版_1993105222903988226.json、视频生成/文生视频/HunyuanVideo 1.5 480P 8步LightX2V文生视频加速版V1_1992951299952099329.json、视频生成/文生视频/HunyuanVideo 1.5 720P 20步优化版文生视频_1992813591025831937.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/flux2.0图生图_1994969105419657218.json、图片生成/图生图/flux2_klein双图编辑_2038872372450697217.json、图片生成/图生图/【遇见AI】FLUX2-klein-4b，spritesheet四视图，fal版lora_2014170035505340418.json、图片生成/图生图/【遇见AI】FLUX2-klein-4b，图像编辑_2012010188076748802.json、图片生成/图生图/【遇见AI】FLUX2-klein-9b，图像编辑_2012018380978524162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
+- `Flux2Scheduler`
 - `KSamplerSelect`
-- `ModelSamplingSD3`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 6/7 个有
-- `EmptyHunyuanVideo15Latent` —— 6/7 个有
-- `VAEDecodeTiled` —— 6/7 个有
-- `EasyCache` —— 4/7 个有
-- `JWInteger` —— 4/7 个有
-- `LoraLoaderModelOnly` —— 4/7 个有
-- `AddLabel` —— 1/7 个有
-- `BasicGuider` —— 1/7 个有
-- `EmptyHunyuanLatentVideo` —— 1/7 个有
-- `FluxGuidance` —— 1/7 个有
-- `RH_Translator` —— 1/7 个有
-- `RTXVideoSuperResolution` —— 1/7 个有
+- `BasicGuider` —— 7/8 个有
+- `FluxGuidance` —— 7/8 个有
+- `EmptyFlux2LatentImage` —— 4/8 个有
+- `ImpactImageInfo` —— 4/8 个有
+- `ImageScaleToTotalPixels` —— 2/8 个有
+- `LoraLoader` —— 2/8 个有
+- `CFGGuider` —— 1/8 个有
+- `FlashVSRNode` —— 1/8 个有
+- `GetImageSize` —— 1/8 个有
+- `ImageGetSize` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
+- `Width/Height Literal` —— 1/8 个有
+- `Width/Height Literal (Image Saver)` —— 1/8 个有
+- `easy imageScaleDown` —— 1/8 个有
+- `孤海图像缩放按像素` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 1.1 | - | 2 | 100% |
+| LoRA 文本强度 | 1.1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -60,4 +67,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 1.1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1.1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

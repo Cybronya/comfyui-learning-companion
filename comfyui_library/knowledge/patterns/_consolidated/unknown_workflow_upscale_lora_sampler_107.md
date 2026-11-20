@@ -3,58 +3,38 @@ name: unknown_workflow_upscale_lora_sampler_107
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.947
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, DetailDaemonSamplerNode, Image Comparer (rgthree), ImageAddNoise, ImageListToImageBatch, ImageScaleBy, ImageUpscaleWithModel, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageBatchToImageList, easy imageSize, easy int]
+coverage: 1
+common_nodes: [CheckpointLoaderSimple, EmptySD3LatentImage, ImageResizeKJv2, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, VAEEncode, WujiCleaner, WujiSampler, WujiUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/自用放大_2066451375378227201.json, 图片生成/图生图/自用放大_2068887043123531777.json]
+members: [图片生成/图生图/Krea2 四视图角色资产库，MiniMaxH3、Seedance视频参考专用_2092271423229353985.json, 图片生成/图生图/Krea2 四视图角色资产库，角色卡，人物卡片_2098983922431520769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_107
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/自用放大_2066451375378227201.json、图片生成/图生图/自用放大_2068887043123531777.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Krea2 四视图角色资产库，MiniMaxH3、Seedance视频参考专用_2092271423229353985.json、图片生成/图生图/Krea2 四视图角色资产库，角色卡，人物卡片_2098983922431520769.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DetailDaemonSamplerNode`
-- `Image Comparer (rgthree)`
-- `ImageAddNoise`
-- `ImageListToImageBatch`
-- `ImageScaleBy`
-- `ImageUpscaleWithModel`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CheckpointLoaderSimple`
+- `EmptySD3LatentImage`
+- `ImageResizeKJv2`
+- `Krea2EditGroundedEncode`
+- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `UNETLoader`
-- `UpscaleModelLoader`
-- `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageBatchToImageList`
-- `easy imageSize`
-- `easy int`
+- `WujiCleaner`
+- `WujiSampler`
+- `WujiUpscaler`
 
 ## 典型参数
 

@@ -1,101 +1,118 @@
 ---
 name: text_to_image_video_upscale_latent_upscale_11
 type: Text To Image
-frequency: 7
+frequency: 5
 level: strong
-coverage: 0.911571
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.5648
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfySwitchNode, Compare, DualCLIPLoader, EmptyLTXVLatentVideo, EmptyLatentImage, GetImageSize, GetNode, INTConstant, ImageResizeKJv2, Int, InversionDemoLazySwitch, JjkText, JoinStrings, KSampler, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SimpleMath+, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy showAnything, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/打斗场面高清呈现｜MinimaxH3武戏图生视频特效_2096524592583106561.json, 视频生成/图生视频/舞姿自动生成｜Minimax H3人物特效跳舞机_2096575779445497858.json, 视频生成/图生视频/跳舞自动机动作生成｜Minimax H3人物特效图生视频_2096316917907804162.json, 视频生成/文生视频/一键直出1080P竖屏｜动漫短剧三模视频工作流_2094052576818978817.json, 视频生成/文生视频/一键直出1080P竖屏｜动漫短剧工作流文生视频_2093846854189539329.json, 视频生成/文生视频/多参生视频潜空间放大二采｜Minimax H3高质量版_2095969486913495042.json, 视频生成/文生视频/多参生视频潜空间放大｜Minimax H3 二采画质更稳_2096260116558467073.json]
+members: [图片生成/图生图/LTX2.3图片数字人V1工作流，音频驱动数字人对口型图生图处理工具_2114992413277245442.json, 数字人/数字人/LTX2.3图片数字人V1工作流，音频驱动数字人对口型图生图处理工具_2106916761093361666.json, 数字人/数字人/LTX2.3图片数字人V1工作流，音频驱动数字人对口型图生图处理工具_2112834608520851457.json, 视频生成/图生视频/LTX2.3图片数字人V1工作流，音频驱动数字人对口型图生图处理工具_2108367943712206849.json, 视频生成/图生视频/图片对口型数字人说话唱歌LTV2.0人物类特效图生视频_2095738274433294338.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_latent_upscale_11
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/打斗场面高清呈现｜MinimaxH3武戏图生视频特效_2096524592583106561.json、视频生成/图生视频/舞姿自动生成｜Minimax H3人物特效跳舞机_2096575779445497858.json、视频生成/图生视频/跳舞自动机动作生成｜Minimax H3人物特效图生视频_2096316917907804162.json、视频生成/文生视频/一键直出1080P竖屏｜动漫短剧三模视频工作流_2094052576818978817.json、视频生成/文生视频/一键直出1080P竖屏｜动漫短剧工作流文生视频_2093846854189539329.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/LTX2.3图片数字人V1工作流，音频驱动数字人对口型图生图处理工具_2114992413277245442.json、数字人/数字人/LTX2.3图片数字人V1工作流，音频驱动数字人对口型图生图处理工具_2106916761093361666.json、数字人/数字人/LTX2.3图片数字人V1工作流，音频驱动数字人对口型图生图处理工具_2112834608520851457.json、视频生成/图生视频/LTX2.3图片数字人V1工作流，音频驱动数字人对口型图生图处理工具_2108367943712206849.json、视频生成/图生视频/图片对口型数字人说话唱歌LTV2.0人物类特效图生视频_2095738274433294338.json）
 
 - **类型**：Text To Image
-- **样本数**：7
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 5 个 workflow 都包含：
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfySwitchNode`
+- `Compare`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
+- `GetImageSize`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `Int`
+- `InversionDemoLazySwitch`
 - `JjkText`
+- `JoinStrings`
 - `KSampler`
 - `KSamplerSelect`
+- `LTX2AttentionTunerPatch`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleCalculatorKJ`
+- `SimpleMath+`
+- `SolidMask`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 6/7 个有
-- `PrimitiveFloat` —— 6/7 个有
-- `RHHiddenNodes` —— 3/7 个有
-- `Text` —— 3/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `CreateVideo` —— 2/7 个有
-- `PrimitiveStringMultiline` —— 2/7 个有
-- `SaveVideo` —— 2/7 个有
-- `easy showAnything` —— 2/7 个有
-- `DF_Get_image_size` —— 1/7 个有
-- `FlashVSR_SM_KSampler` —— 1/7 个有
-- `FlashVSR_SM_Model` —— 1/7 个有
-- `GetImageRangeFromBatch` —— 1/7 个有
-- `JWInteger` —— 1/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
-- `VideoCombineV2` —— 1/7 个有
+- `PreviewAudio` —— 4/5 个有
+- `SaveImage` —— 4/5 个有
+- `VHS_LoadAudioUpload` —— 4/5 个有
+- `PreviewImage` —— 2/5 个有
+- `孤海注释` —— 2/5 个有
+- `LTXVChunkFeedForward` —— 1/5 个有
+- `LoadAudio` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 80 | 80 - 80 | 7 | 100% |
-| 高度 | 80 | 80 - 80 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

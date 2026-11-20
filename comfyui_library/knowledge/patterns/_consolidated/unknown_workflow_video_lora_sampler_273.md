@@ -1,83 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_273
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.971125
-common_nodes: [CLIPLoader, CLIPTextEncode, CreateCFGScheduleFloatList, EmptySD3LatentImage, ImageResize+, Int, KSampler, LoadWanVideoT5TextEncoder, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 10
+level: moderate
+coverage: 0.9217
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+problems: []
 missing: []
-members: [图片生成/反推提示词/视频生成mikez试验_2061337633913139202.json, 视频生成/图生视频/API-Z_image+Wan2.2_2066868599926644737.json, 视频生成/文生视频/API - Qwenimage文生图-图片组合视频_2066915773356003329.json, 视频生成/文生视频/API-Z_image+Wan2.2_2058887604485058562.json, 视频生成/文生视频/API-Z_image+Wan2.2_v2_2065342302742208514.json, 视频生成/文生视频/竖屏1111_2063507047836119042.json, 视频生成/文生视频/竖屏1111_2064656978898669569.json, 视频生成/文生视频/竖屏高清_2063068057895002114.json]
+members: [数字人/数字人/Aiwood-首发Multitalk多人对话_1940854355119730690.json, 数字人/数字人/Multitalk多人对话（超级版）_1941152199026307073.json, 数字人/数字人/数字人图片对口型_2027596633734647810.json, 数字人/数字人/数字人对口型-infinitetalk_1969380544364617729.json, 数字人/数字人/超自然图片数字人对口型（根叔）_1977237089068687361.json, 视频生成/图生视频/CCC的InfiniteTalk数字人_2026963272511000578.json, 视频生成/图生视频/INF双人对话_1971453748994359297.json, 视频生成/图生视频/IndexTTS2+InfiniteTalk图生数字人单人-B站UP主@好奇漫步!音频数字人同时生成_1983563401169444866.json, 视频生成/图生视频/Multitalk多人对话极速优化版 数字人对口型_1952655521791819778.json, 视频生成/图生视频/Multitalk最强数字人运镜参考版 运行加强版_1952724785534070786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_273
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/视频生成mikez试验_2061337633913139202.json、视频生成/图生视频/API-Z_image+Wan2.2_2066868599926644737.json、视频生成/文生视频/API - Qwenimage文生图-图片组合视频_2066915773356003329.json、视频生成/文生视频/API-Z_image+Wan2.2_2058887604485058562.json、视频生成/文生视频/API-Z_image+Wan2.2_v2_2065342302742208514.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/Aiwood-首发Multitalk多人对话_1940854355119730690.json、数字人/数字人/Multitalk多人对话（超级版）_1941152199026307073.json、数字人/数字人/数字人图片对口型_2027596633734647810.json、数字人/数字人/数字人对口型-infinitetalk_1969380544364617729.json、数字人/数字人/超自然图片数字人对口型（根叔）_1977237089068687361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CreateCFGScheduleFloatList`
-- `EmptySD3LatentImage`
-- `ImageResize+`
-- `Int`
-- `KSampler`
+全部 10 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 7/8 个有
-- `LoraLoader` —— 1/8 个有
-- `ModelSamplingAuraFlow` —— 1/8 个有
-- `PrimitiveInt` —— 1/8 个有
-- `Switch` —— 1/8 个有
-- `Text _O` —— 1/8 个有
+- `WanVideoTorchCompileSettings` —— 9/10 个有
+- `AudioCrop` —— 8/10 个有
+- `AudioSeparation` —— 8/10 个有
+- `WanVideoTextEncode` —— 8/10 个有
+- `SimpleMath+` —— 6/10 个有
+- `easy showAnything` —— 6/10 个有
+- `Int` —— 5/10 个有
+- `MaskPreview+` —— 5/10 个有
+- `SeparateMasks` —— 5/10 个有
+- `ToInt` —— 4/10 个有
+- `CR Text` —— 3/10 个有
+- `SaveAudio` —— 3/10 个有
+- `Audio Duration (mtb)` —— 2/10 个有
+- `EsesImageEffectBloom` —— 2/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/10 个有
+- `RH_GetAudioDuration` —— 2/10 个有
+- `SaveAudioMP3` —— 2/10 个有
+- `WanVideoApplyNAG` —— 2/10 个有
+- `WanVideoContextOptions` —— 2/10 个有
+- `WanVideoTextEncodeSingle` —— 2/10 个有
+- `INTConstant` —— 1/10 个有
+- `IndexTTS2_Emotion` —— 1/10 个有
+- `PreviewAudio` —— 1/10 个有
+- `PrimitiveFloat` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 9 | 8 - 9 | 8 | 96% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 8 - 9，8 个样本，取值集中（一致性 96%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

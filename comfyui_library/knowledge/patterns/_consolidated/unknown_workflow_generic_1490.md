@@ -3,36 +3,28 @@ name: unknown_workflow_generic_1490
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6845
-common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4, Comfly_api_set, ImageConcanate, LoadImage, SaveImage]
+coverage: 0.667
+common_nodes: [SaveImage, f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1]
 problems: []
 missing: []
-members: [图片生成/图生图/即梦4.0图像编辑单图4K HD升级版V2（贞贞工坊API版）_1965512821259780098.json, 图片生成/图生图/即梦4.0图像编辑双图4K HD升级版V3（贞贞工坊API版）_1965811870189924354.json]
+members: [comfyui-workflow-templates-json/image_z_image_turbo.json, comfyui-workflow-templates-json/image_z_image_turbo_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1490
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4.0图像编辑单图4K HD升级版V2（贞贞工坊API版）_1965512821259780098.json、图片生成/图生图/即梦4.0图像编辑双图4K HD升级版V3（贞贞工坊API版）_1965811870189924354.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_z_image_turbo.json、comfyui-workflow-templates-json/image_z_image_turbo_int8.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_Doubao_Seedream_4`
-- `Comfly_api_set`
-- `ImageConcanate`
-- `LoadImage`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 1/2 个有
-- `PDIMAGE_LongerSize` —— 1/2 个有
+- `f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1`
 
 ## 典型参数
 

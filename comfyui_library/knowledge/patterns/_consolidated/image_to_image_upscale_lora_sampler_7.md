@@ -1,117 +1,95 @@
 ---
 name: image_to_image_upscale_lora_sampler_7
 type: Image To Image
-frequency: 18
+frequency: 20
 level: moderate
-coverage: 0.748222
-common_nodes: [CLIPLoader, CLIPTextEncode, ColorCorrect, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Get Image Size, GetImageSize+, ImageResize+, ImageScaleBy, KSampler, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy boolean, easy cleanGpuUsed, easy ifElse, easy imageColorMatch, easy imageScaleToNormPixels, easy int, easy showAnything, 图像缩放V2_孤海, 数学运算_孤海]
+coverage: 0.8634
+common_nodes: [CFGNorm, CLIPLoader, Image Comparer (rgthree), ImageScaleBy, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/F.2Klein-zimage人像精修高清放大_2058053312079028225.json, 图片生成/图生图/F2K+zimage+seedVR2.5-人像精修+高清放大_2037094484042850305.json, 图片生成/图生图/Flux2-Klein+zimage人像精修+高清放大_2045802696128602114.json, 图片生成/图生图/Flux2-Klein人像精修+换背景+打光+高清放大_2037730083359694850.json, 图片生成/图生图/Flux2-Klein人像精修+高清放大_2050492628394881026.json, 图片生成/图生图/Flux2-Klein人像精修+高清放大_2075512683058778114.json, 图片生成/图生图/Flux2-Klein人像精修+高清放大_2076148795947175937.json, 图片生成/图生图/Flux2-Klein人像精修+高清放大_2086242419229675522.json, 图片生成/图生图/Flux2-身材调整优化丰胸_2081940467763212289.json, 图片生成/图生图/Flux2-身材调整优化丰胸_2082008265621331970.json, 图片生成/图生图/Flux2Kleinzimage人像精修高清放大_2049992134249467905.json, 图片生成/图生图/Flux2Kleinzimage人像精修高清放大_2051267226388443138.json, 图片生成/图生图/Flux2Kleinzimage人像精修高清放大_2093241740772859906.json, 图片生成/图生图/Flux2Kleinzimage人像精修高清放大_2093513070038577154.json, 图片生成/图生图/Flux2Klein人像精修换背景打光高清放大_2060852620331413505.json, 图片生成/图生图/Flux2Klein人像精修高清放大_2065817959108538370.json, 图片生成/图生图/Flux2人像精修+高清放大_2056983443392786433.json, 图片生成/文生图/( Flux-2-klein-9B)身材调整_2077560918359236610.json]
+members: [图片生成/图生图/ywt换姿势_2059923007493206018.json, 图片生成/图生图/人物姿势参考图_2061617694088192001.json, 图片生成/图生图/全自动换装+指定人脸 动作迁移_2070478132422987777.json, 图片生成/图生图/全自动换装+指定人脸 动作迁移美图生成-超高一致性+高清输出+姿势可控+多图编辑+姿势参考-高清放大_2060190864319799298.json, 图片生成/图生图/动作模仿全新调整版  人物姿势  姿势生成  姿势迁移  动作迁移_2078762792903077889.json, 图片生成/图生图/动作迁移-超高一致性 高清放大_2084839325207973890.json, 图片生成/图生图/动作迁移-超高一致性 高清输出 姿势可控 多图编辑 全自动换装 指定人脸-姿势参考-高清放大_2059071035131125762.json, 图片生成/图生图/动作迁移-超高一致性(高清输出）_1991568706801188866.json, 图片生成/图生图/姿势参考  人物姿势  姿势生成  姿势迁移  动作迁移_2067118401599918082.json, 图片生成/图生图/姿势参考  人物姿势  姿势生成  姿势迁移  动作迁移_2067163777568690178.json, 图片生成/图生图/姿势参考  人物姿势  姿势生成  姿势迁移  动作迁移_2067177565739110401.json, 图片生成/图生图/姿势参考  人物姿势  姿势生成  姿势迁移  动作迁移_2067181809313607681.json, 图片生成/图生图/姿势参考  人物姿势  姿势生成  姿势迁移  动作迁移_2067198098614603778.json, 图片生成/图生图/姿势参考  人物姿势  姿势生成  姿势迁移  动作迁移_2067266054715432961.json, 图片生成/图生图/姿势迁移 动作模仿 人物姿势++姿势生成 动作迁移 全新调整版_2079092595036344321.json, 图片生成/图生图/姿势迁移-千问编辑2511_2003846907145428993.json, 图片生成/图生图/姿势迁移-千问编辑PLUS_1979763516292894722.json, 图片生成/图生图/通义千问姿势迁移_2003040280687329282.json, 图片生成/图生图/（电商流）qwen2509 edit 最强换姿势-姿势迁移-编辑放大修复4倍_1989558415099875329.json, 视频生成/图生视频/动作迁移-超高一致性 姿势参考-高清放大_2059442895932977153.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/F.2Klein-zimage人像精修高清放大_2058053312079028225.json、图片生成/图生图/F2K+zimage+seedVR2.5-人像精修+高清放大_2037094484042850305.json、图片生成/图生图/Flux2-Klein+zimage人像精修+高清放大_2045802696128602114.json、图片生成/图生图/Flux2-Klein人像精修+换背景+打光+高清放大_2037730083359694850.json、图片生成/图生图/Flux2-Klein人像精修+高清放大_2050492628394881026.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/ywt换姿势_2059923007493206018.json、图片生成/图生图/人物姿势参考图_2061617694088192001.json、图片生成/图生图/全自动换装+指定人脸 动作迁移_2070478132422987777.json、图片生成/图生图/全自动换装+指定人脸 动作迁移美图生成-超高一致性+高清输出+姿势可控+多图编辑+姿势参考-高清放大_2060190864319799298.json、图片生成/图生图/动作模仿全新调整版  人物姿势  姿势生成  姿势迁移  动作迁移_2078762792903077889.json…）
 
 - **类型**：Image To Image
-- **样本数**：18
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 20 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `ColorCorrect`
-- `EditTextEncode_EditUtils`
-- `Flux2KleinConfigPreparer_EditUtils`
-- `Flux2KleinModelConfig_EditUtils`
-- `Get Image Size`
-- `GetImageSize+`
-- `ImageResize+`
+- `Image Comparer (rgthree)`
 - `ImageScaleBy`
+- `ImageScaleToTotalPixels`
+- `ImageUpscaleWithModel`
 - `KSampler`
-- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `ReferenceLatent`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TextInput_`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy imageColorMatch`
-- `easy imageScaleToNormPixels`
-- `easy int`
-- `easy showAnything`
-- `图像缩放V2_孤海`
-- `数学运算_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 17/18 个有
-- `孤海-浮点滑条` —— 17/18 个有
-- `SetNode` —— 12/18 个有
-- `CR Text Concatenate` —— 11/18 个有
-- `GetNode` —— 11/18 个有
-- `StringConstant` —— 11/18 个有
-- `取色器_孤海` —— 11/18 个有
-- `GetImageSize` —— 5/18 个有
-- `LayerUtility: ImageReel` —— 5/18 个有
-- `LayerUtility: ImageReelComposit` —— 5/18 个有
-- `CFGGuider` —— 3/18 个有
-- `ConditioningZeroOut` —— 3/18 个有
-- `EmptyFlux2LatentImage` —— 3/18 个有
-- `Flux2Scheduler` —— 3/18 个有
-- `KSamplerSelect` —— 3/18 个有
-- `RandomNoise` —— 3/18 个有
-- `SamplerCustomAdvanced` —— 3/18 个有
-- `Anything Everywhere3` —— 2/18 个有
-- `CR Text` —— 2/18 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/18 个有
-- `PainterFluxImageEdit` —— 2/18 个有
-- `llama_cpp_instruct_adv` —— 2/18 个有
-- `llama_cpp_model_loader` —— 2/18 个有
-- `llama_cpp_parameters` —— 2/18 个有
-- `CheckpointLoaderSimple` —— 1/18 个有
-- `FloatSlider` —— 1/18 个有
-- `Lora Loader Stack (rgthree)` —— 1/18 个有
+- `ImageConcanate` —— 19/20 个有
+- `SDPoseOODLoader` —— 17/20 个有
+- `SDPoseOODProcessor` —— 17/20 个有
+- `Get Image Size` —— 16/20 个有
+- `GroundingDinoModelLoader_SDPose` —— 16/20 个有
+- `Image Aspect Ratio` —— 16/20 个有
+- `ImageResize` —— 16/20 个有
+- `VAEEncodeTiled` —— 16/20 个有
+- `YOLOModelLoader` —— 16/20 个有
+- `ConditioningZeroOut` —— 4/20 个有
+- `EmptySD3LatentImage` —— 4/20 个有
+- `easy cleanGpuUsed` —— 4/20 个有
+- `easy imageColorMatch` —— 4/20 个有
+- `easy imageSize` —— 4/20 个有
+- `DWPreprocessor` —— 3/20 个有
+- `PathchSageAttentionKJ` —— 3/20 个有
+- `Text` —— 3/20 个有
+- `DepthAnythingV2Preprocessor` —— 2/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/20 个有
+- `Any Switch (rgthree)` —— 1/20 个有
+- `DrawViTPose` —— 1/20 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/20 个有
+- `Label (rgthree)` —— 1/20 个有
+- `OnnxDetectionModelLoader` —— 1/20 个有
+- `PoseAndFaceDetection` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 12 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 18 | 1% |
-| 采样算法 | euler_ancestral | - | 18 | 56% |
-| 调度器 | simple | - | 18 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 采样步数 | 4 | 4 - 8 | 20 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 20 | 100% |
+| 采样算法 | euler | - | 20 | 85% |
+| 调度器 | simple | - | 20 | 80% |
+| 重绘幅度 | 0.3 | 0.3 - 1 | 20 | 37% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 20/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 41/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，18 个样本，取值分散，一致性仅 1%
-- 采样算法 最常用 euler_ancestral，18 个样本，一致性 56%
-- 调度器 最常用 simple，18 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 高发问题（20/18 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，20 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，20 个样本，一致性 85%
+- 调度器 最常用 simple，20 个样本，一致性 80%
+- 重绘幅度 中位数 0.3，观测区间 0.3 - 1，20 个样本，取值分散，一致性仅 37%
+- 高发问题（41/20 个样本）：Steps较低可能导致细节不足

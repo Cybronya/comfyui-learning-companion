@@ -1,36 +1,46 @@
 ---
 name: unknown_workflow_video_14
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: moderate
-coverage: 0.966667
-common_nodes: [LoadImage, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.8222
+common_nodes: [ImageScaleToTotalPixels, SeedVR2, SeedVR2BlockSwap, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/视频换脸_1932720778934980609.json, 视频生成/图生视频/一张图片-视频换脸_1928761802551889921.json, 视频生成/图生视频/最新视频人物换脸+补帧_1944632479846420482.json, 视频生成/图生视频/视频一键换脸_1901238609075412993.json, 视频生成/图生视频/视频换脸+补帧_2004748380683337730.json, 视频生成/图生视频/视频换脸Wan万相 图生视频 视频重绘 视频补帧+加速+质量提高  高清修复_1999735170125230081.json]
+members: [平台全量/SeedVR2 支持2K视频放大 v1_2104797844346597378.json, 平台全量/SeedVR2 视频放大工作流（Plus模式支持2K放大）_2097239079011311617.json, 平台全量/自用4K高清放大8-10min：SeedVR2_2011720924340424706.json, 平台全量/视频放大 SeedVR2（2K-Plus模式可运行）_2082739528892239874.json, 平台全量/视频高清化_1988184873150103553.json, 平台全量/视频高清工作流_2094016061862666241.json, 平台全量/视频高清放大+补帧_2091178600597909505.json, 平台全量/视频高清放大+补帧_2092806350140170241.json, 平台全量/视频高清放大_2074696403221303297.json, 平台全量/💗视频放大补帧 SeedVR2+Video_2077934448129175553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_14
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/视频换脸_1932720778934980609.json、视频生成/图生视频/一张图片-视频换脸_1928761802551889921.json、视频生成/图生视频/最新视频人物换脸+补帧_1944632479846420482.json、视频生成/图生视频/视频一键换脸_1901238609075412993.json、视频生成/图生视频/视频换脸+补帧_2004748380683337730.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/SeedVR2 支持2K视频放大 v1_2104797844346597378.json、平台全量/SeedVR2 视频放大工作流（Plus模式支持2K放大）_2097239079011311617.json、平台全量/自用4K高清放大8-10min：SeedVR2_2011720924340424706.json、平台全量/视频放大 SeedVR2（2K-Plus模式可运行）_2082739528892239874.json、平台全量/视频高清化_1988184873150103553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadImage`
-- `ReActorFaceSwap`
+全部 10 个 workflow 都包含：
+- `ImageScaleToTotalPixels`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RIFE VFI` —— 3/6 个有
-- `VHS_VideoInfoLoaded` —— 1/6 个有
+- `SeedVR2ExtraArgs` —— 9/10 个有
+- `VHS_VideoInfoSource` —— 9/10 个有
+- `PreviewImage` —— 7/10 个有
+- `Int` —— 5/10 个有
+- `MathExpression_UTK` —— 4/10 个有
+- `RIFE VFI` —— 4/10 个有
+- `SetNode` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `ImageConcanate` —— 1/10 个有
+- `ImpactSleep` —— 1/10 个有
+- `SaveImage` —— 1/10 个有
 
 ## 典型参数
 

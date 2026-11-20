@@ -1,60 +1,58 @@
 ---
 name: unknown_workflow_controlnet_sampler_clip_23
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.725
-common_nodes: [ApplyFluxControlNet, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, LoadFluxControlNet, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, XlabsSampler]
+coverage: 0.86325
+common_nodes: [AIO_Preprocessor, ApplyFluxControlNet, CLIPTextEncodeFlux, EmptyLatentImage, LoadFluxControlNet, LoadImage, PreviewImage, SaveImage, VAEDecode, VAELoader, XlabsSampler]
 problems: []
 missing: []
-members: [图片生成/图生图/中文字体设计工作流flux_1954934845668409345.json, 图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json, 图片生成/文生图/真人转动漫二次元手绘插画_1891797919912341506.json]
+members: [图片生成/文生图/FLUX ControlNet Easy Workflow_1836364118327717889.json, 图片生成/文生图/FLUX controlnet (canny V3) CN工作流_1825464189249826818.json, 平台全量/FLUX controlnet (depth V3) CN工作流_1825726695277268994.json, 平台全量/Flux ControlNet Depth - Beginner Friendly_1881274373649702914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_sampler_clip_23
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/中文字体设计工作流flux_1954934845668409345.json、图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json、图片生成/文生图/真人转动漫二次元手绘插画_1891797919912341506.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/FLUX ControlNet Easy Workflow_1836364118327717889.json、图片生成/文生图/FLUX controlnet (canny V3) CN工作流_1825464189249826818.json、平台全量/FLUX controlnet (depth V3) CN工作流_1825726695277268994.json、平台全量/Flux ControlNet Depth - Beginner Friendly_1881274373649702914.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `ApplyFluxControlNet`
 - `CLIPTextEncodeFlux`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
 - `LoadFluxControlNet`
 - `LoadImage`
 - `PreviewImage`
 - `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `XlabsSampler`
 
 **可变部分**（部分 workflow 才有）：
-- `CannyEdgePreprocessor` —— 2/3 个有
-- `DepthAnythingV2Preprocessor` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `DF_Text_Box` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `HEDPreprocessor` —— 1/3 个有
-- `LoraLoader` —— 1/3 个有
+- `DualCLIPLoader` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `ImageResize+` —— 2/4 个有
+- `ModelSamplingFlux` —— 2/4 个有
+- `UnetLoaderGGUF` —— 2/4 个有
+- `CLIPTextEncode` —— 1/4 个有
+- `DualCLIPLoaderGGUF` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageResizeKJ` —— 1/4 个有
+- `VAEEncode` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 512 - 1024 | 3 | 73% |
-| 高度 | 1024 | 512 - 1024 | 3 | 72% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 宽度 | 512 | 512 - 1024 | 4 | 65% |
+| 高度 | 640 | 512 - 1024 | 4 | 70% |
 
 ## 常见问题
 
@@ -62,5 +60,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 1024，3 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，3 个样本
+- 宽度 中位数 512，观测区间 512 - 1024，4 个样本
+- 高度 中位数 640，观测区间 512 - 1024，4 个样本

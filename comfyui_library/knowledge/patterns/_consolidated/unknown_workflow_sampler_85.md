@@ -3,29 +3,38 @@ name: unknown_workflow_sampler_85
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [HiDreamSampler, Primitive string [Crystools], SaveImage]
+coverage: 0.8465
+common_nodes: [ImageConcanate, JjkText, LoadImage, RH_Translator, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/HiDream生图_1910509876903145474.json, 图片生成/文生图/Hidream生成精致产品图_1919162078760730625.json]
+members: [图片生成/图生图/Flux Fill OneReward 外扩 RH_1969451804171923458.json, 图片生成/图生图/Flux Fill OneReward 重绘 RH版_1969402547008118786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_85
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/HiDream生图_1910509876903145474.json、图片生成/文生图/Hidream生成精致产品图_1919162078760730625.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux Fill OneReward 外扩 RH_1969451804171923458.json、图片生成/图生图/Flux Fill OneReward 重绘 RH版_1969402547008118786.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `HiDreamSampler`
-- `Primitive string [Crystools]`
+- `ImageConcanate`
+- `JjkText`
+- `LoadImage`
+- `RH_Translator`
+- `RunningHub OneReward Loader`
+- `RunningHub OneReward Sampler`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `ImagePadForOutpaintMasked` —— 1/2 个有
+- `LayerMask: MaskPreview` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

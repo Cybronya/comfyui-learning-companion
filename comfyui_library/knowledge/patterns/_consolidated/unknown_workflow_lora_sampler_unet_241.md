@@ -2,56 +2,81 @@
 name: unknown_workflow_lora_sampler_unet_241
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.794
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3TST, SolAttnMiniMax, UNETLoader, VAELoader]
+level: strong
+coverage: 0.797333
+common_nodes: [BasicScheduler, CR Prompt Text, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewImage, PromptRelayEncode, SamplerCustom, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2113772265526620162.json, 视频生成/图生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2113809648414449666.json, 视频生成/文生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2102283144824184833.json]
+members: [图片生成/反推提示词/76tsspdjt_2052667532313669633.json, 图片生成/图生图/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2057109101624258561.json, 图片生成/图生图/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制+自动计算帧数_2069651466062745602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_241
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2113772265526620162.json、视频生成/图生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2113809648414449666.json、视频生成/文生视频/7分钟直出1080P！12GB可用_BUNNY_SelfLift_高动态+LORA不模糊_混合工作流_2102283144824184833.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/76tsspdjt_2052667532313669633.json、图片生成/图生图/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2057109101624258561.json、图片生成/图生图/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制+自动计算帧数_2069651466062745602.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+- `CR Prompt Text`
 - `ConditioningZeroOut`
-- `CreateVideo`
-- `H3SigmaRefiner`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SaveVideo`
-- `SelfLiftAvatarH3Sampler`
-- `SelfLiftAvatarH3TST`
-- `SolAttnMiniMax`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `PromptRelayEncode`
+- `SamplerCustom`
+- `SetNode`
 - `UNETLoader`
-- `VAELoader`
+- `VAEDecode`
+- `VAELoaderKJ`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `CLIPTextEncode` —— 1/3 个有
+- `CM_IntBinaryOperation` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `JWStringConcat` —— 1/3 个有
+- `JWStringSplit` —— 1/3 个有
+- `RTXVideoSuperResolution` —— 1/3 个有
+- `SaveVideo` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `SomethingToString` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `llama_cpp_instruct_adv` —— 1/3 个有
+- `llama_cpp_model_loader` —— 1/3 个有
+- `llama_cpp_parameters` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 489 | 489 - 489 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -59,4 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 489，观测区间 489 - 489，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

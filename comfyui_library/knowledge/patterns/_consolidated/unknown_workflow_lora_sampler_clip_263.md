@@ -1,57 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_clip_263
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.852
-common_nodes: [BasicScheduler, CFGZeroStarAndInit, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, DeepTranslatorTextNode, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RH_Captioner, SamplerCustom, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.597333
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ColorMatchV2, ConditioningZeroOut, Flux2Scheduler, FluxKVCache, GetNode, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SamplerCustom, SaveImage, Seed (rgthree), SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2人像洗图反推_1953312130965622786.json, 图片生成/图生图/【洗图反推】Wan2.2 洗图 超级修复 Wan2.2人像全图修复_1982282591334211586.json]
+members: [平台全量/4K_8K 是玄学还是科学？_2065990016148529154.json, 平台全量/Flux.2-Klein-9B-KV 最终篇：标准图像编辑工作流（SOP）_2070446133947756545.json, 平台全量/油光终结者：AI 皮肤修复_2065978929348960257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_263
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Wan2.2人像洗图反推_1953312130965622786.json、图片生成/图生图/【洗图反推】Wan2.2 洗图 超级修复 Wan2.2人像全图修复_1982282591334211586.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/4K_8K 是玄学还是科学？_2065990016148529154.json、平台全量/Flux.2-Klein-9B-KV 最终篇：标准图像编辑工作流（SOP）_2070446133947756545.json、平台全量/油光终结者：AI 皮肤修复_2065978929348960257.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `BasicScheduler`
-- `CFGZeroStarAndInit`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `DeepTranslatorTextNode`
+- `ColorMatchV2`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `FluxKVCache`
+- `GetNode`
+- `Image Comparer (rgthree)`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoader`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `RH_Captioner`
+- `LoraLoaderModelOnly`
+- `ReferenceLatent`
 - `SamplerCustom`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyFlux2LatentImage` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `ResizeImageMaskNode` —— 2/3 个有
+- `easy promptLine` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `Anything Everywhere3` —— 1/3 个有
+- `GrowMaskWithBlur` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `SetLatentNoiseMask` —— 1/3 个有
+- `TextBoxConcatenate` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.7 | - | 2 | 100% |
-| LoRA 文本强度 | 0.7 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -59,6 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

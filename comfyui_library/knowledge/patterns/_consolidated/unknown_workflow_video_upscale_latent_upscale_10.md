@@ -1,89 +1,96 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_10
 type: Unknown Workflow
-frequency: 21
+frequency: 22
 level: strong
-coverage: 0.876381
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.595409
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, TTResolutionSelector, Text, VAEDecodeTiled, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3 图生视频_2085391376946122754.json, 视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030491852985606146.json, 视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030519163785060353.json, 视频生成/图生视频/LTX2.3-多帧视频_2030546098619682817.json, 视频生成/图生视频/LTX2.3-首尾帧视频_2030921554300768258.json, 视频生成/图生视频/LTX2.3-首尾帧视频（优化版）一致性增强_2030280752230830082.json, 视频生成/图生视频/LTX2.3_自动图_文生视频工作流优化版_2032374399482994689.json, 视频生成/图生视频/LTX2.3_自动图_文生视频工作流优化版_2032672959206264833.json, 视频生成/图生视频/LTX2.3全自动—图生_ 文生视频_2044340240424374273.json, 视频生成/图生视频/LTX2.3全自动—图生视频.全节点注释_2043549529819062274.json, 视频生成/图生视频/LTX2.3全自动图生视频_2055624170523906050.json, 视频生成/文生视频/LTX2.3 图生_ 文生视频【提示词自动优化】_2033527714837176322.json, 视频生成/文生视频/LTX2.3低显存文生图_图生图_首尾帧 视频生成ai漫剧短剧视频 保持人物一致性性价比超高LTX2_2031559977218875394.json, 视频生成/文生视频/LTX2.3全自动_手动提示词 图生视频  低消耗 人物一致 精准版_2057632019441602562.json, 视频生成/文生视频/LTX2.3全自动—图生_文生视频_2030257060473999361.json, 视频生成/文生视频/LTX2.3全自动图生+文生视频_2033000599163248642.json, 视频生成/文生视频/LTX2.3图生_ 文生视频_2033992306809905153.json, 视频生成/文生视频/LTX2.3图生_ 文生视频_2053005533375938562.json, 视频生成/文生视频/LTX2.3：图生、文生视频_2044341159635460098.json, 视频生成/文生视频/图生视频 -LTX2.3 全自动   图生视频_ 文生视频_2030510007468429313.json, 视频生成/文生视频/图生视频 文生视频 -LTX2.3 一键生成_2030565382297227266.json]
+members: [视频生成/图生视频/LTX-2.3 文&图生视频（双采高动态版）_2042065827050033153.json, 视频生成/图生视频/LTX-2.3首尾帧_2031962115128430594.json, 视频生成/图生视频/LTX-2.3首尾帧（双采高动态版）_2042066721300815873.json, 视频生成/图生视频/LTX2.3四宫格图生视频_2050412323076091906.json, 视频生成/图生视频/opsv-LTX2.3-4帧合一剧情_2050847417603502081.json, 视频生成/图生视频/opsv-LTX2.3-4帧合一剧情_2054591035602423809.json, 视频生成/图生视频/testCl图生视频_2052031676158627841.json, 视频生成/图生视频/testD_2052075045547192321.json, 视频生成/图生视频/【优化版】LTX-2.3首尾帧_2032479656754028546.json, 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042239582070116353.json, 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042767802834100226.json, 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042852519000416258.json, 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2053503554211594241.json, 视频生成/图生视频/四宫格剧情视频生成画音同步-LTX-2.3 图生视频_2037164842150268930.json, 视频生成/图生视频/图生视频5号_2052391533508345857.json, 视频生成/图生视频/图生视频三号_2052341833979703297.json, 视频生成/图生视频/小兔图生视频_2050965347808882690.json, 视频生成/图生视频/新新新四宫格图生视频_2050947229229301761.json, 视频生成/图生视频/测试A_断开LLM正面词_2051990736962367489.json, 视频生成/图生视频/测试B_删MultiText_2051999667881295873.json, 视频生成/图生视频/测试版1_随风1秒_2051983699100614658.json, 视频生成/文生视频/LTX2.3-四宫格剧情生成-音画同步-图生视频_2050173609158684674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_10
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 图生视频_2085391376946122754.json、视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030491852985606146.json、视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030519163785060353.json、视频生成/图生视频/LTX2.3-多帧视频_2030546098619682817.json、视频生成/图生视频/LTX2.3-首尾帧视频_2030921554300768258.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3 文&图生视频（双采高动态版）_2042065827050033153.json、视频生成/图生视频/LTX-2.3首尾帧_2031962115128430594.json、视频生成/图生视频/LTX-2.3首尾帧（双采高动态版）_2042066721300815873.json、视频生成/图生视频/LTX2.3四宫格图生视频_2050412323076091906.json、视频生成/图生视频/opsv-LTX2.3-4帧合一剧情_2050847417603502081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
+- **样本数**：22
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
+全部 22 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CR Text`
+- `CM_FloatToInt`
 - `CheckpointLoaderSimple`
 - `EmptyLTXVLatentVideo`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RH_LLMAPI_Pro_Node`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SetNode`
+- `SimpleMath+`
+- `TTResolutionSelector`
+- `Text`
 - `VAEDecodeTiled`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_FloatToInt` —— 20/21 个有
-- `LTXVAudioVAELoader` —— 20/21 个有
-- `LTXVChunkFeedForward` —— 20/21 个有
-- `LTXVImgToVideoConditionOnly` —— 20/21 个有
-- `ModelPatchTorchSettings` —— 20/21 个有
-- `PathchSageAttentionKJ` —— 20/21 个有
-- `PrimitiveFloat` —— 20/21 个有
-- `PrimitiveInt` —— 20/21 个有
-- `INTConstant` —— 19/21 个有
-- `RH_LLMAPI_Pro_Node` —— 15/21 个有
-- `PreviewAny` —— 12/21 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/21 个有
-- `LTXVFirstLastFrameControl_TTP` —— 5/21 个有
-- `SimpleMath+` —— 5/21 个有
-- `easy showAnything` —— 4/21 个有
-- `Int` —— 2/21 个有
-- `SetNode` —— 2/21 个有
-- `TextInputNode` —— 2/21 个有
-- `DualCLIPLoader` —— 1/21 个有
-- `GetImageSize+` —— 1/21 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/21 个有
-- `MathExpression|pysssss` —— 1/21 个有
-- `PromptRelayEncode` —— 1/21 个有
-- `UNETLoader` —— 1/21 个有
-- `VAELoaderKJ` —— 1/21 个有
-- `easy getNode` —— 1/21 个有
-- `easy setNode` —— 1/21 个有
-- `孤海注释` —— 1/21 个有
+- `LTXVImgToVideoInplaceKJ` —— 21/22 个有
+- `ImageScaleBy` —— 19/22 个有
+- `LTXVImgToVideoConditionOnly` —— 19/22 个有
+- `CR Text Replace` —— 18/22 个有
+- `ComfyMathExpression` —— 18/22 个有
+- `FloatConstant` —— 18/22 个有
+- `GuHaiAutoImageSplit` —— 18/22 个有
+- `ImageFromBatch+` —— 18/22 个有
+- `PreviewImage` —— 18/22 个有
+- `RH_Utils` —— 16/22 个有
+- `MultiTextConcatenate` —— 15/22 个有
+- `CR Text` —— 6/22 个有
+- `CustomAddLabel` —— 4/22 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/22 个有
+- `LTXVPreprocess` —— 4/22 个有
+- `Label (rgthree)` —— 4/22 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/22 个有
+- `SaveImage` —— 4/22 个有
+- `ImageConcatMulti` —— 3/22 个有
+- `DualCLIPLoader` —— 2/22 个有
+- `ImageStitch` —— 2/22 个有
+- `PreviewAny` —— 2/22 个有
+- `ShowText|pysssss` —— 2/22 个有
+- `TextGenerateLTX2Prompt` —— 2/22 个有
+- `easy convertAnything` —— 2/22 个有
+- `PrimitiveBoolean` —— 1/22 个有
+- `easy cleanGpuUsed` —— 1/22 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 21 | 100% |
-| 高度 | 25 | 25 - 25 | 21 | 100% |
+| 宽度 | 97 | 97 - 97 | 22 | 100% |
+| 高度 | 25 | 25 - 25 | 22 | 100% |
 
 ## 常见问题
 
@@ -91,5 +98,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，21 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，21 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，22 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，22 个样本，取值集中（一致性 100%）

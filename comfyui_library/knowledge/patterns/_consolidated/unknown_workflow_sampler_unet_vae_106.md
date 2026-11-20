@@ -1,72 +1,73 @@
 ---
 name: unknown_workflow_sampler_unet_vae_106
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.6497
-common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, UNETLoader, VAEDecodeAudio, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 11
+level: moderate
+coverage: 0.856182
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088096630896680961.json, 音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088150421855625218.json, 音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2089146123012362242.json, 音频生成/音频生成/minimax music3 文生音乐_2088438567403085826.json, 音频生成/音频生成/minimax_music3_音乐生成_2088129071363477506.json, 音频生成/音频生成/minimax_music_3_Peanut_2095822548951977985.json, 音频生成/音频生成/minimax_music_3_音乐生成_2103479152505610241.json, 音频生成/音频生成/方格智联-MINI音乐生成_2089370163186593793.json, 音频生成/音频生成/歌曲生成 MiniMax Music 3_2088109341151944705.json, 音频生成/音频生成/海螺MiniMaxMusic3 文生音乐歌曲音频_2088563341122949122.json]
+members: [视频生成/图生视频/H3 面部重绘 FACE REFINE 修复崩脸_2090087014422110210.json, 视频生成/图生视频/H3-参考生视频（全能参考）_2087759964113821697.json, 视频生成/图生视频/MiniMax H3  动画与风格化影像_2084557369203322882.json, 视频生成/图生视频/MiniMax H3 -多图参考生视频_2084163028865609729.json, 视频生成/图生视频/MiniMax H3 3参考图生成跳舞视频_2089373518189383681.json, 视频生成/图生视频/MiniMax H3 8步加速 智能参考娃娃穿搭视频生成_2085536956800397314.json, 视频生成/图生视频/MiniMax H3 ComfyUI多图（音视频）参考模板工作流（官方模板）_2085042609009020929.json, 视频生成/图生视频/MiniMax H3 Ref2VA多图参考生视频-导演级官方提示词标准化模板_2084942982297505793.json, 视频生成/图生视频/MiniMax H3 参考生视频_2084543006513909761.json, 视频生成/图生视频/MiniMax H3 参考生视频_2085194930540077058.json, 视频生成/图生视频/MiniMax H3 参考生视频（Sage加速）2608_2085826399662854146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_106
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088096630896680961.json、音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2088150421855625218.json、音频生成/音频生成/MiniMax Music 3 文生歌曲+全节点注释_2089146123012362242.json、音频生成/音频生成/minimax music3 文生音乐_2088438567403085826.json、音频生成/音频生成/minimax_music3_音乐生成_2088129071363477506.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/H3 面部重绘 FACE REFINE 修复崩脸_2090087014422110210.json、视频生成/图生视频/H3-参考生视频（全能参考）_2087759964113821697.json、视频生成/图生视频/MiniMax H3  动画与风格化影像_2084557369203322882.json、视频生成/图生视频/MiniMax H3 -多图参考生视频_2084163028865609729.json、视频生成/图生视频/MiniMax H3 3参考图生成跳舞视频_2089373518189383681.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：65%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxMusic3LatentAudio`
-- `KSampler`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
+- `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 6/10 个有
-- `SeedNode` —— 6/10 个有
-- `VAEDecodeAudioTiled` —— 6/10 个有
-- `JjkText` —— 4/10 个有
-- `PreviewAudio` —— 4/10 个有
-- `CR Text` —— 3/10 个有
-- `LoadImage` —— 2/10 个有
-- `PrimitiveFloat` —— 2/10 个有
-- `PrimitiveStringMultiline` —— 2/10 个有
-- `easy seed` —— 1/10 个有
-- `孤海注释` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 10/11 个有
+- `EasyCache` —— 5/11 个有
+- `PathchSageAttentionKJ` —— 5/11 个有
+- `VHS_LoadVideo` —— 4/11 个有
+- `LoadAudio` —— 3/11 个有
+- `LoraLoaderModelOnly` —— 2/11 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/11 个有
+- `VHS_VideoCombine` —— 2/11 个有
+- `FlashVSRInitPipe` —— 1/11 个有
+- `FlashVSRNodeAdv` —— 1/11 个有
+- `H3FaceStitch` —— 1/11 个有
+- `H3FaceTrackCrop` —— 1/11 个有
+- `H3InjectVideoLatent` —— 1/11 个有
+- `H3PerFrameDenoise` —— 1/11 个有
+- `MiniMaxH3NativeAudioLock` —— 1/11 个有
+- `SolAttnPatch` —— 1/11 个有
+- `忽略多组孤海` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 10 | 100% |
-| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 10/10 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

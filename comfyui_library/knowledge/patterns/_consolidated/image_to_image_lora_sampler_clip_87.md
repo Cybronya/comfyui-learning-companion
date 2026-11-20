@@ -1,88 +1,83 @@
 ---
 name: image_to_image_lora_sampler_clip_87
 type: Image To Image
-frequency: 3
+frequency: 5
 level: strong
-coverage: 0.718
-common_nodes: [Any Switch (rgthree), CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, GetImageSize, GetNode, GoogleTranslateTextNode, Image Blend by Mask, Image Comparer (rgthree), ImageScaleBy, ImageStitch, ImpactMinMax, KSampler, LayerUtility: ColorImage, LoadImage, LoadImageOutput, LoraLoaderModelOnly, Mask Fill Holes, MaskToImage, PreviewImage, ReferenceLatent, SaveImage, SeedVR2GGUF, SetNode, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, 孤海_kontext生图比例, 孤海图像缩放按像素]
+coverage: 0.933
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux-kontext 万能P图_2088595299035078658.json, 图片生成/图生图/一键去水印_水印消除_去马赛克_万物P图_1979437416035553282.json, 图片生成/文生图/Flux-kontext 万能P图_2084694321634299905.json]
+members: [图片生成/图生图/动漫转真实V2 - Qwen-edit+Flux2-Klein 双采样_2029160705575882754.json, 图片生成/图生图/动漫转真实V2_极致真实_Qwen-edit+Flux2-Klein 双采样_2019762691333693441.json, 图片生成/图生图/动漫转真实V3 Boogu_edit 采样&微调_2077168741405777922.json, 平台全量/动漫人物转真实人物（Qwen-edit+Flux2-Klein 双采样）_2020497508308357121.json, 数字人/数字人/动漫转真实V2_极致真实_Qwen-edit+Flux2-Klein 双采样_2056040703163150338.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_87
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux-kontext 万能P图_2088595299035078658.json、图片生成/图生图/一键去水印_水印消除_去马赛克_万物P图_1979437416035553282.json、图片生成/文生图/Flux-kontext 万能P图_2084694321634299905.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/动漫转真实V2 - Qwen-edit+Flux2-Klein 双采样_2029160705575882754.json、图片生成/图生图/动漫转真实V2_极致真实_Qwen-edit+Flux2-Klein 双采样_2019762691333693441.json、图片生成/图生图/动漫转真实V3 Boogu_edit 采样&微调_2077168741405777922.json、平台全量/动漫人物转真实人物（Qwen-edit+Flux2-Klein 双采样）_2020497508308357121.json、数字人/数字人/动漫转真实V2_极致真实_Qwen-edit+Flux2-Klein 双采样_2056040703163150338.json）
 
 - **类型**：Image To Image
-- **样本数**：3
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `GetImageSize`
-- `GetNode`
-- `GoogleTranslateTextNode`
-- `Image Blend by Mask`
 - `Image Comparer (rgthree)`
-- `ImageScaleBy`
-- `ImageStitch`
-- `ImpactMinMax`
+- `ImageScaleToTotalPixels`
 - `KSampler`
-- `LayerUtility: ColorImage`
 - `LoadImage`
-- `LoadImageOutput`
 - `LoraLoaderModelOnly`
-- `Mask Fill Holes`
-- `MaskToImage`
-- `PreviewImage`
+- `ModelSamplingAuraFlow`
 - `ReferenceLatent`
 - `SaveImage`
-- `SeedVR2GGUF`
-- `SetNode`
-- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `孤海_kontext生图比例`
-- `孤海图像缩放按像素`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/3 个有
-- `RHHiddenNodes` —— 1/3 个有
+- `CFGNorm` —— 4/5 个有
+- `ImageColorMatch+` —— 4/5 个有
+- `ImageSharpen` —— 4/5 个有
+- `TextEncodeQwenImageEditPlus` —— 4/5 个有
+- `workflow>自定义采样器` —— 4/5 个有
+- `CR Image Input Switch` —— 3/5 个有
+- `1hew_ImageToURL` —— 1/5 个有
+- `TT_img_enc_v2` —— 1/5 个有
+- `TextEncodeBooguEdit` —— 1/5 个有
+- `easy imageColorMatch` —— 1/5 个有
+- `easy saveText` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
+- `workflow>自定义采样` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 4 | 4 - 8 | 5 | 67% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

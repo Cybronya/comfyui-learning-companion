@@ -1,79 +1,84 @@
 ---
 name: text_to_image_lora_sampler_clip_33
 type: Text To Image
-frequency: 21
-level: weak
-coverage: 0.90781
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 22
+level: strong
+coverage: 0.902
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetNode, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, TTResolutionSelector, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy anythingIndexSwitch, easy int]
+problems: []
 missing: []
-members: [图片生成/文生图/MOSS_4步_FP32模型VS25步_SFT模型文生图｜美少女写实两版对比_2114253844162113538.json, 图片生成/文生图/MOSS_Image_SFT_BF16+4步加速LoRA文生图｜美少女写实出图快_2114248990190559233.json, 图片生成/文生图/MOSS与Krea2双模型文生图 高质量图像生成处理工具_2113761690222415874.json, 图片生成/文生图/MOSS与Krea2联合文生图｜双模型加持创意生图更出片_2113529543649751042.json, 图片生成/文生图/MOSS动漫加速工作流 动漫游戏角色文生图处理工具_2113700438838177794.json, 图片生成/文生图/MOSS动漫加速工作流_2113206327819456514.json, 图片生成/文生图/MOSS动漫加速工作流｜动漫角色游戏角色文生图快速产出_2113510899704225793.json, 图片生成/文生图/MOSS文生图2K极速 人物特效角色一致性生成工具_2114130557742444546.json, 图片生成/文生图/MOSS文生图2K极速 角色设计表演高速生成工具_2113734631899090946.json, 图片生成/文生图/MOSS文生图2K极速 高速标准模式图像生成处理工具_2113339863922728961.json, 图片生成/文生图/MOSS文生图2K极速版 写实美少女图像生成工具_2113774445595811841.json, 图片生成/文生图/MOSS文生图2K极速版 写实美少女高速图像生成工具_2113483541777567746.json, 图片生成/文生图/MOSS文生图2K极速版 高速文生图处理生成工具_2112975792320892929.json, 图片生成/文生图/MOSS文生图2K极速版工作流，美少女写实风一键生成高清图_2114460846381420546.json, 图片生成/文生图/MOSS文生图2K极速版文生图｜美少女写实风出图不限量_2114275926564491266.json, 图片生成/文生图/MOSS文生图2K极速版，人物更真实皮肤质感自然高清直出_2114452341444403202.json, 图片生成/文生图/MOSS文生图2K极速版，美少女写实风格一键直出高清图片_2114484676936159233.json, 图片生成/文生图/MOSS文生图2K极速版｜美少女写实文生图秒出_2114049430289731586.json, 图片生成/文生图/MOSS文生图2K极速版｜美少女写实风格快速出图体验_2113579003356471297.json, 图片生成/文生图/MOSS联合Krea2双模型文生图｜创意文字出图新玩法体验_2113502670672719874.json, 图片生成/文生图/遇见AI Moss image 文生图｜8步加速基础流省时_2112458024404209665.json]
+members: [图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-凌清寒-第一套【syqiangk】_2086814976962031617.json, 图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-寒鸦-第一套【syqiangk】_2085913545149079553.json, 图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-灵儿-第一套【syqiangk】_2077043620032630785.json, 图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-苏见秋-第一套【syqiangk】_2082478834116554754.json, 图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫婉-新建模-第一套【syqiangk】_2075978633625300994.json, 图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫阙-第一套【syqiangk】_2078147529719504897.json, 图片生成/文生图/Krea2+Klein双采-国漫-吞噬星空-星幻王-第一套【syqiangk】_2041908781411471361.json, 图片生成/文生图/Krea2+Klein双采-国漫-吞噬星空-溟莲之主-第一套【syqiangk】_2080260967069478914.json, 图片生成/文生图/Krea2+Klein双采-国漫-大主宰-清衍静-第一套【syqiangk】_2074899453416394754.json, 图片生成/文生图/Krea2+Klein双采-国漫-大主宰-灵溪-第一套【syqiangk】_2079577200193523713.json, 图片生成/文生图/Krea2+Klein双采-国漫-师兄啊师兄-云霄-黑化版【syqiangk】_2085398499084038145.json, 图片生成/文生图/Krea2+Klein双采-国漫-择日飞升-青壁-第一套【syqiangk】_2086873516091203586.json, 图片生成/文生图/Krea2+Klein双采-国漫-斗破苍穹-药灵-第一套【syqiangk】_2082101399822888961.json, 图片生成/文生图/Krea2+Klein双采-国漫-枯骨成仙-苏千荷-第一套【syqiangk】_2084295242433519617.json, 图片生成/文生图/Krea2+Klein双采-国漫-枯骨成仙-苏梦瑶-第一套【syqiangk】_2081412397172084737.json, 图片生成/文生图/Krea2+Klein双采-国漫-沧元图-长乐(大越皇后)-第一套【syqiangk】_2076711849927729154.json, 图片生成/文生图/Krea2+Klein双采-国漫-沧元图-长乐(大越皇后)-第二套【syqiangk】_2080276212844421121.json, 图片生成/文生图/Krea2+Klein双采-国漫-深空彼岸-燕清妍-第一套【syqiangk】_2085035661463220225.json, 图片生成/文生图/Krea2+Klein双采-国漫-逆天邪神-楚月婵-年番第一套【syqiangk】_2083403282608910338.json, 图片生成/文生图/Krea2+Klein双采-国漫-逆天邪神-苍月公主-年番第二套【syqiangk】_2083178016846467074.json, 图片生成/文生图/Krea2+Klein双采-游戏-永劫无间-甘璇-第一套【syqiangk】_2075979084965957634.json, 图片生成/文生图/Krea2+Klein双采-韩漫-美丽新世界-金美庭-第一套【syqiangk】_2083572001037443074.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_33
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/文生图/MOSS_4步_FP32模型VS25步_SFT模型文生图｜美少女写实两版对比_2114253844162113538.json、图片生成/文生图/MOSS_Image_SFT_BF16+4步加速LoRA文生图｜美少女写实出图快_2114248990190559233.json、图片生成/文生图/MOSS与Krea2双模型文生图 高质量图像生成处理工具_2113761690222415874.json、图片生成/文生图/MOSS与Krea2联合文生图｜双模型加持创意生图更出片_2113529543649751042.json、图片生成/文生图/MOSS动漫加速工作流 动漫游戏角色文生图处理工具_2113700438838177794.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-凌清寒-第一套【syqiangk】_2086814976962031617.json、图片生成/文生图/Krea2+Klein双采-国漫-一斩苍穹-寒鸦-第一套【syqiangk】_2085913545149079553.json、图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-灵儿-第一套【syqiangk】_2077043620032630785.json、图片生成/文生图/Krea2+Klein双采-国漫-光阴之外-苏见秋-第一套【syqiangk】_2082478834116554754.json、图片生成/文生图/Krea2+Klein双采-国漫-凡人修仙传-南宫婉-新建模-第一套【syqiangk】_2075978633625300994.json…）
 
 - **类型**：Text To Image
-- **样本数**：21
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：22
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
+全部 22 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetNode`
+- `ImageScaleToTotalPixels`
 - `KSampler`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `JjkText` —— 20/21 个有
-- `solarL_SaveImagesToZip` —— 20/21 个有
-- `孤海注释` —— 20/21 个有
-- `ResolutionSelector` —— 19/21 个有
-- `EmptyFlux2LatentImage` —— 18/21 个有
-- `PreviewImage` —— 10/21 个有
-- `SkipLayerGuidanceDiTSimple` —— 8/21 个有
-- `CR Text` —— 4/21 个有
-- `CR Prompt Text` —— 3/21 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/21 个有
-- `JoinStringMulti` —— 3/21 个有
-- `ModelSamplingAuraFlow` —— 3/21 个有
-- `SeedNode` —— 3/21 个有
-- `ImageBatch` —— 1/21 个有
+- `easy anythingIndexSwitch`
+- `easy int`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 50 | 21 | 0% |
-| Prompt 约束强度(CFG) | 4.5 | 3.5 - 4.5 | 21 | 95% |
-| 采样算法 | er_sde | - | 21 | 95% |
-| 调度器 | beta | - | 21 | 95% |
-| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
-| 宽度 | 80 | 80 - 1024 | 21 | 0% |
-| 高度 | 80 | 80 - 1024 | 21 | 0% |
+| 采样步数 | 16 | 16 - 16 | 22 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 22 | 100% |
+| 采样算法 | euler_ancestral | - | 22 | 100% |
+| 调度器 | simple | - | 22 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
+| 宽度 | 512 | 512 - 512 | 22 | 100% |
+| 高度 | 512 | 512 - 512 | 22 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 35/21 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 50，21 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 3.5 - 4.5，21 个样本，取值集中（一致性 95%）
-- 采样算法 最常用 er_sde，21 个样本，一致性 95%
-- 调度器 最常用 beta，21 个样本，一致性 95%
-- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1024，21 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，21 个样本，取值分散，一致性仅 0%
-- 高发问题（35/21 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 16，观测区间 16 - 16，22 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，22 个样本，一致性 100%
+- 调度器 最常用 simple，22 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，22 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，22 个样本，取值集中（一致性 100%）

@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_video_63
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.955667
-common_nodes: [Bookmark (rgthree), GetVideoComponents, LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo, SeedVR2BlockSwap, SeedVR2GGUF, VHS_VideoCombine]
+coverage: 0.793
+common_nodes: [FloatProcess, LoadAudio, LoadFloatModels, LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2061103057252999170.json, 数字人/数字人/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2080646696647880705.json, 数字人/数字人/heygem口播数字人电商口播二次高清放大1024工作流里面可自定义_1977293437747777537.json]
+members: [视频生成/图生视频/FLOAT数字人(最快的数字人)_1942860593906782209.json, 视频生成/图生视频/Float_数字人_1927209285955256321.json, 视频生成/图生视频/float_数字人基础工作流_1925785126419271682.json, 视频生成/图生视频/float_语音生成视频基础工作流_1925390053001076737.json, 视频生成/图生视频/富有表情的极速数字人生成(Float)_1920342687784828929.json, 视频生成/图生视频/电商数字人 Float progress_1930078204965371905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_63
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2061103057252999170.json、数字人/数字人/heygem口播数字人电商口播seedVR2二次高清放大1280默认视频加音频生成数字人视频_2080646696647880705.json、数字人/数字人/heygem口播数字人电商口播二次高清放大1024工作流里面可自定义_1977293437747777537.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/FLOAT数字人(最快的数字人)_1942860593906782209.json、视频生成/图生视频/Float_数字人_1927209285955256321.json、视频生成/图生视频/float_数字人基础工作流_1925785126419271682.json、视频生成/图生视频/float_语音生成视频基础工作流_1925390053001076737.json、视频生成/图生视频/富有表情的极速数字人生成(Float)_1920342687784828929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Bookmark (rgthree)`
-- `GetVideoComponents`
+全部 6 个 workflow 都包含：
+- `FloatProcess`
 - `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `SaveVideo`
-- `SeedVR2BlockSwap`
-- `SeedVR2GGUF`
+- `LoadFloatModels`
+- `LoadImage`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowAnything|Mie` —— 2/3 个有
+- `PrimitiveFloat` —— 4/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
 
 ## 典型参数
 

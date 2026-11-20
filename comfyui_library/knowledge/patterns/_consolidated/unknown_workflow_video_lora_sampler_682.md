@@ -1,94 +1,88 @@
 ---
 name: unknown_workflow_video_lora_sampler_682
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.813
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyEverAnimate, ComfyEverAnimateTrimImages, ComfyMathExpression, DrawViTPose, GetImageSizeAndCount, INTConstant, ImageBatch, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelMemoryUsageFactorOverride, ModelPatchTorchSettings, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WD14Tagger|pysssss, WanChunkFeedForward, easy forLoopEnd, easy forLoopStart]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.85575
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, GetImageSize, GrowMaskWithBlur, ImageCompositeMasked, ImageConcanate, ImageFromBatch+, ImageMirror, ImpactSwitch, InvertMask, JWInteger, KSamplerAdvanced, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2VideoUltra, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskToImage, ModelSamplingSD3, PDIMAGE_LongerSize, PathchSageAttentionKJ, PreviewImage, RebatchImages, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo]
+problems: []
 missing: []
-members: [视频生成/图生视频/Furry AI Dance Generator｜KSK Custom Edition_2072998868763320320.json, 视频生成/文生视频/EverAnimate Long Video Consistent Editing_2072998873179922432.json, 视频生成/文生视频/EverAnimate 长视频一致性生成_2063934460369915905.json]
+members: [平台全量/Wan2.2 Vace主体替换视频生视频加速版V1_1950024468905287681.json, 平台全量/🦖Wan2.2 Vace视频换主体_1957619452634394626.json, 视频生成/图生视频/Wan2.2 Vace主体替换视频生视频加速版V1_1957475437662367746.json, 视频生成/图生视频/wan2.2图片跳舞视频转绘视频主体替换（Vace+自动提示词）_1958077284689334273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_682
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Furry AI Dance Generator｜KSK Custom Edition_2072998868763320320.json、视频生成/文生视频/EverAnimate Long Video Consistent Editing_2072998873179922432.json、视频生成/文生视频/EverAnimate 长视频一致性生成_2063934460369915905.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Wan2.2 Vace主体替换视频生视频加速版V1_1950024468905287681.json、平台全量/🦖Wan2.2 Vace视频换主体_1957619452634394626.json、视频生成/图生视频/Wan2.2 Vace主体替换视频生视频加速版V1_1957475437662367746.json、视频生成/图生视频/wan2.2图片跳舞视频转绘视频主体替换（Vace+自动提示词）_1958077284689334273.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyEverAnimate`
-- `ComfyEverAnimateTrimImages`
-- `ComfyMathExpression`
-- `DrawViTPose`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageBatch`
-- `ImageResizeKJv2`
-- `KSampler`
+- `CR Prompt Text`
+- `GetImageSize`
+- `GrowMaskWithBlur`
+- `ImageCompositeMasked`
+- `ImageConcanate`
+- `ImageFromBatch+`
+- `ImageMirror`
+- `ImpactSwitch`
+- `InvertMask`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerMask: LoadFlorence2Model`
+- `LayerMask: ObjectDetectorFL2`
+- `LayerMask: SAM2VideoUltra`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelMemoryUsageFactorOverride`
-- `ModelPatchTorchSettings`
+- `MaskToImage`
 - `ModelSamplingSD3`
-- `OnnxDetectionModelLoader`
+- `PDIMAGE_LongerSize`
 - `PathchSageAttentionKJ`
-- `PoseAndFaceDetection`
+- `PreviewImage`
+- `RebatchImages`
 - `TrimVideoLatent`
-- `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WD14Tagger|pysssss`
-- `WanChunkFeedForward`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `BBoxYOLO` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 2/3 个有
-- `SDPoseDrawKeypoints` —— 2/3 个有
-- `SDPoseKeypointExtractor` —— 2/3 个有
-- `YOLOModelLoader` —— 2/3 个有
-- `BlockifyMask` —— 1/3 个有
-- `BodyRatioMapperProportionTransfer` —— 1/3 个有
-- `BodyRatioMapperSDPoseRender` —— 1/3 个有
-- `DrawMaskOnImage` —— 1/3 个有
-- `GrowMaskWithBlur` —— 1/3 个有
-- `LayerMask: SAM2VideoUltra` —— 1/3 个有
-- `easy imageIndexSwitch` —— 1/3 个有
+- `InspyrenetRembg` —— 3/4 个有
+- `LayerUtility: ImageRemoveAlpha` —— 3/4 个有
+- `RH_Captioner` —— 3/4 个有
+- `ShowText` —— 3/4 个有
+- `easy promptConcat` —— 3/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `VHS_VideoInfo` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | lcm | - | 3 | 100% |
-| 调度器 | normal | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | randomize | - | 4 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | lcm | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 lcm，3 个样本，一致性 100%
-- 调度器 最常用 normal，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（6/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，4 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 lcm，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

@@ -1,68 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_513
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.6902
-common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.712333
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/室内空间装修生长动画_2111460963353448449.json, 视频生成/图生视频/平面户型图生长视频-H3_2111329378872418306.json, 视频生成/图生视频/最强单采V2【10步加特林版】_2110594969235968002.json, 视频生成/图生视频/最强单采V2【10步加特林版】_2114190862929448962.json, 视频生成/图生视频/高质量minimaxH3官流单采+4k高清直出_2105514520922906626.json]
+members: [视频生成/图生视频/D_I2V（V1.1.1）_2047149486551605249.json, 视频生成/图生视频/I2V-林小茶_2047141901102489601.json, 视频生成/图生视频/Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json, 视频生成/图生视频/V4.1（demo2）_2051961839407386625.json, 视频生成/图生视频/X_I2V（V1.1.1）_2048682075724718081.json, 视频生成/图生视频/图片对口型_infiniteTalk_声音克隆混合版_2072325525946851330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_513
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/室内空间装修生长动画_2111460963353448449.json、视频生成/图生视频/平面户型图生长视频-H3_2111329378872418306.json、视频生成/图生视频/最强单采V2【10步加特林版】_2110594969235968002.json、视频生成/图生视频/最强单采V2【10步加特林版】_2114190862929448962.json、视频生成/图生视频/高质量minimaxH3官流单采+4k高清直出_2105514520922906626.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/D_I2V（V1.1.1）_2047149486551605249.json、视频生成/图生视频/I2V-林小茶_2047141901102489601.json、视频生成/图生视频/Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json、视频生成/图生视频/V4.1（demo2）_2051961839407386625.json、视频生成/图生视频/X_I2V（V1.1.1）_2048682075724718081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+全部 6 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoPassImagesFromSamples`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `VHS_LoadVideo` —— 4/5 个有
-- `GetNode` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `忽略多组孤海` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
-- `GoohaiDisplayAny` —— 1/5 个有
-- `JjkText` —— 1/5 个有
-- `LayerUtility: TextJoin` —— 1/5 个有
-- `MemoryCleaner` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `RHLLMChatNode` —— 1/5 个有
-- `RH_DLSS5Enhance` —— 1/5 个有
-- `RH_RhartImageG2ImageToImage` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `孤海注释` —— 1/5 个有
+- `GetNode` —— 5/6 个有
+- `INTConstant` —— 5/6 个有
+- `PreviewAny` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `Wav2VecModelLoader` —— 5/6 个有
+- `FB_Qwen3TTSVoiceClone` —— 4/6 个有
+- `GetImageSize` —— 4/6 个有
+- `PreviewAudio` —— 4/6 个有
+- `ResizeImagesByLongerEdge` —— 4/6 个有
+- `Text` —— 4/6 个有
+- `IndexTTS2Run` —— 2/6 个有
+- `AudioCrop` —— 1/6 个有
+- `AudioToFPS` —— 1/6 个有
+- `CR Text` —— 1/6 个有
+- `ImpactConditionalBranch` —— 1/6 个有
+- `PrimitiveBoolean` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `RunningHub Deepcleaner` —— 1/6 个有
+- `SaveAudio` —— 1/6 个有
+- `easy int` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 

@@ -33,7 +33,7 @@ Prompt
 
 常见取值：
 
-- `["https://ai.t8star.org/v1", "sk-FeUzy0dA8hLqWkTDMiG6vz9w1y7ztM8cgOzw3HPs5AE9LIDL", "gpt-image-2-all", "", ""]`（1 次）
+- `["https://ai.t8star.org/v1", "REDACTED0000000000000000000000000000000000000000000", "gpt-image-2-all", "", ""]`（1 次）
 
 ## 可信度
 

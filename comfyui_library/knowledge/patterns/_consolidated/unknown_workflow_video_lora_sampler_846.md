@@ -1,68 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_846
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.574
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, IndexTTS2Run, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
+frequency: 3
+level: moderate
+coverage: 0.633
+common_nodes: [AudioCrop, AudioInfo, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, Float, Int, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, SamplerCustom, SetLatentNoiseMask, SimpleMath+, SolidMask, Text, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json, 视频生成/图生视频/图片对口型_infiniteTalk_声音克隆混合版_2072325525946851330.json]
+members: [数字人/数字人/ltx2.3文本驱动-声音设计_2100950016872505346.json, 视频生成/图生视频/数字人：ltx2.3极速蒸馏版-文本驱动-声音设计_2034445280996761602.json, 视频生成/文生视频/LTX2.3极速版 图生视频 图片音频双驱动 自动生提示词 优化版_2034787261849538562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_846
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json、视频生成/图生视频/图片对口型_infiniteTalk_声音克隆混合版_2072325525946851330.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/ltx2.3文本驱动-声音设计_2100950016872505346.json、视频生成/图生视频/数字人：ltx2.3极速蒸馏版-文本驱动-声音设计_2034445280996761602.json、视频生成/文生视频/LTX2.3极速版 图生视频 图片音频双驱动 自动生提示词 优化版_2034787261849538562.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：57%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
-- `IndexTTS2Run`
+全部 3 个 workflow 都包含：
+- `AudioCrop`
+- `AudioInfo`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `Float`
+- `Int`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `SamplerCustom`
+- `SetLatentNoiseMask`
+- `SimpleMath+`
+- `SolidMask`
+- `Text`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `AudioToFPS` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImpactConditionalBranch` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `RunningHub Deepcleaner` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
-- `easy int` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `Apply Whisper` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `InversionDemoLazySwitch` —— 2/3 个有
+- `LTXVLatentUpsampler` —— 2/3 个有
+- `LatentUpscaleModelLoader` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `Qwen3TTSModelLoader` —— 2/3 个有
+- `Qwen3TTSVoiceClone` —— 2/3 个有
+- `Qwen3TTSVoiceDesign` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `ShowText` —— 2/3 个有
+- `StringSubstring` —— 2/3 个有
+- `llama_cpp_instruct_adv` —— 2/3 个有
+- `llama_cpp_model_loader` —— 2/3 个有
+- `llama_cpp_parameters` —— 2/3 个有
+- `MelBandRoFormerModelLoader` —— 1/3 个有
+- `MelBandRoFormerSampler` —— 1/3 个有
+- `Qwen3_VQA_Plus` —— 1/3 个有
 
 ## 典型参数
 
@@ -74,4 +88,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

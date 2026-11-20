@@ -1,42 +1,38 @@
 ---
 name: unknown_workflow_video_13
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: moderate
-coverage: 0.727143
-common_nodes: [LoadImage, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, RH_Sora2_I2V, SaveImage, SaveVideo, easy showAnything]
+coverage: 0.7816
+common_nodes: [FlashVSRNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S+ 全能图片v1 人物参考+自动分镜出片_1978674363534823426.json, 视频生成/图生视频/全能视频S做tvc广告_1989011351987163137.json, 视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987500333691809794.json, 视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987847194495619074.json, 视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987855331382505473.json, 视频生成/文生视频/全能视频S+ 全能图片v1图片参考，自动分镜出片_1986439647997947905.json, 视频生成/文生视频/全能视频S+ 全能图片v1谷歌人物参考自动分镜广告tvc广告视频高清无水印_1979876369238757378.json]
+members: [平台全量/FlashVSR 视频超分_2078843157017620481.json, 平台全量/FlashVSR 视频高清修复_2049464955128254465.json, 平台全量/FlashVSR 视频高清修复，自用_1999076463141847042.json, 平台全量/FlashVSR视频高清修复放大，超快速度，超高质量_1991098060631572481.json, 平台全量/FlshVSR 视频高清修复放大，快速高质_1994966150746398721.json, 平台全量/FlshVSR视频高清修复放大_1993305865396617217.json, 平台全量/TwistCanvas · FlashVSR 2倍视频超分_2102692384785129473.json, 平台全量/Work-Fisher-FlshVSR视频高清修复放大，超快速度，超高质量_1981706852268425218.json, 平台全量/flashvsr-视频放大-批量_2086976673488134146.json, 平台全量/flashvsr_2009637196495593473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_13
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/全能视频S+ 全能图片v1 人物参考+自动分镜出片_1978674363534823426.json、视频生成/图生视频/全能视频S做tvc广告_1989011351987163137.json、视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987500333691809794.json、视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987847194495619074.json、视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987855331382505473.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/FlashVSR 视频超分_2078843157017620481.json、平台全量/FlashVSR 视频高清修复_2049464955128254465.json、平台全量/FlashVSR 视频高清修复，自用_1999076463141847042.json、平台全量/FlashVSR视频高清修复放大，超快速度，超高质量_1991098060631572481.json、平台全量/FlshVSR 视频高清修复放大，快速高质_1994966150746398721.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Sora2_I2V`
-- `SaveImage`
-- `SaveVideo`
-- `easy showAnything`
+全部 10 个 workflow 都包含：
+- `FlashVSRNode`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `workflow>线稿` —— 5/7 个有
-- `Bookmark (rgthree)` —— 3/7 个有
-- `VHS_LoadVideoPath` —— 3/7 个有
-- `VHS_VideoCombine` —— 3/7 个有
-- `VHS_VideoInfo` —— 3/7 个有
+- `JWInteger` —— 7/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/10 个有
+- `ImageConcatMulti` —— 1/10 个有
+- `ImageScaleToTotalPixels` —— 1/10 个有
 
 ## 典型参数
 

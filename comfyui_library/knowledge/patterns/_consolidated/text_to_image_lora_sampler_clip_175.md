@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_175
 type: Text To Image
 frequency: 10
 level: strong
-coverage: 0.831
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PrimitiveStringMultiline, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.7545
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/(文生图 Flux3 )Flux3-Klein Text-to-Image，工作流直出_2111584553310711810.json, 图片生成/文生图/AI换装Qwen Image 2.1双图试穿智能提示词 服装展示方案_2108655915309289474.json, 图片生成/文生图/FLUX3 Image Klein文生图修复版，中文繁体招牌王_2111942921883840514.json, 图片生成/文生图/Flux3 Image Klein distill t2i加速，文生图极速出片_2111567165089476610.json, 图片生成/文生图/Flux3 Klein文生图，人像写真海报制作全能出图_2112279255878033409.json, 图片生成/文生图/Flux3-Klein Text-to-Image文生图工作流｜英文全称也能跑_2111343130200068097.json, 图片生成/文生图/Flux3-Klein Text-to-Image，文生图工作流直出_2111547115834011649.json, 图片生成/文生图/Flux3_Klein_t2i文生图｜人像写真海报制作全能｜文本直出高质量图片_2112046112122171393.json, 图片生成/文生图/Moss Image SFT文生图 监督微调高质量图像生成工具_2113687761625632770.json, 图片生成/文生图/flux3 t2v蒸馏版本，文生图反推提示词图生图_2111896835517411329.json]
+members: [图片生成/图生图/图生图一键虚拟试穿服装展示换装处理生成工具_2101393041541132289.json, 图片生成/图生图/图生图一键虚拟试穿生成 服装展示换装套系_2095835014322810881.json, 图片生成/图生图/图生图一键虚拟试穿生成 服装展示换装套系_2100852214012145666.json, 图片生成/图生图/服装展示换装套系｜图生图一键虚拟试穿生成_2090526196059697154.json, 图片生成/图生图/电商服装展示换装换衣｜FireRed-Image-Edit图生图直出_2092800939144077313.json, 图片生成/图生图/短剧人物三视图｜参考图生成正侧背角色设定图_2089309758296780801.json, 图片生成/文生图/Krea2美学视觉文生图加SeedVR2高清出图工作流，文生图高质量文本到图像_2107579414744752130.json, 数字人/数字人/Krea2熟颜世绘Lora模型 写实美少女文生图风格化生成_2099181814492524545.json, 数字人/数字人/krea2熟颜世绘｜尺素数字人文生图美少女生成_2091288163825311745.json, 数字人/数字人/图生图一键虚拟试穿生成 服装展示换装套系_2116600221210857473.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_175
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/(文生图 Flux3 )Flux3-Klein Text-to-Image，工作流直出_2111584553310711810.json、图片生成/文生图/AI换装Qwen Image 2.1双图试穿智能提示词 服装展示方案_2108655915309289474.json、图片生成/文生图/FLUX3 Image Klein文生图修复版，中文繁体招牌王_2111942921883840514.json、图片生成/文生图/Flux3 Image Klein distill t2i加速，文生图极速出片_2111567165089476610.json、图片生成/文生图/Flux3 Klein文生图，人像写真海报制作全能出图_2112279255878033409.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/图生图一键虚拟试穿服装展示换装处理生成工具_2101393041541132289.json、图片生成/图生图/图生图一键虚拟试穿生成 服装展示换装套系_2095835014322810881.json、图片生成/图生图/图生图一键虚拟试穿生成 服装展示换装套系_2100852214012145666.json、图片生成/图生图/服装展示换装套系｜图生图一键虚拟试穿生成_2090526196059697154.json、图片生成/图生图/电商服装展示换装换衣｜FireRed-Image-Edit图生图直出_2092800939144077313.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
@@ -29,7 +29,6 @@ source: knowledge_consolidation
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -37,23 +36,25 @@ source: knowledge_consolidation
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 9/10 个有
-- `ResolutionSelector` —— 9/10 个有
-- `TextGenerate` —— 9/10 个有
+- `ConditioningZeroOut` —— 9/10 个有
+- `SeedVR2LoadDiTModel` —— 9/10 个有
+- `SeedVR2LoadVAEModel` —— 9/10 个有
+- `SeedVR2VideoUpscaler` —— 9/10 个有
+- `SetNode` —— 9/10 个有
 - `孤海注释` —— 9/10 个有
-- `EmptyFlux2LatentImage` —— 8/10 个有
-- `PreviewAny` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
-- `Seed (rgthree)` —— 3/10 个有
-- `ComfyMathExpression` —— 2/10 个有
-- `Ideogram4PromptBuilderKJ` —— 2/10 个有
-- `ModelSamplingFlux` —— 2/10 个有
-- `PrimitiveFloat` —— 2/10 个有
-- `BatchImagesNode` —— 1/10 个有
-- `LoadImage` —— 1/10 个有
-- `QwenImage21Cache` —— 1/10 个有
-- `SkipLayerGuidanceDiTSimple` —— 1/10 个有
-- `TextEncodeQwenImage21` —— 1/10 个有
+- `ImageScaleToTotalPixels` —— 8/10 个有
+- `Image Comparer (rgthree)` —— 7/10 个有
+- `LoadImage` —— 7/10 个有
+- `PreviewImage` —— 7/10 个有
+- `LayerUtility: ImageReel` —— 6/10 个有
+- `LayerUtility: ImageReelComposit` —— 6/10 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 6/10 个有
+- `Text` —— 5/10 个有
+- `easy cleanGpuUsed` —— 5/10 个有
+- `GetNode` —— 4/10 个有
+- `INTConstant` —— 3/10 个有
+- `RH_RhartImageG2ImageToImage` —— 1/10 个有
+- `easy imageSizeBySide` —— 1/10 个有
 
 ## 典型参数
 
@@ -71,7 +72,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 20/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -82,4 +83,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高发问题（12/10 个样本）：Steps较低可能导致细节不足
+- 高发问题（20/10 个样本）：Steps较低可能导致细节不足

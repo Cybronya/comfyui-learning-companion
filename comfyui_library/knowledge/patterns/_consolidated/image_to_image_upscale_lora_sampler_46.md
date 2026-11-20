@@ -2,114 +2,105 @@
 name: image_to_image_upscale_lora_sampler_46
 type: Image To Image
 frequency: 4
-level: strong
-coverage: 0.668
-common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatch, ConditioningZeroOut, DF_Float, DualCLIPLoader, DyPE_FLUX, FluxGuidance, GetImageSize, Image Comparer (rgthree), ImageScaleBy, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LayerUtility: ImageScaleByAspectRatio V2, Light-Tool: TextConnect, LoadImage, LoraLoaderModelOnly, PreviewImage, Qwen3_VQA, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageBatchToImageList, easy imageListToImageBatch, easy promptLine]
+level: moderate
+coverage: 0.9105
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageColorMatch+, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Portrait HD+Beauty-终级高清人像放大+美颜-自然真实质感_1991333314445312002.json, 图片生成/图生图/Qwen-image动漫转3D人像-超高清修复_1990671806451388418.json, 图片生成/图生图/Qwen-image真人转动漫-超高清修复_1989567976863092737.json, 图片生成/文生图/Qwen-image动漫转真人写实人像-超高清修复_1988957962741878786.json]
+members: [图片生成/图生图/KREA2真实感洗图-雯雯的后宫_2075839994308153345.json, 图片生成/图生图/KREA2超还原真实感洗图-自定义重绘幅度-B站AIGC大赏_2075773150381563906.json, 图片生成/图生图/ZIT情绪高清洗图-AIGC大赏_2062797376057860098.json, 图片生成/文生图/双采样极速洗图优化版+超清放大_2066695022304645121.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_46
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Portrait HD+Beauty-终级高清人像放大+美颜-自然真实质感_1991333314445312002.json、图片生成/图生图/Qwen-image动漫转3D人像-超高清修复_1990671806451388418.json、图片生成/图生图/Qwen-image真人转动漫-超高清修复_1989567976863092737.json、图片生成/文生图/Qwen-image动漫转真人写实人像-超高清修复_1988957962741878786.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/KREA2真实感洗图-雯雯的后宫_2075839994308153345.json、图片生成/图生图/KREA2超还原真实感洗图-自定义重绘幅度-B站AIGC大赏_2075773150381563906.json、图片生成/图生图/ZIT情绪高清洗图-AIGC大赏_2062797376057860098.json、图片生成/文生图/双采样极速洗图优化版+超清放大_2066695022304645121.json）
 
 - **类型**：Image To Image
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：67%
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorMatch`
 - `ConditioningZeroOut`
-- `DF_Float`
-- `DualCLIPLoader`
-- `DyPE_FLUX`
-- `FluxGuidance`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `GetImageSize`
 - `Image Comparer (rgthree)`
-- `ImageScaleBy`
+- `ImageColorMatch+`
 - `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
 - `KSampler`
+- `KSamplerSelect`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `Light-Tool: TextConnect`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `Qwen3_VQA`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
-- `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 3/4 个有
-- `Anything Everywhere` —— 3/4 个有
-- `CR SDXL Aspect Ratio` —— 3/4 个有
-- `ControlNetApplyAdvanced` —— 3/4 个有
-- `ControlNetLoader` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `JoinStrings` —— 3/4 个有
-- `PrimitiveBoolean` —— 3/4 个有
-- `SetUnionControlNetType` —— 3/4 个有
-- `TextInput_` —— 3/4 个有
-- `easy ifElse` —— 3/4 个有
-- `easy imageConcat` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `BaiduTranslateNode` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `FluxKontextImageScale` —— 1/4 个有
-- `ImageListToImageBatch` —— 1/4 个有
-- `MaskToImage` —— 1/4 个有
-- `ModelSamplingSD3` —— 1/4 个有
-- `ReferenceLatent` —— 1/4 个有
-- `easy imageRemBg` —— 1/4 个有
+- `Float` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `llama_cpp_instruct_adv` —— 3/4 个有
+- `llama_cpp_model_loader` —— 3/4 个有
+- `llama_cpp_parameters` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `CheckpointLoaderSimple` —— 2/4 个有
+- `CompressImages` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `ImageResize+` —— 2/4 个有
+- `ImageScaleBy` —— 2/4 个有
+- `MuyeTextEditOutput` —— 2/4 个有
+- `TTP_Image_Assy` —— 2/4 个有
+- `TTP_Image_Tile_Batch` —— 2/4 个有
+- `TTP_Tile_image_size` —— 2/4 个有
+- `easy getNode` —— 2/4 个有
+- `easy imageSize` —— 2/4 个有
+- `easy setNode` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `AILab_QwenVL` —— 1/4 个有
+- `AIO_Preprocessor` —— 1/4 个有
+- `Any Switch (rgthree)` —— 1/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `ModelPatchLoader` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `ZImageFunControlnet` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 28 | 28 - 28 | 4 | 100% |
+| 采样步数 | 9 | 8 - 11 | 4 | 86% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | res_2s | - | 4 | 100% |
-| 调度器 | beta57 | - | 4 | 100% |
-| 重绘幅度 | 0.4 | 0.4 - 0.4 | 4 | 100% |
-| ControlNet 权重 | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler_ancestral | - | 4 | 50% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 0.45 | 0.2 - 0.7 | 4 | 44% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 28，观测区间 28 - 28，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 9，观测区间 8 - 11，4 个样本，取值集中（一致性 86%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，4 个样本，一致性 100%
-- 调度器 最常用 beta57，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.4，观测区间 0.4 - 0.4，4 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（6/4 个样本）：Steps较低可能导致细节不足
+- 采样算法 最常用 euler_ancestral，4 个样本，一致性 50%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 0.45，观测区间 0.2 - 0.7，4 个样本，取值分散，一致性仅 44%
+- 高发问题（3/4 个样本）：Steps较低可能导致细节不足

@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_video_18
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.737667
-common_nodes: [GetVideoComponents, JjkText, LoadImage, VHS_VideoCombine]
+coverage: 1
+common_nodes: [LoadImage, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/RH 全能视频X-图生视频-官方稳定版-v1.5-1.89元_秒_2062214162574561282.json, 视频生成/图生视频/video-全能视频X-图生视频-低价渠道版-v1.5-0.03元_秒_2062176319126986754.json, 视频生成/图生视频/图生视频，添加人物室内空间漫游_2075146371707006978.json, 视频生成/图生视频/室内设计空间氛围感优化，图生视频_2073411885793366017.json, 视频生成/文生视频/图生视频 文生视频 小Seedance 比肩快乐马 超高性价比  0.03元_秒 Gro-k来袭_2061446476634607618.json, 视频生成/文生视频/文生视频，图生视频  3分钱_秒_2061441853798572033.json]
+members: [图片生成/图生图/FramePack-F1 图生视频_1919141028262252546.json, 图片生成/图生图/【低显存】首尾帧视频 FramePack 图生视频_1914126154607882241.json, 数字人/数字人/封面翻译测试_1929910276983001089.json, 视频生成/图生视频/FramePack F1图生视频_1920120086001025026.json, 视频生成/图生视频/FramePack 首尾帧_1914050614249357313.json, 视频生成/图生视频/FramePack首尾帧 RH版_1914110573154398210.json, 视频生成/图生视频/framepack 图生视频新时代_1913958984116830209.json, 视频生成/图生视频/首尾帧_1932277397784358913.json, 视频生成/图生视频/首尾帧生成稳定不漂移视频（FramePack ）_2025728412630913026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_18
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/RH 全能视频X-图生视频-官方稳定版-v1.5-1.89元_秒_2062214162574561282.json、视频生成/图生视频/video-全能视频X-图生视频-低价渠道版-v1.5-0.03元_秒_2062176319126986754.json、视频生成/图生视频/图生视频，添加人物室内空间漫游_2075146371707006978.json、视频生成/图生视频/室内设计空间氛围感优化，图生视频_2073411885793366017.json、视频生成/文生视频/图生视频 文生视频 小Seedance 比肩快乐马 超高性价比  0.03元_秒 Gro-k来袭_2061446476634607618.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/FramePack-F1 图生视频_1919141028262252546.json、图片生成/图生图/【低显存】首尾帧视频 FramePack 图生视频_1914126154607882241.json、数字人/数字人/封面翻译测试_1929910276983001089.json、视频生成/图生视频/FramePack F1图生视频_1920120086001025026.json、视频生成/图生视频/FramePack 首尾帧_1914050614249357313.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `GetVideoComponents`
-- `JjkText`
+全部 9 个 workflow 都包含：
 - `LoadImage`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGImageToVideo` —— 5/6 个有
-- `SaveVideo` —— 4/6 个有
-- `easy showAnything` —— 3/6 个有
-- `RH_RhartVideoGOfficialImageToVideoV15` —— 2/6 个有
+- `SeargePromptText` —— 8/9 个有
+- `RunningHub_FramePack` —— 6/9 个有
+- `Int` —— 4/9 个有
+- `RunningHub_FramePack_F1` —— 3/9 个有
+- `Int To Bool (mtb)` —— 1/9 个有
 
 ## 典型参数
 

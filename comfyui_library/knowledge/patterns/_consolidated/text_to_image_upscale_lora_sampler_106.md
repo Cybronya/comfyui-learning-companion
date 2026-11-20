@@ -2,76 +2,78 @@
 name: text_to_image_upscale_lora_sampler_106
 type: Text To Image
 frequency: 3
-level: moderate
-coverage: 0.824667
-common_nodes: [AddLabel, CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PathchSageAttentionKJ, PrimitiveStringMultiline, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
+level: strong
+coverage: 0.932
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, FastFilmGrain, GetImageSize+, ImageCASharpening+, ImageResize+, ImageScaleBy, KSampler, LayerColor: BrightnessContrastV2, LoraLoaderModelOnly, RunningHub Deepcleaner, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/影视级场景资产工作流（开源版）_2048266987880587265.json, 图片生成/文生图/影视级角色资产工作流（开源版）_2047695377284993025.json, 图片生成/文生图/影视级道具资产工作流（开源版）_2049490901575143425.json]
+members: [图片生成/文生图/Kook_Zimage_瑶光_2038713096780390402.json, 图片生成/文生图/固定角色：泠月luna。文生图Z-image turbo_2042962433819545602.json, 图片生成/文生图/小姐姐名字：mzqr01。指定该角色 文生图（zimage turbo）_2040783114238173186.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_106
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/影视级场景资产工作流（开源版）_2048266987880587265.json、图片生成/文生图/影视级角色资产工作流（开源版）_2047695377284993025.json、图片生成/文生图/影视级道具资产工作流（开源版）_2049490901575143425.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Kook_Zimage_瑶光_2038713096780390402.json、图片生成/文生图/固定角色：泠月luna。文生图Z-image turbo_2042962433819545602.json、图片生成/文生图/小姐姐名字：mzqr01。指定该角色 文生图（zimage turbo）_2040783114238173186.json）
 
 - **类型**：Text To Image
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AddLabel`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `FastFilmGrain`
+- `GetImageSize+`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImageScaleBy`
 - `KSampler`
-- `LoadImage`
+- `LayerColor: BrightnessContrastV2`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PathchSageAttentionKJ`
-- `PrimitiveStringMultiline`
+- `RunningHub Deepcleaner`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `ShowText|pysssss`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `AdaptiveLongestEdge_EditUtils` —— 1/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `CropWithPadInfo_EditUtils` —— 1/3 个有
-- `EditTextEncode_EditUtils` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `Image Resize Factor (mtb)` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `QwenConfigPreparer_EditUtils` —— 1/3 个有
-- `QwenEditOutputExtractor_EditUtils` —— 1/3 个有
-- `QwenModelConfig_EditUtils` —— 1/3 个有
-- `ReferenceLatent` —— 1/3 个有
-- `SetNode` —— 1/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `KOOK_SaveJPGImage` —— 2/3 个有
+- `Text Multiline` —— 2/3 个有
+- `CameraWatermarkNode` —— 1/3 个有
+- `DuckHideNode` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `KOOK_ImageCompression` —— 1/3 个有
+- `ModelSamplingAuraFlow` —— 1/3 个有
+- `Switch any [Crystools]` —— 1/3 个有
+- `TextInputBasic` —— 1/3 个有
+- `ZML_BooleanSwitch` —— 1/3 个有
+- `easy anythingIndexSwitch` —— 1/3 个有
+- `easy getNode` —— 1/3 个有
+- `easy setNode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 25 | 3 | 26% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2 | 3 | 65% |
-| 采样算法 | res_multistep | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 100% |
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | res_2s | - | 3 | 100% |
+| 调度器 | bong_tangent | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1920 | 1080 - 1920 | 3 | 76% |
-| 高度 | 1080 | 1080 - 1920 | 3 | 71% |
+| 宽度 | 1080 | 1080 - 1080 | 3 | 100% |
+| 高度 | 1920 | 1920 - 1920 | 3 | 100% |
 
 ## 常见问题
 
@@ -81,11 +83,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 25，3 个样本，取值分散，一致性仅 26%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，3 个样本
-- 采样算法 最常用 res_multistep，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 100%
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，3 个样本，一致性 100%
+- 调度器 最常用 bong_tangent，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1920，观测区间 1080 - 1920，3 个样本
-- 高度 中位数 1080，观测区间 1080 - 1920，3 个样本
+- 宽度 中位数 1080，观测区间 1080 - 1080，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1920，观测区间 1920 - 1920，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

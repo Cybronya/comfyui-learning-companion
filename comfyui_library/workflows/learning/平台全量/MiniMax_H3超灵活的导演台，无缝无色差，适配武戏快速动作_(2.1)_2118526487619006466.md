@@ -1,0 +1,351 @@
+---
+key: 平台全量/MiniMax_H3超灵活的导演台，无缝无色差，适配武戏快速动作_(2.1)_2118526487619006466.json
+name: MiniMax_H3超灵活的导演台，无缝无色差，适配武戏快速动作_(2.1)_2118526487619006466
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/MiniMax_H3超灵活的导演台，无缝无色差，适配武戏快速动作_(2.1)_2118526487619006466.json
+hash: dbcdee9d02128f4f
+coverage: 0.432602
+learned_at: 2026-11-14 00:45:08
+nodes: [SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, easy multiTrackInfoOutput, VAELoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, Note, GetNode, GetNode, ConditioningZeroOut, GetNode, easy mergeVideosFromPaths, ComfyMathExpression, Note, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, easy ifElse, SetNode, SetNode, easy string, GetNode, GetNode, ComfyMathExpression, SetNode, SetNode, easy ifElse, StringReplace, StringReplace, StringReplace, StringReplace, StringReplace, StringReplace, easy promptLine, easy lengthAnything, easy string, easy forLoopStart, Text Concatenate, easy forLoopEnd, GetNode, easy promptLine, ComfyMathExpression, easy indexAnything, easy mergeVideosFromPaths, VideoFrameSample, GetNode, GetNode, SetNode, SetNode, easy lengthAnything, easy forLoopStart, easy promptLine, easy indexAnything, SetNode, SetNode, GetNode, easy forLoopEnd, easy batchAnything, MarkdownNote, MarkdownNote, ComfyMathExpression, easy mergeVideosFromPaths, easy ifElse, VideoFrameSample, ComfyMathExpression, easy indexAnything, easy lengthAnything, ComfyMathExpression, easy indexAnything, GetNode, easy ifElse, easy saveVideo, PrimitiveBoolean, SetNode, Note, SetNode, SetNode, GetNode, ComfyMathExpression, ComfyMathExpression, easy ifElse, ComfyMathExpression, SetNode, SetNode, ComfyMathExpression, GetNode, easy promptLine, PathchSageAttentionKJ, SetNode, SetNode, GetNode, easy mergeVideosFromPaths, easy multiTrackTaskOutput, GetNode, MarkdownNote, GetNode, SetNode, SetNode, Reroute, SetNode, PrimitiveInt, easy ifElse, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, easy batchAnything, SetNode, Reroute, Reroute, GetNode, Reroute, GetNode, Reroute, GetNode, Reroute, Reroute, easy forLoopStart, Reroute, SetNode, PreviewAny, easy saveVideo, VAEDecode, VAEDecodeAudio, GetNode, SetNode, PreviewAny, easy forLoopEnd, VideoFrameSample, GetNode, PreviewAny, easy mergeVideosFromPaths, GetVideoComponents, BatchCount+, ComfyMathExpression, VideoTemporalCrop, SaveVideo, ComfyMathExpression, CLIPLoader, ImageAddNoise, GetImageRangeFromBatch, ImageBatchMulti, GetVideoComponents, GetImageRangeFromBatch, ImageAddNoise, GetImageRangeFromBatch, ImageBatchMulti, ImageAddNoise, ComfyMathExpression, GetVideoComponents, VideoFrameSample, easy mergeVideosFromPaths, easy ifElse, Note, ComfyMathExpression, VideoFrameSample, Note, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, Note, ModelAttentionBackend, MiniMaxH3AudioGuideFeather, easy minimaxH3ToVideo, UNETLoader, ImageAddNoise, Note, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, SetNode, PrimitiveBoolean, PrimitiveBoolean, PreviewAny, H3FrozenVideoCache, H3AudioRefineSampler, GetImageRangeFromBatch, MiniMaxH3AddGuide, PrimitiveStringMultiline, PrimitiveInt, GetNode, GetNode, SetNode, GetImageRangeFromBatch, ConditioningZeroOut, Note, easy ifElse, Reroute, SetNode, PrimitiveBoolean, PrimitiveInt, Note, easy float, LoadVideo, KSamplerSelect, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, Reroute, GetNode, GetNode, Reroute, PrimitiveInt, SetNode, GetNode, GetVideoComponents, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, PrimitiveFloat, MiniMaxH3AddGuide, MiniMaxH3AddGuide, ComfyMathExpression, SetNode, GetNode, GetVideoComponents, ColorTransfer, CreateVideo, CreateVideo, GetVideoComponents, easy float, GetNode, GetNode, GetNode, VAELoader, MiniMaxH3AudioGuideFeather, easy ifElse, easy ifElse, ComfySwitchNode, SetNode, GetNode, GetNode, ImageAddNoise, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ComfySwitchNode, ComfySwitchNode, easy float, easy float, LoraLoaderModelOnly, ComfySwitchNode, PrimitiveInt, PrimitiveInt, PrimitiveInt, LoraLoaderModelOnly, ComfySwitchNode, Reroute, Reroute, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ComfySwitchNode, easy float, easy float, GetNode, GetNode, ComfySwitchNode, SetNode, Note, PrimitiveBoolean, PrimitiveBoolean, GetNode, SetNode, SetNode, Reroute, GetNode, PrimitiveInt, GetNode, GetNode, ComfySwitchNode, GetNode, BasicScheduler, ExtendIntermediateSigmas, PrimitiveInt, PrimitiveInt, PrimitiveInt, ComfySwitchNode, SelfLiftH3Sampler, easy float, easy float, ComfySwitchNode, ComfySwitchNode, PrimitiveFloat, easy float, easy ifElse, SaveVideo, GetVideoComponents, easy saveVideo, ComfyMathExpression, easy multiTrackEditor]
+patterns: []
+missing: []
+---
+
+# 平台全量/MiniMax_H3超灵活的导演台，无缝无色差，适配武戏快速动作_(2.1)_2118526487619006466.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/MiniMax_H3超灵活的导演台，无缝无色差，适配武戏快速动作_(2.1)_2118526487619006466.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（319 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy multiTrackInfoOutput`
+- `VAELoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `ConditioningZeroOut`
+- `GetNode`
+- `easy mergeVideosFromPaths`
+- `ComfyMathExpression`
+- `Note`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy ifElse`
+- `SetNode`
+- `SetNode`
+- `easy string`
+- `GetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `SetNode`
+- `SetNode`
+- `easy ifElse`
+- `StringReplace`
+- `StringReplace`
+- `StringReplace`
+- `StringReplace`
+- `StringReplace`
+- `StringReplace`
+- `easy promptLine`
+- `easy lengthAnything`
+- `easy string`
+- `easy forLoopStart`
+- `Text Concatenate`
+- `easy forLoopEnd`
+- `GetNode`
+- `easy promptLine`
+- `ComfyMathExpression`
+- `easy indexAnything`
+- `easy mergeVideosFromPaths`
+- `VideoFrameSample`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `easy lengthAnything`
+- `easy forLoopStart`
+- `easy promptLine`
+- `easy indexAnything`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy forLoopEnd`
+- `easy batchAnything`
+- `MarkdownNote`
+- `MarkdownNote`
+- `ComfyMathExpression`
+- `easy mergeVideosFromPaths`
+- `easy ifElse`
+- `VideoFrameSample`
+- `ComfyMathExpression`
+- `easy indexAnything`
+- `easy lengthAnything`
+- `ComfyMathExpression`
+- `easy indexAnything`
+- `GetNode`
+- `easy ifElse`
+- `easy saveVideo`
+- `PrimitiveBoolean`
+- `SetNode`
+- `Note`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `easy ifElse`
+- `ComfyMathExpression`
+- `SetNode`
+- `SetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `easy promptLine`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy mergeVideosFromPaths`
+- `easy multiTrackTaskOutput`
+- `GetNode`
+- `MarkdownNote`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `Reroute`
+- `SetNode`
+- `PrimitiveInt`
+- `easy ifElse`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy batchAnything`
+- `SetNode`
+- `Reroute`
+- `Reroute`
+- `GetNode`
+- `Reroute`
+- `GetNode`
+- `Reroute`
+- `GetNode`
+- `Reroute`
+- `Reroute`
+- `easy forLoopStart`
+- `Reroute`
+- `SetNode`
+- `PreviewAny`
+- `easy saveVideo`
+- `VAEDecode` ★核心
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `SetNode`
+- `PreviewAny`
+- `easy forLoopEnd`
+- `VideoFrameSample`
+- `GetNode`
+- `PreviewAny`
+- `easy mergeVideosFromPaths`
+- `GetVideoComponents`
+- `BatchCount+`
+- `ComfyMathExpression`
+- `VideoTemporalCrop`
+- `SaveVideo`
+- `ComfyMathExpression`
+- `CLIPLoader`
+- `ImageAddNoise`
+- `GetImageRangeFromBatch`
+- `ImageBatchMulti`
+- `GetVideoComponents`
+- `GetImageRangeFromBatch`
+- `ImageAddNoise`
+- `GetImageRangeFromBatch`
+- `ImageBatchMulti`
+- `ImageAddNoise`
+- `ComfyMathExpression`
+- `GetVideoComponents`
+- `VideoFrameSample`
+- `easy mergeVideosFromPaths`
+- `easy ifElse`
+- `Note`
+- `ComfyMathExpression`
+- `VideoFrameSample`
+- `Note`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxLowVRAMAttention`
+- `Note`
+- `ModelAttentionBackend`
+- `MiniMaxH3AudioGuideFeather`
+- `easy minimaxH3ToVideo`
+- `UNETLoader` ★核心
+- `ImageAddNoise`
+- `Note`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `SetNode`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `PreviewAny`
+- `H3FrozenVideoCache`
+- `H3AudioRefineSampler` ★核心
+- `GetImageRangeFromBatch`
+- `MiniMaxH3AddGuide`
+- `PrimitiveStringMultiline`
+- `PrimitiveInt`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetImageRangeFromBatch`
+- `ConditioningZeroOut`
+- `Note`
+- `easy ifElse`
+- `Reroute`
+- `SetNode`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `Note`
+- `easy float`
+- `LoadVideo`
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `PrimitiveInt`
+- `SetNode`
+- `GetNode`
+- `GetVideoComponents`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PrimitiveFloat`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3AddGuide`
+- `ComfyMathExpression`
+- `SetNode`
+- `GetNode`
+- `GetVideoComponents`
+- `ColorTransfer`
+- `CreateVideo`
+- `CreateVideo`
+- `GetVideoComponents`
+- `easy float`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAELoader`
+- `MiniMaxH3AudioGuideFeather`
+- `easy ifElse`
+- `easy ifElse`
+- `ComfySwitchNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `ImageAddNoise`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ComfySwitchNode`
+- `ComfySwitchNode`
+- `easy float`
+- `easy float`
+- `LoraLoaderModelOnly` ★核心
+- `ComfySwitchNode`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LoraLoaderModelOnly` ★核心
+- `ComfySwitchNode`
+- `Reroute`
+- `Reroute`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ComfySwitchNode`
+- `easy float`
+- `easy float`
+- `GetNode`
+- `GetNode`
+- `ComfySwitchNode`
+- `SetNode`
+- `Note`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `Reroute`
+- `GetNode`
+- `PrimitiveInt`
+- `GetNode`
+- `GetNode`
+- `ComfySwitchNode`
+- `GetNode`
+- `BasicScheduler`
+- `ExtendIntermediateSigmas`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `ComfySwitchNode`
+- `SelfLiftH3Sampler` ★核心
+- `easy float`
+- `easy float`
+- `ComfySwitchNode`
+- `ComfySwitchNode`
+- `PrimitiveFloat`
+- `easy float`
+- `easy ifElse`
+- `SaveVideo`
+- `GetVideoComponents`
+- `easy saveVideo`
+- `ComfyMathExpression`
+- `easy multiTrackEditor`
+
+## 知识
+
+覆盖率 **43%**（138/319）
+
+**有卡**：`easy multiTrackInfoOutput`、`VAELoader`、`ConditioningZeroOut`、`easy mergeVideosFromPaths`、`ComfyMathExpression`、`easy string`、`StringReplace`、`easy promptLine`、`easy lengthAnything`、`easy forLoopStart`、`Text Concatenate`、`easy forLoopEnd`、`easy indexAnything`、`VideoFrameSample`、`easy batchAnything`、`easy saveVideo`、`PrimitiveBoolean`、`PathchSageAttentionKJ`、`easy multiTrackTaskOutput`、`VAEDecode`、`VAEDecodeAudio`、`GetVideoComponents`、`BatchCount+`、`VideoTemporalCrop`、`SaveVideo`、`CLIPLoader`、`ImageAddNoise`、`GetImageRangeFromBatch`、`ImageBatchMulti`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`MiniMaxLowVRAMAttention`、`ModelAttentionBackend`、`MiniMaxH3AudioGuideFeather`、`easy minimaxH3ToVideo`、`UNETLoader`、`LoraLoaderModelOnly`、`H3FrozenVideoCache`、`H3AudioRefineSampler`、`MiniMaxH3AddGuide`、`easy float`、`LoadVideo`、`KSamplerSelect`、`ColorTransfer`、`CreateVideo`、`BasicScheduler`、`ExtendIntermediateSigmas`、`SelfLiftH3Sampler`、`easy multiTrackEditor`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、UNETLoader、H3AudioRefineSampler、KSamplerSelect

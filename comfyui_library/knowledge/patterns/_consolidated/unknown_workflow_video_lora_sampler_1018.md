@@ -3,62 +3,52 @@ name: unknown_workflow_video_lora_sampler_1018
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.647
-common_nodes: [GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveStringMultiline, SetNode, Text Load Line From File, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSVIProEmbeds, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy forLoopEnd, easy forLoopStart, easy seed]
+coverage: 0.871
+common_nodes: [Audio Duration (mtb), AudioCrop, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, JjkText, LoadAudio, LoadImage, MaskFromBatch, MathExpression_UTK, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SaveAudio, SeparateMasks, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan.-.2.2.SVI.Pro.-.视频延长循环_2007068274437132290.json, 视频生成/文生视频/Wan.-.2.2.SVI.Pro.·图生视频延长循环_2006963154827354113.json]
+members: [数字人/数字人/自用multitalk_2031904325248749569.json, 视频生成/图生视频/数字人 双人图片语音对口型 infinite wan_1959968875058245633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1018
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan.-.2.2.SVI.Pro.-.视频延长循环_2007068274437132290.json、视频生成/文生视频/Wan.-.2.2.SVI.Pro.·图生视频延长循环_2006963154827354113.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/自用multitalk_2031904325248749569.json、视频生成/图生视频/数字人 双人图片语音对口型 infinite wan_1959968875058245633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
+- `JjkText`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PrimitiveStringMultiline`
-- `SetNode`
-- `Text Load Line From File`
+- `MaskFromBatch`
+- `MathExpression_UTK`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SaveAudio`
+- `SeparateMasks`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSVIProEmbeds`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
-
-**可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `VHS_VideoInfo` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
+- `easy batchAnything`
+- `easy showAnything`
 
 ## 典型参数
 

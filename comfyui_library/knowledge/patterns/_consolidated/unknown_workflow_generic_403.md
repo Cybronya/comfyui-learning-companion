@@ -3,17 +3,17 @@ name: unknown_workflow_generic_403
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.804
-common_nodes: [LoadImage, RH_RhartVideoGImageToVideo, SaveVideo]
+coverage: 0.803
+common_nodes: [RH_LLMAPI_NODE, SaveImage, ShellAgentPluginOutputText, ShowText|pysssss]
 problems: []
 missing: []
-members: [视频生成/图生视频/X V1.5图生视频_2061350092275281922.json, 视频生成/图生视频/全能视频X V1.5图生视频新版（RH版）_2061070407112941570.json, 视频生成/图生视频/全能视频X-V1.5图生视频【RH低价渠道版】_2061096383377141761.json, 视频生成/图生视频/全能视频X-V1.5图生视频【RH低价渠道版】_2078659733879353345.json, 视频生成/图生视频/全能视频X图生视频（RH版）_2054445953876275202.json, 视频生成/图生视频/多图生视频-真人版_2057784729117749250.json, 视频生成/图生视频/多图生视频测试_2059529541651091457.json]
+members: [图片生成/反推提示词/Kimi2.5-图生视频-怎么写提示词_2039900354174783489.json, 图片生成/反推提示词/Kimi2.5-视频分镜三宫格提示词生成（贞贞工坊API版）_2022612111150555137.json, 图片生成/反推提示词/图片反推+图片生成深度图+线稿图_1983498042982768642.json, 图片生成/反推提示词/润色_2046501664730910721.json, 图片生成/反推提示词/润色_2059266093444849666.json, 图片生成/反推提示词/润色_2059274122114457601.json, 图片生成/反推提示词/润色_2059277970988163074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_403
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/X V1.5图生视频_2061350092275281922.json、视频生成/图生视频/全能视频X V1.5图生视频新版（RH版）_2061070407112941570.json、视频生成/图生视频/全能视频X-V1.5图生视频【RH低价渠道版】_2061096383377141761.json、视频生成/图生视频/全能视频X-V1.5图生视频【RH低价渠道版】_2078659733879353345.json、视频生成/图生视频/全能视频X图生视频（RH版）_2054445953876275202.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/Kimi2.5-图生视频-怎么写提示词_2039900354174783489.json、图片生成/反推提示词/Kimi2.5-视频分镜三宫格提示词生成（贞贞工坊API版）_2022612111150555137.json、图片生成/反推提示词/图片反推+图片生成深度图+线稿图_1983498042982768642.json、图片生成/反推提示词/润色_2046501664730910721.json、图片生成/反推提示词/润色_2059266093444849666.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
@@ -23,13 +23,15 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartVideoGImageToVideo`
-- `SaveVideo`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `ShellAgentPluginOutputText`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 4/7 个有
-- `Text` —— 3/7 个有
+- `CR Prompt Text` —— 6/7 个有
+- `LoadImage` —— 3/7 个有
+- `AIO_Preprocessor` —— 1/7 个有
 
 ## 典型参数
 

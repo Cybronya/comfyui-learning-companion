@@ -2,81 +2,93 @@
 name: text_to_image_lora_sampler_clip_200
 type: Text To Image
 frequency: 9
-level: strong
-coverage: 0.890778
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: weak
+coverage: 0.816444
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningKrea2Rebalance, ConditioningZeroOut, EmptyLatentImage, KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, Qwen3_VQA, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/18个月宝宝睡衣产品套图｜居家场景模特产品展示6张图_2104489945556668418.json, 图片生成/图生图/1香2蕉2API图生图｜接口直连出图稳定，批量生产省心之选_2107359008972689410.json, 图片生成/图生图/BiRefNet商品主体抠图 图生图精准商品分割工具_2098695876263899138.json, 图片生成/图生图/BiRefNet商品主体抠图流｜电商产品图精细分离_2098710912726298625.json, 图片生成/图生图/G2.5全能图片编辑经济版 低成本图像处理方案_2098301672375283713.json, 图片生成/图生图/全能图片2.0_2k高清版｜图生图画质细节双在线_2105254608422658050.json, 图片生成/图生图/全能图片2.0图生图 多模式图像处理生成工具_2113728468147064833.json, 图片生成/图生图/全能图片2.0工作流，图生图高质量图像处理方案_2107521089378283521.json, 图片生成/图生图/姿态迁移工作流｜图生图姿势控制一键复刻动作_2100780774088855553.json]
+members: [图片生成/图生图/Krea 2 深度控制_2076137156187348993.json, 图片生成/图生图/Krea2 深度控制+人物一致 高清放大 双重调节细节加强文生图2K_2082654426698969090.json, 图片生成/图生图/Krea2洗图高清放大工作流_2079105435461836801.json, 图片生成/图生图/Krea2洗图高清放大工作流_2089692430135283713.json, 图片生成/图生图/Krea2深度控制板_2075121684088180738.json, 图片生成/图生图/（贞贞版-搭建方式2）Krea2深度控制+双重调节细节加强文生图2K版_2074737002473418754.json, 图片生成/文生图/Krea2深度控制+双重调节细节加强文生图2K版V2_2074865088221237249.json, 图片生成/文生图/Krea2深度控制人物+节点51和70自定义人物lora+全节点注释_2082965427004723202.json, 图片生成/文生图/（贞贞版）Krea2深度控制+双重调节细节加强文生图2K版V2_2074766270821654529.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_200
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/18个月宝宝睡衣产品套图｜居家场景模特产品展示6张图_2104489945556668418.json、图片生成/图生图/1香2蕉2API图生图｜接口直连出图稳定，批量生产省心之选_2107359008972689410.json、图片生成/图生图/BiRefNet商品主体抠图 图生图精准商品分割工具_2098695876263899138.json、图片生成/图生图/BiRefNet商品主体抠图流｜电商产品图精细分离_2098710912726298625.json、图片生成/图生图/G2.5全能图片编辑经济版 低成本图像处理方案_2098301672375283713.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Krea 2 深度控制_2076137156187348993.json、图片生成/图生图/Krea2 深度控制+人物一致 高清放大 双重调节细节加强文生图2K_2082654426698969090.json、图片生成/图生图/Krea2洗图高清放大工作流_2079105435461836801.json、图片生成/图生图/Krea2洗图高清放大工作流_2089692430135283713.json、图片生成/图生图/Krea2深度控制板_2075121684088180738.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningKrea2Rebalance`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
+- `Krea2ControlApply`
+- `Krea2ControlImageEncode`
+- `Krea2ControlLoRALoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
+- `Qwen3_VQA`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 4/9 个有
-- `LayerMask: BiRefNetUltraV2` —— 3/9 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 3/9 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 2/9 个有
-- `ttN text` —— 2/9 个有
-- `AspectRatioSelect` —— 1/9 个有
-- `DWPreprocessor` —— 1/9 个有
-- `Image Stitch` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
-- `RH_RhartImageG2ImageToImage_Batch` —— 1/9 个有
-- `ResizeAndPadImage` —— 1/9 个有
-- `StringConstantMultiline` —— 1/9 个有
+- `LatentUpscaleBy` —— 8/9 个有
+- `CR Prompt Text` —— 7/9 个有
+- `ImageConcanate` —— 7/9 个有
+- `TextConcat` —— 7/9 个有
+- `DuckHideNode` —— 4/9 个有
+- `Float` —— 4/9 个有
+- `AddLabel` —— 2/9 个有
+- `GetNode` —— 2/9 个有
+- `SetNode` —— 2/9 个有
+- `easy float` —— 2/9 个有
+- `easy getNode` —— 2/9 个有
+- `easy setNode` —— 2/9 个有
+- `CR Text` —— 1/9 个有
+- `ImageConcatMulti` —— 1/9 个有
+- `JjkText` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `PDIMAGE_LongerSize` —— 1/9 个有
+- `solarL_SaveImagesToZip` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 采样步数 | 6 | 4 - 8 | 9 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 9 | 21% |
+| 采样算法 | euler_ancestral | - | 9 | 44% |
+| 调度器 | sgm_uniform | - | 9 | 44% |
+| 重绘幅度 | 1 | 0.3 - 1 | 9 | 52% |
+| 宽度 | 1024 | 80 - 1024 | 9 | 68% |
+| 高度 | 1536 | 80 - 1536 | 9 | 67% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 17/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 6，观测区间 4 - 8，9 个样本，取值集中（一致性 80%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，9 个样本，取值分散，一致性仅 21%
+- 采样算法 最常用 euler_ancestral，9 个样本，一致性 44%
+- 调度器 最常用 sgm_uniform，9 个样本，一致性 44%
+- 重绘幅度 中位数 1，观测区间 0.3 - 1，9 个样本
+- 宽度 中位数 1024，观测区间 80 - 1024，9 个样本
+- 高度 中位数 1536，观测区间 80 - 1536，9 个样本
+- 高发问题（17/9 个样本）：Steps较低可能导致细节不足

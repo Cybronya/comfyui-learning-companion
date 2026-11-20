@@ -1,67 +1,68 @@
 ---
 name: unknown_workflow_video_sampler_vae_89
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8924
-common_nodes: [DrawViTPose, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.533286
+common_nodes: [EmptyImage, GetImageSize, GetNode, ImageComposite+, ImageResizeKJv2, InspyrenetRembg, LoadImage, LoadWanVideoT5TextEncoder, MaskGenerator, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2 Animate视频主体替换（带货专用）_1985317372301033473.json, 视频生成/图生视频/Wan2.2 Animate姿势参考图生视频_1980564316481044481.json, 视频生成/图生视频/Wan2.2 Animate视频主体替换_1981764143114010626.json, 视频生成/图生视频/Wan2.2Animate主体替换-跳舞_1969243872620650498.json, 视频生成/图生视频/视频替换_跟随动作二合一 wan animate v2 工作流_1975214578143465474.json]
+members: [视频生成/图生视频/【VACE系列】《行走江湖摇》同款魔性舞蹈视频生成（人物照片+Pose控制）_1926613325860474881.json, 视频生成/图生视频/【霸总吃饭第1式：托腮式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1927603815992954882.json, 视频生成/图生视频/【霸总吃饭第2式：干咳式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928492165083639810.json, 视频生成/图生视频/【霸总吃饭第3式：喝汤式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928759873897664514.json, 视频生成/图生视频/【霸总吃饭第4式：摸头式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928782340749737985.json, 视频生成/图生视频/【霸总吃饭第5式：干饭式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928806775427076098.json, 视频生成/图生视频/【霸总吃饭第6式：咀嚼式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928820592806412290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_89
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Animate视频主体替换（带货专用）_1985317372301033473.json、视频生成/图生视频/Wan2.2 Animate姿势参考图生视频_1980564316481044481.json、视频生成/图生视频/Wan2.2 Animate视频主体替换_1981764143114010626.json、视频生成/图生视频/Wan2.2Animate主体替换-跳舞_1969243872620650498.json、视频生成/图生视频/视频替换_跟随动作二合一 wan animate v2 工作流_1975214578143465474.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/【VACE系列】《行走江湖摇》同款魔性舞蹈视频生成（人物照片+Pose控制）_1926613325860474881.json、视频生成/图生视频/【霸总吃饭第1式：托腮式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1927603815992954882.json、视频生成/图生视频/【霸总吃饭第2式：干咳式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928492165083639810.json、视频生成/图生视频/【霸总吃饭第3式：喝汤式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928759873897664514.json、视频生成/图生视频/【霸总吃饭第4式：摸头式】只需一张照片就可模仿全网爆火“霸总吃饭”名场面！🔥_1928782340749737985.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `DrawViTPose`
+全部 7 个 workflow 都包含：
+- `EmptyImage`
+- `GetImageSize`
+- `GetNode`
+- `ImageComposite+`
 - `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
+- `InspyrenetRembg`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
+- `LoadWanVideoT5TextEncoder`
+- `MaskGenerator`
+- `PreviewImage`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 4/5 个有
-- `CR Text` —— 4/5 个有
-- `DownloadAndLoadSAM2Model` —— 4/5 个有
-- `DrawMaskOnImage` —— 4/5 个有
-- `GetImageSizeAndCount` —— 4/5 个有
-- `GrowMaskWithBlur` —— 4/5 个有
-- `ImageFromBatch+` —— 4/5 个有
-- `PrimitiveInt` —— 4/5 个有
-- `Sam2Segmentation` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `VHS_VideoInfo` —— 4/5 个有
-- `WanVideoLoraSelect` —— 4/5 个有
-- `CLIPVisionLoader` —— 2/5 个有
-- `WanVideoClipVisionEncode` —— 2/5 个有
-- `Int` —— 1/5 个有
-- `LG_LoadImage` —— 1/5 个有
-- `Switch any [Crystools]` —— 1/5 个有
-- `Text` —— 1/5 个有
-- `WanVideoLoraSelectMulti` —— 1/5 个有
-- `WanVideoSetLoRAs` —— 1/5 个有
-- `easy boolean` —— 1/5 个有
+- `INTConstant` —— 6/7 个有
+- `LoadAudio` —— 6/7 个有
+- `Bjornulf_ShowInt` —— 1/7 个有
+- `DWPreprocessor` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `GetImageSizeAndCount` —— 1/7 个有
+- `ImageBatchMulti` —— 1/7 个有
+- `ImageFromBatch` —— 1/7 个有
+- `ImageFromBatch+` —— 1/7 个有
+- `IntMathOperation` —— 1/7 个有
+- `LayerColor: ColorAdapter` —— 1/7 个有
+- `MaskBatchMulti` —— 1/7 个有
+- `WanVideoLoraSelect` —— 1/7 个有
 
 ## 典型参数
 

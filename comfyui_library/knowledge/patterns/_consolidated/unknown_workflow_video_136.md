@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_video_136
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8
-common_nodes: [GetVideoComponents, JjkText, VHS_VideoCombine]
+frequency: 3
+level: moderate
+coverage: 0.958333
+common_nodes: [ImageResizeKJ, LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/RH 全能视频X-文生视频-官方稳定版-1.89元_次_2062212206854500353.json, 视频生成/文生视频/video-全能视频X-文生视频-低价渠道版-v1.5-0.03元_秒_2062183944401014785.json]
+members: [平台全量/FramePack图生视频工作流_1913038722298802178.json, 视频生成/图生视频/60长视频-FramePack  RH吕神源码版_1913036712988110850.json, 视频生成/图生视频/FramePack_1913093088577843201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_136
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/RH 全能视频X-文生视频-官方稳定版-1.89元_次_2062212206854500353.json、视频生成/文生视频/video-全能视频X-文生视频-低价渠道版-v1.5-0.03元_秒_2062183944401014785.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/FramePack图生视频工作流_1913038722298802178.json、视频生成/图生视频/60长视频-FramePack  RH吕神源码版_1913036712988110850.json、视频生成/图生视频/FramePack_1913093088577843201.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `GetVideoComponents`
-- `JjkText`
+全部 3 个 workflow 都包含：
+- `ImageResizeKJ`
+- `LoadImage`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGOfficialTextToVideo` —— 1/2 个有
-- `RH_RhartVideoGTextToVideo` —— 1/2 个有
+- `SeargePromptText` —— 2/3 个有
+- `LTXVPromptEnhancer` —— 1/3 个有
+- `LTXVPromptEnhancerLoader` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

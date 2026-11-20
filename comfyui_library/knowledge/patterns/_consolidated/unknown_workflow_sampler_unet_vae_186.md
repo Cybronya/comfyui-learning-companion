@@ -1,68 +1,68 @@
 ---
 name: unknown_workflow_sampler_unet_vae_186
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.895
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ImageToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.902714
+common_nodes: [CLIPLoader, ConditioningZeroOut, INTConstant, KSampler, LoadImage, QwenEditTextEncode_EditUtils, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/MiniMax H3 高质感低显存文生视频｜16G_24G 可跑｜真人感优化_2105308028953255937.json, 视频生成/文生视频/1-Aiden-minimax-文生视频_2097381153186607106.json, 视频生成/文生视频/FastH3 文生视频_2100134500020867073.json, 视频生成/文生视频/FastVideo FastH3：文生视频_2100285646945472514.json, 视频生成/文生视频/fastvideo_fasth3_文生视频-9：16口播5秒_2101846484743450626.json, 视频生成/文生视频/fastvideo_fasth3_文生视频_2101835354880962561.json]
+members: [图片生成/图生图/FireRed-一键服装提取_2039137376810835970.json, 图片生成/图生图/FireRed-人物换装_2039149983168991234.json, 图片生成/图生图/FireRed-人物换装_2083805030485938177.json, 图片生成/图生图/人物换装（极速版）_2083245105582006273.json, 图片生成/图生图/豹豹喵呜：FIRERED换装&服装提取二合一工作流。_2031352097077207041.json, 平台全量/一键服装提取_2083245123621703682.json, 平台全量/换装&服装提取工作流_2037724170372521985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_186
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/MiniMax H3 高质感低显存文生视频｜16G_24G 可跑｜真人感优化_2105308028953255937.json、视频生成/文生视频/1-Aiden-minimax-文生视频_2097381153186607106.json、视频生成/文生视频/FastH3 文生视频_2100134500020867073.json、视频生成/文生视频/FastVideo FastH3：文生视频_2100285646945472514.json、视频生成/文生视频/fastvideo_fasth3_文生视频-9：16口播5秒_2101846484743450626.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/FireRed-一键服装提取_2039137376810835970.json、图片生成/图生图/FireRed-人物换装_2039149983168991234.json、图片生成/图生图/FireRed-人物换装_2083805030485938177.json、图片生成/图生图/人物换装（极速版）_2083245105582006273.json、图片生成/图生图/豹豹喵呜：FIRERED换装&服装提取二合一工作流。_2031352097077207041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
+- **样本数**：7
+- **可信度**：强结论
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `INTConstant`
+- `KSampler`
+- `LoadImage`
+- `QwenEditTextEncode_EditUtils`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 5/6 个有
-- `SaveVideo` —— 5/6 个有
-- `BlockSparseAttention` —— 4/6 个有
-- `LoraLoaderModelOnly` —— 2/6 个有
-- `GetVideoComponents` —— 1/6 个有
-- `ImageScale` —— 1/6 个有
-- `MiniMaxChunkFeedForward` —— 1/6 个有
-- `MiniMaxLowVRAMAttention` —— 1/6 个有
-- `SeedVR2LoadDiTModel` —— 1/6 个有
-- `SeedVR2LoadVAEModel` —— 1/6 个有
-- `SeedVR2VideoUpscaler` —— 1/6 个有
-- `VHS_VideoCombine` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `Lora Loader Stack (rgthree)` —— 5/7 个有
+- `Image Comparer (rgthree)` —— 4/7 个有
+- `LazySwitch2way` —— 2/7 个有
+- `LoraLoaderModelOnly` —— 2/7 个有
+- `Switch string [Crystools]` —— 2/7 个有
+- `easy boolean` —— 2/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

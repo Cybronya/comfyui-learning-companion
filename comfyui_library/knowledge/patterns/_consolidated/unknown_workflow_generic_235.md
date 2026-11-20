@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_235
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8824
-common_nodes: [CR Text, LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
+coverage: 0.989909
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json, 音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json, 音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json, 音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json, 音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json, 音频生成/音频生成/Soulx-podcast单人语音克隆_1984080844845449217.json, 音频生成/音频生成/Soulx-podcast双人对话语音克隆_1984822307040477186.json, 音频生成/音频生成/Soulx单人语音克隆_1984192624682811393.json, 音频生成/音频生成/Soulx双人语音克隆_1985525949963845634.json, 音频生成/音频生成/多人普通话、河南话、粤语、四川话音色克隆_2019250961474129921.json]
+members: [音频生成/音频生成/IndexTTS 2.5多国语言多人对话语音克隆_2092496159205052418.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2087829165579005954.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2088886816916201473.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）2608_2094636138370789378.json, 音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本控制）2608_2094635675235737601.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2087748051929755649.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2087829180565250050.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2088321991706243073.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2088888567782273026.json, 音频生成/音频生成/IndexTTS 2.5长文本语音克隆_2089397547700936705.json, 音频生成/音频生成/IndexTTS+2.5长文本声音克隆语音克隆_2088188024717930498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_235
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json、音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json、音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json、音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json、音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多国语言多人对话语音克隆_2092496159205052418.json、音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2087829165579005954.json、音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2088886816916201473.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感参考）2608_2094636138370789378.json、音频生成/音频生成/IndexTTS 2.5语音克隆（情感文本控制）2608_2094635675235737601.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Text`
+全部 11 个 workflow 都包含：
 - `LoadAudio`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
+- `SaveAudio`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 6/10 个有
-- `SaveAudioMP3` —— 6/10 个有
-- `CR Text Concatenate` —— 3/10 个有
-- `SaveImage` —— 3/10 个有
-- `String` —— 1/10 个有
+- `CR Prompt Text` —— 10/11 个有
+- `T8_IndexTTS25_SamplingConfig` —— 7/11 个有
+- `T8_IndexTTS25_EmotionControl` —— 5/11 个有
+- `Float` —— 3/11 个有
+- `JjkText` —— 1/11 个有
+- `SaveAudioNode` —— 1/11 个有
 
 ## 典型参数
 

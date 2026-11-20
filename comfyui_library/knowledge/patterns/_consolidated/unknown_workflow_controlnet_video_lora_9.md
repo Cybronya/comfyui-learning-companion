@@ -3,87 +3,81 @@ name: unknown_workflow_controlnet_video_lora_9
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8044
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJ, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MultiTalkModelLoader, VHS_DuplicateImages, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy anythingIndexSwitch]
+coverage: 0.8179
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/Infinitetalk图片对口型+运镜_1958359983685582850.json, 数字人/数字人/Multitalk最强数字人_1997972375666851842.json, 数字人/数字人/infinitetalk最强数字人+运镜参考版_1987740724806488066.json, 数字人/数字人/众馨数字人带货_1986007150583525377.json, 数字人/数字人/最强数字人Multitalk自由运镜拒绝呆滞_1945437193743814658.json, 视频生成/图生视频/1电商带货商品展示数字人口播商用运镜版3.0_1989961958185160706.json, 视频生成/图生视频/❤最强数字人Infinitetalk+运镜参考版🌙_1977385230757699586.json, 视频生成/图生视频/图片转说话数字人 - Multitalk对口型优化版_1948766276714934274.json, 视频生成/图生视频/影视短剧导演之七：人物对口型_1989886464651612162.json, 视频生成/图生视频/电商-商用数字人 运镜版无限时长_可音频_视频切换_1986797048806764545.json]
+members: [数字人/数字人/MultiTalk弹唱数字人（加速版）_1948018639694901249.json, 数字人/数字人/Multitalk最强数字人_1997972375666851842.json, 数字人/数字人/infinitetalk最强数字人+运镜参考版_1987740724806488066.json, 数字人/数字人/最强数字人Multitalk自由运镜拒绝呆滞_1945437193743814658.json, 视频生成/图生视频/KJ加速版-顶流MultiTalk万能数字人_1940583682262413314.json, 视频生成/图生视频/工作流视频篇12-AI图生数字人加运镜参考_2018299977335840769.json, 视频生成/图生视频/🥳infinitetalk最强数字人 运镜参考版【可切换】🐟_1958430229331132417.json, 视频生成/文生视频/Multitalk最强数字人运镜参考版 运行稳定版【8月6日日修复】_1936951987776704514.json, 视频生成/文生视频/最强数字人运镜_1947944588175650817.json, 视频生成/文生视频/💂‍Multitalk最强数字人 新手直出版 可出动物💂‍_1937688906760654850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_9
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/Infinitetalk图片对口型+运镜_1958359983685582850.json、数字人/数字人/Multitalk最强数字人_1997972375666851842.json、数字人/数字人/infinitetalk最强数字人+运镜参考版_1987740724806488066.json、数字人/数字人/众馨数字人带货_1986007150583525377.json、数字人/数字人/最强数字人Multitalk自由运镜拒绝呆滞_1945437193743814658.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/MultiTalk弹唱数字人（加速版）_1948018639694901249.json、数字人/数字人/Multitalk最强数字人_1997972375666851842.json、数字人/数字人/infinitetalk最强数字人+运镜参考版_1987740724806488066.json、数字人/数字人/最强数字人Multitalk自由运镜拒绝呆滞_1945437193743814658.json、视频生成/图生视频/KJ加速版-顶流MultiTalk万能数字人_1940583682262413314.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
+- `AudioCrop`
 - `AudioSeparation`
 - `CLIPVisionLoader`
 - `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJ`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
-- `VHS_DuplicateImages`
-- `VHS_LoadVideo`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
 - `CR Text` —— 9/10 个有
-- `INTConstant` —— 9/10 个有
-- `JWIntegerToString` —— 9/10 个有
+- `ImageResizeKJ` —— 9/10 个有
 - `LayerUtility: PurgeVRAM V2` —— 9/10 个有
-- `LoadWanVideoT5TextEncoder` —— 9/10 个有
 - `SimpleMath+` —— 9/10 个有
+- `VHS_DuplicateImages` —— 9/10 个有
+- `VHS_LoadVideo` —— 9/10 个有
 - `easy showAnything` —— 9/10 个有
-- `AudioCrop` —— 8/10 个有
-- `MultiTalkWav2VecEmbeds` —— 8/10 个有
-- `WanVideoContextOptions` —— 8/10 个有
-- `ImageFromBatch+` —— 7/10 个有
-- `WanVideoTextEncode` —— 7/10 个有
-- `ImpactInt` —— 6/10 个有
-- `WanVideoEncode` —— 6/10 个有
-- `WanVideoTorchCompileSettings` —— 6/10 个有
-- `easy int` —— 6/10 个有
-- `RHHiddenNodes` —— 4/10 个有
-- `Int` —— 3/10 个有
-- `PrimitiveInt` —— 3/10 个有
+- `JWIntegerToString` —— 8/10 个有
+- `easy anythingIndexSwitch` —— 8/10 个有
+- `INTConstant` —— 7/10 个有
+- `PrimitiveInt` —— 6/10 个有
+- `Int` —— 5/10 个有
+- `ImageFromBatch+` —— 2/10 个有
+- `ImpactInt` —— 2/10 个有
+- `Note Plus (mtb)` —— 2/10 个有
+- `RH_Captioner` —— 2/10 个有
+- `WanVideoEnhanceAVideo` —— 2/10 个有
+- `WanVideoSLG` —— 2/10 个有
+- `easy int` —— 2/10 个有
 - `Anything Everywhere` —— 1/10 个有
-- `CR Text Concatenate` —— 1/10 个有
-- `GetImageSizeAndCount` —— 1/10 个有
 - `GetNode` —— 1/10 个有
+- `ImageResize+` —— 1/10 个有
 - `MathExpression|pysssss` —— 1/10 个有
-- `Note Plus (mtb)` —— 1/10 个有
-- `PreviewAudio` —— 1/10 个有
-- `PrimitiveBoolean` —— 1/10 个有
-- `RH_Captioner` —— 1/10 个有
-- `RH_Prompter` —— 1/10 个有
-- `RH_Translator` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `RH_GetAudioDuration` —— 1/10 个有
 - `SetNode` —— 1/10 个有
-- `ShowText|pysssss` —— 1/10 个有
-- `SoundFlow_GetLength` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
-- `WanVideoTextEncodeCached` —— 1/10 个有
+- `WanVideoMagCache` —— 1/10 个有
 - `easy convertAnything` —— 1/10 个有
-- `easy ifElse` —— 1/10 个有
 
 ## 典型参数
 

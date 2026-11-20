@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_528
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.799
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.808
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoraLoaderModelOnly, ResizeImageMaskNode, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/图像颜色匹配处理｜图生图色调统一工作流制作_2096325676101099521.json, 图片生成/图生图/服装模特换装多图融合官方稳定版工作流，服装展示图生图处理工具_2107211199963295745.json, 图片生成/图生图/服装模特换装多图融合｜官方稳定版服装展示图生图_2106968194085904385.json]
+members: [图片生成/图生图/2 VOSR2 VS SeedVR2图像高清放大对比工作流V1 超分方案对比_2105380075515506689.json, 图片生成/图生图/SeedVR2疾速放大 原生节点极速超分辨率_2098855923606446082.json, 图片生成/图生图/SeedVR2高清放大原版与官方最新版对比 超分方案对比_2109074880833613826.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_528
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/图像颜色匹配处理｜图生图色调统一工作流制作_2096325676101099521.json、图片生成/图生图/服装模特换装多图融合官方稳定版工作流，服装展示图生图处理工具_2107211199963295745.json、图片生成/图生图/服装模特换装多图融合｜官方稳定版服装展示图生图_2106968194085904385.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2 VOSR2 VS SeedVR2图像高清放大对比工作流V1 超分方案对比_2105380075515506689.json、图片生成/图生图/SeedVR2疾速放大 原生节点极速超分辨率_2098855923606446082.json、图片生成/图生图/SeedVR2高清放大原版与官方最新版对比 超分方案对比_2109074880833613826.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
@@ -26,27 +26,41 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ResizeImageMaskNode`
 - `SaveImage`
+- `SeedVR2Conditioning`
+- `SeedVR2PostProcessing`
+- `SeedVR2Preprocess`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
+- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialImageToImage` —— 2/3 个有
-- `RH_RhartImageNProOfficialEdit` —— 2/3 个有
-- `ColorMatchPro` —— 1/3 个有
+- `Int` —— 2/3 个有
+- `JoinImageWithAlpha` —— 2/3 个有
+- `LoadAndResizeImage` —— 2/3 个有
+- `Anything Everywhere3` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
 - `GetNode` —— 1/3 个有
-- `InvertMask` —— 1/3 个有
-- `RMBG` —— 1/3 个有
+- `ImageBlur` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `SeedVR2LoadDiTModel` —— 1/3 个有
+- `SeedVR2LoadVAEModel` —— 1/3 个有
+- `SeedVR2VideoUpscaler` —— 1/3 个有
 - `SetNode` —— 1/3 个有
-- `区域颜色匹配` —— 1/3 个有
+- `SplitImageWithAlpha` —— 1/3 个有
+- `VOSR2ModelLoader` —— 1/3 个有
+- `VOSR2Upscale` —— 1/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 
@@ -64,7 +78,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -75,4 +89,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

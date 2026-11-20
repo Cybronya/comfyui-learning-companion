@@ -3,35 +3,35 @@ name: unknown_workflow_generic_1759
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [CreateVideo, Fast Groups Bypasser (rgthree), GetVideoComponents, LoadImage, LoadVideo, RH_RhartVideoGImageToVideo, RH_RhartVideoGTextToVideo, RTXVideoSuperResolution, SaveVideo]
+coverage: 0.873
+common_nodes: [LayerUtility: TextJoin, LoadImage, RH_RhartImageNG31FlashImageToImage, SaveImage, TextInput_, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能图生＆文生视频  可生成6~30秒 0.03元_秒_2045072922934513666.json, 视频生成/文生视频/全能视频X  图生视频+文生视频  价渠道版 可生成30秒_2036665170331701249.json]
+members: [图片生成/图生图/服装白底图生成_2063799102713982978.json, 图片生成/图生图/电商模特服装拆解生成白底图_2064738937620492290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1759
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能图生＆文生视频  可生成6~30秒 0.03元_秒_2045072922934513666.json、视频生成/文生视频/全能视频X  图生视频+文生视频  价渠道版 可生成30秒_2036665170331701249.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/服装白底图生成_2063799102713982978.json、图片生成/图生图/电商模特服装拆解生成白底图_2064738937620492290.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetVideoComponents`
+- `LayerUtility: TextJoin`
 - `LoadImage`
-- `LoadVideo`
-- `RH_RhartVideoGImageToVideo`
-- `RH_RhartVideoGTextToVideo`
-- `RTXVideoSuperResolution`
-- `SaveVideo`
+- `RH_RhartImageNG31FlashImageToImage`
+- `SaveImage`
+- `TextInput_`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `TT_img_enc` —— 1/2 个有
 
 ## 典型参数
 

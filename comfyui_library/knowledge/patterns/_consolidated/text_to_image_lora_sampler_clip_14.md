@@ -1,103 +1,67 @@
 ---
 name: text_to_image_lora_sampler_clip_14
 type: Text To Image
-frequency: 33
-level: strong
-coverage: 0.936212
-common_nodes: [AIO_Preprocessor, BlockifyMask, CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DrawMaskOnImage, EmptyLatentImage, ImageConcanate, ImageResizeKJ, ImageScaleToTotalPixels, JjkText, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageBlend, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveInt, QwenEditConfigPreparer, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip]
-problems: [Steps较低可能导致细节不足]
+frequency: 37
+level: moderate
+coverage: 0.997
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSampler, LoraLoader, SaveImage, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/图生图/PS双图人物动作迁移 指定姿势精准复刻图生图编辑_2098280387129733122.json, 图片生成/图生图/QwenEdit 一键换姿势换背景｜图生图换装出图省心省力_2097568848387072002.json, 图片生成/图生图/QwenEdit一键快背景 图生图搭配人物替换效率翻倍_2095803308794531841.json, 图片生成/图生图/QwenEdit一键快背景 图生图搭配人物替换效率翻倍_2107248174195892226.json, 图片生成/图生图/QwenEdit一键快背景 图生图搭配人物替换效率翻倍_2114526296830210050.json, 图片生成/图生图/QwenEdit一键快背景_图生图搭配人物替换效率翻倍_2101091977491214338.json, 图片生成/图生图/QwenEdit一键换背景 人物替换图生图工作流实操_2097832944646840322.json, 图片生成/图生图/QwenEdit一键换背景 人物替换图生图工作流实操_2099649480781025282.json, 图片生成/图生图/QwenEdit一键换背景_人物替换图生图工作流实操_2108744207824416769.json, 图片生成/图生图/QwenEdit人物换背景换姿势替换｜图生图动作随心改_2111295737547018241.json, 图片生成/图生图/QwenEdit图片换人换背景V2｜主体场景一起改，出图干净不穿帮_2099440143022256129.json, 图片生成/图生图/QwenEdit图生图_一键换背景同时完成换姿势和角色替换_2109089746055155713.json, 图片生成/图生图/QwenEdit图生图换背景 可同步调整姿势完成角色人物替换_2095805907232976898.json, 图片生成/图生图/QwenEdit图生图换背景 可同步调整姿势完成角色人物替换_2107250684616855554.json, 图片生成/图生图/QwenEdit图生图换背景 可同步调整姿势完成角色人物替换_2114529063103721474.json, 图片生成/图生图/QwenEdit图生图换背景_可同步调整姿势完成角色人物替换_2101448095660863490.json, 图片生成/图生图/QwenEdit图生图换背景_可同步调整姿势完成角色人物替换_2101554331626598401.json, 图片生成/图生图/一键换姿势换背景QwenEdit｜风格迁移改图效率翻倍_2114286417856786434.json, 图片生成/图生图/人物姿势生成迁移动作迁移｜姿势参考场景一致性人像写真_2086645409799299073.json, 图片生成/图生图/图生图QwenEdit 人物替换配合一键换背景操作简单_2097834263419899905.json, 图片生成/图生图/图生图QwenEdit 人物替换配合一键换背景操作简单_2099651517434388482.json, 图片生成/图生图/图生图QwenEdit_人物替换配合一键换背景操作简单_2108741446466629634.json, 图片生成/图生图/图生图QwenEdit快速换背景 人物替换一步搞定_2095804571183566849.json, 图片生成/图生图/图生图QwenEdit快速换背景 人物替换一步搞定_2107249399859605505.json, 图片生成/图生图/图生图QwenEdit快速换背景 人物替换一步搞定_2114527720666390529.json, 图片生成/图生图/图生图QwenEdit快速换背景_人物替换一步搞定_2100565545732100098.json, 图片生成/图生图/场景一致性动作迁移姿势迁移姿势生成人物姿势姿势参考_2086639455955410946.json, 图片生成/图生图/姿势迁移生成器 参考图控制人物姿势保持场景一致性_2097829144682909697.json, 图片生成/图生图/姿势迁移生成器 参考图控制人物姿势保持场景一致性_2099642661551558657.json, 图片生成/图生图/姿势迁移生成器_参考图控制人物姿势保持场景一致性_2109095510987591681.json, 图片生成/图生图/怪獸人物姿势迁移｜风格化图生图高清放大_2090467050182504449.json, 图片生成/图生图/换姿势换背景一键生成｜QwenEdit图生图工作流_2095589512532545538.json, 图片生成/图生图/换姿势换背景一键生成｜QwenEdit图生图角色表演_2095839532896837633.json]
+members: [图片生成/文生图/文生全景图V1.0_2058863839806050305.json, 图片生成/文生图/文生图+LoRA 1.0_2004786865167368194.json, 图片生成/文生图/文生图+LoRA_1818199920712024066.json, 图片生成/文生图/文生图+LoRA_1843568589289771010.json, 图片生成/文生图/文生图+LoRA_1905913812430819329.json, 图片生成/文生图/文生图+LoRA_1980962329963716609.json, 图片生成/文生图/文生图+LoRA_1987500997599760386.json, 图片生成/文生图/文生图+LoRA_1987751376501542913.json, 图片生成/文生图/文生图+LoRA_1992495770332975105.json, 图片生成/文生图/文生图+LoRA_1997184109120262145.json, 图片生成/文生图/文生图+LoRA_1999754835216003073.json, 图片生成/文生图/温馨内室_2049893534781722626.json, 图片生成/文生图/玖辛奈_2110770961296482306.json, 图片生成/文生图/纲手_2105890909907931138.json, 图片生成/文生图/纲手_2105902925397716993.json, 图片生成/文生图/金发_1979166138326224898.json, 图片生成/文生图/金发_1980950240696123394.json, 图片生成/文生图/金发_2032364618408009729.json, 图片生成/文生图/阴郁_1976593061276946433.json, 图片生成/文生图/雏田_2105875304244924417.json, 图片生成/文生图/雏田_2106719889472970754.json, 平台全量/ComfyUI官方示例6：LoRA工作流详解 _ ComfyUI从入门到精通_1932031267275997186.json, 平台全量/动物立体剪纸_1801577207334100994.json, 平台全量/手绘动物线条涂鸦_1797858593438035969.json, 平台全量/特殊材质十二生肖_1788774911045595138.json, 平台全量/瓦赫特迈斯特的猫_1801508605263294466.json, 平台全量/盲盒（泡泡风格）_1905914520643244033.json, 数字人/数字人/NebulaManga‑Core_2095050290373423105.json, 数字人/数字人/PhantasiaAnimeV2_2095049428297150465.json, 数字人/数字人/云汐画梦_2095044563340709890.json, 数字人/数字人/幻绘星澜_2095041574957834241.json, 数字人/数字人/文生图+LoRA_1980208390989320193.json, 数字人/数字人/星涟 IlluVerse_2095048466190917633.json, 数字人/数字人/月纱 AniDream_2095047715204984833.json, 数字人/数字人/烬羽二次元_2095045628513579010.json, 数字人/数字人/绘画_2095046921047068674.json, 数字人/数字人/青冥漫语_2095042007625461762.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_14
 
-> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/图生图/PS双图人物动作迁移 指定姿势精准复刻图生图编辑_2098280387129733122.json、图片生成/图生图/QwenEdit 一键换姿势换背景｜图生图换装出图省心省力_2097568848387072002.json、图片生成/图生图/QwenEdit一键快背景 图生图搭配人物替换效率翻倍_2095803308794531841.json、图片生成/图生图/QwenEdit一键快背景 图生图搭配人物替换效率翻倍_2107248174195892226.json、图片生成/图生图/QwenEdit一键快背景 图生图搭配人物替换效率翻倍_2114526296830210050.json…）
+> 由 `engine/knowledge_consolidation` 从 37 个 workflow 归纳得出（图片生成/文生图/文生全景图V1.0_2058863839806050305.json、图片生成/文生图/文生图+LoRA 1.0_2004786865167368194.json、图片生成/文生图/文生图+LoRA_1818199920712024066.json、图片生成/文生图/文生图+LoRA_1843568589289771010.json、图片生成/文生图/文生图+LoRA_1905913812430819329.json…）
 
 - **类型**：Text To Image
-- **样本数**：33
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：37
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 33 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `BlockifyMask`
-- `CFGNorm`
-- `CLIPLoader`
+全部 37 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DrawMaskOnImage`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
-- `ImageConcanate`
-- `ImageResizeKJ`
-- `ImageScaleToTotalPixels`
-- `JjkText`
 - `KSampler`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageRemoveAlpha`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PrimitiveInt`
-- `QwenEditConfigPreparer`
+- `LoraLoader`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
-- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `CropWithPadInfo` —— 32/33 个有
-- `GetImageSize+` —— 32/33 个有
-- `ImageResize+` —— 32/33 个有
-- `ImageScaleBy` —— 32/33 个有
-- `KOOK_ImageCompression` —— 32/33 个有
-- `SeedVR2LoadDiTModel` —— 32/33 个有
-- `SeedVR2LoadVAEModel` —— 32/33 个有
-- `SeedVR2VideoUpscaler` —— 32/33 个有
-- `TTP_Image_Assy` —— 32/33 个有
-- `TTP_Image_Tile_Batch` —— 32/33 个有
-- `TTP_Tile_image_size` —— 32/33 个有
-- `孤海注释` —— 24/33 个有
-- `PreviewImage` —— 16/33 个有
-- `LayerUtility: PurgeVRAM` —— 15/33 个有
-- `EmptyImage` —— 9/33 个有
-- `CR Text` —— 1/33 个有
-- `PIP_图像联结` —— 1/33 个有
+- `ImpactSwitch` —— 1/37 个有
+- `Text` —— 1/37 个有
+- `string_util_StrConcat` —— 1/37 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 33 | 83% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 33 | 86% |
-| 采样算法 | er_sde | - | 33 | 97% |
-| 调度器 | beta | - | 33 | 97% |
-| 重绘幅度 | 1 | 1 - 1 | 33 | 100% |
-| 宽度 | 80 | 80 - 80 | 33 | 100% |
-| 高度 | 80 | 80 - 80 | 33 | 100% |
+| 宽度 | 1024 | 400 - 2048 | 37 | 64% |
+| 高度 | 720 | 712 - 1920 | 37 | 65% |
+| 采样步数 | 20 | 20 - 30 | 37 | 82% |
+| Prompt 约束强度(CFG) | 8 | 5 - 8 | 37 | 88% |
+| 采样算法 | dpmpp_2m | - | 37 | 78% |
+| 调度器 | karras | - | 37 | 78% |
+| 重绘幅度 | 1 | 1 - 1 | 37 | 100% |
+| LoRA 模型强度 | 0.6 | 0.1 - 1 | 37 | 53% |
+| LoRA 文本强度 | 1 | 0.05 - 1 | 37 | 50% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 66/33 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，33 个样本，取值集中（一致性 83%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，33 个样本，取值集中（一致性 86%）
-- 采样算法 最常用 er_sde，33 个样本，一致性 97%
-- 调度器 最常用 beta，33 个样本，一致性 97%
-- 重绘幅度 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，33 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，33 个样本，取值集中（一致性 100%）
-- 高发问题（66/33 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 400 - 2048，37 个样本
+- 高度 中位数 720，观测区间 712 - 1920，37 个样本
+- 采样步数 中位数 20，观测区间 20 - 30，37 个样本，取值集中（一致性 82%）
+- Prompt 约束强度(CFG) 中位数 8，观测区间 5 - 8，37 个样本，取值集中（一致性 88%）
+- 采样算法 最常用 dpmpp_2m，37 个样本，一致性 78%
+- 调度器 最常用 karras，37 个样本，一致性 78%
+- 重绘幅度 中位数 1，观测区间 1 - 1，37 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.6，观测区间 0.1 - 1，37 个样本
+- LoRA 文本强度 中位数 1，观测区间 0.05 - 1，37 个样本

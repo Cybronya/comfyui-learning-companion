@@ -1,76 +1,87 @@
 ---
 name: unknown_workflow_lora_sampler_vae_13
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8918
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: moderate
+coverage: 0.5525
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetNode, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/洞洞鞋 拖鞋迁移换背景_2025502394594893826.json, 图片生成/图生图/真人转动漫人物 Qwen 2511_2072244143887306753.json, 图片生成/图生图/真人转动漫风格_2058356461167800322.json, 图片生成/图生图/真人转动漫风格_2090648180265414657.json, 图片生成/文生图/QWEN-edit-2509 万物融图 简单版 手动调节前景图位置 简单易用_2000388136918282241.json]
+members: [视频生成/文生视频/全能参考二次采样_MInimaxH3_2090972732266733570.json, 视频生成/文生视频/啊癫 minimaxh3极速版二采潜空间直接放大（去油版）_2093957991434379265.json, 视频生成/文生视频/收藏级！H3 加速+二采+打斗全能工作流拆解系列05集_2092970619469123586.json, 视频生成/文生视频/海螺H3 sigma强化+潜空间放大+高清人脸工作流_2089624110652551169.json, 视频生成/文生视频/海螺H3优化 小脸 打斗 浅空间_2091512771916681217.json, 视频生成/文生视频/海螺二采直出1080P视频H3 sigma强化+潜空间2倍放大（Remix融合模型去油腻）_2091655065831563265.json, 视频生成/文生视频/（0824）万象AI+海螺二采直出1080P（自动提示词）_2091672393700962305.json, 视频生成/文生视频/🔪🔪H3突破15秒！长视频不劣化！工作流拆解系列06集_2093951850499366914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_vae_13
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/洞洞鞋 拖鞋迁移换背景_2025502394594893826.json、图片生成/图生图/真人转动漫人物 Qwen 2511_2072244143887306753.json、图片生成/图生图/真人转动漫风格_2058356461167800322.json、图片生成/图生图/真人转动漫风格_2090648180265414657.json、图片生成/文生图/QWEN-edit-2509 万物融图 简单版 手动调节前景图位置 简单易用_2000388136918282241.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/全能参考二次采样_MInimaxH3_2090972732266733570.json、视频生成/文生视频/啊癫 minimaxh3极速版二采潜空间直接放大（去油版）_2093957991434379265.json、视频生成/文生视频/收藏级！H3 加速+二采+打斗全能工作流拆解系列05集_2092970619469123586.json、视频生成/文生视频/海螺H3 sigma强化+潜空间放大+高清人脸工作流_2089624110652551169.json、视频生成/文生视频/海螺H3优化 小脸 打斗 浅空间_2091512771916681217.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGNorm`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetNode`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `VAEDecode`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SetNode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `UNETLoader` —— 4/5 个有
-- `ConditioningZeroOut` —— 3/5 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 3/5 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 3/5 个有
-- `Easy_QwenEdit2509` —— 2/5 个有
-- `FastCanvas` —— 2/5 个有
-- `FastCanvasTool` —— 2/5 个有
-- `Image Comparer (rgthree)` —— 2/5 个有
-- `LayerUtility: ImageAutoCrop V2` —— 2/5 个有
-- `LayerUtility: ImageReel` —— 1/5 个有
-- `LayerUtility: ImageReelComposit` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
-- `UnetLoaderGGUF` —— 1/5 个有
+- `LTXVConcatAVLatent` —— 7/8 个有
+- `LTXVSeparateAVLatent` —— 7/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
+- `MiniMaxH3SigmaShift` —— 7/8 个有
+- `ModelAttentionBackend` —— 7/8 个有
+- `ModelPreviewOverrideKJ` —— 7/8 个有
+- `UNETLoader` —— 7/8 个有
+- `VAEDecode` —— 7/8 个有
+- `VAEDecodeAudio` —— 7/8 个有
+- `SplitSigmas` —— 6/8 个有
+- `LoadAudio` —— 5/8 个有
+- `MinimaxH3LatentUpscaler3D` —— 5/8 个有
+- `SolAttnMiniMax` —— 3/8 个有
+- `easy showAnything` —— 3/8 个有
+- `RHLLMChatNode` —— 2/8 个有
+- `VHS_LoadVideo` —— 2/8 个有
+- `孤海注释` —— 2/8 个有
+- `ExtendIntermediateSigmas` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `GetImageRangeFromBatch` —— 1/8 个有
+- `H3LatentUpscaleByJingchen573` —— 1/8 个有
+- `MiniMaxH3AVDecodeT8` —— 1/8 个有
+- `MiniMaxH3AddGuide` —— 1/8 个有
+- `MiniMaxH3HybridLoader` —— 1/8 个有
+- `MiniMaxLowVRAMAttention` —— 1/8 个有
+- `MinimaxH3LatentUpscalerNode3D` —— 1/8 个有
+- `VHS_VideoCombine` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 10 | 5 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 10，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（4/5 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

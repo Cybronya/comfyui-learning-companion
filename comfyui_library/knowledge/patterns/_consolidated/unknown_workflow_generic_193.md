@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_193
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.747727
-common_nodes: [CR Text, SaveVideo]
+coverage: 0.754167
+common_nodes: [PreviewAny, RH_Veo3_Text2Video, SaveVideo, ShellAgentPluginOutputText]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json, 视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json, 视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json, 视频生成/文生视频/MiniMax H3文生视频_2083148193243684865.json, 视频生成/文生视频/MiniMax H3文生视频_2083209232643612673.json, 视频生成/文生视频/MiniMax H3文生视频_2083412798427717633.json, 视频生成/文生视频/MiniMax H3文生视频_2083417444428902401.json, 视频生成/文生视频/MiniMax H3文生视频_2083423068407549953.json, 视频生成/文生视频/MiniMax H3文生视频_2083426678491140097.json, 视频生成/文生视频/MiniMax+H3文生视频_2083396156163452930.json, 视频生成/文生视频/全能视频 Omni Flash 文生视频 +全节点注释_2061058565992968194.json]
+members: [视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json, 视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json, 视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json, 视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json, 视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json, 视频生成/文生视频/全能视频V3.1 文生视频_1986725934520807426.json, 视频生成/文生视频/全能视频V3.1+文生视频_2064894587893796865.json, 视频生成/文生视频/全能视频V3.1文生视频_1979082743093039105.json, 视频生成/文生视频/全能视频V3.1文生视频工作流（爆炸纸箱）_1985212711497777153.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_1986963975978029057.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_2047738309706784769.json, 视频生成/文生视频/全能视频v3_全能视频V3.1文生视频_2117023325930213377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_193
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json、视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json、视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json、视频生成/文生视频/MiniMax H3文生视频_2083148193243684865.json、视频生成/文生视频/MiniMax H3文生视频_2083209232643612673.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json、视频生成/文生视频/RH 全能视频V3.1 Text2Video_1987080038329856001.json、视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json、视频生成/文生视频/RH 全能视频V3.1 文生视频_1984995231521263617.json、视频生成/文生视频/全能视频V3.1 文生视频5分钟每分境_2066904024892399617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
 - **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CR Text`
+全部 12 个 workflow 都包含：
+- `PreviewAny`
+- `RH_Veo3_Text2Video`
 - `SaveVideo`
+- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3TextToVideo` —— 10/11 个有
-- `LoadImage` —— 2/11 个有
-- `RH_GeminiOmniFlashTextToVideo` —— 1/11 个有
+- `Text _O` —— 1/12 个有
 
 ## 典型参数
 

@@ -1,79 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_677
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.513333
-common_nodes: [AILab_Preview, BiRefNetRMBG, CLIPLoader, CLIPVisionLoader, FloatConstant, GetImageSize, GetNode, INTConstant, ImageScaleToMaxDimension, InvertMask, JWStringMultiline, LoadImage, LoadWanVideoT5TextEncoder, PreviewAny, PreviewImage, SetNode, SomethingToString, TextImageEncodeQwenVL, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageResizeToClosest, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, easy seed]
+coverage: 0.84675
+common_nodes: [Bjornulf_ShowStringText, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetVideoComponents, ImageCompositeMasked, LayerMask: SegmentAnythingUltra V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadVideo, LoadWanVideoT5TextEncoder, MaskToImage, MathExpression|pysssss, RH_GetAudioDuration, RH_Translator, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/BindWeave_角色360度全视角_Lora训练集生成_超高一致性和高保真方案_1990334603498057730.json, 视频生成/图生视频/BindWeave_角色360度全视角_超高一致性(可用于Lora训练集生成)_2028822051032666113.json, 视频生成/图生视频/BindWeave_角色全视角_Lora训练集生成_2005583710823088129.json]
+members: [平台全量/VACE替换元素_1950750233120690178.json, 平台全量/WanVACE衣服替换_1953022500798140418.json, 平台全量/WanVACE视频换背景_1953354744985210881.json, 平台全量/WanVACE视频替换元素V2_1952929547441401858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_677
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/BindWeave_角色360度全视角_Lora训练集生成_超高一致性和高保真方案_1990334603498057730.json、视频生成/图生视频/BindWeave_角色360度全视角_超高一致性(可用于Lora训练集生成)_2028822051032666113.json、视频生成/图生视频/BindWeave_角色全视角_Lora训练集生成_2005583710823088129.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/VACE替换元素_1950750233120690178.json、平台全量/WanVACE衣服替换_1953022500798140418.json、平台全量/WanVACE视频换背景_1953354744985210881.json、平台全量/WanVACE视频替换元素V2_1952929547441401858.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AILab_Preview`
-- `BiRefNetRMBG`
-- `CLIPLoader`
-- `CLIPVisionLoader`
-- `FloatConstant`
-- `GetImageSize`
-- `GetNode`
-- `INTConstant`
-- `ImageScaleToMaxDimension`
-- `InvertMask`
-- `JWStringMultiline`
+全部 4 个 workflow 都包含：
+- `Bjornulf_ShowStringText`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetVideoComponents`
+- `ImageCompositeMasked`
+- `LayerMask: SegmentAnythingUltra V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `LoadVideo`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewAny`
-- `PreviewImage`
-- `SetNode`
-- `SomethingToString`
-- `TextImageEncodeQwenVL`
+- `MaskToImage`
+- `MathExpression|pysssss`
+- `RH_GetAudioDuration`
+- `RH_Translator`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
 - `WanVideoImageResizeToClosest`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy int`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Create Grid Image from Batch` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
-- `GIMMVFI_interpolate` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `ImageScaleBy` —— 2/3 个有
-- `ImpactMinMax` —— 2/3 个有
-- `MaskToImage` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `SeedVR2LoadDiTModel` —— 2/3 个有
-- `SeedVR2LoadVAEModel` —— 2/3 个有
-- `SeedVR2VideoUpscaler` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `string_util_StrConcat` —— 2/3 个有
-- `ImageFromBatch+` —— 1/3 个有
+- `CR SDXL Aspect Ratio` —— 3/4 个有
+- `GrowMask` —— 3/4 个有
+- `ImageNormalize_Neg1_To_1` —— 3/4 个有
+- `InvertMask` —— 3/4 个有
+- `MaskBlur+` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `PrimitiveFloat` —— 3/4 个有
+- `RMBG` —— 2/4 个有
+- `Get Image Size` —— 1/4 个有
+- `GrowMaskWithBlur` —— 1/4 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/4 个有
+- `LayerUtility: ColorImage` —— 1/4 个有
 
 ## 典型参数
 

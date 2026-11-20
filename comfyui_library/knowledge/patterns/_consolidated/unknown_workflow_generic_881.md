@@ -3,43 +3,40 @@ name: unknown_workflow_generic_881
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [AudioSeparation, CR Prompt Text, HeartMuLa_Transcribe, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio, ShowText]
+coverage: 0.9445
+common_nodes: [LoadImage, LoadSAM3DBodyModel, SAM3DBodyExportMesh, SAM3DBodyProcess, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2015077485054005249.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2016360207449853953.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2069025671023779842.json, 音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音（自用）_2020884043537059842.json]
+members: [图片生成/图生图/人物图片3D建模 SamBody_1992215613024301058.json, 平台全量/SAM3D Body角色扣取转3D模型_1992373138130530305.json, 平台全量/SAM3D Body角色扣取转3D模型_1992840285734629377.json, 平台全量/【游戏人物建模一秒搞定】ComfyUI新节点：SAM3DBody使用教程！_1993872857117769730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_881
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2015077485054005249.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2016360207449853953.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音_2069025671023779842.json、音频生成/音频生成/Qwen3 TTS语音克隆-一键克隆声音（自用）_2020884043537059842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/人物图片3D建模 SamBody_1992215613024301058.json、平台全量/SAM3D Body角色扣取转3D模型_1992373138130530305.json、平台全量/SAM3D Body角色扣取转3D模型_1992840285734629377.json、平台全量/【游戏人物建模一秒搞定】ComfyUI新节点：SAM3DBody使用教程！_1993872857117769730.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `AudioSeparation`
-- `CR Prompt Text`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
-- `ShowText`
+- `LoadImage`
+- `LoadSAM3DBodyModel`
+- `SAM3DBodyExportMesh`
+- `SAM3DBodyProcess`
+- `SaveImage`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 3/4 个有
-- `Label (rgthree)` —— 3/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `AudioCrop` —— 1/4 个有
-- `Float` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `ShowAnything|Mie` —— 1/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `Load3D` —— 2/4 个有
+- `SAM3DBodyPreviewSkeleton` —— 2/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `SAM3DBodyExportFBX` —— 1/4 个有
+- `SAM3DBodySaveSkeleton` —— 1/4 个有
 
 ## 典型参数
 

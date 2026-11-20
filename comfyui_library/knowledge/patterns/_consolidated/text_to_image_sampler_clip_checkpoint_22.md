@@ -1,53 +1,53 @@
 ---
 name: text_to_image_sampler_clip_checkpoint_22
 type: Text To Image
-frequency: 3
-level: strong
-coverage: 1
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, VAEDecode]
+frequency: 4
+level: moderate
+coverage: 0.8005
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSampler, SaveImage, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image-AIO文生图_1999088870409072641.json, 图片生成/文生图/flux和XL基础文生图_1940024417504366593.json, 图片生成/文生图/flux和XL基础文生图配合基础课教学08节_1932244857421819905.json]
+members: [图片生成/文生图/中文提示词文生图工作流_2046093591214297090.json, 图片生成/文生图/中西合璧古典美人一键生成_1889372369155448834.json, 图片生成/文生图/工作流基础篇-2-文生图带翻译工作流（翻译Alek节点）_2012411720182013954.json, 图片生成/文生图/文生图（翻译Alek节点）_1946045185828548610.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_checkpoint_22
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-image-AIO文生图_1999088870409072641.json、图片生成/文生图/flux和XL基础文生图_1940024417504366593.json、图片生成/文生图/flux和XL基础文生图配合基础课教学08节_1932244857421819905.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/中文提示词文生图工作流_2046093591214297090.json、图片生成/文生图/中西合璧古典美人一键生成_1889372369155448834.json、图片生成/文生图/工作流基础篇-2-文生图带翻译工作流（翻译Alek节点）_2012411720182013954.json、图片生成/文生图/文生图（翻译Alek节点）_1946045185828548610.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
 - `SaveImage`
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `BNK_CLIPTextEncodeAdvanced` —— 2/3 个有
-- `KSampler //Inspire` —— 2/3 个有
-- `TT_img_enc` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `ShowText|pysssss` —— 3/4 个有
+- `DeepTranslatorTextNode` —— 2/4 个有
+- `DeepTranslatorCLIPTextEncodeNode` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `JoinStrings` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 10 - 20 | 3 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | normal | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 832 | 832 - 1024 | 3 | 90% |
-| 高度 | 1536 | 1536 - 1680 | 3 | 96% |
+| 宽度 | 640 | 512 - 1024 | 4 | 70% |
+| 高度 | 768 | 512 - 1024 | 4 | 67% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 8 | 5.5 - 8 | 4 | 85% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | normal | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -55,10 +55,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 10 - 20，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 normal，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 832，观测区间 832 - 1024，3 个样本，取值集中（一致性 90%）
-- 高度 中位数 1536，观测区间 1536 - 1680，3 个样本，取值集中（一致性 96%）
+- 宽度 中位数 640，观测区间 512 - 1024，4 个样本
+- 高度 中位数 768，观测区间 512 - 1024，4 个样本
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 8，观测区间 5.5 - 8，4 个样本，取值集中（一致性 85%）
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 normal，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

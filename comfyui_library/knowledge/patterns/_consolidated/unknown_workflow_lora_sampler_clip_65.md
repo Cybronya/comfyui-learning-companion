@@ -1,76 +1,70 @@
 ---
 name: unknown_workflow_lora_sampler_clip_65
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.943143
-common_nodes: [ApplyFBCacheOnModel, BNK_CLIPTextEncodeAdvanced, CheckpointLoaderSimple, EmptyLatentImage, HyperLoRAApplyLoRA, HyperLoRAConfig, HyperLoRAFaceAttr, HyperLoRAGenerateIDLoRA, HyperLoRAIDCond, HyperLoRALoader, KSampler, LoadImage, SaveImage, VAEDecode]
+frequency: 8
+level: moderate
+coverage: 0.780625
+common_nodes: [BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, RHLLMChatNode, StringReplace, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/HyperLora+InstantID 人物一致性_1919998125195329537.json, 图片生成/图生图/hyperlora人物一致性生成模型（字节）_1916665695336071169.json, 图片生成/图生图/多图参考+精准换脸 ｜Hyper LoRA 和 InstantID_1921206761012002817.json, 图片生成/文生图/HyperLoRA+InstantID 人物一致性_1918136035447083009.json, 图片生成/文生图/HyperLoRA人物一致性生图_1918130332774629377.json, 图片生成/文生图/HyperLora-InstantID人脸一致性-超级加速文生图-自用_1973749895905587201.json, 图片生成/文生图/HyperLora人物一致性CN控制文生图（人物及姿势参考版）_1915753672788082690.json]
+members: [图片生成/图生图/Bernini图像编辑_2065059800358154242.json, 图片生成/图生图/Bernini图像编辑v2_2064182005436342273.json, 图片生成/文生图/Bernini-R 图像编辑_2062541633941495810.json, 图片生成/文生图/Bernini-R 文生图_2062533470706036738.json, 平台全量/Bernini视频编辑还要调整_2064238115795070978.json, 平台全量/LTX2.3 3.5系列套件｜字幕水印去除_2067822291773378561.json, 平台全量/LTX2.3 Suite 3.5 Subtitle & Watermark Removal_2072998824693768192.json, 视频生成/文生视频/Bernini-R 文生视频_2062533464225837057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_65
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/HyperLora+InstantID 人物一致性_1919998125195329537.json、图片生成/图生图/hyperlora人物一致性生成模型（字节）_1916665695336071169.json、图片生成/图生图/多图参考+精准换脸 ｜Hyper LoRA 和 InstantID_1921206761012002817.json、图片生成/文生图/HyperLoRA+InstantID 人物一致性_1918136035447083009.json、图片生成/文生图/HyperLoRA人物一致性生图_1918130332774629377.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Bernini图像编辑_2065059800358154242.json、图片生成/图生图/Bernini图像编辑v2_2064182005436342273.json、图片生成/文生图/Bernini-R 图像编辑_2062541633941495810.json、图片生成/文生图/Bernini-R 文生图_2062533470706036738.json、平台全量/Bernini视频编辑还要调整_2064238115795070978.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ApplyFBCacheOnModel`
-- `BNK_CLIPTextEncodeAdvanced`
-- `CheckpointLoaderSimple`
-- `EmptyLatentImage`
-- `HyperLoRAApplyLoRA`
-- `HyperLoRAConfig`
-- `HyperLoRAFaceAttr`
-- `HyperLoRAGenerateIDLoRA`
-- `HyperLoRAIDCond`
-- `HyperLoRALoader`
-- `KSampler`
-- `LoadImage`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `BerniniConditioning`
+- `BerniniPromptEnhancer`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `RHLLMChatNode`
+- `StringReplace`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ControlNetLoader` —— 6/7 个有
-- `ImpactMakeImageBatch` —— 6/7 个有
-- `ApplyInstantIDAdvanced` —— 5/7 个有
-- `CLIPSetLastLayer` —— 5/7 个有
-- `InstantIDFaceAnalysis` —— 5/7 个有
-- `InstantIDModelLoader` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `ImageConcanate` —— 2/7 个有
-- `JWInteger` —— 2/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `ControlNetApplyAdvanced` —— 1/7 个有
-- `DeepTranslatorTextNode` —— 1/7 个有
-- `FloatConstant` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `JjkText` —— 1/7 个有
-- `OpenposePreprocessor` —— 1/7 个有
-- `Text Concatenate (JPS)` —— 1/7 个有
-- `Video_Upscale_With_Model` —— 1/7 个有
+- `Text` —— 6/8 个有
+- `PreviewAny` —— 5/8 个有
+- `CreateVideo` —— 4/8 个有
+- `LoadImage` —— 4/8 个有
+- `SaveImage` —— 4/8 个有
+- `SaveVideo` —— 4/8 个有
+- `JWInteger` —— 3/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/8 个有
+- `image_scale_pixel_v2` —— 3/8 个有
+- `GetVideoComponents` —— 2/8 个有
+- `ImageFromBatch` —— 2/8 个有
+- `LoadVideo` —— 2/8 个有
+- `easy int` —— 2/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `PrimitiveFloat` —— 1/8 个有
+- `VHS_LoadVideo` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 768 - 1024 | 7 | 91% |
-| 高度 | 1024 | 1024 - 1280 | 7 | 92% |
-| 采样步数 | 20 | 20 - 30 | 7 | 84% |
-| Prompt 约束强度(CFG) | 3 | 3 - 5 | 7 | 74% |
-| 采样算法 | dpmpp_2m | - | 7 | 100% |
-| 调度器 | karras | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
+| 采样步数 | fixed | - | 8 | 62% |
+| Prompt 约束强度(CFG) | 14 | 10 - 50 | 8 | 29% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -78,10 +72,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 768 - 1024，7 个样本，取值集中（一致性 91%）
-- 高度 中位数 1024，观测区间 1024 - 1280，7 个样本，取值集中（一致性 92%）
-- 采样步数 中位数 20，观测区间 20 - 30，7 个样本，取值集中（一致性 84%）
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 5，7 个样本
-- 采样算法 最常用 dpmpp_2m，7 个样本，一致性 100%
-- 调度器 最常用 karras，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，8 个样本，一致性 62%
+- Prompt 约束强度(CFG) 中位数 14，观测区间 10 - 50，8 个样本，取值分散，一致性仅 29%
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 50，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

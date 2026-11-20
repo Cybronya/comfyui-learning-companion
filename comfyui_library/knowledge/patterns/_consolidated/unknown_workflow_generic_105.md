@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_105
 type: Unknown Workflow
-frequency: 15
+frequency: 17
 level: moderate
-coverage: 0.96
-common_nodes: [QwenImageModelLoader, RH_QwenImageGenerator, SaveImage]
+coverage: 0.609529
+common_nodes: [CR Text, PrimitiveFloat, RH_Screenwriter, SaveAudio, ShowText|pysssss, WujiLyricistNode, WujiMusicianACEStep15XL]
 problems: []
 missing: []
-members: [图片生成/文生图/qwen-image 完全版满血生图_1955074728886091778.json, 图片生成/文生图/【最强图片文字】通义千问 Qwen-image_1952681933023154177.json, 图片生成/文生图/千问文生图~国产开源之光_1952737017799053314.json, 图片生成/文生图/海报一件设计_1952725024588427266.json, 图片生成/文生图/通义千问Qwen-image 1分钟出图_1952554142764085249.json, 图片生成/文生图/通义千问Qwen-image 会写汉字的生图模型生图_1952542727718277122.json, 图片生成/文生图/通义千问Qwen-image 文生图_1952901917544484865.json, 图片生成/文生图/通义千问Qwen-image_1952536297061724162.json, 图片生成/文生图/通义千问Qwen-image_1952621651601108994.json, 图片生成/文生图/通义千问Qwen-image_1953303943247032322.json, 图片生成/文生图/通义千问Qwen-image_1953308645888094209.json, 图片生成/文生图/通义千问Qwen-image_1956942854700589057.json, 图片生成/文生图/通义千问Qwen-image基础工作流_1952670044088152065.json, 图片生成/文生图/通义千问文生图_1952578725361717250.json, 图片生成/文生图/🥨Qwen 千问文生图~效果等同即梦！国产开源之光🥨_1952634626944765953.json]
+members: [图片生成/文生图/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2051496739697381378.json, 数字人/数字人/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2070655336452804609.json, 视频生成/文生视频/歌曲生成 ACE-Step1.5XL及Suno+V5.5+手搓最强AI音乐创作_2051837837548498946.json, 音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047677304142303234.json, 音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047679987045638146.json, 音频生成/音频生成/ACE-Step1.5XL一句话写一首歌工作流_2046499811930677249.json, 音频生成/音频生成/ACE-Step1.5XL一键AI音乐_2044544358233415681.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5 手搓AI音乐_2044346549555175426.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5 手搓AI音乐_2046218158251450370.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2044244684310056962.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5.5 手搓最强AI音乐创作_2044246957450858497.json, 音频生成/音频生成/ACE-Step1.5XL和Suno V5 手搓AI音乐自动生成AI音乐工作流_2044642777891344385.json, 音频生成/音频生成/ACE-Step1.5XL和Suno V5 手搓AI音乐自动生成AI音乐工作流_2045401793181519874.json, 音频生成/音频生成/ACE-Step1.5XL生成AI音乐工作流_2061315627834503169.json, 音频生成/音频生成/ACE-Step1.5XL音乐创作_2058748276169601026.json, 音频生成/音频生成/AI 原创音乐生成_2047620955584860161.json, 音频生成/音频生成/超好用🔥一键手搓AI音乐 ACE-Step1.5XL及Suno V5可自行选择_2046796175285686274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_105
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/qwen-image 完全版满血生图_1955074728886091778.json、图片生成/文生图/【最强图片文字】通义千问 Qwen-image_1952681933023154177.json、图片生成/文生图/千问文生图~国产开源之光_1952737017799053314.json、图片生成/文生图/海报一件设计_1952725024588427266.json、图片生成/文生图/通义千问Qwen-image 1分钟出图_1952554142764085249.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2051496739697381378.json、数字人/数字人/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2070655336452804609.json、视频生成/文生视频/歌曲生成 ACE-Step1.5XL及Suno+V5.5+手搓最强AI音乐创作_2051837837548498946.json、音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047677304142303234.json、音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047679987045638146.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `QwenImageModelLoader`
-- `RH_QwenImageGenerator`
-- `SaveImage`
+全部 17 个 workflow 都包含：
+- `CR Text`
+- `PrimitiveFloat`
+- `RH_Screenwriter`
+- `SaveAudio`
+- `ShowText|pysssss`
+- `WujiLyricistNode`
+- `WujiMusicianACEStep15XL`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/15 个有
-- `PrimitiveInt` —— 1/15 个有
+- `Fast Groups Muter (rgthree)` —— 14/17 个有
+- `RH_Suno_Custom` —— 8/17 个有
+- `RH_RhartAudioSunoV55Single` —— 6/17 个有
+- `LoadImage` —— 1/17 个有
 
 ## 典型参数
 

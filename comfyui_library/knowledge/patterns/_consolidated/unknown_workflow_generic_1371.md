@@ -1,35 +1,34 @@
 ---
 name: unknown_workflow_generic_1371
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.938
-common_nodes: [JoinStringMulti, LoadImage, QwenMultiangleCameraNode, RH_Nano_Banana2_Image2Image, SaveImage, easy outputToList, easy positive]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [LoadImage, RH_Kling30_Pro_Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/H一图多视角QWEN_2061609231618498561.json, 图片生成/图生图/最强人物一致性保持，一键多视角4k高清大图，人物不变，任意相机角度控制，精准控制视角，LORA素材。_2043639077739700225.json]
+members: [视频生成/图生视频/可灵v3.0Pro+Kling  v3.0图生视频音画同步_2032368800166846466.json, 视频生成/文生视频/可灵v3.0 Pro (文生_图生视频)_2019737658800476161.json, 视频生成/文生视频/可灵v3.0 Pro (文生_图生视频)（RH版）_2054437204730105857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1371
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/H一图多视角QWEN_2061609231618498561.json、图片生成/图生图/最强人物一致性保持，一键多视角4k高清大图，人物不变，任意相机角度控制，精准控制视角，LORA素材。_2043639077739700225.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/可灵v3.0Pro+Kling  v3.0图生视频音画同步_2032368800166846466.json、视频生成/文生视频/可灵v3.0 Pro (文生_图生视频)_2019737658800476161.json、视频生成/文生视频/可灵v3.0 Pro (文生_图生视频)（RH版）_2054437204730105857.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `JoinStringMulti`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `QwenMultiangleCameraNode`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `easy outputToList`
-- `easy positive`
+- `RH_Kling30_Pro_Video`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveBoolean` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +40,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

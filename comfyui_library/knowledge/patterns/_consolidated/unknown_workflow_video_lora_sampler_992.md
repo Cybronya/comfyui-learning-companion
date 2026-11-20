@@ -3,58 +3,81 @@ name: unknown_workflow_video_lora_sampler_992
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.691
-common_nodes: [CR Text, CR Text Concatenate, GetImageSizeAndCount, GetNode, ImageResizeKJ, Int, LoadImage, LoadWanVideoT5TextEncoder, MaskBatch+, MaskFromBatch+, MaskPreview+, PreviewImage, RH_Captioner, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy showAnything]
+coverage: 0.4085
+common_nodes: [CLIPVisionLoader, DWPreprocessor, DrawViTPose, FaceMaskFromPoseKeypoints, FancyTimerNode, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, JWInteger, LoadImage, OnnxDetectionModelLoader, OpenposePreprocessor, PixelPerfectResolution, PoseAndFaceDetection, SDPoseOODLoader, SDPoseOODProcessor, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/首尾帧变身+丝滑转场-wan2.1_1987510145859129345.json, 视频生成/图生视频/首尾帧变身工作流_1935249679577698306.json]
+members: [平台全量/人物替换+对口型_2004791778450567170.json, 视频生成/图生视频/影视动作迁移_2030257978057695233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_992
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/首尾帧变身+丝滑转场-wan2.1_1987510145859129345.json、视频生成/图生视频/首尾帧变身工作流_1935249679577698306.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/人物替换+对口型_2004791778450567170.json、视频生成/图生视频/影视动作迁移_2030257978057695233.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DrawViTPose`
+- `FaceMaskFromPoseKeypoints`
+- `FancyTimerNode`
+- `Fast Groups Bypasser (rgthree)`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `ImageResizeKJ`
-- `Int`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
+- `JWInteger`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskBatch+`
-- `MaskFromBatch+`
-- `MaskPreview+`
-- `PreviewImage`
-- `RH_Captioner`
+- `OnnxDetectionModelLoader`
+- `OpenposePreprocessor`
+- `PixelPerfectResolution`
+- `PoseAndFaceDetection`
+- `SDPoseOODLoader`
+- `SDPoseOODProcessor`
 - `SetNode`
 - `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `StringToInt` —— 1/2 个有
+- `BlockifyMask` —— 1/2 个有
+- `DrawMaskOnImage` —— 1/2 个有
+- `FastUnsharpSharpen` —— 1/2 个有
+- `GrowMask` —— 1/2 个有
+- `ImageBlend` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `Label (rgthree)` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `SeCModelLoader` —— 1/2 个有
+- `SeCVideoSegmentation` —— 1/2 个有
+- `YOLOModelLoader` —— 1/2 个有
+- `easy framesEditor` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

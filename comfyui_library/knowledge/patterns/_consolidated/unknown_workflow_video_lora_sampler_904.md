@@ -1,54 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_904
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9285
-common_nodes: [Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SimpleMath+, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+frequency: 3
+level: moderate
+coverage: 0.924
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, ImageConcatMulti, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频-自动生成动态提示词_1951139393090334722.json, 视频生成/图生视频/smooth-kj_2056763668582461441.json]
+members: [视频生成/图生视频/wan22_standin_optimized_workflow_2005304023580372993.json, 视频生成/图生视频/wan22_standin_testing_wip_kj_2005293429506670594.json, 视频生成/文生视频/Wan2.2-Stand-in人脸一致性保持_2004807715740413953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_904
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频-自动生成动态提示词_1951139393090334722.json、视频生成/图生视频/smooth-kj_2056763668582461441.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan22_standin_optimized_workflow_2005304023580372993.json、视频生成/图生视频/wan22_standin_testing_wip_kj_2005293429506670594.json、视频生成/文生视频/Wan2.2-Stand-in人脸一致性保持_2004807715740413953.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 3 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageConcatMulti`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SimpleMath+`
-- `Text Multiline`
+- `PreviewImage`
 - `VHS_VideoCombine`
+- `WanVideoAddStandInLatent`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Wan22PromptSelector` —— 1/2 个有
-- `WanVideoSetBlockSwap` —— 1/2 个有
-- `WanVideoSetLoRAs` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `easy int` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `ApplyFaceProcessor` —— 2/3 个有
+- `DrawMaskOnImage` —— 2/3 个有
+- `FaceProcessorLoader` —— 2/3 个有
+- `ImagePadKJ` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `InvertMask` —— 2/3 个有
+- `ImageRemoveBackground+` —— 1/3 个有
+- `LoadLynxResampler` —— 1/3 个有
+- `LynxEncodeFaceIP` —— 1/3 个有
+- `LynxInsightFaceCrop` —— 1/3 个有
+- `MinNode` —— 1/3 个有
+- `OnnxDetectionModelLoader` —— 1/3 个有
+- `PoseAndFaceDetection` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `TransparentBGSession+` —— 1/3 个有
+- `WanVideoAddLynxEmbeds` —— 1/3 个有
+- `WanVideoExtraModelSelect` —— 1/3 个有
+- `WanVideoTextEncodeCached` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -60,4 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

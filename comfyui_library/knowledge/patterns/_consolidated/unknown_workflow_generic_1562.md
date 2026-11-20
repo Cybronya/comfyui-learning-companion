@@ -3,37 +3,33 @@ name: unknown_workflow_generic_1562
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.873
-common_nodes: [LoadImage, RH_RhartImageG25OfficialTokenSunburstEdit, SaveImage, SynVowPsdLayerComposer, SynVowTransparentAssetPromptGenerator, SynVowTransparentPngSavePreview, easy showAnything]
+coverage: 0.75
+common_nodes: [InspyrenetRembg, LoadImage, RH_LLMAPI_NODE, RH_Nano_Banana2_Image2Image, SaveImage, Text, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/直出PSD分层文件 image2.5图层拆分_2100824867754045441.json, 图片生成/图生图/直出PSD分层文件 image2.5图层拆分_2111023870621872129.json]
+members: [图片生成/图生图/9宫格随机表情_2040824805951279105.json, 图片生成/图生图/动作不变表情Q2_2040813073866432514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1562
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/直出PSD分层文件 image2.5图层拆分_2100824867754045441.json、图片生成/图生图/直出PSD分层文件 image2.5图层拆分_2111023870621872129.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/9宫格随机表情_2040824805951279105.json、图片生成/图生图/动作不变表情Q2_2040813073866432514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `InspyrenetRembg`
 - `LoadImage`
-- `RH_RhartImageG25OfficialTokenSunburstEdit`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `SynVowPsdLayerComposer`
-- `SynVowTransparentAssetPromptGenerator`
-- `SynVowTransparentPngSavePreview`
+- `Text`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25FlareImageToImage` —— 1/2 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 1/2 个有
 
 ## 典型参数
 

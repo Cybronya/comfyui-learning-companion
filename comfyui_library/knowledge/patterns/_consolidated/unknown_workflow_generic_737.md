@@ -1,45 +1,32 @@
 ---
 name: unknown_workflow_generic_737
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.7445
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.8092
+common_nodes: [79dd8a95-ce9d-4c14-b264-2162e8bec5ce, GetImageSize, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/专业AI婚纱工作流V2-出图更专业，人为可控-高清直出_2049828490991677442.json, 图片生成/图生图/光影重塑-图片重新打光-V2-全能图片G-Image-2-图生图-0.1元_次_2061106607605506050.json, 图片生成/图生图/光影重塑-图片重新打光-全能图片G-Image-2-图生图-0.1元_次_2058407916406923266.json, 图片生成/图生图/双人专业AI婚纱工作流V2-出图更专业，人为可控-高清直出_2108890056353214465.json]
+members: [平台全量/H3-Pika 首尾帧视频_2117384350802210818.json, 平台全量/MiniMax H3 × Pika Flex｜FL2VA 首尾帧 5秒_2119314012407156738.json, 平台全量/Pika H3 Flex 首尾帧生视频标准版_2118209142086262785.json, 视频生成/图生视频/minimax-H3-flex-pika-首尾帧_2116452685179351041.json, 视频生成/图生视频/minimax-H3-flex-pika-首尾帧_2116696404797255681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_737
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/专业AI婚纱工作流V2-出图更专业，人为可控-高清直出_2049828490991677442.json、图片生成/图生图/光影重塑-图片重新打光-V2-全能图片G-Image-2-图生图-0.1元_次_2061106607605506050.json、图片生成/图生图/光影重塑-图片重新打光-全能图片G-Image-2-图生图-0.1元_次_2058407916406923266.json、图片生成/图生图/双人专业AI婚纱工作流V2-出图更专业，人为可控-高清直出_2108890056353214465.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/H3-Pika 首尾帧视频_2117384350802210818.json、平台全量/MiniMax H3 × Pika Flex｜FL2VA 首尾帧 5秒_2119314012407156738.json、平台全量/Pika H3 Flex 首尾帧生视频标准版_2118209142086262785.json、视频生成/图生视频/minimax-H3-flex-pika-首尾帧_2116452685179351041.json、视频生成/图生视频/minimax-H3-flex-pika-首尾帧_2116696404797255681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `79dd8a95-ce9d-4c14-b264-2162e8bec5ce`
+- `GetImageSize`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `Text`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-
-**可变部分**（部分 workflow 才有）：
-- `FlashVSRNode` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `TextConcat` —— 2/4 个有
-- `JjkText` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
+- `SaveVideo`
 
 ## 典型参数
 

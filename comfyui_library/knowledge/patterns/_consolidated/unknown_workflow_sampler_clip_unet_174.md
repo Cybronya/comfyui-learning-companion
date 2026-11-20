@@ -2,66 +2,79 @@
 name: unknown_workflow_sampler_clip_unet_174
 type: Unknown Workflow
 frequency: 8
-level: weak
-coverage: 0.97725
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.913875
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/qwen image 酷炫锥形电影海报_1954123988979085313.json, 图片生成/文生图/qwen-通义千问-文生图_1952737054142697473.json, 图片生成/文生图/qwen_image_2512_bf16_2006410696564674562.json, 图片生成/文生图/turbo蒸馏版Z_IMAGE文生图工作流_2068265351833546753.json, 图片生成/文生图/z-image 8步生图_2041209465986355201.json, 图片生成/文生图/z-image工作流原始_1998312568252981249.json, 图片生成/文生图/z-image测试_2014249552764739586.json, 图片生成/文生图/z-image测试_2014252003039387649.json]
+members: [图片生成/图生图/4o 同款动森风格转绘｜一键生图系列_1908531859959984130.json, 图片生成/图生图/FLUX-一键3D卡通玩偶生成_1916408957932605441.json, 图片生成/图生图/Krea Dev Pulid换脸对比_1950994961493860353.json, 图片生成/图生图/PVC 玩偶手办｜一键生图系列_1909914716737863682.json, 图片生成/图生图/任何 人物角色  3D 形象 转换｜一键生图系列_1908028995135221762.json, 图片生成/图生图/全能图片G-4o_真人转3D头像_1911383209878220801.json, 图片生成/图生图/全能图片G4o 同款 JOJO 风｜一键生图系列_1909501337153712129.json, 图片生成/图生图/全能图片G4o 同款史努比卡通风格｜一键生图系列_1908447812558987266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_174
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/qwen image 酷炫锥形电影海报_1954123988979085313.json、图片生成/文生图/qwen-通义千问-文生图_1952737054142697473.json、图片生成/文生图/qwen_image_2512_bf16_2006410696564674562.json、图片生成/文生图/turbo蒸馏版Z_IMAGE文生图工作流_2068265351833546753.json、图片生成/文生图/z-image 8步生图_2041209465986355201.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/4o 同款动森风格转绘｜一键生图系列_1908531859959984130.json、图片生成/图生图/FLUX-一键3D卡通玩偶生成_1916408957932605441.json、图片生成/图生图/Krea Dev Pulid换脸对比_1950994961493860353.json、图片生成/图生图/PVC 玩偶手办｜一键生图系列_1909914716737863682.json、图片生成/图生图/任何 人物角色  3D 形象 转换｜一键生图系列_1908028995135221762.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPLoader`
+- `ApplyPulidFlux`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `LoadImage`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `TextInputBasic` —— 2/8 个有
-- `CR Value` —— 1/8 个有
-- `ConcatTextOfUtils` —— 1/8 个有
-- `LayerUtility: TextBox` —— 1/8 个有
-- `YC_SingleTextNode` —— 1/8 个有
-- `YC_textReplaceNode` —— 1/8 个有
+- `PreviewImage` —— 6/8 个有
+- `ConcatTextOfUtils` —— 5/8 个有
+- `EmptyLatentImage` —— 5/8 个有
+- `LoraLoader` —— 5/8 个有
+- `VAEEncode` —— 5/8 个有
+- `EmptySD3LatentImage` —— 3/8 个有
+- `SDVN Joy Caption` —— 3/8 个有
+- `Joy_caption` —— 2/8 个有
+- `Joy_caption_load` —— 2/8 个有
+- `Lora Loader Stack (rgthree)` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `easy clearCacheAll` —— 2/8 个有
+- `ImageConcatMulti` —— 1/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
+- `PulidFluxFaceDetector` —— 1/8 个有
+- `PulidFluxOptions` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8.5 | 8 - 50 | 8 | 18% |
-| Prompt 约束强度(CFG) | 1.1 | 1 - 4 | 8 | 38% |
-| 采样算法 | euler | - | 8 | 62% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 1 | 0.81 - 1 | 8 | 94% |
+| 宽度 | 768 | 768 - 768 | 5 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+| LoRA 模型强度 | 0.8 | 0.8 - 1 | 5 | 90% |
+| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8.5，观测区间 8 - 50，8 个样本，取值分散，一致性仅 18%
-- Prompt 约束强度(CFG) 中位数 1.1，观测区间 1 - 4，8 个样本，取值分散，一致性仅 38%
-- 采样算法 最常用 euler，8 个样本，一致性 62%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 0.81 - 1，8 个样本，取值集中（一致性 94%）
-- 高发问题（5/8 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 768，观测区间 768 - 768，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，5 个样本，取值集中（一致性 90%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

@@ -1,88 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_unet_58
 type: Unknown Workflow
-frequency: 10
-level: moderate
-coverage: 0.8235
-common_nodes: [AutoCropFaces, CLIPLoader, EmptyLatentImage, Image Paste Crop, ImageAndMaskPreview, ImageResizeKJv2, KSampler, LayerMask: SegformerB2ClothesUltra, LayerUtility: ImageRemoveAlpha, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+frequency: 11
+level: strong
+coverage: 0.713182
+common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, Get Image Size, GrowMaskWithBlur, GulfSeaImageMergeMask, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveInt, SaveImage, TextEncodeQwenImageEditPlus_lrzjason, UNETLoader, VAEDecode, VAELoader, 图像缩放V2_孤海, 孤海外补画板按方向]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/QwenEdit2511最强换脸_换头工作流 融合性超好_2003147842309038081.json, 图片生成/图生图/edit换脸_2110686259562762241.json, 图片生成/图生图/qwen_edit_2509_一键换头工作流_2015385940776194050.json, 图片生成/图生图/换头QwenEdit超强一致性_2039727354066509825.json, 图片生成/图生图/换头，换状， 绝对的一致性_2010542559831007234.json, 图片生成/图生图/最强换头术=QwenEdi_1997203172911419394.json, 图片生成/图生图/最强换头术=QwenEdit2511换脸=B站艾橘溪_1990343142316625921.json, 图片生成/图生图/短剧换头换脸Qwenedit2511_2018615350392262657.json, 图片生成/图生图/超强换头术 人物写实换脸  极速版_2089907924406726658.json, 图片生成/文生图/图一头换到图二上+换头+换脸+全节点注释_2056949319693070338.json]
+members: [图片生成/图生图/Qwen 2511 最强无损扩图流｜零偏移｜零色差｜零接缝_2077741666592706561.json, 图片生成/图生图/”构图太窄？？”“裁剪过度？？”试了100多种扩图方法，终于做出中间一点不变的最炸无损封神扩图流！！_2065800262656286722.json, 图片生成/图生图/史上最强_扩图__2097159314808066050.json, 图片生成/图生图/史上最强_扩图__2097499447767953410.json, 图片生成/图生图/无损封神一键扩图工作流！！_2095769504977612801.json, 图片生成/图生图/无损封神一键扩图工作流！！_2096062738471673857.json, 图片生成/图生图/最强  _扩图_生成器_2078405944349913090.json, 图片生成/图生图/零接缝零色差零偏移最强无损扩图流2511Qwen_2085192513094246402.json, 图片生成/图生图/零接缝零色差零偏移最强无损扩图流2511Qwen_2085207727323832321.json, 平台全量/史上最强  _扩图__2077673858127196161.json, 平台全量/无痕智能扩图_2096863463023927297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_58
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/QwenEdit2511最强换脸_换头工作流 融合性超好_2003147842309038081.json、图片生成/图生图/edit换脸_2110686259562762241.json、图片生成/图生图/qwen_edit_2509_一键换头工作流_2015385940776194050.json、图片生成/图生图/换头QwenEdit超强一致性_2039727354066509825.json、图片生成/图生图/换头，换状， 绝对的一致性_2010542559831007234.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen 2511 最强无损扩图流｜零偏移｜零色差｜零接缝_2077741666592706561.json、图片生成/图生图/”构图太窄？？”“裁剪过度？？”试了100多种扩图方法，终于做出中间一点不变的最炸无损封神扩图流！！_2065800262656286722.json、图片生成/图生图/史上最强_扩图__2097159314808066050.json、图片生成/图生图/史上最强_扩图__2097499447767953410.json、图片生成/图生图/无损封神一键扩图工作流！！_2095769504977612801.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `AutoCropFaces`
+全部 11 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `Image Paste Crop`
-- `ImageAndMaskPreview`
-- `ImageResizeKJv2`
+- `ConditioningZeroOut`
+- `Get Image Size`
+- `GrowMaskWithBlur`
+- `GulfSeaImageMergeMask`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `LayerMask: SegformerB2ClothesUltra`
-- `LayerUtility: ImageRemoveAlpha`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `PrimitiveInt`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlus_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `图像缩放V2_孤海`
+- `孤海外补画板按方向`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 7/10 个有
-- `ImageConcanate` —— 7/10 个有
-- `LayerUtility: PurgeVRAM` —— 7/10 个有
-- `PrimitiveInt` —— 7/10 个有
-- `SetNode` —— 7/10 个有
-- `PreviewImage` —— 4/10 个有
-- `CFGNorm` —— 3/10 个有
-- `ConditioningZeroOut` —— 3/10 个有
-- `Get Image Size` —— 3/10 个有
-- `ImageScale` —— 3/10 个有
-- `CR Text` —— 2/10 个有
-- `ImpactInt` —— 2/10 个有
-- `FaceAlign` —— 1/10 个有
-- `FaceAnalysisModels` —— 1/10 个有
-- `RHHiddenNodes` —— 1/10 个有
+- `DF_Text_Box` —— 7/11 个有
+- `RHHiddenNodes` —— 4/11 个有
+- `Text Concatenate` —— 4/11 个有
+- `孤海注释` —— 4/11 个有
+- `GetNode` —— 3/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/11 个有
+- `SetNode` —— 3/11 个有
+- `easy int` —— 3/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 720 | 512 - 720 | 10 | 86% |
-| 高度 | 1280 | 512 - 1280 | 10 | 66% |
-| 采样步数 | 4 | 4 - 8 | 10 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 8 | 8 - 8 | 11 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | euler_ancestral | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 720，观测区间 512 - 720，10 个样本，取值集中（一致性 86%）
-- 高度 中位数 1280，观测区间 512 - 1280，10 个样本
-- 采样步数 中位数 4，观测区间 4 - 8，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 高发问题（11/11 个样本）：Steps较低可能导致细节不足

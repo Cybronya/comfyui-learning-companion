@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [AnyBooleanSwitch, CR Text, LoadImage, SaveImage, easy boolean]
+common_nodes: [LoadImage, Preview3D, SaveGLB, SaveImage, TencentImageToModelNode]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2.0-10图参考编辑_2029013588903469057.json, 图片生成/图生图/全能图片PRO-10图参考编辑_2029467668931153921.json]
+members: [comfyui-workflow-templates-json/api_hunyuan3d_image_to_model.json, 平台全量/单图生成 3D 模型_2059204195273756674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1458
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片2.0-10图参考编辑_2029013588903469057.json、图片生成/图生图/全能图片PRO-10图参考编辑_2029467668931153921.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_hunyuan3d_image_to_model.json、平台全量/单图生成 3D 模型_2059204195273756674.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,15 +23,11 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AnyBooleanSwitch`
-- `CR Text`
 - `LoadImage`
+- `Preview3D`
+- `SaveGLB`
 - `SaveImage`
-- `easy boolean`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `TencentImageToModelNode`
 
 ## 典型参数
 

@@ -2,79 +2,73 @@
 name: text_to_image_lora_sampler_clip_252
 type: Text To Image
 frequency: 8
-level: strong
-coverage: 0.714
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: weak
+coverage: 0.78
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102557478423715841.json, 图片生成/图生图/Qwen Image 2.1图像编辑最多十张参考图，2K原生输出图生图处理工具_2106447204092309505.json, 图片生成/图生图/Qwen Image 2.1图片编辑，简洁实用的图生图处理工作流_2103255755200749569.json, 图片生成/图生图/Qwen Image 2.1图生图提示词增强处理生成工具_2102560585291493377.json, 图片生成/图生图/Qwen Image 2.1多合一工作流图生图文生图处理工具_2102465754015821825.json, 图片生成/图生图/千问2.1多图像编辑工作流｜提示词自动优化省心出图_2103724810600804354.json, 图片生成/文生图/Qwen Image 2.1多合一工作流 全能图像编辑方案_2109008831576625154.json, 图片生成/文生图/Qwen image 2.1图像编辑加文生图 二合一工作流_2105110276558381057.json]
+members: [图片生成/图生图/ki_人物四视图合集_2114476716134584321.json, 图片生成/文生图/Qwen Image 2.1全能工作流，文生图反推提示词图生图多合一_2102880404171739138.json, 图片生成/文生图/Qwen image2.1全能工作流 文生图人像写真一站搞定_2104332186555080705.json, 图片生成/文生图/Qwen image2.1全能工作流｜文生图人像写真 图生图一套全包_2104107604501942274.json, 视频生成/图生视频/Qwen_Image_2.1全能工作流，文生图反推提示词图生图多合一_2105118701145120770.json, 视频生成/图生视频/ki_人物四视图合集_2115289137401122818.json, 视频生成/图生视频/ki_人物四视图合集_2115297778153902082.json, 视频生成/图生视频/ki_人物四视图合集_2115306695260991489.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_252
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102557478423715841.json、图片生成/图生图/Qwen Image 2.1图像编辑最多十张参考图，2K原生输出图生图处理工具_2106447204092309505.json、图片生成/图生图/Qwen Image 2.1图片编辑，简洁实用的图生图处理工作流_2103255755200749569.json、图片生成/图生图/Qwen Image 2.1图生图提示词增强处理生成工具_2102560585291493377.json、图片生成/图生图/Qwen Image 2.1多合一工作流图生图文生图处理工具_2102465754015821825.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/ki_人物四视图合集_2114476716134584321.json、图片生成/文生图/Qwen Image 2.1全能工作流，文生图反推提示词图生图多合一_2102880404171739138.json、图片生成/文生图/Qwen image2.1全能工作流 文生图人像写真一站搞定_2104332186555080705.json、图片生成/文生图/Qwen image2.1全能工作流｜文生图人像写真 图生图一套全包_2104107604501942274.json、视频生成/图生视频/Qwen_Image_2.1全能工作流，文生图反推提示词图生图多合一_2105118701145120770.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text`
 - `EmptyLatentImage`
-- `JjkText`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ResolutionSelector`
+- `QwenImage21Cache`
 - `SaveImage`
 - `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `BatchImagesNode` —— 6/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/8 个有
-- `GetNode` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `TextGenerateLTX2Prompt` —— 6/8 个有
-- `PrimitiveStringMultiline` —— 5/8 个有
-- `ComfySwitchNode` —— 4/8 个有
-- `Image Comparer (rgthree)` —— 3/8 个有
-- `ConditioningZeroOut` —— 2/8 个有
-- `CropWithPadInfo_EditUtils` —— 2/8 个有
-- `EditTextEncode_EditUtils` —— 2/8 个有
-- `FastGroupsBypassSwitch` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `PrimitiveBoolean` —— 2/8 个有
-- `PrimitiveInt` —— 2/8 个有
-- `QwenImage21ConfigPreparer_EditUtils` —— 2/8 个有
-- `QwenImage21ModelConfig_EditUtils` —— 2/8 个有
-- `QwenPERewriteT8` —— 2/8 个有
-- `SaveImageAdvanced` —— 2/8 个有
-- `GH_ImageVideoComparer` —— 1/8 个有
-- `ImageScaleToTotalPixels` —— 1/8 个有
-- `Seed (rgthree)` —— 1/8 个有
+- `AIO_Preprocessor` —— 4/8 个有
+- `CR Text Concatenate` —— 4/8 个有
+- `ConditioningZeroOut` —— 4/8 个有
+- `GetNode` —— 4/8 个有
+- `JjkText` —— 4/8 个有
+- `PreviewImage` —— 4/8 个有
+- `SetNode` —— 4/8 个有
+- `ki_宫格拼图简易版` —— 4/8 个有
+- `solarL_SaveImagesToZip` —— 4/8 个有
+- `孤海注释` —— 3/8 个有
+- `EmptyImage` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 8 | 100% |
-| 高度 | 80 | 80 - 80 | 8 | 100% |
-| 采样步数 | 4 | 4 - 4 | 8 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
-| 采样算法 | er_sde | - | 8 | 100% |
-| 调度器 | beta | - | 8 | 100% |
+| 宽度 | 1064 | 80 - 2048 | 8 | 8% |
+| 高度 | 552 | 80 - 1024 | 8 | 14% |
+| 采样步数 | 22 | 4 - 40 | 8 | 18% |
+| Prompt 约束强度(CFG) | 2.75 | 1 - 4.5 | 8 | 36% |
+| 采样算法 | euler | - | 8 | 50% |
+| 调度器 | simple | - | 8 | 50% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
@@ -85,11 +79,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，8 个样本，一致性 100%
-- 调度器 最常用 beta，8 个样本，一致性 100%
+- 宽度 中位数 1064，观测区间 80 - 2048，8 个样本，取值分散，一致性仅 8%
+- 高度 中位数 552，观测区间 80 - 1024，8 个样本，取值分散，一致性仅 14%
+- 采样步数 中位数 22，观测区间 4 - 40，8 个样本，取值分散，一致性仅 18%
+- Prompt 约束强度(CFG) 中位数 2.75，观测区间 1 - 4.5，8 个样本，取值分散，一致性仅 36%
+- 采样算法 最常用 euler，8 个样本，一致性 50%
+- 调度器 最常用 simple，8 个样本，一致性 50%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 高发问题（8/8 个样本）：Steps较低可能导致细节不足

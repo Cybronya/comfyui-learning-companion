@@ -3,33 +3,32 @@ name: unknown_workflow_generic_1801
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.688
+common_nodes: [JjkText, LoadImage, RH_Midjourney, RH_Prompter, SaveImage, 忽略多组孤海]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2声音克隆-参考音色工作流_2094573070831935489.json, 音频生成/音频生成/IndexTTS2情感声音克隆-参考音色工作流_2094566360541122562.json]
+members: [图片生成/图生图/高阶文生图 图生图_2092510745186627585.json, 图片生成/文生图/MJ 文生图 图生图_2086704839580545026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1801
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2声音克隆-参考音色工作流_2094573070831935489.json、音频生成/音频生成/IndexTTS2情感声音克隆-参考音色工作流_2094566360541122562.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/高阶文生图 图生图_2092510745186627585.json、图片生成/文生图/MJ 文生图 图生图_2086704839580545026.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2BaseNode` —— 1/2 个有
-- `IndexTTS2EmotionVectorNode` —— 1/2 个有
+- `JjkText`
+- `LoadImage`
+- `RH_Midjourney`
+- `RH_Prompter`
+- `SaveImage`
+- `忽略多组孤海`
 
 ## 典型参数
 

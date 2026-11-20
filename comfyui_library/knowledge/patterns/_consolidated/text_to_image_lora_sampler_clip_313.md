@@ -3,81 +3,74 @@ name: text_to_image_lora_sampler_clip_313
 type: Text To Image
 frequency: 7
 level: strong
-coverage: 0.893429
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3Easy, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, MiniMaxLowVRAMAttention, ModelPreviewOverrideKJ, Seed (rgthree), UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.873
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelPreviewOverrideKJ, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveFloat, RHLLMChatNode, RHSettingsNode, RandomNoise, SamplerCustomAdvanced, SaveVideo, SimpleMathDual+, UNETLoader, UniBlockSwap, VAEDecode, VAEDecodeAudio, VAELoader, easy blocker, easy ifElse, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy seed, easy splitImages, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3 VDN加SelfLift采样直出1080P 图生视频工具_2099586843141562370.json, 视频生成/图生视频/MINIMAXH3双采样V3全面升级｜文戏不油武戏不糊双模式_2110702226032386049.json, 视频生成/图生视频/数字人15秒直出1080P图生视频处理生成工具_2101408406874714114.json, 视频生成/文生视频/MinimaxH3双采样V3文不油武不糊 全面升级视频生成工作流_2098694116875001857.json, 视频生成/文生视频/文戏提示词练习工作流 文生视频图生视频参数调试_2099202759265443842.json, 视频生成/文生视频/文戏提示词练习工作流 文生视频图生视频参数调试_2099584922162913282.json, 视频生成/文生视频/文戏提示词练习工作流｜文生视频图生视频两用，台词戏感慢慢磨_2099459096524181506.json]
+members: [视频生成/图生视频/1080P短剧创作更新双采｜MiniMax质量更佳图生视频_2091305280138211329.json, 视频生成/图生视频/1080P短剧创作更新双采｜MiniMax质量更佳图生视频_2091883064552148994.json, 视频生成/图生视频/MiniMax 短剧创作导演台_1080P 双采图生视频_2089609241664507906.json, 视频生成/图生视频/MiniMax短剧创作导演台1080P双采｜图生视频高清生成_2090458408708296706.json, 视频生成/图生视频/导演台短剧创作｜MiniMax 1080P双采图生视频_2090186981660782594.json, 视频生成/图生视频/短剧创作Ⅱ双采更新｜MiniMax 1080P质量更佳图生视频_2090213941472481281.json, 视频生成/图生视频/短剧创作Ⅱ导演台｜MiniMax 1080P双采图生视频质量升级_2089037699893260289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_313
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/H3 VDN加SelfLift采样直出1080P 图生视频工具_2099586843141562370.json、视频生成/图生视频/MINIMAXH3双采样V3全面升级｜文戏不油武戏不糊双模式_2110702226032386049.json、视频生成/图生视频/数字人15秒直出1080P图生视频处理生成工具_2101408406874714114.json、视频生成/文生视频/MinimaxH3双采样V3文不油武不糊 全面升级视频生成工作流_2098694116875001857.json、视频生成/文生视频/文戏提示词练习工作流 文生视频图生视频参数调试_2099202759265443842.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/1080P短剧创作更新双采｜MiniMax质量更佳图生视频_2091305280138211329.json、视频生成/图生视频/1080P短剧创作更新双采｜MiniMax质量更佳图生视频_2091883064552148994.json、视频生成/图生视频/MiniMax 短剧创作导演台_1080P 双采图生视频_2089609241664507906.json、视频生成/图生视频/MiniMax短剧创作导演台1080P双采｜图生视频高清生成_2090458408708296706.json、视频生成/图生视频/导演台短剧创作｜MiniMax 1080P双采图生视频_2090186981660782594.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BasicScheduler`
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `CreateVideo`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `H3SigmaRefiner`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyMediaLoader`
-- `MiniMaxH3EasyModelAdapter`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxLowVRAMAttention`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `ModelPreviewOverrideKJ`
-- `Seed (rgthree)`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RHLLMChatNode`
+- `RHSettingsNode`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SimpleMathDual+`
 - `UNETLoader`
+- `UniBlockSwap`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `easy blocker`
+- `easy ifElse`
+- `easy minimaxH3ToVideo`
+- `easy multiTrackEditor`
+- `easy multiTrackInfoOutput`
+- `easy multiTrackTaskOutput`
+- `easy seed`
+- `easy splitImages`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 6/7 个有
-- `GetLatentSizeAndCount` —— 6/7 个有
-- `ModelAttentionBackend` —— 6/7 个有
-- `RandomNoise` —— 6/7 个有
-- `SamplerCustomAdvanced` —— 6/7 个有
-- `SelfLiftH3Sampler` —— 6/7 个有
-- `VHS_VideoCombine` —— 6/7 个有
-- `LoadAudio` —— 5/7 个有
-- `SaveImage` —— 5/7 个有
-- `VHS_LoadVideo` —— 4/7 个有
-- `CreateVideo` —— 2/7 个有
-- `PlaySound|pysssss` —— 2/7 个有
-- `SaveVideo` —— 2/7 个有
-- `easy imageChooser` —— 2/7 个有
-- `kkVideoFirstLastFrames` —— 2/7 个有
-- `LTXVAudioVAEEncode` —— 1/7 个有
-- `LTXVConcatAVLatent` —— 1/7 个有
-- `LTXVSeparateAVLatent` —— 1/7 个有
-- `LoadImage` —— 1/7 个有
-- `MiniMaxH3EasyMediaSplitter` —— 1/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/7 个有
-- `MiniMaxH3SigmaShift` —— 1/7 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `SelfLiftAvatarH3Sampler` —— 1/7 个有
-- `SetLatentNoiseMask` —— 1/7 个有
-- `SolidMask` —— 1/7 个有
-- `easy promptConcat` —— 1/7 个有
+- `孤海注释` —— 6/7 个有
+- `PT_H3ConcatAVLatent` —— 5/7 个有
+- `VAEEncode` —— 5/7 个有
+- `VAEEncodeAudio` —— 5/7 个有
+- `BasicScheduler` —— 4/7 个有
+- `ComfyMathExpression` —— 4/7 个有
+- `ExtendIntermediateSigmas` —— 4/7 个有
+- `PrimitiveInt` —— 4/7 个有
+- `ManualSigmas` —— 3/7 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 2/7 个有
 
 ## 典型参数
 
@@ -95,7 +88,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -106,4 +99,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 高发问题（8/7 个样本）：Steps较低可能导致细节不足

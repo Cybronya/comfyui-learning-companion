@@ -2,63 +2,109 @@
 name: unknown_workflow_video_upscale_latent_upscale_121
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 1
-common_nodes: [BasicGuider, BasicScheduler, ComfyMathExpression, ConditioningZeroOut, FloatConstant, INTConstant, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MMH3TemporalSplitParams, MMH3UltimateUpscale, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SolAttnMiniMax, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
+level: strong
+coverage: 0.389667
+common_nodes: [Any Switch (rgthree), AudioInfoNode, AudioMerge, CFGGuider, CLIPTextEncode, CR Text Concatenate, CheckpointLoaderSimple, ComfyMathExpression, ComfySwitchNode, ConvertAny2Int, Dapao_LlamaChat, Display Any (rgthree), DualCLIPLoader, EmptyLTXVLatentVideo, ExtractLinesByIndex, Fast Groups Bypasser (rgthree), Float, GetImageSize, GetNode, ImageResizeKJv2, ImageScaleBy, Int, IntToString, IntegerComparison, JjkText, JoinStringMulti, JoinStrings, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAny, PreviewAudio, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ProcessString, PromptRelayAdvancedOptions, PromptRelayEncode, PurgeVRAM_UTK, RandomNoise, SamplerCustomAdvanced, SaveAudioMP3, SeedVCRun, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SomethingToString, VAEDecode, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy mathFloat, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/低显存优化流（时间分块）（孤海3）_2108777093361389570.json, 视频生成/文生视频/低显存优化流（时间分块）（孤海3）_2108777093361389570.json, 视频生成/文生视频/低显存优化流（时间分块）（孤海）_2108578844885209090.json]
+members: [视频生成/图生视频/LTX2.3 多帧参考-参考音色-AddGuide-V2_2061644573146968066.json, 视频生成/图生视频/LTX2.3 多帧参考-参考音色_2066854552296579074.json, 视频生成/图生视频/aidir-LTX2.3 四图参考-参考音色_2069621183007510529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_121
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/低显存优化流（时间分块）（孤海3）_2108777093361389570.json、视频生成/文生视频/低显存优化流（时间分块）（孤海3）_2108777093361389570.json、视频生成/文生视频/低显存优化流（时间分块）（孤海）_2108578844885209090.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 多帧参考-参考音色-AddGuide-V2_2061644573146968066.json、视频生成/图生视频/LTX2.3 多帧参考-参考音色_2066854552296579074.json、视频生成/图生视频/aidir-LTX2.3 四图参考-参考音色_2069621183007510529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **可信度**：强结论
+- **平均知识覆盖**：39%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `Any Switch (rgthree)`
+- `AudioInfoNode`
+- `AudioMerge`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CR Text Concatenate`
+- `CheckpointLoaderSimple`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `FloatConstant`
-- `INTConstant`
+- `ComfySwitchNode`
+- `ConvertAny2Int`
+- `Dapao_LlamaChat`
+- `Display Any (rgthree)`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `ExtractLinesByIndex`
+- `Fast Groups Bypasser (rgthree)`
+- `Float`
+- `GetImageSize`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `Int`
+- `IntToString`
+- `IntegerComparison`
+- `JjkText`
+- `JoinStringMulti`
+- `JoinStrings`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXAVTextEncoderLoader`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVLatentUpsampler`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `LoraLoaderBypassModelOnly`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MMH3TemporalSplitParams`
-- `MMH3UltimateUpscale`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PreviewAudio`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `ProcessString`
+- `PromptRelayAdvancedOptions`
+- `PromptRelayEncode`
+- `PurgeVRAM_UTK`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `Seed (rgthree)`
-- `SolAttnMiniMax`
-- `SplitSigmas`
-- `UNETLoader`
+- `SaveAudioMP3`
+- `SeedVCRun`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleMath+`
+- `SolidMask`
+- `SomethingToString`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `H3KitSemanticBridge` —— 2/3 个有
+- `easy mathFloat`
+- `easy showAnything`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 121 | 121 - 121 | 3 | 100% |
+| 高度 | 24 | 24 - 24 | 3 | 100% |
 
 ## 常见问题
 
@@ -66,4 +112,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）

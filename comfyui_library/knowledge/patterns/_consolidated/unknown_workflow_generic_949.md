@@ -1,41 +1,38 @@
 ---
 name: unknown_workflow_generic_949
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [Preview3D, SaveImage, Trellis2ExportMesh, Trellis2LoadModel, Trellis2MeshWithVoxelGenerator, Trellis2PostProcessAndUnWrapAndRasterizer, Trellis2SimplifyMesh]
+coverage: 0.54775
+common_nodes: [CR Prompt Text, Comfly_api_set, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/ComfyUI-3D-Trellis2自动建模_2004456831420428290.json, 图片生成/图生图/Trellis2 3D_2005307477589716994.json, 数字人/数字人/3d建模2_2030208153794650114.json]
+members: [图片生成/文生图/全能图片Pro-seedance2.0-文生多宫格分镜260211(贞贞AI工坊)_2021605103144275970.json, 图片生成/文生图/全能图片V2 Pro_2014748703835295746.json, 视频生成/图生视频/即梦3.0 图生视频高质量API版 V2(特价)_1942603763838291969.json, 视频生成/文生视频/即梦3.0 文生视频高质量API版V2（特价）_1942608140833894402.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_949
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/ComfyUI-3D-Trellis2自动建模_2004456831420428290.json、图片生成/图生图/Trellis2 3D_2005307477589716994.json、数字人/数字人/3d建模2_2030208153794650114.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图片Pro-seedance2.0-文生多宫格分镜260211(贞贞AI工坊)_2021605103144275970.json、图片生成/文生图/全能图片V2 Pro_2014748703835295746.json、视频生成/图生视频/即梦3.0 图生视频高质量API版 V2(特价)_1942603763838291969.json、视频生成/文生视频/即梦3.0 文生视频高质量API版V2（特价）_1942608140833894402.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Preview3D`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
 - `SaveImage`
-- `Trellis2ExportMesh`
-- `Trellis2LoadModel`
-- `Trellis2MeshWithVoxelGenerator`
-- `Trellis2PostProcessAndUnWrapAndRasterizer`
-- `Trellis2SimplifyMesh`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `easy imageRemBg` —— 2/3 个有
-- `Trellis2LoadImageWithTransparency` —— 1/3 个有
+- `LoadImage` —— 3/4 个有
+- `ComflyJimengVideoApi` —— 2/4 个有
+- `Comfly_nano_banana2_edit_S2A` —— 2/4 个有
+- `SaveVideo` —— 2/4 个有
 
 ## 典型参数
 

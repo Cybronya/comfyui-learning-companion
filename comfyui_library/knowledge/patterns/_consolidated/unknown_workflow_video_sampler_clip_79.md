@@ -2,75 +2,89 @@
 name: unknown_workflow_video_sampler_clip_79
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.967125
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.58975
+common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, wanBlockSwap]
+problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.2 泼水换装 画风真实 运行流畅 可更换lora_1953283354574712834.json, 视频生成/图生视频/Wan2.2 整合模型超快图生视频_1950706525243396097.json, 视频生成/图生视频/Wan_FusionX_i2v_Native-Y-Workflow_1934825065211207682.json, 视频生成/图生视频/comfyUI 官方wan2.1 lora特效工作流_1899683017957265409.json, 视频生成/图生视频/wan2.1_GGUF官方工作流_I2V_480P_1930296715969204225.json, 视频生成/图生视频/wan2.1_lora_官方工作流_gguf版_480P_1930311373908250626.json, 视频生成/图生视频/wan2.1挤压效果_1898936758191771650.json, 视频生成/图生视频/喝西北风_1911197940504035330.json]
+members: [图片生成/图生图/NBA探班一镜到底_2016088168881201153.json, 图片生成/图生图/Qwen3VL-wan2.2首尾帧I2V_2002510541207814145.json, 图片生成/图生图/Qwen3VL反推wan2.2I2V_2002507539789037570.json, 图片生成/图生图/WAN2.2-RemixV2-I2V首尾帧_2002505189661786113.json, 图片生成/图生图/Wan2.2（I2V）声音_2002498113782837249.json, 视频生成/图生视频/Wan2.2+Qwen3VL+Foley多模态全自动图生视频_2076490092809637889.json, 视频生成/图生视频/演唱会 + 名人探班视频一镜到底工作流_2009656283015684097.json, 视频生成/图生视频/（再来王炸）片场探班一镜到底_2003358593732771842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_79
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/WAN2.2 泼水换装 画风真实 运行流畅 可更换lora_1953283354574712834.json、视频生成/图生视频/Wan2.2 整合模型超快图生视频_1950706525243396097.json、视频生成/图生视频/Wan_FusionX_i2v_Native-Y-Workflow_1934825065211207682.json、视频生成/图生视频/comfyUI 官方wan2.1 lora特效工作流_1899683017957265409.json、视频生成/图生视频/wan2.1_GGUF官方工作流_I2V_480P_1930296715969204225.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/NBA探班一镜到底_2016088168881201153.json、图片生成/图生图/Qwen3VL-wan2.2首尾帧I2V_2002510541207814145.json、图片生成/图生图/Qwen3VL反推wan2.2I2V_2002507539789037570.json、图片生成/图生图/WAN2.2-RemixV2-I2V首尾帧_2002505189661786113.json、图片生成/图生图/Wan2.2（I2V）声音_2002498113782837249.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **可信度**：强结论
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
-- `LoadImage`
+- `INTConstant`
+- `Int`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingSD3` —— 7/8 个有
-- `CLIPVisionEncode` —— 6/8 个有
-- `CLIPVisionLoader` —— 6/8 个有
-- `UNETLoader` —— 5/8 个有
-- `UnetLoaderGGUF` —— 4/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `EmptyHunyuanLatentVideo` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `LoraLoader` —— 2/8 个有
-- `SaveAnimatedWEBP` —— 2/8 个有
-- `WanVideoTeaCacheKJ` —— 2/8 个有
-- `ApplySageAttention` —— 1/8 个有
-- `TeaCache` —— 1/8 个有
+- `MultiplePathsInput` —— 7/8 个有
+- `Qwen3_VQA` —— 7/8 个有
+- `easy showAnything` —— 7/8 个有
+- `ImageLoader` —— 6/8 个有
+- `ImageResizeKJv2` —— 6/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
+- `LoraLoaderModelOnly` —— 5/8 个有
+- `ModelPatchTorchSettings` —— 5/8 个有
+- `RIFE VFI` —— 5/8 个有
+- `WanFirstLastFrameToVideo` —— 5/8 个有
+- `LoadImage` —— 4/8 个有
+- `Any To Any` —— 3/8 个有
+- `CR Text Replace` —— 3/8 个有
+- `LayerUtility: PurgeVRAM` —— 3/8 个有
+- `Pick From Batch (mtb)` —— 3/8 个有
+- `SaveImage` —— 3/8 个有
+- `Text Multiline` —— 3/8 个有
+- `VHS_SelectFilename` —— 3/8 个有
+- `WanImageToVideo` —— 3/8 个有
+- `easy cleanGpuUsed` —— 3/8 个有
+- `HunyuanVideoFoley` —— 2/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/8 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/8 个有
+- `easy float` —— 2/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `LoadVideo` —— 1/8 个有
+- `RH_LLMAPI_Pro_Node` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 15 | 4 - 30 | 8 | 42% |
-| Prompt 约束强度(CFG) | 5.985 | 1 - 6 | 8 | 41% |
-| 采样算法 | uni_pc | - | 8 | 75% |
-| 调度器 | simple | - | 8 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| LoRA 模型强度 | 0.65 | - | 2 | 46% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | fixed | - | 8 | 88% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 8 | 100% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler | - | 8 | 100% |
+| 重绘幅度 | normal | - | 8 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 15，观测区间 4 - 30，8 个样本，取值分散，一致性仅 42%
-- Prompt 约束强度(CFG) 中位数 5.985，观测区间 1 - 6，8 个样本，取值分散，一致性仅 41%
-- 采样算法 最常用 uni_pc，8 个样本，一致性 75%
-- 调度器 最常用 simple，8 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.65，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，8 个样本，一致性 88%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，8 个样本，一致性 100%
+- 重绘幅度 最常用 normal，8 个样本，一致性 100%

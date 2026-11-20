@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_1293
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8035
-common_nodes: [JoinStrings, LoadImage, Qwen3_VQA, TextInput_, easy saveText, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.877667
+common_nodes: [LoadImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/LTX2 视频生成提示词扩写_2009426809082875905.json, 图片生成/反推提示词/LTX2.3视频提示词生成_2042429714601615362.json]
+members: [平台全量/QY2-万物迁移（准高级版）模特换装换产品、产品迁移、虚拟试衣电商_1936674087693373442.json, 平台全量/【茗翠Ai】F.1 kontext服装提取_1960955044860506113.json, 平台全量/一键转手办 3视图_2019663323519787010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1293
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/LTX2 视频生成提示词扩写_2009426809082875905.json、图片生成/反推提示词/LTX2.3视频提示词生成_2042429714601615362.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/QY2-万物迁移（准高级版）模特换装换产品、产品迁移、虚拟试衣电商_1936674087693373442.json、平台全量/【茗翠Ai】F.1 kontext服装提取_1960955044860506113.json、平台全量/一键转手办 3视图_2019663323519787010.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `JoinStrings`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `Qwen3_VQA`
-- `TextInput_`
-- `easy saveText`
-- `easy showAnything`
+- `RHHiddenNodes`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 1/2 个有
+- `RH_Translator` —— 2/3 个有
+- `PlaySound|pysssss` —— 1/3 个有
+- `workflow>人像转卡通` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

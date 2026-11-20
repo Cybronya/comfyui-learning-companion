@@ -1,60 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_212
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.837
-common_nodes: [CLIPLoader, EmptyLatentImage, KSamplerSelect, ManualSigmas, ResolutionSelector, SamplerCustom, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: moderate
+coverage: 0.749857
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, H3SigmaRefiner, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/qwen_image_2.1 _ 图像编辑 加速版_2103402673738436610.json, 图片生成/图生图/【qwen_image_2.1】图生图 多宫格_2109499886868713474.json, 图片生成/图生图/【qwen_image_2.1】图生图 角色三视图_2109460733288341506.json, 图片生成/文生图/Qwen_Image_2.1_Turbo_官方8步_文生图_2109357397138567170.json, 图片生成/文生图/qen image 2.1turbo 图片编辑_2062017330061860865.json]
+members: [视频生成/图生视频/H3-二采不崩高清_2092900896651964417.json, 视频生成/图生视频/Minimax H3 Ref 顶级多参，不偏色，不油光_2101574282240421890.json, 视频生成/图生视频/Minimax H3 人类机甲重组变身 工作流_2106558180313624577.json, 视频生成/图生视频/Minimax H3 人类机甲重组变身 工作流_2115720488566743041.json, 视频生成/图生视频/Minimax H3 地铁变装_2096857300303699969.json, 视频生成/图生视频/Minimax H3 多参打斗V2_2096763661741281282.json, 视频生成/图生视频/Minimax_H3_Ref_顶级多参，不偏色，不油光_2114879175034236930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_212
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/qwen_image_2.1 _ 图像编辑 加速版_2103402673738436610.json、图片生成/图生图/【qwen_image_2.1】图生图 多宫格_2109499886868713474.json、图片生成/图生图/【qwen_image_2.1】图生图 角色三视图_2109460733288341506.json、图片生成/文生图/Qwen_Image_2.1_Turbo_官方8步_文生图_2109357397138567170.json、图片生成/文生图/qen image 2.1turbo 图片编辑_2062017330061860865.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/H3-二采不崩高清_2092900896651964417.json、视频生成/图生视频/Minimax H3 Ref 顶级多参，不偏色，不油光_2101574282240421890.json、视频生成/图生视频/Minimax H3 人类机甲重组变身 工作流_2106558180313624577.json、视频生成/图生视频/Minimax H3 人类机甲重组变身 工作流_2115720488566743041.json、视频生成/图生视频/Minimax H3 地铁变装_2096857300303699969.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `H3SigmaRefiner`
 - `KSamplerSelect`
-- `ManualSigmas`
+- `LoadImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SamplerCustom`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `LoadImage` —— 3/5 个有
-- `PrimitiveStringMultiline` —— 3/5 个有
-- `JjkText` —— 2/5 个有
-- `ModelAttentionBackend` —— 2/5 个有
-- `QwenImage21Cache` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `BatchImagesNode` —— 1/5 个有
-- `ComfySwitchNode` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `StringConcatenate` —— 1/5 个有
-- `TextGenerateLTX2Prompt` —— 1/5 个有
+- `ImageResizeKJv2` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `VAEDecode` —— 6/7 个有
+- `BasicGuider` —— 4/7 个有
+- `CLIPTextEncode` —— 4/7 个有
+- `QwenH3PromptLocal` —— 4/7 个有
+- `YC_ShowText` —— 4/7 个有
+- `CFGGuider` —— 3/7 个有
+- `ConcatTextOfUtils` —— 2/7 个有
+- `H3DistanceAttentionPatcher` —— 2/7 个有
+- `H3DynamicCFGScheduler` —— 2/7 个有
+- `ConditioningZeroOut` —— 1/7 个有
+- `LayerColor: Brightness & Contrast` —— 1/7 个有
+- `ModelPreviewOverrideKJ` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `SplitSigmas` —— 1/7 个有
+- `VAEDecodeTiled` —— 1/7 个有
+- `Yuan_H3Upscale3D` —— 1/7 个有
+- `忽略多组孤海` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -62,5 +74,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

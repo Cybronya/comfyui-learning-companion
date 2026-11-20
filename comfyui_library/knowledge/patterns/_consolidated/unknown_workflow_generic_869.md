@@ -3,48 +3,38 @@ name: unknown_workflow_generic_869
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.9515
-common_nodes: [LoadAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 0.574
+common_nodes: [JjkText, LayerUtility: TextJoin, LoadImage, SaveImage, easy promptList]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094620800392450049.json, 音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094639246123560961.json, 音频生成/音频生成/index tts 2.5 单人及多人对话_2096390568581619713.json, 音频生成/音频生成/🦊TTS2.5多人对话--焚诀版_2094341494462304257.json]
+members: [图片生成/图生图/image_gemini.json_2082301956990791681.json, 图片生成/图生图/image_gemini.json_2098290683168780289.json, 图片生成/文生图/Share Widget_2086637164250619906.json, 图片生成/文生图/check-in share image_2095684493167390722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_869
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094620800392450049.json、音频生成/音频生成/Index TTS2.5 六合一多功能语音克隆_2094639246123560961.json、音频生成/音频生成/index tts 2.5 单人及多人对话_2096390568581619713.json、音频生成/音频生成/🦊TTS2.5多人对话--焚诀版_2094341494462304257.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/image_gemini.json_2082301956990791681.json、图片生成/图生图/image_gemini.json_2098290683168780289.json、图片生成/文生图/Share Widget_2086637164250619906.json、图片生成/文生图/check-in share image_2095684493167390722.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_EmotionControl`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+- `JjkText`
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `SaveImage`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `Float` —— 3/4 个有
-- `NormalizeAudioLoudness` —— 3/4 个有
-- `SaveAudio` —— 3/4 个有
-- `SaveAudioMP3` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `T8_IndexTTS25_Pronunciation` —— 2/4 个有
-- `LoadImage` —— 1/4 个有
-- `SaveAudioNode` —— 1/4 个有
-- `T8_IndexTTS25_SamplingConfig` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
+- `ShowAnything|Mie` —— 2/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `ImageScale` —— 1/4 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/4 个有
 
 ## 典型参数
 

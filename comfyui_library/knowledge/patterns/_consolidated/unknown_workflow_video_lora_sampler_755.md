@@ -1,70 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_755
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.477667
-common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, SetNode, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+frequency: 4
+level: strong
+coverage: 0.7645
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text, ComfySwitchNode, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveAudio, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, TrimAudioDuration, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/宠物吃播_SVI_2_Pro长视频_2018178886772727809.json, 视频生成/图生视频/无限时长-svi 2 pro 长视频生成-图生视频_2006635084027269121.json, 视频生成/文生视频/SVI-pro2.0动画多分镜长视频_2008147706383966209.json]
+members: [视频生成/图生视频/【阿良绘】LTX2.3数字人 _ 更新版本（高质版）_2044304245054246914.json, 视频生成/图生视频/二次元数字人(LTX2.3新模型)_2044961246537060354.json, 视频生成/图生视频/数字人对口型LTX2.3稳定版数字_2044051743004172289.json, 视频生成/图生视频/（新版模型）LTX2.3稳定版数字人工作流_2044317825631784961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_755
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/宠物吃播_SVI_2_Pro长视频_2018178886772727809.json、视频生成/图生视频/无限时长-svi 2 pro 长视频生成-图生视频_2006635084027269121.json、视频生成/文生视频/SVI-pro2.0动画多分镜长视频_2008147706383966209.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【阿良绘】LTX2.3数字人 _ 更新版本（高质版）_2044304245054246914.json、视频生成/图生视频/二次元数字人(LTX2.3新模型)_2044961246537060354.json、视频生成/图生视频/数字人对口型LTX2.3稳定版数字_2044051743004172289.json、视频生成/图生视频/（新版模型）LTX2.3稳定版数字人工作流_2044317825631784961.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
+- `CR Text`
+- `ComfySwitchNode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LTXVSpatioTemporalTiledVAEDecode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveAudio`
+- `SetLatentNoiseMask`
 - `SetNode`
-- `VAEDecode`
-- `VAEEncode`
+- `SimpleCalculatorKJ`
+- `SolidMask`
+- `TrimAudioDuration`
+- `UNETLoader`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPatchTorchSettings` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `AddLabel` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `DiffusionModelLoaderKJ` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `PainterI2V` —— 1/3 个有
-- `PlaySound|pysssss` —— 1/3 个有
-- `TTResolutionSelector` —— 1/3 个有
-- `easy float` —— 1/3 个有
-- `easy indexAnything` —— 1/3 个有
-- `easy promptList` —— 1/3 个有
+- `GetImageSize` —— 3/4 个有
+- `INTConstant` —— 3/4 个有
+- `LTXVEmptyLatentAudio` —— 3/4 个有
+- `Int` —— 2/4 个有
+- `AudioInfoNode` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 2.5 | 3 | 53% |
-| 调度器 | euler | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+| 宽度 | 121 | 121 - 121 | 3 | 100% |
+| 高度 | 24 | 24 - 24 | 3 | 100% |
 
 ## 常见问题
 
@@ -72,8 +83,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 2.5，3 个样本
-- 调度器 最常用 euler，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）

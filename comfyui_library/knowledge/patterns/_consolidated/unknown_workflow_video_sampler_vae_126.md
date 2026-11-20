@@ -1,60 +1,77 @@
 ---
 name: unknown_workflow_video_sampler_vae_126
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.921
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.7132
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/极速版-数字人_个人IP_2110421173111705601.json, 数字人/数字人/极速版-数字人_个人IP_2114179464493101058.json, 视频生成/图生视频/InfiniteTalk-单人视频转数字人_1991134809961398273.json, 音频生成/音频生成/InfiniteTalk-多人数字人_1991115212053131266.json]
+members: [视频生成/图生视频/Wan VACE视频编辑参考深度出视频-KJ版_1908545903828082690.json, 视频生成/图生视频/Wan VACE视频编辑根据遮罩编辑视频-KJ版_1908558258645118978.json, 视频生成/图生视频/Wan+VACE视频编辑工作流（5合一完整版）_1922686919644430338.json, 视频生成/图生视频/控制人物动作、跳舞视频、wan2.1 vace_1926291391310184449.json, 视频生成/图生视频/龙明VACE视频编辑工作流（5合一完整版）_1928687484622815233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_126
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/极速版-数字人_个人IP_2110421173111705601.json、数字人/数字人/极速版-数字人_个人IP_2114179464493101058.json、视频生成/图生视频/InfiniteTalk-单人视频转数字人_1991134809961398273.json、音频生成/音频生成/InfiniteTalk-多人数字人_1991115212053131266.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan VACE视频编辑参考深度出视频-KJ版_1908545903828082690.json、视频生成/图生视频/Wan VACE视频编辑根据遮罩编辑视频-KJ版_1908558258645118978.json、视频生成/图生视频/Wan+VACE视频编辑工作流（5合一完整版）_1922686919644430338.json、视频生成/图生视频/控制人物动作、跳舞视频、wan2.1 vace_1926291391310184449.json、视频生成/图生视频/龙明VACE视频编辑工作流（5合一完整版）_1928687484622815233.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+全部 5 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
 - `GetImageSizeAndCount`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `WanVideoEncode` —— 3/4 个有
-- `AudioDuration_wan` —— 2/4 个有
-- `AudioSeparation` —— 2/4 个有
-- `H3ModeSwitch` —— 2/4 个有
-- `ImageResizeKJv2` —— 2/4 个有
-- `IndexTTS2Run` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `PrimitiveString` —— 2/4 个有
-- `WanVideoLoraSelect` —— 2/4 个有
-- `WanVideoLoraSelectMulti` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `LoadImage` —— 1/4 个有
+- `DepthAnything_V2` —— 4/5 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 4/5 个有
+- `easy imageSize` —— 4/5 个有
+- `GrowMaskWithBlur` —— 3/5 个有
+- `InvertMask` —— 3/5 个有
+- `LayerUtility: ColorPicker` —— 3/5 个有
+- `MaskPreview+` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `WanVideoVACEModelSelect` —— 3/5 个有
+- `DownloadAndLoadSAM2Model` —— 2/5 个有
+- `GetImageRangeFromBatch` —— 2/5 个有
+- `ImageConcanate` —— 2/5 个有
+- `ImagePadKJ` —— 2/5 个有
+- `InspyrenetRembg` —— 2/5 个有
+- `Pick From Batch (mtb)` —— 2/5 个有
+- `PointsEditor` —— 2/5 个有
+- `Sam2Segmentation` —— 2/5 个有
+- `WanVideoVACEStartToEndFrame` —— 2/5 个有
+- `easy imageScaleDownToSize` —— 2/5 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 1/5 个有
+- `Note _O` —— 1/5 个有
 
 ## 典型参数
 

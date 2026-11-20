@@ -1,55 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_886
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.692
-common_nodes: [Anything Everywhere, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, EmptyHunyuanLatentVideo, ImageCASharpening+, ImageScale, Joy_caption_two, Joy_caption_two_load, KSamplerSelect, LoadImage, LoraLoaderModelOnly, OpenposePreprocessor, RandomNoise, SamplerCustomAdvanced, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanFunControlToVideo, easy cleanGpuUsed, workflow>1]
+frequency: 3
+level: moderate
+coverage: 0.527667
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetNode, GrowMaskWithBlur, ImageFromBatch, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, PreviewAny, PrimitiveFloat, PrimitiveInt, RIFE VFI, SaveAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy sam3ModelLoader, easy sam3VideoSegmentation]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.1小姐姐跳舞V1（新手教学版）_1917821945616994306.json, 视频生成/图生视频/wan2.1-FUN-小姐姐跳舞V1（详细讲解使用）_1912620115643564034.json]
+members: [视频生成/图生视频/Wan Animate V2 视频主体编辑_2013817436742619137.json, 视频生成/图生视频/WanAnimate V2去除视频水印-字幕-视频元素_2013818136428027906.json, 视频生成/文生视频/多功能视频编辑WanAnimate V2_2035282698587086850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_886
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.1小姐姐跳舞V1（新手教学版）_1917821945616994306.json、视频生成/图生视频/wan2.1-FUN-小姐姐跳舞V1（详细讲解使用）_1912620115643564034.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan Animate V2 视频主体编辑_2013817436742619137.json、视频生成/图生视频/WanAnimate V2去除视频水印-字幕-视频元素_2013818136428027906.json、视频生成/文生视频/多功能视频编辑WanAnimate V2_2035282698587086850.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 3 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `EmptyHunyuanLatentVideo`
-- `ImageCASharpening+`
-- `ImageScale`
-- `Joy_caption_two`
-- `Joy_caption_two_load`
-- `KSamplerSelect`
+- `DrawMaskOnImage`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `OpenposePreprocessor`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `ShowText|pysssss`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `RIFE VFI`
+- `SaveAudio`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanFunControlToVideo`
-- `easy cleanGpuUsed`
-- `workflow>1`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
+
+**可变部分**（部分 workflow 才有）：
+- `DWPreprocessor` —— 2/3 个有
+- `DrawViTPose` —— 2/3 个有
+- `LayerMask: MaskInvert` —— 2/3 个有
+- `MuyeTextEditOutput` —— 2/3 个有
+- `OnnxDetectionModelLoader` —— 2/3 个有
+- `PoseAndFaceDetection` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `easy ifElse` —— 2/3 个有
+- `Any Switch (rgthree)` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -61,4 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

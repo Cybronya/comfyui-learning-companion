@@ -2030,7 +2030,7 @@
 			],
 			"color":"#222",
 			"widgets_values":[
-				"ltx2.3-ic-watermark-remove-general-lora.safetensors",
+				"ltx2.3-ic-watermREDACTED000000000000000.safetensors",
 				0
 			],
 			"inputs":[
@@ -6870,8 +6870,8 @@
 				"Ltx2.3-Licon-VBVR-I2V-390K-R32.safetensors:BYPASS@0",
 				"ltx-2.3-22b-ic-lora-motion-track-control-ref0.5.safetensors:BYPASS@0",
 				"ltx2.3-ic-subtitles-remove-general-lora.safetensors:ON@1",
-				"ltx2.3-ic-watermark-remove-general-lora.safetensors:ON@1",
-				"ltx2.3-ic-watermark-remove-general-lora.safetensors:BYPASS@0",
+				"ltx2.3-ic-watermREDACTED000000000000000.safetensors:ON@1",
+				"ltx2.3-ic-watermREDACTED000000000000000.safetensors:BYPASS@0",
 				"ltx2.3-ic-subtitles-remove-general-lora.safetensors:BYPASS@0",
 				"LTX2.3_Crisp_Enhance.safetensors:BYPASS@0",
 				"Ltx2.3-Licon-VBVR-I2V-390K-R32.safetensors:ON@0.55",

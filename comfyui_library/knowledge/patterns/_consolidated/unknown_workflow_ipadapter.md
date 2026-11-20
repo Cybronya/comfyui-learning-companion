@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_ipadapter
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.596
-common_nodes: [CR Text Concatenate, Convert Masks to Images, DetailerForEachPipe, Efficient Loader, EmptyImage, Fast Groups Bypasser (rgthree), GrowMask, IPAdapterFaceID, IPAdapterUnifiedLoaderFaceID, ImpactDilateMask, JWImageResizeByLongerSide, JjkText, LayerMask: MaskEdgeUltraDetail V2, LayerMask: PersonMaskUltra V2, LayerMask: SegmentAnythingUltra V2, LayerStyle: DropShadow, LayerUtility: ImageBlendAdvance, LayerUtility: SimpleTextImage, LoadImage, MaskToImage, MaskToSEGS, Masks Subtract, PatchModelAddDownscale, PerturbedAttentionGuidance, PreviewImage, SaveImage, SmoothMask, String Literal, ToBasicPipe, ToBinaryMask, easy showAnything, easy stylesSelector]
+coverage: 0.591
+common_nodes: [CR Text Concatenate, Convert Masks to Images, DetailerForEachPipe, Efficient Loader, EmptyImage, Fast Groups Bypasser (rgthree), GrowMask, IPAdapterFaceID, IPAdapterUnifiedLoaderFaceID, ImpactDilateMask, JWImageResizeByLongerSide, LayerMask: MaskEdgeUltraDetail V2, LayerMask: PersonMaskUltra V2, LayerMask: SegmentAnythingUltra V2, LayerStyle: DropShadow, LayerUtility: ImageBlendAdvance, LayerUtility: SimpleTextImage, LoadImage, MaskToImage, MaskToSEGS, Masks Subtract, PatchModelAddDownscale, PerturbedAttentionGuidance, PreviewImage, SaveImage, SmoothMask, String Literal, ToBasicPipe, ToBinaryMask, easy showAnything, easy stylesSelector]
 problems: []
 missing: []
-members: [图片生成/图生图/【换发型】美发换发型工作流_1921797160776695809.json, 图片生成/图生图/【明星造型】自然发型设计_1921741946652655617.json, 图片生成/图生图/超自然发型设计_Super Natural Hair Design_1921735094384410625.json]
+members: [图片生成/图生图/【换发型】美发换发型工作流_1921797160776695809.json, 图片生成/图生图/【明星造型】自然发型设计_1921741946652655617.json, 图片生成/图生图/超自然发型设计_Super Natural Hair Design_1921735094384410625.json, 平台全量/超级发型师 Super Natural Hair Design_1840414317165367297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_ipadapter
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【换发型】美发换发型工作流_1921797160776695809.json、图片生成/图生图/【明星造型】自然发型设计_1921741946652655617.json、图片生成/图生图/超自然发型设计_Super Natural Hair Design_1921735094384410625.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【换发型】美发换发型工作流_1921797160776695809.json、图片生成/图生图/【明星造型】自然发型设计_1921741946652655617.json、图片生成/图生图/超自然发型设计_Super Natural Hair Design_1921735094384410625.json、平台全量/超级发型师 Super Natural Hair Design_1840414317165367297.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CR Text Concatenate`
 - `Convert Masks to Images`
 - `DetailerForEachPipe`
@@ -34,7 +34,6 @@ source: knowledge_consolidation
 - `IPAdapterUnifiedLoaderFaceID`
 - `ImpactDilateMask`
 - `JWImageResizeByLongerSide`
-- `JjkText`
 - `LayerMask: MaskEdgeUltraDetail V2`
 - `LayerMask: PersonMaskUltra V2`
 - `LayerMask: SegmentAnythingUltra V2`
@@ -55,6 +54,14 @@ source: knowledge_consolidation
 - `ToBinaryMask`
 - `easy showAnything`
 - `easy stylesSelector`
+
+**可变部分**（部分 workflow 才有）：
+- `JjkText` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `RH_Prompter` —— 1/4 个有
+- `SeargePromptText` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `StringFunction|pysssss` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,65 +1,64 @@
 ---
 name: unknown_workflow_sampler_vae_70
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6695
-common_nodes: [DualCLIPLoader, DyPE_Condition, DyPE_Encode, DyPE_KSampler, DyPE_Model, ImpactSwitch, JWInteger, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, PreviewImage, RH_Translator, SaveImage, ShowText|pysssss, VAEDecode, VAELoader]
+frequency: 3
+level: moderate
+coverage: 0.951667
+common_nodes: [BasicGuider, BasicScheduler, DisableNoise, FlipSigmas, FluxForwardODESampler, FluxReverseODESampler, Image Comparer (rgthree), InFluxModelSamplingPred, LoadImage, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/【 DyPE 】 FLUX - Krea  2 - 4 K 高清直出，文生图 + 图片反推_1984807816806481922.json, 图片生成/文生图/【 DyPE 】 FLUX - SRPO  2 - 4 K 高清直出 文生图 + 图片反推_1987345787942277122.json]
+members: [平台全量/flux万物精修_1911956945350160385.json, 平台全量/最快nunchaku-flux万物精修，重塑_1938586397664333825.json, 平台全量/熨烫工作流（逆采样技术）_1995695007761829890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_70
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/【 DyPE 】 FLUX - Krea  2 - 4 K 高清直出，文生图 + 图片反推_1984807816806481922.json、图片生成/文生图/【 DyPE 】 FLUX - SRPO  2 - 4 K 高清直出 文生图 + 图片反推_1987345787942277122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/flux万物精修_1911956945350160385.json、平台全量/最快nunchaku-flux万物精修，重塑_1938586397664333825.json、平台全量/熨烫工作流（逆采样技术）_1995695007761829890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DualCLIPLoader`
-- `DyPE_Condition`
-- `DyPE_Encode`
-- `DyPE_KSampler`
-- `DyPE_Model`
-- `ImpactSwitch`
-- `JWInteger`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `DisableNoise`
+- `FlipSigmas`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
+- `Image Comparer (rgthree)`
+- `InFluxModelSamplingPred`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Translator`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `DyPE_FLUX` —— 1/2 个有
-- `EmptySD3LatentImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FluxGuidance` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
+- `CLIPTextEncode` —— 2/3 个有
+- `DualCLIPLoader` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `NunchakuFluxDiTLoader` —— 2/3 个有
+- `OutFluxModelSamplingPred` —— 2/3 个有
+- `CLIPTextEncodeFlux` —— 1/3 个有
+- `FluxDeGuidance` —— 1/3 个有
+- `FluxGuidance` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `Joy_caption_two` —— 1/3 个有
+- `Joy_caption_two_load` —— 1/3 个有
+- `NunchakuTextEncoderLoader` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 28 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | res_2s | - | 1 | 100% |
-| 调度器 | beta57 | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,4 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,36 +3,38 @@ name: unknown_workflow_generic_1657
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.845
-common_nodes: [GetVideoComponents, IndexTTSNode, LoadVideo, RH_HeyGemNode, SaveVideo]
+coverage: 0.7085
+common_nodes: [BiRefNetRMBG, ImageCropByMask, ImpactSEGSToMaskList, LoadImage, MaskToSEGS, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/HeyGem数字人口播输入文本转语音声音克隆视频加音频生成ai数字人视频短评口播_2061109752800833538.json, 音频生成/音频生成/HeyGem数字人V2_1932991067656519682.json]
+members: [图片生成/图生图/九宫格切下的NPC、敌人生成三视图+抠图+切割_2092518029019144193.json, 平台全量/抠图+分割_2092125821828943873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1657
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/HeyGem数字人口播输入文本转语音声音克隆视频加音频生成ai数字人视频短评口播_2061109752800833538.json、音频生成/音频生成/HeyGem数字人V2_1932991067656519682.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/九宫格切下的NPC、敌人生成三视图+抠图+切割_2092518029019144193.json、平台全量/抠图+分割_2092125821828943873.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetVideoComponents`
-- `IndexTTSNode`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `SaveVideo`
+- `BiRefNetRMBG`
+- `ImageCropByMask`
+- `ImpactSEGSToMaskList`
+- `LoadImage`
+- `MaskToSEGS`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
 - `PrimitiveStringMultiline` —— 1/2 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
+- `StringReplace` —— 1/2 个有
 
 ## 典型参数
 

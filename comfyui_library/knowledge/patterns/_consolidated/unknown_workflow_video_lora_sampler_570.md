@@ -1,71 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_570
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.95475
-common_nodes: [CR Prompt Text, Float, INTConstant, ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, StringToFloatList, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.7362
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json, 视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版首尾帧V1_1966523015905357825.json, 视频生成/图生视频/Wan2.2 Fun Vace视频扩图稳定版V1_1966560072405037057.json, 视频生成/图生视频/🦖Wan 2.2动作迁移（优化板）_1968976369134755842.json]
+members: [平台全量/AI换脸工作流_2078669426429349890.json, 平台全量/GOZAO-角色替换-优化版_2078062526830567425.json, 平台全量/SAM3角色替换-优化版_2091524476671447042.json, 平台全量/Wan2_2_Animate_长视频单人姿态迁移工作流_1980840780245942274.json, 平台全量/Wan2_2_Animate_长视频替换人物工作流V3_1976312587359002625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_570
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json、视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版首尾帧V1_1966523015905357825.json、视频生成/图生视频/Wan2.2 Fun Vace视频扩图稳定版V1_1966560072405037057.json、视频生成/图生视频/🦖Wan 2.2动作迁移（优化板）_1968976369134755842.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/AI换脸工作流_2078669426429349890.json、平台全量/GOZAO-角色替换-优化版_2078062526830567425.json、平台全量/SAM3角色替换-优化版_2091524476671447042.json、平台全量/Wan2_2_Animate_长视频单人姿态迁移工作流_1980840780245942274.json、平台全量/Wan2_2_Animate_长视频替换人物工作流V3_1976312587359002625.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
-- `INTConstant`
-- `ImageConcatMulti`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadWanVideoT5TextEncoder`
-- `StringToFloatList`
+全部 5 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 3/4 个有
-- `ImageResizeKJv2` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `VHS_VideoInfo` —— 3/4 个有
-- `WanVideoVACEModelSelect` —— 3/4 个有
-- `DWPreprocessor` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `GetImageRangeFromBatch` —— 1/4 个有
-- `GetImageSizeAndCount` —— 1/4 个有
-- `GrowMaskWithBlur` —— 1/4 个有
-- `ImageAndMaskPreview` —— 1/4 个有
-- `ImagePadKJ` —— 1/4 个有
-- `ImageResize` —— 1/4 个有
-- `MaskPreview+` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `SimpleMath+` —— 1/4 个有
-- `WanVideoExtraModelSelect` —— 1/4 个有
-- `WanVideoVACEStartToEndFrame` —— 1/4 个有
+- `DrawViTPose` —— 4/5 个有
+- `INTConstant` —— 4/5 个有
+- `GetNode` —— 3/5 个有
+- `GrowMaskWithBlur` —— 3/5 个有
+- `ImageFromBatch` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
+- `PrimitiveFloat` —— 3/5 个有
+- `SetNode` —— 3/5 个有
+- `SimpleMath+` —— 3/5 个有
+- `easy sam3ModelLoader` —— 3/5 个有
+- `easy sam3VideoSegmentation` —— 3/5 个有
+- `CM_FloatToInt` —— 2/5 个有
+- `DownloadAndLoadSAM2Model` —— 2/5 个有
+- `GetImageSizeAndCount` —— 2/5 个有
+- `GrowMask` —— 2/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `MaskToImage` —— 2/5 个有
+- `PrimitiveStringMultiline` —— 2/5 个有
+- `Sam2Segmentation` —— 2/5 个有
+- `WanVideoTorchCompileSettings` —— 2/5 个有
+- `easy float` —— 2/5 个有
+- `GetImageRangeFromBatch` —— 1/5 个有
+- `ImageConcanate` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
+- `VHS_VideoInfo` —— 1/5 个有
+- `WanVideoImageResizeToClosest` —— 1/5 个有
+- `easy imageRemBg` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 

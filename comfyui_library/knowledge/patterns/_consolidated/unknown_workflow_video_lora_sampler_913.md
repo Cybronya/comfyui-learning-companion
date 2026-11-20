@@ -1,79 +1,102 @@
 ---
 name: unknown_workflow_video_lora_sampler_913
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5325
-common_nodes: [ApplyFaceProcessor, BlockifyMask, CLIPVisionLoader, ConvertAny2Float, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, FaceProcessorLoader, FrameSelector, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewAudio, Sam2Segmentation, SetNode, SoundFlow_SetLength, Textbox, VHS_LoadVideo, VHS_VideoCombine, VideoInputPreprocessor, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, ttN float]
+frequency: 3
+level: strong
+coverage: 0.840667
+common_nodes: [AdjustAudio, Any To Any, Audio Add Silence, AudioAdjustVolume, AudioCombine, AudioEncoderEncode, AudioEncoderLoader, BatchImagesNode, BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, CreateVideo, DF_Get_image_size, Float, GetVideoComponents, HunyuanVideoFoley, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, PainterAV2V, PainterAudioCut, PathchSageAttentionKJ, Qwen3_VQA, RHLLMChatNode, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, StringReplace, Text, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: ["视频生成/图生视频/WanAnimate_全新骨骼绑定优化版(更稳,细节更好)_1999863444146974722.json", 视频生成/图生视频/WanAnimate_去油版V2.3_1970903768109850626.json]
+members: [视频生成/图生视频/全模态图生视频：背景音效+声纹参考+单人说话-bernini_2073819389966766081.json, 视频生成/图生视频/（4步加速版-多参版）Seedance2.0完美平替！Bernini全自动音画同全模态图生视频V3_2073466408666746882.json, 视频生成/图生视频/（多参版）Seedance2.0完美平替！Bernini全自动音画同全模态图生视频V2_2064697979495342081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_913
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WanAnimate_全新骨骼绑定优化版(更稳,细节更好)_1999863444146974722.json、视频生成/图生视频/WanAnimate_去油版V2.3_1970903768109850626.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全模态图生视频：背景音效+声纹参考+单人说话-bernini_2073819389966766081.json、视频生成/图生视频/（4步加速版-多参版）Seedance2.0完美平替！Bernini全自动音画同全模态图生视频V3_2073466408666746882.json、视频生成/图生视频/（多参版）Seedance2.0完美平替！Bernini全自动音画同全模态图生视频V2_2064697979495342081.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `ConvertAny2Float`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `FaceProcessorLoader`
-- `FrameSelector`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `Int`
+全部 3 个 workflow 都包含：
+- `AdjustAudio`
+- `Any To Any`
+- `Audio Add Silence`
+- `AudioAdjustVolume`
+- `AudioCombine`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `BatchImagesNode`
+- `BerniniConditioning`
+- `BerniniPromptEnhancer`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `DF_Get_image_size`
+- `Float`
+- `GetVideoComponents`
+- `HunyuanVideoFoley`
+- `JWInteger`
+- `KSamplerAdvanced`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
+- `LoraLoaderModelOnly`
 - `MathExpression|pysssss`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewAudio`
-- `Sam2Segmentation`
-- `SetNode`
-- `SoundFlow_SetLength`
-- `Textbox`
-- `VHS_LoadVideo`
+- `ModelPatchLoader`
+- `PainterAV2V`
+- `PainterAudioCut`
+- `PathchSageAttentionKJ`
+- `Qwen3_VQA`
+- `RHLLMChatNode`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `StringReplace`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `VideoInputPreprocessor`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 - `easy showAnything`
-- `ttN float`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/2 个有
-- `PoseDetectionOneToAllAnimation` —— 1/2 个有
-- `WanVideoContextOptions` —— 1/2 个有
+- `ACE_AudioCrop` —— 2/3 个有
+- `EmptyAudio` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `SaveAudio` —— 2/3 个有
+- `SaveVideo` —— 2/3 个有
+- `AudioCrop` —— 1/3 个有
+- `Bjornulf_ShowInt` —— 1/3 个有
+- `DF_Int_to_Float` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `Int to String` —— 1/3 个有
+- `PreviewAudio` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `ResolutionStdSelector` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `easy imageRemBg` —— 1/3 个有
+- `孤海注释` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 3 | 3 - 4 | 3 | 86% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | dpmpp_sde | - | 3 | 67% |
+| 重绘幅度 | normal | - | 3 | 67% |
 
 ## 常见问题
 
@@ -81,4 +104,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 4，3 个样本，取值集中（一致性 86%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_sde，3 个样本，一致性 67%
+- 重绘幅度 最常用 normal，3 个样本，一致性 67%

@@ -1,38 +1,45 @@
 ---
 name: unknown_workflow_sampler_71
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.914
-common_nodes: [ImageToMask, LoadImage, RunningHub OneReward Eraser, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.980333
+common_nodes: [AudioConcat, EmptyAudio, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/AI绘画_OneReward多功能测试_局部重绘、图像外扩工作流V1_1965606591733055490.json, 图片生成/图生图/OneReward多功能测试工作流V1_1965465889753714689.json]
+members: [数字人/数字人/05.01_2050111045171195905.json, 数字人/数字人/FlashHead声音克隆极速数字人_2028103957326864386.json, 数字人/数字人/FlashHead极速数字人_2028357670490611713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_71
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/AI绘画_OneReward多功能测试_局部重绘、图像外扩工作流V1_1965606591733055490.json、图片生成/图生图/OneReward多功能测试工作流V1_1965465889753714689.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/05.01_2050111045171195905.json、数字人/数字人/FlashHead声音克隆极速数字人_2028103957326864386.json、数字人/数字人/FlashHead极速数字人_2028357670490611713.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageToMask`
+全部 3 个 workflow 都包含：
+- `AudioConcat`
+- `EmptyAudio`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `RunningHub OneReward Eraser`
-- `RunningHub OneReward Loader`
-- `RunningHub OneReward Sampler`
-- `SaveImage`
+- `RunningHub SoulX-FlashHead Loader`
+- `RunningHub SoulX-FlashHead Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `JWImageResizeByLongerSide` —— 1/2 个有
+- `Apply Whisper` —— 1/3 个有
+- `AudioCrop` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `Qwen3TTSModelLoader` —— 1/3 个有
+- `Qwen3TTSVoiceClone` —— 1/3 个有
+- `Text` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

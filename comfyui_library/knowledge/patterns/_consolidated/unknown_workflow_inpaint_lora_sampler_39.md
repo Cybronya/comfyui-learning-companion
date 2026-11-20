@@ -1,110 +1,89 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_39
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.488
-common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, CM_IntToBool, CR Text, CR Text Concatenate, DWPreprocessor, Display Any (rgthree), Fast Groups Bypasser (rgthree), GetNode, GrowMask, INPAINT_MaskedBlur, Image Comparer (rgthree), ImageToMask, Int, KSampler, LayerMask: MaskPreview, LayerUtility: ColorImage V2, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskColorize, MaskFillHoles, ModelSamplingAuraFlow, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PainterQwenImageEditPlus, PlaySound|pysssss, PreviewImage, RMBG, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy imageSize, easy imageSizeByLongerSide, easy isMaskEmpty]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.91925
+common_nodes: [ApplyPulidFlux, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, InpaintModelConditioning, KSampler, LayerUtility: CropByMask V2, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PulidFluxModelLoader, ReduxAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy makeImageForICLora]
+problems: []
 missing: []
-members: [图片生成/图生图/QwenEdit2511 角色替换  超强一致性_2020319634725015554.json, 图片生成/图生图/QwenEdit2511 角色替换 、保留前景物品_2027637931527118850.json, 图片生成/图生图/QwenEdit2511 角色替换 保持手持、前景物品  超强一致性_2011974227439656962.json]
+members: [图片生成/图生图/Flux+Rudex万物迁移——完美解决人设固定：A图+B图_1915275990954872833.json, 图片生成/图生图/Q-人像迁移_1955974460753018882.json, 平台全量/flux人像迁移（与闺蜜合照）_1936053225705361410.json, 平台全量/万物迁移-人物_1904722465120288770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_39
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QwenEdit2511 角色替换  超强一致性_2020319634725015554.json、图片生成/图生图/QwenEdit2511 角色替换 、保留前景物品_2027637931527118850.json、图片生成/图生图/QwenEdit2511 角色替换 保持手持、前景物品  超强一致性_2011974227439656962.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux+Rudex万物迁移——完美解决人设固定：A图+B图_1915275990954872833.json、图片生成/图生图/Q-人像迁移_1955974460753018882.json、平台全量/flux人像迁移（与闺蜜合照）_1936053225705361410.json、平台全量/万物迁移-人物_1904722465120288770.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CFGNorm`
-- `CLIPLoader`
-- `CM_IntToBool`
-- `CR Text`
-- `CR Text Concatenate`
-- `DWPreprocessor`
-- `Display Any (rgthree)`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `GrowMask`
-- `INPAINT_MaskedBlur`
-- `Image Comparer (rgthree)`
-- `ImageToMask`
-- `Int`
+全部 4 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `CLIPVisionLoader`
+- `DifferentialDiffusion`
+- `DualCLIPLoader`
+- `InpaintModelConditioning`
 - `KSampler`
-- `LayerMask: MaskPreview`
-- `LayerUtility: ColorImage V2`
 - `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageRemoveAlpha`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MaskColorize`
-- `MaskFillHoles`
-- `ModelSamplingAuraFlow`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `PainterQwenImageEditPlus`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `RMBG`
+- `PulidFluxModelLoader`
+- `ReduxAdvanced`
 - `SaveImage`
-- `SetNode`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy ifElse`
-- `easy imageSize`
-- `easy imageSizeByLongerSide`
-- `easy isMaskEmpty`
+- `easy makeImageForICLora`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Overlay Transparent Image` —— 2/3 个有
-- `GrowMaskWithBlur` —— 2/3 个有
-- `ImageAddMulti` —— 2/3 个有
-- `LayerUtility: ColorImage` —— 2/3 个有
-- `LayerUtility: RestoreCropBox` —— 2/3 个有
-- `MaskToImage` —— 2/3 个有
-- `Switch` —— 2/3 个有
-- `ThresholdMask` —— 2/3 个有
-- `To Device (mtb)` —— 2/3 个有
-- `VHS_SelectMasks` —— 2/3 个有
-- `VRAM_Debug` —— 2/3 个有
-- `ZML_MaskCropNode` —— 2/3 个有
-- `easy imageConcat` —— 2/3 个有
-- `easy sam3ImageSegmentation` —— 2/3 个有
-- `easy sam3ModelLoader` —— 2/3 个有
-- `type_Mask_Batch2List` —— 2/3 个有
-- `FeatherMask` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `CLIPTextEncode` —— 3/4 个有
+- `CropFace` —— 3/4 个有
+- `FluxGuidance` —— 3/4 个有
+- `InspyrenetRembg` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `PulidFluxEvaClipLoader` —— 3/4 个有
+- `PulidFluxInsightFaceLoader` —— 3/4 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `Florence2ModelLoader` —— 2/4 个有
+- `Florence2Run` —— 2/4 个有
+- `ImageCrop+` —— 2/4 个有
+- `MaskPreview+` —— 2/4 个有
+- `CLIPTextEncodeFlux` —— 1/4 个有
+- `EcomIDEvaClipLoader` —— 1/4 个有
+- `ImageCrop` —— 1/4 个有
+- `InstantIDFaceAnalysis` —— 1/4 个有
+- `Joy_caption_two` —— 1/4 个有
+- `Joy_caption_two_load` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `easy imageRemBg` —— 1/4 个有
+- `ttN concat` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 30 | 25 - 30 | 4 | 92% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | normal | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 30，观测区间 25 - 30，4 个样本，取值集中（一致性 92%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 normal，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

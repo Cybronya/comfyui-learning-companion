@@ -1,46 +1,36 @@
 ---
 name: unknown_workflow_generic_1051
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.928333
-common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageLoader, ImageScaleToTotalPixels, MultiplePathsInputPlus, PreviewImage, Qwen3VL_Advanced, Qwen3_VQA, RH_Nano_Banana_Image2Image, SaveImage, StringFunction|pysssss, easy anythingIndexSwitch, easy imageConcat, easy int, easy positive, easy saveText, easy seed, easy showAnything]
+coverage: 0.50825
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_description, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/生图-三图编辑自动-全能图片V1_1980904638415290369.json, 图片生成/图生图/生图-五图编辑自动-全能图片V1_1998503044310556674.json, 图片生成/图生图/生图-四图编辑自动-全能图片V1_1980906918803886081.json]
+members: [音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json, 音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1051
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/生图-三图编辑自动-全能图片V1_1980904638415290369.json、图片生成/图生图/生图-五图编辑自动-全能图片V1_1998503044310556674.json、图片生成/图生图/生图-四图编辑自动-全能图片V1_1980906918803886081.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json、音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
-- `ImageLoader`
-- `ImageScaleToTotalPixels`
-- `MultiplePathsInputPlus`
-- `PreviewImage`
-- `Qwen3VL_Advanced`
-- `Qwen3_VQA`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
-- `StringFunction|pysssss`
-- `easy anythingIndexSwitch`
-- `easy imageConcat`
-- `easy int`
-- `easy positive`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_suno_description`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `easy showAnything` —— 3/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 

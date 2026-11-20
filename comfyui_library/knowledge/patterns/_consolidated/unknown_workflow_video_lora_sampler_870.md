@@ -1,83 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_870
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.706
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetNode, GrowMask, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, Int, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy sam3ModelLoader, easy sam3VideoSegmentation, easy sam3Visualization]
+frequency: 3
+level: strong
+coverage: 0.996333
+common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DiffusionModelLoaderKJ, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy float, easy getNode, easy int, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/SAM3游戏人物替换二创_2034955430325129218.json, 视频生成/图生视频/人物替换，SAM3自动分割_2046159964988776450.json]
+members: [视频生成/图生视频/LTX2.3首尾帧生视频去字幕生视频优化版v2_2046138080263938050.json, 视频生成/图生视频/LTX2.3首尾帧生视频超强一致性生视频优化版v2_2048930807976300546.json, 视频生成/图生视频/LTX2.3首尾帧生视频（KJ流）_2044379140505214978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_870
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SAM3游戏人物替换二创_2034955430325129218.json、视频生成/图生视频/人物替换，SAM3自动分割_2046159964988776450.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3首尾帧生视频去字幕生视频优化版v2_2046138080263938050.json、视频生成/图生视频/LTX2.3首尾帧生视频超强一致性生视频优化版v2_2048930807976300546.json、视频生成/图生视频/LTX2.3首尾帧生视频（KJ流）_2044379140505214978.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageCropByMaskAndResize`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CR Float To Integer`
+- `DiffusionModelLoaderKJ`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `ImageResizeKJv2`
-- `Int`
+- `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
-- `easy sam3Visualization`
+- `easy float`
+- `easy getNode`
+- `easy int`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `PixelPerfectResolution` —— 1/2 个有
-- `PointsEditor` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `TT_img_enc_v2` —— 1/2 个有
-- `VHS_VideoInfo` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `easy framesEditor` —— 1/2 个有
-- `easy sam3GetObjectMask` —— 1/2 个有
-- `easy sam3VideoModelExtraConfig` —— 1/2 个有
+- `JWFloat` —— 2/3 个有
+- `LTXVLatentUpsampler` —— 2/3 个有
+- `LTXVScheduler` —— 2/3 个有
+- `LatentUpscaleModelLoader` —— 2/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -85,4 +73,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

@@ -3,93 +3,92 @@ name: text_to_image_video_lora_sampler_92
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.681222
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, H3SigmaRefiner, Int, JjkText, JoinStringMulti, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, PurgeVRAM_UTK, RandomNoise, SamplerCustomAdvanced, SetNode, StringConcatenate, ToString, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, ZNGB_ImageBatchMulti, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, ratio_selector, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.917889
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3参考生视频720P高清图生视频处理工具_2101024037894975490.json, 视频生成/图生视频/lightx2v 4步加速｜MiniMax H3参考生视频自动提示词优化V1.3_2089847613943271425.json, 视频生成/图生视频/两次采样1080P｜MiniMax H3参考生视频音频参考提示词优化V1.3_2089794956117495810.json, 视频生成/图生视频/参考生视频完美版1080P｜MiniMax H3多图多音频自动提示词V1.2_2091668802529480706.json, 视频生成/图生视频/绘影MiniMax H3参考生视频1080P高清版V2 高质量视频输出_2105055271889494017.json, 视频生成/图生视频/绘影MiniMax H3参考生视频720P图生视频处理工具_2102106591196700674.json, 视频生成/图生视频/绘影MiniMax H3参考生视频ref2va in 720P V2 视频生成方案_2105061454188732418.json, 视频生成/图生视频/绘影出品｜MiniMax H3参考生视频720P V1｜图生视频一键出片_2101843591164424193.json, 视频生成/文生视频/MiniMax H3 Ref2VA多参考素材生视频1080P高清版处理工具_2101718572941795330.json]
+members: [图片生成/反推提示词/H3单采工作流兼顾效果和速度，文生图反推提示词图生图处理方案_2107241699616575490.json, 图片生成/反推提示词/H3单采工作流｜反推提示词图生图快速上手版_2106964960260739074.json, 图片生成/图生图/H3人物替换专用流v1.5整理版 动作迁移视频处理工具_2113763372444504066.json, 图片生成/图生图/H3人物替换专用流v1.5整理版｜换人专用稳定好上手_2113531228686213122.json, 图片生成/图生图/H3官流单采极速文戏 快速出片美女文戏处理工具_2113415713628180481.json, 图片生成/图生图/H3最强打斗工作流，战斗特效人物出招快如闪电_2112293222151188482.json, 图片生成/图生图/H3最强打斗工作流｜天下武功唯快不破｜30秒长视频合并高燃战斗_2112116841031225345.json, 视频生成/图生视频/H3人物替换专用流，一键完成视频人物替换角色一致性_2110445753108881409.json, 视频生成/图生视频/H3人物替换专用流，一键完成视频人物替换角色一致性_2113815036748718081.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_92
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3参考生视频720P高清图生视频处理工具_2101024037894975490.json、视频生成/图生视频/lightx2v 4步加速｜MiniMax H3参考生视频自动提示词优化V1.3_2089847613943271425.json、视频生成/图生视频/两次采样1080P｜MiniMax H3参考生视频音频参考提示词优化V1.3_2089794956117495810.json、视频生成/图生视频/参考生视频完美版1080P｜MiniMax H3多图多音频自动提示词V1.2_2091668802529480706.json、视频生成/图生视频/绘影MiniMax H3参考生视频1080P高清版V2 高质量视频输出_2105055271889494017.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/H3单采工作流兼顾效果和速度，文生图反推提示词图生图处理方案_2107241699616575490.json、图片生成/反推提示词/H3单采工作流｜反推提示词图生图快速上手版_2106964960260739074.json、图片生成/图生图/H3人物替换专用流v1.5整理版 动作迁移视频处理工具_2113763372444504066.json、图片生成/图生图/H3人物替换专用流v1.5整理版｜换人专用稳定好上手_2113531228686213122.json、图片生成/图生图/H3官流单采极速文戏 快速出片美女文戏处理工具_2113415713628180481.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `Any Switch (rgthree)`
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `H3SigmaRefiner`
-- `Int`
 - `JjkText`
-- `JoinStringMulti`
 - `KSampler`
 - `KSamplerSelect`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `PrimitiveFloat`
 - `PrimitiveStringMultiline`
-- `PurgeVRAM_UTK`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `StringConcatenate`
-- `ToString`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `ZNGB_ImageBatchMulti`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `ratio_selector`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxChunkFeedForward` —— 5/9 个有
-- `MiniMaxLowVRAMAttention` —— 5/9 个有
-- `PDRatioSelector` —— 5/9 个有
-- `SaveImage` —— 5/9 个有
-- `ComfyNumberConvert` —— 4/9 个有
-- `ComfySwitchNode` —— 4/9 个有
-- `Compare` —— 4/9 个有
-- `ConvertAny2Int` —— 4/9 个有
+- `ManualSigmas` —— 8/9 个有
+- `孤海注释` —— 8/9 个有
+- `ModelAttentionBackend` —— 7/9 个有
+- `ImageBatchMulti` —— 6/9 个有
+- `MiniMaxH3AddGuide` —— 6/9 个有
+- `SaveImage` —— 6/9 个有
+- `BlockSparseAttention` —— 5/9 个有
+- `LoadAudio` —— 5/9 个有
+- `VHS_LoadVideo` —— 5/9 个有
+- `AudioConcat` —— 4/9 个有
+- `H3SigmaRefiner` —— 4/9 个有
+- `ImageFromBatch` —— 4/9 个有
+- `ImageScaleToTotalPixels` —— 4/9 个有
 - `LTXVConcatAVLatent` —— 4/9 个有
 - `LTXVSeparateAVLatent` —— 4/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/9 个有
-- `SplitSigmas` —— 4/9 个有
-- `SplitStringByDelimiter` —— 4/9 个有
-- `easy ifElse` —— 4/9 个有
-- `MinimaxH3LatentUpscaler3D` —— 3/9 个有
-- `ModelPreviewOverrideKJ` —— 3/9 个有
-- `SolAttnMiniMax` —— 3/9 个有
-- `VHS_LoadVideo` —— 2/9 个有
-- `CreateVideo` —— 1/9 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/9 个有
-- `SaveVideo` —— 1/9 个有
-- `SetReserveVRAM` —— 1/9 个有
-- `TrimAudioDuration` —— 1/9 个有
+- `MiniMaxChunkFeedForward` —— 4/9 个有
+- `MiniMaxLowVRAMAttention` —— 4/9 个有
+- `MinimaxH3LatentUpscaler3D` —— 4/9 个有
+- `PrimitiveInt` —— 4/9 个有
+- `RepeatImageBatch` —— 4/9 个有
+- `ResizeImagesByShorterEdge` —— 4/9 个有
+- `VHS_LoadVideoFFmpeg` —— 4/9 个有
+- `VHS_VideoInfo` —— 4/9 个有
+- `EasyCache` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
+- `GetImageRangeFromBatch` —— 2/9 个有
+- `GetImageSize` —— 2/9 个有
+- `ImageBatch` —— 2/9 个有
+- `ImageExpandBatch+` —— 2/9 个有
+- `PathchSageAttentionKJ` —— 2/9 个有
+- `SaveAudioAdvanced` —— 2/9 个有
+- `TrimAudioDuration` —— 2/9 个有
+- `easy cleanGpuUsed` —— 2/9 个有
+- `easy forLoopEnd` —— 2/9 个有
+- `easy forLoopStart` —— 2/9 个有
+- `EmptyImage` —— 1/9 个有
+- `ExtendIntermediateSigmas` —— 1/9 个有
+- `MiniMaxH3SigmaShift` —— 1/9 个有
+- `PreviewAny` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
 
 ## 典型参数
 

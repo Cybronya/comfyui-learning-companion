@@ -3,52 +3,58 @@ name: unknown_workflow_video_sampler_vae_173
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.631333
-common_nodes: [AIO_Preprocessor, AddLabel, GetNode, ImageResizeKJv2, Int, JjkText, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RIFE VFI, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.939667
+common_nodes: [CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTextEmbedBridge, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageConcatMulti, ImageResizeKJv2, LoadImage, PreviewImage, TextEncodeHunyuanVideo_ImageToVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934163540599332865.json, 视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934893672066392066.json, 视频生成/文生视频/视频转绘重绘+姿态控制=FusionX。铁甲柔情，舞步同步，一键生成！_2032772406028275713.json]
+members: [图片生成/图生图/Hunyuan Video Custom_1920756422236377089.json, 平台全量/【两张照片秒变情侣甜蜜视频】手把手教你搭建混元Custom工作流_1935587393103921153.json, 视频生成/图生视频/Hunyuan_Custom_单参考生视频_nightly_1920847565515067394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_173
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934163540599332865.json、视频生成/文生视频/视频转绘重绘+姿态控制=FusionX=艾橘溪_1934893672066392066.json、视频生成/文生视频/视频转绘重绘+姿态控制=FusionX。铁甲柔情，舞步同步，一键生成！_2032772406028275713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Hunyuan Video Custom_1920756422236377089.json、平台全量/【两张照片秒变情侣甜蜜视频】手把手教你搭建混元Custom工作流_1935587393103921153.json、视频生成/图生视频/Hunyuan_Custom_单参考生视频_nightly_1920847565515067394.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `AddLabel`
-- `GetNode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTextEmbedBridge`
+- `HyVideoTorchCompileSettings`
+- `HyVideoVAELoader`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `Int`
-- `JjkText`
-- `LayerUtility: PurgeVRAM`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RIFE VFI`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadImage`
+- `PreviewImage`
+- `TextEncodeHunyuanVideo_ImageToVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowInt` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `HunyuanVideoFresca` —— 1/3 个有
+- `HunyuanVideoSLG` —— 1/3 个有
+- `Image Crop Face` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `Images to RGB` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `LayerMask: TransparentBackgroundUltra` —— 1/3 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/3 个有
+- `LayerUtility: TextBox` —— 1/3 个有
+- `RMBG` —— 1/3 个有
 
 ## 典型参数
 

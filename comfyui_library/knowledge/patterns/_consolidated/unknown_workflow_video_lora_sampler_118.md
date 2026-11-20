@@ -1,71 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_118
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.8958
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, Fast Groups Bypasser (rgthree), H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.828125
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Mnimaxh3 极简流分块二采 支持种子固定_2104508927865085954.json, 视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098588498583445506.json, 视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2109663330502795265.json, 视频生成/图生视频/最强去油全模式精简流+独立双采样 MINIMAXH3_2095036845418700801.json, 视频生成/图生视频/最强去油全模式精简流+独立双采样_MINIMAXH3_2095322121126891521.json, 视频生成/图生视频/最强去油全模式精简流+独立双采样_MINIMAXH3_2095425902569152514.json, 视频生成/图生视频/高质量数字人-minimaxh3_2104411993309532161.json, 视频生成/图生视频/高质量数字人-minimaxh3_2106364556749656066.json, 视频生成/文生视频/MINIMAXH3-去油-双采样 （CHIH）_2099542288576892929.json, 视频生成/文生视频/MiniMax_H3_全模式双采样_精简流_优化版_2094975644068302850.json, 视频生成/文生视频/Minimax-H3多参-单采优化-兼顾速度，质量与打斗_2104867248606371842.json, 视频生成/文生视频/Mnimaxh3 极简流分块二采 支持种子固定_2102681029466214402.json, 视频生成/文生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098012326409621505.json, 视频生成/文生视频/文戏-提示词练习_2098925401614671874.json, 视频生成/文生视频/极简双采_2102955651466096641.json]
+members: [平台全量/MiniMax H3 视频复刻：视频编辑、视频翻拍、二创与指定角色替换-长视频直出_2113475763625349121.json, 平台全量/MiniMax H3 视频复刻：视频翻拍、二创与指定角色替换_2109500526458134530.json, 平台全量/MiniMax H3 视频复刻：视频翻拍、二创与指定角色替换_2109628460296658946.json, 数字人/数字人/MiniMax H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）_2106734702446075906.json, 数字人/数字人/MiniMax H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）_2114297778703785986.json, 数字人/数字人/MiniMax H3-视频复刻-数字人-视频换人、视频换产品、视频换文案（替换原视频语音）_2106724867256176641.json, 数字人/数字人/MiniMax H3-视频复刻-数字人-视频换人、视频换产品、视频换文案（替换原视频语音）_2114313913683759106.json, 数字人/数字人/MiniMax H3视频复刻数字人｜换人换产品不换文案保留原视频语音版_2114624800655237121.json, 数字人/数字人/MiniMax H3视频复刻数字人｜视频换人换产品换文案并替换原视频语音_2114622814899761153.json, 数字人/数字人/音频驱动-Dasiwa V1-MiniMax H3数字人-加速版_2095011177205166081.json, 视频生成/图生视频/(b25-49+ema600)MiniMax H3数字人加速版V1_2094796122115108866.json, 视频生成/图生视频/MiniMax H3 视频复刻：视频编辑、视频翻拍、二创与指定角色替换-长视频直出_2105605446362030081.json, 视频生成/文生视频/MiniMax H3 4步加速 全能参考生视频(9图3视频3音频)_2088583576190279681.json, 视频生成/文生视频/MiniMax H3 4步加速 全能参考生视频(9图3视频3音频)_2091128915946459138.json, 视频生成/文生视频/MiniMax H3 4步加速 全能参考生视频_2086885673054855170.json, 视频生成/文生视频/MiniMax H3 4步加速 全能参考生视频_2091121872074272770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_118
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/Mnimaxh3 极简流分块二采 支持种子固定_2104508927865085954.json、视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098588498583445506.json、视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2109663330502795265.json、视频生成/图生视频/最强去油全模式精简流+独立双采样 MINIMAXH3_2095036845418700801.json、视频生成/图生视频/最强去油全模式精简流+独立双采样_MINIMAXH3_2095322121126891521.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（平台全量/MiniMax H3 视频复刻：视频编辑、视频翻拍、二创与指定角色替换-长视频直出_2113475763625349121.json、平台全量/MiniMax H3 视频复刻：视频翻拍、二创与指定角色替换_2109500526458134530.json、平台全量/MiniMax H3 视频复刻：视频翻拍、二创与指定角色替换_2109628460296658946.json、数字人/数字人/MiniMax H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）_2106734702446075906.json、数字人/数字人/MiniMax H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）_2114297778703785986.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyModelAdapter`
-- `MiniMaxH3EasyOutput`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 14/15 个有
-- `LoadImage` —— 14/15 个有
-- `VAEDecodeAudio` —— 13/15 个有
-- `VHS_LoadVideo` —— 12/15 个有
-- `LTXVConcatAVLatent` —— 10/15 个有
-- `LTXVSeparateAVLatent` —— 10/15 个有
-- `MiniMaxH3EasySecondPassConditioning` —— 10/15 个有
-- `MinimaxH3LatentUpscaler3D` —— 10/15 个有
-- `ModelAttentionBackend` —— 10/15 个有
-- `SplitSigmas` —— 10/15 个有
-- `Seed (rgthree)` —— 9/15 个有
-- `MiniMaxH3EasyMediaLoader` —— 7/15 个有
-- `ConditioningZeroOut` —— 5/15 个有
-- `GetLatentSizeAndCount` —— 5/15 个有
-- `GoohaiMinimaxH3TiledSampler` —— 5/15 个有
-- `MiniMaxChunkFeedForward` —— 5/15 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/15 个有
-- `MiniMaxLowVRAMAttention` —— 5/15 个有
-- `ModelPreviewOverrideKJ` —— 5/15 个有
-- `SelfLiftH3Sampler` —— 5/15 个有
-- `LTXVAudioVAEEncode` —— 2/15 个有
-- `SetLatentNoiseMask` —— 2/15 个有
-- `SolidMask` —— 2/15 个有
-- `TrimAudioDuration` —— 2/15 个有
-- `Text` —— 1/15 个有
+- `ModelAttentionBackend` —— 12/16 个有
+- `SolAttnMiniMax` —— 12/16 个有
+- `VHS_LoadVideo` —— 10/16 个有
+- `LoadVideo` —— 8/16 个有
+- `孤海注释` —— 8/16 个有
+- `LoadAudio` —— 6/16 个有
+- `GetVideoComponents` —— 4/16 个有
+- `AnyBooleanSwitch` —— 1/16 个有
+- `CR Font File List` —— 1/16 个有
+- `CompressImages` —— 1/16 个有
+- `ImpactConditionalBranch` —— 1/16 个有
+- `LoadFolderFromDir` —— 1/16 个有
+- `LoraLoaderModelOnly` —— 1/16 个有
+- `VHS_SelectFilename` —— 1/16 个有
 
 ## 典型参数
 

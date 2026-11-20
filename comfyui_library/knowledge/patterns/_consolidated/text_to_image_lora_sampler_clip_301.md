@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_301
 type: Text To Image
 frequency: 7
-level: strong
-coverage: 0.859286
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: moderate
+coverage: 0.929429
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageBatchMulti, KSampler, LoadImage, RunningHub_ImageQwenI2L_LoraGenerator, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/拼接参考工作流，配合分镜流使用的多图参考拼接图生图工具_2103538070481096706.json, 图片生成/图生图/漫剧分镜工作流｜全能图片2角色一致四格出图｜AI漫剧分镜一步成_2099135891058024450.json, 图片生成/文生图/Image-2.5图片编辑极速版 全能图片G2.5快速处理_2098306932686802946.json, 图片生成/文生图/Qwen Image 2.1一体化文生图工作流，7B模型2K高清RGBA透明直出方案_2103624543020601346.json, 图片生成/文生图/Qwen Image 2.1写实文生图 高质量画面一键直出_2104277798167859202.json, 图片生成/文生图/Qwen Image 2.1写实文生图｜图生图双模式 文生图质感稳定在线_2104101053124931586.json, 图片生成/文生图/Qwen_Image_2.1文生图工作流｜零门槛直出创意画面_2110761065725382658.json]
+members: [图片生成/文生图/I2L图生LoraCFB细节版工作流_1999759560254648321.json, 图片生成/文生图/I2L图生Lora风格版工作流_1999722337903800321.json, 图片生成/文生图/Qwen image I2L 模型训练成lora 后生图工作流_2015679486120960001.json, 图片生成/文生图/RH_ImageQwenI2L-图片转LoRA_1999434195766214657.json, 图片生成/文生图/RH_ImageQwenI2L-图片转LoRA文生图_2001570529641394177.json, 图片生成/文生图/风格即时定制，ImageQwen I2L 图片转LoRA_2000578050028863489.json, 平台全量/Qwen-I2L风格训练-5张图片一个LoRA_1999642719985205249.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_301
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/拼接参考工作流，配合分镜流使用的多图参考拼接图生图工具_2103538070481096706.json、图片生成/图生图/漫剧分镜工作流｜全能图片2角色一致四格出图｜AI漫剧分镜一步成_2099135891058024450.json、图片生成/文生图/Image-2.5图片编辑极速版 全能图片G2.5快速处理_2098306932686802946.json、图片生成/文生图/Qwen Image 2.1一体化文生图工作流，7B模型2K高清RGBA透明直出方案_2103624543020601346.json、图片生成/文生图/Qwen Image 2.1写实文生图 高质量画面一键直出_2104277798167859202.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/I2L图生LoraCFB细节版工作流_1999759560254648321.json、图片生成/文生图/I2L图生Lora风格版工作流_1999722337903800321.json、图片生成/文生图/Qwen image I2L 模型训练成lora 后生图工作流_2015679486120960001.json、图片生成/文生图/RH_ImageQwenI2L-图片转LoRA_1999434195766214657.json、图片生成/文生图/RH_ImageQwenI2L-图片转LoRA文生图_2001570529641394177.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
@@ -26,55 +26,52 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `JjkText`
+- `ImageBatchMulti`
 - `KSampler`
-- `LoraLoaderModelOnly`
+- `LoadImage`
+- `RunningHub_ImageQwenI2L_LoraGenerator`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 6/7 个有
-- `ResolutionSelector` —— 5/7 个有
-- `TextEncodeQwenImage21` —— 4/7 个有
-- `LoadImage` —— 3/7 个有
-- `ModelAttentionBackend` —— 3/7 个有
-- `SaveImageAdvanced` —— 3/7 个有
-- `ImageConcanate` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `RH_Nano_Banana2_Image2Image_Batch` —— 1/7 个有
-- `RH_RhartImageG25OfficialTokenFlareEdit` —— 1/7 个有
-- `SetNode` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `RunningHub_ImageQwenI2L_Loader(Style)` —— 6/7 个有
+- `easy showAnything` —— 5/7 个有
+- `JjkText` —— 3/7 个有
+- `RH_Captioner` —— 3/7 个有
+- `ShowText` —— 3/7 个有
+- `TextCombinerTwo` —— 3/7 个有
+- `LoraLoader` —— 1/7 个有
+- `RunningHub_ImageQwenI2L_Loader(CFB)` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
+| 采样步数 | 20 | 8 - 20 | 7 | 77% |
+| Prompt 约束强度(CFG) | 8 | 1 - 8 | 7 | 52% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 80 | 80 - 80 | 7 | 100% |
-| 高度 | 80 | 80 - 80 | 7 | 100% |
+| 宽度 | 768 | 512 - 1104 | 7 | 75% |
+| 高度 | 1280 | 768 - 1920 | 7 | 72% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 1/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
+- 采样步数 中位数 20，观测区间 8 - 20，7 个样本
+- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 8，7 个样本
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 768，观测区间 512 - 1104，7 个样本
+- 高度 中位数 1280，观测区间 768 - 1920，7 个样本

@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_1006
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.821333
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, SeedVR2, SeedVR2BlockSwap, Text Multiline]
+coverage: 0.793
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/免费 全能图片V12 pro (Single)角色拆解_1998364704194068482.json, 图片生成/图生图/全能图片V2 pro 角色服装拆解_2032830554114105345.json, 图片生成/图生图/高清放大细节修复-全能图片1.0_Pro（糊图必备）_2043032685056106498.json]
+members: [视频生成/图生视频/Wan2.7 图生视频  动作迁移 视频生视频  超长图生视频_2059442542130843650.json, 视频生成/图生视频/Wan2.7 图生视频_2045699521010733057.json, 视频生成/文生视频/Seedance 2.0 Fast 全能参考视频｜文生视频｜图生视频｜视频参考｜支持4K_2097465752587685890.json, 视频生成/文生视频/Seedance 2.0 Mini 全能参考多模态视频｜支持4K_2097604936262574082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1006
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/免费 全能图片V12 pro (Single)角色拆解_1998364704194068482.json、图片生成/图生图/全能图片V2 pro 角色服装拆解_2032830554114105345.json、图片生成/图生图/高清放大细节修复-全能图片1.0_Pro（糊图必备）_2043032685056106498.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.7 图生视频  动作迁移 视频生视频  超长图生视频_2059442542130843650.json、视频生成/图生视频/Wan2.7 图生视频_2045699521010733057.json、视频生成/文生视频/Seedance 2.0 Fast 全能参考视频｜文生视频｜图生视频｜视频参考｜支持4K_2097465752587685890.json、视频生成/文生视频/Seedance 2.0 Mini 全能参考多模态视频｜支持4K_2097604936262574082.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `Text Multiline`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `RH_Nano_Banana_Image2Image` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `MuyeTextEditOutput` —— 2/4 个有
+- `RH_AlibabaWan27ReferenceToVideo` —— 2/4 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/4 个有
+- `RH_RhartVideoSparkvideo20MiniMultimodalVideo` —— 1/4 个有
 
 ## 典型参数
 

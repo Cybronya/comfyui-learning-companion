@@ -1,38 +1,41 @@
 ---
 name: unknown_workflow_sampler_40
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.94375
-common_nodes: [DF_Get_image_size, ImageStitch, LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.7858
+common_nodes: [AudioCombine, HeartMuLa_Generate, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, SaveAudioMP3, SeedVCRun]
 problems: []
 missing: []
-members: [图片生成/图生图/USO单图多风格一致性反推图生图_1963137798670880769.json, 图片生成/图生图/USO单图风格一致性图生图_1963122858853642242.json, 图片生成/图生图/USO单图风格一致性图生图_1963133920571273217.json, 图片生成/文生图/USO单图风格一致性文生图_1963108546273579010.json]
+members: [音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json, 音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json, 音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json, 音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_40
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/USO单图多风格一致性反推图生图_1963137798670880769.json、图片生成/图生图/USO单图风格一致性图生图_1963122858853642242.json、图片生成/图生图/USO单图风格一致性图生图_1963133920571273217.json、图片生成/文生图/USO单图风格一致性文生图_1963108546273579010.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa 一键文生歌曲+智能音色克隆_2019661540697313282.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2013812249231626242.json、音频生成/音频生成/HeartMuLa文生歌曲+音色克隆_2014637933709496321.json、音频生成/音频生成/文生歌曲+音色克隆_2018618761200279553.json、音频生成/音频生成/文生歌曲，克隆歌曲，全自动歌曲生成器_2015662145077256193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DF_Get_image_size`
-- `ImageStitch`
-- `LoadImage`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `AudioCombine`
+- `HeartMuLa_Generate`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudioMP3`
+- `SeedVCRun`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/4 个有
-- `RH_Captioner` —— 2/4 个有
+- `Label (rgthree)` —— 2/5 个有
 
 ## 典型参数
 

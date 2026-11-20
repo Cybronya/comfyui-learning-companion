@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_617
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.6364
-common_nodes: [LoadAudio, PrimitiveStringMultiline, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize]
+coverage: 0.714
+common_nodes: [JjkText, LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json, 数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json, 音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json, 音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json, 音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json]
+members: [视频生成/图生视频/daVinci-MagiHuman 图生音频视频工作流_2039901911993815042.json, 视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频_2040446891929899010.json, 视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频工作流_2040634061848322050.json, 视频生成/图生视频/达芬奇DaVinci-MagiHuman 图生视频基础工作流 V1.0_2038700862385692673.json, 视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2037582254259572738.json, 视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2043167196280524802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_617
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/IndexTTS 2.5语音合成工作流｜声音克隆更稳更拟真_2103763846807773185.json、数字人/数字人/IndexTTS2.5声音克隆-语音合成工作流_2108050593456676866.json、音频生成/音频生成/IndexTTS 2.5-配音-音色_情感克隆-语音合成_2088147103976607745.json、音频生成/音频生成/IndexTTS 2.5声线_情感双克隆-语音合成_2088901895938199554.json、音频生成/音频生成/IndexTTS2.5声音克隆-语音合成工作流_2094602848645505026.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/daVinci-MagiHuman 图生音频视频工作流_2039901911993815042.json、视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频_2040446891929899010.json、视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频工作流_2040634061848322050.json、视频生成/图生视频/达芬奇DaVinci-MagiHuman 图生视频基础工作流 V1.0_2038700862385692673.json、视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2037582254259572738.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `RH_IndexTTS25_Loader`
-- `RH_IndexTTS25_Synthesize`
-
-**可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 3/5 个有
-- `SaveAudioAdvanced` —— 2/5 个有
+全部 6 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `RH_MagiHumanGenerate`
+- `RH_MagiHumanModelLoader`
+- `SaveVideo`
 
 ## 典型参数
 

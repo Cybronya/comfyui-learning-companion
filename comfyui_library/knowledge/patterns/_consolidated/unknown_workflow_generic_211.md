@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_211
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9857
-common_nodes: [ImageResize+, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage]
+coverage: 0.911273
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/nano 全能图片V1 多图融合_1965088425118453762.json, 图片生成/图生图/tonnie-全能图片V1人物变换任意角度背景保持不变_1998360946592612354.json, 图片生成/图生图/tonnie-全能图片V1真人转手办_1998355922957295617.json, 图片生成/图生图/tonnie-全能图片V1脑壳套人_1998359523926663170.json, 图片生成/图生图/三寿角色一致性（四视图）_1987810955415457794.json, 图片生成/图生图/全能图片V1 三图_1968839390380347393.json, 图片生成/图生图/全能图片V1 单图_1963478031736213506.json, 图片生成/图生图/全能图片V1 四图融合_1970048530469580802.json, 图片生成/图生图/全能图片V1-lmage2lmage-图生图-傲雪AIGC_1994422410524889090.json, 图片生成/图生图/全能图片V1基础多图编辑（A pose）_1975563839305592834.json]
+members: [图片生成/图生图/图生图 aigc -image-2.5（9 图）太平_2106710783739650050.json, 图片生成/图生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007293119000577.json, 图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2111999248962244609.json, 图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2113908508688216066.json, 图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json, 图片生成/文生图/模版二 正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2108073873093775361.json, 图片生成/文生图/正面全身去头 强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2101536463837024257.json, 图片生成/文生图/（RH版）即梦4.5电商商品拍摄场图工作流(白底图生成场景图4K) V1.0_1998105602192736257.json, 平台全量/Seedream 4.0高清放大_1965658969350000641.json, 平台全量/丰胸_1890341331649351682.json, 平台全量/工业产品精修_1948517231702487042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_211
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/nano 全能图片V1 多图融合_1965088425118453762.json、图片生成/图生图/tonnie-全能图片V1人物变换任意角度背景保持不变_1998360946592612354.json、图片生成/图生图/tonnie-全能图片V1真人转手办_1998355922957295617.json、图片生成/图生图/tonnie-全能图片V1脑壳套人_1998359523926663170.json、图片生成/图生图/三寿角色一致性（四视图）_1987810955415457794.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/图生图 aigc -image-2.5（9 图）太平_2106710783739650050.json、图片生成/图生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007293119000577.json、图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2111999248962244609.json、图片生成/图生图/模版二_正面全身去头_强制模型只能从右侧高清特写图读取面部特征，解决远景人脸崩坏问题。_2113908508688216066.json、图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `ImageResize+`
+全部 11 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Translator`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Combine Prompt` —— 1/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
-- `PresetTextSelector` —— 1/10 个有
+- `CR Prompt Text` —— 9/11 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 6/11 个有
+- `RH_Jimeng4_Image2Image` —— 5/11 个有
+- `Image Comparer (rgthree)` —— 3/11 个有
 
 ## 典型参数
 

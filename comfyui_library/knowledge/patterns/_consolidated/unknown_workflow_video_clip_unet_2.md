@@ -1,84 +1,81 @@
 ---
 name: unknown_workflow_video_clip_unet_2
 type: Unknown Workflow
-frequency: 16
+frequency: 18
 level: weak
-coverage: 0.894
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Replace, DF_Integer, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, PrimitiveBoolean, RH_Captioner, SimpleMath+, TextBox, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy ifElse, easy int, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.918889
+common_nodes: [CLIPLoader, CLIPTextEncode, LoadImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2-14B-rapid 图生视频-最新加速模型_1950737220787458049.json, 视频生成/图生视频/wan2.2图生视频-加速工作流_1950763373552164866.json, 视频生成/图生视频/wan2.2官方图生视频，自动润色提示词_1950052256939950082.json, 视频生成/图生视频/【动态壁纸】wan2.2 视频生成工作流_1959201352268328961.json, 视频生成/图生视频/【动态海报】wan2.2 人物一致性｜图生视频_1955506935590260737.json, 视频生成/图生视频/【动态海报】wan2.2 人物一致性｜图生视频_1955507451593310209.json, 视频生成/图生视频/【最新】wan2.2 图生视频加速流_1955509045698465793.json, 视频生成/图生视频/【电影级】Wan 2.2官方图生视频｜AI 扩写提示词_1950373850129326082.json, 视频生成/图生视频/【高清】wan2.2 动态壁纸生成器｜加速_1955497249860194306.json, 视频生成/图生视频/刚开源的wan2.2-14B 官方图生视频+自动提示词_1950111733920784385.json, 视频生成/图生视频/明星海报｜Wan2.2-14B图生视频加速流_1959203655159328769.json, 视频生成/文生视频/wan2.2-14B 官方图生视频+自动提示词_1950878967190454273.json, 视频生成/文生视频/wan2.2-14B 官方图生视频+自动提示词_1951086042193571841.json, 视频生成/文生视频/wan2.2-14B+官方图生视频+自动提示词_1983353614280368130.json, 视频生成/文生视频/【效果炸裂】wan2.2-14B最新稳定图生视频工作流_1950410149463769089.json, 视频生成/文生视频/万相官方wan2.2图生视频_1949867321068314625.json]
+members: [视频生成/图生视频/0001-WAN2.2-基础图生视频_2051154615328092161.json, 视频生成/图生视频/06wan2.2图生视频+全节点注释_2055499386683183105.json, 视频生成/图生视频/Aiwood wan2.2+2.1二阶图生视频_2076115967696003073.json, 视频生成/图生视频/Aiwood wan2.2+2.1二阶图生视频，上传图片加入提示词，点击运行生成所需视频，高清好用！_2075475746235174913.json, 视频生成/图生视频/Remix Wan2.2-i2V 6步极速版版-官方版_2018238424574070785.json, 视频生成/图生视频/Remix_i2v_v2.1图生视频工作流_2067237434458468353.json, 视频生成/图生视频/Remix超丝滑图生视频动态模型-官方工作流_1986706185669832705.json, 视频生成/图生视频/Remix超丝滑图生视频动态模型-官方工作流_2029757199156776962.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1 浮云_1996401587960561665.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1954509798727413761.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1993525014328705026.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_2114564471111905282.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_2114671381353943042.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 图生视频加速版_1950026797163438082.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 图生视频（工作室自用）_2027632357276131329.json, 视频生成/图生视频/Wan2.2 14B+LightX2V超极速图生视频_1952642819863318529.json, 视频生成/图生视频/Wan2.2 Smooth高质量图生视频极速版_2033413176150204417.json, 视频生成/图生视频/wan2.2图生视频Smooth版_2039903476511150082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_unet_2
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/wan2.2-14B-rapid 图生视频-最新加速模型_1950737220787458049.json、视频生成/图生视频/wan2.2图生视频-加速工作流_1950763373552164866.json、视频生成/图生视频/wan2.2官方图生视频，自动润色提示词_1950052256939950082.json、视频生成/图生视频/【动态壁纸】wan2.2 视频生成工作流_1959201352268328961.json、视频生成/图生视频/【动态海报】wan2.2 人物一致性｜图生视频_1955506935590260737.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/0001-WAN2.2-基础图生视频_2051154615328092161.json、视频生成/图生视频/06wan2.2图生视频+全节点注释_2055499386683183105.json、视频生成/图生视频/Aiwood wan2.2+2.1二阶图生视频_2076115967696003073.json、视频生成/图生视频/Aiwood wan2.2+2.1二阶图生视频，上传图片加入提示词，点击运行生成所需视频，高清好用！_2075475746235174913.json、视频生成/图生视频/Remix Wan2.2-i2V 6步极速版版-官方版_2018238424574070785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：18
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
+全部 18 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Replace`
-- `DF_Integer`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `PrimitiveBoolean`
-- `RH_Captioner`
-- `SimpleMath+`
-- `TextBox`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy ifElse`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 14/16 个有
-- `CLIPVisionLoader` —— 14/16 个有
-- `KSamplerAdvanced` —— 14/16 个有
-- `easy cleanGpuUsed` —— 14/16 个有
-- `PathchSageAttentionKJ` —— 12/16 个有
-- `LayerUtility: PurgeVRAM` —— 10/16 个有
-- `LayerUtility: PurgeVRAM V2` —— 6/16 个有
-- `LoraLoaderModelOnly` —— 6/16 个有
-- `PatchModelPatcherOrder` —— 6/16 个有
-- `TorchCompileModelWanVideoV2` —— 6/16 个有
-- `KSampler` —— 2/16 个有
-- `Wan_video_prompt_generator` —— 2/16 个有
-- `easy promptLine` —— 1/16 个有
+- `KSamplerAdvanced` —— 17/18 个有
+- `ModelSamplingSD3` —— 17/18 个有
+- `WanImageToVideo` —— 17/18 个有
+- `LoraLoaderModelOnly` —— 13/18 个有
+- `PathchSageAttentionKJ` —— 12/18 个有
+- `LayerUtility: PurgeVRAM` —— 8/18 个有
+- `JWInteger` —— 7/18 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/18 个有
+- `CLIPVisionEncode` —— 4/18 个有
+- `CLIPVisionLoader` —— 4/18 个有
+- `ModelPatchTorchSettings` —— 3/18 个有
+- `ImageResizeKJv2` —— 2/18 个有
+- `Seed (rgthree)` —— 2/18 个有
+- `easy cleanGpuUsed` —— 2/18 个有
+- `CR Prompt Text` —— 1/18 个有
+- `Float` —— 1/18 个有
+- `ImageScaleBy` —— 1/18 个有
+- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1` —— 1/18 个有
+- `RunningHub Deepcleaner` —— 1/18 个有
+- `SaveImage` —— 1/18 个有
+- `Text` —— 1/18 个有
+- `UnetLoaderGGUF` —— 1/18 个有
+- `WanMoeKSampler` —— 1/18 个有
+- `easy anythingIndexSwitch` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 16 | 50% |
-| Prompt 约束强度(CFG) | 14 | 1 - 20 | 16 | 45% |
-| 采样算法 | 3.5 | 1 - 3.5 | 14 | 49% |
-| 调度器 | euler | - | 16 | 88% |
-| 重绘幅度 | simple | - | 16 | 88% |
+| 采样步数 | fixed | - | 18 | 78% |
+| Prompt 约束强度(CFG) | 6 | 4 - 20 | 18 | 48% |
+| 采样算法 | 1 | 1 - 3.5 | 18 | 50% |
+| 调度器 | lcm | - | 18 | 44% |
+| 重绘幅度 | simple | - | 18 | 94% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，16 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 14，观测区间 1 - 20，16 个样本，取值分散，一致性仅 45%
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，14 个样本，取值分散，一致性仅 49%
-- 调度器 最常用 euler，16 个样本，一致性 88%
-- 重绘幅度 最常用 simple，16 个样本，一致性 88%
+- 采样步数 最常用 fixed，18 个样本，一致性 78%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 20，18 个样本，取值分散，一致性仅 48%
+- 采样算法 中位数 1，观测区间 1 - 3.5，18 个样本，取值分散，一致性仅 50%
+- 调度器 最常用 lcm，18 个样本，一致性 44%
+- 重绘幅度 最常用 simple，18 个样本，一致性 94%
 - 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

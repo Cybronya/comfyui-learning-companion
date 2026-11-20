@@ -3,33 +3,38 @@ name: unknown_workflow_generic_1501
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7915
-common_nodes: [LoadImage, PrimitiveStringMultiline, SaveImage]
+coverage: 0.765
+common_nodes: [CR Prompt Text, CR Text, CR Text Replace, JDCN_StringToList, LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, Seed (rgthree), ShellAgentPluginOutputText, Text Concatenate, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/图像编辑工作流｜Luma Uni-1 Max 九种画幅_2099690034629795842.json, 图片生成/图生图/图像编辑工作流｜万相 2.7 Pro 九图融合 4K_2099690043723051010.json]
+members: [图片生成/反推提示词/(自用)Ai绘画提示词自动生成50组（g3p）_2006365523214344193.json, 图片生成/文生图/Ai绘画提示词自动生成50组V2（g3p）_2017610183333126145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1501
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图像编辑工作流｜Luma Uni-1 Max 九种画幅_2099690034629795842.json、图片生成/图生图/图像编辑工作流｜万相 2.7 Pro 九图融合 4K_2099690043723051010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/(自用)Ai绘画提示词自动生成50组（g3p）_2006365523214344193.json、图片生成/文生图/Ai绘画提示词自动生成50组V2（g3p）_2017610183333126145.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Replace`
+- `JDCN_StringToList`
 - `LoadImage`
-- `PrimitiveStringMultiline`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan27ImageEditPro` —— 1/2 个有
-- `RH_LumaUni1MaxImageEdit` —— 1/2 个有
+- `Seed (rgthree)`
+- `ShellAgentPluginOutputText`
+- `Text Concatenate`
+- `easy showAnything`
 
 ## 典型参数
 

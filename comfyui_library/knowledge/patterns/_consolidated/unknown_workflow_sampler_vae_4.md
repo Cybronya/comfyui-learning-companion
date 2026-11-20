@@ -1,48 +1,57 @@
 ---
 name: unknown_workflow_sampler_vae_4
 type: Unknown Workflow
-frequency: 38
+frequency: 89
 level: moderate
-coverage: 0.964895
-common_nodes: [CreateVideo, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode]
+coverage: 0.980989
+common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 FL2VA 开源版｜把脑洞拍成电影_2099155383624491010.json, 视频生成/图生视频/MiniMax H3 FL2VA 开源版｜让文字长出画面_2099154893285183490.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-文生视频_2084121517687918593.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-文生视频_2089177524910772226.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-文生视频_2089233328657489921.json, 视频生成/图生视频/MiniMax+H3+文生视频+开源版 (1)_2090246910992015361.json, 视频生成/图生视频/MiniMaxH3! 开源！免费！ 文生视频!_2099764964792823809.json, 视频生成/图生视频/MiniMaxH3! 开源！免费！ 文生视频!_2099773820025532418.json, 视频生成/图生视频/（图+音频）对口型，开源海螺minimax-H3文生视频_2084054621579993090.json, 视频生成/文生视频/A-3 MiniMax-H3 文生视频 RH版 _  零质量损失_2084990482056306690.json, 视频生成/文生视频/Mini Max H3_文生视频_2084125597894270978.json, 视频生成/文生视频/Mini max H3 文生视频工作流_2084118797358817282.json, 视频生成/文生视频/MiniMax H3 FL2VA 开源版｜一句话，让灵感变成电影_2099153702077681666.json, 视频生成/文生视频/MiniMax H3 FL2VA 开源版｜把脑洞拍成视频_2099147908674310146.json, 视频生成/文生视频/MiniMax H3 FL2VA-文生视频_2084904065531731969.json, 视频生成/文生视频/MiniMax H3 FL2VA-文生视频工作流（开源版）_2084159388578832386.json, 视频生成/文生视频/MiniMax H3 FL2VA开源文生视频_2084284900252938242.json, 视频生成/文生视频/MiniMax H3 开源版-文生视频_2084203175875272706.json, 视频生成/文生视频/MiniMax H3 开源版-文生视频满血版_2084117488903745538.json, 视频生成/文生视频/MiniMax H3 开源版-文生视频满血版_2084148106299527169.json, 视频生成/文生视频/MiniMax H3 开源版-文生视频满血版_2084214320967278594.json, 视频生成/文生视频/MiniMax H3 开源版-文生视频满血版_2084333103211958274.json, 视频生成/文生视频/MiniMax H3 开源版-文生视频满血版_2084623514027515906.json, 视频生成/文生视频/MiniMax H3 文生视频 开源版_2084141460479365122.json, 视频生成/文生视频/MiniMax H3 文生视频 开源版_2084452718734823426.json, 视频生成/文生视频/MiniMax H3 文生视频 开源版_2084826724885422081.json, 视频生成/文生视频/MiniMax H3 文生视频_2084120290040311809.json, 视频生成/文生视频/MiniMax H3 文生视频（使用官方推荐的提示词）_2085993801935577089.json, 视频生成/文生视频/MiniMax H3文生视频_2084169931259736065.json, 视频生成/文生视频/MiniMax H3文生视频_2084480390626107394.json, 视频生成/文生视频/MiniMax H3｜一句话生成15秒原生有声短视频_2084249875478302721.json, 视频生成/文生视频/MiniMax+H3+开源版-文生视频满血版_2084175340666187778.json, 视频生成/文生视频/MiniMax-H3-满血版文生视频_2084152966013079554.json, 视频生成/文生视频/MiniMaxH3! 开源！免费！ 文生视频!_2084150029526327298.json, 视频生成/文生视频/MiniMaxH3! 开源！免费！ 文生视频!_2099690394123587585.json, 视频生成/文生视频/MiniMaxH3文生视频_2084670553989931010.json, 视频生成/文生视频/开源MiniMaxH3文生视频!_2084478324713279490.json, 视频生成/文生视频/最强开源- 文生视频!MiniMaxH3!-极快生成_2084440128273080321.json]
+members: [视频生成/图生视频/minmax h3 fl2va_first_frame首帧参考_2084071018590720002.json, 视频生成/图生视频/免费MiniMax H3 FL2VA开源版-首尾帧参考生视频_2084551627255672833.json, 视频生成/图生视频/图生视频  视频生成  MiniMax H3 FL2VA开源版_2098126302132916226.json, 视频生成/图生视频/图生视频- FL2VA开源版_2090327858144169986.json, 视频生成/图生视频/图生视频-MiniMax H3 FL2VA稳定版_2087121595956551682.json, 视频生成/图生视频/图生视频尾帧MiniMax+H3+FL2VA开源版-尾帧参考生视频_2084131204399452161.json, 视频生成/图生视频/图转视频-游戏类_2115680897184919554.json, 视频生成/图生视频/图转视频-游戏类_2116013180626497538.json, 视频生成/图生视频/开源 MiniMax-H3 图生视频_2084186483061256194.json, 视频生成/图生视频/海螺MiniMax H3-首尾帧参考生视频_2084121004649050113.json, 视频生成/图生视频/视频  视频生成  MiniMax H3 FL2VA开源版-图生视频_2114229418334973953.json, 视频生成/图生视频/视频生成   图生视频  MiniMax H3_2085409451011567618.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版   图生视频_2096660523474579458.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版  图生视频_2104261248987783169.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版  图生视频_2104617146126004225.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版  图生视频_2105281090012405762.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版  图生视频_2105629519242678274.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2085410085441990657.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2085416459634823170.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2085422116693962754.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2085624068816068610.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2085637438852128769.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2085637912825257985.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2086652460965388289.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2086652655954386946.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2086684217349591041.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2097065040527577090.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2097256869164306434.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2097259033639088130.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2102073670461116417.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2102080767735189506.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2102101637975330818.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2107822612310216705.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2108119924643295234.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2109891322839654402.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2110804156847058945.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2110815191679197185.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2110823705193566210.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2111355613367324673.json, 视频生成/图生视频/视频生成  MiniMax H3 FL2VA开源版-图生视频_2114786357322272769.json, 视频生成/图生视频/视频生成  图生视频  MiniMax H3 FL2VA开源版_2110056419226640386.json, 视频生成/图生视频/视频生成  图生视频  MiniMax H3 图生视频_2085232630907363330.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2085419289145856001.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2085419601076244482.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2085429063778394113.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2086678798543704065.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2087053752141438978.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2087104039485005826.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2087588413846417409.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2087595773281267714.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2090702660914728962.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2092658322532036610.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2094240669056454657.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2094336583427252225.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2094342362251223041.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2094623538362798082.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2096899560818962433.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2097134328093429761.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2097188586683723777.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2099410256009977857.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2099415152004263937.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2100138254992494594.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2105118882586513409.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2109456460869623809.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2109465014859026433.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2110822759449325570.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2113574420286623746.json, 视频生成/图生视频/视频生成 MiniMax H3 FL2VA开源版-图生视频_2113595900881883138.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2085227411985231873.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2087581194568429569.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2087955681608556546.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2087961064133718017.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2088153684491464706.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2090708981139460098.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2098319498863538178.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2099195826202566658.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2099750137051570178.json, 视频生成/图生视频/视频生成 图生视频  MiniMax H3 -图生视频_2108827668971085826.json, 视频生成/图生视频/首尾帧参考生视频 MiniMax H3 FL2VA开源版_2091936668042485762.json, 视频生成/图生视频/首尾帧图生视频MiniMax+H3+FL2VA开源版-首尾帧参考生视频_2084125402418733057.json, 视频生成/图生视频/首尾帧生视频 -开源海螺minimax-H3_2084249905740210177.json, 视频生成/图生视频/（开源版）H3图生视频（图生视频&首尾帧）_2084181753610194946.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-图生视频+全节点注释_2084168465803464705.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-图生视频_2092263577653694466.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-图生视频_2092965212705083394.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-图生视频_2105674788806160385.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-首尾帧10秒视频_2084170874189598722.json, 视频生成/文生视频/MiniMax H3 开源版-首帧参考生视频_2084478495324987394.json, 视频生成/文生视频/MiniMax H3开源版-首_尾_文生视频集合版_2084490201048633345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 38 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 FL2VA 开源版｜把脑洞拍成电影_2099155383624491010.json、视频生成/图生视频/MiniMax H3 FL2VA 开源版｜让文字长出画面_2099154893285183490.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-文生视频_2084121517687918593.json、视频生成/图生视频/MiniMax+H3+FL2VA开源版-文生视频_2089177524910772226.json、视频生成/图生视频/MiniMax+H3+FL2VA开源版-文生视频_2089233328657489921.json…）
+> 由 `engine/knowledge_consolidation` 从 89 个 workflow 归纳得出（视频生成/图生视频/minmax h3 fl2va_first_frame首帧参考_2084071018590720002.json、视频生成/图生视频/免费MiniMax H3 FL2VA开源版-首尾帧参考生视频_2084551627255672833.json、视频生成/图生视频/图生视频  视频生成  MiniMax H3 FL2VA开源版_2098126302132916226.json、视频生成/图生视频/图生视频- FL2VA开源版_2090327858144169986.json、视频生成/图生视频/图生视频-MiniMax H3 FL2VA稳定版_2087121595956551682.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：38
+- **样本数**：89
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 38 个 workflow 都包含：
+全部 89 个 workflow 都包含：
 - `CreateVideo`
+- `LoadImage`
 - `RHMiniMaxH3DecodeAV`
-- `RHMiniMaxH3DirectModelLoader`
-- `RHMiniMaxH3DirectTextEncoderLoader`
-- `RHMiniMaxH3DirectVAELoader`
 - `RHMiniMaxH3DualSigmaSampler`
 - `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3T2VATarget`
-- `RHMiniMaxH3T2VATextEncode`
+- `RHMiniMaxH3FL2VAEncode`
+- `RHMiniMaxH3FL2VAModelLoader`
+- `RHMiniMaxH3FL2VATarget`
+- `RHMiniMaxH3FL2VATextEncoderLoader`
+- `RHMiniMaxH3FL2VAVAELoader`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveVideo` —— 33/38 个有
-- `GetVideoComponents` —— 11/38 个有
-- `VHS_VideoCombine` —— 11/38 个有
-- `Int` —— 7/38 个有
-- `Float` —— 6/38 个有
-- `JjkText` —— 6/38 个有
-- `CR Text` —— 1/38 个有
-- `DF_Int_to_Float` —— 1/38 个有
-- `easy cleanGpuUsed` —— 1/38 个有
+- `RHMiniMaxH3FL2VAFirstFrameCondition` —— 88/89 个有
+- `ImageResize+` —— 86/89 个有
+- `Int` —— 31/89 个有
+- `ImpactSwitch` —— 6/89 个有
+- `PreviewImage` —— 5/89 个有
+- `JjkText` —— 2/89 个有
+- `RHMiniMaxH3FL2VALastFrameCondition` —— 2/89 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/89 个有
+- `PrimitiveFloat` —— 1/89 个有
+- `RHMiniMaxH3DirectModelLoader` —— 1/89 个有
+- `RHMiniMaxH3DirectTextEncoderLoader` —— 1/89 个有
+- `RHMiniMaxH3DirectVAELoader` —— 1/89 个有
+- `RHMiniMaxH3T2VATarget` —— 1/89 个有
+- `RHMiniMaxH3T2VATextEncode` —— 1/89 个有
+- `easy int` —— 1/89 个有
+- `忽略多组孤海` —— 1/89 个有
 
 ## 典型参数
 

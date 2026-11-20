@@ -1,32 +1,35 @@
 ---
 name: unknown_workflow_sampler_clip_unet_65
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.726308
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.613786
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/SDPP2.0专用全能证件照_2064166912707350529.json, 图片生成/图生图/flux-2-klein-9b双图编辑_2031371708669628417.json, 图片生成/图生图/flux-2-klein-base-9b城市设计_2054581666382925826.json, 图片生成/图生图/flux-2-klein-base-9b城市设计_2059472417961107458.json, 图片生成/图生图/flux-2-klein-base-9b城市设计_2059494781138587649.json, 图片生成/图生图/flux-2-klein-base-9b城市设计_2061286231631286274.json, 图片生成/图生图/flux-2-klein-base-9b城市设计_2062819546272198658.json, 图片生成/图生图/flux-2-klein-base-9b城市设计_2064557309329756162.json, 图片生成/图生图/klein-城市设计-lora4.0版本_2046223772444790786.json, 图片生成/图生图/klein_鸟瞰效果图生成平面图_2042849394952769537.json, 图片生成/图生图/klein_鸟瞰生成_2026259142662430721.json, 图片生成/图生图/图片一键换背景_2082397422550077441.json, 图片生成/图生图/建筑与室内效果图渲染_2021215392135389186.json]
+members: [图片生成/图生图/AI漫剧 分镜一键生成（免费版）_2049505485845434370.json, 图片生成/图生图/AI漫剧 分镜一键生成（免费版）_2049512732680003585.json, 图片生成/图生图/F2 klein 9b多角度漫剧分镜三视图_2061788380777762818.json, 图片生成/图生图/F2_klein_9b多角度漫剧分镜三视图_2087347699246002178.json, 图片生成/图生图/FLUX2-KLEIN 双图编辑 超真实一键换头换_2016348870447472642.json, 图片生成/图生图/Flux2-KLEIN 三图编辑_2016421909616922626.json, 图片生成/图生图/flux2-klein多功能单图_双图编辑_2068895971546845186.json, 图片生成/图生图/flux2-klein多功能单图_双图编辑_2068990679107325953.json, 图片生成/图生图/【Supermate】自用测试白里透红极致皮肤FLUX2-KLEIN _ 文生图+多图编辑大合集_2013554748233883650.json, 图片生成/图生图/一键漫剧分镜流(免费版)-邻家AI大女孩_2049665338568130561.json, 图片生成/图生图/一键漫剧分镜流（免费版）_2013908081847046145.json, 图片生成/文生图/一键漫剧分镜出图（免费版）_2046497420153982978.json, 平台全量/F.2 klein 9b一键多角度漫剧分镜流免费版_2058435700449701890.json, 平台全量/漫剧分镜（free）_2016729008100089858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_65
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/SDPP2.0专用全能证件照_2064166912707350529.json、图片生成/图生图/flux-2-klein-9b双图编辑_2031371708669628417.json、图片生成/图生图/flux-2-klein-base-9b城市设计_2054581666382925826.json、图片生成/图生图/flux-2-klein-base-9b城市设计_2059472417961107458.json、图片生成/图生图/flux-2-klein-base-9b城市设计_2059494781138587649.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/AI漫剧 分镜一键生成（免费版）_2049505485845434370.json、图片生成/图生图/AI漫剧 分镜一键生成（免费版）_2049512732680003585.json、图片生成/图生图/F2 klein 9b多角度漫剧分镜三视图_2061788380777762818.json、图片生成/图生图/F2_klein_9b多角度漫剧分镜三视图_2087347699246002178.json、图片生成/图生图/FLUX2-KLEIN 双图编辑 超真实一键换头换_2016348870447472642.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
 - `KSamplerSelect`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
@@ -40,24 +43,27 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Flux2Scheduler` —— 12/13 个有
-- `LayerUtility: ImageReel` —— 11/13 个有
-- `LayerUtility: ImageReelComposit` —— 11/13 个有
-- `LoraLoaderModelOnly` —— 10/13 个有
-- `PreviewImage` —— 7/13 个有
-- `Int` —— 6/13 个有
-- `CR Prompt Text` —— 3/13 个有
-- `ConditioningZeroOut` —— 2/13 个有
-- `GetImageSize` —— 2/13 个有
-- `INTConstant` —— 2/13 个有
-- `BasicScheduler` —— 1/13 个有
-- `BiRefNet_Hugo` —— 1/13 个有
-- `Image Comparer (rgthree)` —— 1/13 个有
-- `PrimitiveInt` —— 1/13 个有
-- `RH_RhartImageG2ImageToImage` —— 1/13 个有
-- `ShellAgentPluginInputFloat` —— 1/13 个有
-- `easy cleanGpuUsed` —— 1/13 个有
-- `easy imageRemBg` —— 1/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 12/14 个有
+- `INTConstant` —— 12/14 个有
+- `GetNode` —— 11/14 个有
+- `SetNode` —— 11/14 个有
+- `easy cleanGpuUsed` —— 10/14 个有
+- `CR Text Concatenate` —— 9/14 个有
+- `List of strings [Crystools]` —— 9/14 个有
+- `PromptBatchQueue` —— 9/14 个有
+- `ShowText|pysssss` —— 9/14 个有
+- `SomethingToString` —— 9/14 个有
+- `Split String` —— 9/14 个有
+- `LayerUtility: ImageReel` —— 5/14 个有
+- `LayerUtility: ImageReelComposit` —— 5/14 个有
+- `ConditioningZeroOut` —— 2/14 个有
+- `Label (rgthree)` —— 2/14 个有
+- `LoraLoaderModelOnly` —— 2/14 个有
+- `TTResolutionSelector` —— 2/14 个有
+- `AspectRatio` —— 1/14 个有
+- `FloorNode` —— 1/14 个有
+- `PreviewImage` —— 1/14 个有
+- `RH_Jimeng4_Image2Image` —— 1/14 个有
 
 ## 典型参数
 

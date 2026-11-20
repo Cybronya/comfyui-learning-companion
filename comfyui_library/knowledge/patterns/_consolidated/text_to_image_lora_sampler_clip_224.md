@@ -3,72 +3,51 @@ name: text_to_image_lora_sampler_clip_224
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.879889
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.887778
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/4STEP-REF-ALL全能参考｜H3视频图生工作流_2095115253225975809.json, 视频生成/图生视频/4步图片视频参考｜MiniMax-H3 Ref2VA图生视频_2092349573921599490.json, 视频生成/图生视频/8step加速开源版｜MinimaxH3参考生视频图生视频_2093224901363720194.json, 视频生成/图生视频/8步加速1.0正式版｜minimax 1.0视频生视频图生视频工作流_2088345029642379265.json, 视频生成/图生视频/H3-4STEP-REF-ALL全能参考｜四步加速视频生成_2094941361458991106.json, 视频生成/图生视频/MiniMax H3加速版电商4图参考｜数字人模特产品展示图生视频_2090065106997698561.json, 视频生成/图生视频/Minimax H3多参数Lightx2v加速图生视频生成_2088183351814479874.json, 视频生成/图生视频/声音）4步lora视频MinimaxH3-多参生视频（图片_2087336403087745025.json, 视频生成/文生视频/MinimaxH3开源版参考生视频｜9-3-3高质量生成_2095584855844278273.json]
+members: [视频生成/图生视频/MiniMax H3 上下文参考视频+图生视频｜融合运镜与角色_2096868508067000322.json, 视频生成/图生视频/MiniMax H3上下文多参考生视频 多图融合创作_2098822713052844033.json, 视频生成/图生视频/MiniMax H3两段式管线｜图生视频高清直出_2098701054606135298.json, 视频生成/图生视频/MiniMax_H3上下文参考视频加图生视频｜融合运镜与角色一致性_2101908397733011457.json, 视频生成/图生视频/Wan3.0图生视频｜数字人动作迁移一键生成_2092054082633687041.json, 视频生成/图生视频/Wan3.0首尾帧生视频｜图生视频一键生成直出_2092032397171838978.json, 视频生成/图生视频/上下文参考视频融合运镜｜MiniMax H3角色一致性图生视频_2096676491013742593.json, 视频生成/图生视频/动作迁移角色替换AI视频换人｜免改骨架直接换主角｜图生视频_2101892897812606978.json, 视频生成/图生视频/视频修复增强｜去噪清晰化画质提升，老片翻新必备_2101226303985901570.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_224
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/4STEP-REF-ALL全能参考｜H3视频图生工作流_2095115253225975809.json、视频生成/图生视频/4步图片视频参考｜MiniMax-H3 Ref2VA图生视频_2092349573921599490.json、视频生成/图生视频/8step加速开源版｜MinimaxH3参考生视频图生视频_2093224901363720194.json、视频生成/图生视频/8步加速1.0正式版｜minimax 1.0视频生视频图生视频工作流_2088345029642379265.json、视频生成/图生视频/H3-4STEP-REF-ALL全能参考｜四步加速视频生成_2094941361458991106.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 上下文参考视频+图生视频｜融合运镜与角色_2096868508067000322.json、视频生成/图生视频/MiniMax H3上下文多参考生视频 多图融合创作_2098822713052844033.json、视频生成/图生视频/MiniMax H3两段式管线｜图生视频高清直出_2098701054606135298.json、视频生成/图生视频/MiniMax_H3上下文参考视频加图生视频｜融合运镜与角色一致性_2101908397733011457.json、视频生成/图生视频/Wan3.0图生视频｜数字人动作迁移一键生成_2092054082633687041.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
 - `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ReferenceToVideo` —— 8/9 个有
-- `ComfyMathExpression` —— 7/9 个有
-- `LoadAudio` —— 7/9 个有
-- `PrimitiveFloat` —— 7/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/9 个有
-- `VHS_LoadVideo` —— 4/9 个有
-- `PathchSageAttentionKJ` —— 3/9 个有
-- `PrimitiveStringMultiline` —— 3/9 个有
-- `RH_LLMAPI_Pro_Node` —— 3/9 个有
-- `CR Prompt Text` —— 2/9 个有
-- `CR Text` —— 2/9 个有
-- `DF_Text_Box` —— 2/9 个有
-- `GetVideoComponents` —— 2/9 个有
-- `LoadVideo` —— 2/9 个有
-- `MathExpression|pysssss` —— 2/9 个有
-- `MiniMaxH3SigmaShift` —— 2/9 个有
-- `PreviewAny` —— 2/9 个有
-- `PrimitiveInt` —— 2/9 个有
-- `easy showAnything` —— 2/9 个有
-- `ImageScaleToTotalPixels` —— 1/9 个有
-- `MiniMaxH3HybridLoader` —— 1/9 个有
-- `SolAttnPatch` —— 1/9 个有
-- `easy MiniMaxH3ReferenceToVideoBridge` —— 1/9 个有
+- `孤海注释` —— 8/9 个有
+- `LoadImage` —— 6/9 个有
+- `PrimitiveStringMultiline` —— 4/9 个有
+- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 4/9 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 4/9 个有
+- `EmptyImage` —— 3/9 个有
+- `LoadVideo` —— 3/9 个有
+- `PreviewImage` —— 3/9 个有
+- `RH_AlibabaWan30ImageToVideo` —— 2/9 个有
+- `RH_TopazLabs_VideoUpscale` —— 2/9 个有
+- `RHBerniniFullReferenceVideoToVideo` —— 1/9 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 1/9 个有
 
 ## 典型参数
 

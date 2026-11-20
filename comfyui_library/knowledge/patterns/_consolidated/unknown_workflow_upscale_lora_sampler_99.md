@@ -1,67 +1,67 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_99
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.859
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, GrowMask, Image Comparer (rgthree), ImageUpscaleWithModel, InvertMask, JoinImageWithAlpha, KSamplerAdvanced, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, Upscale Model Loader, VAEDecode, VAEEncode, VAELoader, YUAN_TXTConvertAny]
+frequency: 3
+level: moderate
+coverage: 0.730333
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Muter (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/krea2 局部修复_2112729383961194497.json, 图片生成/图生图/图片去红_2070444856769605634.json]
+members: [平台全量/图图大佬的klein4步精修_2056630950309752834.json, 平台全量/废土重绘_2114665856813854722.json, 平台全量/精修、洗图、高清-4K-PLUS版_2067187976433655810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_99
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/krea2 局部修复_2112729383961194497.json、图片生成/图生图/图片去红_2070444856769605634.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/图图大佬的klein4步精修_2056630950309752834.json、平台全量/废土重绘_2114665856813854722.json、平台全量/精修、洗图、高清-4K-PLUS版_2067187976433655810.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `ConditioningZeroOut`
-- `GrowMask`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Muter (rgthree)`
+- `Flux2Scheduler`
+- `GetImageSize`
 - `Image Comparer (rgthree)`
-- `ImageUpscaleWithModel`
-- `InvertMask`
-- `JoinImageWithAlpha`
-- `KSamplerAdvanced`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `Upscale Model Loader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `YUAN_TXTConvertAny`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LatentBlend` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
+- `Anything Everywhere3` —— 2/3 个有
+- `ConstrainImage|pysssss` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `InspyrenetRembg` —— 2/3 个有
+- `KOOK_SaveJPGImage` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 6 | - | 2 | 67% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler_ancestral | - | 2 | 50% |
-| 重绘幅度 | sgm_uniform | - | 2 | 50% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,9 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，2 个样本，一致性 50%
-- 重绘幅度 最常用 sgm_uniform，2 个样本，一致性 50%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,76 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_540
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.773
-common_nodes: [BasicScheduler, CLIPTextEncode, CR Text Concatenate, CS-LTXGridDirector, ComfySwitchNode, DualCLIPLoader, ImageRGBChannel, Int, JjkText, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LayerColor: Levels, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, PreviewImage, PrimitiveBoolean, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_Utils, SamplerCustom, SaveImage, SetLatentNoiseMask, ShowAnything|Mie, SolidMask, TextInput_, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirectorGuide, easy showAnything, ttN concat, 孤海注释]
+coverage: 0.962333
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/竖屏短剧 多宫格工作流，六宫格 九宫格  全自动 LTX2.3 无字幕_2078050041528406017.json, 视频生成/图生视频/ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2073463653397184512.json, 视频生成/图生视频/【商业】ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2071936473150087169.json, 视频生成/图生视频/竖屏短剧 多宫格工作流，六宫格 九宫格  全自动 LTX2.3 无字幕_2066428314536996866.json]
+members: [视频生成/图生视频/室内设计图生视频工作流_2034129372994605057.json, 视频生成/图生视频/手办360度产品展示(wan2.1图生视频5s)_1900406595552014337.json, 视频生成/图生视频/抖起来_1997177362523570178.json, 视频生成/图生视频/接吻一镜到底丝滑舌吻_1926200490214780930.json, 视频生成/图生视频/极速泼水变装特效可灵同款wan2.1+accvid_1930526505158496258.json, 视频生成/图生视频/极速泼水变装特效可灵同款wan2.1+accvid_2018170301388955650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_540
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/竖屏短剧 多宫格工作流，六宫格 九宫格  全自动 LTX2.3 无字幕_2078050041528406017.json、视频生成/图生视频/ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2073463653397184512.json、视频生成/图生视频/【商业】ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2071936473150087169.json、视频生成/图生视频/竖屏短剧 多宫格工作流，六宫格 九宫格  全自动 LTX2.3 无字幕_2066428314536996866.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/室内设计图生视频工作流_2034129372994605057.json、视频生成/图生视频/手办360度产品展示(wan2.1图生视频5s)_1900406595552014337.json、视频生成/图生视频/抖起来_1997177362523570178.json、视频生成/图生视频/接吻一镜到底丝滑舌吻_1926200490214780930.json、视频生成/图生视频/极速泼水变装特效可灵同款wan2.1+accvid_1930526505158496258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `CR Text Concatenate`
-- `CS-LTXGridDirector`
-- `ComfySwitchNode`
-- `DualCLIPLoader`
-- `ImageRGBChannel`
-- `Int`
-- `JjkText`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
-- `LayerColor: Levels`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `RHHiddenNodes`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Utils`
-- `SamplerCustom`
-- `SaveImage`
-- `SetLatentNoiseMask`
-- `ShowAnything|Mie`
-- `SolidMask`
-- `TextInput_`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
-- `YusuLTXDirectorGuide`
-- `easy showAnything`
-- `ttN concat`
-- `孤海注释`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2ImageToImage` —— 3/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
+- `WanVideoBlockSwap` —— 5/6 个有
+- `WanVideoTeaCache` —— 5/6 个有
+- `CR Text` —— 3/6 个有
+- `WanVideoEnhanceAVideo` —— 3/6 个有
+- `WanVideoTorchCompileSettings` —— 3/6 个有
+- `ImageScaleToTotalPixels` —— 2/6 个有
+- `ImageSizeAndBatchSize` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
+- `MathExpression|pysssss` —— 2/6 个有
+- `WanVideoSLG` —— 2/6 个有
+- `easy imageSize` —— 2/6 个有
+- `Replace Text _O` —— 1/6 个有
+- `SaveAnimatedWEBP` —— 1/6 个有
 
 ## 典型参数
 

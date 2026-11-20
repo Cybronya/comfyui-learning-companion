@@ -1,0 +1,37 @@
+# Get Image From Photoshop Layer
+
+## 节点类型
+
+`Get Image From Photoshop Layer`
+
+## 分类
+
+Image Processing
+
+## 作用
+
+图像处理节点（按节点名关键词推断，TODO(待验证)）
+
+## 实测使用
+
+出现在本库 1 个 workflow 中。
+
+## 输入
+
+- `layer_or_group:LAYER`（1 次）
+- `bound:MASK`（1 次）
+
+## 输出
+
+- `rgb_out:IMAGE`（1 次）
+- `alpha_out:MASK`（1 次）
+
+## 参数（widgets_values 按位置，参数名未知）
+
+常见取值：
+
+- `["PS_uui/### 当前文档 ###", "", ""]`（1 次）
+
+## 可信度
+
+Generated（自动起草：输入/输出/取值分布为 workflow 实测；作用为名称推断）TODO(待验证)

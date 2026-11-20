@@ -1,71 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_vae_85
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.666833
-common_nodes: [AudioCrop, AudioSeparation, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.931857
+common_nodes: [INTConstant, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/视频改口型【 数字人 3.0 新版 】_2011113680129236994.json, 视频生成/图生视频/高质量数字人+对口型+情感口播+++InfiniTetalk+超自然数字人对口型_2079740437828558849.json, 视频生成/图生视频/（数字人）单图生视频+视频配口型工作流_2059508557720154113.json, 音频生成/音频生成/InfiniteTalk单人视频对口型_2048286460733820930.json, 音频生成/音频生成/YZ金鱼-InfiniteTalk超自然数字人对口型单人视频驱动_2025113443430305793.json, 音频生成/音频生成/单人对口型视频驱动_2036437031634604034.json]
+members: [视频生成/图生视频/Skyreelsv3-人物与物品一致视频生成_2020431913210617857.json, 视频生成/图生视频/Skyreelsv3-人物与物品一致视频生成tvc广告短视频_2029224724693262338.json, 视频生成/图生视频/phantom多图参考视频生成_1916457677722161154.json, 视频生成/图生视频/phontom 多图参考_1928118108420980738.json, 视频生成/图生视频/多参图片生视频skyreelsV3_2019240301956702210.json, 视频生成/图生视频/多参考一致性视频_Phantom_1927430164823564289.json, 视频生成/图生视频/稳定的图像编辑 fusionx_1934649298468708353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_85
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/视频改口型【 数字人 3.0 新版 】_2011113680129236994.json、视频生成/图生视频/高质量数字人+对口型+情感口播+++InfiniTetalk+超自然数字人对口型_2079740437828558849.json、视频生成/图生视频/（数字人）单图生视频+视频配口型工作流_2059508557720154113.json、音频生成/音频生成/InfiniteTalk单人视频对口型_2048286460733820930.json、音频生成/音频生成/YZ金鱼-InfiniteTalk超自然数字人对口型单人视频驱动_2025113443430305793.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Skyreelsv3-人物与物品一致视频生成_2020431913210617857.json、视频生成/图生视频/Skyreelsv3-人物与物品一致视频生成tvc广告短视频_2029224724693262338.json、视频生成/图生视频/phantom多图参考视频生成_1916457677722161154.json、视频生成/图生视频/phontom 多图参考_1928118108420980738.json、视频生成/图生视频/多参图片生视频skyreelsV3_2019240301956702210.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `MultiTalkWav2VecEmbeds`
-- `SetNode`
+全部 7 个 workflow 都包含：
+- `INTConstant`
+- `LoadImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 5/6 个有
-- `CLIPVisionLoader` —— 5/6 个有
-- `MultiTalkModelLoader` —— 5/6 个有
-- `PlaySound|pysssss` —— 5/6 个有
-- `WanVideoLoraSelect` —— 5/6 个有
-- `Anything Everywhere` —— 4/6 个有
-- `VHS_LoadVideo` —— 4/6 个有
-- `WanVideoEncode` —— 4/6 个有
-- `easy int` —— 4/6 个有
-- `LoadImage` —— 3/6 个有
-- `PreviewAudio` —— 3/6 个有
-- `VHS_VideoInfoLoaded` —— 3/6 个有
-- `WanVideoTorchCompileSettings` —— 3/6 个有
-- `easy showAnything` —— 3/6 个有
-- `FL_FloatToInt` —— 1/6 个有
-- `JWIntegerToString` —— 1/6 个有
-- `Primitive integer [Crystools]` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `RH_GetAudioDuration` —— 1/6 个有
-- `Text` —— 1/6 个有
-- `easy convertAnything` —— 1/6 个有
+- `ImagePadKJ` —— 6/7 个有
+- `ImageResizeKJ` —— 6/7 个有
+- `LoadWanVideoT5TextEncoder` —— 5/7 个有
+- `WanVideoTextEncode` —— 5/7 个有
+- `PreviewImage` —— 3/7 个有
+- `WanVideoEnhanceAVideo` —— 3/7 个有
+- `WanVideoExperimentalArgs` —— 3/7 个有
+- `WanVideoLoraSelect` —— 3/7 个有
+- `WanVideoSLG` —— 3/7 个有
+- `WanVideoTeaCache` —— 3/7 个有
+- `WanVideoTorchCompileSettings` —— 3/7 个有
+- `easy imageRemBg` —— 3/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `WanVideoTextEncodeCached` —— 2/7 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/7 个有
+- `GIMMVFI_interpolate` —— 1/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/7 个有
+- `WanVideoMagCache` —— 1/7 个有
+- `WanVideoVRAMManagement` —— 1/7 个有
 
 ## 典型参数
 

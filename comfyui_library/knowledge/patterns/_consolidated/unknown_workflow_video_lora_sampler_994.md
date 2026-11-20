@@ -3,54 +3,53 @@ name: unknown_workflow_video_lora_sampler_994
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.8535
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageCompositeMasked, ImageResizeKJv2, LayerUtility: ColorImage V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/🌟infiniteTalk单人数字人_1961732854524874753.json, 视频生成/文生视频/云 InfiniteTalk单人数字人工作流  效果炸裂 速度快_1958330393214783490.json]
+members: [平台全量/带货口播影视视频人物替换（无限时长）--scail2 sam组合工作流_2069424521005850625.json, 视频生成/图生视频/SCAIL2-无限时长-带货数字人替换_2069293271733596161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_994
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🌟infiniteTalk单人数字人_1961732854524874753.json、视频生成/文生视频/云 InfiniteTalk单人数字人工作流  效果炸裂 速度快_1958330393214783490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/带货口播影视视频人物替换（无限时长）--scail2 sam组合工作流_2069424521005850625.json、视频生成/图生视频/SCAIL2-无限时长-带货数字人替换_2069293271733596161.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `CheckpointLoaderSimple`
+- `ImageCompositeMasked`
 - `ImageResizeKJv2`
-- `LoadAudio`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode V2`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus SamplerFromSettings`
+- `WanAnimatePlus SamplerSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/2 个有
-- `PainterAudioLength` —— 1/2 个有
-- `RIFEInterpolation` —— 1/2 个有
-- `ShowAnything|Mie` —— 1/2 个有
-- `ToFloat` —— 1/2 个有
-- `ToInt` —— 1/2 个有
-- `easy mathInt` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
 
 ## 典型参数
 

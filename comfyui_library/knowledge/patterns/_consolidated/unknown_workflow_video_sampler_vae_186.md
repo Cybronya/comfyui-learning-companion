@@ -1,54 +1,53 @@
 ---
 name: unknown_workflow_video_sampler_vae_186
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.726
-common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, RMBG, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
+frequency: 3
+level: moderate
+coverage: 0.984
+common_nodes: [GetImageSize+, ImagePadKJ, ImageResizeKJ, LoadWanVideoT5TextEncoder, MaskToImage, String Literal, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Skyreel V3 多图参考视频_2018210609103380482.json, 视频生成/图生视频/图生视频-多参考图-Skyreel-V3-R2V_2017750442649853954.json]
+members: [平台全量/🤖WAN2.1-VACE一键视频扩展_1924687955204763649.json, 视频生成/图生视频/WAN-VACE（视频扩展）_1982061265277337602.json, 视频生成/文生视频/WAN2.2-AllInOne视频扩展_1963909570361966594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_186
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Skyreel V3 多图参考视频_2018210609103380482.json、视频生成/图生视频/图生视频-多参考图-Skyreel-V3-R2V_2017750442649853954.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/🤖WAN2.1-VACE一键视频扩展_1924687955204763649.json、视频生成/图生视频/WAN-VACE（视频扩展）_1982061265277337602.json、视频生成/文生视频/WAN2.2-AllInOne视频扩展_1963909570361966594.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageResizeKJv2`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `GetImageSize+`
+- `ImagePadKJ`
+- `ImageResizeKJ`
 - `LoadWanVideoT5TextEncoder`
-- `RMBG`
+- `MaskToImage`
+- `String Literal`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `DF_Int_to_Float` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `intToFloat _O` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
+- `GetNode` —— 1/3 个有
+- `GrowMaskWithBlur` —— 1/3 个有
+- `WanVideoLoraSelect` —— 1/3 个有
+- `WanVideoSetLoRAs` —— 1/3 个有
+- `WanVideoVACEModelSelect` —— 1/3 个有
 
 ## 典型参数
 
@@ -60,4 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

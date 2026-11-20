@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_300
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.698875
-common_nodes: [JjkText, LoadImage, PrimitiveInt, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.646667
+common_nodes: [LoadImage, PreviewImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/YJ-APP-全能图片2-官方-多图编辑_2041355240607322113.json, 图片生成/图生图/YJ-FAST-全能2-grand-模板2-步骤1_2038858256566722562.json, 图片生成/图生图/图片侵权处理_2055135171652931586.json, 图片生成/图生图/图片侵权处理_2061649370055004162.json, 图片生成/图生图/图片侵权处理_2065286080911462402.json, 图片生成/文生图/YJ-FAST-全能-生成分镜图片-jianan-tmp2-step1_2034543395112226818.json, 图片生成/文生图/YJ-FAST-全能2-Jianan-模板2-步骤1_2033493511571513346.json, 数字人/数字人/YJ-APP-全能图片2-多图编辑_2033461380896006145.json]
+members: [图片生成/图生图/一图生多图_2074870551881015297.json, 图片生成/图生图/一键cos换脸哪吒2熬闰_1889238461398900738.json, 平台全量/全民妖族之申公豹-图生图-小宣喧-RH_1888967928811872257.json, 平台全量/全民魔童-图生图-小宣喧-RH_1887156034765508610.json, 平台全量/全民龙族之东海敖光-图生图-小宣喧-RH_1888968470124552194.json, 平台全量/全民龙族之敖丙-图生图-小宣喧-RH_1888968392936775681.json, 平台全量/全民龙族之西海敖闰-图生图-小宣喧-RH_1887705954132361218.json, 平台全量/变身术---《哪吒》AI姑姑敖闰_1890370025440858114.json, 平台全量/头像一键换风格_1866460202097602561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_300
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/YJ-APP-全能图片2-官方-多图编辑_2041355240607322113.json、图片生成/图生图/YJ-FAST-全能2-grand-模板2-步骤1_2038858256566722562.json、图片生成/图生图/图片侵权处理_2055135171652931586.json、图片生成/图生图/图片侵权处理_2061649370055004162.json、图片生成/图生图/图片侵权处理_2065286080911462402.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/一图生多图_2074870551881015297.json、图片生成/图生图/一键cos换脸哪吒2熬闰_1889238461398900738.json、平台全量/全民妖族之申公豹-图生图-小宣喧-RH_1888967928811872257.json、平台全量/全民魔童-图生图-小宣喧-RH_1887156034765508610.json、平台全量/全民龙族之东海敖光-图生图-小宣喧-RH_1888968470124552194.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `JjkText`
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `PrimitiveInt`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `PreviewImage`
+- `RHHiddenNodes`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Switch` —— 5/8 个有
-- `easy ifElse` —— 3/8 个有
-- `easy promptLine` —— 3/8 个有
+- `Float` —— 7/9 个有
+- `easy int` —— 1/9 个有
 
 ## 典型参数
 

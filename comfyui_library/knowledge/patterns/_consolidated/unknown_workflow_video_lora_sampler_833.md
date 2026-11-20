@@ -1,109 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_833
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.618
-common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Display Int (rgthree), DrawMaskOnImage, DrawViTPose, GetImageRangeFromBatch, GetNode, GrowMask, ImageBatchMulti, ImageResizeKJv2, Int, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, PoseDetectionOneToAllAnimation, PreviewImage, Primitive integer [Crystools], RH_Translator, SDPoseOODLoader, SDPoseOODProcessor, SetNode, SimpleMath+, TorchCompileModelWanVideoV2, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, YOLOModelLoader, easy float, easy sam3ModelLoader, easy sam3VideoSegmentation, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.547333
+common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/Animate人物替全能版_2009039132361756673.json, 视频生成/图生视频/（换背景+人物替换_2039239856160772097.json]
+members: [平台全量/让动漫人物跳江南Style骑马舞_1956547249952182274.json, 视频生成/图生视频/【gen全能视频Si】wan2.2-funcontrol让动漫人物跳舞_1961412963351597058.json, 视频生成/图生视频/一键生成超顶AI动漫视频！WAN2.2大模型太强了！_1951120660623990785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_833
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Animate人物替全能版_2009039132361756673.json、视频生成/图生视频/（换背景+人物替换_2039239856160772097.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/让动漫人物跳江南Style骑马舞_1956547249952182274.json、视频生成/图生视频/【gen全能视频Si】wan2.2-funcontrol让动漫人物跳舞_1961412963351597058.json、视频生成/图生视频/一键生成超顶AI动漫视频！WAN2.2大模型太强了！_1951120660623990785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：62%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BlockifyMask`
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `Display Int (rgthree)`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `GetImageRangeFromBatch`
 - `GetNode`
-- `GrowMask`
-- `ImageBatchMulti`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `Int`
-- `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
-- `OnnxDetectionModelLoader`
-- `PathchSageAttentionKJ`
-- `PoseAndFaceDetection`
-- `PoseDetectionOneToAllAnimation`
 - `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RH_Translator`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
 - `SetNode`
-- `SimpleMath+`
-- `TorchCompileModelWanVideoV2`
-- `TrimVideoLatent`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimateToVideo`
-- `YOLOModelLoader`
-- `easy float`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_IntToFloat` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `GroundingDinoModelLoader_SDPose` —— 1/2 个有
-- `ImageBlend` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `easy convertAnything` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `DWPreprocessor` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `RIFE VFI` —— 2/3 个有
+- `RMBG` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `Wan22FunControlToVideo` —— 2/3 个有
+- `ImageFromBatch+` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `WanImageToVideo` —— 1/3 个有
+- `wanBlockSwap` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 63 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 10 | 3 | 53% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 63，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 63，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 10，3 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

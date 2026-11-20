@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_262
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.916667
-common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.7417
+common_nodes: [SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/scc 文生图_2027011474685698050.json, "图片生成/文生图/全能pro单图编辑,文生图_2051182805664714753.json", 图片生成/文生图/全能图像Pro（文生图）_2018635348938592257.json, 图片生成/文生图/全能图片 Pro_2032032541141639169.json, 图片生成/文生图/全能图片V1 2 & Pro 文生图_图生图_1992523164144168961.json, 图片生成/文生图/全能图片V1 2 & Pro-文生图版强的可怕-text-to-image_1991900059478585346.json, 图片生成/文生图/全能图片V1 2 文生图_1992265412136030210.json, 图片生成/文生图/全能图片V1 Pro双图编辑_1993152726519529474.json, 图片生成/文生图/全能图片V12-香蕉2_1991696350530334722.json]
+members: [图片生成/图生图/柏拉图全能图片G-image2_多图参考_图生图_2049086558329901058.json, 图片生成/文生图/02_城市微缩切片_2056334605820719105.json, 图片生成/文生图/03_3D纸雕四宫格_2056334787534741505.json, 图片生成/文生图/04_无缝四象限纸世界_2056336899580719105.json, 图片生成/文生图/05_雾感极简石版画_2056336981935869953.json, 图片生成/文生图/【阡陌】全能图片G-2-文生图-官方稳定版Image 2_2049053252511076353.json, 图片生成/文生图/全能图像G image2.0文生图_官方稳定版_2049383994692734977.json, 图片生成/文生图/全能图像G image2.0文生图官方稳定版_2049313423787302914.json, 图片生成/文生图/全能图像G2+官方版【文生图】_2057444514612207617.json, 图片生成/文生图/柏拉图全能图片G-image2_多图参考_图生图_2053818189842264066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_262
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/scc 文生图_2027011474685698050.json、图片生成/文生图/全能pro单图编辑,文生图_2051182805664714753.json、图片生成/文生图/全能图像Pro（文生图）_2018635348938592257.json、图片生成/文生图/全能图片 Pro_2032032541141639169.json、图片生成/文生图/全能图片V1 2 & Pro 文生图_图生图_1992523164144168961.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/柏拉图全能图片G-image2_多图参考_图生图_2049086558329901058.json、图片生成/文生图/02_城市微缩切片_2056334605820719105.json、图片生成/文生图/03_3D纸雕四宫格_2056334787534741505.json、图片生成/文生图/04_无缝四象限纸世界_2056336899580719105.json、图片生成/文生图/05_雾感极简石版画_2056336981935869953.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `RH_Nano_Banana2_Image2Image`
+全部 10 个 workflow 都包含：
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 7/9 个有
-- `LoadImage` —— 5/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
-- `TextInput_` —— 2/9 个有
+- `CR Text` —— 9/10 个有
+- `LoadImage` —— 8/10 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 8/10 个有
+- `🙅GPT_image_2_综合@炮老师的小课堂` —— 2/10 个有
+- `PreviewImage` —— 1/10 个有
 
 ## 典型参数
 

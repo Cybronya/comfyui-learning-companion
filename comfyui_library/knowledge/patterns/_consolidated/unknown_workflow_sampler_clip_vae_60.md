@@ -3,67 +3,77 @@ name: unknown_workflow_sampler_clip_vae_60
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.78325
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.84625
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Text, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, GetImageSize+, KSamplerSelect, LoadImage, ModelSamplingFlux, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/文生图/双节棍加速千问 image工作流_1965043199712612353.json, 图片生成/文生图/在线-Z-T2I-1128_1994378488129986561.json, 图片生成/文生图/基础文生图 Z-Image-Turbo（带LoRA加载节点）_2007330137645260802.json, 图片生成/文生图/基础案例basic_switch_node+全节点注释_2055478851081383937.json]
+members: [图片生成/图生图/🥎Kontext 局部重绘+万物消除【题词优化】🤹_1938850655211544577.json, 图片生成/图生图/🥎Kontext 老照片一键修复+上色🤹_1939498210631270401.json, 图片生成/图生图/🥎kontext多图组合优化方案🤹_1939865850146889730.json, 平台全量/图像编辑 _ Kontext局部重绘_1951636255434027009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_60
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/双节棍加速千问 image工作流_1965043199712612353.json、图片生成/文生图/在线-Z-T2I-1128_1994378488129986561.json、图片生成/文生图/基础文生图 Z-Image-Turbo（带LoRA加载节点）_2007330137645260802.json、图片生成/文生图/基础案例basic_switch_node+全节点注释_2055478851081383937.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/🥎Kontext 局部重绘+万物消除【题词优化】🤹_1938850655211544577.json、图片生成/图生图/🥎Kontext 老照片一键修复+上色🤹_1939498210631270401.json、图片生成/图生图/🥎kontext多图组合优化方案🤹_1939865850146889730.json、平台全量/图像编辑 _ Kontext局部重绘_1951636255434027009.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPLoader`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
+- `CR Text`
+- `DualCLIPLoader`
 - `EmptySD3LatentImage`
-- `KSampler`
-- `ModelSamplingAuraFlow`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `GetImageSize+`
+- `KSamplerSelect`
+- `LoadImage`
+- `ModelSamplingFlux`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `RH_LLMAPI_NODE` —— 3/4 个有
 - `UNETLoader` —— 3/4 个有
-- `ConditioningZeroOut` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `ComfySwitchNode` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `NunchakuQwenImageDiTLoader` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `easy seed` —— 1/4 个有
+- `Convert Masks to Images` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `Image To Mask` —— 2/4 个有
+- `ImageAndMaskPreview` —— 2/4 个有
+- `ImageScale` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `Mask Fill Holes` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `easy imageSize` —— 2/4 个有
+- `Compositor3` —— 1/4 个有
+- `CompositorConfig3` —— 1/4 个有
+- `CompositorTools3` —— 1/4 个有
+- `DeepTranslatorTextNode` —— 1/4 个有
+- `Get resolution [Crystools]` —— 1/4 个有
+- `JoinStrings` —— 1/4 个有
+- `NunchakuFluxDiTLoader` —— 1/4 个有
+- `easy imageRemBg` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 9 | 4 - 10 | 4 | 71% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 4 | 53% |
-| 采样算法 | res_multistep | - | 4 | 75% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 4 - 10，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，4 个样本
-- 采样算法 最常用 res_multistep，4 个样本，一致性 75%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（3/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

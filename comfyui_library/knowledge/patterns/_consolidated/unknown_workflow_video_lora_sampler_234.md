@@ -1,68 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_234
 type: Unknown Workflow
-frequency: 9
+frequency: 11
 level: moderate
-coverage: 0.615222
-common_nodes: [CreateCFGScheduleFloatList, Display Any (rgthree), GetNode, LoadImage, PreviewImage, Seed (rgthree), SetNode, VHS_VideoCombine, VideoContinuationGenerator, WanVideoBlender, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
+coverage: 0.442455
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/wan2.2 2张旋转-简化_2038442502138630146.json, 图片生成/图生图/wan2.2 4张旋转_2031620500375474178.json, 视频生成/图生视频/Wan2.2 Fun VACE多张图首尾帧串联_1968331846952079361.json, 视频生成/图生视频/Wan2.2 Fun VACE多张图首尾帧串联_1968663694437699585.json, 视频生成/图生视频/wan2.2 2张旋转_2037003847746461698.json, 视频生成/图生视频/wan2.2 4张旋转-简化_2037072303892209666.json, 视频生成/图生视频/wan2.2 4张旋转-简化_2039320713127006210.json, 视频生成/图生视频/wan2.2 4张旋转-简化_2039344777270923265.json, 视频生成/图生视频/wan2.2-4张旋转-简化-新提示词_2039706653515321346.json]
+members: [平台全量/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2117776608714117122.json, 视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill自用短片-单采_2093313597047918594.json, 视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill自用短片-单采_2094575888913485825.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+lightx2v+8step+高动态加速流_2087230947061223426.json, 视频生成/图生视频/AITUDOU-MiniMax+H3+全能参考+数字人+人物音频一致性_2086164860592807937.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2099054818437459969.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2099773384988127233.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2100033508268920833.json, 视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2109119782388846593.json, 视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2114895184294146050.json, 视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2115214855065137154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_234
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/wan2.2 2张旋转-简化_2038442502138630146.json、图片生成/图生图/wan2.2 4张旋转_2031620500375474178.json、视频生成/图生视频/Wan2.2 Fun VACE多张图首尾帧串联_1968331846952079361.json、视频生成/图生视频/Wan2.2 Fun VACE多张图首尾帧串联_1968663694437699585.json、视频生成/图生视频/wan2.2 2张旋转_2037003847746461698.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2117776608714117122.json、视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill自用短片-单采_2093313597047918594.json、视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill自用短片-单采_2094575888913485825.json、视频生成/图生视频/AITUDOU-MiniMax+H3+lightx2v+8step+高动态加速流_2087230947061223426.json、视频生成/图生视频/AITUDOU-MiniMax+H3+全能参考+数字人+人物音频一致性_2086164860592807937.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `Display Any (rgthree)`
+全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `GetNode`
+- `KSamplerSelect`
 - `LoadImage`
-- `PreviewImage`
-- `Seed (rgthree)`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VideoContinuationGenerator`
-- `WanVideoBlender`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 8/9 个有
-- `CR Text` —— 6/9 个有
-- `ImageConcanate` —— 6/9 个有
-- `ImpactSwitch` —— 6/9 个有
-- `RH_LLMAPI_NODE` —— 6/9 个有
-- `Anything Everywhere` —— 1/9 个有
-- `Bjornulf_ShowFloat` —— 1/9 个有
-- `ImageResizeKJv2` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `PrimitiveFloat` —— 1/9 个有
-- `PrimitiveInt` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
-- `ShowText|pysssss` —— 1/9 个有
+- `SplitSigmas` —— 9/11 个有
+- `CR Prompt Text` —— 7/11 个有
+- `JWFloat` —— 7/11 个有
+- `MiniMaxH3AVLatentSeparateT8` —— 7/11 个有
+- `MinimaxH3LatentUpscaler3D` —— 7/11 个有
+- `PT_H3ConcatAVLatent` —— 7/11 个有
+- `VHS_LoadAudioUpload` —— 7/11 个有
+- `VHS_LoadVideo` —— 7/11 个有
+- `VRAM_Debug` —— 7/11 个有
+- `Float` —— 4/11 个有
+- `Label (rgthree)` —— 4/11 个有
+- `Text` —— 4/11 个有
+- `MiniMaxChunkFeedForward` —— 3/11 个有
+- `MiniMaxLowVRAMAttention` —— 3/11 个有
+- `PreviewImage` —— 3/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
+- `SigmasGraph` —— 2/11 个有
+- `LoadAudio` —— 1/11 个有
+- `PreviewAny` —— 1/11 个有
+- `RH_LLMAPI_Pro_Node` —— 1/11 个有
+- `ZNGB_AudioCrop` —— 1/11 个有
 
 ## 典型参数
 

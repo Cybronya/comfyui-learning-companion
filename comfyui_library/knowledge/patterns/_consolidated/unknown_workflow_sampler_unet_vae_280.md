@@ -1,75 +1,79 @@
 ---
 name: unknown_workflow_sampler_unet_vae_280
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.846333
-common_nodes: [BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, ModelSamplingAuraFlow, PreviewImage, SamplerCustom, SaveImage, Text, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: []
+coverage: 0.6535
+common_nodes: [CLIPLoader, ComfySwitchNode, KSampler, LoadImage, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/boogu-edit 产品详情页-海报设计_2069237677500747778.json, 图片生成/图生图/boogu_edit+Qwen3.5-完美洗图_2069637206297374722.json, 图片生成/图生图/商业产品详情页海报设计-boogu-edit_2069396750527451137.json]
+members: [图片生成/图生图/Qwen Image 2.1 Image Edit Viggle 4-Step 角色表生成工作流_2106005227299237889.json, 图片生成/图生图/Qwen2.1 抠图_2101886414299426818.json, 图片生成/图生图/qwen image 2.1 10图编辑_2105493076268634114.json, 图片生成/图生图/qwen-image2.1-编辑_2101867093296762882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_280
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/boogu-edit 产品详情页-海报设计_2069237677500747778.json、图片生成/图生图/boogu_edit+Qwen3.5-完美洗图_2069637206297374722.json、图片生成/图生图/商业产品详情页海报设计-boogu-edit_2069396750527451137.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 Image Edit Viggle 4-Step 角色表生成工作流_2106005227299237889.json、图片生成/图生图/Qwen2.1 抠图_2101886414299426818.json、图片生成/图生图/qwen image 2.1 10图编辑_2105493076268634114.json、图片生成/图生图/qwen-image2.1-编辑_2101867093296762882.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `SamplerCustom`
+- `ComfySwitchNode`
+- `KSampler`
+- `LoadImage`
+- `QwenImage21Cache`
+- `ResolutionSelector`
 - `SaveImage`
-- `Text`
-- `TextEncodeBooguEdit`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `MultiTextConcatenate` —— 2/3 个有
-- `PreviewTextNode` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `孤海注释` —— 2/3 个有
-- `CustomAddLabel` —— 1/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `ImageLoader` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `PDRatioSelector` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `EmptyLatentImage` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `ComfyMathExpression` —— 2/4 个有
+- `ImageScale` —— 2/4 个有
+- `PrimitiveBoolean` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `ModelAttentionBackend` —— 1/4 个有
+- `ModelSamplingFlux` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `TextGenerateLTX2Prompt` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1280 | 1280 - 1280 | 3 | 100% |
-| 高度 | 1280 | 1280 - 1280 | 3 | 100% |
+| 采样步数 | 32.5 | 4 - 40 | 4 | 46% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1280，观测区间 1280 - 1280，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1280，观测区间 1280 - 1280，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 32.5，观测区间 4 - 40，4 个样本，取值分散，一致性仅 46%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）

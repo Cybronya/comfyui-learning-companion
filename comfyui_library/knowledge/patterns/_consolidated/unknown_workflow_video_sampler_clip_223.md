@@ -1,91 +1,68 @@
 ---
 name: unknown_workflow_video_sampler_clip_223
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9335
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAudio, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, ShowText|pysssss, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy cleanGpuUsed, easy convertAnything, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionAudio, easy indexTTSGenerateSimple, llama_cpp_instruct_adv, llama_cpp_model_loader]
+frequency: 3
+level: strong
+coverage: 0.728333
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageScaleBy, KSamplerAdvanced, Label (rgthree), ModelSamplingSD3, Pick From Batch (mtb), PreviewImage, PrimitiveStringMultiline, RIFE VFI, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, mxSlider2D]
 problems: []
 missing: []
-members: [图片生成/反推提示词/LTX2.3人物动作迁移V1_2031355634699997185.json, 视频生成/图生视频/LTX2.3人物动作迁移V2_2031367576470687746.json]
+members: [视频生成/文生视频/Smooth Mix Wan2.2大模型，生成AI视频速度快+电影级画质！_1979104736274190338.json, 视频生成/文生视频/smoothMix2.0文生视频_1983518201407578113.json, 视频生成/文生视频/smoothMix首尾帧_1983522956250914818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_223
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/LTX2.3人物动作迁移V1_2031355634699997185.json、视频生成/图生视频/LTX2.3人物动作迁移V2_2031367576470687746.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Smooth Mix Wan2.2大模型，生成AI视频速度快+电影级画质！_1979104736274190338.json、视频生成/文生视频/smoothMix2.0文生视频_1983518201407578113.json、视频生成/文生视频/smoothMix首尾帧_1983522956250914818.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
-- `LoadImage`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `PrimitiveInt`
+- `ImageScaleBy`
+- `KSamplerAdvanced`
+- `Label (rgthree)`
+- `ModelSamplingSD3`
+- `Pick From Batch (mtb)`
+- `PreviewImage`
 - `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `ShowText|pysssss`
-- `SolidMask`
+- `RIFE VFI`
+- `SaveImage`
+- `Seed (rgthree)`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
-- `VHS_LoadVideo`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
 - `easy cleanGpuUsed`
-- `easy convertAnything`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSEmotionAudio`
-- `easy indexTTSGenerateSimple`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
+- `mxSlider2D`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 1/2 个有
-- `LTXAddVideoICLoRAGuide` —— 1/2 个有
-- `LTXICLoRALoaderModelOnly` —— 1/2 个有
-- `LTXVAddGuideMulti` —— 1/2 个有
-- `LTXVImgToVideoConditionOnly` —— 1/2 个有
-- `Qwen3ASRLoader` —— 1/2 个有
-- `Qwen3ASRTranscribe` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
-- `easy imageSizeBySide` —— 1/2 个有
+- `Power Lora Loader (rgthree)` —— 2/3 个有
+- `WanImageToVideo` —— 2/3 个有
+- `CLIPVisionEncode` —— 1/3 个有
+- `CLIPVisionLoader` —— 1/3 个有
+- `ColorMatch` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `StringConcatenate` —— 1/3 个有
+- `WanFirstLastFrameToVideo` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler_ancestral | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -93,4 +70,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

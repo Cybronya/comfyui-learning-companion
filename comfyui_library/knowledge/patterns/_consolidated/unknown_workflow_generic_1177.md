@@ -3,34 +3,39 @@ name: unknown_workflow_generic_1177
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.618333
-common_nodes: [Apply Whisper, LoadAudio, SaveAudio]
+coverage: 0.776333
+common_nodes: [CR Text Concatenate, Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, PreviewImage, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [音频生成/音频生成/FishAudio S2 单人语音克隆_2033160873774161921.json, 音频生成/音频生成/fishaudio_s2pro_单人声音克隆 超强_2033475203359051777.json, 音频生成/音频生成/fishaudio_s2pro_多人对话_超强_2033486836382834689.json]
+members: [图片生成/图生图/全能图片G-image2.5_2099336261852024833.json, 图片生成/图生图/全能图片V1 pro-建筑效果图-固定随机种子_1995414974153547778.json, 图片生成/文生图/NB pro_1992811429535477761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1177
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2 单人语音克隆_2033160873774161921.json、音频生成/音频生成/fishaudio_s2pro_单人声音克隆 超强_2033475203359051777.json、音频生成/音频生成/fishaudio_s2pro_多人对话_超强_2033486836382834689.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G-image2.5_2099336261852024833.json、图片生成/图生图/全能图片V1 pro-建筑效果图-固定随机种子_1995414974153547778.json、图片生成/文生图/NB pro_1992811429535477761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `LoadAudio`
-- `SaveAudio`
+- `CR Text Concatenate`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `FishS2VoiceCloneTTS` —— 2/3 个有
-- `TextBoxNode_UTK` —— 2/3 个有
-- `FishS2MultiSpeakerTTS` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/3 个有
 
 ## 典型参数
 

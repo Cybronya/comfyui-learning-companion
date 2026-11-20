@@ -1,34 +1,55 @@
 ---
 name: unknown_workflow_video_sampler_29
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [LoadAudio, LoadImage, RHHiddenNodes, VHS_VideoCombine, WanVideoDecode, WanVideoSampler]
+frequency: 5
+level: moderate
+coverage: 0.8404
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFlashVSRInput, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoFlashVSRDecoderLoader, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode]
 problems: []
 missing: []
-members: [数字人/数字人/使用中_packed_横板_1990325968747286529.json, 数字人/数字人/使用中_packed_男_冷静版_1990325986870915074.json]
+members: [平台全量/wanvideo-FlashVSR视频高清放大_1978717016997695489.json, 平台全量/wanvideo_1_3B_FlashVSR_upscale_1978731009237733377.json, 平台全量/视频变高清_FlashVSR_upscale_example_1987756849841811458.json, 平台全量/视频放大指定放大倍数+KJ_Wan_Flash_VSR+全节点注释_2059521563585765378.json, 视频生成/文生视频/Flash VSR视频超分辨率_1979451793736372225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_29
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/使用中_packed_横板_1990325968747286529.json、数字人/数字人/使用中_packed_男_冷静版_1990325986870915074.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/wanvideo-FlashVSR视频高清放大_1978717016997695489.json、平台全量/wanvideo_1_3B_FlashVSR_upscale_1978731009237733377.json、平台全量/视频变高清_FlashVSR_upscale_example_1987756849841811458.json、平台全量/视频放大指定放大倍数+KJ_Wan_Flash_VSR+全节点注释_2059521563585765378.json、视频生成/文生视频/Flash VSR视频超分辨率_1979451793736372225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `LoadImage`
-- `RHHiddenNodes`
+全部 5 个 workflow 都包含：
+- `LoadWanVideoT5TextEncoder`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddFlashVSRInput`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoExtraModelSelect`
+- `WanVideoFlashVSRDecoderLoader`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTextEncode`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageConcatMulti` —— 4/5 个有
+- `ImageResizeKJv2` —— 4/5 个有
+- `GetImageSizeAndCount` —— 3/5 个有
+- `VHS_VideoInfo` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `WanVideoTorchCompileSettings` —— 2/5 个有
+- `AILab_MiniCPM_4_V` —— 1/5 个有
+- `ColorMatch` —— 1/5 个有
+- `ImageStitch` —— 1/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
+- `RHHiddenNodes` —— 1/5 个有
+- `WanVideoBlockSwap` —— 1/5 个有
 
 ## 典型参数
 
@@ -40,4 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_generic_706
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.65775
-common_nodes: [ConstrainImage|pysssss, ImageConcatMulti, LoadImage, RH_LLMAPI_NODE, RH_Translator, SaveImage, Text Multiline, easy showAnything]
+coverage: 0.8708
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageNProOfficialEdit, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Generative Pre-trained Transformer2.0 Image生图_2042522381096325121.json, 图片生成/图生图/全能图片V2_2031286131135877121.json, 图片生成/图生图/全能图片V2_2042522446858821634.json, 图片生成/图生图/全能图片编辑演示-双图_2029747949034541057.json]
+members: [图片生成/图生图/全能图片PRO-图像编辑-图生图-官方稳定版_2076499871443542018.json, 图片生成/图生图/全能图片PRO-图像编辑（官方稳定版-RH-OpenAPI）_2081912537196617729.json, 图片生成/图生图/全能图片PRO-图生图-官方稳定版一键生成_2113651433215193089.json, 图片生成/文生图/全能图片PRO-图像编辑-图生图-官方稳定版_2075940116257927169.json, 平台全量/全能图片PRO-图像编辑-图生图-官方稳定版_2076504068117319681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_706
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Generative Pre-trained Transformer2.0 Image生图_2042522381096325121.json、图片生成/图生图/全能图片V2_2031286131135877121.json、图片生成/图生图/全能图片V2_2042522446858821634.json、图片生成/图生图/全能图片编辑演示-双图_2029747949034541057.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片PRO-图像编辑-图生图-官方稳定版_2076499871443542018.json、图片生成/图生图/全能图片PRO-图像编辑（官方稳定版-RH-OpenAPI）_2081912537196617729.json、图片生成/图生图/全能图片PRO-图生图-官方稳定版一键生成_2113651433215193089.json、图片生成/文生图/全能图片PRO-图像编辑-图生图-官方稳定版_2075940116257927169.json、平台全量/全能图片PRO-图像编辑-图生图-官方稳定版_2076504068117319681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ConstrainImage|pysssss`
-- `ImageConcatMulti`
+全部 5 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_Translator`
+- `RH_RhartImageNProOfficialEdit`
 - `SaveImage`
-- `Text Multiline`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
-- `RH_RhartImageG2ImageToImage` —— 1/4 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/4 个有
+- `Label (rgthree)` —— 2/5 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 

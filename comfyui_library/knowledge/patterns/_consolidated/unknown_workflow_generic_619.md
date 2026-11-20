@@ -1,44 +1,40 @@
 ---
 name: unknown_workflow_generic_619
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8816
-common_nodes: [LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.5575
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_sora2, LoadImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/QwenTTS 语音克隆_2035317122842234882.json, 数字人/数字人/声音克隆Qwen3+TTS（支持多国语言）_2043359522479149058.json, 音频生成/音频生成/QWEN3 TTS 声音设计、克隆_2014873824315056129.json, 音频生成/音频生成/Qwen3 TTS全套语音生成-克隆_设计_自定义_2014687730025893889.json, 音频生成/音频生成/声音克隆Qwen3+TTS（支持多国语言）_2014615319716827138.json]
+members: [视频生成/图生视频/全能视频S 多角色客串+参考场景（@character方式-贞贞AI工坊API）_1990003672761421825.json, 视频生成/图生视频/全能视频S建筑图生视频工作流_2036087236680228865.json, 视频生成/图生视频/全能视频S漫画分镜转视频V1(贞贞AI工坊API版)_1992457552340512770.json, 视频生成/图生视频/全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1992457015104696321.json, 视频生成/图生视频/全能视频S视频+角色客串@提取+客串视频_1993837517334134785.json, 视频生成/文生视频/DG(已整理)：全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1993916589173047298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_619
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/QwenTTS 语音克隆_2035317122842234882.json、数字人/数字人/声音克隆Qwen3+TTS（支持多国语言）_2043359522479149058.json、音频生成/音频生成/QWEN3 TTS 声音设计、克隆_2014873824315056129.json、音频生成/音频生成/Qwen3 TTS全套语音生成-克隆_设计_自定义_2014687730025893889.json、音频生成/音频生成/声音克隆Qwen3+TTS（支持多国语言）_2014615319716827138.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/全能视频S 多角色客串+参考场景（@character方式-贞贞AI工坊API）_1990003672761421825.json、视频生成/图生视频/全能视频S建筑图生视频工作流_2036087236680228865.json、视频生成/图生视频/全能视频S漫画分镜转视频V1(贞贞AI工坊API版)_1992457552340512770.json、视频生成/图生视频/全能视频S漫画分镜转视频自动版V1(贞贞AI工坊API版)_1992457015104696321.json、视频生成/图生视频/全能视频S视频+角色客串@提取+客串视频_1993837517334134785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_sora2`
+- `LoadImage`
+- `SaveVideo`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 4/5 个有
-- `CR Text` —— 4/5 个有
-- `SaveAudioMP3` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `AudioCrop` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `Qwen3TTSVoiceDesign` —— 2/5 个有
-- `Text` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
+- `Text Concatenate` —— 3/6 个有
+- `Comfly_sora2_character` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
+- `CR Text` —— 1/6 个有
 
 ## 典型参数
 

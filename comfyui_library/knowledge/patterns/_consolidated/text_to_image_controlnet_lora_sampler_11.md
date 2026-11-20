@@ -3,69 +3,73 @@ name: text_to_image_controlnet_lora_sampler_11
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.862667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), ImageConcanate, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingAuraFlow, PreviewImage, QwenImageDiffsynthControlnet, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.812333
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetLoader, EmptyLatentImage, ImageScaleToTotalPixels, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RepeatImageBatch, RunningHub_ImageQwenI2L_Loader(Style), RunningHub_ImageQwenI2L_LoraGenerator, SaveImage, SetUnionControlNetType, StringFunction|pysssss, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageConcat, easy imageSize, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: ["图片生成/图生图/Qwen Image, Controlnet 深度图转绘_1987177038278758402.json", "图片生成/图生图/Qwen Image,线稿控制 室内设计_1987163511790964738.json", "图片生成/图生图/Qwen Image，千问图生图, Controlnet 深度图转绘，SeedVR2.5.1_1987760149278429186.json"]
+members: [图片生成/图生图/002.Qwen编辑之王006.风格迁移_2034498156632743938.json, 图片生成/图生图/Qwen-Image-i2L(Image to LoRA)_2000794820996198402.json, 图片生成/图生图/一张图出一个风格lora-I2L完美风格迁移流_2000077628591796225.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_lora_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen Image, Controlnet 深度图转绘_1987177038278758402.json、图片生成/图生图/Qwen Image,线稿控制 室内设计_1987163511790964738.json、图片生成/图生图/Qwen Image，千问图生图, Controlnet 深度图转绘，SeedVR2.5.1_1987760149278429186.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/002.Qwen编辑之王006.风格迁移_2034498156632743938.json、图片生成/图生图/Qwen-Image-i2L(Image to LoRA)_2000794820996198402.json、图片生成/图生图/一张图出一个风格lora-I2L完美风格迁移流_2000077628591796225.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `ControlNetApplyAdvanced`
+- `ControlNetLoader`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchLoader`
 - `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `QwenImageDiffsynthControlnet`
+- `RepeatImageBatch`
+- `RunningHub_ImageQwenI2L_Loader(Style)`
+- `RunningHub_ImageQwenI2L_LoraGenerator`
 - `SaveImage`
+- `SetUnionControlNetType`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy imageConcat`
+- `easy imageSize`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DepthAnything_V2` —— 2/3 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `Canny` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 2/3 个有
+- `ImageBatchMulti` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
 - `Qwen3_VQA` —— 1/3 个有
-- `SeedVR2LoadDiTModel` —— 1/3 个有
-- `SeedVR2LoadVAEModel` —— 1/3 个有
-- `SeedVR2VideoUpscaler` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 3 | 100% |
-| 高度 | 512 | 512 - 512 | 3 | 100% |
-| 采样步数 | 6 | 6 - 8 | 3 | 86% |
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
 | 采样算法 | euler | - | 3 | 100% |
 | 调度器 | simple | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 512 | 512 - 512 | 3 | 100% |
+| 高度 | 512 | 512 - 512 | 3 | 100% |
+| ControlNet 权重 | 0.8 | 0.8 - 0.8 | 3 | 100% |
 
 ## 常见问题
 
@@ -75,11 +79,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 6，观测区间 6 - 8，3 个样本，取值集中（一致性 86%）
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，3 个样本，一致性 100%
 - 调度器 最常用 simple，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，3 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.8，观测区间 0.8 - 0.8，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

@@ -3,37 +3,45 @@ name: unknown_workflow_generic_1609
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.73
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, RH_SeedreamV5LiteImageToImage, RH_SeedreamV5ProImageToImage, SaveImage]
+coverage: 0.931
+common_nodes: [AutoImageResize, CR Value, Cut By Mask, DF_Integer, Get Image Size, Image Comparer (rgthree), ImageCASharpening+, ImageResize+, ImageScale, ImpactMinMax, InvertMask (segment anything), LoadImage, MaskToImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [图片生成/文生图/Seedream 5.0 全家图桶 Pro+Lite 图生图+文生图_2076303899585236993.json, 图片生成/文生图/多图编辑 Seedance5_2076327076877135873.json]
+members: [图片生成/图生图/SeedVR2.5图片快速高清放大_2011478686431715329.json, 图片生成/图生图/SeedVR2.5图片高清放大_2038075237920673794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1609
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedream 5.0 全家图桶 Pro+Lite 图生图+文生图_2076303899585236993.json、图片生成/文生图/多图编辑 Seedance5_2076327076877135873.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2.5图片快速高清放大_2011478686431715329.json、图片生成/图生图/SeedVR2.5图片高清放大_2038075237920673794.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
+- `AutoImageResize`
+- `CR Value`
+- `Cut By Mask`
+- `DF_Integer`
+- `Get Image Size`
+- `Image Comparer (rgthree)`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImageScale`
+- `ImpactMinMax`
+- `InvertMask (segment anything)`
 - `LoadImage`
-- `PreviewImage`
-- `RH_SeedreamV5LiteImageToImage`
-- `RH_SeedreamV5ProImageToImage`
+- `MaskToImage`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/2 个有
-- `RH_SeedreamV5ProTextToImage` —— 1/2 个有
+- `SeedVR2`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `easy anythingIndexSwitch`
 
 ## 典型参数
 

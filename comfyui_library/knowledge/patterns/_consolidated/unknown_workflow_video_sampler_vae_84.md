@@ -1,66 +1,76 @@
 ---
 name: unknown_workflow_video_sampler_vae_84
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.7535
-common_nodes: [CR Text, GetNode, ImageConcatMulti, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.887143
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/三图参考-MAGREF图生视频_1935607588300193793.json, 视频生成/图生视频/单图参考-MAGREF图生视频_1935586332242530306.json, 视频生成/图生视频/单图参考-MAGREF图生视频_2055192187125682177.json, 视频生成/图生视频/双图参考-MAGREF图生视频_1935509475614707714.json, 视频生成/图生视频/视频-破次元融合版-多主体融合 FusionX-VACE_1934523459177250818.json, 视频生成/文生视频/wan2.1 MAGREF_FusionX 3倍加速图生视频_1938855885659627522.json]
+members: [数字人/数字人/InfiniteTalk单人版数字人【超过1分钟的】_2003019304549380098.json, 数字人/数字人/InfiniteTalk对口型工作流 V1.0_2052269912881676289.json, 数字人/数字人/Infinitetalk单人数字人无限时长自循环_2088948708812611585.json, 数字人/数字人/Infinitetalk单人数字人无限时长自循环_2108715715753766913.json, 数字人/数字人/LLM+InfiniteTalk+IndexTTS_1962434815804968962.json, 数字人/数字人/LLM+MultiTalk+IndexTTS数字人_1942407637285679105.json, 视频生成/图生视频/InfiniteTalk & LatentSync 对口型工作流 V1.0_2028880263652052993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_84
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/三图参考-MAGREF图生视频_1935607588300193793.json、视频生成/图生视频/单图参考-MAGREF图生视频_1935586332242530306.json、视频生成/图生视频/单图参考-MAGREF图生视频_2055192187125682177.json、视频生成/图生视频/双图参考-MAGREF图生视频_1935509475614707714.json、视频生成/图生视频/视频-破次元融合版-多主体融合 FusionX-VACE_1934523459177250818.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/InfiniteTalk单人版数字人【超过1分钟的】_2003019304549380098.json、数字人/数字人/InfiniteTalk对口型工作流 V1.0_2052269912881676289.json、数字人/数字人/Infinitetalk单人数字人无限时长自循环_2088948708812611585.json、数字人/数字人/Infinitetalk单人数字人无限时长自循环_2108715715753766913.json、数字人/数字人/LLM+InfiniteTalk+IndexTTS_1962434815804968962.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Text`
-- `GetNode`
-- `ImageConcatMulti`
-- `JWInteger`
+全部 7 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `SetNode`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 5/6 个有
-- `ImageResizeKJv2` —— 5/6 个有
-- `WanVideoClipVisionEncode` —— 5/6 个有
-- `WanVideoImageToVideoEncode` —— 5/6 个有
-- `WanVideoLoraSelect` —— 5/6 个有
-- `easy imageRemBg` —— 5/6 个有
-- `GetImageSizeAndCount` —— 3/6 个有
-- `ImageConcanate` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `AddLabel` —— 2/6 个有
-- `EmptyImage` —— 2/6 个有
-- `easy imageScaleDownToSize` —— 2/6 个有
-- `ImageResizeKJ` —— 1/6 个有
-- `InspyrenetRembg` —— 1/6 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/6 个有
-- `WanVideoVACEEncode` —— 1/6 个有
+- `MultiTalkModelLoader` —— 6/7 个有
+- `SimpleMath+` —— 6/7 个有
+- `ToInt` —— 6/7 个有
+- `WanVideoImageToVideoMultiTalk` —— 6/7 个有
+- `WanVideoModelLoader` —— 6/7 个有
+- `WanVideoTorchCompileSettings` —— 6/7 个有
+- `easy showAnything` —— 6/7 个有
+- `RH_GetAudioDuration` —— 5/7 个有
+- `Int` —— 4/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
+- `PreviewAudio` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `WanVideoLoraSelect` —— 4/7 个有
+- `ImageResizeKJv2` —— 3/7 个有
+- `IndexTTSRun` —— 2/7 个有
+- `LLMLoader` —— 2/7 个有
+- `LLMSampler` —— 2/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `PrimitiveFloat` —— 2/7 个有
+- `ShowText` —— 2/7 个有
+- `WanVideoLoraSelectMulti` —— 2/7 个有
+- `Audio Duration (mtb)` —— 1/7 个有
+- `INTConstant` —— 1/7 个有
+- `LatentSyncNode` —— 1/7 个有
+- `RHHiddenNodes` —— 1/7 个有
+- `String Literal` —— 1/7 个有
+- `ToFloat` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `VideoLengthAdjuster` —— 1/7 个有
+- `WanVideoImageToVideoEncode` —— 1/7 个有
 
 ## 典型参数
 

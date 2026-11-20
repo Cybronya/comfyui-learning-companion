@@ -3,34 +3,38 @@ name: unknown_workflow_generic_805
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.70225
-common_nodes: [BreezeTTS2LoadModel, BreezeTTS2VoiceDesign, CR Prompt Text, SaveAudio]
+coverage: 0.889
+common_nodes: [LoadImage, MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, MeshyTextureNode]
 problems: []
 missing: []
-members: [图片生成/文生图/声音设计_方言设计_2101869105568641025.json, 音频生成/音频生成/声音设计 方言设计_2100192848959332353.json, 音频生成/音频生成/声音设计_方言设计_2105120675768913921.json, 音频生成/音频生成/声音设计_方言设计_2105498022892363778.json]
+members: [comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json, comfyui-workflow-templates-json/api_meshy7_image_to_model.json, comfyui-workflow-templates-json/api_meshy_image_to_model.json, comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_805
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/声音设计_方言设计_2101869105568641025.json、音频生成/音频生成/声音设计 方言设计_2100192848959332353.json、音频生成/音频生成/声音设计_方言设计_2105120675768913921.json、音频生成/音频生成/声音设计_方言设计_2105498022892363778.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/api_meshy7_1_image_to_model.json、comfyui-workflow-templates-json/api_meshy7_image_to_model.json、comfyui-workflow-templates-json/api_meshy_image_to_model.json、comfyui-workflow-templates-json/api_meshy_multi_image_to_model.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BreezeTTS2LoadModel`
-- `BreezeTTS2VoiceDesign`
-- `CR Prompt Text`
-- `SaveAudio`
+- `LoadImage`
+- `MeshyAnimateModelNode`
+- `MeshyRefineNode`
+- `MeshyRigModelNode`
+- `MeshyTextureNode`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `MeshyImageToModelNode` —— 3/4 个有
+- `SaveGLB` —— 3/4 个有
+- `MeshyMultiImageToModelNode` —— 1/4 个有
+- `Preview3D` —— 1/4 个有
+- `Save3DAdvanced` —— 1/4 个有
 
 ## 典型参数
 

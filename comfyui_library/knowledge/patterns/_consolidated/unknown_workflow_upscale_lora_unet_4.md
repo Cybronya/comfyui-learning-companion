@@ -1,89 +1,85 @@
 ---
 name: unknown_workflow_upscale_lora_unet_4
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.596667
-common_nodes: [CLIPLoader, CR Latent Input Switch, CR Text Input Switch (4 way), EmptySD3LatentImage, Fast Groups Bypasser (rgthree), GetNode, Image Comparer (rgthree), ImageCaptionNode, Label (rgthree), LayerFilter: HDREffects, LoadImage, LoraLoaderModelOnly, PreviewImage, ResolutionSelector, SaveImage, SetNode, ShowText|pysssss, SplitImageWithAlpha, Text Multiline, UNETLoader, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy imageChooser]
-problems: []
+coverage: 0.89725
+common_nodes: [CLIPLoader, GetImageSize, GrowMaskWithBlur, Image Comparer (rgthree), ImageColorMatchAdobe+, LayerColor: Exposure, LayerFilter: FilmV2, LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, PrimitiveInt, RHHiddenNodes, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAELoader, ZML_ImageSelectorNode, easy imageConcat, easy imageRemBg]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/一键运行：Qwen-Image-2.1 文生图 高清放大 反推 图像选择_2105542674064437249.json, 图片生成/文生图/一键运行：qwen image 2.1 turbo int8 最新文生图_2109204440988340226.json, 图片生成/文生图/一键运行：最新 moss image 文生图 放大工作流_2113889238105280513.json]
+members: [平台全量/“手机里全是废片？朋友圈直接封神！”FireRed_千问Qwen一键换背景场景换装+换头换脸可选！_2071492088218341378.json, 平台全量/千问QWEN换背景场景换装+换头可选！_2076937095834333186.json, 平台全量/千问QWEN换背景场景换装+换头可选！_2077203547833323521.json, 平台全量/土味自拍_到_国际超模_！商用级别！克莱因FluxKlein换背景场景+换装！换头可选，自然无痕！_2067593214256832513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_unet_4
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/一键运行：Qwen-Image-2.1 文生图 高清放大 反推 图像选择_2105542674064437249.json、图片生成/文生图/一键运行：qwen image 2.1 turbo int8 最新文生图_2109204440988340226.json、图片生成/文生图/一键运行：最新 moss image 文生图 放大工作流_2113889238105280513.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/“手机里全是废片？朋友圈直接封神！”FireRed_千问Qwen一键换背景场景换装+换头换脸可选！_2071492088218341378.json、平台全量/千问QWEN换背景场景换装+换头可选！_2076937095834333186.json、平台全量/千问QWEN换背景场景换装+换头可选！_2077203547833323521.json、平台全量/土味自拍_到_国际超模_！商用级别！克莱因FluxKlein换背景场景+换装！换头可选，自然无痕！_2067593214256832513.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Latent Input Switch`
-- `CR Text Input Switch (4 way)`
-- `EmptySD3LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
+- `GetImageSize`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
-- `ImageCaptionNode`
-- `Label (rgthree)`
-- `LayerFilter: HDREffects`
+- `ImageColorMatchAdobe+`
+- `LayerColor: Exposure`
+- `LayerFilter: FilmV2`
+- `LayerMask: PersonMaskUltra V2`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: RestoreCropBox`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `ResolutionSelector`
+- `PrimitiveInt`
+- `RHHiddenNodes`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
-- `SplitImageWithAlpha`
-- `Text Multiline`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
 - `VAELoader`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
-- `easy imageChooser`
+- `ZML_ImageSelectorNode`
+- `easy imageConcat`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Seed` —— 2/3 个有
-- `ConditioningZeroOut` —— 2/3 个有
-- `KSampler (Efficient)` —— 2/3 个有
-- `TextEncodeQwenImage21` —— 2/3 个有
-- `TextGenerate` —— 2/3 个有
-- `easy positive` —— 2/3 个有
-- `BasicGuider` —— 1/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `KSamplerSelect` —— 1/3 个有
-- `ManualSigmas` —— 1/3 个有
-- `PreviewTextNode` —— 1/3 个有
-- `RandomNoise` —— 1/3 个有
-- `SamplerCustomAdvanced` —— 1/3 个有
-- `SkipLayerGuidanceDiTSimple` —— 1/3 个有
-- `TESpeedQwenImage21` —— 1/3 个有
-- `VAEDecode` —— 1/3 个有
+- `FlexLoraLoaderModelOnly` —— 3/4 个有
+- `ImageScale` —— 3/4 个有
+- `QwenImageIntegratedKSampler` —— 3/4 个有
+- `ConditioningZeroOut` —— 1/4 个有
+- `KSampler` —— 1/4 个有
+- `PainterFluxImageEdit` —— 1/4 个有
+- `VAEDecode` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 14.5 | - | 2 | 28% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 图生图 image-to-image | - | 4 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | 1440 | 1440 - 1440 | 3 | 100% |
+| 调度器 | 1440 | 1440 - 1440 | 3 | 100% |
+| 重绘幅度 | 3.81742e+14 | 1 - 9.31005e+14 | 4 | 17% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 14.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 28%
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 图生图 image-to-image，4 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1440，观测区间 1440 - 1440，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1440，观测区间 1440 - 1440，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 3.81742e+14，观测区间 1 - 9.31005e+14，4 个样本，取值分散，一致性仅 17%
+- 风险：重绘幅度 观测到 9.31005e+14，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 高发问题（3/4 个样本）：Steps较低可能导致细节不足

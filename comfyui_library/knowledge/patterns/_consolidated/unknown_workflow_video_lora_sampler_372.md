@@ -1,33 +1,36 @@
 ---
 name: unknown_workflow_video_lora_sampler_372
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.960857
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.8865
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/infinitetalk图片单人对口型_1990376514787172354.json, 视频生成/图生视频/口播唱歌数字人InfiniteTalk 对口型_1970330754632851457.json, "视频生成/图生视频/图加音频生视频,非常丝滑，支持160秒_2044837678058835969.json", 视频生成/图生视频/图加音频生视频_2016326225295314946.json, 视频生成/图生视频/图加音频生视频——V1_2018257190561255426.json, 视频生成/图生视频/图生视频-基于InfiniteTalk_2005465061298761730.json, 视频生成/图生视频/目前最新最火InfiniteTalk数字人对口型，适合口播唱歌 V1.0_1961819630828503041.json]
+members: [数字人/数字人/唱歌MTV数字人infinitetalk优化版_2016107471126929409.json, 数字人/数字人/唱歌数字人infinitetalk优化版一比一支持_2050593317225807874.json, 视频生成/图生视频/wan2.1_infinitetalk_双人数字人口播长视频版_1973775994349858817.json, 视频生成/图生视频/唱歌数字人infinitetalk优化版一比一支持_2023308778170490881.json, 视频生成/图生视频/粤语唱歌数字人infinitetalk优化版一比一支持_1961790376648622081.json, 视频生成/图生视频/粤语唱歌数字人infinitetalk优化版一比一支持_1964962986404270082.json, 视频生成/图生视频/粤语唱歌数字人infinitetalk优化版一比一支持_1968298118544535553.json, 音频生成/音频生成/infinitetalk优化版一比一音色数字人_1958195688268054529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_372
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/infinitetalk图片单人对口型_1990376514787172354.json、视频生成/图生视频/口播唱歌数字人InfiniteTalk 对口型_1970330754632851457.json、视频生成/图生视频/图加音频生视频,非常丝滑，支持160秒_2044837678058835969.json、视频生成/图生视频/图加音频生视频_2016326225295314946.json、视频生成/图生视频/图加音频生视频——V1_2018257190561255426.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/唱歌MTV数字人infinitetalk优化版_2016107471126929409.json、数字人/数字人/唱歌数字人infinitetalk优化版一比一支持_2050593317225807874.json、视频生成/图生视频/wan2.1_infinitetalk_双人数字人口播长视频版_1973775994349858817.json、视频生成/图生视频/唱歌数字人infinitetalk优化版一比一支持_2023308778170490881.json、视频生成/图生视频/粤语唱歌数字人infinitetalk优化版一比一支持_1961790376648622081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
 - `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
 - `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
@@ -38,27 +41,27 @@ source: knowledge_consolidation
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 6/7 个有
-- `AudioSeparation` —— 6/7 个有
-- `INTConstant` —— 5/7 个有
-- `LoadWanVideoT5TextEncoder` —— 4/7 个有
-- `WanVideoTextEncode` —— 4/7 个有
-- `Anything Everywhere` —— 3/7 个有
-- `WanVideoTextEncodeCached` —— 3/7 个有
-- `Audio Duration (mtb)` —— 2/7 个有
-- `ImageFromBatch+` —— 2/7 个有
-- `VHS_LoadVideo` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `GetImageSize` —— 1/7 个有
-- `MathExpression|pysssss` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
-- `SimpleMath+` —— 1/7 个有
-- `Text Multiline` —— 1/7 个有
-- `ttN seed` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
+- `INTConstant` —— 7/8 个有
+- `IndexTTSRun` —— 7/8 个有
+- `MultiLinePromptIndex` —— 7/8 个有
+- `SaveAudioMP3` —— 7/8 个有
+- `WanVideoTorchCompileSettings` —— 7/8 个有
+- `GetNode` —— 2/8 个有
+- `Int` —— 2/8 个有
+- `MathExpression|pysssss` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `CR String To Number` —— 1/8 个有
+- `CR Text` —— 1/8 个有
+- `ImageBatchExtendWithOverlap` —— 1/8 个有
+- `JWInteger` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `RH_GetAudioDuration` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 

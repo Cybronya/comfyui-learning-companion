@@ -1,96 +1,102 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_5
 type: Unknown Workflow
-frequency: 23
-level: strong
-coverage: 0.950348
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, easy compare, easy ifElse, easy imageSize, easy mathInt, easy positive, easy promptConcat]
+frequency: 26
+level: moderate
+coverage: 0.499962
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, ComfySwitchNode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, INTConstant, ImageResizeKJv2, JoinStrings, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3 -图生视频 超长时间 15s 电商服装模特带货短视频 优化版_2051526645630156801.json, 视频生成/图生视频/LTX2.3 图生视频_2054436042597511169.json, 视频生成/图生视频/LTX2.3 图生视频提示词自动优化版 26-05-07_2052323497153703938.json, 视频生成/图生视频/LTX2.3 漫剧短剧图生视频_2054756564090802178.json, 视频生成/图生视频/LTX2.3 漫剧短剧图生视频_2055141755422560257.json, 视频生成/图生视频/LTX2.3+图生视频_2054731485474770946.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频LTX2.3_2058444144254742529.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2057287117268676609.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058362218181386241.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058392205324275714.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058398311345909761.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058417532914196482.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058436523154034690.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058440251340840961.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058444261548453889.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058491686904487937.json, 视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2067494155026255873.json, 视频生成/图生视频/ltx2.3-20s服装模特带货短视频-已解决字幕问题_2050955132552134658.json, 视频生成/图生视频/ltx2.3-qwen3-tts-服装模特带货短视频_2055109104980504577.json, 视频生成/图生视频/一键生成--LTX2.3 图生视频_2057346400337358850.json, 视频生成/图生视频/一键生成--LTX2.3 图生视频_2057635344086028289.json, 视频生成/文生视频/LTX2.3 图生视频提示词自动优化版_2071572188259512321.json, 视频生成/文生视频/LTX2.3+-图生视频+15s超长时间+电商服装模特带货短视频+优化版_2052915059373953025.json]
+members: [图片生成/图生图/LTX2.3数字人说话唱_2052716573542109186.json, 平台全量/LTX2.3数字人说话唱歌对口型！长视频版本2_2121162298231447553.json, 平台全量/电商带货视频  音频驱动 可以唱歌  脱口秀  卖货_2060352096523874305.json, 平台全量/电商带货视频  音频驱动 可以唱歌  脱口秀  卖货_2073463845332729856.json, 数字人/数字人/LTX2.3图片数字人v1_2106250175076458497.json, 数字人/数字人/LTX2.3数字人说话唱歌_音频对口型！优化升级kj版！_2043128497136214018.json, 数字人/数字人/LTX2.3数字人说话唱歌对口型+运镜+合并版_2085320561093341186.json, 数字人/数字人/LTX2.3数字人说话唱歌对口型！优化升级kj版！B站艾橘溪_2064196186864709634.json, 数字人/数字人/LTX2.3数字人说话唱歌对口型！优化升级kj版！_2062113810642718721.json, 数字人/数字人/慕斯AI_LTX2.3_数字人口播_图生视频_2112135138997006337.json, 视频生成/图生视频/LTX2.3数字人、真人说话唱歌对口型！优化版！_2098723249088712705.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型_2060192236796727297.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型优化加速升级kj版lite可运行10秒视频3分钟超快音频克隆视频直出_2060281749111922689.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型优化加速升级kj版lite可运行10秒视频3分钟超快音频克隆视频直出_2060318631426347009.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型优化升级kj版加速版_2108927748189286401.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型！优化升级kj版_2067555501503766529.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型！优化升级kj版_2067555732677029890.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型！优化升级kj版！B站艾橘溪_2031003304490180610.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型！优化升级kj版！_2079447302481211393.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型！优化升级kj版！_2095323014882746369.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型！硅胶版！_2064388812364673025.json, 视频生成/图生视频/唱歌说话口型一致LTX2.3数字人说话唱歌对口型！优化升级kj版_2069216975854854145.json, 视频生成/图生视频/数字人说话唱歌对口型！_2060719943548751873.json, 视频生成/图生视频/数字人说话唱歌对口型！_2062353312200093697.json, 视频生成/文生视频/LTX2.3 数字人说话唱歌对口型 深度优化升级kj版_2056553193026449410.json, 视频生成/文生视频/图生视频 LTX2.3数字人说话唱歌对口型 优化升级kj版_2062723981005905921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_5
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 -图生视频 超长时间 15s 电商服装模特带货短视频 优化版_2051526645630156801.json、视频生成/图生视频/LTX2.3 图生视频_2054436042597511169.json、视频生成/图生视频/LTX2.3 图生视频提示词自动优化版 26-05-07_2052323497153703938.json、视频生成/图生视频/LTX2.3 漫剧短剧图生视频_2054756564090802178.json、视频生成/图生视频/LTX2.3 漫剧短剧图生视频_2055141755422560257.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/图生图/LTX2.3数字人说话唱_2052716573542109186.json、平台全量/LTX2.3数字人说话唱歌对口型！长视频版本2_2121162298231447553.json、平台全量/电商带货视频  音频驱动 可以唱歌  脱口秀  卖货_2060352096523874305.json、平台全量/电商带货视频  音频驱动 可以唱歌  脱口秀  卖货_2073463845332729856.json、数字人/数字人/LTX2.3图片数字人v1_2106250175076458497.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：26
+- **可信度**：中等可信
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
+全部 26 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPTextEncode`
+- `ComfySwitchNode`
 - `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
 - `GetImageSize`
+- `GetNode`
+- `INTConstant`
 - `ImageResizeKJv2`
+- `JoinStrings`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
+- `LTX2AttentionTunerPatch`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleCalculatorKJ`
+- `SolidMask`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy compare`
-- `easy ifElse`
-- `easy imageSize`
-- `easy mathInt`
-- `easy positive`
-- `easy promptConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 22/23 个有
-- `LTXVEmptyLatentAudio` —— 22/23 个有
-- `LTXVPreprocess` —— 22/23 个有
-- `ResizeImagesByLongerEdge` —— 22/23 个有
-- `EmptyImage` —— 21/23 个有
-- `ImageScaleBy` —— 21/23 个有
-- `easy int` —— 21/23 个有
-- `CR Text` —— 19/23 个有
-- `Dapao_LlamaChat` —— 19/23 个有
-- `SimpleMath+` —— 19/23 个有
-- `AILab_QwenVL` —— 4/23 个有
-- `PreviewImage` —— 4/23 个有
-- `easy showAnything` —— 4/23 个有
-- `PreviewAny` —— 2/23 个有
-- `Seed (rgthree)` —— 2/23 个有
-- `CM_FloatToInt` —— 1/23 个有
-- `ExtractLinesByIndex` —— 1/23 个有
-- `LTXVAudioVAEEncode` —— 1/23 个有
-- `LayerUtility: TextImage V2` —— 1/23 个有
-- `LoadAudio` —— 1/23 个有
-- `Note Plus (mtb)` —— 1/23 个有
-- `PreviewAudio` —— 1/23 个有
-- `Qwen3TTSModelLoader` —— 1/23 个有
-- `Qwen3TTSVoiceClone` —— 1/23 个有
-- `SetLatentNoiseMask` —— 1/23 个有
-- `SolidMask` —— 1/23 个有
-- `SoundFlow_GetLength` —— 1/23 个有
-- `easy cleanGpuUsed` —— 1/23 个有
+- `Compare` —— 24/26 个有
+- `Int` —— 24/26 个有
+- `InversionDemoLazySwitch` —— 24/26 个有
+- `SimpleMath+` —— 24/26 个有
+- `easy showAnything` —— 24/26 个有
+- `PreviewAudio` —— 23/26 个有
+- `VHS_LoadAudioUpload` —— 23/26 个有
+- `LTXVChunkFeedForward` —— 19/26 个有
+- `LoraLoaderModelOnly` —— 19/26 个有
+- `LoadAudio` —— 3/26 个有
+- `孤海注释` —— 3/26 个有
+- `LTXVLatentUpsampler` —— 2/26 个有
+- `ManualSigmas` —— 2/26 个有
+- `AudioCrop` —— 1/26 个有
+- `CR Text` —— 1/26 个有
+- `ComfyMathExpression` —— 1/26 个有
+- `Fast Groups Muter (rgthree)` —— 1/26 个有
+- `GPTImage2PromptPreview` —— 1/26 个有
+- `IndexTTS2Run` —— 1/26 个有
+- `Preview from image [Crystools]` —— 1/26 个有
+- `RH_RhartImageG2ImageToImage` —— 1/26 个有
+- `SaveAudio` —— 1/26 个有
+- `SaveAudioMP3` —— 1/26 个有
+- `easy imageSave` —— 1/26 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 361 | 361 - 481 | 22 | 93% |
-| 高度 | 24 | 24 - 24 | 22 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -98,5 +104,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 361，观测区间 361 - 481，22 个样本，取值集中（一致性 93%）
-- 高度 中位数 24，观测区间 24 - 24，22 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

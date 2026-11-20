@@ -1,59 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_133
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.818786
-common_nodes: [BasicGuider, CLIPLoader, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.669333
+common_nodes: [GetImageRangeFromBatch, GrowMask, ImageResizeKJv2, LoadImage, MochaEmbeds, PointsEditor, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/文生视频/H3_Turbo_Stable_4V4A_2087928785877430274.json, 视频生成/文生视频/MiniMax H3 4步加速 文生视频_2086878121780924417.json, 视频生成/文生视频/MiniMax H3 4步加速 文生视频_2091083830605213698.json, 视频生成/文生视频/MiniMax H3 全能加速工作流｜LightX2V _ LarryVRH 可选_2087445062463610882.json, 视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2086838165842780162.json, 视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2087878612149161985.json, 视频生成/文生视频/MiniMax H3多参生视频1(双时钟-8步高质量极速)_2085802445816553474.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2085917106452910082.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086006814721798145.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086021919471656961.json, 视频生成/文生视频/MiniMax H3文生视频T8加速版_2086316557814292482.json, 视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085737590669529090.json, 视频生成/文生视频/MiniMax H3海螺四步加速多合一_2085738060221861890.json, 视频生成/文生视频/Minimax H3 参考生成_2088114013229113346.json]
+members: [平台全量/Mocha视频人物替换_1981140638525689857.json, 平台全量/Mocha角色替换工作流_2049685591721299970.json, 平台全量/Mocha角色替换工作流_2052227583365918721.json, 平台全量/【角色替换】Mocha工作流_1982702781029064706.json, 平台全量/人物替换Mocha工作流Wan（支持10s以上）_1980855771195985922.json, 平台全量/视频人物替换_1981139819441045506.json, 平台全量/角色替换Mocha工作流_1980672974778974209.json, 平台全量/角色替换Mocha工作流_1992915717536366593.json, 数字人/数字人/图片生成  全能视频 人物替换Mocha 【如爆显存 请使用 Plus模式】 数字人说话唱歌跳_2064208363466092546.json, 视频生成/图生视频/Mocha sec4b视频抠图工作流_1982464273806966785.json, 视频生成/图生视频/人物替换Mocha工作流Wan（支持10s以上）_2013864867756773377.json, 视频生成/图生视频/最新视频角色替换Mocha_1980911162026016770.json, 视频生成/图生视频/角色替换Mocha_1980827522109755393.json, 视频生成/图生视频/角色替换Mocha工作流_1986007241096605697.json, 视频生成/图生视频/🦖Mocha角色替换_1980895212593659906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_133
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/H3_Turbo_Stable_4V4A_2087928785877430274.json、视频生成/文生视频/MiniMax H3 4步加速 文生视频_2086878121780924417.json、视频生成/文生视频/MiniMax H3 4步加速 文生视频_2091083830605213698.json、视频生成/文生视频/MiniMax H3 全能加速工作流｜LightX2V _ LarryVRH 可选_2087445062463610882.json、视频生成/文生视频/MiniMax H3-文生视频V1-双时钟-8步高质量极速-step600_2086838165842780162.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（平台全量/Mocha视频人物替换_1981140638525689857.json、平台全量/Mocha角色替换工作流_2049685591721299970.json、平台全量/Mocha角色替换工作流_2052227583365918721.json、平台全量/【角色替换】Mocha工作流_1982702781029064706.json、平台全量/人物替换Mocha工作流Wan（支持10s以上）_1980855771195985922.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+全部 15 个 workflow 都包含：
+- `GetImageRangeFromBatch`
+- `GrowMask`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `MochaEmbeds`
+- `PointsEditor`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 13/14 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 13/14 个有
-- `ResolutionSelector` —— 13/14 个有
-- `PrimitiveFloat` —— 11/14 个有
-- `CR Prompt Text` —— 6/14 个有
-- `LoadImage` —— 6/14 个有
-- `CR Text` —— 4/14 个有
-- `LoadAudio` —— 4/14 个有
-- `easy showAnything` —— 4/14 个有
-- `PrimitiveStringMultiline` —— 3/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/14 个有
-- `Int` —— 2/14 个有
-- `PreviewAny` —— 2/14 个有
-- `RHHiddenNodes` —— 2/14 个有
-- `孤海注释` —— 2/14 个有
-- `Audio Cut (mtb)` —— 1/14 个有
-- `GetVideoComponents` —— 1/14 个有
-- `LoadVideo` —— 1/14 个有
+- `GetNode` —— 14/15 个有
+- `MaskPreview` —— 14/15 个有
+- `PreviewImage` —— 14/15 个有
+- `SetNode` —— 14/15 个有
+- `WanVideoTorchCompileSettings` —— 14/15 个有
+- `ImageConcanate` —— 13/15 个有
+- `Int` —— 5/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/15 个有
+- `DF_Int_to_Float` —— 3/15 个有
+- `MathExpression|pysssss` —— 3/15 个有
+- `RMBG` —— 3/15 个有
+- `SimpleMath+` —— 2/15 个有
+- `ACE_ImageFaceCrop` —— 1/15 个有
+- `DeepTranslatorTextNode` —— 1/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
+- `Fast Groups Muter (rgthree)` —— 1/15 个有
+- `FlashVSRNode` —— 1/15 个有
+- `INTConstant` —— 1/15 个有
+- `MaskPreview+` —— 1/15 个有
+- `VHS_VideoInfoLoaded` —— 1/15 个有
 
 ## 典型参数
 

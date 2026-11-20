@@ -1,42 +1,45 @@
 ---
 name: unknown_workflow_sampler_38
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.698
-common_nodes: [LoadImage, LoadQwenImageDiffSynthiPipe, PreviewImage, PrimitiveStringMultiline, QwenImageDiffSynthSampler, SaveImage, SetControlArgs]
+coverage: 0.8906
+common_nodes: [LoadAudio, OmniVoiceLongformTTS, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, OmniVoiceWhisperLoader, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image控制 Canny_1956688249889460225.json, 图片生成/图生图/Qwen-Image控制 Depth_1956649792756486146.json, 图片生成/图生图/洗图神器！Qwen-Image图生图之Canny_1955746699391090689.json, 图片生成/图生图/洗图神器！Qwen-Image图生图之Depth_1955880534075428865.json]
+members: [数字人/数字人/音色克隆_2064891468476669953.json, 音频生成/音频生成/600+语言支持 omnivoice-tts_2039996614458220545.json, 音频生成/音频生成/OmniVoice-TTS工作流_2042955678913925121.json, 音频生成/音频生成/【遇见AI】OmniVoice-TTS语音模型，声音克隆，长语音，声音设计，多人对话，支持方言_2043639883255783425.json, 音频生成/音频生成/超绝音色克隆 OmniVoice-TTS_2041735213079859201.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_38
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-Image控制 Canny_1956688249889460225.json、图片生成/图生图/Qwen-Image控制 Depth_1956649792756486146.json、图片生成/图生图/洗图神器！Qwen-Image图生图之Canny_1955746699391090689.json、图片生成/图生图/洗图神器！Qwen-Image图生图之Depth_1955880534075428865.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/音色克隆_2064891468476669953.json、音频生成/音频生成/600+语言支持 omnivoice-tts_2039996614458220545.json、音频生成/音频生成/OmniVoice-TTS工作流_2042955678913925121.json、音频生成/音频生成/【遇见AI】OmniVoice-TTS语音模型，声音克隆，长语音，声音设计，多人对话，支持方言_2043639883255783425.json、音频生成/音频生成/超绝音色克隆 OmniVoice-TTS_2041735213079859201.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `LoadQwenImageDiffSynthiPipe`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenImageDiffSynthSampler`
-- `SaveImage`
-- `SetControlArgs`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `OmniVoiceLongformTTS`
+- `OmniVoiceMultiSpeakerTTS`
+- `OmniVoiceVoiceCloneTTS`
+- `OmniVoiceVoiceDesignTTS`
+- `OmniVoiceWhisperLoader`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Canny` —— 2/4 个有
-- `DepthAnythingV2Preprocessor` —— 2/4 个有
-- `LayerUtility: ImageScaleRestore V2` —— 2/4 个有
-- `QwenImageRatio2Size` —— 2/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `PreviewAudio` —— 4/5 个有
+- `TrimAudio` —— 3/5 个有
+- `YC_SingleTextNode` —— 3/5 个有
+- `YC_textReplaceNode` —— 3/5 个有
+- `MelBandRoFormerModelLoader` —— 2/5 个有
+- `MelBandRoFormerSampler` —— 2/5 个有
+- `LoadImage` —— 1/5 个有
 
 ## 典型参数
 

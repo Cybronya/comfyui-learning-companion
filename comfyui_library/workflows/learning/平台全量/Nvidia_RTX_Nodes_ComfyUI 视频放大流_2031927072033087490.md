@@ -1,0 +1,37 @@
+---
+key: 平台全量/Nvidia_RTX_Nodes_ComfyUI 视频放大流_2031927072033087490.json
+name: Nvidia_RTX_Nodes_ComfyUI 视频放大流_2031927072033087490
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/Nvidia_RTX_Nodes_ComfyUI 视频放大流_2031927072033087490.json
+hash: 949a9a4c06eb14d3
+coverage: 1
+learned_at: 2026-11-14 00:47:19
+nodes: [GetVideoComponents, SaveVideo, CreateVideo, RTXVideoSuperResolution, LoadVideo]
+patterns: []
+missing: []
+---
+
+# 平台全量/Nvidia_RTX_Nodes_ComfyUI 视频放大流_2031927072033087490.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/Nvidia_RTX_Nodes_ComfyUI 视频放大流_2031927072033087490.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（5 个）：
+- `GetVideoComponents`
+- `SaveVideo`
+- `CreateVideo`
+- `RTXVideoSuperResolution`
+- `LoadVideo`
+
+## 知识
+
+覆盖率 **100%**（5/5）
+
+**有卡**：`GetVideoComponents`、`SaveVideo`、`CreateVideo`、`RTXVideoSuperResolution`、`LoadVideo`
+
+**用到的条目**：RTXVideoSuperResolution、SaveVideo、CreateVideo、GetVideoComponents、LoadVideo、image_to_image_controlnet_lora_sampler_10、image_to_image_controlnet_lora_sampler_13、image_to_image_controlnet_lora_sampler_16

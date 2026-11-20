@@ -1,63 +1,69 @@
 ---
 name: unknown_workflow_sampler_unet_vae_292
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.857
-common_nodes: [AIO_Preprocessor, CLIPLoader, ComfySwitchNode, EmptyLatentImage, GetImageSize, ImageResizeKJv2, ImageScaleBy, KSampler, Label (rgthree), LoadImage, PreviewImage, QwenImage21Cache, QwenImage21UnionApply, QwenImage21UnionLoader, ResizeImageMaskNode, ResolutionSelector, SaveImage, SeedNode, TextEncodeQwenImage21, Textbox, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.52125
+common_nodes: [CFGGuider, CLIPLoader, CR Text, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), KSamplerSelect, LayerMask: MaskGrow, LayerUtility: ColorImage, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PainterFluxImageEdit, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, 取色器_孤海]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen_Image_2.1_CONTROLNET 图像编辑工作流_2104411934979346434.json, 图片生成/文生图/Qwen_Image_2.1_CONTROLNET 图像编辑工作流_2104595395056852994.json, 图片生成/文生图/Qwen_Image_2.1_CONTROLNET 图像编辑工作流_2104885905218691074.json]
+members: [图片生成/图生图/klein多人换脸工作流_2053015236344590337.json, 图片生成/图生图/klein换脸工作流_2053009442458873858.json, 图片生成/文生图/Klein人物换装_2053675322071105538.json, 图片生成/文生图/Klein物体精准迁移_2052612982663852033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_292
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen_Image_2.1_CONTROLNET 图像编辑工作流_2104411934979346434.json、图片生成/文生图/Qwen_Image_2.1_CONTROLNET 图像编辑工作流_2104595395056852994.json、图片生成/文生图/Qwen_Image_2.1_CONTROLNET 图像编辑工作流_2104885905218691074.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/klein多人换脸工作流_2053015236344590337.json、图片生成/图生图/klein换脸工作流_2053009442458873858.json、图片生成/文生图/Klein人物换装_2053675322071105538.json、图片生成/文生图/Klein物体精准迁移_2052612982663852033.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AIO_Preprocessor`
+全部 4 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
-- `ComfySwitchNode`
-- `EmptyLatentImage`
+- `CR Text`
+- `Flux2Scheduler`
 - `GetImageSize`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `KSampler`
-- `Label (rgthree)`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
+- `LayerMask: MaskGrow`
+- `LayerUtility: ColorImage`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewImage`
-- `QwenImage21Cache`
-- `QwenImage21UnionApply`
-- `QwenImage21UnionLoader`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
+- `PainterFluxImageEdit`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedNode`
-- `TextEncodeQwenImage21`
-- `Textbox`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `取色器_孤海`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageCompositeMasked` —— 3/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `ImpactInt` —— 3/4 个有
+- `LayerUtility: CropBoxResolve` —— 3/4 个有
+- `LayerUtility: CropByMask V2` —— 3/4 个有
+- `Mask Fill Holes` —— 3/4 个有
+- `MaskPreview+` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `CR Text Concatenate` —— 2/4 个有
+- `ColorMatch` —— 2/4 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `ShowAnything|Mie` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
-| 采样步数 | 40 | 40 - 40 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,10 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 40，观测区间 40 - 40，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,43 +1,37 @@
 ---
 name: unknown_workflow_generic_142
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.866077
-common_nodes: [AudioCrop, CR Text, LoadAudio, PreviewAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.800929
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json, 音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json, 音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json, 音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2015458205643575298.json, 音频生成/音频生成/qwentts-声音设计 声音克隆_2033750797955112961.json, 音频生成/音频生成/千问3TSS声音克隆_2069320475846725633.json, 音频生成/音频生成/千问3TTS声音设计语音克隆_2069311488371814401.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2014536001888198657.json, 音频生成/音频生成/千问3TTS多功能语音设计语音克隆_2069313800293142530.json, 音频生成/音频生成/千问3TTS语音克隆-老祺-单克隆版_2097158002439704578.json, 音频生成/音频生成/千问3TTS语音克隆-音色设计-老祺_2028309603213123586.json]
+members: [图片生成/图生图/-全能图片V1-一键转手办_1961666820535160834.json, 图片生成/图生图/全能图片 全能大模型   全能图片编辑  局部重绘_2047499274916732930.json, 图片生成/图生图/全能图片 洗图 全能模型 最强开源 改年龄  年轻化  老年化_2046846480186613762.json, 图片生成/图生图/全能图片 洗图 图生图 局部重绘 全能模型 最强开源_2047173164588867585.json, 图片生成/图生图/全能图片V11谷歌大香蕉图片编辑_1977637687651913730.json, 图片生成/图生图/全能图片V1全网最强图像编辑_1960400616747167745.json, 图片生成/图生图/全能图片V1全网最强图像编辑_1961692729006821378.json, 图片生成/图生图/全能图片V1图像编辑三图优化版_1960687935127511041.json, 图片生成/图生图/全能图片V1图像编辑双图优化版_1960404396435714050.json, 图片生成/图生图/全能图片V1热门手办生成_1962392113331703809.json, 图片生成/图生图/全能模型 最强开源 改年龄  一键年轻化  一键老年化_2046833230090870785.json, 图片生成/文生图/全能图片V1文生图_1962387003432112130.json, 图片生成/文生图/大全能生图-每天免米使用5次_2055661754121768962.json, 平台全量/nano 全能图片V1提示词换装_1984461555897090049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_142
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（音频生成/音频生成/Qwen-3（音色克隆）_2016072540728332290.json、音频生成/音频生成/Qwen3 TTS 多功能语音设计语音克隆(效果炸裂)_2014555347687579650.json、音频生成/音频生成/Qwen3-TTS语音大模型 初音_2051622740955807746.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿七海（自用）_2015975571246813185.json、音频生成/音频生成/Qwen3-TTS语音大模型：模仿良子说话“味真足”！_2014668886968377346.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/-全能图片V1-一键转手办_1961666820535160834.json、图片生成/图生图/全能图片 全能大模型   全能图片编辑  局部重绘_2047499274916732930.json、图片生成/图生图/全能图片 洗图 全能模型 最强开源 改年龄  年轻化  老年化_2046846480186613762.json、图片生成/图生图/全能图片 洗图 图生图 局部重绘 全能模型 最强开源_2047173164588867585.json、图片生成/图生图/全能图片V11谷歌大香蕉图片编辑_1977637687651913730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `AudioCrop`
-- `CR Text`
-- `LoadAudio`
-- `PreviewAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudio`
+全部 14 个 workflow 都包含：
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
-- `Qwen3TTSVoiceDesign` —— 11/13 个有
-- `WhisperSTT` —— 8/13 个有
-- `Label (rgthree)` —— 4/13 个有
-- `Qwen3TTSCustomVoice` —— 4/13 个有
-- `PreviewTextNode` —— 1/13 个有
+- `CR Text` —— 12/14 个有
+- `GeminiInputFiles` —— 1/14 个有
+- `NineGridMosaicNode` —— 1/14 个有
 
 ## 典型参数
 

@@ -3,85 +3,59 @@ name: text_to_image_upscale_lora_sampler_60
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.9188
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, CreateVideo, DF_Int_to_Float, EasyCache, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetVideoComponents, ImageResizeKJv2, ImpactSwitch, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LoadAudio, LoadImage, LoadVideo, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, RandomSeedNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowAnything|Mie, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.849
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/h3 singularity提示词优化反推加速双采｜非高低噪声采样_2111064379713220609.json, 视频生成/图生视频/h3 singularity提示词优化反推，加速双采视频生视频_2111198491438575618.json, 视频生成/图生视频/h3 singularity模型提示词优化反推加速双采非高低噪声 视频生成优化_2109705983533600769.json, 视频生成/文生视频/MiniMax H3 Singularity VDN加速双采高步数图生视频处理工具_2102458025251532801.json, 视频生成/文生视频/h3提示词优化反推加速双采 视频生成优化方案_2108669589306568706.json]
+members: [图片生成/图生图/SeedVR2 高清修复放大｜精修老片画质复活_2112485526564597762.json, 图片生成/图生图/seedVR图像超分工作流｜图生图高清放大无损提质_2113989182354976770.json, 图片生成/图生图/seedvr2图像高清放大｜图生图画质增强一键直出_2091296292063506433.json, 图片生成/图生图/seedvr2图像高清放大｜图生图画质增强直出_2091005891771461634.json, 图片生成/图生图/一张图搞定四视图｜图生图工作流 正面侧面背面全都有_2097527695096766465.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_60
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/h3 singularity提示词优化反推加速双采｜非高低噪声采样_2111064379713220609.json、视频生成/图生视频/h3 singularity提示词优化反推，加速双采视频生视频_2111198491438575618.json、视频生成/图生视频/h3 singularity模型提示词优化反推加速双采非高低噪声 视频生成优化_2109705983533600769.json、视频生成/文生视频/MiniMax H3 Singularity VDN加速双采高步数图生视频处理工具_2102458025251532801.json、视频生成/文生视频/h3提示词优化反推加速双采 视频生成优化方案_2108669589306568706.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/SeedVR2 高清修复放大｜精修老片画质复活_2112485526564597762.json、图片生成/图生图/seedVR图像超分工作流｜图生图高清放大无损提质_2113989182354976770.json、图片生成/图生图/seedvr2图像高清放大｜图生图画质增强一键直出_2091296292063506433.json、图片生成/图生图/seedvr2图像高清放大｜图生图画质增强直出_2091005891771461634.json、图片生成/图生图/一张图搞定四视图｜图生图工作流 正面侧面背面全都有_2097527695096766465.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `DF_Int_to_Float`
-- `EasyCache`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetVideoComponents`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LoadAudio`
 - `LoadImage`
-- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `RandomSeedNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `ShowAnything|Mie`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncode`
-- `VAEEncodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoH3LocalPromptNode` —— 4/5 个有
-- `DapaoH3PromptBoxNode` —— 4/5 个有
-- `PreviewAny` —— 4/5 个有
-- `SaveAudio` —— 4/5 个有
-- `SaveImage` —— 4/5 个有
-- `T8_IndexTTS25_EmotionControl` —— 4/5 个有
-- `T8_IndexTTS25_Generate` —— 4/5 个有
-- `T8_IndexTTS25_ModelLoader` —— 4/5 个有
-- `BasicScheduler` —— 3/5 个有
-- `ManualSigmas` —— 3/5 个有
-- `MiniMaxH3VDNRuntimeAuditT8Advanced` —— 3/5 个有
-- `SolAttnMiniMax` —— 3/5 个有
-- `GoohaiUniversalSlider` —— 2/5 个有
-- `MiniMaxH3SparkAttentionAuto` —— 2/5 个有
+- `ImageScaleToTotalPixels` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `CR Text Concatenate` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `GetImageSize` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `ImpactCompare` —— 1/5 个有
+- `LayerUtility: If ` —— 1/5 个有
+- `LayerUtility: TextJoin` —— 1/5 个有
+- `PlaySound|pysssss` —— 1/5 个有
+- `PrimitiveFloat` —— 1/5 个有
+- `RH_RhartImageG2ImageToImage` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
 
 ## 典型参数
 

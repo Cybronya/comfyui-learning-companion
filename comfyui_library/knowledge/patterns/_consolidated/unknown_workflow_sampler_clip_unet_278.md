@@ -1,69 +1,76 @@
 ---
 name: unknown_workflow_sampler_clip_unet_278
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8256
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, ResolutionSelector, SaveImage, SkipLayerGuidanceDiTSimple, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.821
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/MOSS-Image｜Base vs SFT 双模型同参对决·画质横评版_2114209796613296130.json, 图片生成/文生图/MOSS-Image｜色彩深度LoRA·光影与色彩控制实验版_2114557159357902850.json, 图片生成/文生图/MOSS_Krea2_文生图_2113205128068161538.json, 图片生成/文生图/MOSS_Krea2_文生图_2113240561628049409.json, 图片生成/文生图/Moos文生图 你想要的一切_2113432558376673281.json]
+members: [平台全量/Seedream 5 单图双图多图多功能编辑 +增加细节+高清放大  去除AI塑料感 Flux2 K_2028027785586937858.json, 平台全量/Seedream 5.0+Flux2-klein-9B  图像编辑 服饰换装 换装换脸 风格统一_2031177319376756738.json, 平台全量/flux2_klein_图片编辑&文生图（6G显存可用）_2074037656283082753.json, 平台全量/gemini-3.1 全能图片2.0+图片修复添加细节_2027922023896326146.json, 平台全量/产品换背景 光影重绘 图片换场景 F2 klein 9B_2067073912286040065.json, 平台全量/全能图片2.0 gemini-3.1 +图片修复添加细节 一图生多角度_2027920063872897026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_278
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/MOSS-Image｜Base vs SFT 双模型同参对决·画质横评版_2114209796613296130.json、图片生成/文生图/MOSS-Image｜色彩深度LoRA·光影与色彩控制实验版_2114557159357902850.json、图片生成/文生图/MOSS_Krea2_文生图_2113205128068161538.json、图片生成/文生图/MOSS_Krea2_文生图_2113240561628049409.json、图片生成/文生图/Moos文生图 你想要的一切_2113432558376673281.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Seedream 5 单图双图多图多功能编辑 +增加细节+高清放大  去除AI塑料感 Flux2 K_2028027785586937858.json、平台全量/Seedream 5.0+Flux2-klein-9B  图像编辑 服饰换装 换装换脸 风格统一_2031177319376756738.json、平台全量/flux2_klein_图片编辑&文生图（6G显存可用）_2074037656283082753.json、平台全量/gemini-3.1 全能图片2.0+图片修复添加细节_2027922023896326146.json、平台全量/产品换背景 光影重绘 图片换场景 F2 klein 9B_2067073912286040065.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
-- `KSampler`
-- `ResolutionSelector`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SkipLayerGuidanceDiTSimple`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `Image Comparer (rgthree)` —— 2/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `Anything Everywhere3` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `Seed (rgthree)` —— 1/5 个有
-- `SeedNode` —— 1/5 个有
-- `SetNode` —— 1/5 个有
+- `CR Text` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
+- `DifferentialDiffusion` —— 3/6 个有
+- `GetImageSize` —— 3/6 个有
+- `GrowMaskWithBlur` —— 3/6 个有
+- `LayerUtility: ImageReel` —— 3/6 个有
+- `LayerUtility: ImageReelComposit` —— 3/6 个有
+- `Repeater|pysssss` —— 3/6 个有
+- `GetNode` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `MuyeTextEditOutput` —— 2/6 个有
+- `RH_Jimeng4_Image2Image` —— 2/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `easy imageScaleDownToSize` —— 2/6 个有
+- `PrimitiveFloat` —— 1/6 个有
+- `Seed (rgthree)` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 8 - 50 | 5 | 50% |
-| Prompt 约束强度(CFG) | 3 | 1 - 3 | 5 | 69% |
-| 采样算法 | er_sde | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 8 - 50，5 个样本，取值分散，一致性仅 50%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 3，5 个样本
-- 采样算法 最常用 er_sde，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

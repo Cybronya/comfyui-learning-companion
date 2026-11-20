@@ -1,63 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_805
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9435
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+frequency: 3
+level: strong
+coverage: 0.615667
+common_nodes: [CLIPTextEncode, CR Float To Integer, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVSeparateAVLatent, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, SamplerCustom, VAEDecode, VHS_LoadVideo, VHS_VideoCombine, easy cleanGpuUsed, easy clearCacheAll]
 problems: []
 missing: []
-members: [数字人/数字人/MinimaxH3 角色替换_2092994502658183169.json, 数字人/数字人/仅换头_自动时长宽高_H3_2110546203753672706.json]
+members: [平台全量/LTX2.3 V2V CrossView Prompt  镜头切换视频生视频工作流_2077360035210027010.json, 视频生成/图生视频/LTX2.3 V2V Camera 视频到视频摄像机参考-图生视频工作流_2071613148762824706.json, 视频生成/图生视频/⨝LTX2.3 IC LORA-Camera Control 运镜控制，大师运镜、视频编辑、运镜迁移_2074498263339855873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_805
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/MinimaxH3 角色替换_2092994502658183169.json、数字人/数字人/仅换头_自动时长宽高_H3_2110546203753672706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/LTX2.3 V2V CrossView Prompt  镜头切换视频生视频工作流_2077360035210027010.json、视频生成/图生视频/LTX2.3 V2V Camera 视频到视频摄像机参考-图生视频工作流_2071613148762824706.json、视频生成/图生视频/⨝LTX2.3 IC LORA-Camera Control 运镜控制，大师运镜、视频编辑、运镜迁移_2074498263339855873.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CR Float To Integer`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVSeparateAVLatent`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `SamplerCustom`
 - `VAEDecode`
-- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageBatch` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `RepeatImageBatch` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `LTX2_NAG` —— 2/3 个有
+- `LTXVAudioVAEDecode` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `ResizeImageMaskNode` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `VAELoader` —— 2/3 个有
+- `CM_FloatToInt` —— 1/3 个有
+- `CheckpointLoaderSimple` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `LTX2MemoryEfficientSageAttentionPatch` —— 1/3 个有
+- `LTXVAudioVAELoader` —— 1/3 个有
+- `LTXVChunkFeedForward` —— 1/3 个有
+- `VHS_LoadVideoPath` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -65,4 +83,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

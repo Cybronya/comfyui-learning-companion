@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_1396
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6215
-common_nodes: [DF_Integer, Image Comparer (rgthree), ImageResize+, Int, KuwaharaBlur, LoadImage, RHHiddenNodes, SaveImage, easy boolean, easy ifElse]
+frequency: 3
+level: moderate
+coverage: 0.622333
+common_nodes: [AudioOmni_LoadModel, CR Prompt Text, JWInteger, SaveAudioMP3]
 problems: []
-missing: []
-members: [图片生成/图生图/SeedVR2放大终章_2065788893877858305.json, 图片生成/图生图/SeedVR2放大终章_2069068701252546561.json]
+missing: [AudioOmni_LoadModel, AudioOmni_TextToAudio, AudioOmni_TextToSpeech]
+members: [音频生成/音频生成/Audio-Omni文生纯音乐_2044266571333378050.json, 音频生成/音频生成/Audio-Omni文生语音TTS_2044270079424073729.json, 音频生成/音频生成/Audio-Omni纯音乐生成_2044351098529521665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1396
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2放大终章_2065788893877858305.json、图片生成/图生图/SeedVR2放大终章_2069068701252546561.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Audio-Omni文生纯音乐_2044266571333378050.json、音频生成/音频生成/Audio-Omni文生语音TTS_2044270079424073729.json、音频生成/音频生成/Audio-Omni纯音乐生成_2044351098529521665.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：中等可信
 - **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DF_Integer`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `Int`
-- `KuwaharaBlur`
-- `LoadImage`
-- `RHHiddenNodes`
-- `SaveImage`
-- `easy boolean`
-- `easy ifElse`
+全部 3 个 workflow 都包含：
+- `AudioOmni_LoadModel`
+- `CR Prompt Text`
+- `JWInteger`
+- `SaveAudioMP3`
+
+**可变部分**（部分 workflow 才有）：
+- `AudioOmni_TextToAudio` —— 2/3 个有
+- `AudioOmni_TextToSpeech` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 这些节点还没有知识卡，系统对它们的理解有限：AudioOmni_LoadModel、AudioOmni_TextToAudio、AudioOmni_TextToSpeech

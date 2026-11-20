@@ -1,52 +1,37 @@
 ---
 name: unknown_workflow_video_26
 type: Unknown Workflow
-frequency: 5
+frequency: 8
 level: moderate
-coverage: 0.8
-common_nodes: [ACEStepGen, CR Image Input Switch (4 way), CR Overlay Text, CR Text, Float, GenerationParameters, Get resolution [Crystools], GetRandomIntegerInRange, ImageBlend, JjkText, LoadImage, MultiLineLyrics, MultiLinePromptACES, PreviewImage, RH_Prompter, RH_Translator, SaveAudio, ShowText, TextCombinerSix, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed, easy showAnything]
+coverage: 0.83225
+common_nodes: [LoadImage, RunningHub_FramePack_F1, SeargePromptText, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/ACE-Step音乐(视频)生成_2021195368242876418.json, 音频生成/音频生成/ACE-Step音乐生成器-歌词展示_1928402394680573953.json, 音频生成/音频生成/ACE-Step音乐生成器-歌词展示_2060189449031606274.json, 音频生成/音频生成/AI音乐 ACE-Step 音乐生成器-歌词展示_2018910502071570434.json, 音频生成/音频生成/AI音乐 ACE-Step 音乐生成器-歌词展示_2019050901134123009.json]
+members: [视频生成/图生视频/FramePack-F1 升级版最新_1922092746830462977.json, 视频生成/图生视频/FramePack-F1 图生视频_1922933753155567618.json, 视频生成/图生视频/FramePack-F1 图生视频_1934186177635508226.json, 视频生成/图生视频/FramePack-F1敏神最新算法图生视频_1919190486836514818.json, 视频生成/图生视频/FramePack-F1敏神最新算法图生视频_2048940562320986114.json, 视频生成/图生视频/FramePack-F1敏神最新算法图生视频_2048957662095740930.json, 视频生成/图生视频/FramePack-F1新版图生视频（幅度更大）_1921901998256373762.json, 视频生成/图生视频/fp2_1922512428700155905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_26
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ACE-Step音乐(视频)生成_2021195368242876418.json、音频生成/音频生成/ACE-Step音乐生成器-歌词展示_1928402394680573953.json、音频生成/音频生成/ACE-Step音乐生成器-歌词展示_2060189449031606274.json、音频生成/音频生成/AI音乐 ACE-Step 音乐生成器-歌词展示_2018910502071570434.json、音频生成/音频生成/AI音乐 ACE-Step 音乐生成器-歌词展示_2019050901134123009.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/FramePack-F1 升级版最新_1922092746830462977.json、视频生成/图生视频/FramePack-F1 图生视频_1922933753155567618.json、视频生成/图生视频/FramePack-F1 图生视频_1934186177635508226.json、视频生成/图生视频/FramePack-F1敏神最新算法图生视频_1919190486836514818.json、视频生成/图生视频/FramePack-F1敏神最新算法图生视频_2048940562320986114.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ACEStepGen`
-- `CR Image Input Switch (4 way)`
-- `CR Overlay Text`
-- `CR Text`
-- `Float`
-- `GenerationParameters`
-- `Get resolution [Crystools]`
-- `GetRandomIntegerInRange`
-- `ImageBlend`
-- `JjkText`
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `PreviewImage`
-- `RH_Prompter`
-- `RH_Translator`
-- `SaveAudio`
-- `ShowText`
-- `TextCombinerSix`
-- `VHS_LoadVideo`
+- `RunningHub_FramePack_F1`
+- `SeargePromptText`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Primitive integer [Crystools]` —— 6/8 个有
+- `ImageFromBatch+` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
 
 ## 典型参数
 

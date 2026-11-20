@@ -1,81 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_138
 type: Unknown Workflow
-frequency: 13
+frequency: 15
 level: moderate
-coverage: 0.613308
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoVAELoader]
+coverage: 0.964667
+common_nodes: [CreateCFGScheduleFloatList, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/动作迁移-SteadyDancer-无限时长生成_2002209657114509313.json, 图片生成/图生图/动作迁移_真人_二次元_Q版-跳舞、带货、口播-SteadyDancer_1999364272306126850.json, 图片生成/图生图/最新SteadyDancer动作迁移美女跳舞_1996553985236549634.json, 图片生成/文生图/动作舞蹈_骨骼迁移_不限时长版_2020834050457473026.json, 图片生成/文生图/腾讯最新开源SteadyDancer超完美动作迁移工作流_2006630138284351490.json, 数字人/数字人/最新SteadyDancer动作迁移动物美女舞蹈必备 超强一致性_1996288612700397569.json, 视频生成/图生视频/26年3月SteadyDancer_骨骼迁移_不限时长版_2032112165968154626.json, 视频生成/图生视频/SteadDancer （KJ版）视频姿势参考_1996519049599270913.json, 视频生成/图生视频/SteadDancer动作迁移_1996568841872351234.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移_1995783729840787458.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2039879176072732673.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2046114909657763841.json, 视频生成/图生视频/SteadDancer视频姿势参考（KJ）_1996528847946399745.json]
+members: [视频生成/图生视频/Wan 2.2 图生视频（优化版）_1951564039392579586.json, 视频生成/图生视频/Wan2.2超级首尾帧KJ版_1952197474423353346.json, 视频生成/图生视频/Wan2.2首尾帧KJ版_1952270588733804545.json, 视频生成/图生视频/Wan2.2首尾帧Kijai版-上传首尾帧图片运行工作流！高清流畅好用！_2040755258175004674.json, 视频生成/图生视频/Wan2.2首尾帧Kijai版-上传首尾帧图片运行工作流！高清流畅好用！_2044660138820247554.json, 视频生成/图生视频/Wan2.2首尾帧图视频720超清版加速出视频_1950913701371117569.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版=艾橘溪_1904943116204576769.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2042949137406103554.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2043184542202208257.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2044662528826941441.json, 视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版_2075046170388422658.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2047121992129712129.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2048604067320045570.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2048924949674463234.json, 视频生成/图生视频/图生视频加速版-wan2.2首尾帧_2072871692606726146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_138
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/动作迁移-SteadyDancer-无限时长生成_2002209657114509313.json、图片生成/图生图/动作迁移_真人_二次元_Q版-跳舞、带货、口播-SteadyDancer_1999364272306126850.json、图片生成/图生图/最新SteadyDancer动作迁移美女跳舞_1996553985236549634.json、图片生成/文生图/动作舞蹈_骨骼迁移_不限时长版_2020834050457473026.json、图片生成/文生图/腾讯最新开源SteadyDancer超完美动作迁移工作流_2006630138284351490.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 图生视频（优化版）_1951564039392579586.json、视频生成/图生视频/Wan2.2超级首尾帧KJ版_1952197474423353346.json、视频生成/图生视频/Wan2.2首尾帧KJ版_1952270588733804545.json、视频生成/图生视频/Wan2.2首尾帧Kijai版-上传首尾帧图片运行工作流！高清流畅好用！_2040755258175004674.json、视频生成/图生视频/Wan2.2首尾帧Kijai版-上传首尾帧图片运行工作流！高清流畅好用！_2044660138820247554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
+全部 15 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 12/13 个有
-- `WanVideoScheduler` —— 12/13 个有
-- `WanVideoSetLoRAs` —— 12/13 个有
-- `WanVideoTextEncodeCached` —— 12/13 个有
-- `WanVideoBlockSwap` —— 11/13 个有
-- `DrawViTPose` —— 9/13 个有
-- `PoseAndFaceDetection` —— 9/13 个有
-- `WanVideoSetBlockSwap` —— 9/13 个有
-- `WanVideoTorchCompileSettings` —— 9/13 个有
-- `INTConstant` —— 6/13 个有
-- `Int` —— 6/13 个有
-- `PreviewImage` —— 6/13 个有
-- `PoseDetectionOneToAllAnimation` —— 4/13 个有
-- `CR Prompt Text` —— 3/13 个有
-- `TextInput_` —— 3/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/13 个有
-- `easy cleanGpuUsed` —— 2/13 个有
-- `AddLabel` —— 1/13 个有
-- `Anything Everywhere3` —— 1/13 个有
-- `ImageConcanate` —— 1/13 个有
-- `ImpactInt` —— 1/13 个有
-- `LoadWanVideoT5TextEncoder` —— 1/13 个有
-- `MathExpression|pysssss` —— 1/13 个有
-- `PrimitiveFloat` —— 1/13 个有
-- `PrimitiveInt` —— 1/13 个有
-- `SimpleMath+` —— 1/13 个有
-- `ToFloat` —— 1/13 个有
-- `WanVideoTextEncode` —— 1/13 个有
-- `easy clearCacheAll` —— 1/13 个有
-- `easy convertAnything` —— 1/13 个有
+- `INTConstant` —— 14/15 个有
+- `ImageResizeKJv2` —— 13/15 个有
+- `easy cleanGpuUsed` —— 12/15 个有
+- `MathExpression|pysssss` —— 11/15 个有
+- `easy clearCacheAll` —— 11/15 个有
+- `CR Text` —— 10/15 个有
+- `Int` —— 10/15 个有
+- `LayerUtility: PurgeVRAM` —— 9/15 个有
+- `PrimitiveFloat` —— 9/15 个有
+- `GetImageSizeAndCount` —— 5/15 个有
+- `ImageResize+` —— 1/15 个有
+- `ImpactSwitch` —— 1/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/15 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/15 个有
+- `RH_LLMAPI_NODE` —— 1/15 个有
+- `SeargePromptText` —— 1/15 个有
+- `ShowText` —— 1/15 个有
 
 ## 典型参数
 

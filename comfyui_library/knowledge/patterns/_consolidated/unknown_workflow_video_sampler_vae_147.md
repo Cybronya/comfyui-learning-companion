@@ -3,51 +3,57 @@ name: unknown_workflow_video_sampler_vae_147
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.75475
+common_nodes: [DownloadAndLoadFlorence2Model, Florence2Run, GetImageRangeFromBatch, ImageResizeKJ, LoadWanVideoT5TextEncoder, PreviewImage, ReCamMasterPoseVisualizer, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoReCamMasterCameraEmbed, WanVideoReCamMasterDefaultCamera, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/万相VACE14B视频扩展工作流_1923688009151991809.json, 视频生成/文生视频/万相Wan2.1-VACE-14B视频扩展_1923941763244093441.json, 视频生成/文生视频/万相WanVACE-14B文生视频_1923955106968948737.json, 视频生成/文生视频/文生视频(Wan2.1-VACE-14B)_1922920161509261314.json]
+members: [平台全量/摄像机变角度wan2.1的快手ReCamMaster_1908883382225543170.json, 视频生成/图生视频/ReCamMaster  AI视频运镜特效_1915621811168677889.json, 视频生成/图生视频/Wan2.1 运镜工作流 大师系列｜图生视频_1911957387463356417.json, 视频生成/图生视频/wan2.1+ReCamMaster视频运镜工作流.ai_1912793596637184001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_147
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/万相VACE14B视频扩展工作流_1923688009151991809.json、视频生成/文生视频/万相Wan2.1-VACE-14B视频扩展_1923941763244093441.json、视频生成/文生视频/万相WanVACE-14B文生视频_1923955106968948737.json、视频生成/文生视频/文生视频(Wan2.1-VACE-14B)_1922920161509261314.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/摄像机变角度wan2.1的快手ReCamMaster_1908883382225543170.json、视频生成/图生视频/ReCamMaster  AI视频运镜特效_1915621811168677889.json、视频生成/图生视频/Wan2.1 运镜工作流 大师系列｜图生视频_1911957387463356417.json、视频生成/图生视频/wan2.1+ReCamMaster视频运镜工作流.ai_1912793596637184001.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `DownloadAndLoadFlorence2Model`
+- `Florence2Run`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJ`
 - `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `ReCamMasterPoseVisualizer`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEncode`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
+- `WanVideoReCamMasterCameraEmbed`
+- `WanVideoReCamMasterDefaultCamera`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoEnhanceAVideo` —— 3/4 个有
+- `AddLabel` —— 3/4 个有
+- `WanVideoBlockSwap` —— 3/4 个有
 - `WanVideoTorchCompileSettings` —— 3/4 个有
-- `ImagePadKJ` —— 2/4 个有
-- `String Literal` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `GetImageSize+` —— 1/4 个有
-- `GetImageSizeAndCount` —— 1/4 个有
-- `INTConstant` —— 1/4 个有
-- `ImageResizeKJ` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `WidgetToString` —— 3/4 个有
+- `GetImageSizeAndCount` —— 2/4 个有
+- `GetNode` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `WanVideoVRAMManagement` —— 2/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
 
 ## 典型参数
 

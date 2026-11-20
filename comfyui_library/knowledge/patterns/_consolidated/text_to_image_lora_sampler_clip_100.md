@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_100
 type: Text To Image
 frequency: 13
 level: strong
-coverage: 0.883154
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, EmptySD3LatentImage, JjkText, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.861538
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, QwenPERewriteT8, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2单图双图局部重绘图像编辑工作流，图生图精准区域处理工具_2106100322811863041.json, 图片生成/图生图/Krea2四视图角色设定表-图生图工作流zip版_2087343455298211842.json, 图片生成/图生图/Krea2四视图资产库生成 人物角色图生图处理工具_2114098850569998338.json, 图片生成/图生图/Krea2图生图四视图角色资产库｜简易版4视图 图生图建角色档案_2104081597220868098.json, 图片生成/图生图/Krea2改图扩图多合一工作流｜局部重绘图生图处理_2097526511334154241.json, 图片生成/图生图/Krea2改图扩图多合一｜局部重绘图生图处理_2092369295241207810.json, 图片生成/图生图/Krea2资产库角色四视图 动漫角色分镜生成出图工具_2098707532436041730.json, 图片生成/图生图/Krea2资产库角色四视图 角色一致性图生图处理工具_2114097366662991874.json, 图片生成/图生图/Krea2资产库角色四视图 角色设计图生图处理工具_2113391188228268034.json, 图片生成/图生图/Krea2资产库角色四视图｜一致性角色设定图生图_2094940042543325186.json, 图片生成/图生图/Krea2资产库角色四视图｜角色一致性人物图生图_2114062123566452738.json, 图片生成/图生图/Krea2资产库角色四视图｜角色设计图生图生成_2092355126718722050.json, 图片生成/文生图/Krea2局部重绘移除｜精准无缝融合文生图图生图_2090464406776926210.json]
+members: [图片生成/反推提示词/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json, 图片生成/反推提示词/Qwen Image 2.1图像编辑 反推提示词图生图处理工具_2113056983065653250.json, 图片生成/反推提示词/全自动提示词图像编辑 千问image2.1海报改图优化_2104340100669857794.json, 图片生成/图生图/Qwen 2.1图像编辑4步加速，电商产品图生图多场景处理工作流_2103186678771970050.json, 图片生成/图生图/Qwen 2.1图像编辑4步加速｜电商产品图改图全靠它_2103067038968279041.json, 图片生成/图生图/Qwen Image 2.1 PE 图像编辑t8加速版｜图生图一键重绘提速神器_2104018991554580482.json, 图片生成/图生图/Qwen Image 2.1 PE图像编辑 加速版，角色设计图生图处理工具_2106137062041804802.json, 图片生成/图生图/Qwen Image 2.1 PE图像编辑工作流，人像写真图生图其它图片处理方案_2107212690769928193.json, 图片生成/图生图/Qwen Image 2.1 PE图像编辑高速版 指令式局部修改一键出图_2104260036716486658.json, 图片生成/图生图/Qwen Image 2.1 PE多图编辑｜最多9张图一起混合处理_2103039755335323650.json, 图片生成/图生图/Qwen Image 2.1人物换脸工作流，图生图面部替换处理工具_2106469574010036225.json, 图片生成/图生图/Qwen Image 2.1人物换脸工作流｜图生图换脸自然贴合_2103056179755835394.json, 图片生成/图生图/Qwen Image 2.1人物换脸，高保真面部替换图生图方案_2103185191014588417.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_100
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Krea2单图双图局部重绘图像编辑工作流，图生图精准区域处理工具_2106100322811863041.json、图片生成/图生图/Krea2四视图角色设定表-图生图工作流zip版_2087343455298211842.json、图片生成/图生图/Krea2四视图资产库生成 人物角色图生图处理工具_2114098850569998338.json、图片生成/图生图/Krea2图生图四视图角色资产库｜简易版4视图 图生图建角色档案_2104081597220868098.json、图片生成/图生图/Krea2改图扩图多合一工作流｜局部重绘图生图处理_2097526511334154241.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/反推提示词/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json、图片生成/反推提示词/Qwen Image 2.1图像编辑 反推提示词图生图处理工具_2113056983065653250.json、图片生成/反推提示词/全自动提示词图像编辑 千问image2.1海报改图优化_2104340100669857794.json、图片生成/图生图/Qwen 2.1图像编辑4步加速，电商产品图生图多场景处理工作流_2103186678771970050.json、图片生成/图生图/Qwen 2.1图像编辑4步加速｜电商产品图改图全靠它_2103067038968279041.json…）
 
 - **类型**：Text To Image
 - **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
@@ -26,40 +26,43 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `EmptySD3LatentImage`
 - `JjkText`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
-- `LoadImage`
 - `LoraLoaderModelOnly`
+- `QwenPERewriteT8`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 11/13 个有
-- `AddLabel` —— 9/13 个有
-- `GetImageSize` —— 9/13 个有
-- `ImageConcatMulti` —— 9/13 个有
-- `ImageResizeKJv2` —— 9/13 个有
-- `DrawMaskOnImage` —— 4/13 个有
-- `GetImageSize+` —— 4/13 个有
-- `ImageScaleToTotalPixels` —— 4/13 个有
-- `PrimitiveStringMultiline` —— 4/13 个有
-- `Seed (rgthree)` —— 4/13 个有
-- `AnyBooleanSwitch` —— 2/13 个有
-- `ImagePadForOutpaint` —— 2/13 个有
-- `ImpactConditionalBranch` —— 2/13 个有
-- `PrimitiveFloat` —— 2/13 个有
-- `easy boolean` —— 2/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
-- `HAIGC_SaveImagesToZip` —— 1/13 个有
-- `ResolutionSelector` —— 1/13 个有
+- `ComfySwitchNode` —— 12/13 个有
+- `LoadImage` —— 12/13 个有
+- `CR Prompt Text` —— 11/13 个有
+- `easy cleanGpuUsed` —— 11/13 个有
+- `easy showAnything` —— 11/13 个有
+- `QwenImage21Cache` —— 10/13 个有
+- `ResolutionSelector` —— 10/13 个有
+- `QwenImage21BlockCacheT8` —— 5/13 个有
+- `QwenImage21SageAttentionT8` —— 5/13 个有
+- `QwenImage21SpectrumT8` —— 5/13 个有
+- `Image Comparer (rgthree)` —— 4/13 个有
+- `ColorMatch` —— 3/13 个有
+- `GrowMaskWithBlur` —— 3/13 个有
+- `LayerUtility: CropByMask V2` —— 3/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/13 个有
+- `LayerUtility: ImageScaleRestore V2` —— 3/13 个有
+- `LayerUtility: RestoreCropBox` —— 3/13 个有
+- `GetNode` —— 1/13 个有
+- `SaveImageAdvanced` —— 1/13 个有
+- `Seed (rgthree)` —— 1/13 个有
+- `SetNode` —— 1/13 个有
+- `ShowText|pysssss` —— 1/13 个有
+- `Text Multiline` —— 1/13 个有
+- `XinbaoImageStandardizer` —— 1/13 个有
 
 ## 典型参数
 
@@ -77,7 +80,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -88,4 +91,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
-- 高发问题（13/13 个样本）：Steps较低可能导致细节不足
+- 高发问题（15/13 个样本）：Steps较低可能导致细节不足

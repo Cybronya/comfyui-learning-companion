@@ -1,0 +1,115 @@
+---
+key: 平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2036437007580270593.json
+name: Wan2.2 Animate 人物替换 精准替换 二创首选_2036437007580270593
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2036437007580270593.json
+hash: f1656182b0017edc
+coverage: 0.518072
+learned_at: 2026-11-14 01:04:55
+nodes: [GetNode, WanVideoDecode, GetNode, VHS_VideoCombine, DrawViTPose, OnnxDetectionModelLoader, CLIPVisionLoader, PoseAndFaceDetection, LayerUtility: ImageBlend, SetNode, DrawMaskOnImage, GetNode, SetNode, Reroute, MaskToImage, SeCModelLoader, InvertMask, Reroute, GetImageSizeAndCount, GetNode, WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoModelLoader, WanVideoClipVisionEncode, WanVideoSampler, SetNode, GetNode, SetNode, PreviewImage, PreviewImage, Reroute, Reroute, VHS_VideoCombine, ImageResizeKJv2, PreviewImage, VHS_VideoCombine, Reroute, WanVideoTextEncodeCached, SeCVideoSegmentation, INTConstant, INTConstant, SetNode, SetNode, WanVideoVAELoader, SetNode, WanVideoSetLoRAs, GetNode, LoadImage, WanVideoLoraSelectMulti, WanVideoLoraSelectMulti, Note, VHS_VideoCombine, CR Text, JWInteger, BlockifyMask, GrowMask, Note, Note, WanVideoAnimateEmbeds, INTConstant, VHS_LoadVideo, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetImageSizeAndCount, VHS_VideoInfo, PreviewImage, GetNode, GetNode, VHS_VideoCombine, PointsEditor, ImageFromBatch+, ImageConcanate]
+patterns: []
+missing: []
+---
+
+# 平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2036437007580270593.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2036437007580270593.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（83 个）：
+- `GetNode`
+- `WanVideoDecode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `DrawViTPose`
+- `OnnxDetectionModelLoader`
+- `CLIPVisionLoader`
+- `PoseAndFaceDetection`
+- `LayerUtility: ImageBlend`
+- `SetNode`
+- `DrawMaskOnImage`
+- `GetNode`
+- `SetNode`
+- `Reroute`
+- `MaskToImage`
+- `SeCModelLoader`
+- `InvertMask`
+- `Reroute`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoClipVisionEncode`
+- `WanVideoSampler` ★核心
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `PreviewImage`
+- `PreviewImage`
+- `Reroute`
+- `Reroute`
+- `VHS_VideoCombine`
+- `ImageResizeKJv2`
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `Reroute`
+- `WanVideoTextEncodeCached`
+- `SeCVideoSegmentation`
+- `INTConstant`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `WanVideoSetLoRAs`
+- `GetNode`
+- `LoadImage`
+- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelectMulti`
+- `Note`
+- `VHS_VideoCombine`
+- `CR Text`
+- `JWInteger`
+- `BlockifyMask`
+- `GrowMask`
+- `Note`
+- `Note`
+- `WanVideoAnimateEmbeds`
+- `INTConstant`
+- `VHS_LoadVideo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetImageSizeAndCount`
+- `VHS_VideoInfo`
+- `PreviewImage`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `PointsEditor`
+- `ImageFromBatch+`
+- `ImageConcanate`
+
+## 知识
+
+覆盖率 **52%**（43/83）
+
+**有卡**：`WanVideoDecode`、`VHS_VideoCombine`、`DrawViTPose`、`OnnxDetectionModelLoader`、`CLIPVisionLoader`、`PoseAndFaceDetection`、`LayerUtility: ImageBlend`、`DrawMaskOnImage`、`MaskToImage`、`SeCModelLoader`、`InvertMask`、`GetImageSizeAndCount`、`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoClipVisionEncode`、`WanVideoSampler`、`ImageResizeKJv2`、`WanVideoTextEncodeCached`、`SeCVideoSegmentation`、`INTConstant`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`LoadImage`、`WanVideoLoraSelectMulti`、`CR Text`、`JWInteger`、`BlockifyMask`、`GrowMask`、`WanVideoAnimateEmbeds`、`VHS_LoadVideo`、`VHS_VideoInfo`、`PointsEditor`、`ImageFromBatch+`、`ImageConcanate`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoClipVisionEncode、WanVideoDecode、WanVideoTextEncodeCached、WanVideoVAELoader、WanVideoLoraSelectMulti、WanVideoSetLoRAs

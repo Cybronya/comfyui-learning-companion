@@ -1,66 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_212
 type: Unknown Workflow
-frequency: 10
+frequency: 12
 level: moderate
-coverage: 0.811
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, LoadImage, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
+coverage: 0.837417
+common_nodes: [GetNode, ImageConcanate, ImageFromBatch, Int, LayerUtility: ImageScaleByAspectRatio V2, Seed, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader, easy mathInt, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/动作迁移   Scail-V2  更强的人物一致性 多参+ 换背景_2066157381343596545.json, 数字人/数字人/视频动作迁移  scail2 多参考图 可换背景_2065797278249607169.json, 视频生成/图生视频/SCAIL-2多参考图角色动作迁移与替换——支持长视频_2066386680499761154.json, 视频生成/图生视频/Scail2 多参动作迁移＆人物替换_支持超长视频_2066423753369808897.json, 视频生成/图生视频/Wan-Scail2-多图参考换姿势+换背景_2066016584279347201.json, 视频生成/图生视频/Wan-Scail2-多图姿势迁移_2066001113731649537.json, 视频生成/图生视频/scail2 多参人物图动作模仿工作流_2066378010617540610.json, 视频生成/图生视频/scail2 多参工作流-多图参考-动作迁移_2073343102223470594.json, 视频生成/图生视频/scail2 多参工作流动作迁移保持人物多角度不崩_2065965062183018498.json, 视频生成/图生视频/史上最强的scail2 多图参考工作流_2066889873231015938.json]
+members: [视频生成/图生视频/交互式背景替换2_2080697137448443906.json, 视频生成/图生视频/多人场景选取双角色替换_2078455563666677762.json, 视频生成/图生视频/多人物交互指定替换_2075884144709689346.json, 视频生成/图生视频/影视二创角色替换1_2076558631444770818.json, 视频生成/图生视频/替换视频中的指定角色_2080945536378687490.json, 视频生成/图生视频/最新Bernini加速版人物替换_2074502633741705218.json, 视频生成/图生视频/最新影视二创多人场景选取角色替换_2078408351960100866.json, 视频生成/图生视频/最新影视二创视频角色替换_2078429040989528065.json, 视频生成/图生视频/最新影视二创视频角色替换漫剧_2078697075843362818.json, 视频生成/图生视频/来财蛙呱呱呱_2085649794168610818.json, 视频生成/图生视频/真人换卡通人物_2085656573984198657.json, 视频生成/图生视频/舞蹈动作迁移_2080234302566125570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_212
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/动作迁移   Scail-V2  更强的人物一致性 多参+ 换背景_2066157381343596545.json、数字人/数字人/视频动作迁移  scail2 多参考图 可换背景_2065797278249607169.json、视频生成/图生视频/SCAIL-2多参考图角色动作迁移与替换——支持长视频_2066386680499761154.json、视频生成/图生视频/Scail2 多参动作迁移＆人物替换_支持超长视频_2066423753369808897.json、视频生成/图生视频/Wan-Scail2-多图参考换姿势+换背景_2066016584279347201.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/交互式背景替换2_2080697137448443906.json、视频生成/图生视频/多人场景选取双角色替换_2078455563666677762.json、视频生成/图生视频/多人物交互指定替换_2075884144709689346.json、视频生成/图生视频/影视二创角色替换1_2076558631444770818.json、视频生成/图生视频/替换视频中的指定角色_2080945536378687490.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `ImageBatchMulti`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
+全部 12 个 workflow 都包含：
+- `GetNode`
+- `ImageConcanate`
+- `ImageFromBatch`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Seed`
+- `SetNode`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanAnimatePlus Bernini`
 - `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ContextOptions`
 - `WanAnimatePlus Decode`
 - `WanAnimatePlus LoraSelectMulti`
 - `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus Sampler`
+- `WanAnimatePlus SamplerExtraArgs`
+- `WanAnimatePlus Samplerv2`
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus SetBlockSwap`
 - `WanAnimatePlus SetLoRAs`
 - `WanAnimatePlus TextEncodeCached`
 - `WanAnimatePlus VAELoader`
+- `easy mathInt`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `WanAnimatePlus ContextOptions` —— 9/10 个有
-- `Int` —— 5/10 个有
-- `JjkText` —— 4/10 个有
-- `easy boolean` —— 3/10 个有
-- `Text` —— 2/10 个有
-- `ToBoolNode` —— 2/10 个有
-- `VHS_VideoInfo` —— 2/10 个有
-- `easy showAnything` —— 2/10 个有
-- `CLIPVisionLoader` —— 1/10 个有
-- `If ANY execute A else B` —— 1/10 个有
-- `ImpactNeg` —— 1/10 个有
-- `PrimitiveBoolean` —— 1/10 个有
-- `PrimitiveInt` —— 1/10 个有
-- `WanAnimatePlus ClipVisionEncode` —— 1/10 个有
+- `LoadImage` —— 11/12 个有
+- `Text` —— 11/12 个有
+- `PreviewImage` —— 10/12 个有
+- `easy imageCount` —— 10/12 个有
+- `Float` —— 9/12 个有
+- `Float to Int` —— 9/12 个有
+- `ImageResizeKJv2` —— 6/12 个有
+- `RHHiddenNodes` —— 6/12 个有
+- `RH_Captioner` —— 6/12 个有
+- `RMBG` —— 6/12 个有
+- `TextConcatenate_UTK` —— 6/12 个有
+- `easy indexAnything` —— 6/12 个有
+- `Bjornulf_ShowInt` —— 5/12 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/12 个有
+- `StringReplace` —— 4/12 个有
+- `ExtractNFrames` —— 3/12 个有
+- `ImageConcatMulti` —— 3/12 个有
+- `RTXVideoSuperResolution` —— 3/12 个有
+- `GoogleTranslateTextNode` —— 2/12 个有
+- `PurgeVRAM_UTK` —— 2/12 个有
+- `RH_Translator` —— 2/12 个有
+- `CR Image Grid Panel` —— 1/12 个有
+- `SaveImage` —— 1/12 个有
 
 ## 典型参数
 

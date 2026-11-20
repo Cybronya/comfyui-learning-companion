@@ -3,39 +3,34 @@ name: unknown_workflow_generic_524
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.804667
-common_nodes: [Apply Whisper, AudioSeparation, LoadAudio, SaveAudio, SoundFlow_TrimAudio, VoxCPM_TTS]
+coverage: 0.741667
+common_nodes: [AILab_QwenVL, LoadImage, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json, 音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json, 音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json, 音频生成/音频生成/VoxCPM TTS1.5（人声情绪音色克隆超真实）_2002278196533948418.json, 音频生成/音频生成/VoxCPM TTS1.5（荒哥内门弟子专用）_2000084223291686913.json, 音频生成/音频生成/VoxCPM TTS（最强方言音色克隆）_1970696920505196546.json]
+members: [图片生成/反推提示词/API - analyse image_2066921620509380609.json, 图片生成/反推提示词/Lora工具-单图反推打标-QwenVL特调前置词-api_2058549017868595202.json, 图片生成/反推提示词/QwenVL 提示词反推_2006536897140629506.json, 图片生成/反推提示词/反推提示词(z-image最新模型）_2003097686230409217.json, 图片生成/反推提示词/最强反推提示词(z-image最新模型）_2001166953437855746.json, 图片生成/文生图/反推-图提示词-Qwen3VL_1983497403464622081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_524
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2004447094364667905.json、音频生成/音频生成/VoxCPM TTS1.5 单人音色克隆支持参考任何方言语气_2008523777042288642.json、音频生成/音频生成/VoxCPM TTS1.5最强方言音色克隆支持参考任何方言语气_1970662923058225154.json、音频生成/音频生成/VoxCPM TTS1.5（人声情绪音色克隆超真实）_2002278196533948418.json、音频生成/音频生成/VoxCPM TTS1.5（荒哥内门弟子专用）_2000084223291686913.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/API - analyse image_2066921620509380609.json、图片生成/反推提示词/Lora工具-单图反推打标-QwenVL特调前置词-api_2058549017868595202.json、图片生成/反推提示词/QwenVL 提示词反推_2006536897140629506.json、图片生成/反推提示词/反推提示词(z-image最新模型）_2003097686230409217.json、图片生成/反推提示词/最强反推提示词(z-image最新模型）_2001166953437855746.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioSeparation`
-- `LoadAudio`
-- `SaveAudio`
-- `SoundFlow_TrimAudio`
-- `VoxCPM_TTS`
+- `AILab_QwenVL`
+- `LoadImage`
+- `easy saveText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `ShowText|pysssss` —— 5/6 个有
-- `PreviewAudio` —— 4/6 个有
-- `LayerUtility: TextBox` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
+- `CR Text` —— 3/6 个有
+- `ImageResize+` —— 1/6 个有
 
 ## 典型参数
 

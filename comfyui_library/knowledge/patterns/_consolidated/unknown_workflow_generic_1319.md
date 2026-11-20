@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_1319
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.809
-common_nodes: [CR Prompt Text, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveStringMultiline, StringFunction|pysssss, easy saveText, easy seed, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.870333
+common_nodes: [ImageFromBatch+, SaveImage, VHS_LoadVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/推理-单图多分镜提示词-Qwen3VL_1999797119504482306.json, 图片生成/反推提示词/推理-单图多分镜提示词-RH_1999781948660871169.json]
+members: [平台全量/获取首尾帧图片_加速_2031417506153369602.json, 平台全量/视频首帧尾帧获取应用工作流_2054161998849552386.json, 平台全量/通用爆款热门视频一键提取首帧和尾帧图片_2021057174008504321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1319
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/推理-单图多分镜提示词-Qwen3VL_1999797119504482306.json、图片生成/反推提示词/推理-单图多分镜提示词-RH_1999781948660871169.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/获取首尾帧图片_加速_2031417506153369602.json、平台全量/视频首帧尾帧获取应用工作流_2054161998849552386.json、平台全量/通用爆款热门视频一键提取首帧和尾帧图片_2021057174008504321.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `GetImageSizeAndCount`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PrimitiveStringMultiline`
-- `StringFunction|pysssss`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
+全部 3 个 workflow 都包含：
+- `ImageFromBatch+`
+- `SaveImage`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3_VQA` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
+- `VHS_VideoInfo` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
@@ -47,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

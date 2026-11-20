@@ -3,100 +3,80 @@ name: text_to_image_lora_sampler_clip_198
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.750667
-common_nodes: [AddNoise, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, ImageScaleBy, KSampler, KSamplerAdvanced, LayerColor: AutoAdjust, LayerFilter: FilmV2, LayerFilter: HDREffects, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RandomNoise, RepeatLatentBatch, SaveImage, Seed (rgthree), SetNode, ShowText|pysssss, Text Concatenate (JPS), UNETLoader, VAEDecode, VAEEncode, VAELoader, easy positive, easy stylesSelector, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.897444
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize+, Image Comparer (rgthree), JjkText, KSampler, LoraLoaderModelOnly, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/Z参考文生图自选lora_2061648196773965826.json, 图片生成/图生图/Z Image：极致真实的图像，洗图，单图无限裂变_2044574689816743938.json, 图片生成/图生图/Z参考文生图CCD风格_2064560033307914242.json, 图片生成/图生图/Z参考文生图_2061630528536793090.json, 图片生成/文生图/Hui-CCD-nannan_2067420287058141186.json, 图片生成/文生图/Z Image：极致真实的图像，抖音小红书洗图，一键就能拥有，反推出图，文生图，_2044396415601876993.json, 图片生成/文生图/Z纯文生图CCD加强_2064568241581809666.json, 图片生成/文生图/Z纯文生图_2061635410899595265.json, 图片生成/文生图/Z纯文生图自选lora_2061650507298598913.json]
+members: [图片生成/图生图/FLUX.2+Klein9B单图工作流｜图生图精修细节保留_2110758202563448834.json, 图片生成/图生图/FLUX.2加Klein9B单图处理，图生图质感细节拉满_2110849332793659393.json, 图片生成/图生图/Klein 9B一键光影重塑专用LoRA｜图生图打光电商产品_2090096264871501826.json, 图片生成/图生图/Klein 9B专用LoRA光影重塑｜图生图打光质感重塑_2108066679426207745.json, 图片生成/图生图/Klein 9B光影重塑专用LoRA图生图｜一键打光氛围拉满_2108043104434610178.json, 图片生成/图生图/Klein 9B光影重塑｜专用LoRA图生图一键重打光_2101558105770389505.json, 图片生成/图生图/klein打光小助手｜图生图一键专业布光提升质感_2105249876488581121.json, 图片生成/图生图/一键光影重塑｜Klein 9B专用LoRA图生图打光_2089805836540538881.json, 图片生成/图生图/图生图｜Klein_9B一键溶图，双图融合测试效果实测_2099856179072692225.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_198
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/Z参考文生图自选lora_2061648196773965826.json、图片生成/图生图/Z Image：极致真实的图像，洗图，单图无限裂变_2044574689816743938.json、图片生成/图生图/Z参考文生图CCD风格_2064560033307914242.json、图片生成/图生图/Z参考文生图_2061630528536793090.json、图片生成/文生图/Hui-CCD-nannan_2067420287058141186.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/FLUX.2+Klein9B单图工作流｜图生图精修细节保留_2110758202563448834.json、图片生成/图生图/FLUX.2加Klein9B单图处理，图生图质感细节拉满_2110849332793659393.json、图片生成/图生图/Klein 9B一键光影重塑专用LoRA｜图生图打光电商产品_2090096264871501826.json、图片生成/图生图/Klein 9B专用LoRA光影重塑｜图生图打光质感重塑_2108066679426207745.json、图片生成/图生图/Klein 9B光影重塑专用LoRA图生图｜一键打光氛围拉满_2108043104434610178.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `AddNoise`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `ImageScaleBy`
+- `GetImageSize+`
+- `Image Comparer (rgthree)`
+- `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LayerColor: AutoAdjust`
-- `LayerFilter: FilmV2`
-- `LayerFilter: HDREffects`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `RandomNoise`
-- `RepeatLatentBatch`
+- `PainterFluxImageEdit`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Concatenate (JPS)`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy positive`
-- `easy stylesSelector`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Joy_caption_two_advanced` —— 8/9 个有
-- `Joy_caption_two_load` —— 8/9 个有
-- `Joy_extra_options` —— 8/9 个有
-- `StringFunction|pysssss` —— 8/9 个有
-- `easy saveText` —— 7/9 个有
-- `CR Prompt List` —— 1/9 个有
-- `INTConstant` —— 1/9 个有
-- `ImpactSwitch` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `String Literal` —— 1/9 个有
-- `easy boolean` —— 1/9 个有
-- `easy ifElse` —— 1/9 个有
-- `忽略多组孤海` —— 1/9 个有
+- `LoadImage` —— 7/9 个有
+- `ResizeImagesByLongerEdge` —— 7/9 个有
+- `AILab_ColorInput` —— 2/9 个有
+- `CR Text` —— 2/9 个有
+- `ConstrainImage|pysssss` —— 2/9 个有
+- `ImageLoader` —— 2/9 个有
+- `JoinStrings` —— 2/9 个有
+- `RMBG` —— 2/9 个有
+- `JjkShowText` —— 1/9 个有
+- `RH_LLMAPI_Pro_Node` —— 1/9 个有
+- `RTXVideoSuperResolution` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 9 | 100% |
-| Prompt 约束强度(CFG) | 9 | 9 - 9 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | dpmpp_2m | - | 9 | 89% |
-| 重绘幅度 | sgm_uniform | - | 9 | 89% |
-| 宽度 | 1080 | 1080 - 1088 | 9 | 100% |
-| 高度 | 1920 | 1920 - 1920 | 9 | 100% |
+| 采样步数 | 4 | 4 - 4 | 9 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
+| 采样算法 | er_sde | - | 9 | 100% |
+| 调度器 | beta | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，9 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 9，观测区间 9 - 9，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_2m，9 个样本，一致性 89%
-- 重绘幅度 最常用 sgm_uniform，9 个样本，一致性 89%
-- 宽度 中位数 1080，观测区间 1080 - 1088，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，观测区间 1920 - 1920，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，9 个样本，一致性 100%
+- 调度器 最常用 beta，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高发问题（18/9 个样本）：Steps较低可能导致细节不足

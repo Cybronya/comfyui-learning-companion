@@ -3,57 +3,78 @@ name: text_to_image_lora_sampler_clip_691
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.972
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, NunchakuQwenImageDiTLoader, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.7845
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, INTConstant, ImageScaleToTotalPixels, ImageSharpen, JjkText, KSampler, KSamplerAdvanced, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewAny, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/【阡陌】Qwen3-VL图片反推提示词Qwen image文生图洗图_1983542604958736385.json, 图片生成/文生图/【阡陌】nunchaku-qwen-image融合4步lora极速秒出图工作流_1962088539834007553.json]
+members: [图片生成/文生图/Dark Deco暗黑装饰艺术全自动三采文生图工作流_2101047440542617602.json, 图片生成/文生图/文生图全模式｜Krea2三采直出高清图像生成_2089453263014948865.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_691
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/【阡陌】Qwen3-VL图片反推提示词Qwen image文生图洗图_1983542604958736385.json、图片生成/文生图/【阡陌】nunchaku-qwen-image融合4步lora极速秒出图工作流_1962088539834007553.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Dark Deco暗黑装饰艺术全自动三采文生图工作流_2101047440542617602.json、图片生成/文生图/文生图全模式｜Krea2三采直出高清图像生成_2089453263014948865.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `ColorMatch`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `INTConstant`
+- `ImageScaleToTotalPixels`
+- `ImageSharpen`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
+- `KSamplerAdvanced`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `NunchakuQwenImageDiTLoader`
+- `PreviewAny`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageLoader` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `MultiplePathsInput` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `SetNode` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | - | 2 | 100% |
+| 高度 | 80 | - | 2 | 100% |
 | 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
+| 采样算法 | er_sde | - | 2 | 100% |
+| 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 768 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -63,12 +84,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，2 个样本，一致性 100%
+- 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

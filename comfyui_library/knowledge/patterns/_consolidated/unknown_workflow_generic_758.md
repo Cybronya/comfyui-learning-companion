@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_758
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.81425
-common_nodes: [CR Prompt Text, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 0.83
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1换表情+还原比例 工作流_1967944052656189441.json, 图片生成/图生图/全能图片V1生成商务证件照_1968112031129829377.json, 图片生成/图生图/全能图片V1生成真人手办_1967771778099589122.json, 图片生成/图生图/全能图片V1生成艺术肖像照_1969409389759242242.json]
+members: [视频生成/图生视频/Kling_V30ProImageToVideo_v3.0_2033808754747121665.json, 视频生成/图生视频/图生视频工作流｜可灵 3.0 Pro 多镜头 最长十五秒_2100471524372344833.json, 视频生成/图生视频/图生视频工作流｜可灵_3.0_Pro_多镜头_最长十五秒_2103663191376089089.json, 视频生成/图生视频/图生视频工作流｜可灵_3.0_Pro_多镜头_最长十五秒_2104850576906473473.json, 视频生成/图生视频/谷歌3.1 Fast图生视频工作流｜极速出片版_2099677228530487297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_758
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片V1换表情+还原比例 工作流_1967944052656189441.json、图片生成/图生图/全能图片V1生成商务证件照_1968112031129829377.json、图片生成/图生图/全能图片V1生成真人手办_1967771778099589122.json、图片生成/图生图/全能图片V1生成艺术肖像照_1969409389759242242.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Kling_V30ProImageToVideo_v3.0_2033808754747121665.json、视频生成/图生视频/图生视频工作流｜可灵 3.0 Pro 多镜头 最长十五秒_2100471524372344833.json、视频生成/图生视频/图生视频工作流｜可灵_3.0_Pro_多镜头_最长十五秒_2103663191376089089.json、视频生成/图生视频/图生视频工作流｜可灵_3.0_Pro_多镜头_最长十五秒_2104850576906473473.json、视频生成/图生视频/谷歌3.1 Fast图生视频工作流｜极速出片版_2099677228530487297.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `HintImageEnchance` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `RH_KlingV30ProImageToVideo` —— 4/5 个有
+- `RH_Veo31_Fast_Image2Video_Official` —— 1/5 个有
 
 ## 典型参数
 

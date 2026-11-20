@@ -1,91 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_859
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.446
-common_nodes: [AddLabel, BasicScheduler, CFGGuider, CLIPLoader, ComfyMathExpression, ComfyNumberConvert, ComfySwitchNode, CreateVideo, EmptyAudio, EmptyMiniMaxH3LatentAV, GetImageSize, GetNode, ImageConcatMulti, ImageResizeKJv2, KSamplerSelect, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AddGuide, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAny, PrimitiveFloat, PrimitiveInt, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SetNode, SolAttnPatch, SomethingToString, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideoFFmpeg, VHS_VideoCombine, VHS_VideoInfo]
+frequency: 3
+level: strong
+coverage: 0.872667
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, BerniniS2VConditioning, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 风格参考视频风格迁移_2099000699609767937.json, 视频生成/图生视频/MinimaxH3视频角色替换+lms放大_2110649907953627137.json]
+members: [视频生成/图生视频/Bernini 人物+场景+音频合成_2076950547332161538.json, 视频生成/图生视频/Bernini音频驱动数字人_2078320387280162818.json, 视频生成/图生视频/高动态图生视频_2079545449362575361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_859
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 风格参考视频风格迁移_2099000699609767937.json、视频生成/图生视频/MinimaxH3视频角色替换+lms放大_2110649907953627137.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Bernini 人物+场景+音频合成_2076950547332161538.json、视频生成/图生视频/Bernini音频驱动数字人_2078320387280162818.json、视频生成/图生视频/高动态图生视频_2079545449362575361.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：45%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AddLabel`
-- `BasicScheduler`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
+- `BerniniS2VConditioning`
 - `CLIPLoader`
+- `CLIPTextEncode`
 - `ComfyMathExpression`
 - `ComfyNumberConvert`
-- `ComfySwitchNode`
-- `CreateVideo`
-- `EmptyAudio`
-- `EmptyMiniMaxH3LatentAV`
-- `GetImageSize`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVSeparateAVLatent`
+- `KSamplerAdvanced`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetNode`
-- `SolAttnPatch`
-- `SomethingToString`
-- `StringConcatenate`
-- `TextGenerate`
+- `PrimitiveStringMultiline`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 1/2 个有
-- `CLIPTextEncode` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `GetImageSize+` —— 1/2 个有
-- `GetVideoComponents` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `LTXVConcatAVLatent` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
-- `ResizeImageMaskNode` —— 1/2 个有
-- `VAEDecodeAudio` —— 1/2 个有
+- `Float` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `RIFEInterpolation` —— 2/3 个有
+- `AudioConcat` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `ImpactFloat` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `RIFE VFI` —— 1/3 个有
+- `easy int` —— 1/3 个有
+- `孤海注释` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | dpmpp_2m_sde | - | 3 | 100% |
+| 重绘幅度 | sgm_uniform | - | 3 | 100% |
 
 ## 常见问题
 
@@ -93,4 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_2m_sde，3 个样本，一致性 100%
+- 重绘幅度 最常用 sgm_uniform，3 个样本，一致性 100%

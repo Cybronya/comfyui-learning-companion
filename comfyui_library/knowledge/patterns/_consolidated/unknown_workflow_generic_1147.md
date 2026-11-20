@@ -3,34 +3,37 @@ name: unknown_workflow_generic_1147
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.986
-common_nodes: [CR Text, LoadImage, RH_Sora2_I2V_Batch, SaveVideo]
+coverage: 0.847333
+common_nodes: [EmptyImage, GetImageSize, ImageCompositeMasked, LoadImage, LongCatImageEdit, LongCatImageModelLoader, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/梭罗2全能视频S图生视频最高10并发（一次出10个视频）影视分镜专用_2007674265272852482.json, 视频生成/图生视频/漫剧神器全能视频S图生视频锁定人物+提示词，10并发！_1999014872937549825.json, 视频生成/图生视频/（一次出10个视频）_2008185843260858369.json]
+members: [图片生成/图生图/longcat-image-advanced-edit-图像编辑_2000840598707990530.json, 图片生成/文生图/longcat-image-advanced-edit_1998416916836442114.json, 平台全量/一圈即没：Longcat 智能物体移除工作流_2002054007961055234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1147
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/梭罗2全能视频S图生视频最高10并发（一次出10个视频）影视分镜专用_2007674265272852482.json、视频生成/图生视频/漫剧神器全能视频S图生视频锁定人物+提示词，10并发！_1999014872937549825.json、视频生成/图生视频/（一次出10个视频）_2008185843260858369.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/longcat-image-advanced-edit-图像编辑_2000840598707990530.json、图片生成/文生图/longcat-image-advanced-edit_1998416916836442114.json、平台全量/一圈即没：Longcat 智能物体移除工作流_2002054007961055234.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Text`
+- `EmptyImage`
+- `GetImageSize`
+- `ImageCompositeMasked`
 - `LoadImage`
-- `RH_Sora2_I2V_Batch`
-- `SaveVideo`
+- `LongCatImageEdit`
+- `LongCatImageModelLoader`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 2/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
+- `AddLabel` —— 1/3 个有
 
 ## 典型参数
 

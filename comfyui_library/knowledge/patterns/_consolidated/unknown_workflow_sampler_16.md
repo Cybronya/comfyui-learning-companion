@@ -1,39 +1,42 @@
 ---
 name: unknown_workflow_sampler_16
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.9815
-common_nodes: [ImageAndMaskPreview, ImageStitch, LoadImage, RunningHub OneReward Loader, SaveImage]
+coverage: 0.91075
+common_nodes: [AudioConcat, EmptyAudio, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/OneReward擦除物体_1965642962145263617.json, 图片生成/图生图/【局部重绘】-字节OneReward-Fill重绘_1966399802068152322.json, 图片生成/图生图/万物擦除-字节OneReward-Fill重绘_1965573500461268993.json, 图片生成/图生图/文字渲染 _ OneReward_1966179753831075841.json, 图片生成/图生图/文字渲染-字节OneReward-Fill重绘_1965571314838851585.json, 图片生成/图生图/文字绘写-字节OneReward-Fill_1966331017168662530.json]
+members: [数字人/数字人/FlashTalk Head数字人V2_2027598784703766529.json, 数字人/数字人/SoulX-FlashHead 数字人_2027580524998430721.json, 数字人/数字人/数字人-FlashTalk-Head-V3-适合做口播，速度快！_2027730831661338625.json, 视频生成/图生视频/FlashHead--数字人对口型配音_2027554481096892418.json, 视频生成/图生视频/FlashTalk Head数字人V3_2027090582182567937.json, 视频生成/图生视频/FlashTalk Head数字人_2027563123820994562.json, 视频生成/图生视频/FlashTalk Head数字人说话ai视频数字人说话头部说话图片说话工作流_2029234850993016833.json, 视频生成/图生视频/FlashTalk Head数字人：说话ai视频数字人说话头部说话图片说话工作流_2029413413356572674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_16
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/OneReward擦除物体_1965642962145263617.json、图片生成/图生图/【局部重绘】-字节OneReward-Fill重绘_1966399802068152322.json、图片生成/图生图/万物擦除-字节OneReward-Fill重绘_1965573500461268993.json、图片生成/图生图/文字渲染 _ OneReward_1966179753831075841.json、图片生成/图生图/文字渲染-字节OneReward-Fill重绘_1965571314838851585.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/FlashTalk Head数字人V2_2027598784703766529.json、数字人/数字人/SoulX-FlashHead 数字人_2027580524998430721.json、数字人/数字人/数字人-FlashTalk-Head-V3-适合做口播，速度快！_2027730831661338625.json、视频生成/图生视频/FlashHead--数字人对口型配音_2027554481096892418.json、视频生成/图生视频/FlashTalk Head数字人V3_2027090582182567937.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageAndMaskPreview`
-- `ImageStitch`
+全部 8 个 workflow 都包含：
+- `AudioConcat`
+- `EmptyAudio`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `RunningHub OneReward Loader`
-- `SaveImage`
+- `RunningHub SoulX-FlashHead Loader`
+- `RunningHub SoulX-FlashHead Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub OneReward Sampler` —— 4/6 个有
-- `RH_Translator` —— 2/6 个有
-- `RunningHub OneReward Eraser` —— 2/6 个有
-- `Text Multiline` —— 2/6 个有
+- `JWInteger` —— 6/8 个有
+- `SaveAudio` —— 5/8 个有
+- `AudioCrop` —— 3/8 个有
+- `CustomAddLabel` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,80 +1,70 @@
 ---
 name: unknown_workflow_lora_sampler_vae_2
 type: Unknown Workflow
-frequency: 24
-level: moderate
-coverage: 0.839083
-common_nodes: [INTConstant, SimpleMath+, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
-problems: []
+frequency: 25
+level: strong
+coverage: 0.9062
+common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Bernini图像编辑_2067491450962669570.json, 图片生成/图生图/Bernini图像编辑_2067815050135560194.json, 图片生成/图生图/Bernini图像编辑自用 非常强大_2069406764839292929.json, 图片生成/图生图/Bernini贝尔尼尼图像编辑_2069289884707287042.json, 图片生成/图生图/字节开源Bernini+视频换人(角色替换)！Bernini+视频编辑！_2069693214029869058.json, 图片生成/图生图/贝尔尼尼Bernini图像编辑_2069294772795301889.json, 数字人/数字人/Bernini 通用视频编辑 低显存可用_2062751784443142145.json, 数字人/数字人/Bernini视频换装！视频一键换装 人物一致_2080498072253190146.json, 视频生成/图生视频/Bernini 给视频添加物品！Bernini视频编辑！艾橘溪_2062399541441294337.json, 视频生成/图生视频/Bernini 视频换人 角色替换 视频编辑_2063189947137482754.json, 视频生成/图生视频/Bernini 视频换背景 万能视频编辑 视频换场景_2067813709430476801.json, 视频生成/图生视频/Bernini 视频换装-电商模特换装_2065587148933394434.json, 视频生成/图生视频/Bernini 视频换装-电商模特换装图片视频换装工作流_2065781497252110338.json, 视频生成/图生视频/Bernini 视频换装-电商模特换装图片视频换装工作流_2082087335428182017.json, 视频生成/图生视频/Bernini 视频换装！Bernini 视频编辑！_2062874601948008449.json, 视频生成/图生视频/Bernini+视频换装！Bernini+视频编辑_2081982028542734338.json, 视频生成/图生视频/Bernini消除视频物品和消除字幕！Bernini视频编辑！_2062874269029330946.json, 视频生成/图生视频/Bernini视频换人+视频换装_2063038117896089602.json, 视频生成/图生视频/Bernini视频换装_2092256744486563841.json, 视频生成/图生视频/beinini版后裔摇_2070022082288775170.json, 视频生成/图生视频/bernini动作迁移提示词优化版_2069372926679412738.json, 视频生成/图生视频/极速bernini电商带货替换视频人物_2075868029937868802.json, 视频生成/图生视频/极速版bernini电商带货人物替换视频_2075874910056046593.json, 视频生成/图生视频/电商_视频  替换背景  只消耗RH币_2073836975819419649.json]
+members: [平台全量/Qwen-image-Edit-2509_丰胸_2003293711083700226.json, 平台全量/一键换装_2087704085607829505.json, 平台全量/换装 换衣  服装展示   FireRed-Image-Edit_2117666220249018370.json, 平台全量/换装 换衣  服装展示   FireRed-Image-Edit_2118247895441956865.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2109580075048980482.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2109873007299751938.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2112418082789613570.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117206371375603713.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117220857025220609.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117228142464159746.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117228377739452418.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117294372566945793.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117297662126026754.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117297948311769089.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117584015518691330.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117584487952502786.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117584946536730626.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117679143562338305.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117684770636394497.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117853459096621057.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2117961589952442369.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2118208189857615873.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2118222921226346497.json, 平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2118303460184645633.json, 平台全量/电商参考图片生成文字海报 FireRed_2030452986723442690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_vae_2
 
-> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/Bernini图像编辑_2067491450962669570.json、图片生成/图生图/Bernini图像编辑_2067815050135560194.json、图片生成/图生图/Bernini图像编辑自用 非常强大_2069406764839292929.json、图片生成/图生图/Bernini贝尔尼尼图像编辑_2069289884707287042.json、图片生成/图生图/字节开源Bernini+视频换人(角色替换)！Bernini+视频编辑！_2069693214029869058.json…）
+> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（平台全量/Qwen-image-Edit-2509_丰胸_2003293711083700226.json、平台全量/一键换装_2087704085607829505.json、平台全量/换装 换衣  服装展示   FireRed-Image-Edit_2117666220249018370.json、平台全量/换装 换衣  服装展示   FireRed-Image-Edit_2118247895441956865.json、平台全量/换装 换衣  电商服装展示  小红书  FireRed-Image-Edit_2109580075048980482.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：24
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：25
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 24 个 workflow 都包含：
-- `INTConstant`
-- `SimpleMath+`
-- `WanAnimatePlus Bernini`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus Samplerv2`
-- `WanAnimatePlus Schedulerv2`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
+全部 25 个 workflow 都包含：
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `KSampler`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 23/24 个有
-- `LoadImage` —— 22/24 个有
-- `JjkText` —— 19/24 个有
-- `Seed` —— 19/24 个有
-- `TextCombinerSix` —— 19/24 个有
-- `VHS_LoadVideo` —— 19/24 个有
-- `VHS_VideoCombine` —— 19/24 个有
-- `VHS_VideoInfoLoaded` —— 19/24 个有
-- `WanAnimatePlus ContextOptions` —— 19/24 个有
-- `WanAnimatePlus SamplerExtraArgs` —— 19/24 个有
-- `GetNode` —— 17/24 个有
-- `ImageConcanate` —— 17/24 个有
-- `SetNode` —— 17/24 个有
-- `ImageConcatMulti` —— 5/24 个有
-- `SaveImage` —— 5/24 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/24 个有
-- `PreviewImage` —— 4/24 个有
-- `RH_Captioner` —— 4/24 个有
-- `Text` —— 4/24 个有
-- `TextConcatenate_UTK` —— 4/24 个有
-- `easy indexAnything` —— 4/24 个有
-- `easy showAnything` —— 4/24 个有
-- `AILab_QwenVL` —— 2/24 个有
-- `ExtractNFrames` —— 2/24 个有
-- `ShowText|pysssss` —— 2/24 个有
-- `GoogleTranslateTextNode` —— 1/24 个有
-- `RH_Translator` —— 1/24 个有
-- `StringReplace` —— 1/24 个有
+- `UNETLoader` —— 24/25 个有
+- `PreviewImage` —— 23/25 个有
+- `PIP_图像联结` —— 22/25 个有
+- `Image Comparer (rgthree)` —— 3/25 个有
+- `Anything Everywhere` —— 1/25 个有
+- `GetNode` —— 1/25 个有
+- `JjkShowText` —— 1/25 个有
+- `RH_Captioner_Pro` —— 1/25 个有
+- `UnetLoaderGGUF` —— 1/25 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 8 | 25 | 81% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 25 | 100% |
+| 采样算法 | euler | - | 25 | 96% |
+| 调度器 | simple | - | 25 | 92% |
+| 重绘幅度 | 1 | 1 - 1 | 25 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 25/25 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 8，25 个样本，取值集中（一致性 81%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，25 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，25 个样本，一致性 96%
+- 调度器 最常用 simple，25 个样本，一致性 92%
+- 重绘幅度 中位数 1，观测区间 1 - 1，25 个样本，取值集中（一致性 100%）
+- 高发问题（25/25 个样本）：Steps较低可能导致细节不足

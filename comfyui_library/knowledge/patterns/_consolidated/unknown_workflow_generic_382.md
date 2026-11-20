@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_382
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.766857
-common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.8645
+common_nodes: [CR Text, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V1 2 香蕉pro_1963614463550377986.json, 图片生成/图生图/全能图片V1 pro 圣诞特辑：化身精灵！一键解锁四宫格梦幻写真 🎄✨_2003443660811345922.json, 图片生成/图生图/全能图片V1 pro 圣诞特辑：甜度爆表警报！一键解锁 9 格限定大头贴 🎄🍭_2003623020310740993.json, 图片生成/图生图/全能图片V1 pro 多图 ZAI_1992817338791645185.json, 图片生成/图生图/全能图片V1 pro：品牌包装设计展示图，一张全景平面稿，定义专业蓝图！_2003446943344959489.json, 图片生成/图生图/全能图片V1 pro：女生铅笔素描画，一键定格，现实与艺术的双重奏！_2003443456561299457.json, 图片生成/图生图/全能图片V12游戏动画人物帧序列生成_1993247010220425217.json]
+members: [平台全量/音色设计-极简版（自用）_2101213571706347522.json, 数字人/数字人/QwenTTS 语音克隆 音色设计_2019671182676598785.json, 视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json, 音频生成/音频生成/QWEN音色设计【厉害】_2014579284521787394.json, 音频生成/音频生成/Qwen3 TTS -声音设计_2060677952165212161.json, 音频生成/音频生成/Qwen3-TTS 声音设计_2016044750641565698.json, 音频生成/音频生成/Qwen3-TTS 音色设计_2014660811913957377.json, 音频生成/音频生成/qwen3tts声音设计_2049857933596471298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_382
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/全能图片V1 2 香蕉pro_1963614463550377986.json、图片生成/图生图/全能图片V1 pro 圣诞特辑：化身精灵！一键解锁四宫格梦幻写真 🎄✨_2003443660811345922.json、图片生成/图生图/全能图片V1 pro 圣诞特辑：甜度爆表警报！一键解锁 9 格限定大头贴 🎄🍭_2003623020310740993.json、图片生成/图生图/全能图片V1 pro 多图 ZAI_1992817338791645185.json、图片生成/图生图/全能图片V1 pro：品牌包装设计展示图，一张全景平面稿，定义专业蓝图！_2003446943344959489.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/音色设计-极简版（自用）_2101213571706347522.json、数字人/数字人/QwenTTS 语音克隆 音色设计_2019671182676598785.json、视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json、音频生成/音频生成/QWEN音色设计【厉害】_2014579284521787394.json、音频生成/音频生成/Qwen3 TTS -声音设计_2060677952165212161.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 8 个 workflow 都包含：
+- `CR Text`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 2/7 个有
-- `Note _O` —— 1/7 个有
+- `SaveAudio` —— 6/8 个有
+- `SaveAudioMP3` —— 2/8 个有
+- `CR Prompt Text` —— 1/8 个有
 
 ## 典型参数
 

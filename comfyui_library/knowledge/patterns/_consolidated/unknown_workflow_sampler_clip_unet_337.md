@@ -1,62 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_unet_337
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.952
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, ModelSamplingSD3, SkipLayerGuidanceDiT, UNETLoader, UNetTemporalAttentionMultiply, VAEDecode, VAELoader]
+coverage: 0.91925
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/wan2.1_fun_control.json, comfyui-workflow-templates-json/wan2.1_fun_inp.json, 视频生成/图生视频/玻璃花朵开花_1951294089633452033.json]
+members: [图片生成/图生图/【最新】Flux 局部重绘技术_1915011533284306945.json, 图片生成/文生图/FLUX批量生成小红书涨粉美女_1884421093896372225.json, 图片生成/文生图/flux文生图 小白友好_1913620524503891969.json, 图片生成/文生图/【FLUX一键批量生成】【小红书涨粉美女 】_1909203282877624322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_337
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/wan2.1_fun_control.json、comfyui-workflow-templates-json/wan2.1_fun_inp.json、视频生成/图生视频/玻璃花朵开花_1951294089633452033.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【最新】Flux 局部重绘技术_1915011533284306945.json、图片生成/文生图/FLUX批量生成小红书涨粉美女_1884421093896372225.json、图片生成/文生图/flux文生图 小白友好_1913620524503891969.json、图片生成/文生图/【FLUX一键批量生成】【小红书涨粉美女 】_1909203282877624322.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGZeroStar`
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
-- `LoadImage`
-- `ModelSamplingSD3`
-- `SkipLayerGuidanceDiT`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `UNetTemporalAttentionMultiply`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 2/3 个有
-- `SaveVideo` —— 2/3 个有
-- `WanFunInpaintToVideo` —— 2/3 个有
-- `Canny` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `LoadVideo` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `VHS_VideoCombine` —— 1/3 个有
-- `WanFunControlToVideo` —— 1/3 个有
+- `EmptySD3LatentImage` —— 2/4 个有
+- `LoraLoader|pysssss` —— 2/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `DifferentialDiffusion` —— 1/4 个有
+- `ImpactGaussianBlurMask` —— 1/4 个有
+- `InpaintModelConditioning` —— 1/4 个有
+- `LoadAndResizeImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1.72 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -64,8 +59,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1.72，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

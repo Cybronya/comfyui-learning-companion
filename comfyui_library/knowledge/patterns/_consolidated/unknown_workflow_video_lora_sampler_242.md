@@ -1,87 +1,88 @@
 ---
 name: unknown_workflow_video_lora_sampler_242
 type: Unknown Workflow
-frequency: 9
+frequency: 11
 level: strong
-coverage: 0.905556
-common_nodes: [AudioCropProcessUTK, AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CR Float To Integer, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, VAEDecode, VAELoader, VHS_VideoCombine, WanSoundImageToVideo, wanBlockSwap]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.800182
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, GetNode, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, wanBlockSwap]
+problems: []
 missing: []
-members: [视频生成/图生视频/(官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_1961096934272471041.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人视频驱动视频工作流V1_1961096971735994369.json, 视频生成/图生视频/(官方版)Wan2.2 S2V数字人骨骼驱动视频工作流V1_1961257200578707457.json, 视频生成/图生视频/WAN2.2 S2V -生万物林永健煮个蛋名场面_1962687799453462530.json, 视频生成/图生视频/WAN2.2 S2V -让图片会唱歌_1962685286419415042.json, 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1960895773552644098.json, 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1961341007348568066.json, 视频生成/图生视频/Wan2.2+S2V数字人视频驱动视频工作流_1965758281866219521.json]
+members: [视频生成/图生视频/REMIX V2 图生视频 (3)_2019039231745728514.json, 视频生成/图生视频/REMIX V2 图生视频_1991284667739648001.json, 视频生成/图生视频/REMIX V2 在线批量-图生视频_2004740865878884354.json, 视频生成/图生视频/Wan 2.2 REMIX V2  图生视频_1989222645507952641.json, 视频生成/图生视频/Wan 2.2 REMIX V2  图生视频_2049774509045104642.json, 视频生成/图生视频/Wan 2.2 REMIX V2  图生视频_2051900032323989506.json, 视频生成/图生视频/Wan 2.2 REMIX V2  图生视频_2059887838782648321.json, 视频生成/图生视频/Wan 2.2 REMIX V2  图生视频_2059921253905027073.json, 视频生成/图生视频/Wan 2.2 REMIX V2  图生视频_2062774735607525377.json, 视频生成/图生视频/Wan 2.2 REMIX V2  图生视频_2066800648426975233.json, 视频生成/图生视频/🕵🏻REMIX V2 最好用的图生视频🕵🏻_1988864272392400898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_242
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_1961096934272471041.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人视频驱动视频工作流V1_1961096971735994369.json、视频生成/图生视频/(官方版)Wan2.2 S2V数字人骨骼驱动视频工作流V1_1961257200578707457.json、视频生成/图生视频/WAN2.2 S2V -生万物林永健煮个蛋名场面_1962687799453462530.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/REMIX V2 图生视频 (3)_2019039231745728514.json、视频生成/图生视频/REMIX V2 图生视频_1991284667739648001.json、视频生成/图生视频/REMIX V2 在线批量-图生视频_2004740865878884354.json、视频生成/图生视频/Wan 2.2 REMIX V2  图生视频_1989222645507952641.json、视频生成/图生视频/Wan 2.2 REMIX V2  图生视频_2049774509045104642.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioCropProcessUTK`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Float To Integer`
-- `KSampler`
-- `LoadAudio`
-- `LoadImage`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Text`
+- `GetNode`
+- `ImpactInt`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
+- `PainterI2V`
 - `PathchSageAttentionKJ`
-- `SimpleMath+`
+- `SetNode`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanSoundImageToVideo`
+- `WanMoeKSampler`
 - `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 8/9 个有
-- `UNETLoader` —— 8/9 个有
-- `VHS_LoadVideo` —— 8/9 个有
-- `PreviewImage` —— 7/9 个有
-- `ContextWindowsManual` —— 5/9 个有
-- `ImageFromBatch+` —— 5/9 个有
-- `JWFloat` —— 5/9 个有
-- `JWInteger` —— 5/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
-- `ImageResizeKJv2` —— 4/9 个有
-- `Display Any (rgthree)` —— 3/9 个有
-- `SaveLatent` —— 3/9 个有
-- `CR Prompt Text` —— 2/9 个有
-- `SaveImage` —— 2/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
-- `OpenposePreprocessor` —— 1/9 个有
-- `UnetLoaderGGUF` —— 1/9 个有
+- `Fast Muter (rgthree)` —— 10/11 个有
+- `LoadImage` —— 10/11 个有
+- `Mute / Bypass Repeater (rgthree)` —— 10/11 个有
+- `RIFE VFI` —— 10/11 个有
+- `easy getNode` —— 10/11 个有
+- `easy setNode` —— 10/11 个有
+- `Float` —— 7/11 个有
+- `easy seed` —— 7/11 个有
+- `CompressImages` —— 1/11 个有
+- `Note Plus (mtb)` —— 1/11 个有
+- `RHBatchImages:` —— 1/11 个有
+- `RHExtractImage` —— 1/11 个有
+- `RHUploadZip` —— 1/11 个有
+- `VHS_SelectFilename` —— 1/11 个有
+- `easy forLoopEnd` —— 1/11 个有
+- `easy forLoopStart` —— 1/11 个有
+- `easy imageCount` —— 1/11 个有
+- `easy showAnything` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 9 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | uni_pc | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 采样步数 | randomize | - | 11 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 11 | 100% |
+| 采样算法 | 1 | 1 - 1 | 11 | 100% |
+| 调度器 | 1 | 1 - 1 | 11 | 100% |
+| 重绘幅度 | euler_ancestral | - | 11 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，11 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，11 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler_ancestral，11 个样本，一致性 100%

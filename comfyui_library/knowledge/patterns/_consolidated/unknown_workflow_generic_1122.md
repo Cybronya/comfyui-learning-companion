@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1122
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.85
-common_nodes: [LoadImage, SaveVideo]
+coverage: 1
+common_nodes: [LoadImage, RunningHub DreamO, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance 2.0 Global｜图生视频｜首尾帧视频｜支持4K_2097611263131078657.json, 视频生成/图生视频/Seedance 2.0图生视频工作流｜首尾帧双参 带音频_2099453273446109186.json, 视频生成/图生视频/Seedance2.0图生视频_2082445109639081985.json]
+members: [图片生成/图生图/DreamO图片编辑_1927601505870700545.json, 图片生成/图生图/DreamO图生图_1926237190416973825.json, 平台全量/DreamO字节最新一致性模型_1926841724377927681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1122
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance 2.0 Global｜图生视频｜首尾帧视频｜支持4K_2097611263131078657.json、视频生成/图生视频/Seedance 2.0图生视频工作流｜首尾帧双参 带音频_2099453273446109186.json、视频生成/图生视频/Seedance2.0图生视频_2082445109639081985.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/DreamO图片编辑_1927601505870700545.json、图片生成/图生图/DreamO图生图_1926237190416973825.json、平台全量/DreamO字节最新一致性模型_1926841724377927681.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RunningHub DreamO`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `RH_BytedanceSeedance20GlobalImageToVideo` —— 2/3 个有
-- `RH_RhartVideoSparkvideo20ImageToVideo` —— 1/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `easy imageSize` —— 1/3 个有
 
 ## 典型参数
 

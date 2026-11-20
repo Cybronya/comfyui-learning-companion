@@ -1,62 +1,83 @@
 ---
 name: unknown_workflow_video_lora_sampler_249
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.983
-common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.6376
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/KJ图生视频工作流_2066888658283753473.json, 视频生成/图生视频/KJ首尾帧图生视频工作流_2066895652839317506.json, 视频生成/图生视频/Lightx2v图生视频优化版_1935507389821157377.json, 视频生成/图生视频/MAGREF+Lightx2v 双图参考图生视频_1935539702722396162.json, 视频生成/图生视频/MAGREF+Lightx2v图生视频电商极速版_1936094603097329666.json, 视频生成/图生视频/Self-Forcing14B（Lightx2v）-图生视频_1935537593000067073.json, 视频生成/图生视频/Wan2.1+Lightx2v图生视频放大_1938448782306508802.json, 视频生成/图生视频/Wan2.1+Lightx2v图生视频放大补帧生成2K高清视频_1935685282568003585.json, 视频生成/图生视频/Wan2.1+Radial 提速版图生视频放大_1947245269056376834.json]
+members: [图片生成/反推提示词/11dongzuoqianyi(gai1)_2055210834040770561.json, 图片生成/反推提示词/11yjqyyh_2054451210467454978.json, 图片生成/图生图/SteadyDancer动作迁移-_2043535021054627841.json, 图片生成/图生图/SteadyDancer（最强骨骼迁移）_1995352234491883521.json, 图片生成/图生图/wanvideo_SteadyDancer_1997203294399447042.json, 视频生成/图生视频/SteadyDancer（最强骨骼迁移）_1995844904171495425.json, 视频生成/图生视频/SteadyDancer（最强骨骼迁移）_2061068385760399361.json, 视频生成/图生视频/SteadyDancer（最强骨骼迁移）_2062090699058798593.json, 视频生成/图生视频/SteadyDancer（最强骨骼迁移）_2068716358623391746.json, 视频生成/图生视频/【橘子AI】SteadyDancer（百搭骨骼迁移）_1995725668220538882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_249
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/KJ图生视频工作流_2066888658283753473.json、视频生成/图生视频/KJ首尾帧图生视频工作流_2066895652839317506.json、视频生成/图生视频/Lightx2v图生视频优化版_1935507389821157377.json、视频生成/图生视频/MAGREF+Lightx2v 双图参考图生视频_1935539702722396162.json、视频生成/图生视频/MAGREF+Lightx2v图生视频电商极速版_1936094603097329666.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/11dongzuoqianyi(gai1)_2055210834040770561.json、图片生成/反推提示词/11yjqyyh_2054451210467454978.json、图片生成/图生图/SteadyDancer动作迁移-_2043535021054627841.json、图片生成/图生图/SteadyDancer（最强骨骼迁移）_1995352234491883521.json、图片生成/图生图/wanvideo_SteadyDancer_1997203294399447042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `VHS_VideoCombine`
+- `OnnxDetectionModelLoader`
+- `SetNode`
+- `VHS_LoadVideo`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEncode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 7/9 个有
-- `WanVideoBlockSwap` —— 7/9 个有
-- `WanVideoClipVisionEncode` —— 7/9 个有
-- `ImageResizeKJv2` —— 5/9 个有
-- `WanVideoEnhanceAVideo` —— 5/9 个有
-- `JWInteger` —— 4/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/9 个有
-- `Text Multiline` —— 4/9 个有
-- `WanVideoTorchCompileSettings` —— 4/9 个有
-- `ImageUpscaleWithModel` —— 3/9 个有
-- `Primitive integer [Crystools]` —— 3/9 个有
-- `RIFE VFI` —— 3/9 个有
-- `SimpleMath+` —— 3/9 个有
-- `UpscaleModelLoader` —— 3/9 个有
-- `WanVideoSLG` —— 3/9 个有
-- `ImageConcanate` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `easy imageRemBg` —— 2/9 个有
-- `ImagePadKJ` —— 1/9 个有
-- `ImageResize+` —— 1/9 个有
-- `WanVideoMagCache` —— 1/9 个有
-- `WanVideoSetRadialAttention` —— 1/9 个有
+- `GetImageSizeAndCount` —— 9/10 个有
+- `GetNode` —— 9/10 个有
+- `Int` —— 9/10 个有
+- `VHS_VideoCombine` —— 9/10 个有
+- `WanVideoSetBlockSwap` —— 9/10 个有
+- `SimpleMath+` —— 8/10 个有
+- `CR Text` —— 7/10 个有
+- `DrawViTPose` —— 7/10 个有
+- `PoseAndFaceDetection` —— 7/10 个有
+- `WanVideoTorchCompileSettings` —— 7/10 个有
+- `Anything Everywhere` —— 6/10 个有
+- `ImageUpscaleWithModelBatched` —— 6/10 个有
+- `RIFE VFI` —— 6/10 个有
+- `RunningHub Deepcleaner` —— 6/10 个有
+- `UpscaleModelLoader` —— 6/10 个有
+- `ImageConcatMulti` —— 3/10 个有
+- `PoseDetectionOneToAllAnimation` —— 3/10 个有
+- `PreviewImage` —— 3/10 个有
+- `CR Prompt Text` —— 2/10 个有
+- `CreateVideo` —— 2/10 个有
+- `PrimitiveFloat` —— 2/10 个有
+- `SaveVideo` —— 2/10 个有
+- `Fast Groups Muter (rgthree)` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
+- `SDPoseOODLoader` —— 1/10 个有
+- `SDPoseOODProcessor` —— 1/10 个有
+- `VHS_VideoInfoSource` —— 1/10 个有
+- `YOLOModelLoader` —— 1/10 个有
+- `easy convertAnything` —— 1/10 个有
+- `easy mathInt` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

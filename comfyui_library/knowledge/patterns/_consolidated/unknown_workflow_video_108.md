@@ -1,39 +1,38 @@
 ---
 name: unknown_workflow_video_108
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.875
-common_nodes: [Florence2ModelLoader, Florence2Run, ImageResizeKJ, Int, LoadImage, ShowText|pysssss, VHS_VideoCombine]
+frequency: 4
+level: moderate
+coverage: 0.95825
+common_nodes: [LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramepackF1图生视频提示词反推工作流_1919225782781018113.json, 视频生成/图生视频/framepack混元图生视频提示词反推_1913104906453221377.json]
+members: [数字人/数字人/LatentSync 1.6_2091491962556866562.json, 数字人/数字人/LatentSync 视频生数字人_1999018084654534658.json, 数字人/数字人/LatentSync口型同步功能_1876327461943496706.json, 数字人/数字人/latentsync1.5数字人_1907685948761772033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_108
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramepackF1图生视频提示词反推工作流_1919225782781018113.json、视频生成/图生视频/framepack混元图生视频提示词反推_1913104906453221377.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/LatentSync 1.6_2091491962556866562.json、数字人/数字人/LatentSync 视频生数字人_1999018084654534658.json、数字人/数字人/LatentSync口型同步功能_1876327461943496706.json、数字人/数字人/latentsync1.5数字人_1907685948761772033.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `ImageResizeKJ`
-- `Int`
-- `LoadImage`
-- `ShowText|pysssss`
+全部 4 个 workflow 都包含：
+- `LatentSyncNode`
+- `LoadAudio`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VideoLengthAdjuster`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub_FramePack` —— 1/2 个有
-- `RunningHub_FramePack_F1` —— 1/2 个有
+- `ImageScaleBy` —— 1/4 个有
+- `IndexTTSNode` —— 1/4 个有
+- `MuyeTextEditOutput` —— 1/4 个有
 
 ## 典型参数
 
@@ -45,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

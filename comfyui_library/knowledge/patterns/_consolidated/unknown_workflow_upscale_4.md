@@ -1,42 +1,41 @@
 ---
 name: unknown_workflow_upscale_4
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.922556
-common_nodes: [ImageUpscaleWithModel, LoadImage, SaveImage, UpscaleModelLoader]
+coverage: 0.9909
+common_nodes: [ImageUpscaleWithModel, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, RH_Nano_Banana_Image2Image, SaveImage, UpscaleModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/NomosUni图像放大+全节点注释_2057767344423919617.json, 图片生成/图生图/全能图片V1 Image 丨完美手办生成丨最强图像编辑丨直出高清图_1981270448275095554.json, 图片生成/图生图/全能图片V1 动漫手办_1966910125351034882.json, 图片生成/图生图/全能图片V1 单图编辑 {添加_移除_修改}_1966769750464507906.json, 图片生成/图生图/全能图片V1 参考素材-生成素材_1978282454127632386.json, 图片生成/图生图/全能图片V1 局部重绘-生成万物（遮罩版）_1966561469099880450.json, 图片生成/图生图/全能图片V1 局部重绘-移除万物（遮罩版）_1966318196200517633.json, 图片生成/图生图/全能图片V1-合成海报_1966158101890199553.json, 图片生成/图生图/全能图片V1-拆分衣物_1966741340556079106.json]
+members: [图片生成/图生图/全能图片V1-电商白底图换背景_1966775584833613825.json, 图片生成/图生图/全能图片V1-线稿上色_1966149405520949249.json, 图片生成/图生图/全能图片V1-老照片修复_1966124757429161986.json, 图片生成/图生图/全能图片V1-虚拟试衣_1966757934581624833.json, 图片生成/图生图/全能图片V1-角色周边设计_1968687391248666626.json, 图片生成/图生图/全能图片V1-设计稿样机效果_1966754869824696321.json, 图片生成/图生图/全能图片V1-针织玩偶_1966144631845154818.json, 图片生成/图生图/全能图片V1-风格化贴纸_1966140323560853505.json, 图片生成/图生图/全能图片V1-黑白图片上色_1966131468915437569.json, 图片生成/文生图/全能图片V1 深度图控制_1966877036839100418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_4
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/NomosUni图像放大+全节点注释_2057767344423919617.json、图片生成/图生图/全能图片V1 Image 丨完美手办生成丨最强图像编辑丨直出高清图_1981270448275095554.json、图片生成/图生图/全能图片V1 动漫手办_1966910125351034882.json、图片生成/图生图/全能图片V1 单图编辑 {添加_移除_修改}_1966769750464507906.json、图片生成/图生图/全能图片V1 参考素材-生成素材_1978282454127632386.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图片V1-电商白底图换背景_1966775584833613825.json、图片生成/图生图/全能图片V1-线稿上色_1966149405520949249.json、图片生成/图生图/全能图片V1-老照片修复_1966124757429161986.json、图片生成/图生图/全能图片V1-虚拟试衣_1966757934581624833.json、图片生成/图生图/全能图片V1-角色周边设计_1968687391248666626.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `ImageUpscaleWithModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 - `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana_Image2Image` —— 8/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
-- `CR Text` —— 5/9 个有
-- `LayerUtility: PurgeVRAM` —— 5/9 个有
-- `CR Text Concatenate` —— 3/9 个有
-- `ImageAndMaskPreview` —— 2/9 个有
-- `easy imageSize` —— 2/9 个有
-- `CR Prompt Text` —— 1/9 个有
+- `CR Text` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `workflow>Depth` —— 1/10 个有
+- `workflow>提示词` —— 1/10 个有
 
 ## 典型参数
 

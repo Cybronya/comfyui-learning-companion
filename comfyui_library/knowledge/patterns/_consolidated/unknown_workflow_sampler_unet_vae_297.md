@@ -1,64 +1,63 @@
 ---
 name: unknown_workflow_sampler_unet_vae_297
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.721667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.75925
+common_nodes: [BasicGuider, BasicScheduler, DualCLIPLoader, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, Int, KSamplerSelect, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax H3 多图生成视频_2086293193284481026.json, 视频生成/图生视频/迄今超强MiniMax-H3开源版  多图or最多9分镜图全能参考 图生视频数字人口播产品带货AI漫剧，仿真人剧福音-2倍速！量化加速版_1953694457269026818.json, 视频生成/文生视频/MiniMax+H3+多图参考+官方提示词模板+提速40%无劣化+真人短剧剧情演绎_2095730598064250881.json]
+members: [图片生成/文生图/Flux性感网红美女文生图_1917546453768536066.json, 图片生成/文生图/Flux性感网红美女文生图_1919059234552745986.json, 图片生成/文生图/【最新】FLUX Krea 文生图 高质量_1951091883130953729.json, 图片生成/文生图/🦉FLUX Krea 文生图【真实质感 脱离AI感】🦉_1951074575276814337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_297
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/minimax H3 多图生成视频_2086293193284481026.json、视频生成/图生视频/迄今超强MiniMax-H3开源版  多图or最多9分镜图全能参考 图生视频数字人口播产品带货AI漫剧，仿真人剧福音-2倍速！量化加速版_1953694457269026818.json、视频生成/文生视频/MiniMax+H3+多图参考+官方提示词模板+提速40%无劣化+真人短剧剧情演绎_2095730598064250881.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Flux性感网红美女文生图_1917546453768536066.json、图片生成/文生图/Flux性感网红美女文生图_1919059234552745986.json、图片生成/文生图/【最新】FLUX Krea 文生图 高质量_1951091883130953729.json、图片生成/文生图/🦉FLUX Krea 文生图【真实质感 脱离AI感】🦉_1951074575276814337.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
-- `CLIPLoader`
-- `CreateVideo`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `FluxGuidance`
+- `Int`
 - `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
+- `ModelSamplingFlux`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 2/3 个有
-- `EasyCache` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `JjkText` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `ResolutionSelector` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy mathInt` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `Any Switch (rgthree)` —— 2/4 个有
+- `Anything Everywhere` —— 2/4 个有
+- `CLIPTextEncode` —— 2/4 个有
+- `CR Text` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `RH_LLMAPI_NODE` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 732 | 512 - 952 | 4 | 70% |
+| 高度 | 896 | 512 - 1280 | 4 | 57% |
 
 ## 常见问题
 
@@ -66,4 +65,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 732，观测区间 512 - 952，4 个样本
+- 高度 中位数 896，观测区间 512 - 1280，4 个样本

@@ -1,66 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_406
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.6445
-common_nodes: [CLIPVisionLoader, DrawViTPose, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.769857
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetImageSize, ImageScaleToTotalPixels, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Animate视频人物替换工作流_2069422147151417345.json, 视频生成/图生视频/Wan2.2 Animate人物动作迁移工作流搭建-初级篇_2050899529087635457.json, 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ手动版人物角色替换_1983039224398131201.json, 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ版人物动作表情迁移_1980910878105227266.json, 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ自动版人物角色替换_1982691601984167937.json, 视频生成/图生视频/人物动作偏移工作流进阶版_2070126355764830210.json]
+members: [图片生成/图生图/MiniMax H3 V4 加速 8步便宜高分辨率Lightx2v新版_2096506669005103105.json, 视频生成/图生视频/MiniMax+H3+turbo+V4 加速 图生视频_2087377151829045249.json, 视频生成/文生视频/MiniMax H3加速-雷动_2089901234252763137.json, 视频生成/文生视频/MiniMax H3多合一加速工作流_2087814171474874370.json, 视频生成/文生视频/MiniMax H3多合一加速模糊修复工作流_2088889982973992961.json, 视频生成/文生视频/MiniMax+H3+turbo+V4 加速 多合一工作流_2087055785581965313.json, 视频生成/文生视频/video_minimax_h3_t2v_i2v_r2v_rv2v_2091314256494022658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_406
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Animate视频人物替换工作流_2069422147151417345.json、视频生成/图生视频/Wan2.2 Animate人物动作迁移工作流搭建-初级篇_2050899529087635457.json、视频生成/图生视频/【阡陌】Wan2.2 Animate KJ手动版人物角色替换_1983039224398131201.json、视频生成/图生视频/【阡陌】Wan2.2 Animate KJ版人物动作表情迁移_1980910878105227266.json、视频生成/图生视频/【阡陌】Wan2.2 Animate KJ自动版人物角色替换_1982691601984167937.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/MiniMax H3 V4 加速 8步便宜高分辨率Lightx2v新版_2096506669005103105.json、视频生成/图生视频/MiniMax+H3+turbo+V4 加速 图生视频_2087377151829045249.json、视频生成/文生视频/MiniMax H3加速-雷动_2089901234252763137.json、视频生成/文生视频/MiniMax H3多合一加速工作流_2087814171474874370.json、视频生成/文生视频/MiniMax H3多合一加速模糊修复工作流_2088889982973992961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/6 个有
-- `GetNode` —— 4/6 个有
-- `ImageFromBatch` —— 4/6 个有
-- `SetNode` —— 4/6 个有
-- `easy showAnything` —— 4/6 个有
-- `BlockifyMask` —— 3/6 个有
-- `DrawMaskOnImage` —— 3/6 个有
-- `ImageConcanate` —— 3/6 个有
-- `ImageResize+` —— 3/6 个有
-- `ImageResizeKJv2` —— 3/6 个有
-- `SeCModelLoader` —— 3/6 个有
-- `SeCVideoSegmentation` —— 3/6 个有
-- `WanVideoSetBlockSwap` —— 3/6 个有
-- `WanVideoSetLoRAs` —— 3/6 个有
-- `LayerMask: MaskGrow` —— 2/6 个有
-- `LayerMask: MaskPreview` —— 2/6 个有
-- `PointsEditor` —— 2/6 个有
-- `SaveImage` —— 1/6 个有
-- `WanVideoContextOptions` —— 1/6 个有
+- `Any Switch (rgthree)` —— 6/7 个有
+- `ImpactConditionalBranch` —— 6/7 个有
+- `MiniMaxH3DualClockSamplerT8` —— 6/7 个有
+- `Seed (rgthree)` —— 6/7 个有
+- `easy cleanGpuUsed` —— 4/7 个有
+- `ComfySwitchNode` —— 3/7 个有
+- `Fast Bypasser (rgthree)` —— 3/7 个有
+- `PrimitiveBoolean` —— 3/7 个有
+- `easy boolean` —— 3/7 个有
+- `BasicScheduler` —— 2/7 个有
+- `KSamplerSelect` —— 2/7 个有
+- `MiniMaxChunkFeedForward` —— 1/7 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `easy clearCacheAll` —— 1/7 个有
+- `easy int` —— 1/7 个有
 
 ## 典型参数
 

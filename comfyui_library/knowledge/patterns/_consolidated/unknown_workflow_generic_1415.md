@@ -1,46 +1,43 @@
 ---
 name: unknown_workflow_generic_1415
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7435
-common_nodes: [BatchCount+, CR Text, ImageScale, PreviewAny, PreviewImage, RHExtractImage, RHUploadZip, RH_Captioner_Pro, SaveImage, easy batchAnything, easy forLoopEnd, easy forLoopStart]
+frequency: 3
+level: moderate
+coverage: 0.892667
+common_nodes: [LoadAudio, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3, ShowText|pysssss, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/midjourny异步循环批量自动化出图_2105211919916421122.json, 图片生成/图生图/异步循环批量生成带人物汽车美图_2108366577967132673.json]
+members: [音频生成/音频生成/LongCat-AudioDiT-单人语音克隆  情绪迁移 文生音频超自然 碾压index-tts2_2039705382821564418.json, 音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039554832759005185.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS 优化版 不吃字不多字无杂音 情绪音色迁移_2039710328308633601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1415
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/midjourny异步循环批量自动化出图_2105211919916421122.json、图片生成/图生图/异步循环批量生成带人物汽车美图_2108366577967132673.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-单人语音克隆  情绪迁移 文生音频超自然 碾压index-tts2_2039705382821564418.json、音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039554832759005185.json、音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS 优化版 不吃字不多字无杂音 情绪音色迁移_2039710328308633601.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BatchCount+`
-- `CR Text`
-- `ImageScale`
-- `PreviewAny`
-- `PreviewImage`
-- `RHExtractImage`
-- `RHUploadZip`
-- `RH_Captioner_Pro`
-- `SaveImage`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+全部 3 个 workflow 都包含：
+- `LoadAudio`
+- `NormalizeAudioLoudness`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `SaveAudioMP3`
+- `ShowText|pysssss`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `RH_RhartImageNProOfficialEdit` —— 1/2 个有
-- `RH_YouchuanTextToImageV82Fast` —— 1/2 个有
-- `RH_YouchuanTextToImageV82Turbo` —— 1/2 个有
+- `CR Text` —— 2/3 个有
+- `LongCatVoiceCloneTTS` —— 2/3 个有
+- `TrimAudioDuration` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `LongCatMultiSpeakerTTS` —— 1/3 个有
+- `SaveAudio` —— 1/3 个有
 
 ## 典型参数
 
@@ -52,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

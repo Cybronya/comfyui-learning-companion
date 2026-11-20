@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_250
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.724667
-common_nodes: [LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap]
+coverage: 0.7873
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2 原模无分快版本（放大参数低于4k时使用，速度最快）+全节点注释_2054878701971623938.json, 图片生成/图生图/“SeedVR2 图片高清放大”_1967493832130564098.json, 图片生成/图生图/图像无损高清放大_1956239087894188033.json, 图片生成/图生图/图像无损高清放大_2059279536960917505.json, 图片生成/图生图/图像超分-10-23-SeedVR-image-upscaler_1981316602547396610.json, 图片生成/图生图/最佳放大工作流：SeedVR2_bole_1956324968839741442.json, 图片生成/图生图/最强一致性高清放大：SeedVR2_1975560945038700545.json, 图片生成/图生图/最强一致性高清放大：SeedVR2_1997925676596494338.json, 图片生成/文生图/SeedVR2 高清无损放大_1965606007600762881.json]
+members: [图片生成/图生图/PRO镜头-2_2011543377090715649.json, 图片生成/图生图/全能图片V1 Pro 香蕉2角色创造、多视角、人物替换、动作迁移_1999454687160041474.json, 图片生成/图生图/全能图片V12 & Pro多图编辑最多十张图_1992511233532252161.json, 图片生成/图生图/影视二创一键多人替换_1997146827852038145.json, 图片生成/图生图/微剧专用资产生成（角色+场景+三宫图+九宫图）_2037400832890642434.json, 图片生成/图生图/香蕉PRO--一图多人物替换_1996366704236183554.json, 图片生成/图生图/香蕉Pro多人替换_1998737216866242561.json, 平台全量/多人替换_2029489911891496962.json, 平台全量/香蕉PRO-小77_2002192491543707649.json, 视频生成/图生视频/PRO-镜头_2003992526103191553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_250
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/seedVR2 原模无分快版本（放大参数低于4k时使用，速度最快）+全节点注释_2054878701971623938.json、图片生成/图生图/“SeedVR2 图片高清放大”_1967493832130564098.json、图片生成/图生图/图像无损高清放大_1956239087894188033.json、图片生成/图生图/图像无损高清放大_2059279536960917505.json、图片生成/图生图/图像超分-10-23-SeedVR-image-upscaler_1981316602547396610.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/PRO镜头-2_2011543377090715649.json、图片生成/图生图/全能图片V1 Pro 香蕉2角色创造、多视角、人物替换、动作迁移_1999454687160041474.json、图片生成/图生图/全能图片V12 & Pro多图编辑最多十张图_1992511233532252161.json、图片生成/图生图/影视二创一键多人替换_1997146827852038145.json、图片生成/图生图/微剧专用资产生成（角色+场景+三宫图+九宫图）_2037400832890642434.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 7/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
-- `Int` —— 2/9 个有
-- `PrimitiveInt` —— 1/9 个有
+- `LayerUtility: ImageReel` —— 9/10 个有
+- `LayerUtility: ImageReelComposit` —— 9/10 个有
+- `PreviewImage` —— 9/10 个有
+- `RH_Nano_Banana2_Image2Image` —— 9/10 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/10 个有
+- `SetNode` —— 1/10 个有
 
 ## 典型参数
 

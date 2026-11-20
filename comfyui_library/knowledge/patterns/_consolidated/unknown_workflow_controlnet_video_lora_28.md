@@ -1,64 +1,90 @@
 ---
 name: unknown_workflow_controlnet_video_lora_28
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.93725
-common_nodes: [CLIPVisionLoader, DWPreprocessor, DrawViTPose, GetImageSizeAndCount, ImageConcatMulti, JoinStrings, LayerUtility: ImageMaskScaleAsV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PrimitiveStringMultiline, RH_Captioner, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy int]
+coverage: 0.4782
+common_nodes: [BBoxYOLO, BodyRatioMapperProportionTransfer, BodyRatioMapperSDPoseRender, CLIPVisionLoader, CheckpointLoaderSimple, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetNode, INTConstant, ImageResizeKJv2, ImpactConditionalBranch, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PlaySound|pysssss, PoseAndFaceDetection, PoseJSONToPoseKeypoint, PoseKeypointPreview, PreviewImage, PrimitiveBoolean, SDPoseKeypointExtractor, Seed (rgthree), SetNode, SimpleMath+, VHS_VideoCombine, VHS_VideoInfo, WanAnimatePlus AnimateEmbeds, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TorchCompileSettings, WanAnimatePlus VAELoader, WanVideoEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, YOLOModelLoader]
 problems: []
 missing: []
-members: [数字人/数字人/bl动作_2017570006296436738.json, 视频生成/图生视频/动作迁移+可多镜头+面部表情参考_1982728839811997698.json, 视频生成/图生视频/动作迁移+面部表情参考 (长视频版本）_1982639964624175105.json, 视频生成/图生视频/动作迁移+面部表情参考-WAN-AnimateV2_1971179799987265537.json]
+members: [视频生成/图生视频/【咸鱼店：AI军火商】Wan2.2 Animate动作迁移 姿态对齐+Sam3.1+SDPose_2059626309025882113.json, 视频生成/图生视频/动作迁移-动物专用 Wan Animate  Plus 王炸！_2064268143333302273.json, 视频生成/图生视频/动作迁移：单人！Wan Animate  PlusV5  王炸！_2065117687663128577.json, 视频生成/文生视频/【动作迁移】工作流 V5完美升级版_2101314277561954306.json, 视频生成/文生视频/动作迁移：多人！Wan Animate  PlusV5 王炸！_2064360419841634305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_28
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/bl动作_2017570006296436738.json、视频生成/图生视频/动作迁移+可多镜头+面部表情参考_1982728839811997698.json、视频生成/图生视频/动作迁移+面部表情参考 (长视频版本）_1982639964624175105.json、视频生成/图生视频/动作迁移+面部表情参考-WAN-AnimateV2_1971179799987265537.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/【咸鱼店：AI军火商】Wan2.2 Animate动作迁移 姿态对齐+Sam3.1+SDPose_2059626309025882113.json、视频生成/图生视频/动作迁移-动物专用 Wan Animate  Plus 王炸！_2064268143333302273.json、视频生成/图生视频/动作迁移：单人！Wan Animate  PlusV5  王炸！_2065117687663128577.json、视频生成/文生视频/【动作迁移】工作流 V5完美升级版_2101314277561954306.json、视频生成/文生视频/动作迁移：多人！Wan Animate  PlusV5 王炸！_2064360419841634305.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BBoxYOLO`
+- `BodyRatioMapperProportionTransfer`
+- `BodyRatioMapperSDPoseRender`
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawViTPose`
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
-- `JoinStrings`
-- `LayerUtility: ImageMaskScaleAsV2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CheckpointLoaderSimple`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `ImpactConditionalBranch`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
+- `PlaySound|pysssss`
 - `PoseAndFaceDetection`
-- `PrimitiveStringMultiline`
-- `RH_Captioner`
-- `VHS_LoadVideo`
+- `PoseJSONToPoseKeypoint`
+- `PoseKeypointPreview`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `SDPoseKeypointExtractor`
+- `Seed (rgthree)`
+- `SetNode`
+- `SimpleMath+`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
+- `WanAnimatePlus AnimateEmbeds`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus ClipVisionEncode`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SamplerFromSettings`
+- `WanAnimatePlus SamplerSettings`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus TorchCompileSettings`
+- `WanAnimatePlus VAELoader`
 - `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
-- `WanVideoVAELoader`
-- `easy int`
+- `YOLOModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ColorImage V2` —— 2/4 个有
-- `LayerUtility: ImageBlend` —— 2/4 个有
-- `easy anythingIndexSwitch` —— 2/4 个有
+- `ImageBatchMulti` —— 4/5 个有
+- `JjkText` —— 4/5 个有
+- `VHS_LoadVideoFFmpeg` —— 4/5 个有
+- `WanAnimatePlus ContextOptions` —— 4/5 个有
+- `WanAnimatePlus TextEncodeCached` —— 4/5 个有
+- `LoadVideoUI` —— 3/5 个有
+- `DF_Float` —— 2/5 个有
+- `Float to Int` —— 2/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `VHS_LoadVideo` —— 2/5 个有
+- `VHS_VideoInfoLoaded` —— 2/5 个有
+- `ComfyMathExpression` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `LoadVideo` —— 1/5 个有
+- `VHS_LoadImagesPath` —— 1/5 个有
+- `WanVideoContextOptions` —— 1/5 个有
+- `WanVideoTextEncodeCached` —— 1/5 个有
+- `intToFloat _O` —— 1/5 个有
 
 ## 典型参数
 

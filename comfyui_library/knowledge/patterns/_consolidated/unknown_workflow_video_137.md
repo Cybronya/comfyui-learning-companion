@@ -1,48 +1,46 @@
 ---
 name: unknown_workflow_video_137
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.705
-common_nodes: [CoordinatePlotter, DrawMaskOnImage, ImageConcatMulti, ImageFromBatch, PointsEditor, PreviewImage, PrimitiveInt, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.937333
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, KEEP_ModelLoader, KEEP_ProcessImageSequence, LayerUtility: PurgeVRAM V2, SeedVR2, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy imageColorMatch]
 problems: []
 missing: []
-members: [视频生成/文生视频/SecNodes+Sam2丝滑稳定视频遮罩V2 (切镜版)_1976951725854728193.json, 视频生成/文生视频/SecNodes视频遮罩提取_1977650345428045825.json]
+members: [平台全量/KEEP+SeedVR【视频高清修复补帧】_1952662256922374145.json, 平台全量/KEEP+SeedVR视频高清修复补帧_1938050396604796929.json, 平台全量/视频超分转高清+补帧_1940672903014936577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_137
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/SecNodes+Sam2丝滑稳定视频遮罩V2 (切镜版)_1976951725854728193.json、视频生成/文生视频/SecNodes视频遮罩提取_1977650345428045825.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/KEEP+SeedVR【视频高清修复补帧】_1952662256922374145.json、平台全量/KEEP+SeedVR视频高清修复补帧_1938050396604796929.json、平台全量/视频超分转高清+补帧_1940672903014936577.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CoordinatePlotter`
-- `DrawMaskOnImage`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `PointsEditor`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
+全部 3 个 workflow 都包含：
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `KEEP_ModelLoader`
+- `KEEP_ProcessImageSequence`
+- `LayerUtility: PurgeVRAM V2`
+- `SeedVR2`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
+- `VHS_VideoInfoSource`
+- `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageFromBatch+` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `PDIMAGE_LongerSize` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `RIFE VFI` —— 1/3 个有
+- `SeedVR2BlockSwap` —— 1/3 个有
 
 ## 典型参数
 
@@ -54,4 +52,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

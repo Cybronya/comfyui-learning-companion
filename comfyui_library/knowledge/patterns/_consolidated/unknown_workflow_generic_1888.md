@@ -3,37 +3,34 @@ name: unknown_workflow_generic_1888
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.765
-common_nodes: [Apply Whisper, AudioCrop, FB_Qwen3TTSVoiceClone, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio, PreviewAny, PrimitiveStringMultiline, SaveAudio, SaveAudioMP3, Text]
+coverage: 0.9
+common_nodes: [AutoDownloadBiRefNetModel, LoadImage, RembgByBiRefNet, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/音频克隆 带语气情感_2076688971303833602.json, 音频生成/音频生成/音频克隆 音频生成Qwen3+TTS+ IndexTTS2+最新音色克隆带语气情感_2065299144884965377.json]
+members: [平台全量/BiRefNet图像抠图_1983000539736735745.json, 平台全量/超好用精准抠图_1914193501557587969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1888
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/音频克隆 带语气情感_2076688971303833602.json、音频生成/音频生成/音频克隆 音频生成Qwen3+TTS+ IndexTTS2+最新音色克隆带语气情感_2065299144884965377.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/BiRefNet图像抠图_1983000539736735745.json、平台全量/超好用精准抠图_1914193501557587969.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `FB_Qwen3TTSVoiceClone`
-- `Fast Groups Bypasser (rgthree)`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `Text`
+- `AutoDownloadBiRefNetModel`
+- `LoadImage`
+- `RembgByBiRefNet`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `JoinImageWithAlpha` —— 1/2 个有
+- `Mask Invert` —— 1/2 个有
 
 ## 典型参数
 

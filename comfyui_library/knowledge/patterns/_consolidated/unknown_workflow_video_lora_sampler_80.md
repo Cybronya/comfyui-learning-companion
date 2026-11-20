@@ -1,76 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_80
 type: Unknown Workflow
-frequency: 18
+frequency: 20
 level: strong
-coverage: 0.997056
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, LoraLoader, TeaCache, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanImageToVideo]
-problems: [发现KSampler但没有VAEDecode]
+coverage: 0.84605
+common_nodes: [CLIPLoader, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [图片生成/图生图/专业级电影运镜 Motion｜一键生成视频系列_1907317036790505474.json, 视频生成/图生视频/360度盲盒旋转展示工作流 WAN2.1 ｜一键生成视频系列_1907272567051444225.json, 视频生成/图生视频/NFT卡牌 360度旋转展示工作流 WAN2.1｜一键生成视频系列_1914851220903686145.json, 视频生成/图生视频/WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json, 视频生成/图生视频/WAN2.1图生视频360度旋转_1906686265050247170.json, 视频生成/图生视频/WAN2.1图生视频一键变身恶灵骑士_1912469568701329410.json, 视频生成/图生视频/WAN2.1图生视频万物成盒_1913534894562078722.json, 视频生成/图生视频/WAN2.1图生视频美女原地起飞_1908140275909468162.json, 视频生成/图生视频/WAN2.1图生视频美女射击_1910308143438491650.json, 视频生成/图生视频/WAN2.1图生视频美女转身_1909579567680684034.json, 视频生成/图生视频/WAN2.1美女热舞大摆锤_1908472121150812161.json, 视频生成/图生视频/Wan2.1 人物小丑面具特效｜i2V_1911952901085036546.json, 视频生成/图生视频/Wan2.1 愤怒人物表情特效｜i2V_1911801404531638273.json, 视频生成/图生视频/Wan2.1_人物哭泣特效｜i2V_1912077836331511810.json, 视频生成/图生视频/【360度旋转】wan2.1人物生成+万物旋转动画视频展示_1911646094139555841.json, 视频生成/图生视频/【七龙珠元气弹特效】wan2.1人物发射元气弹特效_1911792144137318401.json, 视频生成/图生视频/任意物体360度旋转展示 ｜盲盒、泡泡玛特_1910201244638740482.json, 视频生成/图生视频/抖胸舞跳起来_1921368068402921474.json]
+members: [图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json, 平台全量/Wan2.2-Bernini-视频编辑人物替换_2061782097475489794.json, 平台全量/贝尔尼尼Bernini Studio工作流-4步lora加速-视频修改_2073757279970742274.json, 平台全量/贝尔尼尼Bernini Studio工作流_2063961104111460354.json, 视频生成/图生视频/Bernini Studio 参考图出视频_2078439441877790721.json, 视频生成/图生视频/Bernini Studio-图生视频（超级加速）_2073592310989942786.json, 视频生成/图生视频/Bernini Studio-视频编辑（超级加速）_2073584193665331202.json, 视频生成/图生视频/Bernini Studio图生视频工作流_2065400514141048833.json, 视频生成/图生视频/Bernini Studio多图参考工作流_2081577097444810753.json, 视频生成/图生视频/Bernini Studio贝尔尼尼_2075050205141094402.json, 视频生成/图生视频/Bernini-4步加速-图生视频_2074045202817437698.json, 视频生成/图生视频/多功能视频处理，图生视频  视频编辑 Bernini Studio 加速版_2063147705244930049.json, 视频生成/图生视频/视频编辑，图生视频 Bernini Studio 贝尔尼尼 急速版_2064931292038385665.json, 视频生成/图生视频/调试Bernini Studio工作流-4步lora_rv2v_2102665904747270146.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-4步lora-双参考图_2073745061728313345.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-4步lora_2073682935554854913.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082366639907102721.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082437380983844866.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082454463452893186.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082456967376883713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_80
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/专业级电影运镜 Motion｜一键生成视频系列_1907317036790505474.json、视频生成/图生视频/360度盲盒旋转展示工作流 WAN2.1 ｜一键生成视频系列_1907272567051444225.json、视频生成/图生视频/NFT卡牌 360度旋转展示工作流 WAN2.1｜一键生成视频系列_1914851220903686145.json、视频生成/图生视频/WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json、视频生成/图生视频/WAN2.1图生视频360度旋转_1906686265050247170.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Bernini studio自由切换提示词前缀_2064529633915269122.json、平台全量/Wan2.2-Bernini-视频编辑人物替换_2061782097475489794.json、平台全量/贝尔尼尼Bernini Studio工作流-4步lora加速-视频修改_2073757279970742274.json、平台全量/贝尔尼尼Bernini Studio工作流_2063961104111460354.json、视频生成/图生视频/Bernini Studio 参考图出视频_2078439441877790721.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：20
 - **可信度**：强结论
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 20 个 workflow 都包含：
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `KSampler`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoraLoader`
-- `TeaCache`
-- `VAEDecodeTiled`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 11/18 个有
-- `UnetLoaderGGUF` —— 11/18 个有
-- `ConcatTextOfUtils` —— 10/18 个有
-- `Joy_caption` —— 10/18 个有
-- `Joy_caption_load` —— 10/18 个有
-- `UNETLoader` —— 7/18 个有
-- `Int` —— 1/18 个有
-- `JjkText` —— 1/18 个有
+- `BerniniStudio` —— 19/20 个有
+- `VHS_LoadVideo` —— 18/20 个有
+- `GetNode` —— 17/20 个有
+- `SetNode` —— 17/20 个有
+- `RTXVideoSuperResolution` —— 16/20 个有
+- `ImageConcatMulti` —— 15/20 个有
+- `Int` —— 13/20 个有
+- `SimpleMath+` —— 12/20 个有
+- `ComfyNumberConvert` —— 3/20 个有
+- `VHS_VideoInfo` —— 2/20 个有
+- `BerniniConditioningReferenceSlots` —— 1/20 个有
+- `CLIPTextEncode` —— 1/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/20 个有
+- `ShowAnything|Mie` —— 1/20 个有
+- `Text` —— 1/20 个有
+- `easy showAnything` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 18 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 18 | 100% |
-| 采样算法 | uni_pc | - | 18 | 100% |
-| 调度器 | simple | - | 18 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 18 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 18 | 100% |
+| 采样步数 | fixed | - | 20 | 70% |
+| Prompt 约束强度(CFG) | 4 | 4 - 8 | 20 | 77% |
+| 采样算法 | 1 | 1 - 1 | 20 | 100% |
+| 调度器 | euler | - | 20 | 95% |
+| 重绘幅度 | simple | - | 20 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 18/18 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，18 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，18 个样本，一致性 100%
-- 调度器 最常用 simple，18 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 高发问题（18/18 个样本）：发现KSampler但没有VAEDecode
+- 采样步数 最常用 fixed，20 个样本，一致性 70%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 8，20 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，20 个样本，一致性 95%
+- 重绘幅度 最常用 simple，20 个样本，一致性 100%

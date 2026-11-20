@@ -3,55 +3,57 @@ name: unknown_workflow_video_sampler_vae_119
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9512
-common_nodes: [JWInteger, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.9856
+common_nodes: [GrowMaskWithBlur, ImageCompositeMasked, ImageConcatMulti, LayerUtility: ImageScaleByAspectRatio V2, MaskToImage, SolidMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoDecode, WanVideoEncode, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy imageBatchToImageList]
 problems: []
 missing: []
-members: [视频生成/文生视频/VACE 14b +Skyreels V2 T2V文生视频稳定版！_1922867883611930626.json, 视频生成/文生视频/VACE 14b 文生视频（WAN2.1）稳定版_1922872818927812610.json, 视频生成/文生视频/Wan2.1-FusionX文生视频加速工作流_1933749868416389122.json, 视频生成/文生视频/WanVACE+CausVid-9步出视频_1925183972802764801.json, 视频生成/文生视频/【效果炸裂！】wan2.1 Vace 14B 人物长像一致高质量图生视频动画_1925755745747292161.json]
+members: [平台全量/超强全自动水印去除-豆包-即梦-小云雀-seedance2_2044708716452257793.json, 数字人/数字人/Seedance 2.0 豆包 即梦 小云雀 动态水印 去除 无痕版_2026659905779802114.json, 数字人/数字人/全能视频Sor 2 新版去水印 视频移动水印_1987445207627182081.json, 数字人/数字人/去除移动水印 全能视频S水印_1984039894601400321.json, 数字人/数字人/固定水印去除 Minimax Remover 定点遮罩消除  自定义遮罩_2033107626417983489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_119
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/VACE 14b +Skyreels V2 T2V文生视频稳定版！_1922867883611930626.json、视频生成/文生视频/VACE 14b 文生视频（WAN2.1）稳定版_1922872818927812610.json、视频生成/文生视频/Wan2.1-FusionX文生视频加速工作流_1933749868416389122.json、视频生成/文生视频/WanVACE+CausVid-9步出视频_1925183972802764801.json、视频生成/文生视频/【效果炸裂！】wan2.1 Vace 14B 人物长像一致高质量图生视频动画_1925755745747292161.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/超强全自动水印去除-豆包-即梦-小云雀-seedance2_2044708716452257793.json、数字人/数字人/Seedance 2.0 豆包 即梦 小云雀 动态水印 去除 无痕版_2026659905779802114.json、数字人/数字人/全能视频Sor 2 新版去水印 视频移动水印_1987445207627182081.json、数字人/数字人/去除移动水印 全能视频S水印_1984039894601400321.json、数字人/数字人/固定水印去除 Minimax Remover 定点遮罩消除  自定义遮罩_2033107626417983489.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `JWInteger`
-- `LoadWanVideoT5TextEncoder`
+- `GrowMaskWithBlur`
+- `ImageCompositeMasked`
+- `ImageConcatMulti`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MaskToImage`
+- `SolidMask`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `VHS_VideoInfo`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoEncode`
+- `WanVideoMiniMaxRemoverEmbeds`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTeaCache` —— 4/5 个有
-- `WanVideoVACEEncode` —— 4/5 个有
-- `WanVideoVACEModelSelect` —— 4/5 个有
-- `TextInput_` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `WanVideoLoraSelect` —— 2/5 个有
-- `FluxResolutionNode` —— 1/5 个有
-- `ImageRepeat` —— 1/5 个有
-- `JjkText` —— 1/5 个有
+- `BboxDetectorCombined_v2` —— 4/5 个有
+- `LayerUtility: ColorImage V2` —— 4/5 个有
+- `MaskListToMaskBatch` —— 4/5 个有
+- `UltralyticsDetectorProvider` —— 4/5 个有
+- `ImageToMask_AS` —— 1/5 个有
+- `LayerUtility: PurgeVRAM` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
 - `PreviewImage` —— 1/5 个有
-- `Primitive integer [Crystools]` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
-- `WanVideoEmptyEmbeds` —— 1/5 个有
-- `WanVideoVACEStartToEndFrame` —— 1/5 个有
+- `RepeatImageBatch` —— 1/5 个有
+- `SAM3Segment` —— 1/5 个有
+- `easy int` —— 1/5 个有
+- `preview_mask` —— 1/5 个有
 
 ## 典型参数
 

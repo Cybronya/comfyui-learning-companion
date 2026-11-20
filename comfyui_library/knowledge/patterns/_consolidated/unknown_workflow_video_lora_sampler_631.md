@@ -1,86 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_631
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.890667
-common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, DisableNoise, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoader, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, RH_Captioner, RandomNoise, SDXLPromptStyler, SamplerCustomAdvanced, SaveImage, SeedVR2, SplitSigmas, StyleModelLoader, UNETLoader, VAEDecode, VAEEncode, VAELoader, WanVideoNAG, easy cleanGpuUsed]
+frequency: 5
+level: moderate
+coverage: 0.753
+common_nodes: [CLIPVisionLoader, CR Text, GetNode, ImageConcatMulti, ImageResizeKJv2, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, SetNode, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/图生图/产品展示（人物迁移+场景迁移+产品)_1978473664150704130.json, 图片生成/图生图/产品放到参考场景中（Redux+ 全能图片V1)_1974158869893091330.json, 图片生成/图生图/未来世界概念场景_1954458866765459457.json]
+members: [视频生成/图生视频/三图参考-MAGREF图生视频_1935607588300193793.json, 视频生成/图生视频/单图参考-MAGREF图生视频_1935586332242530306.json, 视频生成/图生视频/单图参考-MAGREF图生视频_2055192187125682177.json, 视频生成/图生视频/双图参考-MAGREF图生视频_1935509475614707714.json, 视频生成/文生视频/wan2.1 MAGREF_FusionX 3倍加速图生视频_1938855885659627522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_631
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品展示（人物迁移+场景迁移+产品)_1978473664150704130.json、图片生成/图生图/产品放到参考场景中（Redux+ 全能图片V1)_1974158869893091330.json、图片生成/图生图/未来世界概念场景_1954458866765459457.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/三图参考-MAGREF图生视频_1935607588300193793.json、视频生成/图生视频/单图参考-MAGREF图生视频_1935586332242530306.json、视频生成/图生视频/单图参考-MAGREF图生视频_2055192187125682177.json、视频生成/图生视频/双图参考-MAGREF图生视频_1935509475614707714.json、视频生成/文生视频/wan2.1 MAGREF_FusionX 3倍加速图生视频_1938855885659627522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DisableNoise`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
+全部 5 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `CR Text`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `JWInteger`
 - `LoadImage`
-- `LoraLoader`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `PreviewImage`
-- `RH_Captioner`
-- `RandomNoise`
-- `SDXLPromptStyler`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `SeedVR2`
-- `SplitSigmas`
-- `StyleModelLoader`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `WanVideoNAG`
-- `easy cleanGpuUsed`
+- `SetNode`
+- `VHS_VideoCombine`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 2/3 个有
-- `CombinationText` —— 2/3 个有
-- `ConditioningCombine` —— 2/3 个有
-- `ConditioningSetAreaStrength` —— 2/3 个有
-- `DF_Get_image_size` —— 2/3 个有
-- `MirroredImage` —— 2/3 个有
-- `ModelSamplingFlux` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `RH_Nano_Banana_Image2Image` —— 2/3 个有
-- `ReduxAdvanced` —— 2/3 个有
-- `Text` —— 2/3 个有
-- `AdvancedVisionLoader` —— 1/3 个有
-- `CLIPVisionEncode` —— 1/3 个有
-- `Image Blank` —— 1/3 个有
-- `ImagePaste` —— 1/3 个有
-- `RMBG` —— 1/3 个有
-- `SeargePromptCombiner` —— 1/3 个有
-- `ShowText` —— 1/3 个有
-- `StyleModelApply` —— 1/3 个有
+- `GetImageSizeAndCount` —— 2/5 个有
+- `ImageConcanate` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `easy imageScaleDownToSize` —— 2/5 个有
+- `AddLabel` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.5 | 0.3 - 0.5 | 3 | 78% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -88,5 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.5，观测区间 0.3 - 0.5，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_upscale_43
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9
-common_nodes: [ImageUpscaleWithModelBatched, LoadImage, SaveImage, UpscaleModelLoader]
+frequency: 3
+level: moderate
+coverage: 0.73
+common_nodes: [Image Comparer (rgthree), LoadImage, SUPIR_Upscale, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/史诗级好用｜无损原图｜一键高清放大_1914672822281564161.json, 图片生成/图生图/炒粉工作流_1977977937079193601.json]
+members: [图片生成/图生图/Supir高清放大_1914192946978091010.json, 平台全量/SUPIR-高度还原高清放大-在线生图V2.0_1902001768077926402.json, 平台全量/无损抠图1103_2117462772194832386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_43
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/史诗级好用｜无损原图｜一键高清放大_1914672822281564161.json、图片生成/图生图/炒粉工作流_1977977937079193601.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Supir高清放大_1914192946978091010.json、平台全量/SUPIR-高度还原高清放大-在线生图V2.0_1902001768077926402.json、平台全量/无损抠图1103_2117462772194832386.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageUpscaleWithModelBatched`
+全部 3 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
+- `SUPIR_Upscale`
 - `SaveImage`
-- `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `BiRefNet_Hugo` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `SaveImageAdvanced` —— 1/3 个有
 
 ## 典型参数
 
@@ -41,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

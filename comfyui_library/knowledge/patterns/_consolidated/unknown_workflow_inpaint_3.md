@@ -1,41 +1,49 @@
 ---
 name: unknown_workflow_inpaint_3
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6
-common_nodes: [CR Text, GetNode, GrowMaskWithBlur, INPAINT_MaskedFill, ImageScale, LayerMask: MaskPreview, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage, SetNode, easy imageConcat]
+frequency: 3
+level: moderate
+coverage: 0.877667
+common_nodes: [GetImageSize, INPAINT_MaskedFill, ImageBlend, InvertMask, LayerMask: LoadSegformerModel, LayerMask: SegformerClothesSetting, LayerMask: SegformerUltraV3, LayerUtility: ColorImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/元素迁移（改图版）_2015276923118686210.json, 图片生成/图生图/香蕉2-全能图片V12-双图精准局部编辑（限时优惠0.25元1k到2k-0.5元4k）_1991528762282090497.json]
+members: [平台全量/4K超清全能一键换装_2037003256429289474.json, 平台全量/全能图片V1一键换装（最新版）_1965295910622253058.json, 平台全量/香焦2代—全能图片一键换装，免费换装_2026825695673982977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/元素迁移（改图版）_2015276923118686210.json、图片生成/图生图/香蕉2-全能图片V12-双图精准局部编辑（限时优惠0.25元1k到2k-0.5元4k）_1991528762282090497.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/4K超清全能一键换装_2037003256429289474.json、平台全量/全能图片V1一键换装（最新版）_1965295910622253058.json、平台全量/香焦2代—全能图片一键换装，免费换装_2026825695673982977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `GetNode`
-- `GrowMaskWithBlur`
+全部 3 个 workflow 都包含：
+- `GetImageSize`
 - `INPAINT_MaskedFill`
-- `ImageScale`
-- `LayerMask: MaskPreview`
+- `ImageBlend`
+- `InvertMask`
+- `LayerMask: LoadSegformerModel`
+- `LayerMask: SegformerClothesSetting`
+- `LayerMask: SegformerUltraV3`
+- `LayerUtility: ColorImage`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
-- `SetNode`
-- `easy imageConcat`
+- `Text Multiline`
+
+**可变部分**（部分 workflow 才有）：
+- `MaskToImage` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `easy promptConcat` —— 2/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/3 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
+- `RH_Nano_Banana_Image2Image` —— 1/3 个有
+- `SaveImageAndMetadata_` —— 1/3 个有
 
 ## 典型参数
 
@@ -47,4 +55,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

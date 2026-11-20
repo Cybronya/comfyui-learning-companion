@@ -1,74 +1,72 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_13
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.897
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, FluxGuidance, InpaintModelConditioning, KSampler, MaskBlur+, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 10
+level: moderate
+coverage: 0.8851
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GrowMaskWithBlur, InpaintModelConditioning, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/z-image输入base64工作流_2008785069535666178.json, 图片生成/图生图/z-image输入base64工作流_2008825724299386882.json, 图片生成/图生图/zimage重绘_2044459125228179458.json, 图片生成/图生图/局部重绘_2001620631345065986.json, 图片生成/图生图/极简Z-image局部重绘_1999059377522868226.json, 图片生成/图生图/画面修改 局部重绘  Z-image_2019615234633240578.json, 图片生成/文生图/Z_mage局部重绘_1995377541710012417.json]
+members: [图片生成/图生图/Flux2 Klein 万物迁移 + 涂抹精确控制大小_2017205500747714561.json, 图片生成/图生图/Flux2 Klein 局部重绘+ 万物迁移_2016435579096928258.json, 图片生成/图生图/Flux2 Klein【局部重绘】_2015209186262523906.json, 图片生成/图生图/Flux2 Klein服装迁移_2018144805066383361.json, 图片生成/图生图/万能图片局部重绘+图片去水印+物品迁移_2054764387465998338.json, 图片生成/图生图/产品设计｜局部修改 + 参考图（可选）｜Flux2 Klein_2052324457221509121.json, 图片生成/图生图/局部重绘+指定物品迁移 Flux2 Klein_2016402322179493889.json, "图片生成/图生图/局部重绘，效果很好，速度很快,Flux2 Klein_2052246216712437761.json", "图片生成/图生图/物体迁移，效果很好，速度很快,Flux2 Klein_2049660145730371585.json", 平台全量/Flux2 Klein局部重绘+图片去水印+物品迁移_2028015572872597505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_13
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/z-image输入base64工作流_2008785069535666178.json、图片生成/图生图/z-image输入base64工作流_2008825724299386882.json、图片生成/图生图/zimage重绘_2044459125228179458.json、图片生成/图生图/局部重绘_2001620631345065986.json、图片生成/图生图/极简Z-image局部重绘_1999059377522868226.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 万物迁移 + 涂抹精确控制大小_2017205500747714561.json、图片生成/图生图/Flux2 Klein 局部重绘+ 万物迁移_2016435579096928258.json、图片生成/图生图/Flux2 Klein【局部重绘】_2015209186262523906.json、图片生成/图生图/Flux2 Klein服装迁移_2018144805066383361.json、图片生成/图生图/万能图片局部重绘+图片去水印+物品迁移_2054764387465998338.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `FluxGuidance`
+- `Flux2Scheduler`
+- `GrowMaskWithBlur`
 - `InpaintModelConditioning`
-- `KSampler`
-- `MaskBlur+`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 5/7 个有
-- `ETN_LoadImageBase64` —— 2/7 个有
-- `ETN_LoadMaskBase64` —— 2/7 个有
-- `Image Comparer (rgthree)` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `GetNode` —— 1/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `ImageStitch` —— 1/7 个有
-- `MaskPreview` —— 1/7 个有
-- `SetNode` —— 1/7 个有
-- `TextInput_` —— 1/7 个有
+- `Image Comparer (rgthree)` —— 9/10 个有
+- `MaskPreview+` —— 8/10 个有
+- `Text` —— 8/10 个有
+- `Int` —— 7/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/10 个有
+- `PreviewImage` —— 7/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/10 个有
+- `ImageResize+` —— 2/10 个有
+- `ResizeMask` —— 2/10 个有
+- `ZML_MaskStroke` —— 2/10 个有
+- `Anything Everywhere` —— 1/10 个有
+- `ImageScaleToTotalPixelsX` —— 1/10 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 1/10 个有
+- `PrimitiveInt` —— 1/10 个有
+- `ZML_AnyTypeSwitch` —— 1/10 个有
+- `遮罩内外扩展` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 10 | 9 - 10 | 7 | 96% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 0.85 | 0.85 - 0.87 | 7 | 99% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 9 - 10，7 个样本，取值集中（一致性 96%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 0.85，观测区间 0.85 - 0.87，7 个样本，取值集中（一致性 99%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

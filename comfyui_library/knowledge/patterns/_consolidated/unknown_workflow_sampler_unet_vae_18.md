@@ -1,75 +1,65 @@
 ---
 name: unknown_workflow_sampler_unet_vae_18
 type: Unknown Workflow
-frequency: 20
+frequency: 24
 level: strong
-coverage: 0.90995
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9085
+common_nodes: [BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Image-Edit-2509模型，人物多角度分镜图工作流_2048404931266220034.json, 图片生成/图生图/Qwen2511多角度生成_2017774842988204034.json, 图片生成/图生图/Qwen_Edit  场景多角度 短剧场景_2034517083853168642.json, 图片生成/图生图/Qwen_Edit  漫剧场景  多角度  漫剧分镜生成_2034549914549620737.json, 图片生成/图生图/Qwen_Edit_2509多角度（短剧专用）_1998642600527691778.json, 图片生成/图生图/Qwen_Edit_2511   IP角色多视图 多视角 三视图_2039344004965343234.json, 图片生成/图生图/Qwen_Edit_2511 套图  IP角色多视图 多视角 三视图 模特分镜_2042415935906123777.json, 图片生成/图生图/Qwen_Edit_2511多角度角色场景（短剧专用）_2054122507342491650.json, 图片生成/图生图/Qwen_Edit_2511多角度（短剧专用）_2014417657260417025.json, 图片生成/图生图/Qwen_Edit_2511多角度（短剧专用）_2016154463576264705.json, 图片生成/图生图/Qwen_Edit_2511多角度（短剧专用），真的很好用！_2037330464716886017.json, 图片生成/图生图/Qwen_Edit_2511镜头多角度_2017108823558852610.json, 图片生成/图生图/Qwen分镜图生图  多视图  多角度 Qwen_Edit_2511_2067422630306734081.json, 图片生成/图生图/opsv-Qwen_Edit_2511多角度_2080275632545685506.json, 图片生成/图生图/opsv-Qwen_edit2511-场景角色合成3refs_2080279327953997825.json, 图片生成/图生图/opsv-qwen2511-2refs_2080315109892771842.json, 图片生成/图生图/人物一致性多角度分镜直出-制造分镜 Next Scene-v2_2003501812189700097.json, 图片生成/图生图/多角度分镜直出-制造分镜 4.0_1985154261069828098.json, 图片生成/图生图/更改服装Change clothes_2043630491630313473.json, 图片生成/图生图/超级模特换装展示-图生图_2066382280444174338.json]
+members: [图片生成/图生图/BOOGUEDIT 图像编辑_2068133466729959426.json, 图片生成/图生图/Boogu 图片编辑_2068223085454643201.json, 图片生成/图生图/Boogu-Edit 0偏移无损重绘图像语义编辑_2068717915423207425.json, 图片生成/图生图/Boogu-Image Edit单图编辑_2068063056286019585.json, 图片生成/图生图/Boogu-Image Edit图片去字幕去水印_2069811905337847809.json, 图片生成/图生图/Boogu-Image_Edit单图编辑_2085013386194145282.json, 图片生成/图生图/Boogu-Image_Edit单图编辑_2085185274715402242.json, 图片生成/图生图/Boogu-Image_Edit图片去字幕去水印_2085907098508021762.json, 图片生成/图生图/Boogu-Image_Edit图片去字幕去水印_2085925136028487681.json, 图片生成/图生图/boogu edit图像编辑优化版V1_2067834819068911618.json, 图片生成/图生图/boogu edit图像编辑优化版V1_2068274229971345409.json, 图片生成/图生图/boogu edit图像编辑优化版图生图工作流_2082445936030216194.json, 图片生成/图生图/boogu edit图像编辑优化版图生图工作流_2093296625610477570.json, 图片生成/图生图/boogu edit图像编辑优化版图生图工作流_2093310369640046593.json, 图片生成/图生图/boogu edit图像编辑优化版图生图工作流_2103443751074095105.json, 图片生成/图生图/boogu edit图像编辑优化版图生图工作流_2103445400953909249.json, 图片生成/图生图/boogu edit图像编辑优化版图生图工作流_2111774698563526657.json, 图片生成/图生图/boogu edit图像编辑优化版图生图工作流_2111807575577681921.json, 图片生成/图生图/boogu edit图像编辑优化版工作流_2067857270989479937.json, 图片生成/图生图/boogu edit图像编辑优化版工作流_2067877061376700417.json, 图片生成/图生图/boogu_edit图像编辑优化版图生图工作流_2093890774390894593.json, 图片生成/图生图/boogu_edit图像编辑优化版图生图工作流_2093984740893351938.json, 图片生成/图生图/boogu图像编辑模型_2069094367243100162.json, 图片生成/图生图/图像编辑  Boogu Edit_2068132808568172546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_18
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-Edit-2509模型，人物多角度分镜图工作流_2048404931266220034.json、图片生成/图生图/Qwen2511多角度生成_2017774842988204034.json、图片生成/图生图/Qwen_Edit  场景多角度 短剧场景_2034517083853168642.json、图片生成/图生图/Qwen_Edit  漫剧场景  多角度  漫剧分镜生成_2034549914549620737.json、图片生成/图生图/Qwen_Edit_2509多角度（短剧专用）_1998642600527691778.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/BOOGUEDIT 图像编辑_2068133466729959426.json、图片生成/图生图/Boogu 图片编辑_2068223085454643201.json、图片生成/图生图/Boogu-Edit 0偏移无损重绘图像语义编辑_2068717915423207425.json、图片生成/图生图/Boogu-Image Edit单图编辑_2068063056286019585.json、图片生成/图生图/Boogu-Image Edit图片去字幕去水印_2069811905337847809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：24
 - **可信度**：强结论
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `CFGNorm`
+全部 24 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `KSampler`
+- `EmptyLatentImage`
+- `KSamplerSelect`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
+- `SamplerCustom`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `TextEncodeBooguEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 18/20 个有
-- `Text Multiline` —— 18/20 个有
-- `easy promptLine` —— 18/20 个有
-- `GetNode` —— 5/20 个有
-- `PreviewImage` —— 5/20 个有
-- `SetNode` —— 5/20 个有
-- `easy showAnything` —— 3/20 个有
-- `Image Comparer (rgthree)` —— 2/20 个有
-- `RHHiddenNodes` —— 2/20 个有
-- `RMBG` —— 2/20 个有
-- `Seed (rgthree)` —— 2/20 个有
-- `HAIGC_SaveImagesToZip` —— 1/20 个有
+- `DF_Get_image_size` —— 23/24 个有
+- `CR Prompt Text` —— 22/24 个有
+- `ImageScaleToTotalPixels` —— 22/24 个有
+- `PreviewImage` —— 22/24 个有
+- `easy cleanGpuUsed` —— 21/24 个有
+- `ImageConcanate` —— 20/24 个有
+- `Image Comparer (rgthree)` —— 4/24 个有
+- `GetImageSize+` —— 1/24 个有
+- `ImageResize+` —— 1/24 个有
+- `JjkText` —— 1/24 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 1 - 8 | 20 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 20 | 100% |
-| 采样算法 | euler | - | 20 | 90% |
-| 调度器 | simple | - | 20 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+| 宽度 | 1024 | 1024 - 1536 | 24 | 90% |
+| 高度 | 1024 | 1024 - 1024 | 24 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 20/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 1 - 8，20 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，20 个样本，一致性 90%
-- 调度器 最常用 simple，20 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 高发问题（20/20 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 1024 - 1536，24 个样本，取值集中（一致性 90%）
+- 高度 中位数 1024，观测区间 1024 - 1024，24 个样本，取值集中（一致性 100%）

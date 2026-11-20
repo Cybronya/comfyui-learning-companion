@@ -1,86 +1,50 @@
 ---
 name: unknown_workflow_video_sampler_vae_105
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.6634
-common_nodes: [AddLabel, Any Switch (rgthree), Bookmark (rgthree), EmptyImage, Fast Groups Muter (rgthree), GetImageSizeAndCount, GetNode, ImageCompositeMasked, ImageConcatMulti, ImageFromBatch, ImageRemoveBackground+, ImageResizeKJ, JoinStrings, Label (rgthree), LayerUtility: ImageRemoveAlpha, LoadImage, LoadWanVideoT5TextEncoder, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PreviewImage, RemBGSession+, SetNode, String Literal, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy int, easy positive, easy seed]
+coverage: 0.966667
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE Controlnet控制视频_1913722846840061953.json, 视频生成/图生视频/VACE 视频编辑抹除、添加物体_1913722917249843201.json, 视频生成/图生视频/VACE_视频编辑抹除、添加物体_2098946818611699714.json, 视频生成/图生视频/VACE_视频编辑抹除、添加物体_2099058913504227329.json, 视频生成/图生视频/VACE_视频编辑抹除、添加物体_2099683751046504450.json]
+members: [视频生成/文生视频/WAN2.1 万相文生视频_1894738475621482497.json, 视频生成/文生视频/WAN2.1 万相文生视频_2012869543177228289.json, 视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json, 视频生成/文生视频/Wan2.1最新FusionX LORA  2分钟生视频_1935600068689068033.json, 视频生成/文生视频/kijai_wanvideo_T2V_selfforcing5_14b 文生视频_1934871279478448130.json, 视频生成/文生视频/【阿辉聊AI】Self Forcing极速文生视频工作流_1935156530729951234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_105
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/VACE Controlnet控制视频_1913722846840061953.json、视频生成/图生视频/VACE 视频编辑抹除、添加物体_1913722917249843201.json、视频生成/图生视频/VACE_视频编辑抹除、添加物体_2098946818611699714.json、视频生成/图生视频/VACE_视频编辑抹除、添加物体_2099058913504227329.json、视频生成/图生视频/VACE_视频编辑抹除、添加物体_2099683751046504450.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/WAN2.1 万相文生视频_1894738475621482497.json、视频生成/文生视频/WAN2.1 万相文生视频_2012869543177228289.json、视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json、视频生成/文生视频/Wan2.1最新FusionX LORA  2分钟生视频_1935600068689068033.json、视频生成/文生视频/kijai_wanvideo_T2V_selfforcing5_14b 文生视频_1934871279478448130.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AddLabel`
-- `Any Switch (rgthree)`
-- `Bookmark (rgthree)`
-- `EmptyImage`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageCompositeMasked`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageRemoveBackground+`
-- `ImageResizeKJ`
-- `JoinStrings`
-- `Label (rgthree)`
-- `LayerUtility: ImageRemoveAlpha`
-- `LoadImage`
+全部 6 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `PreviewImage`
-- `RemBGSession+`
-- `SetNode`
-- `String Literal`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoEmptyEmbeds`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy int`
-- `easy positive`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Color Panel` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `Florence2ModelLoader` —— 4/5 个有
-- `Florence2Run` —— 4/5 个有
-- `GetImageSize+` —— 4/5 个有
-- `GrowMask` —— 4/5 个有
-- `ImageToMask` —— 4/5 个有
-- `LayerMask: MaskGrow` —— 4/5 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 4/5 个有
-- `MaskToImage` —— 4/5 个有
-- `Note Plus (mtb)` —— 4/5 个有
-- `RemapMaskRange` —— 4/5 个有
-- `DWPreprocessor` —— 1/5 个有
-- `DepthAnythingV2Preprocessor` —— 1/5 个有
+- `RIFE VFI` —— 5/6 个有
+- `ImageUpscaleWithModel` —— 3/6 个有
+- `SeargePromptText` —— 3/6 个有
+- `UpscaleModelLoader` —— 3/6 个有
+- `WanVideoLoraSelect` —— 3/6 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `Video_Upscale_With_Model` —— 2/6 个有
+- `WanVideoEnhanceAVideo` —— 2/6 个有
+- `WanVideoVRAMManagement` —— 2/6 个有
+- `Label (rgthree)` —— 1/6 个有
 
 ## 典型参数
 

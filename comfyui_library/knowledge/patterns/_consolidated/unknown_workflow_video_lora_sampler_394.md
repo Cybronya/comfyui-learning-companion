@@ -1,49 +1,29 @@
 ---
 name: unknown_workflow_video_lora_sampler_394
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.825333
-common_nodes: [Anything Everywhere, Audio Duration (mtb), Audio Remixer, AudioCombine, AudioCrop, AudioSeparation, CLIPVisionLoader, CR Text, GetNode, ImageCASharpening+, ImageResize+, ImpactSwitch, Int, LayerUtility: PurgeVRAM V2, Load Audio Separation Model, LoadAudio, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewAudio, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.969125
+common_nodes: [CreateCFGScheduleFloatList, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/【电商分镜视频对口型】Wan2.1-infinitetalk数字人-语音克隆（视频生视频）_1960981530992685058.json, 数字人/数字人/【视频对口型】Wan2.1-infinitetalk数字人（视频生视频）_1959331787396820994.json, 视频生成/图生视频/Wan2.1-单人视频生视频图片生视频_2042489270400720898.json, 视频生成/图生视频/Wan2.2-infinitetalk数字人 一键MV分镜成片（图生视频）_1997551281285828610.json, 视频生成/图生视频/【S2V数字人】Wan2.2图生视频-语音克隆_1961362912252203010.json, 视频生成/图生视频/【一键MV分镜成片】Wan2.2-infinitetalk数字人（图生视频）_1958770586971500546.json]
+members: [视频生成/图生视频/wan2.2_图生视频工作流  加速版_1962439638365376514.json, 视频生成/图生视频/【橘子AI】Wan 图生视频工作流 -KJ_1978004936166363137.json, 视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2044685944468541441.json, 视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2053674429732929538.json, 视频生成/图生视频/图转视频-Wan2.2首尾帧Kijai版好用_1965310259709493249.json, 视频生成/图生视频/自己用：Wan2.2首尾帧_1955902508302520321.json, 视频生成/图生视频/首尾帧图片_生成视频（wan2.2最新版本）_1952744719957880834.json, 视频生成/文生视频/Wan2.2文生视频-告别PPT式电视剧_1950553795895939073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_394
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/【电商分镜视频对口型】Wan2.1-infinitetalk数字人-语音克隆（视频生视频）_1960981530992685058.json、数字人/数字人/【视频对口型】Wan2.1-infinitetalk数字人（视频生视频）_1959331787396820994.json、视频生成/图生视频/Wan2.1-单人视频生视频图片生视频_2042489270400720898.json、视频生成/图生视频/Wan2.2-infinitetalk数字人 一键MV分镜成片（图生视频）_1997551281285828610.json、视频生成/图生视频/【S2V数字人】Wan2.2图生视频-语音克隆_1961362912252203010.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/wan2.2_图生视频工作流  加速版_1962439638365376514.json、视频生成/图生视频/【橘子AI】Wan 图生视频工作流 -KJ_1978004936166363137.json、视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2044685944468541441.json、视频生成/图生视频/图生视频---Wan2.2首尾帧Kijai版_2053674429732929538.json、视频生成/图生视频/图转视频-Wan2.2首尾帧Kijai版好用_1965310259709493249.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Anything Everywhere`
-- `Audio Duration (mtb)`
-- `Audio Remixer`
-- `AudioCombine`
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Text`
-- `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImpactSwitch`
-- `Int`
-- `LayerUtility: PurgeVRAM V2`
-- `Load Audio Separation Model`
-- `LoadAudio`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewAudio`
-- `SetNode`
-- `VHS_LoadVideo`
+全部 8 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
@@ -51,42 +31,26 @@ source: knowledge_consolidation
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
+- `WanVideoSetLoRAs`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CogVideoEnhanceAVideo` —— 5/6 个有
-- `ColorCorrectOfUtils` —— 5/6 个有
-- `DownloadAndLoadWav2VecModel` —— 5/6 个有
-- `MultiTalkModelLoader` —— 5/6 个有
-- `MultiTalkWav2VecEmbeds` —— 5/6 个有
-- `SaveAudio` —— 5/6 个有
-- `WanVideoClipVisionEncode` —— 5/6 个有
-- `WanVideoSLG` —— 5/6 个有
-- `WanVideoEncode` —— 4/6 个有
-- `WanVideoExperimentalArgs` —— 4/6 个有
-- `CR Text Concatenate` —— 3/6 个有
-- `LoadImage` —— 3/6 个有
-- `RHHiddenNodes` —— 3/6 个有
-- `WanVideoImageToVideoMultiTalk` —— 3/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `CreateCFGScheduleFloatList` —— 2/6 个有
-- `IndexTTSRun` —— 2/6 个有
-- `WanVideoImageToVideoEncode` —— 2/6 个有
-- `AudioEncoderEncode` —— 1/6 个有
-- `AudioEncoderLoader` —— 1/6 个有
-- `ImageLoaderAdvanced` —— 1/6 个有
-- `Make Image Batch` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `ReverseImageBatch` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `WanVideoAddAudioEmbeds` —— 1/6 个有
-- `WanVideoContextOptions` —— 1/6 个有
-- `WanVideoEmptyEmbeds` —— 1/6 个有
-- `kkGetImage` —— 1/6 个有
+- `GetImageSizeAndCount` —— 7/8 个有
+- `INTConstant` —— 7/8 个有
+- `ImageResizeKJv2` —— 7/8 个有
+- `LoadImage` —— 7/8 个有
+- `LoadWanVideoT5TextEncoder` —— 7/8 个有
+- `WanVideoImageToVideoEncode` —— 7/8 个有
+- `WanVideoTextEncode` —— 7/8 个有
+- `CLIPLoader` —— 3/8 个有
+- `CLIPTextEncode` —— 3/8 个有
+- `WanVideoTextEmbedBridge` —— 3/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `SimpleMath+` —— 1/8 个有
+- `WanVideoEmptyEmbeds` —— 1/8 个有
+- `easy clearCacheAll` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,31 +1,29 @@
 ---
 name: image_to_image_sampler_unet_vae_34
 type: Image To Image
-frequency: 6
-level: moderate
-coverage: 0.655167
-common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 8
+level: weak
+coverage: 0.882
+common_nodes: [CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-edit 胸部增强 丰胸神器 1.0_1994406310353510401.json, 图片生成/图生图/Qwen-动漫转写实真人_1987456609242779650.json, 图片生成/图生图/Qwen_Image_Edit 超强编辑 _ 万物可改 _ 开源可部署_1959226946603397122.json, 图片生成/图生图/Qwen图片编辑模型Plus版本_1970454036820488193.json, 图片生成/图生图/qwen_image_edit多图编辑_1970660738824105985.json, 图片生成/文生图/FluxToQwenEdit-NextSceneLora_ 6场景 角色一致性工作流_1979459859504599042.json]
+members: [图片生成/图生图/动漫 真人转动漫  真人转卡通  真人转漫画_2096490894571687937.json, 图片生成/图生图/动漫 真人转动漫  真人转卡通  真人转漫画_2097045177390166018.json, 图片生成/图生图/动漫 真人转动漫  真人转卡通  真人转漫画_2097051371597033473.json, 图片生成/图生图/动漫头像 漫画头像  真人转动漫  真人转卡通  真人转漫画_2095747766894022658.json, 图片生成/图生图/千问2511_任意物体360°视角随心切换_手动滑块操作更便捷_2010697372224987138.json, 图片生成/图生图/千问2512图生图洗图+SeedVR2高清工作流_2020867500254175234.json, 图片生成/图生图/千问2512洗图+SeedVR2高清放大工作流_2069347143063789569.json, 图片生成/图生图/千问Qwen Edit 2511任意切换视觉_2010756226547716098.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_34
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-edit 胸部增强 丰胸神器 1.0_1994406310353510401.json、图片生成/图生图/Qwen-动漫转写实真人_1987456609242779650.json、图片生成/图生图/Qwen_Image_Edit 超强编辑 _ 万物可改 _ 开源可部署_1959226946603397122.json、图片生成/图生图/Qwen图片编辑模型Plus版本_1970454036820488193.json、图片生成/图生图/qwen_image_edit多图编辑_1970660738824105985.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/动漫 真人转动漫  真人转卡通  真人转漫画_2096490894571687937.json、图片生成/图生图/动漫 真人转动漫  真人转卡通  真人转漫画_2097045177390166018.json、图片生成/图生图/动漫 真人转动漫  真人转卡通  真人转漫画_2097051371597033473.json、图片生成/图生图/动漫头像 漫画头像  真人转动漫  真人转卡通  真人转漫画_2095747766894022658.json、图片生成/图生图/千问2511_任意物体360°视角随心切换_手动滑块操作更便捷_2010697372224987138.json…）
 
 - **类型**：Image To Image
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **样本数**：8
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGNorm`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
-- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
@@ -36,46 +34,47 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `TextEncodeQwenImageEditPlus` —— 5/6 个有
-- `TextEncodeQwenImageEdit` —— 4/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `DWPreprocessor` —— 2/6 个有
-- `EmptySD3LatentImage` —— 2/6 个有
-- `Image Comparer (rgthree)` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `DualCLIPLoader` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `Fast Groups Muter (rgthree)` —— 1/6 个有
-- `ImageStitch` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `Text` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `CFGNorm` —— 6/8 个有
+- `PIP_图像联结` —— 5/8 个有
+- `SeedVR2LoadDiTModel` —— 4/8 个有
+- `SeedVR2LoadVAEModel` —— 4/8 个有
+- `SeedVR2VideoUpscaler` —— 4/8 个有
+- `TextEncodeQwenImageEdit` —— 4/8 个有
+- `CLIPTextEncode` —— 2/8 个有
+- `Image Comparer (rgthree)` —— 2/8 个有
+- `ImageScaleToTotalPixels` —— 2/8 个有
+- `QwenMultiangleCameraNode` —— 2/8 个有
+- `ShowText|pysssss` —— 2/8 个有
+- `TextEncodeQwenImageEditPlus` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `CR Text` —— 1/8 个有
+- `ImpactSwitch` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 1 - 8 | 6 | 51% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 83% |
-| 调度器 | simple | - | 6 | 83% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 8 | 8 - 20 | 8 | 58% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 8 | 28% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 0.3 - 1 | 8 | 72% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 1 - 8，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 83%
-- 调度器 最常用 simple，6 个样本，一致性 83%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（10/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 20，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，8 个样本，取值分散，一致性仅 28%
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.3 - 1，8 个样本
+- 高发问题（7/8 个样本）：Steps较低可能导致细节不足

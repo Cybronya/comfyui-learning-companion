@@ -1,60 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_unet_460
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9565
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UnetLoaderGGUF, VAEDecode, VAELoader]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FluxKrea - ImageGeneration  文生图工作流_1951504768676122625.json, 图片生成/文生图/Shuttle Jaguar 4步快速出图_1940292234132766721.json]
+members: [图片生成/文生图/朦胧唯美zimage_2005074233749372930.json, 图片生成/文生图/柔和光影日系风Soft-Light Bright- Anime Art Style -Image工作流_2070113768801128449.json, 图片生成/文生图/超自然人像生成：qwen-image-2512加Z-image双采样器文生图_2022543014375198722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_460
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/FluxKrea - ImageGeneration  文生图工作流_1951504768676122625.json、图片生成/文生图/Shuttle Jaguar 4步快速出图_1940292234132766721.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/朦胧唯美zimage_2005074233749372930.json、图片生成/文生图/柔和光影日系风Soft-Light Bright- Anime Art Style -Image工作流_2070113768801128449.json、图片生成/文生图/超自然人像生成：qwen-image-2512加Z-image双采样器文生图_2022543014375198722.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSamplerAdvanced`
 - `SaveImage`
-- `UnetLoaderGGUF`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoaderGGUF` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `ModelSamplingFlux` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `Primitive string multiline [Crystools]` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `easy int` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `Latent Noise Injection` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
+- `ZImageLoraModelOnly` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 836 | - | 2 | 92% |
-| 高度 | 1024 | - | 2 | 75% |
-| LoRA 模型强度 | 0.9 | - | 1 | 100% |
-| LoRA 文本强度 | 0.9 | - | 1 | 100% |
+| 采样步数 | randomize | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 10 | 9 - 14 | 3 | 80% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | ddim | - | 3 | 33% |
+| 重绘幅度 | sgm_uniform | - | 3 | 33% |
+| 宽度 | 1280 | 720 - 1280 | 3 | 76% |
+| 高度 | 1280 | 720 - 1856 | 3 | 64% |
 
 ## 常见问题
 
@@ -62,6 +59,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 836，样本不足，未给区间，2 个样本，取值集中（一致性 92%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 9 - 14，3 个样本，取值集中（一致性 80%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 ddim，3 个样本，一致性 33%
+- 重绘幅度 最常用 sgm_uniform，3 个样本，一致性 33%
+- 宽度 中位数 1280，观测区间 720 - 1280，3 个样本
+- 高度 中位数 1280，观测区间 720 - 1856，3 个样本
+- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

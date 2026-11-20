@@ -2,87 +2,69 @@
 name: unknown_workflow_sampler_clip_unet_40
 type: Unknown Workflow
 frequency: 18
-level: strong
-coverage: 0.836444
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVDualCFGGuider, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, TextGenerateLTX2Prompt, UNETLoader, VAEDecodeTiled, VAELoader]
-problems: []
+level: weak
+coverage: 0.959444
+common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX25单图生视频二_2101996495485624321.json, 视频生成/图生视频/LTX25单图生视频第一版_2101966214657564674.json, 视频生成/图生视频/LTX_2.5_图生视频_2090673250572521473.json, 视频生成/图生视频/Ltx2.5图生视频-极速版-高质量-自动扩写提示词_2089690744842969089.json, 视频生成/图生视频/ltx2.5图文生视频_2111289590802903041.json, 视频生成/图生视频/ltx2.5图生视频_2087607964956979202.json, 视频生成/图生视频/video_ltx2_5_i2v-comfyui_2087443808706457602.json, 视频生成/图生视频/video_ltx2_5_i2v_2087366084356820993.json, 视频生成/图生视频/【开源】LTX2.5 图生视频_2087455802314547201.json, 视频生成/图生视频/图生视频  极速  LTX2.5 音画同出_2087530924060798978.json, 视频生成/图生视频/极速图生视频音画同出   LTX2.5_2095738668177780738.json, 视频生成/文生视频/A-8 LTX-2.5 文生视频（T2V）· 音画同步生成_2087369134014291970.json, 视频生成/文生视频/A-8_LTX-2.5_文生视频T2V·_音画同步生成_2104390729396211714.json, 视频生成/文生视频/LTX-2.5 文生视频_2089155568840830977.json, 视频生成/文生视频/LTX-2.5_文生视频T2V·_音画同步生成_2102690657440718849.json, 视频生成/文生视频/LTX-2.5_文生视频T2V·_音画同步生成_2104492526324510722.json, 视频生成/文生视频/LTX2.5 二采高清（图生+文生视频）_2087733249475956738.json, 视频生成/文生视频/LTX2.5 视频生成 I 提示词强化_2087468290628214785.json]
+members: [图片生成/文生图/ZIMAGE-Turbo文生图+写实光影LORA+Engineer大师模式_2015980476426620929.json, 图片生成/文生图/ZImageBase文生图亮亮丝袜美女_2063529324246036482.json, 图片生成/文生图/ZImageBase文生图美女丝袜_2064861858766614530.json, 图片生成/文生图/ZImage女神_2063571918896328705.json, 图片生成/文生图/Z_image2512文生图_2055512539395567617.json, 图片生成/文生图/Z_image_tubf16全量模型出图_2055504260586065921.json, 图片生成/文生图/Z_image_turbo_文生图_1998723273162641410.json, 图片生成/文生图/Z_image_turbo出图_2055508247259435010.json, 图片生成/文生图/Z_image_turbo即梦生图免费版_1998032212584988673.json, 图片生成/文生图/Z_image_turbo工作流_1994234495897452546.json, 图片生成/文生图/Z_image文生图标准版_2064278139861299201.json, 图片生成/文生图/Zimage-Turbo文生图+写实光影+Engineer大师模式_2042080099603845121.json, 图片生成/文生图/danotebook-qwen-image-2512_2062470910413725697.json, 图片生成/文生图/image_ovis_文生图_1998947182181015554.json, 图片生成/文生图/image_qwen_Image_2512 BF16_2073295897374584833.json, 图片生成/文生图/qwen-image 4步极速生图_1954932387395223553.json, 图片生成/文生图/qwen-image 8步快速生图_1954932461516963842.json, 图片生成/文生图/qwen-image 极速生图_1956936946464296962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_40
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/LTX25单图生视频二_2101996495485624321.json、视频生成/图生视频/LTX25单图生视频第一版_2101966214657564674.json、视频生成/图生视频/LTX_2.5_图生视频_2090673250572521473.json、视频生成/图生视频/Ltx2.5图生视频-极速版-高质量-自动扩写提示词_2089690744842969089.json、视频生成/图生视频/ltx2.5图文生视频_2111289590802903041.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/ZIMAGE-Turbo文生图+写实光影LORA+Engineer大师模式_2015980476426620929.json、图片生成/文生图/ZImageBase文生图亮亮丝袜美女_2063529324246036482.json、图片生成/文生图/ZImageBase文生图美女丝袜_2064861858766614530.json、图片生成/文生图/ZImage女神_2063571918896328705.json、图片生成/文生图/Z_image2512文生图_2055512539395567617.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：18
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVDualCFGGuider`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `TextGenerateLTX2Prompt`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 17/18 个有
-- `PrimitiveBoolean` —— 17/18 个有
-- `PrimitiveStringMultiline` —— 17/18 个有
-- `ResolutionSelector` —— 17/18 个有
-- `LTXVLatentUpsampler` —— 16/18 个有
-- `LatentUpscaleModelLoader` —— 16/18 个有
-- `PreviewAny` —— 15/18 个有
-- `CreateVideo` —— 14/18 个有
-- `SaveVideo` —— 14/18 个有
-- `LTXVImgToVideoInplace` —— 13/18 个有
-- `LoadImage` —— 13/18 个有
-- `ResizeImageMaskNode` —— 13/18 个有
-- `LTXVPreprocess` —— 12/18 个有
-- `VHS_VideoCombine` —— 9/18 个有
-- `ImageFromBatch` —— 5/18 个有
-- `SaveAudio` —— 5/18 个有
-- `SaveImage` —— 5/18 个有
-- `ImageResizeKJv2` —— 2/18 个有
-- `PurgeVRAM_UTK` —— 2/18 个有
-- `StringConcatenate` —— 2/18 个有
-- `JjkText` —— 1/18 个有
-- `LTX2AttentionTunerPatch` —— 1/18 个有
-- `PathchSageAttentionKJ` —— 1/18 个有
-- `Text` —— 1/18 个有
-- `easy cleanGpuUsed` —— 1/18 个有
-- `easy showAnything` —— 1/18 个有
+- `CLIPLoader` —— 16/18 个有
+- `LoraLoaderModelOnly` —— 11/18 个有
+- `CR Text` —— 5/18 个有
+- `CR SDXL Aspect Ratio` —— 3/18 个有
+- `CLIPLoaderGGUF` —— 1/18 个有
+- `ClipLoaderGGUF` —— 1/18 个有
+- `Float` —— 1/18 个有
+- `Int` —— 1/18 个有
+- `PrimitiveStringMultiline` —— 1/18 个有
+- `TTResolutionSelector` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 18 | 100% |
-| 高度 | 25 | 24 - 25 | 18 | 99% |
+| 采样步数 | 8 | 4 - 30 | 18 | 32% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 18 | 19% |
+| 采样算法 | euler | - | 18 | 72% |
+| 调度器 | simple | - | 18 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 13/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，18 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 25，18 个样本，取值集中（一致性 99%）
+- 采样步数 中位数 8，观测区间 4 - 30，18 个样本，取值分散，一致性仅 32%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，18 个样本，取值分散，一致性仅 19%
+- 采样算法 最常用 euler，18 个样本，一致性 72%
+- 调度器 最常用 simple，18 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 高发问题（13/18 个样本）：Steps较低可能导致细节不足

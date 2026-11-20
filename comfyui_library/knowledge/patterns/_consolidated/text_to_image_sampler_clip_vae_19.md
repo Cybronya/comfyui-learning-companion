@@ -3,22 +3,22 @@ name: text_to_image_sampler_clip_vae_19
 type: Text To Image
 frequency: 6
 level: moderate
-coverage: 0.871167
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode, VAELoader]
+coverage: 0.754
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, ModelSamplingAuraFlow, RH_Prompter, SaveImage, TextCombinerTwo, VAEDecode, VAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/三图融合Qwen Edit 2509 nunchaku加速_1963483303460442113.json, 图片生成/图生图/产品可视化-任意角度可编辑-multiangle_2009653208204972034.json, 图片生成/图生图/人物三视图-FireRed-Image-Edit 1.1-高清直出_2036824180422873090.json, 图片生成/图生图/人物面部+全身三视图-高清直出_2072004887482814465.json, 图片生成/图生图/即梦、小云雀、豆包、超能视频2.0真人过审核方法-FireRed-Image-Edit 1.1_2036801337580589057.json, 图片生成/文生图/FireRed-Image-Edit 1.1-人物面部+全身三视图-高清直出_2083015619733180417.json]
+members: [图片生成/文生图/Nunchaku Qwen文生图-极速版_1959819102569312258.json, 图片生成/文生图/Qwen-Image 基本工作流_1987531654463950849.json, 图片生成/文生图/Qwen-Image_1963080046766436353.json, 图片生成/文生图/Qwen文生图-极速版_1957351833759051778.json, 图片生成/文生图/Qwen文生图-极速版_1978645121417760769.json, 图片生成/文生图/Qwen文生图_1972548833475489794.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_vae_19
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/三图融合Qwen Edit 2509 nunchaku加速_1963483303460442113.json、图片生成/图生图/产品可视化-任意角度可编辑-multiangle_2009653208204972034.json、图片生成/图生图/人物三视图-FireRed-Image-Edit 1.1-高清直出_2036824180422873090.json、图片生成/图生图/人物面部+全身三视图-高清直出_2072004887482814465.json、图片生成/图生图/即梦、小云雀、豆包、超能视频2.0真人过审核方法-FireRed-Image-Edit 1.1_2036801337580589057.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Nunchaku Qwen文生图-极速版_1959819102569312258.json、图片生成/文生图/Qwen-Image 基本工作流_1987531654463950849.json、图片生成/文生图/Qwen-Image_1963080046766436353.json、图片生成/文生图/Qwen文生图-极速版_1957351833759051778.json、图片生成/文生图/Qwen文生图-极速版_1978645121417760769.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
@@ -26,53 +26,55 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
-- `LoadImage`
+- `ModelSamplingAuraFlow`
+- `RH_Prompter`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `TextCombinerTwo`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `UNETLoader` —— 5/6 个有
-- `JjkText` —— 4/6 个有
-- `SeedVR2` —— 4/6 个有
-- `CustomAddLabel` —— 3/6 个有
-- `RunningHub Deepcleaner` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `GetImageSize` —— 1/6 个有
-- `ImageScaleToTotalPixels` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `NunchakuQwenImageDiTLoader` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `PrimitiveString` —— 1/6 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `ImpactSwitch` —— 5/6 个有
+- `Int` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `NunchakuQwenImageDiTLoader` —— 4/6 个有
+- `CFGNorm` —— 3/6 个有
+- `easy anythingIndexSwitch` —— 3/6 个有
+- `LoraLoaderModelOnly` —— 2/6 个有
+- `PathchSageAttentionKJ` —— 2/6 个有
+- `UnetLoaderGGUF` —— 2/6 个有
+- `AddWater_MarkNode` —— 1/6 个有
+- `LoadImage` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2 | 6 | 68% |
+| 采样步数 | 8 | 4 - 20 | 6 | 38% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 6 | 55% |
 | 采样算法 | euler | - | 6 | 100% |
 | 调度器 | simple | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 1052 | 720 - 1920 | 6 | 59% |
-| 高度 | 1280 | 1080 - 1920 | 6 | 79% |
+| 宽度 | 512 | 512 - 512 | 6 | 100% |
+| 高度 | 512 | 512 - 512 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2，6 个样本
+- 采样步数 中位数 8，观测区间 4 - 20，6 个样本，取值分散，一致性仅 38%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，6 个样本
 - 采样算法 最常用 euler，6 个样本，一致性 100%
 - 调度器 最常用 simple，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1052，观测区间 720 - 1920，6 个样本
-- 高度 中位数 1280，观测区间 1080 - 1920，6 个样本
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，观测区间 512 - 512，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，6 个样本，取值集中（一致性 100%）
+- 高发问题（5/6 个样本）：Steps较低可能导致细节不足

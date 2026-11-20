@@ -2,23 +2,23 @@
 name: text_to_image_sampler_clip_unet_193
 type: Text To Image
 frequency: 3
-level: strong
-coverage: 0.944667
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, FluxResolutionNode, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+level: moderate
+coverage: 0.766333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen文生图超美人像_2008785579265236993.json, 图片生成/文生图/Wan2.2 Magic Wan Image文生图_1970727639172476929.json, 图片生成/文生图/Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json]
+members: [图片生成/文生图/2-图像生成 (T2I+I2I) Z-Image Turbo 工作流_2053397476975104001.json, 图片生成/文生图/Anima Base any-test-like控制生图_2073323335081095169.json, 图片生成/文生图/Z-image 文生图+反推洗图_1993920304986652673.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_193
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen文生图超美人像_2008785579265236993.json、图片生成/文生图/Wan2.2 Magic Wan Image文生图_1970727639172476929.json、图片生成/文生图/Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/2-图像生成 (T2I+I2I) Z-Image Turbo 工作流_2053397476975104001.json、图片生成/文生图/Anima Base any-test-like控制生图_2073323335081095169.json、图片生成/文生图/Z-image 文生图+反推洗图_1993920304986652673.json）
 
 - **类型**：Text To Image
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
@@ -26,43 +26,50 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `FluxResolutionNode`
 - `KSampler`
+- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingSD3` —— 2/3 个有
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `Text` —— 1/3 个有
-- `easy int` —— 1/3 个有
+- `Any Switch (rgthree)` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `VAEEncode` —— 2/3 个有
+- `AILab_QwenVL` —— 1/3 个有
+- `AnimaLLLiteApply` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
+- `Resize Image for SDXL` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 512 - 768 | 3 | 82% |
-| 高度 | 1376 | 512 - 1376 | 3 | 63% |
-| 采样步数 | 30 | 30 - 30 | 3 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 4 | 3 | 86% |
-| 采样算法 | deis | - | 3 | 67% |
+| 采样步数 | 10 | 8 - 30 | 3 | 38% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 3 | 29% |
+| 采样算法 | euler | - | 3 | 67% |
 | 调度器 | simple | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1024 | 768 - 1344 | 3 | 77% |
+| 高度 | 1024 | 768 - 1024 | 3 | 87% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 768，3 个样本，取值集中（一致性 82%）
-- 高度 中位数 1376，观测区间 512 - 1376，3 个样本
-- 采样步数 中位数 30，观测区间 30 - 30，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 4，3 个样本，取值集中（一致性 86%）
-- 采样算法 最常用 deis，3 个样本，一致性 67%
+- 采样步数 中位数 10，观测区间 8 - 30，3 个样本，取值分散，一致性仅 38%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，3 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 euler，3 个样本，一致性 67%
 - 调度器 最常用 simple，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 768 - 1344，3 个样本
+- 高度 中位数 1024，观测区间 768 - 1024，3 个样本，取值集中（一致性 87%）

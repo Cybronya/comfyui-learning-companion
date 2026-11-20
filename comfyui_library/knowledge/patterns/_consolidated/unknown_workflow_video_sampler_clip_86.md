@@ -2,57 +2,75 @@
 name: unknown_workflow_video_sampler_clip_86
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.98375
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+level: strong
+coverage: 0.964625
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJv2, ImageScaleBy, ImpactInt, KSamplerAdvanced, LoadImage, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveStringMultiline, RIFE VFI, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/通义万相Teacache加速图生视频_1896425086226726914.json, 视频生成/图生视频/通义万相wan2.1万物生花特效_1908182289698664449.json, 视频生成/图生视频/通义万相wan2.1万物老化特效_1912458633853239298.json, 视频生成/图生视频/通义万相wan2.1图生视频万物婴儿化_1911273702397308929.json, 视频生成/图生视频/通义万相wan2.1图生视频万物放气特效_1910623040215154690.json, 视频生成/图生视频/通义万相wan2.1图生视频美女转身舞动_1910235144152674306.json, 视频生成/图生视频/通义万相wan2.1美女一字马_1909453938431504386.json, 视频生成/文生视频/火力 全开！冲锋枪射击特效--万相WAN2.1_1934071211976478722.json]
+members: [视频生成/图生视频/wan2.2 Remix-高动态电影质感模型 图生视频_1988090119234236418.json, 视频生成/图生视频/视频全能融合模型Smooth Mix wan2.2_1979453083128336385.json, 视频生成/图生视频/视频生成-生成视频片段_2010181863981191170.json, 视频生成/图生视频/视频生成-生成视频片段_2012343495582818305.json, 视频生成/图生视频/首尾帧图生视频Wan2.2-Smooth Mix 超丝滑动态电影感画质极速渲染 工作流_1981312323858104321.json, 视频生成/图生视频/首尾帧视频_1986671035942662146.json, 视频生成/图生视频/高动态电影级首尾帧Wan2.2-Smooth Mix 超丝滑动态1.0_1986030132559314946.json, 视频生成/图生视频/🚵Smooth Mix wan2.2 高动态电影质感模型 首尾帧视频🚵_1979384908328112130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_86
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/通义万相Teacache加速图生视频_1896425086226726914.json、视频生成/图生视频/通义万相wan2.1万物生花特效_1908182289698664449.json、视频生成/图生视频/通义万相wan2.1万物老化特效_1912458633853239298.json、视频生成/图生视频/通义万相wan2.1图生视频万物婴儿化_1911273702397308929.json、视频生成/图生视频/通义万相wan2.1图生视频万物放气特效_1910623040215154690.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/wan2.2 Remix-高动态电影质感模型 图生视频_1988090119234236418.json、视频生成/图生视频/视频全能融合模型Smooth Mix wan2.2_1979453083128336385.json、视频生成/图生视频/视频生成-生成视频片段_2010181863981191170.json、视频生成/图生视频/视频生成-生成视频片段_2012343495582818305.json、视频生成/图生视频/首尾帧图生视频Wan2.2-Smooth Mix 超丝滑动态电影感画质极速渲染 工作流_1981312323858104321.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `ImpactInt`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveStringMultiline`
+- `RIFE VFI`
+- `SimpleMath+`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 7/8 个有
-- `GIMMVFI_interpolate` —— 7/8 个有
-- `LayerUtility: PurgeVRAM` —— 7/8 个有
-- `WanVideoLoraSelect` —— 7/8 个有
-- `ImageResizeKJ` —— 6/8 个有
-- `UpscaleModelLoader` —— 5/8 个有
-- `CR Upscale Image` —— 3/8 个有
-- `UpscaleImageByUsingModel` —— 3/8 个有
-- `ImageUpscaleWithModel` —— 2/8 个有
-- `INTConstant` —— 1/8 个有
-- `ImageResize+` —— 1/8 个有
+- `Fast Bypasser (rgthree)` —— 7/8 个有
+- `Mute / Bypass Repeater (rgthree)` —— 7/8 个有
+- `Seed (rgthree)` —— 7/8 个有
+- `wanBlockSwap` —— 6/8 个有
+- `WanFirstLastFrameToVideo` —— 5/8 个有
+- `WanImageToVideo` —— 4/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `AILab_QwenVL` —— 1/8 个有
+- `GetImageSize+` —— 1/8 个有
+- `Note Plus (mtb)` —— 1/8 个有
+- `PurgeVRAM_UTK` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
+- `TextCombinerTwo` —— 1/8 个有
+- `easy imageScaleDownToSize` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
+- `ttN text` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 8 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler_ancestral | - | 8 | 100% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -60,4 +78,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，8 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，8 个样本，一致性 100%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%

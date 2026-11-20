@@ -1,136 +1,92 @@
 ---
 name: text_to_image_controlnet_upscale_lora_11
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.849
-common_nodes: [AddLabel, AddMask, ApplyFBCacheOnModel, ApplyInstantID, ApplyPulidFlux, Blend, CLIPTextEncode, CM_IntToFloat, CM_IntToNumber, CM_NumberToInt, CM_NumberUnaryOperation, CR Prompt Text, CR Upscale Image, CheckpointLoaderSimple, ColorMatch, ConditioningZeroOut, ControlNetApplyAdvanced, ControlNetLoader, DualCLIPLoader, EmptyLatentImage, FaceAnalysisModels, FaceBoundingBox, FluxGuidance, FluxKontextImageScale, GetImageSize+, GetImageSizeAndCount, GoogleTranslateTextNode, Image Comparer (rgthree), Image Padding, ImageAndMaskPreview, ImageComposite+, ImageConcanate, ImageResizeAdvanced, ImageScale, ImageScaleBy, ImageStitch, ImpactSwitch, InstantIDFaceAnalysis, InstantIDModelLoader, JWImageResizeByLongerSide, KSampler, LayerMask: MaskGrow, LayerMask: PersonMaskUltra V2, LayerUtility: CropBoxResolve, LayerUtility: CropByMask, LayerUtility: CropByMask V2, LayerUtility: ImageBlend V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: LayerImageTransform, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, LoadRembgByBiRefNetModel, LoraLoaderModelOnly, MagCache, MaskPreview+, PMRF, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RH_Captioner, RMBG, ReferenceLatent, RembgByBiRefNet, SaveImage, SetLatentNoiseMask, Text Concatenate (JPS), TextInput_, UnetLoaderGGUF, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageColorMatch, easy showAnything, preview_mask]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.751667
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, GoogleTranslateTextNode, Image Comparer (rgthree), ImageConcanate, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PMRF, QwenImageDiffsynthControlnet, RH_Captioner, SaveImage, SetNode, ShowText|pysssss, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/FLUX Kontext 万物融合-产品+背景合并图_1944337602067746817.json, 图片生成/图生图/Flux Kontext Dev超级换装融合稳定加速版v1_1941793532090990593.json]
+members: [图片生成/文生图/Zimage文生图动作迁移  ZImage_Merged_Optimized_2006238737826582529.json, 图片生成/文生图/多合一，放大，动作参考，提示词反推，集成Qwen_2512_2511_ZImage_十秒出图_2006666537956020226.json, 图片生成/文生图/多合一，放大，动作参考，提示词反推，集成Qwen_2512_2511_ZImage_十秒出图_2032349637339783169.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_upscale_lora_11
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FLUX Kontext 万物融合-产品+背景合并图_1944337602067746817.json、图片生成/图生图/Flux Kontext Dev超级换装融合稳定加速版v1_1941793532090990593.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Zimage文生图动作迁移  ZImage_Merged_Optimized_2006238737826582529.json、图片生成/文生图/多合一，放大，动作参考，提示词反推，集成Qwen_2512_2511_ZImage_十秒出图_2006666537956020226.json、图片生成/文生图/多合一，放大，动作参考，提示词反推，集成Qwen_2512_2511_ZImage_十秒出图_2032349637339783169.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AddLabel`
-- `AddMask`
-- `ApplyFBCacheOnModel`
-- `ApplyInstantID`
-- `ApplyPulidFlux`
-- `Blend`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CM_IntToFloat`
-- `CM_IntToNumber`
-- `CM_NumberToInt`
-- `CM_NumberUnaryOperation`
-- `CR Prompt Text`
-- `CR Upscale Image`
-- `CheckpointLoaderSimple`
-- `ColorMatch`
+- `CR Text`
 - `ConditioningZeroOut`
-- `ControlNetApplyAdvanced`
-- `ControlNetLoader`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FaceAnalysisModels`
-- `FaceBoundingBox`
-- `FluxGuidance`
-- `FluxKontextImageScale`
-- `GetImageSize+`
-- `GetImageSizeAndCount`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `GetNode`
 - `GoogleTranslateTextNode`
 - `Image Comparer (rgthree)`
-- `Image Padding`
-- `ImageAndMaskPreview`
-- `ImageComposite+`
 - `ImageConcanate`
-- `ImageResizeAdvanced`
-- `ImageScale`
-- `ImageScaleBy`
-- `ImageStitch`
-- `ImpactSwitch`
-- `InstantIDFaceAnalysis`
-- `InstantIDModelLoader`
-- `JWImageResizeByLongerSide`
+- `ImageScaleToTotalPixels`
+- `ImageUpscaleWithModel`
 - `KSampler`
-- `LayerMask: MaskGrow`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: CropBoxResolve`
-- `LayerUtility: CropByMask`
-- `LayerUtility: CropByMask V2`
-- `LayerUtility: ImageBlend V2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: LayerImageTransform`
-- `LayerUtility: PurgeVRAM`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadRembgByBiRefNetModel`
 - `LoraLoaderModelOnly`
-- `MagCache`
-- `MaskPreview+`
+- `ModelPatchLoader`
 - `PMRF`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveInt`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
+- `QwenImageDiffsynthControlnet`
 - `RH_Captioner`
-- `RMBG`
-- `ReferenceLatent`
-- `RembgByBiRefNet`
 - `SaveImage`
-- `SetLatentNoiseMask`
-- `Text Concatenate (JPS)`
-- `TextInput_`
-- `UnetLoaderGGUF`
+- `SetNode`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageColorMatch`
-- `easy showAnything`
-- `preview_mask`
+
+**可变部分**（部分 workflow 才有）：
+- `AddLabel` —— 2/3 个有
+- `CFGNorm` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `KSamplerAdvanced` —— 2/3 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `ModelSamplingAuraFlow` —— 2/3 个有
+- `easy int` —— 2/3 个有
+- `PreviewBridge` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `easy imageSplitGrid` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 768 | - | 2 | 100% |
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| ControlNet 权重 | 0.1 | - | 2 | 100% |
+| 采样步数 | fixed | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 8 | 1 - 8 | 3 | 42% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 3 | 67% |
+| 重绘幅度 | simple | - | 3 | 67% |
+| 宽度 | 720 | 720 - 1024 | 3 | 83% |
+| 高度 | 1280 | 1280 - 1536 | 3 | 91% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 768，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 0.1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 8，3 个样本，取值分散，一致性仅 42%
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 67%
+- 重绘幅度 最常用 simple，3 个样本，一致性 67%
+- 宽度 中位数 720，观测区间 720 - 1024，3 个样本，取值集中（一致性 83%）
+- 高度 中位数 1280，观测区间 1280 - 1536，3 个样本，取值集中（一致性 91%）

@@ -1,63 +1,58 @@
 ---
 name: unknown_workflow_video_lora_sampler_760
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.798667
-common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveStringMultiline, SaveLatent, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+frequency: 4
+level: strong
+coverage: 0.94025
+common_nodes: [BerniniStudio, CLIPLoader, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/正在测试lora  -_1944651399730745345.json, 视频生成/图生视频/正在测试lora  -_1944662370163544065.json, 视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json]
+members: [视频生成/图生视频/全能参考生成视频Bernini Studio工作流_2064122259987591170.json, 视频生成/图生视频/贝尔尼尼Bernini Studio工作流_2073635862683934721.json, 视频生成/图生视频/贝尔尼尼工作流 Bernini+Studio 12种模式_2074037576872316929.json, 视频生成/文生视频/全能视频编辑-贝尔尼尼Bernini 4步加速_2075480007203446785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_760
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/正在测试lora  -_1944651399730745345.json、视频生成/图生视频/正在测试lora  -_1944662370163544065.json、视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能参考生成视频Bernini Studio工作流_2064122259987591170.json、视频生成/图生视频/贝尔尼尼Bernini Studio工作流_2073635862683934721.json、视频生成/图生视频/贝尔尼尼工作流 Bernini+Studio 12种模式_2074037576872316929.json、视频生成/文生视频/全能视频编辑-贝尔尼尼Bernini 4步加速_2075480007203446785.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+全部 4 个 workflow 都包含：
+- `BerniniStudio`
+- `CLIPLoader`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `SaveLatent`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ACE_TextConcatenate` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
-- `GIMMVFI_interpolate` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `LoadLatent` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
+- `FlashVSRNode` —— 2/4 个有
+- `SaveImage` —— 2/4 个有
+- `Sleep` —— 2/4 个有
+- `CR Prompt List` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `RIFE VFI` —— 1/4 个有
+- `RTXVideoSuperResolution` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 4 | 50% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 4 | 100% |
+| 采样算法 | 1 | 1 - 1 | 4 | 100% |
+| 调度器 | euler | - | 4 | 100% |
+| 重绘幅度 | simple | - | 4 | 100% |
 
 ## 常见问题
 
@@ -65,4 +60,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，4 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，4 个样本，一致性 100%
+- 重绘幅度 最常用 simple，4 个样本，一致性 100%

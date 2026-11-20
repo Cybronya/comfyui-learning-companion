@@ -1,88 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_222
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.6411
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, ImageResizeKJv2, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.664
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2+Animate+V2模运动迁移Uni3c运镜_1976670695512068097.json, 视频生成/图生视频/Wan2.2Animate姿态+声音+精准替换_2002155248145842178.json, 视频生成/图生视频/wan2.2 animate视频换头视频换脸工作流_1977864752590454786.json, 视频生成/图生视频/全能图片V12 + WanAnimate，让你穿着勇士队球衣开跳库里之歌_1992409563280330754.json, 视频生成/图生视频/视频角色替换工作流_2010634733373366273.json, 视频生成/图生视频/（自用）Wan Animate KJ V2版Move模式视频V2（换装前置）_1977660761738739714.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Mix主体混合版V2_1974413564041670657.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Move运动迁移Uni3c运镜版V1_1974430400560893954.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本一致性优化Move运动迁移V1_1974423112462766082.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本非人类一致性优化Mix主体混合版V1_1974415771805855745.json]
+members: [图片生成/图生图/视频对口型-多人选一人+老八v3_2028080510215397377.json, 平台全量/台词替换_2035184205684019202.json, 数字人/数字人/InfiniteTalk_V2V_多人场面控制单人说话-高画质版720p_2010599724411260929.json, 数字人/数字人/InfiniteTalk_V2V_多人场面控制单人说话_2000188855288557569.json, 数字人/数字人/数字人单人2_2042547376166014978.json, 数字人/数字人/数字人单人3_2043371209026441217.json, 数字人/数字人/数字人单人_2042510576282247169.json, 数字人/数字人/视频对口型-多人选一人_2004086022214434817.json, 视频生成/图生视频/视频对口型-多人选一人 老八_2018290540470607873.json, 视频生成/图生视频/视频对口型-多人选一人+老八v2_2027669191704186881.json, 视频生成/图生视频/视频对口型-多人选一人_2007293154239713282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_222
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Wan2.2+Animate+V2模运动迁移Uni3c运镜_1976670695512068097.json、视频生成/图生视频/Wan2.2Animate姿态+声音+精准替换_2002155248145842178.json、视频生成/图生视频/wan2.2 animate视频换头视频换脸工作流_1977864752590454786.json、视频生成/图生视频/全能图片V12 + WanAnimate，让你穿着勇士队球衣开跳库里之歌_1992409563280330754.json、视频生成/图生视频/视频角色替换工作流_2010634733373366273.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/视频对口型-多人选一人+老八v3_2028080510215397377.json、平台全量/台词替换_2035184205684019202.json、数字人/数字人/InfiniteTalk_V2V_多人场面控制单人说话-高画质版720p_2010599724411260929.json、数字人/数字人/InfiniteTalk_V2V_多人场面控制单人说话_2000188855288557569.json、数字人/数字人/数字人单人2_2042547376166014978.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BlockifyMask`
+全部 11 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `Sam2Segmentation`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 9/10 个有
-- `SetNode` —— 9/10 个有
-- `WanVideoLoraSelectMulti` —— 9/10 个有
-- `GetNode` —— 8/10 个有
-- `WanVideoContextOptions` —— 8/10 个有
-- `WanVideoTorchCompileSettings` —— 8/10 个有
-- `GrowMask` —— 7/10 个有
-- `ImageConcatMulti` —— 7/10 个有
-- `CR Prompt Text` —— 6/10 个有
-- `PointsEditor` —— 6/10 个有
-- `WanVideoEncode` —— 6/10 个有
-- `WanVideoUni3C_ControlnetLoader` —— 6/10 个有
-- `WanVideoUni3C_embeds` —— 6/10 个有
-- `easy showAnything` —— 6/10 个有
-- `ACE_ImageFaceCrop` —— 5/10 个有
-- `JWInteger` —— 5/10 个有
-- `PoseRetargetPromptHelper` —— 5/10 个有
-- `INTConstant` —— 4/10 个有
-- `GrowMaskWithBlur` —— 3/10 个有
-- `Label (rgthree)` —— 3/10 个有
-- `PreviewImage` —— 3/10 个有
-- `GetImageSize+` —— 2/10 个有
-- `SaveImage` —— 2/10 个有
-- `easy cleanGpuUsed` —— 2/10 个有
-- `Bookmark (rgthree)` —— 1/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
-- `PreviewAny` —— 1/10 个有
-- `RH_Captioner` —— 1/10 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/10 个有
-- `ShowText` —— 1/10 个有
-- `TT_img_enc_v2` —— 1/10 个有
-- `VHS_VideoInfo` —— 1/10 个有
-- `VHS_VideoInfoLoaded` —— 1/10 个有
-- `WanVideoLoraSelect` —— 1/10 个有
-- `easy promptConcat` —— 1/10 个有
+- `Audio Duration (mtb)` —— 10/11 个有
+- `BlockifyMask` —— 10/11 个有
+- `DrawMaskOnImage` —— 10/11 个有
+- `ImageBatchMulti` —— 10/11 个有
+- `PointsEditor` —— 10/11 个有
+- `ReverseImageBatch` —— 10/11 个有
+- `SimpleMath+` —— 10/11 个有
+- `ToInt` —— 10/11 个有
+- `Wav2VecModelLoader` —— 10/11 个有
+- `DownloadAndLoadSAM2Model` —— 9/11 个有
+- `Sam2Segmentation` —— 9/11 个有
+- `GrowMask` —— 8/11 个有
+- `PreviewImage` —— 8/11 个有
+- `easy sam3ModelLoader` —— 4/11 个有
+- `JjkText` —— 3/11 个有
+- `LayerMask: MaskGrow` —— 3/11 个有
+- `ShowText` —— 3/11 个有
+- `easy sam3VideoSegmentation` —— 3/11 个有
+- `easy showAnything` —— 3/11 个有
+- `ACE_TextGoogleTranslate` —— 2/11 个有
+- `CR Text` —— 2/11 个有
+- `RunningHub Deepcleaner` —— 2/11 个有
+- `1hew_MaskBatchToList` —— 1/11 个有
+- `RH_Translator` —— 1/11 个有
+- `SeCModelLoader` —— 1/11 个有
+- `SeCVideoSegmentation` —— 1/11 个有
+- `easy sam3ImageSegmentation` —— 1/11 个有
 
 ## 典型参数
 

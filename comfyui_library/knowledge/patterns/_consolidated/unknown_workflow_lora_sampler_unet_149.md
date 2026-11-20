@@ -1,75 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_unet_149
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.8722
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, QwenMultiangleCameraNode, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecodeTiled, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 6
+level: moderate
+coverage: 0.882333
+common_nodes: [BasicGuider, BlockSparseAttention, CLIPLoader, KSamplerSelect, LoraLoaderModelOnly, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen2511多角度摄像控制 可视化控制_2010991722142113794.json, 图片生成/图生图/Qwen2511多角度摄像控制 多图版_2009838445824315394.json, 图片生成/图生图/Qwen2511多角度摄像控制 多图版_2010070277836771329.json, 图片生成/图生图/Qwen2511多角度摄像控制_2009539361712381954.json, 图片生成/图生图/qwen2511可视化视角改变_2010931487297769474.json]
+members: [视频生成/图生视频/人物替换工作流1_2115370839989383170.json, 视频生成/图生视频/润哥教育IP数字人_H3_R2V_2111327138715623425.json, 视频生成/图生视频/自用H3官流（单采极速文戏）_2108455375656804353.json, 视频生成/图生视频/自用H3官流（终极版）_2108147321883152385.json, 视频生成/图生视频/街舞表演视频制作_2106024930591731713.json, 视频生成/图生视频/黄色的大宝剑打斗流_2109476674894131202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_149
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen2511多角度摄像控制 可视化控制_2010991722142113794.json、图片生成/图生图/Qwen2511多角度摄像控制 多图版_2009838445824315394.json、图片生成/图生图/Qwen2511多角度摄像控制 多图版_2010070277836771329.json、图片生成/图生图/Qwen2511多角度摄像控制_2009539361712381954.json、图片生成/图生图/qwen2511可视化视角改变_2010931487297769474.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/人物替换工作流1_2115370839989383170.json、视频生成/图生视频/润哥教育IP数字人_H3_R2V_2111327138715623425.json、视频生成/图生视频/自用H3官流（单采极速文戏）_2108455375656804353.json、视频生成/图生视频/自用H3官流（终极版）_2108147321883152385.json、视频生成/图生视频/街舞表演视频制作_2106024930591731713.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BlockSparseAttention`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `KSampler`
-- `LoadImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `PrimitiveStringMultiline`
-- `QwenEditAdaptiveLongestEdge`
-- `QwenEditConfigPreparer`
-- `QwenMultiangleCameraNode`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 4/5 个有
-- `easy promptList` —— 3/5 个有
-- `easy showAnything` —— 3/5 个有
-- `KOOK_SaveJPGImage` —— 1/5 个有
-- `LayerUtility: ImageReel` —— 1/5 个有
-- `LayerUtility: ImageReelComposit` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
+- `ComfyMathExpression` —— 5/6 个有
+- `LoadAudio` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `MiniMaxH3ReferenceToVideo` —— 5/6 个有
+- `VAEDecodeAudio` —— 5/6 个有
+- `VHS_VideoCombine` —— 5/6 个有
+- `BasicScheduler` —— 4/6 个有
+- `ManualSigmas` —— 4/6 个有
+- `PrimitiveFloat` —— 4/6 个有
+- `VHS_LoadVideo` —— 4/6 个有
+- `MiniMaxH3SigmaShift` —— 3/6 个有
+- `ExtendIntermediateSigmas` —— 2/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/6 个有
+- `ConditioningZeroOut` —— 1/6 个有
+- `CreateVideo` —— 1/6 个有
+- `DisableNoise` —— 1/6 个有
+- `Fast Groups Muter (rgthree)` —— 1/6 个有
+- `ImageScaleToTotalPixels` —— 1/6 个有
+- `MiniMaxH3Unified` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `SaveVideo` —— 1/6 个有
+- `SoundFlow_GetLength` —— 1/6 个有
+- `SplitSigmasDenoise` —— 1/6 个有
+- `Text Concatenate` —— 1/6 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | beta57 | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 5/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 beta57，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（6/5 个样本）：Steps较低可能导致细节不足
-- 高发问题（5/5 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

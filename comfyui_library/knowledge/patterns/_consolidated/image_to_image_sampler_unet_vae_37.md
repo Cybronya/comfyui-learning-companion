@@ -1,34 +1,33 @@
 ---
 name: image_to_image_sampler_unet_vae_37
 type: Image To Image
-frequency: 5
-level: strong
-coverage: 1
-common_nodes: [ConditioningZeroOut, DualCLIPLoader, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 7
+level: moderate
+coverage: 0.957571
+common_nodes: [CLIPLoader, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/线稿图转3d_1955066406536712194.json, 图片生成/图生图/🦖恶搞之家风格_1947202982187311106.json, 图片生成/文生图/KontextDEV女孩坐沙发_1938830456097792001.json, 图片生成/文生图/KontextDEV抱着黑猫的女孩_1938509637782011905.json, 图片生成/文生图/KontextDev转绘赛璐珞日漫风_1938493107786964994.json]
+members: [图片生成/图生图/Krea2 角色（四视图）_2091470849290362882.json, 图片生成/图生图/Krea2-edit-双图编辑_2076636562376454146.json, 图片生成/图生图/Krea2-turbo 角色四视图_2082484491444113410.json, 图片生成/图生图/krea2 服装转移 Outpaint_2079466311188566017.json, 图片生成/图生图/krea2_edit_single_ref_2076602213874626562.json, 图片生成/图生图/krea2_edit_two_ref_2076602231138377730.json, 图片生成/图生图/【API】Krea2-turbo角色四视图_2111986894732087298.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_37
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/线稿图转3d_1955066406536712194.json、图片生成/图生图/🦖恶搞之家风格_1947202982187311106.json、图片生成/文生图/KontextDEV女孩坐沙发_1938830456097792001.json、图片生成/文生图/KontextDEV抱着黑猫的女孩_1938509637782011905.json、图片生成/文生图/KontextDev转绘赛璐珞日漫风_1938493107786964994.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Krea2 角色（四视图）_2091470849290362882.json、图片生成/图生图/Krea2-edit-双图编辑_2076636562376454146.json、图片生成/图生图/Krea2-turbo 角色四视图_2082484491444113410.json、图片生成/图生图/krea2 服装转移 Outpaint_2079466311188566017.json、图片生成/图生图/krea2_edit_single_ref_2076602213874626562.json…）
 
 - **类型**：Image To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxKontextImageScale`
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `KSampler`
+- `Krea2EditGroundedEncode`
+- `Krea2EditModelPatch`
 - `LoadImage`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -36,37 +35,43 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 4/5 个有
-- `FluxGuidance` —— 4/5 个有
-- `RH_Translator` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `CLIPTextEncodeFlux` —— 1/5 个有
-- `ConstrainImage|pysssss` —— 1/5 个有
-- `EmptyLatentImage` —— 1/5 个有
-- `ImageConcanate` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
-- `ImageStitch` —— 1/5 个有
+- `EmptySD3LatentImage` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `ResolutionSelector` —— 3/7 个有
+- `EmptyImage` —— 2/7 个有
+- `ImageCompositeMasked` —— 2/7 个有
+- `ResizeImageMaskNode` —— 2/7 个有
+- `SolidMask` —— 2/7 个有
+- `CR Load LoRA` —— 1/7 个有
+- `EmptyLatentImage` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `PlaySound|pysssss` —— 1/7 个有
+- `RMBG` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 8 | 8 - 10 | 7 | 92% |
+| Prompt 约束强度(CFG) | 1 | 1 - 3 | 7 | 46% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 | 宽度 | 512 | - | 1 | 100% |
 | 高度 | 512 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 10，7 个样本，取值集中（一致性 92%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，7 个样本，取值分散，一致性仅 46%
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（12/7 个样本）：Steps较低可能导致细节不足

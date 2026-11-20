@@ -1,72 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_unet_56
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.931
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.822812
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, PrimitiveStringMultiline, SaveImage, TextGenerate, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen-rebalance文生图_1999689524483682305.json, 图片生成/文生图/QwenImage 8步 蒸馏加速工作流_1954589330377469954.json, 图片生成/文生图/QwenImage 8步 蒸馏加速工作流_2084844216345251842.json, 图片生成/文生图/QwenImage 8步 蒸馏加速工作流_2084906463855726594.json, 图片生成/文生图/QwenImage 8步 蒸馏加速工作流_2087826566675001345.json, 图片生成/文生图/QwenImage Comfyui官方工作流_1952820714467487746.json, 图片生成/文生图/QwenImage Comfyui官方工作流_1952877428207194113.json, 图片生成/文生图/QwenImage+8步+蒸馏加速工作流_2015669597445300226.json, 图片生成/文生图/QwenImage千问文生图4步加速放大工作流_1955919657263923201.json, 图片生成/文生图/Z-image Base Distilled蒸馏加速版_2019063606171668481.json, 图片生成/文生图/Z-image Tubro文生图工作流，没有AI味的模型！_2061058146243801090.json, 图片生成/文生图/Z-image 文生图_2017213414262710273.json, 图片生成/文生图/Zimage图片加速生成（Zimage Quick Text-to-Image Generatio）_2029019962836258817.json, 图片生成/文生图/工作流基础系列4-z image turbo文生图工作流-基础向讲解此工作流_2044389426284990466.json, 图片生成/文生图/组件系列6-Z-image-turbo文生图_2058749993380569090.json]
+members: [图片生成/文生图/Flux3-klein-文生图（提示词增强）_2111099390617280514.json, 图片生成/文生图/Flux3-klein指定位置精准生成_2111266792965496834.json, 图片生成/文生图/Moss-image-base+sft 双采工作流_2115046241439674369.json, 图片生成/文生图/Moss-image-base+sft 文生图_2115583706256728065.json, 图片生成/文生图/Moss_文生图高质量版_2115646850043834370.json, 图片生成/文生图/Moss文生图（超强写真）_2114978853327298561.json, 图片生成/文生图/flux3_image_klein文生图_2111012203712311297.json, 图片生成/文生图/啊癫 Moss融合模型工作流_2115083054036381698.json, 平台全量/Moss 文生图高质量版_2118184201668358145.json, 平台全量/Moss 文生图高质量版_2121117297598361601.json, 平台全量/Moss 文生图高质量版_2121124246729609218.json, 平台全量/Moss 文生图高质量版_2121127308588306433.json, 平台全量/Moss 文生图高质量版_2121132387185815554.json, 平台全量/Moss 文生图高质量版_2121137210794799105.json, 平台全量/Moss 文生图高质量版_2121138902982549506.json, 平台全量/Moss 文生图高质量版_2121169409900376065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_56
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/Qwen-rebalance文生图_1999689524483682305.json、图片生成/文生图/QwenImage 8步 蒸馏加速工作流_1954589330377469954.json、图片生成/文生图/QwenImage 8步 蒸馏加速工作流_2084844216345251842.json、图片生成/文生图/QwenImage 8步 蒸馏加速工作流_2084906463855726594.json、图片生成/文生图/QwenImage 8步 蒸馏加速工作流_2087826566675001345.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/Flux3-klein-文生图（提示词增强）_2111099390617280514.json、图片生成/文生图/Flux3-klein指定位置精准生成_2111266792965496834.json、图片生成/文生图/Moss-image-base+sft 双采工作流_2115046241439674369.json、图片生成/文生图/Moss-image-base+sft 文生图_2115583706256728065.json、图片生成/文生图/Moss_文生图高质量版_2115646850043834370.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 16 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
+- `EmptyFlux2LatentImage`
 - `KSampler`
+- `PrimitiveStringMultiline`
 - `SaveImage`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 14/15 个有
-- `LoraLoaderModelOnly` —— 13/15 个有
-- `ConditioningZeroOut` —— 12/15 个有
-- `PreviewImage` —— 6/15 个有
-- `CR Prompt Text` —— 4/15 个有
-- `easy promptList` —— 3/15 个有
-- `Seed (rgthree)` —— 2/15 个有
-- `CR Upscale Image` —— 1/15 个有
-- `EmptyZImageLatentImage //ZImagePowerNodes` —— 1/15 个有
-- `ImpactInt` —— 1/15 个有
-- `PrimitiveFloat` —— 1/15 个有
-- `StringFunction|pysssss` —— 1/15 个有
+- `ResolutionSelector` —— 15/16 个有
+- `MOSSMergePreset` —— 13/16 个有
+- `PreviewAny` —— 12/16 个有
+- `SkipLayerGuidanceDiTSimple` —— 12/16 个有
+- `PreviewImage` —— 3/16 个有
+- `CR Prompt Text` —— 2/16 个有
+- `ConditioningZeroOut` —— 2/16 个有
+- `easy showAnything` —— 2/16 个有
+- `Ideogram4PromptBuilderKJ` —— 1/16 个有
+- `JjkText` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 15 | 48% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 15 | 58% |
-| 采样算法 | euler | - | 15 | 73% |
-| 调度器 | simple | - | 15 | 93% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+| 采样步数 | 50 | 16 - 50 | 16 | 71% |
+| Prompt 约束强度(CFG) | 3 | 1 - 3 | 16 | 70% |
+| 采样算法 | euler | - | 16 | 100% |
+| 调度器 | simple | - | 16 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 11/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，15 个样本，取值分散，一致性仅 48%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，15 个样本
-- 采样算法 最常用 euler，15 个样本，一致性 73%
-- 调度器 最常用 simple，15 个样本，一致性 93%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 高发问题（11/15 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 50，观测区间 16 - 50，16 个样本
+- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 3，16 个样本
+- 采样算法 最常用 euler，16 个样本，一致性 100%
+- 调度器 最常用 simple，16 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）

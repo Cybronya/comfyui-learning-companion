@@ -1,74 +1,77 @@
 ---
 name: image_to_image_sampler_clip_vae_15
 type: Image To Image
-frequency: 13
+frequency: 17
 level: strong
-coverage: 0.985923
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, NunchakuFluxDiTLoader, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.761765
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Kontest 室内视角切换_1984511757903347714.json, 图片生成/图生图/KontextDev转绘Aaron Douglas风格_1940612072243884034.json, 图片生成/图生图/KontextDev转绘Aaron Limonick风格_1940989134209183745.json, 图片生成/图生图/KontextDev转绘Aaron Siskind风格_1941007183553445890.json, 图片生成/图生图/KontextNunchakuDev3D游戏动画_1942411012631105537.json, 图片生成/图生图/KontextNunchakuDevLora万物3D立体风格_1943136210699108354.json, 图片生成/图生图/KontextNunchakuDevLora万物加蓝色怪物_1943138415128821762.json, 图片生成/图生图/KontextNunchakuDevLora万物国画风格_1942785288521322498.json, 图片生成/图生图/KontextNunchakuDevLora万物毛毡_1943147438742134786.json, 图片生成/图生图/KontextNunchakuDevLora万物皮克斯风格_1944262455931338753.json, 图片生成/图生图/KontextNunchakuDevLora人物三视图_1944263357543120898.json, 图片生成/图生图/KontextNunchakuDevLora发光粒子素描风格_1943525207695126529.json, 图片生成/图生图/KontextNunchakuDevLora拍立得相片_1944265400445992961.json]
+members: [图片生成/图生图/Kontext图片去水印_2050191399424933890.json, 图片生成/图生图/Kontext开源版双图融合工作流_1941885913607913473.json, 图片生成/图生图/Kontext绘图-官方工作流（自用）_1938979258507124738.json, 图片生成/图生图/Nunchaku Kontext官方工作流 10秒采样_1939407471486353410.json, 图片生成/图生图/Nunchaku Kontext官方工作流 10秒采样_1939605911574913025.json, 图片生成/图生图/Nunchaku Kontext官方工作流 10秒采样_2033743444149014530.json, 图片生成/图生图/flux kontext dev编辑模型开源版本官方示例工作流_1938411062246969346.json, 图片生成/图生图/flux_1_kontext（5连拍生成图片）_1938980661526978561.json, 图片生成/图生图/kontext+nunchaku极速版工作流_1939455859959242754.json, 图片生成/图生图/kontext官方工作流[教学]_1999020387990130690.json, 图片生成/图生图/nunchaku-flux.1-kontext-dev_1939389707900076034.json, 图片生成/图生图/nunchaku加速-flux.1-kontext图片融合修改工作流【好奇漫步】_1970129650544484353.json, 图片生成/图生图/一切都改变了！Kontext Comfyui官方工作流，想干啥干啥_1938325635456761858.json, 图片生成/图生图/一键动漫化_2046111426502201345.json, 图片生成/图生图/想干啥干啥，一切都改变了！Kontext Comfyui官方工作流_2020760788851494913.json, 平台全量/Flux.1 Kontext改发色工作流_1938411358587387906.json, 平台全量/Kontext+lora工作流_1971431081390096386.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_vae_15
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Kontest 室内视角切换_1984511757903347714.json、图片生成/图生图/KontextDev转绘Aaron Douglas风格_1940612072243884034.json、图片生成/图生图/KontextDev转绘Aaron Limonick风格_1940989134209183745.json、图片生成/图生图/KontextDev转绘Aaron Siskind风格_1941007183553445890.json、图片生成/图生图/KontextNunchakuDev3D游戏动画_1942411012631105537.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Kontext图片去水印_2050191399424933890.json、图片生成/图生图/Kontext开源版双图融合工作流_1941885913607913473.json、图片生成/图生图/Kontext绘图-官方工作流（自用）_1938979258507124738.json、图片生成/图生图/Nunchaku Kontext官方工作流 10秒采样_1939407471486353410.json、图片生成/图生图/Nunchaku Kontext官方工作流 10秒采样_1939605911574913025.json…）
 
 - **类型**：Image To Image
-- **样本数**：13
+- **样本数**：17
 - **可信度**：强结论
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 17 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
-- `NunchakuFluxDiTLoader`
 - `ReferenceLatent`
-- `SaveImage`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 12/13 个有
-- `ModelSamplingFlux` —— 12/13 个有
-- `RH_Translator` —— 12/13 个有
-- `LoraLoaderModelOnly` —— 9/13 个有
-- `SDXLPromptStyler` —— 5/13 个有
-- `ArtistsImage_Zho` —— 4/13 个有
-- `EmptySD3LatentImage` —— 4/13 个有
-- `JoinStringMulti` —— 4/13 个有
-- `ShowText|pysssss` —— 2/13 个有
-- `CR Upscale Image` —— 1/13 个有
-- `GoogleTranslator` —— 1/13 个有
-- `ImageScaleToTotalPixels` —— 1/13 个有
-- `NunchakuFluxLoraLoader` —— 1/13 个有
+- `ImageStitch` —— 16/17 个有
+- `PreviewImage` —— 16/17 个有
+- `SaveImage` —— 16/17 个有
+- `EmptySD3LatentImage` —— 13/17 个有
+- `LoadImageOutput` —— 13/17 个有
+- `UNETLoader` —— 11/17 个有
+- `NunchakuFluxDiTLoader` —— 6/17 个有
+- `DeepTranslatorTextNode` —— 5/17 个有
+- `ImageResizeKJv2` —— 4/17 个有
+- `easy imageRemBg` —— 4/17 个有
+- `LoraLoaderModelOnly` —— 3/17 个有
+- `Label (rgthree)` —— 2/17 个有
+- `RH_Translator` —— 2/17 个有
+- `Bjornulf_ShowStringText` —— 1/17 个有
+- `CompressImages` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 13 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 69% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 采样步数 | 20 | 8 - 20 | 17 | 79% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 17 | 100% |
+| 采样算法 | euler | - | 17 | 100% |
+| 调度器 | simple | - | 17 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，13 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 69%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 8 - 20，17 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，17 个样本，一致性 100%
+- 调度器 最常用 simple，17 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）

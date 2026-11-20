@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 3
 level: moderate
 coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+common_nodes: [LoadImage, RunningHub_DreamFit_SD, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance 1.5 Pro 图生视频｜首尾帧视频｜支持1080P_2097528846127034369.json, 视频生成/图生视频/Seedance 2.0 Mini 图生视频｜首尾帧视频｜支持4K_2097599856180289537.json, 视频生成/图生视频/SeedanceV15ProImageToVideo_2038487746444009474.json]
+members: [图片生成/图生图/DreamFit 服装模特_1920840169744695297.json, 图片生成/图生图/DreamFit 节点服装参考图生成服装模特_1921200576476954625.json, 图片生成/文生图/DreamFit换装_1921093033519955970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1121
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance 1.5 Pro 图生视频｜首尾帧视频｜支持1080P_2097528846127034369.json、视频生成/图生视频/Seedance 2.0 Mini 图生视频｜首尾帧视频｜支持4K_2097599856180289537.json、视频生成/图生视频/SeedanceV15ProImageToVideo_2038487746444009474.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/DreamFit 服装模特_1920840169744695297.json、图片生成/图生图/DreamFit 节点服装参考图生成服装模特_1921200576476954625.json、图片生成/文生图/DreamFit换装_1921093033519955970.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -24,12 +24,11 @@ source: knowledge_consolidation
 
 全部 3 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
+- `RunningHub_DreamFit_SD`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 2/3 个有
-- `RH_SeedanceV15ProImageToVideo` —— 2/3 个有
-- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 1/3 个有
+- `Primitive string [Crystools]` —— 1/3 个有
 
 ## 典型参数
 

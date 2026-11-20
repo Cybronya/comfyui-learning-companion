@@ -1,33 +1,35 @@
 ---
 name: unknown_workflow_generic_89
 type: Unknown Workflow
-frequency: 16
+frequency: 18
 level: moderate
 coverage: 1
-common_nodes: [RH_RhartVideoSparkvideo20TextToVideo, SaveVideo]
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/最强视频模型2.0-文生视频模式_2038095061874909185.json, 数字人/数字人/Seedance2.0 4K长视频文生视频_2039876192307777537.json, 视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json, 视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json, 视频生成/文生视频/SK_txt2vid_2038875282374922242.json, 视频生成/文生视频/Seedance 2.0 文生视频_2095345675713208322.json, 视频生成/文生视频/Seedance2.0 文生视频_2046115442556674050.json, 视频生成/文生视频/Seedance2.0_文生视频_2037138846156066817.json, 视频生成/文生视频/Seedance2.0文生视频_2037013695364079618.json, 视频生成/文生视频/Seedance2.0文生视频_2037442624088449026.json, 视频生成/文生视频/Seedance2.0文生视频_2047295644854915074.json, 视频生成/文生视频/Seedance2.0文生视频测试_2089267259809296385.json, 视频生成/文生视频/Seedance2.0文生视频（RH版）_2054421287983951873.json, 视频生成/文生视频/Seedance2.0文生视频｜一句话生成大片 描述越细效果越惊艳_2105496532777787394.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051209250336198657.json, 视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051248121287593985.json]
+members: [图片生成/文生图/flux kontext 超强图像编辑_1930578598372233218.json, 图片生成/文生图/空白工作流_1943139855897681921.json, 平台全量/Flux.1 Kontext 场景物品人物一致性融合_1930805159054782466.json, 平台全量/Flux.1 Kontext 线稿上色_1930188277335363586.json, 平台全量/Flux.1 Kontext 超强换背景 主体保持不变_1930183321215733761.json, 平台全量/Flux.1 Kontext人物一致性姿势动作编辑_1930269620824084482.json, 平台全量/Flux.1 Kontext人物场景编辑_1930265198308003841.json, 平台全量/Flux.1 Kontext人物转线稿素描_1930807068930801665.json, 平台全量/Flux.1 Kontext平面转3D立体_1930661645993836546.json, 平台全量/Flux.1 Kontext表情编辑器_1930808708438405121.json, 平台全量/Kontext万物转像素风_1937046966599847937.json, 平台全量/Kontext万物转动漫_1937063349312196610.json, 平台全量/Kontext万物转简约扁平插画_1933940305353990146.json, 平台全量/Kontext万物转素描_1935614871751032833.json, 平台全量/Kontext万物转黑白漫画风格_1935325347690762241.json, 平台全量/Kontext平面转3d_1932123038739759105.json, 平台全量/Kontext提取线稿_1936743372113498113.json, 平台全量/Kontext生成三视图_1936704207359741953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_89
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/最强视频模型2.0-文生视频模式_2038095061874909185.json、数字人/数字人/Seedance2.0 4K长视频文生视频_2039876192307777537.json、视频生成/文生视频/RH超能视频 文生视频_2037433860853600257.json、视频生成/文生视频/RhartVideoSparkvideo20TextToVideo_2038486864415432706.json、视频生成/文生视频/SK_txt2vid_2038875282374922242.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/flux kontext 超强图像编辑_1930578598372233218.json、图片生成/文生图/空白工作流_1943139855897681921.json、平台全量/Flux.1 Kontext 场景物品人物一致性融合_1930805159054782466.json、平台全量/Flux.1 Kontext 线稿上色_1930188277335363586.json、平台全量/Flux.1 Kontext 超强换背景 主体保持不变_1930183321215733761.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：18
 - **可信度**：中等可信
 - **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `RH_RhartVideoSparkvideo20TextToVideo`
-- `SaveVideo`
+全部 18 个 workflow 都包含：
+- `LoadImage`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/16 个有
+- `Image Stitch` —— 1/18 个有
+- `ttN imageREMBG` —— 1/18 个有
 
 ## 典型参数
 

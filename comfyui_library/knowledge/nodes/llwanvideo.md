@@ -40,7 +40,7 @@ Video
 
 常见取值：
 
-- `["模特讲解产品", "happyhorse-1.1-r2v", "sk-Tqx2fXCyvvWhuWGWn5BvHT5rKLFBTibNZ3pwq4JDItKHVwEH", "720P", "9:16", "5", "reference"`（1 次）
+- `["模特讲解产品", "happyhorse-1.1-r2v", "REDACTED0000000000000000000000000000000000000000000", "720P", "9:16", "5", "reference"`（1 次）
 
 ## 可信度
 

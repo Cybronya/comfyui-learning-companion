@@ -37,7 +37,7 @@ Prompt
 
 常见取值：
 
-- `["Other", "https://wish.sillydream.top/v1/chat/completions", "sk-T98PjCXtAneAFwqDCNltikL5aFH0XViTDj1klNPLpXM1gtWE", "「XJ`（1 次）
+- `["Other", "https://wish.sillydream.top/v1/chat/completions", "REDACTED0000000000000000000000000000000000000000000", "「XJ`（1 次）
 
 ## 可信度
 

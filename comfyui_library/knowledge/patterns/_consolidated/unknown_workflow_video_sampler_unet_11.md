@@ -1,61 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_unet_11
 type: Unknown Workflow
-frequency: 23
+frequency: 27
 level: moderate
-coverage: 0.885652
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.651185
+common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
 problems: []
 missing: []
-members: [视频生成/图生视频/MInimaxH3首尾帧1_2086377818845433858.json, 视频生成/图生视频/MInimaxH3首尾帧_2086392988384710658.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2084559724980297729.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2087776020891000833.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T2_2084572905849057281.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2084592731342594049.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2099779886431952898.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2100039671811235841.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T4_2084592720953303042.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T5_2084645120611278849.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T6_2084645112528859137.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T6_2084670389682270209.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T7_2084693256843128834.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T8_2084703777696866306.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085923821353263105.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085945362610741250.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085968737643098113.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2086378020520153090.json, 视频生成/图生视频/MInimaxH3首尾帧生成视频_2085616709708378113.json, 视频生成/图生视频/MInimaxH3首尾帧电商广告图_2086285454638411777.json, 视频生成/图生视频/MinimaxH3图生视频可指定音乐_2086761878126157826.json, 视频生成/图生视频/minimaxH3人物变化转场_2085374527827169281.json, 视频生成/图生视频/首尾帧图生视频_2086841278280589314.json]
+members: ["图片生成/图生图/H3+_Audio-Driven_Digital_Humans_That_Speak,_Sing_2114193017149153282.json", "图片生成/图生图/H3+_Audio-Driven_Digital_Humans_That_Speak,_Sing_2115257335106068481.json", 平台全量/Pika极速音频驱动【西海岸大仙】_2119041606014820354.json, "数字人/数字人/H3+ Audio-Driven Digital Humans That Speak, Sing_2111625654700695553.json", 数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2092293218867179521.json, 数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2096583276864561153.json, 数字人/数字人/MiniMaxH3_音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2113768615332896769.json, 数字人/数字人/MiniMaxH3_音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2113783062113898498.json, 数字人/数字人/二创专用：音色模仿文字驱动数字人_2110924437032886274.json, 视频生成/图生视频/Audio-Driven Digital Characters音频驱动数字人说话唱歌对口型_2098213691744407554.json, 视频生成/图生视频/Image-to-Video 音频驱动+数字人_2093871304574332930.json, 视频生成/图生视频/MiniMaxH3 视频提取音频驱动数字人说话唱歌对口型！加速版！_2094060663554531330.json, 视频生成/图生视频/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！_2093568717039955969.json, 视频生成/图生视频/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2084875071205761025.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2084968975238262785.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2084996614002921473.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2086788983148859393.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2090405103944683522.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2090421468608946177.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2093316488181673986.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2094746665759629313.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2094757190883176450.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2105254839331680258.json, 视频生成/图生视频/MiniMaxH3开源版 音频驱动数字人说话唱歌对口型MV生成 加速版_2105266413794578434.json, 视频生成/图生视频/MiniMaxH3音频驱动+数字人说话唱歌对口型！加速版+_2086656794096660481.json, 视频生成/图生视频/加速版MiniMaxH3—音频驱动数字人说话唱歌对口型！_2090343540776853506.json, 视频生成/图生视频/音频驱动 MiniMaxH3数字人说话唱歌对口型！加速版_2085186020986941441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_11
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/MInimaxH3首尾帧1_2086377818845433858.json、视频生成/图生视频/MInimaxH3首尾帧_2086392988384710658.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2084559724980297729.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2087776020891000833.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T2_2084572905849057281.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/H3+_Audio-Driven_Digital_Humans_That_Speak,_Sing_2114193017149153282.json、图片生成/图生图/H3+_Audio-Driven_Digital_Humans_That_Speak,_Sing_2115257335106068481.json、平台全量/Pika极速音频驱动【西海岸大仙】_2119041606014820354.json、数字人/数字人/H3+ Audio-Driven Digital Humans That Speak, Sing_2111625654700695553.json、数字人/数字人/MiniMaxH3 音频驱动数字人说话唱歌对口型！加速版！艾橘溪_2092293218867179521.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：27
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
+全部 27 个 workflow 都包含：
+- `AudioCrop`
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `GetNode`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3ReferenceToVideo`
 - `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `Text`
+- `SetNode`
+- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 22/23 个有
-- `RHHiddenNodes` —— 19/23 个有
-- `easy showAnything` —— 16/23 个有
-- `RH_Captioner` —— 6/23 个有
-- `TextConcatenate_UTK` —— 4/23 个有
-- `1hew_AudioDuration` —— 3/23 个有
-- `AudioMerge` —— 3/23 个有
-- `Bjornulf_ShowFloat` —— 3/23 个有
-- `LoadVideoUI` —— 3/23 个有
-- `SaveVideoRGBA` —— 3/23 个有
-- `PreviewAudio` —— 2/23 个有
-- `MiniMaxH3BlockCacheT8` —— 1/23 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/23 个有
-- `RH_Translator` —— 1/23 个有
+- `Any To String (mtb)` —— 26/27 个有
+- `ImageResizeKJv2` —— 26/27 个有
+- `LoadAudio` —— 26/27 个有
+- `PreviewAudio` —— 26/27 个有
+- `PreviewImage` —— 26/27 个有
+- `PrimitiveInt` —— 26/27 个有
+- `PathchSageAttentionKJ` —— 18/27 个有
+- `AILab_QwenVL` —— 16/27 个有
+- `JjkText` —— 16/27 个有
+- `JoinStrings` —— 16/27 个有
+- `LoraLoaderModelOnly` —— 14/27 个有
+- `AudioSeparation` —— 13/27 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/27 个有
+- `EasyCache` —— 3/27 个有
+- `EmptyImage` —— 2/27 个有
+- `1hew_AudioDuration` —— 1/27 个有
+- `IndexTTS2Run` —— 1/27 个有
+- `ModelAttentionBackend` —— 1/27 个有
+- `ResolutionSelector` —— 1/27 个有
+- `VHS_LoadVideo` —— 1/27 个有
 
 ## 典型参数
 

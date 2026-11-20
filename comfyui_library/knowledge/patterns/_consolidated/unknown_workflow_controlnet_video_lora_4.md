@@ -1,92 +1,89 @@
 ---
 name: unknown_workflow_controlnet_video_lora_4
 type: Unknown Workflow
-frequency: 12
+frequency: 17
 level: moderate
-coverage: 0.707583
-common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
+coverage: 0.833235
+common_nodes: [AudioSeparation, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, ImageResizeKJv2, ImpactInt, JWInteger, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/02.16gSCAIL多人_2002262972904947714.json, 视频生成/图生视频/044-SCAIL动作迁移3.0-适配各种风格-单双人均可25-12-16_2000835179973406721.json, 视频生成/图生视频/12号特工：保留原图场景+SCAIL动作迁移_2026286261522141186.json, 视频生成/图生视频/251220001.01.16gSCAIL单人_2002263013321261058.json, 视频生成/图生视频/251220001.03.SCAIL双角色超动态动作迁移_2002262953242030082.json, 视频生成/图生视频/AI图片跳舞!美女跳舞=SCAIL动作模仿=艾橘溪_2000571970808934401.json, 视频生成/图生视频/AI图片跳舞!美女跳舞=动作模仿_2019605218685624321.json, 视频生成/图生视频/AI图片跳舞！SCAIL姿势转移动作模仿_2019643173101903873.json, 视频生成/图生视频/Ai动物跳舞：Scail图片跳舞工作流_2036758720331386881.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，单人 动物跳舞 竖屏模式_2048613644405055490.json, 视频生成/图生视频/SCAIL大模型：一键生成单人 动物跳舞 动作迁移 视频竖屏模式版_2082798681614544897.json, 视频生成/图生视频/SCAIL大模型：一键生成单人 动物跳舞视频竖屏模式版_2068653827720572930.json]
+members: [平台全量/Wan-Animate_视频动作迁移到参考图-B站UP主@好奇漫步_2003755593414418433.json, 平台全量/animate动作迁移，口型保持，镜头控制_1995745340076724226.json, 平台全量/带劲抖解压版~跟着视频跳舞-色彩保持不变~V3_2027094482008674306.json, 平台全量/开源最强人物姿态迁移Animate V2【原图背景】_1977712629550567425.json, 数字人/数字人/人物姿势迁移_1999053777653071873.json, 视频生成/图生视频/Animate-原图背景版-人物姿态迁移V2_1987930419398119426.json, 视频生成/图生视频/Animate-原图背景版-人物姿态迁移V2_2015387238657433602.json, 视频生成/图生视频/Animate-原图背景版-人物姿态迁移V2_2026954923237183490.json, 视频生成/图生视频/WAN 2.2 Animate人物姿态迁移（720P+30帧+9：16+）_1992946454725672962.json, 视频生成/图生视频/Wan2.2 Animate带口型+运镜动作迁移（图片跳舞）_1981708814372225026.json, 视频生成/图生视频/Wan2.2 最强效果Animate 视频人物姿态迁移V2升级版(保留原图背景）15S稳如老狗_1980606139123585025.json, 视频生成/图生视频/【推荐】Animate-原图背景版-人物姿态迁移V2_2009584371598102530.json, 视频生成/图生视频/人物姿态迁移V2 原图背景_1979145028213837826.json, 视频生成/图生视频/动作迁移老11_2015053987497648129.json, 视频生成/图生视频/带劲抖~Animate-原图背景版-人物姿态迁移V2_2041179422866284546.json, 视频生成/图生视频/🤩Animate最强王炸—人物姿态迁移V2【原图背景】🤩_1975078330166849538.json, 视频生成/图生视频/🤩Animate最强王炸—人物姿态迁移【原图背景】_1969605920248504321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_4
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/02.16gSCAIL多人_2002262972904947714.json、视频生成/图生视频/044-SCAIL动作迁移3.0-适配各种风格-单双人均可25-12-16_2000835179973406721.json、视频生成/图生视频/12号特工：保留原图场景+SCAIL动作迁移_2026286261522141186.json、视频生成/图生视频/251220001.01.16gSCAIL单人_2002263013321261058.json、视频生成/图生视频/251220001.03.SCAIL双角色超动态动作迁移_2002262953242030082.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（平台全量/Wan-Animate_视频动作迁移到参考图-B站UP主@好奇漫步_2003755593414418433.json、平台全量/animate动作迁移，口型保持，镜头控制_1995745340076724226.json、平台全量/带劲抖解压版~跟着视频跳舞-色彩保持不变~V3_2027094482008674306.json、平台全量/开源最强人物姿态迁移Animate V2【原图背景】_1977712629550567425.json、数字人/数字人/人物姿势迁移_1999053777653071873.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 17 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DownloadAndLoadNLFModel`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
+- `Fast Groups Bypasser (rgthree)`
 - `GetImageSizeAndCount`
-- `GetNode`
 - `ImageResizeKJv2`
+- `ImpactInt`
+- `JWInteger`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `RenderNLFPoses`
-- `SetNode`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 11/12 个有
-- `Float to Int` —— 8/12 个有
-- `PrimitiveFloat` —— 8/12 个有
-- `PrimitiveInt` —— 8/12 个有
-- `easy cleanGpuUsed` —— 8/12 个有
-- `FloatConstant` —— 4/12 个有
-- `ImageConcatMulti` —— 4/12 个有
-- `JjkText` —— 4/12 个有
-- `WanVideoTorchCompileSettings` —— 3/12 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 2/12 个有
-- `DWPreprocessor` —— 2/12 个有
-- `CR Text` —— 1/12 个有
-- `Fast Bypasser (rgthree)` —— 1/12 个有
-- `GetImageSizeRatio` —— 1/12 个有
-- `INPAINT_InpaintWithModel` —— 1/12 个有
-- `INPAINT_LoadInpaintModel` —— 1/12 个有
-- `ImageFromBatch+` —— 1/12 个有
-- `ImagePadForOutpaint` —— 1/12 个有
-- `ImageResize+` —— 1/12 个有
-- `ImageToMask` —— 1/12 个有
-- `Int` —— 1/12 个有
-- `Mask Invert` —— 1/12 个有
-- `MaskToImage` —— 1/12 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `SolidMask` —— 1/12 个有
-- `TextInput_` —— 1/12 个有
-- `easy int` —— 1/12 个有
+- `GetNode` —— 16/17 个有
+- `LayerUtility: PurgeVRAM` —— 16/17 个有
+- `SetNode` —— 16/17 个有
+- `DrawViTPose` —— 14/17 个有
+- `OnnxDetectionModelLoader` —— 14/17 个有
+- `PoseAndFaceDetection` —— 14/17 个有
+- `ImageConcatMulti` —— 10/17 个有
+- `WanVideoLoraSelect` —— 7/17 个有
+- `TT_img_enc_v2` —— 4/17 个有
+- `FaceMaskFromPoseKeypoints` —— 3/17 个有
+- `ImageCropByMaskAndResize` —— 3/17 个有
+- `PixelPerfectResolution` —— 3/17 个有
+- `SaveImage` —— 3/17 个有
+- `DWPreprocessor` —— 2/17 个有
+- `DuckHideNode` —— 2/17 个有
+- `Note Plus (mtb)` —— 2/17 个有
+- `PreviewImage` —— 2/17 个有
+- `ColorMatch` —— 1/17 个有
+- `Image Resize To Width` —— 1/17 个有
+- `ImageMirror` —— 1/17 个有
+- `ImpactSwitch` —— 1/17 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/17 个有
+- `LoadAudio` —— 1/17 个有
+- `RHHiddenNodes` —— 1/17 个有
+- `SimpleCondition+` —— 1/17 个有
+- `WanVideoContextOptions` —— 1/17 个有
+- `easy float` —— 1/17 个有
+- `easy showAnything` —— 1/17 个有
 
 ## 典型参数
 

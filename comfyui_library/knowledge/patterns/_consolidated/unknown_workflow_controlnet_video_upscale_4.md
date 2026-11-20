@@ -3,75 +3,84 @@ name: unknown_workflow_controlnet_video_upscale_4
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.548
-common_nodes: [AIO_Preprocessor, CR Upscale Image, DWPreprocessor, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJ, ImageSmartSharpen+, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, MyOpenPoseNode, OpenposePreprocessor, PreviewImage, ReActorFaceSwap, ReActorRestoreFace, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEasyCache, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFreeInitArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoRealisDanceLatents, WanVideoSLG, WanVideoSampler, WanVideoSetRadialAttention, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoUniAnimatePoseInput, WanVideoVAELoader, easy showAnything]
+coverage: 0.556
+common_nodes: [Any Switch (rgthree), BlockifyMask, CLIPVisionLoader, CR Prompt Text, DWPreprocessor, Display Int (rgthree), DownloadAndLoadSAM2Model, DrawMaskOnImage, EmptyImage, FaceMaskFromPoseKeypoints, Fast Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Muter (rgthree), Get resolution [Crystools], GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, ImageUpscaleWithModelBatched, ImpactInt, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mute / Bypass Repeater (rgthree), PixelPerfectResolution, PointsEditor, PreviewAny, PreviewImage, PrimitiveStringMultiline, RIFE VFI, RepeatImageBatch, Sam2Segmentation, Seed (rgthree), SetNode, Upscale Model Loader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy compare, easy ifElse, easy imageCount]
 problems: []
 missing: []
-members: [视频生成/图生视频/🈚️UniAnimate+u3c-Lightx2v-432帧伪HD版-转绘_跳舞_动作迁移-Wan_1947729409547583489.json, 视频生成/图生视频/🈚️UniAnimate-4步加速-姿势转绘_跳舞_动作迁移-Wan_1933449210870308865.json]
+members: [平台全量/视频换衣_1980654820577202177.json, 视频生成/图生视频/视频换衣-邻家AI大女孩_2041747126299926529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_upscale_4
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/🈚️UniAnimate+u3c-Lightx2v-432帧伪HD版-转绘_跳舞_动作迁移-Wan_1947729409547583489.json、视频生成/图生视频/🈚️UniAnimate-4步加速-姿势转绘_跳舞_动作迁移-Wan_1933449210870308865.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/视频换衣_1980654820577202177.json、视频生成/图生视频/视频换衣-邻家AI大女孩_2041747126299926529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `CR Upscale Image`
+- `Any Switch (rgthree)`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
 - `DWPreprocessor`
-- `DownloadAndLoadWav2VecModel`
+- `Display Int (rgthree)`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `EmptyImage`
+- `FaceMaskFromPoseKeypoints`
+- `Fast Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Muter (rgthree)`
+- `Get resolution [Crystools]`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageResizeKJ`
-- `ImageSmartSharpen+`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
+- `ImageUpscaleWithModelBatched`
+- `ImpactInt`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: SegmentAnythingUltra V3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkWav2VecEmbeds`
-- `MyOpenPoseNode`
-- `OpenposePreprocessor`
+- `Mute / Bypass Repeater (rgthree)`
+- `PixelPerfectResolution`
+- `PointsEditor`
+- `PreviewAny`
 - `PreviewImage`
-- `ReActorFaceSwap`
-- `ReActorRestoreFace`
+- `PrimitiveStringMultiline`
+- `RIFE VFI`
+- `RepeatImageBatch`
+- `Sam2Segmentation`
+- `Seed (rgthree)`
 - `SetNode`
+- `Upscale Model Loader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
 - `WanVideoEncode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoFreeInitArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoRealisDanceLatents`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetRadialAttention`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
-- `WanVideoUniAnimatePoseInput`
 - `WanVideoVAELoader`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `Manual XY Entry Info` —— 1/2 个有
-- `RIFE VFI` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy imageListToImageBatch` —— 1/2 个有
+- `easy compare`
+- `easy ifElse`
+- `easy imageCount`
 
 ## 典型参数
 

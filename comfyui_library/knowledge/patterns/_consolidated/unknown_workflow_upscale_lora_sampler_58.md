@@ -1,78 +1,81 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_58
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.841667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Latent Batch Size, CR Text, CR Text Concatenate, DualCLIPLoader, Fast Groups Bypasser (rgthree), FluxGuidance, Image Comparer (rgthree), ImageListToImageBatch, ImageScaleBy, ImageUpscaleWithModel, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, MathExpression|pysssss, PrimitiveBoolean, RH_Captioner, RH_Prompter, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, Text Multiline, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy float, easy ifElse, easy imageBatchToImageList, easy imageSize, easy int]
+frequency: 4
+level: moderate
+coverage: 0.602
+common_nodes: [AddMask, CLIPLoader, CR Image Input Switch (4 way), CR String To Number, CR Text Replace, GetImageSize, GetNode, GoohaiUniversalSlider, GrowMaskWithBlur, Image Comparer (rgthree), Image Overlay, ImageNoiseAugmentation, ImageScale, ImageUpscaleWithModel, Int, JjkText, KSamplerSelect, KuwaharaBlur, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, Mask Switch (JPS), PreviewImage, QwenImage21Cache, SamplerCustom, SaveImage, SetNode, SomethingToString, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, Text Concatenate (JPS), TextEncodeQwenImage21, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch, easy int, easy sam3ImageSegmentation, easy sam3ModelLoader, easy showAnything, 孤海注释, 忽略多组孤海]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1951155305814142977.json, 图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1951568183708864514.json, 图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1961386334780854273.json]
+members: [图片生成/图生图/qwen 2.1 高清修复放大 +TTP 高清无损放大 TTP分块放大 4k超清放大_2110176284570644482.json, 视频生成/图生视频/qwen_2.1_高清修复放大_+TTP_高清无损放大_TTP分块放大_4k超清放大_2115299983376343042.json, 视频生成/图生视频/qwen_2.1_高清修复放大_+TTP_高清无损放大_TTP分块放大_4k超清放大_2115308966317223937.json, 视频生成/图生视频/qwen_2.1_高清修复放大_+TTP_高清无损放大_TTP分块放大_4k超清放大_2115598398555508737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_58
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1951155305814142977.json、图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1951568183708864514.json、图片生成/图生图/FLUX Krea 去ai感洗图+高清放大_1961386334780854273.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/qwen 2.1 高清修复放大 +TTP 高清无损放大 TTP分块放大 4k超清放大_2110176284570644482.json、视频生成/图生视频/qwen_2.1_高清修复放大_+TTP_高清无损放大_TTP分块放大_4k超清放大_2115299983376343042.json、视频生成/图生视频/qwen_2.1_高清修复放大_+TTP_高清无损放大_TTP分块放大_4k超清放大_2115308966317223937.json、视频生成/图生视频/qwen_2.1_高清修复放大_+TTP_高清无损放大_TTP分块放大_4k超清放大_2115598398555508737.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `CR Latent Batch Size`
-- `CR Text`
-- `CR Text Concatenate`
-- `DualCLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
+全部 4 个 workflow 都包含：
+- `AddMask`
+- `CLIPLoader`
+- `CR Image Input Switch (4 way)`
+- `CR String To Number`
+- `CR Text Replace`
+- `GetImageSize`
+- `GetNode`
+- `GoohaiUniversalSlider`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
-- `ImageListToImageBatch`
-- `ImageScaleBy`
+- `Image Overlay`
+- `ImageNoiseAugmentation`
+- `ImageScale`
 - `ImageUpscaleWithModel`
 - `Int`
+- `JjkText`
 - `KSamplerSelect`
+- `KuwaharaBlur`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoader`
-- `MathExpression|pysssss`
-- `PrimitiveBoolean`
-- `RH_Captioner`
-- `RH_Prompter`
-- `RH_Translator`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `Mask Switch (JPS)`
+- `PreviewImage`
+- `QwenImage21Cache`
+- `SamplerCustom`
 - `SaveImage`
-- `ShowText|pysssss`
+- `SetNode`
+- `SomethingToString`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
-- `Text Multiline`
+- `Text Concatenate (JPS)`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy float`
-- `easy ifElse`
 - `easy imageBatchToImageList`
-- `easy imageSize`
+- `easy imageColorMatch`
+- `easy imageListToImageBatch`
 - `easy int`
+- `easy sam3ImageSegmentation`
+- `easy sam3ModelLoader`
+- `easy showAnything`
+- `孤海注释`
+- `忽略多组孤海`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.6 | 0.6 - 0.6 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -80,5 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.6，观测区间 0.6 - 0.6，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

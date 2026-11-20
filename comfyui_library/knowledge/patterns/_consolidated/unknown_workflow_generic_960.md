@@ -1,42 +1,43 @@
 ---
 name: unknown_workflow_generic_960
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.846
-common_nodes: [CR Prompt Text, Comfly_api_set, GoogleTranslateTextNode, ImageConcanate, LoadImage, Note _O, PDIMAGE_LongerSize, PMRF, SaveImage, easy showAnything]
+coverage: 0.929
+common_nodes: [ImageGridSplitNode, Int, LoadImage, SaveImage, easy imageInsetCrop, easy imagesSplitImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux-Kontext图像编辑V4（API 3折版）_1928395662449065986.json, 图片生成/图生图/森系绿圆API_1942827456606703618.json, 图片生成/图生图/透明绿圆API_1942832550396276737.json]
+members: [平台全量/4宫格拆分-单图_2075133888946597889.json, 平台全量/沙发产品裂变【4宫格】_2072976232412696577.json, 平台全量/沙发产品裂变【9宫格】_2072982756262502401.json, 平台全量/电商模特制作 与 多图裂变 【合集】_2074835406771802113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_960
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux-Kontext图像编辑V4（API 3折版）_1928395662449065986.json、图片生成/图生图/森系绿圆API_1942827456606703618.json、图片生成/图生图/透明绿圆API_1942832550396276737.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/4宫格拆分-单图_2075133888946597889.json、平台全量/沙发产品裂变【4宫格】_2072976232412696577.json、平台全量/沙发产品裂变【9宫格】_2072982756262502401.json、平台全量/电商模特制作 与 多图裂变 【合集】_2074835406771802113.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `GoogleTranslateTextNode`
-- `ImageConcanate`
+全部 4 个 workflow 都包含：
+- `ImageGridSplitNode`
+- `Int`
 - `LoadImage`
-- `Note _O`
-- `PDIMAGE_LongerSize`
-- `PMRF`
 - `SaveImage`
-- `easy showAnything`
+- `easy imageInsetCrop`
+- `easy imagesSplitImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_Flux_Kontext_Edit` —— 2/3 个有
-- `Comfly_Flux_Kontext` —— 1/3 个有
+- `JjkText` —— 3/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
+- `RH_RhartImageG2ImageToImage` —— 2/4 个有
+- `Fast Bypasser (rgthree)` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/4 个有
+- `MuyeTextEditOutput` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,76 +1,92 @@
 ---
 name: unknown_workflow_lora_sampler_clip_98
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.6328
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, DualCLIPLoader, FlipSigmas, FluxDeGuidance, GetNode, INTConstant, ImageConcatMulti, ImageScale, InFluxModelSamplingPred, LoadImage, LoraLoaderModelOnly, OutFluxModelSamplingPred, PreviewImage, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 7
+level: strong
+coverage: 0.671857
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXSequencer, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LazySwitchKJ, LoraLoaderModelOnly, MultiImageLoader, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeTiled, VAELoaderKJ]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX逆采样图像_1850813965826748417.json, 图片生成/图生图/RF-Edit风格转绘-上传一张图片，生成漫画风格，哈哈，意想不到的效果~_2018160574168829953.json, 图片生成/图生图/RF-Edit风格转绘_1897148571110776833.json, 图片生成/图生图/宠物一键转绘工作流_1899681982450941953.json, 图片生成/文生图/fluxtopaz RF inverse + controlnet_1958569814094725122.json]
+members: [视频生成/图生视频/LTX2.3 I2V 多图生视频（2采）_2059948094514618369.json, 视频生成/图生视频/LTX2.3 I2V多图生视频（3采）_2059920310899662850.json, 视频生成/图生视频/LTX2.3+I2V+多图+自定义音频工作流（2采）_2059193500587094017.json, 视频生成/图生视频/Ltx2.3-Multi Image-自定义语音-图生视频_2063202881095954433.json, 视频生成/图生视频/视频生成-自定义配音_2059401786028544001.json, 视频生成/图生视频/音乐mv生产力版自用_2075878057012977666.json, 视频生成/文生视频/LTX I2V 多图生视频_2059954460599865345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_98
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX逆采样图像_1850813965826748417.json、图片生成/图生图/RF-Edit风格转绘-上传一张图片，生成漫画风格，哈哈，意想不到的效果~_2018160574168829953.json、图片生成/图生图/RF-Edit风格转绘_1897148571110776833.json、图片生成/图生图/宠物一键转绘工作流_1899681982450941953.json、图片生成/文生图/fluxtopaz RF inverse + controlnet_1958569814094725122.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 I2V 多图生视频（2采）_2059948094514618369.json、视频生成/图生视频/LTX2.3 I2V多图生视频（3采）_2059920310899662850.json、视频生成/图生视频/LTX2.3+I2V+多图+自定义音频工作流（2采）_2059193500587094017.json、视频生成/图生视频/Ltx2.3-Multi Image-自定义语音-图生视频_2063202881095954433.json、视频生成/图生视频/视频生成-自定义配音_2059401786028544001.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
+全部 7 个 workflow 都包含：
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `DisableNoise`
-- `DualCLIPLoader`
-- `FlipSigmas`
-- `FluxDeGuidance`
-- `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageScale`
-- `InFluxModelSamplingPred`
-- `LoadImage`
+- `CheckpointLoaderSimple`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXAVTextEncoderLoader`
+- `LTXSequencer`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LazySwitchKJ`
 - `LoraLoaderModelOnly`
-- `OutFluxModelSamplingPred`
-- `PreviewImage`
+- `MultiImageLoader`
+- `PrimitiveBoolean`
+- `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `SetNode`
-- `UNETLoader`
+- `SaveVideo`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ConfigureModifiedFlux` —— 3/5 个有
-- `FlowEditForwardSampler` —— 3/5 个有
-- `FlowEditReverseSampler` —— 3/5 个有
-- `Get Image Size` —— 3/5 个有
-- `LayerMask: LoadFlorence2Model` —— 3/5 个有
-- `LayerUtility: Florence2Image2Prompt` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `PrepareAttnBank` —— 3/5 个有
-- `StringFunction|pysssss` —— 3/5 个有
-- `FluxForwardODESampler` —— 2/5 个有
-- `FluxReverseODESampler` —— 2/5 个有
-- `AIO_Preprocessor` —— 1/5 个有
-- `ControlNetLoader` —— 1/5 个有
-- `FluxUnionControlNetApply` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
+- `GetNode` —— 6/7 个有
+- `ImageScaleBy` —— 6/7 个有
+- `Int` —— 6/7 个有
+- `LTXVLatentUpsampler` —— 6/7 个有
+- `LatentUpscaleModelLoader` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `PrimitiveInt` —— 5/7 个有
+- `CM_IntToFloat` —— 4/7 个有
+- `ConditioningZeroOut` —— 4/7 个有
+- `LTXVAudioVAEEncode` —— 4/7 个有
+- `LoadAudioUI` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `SetLatentNoiseMask` —— 4/7 个有
+- `SolidMask` —— 4/7 个有
+- `easy mathInt` —— 4/7 个有
+- `MathExpression|pysssss` —— 3/7 个有
+- `Text` —— 3/7 个有
+- `Float to Int` —— 2/7 个有
+- `PrimitiveFloat` —— 2/7 个有
+- `DF_Int_to_Float` —— 1/7 个有
+- `LTXVChunkFeedForward` —— 1/7 个有
+- `LoadImage` —— 1/7 个有
+- `ModelPatchTorchSettings` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `easy getNode` —— 1/7 个有
+- `easy imageInsetCrop` —— 1/7 个有
+- `easy setNode` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | canny | - | 1 | 100% |
+| 宽度 | 1 | 1 - 1 | 7 | 100% |
+| 高度 | 24 | 24 - 24 | 7 | 100% |
 
 ## 常见问题
 
@@ -78,4 +94,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，7 个样本，取值集中（一致性 100%）

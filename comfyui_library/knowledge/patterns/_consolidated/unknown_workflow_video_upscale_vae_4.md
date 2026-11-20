@@ -1,43 +1,47 @@
 ---
 name: unknown_workflow_video_upscale_vae_4
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8535
-common_nodes: [FlashVSRNode, GetImageRangeFromBatch, Image Comparer (rgthree), Int, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+frequency: 6
+level: moderate
+coverage: 0.876667
+common_nodes: [DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), GIMMVFI_interpolate, Image Comparer (rgthree), LoadImage, PlaySound|pysssss, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded]
 problems: []
 missing: []
-members: [图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105122701890375682.json, 图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105499952859402242.json]
+members: [图片生成/图生图/图像高清放大+视频超分+视频插帧 (3合1)_2077936075250688001.json, 平台全量/SeedVR2 图片+视频 二合一 4K无损高清放大工作流_2076611423555383297.json, 平台全量/SeedVR2 图片+视频 二合一 4K无损高清放大工作流_2076621984909316097.json, 平台全量/SeedVR2 图片+视频 二合一 4K无损高清放大工作流_2081544033519882242.json, 平台全量/SeedVR2 图片+视频 二合一 4K无损高清放大工作流_2086619546710003713.json, 平台全量/SeedVR2-V2（图片、视频高清放大）_2056332817407242241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105122701890375682.json、图片生成/图生图/Flash_VSR_&_SeedVR2.5-视频超分辨率-视频放大_2105499952859402242.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/图像高清放大+视频超分+视频插帧 (3合1)_2077936075250688001.json、平台全量/SeedVR2 图片+视频 二合一 4K无损高清放大工作流_2076611423555383297.json、平台全量/SeedVR2 图片+视频 二合一 4K无损高清放大工作流_2076621984909316097.json、平台全量/SeedVR2 图片+视频 二合一 4K无损高清放大工作流_2081544033519882242.json、平台全量/SeedVR2 图片+视频 二合一 4K无损高清放大工作流_2086619546710003713.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `FlashVSRNode`
-- `GetImageRangeFromBatch`
+全部 6 个 workflow 都包含：
+- `DownloadAndLoadGIMMVFIModel`
+- `Fast Groups Bypasser (rgthree)`
+- `GIMMVFI_interpolate`
 - `Image Comparer (rgthree)`
-- `Int`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
+- `PlaySound|pysssss`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `VHS_VideoInfoLoaded`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageScaleBy` —— 5/6 个有
+- `孤海注释` —— 2/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
 
 ## 典型参数
 
@@ -49,4 +53,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

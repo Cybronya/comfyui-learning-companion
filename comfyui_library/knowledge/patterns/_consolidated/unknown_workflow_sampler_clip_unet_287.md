@@ -1,67 +1,60 @@
 ---
 name: unknown_workflow_sampler_clip_unet_287
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9025
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9226
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, InstructPixToPixConditioning, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/3.扩展图片_2050623451928510466.json, 图片生成/图生图/360-全景照片地图编辑查看_2042620819846733826.json, 图片生成/图生图/FLUX2-KLEIN-换头_换脸工作流_2017152699401248770.json, 图片生成/图生图/Flux2 Klein 动漫转写实_2024871399084527618.json]
+members: [图片生成/图生图/AI图片游戏素材风格化_1928268107368775682.json, 图片生成/图生图/Flux-Canny官方工作流_1930179521054457857.json, 图片生成/图生图/Flux-Depth-Lora官方工作流_1930173618850840578.json, 图片生成/图生图/flux图生图控制姿态_1922119460591960065.json, 图片生成/图生图/万物花开流_1915322238680104962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_287
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/3.扩展图片_2050623451928510466.json、图片生成/图生图/360-全景照片地图编辑查看_2042620819846733826.json、图片生成/图生图/FLUX2-KLEIN-换头_换脸工作流_2017152699401248770.json、图片生成/图生图/Flux2 Klein 动漫转写实_2024871399084527618.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/AI图片游戏素材风格化_1928268107368775682.json、图片生成/图生图/Flux-Canny官方工作流_1930179521054457857.json、图片生成/图生图/Flux-Depth-Lora官方工作流_1930173618850840578.json、图片生成/图生图/flux图生图控制姿态_1922119460591960065.json、图片生成/图生图/万物花开流_1915322238680104962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `KSamplerSelect`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `InstructPixToPixConditioning`
+- `KSampler`
 - `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 3/4 个有
-- `ImageScaleToTotalPixels` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `MuyeTextEditOutput` —— 2/4 个有
-- `easy imageConcat` —— 2/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `ConcatTextOfUtils` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `ImagePadForOutpaint` —— 1/4 个有
-- `ResizeImagesByLongerEdge` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `TY360Pasteback` —— 1/4 个有
-- `TY360Preview` —— 1/4 个有
-- `TY360Roundtrip` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `Canny` —— 2/5 个有
+- `ConditioningZeroOut` —— 2/5 个有
+- `ImageResizeKJ` —— 2/5 个有
+- `AIO_Preprocessor` —— 1/5 个有
+- `AdjustBrightnessContrastSaturationNode` —— 1/5 个有
+- `DepthAnything_V2` —— 1/5 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 1/5 个有
+- `KSamplerAdvanced` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 20 | 5 | 0% |
+| 采样算法 | euler | - | 5 | 60% |
+| 调度器 | normal | - | 5 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -69,4 +62,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 20，5 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 euler，5 个样本，一致性 60%
+- 调度器 最常用 normal，5 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

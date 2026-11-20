@@ -1,62 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_117
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.894733
-common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.820312
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, ResolutionSelector, UNETLoader, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/8-图转视频 Wan2.2 14b Optional Last Frame_2053486047740350466.json, 视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_1952003952139292673.json, 视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_2061786208002465793.json, 视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_2061806465001803778.json, 视频生成/图生视频/HeGenAI-N8N-Wan2.2图生视频加速版_1968577373975261186.json, 视频生成/图生视频/KJ wan2.2首尾帧+Lightx4step lora_2015424489110118402.json, 视频生成/图生视频/KJ-Wan2.2-6步加速图生视频_1949986819199909890.json, 视频生成/图生视频/KJ-Wan2.2-6步加速文生视频_1950060354116214786.json, 视频生成/图生视频/Wan2.2-lightx2v-6步加速图生视频-KJ版_1950132208273154049.json, 视频生成/图生视频/Work-Fisher_Wan2.2-I2V增强版_1972312939401310209.json, 视频生成/文生视频/Wan2.2-lightx2v-6步加速文生视频_KJ版_1950128875525332993.json, 视频生成/文生视频/Wan2.2-lightx2v-6步加速文生视频_KJ版非常逼真目前最牛_1950206171439390721.json, 视频生成/文生视频/Work-Fisher_Wan2.2增强版合集_1972651753634242561.json, 视频生成/文生视频/rlinhe_Wan2.2增强版合集 by B站 Work-Fisher_1975195105038569473.json, 视频生成/文生视频/漫剧最强工具Wan2.2超强一致性_2049103222916259841.json]
+members: [图片生成/图生图/常规万能流直出1080p_最高质量版_-MMH3_Selflift_2113451414457507841.json, 图片生成/图生图/短剧制作_直出1080p_最高质量版_-MMH3_Selflift_2113451009522626561.json, 图片生成/图生图/黑科技加速双采-self-lift工作流_2115655225251024897.json, 图片生成/图生图/黑科技加速双采-self-lift工作流_2115676565978836993.json, 平台全量/MiniMax_H3_SelfLift_Avatar_GlobalStream_NovelFlow_Mapped_API_2117454242343636994.json, 平台全量/Minimax H3 SelfLift 文生视频_2120051964783452162.json, 视频生成/图生视频/123_2107820492894855170.json, 视频生成/图生视频/CGDselflift+2xVAE+锐化放大模型工作流_2110638154041618433.json, 视频生成/图生视频/MiniMax H3_selflift+2xVAE+锐化放大工作流_2105110415595364353.json, 视频生成/图生视频/Minimax-H3_2109624727416430594.json, 视频生成/图生视频/MinimaxH3-图生视频-高清2K_2105896544250720257.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104877137932148737.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104929413359030273.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2104933693600129025.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2110566290069999618.json, 视频生成/图生视频/selflift+2xVAE+锐化放大模型工作流_2111010022284161026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_117
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/8-图转视频 Wan2.2 14b Optional Last Frame_2053486047740350466.json、视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_1952003952139292673.json、视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_2061786208002465793.json、视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_2061806465001803778.json、视频生成/图生视频/HeGenAI-N8N-Wan2.2图生视频加速版_1968577373975261186.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/常规万能流直出1080p_最高质量版_-MMH3_Selflift_2113451414457507841.json、图片生成/图生图/短剧制作_直出1080p_最高质量版_-MMH3_Selflift_2113451009522626561.json、图片生成/图生图/黑科技加速双采-self-lift工作流_2115655225251024897.json、图片生成/图生图/黑科技加速双采-self-lift工作流_2115676565978836993.json、平台全量/MiniMax_H3_SelfLift_Avatar_GlobalStream_NovelFlow_Mapped_API_2117454242343636994.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `LoadWanVideoT5TextEncoder`
+全部 16 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `ResolutionSelector`
+- `UNETLoader`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 13/15 个有
-- `GetImageSizeAndCount` —— 12/15 个有
-- `ImageResizeKJv2` —— 12/15 个有
-- `WanVideoImageToVideoEncode` —— 12/15 个有
-- `WanVideoSetBlockSwap` —— 11/15 个有
-- `WanVideoSetLoRAs` —— 11/15 个有
-- `INTConstant` —— 10/15 个有
-- `WanVideoEmptyEmbeds` —— 6/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/15 个有
-- `MathExpression|pysssss` —— 5/15 个有
-- `Primitive integer [Crystools]` —— 5/15 个有
-- `RIFE VFI` —— 5/15 个有
-- `Text Multiline` —— 5/15 个有
-- `Int` —— 4/15 个有
-- `CreateVideo` —— 3/15 个有
-- `PreViewVideo` —— 3/15 个有
-- `WanVideoLoraSelectMulti` —— 3/15 个有
-- `SaveVideo` —— 2/15 个有
-- `Label (rgthree)` —— 1/15 个有
-- `Seed (rgthree)` —— 1/15 个有
-- `ShellAgentPluginSaveImage` —— 1/15 个有
+- `LoadImage` —— 15/16 个有
+- `SelfLiftAvatarH3Sampler` —— 15/16 个有
+- `H3SigmaRefiner` —— 14/16 个有
+- `PrimitiveFloat` —— 14/16 个有
+- `QwenH3PromptLocal` —— 13/16 个有
+- `VAEDecode` —— 13/16 个有
+- `LTXVSeparateAVLatent` —— 12/16 个有
+- `PreviewAny` —— 12/16 个有
+- `MiniMaxH3VAEDecodeFast` —— 10/16 个有
+- `RunningHub Deepcleaner` —— 10/16 个有
+- `Fast Groups Muter (rgthree)` —— 8/16 个有
+- `Image Comparer (rgthree)` —— 7/16 个有
+- `ImageFromBatch` —— 7/16 个有
+- `PrimitiveStringMultiline` —— 7/16 个有
+- `SelfLiftH3Sampler` —— 5/16 个有
+- `BlockSparseAttention` —— 4/16 个有
+- `easy showAnything` —— 3/16 个有
+- `EmptyImage` —— 2/16 个有
+- `JjkText` —— 2/16 个有
+- `LoadAudio` —— 2/16 个有
+- `PreviewImage` —— 2/16 个有
+- `VideoCompareSlider` —— 2/16 个有
+- `Int` —— 1/16 个有
+- `JWStringToFloat` —— 1/16 个有
+- `Text` —— 1/16 个有
+- `easy float` —— 1/16 个有
 
 ## 典型参数
 

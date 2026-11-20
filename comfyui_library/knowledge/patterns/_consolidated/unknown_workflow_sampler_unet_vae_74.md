@@ -1,81 +1,89 @@
 ---
 name: unknown_workflow_sampler_unet_vae_74
 type: Unknown Workflow
-frequency: 11
+frequency: 13
 level: strong
-coverage: 0.813727
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, PrimitiveStringMultiline, QwenEditConfigPreparer, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.573846
+common_nodes: [Any Switch (rgthree), CLIPLoader, CR Prompt Text, EmptyLatentImage, KSampler, LoadImage, PathchSageAttentionKJ, PixaromaGroupSwitch, QwenImage21Cache, QwenPERewriteT8, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/02-01-03-QwenEdit-基础修图-志佬_2004889499622666241.json, 图片生成/图生图/02-02-02-QwenEdit-双图编辑-志佬_2006656824291889154.json, 图片生成/图生图/2511Qwen Edit  双图编辑_2003855425076379649.json, 图片生成/图生图/Klein 9B 局部重绘  贴回原位——适用于2K 4K大图_2063421100146647042.json, 图片生成/图生图/QE2511 修图换人换物增强一致性lora_2010591123043000322.json, 图片生成/图生图/Qwen2511换装 一致性lora alpha_2010697292533211137.json, 图片生成/图生图/QwenEdit2511提升一致性Lora，适合单角色下使用_2010687188006080514.json, 图片生成/图生图/QwenEdit_2509_Anything2Real+A2R_1991699100773216258.json, 图片生成/图生图/【老金驿站】Qwen2509图像转真实_1989304425208573954.json, 图片生成/图生图/局部重绘无偏移_2109566086395031553.json, 图片生成/文生图/Qwen Edit 2509：风格转换【Anything2Real LoRA模型 】二次元动漫转真人_1991153622583193602.json]
+members: [图片生成/反推提示词/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2103948729811300354.json, 图片生成/反推提示词/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json, 图片生成/图生图/Qwen Image 2.1 图像编辑工作流V1.0（2026开源最强模型）_2107740009477533698.json, 图片生成/图生图/Qwen Image 2.1 图像编辑（2026开源最强模型）V1.0_2107721379499036673.json, 图片生成/图生图/Qwen Image 2.1 图像编辑（2026开源最强模型）_2107721422918475777.json, 图片生成/图生图/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2105178155706314754.json, 图片生成/图生图/Qwen_Image_2.1_图生图_图像编辑2026开源最强模型工作流V1.0_2110537442909581314.json, 图片生成/图生图/Qwen_Image_2.1_图生图_图像编辑2026开源最强模型工作流_2110645691214286849.json, 图片生成/图生图/Qwen_Image_2.1_图生图_图像编辑2026开源最强模型工作流_2111275657190793218.json, 图片生成/图生图/多图编辑Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2107725897594925057.json, 图片生成/文生图/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流_2108147300043419649.json, 图片生成/文生图/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流_2108160778015698945.json, 图片生成/文生图/Qwen Image 2.1 海报生成专属工作流_2107142517820051458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_74
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/02-01-03-QwenEdit-基础修图-志佬_2004889499622666241.json、图片生成/图生图/02-02-02-QwenEdit-双图编辑-志佬_2006656824291889154.json、图片生成/图生图/2511Qwen Edit  双图编辑_2003855425076379649.json、图片生成/图生图/Klein 9B 局部重绘  贴回原位——适用于2K 4K大图_2063421100146647042.json、图片生成/图生图/QE2511 修图换人换物增强一致性lora_2010591123043000322.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1 图生图 _ 图像编辑（2026开源最强模型）工作流V1.0_2103948729811300354.json、图片生成/反推提示词/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json、图片生成/图生图/Qwen Image 2.1 图像编辑工作流V1.0（2026开源最强模型）_2107740009477533698.json、图片生成/图生图/Qwen Image 2.1 图像编辑（2026开源最强模型）V1.0_2107721379499036673.json、图片生成/图生图/Qwen Image 2.1 图像编辑（2026开源最强模型）_2107721422918475777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `CLIPLoader`
-- `ConditioningZeroOut`
+- `CR Prompt Text`
+- `EmptyLatentImage`
 - `KSampler`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `QwenEditConfigPreparer`
+- `PathchSageAttentionKJ`
+- `PixaromaGroupSwitch`
+- `QwenImage21Cache`
+- `QwenPERewriteT8`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 10/11 个有
-- `QwenEditOutputExtractor` —— 10/11 个有
-- `CropWithPadInfo` —— 9/11 个有
-- `LoraLoaderModelOnly` —— 9/11 个有
-- `QwenEditAdaptiveLongestEdge` —— 8/11 个有
-- `ImageScaleBy` —— 7/11 个有
-- `Image Comparer (rgthree)` —— 6/11 个有
-- `LayerUtility: ImageReel` —— 6/11 个有
-- `LayerUtility: ImageReelComposit` —— 6/11 个有
-- `PreviewAny` —— 6/11 个有
-- `GetImageSize` —— 5/11 个有
-- `GetImageSize+` —— 3/11 个有
-- `ImageResizeKJv2` —— 3/11 个有
-- `GH_CropRestore` —— 2/11 个有
-- `GH_MaskCropV2` —— 2/11 个有
-- `LayerMask: MaskGrow` —— 2/11 个有
-- `ImageConcanate` —— 1/11 个有
-- `PrimitiveFloat` —— 1/11 个有
+- `CR Text Concatenate` —— 12/13 个有
+- `Fast Bypasser (rgthree)` —— 12/13 个有
+- `GetNode` —— 12/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/13 个有
+- `LoraLoaderModelOnly` —— 12/13 个有
+- `Mute / Bypass Repeater (rgthree)` —— 12/13 个有
+- `ResolutionSelector` —— 12/13 个有
+- `SetNode` —— 12/13 个有
+- `ShowText|pysssss` —— 12/13 个有
+- `Fast Groups Muter (rgthree)` —— 11/13 个有
+- `PixaromaLabel` —— 11/13 个有
+- `ModelAttentionBackend` —— 2/13 个有
+- `PixaromaResolution` —— 2/13 个有
+- `PreviewAny` —— 2/13 个有
+- `EmptyImage` —— 1/13 个有
+- `PreviewImage` —— 1/13 个有
+- `VRAM_Debug` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 11 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | beta57 | - | 11 | 64% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 采样步数 | 40 | 8 - 40 | 13 | 77% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 13 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 13 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 beta57，11 个样本，一致性 64%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（18/11 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 40，观测区间 8 - 40，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，13 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，13 个样本，取值集中（一致性 100%）
+- 高发问题（12/13 个样本）：Steps较低可能导致细节不足

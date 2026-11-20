@@ -3,62 +3,59 @@ name: image_to_image_inpaint_lora_sampler_19
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.977
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, EmptyFlux2LatentImage, GetImageSize, GrowMaskWithBlur, ImageBatch, ImageScaleToTotalPixels, InpaintCrop, InpaintModelConditioning, InpaintStitch, KSampler, LayerColor: ColorAdapter, LayerMask: MaskGrow, LayerMask: SegmentAnythingUltra V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, PreviewImage, ReferenceLatent, SaveImage, SetLatentNoiseMask, String, UNETLoader, VAEDecode, VAEEncode, VAELoader, WD14Tagger|pysssss, easy a1111Loader, easy fullkSampler, easy instantIDApplyADV, easy pipeOut]
+coverage: 0.869
+common_nodes: [AddLabel, CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, FastCanvas, FastCanvasTool, INPAINT_ExpandMask, Image Comparer (rgthree), ImageAndMaskPreview, InpaintModelConditioning, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MaskPreview, ModelSamplingAuraFlow, PreviewImage, PrimitiveStringMultiline, ReferenceLatent, SaveImage, Seed (rgthree), TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/换脸_2082355886034608130.json, 图片生成/图生图/换脸_2082357637177499649.json]
+members: [图片生成/图生图/Klein局部编辑-产品视角转换+溶图_2057275830392410114.json, 图片生成/图生图/工作流系列11-Klein局部编辑-物品视角转换-溶图工作流_2056293460939993090.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_inpaint_lora_sampler_19
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/换脸_2082355886034608130.json、图片生成/图生图/换脸_2082357637177499649.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Klein局部编辑-产品视角转换+溶图_2057275830392410114.json、图片生成/图生图/工作流系列11-Klein局部编辑-物品视角转换-溶图工作流_2056293460939993090.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AddLabel`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `EmptyFlux2LatentImage`
-- `GetImageSize`
-- `GrowMaskWithBlur`
-- `ImageBatch`
-- `ImageScaleToTotalPixels`
-- `InpaintCrop`
+- `FastCanvas`
+- `FastCanvasTool`
+- `INPAINT_ExpandMask`
+- `Image Comparer (rgthree)`
+- `ImageAndMaskPreview`
 - `InpaintModelConditioning`
-- `InpaintStitch`
 - `KSampler`
-- `LayerColor: ColorAdapter`
-- `LayerMask: MaskGrow`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LayerUtility: PurgeVRAM`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MaskPreview`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
+- `PrimitiveStringMultiline`
 - `ReferenceLatent`
 - `SaveImage`
-- `SetLatentNoiseMask`
-- `String`
+- `Seed (rgthree)`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `WD14Tagger|pysssss`
-- `easy a1111Loader`
-- `easy fullkSampler`
-- `easy instantIDApplyADV`
-- `easy pipeOut`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `CropFace` —— 1/2 个有
+- `Anything Everywhere3` —— 1/2 个有
 
 ## 典型参数
 
@@ -74,7 +71,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -83,5 +80,5 @@ source: knowledge_consolidation
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（8/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

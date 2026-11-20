@@ -2,89 +2,85 @@
 name: text_to_image_sampler_clip_unet_105
 type: Text To Image
 frequency: 7
-level: weak
-coverage: 0.847143
-common_nodes: [AddLabel, CLIPLoader, CLIPTextEncode, ComfySwitchNode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageConcanate, KSampler, PreviewAny, PrimitiveInt, PrimitiveStringMultiline, QwenImage21Cache, SaveImage, StringFormat, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.847286
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, ModelPatchLoader, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/FLUX3蒸馏 vs Base vs Qwen21 vs Krea2_四路对比文生图_2110906286845030402.json, 图片生成/文生图/FLUX3蒸馏Base Qwen21 Krea2四路对比，文生图图生图实测_2111582359559696386.json, 图片生成/文生图/FLUX3蒸馏Base Qwen21三路对比，图像编辑一站实测_2111574863134679041.json, 图片生成/文生图/FLUX3蒸馏_vs_Base_vs_Qwen21_vs_Krea2_四路对比文生图_2114191295156678658.json, 图片生成/文生图/FLUX3蒸馏_vs_Base_vs_Qwen21_vs_Krea2_四路对比文生图_2114192323973312513.json, 图片生成/文生图/FLUX3蒸馏_vs_Base_vs_Qwen21_vs_Krea2_四路对比文生图_2114195659531309057.json, 图片生成/文生图/FLUX3蒸馏_vs_Base_vs_Qwen21_vs_Krea2_四路对比文生图_2114197843954192385.json]
+members: [图片生成/图生图/Z-turbo 深度控制_2030690837834768385.json, 图片生成/图生图/【遇见AI】z-image fun controlnet+inpaint_2053783735144857602.json, 图片生成/图生图/【遇见AI】z-image fun controlnet_2053781769182294018.json, 图片生成/图生图/【遇见AI】z-image turbo fun controlnet+inpaint_2053778216468398081.json, 图片生成/图生图/【遇见AI】z-image turbo fun controlnet_2053776858411479041.json, 图片生成/图生图/图生图-CN选择-提示词反推_2069077875545952258.json, 图片生成/文生图/图生图-CN选择-提示词反推_2064280927131488258.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_105
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/FLUX3蒸馏 vs Base vs Qwen21 vs Krea2_四路对比文生图_2110906286845030402.json、图片生成/文生图/FLUX3蒸馏Base Qwen21 Krea2四路对比，文生图图生图实测_2111582359559696386.json、图片生成/文生图/FLUX3蒸馏Base Qwen21三路对比，图像编辑一站实测_2111574863134679041.json、图片生成/文生图/FLUX3蒸馏_vs_Base_vs_Qwen21_vs_Krea2_四路对比文生图_2114191295156678658.json、图片生成/文生图/FLUX3蒸馏_vs_Base_vs_Qwen21_vs_Krea2_四路对比文生图_2114192323973312513.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Z-turbo 深度控制_2030690837834768385.json、图片生成/图生图/【遇见AI】z-image fun controlnet+inpaint_2053783735144857602.json、图片生成/图生图/【遇见AI】z-image fun controlnet_2053781769182294018.json、图片生成/图生图/【遇见AI】z-image turbo fun controlnet+inpaint_2053778216468398081.json、图片生成/图生图/【遇见AI】z-image turbo fun controlnet_2053776858411479041.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
-- **可信度**：弱结论（样本不足）
+- **可信度**：中等可信
 - **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `AddLabel`
+- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcanate`
 - `KSampler`
-- `PreviewAny`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `QwenImage21Cache`
+- `LoadImage`
+- `ModelPatchLoader`
+- `PreviewImage`
 - `SaveImage`
-- `StringFormat`
-- `TextEncodeQwenImage21`
-- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 6/7 个有
-- `EmptyImage` —— 6/7 个有
-- `ResolutionSelector` —— 6/7 个有
-- `LoadImage` —— 3/7 个有
-- `JjkText` —— 2/7 个有
-- `LoraLoaderModelOnly` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `solarL_SaveImagesToZip` —— 2/7 个有
-- `孤海注释` —— 2/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `ImageBatch` —— 1/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `ReferenceMultiLatent` —— 1/7 个有
-- `ResizeAndPadImage` —— 1/7 个有
+- `ConditioningZeroOut` —— 5/7 个有
+- `ZImageFunControlnet` —— 4/7 个有
+- `GetImageSizeAndCount` —— 3/7 个有
+- `ImageScaleToTotalPixels` —— 3/7 个有
+- `QwenImageDiffsynthControlnet` —— 3/7 个有
+- `RH_Captioner` —— 3/7 个有
+- `ImpactSwitch` —— 2/7 个有
+- `Int` —— 2/7 个有
+- `LoraLoader` —— 2/7 个有
+- `Manual XY Entry Info` —— 2/7 个有
+- `MuyeTextEditOutput` —— 2/7 个有
+- `ShowText|pysssss` —— 2/7 个有
+- `easy cleanGpuUsed` —— 2/7 个有
+- `easy ifElse` —— 2/7 个有
+- `easy isNone` —— 2/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 7 | 74% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 7 | 21% |
-| 采样算法 | euler | - | 7 | 71% |
-| 调度器 | simple | - | 7 | 71% |
+| 宽度 | 512 | 512 - 1024 | 7 | 70% |
+| 高度 | 768 | 512 - 1536 | 7 | 61% |
+| 采样步数 | 10 | 8 - 28 | 7 | 41% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 7 | 27% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 57% |
 | 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1024 | 80 - 1024 | 7 | 43% |
-| 高度 | 1024 | 80 - 1024 | 7 | 43% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，7 个样本，取值分散，一致性仅 21%
-- 采样算法 最常用 euler，7 个样本，一致性 71%
-- 调度器 最常用 simple，7 个样本，一致性 71%
+- 宽度 中位数 512，观测区间 512 - 1024，7 个样本
+- 高度 中位数 768，观测区间 512 - 1536，7 个样本
+- 采样步数 中位数 10，观测区间 8 - 28，7 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，7 个样本，取值分散，一致性仅 27%
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 57%
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 80 - 1024，7 个样本，取值分散，一致性仅 43%
-- 高度 中位数 1024，观测区间 80 - 1024，7 个样本，取值分散，一致性仅 43%
-- 高发问题（8/7 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

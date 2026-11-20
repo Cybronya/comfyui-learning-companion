@@ -3,45 +3,37 @@ name: unknown_workflow_generic_659
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8938
-common_nodes: [FB_Qwen3TTSCustomVoice, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LoadAudio, SaveAudio]
+coverage: 0.8152
+common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_NODE, SaveImage, TextConcat, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3-TTS 多角色对话 有声小说_2015631065112645634.json, 音频生成/音频生成/Qwen3-TTS+多人对话&声音设计&克隆_2074072921726873602.json, 音频生成/音频生成/Qwen3-TTS-Voice RH（全能版）在线工作流_2015749034622849025.json, 音频生成/音频生成/Qwen3-TTS合集，语音克隆_音色定制_多角色对话，质量和速度兼具_2015348287619997698.json, 音频生成/音频生成/【Qwen3-TTS】语音克隆-音色定制-多角色对话_2099574649708441602.json]
+members: [图片生成/图生图/2 名猫角色概念精细拆解工作表_2000606865862127617.json, 图片生成/图生图/全能图片V12银杏叶摄影_1996412735279742977.json, 图片生成/文生图/2 旅行手账生成器_2000243378887458818.json, 图片生成/文生图/chibi卡通水彩画全画面_2010238121534824449.json, 图片生成/文生图/提示词工程模版-动物养殖_2001558213789138946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_659
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS 多角色对话 有声小说_2015631065112645634.json、音频生成/音频生成/Qwen3-TTS+多人对话&声音设计&克隆_2074072921726873602.json、音频生成/音频生成/Qwen3-TTS-Voice RH（全能版）在线工作流_2015749034622849025.json、音频生成/音频生成/Qwen3-TTS合集，语音克隆_音色定制_多角色对话，质量和速度兼具_2015348287619997698.json、音频生成/音频生成/【Qwen3-TTS】语音克隆-音色定制-多角色对话_2099574649708441602.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/2 名猫角色概念精细拆解工作表_2000606865862127617.json、图片生成/图生图/全能图片V12银杏叶摄影_1996412735279742977.json、图片生成/文生图/2 旅行手账生成器_2000243378887458818.json、图片生成/文生图/chibi卡通水彩画全画面_2010238121534824449.json、图片生成/文生图/提示词工程模版-动物养殖_2001558213789138946.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `FB_Qwen3TTSCustomVoice`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LoadAudio`
-- `SaveAudio`
+- `CR Prompt Text`
+- `LoadImage`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `TextConcat`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceClone` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `RH_LLMAPI_Pro_Node` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `ShowText|pysssss` —— 2/5 个有
-- `WhisperSTT` —— 2/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
+- `AILab_QwenVL` —— 2/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/5 个有
 
 ## 典型参数
 

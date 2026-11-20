@@ -1,95 +1,89 @@
 ---
 name: image_to_image_lora_sampler_clip_88
 type: Image To Image
-frequency: 3
+frequency: 5
 level: strong
-coverage: 0.935333
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, Image Comparer (rgthree), ImageCASharpening+, ImageListToImageBatch, ImageScaleBy, ImpactImageBatchToImageList, JanusImageUnderstanding, JanusModelLoader, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: NumberCalculatorV2, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, easy imageSize]
+coverage: 0.8882
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, LoraLoader, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, SaveImage, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2 Klein-9B 衣服提取与换装双工作流 开源最夯_2070025165500669954.json, 图片生成/图生图/Flux2_klein_9B_4K_8K_去油腻进阶超分高清放大工作流_好用_2077207085812637697.json, 图片生成/图生图/Flux2_klein_9B_4K_8K_去油腻进阶超分高清放大工作流_好用_2077211493933862914.json]
+members: [图片生成/图生图/图像优化高清  Wan2.2 VS SRPO_1987454677631610882.json, 图片生成/图生图/洗图-图像高清，增加画质 Wan2.2 & SRPO_1988094555440443393.json, 图片生成/图生图/洗图-图像高清，增加画质 Wan2.2 & SRPO_1993299242611572738.json, 图片生成/图生图/洗图_1989678050919018497.json, 图片生成/文生图/Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_88
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein-9B 衣服提取与换装双工作流 开源最夯_2070025165500669954.json、图片生成/图生图/Flux2_klein_9B_4K_8K_去油腻进阶超分高清放大工作流_好用_2077207085812637697.json、图片生成/图生图/Flux2_klein_9B_4K_8K_去油腻进阶超分高清放大工作流_好用_2077211493933862914.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/图像优化高清  Wan2.2 VS SRPO_1987454677631610882.json、图片生成/图生图/洗图-图像高清，增加画质 Wan2.2 & SRPO_1988094555440443393.json、图片生成/图生图/洗图-图像高清，增加画质 Wan2.2 & SRPO_1993299242611572738.json、图片生成/图生图/洗图_1989678050919018497.json、图片生成/文生图/Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554.json）
 
 - **类型**：Image To Image
-- **样本数**：3
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Text Concatenate`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `Image Comparer (rgthree)`
-- `ImageCASharpening+`
-- `ImageListToImageBatch`
-- `ImageScaleBy`
-- `ImpactImageBatchToImageList`
-- `JanusImageUnderstanding`
-- `JanusModelLoader`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: NumberCalculatorV2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `LoraLoader`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `Text Concatenate`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
-- `VAEEncodeTiled`
 - `VAELoader`
-- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `CR Text Input Switch (4 way)` —— 2/3 个有
-- `ImageColorMatchAdobe+` —— 2/3 个有
-- `ImpactInt` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `ColorMatch` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `DualCLIPLoader` —— 4/5 个有
+- `Float` —— 4/5 个有
+- `FluxGuidance` —— 4/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `ImageScaleBy` —— 4/5 个有
+- `ImageScaleToMegapixels` —— 4/5 个有
+- `ImageUpscaleWithModel` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `UpscaleModelLoader` —— 4/5 个有
+- `EmptySD3LatentImage` —— 1/5 个有
+- `LayerUtility: ImageReel` —— 1/5 个有
+- `LayerUtility: ImageReelComposit` —— 1/5 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/5 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/5 个有
+- `ModelSamplingAuraFlow` —— 1/5 个有
+- `RH_Translator` —— 1/5 个有
+- `ShowText|pysssss` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 5 - 6 | 3 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 0.73 | 0.5 - 0.73 | 3 | 83% |
+| LoRA 模型强度 | 0.7 | 0.7 - 0.7 | 5 | 100% |
+| LoRA 文本强度 | 0.7 | 0.7 - 0.7 | 5 | 100% |
+| 采样步数 | 10 | 8 - 10 | 5 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | res_2s | - | 5 | 60% |
+| 调度器 | bong_tangent | - | 5 | 60% |
+| 重绘幅度 | 0.3 | 0.3 - 1 | 5 | 39% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 5 - 6，3 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 0.73，观测区间 0.5 - 0.73，3 个样本，取值集中（一致性 83%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 0.7，观测区间 0.7 - 0.7，5 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.7，观测区间 0.7 - 0.7，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 10，观测区间 8 - 10，5 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，5 个样本，一致性 60%
+- 调度器 最常用 bong_tangent，5 个样本，一致性 60%
+- 重绘幅度 中位数 0.3，观测区间 0.3 - 1，5 个样本，取值分散，一致性仅 39%
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

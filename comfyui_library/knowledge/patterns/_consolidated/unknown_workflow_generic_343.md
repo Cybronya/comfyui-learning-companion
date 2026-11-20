@@ -1,37 +1,43 @@
 ---
 name: unknown_workflow_generic_343
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.857
-common_nodes: [LoadVideo, RH_LLMAPI_Pro_Node, easy saveText, workflow>视频信息]
+coverage: 0.725
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/1FINAL-视频反推提示词，中英双译_2049382359056781313.json, 图片生成/反推提示词/Gemini 3.1 Pro视频反推提示词_中英双译+分镜提示词_2035919119471616002.json, 图片生成/反推提示词/Runninghub LLM API Pro 反推视频提示词_2001838316993560578.json, 图片生成/反推提示词/gemnini  视频反推 反推提示词 Runninghub LLM API Pro_2038187635285430273.json, 图片生成/反推提示词/分镜反推大师_2039887188720099330.json, 图片生成/反推提示词/电商带货短视频视频反推提示词，中英双译，精准复刻爆款视频_2017986421667139586.json, 图片生成/反推提示词/视频反推提示词-G_2044447288138928129.json]
+members: [图片生成/图生图/MJ-图生图_1983440403183640578.json, 图片生成/图生图/MJ-图生图_2010962665300037633.json, 图片生成/图生图/Midjourney V7-图生图（风格参考）_1988119355508563970.json, 图片生成/图生图/RH_Midjourney图生图（风格提示词）_1987536612517195777.json, 图片生成/图生图/悠船 图生图（RH版）_2054432087163318273.json, 图片生成/文生图/MJ生图与放大工作流_2019962588007763969.json, 图片生成/文生图/Midjourney （文生图+图生图）_1945813021539397633.json, 平台全量/悠船 图生图_1941075475198590977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_343
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/1FINAL-视频反推提示词，中英双译_2049382359056781313.json、图片生成/反推提示词/Gemini 3.1 Pro视频反推提示词_中英双译+分镜提示词_2035919119471616002.json、图片生成/反推提示词/Runninghub LLM API Pro 反推视频提示词_2001838316993560578.json、图片生成/反推提示词/gemnini  视频反推 反推提示词 Runninghub LLM API Pro_2038187635285430273.json、图片生成/反推提示词/分镜反推大师_2039887188720099330.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/MJ-图生图_1983440403183640578.json、图片生成/图生图/MJ-图生图_2010962665300037633.json、图片生成/图生图/Midjourney V7-图生图（风格参考）_1988119355508563970.json、图片生成/图生图/RH_Midjourney图生图（风格提示词）_1987536612517195777.json、图片生成/图生图/悠船 图生图（RH版）_2054432087163318273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadVideo`
-- `RH_LLMAPI_Pro_Node`
-- `easy saveText`
-- `workflow>视频信息`
+全部 8 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText` —— 6/7 个有
-- `PreviewAny` —— 5/7 个有
-- `ShowText|pysssss` —— 1/7 个有
+- `JjkText` —— 7/8 个有
+- `RH_Midjourney` —— 7/8 个有
+- `RH_Prompter` —— 7/8 个有
+- `ImageResize+` —— 5/8 个有
+- `ImpactSwitch` —— 5/8 个有
+- `RH_Translator` —— 5/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `Image Comparer (rgthree)` —— 1/8 个有
+- `PMRF` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `RH_YouchuanTextToImageV81` —— 1/8 个有
 
 ## 典型参数
 

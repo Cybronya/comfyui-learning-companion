@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_sampler_12
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.9065
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Captioner, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 1
+common_nodes: [LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler]
 problems: []
 missing: []
-members: [图片生成/图生图/RunningHub USO_1962755502922969089.json, 图片生成/图生图/USO-最强风格迁移-角色一致性_1965045967898689537.json, 图片生成/图生图/USO-风格迁移-角色一致性_1964332118732062722.json, 图片生成/图生图/USO最强风格迁移_1965061278253371394.json, 图片生成/图生图/【gen全能视频Si】uso-ipadaptor参考风格一致性图生图_1963523932367441922.json, 图片生成/图生图/字节USO-FLUX-双图参考-木刻版画风格女孩手捧郁金香_1964483417255628801.json, 图片生成/图生图/字节USO-FLUX-双图参考-机甲战士_1964479146338435073.json, 图片生成/图生图/画风迁移_1976916500256886786.json]
+members: [图片生成/反推提示词/53fenlibanzou_2051271674208768002.json, 平台全量/人声与背景音分离_2120474755580129281.json, 音频生成/音频生成/人声 音乐分离_2075862276602683394.json, 音频生成/音频生成/人声 音乐分离_2079783956492410881.json, 音频生成/音频生成/人声伴奏分离_2023762226083012609.json, 音频生成/音频生成/分离人声伴奏_2032370394153361409.json, 音频生成/音频生成/无限画布-分离人声伴奏_2075086244081659906.json, 音频生成/音频生成/音色转换-Seed Voice Conversion_2052999260559429633.json, 音频生成/音频生成/音频分离人声和背景_2054841869460353025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_12
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/RunningHub USO_1962755502922969089.json、图片生成/图生图/USO-最强风格迁移-角色一致性_1965045967898689537.json、图片生成/图生图/USO-风格迁移-角色一致性_1964332118732062722.json、图片生成/图生图/USO最强风格迁移_1965061278253371394.json、图片生成/图生图/【gen全能视频Si】uso-ipadaptor参考风格一致性图生图_1963523932367441922.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/53fenlibanzou_2051271674208768002.json、平台全量/人声与背景音分离_2120474755580129281.json、音频生成/音频生成/人声 音乐分离_2075862276602683394.json、音频生成/音频生成/人声 音乐分离_2079783956492410881.json、音频生成/音频生成/人声伴奏分离_2023762226083012609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `RH_Captioner`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
-- `SaveImage`
+全部 9 个 workflow 都包含：
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 7/8 个有
-- `RH_Translator` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `ImageConcanate` —— 3/8 个有
-- `Int` —— 3/8 个有
-- `PreviewImage` —— 2/8 个有
+- `SaveAudio` —— 8/9 个有
+- `SaveAudioAdvanced` —— 1/9 个有
+- `SeedVCRun` —— 1/9 个有
 
 ## 典型参数
 

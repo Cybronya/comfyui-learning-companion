@@ -1,70 +1,57 @@
 ---
 name: unknown_workflow_sampler_unet_vae_219
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.736
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.992
+common_nodes: [BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MINIMAX H3 极速多参工作流_2085299601204137986.json, 视频生成/图生视频/MiniMax H3 多图生视频+音频+视频接入_2090198237796982786.json, 视频生成/图生视频/MiniMax+H3+图像+音频参考生视频+lightx2v加速lora_2086827088161628162.json, 视频生成/图生视频/MiniMaxH3+多图参考生视频+提示词反推+加速节点ENG+ENG_2087089620583538690.json, 视频生成/文生视频/MINIMAX H3 极速生成 全能参考图生视频 提示词增强 加速版_2085037354515001345.json]
+members: [图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json, 图片生成/图生图/boogu编辑图像_2069048520065245185.json, 图片生成/文生图/Boogu_Base_edit_图像编辑工作流_2069278108913594370.json, 图片生成/文生图/boogu_edit_example_2068254277000327170.json, 平台全量/boogu_edit_example_2068913544166461442.json, 平台全量/boogu_edit_图片编辑工作流_2069293236241395714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_219
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MINIMAX H3 极速多参工作流_2085299601204137986.json、视频生成/图生视频/MiniMax H3 多图生视频+音频+视频接入_2090198237796982786.json、视频生成/图生视频/MiniMax+H3+图像+音频参考生视频+lightx2v加速lora_2086827088161628162.json、视频生成/图生视频/MiniMaxH3+多图参考生视频+提示词反推+加速节点ENG+ENG_2087089620583538690.json、视频生成/文生视频/MINIMAX H3 极速生成 全能参考图生视频 提示词增强 加速版_2085037354515001345.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json、图片生成/图生图/boogu编辑图像_2069048520065245185.json、图片生成/文生图/Boogu_Base_edit_图像编辑工作流_2069278108913594370.json、图片生成/文生图/boogu_edit_example_2068254277000327170.json、平台全量/boogu_edit_example_2068913544166461442.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
+全部 6 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `EmptyLatentImage`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SamplerCustom`
+- `SaveImage`
+- `TextEncodeBooguEdit`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 4/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
-- `PreviewAny` —— 4/5 个有
-- `easy cleanGpuUsed` —— 4/5 个有
-- `llama_cpp_instruct_adv` —— 4/5 个有
-- `llama_cpp_model_loader` —— 4/5 个有
-- `llama_cpp_parameters` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `GetVideoComponents` —— 3/5 个有
-- `LoadVideo` —— 3/5 个有
-- `PrimitiveStringMultiline` —— 3/5 个有
-- `Any Switch (rgthree)` —— 2/5 个有
-- `CacheDiT_Model_Optimizer` —— 2/5 个有
-- `ImpactSwitch` —— 2/5 个有
-- `JjkText` —— 2/5 个有
-- `LoraLoaderModelOnly` —— 2/5 个有
-- `MiniMaxH3SigmaShift` —— 2/5 个有
-- `PathchSageAttentionKJ` —— 2/5 个有
-- `SolAttnPatch` —— 2/5 个有
+- `DF_Get_image_size` —— 3/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `ImageScaleToTotalPixels` —— 2/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `SeedVR2LoadDiTModel` —— 1/6 个有
+- `SeedVR2LoadVAEModel` —— 1/6 个有
+- `SeedVR2VideoUpscaler` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 720 - 1920 | 6 | 67% |
+| 高度 | 1052 | 1024 - 1920 | 6 | 74% |
 
 ## 常见问题
 
@@ -72,4 +59,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 720 - 1920，6 个样本
+- 高度 中位数 1052，观测区间 1024 - 1920，6 个样本

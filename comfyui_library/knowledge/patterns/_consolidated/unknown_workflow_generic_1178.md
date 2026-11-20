@@ -3,31 +3,41 @@ name: unknown_workflow_generic_1178
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [HeartMuLa_Generate, SaveAudioMP3]
+coverage: 0.692
+common_nodes: [HAIGC_SaveImagesToZip, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: SaveImagePlus, LayerUtility: TextBox, LoadImage, PreviewImage, SynVowPromptLongScrollImageListConcat, SynVowPromptLongScrollNarrativePlanner, SynVowPromptLongScrollPageStructurePlanner, SynVowPromptLongScrollPromptBatchBuilder, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/HearMula_Generate_Music_2014354379901509633.json, 音频生成/音频生成/HeartMuLa Music音乐生成工作流_2015069556594712578.json, 音频生成/音频生成/HeartMula 超长音频生成_2014672277853442049.json]
+members: [图片生成/图生图/全能图片G-image2一键电商产品详情页（低价版）_2062742686481862658.json, 图片生成/图生图/全能图片G-image2一键电商产品详情页（官方渠道版）_2038263442594865154.json, 平台全量/G-image2一键电商产品详情页（低价版）_2092097530078257154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1178
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/HearMula_Generate_Music_2014354379901509633.json、音频生成/音频生成/HeartMuLa Music音乐生成工作流_2015069556594712578.json、音频生成/音频生成/HeartMula 超长音频生成_2014672277853442049.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G-image2一键电商产品详情页（低价版）_2062742686481862658.json、图片生成/图生图/全能图片G-image2一键电商产品详情页（官方渠道版）_2038263442594865154.json、平台全量/G-image2一键电商产品详情页（低价版）_2092097530078257154.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `SaveAudioMP3`
+- `HAIGC_SaveImagesToZip`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: SaveImagePlus`
+- `LayerUtility: TextBox`
+- `LoadImage`
+- `PreviewImage`
+- `SynVowPromptLongScrollImageListConcat`
+- `SynVowPromptLongScrollNarrativePlanner`
+- `SynVowPromptLongScrollPageStructurePlanner`
+- `SynVowPromptLongScrollPromptBatchBuilder`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 1/3 个有
+- `RH_RhartImageG2ImageToImage` —— 2/3 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/3 个有
 
 ## 典型参数
 

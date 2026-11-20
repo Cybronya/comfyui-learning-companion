@@ -3,36 +3,45 @@ name: unknown_workflow_generic_854
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.9225
-common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
+coverage: 0.831
+common_nodes: [FaceAnalysisModels, FaceEmbedDistance, InsertAnythingImageProcessor, InsertAnythingInferencer, InsertAnythingLoader, LayerMask: PersonMaskUltra V2, LoadImage, MaskOption, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json, 视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json, 视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global_2052675629534990338.json, 视频生成/文生视频/👾怪獸-最强视频模型Seedance2.0全参工作流👾_2047322708756664322.json]
+members: [图片生成/图生图/Nunchaku_InsertAnything换脸_1922491323624935426.json, 图片生成/图生图/快速换脸+一致性｜insertAnything 修图_1922611624191082498.json, 图片生成/图生图/换脸工作流高清出图nsertAnything_1964261096339197954.json, 平台全量/最全案例-InsertAnything极速万物迁移(换脸_换装_换鞋_换人等)_1921844906262740993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_854
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0 Global宽审核全参工作流_2073783911557193730.json、视频生成/文生视频/pipi-Seedance2.0-global_宽审多图多视频参考_2080993758597963777.json、视频生成/文生视频/支持留空 支持真人 全参工作流 Seedance2.0 Global_2052675629534990338.json、视频生成/文生视频/👾怪獸-最强视频模型Seedance2.0全参工作流👾_2047322708756664322.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Nunchaku_InsertAnything换脸_1922491323624935426.json、图片生成/图生图/快速换脸+一致性｜insertAnything 修图_1922611624191082498.json、图片生成/图生图/换脸工作流高清出图nsertAnything_1964261096339197954.json、平台全量/最全案例-InsertAnything极速万物迁移(换脸_换装_换鞋_换人等)_1921844906262740993.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
+- `FaceAnalysisModels`
+- `FaceEmbedDistance`
+- `InsertAnythingImageProcessor`
+- `InsertAnythingInferencer`
+- `InsertAnythingLoader`
+- `LayerMask: PersonMaskUltra V2`
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `MaskOption`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 3/4 个有
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/4 个有
+- `ImageConcanate` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `PreviewMask_` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/4 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
 
 ## 典型参数
 

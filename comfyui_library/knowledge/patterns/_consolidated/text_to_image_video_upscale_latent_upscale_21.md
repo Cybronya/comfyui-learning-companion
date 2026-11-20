@@ -3,77 +3,84 @@ name: text_to_image_video_upscale_latent_upscale_21
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.661667
-common_nodes: [ApplyFaceProcessor, AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EasyCache, EmptyLatentImage, FaceProcessorLoader, GetNode, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, ModelPreviewOverrideKJ, PathchSageAttentionKJ, PreviewImage, PrimitiveString, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SeedVR2, SeedVR2BlockSwap, SetNode, SoundFlow_GetLength, SplitSigmas, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, easy float, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.88
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLTXVLatentVideo, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/shuzirenzhufu数字人祝福｜口播祝福视频自动生成_2103102956919939074.json, 视频生成/文生视频/参考音视频数字人｜MiniMax H3图生视频生成_2094475690098909186.json, 视频生成/文生视频/视频参考编辑替换｜MiniMax H3三模视频工作流_2094365213192712193.json]
+members: [视频生成/图生视频/LTX-2.5-I2V图生视频｜双采样加速视频生成工作流_2096312957528530946.json, 视频生成/图生视频/三图首中尾帧视频图生视频｜老孙AI多图参考视频生成工作流_2087224294895087618.json, 视频生成/图生视频/出片提速神器｜LTX-2.5-I2V双采样图生视频加速_2096525982470590465.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_upscale_latent_upscale_21
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/shuzirenzhufu数字人祝福｜口播祝福视频自动生成_2103102956919939074.json、视频生成/文生视频/参考音视频数字人｜MiniMax H3图生视频生成_2094475690098909186.json、视频生成/文生视频/视频参考编辑替换｜MiniMax H3三模视频工作流_2094365213192712193.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX-2.5-I2V图生视频｜双采样加速视频生成工作流_2096312957528530946.json、视频生成/图生视频/三图首中尾帧视频图生视频｜老孙AI多图参考视频生成工作流_2087224294895087618.json、视频生成/图生视频/出片提速神器｜LTX-2.5-I2V双采样图生视频加速_2096525982470590465.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ApplyFaceProcessor`
-- `AudioCrop`
-- `BasicGuider`
-- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
-- `EasyCache`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `FaceProcessorLoader`
-- `GetNode`
-- `H3SigmaRefiner`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveString`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SetNode`
-- `SoundFlow_GetLength`
-- `SplitSigmas`
-- `Text`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
-- `easy float`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/3 个有
-- `ImageScale` —— 1/3 个有
-- `VHS_LoadVideo` —— 1/3 个有
-- `ZML_MergeText` —— 1/3 个有
+- `CR Prompt Text` —— 2/3 个有
+- `EmptyImage` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `ImageScaleBy` —— 2/3 个有
+- `ModelAttentionBackend` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `ResolutionSelector` —— 2/3 个有
+- `CheckpointLoaderSimple` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `FloatConstant` —— 1/3 个有
+- `LTXAVTextEncoderLoader` —— 1/3 个有
+- `LTXVAudioVAELoader` —— 1/3 个有
+- `LTXVChunkFeedForward` —— 1/3 个有
+- `LTXVImgToVideoInplaceKJ` —— 1/3 个有
+- `ModelPatchTorchSettings` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
+- `ResizeImageMaskNode` —— 1/3 个有
+- `ResizeImagesByLongerEdge` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `TextCombinerTwo` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_528
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7862
-common_nodes: [ElevenLabsInstantVoiceClone, ElevenLabsVoiceSelector, LoadAudio, RecordAudio, SaveAudioAdvanced]
+coverage: 0.820833
+common_nodes: [CR Prompt Text, LoadImage, MiniMaxH3PromptEnhancerT8, PreviewAny, RH_Translator, easy saveText]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json]
+members: [图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2095714717129068546.json, 图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2108079922202890241.json, 图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json, 图片生成/图生图/H3提示词增强器（Qwen3.8本地版）_2116401107198111746.json, 数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json, 视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_528
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2095714717129068546.json、图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2108079922202890241.json、图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json、图片生成/图生图/H3提示词增强器（Qwen3.8本地版）_2116401107198111746.json、数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ElevenLabsInstantVoiceClone`
-- `ElevenLabsVoiceSelector`
-- `LoadAudio`
-- `RecordAudio`
-- `SaveAudioAdvanced`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadImage`
+- `MiniMaxH3PromptEnhancerT8`
+- `PreviewAny`
+- `RH_Translator`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `ElevenLabsTextToDialogue` —— 2/5 个有
-- `ElevenLabsTextToSpeech` —— 2/5 个有
-- `ElevenLabsSpeechToSpeech` —— 1/5 个有
+- `easy showAnything` —— 5/6 个有
+- `SaveImage` —— 3/6 个有
+- `easy imageSave` —— 3/6 个有
+- `CM_FloatToInt` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,69 +1,77 @@
 ---
 name: unknown_workflow_sampler_unet_vae_75
 type: Unknown Workflow
-frequency: 11
+frequency: 13
 level: strong
-coverage: 0.897818
-common_nodes: [CLIPLoader, KSampler, LoadImage, PreviewImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.751769
+common_nodes: [CLIPLoader, ComfySwitchNode, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, UNETLoader, VAEDecodeAudio, VAEDecodeAudioTiled, VAELoader]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/Qwen-image2.1-人像多角度生成_2101942834889838593.json, 图片生成/图生图/Qwen-image2.1-人像多角度生成_2108744184894148609.json, 图片生成/图生图/Qwen-image2.1-人像多角度生成_2110187888993456130.json, 图片生成/图生图/Qwen-image2.1-人物转白模_2107713734658584577.json, 图片生成/图生图/Qwen-image2.1-动作迁移2_2107475110847401986.json, 图片生成/图生图/Qwen-image2.1-单图编辑（4步加速）_2102723958306066433.json, 图片生成/图生图/Qwen-image2.1-图像人像+角度操控（AnyAngl-lora）_2105204359549243394.json, 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2102382946584977410.json, 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2105644895645032449.json, 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2105682659937705986.json, 图片生成/图生图/Qwen-image2.1-角色四视图及三视图生成_2103034276039188481.json]
+members: [图片生成/反推提示词/音乐生成 海螺 Music 3_2088149749898764290.json, 平台全量/MiniMax Music 3 写歌工作流_2094689803806789634.json, 平台全量/MiniMax Music 3 文生音乐全流程｜定制专属爱情情歌实操教程_2117888471091208194.json, 平台全量/minimax_music_3音乐生成_2089259252501278722.json, 数字人/数字人/MiniMax Music 3_2095916117280772098.json, 数字人/数字人/Minimax-Music3  音乐_2095365589534601218.json, 数字人/数字人/智能体制作好声音必备 minimax M3_2094801787873218562.json, 视频生成/图生视频/MiniMax+Music音乐生成_2089265743111213057.json, 音频生成/音频生成/MiniMax Music 3 文生音乐工作流｜为自己的爱情定制专属情歌！_2092788025477656578.json, 音频生成/音频生成/MiniMax Music 3 文生音乐工作流｜为自己的爱情定制专属情歌！_2109801992737615874.json, 音频生成/音频生成/MiniMax Music 3 文生音频官方流_2090455981170978818.json, 音频生成/音频生成/MiniMax Music3 文生歌曲工作流 带时长参数控制注释版_2088143069853077505.json, 音频生成/音频生成/MiniMax-Music3 官方skill自动提示词文生音乐流_2090618993068560385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_75
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1-人像多角度生成_2101942834889838593.json、图片生成/图生图/Qwen-image2.1-人像多角度生成_2108744184894148609.json、图片生成/图生图/Qwen-image2.1-人像多角度生成_2110187888993456130.json、图片生成/图生图/Qwen-image2.1-人物转白模_2107713734658584577.json、图片生成/图生图/Qwen-image2.1-动作迁移2_2107475110847401986.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/反推提示词/音乐生成 海螺 Music 3_2088149749898764290.json、平台全量/MiniMax Music 3 写歌工作流_2094689803806789634.json、平台全量/MiniMax Music 3 文生音乐全流程｜定制专属爱情情歌实操教程_2117888471091208194.json、平台全量/minimax_music_3音乐生成_2089259252501278722.json、数字人/数字人/MiniMax Music 3_2095916117280772098.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
+- `ComfySwitchNode`
+- `ConditioningZeroOut`
+- `EmptyMiniMaxMusic3LatentAudio`
 - `KSampler`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxMusic3TextEncode`
+- `SaveAudioAdvanced`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEDecodeAudioTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/11 个有
-- `LoraLoaderModelOnly` —— 8/11 个有
-- `CR Prompt Text` —— 4/11 个有
-- `QwenMultiangleCameraNode` —— 4/11 个有
-- `easy promptList` —— 4/11 个有
-- `easy showAnything` —— 4/11 个有
-- `EmptyLatentImage` —— 1/11 个有
+- `SeedNode` —— 12/13 个有
+- `PreviewAudio` —— 6/13 个有
+- `Float` —— 5/13 个有
+- `JjkText` —— 5/13 个有
+- `PrimitiveFloat` —— 4/13 个有
+- `孤海注释` —— 4/13 个有
+- `Label (rgthree)` —— 3/13 个有
+- `LoadImage` —— 3/13 个有
+- `MuyeTextEditOutput` —— 3/13 个有
+- `Text` —— 2/13 个有
+- `CR Prompt Text` —— 1/13 个有
+- `DapaoLocalMusic3CaptionPromptNode` —— 1/13 个有
+- `easy seed` —— 1/13 个有
+- `easy showAnything` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 6 - 25 | 11 | 66% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| 宽度 | 1560 | - | 1 | 100% |
-| 高度 | 904 | - | 1 | 100% |
+| 采样步数 | 30 | 30 - 30 | 13 | 100% |
+| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 13/13 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 6 - 25，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，观测区间 30 - 30，13 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 高发问题（13/13 个样本）：发现KSampler但没有VAEDecode

@@ -1,95 +1,71 @@
 ---
 name: unknown_workflow_video_sampler
 type: Unknown Workflow
-frequency: 21
+frequency: 61
 level: moderate
-coverage: 0.671048
-common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DownloadAndLoadFlorence2Model, DownloadAndLoadSAM2Model, DrawMaskOnImage, Florence2Run, Florence2toCoordinates, GrowMask, INTConstant, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, PixelPerfectResolution, PrimitiveString, RH_Captioner, RH_Translator, RMBG, Sam2Segmentation, SetNode, ShowText|pysssss, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTeaCache, WanVideoTextEncodeCached, easy cleanGpuUsed]
+coverage: 0.864459
+common_nodes: [DiffuEraserLoader, DiffuEraserSampler, ImageFromBatch+, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2Animate：角色+动作+表情三位一体~实现全维重塑及影随心动角色动作迁移工作流_2025792425880457218.json, 视频生成/图生视频/Wan2.2Animate：角色、动作、表情三位一体~实现全维重塑及影随心动迁移工作流_2019640646428004354.json, 视频生成/图生视频/Wan2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2008359387471024130.json, 视频生成/图生视频/Wan2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2013086174964883457.json, 视频生成/图生视频/Wan2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2034147966063218690.json, 视频生成/图生视频/Wan2.2Animate：角色替换_2027913310934409217.json, 视频生成/图生视频/sdk2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2015707307723722753.json, 视频生成/图生视频/全开源！角色替换+动作迁移+面部表情=爆款复刻_2028027873109479425.json, 视频生成/图生视频/动作迁移3_2012880075087159297.json, 视频生成/图生视频/地表最强🔥角色替换+动作迁移+面部表情=爆款复刻_2046535118042439682.json, 视频生成/图生视频/小姐姐跳舞爆款：动作模仿顶呱呱_2025898220341174274.json, 视频生成/图生视频/板凳迁移，侧脸迁移，抖音最近很流行！_2043279973837971458.json, 视频生成/图生视频/爆款复刻：角色替换+动作迁移+面部表情三重融合工作流_2019297921283399682.json, 视频生成/图生视频/视频人物替换！角色、动作、表情的三位一体角色重塑！_2040848580549808130.json, 视频生成/图生视频/角色替换+动作迁移+面部表情 Wan2.2 Animate Sam2_1999438379999690753.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻_2002585990092976129.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻_2039659074442235906.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻_2040676433374220290.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（优化版）_2012155604432850945.json, 视频生成/图生视频/角色重塑换脸、动作、表情 高清视频人物替换，动作迁移（支持超长时间输出）Wan2.2Animate_2012703937253609473.json, 视频生成/文生视频/Wan2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2045338312193351682.json]
+members: [图片生成/图生图/4.19号版本豆包（9_16竖版）seedance2.0水印去除+高清化V3_2045782308111785985.json, 图片生成/图生图/全能视频S横版视频动态水印消除V5（支持音频）_1974464932060205057.json, 平台全量/16_9 横板 Sparkvideo2.0 视频制作小云雀视频水印去除工具高清化去水印无损清晰处理工作流_2020724501591363586.json, 平台全量/16_9 横版 即梦Sparkvideo2.0横版 去除水印+高清优化_2021818694032171010.json, 平台全量/7201280固定竖版豆包去水印_2041428446349369346.json, 平台全量/BOSS岩小云雀Sparkvideo2.0水印去除+高清化（16 _ 9 横板）_2025504449384419329.json, 平台全量/BOSS岩小云雀Sparkvideo2.0水印去除+高清化（9_16竖版）_2025509996523429890.json, 平台全量/Ltx2.3字幕乱码去除+高清化V3_2045147059384229889.json, 平台全量/Seedance2.0去字幕+高清放大（可手动调整蒙版）_2045831897707716610.json, 平台全量/Vidu AI 横版视频去水印-（16_9横版）-Vidu去水印_2027959706806919170.json, 平台全量/Vidu AI 竖版视频去水印-（9_16竖版）-Vidu去水印_2027957518550441986.json, 平台全量/seedance2.0即梦分身视频去水印-（9_16竖版）-即梦三水印_2025875572508860418.json, 平台全量/seedance2.0即梦分身视频去水印-（9_16竖版）-即梦三水印_2028161736657870850.json, 平台全量/seedance2.0即梦分身视频去水印-（9_16竖版）-即梦三水印_2031712030087979009.json, 平台全量/seedance2.0去水印16_9竖屏视频去水印小云雀视频去水印高清化修复去除水印清晰画质放大_2020768365761011713.json, 平台全量/seedance2.0去水印9_16竖屏视频去水印小云雀视频去水印高清化修复去除水印清晰画质放大_2020729756873920514.json, 平台全量/seedance2.0去水印9_16竖屏视频去水印小云雀视频去水印高清化修复去除水印清晰画质放大_2037353794572394498.json, 平台全量/seedance2.0小云雀视频去水印-（16_9横版）-小云雀去水印-左上、左中、右下三水印_2042590850802262018.json, 平台全量/seedance2.0水印去除+高清化V3（9_16竖版）_2029725000583876610.json, 平台全量/seedance2.0豆包视频去水印-（16_9横版）-豆包去水印-单水印_2029160901542158337.json, 平台全量/seedance2.0豆包视频去水印-（16_9横版）-豆包去水印-左上和右下双水印_2040032181468274690.json, 平台全量/seedance2.0豆包视频去水印-（16：9横版）-豆包去水印-动态双水印_2050571385143083010.json, 平台全量/seedance2.0豆包视频去水印-（1_1方形）-豆包去水印-三水印_2034990615485751297.json, 平台全量/seedance2.0豆包视频去水印-（1_1方形）-豆包去水印-左上角单水印_2034996892106493954.json, 平台全量/seedance2.0豆包视频去水印-（9_16竖版）-豆包去水印-单水印_2028830812015169537.json, 平台全量/seedance2.0豆包视频去水印-（9_16竖版）-豆包去水印-左上和右下双水印_2040021937220493314.json, 平台全量/seedance2.0豆包视频去水印-（9_16竖版）-豆包去水印-左上和右下双水印_2061651671368945666.json, 平台全量/seedance2.0豆包视频去水印-（9_16竖版）-豆包去水印-左上和右下双水印_2065372914777681921.json, 平台全量/seedance2.0豆包视频去水印-（9_16竖版）-豆包去水印-左上和右下双水印_2067114067273277442.json, 平台全量/seedance2.0豆包视频去水印-（9：16竖版）-豆包去水印-动态双水印_2050944172181471234.json, 平台全量/seedance2.0豆包视频去水印-（9：16竖版）-豆包去水印-动态双水印_2068953385352654850.json, 平台全量/seedance去水印工作流+视频高清_2020793150792540161.json, 平台全量/seedance去水印工作流+视频高清_2073398451911614465.json, 平台全量/一键SD2.0豆包视频去水印-（16：9横版）-豆包去水印-动态双水印_2053779227287269377.json, 平台全量/一键SD2.0豆包视频去水印-（9_16竖版）-豆包左上和右下双水印_2049762660039835650.json, 平台全量/亲测好用视频2.0即梦视频去水印-（16_9横版）-左上和右双水印_2051193144716341250.json, 平台全量/全能视频S横版视频动态水印去除+去闪+高清化V1_2017950436182986754.json, 平台全量/全能视频S竖版视频动态水印去除+去闪+高清化V1_2017884504291020802.json, 平台全量/全能视频V 3.1水印去除+高清化V3（16_9横版）_2031704453069414402.json, 平台全量/全能视频自由去字幕印-ltx视频消除字幕+高清修复_2032049391791513601.json, 平台全量/即梦seedance2.0水印去除工作流16_9尺寸_2021552689649291266.json, 平台全量/即梦seedance2.0水印去除工作流16_9尺寸（内含教程）_2020830938120331266.json, 平台全量/即梦seedance2.0水印去除工作流3_4尺寸（内含教程）_2020740740380364802.json, 平台全量/即梦seedance2.0水印去除工作流9_16尺寸（内含教程）_2020818721312350209.json, 平台全量/即梦专属视频去水印（16_9横版）_2029079311864565762.json, 平台全量/即梦视频去水印-（16_9横版）_2043601262100357121.json, 平台全量/即梦（ 16 ：9 横版 ） SeeDance2 视频水印去除 + 高清化_2022337467902332930.json, 平台全量/视频去水印-（16_9横版）-小云雀去水印-右下角单水印_2020822974525349890.json, 平台全量/视频去水印-（9_16竖版）-即梦去水印_2020836153632493569.json, 平台全量/超能视频2.0 去水印工作流+视频小云雀即梦全尺寸去水印默认4小云雀_2021169021122514946.json, 平台全量/超能视频2.0 去水印工作流+视频高清_2020964274440511489.json, 平台全量/超能视频2.0 去水印工作流+视频高清小云雀即梦全尺寸去水印默认4小云雀_2021138846519402498.json, 平台全量/超能视频2.0即梦视频去水印-（16_9横版）-左上和右双水印_2021944987956551682.json, 平台全量/超能视频2.0豆包视频去水印-（16_9横版）-豆包去水印-三水印_2025556478672769026.json, 平台全量/超能视频2.0豆包视频去水印-（16_9横版）-豆包去水印-三水印_2044325489388560385.json, 平台全量/超能视频2.0豆包视频去水印-（9_16竖版）-豆包去水印-三水印_2025485535623520258.json, 平台全量/遮罩去视频水印（去除随变-抖音-快手等固定水印）_2066705696716058625.json, 平台全量/（新动态版）手机版即梦分身Seedance 2.0水印去除+高清化V6（9_16竖版）_2027298818005405697.json, 平台全量/（随变）去水印-seedance2.0视频局部消除+高清修复250213（9_16竖版）_2022333696119934978.json, 平台全量/🦖小云雀seedance2.0去水印高清化_2026863874552631298.json, 视频生成/图生视频/Ltx2.3字幕乱码去除+高清化V3（需要自己调整蒙版）_2043949321623707650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/Wan2.2Animate：角色+动作+表情三位一体~实现全维重塑及影随心动角色动作迁移工作流_2025792425880457218.json、视频生成/图生视频/Wan2.2Animate：角色、动作、表情三位一体~实现全维重塑及影随心动迁移工作流_2019640646428004354.json、视频生成/图生视频/Wan2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2008359387471024130.json、视频生成/图生视频/Wan2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2013086174964883457.json、视频生成/图生视频/Wan2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2034147966063218690.json…）
+> 由 `engine/knowledge_consolidation` 从 61 个 workflow 归纳得出（图片生成/图生图/4.19号版本豆包（9_16竖版）seedance2.0水印去除+高清化V3_2045782308111785985.json、图片生成/图生图/全能视频S横版视频动态水印消除V5（支持音频）_1974464932060205057.json、平台全量/16_9 横板 Sparkvideo2.0 视频制作小云雀视频水印去除工具高清化去水印无损清晰处理工作流_2020724501591363586.json、平台全量/16_9 横版 即梦Sparkvideo2.0横版 去除水印+高清优化_2021818694032171010.json、平台全量/7201280固定竖版豆包去水印_2041428446349369346.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
+- **样本数**：61
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DownloadAndLoadFlorence2Model`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `Florence2Run`
-- `Florence2toCoordinates`
-- `GrowMask`
-- `INTConstant`
+全部 61 个 workflow 都包含：
+- `DiffuEraserLoader`
+- `DiffuEraserSampler`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `PrimitiveString`
-- `RH_Captioner`
-- `RH_Translator`
-- `RMBG`
-- `Sam2Segmentation`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
+- `MaskToImage`
+- `RepeatImageBatch`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
-- `easy cleanGpuUsed`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 20/21 个有
-- `OnnxDetectionModelLoader` —— 20/21 个有
-- `PoseAndFaceDetection` —— 20/21 个有
-- `Primitive integer [Crystools]` —— 20/21 个有
-- `SimpleMath+` —— 20/21 个有
-- `easy anythingIndexSwitch` —— 20/21 个有
-- `easy showAnything` —— 17/21 个有
-- `ShowAnything|Mie` —— 12/21 个有
-- `LayerMask: MaskPreview` —— 11/21 个有
-- `PreviewImage` —— 11/21 个有
-- `WanVideoBlockSwap` —— 11/21 个有
-- `WanVideoLoraSelectMulti` —— 11/21 个有
-- `WanVideoModelLoader` —— 11/21 个有
-- `WanVideoSetLoRAs` —— 11/21 个有
-- `WanVideoTorchCompileSettings` —— 11/21 个有
-- `WanVideoVAELoader` —— 11/21 个有
-- `FaceMaskFromPoseKeypoints` —— 10/21 个有
-- `ImageCropByMaskAndResize` —— 10/21 个有
-- `ImageResizeKJ` —— 10/21 个有
-- `RHHiddenNodes` —— 10/21 个有
-- `Compare` —— 2/21 个有
-- `If ANY execute A else B` —— 2/21 个有
-- `Text` —— 2/21 个有
-- `VHS_VideoInfoLoaded` —— 1/21 个有
-- `WanVideoEncode` —— 1/21 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/21 个有
-- `WanVideoUni3C_embeds` —— 1/21 个有
+- `FlashVSR_SM_KSampler` —— 60/61 个有
+- `FlashVSR_SM_Model` —— 60/61 个有
+- `LayerUtility: PurgeVRAM V2` —— 60/61 个有
+- `MathExpression|pysssss` —— 58/61 个有
+- `JWInteger` —— 57/61 个有
+- `PreviewImage` —— 57/61 个有
+- `easy showAnything` —— 57/61 个有
+- `CreateVideo` —— 55/61 个有
+- `GetVideoComponents` —— 55/61 个有
+- `ImageConcanate` —— 53/61 个有
+- `SaveVideo` —— 46/61 个有
+- `SaveImage` —— 32/61 个有
+- `CustomAddLabel` —— 30/61 个有
+- `Label (rgthree)` —— 22/61 个有
+- `Int` —— 6/61 个有
+- `easy anythingIndexSwitch` —— 5/61 个有
+- `RunningHub Deepcleaner` —— 4/61 个有
+- `easy cleanGpuUsed` —— 3/61 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/61 个有
+- `TwoWaySwitch` —— 1/61 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.04145e+09 | 4.4513e+07 - 2.13963e+09 | 60 | 43% |
+| Prompt 约束强度(CFG) | randomize | - | 60 | 100% |
+| 采样算法 | 2 | 2 - 3 | 60 | 94% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 60 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 60 | 100% |
 
 ## 常见问题
 
@@ -97,4 +73,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1.04145e+09，观测区间 4.4513e+07 - 2.13963e+09，60 个样本，取值分散，一致性仅 43%
+- Prompt 约束强度(CFG) 最常用 randomize，60 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 3，60 个样本，取值集中（一致性 94%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，60 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，60 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 2.13963e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

@@ -3,35 +3,41 @@ name: unknown_workflow_generic_1133
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Sora2_I2V_PRO, RH_Translator, SaveVideo]
+coverage: 0.689
+common_nodes: [CR Prompt Text, Comfly_Mj, Comfly_api_set, Comfly_upload, LoadImage, SaveImage, easy imageSplitGrid, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/三图 RH 全能视频S image to Video_1991826845723152385.json, 视频生成/图生视频/两图全能视频S pro 25秒_2003738278027247617.json, 视频生成/图生视频/四图生成视频_2009157494186184706.json]
+members: [图片生成/图生图/MJ V8.1 SREF 4图（贞贞的AI工坊）_2051169793130156033.json, 图片生成/图生图/Midjourney V7 Oref最新人物一致性参考图生图V2（Relax版4图）_1921890351060041730.json, 图片生成/文生图/MJ V8.1 双模式：风格参考、  文生图(提示词自动扩展）_2051904469306228737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1133
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/三图 RH 全能视频S image to Video_1991826845723152385.json、视频生成/图生视频/两图全能视频S pro 25秒_2003738278027247617.json、视频生成/图生视频/四图生成视频_2009157494186184706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/MJ V8.1 SREF 4图（贞贞的AI工坊）_2051169793130156033.json、图片生成/图生图/Midjourney V7 Oref最新人物一致性参考图生图V2（Relax版4图）_1921890351060041730.json、图片生成/文生图/MJ V8.1 双模式：风格参考、  文生图(提示词自动扩展）_2051904469306228737.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ImageConcanate`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Prompt Text`
+- `Comfly_Mj`
+- `Comfly_api_set`
+- `Comfly_upload`
 - `LoadImage`
-- `RH_Sora2_I2V_PRO`
-- `RH_Translator`
-- `SaveVideo`
+- `SaveImage`
+- `easy imageSplitGrid`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `PMRF` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
 
 ## 典型参数
 

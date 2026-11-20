@@ -1,88 +1,79 @@
 ---
 name: text_to_image_lora_sampler_clip_69
 type: Text To Image
-frequency: 15
-level: weak
-coverage: 0.891733
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 17
+level: moderate
+coverage: 0.918706
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageBatchMulti, KSampler, LoadImage, LoraLoaderModelOnly, RunningHub_ImageQwenI2L_Loader(Style), RunningHub_ImageQwenI2L_LoraGenerator, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/Z-image turbo 文生图 - 图生图-图片反推生图_2103816033600622593.json, 图片生成/反推提示词/Z-image turbo 文生图 - 图生图-图片反推生图_2103831107908227073.json, 图片生成/反推提示词/Z-image turbo三合一 文生图图生图加图片反推提示词_2104271484683374593.json, 图片生成/反推提示词/Z-image turbo出图三玩法 反推提示词文生图图生图全支持_2104310974978285570.json, 图片生成/反推提示词/Z-image turbo图片反推生图｜文生图图生图 反推提示词还原神图_2104066068133277698.json, 图片生成/反推提示词/Z-image turbo文生图图生图｜图片反推生图 反推提示词一键复刻_2104042748226654209.json, 图片生成/图生图/FLUX3图像编辑方案，局部重绘换背景随心控_2111588628790071298.json, 图片生成/图生图/Z image超真实高清洗图无AI感 照片级质感图片优化_2105031763482472449.json, 图片生成/图生图/Z-image turbo 图片反推生图 -文生图 - 图生图_2079541950725844994.json, 图片生成/图生图/Z-image turbo 文生图 - 图生图-图片反推生图_2007738512891715586.json, 图片生成/图生图/Z-image_turbo_文生图_-_图生图-图片反推生图_2108387804148494338.json, 图片生成/图生图/Z-image_turbo_文生图_-_图生图-图片反推生图_2110182398058131457.json, 图片生成/图生图/Z-image_turbo图片反推生图，文生图图生图两相宜_2110871171519574017.json, 图片生成/图生图/超清质感修复｜klein高清放大写实图生图_2093740247157919745.json, 图片生成/文生图/Z-image turbo 图片反推生图 -文生图 - 图生图_2055905347117821953.json]
+members: [图片生成/图生图/Qwen I2L风格化（手绘）_2000864734511591426.json, 图片生成/图生图/Qwen I2L风格迁移(素描)_2000754601685024769.json, 图片生成/图生图/Qwen I2L风格迁移V1（抽象矢量）_1999455955618234370.json, 图片生成/图生图/Qwen I2L风格迁移V1（潦草手绘）_1999446540601131010.json, 图片生成/图生图/Qwen I2L风格迁移V1（素描画）_1999456220161470466.json, 图片生成/图生图/Qwen I2L风格迁移V1（蓝底扁平）_1999459545154023425.json, 图片生成/图生图/Qwen I2L风格迁移模仿-两分钟风格lora炼制_2000809836424163330.json, 图片生成/图生图/Qwen i2L-风格迁移模仿-两分钟炼风格lora_2000851690133782529.json, 图片生成/图生图/Qwen i2L-风格迁移模仿-两分钟炼风格lora_2046393246267482114.json, 图片生成/图生图/Qwen+i2L-风格迁移模仿-lora_2016779197426962433.json, 图片生成/图生图/Qwen-Image-i2L(图生Lora)_1999351494661074945.json, 图片生成/图生图/Qwen-Image-i2L风格迁移融图_1999494754196914178.json, 图片生成/图生图/RH_ImageQwenI2L图生Lora体验_1999336956502962178.json, 图片生成/图生图/imageqwenI2l图生lora_1999628296188985346.json, 图片生成/图生图/【gen全能视频Si】 qwen-image i2l参考图出风格lora_1999771864371167233.json, 图片生成/文生图/RH_ImageQwenI2L图生Lora_1999263590009929729.json, 平台全量/QwenI2L 图生Lora_2000026303300501505.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_69
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/反推提示词/Z-image turbo 文生图 - 图生图-图片反推生图_2103816033600622593.json、图片生成/反推提示词/Z-image turbo 文生图 - 图生图-图片反推生图_2103831107908227073.json、图片生成/反推提示词/Z-image turbo三合一 文生图图生图加图片反推提示词_2104271484683374593.json、图片生成/反推提示词/Z-image turbo出图三玩法 反推提示词文生图图生图全支持_2104310974978285570.json、图片生成/反推提示词/Z-image turbo图片反推生图｜文生图图生图 反推提示词还原神图_2104066068133277698.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Qwen I2L风格化（手绘）_2000864734511591426.json、图片生成/图生图/Qwen I2L风格迁移(素描)_2000754601685024769.json、图片生成/图生图/Qwen I2L风格迁移V1（抽象矢量）_1999455955618234370.json、图片生成/图生图/Qwen I2L风格迁移V1（潦草手绘）_1999446540601131010.json、图片生成/图生图/Qwen I2L风格迁移V1（素描画）_1999456220161470466.json…）
 
 - **类型**：Text To Image
-- **样本数**：15
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：17
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 17 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
+- `ImageBatchMulti`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `RunningHub_ImageQwenI2L_Loader(Style)`
+- `RunningHub_ImageQwenI2L_LoraGenerator`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 14/15 个有
-- `ImageResizeKJv2` —— 14/15 个有
-- `SeedVR2LoadDiTModel` —— 14/15 个有
-- `SeedVR2LoadVAEModel` —— 14/15 个有
-- `SeedVR2VideoUpscaler` —— 14/15 个有
-- `ShowText|pysssss` —— 13/15 个有
-- `JoinStrings` —— 12/15 个有
-- `Qwen3_VQA` —— 12/15 个有
-- `SomethingToString` —— 12/15 个有
-- `StringConstantMultiline` —— 12/15 个有
-- `TurboWanVAELoader` —— 12/15 个有
-- `JjkText` —— 8/15 个有
-- `solarL_SaveImagesToZip` —— 8/15 个有
-- `孤海注释` —— 8/15 个有
-- `ReferenceLatent` —— 2/15 个有
-- `AILab_QwenVL` —— 1/15 个有
-- `KSamplerAdvanced` —— 1/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/15 个有
-- `SetNode` —— 1/15 个有
-- `easy imageColorMatch` —— 1/15 个有
+- `CR Prompt Text` —— 10/17 个有
+- `ImageConcatMulti` —— 10/17 个有
+- `PDIMAGE_LongerSize` —— 10/17 个有
+- `PreviewImage` —— 5/17 个有
+- `Text Multiline` —— 5/17 个有
+- `ConditioningZeroOut` —— 1/17 个有
+- `ImageResizeKJv2` —— 1/17 个有
+- `PreviewAny` —— 1/17 个有
+- `PrimitiveStringMultiline` —— 1/17 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 15 | 66% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 15 | 39% |
-| 采样算法 | er_sde | - | 15 | 53% |
-| 调度器 | beta | - | 15 | 53% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
-| 宽度 | 80 | 80 - 1024 | 15 | 10% |
-| 高度 | 80 | 80 - 1536 | 15 | 4% |
+| 采样步数 | 20 | 8 - 20 | 17 | 79% |
+| Prompt 约束强度(CFG) | 8 | 1 - 8 | 17 | 69% |
+| 采样算法 | euler | - | 17 | 100% |
+| 调度器 | simple | - | 17 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
+| 宽度 | 768 | 720 - 1280 | 17 | 76% |
+| 高度 | 1280 | 768 - 1664 | 17 | 76% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 21/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，15 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，15 个样本，取值分散，一致性仅 39%
-- 采样算法 最常用 er_sde，15 个样本，一致性 53%
-- 调度器 最常用 beta，15 个样本，一致性 53%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1024，15 个样本，取值分散，一致性仅 10%
-- 高度 中位数 80，观测区间 80 - 1536，15 个样本，取值分散，一致性仅 4%
-- 高发问题（21/15 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 8 - 20，17 个样本
+- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 8，17 个样本
+- 采样算法 最常用 euler，17 个样本，一致性 100%
+- 调度器 最常用 simple，17 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 720 - 1280，17 个样本
+- 高度 中位数 1280，观测区间 768 - 1664，17 个样本

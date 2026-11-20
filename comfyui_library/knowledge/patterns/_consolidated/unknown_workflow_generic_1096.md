@@ -3,42 +3,36 @@ name: unknown_workflow_generic_1096
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.951333
-common_nodes: [ACEStepEdit, ACEStepExtend, ACEStepGen, ACEStepRepainting, GenerationParameters, LoadAudio, MultiLineLyrics, MultiLinePromptACES, SaveAudio]
+coverage: 0.844
+common_nodes: [AILab_QwenVL, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [数字人/数字人/ACE-Step一站式AI音乐生成_1920406779250020354.json, 音频生成/音频生成/ACE-Step音乐最全工作流(文生音乐_扩写_编辑_重绘)_1920169164546179074.json, 音频生成/音频生成/ace-step音乐生成工作流_1920486312262959106.json]
+members: [图片生成/反推提示词/反推图片提示词_2001227398739787777.json, 图片生成/反推提示词/反推提示词 （qwenVL）_2030186443896791042.json, 图片生成/图生图/Qwen3打标_2004433567914622978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1096
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/ACE-Step一站式AI音乐生成_1920406779250020354.json、音频生成/音频生成/ACE-Step音乐最全工作流(文生音乐_扩写_编辑_重绘)_1920169164546179074.json、音频生成/音频生成/ace-step音乐生成工作流_1920486312262959106.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/反推图片提示词_2001227398739787777.json、图片生成/反推提示词/反推提示词 （qwenVL）_2030186443896791042.json、图片生成/图生图/Qwen3打标_2004433567914622978.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ACEStepEdit`
-- `ACEStepExtend`
-- `ACEStepGen`
-- `ACEStepRepainting`
-- `GenerationParameters`
-- `LoadAudio`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `SaveAudio`
+- `AILab_QwenVL`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `easy seed` —— 2/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 

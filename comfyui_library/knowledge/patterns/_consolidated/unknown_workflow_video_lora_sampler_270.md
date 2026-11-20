@@ -1,65 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_270
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.946556
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, GetImageRangeFromBatch, ImageResizeKJv2, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int, easy mathInt]
+coverage: 0.6295
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json, 视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json, 视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json, 视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998838488834048.json, 视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998839138951168.json, 视频生成/文生视频/SCAIL-2 Single-Reference Long Video Edit_2072998856218157056.json, 视频生成/文生视频/SCAIL-2 Triple Character Motion Drive_2072998837192794112.json, 视频生成/文生视频/SCAIL-2 双人生物长视频驱动_2064973862177173505.json]
+members: [平台全量/基于SAM3的视频人物角色迁移_1992938114272477185.json, 平台全量/视频局部迁移1125_1990313307775135746.json, 数字人/数字人/1029alan测-WanAnimate_Sec-人物迁移_动作迁移_长视频循环_1983470782452047874.json, 数字人/数字人/30秒以上-WanAnimate Sec-人物迁移_动作迁移_长视频循环 1029_1983533563104665601.json, 数字人/数字人/WanAnimate动作迁移_1999767180088668161.json, 视频生成/图生视频/40秒以上-WanAnimate Sec-人物迁移_动作迁移_长视频循环_1984495051466293249.json, 视频生成/图生视频/Wan+AnimateV2指定区域迁移工作流_1995369036512997378.json, 视频生成/图生视频/WanAnimate -人物迁移_动作迁移_长视频（动作迁移支持卡通）_2058362232681091073.json, 视频生成/图生视频/WanAnimate_Sec-人物_动作迁移（解决长视频偏色等劣化问题）_2027340250565054465.json, 视频生成/图生视频/WanAnimate_Sec-人物迁移_动作迁移_长视频（动作迁移支持卡通）_2008938707402891265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_270
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/SCAIL-2 Dual Character Motion Drive_2072998835728982016.json、视频生成/文生视频/SCAIL-2 Dual Character Swap_2072998837813551104.json、视频生成/文生视频/SCAIL-2 Dual-Reference Long Video Edit_2072998856960548864.json、视频生成/文生视频/SCAIL-2 Single Character Long Video Drive_2072998857560334336.json、视频生成/文生视频/SCAIL-2 Single Character Motion Drive_2072998838488834048.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/基于SAM3的视频人物角色迁移_1992938114272477185.json、平台全量/视频局部迁移1125_1990313307775135746.json、数字人/数字人/1029alan测-WanAnimate_Sec-人物迁移_动作迁移_长视频循环_1983470782452047874.json、数字人/数字人/30秒以上-WanAnimate Sec-人物迁移_动作迁移_长视频循环 1029_1983533563104665601.json、数字人/数字人/WanAnimate动作迁移_1999767180088668161.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 10 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `GetImageRangeFromBatch`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `Int`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
-- `easy compare`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 - `easy int`
-- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 4/9 个有
-- `ImageCompositeMasked` —— 4/9 个有
-- `SAM3_TrackToMask` —— 4/9 个有
-- `CLIPLoaderGGUF` —— 1/9 个有
-- `UnetLoaderGGUF` —— 1/9 个有
+- `GrowMaskWithBlur` —— 9/10 个有
+- `PrimitiveInt` —— 9/10 个有
+- `SeCModelLoader` —— 9/10 个有
+- `SeCVideoSegmentation` —— 9/10 个有
+- `easy showAnything` —— 9/10 个有
+- `ImageFromBatch` —— 8/10 个有
+- `PreviewImage` —— 8/10 个有
+- `WanVideoTorchCompileSettings` —— 8/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
+- `PointsEditor` —— 6/10 个有
+- `CR Text` —— 3/10 个有
+- `ColorMatch` —— 2/10 个有
+- `DWPreprocessor` —— 2/10 个有
+- `Float` —— 2/10 个有
+- `PixelPerfectResolution` —— 2/10 个有
+- `PrimitiveFloat` —— 2/10 个有
+- `Sa2VANodeTpl` —— 2/10 个有
+- `SimpleMath+` —— 2/10 个有
+- `easy mathInt` —— 2/10 个有
+- `ImpactImageBatchToImageList` —— 1/10 个有
+- `LayerMask: MaskGrow` —— 1/10 个有
+- `LoadSAM3Model` —— 1/10 个有
+- `MaskListToMaskBatch` —— 1/10 个有
+- `SAM3Segmentation` —— 1/10 个有
+- `WanVideoContextOptions` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
 
 ## 典型参数
 

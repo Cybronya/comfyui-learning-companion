@@ -1,67 +1,74 @@
 ---
 name: unknown_workflow_sampler_clip_unet_98
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.892818
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.906667
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json, 图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json, 图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json, 图片生成/文生图/Krea2 动画人物文生图_2090097765106933761.json, 图片生成/文生图/Krea2-turbo新模型真实人像_2071435896448184322.json, 图片生成/文生图/VividMuse Krea2真实人像V1_2071177424569720833.json, 图片生成/文生图/VividMuse Z-Image-Turbo-全能图片G2-Style_2057436016042139650.json, 图片生成/文生图/VividMuse Z-Image-turbo-SDA 完美破解随机性_2037532958734688257.json, 图片生成/文生图/VividMuse Z-Image家族模型大对比(2)_2034289450481623041.json, 图片生成/文生图/VividMuse Z-Image家族模型大对比_2021580062834827265.json, 图片生成/文生图/Z-Image-turbo Qwen3 4B Engineer V4和Flow-DPO比对_2028451786385793026.json]
+members: [图片生成/图生图/即梦角色标准参考三视图_2026223411495706625.json, 图片生成/图生图/去ai-V2版本_2051151522649657345.json, 图片生成/图生图/去亮_2067431169767071746.json, 图片生成/图生图/双图编辑_2065803421642481665.json, 图片生成/图生图/双图编辑_2066850392478146562.json, 图片生成/图生图/双图编辑版+全能模型（FLUX2+Klein）_2012868598808715265.json, 图片生成/图生图/告别等待：FLUX.2 [klein] 开启“实时视觉合成”新时代_2012151475887149058.json, 图片生成/图生图/图片换背景工作流+全节点注释_2086268740781559809.json, 图片生成/图生图/幻影疾驰 • 视觉冲击CG造像师：定格震撼人心的游戏视觉大片_2013554944284037122.json, 图片生成/图生图/真人感换装_2105190551246172161.json, 图片生成/图生图/素描手绘风格迁移-Flux2 Klien_2065681291726643202.json, 图片生成/图生图/风格迁移-精准画风还原_Flux2 Klien_2066710064941060097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_98
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/Beyond Reality Z-image人像写真文生图V1_2003169101386252290.json、图片生成/文生图/Beyond Reality Z-image超现实人像写真文生图_2004848724062994434.json、图片生成/文生图/DG_基础Zimage文生图+增强随机性_2011606529237065730.json、图片生成/文生图/Krea2 动画人物文生图_2090097765106933761.json、图片生成/文生图/Krea2-turbo新模型真实人像_2071435896448184322.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/即梦角色标准参考三视图_2026223411495706625.json、图片生成/图生图/去ai-V2版本_2051151522649657345.json、图片生成/图生图/去亮_2067431169767071746.json、图片生成/图生图/双图编辑_2065803421642481665.json、图片生成/图生图/双图编辑_2066850392478146562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
+- `Flux2Scheduler`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 8/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/11 个有
-- `easy promptList` —— 7/11 个有
-- `LayerUtility: ImageReel` —— 4/11 个有
-- `LayerUtility: ImageReelComposit` —— 4/11 个有
-- `PrimitiveStringMultiline` —— 4/11 个有
-- `Seed (rgthree)` —— 4/11 个有
-- `DF_Text_Box` —— 3/11 个有
-- `PrimitiveInt` —— 3/11 个有
-- `CR Prompt Text` —— 2/11 个有
-- `GetNode` —— 2/11 个有
-- `ResolutionSelector` —— 2/11 个有
-- `SetNode` —— 2/11 个有
-- `CLIPLoaderGGUF` —— 1/11 个有
-- `CheckpointLoaderSimple` —— 1/11 个有
-- `Saturation` —— 1/11 个有
+- `EmptyFlux2LatentImage` —— 11/12 个有
+- `GetImageSize` —— 11/12 个有
+- `ImageScaleToTotalPixels` —— 9/12 个有
+- `CR Text` —— 8/12 个有
+- `PreviewImage` —— 7/12 个有
+- `LayerUtility: ImageReel` —— 6/12 个有
+- `LayerUtility: ImageReelComposit` —— 6/12 个有
+- `LoraLoaderModelOnly` —— 6/12 个有
+- `Image Comparer (rgthree)` —— 4/12 个有
+- `ImageStitch` —— 4/12 个有
+- `PrimitiveFloat` —— 4/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/12 个有
+- `easy imageConcat` —— 2/12 个有
+- `AILab_QwenVL` —— 1/12 个有
+- `CR Text Concatenate` —— 1/12 个有
+- `EmptyLatentImage` —— 1/12 个有
+- `PlaySound|pysssss` —— 1/12 个有
+- `PrimitiveStringMultiline` —— 1/12 个有
+- `ShowText|pysssss` —— 1/12 个有
+- `TextCombinerTwo` —— 1/12 个有
+- `easy cleanGpuUsed` —— 1/12 个有
+- `easy mathInt` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1280 | 512 - 1536 | 11 | 63% |
-| 高度 | 1920 | 512 - 2048 | 11 | 63% |
-| 采样步数 | fixed | - | 11 | 55% |
-| Prompt 约束强度(CFG) | 8 | 8 - 15 | 11 | 72% |
-| 采样算法 | 1 | 1 - 2 | 11 | 67% |
-| 调度器 | euler | - | 11 | 55% |
-| 重绘幅度 | simple | - | 11 | 45% |
+| 宽度 | 1512 | - | 1 | 100% |
+| 高度 | 1512 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -69,11 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1280，观测区间 512 - 1536，11 个样本
-- 高度 中位数 1920，观测区间 512 - 2048，11 个样本
-- 采样步数 最常用 fixed，11 个样本，一致性 55%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 15，11 个样本
-- 采样算法 中位数 1，观测区间 1 - 2，11 个样本
-- 调度器 最常用 euler，11 个样本，一致性 55%
-- 重绘幅度 最常用 simple，11 个样本，一致性 45%
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

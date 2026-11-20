@@ -3,68 +3,71 @@ name: unknown_workflow_upscale_lora_sampler_7
 type: Unknown Workflow
 frequency: 18
 level: strong
-coverage: 0.771111
-common_nodes: [CLIPSetLastLayer, CLIPTextEncode, ImageScaleBy, ImageUpscaleWithModel, ImpactStringSelector, Int, JjkConcat, JjkText, KSampler, PrimitiveFloat, SaveImage, StringConcatenate, TextRandomMultiline, UpscaleModelLoader, VAEDecode, easy loraStack, easy loraStackApply, easy showAnything, easy textSwitch, math_calculate, workflow>MainLoad]
+coverage: 0.929889
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Model Input Switch, EmptyLatentImage, FluxGuidance, GetImageSize, ImageResizeKJ, ImageUpscaleWithModel, KSamplerSelect, LoadImage, ModelSamplingFlux, Number to Int, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuTextEncoderLoader, RH_Captioner, RH_Translator, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelApply, StyleModelLoader, Text to Number, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/3D动漫Illustrious文生图_无限制_2026917188258500609.json, 图片生成/文生图/Illustrious一键生成清纯女友_2042810792273252354.json, 图片生成/文生图/Illustrious亚洲女性写实_2050896068455485442.json, 图片生成/文生图/Illustrious文生图_无限制_2042480186519719937.json, 图片生成/文生图/Illustrious文生图_无限制动漫_2026498379655684098.json, 图片生成/文生图/Illustrious文生瑟图_2035035529380634626.json, 图片生成/文生图/Illustrious新世界_2035673216508764161.json, 图片生成/文生图/Illustrious无限制动漫-3D-大雷_2037095349076103170.json, 图片生成/文生图/Illustrious混音文生图_一键生成美女_2039291235839512578.json, 图片生成/文生图/Illustrious科幻机甲_2050905003711311874.json, 图片生成/文生图/Illustrious超越2.5D_2031655086094557186.json, 图片生成/文生图/SDXL文生图_无限制_2026919557071376386.json, 图片生成/文生图/SDXL文生美图_2026534975964712961.json, 图片生成/文生图/SDXL文生美图_2033772089961877506.json, 图片生成/文生图/SDXL文生美图无限制_2040632487734419458.json, 图片生成/文生图/WAI Illustrious全元素随机工作流ver1.84 [SakuragiKiri]_1950577025067175938.json, 图片生成/文生图/WAI Illustrious文生瑟图_二次元_动漫_2023677640929972226.json, 图片生成/文生图/一键生成日本美女壁纸_2036112611254734850.json]
+members: [图片生成/反推提示词/reduxV2-反推洗图万能流_2049374493121974273.json, 图片生成/反推提示词/反推洗图万能流_2066494855731310593.json, 图片生成/图生图/reduxV2-反推洗图万能流_1932236006693437441.json, 图片生成/图生图/reduxV2-反推洗图万能流_1957731194199965697.json, 图片生成/图生图/reduxV2-反推洗图万能流_2039339997765050369.json, 图片生成/图生图/reduxV2-反推洗图万能流_2039350395746656257.json, 图片生成/图生图/reduxV2-反推洗图万能流_2082016128121004033.json, 图片生成/图生图/reduxV2-反推洗图万能流_2086653747555561474.json, 图片生成/图生图/reduxV2-反推洗图万能流_2090263579768483841.json, 图片生成/图生图/reduxV2-反推洗图万能流_2104757049266622466.json, 图片生成/图生图/反推洗图万能流---eduxV2_2068061825878548482.json, 图片生成/图生图/反推洗图万能流---eduxV2_2068179172471693314.json, 图片生成/图生图/洗图反推图片工作流_2046057407863857154.json, 图片生成/图生图/超好用🔥图片反推工作流，风格画作-看上什么画风直接截图_2046487806398173186.json, 平台全量/reduxV2-反推洗图万能流_1915605940337577985.json, 平台全量/reduxV2-反推洗图万能流_2030284871385485314.json, 数字人/数字人/reduxV2-反推洗图万能流_2041584997311717377.json, 视频生成/图生视频/3.0最新反推洗图万能流_2066082702180311041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/3D动漫Illustrious文生图_无限制_2026917188258500609.json、图片生成/文生图/Illustrious一键生成清纯女友_2042810792273252354.json、图片生成/文生图/Illustrious亚洲女性写实_2050896068455485442.json、图片生成/文生图/Illustrious文生图_无限制_2042480186519719937.json、图片生成/文生图/Illustrious文生图_无限制动漫_2026498379655684098.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/反推提示词/reduxV2-反推洗图万能流_2049374493121974273.json、图片生成/反推提示词/反推洗图万能流_2066494855731310593.json、图片生成/图生图/reduxV2-反推洗图万能流_1932236006693437441.json、图片生成/图生图/reduxV2-反推洗图万能流_1957731194199965697.json、图片生成/图生图/reduxV2-反推洗图万能流_2039339997765050369.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：18
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 18 个 workflow 都包含：
-- `CLIPSetLastLayer`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ImageScaleBy`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Model Input Switch`
+- `EmptyLatentImage`
+- `FluxGuidance`
+- `GetImageSize`
+- `ImageResizeKJ`
 - `ImageUpscaleWithModel`
-- `ImpactStringSelector`
-- `Int`
-- `JjkConcat`
-- `JjkText`
-- `KSampler`
-- `PrimitiveFloat`
+- `KSamplerSelect`
+- `LoadImage`
+- `ModelSamplingFlux`
+- `Number to Int`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuTextEncoderLoader`
+- `RH_Captioner`
+- `RH_Translator`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `StringConcatenate`
-- `TextRandomMultiline`
+- `StyleModelApply`
+- `StyleModelLoader`
+- `Text to Number`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `easy loraStack`
-- `easy loraStackApply`
+- `VAEEncode`
+- `VAELoader`
+- `easy cleanGpuUsed`
 - `easy showAnything`
-- `easy textSwitch`
-- `math_calculate`
-- `workflow>MainLoad`
 
 **可变部分**（部分 workflow 才有）：
-- `CompressImages` —— 17/18 个有
-- `DuckHideNode` —— 17/18 个有
-- `RandomInt` —— 17/18 个有
-- `easy batchAnything` —— 17/18 个有
-- `easy forLoopEnd` —— 17/18 个有
-- `easy forLoopStart` —— 17/18 个有
-- `easy mathInt` —— 17/18 个有
-- `CR Split String` —— 1/18 个有
-- `PrimitiveString` —— 1/18 个有
+- `PreviewImage` —— 17/18 个有
+- `Image Comparer (rgthree)` —— 2/18 个有
+- `Get Image Size` —— 1/18 个有
+- `ImageScale` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 18 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 18 | 100% |
-| 采样算法 | euler_ancestral | - | 18 | 94% |
-| 调度器 | normal | - | 18 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+| 宽度 | 512 | 512 - 512 | 18 | 100% |
+| 高度 | 512 | 512 - 512 | 18 | 100% |
 
 ## 常见问题
 
@@ -72,8 +75,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，18 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，18 个样本，一致性 94%
-- 调度器 最常用 normal，18 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 宽度 中位数 512，观测区间 512 - 512，18 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，18 个样本，取值集中（一致性 100%）

@@ -1,72 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_927
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5285
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, CustomAddLabel, Float, GetNode, INTConstant, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, RH_LLMAPI_Pro_Node, SetNode, ShowText, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoNAG, easy anythingIndexSwitch]
+frequency: 3
+level: moderate
+coverage: 0.784667
+common_nodes: [AIO_Preprocessor, ApplyFaceProcessor, FaceProcessorLoader, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/video_wan2_2_14B_i2v_高动态_根据时长_自动结构化提示词_2014690276282998786.json, 视频生成/图生视频/video_wan2_2_14B_i2v_高动态_自动提示词_2013261998393397250.json]
+members: [视频生成/图生视频/自定义人脸_表情动作精准克隆_1957324783199383553.json, 视频生成/图生视频/视频生成视频_图生视频-动作迁移+人脸迁移-wan2.1_1958334806830551042.json, 视频生成/文生视频/03-12-02-WAN2.1-参考人物视频转绘-Standin+Vace_1989933948379820033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_927
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/video_wan2_2_14B_i2v_高动态_根据时长_自动结构化提示词_2014690276282998786.json、视频生成/图生视频/video_wan2_2_14B_i2v_高动态_自动提示词_2013261998393397250.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/自定义人脸_表情动作精准克隆_1957324783199383553.json、视频生成/图生视频/视频生成视频_图生视频-动作迁移+人脸迁移-wan2.1_1958334806830551042.json、视频生成/文生视频/03-12-02-WAN2.1-参考人物视频转绘-Standin+Vace_1989933948379820033.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGZeroStar`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `CustomAddLabel`
-- `Float`
-- `GetNode`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
 - `INTConstant`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `RH_LLMAPI_Pro_Node`
-- `SetNode`
-- `ShowText`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanVideoNAG`
-- `easy anythingIndexSwitch`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/2 个有
-- `MultiTextConcatenate` —— 1/2 个有
-- `RH_Utils` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `Int` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `CR Text` —— 1/3 个有
+- `Evaluate Integers` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `easy convertAnything` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 6 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | lcm | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -74,9 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

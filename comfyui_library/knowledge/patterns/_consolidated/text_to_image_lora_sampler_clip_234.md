@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_234
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.886444
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.896111
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/全系列增速工作流Minimax文生视频视频生视频图生视频_2087333816103948290.json, 视频生成/文生视频/六段式自动生成自动校验MiniMax H3 Ref2VA剧本直出9图参考成片原生音画同步_2088355373936893954.json, 视频生成/文生视频/剑斗多参模式视频生成｜战斗动作多参考一致性_2094543565945921538.json, 视频生成/文生视频/双采首尾帧战斗模式｜文生图生视频特效生成_2094783307044188162.json, 视频生成/文生视频/多参模式剑斗生成｜文生图生视频战斗特效工作流_2094789270803410946.json, 视频生成/文生视频/多参考全模态生成器｜MiniMax H3文生视频生视频_2091215931107266561.json, 视频生成/文生视频/战斗双采首尾帧模式｜文生视频特效视频生成_2094537849541578753.json, 视频生成/文生视频/打斗强化三件套｜MiniMax_H3二采+打斗lora+动作修复_2092876212183068673.json, 视频生成/文生视频/打斗强化二采修复｜MiniMax H3打斗lora文生图生视频_2092687490728681474.json]
+members: [视频生成/文生视频/Minimax H3文生视频工作流｜高质量视频生成_2095259805958098946.json, 视频生成/文生视频/Minimax H3潜空间放大FL2VA版｜文生图生视频工作流_2097781976299294722.json, 视频生成/文生视频/MinimaxH3文生视频4步LORA加速-文生视频工作流_2087387239872557058.json, 视频生成/文生视频/Minimax_h3超级加速文生视频｜角色一致表演流畅省币首选_2103681865688375297.json, 视频生成/文生视频/REF2VA-Upscale双采样｜MiniMax_H3视频生成角色表演_2092872749298569217.json, 视频生成/文生视频/Ref2VA多参考全能生成｜MiniMax H3文生图生视频工作流_2093072782388187137.json, 视频生成/文生视频/Ref2VA多参考｜MiniMax H3全能视频生成直出_2090570005984407553.json, 视频生成/文生视频/多参考全能生成｜MiniMax H3 Ref2VA视频处理_2093230903848947714.json, 视频生成/文生视频/文生+首尾帧全能｜MiniMax H3 FL2VA视频生成_2093227972433104897.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_234
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/全系列增速工作流Minimax文生视频视频生视频图生视频_2087333816103948290.json、视频生成/文生视频/六段式自动生成自动校验MiniMax H3 Ref2VA剧本直出9图参考成片原生音画同步_2088355373936893954.json、视频生成/文生视频/剑斗多参模式视频生成｜战斗动作多参考一致性_2094543565945921538.json、视频生成/文生视频/双采首尾帧战斗模式｜文生图生视频特效生成_2094783307044188162.json、视频生成/文生视频/多参模式剑斗生成｜文生图生视频战斗特效工作流_2094789270803410946.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/Minimax H3文生视频工作流｜高质量视频生成_2095259805958098946.json、视频生成/文生视频/Minimax H3潜空间放大FL2VA版｜文生图生视频工作流_2097781976299294722.json、视频生成/文生视频/MinimaxH3文生视频4步LORA加速-文生视频工作流_2087387239872557058.json、视频生成/文生视频/Minimax_h3超级加速文生视频｜角色一致表演流畅省币首选_2103681865688375297.json、视频生成/文生视频/REF2VA-Upscale双采样｜MiniMax_H3视频生成角色表演_2092872749298569217.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -28,18 +28,15 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -48,26 +45,34 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 8/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/9 个有
-- `MiniMaxH3ReferenceToVideo` —— 7/9 个有
-- `DisableNoise` —— 6/9 个有
-- `ExtendIntermediateSigmas` —— 6/9 个有
-- `SplitSigmasDenoise` —— 6/9 个有
-- `easy cleanGpuUsed` —— 6/9 个有
-- `MiniMaxH3ImageToVideo` —— 3/9 个有
-- `GetVideoComponents` —— 2/9 个有
-- `LTXVConcatAVLatent` —— 2/9 个有
-- `LTXVSeparateAVLatent` —— 2/9 个有
-- `LoadAudio` —— 2/9 个有
-- `LoadVideo` —— 2/9 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/9 个有
-- `CR Float To Integer` —— 1/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `MiniMaxH3BlockCacheT8` —— 1/9 个有
-- `RHLLMChatNode` —— 1/9 个有
-- `UniBlockSwap` —— 1/9 个有
-- `VRAMReserver` —— 1/9 个有
+- `CreateVideo` —— 7/9 个有
+- `SaveVideo` —— 7/9 个有
+- `LTXVConcatAVLatent` —— 6/9 个有
+- `LTXVSeparateAVLatent` —— 6/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/9 个有
+- `SplitSigmas` —— 6/9 个有
+- `LoadImage` —— 5/9 个有
+- `MiniMaxH3ImageToVideo` —— 5/9 个有
+- `MiniMaxH3SigmaShift` —— 5/9 个有
+- `MinimaxH3LatentUpscaler3D` —— 5/9 个有
+- `PrimitiveStringMultiline` —— 5/9 个有
+- `H3SigmaRefiner` —— 4/9 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/9 个有
+- `ModelPreviewOverrideKJ` —— 4/9 个有
+- `easy showAnything` —— 4/9 个有
+- `AudioCrop` —— 3/9 个有
+- `LoadAudio` —— 3/9 个有
+- `StringFunction|pysssss` —— 3/9 个有
+- `VHS_LoadVideo` —— 3/9 个有
+- `VHS_VideoCombine` —— 3/9 个有
+- `ManualSigmas` —— 2/9 个有
+- `ModelAttentionBackend` —— 2/9 个有
+- `CR Text` —— 1/9 个有
+- `MinimaxH3LatentUpscalerNode3D` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `PainterVRAM` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
+- `easy int` —— 1/9 个有
 
 ## 典型参数
 

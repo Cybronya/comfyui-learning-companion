@@ -1,33 +1,39 @@
 ---
 name: unknown_workflow_generic_109
 type: Unknown Workflow
-frequency: 14
+frequency: 16
 level: moderate
-coverage: 0.900571
-common_nodes: [SaveImage]
+coverage: 0.798562
+common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/Image_capybara_v0_1_image_edit.json, comfyui-workflow-templates-json/Image_capybara_v0_1_text_to_image.json, 图片生成/图生图/Qwen Image 3.0真实测试效果（测评视频看T8B站）_2079804249256579073.json, 图片生成/图生图/plus-template_2090730241135304705.json, 图片生成/图生图/ultra-template_2090730690630471681.json, 图片生成/文生图/Test-不要运行_1967141889277353985.json, 图片生成/文生图/听雪楼占位工作流_2102078588089622529.json, 数字人/数字人/复现问题工作流_2089642846738538497.json, 数字人/数字人/空白工作流_2054899208875978754.json, 视频生成/图生视频/人物替换视频换装娱乐版180帧 动作迁移图生视频换装方案_2091174606882304001.json, 视频生成/文生视频/Anima-2.9B｜三阶高质量渲染_2089668746540572673.json, 视频生成/文生视频/Anima-2.9B｜文生图+修脸+修手_2089672439675580417.json, 视频生成/文生视频/Qwen 2.0测试效果及提示词_2021915762851586049.json, 视频生成/文生视频/全能参考生视频｜海螺H3极速6分钟10秒标准模式_2092159573208682498.json]
+members: [图片生成/图生图/FLUX.1Kontext一致性-换背景-风格转换-图像编辑测试_1928698043158401026.json, 图片生成/图生图/Flux Kontext 2D人物角色转3D_1930499426656141314.json, 图片生成/图生图/Flux Kontext 人物发型设计参考_1930521289965080578.json, 图片生成/图生图/Flux Kontext 动漫转真人_1931315723468255234.json, 图片生成/图生图/Flux Kontext 换背景_1930441652001783810.json, 图片生成/图生图/Flux Kontext 明星撕拉片风格_1930442669259132929.json, 图片生成/图生图/Flux Kontext 玩偶换装+场景_1930205044313067521.json, 图片生成/图生图/Flux Kontext 简易一键3D皮克斯_1931318230567026690.json, 图片生成/图生图/Flux Kontext 简易动漫转真人_1931946293634248706.json, 图片生成/图生图/Flux Kontext 美甲设计灵感_1930517989458874370.json, 图片生成/图生图/Flux Kontext 胶片滤镜风格_1930219808170872834.json, 图片生成/图生图/Flux图像编辑模型Kontext API版_1928517504623128577.json, 图片生成/图生图/Kontext产品换背景_2005920838870331394.json, 图片生成/图生图/Kontext多图迁移融合工作流_1932849669003415554.json, 图片生成/图生图/kontext 产品与背景融合丨双图模式 全自动作图_1944656011766452225.json, 平台全量/无需提示词图像编辑FLUX.1 Kontext一键直出人物_IP_万物展示三视图超强媲美全能图片G4o_1931253856980938753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_109
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（comfyui-workflow-templates-json/Image_capybara_v0_1_image_edit.json、comfyui-workflow-templates-json/Image_capybara_v0_1_text_to_image.json、图片生成/图生图/Qwen Image 3.0真实测试效果（测评视频看T8B站）_2079804249256579073.json、图片生成/图生图/plus-template_2090730241135304705.json、图片生成/图生图/ultra-template_2090730690630471681.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/FLUX.1Kontext一致性-换背景-风格转换-图像编辑测试_1928698043158401026.json、图片生成/图生图/Flux Kontext 2D人物角色转3D_1930499426656141314.json、图片生成/图生图/Flux Kontext 人物发型设计参考_1930521289965080578.json、图片生成/图生图/Flux Kontext 动漫转真人_1931315723468255234.json、图片生成/图生图/Flux Kontext 换背景_1930441652001783810.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `LoadImage`
+- `RH_ComfyFluxKontext`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 13/14 个有
-- `4f4ddf39-1508-4d34-a35c-ff10e6ce995b` —— 2/14 个有
+- `RH_Translator` —— 15/16 个有
+- `ConstrainImage|pysssss` —— 13/16 个有
+- `PreviewImage` —— 7/16 个有
+- `ImageConcanate` —— 2/16 个有
+- `ACE_TextGoogleTranslate` —— 1/16 个有
+- `easy showAnything` —— 1/16 个有
 
 ## 典型参数
 

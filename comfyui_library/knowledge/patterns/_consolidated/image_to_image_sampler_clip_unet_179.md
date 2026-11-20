@@ -1,39 +1,35 @@
 ---
 name: image_to_image_sampler_clip_unet_179
 type: Image To Image
-frequency: 2
+frequency: 3
 level: weak
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, ImageConcatMulti, ImageScaleToTotalPixels, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, RH_Nano_Banana2_Gemini31Flash, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.928333
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageResizeKJv2, KSampler, LoadImage, ModelSamplingSD3, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/土狗0523V42_2055766889799921666.json, 图片生成/图生图/高清生成0509_2052830473717592065.json]
+members: [图片生成/图生图/Wan2.2——图生图_1951276154261024770.json, 图片生成/图生图/Wan2.2图生图_1989916164019154946.json, 图片生成/图生图/Wan2.2图生图最优实现_1950904111136972802.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_179
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/土狗0523V42_2055766889799921666.json、图片生成/图生图/高清生成0509_2052830473717592065.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Wan2.2——图生图_1951276154261024770.json、图片生成/图生图/Wan2.2图生图_1989916164019154946.json、图片生成/图生图/Wan2.2图生图最优实现_1950904111136972802.json）
 
 - **类型**：Image To Image
-- **样本数**：2
+- **样本数**：3
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `ImageConcatMulti`
-- `ImageScaleToTotalPixels`
+- `ImageResizeKJv2`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `ReferenceLatent`
+- `ModelSamplingSD3`
+- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -41,21 +37,24 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageAddNoise` —— 1/2 个有
-- `ReActorFaceBoost` —— 1/2 个有
-- `ReActorFaceSwapOpt` —— 1/2 个有
-- `ReActorOptions` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `JoinStrings` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
+- `QZ_ResolutionPreset` —— 1/3 个有
+- `Qwen3_VQA` —— 1/3 个有
+- `String Literal` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `easy seed` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1.35 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 10 | 10 - 20 | 3 | 65% |
+| Prompt 约束强度(CFG) | 3.5 | 1 - 3.5 | 3 | 56% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 0.4 | 0.35 - 1 | 3 | 49% |
 
 ## 常见问题
 
@@ -63,9 +62,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.35，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 10，观测区间 10 - 20，3 个样本
+- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 3.5，3 个样本
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 0.4，观测区间 0.35 - 1，3 个样本，取值分散，一致性仅 49%

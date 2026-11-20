@@ -1,71 +1,84 @@
 ---
 name: unknown_workflow_video_lora_sampler_205
 type: Unknown Workflow
-frequency: 10
+frequency: 12
 level: moderate
-coverage: 0.7847
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.862167
+common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, SamplerCustom, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [图片生成/文生图/文字转音频+对口型+图生视频+标准1080P_1970453209825374209.json, 数字人/数字人/慕斯AI_InfiniteTalk_数字人口播_图生视频_2112165352271597570.json, 视频生成/图生视频/D_I2V（V1.1.1）_2047149486551605249.json, 视频生成/图生视频/I2V-林小茶_2047141901102489601.json, 视频生成/图生视频/V4.1（demo2）_2051961839407386625.json, 视频生成/图生视频/X_I2V（V1.1.1）_2048682075724718081.json, 视频生成/图生视频/手串替换_2054096337670557697.json, 视频生成/图生视频/手串生活方式短视频不露脸稳定版_2060540846868619266.json, 视频生成/图生视频/手串生活版_v5.2_原稿精准字幕版_2062041921597562882.json, 视频生成/图生视频/鸿茅药酒志_2054799806060605442.json]
+members: [视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2058444254300696577.json, 视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2070137230106124289.json, 视频生成/图生视频/LTX2.3-多图分镜导演，支持漫剧、带货视频、数字人等效果_2055882037822795778.json, 视频生成/图生视频/LTX2.3-音乐数字人演唱效果（多图分镜+情绪控制）_2057812163363950593.json, 视频生成/图生视频/ltx2.3导演台 九宫格 半自动图生视频_2069309703959695362.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2064410253088878594.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2073463668316323840.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2076823460927598594.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2082315667667243010.json, 视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2108006068822568961.json, 视频生成/图生视频/ltx2.3导演台_去字幕_短剧视频_漫剧视频_电商视频_多宫格_六宫格_九宫格_自动图生视频_2116135974811037697.json, 视频生成/图生视频/牛叉 爆款视频反推+产品带货视频 LTX2.3导演台 生成，竖版全自动 去字幕 四宫格六宫格九宫格_2069522054554148865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_205
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/文字转音频+对口型+图生视频+标准1080P_1970453209825374209.json、数字人/数字人/慕斯AI_InfiniteTalk_数字人口播_图生视频_2112165352271597570.json、视频生成/图生视频/D_I2V（V1.1.1）_2047149486551605249.json、视频生成/图生视频/I2V-林小茶_2047141901102489601.json、视频生成/图生视频/V4.1（demo2）_2051961839407386625.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2058444254300696577.json、视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2070137230106124289.json、视频生成/图生视频/LTX2.3-多图分镜导演，支持漫剧、带货视频、数字人等效果_2055882037822795778.json、视频生成/图生视频/LTX2.3-音乐数字人演唱效果（多图分镜+情绪控制）_2057812163363950593.json、视频生成/图生视频/ltx2.3导演台 九宫格 半自动图生视频_2069309703959695362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadAudio`
+全部 12 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAudio`
+- `SamplerCustom`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `MelBandRoFormerModelLoader` —— 9/10 个有
-- `MelBandRoFormerSampler` —— 9/10 个有
-- `WanVideoPassImagesFromSamples` —— 9/10 个有
-- `FB_Qwen3TTSVoiceClone` —— 8/10 个有
-- `GetImageSize` —— 8/10 个有
-- `ResizeImagesByLongerEdge` —— 8/10 个有
-- `Text` —— 8/10 个有
-- `GetNode` —— 6/10 个有
-- `PreviewAny` —— 6/10 个有
-- `SetNode` —— 6/10 个有
-- `WanVideoTorchCompileSettings` —— 6/10 个有
-- `Wav2VecModelLoader` —— 5/10 个有
-- `PreviewAudio` —— 4/10 个有
-- `CR Prompt Text` —— 1/10 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/10 个有
-- `GIMMVFI_interpolate` —— 1/10 个有
-- `HAIGC_VideoSubtitleTimestampPro` —— 1/10 个有
-- `ImageUpscaleWithModel` —— 1/10 个有
-- `IndexTTS2Run` —— 1/10 个有
-- `SaveAudio` —— 1/10 个有
-- `UpscaleModelLoader` —— 1/10 个有
-- `WanVideoDecode` —— 1/10 个有
-- `ZML_TextInput` —— 1/10 个有
+- `ComfySwitchNode` —— 11/12 个有
+- `PrimitiveBoolean` —— 11/12 个有
+- `CR Text` —— 8/12 个有
+- `CS-LTXGridDirector` —— 8/12 个有
+- `RHHiddenNodes` —— 8/12 个有
+- `YusuLTXDirectorGuide` —— 7/12 个有
+- `孤海注释` —— 7/12 个有
+- `PreviewAny` —— 6/12 个有
+- `RH_LLMAPI_Pro_Node` —— 6/12 个有
+- `LTXDirectorGuide` —— 5/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/12 个有
+- `GuHaiAutoImageSplit` —— 4/12 个有
+- `LTXDirector` —— 4/12 个有
+- `Preview from image [Crystools]` —— 4/12 个有
+- `PreviewImage` —— 4/12 个有
+- `easy imageSave` —— 4/12 个有
+- `Fast Groups Muter (rgthree)` —— 3/12 个有
+- `GPTImage2PromptPreview` —— 3/12 个有
+- `Label (rgthree)` —— 3/12 个有
+- `MuyeTextEditOutput` —— 3/12 个有
+- `RH_RhartImageG2ImageToImage` —— 3/12 个有
+- `ImageRGBChannel` —— 1/12 个有
+- `LTXVChunkFeedForward` —— 1/12 个有
+- `LayerColor: Levels` —— 1/12 个有
+- `LoadVideo` —— 1/12 个有
+- `PathchSageAttentionKJ` —— 1/12 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/12 个有
+- `ShellAgentPluginOutputText` —— 1/12 个有
+- `easy showAnything` —— 1/12 个有
 
 ## 典型参数
 

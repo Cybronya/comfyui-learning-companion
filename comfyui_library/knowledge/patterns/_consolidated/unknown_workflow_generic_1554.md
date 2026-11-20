@@ -3,36 +3,33 @@ name: unknown_workflow_generic_1554
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.727
-common_nodes: [GetImageSizeAndCount, Image Comparer (rgthree), ImageConcanate, ImageScaleBy, LoadImage, PreviewImage, PrimitiveFloat, SaveImage, SeedVR2, SeedVR2BlockSwap]
+coverage: 0.769
+common_nodes: [AddLabel, AddNode, LoadImage, MathExpression|pysssss, SaveImage, String, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/生图-图放大-SeedVR_1983006976567312386.json, 图片生成/图生图/生图-图放大-SeedVR_2066055902777896960.json]
+members: [图片生成/图生图/0点抽奖MyShell2.0激活码工作流_1948770721422614529.json, 图片生成/文生图/0点抽奖Lovart激活码工作流_1924472070841749505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1554
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/生图-图放大-SeedVR_1983006976567312386.json、图片生成/图生图/生图-图放大-SeedVR_2066055902777896960.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/0点抽奖MyShell2.0激活码工作流_1948770721422614529.json、图片生成/文生图/0点抽奖Lovart激活码工作流_1924472070841749505.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImageScaleBy`
+- `AddLabel`
+- `AddNode`
 - `LoadImage`
-- `PreviewImage`
-- `PrimitiveFloat`
+- `MathExpression|pysssss`
 - `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+- `String`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -3,39 +3,33 @@ name: unknown_workflow_generic_1492
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [Display Any (rgthree), FluxKontextImageScale, ImageStitch, ImpactSwitch, LoadImage, RH_LLMAPI_NODE, SaveImage, Text Multiline, easy int]
+coverage: 0.8335
+common_nodes: [BatchImagesNode, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/即梦4图像编辑模型单图版_1970755117802790914.json, 图片生成/图生图/谷歌全能图片V1最强一致性模型单图编辑版_1961616752289452033.json]
+members: [comfyui-workflow-templates-json/template_eric_thumbnail_generator.json, 平台全量/FLUX2 图片编辑与商品换场景_2059166613974380546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1492
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4图像编辑模型单图版_1970755117802790914.json、图片生成/图生图/谷歌全能图片V1最强一致性模型单图编辑版_1961616752289452033.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/template_eric_thumbnail_generator.json、平台全量/FLUX2 图片编辑与商品换场景_2059166613974380546.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Display Any (rgthree)`
-- `FluxKontextImageScale`
-- `ImageStitch`
-- `ImpactSwitch`
+- `BatchImagesNode`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `Text Multiline`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Jimeng4_Image2Image` —— 1/2 个有
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
+- `Flux2ProImageNode` —— 1/2 个有
+- `GeminiNanoBanana2` —— 1/2 个有
 
 ## 典型参数
 

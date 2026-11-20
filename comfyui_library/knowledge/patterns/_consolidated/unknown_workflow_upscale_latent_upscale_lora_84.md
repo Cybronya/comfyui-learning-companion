@@ -3,72 +3,56 @@ name: unknown_workflow_upscale_latent_upscale_lora_84
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.861
-common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, GetVideoComponents, ImageFromBatch, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveAudio, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAEDecodeTiled, VAELoader]
+coverage: 0.922
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Seed, EmptySD3LatentImage, KSamplerAdvanced, LatentUpscaleBy, LoraLoaderModelOnly, SaveImage, UnetLoaderGGUF, VAEDecodeTiled, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMaxH3_LTX2.5二次采样放大V0.1版_2092438276169879553.json, 视频生成/文生视频/MiniMaxH3_LTX2.5放大_2096200687985192962.json]
+members: [图片生成/文生图/2511+2512混合双打超清直出4K文生图，低显存可用_2011110586679037953.json, 图片生成/文生图/千问2512无需扩展高清4K直出，低显存可用_2010946715666354178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_84
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3_LTX2.5二次采样放大V0.1版_2092438276169879553.json、视频生成/文生视频/MiniMaxH3_LTX2.5放大_2096200687985192962.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/2511+2512混合双打超清直出4K文生图，低显存可用_2011110586679037953.json、图片生成/文生图/千问2512无需扩展高清4K直出，低显存可用_2010946715666354178.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `GetVideoComponents`
-- `ImageFromBatch`
-- `KSamplerSelect`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LatentUpscaleModelLoader`
-- `LoadAudio`
-- `LoadImage`
+- `CR Prompt Text`
+- `CR Seed`
+- `EmptySD3LatentImage`
+- `KSamplerAdvanced`
+- `LatentUpscaleBy`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveAudio`
-- `SaveVideo`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `SaveImage`
+- `UnetLoaderGGUF`
 - `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 1/2 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
-- `PerturbedAttention` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
+- `CFGNorm` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `Float` —— 1/2 个有
+- `ModelSamplingAuraFlow` —— 1/2 个有
+- `PrimitiveFloat` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 2 | 50% |
+| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | ddim | - | 2 | 50% |
+| 重绘幅度 | beta | - | 2 | 100% |
 
 ## 常见问题
 
@@ -76,4 +60,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 采样步数 最常用 fixed，2 个样本，一致性 50%
+- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 ddim，2 个样本，一致性 50%
+- 重绘幅度 最常用 beta，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

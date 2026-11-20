@@ -3,34 +3,36 @@ name: unknown_workflow_generic_821
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.8705
-common_nodes: [LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo, easy cleanGpuUsed]
+coverage: 0.825
+common_nodes: [ImageLoader, MultiplePathsInput, Qwen3_VQA, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [数字人/数字人/视频对口型 heyGem_1985284877413195778.json, 数字人/数字人/视频对口型HeyGem=上传语音+视频=艾橘溪_1928382791094779906.json, 数字人/数字人/视频对口型HeyGem=上传语音+视频_1977345570085982209.json, 数字人/数字人/超强数字人 视频对口型 heyGem_2066043690426130434.json]
+members: [图片生成/反推提示词/Qwen3-VL 图像反推_2013667916629151746.json, 图片生成/反推提示词/Qwen3-VL-8B 图像反推_2018232325892476930.json, 图片生成/反推提示词/图片反推提示词Qwen3-VL_2018505343491379201.json, 视频生成/图生视频/推理-首尾帧生视频提示词-qwen3VL_1982744634411630593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_821
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/视频对口型 heyGem_1985284877413195778.json、数字人/数字人/视频对口型HeyGem=上传语音+视频=艾橘溪_1928382791094779906.json、数字人/数字人/视频对口型HeyGem=上传语音+视频_1977345570085982209.json、数字人/数字人/超强数字人 视频对口型 heyGem_2066043690426130434.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/Qwen3-VL 图像反推_2013667916629151746.json、图片生成/反推提示词/Qwen3-VL-8B 图像反推_2018232325892476930.json、图片生成/反推提示词/图片反推提示词Qwen3-VL_2018505343491379201.json、视频生成/图生视频/推理-首尾帧生视频提示词-qwen3VL_1982744634411630593.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `SaveVideo`
-- `easy cleanGpuUsed`
+- `ImageLoader`
+- `MultiplePathsInput`
+- `Qwen3_VQA`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/4 个有
+- `StringFunction|pysssss` —— 1/4 个有
+- `easy positive` —— 1/4 个有
+- `easy seed` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,84 +1,80 @@
 ---
 name: image_to_image_lora_sampler_unet_71
 type: Image To Image
-frequency: 8
+frequency: 10
 level: strong
-coverage: 0.86675
-common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.7509
+common_nodes: [CFGNorm, CLIPLoader, ComfySwitchNode, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/KERA-2-EDIT 单图编辑工作流_2080375312747155458.json, 图片生成/图生图/KERA-2-EDIT-ANY-IMAGE-1 单图编辑工作流_2077623406463381506.json, 图片生成/图生图/KREA-2 单图编辑_2083582526848847874.json, 图片生成/图生图/KREA-2-EDIT-One-image-V2 单图编辑工作流_2079953132267859969.json, 图片生成/图生图/Krea 2 Edit 图片编辑v1.2_ New Storyboard & Inpainting_2080138587139563521.json, 图片生成/图生图/Krea_2-Edit+V1.2-单图像编辑_2081573244439719937.json, 图片生成/图生图/全新虚拟试衣！Krea 2 Outfit Transfer 单图编辑工作流_2080180833553571842.json, 图片生成/文生图/单图遮罩编辑 (Krea 2 Identity Edit v1.2)_2079889918284877826.json]
+members: [图片生成/图生图/工作流基础系列15-FireRed-Image-Edit图像编辑工作流_2047986247905320961.json, 图片生成/图生图/旧照变彩照_老照片修复+照片上色_细节增强_2064243413100355585.json, 图片生成/图生图/旧照片变彩色照片 老照片修复+照片上色_细节增强_2064261025423249410.json, 图片生成/图生图/旧照片变彩色照片_老照片修复+照片上色_细节增强_2057415428837830657.json, 图片生成/图生图/老照片修复+全节点注释_2057042411645390849.json, 图片生成/图生图/老照片修复-修复_上色_细节增强_2040892962153959426.json, 平台全量/旧照片变彩色照片 老照片修复+照片上色_细节增强_2056568571765022721.json, 平台全量/旧照片变彩色照片 老照片修复+照片上色_细节增强_2064152768176279554.json, 平台全量/老旧照片修复-上色&修复&细节增强_2043529906130259969.json, 平台全量/老照片修复 照片上色_细节增强_2052938902478045185.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_71
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/KERA-2-EDIT 单图编辑工作流_2080375312747155458.json、图片生成/图生图/KERA-2-EDIT-ANY-IMAGE-1 单图编辑工作流_2077623406463381506.json、图片生成/图生图/KREA-2 单图编辑_2083582526848847874.json、图片生成/图生图/KREA-2-EDIT-One-image-V2 单图编辑工作流_2079953132267859969.json、图片生成/图生图/Krea 2 Edit 图片编辑v1.2_ New Storyboard & Inpainting_2080138587139563521.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/工作流基础系列15-FireRed-Image-Edit图像编辑工作流_2047986247905320961.json、图片生成/图生图/旧照变彩照_老照片修复+照片上色_细节增强_2064243413100355585.json、图片生成/图生图/旧照片变彩色照片 老照片修复+照片上色_细节增强_2064261025423249410.json、图片生成/图生图/旧照片变彩色照片_老照片修复+照片上色_细节增强_2057415428837830657.json、图片生成/图生图/老照片修复+全节点注释_2057042411645390849.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
+- `ComfySwitchNode`
+- `FluxKontextImageScale`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ModelSamplingAuraFlow`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
+- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 7/8 个有
-- `ResizeImageMaskNode` —— 6/8 个有
-- `VAEDecode` —— 6/8 个有
-- `GrowMask` —— 5/8 个有
-- `Image Comparer (rgthree)` —— 5/8 个有
-- `ImageBlur` —— 5/8 个有
-- `ImageToMask` —— 5/8 个有
-- `MaskPreview+` —— 5/8 个有
-- `MaskToImage` —— 5/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
-- `ImageCompositeMasked` —— 4/8 个有
-- `ConditioningZeroOut` —— 3/8 个有
-- `ImageScaleBy` —— 3/8 个有
-- `TextInput_` —— 2/8 个有
-- `VAEUtils_VAEDecodeTiled` —— 2/8 个有
-- `JjkText` —— 1/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
-- `LoadImageMask` —— 1/8 个有
-- `image_scale_pixel_v2` —— 1/8 个有
+- `CLIPTextEncode` —— 9/10 个有
+- `ConditioningZeroOut` —— 9/10 个有
+- `ImpactConditionalBranch` —— 9/10 个有
+- `ReferenceLatent` —— 9/10 个有
+- `CR Text` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `LayerUtility: TextBox` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `Seed (rgthree)` —— 1/10 个有
+- `SetNode` —— 1/10 个有
+- `easy ifElse` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 8 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 40 | 40 - 40 | 10 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/8 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，8 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（6/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 40，观测区间 40 - 40，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

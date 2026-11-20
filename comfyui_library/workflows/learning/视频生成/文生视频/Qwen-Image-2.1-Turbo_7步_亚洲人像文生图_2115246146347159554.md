@@ -1,0 +1,73 @@
+---
+key: 视频生成/文生视频/Qwen-Image-2.1-Turbo_7步_亚洲人像文生图_2115246146347159554.json
+name: Qwen-Image-2.1-Turbo_7步_亚洲人像文生图_2115246146347159554
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/Qwen-Image-2.1-Turbo_7步_亚洲人像文生图_2115246146347159554.json
+hash: fe75c8ab9a7f39a2
+coverage: 0.882353
+learned_at: 2026-10-30 18:02:22
+nodes: [TextEncodeQwenImage21, ResolutionSelector, QwenPERewriteT8, easy showAnything, UNETLoader, EmptyLatentImage, ComfySwitchNode, CLIPLoader, VAELoader, QwenImage21Cache, LoraLoaderModelOnly, CR Prompt Text, VAEDecode, SaveImage, Color Grading JK, LoraLoaderModelOnly, KSampler]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 46938633375631, "steps": 7, "width": 1024}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/文生视频/Qwen-Image-2.1-Turbo_7步_亚洲人像文生图_2115246146347159554.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/Qwen-Image-2.1-Turbo_7步_亚洲人像文生图_2115246146347159554.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（17 个）：
+- `TextEncodeQwenImage21`
+- `ResolutionSelector`
+- `QwenPERewriteT8`
+- `easy showAnything`
+- `UNETLoader` ★核心
+- `EmptyLatentImage` ★核心
+- `ComfySwitchNode`
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoraLoaderModelOnly` ★核心
+- `CR Prompt Text`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `Color Grading JK`
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+
+## 关键参数
+
+- `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
+- `seed` = `46938633375631`
+- `steps` = `7`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **88%**（15/17）
+
+**有卡**：`TextEncodeQwenImage21`、`ResolutionSelector`、`QwenPERewriteT8`、`UNETLoader`、`EmptyLatentImage`、`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`LoraLoaderModelOnly`、`CR Prompt Text`、`VAEDecode`、`SaveImage`、`Color Grading JK`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

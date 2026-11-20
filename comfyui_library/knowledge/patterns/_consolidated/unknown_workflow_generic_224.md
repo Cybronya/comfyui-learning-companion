@@ -1,47 +1,35 @@
 ---
 name: unknown_workflow_generic_224
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.854
-common_nodes: [Apply Whisper, AudioCrop, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, LayerUtility: PurgeVRAM V2, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.749727
+common_nodes: [JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3+TTS最新多角色配音_2082109410519896065.json, 视频生成/图生视频/Qwen3 TTS最新多角色配音多角色音色设计_2017880998905651202.json, 音频生成/音频生成/Qwen3 TTS 多角色对话配音-音色上传-支持8人对话_2015616273350139906.json, 音频生成/音频生成/Qwen3 TTS 多角色配音_2015822660667707394.json, 音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色上传版_2015614586254270466.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色上传版-最多支持8人对话_2015603796998623233.json, 音频生成/音频生成/Qwen3 TTS 最新多角色对话配音-音色上传版-最多支持8人对话_2015609592415260673.json, 音频生成/音频生成/Qwen3 TTS多角色配音及克隆音色_2023064336373129217.json, 音频生成/音频生成/Qwen3 TTS最新多角色配音_2015427448355164161.json, 音频生成/音频生成/Qwen3-TTS支持8种角色+音色克隆_2015772753458106369.json]
+members: [平台全量/全身白底图制作-单图参考-全能图片2_2090382796085874689.json, 平台全量/模特裂变【4宫格】_2074843190435336194.json, 平台全量/电商产品展示_2027707955180740610.json, 平台全量/电商模特生成【头部+3D上衣下装】_2074841691634364417.json, 平台全量/电商模特生成【头部+上衣+下装】_2075456604379631618.json, 平台全量/荔枝云客-OOTD穿搭图生成_2038921678088052737.json, 平台全量/裂变上衣中近景【四宫格】_2075478760136200194.json, 平台全量/裂变下装中近景【四宫格】_2075480052707454977.json, 平台全量/鞋子穿搭单图裂变_2075822201592438786.json, 视频生成/图生视频/单人版穿搭场景复刻工作流（荔枝云客）_2038626834245488641.json, 视频生成/图生视频/电商生成视频分镜图片_2039257773019504641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_224
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/Qwen3+TTS最新多角色配音_2082109410519896065.json、视频生成/图生视频/Qwen3 TTS最新多角色配音多角色音色设计_2017880998905651202.json、音频生成/音频生成/Qwen3 TTS 多角色对话配音-音色上传-支持8人对话_2015616273350139906.json、音频生成/音频生成/Qwen3 TTS 多角色配音_2015822660667707394.json、音频生成/音频生成/Qwen3 TTS 最多8角色对话配音-音色上传版_2015614586254270466.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/全身白底图制作-单图参考-全能图片2_2090382796085874689.json、平台全量/模特裂变【4宫格】_2074843190435336194.json、平台全量/电商产品展示_2027707955180740610.json、平台全量/电商模特生成【头部+3D上衣下装】_2074841691634364417.json、平台全量/电商模特生成【头部+上衣+下装】_2075456604379631618.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
+全部 11 个 workflow 都包含：
+- `JjkText`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceDesign` —— 5/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/10 个有
-- `Fast Groups Muter (rgthree)` —— 5/10 个有
-- `Text` —— 4/10 个有
-- `CR Text` —— 2/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `Note Plus (mtb)` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
+- `ConstrainImage|pysssss` —— 1/11 个有
 
 ## 典型参数
 

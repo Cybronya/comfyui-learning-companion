@@ -3,65 +3,45 @@ name: unknown_workflow_sampler_vae_17
 type: Unknown Workflow
 frequency: 19
 level: moderate
-coverage: 0.956053
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, VAELoaderKJ]
+coverage: 0.952
+common_nodes: [CreateVideo, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-图生视频+导演分镜节点2.0_2070497842334097410.json, 视频生成/图生视频/LTX2.3-图生视频+导演分镜节点_2055988767751720962.json, 视频生成/图生视频/LTX2.3-图生视频+导演分镜节点（自定义音频版）_2056019458614931458.json, 视频生成/图生视频/LTX2.3全流程导演台！_2056659960074956802.json, 视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流_2068690343561879554.json, 视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流【加速版】_2068922121077747714.json, 视频生成/图生视频/LTX导演台2.0_2069677041460539394.json, 视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2069021020295618562.json, 视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2076638289418870785.json, 视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2082428035797708802.json, 视频生成/图生视频/LTX导演台2.0白模驱动视频工作流_2074291321979891714.json, 视频生成/图生视频/LTX导演台2.0白模驱动视频工作流_2074299424884477953.json, 视频生成/图生视频/人脸一致性-LTX导演台2.0+dasiwaV3_2075476336205983745.json, 视频生成/图生视频/电商首尾帧生成视频 Ltx Director_2072669818989404161.json, 视频生成/图生视频/视频编辑，视频创作 LTX导演台V2_2069660528036892673.json, 视频生成/文生视频/LTX Director 2.0：全能视频编辑与导演时间线_2068936813363941377.json, 视频生成/文生视频/LTX Director导演台工作流_2066167001793515521.json, 视频生成/文生视频/LTX2.3导演分镜_2055938221086912513.json, 视频生成/文生视频/LTX2.3导演台V2+图生视频工作流_2072015806417956866.json]
+members: [视频生成/文生视频/MiniMax H3 FL2VA开源版 文生视频+全节点注释_2084153724401971201.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084079636237078529.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084117045167345666.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084196872339677186.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084222799329189889.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084500372516855809.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084619575651561473.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084620453729099778.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084871857995599874.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2085033620032540674.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2085234935899705346.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2086621787525312514.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2089301543244886017.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2092878482413015042.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2108533989039493122.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版本_2084111996018057218.json, 视频生成/文生视频/MiniMax H3 基础文生视频（开源版）_2084562298965946370.json, 视频生成/文生视频/MiniMax H3 开源版-文生视频-FL2VA Ref2VA_2084837441093070850.json, 视频生成/文生视频/一键音视频工作流，MiniMax H3 FL2VA开源，显存优化版_2084151117323268097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_17
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-图生视频+导演分镜节点2.0_2070497842334097410.json、视频生成/图生视频/LTX2.3-图生视频+导演分镜节点_2055988767751720962.json、视频生成/图生视频/LTX2.3-图生视频+导演分镜节点（自定义音频版）_2056019458614931458.json、视频生成/图生视频/LTX2.3全流程导演台！_2056659960074956802.json、视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流_2068690343561879554.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 FL2VA开源版 文生视频+全节点注释_2084153724401971201.json、视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084079636237078529.json、视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084117045167345666.json、视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084196872339677186.json、视频生成/文生视频/MiniMax H3 FL2VA开源版-文生视频_2084222799329189889.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 19 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTXDirector`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAELoaderKJ`
+- `CreateVideo`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DirectModelLoader`
+- `RHMiniMaxH3DirectTextEncoderLoader`
+- `RHMiniMaxH3DirectVAELoader`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3T2VATarget`
+- `RHMiniMaxH3T2VATextEncode`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 18/19 个有
-- `CreateVideo` —— 17/19 个有
-- `SaveVideo` —— 16/19 个有
-- `VAEDecode` —— 15/19 个有
-- `ModelPreviewOverrideKJ` —— 14/19 个有
-- `LTXVLatentUpsampler` —— 13/19 个有
-- `LatentUpscaleModelLoader` —— 13/19 个有
-- `VAELoader` —— 13/19 个有
-- `LTXDirectorCropGuides` —— 11/19 个有
-- `LoraLoaderModelOnly` —— 8/19 个有
-- `LTXVCropGuides` —— 6/19 个有
-- `PathchSageAttentionKJ` —— 6/19 个有
-- `VAEDecodeTiled` —— 4/19 个有
-- `VHS_VideoCombine` —— 4/19 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/19 个有
-- `LTX2SamplingPreviewOverride` —— 3/19 个有
-- `CheckpointLoaderSimple` —— 2/19 个有
-- `ComfySwitchNode` —— 2/19 个有
-- `GetVideoComponents` —— 2/19 个有
-- `TTResolutionSelector` —— 2/19 个有
-- `DiffusionModelLoaderKJ` —— 1/19 个有
+- `easy cleanGpuUsed` —— 2/19 个有
+- `CR Text` —— 1/19 个有
 - `LoadImage` —— 1/19 个有
-- `Text` —— 1/19 个有
+- `PreviewVideoNode` —— 1/19 个有
+- `RHMiniMaxH3Ref2VAModelLoader` —— 1/19 个有
+- `easy anythingIndexSwitch` —— 1/19 个有
+- `孤海注释` —— 1/19 个有
 
 ## 典型参数
 

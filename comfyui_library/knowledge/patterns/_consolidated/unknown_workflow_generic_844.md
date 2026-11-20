@@ -3,36 +3,36 @@ name: unknown_workflow_generic_844
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.68
-common_nodes: [CR Text, LoadImage, RH_Sora2_I2V_PRO, SaveVideo, easy showAnything]
+coverage: 0.703
+common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, RH_ComfyFluxKontext, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S-Pro-图生视频_2019242695918620673.json, 视频生成/图生视频/电商图生视频_2032120133279293442.json, 视频生成/图生视频/视频-别墅无人机浏览视频工作流（横版）_2017061377524895746.json, 视频生成/图生视频/视频-别墅无人机浏览视频工作流（竖版）_2017086420329959425.json]
+members: [图片生成/图生图/Flux Kontext+DDcolor老照片修复一键自动修复老照片_1930969254500171777.json, 图片生成/图生图/Flux Kontext+老照片修复上色V5_1932291805994188802.json, 图片生成/图生图/Flux Kontext单图像编辑V3（浮动速度版）_1929143969140346882.json, 平台全量/Flux Kontext+DDcolor老照片修复V3（浮动速度版）_1929612944714186753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_844
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频S-Pro-图生视频_2019242695918620673.json、视频生成/图生视频/电商图生视频_2032120133279293442.json、视频生成/图生视频/视频-别墅无人机浏览视频工作流（横版）_2017061377524895746.json、视频生成/图生视频/视频-别墅无人机浏览视频工作流（竖版）_2017086420329959425.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux Kontext+DDcolor老照片修复一键自动修复老照片_1930969254500171777.json、图片生成/图生图/Flux Kontext+老照片修复上色V5_1932291805994188802.json、图片生成/图生图/Flux Kontext单图像编辑V3（浮动速度版）_1929143969140346882.json、平台全量/Flux Kontext+DDcolor老照片修复V3（浮动速度版）_1929612944714186753.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
+- `CR Prompt Text`
+- `ImageConcanate`
 - `LoadImage`
-- `RH_Sora2_I2V_PRO`
-- `SaveVideo`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 2/4 个有
-- `RH_Sora2_I2V` —— 2/4 个有
-- `easy string` —— 2/4 个有
+- `DDColor_Colorize` —— 3/4 个有
+- `PMRF` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,46 +1,49 @@
 ---
 name: unknown_workflow_generic_140
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.735154
-common_nodes: [LoadAudio, LongCatVoiceCloneTTS, NormalizeAudioLoudness, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3, easy showAnything]
+coverage: 0.791714
+common_nodes: [Int, JjkText, LoadImage, MultiTextConcatenate, RH_Utils, SaveImage, ShowAnything|Mie, easy showAnything, ttN concat]
 problems: []
 missing: []
-members: [数字人/数字人/LongCat-AudioDIT-TTS_2040481256634322946.json, 数字人/数字人/最强声音克隆单人版-LongCat-AudioDIT-TTS_2052931695862665218.json, 数字人/数字人/自用-改嘴瓢-改台词_2109511536590020609.json, 音频生成/音频生成/LongCat-AudioDIT-TTS 单人双人合集 林耀4.8_2041829095029346306.json, 音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2045308761455202305.json, 音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2050893627286663170.json, 音频生成/音频生成/LongCat-AudioDIT-语音克隆_2055595682752417794.json, 音频生成/音频生成/LongCat-AudioDiT+超真实语气+语音克隆工作流_2046995658002927618.json, 音频生成/音频生成/LongCat-TTS多人对话_2075504719178592258.json, 音频生成/音频生成/TTS语音音频克隆单人双人可以同时进行丝滑复制_2077303693199896577.json, 音频生成/音频生成/TTS超真实语气 语音克隆工作流 LAO   郑_2053183694545932289.json, 音频生成/音频生成/YZ-LongCat-AudioDIT-TTS_2041359894686732290.json, 音频生成/音频生成/YZ金鱼-LongCat-AudioDIT-TTS_2039380233228394497.json]
+members: [图片生成/反推提示词/LTX2.3-MSR-V2-多图参考-提示词自动生成 V2 版_2081300131051294721.json, 图片生成/反推提示词/LTX2.3-MSR-V2-多图参考-提示词自动生成_2078738683699748866.json, 图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-单图版-V2_2058188352083550209.json, 图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-单图版-V2_2063941101874143234.json, 图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-单图版_2058826481823997953.json, 图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-多图版-V2_2057832416726839297.json, 图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-多图版-V3融合版_2066187087287771138.json, 图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-多图版-vlog版-V2_2059084225005051905.json, 图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-多图版_2056730699490746369.json, 图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成_2056420342272446466.json, 图片生成/反推提示词/LTX2.3-best_faceid_charsheet-人脸高一致性-提示词自动生成_2083189646347038722.json, 图片生成/反推提示词/MiniMax Music3 自动提示词_2090033417382617089.json, 图片生成/反推提示词/Qwen3.5-LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-多图版--V2_2060255761816702977.json, 图片生成/反推提示词/Qwen3.5-LTX2.3-Prompt Relay-全局提示词分镜提示词-自动生成-单图版-V2_2064237375093559297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_140
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（数字人/数字人/LongCat-AudioDIT-TTS_2040481256634322946.json、数字人/数字人/最强声音克隆单人版-LongCat-AudioDIT-TTS_2052931695862665218.json、数字人/数字人/自用-改嘴瓢-改台词_2109511536590020609.json、音频生成/音频生成/LongCat-AudioDIT-TTS 单人双人合集 林耀4.8_2041829095029346306.json、音频生成/音频生成/LongCat-AudioDIT-TTS声音克隆_2045308761455202305.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/反推提示词/LTX2.3-MSR-V2-多图参考-提示词自动生成 V2 版_2081300131051294721.json、图片生成/反推提示词/LTX2.3-MSR-V2-多图参考-提示词自动生成_2078738683699748866.json、图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-单图版-V2_2058188352083550209.json、图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-单图版-V2_2063941101874143234.json、图片生成/反推提示词/LTX2.3-Prompt Relay-全局提示词-分镜提示词-自动生成-单图版_2058826481823997953.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `NormalizeAudioLoudness`
-- `PreviewAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
+全部 14 个 workflow 都包含：
+- `Int`
+- `JjkText`
+- `LoadImage`
+- `MultiTextConcatenate`
+- `RH_Utils`
+- `SaveImage`
+- `ShowAnything|Mie`
 - `easy showAnything`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 12/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
-- `LongCatMultiSpeakerTTS` —— 11/13 个有
-- `CR Prompt Text` —— 10/13 个有
-- `TextInput_` —— 3/13 个有
-- `Fast Groups Muter (rgthree)` —— 1/13 个有
-- `Label (rgthree)` —— 1/13 个有
-- `TextInputNode` —— 1/13 个有
+- `RH_LLMAPI_Pro_Node` —— 12/14 个有
+- `Label (rgthree)` —— 11/14 个有
+- `RHHiddenNodes` —— 9/14 个有
+- `easy saveText` —— 5/14 个有
+- `llama_cpp_instruct_adv` —— 4/14 个有
+- `llama_cpp_model_loader` —— 4/14 个有
+- `llama_cpp_parameters` —— 4/14 个有
+- `SaveText` —— 2/14 个有
+- `easy cleanGpuUsed` —— 2/14 个有
+- `RH_LLMAPI_NODE` —— 1/14 个有
 
 ## 典型参数
 

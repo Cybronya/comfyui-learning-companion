@@ -1,43 +1,43 @@
 ---
 name: unknown_workflow_sampler_49
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RunningHub ICCustom Loader, RunningHub ICCustom Sampler, SaveImage, easy imageRemBg]
+coverage: 0.9665
+common_nodes: [GetImageSizeAndCount, ImageConcanate, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/35.tonnie-IC Custom万物迁移（效果不好）_2003457255477526529.json, 图片生成/图生图/IC-Custom万物迁移_1970427324682432514.json, 图片生成/图生图/IC-Custom万物迁移单图参考V1_1970424642190123009.json]
+members: [图片生成/图生图/UniWorld高分辨率图像视觉模型体验_1930949199872110594.json, 图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931570428488429570.json, 图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931579845157781506.json, 图片生成/文生图/UniWorld高分辨率图像视觉模型体验_1935641351222657025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_49
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/35.tonnie-IC Custom万物迁移（效果不好）_2003457255477526529.json、图片生成/图生图/IC-Custom万物迁移_1970427324682432514.json、图片生成/图生图/IC-Custom万物迁移单图参考V1_1970424642190123009.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/UniWorld高分辨率图像视觉模型体验_1930949199872110594.json、图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931570428488429570.json、图片生成/文生图/UniWorld多模态大模型新体验--拳打全能图片G，脚踢谷歌_1931579845157781506.json、图片生成/文生图/UniWorld高分辨率图像视觉模型体验_1935641351222657025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 4 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
 - `LoadImage`
-- `RunningHub ICCustom Loader`
-- `RunningHub ICCustom Sampler`
+- `RunningHubUniWorldSampler`
+- `RunningUniworldModelLoader`
 - `SaveImage`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: CropByMask V2` —— 2/3 个有
-- `LoadImageFromUrl` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `Mask Fill Holes` —— 1/3 个有
-- `MaskFillHoles` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
+- `CR SDXL Aspect Ratio` —— 2/4 个有
+- `DDColor_Colorize` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `Text Multiline` —— 2/4 个有
 
 ## 典型参数
 

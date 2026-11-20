@@ -1,40 +1,37 @@
 ---
 name: unknown_workflow_sampler_72
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8465
-common_nodes: [ImageConcanate, JjkText, LoadImage, RH_Translator, RunningHub OneReward Loader, RunningHub OneReward Sampler, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.933333
+common_nodes: [LoadImage, RunningHub_MOVA_Loader, RunningHub_MOVA_Sampler, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Fill OneReward 外扩 RH_1969451804171923458.json, 图片生成/图生图/Flux Fill OneReward 重绘 RH版_1969402547008118786.json]
+members: [视频生成/图生视频/MOVA_2018226394521673729.json, 视频生成/图生视频/MOVA图生音画视频_2017069831840866305.json, 视频生成/图生视频/国产开源大模型MOVA实测：一键生成带台词配音的AI视频！_2017593075475947522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_72
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux Fill OneReward 外扩 RH_1969451804171923458.json、图片生成/图生图/Flux Fill OneReward 重绘 RH版_1969402547008118786.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MOVA_2018226394521673729.json、视频生成/图生视频/MOVA图生音画视频_2017069831840866305.json、视频生成/图生视频/国产开源大模型MOVA实测：一键生成带台词配音的AI视频！_2017593075475947522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageConcanate`
-- `JjkText`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `RH_Translator`
-- `RunningHub OneReward Loader`
-- `RunningHub OneReward Sampler`
-- `SaveImage`
+- `RunningHub_MOVA_Loader`
+- `RunningHub_MOVA_Sampler`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImagePadForOutpaintMasked` —— 1/2 个有
-- `LayerMask: MaskPreview` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `CR Text` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 
@@ -46,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

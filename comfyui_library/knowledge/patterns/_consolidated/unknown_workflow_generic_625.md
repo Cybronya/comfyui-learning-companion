@@ -1,41 +1,40 @@
 ---
 name: unknown_workflow_generic_625
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7754
-common_nodes: [LoadImage, Qwen3_VQA, RH_Translator, SaveVideo, Text Multiline, easy anythingIndexSwitch]
+coverage: 0.896
+common_nodes: [CR Prompt Text, FB_Qwen3TTSVoiceDesign, PreviewAny, PreviewAudio, RH_LLMAPI_Pro_Node, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/Grok Video3 静态产品图片转化为专业的视频广告内容-分镜提示词一键生成_1998768118094778370.json, 视频生成/图生视频/Grok Video3 静态产品图片转化为专业的视频广告内容简单提示词_1998768343349911554.json, 视频生成/图生视频/Video3 静态产品图片转化为专业的视频广告内容-自动提示词版本一键生成+全节点注释_1998761612855140353.json, 视频生成/图生视频/全能视频V3.1 静态产品图片转化为专业的视频广告内容-自动提示词版_1999153411486609410.json, 视频生成/图生视频/全能视频V3.1+静态产品图片转化为专业的视频广告内容_1999312879121821697.json]
+members: [音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015076900074426370.json, 音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015998086245519362.json, 音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2033382385605156865.json, 音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版_2046465787099095041.json, 音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版工作流_2046803129345249282.json, 音频生成/音频生成/Qwen3-TTS 音色设计_2034082246776332290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_625
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Grok Video3 静态产品图片转化为专业的视频广告内容-分镜提示词一键生成_1998768118094778370.json、视频生成/图生视频/Grok Video3 静态产品图片转化为专业的视频广告内容简单提示词_1998768343349911554.json、视频生成/图生视频/Video3 静态产品图片转化为专业的视频广告内容-自动提示词版本一键生成+全节点注释_1998761612855140353.json、视频生成/图生视频/全能视频V3.1 静态产品图片转化为专业的视频广告内容-自动提示词版_1999153411486609410.json、视频生成/图生视频/全能视频V3.1+静态产品图片转化为专业的视频广告内容_1999312879121821697.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015076900074426370.json、音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015998086245519362.json、音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2033382385605156865.json、音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版_2046465787099095041.json、音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版工作流_2046803129345249282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadImage`
-- `Qwen3_VQA`
-- `RH_Translator`
-- `SaveVideo`
-- `Text Multiline`
-- `easy anythingIndexSwitch`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `FB_Qwen3TTSVoiceDesign`
+- `PreviewAny`
+- `PreviewAudio`
+- `RH_LLMAPI_Pro_Node`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 4/5 个有
-- `RH_Grok_Video3` —— 2/5 个有
-- `RH_Veo3_Image2Video` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `RH_RhartVideoGImageToVideo` —— 1/5 个有
+- `ConcatTextOfUtils` —— 2/6 个有
+- `RunningHub_VoxCPM_LoadModel` —— 2/6 个有
+- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
 
 ## 典型参数
 

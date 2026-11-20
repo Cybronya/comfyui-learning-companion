@@ -1,82 +1,95 @@
 ---
 name: unknown_workflow_video_lora_sampler_130
 type: Unknown Workflow
-frequency: 14
-level: strong
-coverage: 0.455071
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, ImageBatchExtendWithOverlap, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, PreviewAny, ReplaceVideoLatentFrames, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
+frequency: 15
+level: moderate
+coverage: 0.5688
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, LoadImage, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/LongCat龙猫数字人I2V_2003272885085118465.json, 视频生成/图生视频/LongcatAvata-龙猫数字人I2V工作流_2003002229281964033.json, 视频生成/图生视频/内部测试0001_2006916502057918465.json, 视频生成/图生视频/对口型·超强悍_2010972591602798593.json, 视频生成/图生视频/龙猫数字人I2V工作流-Aiwood_2002473515242647553.json, 视频生成/图生视频/龙猫数字人I2V工作流_2002963374075965441.json, 视频生成/图生视频/龙猫数字人i2V工作流-长视频_2002719274244423682.json, 视频生成/文生视频/LongCat Avatar 长视频工作流_2003655756962512897.json, 视频生成/文生视频/LongCat avatar龙猫数字人文生视频对口型版_2002695647604162562.json, 视频生成/文生视频/LongCat+文生视频数字人_2002936278276534273.json, 视频生成/文生视频/LongCat-Video-Avatar数字人图生视频长视频_2003091574424764418.json, 视频生成/文生视频/LongCat-Video-Avatar数字人文生视频长视频_2003091459949699074.json, 视频生成/文生视频/LongCatAvatar_长时数字人工作流_2004810996587921409.json, 视频生成/文生视频/龙猫数字人文生视频对口型版（LongCat avatar 生产力版）_2009631986461188098.json]
+members: [图片生成/图生图/V2 Wan2.2 Animate 动作迁移视频重绘_1974705199371653122.json, 平台全量/004.Wan视频之源010.图+视频跳舞-高精度版_2036841395654238210.json, 平台全量/FlashVSE插针修复48帧【高质量WAN Animate 】长视频动作迁移_替换_2062034490582724609.json, 平台全量/WAN Animate FlashVSE长视频动作迁移_替换插针修复48帧【高质量 】_2065246326849363970.json, 平台全量/WAN Animate FlashVSE长视频动作迁移_替换插针修复48帧【高质量 】_2070046932000665602.json, 平台全量/WANAnimate 长视频动作迁移插48帧【高质量 】_2065263853474246658.json, 平台全量/人物及产品替换插针FlashVSE修复高质量WAN+Animate+长视频_1989573780743876609.json, 平台全量/快速涨粉图生舞蹈视频_1884216205048430594.json, 视频生成/图生视频/FlashVSE插针修复【高质量WAN Animate 】长视频动作迁移_替换_1987363562844827650.json, 视频生成/图生视频/人物转舞蹈视频姿势转绘_1893129879528091650.json, 视频生成/图生视频/复制爆款服装带货2k视频（不限制秒数）_2013978782025125890.json, 视频生成/图生视频/快图生视频-舞蹈视频_2038505247085170689.json, 视频生成/图生视频/插针FlashVSE修复高质量WAN Animate 长视频动作迁移_替换_1985670346089144322.json, 视频生成/图生视频/超长视频动作迁移 高质量视频生成 WAN+Animate+FlashVSE_替换插针修复48帧_2071034826668462082.json, 视频生成/文生视频/FlashVSE插针修复【高质量WAN Animate 】长视频动作迁移_替换_1993775384657330178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_130
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/LongCat龙猫数字人I2V_2003272885085118465.json、视频生成/图生视频/LongcatAvata-龙猫数字人I2V工作流_2003002229281964033.json、视频生成/图生视频/内部测试0001_2006916502057918465.json、视频生成/图生视频/对口型·超强悍_2010972591602798593.json、视频生成/图生视频/龙猫数字人I2V工作流-Aiwood_2002473515242647553.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/V2 Wan2.2 Animate 动作迁移视频重绘_1974705199371653122.json、平台全量/004.Wan视频之源010.图+视频跳舞-高精度版_2036841395654238210.json、平台全量/FlashVSE插针修复48帧【高质量WAN Animate 】长视频动作迁移_替换_2062034490582724609.json、平台全量/WAN Animate FlashVSE长视频动作迁移_替换插针修复48帧【高质量 】_2065246326849363970.json、平台全量/WAN Animate FlashVSE长视频动作迁移_替换插针修复48帧【高质量 】_2070046932000665602.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：46%
+- **样本数**：15
+- **可信度**：中等可信
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `ImageBatchExtendWithOverlap`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `ReplaceVideoLatentFrames`
-- `TrimAudioDuration`
+- `DrawViTPose`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatConstant` —— 13/14 个有
-- `GetNode` —— 13/14 个有
-- `SetNode` —— 13/14 个有
-- `INTConstant` —— 12/14 个有
-- `ImageResizeKJv2` —— 10/14 个有
-- `LoadImage` —— 10/14 个有
-- `PreviewAudio` —— 5/14 个有
-- `DownloadAndLoadWav2VecModel` —— 4/14 个有
-- `EmptyLatentImage` —— 4/14 个有
-- `GetLatentRangeFromBatch` —— 4/14 个有
-- `Int` —— 2/14 个有
-- `Text` —— 2/14 个有
-- `Float` —— 1/14 个有
-- `LoadImageFromPath` —— 1/14 个有
-- `RHHiddenNodes` —— 1/14 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/14 个有
-- `SaveAudio` —— 1/14 个有
-- `SaveImage` —— 1/14 个有
-- `ZML_ImageSelectorNode` —— 1/14 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/14 个有
-- `easy indexTTSGenerateSimple` —— 1/14 个有
+- `Bjornulf_ShowInt` —— 14/15 个有
+- `INTConstant` —— 14/15 个有
+- `WanVideoEncode` —— 14/15 个有
+- `WanVideoTorchCompileSettings` —— 14/15 个有
+- `WanVideoUni3C_ControlnetLoader` —— 14/15 个有
+- `WanVideoUni3C_embeds` —— 14/15 个有
+- `easy showAnything` —— 14/15 个有
+- `Bjornulf_FreeVRAM` —— 13/15 个有
+- `DownloadAndLoadGIMMVFIModel` —— 13/15 个有
+- `Evaluate Integers` —— 13/15 个有
+- `GIMMVFI_interpolate` —— 13/15 个有
+- `ImageFromBatch` —— 13/15 个有
+- `UnloadAllModels` —— 13/15 个有
+- `WanVideoContextOptions` —— 13/15 个有
+- `easy clearCacheAll` —— 13/15 个有
+- `easy sleep` —— 13/15 个有
+- `ImageConcanate` —— 10/15 个有
+- `VHS_LoadVideoPath` —— 10/15 个有
+- `Fast Groups Muter (rgthree)` —— 9/15 个有
+- `FlashVSRNode` —— 9/15 个有
+- `Primitive integer [Crystools]` —— 5/15 个有
+- `GetImageSizeAndCount` —— 2/15 个有
+- `BlockifyMask` —— 1/15 个有
+- `CR Text` —— 1/15 个有
+- `DrawMaskOnImage` —— 1/15 个有
+- `GetImageRangeFromBatch` —— 1/15 个有
+- `GetImageSize` —— 1/15 个有
+- `GrowMaskWithBlur` —— 1/15 个有
+- `ImageConcatMulti` —— 1/15 个有
+- `ImpactInt` —— 1/15 个有
+- `JWInteger` —— 1/15 个有
+- `PointsEditor` —— 1/15 个有
+- `SeCModelLoader` —— 1/15 个有
+- `SeCVideoSegmentation` —— 1/15 个有
+- `VHS_VideoInfo` —— 1/15 个有
+- `VRAMCleanup` —— 1/15 个有
+- `easy imageRemBg` —— 1/15 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 4 | 100% |
-| 高度 | 512 | 512 - 512 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,5 +97,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

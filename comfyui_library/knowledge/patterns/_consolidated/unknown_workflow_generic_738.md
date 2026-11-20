@@ -1,36 +1,31 @@
 ---
 name: unknown_workflow_generic_738
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.968
-common_nodes: [LoadImage, Power Prompt (rgthree), RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.69
+common_nodes: [ResolutionSelector, SaveImage, b350fbfc-0ff8-4af1-8d09-09f50d84fcaa]
 problems: []
 missing: []
-members: [图片生成/图生图/两张图生成莱森鹿_2039612191237742594.json, 图片生成/图生图/林利1970s换logo_2086032388383133697.json, 图片生成/图生图/林利主图替换_2080928144965591041.json, 视频生成/图生视频/xx店铺xx主图_2044318599816421378.json]
+members: [平台全量/H3-image（文生图）_2120363244262088705.json, 平台全量/MiniMax-H3-Image图像生成_2120450661677621250.json, 平台全量/Minimax H3 Image 高分辨率标准版文生图_2120411608341106689.json, 平台全量/minimax_h3_image_t2i-文生图_2120355697408954370.json, 视频生成/视频生视频/H3 Image｜6步文生图_2120807229870919682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_738
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/两张图生成莱森鹿_2039612191237742594.json、图片生成/图生图/林利1970s换logo_2086032388383133697.json、图片生成/图生图/林利主图替换_2080928144965591041.json、视频生成/图生视频/xx店铺xx主图_2044318599816421378.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/H3-image（文生图）_2120363244262088705.json、平台全量/MiniMax-H3-Image图像生成_2120450661677621250.json、平台全量/Minimax H3 Image 高分辨率标准版文生图_2120411608341106689.json、平台全量/minimax_h3_image_t2i-文生图_2120355697408954370.json、视频生成/视频生视频/H3 Image｜6步文生图_2120807229870919682.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `Power Prompt (rgthree)`
-- `RH_Nano_Banana2_Gemini31Flash`
+全部 5 个 workflow 都包含：
+- `ResolutionSelector`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/4 个有
-- `SmartImageConcat` —— 1/4 个有
+- `b350fbfc-0ff8-4af1-8d09-09f50d84fcaa`
 
 ## 典型参数
 

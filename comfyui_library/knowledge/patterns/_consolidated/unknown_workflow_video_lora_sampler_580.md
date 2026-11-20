@@ -1,65 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_580
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.83425
-common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.6464
+common_nodes: [LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频性价比极致加速_1959896744446341122.json, 视频生成/图生视频/wan2.2 图生图_1995404196142833665.json, 视频生成/文生视频/1022对比测试_1981324716671664130.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V2_1965041345570197506.json]
+members: [平台全量/Wanvace视频动作参考转绘_1958568346285404162.json, 平台全量/ditto_comfyui_workflow_global_edit_1980477577573937154.json, 平台全量/ditto视频批量风格转换工作流_2013501377070239746.json, 平台全量/ditto视频转绘工作流_1980636437588692994.json, 平台全量/ditto视频风格转换_1989887810817716226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_580
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频性价比极致加速_1959896744446341122.json、视频生成/图生视频/wan2.2 图生图_1995404196142833665.json、视频生成/文生视频/1022对比测试_1981324716671664130.json、视频生成/文生视频/Wan2.2图生视频性价比极致加速V2_1965041345570197506.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/Wanvace视频动作参考转绘_1958568346285404162.json、平台全量/ditto_comfyui_workflow_global_edit_1980477577573937154.json、平台全量/ditto视频批量风格转换工作流_2013501377070239746.json、平台全量/ditto视频转绘工作流_1980636437588692994.json、平台全量/ditto视频风格转换_1989887810817716226.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageResizeKJv2`
-- `LoadImage`
+全部 5 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatToSigmas` —— 3/4 个有
-- `GetNode` —— 3/4 个有
-- `SetNode` —— 3/4 个有
-- `String Literal` —— 3/4 个有
-- `StringToFloatList` —— 3/4 个有
-- `WanVideoSetRadialAttention` —— 3/4 个有
-- `easy globalSeed` —— 3/4 个有
-- `easy seed` —— 3/4 个有
-- `INTConstant` —— 2/4 个有
-- `WanVideoContextOptions` —— 2/4 个有
-- `WanVideoScheduler` —— 2/4 个有
-- `WanVideoSigmaToStep` —— 2/4 个有
-- `AddLabel` —— 1/4 个有
-- `CLIPVisionLoader` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `WanVideoClipVisionEncode` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `GetNode` —— 4/5 个有
+- `ImageResizeKJv2` —— 4/5 个有
+- `WanVideoSLG` —— 4/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `AIO_Preprocessor` —— 1/5 个有
+- `CR Prompt List` —— 1/5 个有
+- `ImageResizeKJ` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `JWInteger` —— 1/5 个有
+- `LoadImage` —— 1/5 个有
+- `String Literal` —— 1/5 个有
+- `VHS_VideoInfoLoaded` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

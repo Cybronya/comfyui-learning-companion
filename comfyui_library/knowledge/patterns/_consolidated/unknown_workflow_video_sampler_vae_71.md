@@ -1,68 +1,71 @@
 ---
 name: unknown_workflow_video_sampler_vae_71
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.958857
-common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoVAELoader]
+coverage: 0.71825
+common_nodes: [GetNode, Int, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan FusionX 图生视频-极速版_1940936064079183874.json, 视频生成/图生视频/Wan FusionX 图生视频-极速版_1962815833489715202.json, 视频生成/图生视频/Wan2.1(KJ)图片到视频基础工作流_1947465024660983810.json, 视频生成/图生视频/sky 玩偶起飞_1914213434668347393.json, 视频生成/图生视频/wan2.2首尾帧——KJ流_1958363442241552386.json, 视频生成/图生视频/wan美女视频转绘，跳舞15秒直出_1913561897336041474.json, 视频生成/图生视频/服装展示图像转视频_1915976312136073218.json]
+members: [视频生成/图生视频/VACE_WAN2.1首尾帧图生视频_1929028780692770818.json, 视频生成/图生视频/VACE_Wan2.1图生视频（提示词优化版）_1929901376015601665.json, 视频生成/图生视频/VACE_Wan2.1视频动作及运镜迁移_1925152993048469505.json, 视频生成/图生视频/Wan2.1_VACE_FusionX视频动作迁移_1938242650158071810.json, 视频生成/图生视频/Wan2.1_大摆锤舞蹈（胸部抖动优化版）_1948012879831269378.json, 视频生成/图生视频/多人大胸舞蹈自然胸部抖动优化版_2041108387424899074.json, 视频生成/图生视频/视频动作迁移-更适合动漫版（FusionX+Vace）_1959825451453722625.json, 视频生成/图生视频/视频动作迁移（FusionX+Vace））_1957430449545080834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_71
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan FusionX 图生视频-极速版_1940936064079183874.json、视频生成/图生视频/Wan FusionX 图生视频-极速版_1962815833489715202.json、视频生成/图生视频/Wan2.1(KJ)图片到视频基础工作流_1947465024660983810.json、视频生成/图生视频/sky 玩偶起飞_1914213434668347393.json、视频生成/图生视频/wan2.2首尾帧——KJ流_1958363442241552386.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/VACE_WAN2.1首尾帧图生视频_1929028780692770818.json、视频生成/图生视频/VACE_Wan2.1图生视频（提示词优化版）_1929901376015601665.json、视频生成/图生视频/VACE_Wan2.1视频动作及运镜迁移_1925152993048469505.json、视频生成/图生视频/Wan2.1_VACE_FusionX视频动作迁移_1938242650158071810.json、视频生成/图生视频/Wan2.1_大摆锤舞蹈（胸部抖动优化版）_1948012879831269378.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `GetNode`
+- `Int`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 5/7 个有
-- `DownloadAndLoadGIMMVFIModel` —— 5/7 个有
-- `GIMMVFI_interpolate` —— 5/7 个有
-- `ImageResizeKJ` —— 5/7 个有
-- `WanVideoClipVisionEncode` —— 5/7 个有
-- `WanVideoExperimentalArgs` —— 5/7 个有
-- `WanVideoTextEncode` —— 5/7 个有
-- `WanVideoTorchCompileSettings` —— 5/7 个有
-- `UpscaleModelLoader` —— 4/7 个有
-- `WanVideoLoraSelect` —— 4/7 个有
-- `ImageUpscaleWithModel` —— 3/7 个有
-- `Int` —— 3/7 个有
-- `TextInputBasic` —— 3/7 个有
-- `VHS_LoadVideo` —— 2/7 个有
-- `WanVideoApplyNAG` —— 2/7 个有
-- `WanVideoTextEncodeSingle` —— 2/7 个有
-- `WanVideoUniAnimateDWPoseDetector` —— 2/7 个有
-- `WanVideoUniAnimatePoseInput` —— 2/7 个有
-- `CreateCFGScheduleFloatList` —— 1/7 个有
-- `ImageScaleToMegapixels` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `WanVideoFreeInitArgs` —— 1/7 个有
-- `WanVideoLoraSelectMulti` —— 1/7 个有
-- `WanVideoVACEModelSelect` —— 1/7 个有
-- `easy anythingIndexSwitch` —— 1/7 个有
+- `ImageResizeKJv2` —— 7/8 个有
+- `RHHiddenNodes` —— 7/8 个有
+- `JjkText` —— 6/8 个有
+- `ColorMatch` —— 5/8 个有
+- `GetImageSizeAndCount` —— 5/8 个有
+- `WanVideoLoraSelect` —— 5/8 个有
+- `WanVideoVACEStartToEndFrame` —— 5/8 个有
+- `AIO_Preprocessor` —— 4/8 个有
+- `VHS_LoadVideo` —— 4/8 个有
+- `DepthAnything_V2` —— 3/8 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 3/8 个有
+- `ImageBlur` —— 3/8 个有
+- `RH_Captioner` —— 3/8 个有
+- `RH_Prompter` —— 3/8 个有
+- `VHS_VideoInfoLoaded` —— 3/8 个有
+- `WanVideoExperimentalArgs` —— 3/8 个有
+- `WanVideoSLG` —— 3/8 个有
+- `CM_IntBinaryOperation` —— 2/8 个有
+- `Florence2ModelLoader` —— 2/8 个有
+- `Florence2Run` —— 2/8 个有
+- `ImageConcatMulti` —— 2/8 个有
+- `JWInteger` —— 2/8 个有
+- `LayerColor: ColorAdapter` —— 1/8 个有
+- `LoadAudio` —— 1/8 个有
+- `ZipNode` —— 1/8 个有
 
 ## 典型参数
 

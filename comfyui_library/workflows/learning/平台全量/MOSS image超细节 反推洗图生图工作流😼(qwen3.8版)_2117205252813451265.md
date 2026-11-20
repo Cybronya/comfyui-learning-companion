@@ -1,0 +1,75 @@
+---
+key: 平台全量/MOSS image超细节 反推洗图生图工作流😼(qwen3.8版)_2117205252813451265.json
+name: MOSS image超细节 反推洗图生图工作流😼(qwen3.8版)_2117205252813451265
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/MOSS image超细节 反推洗图生图工作流😼(qwen3.8版)_2117205252813451265.json
+hash: 2aa875c3e386070c
+coverage: 0.785714
+learned_at: 2026-11-14 00:39:57
+nodes: [CLIPTextEncode, SkipLayerGuidanceDiTSimple, UNETLoader, CLIPLoader, VAELoader, easy seed, ResolutionSelector, LoraLoaderModelOnly, MarkdownNote, MarkdownNote, EmptyLatentImage, VAEDecode, EmptyImage, LayerUtility: ImageScaleByAspectRatio V2, INTConstant, KSampler, MarkdownNote, SaveImage, XB_CanvasLabel, Lable (DaSiWa), CLIPTextEncode, LoadImage, PrimitiveStringMultiline, PrimitiveStringMultiline, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_instruct_adv, ShowText|pysssss]
+patterns: [text_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 3, "denoise": 1, "height": 1024, "sampler_name": "er_sde", "scheduler": "simple", "seed": 999, "steps": 25, "width": 1024}
+---
+
+# 平台全量/MOSS image超细节 反推洗图生图工作流😼(qwen3.8版)_2117205252813451265.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/MOSS image超细节 反推洗图生图工作流😼(qwen3.8版)_2117205252813451265.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（28 个）：
+- `CLIPTextEncode` ★核心
+- `SkipLayerGuidanceDiTSimple`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `easy seed`
+- `ResolutionSelector`
+- `LoraLoaderModelOnly` ★核心
+- `MarkdownNote`
+- `MarkdownNote`
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `EmptyImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `INTConstant`
+- `KSampler` ★核心
+- `MarkdownNote`
+- `SaveImage`
+- `XB_CanvasLabel`
+- `Lable (DaSiWa)`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `llama_cpp_instruct_adv`
+- `ShowText|pysssss`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
+- `seed` = `999`
+- `steps` = `25`
+- `cfg` = `3`
+- `sampler_name` = `er_sde`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **79%**（22/28）
+
+**有卡**：`CLIPTextEncode`、`SkipLayerGuidanceDiTSimple`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`easy seed`、`ResolutionSelector`、`LoraLoaderModelOnly`、`EmptyLatentImage`、`VAEDecode`、`EmptyImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`INTConstant`、`KSampler`、`SaveImage`、`XB_CanvasLabel`、`Lable (DaSiWa)`、`LoadImage`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、CLIPTextEncode、EmptyLatentImage、ResolutionSelector

@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_577
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.6362
-common_nodes: [ExpressionEditor, LoadImage, PreviewImage, SaveImage]
+coverage: 0.682167
+common_nodes: [CR Prompt Text, LoadImage, RH_Sora2_I2V, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/【超简单版】Emoji表情编辑_1923590104647200770.json, 图片生成/图生图/【超简单版】Emoji表情编辑：一图即可生产各种表情，九宫格放不下~_2014576225339052034.json, 图片生成/图生图/人物面部表情调整与迁移_2001586644711010306.json, 图片生成/图生图/原图参考新图表情_2001611167548227586.json, 图片生成/图生图/表情生成器（丝滑又简单）_2029109512539480065.json]
+members: [图片生成/图生图/全能视频S图生视频V2（支持横版及HD版-RH API版-国庆0.05元_10秒）_1974392587211640833.json, 图片生成/文生图/全能视频S文生视频 图生视频 综合版 无水印_1973774958298009601.json, 平台全量/全能视频S武侠特效支持横_竖屏工作流_2007005896819351554.json, 视频生成/图生视频/山口组-全能视频S图生视频_1978660350759424002.json, 视频生成/图生视频/最新 全能视频S图生视频（RH API版-国庆0.05元_10秒）_1973582063473397762.json, 视频生成/文生视频/山口组-全能视频S生视频0.05元_次_1986376862463127553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_577
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【超简单版】Emoji表情编辑_1923590104647200770.json、图片生成/图生图/【超简单版】Emoji表情编辑：一图即可生产各种表情，九宫格放不下~_2014576225339052034.json、图片生成/图生图/人物面部表情调整与迁移_2001586644711010306.json、图片生成/图生图/原图参考新图表情_2001611167548227586.json、图片生成/图生图/表情生成器（丝滑又简单）_2029109512539480065.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/全能视频S图生视频V2（支持横版及HD版-RH API版-国庆0.05元_10秒）_1974392587211640833.json、图片生成/文生图/全能视频S文生视频 图生视频 综合版 无水印_1973774958298009601.json、平台全量/全能视频S武侠特效支持横_竖屏工作流_2007005896819351554.json、视频生成/图生视频/山口组-全能视频S图生视频_1978660350759424002.json、视频生成/图生视频/最新 全能视频S图生视频（RH API版-国庆0.05元_10秒）_1973582063473397762.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ExpressionEditor`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScale` —— 3/5 个有
-- `ImageConcanate` —— 2/5 个有
+- `easy showAnything` —— 5/6 个有
+- `RH_Sora2_T2V` —— 4/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `Text Concatenate` —— 2/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
 
 ## 典型参数
 

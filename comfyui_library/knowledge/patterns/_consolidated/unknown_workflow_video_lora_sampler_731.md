@@ -1,81 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_731
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.933333
-common_nodes: [CLIPVisionLoader, FloatConstant, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PreviewAnimation, PreviewImage, RenderNLFPoses, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.517
+common_nodes: [BatchImagesNode, BlockSparseAttention, ComfySwitchNodeV2, Fast Groups Bypasser (rgthree), FeiHouEasyH3RHDurationCrop, FeiHouEasyH3RHFaceRefine, FeiHouEasyH3RHLoraStack, FeiHouEasyH3RHMedia, FeiHouEasyH3RHRemixLoader, FeiHouEasyH3RHSampleEnhancer1st, FeiHouEasyH3RHSampleEnhancer2nd, FeiHouEasyH3RHSetup, GetNode, LoadImage, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveBoolean, PrimitiveInt, RandomSeedNoise, SamplerCustomAdvanced, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1-scail+FOR循环适合小显存配置_2050481432279175169.json, 视频生成/图生视频/▶SCAIL-动作迁移_2011070292294111234.json, 视频生成/图生视频/一键复刻美女小姐姐跳舞SCAILGGUF 低功耗方案动作迁移_2031330145717456898.json]
+members: [视频生成/图生视频/MiniMax Easy H3 Remix 高动态快速二阶采样工作流 V6_2109109925753475073.json, 视频生成/图生视频/MiniMax Easy H3 Remix 高动态快速二阶采样工作流 V6_2110607462595383297.json, 视频生成/图生视频/MiniMax_Easy_H3_Remix_高动态快速二阶采样工作流_V6_2113799636451422210.json, 视频生成/图生视频/【阿良绘】H3无限画布式操作 _ 反推+双采+人脸精修_2109562411400384513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_731
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.1-scail+FOR循环适合小显存配置_2050481432279175169.json、视频生成/图生视频/▶SCAIL-动作迁移_2011070292294111234.json、视频生成/图生视频/一键复刻美女小姐姐跳舞SCAILGGUF 低功耗方案动作迁移_2031330145717456898.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax Easy H3 Remix 高动态快速二阶采样工作流 V6_2109109925753475073.json、视频生成/图生视频/MiniMax Easy H3 Remix 高动态快速二阶采样工作流 V6_2110607462595383297.json、视频生成/图生视频/MiniMax_Easy_H3_Remix_高动态快速二阶采样工作流_V6_2113799636451422210.json、视频生成/图生视频/【阿良绘】H3无限画布式操作 _ 反推+双采+人脸精修_2109562411400384513.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `FloatConstant`
-- `INTConstant`
-- `ImageResizeKJv2`
+全部 4 个 workflow 都包含：
+- `BatchImagesNode`
+- `BlockSparseAttention`
+- `ComfySwitchNodeV2`
+- `Fast Groups Bypasser (rgthree)`
+- `FeiHouEasyH3RHDurationCrop`
+- `FeiHouEasyH3RHFaceRefine`
+- `FeiHouEasyH3RHLoraStack`
+- `FeiHouEasyH3RHMedia`
+- `FeiHouEasyH3RHRemixLoader`
+- `FeiHouEasyH3RHSampleEnhancer1st`
+- `FeiHouEasyH3RHSampleEnhancer2nd`
+- `FeiHouEasyH3RHSetup`
+- `GetNode`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `PreviewAnimation`
-- `PreviewImage`
-- `RenderNLFPoses`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `RandomSeedNoise`
+- `SamplerCustomAdvanced`
+- `SetNode`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadNLFModel` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `CM_FloatToInt` —— 1/3 个有
-- `Display Int (rgthree)` —— 1/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `ImageBatchExtendWithOverlap` —— 1/3 个有
-- `ImageBlend` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `ImageStitch` —— 1/3 个有
-- `ImpactCompare` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `LoadNLFModel` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `WanVideoLoraSelectMulti` —— 1/3 个有
-- `easy forLoopEnd` —— 1/3 个有
-- `easy forLoopStart` —— 1/3 个有
-- `easy ifElse` —— 1/3 个有
+- `Label (rgthree)` —— 2/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

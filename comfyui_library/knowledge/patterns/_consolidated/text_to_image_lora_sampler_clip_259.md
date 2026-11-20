@@ -2,79 +2,68 @@
 name: text_to_image_lora_sampler_clip_259
 type: Text To Image
 frequency: 8
-level: moderate
-coverage: 0.90875
-common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, LayerUtility: ImageScaleByAspectRatio, LoadImage, ModelSamplingAuraFlow, PrimitiveInt, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.7005
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, KSampler, LoraLoader, SaveImage, VAEDecode]
+problems: []
 missing: []
-members: [图片生成/图生图/krea2-cn控制图生图_2090805286805266433.json, 图片生成/图生图/krea2深度控制图生图_2075408443883745282.json, 图片生成/图生图/krea2深度控制图生图_2075410063556177922.json, 图片生成/图生图/krea2深度控制图生图_2083459570168582145.json, 图片生成/图生图/krea2深度控制图生图洗图_2075405320553324546.json, 图片生成/图生图/krea2深度控制洗图_2075409406933688322.json, 图片生成/文生图/Krea2 CN控制图生图工作流，文生图图生图控制处理工具_2107990625491709953.json, 图片生成/文生图/krea2-cn控制图生图_2105949894426058753.json]
+members: [图片生成/文生图/B妮B妳_N_S_F_W_SDXL文生图_系列一_汇总_2020328189045772290.json, 图片生成/文生图/B妮B妳_N_S_F_W_SDXL文生图_系列三_汇总_2020709944613408769.json, 图片生成/文生图/B妮B妳_N_S_F_W_SDXL文生图_系列二_汇总_2020500328235409409.json, 图片生成/文生图/B妮B妳_N_S_F_W_SDXL文生图_系列四_汇总_2020730383855259650.json, 图片生成/文生图/B妮B妳_SDXL文生图_系列二_N_S_F_W_汇总_2021460181497942018.json, 图片生成/文生图/B妮B妳_SDXL文生图_系列五_N_S_F_W_汇总_2020753702591668225.json, 图片生成/文生图/B妮B妳_SDXL文生图_系列六_N_S_F_W_汇总_2020827252291801089.json, 图片生成/文生图/Text-to-Image + LoRA_1878782083018514433.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_259
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/krea2-cn控制图生图_2090805286805266433.json、图片生成/图生图/krea2深度控制图生图_2075408443883745282.json、图片生成/图生图/krea2深度控制图生图_2075410063556177922.json、图片生成/图生图/krea2深度控制图生图_2083459570168582145.json、图片生成/图生图/krea2深度控制图生图洗图_2075405320553324546.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/B妮B妳_N_S_F_W_SDXL文生图_系列一_汇总_2020328189045772290.json、图片生成/文生图/B妮B妳_N_S_F_W_SDXL文生图_系列三_汇总_2020709944613408769.json、图片生成/文生图/B妮B妳_N_S_F_W_SDXL文生图_系列二_汇总_2020500328235409409.json、图片生成/文生图/B妮B妳_N_S_F_W_SDXL文生图_系列四_汇总_2020730383855259650.json、图片生成/文生图/B妮B妳_SDXL文生图_系列二_N_S_F_W_汇总_2021460181497942018.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **可信度**：强结论
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
 - `KSampler`
-- `Krea2ControlApply`
-- `Krea2ControlImageEncode`
-- `Krea2ControlLoRALoader`
-- `LayerUtility: ImageScaleByAspectRatio`
-- `LoadImage`
-- `ModelSamplingAuraFlow`
-- `PrimitiveInt`
+- `LoraLoader`
 - `SaveImage`
-- `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DepthAnythingV2Preprocessor` —— 5/8 个有
-- `AIO_Preprocessor` —— 3/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `VAEEncode` —— 2/8 个有
-- `JjkText` —— 1/8 个有
-- `solarL_SaveImagesToZip` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `HAIGC_SaveImagesToZip` —— 7/8 个有
+- `PreviewAny` —— 7/8 个有
+- `easy promptLine` —— 7/8 个有
+- `PreviewBridge` —— 6/8 个有
+- `PreviewImage` —— 2/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 10 | 8 | 80% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 8 | 19% |
-| 采样算法 | er_sde | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 88% |
+| 宽度 | 1024 | 1024 - 1344 | 8 | 90% |
+| 高度 | 1720 | 1280 - 1728 | 8 | 91% |
+| 采样步数 | 25 | 20 - 25 | 8 | 93% |
+| Prompt 约束强度(CFG) | 7 | 7 - 8 | 8 | 95% |
+| 采样算法 | euler | - | 8 | 75% |
+| 调度器 | karras | - | 8 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 1024 | 80 - 1536 | 8 | 61% |
-| 高度 | 1024 | 80 - 1024 | 8 | 65% |
+| LoRA 模型强度 | 0.6 | 0.4 - 0.6 | 8 | 88% |
+| LoRA 文本强度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 10，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，8 个样本，取值分散，一致性仅 19%
-- 采样算法 最常用 er_sde，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 88%
+- 宽度 中位数 1024，观测区间 1024 - 1344，8 个样本，取值集中（一致性 90%）
+- 高度 中位数 1720，观测区间 1280 - 1728，8 个样本，取值集中（一致性 91%）
+- 采样步数 中位数 25，观测区间 20 - 25，8 个样本，取值集中（一致性 93%）
+- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 8，8 个样本，取值集中（一致性 95%）
+- 采样算法 最常用 euler，8 个样本，一致性 75%
+- 调度器 最常用 karras，8 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 80 - 1536，8 个样本
-- 高度 中位数 1024，观测区间 80 - 1024，8 个样本
-- 高发问题（7/8 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 0.6，观测区间 0.4 - 0.6，8 个样本，取值集中（一致性 88%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

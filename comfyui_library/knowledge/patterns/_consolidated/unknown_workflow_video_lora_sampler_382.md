@@ -1,60 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_382
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.753167
-common_nodes: [Any Switch (rgthree), BasicGuider, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetImageSize, ImageScaleToTotalPixels, ImpactConditionalBranch, LoadImage, LoraLoaderModelOnly, MiniMaxH3DualClockSamplerT8, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Seed (rgthree), UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.731
+common_nodes: [AIO_Preprocessor, AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/MiniMax H3 V4 加速 8步便宜高分辨率Lightx2v新版_2096506669005103105.json, 视频生成/图生视频/MiniMax+H3+turbo+V4 加速 图生视频_2087377151829045249.json, 视频生成/文生视频/MiniMax H3加速-雷动_2089901234252763137.json, 视频生成/文生视频/MiniMax H3多合一加速工作流_2087814171474874370.json, 视频生成/文生视频/MiniMax H3多合一加速模糊修复工作流_2088889982973992961.json, 视频生成/文生视频/MiniMax+H3+turbo+V4 加速 多合一工作流_2087055785581965313.json]
+members: [视频生成/图生视频/VACE14b-美女疯狂跳舞机V1_1923648831874134018.json, 视频生成/图生视频/图转视频0701_1939830629229830146.json, 视频生成/图生视频/新150帧高清美女跳舞机 （任何动作均可迁移）_1934886185854509058.json, 视频生成/图生视频/新Wan2.1卡通人物跳舞机V3.0_1932026704078766082.json, 视频生成/图生视频/新Wan2.2 至高160帧超级动作迁移美女跳舞_1955521868151361537.json, 视频生成/图生视频/最新美女跳舞机2K高清视频直接160帧V3_1930203972051832833.json, 视频生成/图生视频/视频动作迁移｜上传视频和图片｜_1962127053556531202.json, 视频生成/图生视频/视频动作迁移｜上传视频和图片｜深度+open pose 控制_1937838882719469569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_382
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/MiniMax H3 V4 加速 8步便宜高分辨率Lightx2v新版_2096506669005103105.json、视频生成/图生视频/MiniMax+H3+turbo+V4 加速 图生视频_2087377151829045249.json、视频生成/文生视频/MiniMax H3加速-雷动_2089901234252763137.json、视频生成/文生视频/MiniMax H3多合一加速工作流_2087814171474874370.json、视频生成/文生视频/MiniMax H3多合一加速模糊修复工作流_2088889982973992961.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/VACE14b-美女疯狂跳舞机V1_1923648831874134018.json、视频生成/图生视频/图转视频0701_1939830629229830146.json、视频生成/图生视频/新150帧高清美女跳舞机 （任何动作均可迁移）_1934886185854509058.json、视频生成/图生视频/新Wan2.1卡通人物跳舞机V3.0_1932026704078766082.json、视频生成/图生视频/新Wan2.2 至高160帧超级动作迁移美女跳舞_1955521868151361537.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `ImpactConditionalBranch`
+全部 8 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `Seed (rgthree)`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 3/6 个有
-- `Fast Bypasser (rgthree)` —— 3/6 个有
-- `PrimitiveBoolean` —— 3/6 个有
-- `easy boolean` —— 3/6 个有
-- `easy cleanGpuUsed` —— 3/6 个有
-- `BasicScheduler` —— 1/6 个有
-- `KSamplerSelect` —— 1/6 个有
+- `Primitive integer [Crystools]` —— 7/8 个有
+- `WanVideoExperimentalArgs` —— 7/8 个有
+- `WanVideoVACEEncode` —— 7/8 个有
+- `ImageUpscaleWithModel` —— 6/8 个有
+- `RHHiddenNodes` —— 6/8 个有
+- `UpscaleModelLoader` —— 6/8 个有
+- `WanVideoModelLoader` —— 6/8 个有
+- `Bjornulf_ShowJson` —— 4/8 个有
+- `ColorMatch` —— 4/8 个有
+- `LayerUtility: PurgeVRAM` —— 4/8 个有
+- `RH_Translator` —— 4/8 个有
+- `WanVideoTeaCache` —— 4/8 个有
+- `WanVideoTorchCompileSettings` —— 4/8 个有
+- `Note Plus (mtb)` —— 3/8 个有
+- `Text Concatenate` —— 3/8 个有
+- `Text Multiline` —— 3/8 个有
+- `FILM VFI` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
+- `WD14Tagger|pysssss` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,60 +1,75 @@
 ---
 name: unknown_workflow_controlnet_video_lora_23
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7252
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
+coverage: 0.944833
+common_nodes: [DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Z-uni3c虚拟相机工作流_1991800857396195330.json, 视频生成/图生视频/magref三图参考+uni3c控制_1937420922334683137.json, 视频生成/图生视频/magref双图参考+uni3c控制_1937380576187850754.json, 视频生成/图生视频/uni3c虚拟相机工作流_1941553575740993537.json, 视频生成/图生视频/模仿运镜uni3c虚拟相机_1983014964149530626.json]
+members: [数字人/数字人/202_单人图像说话（WanMultitalk）（魔方）_1948618754165997569.json, 数字人/数字人/multitalk数字人长视频生成（图片数字人）_1941654451621097473.json, 数字人/数字人/终极数字人 InfiniteTalk_1937407358828232705.json, 数字人/数字人/终极数字人 InfiniteTalk_2034291576809197569.json, 视频生成/图生视频/单人图像说话（WanMultitalk）（魔方）_1948265018342158337.json, 视频生成/图生视频/数字人加运镜_1951224914336526338.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_23
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Z-uni3c虚拟相机工作流_1991800857396195330.json、视频生成/图生视频/magref三图参考+uni3c控制_1937420922334683137.json、视频生成/图生视频/magref双图参考+uni3c控制_1937380576187850754.json、视频生成/图生视频/uni3c虚拟相机工作流_1941553575740993537.json、视频生成/图生视频/模仿运镜uni3c虚拟相机_1983014964149530626.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/202_单人图像说话（WanMultitalk）（魔方）_1948618754165997569.json、数字人/数字人/multitalk数字人长视频生成（图片数字人）_1941654451621097473.json、数字人/数字人/终极数字人 InfiniteTalk_1937407358828232705.json、数字人/数字人/终极数字人 InfiniteTalk_2034291576809197569.json、视频生成/图生视频/单人图像说话（WanMultitalk）（魔方）_1948265018342158337.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageResizeKJv2`
+全部 6 个 workflow 都包含：
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 3/5 个有
-- `GetNode` —— 3/5 个有
-- `INTConstant` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `GetImageSize+` —— 2/5 个有
-- `ImageConcanate` —— 2/5 个有
-- `ImagePadKJ` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `easy imageRemBg` —— 2/5 个有
-- `ColorMatch` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `CLIPVisionLoader` —— 5/6 个有
+- `WanVideoApplyNAG` —— 5/6 个有
+- `WanVideoClipVisionEncode` —— 5/6 个有
+- `WanVideoEnhanceAVideo` —— 5/6 个有
+- `WanVideoTextEncodeSingle` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `AudioSeparation` —— 4/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `JWInteger` —— 4/6 个有
+- `WanVideoContextOptions` —— 4/6 个有
+- `WanVideoImageToVideoEncode` —— 4/6 个有
+- `WanVideoSLG` —— 4/6 个有
+- `Audio Duration (mtb)` —— 3/6 个有
+- `AudioCrop` —— 3/6 个有
+- `RH_GetAudioDuration` —— 3/6 个有
+- `WanVideoExperimentalArgs` —— 3/6 个有
+- `easy showAnything` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `RepeatImageBatch` —— 2/6 个有
+- `Text Multiline` —— 2/6 个有
+- `VHS_LoadVideo` —— 2/6 个有
+- `WanVideoImageToVideoMultiTalk` —— 2/6 个有
+- `WanVideoTeaCache` —— 2/6 个有
+- `FloatConstant` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `JWIntegerToString` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
+- `WanVideoTextEncode` —— 1/6 个有
 
 ## 典型参数
 

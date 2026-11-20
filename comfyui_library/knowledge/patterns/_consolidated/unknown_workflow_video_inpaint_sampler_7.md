@@ -1,75 +1,71 @@
 ---
 name: unknown_workflow_video_inpaint_sampler_7
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.743
-common_nodes: [GetNode, GrowMaskWithBlur, ImageResizeKJ, InpaintPreprocessor, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader, easy imageRemBg]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.945333
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, INTConstant, ImageResizeKJ, KSampler, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanFunInpaintToVideo]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/Wan2.1 FusionX VACE视频编辑_1949674343244144641.json, 视频生成/图生视频/视频版万物迁移_1934214235734106114.json]
+members: [图片生成/图生图/03-04-03-WAN2.1-首帧生成视频-FUN-INP-1.3B-原生_1989234488586670081.json, 平台全量/03-04-04-WAN2.1-首尾帧生成视频-FUN-INP-14B-原生_1989234532287123458.json, 视频生成/图生视频/2025-04-15 wan1.3b inp img2img_1911833521852481537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 FusionX VACE视频编辑_1949674343244144641.json、视频生成/图生视频/视频版万物迁移_1934214235734106114.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/03-04-03-WAN2.1-首帧生成视频-FUN-INP-1.3B-原生_1989234488586670081.json、平台全量/03-04-04-WAN2.1-首尾帧生成视频-FUN-INP-14B-原生_1989234532287123458.json、视频生成/图生视频/2025-04-15 wan1.3b inp img2img_1911833521852481537.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `GetNode`
-- `GrowMaskWithBlur`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `INTConstant`
 - `ImageResizeKJ`
-- `InpaintPreprocessor`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: SegmentAnythingUltra V3`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `PreviewImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `ModelSamplingSD3`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVACEEncode`
-- `WanVideoVAELoader`
-- `easy imageRemBg`
+- `WanFunInpaintToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `ColorMatch` —— 1/2 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
-- `ImageBlend` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `ImageSmartSharpen+` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LoadImageFromUrl` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
-- `PrimitiveString` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `WanVideoVACEModelSelect` —— 1/2 个有
+- `ImpactMakeImageBatch` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `CFGZeroStarAndInit` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `WanVideoTeaCacheKJ` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | uni_pc | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode

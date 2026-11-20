@@ -1,83 +1,78 @@
 ---
 name: unknown_workflow_sampler_unet_vae_306
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.429
-common_nodes: [Any Switch (rgthree), CLIPLoader, CR Text, Display Any (rgthree), Fast Groups Bypasser (rgthree), GetNode, Image Comparer (rgthree), KSampler, LoadImage, Mask Fill Holes, PlaySound|pysssss, RH_LLMAPI_NODE, SaveImage, SetNode, ToBinaryMask, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: moderate
+coverage: 0.7855
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux.2 klein 超简约3图编辑 支持遮罩_2013530494272544769.json, 图片生成/图生图/QwenEdit2511 3图编辑 0偏移 支持遮罩_2012822451759091714.json]
+members: [视频生成/图生视频/海螺H3八步极速生成文图首尾帧视频3合一工作流_2088515866974576641.json, 视频生成/文生视频/MiniMax H3 加速版 图生视频 首尾帧生视频_2086653248143978497.json, 视频生成/文生视频/MiniMax H3 图生视频 首尾帧生视频_2085441158259494913.json, 视频生成/文生视频/MinimaxH3文生_图生多合一工作流【开源版】_2084181479239802882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_306
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux.2 klein 超简约3图编辑 支持遮罩_2013530494272544769.json、图片生成/图生图/QwenEdit2511 3图编辑 0偏移 支持遮罩_2012822451759091714.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/海螺H3八步极速生成文图首尾帧视频3合一工作流_2088515866974576641.json、视频生成/文生视频/MiniMax H3 加速版 图生视频 首尾帧生视频_2086653248143978497.json、视频生成/文生视频/MiniMax H3 图生视频 首尾帧生视频_2085441158259494913.json、视频生成/文生视频/MinimaxH3文生_图生多合一工作流【开源版】_2084181479239802882.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：43%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `Display Any (rgthree)`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
 - `LoadImage`
-- `Mask Fill Holes`
-- `PlaySound|pysssss`
-- `RH_LLMAPI_NODE`
-- `SaveImage`
-- `SetNode`
-- `ToBinaryMask`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 1/2 个有
-- `EmptyLatentImage` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `PainterFluxImageEdit` —— 1/2 个有
-- `PainterQwenImageEditPlus` —— 1/2 个有
-- `easy imageSize` —— 1/2 个有
+- `AnyBooleanSwitch` —— 2/4 个有
+- `EmptyImage` —— 2/4 个有
+- `ImpactConditionalBranch` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `MiniMaxH3BlockCacheT8` —— 2/4 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
+- `CM_BoolBinaryOperation` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `CR Text Concatenate` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `PainterVRAM` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `RH_LLMAPI_NODE` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `Switch image [Crystools]` —— 1/4 个有
+- `easy boolean` —— 1/4 个有
+- `easy convertAnything` —— 1/4 个有
+- `easy float` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 1920 | - | 1 | 100% |
-| 高度 | 1080 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

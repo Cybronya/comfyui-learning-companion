@@ -3,64 +3,71 @@ name: text_to_image_video_lora_sampler_242
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.937
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3Unified, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewImage, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.853
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CM_IntToFloat, CR Model Input Switch, DrawMaskOnImage, DrawViTPose, EmptyLatentImage, Fast Bypasser (rgthree), GrowMask, ImageBlend, ImageResizeKJv2, ImpactInt, JjkText, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoadVideoUI, LoraLoaderModelOnly, Mute / Bypass Repeater (rgthree), OnnxDetectionModelLoader, PixaromaResolution, PointsEditor, PoseAndFaceDetection, PreviewImage, RHHiddenNodes, RIFE VFI, SeCModelLoader, SeCVideoSegmentation, SimpleMath+, TrimVideoLatent, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanAnimateToVideo, easy cleanGpuUsed, easy imageSize, easy int, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MinimaxH3自定义sigma参数工作流，文生视频视频生视频全能_2113811342015680514.json, 视频生成/文生视频/minimaxH3单采双采工作流｜文生视频图生视频样样通_2100759046625259522.json]
+members: [视频生成/图生视频/局部）Wan2.2_AnimateV2__SEC新版替换工作流（全身_2087329504221024257.json, 视频生成/图生视频/局部）Wan2.2_AnimateV2__SEC新版替换工作流（全身_2087475613006385154.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_242
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3自定义sigma参数工作流，文生视频视频生视频全能_2113811342015680514.json、视频生成/文生视频/minimaxH3单采双采工作流｜文生视频图生视频样样通_2100759046625259522.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/局部）Wan2.2_AnimateV2__SEC新版替换工作流（全身_2087329504221024257.json、视频生成/图生视频/局部）Wan2.2_AnimateV2__SEC新版替换工作流（全身_2087475613006385154.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `BlockifyMask`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CM_IntToFloat`
+- `CR Model Input Switch`
+- `DrawMaskOnImage`
+- `DrawViTPose`
 - `EmptyLatentImage`
+- `Fast Bypasser (rgthree)`
+- `GrowMask`
+- `ImageBlend`
+- `ImageResizeKJv2`
+- `ImpactInt`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `LoadVideoUI`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3Unified`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
+- `Mute / Bypass Repeater (rgthree)`
+- `OnnxDetectionModelLoader`
+- `PixaromaResolution`
+- `PointsEditor`
+- `PoseAndFaceDetection`
 - `PreviewImage`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `RHHiddenNodes`
+- `RIFE VFI`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `SimpleMath+`
+- `TrimVideoLatent`
 - `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `WanAnimateToVideo`
+- `easy cleanGpuUsed`
+- `easy imageSize`
+- `easy int`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
-
-**可变部分**（部分 workflow 才有）：
-- `BlockSparseAttention` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `EmptyImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `H3SigmaRefiner` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
-- `MiniMaxH3AVDecodeT8` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `SelfLiftH3Sampler` —— 1/2 个有
-- `VHS_SelectImages` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `孤海注释`
 
 ## 典型参数
 
@@ -78,7 +85,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -89,5 +96,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

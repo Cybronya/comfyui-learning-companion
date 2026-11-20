@@ -1,77 +1,84 @@
 ---
 name: unknown_workflow_lora_sampler_clip_62
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.917286
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, WanHuMoImageToVideo]
-problems: [Steps较低可能导致细节不足]
+frequency: 9
+level: moderate
+coverage: 0.858111
+common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
+problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_humo.json, 数字人/数字人/HuMo数字人原生工作流_1989323404614529026.json, 数字人/数字人/Humo数字人新技术_1968996997191589889.json, 视频生成/图生视频/52.tonnie-数字人对口型（效果不好）_2007938025782775810.json, 视频生成/文生视频/HuMo数字人音视频同步-人物唱歌480p_1978263692649357314.json, 视频生成/文生视频/HuMo数字人音视频同步-人物唱歌720p-6秒_1978284951923777537.json, 视频生成/文生视频/HuMo数字人音视频同步-猴子吃桃_1978248140035874818.json]
+members: [视频生成/图生视频/LTX-2.3_小seedance2全能参考节点_2065439100508921858.json, 视频生成/图生视频/LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json, 视频生成/图生视频/Licon-MSR生成视频参考工作流_2061975400108093442.json, 视频生成/图生视频/Ltx2.3 MSR全能参考生视频V1_2067141677512482818.json, 视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json, 视频生成/图生视频/aidir-LTX2.3多图参考（小）Seedance 2.0_2069617886041305089.json, 视频生成/图生视频/（高帧率-高动态）Ltx2.3 Licon-MSR自动提示词版全能参考生视频正式版V1_2063485331059601410.json, 视频生成/图生视频/（高帧率）Ltx2.3 Licon-MSR自动提示词版全能参考生视频正式版V1_2063464652104884226.json, 视频生成/文生视频/（高帧率图生视频）Ltx2.3 Licon-MSR自动提示词版全能参考视频_2064880215909814273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_62
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（comfyui-workflow-templates-json/video_humo.json、数字人/数字人/HuMo数字人原生工作流_1989323404614529026.json、数字人/数字人/Humo数字人新技术_1968996997191589889.json、视频生成/图生视频/52.tonnie-数字人对口型（效果不好）_2007938025782775810.json、视频生成/文生视频/HuMo数字人音视频同步-人物唱歌480p_1978263692649357314.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_小seedance2全能参考节点_2065439100508921858.json、视频生成/图生视频/LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json、视频生成/图生视频/Licon-MSR生成视频参考工作流_2061975400108093442.json、视频生成/图生视频/Ltx2.3 MSR全能参考生视频V1_2067141677512482818.json、视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CLIPLoader`
+全部 9 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `KSampler`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `KSamplerSelect`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `UNETLoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `VAEDecode`
-- `VAELoader`
-- `WanHuMoImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 5/7 个有
-- `CreateVideo` —— 4/7 个有
-- `RecordAudio` —— 4/7 个有
-- `SaveVideo` —— 4/7 个有
-- `RH_Translator` —— 3/7 个有
-- `SimpleMath+` —— 3/7 个有
-- `VHS_VideoCombine` —— 3/7 个有
-- `ContextWindowsManual` —— 2/7 个有
-- `VHS_LoadAudioUpload` —— 2/7 个有
-- `AudioSeparation` —— 1/7 个有
-- `SoundFlow_GetLength` —— 1/7 个有
-- `SoundFlow_TrimAudio` —— 1/7 个有
-- `ToInt` —— 1/7 个有
+- `LTXAVTextEncoderLoader` —— 6/9 个有
+- `LTXVAudioVAELoader` —— 6/9 个有
+- `LowVRAMCheckpointLoader` —— 6/9 个有
+- `CR Prompt Text` —— 5/9 个有
+- `RH_LLMAPI_Pro_Node` —— 5/9 个有
+- `ShowText|pysssss` —— 5/9 个有
+- `DualCLIPLoader` —— 3/9 个有
+- `GetNode` —— 3/9 个有
+- `SetNode` —— 3/9 个有
+- `UNETLoader` —— 3/9 个有
+- `VAELoader` —— 3/9 个有
+- `MuyeTextEditOutput` —— 2/9 个有
+- `AtSignCLIPTextEncode` —— 1/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `LTXVAddGuideMulti` —— 1/9 个有
+- `LoadVideo` —— 1/9 个有
+- `MultiIntFormula` —— 1/9 个有
+- `Qwen3VL_Chat` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
+- `TT_img_enc` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 4 - 6 | 7 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | uni_pc | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 宽度 | 241 | 97 - 241 | 9 | 76% |
+| 高度 | 50 | 24 - 50 | 9 | 75% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 6，7 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 241，观测区间 97 - 241，9 个样本
+- 高度 中位数 50，观测区间 24 - 50，9 个样本

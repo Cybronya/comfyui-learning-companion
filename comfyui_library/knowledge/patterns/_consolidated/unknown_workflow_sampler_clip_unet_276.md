@@ -1,53 +1,59 @@
 ---
 name: unknown_workflow_sampler_clip_unet_276
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8942
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.924167
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux3 Klein 提示词增强文生图_2112106153021890562.json, 图片生成/文生图/Flux3 Klein 提示词增强文生图_2113652586107727873.json, 图片生成/文生图/Flux3&多图编辑-加速版_2111293209782603777.json, 图片生成/文生图/flux_klien3单图-快速图像编辑_2110999906369490946.json, 视频生成/图生视频/Flux3加速版多图编辑V1_2110847111846780929.json]
+members: [图片生成/文生图/自用文生图_2115365961724416002.json, 平台全量/MOSS-SFT-文生图-pipi版_2117161888663564290.json, 平台全量/MOSS-SFT-文生图-pipi版_2118267529129979906.json, 平台全量/MOSS文生图（双模型融合）_2117816749293924354.json, 平台全量/Moss-image Juggernaut电影干文生图15步极速版V1_2119832769424617474.json, 平台全量/Moss-image SFT-观澜文生图15步极速版V1_2119830660495007746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_276
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Flux3 Klein 提示词增强文生图_2112106153021890562.json、图片生成/文生图/Flux3 Klein 提示词增强文生图_2113652586107727873.json、图片生成/文生图/Flux3&多图编辑-加速版_2111293209782603777.json、图片生成/文生图/flux_klien3单图-快速图像编辑_2110999906369490946.json、视频生成/图生视频/Flux3加速版多图编辑V1_2110847111846780929.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/自用文生图_2115365961724416002.json、平台全量/MOSS-SFT-文生图-pipi版_2117161888663564290.json、平台全量/MOSS-SFT-文生图-pipi版_2118267529129979906.json、平台全量/MOSS文生图（双模型融合）_2117816749293924354.json、平台全量/Moss-image Juggernaut电影干文生图15步极速版V1_2119832769424617474.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
-- `KSamplerSelect`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `ResolutionSelector`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 3/5 个有
-- `PrimitiveStringMultiline` —— 3/5 个有
-- `ReferenceMultiLatent` —— 3/5 个有
-- `ComfySwitchNode` —— 2/5 个有
-- `ResolutionSelector` —— 2/5 个有
-- `TextGenerate` —— 2/5 个有
-- `GetImageSize` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `SkipLayerGuidanceDiTSimple` —— 4/6 个有
+- `PreviewAny` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 2/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `MOSSMergePreset` —— 1/6 个有
+- `PrimitiveBoolean` —— 1/6 个有
+- `RH_LLMAPI_Pro_Node` —— 1/6 个有
+- `Text` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 15 | 15 - 50 | 6 | 43% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 3.5 | 6 | 58% |
+| 采样算法 | er_sde | - | 6 | 83% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -55,4 +61,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 15，观测区间 15 - 50，6 个样本，取值分散，一致性仅 43%
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 3.5，6 个样本
+- 采样算法 最常用 er_sde，6 个样本，一致性 83%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

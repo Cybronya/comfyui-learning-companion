@@ -1,65 +1,58 @@
 ---
 name: unknown_workflow_video_sampler_vae_35
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8455
-common_nodes: [CreateCFGScheduleFloatList, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.931636
+common_nodes: [ImageConcatMulti, ImagePadKJ, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/图生视频  Wan2.2_1972296101548191746.json, 视频生成/图生视频/WAN2.2-6步极速版-图生视频-KJ版工作流_2017911981818253314.json, 视频生成/图生视频/WAN2.2-6步极速版-图生视频-KJ版工作流_2046206194833952769.json, 视频生成/图生视频/WAN2.2-首尾帧视频-6步极速版-KJ版工作流_2014217620324618242.json, 视频生成/图生视频/wan2.2-KJ图生视频_首尾帧_2036380526440878082.json, 视频生成/图生视频/基础图生视频  WAN2.2_1988338285892255745.json, 视频生成/图生视频/首尾帧 Wan2.2_1972327481543946241.json, 视频生成/图生视频/🐳Wan2.2 图生视频 高动态高细节 邪修增强版v2🐳_1972843772218396673.json, 视频生成/文生视频/Wan2.2 图生视频 高动态高细节_1972673116709298177.json, 视频生成/文生视频/🐳Wan2.2 图生视频 高动态高细节 邪修增强版🐳_1972199974152957954.json]
+members: [平台全量/09.电商带货FusionX-Phantom加速版14B_2000793096378085378.json, 视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json, 视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json, 视频生成/图生视频/【FusionX】模特产品展示动态｜加速版_1934517435972419585.json, 视频生成/图生视频/数字人电商带货FusionX-Phantom加速版14B_2039636071985713154.json, 视频生成/图生视频/数字人电商带货FusionX-Phantom加速版14B_2064931253647929346.json, 视频生成/图生视频/电商带货FusionX-Phantom加速版14B_1934089550950260738.json, 视频生成/图生视频/电商带货服装包包直播视频生成FusionX-Phantom加速版_1934241189509951489.json, 视频生成/文生视频/电商带货替换_1935520036046176257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_35
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/图生视频  Wan2.2_1972296101548191746.json、视频生成/图生视频/WAN2.2-6步极速版-图生视频-KJ版工作流_2017911981818253314.json、视频生成/图生视频/WAN2.2-6步极速版-图生视频-KJ版工作流_2046206194833952769.json、视频生成/图生视频/WAN2.2-首尾帧视频-6步极速版-KJ版工作流_2014217620324618242.json、视频生成/图生视频/wan2.2-KJ图生视频_首尾帧_2036380526440878082.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/09.电商带货FusionX-Phantom加速版14B_2000793096378085378.json、视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json、视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 11 个 workflow 都包含：
+- `ImageConcatMulti`
+- `ImagePadKJ`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `Text Multiline`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/10 个有
-- `ImpactInt` —— 6/10 个有
-- `SetNode` —— 6/10 个有
-- `SimpleMath+` —— 6/10 个有
-- `WanVideoLoraSelectMulti` —— 6/10 个有
-- `WanVideoLoraSelect` —— 4/10 个有
-- `CR Text` —— 3/10 个有
-- `DownloadAndLoadGIMMVFIModel` —— 3/10 个有
-- `GIMMVFI_interpolate` —— 3/10 个有
-- `Seed (rgthree)` —— 3/10 个有
-- `Text` —— 3/10 个有
-- `easy cleanGpuUsed` —— 3/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `ImageResize+` —— 2/10 个有
-- `Note Plus (mtb)` —— 2/10 个有
-- `UpscaleModelLoader` —— 2/10 个有
-- `Anything Everywhere` —— 1/10 个有
-- `INTConstant` —— 1/10 个有
-- `ImageScaleToMegapixels` —— 1/10 个有
-- `ImageUpscaleWithModel` —— 1/10 个有
-- `Int` —— 1/10 个有
-- `LayerUtility: PurgeVRAM` —— 1/10 个有
+- `Primitive integer [Crystools]` —— 10/11 个有
+- `easy clearCacheAll` —— 7/11 个有
+- `WanVideoTeaCache` —— 3/11 个有
+- `AddLabel` —— 1/11 个有
+- `DF_Integer` —— 1/11 个有
+- `EmptyImage` —— 1/11 个有
+- `GetImageSize` —— 1/11 个有
+- `JWInteger` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `MathExpression|pysssss` —— 1/11 个有
+- `SimpleMath+` —— 1/11 个有
 
 ## 典型参数
 

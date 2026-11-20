@@ -3,39 +3,34 @@ name: unknown_workflow_generic_1865
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8085
-common_nodes: [CR Text, FishS2VoiceCloneTTS, LoadAudio, LoadWhisperModel_, SaveAudio, WhisperTranscribe_, easy showAnything]
+coverage: 0.9375
+common_nodes: [CR Text, ImageScaleDownToSize, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/万象AI+Fish Audio S2 TTS 批量英文配音_2038152218146246657.json, 音频生成/音频生成/最好的语音克隆 Fish Audio S2 TTS 全系工作流_2034524710632955906.json]
+members: [图片生成/文生图/每日5张，最强图像模型_2010940406355202050.json, 图片生成/文生图/真人转动漫-_全能图片V1谷歌_1961119103400480770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1865
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/万象AI+Fish Audio S2 TTS 批量英文配音_2038152218146246657.json、音频生成/音频生成/最好的语音克隆 Fish Audio S2 TTS 全系工作流_2034524710632955906.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/每日5张，最强图像模型_2010940406355202050.json、图片生成/文生图/真人转动漫-_全能图片V1谷歌_1961119103400480770.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Text`
-- `FishS2VoiceCloneTTS`
-- `LoadAudio`
-- `LoadWhisperModel_`
-- `SaveAudio`
-- `WhisperTranscribe_`
-- `easy showAnything`
+- `ImageScaleDownToSize`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FishS2MultiSpeakerTTS` —— 1/2 个有
-- `FishS2TTS` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
+- `ImageStitch` —— 1/2 个有
 
 ## 典型参数
 

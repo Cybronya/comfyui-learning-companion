@@ -1,0 +1,154 @@
+---
+key: 平台全量/Work-Fisher_Qwen3VL+Next Scene（自动分镜）+视频生成-V2版_1985662544994082817.json
+name: Work-Fisher_Qwen3VL+Next Scene（自动分镜）+视频生成-V2版_1985662544994082817
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/Work-Fisher_Qwen3VL+Next Scene（自动分镜）+视频生成-V2版_1985662544994082817.json
+hash: 4e1ceb30b21c0df9
+coverage: 0.77
+learned_at: 2026-11-14 01:07:27
+nodes: [Note, Note, PathchSageAttentionKJ, Note, RIFE VFI, Fast Groups Bypasser (rgthree), CLIPLoader, ModelPatchTorchSettings, wanBlockSwap, WanMoeKSampler, CLIPTextEncode, VAEDecode, LayerUtility: ImageScaleByAspectRatio V2, CLIPVisionEncode, CLIPVisionEncode, INTConstant, Int, ImageResizeKJv2, Note, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, WanFirstLastFrameToVideo, Int, easy cleanGpuUsed, UNETLoader, UNETLoader, wanBlockSwap, PathchSageAttentionKJ, ModelPatchTorchSettings, VHS_VideoCombine, VAEDecode, CLIPTextEncode, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, Note, CLIPVisionEncode, SimpleMath+, Note, Note, Note, Note, easy cleanGpuUsed, RIFE VFI, VHS_VideoCombine, WanMoeKSampler, WanImageToVideo, ImageResizeKJv2, VHS_VideoCombine, Fast Groups Bypasser (rgthree), DF_Integer, INTConstant, wanBlockSwap, wanBlockSwap, Int, Int, LoadImage, LoadImage, CLIPTextEncode, VHS_VideoCombine, LoadImage, CLIPTextEncode, CLIPVisionLoader, CLIPLoader, UNETLoader, UNETLoader, CLIPVisionLoader, VAELoader, VAELoader, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), easy promptLine, ConditioningZeroOut, VAEDecode, Reroute, Reroute, Reroute, KSampler, Reroute, TextEncodeQwenImageEditPlusAdvance_lrzjason, easy showAnything, ProcessString, easy clearCacheAll, Reroute, Reroute, DifferentialDiffusion, Reroute, JWStringConcat, Text Multiline, CheckpointLoaderSimple, LoraLoaderModelOnly, easy showAnything, LoraLoaderModelOnly, CR Prompt Text, LoraLoaderModelOnly, LoadImage, SaveImage, Qwen3_VQA]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "Qwen-Rapid-AIO-SFW-v5.safetensors", "denoise": 1, "sampler_name": "sa_solver", "scheduler": "beta", "seed": 214, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 平台全量/Work-Fisher_Qwen3VL+Next Scene（自动分镜）+视频生成-V2版_1985662544994082817.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/Work-Fisher_Qwen3VL+Next Scene（自动分镜）+视频生成-V2版_1985662544994082817.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（100 个）：
+- `Note`
+- `Note`
+- `PathchSageAttentionKJ`
+- `Note`
+- `RIFE VFI`
+- `Fast Groups Bypasser (rgthree)`
+- `CLIPLoader`
+- `ModelPatchTorchSettings`
+- `wanBlockSwap`
+- `WanMoeKSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `INTConstant`
+- `Int`
+- `ImageResizeKJv2`
+- `Note`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanFirstLastFrameToVideo`
+- `Int`
+- `easy cleanGpuUsed`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `Note`
+- `CLIPVisionEncode`
+- `SimpleMath+`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `easy cleanGpuUsed`
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `WanMoeKSampler` ★核心
+- `WanImageToVideo`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `Fast Groups Bypasser (rgthree)`
+- `DF_Integer`
+- `INTConstant`
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `Int`
+- `Int`
+- `LoadImage`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `CLIPVisionLoader`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPVisionLoader`
+- `VAELoader`
+- `VAELoader`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `easy promptLine`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `KSampler` ★核心
+- `Reroute`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `easy showAnything`
+- `ProcessString`
+- `easy clearCacheAll`
+- `Reroute`
+- `Reroute`
+- `DifferentialDiffusion`
+- `Reroute`
+- `JWStringConcat`
+- `Text Multiline`
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `easy showAnything`
+- `LoraLoaderModelOnly` ★核心
+- `CR Prompt Text`
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `SaveImage`
+- `Qwen3_VQA`
+
+## 关键参数
+
+- `seed` = `214`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `checkpoint` = `Qwen-Rapid-AIO-SFW-v5.safetensors`
+
+## 知识
+
+覆盖率 **77%**（77/100）
+
+**有卡**：`PathchSageAttentionKJ`、`RIFE VFI`、`CLIPLoader`、`ModelPatchTorchSettings`、`wanBlockSwap`、`WanMoeKSampler`、`CLIPTextEncode`、`VAEDecode`、`LayerUtility: ImageScaleByAspectRatio V2`、`CLIPVisionEncode`、`INTConstant`、`Int`、`ImageResizeKJv2`、`WanFirstLastFrameToVideo`、`easy cleanGpuUsed`、`UNETLoader`、`VHS_VideoCombine`、`SimpleMath+`、`WanImageToVideo`、`DF_Integer`、`LoadImage`、`CLIPVisionLoader`、`VAELoader`、`easy promptLine`、`ConditioningZeroOut`、`KSampler`、`TextEncodeQwenImageEditPlusAdvance_lrzjason`、`ProcessString`、`easy clearCacheAll`、`DifferentialDiffusion`、`JWStringConcat`、`Text Multiline`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`CR Prompt Text`、`SaveImage`、`Qwen3_VQA`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPLoader、CLIPTextEncode
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

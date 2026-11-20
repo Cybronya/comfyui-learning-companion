@@ -1,92 +1,92 @@
 ---
 name: unknown_workflow_lora_sampler_clip_94
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.874833
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, GetImageSize, GetVideoComponents, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXFloatToInt, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, RepeatImageBatch, ResizeImageMaskNode, SamplerCustomAdvanced]
+coverage: 0.839143
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, Florence2Run, FluxGuidance, KSamplerSelect, LoadImage, LoraLoader, ModelSamplingFlux, PreviewImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SDXLAspectRatioSelector, SamplerCustomAdvanced, SaveImage, VAEDecode]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.3 ingredients 提示词自动 润色_2070832295954702337.json, 视频生成/图生视频/LTX-2.3 ingredients 提示词自动 润色低配_2070881520012849153.json, 视频生成/图生视频/LTX-2.3_ICLoRA_Ingredients_Single_Stage_Distilled_2068532278657118210.json, 视频生成/图生视频/LTX-2.3_ICLoRA_Ingredients_Single_Stage_Moded_2067979933967802369.json, 视频生成/图生视频/LTX-2.3_Ingredients多参考自动提示词twoStage_2069345362887929858.json, 视频生成/文生视频/【完全不输 MSR】告别崩坏！LTX-2.3 ingredients角色_道具_场景绝对锁定_2070380617480622081.json]
+members: [平台全量/Bloom_1861108312556355586.json, 平台全量/Cartoon Portrait_1868847046596902913.json, 平台全量/Cute Doll (flux pulid)_1861110876681191426.json, 平台全量/Cute Doll (flux pulid)_1862407833454096386.json, 平台全量/Flux Pulid 盲盒，Blind Box Studio_1843560449970229249.json, 平台全量/Flux 创意贴纸 Creative Sticker(Flux Turbo)_1845100064808300545.json, 平台全量/Minimalist Portrait 极简风格头像_1868334978919710721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_94
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3 ingredients 提示词自动 润色_2070832295954702337.json、视频生成/图生视频/LTX-2.3 ingredients 提示词自动 润色低配_2070881520012849153.json、视频生成/图生视频/LTX-2.3_ICLoRA_Ingredients_Single_Stage_Distilled_2068532278657118210.json、视频生成/图生视频/LTX-2.3_ICLoRA_Ingredients_Single_Stage_Moded_2067979933967802369.json、视频生成/图生视频/LTX-2.3_Ingredients多参考自动提示词twoStage_2069345362887929858.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/Bloom_1861108312556355586.json、平台全量/Cartoon Portrait_1868847046596902913.json、平台全量/Cute Doll (flux pulid)_1861110876681191426.json、平台全量/Cute Doll (flux pulid)_1862407833454096386.json、平台全量/Flux Pulid 盲盒，Blind Box Studio_1843560449970229249.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
+全部 7 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `GetVideoComponents`
+- `EmptyLatentImage`
+- `Florence2Run`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXFloatToInt`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LTXVTiledVAEDecode`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
+- `LoraLoader`
+- `ModelSamplingFlux`
+- `PreviewImage`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
 - `RandomNoise`
-- `RepeatImageBatch`
-- `ResizeImageMaskNode`
+- `SDXLAspectRatioSelector`
 - `SamplerCustomAdvanced`
+- `SaveImage`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/6 个有
-- `SaveVideo` —— 5/6 个有
-- `PreviewAny` —— 4/6 个有
-- `JjkText` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `RH_LLMAPI_NODE` —— 2/6 个有
-- `VHS_VideoCombine` —— 2/6 个有
-- `llama_cpp_instruct_adv` —— 2/6 个有
-- `llama_cpp_model_loader` —— 2/6 个有
-- `llama_cpp_parameters` —— 2/6 个有
-- `ComfySwitchNode` —— 1/6 个有
-- `DualCLIPLoader` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `ImageConcatenateMulti_UTK` —— 1/6 个有
-- `LTXVImgToVideoInplace` —— 1/6 个有
-- `LTXVLatentUpsampler` —— 1/6 个有
-- `LatentUpscaleModelLoader` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `StringReplace` —— 1/6 个有
-- `TextGenerate` —— 1/6 个有
-- `TextInput_` —— 1/6 个有
-- `VAEDecodeTiled` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `Florence2ModelLoader` —— 6/7 个有
+- `Image Overlay` —— 6/7 个有
+- `Image Size to Number` —— 6/7 个有
+- `ImageScaleToTotalPixels` —— 6/7 个有
+- `JWIntegerSub` —— 6/7 个有
+- `easy int` —— 6/7 个有
+- `MaskToSEGS` —— 5/7 个有
+- `SEGSPreview` —— 5/7 个有
+- `LayerUtility: LoadVQAModel` —— 3/7 个有
+- `LayerUtility: VQAPrompt` —— 3/7 个有
+- `BNK_Unsampler` —— 2/7 个有
+- `Bounded Image Crop with Mask` —— 2/7 个有
+- `CLIPTextEncodeFlux` —— 2/7 个有
+- `DownloadAndLoadSAM2Model` —— 2/7 个有
+- `Florence2toCoordinates` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 2/7 个有
+- `Latent Upscale by Factor (WAS)` —— 2/7 个有
+- `LatentInterpolate` —— 2/7 个有
+- `Replace Text _O` —— 2/7 个有
+- `Sam2Segmentation` —— 2/7 个有
+- `String Literal` —— 2/7 个有
+- `AegisFlow/aflogo` —— 1/7 个有
+- `DisplayText_Zho` —— 1/7 个有
+- `DownloadAndLoadFlorence2Model` —— 1/7 个有
+- `LayerMask: RmBgUltra V2` —— 1/7 个有
+- `LayerUtility: ColorImage V2` —— 1/7 个有
+- `LayerUtility: ImageBlend V2` —— 1/7 个有
+- `LayerUtility: JoyCaption2` —— 1/7 个有
+- `LayerUtility: JoyCaption2ExtraOptions` —— 1/7 个有
+- `LayerUtility: TextJoin` —— 1/7 个有
+- `Text Prompt (JPS)` —— 1/7 个有
+- `easy imageSize` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 24 | 24 - 24 | 6 | 100% |
+| 宽度 | 832 | 832 - 832 | 7 | 100% |
+| 高度 | 1216 | 1216 - 1216 | 7 | 100% |
+| LoRA 模型强度 | 1 | 0.8 - 1 | 7 | 89% |
+| LoRA 文本强度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
@@ -94,5 +94,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 832，观测区间 832 - 832，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 1216，观测区间 1216 - 1216，7 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，7 个样本，取值集中（一致性 89%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

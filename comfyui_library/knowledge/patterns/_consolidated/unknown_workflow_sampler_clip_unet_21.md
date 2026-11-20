@@ -1,86 +1,72 @@
 ---
 name: unknown_workflow_sampler_clip_unet_21
 type: Unknown Workflow
-frequency: 25
+frequency: 24
 level: moderate
-coverage: 0.77312
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, ConditioningZeroOut, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.942125
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Ideogram 4 自审查生图_2062902826669535233.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2065735487565946881.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2085242360778280962.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2085249483184627714.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2087796460128661505.json, 图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2087800722841759746.json, 图片生成/文生图/Ideogram 4_2064161496220917762.json, 图片生成/文生图/Ideogram 开源支持语言简洁文生图_2064255815862800385.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2062741988264468482.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2063812523903770625.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2063818019272486913.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2080566085367197698.json, 图片生成/文生图/Ideogram 强势开源_支持自然语言极简输入_2080569000928571394.json, 图片生成/文生图/Ideogram 强势开源文生图支持自然语言极简输入_2063901268447416321.json, 图片生成/文生图/Ideogram+Qwen35支持语言简洁文生图_2076442947637309441.json, 图片生成/文生图/Ideogram+_AI 版专业排版软件_的文生图方案_2067596044078247938.json, 图片生成/文生图/Ideogram4 精准定位文生图（平面设计_海报设计_角色场景设计）_2063567041306652673.json, 图片生成/文生图/Ideogram4-文生图_2063913322784841730.json, 图片生成/文生图/Ideogram4-美学大师-自动提示词-文生图-MJ风格_2063245808631377922.json, 图片生成/文生图/Ideogram4全自动文生图_2063089442067410946.json, 图片生成/文生图/Ideogram4全自动文生图_2063247772672937985.json, 图片生成/文生图/MJ最佳平替Ideogram4美学大师全自动文生图工作流 V1.0_2063172563454488577.json, 图片生成/文生图/【MJ最佳替代品】Ideogram4美学大师全自动文生图_2062820590976847873.json, 图片生成/文生图/【MJ最佳替代品】Ideogram4美学大师全自动文生图_2063183559854223361.json, 图片生成/文生图/心然·寻源-Ideogram4文生图（对标MJ）_2091164270091399170.json]
+members: [图片生成/图生图/图片反推，生成新图，产品也是_2077336907649998849.json, 图片生成/图生图/电商洗图_文字还原-百度Ernie_image_2045898760097636354.json, 图片生成/文生图/ERNIE-Image-Turbo 光影效果 复杂画面处理 光影新世界_2046939542237749250.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图+全节点注释_2046178570917126145.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图-写实风_2045419438635229186.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图V2_2046063492725215234.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2044675520398368770.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2045014051884896258.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2045473705303740418.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2045490522525016066.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2046849642322731009.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2046910510959955970.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2047124098261721089.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2047139433782190082.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2048685419495170049.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2049035575436513282.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图_2052282886828638210.json, 图片生成/文生图/ERNIE-Image-Turbo 文生图生成器_2047546071609511937.json, 图片生成/文生图/ERNIE文生图_2048690063034294273.json, 图片生成/文生图/Ernie-Image-Turbo_2054569121966247938.json, 图片生成/文生图/FLUX 2 文生图_1993689182549770241.json, 图片生成/文生图/FLUX.2-文生图工作流-支持中文输入_1993696439157063682.json, 图片生成/文生图/FLUX2文生图+提示词优化_1994307599898263554.json, 图片生成/文生图/👾怪獸-FLUX.2文生图+提示词扩写👾_1993647811195584514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_21
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/文生图/Ideogram 4 自审查生图_2062902826669535233.json、图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2065735487565946881.json、图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2085242360778280962.json、图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2085249483184627714.json、图片生成/文生图/Ideogram 4+Prompt Builder 中文提示词自动文生图_2087796460128661505.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/图片反推，生成新图，产品也是_2077336907649998849.json、图片生成/图生图/电商洗图_文字还原-百度Ernie_image_2045898760097636354.json、图片生成/文生图/ERNIE-Image-Turbo 光影效果 复杂画面处理 光影新世界_2046939542237749250.json、图片生成/文生图/ERNIE-Image-Turbo 文生图+全节点注释_2046178570917126145.json、图片生成/文生图/ERNIE-Image-Turbo 文生图-写实风_2045419438635229186.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
+- **样本数**：24
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `CFGOverride`
+全部 24 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyNumberConvert`
 - `ConditioningZeroOut`
-- `DualModelGuider`
 - `EmptyFlux2LatentImage`
-- `Ideogram4Scheduler`
-- `JsonExtractString`
-- `KSamplerSelect`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSampler`
 - `SaveImage`
-- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 24/25 个有
-- `PrimitiveStringMultiline` —— 24/25 个有
-- `CustomCombo` —— 20/25 个有
-- `ComfyMathExpression` —— 16/25 个有
-- `llama_cpp_instruct_adv` —— 16/25 个有
-- `llama_cpp_model_loader` —— 16/25 个有
-- `llama_cpp_parameters` —— 16/25 个有
-- `ResolutionSelector` —— 15/25 个有
-- `JjkText` —— 10/25 个有
-- `easy cleanGpuUsed` —— 8/25 个有
-- `INTConstant` —— 7/25 个有
-- `Image Comparer (rgthree)` —— 7/25 个有
-- `ImageScaleToTotalPixels` —— 7/25 个有
-- `PreviewImage` —— 7/25 个有
-- `SeedVR2LoadDiTModel` —— 7/25 个有
-- `SeedVR2LoadVAEModel` —— 7/25 个有
-- `SeedVR2VideoUpscaler` —— 7/25 个有
-- `easy saveText` —— 7/25 个有
-- `RHLLMChatNode` —— 6/25 个有
-- `easy showAnything` —— 6/25 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/25 个有
-- `Ideogram4PromptBuilderKJ` —— 2/25 个有
-- `ShowText|pysssss` —— 2/25 个有
-- `DeepTranslatorTextNode` —— 1/25 个有
-- `LoadImage` —— 1/25 个有
-- `StringConcatenate` —— 1/25 个有
-- `TextGenerate` —— 1/25 个有
-- `UnloadAllModels` —— 1/25 个有
-- `孤海注释` —— 1/25 个有
+- `LoadImage` —— 6/24 个有
+- `FluxGuidance` —— 4/24 个有
+- `PrimitiveStringMultiline` —— 4/24 个有
+- `ImpactSwitch` —— 2/24 个有
+- `Int` —— 2/24 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/24 个有
+- `PreviewAny` —— 2/24 个有
+- `RH_LLMAPI_NODE` —— 2/24 个有
+- `RH_LLMAPI_Pro_Node` —— 2/24 个有
+- `ShowText|pysssss` —— 2/24 个有
+- `easy ifElse` —— 2/24 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 22 | 24 | 46% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 24 | 98% |
+| 采样算法 | euler | - | 24 | 100% |
+| 调度器 | simple | - | 24 | 96% |
+| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 20/24 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 22，24 个样本，取值分散，一致性仅 46%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，24 个样本，取值集中（一致性 98%）
+- 采样算法 最常用 euler，24 个样本，一致性 100%
+- 调度器 最常用 simple，24 个样本，一致性 96%
+- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）
+- 高发问题（20/24 个样本）：Steps较低可能导致细节不足

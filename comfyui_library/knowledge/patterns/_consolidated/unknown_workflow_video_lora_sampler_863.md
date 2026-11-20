@@ -1,53 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_863
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6985
-common_nodes: [BasicScheduler, ConditioningZeroOut, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, H3SigmaRefiner, KSamplerSelect, Label (rgthree), LoraLoaderModelOnly, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, ModelAttentionBackend, ModelPreviewOverrideKJ, RunningHub Deepcleaner, SelfLiftAvatarH3Sampler, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, easy clearCacheAll]
+frequency: 3
+level: moderate
+coverage: 0.831
+common_nodes: [AILab_QwenVL, CLIPVisionLoader, GetImageRangeFromBatch, ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SaveImage, Text Concatenate, Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3-文戏V1.0版_2105295502089740290.json, 视频生成/图生视频/MinimaxH3-武戏V1.3版_2107062415434280962.json]
+members: [视频生成/图生视频/ChronoEdit图片编辑模型_1989211681295306753.json, 视频生成/图生视频/KJ版-ChronoEdit图像编辑_1987441783527419906.json, 视频生成/图生视频/KJ版-ChronoEdit图像编辑新神器_1986952330576900097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_863
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3-文戏V1.0版_2105295502089740290.json、视频生成/图生视频/MinimaxH3-武戏V1.3版_2107062415434280962.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/ChronoEdit图片编辑模型_1989211681295306753.json、视频生成/图生视频/KJ版-ChronoEdit图像编辑_1987441783527419906.json、视频生成/图生视频/KJ版-ChronoEdit图像编辑新神器_1986952330576900097.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `ConditioningZeroOut`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHOutput`
-- `GetNode`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `Label (rgthree)`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3SemanticBridgeApplyT8`
-- `MiniMaxH3SemanticBridgeConfigT8`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RunningHub Deepcleaner`
-- `SelfLiftAvatarH3Sampler`
-- `SetNode`
-- `VAEDecode`
-- `VAEDecodeAudio`
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `ImageConcanate`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `SaveImage`
+- `Text Concatenate`
+- `Text Multiline`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 1/2 个有
-- `VRAM_Debug` —— 1/2 个有
+- `GetNode` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `LoadVideo` —— 1/3 个有
 
 ## 典型参数
 
@@ -59,4 +62,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

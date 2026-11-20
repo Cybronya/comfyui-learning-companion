@@ -1,107 +1,82 @@
 ---
 name: image_to_image_lora_sampler_vae_2
 type: Image To Image
-frequency: 23
+frequency: 20
 level: strong
-coverage: 0.868957
-common_nodes: [ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.89
+common_nodes: [CFGNorm, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2Klein9b产品自动加背景_2054142521697161218.json, 图片生成/图生图/KIKI-QW改图流-溶图_1987362101750640641.json, 图片生成/图生图/Qwen-Edit-2509 多功能 合集 Qwen Edit 2509_1996398880864485378.json, 图片生成/图生图/Qwen-Edit-2509 测试_2002977592728797186.json, 图片生成/图生图/Qwen-Edit-2509-光影消除_1993375065609879554.json, 图片生成/图生图/Qwen-Edit-2509-加强溶图_1991770944909963265.json, 图片生成/图生图/Qwen-Edit-2509-去除光斑_过曝_欠曝修复_1986847676127973378.json, 图片生成/图生图/Qwen-Edit-2509-多人物生成_1985510042604609538.json, 图片生成/图生图/Qwen-Edit-2509-多角度切换Rh在线流程-官方多角度测试流程_1987741808379760641.json, 图片生成/图生图/Qwen-Edit-2509-多角度切换_1992134691987804162.json, 图片生成/图生图/Qwen-Edit-2509-多角度灯光_1990093672173719553.json, 图片生成/图生图/Qwen-Edit-2509-多角度灯光_2001200568754466817.json, 图片生成/图生图/Qwen-Edit-2509-溶图_1992867249648365570.json, 图片生成/图生图/Qwen-Edit-2509-白底图转场景-cr大熊_1998600515145621506.json, 图片生成/图生图/Qwen-Edit-2509-白底图转场景_1985635336372068353.json, 图片生成/图生图/Qwen-Edit-2509-白膜转材质_1988543268420018177.json, 图片生成/图生图/Qwen-Edit-2509人物打光_1993482633977987073.json, 图片生成/图生图/Qwen-Edit-2509人物打光_2039282780902789122.json, 图片生成/图生图/白底转场景_1998207104886431746.json, 图片生成/图生图/白底转场景_2059536696349384705.json, 图片生成/图生图/白底转场景_2059548594629332993.json, 图片生成/图生图/背景大师_2072968660100145154.json, 图片生成/文生图/flux2klein全能_2093315696410320897.json]
+members: [图片生成/图生图/Qwen Image Edit 2511-带F2P-支持单图多图编辑_2046849881221898241.json, 图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑_2004755728197971970.json, 图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑_2026560006014898177.json, 图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑_2038424007581634562.json, 图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑_2046959707809652738.json, 图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑_2108091216880558082.json, 图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑改图修图迁移换装修复千问2511图像编辑_2011767661780275201.json, 图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑改图修图迁移换装修复千问2511图像编辑_2097655330510561282.json, 图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑改图修图迁移换装修复千问2511图像编辑_2097663834835218433.json, 图片生成/图生图/Qwen Image Edit 2511单图_多图编辑_2003658790107029506.json, 图片生成/图生图/Qwen image edit 2511 可视化灯光调节_2013071030331383810.json, 图片生成/图生图/Qwen+2511+图生图一致性_2005813572129226754.json, 图片生成/图生图/Qwen+Image+Edit+2511-单图多图编辑_2078322393449328641.json, 图片生成/图生图/Qwen+Image+Edit+2511-支持单图多图编辑 (1)_2016706323831857154.json, 图片生成/图生图/Qwen+Image-Edit-2511-AIO支持单图多图编辑_2077057145408937986.json, 图片生成/图生图/Qwen-Edit-2511 可视化重打光（lora强化版)_2012421686733312002.json, 图片生成/图生图/Qwen-image-edit-2511图像编辑（单图、双图、三图）_2025752704462626817.json, 图片生成/图生图/Qwen_Image_Edit_2511-支持单图多图编辑_2095681119395082241.json, 图片生成/图生图/Qwen_Image_Edit_2511-支持单图多图编辑_2095691718418067457.json, 图片生成/图生图/qwen2511角度控制_2003687770960871425.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_vae_2
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/Flux2Klein9b产品自动加背景_2054142521697161218.json、图片生成/图生图/KIKI-QW改图流-溶图_1987362101750640641.json、图片生成/图生图/Qwen-Edit-2509 多功能 合集 Qwen Edit 2509_1996398880864485378.json、图片生成/图生图/Qwen-Edit-2509 测试_2002977592728797186.json、图片生成/图生图/Qwen-Edit-2509-光影消除_1993375065609879554.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/Qwen Image Edit 2511-带F2P-支持单图多图编辑_2046849881221898241.json、图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑_2004755728197971970.json、图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑_2026560006014898177.json、图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑_2038424007581634562.json、图片生成/图生图/Qwen Image Edit 2511-支持单图多图编辑_2046959707809652738.json…）
 
 - **类型**：Image To Image
-- **样本数**：23
+- **样本数**：20
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
+全部 20 个 workflow 都包含：
+- `CFGNorm`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 22/23 个有
-- `Image Comparer (rgthree)` —— 22/23 个有
-- `ModelSamplingAuraFlow` —— 22/23 个有
-- `TextEncodeQwenImageEditPlus` —— 21/23 个有
-- `CLIPLoader` —— 19/23 个有
-- `DepthAnythingPreprocessor` —— 19/23 个有
-- `ImagePadForOutpaint` —— 19/23 个有
-- `MaskPreview+` —— 19/23 个有
-- `OpenposePreprocessor` —— 19/23 个有
-- `UNETLoader` —— 19/23 个有
-- `easy imageSize` —— 19/23 个有
-- `CannyEdgePreprocessor` —— 18/23 个有
-- `Mask Fill Holes` —— 18/23 个有
-- `ModelPatchLoader` —— 17/23 个有
-- `QwenImageDiffsynthControlnet` —— 17/23 个有
-- `LoadDiffusionModelShared //Inspire` —— 8/23 个有
-- `LoadTextEncoderShared //Inspire` —— 8/23 个有
-- `ConditioningZeroOut` —— 7/23 个有
-- `CFGGuider` —— 6/23 个有
-- `CLIPTextEncode` —— 6/23 个有
-- `EmptyFlux2LatentImage` —— 6/23 个有
-- `Flux2Scheduler` —— 6/23 个有
-- `GetImageSize` —— 6/23 个有
-- `KSamplerSelect` —— 6/23 个有
-- `RandomNoise` —— 6/23 个有
-- `ReferenceLatent` —— 6/23 个有
-- `SamplerCustomAdvanced` —— 6/23 个有
-- `Canny` —— 5/23 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 4/23 个有
-- `ImageScaleBy` —— 3/23 个有
-- `SeedVR2LoadDiTModel` —— 3/23 个有
-- `SeedVR2LoadVAEModel` —— 3/23 个有
-- `SeedVR2VideoUpscaler` —— 3/23 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/23 个有
-- `CR Latent Input Switch` —— 1/23 个有
-- `Flux2KleinEditTextEncode_EditUtils` —— 1/23 个有
-- `ImageSmartSharpen+` —— 1/23 个有
-- `ImpactGaussianBlurMask` —— 1/23 个有
-- `InpaintModelConditioning` —— 1/23 个有
-- `Int` —— 1/23 个有
-- `LatentUpscaleBy` —— 1/23 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/23 个有
-- `PrimitiveInt` —— 1/23 个有
-- `Seed (rgthree)` —— 1/23 个有
-- `easy imageColorMatch` —— 1/23 个有
-- `easy int` —— 1/23 个有
+- `CLIPLoader` —— 19/20 个有
+- `UNETLoader` —— 19/20 个有
+- `VAELoader` —— 19/20 个有
+- `EmptySD3LatentImage` —— 18/20 个有
+- `Image Comparer (rgthree)` —— 17/20 个有
+- `ImageScaleToTotalPixels` —— 17/20 个有
+- `ImageConcanate` —— 15/20 个有
+- `ImageConcatMulti` —— 15/20 个有
+- `easy showAnything` —— 3/20 个有
+- `ImageResizeKJv2` —— 2/20 个有
+- `PreviewImage` —— 2/20 个有
+- `QwenMultiangleLightningNode` —— 2/20 个有
+- `CR Prompt List` —— 1/20 个有
+- `CheckpointLoaderSimple` —— 1/20 个有
+- `EmptyLatentImage` —— 1/20 个有
+- `Int` —— 1/20 个有
+- `PurgeVRAM_UTK` —— 1/20 个有
+- `Text` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 23 | 85% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 23 | 100% |
-| 采样算法 | euler | - | 23 | 96% |
-| 调度器 | simple | - | 23 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 23 | 100% |
+| 采样步数 | 4 | 4 - 8 | 20 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 20 | 100% |
+| 采样算法 | euler | - | 20 | 95% |
+| 调度器 | simple | - | 20 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+| 宽度 | 1024 | - | 1 | 100% |
+| 高度 | 768 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 24/23 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 24/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，23 个样本，取值集中（一致性 85%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，23 个样本，一致性 96%
-- 调度器 最常用 simple，23 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
-- 高发问题（24/23 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，20 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，20 个样本，一致性 95%
+- 调度器 最常用 simple，20 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 高发问题（24/20 个样本）：Steps较低可能导致细节不足

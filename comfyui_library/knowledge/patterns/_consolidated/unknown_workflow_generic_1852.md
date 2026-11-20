@@ -3,30 +3,34 @@ name: unknown_workflow_generic_1852
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [CR Text, JjkText, OmniVoiceVoiceDesignTTS, SaveAudio]
+coverage: 0.7915
+common_nodes: [LoadImage, Qwen3_VQA, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/tts_edge.json_2072219550560641026.json, 音频生成/音频生成/ttts_edge.json_2071849435314876418.json]
+members: [图片生成/文生图/千问最强反推工作流_2050531267967496193.json, 平台全量/frkhgbsfjbrewgwer_2000409424734846978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1852
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/tts_edge.json_2072219550560641026.json、音频生成/音频生成/ttts_edge.json_2071849435314876418.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/千问最强反推工作流_2050531267967496193.json、平台全量/frkhgbsfjbrewgwer_2000409424734846978.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `JjkText`
-- `OmniVoiceVoiceDesignTTS`
-- `SaveAudio`
+- `LoadImage`
+- `Qwen3_VQA`
+- `SaveImage`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Image Input Switch` —— 1/2 个有
+- `VHS_LoadVideo` —— 1/2 个有
 
 ## 典型参数
 

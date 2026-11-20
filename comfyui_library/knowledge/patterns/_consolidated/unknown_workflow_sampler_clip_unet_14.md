@@ -1,71 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_14
 type: Unknown Workflow
-frequency: 31
-level: strong
-coverage: 0.88871
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 29
+level: moderate
+coverage: 0.897586
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Flux2-Klein-9B _ 4B 极速文生图，胶片质感_2012177114430181377.json, 图片生成/文生图/Flux2-Klein-9B 高性能文生图生成模型_2084850465476538369.json, 图片生成/文生图/Flux2-Klein-9B文生图2K直出_2013150879507030017.json, 图片生成/文生图/Flux2-Klein-9B文生图2k直出_2012016993716670466.json, 图片生成/文生图/Flux2-Klein-9B文生图2k直出_2034558766439473153.json, 图片生成/文生图/Flux2-Klein-9B文生图2k直出_2044216274783313922.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059114128396079105.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059269453438869505.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059314653993463810.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059319556044320770.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059522181494820865.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059536142109859842.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059536321953226754.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059539945018187778.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059540088224313345.json, 图片生成/文生图/Flux2-Klein-9B文生图_2059879281945305089.json, 图片生成/文生图/Flux2-Klein-9B文生图_2063136844673536001.json, 图片生成/文生图/Flux2-Klein-9B文生图_2063148799211687937.json, 图片生成/文生图/Flux2-Klein-9B文生图_2066364752095432705.json, 图片生成/文生图/Flux2-Klein-9B文生图_2067979935930732545.json, 图片生成/文生图/Flux2-Klein-9B文生图_2067980166210609154.json, 图片生成/文生图/Flux2-Klein-9B文生图_2069735520573419522.json, 图片生成/文生图/Flux2-Klein-9B文生图_2078486441843322881.json, 图片生成/文生图/Flux2-Klein-9B文生图_2078522055611478017.json, 图片生成/文生图/Flux2-Klein-9B文生图_2084671748380905474.json, 图片生成/文生图/Flux2-Klein-文生图-9B版本-2k直出_2012182227475501058.json, 图片生成/文生图/Flux2-Klein反推图片提示词生图_2012302540993466370.json, 图片生成/文生图/Flux2-Klein文生图2k直出_2044245675499589633.json, 图片生成/文生图/Klein-9B 大模型 AI 文生图_2086324161999364098.json, 图片生成/文生图/Klein-9B 大模型文生图_2085747367650877442.json, 图片生成/文生图/转绘_2026876025988194306.json]
+members: [图片生成/图生图/krea2 i2i 一键洗图 图生图+洗图工作流_2090754065042067457.json, 图片生成/图生图/krea2 i2i 一键洗图 图生图+洗图工作流_2104751982484484098.json, 图片生成/图生图/krea2 i2i 一键洗图 快速生图_2091873720318124033.json, 图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2096205084123287553.json, 图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2105994124833943553.json, 图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2106023301272399873.json, 图片生成/图生图/krea2 i2i 一键洗图工作流_2091857020520591361.json, 图片生成/图生图/krea2 i2i 图生图+洗图工作流_2083858292392153089.json, 图片生成/图生图/krea2 i2i 图生图+洗图工作流_2087522709961011202.json, 图片生成/图生图/krea2 i2i 图生图+洗图工作流_2089309377919545345.json, 图片生成/图生图/krea2 i2i 图生图+洗图工作流_2096201820833144834.json, 图片生成/图生图/krea2 turbo图生图_2070403435148693505.json, 图片生成/图生图/krea2 turbo图生图_2070410400897781762.json, 图片生成/图生图/krea2 turbo图生图_2082371403587866626.json, 图片生成/图生图/krea2 turbo图生图_2083452651290849282.json, 图片生成/图生图/krea2 turbo图生图洗图_2070372340764078082.json, 图片生成/图生图/krea2 turbo图生图洗图_2070424965035421697.json, 图片生成/图生图/krea2_i2i_图生图+洗图工作流_2088256007804903425.json, 图片生成/图生图/krea2自用图生图_2090088764180885505.json, 图片生成/图生图/krea视频洗图工作流_2075031802141564930.json, 图片生成/图生图/图生图+洗图=krea2 i2i！艾橘溪_2083189890023518210.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2100409782829150209.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2101262934214275074.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2108737708976852993.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2108741957932642306.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2112736624135196673.json, 图片生成/图生图/洗图Image Generation + Image Processing_ krea2 + i2i_2112738893312380929.json, 图片生成/文生图/krea turbo洗图+seedvr2高清放大_2070404592160043010.json, 数字人/数字人/高清放大洗图krea2 +SeedVR+放大+图生图 直出4K_2088859290869264386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_14
 
-> 由 `engine/knowledge_consolidation` 从 31 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein-9B _ 4B 极速文生图，胶片质感_2012177114430181377.json、图片生成/文生图/Flux2-Klein-9B 高性能文生图生成模型_2084850465476538369.json、图片生成/文生图/Flux2-Klein-9B文生图2K直出_2013150879507030017.json、图片生成/文生图/Flux2-Klein-9B文生图2k直出_2012016993716670466.json、图片生成/文生图/Flux2-Klein-9B文生图2k直出_2034558766439473153.json…）
+> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（图片生成/图生图/krea2 i2i 一键洗图 图生图+洗图工作流_2090754065042067457.json、图片生成/图生图/krea2 i2i 一键洗图 图生图+洗图工作流_2104751982484484098.json、图片生成/图生图/krea2 i2i 一键洗图 快速生图_2091873720318124033.json、图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2096205084123287553.json、图片生成/图生图/krea2 i2i 一键洗图工作流 图生图_2105994124833943553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：31
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：29
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 31 个 workflow 都包含：
+全部 29 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `KSampler`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 30/31 个有
-- `PrimitiveStringMultiline` —— 29/31 个有
-- `LoadImage` —— 3/31 个有
-- `RH_Captioner` —— 2/31 个有
-- `Anything Everywhere` —— 1/31 个有
-- `ImageScaleDownToSize` —— 1/31 个有
-- `PreviewAny` —— 1/31 个有
-- `QwenImageLatentAspectRatio` —— 1/31 个有
-- `ShowText` —— 1/31 个有
+- `AILab_QwenVL` —— 28/29 个有
+- `LoadImage` —— 28/29 个有
+- `PrimitiveInt` —— 28/29 个有
+- `ImageResizeKJv2` —— 19/29 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/29 个有
+- `Image Comparer (rgthree)` —— 8/29 个有
+- `SeedVR2LoadDiTModel` —— 2/29 个有
+- `SeedVR2LoadVAEModel` —— 2/29 个有
+- `SeedVR2VideoUpscaler` —— 2/29 个有
+- `ImageScaleToTotalPixels` —— 1/29 个有
+- `Int` —— 1/29 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/29 个有
+- `LoraLoaderModelOnly` —— 1/29 个有
+- `RBGImageStitchPlus` —— 1/29 个有
+- `RepeatLatentBatch` —— 1/29 个有
+- `VHS_LoadVideo` —— 1/29 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 4 - 6 | 31 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 31 | 100% |
-| 采样算法 | euler | - | 31 | 100% |
-| 调度器 | simple | - | 31 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 31 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 31/31 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 6，31 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，31 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，31 个样本，一致性 100%
-- 调度器 最常用 simple，31 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，31 个样本，取值集中（一致性 100%）
-- 高发问题（31/31 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

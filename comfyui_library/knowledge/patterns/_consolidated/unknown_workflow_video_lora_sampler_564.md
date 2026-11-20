@@ -1,63 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_564
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.80475
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, JWFloatToString, KSamplerSelect, LoadImage, LoadVideoUI, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, PrimitiveStringMultiline, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text, TextCombinerTwo, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.6864
+common_nodes: [CreateCFGScheduleFloatList, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageFromBatch+, Int, JWStringConcat, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RH_LLMAPI_NODE, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速_自动提示词优化版_2085576185500753922.json, 视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词8步加速_2085317728252022785.json, 视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词_2085205357147803649.json, 视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词优化版_2085311036525211650.json]
+members: [图片生成/文生图/Wan+2.2创意开箱视频广告_2058721201614319618.json, 视频生成/文生视频/Wan 2.2 文本到视频广告_1950092714999201793.json, 视频生成/文生视频/Wan+2.2+文本到视频广告_1951940652722540546.json, 视频生成/文生视频/Wan+2.2创意开箱视频广告_1951952632132874241.json, 视频生成/文生视频/Wan2.2创意开箱视频广告_1960890103814139905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_564
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速_自动提示词优化版_2085576185500753922.json、视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词8步加速_2085317728252022785.json、视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词_2085205357147803649.json、视频生成/图生视频/MinimaxH3音频驱动数字人_MV_4步加速版_自动提示词优化版_2085311036525211650.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Wan+2.2创意开箱视频广告_2058721201614319618.json、视频生成/文生视频/Wan 2.2 文本到视频广告_1950092714999201793.json、视频生成/文生视频/Wan+2.2+文本到视频广告_1951940652722540546.json、视频生成/文生视频/Wan+2.2创意开箱视频广告_1951952632132874241.json、视频生成/文生视频/Wan2.2创意开箱视频广告_1960890103814139905.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `JWFloatToString`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoadVideoUI`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `RHLLMChatNode`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `Text`
-- `TextCombinerTwo`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 5 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `ImageFromBatch+`
+- `Int`
+- `JWStringConcat`
+- `JjkText`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `RH_LLMAPI_NODE`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
+- `Wan22PromptSelector`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy cleanGpuUsed`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudioUI` —— 3/4 个有
-- `MiniMaxH3SigmaShift` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `Audio To Text (mtb)` —— 1/4 个有
-- `FL_Audio_BPM_Analyzer` —— 1/4 个有
-- `FL_Audio_Drum_Detector` —— 1/4 个有
-- `Load Whisper (mtb)` —— 1/4 个有
-- `TextCombinerSix` —— 1/4 个有
-- `VHS_LoadAudioUpload` —— 1/4 个有
+- `JsonToText` —— 4/5 个有
+- `LoadImage` —— 1/5 个有
 
 ## 典型参数
 

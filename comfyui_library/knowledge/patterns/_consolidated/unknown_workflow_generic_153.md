@@ -1,35 +1,48 @@
 ---
 name: unknown_workflow_generic_153
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.777917
-common_nodes: [RH_RhartImageG25FlareTextToImage, SaveImage]
+coverage: 0.8375
+common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss, Text, easy promptConcat, easy promptLine]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G IMAGE 2.5 Flare文生图(RH版)_2098079997541052417.json, 图片生成/文生图/CG2.5文生图_2105976099153997825.json, 图片生成/文生图/[全能图片G2.5] 语义拟真文生图：细腻光影与复杂构图生成 _ 图片生成 _ 文生图 _ CG幻想_2087447737095778305.json, 图片生成/文生图/【闭源】全能图片G2.5（经济版-文生图）_2098358148510871553.json, 图片生成/文生图/【阡陌】全能图片G-Image-2.5 Flare｜轻量快速版｜文生图工作流_2098306637441355778.json, 图片生成/文生图/全能图像G2.5-flare文生图_2098222124954636289.json, 图片生成/文生图/全能图像G2.5文生图 极速版_2097979145472008193.json, 图片生成/文生图/全能图片G image 2.5最强生图模型-文生图_2110693993045647362.json, 图片生成/文生图/全能图片G image 2.5最强生图模型_2110344657652772866.json, 图片生成/文生图/全能图片G-image2.5-文生图_2098504237796904962.json, 图片生成/文生图/全能图片G2.5 Sunburst-文生图_2097869674259238913.json, 图片生成/文生图/全能图片G2.5 Sunburst-文生图｜4K画质｜经济型_2097848148269027330.json]
+members: [图片生成/图生图/最新G image2 官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2058069243954024450.json, 图片生成/图生图/最新G image2 官方全量稳定版 跨境电商主图+详情页生成工作流 V1.0_2048806715327520769.json, 图片生成/图生图/最新G image2 官方全量稳定版男装 服装电商主图+详情页生成工作流 V2.0_2063816963884937217.json, 图片生成/图生图/最新G image2电商主图工作流 V1.0_2063552510991888385.json, 图片生成/图生图/最新G image2电商（主图+详情页）   1张图0.1元_2049756896084672513.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2098981285736833026.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2099141290008080386.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2101488163675009025.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602.json, 图片生成/图生图/电商产品详情页一键生成6张_2064758435874430977.json, 图片生成/图生图/阿清的多张电商详情页生成_2092159694122082305.json, 图片生成/文生图/image2电商（主图+详情页）_2051119303629520897.json, 图片生成/文生图/官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2091082751796666369.json, 平台全量/电商详情页一键生成-廉价版_2060603583531409409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_153
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/全能图片G IMAGE 2.5 Flare文生图(RH版)_2098079997541052417.json、图片生成/文生图/CG2.5文生图_2105976099153997825.json、图片生成/文生图/[全能图片G2.5] 语义拟真文生图：细腻光影与复杂构图生成 _ 图片生成 _ 文生图 _ CG幻想_2087447737095778305.json、图片生成/文生图/【闭源】全能图片G2.5（经济版-文生图）_2098358148510871553.json、图片生成/文生图/【阡陌】全能图片G-Image-2.5 Flare｜轻量快速版｜文生图工作流_2098306637441355778.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/最新G image2 官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2058069243954024450.json、图片生成/图生图/最新G image2 官方全量稳定版 跨境电商主图+详情页生成工作流 V1.0_2048806715327520769.json、图片生成/图生图/最新G image2 官方全量稳定版男装 服装电商主图+详情页生成工作流 V2.0_2063816963884937217.json、图片生成/图生图/最新G image2电商主图工作流 V1.0_2063552510991888385.json、图片生成/图生图/最新G image2电商（主图+详情页）   1张图0.1元_2049756896084672513.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `RH_RhartImageG25FlareTextToImage`
+全部 14 个 workflow 都包含：
+- `LoadImage`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
+- `ShowText|pysssss`
+- `Text`
+- `easy promptConcat`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 6/12 个有
-- `PreviewImage` —— 3/12 个有
-- `LoadImage` —— 1/12 个有
+- `HAIGC_CombineUnits` —— 13/14 个有
+- `HAIGC_Layer` —— 13/14 个有
+- `HAIGC_SavePSD` —— 13/14 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 11/14 个有
+- `easy showAnything` —— 11/14 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/14 个有
+- `EmptyImage` —— 2/14 个有
+- `PreviewImage` —— 2/14 个有
+- `RH_RhartImageG2ImageToImage` —— 2/14 个有
+- `TT_img_enc` —— 1/14 个有
 
 ## 典型参数
 

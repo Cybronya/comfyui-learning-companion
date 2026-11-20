@@ -1,71 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_565
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.90125
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ImageResizeKJv2, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.945
+common_nodes: [AudioCrop, AudioSeparation, HuMoEmbeds, ImageBatchMulti, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, WhisperModelLoader, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax参考生视频+加速放大_2087734040970481666.json, 视频生成/图生视频/minimax h3超级加强！清晰度天花板_2088308372293640194.json, 视频生成/图生视频/v3 minimax h3超级加强！清晰度天花板_2088502342512631810.json, 视频生成/图生视频/v4 minimax h3-Sigmas 区间控制_2089033224172425217.json]
+members: [图片生成/文生图/ai MV应用版（30S福音）_2000822453771399170.json, 平台全量/MV_1995717867448446978.json, 数字人/数字人/HuMo电商展示产品+口播_1987818616303366146.json, 视频生成/图生视频/👽HuMo电商展示产品+口播👽_1969293960176934913.json, 视频生成/图生视频/👽Humo数字人音乐MV嗨歌版👽_1968957972288323586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_565
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Minimax参考生视频+加速放大_2087734040970481666.json、视频生成/图生视频/minimax h3超级加强！清晰度天花板_2088308372293640194.json、视频生成/图生视频/v3 minimax h3超级加强！清晰度天花板_2088502342512631810.json、视频生成/图生视频/v4 minimax h3-Sigmas 区间控制_2089033224172425217.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/ai MV应用版（30S福音）_2000822453771399170.json、平台全量/MV_1995717867448446978.json、数字人/数字人/HuMo电商展示产品+口播_1987818616303366146.json、视频生成/图生视频/👽HuMo电商展示产品+口播👽_1969293960176934913.json、视频生成/图生视频/👽Humo数字人音乐MV嗨歌版👽_1968957972288323586.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 5 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `HuMoEmbeds`
+- `ImageBatchMulti`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PT_H3ConcatAVLatent`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelAttentionBackend` —— 3/4 个有
-- `VAEEncodeTiled` —— 3/4 个有
-- `ExtendIntermediateSigmas` —— 2/4 个有
-- `H3SigmaRefiner` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `VAEEncode` —— 2/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `CreateVideo` —— 1/4 个有
-- `ImpactConditionalBranch` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `MathExpression_UTK` —— 1/4 个有
-- `ModelPreviewOverrideKJ` —— 1/4 个有
-- `RIFE VFI` —— 1/4 个有
-- `ResizeShortestToNode` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `VAEEncodeAudio` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
-- `easy clearCacheAll` —— 1/4 个有
-- `solarL_VideoFrameRelay` —— 1/4 个有
-- `获取视频信息` —— 1/4 个有
+- `CR Text` —— 4/5 个有
+- `ImpactInt` —— 4/5 个有
+- `JWIntegerToString` —— 4/5 个有
+- `SimpleMath+` —— 4/5 个有
+- `ImageFromBatch` —— 3/5 个有
+- `MultiTalkModelLoader` —— 3/5 个有
+- `MultiTalkWav2VecEmbeds` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `WanVideoCombineEmbeds` —— 3/5 个有
+- `WanVideoImageToVideoMultiTalk` —— 3/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `Wav2VecModelLoader` —— 3/5 个有
+- `CreateCFGScheduleFloatList` —— 2/5 个有
+- `ImageConcanate` —— 2/5 个有
+- `Seed (rgthree)` —— 2/5 个有
+- `AudioCropProcessUTK` —— 1/5 个有
+- `CM_FloatUnaryOperation` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `MathExpression|pysssss` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `PrimitiveString` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

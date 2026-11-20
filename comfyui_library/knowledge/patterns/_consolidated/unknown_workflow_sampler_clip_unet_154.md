@@ -1,63 +1,67 @@
 ---
 name: unknown_workflow_sampler_clip_unet_154
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.986875
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.878444
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/flux2 klein 任意位置皮肤完美克隆（无限制）_2012907749159473153.json, 图片生成/图生图/flux2-Klein-单图编辑（4B）_2012091014151938050.json, 图片生成/图生图/flux2-Klein-单图编辑（9B）_2012088384096833537.json, 图片生成/图生图/flux2-Klein-图像多角度生成_2012189967140786177.json, 图片生成/图生图/flux2-Klein-换脸(色差偏移修正版)_2012337568234344450.json, 图片生成/图生图/flux2-Klein-最快换脸_2012192553822593025.json, 图片生成/图生图/flux2.klein一键高清换装_2077230946503446529.json, 图片生成/图生图/kleinface 换头换脸工作流 Flux2-Klein-9B 人物换头AI智能面部替换高清换头脸_2016848786680713218.json]
+members: [图片生成/图生图/Kontext去掉字幕水印_1971848085930504193.json, 图片生成/图生图/Kontext用嘴改图开源模型双图编辑_1938370989979799554.json, 图片生成/图生图/flux_kontext_1991048121285320705.json, 图片生成/图生图/flux_kontext_双图融合_1950736481751093249.json, 图片生成/图生图/【老金驿站】Kontext清除图像模糊高清工作流_1947912385995649026.json, 图片生成/图生图/【老金驿站】满血Kontext中文输入单图工作流_1939313503348113410.json, 图片生成/图生图/【老金驿站】满血Kontext中文输入双图工作流_1939316636765831170.json, 图片生成/图生图/最强开源大模型 FLUX_1938439204835627009.json, 图片生成/文生图/Flux_kontext_基础工作流_1942411562571214849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_154
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/flux2 klein 任意位置皮肤完美克隆（无限制）_2012907749159473153.json、图片生成/图生图/flux2-Klein-单图编辑（4B）_2012091014151938050.json、图片生成/图生图/flux2-Klein-单图编辑（9B）_2012088384096833537.json、图片生成/图生图/flux2-Klein-图像多角度生成_2012189967140786177.json、图片生成/图生图/flux2-Klein-换脸(色差偏移修正版)_2012337568234344450.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Kontext去掉字幕水印_1971848085930504193.json、图片生成/图生图/Kontext用嘴改图开源模型双图编辑_1938370989979799554.json、图片生成/图生图/flux_kontext_1991048121285320705.json、图片生成/图生图/flux_kontext_双图融合_1950736481751093249.json、图片生成/图生图/【老金驿站】Kontext清除图像模糊高清工作流_1947912385995649026.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 7/8 个有
-- `EmptyFlux2LatentImage` —— 6/8 个有
-- `FluxKontextImageScale` —— 6/8 个有
-- `GetImageSize` —— 6/8 个有
-- `Image Comparer (rgthree)` —— 3/8 个有
-- `ImageScaleToTotalPixels` —— 2/8 个有
-- `YC Color Match` —— 2/8 个有
-- `easy int` —— 2/8 个有
-- `DuckHideNode` —— 1/8 个有
-- `ImageResize+` —— 1/8 个有
-- `ImageSmartSharpen+` —— 1/8 个有
-- `QwenMultiangleCameraNode` —— 1/8 个有
-- `SaveImageAndMetadata_` —— 1/8 个有
-- `easy positive` —— 1/8 个有
-- `easy promptList` —— 1/8 个有
+- `EmptySD3LatentImage` —— 8/9 个有
+- `FluxKontextImageScale` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `ModelSamplingFlux` —— 8/9 个有
+- `ImageScaleBy` —— 5/9 个有
+- `ChinesePrompt_Mix` —— 2/9 个有
+- `ImageStitch` —— 2/9 个有
+- `LoraLoader` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `RH_Translator` —— 2/9 个有
+- `easy showAnything` —— 2/9 个有
+- `AILab_LoadImage` —— 1/9 个有
+- `ImageConcanate` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `PathchSageAttentionKJ` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -65,4 +69,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

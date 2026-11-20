@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_unet_vae_13
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6515
-common_nodes: [CLIPLoader, CreateVideo, MiniMaxH3Director, PreviewAny, SaveVideo, UNETLoader, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.91
+common_nodes: [CLIPLoader, ComfyMiniMaxH3Director, CreateVideo, MiniMaxH3DirectorRefine, SaveVideo, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/夜樱馆_导演台6合1_加速版_2099536983994486785.json, 视频生成/文生视频/方格智联-MINIH3-工作台_2086704664422207489.json]
+members: [视频生成/文生视频/Fast H3 4步极速版_2094688586812710914.json, 视频生成/文生视频/MiniMax H3 全能导演台_2091791862691618817.json, 视频生成/文生视频/MiniMax H3 全能导演台_2092150523830030338.json, 视频生成/文生视频/全能导演工作台_2092099189571407873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_unet_vae_13
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/夜樱馆_导演台6合1_加速版_2099536983994486785.json、视频生成/文生视频/方格智联-MINIH3-工作台_2086704664422207489.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Fast H3 4步极速版_2094688586812710914.json、视频生成/文生视频/MiniMax H3 全能导演台_2091791862691618817.json、视频生成/文生视频/MiniMax H3 全能导演台_2092150523830030338.json、视频生成/文生视频/全能导演工作台_2092099189571407873.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
+- `ComfyMiniMaxH3Director`
 - `CreateVideo`
-- `MiniMaxH3Director`
-- `PreviewAny`
+- `MiniMaxH3DirectorRefine`
 - `SaveVideo`
 - `UNETLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3SLADynamicLoRABypassV2T8Advanced` —— 1/2 个有
+- `LoraLoaderBypassModelOnly` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
 
 ## 典型参数
 
@@ -44,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

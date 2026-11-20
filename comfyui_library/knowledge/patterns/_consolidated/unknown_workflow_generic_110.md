@@ -1,43 +1,38 @@
 ---
 name: unknown_workflow_generic_110
 type: Unknown Workflow
-frequency: 14
+frequency: 16
 level: moderate
-coverage: 0.946
-common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.823813
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/87单人语音克隆_2055928827238469634.json, 图片生成/反推提示词/88克隆语音，情绪控制_2055933374333767682.json, 图片生成/反推提示词/mikez试验语音_2061046702106308609.json, 数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json, 数字人/数字人/IndexTTS2 语音克隆+音色_2008381003672326145.json, 数字人/数字人/IndexTTS2声音克隆IndexTTS2(单人)_2031259293445525506.json, 数字人/数字人/indextts2基础+情感_1972186995231485954.json, 数字人/数字人/indextts多人参考+情感_1972195833821261825.json, 数字人/数字人/一键版-IndexTTS2单人_2108712281734467585.json, 音频生成/音频生成/IndexTTS2 多人对话_2042951687509385218.json, 音频生成/音频生成/IndexTTS2-有声书制作 多人声音克隆+情感参考_1998673212043055105.json, 音频生成/音频生成/indexTTS2-单人多人语音模仿朗读 文本转语音 最好用的配音_2047922801398521857.json, 音频生成/音频生成/indexTTS2-语音克隆-单人_多人_情绪迁移_2004842845322313730.json, 音频生成/音频生成/声音克隆+情感参考（转跳爷）_2046777867777875970.json]
+members: [图片生成/图生图/IP角色设定-三视图角色设计（全能图片-2.0）_2031709681965604866.json, 图片生成/图生图/Nanana 全能图片V12 单图_多图编辑版本_1991716602379071489.json, 图片生成/图生图/【剧本分镜-三人版】全能图片pro三角色+场景+剧本_2021042521119399938.json, 图片生成/图生图/【剧本分镜-双人版】全能图片V12pro双角色+场景+剧本_1998689303339356161.json, 图片生成/图生图/【音乐MV-九宫格分镜】全能图片pro（单图）_2020236028535119873.json, 图片生成/图生图/一站式模特换装换姿势_1996756058079121410.json, 图片生成/图生图/全能图片V1 2（多图）_1991694487644745730.json, 图片生成/图生图/全能图片V12产品精修+商品图_1991698531685855233.json, 图片生成/图生图/剧本分镜1_全能图片pro_2014580689252917250.json, 图片生成/图生图/模特穿搭_2012795556938129410.json, 平台全量/人物一致换脸完美换脸_2011313791274848257.json, 平台全量/完美换脸人物一致换脸_2011308616443240449.json, 平台全量/换脸2.0完美换脸全能图片 pro人物一致性 自然真实_2041327629395042305.json, 平台全量/换脸2.0完美换脸全能图片 pro人物一致性 自然真实v2_2043589639671386113.json, 平台全量/换脸pro 2.0完美换脸 全能图片  Image 2.0 全能编辑 4K图像生成人物一致性_2050735195355131906.json, 平台全量/目前最强版 换脸2.0完美换脸 全能图片2.0 pro人物一致性 自然真实_2044254273105563650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_110
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/反推提示词/87单人语音克隆_2055928827238469634.json、图片生成/反推提示词/88克隆语音，情绪控制_2055933374333767682.json、图片生成/反推提示词/mikez试验语音_2061046702106308609.json、数字人/数字人/IndexTTS2 声线克隆_2047137376945840129.json、数字人/数字人/IndexTTS2 语音克隆+音色_2008381003672326145.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/IP角色设定-三视图角色设计（全能图片-2.0）_2031709681965604866.json、图片生成/图生图/Nanana 全能图片V12 单图_多图编辑版本_1991716602379071489.json、图片生成/图生图/【剧本分镜-三人版】全能图片pro三角色+场景+剧本_2021042521119399938.json、图片生成/图生图/【剧本分镜-双人版】全能图片V12pro双角色+场景+剧本_1998689303339356161.json、图片生成/图生图/【音乐MV-九宫格分镜】全能图片pro（单图）_2020236028535119873.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+全部 16 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 10/14 个有
-- `easy indexTTSEmotionVector` —— 10/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/14 个有
-- `easy indexTTSEmotionAudio` —— 6/14 个有
-- `easy indexTTSEmotionMerge` —— 6/14 个有
-- `easy indexTTSAudioMerge` —— 4/14 个有
-- `CR Prompt Text` —— 3/14 个有
-- `LoadImage` —— 1/14 个有
-- `Textbox` —— 1/14 个有
+- `CR Text` —— 14/16 个有
+- `ImageConcatMulti` —— 9/16 个有
+- `PreviewImage` —— 7/16 个有
+- `RHHiddenNodes` —— 5/16 个有
+- `Fast Groups Muter (rgthree)` —— 4/16 个有
 
 ## 典型参数
 

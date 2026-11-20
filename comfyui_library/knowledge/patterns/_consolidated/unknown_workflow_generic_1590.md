@@ -3,33 +3,37 @@ name: unknown_workflow_generic_1590
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [LoadImage, RH_SeedreamV5LiteTextToImage, SaveImage]
+coverage: 0.778
+common_nodes: [CR Image Input Switch, CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, PromptBatchQueue, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, easy imageRemBg, easy promptConcat, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/02豆包_SeedreamV5Lite_文生图+全节点注释_2058541341457608706.json, 图片生成/文生图/2029812011953033217.json]
+members: [图片生成/图生图/KR_提取白底图分裂细节图（1号工作流）_2063253990929948674.json, 图片生成/图生图/LETA转换白底_2084829818100731906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1590
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/02豆包_SeedreamV5Lite_文生图+全节点注释_2058541341457608706.json、图片生成/文生图/2029812011953033217.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/KR_提取白底图分裂细节图（1号工作流）_2063253990929948674.json、图片生成/图生图/LETA转换白底_2084829818100731906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Image Input Switch`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `RH_SeedreamV5LiteTextToImage`
+- `PromptBatchQueue`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `DoubaoSizePreset` —— 1/2 个有
-- `TextInput_` —— 1/2 个有
+- `easy imageRemBg`
+- `easy promptConcat`
+- `easy showAnything`
 
 ## 典型参数
 

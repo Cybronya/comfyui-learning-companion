@@ -3,51 +3,61 @@ name: unknown_workflow_lora_clip_unet_16
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8575
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DetailerForEach, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), Joy_caption_two, Joy_caption_two_load, LoadImage, LoraLoader, MaskToSEGS, SaveImage, ShowText|pysssss, UNETLoader, VAELoader]
+coverage: 0.9015
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, GetImageSize, Image Comparer (rgthree), ImageScale, ImageToMask, LoadImage, LoraLoaderModelOnly, MaskToImage, ModelSamplingAuraFlow, SaveImage, SetLatentNoiseMask, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/手部修复工作流_1916049283760455681.json, 图片生成/图生图/手部修复工作流电商手部修复_1935630707186401281.json]
+members: [图片生成/图生图/Z_image_base_Inpaint_2019339012032438274.json, 图片生成/文生图/LanPaint- Z-Image局部重绘_1999383692797767682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_clip_unet_16
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/手部修复工作流_1916049283760455681.json、图片生成/图生图/手部修复工作流电商手部修复_1935630707186401281.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Z_image_base_Inpaint_2019339012032438274.json、图片生成/文生图/LanPaint- Z-Image局部重绘_1999383692797767682.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DetailerForEach`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `EmptySD3LatentImage`
+- `GetImageSize`
 - `Image Comparer (rgthree)`
-- `Joy_caption_two`
-- `Joy_caption_two_load`
+- `ImageScale`
+- `ImageToMask`
 - `LoadImage`
-- `LoraLoader`
-- `MaskToSEGS`
+- `LoraLoaderModelOnly`
+- `MaskToImage`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `ShowText|pysssss`
+- `SetLatentNoiseMask`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `ConditioningZeroOut` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LanPaint_KSampler` —— 1/2 个有
+- `LanPaint_KSamplerAdvanced` —— 1/2 个有
+- `LanPaint_MaskBlend` —— 1/2 个有
 - `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.85 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 9 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 10.5 | - | 2 | 10% |
+| 采样算法 | 4 | - | 1 | 100% |
+| 调度器 | euler | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -55,6 +65,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.85，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 10.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 10%
+- 调度器 最常用 euler，2 个样本，一致性 50%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

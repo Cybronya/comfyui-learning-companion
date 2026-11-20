@@ -39,8 +39,8 @@ Image Processing
 
 常见取值：
 
-- `["image", "banana-2", "v1beta/models", "https://cn.llai.xin", "gemini-3.1-flash-image-preview", "sk-0KaZ4526RNHSehMo1qJS`（1 次）
-- `["image", "banana-2", "v1beta/models", "https://cn.llai.xin", "gemini-3-pro-image-preview", "sk-0Ka26RNHSehMo1qJS6j94Yve`（1 次）
+- `["image", "banana-2", "v1beta/models", "https://cn.llai.xin", "gemini-3.1-flash-image-preview", "REDACTED000000000000000`（1 次）
+- `["image", "banana-2", "v1beta/models", "https://cn.llai.xin", "gemini-3-pro-image-preview", "REDACTED0000000000000000000`（1 次）
 
 ## 可信度
 

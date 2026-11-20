@@ -1,91 +1,82 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_41
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.874
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveBoolean, PrimitiveFloat, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled]
+coverage: 0.7913
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled]
 problems: []
 missing: []
-members: [视频生成/图生视频/多人语音克隆+LTX2.3 音画同步 一步到位视频创作_2034546381762863105.json, 视频生成/图生视频/最新版本LTX2.3 图像音频生视频 口型同步 V2.0_2031381886173450241.json, 视频生成/图生视频/短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json, 视频生成/图生视频/输入台词就能生成短剧！（LTX-2.3配音术升级版）_2036083633810837505.json, 视频生成/图生视频/（1图 1音频）LTX2.3 图 + 音频数字人对口型_2111327625162612737.json, 视频生成/图生视频/🐱video_LTX2.3_I2V自定义音频图像生视频_2031928367213187074.json, 视频生成/文生视频/LTX-2.3-Image Audio to Video Workflow_2033716721021886465.json, 视频生成/文生视频/LTX-2.3配音术升级版：输入台词就能生成短剧！FishAudio S2 + LTX-2.3实战_2034068608220930049.json, 视频生成/文生视频/LTX2.3-文本音频生视频(口型同步)_2031312855026376705.json]
+members: [视频生成/文生视频/LTX2.0文生视频-48G专用_2008734330729795586.json, 视频生成/文生视频/LTX2.0文生视频1080p_2022249801970098177.json, 视频生成/文生视频/LTX2.0文生视频V1_2008526831959412737.json, 视频生成/文生视频/LTX2.0文生视频_2008480312854056962.json, 视频生成/文生视频/LTX2.0文生视频_2009184025579098114.json, 视频生成/文生视频/LTX2.0文生视频（48g使用）视频与音频同步生成_2008803878514462721.json, 视频生成/文生视频/LTX2.0文生视频（plus）_2009269100320661506.json, 视频生成/文生视频/LTX2.0蒸馏模型1080p文生视频（48G使用）_2008441572072890370.json, 视频生成/文生视频/LTX2.0蒸馏模型1080p文生视频（48G使用）_2042529454865522690.json, 视频生成/文生视频/LTX2.0音视频同步-文生视频_2009172721598472194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_41
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/多人语音克隆+LTX2.3 音画同步 一步到位视频创作_2034546381762863105.json、视频生成/图生视频/最新版本LTX2.3 图像音频生视频 口型同步 V2.0_2031381886173450241.json、视频生成/图生视频/短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json、视频生成/图生视频/输入台词就能生成短剧！（LTX-2.3配音术升级版）_2036083633810837505.json、视频生成/图生视频/（1图 1音频）LTX2.3 图 + 音频数字人对口型_2111327625162612737.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/LTX2.0文生视频-48G专用_2008734330729795586.json、视频生成/文生视频/LTX2.0文生视频1080p_2022249801970098177.json、视频生成/文生视频/LTX2.0文生视频V1_2008526831959412737.json、视频生成/文生视频/LTX2.0文生视频_2008480312854056962.json、视频生成/文生视频/LTX2.0文生视频_2009184025579098114.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
+- `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
 - `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 8/9 个有
-- `PrimitiveStringMultiline` —— 8/9 个有
-- `ResizeImageMaskNode` —— 8/9 个有
-- `FishS2MultiSpeakerTTS` —— 4/9 个有
-- `LoraLoader` —— 4/9 个有
-- `PreviewAny` —— 4/9 个有
-- `SaveAudio` —— 4/9 个有
-- `TextGenerateLTX2Prompt` —— 4/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/9 个有
-- `SimpleMath+` —— 2/9 个有
-- `CR Text` —— 1/9 个有
-- `GetImageSize` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `LayerUtility: PurgeVRAM` —— 1/9 个有
-- `LoadWhisperModel_` —— 1/9 个有
-- `Qwen3ASRLoader_DFT` —— 1/9 个有
-- `Qwen3ASRTranscribe_DFT` —— 1/9 个有
-- `RH_LLMAPI_Pro_Node` —— 1/9 个有
-- `WhisperTranscribe_` —— 1/9 个有
-- `easy int` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `PrimitiveFloat` —— 9/10 个有
+- `LTXVCropGuides` —— 7/10 个有
+- `LTXVScheduler` —— 7/10 个有
+- `SaveVideo` —— 7/10 个有
+- `VAEDecode` —— 6/10 个有
+- `VHS_VideoCombine` —— 6/10 个有
+- `CreateVideo` —— 4/10 个有
+- `PrimitiveStringMultiline` —— 4/10 个有
+- `MathExpression|pysssss` —— 3/10 个有
+- `b7c2d337-c38d-4c04-922b-2d638449d13e` —— 3/10 个有
+- `ImpactSwitch` —— 2/10 个有
+- `Int` —— 2/10 个有
+- `RH_LLMAPI_NODE` —— 2/10 个有
+- `CR Text` —— 1/10 个有
+- `ImpactInt` —— 1/10 个有
+- `IntConditions` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
+- `TextInput_` —— 1/10 个有
+- `ToFloat` —— 1/10 个有
+- `easy ifElse` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 97 | 97 - 121 | 10 | 89% |
+| 高度 | 25 | 25 - 25 | 10 | 100% |
 
 ## 常见问题
 
@@ -93,5 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 121，10 个样本，取值集中（一致性 89%）
+- 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）

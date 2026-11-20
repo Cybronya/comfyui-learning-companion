@@ -3,38 +3,32 @@ name: unknown_workflow_generic_1804
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.976
-common_nodes: [Apply Whisper, CR Prompt Text, LoadAudio, LongCatMultiSpeakerTTS, NormalizeAudioLoudness, SaveAudioMP3]
+coverage: 0.8375
+common_nodes: [ImageStitch, JjkText, LoadImage, RH_Nano_Banana_Image2Image, ResizeLongestToNode, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat-AudioDiT双人对话_2039911756067250178.json, 音频生成/音频生成/Longcat Audio DIT 三合一_2041930449106247682.json]
+members: [图片生成/图生图/🦖人物打卡游戏（全能图片V1）_1960915589634174977.json, 图片生成/图生图/🦖全能图片PRo多合一_1960897981321023490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1804
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT双人对话_2039911756067250178.json、音频生成/音频生成/Longcat Audio DIT 三合一_2041930449106247682.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/🦖人物打卡游戏（全能图片V1）_1960915589634174977.json、图片生成/图生图/🦖全能图片PRo多合一_1960897981321023490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `CR Prompt Text`
-- `LoadAudio`
-- `LongCatMultiSpeakerTTS`
-- `NormalizeAudioLoudness`
-- `SaveAudioMP3`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `LongCatTTS` —— 1/2 个有
-- `LongCatVoiceCloneTTS` —— 1/2 个有
-- `SaveAudioOpus` —— 1/2 个有
+- `ImageStitch`
+- `JjkText`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `ResizeLongestToNode`
+- `SaveImage`
 
 ## 典型参数
 

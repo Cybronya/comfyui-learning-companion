@@ -1,44 +1,77 @@
 ---
 name: unknown_workflow_video_upscale_lora_5
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.82
-common_nodes: [CLIPLoader, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorRefine, MiniMaxH3MemoryEfficientSageAttentionPatch, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.386714
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, GetImage, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResizeImageMaskNode, ResolutionSelector, SetNode, StringConcatenate, UNETLoader, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YUAN_TXTShotDurations, YuanAudioList, YuanAudioLoad, YuanAudioSplit, YuanImageGridComposite, YuanLoadImageOutput, YuanMultiImage, YuanPrimitive, YuanTool, Yuan_H3MotionContextTrim, Yuan_H3ProgressiveSampler, Yuan_MiniMaxH3Video]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2109971094978523137.json, 视频生成/图生视频/MiniMax H3 导演台全能工作流无水印版_2094988974698876930.json, 视频生成/图生视频/MiniMax H3 导演台工作流-ref2va_2091323053144887297.json, 视频生成/文生视频/MiniMax H3 Director 全能参考视频导演台｜无水印版_2097926685592219649.json, 视频生成/文生视频/MiniMax H3 导演台全能工作流-fl2v_2090357634460372993.json]
+members: [图片生成/图生图/MiniMax-H3全栈式短剧生成13.1(SelfLift双模版)_2115435684600303618.json, 图片生成/图生图/MiniMax-H3全栈式短剧生成13.1(SelfLift双模版)_2115660843915505665.json, 图片生成/图生图/MiniMax-H3全栈式短剧生成V14.3（双模切换版）_2116687369645678594.json, 视频生成/图生视频/MiniMax-H3 全栈式文武戏短剧生成(SelfLift双模版)_2113455671252439042.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成13.1（尾帧锚定版）_2115713278402973698.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V11.2（宫格版）_2102198063224942594.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1（宫格版）_2105481384004505602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_5
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 导演台全能工作流-fl2v-图生视频_2109971094978523137.json、视频生成/图生视频/MiniMax H3 导演台全能工作流无水印版_2094988974698876930.json、视频生成/图生视频/MiniMax H3 导演台工作流-ref2va_2091323053144887297.json、视频生成/文生视频/MiniMax H3 Director 全能参考视频导演台｜无水印版_2097926685592219649.json、视频生成/文生视频/MiniMax H3 导演台全能工作流-fl2v_2090357634460372993.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/MiniMax-H3全栈式短剧生成13.1(SelfLift双模版)_2115435684600303618.json、图片生成/图生图/MiniMax-H3全栈式短剧生成13.1(SelfLift双模版)_2115660843915505665.json、图片生成/图生图/MiniMax-H3全栈式短剧生成V14.3（双模切换版）_2116687369645678594.json、视频生成/图生视频/MiniMax-H3 全栈式文武戏短剧生成(SelfLift双模版)_2113455671252439042.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成13.1（尾帧锚定版）_2115713278402973698.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：39%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `GetImage`
+- `GetNode`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Director`
-- `MiniMaxH3DirectorRefine`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PreviewAudio`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `ResizeImageMaskNode`
+- `ResolutionSelector`
+- `SetNode`
+- `StringConcatenate`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTJsonSwitch`
+- `YUAN_TXTPreviewContent`
+- `YUAN_TXTShotDurations`
+- `YuanAudioList`
+- `YuanAudioLoad`
+- `YuanAudioSplit`
+- `YuanImageGridComposite`
+- `YuanLoadImageOutput`
+- `YuanMultiImage`
+- `YuanPrimitive`
+- `YuanTool`
+- `Yuan_H3MotionContextTrim`
+- `Yuan_H3ProgressiveSampler`
+- `Yuan_MiniMaxH3Video`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `孤海注释` —— 2/5 个有
-- `DapaoImageSplitNode` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
+- `ImageFromBatch` —— 1/7 个有
+- `MiniMaxH3AddGuide` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `easy clearCacheAll` —— 1/7 个有
 
 ## 典型参数
 

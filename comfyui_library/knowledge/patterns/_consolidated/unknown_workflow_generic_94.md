@@ -1,42 +1,38 @@
 ---
 name: unknown_workflow_generic_94
 type: Unknown Workflow
-frequency: 15
+frequency: 18
 level: moderate
-coverage: 0.763267
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, easy showAnything]
+coverage: 0.771
+common_nodes: [RH_Sora2_T2V, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/16宫格分镜图（G-Image 2.0）_2049085742894292993.json, 图片生成/图生图/4K高清 GXX V2图像编辑多图编辑 全能图片 贞贞的AI工坊  低渠道版  Chat API模式_2047482157681090561.json, 图片生成/图生图/9宫格分镜图（G-Image 2.0）_2047207511572353025.json, 图片生成/图生图/9宫格分镜图（G-Image+2.0）_2048672366338772993.json, 图片生成/图生图/9宫格剧情分镜图（G-Image+2.0）洗图 文生图+图生图  人物一致_2057622648015908865.json, 图片生成/图生图/G-Image+2.0 9宫格分镜图+洗图+低价_免费版 +全能编辑_2051865054261325826.json, 图片生成/图生图/GImage20分镜图超强_2060855586232815618.json, 图片生成/图生图/GXX V2图像编辑 4K高清 多图编辑 全能图片 贞贞的AI工坊  低渠道版  Chat API模_2047477649055948802.json, 图片生成/图生图/aidir-9宫格分镜图_2078380754589016065.json, 图片生成/图生图/aidir-角色加场景参考生成9宫格分镜图（G-Image 2.0）_2069593853795069953.json, 图片生成/图生图/image 2 - 九宫格分镜图_2049001762517950465.json, 图片生成/图生图/超好用🔥最高16宫格分镜图-可自行调整（G-Image 2.0）_2066384721466191874.json, 图片生成/文生图/9宫格分镜图 洗图 低价_免费版 G-Image 2.0 全能编辑_2049688552975372289.json, 图片生成/文生图/9宫格分镜图（G-Image 2.0）_2057092483150077953.json, 图片生成/文生图/G-Image 2.0  9宫格分镜图 洗图 全能编辑 低价_免费版_2049729755620052993.json]
+members: [视频生成/图生视频/全能视频S.0(15秒）文生视频全能视频S.0openai10s1080p高清视频_1975796073170079746.json, 视频生成/文生视频/RH+全能视频S+Text+to+Video_1983480637065764866.json, 视频生成/文生视频/RH+全能视频S+Text+to+Video_1983729493338726402.json, 视频生成/文生视频/RH+全能视频S文生视频_1983346767116824578.json, 视频生成/文生视频/Soro2 文生视频_1990248192983879682.json, 视频生成/文生视频/Soro2 文生视频_1990443744925290498.json, 视频生成/文生视频/Soro2 文生视频（创意表达）_1989594097897885697.json, 视频生成/文生视频/s0ra2一键文生视频s0ra2视频AI短剧漫剧短片视频生成工作流10-15秒_2013076213027311618.json, 视频生成/文生视频/s0ra2一键文生视频s0ra2视频AI短剧漫剧短片视频生成工作流_2012739921504636929.json, 视频生成/文生视频/s0ra2一键文生视频s0ra2视频AI短剧漫剧短片视频生成工作流附去除rh水印独家10-15秒A_2010917203381587969.json, 视频生成/文生视频/s0ra2一键文生视频s0ra2视频AI短剧漫剧短片视频生成工作流附去除rh水印独家_2010933571908804609.json, 视频生成/文生视频/s0ra2索拉一键文生视频s0ra2视频AI短剧漫剧短片视频生成工作流附去除rh水印独家10-15秒_2012059269922820098.json, 视频生成/文生视频/sora2一键文生视频sora2视频AI短剧漫剧短片视频生成工作流附去除rh水印独家10-15秒_2007713172324622337.json, 视频生成/文生视频/全能视频S 文生视频 绕过快捷创作Plus排队_1998765386319417346.json, 视频生成/文生视频/全能视频S 文生视频1080p_1978702701527715841.json, 视频生成/文生视频/全能视频S 文生视频_1997942373571264513.json, 视频生成/文生视频/全能视频S 文生视频高清无水印，10 - 15 秒免费做，别再花钱了！_1989978003092500482.json, 视频生成/文生视频/全能视频S-鬼灭之刃定制版-自制鬼灭视频_1989837490473365506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_94
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/16宫格分镜图（G-Image 2.0）_2049085742894292993.json、图片生成/图生图/4K高清 GXX V2图像编辑多图编辑 全能图片 贞贞的AI工坊  低渠道版  Chat API模式_2047482157681090561.json、图片生成/图生图/9宫格分镜图（G-Image 2.0）_2047207511572353025.json、图片生成/图生图/9宫格分镜图（G-Image+2.0）_2048672366338772993.json、图片生成/图生图/9宫格剧情分镜图（G-Image+2.0）洗图 文生图+图生图  人物一致_2057622648015908865.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/全能视频S.0(15秒）文生视频全能视频S.0openai10s1080p高清视频_1975796073170079746.json、视频生成/文生视频/RH+全能视频S+Text+to+Video_1983480637065764866.json、视频生成/文生视频/RH+全能视频S+Text+to+Video_1983729493338726402.json、视频生成/文生视频/RH+全能视频S文生视频_1983346767116824578.json、视频生成/文生视频/Soro2 文生视频_1990248192983879682.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
-- `easy showAnything`
+全部 18 个 workflow 都包含：
+- `RH_Sora2_T2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 14/15 个有
-- `CR Text` —— 13/15 个有
-- `RH_LLMAPI_Pro_Node` —— 13/15 个有
-- `RH_Nano_Banana2_Image2Image` —— 13/15 个有
-- `CR Prompt Text` —— 9/15 个有
-- `Comfly_api_set` —— 9/15 个有
-- `Comfly_gpt_image_2_official` —— 9/15 个有
-- `ttN concat` —— 2/15 个有
+- `CR Text` —— 10/18 个有
+- `easy showAnything` —— 8/18 个有
+- `CR Prompt Text` —— 3/18 个有
+- `CR Text Concatenate` —— 1/18 个有
+- `RH_LLMAPI_NODE` —— 1/18 个有
+- `ShowText|pysssss` —— 1/18 个有
 
 ## 典型参数
 

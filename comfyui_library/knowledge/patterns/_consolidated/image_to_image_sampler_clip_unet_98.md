@@ -1,31 +1,32 @@
 ---
 name: image_to_image_sampler_clip_unet_98
 type: Image To Image
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.9062
-common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.97
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/flux-Kontext文生图_局部重绘_2039270148548333570.json, 图片生成/图生图/flux-kontext-画面精准控制_1945126183988285441.json, 图片生成/图生图/flux_1_kontext+flux lora工作流_1944430917349986305.json, 图片生成/图生图/flux_1_kontext_生成封面图_1940659961330561026.json, 图片生成/图生图/kontext 超完美转手办卡通人物一致性高_1944805495855304705.json]
+members: [图片生成/图生图/Kontext 产品专业打光｜电商_1947606970641670145.json, 图片生成/图生图/Kontext 角色一致性多角度_1950003872502865922.json, 图片生成/图生图/Kontext【一键】提取线稿，适合二创_1958351836795310082.json, 图片生成/图生图/flux 一键参考生成图像_1928839789221679106.json, 图片生成/图生图/星蝶Q版画风一键转换工作流_1945724032648093697.json, 图片生成/图生图/转手办_1950076112036651010.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_98
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/flux-Kontext文生图_局部重绘_2039270148548333570.json、图片生成/图生图/flux-kontext-画面精准控制_1945126183988285441.json、图片生成/图生图/flux_1_kontext+flux lora工作流_1944430917349986305.json、图片生成/图生图/flux_1_kontext_生成封面图_1940659961330561026.json、图片生成/图生图/kontext 超完美转手办卡通人物一致性高_1944805495855304705.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Kontext 产品专业打光｜电商_1947606970641670145.json、图片生成/图生图/Kontext 角色一致性多角度_1950003872502865922.json、图片生成/图生图/Kontext【一键】提取线稿，适合二创_1958351836795310082.json、图片生成/图生图/flux 一键参考生成图像_1928839789221679106.json、图片生成/图生图/星蝶Q版画风一键转换工作流_1945724032648093697.json…）
 
 - **类型**：Image To Image
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `DualCLIPLoader`
-- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
 - `ReferenceLatent`
@@ -36,30 +37,32 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/5 个有
-- `FluxKontextImageScale` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `StringConcatenate` —— 3/5 个有
-- `StringConstantMultiline` —— 3/5 个有
-- `EmptySD3LatentImage` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
-- `Kontext Inpainting Conditioning` —— 1/5 个有
-- `LayerStyle: ColorOverlay` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `RMBG` —— 1/5 个有
+- `FluxGuidance` —— 5/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
+- `LoraLoader` —— 3/6 个有
+- `PreviewImage` —— 3/6 个有
+- `RH_Translator` —— 3/6 个有
+- `ImageConcatMulti` —— 2/6 个有
+- `ShowText` —— 2/6 个有
+- `Text Multiline` —— 2/6 个有
+- `ImagePadForOutpaint` —— 1/6 个有
+- `ImageResize+` —— 1/6 个有
+- `LayerUtility: ImageScaleRestore` —— 1/6 个有
+- `PDIMAGE_LongerSize` —— 1/6 个有
+- `PIP_图像联结` —— 1/6 个有
+- `easy seed` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 25 | 5 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| LoRA 模型强度 | 0.9 | 0.85 - 1 | 3 | 93% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -67,8 +70,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 25，5 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.9，观测区间 0.85 - 1，3 个样本，取值集中（一致性 93%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

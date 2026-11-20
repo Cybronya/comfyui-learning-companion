@@ -1,77 +1,83 @@
 ---
 name: unknown_workflow_lora_sampler_unet_146
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.9028
-common_nodes: [CLIPLoader, EmptyLatentImage, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+frequency: 6
+level: moderate
+coverage: 0.829833
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-Edit图像编辑_1958194156185272321.json, 图片生成/图生图/小红书FireRed-Image-edit1.1双图编辑_2033156894868639745.json, 图片生成/图生图/小红书人物换装 双图编辑_2034550287024791553.json, 图片生成/图生图/小红书人物换装+局部变大+双图编辑_2034677242252496898.json, 图片生成/图生图/超好用🔥人物一键换装-双图编辑_2063984968640061441.json]
+members: [平台全量/h3-万物比基尼_2117047552452419585.json, 平台全量/minimax_h3复刻短视频爆款_2094782500068487169.json, 视频生成/图生视频/H3 taomate 3步加速 中远距离不崩脸_2099163346699374593.json, 视频生成/图生视频/H3 角色替换_2085882691152605185.json, 视频生成/图生视频/H3视频衔接_2095145130473902082.json, 视频生成/图生视频/h3双采样高清流_2092571899955081218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_146
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit图像编辑_1958194156185272321.json、图片生成/图生图/小红书FireRed-Image-edit1.1双图编辑_2033156894868639745.json、图片生成/图生图/小红书人物换装 双图编辑_2034550287024791553.json、图片生成/图生图/小红书人物换装+局部变大+双图编辑_2034677242252496898.json、图片生成/图生图/超好用🔥人物一键换装-双图编辑_2063984968640061441.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/h3-万物比基尼_2117047552452419585.json、平台全量/minimax_h3复刻短视频爆款_2094782500068487169.json、视频生成/图生视频/H3 taomate 3步加速 中远距离不崩脸_2099163346699374593.json、视频生成/图生视频/H3 角色替换_2085882691152605185.json、视频生成/图生视频/H3视频衔接_2095145130473902082.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `Image Comparer (rgthree)`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 4/5 个有
-- `CR Prompt Text` —— 4/5 个有
-- `TextEncodeQwenImageEditPlus` —— 4/5 个有
-- `Anything Everywhere` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `Text` —— 1/5 个有
-- `TextEncodeQwenImageEdit` —— 1/5 个有
+- `CreateVideo` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `MiniMaxLowVRAMAttention` —— 5/6 个有
+- `ModelAttentionBackend` —— 5/6 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `SaveVideo` —— 5/6 个有
+- `VAEDecodeAudio` —— 5/6 个有
+- `VHS_LoadVideo` —— 4/6 个有
+- `FlashVSRNode` —— 3/6 个有
+- `H3SigmaRefiner` —— 3/6 个有
+- `LTXVConcatAVLatent` —— 3/6 个有
+- `LTXVSeparateAVLatent` —— 3/6 个有
+- `MinimaxH3LatentUpscaler3D` —— 3/6 个有
+- `ModelPreviewOverrideKJ` —— 3/6 个有
+- `SaveImage` —— 3/6 个有
+- `Sleep` —— 3/6 个有
+- `SplitSigmas` —— 3/6 个有
+- `MiniMaxChunkFeedForward` —— 2/6 个有
+- `FL_UnloadAllModels` —— 1/6 个有
+- `GetImageRangeFromBatch` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `MiniMaxH3AddGuide` —— 1/6 个有
+- `MiniMaxH3PromptEnhancerT8` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
+- `VHS_VideoCombine` —— 1/6 个有
+- `easy seed` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1024 | 5 | 78% |
-| 高度 | 1536 | 512 - 1536 | 5 | 69% |
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1024，5 个样本
-- 高度 中位数 1536，观测区间 512 - 1536，5 个样本
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,49 +1,40 @@
 ---
 name: unknown_workflow_generic_466
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.747833
-common_nodes: [ImageScale, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, SeedVR2BlockSwap, SeedVR2ExtraArgs, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize, easy imageSizeBySide]
+coverage: 0.831571
+common_nodes: [LoadImage, PreviewImage, RH_RhartImageG25OfficialTokenSunburstEdit, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2 GGUF版本（低显存且放大参数高于6k时使用）——适用于高清的增加细节+全节点注释_2054878600821788673.json, 图片生成/图生图/seedVR2 原模分块版本（放大参数高于4k时使用）——适用于不清晰的+全节点注释_2054878680249315330.json, 图片生成/图生图/seedVR2_原模分块版本放大参数高于4k时使用-适用于不清晰的_2055544526051266562.json, 图片生成/图生图/seedvr2 超高清无损放大_1967443133325828098.json, 图片生成/图生图/seedvr2放大_1986367857825087490.json, 图片生成/图生图/啊癫 SeedVR2图像高清放大流_1971202743803297794.json]
+members: [图片生成/图生图/动作1_1裂变_2116381579835695106.json, 图片生成/图生图/动作1：1裂变+高清+颜色_2117087649906380801.json, 图片生成/图生图/动作1：1裂变_2116354149657964545.json, 图片生成/图生图/模特换五官_2115272694248861698.json, 图片生成/图生图/裂变+高清_2114908431869108225.json, 图片生成/图生图/裂变+高清新_2115315826244018177.json, 图片生成/图生图/裂变+高清（新）_2115257688027389953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_466
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/seedVR2 GGUF版本（低显存且放大参数高于6k时使用）——适用于高清的增加细节+全节点注释_2054878600821788673.json、图片生成/图生图/seedVR2 原模分块版本（放大参数高于4k时使用）——适用于不清晰的+全节点注释_2054878680249315330.json、图片生成/图生图/seedVR2_原模分块版本放大参数高于4k时使用-适用于不清晰的_2055544526051266562.json、图片生成/图生图/seedvr2 超高清无损放大_1967443133325828098.json、图片生成/图生图/seedvr2放大_1986367857825087490.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/动作1_1裂变_2116381579835695106.json、图片生成/图生图/动作1：1裂变+高清+颜色_2117087649906380801.json、图片生成/图生图/动作1：1裂变_2116354149657964545.json、图片生成/图生图/模特换五官_2115272694248861698.json、图片生成/图生图/裂变+高清_2114908431869108225.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageScale`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 7 个 workflow 都包含：
 - `LoadImage`
+- `PreviewImage`
+- `RH_RhartImageG25OfficialTokenSunburstEdit`
 - `SaveImage`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy imageSize`
-- `easy imageSizeBySide`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 5/6 个有
-- `Image Comparer (rgthree)` —— 3/6 个有
-- `PlaySound|pysssss` —— 3/6 个有
-- `SeedVR2` —— 3/6 个有
-- `SeedVR2GGUF` —— 3/6 个有
-- `PreviewImage` —— 1/6 个有
+- `StringMergeNode` —— 6/7 个有
+- `Text` —— 6/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 5/7 个有
+- `ColorMatchPro` —— 4/7 个有
+- `Image Comparer (rgthree)` —— 3/7 个有
+- `RH_RhartImageNProEdit` —— 3/7 个有
 
 ## 典型参数
 

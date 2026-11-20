@@ -3,41 +3,39 @@ name: unknown_workflow_generic_1696
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.913
-common_nodes: [AudioCrop, Bjornulf_AnythingToText, LoadAudio, MathExpression|pysssss, PreviewImage, SaveImage, SaveVideo, VHS_LoadVideoPath, VHS_SelectImages]
+coverage: 0.769
+common_nodes: [Display Any (rgthree), FluxKontextImageScale, ImageStitch, ImpactSwitch, LoadImage, RH_LLMAPI_NODE, SaveImage, Text Multiline, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.5 Preview 图生视频，保存尾帧，可连续生成长视频_1971449141417164802.json, 视频生成/文生视频/Wan2.5 Preview 文生视频，保存尾帧，可连续生成长视频_1971617651434909698.json]
+members: [图片生成/图生图/即梦4图像编辑模型单图版_1970755117802790914.json, 图片生成/图生图/谷歌全能图片V1最强一致性模型单图编辑版_1961616752289452033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1696
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.5 Preview 图生视频，保存尾帧，可连续生成长视频_1971449141417164802.json、视频生成/文生视频/Wan2.5 Preview 文生视频，保存尾帧，可连续生成长视频_1971617651434909698.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4图像编辑模型单图版_1970755117802790914.json、图片生成/图生图/谷歌全能图片V1最强一致性模型单图编辑版_1961616752289452033.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `Bjornulf_AnythingToText`
-- `LoadAudio`
-- `MathExpression|pysssss`
-- `PreviewImage`
+- `Display Any (rgthree)`
+- `FluxKontextImageScale`
+- `ImageStitch`
+- `ImpactSwitch`
+- `LoadImage`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `SaveVideo`
-- `VHS_LoadVideoPath`
-- `VHS_SelectImages`
+- `Text Multiline`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `RH_Wan25_I2V` —— 1/2 个有
-- `RH_Wan25_T2V` —— 1/2 个有
-- `ShellAgentPluginInputText` —— 1/2 个有
+- `RH_Jimeng4_Image2Image` —— 1/2 个有
+- `RH_Nano_Banana_Image2Image` —— 1/2 个有
 
 ## 典型参数
 

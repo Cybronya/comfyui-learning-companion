@@ -1,67 +1,60 @@
 ---
 name: unknown_workflow_sampler_clip_unet_273
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8956
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.9715
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/4张 文生图一致性角色多角度分镜【可反推图自动生成角色分镜】_1972618798815698945.json, 图片生成/文生图/DP小熊猫 V1.0_1897934794485878785.json, 图片生成/文生图/FLUX 最强基础文生图 支持手_自动提示词_1922444657790484482.json, 图片生成/文生图/Flux文生图（中文提示词）+新版Jocaption反推_1930926287748313090.json, 图片生成/文生图/flux文生图-在线生图-可用lora-可反推图片（效果强悍）_1913109816590696449.json]
+members: [图片生成/文生图/Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353.json, 图片生成/文生图/wan2.2文生图工作流_1953829480836026370.json, 图片生成/文生图/万相2.2 高质量文生图工作流_1950184764194119681.json, 视频生成/文生视频/WAN14B-文生视频_1949853875865042945.json, 视频生成/文生视频/万相 Wan2.2 14B文生视频工作流_1949831170026594305.json, 视频生成/文生视频/（（自用）官方版）Wan2.2 14B+LightX2V 8倍加速文生视频工作流_1952591181077254146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_273
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/4张 文生图一致性角色多角度分镜【可反推图自动生成角色分镜】_1972618798815698945.json、图片生成/文生图/DP小熊猫 V1.0_1897934794485878785.json、图片生成/文生图/FLUX 最强基础文生图 支持手_自动提示词_1922444657790484482.json、图片生成/文生图/Flux文生图（中文提示词）+新版Jocaption反推_1930926287748313090.json、图片生成/文生图/flux文生图-在线生图-可用lora-可反推图片（效果强悍）_1913109816590696449.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353.json、图片生成/文生图/wan2.2文生图工作流_1953829480836026370.json、图片生成/文生图/万相2.2 高质量文生图工作流_1950184764194119681.json、视频生成/文生视频/WAN14B-文生视频_1949853875865042945.json、视频生成/文生视频/万相 Wan2.2 14B文生视频工作流_1949831170026594305.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `EmptyHunyuanLatentVideo`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `LoraLoader` —— 4/5 个有
-- `ShowText|pysssss` —— 4/5 个有
-- `CR Text Concatenate` —— 2/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `RH_Translator` —— 2/5 个有
-- `DeepTranslatorTextNode` —— 1/5 个有
-- `ETN_Translate` —— 1/5 个有
-- `JJC_JoyCaption` —— 1/5 个有
-- `Joy_caption_two` —— 1/5 个有
-- `Joy_caption_two_load` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
-- `StringConstantMultiline` —— 1/5 个有
-- `WD14Tagger|pysssss` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `SaveImage` —— 5/6 个有
+- `CR Text` —— 3/6 个有
+- `VHS_VideoCombine` —— 3/6 个有
+- `JWInteger` —— 2/6 个有
+- `LoadImage` —— 2/6 个有
+- `LoadLatent` —— 1/6 个有
+- `LoraLoader` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
+- `PathchSageAttentionKJ` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 1 | 0.8 - 1 | 4 | 91% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 896 | 400 - 1080 | 5 | 72% |
-| 高度 | 1152 | 400 - 1920 | 5 | 57% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | fixed | - | 6 | 67% |
+| Prompt 约束强度(CFG) | 20 | 8 - 20 | 6 | 73% |
+| 采样算法 | 3.5 | 1 - 3.5 | 6 | 56% |
+| 调度器 | euler | - | 6 | 50% |
+| 重绘幅度 | simple | - | 6 | 67% |
 
 ## 常见问题
 
@@ -69,7 +62,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，4 个样本，取值集中（一致性 91%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 896，观测区间 400 - 1080，5 个样本
-- 高度 中位数 1152，观测区间 400 - 1920，5 个样本
+- 采样步数 最常用 fixed，6 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 20，观测区间 8 - 20，6 个样本
+- 采样算法 中位数 3.5，观测区间 1 - 3.5，6 个样本
+- 调度器 最常用 euler，6 个样本，一致性 50%
+- 重绘幅度 最常用 simple，6 个样本，一致性 67%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

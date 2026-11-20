@@ -3,79 +3,69 @@ name: unknown_workflow_lora_sampler_unet_157
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.9458
-common_nodes: [AudioConcat, BasicScheduler, BatchImagesNode, CLIPLoader, ComfyMathExpression, ComfySwitchNode, ConditioningZeroOut, CreateVideo, Float, GetImageRangeFromBatch, Int, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, ResolutionSelector, SaveVideo, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy compare, easy forLoopEnd, easy forLoopStart]
+coverage: 0.717
+common_nodes: [AdaptiveLongestEdge_EditUtils, CFGGuider, CLIPLoader, CM_FloatToInt, CM_IntToNumber, CM_NumberBinaryOperation, CM_NumberToInt, ConditioningZeroOut, CropWithPadInfo_EditUtils, Display Any (rgthree), EditTextEncode_EditUtils, Fast Groups Bypasser (rgthree), Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2KleinOutputExtractor_EditUtils, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), ImageListToImageBatch, ImageResize+, ImageScaleBy, ImpactImageBatchToImageList, Int, KSamplerSelect, LayerUtility: ExtendCanvasV2, LoadImage, LoraLoaderModelOnly, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy float, easy imageColorMatch]
 problems: []
 missing: []
-members: [数字人/数字人/MiniMax_H3无限时长极速音频驱动数字人1015_2114186078939869185.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1013_2109675064579936258.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1015_2110201843593867266.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json, 视频生成/数字人/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json]
+members: [图片生成/图生图/F.2Klein自然无缝扩图_2058051575259688961.json, 图片生成/图生图/Flux2Klein9b超自然无缝扩图_2050014192501047298.json, 图片生成/图生图/Klein-超自然无缝扩图_2046423963668058114.json, 图片生成/图生图/Klein超自然无缝扩图_2051234698155835393.json, 平台全量/F.2Klein自然无缝扩图_2058482397783617538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_157
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/MiniMax_H3无限时长极速音频驱动数字人1015_2114186078939869185.json、视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1013_2109675064579936258.json、视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人1015_2110201843593867266.json、视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json、视频生成/数字人/MiniMax_H3无限时长极速音频驱动数字人_2101231106522697729.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/F.2Klein自然无缝扩图_2058051575259688961.json、图片生成/图生图/Flux2Klein9b超自然无缝扩图_2050014192501047298.json、图片生成/图生图/Klein-超自然无缝扩图_2046423963668058114.json、图片生成/图生图/Klein超自然无缝扩图_2051234698155835393.json、平台全量/F.2Klein自然无缝扩图_2058482397783617538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AudioConcat`
-- `BasicScheduler`
-- `BatchImagesNode`
+- `AdaptiveLongestEdge_EditUtils`
+- `CFGGuider`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
+- `CM_FloatToInt`
+- `CM_IntToNumber`
+- `CM_NumberBinaryOperation`
+- `CM_NumberToInt`
 - `ConditioningZeroOut`
-- `CreateVideo`
-- `Float`
-- `GetImageRangeFromBatch`
+- `CropWithPadInfo_EditUtils`
+- `Display Any (rgthree)`
+- `EditTextEncode_EditUtils`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2KleinOutputExtractor_EditUtils`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageListToImageBatch`
+- `ImageResize+`
+- `ImageScaleBy`
+- `ImpactImageBatchToImageList`
 - `Int`
 - `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `LayerUtility: ExtendCanvasV2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ResolutionSelector`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `TrimAudioDuration`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SetNode`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `easy compare`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-
-**可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ReferenceToVideo` —— 4/5 个有
-- `BasicGuider` —— 3/5 个有
-- `BlockSparseAttention` —— 3/5 个有
-- `ExtendIntermediateSigmas` —— 3/5 个有
-- `MiniMaxH3BlockCacheT8` —— 3/5 个有
-- `MiniMaxH3SigmaShift` —— 3/5 个有
-- `ModelAttentionBackend` —— 3/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `PrimitiveStringMultiline` —— 3/5 个有
-- `RIFE VFI` —— 3/5 个有
-- `RandomNoise` —— 3/5 个有
-- `SamplerCustomAdvanced` —— 3/5 个有
-- `PlaySound|pysssss` —— 2/5 个有
-- `SelfLiftAvatarH3Sampler` —— 2/5 个有
-- `AudioCrop` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `MiniMaxH3Unified` —— 1/5 个有
-- `ModelPreviewOverrideKJ` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `SaveAudioAdvanced` —— 1/5 个有
+- `easy float`
+- `easy imageColorMatch`
 
 ## 典型参数
 

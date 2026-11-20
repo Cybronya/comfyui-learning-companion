@@ -1,76 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_316
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.49225
-common_nodes: [AILab_QwenVL, CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
+frequency: 9
+level: moderate
+coverage: 0.972
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoraLoaderModelOnly, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1987760541282316290.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1995688996271435777.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FLframe_transition_1986333463185948673.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1991421095259631618.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1994587413886476290.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_sfw_2012485583641255937.json, 视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_sfw_2013095948842438657.json, 视频生成/图生视频/首尾帧视频_2005138908902031361.json]
+members: [平台全量/chongwuship_2121114339745820674.json, 平台全量/h3-1pass-9img_2117137894283505665.json, 平台全量/能文能武MinimaxH3工作流_2118523834507812865.json, 平台全量/能文能武MinimaxH3工作流_2118874442322497537.json, 平台全量/能文能武MinimaxH3工作流_2118962154979282946.json, 平台全量/能文能武MinimaxH3工作流_2119205922450006018.json, 视频生成/图生视频/MinimaxH3自定义sigam工作流_2109984744522993665.json, 视频生成/图生视频/商业级360度环绕镜头展示工作流_2110737948009385985.json, 视频生成/图生视频/商业级360度环绕镜头展示工作流_2111237385672544258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_316
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1987760541282316290.json、视频生成/图生视频/video_wan2_2_14B_i2v_FLFM2V_optimize_1995688996271435777.json、视频生成/图生视频/video_wan2_2_14B_i2v_FLframe_transition_1986333463185948673.json、视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1991421095259631618.json、视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_1994587413886476290.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/chongwuship_2121114339745820674.json、平台全量/h3-1pass-9img_2117137894283505665.json、平台全量/能文能武MinimaxH3工作流_2118523834507812865.json、平台全量/能文能武MinimaxH3工作流_2118874442322497537.json、平台全量/能文能武MinimaxH3工作流_2118962154979282946.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：49%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CFGZeroStar`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoadImage`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `SetNode`
+- `ModelAttentionBackend`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 6/8 个有
-- `DuckHideNode` —— 5/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 5/8 个有
-- `SaveImage` —— 5/8 个有
-- `easy saveText` —— 5/8 个有
-- `ColorMatch` —— 4/8 个有
-- `PainterI2V` —— 4/8 个有
-- `WanFirstLastFrameToVideo` —— 4/8 个有
-- `RunningHub Deepcleaner` —— 3/8 个有
-- `Textbox` —— 3/8 个有
-- `ImageConcatMulti` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `MultiLinePromptMG` —— 2/8 个有
-- `TT_img_enc_v2` —— 2/8 个有
-- `Text Multiline` —— 2/8 个有
+- `MiniMaxChunkFeedForward` —— 8/9 个有
+- `MiniMaxH3Unified` —— 8/9 个有
+- `MiniMaxLowVRAMAttention` —— 8/9 个有
+- `ModelPreviewOverrideKJ` —— 8/9 个有
+- `ResolutionSelector` —— 8/9 个有
+- `CR Text` —— 7/9 个有
+- `Label (rgthree)` —— 7/9 个有
+- `MemoryCleaner` —— 7/9 个有
+- `MiniMaxH3SigmaShift` —— 6/9 个有
+- `LoadAudio` —— 2/9 个有
+- `LoadImage` —— 2/9 个有
+- `SetNode` —— 2/9 个有
+- `BlockSparseAttention` —— 1/9 个有
+- `CM_IntToFloat` —— 1/9 个有
+- `FusionText` —— 1/9 个有
+- `JjkText` —— 1/9 个有
+- `ManualSigmas` —— 1/9 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 62% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | lcm | - | 8 | 100% |
-| 重绘幅度 | simple | - | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,8 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 62%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，8 个样本，一致性 100%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

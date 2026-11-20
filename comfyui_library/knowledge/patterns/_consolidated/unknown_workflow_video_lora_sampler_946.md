@@ -1,68 +1,54 @@
 ---
 name: unknown_workflow_video_lora_sampler_946
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5605
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, Float, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageSmartSharpen+, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, RH_LLMAPI_NODE, SetNode, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy promptConcat, easy seed]
+frequency: 3
+level: moderate
+coverage: 0.959
+common_nodes: [INTConstant, ImageResize+, JWInteger, LayerUtility: PurgeVRAM, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/✅Wan 2.2+Lightx2v-图生视频-kj版本-720p_1950727376542044161.json, 视频生成/图生视频/✅首尾帧-图生视频-kj版本-Wan2.2+Lightx2v-720p_1952041927531245569.json]
+members: [视频生成/文生视频/Wan2.2首尾帧工作流—Kj加速版_1962914848373968898.json, 视频生成/文生视频/首尾帧 wan2.2 kj加速版 万相4步加速视频 Rapid AllInOne 2图生视频_2028398849848516609.json, 视频生成/文生视频/首尾帧图生视频   wan2.2-kj版加速音画同步 全自动首尾帧视频_2016386248029511681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_946
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/✅Wan 2.2+Lightx2v-图生视频-kj版本-720p_1950727376542044161.json、视频生成/图生视频/✅首尾帧-图生视频-kj版本-Wan2.2+Lightx2v-720p_1952041927531245569.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.2首尾帧工作流—Kj加速版_1962914848373968898.json、视频生成/文生视频/首尾帧 wan2.2 kj加速版 万相4步加速视频 Rapid AllInOne 2图生视频_2028398849848516609.json、视频生成/文生视频/首尾帧图生视频   wan2.2-kj版加速音画同步 全自动首尾帧视频_2016386248029511681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `Float`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
-- `ImageSmartSharpen+`
+全部 3 个 workflow 都包含：
+- `INTConstant`
+- `ImageResize+`
 - `JWInteger`
-- `LoadImage`
+- `LayerUtility: PurgeVRAM`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `SetNode`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy promptConcat`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 1/2 个有
-- `LayerFilter: FilmV2` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `WanVideoClipVisionEncode` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `ImageLoader` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `GetNode` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `WanVideoApplyNAG` —— 1/3 个有
 
 ## 典型参数
 
@@ -74,4 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

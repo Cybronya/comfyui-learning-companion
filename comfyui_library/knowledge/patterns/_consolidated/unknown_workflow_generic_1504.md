@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 0.75
-common_nodes: [Image Comparer (rgthree), RH_Nano_Banana2_Image2Image, SaveImage]
+common_nodes: [CR Prompt Text, LoadAudio, LoadImage, R2T2GGUFLoader, R2T2Transcribe, RunningHub Deepcleaner, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/在线 -  全能图片V12-双图_1994391204693483522.json, 图片生成/文生图/全能图像编辑0410_2038887358690496513.json]
+members: [图片生成/反推提示词/Confucius4-R2T2语音转录_2104649076645130241.json, 平台全量/Confucius4-R2T2语音转文本_2106186313497145346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1504
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/在线 -  全能图片V12-双图_1994391204693483522.json、图片生成/文生图/全能图像编辑0410_2038887358690496513.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Confucius4-R2T2语音转录_2104649076645130241.json、平台全量/Confucius4-R2T2语音转文本_2106186313497145346.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,15 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `RH_Nano_Banana2_Image2Image`
+- `CR Prompt Text`
+- `LoadAudio`
+- `LoadImage`
+- `R2T2GGUFLoader`
+- `R2T2Transcribe`
+- `RunningHub Deepcleaner`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `LoadImagesFromURL` —— 1/2 个有
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -1,33 +1,34 @@
 ---
 name: unknown_workflow_sampler_clip_unet_9
 type: Unknown Workflow
-frequency: 36
+frequency: 31
 level: moderate
-coverage: 0.925611
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.917968
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/FLUX-Klein 图像反推分镜提示词+生成九宫格分镜图_2080913325776527362.json, 图片生成/图生图/AI短剧 FLUX2-Klein一致性分镜生成_2016880158778597378.json, 图片生成/图生图/F.2Klein一致性分镜生成_2054559164600471553.json, 图片生成/图生图/F.2Klein一致性分镜生成_2057782704892112897.json, 图片生成/图生图/FLUX2-Klein--批量生成动漫、短剧、角色分镜_2016510806220873730.json, 图片生成/图生图/FLUX2-Klein9B 九宫格 分镜一致性最强_2015216356542648321.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2013614452058361857.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2014954574523670529.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2021053646867275778.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2029746610879598594.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2033815837353709569.json, 图片生成/图生图/FLUX2-Klein一致性分镜生成_2067832036592807938.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2042456007313465346.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2043916659529883649.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2065044099266342914.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2067883468247355393.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2081733709329424385.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2082447566196793345.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2098380414594404353.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2098398020718120961.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2103810120902864898.json, 图片生成/图生图/FLUX2-Klein人物一致性分镜生成漫剧短剧角色分镜生成器_2103834278789472257.json, 图片生成/图生图/FLUX2-Klein多角度分镜生成_2026459848992366593.json, 图片生成/图生图/FLUX2-Klein多角度分镜生成_2064992938723209217.json, 图片生成/图生图/FLUX2Klein一致性分镜生成_2044742361766436865.json, 图片生成/图生图/FLUXKlein超强分镜流_2058520639069319169.json, 图片生成/图生图/Flux2+Klein_9b最强动漫转写实真人_2023680510127513601.json, 图片生成/图生图/Flux2Klein9b最强动漫转写实真人_2044631862445875202.json, 图片生成/图生图/Flux2_Klein9B_无限分镜工作流_2067621889706643458.json, 图片生成/图生图/Klein文生图图生图脚本分镜一键生成_2015961543439028226.json, 图片生成/图生图/Klein超强分镜流 _  一致性超强九宫格 _  超强连贯性+超快速生成_2044341468541755394.json, 图片生成/图生图/WH-AI-Studio-FLUX2-Klein(自动反推一致性分镜图完美版)_2026691705298231297.json, 图片生成/图生图/klein9b镜头调度_2017785189434400769.json, 图片生成/图生图/opsv-klein9b镜头调度2_2075497084035358722.json, 图片生成/图生图/【灵感工具】影视动画剧情分镜延展_FLUX.2.0-Klein9B_2031248180645470210.json, 图片生成/文生图/opsv-klein9b镜头调度_2054774868142501890.json]
+members: [图片生成/图生图/Flux2 一键转毛线风格_1996554829826760706.json, 图片生成/图生图/Flux2 单图编辑_1993555111395917826.json, 图片生成/图生图/Flux2 单图编辑模式_1993596098176548866.json, 图片生成/图生图/Flux2 双图编辑_1993555181015154690.json, 图片生成/图生图/Flux2 图片编辑_1986702252859666433.json, 图片生成/图生图/Flux2 超强双图编辑_1993619885911638017.json, 图片生成/图生图/Flux2-klein-9b 多图编辑_2016048290185351169.json, 图片生成/图生图/Flux2.klein单图编辑（去水印_换背景_改色）_2013100887060779010.json, 图片生成/图生图/Flux2DEV单图编辑_1993536804617912321.json, 图片生成/图生图/Flux2DEV单图编辑_1994060590549319682.json, 图片生成/图生图/Flux2DEV多图编辑_1993572546985607169.json, 图片生成/图生图/Flux2DEV多图编辑_2048716611548356610.json, 图片生成/图生图/Flux2_多图编辑工作流_1994701624062906369.json, 图片生成/图生图/Flux2一键3D毛线质感（超还原）_2028277318543740929.json, 图片生成/图生图/Flux2万物转毛线风格=B站艾橘溪_1986842346891456514.json, 图片生成/图生图/Flux2万物转毛线风格_2015686369653297154.json, 图片生成/图生图/Flux2万物转毛线风格_2036267536605515778.json, 图片生成/图生图/Flux2万物转毛线风格_2067131882885697537.json, 图片生成/图生图/Flux2万物转毛线风格_2067134254907224066.json, 图片生成/图生图/Flux2万物转毛线风格画风_2068870823557033986.json, 图片生成/图生图/Flux2三图编辑_1993501566938398721.json, 图片生成/图生图/Flux2单图编辑_1993496482062024706.json, 图片生成/图生图/Flux2变毛线_1996852914805252098.json, 图片生成/图生图/flux2 人物换装_电商产品换背景_2049895408285044737.json, 图片生成/图生图/【ComfyUI】Klein单图精修工作流｜提示词驱动渲染+全节点注释_2061341398959476737.json, 图片生成/图生图/上传图片即可一键把角色变成毛线材质，Flux2万物转毛线风格_2026105296489291777.json, 图片生成/图生图/上传图片即可一键把角色变成毛线材质，Flux2万物转毛线风格_2052921408677785602.json, 图片生成/图生图/嘟嘟-Flux2单图编辑_1994408022388641794.json, 图片生成/图生图/👾怪獸-FLUX.2双图编辑👾_1993647975433961474.json, 图片生成/文生图/Flux2 单图编辑_1993603003697610753.json, 平台全量/Flux2万物转毛线风格，啥都能转？_1993589164807487490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_9
 
-> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（图片生成/反推提示词/FLUX-Klein 图像反推分镜提示词+生成九宫格分镜图_2080913325776527362.json、图片生成/图生图/AI短剧 FLUX2-Klein一致性分镜生成_2016880158778597378.json、图片生成/图生图/F.2Klein一致性分镜生成_2054559164600471553.json、图片生成/图生图/F.2Klein一致性分镜生成_2057782704892112897.json、图片生成/图生图/FLUX2-Klein--批量生成动漫、短剧、角色分镜_2016510806220873730.json…）
+> 由 `engine/knowledge_consolidation` 从 31 个 workflow 归纳得出（图片生成/图生图/Flux2 一键转毛线风格_1996554829826760706.json、图片生成/图生图/Flux2 单图编辑_1993555111395917826.json、图片生成/图生图/Flux2 单图编辑模式_1993596098176548866.json、图片生成/图生图/Flux2 双图编辑_1993555181015154690.json、图片生成/图生图/Flux2 图片编辑_1986702252859666433.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：36
+- **样本数**：31
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 36 个 workflow 都包含：
-- `CFGGuider`
+全部 31 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
+- `FluxGuidance`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
@@ -40,31 +41,19 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 34/36 个有
-- `easy promptLine` —— 34/36 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 33/36 个有
-- `GetImageSize` —— 32/36 个有
-- `Qwen3_VQA` —— 32/36 个有
-- `Text Multiline` —— 32/36 个有
-- `easy showAnything` —— 32/36 个有
-- `INTConstant` —— 31/36 个有
-- `JWStringConcat` —— 29/36 个有
-- `ConditioningZeroOut` —— 10/36 个有
-- `LoraLoaderModelOnly` —— 9/36 个有
-- `PreviewImage` —— 9/36 个有
-- `Int` —— 3/36 个有
-- `ResizeImagesByLongerEdge` —— 3/36 个有
-- `StringConcatenate` —— 3/36 个有
-- `DF_Get_image_size` —— 2/36 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/36 个有
-- `Anything Everywhere3` —— 1/36 个有
-- `CR Latent Input Switch` —— 1/36 个有
-- `HAIGC_SaveImagesToZip` —— 1/36 个有
-- `ImageScaleToTotalPixels` —— 1/36 个有
-- `PrimitiveInt` —— 1/36 个有
-- `easy getNode` —— 1/36 个有
-- `easy imageSize` —— 1/36 个有
-- `easy setNode` —— 1/36 个有
+- `PrimitiveInt` —— 21/31 个有
+- `ImageScaleToTotalPixels` —— 17/31 个有
+- `GetImageSizeAndCount` —— 12/31 个有
+- `ImageScaleDownToSize` —— 12/31 个有
+- `LayerUtility: PurgeVRAM` —— 12/31 个有
+- `Image Stitch` —— 11/31 个有
+- `CR Prompt Text` —— 9/31 个有
+- `Int` —— 3/31 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/31 个有
+- `Image Comparer (rgthree)` —— 2/31 个有
+- `GetImageSize` —— 1/31 个有
+- `INTConstant` —— 1/31 个有
+- `ImageConcanate` —— 1/31 个有
 
 ## 典型参数
 

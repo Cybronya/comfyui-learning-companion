@@ -1,69 +1,79 @@
 ---
 name: unknown_workflow_sampler_unet_vae_24
 type: Unknown Workflow
-frequency: 18
-level: moderate
-coverage: 0.821389
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeAudio, VAELoader]
+frequency: 22
+level: strong
+coverage: 0.792591
+common_nodes: [BasicScheduler, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, PathchSageAttentionKJ, SamplerCustom, UNETLoader, VAEDecode, VAELoaderKJ, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 Text to Video文生视频量化版本_2084179057368981506.json, 视频生成/文生视频/MiniMax H3 文生视频_2085450682408194050.json, 视频生成/文生视频/MiniMax H3 文生视频（SageAttention 加速版）_2085990359359909889.json, 视频生成/文生视频/MiniMax H3 文生视频（SageAttention+LoRA 双重加速）_2086288381553762305.json, 视频生成/文生视频/MiniMax H3 文生视频（SageAttention+LoRA 双重加速）_2086407187261378562.json, 视频生成/文生视频/MiniMax H3 文生视频（SageAttention+LoRA 双重加速）_2086413769206489090.json, 视频生成/文生视频/MiniMax H3 文生视频（开源版）_2084993426063450113.json, 视频生成/文生视频/MiniMax H3图生视频（支持文生视频，首_尾帧生成）_2084161667742654466.json, 视频生成/文生视频/MiniMax H3文生视频KJ加速版_2085281989065793537.json, 视频生成/文生视频/MiniMax H3文生视频Org开源版_2084176715890380801.json, 视频生成/文生视频/MiniMax H3文生视频_2087738976793882626.json, 视频生成/文生视频/MiniMax H3文生视频_2089703538363555842.json, 视频生成/文生视频/MiniMax H3稳定4步lora加速版_2085635166550188033.json, 视频生成/文生视频/MiniMax H3｜5图多参考快速出片｜5-15秒｜稳定版_2091107780571783170.json, 视频生成/文生视频/Minimax H3 图生视频 最新8步增速工作流+全节点注释_2088628478857015297.json, 视频生成/文生视频/Minimax H3 文生视频 最新8步增速工作流_2087823188460920833.json, 视频生成/文生视频/【遇见AI】minimax H3 高动态打斗场景武术动作二采修复+提示词skill工作流_2095684866888257537.json, 视频生成/文生视频/战斗双采首尾帧模式_2094373774731862018.json]
+members: [视频生成/图生视频/ltx2.3 中继节点_2051154231129853954.json, 视频生成/图生视频/ltx2.3_prompt_relay_kj版_2059461166333775873.json, 视频生成/图生视频/ltx视频生成极速工作流_2052193823329144834.json, 视频生成/图生视频/prompt_relay_ltx23_2067967750336761858.json, 视频生成/图生视频/prompt_relay_ltx23_timeline_2055229065958830081.json, 视频生成/图生视频/【Supermate】LTX2.3精控提示词时间线prompt_relay_timeline_2049641151925370882.json, 视频生成/图生视频/图生视频 多镜头分镜时间控制 Ltx2.3  PromptRelay_2046944174850711553.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2056555868510056450.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2056616678716436482.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2081629704880222209.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2082003174491250690.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2084109762710560769.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2088511791516184578.json, 视频生成/图生视频/图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2094974574181048322.json, 视频生成/图生视频/多镜头长时间+KJ版+时间分段剪辑+逻辑控制-图生视频_2056612468230807553.json, 视频生成/图生视频/本地开源免费，漫剧运镜长镜头1_2060459576042020865.json, 视频生成/图生视频/测试图生视频_2059113705333415938.json, 视频生成/图生视频/空白工作流_2059459156813377538.json, 视频生成/图生视频/视频生成-音画同步_2059406752063512578.json, 视频生成/图生视频/超强的LTX2.3——图生视频_2057108864734154754.json, 视频生成/图生视频/超强的LTX2.3——图生视频_2057108922590388226.json, 视频生成/图生视频/超强的LTX2.3——图生视频_2057109059437948929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_24
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 Text to Video文生视频量化版本_2084179057368981506.json、视频生成/文生视频/MiniMax H3 文生视频_2085450682408194050.json、视频生成/文生视频/MiniMax H3 文生视频（SageAttention 加速版）_2085990359359909889.json、视频生成/文生视频/MiniMax H3 文生视频（SageAttention+LoRA 双重加速）_2086288381553762305.json、视频生成/文生视频/MiniMax H3 文生视频（SageAttention+LoRA 双重加速）_2086407187261378562.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/ltx2.3 中继节点_2051154231129853954.json、视频生成/图生视频/ltx2.3_prompt_relay_kj版_2059461166333775873.json、视频生成/图生视频/ltx视频生成极速工作流_2052193823329144834.json、视频生成/图生视频/prompt_relay_ltx23_2067967750336761858.json、视频生成/图生视频/prompt_relay_ltx23_timeline_2055229065958830081.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：22
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+全部 22 个 workflow 都包含：
+- `BasicScheduler`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
 - `UNETLoader`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `VAEDecode`
+- `VAELoaderKJ`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 17/18 个有
-- `ResolutionSelector` —— 17/18 个有
-- `VAEDecode` —— 17/18 个有
-- `BasicScheduler` —— 16/18 个有
-- `CreateVideo` —— 16/18 个有
-- `KSamplerSelect` —— 16/18 个有
-- `SaveVideo` —— 16/18 个有
-- `MiniMaxH3ImageToVideo` —— 15/18 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 12/18 个有
-- `LoadImage` —— 6/18 个有
-- `LoraLoaderBypassModelOnly` —— 6/18 个有
-- `PrimitiveStringMultiline` —— 5/18 个有
-- `CR Text` —— 4/18 个有
-- `VHS_VideoCombine` —— 4/18 个有
-- `Label (rgthree)` —— 3/18 个有
-- `LoraLoaderModelOnly` —— 3/18 个有
-- `MiniMaxH3DualClockSamplerT8` —— 3/18 个有
-- `DisableNoise` —— 2/18 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/18 个有
-- `PrimitiveInt` —— 2/18 个有
-- `easy cleanGpuUsed` —— 2/18 个有
-- `ExtendIntermediateSigmas` —— 1/18 个有
-- `LayerUtility: TextBox` —— 1/18 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/18 个有
-- `SplitSigmas` —— 1/18 个有
-- `SplitSigmasDenoise` —— 1/18 个有
-- `VAEDecodeTiled` —— 1/18 个有
+- `ConditioningZeroOut` —— 21/22 个有
+- `GetNode` —— 21/22 个有
+- `LTX2SamplingPreviewOverride` —— 21/22 个有
+- `LoraLoaderModelOnly` —— 21/22 个有
+- `PreviewImage` —— 21/22 个有
+- `SetNode` —— 21/22 个有
+- `VHS_VideoCombine` —— 21/22 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 17/22 个有
+- `PromptRelayEncode` —— 17/22 个有
+- `CR Prompt Text` —— 16/22 个有
+- `JWInteger` —— 16/22 个有
+- `PromptRelayEncodeTimeline` —— 5/22 个有
+- `CLIPTextEncode` —— 1/22 个有
+- `CM_IntToFloat` —— 1/22 个有
+- `ComfyNumberConvert` —— 1/22 个有
+- `CreateVideo` —— 1/22 个有
+- `LTX2_NAG` —— 1/22 个有
+- `Label (rgthree)` —— 1/22 个有
+- `LoadAudio` —— 1/22 个有
+- `PrimitiveFloat` —— 1/22 个有
+- `SaveVideo` —— 1/22 个有
+- `SimpleMath+` —— 1/22 个有
+- `Text` —— 1/22 个有
+- `easy mathInt` —— 1/22 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 489 | 241 - 489 | 22 | 87% |
+| 高度 | 25 | 24 - 30 | 22 | 96% |
 
 ## 常见问题
 
@@ -71,4 +81,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 489，观测区间 241 - 489，22 个样本，取值集中（一致性 87%）
+- 高度 中位数 25，观测区间 24 - 30，22 个样本，取值集中（一致性 96%）

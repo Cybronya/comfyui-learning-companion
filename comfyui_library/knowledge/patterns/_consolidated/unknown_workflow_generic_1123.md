@@ -3,33 +3,36 @@ name: unknown_workflow_generic_1123
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.748667
+common_nodes: [CR Simple Image Compare, LoadImage, PrimitiveStringMultiline, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance v1 Lite Reference｜图生视频｜多图参考_2097593690041700353.json, 视频生成/图生视频/Seedance2.0 视频5图模式_api_2060358825198309377.json, 视频生成/图生视频/SeedanceV1LiteReferenceToVideo_2038487647500378114.json]
+members: [图片生成/图生图/FLUX KONTEXT 全能图像组合编辑_1930156170432954370.json, 图片生成/图生图/FLUX-KONTEXT  上下文完美一致性感知工作流_1970688994885464065.json, 图片生成/图生图/Flux kontext 输入文字修改图片_1930422545864933377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1123
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance v1 Lite Reference｜图生视频｜多图参考_2097593690041700353.json、视频生成/图生视频/Seedance2.0 视频5图模式_api_2060358825198309377.json、视频生成/图生视频/SeedanceV1LiteReferenceToVideo_2038487647500378114.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX KONTEXT 全能图像组合编辑_1930156170432954370.json、图片生成/图生图/FLUX-KONTEXT  上下文完美一致性感知工作流_1970688994885464065.json、图片生成/图生图/Flux kontext 输入文字修改图片_1930422545864933377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CR Simple Image Compare`
 - `LoadImage`
-- `SaveVideo`
+- `PrimitiveStringMultiline`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 2/3 个有
-- `RH_SeedanceV1LiteReferenceToVideo` —— 2/3 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/3 个有
+- `Image Stitch` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `easy imageRemBg` —— 1/3 个有
 
 ## 典型参数
 

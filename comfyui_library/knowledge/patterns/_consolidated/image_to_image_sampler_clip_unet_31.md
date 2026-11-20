@@ -1,34 +1,36 @@
 ---
 name: image_to_image_sampler_clip_unet_31
 type: Image To Image
-frequency: 10
-level: strong
-coverage: 0.8281
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 12
+level: moderate
+coverage: 0.92025
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetImageSize, KSampler, LatentCutToBatch, LoadImage, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/003.FLUX.2智能综合014.人像去瑕美白精修_2035268281833099265.json, 图片生成/图生图/14.tonnie-kontext多图融合_1993643721023569921.json, 图片生成/图生图/260110009.人像去瑕美白精修_2011257114731225089.json, 图片生成/图生图/3D人物写实背景工作流_1941850807816110082.json, 图片生成/图生图/FLUX.kontext 产品精修官方工作流_1938785654178566146.json, 图片生成/图生图/Flux Kontext Dev图像编辑_1938636499573526530.json, 图片生成/图生图/Kontext-优化光影_1970693596301193217.json, 图片生成/图生图/Kontext_人像修图调色-清新色调_2099054597053706241.json, 图片生成/图生图/Kontext_人像修图调色-清新色调_2099659729835479041.json, 图片生成/图生图/kontext万物产品精修放大  保留细节_1948710764765949953.json]
+members: [图片生成/图生图/Layered千问分层模型图生图｜可保存psd格式_2009193920273584130.json, 图片生成/图生图/Layered图像分层保存PSD_2003684455141261314.json, 图片生成/图生图/Layered图像分层保存PSD_2003695445341839362.json, 图片生成/图生图/Qwen Image Layered 千问分层图_2003086755085582337.json, 图片生成/图生图/Qwen Image Layered千问分层模型-八步_2003987627701379074.json, 图片生成/图生图/Qwen Image Layered千问分层模型_2002955308945293313.json, 图片生成/图生图/Qwen Image Layered千问分层模型_2028670546195521538.json, 图片生成/图生图/Qwen Image Layered千问分层模型_2049685445046444033.json, 图片生成/图生图/Qwen图像分层_2003684024012947457.json, 图片生成/图生图/Qwen图像自动分层(带alpha通道）ImageLayered千问分层模型_2002183316642119681.json, 图片生成/图生图/千问图层分解（Qwen Layered）_2004093169174257665.json, 平台全量/Qwen Layered：千问拆解图像、png图层_2003022952759193602.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_31
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合014.人像去瑕美白精修_2035268281833099265.json、图片生成/图生图/14.tonnie-kontext多图融合_1993643721023569921.json、图片生成/图生图/260110009.人像去瑕美白精修_2011257114731225089.json、图片生成/图生图/3D人物写实背景工作流_1941850807816110082.json、图片生成/图生图/FLUX.kontext 产品精修官方工作流_1938785654178566146.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Layered千问分层模型图生图｜可保存psd格式_2009193920273584130.json、图片生成/图生图/Layered图像分层保存PSD_2003684455141261314.json、图片生成/图生图/Layered图像分层保存PSD_2003695445341839362.json、图片生成/图生图/Qwen Image Layered 千问分层图_2003086755085582337.json、图片生成/图生图/Qwen Image Layered千问分层模型-八步_2003987627701379074.json…）
 
 - **类型**：Image To Image
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `EmptyHunyuanLatentVideo`
+- `GetImageSize`
 - `KSampler`
+- `LatentCutToBatch`
 - `LoadImage`
+- `ModelSamplingAuraFlow`
 - `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
@@ -37,42 +39,43 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 8/10 个有
-- `ConstrainImage|pysssss` —— 7/10 个有
-- `Image Comparer (rgthree)` —— 6/10 个有
-- `JjkText` —— 6/10 个有
-- `Anything Everywhere3` —— 5/10 个有
-- `FluxKontextImageScale` —— 4/10 个有
-- `PreviewImage` —— 3/10 个有
-- `Image Levels Adjustment` —— 2/10 个有
-- `RH_Translator` —— 2/10 个有
-- `easy imageConcat` —— 2/10 个有
-- `Anything Everywhere` —— 1/10 个有
-- `CR Text` —— 1/10 个有
-- `EmptySD3LatentImage` —— 1/10 个有
-- `ImageResize+` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
+- `LatentFromBatch` —— 8/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/12 个有
+- `ImageScaleToTotalPixels` —— 7/12 个有
+- `Int` —— 7/12 个有
+- `LoraLoaderModelOnly` —— 5/12 个有
+- `MathExpression|pysssss` —— 4/12 个有
+- `HAIGC_SavePSD` —— 3/12 个有
+- `ImageScaleBy` —— 3/12 个有
+- `Text Multiline` —— 3/12 个有
+- `CR Text` —— 2/12 个有
+- `ConstrainImage|pysssss` —— 2/12 个有
+- `LayerUtility: PurgeVRAM` —— 2/12 个有
+- `SimpleMath+` —— 2/12 个有
+- `easy showAnything` —— 2/12 个有
+- `Float` —— 1/12 个有
+- `RHHiddenNodes` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 30 | 10 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 90% |
-| 调度器 | simple | - | 10 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 40 | 8 - 40 | 12 | 49% |
+| Prompt 约束强度(CFG) | 4 | 1 - 4 | 12 | 57% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 30，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 90%
-- 调度器 最常用 simple，10 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 40，观测区间 8 - 40，12 个样本，取值分散，一致性仅 49%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，12 个样本
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）

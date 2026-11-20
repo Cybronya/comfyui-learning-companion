@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_upscale_38
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [KEEP_FaceUpscaleImage, KEEP_ModelLoader, LoadImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.82475
+common_nodes: [Image Comparer (rgthree), ImageUpscaleWithModel, LoadImage, SaveImage, UpscaleModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/KEEP图像脸部高清修复_1938046732251107330.json, 图片生成/图生图/Keep最强人脸模糊变高清工作流V1_1937672704373735425.json]
+members: [平台全量/图片4倍放大高清无损_2068841438854598658.json, 平台全量/图片放大VS AuraSR_1942396580274311169.json, 平台全量/图片放大VS AuraSR_1971036437309231105.json, 平台全量/图片简单放大_2025855289089597442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_38
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/KEEP图像脸部高清修复_1938046732251107330.json、图片生成/图生图/Keep最强人脸模糊变高清工作流V1_1937672704373735425.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/图片4倍放大高清无损_2068841438854598658.json、平台全量/图片放大VS AuraSR_1942396580274311169.json、平台全量/图片放大VS AuraSR_1971036437309231105.json、平台全量/图片简单放大_2025855289089597442.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `KEEP_FaceUpscaleImage`
-- `KEEP_ModelLoader`
+全部 4 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `ImageUpscaleWithModel`
 - `LoadImage`
 - `SaveImage`
+- `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
+- `AuraSR.AuraSRUpscaler` —— 2/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

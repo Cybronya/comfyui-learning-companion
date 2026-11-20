@@ -3,51 +3,62 @@ name: unknown_workflow_sampler_clip_unet_490
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.93
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.816
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text Concatenate, ConditioningZeroOut, JjkText, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Captioner_Pro, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2ImageToImage, RH_Translator, RandomNoise, ReferenceLatent, Repeater|pysssss, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/电商产品场景图生成_2065142735723646978.json, 图片生成/文生图/节点系列05-Seed (rgthree)_2034898646168248322.json]
+members: [图片生成/图生图/⭐️ 线稿转绘 _ 全能图片G2 丨Kelin丨2_2082268482082787329.json, 图片生成/图生图/线稿转绘 _ 2 全能图片G2 kelin_2082032894230491138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_490
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/电商产品场景图生成_2065142735723646978.json、图片生成/文生图/节点系列05-Seed (rgthree)_2034898646168248322.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/⭐️ 线稿转绘 _ 全能图片G2 丨Kelin丨2_2082268482082787329.json、图片生成/图生图/线稿转绘 _ 2 全能图片G2 kelin_2082032894230491138.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Text Concatenate`
 - `ConditioningZeroOut`
-- `Flux2Scheduler`
+- `JjkText`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `RH_Captioner_Pro`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageG2ImageToImage`
+- `RH_Translator`
 - `RandomNoise`
 - `ReferenceLatent`
+- `Repeater|pysssss`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `Qwen2.5` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `easy convertAnything` —— 1/2 个有
+- `CR Image Input Switch` —— 1/2 个有
+- `Fast Bypasser (rgthree)` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `easy imageSwitch` —— 1/2 个有
+- `easy textSwitch` —— 1/2 个有
+- `忽略多组孤海` —— 1/2 个有
 
 ## 典型参数
 

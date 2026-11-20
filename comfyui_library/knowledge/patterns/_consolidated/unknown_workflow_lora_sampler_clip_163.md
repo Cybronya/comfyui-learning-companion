@@ -1,62 +1,81 @@
 ---
 name: unknown_workflow_lora_sampler_clip_163
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.96
-common_nodes: [AdvancedLyingSigmaSampler, BasicScheduler, CFGZeroStar, CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, JoinStringMulti, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingAuraFlow, SamplerCustom, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.7454
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, ImagePadForOutpaint, ImageResize+, ImageToMask, KSampler, LoraLoader, MaskToImage, ModelSamplingSD3, PrimitiveInt, RepeatImageBatch, SaveVideo, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideoFFmpeg, VHS_VideoInfoSource, WanVaceToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Z-image-邵氏武侠风格工作流_2029716281011736578.json, 图片生成/文生图/Z-image-邵氏武侠风格工作流_2082008160352690178.json, 图片生成/文生图/Z-image邵氏风格工作流_2023426462694510593.json, 图片生成/文生图/邵氏电影Z-image文生图工作流_2054391134608207873.json]
+members: [平台全量/手动扩展视频_1992876192525250562.json, 平台全量/横屏转竖屏_1992866249956978689.json, 平台全量/横屏转竖屏_2005640430085697537.json, 平台全量/竖屏转横屏_1992866985059086338.json, 平台全量/竖屏转横屏_2008191607199240193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_163
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Z-image-邵氏武侠风格工作流_2029716281011736578.json、图片生成/文生图/Z-image-邵氏武侠风格工作流_2082008160352690178.json、图片生成/文生图/Z-image邵氏风格工作流_2023426462694510593.json、图片生成/文生图/邵氏电影Z-image文生图工作流_2054391134608207873.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/手动扩展视频_1992876192525250562.json、平台全量/横屏转竖屏_1992866249956978689.json、平台全量/横屏转竖屏_2005640430085697537.json、平台全量/竖屏转横屏_1992866985059086338.json、平台全量/竖屏转横屏_2008191607199240193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AdvancedLyingSigmaSampler`
-- `BasicScheduler`
-- `CFGZeroStar`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `EmptyLatentImage`
-- `JoinStringMulti`
-- `KSamplerSelect`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SamplerCustom`
-- `SaveImage`
+- `CreateVideo`
+- `ImagePadForOutpaint`
+- `ImageResize+`
+- `ImageToMask`
+- `KSampler`
+- `LoraLoader`
+- `MaskToImage`
+- `ModelSamplingSD3`
+- `PrimitiveInt`
+- `RepeatImageBatch`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideoFFmpeg`
+- `VHS_VideoInfoSource`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `Switch any [Crystools]` —— 2/4 个有
+- `DisplayAny` —— 4/5 个有
+- `SimpleMath+` —— 4/5 个有
+- `TrimVideoLatent` —— 3/5 个有
+- `Display Any (rgthree)` —— 2/5 个有
+- `Display Int (rgthree)` —— 2/5 个有
+- `easy compare` —— 2/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1004 | 928 - 1704 | 4 | 72% |
-| 高度 | 1664 | 1280 - 1920 | 4 | 86% |
+| LoRA 模型强度 | 1 | 0.2 - 1 | 5 | 62% |
+| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 8 | 4 - 8 | 5 | 78% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | uni_pc | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1004，观测区间 928 - 1704，4 个样本
-- 高度 中位数 1664，观测区间 1280 - 1920，4 个样本，取值集中（一致性 86%）
+- LoRA 模型强度 中位数 1，观测区间 0.2 - 1，5 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 8，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

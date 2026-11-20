@@ -1,80 +1,83 @@
 ---
 name: unknown_workflow_lora_sampler_unet_68
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.810667
-common_nodes: [ConditioningZeroOut, DiptychCreate, DualCLIPLoader, FluxGuidance, ICEFConditioning, InContextEditInstruction, KSamplerAdvanced, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.8457
+common_nodes: [AILab_QwenVL, CLIPLoader, JDCN_StringToList, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, ShowText|pysssss, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/ICEdit-MoE 图像编辑 超强图像编辑处理_1921801961237315586.json, 图片生成/图生图/IcEdit多条件图像编辑工作流（支持蒙版）基础V1_1920532699742666753.json, 图片生成/图生图/flux-ICEdit-超强一致性_1922121608931000322.json, 图片生成/图生图/flux-ICEdit-超强一致性_2114323530736300033.json, 图片生成/图生图/【💫书墨】ICEdit-normal-lora官方实现_1920767853685833729.json, 图片生成/图生图/图像编辑(图加提示词即可实现图像编辑，无需mask)_1930500823778803713.json, 图片生成/图生图/木乙创设—IcEdit加速优化官方工作流_1921407429425184769.json, 图片生成/文生图/图像编辑无需重复抽卡_1932629301877424130.json, 图片生成/文生图/真ICEdit官方版一致性图像编辑无需重复抽卡_1920517668280143874.json]
+members: [图片生成/图生图/人物一键九视图[同人同景同服装]超强有一致性模特套图加强版_2003309725775167489.json, 图片生成/图生图/固定人物IP多场景生成V1.0（IP）_1986353934086373377.json, 图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_1986607902217695234.json, 图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_1997265879790456833.json, 图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_2018861403326648321.json, 图片生成/图生图/固定人物Ip多场景生成V2_2004543457458880513.json, 图片生成/图生图/图生图一键九视图[同人同景同服装]超强有一致性模特套图加强版（无水印版）_1985276910106198017.json, 图片生成/图生图/图生图一键九视图[同人同景同服装]超强有一致性模特套图加强版（无水印版）_2066345362234892290.json, 图片生成/图生图/图生图杀马特一键九视图[同人同景同服装]超强有一致性模特套图加强版_1986321370713903106.json, 平台全量/文生IP人物固定场景写真V1.0_1998319708766134274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_68
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/ICEdit-MoE 图像编辑 超强图像编辑处理_1921801961237315586.json、图片生成/图生图/IcEdit多条件图像编辑工作流（支持蒙版）基础V1_1920532699742666753.json、图片生成/图生图/flux-ICEdit-超强一致性_1922121608931000322.json、图片生成/图生图/flux-ICEdit-超强一致性_2114323530736300033.json、图片生成/图生图/【💫书墨】ICEdit-normal-lora官方实现_1920767853685833729.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/人物一键九视图[同人同景同服装]超强有一致性模特套图加强版_2003309725775167489.json、图片生成/图生图/固定人物IP多场景生成V1.0（IP）_1986353934086373377.json、图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_1986607902217695234.json、图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_1997265879790456833.json、图片生成/图生图/固定人物IP多场景生成V2.0（IP打造）人物一致性多图编辑_2018861403326648321.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `ConditioningZeroOut`
-- `DiptychCreate`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `ICEFConditioning`
-- `InContextEditInstruction`
-- `KSamplerAdvanced`
+全部 10 个 workflow 都包含：
+- `AILab_QwenVL`
+- `CLIPLoader`
+- `JDCN_StringToList`
+- `KSampler`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `ShowText|pysssss`
+- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCrop` —— 8/9 个有
-- `MaskPreview` —— 8/9 个有
-- `easy cleanGpuUsed` —— 7/9 个有
-- `ImageUpscaleWithModel` —— 5/9 个有
-- `UpscaleModelLoader` —— 5/9 个有
-- `ImageConcanate` —— 2/9 个有
-- `ImageScaleDownToSize` —— 2/9 个有
-- `Text Multiline` —— 2/9 个有
-- `Anything Everywhere` —— 1/9 个有
-- `EmptyImage` —— 1/9 个有
-- `GetNode` —— 1/9 个有
-- `Note Plus (mtb)` —— 1/9 个有
-- `PMRF` —— 1/9 个有
-- `RH_Translator` —— 1/9 个有
-- `SetNode` —— 1/9 个有
-- `TeaCache` —— 1/9 个有
-- `easy imageInsetCrop` —— 1/9 个有
+- `LoadImage` —— 9/10 个有
+- `CR Text` —— 6/10 个有
+- `CR Text Replace` —— 6/10 个有
+- `ProcessString` —— 6/10 个有
+- `EmptySD3LatentImage` —— 5/10 个有
+- `SetNode` —— 5/10 个有
+- `CR Prompt Text` —— 4/10 个有
+- `GetNode` —— 4/10 个有
+- `RH_LLMAPI_NODE` —— 4/10 个有
+- `CompressImages` —— 3/10 个有
+- `ImageConcanate` —— 3/10 个有
+- `ImageFromBatch` —— 3/10 个有
+- `LayerUtility: ImageReel` —— 3/10 个有
+- `LayerUtility: ImageReelComposit` —— 3/10 个有
+- `CLIPTextEncode` —— 1/10 个有
+- `ConditioningZeroOut` —— 1/10 个有
+- `KSamplerAdvanced` —— 1/10 个有
+- `PathchSageAttentionKJ` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 9 | 100% |
-| Prompt 约束强度(CFG) | 28 | 28 - 28 | 9 | 100% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | euler | - | 9 | 100% |
-| 重绘幅度 | simple | - | 9 | 100% |
+| 采样步数 | 4 | 4 - 8 | 10 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | er_sde | - | 10 | 100% |
+| 调度器 | beta57 | - | 10 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，9 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 28，观测区间 28 - 28，9 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，9 个样本，一致性 100%
-- 重绘幅度 最常用 simple，9 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 28，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 4，观测区间 4 - 8，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，10 个样本，一致性 100%
+- 调度器 最常用 beta57，10 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

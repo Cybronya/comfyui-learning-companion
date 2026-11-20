@@ -3,31 +3,28 @@ name: unknown_workflow_generic_637
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6478
-common_nodes: [JjkText, LoadImage, PreviewAny, RHHiddenNodes, RH_Wan26_I2V, SaveVideo]
+coverage: 0.86
+common_nodes: [ByteDance2ReferenceNodeV2, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2000772205925498882.json, 视频生成/图生视频/Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554.json, 视频生成/图生视频/Wan2.6图生视频通义最新视频模型_2020021077941952513.json, 视频生成/图生视频/Wan2.6：参考生视频_2000889067585892353.json, 视频生成/图生视频/Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步！_2000500127985004545.json]
+members: [comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v.json, comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json, comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json, comfyui-workflow-templates-json/api_seedance2_5_r2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_637
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2000772205925498882.json、视频生成/图生视频/Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554.json、视频生成/图生视频/Wan2.6图生视频通义最新视频模型_2020021077941952513.json、视频生成/图生视频/Wan2.6：参考生视频_2000889067585892353.json、视频生成/图生视频/Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步！_2000500127985004545.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_0_mini_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v.json、comfyui-workflow-templates-json/api_seedance2_0_r2v_4k.json、comfyui-workflow-templates-json/api_seedance2_5_i2v_1080p.json、comfyui-workflow-templates-json/api_seedance2_5_r2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `JjkText`
+- `ByteDance2ReferenceNodeV2`
 - `LoadImage`
-- `PreviewAny`
-- `RHHiddenNodes`
-- `RH_Wan26_I2V`
 - `SaveVideo`
 
 ## 典型参数

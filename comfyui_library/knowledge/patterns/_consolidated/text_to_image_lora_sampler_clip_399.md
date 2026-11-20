@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_399
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8884
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PIP_StringConcatenation, RH_RhartImageG2TextToImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy positive, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8718
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/4K写实人像一键直出｜G-image2文生图人像写真全能输出_2089015295485767681.json, 图片生成/文生图/G-Image2真实人像2K输出全能图片文生图处理工具_2101365555285544962.json, 图片生成/文生图/G-Image2真实人像2K输出全能图片文生图处理工具_2101755378726948865.json, 图片生成/文生图/G-image2全能文生图4K输出｜真实人像写真高清摄影级生成_2088694613237395458.json, 图片生成/文生图/真实人像4K输出｜全能图片G-image2文生图人像写真_2093780250059689985.json]
+members: [图片生成/图生图/人物资产4视图生成｜角色一致性图生图工作流_2095605618898989058.json, 图片生成/图生图/全能图片 Pro标准模型渲染 人物动态模糊风格化图像生成_2098642672541069314.json, 图片生成/图生图/全能图片Pro图像编辑 单张低至两毛经济实惠_2098279022848466946.json, 图片生成/图生图/全能图片Pro版图生图处理生成工作流工具包_2101045975958777857.json, 图片生成/图生图/全能图片V12最强融图模型｜文生图多图生图_2095572626197540865.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_399
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/4K写实人像一键直出｜G-image2文生图人像写真全能输出_2089015295485767681.json、图片生成/文生图/G-Image2真实人像2K输出全能图片文生图处理工具_2101365555285544962.json、图片生成/文生图/G-Image2真实人像2K输出全能图片文生图处理工具_2101755378726948865.json、图片生成/文生图/G-image2全能文生图4K输出｜真实人像写真高清摄影级生成_2088694613237395458.json、图片生成/文生图/真实人像4K输出｜全能图片G-image2文生图人像写真_2093780250059689985.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/人物资产4视图生成｜角色一致性图生图工作流_2095605618898989058.json、图片生成/图生图/全能图片 Pro标准模型渲染 人物动态模糊风格化图像生成_2098642672541069314.json、图片生成/图生图/全能图片Pro图像编辑 单张低至两毛经济实惠_2098279022848466946.json、图片生成/图生图/全能图片Pro版图生图处理生成工作流工具包_2101045975958777857.json、图片生成/图生图/全能图片V12最强融图模型｜文生图多图生图_2095572626197540865.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
@@ -28,27 +28,26 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PIP_StringConcatenation`
-- `RH_RhartImageG2TextToImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy positive`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 3/5 个有
-- `DualCLIPLoader` —— 3/5 个有
-- `FluxGuidance` —— 3/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `RH_Captioner` —— 3/5 个有
-- `SeedVR2` —— 3/5 个有
-- `SeedVR2BlockSwap` —— 3/5 个有
-- `SeedVR2ExtraArgs` —— 3/5 个有
-- `VAEEncode` —— 3/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/5 个有
+- `RelayBanana2ImageGenerator` —— 2/5 个有
+- `CR Text` —— 1/5 个有
+- `ConditioningZeroOut` —— 1/5 个有
+- `ImageFromBatch` —— 1/5 个有
+- `ImageStitch` —— 1/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/5 个有
+- `MmuuaiGroupBypass` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
 
 ## 典型参数
 
@@ -66,7 +65,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -77,4 +76,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（8/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

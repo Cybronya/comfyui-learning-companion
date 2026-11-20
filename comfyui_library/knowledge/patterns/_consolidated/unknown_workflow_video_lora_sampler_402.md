@@ -1,96 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_402
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.717333
-common_nodes: [Anything Everywhere, AudioCrop, CLIPVisionLoader, CR Text, CogVideoEnhanceAVideo, GetNode, ImageResize+, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewAudio, RHHiddenNodes, SetNode, ShowText|pysssss, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeSingle, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.896143
+common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/6G玩转MultiTalk数字人_1937067171614740482.json, 视频生成/图生视频/MultiTalk数字人｜FusionX加速｜大师级运镜_1936703364866674689.json, 视频生成/图生视频/【动漫数字人】图生视频Aniwan+Multitalk（多组合运镜）_1947118729710985217.json, 视频生成/图生视频/【曲线运镜FusionX版】Wan2.1图生视频（全自动）_1934553565845200897.json, 视频生成/图生视频/【港式经典对白】顶级MultiTalk数字人（一键成片）_1949215693187817474.json, 视频生成/图生视频/【王炸组合】MultiTalk数字人+FusionX加速+曲线运镜_1936453131641458689.json]
+members: [图片生成/反推提示词/H3单采_2106693127930212353.json, 图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json, 图片生成/图生图/H3官流（单采极速文戏）_2112910766088220674.json, 图片生成/图生图/H3高清快速出视频_2110660601948233729.json, 视频生成/图生视频/H3工作流最优解_2104970789329133569.json, 视频生成/图生视频/Minimax H3视频 完美人物替换！_2109512582699769858.json, 视频生成/文生视频/H3官流（终极版）_2105121771757334530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_402
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/6G玩转MultiTalk数字人_1937067171614740482.json、视频生成/图生视频/MultiTalk数字人｜FusionX加速｜大师级运镜_1936703364866674689.json、视频生成/图生视频/【动漫数字人】图生视频Aniwan+Multitalk（多组合运镜）_1947118729710985217.json、视频生成/图生视频/【曲线运镜FusionX版】Wan2.1图生视频（全自动）_1934553565845200897.json、视频生成/图生视频/【港式经典对白】顶级MultiTalk数字人（一键成片）_1949215693187817474.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/H3单采_2106693127930212353.json、图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json、图片生成/图生图/H3官流（单采极速文戏）_2112910766088220674.json、图片生成/图生图/H3高清快速出视频_2110660601948233729.json、视频生成/图生视频/H3工作流最优解_2104970789329133569.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Anything Everywhere`
-- `AudioCrop`
-- `CLIPVisionLoader`
-- `CR Text`
-- `CogVideoEnhanceAVideo`
-- `GetNode`
-- `ImageResize+`
-- `Int`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PreviewAudio`
-- `RHHiddenNodes`
-- `SetNode`
-- `ShowText|pysssss`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCombine` —— 5/6 个有
-- `AudioSeparation` —— 5/6 个有
-- `CR Text Concatenate` —— 5/6 个有
-- `DownloadAndLoadWav2VecModel` —— 5/6 个有
-- `JWInteger` —— 5/6 个有
-- `MultiTalkModelLoader` —— 5/6 个有
-- `MultiTalkWav2VecEmbeds` —— 5/6 个有
-- `VHS_LoadVideo` —— 5/6 个有
-- `Audio Remixer` —— 4/6 个有
-- `Load Audio Separation Model` —— 4/6 个有
-- `SaveAudio` —— 4/6 个有
-- `easy anythingIndexSwitch` —— 4/6 个有
-- `easy showAnything` —— 3/6 个有
-- `CR String To Number` —— 2/6 个有
-- `ColorCorrectOfUtils` —— 2/6 个有
-- `FluxResolutionNode` —— 2/6 个有
-- `ImageCASharpening+` —— 2/6 个有
-- `ImpactSwitch` —— 2/6 个有
-- `InversionDemoLazyIndexSwitch` —— 2/6 个有
-- `LayerColor: Brightness & Contrast` —— 2/6 个有
-- `WanVideoContextOptions` —— 2/6 个有
-- `easy int` —— 2/6 个有
-- `Audio Cut (mtb)` —— 1/6 个有
-- `Audio Duration (mtb)` —— 1/6 个有
-- `AudioConcatenate` —— 1/6 个有
-- `AudioSegmentSelector` —— 1/6 个有
-- `CM_FloatToInt` —— 1/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `Float` —— 1/6 个有
-- `ImageBatchMultiple+` —— 1/6 个有
-- `IndexTTSRun` —— 1/6 个有
-- `PreviewBridge` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `VADSplitter` —— 1/6 个有
+- `ManualSigmas` —— 6/7 个有
+- `PreviewAny` —— 5/7 个有
+- `PrimitiveStringMultiline` —— 5/7 个有
+- `CR Prompt Text` —— 4/7 个有
+- `BatchImagesNode` —— 2/7 个有
+- `CreateVideo` —— 2/7 个有
+- `LTXVConcatAVLatent` —— 2/7 个有
+- `LTXVSeparateAVLatent` —— 2/7 个有
+- `MiniMaxH3LatentUpscaleBy32T8` —— 2/7 个有
+- `RH_LLMAPI_Pro_Node` —— 2/7 个有
+- `SaveVideo` —— 2/7 个有
+- `llama_cpp_instruct_adv` —— 2/7 个有
+- `llama_cpp_model_loader` —— 2/7 个有
+- `llama_cpp_parameters` —— 2/7 个有
+- `ExtendIntermediateSigmas` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `LayerUtility: TextJoin` —— 1/7 个有
+- `MiniMaxH3SigmaShift` —— 1/7 个有
 
 ## 典型参数
 

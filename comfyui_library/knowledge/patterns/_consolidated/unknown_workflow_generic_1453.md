@@ -3,35 +3,28 @@ name: unknown_workflow_generic_1453
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [AddBackgroundNode, CR Image Border, ConstrainImage|pysssss, HivisionNode, ImageConcatMulti, LoadImage, RH_Jimeng4_Image2Image, SaveImage, ZHHivisionParamsNode]
+coverage: 0.8335
+common_nodes: [ByteDanceTextToVideoNode, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能image2证件照一键定制（尺寸-颜色-可选）_2049779561692405762.json, 图片生成/图生图/证件照一键定制（尺寸-颜色-可选）_2040779713601343490.json]
+members: [comfyui-workflow-templates-json/api_bytedance_seedance1_5_text_to_video.json, comfyui-workflow-templates-json/api_bytedance_text_to_video.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1453
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能image2证件照一键定制（尺寸-颜色-可选）_2049779561692405762.json、图片生成/图生图/证件照一键定制（尺寸-颜色-可选）_2040779713601343490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bytedance_seedance1_5_text_to_video.json、comfyui-workflow-templates-json/api_bytedance_text_to_video.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AddBackgroundNode`
-- `CR Image Border`
-- `ConstrainImage|pysssss`
-- `HivisionNode`
-- `ImageConcatMulti`
-- `LoadImage`
-- `RH_Jimeng4_Image2Image`
-- `SaveImage`
-- `ZHHivisionParamsNode`
+- `ByteDanceTextToVideoNode`
+- `SaveVideo`
 
 ## 典型参数
 

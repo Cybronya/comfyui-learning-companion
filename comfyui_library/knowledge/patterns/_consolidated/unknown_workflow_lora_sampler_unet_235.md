@@ -1,51 +1,66 @@
 ---
 name: unknown_workflow_lora_sampler_unet_235
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.786
-common_nodes: [CLIPLoader, Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, QwenImageIntegratedKSampler, SaveImage, UNETLoader, UnetLoaderGGUF, VAELoader]
+frequency: 4
+level: moderate
+coverage: 0.95175
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PT_H3ConcatAVLatent, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/漫画上色 可批量处理_2070067090685517825.json, 图片生成/图生图/漫画上色 可批量处理_2070071645481558018.json, 图片生成/图生图/漫画上色（本地批量详见视频）_2020397586309451778.json]
+members: [视频生成/图生视频/Minimax-H3-二采多图参考（4步加速_官方节点版）_2090604828555825154.json, 视频生成/文生视频/H3 LightX2V 二采高清图_文生视频_2087548123051806721.json, 视频生成/文生视频/Minimax-H3 多图参考_产品介绍视频_2090089362729033729.json, 视频生成/文生视频/Minimax-H3-4步加速-单图参考（二次采样_官方节点版）_2090043814345007105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_235
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/漫画上色 可批量处理_2070067090685517825.json、图片生成/图生图/漫画上色 可批量处理_2070071645481558018.json、图片生成/图生图/漫画上色（本地批量详见视频）_2020397586309451778.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Minimax-H3-二采多图参考（4步加速_官方节点版）_2090604828555825154.json、视频生成/文生视频/H3 LightX2V 二采高清图_文生视频_2087548123051806721.json、视频生成/文生视频/Minimax-H3 多图参考_产品介绍视频_2090089362729033729.json、视频生成/文生视频/Minimax-H3-4步加速-单图参考（二次采样_官方节点版）_2090043814345007105.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `Image Comparer (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `QwenImageIntegratedKSampler`
-- `SaveImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PT_H3ConcatAVLatent`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
-- `UnetLoaderGGUF`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncode`
+- `VAEEncodeAudio`
 - `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `EasyCache` —— 3/4 个有
+- `Float` —— 3/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
+- `ModelAttentionBackend` —— 3/4 个有
+- `RTXVideoSuperResolution` —— 3/4 个有
+- `Text` —— 3/4 个有
+- `VRAMReserver` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `easy clearCacheAll` —— 3/4 个有
+- `MiniMaxH3ImageToVideo` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 图生图 image-to-image | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | 1472 | 1472 - 1472 | 3 | 100% |
-| 调度器 | 1104 | 1104 - 1104 | 3 | 100% |
-| 重绘幅度 | 1.05203e+15 | 9.21455e+14 - 1.06505e+15 | 3 | 94% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -53,9 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 图生图 image-to-image，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1472，观测区间 1472 - 1472，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1104，观测区间 1104 - 1104，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1.05203e+15，观测区间 9.21455e+14 - 1.06505e+15，3 个样本，取值集中（一致性 94%）
-- 风险：重绘幅度 观测到 1.06505e+15，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

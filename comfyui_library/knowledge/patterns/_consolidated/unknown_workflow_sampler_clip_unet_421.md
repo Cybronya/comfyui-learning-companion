@@ -1,63 +1,52 @@
 ---
 name: unknown_workflow_sampler_clip_unet_421
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.845
-common_nodes: [Anything Everywhere3, BasicGuider, CLIPLoader, CLIPTextEncode, CR Latent Input Switch, CR SDXL Aspect Ratio, CR Text, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, FluxGuidance, KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize]
+frequency: 3
+level: moderate
+coverage: 0.909
+common_nodes: [AILab_QwenVL, CFGOverride, CLIPLoader, CLIPTextEncode, ComfyNumberConvert, DualModelGuider, Ideogram4OptimizationsKJ, Ideogram4Scheduler, ImageScaleToTotalPixelsX, JsonExtractString, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SplitSigmas, StringReplace, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.2- klein单图图编辑_2012069959744098306.json, 图片生成/图生图/FLUX.2- klein好多图编辑_2011996211644993537.json]
+members: [图片生成/图生图/商业级美图大片  ideogram4-洗图 高质量 文生图-高清画质-400万像素直出_2069950093293342721.json, 图片生成/文生图/ideogram4-文生图-高清画质-400万像素直出_2064169225039728641.json, 图片生成/文生图/ideogram4-文生图-高清画质-400万像素直出_2074309690607095810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_421
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FLUX.2- klein单图图编辑_2012069959744098306.json、图片生成/图生图/FLUX.2- klein好多图编辑_2011996211644993537.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/商业级美图大片  ideogram4-洗图 高质量 文生图-高清画质-400万像素直出_2069950093293342721.json、图片生成/文生图/ideogram4-文生图-高清画质-400万像素直出_2064169225039728641.json、图片生成/文生图/ideogram4-文生图-高清画质-400万像素直出_2074309690607095810.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere3`
-- `BasicGuider`
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
+- `CFGOverride`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Latent Input Switch`
-- `CR SDXL Aspect Ratio`
-- `CR Text`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `FluxGuidance`
+- `ComfyNumberConvert`
+- `DualModelGuider`
+- `Ideogram4OptimizationsKJ`
+- `Ideogram4Scheduler`
+- `ImageScaleToTotalPixelsX`
+- `JsonExtractString`
 - `KSamplerSelect`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `PreviewAny`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SplitSigmas`
+- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageSize`
-
-**可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `FluxKontextImageScale` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
-- `SDPoseOODLoader` —— 1/2 个有
-- `SDPoseOODProcessor` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 
@@ -69,4 +58,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

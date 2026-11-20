@@ -1,34 +1,34 @@
 ---
 name: image_to_image_lora_sampler_unet_14
 type: Image To Image
-frequency: 22
-level: strong
-coverage: 0.972455
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 24
+level: moderate
+coverage: 0.995708
+common_nodes: [CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/F.2Klein提取3d立体服装_2053799596253556738.json, 图片生成/图生图/F.2Klein提取3d立体服装_2056216125565874178.json, 图片生成/图生图/F.2Klein提取3d立体服装_2057635695820369921.json, 图片生成/图生图/F.2Klein提取3d立体服装_2058364672834891778.json, 图片生成/图生图/F.2Klein提取3d立体服装_2058380006920904706.json, 图片生成/图生图/FireRed Edit艺术字风格迁移设计_2052228410910486530.json, 图片生成/图生图/FireRed Edit艺术字风格迁移设计_2059096605923565569.json, 图片生成/图生图/FireRed Edit艺术字风格迁移设计_2059435718690304002.json, 图片生成/图生图/FireRed Edit艺术字风格迁移设计_2061660098623262721.json, 图片生成/图生图/FireRed-Image-Edit1.1单图编辑换装_2031741074665902081.json, 图片生成/图生图/FireRed-Image-edit1.1单图_双图_三图编辑_2029806395092115457.json, 图片生成/图生图/FireRed-Image-edit1.1单图_双图_三图编辑_2030064414078017537.json, 图片生成/图生图/FireRed_Edit艺术字风格迁移设计_2069077798647586817.json, 图片生成/图生图/Flux2-Klein9b一键提取3d立体服装_2038251793729200129.json, 图片生成/图生图/Flux2-Klein一键提取3d立体服装_2038862090676473857.json, 图片生成/图生图/KINWING_白底图背景替换_Qwen edit_2046550050255413249.json, 图片生成/图生图/Qwenedit 2511 一键换衣_2004388430463332354.json, 图片生成/图生图/qwen 2511重新照明重打光_2059634574510092289.json, 图片生成/图生图/qwen edit2511模糊秒变高清+真实皮肤质感_2055844453260242946.json, 图片生成/图生图/qwen edit2511模糊秒变高清+真实皮肤质感_2056203314009780225.json, 图片生成/图生图/qwen2511去除光斑 移除光影_2043657856179769346.json, 视频生成/图生视频/YZ金鱼-单人InfiniteTalk官方版工作流_2113526159744004098.json]
+members: [图片生成/图生图/qwen2511图转手绘线条水彩风格图片风格化_2078074989806444546.json, 图片生成/图生图/qwen2511图转手绘线条水彩风格图片风格化_2078077711209291777.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2026148427746254850.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2067415744551411714.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2067446975695511554.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2072947797464276994.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2075144823752978433.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2077588149060067330.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2077666313538990082.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2079102882938445826.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2095794944433811458.json, 图片生成/图生图/qwen2511图转速手绘线条水彩风格_2096151173555380225.json, 图片生成/图生图/qwen2511真人转手绘线条画风_2089264984500035585.json, 图片生成/图生图/qwen万能lora控图_1960703410297344001.json, 图片生成/图生图/【阡陌】Qwen-Image六合一In Context Controlnet lora精准控制工作流_1960248554344361985.json, 图片生成/图生图/图生图—一键转手绘线条水彩风_2093239766459437058.json, 图片生成/图生图/图生图—一键转手绘线条水彩风_2096233939248701441.json, 图片生成/图生图/图生图—一键转手绘线条水彩风_2096414871079444482.json, 图片生成/图生图/图生图—一键转手绘线条水彩风_2109487018899234818.json, 图片生成/图生图/图生图—一键转手绘线条水彩风_2109491082986868738.json, 图片生成/图生图/图生图—转手绘线条水彩风格_2086717758758281217.json, 图片生成/图生图/图转粗线条水彩_2027575355669745666.json, 图片生成/图生图/图转速写线稿_2019680136496418817.json, 图片生成/文生图/Qwen-Image的union cn_1958888407248351234.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_14
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/F.2Klein提取3d立体服装_2053799596253556738.json、图片生成/图生图/F.2Klein提取3d立体服装_2056216125565874178.json、图片生成/图生图/F.2Klein提取3d立体服装_2057635695820369921.json、图片生成/图生图/F.2Klein提取3d立体服装_2058364672834891778.json、图片生成/图生图/F.2Klein提取3d立体服装_2058380006920904706.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/qwen2511图转手绘线条水彩风格图片风格化_2078074989806444546.json、图片生成/图生图/qwen2511图转手绘线条水彩风格图片风格化_2078077711209291777.json、图片生成/图生图/qwen2511图转速手绘线条水彩风格_2026148427746254850.json、图片生成/图生图/qwen2511图转速手绘线条水彩风格_2067415744551411714.json、图片生成/图生图/qwen2511图转速手绘线条水彩风格_2067446975695511554.json…）
 
 - **类型**：Image To Image
-- **样本数**：22
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：24
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `CFGNorm`
+全部 24 个 workflow 都包含：
 - `CLIPLoader`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -36,49 +36,39 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 15/22 个有
-- `TextEncodeQwenImageEditPlus` —— 15/22 个有
-- `ConditioningZeroOut` —— 14/22 个有
-- `Int` —— 14/22 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 14/22 个有
-- `Image Comparer (rgthree)` —— 10/22 个有
-- `FluxKontextImageScale` —— 8/22 个有
-- `Flux2KleinEditTextEncode_EditUtils` —— 7/22 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 6/22 个有
-- `ReferenceLatent` —— 5/22 个有
-- `easy cleanGpuUsed` —— 5/22 个有
-- `easy imageConcat` —— 5/22 个有
-- `CR Prompt Text` —— 4/22 个有
-- `EmptyLatentImage` —— 2/22 个有
-- `Fast Bypasser (rgthree)` —— 1/22 个有
-- `ImageConcatMulti` —— 1/22 个有
-- `PreviewImage` —— 1/22 个有
+- `DifferentialDiffusion` —— 21/24 个有
+- `TextEncodeQwenImageEditPlus` —— 21/24 个有
+- `ResizeImagesByLongerEdge` —— 19/24 个有
+- `AIO_Preprocessor` —— 3/24 个有
+- `CLIPTextEncode` —— 3/24 个有
+- `PreviewImage` —— 2/24 个有
+- `EmptySD3LatentImage` —— 1/24 个有
+- `ImageResizeKJv2` —— 1/24 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/24 个有
+- `String Literal` —— 1/24 个有
+- `TextBox` —— 1/24 个有
+- `easy seed` —— 1/24 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 20 | 22 | 41% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 22 | 100% |
-| 采样算法 | euler | - | 22 | 95% |
-| 调度器 | simple | - | 22 | 68% |
-| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
-| 宽度 | 1920 | - | 2 | 100% |
-| 高度 | 1080 | - | 2 | 100% |
+| 采样步数 | 12 | 4 - 30 | 24 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 24 | 72% |
+| 采样算法 | euler | - | 24 | 100% |
+| 调度器 | beta | - | 24 | 88% |
+| 重绘幅度 | 1 | 1 - 1 | 24 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 25/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/24 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 20，22 个样本，取值分散，一致性仅 41%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，22 个样本，一致性 95%
-- 调度器 最常用 simple，22 个样本，一致性 68%
-- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（25/22 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 12，观测区间 4 - 30，24 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，24 个样本
+- 采样算法 最常用 euler，24 个样本，一致性 100%
+- 调度器 最常用 beta，24 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 1 - 1，24 个样本，取值集中（一致性 100%）

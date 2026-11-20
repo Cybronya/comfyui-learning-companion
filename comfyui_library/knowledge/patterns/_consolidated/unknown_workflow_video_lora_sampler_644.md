@@ -1,61 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_644
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.894
-common_nodes: [CR Text, DWPreprocessor, Fast Groups Muter (rgthree), GetImageSizeAndCount, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM V2, LoadImage, LoadLynxResampler, LoadWanVideoT5TextEncoder, LynxEncodeFaceIP, LynxInsightFaceCrop, PrimitiveString, RHHiddenNodes, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, Wan22PromptSelector, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader, easy anythingIndexSwitch, easy clearCacheAll, easy showAnything]
+coverage: 0.51725
+common_nodes: [CLIPVisionLoader, DF_Int_to_Float, GetNode, ImageFromBatch, ImageResizeKJv2, LoadImage, MemoryCleaner, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, SimpleMath+, Text, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy boolean, easy float, easy int]
 problems: []
 missing: []
-members: [图片生成/文生图/反推复刻视频强一致性文生视频换脸及服装动作参考_1985589432625639425.json, 视频生成/图生视频/Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸及服装动作参考_1976558909701885953.json, 视频生成/图生视频/Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸及服装动作参考_2053000425640611842.json]
+members: [图片生成/图生图/YJ-APP-animate-v2-动作迁移_2039956611556450306.json, 图片生成/图生图/YJ-APP-animate-v4-视频替换元素_2053682581748629505.json, 视频生成/图生视频/YJ-APP-WanAnimate-v2-动作迁移_2044639396833529858.json, 视频生成/图生视频/YJ-APP-animate-v3-视频替换元素_2044639687251337217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_644
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/反推复刻视频强一致性文生视频换脸及服装动作参考_1985589432625639425.json、视频生成/图生视频/Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸及服装动作参考_1976558909701885953.json、视频生成/图生视频/Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸及服装动作参考_2053000425640611842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-animate-v2-动作迁移_2039956611556450306.json、图片生成/图生图/YJ-APP-animate-v4-视频替换元素_2053682581748629505.json、视频生成/图生视频/YJ-APP-WanAnimate-v2-动作迁移_2044639396833529858.json、视频生成/图生视频/YJ-APP-animate-v3-视频替换元素_2044639687251337217.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `DWPreprocessor`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSizeAndCount`
+全部 4 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DF_Int_to_Float`
+- `GetNode`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `Int`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadLynxResampler`
-- `LoadWanVideoT5TextEncoder`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `PrimitiveString`
-- `RHHiddenNodes`
+- `MemoryCleaner`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SetNode`
 - `SimpleMath+`
+- `Text`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoAddLynxEmbeds`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy clearCacheAll`
-- `easy showAnything`
+- `easy boolean`
+- `easy float`
+- `easy int`
+
+**可变部分**（部分 workflow 才有）：
+- `BBoxYOLO` —— 3/4 个有
+- `BlockifyMask` —— 3/4 个有
+- `CheckpointLoaderSimple` —— 3/4 个有
+- `DrawMaskOnImage` —— 3/4 个有
+- `LayerMask: MaskGrow` —— 3/4 个有
+- `SDPoseDrawKeypoints` —— 3/4 个有
+- `SDPoseKeypointExtractor` —— 3/4 个有
+- `YOLOModelLoader` —— 3/4 个有
+- `easy sam3ModelLoader` —— 3/4 个有
+- `easy sam3VideoSegmentation` —— 3/4 个有
+- `VHS_VideoInfoLoaded` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `DrawViTPose` —— 1/4 个有
+- `If ANY execute A else B` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `Masks Combine Regions` —— 1/4 个有
+- `RunningHub Deepcleaner` —— 1/4 个有
+- `easy compare` —— 1/4 个有
 
 ## 典型参数
 

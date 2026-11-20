@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_generic_144
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.761917
-common_nodes: [LoadImage, MuyeTextEditOutput, PreviewAny, RH_LLMAPI_Pro_Node, SaveImage, easy saveText]
+coverage: 0.837143
+common_nodes: [LoadImage, PrimitiveStringMultiline, RunningHub DreamOmni2 Gen Pipeline, RunningHub DreamOmni2 Generator, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/04人物设计（生成系统提示词）_2031615060098949122.json, 图片生成/反推提示词/07脱敏工作流_2031687953164013569.json, 图片生成/反推提示词/AI工具画面的视频生成提示词_2038622267197886466.json, 图片生成/反推提示词/AI短片编剧 分段脚本_2038609334787121153.json, 图片生成/反推提示词/AI设定图提示词专家（人物 场景 关键剧情首帧）_2038620022884536322.json, 图片生成/反推提示词/分镜头运镜大师（优化版）_2041297250986500097.json, 图片生成/反推提示词/图片反推MJ提示词_2084677335114141698.json, 图片生成/反推提示词/（修改后1）小说转分镜脚本_2039165697045045249.json, 图片生成/文生图/2..2 剧本___分镜_2031708136834342914.json, 图片生成/文生图/赤鸟拆分-漫剧1_2_2016651413073432577.json, 视频生成/文生视频/2.3文字分镜  拆分（6分镜_组）_2031712043270672386.json, 视频生成/文生视频/2.4.风格——提示词_2031716954544807938.json]
+members: [图片生成/图生图/DreamOmni2三张图_1977693881636716545.json, 图片生成/图生图/DreamOmni2产品换背景_1977643548461944834.json, 图片生成/图生图/DreamOmni2发型迁移_1977616689711980546.json, 图片生成/图生图/DreamOmni2合影_1977530658207748098.json, 图片生成/图生图/DreamOmni2图案迁移_1977637671453511682.json, 图片生成/图生图/DreamOmni2图片编辑大模型（）_1977609446580985858.json, 图片生成/图生图/DreamOmni2图生图洗图_1977206632318935042.json, 图片生成/图生图/DreamOmni2姿势迁移_1977509985427050497.json, 图片生成/图生图/DreamOmni2字体风格迁移_1977622397262143490.json, 图片生成/图生图/DreamOmni2打光融合_1977504086134280193.json, 图片生成/图生图/DreamOmni2电商模特商品_1977354620756467714.json, 图片生成/图生图/DreamOmni2电商模特换装_1977246427334234114.json, 图片生成/图生图/DreamOmni2表情迁移_1977596031246442498.json, 图片生成/图生图/DreamOmni2风格迁移_1977506050427506690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_144
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/反推提示词/04人物设计（生成系统提示词）_2031615060098949122.json、图片生成/反推提示词/07脱敏工作流_2031687953164013569.json、图片生成/反推提示词/AI工具画面的视频生成提示词_2038622267197886466.json、图片生成/反推提示词/AI短片编剧 分段脚本_2038609334787121153.json、图片生成/反推提示词/AI设定图提示词专家（人物 场景 关键剧情首帧）_2038620022884536322.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/DreamOmni2三张图_1977693881636716545.json、图片生成/图生图/DreamOmni2产品换背景_1977643548461944834.json、图片生成/图生图/DreamOmni2发型迁移_1977616689711980546.json、图片生成/图生图/DreamOmni2合影_1977530658207748098.json、图片生成/图生图/DreamOmni2图案迁移_1977637671453511682.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `LoadImage`
-- `MuyeTextEditOutput`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
+- `PrimitiveStringMultiline`
+- `RunningHub DreamOmni2 Gen Pipeline`
+- `RunningHub DreamOmni2 Generator`
 - `SaveImage`
-- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 11/12 个有
-- `CR Text` —— 1/12 个有
-- `PrimitiveStringMultiline` —— 1/12 个有
-- `RH_YouchuanTextToImageV81` —— 1/12 个有
-- `RH_YouchuanTextToImageV82` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
+- `easy imageConcat` —— 1/14 个有
 
 ## 典型参数
 

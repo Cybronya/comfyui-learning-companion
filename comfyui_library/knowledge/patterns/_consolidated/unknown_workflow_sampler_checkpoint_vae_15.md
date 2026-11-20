@@ -3,70 +3,70 @@ name: unknown_workflow_sampler_checkpoint_vae_15
 type: Unknown Workflow
 frequency: 7
 level: strong
-coverage: 0.974
-common_nodes: [CheckpointLoaderSimple, EmptyLatentImage, KSampler, LoadImage, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.715286
+common_nodes: [AudioEncoderLoader, CheckpointLoaderSimple, ConditioningZeroOut, EmptyYuE2LatentAudio, KSampler, LoadAudio, SaveAudioAdvanced, SheetSage2AudioToABC, VAEDecodeAudio, YuE2GenerateMusic]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/图像编辑-Qwen-Edit-AIO加速多合一_1977715091086921729.json, 图片生成/图生图/图像编辑-Qwen-Edit-AIO加速多合一_2074762908281692162.json, 图片生成/图生图/手办创建_2111833298065514498.json, 图片生成/图生图/手办创建_2113557569443811329.json, 图片生成/图生图/手办创建图生图_2112861789900853249.json, 图片生成/图生图/手办创建图生图_2112878742635900929.json, 图片生成/图生图/换装 人物换装 一键换装 女装带货  超清放大修复 电商模特换装_2051513484009066497.json]
+members: [音频生成/音频生成/YUE2 歌曲翻唱（上传要翻唱的音乐）_2109788535506161665.json, 音频生成/音频生成/YuE2 音乐翻唱_2108808387176783873.json, 音频生成/音频生成/YuE2 音乐翻唱_2108812860787879937.json, 音频生成/音频生成/Yue2音乐翻唱——堪比闭源模型的开源工作流_2107213273505550337.json, 音频生成/音频生成/audio_yue2_music_cover_2104470509722365954.json, 音频生成/音频生成/yinyueshengcheng_2104844494637191169.json, 音频生成/音频生成/音乐翻唱_YuE2_2107047578494918658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_15
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/图像编辑-Qwen-Edit-AIO加速多合一_1977715091086921729.json、图片生成/图生图/图像编辑-Qwen-Edit-AIO加速多合一_2074762908281692162.json、图片生成/图生图/手办创建_2111833298065514498.json、图片生成/图生图/手办创建_2113557569443811329.json、图片生成/图生图/手办创建图生图_2112861789900853249.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/YUE2 歌曲翻唱（上传要翻唱的音乐）_2109788535506161665.json、音频生成/音频生成/YuE2 音乐翻唱_2108808387176783873.json、音频生成/音频生成/YuE2 音乐翻唱_2108812860787879937.json、音频生成/音频生成/Yue2音乐翻唱——堪比闭源模型的开源工作流_2107213273505550337.json、音频生成/音频生成/audio_yue2_music_cover_2104470509722365954.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
+- `AudioEncoderLoader`
 - `CheckpointLoaderSimple`
-- `EmptyLatentImage`
+- `ConditioningZeroOut`
+- `EmptyYuE2LatentAudio`
 - `KSampler`
-- `LoadImage`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `VAEDecode`
+- `LoadAudio`
+- `SaveAudioAdvanced`
+- `SheetSage2AudioToABC`
+- `VAEDecodeAudio`
+- `YuE2GenerateMusic`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 3/7 个有
-- `ImageConcatMulti` —— 3/7 个有
-- `Text Multiline` —— 3/7 个有
-- `Image Comparer (rgthree)` —— 1/7 个有
-- `ImageScaleBy` —— 1/7 个有
-- `SeedVR2LoadDiTModel` —— 1/7 个有
-- `SeedVR2LoadVAEModel` —— 1/7 个有
-- `SeedVR2VideoUpscaler` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `PreviewAny` —— 5/7 个有
+- `SeedNode` —— 5/7 个有
+- `Audio Duration` —— 2/7 个有
+- `AudioCrop` —— 2/7 个有
+- `ComfySwitchNode` —— 1/7 个有
+- `PrimitiveBoolean` —— 1/7 个有
+- `PrimitiveFloat` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
+- `PrimitiveString` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| 采样步数 | 32 | 32 - 32 | 7 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler_ancestral | - | 7 | 57% |
-| 调度器 | sgm_uniform | - | 7 | 57% |
+| 采样算法 | dpm_2 | - | 7 | 100% |
+| 调度器 | sgm_uniform | - | 7 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 720 | 720 - 768 | 7 | 97% |
-| 高度 | 1280 | 768 - 1280 | 7 | 76% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 7/7 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 32，观测区间 32 - 32，7 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，7 个样本，一致性 57%
-- 调度器 最常用 sgm_uniform，7 个样本，一致性 57%
+- 采样算法 最常用 dpm_2，7 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，7 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 720，观测区间 720 - 768，7 个样本，取值集中（一致性 97%）
-- 高度 中位数 1280，观测区间 768 - 1280，7 个样本
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/7 个样本）：发现KSampler但没有VAEDecode

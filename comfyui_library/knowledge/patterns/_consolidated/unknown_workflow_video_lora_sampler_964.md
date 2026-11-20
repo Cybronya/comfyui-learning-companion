@@ -3,70 +3,72 @@ name: unknown_workflow_video_lora_sampler_964
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.844
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, CR Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MaskPreview+, MathExpression|pysssss, MegaTTS3Run, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewAudio, SaveAudio, SaveAudioMP3, SeparateMasks, SetNode, VHS_VideoCombine, VoxCPM_TTS, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy downloadIndexTTSAndLoadModel, easy indexTTSAudioMerge, easy indexTTSGenerateSimple, easy int]
+coverage: 0.8065
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LayerUtility: ImageBlend V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadMoGeModel, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MoGeInference, MoGeRender, ModelAttentionBackend, ModelPreviewOverrideKJ, RHLLMChatNode, RMBG, RTXTrueHDR, RTXVideoFrameGeneration, RTXVideoSuperResolution, ResolutionSelector, SaveVideo, SelfLiftH3Sampler, SelfLiftH3TST, SetLatentNoiseMask, ShowText|pysssss, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy int, easy positive, easy promptReplace, easy showAnything, 孤海注释, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/加强版单人-双人[完美口型数字人]_1970560402209841153.json, 音频生成/音频生成/顶配视频版 单人-双人[完美口型数字人]_1970863789459546113.json]
+members: [平台全量/1-Aiden-动作迁移！提示词尽量用Agent！_2110841349133135874.json, 视频生成/图生视频/1-Aiden-动作迁移！提示词尽量用Agent！_2115236829317386242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_964
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/加强版单人-双人[完美口型数字人]_1970560402209841153.json、音频生成/音频生成/顶配视频版 单人-双人[完美口型数字人]_1970863789459546113.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/1-Aiden-动作迁移！提示词尽量用Agent！_2110841349133135874.json、视频生成/图生视频/1-Aiden-动作迁移！提示词尽量用Agent！_2115236829317386242.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `CR Text`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `JWInteger`
+- `BasicScheduler`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LayerUtility: ImageBlend V2`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskPreview+`
-- `MathExpression|pysssss`
-- `MegaTTS3Run`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `PreviewAudio`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `SeparateMasks`
-- `SetNode`
+- `LoadMoGeModel`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `MoGeInference`
+- `MoGeRender`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `RHLLMChatNode`
+- `RMBG`
+- `RTXTrueHDR`
+- `RTXVideoFrameGeneration`
+- `RTXVideoSuperResolution`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SelfLiftH3Sampler`
+- `SelfLiftH3TST`
+- `SetLatentNoiseMask`
+- `ShowText|pysssss`
+- `SolidMask`
+- `TrimAudioDuration`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAEEncodeAudio`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VoxCPM_TTS`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSAudioMerge`
-- `easy indexTTSGenerateSimple`
 - `easy int`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `easy positive`
+- `easy promptReplace`
+- `easy showAnything`
+- `孤海注释`
+- `忽略多组孤海`
 
 ## 典型参数
 

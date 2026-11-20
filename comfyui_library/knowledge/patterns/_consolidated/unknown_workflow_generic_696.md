@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_generic_696
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.751
-common_nodes: [CR Prompt List, JjkText, LoadImage, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, SaveImage, easy convertAnything, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/-全能图片V1批量出 正侧背顶5面视图_1968015523554426882.json, 图片生成/图生图/-全能图片V1批量出 正侧背顶5面视图_1985094056806158337.json, 图片生成/图生图/-全能图片V1批量编辑_1963494789201235970.json, 图片生成/文生图/批量香蕉分镜_1981242515896655874.json]
+members: [图片生成/图生图/个人形象设计 G-image2.0低价版_2050955162994397186.json, 图片生成/图生图/元素洗稿_2059844726915944450.json, 图片生成/图生图/全能图片G-2.0多图融合_2048973043321544705.json, 图片生成/图生图/全能图片G2角色生成参考模板_2054490959785799681.json, 图片生成/图生图/洗稿_2057307768008306690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_696
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/-全能图片V1批量出 正侧背顶5面视图_1968015523554426882.json、图片生成/图生图/-全能图片V1批量出 正侧背顶5面视图_1985094056806158337.json、图片生成/图生图/-全能图片V1批量编辑_1963494789201235970.json、图片生成/文生图/批量香蕉分镜_1981242515896655874.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/个人形象设计 G-image2.0低价版_2050955162994397186.json、图片生成/图生图/元素洗稿_2059844726915944450.json、图片生成/图生图/全能图片G-2.0多图融合_2048973043321544705.json、图片生成/图生图/全能图片G2角色生成参考模板_2054490959785799681.json、图片生成/图生图/洗稿_2057307768008306690.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt List`
-- `JjkText`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana_Image2Image`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `easy convertAnything`
-- `easy showAnything`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `PreviewAny` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `RH_LLMAPI_Pro_Node` —— 2/5 个有
+- `JWStringConcat` —— 1/5 个有
 
 ## 典型参数
 

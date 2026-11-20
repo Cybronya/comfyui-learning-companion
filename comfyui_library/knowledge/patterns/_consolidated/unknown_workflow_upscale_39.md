@@ -1,37 +1,41 @@
 ---
 name: unknown_workflow_upscale_39
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4
-common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, SUPIR_Upscale, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.66475
+common_nodes: [LoadAudio, LoadImage, MuyeTextEditOutput, RH_RhartVideoSparkvideo20MultimodalVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/SUPIR扩散重绘_2079101058663669761.json, 图片生成/图生图/SUPIR高清放大_图像修复_2015794602296479746.json]
+members: [视频生成/文生视频/Seedance2.0真人版_2037782641453305858.json, 视频生成/文生视频/Seedance2.0真人版_2039165340579532801.json, 视频生成/文生视频/超能视频 Seedance 2.0 完全体工作流_2038220498269642754.json, 视频生成/文生视频/超能视频+Seedance+2.0+完全体工作流_小白注释版_2038549322068926466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_39
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SUPIR扩散重绘_2079101058663669761.json、图片生成/图生图/SUPIR高清放大_图像修复_2015794602296479746.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.0真人版_2037782641453305858.json、视频生成/文生视频/Seedance2.0真人版_2039165340579532801.json、视频生成/文生视频/超能视频 Seedance 2.0 完全体工作流_2038220498269642754.json、视频生成/文生视频/超能视频+Seedance+2.0+完全体工作流_小白注释版_2038549322068926466.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：40%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `PreviewImage`
-- `SUPIR_Upscale`
-- `SaveImage`
+- `MuyeTextEditOutput`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetIdsMerge`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `LoadVideo` —— 2/4 个有
+- `RH_SparkVideoAssetQuery` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `RH_TopazLabs_VideoUpscale` —— 1/4 个有
 
 ## 典型参数
 
@@ -43,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

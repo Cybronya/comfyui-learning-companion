@@ -1,63 +1,76 @@
 ---
 name: unknown_workflow_video_inpaint_sampler_6
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8175
-common_nodes: [Fast Groups Bypasser (rgthree), GrowMaskWithBlur, ImageConcanate, ImageResizeKJ, InpaintPreprocessor, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy imageRemBg]
+frequency: 5
+level: moderate
+coverage: 0.6194
+common_nodes: [BlockifyMask, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMask, INPAINT_MaskedFill, LoadWanVideoT5TextEncoder, PointsEditor, PreviewImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE14B自动遮罩局部视频修改_1922808096656343042.json, 视频生成/图生视频/VACE普通控制+双图可控构图参考+局部编辑_1909233072066469889.json]
+members: [平台全量/Wan2.1视频局部重绘-物品迁移_1980574528835338242.json, 平台全量/Wan视频局部重绘工作流 可更换指定产品_1978007177644441601.json, 平台全量/Wan视频局部重绘工作流 文生视频局部重绘_1978122628647018498.json, 数字人/数字人/VACE局部替换视频替换人物服装赞助商LOGO修复_2067260822749007874.json, 数字人/数字人/视频局部重绘 参考重绘Wan2.1_2056966345102807041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_sampler_6
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/VACE14B自动遮罩局部视频修改_1922808096656343042.json、视频生成/图生视频/VACE普通控制+双图可控构图参考+局部编辑_1909233072066469889.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/Wan2.1视频局部重绘-物品迁移_1980574528835338242.json、平台全量/Wan视频局部重绘工作流 可更换指定产品_1978007177644441601.json、平台全量/Wan视频局部重绘工作流 文生视频局部重绘_1978122628647018498.json、数字人/数字人/VACE局部替换视频替换人物服装赞助商LOGO修复_2067260822749007874.json、数字人/数字人/视频局部重绘 参考重绘Wan2.1_2056966345102807041.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `GrowMaskWithBlur`
-- `ImageConcanate`
-- `ImageResizeKJ`
-- `InpaintPreprocessor`
-- `LayerMask: LoadSegmentAnythingModels`
-- `LayerMask: SegmentAnythingUltra V3`
-- `LoadImage`
+全部 5 个 workflow 都包含：
+- `BlockifyMask`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `INPAINT_MaskedFill`
 - `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
+- `PointsEditor`
 - `PreviewImage`
+- `Sam2Segmentation`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `Compositor3` —— 1/2 个有
-- `CompositorConfig3` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `Images to RGB` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `WanVideoVACEModelSelect` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 4/5 个有
+- `InvertMask` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `WanVideoLoraSelectMulti` —— 4/5 个有
+- `AddLabel` —— 3/5 个有
+- `EmptyImage` —— 3/5 个有
+- `ImageConcatMulti` —— 3/5 个有
+- `ImageResizeKJ` —— 3/5 个有
+- `LayerMask: BiRefNetUltra` —— 3/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `easy cleanGpuUsed` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `PreviewAny` —— 2/5 个有
+- `VHS_VideoInfo` —— 2/5 个有
+- `BiRefNetRMBG` —— 1/5 个有
+- `Float` —— 1/5 个有
+- `ImageCropByMask` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `MaskToImage` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
+- `SeCModelLoader` —— 1/5 个有
+- `SeCVideoSegmentation` —— 1/5 个有
+- `Text` —— 1/5 个有
+- `WanVideoLoraSelect` —— 1/5 个有
 
 ## 典型参数
 
@@ -69,4 +82,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

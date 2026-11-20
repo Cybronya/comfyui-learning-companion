@@ -1,68 +1,62 @@
 ---
 name: unknown_workflow_lora_sampler_clip_147
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.9115
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.9294
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, CR Text Concatenate, DetailDaemonSamplerNode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, ImageResizeKJ, ImageSmartSharpen+, JjkShowText, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RH_Captioner, RandomNoise, ReduxAdvanced, SamplerCustomAdvanced, SaveImage, StyleModelLoader, TeaCache, TextInput_, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/人物动作控制 最优两种方法_2055642276038234114.json, 图片生成/图生图/人物换脸，开源顶级一致性flux.2 klein_2016441047668236290.json, 图片生成/图生图/哦豁看见了-Flux2-Klein_2066548615769837570.json, 图片生成/图生图/最强！人物_万物增强细节_洗图_去AI_FLUX2KLEIN_自选出图 (1)_2063478532617101314.json]
+members: [图片生成/图生图/万物 Labubu｜人物迁移参考_1936242276983033857.json, 图片生成/图生图/万物Labubu_1930592157512683521.json, 图片生成/图生图/万物一键变成Labubu_1996474642594414594.json, 图片生成/图生图/万物生成Labubu_1996507431935025153.json, 图片生成/图生图/万物迁移Labubu_1930810031602905089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_147
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/人物动作控制 最优两种方法_2055642276038234114.json、图片生成/图生图/人物换脸，开源顶级一致性flux.2 klein_2016441047668236290.json、图片生成/图生图/哦豁看见了-Flux2-Klein_2066548615769837570.json、图片生成/图生图/最强！人物_万物增强细节_洗图_去AI_FLUX2KLEIN_自选出图 (1)_2063478532617101314.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/万物 Labubu｜人物迁移参考_1936242276983033857.json、图片生成/图生图/万物Labubu_1930592157512683521.json、图片生成/图生图/万物一键变成Labubu_1996474642594414594.json、图片生成/图生图/万物生成Labubu_1996507431935025153.json、图片生成/图生图/万物迁移Labubu_1930810031602905089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
+- `CLIPVisionLoader`
+- `CR Text Concatenate`
+- `DetailDaemonSamplerNode`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `FluxGuidance`
+- `ImageResizeKJ`
+- `ImageSmartSharpen+`
+- `JjkShowText`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
+- `RH_Captioner`
 - `RandomNoise`
-- `ReferenceLatent`
+- `ReduxAdvanced`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `StyleModelLoader`
+- `TeaCache`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `GetImageSize` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `TT_img_enc_v2` —— 2/4 个有
-- `Text` —— 2/4 个有
-- `ZML_SwitchOutput` —— 2/4 个有
-- `Get Image Size` —— 1/4 个有
-- `OpenposePreprocessor` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
-- `ResolutionStdSelector` —— 1/4 个有
-- `TTResolutionSelector` —— 1/4 个有
-- `TwoWaySwitch` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 856 | 856 - 856 | 5 | 100% |
+| 高度 | 1152 | 1152 - 1152 | 5 | 100% |
 
 ## 常见问题
 
@@ -70,4 +64,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 856，观测区间 856 - 856，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1152，观测区间 1152 - 1152，5 个样本，取值集中（一致性 100%）

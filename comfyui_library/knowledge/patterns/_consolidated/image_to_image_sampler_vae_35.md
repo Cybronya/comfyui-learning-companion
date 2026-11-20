@@ -1,71 +1,69 @@
 ---
 name: image_to_image_sampler_vae_35
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.528
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, GetNode, ImageConcatMulti, ImageScaleToTotalPixels, KSampler, LayerUtility: CropByMask V2, LoadImage, ModelSamplingAuraFlow, PreviewImage, RHHiddenNodes, SaveImage, SetNode, TextEncodeQwenImageEditPlus, VAEDecode, VAEEncode, VAELoader, easy imageRemBg]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 1
+common_nodes: [ConditioningZeroOut, FluxGuidance, KSampler, LoadImage, NunchakuFluxDiTLoader, SaveImage, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/人物一键制作角色四视图 - 高效省力 - V1_2006398311204397058.json, 图片生成/图生图/单图一键制作角色多视角（四视图）_1987716537224204290.json]
+members: [图片生成/图生图/【阡陌】Nunchaku 8倍加速 flux 图生图_1944739551309123585.json, 图片生成/图生图/单图-kontext-nunchaku_1952297107749285889.json, 图片生成/图生图/图像编辑 _ Kontext单图编辑_1951659077866827777.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_vae_35
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人物一键制作角色四视图 - 高效省力 - V1_2006398311204397058.json、图片生成/图生图/单图一键制作角色多视角（四视图）_1987716537224204290.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【阡陌】Nunchaku 8倍加速 flux 图生图_1944739551309123585.json、图片生成/图生图/单图-kontext-nunchaku_1952297107749285889.json、图片生成/图生图/图像编辑 _ Kontext单图编辑_1951659077866827777.json）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGNorm`
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
 - `ConditioningZeroOut`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageScaleToTotalPixels`
+- `FluxGuidance`
 - `KSampler`
-- `LayerUtility: CropByMask V2`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `RHHiddenNodes`
+- `NunchakuFluxDiTLoader`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageRemBg`
+
+**可变部分**（部分 workflow 才有）：
+- `DualCLIPLoader` —— 2/3 个有
+- `EmptySD3LatentImage` —— 2/3 个有
+- `ReferenceLatent` —— 2/3 个有
+- `ArgosTranslateCLIPTextEncodeNode` —— 1/3 个有
+- `CLIPTextEncode` —— 1/3 个有
+- `CLIPTextEncodeFlux` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `JjkShowText` —— 1/3 个有
+- `NunchakuTextEncoderLoaderV2` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
+- `Text` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 1 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 0 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 1 | 0.7 - 1 | 3 | 84% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 0，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 0，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）
-- 高发问题（8/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 0.7 - 1，3 个样本，取值集中（一致性 84%）

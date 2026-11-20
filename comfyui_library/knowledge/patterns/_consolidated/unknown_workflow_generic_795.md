@@ -1,33 +1,37 @@
 ---
 name: unknown_workflow_generic_795
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.571
-common_nodes: [CR Text, LayerUtility: RoundedRectangle, PrimitiveInt, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.94
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json, 图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json]
+members: [音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json, 音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json, 音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json, 音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json, 音频生成/音频生成/🎙️Standard 也能情绪配音｜IndexTTS 2.5 V2_2114973999221530626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_795
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图片G image2.0软件图标制作_2059214160231223298.json、图片生成/文生图/全能图片G image2.0软件图标制作_2070721661086822401.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071052930496684034.json、图片生成/文生图/全能图片G image2.0软件图标制作_2071073266260856833.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json、音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json、音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json、音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json、音频生成/音频生成/🎙️Standard 也能情绪配音｜IndexTTS 2.5 V2_2114973999221530626.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
-- `LayerUtility: RoundedRectangle`
-- `PrimitiveInt`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
+
+**可变部分**（部分 workflow 才有）：
+- `T8_IndexTTS25_EmotionControl` —— 4/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `T8_IndexTTS25_SamplingConfig` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_432
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.825
-common_nodes: [LoadImage, RH_Captioner, SaveImage]
+coverage: 0.967857
+common_nodes: [LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/图像提示词反推V1.0_1956343331238367233.json, 图片生成/反推提示词/图像提示词反推V2.0（终极洗图关键词）_1995663525290901505.json, 图片生成/反推提示词/图像提示词反推V3_1997566981433921537.json, 图片生成/反推提示词/提示词反推_2031992215882440706.json, 图片生成/反推提示词/最强反推提示词_2104195258191015938.json, 图片生成/反推提示词/最强图片反推提示词_1910887380684079106.json]
+members: [图片生成/图生图/Langcat 图片编辑工作流_1999675547762520066.json, 图片生成/图生图/LongCat Edit-单图像编辑_1997953637970272258.json, 图片生成/图生图/LongCat Edit单图像编辑_1997706385943146497.json, 图片生成/图生图/LongCat Edit单图像编辑_1997944364162777090.json, 图片生成/图生图/LongCat Edit单图像编辑_1998284496506093570.json, 图片生成/图生图/LongCat Edit单图像编辑_1998341204561551362.json, 图片生成/图生图/LongCat Edit图像编辑_2001778382910156802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_432
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/图像提示词反推V1.0_1956343331238367233.json、图片生成/反推提示词/图像提示词反推V2.0（终极洗图关键词）_1995663525290901505.json、图片生成/反推提示词/图像提示词反推V3_1997566981433921537.json、图片生成/反推提示词/提示词反推_2031992215882440706.json、图片生成/反推提示词/最强反推提示词_2104195258191015938.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Langcat 图片编辑工作流_1999675547762520066.json、图片生成/图生图/LongCat Edit-单图像编辑_1997953637970272258.json、图片生成/图生图/LongCat Edit单图像编辑_1997706385943146497.json、图片生成/图生图/LongCat Edit单图像编辑_1997944364162777090.json、图片生成/图生图/LongCat Edit单图像编辑_1998284496506093570.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `RH_Captioner`
+- `LongCatImageEdit`
+- `LongCatImageModelLoader`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText` —— 3/6 个有
-- `ShowText|pysssss` —— 3/6 个有
+- `ImageScaleToTotalPixels` —— 6/7 个有
+- `CR Prompt Text` —— 5/7 个有
+- `LayerUtility: PurgeVRAM` —— 5/7 个有
+- `easy imageConcat` —— 4/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `Text` —— 1/7 个有
+- `easy seed` —— 1/7 个有
 
 ## 典型参数
 

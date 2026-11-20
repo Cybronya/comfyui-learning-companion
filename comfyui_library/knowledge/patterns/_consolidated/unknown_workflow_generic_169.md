@@ -1,37 +1,41 @@
 ---
 name: unknown_workflow_generic_169
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.725727
-common_nodes: [RHLLMChatNode, easy saveText]
+coverage: 0.857167
+common_nodes: [LoadImage, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/反推提示词/RH LLM 图像&视频解析反推_2053113042199691266.json, 图片生成/反推提示词/RH LLM 解析图像_2053063253688889345.json, 图片生成/反推提示词/RH LLM 解析视频_2054441309338906626.json, 图片生成/反推提示词/RH LLM 解析视频_2057992709650083842.json, 图片生成/反推提示词/gemini3.1反推图片提示词_2089580051183529986.json, 图片生成/文生图/QWen 3.8 MAX （可加视频） 广告30秒 产品类反推脚本_2101223772710854657.json, 图片生成/文生图/gemini3.6_2084955304915197954.json, 图片生成/文生图/gemini3.6（可加视频）_2088834108863631361.json, 图片生成/文生图/gemini3.6（可加视频）小空间_2088606380054896642.json, 图片生成/文生图/gemini3.6（视频 6图 双文本）_2096469518322327554.json, 图片生成/文生图/大峰 openai_全能图片G-6-astra- 多 图_2098263168698114049.json]
+members: [图片生成/反推提示词/(自用)N版 Qwen3.5 图像极速反推V1_2035376634013949954.json, 图片生成/反推提示词/Gemma4-图像反推工作流-26B-Q4_2063247807942840322.json, 图片生成/反推提示词/Gemma4图像反推工作流_2042629856315318274.json, 图片生成/反推提示词/Gemma4图像反推工作流（26B Q8高质量）V2_2042038079652892673.json, 图片生成/反推提示词/Qwen3.5 图像反推工作流_2035372598938308610.json, 图片生成/反推提示词/Qwen3.5 强悍的图像反推工作流_2035648568308015105.json, 图片生成/反推提示词/Qwen3.5--图像反推_2035655088227753985.json, 图片生成/反推提示词/gemma4出 jimen用文字_2044599371559342082.json, 图片生成/反推提示词/gemma4直出短剧漫剧分镜脚本_2043148693875990530.json, 图片生成/反推提示词/空白工作流_2043534147645349889.json, 图片生成/反推提示词/（N版）Gemma4图像反推工作流（31B Q8高质量）V1_2042595096012525569.json, 图片生成/图生图/Llama反推图像反推_2042150217411207169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_169
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/反推提示词/RH LLM 图像&视频解析反推_2053113042199691266.json、图片生成/反推提示词/RH LLM 解析图像_2053063253688889345.json、图片生成/反推提示词/RH LLM 解析视频_2054441309338906626.json、图片生成/反推提示词/RH LLM 解析视频_2057992709650083842.json、图片生成/反推提示词/gemini3.1反推图片提示词_2089580051183529986.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/反推提示词/(自用)N版 Qwen3.5 图像极速反推V1_2035376634013949954.json、图片生成/反推提示词/Gemma4-图像反推工作流-26B-Q4_2063247807942840322.json、图片生成/反推提示词/Gemma4图像反推工作流_2042629856315318274.json、图片生成/反推提示词/Gemma4图像反推工作流（26B Q8高质量）V2_2042038079652892673.json、图片生成/反推提示词/Qwen3.5 图像反推工作流_2035372598938308610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `RHLLMChatNode`
-- `easy saveText`
+全部 12 个 workflow 都包含：
+- `LoadImage`
+- `easy cleanGpuUsed`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 10/11 个有
-- `LoadImage` —— 9/11 个有
-- `LoadVideo` —— 8/11 个有
-- `PreviewImage` —— 6/11 个有
-- `MuyeTextEditOutput` —— 2/11 个有
+- `PreviewAny` —— 11/12 个有
+- `SaveImage` —— 11/12 个有
+- `ShellAgentPluginOutputText` —— 11/12 个有
+- `SaveText|pysssss` —— 1/12 个有
+- `ShowText` —— 1/12 个有
+- `easy showAnything` —— 1/12 个有
 
 ## 典型参数
 

@@ -1,32 +1,36 @@
 ---
 name: unknown_workflow_generic_678
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.857
-common_nodes: [65c22b29-59aa-496b-89c6-55a603658670, 7b34ab90-36f9-45ba-a665-71d418f0df18, LoadImage, SaveImage]
+coverage: 0.7712
+common_nodes: [DoubaoImageGenerator, DoubaoSizePreset, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json, comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json]
+members: [图片生成/图生图/Seedream 4.0 API_1984104731574501378.json, 图片生成/图生图/豆包Seedream 4.0超强文生图工作流_1988913135945920513.json, 图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json, 图片生成/文生图/调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json, 平台全量/【阡陌】豆包Seedream 4.0超强双图_多图编辑工作流_1966489215032832002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_678
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_4b_distilled.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_base.json、comfyui-workflow-templates-json/image_flux2_klein_image_edit_9b_distilled.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Seedream 4.0 API_1984104731574501378.json、图片生成/图生图/豆包Seedream 4.0超强文生图工作流_1988913135945920513.json、图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json、图片生成/文生图/调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json、平台全量/【阡陌】豆包Seedream 4.0超强双图_多图编辑工作流_1966489215032832002.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `65c22b29-59aa-496b-89c6-55a603658670`
-- `7b34ab90-36f9-45ba-a665-71d418f0df18`
+全部 5 个 workflow 都包含：
+- `DoubaoImageGenerator`
+- `DoubaoSizePreset`
 - `LoadImage`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

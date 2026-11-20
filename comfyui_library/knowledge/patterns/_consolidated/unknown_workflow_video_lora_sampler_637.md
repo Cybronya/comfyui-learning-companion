@@ -1,71 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_637
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.901
-common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, DisableNoise, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RH_Captioner, RandomNoise, SamplerCustomAdvanced, SaveImage, SplitSigmas, UNETLoader, VAEDecode, VAELoader, WanVideoNAG]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.9558
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/纯种WAN2.2以图洗图(文字版Redux)_1953709934967967746.json, 图片生成/图生图/纯种WAN2.2洗图(秒杀Krea)_1938145100054577154.json, 图片生成/文生图/Wan2.2反推文生图_1973082031938736129.json]
+members: [视频生成/文生视频/wan2.1文生视频官流【教学】_2001221263462891522.json, 视频生成/文生视频/【老金驿站】WAN8步电影级高清视频生成工作流_1933119779811012610.json, 视频生成/文生视频/文生视频 一分钟_2044216919120678914.json, 视频生成/文生视频/文生视频_2008504212048580610.json, 视频生成/文生视频/文生视频_2041095418389471234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_637
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/纯种WAN2.2以图洗图(文字版Redux)_1953709934967967746.json、图片生成/图生图/纯种WAN2.2洗图(秒杀Krea)_1938145100054577154.json、图片生成/文生图/Wan2.2反推文生图_1973082031938736129.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/wan2.1文生视频官流【教学】_2001221263462891522.json、视频生成/文生视频/【老金驿站】WAN8步电影级高清视频生成工作流_1933119779811012610.json、视频生成/文生视频/文生视频 一分钟_2044216919120678914.json、视频生成/文生视频/文生视频_2008504212048580610.json、视频生成/文生视频/文生视频_2041095418389471234.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DisableNoise`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LoadImage`
+- `EmptyHunyuanLatentVideo`
+- `KSampler`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `RH_Captioner`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `WanVideoNAG`
+- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `VAEEncode` —— 2/3 个有
-- `EmptyLatentImage` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `ImageMirror` —— 1/3 个有
-- `ImageResize` —— 1/3 个有
-- `SeedVR2` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `ApplySageAttention` —— 4/5 个有
+- `TeaCache` —— 3/5 个有
+- `wanBlock_Swap` —— 3/5 个有
+- `Int` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | - | 1 | 100% |
-| 高度 | 1152 | - | 1 | 100% |
+| 采样步数 | 8 | 6 - 10 | 5 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 80% |
+| 调度器 | simple | - | 5 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 6 - 10，5 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 80%
+- 调度器 最常用 simple，5 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（6/5 个样本）：Steps较低可能导致细节不足

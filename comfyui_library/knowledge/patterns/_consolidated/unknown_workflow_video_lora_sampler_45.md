@@ -1,89 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_45
 type: Unknown Workflow
-frequency: 23
+frequency: 27
 level: moderate
-coverage: 0.674391
-common_nodes: [Anything Everywhere, CLIPVisionLoader, CR String To Number, CR Text, FluxResolutionNode, GetNode, ImageCASharpening+, ImageResize+, InversionDemoLazyIndexSwitch, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy showAnything]
+coverage: 0.874741
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Skyreels V2 图生长视频_1979077194871902210.json, 视频生成/图生视频/Wan2.2-SkyreelsV2图生长视频【全景别分镜】_2047489081042542593.json, 视频生成/图生视频/Wan2.2-图生分镜 长视频_2018852274944090113.json, 视频生成/图生视频/Wan2.2FusionX图生视频后拉运镜16：9_1981885885119643650.json, 视频生成/图生视频/wan2.2 图生视频_2005491232086388737.json, 视频生成/图生视频/【360°环绕运镜】Wan2.2+FusionX图生视频（基础流）_1951203527219720194.json, 视频生成/图生视频/【LLM景别自动分镜】Wan2.2-SkyreelsV2图生长视频_1962522962995855362.json, 视频生成/图生视频/【全景别分镜】Wan2.2-SkyreelsV2图生长视频 Wan2.2 图生视频（加速+质量提高）_1983778975518531585.json, 视频生成/图生视频/【全景别分镜】Wan2.2-SkyreelsV2图生长视频_1958007892207185921.json, 视频生成/图生视频/【全景别分镜】Wan2.2-SkyreelsV2图生长视频_2048675014282584066.json, 视频生成/图生视频/【全景别分镜】Wan2.2-SkyreelsV2图生长视频（未加密，可下载）_1979015207190171649.json, 视频生成/图生视频/【前推运镜48G先行版】wan2.1图生视频（全自动）_1933812324643819521.json, 视频生成/图生视频/【前推运镜】Wan2.2+FusionX图生视频（基础流）_1951105819150589953.json, 视频生成/图生视频/【后拉运镜48G先行版】wan2.1图生视频（全自动）_1931043397564608513.json, 视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_1950329201004077057.json, 视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_2039984689393442817.json, 视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_2043879387652694017.json, 视频生成/图生视频/【大师运镜】Wan2.2+FusionX图生视频｜高清版_1955450074836996098.json, 视频生成/图生视频/【打破次元】Wan2.2+FusionX图生视频_1955598143335403521.json, 视频生成/图生视频/【打破次元】Wan2.2+FusionX图生视频_2007976462116200450.json, 视频生成/图生视频/【打破次元】Wan2.2+FusionX图生视频_2037787300108705793.json, 视频生成/图生视频/【曲线运镜】Wan2.2+FusionX图生视频（基础流）_1951191570521464834.json, 视频生成/图生视频/【超级加速运镜】Wan2.2+FusionX图生视频_1951090702346297346.json]
+members: [视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087121681432268801.json, 视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087167996421828610.json, 视频生成/图生视频/8步高质量极速Minimax H3开源版_2105680108311896065.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099462450285473794.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099464334022897666.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2100551150692032513.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105262941045088257.json, 视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2105264487803740162.json, 视频生成/图生视频/Dasiwa MinimaxH3参考图生视频_2092127662033686529.json, 视频生成/图生视频/Dasiwa MinimaxH3参考图生视频_2100150349800755202.json, 视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 4步极速版_2090795830067417090.json, 视频生成/图生视频/MiniMax H3 FL2VA 首尾帧生视频｜INT8 Turbo 8步加速版_2090756411985850369.json, 视频生成/图生视频/MiniMax‑H3‑Remix+双采+加速+Lantent Upscaler参考生视频_2093178030909906946.json, 视频生成/图生视频/Minimax H3 边跳边换装版_2097658452012265473.json, 视频生成/图生视频/Minimax H3双时钟+双采+加速+Lantent Upscaler参考生视频v2_2090687227016863745.json, 视频生成/图生视频/Minimax H3双时钟+双采+加速+Lantent Upscaler参考生视频v2_2091039164530778113.json, 视频生成/图生视频/Minimax H3双时钟+双采+加速+Lantent Upscaler参考生视频v2_2094625265921126401.json, 视频生成/图生视频/Minimax H3双时钟+双采+加速+Lantent Upscaler图生视频V2_2090690174513664001.json, 视频生成/图生视频/Minimax H3双时钟+双采+加速+Lantent Upscaler图生视频V2_2090981502527037441.json, 视频生成/图生视频/Minimax H3双时钟+双采+加速+Lantent Upscaler图生视频_2090280306870931457.json, 视频生成/图生视频/Minimax H3双时钟+双采+加速+Lantent Upscaler图生视频_2090767546290106369.json, 视频生成/图生视频/Minimax H3双时钟+双采+加速+Lantent Upscaler图生视频_2093200891477319681.json, 视频生成/图生视频/Minimax H3横版文生视频Lantent Upscaler2_2091776496015863809.json, 视频生成/图生视频/Minimax+H3+Zs05+双采+加速+Lantent+Upscaler参考生视频_2092271863945846785.json, 视频生成/图生视频/MinimaxH3文生视频，文武双修_2114527500985520130.json, 视频生成/图生视频/双参战斗版 MiniMax H3开源 参考生视频_2095814447255347202.json, 视频生成/图生视频/最强的minimax商品视频展示_2104106491350441986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_45
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Skyreels V2 图生长视频_1979077194871902210.json、视频生成/图生视频/Wan2.2-SkyreelsV2图生长视频【全景别分镜】_2047489081042542593.json、视频生成/图生视频/Wan2.2-图生分镜 长视频_2018852274944090113.json、视频生成/图生视频/Wan2.2FusionX图生视频后拉运镜16：9_1981885885119643650.json、视频生成/图生视频/wan2.2 图生视频_2005491232086388737.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087121681432268801.json、视频生成/图生视频/10Eros Test4双时钟MiniMax海螺H3社群动态表情包_2087167996421828610.json、视频生成/图生视频/8步高质量极速Minimax H3开源版_2105680108311896065.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099462450285473794.json、视频生成/图生视频/8步高质量极速Minimax海螺h3图生视频加速优化版t8_2099464334022897666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：27
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPVisionLoader`
-- `CR String To Number`
-- `CR Text`
-- `FluxResolutionNode`
-- `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `InversionDemoLazyIndexSwitch`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `SetNode`
+全部 27 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 22/23 个有
-- `JWInteger` —— 22/23 个有
-- `WanVideoSetBlockSwap` —— 22/23 个有
-- `ColorCorrectOfUtils` —— 21/23 个有
-- `CreateCFGScheduleFloatList` —— 20/23 个有
-- `RHHiddenNodes` —— 19/23 个有
-- `CogVideoEnhanceAVideo` —— 17/23 个有
-- `WanVideoExperimentalArgs` —— 17/23 个有
-- `WanVideoSLG` —— 17/23 个有
-- `CR Text Concatenate` —— 14/23 个有
-- `WanVideoTorchCompileSettings` —— 13/23 个有
-- `ShowText|pysssss` —— 7/23 个有
-- `easy textSwitch` —— 3/23 个有
-- `AudioCombine` —— 2/23 个有
-- `AudioCrop` —— 2/23 个有
-- `Evaluate Integers` —— 2/23 个有
-- `LoadAudio` —— 2/23 个有
-- `MMAudioFeatureUtilsLoader` —— 2/23 个有
-- `MMAudioModelLoader` —— 2/23 个有
-- `MMAudioSampler` —— 2/23 个有
-- `PreviewAudio` —— 2/23 个有
-- `PreviewBridge` —— 2/23 个有
-- `RH_LLMAPI_NODE` —— 2/23 个有
-- `Text Multiline` —— 2/23 个有
-- `VHS_LoadVideo` —— 2/23 个有
-- `WanVideoTeaCache` —— 2/23 个有
-- `easy anythingIndexSwitch` —— 2/23 个有
-- `AudioCleanupNode` —— 1/23 个有
-- `ImageResizeKJv2` —— 1/23 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/23 个有
-- `RH_Captioner` —— 1/23 个有
-- `WanVideoApplyNAG` —— 1/23 个有
+- `LoadImage` —— 25/27 个有
+- `PrimitiveFloat` —— 25/27 个有
+- `ResolutionSelector` —— 23/27 个有
+- `ModelAttentionBackend` —— 20/27 个有
+- `SolAttnMiniMax` —— 17/27 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 15/27 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 15/27 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 15/27 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 15/27 个有
+- `Int` —— 4/27 个有
+- `LoraLoaderModelOnly` —— 4/27 个有
+- `DuckHideNode` —— 2/27 个有
+- `SaveImage` —— 2/27 个有
+- `WujiCleaner` —— 2/27 个有
+- `WujiImageLoader` —— 2/27 个有
+- `ConcatTextOfUtils` —— 1/27 个有
+- `RHMiniMaxH3PromptOptimizer` —— 1/27 个有
+- `StariAI-MiniMaxH3-Skill` —— 1/27 个有
+- `TimbreAudioLoader` —— 1/27 个有
+- `VAEDecode` —— 1/27 个有
+- `VAEDecodeAudio` —— 1/27 个有
+- `WujiAudioLoader` —— 1/27 个有
+- `孤海注释` —— 1/27 个有
 
 ## 典型参数
 

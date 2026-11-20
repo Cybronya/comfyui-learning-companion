@@ -1,44 +1,38 @@
 ---
 name: unknown_workflow_generic_726
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8725
-common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, RH_RhartImageG2OfficialImageToImage, SaveImage, Text, easy promptConcat, easy promptLine, easy showAnything]
+coverage: 0.7114
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/[全能图片G] 产品图智能解析与电商详情页批量生成 _ 智能图文排版 _ 电商套图 _ 详情页设计_2090278793947729922.json, 图片生成/图生图/手表工作流_2075871882183798785.json, 图片生成/图生图/电商主图_2073034857814515713.json, 图片生成/图生图/电商详情页生成10张_2057371280667668482.json]
+members: [图片生成/图生图/直播修复老照片 保持人物一致性_2050904406094299138.json, 图片生成/图生图/直播定制打卡图片 保持人物一致性_2050145580210507778.json, 图片生成/图生图/苗疆角色_1967234867551408129.json, 图片生成/文生图/v7  全能图片V1 谷歌顶级综合图像编辑_1961121059854553089.json, 图片生成/文生图/【GUGU】Nao 全能图片V1-单图编辑_文生图工作流_1985955538850721794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_726
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/[全能图片G] 产品图智能解析与电商详情页批量生成 _ 智能图文排版 _ 电商套图 _ 详情页设计_2090278793947729922.json、图片生成/图生图/手表工作流_2075871882183798785.json、图片生成/图生图/电商主图_2073034857814515713.json、图片生成/图生图/电商详情页生成10张_2057371280667668482.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/直播修复老照片 保持人物一致性_2050904406094299138.json、图片生成/图生图/直播定制打卡图片 保持人物一致性_2050145580210507778.json、图片生成/图生图/苗疆角色_1967234867551408129.json、图片生成/文生图/v7  全能图片V1 谷歌顶级综合图像编辑_1961121059854553089.json、图片生成/文生图/【GUGU】Nao 全能图片V1-单图编辑_文生图工作流_1985955538850721794.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `ProcessString`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
-- `Text`
-- `easy promptConcat`
-- `easy promptLine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText` —— 2/4 个有
-- `ShowText|pysssss` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `ImageSplitter` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `JjkText` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `RH_Nano_Banana_Image2Image` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 2/5 个有
+- `RH_Translator` —— 2/5 个有
 
 ## 典型参数
 

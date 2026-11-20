@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1547
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.95
-common_nodes: [ImageConcanate, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.75
+common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, PreviewAny, PreviewImage, RH_LLMAPI_NODE, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/果味GW-图像高清修复_2017936048059322369.json, 图片生成/图生图/王泽荣耀-全能生图PRO_2046409071376470018.json]
+members: [图片生成/反推提示词/首尾帧工作流_1994597749863686146.json, 图片生成/反推提示词/首尾帧工作流_2016031083736862722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1547
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/果味GW-图像高清修复_2017936048059322369.json、图片生成/图生图/王泽荣耀-全能生图PRO_2046409071376470018.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/首尾帧工作流_1994597749863686146.json、图片生成/反推提示词/首尾帧工作流_2016031083736862722.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Prompt Text`
 - `ImageConcanate`
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 1/2 个有
 
 ## 典型参数
 

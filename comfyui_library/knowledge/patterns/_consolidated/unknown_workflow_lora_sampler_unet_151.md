@@ -2,73 +2,103 @@
 name: unknown_workflow_lora_sampler_unet_151
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.8486
-common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, ImageScaleToTotalPixels, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.4384
+common_nodes: [BasicScheduler, BatchCount+, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, ExtendIntermediateSigmas, GetImageRangeFromBatch, GetNode, GetVideoComponents, H3AudioRefineSampler, H3FrozenVideoCache, ImageAddNoise, ImageBatchMulti, KSamplerSelect, LoadVideo, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3AudioGuideFeather, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, SaveVideo, SetNode, StringReplace, Text Concatenate, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VideoFrameSample, VideoTemporalCrop, easy batchAnything, easy float, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy lengthAnything, easy mergeVideosFromPaths, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy promptLine, easy saveVideo, easy string]
+problems: []
 missing: []
-members: [图片生成/图生图/千问edit2511图像编辑批量版_2070326343346253826.json, 图片生成/图生图/千问edit2511批量图像统一编辑_2010942558175760385.json, 图片生成/图生图/千问edit2511批量图像编辑_2010723096864493569.json, 图片生成/图生图/千问edit2511批量图像编辑_2070328739568898049.json, 图片生成/图生图/少儿_迁移_换装_抠图_runninghub简化版本_2079378747140165634.json]
+members: [图片生成/反推提示词/MiniMax H3超灵活的导演台，SelfLift双采、无缝无色差超长视频 (2.0)_2106650378539458562.json, 图片生成/文生图/MiniMax H3超灵活的导演台，SelfLift双采、无缝衔接超长视频 (无缝双采1.5)_2100251279346987010.json, 平台全量/MiniMax_H3超灵活的导演台，无缝无色差，适配武戏快速动作_(2.1)_2118526487619006466.json, 视频生成/图生视频/MiniMax H3超灵活的导演台，无缝无色差，适配武戏快速动作 (2.1)_2114312557887574017.json, 视频生成/文生视频/MiniMax H3超灵活的导演台，双采、无缝衔接超长视频，音频修复(无缝1.0)_2096611262351364097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_151
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/千问edit2511图像编辑批量版_2070326343346253826.json、图片生成/图生图/千问edit2511批量图像统一编辑_2010942558175760385.json、图片生成/图生图/千问edit2511批量图像编辑_2010723096864493569.json、图片生成/图生图/千问edit2511批量图像编辑_2070328739568898049.json、图片生成/图生图/少儿_迁移_换装_抠图_runninghub简化版本_2079378747140165634.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/MiniMax H3超灵活的导演台，SelfLift双采、无缝无色差超长视频 (2.0)_2106650378539458562.json、图片生成/文生图/MiniMax H3超灵活的导演台，SelfLift双采、无缝衔接超长视频 (无缝双采1.5)_2100251279346987010.json、平台全量/MiniMax_H3超灵活的导演台，无缝无色差，适配武戏快速动作_(2.1)_2118526487619006466.json、视频生成/图生视频/MiniMax H3超灵活的导演台，无缝无色差，适配武戏快速动作 (2.1)_2114312557887574017.json、视频生成/文生视频/MiniMax H3超灵活的导演台，双采、无缝衔接超长视频，音频修复(无缝1.0)_2096611262351364097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **可信度**：中等可信
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CFGNorm`
+- `BasicScheduler`
+- `BatchCount+`
 - `CLIPLoader`
-- `FluxKontextMultiReferenceLatentMethod`
-- `ImageScaleToTotalPixels`
-- `KSampler`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `ExtendIntermediateSigmas`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `GetVideoComponents`
+- `H3AudioRefineSampler`
+- `H3FrozenVideoCache`
+- `ImageAddNoise`
+- `ImageBatchMulti`
+- `KSamplerSelect`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3AudioGuideFeather`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `SaveVideo`
+- `SetNode`
+- `StringReplace`
+- `Text Concatenate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VideoFrameSample`
+- `VideoTemporalCrop`
+- `easy batchAnything`
+- `easy float`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy indexAnything`
+- `easy lengthAnything`
+- `easy mergeVideosFromPaths`
+- `easy minimaxH3ToVideo`
+- `easy multiTrackEditor`
+- `easy multiTrackInfoOutput`
+- `easy multiTrackTaskOutput`
+- `easy promptLine`
+- `easy saveVideo`
+- `easy string`
 
 **可变部分**（部分 workflow 才有）：
-- `HAIGC_LoadImagesFromZip` —— 4/5 个有
-- `HAIGC_SaveImagesToZip` —— 4/5 个有
-- `ImageFromBatch+` —— 4/5 个有
-- `ImageListToBatch+` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `CR Text` —— 2/5 个有
-- `BackgroundEraseNetwork` —— 1/5 个有
-- `ETN_LoadImageBase64` —— 1/5 个有
-- `ImageConcanate` —— 1/5 个有
+- `SelfLiftH3Sampler` —— 4/5 个有
+- `ColorTransfer` —— 3/5 个有
+- `ComfySwitchNode` —— 3/5 个有
+- `LoraLoaderBypassModelOnly` —— 3/5 个有
+- `BasicGuider` —— 1/5 个有
+- `LTXVConcatAVLatent` —— 1/5 个有
+- `LTXVSeparateAVLatent` —— 1/5 个有
+- `ManualSigmas` —— 1/5 个有
+- `MinimaxH3LatentUpscaler3D` —— 1/5 个有
+- `RandomNoise` —— 1/5 个有
+- `SamplerCustomAdvanced` —— 1/5 个有
+- `SplitSigmas` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 4 - 6 | 5 | 86% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 6，5 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

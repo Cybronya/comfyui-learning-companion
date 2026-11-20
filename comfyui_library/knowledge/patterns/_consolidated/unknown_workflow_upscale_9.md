@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_upscale_9
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: moderate
-coverage: 0.797286
-common_nodes: [ImageUpscaleWithModel, LoadImage, SaveImage, UpscaleModelLoader]
+coverage: 0.984111
+common_nodes: [LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/图片清晰锻造_2082474759727697922.json, 图片生成/图生图/基础超分算法（模型放大）工作流（自用）_2004573662835605505.json, 图片生成/图生图/文字无损高清放大（超简单高效工作流）_2077032201287462914.json, 图片生成/图生图/文字高清放大_文本修复_高清放大_1979195991507243009.json, 图片生成/图生图/文字高清放大_文本修复_高清放大_2084102513225199618.json, 图片生成/图生图/文本修复-文字无损高清放大_2061708019309826049.json, 图片生成/图生图/模糊文字变高清化_1916792207783956482.json]
+members: [平台全量/(支持真人)超能视频2.0视频动作参考（0.32元_秒）_2034958365050277889.json, 平台全量/High-Definition Video ZoomTopazLabs 视频高清放大_2095690255302225922.json, 平台全量/TopazLabs 视频放大_2007668648290295809.json, 平台全量/TopazLabs 视频放大_2054441960198426626.json, 平台全量/TopazLabs 视频超清放大｜4K放大_2104562189532229633.json, 平台全量/TopazLabs 视频高清放大 4K_2085378840704143361.json, 平台全量/TopazLabs 视频高清放大 _ 视频4K高清修复_2066175524732497921.json, 平台全量/TopazLabs+视频超清放大｜4K放大_2104569485872160770.json, 平台全量/TopazLabs-视频高清放大-支持4K_2055493520152113154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_9
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/图片清晰锻造_2082474759727697922.json、图片生成/图生图/基础超分算法（模型放大）工作流（自用）_2004573662835605505.json、图片生成/图生图/文字无损高清放大（超简单高效工作流）_2077032201287462914.json、图片生成/图生图/文字高清放大_文本修复_高清放大_1979195991507243009.json、图片生成/图生图/文字高清放大_文本修复_高清放大_2084102513225199618.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/(支持真人)超能视频2.0视频动作参考（0.32元_秒）_2034958365050277889.json、平台全量/High-Definition Video ZoomTopazLabs 视频高清放大_2095690255302225922.json、平台全量/TopazLabs 视频放大_2007668648290295809.json、平台全量/TopazLabs 视频放大_2054441960198426626.json、平台全量/TopazLabs 视频超清放大｜4K放大_2104562189532229633.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ImageUpscaleWithModel`
-- `LoadImage`
-- `SaveImage`
-- `UpscaleModelLoader`
+全部 9 个 workflow 都包含：
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 6/7 个有
-- `ImageTile+` —— 5/7 个有
-- `ImageUntile+` —— 5/7 个有
-- `easy imageColorMatch` —— 5/7 个有
-- `PreviewImage` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `RH_TopazLabs_VideoUpscale` —— 8/9 个有
+- `LoadImage` —— 7/9 个有
+- `Label (rgthree)` —— 3/9 个有
+- `RH_SeedanceVideoRefToVideo` —— 1/9 个有
 
 ## 典型参数
 

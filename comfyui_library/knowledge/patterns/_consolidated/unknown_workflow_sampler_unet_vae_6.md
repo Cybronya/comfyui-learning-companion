@@ -1,74 +1,77 @@
 ---
 name: unknown_workflow_sampler_unet_vae_6
 type: Unknown Workflow
-frequency: 27
-level: moderate
-coverage: 0.67937
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader]
+frequency: 30
+level: strong
+coverage: 0.725833
+common_nodes: [CLIPLoader, CR Prompt Text, EmptyLatentImage, Image Comparer (rgthree), KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewImage, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/(Singularity+Vdn+Lightx2v)MiniMax H3单采极速参考生视频V2_2096501713606889473.json, 视频生成/图生视频/(Singularity+Vdn文戏版)MiniMax H3单采极速参考生视频V2_2096495207192809474.json, 视频生成/图生视频/Minimax-H3-图生视频(双时钟+8步极速)_2085725669090217986.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2091862483253420033.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2094377324660748290.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2094389923125227522.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2107425978141204482.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2107430235129077762.json, 视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频短剧漫剧_2091841380472676354.json, 视频生成/图生视频/Minimax-H3极速2分钟出5秒-图生_多参生视频(双时钟-8步lora)_2085608744465035265.json, 视频生成/图生视频/MinimaxH3文生视频，文武双修_2114527500985520130.json, 视频生成/图生视频/Vdn MiniMax H3极速参考生视频_2096241438156742657.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-高配版_2093430287630946306.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-高配版_2101959513443229697.json, 视频生成/图生视频/【MINIMAX-H3】文戏-高配版_2095322428657455106.json, 视频生成/图生视频/【MINIMAX-H3】文戏短剧工作流_2095794773864050689.json, 视频生成/图生视频/【MINIMAX-H3】文戏高配版_2109312312128663553.json, 视频生成/图生视频/【MiniMax H3】多图参考视频-T8双采样加速_2104070548694331394.json, 视频生成/图生视频/【MiniMax H3】首帧生视频-T8双采样加速_2099383411554209793.json, 视频生成/图生视频/人像口播丨MiniMax H3丨参考生音视频_2099787278662070274.json, 视频生成/图生视频/全网最强！Miniimax文戏工作流！！！！_2094332513748611073.json, 视频生成/文生视频/MINIMAX H3 双采全能参考_2094111351902924801.json, 视频生成/文生视频/MINIMAX-H3全能参考-高配文戏版_2095291262697033729.json, 视频生成/文生视频/【MINIMAX-H3】八月最强文戏-高配版_2098584847945125889.json, 视频生成/文生视频/【二采-高配版】MinMaxh3日常短剧专用_2095187242611466242.json, 视频生成/文生视频/啊癫 MINIMAX短剧工作流（去油版)_2094462071349014529.json, 音频生成/音频生成/MiniMax_H3双采全能工作流V2-音频驱动数字人-参考生视频_2100058854255063042.json]
+members: [图片生成/反推提示词/qwen Image 2.1 全功能工作流_2101887895048114177.json, 图片生成/图生图/Qwen Image 2.1 图像编辑_2104466208149032961.json, 图片生成/图生图/Qwen Image 2.1图像合集_2101928184118861826.json, 图片生成/图生图/Qwen Image 2.1工作流合集 pose_James_2115394242834157569.json, 图片生成/图生图/Qwen Image 2.1工作流合集_2102019794622042113.json, 图片生成/图生图/Qwen Image 2.1工作流合集_2113788469200908289.json, 图片生成/图生图/Qwen image 2.1多图编辑_2104503241475186689.json, 图片生成/图生图/qwen image2.1AI短剧漫剧人物三视图_2103430511829016578.json, 图片生成/图生图/qwen image2.1产品细节图_2102470856244031490.json, 图片生成/图生图/【Qwen Image 2.1】图像生成 双图版_2102369979093053442.json, 图片生成/图生图/【Qwen Image 2.1】图像生成大合集20步_2102363823524114434.json, 图片生成/图生图/【Qwen Image 2.1】图像生成大合集_2102355136613015554.json, 图片生成/图生图/【Qwen Image 2.1】图像生成大合集_2112774389644222465.json, 图片生成/图生图/【Qwen Image 2.1】图像生成大合集_2113251458060742658.json, 图片生成/图生图/【Qwen Image 2.1】图像生成大合集_2114592520796725250.json, 图片生成/图生图/【Qwen Image 2.1】图生图_2102944785588908034.json, 图片生成/图生图/【Qwen_Image_2.1】图像生成大合集_2114891908555304961.json, 图片生成/图生图/【Qwen_Image_2.1】图像生成大合集_2115621014829887490.json, 图片生成/图生图/【Qwen_Image_2.1】图像生成大合集_2115668228910440450.json, 图片生成/图生图/图像生成大合集【Qwen Image 2.1】_2102573883814666241.json, 图片生成/文生图/Qwen Image 2.1工作流合集_2101942307816820738.json, 图片生成/文生图/Qwen image 2.1人物文生图_2112139836655226882.json, 图片生成/文生图/qwen Image 2.1 全功能工作流_james_2116197491493396481.json, 图片生成/文生图/【Qwen Image 2.1】图像生成大合集_2101880819102081026.json, 图片生成/文生图/【Qwen Image 2.1】图像生成大合集_2104545244179165185.json, 图片生成/文生图/【Qwen Image 2.1】图像生成大合集_2104558210060480513.json, 图片生成/文生图/【Qwen Image 2.1】图像生成大合集_2108808492491567105.json, 平台全量/Qwen Image 2.1 人物换背景_2106931711295713281.json, 视频生成/图生视频/Qwen_Image_2.1_人物换背景_2107641147056283650.json, 视频生成/图生视频/【Qwen_Image_2.1】图生图_2102955819938705410.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（视频生成/图生视频/(Singularity+Vdn+Lightx2v)MiniMax H3单采极速参考生视频V2_2096501713606889473.json、视频生成/图生视频/(Singularity+Vdn文戏版)MiniMax H3单采极速参考生视频V2_2096495207192809474.json、视频生成/图生视频/Minimax-H3-图生视频(双时钟+8步极速)_2085725669090217986.json、视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2091862483253420033.json、视频生成/图生视频/Minimax-H3开源 参考生视频 创意视频 短剧漫剧_2094377324660748290.json…）
+> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（图片生成/反推提示词/qwen Image 2.1 全功能工作流_2101887895048114177.json、图片生成/图生图/Qwen Image 2.1 图像编辑_2104466208149032961.json、图片生成/图生图/Qwen Image 2.1图像合集_2101928184118861826.json、图片生成/图生图/Qwen Image 2.1工作流合集 pose_James_2115394242834157569.json、图片生成/图生图/Qwen Image 2.1工作流合集_2102019794622042113.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：27
-- **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **样本数**：30
+- **可信度**：强结论
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 27 个 workflow 都包含：
-- `BasicGuider`
+全部 30 个 workflow 都包含：
 - `CLIPLoader`
 - `CR Prompt Text`
-- `ComfyMathExpression`
+- `EmptyLatentImage`
+- `Image Comparer (rgthree)`
+- `KSampler`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `PrimitiveFloat`
-- `RandomNoise`
+- `PreviewImage`
+- `QwenImage21Cache`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3DualClockSamplerT8` —— 24/27 个有
-- `VHS_VideoCombine` —— 24/27 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 23/27 个有
-- `SolAttnMiniMax` —— 23/27 个有
-- `ModelAttentionBackend` —— 22/27 个有
-- `LoraLoaderBypassModelOnly` —— 21/27 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 16/27 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 16/27 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 16/27 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 16/27 个有
-- `GetNode` —— 14/27 个有
-- `SetNode` —— 14/27 个有
-- `LoadAudio` —— 12/27 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/27 个有
-- `PreviewImage` —— 10/27 个有
-- `忽略多组孤海` —— 8/27 个有
-- `LoraLoaderModelOnly` —— 5/27 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/27 个有
-- `CreateVideo` —— 3/27 个有
-- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 3/27 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 3/27 个有
-- `SaveVideo` —— 3/27 个有
-- `Float` —— 1/27 个有
-- `MiniMaxChunkFeedForward` —— 1/27 个有
-- `MiniMaxLowVRAMAttention` —— 1/27 个有
-- `VantageImagesOrNone` —— 1/27 个有
-- `easy cleanGpuUsed` —— 1/27 个有
+- `easy setNode` —— 29/30 个有
+- `Anything Everywhere3` —— 28/30 个有
+- `ComfySwitchNode` —— 28/30 个有
+- `TextGenerateLTX2Prompt` —— 28/30 个有
+- `GetNode` —— 27/30 个有
+- `SetNode` —— 27/30 个有
+- `ShowText|pysssss` —— 27/30 个有
+- `BatchImagesNode` —— 24/30 个有
+- `Fast Groups Bypasser (rgthree)` —— 24/30 个有
+- `PreviewAny` —— 24/30 个有
+- `easy showAnything` —— 23/30 个有
+- `Seed (rgthree)` —— 21/30 个有
+- `LoraLoaderModelOnly` —— 4/30 个有
+- `EmptyImage` —— 2/30 个有
+- `RepeatLatentBatch` —— 2/30 个有
+- `llama_cpp_instruct_adv` —— 2/30 个有
+- `llama_cpp_model_loader` —— 2/30 个有
+- `llama_cpp_parameters` —— 2/30 个有
+- `JjkText` —— 1/30 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1024 | 1024 - 1024 | 30 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 30 | 100% |
+| 采样步数 | 40 | 20 - 40 | 30 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 30 | 100% |
+| 采样算法 | euler | - | 30 | 100% |
+| 调度器 | simple | - | 30 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 30 | 100% |
 
 ## 常见问题
 
@@ -76,4 +79,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 1024，观测区间 1024 - 1024，30 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，30 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 40，观测区间 20 - 40，30 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，30 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，30 个样本，一致性 100%
+- 调度器 最常用 simple，30 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，30 个样本，取值集中（一致性 100%）

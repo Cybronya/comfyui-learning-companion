@@ -3,34 +3,29 @@ name: unknown_workflow_generic_1450
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.636
-common_nodes: [EmptyImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage, workflow>人物皮肤高清, workflow>克莱因高清]
+coverage: 1
+common_nodes: [BriaRemoveVideoBackground, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/人物皮肤质感+克莱因高清_2098953990485659649.json, 图片生成/图生图/人物皮肤质感+克莱因高清_2099065680569135105.json]
+members: [comfyui-workflow-templates-json/api_bria_remove_video_background.json, comfyui-workflow-templates-json/utility-bria_remove_video_background.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1450
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人物皮肤质感+克莱因高清_2098953990485659649.json、图片生成/图生图/人物皮肤质感+克莱因高清_2099065680569135105.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_bria_remove_video_background.json、comfyui-workflow-templates-json/utility-bria_remove_video_background.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `EmptyImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-- `workflow>人物皮肤高清`
-- `workflow>克莱因高清`
+- `BriaRemoveVideoBackground`
+- `LoadVideo`
+- `SaveVideo`
 
 ## 典型参数
 

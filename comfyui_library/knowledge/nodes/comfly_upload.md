@@ -29,7 +29,7 @@ Input
 
 常见取值：
 
-- `["sk-sLUhG5HyS6eqobKqNhOtbdW5rjcRh2yUyTwvPIlNTqIced4A"]`（1 次）
+- `["REDACTED0000000000000000000000000000000000000000000"]`（1 次）
 
 ## 可信度
 

@@ -2,82 +2,74 @@
 name: unknown_workflow_lora_sampler_clip_53
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.854778
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode]
-problems: []
+level: strong
+coverage: 0.931667
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LTX-2.3_MSR_sample_workflow_V1_2063384595684483073.json, 视频生成/图生视频/LTX-2.3_MSR_多参考图生视频_2063553496401666050.json, 视频生成/图生视频/LTX-2.3_小seedance2全能参考节点_2065439100508921858.json, 视频生成/图生视频/LTX2.3 Licon-MSR 多图参考正式版+反推提示词_2066036494720126978.json, 视频生成/图生视频/LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json, 视频生成/图生视频/aidir-LTX2.3多图参考（小）Seedance 2.0_2069617886041305089.json, 视频生成/图生视频/光锥实验室开源LTX-2.3_MSR多参生视频_2067788916261998594.json, 视频生成/图生视频/光锥实验室开源LTX-2.3_MSR多参生视频_2073325205451268097.json, 视频生成/文生视频/LTX2.3 Licon-MSR 多图参考正式版_2067553179402854402.json]
+members: [图片生成/图生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079925343082864641.json, 图片生成/文生图/Qwen-Image-LLM计算工作流-计算器_2009215925676937218.json, 图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079024122377629697.json, 图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079402711237353473.json, 图片生成/文生图/Z-image-Turbo（如梦似幻+瑶光lora）文生图+高清放大_2063598346006253569.json, 图片生成/文生图/Z-image-base基础文生图+高清放大_2029451837371326465.json, 图片生成/文生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079025904818409473.json, 图片生成/文生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079877016463171586.json, 图片生成/文生图/Z-image-base（如梦似幻+瑶光lora）文生图+高清放大_2063588760020930562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_53
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_MSR_sample_workflow_V1_2063384595684483073.json、视频生成/图生视频/LTX-2.3_MSR_多参考图生视频_2063553496401666050.json、视频生成/图生视频/LTX-2.3_小seedance2全能参考节点_2065439100508921858.json、视频生成/图生视频/LTX2.3 Licon-MSR 多图参考正式版+反推提示词_2066036494720126978.json、视频生成/图生视频/LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Z-image-base如梦似幻+加速Lora文生图+高清放大_2079925343082864641.json、图片生成/文生图/Qwen-Image-LLM计算工作流-计算器_2009215925676937218.json、图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079024122377629697.json、图片生成/文生图/Z-image-Turbo如梦似幻 加速lora文生图+高清放大_2079402711237353473.json、图片生成/文生图/Z-image-Turbo（如梦似幻+瑶光lora）文生图+高清放大_2063598346006253569.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
-- `LoadImage`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `CR Text`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXAVTextEncoderLoader` —— 6/9 个有
-- `LTXVAudioVAELoader` —— 6/9 个有
-- `LowVRAMCheckpointLoader` —— 6/9 个有
-- `LTX2_NAG` —— 4/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `PromptRelayEncode` —— 4/9 个有
-- `DualCLIPLoader` —— 3/9 个有
-- `GetNode` —— 3/9 个有
-- `SetNode` —— 3/9 个有
-- `UNETLoader` —— 3/9 个有
-- `VAELoader` —— 3/9 个有
-- `CM_IntToFloat` —— 2/9 个有
-- `ComfyMathExpression` —— 2/9 个有
-- `LTXVSetAudioRefTokens` —— 2/9 个有
-- `MuyeTextEditOutput` —— 2/9 个有
-- `SimpleCalculatorKJ` —— 2/9 个有
-- `AtSignCLIPTextEncode` —— 1/9 个有
-- `CR Text` —— 1/9 个有
-- `MultiIntFormula` —— 1/9 个有
+- `easy showAnything` —— 8/9 个有
+- `LayerUtility: PurgeVRAM` —— 7/9 个有
+- `SeedVR2LoadDiTModel` —— 7/9 个有
+- `SeedVR2LoadVAEModel` —— 7/9 个有
+- `SeedVR2VideoUpscaler` —— 7/9 个有
+- `easy getNode` —— 7/9 个有
+- `easy setNode` —— 7/9 个有
+- `llama_cpp_instruct_adv` —— 7/9 个有
+- `llama_cpp_model_loader` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
+- `ModelSamplingAuraFlow` —— 6/9 个有
+- `ConditioningZeroOut` —— 1/9 个有
+- `RHHiddenNodes` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 97 - 241 | 9 | 80% |
-| 高度 | 24 | 24 - 50 | 9 | 64% |
+| 采样步数 | 8 | 1 - 8 | 9 | 70% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | res_multistep | - | 9 | 89% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 97 - 241，9 个样本
-- 高度 中位数 24，观测区间 24 - 50，9 个样本
+- 采样步数 中位数 8，观测区间 1 - 8，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，9 个样本，一致性 89%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（10/9 个样本）：Steps较低可能导致细节不足

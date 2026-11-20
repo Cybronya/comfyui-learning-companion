@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_506
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.714
-common_nodes: [JjkText, LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo]
+coverage: 0.961714
+common_nodes: [AudioCrop, AudioSeparation, FL_CosyVoice3_ModelLoader, FL_CosyVoice3_ZeroShot, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/daVinci-MagiHuman 图生音频视频工作流_2039901911993815042.json, 视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频_2040446891929899010.json, 视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频工作流_2040634061848322050.json, 视频生成/图生视频/达芬奇DaVinci-MagiHuman 图生视频基础工作流 V1.0_2038700862385692673.json, 视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2037582254259572738.json, 视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2043167196280524802.json]
+members: [音频生成/音频生成/CosyVoice3 声音克隆_2032341661400961026.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆_2028655923568320514.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆_2041132378009112577.json, 音频生成/音频生成/CosyVoice3 高精度声音克隆：音色与情绪 1_1 完美复刻_2009978109180780545.json, 音频生成/音频生成/CosyVoice3-声音克隆_2063871367589748737.json, 音频生成/音频生成/CosyVoice3_2085675869581963265.json, 音频生成/音频生成/高精度声音克隆：支持外语、老外普通话_2079952082660052993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_506
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/daVinci-MagiHuman 图生音频视频工作流_2039901911993815042.json、视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频_2040446891929899010.json、视频生成/图生视频/daVinci-MagiHuman图片说话视频图片生成数字人视频工作流_2040634061848322050.json、视频生成/图生视频/达芬奇DaVinci-MagiHuman 图生视频基础工作流 V1.0_2038700862385692673.json、视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2037582254259572738.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/CosyVoice3 声音克隆_2032341661400961026.json、音频生成/音频生成/CosyVoice3 高精度声音克隆_2028655923568320514.json、音频生成/音频生成/CosyVoice3 高精度声音克隆_2041132378009112577.json、音频生成/音频生成/CosyVoice3 高精度声音克隆：音色与情绪 1_1 完美复刻_2009978109180780545.json、音频生成/音频生成/CosyVoice3-声音克隆_2063871367589748737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `RH_MagiHumanGenerate`
-- `RH_MagiHumanModelLoader`
-- `SaveVideo`
+全部 7 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `FL_CosyVoice3_ModelLoader`
+- `FL_CosyVoice3_ZeroShot`
+- `LoadAudio`
+- `SaveAudio`
+
+**可变部分**（部分 workflow 才有）：
+- `MuyeTextEditOutput` —— 3/7 个有
+- `JjkText` —— 2/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
 
 ## 典型参数
 

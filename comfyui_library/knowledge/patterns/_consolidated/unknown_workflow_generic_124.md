@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_124
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.851214
-common_nodes: [LoadImage, RH_AlibabaHappyhorse10ImageToVideo, SaveVideo]
+coverage: 0.889667
+common_nodes: [LoadAudio, MegaTTS3Run, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/Happy horse图生视频_2048729768073367554.json, 视频生成/图生视频/Happy horse图生视频_2048930713545744385.json, 视频生成/图生视频/HappyHorse-快乐马-图生视频_2048795322029187073.json, 视频生成/图生视频/Happyhorse 1.0 图生视频_2048642132843433986.json, 视频生成/图生视频/Happyhorse 1.0 图生视频_2048774252291170306.json, 视频生成/图生视频/Happyhorse 视频新王图生视频_2048674844094504962.json, 视频生成/图生视频/happy horse图生视频_2048976027916967937.json, 视频生成/图生视频/happyhores图生视频_2050538420602195970.json, 视频生成/图生视频/happyhorse-1.0 快乐马+图生视频_2048746487852572674.json, 视频生成/图生视频/happyhorse1.0-图生视频_2048955130673897473.json, 视频生成/图生视频/happyhorse图生视频_时间定格➕一巴掌_2050467288574377986.json, 视频生成/图生视频/happyhorse图生视频（快乐马）_2048769410881556481.json, 视频生成/图生视频/快乐马_图生视频 Happyhorse_I2V_2048700129443581953.json, 视频生成/图生视频/视频丨阿里happyhorse快乐小马图生视频_2054193821549907970.json]
+members: [图片生成/图生图/MegaTTS3语音迁移_2073345226973999106.json, 数字人/数字人/MegaTTS3单人语音迁移V2 多语言多英文混合克隆_1962942992338366466.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1962580330924359681.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1965450369159581697.json, 音频生成/音频生成/MegaTTS3单人语音迁移V2_1992869226421571586.json, 音频生成/音频生成/MegaTTS3双人语音迁移V2_1962880712204587009.json, 音频生成/音频生成/MegaTTS3双人语音迁移V2_1965450428429254657.json, 音频生成/音频生成/商用版-最强语音克隆 单人克隆版_1998255017779978241.json, 音频生成/音频生成/最强MegaTTS3单人语音克隆_1964218831621246977.json, 音频生成/音频生成/最强MegaTTS3双人语音克隆_1964218900688850946.json, 音频生成/音频生成/最强语音克隆_MegaTTS3_1963165246057852929.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 单人克隆版👿_1964879017734193153.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 单人克隆版👿_1972202277962444801.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 双人克隆版👿_1964879052882460674.json, 音频生成/音频生成/👿MegaTTS3 最强语音克隆 双人克隆版👿_1972203985589497858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_124
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Happy horse图生视频_2048729768073367554.json、视频生成/图生视频/Happy horse图生视频_2048930713545744385.json、视频生成/图生视频/HappyHorse-快乐马-图生视频_2048795322029187073.json、视频生成/图生视频/Happyhorse 1.0 图生视频_2048642132843433986.json、视频生成/图生视频/Happyhorse 1.0 图生视频_2048774252291170306.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/MegaTTS3语音迁移_2073345226973999106.json、数字人/数字人/MegaTTS3单人语音迁移V2 多语言多英文混合克隆_1962942992338366466.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1962580330924359681.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1965450369159581697.json、音频生成/音频生成/MegaTTS3单人语音迁移V2_1992869226421571586.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `LoadImage`
-- `RH_AlibabaHappyhorse10ImageToVideo`
-- `SaveVideo`
+全部 15 个 workflow 都包含：
+- `LoadAudio`
+- `MegaTTS3Run`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 7/14 个有
-- `PreviewAny` —— 1/14 个有
-- `SaveImage` —— 1/14 个有
+- `CR Prompt Text` —— 14/15 个有
+- `PreviewAudio` —— 10/15 个有
+- `SaveAudioMP3` —— 9/15 个有
+- `MultiLinePromptMG` —— 8/15 个有
+- `MegaTTS3` —— 2/15 个有
 
 ## 典型参数
 

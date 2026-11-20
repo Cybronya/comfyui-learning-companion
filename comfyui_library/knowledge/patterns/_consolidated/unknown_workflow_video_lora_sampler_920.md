@@ -1,57 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_920
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5065
-common_nodes: [ComfyMathExpression, GetNode, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, PreviewAny, SetNode, TrimAudioDuration, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [CLIPVisionLoader, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoUniAnimateDWPoseDetector, WanVideoUniAnimatePoseInput, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/longcat avartart 1.5-single_2061466076168409089.json, 视频生成/图生视频/longcat avartart 1.5-数字人-人物对口型-单人_2063165866346377218.json]
+members: [视频生成/图生视频/极速万物跳舞Fusionx+Lightx2v+MagCache万相wan2.1万物跳舞打拳30帧流畅_1914138516001910786.json, 视频生成/图生视频/跳舞转绘_1921566992392978434.json, 视频生成/图生视频/🦖wan Unianimate_1934795083336065026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_920
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/longcat avartart 1.5-single_2061466076168409089.json、视频生成/图生视频/longcat avartart 1.5-数字人-人物对口型-单人_2063165866346377218.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/极速万物跳舞Fusionx+Lightx2v+MagCache万相wan2.1万物跳舞打拳30帧流畅_1914138516001910786.json、视频生成/图生视频/跳舞转绘_1921566992392978434.json、视频生成/图生视频/🦖wan Unianimate_1934795083336065026.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ComfyMathExpression`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadAudio`
+全部 3 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `ImageResizeKJ`
 - `LoadImage`
-- `LongCatAvatarWhisperEmbeds`
-- `PreviewAny`
-- `SetNode`
-- `TrimAudioDuration`
+- `LoadWanVideoT5TextEncoder`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimatePlus BlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoTextEncodeCached`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoUniAnimateDWPoseDetector`
+- `WanVideoUniAnimatePoseInput`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FloatConstant` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `WanVideoTeaCache` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `VHS_VideoInfoLoaded` —— 1/3 个有
+- `WanVideoExperimentalArgs` —— 1/3 个有
+- `WanVideoMagCache` —— 1/3 个有
 
 ## 典型参数
 
@@ -63,4 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

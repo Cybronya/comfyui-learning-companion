@@ -1,0 +1,70 @@
+---
+key: 平台全量/换脸Flux2Klein+全能编辑2.0版 人物一致 自然真实 多图编辑加速版_2049731967280787458.json
+name: 换脸Flux2Klein+全能编辑2.0版 人物一致 自然真实 多图编辑加速版_2049731967280787458
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/换脸Flux2Klein+全能编辑2.0版 人物一致 自然真实 多图编辑加速版_2049731967280787458.json
+hash: fdcf5c869e0e6bab
+coverage: 0.894737
+learned_at: 2026-11-14 02:08:07
+nodes: [SaveImage, LoadImage, Image Comparer (rgthree), LoadImage, SaveImage, RH_Nano_Banana2_Gemini31Flash, Image Comparer (rgthree), RH_Nano_Banana2_Image2Image, MuyeTextEditOutput, Fast Groups Bypasser (rgthree), KSamplerSelect, CFGGuider, SamplerCustomAdvanced, RandomNoise, UNETLoader, CLIPLoader, VAELoader, ImageScaleToTotalPixels, ConditioningZeroOut, ReferenceLatent, ReferenceLatent, VAEEncode, ReferenceLatent, ReferenceLatent, CLIPTextEncode, Flux2Scheduler, ImageScaleToTotalPixels, VAEDecode, ImageConcanate, JWFloat, VAEEncode, ImageConcanate, SaveImage, SaveImage, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, CR Text]
+patterns: []
+missing: []
+---
+
+# 平台全量/换脸Flux2Klein+全能编辑2.0版 人物一致 自然真实 多图编辑加速版_2049731967280787458.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/换脸Flux2Klein+全能编辑2.0版 人物一致 自然真实 多图编辑加速版_2049731967280787458.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（38 个）：
+- `SaveImage`
+- `LoadImage`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `SaveImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `Image Comparer (rgthree)`
+- `RH_Nano_Banana2_Image2Image`
+- `MuyeTextEditOutput`
+- `Fast Groups Bypasser (rgthree)`
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `ImageScaleToTotalPixels`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `CLIPTextEncode` ★核心
+- `Flux2Scheduler`
+- `ImageScaleToTotalPixels`
+- `VAEDecode` ★核心
+- `ImageConcanate`
+- `JWFloat`
+- `VAEEncode` ★核心
+- `ImageConcanate`
+- `SaveImage`
+- `SaveImage`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `LoadImage`
+- `CR Text`
+
+## 知识
+
+覆盖率 **89%**（34/38）
+
+**有卡**：`SaveImage`、`LoadImage`、`RH_Nano_Banana2_Gemini31Flash`、`RH_Nano_Banana2_Image2Image`、`MuyeTextEditOutput`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`RandomNoise`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ImageScaleToTotalPixels`、`ConditioningZeroOut`、`ReferenceLatent`、`VAEEncode`、`CLIPTextEncode`、`Flux2Scheduler`、`VAEDecode`、`ImageConcanate`、`JWFloat`、`CR Text`
+
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPLoader、CLIPTextEncode、ConditioningZeroOut、SaveImage、LoadImage

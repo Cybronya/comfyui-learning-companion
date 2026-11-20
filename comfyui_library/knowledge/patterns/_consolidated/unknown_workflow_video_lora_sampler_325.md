@@ -1,64 +1,106 @@
 ---
 name: unknown_workflow_video_lora_sampler_325
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.734375
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.842222
+common_nodes: [ApplyFaceProcessor, AudioCrop, AudioSeparation, DownloadAndLoadWav2VecModel, FaceProcessorLoader, GetNode, ImageConcatMulti, ImageFromBatch+, ImageResizeKJv2, InspyrenetRembg, JWInteger, JWIntegerToString, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, PreviewImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddStandInLatent, WanVideoDecode, WanVideoEncode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/🦞海螺H3-QWEN3.8自动提示词+多参生视频_2101574205438521346.json, 视频生成/文生视频/H3-氛围感短视频_2096431562895220737.json, 视频生成/文生视频/H3-氛围感网红打卡点短视频制作_2096832540542857218.json, 视频生成/文生视频/H3官流（最强武戏）_2108377903393239042.json, 视频生成/文生视频/H3官流（终极版）_2104734128657756162.json, 视频生成/文生视频/H3无损融合单采【官方满血API画布级本地流】_2108739345095155713.json, 视频生成/文生视频/minimaxH3+访谈类数字人_2097651536854863873.json, 视频生成/文生视频/minimaxH3数字人工作流（音色参考）_2094688876832055298.json]
+members: [数字人/数字人/人脸一致性数字人_1957753380335878145.json, 数字人/数字人/视频人物替换2.1产品一致性_2089735759791214593.json, 视频生成/图生视频/Wan2.1+Stand-In一致性人物主体替换工作流-v1_1957443614760693762.json, 视频生成/图生视频/Wan2.1+姿势参考+Stand-In+MultiTalk 人脸一致性文生数字人_1956357600432541698.json, 视频生成/图生视频/Wan2.1视频换主体工作流-V.1_1957007357193457666.json, 视频生成/图生视频/Wan2.1视频换主体工作流-V.1_1959057918983352321.json, 视频生成/图生视频/Wan2.1视频换主体工作流_1960183828935553025.json, 视频生成/图生视频/视频人物替换2.1_1957743367306276865.json, 视频生成/图生视频/视频人物替换2.1产品一致性_2037228582350622721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_325
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/🦞海螺H3-QWEN3.8自动提示词+多参生视频_2101574205438521346.json、视频生成/文生视频/H3-氛围感短视频_2096431562895220737.json、视频生成/文生视频/H3-氛围感网红打卡点短视频制作_2096832540542857218.json、视频生成/文生视频/H3官流（最强武戏）_2108377903393239042.json、视频生成/文生视频/H3官流（终极版）_2104734128657756162.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/人脸一致性数字人_1957753380335878145.json、数字人/数字人/视频人物替换2.1产品一致性_2089735759791214593.json、视频生成/图生视频/Wan2.1+Stand-In一致性人物主体替换工作流-v1_1957443614760693762.json、视频生成/图生视频/Wan2.1+姿势参考+Stand-In+MultiTalk 人脸一致性文生数字人_1956357600432541698.json、视频生成/图生视频/Wan2.1视频换主体工作流-V.1_1957007357193457666.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+全部 9 个 workflow 都包含：
+- `ApplyFaceProcessor`
+- `AudioCrop`
+- `AudioSeparation`
+- `DownloadAndLoadWav2VecModel`
+- `FaceProcessorLoader`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `InspyrenetRembg`
+- `JWInteger`
+- `JWIntegerToString`
+- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `PreviewImage`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAddStandInLatent`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 5/8 个有
-- `ManualSigmas` —— 5/8 个有
-- `ModelAttentionBackend` —— 5/8 个有
-- `BlockSparseAttention` —— 3/8 个有
-- `GetNode` —— 3/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/8 个有
-- `SetNode` —— 3/8 个有
-- `VHS_LoadVideo` —— 3/8 个有
-- `AudioCrop` —— 2/8 个有
-- `PathchSageAttentionKJ` —— 2/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
-- `MuyeTextEditOutput` —— 1/8 个有
-- `PreviewAny` —— 1/8 个有
-- `QwenH3PromptLocal` —— 1/8 个有
-- `忽略多组孤海` —— 1/8 个有
+- `LoadWanVideoT5TextEncoder` —— 8/9 个有
+- `WanVideoBlockSwap` —— 8/9 个有
+- `WanVideoModelLoader` —— 8/9 个有
+- `WanVideoTorchCompileSettings` —— 8/9 个有
+- `WanVideoVACEModelSelect` —— 8/9 个有
+- `AIO_Preprocessor` —— 7/9 个有
+- `ColorMatch` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/9 个有
+- `GetImageSizeAndCount` —— 7/9 个有
+- `GrowMaskWithBlur` —— 7/9 个有
+- `ImageFromBatch` —— 7/9 个有
+- `ImageResizeKJ` —— 7/9 个有
+- `InpaintPreprocessor` —— 7/9 个有
+- `LayerUtility: ImageBlend` —— 7/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 7/9 个有
+- `Text Multiline` —— 7/9 个有
+- `WanVideoLoraSelect` —— 7/9 个有
+- `ImageUpscaleWithModel` —— 6/9 个有
+- `RHHiddenNodes` —— 6/9 个有
+- `UpscaleModelLoader` —— 6/9 个有
+- `WanVideoEasyCache` —— 6/9 个有
+- `WanVideoSLG` —— 6/9 个有
+- `ImpactSwitch` —— 4/9 个有
+- `MaskPreview+` —— 4/9 个有
+- `Text Concatenate` —— 4/9 个有
+- `LayerUtility: PurgeVRAM` —— 3/9 个有
+- `CR Text` —— 2/9 个有
+- `DownloadAndLoadFlorence2Model` —— 2/9 个有
+- `DownloadAndLoadSAM2Model` —— 2/9 个有
+- `Florence2Run` —— 2/9 个有
+- `Florence2toCoordinates` —— 2/9 个有
+- `OpenposePreprocessor` —— 2/9 个有
+- `PrimitiveString` —— 2/9 个有
+- `RH_Captioner` —— 2/9 个有
+- `RH_LLMAPI_NODE` —— 2/9 个有
+- `RH_Translator` —— 2/9 个有
+- `Sam2Segmentation` —— 2/9 个有
+- `ShowText|pysssss` —— 2/9 个有
+- `Wan22PromptSelector` —— 2/9 个有
+- `WanVideoVACEStartToEndFrame` —— 2/9 个有
+- `easy imageScaleDownToSize` —— 2/9 个有
 
 ## 典型参数
 

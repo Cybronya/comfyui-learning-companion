@@ -1,63 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_730
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.936333
-common_nodes: [ImageResize+, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.94775
+common_nodes: [CLIPVisionLoader, GetImageSize, INTConstant, Image Blank, ImageCompositeMasked, ImagePadKJ, ImageResizeKJ, ImageResizeKJv2, InspyrenetRembg, KepStringLiteral, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1 [360°环绕运镜] 一键式图生视频_2070674585263108098.json, 视频生成/图生视频/wan2.2首尾帧，kj加速版_1953644450683736065.json, 视频生成/图生视频/wan超酷运镜_1931730238252711938.json]
+members: [视频生成/图生视频/MAGREF+IndexTTS+HeyGem带货数字人_1937836880912105473.json, 视频生成/图生视频/MAGREF三图参考_1936376393980874754.json, 视频生成/图生视频/MAGREF双图参考（对比）_1936333084193361922.json, 视频生成/图生视频/字节MAGREF+IndexTTS+HeyGem超级带货数字人_1937839794074619905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_730
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.1 [360°环绕运镜] 一键式图生视频_2070674585263108098.json、视频生成/图生视频/wan2.2首尾帧，kj加速版_1953644450683736065.json、视频生成/图生视频/wan超酷运镜_1931730238252711938.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MAGREF+IndexTTS+HeyGem带货数字人_1937836880912105473.json、视频生成/图生视频/MAGREF三图参考_1936376393980874754.json、视频生成/图生视频/MAGREF双图参考（对比）_1936333084193361922.json、视频生成/图生视频/字节MAGREF+IndexTTS+HeyGem超级带货数字人_1937839794074619905.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageResize+`
-- `JWInteger`
+全部 4 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageSize`
+- `INTConstant`
+- `Image Blank`
+- `ImageCompositeMasked`
+- `ImagePadKJ`
+- `ImageResizeKJ`
+- `ImageResizeKJv2`
+- `InspyrenetRembg`
+- `KepStringLiteral`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 2/3 个有
-- `CR Text Concatenate` —— 2/3 个有
-- `INTConstant` —— 2/3 个有
-- `ImageCASharpening+` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `Florence2ModelLoader` —— 1/3 个有
-- `Florence2Run` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `LoadWanVideoClipTextEncoder` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `WanVideoEnhanceAVideo` —— 1/3 个有
-- `WanVideoExperimentalArgs` —— 1/3 个有
-- `WanVideoSLG` —— 1/3 个有
-- `WanVideoTeaCache` —— 1/3 个有
+- `ImageConcatMulti` —— 3/4 个有
+- `Seed Everywhere` —— 3/4 个有
+- `CreateVideo` —— 2/4 个有
+- `D_VideoLengthAdjuster` —— 2/4 个有
+- `IndexTTSRun` —— 2/4 个有
+- `LoadAudio` —— 2/4 个有
+- `PreviewAudio` —— 2/4 个有
+- `RH_HeyGemNode` —— 2/4 个有
+- `SaveVideo` —— 2/4 个有
+- `String Literal` —— 2/4 个有
+- `ImageConcanate` —— 1/4 个有
 
 ## 典型参数
 

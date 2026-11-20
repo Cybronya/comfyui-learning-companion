@@ -1,74 +1,61 @@
 ---
 name: unknown_workflow_sampler_clip_vae_73
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.861
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, FluxGuidance, Image Comparer (rgthree), ImageScale, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, VAEDecode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize, easy imageSizeBySide]
+frequency: 3
+level: moderate
+coverage: 0.971
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/去ai质感高清图生图_1971387760735109122.json, 图片生成/文生图/FLUX SRPO 超精细写实文生图_1975496914173079554.json]
+members: [图片生成/文生图/FluxKrea - ImageGeneration  文生图工作流_1951504768676122625.json, 图片生成/文生图/Shuttle Jaguar 4步快速出图_1940292234132766721.json, 图片生成/文生图/超高清  文生卡通图_1907499231920156674.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_73
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/去ai质感高清图生图_1971387760735109122.json、图片生成/文生图/FLUX SRPO 超精细写实文生图_1975496914173079554.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/FluxKrea - ImageGeneration  文生图工作流_1951504768676122625.json、图片生成/文生图/Shuttle Jaguar 4步快速出图_1940292234132766721.json、图片生成/文生图/超高清  文生卡通图_1907499231920156674.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPTextEncode`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
 - `FluxGuidance`
-- `Image Comparer (rgthree)`
-- `ImageScale`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SeedVR2GGUF`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy imageSize`
-- `easy imageSizeBySide`
 
 **可变部分**（部分 workflow 才有）：
-- `AdvancedLyingSigmaSampler` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `EmptySD3LatentImage` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `ModelSamplingFlux` —— 1/2 个有
-- `NunchakuFluxDiTLoader` —— 1/2 个有
-- `NunchakuFluxLoraLoader` —— 1/2 个有
-- `NunchakuTextEncoderLoader` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `TeaCache` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `ModelSamplingFlux` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `UnetLoaderGGUF` —— 2/3 个有
+- `DualCLIPLoaderGGUF` —— 1/3 个有
+- `LatentToWidthHeight` —— 1/3 个有
+- `LoraLoader` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `Primitive string multiline [Crystools]` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 904 | 768 - 1024 | 3 | 88% |
+| 高度 | 1024 | 768 - 1280 | 3 | 80% |
+| LoRA 模型强度 | 0.9 | - | 1 | 100% |
+| LoRA 文本强度 | 0.9 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -76,4 +63,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 904，观测区间 768 - 1024，3 个样本，取值集中（一致性 88%）
+- 高度 中位数 1024，观测区间 768 - 1280，3 个样本

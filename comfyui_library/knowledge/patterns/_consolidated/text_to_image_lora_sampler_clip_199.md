@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_199
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.889333
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, SaveImage, Text, UNETLoader, VAEDecode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.879111
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/一键自动生成｜MiniMax导演台自动提示词反推_2090909602220175362.json, 图片生成/反推提示词/全自动电商出详情只提示工作流，反推提示词电商详情生成工具_2107252613136867330.json, 图片生成/反推提示词/全自动电商详情页生成｜反推提示词一键出文案_2107006999824265217.json, 图片生成/反推提示词/多分镜连贯系统｜MiniMax图生视频自动提示词反推_2092921033551597570.json, 图片生成/反推提示词/导演台自动提示词｜一键自动生成MiniMax反推提示词_2092897411608965122.json, 图片生成/反推提示词/自动提示词一键生成｜MiniMax导演台反推提示词_2092706699449815042.json, 图片生成/图生图/MiniMax导演台自动提示词版｜一键自动生成不用写词，出片零门槛_2099492125976125442.json, 图片生成/图生图/全能图片G产品图智能解析，电商详情页批量生成图文排版套图一步到位_2112704920347570178.json, 图片生成/图生图/全能图片G产品图智能解析｜电商详情页批量生成排版_2112419294628896769.json]
+members: [图片生成/图生图/Image2.5直出PSD分层文件图层拆分图生图处理工具_2101375618482003969.json, 图片生成/图生图/Image2单张低至1分钱图生图处理生成工具_2101741318761439234.json, 图片生成/图生图/RH全能图片PRO官方稳定版｜图生图不出幺蛾子，海报制作靠得住_2099536861491453954.json, 图片生成/图生图/image2单张生成｜低至一毛图生图价格浮动直出_2091265327224152066.json, 图片生成/图生图/image2超值出图｜单张低至1分钱价格随市场浮动_2101512110328074241.json, 图片生成/图生图/全能图片G Image2.5图生图 多模式图像处理工具_2114070976534241281.json, 图片生成/图生图/全能图片G Image2.5图生图 高质量改图方案_2110368621951279106.json, 图片生成/图生图/全能图片PRO图生图官方稳定版 风格复刻构图可控_2099212184491479042.json, 图片生成/文生图/全能图片G2.5图生图高品质版处理工具_2100659592215744513.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_199
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/一键自动生成｜MiniMax导演台自动提示词反推_2090909602220175362.json、图片生成/反推提示词/全自动电商出详情只提示工作流，反推提示词电商详情生成工具_2107252613136867330.json、图片生成/反推提示词/全自动电商详情页生成｜反推提示词一键出文案_2107006999824265217.json、图片生成/反推提示词/多分镜连贯系统｜MiniMax图生视频自动提示词反推_2092921033551597570.json、图片生成/反推提示词/导演台自动提示词｜一键自动生成MiniMax反推提示词_2092897411608965122.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Image2.5直出PSD分层文件图层拆分图生图处理工具_2101375618482003969.json、图片生成/图生图/Image2单张低至1分钱图生图处理生成工具_2101741318761439234.json、图片生成/图生图/RH全能图片PRO官方稳定版｜图生图不出幺蛾子，海报制作靠得住_2099536861491453954.json、图片生成/图生图/image2单张生成｜低至一毛图生图价格浮动直出_2091265327224152066.json、图片生成/图生图/image2超值出图｜单张低至1分钱价格随市场浮动_2101512110328074241.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -30,33 +30,22 @@ source: knowledge_consolidation
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RH_LLMAPI_Pro_Node`
 - `SaveImage`
-- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `easy saveText` —— 7/9 个有
-- `CR Prompt Text` —— 5/9 个有
-- `INTConstant` —— 5/9 个有
-- `MultiTextConcatenate` —— 5/9 个有
-- `RH_Utils` —— 5/9 个有
-- `ProcessString` —— 4/9 个有
-- `ShowAnything|Mie` —— 4/9 个有
-- `ShowText` —— 4/9 个有
-- `easy promptConcat` —— 4/9 个有
-- `easy promptLine` —— 4/9 个有
-- `PreviewImage` —— 3/9 个有
-- `CR Text` —— 2/9 个有
-- `PrimitiveString` —— 2/9 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 2/9 个有
-- `SimplePromptBatcher` —— 2/9 个有
-- `EmptyImage` —— 1/9 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 4/9 个有
+- `RelayGPTImage2Generator` —— 3/9 个有
+- `RH_RhartImageNProOfficialEdit` —— 2/9 个有
+- `Text` —— 2/9 个有
+- `SynVowPsdLayerComposer` —— 1/9 个有
+- `SynVowTransparentAssetPromptGenerator` —— 1/9 个有
+- `SynVowTransparentPngSavePreview` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 

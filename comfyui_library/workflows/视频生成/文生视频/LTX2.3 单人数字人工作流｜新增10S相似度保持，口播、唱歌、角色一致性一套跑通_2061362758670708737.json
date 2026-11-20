@@ -2572,7 +2572,7 @@
 				3410
 			],
 			"widgets_values":[
-				"ltx2.3-ic-watermark-remove-general-lora.safetensors",
+				"ltx2.3-ic-watermREDACTED000000000000000.safetensors",
 				0
 			],
 			"inputs":[
@@ -8647,7 +8647,7 @@
 			"kind":"single_audio",
 			"touched_existing_loras":[
 				"Ltx2.3-Licon-VBVR-I2V-240K-R32.safetensors:ON@1",
-				"ltx2.3-ic-watermark-remove-general-lora.safetensors:ON@1",
+				"ltx2.3-ic-watermREDACTED000000000000000.safetensors:ON@1",
 				"ltx2.3-ic-subtitles-remove-general-lora.safetensors:ON@1",
 				"LTX-2.3-OmniNFT-RL-Lora_bf16.safetensors:ON@0.65",
 				"ltx-2.3-22b-ic-lora-motion-track-control-ref0.5.safetensors:BYPASS@0",

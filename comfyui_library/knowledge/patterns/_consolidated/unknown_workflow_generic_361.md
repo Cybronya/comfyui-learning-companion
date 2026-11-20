@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_361
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.632143
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2OfficialTextToImage, SaveImage]
+coverage: 0.813375
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/GImage20印花图案提取全能图单图编辑_2060136328410525697.json, 图片生成/图生图/GImage20印花图案提取全能图单图编辑_2061654187380924417.json, 图片生成/图生图/全能图片G-2.0-图生图（单图编辑）官方稳定版_2047994425145561089.json, 图片生成/图生图/全能图片G-2.0-图生图（双图编辑）官方稳定版_2047987972443738114.json, 图片生成/图生图/全能图片G2（文生图+图生图）_2051199537619976193.json, 图片生成/文生图/Image2  最强图像处理 全能图片 文生图 + 图像编辑 官方稳定版，多种参数可选_2047892224679092226.json, 图片生成/文生图/Image2 全能图2 全家桶 文生图 + 图生图 官方稳定版，多种参数可选_2047887102410493954.json]
+members: [图片生成/图生图/全能图片G2.0-图生图-image2_2046763561539604481.json, 图片生成/图生图/图生图-image2收费1毛钱  10图_2098186362116722689.json, 图片生成/图生图/图生图-image2收费1毛钱_2097340388897017857.json, 图片生成/文生图/全能图片 G -IMAGE 2.0_2074468069396803586.json, 图片生成/文生图/全能图片G-2.0低价版_2098371967287128065.json, 图片生成/文生图/全能图片G-image-2_2047136798891057153.json, 图片生成/文生图/鸡皮提 Image 2.0图生图_单图编辑_双图编辑强势上线 超强排版和文字能力全能图像G_2046794740380733442.json, 图片生成/文生图/鸡皮提 Image 2.0文生图_图生图_单图编辑_双图编辑强势上线 超强排版和文字能力全能图像G_2046786207207657473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_361
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/GImage20印花图案提取全能图单图编辑_2060136328410525697.json、图片生成/图生图/GImage20印花图案提取全能图单图编辑_2061654187380924417.json、图片生成/图生图/全能图片G-2.0-图生图（单图编辑）官方稳定版_2047994425145561089.json、图片生成/图生图/全能图片G-2.0-图生图（双图编辑）官方稳定版_2047987972443738114.json、图片生成/图生图/全能图片G2（文生图+图生图）_2051199537619976193.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/全能图片G2.0-图生图-image2_2046763561539604481.json、图片生成/图生图/图生图-image2收费1毛钱  10图_2098186362116722689.json、图片生成/图生图/图生图-image2收费1毛钱_2097340388897017857.json、图片生成/文生图/全能图片 G -IMAGE 2.0_2074468069396803586.json、图片生成/文生图/全能图片G-2.0低价版_2098371967287128065.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartImageG2OfficialTextToImage`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/7 个有
-- `JjkText` —— 2/7 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
+- `孤海注释` —— 5/8 个有
+- `CR Text` —— 4/8 个有
+- `RH_RhartImageG2TextToImage` —— 4/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
+- `忽略多组孤海` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,38 +1,42 @@
 ---
 name: unknown_workflow_generic_284
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.836
-common_nodes: [LoadAudio, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.816111
+common_nodes: [LoadImage, RH_LLMAPI_NODE, SaveImage, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Asr音频字幕及时间戳读取_1999851313494192130.json, 数字人/数字人/Asr音频字幕及时间戳读取_2031638855677386753.json, 数字人/数字人/Asr音频字幕及时间戳读取_2039951170399117313.json, 数字人/数字人/Asr音频字幕及时间戳读取多语言_2043550456353398785.json, 音频生成/音频生成/HeartMuLa歌曲反推_2014171301337899010.json, 音频生成/音频生成/HeartMuLa音频歌词提取_2013499135474802689.json, 音频生成/音频生成/HeartMuLa音频歌词提取_2014714965810221057.json, 音频生成/音频生成/HeartMuLa音频歌词提取_2016593802831601666.json]
+members: [图片生成/图生图/-全能图片V1私人网红手办定制_1961666668860784642.json, 图片生成/图生图/-全能图片V1：单图编辑巨匠！图像编辑_指令修改_图生图_姿势修改_1960490867863842818.json, 图片生成/图生图/-全能图片V1：网红手办制作器！图生图创意设计_新奇玩法_角色一致性_1960707943408832514.json, 图片生成/图生图/nano全能图片V12大香蕉：两图编辑，指令驱动，自动优化提示词_2007643666336190466.json, 图片生成/图生图/全能图像pro：图生图，疯狂的重塑你的视觉世界！_1990939034841194498.json, 图片生成/图生图/全能图片V12单图编辑_1991534959257198594.json, 图片生成/图生图/全能图片V1谷歌香蕉双图片编辑_1960619366960234497.json, 图片生成/文生图/google文字分镜+直连 全能图片V1分镜（12格15秒）_1981922967787585537.json, 图片生成/文生图/谷歌-全能图片V1香蕉模型单图多图编辑全能工作流_1961650062206156802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_284
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/Asr音频字幕及时间戳读取_1999851313494192130.json、数字人/数字人/Asr音频字幕及时间戳读取_2031638855677386753.json、数字人/数字人/Asr音频字幕及时间戳读取_2039951170399117313.json、数字人/数字人/Asr音频字幕及时间戳读取多语言_2043550456353398785.json、音频生成/音频生成/HeartMuLa歌曲反推_2014171301337899010.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/-全能图片V1私人网红手办定制_1961666668860784642.json、图片生成/图生图/-全能图片V1：单图编辑巨匠！图像编辑_指令修改_图生图_姿势修改_1960490867863842818.json、图片生成/图生图/-全能图片V1：网红手办制作器！图生图创意设计_新奇玩法_角色一致性_1960707943408832514.json、图片生成/图生图/nano全能图片V12大香蕉：两图编辑，指令驱动，自动优化提示词_2007643666336190466.json、图片生成/图生图/全能图像pro：图生图，疯狂的重塑你的视觉世界！_1990939034841194498.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadAudio`
+全部 9 个 workflow 都包含：
 - `LoadImage`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
+- `Text Multiline`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ASRMW` —— 4/8 个有
-- `HeartMuLa_Transcribe` —— 4/8 个有
-- `Label (rgthree)` —— 1/8 个有
+- `ImageScale` —— 7/9 个有
+- `RH_Nano_Banana_Image2Image` —— 6/9 个有
+- `PreviewImage` —— 3/9 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/9 个有
+- `ImageConcanate` —— 2/9 个有
+- `CR Text` —— 1/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,94 +1,104 @@
 ---
 name: text_to_image_lora_sampler_clip_598
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.8635
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkConcat, JjkText, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: SimpleTextImage, LayerUtility: TextBox, LoadImage, LoraLoaderModelOnly, PainterFluxImageEdit, PreviewImage, SaveImage, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, easy int, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.849
+common_nodes: [AddLabel, AddMask, ApplyPulidFlux, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, GetImageSize+, Image Padding, ImageAndMaskPreview, ImageConcanate, JWImageResizeByLongerSide, KSampler, LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, ReferenceLatent, SaveImage, Text Concatenate (JPS), TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/图生图/AI建筑透视图渲染｜筑视建筑空间设计工作流_2088152082829373442.json, 图片生成/图生图/总图填色建筑空间设计｜筑视AI建筑渲染工作流_2088153266046717953.json]
+members: [平台全量/地表最强FLUX超完美换装工作流，一键图片秒换装_1941329998760538114.json, 平台全量/教程身材控制Kontext 换装秀2.0_1943651363303649282.json, 平台全量/教程逐步完善提示词Kontext 换装秀2.0_1943650043541028865.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_598
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/AI建筑透视图渲染｜筑视建筑空间设计工作流_2088152082829373442.json、图片生成/图生图/总图填色建筑空间设计｜筑视AI建筑渲染工作流_2088153266046717953.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/地表最强FLUX超完美换装工作流，一键图片秒换装_1941329998760538114.json、平台全量/教程身材控制Kontext 换装秀2.0_1943651363303649282.json、平台全量/教程逐步完善提示词Kontext 换装秀2.0_1943650043541028865.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `AddLabel`
+- `AddMask`
+- `ApplyPulidFlux`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
-- `JjkConcat`
-- `JjkText`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `GetImageSize+`
+- `Image Padding`
+- `ImageAndMaskPreview`
+- `ImageConcanate`
+- `JWImageResizeByLongerSide`
 - `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+- `LayerMask: PersonMaskUltra V2`
+- `LayerUtility: CropByMask V2`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: SimpleTextImage`
-- `LayerUtility: TextBox`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PainterFluxImageEdit`
 - `PreviewImage`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `ReferenceLatent`
 - `SaveImage`
+- `Text Concatenate (JPS)`
+- `TextInput_`
 - `UNETLoader`
-- `UnetLoaderGGUF`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `easy int`
 - `easy showAnything`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FluxKontextImageScale` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LayerColor: Brightness & Contrast` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `easy seed` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
+- `Crop Image Square (JPS)` —— 2/3 个有
+- `DownloadAndLoadFlorence2Model` —— 2/3 个有
+- `Florence2Run` —— 2/3 个有
+- `ImageRemoveAlpha+` —— 2/3 个有
+- `ImageStitch` —— 2/3 个有
+- `LayerMask: BenUltra` —— 2/3 个有
+- `LayerMask: LoadBenModel` —— 2/3 个有
+- `LayerUtility: ImageMaskScaleAsV2` —— 2/3 个有
+- `LayerUtility: JoyCaptionBeta1` —— 2/3 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 2/3 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 2/3 个有
+- `SubtractMask` —— 2/3 个有
+- `easy imageSizeByLongerSide` —— 2/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
+| 宽度 | 1536 | 1024 - 1536 | 3 | 82% |
+| 高度 | 1152 | 768 - 1152 | 3 | 82% |
+| 采样步数 | 12 | 12 - 12 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1536，观测区间 1024 - 1536，3 个样本，取值集中（一致性 82%）
+- 高度 中位数 1152，观测区间 768 - 1152，3 个样本，取值集中（一致性 82%）
+- 采样步数 中位数 12，观测区间 12 - 12，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

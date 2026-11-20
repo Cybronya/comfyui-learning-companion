@@ -1,67 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_30
 type: Unknown Workflow
-frequency: 26
+frequency: 32
 level: moderate
-coverage: 0.723846
-common_nodes: [AudioSeparation, BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.465344
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, Text, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/MiniMax-H3开源-数字人-唱歌_说唱_口播_虚拟主播_电商产品讲解_自动版_2114253264417026050.json, 数字人/数字人/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089708388480536577.json, "数字人/数字人/MiniMaxH3,最新多图数字人唱歌、口播-JANNY_2112016897540714498.json", 数字人/数字人/MiniMaxH3多图数字人最新优化版_2089009528351313921.json, 数字人/数字人/MiniMaxH3多图数字人最新优化版_2089775490205835266.json, 视频生成/图生视频/MiniMax-H3-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解【自动版】_2088898725786767362.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089655790310346753.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089682284474626049.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2093283049906728962.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2093299021564694530.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2095122234930192386.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2095124960045002754.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2099449159597256706.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2099479925886636033.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2107413361423114242.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2107435386602606594.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2111407548954931202.json, 视频生成/图生视频/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2111432463317815297.json, 视频生成/图生视频/MiniMax-H3，多图参考数字人唱歌，精准对话_2093892809693679617.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版 v3_2101695889109770242.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2091716104501682178.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2099140567518236674.json, 视频生成/图生视频/MiniMaxH3多图数字人最新优化版_2101684520792707074.json, 视频生成/图生视频/MiniMax‑H3 数字人【自动】｜口播・说唱・唱歌・电商讲解_2090784930476421122.json, 视频生成/图生视频/【开源】MiniMax_H3 自动数字人加速版_2088997708009918465.json, 视频生成/文生视频/MiniMaxH3多图数字人_2094416704804839425.json]
+members: [图片生成/图生图/MiniMax H3超级多合一工作流-官方版james001###_2087408722380419073.json, 图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2087902401587138562.json, 图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2099054787923890177.json, 图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2099680157358444546.json, 图片生成/文生图/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2084514856253874178.json, 图片生成/文生图/手动+反推+高清超强生图_1995038070712020993.json, 平台全量/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2117589183291285505.json, 数字人/数字人/minimax-h3-多参考口播-z_2102289509139439617.json, 数字人/数字人/video3 自用_2089588273210544130.json, 数字人/数字人/优化版本新版口播_2108152027493785602.json, 数字人/数字人/新版本口播_2107771154403520513.json, 视频生成/图生视频/720P-MiniMax H3超级多合一工作流-官方版_2094765092280819714.json, 视频生成/图生视频/API用-多参考-MiniMax H3工作流_2087940945802252290.json, 视频生成/图生视频/H3全能参考+二采放大8898_2089605189635502082.json, 视频生成/图生视频/MINIMAX-H3 全能参考去油防脸崩工作流_2086816639672213505.json, 视频生成/图生视频/MiniMax H3 多参2采8步加速_2091503467927007234.json, 视频生成/图生视频/MiniMax H3-TVC成片（15秒视频5毛成本吊打官方版本）_2087056799617863682.json, 视频生成/图生视频/MiniMax H3多图参考视频生成工作流双采去水印版_2093297157603414018.json, 视频生成/图生视频/MiniMax H3超级多合一工作流-官方版_2086606573383806978.json, 视频生成/图生视频/MiniMax H3超级多合一工作流-官方版james003_4K###_2110535182506872833.json, 视频生成/图生视频/MiniMax_H3超级多合一工作流-官方版_2099787630182486018.json, 视频生成/图生视频/MiniMax_H3超级多合一工作流-官方版_2100043265570590722.json, 视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2094423512034402306.json, 视频生成/图生视频/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2094432563254358018.json, 视频生成/图生视频/YZ金鱼大佬改自用_2092658999987621890.json, 视频生成/文生视频/GS高尚-MiniMax H3多参二次采样放大工作流_2086726756911898625.json, 视频生成/文生视频/MiniMax+H3超级多合_2086713203135967234.json, 视频生成/文生视频/MiniMax+H3超级多合一工作流-官方版V2_2088289193456922626.json, 视频生成/文生视频/MiniMaxH3官方版超级多合一工作流ENG+ENG_2087111558542479361.json, 视频生成/文生视频/李哈哈自用3_2087402730037014530.json, 视频生成/文生视频/🐳【傲雪AIGC】MiniMax+H3短剧双采工作流_2093005569190875138.json, 视频生成/文生视频/🐳【傲雪AIGC】MiniMax+H3短剧双采工作流_2108512240256249857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_30
 
-> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（图片生成/图生图/MiniMax-H3开源-数字人-唱歌_说唱_口播_虚拟主播_电商产品讲解_自动版_2114253264417026050.json、数字人/数字人/MiniMax-H3开源-数字人-唱歌 说唱 口播 虚拟主播 电商产品讲解 自动版_2089708388480536577.json、数字人/数字人/MiniMaxH3,最新多图数字人唱歌、口播-JANNY_2112016897540714498.json、数字人/数字人/MiniMaxH3多图数字人最新优化版_2089009528351313921.json、数字人/数字人/MiniMaxH3多图数字人最新优化版_2089775490205835266.json…）
+> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/图生图/MiniMax H3超级多合一工作流-官方版james001###_2087408722380419073.json、图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2087902401587138562.json、图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2099054787923890177.json、图片生成/图生图/MiniMax_H3超级多合一工作流-官方版_2099680157358444546.json、图片生成/文生图/YZ金鱼-MiniMax H3超级多合一工作流-官方版_2084514856253874178.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：26
+- **样本数**：32
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
-全部 26 个 workflow 都包含：
-- `AudioSeparation`
+全部 32 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
+- `ComfyMathExpression`
+- `GetNode`
 - `KSamplerSelect`
-- `LoadAudio`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 25/26 个有
-- `AudioCrop` —— 25/26 个有
-- `MathExpression|pysssss` —— 25/26 个有
-- `ShowText|pysssss` —— 25/26 个有
-- `ComfyMathExpression` —— 17/26 个有
-- `PrimitiveFloat` —— 17/26 个有
-- `GetNode` —— 16/26 个有
-- `SaveText` —— 16/26 个有
-- `SetNode` —— 16/26 个有
-- `Fast Groups Bypasser (rgthree)` —— 9/26 个有
-- `easy float` —— 9/26 个有
-- `PreviewImage` —— 1/26 个有
-- `Text` —— 1/26 个有
-- `easy cleanGpuUsed` —— 1/26 个有
-- `easy showAnything` —— 1/26 个有
-- `孤海注释` —— 1/26 个有
+- `LoadAudio` —— 31/32 个有
+- `VHS_LoadVideo` —— 31/32 个有
+- `Fast Groups Bypasser (rgthree)` —— 30/32 个有
+- `PreviewImage` —— 30/32 个有
+- `ImageResizeKJv2` —— 29/32 个有
+- `VAEEncode` —— 29/32 个有
+- `VAEEncodeAudio` —— 29/32 个有
+- `VAEDecodeAudio` —— 25/32 个有
+- `MiniMaxH3ImageToVideo` —— 21/32 个有
+- `ModelAttentionBackend` —— 19/32 个有
+- `LTXVConcatAVLatent` —— 16/32 个有
+- `easy cleanGpuUsed` —— 16/32 个有
+- `PT_H3ConcatAVLatent` —— 13/32 个有
+- `RunningHub Deepcleaner` —— 13/32 个有
+- `孤海注释` —— 13/32 个有
+- `MiniMaxH3AVDecodeT8` —— 7/32 个有
+- `EmptyImage` —— 5/32 个有
+- `MiniMaxH3AddGuide` —— 3/32 个有
+- `PlaySound|pysssss` —— 2/32 个有
+- `Any Switch (rgthree)` —— 1/32 个有
+- `CRTFirstLastFrameSelector` —— 1/32 个有
+- `Fast Groups Muter (rgthree)` —— 1/32 个有
+- `FlashVSRNode` —— 1/32 个有
+- `MuyeLoadImage` —— 1/32 个有
+- `PathchSageAttentionKJ` —— 1/32 个有
+- `SaveVideo` —— 1/32 个有
+- `TrimAudioDuration` —— 1/32 个有
+- `XB_VideoLoader` —— 1/32 个有
 
 ## 典型参数
 

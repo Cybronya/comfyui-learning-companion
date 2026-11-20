@@ -1,114 +1,117 @@
 ---
 name: text_to_image_video_lora_sampler_112
 type: Text To Image
-frequency: 7
+frequency: 8
 level: strong
-coverage: 0.750857
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, EmptyLatentImage, ImageFromBatch, ImageResizeKJv2, Int, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.92275
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/四段变装分段灵活版｜动作迁移服装变换一气呵成｜图生视频_2113093151845085185.json, 视频生成/图生视频/图生视频｜xunxia口哨舞一键生成，单图也能跳出舞蹈视频_2099862238462042113.json, 视频生成/图生视频/换衣动作迁移抖X特效｜图生视频换装方案直出_2091274631566151682.json, 视频生成/图生视频/服装变换动作迁移4段变装 灵活分段视频生成处理工具_2113501434972033025.json, 视频生成/图生视频/高仿动作迁移图生视频 高显存动作复刻处理生成工具_2112996489915101186.json, 视频生成/图生视频/高仿动作迁移模仿生成｜风格迁移图生视频直出_2091662335898374145.json, 视频生成/图生视频/高仿动作迁移高显存｜风格迁移图生视频直出_2091645260790325249.json]
+members: [数字人/数字人/Minimax参考生视频V3｜角色一致性视频生成_2094920140604403713.json, 视频生成/图生视频/MiniMax H3视频复刻数字人｜换人换产品换文案换语音_2111128408808845313.json, 视频生成/图生视频/MiniMax H3音频驱动数字人加速版｜参考图生长视频直出_2103697575655333890.json, 视频生成/图生视频/light2v8步lora正式版双时钟｜minimax图生视频工作流_2088212552772841473.json, 视频生成/图生视频/参考生视频V3｜Minimax图生视频直出_2091659742254026753.json, 视频生成/文生视频/H3官流终极版工作流，文生视频视频生视频图生视频全覆盖方案_2105809880144769025.json, 视频生成/文生视频/MiniMax H3数字人单人版｜文生视频口播生成_2094854429622231041.json, 视频生成/文生视频/单人版数字人生成｜MiniMax H3文生视频0901版_2095072554628239362.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_112
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/四段变装分段灵活版｜动作迁移服装变换一气呵成｜图生视频_2113093151845085185.json、视频生成/图生视频/图生视频｜xunxia口哨舞一键生成，单图也能跳出舞蹈视频_2099862238462042113.json、视频生成/图生视频/换衣动作迁移抖X特效｜图生视频换装方案直出_2091274631566151682.json、视频生成/图生视频/服装变换动作迁移4段变装 灵活分段视频生成处理工具_2113501434972033025.json、视频生成/图生视频/高仿动作迁移图生视频 高显存动作复刻处理生成工具_2112996489915101186.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Minimax参考生视频V3｜角色一致性视频生成_2094920140604403713.json、视频生成/图生视频/MiniMax H3视频复刻数字人｜换人换产品换文案换语音_2111128408808845313.json、视频生成/图生视频/MiniMax H3音频驱动数字人加速版｜参考图生长视频直出_2103697575655333890.json、视频生成/图生视频/light2v8步lora正式版双时钟｜minimax图生视频工作流_2088212552772841473.json、视频生成/图生视频/参考生视频V3｜Minimax图生视频直出_2091659742254026753.json…）
 
 - **类型**：Text To Image
-- **样本数**：7
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `Int`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawViTPose` —— 6/7 个有
-- `GetNode` —— 6/7 个有
-- `ImageBatch` —— 6/7 个有
-- `MemoryCleaner` —— 6/7 个有
-- `OnnxDetectionModelLoader` —— 6/7 个有
-- `PoseAndFaceDetection` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `WanVideoLoraSelect` —— 6/7 个有
-- `WanVideoContextOptions` —— 5/7 个有
-- `easy cleanGpuUsed` —— 5/7 个有
-- `BatchCount+` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `RepeatImageBatch` —— 4/7 个有
-- `VHS_VideoInfo` —— 4/7 个有
-- `easy float` —— 4/7 个有
-- `easy mathInt` —— 4/7 个有
-- `Float` —— 3/7 个有
-- `RHHiddenNodes` —— 3/7 个有
-- `SaveImage` —— 3/7 个有
-- `SimpleMath+` —— 3/7 个有
-- `VRAMReserver` —— 3/7 个有
-- `easy showAnything` —— 3/7 个有
-- `GetImageSizeAndCount` —— 2/7 个有
-- `ComfyMathExpression` —— 1/7 个有
-- `ConditioningZeroOut` —— 1/7 个有
-- `GoohaiUniversalSlider` —— 1/7 个有
-- `LoadAudio` —— 1/7 个有
-- `Primitive integer [Crystools]` —— 1/7 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/7 个有
+- `MiniMaxH3AVDecodeT8` —— 7/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
+- `LoadAudio` —— 6/8 个有
+- `SolAttnMiniMax` —— 6/8 个有
+- `CreateVideo` —— 5/8 个有
+- `KSamplerSelect` —— 5/8 个有
+- `LTXVConcatAVLatent` —— 5/8 个有
+- `LTXVSeparateAVLatent` —— 5/8 个有
+- `LoraLoaderBypassModelOnly` —— 5/8 个有
+- `ManualSigmas` —— 5/8 个有
+- `MiniMaxH3AudioConditioningT8` —— 5/8 个有
+- `MiniMaxH3DualClockSamplerT8` —— 5/8 个有
+- `MiniMaxH3LatentUpscaleBy32T8` —— 5/8 个有
+- `PreviewAny` —— 5/8 个有
+- `SaveVideo` —— 5/8 个有
+- `ModelPreviewOverrideKJ` —— 4/8 个有
+- `Any To String (mtb)` —— 3/8 个有
+- `BasicScheduler` —— 3/8 个有
+- `JoinStringMulti` —— 3/8 个有
+- `MiniMaxH3PromptEnhancerT8` —— 3/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/8 个有
+- `StringConcatenate` —— 3/8 个有
+- `AudioCrop` —— 2/8 个有
+- `BatchImagesNode` —— 2/8 个有
+- `MiniMaxH3BlockCacheT8` —— 2/8 个有
+- `PathchSageAttentionKJ` —— 2/8 个有
+- `Qwen3ASRLoader` —— 2/8 个有
+- `Qwen3ASRTranscribe` —— 2/8 个有
+- `RunningHub_VoxCPM_Generate` —— 2/8 个有
+- `RunningHub_VoxCPM_LoadModel` —— 2/8 个有
+- `SoundFlow_GetLength` —— 2/8 个有
+- `VHS_LoadVideo` —— 2/8 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/8 个有
+- `llama_cpp_instruct_adv` —— 2/8 个有
+- `llama_cpp_model_loader` —— 2/8 个有
+- `llama_cpp_parameters` —— 2/8 个有
+- `BlockSparseAttention` —— 1/8 个有
+- `MiniMaxH3HybridLoader` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `VAEDecodeAudio` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 7 | 100% |
-| 高度 | 80 | 80 - 80 | 7 | 100% |
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
+| 采样算法 | er_sde | - | 8 | 100% |
+| 调度器 | beta | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 80 | 80 - 80 | 8 | 100% |
+| 高度 | 80 | 80 - 80 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（8/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，8 个样本，一致性 100%
+- 调度器 最常用 beta，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高发问题（9/8 个样本）：Steps较低可能导致细节不足

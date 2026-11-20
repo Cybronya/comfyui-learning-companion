@@ -1,60 +1,52 @@
 ---
 name: unknown_workflow_video_sampler_vae_133
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.85475
-common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.9342
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE首尾帧+深度控制工作流_1953668787440635905.json, 视频生成/图生视频/VACE首尾帧工作流_1923019731547115522.json, 视频生成/图生视频/直播让图片跳舞_1926646859241263106.json, 视频生成/图生视频/自己用：VACE首尾帧_1940794920766697474.json]
+members: [视频生成/文生视频/Self Forcing 超快文生视频_1932781560670081026.json, 视频生成/文生视频/VACE 14b 文生视频（WAN2.1）稳定版_1922872818927812610.json, 视频生成/文生视频/Wan2.1(KJ)文本到视频基础工作流_1946120056569774081.json, 视频生成/文生视频/Wan2.1-FusionX文生视频加速工作流_1933749868416389122.json, 视频生成/文生视频/高清FusionX最强文生视频双倍加速版_1934524446843568130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_133
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/VACE首尾帧+深度控制工作流_1953668787440635905.json、视频生成/图生视频/VACE首尾帧工作流_1923019731547115522.json、视频生成/图生视频/直播让图片跳舞_1926646859241263106.json、视频生成/图生视频/自己用：VACE首尾帧_1940794920766697474.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Self Forcing 超快文生视频_1932781560670081026.json、视频生成/文生视频/VACE 14b 文生视频（WAN2.1）稳定版_1922872818927812610.json、视频生成/文生视频/Wan2.1(KJ)文本到视频基础工作流_1946120056569774081.json、视频生成/文生视频/Wan2.1-FusionX文生视频加速工作流_1933749868416389122.json、视频生成/文生视频/高清FusionX最强文生视频双倍加速版_1934524446843568130.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageResizeKJv2`
-- `LoadImage`
+全部 5 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `String Literal` —— 3/4 个有
-- `WanVideoVACEStartToEndFrame` —— 3/4 个有
-- `ttN int` —— 3/4 个有
-- `DepthAnything_V2` —— 2/4 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `ImageFromBatch+` —— 1/4 个有
-- `ImageListToBatch_` —— 1/4 个有
-- `ImageRepeat` —— 1/4 个有
-- `OpenposePreprocessor` —— 1/4 个有
-- `VHS_MergeImages` —— 1/4 个有
-- `WanVideoEnhanceAVideo` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `WanVideoEmptyEmbeds` —— 4/5 个有
+- `WanVideoTeaCache` —— 4/5 个有
+- `JWInteger` —— 3/5 个有
+- `Primitive integer [Crystools]` —— 2/5 个有
+- `Text Multiline` —— 2/5 个有
+- `DualCLIPLoader` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
+- `WanVideoLoraSelectMulti` —— 1/5 个有
+- `WanVideoTorchCompileSettings` —— 1/5 个有
+- `WanVideoVACEEncode` —— 1/5 个有
+- `WanVideoVACEModelSelect` —— 1/5 个有
 
 ## 典型参数
 

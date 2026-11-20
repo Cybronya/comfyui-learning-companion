@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_upscale_47
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CR Simple Image Compare, CR Text Concatenate, LoadImage, RH_Nano_Banana_Image2Image, SaveImage, Text Multiline]
+frequency: 3
+level: moderate
+coverage: 0.904667
+common_nodes: [AddBackgroundNode, HivisionNode, LoadImage, SaveImage, ZHHivisionParamsNode]
 problems: []
 missing: []
-members: [图片生成/图生图/老照片修复_2066761490299969537.json, 图片生成/图生图/老照片修复最强_全能图片V1老照片修复_2037065066452881409.json]
+members: [图片生成/图生图/各类证件照极速制作_2034153371266981890.json, 图片生成/图生图/各类证件照极速制作_2034163222676246530.json, 图片生成/图生图/红底报名证件照_1922119851543035906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_47
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/老照片修复_2066761490299969537.json、图片生成/图生图/老照片修复最强_全能图片V1老照片修复_2037065066452881409.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/各类证件照极速制作_2034153371266981890.json、图片生成/图生图/各类证件照极速制作_2034163222676246530.json、图片生成/图生图/红底报名证件照_1922119851543035906.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Simple Image Compare`
-- `CR Text Concatenate`
+全部 3 个 workflow 都包含：
+- `AddBackgroundNode`
+- `HivisionNode`
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `Text Multiline`
+- `ZHHivisionParamsNode`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `RMBG` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
+- `WujiUpscaler` —— 2/3 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -45,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

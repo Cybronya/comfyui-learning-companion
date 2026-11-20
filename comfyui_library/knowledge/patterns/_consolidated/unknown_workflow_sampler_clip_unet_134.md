@@ -1,34 +1,35 @@
 ---
 name: unknown_workflow_sampler_clip_unet_134
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.878444
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 10
+level: moderate
+coverage: 0.9188
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext去掉字幕水印_1971848085930504193.json, 图片生成/图生图/Kontext用嘴改图开源模型双图编辑_1938370989979799554.json, 图片生成/图生图/flux_kontext_1991048121285320705.json, 图片生成/图生图/flux_kontext_双图融合_1950736481751093249.json, 图片生成/图生图/【老金驿站】Kontext清除图像模糊高清工作流_1947912385995649026.json, 图片生成/图生图/【老金驿站】满血Kontext中文输入单图工作流_1939313503348113410.json, 图片生成/图生图/【老金驿站】满血Kontext中文输入双图工作流_1939316636765831170.json, 图片生成/图生图/最强开源大模型 FLUX_1938439204835627009.json, 图片生成/文生图/Flux_kontext_基础工作流_1942411562571214849.json]
+members: [图片生成/图生图/flux-2-klein自拍照一键生成证件照_2019656662927286274.json, 图片生成/图生图/flux2-klein 单图编辑_2051866752035897345.json, 图片生成/图生图/flux2_klein_9b_kv图编辑_2062349239690293250.json, 图片生成/图生图/flux2_klein_image_edit mutiple Ref 多图参考编辑_2044462579120087042.json, 图片生成/图生图/flux2_klein_图生图_runninghub_2030497319736578050.json, 图片生成/图生图/flux2_klein_图生图_基础工作流_2030890083406057474.json, 图片生成/图生图/flux2klein 扩图_2013515335466487809.json, 图片生成/图生图/flux2klein 重绘_2013530157360877570.json, 图片生成/图生图/一键扩图工作流_2095410279856300033.json, 图片生成/图生图/扩图-自定义尺寸_klein极速版_2027967998400663553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_134
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Kontext去掉字幕水印_1971848085930504193.json、图片生成/图生图/Kontext用嘴改图开源模型双图编辑_1938370989979799554.json、图片生成/图生图/flux_kontext_1991048121285320705.json、图片生成/图生图/flux_kontext_双图融合_1950736481751093249.json、图片生成/图生图/【老金驿站】Kontext清除图像模糊高清工作流_1947912385995649026.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/flux-2-klein自拍照一键生成证件照_2019656662927286274.json、图片生成/图生图/flux2-klein 单图编辑_2051866752035897345.json、图片生成/图生图/flux2_klein_9b_kv图编辑_2062349239690293250.json、图片生成/图生图/flux2_klein_image_edit mutiple Ref 多图参考编辑_2044462579120087042.json、图片生成/图生图/flux2_klein_图生图_runninghub_2030497319736578050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 10 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -39,29 +40,30 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 8/9 个有
-- `FluxKontextImageScale` —— 8/9 个有
-- `LoadImage` —— 8/9 个有
-- `ModelSamplingFlux` —— 8/9 个有
-- `ImageScaleBy` —— 5/9 个有
-- `ChinesePrompt_Mix` —— 2/9 个有
-- `ImageStitch` —— 2/9 个有
-- `LoraLoader` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `RH_Translator` —— 2/9 个有
-- `easy showAnything` —— 2/9 个有
-- `AILab_LoadImage` —— 1/9 个有
-- `ImageConcanate` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `PathchSageAttentionKJ` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
+- `ConditioningZeroOut` —— 9/10 个有
+- `GetImageSize` —— 8/10 个有
+- `ImageScaleToTotalPixels` —— 6/10 个有
+- `ColorMatch` —— 4/10 个有
+- `DrawMaskOnImage` —— 3/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/10 个有
+- `PreviewImage` —— 3/10 个有
+- `PrimitiveStringMultiline` —— 3/10 个有
+- `Image Comparer (rgthree)` —— 2/10 个有
+- `ImagePadForOutpaint` —— 2/10 个有
+- `FluxKVCache` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `ImagePadForOutpaintMasked_UTK` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `PrimitiveString` —— 1/10 个有
+- `SetNode` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
+- `StringReplace` —— 1/10 个有
+- `easy boolean` —— 1/10 个有
+- `easy ifElse` —— 1/10 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,5 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

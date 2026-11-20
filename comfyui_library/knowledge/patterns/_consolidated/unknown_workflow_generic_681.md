@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_681
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8
-common_nodes: [Florence2ModelLoader, Florence2Run, LoadImage, SaveImage]
+coverage: 0.9142
+common_nodes: [LoadImage, SaveImage, Textbox]
 problems: []
 missing: []
-members: [图片生成/反推提示词/01.反推提示词_1992192542441623553.json, 图片生成/反推提示词/Florence2反推模型_1920878173808951298.json, 图片生成/反推提示词/提示词反推  图片内容提取 文本生图_1920656499440553986.json, 图片生成/文生图/提示词反推  图片提取 文本生图_1930817149471010818.json]
+members: [图片生成/图生图/Wan 2.7图像编辑_2041793103803195393.json, 图片生成/图生图/一键生成：三视图+结构拆解+产品包装设计_2028333514961199105.json, 图片生成/图生图/产品三视图（专属定制工作流 如有需要请联系作者~）_2027977280902930433.json, 图片生成/图生图/强大的图像编辑 _  全能图片V12.0 🍌_1999017759847632897.json, 图片生成/图生图/撕开封印_2042846750888693762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_681
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/01.反推提示词_1992192542441623553.json、图片生成/反推提示词/Florence2反推模型_1920878173808951298.json、图片生成/反推提示词/提示词反推  图片内容提取 文本生图_1920656499440553986.json、图片生成/文生图/提示词反推  图片提取 文本生图_1930817149471010818.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Wan 2.7图像编辑_2041793103803195393.json、图片生成/图生图/一键生成：三视图+结构拆解+产品包装设计_2028333514961199105.json、图片生成/图生图/产品三视图（专属定制工作流 如有需要请联系作者~）_2027977280902930433.json、图片生成/图生图/强大的图像编辑 _  全能图片V12.0 🍌_1999017759847632897.json、图片生成/图生图/撕开封印_2042846750888693762.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Florence2ModelLoader`
-- `Florence2Run`
+全部 5 个 workflow 都包含：
 - `LoadImage`
 - `SaveImage`
+- `Textbox`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 3/4 个有
-- `PreviewAny` —— 1/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 4/5 个有
+- `RH_AlibabaWan27ImageEditPro` —— 1/5 个有
+- `StringReplace` —— 1/5 个有
 
 ## 典型参数
 

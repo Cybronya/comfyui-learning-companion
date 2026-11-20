@@ -1,77 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_263
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.671222
-common_nodes: [Anything Everywhere, CLIPVisionLoader, CR Text, ColorCorrectOfUtils, CreateCFGScheduleFloatList, GetNode, ImageCASharpening+, ImageResize+, Int, JWInteger, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, RHHiddenNodes, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.4666
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, SetNode, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/【首尾帧视频】Wan2.2+Wan2.2 自动提示词+润色_1952905614798295042.json, 视频生成/图生视频/【首尾帧视频】Wan2.2+Wan2.2全自动一键生成_1952534346064441346.json, 视频生成/图生视频/【高速运镜】Wan2.2+FusionX图生视频（基础流）_1951088586961694722.json, 视频生成/图生视频/图生视频  分镜头  Wan2.2-SkyreelsV2_2029075141904306178.json, 视频生成/图生视频/图生视频  分镜头  Wan2.2-SkyreelsV2_2030461301822070785.json, 视频生成/图生视频/图生视频  分镜头  Wan2.2_2041390268406046721.json, 视频生成/图生视频/自定义表情包+人物表情+Q版动画，全能通用版（静态+动态）_2012093297564585986.json, 视频生成/文生视频/【细节加强版】Wan2.2+FusionX图生视频_1958341618350899202.json, 视频生成/文生视频/【舞台镜头分镜】超长视频生成Wan2.2-SkyreelsV2图生长视频_1978980050555015169.json]
+members: [平台全量/SCAIL 2视频角色替换（支持多人）_2065274035444994049.json, 平台全量/SCAIL 2视频角色替换（支持多人）_2070143834000019457.json, 平台全量/SCAIL 2角色动作、表情迁移_2064980975569956865.json, 平台全量/scail2动作迁移_人物替换工作流_2064539529503141890.json, 平台全量/长视频动作迁移_2068364416038555650.json, 数字人/数字人/SCAIL-2替换人物_动作迁移_2065095439338270721.json, 数字人/数字人/Wan21_SCAIL2多角色动作迁移_2064537633363156994.json, 数字人/数字人/视频人物替换 动作迁移 SCAIL 2（支持多人）_2065647705745084418.json, 数字人/数字人/视频人物替换 视频动作迁移 SCAIL 2（单人和多人）_2065655949918031874.json, 视频生成/图生视频/SCAIL 2 角色替换+动作迁移+表情迁移（长视频续航版）_2065651452084834306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_263
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/【首尾帧视频】Wan2.2+Wan2.2 自动提示词+润色_1952905614798295042.json、视频生成/图生视频/【首尾帧视频】Wan2.2+Wan2.2全自动一键生成_1952534346064441346.json、视频生成/图生视频/【高速运镜】Wan2.2+FusionX图生视频（基础流）_1951088586961694722.json、视频生成/图生视频/图生视频  分镜头  Wan2.2-SkyreelsV2_2029075141904306178.json、视频生成/图生视频/图生视频  分镜头  Wan2.2-SkyreelsV2_2030461301822070785.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/SCAIL 2视频角色替换（支持多人）_2065274035444994049.json、平台全量/SCAIL 2视频角色替换（支持多人）_2070143834000019457.json、平台全量/SCAIL 2角色动作、表情迁移_2064980975569956865.json、平台全量/scail2动作迁移_人物替换工作流_2064539529503141890.json、平台全量/长视频动作迁移_2068364416038555650.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `Anything Everywhere`
+全部 10 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CR Text`
-- `ColorCorrectOfUtils`
-- `CreateCFGScheduleFloatList`
+- `CheckpointLoaderSimple`
 - `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `Int`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM V2`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `RHHiddenNodes`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
 - `SetNode`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR String To Number` —— 7/9 个有
-- `FluxResolutionNode` —— 7/9 个有
-- `InversionDemoLazyIndexSwitch` —— 7/9 个有
-- `WanVideoTextEncode` —— 7/9 个有
-- `easy int` —— 7/9 个有
-- `easy showAnything` —— 7/9 个有
-- `CogVideoEnhanceAVideo` —— 6/9 个有
-- `WanVideoExperimentalArgs` —— 6/9 个有
-- `WanVideoSLG` —— 6/9 个有
-- `CR Text Concatenate` —— 5/9 个有
-- `WanVideoTorchCompileSettings` —— 5/9 个有
-- `PreviewImage` —— 3/9 个有
-- `easy textSwitch` —— 3/9 个有
-- `WanVideoApplyNAG` —— 2/9 个有
-- `WanVideoTextEncodeSingle` —— 2/9 个有
-- `easy imageConcat` —— 2/9 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/9 个有
-- `SaveImage` —— 1/9 个有
-- `ShowText|pysssss` —— 1/9 个有
-- `WanVideoSetLoRAs` —— 1/9 个有
+- `BatchImagesNode` —— 9/10 个有
+- `GetImageRangeFromBatch` —— 9/10 个有
+- `ImageConcatMulti` —— 9/10 个有
+- `ColorTransfer` —— 8/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/10 个有
+- `easy imageRemBg` —— 8/10 个有
+- `ApplySageAttention` —— 7/10 个有
+- `SimpleMath+` —— 7/10 个有
+- `UNETLoader` —— 7/10 个有
+- `VHS_VideoInfo` —— 7/10 个有
+- `CR Text` —— 6/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
+- `ImageFromBatch` —— 6/10 个有
+- `Int` —— 6/10 个有
+- `Seed` —— 6/10 个有
+- `DiffusionModelLoaderKJ` —— 3/10 个有
+- `WanChunkFeedForward` —— 3/10 个有
+- `easy showAnything` —— 3/10 个有
+- `ImageResizeKJv2` —— 2/10 个有
+- `Text` —— 2/10 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/10 个有
+- `GIMMVFI_interpolate` —— 1/10 个有
+- `ImpactConditionalBranch` —— 1/10 个有
+- `RH_Translator` —— 1/10 个有
+- `SaveImage` —— 1/10 个有
+- `WanAnimatePlus SetBlockSwap` —— 1/10 个有
+- `WanVideoBlockSwap` —— 1/10 个有
+- `WanVideoSetBlockSwap` —— 1/10 个有
+- `wanBlock_Swap` —— 1/10 个有
 
 ## 典型参数
 

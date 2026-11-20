@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_440
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.688667
-common_nodes: [LoadImage, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, RH_SeedreamV5ProImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/AI 定制专属表情包｜你的形象，一键变萌_2051688202452389889.json, 图片生成/图生图/G2 6图分开出图（单尺寸）_低价节点版_2056969736130490370.json, 图片生成/图生图/Image 2.0 Edit-解锁藏在时光照片里的温柔瞬间【画意手记 • 时光涂鸦】_2053920361955250178.json, 图片生成/图生图/image2 多图融合+全节点注释_2065799898812993538.json, 图片生成/图生图/【新年特辑】一键生成喜庆氛围大片_2006384712570380290.json, 图片生成/图生图/利用参考图生图（全能图片-2.0）_2031366046078214146.json]
+members: [图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json, 图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075470966062403585.json, 图片生成/图生图/Seedream5.0 pro编辑模型_2075439235552858114.json, 图片生成/图生图/Seedream_5.0_Pro_图生图_2100054880848273410.json, 图片生成/图生图/Seedream_5.0_Pro_图生图_2100135558898081793.json, 图片生成/图生图/Seedream_5.0_Pro_图生图_2116328612621283329.json, 图片生成/图生图/seedream5.0-pro 换装_2082447847693312001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_440
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/AI 定制专属表情包｜你的形象，一键变萌_2051688202452389889.json、图片生成/图生图/G2 6图分开出图（单尺寸）_低价节点版_2056969736130490370.json、图片生成/图生图/Image 2.0 Edit-解锁藏在时光照片里的温柔瞬间【画意手记 • 时光涂鸦】_2053920361955250178.json、图片生成/图生图/image2 多图融合+全节点注释_2065799898812993538.json、图片生成/图生图/【新年特辑】一键生成喜庆氛围大片_2006384712570380290.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json、图片生成/图生图/Seedream 5.0 Pro图像编辑（RH版-即梦5.0 Pro）_2075470966062403585.json、图片生成/图生图/Seedream5.0 pro编辑模型_2075439235552858114.json、图片生成/图生图/Seedream_5.0_Pro_图生图_2100054880848273410.json、图片生成/图生图/Seedream_5.0_Pro_图生图_2100135558898081793.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `LoadImage`
+- `RH_SeedreamV5ProImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
-- `RH_RhartImageG2ImageToImage` —— 4/6 个有
-- `ImageResize+` —— 2/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/6 个有
+- `Text` —— 4/7 个有
+- `CR Prompt Text` —— 3/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
 
 ## 典型参数
 

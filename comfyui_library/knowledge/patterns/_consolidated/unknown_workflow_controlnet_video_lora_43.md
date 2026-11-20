@@ -3,73 +3,82 @@ name: unknown_workflow_controlnet_video_lora_43
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4925
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, SimpleMath+, VHS_DuplicateImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
+coverage: 0.8975
+common_nodes: [AudioCrop, AudioSeparation, BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, CreateCFGScheduleFloatList, DownloadAndLoadWav2VecModel, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, GetImageSize, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingFlux, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, RH_Translator, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2 multitalk 数字人工作流_1950489721401167873.json, 视频生成/图生视频/wanvideo_multitalk 声音驱动视频生成_1937349573826527233.json]
+members: [平台全量/取衣去人跳舞(去人留衣)_1991388491707953154.json, 视频生成/图生视频/Flux-Kontext去人取衣跳舞+运镜参考_1940396618250170369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_43
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2 multitalk 数字人工作流_1950489721401167873.json、视频生成/图生视频/wanvideo_multitalk 声音驱动视频生成_1937349573826527233.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/取衣去人跳舞(去人留衣)_1991388491707953154.json、视频生成/图生视频/Flux-Kontext去人取衣跳舞+运镜参考_1940396618250170369.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `AudioCrop`
 - `AudioSeparation`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncode`
 - `CLIPVisionLoader`
+- `CreateCFGScheduleFloatList`
 - `DownloadAndLoadWav2VecModel`
-- `GetNode`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `GetImageSize`
 - `ImageResizeKJv2`
+- `ImageScaleBy`
+- `KSamplerSelect`
 - `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingFlux`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_DuplicateImages`
+- `PreviewImage`
+- `RH_Translator`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEncode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 1/2 个有
-- `CreateCFGScheduleFloatList` —— 1/2 个有
-- `Display Int (rgthree)` —— 1/2 个有
-- `DownloadAndLoadFlorence2Model` —— 1/2 个有
-- `FloatConstant` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
+- `CR SDXL Aspect Ratio` —— 1/2 个有
 - `INTConstant` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `RH_GetAudioDuration` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `WanVideoExperimentalArgs` —— 1/2 个有
-- `WanVideoTeaCache` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

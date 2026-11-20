@@ -1,67 +1,53 @@
 ---
 name: unknown_workflow_video_sampler_vae_128
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.81175
-common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.974
+common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/B3-WAN2.1-首尾帧视频加速版VACE+FusionX+NAG_1934799342199087105.json, 视频生成/图生视频/FusionX VACE 最丝滑的首尾帧过度效果-全自动极速版-StarAI_1936424375866281985.json, 视频生成/图生视频/VACE+FusioniX视频_1934580873092079617.json, 视频生成/文生视频/🦁FusionX 最强首尾帧  超清加速版🦁_1935319269842550786.json]
+members: [视频生成/图生视频/Wan2.1-FusionX-Phantom图生视频_1933830399460335618.json, 视频生成/图生视频/Wan2.1-FusionX-Phantom图生视频电商工作流_1934541885903937537.json, 视频生成/图生视频/Wan2.1-Phantom+FusionX-LORA电商产品展示视频_1937023070462726146.json, 视频生成/图生视频/Wan2.1-Phantom+FusionX-LORA电商版_1935608698565742593.json, 视频生成/图生视频/电商商品展示图生视频Phantom_1928763054312341505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_128
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/B3-WAN2.1-首尾帧视频加速版VACE+FusionX+NAG_1934799342199087105.json、视频生成/图生视频/FusionX VACE 最丝滑的首尾帧过度效果-全自动极速版-StarAI_1936424375866281985.json、视频生成/图生视频/VACE+FusioniX视频_1934580873092079617.json、视频生成/文生视频/🦁FusionX 最强首尾帧  超清加速版🦁_1935319269842550786.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1-FusionX-Phantom图生视频_1933830399460335618.json、视频生成/图生视频/Wan2.1-FusionX-Phantom图生视频电商工作流_1934541885903937537.json、视频生成/图生视频/Wan2.1-Phantom+FusionX-LORA电商产品展示视频_1937023070462726146.json、视频生成/图生视频/Wan2.1-Phantom+FusionX-LORA电商版_1935608698565742593.json、视频生成/图生视频/电商商品展示图生视频Phantom_1928763054312341505.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
+全部 5 个 workflow 都包含：
 - `ImageResizeKJv2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
+- `WanVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 3/4 个有
-- `SimpleMath+` —— 3/4 个有
-- `WanVideoMagCache` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `MaskPreview` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `easy int` —— 2/4 个有
-- `ImpactInt` —— 1/4 个有
-- `ImpactSwitch` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
-- `Seed (rgthree)` —— 1/4 个有
-- `WanVideoEnhanceAVideo` —— 1/4 个有
-- `WanVideoLoraSelect` —— 1/4 个有
-- `WanVideoVACEModelSelect` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `Text Multiline` —— 4/5 个有
+- `DF_Integer` —— 2/5 个有
+- `WanVideoLoraSelect` —— 2/5 个有
+- `WanVideoTorchCompileSettings` —— 2/5 个有
+- `INTConstant` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `JWInteger` —— 1/5 个有
+- `JjkText` —— 1/5 个有
+- `WanVideoEnhanceAVideo` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 

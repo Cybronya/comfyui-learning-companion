@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_108
 type: Text To Image
 frequency: 13
 level: strong
-coverage: 0.885692
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.886462
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/krea2四视图生成流加强版｜角色设定图生图_2095213399323004929.json, 图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090149383538036738.json, 图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090615604003827713.json, 图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090631125050937346.json, 图片生成/图生图/上传参考图生成角色四视图 Krea2资产库简易版_2104321390848598018.json, 图片生成/图生图/上传图片一键生成四视图【短剧资产专用】_2096435540651503618.json, 图片生成/图生图/单图编辑图片处理｜pipi-krea2换装图生图_2095582778946580482.json, 图片生成/图生图/四视图生成加强版｜krea2图生图角色设计_2095493686284079106.json, 图片生成/图生图/四视图角色设定表｜Krea2一键生成角色一致性设计_2090897661913292802.json, 图片生成/图生图/四视图角色资产库｜Krea2分镜出图图生图生成_2095118168535687170.json, 图片生成/图生图/四视图角色资产库｜Krea2分镜出图角色设计图生图_2092611870934003713.json, 图片生成/图生图/换装编辑一键处理｜pipi-krea2图生图工作流_2095581266308591618.json, 图片生成/图生图/真实人与漫剧角色四视图｜角色一致性设定图生成_2095964023656370177.json]
+members: [图片生成/图生图/产品正侧视图压缩工作流｜商品图片快速处理生成_2097532280968400898.json, 图片生成/图生图/全功能图生图处理生成综合工作流工具包配置_2101020931924783105.json, 图片生成/图生图/全能G2图生图工作流｜多场景图像编辑处理生成_2096733211073273858.json, 图片生成/图生图/全能图像G image2.0三图编辑 三张参考图输入改图_2105124015596728322.json, 图片生成/图生图/全能图像G image2.0多图编辑｜四到十图低价版_2095583907658944513.json, 图片生成/图生图/全能图像Image2.5三图编辑 多图合成处理_2098301067544055810.json, 图片生成/图生图/全能图片 G-Image-2.0｜人物面部三视图高清直出｜图生图_2096889065525309441.json, 图片生成/图生图/全能图片G-2.0图生图低价渠道高性价比出图方案_2104821488074444802.json, 图片生成/图生图/全能图片V2图生图｜低价渠道版海报图片处理_2095575437979246594.json, 图片生成/图生图/图生图低价渠道版｜全能图片V2海报制作处理_2095824943010369537.json, 图片生成/图生图/服装模特姿势复刻全能PRO官方稳定版工作流，服装展示图生图工具_2107203791136321538.json, 图片生成/图生图/服装模特姿势复刻全能PRO版｜官方稳定图生图服装展示_2106933544365940738.json, 图片生成/图生图/服装模特姿势复刻全能PRO版｜官方稳定图生图服装展示_2107649602324357121.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_108
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/krea2四视图生成流加强版｜角色设定图生图_2095213399323004929.json、图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090149383538036738.json、图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090615604003827713.json、图片生成/图生图/一分钟极速换脸｜图生图局部重绘一键出片生成_2090631125050937346.json、图片生成/图生图/上传参考图生成角色四视图 Krea2资产库简易版_2104321390848598018.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/产品正侧视图压缩工作流｜商品图片快速处理生成_2097532280968400898.json、图片生成/图生图/全功能图生图处理生成综合工作流工具包配置_2101020931924783105.json、图片生成/图生图/全能G2图生图工作流｜多场景图像编辑处理生成_2096733211073273858.json、图片生成/图生图/全能图像G image2.0三图编辑 三张参考图输入改图_2105124015596728322.json、图片生成/图生图/全能图像G image2.0多图编辑｜四到十图低价版_2095583907658944513.json…）
 
 - **类型**：Text To Image
 - **样本数**：13
@@ -26,37 +26,30 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 10/13 个有
-- `Krea2EditGroundedEncode` —— 10/13 个有
-- `Krea2EditModelPatch` —— 10/13 个有
-- `PreviewImage` —— 10/13 个有
-- `孤海注释` —— 10/13 个有
-- `Image Comparer (rgthree)` —— 5/13 个有
-- `ReferenceLatent` —— 5/13 个有
-- `AddLabel` —— 4/13 个有
-- `GetImageSize` —— 4/13 个有
-- `ImageConcatMulti` —— 4/13 个有
-- `EmptyFlux2LatentImage` —— 3/13 个有
-- `ColorMatchV2` —— 2/13 个有
-- `ConditioningZeroOut` —— 2/13 个有
-- `String Literal` —— 2/13 个有
-- `easy loraStack` —— 2/13 个有
-- `easy loraStackApply` —— 2/13 个有
-- `GetNode` —— 1/13 个有
-- `SetNode` —— 1/13 个有
+- `LoadImage` —— 12/13 个有
+- `孤海注释` —— 12/13 个有
+- `CR Text` —— 8/13 个有
+- `RH_RhartImageG2ImageToImage` —— 8/13 个有
+- `PreviewImage` —— 5/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/13 个有
+- `OpenposePreprocessor` —— 3/13 个有
+- `RH_RhartImageNProOfficialEdit` —— 3/13 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/13 个有
+- `DisplayImageFromURL` —— 1/13 个有
+- `EmptyImage` —— 1/13 个有
+- `ImageScale` —— 1/13 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/13 个有
+- `RotateImageNode` —— 1/13 个有
 
 ## 典型参数
 
@@ -74,7 +67,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 18/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -85,4 +78,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，13 个样本，取值集中（一致性 100%）
-- 高发问题（18/13 个样本）：Steps较低可能导致细节不足
+- 高发问题（13/13 个样本）：Steps较低可能导致细节不足

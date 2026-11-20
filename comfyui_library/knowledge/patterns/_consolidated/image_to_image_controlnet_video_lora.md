@@ -1,28 +1,28 @@
 ---
 name: image_to_image_controlnet_video_lora
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.8825
-common_nodes: [BatchCount+, CLIPTextEncode, ChangeImageBatchSize //Inspire, CheckpointLoaderSimple, ControlNetApply, ControlNetLoader, CreateShapeMask, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, ImageBatch, ImageCompositeBy_Zho, ImageListToImageBatch, ImageScaleToTotalPixels, ImageToMask, ImpactImageBatchToImageList, JoinImageWithAlpha, KSampler, LoadImage, LoraLoader, MaskToImage, MasksToMaskList, PreviewImage, SolidMask, VAEDecode, VAEEncode, VHS_VideoCombine]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.855
+common_nodes: [BatchCount+, CLIPTextEncode, ChangeImageBatchSize //Inspire, CheckpointLoaderSimple, ControlNetApply, ControlNetLoader, CreateShapeMask, ImageBatch, ImageCompositeBy_Zho, ImageListToImageBatch, ImageScaleToTotalPixels, ImageToMask, ImpactImageBatchToImageList, JoinImageWithAlpha, KSampler, LoadImage, LoraLoader, MaskToImage, MasksToMaskList, PreviewImage, SolidMask, VAEDecode, VAEEncode, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Ghibli 吉卜力转场动画_1909785208340840449.json, 视频生成/图生视频/Ghibli 吉卜力转成动画 ｜一键生成视频系列_1907380226249396226.json]
+members: [平台全量/图片转宫崎骏画风 吉卜力魔法 _ Ghibli Magic_1864556340139196417.json, 视频生成/图生视频/Ghibli 吉卜力转场动画_1909785208340840449.json, 视频生成/图生视频/Ghibli 吉卜力转成动画 ｜一键生成视频系列_1907380226249396226.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_video_lora
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Ghibli 吉卜力转场动画_1909785208340840449.json、视频生成/图生视频/Ghibli 吉卜力转成动画 ｜一键生成视频系列_1907380226249396226.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/图片转宫崎骏画风 吉卜力魔法 _ Ghibli Magic_1864556340139196417.json、视频生成/图生视频/Ghibli 吉卜力转场动画_1909785208340840449.json、视频生成/图生视频/Ghibli 吉卜力转成动画 ｜一键生成视频系列_1907380226249396226.json）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `BatchCount+`
 - `CLIPTextEncode`
 - `ChangeImageBatchSize //Inspire`
@@ -30,8 +30,6 @@ source: knowledge_consolidation
 - `ControlNetApply`
 - `ControlNetLoader`
 - `CreateShapeMask`
-- `DepthAnything_V2`
-- `DownloadAndLoadDepthAnythingV2Model`
 - `ImageBatch`
 - `ImageCompositeBy_Zho`
 - `ImageListToImageBatch`
@@ -51,34 +49,38 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ConcatTextOfUtils` —— 1/2 个有
-- `SDVN Joy Caption` —— 1/2 个有
+- `DepthAnything_V2` —— 2/3 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 2/3 个有
+- `ConcatTextOfUtils` —— 1/3 个有
+- `DepthAnythingPreprocessor` —— 1/3 个有
+- `SDVN Joy Caption` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1.8 | - | 2 | 100% |
-| 采样算法 | dpmpp_sde | - | 2 | 100% |
-| 调度器 | karras | - | 2 | 100% |
-| 重绘幅度 | 0.75 | - | 2 | 100% |
-| ControlNet 权重 | 1 | - | 2 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| ControlNet 权重 | 1 | 0.8 - 1 | 3 | 90% |
+| 采样步数 | 20 | 4 - 20 | 3 | 49% |
+| Prompt 约束强度(CFG) | 1.8 | 1.8 - 1.8 | 3 | 100% |
+| 采样算法 | dpmpp_sde | - | 3 | 100% |
+| 调度器 | karras | - | 3 | 100% |
+| 重绘幅度 | 0.75 | 0.75 - 0.75 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_sde，2 个样本，一致性 100%
-- 调度器 最常用 karras，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.75，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 1，观测区间 0.8 - 1，3 个样本，取值集中（一致性 90%）
+- 采样步数 中位数 20，观测区间 4 - 20，3 个样本，取值分散，一致性仅 49%
+- Prompt 约束强度(CFG) 中位数 1.8，观测区间 1.8 - 1.8，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_sde，3 个样本，一致性 100%
+- 调度器 最常用 karras，3 个样本，一致性 100%
+- 重绘幅度 中位数 0.75，观测区间 0.75 - 0.75，3 个样本，取值集中（一致性 100%）

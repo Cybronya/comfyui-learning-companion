@@ -3,103 +3,74 @@ name: unknown_workflow_video_upscale_latent_upscale_83
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 0.7374
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetImageSizeAndCount, GetNode, ImageScaleBy, ImpactFloat, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PrimitiveFloat, RH_LLMAPI_NODE, RandomNoise, SamplerCustomAdvanced, SetNode, StringFunction|pysssss, VAEDecodeTiled, VHS_VideoCombine, easy anythingIndexSwitch, easy int, easy positive, easy seed, easy showAnything]
+coverage: 0.4008
+common_nodes: [CFGGuider, CLIPTextEncode, CR Text Concatenate, CheckpointLoaderSimple, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, GetNode, INTConstant, ImageResizeKJv2, JWInteger, JjkText, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, ShowText|pysssss, SimpleCalculatorKJ, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy anythingIndexSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/视频-图生视频扩写-LTX2.0_2009176912333119490.json, 视频生成/图生视频/视频-图生视频扩写-LTX2.3_2037088437668421634.json, 视频生成/图生视频/视频-首尾帧视频扩写-LTX2.3_2037097528180609026.json, 视频生成/文生视频/视频-文生视频扩写-LTX2.0_2009188273779904513.json, 视频生成/文生视频/视频-文生视频扩写-LTX2.3_2037067149814013954.json]
+members: [视频生成/图生视频/LTX2.3 一键控制人物表情 图生视频_2055968633255407618.json, 视频生成/图生视频/LTX2.3 一键控制人物表情 图生视频_2079551168036032513.json, 视频生成/图生视频/数字人直播、影视预演，情绪演绎 表情调节 人物表情控制，视频生成ltx2.3_2082710649158848514.json, 视频生成/图生视频/数字人表情调节 人物表情控制，视频生成_2081587131981590529.json, 视频生成/图生视频/最新精准AI控制人物表情！LTX2.3图生视频！_2058014119055421441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_83
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/视频-图生视频扩写-LTX2.0_2009176912333119490.json、视频生成/图生视频/视频-图生视频扩写-LTX2.3_2037088437668421634.json、视频生成/图生视频/视频-首尾帧视频扩写-LTX2.3_2037097528180609026.json、视频生成/文生视频/视频-文生视频扩写-LTX2.0_2009188273779904513.json、视频生成/文生视频/视频-文生视频扩写-LTX2.3_2037067149814013954.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 一键控制人物表情 图生视频_2055968633255407618.json、视频生成/图生视频/LTX2.3 一键控制人物表情 图生视频_2079551168036032513.json、视频生成/图生视频/数字人直播、影视预演，情绪演绎 表情调节 人物表情控制，视频生成ltx2.3_2082710649158848514.json、视频生成/图生视频/数字人表情调节 人物表情控制，视频生成_2081587131981590529.json、视频生成/图生视频/最新精准AI控制人物表情！LTX2.3图生视频！_2058014119055421441.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：40%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CR Text Concatenate`
 - `CheckpointLoaderSimple`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `GetImageSizeAndCount`
+- `GetImageSize`
 - `GetNode`
-- `ImageScaleBy`
-- `ImpactFloat`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `JjkText`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
+- `LTX2_NAG`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
 - `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
-- `RH_LLMAPI_NODE`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SetNode`
-- `StringFunction|pysssss`
+- `ShowText|pysssss`
+- `SimpleCalculatorKJ`
 - `VAEDecodeTiled`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
 - `easy anythingIndexSwitch`
-- `easy int`
-- `easy positive`
-- `easy seed`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `CM_FloatToInt` —— 4/5 个有
-- `JWFloatToString` —— 4/5 个有
-- `LTXVPreprocess` —— 4/5 个有
-- `MemoryCleaner` —— 4/5 个有
-- `PrimitiveInt` —— 4/5 个有
-- `easy saveText` —— 4/5 个有
-- `EmptyImage` —— 3/5 个有
-- `INTConstant` —— 3/5 个有
-- `LTXVChunkFeedForward` —— 3/5 个有
-- `LTXVCropGuides` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `ModelPatchTorchSettings` —— 3/5 个有
-- `PathchSageAttentionKJ` —— 3/5 个有
-- `GetImageSize` —— 2/5 个有
-- `LTXVImgToVideoConditionOnly` —— 2/5 个有
-- `LTXVImgToVideoInplace` —— 2/5 个有
-- `LTXVScheduler` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `PrimitiveBoolean` —— 2/5 个有
-- `ResizeImagesByLongerEdge` —— 2/5 个有
-- `VAEDecode` —— 2/5 个有
-- `ComfyMathExpression` —— 1/5 个有
-- `FloatConstant` —— 1/5 个有
-- `ImageFromBatch` —— 1/5 个有
-- `ImageFromBatch+` —— 1/5 个有
-- `ImageLoader` —— 1/5 个有
-- `ImageResizeKJ` —— 1/5 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/5 个有
-- `Qwen3_VQA` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
-- `VRAMReserver` —— 1/5 个有
-- `easy imageSize` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 5 | 100% |
-| 高度 | 25 | 25 - 25 | 5 | 100% |
+| 宽度 | 121 | 121 - 121 | 5 | 100% |
+| 高度 | 24 | 24 - 24 | 5 | 100% |
 
 ## 常见问题
 
@@ -107,5 +78,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 121，观测区间 121 - 121，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，5 个样本，取值集中（一致性 100%）

@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_377
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8966
-common_nodes: [CLIPLoader, CLIPTextEncode, Easy_QwenEdit2509, EmptyLatentImage, FluxKontextMultiReferenceLatentMethod, JjkText, KSampler, Krea2OstrisEditModelPatch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8992
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2动漫转真人Anything2Real V3目前最佳方案 动漫风格转写实_2108720385909944322.json, 图片生成/图生图/Krea2动漫转真人图生图处理生成工作流工具_2102514616378159106.json, 图片生成/图生图/Krea2动漫转真人｜二次元图生图写真化｜真人质感还原度高_2102279427303501826.json, 图片生成/图生图/Krea2漫剧角色资产一键生成工作流图生四视图_2100300485814218754.json, 图片生成/图生图/动漫转真人V3 Krea2 图生图人物写实化转换_2094195206609526785.json]
+members: [图片生成/图生图/FLUX 3 Klein多功能整合16步蒸馏版，官方提示词增强图生图_2112695455879614465.json, 图片生成/文生图/Flux3_Klein图像编辑工作流，文生图图生图双修_2111904655876911106.json, 图片生成/文生图/Z-Image Turbo极速文生图内置身材调节Lora处理工具_2101769735858905090.json, 图片生成/文生图/Z-image-turbo极速文生图｜内置身材调节Lora免折腾_2101556554981011457.json, 视频生成/图生视频/MOSS-Image一键洗图画质修复增强，老图翻新高清放大直出2K画质_2114412047910916097.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_377
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Krea2动漫转真人Anything2Real V3目前最佳方案 动漫风格转写实_2108720385909944322.json、图片生成/图生图/Krea2动漫转真人图生图处理生成工作流工具_2102514616378159106.json、图片生成/图生图/Krea2动漫转真人｜二次元图生图写真化｜真人质感还原度高_2102279427303501826.json、图片生成/图生图/Krea2漫剧角色资产一键生成工作流图生四视图_2100300485814218754.json、图片生成/图生图/动漫转真人V3 Krea2 图生图人物写实化转换_2094195206609526785.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX 3 Klein多功能整合16步蒸馏版，官方提示词增强图生图_2112695455879614465.json、图片生成/文生图/Flux3_Klein图像编辑工作流，文生图图生图双修_2111904655876911106.json、图片生成/文生图/Z-Image Turbo极速文生图内置身材调节Lora处理工具_2101769735858905090.json、图片生成/文生图/Z-image-turbo极速文生图｜内置身材调节Lora免折腾_2101556554981011457.json、视频生成/图生视频/MOSS-Image一键洗图画质修复增强，老图翻新高清放大直出2K画质_2114412047910916097.json）
 
 - **类型**：Text To Image
 - **样本数**：5
@@ -25,14 +25,10 @@ source: knowledge_consolidation
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Easy_QwenEdit2509`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `FluxKontextMultiReferenceLatentMethod`
 - `JjkText`
 - `KSampler`
-- `Krea2OstrisEditModelPatch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
@@ -42,18 +38,25 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorCorrect` —— 3/5 个有
-- `Lora Loader Stack (rgthree)` —— 3/5 个有
+- `ImageUpscaleWithModel` —— 4/5 个有
+- `UpscaleModelLoader` —— 4/5 个有
+- `ReferenceMultiLatent` —— 3/5 个有
 - `Image Comparer (rgthree)` —— 2/5 个有
-- `ImageMergeNode` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `Anything Everywhere` —— 1/5 个有
-- `INTConstant` —— 1/5 个有
+- `ImageScaleToMaxDimension` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `LoadImage` —— 2/5 个有
+- `RHLLMChatNode` —— 2/5 个有
+- `GetImageSize` —— 1/5 个有
+- `HAIGC_LoadImagesFromZip` —— 1/5 个有
+- `HAIGC_SaveImagesToZip` —— 1/5 个有
 - `ImageScaleToTotalPixels` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `Seed (rgthree)` —— 1/5 个有
+- `LoadImageHighPrec` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `SkipLayerGuidanceDiTSimple` —— 1/5 个有
+- `StringFormat` —— 1/5 个有
 - `VAEEncode` —— 1/5 个有
-- `kkPadImageToCanvas` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
@@ -71,7 +74,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -82,4 +85,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（11/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/5 个样本）：Steps较低可能导致细节不足

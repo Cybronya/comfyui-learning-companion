@@ -1,67 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_vae_25
 type: Unknown Workflow
-frequency: 8
+frequency: 10
 level: moderate
-coverage: 0.89125
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.7634
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/极速版文生图V1-Qwen-ImageNunchaku Ran_2046513028291633154.json, 图片生成/文生图/海报生成器+QwenImage=艾橘溪_1954567812612288513.json, 图片生成/文生图/炼狱杏寿郎_1981285976733638658.json, 图片生成/文生图/猩红共生体变身与感染_2051256128578830338.json, 图片生成/文生图/电商生成多镜头图片 qwen2512_2017062093035413506.json, 图片生成/文生图/艺术字体生成器+QwenImage=B站艾橘溪_1954565922696654850.json, 图片生成/文生图/（贞贞版3W步绝美版）Z-Image-Base文生图V1_2016831860403343362.json, 图片生成/文生图/（贞贞版）Z-Image-Base 2w2步_2016755186840113154.json]
+members: [图片生成/文生图/Flux-文生图自动扩写提示词（详细讲解使用）_1908181172109586433.json, 图片生成/文生图/Flux文生图（lora）工作流_1971036023260123138.json, 图片生成/文生图/Flux通过潜空间放大高清修复_1905565864324681729.json, 图片生成/文生图/【10秒出图】Nun Flux-文生图扩写提示词（中文输入）_1912944528943448065.json, 图片生成/文生图/【10秒出图】Nun Flux-文生图扩写提示词（中文输入）_1957731578933866497.json, 图片生成/文生图/【10秒出图】Nun Flux-文生图扩写提示词（中文输入）_1957999955816460290.json, 图片生成/文生图/【10秒出图】Nun Flux-文生图扩写提示词（中文输入）_2061101576210698241.json, 图片生成/文生图/【胶片感】Nun Flux krea文生图（基础流）_1953735580985249793.json, 图片生成/文生图/文生图扩写_1930841515361239042.json, 平台全量/【10秒出图】Nun Flux-文生图扩写提示词（中文输入）_2015062908849364994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_25
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/极速版文生图V1-Qwen-ImageNunchaku Ran_2046513028291633154.json、图片生成/文生图/海报生成器+QwenImage=艾橘溪_1954567812612288513.json、图片生成/文生图/炼狱杏寿郎_1981285976733638658.json、图片生成/文生图/猩红共生体变身与感染_2051256128578830338.json、图片生成/文生图/电商生成多镜头图片 qwen2512_2017062093035413506.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/Flux-文生图自动扩写提示词（详细讲解使用）_1908181172109586433.json、图片生成/文生图/Flux文生图（lora）工作流_1971036023260123138.json、图片生成/文生图/Flux通过潜空间放大高清修复_1905565864324681729.json、图片生成/文生图/【10秒出图】Nun Flux-文生图扩写提示词（中文输入）_1912944528943448065.json、图片生成/文生图/【10秒出图】Nun Flux-文生图扩写提示词（中文输入）_1957731578933866497.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+全部 10 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncodeFlux`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `KSamplerSelect`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 7/8 个有
-- `UNETLoader` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 5/8 个有
-- `LayerUtility: PurgeVRAM` —— 3/8 个有
-- `easy cleanGpuUsed` —— 2/8 个有
-- `CR Text` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `LoadImage` —— 1/8 个有
-- `NunchakuQwenImageDiTLoader` —— 1/8 个有
+- `Anything Everywhere` —— 9/10 个有
+- `CR Text` —— 8/10 个有
+- `CR Text Concatenate` —— 8/10 个有
+- `RH_Prompter` —— 8/10 个有
+- `ShowText|pysssss` —— 8/10 个有
+- `EG_XZ_QH` —— 7/10 个有
+- `NunchakuFluxDiTLoader` —— 7/10 个有
+- `RH_Translator` —— 7/10 个有
+- `easy cleanGpuUsed` —— 7/10 个有
+- `NunchakuFluxLoraLoader` —— 6/10 个有
+- `LoraLoaderModelOnly` —— 4/10 个有
+- `UNETLoader` —— 3/10 个有
+- `FluxResolutionNode` —— 1/10 个有
+- `Image Comparer (rgthree)` —— 1/10 个有
+- `ImageCASharpening+` —— 1/10 个有
+- `LatentUpscaleBy` —— 1/10 个有
+- `MathExpression|pysssss` —— 1/10 个有
+- `RHHiddenNodes` —— 1/10 个有
+- `TextInput_` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 22.5 | 8 - 50 | 8 | 33% |
-| Prompt 约束强度(CFG) | 3.25 | 1 - 5 | 8 | 47% |
-| 采样算法 | euler | - | 8 | 75% |
-| 调度器 | simple | - | 8 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 600 | 512 - 840 | 10 | 85% |
+| 高度 | 800 | 512 - 1280 | 10 | 75% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 22.5，观测区间 8 - 50，8 个样本，取值分散，一致性仅 33%
-- Prompt 约束强度(CFG) 中位数 3.25，观测区间 1 - 5，8 个样本，取值分散，一致性仅 47%
-- 采样算法 最常用 euler，8 个样本，一致性 75%
-- 调度器 最常用 simple，8 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 600，观测区间 512 - 840，10 个样本，取值集中（一致性 85%）
+- 高度 中位数 800，观测区间 512 - 1280，10 个样本

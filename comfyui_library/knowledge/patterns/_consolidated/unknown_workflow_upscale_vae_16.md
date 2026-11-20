@@ -1,49 +1,39 @@
 ---
 name: unknown_workflow_upscale_vae_16
 type: Unknown Workflow
-frequency: 8
+frequency: 11
 level: moderate
-coverage: 0.608375
-common_nodes: [CR Text, Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, PlaySound|pysssss, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.903909
+common_nodes: [SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/Lora 角色素材收集 工作流：全能图像版（0.16_张）_2040781327082987521.json, 图片生成/图生图/【CQ808】数字人多角度设计_2056562035852402689.json, 图片生成/图生图/未来大师和建筑大师在大师的成名作前合影_2017771137635196930.json, 数字人/数字人/lora训练集-1_2046768060987613185.json, 数字人/数字人/人物多角度设计+(全能图像编辑)_2040786402035634178.json, 数字人/数字人/数字人多角度设计 (全能图像编辑)_2035337776383664129.json, 数字人/数字人/数字人多角度设计_1992113820950745089.json, 视频生成/图生视频/YZ金鱼-Z-image Lora训练集生成补全、人物单图转多视角图像_1993591544808751105.json]
+members: [平台全量/SeeVR2 高清放大-2_2004809846040002562.json, 平台全量/SeeVR2 高清放大_1994652065563615234.json, 平台全量/seedvr2_image_hd_2072576890270998529.json, 平台全量/seedvr2放大_1997914737767776258.json, 平台全量/test_seedvr2_image_hd_2084940767050686466.json, 平台全量/图像修复对比工作流_2044959696179695617.json, 平台全量/图片放大（老程）_2019656875989536770.json, 平台全量/图片高清放大工作流_2068239366807449601.json, 平台全量/图片高清放大：SeedVR2_2054731074751746050.json, 平台全量/极速一键无损图片高清放大seedvr2_2057070787257004034.json, 平台全量/高清放大丨极致还原丨8K丨SeedVR2_2002953396099379202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_16
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Lora 角色素材收集 工作流：全能图像版（0.16_张）_2040781327082987521.json、图片生成/图生图/【CQ808】数字人多角度设计_2056562035852402689.json、图片生成/图生图/未来大师和建筑大师在大师的成名作前合影_2017771137635196930.json、数字人/数字人/lora训练集-1_2046768060987613185.json、数字人/数字人/人物多角度设计+(全能图像编辑)_2040786402035634178.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/SeeVR2 高清放大-2_2004809846040002562.json、平台全量/SeeVR2 高清放大_1994652065563615234.json、平台全量/seedvr2_image_hd_2072576890270998529.json、平台全量/seedvr2放大_1997914737767776258.json、平台全量/test_seedvr2_image_hd_2084940767050686466.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Text`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
+全部 11 个 workflow 都包含：
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 7/8 个有
-- `ShowText|pysssss` —— 7/8 个有
-- `easy int` —— 6/8 个有
-- `easy imageIndexSwitch` —— 5/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/8 个有
-- `easy textIndexSwitch` —— 2/8 个有
-- `easy promptReplace` —— 1/8 个有
+- `LoadImage` —— 9/11 个有
+- `Image Comparer (rgthree)` —— 6/11 个有
+- `JoinImageWithAlpha` —— 2/11 个有
+- `MuyeLoadImage` —— 2/11 个有
+- `Label (rgthree)` —— 1/11 个有
 
 ## 典型参数
 

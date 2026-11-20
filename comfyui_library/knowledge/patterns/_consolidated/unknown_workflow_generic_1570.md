@@ -3,33 +3,51 @@ name: unknown_workflow_generic_1570
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7085
-common_nodes: [LoadImage, RHHiddenNodes, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.6625
+common_nodes: [CustomAddLabel, Float, GuHaiAutoImageSplit, ImageLoader, ImageScaleToTotalPixels, JjkText, MultiTextConcatenate, PreviewImage, RH_RhartImageG2OfficialImageToImage, RH_RhartVideoSparkvideo20MultimodalVideo, RTXVideoSuperResolution, SaveImage, SaveVideo, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, ttN concat]
 problems: []
 missing: []
-members: [图片生成/图生图/自拍照片一键生成正装证件照_1964761706591305730.json, 图片生成/图生图/通用产品精修 （全能图片-2.0）_2029181713380810754.json]
+members: [图片生成/图生图/G image2.0 一键生成专业影视分镜和TVC广告片_2058437554432729090.json, 视频生成/图生视频/G2.0 一键生成专业影视分镜及关键帧TVC广告片 V1.0_2058411561324208130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1570
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/自拍照片一键生成正装证件照_1964761706591305730.json、图片生成/图生图/通用产品精修 （全能图片-2.0）_2029181713380810754.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/G image2.0 一键生成专业影视分镜和TVC广告片_2058437554432729090.json、视频生成/图生视频/G2.0 一键生成专业影视分镜及关键帧TVC广告片 V1.0_2058411561324208130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RHHiddenNodes`
-- `RH_Nano_Banana2_Image2Image`
+- `CustomAddLabel`
+- `Float`
+- `GuHaiAutoImageSplit`
+- `ImageLoader`
+- `ImageScaleToTotalPixels`
+- `JjkText`
+- `MultiTextConcatenate`
+- `PreviewImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `RTXVideoSuperResolution`
 - `SaveImage`
+- `SaveVideo`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveString` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

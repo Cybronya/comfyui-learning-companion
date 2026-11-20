@@ -1,40 +1,39 @@
 ---
 name: unknown_workflow_video_101
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, Int, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+frequency: 4
+level: moderate
+coverage: 0.97225
+common_nodes: [ImageScaleBy, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI漫剧视频补帧（30帧补到60帧）_2012124857437265922.json, 视频生成/图生视频/视频优化板块：GIMM-VFI视频插帧补帧工作流_2050850045557264386.json]
+members: [平台全量/SeedVR2超分视频放大工作流_2100490385469566978.json, 平台全量/seedvr2 视频高清放大_1972921766718951425.json, 平台全量/视频-放大高清修复_1965396499062472706.json, 平台全量/视频超分-10-23B-SeedVR-video-upscaler_1981269246154014722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_101
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AI漫剧视频补帧（30帧补到60帧）_2012124857437265922.json、视频生成/图生视频/视频优化板块：GIMM-VFI视频插帧补帧工作流_2050850045557264386.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/SeedVR2超分视频放大工作流_2100490385469566978.json、平台全量/seedvr2 视频高清放大_1972921766718951425.json、平台全量/视频-放大高清修复_1965396499062472706.json、平台全量/视频超分-10-23B-SeedVR-video-upscaler_1981269246154014722.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `Int`
-- `SimpleMath+`
+全部 4 个 workflow 都包含：
+- `ImageScaleBy`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `SeedVR2GGUF`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_IntToFloat` —— 1/2 个有
-- `Float` —— 1/2 个有
+- `VHS_VideoInfo` —— 3/4 个有
+- `PlaySound|pysssss` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
@@ -46,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

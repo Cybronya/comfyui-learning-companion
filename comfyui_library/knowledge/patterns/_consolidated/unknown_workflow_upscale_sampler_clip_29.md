@@ -1,72 +1,61 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_29
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.9098
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
+frequency: 7
+level: strong
+coverage: 0.494143
+common_nodes: [CLIPTextEncodeSDXL, CLIPTextEncodeSDXLRefiner, CheckpointLoaderSimple, DF_Integer, DF_Text_Box, EmptyLatentImage, ImageUpscaleWithModel, KSampler, KSamplerAdvanced, SaveImage, UpscaleModelLoader, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/Kontext一句话图像万能编辑 +高清放大_1996471448782913538.json, 图片生成/图生图/TTP高清放大（米薯）_1996232515604070402.json, 图片生成/图生图/图片-TTP高清修复放大_1978037084130791426.json, 图片生成/图生图/室内外洗图_2004029442542477314.json, 图片生成/图生图/高清放大_1929750961344954370.json]
+members: [平台全量/发电厂创意海报_1806285393967951874.json, 平台全量/古典插画女神_1808779892321398785.json, 平台全量/地标艺术立体剪纸_1805490718921678849.json, 平台全量/山水亭阁_1804046969835872258.json, 平台全量/抽象现代艺术风格_1793954979199856642.json, 平台全量/服装水彩效果图_1810219725522710530.json, 平台全量/杂志封面摄影_1804066068926291970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_29
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Kontext一句话图像万能编辑 +高清放大_1996471448782913538.json、图片生成/图生图/TTP高清放大（米薯）_1996232515604070402.json、图片生成/图生图/图片-TTP高清修复放大_1978037084130791426.json、图片生成/图生图/室内外洗图_2004029442542477314.json、图片生成/图生图/高清放大_1929750961344954370.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/发电厂创意海报_1806285393967951874.json、平台全量/古典插画女神_1808779892321398785.json、平台全量/地标艺术立体剪纸_1805490718921678849.json、平台全量/山水亭阁_1804046969835872258.json、平台全量/抽象现代艺术风格_1793954979199856642.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `ImageScaleToTotalPixels`
+全部 7 个 workflow 都包含：
+- `CLIPTextEncodeSDXL`
+- `CLIPTextEncodeSDXLRefiner`
+- `CheckpointLoaderSimple`
+- `DF_Integer`
+- `DF_Text_Box`
+- `EmptyLatentImage`
 - `ImageUpscaleWithModel`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `KSampler`
+- `KSamplerAdvanced`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `UNETLoader`
 - `UpscaleModelLoader`
-- `VAEDecodeTiled`
-- `VAEEncode`
-- `VAELoader`
-- `easy imageBatchToImageList`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageListToImageBatch` —— 4/5 个有
-- `Image Comparer (rgthree)` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `NunchakuFluxDiTLoader` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `VAEDecode` —— 2/5 个有
-- `ConstrainImage|pysssss` —— 1/5 个有
-- `EmptyLatentImage` —— 1/5 个有
-- `FluxResolutionNode` —— 1/5 个有
-- `ImageListToImageBatch` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `ModelSamplingFlux` —— 1/5 个有
-- `RH_Translator` —— 1/5 个有
-- `ReferenceLatent` —— 1/5 个有
+- `PreviewImage` —— 6/7 个有
+- `Image Overlay` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `LoadImage` —— 1/7 个有
+- `RH_Prompter` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
+- `TextCombinerTwo` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | - | 1 | 100% |
-| 高度 | 1280 | - | 1 | 100% |
+| 采样步数 | randomize | - | 7 | 86% |
+| Prompt 约束强度(CFG) | 45 | 6 - 45 | 7 | 65% |
+| 采样算法 | 6.5 | 6.5 - 6.5 | 6 | 100% |
+| 调度器 | dpmpp_3m_sde_gpu | - | 7 | 86% |
+| 重绘幅度 | karras | - | 7 | 86% |
+| 宽度 | 512 | 512 - 512 | 7 | 100% |
+| 高度 | 512 | 512 - 512 | 7 | 100% |
 
 ## 常见问题
 
@@ -74,4 +63,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，7 个样本，一致性 86%
+- Prompt 约束强度(CFG) 中位数 45，观测区间 6 - 45，7 个样本
+- 采样算法 中位数 6.5，观测区间 6.5 - 6.5，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_3m_sde_gpu，7 个样本，一致性 86%
+- 重绘幅度 最常用 karras，7 个样本，一致性 86%
+- 宽度 中位数 512，观测区间 512 - 512，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，7 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 45，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

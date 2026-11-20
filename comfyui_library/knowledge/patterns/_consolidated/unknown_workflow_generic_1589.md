@@ -3,37 +3,41 @@ name: unknown_workflow_generic_1589
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7845
-common_nodes: [GODMT_SplitString, RH_LLMAPI_Pro_Node, SaveImage, TextInput_, easy indexAnything, easy showAnything]
+coverage: 0.8515
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2OfficialTextToImage, RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/02Ai漫剧-角色自动设计_2027431106093522945.json, 图片生成/文生图/Ai漫剧        一健生成标准场景四视图_2037611847267917826.json]
+members: [图片生成/图生图/KR_image2图像编辑（4号流）_2048600998565908481.json, 图片生成/文生图/全能图片G2.0 你懂的_2047299239650271234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1589
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/02Ai漫剧-角色自动设计_2027431106093522945.json、图片生成/文生图/Ai漫剧        一健生成标准场景四视图_2037611847267917826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/KR_image2图像编辑（4号流）_2048600998565908481.json、图片生成/文生图/全能图片G2.0 你懂的_2047299239650271234.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GODMT_SplitString`
-- `RH_LLMAPI_Pro_Node`
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartImageG2OfficialTextToImage`
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
-- `TextInput_`
-- `easy indexAnything`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
+- `Comfly_api_set` —— 1/2 个有
+- `Comfly_gpt_image_2_official_ratio` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
 - `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
 - `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 

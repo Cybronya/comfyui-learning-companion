@@ -3,62 +3,76 @@ name: text_to_image_video_lora_sampler_241
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8455
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, PrimitiveFloat, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.6235
+common_nodes: [AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, Display Int (rgthree), DownloadAndLoadWav2VecModel, EmptyLatentImage, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, Float, GetNode, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImpactInt, ImpactSwitch, JjkText, KSampler, LandmarksToImage, LoadAudio, LoadImage, LoraLoaderModelOnly, MegaTTS3Run, MultiTalkWav2VecEmbeds, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_GetAudioDuration, SaveAudio, SetNode, SimpleMath+, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MinimaxH3全能参考VDN一采｜文生视频多模式生成_2097108523267219458.json, 视频生成/文生视频/minimax8步工作流｜视频二创换角色换场景｜动作运镜全保留_2101853028855930882.json]
+members: [视频生成/图生视频/声音克隆口型表情一键生成口播数字人图生视频_2087417142303084546.json, 视频生成/图生视频/表情口型声音克隆｜一键生成口播数字人图生视频_2092167192820408321.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_241
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3全能参考VDN一采｜文生视频多模式生成_2097108523267219458.json、视频生成/文生视频/minimax8步工作流｜视频二创换角色换场景｜动作运镜全保留_2101853028855930882.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/声音克隆口型表情一键生成口播数字人图生视频_2087417142303084546.json、视频生成/图生视频/表情口型声音克隆｜一键生成口播数字人图生视频_2092167192820408321.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `CLIPVisionLoader`
+- `Display Int (rgthree)`
+- `DownloadAndLoadWav2VecModel`
 - `EmptyLatentImage`
+- `FantasyPortraitFaceDetector`
+- `FantasyPortraitModelLoader`
+- `Float`
 - `GetNode`
+- `ImageConcatMulti`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `ImpactSwitch`
 - `JjkText`
 - `KSampler`
+- `LandmarksToImage`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AudioConditioningT8`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `MegaTTS3Run`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_GetAudioDuration`
+- `SaveAudio`
 - `SetNode`
+- `SimpleMath+`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddFantasyPortrait`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `MiniMaxH3AVDecodeT8` —— 1/2 个有
-- `MiniMaxH3PDD8StepSetupT8Advanced` —— 1/2 个有
-- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 1/2 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `RandomSeedNoise` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `SolAttnMiniMax` —— 1/2 个有
-- `VAEDecodeAudio` —— 1/2 个有
-- `忽略多组孤海` —— 1/2 个有
 
 ## 典型参数
 

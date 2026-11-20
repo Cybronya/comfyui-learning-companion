@@ -3,32 +3,34 @@ name: unknown_workflow_generic_1754
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadAudio, RH_Wan25_T2V, SaveVideo]
+coverage: 0.6075
+common_nodes: [JjkText, LoadImage, PreviewImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.5文生视频API_1970644366563962881.json, 视频生成/文生视频/Wan2.5文生视频_1978792977684434945.json]
+members: [图片生成/图生图/最新Gimage2图生图工作流V2_2051456165527207938.json, 数字人/数字人/全能图片G-Image-2.0-人物面部三视图-高清直出_2104741877626007553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1754
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan2.5文生视频API_1970644366563962881.json、视频生成/文生视频/Wan2.5文生视频_1978792977684434945.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新Gimage2图生图工作流V2_2051456165527207938.json、数字人/数字人/全能图片G-Image-2.0-人物面部三视图-高清直出_2104741877626007553.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `RH_Wan25_T2V`
-- `SaveVideo`
+- `JjkText`
+- `LoadImage`
+- `PreviewImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 1/2 个有
+- `easy imageRemBg` —— 1/2 个有
 
 ## 典型参数
 

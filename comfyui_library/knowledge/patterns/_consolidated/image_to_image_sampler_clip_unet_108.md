@@ -1,29 +1,30 @@
 ---
 name: image_to_image_sampler_clip_unet_108
 type: Image To Image
-frequency: 4
+frequency: 6
 level: strong
-coverage: 0.8875
-common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.814333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/15.tonnie-kontext局部重绘2_1997554640071901186.json, 图片生成/图生图/8.tonnie-kontext官方工作流_1997531205258121218.json, 图片生成/图生图/Flux1-kontext图像转绘--低多边形风格_1948042005027913729.json, 图片生成/图生图/flux kontext 局部重绘（ inpainting）_1962171826392776705.json]
+members: [图片生成/文生图/flux-context-多图可控生成_1939341869128269826.json, 图片生成/文生图/flux_kontext_dev_basic_8G可用_1954455056802312194.json, 平台全量/Flux kontext工作流_1942781496346521601.json, 平台全量/kontext dev换背景_1939514330755022849.json, 平台全量/kontext dev系列-图片去水印去万物_1938657183427186689.json, 平台全量/kontext dev系列-提取图片线稿_1938915660233629698.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_108
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/15.tonnie-kontext局部重绘2_1997554640071901186.json、图片生成/图生图/8.tonnie-kontext官方工作流_1997531205258121218.json、图片生成/图生图/Flux1-kontext图像转绘--低多边形风格_1948042005027913729.json、图片生成/图生图/flux kontext 局部重绘（ inpainting）_1962171826392776705.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/flux-context-多图可控生成_1939341869128269826.json、图片生成/文生图/flux_kontext_dev_basic_8G可用_1954455056802312194.json、平台全量/Flux kontext工作流_1942781496346521601.json、平台全量/kontext dev换背景_1939514330755022849.json、平台全量/kontext dev系列-图片去水印去万物_1938657183427186689.json…）
 
 - **类型**：Image To Image
-- **样本数**：4
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
 - `KSampler`
@@ -36,29 +37,29 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 3/4 个有
-- `DifferentialDiffusion` —— 2/4 个有
-- `FluxKontextImageScale` —— 2/4 个有
-- `Kontext Inpainting Conditioning` —— 2/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `ModelSamplingFlux` —— 2/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `ImageStitch` —— 1/4 个有
-- `MZ_Flux1PartialLoad_Patch` —— 1/4 个有
-- `Mask Fill Holes` —— 1/4 个有
-- `MaskBlur+` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
+- `FluxKontextImageScale` —— 5/6 个有
+- `ImageStitch` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `EmptySD3LatentImage` —— 3/6 个有
+- `ImageConcatMulti` —— 3/6 个有
+- `RH_Translator` —— 3/6 个有
+- `ShowText|pysssss` —— 3/6 个有
+- `RMBG` —— 2/6 个有
+- `TeaCache` —— 2/6 个有
+- `Compositor3` —— 1/6 个有
+- `CompositorConfig3` —— 1/6 个有
+- `GetImageSize+` —— 1/6 个有
+- `Lora Loader` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 10 - 20 | 4 | 75% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | beta | - | 4 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -66,8 +67,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 10 - 20，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 beta，4 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

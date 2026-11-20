@@ -30,7 +30,7 @@ Utility
 
 常见取值：
 
-- `["", "flux-kontext-max", "sk-fJULbFq73wRVe4aQEb9b357eAe4548A69603Bb04C2B00e6f", "1:1", 1, 1756996057, "randomize"]`（1 次）
+- `["", "flux-kontext-max", "REDACTED0000000000000000000000000000000000000000000", "1:1", 1, 1756996057, "randomize"]`（1 次）
 
 ## 可信度
 

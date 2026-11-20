@@ -1,73 +1,53 @@
 ---
 name: unknown_workflow_video_sampler_vae_183
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7235
-common_nodes: [BBoxesToSAM2, DownloadAndLoadQwenModel, DownloadAndLoadSAM2Model, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetNode, GrowMask, ImageCompositeMasked, ImageFromBatch, InvertMask, LayerMask: LoadFlorence2Model, LayerMask: MaskPreview, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LoadWanVideoT5TextEncoder, Mask Switch (JPS), MaskPreview+, MaskToImage, MuyeTextEditOutput, PointsEditor, PreviewImage, QwenVLDetection, RH_Translator, Sam2Segmentation, SeCModelLoader, SeCVideoSegmentation, SetNode, SolidMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoDecode, WanVideoEncode, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.893333
+common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: ["数字人/数字人/视频消除+遮罩合辑Sec,Sam,Florence,BBox,Qwen+Minimax_1979386554948947970.json", 数字人/数字人/视频消除，任意擦除，最强视频遮罩（Sec Sam BBox等）不同消除方式_2037359402281340929.json]
+members: [平台全量/扩图终结者_1966463111370846210.json, 平台全量/高级扩图，效果好，速度快_2049399657029181442.json, 视频生成/图生视频/电商商品展示_1924016884511854593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_183
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/视频消除+遮罩合辑Sec,Sam,Florence,BBox,Qwen+Minimax_1979386554948947970.json、数字人/数字人/视频消除，任意擦除，最强视频遮罩（Sec Sam BBox等）不同消除方式_2037359402281340929.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/扩图终结者_1966463111370846210.json、平台全量/高级扩图，效果好，速度快_2049399657029181442.json、视频生成/图生视频/电商商品展示_1924016884511854593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BBoxesToSAM2`
-- `DownloadAndLoadQwenModel`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `GrowMask`
-- `ImageCompositeMasked`
-- `ImageFromBatch`
-- `InvertMask`
-- `LayerMask: LoadFlorence2Model`
-- `LayerMask: MaskPreview`
-- `LayerMask: ObjectDetectorFL2`
-- `LayerMask: SAM2Ultra`
+全部 3 个 workflow 都包含：
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `Mask Switch (JPS)`
-- `MaskPreview+`
-- `MaskToImage`
-- `MuyeTextEditOutput`
-- `PointsEditor`
 - `PreviewImage`
-- `QwenVLDetection`
-- `RH_Translator`
-- `Sam2Segmentation`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetNode`
-- `SolidMask`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfo`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoMiniMaxRemoverEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DiffuEraserLoader` —— 1/2 个有
-- `DiffuEraserSampler` —— 1/2 个有
+- `GetImageSize` —— 2/3 个有
+- `ImagePadForOutpaint` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `WanVideoLoraSelect` —— 2/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
+- `WanVideoTeaCache` —— 1/3 个有
+- `easy imageConcat` —— 1/3 个有
 
 ## 典型参数
 
@@ -79,4 +59,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

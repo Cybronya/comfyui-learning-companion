@@ -14,6 +14,7 @@
 只依赖标准库；串行跑，全部分类附和后打印总表。
 """
 import csv
+import datetime
 import re
 import subprocess
 import sys
@@ -28,7 +29,24 @@ TOOLS = ROOT / "skills" / "comfyui-learning" / "tools"
 IDS = ROOT / "download" / "ids-by-tag"
 DL = ROOT / "download" / "workflows-by-tag"
 PY = sys.executable
-DAY = "2026-10-26"
+# 日期可由 argv[1] 指定（默认今天），避免每天复制一份 runner；
+# 其后可跟 --only 分类1,分类2 只跑指定分类（断点续跑用）
+DAY = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("-") \
+    else datetime.date.today().isoformat()
+ONLY: set = set()
+if "--only=" in " ".join(sys.argv):
+    for a in sys.argv:
+        if a.startswith("--only="):
+            ONLY = {t.strip() for t in a.split("=", 1)[1].split(",") if t.strip()}
+LOG = ROOT / "download" / "collect_download.log"
+
+
+def log(msg: str) -> str:
+    line = f"[{datetime.datetime.now():%m-%d %H:%M:%S}] {msg}"
+    print(line, flush=True)
+    with open(LOG, "a", encoding="utf-8") as f:
+        f.write(line + "\n")
+
 
 # (分类 大类/小类, 单轮 target)
 TAGS = [
@@ -72,6 +90,8 @@ def main():
     grand_new = grand_landed = 0
     summary = []
     for tag, target in TAGS:
+        if ONLY and tag not in ONLY:
+            continue
         parent, name = tag.split("/")
         ids_txt = IDS / parent / f"{name}_ids.txt"
         meta_csv = IDS / parent / f"{name}_meta.csv"

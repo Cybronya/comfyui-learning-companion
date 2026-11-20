@@ -1,61 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_clip_115
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.882
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 6
+level: moderate
+coverage: 0.6615
+common_nodes: [AILab_ImageResize, Anything Everywhere3, CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetNode, ImageStitch, Int, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewAny, Qwen3VL_Chat, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json, 图片生成/文生图/Wan2.2图片生成  文生图_2038151225899749378.json, 图片生成/文生图/Wan2.2文生图_1950935703578419201.json, 图片生成/文生图/图片-文生图-Instagirl_1960284703142129666.json, 图片生成/文生图/文生图Wan2.2 极简+高清_1974421120923340802.json]
+members: [图片生成/图生图/一键提取服装白底图 Flux2-klein 9B模型_2103447528330055682.json, 图片生成/图生图/服装完美正面提取加大_自选出图丨Flux2-klein 9B_2033617434636197889.json, 图片生成/图生图/服装模特图高清提取服装3D平面图平铺图生图_2066190874966581250.json, 平台全量/👽老许Gary： 单图编辑-服装提取丨Flux2-klein 9B_2033490098733457410.json, 平台全量/👽老许Gary： 服装立体化-单图编辑丨Flux2-klein 9B👽老许Gary： 服装立体化-单图编辑丨Flux2-klein 9B_2034197723368398850.json, 平台全量/👽老许Gary：Flux2-klein 9B 基础三图编辑_2033449904412041217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_115
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json、图片生成/文生图/Wan2.2图片生成  文生图_2038151225899749378.json、图片生成/文生图/Wan2.2文生图_1950935703578419201.json、图片生成/文生图/图片-文生图-Instagirl_1960284703142129666.json、图片生成/文生图/文生图Wan2.2 极简+高清_1974421120923340802.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/一键提取服装白底图 Flux2-klein 9B模型_2103447528330055682.json、图片生成/图生图/服装完美正面提取加大_自选出图丨Flux2-klein 9B_2033617434636197889.json、图片生成/图生图/服装模特图高清提取服装3D平面图平铺图生图_2066190874966581250.json、平台全量/👽老许Gary： 单图编辑-服装提取丨Flux2-klein 9B_2033490098733457410.json、平台全量/👽老许Gary： 服装立体化-单图编辑丨Flux2-klein 9B👽老许Gary： 服装立体化-单图编辑丨Flux2-klein 9B_2034197723368398850.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `AILab_ImageResize`
+- `Anything Everywhere3`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetNode`
+- `ImageStitch`
+- `Int`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewAny`
+- `Qwen3VL_Chat`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `Int` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `SeedVR2` —— 2/5 个有
-- `SeedVR2BlockSwap` —— 2/5 个有
-- `Anything Everywhere3` —— 1/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `Text` —— 1/5 个有
+- `CR Text` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `GetImageSize+` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `QwenMultiangleCameraNode` —— 3/6 个有
+- `TextInputNode` —— 3/6 个有
+- `PrimitiveBoolean` —— 1/6 个有
+- `TT_img_enc` —— 1/6 个有
+- `TT_img_enc_v2` —— 1/6 个有
+- `Textbox` —— 1/6 个有
+- `ZML_SwitchOutput` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
+- `easy promptLine` —— 1/6 个有
+- `text_mul_Join` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | 0.6 - 1 | 3 | 78% |
-| LoRA 文本强度 | 1 | 0.6 - 1 | 3 | 78% |
-| 采样步数 | fixed | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 10 | 5 | 89% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | euler | - | 5 | 60% |
-| 重绘幅度 | simple | - | 5 | 60% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,10 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 0.6 - 1，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 0.6 - 1，3 个样本
-- 采样步数 最常用 fixed，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 10，5 个样本，取值集中（一致性 89%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，5 个样本，一致性 60%
-- 重绘幅度 最常用 simple，5 个样本，一致性 60%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

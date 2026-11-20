@@ -1,88 +1,83 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_46
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: strong
-coverage: 0.629333
-common_nodes: [Any Switch (rgthree), Anything Everywhere, Bookmark (rgthree), CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, DifferentialDiffusion, EmptyImage, Fast Groups Muter (rgthree), FluxGuidance, GetImageSize+, GetMaskSizeAndCount, GetNode, GrowMask, GrowMaskWithBlur, ImageCompositeMasked, ImageConcanate, ImageCrop+, ImageResize+, ImageToMask, InpaintCrop, InpaintModelConditioning, InpaintStitch, JoinStrings, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerMask: SegformerB2ClothesUltra, LayerUtility: ImageRemoveAlpha, LoadImage, Mask Fill Holes, MaskPreview+, MaskToImage, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, PreviewImage, SaveImage, SetNode, String Literal, StyleModelApplySimple, StyleModelLoader, VAEDecode, VAELoader, easy imageSize, easy int, easy seed]
+coverage: 0.797
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImageConcanate, ImageCrop+, ImageToMask, ImpactInt, InpaintCrop, InpaintModelConditioning, InpaintStitch, InspyrenetRembg, KSampler, LayerUtility: GetImageSize, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, MaskToImage, Parabolize, PreviewImage, ReduxAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/万物迁移 全功能工作流 换啥都行_1911150259995901953.json, 图片生成/图生图/万物迁移+全功能工作流+换啥都行_1999439413467901953.json, 图片生成/图生图/全能万物迁移 工作流_1989300632014254081.json]
+members: [图片生成/图生图/【精准一键换衣】 FLUX模特人物换装_1919586611879673857.json, 图片生成/文生图/一键换装FLUX重绘_1924659553831407618.json, 平台全量/一键换装+FLUX重绘_1967849818561347585.json, 平台全量/全站最强一键换衣，人物换装，模特换装，适用任意风格，自动适配白底图版_1918127894001029122.json, 平台全量/目前最强换装F.1_1930084982621114370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_46
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/万物迁移 全功能工作流 换啥都行_1911150259995901953.json、图片生成/图生图/万物迁移+全功能工作流+换啥都行_1999439413467901953.json、图片生成/图生图/全能万物迁移 工作流_1989300632014254081.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/【精准一键换衣】 FLUX模特人物换装_1919586611879673857.json、图片生成/文生图/一键换装FLUX重绘_1924659553831407618.json、平台全量/一键换装+FLUX重绘_1967849818561347585.json、平台全量/全站最强一键换衣，人物换装，模特换装，适用任意风格，自动适配白底图版_1918127894001029122.json、平台全量/目前最强换装F.1_1930084982621114370.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Anything Everywhere`
-- `Bookmark (rgthree)`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `ConditioningZeroOut`
 - `DifferentialDiffusion`
-- `EmptyImage`
-- `Fast Groups Muter (rgthree)`
+- `DualCLIPLoader`
 - `FluxGuidance`
-- `GetImageSize+`
-- `GetMaskSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `GrowMaskWithBlur`
-- `ImageCompositeMasked`
 - `ImageConcanate`
 - `ImageCrop+`
-- `ImageResize+`
 - `ImageToMask`
+- `ImpactInt`
 - `InpaintCrop`
 - `InpaintModelConditioning`
 - `InpaintStitch`
-- `JoinStrings`
+- `InspyrenetRembg`
 - `KSampler`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModel`
-- `LayerMask: SegformerB2ClothesUltra`
-- `LayerUtility: ImageRemoveAlpha`
+- `LayerUtility: GetImageSize`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `Mask Fill Holes`
-- `MaskPreview+`
 - `MaskToImage`
-- `NunchakuFluxDiTLoader`
-- `NunchakuTextEncoderLoader`
+- `Parabolize`
 - `PreviewImage`
+- `ReduxAdvanced`
 - `SaveImage`
-- `SetNode`
-- `String Literal`
-- `StyleModelApplySimple`
 - `StyleModelLoader`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageSize`
-- `easy int`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/3 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 4/5 个有
+- `LayerUtility: ImageRemoveAlpha` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `Anything Everywhere` —— 3/5 个有
+- `BaiduTranslateNode` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `Fast Groups Muter (rgthree)` —— 2/5 个有
+- `GetImageSize` —— 2/5 个有
+- `GetNode` —— 2/5 个有
+- `PrimitiveStringMultiline` —— 2/5 个有
+- `ETN_Translate` —— 1/5 个有
+- `INPAINT_MaskedFill` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `InvertMask` —— 1/5 个有
+- `ShowText|pysssss` —— 1/5 个有
+- `easy imageCropFromMask` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 20 | 20 - 20 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -90,8 +85,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

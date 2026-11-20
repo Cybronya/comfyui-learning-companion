@@ -1,36 +1,40 @@
 ---
 name: unknown_workflow_generic_507
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.919
-common_nodes: [CR Text, LoadImage, RH_Sora2_I2V, SaveVideo]
+coverage: 0.810143
+common_nodes: [DramaBoxLoader, DramaBoxTTS]
 problems: []
 missing: []
-members: [视频生成/图生视频/【ws】分镜图全能视频S_1998655213177331713.json, 视频生成/图生视频/全能视频S 图生视频_1978700922345902081.json, 视频生成/图生视频/全能视频S 图生视频工作流 支持横_竖屏_1974997082266275841.json, 视频生成/图生视频/全能视频S 图生视频工作流_1996557884752281601.json, 视频生成/图生视频/全能视频S-图生视频_1994710293764841473.json, 视频生成/图生视频/全能视频S图生视频15s梭罗2图生视频0.08元每次_1983514033917763585.json]
+members: [音频生成/音频生成/DramaBox TTS-声音克隆_2056428882772971521.json, 音频生成/音频生成/DramaBox TTS-声音克隆生成工作流_2056243564417470466.json, 音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2056257984770166785.json, 音频生成/音频生成/DramaBox最强表演型语音克隆TTS（参考音频）v2_2057836354272317441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_507
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/【ws】分镜图全能视频S_1998655213177331713.json、视频生成/图生视频/全能视频S 图生视频_1978700922345902081.json、视频生成/图生视频/全能视频S 图生视频工作流 支持横_竖屏_1974997082266275841.json、视频生成/图生视频/全能视频S 图生视频工作流_1996557884752281601.json、视频生成/图生视频/全能视频S-图生视频_1994710293764841473.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/DramaBox TTS-声音克隆_2056428882772971521.json、音频生成/音频生成/DramaBox TTS-声音克隆生成工作流_2056243564417470466.json、音频生成/音频生成/DramaBox 小说到语音TTS_2056579535163969538.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-参考音频-语音克隆_2056995481405976577.json、音频生成/音频生成/DramaBox最强表演型语音克隆TTS-文生音频_2056988687841456129.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Text`
-- `LoadImage`
-- `RH_Sora2_I2V`
-- `SaveVideo`
+全部 7 个 workflow 都包含：
+- `DramaBoxLoader`
+- `DramaBoxTTS`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewTextNode` —— 1/6 个有
-- `ttN concat` —— 1/6 个有
+- `DramaBoxVoiceClone` —— 6/7 个有
+- `LoadAudio` —— 6/7 个有
+- `SaveAudio` —— 6/7 个有
+- `JjkText` —— 5/7 个有
+- `DramaBoxAudioPreview` —— 4/7 个有
+- `PrimitiveFloat` —— 2/7 个有
+- `SaveAudioMP3` —— 2/7 个有
+- `Textbox` —— 2/7 个有
 
 ## 典型参数
 

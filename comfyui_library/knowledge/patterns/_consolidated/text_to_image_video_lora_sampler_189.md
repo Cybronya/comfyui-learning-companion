@@ -3,70 +3,70 @@ name: text_to_image_video_lora_sampler_189
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.529667
-common_nodes: [CLIPLoader, CLIPTextEncode, DWPreprocessor, EmptyLatentImage, FloatConstant, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchMulti, ImageColorMatch+, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MaskToImage, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, Power Lora Loader (rgthree), PreviewImage, SetNode, TorchCompileModelWanVideoV2, TrimVideoLatent, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVaceToVideo, WanVideoVACEStartToEndFrame, easy forLoopEnd, easy forLoopStart, easy showAnything, solarL_SaveImagesToZip, wanBlockSwap]
+coverage: 0.623333
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ResolutionSelector, SaveImage, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SetNode, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan 2.1 VACE-SVI CN V2V长视频跳舞专用 图生视频视频生视频_2088683651528744962.json, 视频生成/图生视频/Wan 2.1 VACE-SVI CN V2V长视频跳舞专用 图生视频视频生视频_2089323773471322113.json, 视频生成/图生视频/Wan 2.1 VACE-SVI CN V2V长视频跳舞专用 图生视频视频生视频_2091764185435824130.json]
+members: [数字人/数字人/Minimax-H3二采MV长视频生成，数字人图生视频一站式_2112813979277025282.json, 视频生成/图生视频/Minimax-H3二采MV长视频生成，数字人图生视频一站式_2110491230802108418.json, 视频生成/图生视频/短视频复刻v3，视频生视频图生视频快速仿拍出片_2110520972825681922.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_189
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan 2.1 VACE-SVI CN V2V长视频跳舞专用 图生视频视频生视频_2088683651528744962.json、视频生成/图生视频/Wan 2.1 VACE-SVI CN V2V长视频跳舞专用 图生视频视频生视频_2089323773471322113.json、视频生成/图生视频/Wan 2.1 VACE-SVI CN V2V长视频跳舞专用 图生视频视频生视频_2091764185435824130.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Minimax-H3二采MV长视频生成，数字人图生视频一站式_2112813979277025282.json、视频生成/图生视频/Minimax-H3二采MV长视频生成，数字人图生视频一站式_2110491230802108418.json、视频生成/图生视频/短视频复刻v3，视频生视频图生视频快速仿拍出片_2110520972825681922.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DWPreprocessor`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `FloatConstant`
-- `GetImageRangeFromBatch`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageColorMatch+`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskToImage`
 - `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Power Lora Loader (rgthree)`
-- `PreviewImage`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ResolutionSelector`
+- `SaveImage`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
 - `SetNode`
-- `TorchCompileModelWanVideoV2`
-- `TrimVideoLatent`
+- `SolidMask`
 - `UNETLoader`
-- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVaceToVideo`
-- `WanVideoVACEStartToEndFrame`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
+- `AudioCrop` —— 2/3 个有
+- `ImageBatchExtendWithOverlap` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `MiniMaxH3MotionContext` —— 2/3 个有
+- `MiniMaxH3MotionContextLoadLatent` —— 2/3 个有
+- `MiniMaxH3MotionContextSaveLatent` —— 2/3 个有
+- `MiniMaxH3MotionContextTrim` —— 2/3 个有
+- `SoundFlow_GetLength` —— 2/3 个有
 - `孤海注释` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
 
 ## 典型参数
 
@@ -84,7 +84,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -95,4 +95,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（9/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

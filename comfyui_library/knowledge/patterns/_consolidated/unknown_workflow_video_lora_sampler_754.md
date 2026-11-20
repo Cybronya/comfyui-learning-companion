@@ -1,61 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_754
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.888
-common_nodes: [ImageResizeKJv2, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.67925
+common_nodes: [CreateCFGScheduleFloatList, GetNode, HuMoEmbeds, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/图生视频加运镜_1951201282436571137.json, 视频生成/图生视频/图生视频（WanFusionX）（魔方）_1948023695982899201.json, 视频生成/图生视频/首+尾帧视频转绘（FusionX_VACE无V）(魔方)_1945823469433221121.json]
+members: [视频生成/图生视频/wanvideo_HuMo_图片+音频生成视频_1967466923598417921.json, 视频生成/图生视频/wanvideo_HuMo_多参考图生成视频_1967487607431159809.json, 视频生成/图生视频/👽HuMo单人数字人参考+音频👽_1969237169846034433.json, 视频生成/文生视频/wanvideo_HuMo_音频生成视频_1967497065762840577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_754
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/图生视频加运镜_1951201282436571137.json、视频生成/图生视频/图生视频（WanFusionX）（魔方）_1948023695982899201.json、视频生成/图生视频/首+尾帧视频转绘（FusionX_VACE无V）(魔方)_1945823469433221121.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/wanvideo_HuMo_图片+音频生成视频_1967466923598417921.json、视频生成/图生视频/wanvideo_HuMo_多参考图生成视频_1967487607431159809.json、视频生成/图生视频/👽HuMo单人数字人参考+音频👽_1969237169846034433.json、视频生成/文生视频/wanvideo_HuMo_音频生成视频_1967497065762840577.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageResizeKJv2`
-- `JWInteger`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+全部 4 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `GetNode`
+- `HuMoEmbeds`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `WanVideoImageToVideoEncode` —— 2/3 个有
-- `WanVideoMagCache` —— 2/3 个有
-- `WanVideoSLG` —— 2/3 个有
-- `WanVideoVACEModelSelect` —— 2/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `WanVideoEncode` —— 1/3 个有
-- `WanVideoSetRadialAttention` —— 1/3 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
-- `WanVideoUni3C_embeds` —— 1/3 个有
-- `WanVideoVACEEncode` —— 1/3 个有
-- `WanVideoVACEStartToEndFrame` —— 1/3 个有
+- `INTConstant` —— 3/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `ImageBatchMulti` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `WanVideoContextOptions` —— 2/4 个有
+- `Audio Duration (mtb)` —— 1/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `ImpactInt` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
+- `RMBG` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `easy imageRemBg` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 

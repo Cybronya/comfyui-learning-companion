@@ -1,66 +1,58 @@
 ---
 name: unknown_workflow_lora_sampler_clip_125
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.9344
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyHunyuanLatentVideo, INTConstant, ImageFromBatch+, JWInteger, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, Qwen3_VQA, SDVN Any Show, TextConcat, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+coverage: 0.909167
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Comfy挑战赛8（诡影映画）-1920S 黑白恐怖文生视频（主题扩写）_1983777752908242945.json, 视频生成/文生视频/Smooth 2.2+Qwen3 VL自动文生视频V1_1982722479758163970.json, 视频生成/文生视频/wan2.2官方文生视频+Smooth 2.2动态优化+Qwen3 VL提示词优化_1983330102350114818.json, 视频生成/文生视频/（自用）Smooth 2.2+Animated 文生视频V3（双模式）_1986673673375514625.json, 视频生成/文生视频/（自用）Smooth 2.2+Qwen3 VL自动文生视频V2_1982706970622869505.json]
+members: [视频生成/图生视频/(头发生长过程)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1998571771651588098.json, 视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1996850315431485442.json, 视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1_1956358088464977921.json, 视频生成/图生视频/【官版】Wan2.2 14B Fun Inp首尾帧_1956634658516471809.json, 视频生成/文生视频/Wan2.2 dyno高噪文生视频极速版V2（官方版）_1974800997673512961.json, 视频生成/文生视频/【阡陌】wan2.2+light4步加速lora文生视频工作流_1967560743048581122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_125
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Comfy挑战赛8（诡影映画）-1920S 黑白恐怖文生视频（主题扩写）_1983777752908242945.json、视频生成/文生视频/Smooth 2.2+Qwen3 VL自动文生视频V1_1982722479758163970.json、视频生成/文生视频/wan2.2官方文生视频+Smooth 2.2动态优化+Qwen3 VL提示词优化_1983330102350114818.json、视频生成/文生视频/（自用）Smooth 2.2+Animated 文生视频V3（双模式）_1986673673375514625.json、视频生成/文生视频/（自用）Smooth 2.2+Qwen3 VL自动文生视频V2_1982706970622869505.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/(头发生长过程)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1998571771651588098.json、视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1 浮云_1996850315431485442.json、视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1_1956358088464977921.json、视频生成/图生视频/【官版】Wan2.2 14B Fun Inp首尾帧_1956634658516471809.json、视频生成/文生视频/Wan2.2 dyno高噪文生视频极速版V2（官方版）_1974800997673512961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `EmptyHunyuanLatentVideo`
-- `INTConstant`
-- `ImageFromBatch+`
-- `JWInteger`
+- `CreateVideo`
 - `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `SDVN Any Show`
-- `TextConcat`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 3/5 个有
-- `SaveImage` —— 2/5 个有
-- `TT_img_enc` —— 2/5 个有
-- `TT_img_enc_v2` —— 2/5 个有
-- `ApplySageAttention` —— 1/5 个有
-- `ConcatTextOfUtils` —— 1/5 个有
-- `easy anythingIndexSwitch` —— 1/5 个有
-- `wanBlockSwap` —— 1/5 个有
+- `LoadImage` —— 5/6 个有
+- `CR Prompt Text` —— 4/6 个有
+- `JWInteger` —— 4/6 个有
+- `VHS_VideoCombine` —— 4/6 个有
+- `WanFunInpaintToVideo` —— 4/6 个有
+- `ImageConcanate` —— 3/6 个有
+- `PDIMAGE_LongerSize` —— 3/6 个有
+- `EmptyHunyuanLatentVideo` —— 2/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 12 | 12 - 12 | 5 | 100% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | uni_pc | - | 5 | 100% |
-| 重绘幅度 | beta | - | 5 | 100% |
+| 采样步数 | fixed | - | 6 | 67% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | euler | - | 6 | 100% |
+| 重绘幅度 | simple | - | 6 | 100% |
 
 ## 常见问题
 
@@ -68,8 +60,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 uni_pc，5 个样本，一致性 100%
-- 重绘幅度 最常用 beta，5 个样本，一致性 100%
+- 采样步数 最常用 fixed，6 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，6 个样本，一致性 100%
+- 重绘幅度 最常用 simple，6 个样本，一致性 100%

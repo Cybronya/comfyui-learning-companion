@@ -1,71 +1,78 @@
 ---
 name: text_to_image_upscale_sampler_clip_28
 type: Text To Image
-frequency: 3
+frequency: 5
 level: strong
-coverage: 0.887333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageUpscaleWithModel, KSampler, SaveImage, UNETLoader, Upscale Model Loader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.7708
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), KSampler, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z-image图生图洗稿超真实写实人物_1999362061907918849.json, 图片生成/图生图/Z-image超极速图生图（魔君降临--拳打nunchaku，脚踢Flux2）_1994269913843957762.json, 图片生成/文生图/Z-image超极速文生图（魔君降临--拳打nunchaku，脚踢Flux2）_1994262703730524162.json]
+members: [图片生成/文生图/krea2-文生图_2080226312320544769.json, 图片生成/文生图/krea2文生图+seedvr2高清放大_2070353662572060673.json, 图片生成/文生图/krea2文生图+seedvr2高清放大_2070396975937314818.json, 图片生成/文生图/krea2文生图+seedvr2高清放大_2070416550108155905.json, 图片生成/文生图/krea2文生图+seedvr2高清放大_2070429404085444609.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_sampler_clip_28
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Z-image图生图洗稿超真实写实人物_1999362061907918849.json、图片生成/图生图/Z-image超极速图生图（魔君降临--拳打nunchaku，脚踢Flux2）_1994269913843957762.json、图片生成/文生图/Z-image超极速文生图（魔君降临--拳打nunchaku，脚踢Flux2）_1994262703730524162.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/krea2-文生图_2080226312320544769.json、图片生成/文生图/krea2文生图+seedvr2高清放大_2070353662572060673.json、图片生成/文生图/krea2文生图+seedvr2高清放大_2070396975937314818.json、图片生成/文生图/krea2文生图+seedvr2高清放大_2070416550108155905.json、图片生成/文生图/krea2文生图+seedvr2高清放大_2070429404085444609.json）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `ImageUpscaleWithModel`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `PreviewImage`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `Upscale Model Loader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: JoyCaptionBeta1` —— 2/3 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 2/3 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `VAEEncode` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
+- `PrimitiveInt` —— 4/5 个有
+- `Fast Bypasser (rgthree)` —— 1/5 个有
+- `LatentUpscaleBy` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `ResolutionSelector` —— 1/5 个有
+- `easy promptConcat` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 768 | 768 - 1080 | 3 | 83% |
-| 高度 | 1024 | 1024 - 1920 | 3 | 68% |
+| 采样步数 | 8 | 8 - 8 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 80% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 0.55 - 1 | 5 | 80% |
+| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 高度 | 1536 | 1024 - 1536 | 5 | 86% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，观测区间 768 - 1080，3 个样本，取值集中（一致性 83%）
-- 高度 中位数 1024，观测区间 1024 - 1920，3 个样本
+- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 80%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.55 - 1，5 个样本，取值集中（一致性 80%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1024 - 1536，5 个样本，取值集中（一致性 86%）
+- 高发问题（6/5 个样本）：Steps较低可能导致细节不足

@@ -1,35 +1,42 @@
 ---
 name: unknown_workflow_upscale_32
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9
-common_nodes: [ImageCompare, LoadImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.6675
+common_nodes: [BiRefNet_ModelLoader_Zho, BiRefNet_Zho, InspyrenetRembg, LayerMask: BiRefNetUltra, LayerMask: SegmentAnythingUltra V2, LoadImage, PreviewImage, SaveImage, easy imageRemBg]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_flux_erase_image.json, comfyui-workflow-templates-json/api_magnific_image_upscale_creative.json]
+members: [图片生成/图生图/Image Masking Collection7合1抠图+抠图去除背景_2097859749982334977.json, 图片生成/图生图/抠图_2062353508631928833.json, 平台全量/7合1抠图 抠图大合集 +抠图去除背景+一键在线抠图+万能抠图+自动抠图+智能识别+抠发丝级_2045736524297277441.json, 平台全量/抠图大合集  7合1抠图 抠图去除背景 一键在线抠图 万能抠图 自动抠图 智能识别 抠发丝级_2043530094085414913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_32
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_flux_erase_image.json、comfyui-workflow-templates-json/api_magnific_image_upscale_creative.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Image Masking Collection7合1抠图+抠图去除背景_2097859749982334977.json、图片生成/图生图/抠图_2062353508631928833.json、平台全量/7合1抠图 抠图大合集 +抠图去除背景+一键在线抠图+万能抠图+自动抠图+智能识别+抠发丝级_2045736524297277441.json、平台全量/抠图大合集  7合1抠图 抠图去除背景 一键在线抠图 万能抠图 自动抠图 智能识别 抠发丝级_2043530094085414913.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageCompare`
+全部 4 个 workflow 都包含：
+- `BiRefNet_ModelLoader_Zho`
+- `BiRefNet_Zho`
+- `InspyrenetRembg`
+- `LayerMask: BiRefNetUltra`
+- `LayerMask: SegmentAnythingUltra V2`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxEraseNode` —— 1/2 个有
-- `MagnificImageUpscalerCreativeNode` —— 1/2 个有
+- `ImageUpscaleWithModel` —— 1/4 个有
+- `Upscale Model Loader` —— 1/4 个有
+- `YUAN_TXTConvertAny` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

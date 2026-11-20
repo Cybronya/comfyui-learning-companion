@@ -1,50 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_790
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9535
-common_nodes: [DWPreprocessor, ImageResizeKJv2, Int, LoadWanVideoT5TextEncoder, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader]
+frequency: 3
+level: moderate
+coverage: 0.965
+common_nodes: [CLIPVisionLoader, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Wan2.1文生视频+视频转绘_1949717734896082946.json, 视频生成/图生视频/Wan2.1图生视频+视频转绘_1949722105333075970.json]
+members: [图片生成/图生图/【遇见AI】wan2.1 skyreels V3 A2V数字人模型_2067528819833135106.json, 视频生成/图生视频/【遇见AI】wan2.1 fantasytalking 数字人对口型_2069313439394254850.json, 视频生成/图生视频/【遇见AI】wan2.1首尾帧基础流_2062101371284975617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_790
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Wan2.1文生视频+视频转绘_1949717734896082946.json、视频生成/图生视频/Wan2.1图生视频+视频转绘_1949722105333075970.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【遇见AI】wan2.1 skyreels V3 A2V数字人模型_2067528819833135106.json、视频生成/图生视频/【遇见AI】wan2.1 fantasytalking 数字人对口型_2069313439394254850.json、视频生成/图生视频/【遇见AI】wan2.1首尾帧基础流_2062101371284975617.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DWPreprocessor`
-- `ImageResizeKJv2`
-- `Int`
-- `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `VHS_LoadVideo`
+全部 3 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `LoadImage`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVACEEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DepthAnythingV2Preprocessor` —— 1/2 个有
-- `ImageBlend` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
+- `DownloadAndLoadWav2VecModel` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
+- `CreateCFGScheduleFloatList` —— 1/3 个有
+- `FantasyTalkingModelLoader` —— 1/3 个有
+- `FantasyTalkingWav2VecEmbeds` —— 1/3 个有
+- `MelBandRoFormerModelLoader` —— 1/3 个有
+- `MelBandRoFormerSampler` —— 1/3 个有
+- `MultiTalkWav2VecEmbeds` —— 1/3 个有
+- `TrimAudioDuration` —— 1/3 个有
+- `WanVideoImageToVideoSkyreelsv3_audio` —— 1/3 个有
+- `WanVideoPassImagesFromSamples` —— 1/3 个有
 
 ## 典型参数
 
@@ -56,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

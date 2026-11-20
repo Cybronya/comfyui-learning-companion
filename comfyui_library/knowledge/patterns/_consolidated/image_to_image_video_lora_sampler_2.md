@@ -1,93 +1,91 @@
 ---
 name: image_to_image_video_lora_sampler_2
 type: Image To Image
-frequency: 10
+frequency: 13
 level: strong
-coverage: 0.485
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CRTFirstLastFrameSelector, Fast Groups Bypasser (rgthree), INTConstant, ImageBatchMulti, ImageConcatMulti, ImageResizeKJv2, ImageStitch, Int, JWStringConcat, JoinStrings, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, ProcessString, Qwen3_VQA, RIFE VFI, SaveImage, ShowText|pysssss, Text Multiline, TextEncodeQwenImageEditPlus, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanMultiFrameRefToVideo, easy cleanGpuUsed, easy promptLine, easy showAnything, wanBlockSwap]
+coverage: 0.481769
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch, JjkText, KSampler, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingAuraFlow, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, SimpleMath+, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo, wanBlockSwap]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI最强长视频流-支持多分镜，多角度，多场景-单图_三图出视频_1997191893685571586.json, 图片生成/图生图/AI最强长视频流-支持多角度_1997595766715793409.json, 图片生成/图生图/AI超维视频流：1图→多分镜｜3图→多场景｜动态角度智能切换_1992933616059613185.json, 图片生成/文生图/产品多分镜+多角度+多场景+单图_三图生视频_2002487518991925249.json, 视频生成/图生视频/AI最强长视频流 支持多分镜，多角度，多场景 支持单图，三图出视频_1994300915066880001.json, 视频生成/图生视频/AI最强长视频流-单图出视频_1996217524062666754.json, 视频生成/图生视频/AI最强长视频流-支持多分镜，多角度，多场景-单图_三图出视频_1989240628179513346.json, 视频生成/图生视频/AI最强长视频流=多分镜+单图_首中尾帧出视频，清晰-慢-200RH_2082744677681418242.json, 视频生成/图生视频/AI最强长视频流=多分镜，多角度，多场景出图+单图_首中尾帧出视频_2003367093624053762.json, 视频生成/图生视频/视频流-支持多分镜，多角度，多场景三图出视频_1996194043233255425.json]
+members: [图片生成/图生图/技术赋能创作：WAN2.2 与 QWEN 联合，实现图片到运镜长视频一键生成_1986723518039666690.json, 平台全量/老年人热点视频抓取与AI生成工作流_2013919734214955010.json, 视频生成/图生视频/Qwen-Image-Edit图片多角度镜头+首中尾图生视频工作流_2037969942770880514.json, 视频生成/图生视频/WAN2.2+QWEN强强联合 图片多角度一键生成并运镜长视频优化版_1986219220310654977.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成=B站艾橘溪_1985575003364249602.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2033878962325164034.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2075060174733266945.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2076466189928329218.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2077195036592267266.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2079113575385354241.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2079390921430487042.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2080571381951066114.json, 视频生成/图生视频/图生视频一键多角度Ai运镜+长视频生成_2038792996770025474.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/AI最强长视频流-支持多分镜，多角度，多场景-单图_三图出视频_1997191893685571586.json、图片生成/图生图/AI最强长视频流-支持多角度_1997595766715793409.json、图片生成/图生图/AI超维视频流：1图→多分镜｜3图→多场景｜动态角度智能切换_1992933616059613185.json、图片生成/文生图/产品多分镜+多角度+多场景+单图_三图生视频_2002487518991925249.json、视频生成/图生视频/AI最强长视频流 支持多分镜，多角度，多场景 支持单图，三图出视频_1994300915066880001.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/技术赋能创作：WAN2.2 与 QWEN 联合，实现图片到运镜长视频一键生成_1986723518039666690.json、平台全量/老年人热点视频抓取与AI生成工作流_2013919734214955010.json、视频生成/图生视频/Qwen-Image-Edit图片多角度镜头+首中尾图生视频工作流_2037969942770880514.json、视频生成/图生视频/WAN2.2+QWEN强强联合 图片多角度一键生成并运镜长视频优化版_1986219220310654977.json、视频生成/图生视频/一键多角度Ai运镜+长视频生成=B站艾橘溪_1985575003364249602.json…）
 
 - **类型**：Image To Image
-- **样本数**：10
+- **样本数**：13
 - **可信度**：强结论
 - **平均知识覆盖**：48%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CRTFirstLastFrameSelector`
-- `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `ImageStitch`
-- `Int`
-- `JWStringConcat`
-- `JoinStrings`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageFromBatch`
+- `JjkText`
 - `KSampler`
 - `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPatchTorchSettings`
+- `MathExpression|pysssss`
+- `ModelSamplingAuraFlow`
 - `ModelSamplingSD3`
-- `PainterI2V`
 - `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveInt`
-- `ProcessString`
-- `Qwen3_VQA`
-- `RIFE VFI`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Text Multiline`
+- `SetNode`
+- `SimpleMath+`
 - `TextEncodeQwenImageEditPlus`
-- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanMultiFrameRefToVideo`
-- `easy cleanGpuUsed`
-- `easy promptLine`
-- `easy showAnything`
+- `WanFirstMiddleLastFrameToVideo`
 - `wanBlockSwap`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageBatch` —— 12/13 个有
+- `ImageResizeKJv2` —— 12/13 个有
+- `PrimitiveInt` —— 12/13 个有
+- `SaveImage` —— 12/13 个有
+- `DF_Integer` —— 1/13 个有
+- `ImageBatchJoin` —— 1/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/13 个有
+- `PreviewImage` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 10 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler_ancestral | - | 10 | 100% |
-| 调度器 | beta | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | fixed | - | 13 | 100% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 13 | 91% |
+| 采样算法 | 1 | 1 - 1 | 13 | 100% |
+| 调度器 | euler | - | 13 | 100% |
+| 重绘幅度 | simple | - | 13 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 20/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 52/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，10 个样本，一致性 100%
-- 调度器 最常用 beta，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（20/10 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，13 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，13 个样本，取值集中（一致性 91%）
+- 采样算法 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，13 个样本，一致性 100%
+- 重绘幅度 最常用 simple，13 个样本，一致性 100%
+- 高发问题（52/13 个样本）：Steps较低可能导致细节不足

@@ -3,50 +3,33 @@ name: unknown_workflow_lora_sampler_7
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.819
-common_nodes: [Compare, ConvertComboToString, DownloadAndLoadFlorence2Model, Florence2Run, GetImageSizeAndCount, ImageConcanate, ImageScaleDownToSize, LoadImage, Primitive integer [Crystools], RH_Translator, RandomInt, RunningHub OmniConsistency LoraLoader, RunningHub OmniConsistency Sampler, SaveImage, ShowText, StringListToCombo, Text Concatenate, easy ifElse, easy showAnything]
+coverage: 0.625
+common_nodes: [LoadImage, PrimitiveInt, PrimitiveStringMultiline, RH_Translator, RunningHub OmniConsistency LoraLoader, RunningHub OmniConsistency Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/OmniConsistency全能转绘王！22种风格任选，转绘不再难_1928695867409338370.json, 图片生成/图生图/【OmniConsistency】 Q版卡通盲盒_1929044446300553217.json, 视频生成/图生视频/全能转绘王OmniConsistency！22种风格_1930249681627156481.json]
+members: [图片生成/图生图/OmniConsistency 图像风格转换_1928667163010220033.json, 图片生成/图生图/OmniConsistency 多风格一致性_1928515804944347138.json, 图片生成/图生图/【全能图片G4o图像同款】OmniConsistency 人物风格一致性_1928659562390306817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/OmniConsistency全能转绘王！22种风格任选，转绘不再难_1928695867409338370.json、图片生成/图生图/【OmniConsistency】 Q版卡通盲盒_1929044446300553217.json、视频生成/图生视频/全能转绘王OmniConsistency！22种风格_1930249681627156481.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/OmniConsistency 图像风格转换_1928667163010220033.json、图片生成/图生图/OmniConsistency 多风格一致性_1928515804944347138.json、图片生成/图生图/【全能图片G4o图像同款】OmniConsistency 人物风格一致性_1928659562390306817.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Compare`
-- `ConvertComboToString`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `GetImageSizeAndCount`
-- `ImageConcanate`
-- `ImageScaleDownToSize`
 - `LoadImage`
-- `Primitive integer [Crystools]`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RH_Translator`
-- `RandomInt`
 - `RunningHub OmniConsistency LoraLoader`
 - `RunningHub OmniConsistency Sampler`
 - `SaveImage`
-- `ShowText`
-- `StringListToCombo`
-- `Text Concatenate`
-- `easy ifElse`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `Miaoshouai_Tagger` —— 1/3 个有
 
 ## 典型参数
 

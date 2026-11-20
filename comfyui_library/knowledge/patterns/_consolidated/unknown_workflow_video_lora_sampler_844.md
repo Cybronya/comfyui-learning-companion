@@ -1,73 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_844
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9525
-common_nodes: [AudioCombine, AudioSeparation, CLIPVisionLoader, CR SDXL Aspect Ratio, DF_Int_to_Float, DownloadAndLoadWav2VecModel, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveInt, RH_GetAudioDuration, RH_Translator, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.771
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, Fast Groups Bypasser (rgthree), INTConstant, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine, WanVaceToVideo, WanVideoVACEStartToEndFrame, easy clearCacheAll, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Infinite Talk数字人_1957982233535639554.json, 视频生成/图生视频/Infinite Talk数字人定制_1988128458423312386.json]
+members: [数字人/数字人/iyuandou补充人脸素材首尾帧工作流_1986340826437603330.json, 视频生成/图生视频/Work-Fisher  -  全新AIO-MAGE-长视频_1968320251140157442.json, 视频生成/图生视频/iyuandou补充人脸素材工作流_1984201838234845185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_844
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Infinite Talk数字人_1957982233535639554.json、视频生成/图生视频/Infinite Talk数字人定制_1988128458423312386.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/iyuandou补充人脸素材首尾帧工作流_1986340826437603330.json、视频生成/图生视频/Work-Fisher  -  全新AIO-MAGE-长视频_1968320251140157442.json、视频生成/图生视频/iyuandou补充人脸素材工作流_1984201838234845185.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioCombine`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR SDXL Aspect Ratio`
-- `DF_Int_to_Float`
-- `DownloadAndLoadWav2VecModel`
-- `JWInteger`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
+- `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PrimitiveInt`
-- `RH_GetAudioDuration`
-- `RH_Translator`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `WanVaceToVideo`
+- `WanVideoVACEStartToEndFrame`
+- `easy clearCacheAll`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 1/2 个有
-- `PurgeVRAM_UTK` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
-- `SeedVR2BlockSwap` —— 1/2 个有
-- `SeedVR2ExtraArgs` —— 1/2 个有
-- `SeedVR2GGUF` —— 1/2 个有
+- `TorchCompileModelWanVideoV2` —— 2/3 个有
+- `ImageBatch` —— 1/3 个有
+- `ImageColorMatch+` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `StringLength` —— 1/3 个有
+- `VHS_LoadVideoPath` —— 1/3 个有
+- `VHS_PruneOutputs` —— 1/3 个有
+- `VHS_SelectFilename` —— 1/3 个有
+- `VHS_SplitImages` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 67% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 67%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（5/3 个样本）：Steps较低可能导致细节不足

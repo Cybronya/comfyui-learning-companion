@@ -1,82 +1,71 @@
 ---
 name: unknown_workflow_sampler_vae_63
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.784
-common_nodes: [CR Text, HAIGC_LoadImagesFromZip, HAIGC_SaveImagesToZip, Image Comparer (rgthree), ImageConcanate, ImageFromBatch, ImageListToBatch+, ImageResize+, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, MathExpression|pysssss, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode, VHS_GetImageCount, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy int, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: moderate
+coverage: 0.69975
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/FireRed 1.1图片批量换装_2030895902000418818.json, 图片生成/图生图/qwen 2511 图片批量换装_2016455537742848001.json]
+members: [视频生成/图生视频/MiniMax+H3+图生视频_首尾帧低显存加速版(6~8GB)_2085705273888559106.json, 视频生成/图生视频/minimax图出视频_2084274641455112193.json, 视频生成/图生视频/图生视频教学工作流学习班_2091876747317960706.json, 视频生成/文生视频/MINIMAX-H3 sage+sol att双加速低显存全功能工作流_2084920261798879233.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_63
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FireRed 1.1图片批量换装_2030895902000418818.json、图片生成/图生图/qwen 2511 图片批量换装_2016455537742848001.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax+H3+图生视频_首尾帧低显存加速版(6~8GB)_2085705273888559106.json、视频生成/图生视频/minimax图出视频_2084274641455112193.json、视频生成/图生视频/图生视频教学工作流学习班_2091876747317960706.json、视频生成/文生视频/MINIMAX-H3 sage+sol att双加速低显存全功能工作流_2084920261798879233.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `HAIGC_LoadImagesFromZip`
-- `HAIGC_SaveImagesToZip`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImageFromBatch`
-- `ImageListToBatch+`
-- `ImageResize+`
-- `KSampler`
-- `LayerUtility: PurgeVRAM V2`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `VAEDecode`
-- `VHS_GetImageCount`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy int`
-- `easy showAnything`
+- `VAEDecodeAudio`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
+- `ResolutionSelector` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `UniBlockSwap` —— 2/4 个有
+- `Any Switch (rgthree)` —— 1/4 个有
+- `DiffusionModelLoaderKJ` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `SaveImage` —— 1/4 个有
+- `SolAttnPatch` —— 1/4 个有
+- `UniBlockSwapTE` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | - | 2 | 67% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 50%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,65 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_105
 type: Unknown Workflow
-frequency: 16
-level: strong
-coverage: 0.870313
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 17
+level: moderate
+coverage: 0.869471
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/kone专属图生视频_2007088250229366786.json, 视频生成/图生视频/wan2.2 图生视频_2030667044726771713.json, 视频生成/图生视频/wan2_2_14B_I2V _4步加速_1998388818095013889.json, 视频生成/图生视频/wan2_2_14B_I2V图生视频加速工作流_1969634228759633922.json, 视频生成/图生视频/wan2_2_子弹时间 极速版_1984472483812229122.json, 视频生成/图生视频/【图生视频】Wan2.2 14B LightX2V_1953391288357978113.json, 视频生成/图生视频/一键生成超顶AI动漫视频！WAN2.2大模型太强了！_1951120660623990785.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2053500201926705153.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2054607136101027841.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2063711056727461890.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2063712287315292162.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2063714093613281281.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2063914082952114178.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2072973666828251138.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2 wan22_2083074284628566017.json, 视频生成/图生视频/首尾帧  多帧  视频生成 wan2.2_2048315037026099202.json]
+members: [数字人/数字人/Infinitetalk双人图片对口型_1982771829699936258.json, 数字人/数字人/Infinitetalk图片对口型数字人_1958846854899380226.json, 数字人/数字人/infinitetalk图片数字人_2007300808861294593.json, 数字人/数字人/infinitetalk数字人_唱歌_口播_MV（视频驱动）_1995518772859568129.json, 数字人/数字人/infinitetalk数字人_唱歌_口播_MV（视频驱动）_2007303254241189889.json, 数字人/数字人/infinitetalk数字人_唱歌_口播_MV（视频驱动）_2032262989809717249.json, 数字人/数字人/infinitetalk数字人_唱歌_口播_MV（视频驱动）_2034574563287240705.json, 数字人/数字人/infinitetalk视频数字人_1998378694949396481.json, 数字人/数字人/infinitetalk视频数字人_2061112641858392065.json, 数字人/数字人/infinitetalk视频数字人_2061129593624551425.json, 数字人/数字人/infinitetalk视频数字人最新优化版_2032797229207003137.json, 数字人/数字人/工作流视频篇9-AI图生数字人-infinitetalk，快速简答_2014241032635944961.json, 数字人/数字人/视频对口型(加速版)720p_2036439340041113601.json, 数字人/数字人/视频对口型-2_2081905037042868225.json, 数字人/数字人/超自然对口型唱歌_2034521956808138754.json, 视频生成/图生视频/INFINITE talk，实现无限时长、口型精准的视频配音_1972120402749222914.json, 视频生成/图生视频/视频对口型_1971064636227391489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_105
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/kone专属图生视频_2007088250229366786.json、视频生成/图生视频/wan2.2 图生视频_2030667044726771713.json、视频生成/图生视频/wan2_2_14B_I2V _4步加速_1998388818095013889.json、视频生成/图生视频/wan2_2_14B_I2V图生视频加速工作流_1969634228759633922.json、视频生成/图生视频/wan2_2_子弹时间 极速版_1984472483812229122.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（数字人/数字人/Infinitetalk双人图片对口型_1982771829699936258.json、数字人/数字人/Infinitetalk图片对口型数字人_1958846854899380226.json、数字人/数字人/infinitetalk图片数字人_2007300808861294593.json、数字人/数字人/infinitetalk数字人_唱歌_口播_MV（视频驱动）_1995518772859568129.json、数字人/数字人/infinitetalk数字人_唱歌_口播_MV（视频驱动）_2007303254241189889.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：强结论
+- **样本数**：17
+- **可信度**：中等可信
 - **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `VAEDecode`
-- `VAELoader`
+全部 17 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 15/16 个有
-- `ModelPatchTorchSettings` —— 14/16 个有
-- `UNETLoader` —— 11/16 个有
-- `GetNode` —— 10/16 个有
-- `INTConstant` —— 10/16 个有
-- `SetNode` —— 10/16 个有
-- `SimpleMath+` —— 9/16 个有
-- `WanFirstMiddleLastFrameToVideo` —— 9/16 个有
-- `WanImageToVideo` —— 7/16 个有
-- `UnetLoaderGGUF` —— 5/16 个有
-- `LayerUtility: PurgeVRAM` —— 2/16 个有
-- `PreviewImage` —— 2/16 个有
-- `Label (rgthree)` —— 1/16 个有
-- `MathExpression|pysssss` —— 1/16 个有
-- `SaveImage` —— 1/16 个有
+- `AudioCrop` —— 16/17 个有
+- `INTConstant` —— 15/17 个有
+- `WanVideoTorchCompileSettings` —— 14/17 个有
+- `GetImageRangeFromBatch` —— 13/17 个有
+- `ImageResizeKJv2` —— 13/17 个有
+- `VHS_LoadVideo` —— 13/17 个有
+- `WanVideoEncode` —— 13/17 个有
+- `easy int` —— 12/17 个有
+- `Anything Everywhere` —— 11/17 个有
+- `LoadImage` —— 6/17 个有
+- `GetImageSizeAndCount` —— 4/17 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/17 个有
+- `Audio Duration (mtb)` —— 3/17 个有
+- `MathExpression|pysssss` —— 3/17 个有
+- `JWIntegerToString` —— 2/17 个有
+- `PreviewAny` —— 2/17 个有
+- `PrimitiveInt` —— 2/17 个有
+- `GetAudioDurationFromAudio` —— 1/17 个有
+- `GetNode` —— 1/17 个有
+- `Int` —— 1/17 个有
+- `MaskToImage` —— 1/17 个有
+- `PreviewImage` —— 1/17 个有
+- `SeparateMasks` —— 1/17 个有
+- `SetNode` —— 1/17 个有
+- `SimpleMath+` —— 1/17 个有
+- `VHS_VideoInfo` —— 1/17 个有
+- `WanVideoLoraSelectMulti` —— 1/17 个有
+- `easy mathInt` —— 1/17 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 16 | 69% |
-| Prompt 约束强度(CFG) | 6 | 4 - 10 | 16 | 76% |
-| 采样算法 | 1 | 1 - 1 | 16 | 100% |
-| 调度器 | euler | - | 16 | 94% |
-| 重绘幅度 | simple | - | 16 | 56% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,8 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，16 个样本，一致性 69%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 10，16 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，16 个样本，一致性 94%
-- 重绘幅度 最常用 simple，16 个样本，一致性 56%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,37 +1,40 @@
 ---
 name: unknown_workflow_generic_927
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.765667
-common_nodes: [ImageResize+, Joy_caption_alpha_load, Joy_caption_alpha_run, LoadImage, ShowText|pysssss]
+coverage: 0.73225
+common_nodes: [LoadImage, MuyeTextEditOutput, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/千府AI图片反推提示词_1898680289093472257.json, 图片生成/反推提示词/反推提示词一键生成 Joy_caption alpha prompt run_1862154847708708866.json, 图片生成/反推提示词/图片反推提示词_2013477680053755905.json]
+members: [图片生成/图生图/谷歌全能图片V2高清修复放大流_2045135553544331266.json, 图片生成/图生图/贝尼尼_2037015094328041473.json, 图片生成/文生图/谷歌全能图片PRO+V2基础流_2055569187824775170.json, 视频生成/图生视频/全能pro视频封面制作-自用_2073312946041737218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_927
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/千府AI图片反推提示词_1898680289093472257.json、图片生成/反推提示词/反推提示词一键生成 Joy_caption alpha prompt run_1862154847708708866.json、图片生成/反推提示词/图片反推提示词_2013477680053755905.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/谷歌全能图片V2高清修复放大流_2045135553544331266.json、图片生成/图生图/贝尼尼_2037015094328041473.json、图片生成/文生图/谷歌全能图片PRO+V2基础流_2055569187824775170.json、视频生成/图生视频/全能pro视频封面制作-自用_2073312946041737218.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageResize+`
-- `Joy_caption_alpha_load`
-- `Joy_caption_alpha_run`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `ShowText|pysssss`
+- `MuyeTextEditOutput`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Joy_caption_alpha_prompt` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
+- `PlaySound|pysssss` —— 3/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
 
 ## 典型参数
 

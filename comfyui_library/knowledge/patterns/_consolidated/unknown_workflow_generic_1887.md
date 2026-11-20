@@ -3,31 +3,33 @@ name: unknown_workflow_generic_1887
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [LoadAudio, RHHiddenNodes, SaveAudioMP3, Text, easy showAnything]
+coverage: 0.8335
+common_nodes: [LoadImage, LoadRembgByBiRefNetModel, RembgByBiRefNet, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/音频人声同音色翻译工作流（中文转英语，适合跨境卖家）_2059684746359300097.json, 音频生成/音频生成/音频人声同音色翻译工作流（中文转英语，适合跨境卖家）_2086629513726877698.json]
+members: [平台全量/BiRefNet一键抠图_1963541190161436674.json, 平台全量/自动抠图_1995480941915254785.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1887
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/音频人声同音色翻译工作流（中文转英语，适合跨境卖家）_2059684746359300097.json、音频生成/音频生成/音频人声同音色翻译工作流（中文转英语，适合跨境卖家）_2086629513726877698.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/BiRefNet一键抠图_1963541190161436674.json、平台全量/自动抠图_1995480941915254785.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `RHHiddenNodes`
-- `SaveAudioMP3`
-- `Text`
-- `easy showAnything`
+- `LoadImage`
+- `LoadRembgByBiRefNetModel`
+- `RembgByBiRefNet`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

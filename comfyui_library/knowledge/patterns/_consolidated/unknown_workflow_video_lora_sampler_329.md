@@ -1,83 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_329
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.926
-common_nodes: [Any To Any, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateVideo, GetVideoComponents, HunyuanVideoFoley, KSamplerAdvanced, LoraLoaderModelOnly, PathchSageAttentionKJ, Qwen3_VQA, SaveVideo, StringReplace, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+frequency: 9
+level: strong
+coverage: 0.952333
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ImageBatchExtendWithOverlap, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, VAEDecode, VAELoader, VHS_VideoCombine, easy forLoopEnd, easy forLoopStart, easy promptLine]
 problems: []
 missing: []
-members: [图片生成/图生图/Bernini 视频生成与“多镜头导演台”_支持配音_2065695983807320066.json, 图片生成/图生图/（4步加速、提示词扩写版）Bernini图生视频+音效V4_2077326857673990145.json, 视频生成/图生视频/Bernini导演台多参音画同步简约版V3（乱神-循环版）_2065331654767505409.json, 视频生成/图生视频/Bernini导演台多参音画同步简约版V3（乱神-循环版）_2065702680814776322.json, 视频生成/图生视频/数字人Bernini图生视频 YC Foley音效 音视频生成 数字人说话唱歌 带运镜参考_2067419048618577922.json, 视频生成/图生视频/（4步加速版）Bernini图生视频+音效V4_2073466231541293057.json, 视频生成/图生视频/（4步加速版）Bernini导演台多参音画同步简约版V3（乱神-循环版）_2073465859552669698.json]
+members: [视频生成/图生视频/3.生视频类-6..真人、动漫、跳舞长视频001.长视频-手动-真人&动漫.json_2022090916130988033.json, 视频生成/图生视频/SVI 2 Pro长视频循环动态版V1.0_2005998489748328449.json, 视频生成/图生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_2011456654914621441.json, 视频生成/图生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事（确实很不错）_2043277344625926145.json, 视频生成/图生视频/Wan 2.2 Remix2.1图生长视频 ：分镜时长+精准叙事_2016438828810117122.json, 视频生成/图生视频/【4月】Wan2.2 Dasiwa V10+ SVI2Pro全自动长视频（严格遵循提示词控制）_2042934269093355522.json, 视频生成/图生视频/视频：20s长视频剧情生成_2035685146686394370.json, 视频生成/图生视频/🔥超丝滑长视频生成-分镜时长+内容定制精准叙事_2046827963190087682.json, 视频生成/文生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_2047624351276601345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_329
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Bernini 视频生成与“多镜头导演台”_支持配音_2065695983807320066.json、图片生成/图生图/（4步加速、提示词扩写版）Bernini图生视频+音效V4_2077326857673990145.json、视频生成/图生视频/Bernini导演台多参音画同步简约版V3（乱神-循环版）_2065331654767505409.json、视频生成/图生视频/Bernini导演台多参音画同步简约版V3（乱神-循环版）_2065702680814776322.json、视频生成/图生视频/数字人Bernini图生视频 YC Foley音效 音视频生成 数字人说话唱歌 带运镜参考_2067419048618577922.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/3.生视频类-6..真人、动漫、跳舞长视频001.长视频-手动-真人&动漫.json_2022090916130988033.json、视频生成/图生视频/SVI 2 Pro长视频循环动态版V1.0_2005998489748328449.json、视频生成/图生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_2011456654914621441.json、视频生成/图生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事（确实很不错）_2043277344625926145.json、视频生成/图生视频/Wan 2.2 Remix2.1图生长视频 ：分镜时长+精准叙事_2016438828810117122.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Any To Any`
-- `BerniniConditioning`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CreateVideo`
-- `GetVideoComponents`
-- `HunyuanVideoFoley`
+- `CR Text`
+- `ImageBatchExtendWithOverlap`
+- `JWInteger`
 - `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `SaveVideo`
-- `StringReplace`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_SelectFilename`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `BerniniPromptEnhancer` —— 6/7 个有
-- `RHLLMChatNode` —— 5/7 个有
-- `ImageScaleToTotalPixels` —— 4/7 个有
-- `easy batchAnything` —— 4/7 个有
-- `easy forLoopEnd` —— 4/7 个有
-- `easy forLoopStart` —— 4/7 个有
-- `easy mergeVideosFromPaths` —— 4/7 个有
-- `easy timelineEditor` —— 4/7 个有
-- `easy timelineInfoOutput` —— 4/7 个有
-- `easy timelineSegmentCount` —— 4/7 个有
-- `easy timelineSegmentOutput` —— 4/7 个有
-- `JWInteger` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `LoadImage` —— 3/7 个有
-- `PrimitiveInt` —— 3/7 个有
-- `Text` —— 3/7 个有
-- `easy imagesSplitImage` —— 3/7 个有
-- `PreviewAny` —— 2/7 个有
-- `llama_cpp_instruct_adv` —— 2/7 个有
-- `llama_cpp_model_loader` —— 2/7 个有
-- `llama_cpp_parameters` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `DiffusionModelLoaderKJ` —— 8/9 个有
+- `VAEEncode` —— 8/9 个有
+- `WanImageToVideoSVIPro` —— 8/9 个有
+- `DF_Int_to_Float` —— 6/9 个有
+- `GODMT_ListGetByIndex` —— 6/9 个有
+- `GODMT_SplitString` —— 6/9 个有
+- `MathExpression|pysssss` —— 6/9 个有
+- `StringToInt` —— 6/9 个有
+- `WWAA-LineCount` —— 6/9 个有
+- `Int` —— 3/9 个有
+- `SimpleMath+` —— 3/9 个有
+- `ModelSamplingSD3` —— 1/9 个有
+- `RIFE VFI` —— 1/9 个有
+- `UNETLoader` —— 1/9 个有
+- `WanAdvancedI2V` —— 1/9 个有
+- `easy float` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 7 | 100% |
-| Prompt 约束强度(CFG) | 10 | 4 - 10 | 7 | 60% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | simple | - | 7 | 100% |
+| 采样步数 | randomize | - | 9 | 67% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 9 | 92% |
+| 采样算法 | 1 | 1 - 1 | 9 | 100% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -85,8 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，7 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 4 - 10，7 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 采样步数 最常用 randomize，9 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，9 个样本，取值集中（一致性 92%）
+- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

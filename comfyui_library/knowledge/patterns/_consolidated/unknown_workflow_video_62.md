@@ -1,36 +1,53 @@
 ---
 name: unknown_workflow_video_62
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [GetVideoComponents, LoadVideo, VHS_VideoCombine]
+coverage: 0.692667
+common_nodes: [CR Text, GetImageRangeFromBatch, Image Comparer (rgthree), ImageScaleBy, PlaySound|pysssss, RH_Sora2_T2V, SaveVideo, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, easy anythingIndexSwitch, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/ai漫剧用  多视频合并（懒人版）_2068059424350097410.json, 音频生成/音频生成/HunyuanVideo-Foley音效生成，视频智能匹配音效_2056422741049438209.json, 音频生成/音频生成/混元视频-Foley音效生成-视频智能匹配音效_2071215947767173121.json]
+members: [数字人/数字人/🎬 全能视频s 从文字到电影，一键生成你的ai大片！应用于产品宣传、概念艺术、短视频无全能视频S水印_1980104620909432834.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978392937010761730.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978683667998511106.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1996199590116335618.json, 视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1986005245283184642.json, 视频生成/文生视频/🎬 全能视频s 从文字到电影，一键生成你的ai大片！应用于产品宣传、概念艺术、短视频无全能视频S水印_1980068181710639105.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_62
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/ai漫剧用  多视频合并（懒人版）_2068059424350097410.json、音频生成/音频生成/HunyuanVideo-Foley音效生成，视频智能匹配音效_2056422741049438209.json、音频生成/音频生成/混元视频-Foley音效生成-视频智能匹配音效_2071215947767173121.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/🎬 全能视频s 从文字到电影，一键生成你的ai大片！应用于产品宣传、概念艺术、短视频无全能视频S水印_1980104620909432834.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978392937010761730.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1978683667998511106.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏 高清直出 无水印_1996199590116335618.json、视频生成/文生视频/全能视频S 文生视频工作流 支持横_竖屏_1986005245283184642.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GetVideoComponents`
-- `LoadVideo`
+全部 6 个 workflow 都包含：
+- `CR Text`
+- `GetImageRangeFromBatch`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
+- `PlaySound|pysssss`
+- `RH_Sora2_T2V`
+- `SaveVideo`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy anythingIndexSwitch`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `HunyuanVideoFoley` —— 2/3 个有
-- `Textbox` —— 1/3 个有
-- `easy batchAnything` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `easy int` —— 5/6 个有
+- `MuyeLoadImage` —— 1/6 个有
+- `RH_Sora2_I2V` —— 1/6 个有
+- `RH_Sora2_I2V_PRO` —— 1/6 个有
+- `RH_Sora2_T2V_PRO` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
 
 ## 典型参数
 

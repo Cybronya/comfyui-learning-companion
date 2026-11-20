@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_video_sampler_unet_9
 type: Unknown Workflow
-frequency: 25
+frequency: 28
 level: moderate
-coverage: 0.52568
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.890929
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3全能参考高清放大工作流_2110689506868424706.json, 视频生成/图生视频/h3图生视频gy_2087784031445413890.json, 视频生成/图生视频/minimax h3电商产品_2095444070079492097.json, 视频生成/图生视频/poster animation_2094321304538279938.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采-1参考图_2109836744655986690.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采-5参考图_2095824845220171777.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采2_2109836609779757057.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版_2100179119110705153.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版_2101865695603683329.json, 视频生成/图生视频/【MINIMAX-H3】最强打斗武戏双采工作流（自动提示词）_2096434163439198209.json, 视频生成/图生视频/文戏_2095407932757331970.json, 视频生成/图生视频/测试01剧本 YZ金鱼-MiniMax H3-多参考生视频-优化版_2107313229809672193.json, 视频生成/图生视频/金鱼-多参考生视频-电影感_2094788063007432706.json, 视频生成/图生视频/（最强一致性Singularity_v2）Minimax_H3多参考双采生视频_2113793684742434817.json, 视频生成/图生视频/（最强一致性Singularity）Minimax H3多参考双采生视频_2097875587942666242.json, 视频生成/图生视频/（最强一致性Singularity）Minimax H3多参考双采生视频多比例版本_2104119164674859010.json, 视频生成/文生视频/0906万象AI+Singularity新模型（12秒横屏960分辨率）_2096460541328973825.json, 视频生成/文生视频/0906万象AI+Singularity新模型（12秒横屏960分辨率）_2097340280092581890.json, 视频生成/文生视频/0906万象AI+Singularity新模型（12秒竖屏960分辨率）_2096477149321580546.json, 视频生成/文生视频/AIGC特异点-Minimax-H3多参考双采放大生成视频（Singularity）_2096091492187205633.json, 视频生成/文生视频/MINIMAX-H3全能参考-低配文戏版_2095278454672543745.json, 视频生成/文生视频/MINIMAX-H3原本fl2va分布高低解码二采_2104191255403122689.json, 视频生成/文生视频/MiniMax H3全能参考-武戏版｜可选提示词（手动输入 & 自动生成）_2095318851016806402.json, 视频生成/文生视频/MiniMax H3全能参考-武戏版｜可选提示词（手动输入 & 自动生成）_2095913508104916993.json, 视频生成/文生视频/Minimax-H3剧情片工作台_2096851323793797122.json]
+members: [视频生成/图生视频/MInimaxH3首尾帧1_2086377818845433858.json, 视频生成/图生视频/MInimaxH3首尾帧_2086392988384710658.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2084559724980297729.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2087776020891000833.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T2_2084572905849057281.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2084592731342594049.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2099779886431952898.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T3_2100039671811235841.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T4_2084592720953303042.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T5_2084645120611278849.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T6_2084645112528859137.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T6_2084670389682270209.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T7_2084693256843128834.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T8_2084703777696866306.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085923821353263105.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085945362610741250.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2085968737643098113.json, 视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写_2086378020520153090.json, 视频生成/图生视频/MInimaxH3首尾帧生成视频_2085616709708378113.json, 视频生成/图生视频/MInimaxH3首尾帧电商广告图_2086285454638411777.json, 视频生成/图生视频/MinimaxH3图生视频可指定音乐_2086761878126157826.json, 视频生成/图生视频/minimaxH3人物变化转场_2085374527827169281.json, 视频生成/图生视频/创意无限_2087087580423741441.json, 视频生成/图生视频/吉他和狗狗_2090264859219947522.json, 视频生成/图生视频/图生视频_2086720339278647297.json, 视频生成/图生视频/最新mimimaxH3漫剧镜头T1_2084662928074174466.json, 视频生成/图生视频/来一杯可乐_2097322293583241217.json, 视频生成/图生视频/首尾帧图生视频_2086841278280589314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_9
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3全能参考高清放大工作流_2110689506868424706.json、视频生成/图生视频/h3图生视频gy_2087784031445413890.json、视频生成/图生视频/minimax h3电商产品_2095444070079492097.json、视频生成/图生视频/poster animation_2094321304538279938.json、视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采-1参考图_2109836744655986690.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/MInimaxH3首尾帧1_2086377818845433858.json、视频生成/图生视频/MInimaxH3首尾帧_2086392988384710658.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2084559724980297729.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T1_2087776020891000833.json、视频生成/图生视频/MInimaxH3首尾帧官方提示词指南自动扩写T2_2084572905849057281.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
+- **样本数**：28
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
+全部 28 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
@@ -40,40 +41,21 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 24/25 个有
-- `LTXVConcatAVLatent` —— 24/25 个有
-- `LTXVSeparateAVLatent` —— 24/25 个有
-- `MinimaxH3LatentUpscaler3D` —— 24/25 个有
-- `PrimitiveFloat` —— 24/25 个有
-- `ResolutionSelector` —— 24/25 个有
-- `SetNode` —— 24/25 个有
-- `LoadAudio` —— 22/25 个有
-- `忽略多组孤海` —— 22/25 个有
-- `ModelAttentionBackend` —— 20/25 个有
-- `LoraLoaderModelOnly` —— 18/25 个有
-- `H3SigmaRefiner` —— 13/25 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/25 个有
-- `PreviewImage` —— 13/25 个有
-- `CR Prompt Text` —— 12/25 个有
-- `ExtendIntermediateSigmas` —— 12/25 个有
-- `Text` —— 12/25 个有
-- `INTConstant` —— 11/25 个有
-- `SplitSigmas` —— 11/25 个有
-- `easy float` —— 11/25 个有
-- `VHS_LoadVideo` —— 9/25 个有
-- `Lora Loader Stack (rgthree)` —— 7/25 个有
-- `SolAttnMiniMax` —— 7/25 个有
-- `EmptyImage` —— 3/25 个有
-- `Label (rgthree)` —— 3/25 个有
-- `RH_LLMAPI_Pro_Node` —— 3/25 个有
-- `Any Switch (rgthree)` —— 2/25 个有
-- `MuyeTextEditOutput` —— 2/25 个有
-- `easy int` —— 2/25 个有
-- `JjkText` —— 1/25 个有
-- `LayerUtility: TextJoin` —— 1/25 个有
-- `PlaySound|pysssss` —— 1/25 个有
-- `PreviewAny` —— 1/25 个有
-- `PrimitiveStringMultiline` —— 1/25 个有
+- `Text` —— 27/28 个有
+- `ImageResizeKJv2` —— 24/28 个有
+- `RHHiddenNodes` —— 23/28 个有
+- `easy showAnything` —— 18/28 个有
+- `RH_Captioner` —— 7/28 个有
+- `TextConcatenate_UTK` —— 5/28 个有
+- `MiniMaxH3BlockCacheT8` —— 4/28 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/28 个有
+- `1hew_AudioDuration` —— 3/28 个有
+- `AudioMerge` —— 3/28 个有
+- `Bjornulf_ShowFloat` —— 3/28 个有
+- `LoadVideoUI` —— 3/28 个有
+- `SaveVideoRGBA` —— 3/28 个有
+- `PreviewAudio` —— 2/28 个有
+- `RH_Translator` —— 1/28 个有
 
 ## 典型参数
 

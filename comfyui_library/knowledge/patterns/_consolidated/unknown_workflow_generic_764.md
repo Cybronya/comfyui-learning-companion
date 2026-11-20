@@ -1,35 +1,34 @@
 ---
 name: unknown_workflow_generic_764
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.6
-common_nodes: [JjkText, LoadImage, SaveImage]
+coverage: 0.6478
+common_nodes: [JjkText, LoadImage, PreviewAny, RHHiddenNodes, RH_Wan26_I2V, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/剧情九宫格分镜（V-2稳定版）_2086379676104216577.json, 图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2100037863600648194.json, 图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2101221824863494145.json, 图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100047865358938113.json]
+members: [视频生成/图生视频/Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2000772205925498882.json, 视频生成/图生视频/Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554.json, 视频生成/图生视频/Wan2.6图生视频通义最新视频模型_2020021077941952513.json, 视频生成/图生视频/Wan2.6：参考生视频_2000889067585892353.json, 视频生成/图生视频/Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步！_2000500127985004545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_764
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/剧情九宫格分镜（V-2稳定版）_2086379676104216577.json、图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2100037863600648194.json、图片生成/图生图/即梦4.5-图片重新渲染，光影增强_2101221824863494145.json、图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100047865358938113.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2000772205925498882.json、视频生成/图生视频/Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554.json、视频生成/图生视频/Wan2.6图生视频通义最新视频模型_2020021077941952513.json、视频生成/图生视频/Wan2.6：参考生视频_2000889067585892353.json、视频生成/图生视频/Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步！_2000500127985004545.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `JjkText`
 - `LoadImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_SeedreamV45ImageToImage` —— 3/4 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/4 个有
+- `PreviewAny`
+- `RHHiddenNodes`
+- `RH_Wan26_I2V`
+- `SaveVideo`
 
 ## 典型参数
 

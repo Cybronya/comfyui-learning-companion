@@ -1,61 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_519
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.8575
-common_nodes: [AILab_QwenVL_Advanced, CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 6
+level: moderate
+coverage: 0.976167
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SeparateMasks, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/视频反推提示词-生成新视频-Qwen3-VL_1982640083591405570.json, 图片生成/反推提示词/视频反推提示词生成新视频工作流-Qwen3-VL_2030918266847236098.json, 视频生成/文生视频/Qwen3VL_视频分镜反推提示词_文生视频_Comfyui官方流_1983729190623223809.json, 视频生成/文生视频/wan2_2_t2v_Qwen3VL 参考视频识别 + 文生视频流程_1981031658872770562.json]
+members: [视频生成/图生视频/MultiTalk+LightX2v Rank64+AniWan双人加速版极限动态质量版V1（KJ）_1945360751139934210.json, 视频生成/图生视频/MultiTalk双人加速KJ版+视频放大_1941283119796535298.json, 视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ非真人）_1941338366120194050.json, 视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ）_1941135610319106050.json, 视频生成/图生视频/MultiTalk双人加速版高运动运镜版V1（KJ）_1945014615811219457.json, 视频生成/图生视频/电商带货 双人对话图生视频（multiTalk）_1944226088988053505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_519
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/视频反推提示词-生成新视频-Qwen3-VL_1982640083591405570.json、图片生成/反推提示词/视频反推提示词生成新视频工作流-Qwen3-VL_2030918266847236098.json、视频生成/文生视频/Qwen3VL_视频分镜反推提示词_文生视频_Comfyui官方流_1983729190623223809.json、视频生成/文生视频/wan2_2_t2v_Qwen3VL 参考视频识别 + 文生视频流程_1981031658872770562.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MultiTalk+LightX2v Rank64+AniWan双人加速版极限动态质量版V1（KJ）_1945360751139934210.json、视频生成/图生视频/MultiTalk双人加速KJ版+视频放大_1941283119796535298.json、视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ非真人）_1941338366120194050.json、视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ）_1941135610319106050.json、视频生成/图生视频/MultiTalk双人加速版高运动运镜版V1（KJ）_1945014615811219457.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AILab_QwenVL_Advanced`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `ShowText|pysssss`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+全部 6 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SeparateMasks`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 3/4 个有
-- `easy clearCacheAll` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `Int` —— 2/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `easy float` —— 2/4 个有
+- `MaskPreview+` —— 5/6 个有
+- `MathExpression|pysssss` —— 5/6 个有
+- `SaveAudio` —— 5/6 个有
+- `AudioCrop` —— 4/6 个有
+- `AudioSeparation` —— 4/6 个有
+- `CR Prompt Text` —— 4/6 个有
+- `JWStringToInteger` —— 4/6 个有
+- `WanVideoEnhanceAVideo` —— 3/6 个有
+- `WanVideoExperimentalArgs` —— 3/6 个有
+- `WanVideoFreeInitArgs` —— 3/6 个有
+- `WanVideoSLG` —— 3/6 个有
+- `ACE_AudioCrop` —— 1/6 个有
+- `Audio Duration (mtb)` —— 1/6 个有
+- `Compare` —— 1/6 个有
+- `ImageUpscaleWithModel` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `JjkText` —— 1/6 个有
+- `RIFE VFI` —— 1/6 个有
+- `UpscaleModelLoader` —— 1/6 个有
+- `easy ifElse` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 4 | 75% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,8 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，4 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

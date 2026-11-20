@@ -3,38 +3,33 @@ name: unknown_workflow_generic_667
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8172
-common_nodes: [CR Text, SaveAudio, Text Multiline]
+coverage: 0.9666
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/音频-单人文本克隆配音-FishAudio S2 TTS_2037058223412355073.json, 音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014568722706472961.json, 音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014584875277361154.json, 音频生成/音频生成/音频-声音设计配音-Qwen3 TTS_2014572376549236737.json, 音频生成/音频生成/音频设计+文本声音克隆配音-Qwen3-TTS_2014684290608537601.json]
+members: [图片生成/图生图/Gemini2.0-商品迁移_1902908641928753153.json, 图片生成/图生图/Gemini2.0-图片编辑_1902332564999417858.json, 图片生成/图生图/一句话连续做图_1930893029039603713.json, 图片生成/图生图/双图连接_2045780608885985281.json, 平台全量/Kontext老照片修复_1935613090329460738.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_667
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/音频-单人文本克隆配音-FishAudio S2 TTS_2037058223412355073.json、音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014568722706472961.json、音频生成/音频生成/音频-单人文本克隆配音-Qwen3 TTS_2014584875277361154.json、音频生成/音频生成/音频-声音设计配音-Qwen3 TTS_2014572376549236737.json、音频生成/音频生成/音频设计+文本声音克隆配音-Qwen3-TTS_2014684290608537601.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Gemini2.0-商品迁移_1902908641928753153.json、图片生成/图生图/Gemini2.0-图片编辑_1902332564999417858.json、图片生成/图生图/一句话连续做图_1930893029039603713.json、图片生成/图生图/双图连接_2045780608885985281.json、平台全量/Kontext老照片修复_1935613090329460738.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `CR Text`
-- `SaveAudio`
-- `Text Multiline`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 4/5 个有
-- `Qwen3TTSModelLoader` —— 4/5 个有
-- `Qwen3TTSVoiceClone` —— 3/5 个有
-- `Qwen3TTSVoiceDesign` —— 3/5 个有
-- `easy seed` —— 3/5 个有
-- `SaveAudioMP3` —— 2/5 个有
-- `FishS2VoiceCloneTTS` —— 1/5 个有
+- `easy imageConcat` —— 3/5 个有
+- `Gemini_Flash_200_Exp` —— 2/5 个有
+- `RH_ComfyFluxKontext` —— 2/5 个有
 
 ## 典型参数
 

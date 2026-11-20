@@ -3,33 +3,35 @@ name: unknown_workflow_generic_636
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_AlibabaWan27ImageToVideo, SaveVideo]
+coverage: 0.667
+common_nodes: [LoadImage, OpenRouterLLMNode, PreviewAny, PrimitiveStringMultiline, SaveText]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_2040983954890694657.json, 视频生成/图生视频/Wan2.7  1080P15秒图生视频_2041430546445770753.json, 视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json, 视频生成/图生视频/Wan2.7--首尾帧图生视频_2041496995017265154.json, 视频生成/图生视频/电商产品材质特效视频 wan2.7 电商主图详情生视频_2045911569141338113.json]
+members: [comfyui-workflow-templates-json/api_openrouter_gpt5_6_luna.json, comfyui-workflow-templates-json/api_openrouter_gpt5_6_sol.json, comfyui-workflow-templates-json/api_openrouter_gpt5_6_terra.json, comfyui-workflow-templates-json/api_openrouter_grok4_5.json, comfyui-workflow-templates-json/api_openrouter_kimi_k3.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_636
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_2040983954890694657.json、视频生成/图生视频/Wan2.7  1080P15秒图生视频_2041430546445770753.json、视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json、视频生成/图生视频/Wan2.7--首尾帧图生视频_2041496995017265154.json、视频生成/图生视频/电商产品材质特效视频 wan2.7 电商主图详情生视频_2045911569141338113.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_openrouter_gpt5_6_luna.json、comfyui-workflow-templates-json/api_openrouter_gpt5_6_sol.json、comfyui-workflow-templates-json/api_openrouter_gpt5_6_terra.json、comfyui-workflow-templates-json/api_openrouter_grok4_5.json、comfyui-workflow-templates-json/api_openrouter_kimi_k3.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_AlibabaWan27ImageToVideo`
-- `SaveVideo`
+- `OpenRouterLLMNode`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `SaveText`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/5 个有
-- `TextBox` —— 1/5 个有
+- `1d28f9d1-7c68-4b3b-99f5-2bf7fe0615c5` —— 4/5 个有
+- `70bc0003-66ee-48a5-bea3-7a0949fc30b5` —— 1/5 个有
 
 ## 典型参数
 

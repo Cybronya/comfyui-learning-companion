@@ -1,39 +1,38 @@
 ---
 name: unknown_workflow_generic_977
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.785667
-common_nodes: [CR Text, DeepTranslatorTextNode, LoadImage, SaveImage, easy sam3ImageSegmentation, easy sam3ModelLoader]
+coverage: 0.75825
+common_nodes: [ACEStepGen, GenerationParameters, MultiLineLyrics, MultiLinePromptACES, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/SAM-3语义分割抠图 - 接入SD-PPP实现 自动抠图选择主体_2073641773594923009.json, 图片生成/图生图/SAM3-一键抠图_抠像_去背景-透明背景-语义分割_2020048805160292353.json, 图片生成/文生图/电商做图效率翻10倍：SAM3语义分割抠图，背景再乱也不怕+全节点注释_2074043067904122881.json]
+members: [平台全量/【💫书墨】AI音乐-ACE-Step效果测试-书墨旅人_1920771437295243266.json, 音频生成/音频生成/ACE-Step Lyrics AI歌曲创作工作流_1923027778944626689.json, 音频生成/音频生成/ACE-Step 中英文歌曲创作_1955984833115815937.json, 音频生成/音频生成/ACE-Step 中英文歌曲创作_1972274089572429826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_977
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SAM-3语义分割抠图 - 接入SD-PPP实现 自动抠图选择主体_2073641773594923009.json、图片生成/图生图/SAM3-一键抠图_抠像_去背景-透明背景-语义分割_2020048805160292353.json、图片生成/文生图/电商做图效率翻10倍：SAM3语义分割抠图，背景再乱也不怕+全节点注释_2074043067904122881.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/【💫书墨】AI音乐-ACE-Step效果测试-书墨旅人_1920771437295243266.json、音频生成/音频生成/ACE-Step Lyrics AI歌曲创作工作流_1923027778944626689.json、音频生成/音频生成/ACE-Step 中英文歌曲创作_1955984833115815937.json、音频生成/音频生成/ACE-Step 中英文歌曲创作_1972274089572429826.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `DeepTranslatorTextNode`
-- `LoadImage`
-- `SaveImage`
-- `easy sam3ImageSegmentation`
-- `easy sam3ModelLoader`
+全部 4 个 workflow 都包含：
+- `ACEStepGen`
+- `GenerationParameters`
+- `MultiLineLyrics`
+- `MultiLinePromptACES`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 2/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `MaskPreview` —— 1/3 个有
+- `RH_Translator` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `CR Text` —— 1/4 个有
 
 ## 典型参数
 

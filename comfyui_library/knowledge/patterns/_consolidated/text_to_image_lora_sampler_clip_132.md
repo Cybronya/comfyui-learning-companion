@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_132
 type: Text To Image
 frequency: 12
 level: strong
-coverage: 0.84
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, ResolutionSelector, SaveImage, SaveImageAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.88625
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1元素移除局部重绘擦除图生图处理工具_2102524212488531970.json, 图片生成/图生图/Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249.json, 图片生成/图生图/Qwen Image 2.1图像编辑 官方模板，原生2K支持图生图方案_2103547482436358146.json, 图片生成/图生图/Qwen Image 2.1图像编辑 局部修改指令式操作_2105347589154627586.json, 图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102095974146596866.json, 图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102100461598892034.json, 图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102192876569583617.json, 图片生成/图生图/Qwen Image 2.1图像编辑｜热门IP写实图生图 修图改图全能手_2104104246579916802.json, 图片生成/图生图/Qwen Image 2.1扩图局部重绘图生图处理工具_2102522537514196994.json, 图片生成/图生图/Qwen Image 2.1扩图局部重绘｜图生图边缘补全双修｜画幅随意切换_2102291809056681986.json, 图片生成/图生图/Qwen Image 2.1智能扩图｜画面边缘自然延展｜图生图补全构图神器_2102258886488186882.json, 图片生成/图生图/写实图像编辑 Qwen Image 2.1热门IP风格改图_2104280927772958722.json]
+members: [图片生成/文生图/G-image-2.5文生图极速API版｜秒级出图效率拉满_2098732116275195905.json, 图片生成/文生图/G-image-2.5文生图高品质API版｜出图质感在线_2098726914138664961.json, 图片生成/文生图/G-image-2.5文生图高品质版 文本到图像精细生成_2098294330913021954.json, 图片生成/文生图/G-image2全能真实人像文生图｜2K输出摄影级写实人像写真_2088691697495662593.json, 图片生成/文生图/G2 文生图低价版｜省币跑图更划算的文生图选择_2096890572521951233.json, 图片生成/文生图/Image-2.5九图文生图版本 批量高质量生成_2098303034546806785.json, 图片生成/文生图/aigc-image-2.5文生图九图连出｜太平风格批量出图_2106953497185972225.json, 图片生成/文生图/text to Image 2.0 RH性价比版全能图片G2文生图工作流_2088373457695363074.json, 图片生成/文生图/text to Image 2.0 RH性价比版文生图｜全能图片G2图片生成工作流_2088342587194302465.json, 图片生成/文生图/场景道具图单图文生图（真实感）_2106398654545358849.json, 图片生成/文生图/场景道具图批量文生图｜布景陈设素材一键出全套_2103107503109263362.json, 图片生成/文生图/真实人像2K输出｜全能图片G-image2文生图人像写真_2093778848361046017.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_132
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1元素移除局部重绘擦除图生图处理工具_2102524212488531970.json、图片生成/图生图/Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249.json、图片生成/图生图/Qwen Image 2.1图像编辑 官方模板，原生2K支持图生图方案_2103547482436358146.json、图片生成/图生图/Qwen Image 2.1图像编辑 局部修改指令式操作_2105347589154627586.json、图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102095974146596866.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/G-image-2.5文生图极速API版｜秒级出图效率拉满_2098732116275195905.json、图片生成/文生图/G-image-2.5文生图高品质API版｜出图质感在线_2098726914138664961.json、图片生成/文生图/G-image-2.5文生图高品质版 文本到图像精细生成_2098294330913021954.json、图片生成/文生图/G-image2全能真实人像文生图｜2K输出摄影级写实人像写真_2088691697495662593.json、图片生成/文生图/G2 文生图低价版｜省币跑图更划算的文生图选择_2096890572521951233.json…）
 
 - **类型**：Text To Image
 - **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -28,33 +28,24 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
-- `ResolutionSelector`
 - `SaveImage`
-- `SaveImageAdvanced`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 7/12 个有
-- `ResizeImageMaskNode` —— 7/12 个有
-- `DrawMaskOnImage` —— 5/12 个有
-- `GetImageSize` —— 5/12 个有
-- `GetNode` —— 5/12 个有
-- `PreviewImage` —— 5/12 个有
-- `SetNode` —— 5/12 个有
-- `ImageCompare` —— 4/12 个有
-- `PrimitiveStringMultiline` —— 4/12 个有
-- `ImagePadForOutpaint` —— 3/12 个有
-- `GrowMaskWithBlur` —— 2/12 个有
-- `ModelAttentionBackend` —— 2/12 个有
-- `ResizeMask` —— 2/12 个有
+- `孤海注释` —— 11/12 个有
+- `RH_RhartImageG2TextToImage` —— 7/12 个有
+- `CR Prompt Text` —— 6/12 个有
+- `PIP_StringConcatenation` —— 2/12 个有
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 2/12 个有
+- `RH_RhartImageG25SunburstTextToImage` —— 2/12 个有
+- `ShowAnything|Mie` —— 2/12 个有
+- `easy positive` —— 2/12 个有
+- `RH_RhartImageG25OfficialTokenFlareTextToImage` —— 1/12 个有
+- `TextInput` —— 1/12 个有
 
 ## 典型参数
 

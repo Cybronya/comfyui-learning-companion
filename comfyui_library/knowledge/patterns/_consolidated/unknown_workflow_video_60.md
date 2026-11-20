@@ -1,43 +1,42 @@
 ---
 name: unknown_workflow_video_60
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.961667
-common_nodes: [Audio Cut (mtb), LatentSyncNode, LoadAudio, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster, easy int]
+coverage: 0.7205
+common_nodes: [GetImageRangeFromBatch, Image Comparer (rgthree), Int, PreviewImage, SeedVR2, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [数字人/数字人/Latentsync1.5对口型_1988811761094627329.json, 数字人/数字人/latentsync1.5视频对口型_1927208387900243970.json, 数字人/数字人/latentsync1.5视频对口型_1968997042532016129.json]
+members: [平台全量/自己用：视频放大_1940780956850798593.json, 平台全量/视频放大_超清放大SeedVR2_V2_1933111775560642562.json, 平台全量/视频放大_超清放大SeedVR2_V2_2000054771467812865.json, 平台全量/视频放大_超清放大SeedVR2_V2_2014658744814145538.json, 平台全量/视频超清放大（SeedVR2）_1980142752237260802.json, 视频生成/图生视频/视频放大_超清放大SeedVR2_V2_2116654061964587010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_60
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Latentsync1.5对口型_1988811761094627329.json、数字人/数字人/latentsync1.5视频对口型_1927208387900243970.json、数字人/数字人/latentsync1.5视频对口型_1968997042532016129.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/自己用：视频放大_1940780956850798593.json、平台全量/视频放大_超清放大SeedVR2_V2_1933111775560642562.json、平台全量/视频放大_超清放大SeedVR2_V2_2000054771467812865.json、平台全量/视频放大_超清放大SeedVR2_V2_2014658744814145538.json、平台全量/视频超清放大（SeedVR2）_1980142752237260802.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Audio Cut (mtb)`
-- `LatentSyncNode`
-- `LoadAudio`
-- `SimpleMath+`
+全部 6 个 workflow 都包含：
+- `GetImageRangeFromBatch`
+- `Image Comparer (rgthree)`
+- `Int`
+- `PreviewImage`
+- `SeedVR2`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VideoLengthAdjuster`
-- `easy int`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Int_to_Float` —— 2/3 个有
-- `Label (rgthree)` —— 2/3 个有
-- `easy float` —— 2/3 个有
-- `VHS_VideoInfoSource` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `SeedVR2BlockSwap` —— 5/6 个有
+- `ImageScaleBy` —— 3/6 个有
+- `ImageUpscaleWithModel` —— 3/6 个有
+- `UpscaleModelLoader` —— 3/6 个有
 
 ## 典型参数
 

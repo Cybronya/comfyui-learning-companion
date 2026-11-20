@@ -1,62 +1,81 @@
 ---
 name: unknown_workflow_sampler_checkpoint_vae_33
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.903
-common_nodes: [CheckpointLoaderSimple, ConditioningZeroOut, KSampler, LoadImage, PrimitiveStringMultiline, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode]
+coverage: 0.9125
+common_nodes: [Anything Everywhere3, Anything Everywhere?, CheckpointLoaderSimple, EmptyImage, EmptyLatentImage, Fast Bypasser (rgthree), KSampler, LoadImage, Mute / Bypass Repeater (rgthree), SaveImage, TextEncodeQwenImageEditPlus, VAEDecode, WujiCleaner, easy boolean, easy cleanGpuUsed, easy imageSwitch, easy int]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI短剧角色换装换动作 Qwen-image-edit2511+SeedVR2高清多图参考图生图_1958122766740369410.json, 图片生成/图生图/AI短剧角色换装换动作-图生图-邻家AI大女孩_2043716982956105729.json, 图片生成/图生图/Qwen-i2i_2068695645808062465.json]
+members: [图片生成/图生图/【千问Qwen】RapidAIO_图片编辑(I2I)_V19_光天化日_2020687970847690753.json, 图片生成/图生图/【千问Qwen】RapidAIO_图片编辑(I2I)_V23_光天化日_2020767161542778881.json, 图片生成/图生图/【绅士加密】千问Qwen_RapidAIO_图片编辑(I2I)_V19+TTtools_2020842049825673218.json, 图片生成/图生图/【绅士加密】千问Qwen_RapidAIO_图片编辑(I2I)_V23+TTtools_1980527707945615361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_33
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AI短剧角色换装换动作 Qwen-image-edit2511+SeedVR2高清多图参考图生图_1958122766740369410.json、图片生成/图生图/AI短剧角色换装换动作-图生图-邻家AI大女孩_2043716982956105729.json、图片生成/图生图/Qwen-i2i_2068695645808062465.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【千问Qwen】RapidAIO_图片编辑(I2I)_V19_光天化日_2020687970847690753.json、图片生成/图生图/【千问Qwen】RapidAIO_图片编辑(I2I)_V23_光天化日_2020767161542778881.json、图片生成/图生图/【绅士加密】千问Qwen_RapidAIO_图片编辑(I2I)_V19+TTtools_2020842049825673218.json、图片生成/图生图/【绅士加密】千问Qwen_RapidAIO_图片编辑(I2I)_V23+TTtools_1980527707945615361.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `Anything Everywhere3`
+- `Anything Everywhere?`
 - `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
+- `EmptyImage`
+- `EmptyLatentImage`
+- `Fast Bypasser (rgthree)`
 - `KSampler`
 - `LoadImage`
-- `PrimitiveStringMultiline`
+- `Mute / Bypass Repeater (rgthree)`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
+- `WujiCleaner`
+- `easy boolean`
+- `easy cleanGpuUsed`
+- `easy imageSwitch`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `WujiCleaner` —— 2/3 个有
-- `WujiUpscaler` —— 2/3 个有
+- `CR Latent Input Switch` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `TT_img_enc` —— 2/4 个有
+- `easy float` —— 2/4 个有
+- `easy getNode` —— 2/4 个有
+- `easy imageScaleDownBy` —— 2/4 个有
+- `easy imageSize` —— 2/4 个有
+- `easy setNode` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 3 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 67% |
-| 调度器 | beta57 | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 952 | 904 - 1000 | 4 | 95% |
+| 高度 | 1100 | 1000 - 1200 | 4 | 91% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | sa_solver | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 67%
-- 调度器 最常用 beta57，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 952，观测区间 904 - 1000，4 个样本，取值集中（一致性 95%）
+- 高度 中位数 1100，观测区间 1000 - 1200，4 个样本，取值集中（一致性 91%）
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

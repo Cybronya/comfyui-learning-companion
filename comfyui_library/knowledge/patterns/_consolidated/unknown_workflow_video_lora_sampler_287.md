@@ -1,38 +1,32 @@
 ---
 name: unknown_workflow_video_lora_sampler_287
 type: Unknown Workflow
-frequency: 8
+frequency: 10
 level: moderate
-coverage: 0.747
-common_nodes: [CLIPVisionLoader, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, ImageResizeKJv2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.9706
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/wanvideo_2_1_I2V_FantasyPortrait_表情迁移_1957329197184249857.json, 数字人/数字人/直播视频表情模仿_1956705772944986113.json, 数字人/数字人/表情迁移 - Wan2.1_1966784793595850754.json, 视频生成/图生视频/Fantasy Portrait表情迁移-图片输入_1958414298089472002.json, 视频生成/图生视频/FantasyPortrait_表情迁移 WAN2.1工作流_1967251208723423233.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956020151047127042.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-多人wan2.1_1956036782594904065.json, 视频生成/图生视频/最新FantasyPortrait音频驱动表情迁移_1956951532585541633.json]
+members: [视频生成/图生视频/WAN2.2图生视频_1950137059535183873.json, 视频生成/图生视频/WAN2.2图生视频快速流KJ版i2V_1949391348926971905.json, 视频生成/图生视频/Wan2.2  高帧率高清｜图生视频稳定版_1950383603089891330.json, 视频生成/图生视频/Wan2.2 I2V KJ图生视频基础版 Borges_1951966233606434817.json, 视频生成/图生视频/Wan2.2 Kj-图生视频工作流_1956914143121039362.json, 视频生成/图生视频/Wan2.2 图生视频一键工作流_2032825101573431298.json, 视频生成/图生视频/Wan2.2-KJ-6步加速图生视频_1950400282711736322.json, 视频生成/图生视频/Wan2.2图生视频吊打付费网站效果_1950068834109710337.json, 视频生成/图生视频/wan2.2图生视频-标准版-(必收藏)_2059069738726285313.json, 视频生成/图生视频/【KJ加速版】Wan2.2 图生视频_1953401583553925122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_287
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/wanvideo_2_1_I2V_FantasyPortrait_表情迁移_1957329197184249857.json、数字人/数字人/直播视频表情模仿_1956705772944986113.json、数字人/数字人/表情迁移 - Wan2.1_1966784793595850754.json、视频生成/图生视频/Fantasy Portrait表情迁移-图片输入_1958414298089472002.json、视频生成/图生视频/FantasyPortrait_表情迁移 WAN2.1工作流_1967251208723423233.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/WAN2.2图生视频_1950137059535183873.json、视频生成/图生视频/WAN2.2图生视频快速流KJ版i2V_1949391348926971905.json、视频生成/图生视频/Wan2.2  高帧率高清｜图生视频稳定版_1950383603089891330.json、视频生成/图生视频/Wan2.2 I2V KJ图生视频基础版 Borges_1951966233606434817.json、视频生成/图生视频/Wan2.2 Kj-图生视频工作流_1956914143121039362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `FantasyPortraitFaceDetector`
-- `FantasyPortraitModelLoader`
-- `ImageResizeKJv2`
+全部 10 个 workflow 都包含：
 - `LoadImage`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAddFantasyPortrait`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
@@ -40,27 +34,30 @@ source: knowledge_consolidation
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTextEncodeCached` —— 7/8 个有
-- `GetNode` —— 6/8 个有
-- `ImageConcatMulti` —— 6/8 个有
-- `SetNode` —— 6/8 个有
-- `INTConstant` —— 5/8 个有
-- `WanVideoContextOptions` —— 4/8 个有
-- `Primitive integer [Crystools]` —— 3/8 个有
-- `easy cleanGpuUsed` —— 2/8 个有
-- `Anything Everywhere` —— 1/8 个有
-- `LandmarksToImage` —— 1/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
-- `LoadWanVideoT5TextEncoder` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `SimpleMath+` —— 1/8 个有
-- `TrimVideoLatent` —— 1/8 个有
-- `WanVideoTextEncode` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `GetImageSizeAndCount` —— 8/10 个有
+- `ImageResizeKJv2` —— 8/10 个有
+- `WanVideoTorchCompileSettings` —— 7/10 个有
+- `easy cleanGpuUsed` —— 6/10 个有
+- `CreateCFGScheduleFloatList` —— 5/10 个有
+- `CR Text` —— 4/10 个有
+- `DownloadAndLoadGIMMVFIModel` —— 4/10 个有
+- `GIMMVFI_interpolate` —— 4/10 个有
+- `INTConstant` —— 4/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/10 个有
+- `CLIPVisionLoader` —— 2/10 个有
+- `MathExpression|pysssss` —— 2/10 个有
+- `PrimitiveStringMultiline` —— 2/10 个有
+- `easy seed` —— 2/10 个有
+- `DF_Integer` —— 1/10 个有
+- `ImageFromBatch+` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `PrimitiveFloat` —— 1/10 个有
+- `WanVideoClipVisionEncode` —— 1/10 个有
+- `WanVideoLoraSelectMulti` —— 1/10 个有
 
 ## 典型参数
 

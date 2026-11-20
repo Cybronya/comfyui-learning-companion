@@ -1,67 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_780
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.860667
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyHunyuanLatentVideo, JWInteger, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, SaveLatent, VAEDecode, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: moderate
+coverage: 0.5045
+common_nodes: [Any Switch (rgthree), Fast Groups Muter (rgthree), GetNode, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PrimitiveString, PrimitiveStringMultiline, SetNode, StringConcatenate, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, easy seed]
+problems: []
 missing: []
-members: [视频生成/文生视频/（自用）Wan2.2 All-in-one V10+CineScale文生视频_1962792297958125570.json, 视频生成/文生视频/（自用）Wan2.2 All-in-one V9.1+CineScale文生视频_1959492706500292610.json, 视频生成/文生视频/（贞贞版）Wan2.2 All-in-one 新CLIP V7文生视频（自用）_1958204024900227073.json]
+members: [视频生成/文生视频/WanLightX2V-I2V&T2V_1943222604020793345.json, 视频生成/文生视频/wan2.1 FusionX 文图生视频_1936768190418685954.json, 视频生成/文生视频/wanFusionX生视频二合一_1936095695604715522.json, 视频生成/文生视频/wanLightX生视频二合一_1936129945431101441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_780
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/（自用）Wan2.2 All-in-one V10+CineScale文生视频_1962792297958125570.json、视频生成/文生视频/（自用）Wan2.2 All-in-one V9.1+CineScale文生视频_1959492706500292610.json、视频生成/文生视频/（贞贞版）Wan2.2 All-in-one 新CLIP V7文生视频（自用）_1958204024900227073.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/WanLightX2V-I2V&T2V_1943222604020793345.json、视频生成/文生视频/wan2.1 FusionX 文图生视频_1936768190418685954.json、视频生成/文生视频/wanFusionX生视频二合一_1936095695604715522.json、视频生成/文生视频/wanLightX生视频二合一_1936129945431101441.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyHunyuanLatentVideo`
-- `JWInteger`
-- `KSampler`
+全部 4 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Fast Groups Muter (rgthree)`
+- `GetNode`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SaveImage`
-- `SaveLatent`
-- `VAEDecode`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `SetNode`
+- `StringConcatenate`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
+- `Bookmark (rgthree)` —— 3/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `WanVideoTextEncode` —— 3/4 个有
+- `WanVideoVRAMManagement` —— 3/4 个有
+- `Note Plus (mtb)` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `WanVideoApplyNAG` —— 1/4 个有
+- `WanVideoTextEncodeSingle` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | sa_solver | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

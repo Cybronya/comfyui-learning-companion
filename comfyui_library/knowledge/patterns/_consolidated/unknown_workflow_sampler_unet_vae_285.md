@@ -1,52 +1,57 @@
 ---
 name: unknown_workflow_sampler_unet_vae_285
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.906
-common_nodes: [EmptyLatentImage, KSampler, MZ_ChatGLM3Loader, MZ_ChatGLM3_V2, MZ_KolorsUNETLoaderV2, SaveImage, VAEDecode, VAELoader]
+coverage: 0.85875
+common_nodes: [CLIPLoader, KSampler, LoadImage, PreviewImage, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Kolors文生图_1930423082354163713.json, 图片生成/文生图/Kolors文生图工作流_1817854434880958465.json, 图片生成/文生图/【遇见AI】可灵Kolors文生图基础工作流_2038459039100702721.json]
+members: [图片生成/图生图/Qwen-image2.1-动作迁移_2102372877952704514.json, 图片生成/图生图/Qwen-image2.1-动作迁移_2112535992015089665.json, 图片生成/图生图/Qwen-image2.1-材质迁移_2102376704630149121.json, 图片生成/图生图/（五图编辑）Qwen-image-2.1-单图编辑_2104871202018914306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_285
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Kolors文生图_1930423082354163713.json、图片生成/文生图/Kolors文生图工作流_1817854434880958465.json、图片生成/文生图/【遇见AI】可灵Kolors文生图基础工作流_2038459039100702721.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1-动作迁移_2102372877952704514.json、图片生成/图生图/Qwen-image2.1-动作迁移_2112535992015089665.json、图片生成/图生图/Qwen-image2.1-材质迁移_2102376704630149121.json、图片生成/图生图/（五图编辑）Qwen-image-2.1-单图编辑_2104871202018914306.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `EmptyLatentImage`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `KSampler`
-- `MZ_ChatGLM3Loader`
-- `MZ_ChatGLM3_V2`
-- `MZ_KolorsUNETLoaderV2`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
+- `TextEncodeQwenImage21`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `PreviewImage` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `BodyRatioMapperSDPoseRender` —— 2/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `CheckpointLoaderSimple` —— 2/4 个有
+- `SDPoseKeypointExtractor` —— 2/4 个有
+- `Int` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `QwenImage21Cache` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 5 | 4.5 - 5 | 3 | 95% |
-| 采样算法 | euler_ancestral | - | 3 | 67% |
-| 调度器 | normal | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 768 | 768 - 1024 | 3 | 86% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 采样步数 | 25 | 25 - 40 | 4 | 77% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -54,10 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，观测区间 4.5 - 5，3 个样本，取值集中（一致性 95%）
-- 采样算法 最常用 euler_ancestral，3 个样本，一致性 67%
-- 调度器 最常用 normal，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，观测区间 768 - 1024，3 个样本，取值集中（一致性 86%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 25，观测区间 25 - 40，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

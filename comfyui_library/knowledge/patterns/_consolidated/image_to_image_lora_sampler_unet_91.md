@@ -1,82 +1,84 @@
 ---
 name: image_to_image_lora_sampler_unet_91
 type: Image To Image
-frequency: 7
+frequency: 8
 level: strong
-coverage: 0.862143
-common_nodes: [CFGNorm, CLIPLoader, CR Text, Compare, GetImageSize, ImageResize+, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, RHHiddenNodes, SaveImage, ShowText|pysssss, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy ifElse]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.86675
+common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/【双向补齐-故事分镜制作V2】全能图片pro-qwen 2509（关键帧叙事法）_1986024758141747201.json, 图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）_1983000935146356738.json, 图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）高清、光影、唯美的不二选择！_2034085594611060737.json, 图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）高清、光影、唯美的不二选择！_2041160207996297218.json, 图片生成/图生图/千问【故事分镜制作】图生图工作流_1992872342263230466.json, 图片生成/图生图/双向分镜故事链_1994343795951083521.json, 视频生成/图生视频/【故事分镜制作】qwen-Edit-2509_2015966817742753793.json]
+members: [图片生成/图生图/KERA-2-EDIT 单图编辑工作流_2080375312747155458.json, 图片生成/图生图/KERA-2-EDIT-ANY-IMAGE-1 单图编辑工作流_2077623406463381506.json, 图片生成/图生图/KREA-2 单图编辑_2083582526848847874.json, 图片生成/图生图/KREA-2-EDIT-One-image-V2 单图编辑工作流_2079953132267859969.json, 图片生成/图生图/Krea 2 Edit 图片编辑v1.2_ New Storyboard & Inpainting_2080138587139563521.json, 图片生成/图生图/Krea_2-Edit+V1.2-单图像编辑_2081573244439719937.json, 图片生成/图生图/全新虚拟试衣！Krea 2 Outfit Transfer 单图编辑工作流_2080180833553571842.json, 图片生成/文生图/单图遮罩编辑 (Krea 2 Identity Edit v1.2)_2079889918284877826.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_91
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/【双向补齐-故事分镜制作V2】全能图片pro-qwen 2509（关键帧叙事法）_1986024758141747201.json、图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）_1983000935146356738.json、图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）高清、光影、唯美的不二选择！_2034085594611060737.json、图片生成/图生图/【故事分镜制作】qwen-Edit-2509（next sceneV2）高清、光影、唯美的不二选择！_2041160207996297218.json、图片生成/图生图/千问【故事分镜制作】图生图工作流_1992872342263230466.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/KERA-2-EDIT 单图编辑工作流_2080375312747155458.json、图片生成/图生图/KERA-2-EDIT-ANY-IMAGE-1 单图编辑工作流_2077623406463381506.json、图片生成/图生图/KREA-2 单图编辑_2083582526848847874.json、图片生成/图生图/KREA-2-EDIT-One-image-V2 单图编辑工作流_2079953132267859969.json、图片生成/图生图/Krea 2 Edit 图片编辑v1.2_ New Storyboard & Inpainting_2080138587139563521.json…）
 
 - **类型**：Image To Image
-- **样本数**：7
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGNorm`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
-- `CR Text`
-- `Compare`
-- `GetImageSize`
-- `ImageResize+`
+- `EmptySD3LatentImage`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
+- `Krea2EditGroundedEncode`
+- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `RHHiddenNodes`
+- `PreviewImage`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
-- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 5/7 个有
-- `EmptyLatentImage` —— 2/7 个有
-- `FluxResolutionNode` —— 2/7 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/7 个有
-- `RH_Nano_Banana_Image2Image` —— 1/7 个有
+- `GetImageSize` —— 7/8 个有
+- `ResizeImageMaskNode` —— 6/8 个有
+- `VAEDecode` —— 6/8 个有
+- `GrowMask` —— 5/8 个有
+- `Image Comparer (rgthree)` —— 5/8 个有
+- `ImageBlur` —— 5/8 个有
+- `ImageToMask` —— 5/8 个有
+- `MaskPreview+` —— 5/8 个有
+- `MaskToImage` —— 5/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
+- `ImageCompositeMasked` —— 4/8 个有
+- `ConditioningZeroOut` —— 3/8 个有
+- `ImageScaleBy` —— 3/8 个有
+- `TextInput_` —— 2/8 个有
+- `VAEUtils_VAEDecodeTiled` —— 2/8 个有
+- `JjkText` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `LoadImageMask` —— 1/8 个有
+- `image_scale_pixel_v2` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
-| 采样步数 | 8 | 8 - 8 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 8 | 8 - 10 | 8 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 2/8 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 10，8 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（6/8 个样本）：Steps较低可能导致细节不足

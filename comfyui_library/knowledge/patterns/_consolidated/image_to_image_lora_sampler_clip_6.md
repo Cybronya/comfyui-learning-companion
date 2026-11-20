@@ -1,37 +1,38 @@
 ---
 name: image_to_image_lora_sampler_clip_6
 type: Image To Image
-frequency: 15
+frequency: 19
 level: strong
-coverage: 0.896333
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, RepeatLatentBatch, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.858579
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1951582446481518594.json, 图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1970704107847774209.json, 图片生成/图生图/Flux kontext 老照片高清修复上色_1942218462028828674.json, 图片生成/图生图/Kontext Dev Fuse it｜多图溶图_1946409936961040386.json, 图片生成/图生图/Kontext-DEV【先去除后替换产品】换场景_1945660410626285569.json, 图片生成/图生图/Kontext-DEV【先去除后替换产品】换场景_1969909066803933185.json, 图片生成/图生图/Kontext-DEV模特换衣_1940636003080056834.json, 图片生成/图生图/Kontext-DEV模特换衣_1948210585455460353.json, 图片生成/图生图/Kontext-电商可用万物迁移（融图）_1946483138434621441.json, 图片生成/图生图/人物换头写真_无需PS深度溶图Kontext-LORA_1945817066031247361.json, 图片生成/图生图/人物换头换脸_深度溶图Kontext-LORA_1946849452919545857.json, 图片生成/图生图/家具布置迁移_Kontext溶图V4_1947327031031779330.json, 图片生成/图生图/手持商品迁移-加强版_Kontext溶图V4_1947477043904663554.json, 图片生成/图生图/手镯万物穿戴迁移_Kontext溶图V4_1947266108937113602.json, 图片生成/图生图/换头_1950809310471331842.json]
+members: [图片生成/图生图/Character Head and Face Swaps人物换头换脸_2100035107896774657.json, 图片生成/图生图/Character_Head_and_Face_Swaps人物换头换脸_2100209388236660737.json, 图片生成/图生图/Character_Head_and_Face_Swaps人物换头换脸_2101877910243209218.json, 图片生成/图生图/Face Swap Pro换脸pro+2.0完美换脸+写实人物一致性_2097490583530070017.json, 图片生成/图生图/Face Swaps klein-9B 双图编辑 换脸换装_2100037705118867457.json, 图片生成/图生图/Face Swap完美换脸+写实人物一致性_2099675578382245890.json, 图片生成/图生图/Face_Swaps_klein-9B_双图编辑_换脸换装_2100423150663196674.json, 图片生成/图生图/试衣换装Flux Klein 9b Edit的虚拟试穿LoRA，超精确_2026645785999319041.json, 图片生成/图生图/试衣换装flux-klein-9b-virtual-tryon_2026568259612446721.json, 图片生成/图生图/超强图像一致性Flux2-Klein-9B-Consis-Lora +3种模式值之一 -- 2_2092660020956721153.json, 图片生成/图生图/超强图像一致性Flux2-Klein-9B-Consis-Lora_+3种模式值之一_--_2_2093496064706965505.json, 图片生成/图生图/超强图像一致性Flux2-Klein-9B-Consis-Lora_+3种模式值之一_--_2_2093534787322605569.json, 平台全量/Face_Swaps_klein-9B_双图编辑_换脸换装_2100871783531503617.json, 平台全量/Face_Swaps_klein-9B_双图编辑_换脸换装_2101138537323257858.json, 平台全量/完美无痕换脸  4k画质 换脸换头 自然换脸换脸换装多图编辑_2066749180479102978.json, 平台全量/换脸pro+2.0完美换脸+写实人物一致性 全能图片 双图编辑  4K高清图像生成_2060239974456455170.json, 平台全量/换脸pro加强版+2.0完美换脸+写实人物一致性+全能图片+双图编辑 4K高清图像生成_2064607748033179650.json, 平台全量/无偏差不变色 最强换脸pro完美换脸全能图片 人物一致性 自然真实留细节_2067849337924841473.json, 平台全量/极致无痕换脸 自然换脸 4k画质 换脸换头 换脸换装多图编辑 脸部抠图_2066698432827453442.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1951582446481518594.json、图片生成/图生图/Flux Kontext Canva_一致性双图融合(电商神器)_Borges_1970704107847774209.json、图片生成/图生图/Flux kontext 老照片高清修复上色_1942218462028828674.json、图片生成/图生图/Kontext Dev Fuse it｜多图溶图_1946409936961040386.json、图片生成/图生图/Kontext-DEV【先去除后替换产品】换场景_1945660410626285569.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/Character Head and Face Swaps人物换头换脸_2100035107896774657.json、图片生成/图生图/Character_Head_and_Face_Swaps人物换头换脸_2100209388236660737.json、图片生成/图生图/Character_Head_and_Face_Swaps人物换头换脸_2101877910243209218.json、图片生成/图生图/Face Swap Pro换脸pro+2.0完美换脸+写实人物一致性_2097490583530070017.json、图片生成/图生图/Face Swaps klein-9B 双图编辑 换脸换装_2100037705118867457.json…）
 
 - **类型**：Image To Image
-- **样本数**：15
+- **样本数**：19
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 19 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ReferenceLatent`
-- `RepeatLatentBatch`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -39,50 +40,39 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 14/15 个有
-- `GoogleTranslateTextNode` —— 14/15 个有
-- `PreviewImage` —— 14/15 个有
-- `ShowText|pysssss` —— 14/15 个有
-- `Text Multiline` —— 13/15 个有
-- `ImageStitch` —— 12/15 个有
-- `FastCanvas` —— 10/15 个有
-- `FastCanvasTool` —— 10/15 个有
-- `ImageScaleDownToSize` —— 10/15 个有
-- `RMBG` —— 9/15 个有
-- `Image Rembg (Remove Background)` —— 5/15 个有
-- `EmptySD3LatentImage` —— 4/15 个有
-- `GetImageSizeAndCount` —— 4/15 个有
-- `SaveLatent` —— 4/15 个有
-- `LayerMask: PersonMaskUltra V2` —— 3/15 个有
-- `LayerUtility: CropByMask V2` —— 3/15 个有
-- `Note Plus (mtb)` —— 3/15 个有
-- `CR Text` —— 1/15 个有
-- `ConditioningCombine` —— 1/15 个有
-- `Image Comparer (rgthree)` —— 1/15 个有
-- `Images to RGB` —— 1/15 个有
-- `LoadImageFromUrl` —— 1/15 个有
-- `RH_Translator` —— 1/15 个有
-- `TeaCache` —— 1/15 个有
-- `Text _O` —— 1/15 个有
+- `RH_Nano_Banana2_Image2Image` —— 14/19 个有
+- `CR Text` —— 7/19 个有
+- `ImageConcatMulti` —— 7/19 个有
+- `MuyeTextEditOutput` —— 7/19 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 7/19 个有
+- `CR Prompt Text` —— 3/19 个有
+- `EmptyImage` —— 3/19 个有
+- `PreviewImage` —— 3/19 个有
+- `RH_SeedreamV5ProImageToImage` —— 3/19 个有
+- `GetNode` —— 1/19 个有
+- `SetNode` —— 1/19 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 15 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
-| 采样算法 | euler | - | 15 | 100% |
-| 调度器 | simple | - | 15 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+| 采样步数 | 4 | 4 - 5 | 19 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 19 | 100% |
+| 采样算法 | euler | - | 19 | 100% |
+| 调度器 | simple | - | 19 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 19 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 27/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，15 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，15 个样本，一致性 100%
-- 调度器 最常用 simple，15 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 5，19 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，19 个样本，一致性 100%
+- 调度器 最常用 simple，19 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，19 个样本，取值集中（一致性 100%）
+- 高发问题（27/19 个样本）：Steps较低可能导致细节不足

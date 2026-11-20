@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_605
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9028
-common_nodes: [LoadAudio, SaveAudio]
+coverage: 0.979167
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/AI音乐仅1分钟生成4分钟长段完整音乐_1923984524676354049.json, 视频生成/图生视频/VibeVoice微软多人语音克隆_1961064362083598338.json, 音频生成/音频生成/VibeVoice 四人对话_1961890862311608322.json, 音频生成/音频生成/comfyui-VibeVoice_1.5B+7B_1964016590247313410.json, 音频生成/音频生成/vibevoice多人对话工作流_1963268030979616769.json]
+members: [平台全量/万相2.7-参考生视频_2040038815334670337.json, 平台全量/动作迁移工作流｜Kling V3.0 视频动作一比一复刻_2098032241841631233.json, 视频生成/图生视频/Kling_V30ProMotionControl_v3.0_2033808877589897217.json, 视频生成/图生视频/Wan2.7 参考生视频_2041457272768958466.json, 视频生成/图生视频/wan2.7万相2.7图生视频-参考生视频_2041500454491791362.json, 视频生成/图生视频/万相2.7-参考生视频工作流_2041779553500143618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_605
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/AI音乐仅1分钟生成4分钟长段完整音乐_1923984524676354049.json、视频生成/图生视频/VibeVoice微软多人语音克隆_1961064362083598338.json、音频生成/音频生成/VibeVoice 四人对话_1961890862311608322.json、音频生成/音频生成/comfyui-VibeVoice_1.5B+7B_1964016590247313410.json、音频生成/音频生成/vibevoice多人对话工作流_1963268030979616769.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/万相2.7-参考生视频_2040038815334670337.json、平台全量/动作迁移工作流｜Kling V3.0 视频动作一比一复刻_2098032241841631233.json、视频生成/图生视频/Kling_V30ProMotionControl_v3.0_2033808877589897217.json、视频生成/图生视频/Wan2.7 参考生视频_2041457272768958466.json、视频生成/图生视频/wan2.7万相2.7图生视频-参考生视频_2041500454491791362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `VibeVoiceTTS` —— 4/5 个有
-- `Text Multiline` —— 2/5 个有
-- `DiffRhythmRun` —— 1/5 个有
+- `RH_AlibabaWan27ReferenceToVideo` —— 4/6 个有
+- `RH_KlingV30ProMotionControl` —— 2/6 个有
+- `CR Text` —— 1/6 个有
 
 ## 典型参数
 

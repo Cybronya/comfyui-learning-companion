@@ -5754,7 +5754,7 @@
 				1380
 			],
 			"widgets_values":[
-				"ltx2.3-ic-watermark-remove-general-lora.safetensors",
+				"ltx2.3-ic-watermREDACTED000000000000000.safetensors",
 				1
 			],
 			"inputs":[
@@ -5789,7 +5789,7 @@
 			},
 			"id":5251,
 			"type":"LTXICLoRALoaderModelOnly",
-			"title":"[ON] 2.5 IC LoRA: ltx2.3-ic-watermark-remove-general-lora",
+			"title":"[ON] 2.5 IC LoRA: ltx2.3-ic-watermREDACTED000000000000000",
 			"properties":{
 				"cnr_id":"ComfyUI-LTXVideo",
 				"ver":"82bd963cdeb66d023bed8c99324a307020907ef8",

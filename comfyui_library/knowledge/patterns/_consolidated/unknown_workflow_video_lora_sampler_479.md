@@ -1,78 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_479
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8832
-common_nodes: [CLIPVisionLoader, ImageBatchMulti, ImageResizeKJv2, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, MaskBatchMulti, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.869833
+common_nodes: [DF_Get_image_size, Float, GetImageSizeAndCount, ImageConcanate, ImageFromBatch+, ImageResizeKJv2, Int, JWImageResizeByLongerSide, JWInteger, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PDIMAGE_LongerSize, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy batchAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/BindWeave-图生视频-高人物一致性-双人角色（推荐）_1990706002230218754.json, 视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1991713227203620865.json, 视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1992107841632923649.json, 视频生成/图生视频/BindWeave三图参考图生视频V1(FPS16)_1989682113672867842.json, 视频生成/图生视频/BindWeave双图参考图生视频V1(FPS16)_1989682080592351234.json]
+members: [图片生成/图生图/（一阶段）全能视频S极致原版修复去闪加细节720P极速版V1_1974427863669673986.json, 平台全量/（一阶段15秒版）全能视频S极致原版修复去闪加细节极速版V1_1975913780108505089.json, 平台全量/（一阶段）全能视频S极致原版修复去闪加细节720P极速版V1_1973757539986837506.json, 平台全量/（组合版）全能视频S极致修复+口型重塑720P高清极速版V1（6分钟）_1973745770027462657.json, 平台全量/🦖全能视频S闪烁极致修复_1976843592805367809.json, 视频生成/图生视频/人物一致性SVI顶配版长视频生成_1985379890973319169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_479
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/BindWeave-图生视频-高人物一致性-双人角色（推荐）_1990706002230218754.json、视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1991713227203620865.json、视频生成/图生视频/BindWeave_Multi-多图参考生成视频_1992107841632923649.json、视频生成/图生视频/BindWeave三图参考图生视频V1(FPS16)_1989682113672867842.json、视频生成/图生视频/BindWeave双图参考图生视频V1(FPS16)_1989682080592351234.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/（一阶段）全能视频S极致原版修复去闪加细节720P极速版V1_1974427863669673986.json、平台全量/（一阶段15秒版）全能视频S极致原版修复去闪加细节极速版V1_1975913780108505089.json、平台全量/（一阶段）全能视频S极致原版修复去闪加细节720P极速版V1_1973757539986837506.json、平台全量/（组合版）全能视频S极致修复+口型重塑720P高清极速版V1（6分钟）_1973745770027462657.json、平台全量/🦖全能视频S闪烁极致修复_1976843592805367809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageBatchMulti`
+全部 6 个 workflow 都包含：
+- `DF_Get_image_size`
+- `Float`
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `InvertMask`
-- `LoadImage`
+- `Int`
+- `JWImageResizeByLongerSide`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadWanVideoT5TextEncoder`
-- `MaskBatchMulti`
+- `MathExpression|pysssss`
+- `PDIMAGE_LongerSize`
+- `RepeatImageBatch`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddBindweaveEmbeds`
+- `VHS_VideoInfoLoaded`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncodeLatentBatch`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy batchAnything`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 4/5 个有
-- `easy imageRemBg` —— 4/5 个有
-- `CLIPLoader` —— 3/5 个有
-- `ImageConcatMulti` —— 3/5 个有
-- `JWInteger` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `SolidMask` —— 3/5 个有
-- `TextImageEncodeQwenVL` —— 3/5 个有
-- `WanVideoSetLoRAs` —— 3/5 个有
-- `DrawMaskOnImage` —— 2/5 个有
-- `ImageRemoveBackground+` —— 2/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `PrimitiveInt` —— 2/5 个有
-- `TextInput_` —— 2/5 个有
-- `TransparentBGSession+` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `DF_Text_Box` —— 1/5 个有
-- `ImagePadKJ` —— 1/5 个有
-- `MaskPreview` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
-- `RMBG` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
-- `math_calculate` —— 1/5 个有
-- `ttN seed` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
+- `CLIPVisionLoader` —— 2/6 个有
+- `GetImageRangeFromBatch` —— 2/6 个有
+- `GetNode` —— 2/6 个有
+- `LayerUtility: PurgeVRAM` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `WanVideoClipVisionEncode` —— 2/6 个有
+- `AudioSeparation` —— 1/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `ColorMatch` —— 1/6 个有
+- `DownloadAndLoadWav2VecModel` —— 1/6 个有
+- `INTConstant` —— 1/6 个有
+- `ImageBatchMulti` —— 1/6 个有
+- `InvertMask` —— 1/6 个有
+- `LoadImage` —— 1/6 个有
+- `MultiTalkModelLoader` —— 1/6 个有
+- `MultiTalkWav2VecEmbeds` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
+- `VHS_VideoInfo` —— 1/6 个有
+- `WanVideoImageToVideoEncode` —— 1/6 个有
+- `WanVideoImageToVideoMultiTalk` —— 1/6 个有
+- `WanVideoSetBlockSwap` —— 1/6 个有
+- `WanVideoTextEncodeCached` —— 1/6 个有
+- `WanVideoTorchCompileSettings` —— 1/6 个有
+- `WanVideoVACEStartToEndFrame` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 

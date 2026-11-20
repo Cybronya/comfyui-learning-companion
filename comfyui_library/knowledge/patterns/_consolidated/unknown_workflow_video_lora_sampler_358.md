@@ -1,70 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_358
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.441143
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.73675
+common_nodes: [CLIPVisionLoader, CM_IntToFloat, DrawViTPose, GetImageSizeAndCount, GetNode, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, SimpleMath+, VHS_LoadVideo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMaxH3-多参生视频_2099054818437459969.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2099773384988127233.json, 视频生成/图生视频/MiniMaxH3-多参生视频_2100033508268920833.json, 视频生成/图生视频/Minimax H3 N宫格视频_2098678084865183745.json, 视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2109119782388846593.json, 视频生成/文生视频/H3全能参考短剧工作流_2108172108395278338.json, 视频生成/文生视频/H3长视频衔接（尾帧22帧锚点）_2108174255279140865.json]
+members: [平台全量/Wan2.2 Animate 人物替换（背景保持）_2078709416081317890.json, 平台全量/Wan22Animate动作迁移-AIGC大赏_2041797532950470658.json, 平台全量/真正好用的Wan-Animate动作迁移_1979754783361896449.json, 平台全量/视频人物替换_2120067228040253441.json, 视频生成/图生视频/Wan-Animate人物替换V3_1989226857599995905.json, 视频生成/图生视频/Wan-Animate人物替换V3_2002723614807998465.json, 视频生成/图生视频/Wan-Animate人物替换_1988762483311652866.json, 视频生成/图生视频/Wan-Animate人物替换遮罩版V3_2001920042348494850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_358
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3-多参生视频_2099054818437459969.json、视频生成/图生视频/MiniMaxH3-多参生视频_2099773384988127233.json、视频生成/图生视频/MiniMaxH3-多参生视频_2100033508268920833.json、视频生成/图生视频/Minimax H3 N宫格视频_2098678084865183745.json、视频生成/图生视频/【AI影视剧制作】MiniMaxH3-多参视频生成发布版_2109119782388846593.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/Wan2.2 Animate 人物替换（背景保持）_2078709416081317890.json、平台全量/Wan22Animate动作迁移-AIGC大赏_2041797532950470658.json、平台全量/真正好用的Wan-Animate动作迁移_1979754783361896449.json、平台全量/视频人物替换_2120067228040253441.json、视频生成/图生视频/Wan-Animate人物替换V3_1989226857599995905.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
+全部 8 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `CM_IntToFloat`
+- `DrawViTPose`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `KSamplerSelect`
+- `ImageResizeKJv2`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
-- `VHS_VideoCombine`
+- `SimpleMath+`
+- `VHS_LoadVideo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 6/7 个有
-- `MiniMaxChunkFeedForward` —— 5/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/7 个有
-- `MiniMaxLowVRAMAttention` —— 5/7 个有
-- `JWFloat` —— 4/7 个有
-- `MiniMaxH3AVLatentSeparateT8` —— 4/7 个有
-- `MinimaxH3LatentUpscaler3D` —— 4/7 个有
-- `PT_H3ConcatAVLatent` —— 4/7 个有
-- `SplitSigmas` —— 4/7 个有
-- `VHS_LoadAudioUpload` —— 4/7 个有
-- `VRAM_Debug` —— 4/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
-- `LoadAudio` —— 3/7 个有
-- `ModelPreviewOverrideKJ` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `ModelAttentionBackend` —— 2/7 个有
-- `PrimitiveFloat` —— 2/7 个有
-- `Float` —— 1/7 个有
-- `GetImageRangeFromBatch` —— 1/7 个有
-- `MiniMaxH3AddGuide` —— 1/7 个有
-- `TrimAudioDuration` —— 1/7 个有
+- `CR Text` —— 7/8 个有
+- `ImageConcatMulti` —— 7/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 7/8 个有
+- `RHHiddenNodes` —— 7/8 个有
+- `SeCModelLoader` —— 7/8 个有
+- `SeCVideoSegmentation` —— 7/8 个有
+- `VHS_VideoCombine` —— 7/8 个有
+- `BBoxesToSAM2` —— 6/8 个有
+- `DownloadAndLoadQwenModel` —— 6/8 个有
+- `ImageFromBatch` —— 6/8 个有
+- `LayerMask: SAM2Ultra` —— 6/8 个有
+- `MaskPreview+` —— 6/8 个有
+- `QwenVLDetection` —— 6/8 个有
+- `BlockifyMask` —— 4/8 个有
+- `DrawMaskOnImage` —— 4/8 个有
+- `GrowMask` —— 4/8 个有
+- `ImageFromBatch+` —— 1/8 个有
+- `MathExpression|pysssss` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `TT_img_enc_v2` —— 1/8 个有
+- `WanVideoLoraSelect` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 

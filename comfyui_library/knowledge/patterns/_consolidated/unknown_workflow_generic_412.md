@@ -3,35 +3,36 @@ name: unknown_workflow_generic_412
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.854429
-common_nodes: [CR Text, FireRedTTS2_Dialogue, LoadAudio, SaveAudio, WhisperSTT]
+coverage: 0.685
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/FireRed TTS2 语音克隆_2004513519070576642.json, 音频生成/音频生成/FireRedTTS2单人双人语音克隆二合一工作流_1972694443545546753.json, 音频生成/音频生成/FireRedTTS2单人语音克隆_1970342559434371073.json, 音频生成/音频生成/FireRedTTS2双人语音克隆_1970352590594732034.json, 音频生成/音频生成/FireRedTTS2多语言语音克隆_1970754646618873857.json, 音频生成/音频生成/FireRedTTS2小红书单人语音克隆工作流_1972706413086724097.json, 音频生成/音频生成/FireRedTTS2小红书双人语音克隆、对话工作流_1972711128054845441.json]
+members: [图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059821828713050114.json, 图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059901030892138498.json, 图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059992080302297089.json, 图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2059523681193385985.json, 图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2064558665901895682.json, 图片生成/图生图/11_2038431448486649858.json, 图片生成/图生图/全能图片2建筑万能空间节点分析_2064558042129195010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_412
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/FireRed TTS2 语音克隆_2004513519070576642.json、音频生成/音频生成/FireRedTTS2单人双人语音克隆二合一工作流_1972694443545546753.json、音频生成/音频生成/FireRedTTS2单人语音克隆_1970342559434371073.json、音频生成/音频生成/FireRedTTS2双人语音克隆_1970352590594732034.json、音频生成/音频生成/FireRedTTS2多语言语音克隆_1970754646618873857.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059821828713050114.json、图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059901030892138498.json、图片生成/图生图/-全能图片-2室内万能餐桌灵感方案设计_2059992080302297089.json、图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2059523681193385985.json、图片生成/图生图/-全能图片-2室内设计餐桌自动化匹配设计_2064558665901895682.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CR Text`
-- `FireRedTTS2_Dialogue`
-- `LoadAudio`
-- `SaveAudio`
-- `WhisperSTT`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/7 个有
-- `SaveAudioMP3` —— 1/7 个有
+- `PreviewImage` —— 6/7 个有
+- `CR Text` —— 5/7 个有
+- `Image Compare (mtb)` —— 1/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/7 个有
 
 ## 典型参数
 

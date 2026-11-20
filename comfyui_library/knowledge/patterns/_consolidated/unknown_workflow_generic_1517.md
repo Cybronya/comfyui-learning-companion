@@ -3,17 +3,17 @@ name: unknown_workflow_generic_1517
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [LoadImage, SaveImage, easy ifElse]
+coverage: 0.8035
+common_nodes: [JoinStrings, LoadImage, Qwen3_VQA, TextInput_, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/布尔_1950429219898703873.json, 图片生成/图生图/测试_1962111350992474113.json]
+members: [图片生成/反推提示词/LTX2 视频生成提示词扩写_2009426809082875905.json, 图片生成/反推提示词/LTX2.3视频提示词生成_2042429714601615362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1517
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/布尔_1950429219898703873.json、图片生成/图生图/测试_1962111350992474113.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/LTX2 视频生成提示词扩写_2009426809082875905.json、图片生成/反推提示词/LTX2.3视频提示词生成_2042429714601615362.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,15 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `JoinStrings`
 - `LoadImage`
-- `SaveImage`
-- `easy ifElse`
+- `Qwen3_VQA`
+- `TextInput_`
+- `easy saveText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveBoolean` —— 1/2 个有
-- `easy boolean` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
 
 ## 典型参数
 

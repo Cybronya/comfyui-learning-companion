@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_436
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.86
-common_nodes: [LoadAudio, LoadImage, SaveVideo, Seedance_Config, Seedance_MultimodalVideo]
+coverage: 0.885714
+common_nodes: [LoadImage, LoadRembgByBiRefNetModel, RembgByBiRefNet, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/(宽审核-20260725片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2080983838079143937.json, 视频生成/图生视频/(宽审核-20260716片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2077758046050279426.json, 视频生成/图生视频/(宽审核-20260717片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078312714585333762.json, 视频生成/图生视频/(宽审核-20260718片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078737250657062913.json, 视频生成/图生视频/(宽审核-20260719片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078812803137363969.json, 视频生成/文生视频/电商友好型-Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078403070370861058.json]
+members: [图片生成/图生图/RembgByBiRefNet-去背景_2060181319207968770.json, 图片生成/图生图/一键透明抠图（更透明）+全节点注释_2055997662750625793.json, 图片生成/图生图/移除背景工作流_2014701119468998657.json, 图片生成/图生图/绿幕抠图_2036987086074548226.json, 图片生成/图生图/自动抠图1透明背景+全节点注释_2055994639756341249.json, 平台全量/抠图_2069350486301569026.json, 平台全量/抠图工作流_2075112067941625857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_436
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/(宽审核-20260725片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2080983838079143937.json、视频生成/图生视频/(宽审核-20260716片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2077758046050279426.json、视频生成/图生视频/(宽审核-20260717片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078312714585333762.json、视频生成/图生视频/(宽审核-20260718片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078737250657062913.json、视频生成/图生视频/(宽审核-20260719片头)Seedance2.0多参视频生成(贞贞的平价AI小屋)_2078812803137363969.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/RembgByBiRefNet-去背景_2060181319207968770.json、图片生成/图生图/一键透明抠图（更透明）+全节点注释_2055997662750625793.json、图片生成/图生图/移除背景工作流_2014701119468998657.json、图片生成/图生图/绿幕抠图_2036987086074548226.json、图片生成/图生图/自动抠图1透明背景+全节点注释_2055994639756341249.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadAudio`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `SaveVideo`
-- `Seedance_Config`
-- `Seedance_MultimodalVideo`
+- `LoadRembgByBiRefNetModel`
+- `RembgByBiRefNet`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/6 个有
+- `MaskPreview` —— 3/7 个有
+- `ImageCompositeMasked` —— 1/7 个有
 
 ## 典型参数
 

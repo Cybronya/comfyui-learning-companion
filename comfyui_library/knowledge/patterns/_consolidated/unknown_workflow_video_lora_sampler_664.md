@@ -1,53 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_664
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.966333
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.60925
+common_nodes: [CLIPLoader, CLIPTextEncode, Canny, CheckpointLoaderSimple, DWPreprocessor, DepthCrafter, DownloadAndLoadDepthCrafterModel, FloatToSigmas, ImageConcanate, ImageResize+, ImageToCPU, KSamplerSelect, LTXVAdainLatent, LTXVConditioning, LTXVInContextSampler, LTXVLatentUpsampler, LTXVLatentUpsamplerModelLoader, LTXVTiledSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrintSigmas, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, StringToFloatList, VAEDecode, VAEDecodeTiled, VAEEncode, VHS_LoadVideo, VHS_SelectImages, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/视频一句话转画风_1980290599200972802.json, 数字人/数字人/视频风格 一键转绘 高效 极简 Ditto_1980279788386607106.json, 视频生成/图生视频/ditto视频风格转绘工作流_1980897835057106945.json]
+members: [平台全量/LTX-Video-ICLoRA_1944031275911090177.json, 平台全量/LTXV 0.98 IC LORA姿势控制视频生视频V1_1947695587496996866.json, 平台全量/LTXV 0.98 IC LORA深度控制视频生视频V1_1947697975301681153.json, 视频生成/图生视频/LTXV 0.98 IC LORA线稿控制视频生视频V1_1947688689313951745.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_664
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/视频一句话转画风_1980290599200972802.json、数字人/数字人/视频风格 一键转绘 高效 极简 Ditto_1980279788386607106.json、视频生成/图生视频/ditto视频风格转绘工作流_1980897835057106945.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/LTX-Video-ICLoRA_1944031275911090177.json、平台全量/LTXV 0.98 IC LORA姿势控制视频生视频V1_1947695587496996866.json、平台全量/LTXV 0.98 IC LORA深度控制视频生视频V1_1947697975301681153.json、视频生成/图生视频/LTXV 0.98 IC LORA线稿控制视频生视频V1_1947688689313951745.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadWanVideoT5TextEncoder`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `Canny`
+- `CheckpointLoaderSimple`
+- `DWPreprocessor`
+- `DepthCrafter`
+- `DownloadAndLoadDepthCrafterModel`
+- `FloatToSigmas`
+- `ImageConcanate`
+- `ImageResize+`
+- `ImageToCPU`
+- `KSamplerSelect`
+- `LTXVAdainLatent`
+- `LTXVConditioning`
+- `LTXVInContextSampler`
+- `LTXVLatentUpsampler`
+- `LTXVLatentUpsamplerModelLoader`
+- `LTXVTiledSampler`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PreviewImage`
+- `PrintSigmas`
+- `RandomNoise`
+- `STGAdvancedPresets`
+- `STGGuiderAdvanced`
+- `Set VAE Decoder Noise`
+- `StringToFloatList`
+- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncode`
 - `VHS_LoadVideo`
+- `VHS_SelectImages`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 2/3 个有
-- `TextInputBasic` —— 2/3 个有
-- `VHS_VideoInfo` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `ImageConcatMulti` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `Note _O` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `VHS_VideoInfoLoaded` —— 1/3 个有
+- `CR Prompt Text` —— 3/4 个有
+- `ImpactSwitch` —— 3/4 个有
+- `PrimitiveInt` —— 3/4 个有
+- `AIO_Preprocessor` —— 1/4 个有
+- `RH_Translator` —— 1/4 个有
 
 ## 典型参数
 

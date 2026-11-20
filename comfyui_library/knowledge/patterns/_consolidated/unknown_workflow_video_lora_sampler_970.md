@@ -3,65 +3,73 @@ name: unknown_workflow_video_lora_sampler_970
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.636
-common_nodes: [CLIPLoader, CLIPTextEncode, FL_FILM, INTConstant, ImageScaleBy, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V, PrimitiveInt, PrimitiveStringMultiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.891
+common_nodes: [AudioConcat, BasicScheduler, BatchImagesNode, BerniniConditioning, CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, FloatConstant, INTConstant, ImageFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewAny, SamplerCustom, SimpleCalculatorKJ, SimpleMath+, SplitSigmas, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VantageWanBlockSwap, easy batchAnything, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [视频生成/图生视频/图生视频_2034935535625576449.json, 视频生成/图生视频/最强 解禁版 DaSiWa i2v 图生视频_2042291022843088898.json]
+members: [平台全量/Bernini_testing_video_edit+flashvsr放大，适合小显存_2069055524376764418.json, 平台全量/Bernini_testing_video_edit循环工作流，适合小显存_2067846777507762178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_970
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生视频_2034935535625576449.json、视频生成/图生视频/最强 解禁版 DaSiWa i2v 图生视频_2042291022843088898.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/Bernini_testing_video_edit+flashvsr放大，适合小显存_2069055524376764418.json、平台全量/Bernini_testing_video_edit循环工作流，适合小显存_2067846777507762178.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AudioConcat`
+- `BasicScheduler`
+- `BatchImagesNode`
+- `BerniniConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `FL_FILM`
+- `DiffusionModelLoaderKJ`
+- `FloatConstant`
 - `INTConstant`
-- `ImageScaleBy`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageFromBatch`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PainterI2V`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `UNETLoader`
+- `PreviewAny`
+- `SamplerCustom`
+- `SimpleCalculatorKJ`
+- `SimpleMath+`
+- `SplitSigmas`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `VHS_VideoInfo`
+- `VantageWanBlockSwap`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `DuckHideNode` —— 1/2 个有
-- `HunyuanVideoFoley` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `GetImageSizeAndCount` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `WanVideoAddFlashVSRInput` —— 1/2 个有
+- `WanVideoBlockSwap` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `WanVideoDecode` —— 1/2 个有
+- `WanVideoEmptyEmbeds` —— 1/2 个有
+- `WanVideoExtraModelSelect` —— 1/2 个有
+- `WanVideoFlashVSRDecoderLoader` —— 1/2 个有
+- `WanVideoModelLoader` —— 1/2 个有
+- `WanVideoSamplerExtraArgs` —— 1/2 个有
+- `WanVideoSamplerv2` —— 1/2 个有
+- `WanVideoSchedulerv2` —— 1/2 个有
+- `WanVideoTextEncodeCached` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,9 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

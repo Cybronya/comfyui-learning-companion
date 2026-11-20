@@ -3,41 +3,34 @@ name: text_to_image_video_lora_sampler_43
 type: Text To Image
 frequency: 17
 level: strong
-coverage: 0.865471
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YuanMultiImage, YuanTool, Yuan_H3MotionContext, Yuan_H3MotionContextTrim, Yuan_MiniMaxH3Video, solarL_SaveImagesToZip]
+coverage: 0.890647
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3 全栈式短剧生成 V4.3.0（8 路参考图 + 首尾帧）_2110346834551074818.json, 视频生成/图生视频/MiniMax H3 全栈式短剧生成 V4.3.0（8 路参考图 + 首尾帧）_2110375174309765121.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成V4.3.0，8路参考图加首尾帧_2111260984777203714.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成V4.3.0｜8路参考图+首尾帧_2110694339532902402.json, 视频生成/图生视频/MiniMax H3全栈式短剧生成原始版，图生视频完整短剧生产管线_2102905558423658497.json, 视频生成/图生视频/MiniMax H3全栈短剧V4.3.0｜8路参考图加首尾帧一站式生成_2111059955322281986.json, 视频生成/图生视频/MiniMax H3全栈短剧生成V4.3.0，8路参考图加首尾帧图生视频_2110796967109554177.json, 视频生成/图生视频/全栈式短剧生成V4.2.2｜MiniMax-H3一分钟直出全节点注释_2091389821397848065.json, 视频生成/图生视频/全栈式短剧生成V4.2.2｜MiniMax-H3一分钟直出全节点注释_2091670085273481217.json, 视频生成/文生视频/MiniMax H3全栈式短剧生成V4.2.2 短剧版本直出1分钟加全节点注释_2105005940985647105.json, 视频生成/文生视频/MiniMax H3全栈式短剧生成V4.2.3 短剧版本直出1分钟加全节点注释_2105004299091795970.json, 视频生成/文生视频/MiniMax-H3全栈式短剧V4.2.2｜1分钟短剧直出｜注释齐全改起来省心_2104818075840368642.json, 视频生成/文生视频/MiniMax-H3全栈式短剧V4.2.3｜直出1分钟成片｜全节点注释好上手_2104811863312789505.json, 视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2｜一分钟视频直出全节点注释_2097849774153228290.json, 视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2｜短剧直出1分钟全节点注释_2097933098980831233.json, 视频生成/文生视频/MiniMax_H3全栈式短剧生成原始版，图生视频完整短剧生产管线_2104386806572732418.json, 视频生成/文生视频/全栈式短剧V4.2.2直出1分钟｜MiniMax-H3全节点注释_2096277568101109762.json]
+members: [视频生成/图生视频/H3加速版文生视频｜文字一键快速生成视频工作流_2094732479742701569.json, 视频生成/图生视频/H3单图生视频｜MINIMAX工作流8-20新版_2090869883713179650.json, 视频生成/图生视频/H3参考图像音频多模态输入｜视频生成工作流_2094512101560766466.json, 视频生成/图生视频/H3图生视频加速版｜快速高质量视频直出生成_2094902804635799554.json, 视频生成/图生视频/H3多图生视频_2085855343179026433.json, 视频生成/图生视频/H3多图生视频_2085861865661485058.json, 视频生成/图生视频/H3文生视频加速版｜快速直出高质量视频生成_2094509372390076418.json, 视频生成/图生视频/H3角色替换图生视频｜视频人物一键换脸替换生成_2088772291898466305.json, 视频生成/图生视频/H3角色替换图生视频｜视频人物一键换脸替换生成_2090466751896178689.json, 视频生成/图生视频/H3高保真图生视频 静止图像动态化运镜重构_2099924808850042881.json, 视频生成/图生视频/MINIMAX H3多模态生视频 参考图像视频音频全接口 视频生视频强机_2105036316378484738.json, 视频生成/图生视频/MINIMAX-H3多模态生视频｜参考图像视频音频全接口｜视频生视频强机_2104443942606561282.json, 视频生成/图生视频/Minimax H3多参音视频生成开源版（9图3视频3音频）_2086034301048680450.json, 视频生成/图生视频/MinimaxH3开源版全能多参｜视频参考标准加速集合版_2095262567538192386.json, 视频生成/图生视频/一键换脸生成新人物｜MiniMax H3角色替换图生视频 视频生视频_2090814396544151553.json, 视频生成/文生视频/MiNiMaxH3全能参考文生视频图生视频视频生视频普通加速版_2088368737501143041.json, 视频生成/文生视频/全能参考文生图生视频生视频｜MiNiMaxH3视频生成工作流_2088334930496548865.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_43
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 全栈式短剧生成 V4.3.0（8 路参考图 + 首尾帧）_2110346834551074818.json、视频生成/图生视频/MiniMax H3 全栈式短剧生成 V4.3.0（8 路参考图 + 首尾帧）_2110375174309765121.json、视频生成/图生视频/MiniMax H3全栈式短剧生成V4.3.0，8路参考图加首尾帧_2111260984777203714.json、视频生成/图生视频/MiniMax H3全栈式短剧生成V4.3.0｜8路参考图+首尾帧_2110694339532902402.json、视频生成/图生视频/MiniMax H3全栈式短剧生成原始版，图生视频完整短剧生产管线_2102905558423658497.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/H3加速版文生视频｜文字一键快速生成视频工作流_2094732479742701569.json、视频生成/图生视频/H3单图生视频｜MINIMAX工作流8-20新版_2090869883713179650.json、视频生成/图生视频/H3参考图像音频多模态输入｜视频生成工作流_2094512101560766466.json、视频生成/图生视频/H3图生视频加速版｜快速高质量视频直出生成_2094902804635799554.json、视频生成/图生视频/H3多图生视频_2085855343179026433.json…）
 
 - **类型**：Text To Image
 - **样本数**：17
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 17 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PreviewImage`
 - `PrimitiveFloat`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
@@ -47,76 +40,64 @@ source: knowledge_consolidation
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `YUAN_TXTJsonExtractor`
-- `YuanMultiImage`
-- `YuanTool`
-- `Yuan_H3MotionContext`
-- `Yuan_H3MotionContextTrim`
-- `Yuan_MiniMaxH3Video`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioConcat` —— 15/17 个有
-- `EmptyAudio` —— 15/17 个有
-- `If ANY execute A else B` —— 15/17 个有
-- `Int` —— 15/17 个有
-- `easy batchAnything` —— 15/17 个有
-- `easy forLoopEnd` —— 15/17 个有
-- `easy forLoopStart` —— 15/17 个有
-- `easy isNone` —— 15/17 个有
-- `easy mathInt` —— 15/17 个有
-- `孤海注释` —— 15/17 个有
-- `PrimitiveInt` —— 12/17 个有
-- `YUAN_TXTJsonSwitch` —— 12/17 个有
-- `YUAN_TXTPreviewContent` —— 12/17 个有
-- `YuanAudioList` —— 12/17 个有
-- `YuanAudioSplit` —— 12/17 个有
-- `Yuan_H3Upscale3D` —— 12/17 个有
-- `SaveImage` —— 11/17 个有
-- `CR Text` —— 10/17 个有
-- `easy convertAnything` —— 6/17 个有
-- `ShowText|pysssss` —— 5/17 个有
-- `VAEDecodeAudio` —— 5/17 个有
-- `YUAN_TXTParagraphSplitter` —— 5/17 个有
-- `YUAN_TXTShotReplace` —— 5/17 个有
-- `YuanPrimitive` —— 5/17 个有
-- `Yuan_H3MotionContextLoadLatent` —— 5/17 个有
-- `Yuan_RTXVideoUpscaleH3` —— 5/17 个有
-- `MiniMaxH3ResolutionSelector` —— 3/17 个有
-- `GetNode` —— 2/17 个有
-- `LoraLoaderBypassModelOnly` —— 2/17 个有
-- `ManualSigmas` —— 2/17 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/17 个有
-- `SetNode` —— 2/17 个有
-- `TextGenerate` —— 2/17 个有
-- `EmptyImage` —— 1/17 个有
-- `LoadImage` —— 1/17 个有
+- `LoadImage` —— 16/17 个有
+- `BasicScheduler` —— 15/17 个有
+- `KSamplerSelect` —— 15/17 个有
+- `LoraLoaderBypassModelOnly` —— 14/17 个有
+- `LoadAudio` —— 12/17 个有
+- `MiniMaxH3ReferenceToVideo` —— 12/17 个有
+- `VAEDecodeAudio` —— 12/17 个有
+- `VHS_LoadVideo` —— 12/17 个有
+- `孤海注释` —— 12/17 个有
+- `SaveImage` —— 10/17 个有
+- `FlashVSRNode` —— 9/17 个有
+- `Sleep` —— 9/17 个有
+- `PainterVRAM` —— 6/17 个有
+- `PathchSageAttentionKJ` —— 6/17 个有
+- `MiniMaxH3AVDecodeT8` —— 5/17 个有
+- `MiniMaxH3AudioConditioningT8` —— 5/17 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/17 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 5/17 个有
+- `AudioCrop` —— 3/17 个有
+- `CreateVideo` —— 3/17 个有
+- `MiniMaxH3ImageToVideo` —— 3/17 个有
+- `SaveVideo` —— 3/17 个有
+- `忽略多组孤海` —— 3/17 个有
+- `EmptyImage` —— 2/17 个有
+- `PreviewImage` —— 2/17 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/17 个有
+- `PreviewAny` —— 1/17 个有
+- `RHLLMChatNode` —— 1/17 个有
+- `RH_LLMAPI_Pro_Node` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | 80 - 80 | 17 | 100% |
+| 高度 | 80 | 80 - 80 | 17 | 100% |
 | 采样步数 | 4 | 4 - 4 | 17 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 17 | 100% |
 | 采样算法 | er_sde | - | 17 | 100% |
 | 调度器 | beta | - | 17 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
-| 宽度 | 80 | 80 - 80 | 17 | 100% |
-| 高度 | 80 | 80 - 80 | 17 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 22/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
+- 宽度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，17 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，17 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，17 个样本，一致性 100%
 - 调度器 最常用 beta，17 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，17 个样本，取值集中（一致性 100%）
-- 高发问题（22/17 个样本）：Steps较低可能导致细节不足
+- 高发问题（18/17 个样本）：Steps较低可能导致细节不足

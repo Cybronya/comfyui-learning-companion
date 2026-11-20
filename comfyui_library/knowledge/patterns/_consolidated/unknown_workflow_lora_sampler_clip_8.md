@@ -1,80 +1,99 @@
 ---
 name: unknown_workflow_lora_sampler_clip_8
 type: Unknown Workflow
-frequency: 32
+frequency: 39
 level: moderate
-coverage: 0.869375
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, FluxKontextImageScale, GetImageSize+, ImpactInt, ImpactStringSelector, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingFlux, Note Plus (mtb), PatchModelPatcherOrder, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SimpleMath+, SplitStringByDelimiter, VAEDecode, VAEEncode, VAELoader, easy showAnything]
-problems: []
+coverage: 0.762205
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, INTConstant, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, SaveImage, UNETLoader, VAEDecode, VAELoader, WanFirstLastFrameToVideo, WanImageToVideo, easy cleanGpuUsed, easy promptLine, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/44wannengxiutu_2050090286637957121.json, 图片生成/图生图/Kontext  万物转3D建模_1946449711450742786.json, 图片生成/图生图/Kontext  人物一键化妆_1946464517763293186.json, 图片生成/图生图/Kontext  人物一键卸装_1946464411671228417.json, 图片生成/图生图/Kontext  人物转高科技机器人_1946464324572311553.json, 图片生成/图生图/Kontext  照片增加真实感_1946464375696683010.json, 图片生成/图生图/Kontext  照片转电影画风_1946464341873815553.json, 图片生成/图生图/Kontext  照片转电影质感_1946464358019031041.json, 图片生成/图生图/Kontext  高质量 2D转真人_1946449800739086337.json, 图片生成/图生图/Kontext 一键模特人物提取服装_1946448768716664833.json, 图片生成/图生图/Kontext 万物转刺绣_1946449317751058434.json, 图片生成/图生图/Kontext 万物转卡通三视图_1946449110914490369.json, 图片生成/图生图/Kontext 万物转国画_1946449667493097473.json, 图片生成/图生图/Kontext 万物转手工刺绣_1946449204686544897.json, 图片生成/图生图/Kontext 万物转昭和动漫风格_1946449292790755330.json, 图片生成/图生图/Kontext 万物转皮克斯效果_1946449589136449537.json, 图片生成/图生图/Kontext 万物转线稿图_1946449476006342658.json, 图片生成/图生图/Kontext 照片转中式漫画_1946464453496827906.json, 图片生成/图生图/Kontext 高质量 动漫转真人_1946449239335690242.json, 图片生成/图生图/Kontext 高质量_1946444813908762626.json, 图片生成/图生图/Kontext 高质量万物转冰淇淋_1946445665753788417.json, 图片生成/图生图/Kontext 高质量万物转粒子效果_1946445504071757826.json, 图片生成/图生图/Kontext 高质量人物转皮克斯_1946449257848008705.json, 图片生成/图生图/Kontext 高质量商品一键换背景_1946449074598866946.json, 图片生成/图生图/Kontext 高质量老照片修复_1943257162980204546.json, 图片生成/图生图/Kontext 高质量转动漫风格_1946464307133734914.json, 图片生成/图生图/Kontext万物转手稿三视图_1946449760654123010.json, 图片生成/图生图/Kontext万物转搞笑漫画_1946449541965967362.json, 图片生成/图生图/Kontext卡通转真人_1946449434163965953.json, 图片生成/图生图/Kontext真人转卡通效果_1946449625446539266.json, 图片生成/图生图/万物一键转青花瓷_1946464532015538178.json, 图片生成/图生图/🥎Kontext 高质量22个lora一键切换 无忧版🤹_1943187209547628545.json]
+members: [图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2008567222695890946.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2012074616008744962.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2042813608714838018.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2056898489606561793.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057016107042697217.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057018113778077697.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057018408075612162.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057383574705369089.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2060337488744501249.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2060351206266068994.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2064895380512399362.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2066034905758396417.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2066035028651499522.json, 图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2067983928933306370.json, 图片生成/图生图/Qwen3VL+Next+Scene（自动分镜）+视频生成+V2版_2019605249354375169.json, 图片生成/图生图/Qwen3VL+NextScene（自动分镜）+视频生成V3版_2029376489484984322.json, 图片生成/图生图/Work-Fisher-自动产品多角度+图生_首尾帧_1984625142850535426.json, 图片生成/图生图/Work-Fisher-自动产品多角度+图生_首尾帧_1985014629644603394.json, 图片生成/图生图/z-image分镜+itov_2005154445770063873.json, 图片生成/图生图/动漫短剧AI视频制作神器_2027947657850785793.json, 图片生成/图生图/图生图---Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2049378628063989761.json, 图片生成/图生图/图生图---Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2049387817570148353.json, 图片生成/图生图/图生图---Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2079760812440383490.json, 图片生成/图生图/图生图---Work-Fisher-Edit Next Scene（自动分镜）-V1版_2049385218078937090.json, 图片生成/图生图/图生图（自动分镜）电影级+视频生成_2074200565537656834.json, 图片生成/图生图/自动分镜_2064182736386088962.json, 图片生成/图生图/超好用🔥自动分镜+视频生成-最新版_2056557118894989314.json, 图片生成/文生图/Qwen3VL+Next Scene（自动分镜_1985901390851710978.json, 平台全量/V2 升级版｜Qwen3VL NextScene 自动分镜做视频_2086786768162082817.json, 平台全量/Work-Fisher_Qwen3VL+Next Scene（自动分镜）+视频生成-V2版(彩图版）_1985670360953757698.json, 平台全量/Work-Fisher_Qwen3VL+Next Scene（自动分镜）+视频生成-V2版_1985662544994082817.json, 数字人/数字人/自动分镜工作流_2029877585181675521.json, 视频生成/图生视频/Qwen Edit+Next Scene（自动分镜）wan2.2 图生视频 人物模特全视图  人物角_2009447313822982146.json, 视频生成/图生视频/Qwen3VL+Next Scene（自动分镜图）+自动视频生成 工作流_2049416361801158657.json, 视频生成/图生视频/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2009894943287939073.json, 视频生成/图生视频/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2064716899979718657.json, 视频生成/图生视频/分镜出图 wan2.2 图生视频 首尾帧生视频+人物多角度生成 Qwen3VL+Next Scene_2009509747891904514.json, 视频生成/图生视频/自动分镜+wan2.2首尾帧视频生成_2062483360198516737.json, 视频生成/图生视频/超好用🔥自动分镜+视频生成-最新版_2056237842430480386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_8
 
-> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/反推提示词/44wannengxiutu_2050090286637957121.json、图片生成/图生图/Kontext  万物转3D建模_1946449711450742786.json、图片生成/图生图/Kontext  人物一键化妆_1946464517763293186.json、图片生成/图生图/Kontext  人物一键卸装_1946464411671228417.json、图片生成/图生图/Kontext  人物转高科技机器人_1946464324572311553.json…）
+> 由 `engine/knowledge_consolidation` 从 39 个 workflow 归纳得出（图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2008567222695890946.json、图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2012074616008744962.json、图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2042813608714838018.json、图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2056898489606561793.json、图片生成/图生图/Qwen3VL+Next Scene（自动分镜）+视频生成 V2版_2057016107042697217.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：32
+- **样本数**：39
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 32 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 39 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
-- `GetImageSize+`
-- `ImpactInt`
-- `ImpactStringSelector`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `INTConstant`
+- `Int`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
-- `Note Plus (mtb)`
-- `PatchModelPatcherOrder`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SimpleMath+`
-- `SplitStringByDelimiter`
+- `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
+- `WanFirstLastFrameToVideo`
+- `WanImageToVideo`
+- `easy cleanGpuUsed`
+- `easy promptLine`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 31/32 个有
-- `Image Comparer (rgthree)` —— 31/32 个有
-- `ImageConcanate` —— 31/32 个有
-- `SeedVR2` —— 31/32 个有
-- `TeaCache` —— 31/32 个有
-- `UnetLoaderGGUF` —— 31/32 个有
-- `ImageScaleBy` —— 30/32 个有
-- `LayerUtility: ImageMaskScaleAs` —— 30/32 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 30/32 个有
-- `MathExpression|pysssss` —— 30/32 个有
-- `PrimitiveFloat` —— 30/32 个有
-- `easy cleanGpuUsed` —— 30/32 个有
-- `PreviewImage` —— 1/32 个有
-- `UNETLoader` —— 1/32 个有
+- `Fast Groups Bypasser (rgthree)` —— 38/39 个有
+- `RIFE VFI` —— 38/39 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 38/39 个有
+- `VHS_VideoCombine` —— 38/39 个有
+- `CLIPVisionEncode` —— 37/39 个有
+- `CLIPVisionLoader` —— 37/39 个有
+- `DF_Integer` —— 37/39 个有
+- `ImageResizeKJv2` —— 37/39 个有
+- `SimpleMath+` —— 37/39 个有
+- `WanMoeKSampler` —— 37/39 个有
+- `CR Prompt Text` —— 36/39 个有
+- `CheckpointLoaderSimple` —— 36/39 个有
+- `ProcessString` —— 36/39 个有
+- `easy showAnything` —— 36/39 个有
+- `JWStringConcat` —— 34/39 个有
+- `Qwen3_VQA` —— 34/39 个有
+- `Text Multiline` —— 34/39 个有
+- `easy clearCacheAll` —— 34/39 个有
+- `DifferentialDiffusion` —— 33/39 个有
+- `ImageLoader` —— 2/39 个有
+- `KSamplerAdvanced` —— 2/39 个有
+- `ModelSamplingSD3` —— 2/39 个有
+- `PreviewImage` —— 2/39 个有
+- `EmptySD3LatentImage` —— 1/39 个有
+- `ImageFromBatch+` —— 1/39 个有
+- `ModelSamplingAuraFlow` —— 1/39 个有
+- `TT_img_enc_v2` —— 1/39 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 8 | 34 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 6 | 39 | 6% |
+| 采样算法 | sa_solver | - | 39 | 87% |
+| 调度器 | beta | - | 39 | 87% |
+| 重绘幅度 | 1 | 1 - 1 | 34 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 38/39 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 8，34 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 6，39 个样本，取值分散，一致性仅 6%
+- 采样算法 最常用 sa_solver，39 个样本，一致性 87%
+- 调度器 最常用 beta，39 个样本，一致性 87%
+- 重绘幅度 中位数 1，观测区间 1 - 1，34 个样本，取值集中（一致性 100%）
+- 高发问题（38/39 个样本）：Steps较低可能导致细节不足

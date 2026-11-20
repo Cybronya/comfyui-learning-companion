@@ -3,50 +3,55 @@ name: unknown_workflow_video_sampler_vae_140
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.99075
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.93375
+common_nodes: [VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/图生视频——Wan2.2  SmoothMix_2041409089414107137.json, 视频生成/图生视频/图生视频——Wan2.2  SmoothMix_2042073160241123329.json, 视频生成/文生视频/Remix 1.0新模型文生视频_1977188003040907266.json, 视频生成/文生视频/wan2.2 FP8下 最低显内存使用_1953110455269134338.json]
+members: [图片生成/图生图/【遇见AI】wan2.1 phantom多角色一致性_2066436467760652289.json, 图片生成/文生图/【遇见AI】wan2.1文生视频基础流，带加速_2061013216846770177.json, 视频生成/图生视频/phantom视频界的万物迁移_1942392915929010177.json, 视频生成/图生视频/【遇见AI】wan2.1 skyreels V3 R2V多图参考模型_2067524642499289090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_140
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/图生视频——Wan2.2  SmoothMix_2041409089414107137.json、视频生成/图生视频/图生视频——Wan2.2  SmoothMix_2042073160241123329.json、视频生成/文生视频/Remix 1.0新模型文生视频_1977188003040907266.json、视频生成/文生视频/wan2.2 FP8下 最低显内存使用_1953110455269134338.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/【遇见AI】wan2.1 phantom多角色一致性_2066436467760652289.json、图片生成/文生图/【遇见AI】wan2.1文生视频基础流，带加速_2061013216846770177.json、视频生成/图生视频/phantom视频界的万物迁移_1942392915929010177.json、视频生成/图生视频/【遇见AI】wan2.1 skyreels V3 R2V多图参考模型_2067524642499289090.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTeaCache`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 3/4 个有
+- `ImageResizeKJ` —— 3/4 个有
 - `LoadImage` —— 3/4 个有
-- `WanVideoImageToVideoEncode` —— 3/4 个有
-- `WanVideoSetRadialAttention` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
-- `WanVideoEmptyEmbeds` —— 2/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `Seed Generator` —— 1/4 个有
-- `WanVideoApplyNAG` —— 1/4 个有
-- `WanVideoLoraSelect` —— 1/4 个有
-- `WanVideoSetBlockSwap` —— 1/4 个有
-- `WanVideoSetLoRAs` —— 1/4 个有
+- `PreviewImage` —— 3/4 个有
+- `WanVideoEncode` —— 3/4 个有
+- `WanVideoLoraSelect` —— 3/4 个有
+- `WanVideoPhantomEmbeds` —— 3/4 个有
+- `WanVideoSetBlockSwap` —— 3/4 个有
+- `WanVideoSetLoRAs` —— 3/4 个有
+- `WanVideoTextEncodeCached` —— 3/4 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
+- `GIMMVFI_interpolate` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LoadWanVideoT5TextEncoder` —— 1/4 个有
+- `WanVideoEmptyEmbeds` —— 1/4 个有
+- `WanVideoTextEncode` —— 1/4 个有
+- `easy imageRemBg` —— 1/4 个有
 
 ## 典型参数
 

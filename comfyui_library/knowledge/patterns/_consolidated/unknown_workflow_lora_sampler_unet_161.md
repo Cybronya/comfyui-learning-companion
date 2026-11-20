@@ -3,59 +3,100 @@ name: unknown_workflow_lora_sampler_unet_161
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8666
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.4304
+common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, ColorMatchV2, ComfyMathExpression, ComfySwitchNode, CreateVideo, GetImageRangeFromBatch, GetNode, INTConstant, Image Batch, ImageAddNoise, ImageFromBatch, ImageScale, KSamplerSelect, LLAIDownloadVideo, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3LoadLatent, MiniMaxH3LoopTrim, MiniMaxH3ReferenceToVideo, MiniMaxH3SaveLatent, MiniMaxH3SigmaShift, MiniMaxH3VideoExtender, MiniMaxH3VideoMerge, ModelAttentionBackend, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, ShowAnything|Mie, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy minimaxH3AudioLock]
 problems: []
 missing: []
-members: [视频生成/图生视频/超自然超细节-H3的服装展示(dasiwa)_2101210281803337729.json, 视频生成/文生视频/Dasiwa+H3 taomate 3步加速 中远距离不崩脸_2101450830070247426.json, 视频生成/文生视频/DsiwaV2 +selflift二采+小脸优化_2101450792984207362.json, 视频生成/文生视频/H3 dasiwaV3+高动态支持+特殊运镜_2107756287479074818.json, 视频生成/文生视频/H3 dasiwaV3+高动态支持+特殊运镜_2108505430593986562.json]
+members: [图片生成/图生图/Minimax多帧插入或者视频续写_2114255700733022209.json, 图片生成/图生图/Minimax多帧插入或者视频续写_2115283492492890113.json, 平台全量/Minimax多帧插入或者视频续写_2117406476267507714.json, 视频生成/图生视频/Minimax多帧插入或者视频续写_2114880369383272450.json, 视频生成/视频生视频/Minimax多帧插入或者视频续写_2102590341739274241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_161
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/超自然超细节-H3的服装展示(dasiwa)_2101210281803337729.json、视频生成/文生视频/Dasiwa+H3 taomate 3步加速 中远距离不崩脸_2101450830070247426.json、视频生成/文生视频/DsiwaV2 +selflift二采+小脸优化_2101450792984207362.json、视频生成/文生视频/H3 dasiwaV3+高动态支持+特殊运镜_2107756287479074818.json、视频生成/文生视频/H3 dasiwaV3+高动态支持+特殊运镜_2108505430593986562.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Minimax多帧插入或者视频续写_2114255700733022209.json、图片生成/图生图/Minimax多帧插入或者视频续写_2115283492492890113.json、平台全量/Minimax多帧插入或者视频续写_2117406476267507714.json、视频生成/图生视频/Minimax多帧插入或者视频续写_2114880369383272450.json、视频生成/视频生视频/Minimax多帧插入或者视频续写_2102590341739274241.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `AudioConcat`
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
+- `ColorMatchV2`
 - `ComfyMathExpression`
+- `ComfySwitchNode`
 - `CreateVideo`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `INTConstant`
+- `Image Batch`
+- `ImageAddNoise`
+- `ImageFromBatch`
+- `ImageScale`
 - `KSamplerSelect`
+- `LLAIDownloadVideo`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3LoadLatent`
+- `MiniMaxH3LoopTrim`
 - `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SaveLatent`
 - `MiniMaxH3SigmaShift`
-- `MiniMaxLowVRAMAttention`
-- `ModelPreviewOverrideKJ`
+- `MiniMaxH3VideoExtender`
+- `MiniMaxH3VideoMerge`
+- `ModelAttentionBackend`
+- `PrimitiveBoolean`
 - `PrimitiveFloat`
+- `PrimitiveInt`
 - `PrimitiveStringMultiline`
-- `ResolutionSelector`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveVideo`
+- `SetNode`
+- `ShowAnything|Mie`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `easy minimaxH3AudioLock`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 4/5 个有
-- `SelfLiftAvatarH3Sampler` —— 4/5 个有
-- `easy seed` —— 4/5 个有
-- `MiniMaxH3TurboLoRA` —— 3/5 个有
-- `LoadAudio` —— 2/5 个有
-- `BasicGuider` —— 1/5 个有
-- `H3SigmaRefiner` —— 1/5 个有
-- `LoraLoaderBypassModelOnly` —— 1/5 个有
-- `RandomNoise` —— 1/5 个有
-- `SamplerCustomAdvanced` —— 1/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `AnyIsEmpty` —— 3/5 个有
+- `AudioInfo` —— 3/5 个有
+- `EmptyAudio` —— 3/5 个有
+- `Float` —— 3/5 个有
+- `Int` —— 3/5 个有
+- `VHS_LoadVideo` —— 3/5 个有
+- `ArchAi3D_Any_Index_Switch` —— 2/5 个有
+- `AudioCrop` —— 2/5 个有
+- `BlockSparseAttention` —— 2/5 个有
+- `ColorTransfer` —— 2/5 个有
+- `ComfyNumberConvert` —— 2/5 个有
+- `ConditioningZeroOut` —— 2/5 个有
+- `ExtendIntermediateSigmas` —— 2/5 个有
+- `GetVideoComponents` —— 2/5 个有
+- `ImageBatchMulti` —— 2/5 个有
+- `LoadVideo` —— 2/5 个有
+- `MiniMaxH3AudioGuideFeather` —— 2/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/5 个有
+- `MiniMaxLowVRAMAttention` —— 2/5 个有
+- `NumberClamp` —— 2/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `SelfLiftAvatarH3Sampler` —— 2/5 个有
+- `VideoFrameSample` —— 2/5 个有
+- `VideoTemporalCrop` —— 2/5 个有
+- `获取视频信息` —— 2/5 个有
+- `PreviewImage` —— 1/5 个有
+- `VHS_VideoInfo` —— 1/5 个有
 
 ## 典型参数
 

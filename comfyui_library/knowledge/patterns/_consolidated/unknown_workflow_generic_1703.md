@@ -3,39 +3,36 @@ name: unknown_workflow_generic_1703
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [CR Prompt Text, CR Text, CR Text Concatenate, LoadImage, PreviewImage, RHHiddenNodes, RH_RhartImageG2ImageToImage, SaveImage, SaveVideo]
+coverage: 0.6895
+common_nodes: [GeminiImage2Node, Image Comparer (rgthree), LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/【3.1超值】带货视频  超低价  适合 口播短视频 带货讲解_2080302190673092610.json, 视频生成/图生视频/【超值】带货视频  低至0.04元_秒  全自动  带货视频生成_2076026308588560386.json]
+members: [图片生成/图生图/古画、古人转真实_2005476822643081217.json, 图片生成/图生图/服装一键穿搭 -最强一致性-模特裂变_2007659155338829825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1703
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【3.1超值】带货视频  超低价  适合 口播短视频 带货讲解_2080302190673092610.json、视频生成/图生视频/【超值】带货视频  低至0.04元_秒  全自动  带货视频生成_2076026308588560386.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/古画、古人转真实_2005476822643081217.json、图片生成/图生图/服装一键穿搭 -最强一致性-模特裂变_2007659155338829825.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text`
-- `CR Text Concatenate`
+- `GeminiImage2Node`
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `RH_RhartImageG2ImageToImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoGImageToVideo` —— 1/2 个有
-- `RH_Veo3_Image2Video` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

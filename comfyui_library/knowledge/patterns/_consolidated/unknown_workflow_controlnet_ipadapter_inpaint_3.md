@@ -3,71 +3,98 @@ name: unknown_workflow_controlnet_ipadapter_inpaint_3
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.816
-common_nodes: [Apply ControlNet Stack, Blur, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, Control Net Stacker, ControlNetApplyAdvanced, ControlNetLoader, Cut By Mask, IPAdapterFaceID, IPAdapterInsightFaceLoader, IPAdapterModelLoader, Image To Mask, Images to RGB, InpaintPreprocessor, KSampler (Efficient), LayerMask: PersonMaskUltra V2, LayerUtility: ImageShift, LoadImage, Mask Morphology, Mask To Region, MaskToImage, Paste By Mask, PreviewImage, ReActorFaceSwap, SaveImage, SetLatentNoiseMask, VAEEncode]
+coverage: 0.912
+common_nodes: [ApplyInstantID, ApplyPulid, Bounded Image Crop with Mask, CLIPTextEncode, CR Color Panel, CR Text, CheckpointLoaderSimple, ColorMatch, ConstrainImage|pysssss, CropMask, DiffControlNetLoader, FaceAnalysisModels, FaceBoundingBox, GetNode, GrowMask, IPAdapterFaceID, IPAdapterUnifiedLoaderFaceID, ImageColorMatch+, ImageCompositeMasked, ImageGenResolutionFromImage, ImageResize+, ImageToMask, ImpactInt, InpaintModelConditioning, InstantIDFaceAnalysis, InstantIDModelLoader, KSampler, LayerMask: MaskEdgeUltraDetail V2, LayerMask: PersonMaskUltra, LayerUtility: CropBoxResolve, LayerUtility: CropByMask V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoader, MaskBlur+, PulidEvaClipLoader, PulidInsightFaceLoader, PulidModelLoader, RepeatLatentBatch, RescaleCFG, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SaveImage, Seed_, SetNode, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/一键换模特(保留服装)_1929902235998916610.json, 图片生成/图生图/一键模特换脸（保留衣服）_1902522771056832514.json]
+members: [图片生成/图生图/AI智能换脸，创意无限可能！换脸_面部迁移_1947963517098962945.json, 图片生成/图生图/换脸模型V1.0_1904456760671834114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_ipadapter_inpaint_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键换模特(保留服装)_1929902235998916610.json、图片生成/图生图/一键模特换脸（保留衣服）_1902522771056832514.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/AI智能换脸，创意无限可能！换脸_面部迁移_1947963517098962945.json、图片生成/图生图/换脸模型V1.0_1904456760671834114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply ControlNet Stack`
-- `Blur`
+- `ApplyInstantID`
+- `ApplyPulid`
+- `Bounded Image Crop with Mask`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
+- `CR Color Panel`
+- `CR Text`
 - `CheckpointLoaderSimple`
-- `Control Net Stacker`
-- `ControlNetApplyAdvanced`
-- `ControlNetLoader`
-- `Cut By Mask`
+- `ColorMatch`
+- `ConstrainImage|pysssss`
+- `CropMask`
+- `DiffControlNetLoader`
+- `FaceAnalysisModels`
+- `FaceBoundingBox`
+- `GetNode`
+- `GrowMask`
 - `IPAdapterFaceID`
-- `IPAdapterInsightFaceLoader`
-- `IPAdapterModelLoader`
-- `Image To Mask`
-- `Images to RGB`
-- `InpaintPreprocessor`
-- `KSampler (Efficient)`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: ImageShift`
+- `IPAdapterUnifiedLoaderFaceID`
+- `ImageColorMatch+`
+- `ImageCompositeMasked`
+- `ImageGenResolutionFromImage`
+- `ImageResize+`
+- `ImageToMask`
+- `ImpactInt`
+- `InpaintModelConditioning`
+- `InstantIDFaceAnalysis`
+- `InstantIDModelLoader`
+- `KSampler`
+- `LayerMask: MaskEdgeUltraDetail V2`
+- `LayerMask: PersonMaskUltra`
+- `LayerUtility: CropBoxResolve`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: RestoreCropBox`
 - `LoadImage`
-- `Mask Morphology`
-- `Mask To Region`
-- `MaskToImage`
-- `Paste By Mask`
-- `PreviewImage`
-- `ReActorFaceSwap`
+- `LoraLoader`
+- `MaskBlur+`
+- `PulidEvaClipLoader`
+- `PulidInsightFaceLoader`
+- `PulidModelLoader`
+- `RepeatLatentBatch`
+- `RescaleCFG`
+- `SUPIR_conditioner`
+- `SUPIR_decode`
+- `SUPIR_encode`
+- `SUPIR_first_stage`
+- `SUPIR_model_loader_v2`
+- `SUPIR_sample`
 - `SaveImage`
-- `SetLatentNoiseMask`
-- `VAEEncode`
+- `Seed_`
+- `SetNode`
+- `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `OpenposePreprocessor` —— 1/2 个有
+- `BboxDetectorCombined_v2` —— 1/2 个有
+- `FastFilmGrain` —— 1/2 个有
+- `ImageSharpen` —— 1/2 个有
+- `ImpactImageBatchToImageList` —— 1/2 个有
+- `InpaintCrop` —— 1/2 个有
+- `InpaintStitch` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `UltralyticsDetectorProvider` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 1 | - | 2 | 100% |
-| 采样步数 | 30 | - | 2 | 67% |
-| Prompt 约束强度(CFG) | 3 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 100% |
+| 采样步数 | 20 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 2 | - | 2 | 100% |
+| 采样算法 | uni_pc_bh2 | - | 2 | 100% |
 | 调度器 | karras | - | 2 | 100% |
-| 重绘幅度 | 0.3 | - | 2 | 67% |
+| 重绘幅度 | 1 | - | 2 | 100% |
+| LoRA 模型强度 | 0.9 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -75,10 +102,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 30，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
+- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc_bh2，2 个样本，一致性 100%
 - 调度器 最常用 karras，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.3，样本不足，未给区间，2 个样本
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.9，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

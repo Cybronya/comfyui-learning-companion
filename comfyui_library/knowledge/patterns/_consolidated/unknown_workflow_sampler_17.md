@@ -1,40 +1,52 @@
 ---
 name: unknown_workflow_sampler_17
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.7795
-common_nodes: [LayeredControlV2Sampler, LoadImage, LoadLayeredControlV2Pipe, SaveImage]
+coverage: 0.732286
+common_nodes: [Bjornulf_ShowInt, CR Overlay Text, CR Text, Float, GetImageSize, ImageCropMerge, ImageScale, ImageScaleBy, Int, LayerColor: Brightness & Contrast, LayerMask: MaskBoxDetect, LayerUtility: ColorImage V2, LoadImage, MaskToImage, PreviewImage, SaveImage, SimpleMath+, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen layer文本控制_2031980500822265858.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手动遮罩模式)_2030199845872476162.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红色保留）_2030193673991888898.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json, 图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-提示词控制)_2030210973105135617.json, 图片生成/图生图/龚老师的PPT页面分层_2051236518982897666.json]
+members: [图片生成/图生图/Flux TExt 文字修改 支持中文、英文_1945386726137450498.json, 图片生成/图生图/FluxText改字（支持中文）_1942630895235084289.json, 图片生成/图生图/海报修改文字｜Flux Text_1948239404558102530.json, 平台全量/FluxText修改中英文字_1944391856266596354.json, 平台全量/FluxText改字（支持中文）_2072887133530050562.json, 平台全量/FluxText改字（支持中文）_2072888217279488001.json, 平台全量/FluxText改字（支持中文）_2072890209276088321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen layer文本控制_2031980500822265858.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手动遮罩模式)_2030199845872476162.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红色保留）_2030193673991888898.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-手画遮罩模式-红黄消除）_2030195256293068802.json、图片生成/图生图/Qwen-Image-Layered-Control-V2(图像分层控制-提示词控制)_2030210973105135617.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux TExt 文字修改 支持中文、英文_1945386726137450498.json、图片生成/图生图/FluxText改字（支持中文）_1942630895235084289.json、图片生成/图生图/海报修改文字｜Flux Text_1948239404558102530.json、平台全量/FluxText修改中英文字_1944391856266596354.json、平台全量/FluxText改字（支持中文）_2072887133530050562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LayeredControlV2Sampler`
+全部 7 个 workflow 都包含：
+- `Bjornulf_ShowInt`
+- `CR Overlay Text`
+- `CR Text`
+- `Float`
+- `GetImageSize`
+- `ImageCropMerge`
+- `ImageScale`
+- `ImageScaleBy`
+- `Int`
+- `LayerColor: Brightness & Contrast`
+- `LayerMask: MaskBoxDetect`
+- `LayerUtility: ColorImage V2`
 - `LoadImage`
-- `LoadLayeredControlV2Pipe`
+- `MaskToImage`
+- `PreviewImage`
 - `SaveImage`
+- `SimpleMath+`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `Mask To Image (mtb)` —— 3/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/6 个有
+- `FLUXTextGenerate` —— 6/7 个有
+- `FLUXTextLoad` —— 6/7 个有
+- `FluxTextPipeLine` —— 1/7 个有
+- `FluxTextSampler` —— 1/7 个有
 
 ## 典型参数
 

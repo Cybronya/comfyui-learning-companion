@@ -3,31 +3,39 @@ name: unknown_workflow_generic_1491
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Text, LoadImage, RH_Jimeng4_Image2Image, SaveImage, easy seed]
+coverage: 0.623
+common_nodes: [CLIPLoader, GetVideoComponents, LoadAudio, LoadImage, LoadVideo, PreviewAny, TextGenerate]
 problems: []
 missing: []
-members: [图片生成/图生图/即梦4.5豆包seedream4.5(单图) 0.25元_次_1997917482713251841.json, 图片生成/图生图/即梦4.5豆包seedream4.5(双图) 0.25元_次_1997841962361401345.json]
+members: [comfyui-workflow-templates-json/llm_gemma4_text_gen.json, 图片生成/反推提示词/图片、视频、声音反推提示词_gemma4_2063052146509176834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1491
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4.5豆包seedream4.5(单图) 0.25元_次_1997917482713251841.json、图片生成/图生图/即梦4.5豆包seedream4.5(双图) 0.25元_次_1997841962361401345.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/llm_gemma4_text_gen.json、图片生成/反推提示词/图片、视频、声音反推提示词_gemma4_2063052146509176834.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `CLIPLoader`
+- `GetVideoComponents`
+- `LoadAudio`
 - `LoadImage`
-- `RH_Jimeng4_Image2Image`
-- `SaveImage`
-- `easy seed`
+- `LoadVideo`
+- `PreviewAny`
+- `TextGenerate`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 

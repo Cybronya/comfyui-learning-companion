@@ -1,78 +1,60 @@
 ---
 name: unknown_workflow_video_sampler_vae_72
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.639143
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.88125
+common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoGetClosestBucketSize, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageScale, LoadImage, Primitive integer [Crystools], Primitive string [Crystools], SetNode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/wanvideo_infinitetalk_单人工作流_1958061014984118274.json, 视频生成/图生视频/wanvideo_infinitetalk_双人工作流_1958075798320197633.json, 视频生成/图生视频/wanvideo_infinitetalk_图片转视频单人工作流_2014174614657703937.json, 视频生成/图生视频/万象视频MultiTalk——MV制造机_1943647883407360002.json, 视频生成/图生视频/数字人-图片-infinite 【720P+高清+声音克隆】_1958081939452342273.json, 视频生成/图生视频/数字人-文本驱动-图片+视频+声音克隆】_1989952363156918273.json, 音频生成/音频生成/数字人_视频_infinite【720P+高清+声音克隆】_1984533428567687169.json]
+members: [视频生成/图生视频/fixed最新混元图生视频_2011608046820134914.json, 视频生成/图生视频/图生视频 混元版_2041428749719179265.json, 视频生成/图生视频/图生视频+视频生视频≥10秒_2048594505284198402.json, 视频生成/图生视频/图生视频+视频生视频≥10秒_2052561498752471042.json, 视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版) (4)_2054369620169117698.json, 视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版)_1903462104978853889.json, 视频生成/图生视频/屏幕伸手牵手3D互动抖音热点视频图生视频_2067422675328389122.json, 视频生成/图生视频/最新混元图生视频fixed版(KJ版)_1898335155923439618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_72
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/wanvideo_infinitetalk_单人工作流_1958061014984118274.json、视频生成/图生视频/wanvideo_infinitetalk_双人工作流_1958075798320197633.json、视频生成/图生视频/wanvideo_infinitetalk_图片转视频单人工作流_2014174614657703937.json、视频生成/图生视频/万象视频MultiTalk——MV制造机_1943647883407360002.json、视频生成/图生视频/数字人-图片-infinite 【720P+高清+声音克隆】_1958081939452342273.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/fixed最新混元图生视频_2011608046820134914.json、视频生成/图生视频/图生视频 混元版_2041428749719179265.json、视频生成/图生视频/图生视频+视频生视频≥10秒_2048594505284198402.json、视频生成/图生视频/图生视频+视频生视频≥10秒_2052561498752471042.json、视频生成/图生视频/图生视频+视频生视频≥10秒——混元fixed版(KJ版) (4)_2054369620169117698.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetNode`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+全部 8 个 workflow 都包含：
+- `DownloadAndLoadHyVideoTextEncoder`
+- `GetImageSizeAndCount`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoEnhanceAVideo`
+- `HyVideoGetClosestBucketSize`
+- `HyVideoI2VEncode`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTorchCompileSettings`
+- `HyVideoVAELoader`
+- `ImageScale`
+- `LoadImage`
+- `Primitive integer [Crystools]`
+- `Primitive string [Crystools]`
 - `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoT5TextEncoder` —— 6/7 个有
-- `WanVideoImageToVideoMultiTalk` —— 6/7 个有
-- `WanVideoLoraSelect` —— 6/7 个有
-- `WanVideoTextEncode` —— 6/7 个有
-- `LoadImage` —— 5/7 个有
-- `VHS_LoadVideo` —— 5/7 个有
-- `INTConstant` —— 4/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/7 个有
-- `RH_GetAudioDuration` —— 4/7 个有
-- `SimpleMath+` —— 4/7 个有
-- `Apply Whisper` —— 3/7 个有
-- `Float to Int` —— 3/7 个有
-- `ImageUpscaleWithModel` —— 3/7 个有
-- `IndexTTS2Run` —— 3/7 个有
-- `PrimitiveStringMultiline` —— 3/7 个有
-- `SaveAudio` —— 3/7 个有
-- `ShowText|pysssss` —— 3/7 个有
-- `UpscaleModelLoader` —— 3/7 个有
-- `WanVideoTorchCompileSettings` —— 3/7 个有
-- `easy anythingIndexSwitch` —— 3/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `GetImageRangeFromBatch` —— 1/7 个有
-- `GetImageSizeAndCount` —— 1/7 个有
-- `ImageConcatMulti` —— 1/7 个有
-- `WanVideoContextOptions` —— 1/7 个有
-- `WanVideoEncode` —— 1/7 个有
-- `WanVideoEnhanceAVideo` —— 1/7 个有
-- `WanVideoImageToVideoEncode` —— 1/7 个有
-- `WanVideoSLG` —— 1/7 个有
-- `WanVideoTextEncodeCached` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `GroupExecutor` —— 5/8 个有
+- `ImageBatch` —— 5/8 个有
+- `ImageFromBatch` —— 5/8 个有
+- `LG_ImageReceiver` —— 5/8 个有
+- `LG_ImageSender` —— 5/8 个有
+- `MathExpression|pysssss` —— 5/8 个有
+- `PreviewImage` —— 5/8 个有
+- `GetNode` —— 3/8 个有
+- `ImageConcatMulti` —— 3/8 个有
+- `SaveImage` —— 1/8 个有
+- `TT_img_enc` —— 1/8 个有
 
 ## 典型参数
 

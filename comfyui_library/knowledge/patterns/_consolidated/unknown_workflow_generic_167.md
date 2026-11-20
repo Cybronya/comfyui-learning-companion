@@ -1,36 +1,34 @@
 ---
 name: unknown_workflow_generic_167
 type: Unknown Workflow
-frequency: 11
+frequency: 13
 level: moderate
-coverage: 0.959091
-common_nodes: [LoadImage, RTXVideoSuperResolution, SaveImage]
+coverage: 0.815462
+common_nodes: [RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/22zomeinimage_2049388256801857537.json, 图片生成/图生图/Nvidia_RTX_Nodes  图片放大_2032434516098293761.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2031914806810255362.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2032395867646337026.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2033180312687091714.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2035915630901207042.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2045857523072241665.json, 图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI+图片放大流_2054744352571838465.json, 图片生成/图生图/Nvidia_RTX_图片放大节点_2036584832876158978.json, 图片生成/图生图/RTX Video Super  - 图像放大(极速)ComfyUI工作流_2033586970676432898.json, 图片生成/图生图/RTX Video Super Resolution 图片放大-图片高清_2047152370659893250.json]
+members: [视频生成/文生视频/Happy horse 文生视频_2048729672782979074.json, 视频生成/文生视频/HappyHorse-快乐马-文生视频_2048787148626731010.json, 视频生成/文生视频/HappyHorse_T2V 快乐马 文生视频_2048661503850586113.json, 视频生成/文生视频/Happyhorse 1.0 文生视频_2048640415745712130.json, 视频生成/文生视频/Happyhorse 1.0 文生视频_2048955568265633793.json, 视频生成/文生视频/Happyhorse 1.0 文生视频_2068031543890960384.json, 视频生成/文生视频/Happyhorse 视频新王文生视频_2048670229525438466.json, 视频生成/文生视频/Happyhorse1.0-文生视频_2048997203577933826.json, 视频生成/文生视频/Happyhorse1.0-超强模型-文生视频工作流_2048769700766687233.json, 视频生成/文生视频/Happyhorse1.0文生视频｜输入文字直接生成短片_2106625262682202113.json, 视频生成/文生视频/happyhorse-1.0 快乐马+文生视频_2049334884107296770.json, 视频生成/文生视频/happyhorse文生视频（快乐马）_2048763504257146881.json, 视频生成/文生视频/视频丨阿里happyhorse快乐小马文生视频_2053809575291301890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_167
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/反推提示词/22zomeinimage_2049388256801857537.json、图片生成/图生图/Nvidia_RTX_Nodes  图片放大_2032434516098293761.json、图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2031914806810255362.json、图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2032395867646337026.json、图片生成/图生图/Nvidia_RTX_Nodes_ComfyUI 图片放大流_2033180312687091714.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/文生视频/Happy horse 文生视频_2048729672782979074.json、视频生成/文生视频/HappyHorse-快乐马-文生视频_2048787148626731010.json、视频生成/文生视频/HappyHorse_T2V 快乐马 文生视频_2048661503850586113.json、视频生成/文生视频/Happyhorse 1.0 文生视频_2048640415745712130.json、视频生成/文生视频/Happyhorse 1.0 文生视频_2048955568265633793.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `LoadImage`
-- `RTXVideoSuperResolution`
-- `SaveImage`
+全部 13 个 workflow 都包含：
+- `RH_AlibabaHappyhorse10TextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/11 个有
-- `Image Comparer (rgthree)` —— 2/11 个有
-- `CustomAddLabel` —— 1/11 个有
+- `JjkText` —— 6/13 个有
+- `LoadImage` —— 1/13 个有
 
 ## 典型参数
 

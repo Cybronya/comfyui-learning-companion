@@ -1,33 +1,38 @@
 ---
 name: unknown_workflow_video_97
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [LatentSyncNode, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster]
+frequency: 4
+level: moderate
+coverage: 0.9375
+common_nodes: [LoadImage, RIFE VFI, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/LatentSync1.5数字人_1904112458783428610.json, 音频生成/音频生成/修改视频语音输出-对口型-数字人_1946177425099382785.json]
+members: [平台全量/ReActor视频换脸+视频补帧+视频放大_1964895868296024065.json, 平台全量/ReActor视频换脸+视频补帧+视频放大_2107472321077407745.json, 平台全量/ReActor视频换脸+视频补帧_1980166611921440769.json, 平台全量/Rector视频换脸_2060953586825261058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_97
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/LatentSync1.5数字人_1904112458783428610.json、音频生成/音频生成/修改视频语音输出-对口型-数字人_1946177425099382785.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/ReActor视频换脸+视频补帧+视频放大_1964895868296024065.json、平台全量/ReActor视频换脸+视频补帧+视频放大_2107472321077407745.json、平台全量/ReActor视频换脸+视频补帧_1980166611921440769.json、平台全量/Rector视频换脸_2060953586825261058.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LatentSyncNode`
-- `VHS_LoadAudioUpload`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RIFE VFI`
+- `ReActorFaceSwap`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VideoLengthAdjuster`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Upscale Image` —— 2/4 个有
+- `PrimitiveFloat` —— 2/4 个有
+- `WanVideoImageResizeToClosest` —— 2/4 个有
 
 ## 典型参数
 
@@ -39,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

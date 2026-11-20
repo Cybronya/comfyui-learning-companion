@@ -3,37 +3,31 @@ name: unknown_workflow_generic_1669
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Text, LayerUtility: PurgeVRAM, LoadAudio, LoadVideo, RH_HeyGemNode, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveVideo]
+coverage: 0.8
+common_nodes: [Int, JjkText, LoadImage, RunningHub_Step1XEdit, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/数字人2_2047174495189868545.json, 数字人/数字人/数字人_2046420487177244674.json]
+members: [图片生成/图生图/全能图片G-4O输入文字编辑图片_1929139389023293441.json, 图片生成/图生图/全能图片G4o提示词图片编辑器_1920760113802444802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1669
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/数字人2_2047174495189868545.json、数字人/数字人/数字人_2046420487177244674.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G-4O输入文字编辑图片_1929139389023293441.json、图片生成/图生图/全能图片G4o提示词图片编辑器_1920760113802444802.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `LayerUtility: PurgeVRAM`
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 1/2 个有
+- `Int`
+- `JjkText`
+- `LoadImage`
+- `RunningHub_Step1XEdit`
+- `SaveImage`
 
 ## 典型参数
 

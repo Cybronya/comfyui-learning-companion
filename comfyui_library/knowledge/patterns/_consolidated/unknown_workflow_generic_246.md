@@ -1,37 +1,41 @@
 ---
 name: unknown_workflow_generic_246
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.984111
-common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.6906
+common_nodes: [PrimitiveStringMultiline, RHHiddenNodes, SaveAudioMP3, ShowText|pysssss, WujiAudioLoader, WujiCleaner]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext 生成企业形象照_1928578146331926529.json, 图片生成/图生图/Flux Kontext 老照片修复_1928594881076404226.json, 图片生成/图生图/明城墙明朝还原_1934872692094869506.json, 图片生成/图生图/明城墙明朝还原_1935178440431554561.json, 图片生成/文生图/Kontext-max一句话修改文字增加人物_1931560252347756545.json, 图片生成/文生图/Kontext-max一句话生成熊猫宝宝_1931553605239943170.json, 图片生成/文生图/Kontext-max一句话给橘子宝宝加耳朵_1931555932394684418.json, 图片生成/文生图/一句话换装发色加耳环_1931563283378319361.json, 视频生成/图生视频/kontext_flux技术测评_1928633296190652418.json]
+members: [图片生成/图生图/FishAudio+S2+TTS自适应情绪跨语言音频克隆_2064879896610041858.json, 音频生成/音频生成/FishAudio S2 TTS 文生语音单人标准版_2113240055170027521.json, 音频生成/音频生成/FishAudio S2 TTS 文生语音双人标准版_2113235195469058050.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）_2036715596309602305.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2040915342758780930.json, 音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2060210406785896449.json, 音频生成/音频生成/FishAudio+S2+TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2062000916588486658.json, 音频生成/音频生成/单人_双人语音 复制情绪生成音频 FishAudio S2 TTS自适应情绪跨语言音频克隆_2041317897536016386.json, 音频生成/音频生成/自适应情绪跨语言音频克隆（单人or双人）_2045491676369657858.json, 音频生成/音频生成/（单人or双人）FishAudio S2 TTS自适应情绪跨语言音频克隆工作流_2040380303071514627.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_246
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux Kontext 生成企业形象照_1928578146331926529.json、图片生成/图生图/Flux Kontext 老照片修复_1928594881076404226.json、图片生成/图生图/明城墙明朝还原_1934872692094869506.json、图片生成/图生图/明城墙明朝还原_1935178440431554561.json、图片生成/文生图/Kontext-max一句话修改文字增加人物_1931560252347756545.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FishAudio+S2+TTS自适应情绪跨语言音频克隆_2064879896610041858.json、音频生成/音频生成/FishAudio S2 TTS 文生语音单人标准版_2113240055170027521.json、音频生成/音频生成/FishAudio S2 TTS 文生语音双人标准版_2113235195469058050.json、音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）_2036715596309602305.json、音频生成/音频生成/FishAudio S2 TTS自适应情绪跨语言音频克隆（单人or双人）工作流V1.0_2040915342758780930.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadImage`
-- `RH_ComfyFluxKontext`
-- `SaveImage`
+全部 10 个 workflow 都包含：
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
+- `SaveAudioMP3`
+- `ShowText|pysssss`
+- `WujiAudioLoader`
+- `WujiCleaner`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 8/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
-- `DeepTranslatorTextNode` —— 4/9 个有
-- `RHHiddenNodes` —— 4/9 个有
+- `FishS2MultiSpeakerTTS` —— 9/10 个有
+- `FishS2VoiceCloneTTS` —— 9/10 个有
+- `Fast Groups Muter (rgthree)` —— 7/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `LoadImage` —— 1/10 个有
 
 ## 典型参数
 

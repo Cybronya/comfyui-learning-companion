@@ -1,45 +1,50 @@
 ---
 name: unknown_workflow_upscale_vae_48
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.846
-common_nodes: [BOOLConstant, ComfyUI_Image_Round__ImageCropAdvanced, DisplayAny, DualCLIPLoader, GetImageSize, ImageUpscaleWithModel, JoinStrings, KOOK_SaveJPGImage, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SimpleMath+, Text Input [Dream], UpscaleModelLoader, VAELoader, easy ifElse, easy imageSplitGrid]
+frequency: 4
+level: moderate
+coverage: 0.875
+common_nodes: [PrimitiveInt, RHBatchImages:, RHExtractImage, RHUploadZip, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy batchAnything, easy clearCacheAll, easy forLoopEnd, easy forLoopStart, easy imageCount]
 problems: []
 missing: []
-members: [图片生成/图生图/一键换衣+4pose展示_2079549439529807874.json, 图片生成/图生图/配饰工作流_2076518830742007809.json]
+members: [图片生成/图生图/批量SeedVR2图像放大_2070317807069392897.json, 图片生成/图生图/批量放大高清重绘_2013299056503693314.json, 图片生成/图生图/批量高清图像放大_2080825158469775362.json, 平台全量/批量放大高清重绘！_2006336339943366658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_48
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键换衣+4pose展示_2079549439529807874.json、图片生成/图生图/配饰工作流_2076518830742007809.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/批量SeedVR2图像放大_2070317807069392897.json、图片生成/图生图/批量放大高清重绘_2013299056503693314.json、图片生成/图生图/批量高清图像放大_2080825158469775362.json、平台全量/批量放大高清重绘！_2006336339943366658.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BOOLConstant`
-- `ComfyUI_Image_Round__ImageCropAdvanced`
-- `DisplayAny`
-- `DualCLIPLoader`
-- `GetImageSize`
-- `ImageUpscaleWithModel`
-- `JoinStrings`
-- `KOOK_SaveJPGImage`
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SimpleMath+`
-- `Text Input [Dream]`
-- `UpscaleModelLoader`
-- `VAELoader`
-- `easy ifElse`
-- `easy imageSplitGrid`
+全部 4 个 workflow 都包含：
+- `PrimitiveInt`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `easy batchAnything`
+- `easy clearCacheAll`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+
+**可变部分**（部分 workflow 才有）：
+- `AspectRatio` —— 2/4 个有
+- `CompressImages` —— 2/4 个有
+- `HAIGC_SaveImagesToZip` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `SaveImagePlus` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `easy imageListToImageBatch` —— 2/4 个有
 
 ## 典型参数
 
@@ -51,4 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

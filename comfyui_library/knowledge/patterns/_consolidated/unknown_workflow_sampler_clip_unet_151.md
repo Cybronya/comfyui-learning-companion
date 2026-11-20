@@ -1,77 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_151
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.718375
-common_nodes: [CFGOverride, CLIPTextEncode, ComfyNumberConvert, DualModelGuider, EmptyFlux2LatentImage, Ideogram4Scheduler, JsonExtractString, KSamplerSelect, PreviewAny, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.875333
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Ideogram+开源支持语言简洁文生图_2066708942339796993.json, 图片生成/图生图/ideogram4.0最新开源模型_2063994332616683521.json, 图片生成/文生图/Ideogram 4 KJ Prompt Builder 风格参考+自动文生图_2065368278498889730.json, 图片生成/文生图/Ideogram 4 出图官流_2062772528212439042.json, 图片生成/文生图/Ideogram 4 洗图结构化 JSON 重组_2064321335798620162.json, 图片生成/文生图/Ideogram 图生图参考潜空间重构_2064321322360074241.json, 图片生成/文生图/Ideogram_4+Prompt_Builder_中文提示词自动文生图_2069068754293710850.json, 视频生成/图生视频/Ideogram+4+Prompt+Builder+中文提示词自动文生图_2089969723621593090.json]
+members: [图片生成/图生图/Flux Redux 图片融合工作流_1902736324317851650.json, 图片生成/图生图/Flux_Redux官方工作流_1930169236486832129.json, "图片生成/图生图/WH-AI-Studio语义生图,形体转绘（还需研究）_2018161284826537986.json", 图片生成/图生图/图生图一键定制可爱IP形象_1884393250852163586.json, 图片生成/图生图/热血动漫风格｜真人转动漫_1935155915215839234.json, 图片生成/图生图/真人转动漫角色｜Flux 加速_1913224568469946369.json, 平台全量/Realism ➡ Anime (Flux Redux 8 step)_1897891763078811649.json, 平台全量/【上新】(IPA)-Flux redux model example_1860177378197598210.json, 平台全量/真人转动漫角色｜Flux 加速_1977340566189035522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_151
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Ideogram+开源支持语言简洁文生图_2066708942339796993.json、图片生成/图生图/ideogram4.0最新开源模型_2063994332616683521.json、图片生成/文生图/Ideogram 4 KJ Prompt Builder 风格参考+自动文生图_2065368278498889730.json、图片生成/文生图/Ideogram 4 出图官流_2062772528212439042.json、图片生成/文生图/Ideogram 4 洗图结构化 JSON 重组_2064321335798620162.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux Redux 图片融合工作流_1902736324317851650.json、图片生成/图生图/Flux_Redux官方工作流_1930169236486832129.json、图片生成/图生图/WH-AI-Studio语义生图,形体转绘（还需研究）_2018161284826537986.json、图片生成/图生图/图生图一键定制可爱IP形象_1884393250852163586.json、图片生成/图生图/热血动漫风格｜真人转动漫_1935155915215839234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGOverride`
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ComfyNumberConvert`
-- `DualModelGuider`
-- `EmptyFlux2LatentImage`
-- `Ideogram4Scheduler`
-- `JsonExtractString`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `EmptySD3LatentImage`
+- `FluxGuidance`
 - `KSamplerSelect`
-- `PreviewAny`
-- `PrimitiveInt`
+- `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
-- `StringReplace`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 7/8 个有
-- `ConditioningZeroOut` —— 7/8 个有
-- `PrimitiveStringMultiline` —— 7/8 个有
-- `CLIPLoader` —— 6/8 个有
-- `easy showAnything` —— 6/8 个有
-- `ResolutionSelector` —— 5/8 个有
-- `llama_cpp_instruct_adv` —— 5/8 个有
-- `llama_cpp_model_loader` —— 5/8 个有
-- `LoadImage` —— 4/8 个有
-- `Ideogram4PromptBuilderKJ` —— 3/8 个有
-- `RHLLMChatNode` —— 3/8 个有
-- `llama_cpp_parameters` —— 3/8 个有
-- `CLIPLoaderGGUF` —— 2/8 个有
-- `CustomCombo` —— 2/8 个有
-- `DisTorchPurgeVRAMV2` —— 2/8 个有
-- `Float` —— 2/8 个有
-- `easy cleanGpuUsed` —— 2/8 个有
-- `easy saveText` —— 2/8 个有
-- `image_scale_pixel_v2` —— 2/8 个有
-- `CR Text` —— 1/8 个有
-- `Ideogram4OptimizationsKJ` —— 1/8 个有
-- `ImageScale` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `SplitSigmasDenoise` —— 1/8 个有
-- `VAEEncode` —— 1/8 个有
+- `ModelSamplingFlux` —— 8/9 个有
+- `StyleModelApply` —— 8/9 个有
+- `ImageScale` —— 5/9 个有
+- `ImageConcanate` —— 4/9 个有
+- `LoraLoader` —— 4/9 个有
+- `PreviewImage` —— 4/9 个有
+- `easy imageSize` —— 4/9 个有
+- `RH_Captioner` —— 2/9 个有
+- `ShowText|pysssss` —— 2/9 个有
+- `Anything Everywhere3` —— 1/9 个有
+- `Get resolution [Crystools]` —— 1/9 个有
+- `ImageScaleBy` —— 1/9 个有
+- `Images to RGB` —— 1/9 个有
+- `InspyrenetRembg` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `StyleModelAdvancedApply` —— 1/9 个有
+- `easy imageConcat` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -79,4 +73,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

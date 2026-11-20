@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_462
 type: Text To Image
 frequency: 4
-level: moderate
-coverage: 0.9125
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoaderModelOnly, RHLLMChatNode, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.8825
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, ManualSigmas, SamplerCustom, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/自动多视图设计表（人物_场景_道具_任意主体）_2089630532681428993.json, 图片生成/图生图/（风格Lora版）Anima 自动提示词文生图V1_2060735043315785730.json, 图片生成/文生图/AnimaBase-动漫抽卡神器-全自动提示词-文生图_2057408001748856833.json, 图片生成/文生图/（Lora版）Anima 自动提示词文生图V1_2059972222953017346.json]
+members: [图片生成/图生图/Qwen Image 2.1自然无缝扩图｜图生图边缘延展不留痕_2110682014205698049.json, 图片生成/图生图/qwen_image_2.1智能抠图，图生图主体分离利器_2111287595195002882.json, 图片生成/图生图/qwen_image_2.1自然无缝扩图，图生图扩图边界无痕_2110793697335005186.json, 图片生成/文生图/Qwen Image 2.1 Turbo官方8步文生图 高质量画面直出_2109724999371280385.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_462
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/自动多视图设计表（人物_场景_道具_任意主体）_2089630532681428993.json、图片生成/图生图/（风格Lora版）Anima 自动提示词文生图V1_2060735043315785730.json、图片生成/文生图/AnimaBase-动漫抽卡神器-全自动提示词-文生图_2057408001748856833.json、图片生成/文生图/（Lora版）Anima 自动提示词文生图V1_2059972222953017346.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1自然无缝扩图｜图生图边缘延展不留痕_2110682014205698049.json、图片生成/图生图/qwen_image_2.1智能抠图，图生图主体分离利器_2111287595195002882.json、图片生成/图生图/qwen_image_2.1自然无缝扩图，图生图扩图边界无痕_2110793697335005186.json、图片生成/文生图/Qwen Image 2.1 Turbo官方8步文生图 高质量画面直出_2109724999371280385.json）
 
 - **类型**：Text To Image
 - **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
@@ -26,50 +26,57 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `RHLLMChatNode`
+- `ManualSigmas`
+- `SamplerCustom`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
 - `LoadImage` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `PreviewAny` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `ConcatTextOfUtils` —— 1/4 个有
-- `JWInteger` —— 1/4 个有
-- `Latent Switch (JPS)` —— 1/4 个有
-- `Random Line` —— 1/4 个有
-- `TextEncodeQwenImageEditPlus` —— 1/4 个有
+- `ConstrainImage|pysssss` —— 2/4 个有
+- `ImpactInt` —— 2/4 个有
+- `LayerUtility: ExtendCanvasV2` —— 2/4 个有
+- `VAEEncode` —— 2/4 个有
+- `CR Text Replace` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `QwenImage21Cache` —— 1/4 个有
+- `ResolutionSelector` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 8 - 40 | 4 | 37% |
-| Prompt 约束强度(CFG) | 2.75 | 1 - 4.5 | 4 | 36% |
-| 采样算法 | er_sde | - | 4 | 75% |
-| 调度器 | beta | - | 4 | 75% |
+| 宽度 | 80 | 80 - 80 | 4 | 100% |
+| 高度 | 80 | 80 - 80 | 4 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 2488 | 1024 - 3056 | 4 | 62% |
-| 高度 | 1080 | 768 - 1080 | 4 | 87% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 8 - 40，4 个样本，取值分散，一致性仅 37%
-- Prompt 约束强度(CFG) 中位数 2.75，观测区间 1 - 4.5，4 个样本，取值分散，一致性仅 36%
-- 采样算法 最常用 er_sde，4 个样本，一致性 75%
-- 调度器 最常用 beta，4 个样本，一致性 75%
+- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 2488，观测区间 1024 - 3056，4 个样本
-- 高度 中位数 1080，观测区间 768 - 1080，4 个样本，取值集中（一致性 87%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

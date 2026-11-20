@@ -1,103 +1,92 @@
 ---
 name: unknown_workflow_controlnet_video_upscale
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: strong
-coverage: 0.579
-common_nodes: [Bjornulf_FreeVRAM, Bjornulf_ShowInt, CLIPLoader, CLIPVisionLoader, ConditioningZeroOut, DrawMaskOnImage, DrawViTPose, Fast Groups Muter (rgthree), GetNode, INTConstant, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImageScale, ImageUpscaleWithModelBatched, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, RIFE VFI, SDPoseOODLoader, SDPoseOODProcessor, SaveImage, SetNode, TT_img_enc, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.854125
+common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, CheckpointLoaderSimple, ComfyMathExpression, DA3Inference, DA3Render, GetImageSize, ImageBlend, ImageConcatMulti, KSamplerSelect, LTXVConcatAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadDA3Model, LoadImage, LoraLoaderModelOnly, MMH3LatentUpscaleWithModelParams, MMH3TemporalSplitParams, MMH3UltimateUpscale, MiniMaxChunkFeedForward, MiniMaxH3FunControlNetApply, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPatchLoader, ModelPreviewOverrideKJ, PrimitiveInt, PrimitiveStringMultiline, QwenH3PromptLocal, RTDETR_detect, RandomNoise, SDPoseDrawKeypoints, SDPoseKeypointExtractor, SamplerCustomAdvanced, SetLatentNoiseMask, ShowText|pysssss, SolidMask, UNETLoader, VAEDecode, VAEEncodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, easy positive, easy showAnything, 孤海注释]
+problems: []
 missing: []
-members: [视频生成/图生视频/动作迁移人物换装模特一体化_2064594523124232193.json, 视频生成/图生视频/最强换装换模特迁移动作，换衣服换人一键跟跳（高阶版）_2065167482889007106.json, 视频生成/图生视频/最强换装换模特迁移动作，换衣服换人模仿跳舞_2063232908294451201.json, 视频生成/图生视频/超强换装换动作换模特一体化全局输出_2053105004701069313.json, 视频生成/图生视频/超强换装换动作换模特一体化全局输出_2066760634758426626.json, 视频生成/图生视频/超强换装换动作换模特一体化全局输出（超级懒人版）_2068050463907471361.json]
+members: [平台全量/1-Aiden-人物动作迁移，表情及口型复刻！！！单人_2110915465412435970.json, 平台全量/1-Aiden-人物动作迁移，表情及口型复刻！！！单人_2111735139549138946.json, 平台全量/1-Aiden-人物动作迁移，表情及口型复刻！！！（单人）_2107465207172919297.json, 平台全量/1-Aiden-人物动作迁移，表情及口型复刻！！！（单人）_2109565144073326593.json, 视频生成/图生视频/1-Aiden-人物动作迁移，表情及口型复刻！！！单人_2113798284304277506.json, 视频生成/图生视频/1-Aiden-人物动作迁移，表情及口型复刻！！！（单人）_2114690212281536514.json, 视频生成/图生视频/1-Aiden-人物动作迁移，表情及口型复刻（单人）_2108499578348720130.json, 视频生成/图生视频/1-Aiden-人物动作迁移，表情及口型复刻（单人）_2108528269028052994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_upscale
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/动作迁移人物换装模特一体化_2064594523124232193.json、视频生成/图生视频/最强换装换模特迁移动作，换衣服换人一键跟跳（高阶版）_2065167482889007106.json、视频生成/图生视频/最强换装换模特迁移动作，换衣服换人模仿跳舞_2063232908294451201.json、视频生成/图生视频/超强换装换动作换模特一体化全局输出_2053105004701069313.json、视频生成/图生视频/超强换装换动作换模特一体化全局输出_2066760634758426626.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/1-Aiden-人物动作迁移，表情及口型复刻！！！单人_2110915465412435970.json、平台全量/1-Aiden-人物动作迁移，表情及口型复刻！！！单人_2111735139549138946.json、平台全量/1-Aiden-人物动作迁移，表情及口型复刻！！！（单人）_2107465207172919297.json、平台全量/1-Aiden-人物动作迁移，表情及口型复刻！！！（单人）_2109565144073326593.json、视频生成/图生视频/1-Aiden-人物动作迁移，表情及口型复刻！！！单人_2113798284304277506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Bjornulf_FreeVRAM`
-- `Bjornulf_ShowInt`
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `Fast Groups Muter (rgthree)`
-- `GetNode`
-- `INTConstant`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `DA3Inference`
+- `DA3Render`
+- `GetImageSize`
+- `ImageBlend`
 - `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImageScale`
-- `ImageUpscaleWithModelBatched`
-- `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadDA3Model`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `RIFE VFI`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `SaveImage`
-- `SetNode`
-- `TT_img_enc`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `MMH3LatentUpscaleWithModelParams`
+- `MMH3TemporalSplitParams`
+- `MMH3UltimateUpscale`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3FunControlNetApply`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPatchLoader`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `QwenH3PromptLocal`
+- `RTDETR_detect`
+- `RandomNoise`
+- `SDPoseDrawKeypoints`
+- `SDPoseKeypointExtractor`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `ShowText|pysssss`
+- `SolidMask`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoUni3C_ControlnetLoader`
-- `WanVideoUni3C_embeds`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy positive`
+- `easy showAnything`
+- `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyImage` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| ControlNet 权重 | 0.7 | 0.7 - 0.7 | 8 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- ControlNet 权重 中位数 0.7，观测区间 0.7 - 0.7，8 个样本，取值集中（一致性 100%）

@@ -1,69 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_clip_85
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.8795
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CheckpointLoaderSimple, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
-problems: []
+coverage: 0.945286
+common_nodes: [CLIPLoader, CLIPTextEncode, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Lora+提示词=风格化图片_1952911676233478146.json, 图片生成/文生图/像素风格插画_1912796321265217537.json, 图片生成/文生图/泡泡液态金属字体_2047922074966036481.json, 图片生成/文生图/游戏道具工具箱工作流_1992976015037235201.json, 图片生成/文生图/美食类游戏蛋糕_1866768530052988929.json, 图片生成/文生图/黏土风icon_1955200823770976258.json]
+members: [图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2086642122295439361.json, 图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2090271814491660290.json, 图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731406929940481.json, 图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731592951521282.json, 平台全量/去除水印-klein_2028754115173556225.json, 平台全量/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2085850235322068993.json, 平台全量/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2117477841066618882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_85
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Lora+提示词=风格化图片_1952911676233478146.json、图片生成/文生图/像素风格插画_1912796321265217537.json、图片生成/文生图/泡泡液态金属字体_2047922074966036481.json、图片生成/文生图/游戏道具工具箱工作流_1992976015037235201.json、图片生成/文生图/美食类游戏蛋糕_1866768530052988929.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2086642122295439361.json、图片生成/图生图/商业级人像精修---校色+祛痘+磨皮+改背景色_2090271814491660290.json、图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731406929940481.json、图片生成/图生图/商业级人像精修【极速版】——校色+祛痘+磨皮+改背景色_2089731592951521282.json、平台全量/去除水印-klein_2028754115173556225.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `LoraLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Image Comparer (rgthree)`
+- `KSampler`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ReferenceLatent`
 - `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxResolutionNode` —— 5/6 个有
-- `JjkText` —— 5/6 个有
-- `PreviewImage` —— 5/6 个有
-- `TextCombinerTwo` —— 5/6 个有
-- `Label (rgthree)` —— 3/6 个有
-- `DeepTranslatorTextNode` —— 2/6 个有
-- `CR String To Combo` —— 1/6 个有
-- `Primitive string [Crystools]` —— 1/6 个有
-- `Text Multiline` —— 1/6 个有
+- `CR Text Replace` —— 6/7 个有
+- `ColorCorrect` —— 6/7 个有
+- `ImpactInt` —— 6/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
+- `MuyeTextEditOutput` —— 6/7 个有
+- `取色器_孤海` —— 6/7 个有
+- `AdaptiveLongestEdge_EditUtils` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 768 - 1024 | 6 | 90% |
-| 高度 | 1280 | 1024 - 1536 | 6 | 88% |
-| LoRA 模型强度 | 1 | 0.45 - 1.2 | 6 | 75% |
-| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler_ancestral | - | 7 | 86% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 768 - 1024，6 个样本，取值集中（一致性 90%）
-- 高度 中位数 1280，观测区间 1024 - 1536，6 个样本，取值集中（一致性 88%）
-- LoRA 模型强度 中位数 1，观测区间 0.45 - 1.2，6 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，7 个样本，一致性 86%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

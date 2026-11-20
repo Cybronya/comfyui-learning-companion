@@ -1,0 +1,555 @@
+---
+key: 平台全量/PID × Krea2 Detail Enhancement Engine_2073788008070991873.json
+name: PID × Krea2 Detail Enhancement Engine_2073788008070991873
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/PID × Krea2 Detail Enhancement Engine_2073788008070991873.json
+hash: 4d4f4d72255c4822
+coverage: 0.862745
+learned_at: 2026-11-14 00:47:53
+nodes: [UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, MarkdownNote, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, KSamplerSelect, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, SaveImage, VAELoader, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, MarkdownNote, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, KSamplerSelect, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, VAELoader, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, SaveImage, Image Comparer (rgthree), SaveImage, SaveImage, Image Comparer (rgthree), UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, MarkdownNote, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, SaveImage, VAELoader, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, KSamplerSelect, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, VAELoader, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, Image Comparer (rgthree), Image Comparer (rgthree), SaveImage, SaveImage, MarkdownNote, SaveImage, UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, MarkdownNote, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, KSamplerSelect, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, SaveImage, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, MarkdownNote, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, KSamplerSelect, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, VAELoader, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, SaveImage, Image Comparer (rgthree), SaveImage, SaveImage, UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, MarkdownNote, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, KSamplerSelect, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, SaveImage, VAELoader, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, MarkdownNote, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, KSamplerSelect, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, VAELoader, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, SaveImage, Image Comparer (rgthree), SaveImage, SaveImage, UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, MarkdownNote, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, KSamplerSelect, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, SaveImage, VAELoader, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, UNETLoader, CLIPTextEncode, CLIPLoader, SaveImage, EmptyLatentImage, PreviewImage, ComfyUI-Krea2T-Enhancer, VAEEncode, KSamplerSelect, ClownsharKSampler_Beta, SamplerCustom, CLIPTextEncode, SimpleMath+, ResolutionSelector, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, MarkdownNote, VAELoader, CLIPLoader, ConditioningZeroOut, VAELoader, VAEDecode, ColorMatchV2, UNETLoader, VAELoader, VAEDecode, VAEEncode, KSamplerSelect, SamplerCustom, ResolutionSelector, BasicScheduler, EmptyChromaRadianceLatentImage, CLIPTextEncode, VAELoader, CLIPLoader, ConditioningZeroOut, VAEDecode, ColorMatchV2, VAELoader, UNETLoader, PiDConditioning, PiDConditioning, PrimitiveNode, PrimitiveFloat, Image Comparer (rgthree), SaveImage, SaveImage, SaveImage, CLIPTextEncode, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), KSamplerSelect, VAELoader, Image Comparer (rgthree), Image Comparer (rgthree)]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "cfg": 8, "denoise": 1.0000000000000002, "height": 1280, "sampler_name": -1, "scheduler": 1, "seed": 0.5, "steps": "beta57", "width": 720}
+---
+
+# 平台全量/PID × Krea2 Detail Enhancement Engine_2073788008070991873.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/PID × Krea2 Detail Enhancement Engine_2073788008070991873.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（510 个）：
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `SaveImage`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `SaveImage`
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `SaveImage`
+- `Image Comparer (rgthree)`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `MarkdownNote`
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `SaveImage`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `SaveImage`
+- `MarkdownNote`
+- `SaveImage`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `SaveImage`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `SaveImage`
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `SaveImage`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `SaveImage`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `SaveImage`
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `SaveImage`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `SaveImage`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `PreviewImage`
+- `ComfyUI-Krea2T-Enhancer`
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustom` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `ResolutionSelector`
+- `BasicScheduler`
+- `EmptyChromaRadianceLatentImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `ColorMatchV2`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PiDConditioning`
+- `PiDConditioning`
+- `PrimitiveNode`
+- `PrimitiveFloat`
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `CLIPTextEncode` ★核心
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect` ★核心
+- `VAELoader`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+
+## 关键参数
+
+- `width` = `720`
+- `height` = `1280`
+- `batch_size` = `1`
+- `seed` = `0.5`
+- `steps` = `beta57`
+- `cfg` = `8`
+- `sampler_name` = `-1`
+- `scheduler` = `1`
+- `denoise` = `1.0000000000000002`
+
+## 知识
+
+覆盖率 **86%**（440/510）
+
+**有卡**：`UNETLoader`、`CLIPTextEncode`、`CLIPLoader`、`SaveImage`、`EmptyLatentImage`、`ComfyUI-Krea2T-Enhancer`、`VAEEncode`、`KSamplerSelect`、`ClownsharKSampler_Beta`、`SamplerCustom`、`SimpleMath+`、`ResolutionSelector`、`BasicScheduler`、`EmptyChromaRadianceLatentImage`、`VAELoader`、`ConditioningZeroOut`、`VAEDecode`、`ColorMatchV2`、`PiDConditioning`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPLoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、ResolutionSelector、UNETLoader

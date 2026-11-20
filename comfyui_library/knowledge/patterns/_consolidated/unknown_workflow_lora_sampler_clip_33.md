@@ -1,73 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_clip_33
 type: Unknown Workflow
-frequency: 10
+frequency: 12
 level: moderate
-coverage: 0.8657
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.76275
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, GetNode, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageScaleDownToSize]
+problems: []
 missing: []
-members: [图片生成/图生图/EDGE OF QWEN BF16满血版洗图工作流_1957312732787830786.json, 图片生成/图生图/LYF千问-QWen-Image_1972278459286417410.json, 图片生成/图生图/千问写实_参考图-QWen-Image_1959667015088812033.json, 图片生成/图生图/麦橘千问美人图QWen-Image洗图123_2002778837123514370.json, 图片生成/文生图/AWP亚洲面孔千问LORA-QWen-Image【自动反推提示词】_1961577874413260802.json, 图片生成/文生图/AWP千问LORA-QWen-Image_1961096208251076609.json, 图片生成/文生图/EDGE OF QWEN BF16满血版文生图工作流_1957313561636827138.json, 图片生成/文生图/QWEN真实场景人物去油腻感_1959992517599113217.json, 图片生成/文生图/Qwen-Image-PruningQ文生图模型_1969006640156581890.json, 图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json]
+members: [图片生成/图生图/产品精修_2095771710493650945.json, 平台全量/F2-klein-9B产品人物换背景 万物溶图 光影融合 重新打光_2029429236431331329.json, 平台全量/Flux-2-klein-9B 万物迁移 优化版  人物模特_电商产品 一致性风格换迁移_2029031269878730753.json, 平台全量/Flux-2-klein-9B 换背景 人物模特_电商产品换场景  一致性风格换场景 高清放大_2029010409109331969.json, 平台全量/Flux-2-klein-9B 胸部放大 美女模特身材优化_2029068702238384130.json, 平台全量/Flux2+Klein 消除水印 移除文字+SeedVR2高清放大_2029763798713769985.json, 平台全量/一键提取人物衣服-One click extraction of character clothin_2031573125279780865.json, 平台全量/一键金属、电器、化妆品精修 产品精修SeedVR2+放大+FLUX2-Klein-9B产品精修极速版_2031179171875000322.json, 平台全量/万物提取服装展示 Seedream 5服饰提取 Flux-2-klein-9B  平铺展示服装_2032376983081984002.json, 平台全量/产品精修SeedVR2 放大一键金属 电器 化妆品精修 FLUX2-Klein-9B产品精修升级版_2030880230444896257.json, 平台全量/服饰提取 Flux-2-klein-9B 万物提取服装 平铺展示服装 精修产品_2029061796664971266.json, 平台全量/海报移除文字 去除产品 保留背景+万能移除 高清放大_2072886277074145282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_33
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/EDGE OF QWEN BF16满血版洗图工作流_1957312732787830786.json、图片生成/图生图/LYF千问-QWen-Image_1972278459286417410.json、图片生成/图生图/千问写实_参考图-QWen-Image_1959667015088812033.json、图片生成/图生图/麦橘千问美人图QWen-Image洗图123_2002778837123514370.json、图片生成/文生图/AWP亚洲面孔千问LORA-QWen-Image【自动反推提示词】_1961577874413260802.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/产品精修_2095771710493650945.json、平台全量/F2-klein-9B产品人物换背景 万物溶图 光影融合 重新打光_2029429236431331329.json、平台全量/Flux-2-klein-9B 万物迁移 优化版  人物模特_电商产品 一致性风格换迁移_2029031269878730753.json、平台全量/Flux-2-klein-9B 换背景 人物模特_电商产品换场景  一致性风格换场景 高清放大_2029010409109331969.json、平台全量/Flux-2-klein-9B 胸部放大 美女模特身材优化_2029068702238384130.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `CR Text`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy imageScaleDownToSize`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 9/10 个有
-- `RH_Captioner` —— 9/10 个有
-- `CR SDXL Aspect Ratio` —— 8/10 个有
-- `PrimitiveString` —— 8/10 个有
-- `Text Concatenate` —— 8/10 个有
-- `easy showAnything` —— 8/10 个有
-- `PreviewImage` —— 3/10 个有
-- `CFGNorm` —— 2/10 个有
-- `EmptySD3LatentImage` —— 2/10 个有
-- `SeedVR2` —— 2/10 个有
-- `SeedVR2BlockSwap` —— 2/10 个有
-- `TextConcatenator` —— 2/10 个有
-- `CR Prompt Text` —— 1/10 个有
+- `easy cleanGpuUsed` —— 10/12 个有
+- `SeedVR2LoadDiTModel` —— 9/12 个有
+- `SeedVR2LoadVAEModel` —— 9/12 个有
+- `SeedVR2VideoUpscaler` —— 9/12 个有
+- `JWInteger` —— 7/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/12 个有
+- `GrowMask` —— 1/12 个有
+- `ImageUpscaleWithModel` —— 1/12 个有
+- `InvertMask` —— 1/12 个有
+- `JoinImageWithAlpha` —— 1/12 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/12 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/12 个有
+- `PreviewImage` —— 1/12 个有
+- `RH_Jimeng4_Image2Image` —— 1/12 个有
+- `Upscale Model Loader` —— 1/12 个有
+- `YUAN_TXTConvertAny` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 8 - 30 | 10 | 70% |
-| Prompt 约束强度(CFG) | 3.75 | 1 - 4 | 10 | 71% |
-| 采样算法 | euler | - | 10 | 80% |
-| 调度器 | simple | - | 10 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 8 - 30，10 个样本
-- Prompt 约束强度(CFG) 中位数 3.75，观测区间 1 - 4，10 个样本
-- 采样算法 最常用 euler，10 个样本，一致性 80%
-- 调度器 最常用 simple，10 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

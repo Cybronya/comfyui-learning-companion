@@ -3,33 +3,38 @@ name: unknown_workflow_generic_1712
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_Sora2_I2V_Batch, SaveVideo]
+coverage: 0.818
+common_nodes: [LayerMask: MaskPreview, LoadImage, SaveImage, easy sam3ImageSegmentation, easy sam3ModelLoader, easy sam3Visualization]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S多任务并发文生视频，一次生成最大150s视频只要5-10分钟_1998962356308824066.json, 视频生成/文生视频/批量视频生成_2001610943249412097.json]
+members: [图片生成/图生图/图片分割语义分割SAM3_2052146758297374721.json, 平台全量/san3 一句话图片分割_1993670978941239298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1712
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/全能视频S多任务并发文生视频，一次生成最大150s视频只要5-10分钟_1998962356308824066.json、视频生成/文生视频/批量视频生成_2001610943249412097.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图片分割语义分割SAM3_2052146758297374721.json、平台全量/san3 一句话图片分割_1993670978941239298.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `LayerMask: MaskPreview`
 - `LoadImage`
-- `RH_Sora2_I2V_Batch`
-- `SaveVideo`
+- `SaveImage`
+- `easy sam3ImageSegmentation`
+- `easy sam3ModelLoader`
+- `easy sam3Visualization`
 
 **可变部分**（部分 workflow 才有）：
-- `StringConstantMultiline` —— 1/2 个有
-- `TextBox3` —— 1/2 个有
+- `Bjornulf_RemoveTransparency` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `Text` —— 1/2 个有
 
 ## 典型参数
 

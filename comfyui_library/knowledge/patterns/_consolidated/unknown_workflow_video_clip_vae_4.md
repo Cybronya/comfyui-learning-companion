@@ -1,64 +1,67 @@
 ---
 name: unknown_workflow_video_clip_vae_4
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.94925
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, FastFilmGrain, ModelSamplingSD3, SaveImage, VAEDecode, VAELoader, WanVideoNAG, easy cleanGpuUsed, easy clearCacheAll]
+frequency: 3
+level: strong
+coverage: 0.862667
+common_nodes: [CLIPTextEncode, ImageResizeKJ, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, ModelSamplingSD3, PreviewImage, TrimVideoLatent, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo, easy cleanGpuUsed, easy int]
 problems: []
 missing: []
-members: [图片生成/文生图/AniWan文生图_1945020657232175106.json, 图片生成/文生图/Wan2.2文生图(低噪版)_1951900115835498497.json, 图片生成/文生图/Wan2.2文生图(高低噪)_1951482093362688001.json, 图片生成/文生图/Wan_2.1_文生图_1942908235353374722.json]
+members: [平台全量/Nuash版-Wan2.1 VACE多人动作迁移（加密）_1956736335195332610.json, 平台全量/蔚伽思动作模仿重绘+转绘直出视频_1935951388524670977.json, 视频生成/图生视频/动作迁移openpose姿势参考+VACE 14B图生视频（内含视频高清放大）_1926993200920088577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_clip_vae_4
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/AniWan文生图_1945020657232175106.json、图片生成/文生图/Wan2.2文生图(低噪版)_1951900115835498497.json、图片生成/文生图/Wan2.2文生图(高低噪)_1951482093362688001.json、图片生成/文生图/Wan_2.1_文生图_1942908235353374722.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Nuash版-Wan2.1 VACE多人动作迁移（加密）_1956736335195332610.json、平台全量/蔚伽思动作模仿重绘+转绘直出视频_1935951388524670977.json、视频生成/图生视频/动作迁移openpose姿势参考+VACE 14B图生视频（内含视频高清放大）_1926993200920088577.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `FastFilmGrain`
+- `ImageResizeKJ`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `ModelSamplingSD3`
-- `SaveImage`
+- `PreviewImage`
+- `TrimVideoLatent`
 - `VAEDecode`
 - `VAELoader`
-- `WanVideoNAG`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `WanVaceToVideo`
 - `easy cleanGpuUsed`
-- `easy clearCacheAll`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `KSampler` —— 3/4 个有
-- `UNETLoader` —— 3/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `LoraLoader` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `KSamplerAdvanced` —— 1/4 个有
-- `ModelPatchTorchSettings` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
+- `CLIPLoader` —— 2/3 个有
+- `JWInteger` —— 2/3 个有
+- `KSampler` —— 2/3 个有
+- `OpenposePreprocessor` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `ImageScale` —— 1/3 个有
+- `ImageUpscaleWithModel` —— 1/3 个有
+- `RHHiddenNodes` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 10 | 4 | 0% |
-| 采样算法 | euler | - | 4 | 75% |
-| 调度器 | beta | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 采样步数 | 20 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -66,10 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 10，4 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，4 个样本，一致性 75%
-- 调度器 最常用 beta，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

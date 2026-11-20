@@ -1,76 +1,77 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_69
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.902
-common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, InpaintCropImproved, InpaintStitchImproved, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.900667
+common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GetImageSize_, ImageCrop, ImageResize+, InpaintModelConditioning, KSampler, LayerMask: BiRefNetUltra, LayerUtility: ImageRemoveAlpha, LoadImage, LoraLoaderModelOnly, MaskPreview+, SaveImage, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy makeImageForICLora]
+problems: []
 missing: []
-members: [图片生成/图生图/局部重绘-Qwen-Eidt-2511-模板_2050108545886109698.json, 图片生成/图生图/老孙AI零偏移遮罩精细改图_2094250916902952962.json]
+members: [平台全量/FLUX+fill+ACE电商产品换装2.0FLUX+fill+ACE换装1_1931224249976205313.json, 平台全量/【电商换装】万能换装，可以长袖换成吊带裙_1915368657071833089.json, 平台全量/最新ACE++  Redux 万物迁移 AI模特换装 UP 楚门的AI世界)_1890014204382916609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_69
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/局部重绘-Qwen-Eidt-2511-模板_2050108545886109698.json、图片生成/图生图/老孙AI零偏移遮罩精细改图_2094250916902952962.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/FLUX+fill+ACE电商产品换装2.0FLUX+fill+ACE换装1_1931224249976205313.json、平台全量/【电商换装】万能换装，可以长袖换成吊带裙_1915368657071833089.json、平台全量/最新ACE++  Redux 万物迁移 AI模特换装 UP 楚门的AI世界)_1890014204382916609.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：3
+- **可信度**：强结论
 - **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `CropWithPadInfo`
-- `InpaintCropImproved`
-- `InpaintStitchImproved`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DifferentialDiffusion`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `GetImageSize_`
+- `ImageCrop`
+- `ImageResize+`
+- `InpaintModelConditioning`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
+- `LayerMask: BiRefNetUltra`
+- `LayerUtility: ImageRemoveAlpha`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `QwenEditConfigPreparer`
-- `QwenEditOutputExtractor`
+- `MaskPreview+`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `StyleModelApply`
+- `StyleModelLoader`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy makeImageForICLora`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextMultiReferenceLatentMethod` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageAndMaskPreview` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `UnetLoaderGGUF` —— 1/2 个有
+- `PreviewBridge` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `Florence2ModelLoader` —— 1/3 个有
+- `Florence2Run` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | - | 2 | 67% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 50% |
-| 调度器 | simple | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 28 | 25 - 28 | 3 | 95% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 50%
-- 调度器 最常用 simple，2 个样本，一致性 50%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 28，观测区间 25 - 28，3 个样本，取值集中（一致性 95%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

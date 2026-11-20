@@ -1,0 +1,111 @@
+---
+key: 图片生成/图生图/真实感-wan2.2+动作迁移_2115278436712402946.json
+name: 真实感-wan2.2+动作迁移_2115278436712402946
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/真实感-wan2.2+动作迁移_2115278436712402946.json
+hash: 1c4a6eb472397894
+coverage: 0.620253
+learned_at: 2026-10-30 17:53:39
+nodes: [GetNode, WanVideoTorchCompileSettings, WanVideoBlockSwap, SimpleMath+, GetNode, GetNode, GetNode, SetNode, SetNode, SimpleMath+, VHS_VideoInfoLoaded, ImageResizeKJv2, ControlNextGetPoses, GetNode, WanVideoControlEmbeds, Reroute, GetNode, PreviewImage, WanVideoEncode, VHS_VideoCombine, ImageResizeKJv2, GetImageSizeAndCount, SetNode, SetNode, SimpleMath+, Text Multiline, PrimitiveNode, GetNode, WanVideoSLG, GetNode, GetNode, RH_Captioner, Text Concatenate, Text Multiline, WanVideoTextEncode, LoadWanVideoT5TextEncoder, SetNode, SetNode, SetNode, SetNode, Note, Note, GetNode, WanVideoImageToVideoEncode, SetNode, GetNode, GetNode, WanVideoSetLoRAs, WanVideoSetLoRAs, Int, Int, ImpactSwitch, VHS_VideoCombine, VHS_VideoCombine, ImageFromBatch, WanVideoDecode, RHHiddenNodes, VHS_VideoCombine, ColorMatch, ImageConcatMulti, WanVideoSetBlockSwap, WanVideoSetBlockSwap, ShowText|pysssss, WanVideoVAELoader, Primitive float [Crystools], WanVideoSampler, VHS_LoadVideo, Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], RHHiddenNodes, WanVideoSampler, RHHiddenNodes, PrimitiveNode, LoadImage, ImageResizeKJ, LoadImage, LoadImage, MarkdownNote]
+patterns: []
+missing: []
+---
+
+# 图片生成/图生图/真实感-wan2.2+动作迁移_2115278436712402946.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/真实感-wan2.2+动作迁移_2115278436712402946.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（79 个）：
+- `GetNode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `SimpleMath+`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_VideoInfoLoaded`
+- `ImageResizeKJv2`
+- `ControlNextGetPoses`
+- `GetNode`
+- `WanVideoControlEmbeds`
+- `Reroute`
+- `GetNode`
+- `PreviewImage`
+- `WanVideoEncode`
+- `VHS_VideoCombine`
+- `ImageResizeKJv2`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `SetNode`
+- `SimpleMath+`
+- `Text Multiline`
+- `PrimitiveNode`
+- `GetNode`
+- `WanVideoSLG`
+- `GetNode`
+- `GetNode`
+- `RH_Captioner`
+- `Text Concatenate`
+- `Text Multiline`
+- `WanVideoTextEncode`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Note`
+- `Note`
+- `GetNode`
+- `WanVideoImageToVideoEncode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `Int`
+- `Int`
+- `ImpactSwitch`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ImageFromBatch`
+- `WanVideoDecode`
+- `RHHiddenNodes`
+- `VHS_VideoCombine`
+- `ColorMatch`
+- `ImageConcatMulti`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `ShowText|pysssss`
+- `WanVideoVAELoader`
+- `Primitive float [Crystools]`
+- `WanVideoSampler` ★核心
+- `VHS_LoadVideo`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `WanVideoSampler` ★核心
+- `RHHiddenNodes`
+- `PrimitiveNode`
+- `LoadImage`
+- `ImageResizeKJ`
+- `LoadImage`
+- `LoadImage`
+- `MarkdownNote`
+
+## 知识
+
+覆盖率 **62%**（49/79）
+
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`SimpleMath+`、`VHS_VideoInfoLoaded`、`ImageResizeKJv2`、`ControlNextGetPoses`、`WanVideoControlEmbeds`、`WanVideoEncode`、`VHS_VideoCombine`、`GetImageSizeAndCount`、`Text Multiline`、`WanVideoSLG`、`RH_Captioner`、`Text Concatenate`、`WanVideoTextEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoImageToVideoEncode`、`WanVideoSetLoRAs`、`Int`、`ImageFromBatch`、`WanVideoDecode`、`RHHiddenNodes`、`ColorMatch`、`ImageConcatMulti`、`WanVideoSetBlockSwap`、`WanVideoVAELoader`、`Primitive float [Crystools]`、`WanVideoSampler`、`VHS_LoadVideo`、`Primitive integer [Crystools]`、`LoadImage`、`ImageResizeKJ`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoEncode

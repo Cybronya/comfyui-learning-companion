@@ -3,38 +3,38 @@ name: unknown_workflow_generic_1649
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7905
-common_nodes: [JjkText, LoadImage, PreviewAny, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.95
+common_nodes: [AddMask, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), GrowMaskWithBlur, LoadImage, RemoveWatermarkNode, SAMModelLoader (segment anything), SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/艾希数字人一键分镜生成工作流 V1.0_2017882380161257474.json, 图片生成/文生图/🍌 全能图片Pro_1991775266802446337.json]
+members: [图片生成/图生图/一键全自动去除图片水印_1902342370677960706.json, 图片生成/图生图/最强一键图片去水印_1934210404744912898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1649
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/艾希数字人一键分镜生成工作流 V1.0_2017882380161257474.json、图片生成/文生图/🍌 全能图片Pro_1991775266802446337.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键全自动去除图片水印_1902342370677960706.json、图片生成/图生图/最强一键图片去水印_1934210404744912898.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
+- `AddMask`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `GrowMaskWithBlur`
 - `LoadImage`
-- `PreviewAny`
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
+- `RemoveWatermarkNode`
+- `SAMModelLoader (segment anything)`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `TTP_text_mix` —— 1/2 个有
-- `easy imageScaleDownToSize` —— 1/2 个有
+- `MaskToImage` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

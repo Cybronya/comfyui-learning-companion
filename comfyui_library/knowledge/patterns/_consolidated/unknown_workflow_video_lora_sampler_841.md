@@ -1,53 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_841
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8585
-common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, ImageConcanate, JWImageResizeToMegapixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, ViggleAnimateConditioning, ViggleTextCondLoader]
+frequency: 3
+level: moderate
+coverage: 0.914667
+common_nodes: [AudioCrop, AudioCropProcessUTK, CM_IntToFloat, CR Text, CR Text Concatenate, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PrimitiveString, RH_Captioner, RH_LLMAPI_NODE, ShowText|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/H3動作遷移_目前支持10秒_2099764920819732482.json, 视频生成/文生视频/Viggle-animate-h3视频角色替换_2097851117714632705.json]
+members: [数字人/数字人/Wan-S2V-数字人(说话、唱歌）_1990712412338884610.json, 视频生成/图生视频/wan-S2V-数字人_1974314423789727745.json, 视频生成/文生视频/数字人-文生视频-Humo_1973665727783809025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_841
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/H3動作遷移_目前支持10秒_2099764920819732482.json、视频生成/文生视频/Viggle-animate-h3视频角色替换_2097851117714632705.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Wan-S2V-数字人(说话、唱歌）_1990712412338884610.json、视频生成/图生视频/wan-S2V-数字人_1974314423789727745.json、视频生成/文生视频/数字人-文生视频-Humo_1973665727783809025.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `ImageConcanate`
-- `JWImageResizeToMegapixels`
-- `KSamplerSelect`
+全部 3 个 workflow 都包含：
+- `AudioCrop`
+- `AudioCropProcessUTK`
+- `CM_IntToFloat`
+- `CR Text`
+- `CR Text Concatenate`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
+- `PrimitiveString`
+- `RH_Captioner`
+- `RH_LLMAPI_NODE`
+- `ShowText|pysssss`
 - `VHS_VideoCombine`
-- `ViggleAnimateConditioning`
-- `ViggleTextCondLoader`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 1/2 个有
-- `CustomSigmas` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
+- `AudioEncoderEncode` —— 2/3 个有
+- `AudioEncoderLoader` —— 2/3 个有
+- `LazySwitch1way` —— 2/3 个有
+- `PreviewAny` —— 2/3 个有
+- `PrimitiveBoolean` —— 2/3 个有
+- `WanVideoAddS2VEmbeds` —— 2/3 个有
+- `WanVideoContextOptions` —— 2/3 个有
+- `WanVideoEmptyEmbeds` —— 2/3 个有
+- `WanVideoEncode` —— 2/3 个有
+- `CM_FloatUnaryOperation` —— 1/3 个有
+- `HuMoEmbeds` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `LayerUtility: CropByMask V2` —— 1/3 个有
+- `LoadLynxResampler` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `WhisperModelLoader` —— 1/3 个有
+- `easy imageConcat` —— 1/3 个有
 
 ## 典型参数
 
@@ -59,4 +84,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,62 +1,60 @@
 ---
 name: unknown_workflow_sampler_unet_vae_156
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.879429
-common_nodes: [CLIPLoader, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.83125
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: ["图片生成/图生图/qwen 2.1 人像瘦脸祛痘磨皮美白 Face Slimming, Acne Removal, S_2109441353208909826.json", 图片生成/图生图/qwen_image_2.1 _ 图像编辑_2103129784736903169.json, 图片生成/图生图/qwenimage2.0编辑图片_2101937853101076481.json, 图片生成/图生图/人物照片六种精修工具_2109075675494834178.json, 图片生成/图生图/六种风格_2108026478259691522.json, 图片生成/图生图/林茜数字人_Qwen 2.1换脸工作流_2112738971427106817.json, 图片生成/图生图/洗图-文字海报 qwen image2.1_2113887500438687746.json]
+members: [图片生成/图生图/Krea2 多图参考图像编辑_2073314422151540738.json, 图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2073903914298208257.json, 图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2074305885173800961.json, 图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2074417216031911938.json, 图片生成/图生图/krea2图像编辑_2072941442527490050.json, 图片生成/图生图/图像编辑- KREA V2_2073342522730041345.json, 图片生成/图生图/多图编辑- Krea2_2073339264804409345.json, 图片生成/文生图/Krea2 Multi-Image Reference Editing_2073788017583673345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_156
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/qwen 2.1 人像瘦脸祛痘磨皮美白 Face Slimming, Acne Removal, S_2109441353208909826.json、图片生成/图生图/qwen_image_2.1 _ 图像编辑_2103129784736903169.json、图片生成/图生图/qwenimage2.0编辑图片_2101937853101076481.json、图片生成/图生图/人物照片六种精修工具_2109075675494834178.json、图片生成/图生图/六种风格_2108026478259691522.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Krea2 多图参考图像编辑_2073314422151540738.json、图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2073903914298208257.json、图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2074305885173800961.json、图片生成/图生图/Krea2-多图参考-多图融合-视觉设计-时尚摄影_2074417216031911938.json、图片生成/图生图/krea2图像编辑_2072941442527490050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
+- `EmptyLatentImage`
+- `KSamplerSelect`
 - `LoadImage`
-- `QwenImage21Cache`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/7 个有
-- `CR Text` —— 3/7 个有
-- `JjkText` —— 3/7 个有
-- `LoraLoaderModelOnly` —— 3/7 个有
-- `ShowText|pysssss` —— 2/7 个有
-- `CR Text Concatenate` —— 1/7 个有
-- `EmptyLatentImage` —— 1/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
-- `LayerUtility: TextJoin` —— 1/7 个有
-- `RHLLMChatNode` —— 1/7 个有
+- `Krea2EditRebalance` —— 5/8 个有
+- `PreviewImage` —— 5/8 个有
+- `CLIPTextEncode` —— 3/8 个有
+- `ComfyUI-Krea2T-Enhancer` —— 3/8 个有
+- `ConditioningConcat` —— 3/8 个有
+- `ConditioningKrea2Rebalance` —— 3/8 个有
+- `Krea2EncodeRebalance` —— 3/8 个有
+- `Seed (rgthree)` —— 3/8 个有
+- `RMBG` —— 2/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 20 - 40 | 7 | 71% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3 | 7 | 47% |
-| 采样算法 | euler | - | 7 | 100% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1920 | - | 1 | 100% |
-| 高度 | 1080 | - | 1 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 8 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 8 | 100% |
 
 ## 常见问题
 
@@ -64,8 +62,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 40，7 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，7 个样本，取值分散，一致性仅 47%
-- 采样算法 最常用 euler，7 个样本，一致性 100%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，8 个样本，取值集中（一致性 100%）

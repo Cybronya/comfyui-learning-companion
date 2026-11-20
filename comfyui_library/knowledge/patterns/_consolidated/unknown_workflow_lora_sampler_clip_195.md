@@ -1,72 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_clip_195
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.835333
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Seed Everywhere, UNETLoader, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: weak
+coverage: 0.99
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/千问Qwen-Image：内容再造引擎，告别重复，高效原创！ 洗图洗稿_8步加速_快速出图_1958917773802024962.json, 图片生成/图生图/千问Qwen-Image：文图互通，创意无限重塑！洗图洗稿重新创作_8步加速、快速出图_1954694622213763074.json, 图片生成/文生图/Qwen-Image：文字即图像，原生中文，细节无敌！文生图_中文_文字直出_通义千问_1954550112557121538.json]
+members: [图片生成/文生图/Wan2.2文生图_1951193822992773122.json, 图片生成/文生图/Wan2.2文生图常规版V1_1950531381078249473.json, 图片生成/文生图/wan2.2 T2V 超级加速文生图工作流_1969678776999288833.json, 图片生成/文生图/wan2.2文生图加速版_1953833112910352386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_195
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/千问Qwen-Image：内容再造引擎，告别重复，高效原创！ 洗图洗稿_8步加速_快速出图_1958917773802024962.json、图片生成/图生图/千问Qwen-Image：文图互通，创意无限重塑！洗图洗稿重新创作_8步加速、快速出图_1954694622213763074.json、图片生成/文生图/Qwen-Image：文字即图像，原生中文，细节无敌！文生图_中文_文字直出_通义千问_1954550112557121538.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Wan2.2文生图_1951193822992773122.json、图片生成/文生图/Wan2.2文生图常规版V1_1950531381078249473.json、图片生成/文生图/wan2.2 T2V 超级加速文生图工作流_1969678776999288833.json、图片生成/文生图/wan2.2文生图加速版_1953833112910352386.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：4
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
+- `EmptyHunyuanLatentVideo`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `ModelSamplingSD3`
 - `SaveImage`
-- `Seed Everywhere`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleByAspectRatio_UTK` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `Switch` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `CR Text Concatenate` —— 2/4 个有
+- `ImpactInt` —— 2/4 个有
+- `JWInteger` —— 1/4 个有
+- `PMRF` —— 1/4 个有
+- `SaveAnimatedWEBP` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 3 | 53% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 3 | 29% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | randomize | - | 4 | 75% |
+| Prompt 约束强度(CFG) | 12 | 12 - 20 | 4 | 75% |
+| 采样算法 | 1 | 1 - 3.5 | 4 | 33% |
+| 调度器 | res_2s | - | 4 | 50% |
+| 重绘幅度 | bong_tangent | - | 4 | 50% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，3 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，4 个样本，一致性 75%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 20，4 个样本
+- 采样算法 中位数 1，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 33%
+- 调度器 最常用 res_2s，4 个样本，一致性 50%
+- 重绘幅度 最常用 bong_tangent，4 个样本，一致性 50%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

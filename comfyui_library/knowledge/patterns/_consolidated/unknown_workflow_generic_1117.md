@@ -3,38 +3,39 @@ name: unknown_workflow_generic_1117
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.835333
-common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3ImageToVideo, RH_MinimaxHailuoH3MultimodalToVideo, RH_MinimaxHailuoH3TextToVideo, SaveVideo]
+coverage: 0.936333
+common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, ImageGenResolutionFromImage, LayerUtility: ColorImage, LayerUtility: ColorPicker, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json, 视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json, 视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json]
+members: [图片生成/图生图/BRIA RMBG一键抠图_抠像_去背景-透明背景_2020007942497509377.json, 图片生成/图生图/BRIA抠像_2052677009523912705.json, 平台全量/移除背景任意填充颜色_1900032331359334401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1117
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json、视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json、视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/BRIA RMBG一键抠图_抠像_去背景-透明背景_2020007942497509377.json、图片生成/图生图/BRIA抠像_2052677009523912705.json、平台全量/移除背景任意填充颜色_1900032331359334401.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
+- `BRIA_RMBG_ModelLoader_Zho`
+- `BRIA_RMBG_Zho`
+- `ImageGenResolutionFromImage`
+- `LayerUtility: ColorImage`
+- `LayerUtility: ColorPicker`
 - `LoadImage`
-- `LoadVideo`
-- `RH_MinimaxHailuoH3ImageToVideo`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `RH_MinimaxHailuoH3TextToVideo`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `Text` —— 1/3 个有
+- `Image Overlay` —— 2/3 个有
+- `InvertMask` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `Label (rgthree)` —— 1/3 个有
 
 ## 典型参数
 

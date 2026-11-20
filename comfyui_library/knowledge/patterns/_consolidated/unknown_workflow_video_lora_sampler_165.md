@@ -1,78 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_165
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: strong
-coverage: 0.946917
-common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, Float, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, SamplerCustom, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+coverage: 0.455071
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, ImageBatchExtendWithOverlap, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, PreviewAny, ReplaceVideoLatentFrames, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-MSR 多图参考生成视频_2069424373089529858.json, 视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频_2068240964862435329.json, 视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频_2069760326291247105.json, 视频生成/图生视频/LTX2.3-MSR全能参考自定义音频（参考图反推）_2069220320195731457.json, 视频生成/图生视频/LTX2.3-MSR全能多图参考生成视频（支持高动态场景）_2067263836763279362.json, 视频生成/图生视频/LTX2.3-MSR全能多图参考生成视频（支持高动态场景）_2070142023239290882.json, 视频生成/图生视频/LTX2.3-MSR全能多图参考生成视频（支持高动态场景）_2070424027285512193.json, 视频生成/图生视频/LTX2.3-MSR多图像参考数字人(自定义音频)_2086423602479591426.json, 视频生成/图生视频/【优化版】LTX2.3-MSR全能参考升级-支持自定义音频_2072216632251998209.json, 视频生成/图生视频/多参生视频 LTX2.3  MSR_2055525493520257026.json, 视频生成/图生视频/多图参考生成视频LTX2.3-MSR_2070338966414512130.json, 视频生成/文生视频/LTX2.3-MSR 多图参考生成视频_2069948331698249729.json]
+members: [视频生成/图生视频/LongCat龙猫数字人I2V_2003272885085118465.json, 视频生成/图生视频/LongcatAvata-龙猫数字人I2V工作流_2003002229281964033.json, 视频生成/图生视频/内部测试0001_2006916502057918465.json, 视频生成/图生视频/对口型·超强悍_2010972591602798593.json, 视频生成/图生视频/龙猫数字人I2V工作流-Aiwood_2002473515242647553.json, 视频生成/图生视频/龙猫数字人I2V工作流_2002963374075965441.json, 视频生成/图生视频/龙猫数字人i2V工作流-长视频_2002719274244423682.json, 视频生成/文生视频/LongCat Avatar 长视频工作流_2003655756962512897.json, 视频生成/文生视频/LongCat avatar龙猫数字人文生视频对口型版_2002695647604162562.json, 视频生成/文生视频/LongCat+文生视频数字人_2002936278276534273.json, 视频生成/文生视频/LongCat-Video-Avatar数字人图生视频长视频_2003091574424764418.json, 视频生成/文生视频/LongCat-Video-Avatar数字人文生视频长视频_2003091459949699074.json, 视频生成/文生视频/LongCatAvatar_长时数字人工作流_2004810996587921409.json, 视频生成/文生视频/龙猫数字人文生视频对口型版（LongCat avatar 生产力版）_2009631986461188098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_165
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-MSR 多图参考生成视频_2069424373089529858.json、视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频_2068240964862435329.json、视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频_2069760326291247105.json、视频生成/图生视频/LTX2.3-MSR全能参考自定义音频（参考图反推）_2069220320195731457.json、视频生成/图生视频/LTX2.3-MSR全能多图参考生成视频（支持高动态场景）_2067263836763279362.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/LongCat龙猫数字人I2V_2003272885085118465.json、视频生成/图生视频/LongcatAvata-龙猫数字人I2V工作流_2003002229281964033.json、视频生成/图生视频/内部测试0001_2006916502057918465.json、视频生成/图生视频/对口型·超强悍_2010972591602798593.json、视频生成/图生视频/龙猫数字人I2V工作流-Aiwood_2002473515242647553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `Float`
-- `INTConstant`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
-- `LoadImage`
-- `SamplerCustom`
-- `SimpleMath+`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+全部 14 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `ImageBatchExtendWithOverlap`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `ReplaceVideoLatentFrames`
+- `TrimAudioDuration`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `Wav2VecModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 5/12 个有
-- `LTXVAudioVAEEncode` —— 5/12 个有
-- `LoadAudio` —— 5/12 个有
-- `LoadAudioUI` —— 5/12 个有
-- `PrimitiveBoolean` —— 5/12 个有
-- `SetLatentNoiseMask` —— 5/12 个有
-- `SolidMask` —— 5/12 个有
-- `MathExpression|pysssss` —— 3/12 个有
-- `PrimitiveInt` —— 3/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `Textbox` —— 1/12 个有
-- `llama_cpp_instruct_adv` —— 1/12 个有
-- `llama_cpp_model_loader` —— 1/12 个有
-- `llama_cpp_parameters` —— 1/12 个有
-- `忽略多组孤海` —— 1/12 个有
+- `FloatConstant` —— 13/14 个有
+- `GetNode` —— 13/14 个有
+- `SetNode` —— 13/14 个有
+- `INTConstant` —— 12/14 个有
+- `ImageResizeKJv2` —— 10/14 个有
+- `LoadImage` —— 10/14 个有
+- `PreviewAudio` —— 5/14 个有
+- `DownloadAndLoadWav2VecModel` —— 4/14 个有
+- `EmptyLatentImage` —— 4/14 个有
+- `GetLatentRangeFromBatch` —— 4/14 个有
+- `Int` —— 2/14 个有
+- `Text` —— 2/14 个有
+- `Float` —— 1/14 个有
+- `LoadImageFromPath` —— 1/14 个有
+- `RHHiddenNodes` —— 1/14 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/14 个有
+- `SaveAudio` —— 1/14 个有
+- `SaveImage` —— 1/14 个有
+- `ZML_ImageSelectorNode` —— 1/14 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/14 个有
+- `easy indexTTSGenerateSimple` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 241 | 241 - 241 | 12 | 100% |
-| 高度 | 50 | 24 - 50 | 12 | 85% |
+| 宽度 | 512 | 512 - 512 | 4 | 100% |
+| 高度 | 512 | 512 - 512 | 4 | 100% |
 
 ## 常见问题
 
@@ -80,5 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 241，观测区间 241 - 241，12 个样本，取值集中（一致性 100%）
-- 高度 中位数 50，观测区间 24 - 50，12 个样本，取值集中（一致性 85%）
+- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）

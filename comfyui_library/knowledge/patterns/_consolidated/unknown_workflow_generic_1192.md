@@ -3,41 +3,34 @@ name: unknown_workflow_generic_1192
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.892667
-common_nodes: [LoadAudio, NormalizeAudioLoudness, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3, ShowText|pysssss, easy cleanGpuUsed]
+coverage: 1
+common_nodes: [LoadImage, SaveImage, ShellAgentPluginSaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat-AudioDiT-单人语音克隆  情绪迁移 文生音频超自然 碾压index-tts2_2039705382821564418.json, 音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039554832759005185.json, 音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS 优化版 不吃字不多字无杂音 情绪音色迁移_2039710328308633601.json]
+members: [图片生成/图生图/商品展示-黑色-图生图_2054356858130968577.json, 图片生成/图生图/超广角镜头+ 低角度仰拍+服饰替换_2052953901036523522.json, 图片生成/图生图/超级爆气特效_2053715018868371458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1192
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT-单人语音克隆  情绪迁移 文生音频超自然 碾压index-tts2_2039705382821564418.json、音频生成/音频生成/LongCat-AudioDiT-单人语音克隆_2039554832759005185.json、音频生成/音频生成/LongCat-AudioDiT双人语音克隆对话TTS 优化版 不吃字不多字无杂音 情绪音色迁移_2039710328308633601.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/商品展示-黑色-图生图_2054356858130968577.json、图片生成/图生图/超广角镜头+ 低角度仰拍+服饰替换_2052953901036523522.json、图片生成/图生图/超级爆气特效_2053715018868371458.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `NormalizeAudioLoudness`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
-- `ShowText|pysssss`
-- `easy cleanGpuUsed`
+- `LoadImage`
+- `SaveImage`
+- `ShellAgentPluginSaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `LongCatVoiceCloneTTS` —— 2/3 个有
-- `TrimAudioDuration` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `LongCatMultiSpeakerTTS` —— 1/3 个有
-- `SaveAudio` —— 1/3 个有
+- `RH_RhartImageG2ImageToImage` —— 2/3 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 2/3 个有
 
 ## 典型参数
 

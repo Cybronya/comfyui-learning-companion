@@ -1,83 +1,88 @@
 ---
 name: unknown_workflow_video_inpaint_upscale
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.75
-common_nodes: [Anything Everywhere, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GetImageSize, GetNode, Image Filter Adjustments, ImageConcanate, ImageCrop, ImageResize+, ImageScale, ImageToMask, InpaintModelConditioning, KSampler, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, PreviewImage, RIFE VFI, SaveImage, SeedVR2, SeedVR2BlockSwap, SetNode, StyleModelApply, StyleModelLoader, Text Prompt (JPS), UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy mathInt]
+frequency: 11
+level: moderate
+coverage: 0.904
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, DownloadAndLoadFlorence2Model, DownloadAndLoadSAM2Model, Fast Groups Bypasser (rgthree), Float to Int, FloatConstant, Florence2Run, Florence2toCoordinates, GetImageSizeAndCount, GrowMaskWithBlur, INTConstant, ImageResizeKJv2, ImageStitch, ImpactMinMax, InpaintPreprocessor, LoadImage, PrimitiveString, Sam2Segmentation, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2TorchCompileSettings, SeedVR2VideoUpscaler, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/至尊电商_2073219699759992833.json, 数字人/数字人/至尊电商_1966680740526239745.json, 视频生成/图生视频/极致电商穿搭_2066873867511091201.json]
+members: [图片生成/图生图/Wan2.2视频换背景0318_2034226440723505153.json, 平台全量/Wan2.2视频换背景&换人_2027288927790436353.json, 平台全量/快速视频换背景_2064946714049601537.json, 平台全量/快速视频换背景_2066715901898084353.json, 平台全量/视频换背景&换人+视频SeedVR2高清放大_2051844889272434689.json, 平台全量/视频换背景&换人+视频高清放大 人物一致 真实自然换装_2049354105822388226.json, 平台全量/视频换背景&换人+视频高清放大 人物一致_2068975133984903169.json, 平台全量/视频换背景&换人+视频高清放大_2048561318122229762.json, 平台全量/视频换背景&换人_2026213018018779138.json, 平台全量/视频换背景&换人_2043608685833887746.json, 视频生成/图生视频/视频换背景&换人动作迁移_2045437537212174338.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_upscale
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/至尊电商_2073219699759992833.json、数字人/数字人/至尊电商_1966680740526239745.json、视频生成/图生视频/极致电商穿搭_2066873867511091201.json）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Wan2.2视频换背景0318_2034226440723505153.json、平台全量/Wan2.2视频换背景&换人_2027288927790436353.json、平台全量/快速视频换背景_2064946714049601537.json、平台全量/快速视频换背景_2066715901898084353.json、平台全量/视频换背景&换人+视频SeedVR2高清放大_2051844889272434689.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：75%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere`
+全部 11 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `GetImageSize`
-- `GetNode`
-- `Image Filter Adjustments`
-- `ImageConcanate`
-- `ImageCrop`
-- `ImageResize+`
-- `ImageScale`
-- `ImageToMask`
-- `InpaintModelConditioning`
-- `KSampler`
+- `CR Prompt Text`
+- `DownloadAndLoadFlorence2Model`
+- `DownloadAndLoadSAM2Model`
+- `Fast Groups Bypasser (rgthree)`
+- `Float to Int`
+- `FloatConstant`
+- `Florence2Run`
+- `Florence2toCoordinates`
+- `GetImageSizeAndCount`
+- `GrowMaskWithBlur`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `ImageStitch`
+- `ImpactMinMax`
+- `InpaintPreprocessor`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `PreviewImage`
-- `RIFE VFI`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+- `PrimitiveString`
+- `Sam2Segmentation`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2TorchCompileSettings`
+- `SeedVR2VideoUpscaler`
 - `SetNode`
-- `StyleModelApply`
-- `StyleModelLoader`
-- `Text Prompt (JPS)`
-- `UNETLoader`
-- `UpscaleModelLoader`
-- `VAEDecode`
-- `VAELoader`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEmbedBridge`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 - `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy mathInt`
+
+**可变部分**（部分 workflow 才有）：
+- `InpaintCrop` —— 1/11 个有
+- `Mask Invert` —— 1/11 个有
+- `MaskBlur+` —— 1/11 个有
+- `MaskToImage` —— 1/11 个有
+- `SAM3PointCollector` —— 1/11 个有
+- `SAM3Propagate` —— 1/11 个有
+- `SAM3VideoModelLoader` —— 1/11 个有
+- `SAM3VideoOutput` —— 1/11 个有
+- `SAM3VideoSegmentation` —— 1/11 个有
+- `easy clearCacheAll` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -85,8 +90,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

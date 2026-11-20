@@ -2,56 +2,68 @@
 name: unknown_workflow_video_sampler_clip_214
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.957667
-common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXVConditioning, LTXVScheduler, SamplerCustom, VAEDecodeTiled, VHS_VideoCombine]
-problems: []
+level: strong
+coverage: 0.941
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJ, KSampler, LoadImage, RIFE VFI, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanImageToVideo]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/文生视频/LTXVIDEO文生视频加速高清放大_1899450200354672642.json, 视频生成/文生视频/最快AI视频模型 LTX  文生视频  UP 楚门的AI世界_1897435608137322497.json, 视频生成/文生视频/最快的视频生成模型 LTX-Video+文生视频-StarAI_1897402731693592577.json]
+members: [视频生成/图生视频/【老金驿站】Wan2.1图生视频CFGZeroStar加强版_1896469685087109121.json, 视频生成/图生视频/一张图片生成360度视频-wan2.1_1927363115573481473.json, 视频生成/图生视频/单图 IP 生成 lora 素材集工作流_1986674575624859650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_214
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/LTXVIDEO文生视频加速高清放大_1899450200354672642.json、视频生成/文生视频/最快AI视频模型 LTX  文生视频  UP 楚门的AI世界_1897435608137322497.json、视频生成/文生视频/最快的视频生成模型 LTX-Video+文生视频-StarAI_1897402731693592577.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【老金驿站】Wan2.1图生视频CFGZeroStar加强版_1896469685087109121.json、视频生成/图生视频/一张图片生成360度视频-wan2.1_1927363115573481473.json、视频生成/图生视频/单图 IP 生成 lora 素材集工作流_1986674575624859650.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTXVConditioning`
-- `LTXVScheduler`
-- `SamplerCustom`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ImageResizeKJ`
+- `KSampler`
+- `LoadImage`
+- `RIFE VFI`
+- `UNETLoader`
 - `VAEDecodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ApplyFBCacheOnModel` —— 2/3 个有
-- `CR Upscale Image` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `PatchModelPatcherOrder` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `SaveWEBM` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `WanVideoTeaCacheKJ` —— 2/3 个有
+- `CFGZeroStarAndInit` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 30 | 30 - 30 | 3 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | uni_pc | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 30，观测区间 30 - 30，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode

@@ -3,38 +3,34 @@ name: unknown_workflow_generic_1538
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.685
-common_nodes: [JjkText, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage, SeedVR2, easy cleanGpuUsed, easy promptConcat]
+coverage: 0.7335
+common_nodes: [LoadAudio, SaveAudioMP3, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [图片生成/图生图/最新G image2  电商服装提取一键生成工作流 V2.0_2062466829485953025.json, 图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V2.0_2062118276230111234.json]
+members: [图片生成/反推提示词/声音克隆  mikz_2061820428179566594.json, 数字人/数字人/AI语音克隆-单人_2008993451307704322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1538
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新G image2  电商服装提取一键生成工作流 V2.0_2062466829485953025.json、图片生成/图生图/最新G image2  电商服装模特多视角主图一键生成工作流 V2.0_2062118276230111234.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/声音克隆  mikz_2061820428179566594.json、数字人/数字人/AI语音克隆-单人_2008993451307704322.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
-- `SaveImage`
-- `SeedVR2`
-- `easy cleanGpuUsed`
-- `easy promptConcat`
+- `LoadAudio`
+- `SaveAudioMP3`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `GuHaiAutoImageSplit` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `easy imageConcat` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
 
 ## 典型参数
 

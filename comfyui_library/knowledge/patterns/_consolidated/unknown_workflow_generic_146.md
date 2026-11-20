@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_146
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.869
-common_nodes: [RH_ComfyFluxKontext, SaveImage]
+coverage: 0.908929
+common_nodes: [RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext PVC玩偶手办_1934626099387408386.json, 图片生成/图生图/Flux Kontext 一键史努比卡通风格_1934620322069192705.json, 图片生成/图生图/Flux Kontext 一键平面转3D_1933700447826042882.json, 图片生成/图生图/Flux Kontext 全方位模特展示服装_1934429965163388930.json, 图片生成/图生图/Flux Kontext 图像指定物体修改_1934516517201477633.json, 图片生成/图生图/Flux Kontext 明星手持产品｜代言海报_1932978465115344897.json, 图片生成/图生图/Flux Kontext 最简单人物换装_1930801597612228610.json, 图片生成/图生图/Flux Kontext 模特动作摆拍｜模特展示_1932619284621238273.json, 图片生成/图生图/Flux Kontext 模特手持产品图_1934783763614212097.json, 图片生成/图生图/kontext 图像编辑丨超便宜接口_1933925778687971330.json, 图片生成/图生图/kontext 对接扣子 _ 图像编辑丨超便宜接口_1933961441760468994.json, 图片生成/图生图/扣子接入Kontext图片编辑_1928687733341065217.json]
+members: [图片生成/图生图/VoxCPM2语音克隆_语音设计_2073318209389940738.json, 平台全量/4.5 VoxCPM2语音克隆V2_2117605395039608834.json, 平台全量/VoxCPM2语音极限克隆V2_2070159875161804801.json, 平台全量/VoxCPM2语音生成_2120497567623630850.json, 数字人/数字人/TTS_2045864413609074690.json, 数字人/数字人/VoxCPM2 设计新的声音_2042592659730079745.json, 数字人/数字人/VoxCPM2--自用语音克隆_2091544436672122882.json, 数字人/数字人/VoxCPM2语音克隆自用_2089187657707507713.json, 数字人/数字人/VoxCPM2语音极限克隆V2 (1)_2082320141043453953.json, 音频生成/音频生成/VoxCPM2  声音克隆 音色迁移 方言 韵律更自然、VoxCPM2细节更丰富_2041826724777824258.json, 音频生成/音频生成/VoxCPM2-声音克隆 支持方言_2056356073002594306.json, 音频生成/音频生成/VoxCPM2-终极克隆-语音克隆-声音克隆-好用-速度快-支持方言_2049750876226637825.json, 音频生成/音频生成/VoxCPM2-语音克隆-极速克隆-支持方言_2084189235472592898.json, 音频生成/音频生成/VoxCPM2声音克隆--角色声音-续写西部克苏鲁_2043940742078406657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_146
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Flux Kontext PVC玩偶手办_1934626099387408386.json、图片生成/图生图/Flux Kontext 一键史努比卡通风格_1934620322069192705.json、图片生成/图生图/Flux Kontext 一键平面转3D_1933700447826042882.json、图片生成/图生图/Flux Kontext 全方位模特展示服装_1934429965163388930.json、图片生成/图生图/Flux Kontext 图像指定物体修改_1934516517201477633.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/VoxCPM2语音克隆_语音设计_2073318209389940738.json、平台全量/4.5 VoxCPM2语音克隆V2_2117605395039608834.json、平台全量/VoxCPM2语音极限克隆V2_2070159875161804801.json、平台全量/VoxCPM2语音生成_2120497567623630850.json、数字人/数字人/TTS_2045864413609074690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `RH_ComfyFluxKontext`
-- `SaveImage`
+全部 14 个 workflow 都包含：
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 10/12 个有
-- `DeepTranslatorTextNode` —— 8/12 个有
-- `PreviewImage` —— 4/12 个有
-- `ReroutePrimitive|pysssss` —— 3/12 个有
-- `easy showAnything` —— 3/12 个有
-- `LoadImageFromUrl` —— 2/12 个有
+- `LoadAudio` —— 13/14 个有
+- `CR Prompt Text` —— 10/14 个有
+- `AudioSeparation` —— 5/14 个有
+- `Text` —— 4/14 个有
+- `CR Text` —— 3/14 个有
+- `AudioCrop` —— 2/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
 
 ## 典型参数
 

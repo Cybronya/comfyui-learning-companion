@@ -1,82 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_409
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.932333
-common_nodes: [BasicScheduler, CR Text, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, ImpactInt, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SimpleMath+, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+frequency: 7
+level: moderate
+coverage: 0.872
+common_nodes: [BasicGuider, BlockSparseAttention, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2059081258998784002.json, 视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2080902822853435394.json, 视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成_2077018841644888066.json, 视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成【syqiangk】_2067970994802872322.json, 视频生成/图生视频/LTX2.3图生视频_2078005941840207873.json, 视频生成/图生视频/新玩意LTX2.3+sulphur 图生视频_2059322431231324161.json]
+members: [图片生成/图生图/pika+minimax二采_2116691928606662657.json, 图片生成/图生图/道真数字人多场景通用版_2112188090025598978.json, 图片生成/图生图/🦞天下武功，唯快不破-H3最强打斗工作流_2111630069474086913.json, 视频生成/图生视频/10.16高尚最强武打（minimax最强动作）_2110787369631834114.json, 视频生成/图生视频/pika+minimax二采_2116414380308000770.json, 视频生成/图生视频/pika+minimax二采_2116662273380012033.json, 视频生成/文生视频/H3官流（单采极速文戏）_2106642679642812418.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_409
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2059081258998784002.json、视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2080902822853435394.json、视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成_2077018841644888066.json、视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成【syqiangk】_2067970994802872322.json、视频生成/图生视频/LTX2.3图生视频_2078005941840207873.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/pika+minimax二采_2116691928606662657.json、图片生成/图生图/道真数字人多场景通用版_2112188090025598978.json、图片生成/图生图/🦞天下武功，唯快不破-H3最强打斗工作流_2111630069474086913.json、视频生成/图生视频/10.16高尚最强武打（minimax最强动作）_2110787369631834114.json、视频生成/图生视频/pika+minimax二采_2116414380308000770.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicScheduler`
-- `CR Text`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `ImpactInt`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `SimpleMath+`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `PromptRelaySmartEncode` —— 5/6 个有
-- `ShowText|pysssss` —— 5/6 个有
-- `Dapao_LlamaChat` —— 4/6 个有
-- `孤海注释` —— 4/6 个有
-- `LoaderGGUF` —— 2/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `CR Text Replace` —— 1/6 个有
-- `Fast Bypasser (rgthree)` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `ImageFromBatch` —— 1/6 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_LLMAPI_Pro_Node` —— 1/6 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/6 个有
-- `SaveImage` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `easy convertAnything` —— 1/6 个有
+- `ManualSigmas` —— 5/7 个有
+- `MiniMaxH3SigmaShift` —— 5/7 个有
+- `BasicScheduler` —— 4/7 个有
+- `LoadAudio` —— 4/7 个有
+- `VHS_LoadVideo` —— 4/7 个有
+- `DisableNoise` —— 3/7 个有
+- `MiniMaxChunkFeedForward` —— 3/7 个有
+- `MiniMaxH3LatentUpscaleCombined` —— 3/7 个有
+- `MiniMaxLowVRAMAttention` —— 3/7 个有
+- `AudioConcat` —— 2/7 个有
+- `EasyCache` —— 2/7 个有
+- `ExtendIntermediateSigmas` —— 2/7 个有
+- `GetImageRangeFromBatch` —— 2/7 个有
+- `ImageBatchMulti` —— 2/7 个有
+- `MiniMaxH3AddGuide` —— 2/7 个有
+- `PreviewAny` —— 2/7 个有
+- `SaveAudioAdvanced` —— 2/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `忽略多组孤海` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 489 | 489 - 489 | 6 | 100% |
-| 高度 | 25 | 24 - 25 | 6 | 98% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,5 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 489，观测区间 489 - 489，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 25，6 个样本，取值集中（一致性 98%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

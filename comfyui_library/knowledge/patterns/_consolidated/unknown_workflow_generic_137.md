@@ -1,48 +1,39 @@
 ---
 name: unknown_workflow_generic_137
 type: Unknown Workflow
-frequency: 13
+frequency: 15
 level: moderate
-coverage: 0.837154
-common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss, Text, easy promptConcat, easy promptLine]
+coverage: 0.881133
+common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [图片生成/图生图/最新G image2 官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2058069243954024450.json, 图片生成/图生图/最新G image2 官方全量稳定版 跨境电商主图+详情页生成工作流 V1.0_2048806715327520769.json, 图片生成/图生图/最新G image2 官方全量稳定版男装 服装电商主图+详情页生成工作流 V2.0_2063816963884937217.json, 图片生成/图生图/最新G image2电商主图工作流 V1.0_2063552510991888385.json, 图片生成/图生图/最新G image2电商（主图+详情页）   1张图0.1元_2049756896084672513.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2098981285736833026.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2099141290008080386.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2101488163675009025.json, 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602.json, 图片生成/图生图/电商产品详情页一键生成6张_2064758435874430977.json, 图片生成/图生图/阿清的多张电商详情页生成_2092159694122082305.json, 图片生成/文生图/image2电商（主图+详情页）_2051119303629520897.json, 图片生成/文生图/官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2091082751796666369.json]
+members: [音频生成/音频生成/IndexTTS-2音色克隆基础版单人_2094008558311526401.json, 音频生成/音频生成/IndexTTS2_2080545181341937666.json, 音频生成/音频生成/TTS2.0_2063267036876328962.json, 音频生成/音频生成/TTS2.0单人一色克隆工作流_2053908634282799106.json, 音频生成/音频生成/TTS2声音克隆+情感参考_1991491052590866434.json, 音频生成/音频生成/TTS2声音克隆+情感参考_2009978566582210561.json, 音频生成/音频生成/TTS2声音克隆+情感参考_2010683442534555649.json, 音频生成/音频生成/TTS2声音克隆+情感参考_2015784519533600770.json, 音频生成/音频生成/indexTTS2-单（多）人语音模仿+多情绪+情感音色_2009276978364424193.json, 音频生成/音频生成/indexTTS2-有声书制作 多角色声音_2064251607080071169.json, 音频生成/音频生成/单人 双人 情绪级配音_2059366220385837057.json, 音频生成/音频生成/对话人声模仿工作流_2045830581509955585.json, 音频生成/音频生成/工作流视频篇7-多人声音克隆+情感参考_2018238669697589249.json, 音频生成/音频生成/语音生成工作流-indextts2-带情感调节_1979545115100352513.json, 音频生成/音频生成/风水师-多人声音克隆+情感参考_2080563132703010818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_137
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/最新G image2 官方全量稳定版 服装电商主图+详情页生成工作流 V2.0_2058069243954024450.json、图片生成/图生图/最新G image2 官方全量稳定版 跨境电商主图+详情页生成工作流 V1.0_2048806715327520769.json、图片生成/图生图/最新G image2 官方全量稳定版男装 服装电商主图+详情页生成工作流 V2.0_2063816963884937217.json、图片生成/图生图/最新G image2电商主图工作流 V1.0_2063552510991888385.json、图片生成/图生图/最新G image2电商（主图+详情页）   1张图0.1元_2049756896084672513.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（音频生成/音频生成/IndexTTS-2音色克隆基础版单人_2094008558311526401.json、音频生成/音频生成/IndexTTS2_2080545181341937666.json、音频生成/音频生成/TTS2.0_2063267036876328962.json、音频生成/音频生成/TTS2.0单人一色克隆工作流_2053908634282799106.json、音频生成/音频生成/TTS2声音克隆+情感参考_1991491052590866434.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `LoadImage`
-- `ProcessString`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `ShowText|pysssss`
-- `Text`
-- `easy promptConcat`
-- `easy promptLine`
+全部 15 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `HAIGC_CombineUnits` —— 12/13 个有
-- `HAIGC_Layer` —— 12/13 个有
-- `HAIGC_SavePSD` —— 12/13 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 11/13 个有
-- `easy showAnything` —— 11/13 个有
-- `EmptyImage` —— 2/13 个有
-- `PreviewImage` —— 2/13 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/13 个有
-- `RH_RhartImageG2ImageToImage` —— 2/13 个有
-- `TT_img_enc` —— 1/13 个有
+- `PreviewAudio` —— 13/15 个有
+- `easy indexTTSEmotionVector` —— 10/15 个有
+- `easy indexTTSEmotionMerge` —— 6/15 个有
+- `Fast Groups Muter (rgthree)` —— 5/15 个有
+- `easy indexTTSAudioMerge` —— 2/15 个有
 
 ## 典型参数
 

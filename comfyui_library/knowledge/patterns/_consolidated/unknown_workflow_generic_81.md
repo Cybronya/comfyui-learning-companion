@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_generic_81
 type: Unknown Workflow
-frequency: 17
+frequency: 18
 level: moderate
-coverage: 0.609529
-common_nodes: [CR Text, PrimitiveFloat, RH_Screenwriter, SaveAudio, ShowText|pysssss, WujiLyricistNode, WujiMusicianACEStep15XL]
+coverage: 0.723556
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2051496739697381378.json, 数字人/数字人/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2070655336452804609.json, 视频生成/文生视频/歌曲生成 ACE-Step1.5XL及Suno+V5.5+手搓最强AI音乐创作_2051837837548498946.json, 音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047677304142303234.json, 音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047679987045638146.json, 音频生成/音频生成/ACE-Step1.5XL一句话写一首歌工作流_2046499811930677249.json, 音频生成/音频生成/ACE-Step1.5XL一键AI音乐_2044544358233415681.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5 手搓AI音乐_2044346549555175426.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5 手搓AI音乐_2046218158251450370.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2044244684310056962.json, 音频生成/音频生成/ACE-Step1.5XL及Suno V5.5 手搓最强AI音乐创作_2044246957450858497.json, 音频生成/音频生成/ACE-Step1.5XL和Suno V5 手搓AI音乐自动生成AI音乐工作流_2044642777891344385.json, 音频生成/音频生成/ACE-Step1.5XL和Suno V5 手搓AI音乐自动生成AI音乐工作流_2045401793181519874.json, 音频生成/音频生成/ACE-Step1.5XL生成AI音乐工作流_2061315627834503169.json, 音频生成/音频生成/ACE-Step1.5XL音乐创作_2058748276169601026.json, 音频生成/音频生成/AI 原创音乐生成_2047620955584860161.json, 音频生成/音频生成/超好用🔥一键手搓AI音乐 ACE-Step1.5XL及Suno V5可自行选择_2046796175285686274.json]
+members: [图片生成/反推提示词/换光线_光影迁移_反向打光_图二基底_Image2.5_2102673366527336449.json, 图片生成/反推提示词/换光线_光影迁移_重打光_氛围光_Image2.5_2102673422240276482.json, 图片生成/反推提示词/老虎雪山_动物入景_奔跑场景_野生动物_Image2.5_2102973030447271937.json, 图片生成/图生图/G2.5 image editing flare_2097889476910608385.json, 图片生成/图生图/Image 2.5 Flare 图像编辑 RH官方渠道版_2099305065948475394.json, 图片生成/图生图/[全能图片G2.5] 视觉重构图生图：风格迁移与多维局部重绘 _ 图片处理 _ 风格化 _ 图生图_2098936311485915138.json, "图片生成/图生图/b-最新全能图片模型,超低价7分钱_张_2076282670400753665.json", "图片生成/图生图/b-最新全能图片模型,超低价7分钱_张_2081238629002866690.json", 图片生成/图生图/【阡陌】最强全能图片G-Image-2.5换装工作流_2098377289271697410.json, 图片生成/图生图/全能G2.5图生图_2109180320099684354.json, 图片生成/图生图/全能图片2.0lite-图生图(双图编辑)_2077573460989140993.json, 图片生成/图生图/全能图片G image 2.5最强生图模型（图生图）_2110366679929810946.json, 图片生成/图生图/全能图片G image 2.5最强生图模型（图生图）_2110699491753025537.json, 图片生成/图生图/全能图片G2.5-图片重新渲染，添加装饰物_2100051879085568002.json, 图片生成/图生图/全能图片G2.5-图片重新渲染，添加装饰物_2100185156396077058.json, 图片生成/图生图/换摄影风格_胶片风_日系风_港风_赛博朋克_Image2.5_2100556042458451970.json, 图片生成/图生图/换材质_材质替换_质感替换_纹理生成_Image2.5_2100560701482954753.json, 图片生成/图生图/换画风_风格转绘_画风转换_AI转绘_Image2.5_2100556790797783041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_81
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2051496739697381378.json、数字人/数字人/ACE-Step1.5XL及Suno V5.5 手搓AI音乐最强创作_2070655336452804609.json、视频生成/文生视频/歌曲生成 ACE-Step1.5XL及Suno+V5.5+手搓最强AI音乐创作_2051837837548498946.json、音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047677304142303234.json、音频生成/音频生成/ACE-Step1.5XL && Suno V5 手搓AI音乐_2047679987045638146.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/反推提示词/换光线_光影迁移_反向打光_图二基底_Image2.5_2102673366527336449.json、图片生成/反推提示词/换光线_光影迁移_重打光_氛围光_Image2.5_2102673422240276482.json、图片生成/反推提示词/老虎雪山_动物入景_奔跑场景_野生动物_Image2.5_2102973030447271937.json、图片生成/图生图/G2.5 image editing flare_2097889476910608385.json、图片生成/图生图/Image 2.5 Flare 图像编辑 RH官方渠道版_2099305065948475394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `CR Text`
-- `PrimitiveFloat`
-- `RH_Screenwriter`
-- `SaveAudio`
-- `ShowText|pysssss`
-- `WujiLyricistNode`
-- `WujiMusicianACEStep15XL`
+全部 18 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 14/17 个有
-- `RH_Suno_Custom` —— 8/17 个有
-- `RH_RhartAudioSunoV55Single` —— 6/17 个有
-- `LoadImage` —— 1/17 个有
+- `RH_RhartImageG25FlareImageToImage` —— 15/18 个有
+- `JjkText` —— 9/18 个有
+- `PreviewImage` —— 5/18 个有
+- `EmptyImage` —— 4/18 个有
+- `RH_RhartImageNG31FlashLiteImageToImage` —— 3/18 个有
 
 ## 典型参数
 

@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_1024
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.944333
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.807
+common_nodes: [CR Text, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/六宫格图像生成_2062724357385965570.json, 图片生成/图生图/图片编辑-全能图片2_1991690438390411266.json, 图片生成/图生图/封面图片生成pro_2040311763392012290.json]
+members: [视频生成/文生视频/Qwen3-TTS 语音生成_2020653760749510657.json, 音频生成/音频生成/OmniVoice TTS语音设计_2064780678176264194.json, 音频生成/音频生成/OmniVoice 声音设计--中文方言--英文口音_2041470953061879809.json, 音频生成/音频生成/Qwen3-TTS 语音合成-自定义语音_2015153956795715586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1024
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/六宫格图像生成_2062724357385965570.json、图片生成/图生图/图片编辑-全能图片2_1991690438390411266.json、图片生成/图生图/封面图片生成pro_2040311763392012290.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 语音生成_2020653760749510657.json、音频生成/音频生成/OmniVoice TTS语音设计_2064780678176264194.json、音频生成/音频生成/OmniVoice 声音设计--中文方言--英文口音_2041470953061879809.json、音频生成/音频生成/Qwen3-TTS 语音合成-自定义语音_2015153956795715586.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `CR Text`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageNG31FlashImageToImage` —— 2/3 个有
-- `TextInputNode` —— 2/3 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
+- `PreviewAudio` —— 3/4 个有
+- `FB_Qwen3TTSCustomVoice` —— 2/4 个有
+- `OmniVoiceVoiceDesignTTS` —— 2/4 个有
 
 ## 典型参数
 

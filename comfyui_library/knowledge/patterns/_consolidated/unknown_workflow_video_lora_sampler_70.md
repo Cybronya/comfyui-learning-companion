@@ -1,75 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_70
 type: Unknown Workflow
-frequency: 20
-level: moderate
-coverage: 0.8242
-common_nodes: [CLIPVisionLoader, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 22
+level: strong
+coverage: 0.734227
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text Concatenate, Florence2ModelLoader, Florence2Run, INTConstant, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan+AnimateV2动作迁移工作流_1995333956365115393.json, 视频生成/图生视频/Wan2.2 Animate 动作迁移（手动版）_2053044709232263170.json, 视频生成/图生视频/Wan2.2 Animate-动作迁移_2011410598436806658.json, 视频生成/图生视频/Wan2.2 Animate-动作迁移_2011439752528011266.json, 视频生成/图生视频/Wan2.2 Animate动作迁移长视频生成加速版_1969252099450150913.json, 视频生成/图生视频/Wan2.2 Animate：角色动画革新，表演艺术的完美复刻！角色替换、动作迁移、图生视频_1969217356767653890.json, 视频生成/图生视频/Wan2.2+Animate+角色替换视频动作迁移+KJ加速版_1993551269581225986.json, 视频生成/图生视频/Wan2.2+Animate：角色替换、动作迁移、图生视频 美女跳舞视频，表演艺术的完美复刻！_1979432276058607617.json, 视频生成/图生视频/Wan2.2-Animate-视频动作迁移_2067088794045734914.json, 视频生成/图生视频/Wan2.2-Animate-视频动作迁移_2069232638564593665.json, 视频生成/图生视频/Wan2.2Animate+DWPose动作模仿工作流！墙裂推荐！表情精准迁移_2038302872932192257.json, 视频生成/图生视频/【人物替换】Wan2.2+Animate+角色替换视频动作迁移+KJ加速版-StarAI_1982315306993500162.json, 视频生成/图生视频/优化版 人物模特替换 动作克隆 首尾帧+角色替换 Wan2.2+Animate+角色替换视频动作迁移_1995682413978193921.json, 视频生成/图生视频/全新 Animate美女跳舞动作迁移V8极速版_2017854030659194882.json, 视频生成/图生视频/新Wan2.2 Animate-动作迁移_1983713271683457025.json, 视频生成/图生视频/新版动作迁移美女跳舞！Wan2.2-Animate V2超极速版_1974863458778918913.json, 视频生成/图生视频/男用动作迁移复制一键跳舞Wan2.2-Animate-视频动作迁移_2067576219452919809.json, 视频生成/图生视频/美女图片生成跳舞视频_1975800896795881473.json, 视频生成/图生视频/美女跳舞视频复刻_1975790920316620801.json, 视频生成/文生视频/Wan2.2 Animate美女图片跳舞 视频动作迁移_1970282441866964994.json]
+members: [视频生成/图生视频/WAN21特图生视频效合集_1930497096028426242.json, 视频生成/图生视频/Wan图生视频_运镜_1931553417045409794.json, 视频生成/图生视频/wan2.1 运镜lora_1927308974876692481.json, 视频生成/图生视频/一键电影运镜视频_1929861352612073473.json, 视频生成/图生视频/图片生成运镜视频（电影级）123_1929395097194938370.json, 视频生成/图生视频/图片生成运镜视频（电影级）_2043240803773980674.json, 视频生成/图生视频/图片生成运镜视频（电影级）_2043244111414697986.json, 视频生成/图生视频/图片生成运镜视频（电影运镜）_1929565877887471617.json, 视频生成/图生视频/图片运镜_2007615510288011266.json, 视频生成/图生视频/图生视频--效果超出想象---WAN21特图生视频效合集_2048597647006633986.json, 视频生成/图生视频/图生视频--效果超出想象---WAN21特图生视频效合集_2048657356048834561.json, 视频生成/图生视频/图生视频丨运镜视频合集（11款）_1978647980314136577.json, 视频生成/图生视频/电影1图片转运镜视频_1929869489117237249.json, 视频生成/图生视频/电影级别 运镜 图生视频 合集_1996871652937977858.json, 视频生成/图生视频/电影级别图片生成运镜视频_1929847163700854786.json, 视频生成/图生视频/电影级别运镜图生视频_1930122679813095426.json, 视频生成/图生视频/电影级别运镜图生视频合集_1930199609451384834.json, 视频生成/图生视频/电影级别运镜图生视频合集_1937550595018375170.json, 视频生成/图生视频/电影级别运镜图生视频合集_1980239592316186626.json, 视频生成/图生视频/电影级别运镜图生视频合集_1989638202606669825.json, 视频生成/图生视频/龙明wan2.1 运镜lora_1934983961166684161.json, 视频生成/文生视频/图片生成运镜视频（电影级）123_1951765085700214786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_70
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/Wan+AnimateV2动作迁移工作流_1995333956365115393.json、视频生成/图生视频/Wan2.2 Animate 动作迁移（手动版）_2053044709232263170.json、视频生成/图生视频/Wan2.2 Animate-动作迁移_2011410598436806658.json、视频生成/图生视频/Wan2.2 Animate-动作迁移_2011439752528011266.json、视频生成/图生视频/Wan2.2 Animate动作迁移长视频生成加速版_1969252099450150913.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/WAN21特图生视频效合集_1930497096028426242.json、视频生成/图生视频/Wan图生视频_运镜_1931553417045409794.json、视频生成/图生视频/wan2.1 运镜lora_1927308974876692481.json、视频生成/图生视频/一键电影运镜视频_1929861352612073473.json、视频生成/图生视频/图片生成运镜视频（电影级）123_1929395097194938370.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：22
+- **可信度**：强结论
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 22 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
+- `CR Text Concatenate`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSampler`
 - `LoadImage`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
+- `WanVideoTeaCacheKJ`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 19/20 个有
-- `FaceMaskFromPoseKeypoints` —— 19/20 个有
-- `ImageCropByMaskAndResize` —— 19/20 个有
-- `ImageResizeKJv2` —— 19/20 个有
-- `JWInteger` —— 19/20 个有
-- `PixelPerfectResolution` —— 19/20 个有
-- `WanVideoLoraSelectMulti` —— 19/20 个有
-- `ImageConcatMulti` —— 13/20 个有
-- `GetImageSizeAndCount` —— 12/20 个有
-- `Text` —— 12/20 个有
-- `WanVideoAnimateEmbeds` —— 12/20 个有
-- `GetNode` —— 10/20 个有
-- `SetNode` —— 10/20 个有
-- `RHHiddenNodes` —— 9/20 个有
-- `easy cleanGpuUsed` —— 8/20 个有
-- `VHS_VideoInfo` —— 7/20 个有
-- `LayerUtility: PurgeVRAM` —— 6/20 个有
-- `PrimitiveStringMultiline` —— 4/20 个有
-- `CR Text` —— 3/20 个有
-- `Int` —— 3/20 个有
-- `ImpactInt` —— 2/20 个有
-- `PreviewImage` —— 2/20 个有
-- `SaveImage` —— 2/20 个有
-- `SimpleMath+` —— 2/20 个有
-- `ImageResize+` —— 1/20 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/20 个有
-- `TT_img_enc` —— 1/20 个有
-- `VHS_VideoInfoLoaded` —— 1/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 19/22 个有
+- `PrimitiveString` —— 19/22 个有
+- `VHS_LoadVideo` —— 19/22 个有
+- `CR Prompt Text` —— 13/22 个有
+- `ShowText|pysssss` —— 10/22 个有
+- `easy getNode` —— 9/22 个有
+- `easy setNode` —— 9/22 个有
+- `CR Text` —— 6/22 个有
+- `Primitive integer [Crystools]` —— 1/22 个有
+- `easy anythingIndexSwitch` —— 1/22 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 22 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 22 | 100% |
+| 采样算法 | uni_pc | - | 22 | 100% |
+| 调度器 | simple | - | 22 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
 
 ## 常见问题
 
@@ -77,4 +74,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，22 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，22 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，22 个样本，一致性 100%
+- 调度器 最常用 simple，22 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）

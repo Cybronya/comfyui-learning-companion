@@ -1,76 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_371
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.864
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, BerniniS2VConditioning, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, Float, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RH_Captioner, RIFEInterpolation, SoundFlow_GetLength, Text, TextConcatenate_UTK, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+frequency: 8
+level: moderate
+coverage: 0.6285
+common_nodes: [CLIPVisionLoader, DrawViTPose, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/bernini人物自然动态 开口说话_2082333319848615938.json, 视频生成/图生视频/bernini自然动态人物开口说话2_2082400679599108097.json, 视频生成/图生视频/bernini自然动态人物开口说话3_2082406303087022082.json, 视频生成/图生视频/最新视频人物开口唱歌_2078383851998629890.json, 视频生成/图生视频/跨境电商数字人开口说话V4_2079478844951715841.json, 视频生成/图生视频/跨境电商数字人开口说话V5_2079504635626352642.json, 视频生成/图生视频/跨境电商数字人开口说话V6_2079510043048890369.json]
+members: [数字人/数字人/原始视频收集或拍摄+Animate人物替换_1998606846065803265.json, 数字人/数字人/原始视频收集或拍摄+Animate人物替换_2053330594825818113.json, 数字人/数字人/数字人板块：Animate视频人物替换工作流_2051238079196872705.json, 视频生成/图生视频/Animate视频人物替换工作流_2069422147151417345.json, 视频生成/图生视频/Wan2.2 Animate V2版-视频转绘动作迁移_1976593221134454786.json, 视频生成/图生视频/Wan2.2 Animate V2版-视频转绘动作迁移_2000375060164640769.json, 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ手动版人物角色替换_1983039224398131201.json, 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ自动版人物角色替换_1982691601984167937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_371
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/bernini人物自然动态 开口说话_2082333319848615938.json、视频生成/图生视频/bernini自然动态人物开口说话2_2082400679599108097.json、视频生成/图生视频/bernini自然动态人物开口说话3_2082406303087022082.json、视频生成/图生视频/最新视频人物开口唱歌_2078383851998629890.json、视频生成/图生视频/跨境电商数字人开口说话V4_2079478844951715841.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/原始视频收集或拍摄+Animate人物替换_1998606846065803265.json、数字人/数字人/原始视频收集或拍摄+Animate人物替换_2053330594825818113.json、数字人/数字人/数字人板块：Animate视频人物替换工作流_2051238079196872705.json、视频生成/图生视频/Animate视频人物替换工作流_2069422147151417345.json、视频生成/图生视频/Wan2.2 Animate V2版-视频转绘动作迁移_1976593221134454786.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `BerniniS2VConditioning`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `Float`
-- `Int`
-- `KSamplerAdvanced`
+全部 8 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DrawViTPose`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `RH_Captioner`
-- `RIFEInterpolation`
-- `SoundFlow_GetLength`
-- `Text`
-- `TextConcatenate_UTK`
-- `TrimAudioDuration`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/7 个有
-- `GoogleTranslateTextNode` —— 4/7 个有
-- `Float to Int` —— 3/7 个有
-- `ImageFromBatch` —— 3/7 个有
-- `RH_Translator` —— 3/7 个有
-- `easy mathFloat` —— 3/7 个有
-- `easy mathInt` —— 3/7 个有
-- `PreviewAny` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
+- `BlockifyMask` —— 6/8 个有
+- `DrawMaskOnImage` —— 6/8 个有
+- `GetNode` —— 6/8 个有
+- `ImageFromBatch` —— 6/8 个有
+- `ImageResize+` —— 6/8 个有
+- `SeCModelLoader` —— 6/8 个有
+- `SeCVideoSegmentation` —— 6/8 个有
+- `SetNode` —— 6/8 个有
+- `WanVideoSetBlockSwap` —— 6/8 个有
+- `WanVideoSetLoRAs` —— 6/8 个有
+- `easy showAnything` —— 6/8 个有
+- `LayerMask: MaskPreview` —— 5/8 个有
+- `PointsEditor` —— 5/8 个有
+- `ImageConcanate` —— 4/8 个有
+- `GrowMask` —— 3/8 个有
+- `SaveImage` —— 3/8 个有
+- `AddMask` —— 2/8 个有
+- `ImageResizeKJv2` —— 2/8 个有
+- `LayerMask: MaskGrow` —— 2/8 个有
+- `RH_Nano_Banana_Image2Image` —— 2/8 个有
+- `SDPoseOODLoader` —— 2/8 个有
+- `SDPoseOODProcessor` —— 2/8 个有
+- `SeCModelLoader_Ultra-Fast` —— 2/8 个有
+- `SeCVideoSegmentation_Ultra-Fast` —— 2/8 个有
+- `CR Text` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 7 | 100% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | dpmpp_2m_sde | - | 7 | 100% |
-| 重绘幅度 | sgm_uniform | - | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,8 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 dpmpp_2m_sde，7 个样本，一致性 100%
-- 重绘幅度 最常用 sgm_uniform，7 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

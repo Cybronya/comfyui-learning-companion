@@ -1,82 +1,84 @@
 ---
 name: unknown_workflow_controlnet_video_lora_35
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8905
-common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, ImageConcatMulti, KSamplerSelect, LTXVConcatAVLatent, LayerUtility: ImageBlend V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadMoGeModel, LoraLoaderModelOnly, MiniMaxH3FunControlNetApply, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MoGeInference, MoGeRender, ModelAttentionBackend, ModelPatchLoader, ModelPreviewOverrideKJ, PrimitiveFloat, RMBG, ResolutionSelector, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3TST, SetLatentNoiseMask, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAEEncodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy positive, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.704667
+common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1-Aiden-动作迁移升级版本！法线参考！固定提示词！_2109297773538537473.json, 视频生成/图生视频/MiniMax H3 动作迁移（稳定版）_2110563071742799873.json]
+members: [平台全量/SCAIL-Pose动作迁移-支持真人_动漫_卡通_拟人 IP_动物 等风格化角色的动作生成_2051695050878406657.json, 平台全量/动作迁移合集（吐血整理）人类（动物）单人（多人）_2027637518782439426.json, 平台全量/极强姿态识别SDPose+Wan2.2 Animate动作迁移方案_2052501347337023490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_35
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/1-Aiden-动作迁移升级版本！法线参考！固定提示词！_2109297773538537473.json、视频生成/图生视频/MiniMax H3 动作迁移（稳定版）_2110563071742799873.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/SCAIL-Pose动作迁移-支持真人_动漫_卡通_拟人 IP_动物 等风格化角色的动作生成_2051695050878406657.json、平台全量/动作迁移合集（吐血整理）人类（动物）单人（多人）_2027637518782439426.json、平台全量/极强姿态识别SDPose+Wan2.2 Animate动作迁移方案_2052501347337023490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `ImageConcatMulti`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LayerUtility: ImageBlend V2`
+全部 3 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoadMoGeModel`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3FunControlNetApply`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `MoGeInference`
-- `MoGeRender`
-- `ModelAttentionBackend`
-- `ModelPatchLoader`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `RMBG`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `SelfLiftAvatarH3TST`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncodeAudio`
-- `VAELoader`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy positive`
-- `easy showAnything`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoUni3C_ControlnetLoader`
+- `WanVideoUni3C_embeds`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MMH3LatentUpscaleWithModelParams` —— 1/2 个有
-- `MMH3TemporalSplitParams` —— 1/2 个有
-- `MMH3UltimateUpscale` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `VOSR2ModelLoader` —— 1/2 个有
-- `VOSR2Upscale` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `Display Any (rgthree)` —— 2/3 个有
+- `DownloadAndLoadNLFModel` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `NLFPredict` —— 2/3 个有
+- `PoseDetectionVitPoseToDWPose` —— 2/3 个有
+- `RenderNLFPoses` —— 2/3 个有
+- `SDPoseOODLoader` —— 2/3 个有
+- `SDPoseOODProcessor` —— 2/3 个有
+- `WanVideoContextOptions` —— 2/3 个有
+- `easy mathInt` —— 2/3 个有
+- `CM_FloatToInt` —— 1/3 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `Fast Groups Muter (rgthree)` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `PixelPerfectResolution` —— 1/3 个有
+- `PoseDetectionOneToAllAnimation` —— 1/3 个有
+- `YOLOModelLoader` —— 1/3 个有
+- `easy getNode` —— 1/3 个有
+- `easy setNode` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| ControlNet 权重 | 0.45 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,5 +86,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.45，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

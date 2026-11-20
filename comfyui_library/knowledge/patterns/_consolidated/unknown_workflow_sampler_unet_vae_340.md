@@ -1,61 +1,74 @@
 ---
 name: unknown_workflow_sampler_unet_vae_340
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.83
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, ImageResizeKJv2, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo]
+frequency: 3
+level: moderate
+coverage: 0.967
+common_nodes: [BasicGuider, CLIPLoader, CreateVideo, GetImageSizeAndCount, GrowMask, ImageBlur, ImageCompositeMasked, ImageScaleToTotalPixels, ImageToMask, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoadVideoDepthAnythingModel, MaskToImage, MiniMaxH3ReferenceToVideo, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, PointsEditor, RandomNoise, SamplerCustomAdvanced, SaveVideo, SeCModelLoader, SeCVideoSegmentation, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VideoDepthAnythingProcess]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax_H3_Ref2VA全功能_官方提示词版_2084288422902059010.json, 视频生成/文生视频/【遇见AI】Minimax H3，多参考生图，9视频9图3音频_2084533778860568577.json]
+members: [视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（Face Refine 精修版）_2106049462291492865.json, 视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（无声版）_2105985623722119170.json, 视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（标准版）_2105941709917081601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_340
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MiniMax_H3_Ref2VA全功能_官方提示词版_2084288422902059010.json、视频生成/文生视频/【遇见AI】Minimax H3，多参考生图，9视频9图3音频_2084533778860568577.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（Face Refine 精修版）_2106049462291492865.json、视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（无声版）_2105985623722119170.json、视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（标准版）_2105941709917081601.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
 - `CreateVideo`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+- `GetImageSizeAndCount`
+- `GrowMask`
+- `ImageBlur`
+- `ImageCompositeMasked`
+- `ImageScaleToTotalPixels`
+- `ImageToMask`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
+- `LoadVideoDepthAnythingModel`
+- `MaskToImage`
 - `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
+- `MiniMaxH3VDNExecutionPlanT8Advanced`
+- `MiniMaxH3VDNModelComposerT8Advanced`
+- `PointsEditor`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SaveVideo`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `SetLatentNoiseMask`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_LoadVideo`
+- `VideoDepthAnythingProcess`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ImageScaleDownToSize` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `JoinStrings` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
-- `easy positive` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
+- `LoadVideo` —— 2/3 个有
+- `VHS_VideoInfoLoaded` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `GetVideoComponents` —— 1/3 个有
+- `MiniMaxH3AVDecodeT8` —— 1/3 个有
+- `MiniMaxH3AudioConditioningT8` —— 1/3 个有
+- `MiniMaxH3AudioMixT8` —— 1/3 个有
+- `MiniMaxH3FaceRefineConditioningT8Advanced` —— 1/3 个有
+- `MiniMaxH3FaceRefinePlanT8Advanced` —— 1/3 个有
+- `MiniMaxH3FaceRefineSamplerT8Advanced` —— 1/3 个有
+- `MiniMaxH3FaceRefineStitchAuditT8Advanced` —— 1/3 个有
+- `MiniMaxH3OutputTrimT8` —— 1/3 个有
+- `MiniMaxH3SafeAVSaveT8Advanced` —— 1/3 个有
 
 ## 典型参数
 
@@ -67,4 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

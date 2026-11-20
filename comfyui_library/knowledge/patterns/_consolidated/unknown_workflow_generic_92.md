@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_92
 type: Unknown Workflow
-frequency: 15
+frequency: 18
 level: moderate
-coverage: 0.955133
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.928
+common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/video_wan_dancer.json, 图片生成/图生图/2.0_全能参考生真人视频正式_2037474868786110466.json, 视频生成/图生视频/RH自研宇宙最强超能视频2.0 全能参考 直出真人视频_2037490181506338818.json, 视频生成/图生视频/SD2.0_多模态视频_2037079726090625025.json, 视频生成/图生视频/SD2全能参考_2038100605071265794.json, 视频生成/图生视频/SK_ref_2038870799821578241.json, 视频生成/图生视频/Seedance 2.0 全能参考生视频-真人参考_2046131661640830977.json, 视频生成/图生视频/Seedance2.0_API版-全能参考视频_2111086748641087490.json, 视频生成/图生视频/Seedance2.0全能参考视频_2042556695511048193.json, 视频生成/图生视频/Seedance2.0全能参考视频_2054429466671230977.json, 视频生成/图生视频/Seedance2.0全能参考视频_2074327543133593602.json, 视频生成/图生视频/Seedance2.0全能短剧_影视视频_短视频_游戏角色设计_视频生成利器_2045034837869858818.json, 视频生成/图生视频/Seedance2.5多模态视频_2085877475762073602.json, 视频生成/文生视频/Seedance2.5多模态视频_2089263081233928193.json, 视频生成/文生视频/Seedance2.5多模态视频_2095476090239275009.json]
+members: [数字人/数字人/声音克隆-旭旭妹妹_2057441954903973890.json, 数字人/数字人/声音克隆_2002282349498888194.json, 数字人/数字人/空白工作流_2063267457644711937.json, 音频生成/音频生成/AI漫剧人物配音_2012386146013159425.json, 音频生成/音频生成/Easy IndexTTS2(单人)_2014605043634278401.json, 音频生成/音频生成/Easy IndexTTS2声音克隆_2047507297852727297.json, 音频生成/音频生成/Easy IndexTTS2声音克隆（音色情感）_2047606763695906817.json, 音频生成/音频生成/Easy IndexTTS2情绪调节-Novel Board AI API调用专用工作流_2005657337744551938.json, 音频生成/音频生成/Easy IndexTTS2无限组合版(单人)_2033965814369492994.json, 音频生成/音频生成/IndexTTS2-语音克隆-超好用_2094651565981388801.json, 音频生成/音频生成/IndexTTS2单人语音克隆 音色情感(EmotionVector)_2063189618245324802.json, 音频生成/音频生成/IndexTTS基础情感控制_2053641347223044097.json, 音频生成/音频生成/TTS2声音克隆超高还原度_2044789222619484161.json, 音频生成/音频生成/乱神版-Easy IndexTTS2情感控制（单人）_2073213371335405569.json, 音频生成/音频生成/声音克隆（最强克隆音色，情感调节）_2083171538429366274.json, 音频生成/音频生成/小赛数字人语音生成_2041358520972484609.json, 音频生成/音频生成/工作流视频篇6-TTS2声音克隆+情感参考_2018236652564516865.json, 音频生成/音频生成/情感参考声音克隆_2080548502798692353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_92
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan_dancer.json、图片生成/图生图/2.0_全能参考生真人视频正式_2037474868786110466.json、视频生成/图生视频/RH自研宇宙最强超能视频2.0 全能参考 直出真人视频_2037490181506338818.json、视频生成/图生视频/SD2.0_多模态视频_2037079726090625025.json、视频生成/图生视频/SD2全能参考_2038100605071265794.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（数字人/数字人/声音克隆-旭旭妹妹_2057441954903973890.json、数字人/数字人/声音克隆_2002282349498888194.json、数字人/数字人/空白工作流_2063267457644711937.json、音频生成/音频生成/AI漫剧人物配音_2012386146013159425.json、音频生成/音频生成/Easy IndexTTS2(单人)_2014605043634278401.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 18 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 14/15 个有
-- `LoadVideo` —— 13/15 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 11/15 个有
-- `JjkText` —— 4/15 个有
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 3/15 个有
-- `f7467834-35a6-42fe-b525-7f17383beb4f` —— 1/15 个有
+- `PreviewAudio` —— 14/18 个有
+- `CR Prompt Text` —— 11/18 个有
+- `easy indexTTSEmotionVector` —— 9/18 个有
+- `PrimitiveStringMultiline` —— 2/18 个有
+- `PrimitiveFloat` —— 1/18 个有
+- `孤海注释` —— 1/18 个有
 
 ## 典型参数
 

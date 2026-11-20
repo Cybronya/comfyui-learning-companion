@@ -1,82 +1,77 @@
 ---
 name: text_to_image_sampler_clip_unet_5
 type: Text To Image
-frequency: 32
-level: weak
-coverage: 0.898656
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, TTResolutionSelector, UNETLoader, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 28
+level: moderate
+coverage: 0.92175
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/krea2+Qwen3.5-自动多风格文生图_2084922609443102721.json, 图片生成/文生图/Krea 2田园风格感文生图处理工作流_2101011311219003393.json, 图片生成/文生图/Krea2全自动反推工作流 文生图提示词反推_2100275220467773441.json, 图片生成/文生图/krea2 MJ风格工作流 美学风格生成_2109041547172999169.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2072869610650689537.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084176385911902210.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084180097455710209.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084184981282312193.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084188539746611201.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084191590809165826.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084543653397221377.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084547006332231681.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084566111013662721.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2084568266718142466.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2086317060350631938.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2086324082525696001.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2089597886714699778.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2089606694295924738.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2093221605420916737.json, 图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2093225496157970434.json, 图片生成/文生图/krea2_MJ风格工作流_2108594095500386306.json, 图片生成/文生图/krea2全自动反推工作流_2099842463920902146.json, 图片生成/文生图/krea2田园风格MJ感工作流_2100583054992568322.json, 图片生成/文生图/krea2田园风格MJ感工作流_2102923019374125057.json, 图片生成/文生图/krea2田园风格MJ感工作流_2104384123690373122.json, 图片生成/文生图/krea2田园风格MJ感工作流_2104754840189624322.json, 图片生成/文生图/krea2田园风格MJ感工作流｜文生图氛围感拉满_2100772461267734530.json, 图片生成/文生图/全自动krea2万物迁移_万物复刻_2070712730314694658.json, 图片生成/文生图/多风格文生图｜krea2+Qwen3.5自动生成_2089836661319487489.json, 图片生成/文生图/多风格自动文生图｜Qwen3.5+krea2风格轮换生成_2093467909044658177.json, 图片生成/文生图/自动多风格文生图｜krea2+Qwen3.5一键直出_2093466592263888897.json, 视频生成/图生视频/krea2+Qwen3.5-自动多风格文生图 (1)_2085254333008007169.json]
+members: [图片生成/文生图/Z-image文生图+反推生图_1993976543361908738.json, 图片生成/文生图/Z-image文生图+图生图_1994184481552744449.json, 图片生成/文生图/Z-image文生图_1993860574876467201.json, 图片生成/文生图/Z-image文生图_1993881668454907906.json, 图片生成/文生图/Z-image文生图_1993883811278684161.json, 图片生成/文生图/Z-image文生图_1993952320304201730.json, 图片生成/文生图/Z-image文生图_2002734393544306690.json, 图片生成/文生图/Z-image文生图写实，真实感_1999363958169628673.json, 图片生成/文生图/Z-image文生图新王-支持中文_1995027322610888706.json, 图片生成/文生图/Z-image文生图新王-支持中文_1995287563680276482.json, 图片生成/文生图/Z-image文生图极速高质量_1996077196244631554.json, 图片生成/文生图/Z-image文生图（速度与质量兼得）_1995796523411705857.json, 图片生成/文生图/Z-image最强文生图模型_1994953430059954178.json, 图片生成/文生图/Z-image生图_2102776816992866305.json, 图片生成/文生图/Z-image造像-文生图（最强写实人像）_1994314682653671425.json, 图片生成/文生图/Z-image高优化文生图、可生成多张_2053636873704226817.json, 图片生成/文生图/Z-image，出图 效果炸裂，效果超越Flux2_1993931824883843074.json, 图片生成/文生图/Z-image，最强文生图_1994408486224207874.json, 图片生成/文生图/ZImage 光速高清文生图_1988965178039480322.json, 图片生成/文生图/ZImage3.0-SUPER 文生图_2017812013216436226.json, 图片生成/文生图/Zimage图像模型（支持真人的国产加速模型）_2028268832682418177.json, 图片生成/文生图/Zimage图生图(洗图)_1993865488509976578.json, 图片生成/文生图/Zimage文生图_2013426591489069057.json, 图片生成/文生图/Zimage超越Flux2的国产图像模型（支持真人的国产加速模型）_1993888771909369858.json, 图片生成/文生图/Zimage超越Flux2的国产图像模型（支持真人的国产加速模型）_1995004425267818497.json, 图片生成/文生图/Zimage超越Flux2的国产图像模型（支持真人的国产加速模型）_2038275878496505858.json, 图片生成/文生图/Zimage（支持真人的国产加速模型）_2027694676630835201.json, 图片生成/文生图/Zimage（支持真人的国产加速模型）_2027695408717238273.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_5
 
-> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/图生图/krea2+Qwen3.5-自动多风格文生图_2084922609443102721.json、图片生成/文生图/Krea 2田园风格感文生图处理工作流_2101011311219003393.json、图片生成/文生图/Krea2全自动反推工作流 文生图提示词反推_2100275220467773441.json、图片生成/文生图/krea2 MJ风格工作流 美学风格生成_2109041547172999169.json、图片生成/文生图/krea2+Qwen3.5-自动多风格文生图_2072869610650689537.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（图片生成/文生图/Z-image文生图+反推生图_1993976543361908738.json、图片生成/文生图/Z-image文生图+图生图_1994184481552744449.json、图片生成/文生图/Z-image文生图_1993860574876467201.json、图片生成/文生图/Z-image文生图_1993881668454907906.json、图片生成/文生图/Z-image文生图_1993883811278684161.json…）
 
 - **类型**：Text To Image
-- **样本数**：32
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：28
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 32 个 workflow 都包含：
+全部 28 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
 - `SaveImage`
-- `TTResolutionSelector`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 31/32 个有
-- `VAEDecode` —— 31/32 个有
-- `LoraLoaderModelOnly` —— 30/32 个有
-- `Label (rgthree)` —— 23/32 个有
-- `ShowText|pysssss` —— 21/32 个有
-- `ConditioningKrea2Rebalance` —— 10/32 个有
-- `SetNode` —— 10/32 个有
-- `孤海注释` —— 8/32 个有
-- `JjkText` —— 7/32 个有
-- `solarL_SaveImagesToZip` —— 7/32 个有
-- `LoadImage` —— 4/32 个有
-- `MuyeLoadImage` —— 2/32 个有
+- `ConditioningZeroOut` —— 27/28 个有
+- `PrimitiveInt` —— 10/28 个有
+- `PrimitiveStringMultiline` —— 7/28 个有
+- `LoadImage` —— 3/28 个有
+- `VAEEncode` —— 3/28 个有
+- `LoraLoader` —— 2/28 个有
+- `AILab_QwenVL` —— 1/28 个有
+- `ColorMatch` —— 1/28 个有
+- `GetImageSizeAndCount` —— 1/28 个有
+- `RH_Captioner` —— 1/28 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 80 - 1024 | 32 | 42% |
-| 高度 | 512 | 80 - 1024 | 32 | 42% |
-| 采样步数 | 8 | 4 - 8 | 32 | 77% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 32 | 18% |
-| 采样算法 | euler | - | 32 | 78% |
-| 调度器 | simple | - | 32 | 78% |
-| 重绘幅度 | 1 | 1 - 1 | 32 | 100% |
+| 采样步数 | 10 | 8 - 35 | 28 | 40% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5.5 | 28 | 16% |
+| 采样算法 | euler | - | 28 | 100% |
+| 调度器 | simple | - | 28 | 96% |
+| 重绘幅度 | 1 | 1 - 1 | 28 | 100% |
+| 宽度 | 1080 | 512 - 1920 | 28 | 70% |
+| 高度 | 1408 | 512 - 1920 | 28 | 62% |
+| LoRA 模型强度 | 0.6 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 39/32 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 1/32 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 3/28 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 80 - 1024，32 个样本，取值分散，一致性仅 42%
-- 高度 中位数 512，观测区间 80 - 1024，32 个样本，取值分散，一致性仅 42%
-- 采样步数 中位数 8，观测区间 4 - 8，32 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，32 个样本，取值分散，一致性仅 18%
-- 采样算法 最常用 euler，32 个样本，一致性 78%
-- 调度器 最常用 simple，32 个样本，一致性 78%
-- 重绘幅度 中位数 1，观测区间 1 - 1，32 个样本，取值集中（一致性 100%）
-- 高发问题（39/32 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 8 - 35，28 个样本，取值分散，一致性仅 40%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5.5，28 个样本，取值分散，一致性仅 16%
+- 采样算法 最常用 euler，28 个样本，一致性 100%
+- 调度器 最常用 simple，28 个样本，一致性 96%
+- 重绘幅度 中位数 1，观测区间 1 - 1，28 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1080，观测区间 512 - 1920，28 个样本
+- 高度 中位数 1408，观测区间 512 - 1920，28 个样本
+- LoRA 模型强度 中位数 0.6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

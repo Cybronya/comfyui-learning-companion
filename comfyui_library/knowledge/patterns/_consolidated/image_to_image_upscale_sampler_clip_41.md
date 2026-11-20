@@ -1,89 +1,64 @@
 ---
 name: image_to_image_upscale_sampler_clip_41
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.82
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Florence2ModelLoader, Florence2Run, GetNode, Image Comparer (rgthree), ImageFromBatch, ImageResize+, ImageScaleToTotalPixels, ImageTile+, ImageUntile+, ImageUpscaleWithModel, KSampler, LoadImage, PreviewImage, RH_Captioner_Pro, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UltimateSDUpscaleNoUpscale, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize, easy int]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 4
+level: strong
+coverage: 0.84325
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSampler, LoadImage, SaveImage, UpscaleModelLoader, VAEDecode, VAEEncode]
+problems: []
 missing: []
-members: [图片生成/图生图/zimage分块放大高清细节_2057662040130539522.json, 图片生成/图生图/zimage分块放大高清细节_2061057523846828034.json]
+members: [图片生成/图生图/真人转绘动漫_1902191520798416898.json, 图片生成/文生图/图生图三重放大工作流_1892316086548008961.json, 平台全量/一键真人转二次元_1906322438920278017.json, 平台全量/图片清晰_2004151265187774465.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_sampler_clip_41
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/zimage分块放大高清细节_2057662040130539522.json、图片生成/图生图/zimage分块放大高清细节_2061057523846828034.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/真人转绘动漫_1902191520798416898.json、图片生成/文生图/图生图三重放大工作流_1892316086548008961.json、平台全量/一键真人转二次元_1906322438920278017.json、平台全量/图片清晰_2004151265187774465.json）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImageScaleToTotalPixels`
-- `ImageTile+`
-- `ImageUntile+`
-- `ImageUpscaleWithModel`
+- `CheckpointLoaderSimple`
 - `KSampler`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Captioner_Pro`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `ShowText|pysssss`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `UNETLoader`
-- `UltimateSDUpscaleNoUpscale`
 - `UpscaleModelLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy imageSize`
-- `easy int`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageUpscaleWithModel` —— 3/4 个有
+- `CLIPSetLastLayer` —— 2/4 个有
+- `LatentUpscaleBy` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `UltimateSDUpscale` —— 2/4 个有
+- `scale` —— 2/4 个有
+- `UpscaleImageByUsingModel` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 5 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | dpmpp_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 0.15 | - | 2 | 100% |
+| 采样步数 | 27.5 | 20 - 30 | 4 | 84% |
+| Prompt 约束强度(CFG) | 7 | 6.5 - 7 | 4 | 97% |
+| 采样算法 | euler_ancestral | - | 4 | 50% |
+| 调度器 | ddim_uniform | - | 4 | 50% |
+| 重绘幅度 | 0.555 | 0.5 - 0.6 | 4 | 91% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.15，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 高发问题（2/2 个样本）：发现KSampler但没有VAEDecode
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 27.5，观测区间 20 - 30，4 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 7，观测区间 6.5 - 7，4 个样本，取值集中（一致性 97%）
+- 采样算法 最常用 euler_ancestral，4 个样本，一致性 50%
+- 调度器 最常用 ddim_uniform，4 个样本，一致性 50%
+- 重绘幅度 中位数 0.555，观测区间 0.5 - 0.6，4 个样本，取值集中（一致性 91%）

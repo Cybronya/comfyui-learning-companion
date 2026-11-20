@@ -1,75 +1,77 @@
 ---
 name: image_to_image_lora_sampler_unet_19
 type: Image To Image
-frequency: 18
+frequency: 20
 level: strong
-coverage: 0.777833
-common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9727
+common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea-2-服装转移 服装试穿_2079811923427811330.json, 图片生成/图生图/Krea2 一键人物三视图+动态表情_2101374666509209601.json, 图片生成/图生图/Krea2 一键人物三视图+动态表情_2103482978172227585.json, 图片生成/图生图/Krea2 一键角色四视图_2090402745974087682.json, 图片生成/图生图/Krea2 人物一致性编辑_2082160207756611585.json, 图片生成/图生图/Krea2 服装提取_2093739389833793538.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100031704340717570.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100145717296852994.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2108446641257795585.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2108452003608350722.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2108471820046397441.json, 图片生成/图生图/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2108473367333527553.json, 图片生成/图生图/Krea2 角色四视图_2100439894907772929.json, 图片生成/图生图/Krea2_角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100403705555283969.json, 图片生成/图生图/Krea2_角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100491753827688450.json, 图片生成/图生图/Krea2_角色(漫剧+真人)资产四视图一键生成｜4步加速版_2101079172696330242.json, 数字人/数字人/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2099860117662560257.json, 视频生成/图生视频/Krea2 角色(漫剧+真人)资产四视图一键生成｜4步加速版_2100042152431669249.json]
+members: [图片生成/图生图/一键多角度一致性_1986711907254087682.json, 图片生成/图生图/一键完美图片去水印TextEncode QwenlmageEdit2511_1988876685514772482.json, 图片生成/图生图/一键换衣千问qwen2511最新图像编辑换装千问2511_2034603108478754818.json, 图片生成/图生图/一键换装工作流，无需遮罩_2096447517775978497.json, 图片生成/图生图/一键美瞳_2009605418158399489.json, 图片生成/图生图/人物替换2.0影视二创换人qwen2511最新图像编辑换装千问2511追赶+全能图片V1_2005243921284431874.json, 图片生成/图生图/人物电商万物换背景优化版本qwen2511_2066095762181808129.json, 图片生成/图生图/千问2511三图编辑_2004810240099053569.json, 图片生成/图生图/千问2511双图编辑_2004808317312663553.json, 图片生成/图生图/去水印qwen2511图像编辑_2085425004350631937.json, 图片生成/图生图/去水印qwen2511最新图像编辑_2046215955486871553.json, 图片生成/图生图/去水印qwen2511最新图像编辑_2077306954288029698.json, 图片生成/图生图/去水印qwen2511最新图像编辑_2116398640972521474.json, 图片生成/图生图/去水印qwen2511最新图像编辑换装千问2511追赶+全能图片V1(2)_2004758081252847618.json, 图片生成/图生图/去水印qwen2511最新图像编辑换装千问2511追赶+全能图片V1_2053656485862887425.json, 图片生成/图生图/图片去水印-Qwen2511-无角标出图_2079924667032363010.json, 图片生成/图生图/图片去水印_2038881204849610753.json, 平台全量/去水印+换装换脸多图编辑高清修复  QwenEdit最新图像编辑换装全能图片2.0_2038774886381920258.json, 平台全量/多图编辑 去水印+换装换脸高清修复 QwenEdit最新图像编辑换装全能图片2.0_2039222441611894786.json, 平台全量/换头换脸换装+去水印 双图编辑 Qwen2511最新图像编辑换装千问2511全能图片_2053639223097479170.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_19
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/Krea-2-服装转移 服装试穿_2079811923427811330.json、图片生成/图生图/Krea2 一键人物三视图+动态表情_2101374666509209601.json、图片生成/图生图/Krea2 一键人物三视图+动态表情_2103482978172227585.json、图片生成/图生图/Krea2 一键角色四视图_2090402745974087682.json、图片生成/图生图/Krea2 人物一致性编辑_2082160207756611585.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/一键多角度一致性_1986711907254087682.json、图片生成/图生图/一键完美图片去水印TextEncode QwenlmageEdit2511_1988876685514772482.json、图片生成/图生图/一键换衣千问qwen2511最新图像编辑换装千问2511_2034603108478754818.json、图片生成/图生图/一键换装工作流，无需遮罩_2096447517775978497.json、图片生成/图生图/一键美瞳_2009605418158399489.json…）
 
 - **类型**：Image To Image
-- **样本数**：18
+- **样本数**：20
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
+全部 20 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
+- `ImageScaleToTotalPixels`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 14/18 个有
-- `PreviewImage` —— 13/18 个有
-- `GetNode` —— 12/18 个有
-- `SetNode` —— 12/18 个有
-- `孤海注释` —— 12/18 个有
-- `MuyeTextEditOutput` —— 2/18 个有
-- `ResolutionSelector` —— 2/18 个有
-- `EmptyImage` —— 1/18 个有
-- `ImageResizeKJv2` —— 1/18 个有
-- `PrimitiveStringMultiline` —— 1/18 个有
-- `SaveAnimatedWEBP` —— 1/18 个有
-- `easy imageConcat` —— 1/18 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 19/20 个有
+- `CR Text` —— 18/20 个有
+- `ImageConcanate` —— 16/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/20 个有
+- `CustomAddLabel` —— 1/20 个有
+- `GetImageSize` —— 1/20 个有
+- `ImageScale` —— 1/20 个有
+- `JDCN_StringToList` —— 1/20 个有
+- `PreviewImage` —— 1/20 个有
+- `PrimitiveStringMultiline` —— 1/20 个有
+- `easy imageSize` —— 1/20 个有
+- `easy seed` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 18 | 95% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
-| 采样算法 | euler | - | 18 | 89% |
-| 调度器 | simple | - | 18 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+| 采样步数 | 4 | 4 - 8 | 20 | 73% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 20 | 100% |
+| 采样算法 | euler | - | 20 | 100% |
+| 调度器 | simple | - | 20 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 20/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，18 个样本，取值集中（一致性 95%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，18 个样本，一致性 89%
-- 调度器 最常用 simple，18 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 8，20 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，20 个样本，一致性 100%
+- 调度器 最常用 simple，20 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 高发问题（20/20 个样本）：Steps较低可能导致细节不足

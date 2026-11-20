@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_350
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveImage, easy imageRemBg]
+coverage: 0.96725
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/007.其他-功能风格002.快速抠图+遮罩获取_2035400193734086658.json, 图片生成/图生图/260110008.快速抠图+遮罩获取_2011257083529797633.json, 图片生成/图生图/Image Remove Bg一键抠图_抠像_去背景-透明背景_2020020197062610945.json, 图片生成/图生图/多通道一键抠图去背景_1949677450980139010.json, 图片生成/图生图/抠图_1961729963818991618.json, 图片生成/图生图/抠图（超牛）_2017208972964536322.json, 数字人/数字人/抠图（超牛）_2011716953840295938.json]
+members: [图片生成/图生图/Wan3多模态_全参工作流_2114263341400158210.json, 图片生成/图生图/Wan3多模态_全参工作流_2115292514860232706.json, 平台全量/wan3.0多模态生视频_2092440364023111681.json, 视频生成/图生视频/RH 万相3.0-参考生视频_2091836892085051394.json, 视频生成/图生视频/Wan3.0低价版-直出30秒-全能参考生视频_2094412237648785410.json, 视频生成/图生视频/Wan3.0低价版-直出30秒-单图_首尾帧生视频_2093004641251454977.json, 视频生成/图生视频/Wan3多模态_全参工作流_2092187009434607617.json, 视频生成/图生视频/阿里最强视频模型wan3.0多模态生视频低至0.21元_秒_2092413729613893633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_350
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/007.其他-功能风格002.快速抠图+遮罩获取_2035400193734086658.json、图片生成/图生图/260110008.快速抠图+遮罩获取_2011257083529797633.json、图片生成/图生图/Image Remove Bg一键抠图_抠像_去背景-透明背景_2020020197062610945.json、图片生成/图生图/多通道一键抠图去背景_1949677450980139010.json、图片生成/图生图/抠图_1961729963818991618.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Wan3多模态_全参工作流_2114263341400158210.json、图片生成/图生图/Wan3多模态_全参工作流_2115292514860232706.json、平台全量/wan3.0多模态生视频_2092440364023111681.json、视频生成/图生视频/RH 万相3.0-参考生视频_2091836892085051394.json、视频生成/图生视频/Wan3.0低价版-直出30秒-全能参考生视频_2094412237648785410.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
-- `easy imageRemBg`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskToImage` —— 4/7 个有
-- `Label (rgthree)` —— 1/7 个有
+- `LoadAudio` —— 7/8 个有
+- `RH_AlibabaWan30ReferenceToVideo` —— 7/8 个有
+- `Text` —— 7/8 个有
+- `PreviewImage` —— 1/8 个有
+- `RH_AlibabaWan30ImageToVideo` —— 1/8 个有
+- `easy saveText` —— 1/8 个有
 
 ## 典型参数
 

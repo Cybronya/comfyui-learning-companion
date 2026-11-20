@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_438
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.653167
-common_nodes: [ImageFromBatch+, ImageTile+, LoadImage, PreviewImage, SaveImage]
+coverage: 0.875714
+common_nodes: [LoadImage, RH_Doubao_Seedance_1_5_Pro, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json, 图片生成/图生图/图像清晰工具_2064882507623002113.json, 图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json, 图片生成/图生图/生图 拆图分享_2042426276874555393.json, 图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json, 图片生成/文生图/生图 拆图_2016143984715894786.json]
+members: [图片生成/图生图/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2033377929924714497.json, 视频生成/图生视频/Seedance 1.5 Pro 图生视频（首尾帧）_2004475209992335361.json, 视频生成/图生视频/Seedance 1.5 Pro首尾帧视频（全自动）_2004142171819261953.json, 视频生成/图生视频/Seedance1.5Pro首尾帧图生视频_2021470278861197314.json, 视频生成/图生视频/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2005561836860833794.json, 视频生成/图生视频/Seedance1.5pro图生视频（全自动）_2004099272159207426.json, 视频生成/图生视频/高清视频 Seedance Pro 首尾帧图生视频_2022516850940186626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_438
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/5.4拆图（四视图）_2039325097525252098.json、图片生成/图生图/图像清晰工具_2064882507623002113.json、图片生成/图生图/永青分镜拆图工作流_2016769478167633921.json、图片生成/图生图/生图 拆图分享_2042426276874555393.json、图片生成/文生图/【CQ808】分镜拆图工作流_2019405146056302593.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2033377929924714497.json、视频生成/图生视频/Seedance 1.5 Pro 图生视频（首尾帧）_2004475209992335361.json、视频生成/图生视频/Seedance 1.5 Pro首尾帧视频（全自动）_2004142171819261953.json、视频生成/图生视频/Seedance1.5Pro首尾帧图生视频_2021470278861197314.json、视频生成/图生视频/Seedance1.5Pro首尾帧图生视频（字节跳动最新视频模型）_2005561836860833794.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `ImageFromBatch+`
-- `ImageTile+`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `RH_Doubao_Seedance_1_5_Pro`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/6 个有
+- `CR Text` —— 6/7 个有
+- `PreviewAny` —— 4/7 个有
+- `AILab_QwenVL` —— 2/7 个有
+- `RHHiddenNodes` —— 2/7 个有
 
 ## 典型参数
 

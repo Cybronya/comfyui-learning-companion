@@ -3,31 +3,38 @@ name: unknown_workflow_generic_1594
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [RH_AlibabaQwenImage30ProTextToImage, SaveImage]
+coverage: 0.668
+common_nodes: [JjkText, LoadImage, ProcessString, RH_LLMAPI_NODE, SaveImage, ShellAgentPluginOutputText, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/AI 文生图工作流｜Qwen 3.0 Pro 一句话生成高清大图_2098058763180789762.json, 图片生成/文生图/Qwen Image 3.0 PRO 文生图_2081290948826460161.json]
+members: [图片生成/图生图/LLM API 图生电影分镜文本一次一RH币_2009067979266334722.json, 图片生成/图生图/根据图片生成不同视角分镜头故事版_2107655869549858817.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1594
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/AI 文生图工作流｜Qwen 3.0 Pro 一句话生成高清大图_2098058763180789762.json、图片生成/文生图/Qwen Image 3.0 PRO 文生图_2081290948826460161.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/LLM API 图生电影分镜文本一次一RH币_2009067979266334722.json、图片生成/图生图/根据图片生成不同视角分镜头故事版_2107655869549858817.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_AlibabaQwenImage30ProTextToImage`
+- `JjkText`
+- `LoadImage`
+- `ProcessString`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `RH_RhartImageG2ImageToImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

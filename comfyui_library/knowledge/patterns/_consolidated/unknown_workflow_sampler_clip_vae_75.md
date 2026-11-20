@@ -1,58 +1,48 @@
 ---
 name: unknown_workflow_sampler_clip_vae_75
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7835
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), KSampler (Efficient), LayerFilter: HDREffects, ModelSamplingAuraFlow, NunchakuQwenImageDiTLoader, PreviewImage, SaveImage, StringFunction|pysssss, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.958333
+common_nodes: [CLIPLoader, CLIPTextEncode, SaveImage, TwinFlow_SM_KSampler, TwinFlow_SM_Model, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Nunchaku Qwen-lmage 出图，超级加速，文生图，洗图_1960541449391661058.json, 图片生成/文生图/文生图 Wan2.1-VAE-upscale2x 放大修复工作流_1985254236038569985.json]
+members: [图片生成/文生图/TwinFlow-QI 基础流_2006183647942021122.json, 图片生成/文生图/TwinFlow-Z 基础流_2006774933891846146.json, 图片生成/文生图/zimage2步出图_2006767553821020161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_75
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Nunchaku Qwen-lmage 出图，超级加速，文生图，洗图_1960541449391661058.json、图片生成/文生图/文生图 Wan2.1-VAE-upscale2x 放大修复工作流_1985254236038569985.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/TwinFlow-QI 基础流_2006183647942021122.json、图片生成/文生图/TwinFlow-Z 基础流_2006774933891846146.json、图片生成/文生图/zimage2步出图_2006767553821020161.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `Image Comparer (rgthree)`
-- `KSampler (Efficient)`
-- `LayerFilter: HDREffects`
-- `ModelSamplingAuraFlow`
-- `NunchakuQwenImageDiTLoader`
-- `PreviewImage`
 - `SaveImage`
-- `StringFunction|pysssss`
+- `TwinFlow_SM_KSampler`
+- `TwinFlow_SM_Model`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Seed Everywhere` —— 1/2 个有
-- `VAEUtils_CustomVAELoader` —— 1/2 个有
-- `VAEUtils_VAEDecodeTiled` —— 1/2 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 14 | - | 2 | 57% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.75 | - | 2 | 67% |
-| 宽度 | 1112 | - | 2 | 92% |
-| 高度 | 764 | - | 2 | 66% |
+| 采样步数 | 2 | 2 - 2 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1.00482e+09 | 3.28647e+08 - 1.12825e+09 | 3 | 57% |
+| 采样算法 | randomize | - | 3 | 100% |
+| 调度器 | 0 | 0 - 0 | 3 | 100% |
+| 重绘幅度 | all | - | 3 | 33% |
 
 ## 常见问题
 
@@ -60,11 +50,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 14，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.75，样本不足，未给区间，2 个样本
-- 宽度 中位数 1112，样本不足，未给区间，2 个样本，取值集中（一致性 92%）
-- 高度 中位数 764，样本不足，未给区间，2 个样本
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1.00482e+09，观测区间 3.28647e+08 - 1.12825e+09，3 个样本
+- 采样算法 最常用 randomize，3 个样本，一致性 100%
+- 调度器 中位数 0，观测区间 0 - 0，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 all，3 个样本，一致性 33%
+- 风险：Prompt 约束强度(CFG) 观测到 1.12825e+09，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

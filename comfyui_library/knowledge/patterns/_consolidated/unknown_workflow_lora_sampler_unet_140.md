@@ -1,59 +1,54 @@
 ---
 name: unknown_workflow_lora_sampler_unet_140
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.7512
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveAudioAdvanced, UNETLoader, VAEDecodeAudio, VAELoader, easy ifElse, easy seed]
+frequency: 6
+level: weak
+coverage: 0.847333
+common_nodes: [CLIPLoader, Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, QwenImageIntegratedKSampler, SaveImage, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/MiniMax H3 双人对话_2094800053436243969.json, 音频生成/音频生成/MiniMax H3 TTS _ 文生音频 _ 音频克隆 _ 开源版SeedAudio_2086469576803569665.json, 音频生成/音频生成/MiniMax_H3_双人对话_2100869700593999874.json, 音频生成/音频生成/MiniMax_H3_双人对话_2101136318687436802.json, 音频生成/音频生成/minimax-H3-纯文生语音_2099494195999371266.json]
+members: [图片生成/图生图/漫画上色 可批量处理_2070067090685517825.json, 图片生成/图生图/漫画上色 可批量处理_2070071645481558018.json, 图片生成/图生图/漫画上色（本地批量详见视频）_2020397586309451778.json, 平台全量/【阡陌】Qwen-Eidt-2511零偏移图像编辑工作流_2009167349676511233.json, 平台全量/千问Qwen-edit-2511-白模转材质_2062786868227436546.json, 平台全量/换脸工作流（无需遮罩）_2087788702478196737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_140
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MiniMax H3 双人对话_2094800053436243969.json、音频生成/音频生成/MiniMax H3 TTS _ 文生音频 _ 音频克隆 _ 开源版SeedAudio_2086469576803569665.json、音频生成/音频生成/MiniMax_H3_双人对话_2100869700593999874.json、音频生成/音频生成/MiniMax_H3_双人对话_2101136318687436802.json、音频生成/音频生成/minimax-H3-纯文生语音_2099494195999371266.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/漫画上色 可批量处理_2070067090685517825.json、图片生成/图生图/漫画上色 可批量处理_2070071645481558018.json、图片生成/图生图/漫画上色（本地批量详见视频）_2020397586309451778.json、平台全量/【阡陌】Qwen-Eidt-2511零偏移图像编辑工作流_2009167349676511233.json、平台全量/千问Qwen-edit-2511-白模转材质_2062786868227436546.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：6
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `Image Comparer (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MultiRateSamplerEXPT8`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveAudioAdvanced`
+- `QwenImageIntegratedKSampler`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy ifElse`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 4/5 个有
-- `MiniMaxH3AudioConditioningT8` —— 4/5 个有
-- `easy isNone` —— 4/5 个有
-- `StringReplace` —— 1/5 个有
+- `PathchSageAttentionKJ` —— 3/6 个有
+- `PrimitiveInt` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 3/6 个有
+- `UnetLoaderGGUF` —— 3/6 个有
+- `TextInput_` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 图生图 image-to-image | - | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | 736 | 0 - 1472 | 6 | 0% |
+| 调度器 | 552 | 0 - 1104 | 6 | 0% |
+| 重绘幅度 | 7.32814e+14 | 999 - 1.06505e+15 | 6 | 24% |
 
 ## 常见问题
 
@@ -61,4 +56,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 图生图 image-to-image，6 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 736，观测区间 0 - 1472，6 个样本，取值分散，一致性仅 0%
+- 调度器 中位数 552，观测区间 0 - 1104，6 个样本，取值分散，一致性仅 0%
+- 重绘幅度 中位数 7.32814e+14，观测区间 999 - 1.06505e+15，6 个样本，取值分散，一致性仅 24%
+- 风险：重绘幅度 观测到 1.06505e+15，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

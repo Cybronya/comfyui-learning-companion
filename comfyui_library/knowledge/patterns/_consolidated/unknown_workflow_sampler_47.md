@@ -3,34 +3,35 @@ name: unknown_workflow_sampler_47
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo]
+coverage: 0.78925
+common_nodes: [LoadImage, SaveImage, SenseNova_SM_Model, SenseNova_SM_Sampler]
 problems: []
 missing: []
-members: [视频生成/图生视频/SoulX-FlashTalk大模型：4090显卡实时生成直播视频！_2016719589106782209.json, 视频生成/图生视频/博主直播带货-照片开口卖货_2093849191561916417.json, 视频生成/图生视频/博主直播带货-照片开口卖货_2100049087256162305.json, 视频生成/图生视频/博主直播带货-照片开口卖货_2100128526631530498.json]
+members: [图片生成/图生图/SenseNova U1-图像编辑-商汤-日日新_2091321728873099266.json, 图片生成/图生图/SenseNova 单图编辑_2053113135225163778.json, 图片生成/文生图/商汤SenseNova-U1_2052931963757051905.json, 图片生成/文生图/商汤SenseNova-U1_2056611909402714114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_47
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/SoulX-FlashTalk大模型：4090显卡实时生成直播视频！_2016719589106782209.json、视频生成/图生视频/博主直播带货-照片开口卖货_2093849191561916417.json、视频生成/图生视频/博主直播带货-照片开口卖货_2100049087256162305.json、视频生成/图生视频/博主直播带货-照片开口卖货_2100128526631530498.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/SenseNova U1-图像编辑-商汤-日日新_2091321728873099266.json、图片生成/图生图/SenseNova 单图编辑_2053113135225163778.json、图片生成/文生图/商汤SenseNova-U1_2052931963757051905.json、图片生成/文生图/商汤SenseNova-U1_2056611909402714114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
 - `LoadImage`
-- `RunningHub FlashTalk Loader`
-- `RunningHub FlashTalk Sampler`
-- `SaveVideo`
+- `SaveImage`
+- `SenseNova_SM_Model`
+- `SenseNova_SM_Sampler`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

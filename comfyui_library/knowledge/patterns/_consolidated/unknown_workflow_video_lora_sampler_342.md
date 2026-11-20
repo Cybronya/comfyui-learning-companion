@@ -1,80 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_342
 type: Unknown Workflow
-frequency: 7
+frequency: 9
 level: moderate
-coverage: 0.456
-common_nodes: [CLIPVisionLoader, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, ReplaceVideoLatentFrames, SetNode, TrimAudioDuration, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader]
+coverage: 0.687889
+common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewAny, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [数字人/数字人/longcat-avatar【教学】_2011638609484455937.json, 数字人/数字人/轻算力AI实验室数字人图片声音驱动（10秒版）_2070495933279850498.json, 数字人/数字人/龙猫数字人test_2004227109671366658.json, 视频生成/图生视频/LongCat Video Avatar数字人图生视频V4_2002585439628345345.json, 视频生成/图生视频/LongCat+数字人对口型_2002677838857793538.json, 视频生成/图生视频/LongCat-Video-Avatar1.5多图分镜数字人_2059649854489583618.json, 视频生成/图生视频/LongCat-Video-Avatar1.5数字人视频_2059162387521032194.json]
+members: [视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2071108486670409729.json, 视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2074501532183252993.json, 视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流_2068593388110307330.json, 视频生成/图生视频/全能图片G Image2 + LTX+2.3 Director 6宫格-片段 自动提示词 视频生成工作流_2063834779862257665.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062509553996091394.json, 视频生成/图生视频/全自动六宫格LTX2.3导演台_2062715570117758978.json, 视频生成/图生视频/六宫格横屏1280导演台自动化工作流（固定15秒）_2070323766567194626.json, 视频生成/图生视频/短剧漫剧wan+九宫格横屏1280导演台自动化工作流（固定20秒）_2080658867448541185.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定18秒）_2067903674852134913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_342
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/longcat-avatar【教学】_2011638609484455937.json、数字人/数字人/轻算力AI实验室数字人图片声音驱动（10秒版）_2070495933279850498.json、数字人/数字人/龙猫数字人test_2004227109671366658.json、视频生成/图生视频/LongCat Video Avatar数字人图生视频V4_2002585439628345345.json、视频生成/图生视频/LongCat+数字人对口型_2002677838857793538.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2071108486670409729.json、视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2074501532183252993.json、视频生成/图生视频/万象+rh四宫格横屏1280导演台自动化工作流_2068593388110307330.json、视频生成/图生视频/全能图片G Image2 + LTX+2.3 Director 6宫格-片段 自动提示词 视频生成工作流_2063834779862257665.json、视频生成/图生视频/全自动六宫格LTX2.3导演台_2062509553996091394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `FloatConstant`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+全部 9 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
+- `LoraLoaderModelOnly`
 - `PreviewAny`
-- `ReplaceVideoLatentFrames`
+- `RH_LLMAPI_Pro_Node`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `TrimAudioDuration`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `Wav2VecModelLoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTorchCompileSettings` —— 6/7 个有
-- `INTConstant` —— 5/7 个有
-- `MultiTalkWav2VecEmbeds` —— 5/7 个有
-- `DownloadAndLoadWav2VecModel` —— 4/7 个有
-- `Float` —— 4/7 个有
-- `CR Prompt Text` —— 3/7 个有
-- `ForLoopClose` —— 2/7 个有
-- `ForLoopOpen` —— 2/7 个有
-- `Int` —— 2/7 个有
-- `JWInteger` —— 2/7 个有
-- `LongCatAvatarWhisperEmbeds` —— 2/7 个有
-- `MathExpression|pysssss` —— 2/7 个有
-- `PreviewAudio` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `Text Load Line From File` —— 2/7 个有
-- `WhisperModelLoader` —— 2/7 个有
-- `easy convertAnything` —— 2/7 个有
-- `ImageBatchMulti` —— 1/7 个有
-- `ImageFromBatch` —— 1/7 个有
-- `RH_LLMAPI_NODE` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `TextInput_` —— 1/7 个有
-- `VHS_GetImageCount` —— 1/7 个有
+- `TTResolutionSelector` —— 7/9 个有
+- `LoadVideo` —— 6/9 个有
+- `Text Multiline` —— 6/9 个有
+- `LTXDirectorGuide` —— 5/9 个有
+- `SF-LTXDirectorGuide` —— 4/9 个有
+- `SF-LTXGridDirector` —— 4/9 个有
+- `CS-LTXGridDirector` —— 3/9 个有
+- `CS-LTXSixGridDirector` —— 2/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `PreviewImage` —— 1/9 个有
+- `RH_RhartImageG2ImageToImage` —— 1/9 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/9 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
 
 ## 典型参数
 

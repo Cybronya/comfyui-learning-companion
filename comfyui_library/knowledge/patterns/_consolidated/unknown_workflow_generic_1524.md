@@ -3,47 +3,36 @@ name: unknown_workflow_generic_1524
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.666
-common_nodes: [Bjornulf_ShowInt, GetNode, LoadImage, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, SaveImage, SetNode, Text, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.6855
+common_nodes: [LoadImage, RH_Captioner, RH_Translator, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/批量上传局部重绘v2_2062012357316005890.json, 图片生成/图生图/批量上传局部重绘全能图片G2_2062779401909133313.json]
+members: [图片生成/反推提示词/RH超强首尾帧提示词写法_1952311186140409857.json, 图片生成/反推提示词/图片反推 一键翻译中英文_1957330684597694466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1524
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量上传局部重绘v2_2062012357316005890.json、图片生成/图生图/批量上传局部重绘全能图片G2_2062779401909133313.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/RH超强首尾帧提示词写法_1952311186140409857.json、图片生成/反推提示词/图片反推 一键翻译中英文_1957330684597694466.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bjornulf_ShowInt`
-- `GetNode`
 - `LoadImage`
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
+- `RH_Captioner`
+- `RH_Translator`
 - `SaveImage`
-- `SetNode`
-- `Text`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageListToImageBatch` —— 1/2 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage` —— 1/2 个有
-- `RH_RhartImageG2ImageToImage_Batch` —— 1/2 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
+- `ImageStitch` —— 1/2 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
 
 ## 典型参数
 

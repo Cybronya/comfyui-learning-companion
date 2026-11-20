@@ -1,74 +1,60 @@
 ---
 name: unknown_workflow_video_sampler_unet_64
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.529
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CS-MultiImageLoader, ComfyMathExpression, ComfySwitchNode, GetImage, GetNode, INTConstant, KSamplerSelect, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, RegexExtract, SamplerCustomAdvanced, SetNode, ShowText|pysssss, StringConcatenate, StringReplace, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTAppearanceOrder, YUAN_TXTConvertAny, YUAN_TXTListNumber, YUAN_TXTParagraphSplitter, YUAN_TXTReplace, YuanTool, easy positive]
+coverage: 0.757333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V1.1_2084151065133539330.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2084946150561501185.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2089957236218097665.json]
+members: [图片生成/图生图/MiniMax_H3图生视频自动提示词版!RH普通会员版_2085415100269285377.json, 数字人/数字人/h3_i2v_int8_35秒直播预生成_2111256612936704002.json, 视频生成/图生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-图生视频_2086095379162025986.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-图生视频-自动提示词_2084469087677276162.json, 视频生成/图生视频/MiniMax-H3 首尾帧图生视频_2084637924326465538.json, 视频生成/图生视频/MiniMax_H3图生视频自动提示词版_2084335214544908289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_64
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V1.1_2084151065133539330.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2084946150561501185.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V2.1_2089957236218097665.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/MiniMax_H3图生视频自动提示词版!RH普通会员版_2085415100269285377.json、数字人/数字人/h3_i2v_int8_35秒直播预生成_2111256612936704002.json、视频生成/图生视频/MiniMax H3 FL2VA-Lightx2v-官方4步加速lora-V0.1-图生视频_2086095379162025986.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-图生视频-自动提示词_2084469087677276162.json、视频生成/图生视频/MiniMax-H3 首尾帧图生视频_2084637924326465538.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CS-MultiImageLoader`
 - `ComfyMathExpression`
-- `ComfySwitchNode`
-- `GetImage`
-- `GetNode`
-- `INTConstant`
 - `KSamplerSelect`
-- `PreviewImage`
-- `PrimitiveBoolean`
+- `LoadImage`
+- `MiniMaxH3ImageToVideo`
 - `PrimitiveFloat`
-- `PrimitiveInt`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
-- `RegexExtract`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `ShowText|pysssss`
-- `StringConcatenate`
-- `StringReplace`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `YUAN_TXTAppearanceOrder`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTListNumber`
-- `YUAN_TXTParagraphSplitter`
-- `YUAN_TXTReplace`
-- `YuanTool`
-- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `YUAN_TXTLength` —— 2/3 个有
-- `Yuan_MiniMaxH3Video` —— 2/3 个有
-- `ComfyAndNode` —— 1/3 个有
-- `ComfyNotNode` —— 1/3 个有
-- `ImageBatchMulti` —— 1/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
-- `StringLength` —— 1/3 个有
-- `easy imagesSplitImage` —— 1/3 个有
-- `easy indexAnything` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 5/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `孤海注释` —— 4/6 个有
+- `LoraLoaderModelOnly` —— 2/6 个有
+- `H3SLAAttention` —— 1/6 个有
+- `MiniMaxH3SigmaShift` —— 1/6 个有
+- `PainterVRAM` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `llama_cpp_instruct_adv` —— 1/6 个有
+- `llama_cpp_model_loader` —— 1/6 个有
+- `llama_cpp_parameters` —— 1/6 个有
+- `图像缩放V2_孤海` —— 1/6 个有
 
 ## 典型参数
 

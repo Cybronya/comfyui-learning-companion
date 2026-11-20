@@ -1,74 +1,79 @@
 ---
 name: unknown_workflow_sampler_unet_vae_172
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.794833
-common_nodes: [CLIPLoader, ComfySwitchNode, ConditioningZeroOut, EmptyMiniMaxMusic3LatentAudio, KSampler, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecodeAudio, VAEDecodeAudioTiled, VAELoader]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 8
+level: moderate
+coverage: 0.878375
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/反推提示词/音乐生成 海螺 Music 3_2088149749898764290.json, 数字人/数字人/MiniMax Music 3_2095916117280772098.json, 数字人/数字人/Minimax-Music3  音乐_2095365589534601218.json, 数字人/数字人/智能体制作好声音必备 minimax M3_2094801787873218562.json, 视频生成/图生视频/MiniMax+Music音乐生成_2089265743111213057.json, 音频生成/音频生成/Mini max  music生成音乐_2088925873197117441.json]
+members: [视频生成/图生视频/制作音乐MV Minimax H3_2084282697115070466.json, 视频生成/图生视频/单人数字人 图片加音频生成视频 minimax H3_2085731885287825410.json, "视频生成/数字人/对口型,音频驱动,MiniMax H3,数字人,AI视频,唱歌_2106267271646769154.json", 视频生成/数字人/对口型MinimaxH3音频驱动数字人单人版_2085644184278622209.json, 视频生成/文生视频/DG_(音频+图片)音频驱动+单图单人+最大1280加速海螺H3(minimax H3)_2094359602430304258.json, 视频生成/文生视频/DG_h3+ref2va+最大1280无加速lora高质量_2087798268825792513.json, 视频生成/文生视频/DG_多参考图+视频参考｜minimax_h3 sage加速视频生成_2086004965662875649.json, 视频生成/文生视频/DG_音频驱动+单图单人+最大1280加速海螺H3(minimax H3)_2085981571416416257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_172
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/音乐生成 海螺 Music 3_2088149749898764290.json、数字人/数字人/MiniMax Music 3_2095916117280772098.json、数字人/数字人/Minimax-Music3  音乐_2095365589534601218.json、数字人/数字人/智能体制作好声音必备 minimax M3_2094801787873218562.json、视频生成/图生视频/MiniMax+Music音乐生成_2089265743111213057.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/制作音乐MV Minimax H3_2084282697115070466.json、视频生成/图生视频/单人数字人 图片加音频生成视频 minimax H3_2085731885287825410.json、视频生成/数字人/对口型,音频驱动,MiniMax H3,数字人,AI视频,唱歌_2106267271646769154.json、视频生成/数字人/对口型MinimaxH3音频驱动数字人单人版_2085644184278622209.json、视频生成/文生视频/DG_(音频+图片)音频驱动+单图单人+最大1280加速海螺H3(minimax H3)_2094359602430304258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
-- `EmptyMiniMaxMusic3LatentAudio`
-- `KSampler`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
-- `SeedNode`
+- `KSamplerSelect`
+- `LoadImage`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecodeAudio`
-- `VAEDecodeAudioTiled`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 3/6 个有
-- `Float` —— 2/6 个有
-- `JjkText` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `ModelAttentionBackend` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
-- `PixaromaLabel` —— 1/6 个有
-- `PrimitiveFloat` —— 1/6 个有
-- `Text` —— 1/6 个有
-- `easy boolean` —— 1/6 个有
+- `AudioCrop` —— 7/8 个有
+- `LoadAudio` —— 7/8 个有
+- `PreviewAudio` —— 7/8 个有
+- `SoundFlow_GetLength` —— 7/8 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 7/8 个有
+- `ComfyMathExpression` —— 6/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/8 个有
+- `PrimitiveFloat` —— 6/8 个有
+- `PrimitiveStringMultiline` —— 6/8 个有
+- `VHS_VideoCombine` —— 6/8 个有
+- `Getter` —— 4/8 个有
+- `ImageConcatMulti` —— 4/8 个有
+- `Setter` —— 4/8 个有
+- `CreateVideo` —— 3/8 个有
+- `SaveVideo` —— 3/8 个有
+- `VHS_LoadVideo` —— 3/8 个有
+- `JjkText` —— 2/8 个有
+- `MathExpression|pysssss` —— 2/8 个有
+- `easy showAnything` —— 2/8 个有
+- `EasyCache` —— 1/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `MiniMaxH3AVDecodeT8` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `VAEDecodeAudio` —— 1/8 个有
+- `VideoInfoLoaded` —— 1/8 个有
+- `easy anythingIndexSwitch` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | 30 - 30 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1.7 | 1.7 - 1.7 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 6/6 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 30 - 30，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.7，观测区间 1.7 - 1.7，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

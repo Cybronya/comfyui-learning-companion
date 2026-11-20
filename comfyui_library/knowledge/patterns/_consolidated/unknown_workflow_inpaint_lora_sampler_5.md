@@ -1,69 +1,88 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_5
 type: Unknown Workflow
-frequency: 12
+frequency: 15
 level: strong
-coverage: 0.943083
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), ImageCrop, InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask Fill Holes, ReduxAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy makeImageForICLora]
+coverage: 0.591133
+common_nodes: [CLIPTextEncode, ColorCorrect, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GetNode, GrowMaskWithBlur, Image Comparer (rgthree), ImageComposite+, ImpactInt, InpaintModelConditioning, KSampler, LayerMask: MaskGrow, LayerUtility: BooleanOperatorV2, LayerUtility: ColorImage, LayerUtility: CropByMask V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, PreviewImage, RH_Translator, SaveImage, SetNode, Simple String, StringLength, ToBinaryMask, UNETLoader, VAEDecode, VAELoader, easy boolean, easy ifElse, 孤海-图像添加水印, 孤海图像缩放按像素, 孤海外补画板按方向]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Fill+Redux 万物迁移（电商场景图制作）_2032340529047937025.json, 图片生成/图生图/产品图自由搭配AI模特_2002714024217309186.json, 图片生成/图生图/产品换背景 电商必备场景图制作_2008829886869282817.json, 图片生成/图生图/电商场景图制作（产品换背景）_1985610476090535937.json, 图片生成/图生图/电商场景图制作（产品换背景）_1990675120790396929.json, 图片生成/图生图/给产品自由搭配模特工作流_1990696481466322945.json, 图片生成/图生图/给产品自由搭配模特工作流_2097866694432739329.json, 图片生成/图生图/给产品自由搭配模特工作流_2099406218531004418.json, 图片生成/图生图/给产品自由搭配模特工作流_2113775096480489474.json, 图片生成/图生图/给产品自由搭配模特工作流_2113812192247242754.json, 图片生成/图生图/课件14：电商实战：产品换背景（上）_2098602158307500034.json, 图片生成/图生图/课件16：电商实战：给产品自由搭配Ai模特_2098948233119756290.json]
+members: [图片生成/图生图/Fill OneReward 移除、扩图、重绘一体化4K直出_2070100010657734657.json, 图片生成/图生图/Fill OneReward 移除、扩图、重绘一体化4K直出_2084332499492237313.json, 图片生成/图生图/Fill OneReward 移除、扩图、重绘一体化（记得画遮罩）4K直出_2046766124548755458.json, 图片生成/图生图/Fill+OneReward+移除、扩图、重绘一体化4K直出_1999797223351255041.json, 图片生成/图生图/Fill+OneReward+移除、扩图、重绘一体化4K直出_2026929107174428673.json, 图片生成/图生图/图片 移除  扩图 重绘 一体化 4K直出_1993127030715858946.json, 图片生成/图生图/移除、扩图、重绘一体化4K直出_1982729090350366722.json, 图片生成/图生图/老孙AI 移除、扩图、重绘一体4K_2085915793509928961.json, 平台全量/Fill OneReward 移除、扩图、重绘一体化4K直出_1968922194254417922.json, 平台全量/Fill OneReward 移除、扩图、重绘一体化4K直出_1969587490774544385.json, 平台全量/Fill OneReward 移除、扩图、重绘一体化4K直出_2090502224203051010.json, 平台全量/多功能出图：移除+扩图+重绘+高清（Fuxl.1 OneReward）_2000209240587370498.json, 平台全量/移除 + 扩图 + 重绘多功能合一_2048589391861391361.json, 平台全量/移除+扩图+局部重绘三合一工作流_2083879008785231873.json, 平台全量/移除、扩图、重绘一体化_2002202414910435330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Flux Fill+Redux 万物迁移（电商场景图制作）_2032340529047937025.json、图片生成/图生图/产品图自由搭配AI模特_2002714024217309186.json、图片生成/图生图/产品换背景 电商必备场景图制作_2008829886869282817.json、图片生成/图生图/电商场景图制作（产品换背景）_1985610476090535937.json、图片生成/图生图/电商场景图制作（产品换背景）_1990675120790396929.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Fill OneReward 移除、扩图、重绘一体化4K直出_2070100010657734657.json、图片生成/图生图/Fill OneReward 移除、扩图、重绘一体化4K直出_2084332499492237313.json、图片生成/图生图/Fill OneReward 移除、扩图、重绘一体化（记得画遮罩）4K直出_2046766124548755458.json、图片生成/图生图/Fill+OneReward+移除、扩图、重绘一体化4K直出_1999797223351255041.json、图片生成/图生图/Fill+OneReward+移除、扩图、重绘一体化4K直出_2026929107174428673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：15
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：59%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
+- `ColorCorrect`
 - `ConditioningZeroOut`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
+- `GetNode`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
-- `ImageCrop`
+- `ImageComposite+`
+- `ImpactInt`
 - `InpaintModelConditioning`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerMask: MaskGrow`
+- `LayerUtility: BooleanOperatorV2`
+- `LayerUtility: ColorImage`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: RestoreCropBox`
 - `LoadImage`
+- `LoraLoaderModelOnly`
 - `Mask Fill Holes`
-- `ReduxAdvanced`
+- `PreviewImage`
+- `RH_Translator`
 - `SaveImage`
-- `StyleModelLoader`
+- `SetNode`
+- `Simple String`
+- `StringLength`
+- `ToBinaryMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy makeImageForICLora`
+- `easy boolean`
+- `easy ifElse`
+- `孤海-图像添加水印`
+- `孤海图像缩放按像素`
+- `孤海外补画板按方向`
 
 **可变部分**（部分 workflow 才有）：
-- `PMRF` —— 5/12 个有
-- `EmptyImage` —— 2/12 个有
-- `PreviewImage` —— 2/12 个有
-- `LayerMask: MaskGrow` —— 1/12 个有
-- `LayerMask: MaskPreview` —— 1/12 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 1/12 个有
-- `LoraLoader` —— 1/12 个有
+- `CR Text Replace` —— 12/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
+- `INTConstant` —— 1/15 个有
+- `ImageScaleToTotalPixels` —— 1/15 个有
+- `LayerMask: MaskPreview` —— 1/15 个有
+- `Mute / Bypass Relay (rgthree)` —— 1/15 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/15 个有
+- `PlaySound|pysssss` —— 1/15 个有
+- `Preview from image [Crystools]` —— 1/15 个有
+- `SeedVR2LoadDiTModel` —— 1/15 个有
+- `SeedVR2LoadVAEModel` —— 1/15 个有
+- `SeedVR2VideoUpscaler` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
-| 采样步数 | 25 | 25 - 25 | 12 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | beta | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 采样步数 | 30 | 30 - 30 | 15 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
+| 采样算法 | er_sde | - | 15 | 100% |
+| 调度器 | simple | - | 15 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
@@ -71,8 +90,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 beta，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，观测区间 30 - 30，15 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，15 个样本，一致性 100%
+- 调度器 最常用 simple，15 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）

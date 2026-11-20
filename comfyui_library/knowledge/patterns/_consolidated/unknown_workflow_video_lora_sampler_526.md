@@ -1,57 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_526
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.55975
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, DisableNoise, GetNode, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, ScheduledCFGGuidance, SetNode, SplitSigmas, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+coverage: 0.710333
+common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/wan22_SVI_Pro长视频优化版_2030979131311132674.json, 视频生成/图生视频/wan22_SVI_Pro_2005599683508666370.json, 视频生成/文生视频/【晨晨的AI应用包004】一键图生长视频SVI-PRO-15s_2012003623286349826.json, 视频生成/文生视频/大凯辰光SVI-V2.0-Pro-长视频流（非子图）_2008153457944956930.json]
+members: [视频生成/图生视频/Wan2.2 + SVI2：三镜头带货lyan_2021226831017418753.json, 视频生成/图生视频/Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.json, 视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049742304176558082.json, 视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049752785217966082.json, 视频生成/文生视频/SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_1998603247713681410.json, 视频生成/文生视频/SVI-Wan22-1207超长视频生成工作流-课程同步工作流_1998388912689176577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_526
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/wan22_SVI_Pro长视频优化版_2030979131311132674.json、视频生成/图生视频/wan22_SVI_Pro_2005599683508666370.json、视频生成/文生视频/【晨晨的AI应用包004】一键图生长视频SVI-PRO-15s_2012003623286349826.json、视频生成/文生视频/大凯辰光SVI-V2.0-Pro-长视频流（非子图）_2008153457944956930.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 + SVI2：三镜头带货lyan_2021226831017418753.json、视频生成/图生视频/Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.json、视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049742304176558082.json、视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049752785217966082.json、视频生成/文生视频/SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_1998603247713681410.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DisableNoise`
+全部 6 个 workflow 都包含：
+- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+- `INTConstant`
+- `ImageBatchMulti`
+- `InvertMask`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `ScheduledCFGGuidance`
+- `LoadWanVideoT5TextEncoder`
+- `RepeatImageBatch`
 - `SetNode`
-- `SplitSigmas`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DiffusionModelLoaderKJ` —— 2/4 个有
-- `PreviewImage` —— 1/4 个有
-- `SaveLatent` —— 1/4 个有
-- `Text` —— 1/4 个有
-- `UNETLoader` —— 1/4 个有
-- `UnetLoaderGGUF` —— 1/4 个有
+- `GetImageRangeFromBatch` —— 5/6 个有
+- `SimpleMath+` —— 5/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `CR Text` —— 2/6 个有
+- `DF_Int_to_Float` —— 2/6 个有
+- `JWInteger` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `MathExpression|pysssss` —— 2/6 个有
+- `IndexTTSRun` —— 1/6 个有
+- `LoadAudio` —— 1/6 个有
+- `MultiLinePromptIndex` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `SaveAudioMP3` —— 1/6 个有
 
 ## 典型参数
 

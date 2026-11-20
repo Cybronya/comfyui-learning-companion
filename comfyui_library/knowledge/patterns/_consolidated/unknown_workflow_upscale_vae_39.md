@@ -1,49 +1,42 @@
 ---
 name: unknown_workflow_upscale_vae_39
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.787333
-common_nodes: [GetImageSize, Image Comparer (rgthree), ImageScaleBy, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size]
+coverage: 0.7186
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/TTP-SEEDVR2分块8倍放大_2063088756915265538.json, 图片生成/图生图/TTP-SEEDVR2分块8倍放大_2064161314121019393.json, 图片生成/图生图/seedvr2图像放大_2045732584243601409.json]
+members: [图片生成/图生图/sim_Z-Seed 人像修复放大_2093662606916673537.json, 图片生成/图生图/【阡陌】SeedVR 2.5 超高清放大工作流_2011339031476445185.json, 图片生成/图生图/图片像素放大_2028713549190664193.json, 图片生成/图生图/图片高清化（自带对比功能）_2055969759644135425.json, 平台全量/SeedVRv2.5高清放大_2018696865683873794.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_39
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/TTP-SEEDVR2分块8倍放大_2063088756915265538.json、图片生成/图生图/TTP-SEEDVR2分块8倍放大_2064161314121019393.json、图片生成/图生图/seedvr2图像放大_2045732584243601409.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/sim_Z-Seed 人像修复放大_2093662606916673537.json、图片生成/图生图/【阡陌】SeedVR 2.5 超高清放大工作流_2011339031476445185.json、图片生成/图生图/图片像素放大_2028713549190664193.json、图片生成/图生图/图片高清化（自带对比功能）_2055969759644135425.json、平台全量/SeedVRv2.5高清放大_2018696865683873794.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GetImageSize`
+全部 5 个 workflow 都包含：
 - `Image Comparer (rgthree)`
-- `ImageScaleBy`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
 
 **可变部分**（部分 workflow 才有）：
-- `KOOK_ImageCompression` —— 2/3 个有
-- `easy compare` —— 2/3 个有
-- `easy ifElse` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `JoinImageWithAlpha` —— 3/5 个有
+- `ImageScaleToTotalPixels` —— 2/5 个有
+- `SeedVR2TorchCompileSettings` —— 2/5 个有
+- `INTConstant` —— 1/5 个有
+- `ImageSharpenKJ` —— 1/5 个有
+- `KOOK_ImageCompression` —— 1/5 个有
 
 ## 典型参数
 

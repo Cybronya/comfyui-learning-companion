@@ -1,62 +1,84 @@
 ---
 name: unknown_workflow_video_sampler_vae_96
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9838
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.784
+common_nodes: [EmptyImage, ImageConcanate, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, ShowText|pysssss, TextBox, Textbox, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoFlowEdit, WanVideoLoopArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, WanVideoVRAMManagement, easy cleanGpuUsed, easy imageSize, easy textSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/47.tonnie-Wan2.2 VACE 视频动作迁移_2007574568222859266.json, 视频生成/图生视频/Wan2.2 Fun Vace视频驱动图片——动作迁移_1966850900927057922.json, 视频生成/图生视频/wan2.2Fun-VACE 动作迁移_1966739330226139137.json, 视频生成/图生视频/wan2.2官方 VACE 人物姿态迁移 KJ流【推荐】_1967834051866406914.json, 视频生成/图生视频/wan2.2官方 VACE 首尾帧 KJ流_1967815071856472066.json]
+members: [平台全量/视频生视频（参考姿势）_  VACE-A4B_1922900257716453378.json, 视频生成/图生视频/图生视频 _ VACE-14B (CausVid 加速)_1924420521310474241.json, 视频生成/图生视频/图生视频 _ VACE-14B (MoviiGen)_1922900275059900417.json, 视频生成/图生视频/首尾帧 _ VACE-14B (CausVid 加速)_1924340185381654529.json, 视频生成/图生视频/首尾帧 _ VACE-14B_1922900237688475650.json, 视频生成/文生视频/文生视频 _ VACE-14B (CausVid 加速)_1924412501411155969.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_96
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/47.tonnie-Wan2.2 VACE 视频动作迁移_2007574568222859266.json、视频生成/图生视频/Wan2.2 Fun Vace视频驱动图片——动作迁移_1966850900927057922.json、视频生成/图生视频/wan2.2Fun-VACE 动作迁移_1966739330226139137.json、视频生成/图生视频/wan2.2官方 VACE 人物姿态迁移 KJ流【推荐】_1967834051866406914.json、视频生成/图生视频/wan2.2官方 VACE 首尾帧 KJ流_1967815071856472066.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/视频生视频（参考姿势）_  VACE-A4B_1922900257716453378.json、视频生成/图生视频/图生视频 _ VACE-14B (CausVid 加速)_1924420521310474241.json、视频生成/图生视频/图生视频 _ VACE-14B (MoviiGen)_1922900275059900417.json、视频生成/图生视频/首尾帧 _ VACE-14B (CausVid 加速)_1924340185381654529.json、视频生成/图生视频/首尾帧 _ VACE-14B_1922900237688475650.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LoadImage`
+全部 6 个 workflow 都包含：
+- `EmptyImage`
+- `ImageConcanate`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadWanVideoT5TextEncoder`
+- `ShowText|pysssss`
+- `TextBox`
+- `Textbox`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoFlowEdit`
+- `WanVideoLoopArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `WanVideoVRAMManagement`
+- `easy cleanGpuUsed`
+- `easy imageSize`
+- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 4/5 个有
-- `LoadWanVideoT5TextEncoder` —— 4/5 个有
-- `VHS_LoadVideo` —— 4/5 个有
-- `WanVideoLoraSelect` —— 4/5 个有
-- `WanVideoSetLoRAs` —— 4/5 个有
-- `WanVideoTextEncode` —— 4/5 个有
-- `ImageConcatMulti` —— 3/5 个有
-- `SimpleMath+` —— 3/5 个有
-- `VHS_VideoInfo` —— 3/5 个有
-- `CR Text` —— 2/5 个有
-- `Note Plus (mtb)` —— 2/5 个有
-- `ColorMatch` —— 1/5 个有
-- `ImpactInt` —— 1/5 个有
-- `PixelPerfectResolution` —— 1/5 个有
-- `WanVideoLoraSelectMulti` —— 1/5 个有
-- `WanVideoTextEncodeCached` —— 1/5 个有
-- `WanVideoVACEStartToEndFrame` —— 1/5 个有
-- `easy int` —— 1/5 个有
+- `LoadImage` —— 5/6 个有
+- `MathExpression|pysssss` —— 5/6 个有
+- `RH_Captioner` —— 5/6 个有
+- `LayerUtility: ColorImage V2` —— 4/6 个有
+- `WanVideoLoraSelect` —— 4/6 个有
+- `AddLabel` —— 3/6 个有
+- `WanVideoVACEStartToEndFrame` —— 3/6 个有
+- `easy int` —— 3/6 个有
+- `GetImageSizeAndCount` —— 2/6 个有
+- `AIO_Preprocessor` —— 1/6 个有
+- `ImageRepeat` —— 1/6 个有
+- `ImageToMask` —— 1/6 个有
+- `LayerUtility: BooleanOperator` —— 1/6 个有
+- `LayerUtility: CropByMask` —— 1/6 个有
+- `LayerUtility: ImageBlendAdvance` —— 1/6 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/6 个有
+- `LayerUtility: SimpleTextImage` —— 1/6 个有
+- `Pick From Batch (mtb)` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RH_LLMAPI_NODE` —— 1/6 个有
+- `Text Find and Replace` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
+- `easy ifElse` —— 1/6 个有
+- `easy imageSizeBySide` —— 1/6 个有
 
 ## 典型参数
 

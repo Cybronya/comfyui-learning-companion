@@ -1,66 +1,57 @@
 ---
 name: unknown_workflow_sampler_unet_vae_194
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.8385
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 7
+level: strong
+coverage: 0.913571
+common_nodes: [CLIPLoader, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/首尾帧-MiniMaxH3-图生视频-模板_2090038373938458625.json, 视频生成/文生视频/(10Eros-Max V3)Minimax图生视频BF16高质量加速版V2_2087059626914308097.json, 视频生成/文生视频/(2倍速！量化加速版)Minimax文生视频V3_2086292004803276802.json, 视频生成/文生视频/(2倍速！量化加速版)Minimax文生视频V4_2084169977384497154.json, 视频生成/文生视频/260818001.MiniMax-H3 文生丨首尾帧生视频_2089370217431523330.json, 视频生成/文生视频/MiniMax H3 Larry + Sageattention加速_2086411824722956290.json]
+members: [图片生成/图生图/Qwen2.1图像编辑【透明图专用】_2103544673385140226.json, 图片生成/图生图/Qwen_2.1_角色替换_换人_2114261197271953410.json, 图片生成/图生图/Qwen_2.1_角色替换_换人_2115290365535277058.json, 图片生成/图生图/qwen-image-2.1一键抠图_PNG通道_2102319407006572545.json, 图片生成/图生图/qwen-image-2.1多图编辑_2102013603833532417.json, 平台全量/qwen-image-2.1一键抠图 PNG通道_2102019029182537730.json, 平台全量/首发 Pose Gallery姿势线稿图转真人图_2115613793559605249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_194
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/首尾帧-MiniMaxH3-图生视频-模板_2090038373938458625.json、视频生成/文生视频/(10Eros-Max V3)Minimax图生视频BF16高质量加速版V2_2087059626914308097.json、视频生成/文生视频/(2倍速！量化加速版)Minimax文生视频V3_2086292004803276802.json、视频生成/文生视频/(2倍速！量化加速版)Minimax文生视频V4_2084169977384497154.json、视频生成/文生视频/260818001.MiniMax-H3 文生丨首尾帧生视频_2089370217431523330.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen2.1图像编辑【透明图专用】_2103544673385140226.json、图片生成/图生图/Qwen_2.1_角色替换_换人_2114261197271953410.json、图片生成/图生图/Qwen_2.1_角色替换_换人_2115290365535277058.json、图片生成/图生图/qwen-image-2.1一键抠图_PNG通道_2102319407006572545.json、图片生成/图生图/qwen-image-2.1多图编辑_2102013603833532417.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `KSampler`
+- `LoadImage`
+- `QwenImage21Cache`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 5/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/6 个有
-- `CR Prompt Text` —— 3/6 个有
-- `LoadImage` —— 3/6 个有
-- `LoraLoaderModelOnly` —— 3/6 个有
-- `MiniMaxH3BlockCacheT8` —— 3/6 个有
-- `ImageResizeKJv2` —— 2/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `PrimitiveStringMultiline` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `INTConstant` —— 1/6 个有
-- `ModelAttentionBackend` —— 1/6 个有
-- `PatchFlashAttentionKJ` —— 1/6 个有
-- `Seed (rgthree)` —— 1/6 个有
-- `SolAttnPatch` —— 1/6 个有
-- `Text Multiline` —— 1/6 个有
-- `孤海注释` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `SaveImageAdvanced` —— 3/7 个有
+- `EmptyImage` —— 1/7 个有
+- `RH_PoseGallery` —— 1/7 个有
+- `StringConcatenate` —— 1/7 个有
+- `StringConstantMultiline` —— 1/7 个有
+- `easy seed` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 25 - 40 | 7 | 76% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
@@ -68,4 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 25 - 40，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

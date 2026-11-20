@@ -1,56 +1,58 @@
 ---
 name: unknown_workflow_video_lora_sampler_675
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.939
-common_nodes: [BerniniStudio, CLIPLoader, DapaoSmartMemoryOptimizerNode, ImageSharpen, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, RIFE VFI, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy int, 孤海注释]
+frequency: 4
+level: moderate
+coverage: 0.84675
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, SAM3_VideoTrack, SCAIL2FitVideo, SCAIL2ReferencePack, SCAIL2ReferenceSAMBuilder, SCAIL2SimpleVideo, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Bernini 4步急速LORA视频编辑_2076959623524995074.json, 视频生成/图生视频/Bernini 4步急速LORA视频编辑_2083599403918643201.json, 视频生成/图生视频/Bernini 图生视频_4步极速LORA视频编辑_2078379268756828161.json]
+members: [平台全量/SCAIL2-多参考角色-迁移替换-4k极速流_2081364495305363458.json, 平台全量/Scail2-动作迁移-高质量多图参考版本-远景细节、重打光_2082044731672055810.json, 平台全量/scail2-动作迁移、人物替换、单人_多人_多图_2079857608680366082.json, 平台全量/scail2-多功能极简流_2077937753593040897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_675
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Bernini 4步急速LORA视频编辑_2076959623524995074.json、视频生成/图生视频/Bernini 4步急速LORA视频编辑_2083599403918643201.json、视频生成/图生视频/Bernini 图生视频_4步极速LORA视频编辑_2078379268756828161.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/SCAIL2-多参考角色-迁移替换-4k极速流_2081364495305363458.json、平台全量/Scail2-动作迁移-高质量多图参考版本-远景细节、重打光_2082044731672055810.json、平台全量/scail2-动作迁移、人物替换、单人_多人_多图_2079857608680366082.json、平台全量/scail2-多功能极简流_2077937753593040897.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BerniniStudio`
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `DapaoSmartMemoryOptimizerNode`
-- `ImageSharpen`
-- `KSamplerAdvanced`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RIFE VFI`
-- `SimpleMath+`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `SAM3_VideoTrack`
+- `SCAIL2FitVideo`
+- `SCAIL2ReferencePack`
+- `SCAIL2ReferenceSAMBuilder`
+- `SCAIL2SimpleVideo`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy int`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/3 个有
+- `CM_IntToFloat` —— 2/4 个有
+- `easy int` —— 2/4 个有
+- `RTXVideoSuperResolution` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | uni_pc | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -58,8 +60,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 uni_pc，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

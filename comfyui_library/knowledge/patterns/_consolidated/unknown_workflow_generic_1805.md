@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1805
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7
-common_nodes: [LoadAudio, LongCatVoiceCloneTTS, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.8165
+common_nodes: [EmptyImage, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [音频生成/音频生成/LongCat-AudioDiT：生成《喵窖2026》广告配音_2040123889803595778.json, 音频生成/音频生成/LongCat声音克隆-语音克隆工作流_2094720111306432513.json]
+members: [图片生成/文生图/-全能图片V1文生图工作流_1970791995516067842.json, 图片生成/文生图/【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1805
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/LongCat-AudioDiT：生成《喵窖2026》广告配音_2040123889803595778.json、音频生成/音频生成/LongCat声音克隆-语音克隆工作流_2094720111306432513.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/-全能图片V1文生图工作流_1970791995516067842.json、图片生成/文生图/【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `LongCatVoiceCloneTTS`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `EmptyImage`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/2 个有
-- `NormalizeAudioLoudness` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

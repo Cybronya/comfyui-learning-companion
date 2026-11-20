@@ -1,66 +1,42 @@
 ---
 name: unknown_workflow_generic_1408
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.55
-common_nodes: [BBoxesToSAM2, CM_BoolToInt, CR Text, DeepTranslatorTextNode, DownloadAndLoadQwenModel, Fast Groups Bypasser (rgthree), GetImageSize, GetImageSize+, GetNode, GrowMask, Image Comparer (rgthree), ImageResize+, ImpactSwitch, Int, InvertMask, JjkText, LayerMask: LoadSAM2Model, LayerMask: SAM2UltraV2, LayerUtility: ColorPicker, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, QwenVLDetection, RH_Nano_Banana_Image2Image, SaveImage, SeedVR2, SeedVR2BlockSwap, SetNode, easy isNone, easy mathInt, easy showAnything, int _O]
+frequency: 3
+level: moderate
+coverage: 0.798667
+common_nodes: [Audio Cut (mtb), LoadAudio, MathExpression|pysssss, PrimitiveStringMultiline, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize, SaveAudioAdvanced, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/hz工作流_v001_1981035333783523329.json, 图片生成/图生图/hz工作流_v001_1981065405626204161.json]
+members: [音频生成/音频生成/IndexTTS-2.5-语音克隆-支持情感_2087384243587604481.json, 音频生成/音频生成/IndexTTS-2.5-配音-音色_情感克隆-语音合成-支持情感向量_文本_2087345925378363393.json, 音频生成/音频生成/🎙️IndexTTS-2.5-文本配音-音色克隆-支持情感_2087419278634082306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1408
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/hz工作流_v001_1981035333783523329.json、图片生成/图生图/hz工作流_v001_1981065405626204161.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/IndexTTS-2.5-语音克隆-支持情感_2087384243587604481.json、音频生成/音频生成/IndexTTS-2.5-配音-音色_情感克隆-语音合成-支持情感向量_文本_2087345925378363393.json、音频生成/音频生成/🎙️IndexTTS-2.5-文本配音-音色克隆-支持情感_2087419278634082306.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BBoxesToSAM2`
-- `CM_BoolToInt`
-- `CR Text`
-- `DeepTranslatorTextNode`
-- `DownloadAndLoadQwenModel`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
-- `GetImageSize+`
-- `GetNode`
-- `GrowMask`
-- `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImpactSwitch`
-- `Int`
-- `InvertMask`
-- `JjkText`
-- `LayerMask: LoadSAM2Model`
-- `LayerMask: SAM2UltraV2`
-- `LayerUtility: ColorPicker`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: ImageRemoveAlpha`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PreviewImage`
-- `QwenVLDetection`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SetNode`
-- `easy isNone`
-- `easy mathInt`
-- `easy showAnything`
-- `int _O`
+全部 3 个 workflow 都包含：
+- `Audio Cut (mtb)`
+- `LoadAudio`
+- `MathExpression|pysssss`
+- `PrimitiveStringMultiline`
+- `RH_IndexTTS25_Loader`
+- `RH_IndexTTS25_Synthesize`
+- `SaveAudioAdvanced`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageConcat` —— 1/2 个有
+- `ImpactSwitch` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `easy string` —— 1/3 个有
 
 ## 典型参数
 
@@ -72,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

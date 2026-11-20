@@ -3,32 +3,37 @@ name: unknown_workflow_generic_1113
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.615
-common_nodes: [ImageBatchMulti, JjkText, LoadImage, PrimitiveInt, RHBerniniFullReferenceToVideo, SaveVideo]
+coverage: 0.814333
+common_nodes: [CR Prompt Text, LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Bernini-Full 多参视频生成工作流_2066766775840239618.json, 视频生成/图生视频/Bernini_full‘拼参考图’生成视频_2067114379052675073.json, 视频生成/图生视频/（满血版）Bernini-Full 多参视频生成V1_2066950055558467586.json]
+members: [图片生成/图生图/AA--四宫格-分镜设计--场景设计_2026958885080272897.json, 图片生成/文生图/四宫格_分镜设计_场景设计—提示词生成_2040759095799586818.json, 平台全量/SeeDance 2.0爆款（文字）提示词_2021169667305381890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1113
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Bernini-Full 多参视频生成工作流_2066766775840239618.json、视频生成/图生视频/Bernini_full‘拼参考图’生成视频_2067114379052675073.json、视频生成/图生视频/（满血版）Bernini-Full 多参视频生成V1_2066950055558467586.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AA--四宫格-分镜设计--场景设计_2026958885080272897.json、图片生成/文生图/四宫格_分镜设计_场景设计—提示词生成_2040759095799586818.json、平台全量/SeeDance 2.0爆款（文字）提示词_2021169667305381890.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ImageBatchMulti`
-- `JjkText`
+- `CR Prompt Text`
 - `LoadImage`
-- `PrimitiveInt`
-- `RHBerniniFullReferenceToVideo`
-- `SaveVideo`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `LayerUtility: TextJoin` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
 
 ## 典型参数
 

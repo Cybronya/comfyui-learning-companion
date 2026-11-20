@@ -1,81 +1,72 @@
 ---
 name: unknown_workflow_video_lora_sampler_849
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5565
-common_nodes: [BasicGuider, CLIPTextEncode, CR Float To Integer, DiffusionModelLoaderKJ, DualCLIPLoaderGGUF, EmptyLTXVLatentVideo, GetNode, ImpactInt, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SetNode, SimpleMath+, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
+frequency: 3
+level: strong
+coverage: 0.517667
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetNode, ImageFromBatch+, ImageResizeKJv2, KSamplerAdvanced, LoraLoaderModelOnly, ModelPatchLoader, PainterAV2V, PainterAudioCut, SetNode, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.3多图参考视频工作流_2030663945266139137.json, 视频生成/图生视频/LTX2无限分镜头_2026308466846994434.json]
+members: [数字人/数字人/【官流】数字人音频+视频动态驱动AV2V_2017248198519169026.json, 数字人/数字人/【推荐，视频对口型】视频+音频+提示词驱动数字人_2018014180963520514.json, 数字人/数字人/最新infinte视频对口型驱动AV2V_2018926134733312001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_849
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3多图参考视频工作流_2030663945266139137.json、视频生成/图生视频/LTX2无限分镜头_2026308466846994434.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/【官流】数字人音频+视频动态驱动AV2V_2017248198519169026.json、数字人/数字人/【推荐，视频对口型】视频+音频+提示词驱动数字人_2018014180963520514.json、数字人/数字人/最新infinte视频对口型驱动AV2V_2018926134733312001.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
+全部 3 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Float To Integer`
-- `DiffusionModelLoaderKJ`
-- `DualCLIPLoaderGGUF`
-- `EmptyLTXVLatentVideo`
+- `ConditioningZeroOut`
 - `GetNode`
-- `ImpactInt`
-- `KSamplerSelect`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
+- `ModelPatchLoader`
+- `PainterAV2V`
+- `PainterAudioCut`
 - `SetNode`
-- `SimpleMath+`
+- `TTResolutionSelector`
+- `UNETLoader`
 - `VAEDecode`
-- `VAELoaderKJ`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `LTXVAudioVAEEncode` —— 1/2 个有
-- `LTXVNormalizingSampler` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `RepeatImageBatch` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `SetLatentNoiseMask` —— 1/2 个有
-- `SolidMask` —— 1/2 个有
-- `TimbreAudioLoader` —— 1/2 个有
-- `TrimAudioDuration` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `TDQwen3TTSModelLoader` —— 2/3 个有
+- `TDQwen3TTSVoiceDesign` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `AudioCrop` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 3 | 3 - 3 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | dpmpp_sde | - | 3 | 100% |
+| 重绘幅度 | normal | - | 3 | 100% |
 
 ## 常见问题
 
@@ -83,6 +74,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_sde，3 个样本，一致性 100%
+- 重绘幅度 最常用 normal，3 个样本，一致性 100%

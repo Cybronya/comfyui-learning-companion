@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_356
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.797286
-common_nodes: [LoadImage, RH_ComfyFluxKontext, SaveImage]
+coverage: 0.744875
+common_nodes: [Image Comparer (rgthree), LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX Kontext Pro 图生图工作流_1946453615567626242.json, 图片生成/图生图/FLUX Kontext 全风格线稿上色 风格自由输入_1931956219735683073.json, 图片生成/图生图/FLUX Kontext 风格转换【卡通风】_1931914230113435649.json, 图片生成/图生图/FLUX-Kontext三图融场景布置(家具_人物_同场景）_1929804969749200898.json, 图片生成/图生图/FLUX-Kontext三图融场景布置(家具_人物_同场景）_1931325898262556673.json, 图片生成/图生图/FLUX.1 Kontext 双图融合_1929799532375130113.json, 图片生成/图生图/Flux  Kontext 图像编辑_1930804039121088513.json]
+members: [图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json, 图片生成/图生图/个人号洗4.0_2055233377527189506.json, 图片生成/图生图/个人号洗_2052376260571090945.json, 图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json, 图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json, 图片生成/图生图/简单的动作更改，不改变原图风格_1978322603704246273.json, 图片生成/文生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1977798578682953729.json, 平台全量/一个头像生成高级商务肖像_1993224419871047682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_356
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/FLUX Kontext Pro 图生图工作流_1946453615567626242.json、图片生成/图生图/FLUX Kontext 全风格线稿上色 风格自由输入_1931956219735683073.json、图片生成/图生图/FLUX Kontext 风格转换【卡通风】_1931914230113435649.json、图片生成/图生图/FLUX-Kontext三图融场景布置(家具_人物_同场景）_1929804969749200898.json、图片生成/图生图/FLUX-Kontext三图融场景布置(家具_人物_同场景）_1931325898262556673.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/一句话改图全能图片V1_1960532727684542465.json、图片生成/图生图/个人号洗4.0_2055233377527189506.json、图片生成/图生图/个人号洗_2052376260571090945.json、图片生成/图生图/全能图片1.0_洗图_改图_局部重绘_图生图_2053653711792156674.json、图片生成/图生图/全能图片V1 谷歌大香蕉图片编辑 单图+多图模式_1969105835374878721.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `RH_ComfyFluxKontext`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/7 个有
-- `DeepTranslatorTextNode` —— 4/7 个有
-- `ImageConcanate` —— 4/7 个有
-- `easy showAnything` —— 3/7 个有
-- `easy imageScaleDownToSize` —— 2/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `PMRF` —— 1/7 个有
+- `CR Text` —— 7/8 个有
+- `ImageConcanate` —— 5/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
+- `PreviewImage` —— 4/8 个有
+- `Text` —— 4/8 个有
+- `ResizeLongestToNode` —— 1/8 个有
 
 ## 典型参数
 

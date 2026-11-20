@@ -1,39 +1,33 @@
 ---
 name: unknown_workflow_generic_1016
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.692
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss]
+coverage: 0.75025
+common_nodes: [RH_Sora2_T2V_PRO, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频-官方高质量快速版_2052557998316367873.json, 图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频_2050476787880214529.json, 图片生成/图生图/电商模特手持产品专用洗图——全能图片2.0  0.1元_张图_2058822031935889409.json]
+members: [视频生成/图生视频/全能视频S2   25秒文生视频_2027211931253215233.json, 视频生成/文生视频/全能视频S Pro 文生视频 (15-25秒) 钞能力版_1990018283019620353.json, 视频生成/文生视频/全能视频S2 Pro 文生视频_1987731621698801665.json, 视频生成/文生视频/文生视频工作流｜全能视频S 2 Pro 最长二十五秒_2100471530965790722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1016
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频-官方高质量快速版_2052557998316367873.json、图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频_2050476787880214529.json、图片生成/图生图/电商模特手持产品专用洗图——全能图片2.0  0.1元_张图_2058822031935889409.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频S2   25秒文生视频_2027211931253215233.json、视频生成/文生视频/全能视频S Pro 文生视频 (15-25秒) 钞能力版_1990018283019620353.json、视频生成/文生视频/全能视频S2 Pro 文生视频_1987731621698801665.json、视频生成/文生视频/文生视频工作流｜全能视频S 2 Pro 最长二十五秒_2100471530965790722.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `SaveImage`
-- `ShowText|pysssss`
+全部 4 个 workflow 都包含：
+- `RH_Sora2_T2V_PRO`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/3 个有
-- `RHHiddenNodes` —— 2/3 个有
-- `RH_RhartImageG2ImageToImage` —— 2/3 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 2/3 个有
-- `RH_RhartImageG2TextToImage` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
 
 ## 典型参数
 

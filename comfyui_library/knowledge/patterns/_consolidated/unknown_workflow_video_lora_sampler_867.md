@@ -1,101 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_867
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.736
-common_nodes: [CLIPLoader, CLIPTextEncode, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchMulti, ImageFromBatch, ImageResizeKJv2, LayerMask: MaskGrow, LayerUtility: PurgeVRAM, MathExpression|pysssss, PreviewAnimation, PreviewImage, RHHiddenNodes, RMBG, SetNode, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEasyCache, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy seed]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.659
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, ImageResizeKJv2, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, Primitive string multiline [Crystools], RH_GetAudioDuration, SaveAudio, SeargeIntegerConstant, SetNode, SimpleCondition+, SimpleMath+, ToInt, VHS_LoadVideoFFmpeg, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy showAnything]
+problems: []
 missing: []
-members: [视频生成/图生视频/Nuash版-视频背景替换+人物追踪v3-加密_1970359648316497921.json, 视频生成/图生视频/Nuash版-视频背景替换v1-加密_1967851309351206913.json]
+members: [视频生成/图生视频/InfiniteTalk单人图片数字人 无限时长_1959861917236015105.json, 视频生成/图生视频/InfiniteTalk单人视频驱动数字人_1959926509467283458.json, 视频生成/图生视频/多人版InfiniteTalk高质量数字人_1964183198169186306.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_867
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Nuash版-视频背景替换+人物追踪v3-加密_1970359648316497921.json、视频生成/图生视频/Nuash版-视频背景替换v1-加密_1967851309351206913.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk单人图片数字人 无限时长_1959861917236015105.json、视频生成/图生视频/InfiniteTalk单人视频驱动数字人_1959926509467283458.json、视频生成/图生视频/多人版InfiniteTalk高质量数字人_1964183198169186306.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `GetImageRangeFromBatch`
+全部 3 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `LayerMask: MaskGrow`
-- `LayerUtility: PurgeVRAM`
-- `MathExpression|pysssss`
-- `PreviewAnimation`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `RMBG`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `Primitive string multiline [Crystools]`
+- `RH_GetAudioDuration`
+- `SaveAudio`
+- `SeargeIntegerConstant`
 - `SetNode`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
+- `SimpleCondition+`
+- `SimpleMath+`
+- `ToInt`
+- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEmbedBridge`
+- `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 - `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
+- `easy clearCacheAll`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAELoader` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `LoadImage` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
+- `FantasyPortraitFaceDetector` —— 1/3 个有
+- `FantasyPortraitModelLoader` —— 1/3 个有
+- `GIMMVFI_interpolate` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `WanVideoAddFantasyPortrait` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
+- `WanVideoUni3C_embeds` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | beta57 | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

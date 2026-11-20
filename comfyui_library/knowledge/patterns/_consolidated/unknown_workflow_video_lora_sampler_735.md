@@ -1,60 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_735
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.936667
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.543
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, EmptyImage, FloatConstant, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, INTConstant, ImageConcatMulti, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PointsEditor, PoseAndFaceDetection, PreviewImage, SetNode, TextBox1, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy anythingIndexSwitch, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2kj流图生视频自动提示词（需要GLM api key））_1950030719999500290.json, 视频生成/图生视频/【橘子AI】Wan 图生视频工作流 -KJ_1978004936166363137.json, 视频生成/文生视频/Wan2.2文生视频-告别PPT式电视剧_1950553795895939073.json]
+members: [视频生成/图生视频/Sec对象分割，实现视频换装换脸(Wan-animate)_1979072764936097793.json, 视频生成/图生视频/wan2.2 animate动物替换+姿态迁移_1976916291078524930.json, 视频生成/图生视频/wan2.2 animate动物替换实验成功_2016418267958616065.json, 视频生成/图生视频/wan2.2 animate多人物指定角色替换，保留原场景_1976905425356525570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_735
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2kj流图生视频自动提示词（需要GLM api key））_1950030719999500290.json、视频生成/图生视频/【橘子AI】Wan 图生视频工作流 -KJ_1978004936166363137.json、视频生成/文生视频/Wan2.2文生视频-告别PPT式电视剧_1950553795895939073.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Sec对象分割，实现视频换装换脸(Wan-animate)_1979072764936097793.json、视频生成/图生视频/wan2.2 animate动物替换+姿态迁移_1976916291078524930.json、视频生成/图生视频/wan2.2 animate动物替换实验成功_2016418267958616065.json、视频生成/图生视频/wan2.2 animate多人物指定角色替换，保留原场景_1976905425356525570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
+全部 4 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `EmptyImage`
+- `FloatConstant`
 - `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMaskWithBlur`
 - `INTConstant`
-- `LoadWanVideoT5TextEncoder`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `MaskToImage`
+- `OnnxDetectionModelLoader`
+- `PointsEditor`
+- `PoseAndFaceDetection`
+- `PreviewImage`
+- `SetNode`
+- `TextBox1`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
+- `easy anythingIndexSwitch`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `CLIPTextEncode` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `WanVideoImageToVideoEncode` —— 2/3 个有
-- `WanVideoTextEmbedBridge` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `GLM_Vision_ImageToPrompt` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `QwenLoader` —— 1/3 个有
-- `ShowText` —— 1/3 个有
-- `Wan22PromptSelector` —— 1/3 个有
-- `WanVideoEmptyEmbeds` —— 1/3 个有
-- `WanVideoPromptExtender` —— 1/3 个有
+- `DownloadAndLoadSAM2Model` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `Sam2Segmentation` —— 3/4 个有
+- `AnimalPosePreprocessor` —— 2/4 个有
+- `DWPreprocessor` —— 2/4 个有
+- `DrawViTPose` —— 2/4 个有
+- `FaceMaskFromPoseKeypoints` —— 2/4 个有
+- `ImageCropByMaskAndResize` —— 2/4 个有
+- `ImageFromBatch` —— 2/4 个有
+- `PixelPerfectResolution` —— 2/4 个有
+- `DownloadAndLoadQwenModel` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `QwenVLDetection` —— 1/4 个有
+- `SeCModelLoader` —— 1/4 个有
+- `SeCVideoSegmentation` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 

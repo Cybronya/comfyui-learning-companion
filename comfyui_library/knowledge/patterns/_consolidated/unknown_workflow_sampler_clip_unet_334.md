@@ -3,67 +3,66 @@ name: unknown_workflow_sampler_clip_unet_334
 type: Unknown Workflow
 frequency: 4
 level: strong
-coverage: 1
-common_nodes: [CLIPTextEncode, CreateVideo, DualCLIPLoader, KSampler, ModelSamplingSD3, SaveVideo, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.89375
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), KSamplerSelect, LoadImage, MathExpression|pysssss, PiDConditioning, SamplerCustom, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/Hunyuan 1.5 480P 图生视频加速版_1993298338619604994.json, 视频生成/图生视频/Hunyuan 1.5 720P 图生视频加速版_1993306482808733698.json, 视频生成/图生视频/Hunyuan-480P-图生视频（8-12步出图）_1997647681071853569.json, 视频生成/文生视频/Hunyuan 1.5 480P 文生视频加速版_1993293448365146113.json]
+members: [图片生成/图生图/Nvidia_PID_4K_像素级无损放大工作流_2096521449128415233.json, 图片生成/图生图/Nvidia_PID_4K_像素级无损放大工作流_2096880620424224770.json, 平台全量/Nvidia PID 4K 像素级无损放大工作流_2075430045367234562.json, 平台全量/PiD 高清放大_2063864892125442049.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_334
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Hunyuan 1.5 480P 图生视频加速版_1993298338619604994.json、视频生成/图生视频/Hunyuan 1.5 720P 图生视频加速版_1993306482808733698.json、视频生成/图生视频/Hunyuan-480P-图生视频（8-12步出图）_1997647681071853569.json、视频生成/文生视频/Hunyuan 1.5 480P 文生视频加速版_1993293448365146113.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Nvidia_PID_4K_像素级无损放大工作流_2096521449128415233.json、图片生成/图生图/Nvidia_PID_4K_像素级无损放大工作流_2096880620424224770.json、平台全量/Nvidia PID 4K 像素级无损放大工作流_2075430045367234562.json、平台全量/PiD 高清放大_2063864892125442049.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `DualCLIPLoader`
-- `KSampler`
-- `ModelSamplingSD3`
-- `SaveVideo`
+- `ConditioningZeroOut`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `PiDConditioning`
+- `SamplerCustom`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 3/4 个有
-- `CLIPVisionLoader` —— 3/4 个有
-- `HunyuanVideo15ImageToVideo` —— 3/4 个有
+- `ComfySwitchNode` —— 3/4 个有
+- `EmptyLatentImage` —— 3/4 个有
+- `GetImageSize` —— 3/4 个有
+- `ImageColorMatch+` —— 3/4 个有
 - `ImageResizeKJv2` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `EmptyHunyuanVideo15Latent` —— 1/4 个有
+- `PrimitiveBoolean` —— 3/4 个有
+- `ResizeImagesByLongerEdge` —— 3/4 个有
+- `EmptyChromaRadianceLatentImage` —— 1/4 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `JWImageResizeByLongerSide` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 12 | 4 | 81% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 2160 | 2160 - 2160 | 3 | 100% |
+| 高度 | 4096 | 4096 - 4096 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 12，4 个样本，取值集中（一致性 81%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（3/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 2160，观测区间 2160 - 2160，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 4096，观测区间 4096 - 4096，3 个样本，取值集中（一致性 100%）

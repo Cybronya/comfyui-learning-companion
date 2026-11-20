@@ -3,35 +3,36 @@ name: unknown_workflow_generic_825
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.77475
-common_nodes: [CR Text, LoadImage, SaveVideo]
+coverage: 0.70475
+common_nodes: [CR Prompt Text, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI漫剧（批量分镜图生成视频）_2016202557592440833.json, 视频生成/图生视频/全能视频S图生视频批量视频生成漫剧生成高速10并发0.05元一个_1999016663511093249.json, 视频生成/图生视频/最强AI视频（都懂的模型 多模态）_2037356383514923009.json, 视频生成/图生视频/最强超能视频2.0_全能参考 真人视频_2037557543173627905.json]
+members: [图片生成/反推提示词/Suno音乐歌词版-自定义歌词特价版V1_1968707571395829762.json, 图片生成/反推提示词/（Qwen3.8本地版）最强MiniMax H3提示词增强器_2093398296659324930.json, 图片生成/反推提示词/（RH免费版）Gemini 3 Pro图像超级反推V1_1991327552618999810.json, 图片生成/图生图/最强MiniMax_H3提示词增强器贞贞的平价AI小屋_2088515347732324353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_825
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI漫剧（批量分镜图生成视频）_2016202557592440833.json、视频生成/图生视频/全能视频S图生视频批量视频生成漫剧生成高速10并发0.05元一个_1999016663511093249.json、视频生成/图生视频/最强AI视频（都懂的模型 多模态）_2037356383514923009.json、视频生成/图生视频/最强超能视频2.0_全能参考 真人视频_2037557543173627905.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/Suno音乐歌词版-自定义歌词特价版V1_1968707571395829762.json、图片生成/反推提示词/（Qwen3.8本地版）最强MiniMax H3提示词增强器_2093398296659324930.json、图片生成/反推提示词/（RH免费版）Gemini 3 Pro图像超级反推V1_1991327552618999810.json、图片生成/图生图/最强MiniMax_H3提示词增强器贞贞的平价AI小屋_2088515347732324353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
+- `CR Prompt Text`
 - `LoadImage`
-- `SaveVideo`
+- `SaveImage`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 2/4 个有
-- `RH_Sora2_I2V_Batch` —— 2/4 个有
-- `LoadAudio` —— 1/4 个有
+- `MiniMaxH3PromptEnhancerT8` —— 2/4 个有
+- `Comfly_suno_lyrics` —— 1/4 个有
+- `RH_Captioner_Pro` —— 1/4 个有
 
 ## 典型参数
 

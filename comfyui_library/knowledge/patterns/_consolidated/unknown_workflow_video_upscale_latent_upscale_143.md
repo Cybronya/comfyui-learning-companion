@@ -3,90 +3,99 @@ name: unknown_workflow_video_upscale_latent_upscale_143
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5805
-common_nodes: [AudioCrop, BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfySwitchNode, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, ImageBatchMulti, ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXSequencer, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAudio, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, SimpleMath+, Text Concatenate, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.7425
+common_nodes: [BasicScheduler, BlockifyMask, CFGGuider, CLIPTextEncode, CreateVideo, DF_Int_to_Float, DrawMaskOnImage, DualCLIPLoader, GetImageSize, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageConcanate, ImageResizeKJv2, ImageScaleBy, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, QZ_ResolutionPreset, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, SimpleMath+, UNETLoader, VAEDecodeTiled, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3 I2V FLFV MV Lip Sync 首尾帧音乐视频对口形_2075065970321874946.json, 视频生成/图生视频/LTX2.3 I2V First Last Frame首尾帧（无限中间帧）_2075069452714078209.json]
+members: [图片生成/图生图/ltx2.3 视频编辑工作流 速度贼拉快_2041799615799894018.json, 视频生成/文生视频/ltx2.3 视频编辑工作流 保留原生语音-v2版_2042177519486509057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_143
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 I2V FLFV MV Lip Sync 首尾帧音乐视频对口形_2075065970321874946.json、视频生成/图生视频/LTX2.3 I2V First Last Frame首尾帧（无限中间帧）_2075069452714078209.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ltx2.3 视频编辑工作流 速度贼拉快_2041799615799894018.json、视频生成/文生视频/ltx2.3 视频编辑工作流 保留原生语音-v2版_2042177519486509057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
 - `BasicScheduler`
+- `BlockifyMask`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfySwitchNode`
-- `EmptyLTXVLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
+- `CreateVideo`
+- `DF_Int_to_Float`
+- `DrawMaskOnImage`
+- `DualCLIPLoader`
 - `GetImageSize`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `ImageBatchMulti`
+- `GrowMaskWithBlur`
+- `ImageConcanate`
 - `ImageResizeKJv2`
 - `ImageScaleBy`
+- `Int`
 - `KSamplerSelect`
 - `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXAVTextEncoderLoader`
-- `LTXSequencer`
+- `LTXVAddGuideMulti`
 - `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+- `ManualSigmas`
+- `PrimitiveInt`
+- `QZ_ResolutionPreset`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
+- `SaveVideo`
 - `SetNode`
 - `SimpleMath+`
-- `Text Concatenate`
+- `UNETLoader`
 - `VAEDecodeTiled`
+- `VAEEncode`
 - `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
+- `DF_Get_image_size` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 1/2 个有
+- `EmptyImage` —— 1/2 个有
+- `ImageCompositeFromMaskBatch+` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageInvert` —— 1/2 个有
+- `LTX2_NAG` —— 1/2 个有
 - `LTXVAudioVAEEncode` —— 1/2 个有
 - `LTXVEmptyLatentAudio` —— 1/2 个有
 - `LTXVReferenceAudio` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
-- `PainterAudioLength` —— 1/2 个有
-- `PrimitiveBoolean` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `MelBandRoFormerModelLoader` —— 1/2 个有
+- `MelBandRoFormerSampler` —— 1/2 个有
+- `ModelMemoryUsageFactorOverride` —— 1/2 个有
+- `PointsEditor` —— 1/2 个有
+- `PreviewAudio` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `SAM3Segment` —— 1/2 个有
+- `Sam2Segmentation` —— 1/2 个有
 - `SetLatentNoiseMask` —— 1/2 个有
 - `SolidMask` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `TrimAudioDuration` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1 | - | 1 | 100% |
+| 宽度 | 116 | - | 1 | 100% |
 | 高度 | 24 | - | 1 | 100% |
 
 ## 常见问题

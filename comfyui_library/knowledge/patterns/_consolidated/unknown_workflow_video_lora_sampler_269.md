@@ -1,65 +1,101 @@
 ---
 name: unknown_workflow_video_lora_sampler_269
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.740111
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
-problems: []
+frequency: 10
+level: strong
+coverage: 0.8326
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Apply LoRA Stack, CR Seed, CR Text, CheckpointLoaderSimple, ComfySwitchNode, ConditioningZeroOut, Convert Masks to Images, DiffusionModelLoaderKJ, INTConstant, Image Batch, ImageCompositeMasked, ImageScale, KSampler, LoadImage, ModelSamplingSD3, PrimitiveBoolean, SAM3_TrackPreview, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanContextWindowsManual, WanSCAILToVideo, easy loraStack]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json, 视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json, 视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json, 视频生成/文生视频/MiniMax-H3 4步加速 _ 全能多参音视频生成_2087364898803245057.json, 视频生成/文生视频/Minimax-H3-4步加速（T8节点+提示词强化）_2086825206148063234.json, 视频生成/文生视频/h3开源加速版MINIMAX-H3工作流合集文单图生多图参考4步lora加速_2087034230105792514.json, 视频生成/文生视频/【CommintAI】MINIMAX H3 工作流合集_2085882928617316354.json, 视频生成/文生视频/【Work-Fisher】MINIMAX-H3工作流合集_2084259935344480258.json, 视频生成/文生视频/测试使用_2094631681096507394.json]
+members: [平台全量/动作迁移_SCAIL_2113848667500277761.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2086023874776489986.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111375323014189057.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111428969907179521.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2113537441683562498.json, 视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流小珠光同款_2104108308775915521.json, 视频生成/图生视频/SCAIL2 动作迁移&角色替换(官方工作流)_2077936004870266882.json, 视频生成/图生视频/Scail2-长视频动作迁移_2093937361074872322.json, 视频生成/图生视频/Scail2-长视频角色替换_2093940597882179585.json, 视频生成/图生视频/🔪🔪终极效率版！SCAIL-2动作迁移&角色替换拆解工作流03集_2089247269597048834.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_269
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/MINIMAX-H3 一键生成叙事短片_2085916314648014849.json、视频生成/文生视频/MINIMAX-H3文生视频T8加速版_2097572430410772482.json、视频生成/文生视频/MINIMAX-H3文生视频_2093582444862730242.json、视频生成/文生视频/MiniMax-H3 4步加速 _ 全能多参音视频生成_2087364898803245057.json、视频生成/文生视频/Minimax-H3-4步加速（T8节点+提示词强化）_2086825206148063234.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/动作迁移_SCAIL_2113848667500277761.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2086023874776489986.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111375323014189057.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2111428969907179521.json、视频生成/图生视频/SCAIL-2动作迁移&角色替换支持多参工作流_2113537441683562498.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Apply LoRA Stack`
+- `CR Seed`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `ComfySwitchNode`
+- `ConditioningZeroOut`
+- `Convert Masks to Images`
+- `DiffusionModelLoaderKJ`
+- `INTConstant`
+- `Image Batch`
+- `ImageCompositeMasked`
+- `ImageScale`
+- `KSampler`
+- `LoadImage`
+- `ModelSamplingSD3`
+- `PrimitiveBoolean`
+- `SAM3_TrackPreview`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `WanContextWindowsManual`
+- `WanSCAILToVideo`
+- `easy loraStack`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 8/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/9 个有
-- `LoadImage` —— 6/9 个有
-- `LoadAudio` —— 5/9 个有
-- `UniBlockSwap` —— 5/9 个有
-- `RHLLMChatNode` —— 2/9 个有
-- `JjkText` —— 1/9 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/9 个有
-- `ShowText|fofo` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
-- `孤海注释` —— 1/9 个有
+- `GetNode` —— 9/10 个有
+- `InvertMask` —— 9/10 个有
+- `SetNode` —— 9/10 个有
+- `FastGroupsBypassSwitch` —— 8/10 个有
+- `Text` —— 2/10 个有
+- `Any Switch (rgthree)` —— 1/10 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/10 个有
+- `EmptyImage` —— 1/10 个有
+- `Fast Groups Muter (rgthree)` —— 1/10 个有
+- `Fast Muter (rgthree)` —— 1/10 个有
+- `GIMMVFI_interpolate` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `LazySwitch2way` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `Seed (rgthree)` —— 1/10 个有
+- `easy convertAnything` —— 1/10 个有
+- `孤海注释` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 8 | 10 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 10 | 90% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 8，10 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m_sde_gpu，10 个样本，一致性 90%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

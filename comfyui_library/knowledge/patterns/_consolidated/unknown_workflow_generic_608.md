@@ -1,42 +1,34 @@
 ---
 name: unknown_workflow_generic_608
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.536
-common_nodes: [CR Prompt Text, PreviewAny, PrimitiveStringMultiline, SaveAudioAdvanced, SaveText, YuE2Loader, YuE2Plan, YuE2Render, YuE2SamplingConfig, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, RH_Kling25_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/YuE2-改谱-修改音乐-音乐生成_2101454097667944449.json, 图片生成/文生图/YuE2-改谱-修改音乐-音乐生成_2102590358038335490.json, 音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2100058554219720705.json, 音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2100867189648748545.json, 音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2101134683223449602.json]
+members: [平台全量/可灵 Kling v2.5 Image2Video (Turbo-Std)_1988166656922968066.json, 视频生成/图生视频/Kling_25_Image2Video_v2.5_2033747494940712961.json, 视频生成/图生视频/可灵 Kling v2.5图生视频 (Turbo-Std)_2015989000204460034.json, 视频生成/图生视频/可灵2.5 Turbo-Std图生视频-阿浩_2041082785955319810.json, 视频生成/图生视频/可灵2.5图生视频Klingv2.5_1988180318677024770.json, 视频生成/图生视频/可灵图生视频 V2.5 Turbo-Std(0.21_秒)_2039889505292914690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_608
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/YuE2-改谱-修改音乐-音乐生成_2101454097667944449.json、图片生成/文生图/YuE2-改谱-修改音乐-音乐生成_2102590358038335490.json、音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2100058554219720705.json、音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2100867189648748545.json、音频生成/音频生成/YuE2-改谱-修改音乐-音乐生成_2101134683223449602.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/可灵 Kling v2.5 Image2Video (Turbo-Std)_1988166656922968066.json、视频生成/图生视频/Kling_25_Image2Video_v2.5_2033747494940712961.json、视频生成/图生视频/可灵 Kling v2.5图生视频 (Turbo-Std)_2015989000204460034.json、视频生成/图生视频/可灵2.5 Turbo-Std图生视频-阿浩_2041082785955319810.json、视频生成/图生视频/可灵2.5图生视频Klingv2.5_1988180318677024770.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `SaveAudioAdvanced`
-- `SaveText`
-- `YuE2Loader`
-- `YuE2Plan`
-- `YuE2Render`
-- `YuE2SamplingConfig`
-- `easy showAnything`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `RH_Kling25_Image2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
+- `GetRandomIntegerInRange` —— 1/6 个有
 
 ## 典型参数
 

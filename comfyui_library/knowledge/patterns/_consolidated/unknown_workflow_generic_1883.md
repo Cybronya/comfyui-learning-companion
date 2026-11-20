@@ -3,37 +3,33 @@ name: unknown_workflow_generic_1883
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.926
-common_nodes: [AdjustAudio, AudioCombine, AudioConcatenate, AudioSeparation, LoadAudio, PrimitiveInt, SaveAudio, SeedVCRun]
+coverage: 0.6
+common_nodes: [PrimitiveStringMultiline, RH_FireRedAudioLoader, RH_FireRedAudioVoiceDesign]
 problems: []
 missing: []
-members: [音频生成/音频生成/歌曲音色克隆_1934522698573774849.json, 音频生成/音频生成/歌曲音色克隆｜AI唱歌·你的音色唱任何歌（SeedVC）_2111250006731739138.json]
+members: [平台全量/AI配音工作流｜一句话描述音色 自动生成_2100471604152201217.json, 音频生成/音频生成/FireRed声音设计-AI音色定制工作流_2094342503943200769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1883
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/歌曲音色克隆_1934522698573774849.json、音频生成/音频生成/歌曲音色克隆｜AI唱歌·你的音色唱任何歌（SeedVC）_2111250006731739138.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/AI配音工作流｜一句话描述音色 自动生成_2100471604152201217.json、音频生成/音频生成/FireRed声音设计-AI音色定制工作流_2094342503943200769.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AdjustAudio`
-- `AudioCombine`
-- `AudioConcatenate`
-- `AudioSeparation`
-- `LoadAudio`
-- `PrimitiveInt`
-- `SaveAudio`
-- `SeedVCRun`
+- `PrimitiveStringMultiline`
+- `RH_FireRedAudioLoader`
+- `RH_FireRedAudioVoiceDesign`
 
 **可变部分**（部分 workflow 才有）：
-- `TrimAudio` —— 1/2 个有
+- `SaveAudioAdvanced` —— 1/2 个有
+- `SaveAudioMP3` —— 1/2 个有
 
 ## 典型参数
 

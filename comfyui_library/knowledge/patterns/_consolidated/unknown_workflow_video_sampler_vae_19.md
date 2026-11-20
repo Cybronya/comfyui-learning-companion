@@ -1,82 +1,78 @@
 ---
 name: unknown_workflow_video_sampler_vae_19
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.5565
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.875
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/带货视频角色替换稳定版_2019053733203677185.json, 视频生成/图生视频/46b.tonnie-Wan2.2 Animate替换视频中的人物及姿态（自动版）_2005719799860789249.json, 视频生成/图生视频/AI换人术把你代入名场面，本来应该从从容容游刃有余_1976931314983161857.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移  24G显存_1998993890759860225.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_1991192921735278594.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_2043632215732523009.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_2043636277030948866.json, 视频生成/图生视频/V2 Wan2.2 Animate 视频替换人物_产品_背景 (3)_1997005381832478722.json, 视频生成/图生视频/V2 Wan2.2 Animate 视频替换人物_产品_背景_1974719882828845058.json, 视频生成/图生视频/V2 Wan2.3 Animate 超自然动作迁移_2008454973708832769.json, 视频生成/图生视频/V2 Wan2.5 Animate 超自然动作迁移 视频换人_2064595765720346625.json, 视频生成/图生视频/V2+Wan2.2+Animate+动作迁移_2016043271843225601.json, 视频生成/图生视频/Wan2.5  超自然动作迁移，视频换人_2034527249550020609.json, 视频生成/图生视频/动作迁移  V2 Wan2.2 Animate_2030254367873441794.json]
+members: [视频生成/图生视频/MultiTalk+Aniwan图生数字人+音色克隆_1948391193374797826.json, 视频生成/图生视频/【数字人口播】静态图一键生成带货数字人视频_2072520035003879425.json, 视频生成/图生视频/【数字人口播】静态图一键生成带货数字人视频_2075913669199884290.json, 视频生成/图生视频/对口型 MV 唱歌音频音频驱动_2045503009345507330.json, 视频生成/图生视频/数字人口播 一键生成带货数字人视频 图生视频_2073671180170645506.json, 视频生成/图生视频/数字人口播 美妆模特 主播 静态图一键生成带货数字人视频_2074322783164788738.json, 视频生成/图生视频/数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_2020512883326586881.json, 视频生成/图生视频/数字人直播带货对口型RCM+Infinite Talk+VoxCPM TTS1.5_2027651848353615874.json, 视频生成/图生视频/无限时长（电商带货，音乐，数字人）_2054887667418050562.json, 视频生成/图生视频/电商专属--图生视频--AI数字人对口型RCM+Infinite Talk_2056187222017224706.json, 视频生成/图生视频/电商专属--图生视频--AI数字人对口型RCM+Infinite Talk_2056198886519263233.json, 视频生成/图生视频/直播带货数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_1993682109309059073.json, 视频生成/图生视频/超自然Infinite Talk+VoxCPM TTS1.5 方言克隆 直播带货数字人主播对口型_2005895609095782402.json, 视频生成/图生视频/高动态Infinite Talk+VoxCPM TTS1.5 方言克隆 直播带货数字人主播对口型_2004571944911601665.json, 视频生成/文生视频/AI演唱数字人对口型RCM+Infinite+Talk+VoxCPM+TTS1.5 (1)_2034196163921977346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_19
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/带货视频角色替换稳定版_2019053733203677185.json、视频生成/图生视频/46b.tonnie-Wan2.2 Animate替换视频中的人物及姿态（自动版）_2005719799860789249.json、视频生成/图生视频/AI换人术把你代入名场面，本来应该从从容容游刃有余_1976931314983161857.json、视频生成/图生视频/V2 Wan2.2 Animate 动作迁移  24G显存_1998993890759860225.json、视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_1991192921735278594.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/MultiTalk+Aniwan图生数字人+音色克隆_1948391193374797826.json、视频生成/图生视频/【数字人口播】静态图一键生成带货数字人视频_2072520035003879425.json、视频生成/图生视频/【数字人口播】静态图一键生成带货数字人视频_2075913669199884290.json、视频生成/图生视频/对口型 MV 唱歌音频音频驱动_2045503009345507330.json、视频生成/图生视频/数字人口播 一键生成带货数字人视频 图生视频_2073671180170645506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BlockifyMask`
+全部 15 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `DrawViTPose`
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `Sam2Segmentation`
-- `VHS_LoadVideo`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEasyCache`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 13/14 个有
-- `GrowMask` —— 13/14 个有
-- `INTConstant` —— 13/14 个有
-- `ImageResizeKJv2` —— 13/14 个有
-- `WanVideoLoraSelectMulti` —— 13/14 个有
-- `WanVideoSetLoRAs` —— 13/14 个有
-- `GetNode` —— 12/14 个有
-- `PointsEditor` —— 12/14 个有
-- `SetNode` —— 12/14 个有
-- `GetImageSize` —— 11/14 个有
-- `ImageConcanate` —— 11/14 个有
-- `VHS_VideoInfoLoaded` —— 11/14 个有
-- `easy cleanGpuUsed` —— 11/14 个有
-- `easy showAnything` —— 11/14 个有
-- `JjkText` —— 10/14 个有
-- `Label (rgthree)` —— 2/14 个有
-- `MuyeLoadImage` —— 2/14 个有
-- `SimpleMath+` —— 2/14 个有
-- `ACE_ImageFaceCrop` —— 1/14 个有
-- `Fast Groups Muter (rgthree)` —— 1/14 个有
-- `Float to Int` —— 1/14 个有
-- `GrowMaskWithBlur` —— 1/14 个有
-- `ImageConcatMulti` —— 1/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
-- `PreviewImage` —— 1/14 个有
-- `Primitive integer [Crystools]` —— 1/14 个有
-- `RHHiddenNodes` —— 1/14 个有
-- `VHS_LoadVideoPath` —— 1/14 个有
-- `VHS_VideoInfo` —— 1/14 个有
-- `WanVideoContextOptions` —— 1/14 个有
-- `WanVideoTeaCache` —— 1/14 个有
+- `Float to Int` —— 14/15 个有
+- `RH_GetAudioDuration` —— 14/15 个有
+- `WanVideoImageToVideoMultiTalk` —— 14/15 个有
+- `WanVideoTextEncodeCached` —— 14/15 个有
+- `WanVideoLoraSelect` —— 13/15 个有
+- `AudioSeparation` —— 11/15 个有
+- `easy anythingIndexSwitch` —— 11/15 个有
+- `Int` —— 10/15 个有
+- `SoundFlow_TrimAudio` —— 10/15 个有
+- `PrimitiveStringMultiline` —— 9/15 个有
+- `String Literal` —— 8/15 个有
+- `Apply Whisper` —— 7/15 个有
+- `FlashVSRNode` —— 7/15 个有
+- `VoxCPM_TTS` —— 7/15 个有
+- `Fast Groups Muter (rgthree)` —— 6/15 个有
+- `GetNode` —— 3/15 个有
+- `SetNode` —— 3/15 个有
+- `AudioCrop` —— 2/15 个有
+- `PreviewAudio` —— 2/15 个有
+- `RHHiddenNodes` —— 2/15 个有
+- `WanVideoTorchCompileSettings` —— 2/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
+- `IndexTTSRun` —— 1/15 个有
+- `LoadWanVideoT5TextEncoder` —— 1/15 个有
+- `WanVideoFreeInitArgs` —— 1/15 个有
+- `WanVideoImageToVideoEncode` —— 1/15 个有
+- `WanVideoSetRadialAttention` —— 1/15 个有
+- `WanVideoTextEncode` —— 1/15 个有
 
 ## 典型参数
 

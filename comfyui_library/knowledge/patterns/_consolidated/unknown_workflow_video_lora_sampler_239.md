@@ -1,79 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_239
 type: Unknown Workflow
-frequency: 9
+frequency: 11
 level: moderate
-coverage: 0.821
-common_nodes: [AudioSeparation, BasicScheduler, CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, HAIGC_TimestampTextReplace, HAIGC_VideoSubtitleTimestampPro, ImageResizeKJv2, ImageScaleToTotalPixels, JjkText, JoinStrings, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SimpleMath+, SolidMask, SoundFlow_GetLength, SubtitleOptimizer, TranscribeConfig, TrimAudioDuration, UNETLoader, VAELoader, VAELoaderKJ, VHS_VideoCombine, VideoTranscribe, easy showAnything]
+coverage: 0.912091
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/ailalala_2079104586761203714.json, 数字人/数字人/llplei_scail.json_2077579847588737026.json, 视频生成/图生视频/kklplei_scail.json_2077561006401875969.json, 视频生成/图生视频/lalalalala_2077647085960261634.json, 视频生成/图生视频/lalalalala_2077655340002402306.json, 视频生成/图生视频/lplei_scail.json_2077566823591145473.json, 视频生成/图生视频/wdigital_combination.json_2077592725263839233.json, 视频生成/图生视频/zhishi_scail.json_2077579473330982913.json, 视频生成/图生视频/zhishi_scail.json_2077586586442752001.json]
+members: [视频生成/图生视频/MINIMAX多参官方加速工作流_2085378301211799553.json, 视频生成/图生视频/Minimax H3三图参考(无参考音)_2089300406496219138.json, 视频生成/图生视频/Minimax H3三图参考+2参考音_2089300447696871426.json, 视频生成/图生视频/Minimax H3三图参考+三参考音_2089302046485864449.json, 视频生成/图生视频/Minimax H3单图参考(无参考音)_2084264457093607425.json, 视频生成/图生视频/Minimax H3单图参考+1参考音_2089270431596507137.json, 视频生成/图生视频/Minimax H3双图参考(无参考音)_2089281585597210625.json, 视频生成/图生视频/Minimax H3双图参考+1参考音【口播用】_2090260648876920833.json, 视频生成/图生视频/Minimax H3双图参考+1参考音【批量管理系统api用】_2093664402544353282.json, 视频生成/图生视频/Minimax H3双图参考+2参考音_2089282022698213377.json, 视频生成/图生视频/minimax H3酷炫街舞_2085366057304412161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_239
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/ailalala_2079104586761203714.json、数字人/数字人/llplei_scail.json_2077579847588737026.json、视频生成/图生视频/kklplei_scail.json_2077561006401875969.json、视频生成/图生视频/lalalalala_2077647085960261634.json、视频生成/图生视频/lalalalala_2077655340002402306.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MINIMAX多参官方加速工作流_2085378301211799553.json、视频生成/图生视频/Minimax H3三图参考(无参考音)_2089300406496219138.json、视频生成/图生视频/Minimax H3三图参考+2参考音_2089300447696871426.json、视频生成/图生视频/Minimax H3三图参考+三参考音_2089302046485864449.json、视频生成/图生视频/Minimax H3单图参考(无参考音)_2084264457093607425.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioSeparation`
+全部 11 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `HAIGC_TimestampTextReplace`
-- `HAIGC_VideoSubtitleTimestampPro`
-- `ImageResizeKJv2`
-- `ImageScaleToTotalPixels`
-- `JjkText`
-- `JoinStrings`
+- `CLIPLoader`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVSeparateAVLatent`
-- `LTXVTiledVAEDecode`
-- `LayerUtility: PurgeVRAM V2`
-- `LayerUtility: TextJoin`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `SubtitleOptimizer`
-- `TranscribeConfig`
-- `TrimAudioDuration`
 - `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VideoTranscribe`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GoogleTranslateTextNode` —— 8/9 个有
-- `LatentUpscaleModelLoader` —— 7/9 个有
+- `ComfyMathExpression` —— 10/11 个有
+- `MiniMaxH3ReferenceToVideo` —— 10/11 个有
+- `PrimitiveFloat` —— 10/11 个有
+- `PrimitiveStringMultiline` —— 10/11 个有
+- `INTConstant` —— 9/11 个有
+- `LoadAudio` —— 6/11 个有
+- `Display Any (rgthree)` —— 2/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
+- `PathchSageAttentionKJ` —— 2/11 个有
+- `MiniMaxH3ImageToVideo` —— 1/11 个有
+- `SimpleCalculatorKJ` —— 1/11 个有
+- `StringReplace` —— 1/11 个有
+- `TextGenerate` —— 1/11 个有
+- `easy int` —— 1/11 个有
 
 ## 典型参数
 

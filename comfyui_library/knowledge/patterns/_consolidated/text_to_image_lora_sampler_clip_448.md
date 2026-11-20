@@ -3,72 +3,53 @@ name: text_to_image_lora_sampler_clip_448
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.83675
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, GetImageSize, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveFloat, QwenImage21Cache, SaveImage, Text Multiline, TextEncodeQwenImageEditPlus, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy positive, easy showAnything, solarL_SaveImagesToZip]
+coverage: 0.85725
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/qwen2.1稳定动作迁移PE版，人像写真图生图玩法_2111223395865153538.json, 图片生成/图生图/千问2.1服装提取换装二合一 虚拟换装PE版处理工具_2113352556004069377.json, 图片生成/图生图/真人动漫互转图生图工作流PE版，写实二次元一键切换_2110461219638435842.json, 图片生成/图生图/真人动漫互转图生图工作流PE版，写实二次元一键切换_2113469138810261506.json]
+members: [图片生成/图生图/H3_MAX智能运镜AI看图自动运镜图生图处理工作流_2101761496228388866.json, 图片生成/图生图/Image2.5高精度图生图处理生成工具_2100287923240398849.json, 图片生成/图生图/MOSS Text to Image 2K Turbo 文生图图生图极速工具_2114119482594648066.json, 图片生成/图生图/Qwen Image 2.1 IN 极速版全能编辑，2K超清透明通道十图极限融合_2103213714240528385.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_448
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/qwen2.1稳定动作迁移PE版，人像写真图生图玩法_2111223395865153538.json、图片生成/图生图/千问2.1服装提取换装二合一 虚拟换装PE版处理工具_2113352556004069377.json、图片生成/图生图/真人动漫互转图生图工作流PE版，写实二次元一键切换_2110461219638435842.json、图片生成/图生图/真人动漫互转图生图工作流PE版，写实二次元一键切换_2113469138810261506.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/H3_MAX智能运镜AI看图自动运镜图生图处理工作流_2101761496228388866.json、图片生成/图生图/Image2.5高精度图生图处理生成工具_2100287923240398849.json、图片生成/图生图/MOSS Text to Image 2K Turbo 文生图图生图极速工具_2114119482594648066.json、图片生成/图生图/Qwen Image 2.1 IN 极速版全能编辑，2K超清透明通道十图极限融合_2103213714240528385.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GetImageSize`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `QwenImage21Cache`
+- `PreviewImage`
 - `SaveImage`
-- `Text Multiline`
-- `TextEncodeQwenImageEditPlus`
-- `TextGenerateLTX2Prompt`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy positive`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `ImageRemoveAlpha+` —— 3/4 个有
-- `JoinStrings` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `PrimitiveString` —— 3/4 个有
-- `孤海注释` —— 3/4 个有
-- `ColorMatchV2` —— 2/4 个有
-- `ComfySwitchNode` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `Any Switch (rgthree)` —— 1/4 个有
-- `BatchImagesNode` —— 1/4 个有
-- `CheckpointLoaderSimple` —— 1/4 个有
-- `EmptyImage` —— 1/4 个有
-- `Fast Muter (rgthree)` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `LayerUtility: NumberCalculator` —— 1/4 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/4 个有
-- `SDPoseDrawKeypoints` —— 1/4 个有
-- `SDPoseKeypointExtractor` —— 1/4 个有
+- `EmptyImage` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `ResolutionSelector` —— 2/4 个有
+- `EmptyFlux2LatentImage` —— 1/4 个有
+- `ImageCompositeMasked` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 1/4 个有
+- `RH_MinimaxHailuoH3MaxImageToVideo` —— 1/4 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/4 个有
+- `SaveVideo` —— 1/4 个有
+- `TextEncodeQwenImage21` —— 1/4 个有
 
 ## 典型参数
 
@@ -86,7 +67,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -97,4 +78,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（8/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（5/4 个样本）：Steps较低可能导致细节不足

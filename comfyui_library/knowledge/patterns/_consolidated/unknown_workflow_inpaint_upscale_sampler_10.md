@@ -1,84 +1,101 @@
 ---
 name: unknown_workflow_inpaint_upscale_sampler_10
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.796
-common_nodes: [CLIPLoader, CLIPTextEncode, ChordLoadModel, ChordMaterialEstimation, ChordNormalToHeight, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, ETN_LoadImageBase64, EmptyImage, EmptySD3LatentImage, FluxGuidance, Image Comparer (rgthree), Image Overlay, ImageCompositeMasked, ImageCrop, ImageScale, ImageScaleBy, ImageToMask, InpaintModelConditioning, KSampler, LayerMask: MaskGrow, LoadImage, MaskToImage, ModelSamplingAuraFlow, PreviewImage, ResizeAndPadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: moderate
+coverage: 0.663
+common_nodes: [AILab_ImagePreview, AILab_Preview, AIO_Preprocessor, BasicScheduler, BatchImagesNode, CFGGuider, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, FaceAnalysisModels, FaceEmbedDistance, GetImageSizeAndCount, INTConstant, Image Comparer (rgthree), Image Paste Crop, ImageBlend, ImageCropByMask, ImagePadForOutpaint, ImageScaleToMaxDimension, ImageStitch, ImageToMask, Images to RGB, InpaintModelConditioning, InvertMask, KSamplerSelect, LoadImage, MaskToImage, ModelAttentionBackend, PreviewImage, QwenImage21Cache, QwenImage21SpectrumT8, RandomNoise, SAM3_Detect, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, VOSR2ModelLoader, VOSR2Upscale, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [图片生成/图生图/Z-image-turbo-材质贴图生成器_2041329252448083969.json, 图片生成/文生图/Zimage文生图+无缝处理+材质贴图_2004031509545795586.json, 图片生成/文生图/纹理生成_2015978668824207362.json]
+members: [图片生成/图生图/一键换头-图片编辑(局部重绘)-Qwen Image2.1_2109591373203730433.json, 图片生成/图生图/一键换头-图片编辑(局部重绘)-Qwen Image2.1_2109601936193441794.json, 图片生成/图生图/图片编辑-换头(局部重绘)-QwenImage2.1_2107437547424145409.json, 图片生成/图生图/图片编辑-换脸(局部重绘)-QwenImage2.1_2107759133796683777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_upscale_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Z-image-turbo-材质贴图生成器_2041329252448083969.json、图片生成/文生图/Zimage文生图+无缝处理+材质贴图_2004031509545795586.json、图片生成/文生图/纹理生成_2015978668824207362.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键换头-图片编辑(局部重绘)-Qwen Image2.1_2109591373203730433.json、图片生成/图生图/一键换头-图片编辑(局部重绘)-Qwen Image2.1_2109601936193441794.json、图片生成/图生图/图片编辑-换头(局部重绘)-QwenImage2.1_2107437547424145409.json、图片生成/图生图/图片编辑-换脸(局部重绘)-QwenImage2.1_2107759133796683777.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `AILab_ImagePreview`
+- `AILab_Preview`
+- `AIO_Preprocessor`
+- `BasicScheduler`
+- `BatchImagesNode`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ChordLoadModel`
-- `ChordMaterialEstimation`
-- `ChordNormalToHeight`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `ETN_LoadImageBase64`
-- `EmptyImage`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `FaceAnalysisModels`
+- `FaceEmbedDistance`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `Image Comparer (rgthree)`
-- `Image Overlay`
-- `ImageCompositeMasked`
-- `ImageCrop`
-- `ImageScale`
-- `ImageScaleBy`
+- `Image Paste Crop`
+- `ImageBlend`
+- `ImageCropByMask`
+- `ImagePadForOutpaint`
+- `ImageScaleToMaxDimension`
+- `ImageStitch`
 - `ImageToMask`
+- `Images to RGB`
 - `InpaintModelConditioning`
-- `KSampler`
-- `LayerMask: MaskGrow`
+- `InvertMask`
+- `KSamplerSelect`
 - `LoadImage`
 - `MaskToImage`
-- `ModelSamplingAuraFlow`
+- `ModelAttentionBackend`
 - `PreviewImage`
-- `ResizeAndPadImage`
+- `QwenImage21Cache`
+- `QwenImage21SpectrumT8`
+- `RandomNoise`
+- `SAM3_Detect`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `ComfyNumberConvert` —— 3/4 个有
+- `GrowMaskWithBlur` —— 3/4 个有
+- `ImageResizeKJv2` —— 3/4 个有
+- `Mask Crop Region` —— 3/4 个有
+- `Mask Paste Region` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `easy int` —— 3/4 个有
+- `AutoCropFaces` —— 1/4 个有
+- `ColorMatchV2` —— 1/4 个有
+- `FaceAlign` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `OpenposePreprocessor` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `SetNode` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 15 | 10 - 15 | 3 | 82% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | er_sde | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 15，观测区间 10 - 15，3 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -3,47 +3,36 @@ name: unknown_workflow_generic_1702
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9575
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, LoadImage, LoadVideo, RH_AlibabaWan27ImageEdit, RH_AlibabaWan27ImageEditPro, RH_AlibabaWan27ImageToVideo, RH_AlibabaWan27ReferenceToVideo, RH_AlibabaWan27TextToImage, RH_AlibabaWan27TextToImagePro, RH_AlibabaWan27TextToVideo, RH_AlibabaWan27VideoEdit, RH_AlibabaWan27VideoExtend, RH_Wan25_I2V, RH_Wan25_T2V, RH_Wan26_I2V, RH_Wan26_I2V_Flash, RH_Wan26_I2V_Flash_Custom, RH_Wan26_T2V, SaveImage, SaveVideo]
+coverage: 0.7665
+common_nodes: [DF_Text_Box, LoadImage, RH_LLMAPI_NODE, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.7，wan2.6，WAN系列图片+视频最小工作流合集_2042082712198062082.json, 视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json]
+members: [图片生成/图生图/双语字幕工作流(自动唐诗_宋词配图)_1982792714276208642.json, 平台全量/分镜提示词词生成_2011409545389674497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1702
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.7，wan2.6，WAN系列图片+视频最小工作流合集_2042082712198062082.json、视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/双语字幕工作流(自动唐诗_宋词配图)_1982792714276208642.json、平台全量/分镜提示词词生成_2011409545389674497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
+- `DF_Text_Box`
 - `LoadImage`
-- `LoadVideo`
-- `RH_AlibabaWan27ImageEdit`
-- `RH_AlibabaWan27ImageEditPro`
-- `RH_AlibabaWan27ImageToVideo`
-- `RH_AlibabaWan27ReferenceToVideo`
-- `RH_AlibabaWan27TextToImage`
-- `RH_AlibabaWan27TextToImagePro`
-- `RH_AlibabaWan27TextToVideo`
-- `RH_AlibabaWan27VideoEdit`
-- `RH_AlibabaWan27VideoExtend`
-- `RH_Wan25_I2V`
-- `RH_Wan25_T2V`
-- `RH_Wan26_I2V`
-- `RH_Wan26_I2V_Flash`
-- `RH_Wan26_I2V_Flash_Custom`
-- `RH_Wan26_T2V`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `SaveVideo`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Overlay Text` —— 1/2 个有
+- `ExtractLinesByIndex` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
 
 ## 典型参数
 

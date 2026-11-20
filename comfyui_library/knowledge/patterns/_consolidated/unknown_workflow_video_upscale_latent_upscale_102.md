@@ -2,75 +2,82 @@
 name: unknown_workflow_video_upscale_latent_upscale_102
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.90925
-common_nodes: [CFGGuider, CLIPTextEncode, CM_IntToFloat, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, ImpactExecutionOrderController, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+level: moderate
+coverage: 0.39775
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetImage, GetNode, ImageScale, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PreviewImage, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, ShowText|pysssss, SplitSigmas, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YUAN_TXTShotReplace, YuanAudioList, YuanAudioSplit, YuanMultiImage, YuanTool, easy float, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/文生视频/文生视频-音频驱动LTX-2_T2V_Audio_Input_2017407860040273922.json, 视频生成/文生视频/文生视频LTX-2_T2V_2017065411149307905.json, 视频生成/文生视频/文生视频（解禁模型）：LTX2.3 Sulphur_2059260196207284225.json, 视频生成/文生视频/文生视频：LTX2.3_2055843716434276354.json]
+members: [视频生成/图生视频/MiniMax-H3全栈式短剧多图参考自动生成二采提示词自动优化版V2.0_2108461705771708417.json, 视频生成/图生视频/MiniMax-H3全栈式短剧多图参考自动生成二采提示词自动优化版V2.0_2114904640423817217.json, 视频生成/图生视频/MiniMax-H3全栈式短剧多图参考自动生成二采提示词自动优化版V2.0_2115224945155465217.json, 视频生成/文生视频/MiniMax-H3 全栈式短剧 多图音频参考二采优化版V1.0_2096284114990223362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_102
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/文生视频-音频驱动LTX-2_T2V_Audio_Input_2017407860040273922.json、视频生成/文生视频/文生视频LTX-2_T2V_2017065411149307905.json、视频生成/文生视频/文生视频（解禁模型）：LTX2.3 Sulphur_2059260196207284225.json、视频生成/文生视频/文生视频：LTX2.3_2055843716434276354.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧多图参考自动生成二采提示词自动优化版V2.0_2108461705771708417.json、视频生成/图生视频/MiniMax-H3全栈式短剧多图参考自动生成二采提示词自动优化版V2.0_2114904640423817217.json、视频生成/图生视频/MiniMax-H3全栈式短剧多图参考自动生成二采提示词自动优化版V2.0_2115224945155465217.json、视频生成/文生视频/MiniMax-H3 全栈式短剧 多图音频参考二采优化版V1.0_2096284114990223362.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **可信度**：中等可信
+- **平均知识覆盖**：40%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CM_IntToFloat`
-- `CheckpointLoaderSimple`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageScaleBy`
-- `ImpactExecutionOrderController`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `GetImage`
+- `GetNode`
+- `ImageScale`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVLatentUpsampler`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
+- `PreviewImage`
+- `PrimitiveFloat`
 - `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `SetNode`
+- `ShowText|pysssss`
+- `SplitSigmas`
+- `StringConcatenate`
+- `TextGenerate`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTParagraphSplitter`
+- `YUAN_TXTShotReplace`
+- `YuanAudioList`
+- `YuanAudioSplit`
+- `YuanMultiImage`
+- `YuanTool`
+- `easy float`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVEmptyLatentAudio` —— 3/4 个有
-- `KepStringLiteral` —— 2/4 个有
-- `math_calculate` —— 2/4 个有
-- `AudioInfoNode` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `LTXVAudioVAEEncode` —— 1/4 个有
-- `MelBandRoFormerModelLoader` —— 1/4 个有
-- `MelBandRoFormerSampler` —— 1/4 个有
-- `SetLatentNoiseMask` —— 1/4 个有
-- `SolidMask` —— 1/4 个有
-- `VHS_LoadAudioUpload` —— 1/4 个有
-- `VHS_LoadVideo` —— 1/4 个有
+- `Any Switch (rgthree)` —— 3/4 个有
+- `JoinStringMulti` —— 3/4 个有
+- `PurgeVRAM_UTK` —— 3/4 个有
+- `ToString` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `llama_cpp_instruct_adv` —— 3/4 个有
+- `llama_cpp_model_loader` —— 3/4 个有
+- `llama_cpp_parameters` —— 3/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -78,5 +85,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

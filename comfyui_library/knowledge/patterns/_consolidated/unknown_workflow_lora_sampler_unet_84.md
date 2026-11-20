@@ -1,87 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_84
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.803875
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, EmptySD3LatentImage, GetImageSize, ImageBatch, ImageScaleToTotalPixels, ImageStitch, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, PrimitiveInt, SaveImage, Text Multiline, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, easy joinImageBatch]
-problems: [Steps较低可能导致细节不足]
+frequency: 9
+level: moderate
+coverage: 0.838333
+common_nodes: [CFGGuider, CLIPLoader, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PainterFluxImageEdit, RandomNoise, SamplerCustomAdvanced, SaveImage, SolidMask, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy isMaskEmpty]
+problems: []
 missing: []
-members: [图片生成/反推提示词/next scene V2自动分镜生成_1980154422523236353.json, 图片生成/图生图/Qwen-Edit2511工作流_2003702124506693633.json, 图片生成/图生图/Qwen-Edit2511工作流_2027208837106765825.json, 图片生成/图生图/QwenImageEdit vs PLUS版对比工作流_1971777410565926913.json, 图片生成/图生图/eigen-全能图片V1图像编辑能力增强_1991503068768509954.json, 图片生成/图生图/一句话指令，精度图像编辑_1987338025019617282.json, 图片生成/文生图/QwenImageEdit 2509原版 VS R1增强_1983422173471776770.json, 图片生成/文生图/QwenImageEdit MeiTu VS 2509_1983355804264898562.json]
+members: [图片生成/图生图/Flux2-Klein-9b 无偏移换脸-换头_2016697396180291586.json, 图片生成/图生图/lth_2079975063083896833.json, 图片生成/图生图/换头换脸-Flux2-Klein-9B_2097870248031637505.json, 图片生成/图生图/换头换脸-Flux2-Klein-9B_2099409224215384065.json, 图片生成/图生图/终极一键换头+精细换脸lora版无大头超快速_2015997940753502209.json, 平台全量/FLUX2-klein终极换脸 光影、表情、神态高度一致（可自定义发饰是否一起迁移）_2016784228960182274.json, 平台全量/Flux2 Klein  换头_换脸 局部重绘 一致性人物替换 高清放大 增加细节_2022154441562001410.json, 平台全量/Klein 换头_换脸_1900396825642414082.json, 平台全量/换头换脸-Flux2-Klein-9B_2040796731406819329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_84
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/next scene V2自动分镜生成_1980154422523236353.json、图片生成/图生图/Qwen-Edit2511工作流_2003702124506693633.json、图片生成/图生图/Qwen-Edit2511工作流_2027208837106765825.json、图片生成/图生图/QwenImageEdit vs PLUS版对比工作流_1971777410565926913.json、图片生成/图生图/eigen-全能图片V1图像编辑能力增强_1991503068768509954.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein-9b 无偏移换脸-换头_2016697396180291586.json、图片生成/图生图/lth_2079975063083896833.json、图片生成/图生图/换头换脸-Flux2-Klein-9B_2097870248031637505.json、图片生成/图生图/换头换脸-Flux2-Klein-9B_2099409224215384065.json、图片生成/图生图/终极一键换头+精细换脸lora版无大头超快速_2015997940753502209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：80%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGNorm`
+全部 9 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `EmptySD3LatentImage`
+- `Flux2Scheduler`
 - `GetImageSize`
-- `ImageBatch`
-- `ImageScaleToTotalPixels`
-- `ImageStitch`
-- `KSampler`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
-- `PrimitiveInt`
+- `PainterFluxImageEdit`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Text Multiline`
-- `TextEncodeQwenImageEditPlus`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy joinImageBatch`
+- `easy ifElse`
+- `easy isMaskEmpty`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/8 个有
-- `ShowText|pysssss` —— 7/8 个有
-- `Text Concatenate` —— 6/8 个有
-- `CustomAddLabel` —— 2/8 个有
-- `GetNode` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `easy loraNames` —— 2/8 个有
-- `AILab_QwenVL` —— 1/8 个有
-- `OpenposePreprocessor` —— 1/8 个有
-- `ProcessString` —— 1/8 个有
-- `Qwen2.5VL` —— 1/8 个有
-- `easy promptLine` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `GrowMaskWithBlur` —— 8/9 个有
+- `LayerMask: MaskPreview` —— 7/9 个有
+- `MaskFillHoles` —— 6/9 个有
+- `PreviewImage` —— 5/9 个有
+- `CR Text` —— 3/9 个有
+- `LayerUtility: ImageReel` —— 3/9 个有
+- `LayerUtility: ImageReelComposit` —— 3/9 个有
+- `Any Switch (rgthree)` —— 1/9 个有
+- `CR Text Concatenate` —— 1/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `InpaintCrop` —— 1/9 个有
+- `PreviewBridge` —— 1/9 个有
+- `Qwen3_VQA` —— 1/9 个有
+- `SAM3Segment` —— 1/9 个有
+- `SAMLoader` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 6 - 10 | 8 | 85% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 14/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 10，8 个样本，取值集中（一致性 85%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（14/8 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

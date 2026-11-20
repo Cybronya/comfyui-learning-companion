@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_453
 type: Text To Image
 frequency: 4
-level: weak
-coverage: 0.9475
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DisTorchPurgeVRAMV2, EmptyLatentImage, EmptySD3LatentImage, GetImageSize, INTConstant, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, RHHiddenNodes, SaveImage, SeedVR2Conditioning, SeedVR2Preprocess, SimpleMath+, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, easy imageConcat, easy imageRemBg, 图像缩放V2_孤海]
+level: strong
+coverage: 0.78575
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), KSampler, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, RTXVideoSuperResolution, ResolutionSelector, SaveImage, Seed (rgthree), ShowText|pysssss, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAEEncode, VAELoader, ZML_TextInput, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一键生成角色三视图加特写加全表情 Krea2人物资产图分镜图设定图 IP资产批量产出_2108972379169968129.json, 图片生成/文生图/Krea2人物角色设定图IP设计资产分镜特写图生图处理工具_2101722895599886338.json, 图片生成/文生图/Krea2人物角色设定图生成IP设计必备分镜三视图四视图特写图_2100638373655437314.json, 图片生成/文生图/人物角色设定图炸裂生成！IP设计必备！Krea2生成人物资产图分镜三视图四视图特写图可随机可自己写_2098405585346715649.json]
+members: [图片生成/图生图/Krea2-古装人像角色多角度视图_2098919606814601217.json, 图片生成/图生图/Krea2-古装人像角色多角度视图_2098978171713581058.json, 图片生成/图生图/Krea2-古装人像角色多角度视图_2099653787257499650.json, 图片生成/文生图/Krea2-古装人像角色多角度视图_2069779325712420866.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_453
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键生成角色三视图加特写加全表情 Krea2人物资产图分镜图设定图 IP资产批量产出_2108972379169968129.json、图片生成/文生图/Krea2人物角色设定图IP设计资产分镜特写图生图处理工具_2101722895599886338.json、图片生成/文生图/Krea2人物角色设定图生成IP设计必备分镜三视图四视图特写图_2100638373655437314.json、图片生成/文生图/人物角色设定图炸裂生成！IP设计必备！Krea2生成人物资产图分镜三视图四视图特写图可随机可自己写_2098405585346715649.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Krea2-古装人像角色多角度视图_2098919606814601217.json、图片生成/图生图/Krea2-古装人像角色多角度视图_2098978171713581058.json、图片生成/图生图/Krea2-古装人像角色多角度视图_2099653787257499650.json、图片生成/文生图/Krea2-古装人像角色多角度视图_2069779325712420866.json）
 
 - **类型**：Text To Image
 - **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
@@ -26,84 +26,56 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DisTorchPurgeVRAMV2`
 - `EmptyLatentImage`
-- `EmptySD3LatentImage`
-- `GetImageSize`
-- `INTConstant`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: CropByMask V2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RHHiddenNodes`
+- `PrimitiveStringMultiline`
+- `RTXVideoSuperResolution`
+- `ResolutionSelector`
 - `SaveImage`
-- `SeedVR2Conditioning`
-- `SeedVR2Preprocess`
-- `SimpleMath+`
+- `Seed (rgthree)`
+- `ShowText|pysssss`
+- `StringConcatenate`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEEncode`
 - `VAELoader`
-- `easy imageConcat`
-- `easy imageRemBg`
-- `图像缩放V2_孤海`
+- `ZML_TextInput`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `CR Text Input Switch (4 way)` —— 3/4 个有
-- `ColorMatchPro` —— 3/4 个有
-- `Float` —— 3/4 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 3/4 个有
-- `ImageUpscaleWithModel` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `JjkText` —— 3/4 个有
-- `Krea2OstrisEditModelPatch` —— 3/4 个有
-- `Krea2T-Enhancer-Advanced` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `TextEncodeKrea2OstrisEdit` —— 3/4 个有
-- `UpscaleModelLoader` —— 3/4 个有
-- `llama_cpp_instruct_adv` —— 3/4 个有
-- `llama_cpp_model_loader` —— 3/4 个有
-- `llama_cpp_parameters` —— 3/4 个有
-- `solarL_SaveImagesToZip` —— 3/4 个有
-- `ttN text7BOX_concat` —— 3/4 个有
-- `孤海注释` —— 3/4 个有
-- `DapaoBatchImageGrid` —— 1/4 个有
-- `DapaoImagePadDirectionNode` —— 1/4 个有
-- `PainterFluxImageEdit` —— 1/4 个有
-- `ShunjingAIShade` —— 1/4 个有
+- `EmptyImage` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 10 | 4 | 53% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 4 | 58% |
-| 采样算法 | er_sde | - | 4 | 75% |
-| 调度器 | beta | - | 4 | 75% |
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler_ancestral | - | 4 | 100% |
+| 调度器 | normal | - | 4 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 80 | 80 - 1024 | 4 | 0% |
-| 高度 | 80 | 80 - 1024 | 4 | 0% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1536 | 1536 - 1536 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 10，4 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，4 个样本
-- 采样算法 最常用 er_sde，4 个样本，一致性 75%
-- 调度器 最常用 beta，4 个样本，一致性 75%
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，4 个样本，一致性 100%
+- 调度器 最常用 normal，4 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1024，4 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，4 个样本，取值分散，一致性仅 0%
-- 高发问题（14/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，观测区间 1536 - 1536，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

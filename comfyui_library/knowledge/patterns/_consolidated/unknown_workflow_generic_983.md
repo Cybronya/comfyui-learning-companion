@@ -1,42 +1,33 @@
 ---
 name: unknown_workflow_generic_983
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.872333
-common_nodes: [Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, easy int]
+coverage: 0.875
+common_nodes: [SaveAudioMP3, SparkTTS_VoiceCreator]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2放大_1990990820545372161.json, 图片生成/图生图/图片放大Image Upscaling_2038075311220330497.json, 图片生成/图生图/图片放大Image Upscaling_2052211583018913793.json]
+members: [数字人/数字人/AI声音生成器_1972181358317596673.json, 音频生成/音频生成/AI声音生成器_2014666051899891713.json, 音频生成/音频生成/AI声音生成器_2089691701567909890.json, 音频生成/音频生成/声音_2018550234237902850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_983
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SeedVR2放大_1990990820545372161.json、图片生成/图生图/图片放大Image Upscaling_2038075311220330497.json、图片生成/图生图/图片放大Image Upscaling_2052211583018913793.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/AI声音生成器_1972181358317596673.json、音频生成/音频生成/AI声音生成器_2014666051899891713.json、音频生成/音频生成/AI声音生成器_2089691701567909890.json、音频生成/音频生成/声音_2018550234237902850.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `easy int`
+全部 4 个 workflow 都包含：
+- `SaveAudioMP3`
+- `SparkTTS_VoiceCreator`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 1/3 个有
-- `Switch any [Crystools]` —— 1/3 个有
-- `easy compare` —— 1/3 个有
-- `easy imageSize` —— 1/3 个有
+- `SaveAudio` —— 2/4 个有
 
 ## 典型参数
 

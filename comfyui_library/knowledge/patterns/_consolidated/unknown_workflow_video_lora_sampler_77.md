@@ -1,65 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_77
 type: Unknown Workflow
-frequency: 19
+frequency: 21
 level: moderate
-coverage: 0.789158
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, JWStringConcat, LoadWanVideoT5TextEncoder, ShowText|pysssss, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.869333
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2智能提示词文生视频直出2k横屏版（包含自训练脸模lora保持角色一致性）_1970020251171758081.json, 视频生成/图生视频/（光鸟黑贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1963544329490092033.json, 视频生成/图生视频/🦖KJ-Wan2.2高质量图生视频（运镜+提示词优化）_1950059888082903042.json, 视频生成/文生视频/(4步KJ版)Wan2.2+提示词工具+无API视频扩写文生视频加速版V1_1953756767052288002.json, 视频生成/文生视频/(KJ版)Wan2.2+提示词工具+GLM4.5视频扩写文生视频加速版V1_1950804830958845953.json, 视频生成/文生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V1_1950936240545800193.json, 视频生成/文生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写文生视频加速版V1_1950828100848386049.json, 视频生成/文生视频/(Love贞贞版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V3_1955828934376132610.json, 视频生成/文生视频/(剑舞贞贞版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V3_1954869013831565314.json, 视频生成/文生视频/CineScale Wan2.2（低噪）三分镜智能提示词文生视频高细节工作流V1_1959252235161120769.json, 视频生成/文生视频/CineScale Wan2.2（高低噪）三分镜智能提示词文生视频高细节工作流V1_1959251891186249729.json, 视频生成/文生视频/（KJ版）Wan2.2 自动提示词引导文生视频（UnifiedReward+VBVR逻辑增强）_2028179220836388865.json, 视频生成/文生视频/（KJ版）Wan2.2 自动提示词引导文生视频（UnifiedReward运动增强）_2028179192646475777.json, 视频生成/文生视频/（miss贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1961405033222967297.json, 视频生成/文生视频/（光舞贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(高质量横屏720P)_1958885395293483009.json, 视频生成/文生视频/（光鸟白贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1963536083953995778.json, 视频生成/文生视频/（时间音符贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1961307588656828418.json, 视频生成/文生视频/（水舞贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(高质量横屏720P)_1960069815262195714.json, 视频生成/文生视频/（鹊桥星河贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1961399903941541890.json]
+members: [视频生成/图生视频/AudioDiT单人语音克隆TTS+对口型数字人Infinite+Talk 音色克隆带语气情感_2039872167524966402.json, 视频生成/图生视频/INF图片数字人对口型多动态_1982787027227803649.json, 视频生成/图生视频/Inf-Talk_1976659195296727041.json, 视频生成/图生视频/Infinite Talk 数字人（对口型）_1980462262907527170.json, 视频生成/图生视频/Infinite Talk 音频驱动图说话唱歌，提示词调度多动作_1958946563538235394.json, 视频生成/图生视频/Infinite Talk+IndexTTS 2 语音克隆版_1995765952610447361.json, 视频生成/图生视频/Infinite Talk单图+音频+提示词=数字人无限MV_1981723961920757761.json, 视频生成/图生视频/Infinite Talk极速高质量提示词调度动作控制图生视频KTV_1960989551487594497.json, 视频生成/图生视频/Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人_2016014882017120257.json, 视频生成/图生视频/Infinite Talk极速高质量视频数字人_1983918698648010754.json, 视频生成/图生视频/InfiniteTalk数字人+姿态动作提示词_2018674445128310785.json, 视频生成/图生视频/Infinitetalk对口型数字人图片数字人动态加强版本_2056334538120454145.json, 视频生成/图生视频/写实对口型数字人极速版Infinite+talk数字人动态加强高清版_2039220767790997506.json, 视频生成/图生视频/对口型Infinite+talk动态加强版_2068183194842787841.json, 视频生成/图生视频/对口型数字人 音频驱动 Infinite+talk数字人动态加强高清版_2046424551642374146.json, 视频生成/图生视频/对口型数字人 音频驱动 Infinite+talk数字人动态加强高版_2081899378620592130.json, 视频生成/图生视频/对口型数字人Infinite+talk数字人动态加强高清版_2038785334816804866.json, 视频生成/图生视频/对口型数字人Infinite+talk数字人动态加强高版_2007287894716715010.json, 视频生成/图生视频/数字人说话 唱歌 比手势 对口型数字人Infinite+talk数字人动态加强高版_2055446577807937537.json, 视频生成/图生视频/音频驱动 Infinite+talk 对口型数字人 数字人动态加强高清版_2046429315620933634.json, 视频生成/文生视频/对口型数字人Infinite talk_2013508435370840066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_77
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/wan2.2智能提示词文生视频直出2k横屏版（包含自训练脸模lora保持角色一致性）_1970020251171758081.json、视频生成/图生视频/（光鸟黑贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1963544329490092033.json、视频生成/图生视频/🦖KJ-Wan2.2高质量图生视频（运镜+提示词优化）_1950059888082903042.json、视频生成/文生视频/(4步KJ版)Wan2.2+提示词工具+无API视频扩写文生视频加速版V1_1953756767052288002.json、视频生成/文生视频/(KJ版)Wan2.2+提示词工具+GLM4.5视频扩写文生视频加速版V1_1950804830958845953.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/AudioDiT单人语音克隆TTS+对口型数字人Infinite+Talk 音色克隆带语气情感_2039872167524966402.json、视频生成/图生视频/INF图片数字人对口型多动态_1982787027227803649.json、视频生成/图生视频/Inf-Talk_1976659195296727041.json、视频生成/图生视频/Infinite Talk 数字人（对口型）_1980462262907527170.json、视频生成/图生视频/Infinite Talk 音频驱动图说话唱歌，提示词调度多动作_1958946563538235394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：19
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
+全部 21 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `GetImageSizeAndCount`
-- `JWStringConcat`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `ShowText|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
 - `VHS_VideoCombine`
-- `Wan22PromptSelector`
-- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 18/19 个有
-- `JWInteger` —— 18/19 个有
-- `RH_LLMAPI_NODE` —— 18/19 个有
-- `TextConcat` —— 18/19 个有
-- `WanVideoEmptyEmbeds` —— 18/19 个有
-- `ACE_ImageGetSize` —— 1/19 个有
-- `FloatToSigmas` —— 1/19 个有
-- `GLM_Text_Chat` —— 1/19 个有
-- `ImageResizeKJv2` —— 1/19 个有
-- `LoadImage` —— 1/19 个有
-- `MathExpression|pysssss` —— 1/19 个有
-- `Primitive integer [Crystools]` —— 1/19 个有
-- `RH_Captioner` —— 1/19 个有
-- `ResizeLongestToNode` —— 1/19 个有
-- `StringToFloatList` —— 1/19 个有
-- `WanVideoImageToVideoEncode` —— 1/19 个有
+- `AudioCrop` —— 20/21 个有
+- `CR Prompt Text` —— 20/21 个有
+- `WanVideoBlockSwap` —— 18/21 个有
+- `MathExpression|pysssss` —— 11/21 个有
+- `AudioToFPS` —— 10/21 个有
+- `Bjornulf_ShowInt` —— 10/21 个有
+- `JWFloat` —— 10/21 个有
+- `Audio To Text (mtb)` —— 1/21 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/21 个有
+- `GetAudioDurationFromAudio` —— 1/21 个有
+- `IndexTTS2Run` —— 1/21 个有
+- `Load Whisper (mtb)` —— 1/21 个有
+- `LongCatVoiceCloneTTS` —— 1/21 个有
+- `NormalizeAudioLoudness` —— 1/21 个有
+- `SaveAudio` —— 1/21 个有
+- `SaveAudioMP3` —— 1/21 个有
+- `Text Multiline` —— 1/21 个有
+- `孤海注释` —— 1/21 个有
 
 ## 典型参数
 

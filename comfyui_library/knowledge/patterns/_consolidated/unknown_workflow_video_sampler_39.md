@@ -1,62 +1,54 @@
 ---
 name: unknown_workflow_video_sampler_39
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7465
-common_nodes: [AILab_QwenVL, CR Text, CR Text Concatenate, Compare, FlashVSR_SM_KSampler, FlashVSR_SM_Model, GetImageSize, GetVideoComponents, ImageResize+, LayerUtility: PurgeVRAM V2, LoadImage, PrimitiveBoolean, RHHiddenNodes, ShowText|pysssss, Text Multiline, VHS_VideoCombine, easy ifElse, easy imageConcat]
+frequency: 4
+level: strong
+coverage: 1
+common_nodes: [FlashVSR_SM_KSampler, FlashVSR_SM_Model, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/【规格化提示词】Sroa2图生视频-FlashVSR放大_1982163769721798658.json, 视频生成/文生视频/【规格化提示词】Sroa2文生视频-FlashVSR放大_1981838740345757698.json]
+members: [平台全量/FlashVSR Smthem版视频模糊变高清V3_2001085342960713730.json, 平台全量/FlashVSR视频超分高清放大工作流_2041784686841696257.json, 平台全量/my_flash_vsr_2_or_3_2052580464786980865.json, 平台全量/（随变）seedance2.0一键高清化V4（9_16竖版）_2021763436232843265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_39
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【规格化提示词】Sroa2图生视频-FlashVSR放大_1982163769721798658.json、视频生成/文生视频/【规格化提示词】Sroa2文生视频-FlashVSR放大_1981838740345757698.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/FlashVSR Smthem版视频模糊变高清V3_2001085342960713730.json、平台全量/FlashVSR视频超分高清放大工作流_2041784686841696257.json、平台全量/my_flash_vsr_2_or_3_2052580464786980865.json、平台全量/（随变）seedance2.0一键高清化V4（9_16竖版）_2021763436232843265.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CR Text`
-- `CR Text Concatenate`
-- `Compare`
+全部 4 个 workflow 都包含：
 - `FlashVSR_SM_KSampler`
 - `FlashVSR_SM_Model`
-- `GetImageSize`
-- `GetVideoComponents`
-- `ImageResize+`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadImage`
-- `PrimitiveBoolean`
-- `RHHiddenNodes`
-- `ShowText|pysssss`
-- `Text Multiline`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy ifElse`
-- `easy imageConcat`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_BoolToInt` —— 1/2 个有
-- `RH_Sora2_I2V` —— 1/2 个有
-- `RH_Sora2_T2V` —— 1/2 个有
-- `easy textSwitch` —— 1/2 个有
+- `ImageConcanate` —— 3/4 个有
+- `JWInteger` —— 3/4 个有
+- `GetVideoComponents` —— 2/4 个有
+- `CreateVideo` —— 1/4 个有
+- `SaveImage` —— 1/4 个有
+- `SaveVideo` —— 1/4 个有
+- `VHS_SelectEveryNthImage` —— 1/4 个有
+- `VideoInfoSource` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 1.23011e+09 | - | 2 | 63% |
-| Prompt 约束强度(CFG) | randomize | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | 3 | - | 2 | 100% |
-| 重绘幅度 | 11 | - | 2 | 100% |
+| 采样步数 | 1.38391e+09 | 6.75763e+08 - 1.95201e+09 | 4 | 64% |
+| Prompt 约束强度(CFG) | randomize | - | 4 | 100% |
+| 采样算法 | 2 | 2 - 2 | 4 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 4 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 4 | 100% |
 
 ## 常见问题
 
@@ -64,11 +56,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 1.23011e+09，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 最常用 randomize，2 个样本，一致性 100%
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.68591e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 采样步数 中位数 1.38391e+09，观测区间 6.75763e+08 - 1.95201e+09，4 个样本
+- Prompt 约束强度(CFG) 最常用 randomize，4 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，4 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，4 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，4 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 1.95201e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
 - 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

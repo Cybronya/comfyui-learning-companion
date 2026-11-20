@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_210
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.828111
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.904111
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1 Turbo八步极速图像编辑 高效精准改图必备方案_2110370961915727874.json, 图片生成/图生图/Qwen Image 2.1 Turbo图像编辑工作流，指令式修图快速精准出图_2114565422858194945.json, 图片生成/图生图/Qwen Image 2.1 Turbo图像编辑，图生图局部重绘快人一步_2110788994064805889.json, 图片生成/图生图/Qwen Image 2.1 Turbo图像编辑｜图生图智能修图高效又省心_2114171798861475842.json, 图片生成/图生图/Qwen Image 2.1 Turbo多参考图加速版，文生图图生图高效出图_2114500964400066561.json, 图片生成/图生图/Qwen Image 2.1图像编辑二版｜局部重绘人物出图利器_2108074166527291393.json, 图片生成/图生图/image_qwen_image_2_1_turbo_多参考图加速版｜文生图图生图提速_2114311183372210178.json, 图片生成/图生图/林茜数字人Qwen 2.1换脸流｜图生图换脸数字人两不误_2112925117058736129.json, 图片生成/文生图/Qwen Image 2.1 Turbo文生图，创意形象快速直出_2110829189711622145.json]
+members: [图片生成/图生图/Qwen-image2.1产品融图工作流｜图生图电商商品合成_2108396388856975362.json, 图片生成/图生图/Qwen-image2.1产品融图，图生图商品场景一键合成_2110481620418514946.json, 图片生成/图生图/Qwen-image2.1产品融图，图生图商品场景一键合成_2113102672046936066.json, 图片生成/图生图/Qwen-image2.1人像多角度生成｜图生图一套多机位素材_2104545126759620610.json, 图片生成/图生图/万能电商商品溶图Qwen Image 2.1 产品图融合自然过渡_2108648107725643777.json, 图片生成/图生图/万能电商商品溶图Qwen Image 2.1手动版 产品图融合手动控制_2108704910568153090.json, 图片生成/图生图/万能电商商品溶图Qwen-Image-2.1｜手动版重新打光_2108453301376339970.json, 视频生成/文生视频/Qwen Image 2.1商品主体任意溶图40步质量加Viggle加速双路线工作流，图生视频_2108276276401360897.json, 视频生成/文生视频/Qwen Image2.1商品主体任意溶图｜40步质量+Viggle加速双路线_2108053287957262337.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_210
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 Turbo八步极速图像编辑 高效精准改图必备方案_2110370961915727874.json、图片生成/图生图/Qwen Image 2.1 Turbo图像编辑工作流，指令式修图快速精准出图_2114565422858194945.json、图片生成/图生图/Qwen Image 2.1 Turbo图像编辑，图生图局部重绘快人一步_2110788994064805889.json、图片生成/图生图/Qwen Image 2.1 Turbo图像编辑｜图生图智能修图高效又省心_2114171798861475842.json、图片生成/图生图/Qwen Image 2.1 Turbo多参考图加速版，文生图图生图高效出图_2114500964400066561.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen-image2.1产品融图工作流｜图生图电商商品合成_2108396388856975362.json、图片生成/图生图/Qwen-image2.1产品融图，图生图商品场景一键合成_2110481620418514946.json、图片生成/图生图/Qwen-image2.1产品融图，图生图商品场景一键合成_2113102672046936066.json、图片生成/图生图/Qwen-image2.1人像多角度生成｜图生图一套多机位素材_2104545126759620610.json、图片生成/图生图/万能电商商品溶图Qwen Image 2.1 产品图融合自然过渡_2108648107725643777.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -28,39 +28,39 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
 - `SaveImage`
 - `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 8/9 个有
-- `KSamplerSelect` —— 8/9 个有
-- `LoadImage` —— 8/9 个有
-- `ManualSigmas` —— 8/9 个有
-- `CFGGuider` —— 7/9 个有
-- `RandomNoise` —— 7/9 个有
-- `SamplerCustomAdvanced` —— 7/9 个有
-- `PreviewAny` —— 6/9 个有
-- `PrimitiveStringMultiline` —— 6/9 个有
-- `TextGenerate` —— 6/9 个有
-- `BatchImagesNode` —— 5/9 个有
-- `SaveImageAdvanced` —— 5/9 个有
-- `GetNode` —— 2/9 个有
-- `Image Comparer (rgthree)` —— 2/9 个有
-- `ImageCompare` —— 2/9 个有
-- `PathchSageAttentionKJ` —— 2/9 个有
-- `PrimitiveBoolean` —— 2/9 个有
-- `SetNode` —— 2/9 个有
-- `ImageScaleToTotalPixels` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `ResolutionSelector` —— 1/9 个有
-- `SamplerCustom` —— 1/9 个有
+- `Image Comparer (rgthree)` —— 8/9 个有
+- `孤海注释` —— 8/9 个有
+- `FastCanvas` —— 6/9 个有
+- `CR Prompt Text` —— 5/9 个有
+- `FastCanvasTool` —— 5/9 个有
+- `ImageScaleToTotalPixels` —— 5/9 个有
+- `ImageUpscaleWithModel` —— 5/9 个有
+- `KSamplerAdvanced` —— 5/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
+- `UpscaleModelLoader` —— 5/9 个有
+- `InspyrenetRembg` —— 4/9 个有
+- `PreviewImage` —— 4/9 个有
+- `CR Text Concatenate` —— 3/9 个有
+- `FluxGuidance` —— 2/9 个有
+- `Image Rembg (Remove Background)` —— 2/9 个有
+- `ImageCropper` —— 2/9 个有
+- `SaveImageAdvanced` —— 2/9 个有
+- `TTP_Expand_And_Mask` —— 2/9 个有
+- `EmptyImage` —— 1/9 个有
+- `QwenMultiangleCameraNode` —— 1/9 个有
+- `YYZPack_yyz_canvasnodeTool` —— 1/9 个有
+- `easy promptList` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
@@ -78,7 +78,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -89,4 +89,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（10/9 个样本）：Steps较低可能导致细节不足
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

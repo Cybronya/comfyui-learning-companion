@@ -2,81 +2,80 @@
 name: text_to_image_sampler_clip_unet_84
 type: Text To Image
 frequency: 8
-level: weak
-coverage: 0.894875
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.90125
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/API - FLux文生图_2066848618040086529.json, 图片生成/文生图/API - FLux文生图_2091105641225080833.json, 图片生成/文生图/CFG Zero出图_1907792965371371522.json, 图片生成/文生图/FLux文生图API工作流｜高质量图像生成_2095581101854121986.json, 图片生成/文生图/Krea2图图工作流｜人像写真高质量质感生成_2095245729957761026.json, 图片生成/文生图/Krea2图图文生图｜高质量图像生成工作流_2095973742240423938.json, 图片生成/文生图/Krea2基础文生图高清出图｜美少女写实风格_2090073140905988098.json, 图片生成/文生图/Krea2特定风格人像大作文生图｜固定风格批量出人像大片_2099133481472315394.json]
+members: [图片生成/图生图/-全能图片V1手办模型盲盒生成_1963979415220834306.json, 图片生成/图生图/87time #25 Kontext_1955478993660100609.json, 图片生成/图生图/Baihao-Kontext服装花型提取加强版_1948766748095983618.json, 图片生成/图生图/Flux Kontext Dev双图潜空间组合_1940046702055395329.json, 图片生成/图生图/Flux-Kontext-dev多图图像融合版_1938446557656342529.json, 图片生成/图生图/服装面料材质印花提取_1979006256419606530.json, 平台全量/kontext一键生成四格漫画（保持漫画人物一致性）_1941669198471000066.json, 平台全量/同一ip生成4格漫画_1940753687704924161.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_84
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/API - FLux文生图_2066848618040086529.json、图片生成/文生图/API - FLux文生图_2091105641225080833.json、图片生成/文生图/CFG Zero出图_1907792965371371522.json、图片生成/文生图/FLux文生图API工作流｜高质量图像生成_2095581101854121986.json、图片生成/文生图/Krea2图图工作流｜人像写真高质量质感生成_2095245729957761026.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/-全能图片V1手办模型盲盒生成_1963979415220834306.json、图片生成/图生图/87time #25 Kontext_1955478993660100609.json、图片生成/图生图/Baihao-Kontext服装花型提取加强版_1948766748095983618.json、图片生成/图生图/Flux Kontext Dev双图潜空间组合_1940046702055395329.json、图片生成/图生图/Flux-Kontext-dev多图图像融合版_1938446557656342529.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
+- `FluxGuidance`
 - `KSampler`
+- `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 5/8 个有
-- `JjkText` —— 5/8 个有
+- `ImageStitch` —— 6/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
 - `LoraLoaderModelOnly` —— 5/8 个有
-- `solarL_SaveImagesToZip` —— 5/8 个有
-- `孤海注释` —— 5/8 个有
-- `DualCLIPLoader` —— 4/8 个有
-- `FluxGuidance` —— 3/8 个有
-- `LoraLoader` —— 3/8 个有
-- `PrimitiveStringMultiline` —— 3/8 个有
-- `easy int` —— 3/8 个有
-- `PreviewImage` —— 2/8 个有
-- `CFGZeroStarAndInit` —— 1/8 个有
-- `ResolutionSelector` —— 1/8 个有
-- `easy ifElse` —— 1/8 个有
+- `PreviewImage` —— 5/8 个有
+- `RH_Translator` —— 5/8 个有
+- `FluxKontextImageScale` —— 3/8 个有
+- `Text Multiline` —— 3/8 个有
+- `ttN imageREMBG` —— 2/8 个有
+- `FluxResolutionNode` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `MagCache` —— 1/8 个有
+- `RMBG` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
+- `easy imageSize` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1280 | 8 | 0% |
-| 高度 | 80 | 80 - 720 | 8 | 7% |
-| 采样步数 | 4 | 4 - 20 | 8 | 26% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 8 | 54% |
-| 采样算法 | er_sde | - | 8 | 62% |
-| 调度器 | beta | - | 8 | 62% |
+| 采样步数 | 20 | 20 - 25 | 8 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 88% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 896 | 512 - 1248 | 8 | 72% |
+| 高度 | 1088 | 512 - 1536 | 8 | 65% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1280，8 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 720，8 个样本，取值分散，一致性仅 7%
-- 采样步数 中位数 4，观测区间 4 - 20，8 个样本，取值分散，一致性仅 26%
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，8 个样本
-- 采样算法 最常用 er_sde，8 个样本，一致性 62%
-- 调度器 最常用 beta，8 个样本，一致性 62%
+- 采样步数 中位数 20，观测区间 20 - 25，8 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 88%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（9/8 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 896，观测区间 512 - 1248，8 个样本
+- 高度 中位数 1088，观测区间 512 - 1536，8 个样本

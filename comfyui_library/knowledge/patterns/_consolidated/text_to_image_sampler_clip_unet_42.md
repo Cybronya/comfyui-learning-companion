@@ -1,77 +1,84 @@
 ---
 name: text_to_image_sampler_clip_unet_42
 type: Text To Image
-frequency: 12
+frequency: 13
 level: strong
-coverage: 0.747833
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DeepTranslatorTextNode, EmptyLatentImage, KSampler, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy saveText]
-problems: []
+coverage: 0.821615
+common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/Z-image最强真实人物细节_1993878622280892417.json, 图片生成/反推提示词/Z-image最强真实图片反推_1997948936507809793.json, 图片生成/图生图/Z-image-turbo-图生图-图片反推（开源之王）_1997492114353242114.json, 图片生成/图生图/Z-image最强真实人物模型生成_1994716674047811586.json, 图片生成/图生图/Z-image最强真实人物细节_2065062994622640130.json, 图片生成/图生图/图片反推+Z-image最强真实人物细节生成_1994020375361241089.json, 图片生成/图生图/图片反推洗图+Z-image最强真实人物细节多场景生成_2089635395637174274.json, 图片生成/文生图/Z-image 平替Flux2 图片反推+文生图  最强真实人物细节多场景生成 Z-image_1993908699964047361.json, 图片生成/文生图/Z-imageTurbo 快速高清 4K 工作流_1995495345377443841.json, 图片生成/文生图/图片反推+Z-image最强真实人物细节多场景生成_1993853085036511234.json, 图片生成/文生图/图片反推+Z-image最强真实人物细节多场景生成_1998679334598664193.json, 图片生成/文生图/图片反推+Z-image最强真实人物细节多场景生成_2002784165995114497.json]
+members: [图片生成/图生图/无损扩图 360度lora工作流_1990199382748393474.json, 图片生成/文生图/1.FLUX1 文生图工作流_2043903853527048193.json, 图片生成/文生图/FLUX + LoRA 文生图工作流_2087432058120523777.json, 图片生成/文生图/FLUX + 加速LoRA 文生图工作流_2039621959402659841.json, 图片生成/文生图/FLUX文生图+2_LoRA_1912954209854259202.json, 图片生成/文生图/Kontext 功能大全-(卷心菜YA )_1942874687296704513.json, 图片生成/文生图/喜剧复古动漫风格2.0_1942404910103080961.json, 平台全量/FLUX-Kontext 史诗级改图工作流_1947575577727459330.json, 平台全量/FLUX-Kontext 史诗级改图工作流_2049142369836081153.json, 平台全量/FLUX-Kontext 史诗级改图工作流_2064001877943078913.json, 平台全量/FLUX-Kontext 改图工作流_2018178957639688193.json, 平台全量/kontext 提示词预设_1945438785993887746.json, 平台全量/三视图_1939428522127499265.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_42
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/反推提示词/Z-image最强真实人物细节_1993878622280892417.json、图片生成/反推提示词/Z-image最强真实图片反推_1997948936507809793.json、图片生成/图生图/Z-image-turbo-图生图-图片反推（开源之王）_1997492114353242114.json、图片生成/图生图/Z-image最强真实人物模型生成_1994716674047811586.json、图片生成/图生图/Z-image最强真实人物细节_2065062994622640130.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/无损扩图 360度lora工作流_1990199382748393474.json、图片生成/文生图/1.FLUX1 文生图工作流_2043903853527048193.json、图片生成/文生图/FLUX + LoRA 文生图工作流_2087432058120523777.json、图片生成/文生图/FLUX + 加速LoRA 文生图工作流_2039621959402659841.json、图片生成/文生图/FLUX文生图+2_LoRA_1912954209854259202.json…）
 
 - **类型**：Text To Image
-- **样本数**：12
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPLoader`
+全部 13 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DeepTranslatorTextNode`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
+- `FluxGuidance`
 - `KSampler`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: JoyCaptionBeta1ExtraOptions`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
-- `LoadImage`
 - `SaveImage`
-- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `AspectRatio` —— 9/12 个有
-- `Fast Groups Muter (rgthree)` —— 9/12 个有
-- `PreviewImage` —— 6/12 个有
-- `easy promptList` —— 6/12 个有
-- `LatentCombine` —— 2/12 个有
-- `VAEEncode` —— 2/12 个有
-- `GetNode` —— 1/12 个有
-- `SetNode` —— 1/12 个有
+- `PreviewImage` —— 11/13 个有
+- `FluxKontextImageScale` —— 9/13 个有
+- `LoadImage` —— 9/13 个有
+- `ReferenceLatent` —— 8/13 个有
+- `VAEEncode` —— 8/13 个有
+- `ConditioningZeroOut` —— 6/13 个有
+- `ImageStitch` —— 6/13 个有
+- `LoraLoaderModelOnly` —— 6/13 个有
+- `Image Comparer (rgthree)` —— 4/13 个有
+- `LoraLoader` —— 2/13 个有
+- `PrimitiveInt` —— 2/13 个有
+- `CR Prompt List` —— 1/13 个有
+- `Kontext Inpainting Conditioning` —— 1/13 个有
+- `easy imageSize` —— 1/13 个有
+- `easy int` —— 1/13 个有
+- `easy showAnything` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 12 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| 宽度 | 1920 | 1000 - 1920 | 12 | 75% |
-| 高度 | 1080 | 1080 - 1920 | 12 | 80% |
+| 采样步数 | 20 | 8 - 35 | 13 | 67% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 54% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 1472 | 768 - 1536 | 13 | 76% |
+| 高度 | 768 | 768 - 1504 | 13 | 76% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1920，观测区间 1000 - 1920，12 个样本
-- 高度 中位数 1080，观测区间 1080 - 1920，12 个样本
+- 采样步数 中位数 20，观测区间 8 - 35，13 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 54%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1472，观测区间 768 - 1536，13 个样本
+- 高度 中位数 768，观测区间 768 - 1504，13 个样本

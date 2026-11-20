@@ -1,37 +1,36 @@
 ---
 name: unknown_workflow_generic_357
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.687571
-common_nodes: [Image Comparer (rgthree), LoadImage, RHHiddenNodes, SaveImage]
+coverage: 1
+common_nodes: [CR Text, CR Text Replace, GODMT_ListGetByIndex, LoadImage, ProcessString, RH_Nano_Banana2_Gemini31Flash_Batch, SaveImage, easy promptLine]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX超现实系自拍照工作流_1901535553668399106.json, 图片生成/图生图/LEON_一键抠图_2097244350211256321.json, 图片生成/图生图/LEON_产品精修_2097255399635378178.json, 图片生成/图生图/LEON_光影迁移_2097582971669798913.json, 图片生成/图生图/一键快速融图细节全保留多产品可用_2099676458825371649.json, 图片生成/图生图/模特背景迁移_1925382400518369282.json, 图片生成/图生图/高清放大（SeedVR2版本）_1979188702188572673.json]
+members: [图片生成/图生图/一键生成10张写真图_姿势分组_194_2042799843432730625.json, 图片生成/图生图/一键生成10张写真图_姿势分组_195_2042799872641863681.json, 图片生成/图生图/一键生成10张写真图_姿势分组_196_2042799936030380033.json, 图片生成/图生图/一键生成10张写真图_姿势分组_197_2043208791503671298.json, 图片生成/图生图/一键生成10张写真图_姿势分组_198_2043208911557234690.json, 图片生成/图生图/一键生成10张写真图_姿势分组_199_2043209073956495361.json, 图片生成/图生图/一键生成10张写真图_姿势分组_200_2043645921396789249.json, 图片生成/图生图/一键生成10张🍠写真图_2029365361933553665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_357
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/FLUX超现实系自拍照工作流_1901535553668399106.json、图片生成/图生图/LEON_一键抠图_2097244350211256321.json、图片生成/图生图/LEON_产品精修_2097255399635378178.json、图片生成/图生图/LEON_光影迁移_2097582971669798913.json、图片生成/图生图/一键快速融图细节全保留多产品可用_2099676458825371649.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/一键生成10张写真图_姿势分组_194_2042799843432730625.json、图片生成/图生图/一键生成10张写真图_姿势分组_195_2042799872641863681.json、图片生成/图生图/一键生成10张写真图_姿势分组_196_2042799936030380033.json、图片生成/图生图/一键生成10张写真图_姿势分组_197_2043208791503671298.json、图片生成/图生图/一键生成10张写真图_姿势分组_198_2043208911557234690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+全部 8 个 workflow 都包含：
+- `CR Text`
+- `CR Text Replace`
+- `GODMT_ListGetByIndex`
 - `LoadImage`
-- `RHHiddenNodes`
+- `ProcessString`
+- `RH_Nano_Banana2_Gemini31Flash_Batch`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 2/7 个有
-- `Float` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
+- `easy promptLine`
 
 ## 典型参数
 

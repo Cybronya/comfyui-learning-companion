@@ -1,65 +1,66 @@
 ---
 name: unknown_workflow_video_sampler_vae_97
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8982
-common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.924667
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FLF2V首尾帧-wan视频_1913077859026698242.json, 视频生成/图生视频/FLF2V首尾帧图生视频_1913525261151760386.json, 视频生成/图生视频/FLF2V首尾帧高质量视频_1916010425433915394.json, 视频生成/图生视频/Wan2.1-Fun-图生视频_1907320238373756930.json, 视频生成/图生视频/wan姿态控制图生视频_1914987342183002113.json]
+members: [数字人/数字人/电商带货数字人对口型_1997359205885612034.json, 视频生成/图生视频/Infinite talk数字人_1987166609188040706.json, "视频生成/图生视频/图加音频生视频,非常丝滑，支持160秒_2044837678058835969.json", 视频生成/图生视频/图加音频生视频_2016326225295314946.json, 视频生成/图生视频/图加音频生视频——V1_2018257190561255426.json, 视频生成/图生视频/最强图生双人数字人万相2.1+Infinite Talk_1958149674144321538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_97
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/FLF2V首尾帧-wan视频_1913077859026698242.json、视频生成/图生视频/FLF2V首尾帧图生视频_1913525261151760386.json、视频生成/图生视频/FLF2V首尾帧高质量视频_1916010425433915394.json、视频生成/图生视频/Wan2.1-Fun-图生视频_1907320238373756930.json、视频生成/图生视频/wan姿态控制图生视频_1914987342183002113.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/电商带货数字人对口型_1997359205885612034.json、视频生成/图生视频/Infinite talk数字人_1987166609188040706.json、视频生成/图生视频/图加音频生视频,非常丝滑，支持160秒_2044837678058835969.json、视频生成/图生视频/图加音频生视频_2016326225295314946.json、视频生成/图生视频/图加音频生视频——V1_2018257190561255426.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 4/5 个有
-- `LoadWanVideoClipTextEncoder` —— 4/5 个有
-- `WanVideoExperimentalArgs` —— 4/5 个有
-- `WanVideoSLG` —— 4/5 个有
-- `DF_Integer` —— 2/5 个有
-- `GetNode` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `WanVideoLoraSelect` —— 2/5 个有
-- `easy cleanGpuUsed` —— 2/5 个有
-- `easy clearCacheAll` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `CLIPVisionLoader` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `Evaluate Integers` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImageResize+` —— 1/5 个有
-- `KepStringLiteral` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `WanVideoUniAnimateDWPoseDetector` —— 1/5 个有
-- `WanVideoUniAnimatePoseInput` —— 1/5 个有
+- `AudioCrop` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `Anything Everywhere` —— 4/6 个有
+- `INTConstant` —— 4/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `WanVideoLoraSelect` —— 4/6 个有
+- `SimpleMath+` —— 3/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/6 个有
+- `WanVideoLoraSelectMulti` —— 2/6 个有
+- `Anything Everywhere3` —— 1/6 个有
+- `Audio Duration (mtb)` —— 1/6 个有
+- `Float to Int` —— 1/6 个有
+- `Int` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `PreviewAudio` —— 1/6 个有
+- `RH_GetAudioDuration` —— 1/6 个有
+- `Seed Everywhere` —— 1/6 个有
+- `SeparateMasks` —— 1/6 个有
+- `easy imageSize` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 

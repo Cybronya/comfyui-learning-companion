@@ -3,33 +3,44 @@ name: unknown_workflow_generic_1690
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_Doubao_Seedance_1_5_Pro_Fast, SaveVideo]
+coverage: 0.878
+common_nodes: [Any Switch (rgthree), CR Prompt Text, CR Text, CR Text Concatenate, Fast Groups Muter (rgthree), ImageConcanate, LoadImage, SaveImage, easy int, easy textIndexSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance 1.5 Fast 图生视频（首尾帧）_2009151155724623873.json, 视频生成/文生视频/seedance1.0_2044609453537890306.json]
+members: [图片生成/图生图/创意玩法_2011843932308643841.json, 平台全量/111_2034687360310452225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1690
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Seedance 1.5 Fast 图生视频（首尾帧）_2009151155724623873.json、视频生成/文生视频/seedance1.0_2044609453537890306.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/创意玩法_2011843932308643841.json、平台全量/111_2034687360310452225.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Concatenate`
+- `Fast Groups Muter (rgthree)`
+- `ImageConcanate`
 - `LoadImage`
-- `RH_Doubao_Seedance_1_5_Pro_Fast`
-- `SaveVideo`
+- `SaveImage`
+- `easy int`
+- `easy textIndexSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Jimeng_Image2Video_V2` —— 1/2 个有
-- `RH_SeedanceV15ProImageToVideo` —— 1/2 个有
+- `Comfly_api_set` —— 1/2 个有
+- `Comfly_gemini_3_1_flash_image_edit_S2A` —— 1/2 个有
+- `Comfly_nano_banana2_edit` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

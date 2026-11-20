@@ -3,38 +3,34 @@ name: unknown_workflow_generic_819
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo]
+coverage: 0.854
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/数字人HeyGem，配合SparkTTS实现双重克隆_1970764228514750465.json, 数字人/数字人/最强开源数字人HeyGem，配合IndexTTS实现双重克隆_1925729216556388354.json, 数字人/数字人/码帮主数字人生成工作流_1989224596220022786.json, 音频生成/音频生成/IndexTTS Generate+HeyGem Video_1981613401774407681.json]
+members: [图片生成/反推提示词/MiniMax H3标准格式提示词 自动优化生成_2101487343038459905.json, 图片生成/反推提示词/MiniMax H3标准格式提示词一键快速生成_2101408511698755585.json, 图片生成/图生图/Seedance 2.5实测全套素材_2083133574567514114.json, 平台全量/Qwen3.8-27B -MiniMax H3提示词增强器_2096234966400196609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_819
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/数字人HeyGem，配合SparkTTS实现双重克隆_1970764228514750465.json、数字人/数字人/最强开源数字人HeyGem，配合IndexTTS实现双重克隆_1925729216556388354.json、数字人/数字人/码帮主数字人生成工作流_1989224596220022786.json、音频生成/音频生成/IndexTTS Generate+HeyGem Video_1981613401774407681.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/MiniMax H3标准格式提示词 自动优化生成_2101487343038459905.json、图片生成/反推提示词/MiniMax H3标准格式提示词一键快速生成_2101408511698755585.json、图片生成/图生图/Seedance 2.5实测全套素材_2083133574567514114.json、平台全量/Qwen3.8-27B -MiniMax H3提示词增强器_2096234966400196609.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `SaveVideo`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `SaveAudio` —— 3/4 个有
-- `easy downloadIndexTTSAndLoadModel` —— 3/4 个有
-- `easy indexTTSGenerateSimple` —— 3/4 个有
-- `IndexTTSNode` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
+- `CR Prompt Text` —— 3/4 个有
+- `MiniMaxH3PromptEnhancerT8` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `LoadVideo` —— 2/4 个有
 
 ## 典型参数
 

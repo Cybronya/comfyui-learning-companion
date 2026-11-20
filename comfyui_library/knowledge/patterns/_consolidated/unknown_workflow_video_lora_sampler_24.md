@@ -1,74 +1,94 @@
 ---
 name: unknown_workflow_video_lora_sampler_24
 type: Unknown Workflow
-frequency: 30
+frequency: 41
 level: moderate
-coverage: 0.8326
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.641171
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, GetImageRangeFromBatch, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 文生视频 _ 图生视频 首尾帧 【超级加速版】_1896972443683069953.json, 视频生成/图生视频/MiniMax H3-4步加速-图生视频_2090916306450210818.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2086823760027545602.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087059347460411394.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087069140904407041.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087886342087860226.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速_2085708995028938754.json, 视频生成/图生视频/MiniMax H3-图生视频V1-双时钟-8步高质量极速-step600_2086814507325808641.json, 视频生成/图生视频/MiniMax H3-图生视频V1-双时钟-8步高质量极速-step600_2087891422266609666.json, 视频生成/图生视频/MiniMax H3-图生视频V1-双时钟-8步高质量极速_2085709043984855041.json, 视频生成/图生视频/MiniMax H3-首尾帧视频V1-双时钟-8步高质量极速-step600_2087895091745738753.json, 视频生成/图生视频/MiniMax H3开源版 去油版数字人_口播_唱歌_MV加速版_2088208371999657986.json, 视频生成/图生视频/MiniMax H3开源版 去油版数字人_口播_唱歌_MV加速版_2088234673238536194.json, 视频生成/图生视频/MiniMax H3数字人口播-图+音频生成口播视频工作流_2094979350235009025.json, 视频生成/图生视频/MiniMax H3数字人音乐MV加速版V1_2101835373805658113.json, 视频生成/图生视频/MiniMax H3音频驱动数字人-参考生视频-长视频直出【加速版】_2103404335605571585.json, 视频生成/图生视频/MiniMax H3音频驱动数字人-多人对话-一键实现语音+口型同步_2101937972219305986.json, 视频生成/图生视频/MiniMax-H3 单图换装工作流_2097684790219726850.json, 视频生成/图生视频/Minimax H3 参考生视频 ｜不油、不崩脸、真实感强｜Hybird V1 + Sla 4步加速_2091946357614534657.json, 视频生成/图生视频/minimax H3 8.23_2091335794387673090.json, 视频生成/图生视频/最强的minimax商品视频展示_2104106491350441986.json, 视频生成/图生视频/银河系小王参考生视频-自用_2094346923468738561.json, 视频生成/图生视频/银河系小王图生视频-自用_2094273549614800897.json, 视频生成/图生视频/首帧生视频_2099038054504812545.json, 视频生成/图生视频/（Minimax H3）Remix版文戏工作流_2096586271111081985.json, 视频生成/图生视频/（可调节动态-均衡版+高清化）MiniMax H3双采参考生视频V1_2103917510214119426.json, 视频生成/图生视频/（可调节动态-均衡版）MiniMax H3双采参考生视频V1_2102340152520699905.json, 视频生成/文生视频/(30秒)MiniMax H3多参双采多模参考生视频_2103718438001795074.json, 视频生成/文生视频/(30秒直出-最强均衡版)MiniMax H3多参双采参考生视频（优化版）_2103677010810851330.json, 视频生成/文生视频/MiniMax H3 文武双修均衡版｜20秒长视频｜双采多参考图生视频｜HyperVae 2X 高清_2104492387954421761.json]
+members: [视频生成/图生视频/SCAIL2 动作迁移+角色替换_2075508947406114818.json, 视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085192450951438337.json, 视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085200053362323457.json, 视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085526911635247106.json, 视频生成/图生视频/SCAIL2 骨骼驱动+人物替换 支持长视频_2064678206946496514.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞 复刻动作_2083867987425193985.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞 复刻动作_2087530408845074433.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞 复刻动作_2089613034095468546.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2073276130169278465.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2073308786999259137.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2077003812061147137.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2089596899274874881.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2103438449415114754.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2103447110430576641.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2115776756505464834.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长  复刻跳舞动作 单人跳舞_2115783528993615874.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长_2100214925217062914.json, 视频生成/图生视频/SCAIL2-动作迁移 不限时长_2108431179807551490.json, 视频生成/图生视频/Scail2循环角色替换工作流_2064613578572910593.json, 视频生成/图生视频/Scail2循环角色替换工作流_2065062837441089538.json, 视频生成/图生视频/Scail2视频动作迁移-自动循环_2066111362484498434.json, 视频生成/图生视频/Scail2视频动作迁移_2064673674170560513.json, 视频生成/图生视频/Scail2视频角色替换-自动循环_2066326016666202113.json, 视频生成/图生视频/Scail2角色动作迁移V2（循环高质量版）_2070098008229896194.json, 视频生成/图生视频/Scail2角色动作迁移V2（循环高质量版）_2072654435834228737.json, 视频生成/图生视频/Scail2角色动作迁移V2（循环高质量版）_2080322084730916866.json, 视频生成/图生视频/Scail2角色动作迁移V2（循环高质量版）_2080326375218704385.json, 视频生成/图生视频/Scail2角色替换-不限时长（图片+参考动作的视频=保留视频的背景     建议一次不要超过30秒_2065395597909250050.json, 视频生成/图生视频/Scail2角色替换-低配置长续航版 动作迁移 复刻动作_2082068440801701890.json, 视频生成/图生视频/Scail2角色替换-低配置长续航版_2065338076536328193.json, 视频生成/图生视频/Scail2角色替换-低配置长续航版_2065747971517534209.json, 视频生成/图生视频/Scail2角色替换-低配置长续航版_2086427105323212801.json, 视频生成/图生视频/Scail2角色替换_2067281458544332801.json, 视频生成/图生视频/Scail2角色替换_2074063549172903938.json, 视频生成/图生视频/Scail2角色替换人物替换循环角色替换视频动作迁移动作模仿工作流_2065001681598902273.json, 视频生成/图生视频/Scail2角色替换人物替换角色转换视频角色变换图片替换视频角色_2065766773110165506.json, 视频生成/图生视频/Scail2角色替换人物替换角色转换视频角色变换图片替换视频角色动作迁移_2081281164979032066.json, 视频生成/图生视频/Scail2长视频动作迁移(长视频低显存版) Motion Transfer (Long‑Video_2101561671167860738.json, 视频生成/图生视频/Wan2.1-Scail2 单人角色替换 （高质量循环版）_2068508853481861121.json, 视频生成/图生视频/动作迁移 不限时长 Wan21_SCAIL2_优化循环版_2065332284223483906.json, 视频生成/图生视频/角色替换+不限时长+Wan21_SCAIL2_优化循环版_2065971701934022657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_24
 
-> 由 `engine/knowledge_consolidation` 从 30 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 文生视频 _ 图生视频 首尾帧 【超级加速版】_1896972443683069953.json、视频生成/图生视频/MiniMax H3-4步加速-图生视频_2090916306450210818.json、视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2086823760027545602.json、视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087059347460411394.json、视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087069140904407041.json…）
+> 由 `engine/knowledge_consolidation` 从 41 个 workflow 归纳得出（视频生成/图生视频/SCAIL2 动作迁移+角色替换_2075508947406114818.json、视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085192450951438337.json、视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085200053362323457.json、视频生成/图生视频/SCAIL2 动作迁移+角色替换_2085526911635247106.json、视频生成/图生视频/SCAIL2 骨骼驱动+人物替换 支持长视频_2064678206946496514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：30
+- **样本数**：41
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 30 个 workflow 都包含：
-- `BasicGuider`
+全部 41 个 workflow 都包含：
+- `BasicScheduler`
+- `BatchImagesNode`
 - `CLIPLoader`
-- `ComfyMathExpression`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `ColorTransfer`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 29/30 个有
-- `PrimitiveFloat` —— 29/30 个有
-- `ResolutionSelector` —— 29/30 个有
-- `MiniMaxH3AVDecodeT8` —— 28/30 个有
-- `ModelAttentionBackend` —— 18/30 个有
-- `SolAttnMiniMax` —— 16/30 个有
-- `孤海注释` —— 13/30 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 10/30 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 10/30 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 10/30 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 10/30 个有
-- `LoadAudio` —— 9/30 个有
-- `LoraLoaderModelOnly` —— 7/30 个有
-- `Float` —— 6/30 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 5/30 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 5/30 个有
-- `easy anythingIndexSwitch` —— 5/30 个有
-- `easy cleanGpuUsed` —— 5/30 个有
-- `VAEDecode` —— 4/30 个有
-- `ConcatTextOfUtils` —— 3/30 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 3/30 个有
-- `RunningHub Deepcleaner` —— 3/30 个有
-- `VAEDecodeAudio` —— 3/30 个有
-- `VHS_LoadVideo` —— 2/30 个有
-- `AudioCrop` —— 1/30 个有
-- `GoohaiUniversalSlider` —— 1/30 个有
-- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 1/30 个有
-- `MiniMaxH3OutputTrimT8` —— 1/30 个有
-- `VHS_LoadAudioUpload` —— 1/30 个有
-- `easy clearCacheAll` —— 1/30 个有
-- `忽略多组孤海` —— 1/30 个有
+- `PreviewAny` —— 40/41 个有
+- `PreviewImage` —— 40/41 个有
+- `PrimitiveInt` —— 37/41 个有
+- `ComfyMathExpression` —— 36/41 个有
+- `GetImageSize` —— 36/41 个有
+- `TensorLoopClose` —— 36/41 个有
+- `TensorLoopOpen` —— 36/41 个有
+- `JWInteger` —— 33/41 个有
+- `DiffusionModelLoaderKJ` —— 31/41 个有
+- `ImageConcatMulti` —— 24/41 个有
+- `DownloadAndLoadGIMMVFIModel` —— 23/41 个有
+- `GIMMVFI_interpolate` —— 23/41 个有
+- `SetNode` —— 23/41 个有
+- `GetNode` —— 22/41 个有
+- `ResizeImageMaskNode` —— 21/41 个有
+- `EmptyImage` —— 20/41 个有
+- `ImageCompositeMasked` —— 20/41 个有
+- `SAM3_TrackToMask` —— 20/41 个有
+- `CR Prompt Text` —— 19/41 个有
+- `Seed (rgthree)` —— 19/41 个有
+- `ShowAnything|Mie` —— 19/41 个有
+- `VHS_VideoInfo` —— 19/41 个有
+- `WanChunkFeedForward` —— 19/41 个有
+- `UNETLoader` —— 10/41 个有
+- `CR Text` —— 9/41 个有
+- `Label (rgthree)` —— 5/41 个有
+- `SizeSelector` —— 5/41 个有
+- `SimpleMath+` —— 2/41 个有
+- `easy showAnything` —— 2/41 个有
+- `BOOLConstant` —— 1/41 个有
+- `FlashVSRNode` —— 1/41 个有
+- `ImageStitch` —— 1/41 个有
+- `MathExpression|pysssss` —— 1/41 个有
+- `RunningHub Deepcleaner` —— 1/41 个有
+- `SaveImage` —— 1/41 个有
+- `Sleep` —— 1/41 个有
+- `ToFloat` —— 1/41 个有
+- `VideoInfoLoaded` —— 1/41 个有
+- `easy clearCacheAll` —— 1/41 个有
+- `easy positive` —— 1/41 个有
+- `llama_cpp_instruct_adv` —— 1/41 个有
+- `llama_cpp_parameters` —— 1/41 个有
 
 ## 典型参数
 

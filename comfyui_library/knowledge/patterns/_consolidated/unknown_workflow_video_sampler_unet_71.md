@@ -1,50 +1,63 @@
 ---
 name: unknown_workflow_video_sampler_unet_71
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.844667
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MultiRateSamplerEXPT8, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.6818
+common_nodes: [BasicScheduler, CFGGuider, DualCLIPLoader, GetNode, KSamplerSelect, LTXDirector, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/文生视频/文生视频-MiniMaxH3-BV2-模板_2090726527729233921.json, 视频生成/文生视频/首帧&首尾帧&关键帧&文生视频_2089598221407580161.json, 视频生成/文生视频/（本地加速版）Minimax H3 文生视频_2086449507176378369.json]
+members: [视频生成/图生视频/AI代码侠土豆-LTX2.3导演台_2056245217631756289.json, 视频生成/图生视频/LTX+2.3 Director 单图关键帧工作流-用于集成_2064373452538208258.json, 视频生成/图生视频/LTX2.3-漫剧导演工作台工作流_2078873049419571202.json, 视频生成/图生视频/ltx2.3导演台_2061378483611328514.json, 视频生成/图生视频/图生视频-LTX2.3_2057271107857768450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_71
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/文生视频-MiniMaxH3-BV2-模板_2090726527729233921.json、视频生成/文生视频/首帧&首尾帧&关键帧&文生视频_2089598221407580161.json、视频生成/文生视频/（本地加速版）Minimax H3 文生视频_2086449507176378369.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/AI代码侠土豆-LTX2.3导演台_2056245217631756289.json、视频生成/图生视频/LTX+2.3 Director 单图关键帧工作流-用于集成_2064373452538208258.json、视频生成/图生视频/LTX2.3-漫剧导演工作台工作流_2078873049419571202.json、视频生成/图生视频/ltx2.3导演台_2061378483611328514.json、视频生成/图生视频/图生视频-LTX2.3_2057271107857768450.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3MultiRateSamplerEXPT8`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
+- `DualCLIPLoader`
+- `GetNode`
+- `KSamplerSelect`
+- `LTXDirector`
+- `LTXDirectorGuide`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `ResolutionSelector` —— 2/3 个有
-- `INTConstant` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `PainterVRAM` —— 1/3 个有
-- `UniBlockSwap` —— 1/3 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `LTXVCropGuides` —— 4/5 个有
+- `TTResolutionSelector` —— 4/5 个有
+- `DiffusionModelLoaderKJ` —— 3/5 个有
+- `RHSettingsNode` —— 2/5 个有
+- `RH_RhartImageG2TextToImage` —— 2/5 个有
+- `SaveImage` —— 2/5 个有
+- `Text` —— 2/5 个有
+- `AppParams` —— 1/5 个有
+- `CLIPTextEncode` —— 1/5 个有
+- `LTXDirectorCropGuides` —— 1/5 个有
+- `LTXVLatentUpsampler` —— 1/5 个有
+- `LatentUpscaleModelLoader` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
 
 ## 典型参数
 

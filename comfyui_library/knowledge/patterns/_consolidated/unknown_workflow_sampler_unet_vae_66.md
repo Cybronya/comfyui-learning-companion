@@ -1,68 +1,61 @@
 ---
 name: unknown_workflow_sampler_unet_vae_66
 type: Unknown Workflow
-frequency: 12
-level: strong
-coverage: 0.847
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 14
+level: moderate
+coverage: 0.772
+common_nodes: [CLIPLoader, KSampler, PreviewAny, PrimitiveStringMultiline, SaveImage, TextGenerate, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen image2.1 单图编辑_2102026609086787586.json, 图片生成/图生图/Qwen image2.1 多图编辑_2102039500712140802.json, 图片生成/图生图/Qwen+image+2.1图片编辑.九宫格_2101870838822817793.json, 图片生成/图生图/Qwen-Image-2.1 图像编辑_2102343043620888578.json, 图片生成/图生图/Qwen-Image-2.1 图像编辑_2105656720168148993.json, 图片生成/图生图/Qwen-image2.1 图像编辑_2111261410541006850.json, 图片生成/图生图/Qwen2.1四视图生成器_2101145681154101249.json, 图片生成/图生图/Qwen_image_2.1_图生_2101865996205248513.json, 图片生成/图生图/Qwen_人物四视图生成_2111240527051051009.json, 图片生成/图生图/qwen image 2.1多图编辑_2101719348938362882.json, 图片生成/图生图/【Qwen Image 2.1】单图编辑_2104558675418505218.json, 图片生成/图生图/【Qwen Image 2.1】多图编辑_2104557931218956289.json]
+members: [图片生成/文生图/Fibo2文生图_2116522251024691202.json, 图片生成/文生图/Fibo2智能文生图_2115437162157137922.json, 图片生成/文生图/Flux3-Klein智能文生图_2114904139665854466.json, 图片生成/文生图/Flux3-Klein智能文生图_2116355959416246273.json, 图片生成/文生图/Flux3-Klein智能文生图_2116367707561091073.json, 图片生成/文生图/Flux3-klein文生图PUP增强_2111479315035676674.json, 图片生成/文生图/MOSS Image Base + SFT 融合版文生图_2115444235745980418.json, 图片生成/文生图/Moss Image智能文生图_2114917051671343106.json, 图片生成/文生图/Moss 文生图高质量版_2114973070078341122.json, 图片生成/文生图/Moss 文生图高质量版_2116405423283724290.json, 图片生成/文生图/Moss 模型融合工作流_2114890474770227202.json, 图片生成/文生图/Moss 模型融合工作流_2114947721344929794.json, 图片生成/文生图/Moss 模型融合工作流_2115700533108502530.json, 平台全量/Moss Image文生图_2117862760578109441.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_66
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen image2.1 单图编辑_2102026609086787586.json、图片生成/图生图/Qwen image2.1 多图编辑_2102039500712140802.json、图片生成/图生图/Qwen+image+2.1图片编辑.九宫格_2101870838822817793.json、图片生成/图生图/Qwen-Image-2.1 图像编辑_2102343043620888578.json、图片生成/图生图/Qwen-Image-2.1 图像编辑_2105656720168148993.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Fibo2文生图_2116522251024691202.json、图片生成/文生图/Fibo2智能文生图_2115437162157137922.json、图片生成/文生图/Flux3-Klein智能文生图_2114904139665854466.json、图片生成/文生图/Flux3-Klein智能文生图_2116355959416246273.json、图片生成/文生图/Flux3-Klein智能文生图_2116367707561091073.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：85%
+- **样本数**：14
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
 - `KSampler`
-- `LoadImage`
-- `ResolutionSelector`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 11/12 个有
-- `QwenImage21Cache` —— 10/12 个有
-- `CR Prompt Text` —— 7/12 个有
-- `ShowText|pysssss` —— 3/12 个有
-- `Anything Everywhere3` —— 2/12 个有
-- `CR Text Concatenate` —— 2/12 个有
-- `JjkText` —— 2/12 个有
-- `RHLLMChatNode` —— 2/12 个有
-- `ResizeLongestToNode` —— 2/12 个有
-- `SaveImageAdvanced` —— 2/12 个有
-- `Seed (rgthree)` —— 2/12 个有
-- `TextGenerate` —— 2/12 个有
-- `BatchImagesNode` —— 1/12 个有
-- `CR Text` —— 1/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/12 个有
-- `孤海注释` —— 1/12 个有
+- `ResolutionSelector` —— 13/14 个有
+- `CLIPTextEncode` —— 12/14 个有
+- `EmptyFlux2LatentImage` —— 12/14 个有
+- `SkipLayerGuidanceDiTSimple` —— 8/14 个有
+- `Display Int (rgthree)` —— 7/14 个有
+- `GoohaiUniversalSlider` —— 7/14 个有
+- `MOSSMergePreset` —— 7/14 个有
+- `孤海注释` —— 7/14 个有
+- `Text Prompt (JPS)` —— 6/14 个有
+- `TextEncodeFibo2` —— 2/14 个有
+- `Switch any [Crystools]` —— 1/14 个有
+- `Text` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 12 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 12 | 100% |
-| 采样步数 | 25 | 25 - 50 | 12 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 采样步数 | 37.5 | 16 - 50 | 14 | 62% |
+| Prompt 约束强度(CFG) | 3 | 1 - 3.5 | 14 | 61% |
+| 采样算法 | euler | - | 14 | 86% |
+| 调度器 | simple | - | 14 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
@@ -70,10 +63,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，12 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，12 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，观测区间 25 - 50，12 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 37.5，观测区间 16 - 50，14 个样本
+- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 3.5，14 个样本
+- 采样算法 最常用 euler，14 个样本，一致性 86%
+- 调度器 最常用 simple，14 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）

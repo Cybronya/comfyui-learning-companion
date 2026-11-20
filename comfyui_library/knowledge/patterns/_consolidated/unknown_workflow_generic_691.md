@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_691
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.70475
-common_nodes: [CR Prompt Text, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.675
+common_nodes: [JjkText, LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Suno音乐歌词版-自定义歌词特价版V1_1968707571395829762.json, 图片生成/反推提示词/（Qwen3.8本地版）最强MiniMax H3提示词增强器_2093398296659324930.json, 图片生成/反推提示词/（RH免费版）Gemini 3 Pro图像超级反推V1_1991327552618999810.json, 图片生成/图生图/最强MiniMax_H3提示词增强器贞贞的平价AI小屋_2088515347732324353.json]
+members: [图片生成/图生图/一键发型生成器_2016788282524311553.json, 图片生成/图生图/人物+卡通形象同框_2021392001899438081.json, 图片生成/图生图/最强多图参考生图  全能图片V1_1960958404489621505.json, 图片生成/图生图/电商多图参考生图  全能图片V1_1960958186801049602.json, 平台全量/一键换装对比_2017592281016045570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_691
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/Suno音乐歌词版-自定义歌词特价版V1_1968707571395829762.json、图片生成/反推提示词/（Qwen3.8本地版）最强MiniMax H3提示词增强器_2093398296659324930.json、图片生成/反推提示词/（RH免费版）Gemini 3 Pro图像超级反推V1_1991327552618999810.json、图片生成/图生图/最强MiniMax_H3提示词增强器贞贞的平价AI小屋_2088515347732324353.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键发型生成器_2016788282524311553.json、图片生成/图生图/人物+卡通形象同框_2021392001899438081.json、图片生成/图生图/最强多图参考生图  全能图片V1_1960958404489621505.json、图片生成/图生图/电商多图参考生图  全能图片V1_1960958186801049602.json、平台全量/一键换装对比_2017592281016045570.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3PromptEnhancerT8` —— 2/4 个有
-- `Comfly_suno_lyrics` —— 1/4 个有
-- `RH_Captioner_Pro` —— 1/4 个有
+- `Image Stitch` —— 2/5 个有
+- `JjkConcat` —— 2/5 个有
 
 ## 典型参数
 

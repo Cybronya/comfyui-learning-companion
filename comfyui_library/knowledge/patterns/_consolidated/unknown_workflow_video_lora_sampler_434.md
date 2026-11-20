@@ -1,81 +1,115 @@
 ---
 name: unknown_workflow_video_lora_sampler_434
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.700167
-common_nodes: [AddLabel, ColorMatch, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.499571
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, GetImageRangeFromBatch, GetNode, GrowMask, ImageScale, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PixelPerfectResolution, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy int, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/首尾帧FusionX-VACE大师级视频生成_1933765241819811842.json, 视频生成/图生视频/首尾帧FusionX-VACE大师级视频生成_1934654524110118913.json, 视频生成/图生视频/首尾帧处理 - FusionX_VACE _ 放大与补帧优化_1937433374971600897.json, 视频生成/文生视频/wan2.1 极速动作模仿 动作迁移 跳舞_1925016376795144194.json, 视频生成/文生视频/【闪电极速】Wan2.1 WanVACE动作迁移视频动画生成_1924702934460715010.json, 视频生成/文生视频/🕺最强跳舞 人物_动物 【人脸保持版】🍩_1937758764969672705.json]
+members: [数字人/数字人/SEC Wan2.2 Animate 替换循环工作流_1989236544387035137.json, 数字人/数字人/Wan2.2 Animate 循环工作流，支持长视频，支持多人_1976591232627511298.json, 视频生成/图生视频/46. 官流 animate bf16 模型 循环长视频 没有白光和频闪_1977644957609664514.json, 视频生成/图生视频/Animate人物替换，无需标点，支持长视频，多人可指定其中一个_1993140564954726401.json, 视频生成/图生视频/SEC DWWan2.2 Animate 替换循环工作流成功_1993239739520270338.json, 视频生成/图生视频/官方 wan22_animate 长视频生成 遮罩编辑版_1971013854891282433.json, 视频生成/图生视频/官流 wan22_animate 循环长视频的生成_1972488378526724098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_434
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/首尾帧FusionX-VACE大师级视频生成_1933765241819811842.json、视频生成/图生视频/首尾帧FusionX-VACE大师级视频生成_1934654524110118913.json、视频生成/图生视频/首尾帧处理 - FusionX_VACE _ 放大与补帧优化_1937433374971600897.json、视频生成/文生视频/wan2.1 极速动作模仿 动作迁移 跳舞_1925016376795144194.json、视频生成/文生视频/【闪电极速】Wan2.1 WanVACE动作迁移视频动画生成_1924702934460715010.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/SEC Wan2.2 Animate 替换循环工作流_1989236544387035137.json、数字人/数字人/Wan2.2 Animate 循环工作流，支持长视频，支持多人_1976591232627511298.json、视频生成/图生视频/46. 官流 animate bf16 模型 循环长视频 没有白光和频闪_1977644957609664514.json、视频生成/图生视频/Animate人物替换，无需标点，支持长视频，多人可指定其中一个_1993140564954726401.json、视频生成/图生视频/SEC DWWan2.2 Animate 替换循环工作流成功_1993239739520270338.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AddLabel`
-- `ColorMatch`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
+全部 7 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `GrowMask`
+- `ImageScale`
+- `KSampler`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `Primitive integer [Crystools]`
-- `Text Multiline`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PixelPerfectResolution`
+- `SetNode`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
+- `WanAnimateToVideo`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `GetNode` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `AIO_Preprocessor` —— 3/6 个有
-- `MaskPreview+` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `Text Concatenate` —— 3/6 个有
-- `VHS_LoadVideo` —— 3/6 个有
-- `WanVideoEnhanceAVideo` —— 3/6 个有
-- `WanVideoVACEStartToEndFrame` —— 3/6 个有
-- `ImagePadKJ` —— 2/6 个有
-- `RH_Captioner` —— 2/6 个有
-- `ShowText|pysssss` —— 2/6 个有
-- `ImageScaleToMegapixels` —— 1/6 个有
-- `ImpactFloat` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `UpscaleModelLoader` —— 1/6 个有
-- `WD14Tagger|pysssss` —— 1/6 个有
-- `WanVideoMagCache` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `DownloadAndLoadSAM2Model` —— 6/7 个有
+- `FaceMaskFromPoseKeypoints` —— 6/7 个有
+- `ImageCropByMaskAndResize` —— 6/7 个有
+- `PointsEditor` —— 6/7 个有
+- `Sam2Segmentation` —— 6/7 个有
+- `ImageFromBatch` —— 5/7 个有
+- `ImageConcanate` —— 4/7 个有
+- `InvertMask (segment anything)` —— 4/7 个有
+- `VHS_GetImageCount` —— 4/7 个有
+- `easy mathInt` —— 4/7 个有
+- `CM_IntToFloat` —— 3/7 个有
+- `EG_SS_RYZH` —— 3/7 个有
+- `ImageResizeKJv2` —— 3/7 个有
+- `PathchSageAttentionKJ` —— 3/7 个有
+- `PrimitiveInt` —— 3/7 个有
+- `SeCModelLoader` —— 3/7 个有
+- `SeCVideoSegmentation` —— 3/7 个有
+- `Text Multiline` —— 3/7 个有
+- `VHS_VideoInfoLoaded` —— 3/7 个有
+- `easy cleanGpuUsed` —— 3/7 个有
+- `ImageConcatMulti` —— 2/7 个有
+- `JWInteger` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `easy ifElse` —— 2/7 个有
+- `Bool` —— 1/7 个有
+- `CM_FloatToInt` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `Sa2VANodeTpl` —— 1/7 个有
+- `SimpleComparison+` —— 1/7 个有
+- `SoundFlow_TrimAudio` —— 1/7 个有
+- `VHS_VideoInfo` —— 1/7 个有
+- `easy convertAnything` —— 1/7 个有
+- `easy float` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 4 - 6 | 7 | 83% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 11/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 4 - 6，7 个样本，取值集中（一致性 83%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（11/7 个样本）：Steps较低可能导致细节不足

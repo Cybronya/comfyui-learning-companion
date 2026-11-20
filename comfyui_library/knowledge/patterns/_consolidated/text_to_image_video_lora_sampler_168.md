@@ -3,68 +3,87 @@ name: text_to_image_video_lora_sampler_168
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.8695
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Int, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewAny, RHLLMChatNode, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.905
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, EmptyLatentImage, GetImageRangeFromBatch, ImageResizeKJv2, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/双人完美数字人｜MiniMaxH3人物特效图生视频_2090208010038767617.json, 视频生成/图生视频/完美数字人模特产品展示｜MiniMaxH3图生视频数字人工作流_2087203587905638401.json, 视频生成/图生视频/自然循环动态壁纸v2｜MiniMax H3人物特效图生视频_2092874835826401281.json, 视频生成/图生视频/自然循环动态壁纸v2｜MiniMax H3图生视频生成_2092686110370648065.json]
+members: [数字人/数字人/Infinitetalk视频转数字人动态更强更自然 数字人口播方案_2109715456281104385.json, 数字人/数字人/真人视频数字人口播对口型 数字人视频生成方案_2109073300885426178.json, 视频生成/图生视频/超强视频对口型唱歌数字人 数字人视频生成_2100276742337417218.json, 音频生成/音频生成/视频转视频配音｜InfiniteTalk数字人音频生成_2091228835768528897.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_168
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/双人完美数字人｜MiniMaxH3人物特效图生视频_2090208010038767617.json、视频生成/图生视频/完美数字人模特产品展示｜MiniMaxH3图生视频数字人工作流_2087203587905638401.json、视频生成/图生视频/自然循环动态壁纸v2｜MiniMax H3人物特效图生视频_2092874835826401281.json、视频生成/图生视频/自然循环动态壁纸v2｜MiniMax H3图生视频生成_2092686110370648065.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Infinitetalk视频转数字人动态更强更自然 数字人口播方案_2109715456281104385.json、数字人/数字人/真人视频数字人口播对口型 数字人视频生成方案_2109073300885426178.json、视频生成/图生视频/超强视频对口型唱歌数字人 数字人视频生成_2100276742337417218.json、音频生成/音频生成/视频转视频配音｜InfiniteTalk数字人音频生成_2091228835768528897.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `EmptyLatentImage`
-- `Int`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJv2`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewAny`
-- `RHLLMChatNode`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/4 个有
-- `CR Text` —— 2/4 个有
-- `CR Text Concatenate` —— 2/4 个有
-- `CR Text Replace` —— 2/4 个有
-- `JWFloat` —— 2/4 个有
-- `LazySwitch1way` —— 2/4 个有
-- `LazySwitch2way` —— 2/4 个有
-- `LoadAudio` —— 2/4 个有
-- `ModelAttentionBackend` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `PrimitiveBoolean` —— 2/4 个有
-- `ResolutionSelector` —— 2/4 个有
-- `StringToInt` —— 2/4 个有
-- `ttN concat` —— 2/4 个有
+- `AudioCrop` —— 3/4 个有
+- `AudioSeparation` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `SimpleMath+` —— 2/4 个有
+- `SoundFlow_GetLength` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `easy int` —— 2/4 个有
+- `Any Switch (rgthree)` —— 1/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `Display Int (rgthree)` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `Float to Int` —— 1/4 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `Getter` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImageBatchMulti` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `Qwen3TTSModelLoader` —— 1/4 个有
+- `Qwen3TTSVoiceDesign` —— 1/4 个有
+- `ReverseImageBatch` —— 1/4 个有
+- `Setter` —— 1/4 个有
+- `ToInt` —— 1/4 个有
+- `TrimAudioDuration` —— 1/4 个有
+- `VHS_SelectEveryNthImage` —— 1/4 个有
+- `VHS_VideoInfo` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 

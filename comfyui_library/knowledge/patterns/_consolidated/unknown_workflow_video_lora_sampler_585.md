@@ -1,60 +1,89 @@
 ---
 name: unknown_workflow_video_lora_sampler_585
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8315
-common_nodes: [GetNode, LoadWanVideoT5TextEncoder, SetNode, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetRadialAttention, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy float, easy globalSeed, easy int, easy seed]
+coverage: 0.6382
+common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GrowMask, ImageConcatMulti, ImageCropByMaskAndResize, ImageFromBatch, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/qwen3-vl视频反推--首款洗视频_1981360668177768450.json, 视频生成/文生视频/Wan2.2文生视频性价比极致加速V3_1973095113876484098.json, 视频生成/文生视频/Wan2.2文生视频性价比极致加速V5_1978410048823169026.json, 视频生成/文生视频/qwen3-vl反推+Wan2.2文生视频性价比极致加速V5_1981321615827001346.json]
+members: [平台全量/即梦4.0+主体替换WanAnimate_1983776120329936897.json, 视频生成/图生视频/KJ版【 主体替换 + 姿势参考 】 Wan2.2+Animate_1970037279043579906.json, 视频生成/图生视频/Nuash版-Wan Animation 数字人+视频人物替换_1969961202665332737.json, 视频生成/图生视频/Wan-Animate 完美复刻官方效果-调参升级版_1969938728464621569.json, 视频生成/图生视频/主体替换调参版本_转身_1980181283542306818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_585
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/qwen3-vl视频反推--首款洗视频_1981360668177768450.json、视频生成/文生视频/Wan2.2文生视频性价比极致加速V3_1973095113876484098.json、视频生成/文生视频/Wan2.2文生视频性价比极致加速V5_1978410048823169026.json、视频生成/文生视频/qwen3-vl反推+Wan2.2文生视频性价比极致加速V5_1981321615827001346.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/即梦4.0+主体替换WanAnimate_1983776120329936897.json、视频生成/图生视频/KJ版【 主体替换 + 姿势参考 】 Wan2.2+Animate_1970037279043579906.json、视频生成/图生视频/Nuash版-Wan Animation 数字人+视频人物替换_1969961202665332737.json、视频生成/图生视频/Wan-Animate 完美复刻官方效果-调参升级版_1969938728464621569.json、视频生成/图生视频/主体替换调参版本_转身_1980181283542306818.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GetNode`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
-- `String Literal`
+全部 5 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `FaceMaskFromPoseKeypoints`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSetRadialAttention`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy float`
-- `easy globalSeed`
-- `easy int`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 3/4 个有
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `AILab_QwenVL` —— 2/4 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `WanVideoLoraSelectMulti` —— 1/4 个有
+- `GetNode` —— 4/5 个有
+- `ImpactInt` —— 4/5 个有
+- `Int` —— 4/5 个有
+- `MathExpression|pysssss` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `WanVideoSetLoRAs` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 3/5 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `Textbox` —— 3/5 个有
+- `VHS_VideoInfo` —— 3/5 个有
+- `BBoxesToSAM2` —— 2/5 个有
+- `CR String To Number` —— 2/5 个有
+- `DownloadAndLoadQwenModel` —— 2/5 个有
+- `DownloadAndLoadSAM2Model` —— 2/5 个有
+- `GetImagesFromBatchIndexed` —— 2/5 个有
+- `ImpactSwitch` —— 2/5 个有
+- `LayerMask: SAM2VideoUltra` —— 2/5 个有
+- `OnnxDetectionModelLoader` —— 2/5 个有
+- `PoseAndFaceDetection` —— 2/5 个有
+- `QwenVLDetection` —— 2/5 个有
+- `Sam2Segmentation` —— 2/5 个有
+- `TextBoxNode_UTK` —— 2/5 个有
+- `WanVideoLoraSelect` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Image Stitch` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `RH_Jimeng4_Image2Image` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `StringToInt` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 

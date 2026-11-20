@@ -1,85 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_880
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4665
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ColorTransfer, ConditioningZeroOut, DiffusionModelLoaderKJ, Display Int (rgthree), GetImageSize+, GetNode, INTConstant, ImageFromBatch, ImageFromBatch+, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PrimitiveString, RIFE VFI, SetNode, VAEDecode, VAELoader, VHS_VideoCombine, WanSCAILToVideo, easy batchAnything, easy clearCacheAll, easy forLoopEnd, easy forLoopStart]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.523333
+common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, GODMT_SplitString, GetNode, INTConstant, ImageResizeKJv2, ImpactInt, Int, KSamplerAdvanced, LoraLoaderModelOnly, SetNode, SimpleMath+, TextListSelelct, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy forLoopEnd, easy forLoopStart, seed _O]
+problems: []
 missing: []
-members: [视频生成/图生视频/Scail2动作迁移（添加胸肌臀部弹跳效果，更真实）_2069596768408530946.json, 视频生成/图生视频/Scail2动作迁移（简单才是最好的，复杂的东西不适合多数人）_2069574833263960065.json]
+members: [视频生成/图生视频/SVI2.0PRO场景切换长视频_2073295485099663361.json, 视频生成/图生视频/SVI2.0PRO视频延长_2073295687021846529.json, 视频生成/图生视频/SVI2.0PRO长视频循环流_2073295137563828226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_880
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Scail2动作迁移（添加胸肌臀部弹跳效果，更真实）_2069596768408530946.json、视频生成/图生视频/Scail2动作迁移（简单才是最好的，复杂的东西不适合多数人）_2069574833263960065.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/SVI2.0PRO场景切换长视频_2073295485099663361.json、视频生成/图生视频/SVI2.0PRO视频延长_2073295687021846529.json、视频生成/图生视频/SVI2.0PRO长视频循环流_2073295137563828226.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：47%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ColorTransfer`
-- `ConditioningZeroOut`
 - `DiffusionModelLoaderKJ`
-- `Display Int (rgthree)`
-- `GetImageSize+`
+- `GODMT_SplitString`
 - `GetNode`
 - `INTConstant`
-- `ImageFromBatch`
-- `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `KSampler`
-- `LoadImage`
+- `ImpactInt`
+- `Int`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PrimitiveString`
-- `RIFE VFI`
 - `SetNode`
+- `SimpleMath+`
+- `TextListSelelct`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
-- `easy batchAnything`
-- `easy clearCacheAll`
+- `WanImageToVideoSVIPro`
 - `easy forLoopEnd`
 - `easy forLoopStart`
+- `seed _O`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideoUI` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `ImageBatchExtendWithOverlap` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 1/3 个有
+- `ImageBatch` —— 1/3 个有
+- `ImageListToBatch+` —— 1/3 个有
+- `IntToText` —— 1/3 个有
+- `SDVM Image List Repeat` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `VHS_SelectImages` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

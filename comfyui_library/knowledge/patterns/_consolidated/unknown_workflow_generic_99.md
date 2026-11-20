@@ -1,35 +1,41 @@
 ---
 name: unknown_workflow_generic_99
 type: Unknown Workflow
-frequency: 15
+frequency: 17
 level: moderate
-coverage: 0.943333
-common_nodes: [ExpressionEditor, LoadImage, SaveImage]
+coverage: 0.541118
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux.真人表情包——一键上传参考图操作_1915277572496621570.json, 图片生成/图生图/NNW_表情编辑_Expression+Editor_20250613_1933467494525091841.json, 图片生成/图生图/【RICK】人物表情调整(支持真人和动漫)_1906524268967170049.json, 图片生成/图生图/一键微调表情一致性_1895404347084177409.json, 图片生成/图生图/一键控制模特表情_1915219222262120450.json, 图片生成/图生图/最新定制人物表情  只需一个节点_1909632213166817282.json, 图片生成/图生图/表情编辑器_1895030427646296066.json, 图片生成/图生图/表情迁移，表情调节_1900132599463931906.json, 图片生成/图生图/超写实人物表情编辑器-可自行调节任意表情_2011352550611619841.json, 图片生成/图生图/超写实表情编辑器_1923612466931298306.json, 图片生成/图生图/面部表情工作流_1927322256328777729.json, 数字人/数字人/人物表情修改_1970662182843260930.json, 数字人/数字人/人物表情控制，表情迁移，简易表情控制器plus加强_2031386476444917761.json, 数字人/数字人/表情修改(可实现闭眼改睁眼，微笑，搞怪表情等)_1932363892964139009.json, 数字人/数字人/表情编辑_1988454897383292930.json]
+members: [图片生成/图生图/SeedVR2 Video Upscaler_1965075456494026754.json, 图片生成/图生图/SeedVR2 超清放大工作流，以前的都可以舍弃了_1940334436053291009.json, 图片生成/图生图/SeedVR2-图像无损高清放大_2025749390215876609.json, 图片生成/图生图/SeedVR2VideoUpscal-高清放大_1964004290580893698.json, 图片生成/图生图/SeedVR2图片放大高清修复小图变大图_2058029259901464577.json, 图片生成/图生图/SeedVR2图片放大高清修复小图变大图_2061389188360134657.json, 图片生成/图生图/不限图片类型 精修 局部重绘_2100825346823249922.json, 图片生成/图生图/图片放大 高清修复 精修 局部重绘 适合电商 自媒体 娱乐博主+全节点注释_2052257486786310145.json, 图片生成/图生图/图片放大 高清修复_2033929039899009026.json, 图片生成/图生图/图片放大+高清修复+精修+局部重绘+适合电商+自媒体+娱乐博主_2022335164046647297.json, 图片生成/图生图/最强图片高清修复-SeedVR2终极版_2006200038925541378.json, 图片生成/图生图/高清修复放大_1991057768348065794.json, 图片生成/图生图/高清修复放大_2095063717544292354.json, 平台全量/005.图片放大SeedVR2_2001653862962479105.json, 平台全量/SeedVR2图片放大高清修复小图变大图_2088154891901562881.json, 平台全量/SeedVR2皮肤优化高清修复_1985986508882681857.json, 平台全量/SeedVR2高细节高清修复放大_1986019908192542722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_99
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Flux.真人表情包——一键上传参考图操作_1915277572496621570.json、图片生成/图生图/NNW_表情编辑_Expression+Editor_20250613_1933467494525091841.json、图片生成/图生图/【RICK】人物表情调整(支持真人和动漫)_1906524268967170049.json、图片生成/图生图/一键微调表情一致性_1895404347084177409.json、图片生成/图生图/一键控制模特表情_1915219222262120450.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/SeedVR2 Video Upscaler_1965075456494026754.json、图片生成/图生图/SeedVR2 超清放大工作流，以前的都可以舍弃了_1940334436053291009.json、图片生成/图生图/SeedVR2-图像无损高清放大_2025749390215876609.json、图片生成/图生图/SeedVR2VideoUpscal-高清放大_1964004290580893698.json、图片生成/图生图/SeedVR2图片放大高清修复小图变大图_2058029259901464577.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `ExpressionEditor`
+全部 17 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
 - `SaveImage`
+- `SeedVR2`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/15 个有
-- `Concat Images (mtb)` —— 1/15 个有
+- `SeedVR2BlockSwap` —— 16/17 个有
+- `ImageScaleToTotalPixels` —— 13/17 个有
+- `PreviewImage` —— 12/17 个有
+- `PlaySound|pysssss` —— 11/17 个有
+- `easy int` —— 8/17 个有
+- `RHHiddenNodes` —— 7/17 个有
+- `SeedVR2ExtraArgs` —— 6/17 个有
 
 ## 典型参数
 

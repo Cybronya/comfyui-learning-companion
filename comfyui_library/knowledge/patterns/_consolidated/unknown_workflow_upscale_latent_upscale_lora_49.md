@@ -1,94 +1,80 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_49
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.896429
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecodeTiled]
+frequency: 8
+level: strong
+coverage: 0.838375
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced]
 problems: []
 missing: []
-members: [数字人/数字人/DaNotebook LTX2.3 Digital_2093191068970999809.json, 数字人/数字人/LTX2.3 s2v双人数字人_2031917616582889474.json, 数字人/数字人/LTX2.3 s2v数字人-Prompt Relay 版- 高动作遵从_2047120056772993026.json, 数字人/数字人/LTX2.3 s2v数字人_2030584684144500738.json, 数字人/数字人/Ltx2.3指定音色+图片输入文案自动化配音生成数字人视频_2053381791427375106.json, 视频生成/图生视频/Ltx2.3+龙猫克隆+图片输入文案自动化配音生成数字人视频_2049792632808853506.json, 视频生成/图生视频/Ltx2.3指定音色+图片输入文案自动化配音生成数字人视频_2040420049630007297.json]
+members: [视频生成/文生视频/NVFP4非蒸馏高质量LXT2镜头控制文生视频_2009643822036291585.json, 视频生成/文生视频/ltx2.3文生视频工作流-官方版_2055854688318304257.json, 视频生成/文生视频/ltx2文生视频（运行非常稳定，时长可调，运行速度很快）_2008912681826263041.json, 视频生成/文生视频/video_ltx2_3_t2v文生视频_2032300523310813186.json, 视频生成/文生视频/video_ltx2_t2v_unpack_2008579148603723778.json, 视频生成/文生视频/video_ltx2_t2v文生视频fp8_2011810389457117185.json, 视频生成/文生视频/大凯辰光-LTX-2_T2V_Full-拆分子图版-文生视频工作流_2009155872034922497.json, 视频生成/文生视频/非蒸馏高质量LXT2镜头控制文生视频_2009183975582994433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_49
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/DaNotebook LTX2.3 Digital_2093191068970999809.json、数字人/数字人/LTX2.3 s2v双人数字人_2031917616582889474.json、数字人/数字人/LTX2.3 s2v数字人-Prompt Relay 版- 高动作遵从_2047120056772993026.json、数字人/数字人/LTX2.3 s2v数字人_2030584684144500738.json、数字人/数字人/Ltx2.3指定音色+图片输入文案自动化配音生成数字人视频_2053381791427375106.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/NVFP4非蒸馏高质量LXT2镜头控制文生视频_2009643822036291585.json、视频生成/文生视频/ltx2.3文生视频工作流-官方版_2055854688318304257.json、视频生成/文生视频/ltx2文生视频（运行非常稳定，时长可调，运行速度很快）_2008912681826263041.json、视频生成/文生视频/video_ltx2_3_t2v文生视频_2032300523310813186.json、视频生成/文生视频/video_ltx2_t2v_unpack_2008579148603723778.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
 - `KSamplerSelect`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
+- `LTXVEmptyLatentAudio`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
+- `PrimitiveFloat`
 - `PrimitiveInt`
 - `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
-- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 6/7 个有
-- `MelBandRoFormerModelLoader` —— 6/7 个有
-- `MelBandRoFormerSampler` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/7 个有
-- `PrimitiveFloat` —— 4/7 个有
-- `Apply Whisper` —— 3/7 个有
-- `FloatConstant` —— 3/7 个有
-- `ImageLoader` —— 3/7 个有
-- `LTX2_NAG` —— 3/7 个有
-- `LoadImage` —— 3/7 个有
-- `LongCatVoiceCloneTTS` —— 3/7 个有
-- `PreviewAny` —— 3/7 个有
-- `PreviewAudio` —— 3/7 个有
-- `PrimitiveBoolean` —— 3/7 个有
-- `SimpleMath+` —— 3/7 个有
-- `SoundFlow_GetLength` —— 3/7 个有
-- `Text` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `AudioConcat` —— 1/7 个有
-- `DA_LoadMedia` —— 1/7 个有
-- `DA_Nag` —— 1/7 个有
-- `IAMCCS_VRAMCleanup` —— 1/7 个有
-- `NormalizeAudioLoudness` —— 1/7 个有
-- `PromptRelayEncode` —— 1/7 个有
-- `ResolutionSelector` —— 1/7 个有
-- `llama_cpp_instruct_adv` —— 1/7 个有
-- `llama_cpp_model_loader` —— 1/7 个有
-- `llama_cpp_parameters` —— 1/7 个有
+- `CreateVideo` —— 6/8 个有
+- `SaveVideo` —— 6/8 个有
+- `LTXVCropGuides` —— 5/8 个有
+- `VAEDecodeTiled` —— 5/8 个有
+- `CM_FloatToInt` —— 3/8 个有
+- `LTXVSpatioTemporalTiledVAEDecode` —— 3/8 个有
+- `PrimitiveStringMultiline` —— 3/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `VAEDecode` —— 2/8 个有
+- `VHS_VideoCombine` —— 2/8 个有
+- `DeepTranslatorTextNode` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `SetNode` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
+- `TextGenerateLTX2Prompt` —— 1/8 个有
+- `easy cleanGpuUsed` —— 1/8 个有
+- `easy clearCacheAll` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 121 | 8 | 89% |
+| 高度 | 25 | 25 - 25 | 8 | 100% |
 
 ## 常见问题
 
@@ -96,4 +82,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 121，8 个样本，取值集中（一致性 89%）
+- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）

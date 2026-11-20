@@ -3,17 +3,17 @@ name: unknown_workflow_generic_1681
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [LoadImage, RH_Kling25_I2V_FirstLastFrame, SaveVideo]
+coverage: 0.897
+common_nodes: [Image Comparer (rgthree), JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2ImageToImage, SaveImage, SeedVR2, SeedVR2BlockSwap, easy int, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/Kling_25_I2V_FirstLastFrame_v2.5_2033746145595363329.json, 视频生成/图生视频/首尾帧生视频工作流｜Kling 2.5 两张图变一段视频_2098334081992978434.json]
+members: [图片生成/图生图/全能图片V2&PRO&全能图片G2_2089691221101998081.json, 图片生成/文生图/GP·T2.5&全能图片V2&GP·T2_1900092946795094018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1681
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Kling_25_I2V_FirstLastFrame_v2.5_2033746145595363329.json、视频生成/图生视频/首尾帧生视频工作流｜Kling 2.5 两张图变一段视频_2098334081992978434.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V2&PRO&全能图片G2_2089691221101998081.json、图片生成/文生图/GP·T2.5&全能图片V2&GP·T2_1900092946795094018.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,12 +23,19 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `JjkText`
 - `LoadImage`
-- `RH_Kling25_I2V_FirstLastFrame`
-- `SaveVideo`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `easy int`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 1/2 个有
 
 ## 典型参数
 

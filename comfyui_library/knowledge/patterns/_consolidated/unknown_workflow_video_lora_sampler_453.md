@@ -1,81 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_453
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8226
-common_nodes: [DownloadAndLoadWav2VecModel, ImageFromBatch+, Int, JWInteger, LoadAudio, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.552286
+common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json, 数字人/数字人/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977645629725908994.json, 数字人/数字人/顶级唱歌演讲数字人T2V+lynx配合InfiniteTalk_1977047731871064066.json, 视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json, 视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json]
+members: [视频生成/图生视频/Wan-Animate-KJ工作流（自动遮罩）_1970452175312875521.json, 视频生成/图生视频/WanAnimateV2-人物编辑_1975882698759737345.json, 视频生成/图生视频/WanAnimate_V2_视频人物自动替换(单人)_2006252507227496450.json, 视频生成/图生视频/WanAnimate_V2_视频动作迁移(单人)_2006246424253571074.json, 视频生成/图生视频/自动抠图--最新Animate图片主体替换视频主体_1970425229413654530.json, 视频生成/文生视频/Wan2.2 Animate KJ版 人物动作迁移视频生成视频_1970355314094710785.json, 视频生成/文生视频/Wan2.2 Animate-KJ 美女跳舞 动作一键迁移复制姿势_1971474322126782465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_453
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json、数字人/数字人/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977645629725908994.json、数字人/数字人/顶级唱歌演讲数字人T2V+lynx配合InfiniteTalk_1977047731871064066.json、视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json、视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan-Animate-KJ工作流（自动遮罩）_1970452175312875521.json、视频生成/图生视频/WanAnimateV2-人物编辑_1975882698759737345.json、视频生成/图生视频/WanAnimate_V2_视频人物自动替换(单人)_2006252507227496450.json、视频生成/图生视频/WanAnimate_V2_视频动作迁移(单人)_2006246424253571074.json、视频生成/图生视频/自动抠图--最新Animate图片主体替换视频主体_1970425229413654530.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `DownloadAndLoadWav2VecModel`
-- `ImageFromBatch+`
-- `Int`
-- `JWInteger`
-- `LoadAudio`
+全部 7 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadLynxResampler`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `Sam2Segmentation`
 - `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddLynxEmbeds`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoExtraModelSelect`
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 4/5 个有
-- `AudioSeparation` —— 4/5 个有
-- `CR Integer To String` —— 4/5 个有
-- `CR Text` —— 4/5 个有
-- `GetNode` —— 4/5 个有
-- `ImageConcatMulti` —— 4/5 个有
-- `ImageResize+` —— 4/5 个有
-- `ImpactSwitch` —— 4/5 个有
-- `RH_LLMAPI_NODE` —— 4/5 个有
-- `SaveAudio` —— 4/5 个有
-- `SoundFlow_GetLength` —— 4/5 个有
-- `Text Concatenate` —— 4/5 个有
-- `ToInt` —— 4/5 个有
-- `Wan22PromptSelector` —— 4/5 个有
-- `easy cleanGpuUsed` —— 4/5 个有
-- `easy showAnything` —— 4/5 个有
-- `ImageResizeKJv2` —— 1/5 个有
-- `MelBandRoFormerModelLoader` —— 1/5 个有
-- `MelBandRoFormerSampler` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `VideoCombine_Adv` —— 1/5 个有
+- `DownloadAndLoadGIMMVFIModel` —— 6/7 个有
+- `GIMMVFI_interpolate` —— 6/7 个有
+- `ImageConcatMulti` —— 6/7 个有
+- `GrowMask` —— 5/7 个有
+- `ImageBlend` —— 5/7 个有
+- `PreviewImage` —— 5/7 个有
+- `WanVideoTorchCompileSettings` —— 5/7 个有
+- `DrawViTPose` —— 4/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/7 个有
+- `GrowMaskWithBlur` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `Text Multiline` —— 2/7 个有
+- `FloatConstant` —— 1/7 个有
+- `GetImageRangeFromBatch` —— 1/7 个有
+- `Primitive integer [Crystools]` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `WanVideoContextOptions` —— 1/7 个有
+- `WanVideoEncode` —— 1/7 个有
+- `WanVideoExperimentalArgs` —— 1/7 个有
+- `WanVideoSLG` —— 1/7 个有
+- `WanVideoScheduler` —— 1/7 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/7 个有
+- `WanVideoUni3C_embeds` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

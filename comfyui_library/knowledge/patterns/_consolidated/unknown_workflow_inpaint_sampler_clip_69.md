@@ -1,87 +1,77 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_69
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7855
-common_nodes: [BaiduTranslateNode, CLIPTextEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImageConcanate, ImageCrop+, ImageToMask, ImpactInt, InpaintCrop, InpaintModelConditioning, InpaintStitch, InspyrenetRembg, KSampler, LayerMask: SegmentAnythingUltra V2, LayerUtility: GetImageSize, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, MaskToImage, Parabolize, PreviewImage, ReduxAdvanced, SaveImage, SetNode, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 4
+level: moderate
+coverage: 0.8825
+common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, Fast Groups Bypasser (rgthree), FluxGuidance, InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/【精准一键换衣】 FLUX模特人物换装_1919586611879673857.json, 图片生成/文生图/一键换装FLUX重绘_1924659553831407618.json]
+members: [图片生成/图生图/局部重绘_2089827740097794050.json, 平台全量/OneReward-3合1工作流(重绘_消除_扩图)_1967261422558306306.json, 平台全量/OneReward-3合1工作流(重绘_消除_扩图)_2004482567862714370.json, 平台全量/QT104-扩图（FLUX）图片秒变大，一键轻松扩图_1946848151351517186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_69
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【精准一键换衣】 FLUX模特人物换装_1919586611879673857.json、图片生成/文生图/一键换装FLUX重绘_1924659553831407618.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/局部重绘_2089827740097794050.json、平台全量/OneReward-3合1工作流(重绘_消除_扩图)_1967261422558306306.json、平台全量/OneReward-3合1工作流(重绘_消除_扩图)_2004482567862714370.json、平台全量/QT104-扩图（FLUX）图片秒变大，一键轻松扩图_1946848151351517186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BaiduTranslateNode`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
+- `Fast Groups Bypasser (rgthree)`
 - `FluxGuidance`
-- `ImageConcanate`
-- `ImageCrop+`
-- `ImageToMask`
-- `ImpactInt`
-- `InpaintCrop`
 - `InpaintModelConditioning`
-- `InpaintStitch`
-- `InspyrenetRembg`
 - `KSampler`
-- `LayerMask: SegmentAnythingUltra V2`
-- `LayerUtility: GetImageSize`
-- `LayerUtility: ImageRemoveAlpha`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `MaskToImage`
-- `Parabolize`
-- `PreviewImage`
-- `ReduxAdvanced`
 - `SaveImage`
-- `SetNode`
-- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `GetImageSize` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `GrowMaskWithBlur` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ImagePadForOutpaint` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `ConditioningZeroOut` —— 1/4 个有
+- `Image Save` —— 1/4 个有
+- `ImageCompositeMasked` —— 1/4 个有
+- `InpaintCrop` —— 1/4 个有
+- `InpaintStitch` —— 1/4 个有
+- `LayerMask: MaskPreview` —— 1/4 个有
+- `MaskFillHoles` —— 1/4 个有
+- `PlaySound|pysssss` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 16.5 | 8 - 28 | 4 | 46% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | normal | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 16.5，观测区间 8 - 28，4 个样本，取值分散，一致性仅 46%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 normal，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（6/4 个样本）：Steps较低可能导致细节不足

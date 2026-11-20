@@ -1,72 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_99
 type: Unknown Workflow
-frequency: 16
+frequency: 18
 level: moderate
-coverage: 0.606625
-common_nodes: [AudioCrop, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.956056
+common_nodes: [LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/AI代码侠土豆-情感表达高动效-单张图生成数字人_2007331723943612417.json, 数字人/数字人/AI代码侠土豆-超自然数字人-单张图生成数字人_2006237787544100866.json, 数字人/数字人/InfiniteTalk-GGUF.自用_1961661222749978625.json, 数字人/数字人/InfiniteTalk数字人-图片单人版_1963995655213563906.json, 数字人/数字人/InfiniteTalk数字人-基础视频生成_1997693369113579522.json, 数字人/数字人/InfiniteTalk数字人（AAA）_1962351398337888258.json, 数字人/数字人/单张图生成数字人-自然版_2012138583209021442.json, 数字人/数字人/单张图生成数字人-高情绪高动态_2012139784826789890.json, 数字人/数字人/情感表达-图生成数字人_2008995730203090945.json, 数字人/数字人/西洲 InfiniteTalk数字人长视频（唱歌-对口型）_1969409119033716738.json, 数字人/数字人/语音克隆、双人版wanvideo_infinitetalk_工作流_1960735901263564801.json, 数字人/数字人/超自然数字人-图生成数字人_2009002607687241730.json, 视频生成/图生视频/InfiniteTalk数字人-基础视频生成_1975057390238306306.json, 视频生成/图生视频/infiniteTalk（音色克隆+音频生成）_1970143422839463937.json, 视频生成/文生视频/图片唱歌_2007669635780448258.json, 音频生成/音频生成/infiniteTalk（音色克隆+音频生成）_1970169527449382913.json]
+members: [视频生成/图生视频/wan2.1 +lora刀切玻璃水果_2006534001057599489.json, 视频生成/图生视频/wan2.1 And lora 刀切玻璃水果蔬菜 图生视频工作流_1935718246421028865.json, 视频生成/图生视频/wan2.1 And lora 刀切玻璃水果蔬菜 图生视频工作流_1950422709600698370.json, 视频生成/图生视频/wan2.1万相图生视拔刀特效lora_1920904820126060546.json, 视频生成/图生视频/wan2.1万相图生视拖红影特效lora_1922514213686886402.json, 视频生成/图生视频/wan2.1图生视频特效走秀燃烧起火工作流_1920925508526346241.json, 视频生成/图生视频/【360度旋转】wan2.1人物生成+万物旋转动画视频_1909162790840639489.json, 视频生成/图生视频/【视频特效】WAN2.1 人物变身天使_1914500420041961473.json, 视频生成/图生视频/双人2对打100wan2.1万相图生视视_1929451203611234306.json, 视频生成/图生视频/街舞单手倒立200确定_1928166272100352001.json, 视频生成/图生视频/街舞大风车176确认好的_1928158479809134593.json, 视频生成/图生视频/通义万相wan2.1万物旋转360度特效_1901238900759609346.json, 视频生成/图生视频/通义万相wan2.1万物生花特效_1908182289698664449.json, 视频生成/图生视频/通义万相wan2.1万物老化特效_1912458633853239298.json, 视频生成/图生视频/通义万相wan2.1图生视频万物婴儿化_1911273702397308929.json, 视频生成/图生视频/通义万相wan2.1图生视频万物放气特效_1910623040215154690.json, 视频生成/图生视频/通义万相wan2.1图生视频美女转身舞动_1910235144152674306.json, 视频生成/图生视频/通义万相wan2.1美女一字马_1909453938431504386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_99
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（数字人/数字人/AI代码侠土豆-情感表达高动效-单张图生成数字人_2007331723943612417.json、数字人/数字人/AI代码侠土豆-超自然数字人-单张图生成数字人_2006237787544100866.json、数字人/数字人/InfiniteTalk-GGUF.自用_1961661222749978625.json、数字人/数字人/InfiniteTalk数字人-图片单人版_1963995655213563906.json、数字人/数字人/InfiniteTalk数字人-基础视频生成_1997693369113579522.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/wan2.1 +lora刀切玻璃水果_2006534001057599489.json、视频生成/图生视频/wan2.1 And lora 刀切玻璃水果蔬菜 图生视频工作流_1935718246421028865.json、视频生成/图生视频/wan2.1 And lora 刀切玻璃水果蔬菜 图生视频工作流_1950422709600698370.json、视频生成/图生视频/wan2.1万相图生视拔刀特效lora_1920904820126060546.json、视频生成/图生视频/wan2.1万相图生视拖红影特效lora_1922514213686886402.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `AudioCrop`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
+全部 18 个 workflow 都包含：
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 14/16 个有
-- `SetNode` —— 14/16 个有
-- `WanVideoTorchCompileSettings` —— 13/16 个有
-- `WanVideoTextEncodeCached` —— 12/16 个有
-- `Audio Duration (mtb)` —— 10/16 个有
-- `SimpleMath+` —— 10/16 个有
-- `AudioSeparation` —— 9/16 个有
-- `LayerUtility: PurgeVRAM V2` —— 9/16 个有
-- `Text` —— 8/16 个有
-- `QZ_ResolutionPreset` —— 7/16 个有
-- `CR Text` —— 5/16 个有
-- `GetImageSizeAndCount` —— 5/16 个有
-- `PreviewAudio` —— 5/16 个有
-- `LoadWanVideoT5TextEncoder` —— 4/16 个有
-- `WanVideoTextEncode` —— 4/16 个有
-- `INTConstant` —— 3/16 个有
-- `ImageFromBatch+` —— 3/16 个有
-- `PreviewAny` —— 3/16 个有
-- `ImpactSwitch` —— 2/16 个有
-- `IndexTTS2Run` —— 2/16 个有
-- `JWInteger` —— 2/16 个有
-- `MegaTTS3` —— 2/16 个有
-- `PrimitiveInt` —— 2/16 个有
-- `RH_Translator` —— 2/16 个有
-- `IndexTTSNode` —— 1/16 个有
+- `WanVideoTeaCache` —— 15/18 个有
+- `ImageResizeKJ` —— 14/18 个有
+- `WanVideoEnhanceAVideo` —— 14/18 个有
+- `DownloadAndLoadGIMMVFIModel` —— 12/18 个有
+- `GIMMVFI_interpolate` —— 12/18 个有
+- `CR Upscale Image` —— 5/18 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/18 个有
+- `ImpactInt` —— 3/18 个有
+- `JjkText` —— 3/18 个有
+- `UpscaleImageByUsingModel` —— 3/18 个有
+- `UpscaleModelLoader` —— 3/18 个有
+- `LayerUtility: TextBox` —— 1/18 个有
+- `VHS_LoadVideo` —— 1/18 个有
 
 ## 典型参数
 

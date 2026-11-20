@@ -1,51 +1,58 @@
 ---
 name: unknown_workflow_upscale_vae_47
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.744
-common_nodes: [Image Comparer (rgthree), ImageBlur, ImageCASharpening+, ImageResize+, LayerUtility: BooleanOperatorV2, LayerUtility: SaveImagePlus, LoadImage, MathExpression|pysssss, PrimitiveBoolean, PrimitiveInt, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, ZML_SwitchOutput, easy cleanGpuUsed, easy ifElse, easy imageScaleDownBy, easy imageSizeByLongerSide, easy imageSizeBySide]
+frequency: 4
+level: moderate
+coverage: 0.868
+common_nodes: [GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, JoinImageWithAlpha, KOOK_ImageCompression, KOOK_SaveJPGImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy cleanGpuUsed, easy clearCacheAll, easy int, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2_产品放大_2111751139820654594.json, 图片生成/图生图/seedVR2_实拍放大_2108477817993392129.json]
+members: [图片生成/图生图/图像批量放大-ZIP格式-SeedVR2.5（有用）_2011684011390799874.json, 平台全量/图像批量放大-ZIP格式-SeedVR2.5_2003401578579202050.json, 平台全量/图像批量放大ZIP上传下载-SeedVR2.5_2016381202407628801.json, 平台全量/超清放大-最高可放大至1亿像素-SeedVR2.5.15_1985578252192436226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_47
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/seedVR2_产品放大_2111751139820654594.json、图片生成/图生图/seedVR2_实拍放大_2108477817993392129.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/图像批量放大-ZIP格式-SeedVR2.5（有用）_2011684011390799874.json、平台全量/图像批量放大-ZIP格式-SeedVR2.5_2003401578579202050.json、平台全量/图像批量放大ZIP上传下载-SeedVR2.5_2016381202407628801.json、平台全量/超清放大-最高可放大至1亿像素-SeedVR2.5.15_1985578252192436226.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `GetImageSize+`
 - `Image Comparer (rgthree)`
-- `ImageBlur`
-- `ImageCASharpening+`
 - `ImageResize+`
-- `LayerUtility: BooleanOperatorV2`
-- `LayerUtility: SaveImagePlus`
-- `LoadImage`
-- `MathExpression|pysssss`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
+- `ImageScaleBy`
+- `JoinImageWithAlpha`
+- `KOOK_ImageCompression`
+- `KOOK_SaveJPGImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SimpleMath+`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
-- `ZML_SwitchOutput`
+- `TTP_Tile_image_size`
 - `easy cleanGpuUsed`
-- `easy ifElse`
-- `easy imageScaleDownBy`
-- `easy imageSizeByLongerSide`
-- `easy imageSizeBySide`
+- `easy clearCacheAll`
+- `easy int`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CompressImages` —— 3/4 个有
+- `HAIGC_SaveImagesToZip` —— 3/4 个有
+- `ImageListToBatch_` —— 3/4 个有
+- `RHUploadZip_V2` —— 3/4 个有
+- `easy imageSize` —— 3/4 个有
+- `ImageScaleToTotalPixels` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `Int` —— 1/4 个有
+- `TextBox` —— 1/4 个有
+- `easy mathInt` —— 1/4 个有
 
 ## 典型参数
 
@@ -57,4 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

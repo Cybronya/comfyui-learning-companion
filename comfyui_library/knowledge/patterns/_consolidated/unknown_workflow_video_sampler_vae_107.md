@@ -3,59 +3,56 @@ name: unknown_workflow_video_sampler_vae_107
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.4654
-common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJ, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoDiffusionForcingSampler, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoTeaCache, WanVideoVAELoader]
+coverage: 0.8826
+common_nodes: [BasicGuider, BasicScheduler, CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, HunyuanImageToVideo, KSamplerSelect, LoadImage, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, TextEncodeHunyuanVideo_ImageToVideo, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json, 视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json, 视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json, 视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json, 视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json]
+members: [图片生成/图生图/GGUF_混元I2V官方工作流_图生视频_1930253337390911489.json, 平台全量/hunyuani2v混元官方图生视频_1897664612740091905.json, 视频生成/图生视频/HunYuan Video v2 一致性修复版_1900545895807754241.json, 视频生成/图生视频/HunyuanVideo图生视频工作流_1935338474637545473.json, 视频生成/图生视频/hunyuanvideo i2v 720p_1897910255437991938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_107
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json、视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json、视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json、视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json、视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/GGUF_混元I2V官方工作流_图生视频_1930253337390911489.json、平台全量/hunyuani2v混元官方图生视频_1897664612740091905.json、视频生成/图生视频/HunYuan Video v2 一致性修复版_1900545895807754241.json、视频生成/图生视频/HunyuanVideo图生视频工作流_1935338474637545473.json、视频生成/图生视频/hunyuanvideo i2v 720p_1897910255437991938.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageResizeKJ`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `HunyuanImageToVideo`
+- `KSamplerSelect`
 - `LoadImage`
-- `SetNode`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `ModelSamplingSD3`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `TextEncodeHunyuanVideo_ImageToVideo`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoDecode`
-- `WanVideoDiffusionForcingSampler`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoTeaCache`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 4/5 个有
-- `CLIPTextEncode` —— 4/5 个有
-- `WanVideoBlockSwap` —— 4/5 个有
-- `WanVideoTextEmbedBridge` —— 4/5 个有
-- `LoadWanVideoT5TextEncoder` —— 3/5 个有
-- `WanVideoTextEncode` —— 3/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
-- `WanVideoVRAMManagement` —— 3/5 个有
-- `LoadImageFromUrl` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
+- `UNETLoader` —— 4/5 个有
+- `VAEDecode` —— 4/5 个有
+- `SaveWEBM` —— 3/5 个有
+- `ImageFromBatch` —— 2/5 个有
+- `SaveAnimatedWEBP` —— 2/5 个有
+- `ImageResizeKJ` —— 1/5 个有
+- `ImageScaleToTotalPixels` —— 1/5 个有
+- `Label (rgthree)` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `UnetLoaderGGUF` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy imageSize` —— 1/5 个有
 
 ## 典型参数
 

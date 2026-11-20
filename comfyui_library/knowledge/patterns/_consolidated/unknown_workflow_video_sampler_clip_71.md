@@ -2,73 +2,113 @@
 name: unknown_workflow_video_sampler_clip_71
 type: Unknown Workflow
 frequency: 9
-level: moderate
-coverage: 0.954222
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.678667
+common_nodes: [AudioConcat, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, FL_IntToFloat, FL_RIFE, ImageScale, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVNormalizingSampler, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveFloat, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RandomNoise, VAEDecodeTiled, VHS_SelectImages, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/文生视频/WAN2.1 Comfy-Org 文生视频官方原始工作流_1895182420566212609.json, 视频生成/文生视频/WAN2.1文生视频_1977308765202587649.json, 视频生成/文生视频/WAN2.2 人物角色模特服装百变更换衣服_1954771341195960322.json, 视频生成/文生视频/Wan2.1+t2v Lora文生视频工作流_1951460131294883841.json, 视频生成/文生视频/Wan2.1文生视频工作流_1934444729025327105.json, 视频生成/文生视频/Wan2.2 -  图生视频+文生视频 韩国美女亚洲女性模特_1952571860477259777.json, 视频生成/文生视频/Wan2.2官网14B图生视频&文生视频&5B文or图生视频_1950378020252073986.json, 视频生成/文生视频/【文生视频】Wan2.2 14B文生视频高质量加速版_1953331235240202241.json, 视频生成/文生视频/🐳wan2.2文生+图生视频 5B模型🐳_1949986413421969410.json]
+members: [视频生成/图生视频/005.LTX2.3音视融合005.LTX2.3首尾帧图生视频_2035377516814278657.json, 视频生成/图生视频/LTX2.0 4模型对比_2018295552026349570.json, 视频生成/图生视频/LTX2.3首尾帧工作流_2030224729138798593.json, 视频生成/图生视频/Ltx-2最强图生视频智能提示词无限长度版V1（脸部稳定版）_2018359643973619714.json, 视频生成/图生视频/Ltx2自动提示词图生视频V1（脸部稳定SFW版）_2018362245423570945.json, 视频生成/图生视频/Ltx2自动提示词图生视频V1（脸部稳定SFW版）_2054445027421638658.json, 视频生成/图生视频/（自用）LTXV-2 AIO V41图生视频_2016472662767312898.json, 视频生成/图生视频/（自用）LTXV-2 AIO V41首尾帧_2016460941017227265.json, 视频生成/图生视频/（自用）Ltx-2自动提示词版图生视频V1_2018361169383264257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_71
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/WAN2.1 Comfy-Org 文生视频官方原始工作流_1895182420566212609.json、视频生成/文生视频/WAN2.1文生视频_1977308765202587649.json、视频生成/文生视频/WAN2.2 人物角色模特服装百变更换衣服_1954771341195960322.json、视频生成/文生视频/Wan2.1+t2v Lora文生视频工作流_1951460131294883841.json、视频生成/文生视频/Wan2.1文生视频工作流_1934444729025327105.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/005.LTX2.3音视融合005.LTX2.3首尾帧图生视频_2035377516814278657.json、视频生成/图生视频/LTX2.0 4模型对比_2018295552026349570.json、视频生成/图生视频/LTX2.3首尾帧工作流_2030224729138798593.json、视频生成/图生视频/Ltx-2最强图生视频智能提示词无限长度版V1（脸部稳定版）_2018359643973619714.json、视频生成/图生视频/Ltx2自动提示词图生视频V1（脸部稳定SFW版）_2018362245423570945.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `CLIPLoader`
+- `AudioConcat`
 - `CLIPTextEncode`
-- `KSampler`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `FL_IntToFloat`
+- `FL_RIFE`
+- `ImageScale`
+- `KSamplerSelect`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVNormalizingSampler`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
+- `ManualSigmas`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `VAEDecodeTiled`
+- `VHS_SelectImages`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyHunyuanLatentVideo` —— 8/9 个有
-- `ModelSamplingSD3` —— 6/9 个有
-- `LoadImage` —— 5/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
-- `LoraLoader` —— 4/9 个有
-- `WanImageToVideo` —— 4/9 个有
-- `Wan22ImageToVideoLatent` —— 2/9 个有
-- `CR Text` —— 1/9 个有
-- `ImpactInt` —— 1/9 个有
-- `KSamplerAdvanced` —— 1/9 个有
-- `SimpleMath+` —— 1/9 个有
+- `CFGGuider` —— 7/9 个有
+- `ConditioningZeroOut` —— 7/9 个有
+- `DualCLIPLoader` —— 7/9 个有
+- `VAELoaderKJ` —— 7/9 个有
+- `Float to Int` —— 6/9 个有
+- `CR Prompt Text` —— 5/9 个有
+- `DuckHideNode` —— 5/9 个有
+- `JWInteger` —— 5/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/9 个有
+- `RH_LLMAPI_Pro_Node` —— 5/9 个有
+- `SaveImage` —— 5/9 个有
+- `TT_img_enc` —— 5/9 个有
+- `TT_img_enc_v2` —— 5/9 个有
+- `easy anythingIndexSwitch` —— 5/9 个有
+- `UNETLoader` —— 4/9 个有
+- `LTXAVTextEncoderLoader` —— 3/9 个有
+- `LTXVAudioVAELoader` —— 3/9 个有
+- `LoraLoaderModelOnly` —— 3/9 个有
+- `RH_Utils` —— 3/9 个有
+- `easy showAnything` —— 3/9 个有
+- `BasicGuider` —— 2/9 个有
+- `LTX2AttentionTunerPatch` —— 2/9 个有
+- `MemoryCleaner` —— 2/9 个有
+- `AddLabel` —— 1/9 个有
+- `Any To Any` —— 1/9 个有
+- `Any To String (mtb)` —— 1/9 个有
+- `ImageConcatMulti` —— 1/9 个有
+- `KSampler` —— 1/9 个有
+- `LayerUtility: PurgeVRAM` —— 1/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `PathchSageAttentionKJ` —— 1/9 个有
+- `Qwen3_VQA` —— 1/9 个有
+- `ReplaceText` —— 1/9 个有
+- `VHS_SelectFilename` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 30 | 9 | 41% |
-| Prompt 约束强度(CFG) | 5 | 1 - 6 | 9 | 46% |
-| 采样算法 | uni_pc | - | 9 | 67% |
-| 调度器 | simple | - | 9 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 93 | 93 - 93 | 9 | 100% |
+| 高度 | 20 | 20 - 20 | 9 | 100% |
+| 采样步数 | 8 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | lcm | - | 1 | 100% |
+| 调度器 | sgm_uniform | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 1/9 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 30，9 个样本，取值分散，一致性仅 41%
-- Prompt 约束强度(CFG) 中位数 5，观测区间 1 - 6，9 个样本，取值分散，一致性仅 46%
-- 采样算法 最常用 uni_pc，9 个样本，一致性 67%
-- 调度器 最常用 simple，9 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（6/9 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 93，观测区间 93 - 93，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 20，观测区间 20 - 20，9 个样本，取值集中（一致性 100%）

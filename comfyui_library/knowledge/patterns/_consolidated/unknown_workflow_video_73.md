@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_video_73
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.984
-common_nodes: [CustomAddLabel, GetVideoComponents, LoadAudio, LoadImage, LoadVideo, SaveVideo, VHS_VideoCombine]
+coverage: 0.889
+common_nodes: [SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0 Fast 全能参考视频-不用排队（真人支持）_2048450015756029954.json, 视频生成/图生视频/Seedance2.0 全能参考视频-不用排队（真人支持）_2048445714136567810.json, 视频生成/图生视频/地表最强超能视频2.0-视频编辑模式-不用排队（真人支持）_2037865481549389825.json]
+members: [平台全量/SeedVR2-视频超分高清放大-通用版_2064519717267791874.json, 平台全量/视频高清放大-通用版_2020401091569000450.json, 平台全量/视频高清放大-通用版_2050888222401679362.json, 平台全量/视频高清放大_2057112467372863489.json, 视频生成/图生视频/视频高清放大_2083505713627877378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_73
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast 全能参考视频-不用排队（真人支持）_2048450015756029954.json、视频生成/图生视频/Seedance2.0 全能参考视频-不用排队（真人支持）_2048445714136567810.json、视频生成/图生视频/地表最强超能视频2.0-视频编辑模式-不用排队（真人支持）_2037865481549389825.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/SeedVR2-视频超分高清放大-通用版_2064519717267791874.json、平台全量/视频高清放大-通用版_2020401091569000450.json、平台全量/视频高清放大-通用版_2050888222401679362.json、平台全量/视频高清放大_2057112467372863489.json、视频生成/图生视频/视频高清放大_2083505713627877378.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CustomAddLabel`
-- `GetVideoComponents`
-- `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+全部 5 个 workflow 都包含：
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 2/3 个有
-- `JjkText` —— 1/3 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/3 个有
+- `RunningHub Deepcleaner` —— 4/5 个有
+- `VHS_VideoInfoLoaded` —— 4/5 个有
+- `ImageScale` —— 1/5 个有
 
 ## 典型参数
 

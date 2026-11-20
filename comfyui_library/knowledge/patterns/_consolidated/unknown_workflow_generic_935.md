@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_935
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [ImageResize+, RH_Nano_Banana_Image2Image, SaveImage, ShellAgentPluginInputImage, ShellAgentPluginSaveImage]
+coverage: 0.84175
+common_nodes: [BreezeTTS2LoadModel, BreezeTTS2MultiSpeaker, BreezeTTS2Speaker, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [图片生成/图生图/-全能图片V1-多角色打起来自制动作MS_1962418519176515586.json, 图片生成/图生图/-全能图片V1-蜡笔小新风格转换ms自用_1961659460555096065.json, 图片生成/图生图/一键生成二次元coser老婆_1962764039917056001.json]
+members: [图片生成/文生图/BreezeTTS2_多角色对白_2116358949535576066.json, 图片生成/文生图/BreezeTTS2_多角色对白_2116370726977626113.json, 音频生成/音频生成/9月最强音色克隆（多人对话） Breeze TTS 2_2095885074150543362.json, 音频生成/音频生成/BreezeTTS2 多角色对白_2115846246844952578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_935
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/-全能图片V1-多角色打起来自制动作MS_1962418519176515586.json、图片生成/图生图/-全能图片V1-蜡笔小新风格转换ms自用_1961659460555096065.json、图片生成/图生图/一键生成二次元coser老婆_1962764039917056001.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/BreezeTTS2_多角色对白_2116358949535576066.json、图片生成/文生图/BreezeTTS2_多角色对白_2116370726977626113.json、音频生成/音频生成/9月最强音色克隆（多人对话） Breeze TTS 2_2095885074150543362.json、音频生成/音频生成/BreezeTTS2 多角色对白_2115846246844952578.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageResize+`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
-- `ShellAgentPluginInputImage`
-- `ShellAgentPluginSaveImage`
+全部 4 个 workflow 都包含：
+- `BreezeTTS2LoadModel`
+- `BreezeTTS2MultiSpeaker`
+- `BreezeTTS2Speaker`
+- `SaveAudioAdvanced`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
+- `CR Prompt Text` —— 3/4 个有
+- `PreviewAudio` —— 1/4 个有
 
 ## 典型参数
 

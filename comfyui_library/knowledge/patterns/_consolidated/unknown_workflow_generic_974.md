@@ -1,40 +1,36 @@
 ---
 name: unknown_workflow_generic_974
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.878667
-common_nodes: [LoadImage, QwenImageModelLoader, RH_Captioner, RH_QwenImageGenerator, SaveImage, Textbox]
+coverage: 0.7375
+common_nodes: [RH_Wan26_T2V, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen-lmage 图生图+放大_1952709588815704065.json, 图片生成/图生图/Qwen-lmage 图生图洗图｜图中文字保持_1952683016248299522.json, 图片生成/文生图/Qwen-lmage 文生图-满血版RH专供版节点_1952559689714348033.json]
+members: [平台全量/Wan 2.6 文生视频_2000750575983751170.json, 视频生成/文生视频/Wan 2.6 文生视频 15秒1080P_2000813490891784193.json, 视频生成/文生视频/Wan2.6- (文生视频10-15秒)，用嘴创作视频、TVC、电影，音画同步!_2000788643021193217.json, 视频生成/文生视频/Wan2.6：文生视频，指令即电影，解锁专业叙事新维度！_2000759216078024705.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_974
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen-lmage 图生图+放大_1952709588815704065.json、图片生成/图生图/Qwen-lmage 图生图洗图｜图中文字保持_1952683016248299522.json、图片生成/文生图/Qwen-lmage 文生图-满血版RH专供版节点_1952559689714348033.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Wan 2.6 文生视频_2000750575983751170.json、视频生成/文生视频/Wan 2.6 文生视频 15秒1080P_2000813490891784193.json、视频生成/文生视频/Wan2.6- (文生视频10-15秒)，用嘴创作视频、TVC、电影，音画同步!_2000788643021193217.json、视频生成/文生视频/Wan2.6：文生视频，指令即电影，解锁专业叙事新维度！_2000759216078024705.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `QwenImageModelLoader`
-- `RH_Captioner`
-- `RH_QwenImageGenerator`
-- `SaveImage`
-- `Textbox`
+全部 4 个 workflow 都包含：
+- `RH_Wan26_T2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `easy imageSize` —— 2/3 个有
-- `PMRF` —— 1/3 个有
+- `LoadAudio` —— 3/4 个有
+- `JjkText` —— 2/4 个有
+- `PreviewAny` —— 2/4 个有
+- `RHHiddenNodes` —— 1/4 个有
 
 ## 典型参数
 

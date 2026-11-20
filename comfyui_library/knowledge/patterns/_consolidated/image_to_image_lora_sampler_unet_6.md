@@ -1,82 +1,75 @@
 ---
 name: image_to_image_lora_sampler_unet_6
 type: Image To Image
-frequency: 47
+frequency: 40
 level: strong
-coverage: 0.950404
-common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Text Load Line From File, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart]
+coverage: 0.847525
+common_nodes: [CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen 2511  写真姿势批量修改_2070396570624946177.json, 图片生成/图生图/Qwen 2511  写真姿势批量修改_2080564347285368833.json, 图片生成/图生图/Qwen 影视人物  多视角制作 人物一致性_2001226401288159233.json, 图片生成/图生图/Qwen 影视人物 多视角 制作_2036362632084590594.json, 图片生成/图生图/Qwen-Image-Edit 2509 一图转多视角保持角色一致性（提示词版）_1997336820528660481.json, 图片生成/图生图/Qwen-Image-Edit 2509 人物 多视角_1993128593454809089.json, 图片生成/图生图/Qwen-Image-Edit 2509升级人物多视角，超强一致性，多维呈现！_1988082183938183170.json, 图片生成/图生图/Qwen-Image-Edit 2509：人物多视图一致性工作流_2005126484937375745.json, 图片生成/图生图/Qwen-Image-Edit 2509：人物多视图工作流_1993251423077023746.json, 图片生成/图生图/Qwen-Image-Edit 2509：人物多视角【无私奉献】_1981917707090173953.json, 图片生成/图生图/Qwen-Image-Edit 2509：物品多视角_1987879684740419585.json, 图片生成/图生图/Qwen-Image-Edit+2509：人物多视角工作流_1989908127179001857.json, 图片生成/图生图/Qwen-Image-Edit：人物多视角_2054837168547344386.json, 图片生成/图生图/Qwen-人物多视角_2029472408268181505.json, 图片生成/图生图/Qwen2511 写真姿势批量修改_2069224062001442817.json, 图片生成/图生图/Qwen2511 写真姿势批量修改_2069296597095247874.json, 图片生成/图生图/Qwen2511 写真姿势批量修改_2078335776949100546.json, 图片生成/图生图/Qwen_Edit_2509_多镜头转换_Multiple_For循环_2008108017916583938.json, 图片生成/图生图/Qwen一键生成影视人物多视角出图工作流_2049398896350208001.json, 图片生成/图生图/Qwen一键生成影视人物多视角制作工作流_2049448186531553282.json, 图片生成/图生图/Qwen一键生成影视人物多视角制作工作流_2068693616868024321.json, 图片生成/图生图/Qwen一键生成影视人物多视角制作工作流_2104887968942084098.json, 图片生成/图生图/Qwen一键生成影视人物多视角制作工作流_2104926041599987713.json, 图片生成/图生图/Qwen一键生成影视人物多视角制作工作流_2112488557679046657.json, 图片生成/图生图/Qwen一键生成影视人物多视角制作工作流_2112520074845310977.json, 图片生成/图生图/Qwen人物多角度多姿态生成_2080181611123011585.json, 图片生成/图生图/Qwen人物多角度视图生成_2008005788186447874.json, 图片生成/图生图/Qwen人物多角度视图生成_2038523281048866817.json, 图片生成/图生图/Qwen人物多角度视图生成_2062044352884592641.json, 图片生成/图生图/Qwen人物多角度视图生成_2065319121071460354.json, 图片生成/图生图/Qwen人物多角度视图生成_2070393850753011713.json, 图片生成/图生图/Qwen人物多角度视图生成_2072156257296932866.json, 图片生成/图生图/Qwen人物多角度视图生成_2075476350351515648.json, 图片生成/图生图/Qwen人物多角度视图生成_2095759426920738817.json, 图片生成/图生图/Qwen升级人物多视角_1995445475761381378.json, 图片生成/图生图/Qwen影视人物多视角制作_2051522992341037058.json, 图片生成/图生图/Qwen影视人物多视角制作【傲雪AIGC 】_1997265706494410753.json, 图片生成/图生图/Qwen影视人物多视角制作【傲雪AIGC，翻版 】_2044801167221334017.json, 图片生成/图生图/Qwen短剧人物多视角制作_2009506218393477122.json, 图片生成/图生图/人物多视角 2D 3D 真人 （人物一致性 ）_1996124158906023937.json, 图片生成/图生图/全新升级！Qwen-Image-Edit 2509：人物多视角，超强一致性，一眼定型，多维呈现！_1981716403592019969.json, 图片生成/图生图/多视角人像【写真】【角色lora训练】_1995497878728671233.json, 图片生成/图生图/多视角人物一致性_2002271424125517825.json, 图片生成/图生图/多视角图片生成 硕阳_2018218061307842562.json, 图片生成/图生图/席勒sama：人物十二视图高清导出工作流（集...解开它...）_2011640759652458497.json, 图片生成/文生图/Qwen-Image-Edit 2509：人物多视图一致性工作流_2051630703695155201.json, 图片生成/文生图/多重视角的人物_2010964416438738945.json]
+members: [图片生成/文生图/视频生成-生成分镜图片_2012090015605596162.json, 图片生成/文生图/视频生成-生成分镜图片多角色_2098296059050160129.json, 图片生成/文生图/风格一致性分镜镜头生成_1989169833675730945.json, 平台全量/2.0版本分镜生成出图一致性电影3分镜+Qwen+Next+Scene+影视剧情分镜制作_2029055915122495489.json, 平台全量/AI-动漫短剧分镜_1998307952870195202.json, 平台全量/AI-影视多角度分镜_1998557534300569602.json, 平台全量/AI动漫短剧分镜图9张单图自动工作流（qwen-2509版）_2020356256870965250.json, 平台全量/AI漫剧_短剧分镜头制作_角色一致性 Qwen+Next+Scene_2019339013345255426.json, 平台全量/Qwen Next Scene 分镜生成_1981697938416115713.json, 平台全量/Qwen Next Scene 影视剧情分镜制作_1980649289674346497.json, 平台全量/Qwen Next Scene 自定义分镜生成_1982599949533749249.json, 平台全量/Qwen ——影视剧情分镜制作（ai短剧）_2087869049920385026.json, 平台全量/Qwen+Next-Scene影视剧情分镜制作_1981348516465393666.json, 平台全量/Qwen2511 Next_Scene 一致性电影影视剧情分镜制作_2047109066580828162.json, 平台全量/SamsaLa AIGC视觉-镜头风格一致性自动分镜_1984580339404259329.json, 平台全量/【Q 版动漫风格微电影】镜头风格一致性电影3分镜 IP形象 Qwen+Next+Scene+影视剧情_1993960682848796673.json, 平台全量/【分镜生成出图】【模特姿势随机变化】超强一致性 全身照 白底图效果最佳   影视剧情分镜制作_1986350841089191937.json, 平台全量/【分镜生成出图】人物一致多角度+Qwen+Next+Scene 分镜出图 一致性 自行切换角度_1993910753556185089.json, 平台全量/【分镜生成出图】镜头风格一致性电影3分镜+Qwen+Next+Scene+影视剧情分镜制作_1981520931627638785.json, 平台全量/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_1979336046691389441.json, 平台全量/产品广告影视短剧一致性分镜图生成   QwenNextScene_2014574132511383554.json, 平台全量/分镜头_角色一致性 Qwen+Next+Scene_2021149867850080257.json, 平台全量/分镜生成出图一致性电影3分镜+Qwen+Next+Scene 影视剧情分镜制作_1996871113718341633.json, 平台全量/分镜生成出图一致性电影3分镜+Qwen+Next+Scene 影视剧情分镜制作_2067319711926411265.json, 平台全量/剧情分镜头_1866798354184503298.json, 平台全量/工作流进阶功能篇6-一键分镜，快速出图_2036424231403130881.json, 平台全量/微电影镜头风格一致性影视剧情分镜制作_2099868858550149121.json, 平台全量/武侠分镜 古装剧照  人物写真 影视剧情分镜制作 电影3分镜+多景别镜头+人物一致性-Qwen-Ed_2010920937318785026.json, 平台全量/美女模特分镜出图 一致性多角度 不同视角 电影3分镜+Qwen+Next+Scene 影视剧情分镜制_2004359912450916354.json, 平台全量/美女美妆产品广告【分镜生成出图】一致性电影3分镜+Qwen+Next+Scene 影视剧情分镜制作_1991312445449023489.json, 视频生成/图生视频/Qwen Next Scene 影视剧情分镜制作一键生成多镜画面人物一致性_2051871461111025665.json, 视频生成/图生视频/Qwen Next Scene 影视剧情分镜制作一键生成多镜画面人物一致性_2052721515422072834.json, 视频生成/图生视频/Qwen+Next+Scene+影视剧情分镜制作_1984134656448724993.json, 视频生成/图生视频/【微电影】镜头风格一致性电影3分镜 Qwen+Next+Scene+影视剧情分镜制作_1983730005693898754.json, 视频生成/图生视频/【微电影】镜头风格一致性电影多分镜 Qwen+Next+Scene+影视剧情分镜制作_1981923431421755394.json, 视频生成/图生视频/影视剧情电影分镜制作Qwen Next Scene 1.0_1981410642760482818.json, 视频生成/图生视频/镜头风格一致性电影分镜+Qwen+Next+Scene+影视剧情分镜生成_1989906208968593410.json, 视频生成/文生视频/Qwen+Next+Scene+影视剧情分镜制作_1983740086821036034.json, 视频生成/文生视频/ai动漫短剧分镜创作llm大模型自动优化ai模型编写提示词分镜九分镜9分镜直出_2011736811663532033.json, 视频生成/文生视频/ai动漫短剧分镜创作llm大模型自动优化ai模型编写提示词分镜九分镜9分镜直出_2012464089221570562.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_6
 
-> 由 `engine/knowledge_consolidation` 从 47 个 workflow 归纳得出（图片生成/图生图/Qwen 2511  写真姿势批量修改_2070396570624946177.json、图片生成/图生图/Qwen 2511  写真姿势批量修改_2080564347285368833.json、图片生成/图生图/Qwen 影视人物  多视角制作 人物一致性_2001226401288159233.json、图片生成/图生图/Qwen 影视人物 多视角 制作_2036362632084590594.json、图片生成/图生图/Qwen-Image-Edit 2509 一图转多视角保持角色一致性（提示词版）_1997336820528660481.json…）
+> 由 `engine/knowledge_consolidation` 从 40 个 workflow 归纳得出（图片生成/文生图/视频生成-生成分镜图片_2012090015605596162.json、图片生成/文生图/视频生成-生成分镜图片多角色_2098296059050160129.json、图片生成/文生图/风格一致性分镜镜头生成_1989169833675730945.json、平台全量/2.0版本分镜生成出图一致性电影3分镜+Qwen+Next+Scene+影视剧情分镜制作_2029055915122495489.json、平台全量/AI-动漫短剧分镜_1998307952870195202.json…）
 
 - **类型**：Image To Image
-- **样本数**：47
+- **样本数**：40
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 47 个 workflow 都包含：
-- `CFGNorm`
+全部 40 个 workflow 都包含：
 - `CLIPLoader`
-- `ImageScaleToTotalPixels`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `Text Load Line From File`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 44/47 个有
-- `PreviewImage` —— 42/47 个有
-- `Text Multiline` —— 42/47 个有
-- `TextEncodeQwenImageEdit` —— 41/47 个有
-- `Label (rgthree)` —— 10/47 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 5/47 个有
-- `RHHiddenNodes` —— 5/47 个有
-- `孤海注释` —— 5/47 个有
-- `Preview from image [Crystools]` —— 1/47 个有
-- `SeedVR2` —— 1/47 个有
-- `SeedVR2BlockSwap` —— 1/47 个有
-- `SeedVR2ExtraArgs` —— 1/47 个有
-- `easy cleanGpuUsed` —— 1/47 个有
+- `Int` —— 39/40 个有
+- `ProcessString` —— 38/40 个有
+- `RH_LLMAPI_NODE` —— 38/40 个有
+- `Anything Everywhere3` —— 37/40 个有
+- `ShellAgentPluginOutputText` —— 37/40 个有
+- `JjkText` —— 36/40 个有
+- `PreviewImage` —— 7/40 个有
+- `HAIGC_SaveImagesToZip` —— 1/40 个有
+- `Text Multiline` —— 1/40 个有
+- `TextBox` —— 1/40 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 47 | 72% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 47 | 100% |
-| 采样算法 | euler | - | 47 | 89% |
-| 调度器 | simple | - | 47 | 89% |
-| 重绘幅度 | 1 | 1 - 1 | 47 | 100% |
+| 采样步数 | 4 | 4 - 4 | 40 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 40 | 100% |
+| 采样算法 | sa_solver | - | 40 | 95% |
+| 调度器 | simple | - | 40 | 98% |
+| 重绘幅度 | 1 | 1 - 1 | 40 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 46/47 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 40/40 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，47 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，47 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，47 个样本，一致性 89%
-- 调度器 最常用 simple，47 个样本，一致性 89%
-- 重绘幅度 中位数 1，观测区间 1 - 1，47 个样本，取值集中（一致性 100%）
-- 高发问题（46/47 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，40 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，40 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，40 个样本，一致性 95%
+- 调度器 最常用 simple，40 个样本，一致性 98%
+- 重绘幅度 中位数 1，观测区间 1 - 1，40 个样本，取值集中（一致性 100%）
+- 高发问题（40/40 个样本）：Steps较低可能导致细节不足

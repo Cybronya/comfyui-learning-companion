@@ -1,34 +1,35 @@
 ---
 name: image_to_image_sampler_clip_unet_15
 type: Image To Image
-frequency: 13
+frequency: 16
 level: strong
-coverage: 0.822538
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.949063
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX Kontext dev 图生图工作流_1946449845256089601.json, 图片生成/图生图/FLUX krea 人像洗图真实感_1951921534116024322.json, 图片生成/图生图/FLUX.1 Kontext [dev] 基础工作流_1938329277471330305.json, 图片生成/图生图/Flux Kontext本地部署_1939329294118338561.json, 图片生成/图生图/Flux+Kontext老照片修复_1949376700114731009.json, 图片生成/图生图/Kontext 十大优质lora模型使用_1941855678447382529.json, 图片生成/图生图/Kontext+lora角度编辑器_1942022786829467649.json, 图片生成/图生图/Kontext三视图（三张大图呈现）_1953727580824326145.json, 图片生成/图生图/Kontext优化精准移除物体_1945338596477870082.json, 图片生成/图生图/kontext-dev创程式填充_1942603916720672769.json, 图片生成/图生图/kontext-dev填_1942841076824608770.json, 图片生成/图生图/kontext-dev红框标记新玩法_1942839973647159298.json, 图片生成/图生图/kontext-dev超越PS创程式填充_1942838696930381825.json]
+members: [图片生成/图生图/Flux2-klein-换脸重绘_2087958705047429121.json, 图片生成/图生图/Flux2-klein-水印移除极速版_2015410628701196290.json, 图片生成/图生图/Klein-true-V2-单图编辑+一致性lora_2047831635298619393.json, 图片生成/图生图/Klein单图编辑_2013065668022767617.json, 图片生成/图生图/f2K+Zimage-美感提升-动漫转真人_2046185008498479106.json, 图片生成/图生图/flux2-klein-9b 局部重绘物品编辑_2058474638291857409.json, 图片生成/图生图/flux2-klein-局部重绘_2087961165291937793.json, 图片生成/图生图/flux2klein9b局部重绘物品编辑_2060700965187178498.json, 图片生成/图生图/flux2klein9b局部重绘物品编辑_2062115957249761281.json, 图片生成/图生图/单图---SD-PPP2.0专用 flux2klein9b局部重绘_2070335294397837313.json, 图片生成/图生图/单图-SD-PPP2.0专用 flux2klein9b局部重绘_迁移_2075093625981194242.json, 图片生成/图生图/双图-SD-PPP2.0专用 flux2klein9b局部重绘_迁移_2070327279720423425.json, 图片生成/图生图/双图-SD-PPP2.0专用 flux2klein9b局部重绘_迁移_2075097575778250753.json, 图片生成/图生图/移除物体章单图---SD-PPP2.0专用_flux2klein9b局部重绘_2093174966786285569.json, 平台全量/flux2-klein-9b 局部重绘_2058471149645950978.json, 平台全量/移除物体章单图---SD-PPP2.0专用_flux2klein9b局部重绘_2093505295925465090.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_15
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/FLUX Kontext dev 图生图工作流_1946449845256089601.json、图片生成/图生图/FLUX krea 人像洗图真实感_1951921534116024322.json、图片生成/图生图/FLUX.1 Kontext [dev] 基础工作流_1938329277471330305.json、图片生成/图生图/Flux Kontext本地部署_1939329294118338561.json、图片生成/图生图/Flux+Kontext老照片修复_1949376700114731009.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/Flux2-klein-换脸重绘_2087958705047429121.json、图片生成/图生图/Flux2-klein-水印移除极速版_2015410628701196290.json、图片生成/图生图/Klein-true-V2-单图编辑+一致性lora_2047831635298619393.json、图片生成/图生图/Klein单图编辑_2013065668022767617.json、图片生成/图生图/f2K+Zimage-美感提升-动漫转真人_2046185008498479106.json…）
 
 - **类型**：Image To Image
-- **样本数**：13
+- **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -36,44 +37,41 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 12/13 个有
-- `PreviewImage` —— 12/13 个有
-- `ReferenceLatent` —— 12/13 个有
-- `LoraLoaderModelOnly` —— 9/13 个有
-- `CR Text` —— 8/13 个有
-- `DeepTranslatorTextNode` —— 7/13 个有
-- `ShowText|pysssss` —— 6/13 个有
-- `CR Latent Batch Size` —— 5/13 个有
-- `FastCanvas` —— 5/13 个有
-- `Image Comparer (rgthree)` —— 5/13 个有
-- `LayerMask: MaskPreview` —— 5/13 个有
-- `RH_LLMAPI_NODE` —— 5/13 个有
-- `SetNode` —— 5/13 个有
-- `ImageStitch` —— 3/13 个有
-- `easy cleanGpuUsed` —— 2/13 个有
-- `CR Prompt List` —— 1/13 个有
-- `ImageScale` —— 1/13 个有
-- `PrimitiveStringMultiline` —— 1/13 个有
-- `easy promptConcat` —— 1/13 个有
+- `Text Multiline` —— 13/16 个有
+- `Kontext Inpainting Conditioning` —— 12/16 个有
+- `Image Comparer (rgthree)` —— 9/16 个有
+- `GrowMaskWithBlur` —— 8/16 个有
+- `Int` —— 8/16 个有
+- `PreviewImage` —— 7/16 个有
+- `RMBG` —— 3/16 个有
+- `LoraLoaderModelOnly` —— 2/16 个有
+- `MaskFillHoles` —— 2/16 个有
+- `CheckpointLoaderSimple` —— 1/16 个有
+- `EmptyFlux2LatentImage` —— 1/16 个有
+- `Lora Loader Stack (rgthree)` —— 1/16 个有
+- `YC Color Match` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 10 - 30 | 13 | 64% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 92% |
-| 重绘幅度 | 1 | 0.8 - 1 | 13 | 95% |
+| 采样步数 | 4 | 4 - 10 | 16 | 68% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
+| 采样算法 | euler | - | 16 | 94% |
+| 调度器 | simple | - | 16 | 94% |
+| 重绘幅度 | 1 | 0.6 - 1 | 16 | 90% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 17/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 10 - 30，13 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 92%
-- 重绘幅度 中位数 1，观测区间 0.8 - 1，13 个样本，取值集中（一致性 95%）
+- 采样步数 中位数 4，观测区间 4 - 10，16 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，16 个样本，一致性 94%
+- 调度器 最常用 simple，16 个样本，一致性 94%
+- 重绘幅度 中位数 1，观测区间 0.6 - 1，16 个样本，取值集中（一致性 90%）
+- 高发问题（17/16 个样本）：Steps较低可能导致细节不足

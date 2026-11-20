@@ -1,95 +1,114 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_61
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.810667
-common_nodes: [CLIPLoader, ConditioningZeroOut, DapaoImageCompressionNode, GetImageSize+, ImageResize+, ImageScaleBy, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, UpscaleModelLoader, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.7165
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPTextEncodeFlux, ComfyUI_Image_Round__ImageRound, Context (rgthree), DisableNoise, DualCLIPLoader, FluxGuidance, GetNode, Image Comparer (rgthree), ImageColorMatch+, ImageListToBatch+, ImageScaleBy, ImageSmartSharpen+, ImageUpscaleWithModel, ImitationHueNode, InjectLatentNoise+, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetNode, ShowText|pysssss, SplitSigmasDenoise, StaticNumberFloat, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen2511动漫卡通人物转真人 接入SD-PPP实现 动漫卡通人物转真人_2073594967582396418.json, 图片生成/图生图/🐰Qwen2511 二次元转真实+4K超清放大🐰_2011730884642213889.json, 图片生成/图生图/💥千问2511最强二次元转真人💥_2009220179007381505.json]
+members: [图片生成/图生图/一键洗图_1898892984958537729.json, 图片生成/图生图/一键洗图_1930496325371203585.json, 图片生成/图生图/一键洗图_去水印版_1923753318063984641.json, 图片生成/图生图/一键洗图_去水印版_1925677447029673986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_61
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen2511动漫卡通人物转真人 接入SD-PPP实现 动漫卡通人物转真人_2073594967582396418.json、图片生成/图生图/🐰Qwen2511 二次元转真实+4K超清放大🐰_2011730884642213889.json、图片生成/图生图/💥千问2511最强二次元转真人💥_2009220179007381505.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键洗图_1898892984958537729.json、图片生成/图生图/一键洗图_1930496325371203585.json、图片生成/图生图/一键洗图_去水印版_1923753318063984641.json、图片生成/图生图/一键洗图_去水印版_1925677447029673986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `DapaoImageCompressionNode`
-- `GetImageSize+`
-- `ImageResize+`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CLIPTextEncodeFlux`
+- `ComfyUI_Image_Round__ImageRound`
+- `Context (rgthree)`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageColorMatch+`
+- `ImageListToBatch+`
 - `ImageScaleBy`
+- `ImageSmartSharpen+`
 - `ImageUpscaleWithModel`
-- `KSampler`
+- `ImitationHueNode`
+- `InjectLatentNoise+`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `QwenEditConfigPreparer`
+- `LoraLoader`
+- `ModelSamplingFlux`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
+- `Seed (rgthree)`
+- `SetNode`
+- `ShowText|pysssss`
+- `SplitSigmasDenoise`
+- `StaticNumberFloat`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `UpscaleModelLoader`
+- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncode`
 - `VAELoader`
+- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `CropWithPadInfo` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `LayerUtility: ImageReel` —— 2/3 个有
-- `LayerUtility: ImageReelComposit` —— 2/3 个有
-- `Note Plus (mtb)` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `QwenEditOutputExtractor` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `VAEDecodeTiled` —— 2/3 个有
-- `CFGNorm` —— 1/3 个有
-- `DapaoSmartMemoryOptimizerNode` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `PlaySound|pysssss` —— 1/3 个有
-- `Seed (rgthree)` —— 1/3 个有
-- `VAEDecode` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy promptConcat` —— 1/3 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `Convert Masks to Images` —— 2/4 个有
+- `Florence2ModelLoader` —— 2/4 个有
+- `Florence2Run` —— 2/4 个有
+- `ICEFConditioning` —— 2/4 个有
+- `Image To Mask` —— 2/4 个有
+- `ImageCrop` —— 2/4 个有
+- `InContextEditInstruction` —— 2/4 个有
+- `JWMaskResize` —— 2/4 个有
+- `JoinImages` —— 2/4 个有
+- `KSamplerAdvanced` —— 2/4 个有
+- `LayerUtility: ImageAutoCrop V3` —— 2/4 个有
+- `LayerUtility: JoyCaptionBeta1` —— 2/4 个有
+- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 2/4 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `Mask Invert` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | beta57 | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 0.51 | 0.51 - 0.51 | 4 | 100% |
+| LoRA 文本强度 | 0.51 | 0.51 - 0.51 | 4 | 100% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 28 | - | 2 | 100% |
+| 采样算法 | 1 | - | 2 | 100% |
+| 调度器 | euler | - | 2 | 100% |
+| 重绘幅度 | simple | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 2/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 beta57，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
-- 高发问题（2/3 个样本）：发现KSampler但没有VAEDecode
+- LoRA 模型强度 中位数 0.51，观测区间 0.51 - 0.51，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.51，观测区间 0.51 - 0.51，4 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 28，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，2 个样本，一致性 100%
+- 重绘幅度 最常用 simple，2 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 28，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

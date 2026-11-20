@@ -1,44 +1,35 @@
 ---
 name: unknown_workflow_video_55
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.545667
-common_nodes: [ImageScaleToTotalPixels, Int, PreviewImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource]
+coverage: 1
+common_nodes: [VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/万物视频高清放大SeedVR2视频变高清特强级_1951805393699852289.json, 视频生成/图生视频/SeedVR2视频高清放大_2007103726170939394.json, 视频生成/文生视频/视频高清放大合集(RTX+SeedVR2)_2100222072508211201.json]
+members: [平台全量/V6 视频去水印 10s内无敌手 自动识别横竖屏_1974458334017400833.json, 平台全量/全能视频S水印专用_1979166705802973186.json, 平台全量/卡点效果+缩放_2013903717162029057.json, 平台全量/卡点效果+闪白_2013892360182173698.json, 平台全量/卡点效果+闪黑_2013903699902472194.json, 视频生成/文生视频/全能视频S去水印（更优）_1985261856992411650.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_55
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/万物视频高清放大SeedVR2视频变高清特强级_1951805393699852289.json、视频生成/图生视频/SeedVR2视频高清放大_2007103726170939394.json、视频生成/文生视频/视频高清放大合集(RTX+SeedVR2)_2100222072508211201.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/V6 视频去水印 10s内无敌手 自动识别横竖屏_1974458334017400833.json、平台全量/全能视频S水印专用_1979166705802973186.json、平台全量/卡点效果+缩放_2013903717162029057.json、平台全量/卡点效果+闪白_2013892360182173698.json、平台全量/卡点效果+闪黑_2013903699902472194.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
-- `Int`
-- `PreviewImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
+全部 6 个 workflow 都包含：
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `RTXVideoSuperResolution` —— 1/3 个有
-- `easy float` —— 1/3 个有
+- `VHS_VideoInfo` —— 4/6 个有
+- `HAIGC_VideoBeat` —— 3/6 个有
+- `RHHiddenNodes` —— 3/6 个有
 
 ## 典型参数
 

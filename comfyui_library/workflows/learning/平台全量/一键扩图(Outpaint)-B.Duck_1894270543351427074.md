@@ -1,0 +1,290 @@
+---
+key: 平台全量/一键扩图(Outpaint)-B.Duck_1894270543351427074.json
+name: 一键扩图(Outpaint)-B.Duck_1894270543351427074
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/一键扩图(Outpaint)-B.Duck_1894270543351427074.json
+hash: 1981862f4d5a5a85
+coverage: 0.640167
+learned_at: 2026-11-14 01:27:59
+nodes: [CLIPTextEncode, MaskToImage, CLIPTextEncode, Reroute, Reroute, CM_NumberBinaryOperation, CM_IntToFloat, JWIntegerToFloat, JWFloatMul, CM_IntToFloat, JWFloatAdd, CR Float To Integer, CM_IntToFloat, easy float, SetLatentNoiseMask, CM_NumberToInt, easy float, JWFloatAdd, CR Float To Integer, Display Int (rgthree), JWFloatAdd, JWFloatMul, JWFloatAdd, Display Int (rgthree), JWFloatAdd, CR Float To Integer, Display Int (rgthree), JWIntegerToFloat, PreviewImage, JWFloatMul, Anything Everywhere, CLIPTextEncode, Anything Everywhere, KSampler, CM_NumberToInt, GetNode, GetNode, CM_IntToNumber, CM_NumberBinaryOperation, SetLatentNoiseMask, VAEEncodeForInpaint, GetNode, easy int, easy int, SetNode, SetNode, KSampler, CM_IntToNumber, CM_IntToNumber, CM_NumberBinaryOperation, SetLatentNoiseMask, Image Crop Location, Reroute, CM_NumberBinaryOperation, CM_NumberToInt, CM_NumberBinaryOperation, CM_NumberToInt, JWIntegerToFloat, JWFloatMul, easy float, JWFloatAdd, CM_IntToFloat, CR Float To Integer, Display Int (rgthree), JWFloatMul, CM_IntToFloat, JWFloatAdd, CR Float To Integer, Display Int (rgthree), JWFloatAdd, JWFloatAdd, GetNode, CM_IntToNumber, CM_IntToNumber, GetNode, CM_IntToFloat, JWIntegerToFloat, ImagePadForOutpaint, GetNode, GetNode, Image Crop Location, CM_NumberToInt, GetNode, CM_IntToNumber, GetNode, GetNode, CLIPTextEncode, VAEEncodeForInpaint, GetNode, PreviewImage, ImagePadForOutpaint, GetNode, SolidMask, SolidMask, CM_NumberBinaryOperation, GetNode, SetNode, GetNode, CM_IntBinaryOperation, easy int, Note, Note, Note, easy int, SetNode, GetNode, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, ShowText|pysssss, Text to Conditioning, Text to Conditioning, Text to Conditioning, Text to Conditioning, CLIPTextEncode, EmptyLatentImage, Reroute, JWIntegerToFloat, Reroute, Reroute, Reroute, Mask Invert, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, KSampler, KSampler, Reroute, Note, Note, Note, Note, Note, GetNode, GetNode, GetNode, CM_IntBinaryOperation, easy int, CM_IntBinaryOperation, Anything Everywhere, Mask Gaussian Region, MaskComposite, Mask Smooth Region, Text to Conditioning, Text Concatenate, Text Concatenate, Text Concatenate, Text Concatenate, Text Concatenate, CR Prompt Text, VAEEncodeForInpaint, PreviewImage, CM_NumberToInt, ImagePadForOutpaint, PreviewImage, ImagePadForOutpaint, Reroute, Reroute, GetNode, SetLatentNoiseMask, PreviewImage, KSampler, VAEDecode, PreviewImage, PreviewImage, PreviewImage, VAEDecode, GetNode, PreviewImage, ImagePadForOutpaint, VAEDecode, PreviewImage, PreviewImage, ImagePadForOutpaint, VAEDecode, GetNode, Reroute, GetNode, CM_IntToFloat, CR Float To Integer, GetNode, CM_IntToNumber, CM_IntToNumber, CM_NumberBinaryOperation, CM_NumberToInt, GetNode, Reroute, CM_NumberBinaryOperation, CM_NumberToInt, VAEEncodeForInpaint, PreviewImage, Image Crop Location, PreviewImage, Reroute, Image Crop Location, PreviewImage, ImagePadForOutpaint, PreviewImage, CM_IntToFloat, JWFloatMul, JWFloatAdd, JWIntegerToFloat, PreviewImage, VAEDecode, PreviewImage, ImagePadForOutpaint, PreviewImage, PreviewImage, PreviewImage, Image Paste Crop by Location, Reroute, Display Int (rgthree), Image Paste Crop by Location, ImagePadForOutpaint, Reroute, ImagePadForOutpaint, Note, Note, Note, Note, Note, CheckpointLoader|pysssss, LoraLoader|pysssss, PreviewImage, Image Paste Crop by Location, SaveImage, ShowText|pysssss, CR Prompt Text, PreviewImage, Seed Generator, Seed Generator, Seed Generator, Seed Generator, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, Seed Generator]
+patterns: [text_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 8, "checkpoint": "objectiveReality_v20.safetensors", "denoise": 1, "height": 760, "lora_name": "ass_support_object_v0.2.safetensors", "sampler_name": "dpmpp_3m_sde_gpu", "scheduler": "exponential", "seed": 991356562567494, "steps": 35, "strength_clip": 0.85, "strength_model": 0.85, "width": 1024}
+---
+
+# 平台全量/一键扩图(Outpaint)-B.Duck_1894270543351427074.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/一键扩图(Outpaint)-B.Duck_1894270543351427074.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（239 个）：
+- `CLIPTextEncode` ★核心
+- `MaskToImage`
+- `CLIPTextEncode` ★核心
+- `Reroute`
+- `Reroute`
+- `CM_NumberBinaryOperation`
+- `CM_IntToFloat`
+- `JWIntegerToFloat`
+- `JWFloatMul`
+- `CM_IntToFloat`
+- `JWFloatAdd`
+- `CR Float To Integer`
+- `CM_IntToFloat`
+- `easy float`
+- `SetLatentNoiseMask`
+- `CM_NumberToInt`
+- `easy float`
+- `JWFloatAdd`
+- `CR Float To Integer`
+- `Display Int (rgthree)`
+- `JWFloatAdd`
+- `JWFloatMul`
+- `JWFloatAdd`
+- `Display Int (rgthree)`
+- `JWFloatAdd`
+- `CR Float To Integer`
+- `Display Int (rgthree)`
+- `JWIntegerToFloat`
+- `PreviewImage`
+- `JWFloatMul`
+- `Anything Everywhere`
+- `CLIPTextEncode` ★核心
+- `Anything Everywhere`
+- `KSampler` ★核心
+- `CM_NumberToInt`
+- `GetNode`
+- `GetNode`
+- `CM_IntToNumber`
+- `CM_NumberBinaryOperation`
+- `SetLatentNoiseMask`
+- `VAEEncodeForInpaint` ★核心
+- `GetNode`
+- `easy int`
+- `easy int`
+- `SetNode`
+- `SetNode`
+- `KSampler` ★核心
+- `CM_IntToNumber`
+- `CM_IntToNumber`
+- `CM_NumberBinaryOperation`
+- `SetLatentNoiseMask`
+- `Image Crop Location`
+- `Reroute`
+- `CM_NumberBinaryOperation`
+- `CM_NumberToInt`
+- `CM_NumberBinaryOperation`
+- `CM_NumberToInt`
+- `JWIntegerToFloat`
+- `JWFloatMul`
+- `easy float`
+- `JWFloatAdd`
+- `CM_IntToFloat`
+- `CR Float To Integer`
+- `Display Int (rgthree)`
+- `JWFloatMul`
+- `CM_IntToFloat`
+- `JWFloatAdd`
+- `CR Float To Integer`
+- `Display Int (rgthree)`
+- `JWFloatAdd`
+- `JWFloatAdd`
+- `GetNode`
+- `CM_IntToNumber`
+- `CM_IntToNumber`
+- `GetNode`
+- `CM_IntToFloat`
+- `JWIntegerToFloat`
+- `ImagePadForOutpaint`
+- `GetNode`
+- `GetNode`
+- `Image Crop Location`
+- `CM_NumberToInt`
+- `GetNode`
+- `CM_IntToNumber`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `VAEEncodeForInpaint` ★核心
+- `GetNode`
+- `PreviewImage`
+- `ImagePadForOutpaint`
+- `GetNode`
+- `SolidMask`
+- `SolidMask`
+- `CM_NumberBinaryOperation`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `CM_IntBinaryOperation`
+- `easy int`
+- `Note`
+- `Note`
+- `Note`
+- `easy int`
+- `SetNode`
+- `GetNode`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `ShowText|pysssss`
+- `Text to Conditioning`
+- `Text to Conditioning`
+- `Text to Conditioning`
+- `Text to Conditioning`
+- `CLIPTextEncode` ★核心
+- `EmptyLatentImage` ★核心
+- `Reroute`
+- `JWIntegerToFloat`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Mask Invert`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `Reroute`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CM_IntBinaryOperation`
+- `easy int`
+- `CM_IntBinaryOperation`
+- `Anything Everywhere`
+- `Mask Gaussian Region`
+- `MaskComposite`
+- `Mask Smooth Region`
+- `Text to Conditioning`
+- `Text Concatenate`
+- `Text Concatenate`
+- `Text Concatenate`
+- `Text Concatenate`
+- `Text Concatenate`
+- `CR Prompt Text`
+- `VAEEncodeForInpaint` ★核心
+- `PreviewImage`
+- `CM_NumberToInt`
+- `ImagePadForOutpaint`
+- `PreviewImage`
+- `ImagePadForOutpaint`
+- `Reroute`
+- `Reroute`
+- `GetNode`
+- `SetLatentNoiseMask`
+- `PreviewImage`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `GetNode`
+- `PreviewImage`
+- `ImagePadForOutpaint`
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `PreviewImage`
+- `ImagePadForOutpaint`
+- `VAEDecode` ★核心
+- `GetNode`
+- `Reroute`
+- `GetNode`
+- `CM_IntToFloat`
+- `CR Float To Integer`
+- `GetNode`
+- `CM_IntToNumber`
+- `CM_IntToNumber`
+- `CM_NumberBinaryOperation`
+- `CM_NumberToInt`
+- `GetNode`
+- `Reroute`
+- `CM_NumberBinaryOperation`
+- `CM_NumberToInt`
+- `VAEEncodeForInpaint` ★核心
+- `PreviewImage`
+- `Image Crop Location`
+- `PreviewImage`
+- `Reroute`
+- `Image Crop Location`
+- `PreviewImage`
+- `ImagePadForOutpaint`
+- `PreviewImage`
+- `CM_IntToFloat`
+- `JWFloatMul`
+- `JWFloatAdd`
+- `JWIntegerToFloat`
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `ImagePadForOutpaint`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `Image Paste Crop by Location`
+- `Reroute`
+- `Display Int (rgthree)`
+- `Image Paste Crop by Location`
+- `ImagePadForOutpaint`
+- `Reroute`
+- `ImagePadForOutpaint`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `CheckpointLoader|pysssss` ★核心
+- `LoraLoader|pysssss` ★核心
+- `PreviewImage`
+- `Image Paste Crop by Location`
+- `SaveImage`
+- `ShowText|pysssss`
+- `CR Prompt Text`
+- `PreviewImage`
+- `Seed Generator`
+- `Seed Generator`
+- `Seed Generator`
+- `Seed Generator`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `Seed Generator`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `991356562567494`
+- `steps` = `35`
+- `cfg` = `8`
+- `sampler_name` = `dpmpp_3m_sde_gpu`
+- `scheduler` = `exponential`
+- `denoise` = `1`
+- `width` = `1024`
+- `height` = `760`
+- `batch_size` = `1`
+- `checkpoint` = `objectiveReality_v20.safetensors`
+- `lora_name` = `ass_support_object_v0.2.safetensors`
+- `strength_model` = `0.85`
+- `strength_clip` = `0.85`
+
+## 知识
+
+覆盖率 **64%**（153/239）
+
+**有卡**：`CLIPTextEncode`、`MaskToImage`、`CM_NumberBinaryOperation`、`CM_IntToFloat`、`JWIntegerToFloat`、`JWFloatMul`、`JWFloatAdd`、`CR Float To Integer`、`easy float`、`SetLatentNoiseMask`、`CM_NumberToInt`、`Display Int (rgthree)`、`KSampler`、`CM_IntToNumber`、`VAEEncodeForInpaint`、`easy int`、`Image Crop Location`、`ImagePadForOutpaint`、`SolidMask`、`CM_IntBinaryOperation`、`CR Prompt Text`、`Text to Conditioning`、`EmptyLatentImage`、`Mask Invert`、`Mask Gaussian Region`、`MaskComposite`、`Mask Smooth Region`、`Text Concatenate`、`VAEDecode`、`Image Paste Crop by Location`、`CheckpointLoader|pysssss`、`LoraLoader|pysssss`、`SaveImage`、`Seed Generator`
+
+**用到的条目**：KSampler、VAEDecode、CLIPTextEncode、EmptyLatentImage、Seed Generator、SetLatentNoiseMask、VAEEncodeForInpaint、LoraLoader|pysssss

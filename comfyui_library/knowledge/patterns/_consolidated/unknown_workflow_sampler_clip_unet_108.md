@@ -1,103 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_108
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.7497
-common_nodes: [BasicScheduler, CLIPTextEncode, DF_Int_to_Float, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ModelSamplingSD3, SamplerCustom, SetNode, ShowText|pysssss, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VAELoaderKJ, VisualizeSigmasKJ, easy positive]
+frequency: 11
+level: moderate
+coverage: 0.868818
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CreateVideo, DualCLIPLoader, EasyCache, KSamplerSelect, ModelSamplingSD3, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/107 LTX2.3图生视频_2035341548103147521.json, 图片生成/反推提示词/60nvmotedaihuo_2052393354213773314.json, 图片生成/反推提示词/63tushengshiping(kuai)_2045718888305922049.json, 图片生成/反推提示词/77tusspyhtb_2052669860135616514.json, 图片生成/反推提示词/LTX2.3图生视频音画同步_面部稳定_真人短剧电商带货视频工作流_2070027521416060929.json, 图片生成/图生图/LTX2.3图生视频-带语音生成-摇动版_2047251943105503234.json, 图片生成/文生图/LTX2.3解说漫对口型_2052615269197066241.json, 数字人/数字人/LTX2.3 双人对话！图生视频音画同步 自用_2050188003259236354.json, 视频生成/图生视频/LTX2.3-电商带货-上传图片自动生成-音画同步-Distilled-1.1-蒸馏稳定版_2047878626800050178.json, 视频生成/图生视频/LTX2.3-电商带货-上传图片自动生成-音画同步-Distilled-1.1-蒸馏稳定版_2052289650873651201.json]
+members: [comfyui-workflow-templates-json/video_hunyuan_video_1.5_720p_i2v.json, comfyui-workflow-templates-json/video_hunyuan_video_1.5_720p_t2v.json, 视频生成/图生视频/(2倍加速)HunyuanVideo 1.5 720P 20步优化版图生视频_1992829653211738114.json, 视频生成/图生视频/HunyuanVideo 1.5 720P 20步优化版图生视频_1992813582438166529.json, 视频生成/图生视频/HunyuanVideo 1.5 720P 图生视频优化版_1992895352435003394.json, 视频生成/图生视频/HunyuanVideo 1.5 版图生视频_1992883581467029505.json, 视频生成/图生视频/video_hunyuan_video_1.5_720p_i2v-混元Video1.5大模型——图生视频工作流_1994018725741477890.json, 视频生成/图生视频/图生视频 _ 支持文字 HunyuanVideo1.5_1996147108740808705.json, 视频生成/图生视频/混元Video1.5大模型——图生视频工作流_1993514480827121665.json, 视频生成/文生视频/Hunyuan_Video_1.5_720p_i2v + Upscaler_1998064669535404034.json, 视频生成/文生视频/混元Video1.5大模型——文生视频工作流_1993513786705379330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_108
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/107 LTX2.3图生视频_2035341548103147521.json、图片生成/反推提示词/60nvmotedaihuo_2052393354213773314.json、图片生成/反推提示词/63tushengshiping(kuai)_2045718888305922049.json、图片生成/反推提示词/77tusspyhtb_2052669860135616514.json、图片生成/反推提示词/LTX2.3图生视频音画同步_面部稳定_真人短剧电商带货视频工作流_2070027521416060929.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（comfyui-workflow-templates-json/video_hunyuan_video_1.5_720p_i2v.json、comfyui-workflow-templates-json/video_hunyuan_video_1.5_720p_t2v.json、视频生成/图生视频/(2倍加速)HunyuanVideo 1.5 720P 20步优化版图生视频_1992829653211738114.json、视频生成/图生视频/HunyuanVideo 1.5 720P 20步优化版图生视频_1992813582438166529.json、视频生成/图生视频/HunyuanVideo 1.5 720P 图生视频优化版_1992895352435003394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：75%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `DF_Int_to_Float`
+- `CreateVideo`
 - `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `ImageResizeKJv2`
-- `Int`
+- `EasyCache`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
 - `ModelSamplingSD3`
-- `SamplerCustom`
-- `SetNode`
-- `ShowText|pysssss`
-- `SimpleMath+`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
-- `VAELoaderKJ`
-- `VisualizeSigmasKJ`
-- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVAudioVAEDecode` —— 9/10 个有
-- `LTXVEmptyLatentAudio` —— 9/10 个有
-- `PrimitiveInt` —— 8/10 个有
-- `ConditioningZeroOut` —— 7/10 个有
-- `StringFunction|pysssss` —— 7/10 个有
-- `VHS_VideoCombine` —— 7/10 个有
-- `AILab_QwenVL_Advanced` —— 6/10 个有
-- `JjkText` —— 6/10 个有
-- `LayerUtility: BooleanOperatorV2` —— 6/10 个有
-- `LayerUtility: If ` —— 6/10 个有
-- `LayerUtility: NumberCalculatorV2` —— 6/10 个有
-- `LoraLoaderModelOnly` —— 6/10 个有
-- `PathchSageAttentionKJ` —— 6/10 个有
-- `Text` —— 4/10 个有
-- `easy cleanGpuUsed` —— 4/10 个有
-- `CreateVideo` —— 3/10 个有
-- `JoinStrings` —— 3/10 个有
-- `PrimitiveStringMultiline` —— 3/10 个有
-- `RTXVideoSuperResolution` —— 3/10 个有
-- `SaveVideo` —— 3/10 个有
-- `SeedGeneratorMira` —— 3/10 个有
-- `TTResolutionSelector` —— 3/10 个有
-- `easy showAnything` —— 3/10 个有
-- `llama_cpp_instruct_adv` —— 3/10 个有
-- `llama_cpp_model_loader` —— 3/10 个有
-- `llama_cpp_parameters` —— 3/10 个有
-- `CustomAddLabel` —— 2/10 个有
-- `LTXVAudioVAEEncode` —— 1/10 个有
-- `LoadAudio` —— 1/10 个有
-- `LoraLoader|pysssss` —— 1/10 个有
-- `RH_LLMAPI_Pro_Node` —— 1/10 个有
-- `SaveImage` —— 1/10 个有
-- `Switch` —— 1/10 个有
-- `TT_img_enc_v2` —— 1/10 个有
-- `TrimAudioDuration` —— 1/10 个有
-- `孤海注释` —— 1/10 个有
+- `CLIPVisionEncode` —— 9/11 个有
+- `CLIPVisionLoader` —— 9/11 个有
+- `HunyuanVideo15ImageToVideo` —— 9/11 个有
+- `LoadImage` —— 9/11 个有
+- `DisableNoise` —— 5/11 个有
+- `HunyuanVideo15LatentUpscaleWithModel` —— 5/11 个有
+- `HunyuanVideo15SuperResolution` —— 5/11 个有
+- `JWInteger` —— 5/11 个有
+- `LatentUpscaleModelLoader` —— 5/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/11 个有
+- `SplitSigmas` —— 5/11 个有
+- `Label (rgthree)` —— 3/11 个有
+- `EmptyHunyuanVideo15Latent` —— 2/11 个有
+- `AddLabel` —— 1/11 个有
+- `CR Text` —— 1/11 个有
+- `DF_Int_to_Float` —— 1/11 个有
+- `JjkText` —— 1/11 个有
+- `MathExpression|pysssss` —— 1/11 个有
+- `RH_Translator` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 305 | 305 - 305 | 9 | 100% |
-| 高度 | 24 | 24 - 24 | 9 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -105,5 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 305，观测区间 305 - 305，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，9 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

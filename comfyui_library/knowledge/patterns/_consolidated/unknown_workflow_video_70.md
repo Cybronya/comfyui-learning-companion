@@ -1,34 +1,43 @@
 ---
 name: unknown_workflow_video_70
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [JWImageResizeByLongerSide, JWInteger, LoadImage, RH_Translator, RunningHub_FramePack, VHS_VideoCombine]
+coverage: 0.8492
+common_nodes: [FlashVSRNode, PlaySound|pysssss, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack图生视频工作流_1913216262325923842.json, 视频生成/图生视频/FramePack图生视频工作流｜最长一分钟_1913095566052552706.json, 视频生成/图生视频/FramePack超长 图生视频工作流_1913145456501714945.json]
+members: [平台全量/FlashVSR 真人视频高清_2042478324794007554.json, 平台全量/FlashVSR 视频修复_2042426667418787841.json, 平台全量/FlashVSR_视频高清_2084199145602109441.json, 平台全量/FlashVSR视频修复_2045902203205984257.json, 平台全量/FlashVSR高清放大_2013759409339502594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_70
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FramePack图生视频工作流_1913216262325923842.json、视频生成/图生视频/FramePack图生视频工作流｜最长一分钟_1913095566052552706.json、视频生成/图生视频/FramePack超长 图生视频工作流_1913145456501714945.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/FlashVSR 真人视频高清_2042478324794007554.json、平台全量/FlashVSR 视频修复_2042426667418787841.json、平台全量/FlashVSR_视频高清_2084199145602109441.json、平台全量/FlashVSR视频修复_2045902203205984257.json、平台全量/FlashVSR高清放大_2013759409339502594.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `JWImageResizeByLongerSide`
-- `JWInteger`
-- `LoadImage`
-- `RH_Translator`
-- `RunningHub_FramePack`
+全部 5 个 workflow 都包含：
+- `FlashVSRNode`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `GetImageRangeFromBatch` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `ImageConcanate` —— 1/5 个有
+- `RunningHub Deepcleaner` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

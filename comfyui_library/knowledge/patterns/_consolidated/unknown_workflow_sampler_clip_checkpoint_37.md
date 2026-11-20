@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CM_IntToFloat, CheckpointLoaderSimple, CreateVideo, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, ModelSamplingSD3, SaveVideo, SimpleMath+, VAEDecode]
-problems: [Steps较低可能导致细节不足]
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSamplerAdvanced, LoadImage, SaveImage, VAEDecode, VAEEncode]
+problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2-AllInOneV10首尾帧生视频_2036271191220031490.json, 视频生成/图生视频/Wan2.2-AllInOneV10首帧生视频_2018866104730390529.json]
+members: [图片生成/图生图/图生图游乐场风格_1933056498794893313.json, 图片生成/图生图/拾光_2079454965298458625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_checkpoint_37
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-AllInOneV10首尾帧生视频_2036271191220031490.json、视频生成/图生视频/Wan2.2-AllInOneV10首帧生视频_2018866104730390529.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图生图游乐场风格_1933056498794893313.json、图片生成/图生图/拾光_2079454965298458625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -24,47 +24,38 @@ source: knowledge_consolidation
 
 全部 2 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CM_IntToFloat`
 - `CheckpointLoaderSimple`
-- `CreateVideo`
-- `Int`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `SaveVideo`
-- `SimpleMath+`
+- `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `WanFirstLastFrameToVideo` —— 1/2 个有
-- `WanImageToVideo` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `WD14Tagger|pysssss` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | randomize | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 29 | - | 2 | 97% |
+| 采样算法 | 5.25 | - | 2 | 67% |
+| 调度器 | dpmpp_2m_sde | - | 2 | 50% |
+| 重绘幅度 | exponential | - | 2 | 50% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，2 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 29，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
+- 采样算法 中位数 5.25，样本不足，未给区间，2 个样本
+- 调度器 最常用 dpmpp_2m_sde，2 个样本，一致性 50%
+- 重绘幅度 最常用 exponential，2 个样本，一致性 50%
+- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

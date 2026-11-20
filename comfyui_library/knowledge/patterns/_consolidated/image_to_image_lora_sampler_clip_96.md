@@ -1,65 +1,97 @@
 ---
 name: image_to_image_lora_sampler_clip_96
 type: Image To Image
-frequency: 3
-level: weak
-coverage: 0.858333
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, VAEDecode, VAEEncode]
+frequency: 4
+level: strong
+coverage: 0.8115
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GrowMaskWithBlur, Image Comparer (rgthree), KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/SDXL图生图（含lora+固定种子）_2064230188745056257.json, 图片生成/图生图/klein4b-fp8 图生图_2020060758679228417.json, 图片生成/图生图/场景融合_2031968343585984514.json]
+members: [图片生成/图生图/Flux2 Klein 最强四合一多功能_2014157990777069569.json, 图片生成/图生图/PS助手【扩图流】_2094046566104526849.json, 图片生成/图生图/QwenEdit2509-FP2换脸（相似度95%-图片会有轻微偏移-人脸与环境光影需二次编辑）林耀_2016711910770610178.json, 图片生成/图生图/flux-2-klein-9b【扩图流】_2104159780033089537.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_96
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SDXL图生图（含lora+固定种子）_2064230188745056257.json、图片生成/图生图/klein4b-fp8 图生图_2020060758679228417.json、图片生成/图生图/场景融合_2031968343585984514.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 最强四合一多功能_2014157990777069569.json、图片生成/图生图/PS助手【扩图流】_2094046566104526849.json、图片生成/图生图/QwenEdit2509-FP2换脸（相似度95%-图片会有轻微偏移-人脸与环境光影需二次编辑）林耀_2016711910770610178.json、图片生成/图生图/flux-2-klein-9b【扩图流】_2104159780033089537.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `ConditioningZeroOut`
+- `Flux2Scheduler`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/3 个有
-- `ModelSamplingDiscrete` —— 1/3 个有
-- `Seed (rgthree)` —— 1/3 个有
+- `CFGNorm` —— 3/4 个有
+- `EmptyFlux2LatentImage` —— 3/4 个有
+- `GetImageSize` —— 3/4 个有
+- `ImagePadForOutpaint` —— 3/4 个有
+- `InpaintModelConditioning` —— 3/4 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `DifferentialDiffusion` —— 2/4 个有
+- `Get Image Size` —— 2/4 个有
+- `GulfSeaImageMergeMask` —— 2/4 个有
+- `ImageScaleToTotalPixels` —— 2/4 个有
+- `图像缩放V2_孤海` —— 2/4 个有
+- `图像缩放范围孤海` —— 2/4 个有
+- `孤海外补画板按方向` —— 2/4 个有
+- `ACE_ImageFaceCrop` —— 1/4 个有
+- `Anything Everywhere3` —— 1/4 个有
+- `CannyEdgePreprocessor` —— 1/4 个有
+- `DepthAnythingPreprocessor` —— 1/4 个有
+- `ImageAndMaskPreview` —— 1/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `Mask Fill Holes` —— 1/4 个有
+- `MaskPreview+` —— 1/4 个有
+- `ModelSamplingAuraFlow` —— 1/4 个有
+- `RBGImageStitchPlus` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 2 - 30 | 3 | 10% |
-| Prompt 约束强度(CFG) | 1.8 | 1 - 5 | 3 | 34% |
-| 采样算法 | euler_ancestral | - | 3 | 33% |
-| 调度器 | normal | - | 3 | 33% |
-| 重绘幅度 | 0.25 | 0.2 - 0.7 | 3 | 41% |
+| 采样步数 | 8 | 4 - 8 | 4 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 50% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 2 - 30，3 个样本，取值分散，一致性仅 10%
-- Prompt 约束强度(CFG) 中位数 1.8，观测区间 1 - 5，3 个样本，取值分散，一致性仅 34%
-- 采样算法 最常用 euler_ancestral，3 个样本，一致性 33%
-- 调度器 最常用 normal，3 个样本，一致性 33%
-- 重绘幅度 中位数 0.25，观测区间 0.2 - 0.7，3 个样本，取值分散，一致性仅 41%
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 8，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 50%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（5/4 个样本）：Steps较低可能导致细节不足

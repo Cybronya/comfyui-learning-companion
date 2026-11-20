@@ -1,95 +1,89 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_71
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.518
-common_nodes: [BasicScheduler, BlockifyMask, CFGGuider, CLIPTextEncode, ComfyMathExpression, Float to Int, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAddLatentGuide, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVPreprocessMasks, LTXVSeparateAVLatent, LTXVSetVideoLatentNoiseMasks, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM, LazySwitchKJ, LoadAudio, LoraLoaderModelOnly, ManualSigmas, MaskToImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAEEncode, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy sam3ModelLoader, easy sam3VideoSegmentation, easy showAnything]
+coverage: 0.584667
+common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/LTX2.3上传视频改口型！B站艾橘溪_2047297756296908801.json, 数字人/数字人/LTX2.3视频改口型加强版 视频生视频 数字人复刻短视频 复刻克隆数字人形象说话_2060596774003367937.json, 数字人/数字人/LTX2.3视频改口型加强版 视频生视频 数字人复刻短视频 复刻克隆数字人形象说话_2080257073954246658.json, 数字人/数字人/LTX2.3视频改口型加强版_2060295017062821889.json, 视频生成/图生视频/LTX2.3视频改口型加强版_2080261317948170241.json]
+members: [视频生成/图生视频/ltx2.3_无导演台-参考音频_纯参数_2085178800698118146.json, 视频生成/图生视频/ltx2.3_无导演台_纯参数_2076920722613686273.json, 视频生成/图生视频/ltx单视频_2061788937559040002.json, 视频生成/图生视频/四宫格_2050405484393447425.json, 视频生成/图生视频/小Seedance， 连环画视频，短视频 Ltx2.3 自带音效_2037892741253832706.json, 视频生成/图生视频/短剧制作，图生视频，四宫格+ Ltx2.3 Prompt Relay V3版本_2052550289055596546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_71
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/LTX2.3上传视频改口型！B站艾橘溪_2047297756296908801.json、数字人/数字人/LTX2.3视频改口型加强版 视频生视频 数字人复刻短视频 复刻克隆数字人形象说话_2060596774003367937.json、数字人/数字人/LTX2.3视频改口型加强版 视频生视频 数字人复刻短视频 复刻克隆数字人形象说话_2080257073954246658.json、数字人/数字人/LTX2.3视频改口型加强版_2060295017062821889.json、视频生成/图生视频/LTX2.3视频改口型加强版_2080261317948170241.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/ltx2.3_无导演台-参考音频_纯参数_2085178800698118146.json、视频生成/图生视频/ltx2.3_无导演台_纯参数_2076920722613686273.json、视频生成/图生视频/ltx单视频_2061788937559040002.json、视频生成/图生视频/四宫格_2050405484393447425.json、视频生成/图生视频/小Seedance， 连环画视频，短视频 Ltx2.3 自带音效_2037892741253832706.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicScheduler`
-- `BlockifyMask`
+全部 6 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `Float to Int`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXAVTextEncoderLoader`
-- `LTXVAddLatentGuide`
+- `LTXVAddGuideMulti`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVAudioVideoMask`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVPreprocessMasks`
 - `LTXVSeparateAVLatent`
-- `LTXVSetVideoLatentNoiseMasks`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: PurgeVRAM`
-- `LazySwitchKJ`
-- `LoadAudio`
-- `LoraLoaderModelOnly`
+- `LoadImage`
 - `ManualSigmas`
-- `MaskToImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
 - `SetNode`
-- `SimpleCalculatorKJ`
-- `SolidMask`
-- `TrimAudioDuration`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
+- `VAEDecodeTiled`
 - `VAELoader`
 - `VAELoaderKJ`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LTX2AttentionTunerPatch` —— 2/5 个有
-- `LTX2MemoryEfficientSageAttentionPatch` —— 2/5 个有
+- `CR Float To Integer` —— 5/6 个有
+- `LTXVEmptyLatentAudio` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `GuHaiAutoImageSplit` —— 4/6 个有
+- `INTConstant` —— 4/6 个有
+- `ImageFromBatch+` —— 4/6 个有
+- `SimpleMath+` —— 4/6 个有
+- `TTResolutionSelector` —— 4/6 个有
+- `Text` —— 4/6 个有
+- `easy cleanGpuUsed` —— 4/6 个有
+- `Int` —— 3/6 个有
+- `LoraLoaderModelOnly` —— 3/6 个有
+- `PromptRelayEncode` —— 3/6 个有
+- `RH_LLMAPI_Pro_Node` —— 3/6 个有
+- `easy showAnything` —— 3/6 个有
+- `BasicScheduler` —— 2/6 个有
+- `Float` —— 2/6 个有
+- `ImageResizeKJv2` —— 2/6 个有
+- `JjkText` —— 2/6 个有
+- `LTXVAudioVAEEncode` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `LoadAudio` —— 2/6 个有
+- `SetLatentNoiseMask` —— 2/6 个有
+- `SolidMask` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `GetObjectFromJson` —— 1/6 个有
+- `GetTextFromJson` —— 1/6 个有
+- `ImpactSwitch` —— 1/6 个有
+- `LTXICLoRALoaderModelOnly` —— 1/6 个有
+- `Light-Tool: DeserializeJsonString` —— 1/6 个有
+- `PromptRelayEncodeTimeline` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `SaveVideoNode` —— 1/6 个有
+- `TwoWaySwitch` —— 1/6 个有
+- `easy indexAnything` —— 1/6 个有
 
 ## 典型参数
 

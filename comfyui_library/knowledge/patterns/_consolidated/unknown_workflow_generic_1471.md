@@ -3,33 +3,34 @@ name: unknown_workflow_generic_1471
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_RhartImageG25SunburstTextToImage, SaveImage, Text]
+coverage: 0.866
+common_nodes: [ByteDance2DraftToFinalVideoNode, LoadImage, SaveText, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G2.5-全能图片G-Image-2.5  Sunburst-稳定版-图生图_2101539341402202114.json, 图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5  Sunburst-稳定版-文生图_2101533136483078145.json]
+members: [comfyui-workflow-templates-json/api_seedance2_5_draft_i2v.json, comfyui-workflow-templates-json/api_seedance2_5_draft_r2v.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1471
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G2.5-全能图片G-Image-2.5  Sunburst-稳定版-图生图_2101539341402202114.json、图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5  Sunburst-稳定版-文生图_2101533136483078145.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_seedance2_5_draft_i2v.json、comfyui-workflow-templates-json/api_seedance2_5_draft_r2v.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartImageG25SunburstTextToImage`
-- `SaveImage`
-- `Text`
+- `ByteDance2DraftToFinalVideoNode`
+- `LoadImage`
+- `SaveText`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 1/2 个有
+- `ByteDance2FirstLastFrameNode` —— 1/2 个有
+- `ByteDance2ReferenceNodeV2` —— 1/2 个有
 
 ## 典型参数
 

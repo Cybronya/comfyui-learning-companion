@@ -1,35 +1,39 @@
 ---
 name: unknown_workflow_generic_903
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.847
-common_nodes: [RecraftColorRGB, RecraftControls, SaveSVGNode]
+coverage: 0.67475
+common_nodes: [AspectRatioSelect, JjkText, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json, comfyui-workflow-templates-json/api_recraft_vector_gen.json]
+members: [图片生成/图生图/图片裂变 9宫格分镜图 洗图_2051838113256882177.json, 图片生成/图生图/超好用🔥图片裂变-分镜_2052606941188370434.json, 平台全量/图片裂变_1897229438281830402.json, 平台全量/图片裂变【公式版】_1935153714284175361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_903
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_recraft_v4_1_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_v4_text_to_vector.json、comfyui-workflow-templates-json/api_recraft_vector_gen.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/图片裂变 9宫格分镜图 洗图_2051838113256882177.json、图片生成/图生图/超好用🔥图片裂变-分镜_2052606941188370434.json、平台全量/图片裂变_1897229438281830402.json、平台全量/图片裂变【公式版】_1935153714284175361.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `RecraftColorRGB`
-- `RecraftControls`
-- `SaveSVGNode`
+全部 4 个 workflow 都包含：
+- `AspectRatioSelect`
+- `JjkText`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RecraftV4TextToVectorNode` —— 2/3 个有
-- `RecraftTextToVectorNode` —— 1/3 个有
+- `Fast Bypasser (rgthree)` —— 1/4 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,65 +1,73 @@
 ---
 name: unknown_workflow_sampler_vae_45
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.9075
-common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, VAEDecode, VAELoader]
+coverage: 0.8505
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX文生图 无损超级加速版 nunchaku_1937516933006671873.json, 图片生成/文生图/F拉斯_2075877608994201601.json, 图片生成/文生图/NunChaku超级加速1秒1张图1K Flux抽卡工作流_1915461235243159553.json, 图片生成/文生图/Nunchaku Krea文生图_1951252739424727041.json, 图片生成/文生图/Nunchaku-flux.1-Krea-dev-文生图-自动提示词-8步出图_1954524753786761217.json, 图片生成/文生图/nunchaku-flux.1-dev & flux.1 krea-dev-8步快速出图-自动提示词_1954518475970625537.json]
+members: [视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json, 视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json, 视频生成/图生视频/Minimax H3 人物替换 单人极速版_2109840033103568897.json, 视频生成/图生视频/Minimax H3 人物替换 单人稳定版_2086341252592783361.json, 视频生成/图生视频/Minimax H3 人物替换 双人极速版_2109844433255620610.json, 视频生成/图生视频/Minimax H3 动作迁移 单人稳定版_2085382065066958850.json, 视频生成/图生视频/Minimax H3 深度引导动作迁移 单人版_2091353483743154177.json, 视频生成/图生视频/Minimax_H3_人物替换单人版_自动反推_2101085246136610818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_45
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/FLUX文生图 无损超级加速版 nunchaku_1937516933006671873.json、图片生成/文生图/F拉斯_2075877608994201601.json、图片生成/文生图/NunChaku超级加速1秒1张图1K Flux抽卡工作流_1915461235243159553.json、图片生成/文生图/Nunchaku Krea文生图_1951252739424727041.json、图片生成/文生图/Nunchaku-flux.1-Krea-dev-文生图-自动提示词-8步出图_1954524753786761217.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax_H3图生视频V1_2087430143055847430.json、视频生成/图生视频/Minimax H3 - 图生视频-首尾帧视频_2095067656989798402.json、视频生成/图生视频/Minimax H3 人物替换 单人极速版_2109840033103568897.json、视频生成/图生视频/Minimax H3 人物替换 单人稳定版_2086341252592783361.json、视频生成/图生视频/Minimax H3 人物替换 双人极速版_2109844433255620610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `KSamplerSelect`
-- `NunchakuFluxDiTLoader`
-- `NunchakuTextEncoderLoader`
+- `LoadImage`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveImage`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 5/6 个有
-- `EmptyLatentImage` —— 5/6 个有
-- `NunchakuFluxLoraLoader` —— 4/6 个有
-- `FluxGuidance` —— 3/6 个有
-- `ModelSamplingFlux` —— 3/6 个有
-- `PreviewImage` —— 2/6 个有
-- `RH_LLMAPI_NODE` —— 2/6 个有
-- `RH_Translator` —— 2/6 个有
-- `ShowText|pysssss` —— 2/6 个有
-- `CLIPTextEncodeFlux` —— 1/6 个有
-- `CR Overlay Text` —— 1/6 个有
-- `EmptySD3LatentImage` —— 1/6 个有
-- `ImageConcanate` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `PreviewAny` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
-- `SDVN Translate` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 7/8 个有
+- `UNETLoader` —— 7/8 个有
+- `VAEDecodeAudio` —— 7/8 个有
+- `CreateVideo` —— 6/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/8 个有
+- `VHS_LoadVideo` —— 6/8 个有
+- `VHS_VideoCombine` —— 6/8 个有
+- `VHS_VideoInfoLoaded` —— 6/8 个有
+- `PrimitiveStringMultiline` —— 5/8 个有
+- `easy showAnything` —— 5/8 个有
+- `Bjornulf_ShowFloat` —— 4/8 个有
+- `JjkText` —— 4/8 个有
+- `JoinStrings` —— 4/8 个有
+- `RH_LLMAPI_Pro_Node` —— 4/8 个有
+- `EasyCache` —— 3/8 个有
+- `SaveVideo` —— 3/8 个有
+- `MiniMaxH3ImageToVideo` —— 2/8 个有
+- `MuyeTextEditOutput` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `PrimitiveFloat` —— 2/8 个有
+- `VideoFrameSelector` —— 2/8 个有
+- `AIO_Preprocessor` —— 1/8 个有
+- `BiRefNet_Hugo` —— 1/8 个有
+- `DiffusionModelLoaderKJ` —— 1/8 个有
+- `EmptyImage` —— 1/8 个有
+- `GetNode` —— 1/8 个有
+- `SetNode` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | 784 - 1024 | 5 | 90% |
-| 高度 | 1024 | 1024 - 1600 | 5 | 78% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,5 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 784 - 1024，5 个样本，取值集中（一致性 90%）
-- 高度 中位数 1024，观测区间 1024 - 1600，5 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

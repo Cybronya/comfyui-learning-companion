@@ -1,81 +1,107 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_104
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.810667
-common_nodes: [AudioCrop, BasicGuider, Bjornulf_ShowFloat, CLIPLoader, CR Float To String, CR Prompt Text, CR Text, CR Text Concatenate, CR Text Replace, ComfyMathExpression, ConcatTextOfUtils, Float, GetNode, ImageBatchMultiV2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadVideo, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PreviewAny, PreviewAudio, PrimitiveFloat, PrimitiveStringMultiline, PurgeVRAM_UTK, RH_GetAudioDuration, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, ShowAnything|Mie, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine, easy anythingIndexSwitch, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.5205
+common_nodes: [Any To Any, Any To String (mtb), Audio Duration (mtb), CFGGuider, CLIPTextEncode, CM_FloatToInt, CM_IntToFloat, CR Prompt Text, CR Text, CR Text Concatenate, DF_Int_to_Float, Display Any (rgthree), EmptyLTXVLatentVideo, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, GODMT_SplitString, GetNode, INTConstant, ImageConcatMulti, ImageListToBatch+, ImageResizeKJv2, JWIntegerDiv, JjkText, JoinStrings, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVFirstLastFrameControl_TTP, LTXVLatentUpsampler, LTXVMiddleFrame_TTP, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PreviewImage, RandomNoise, SDVM Image List Repeat, SamplerCustomAdvanced, SaveAudio, SetLatentNoiseMask, SetNode, ShellAgentPluginOutputText, ShowText|pysssss, SimpleCalculatorKJ, SimpleMath+, SolidMask, Text List, TextInput_, TextListSelelct, VAEDecode, VAELoaderKJ, VHS_SelectImages, VHS_VideoCombine, WujiCleaner, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy lengthAnything, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/动漫MV_动漫角色唱歌专用-For anime MV_2098030514513997826.json, 视频生成/图生视频/动漫MV_人物唱歌专用-For_anime_MV_2101855970652680194.json, 视频生成/图生视频/动漫MV_人物唱歌专用-For_anime_MV_2102666887120379905.json]
+members: [视频生成/图生视频/五组图片可台词对口型首尾帧生视频V3音频驱动_2018146962532470786.json, 视频生成/图生视频/五组图片可台词对口型首尾帧生视频V4音频驱动_2029794744922017793.json, 视频生成/图生视频/五组图片可台词对口型首尾帧生视频V5音频驱动_2031283967088922626.json, 视频生成/图生视频/五组图片可台词对口型首尾帧生视频V6音频驱动_2033464459947151361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_104
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/动漫MV_动漫角色唱歌专用-For anime MV_2098030514513997826.json、视频生成/图生视频/动漫MV_人物唱歌专用-For_anime_MV_2101855970652680194.json、视频生成/图生视频/动漫MV_人物唱歌专用-For_anime_MV_2102666887120379905.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/五组图片可台词对口型首尾帧生视频V3音频驱动_2018146962532470786.json、视频生成/图生视频/五组图片可台词对口型首尾帧生视频V4音频驱动_2029794744922017793.json、视频生成/图生视频/五组图片可台词对口型首尾帧生视频V5音频驱动_2031283967088922626.json、视频生成/图生视频/五组图片可台词对口型首尾帧生视频V6音频驱动_2033464459947151361.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `BasicGuider`
-- `Bjornulf_ShowFloat`
-- `CLIPLoader`
-- `CR Float To String`
+全部 4 个 workflow 都包含：
+- `Any To Any`
+- `Any To String (mtb)`
+- `Audio Duration (mtb)`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CM_IntToFloat`
 - `CR Prompt Text`
 - `CR Text`
 - `CR Text Concatenate`
-- `CR Text Replace`
-- `ComfyMathExpression`
-- `ConcatTextOfUtils`
-- `Float`
+- `DF_Int_to_Float`
+- `Display Any (rgthree)`
+- `EmptyLTXVLatentVideo`
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `FB_Qwen3TTSVoiceDesign`
+- `GODMT_SplitString`
 - `GetNode`
-- `ImageBatchMultiV2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageListToBatch+`
+- `ImageResizeKJv2`
+- `JWIntegerDiv`
+- `JjkText`
+- `JoinStrings`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVFirstLastFrameControl_TTP`
+- `LTXVLatentUpsampler`
+- `LTXVMiddleFrame_TTP`
+- `LTXVPreprocess`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
-- `LoadVideo`
-- `LoraLoaderBypassModelOnly`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3TwoPassDetailMixerT8Advanced`
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
-- `ModelAttentionBackend`
-- `PreviewAny`
-- `PreviewAudio`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `PurgeVRAM_UTK`
-- `RH_GetAudioDuration`
+- `ManualSigmas`
+- `PreviewImage`
 - `RandomNoise`
-- `ResolutionSelector`
+- `SDVM Image List Repeat`
 - `SamplerCustomAdvanced`
+- `SaveAudio`
+- `SetLatentNoiseMask`
 - `SetNode`
-- `ShowAnything|Mie`
-- `SolAttnMiniMax`
-- `UNETLoader`
-- `VAELoader`
+- `ShellAgentPluginOutputText`
+- `ShowText|pysssss`
+- `SimpleCalculatorKJ`
+- `SimpleMath+`
+- `SolidMask`
+- `Text List`
+- `TextInput_`
+- `TextListSelelct`
+- `VAEDecode`
+- `VAELoaderKJ`
+- `VHS_SelectImages`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `WujiCleaner`
+- `easy cleanGpuUsed`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy lengthAnything`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
+- `CheckpointLoaderSimple` —— 3/4 个有
+- `LTXAVTextEncoderLoader` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `DualCLIPLoader` —— 2/4 个有
+- `Qwen3_VQA` —— 2/4 个有
+- `UNETLoader` —— 2/4 个有
+- `llama_cpp_instruct_adv` —— 2/4 个有
+- `llama_cpp_model_loader` —— 2/4 个有
+- `LTXVAudioVAELoader` —— 1/4 个有
+- `ModelPatchTorchSettings` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
 
 ## 典型参数
 

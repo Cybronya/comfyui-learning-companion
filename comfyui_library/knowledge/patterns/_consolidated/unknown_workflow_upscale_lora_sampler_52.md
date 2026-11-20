@@ -1,93 +1,88 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_52
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.831
-common_nodes: [CFGNorm, CLIPLoader, CR Text, EmptyLatentImage, GetImageSize, ImageScaleToTotalPixels, ImageUpscaleWithModel, ImitationHueNode, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, easy imageScaleDownBy]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: moderate
+coverage: 0.8716
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageResize+, ImageScaleBy, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageSize]
+problems: []
 missing: []
-members: [图片生成/图生图/一张图生成多姿势（qwen2509）_1974767448341745666.json, 图片生成/图生图/人物姿势完美迁移+人物变清晰（千问plus2509）_1974682142280167425.json, 图片生成/图生图/骨骼姿态控制 人物一致性 一张图生成多姿势 写真图片 9月最新升级+全节点注释_2054198133206331394.json, 视频生成/图生视频/骨骼姿态控制 人物一致性 一张图生成多姿势 写真图片 9月最新升级_1986387692915224577.json]
+members: [图片生成/图生图/扩图工作流111111_2079840876804792321.json, 平台全量/Klein高清扩图工作流_2086094525570838530.json, 平台全量/klien放大+PPT+seedvr2放大_2080916662341169153.json, 平台全量/高清放大，无损增加细节_2076651473374633985.json, 数字人/数字人/人像精修-皮肤真实感细节_2070383420349444098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_52
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一张图生成多姿势（qwen2509）_1974767448341745666.json、图片生成/图生图/人物姿势完美迁移+人物变清晰（千问plus2509）_1974682142280167425.json、图片生成/图生图/骨骼姿态控制 人物一致性 一张图生成多姿势 写真图片 9月最新升级+全节点注释_2054198133206331394.json、视频生成/图生视频/骨骼姿态控制 人物一致性 一张图生成多姿势 写真图片 9月最新升级_1986387692915224577.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/扩图工作流111111_2079840876804792321.json、平台全量/Klein高清扩图工作流_2086094525570838530.json、平台全量/klien放大+PPT+seedvr2放大_2080916662341169153.json、平台全量/高清放大，无损增加细节_2076651473374633985.json、数字人/数字人/人像精修-皮肤真实感细节_2070383420349444098.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGNorm`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
-- `CR Text`
-- `EmptyLatentImage`
+- `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `GetImageSize`
+- `ImageResize+`
+- `ImageScaleBy`
 - `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
-- `ImitationHueNode`
-- `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlus`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEEncode`
 - `VAELoader`
-- `easy imageScaleDownBy`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatFromBatch` —— 3/4 个有
-- `ImageFromBatch` —— 3/4 个有
-- `ImpactMakeImageBatch` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `easy batchAnything` —— 3/4 个有
-- `easy forLoopEnd` —— 3/4 个有
-- `easy forLoopStart` —— 3/4 个有
-- `easy imageCount` —— 3/4 个有
-- `DWPreprocessor` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `Image Comparer (rgthree)` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `StringFunction|pysssss` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `ColorMatch` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `GetNode` —— 3/5 个有
+- `Image Comparer (rgthree)` —— 3/5 个有
+- `LayerUtility: PurgeVRAM` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `SetNode` —— 3/5 个有
+- `DrawMaskOnImage` —— 2/5 个有
+- `ImageConcanate` —— 2/5 个有
+- `ImagePadForOutpaint` —— 2/5 个有
+- `LCSColorAnchor` —— 2/5 个有
+- `LCSLoadData` —— 2/5 个有
+- `LCSSharpnessCalibrate` —— 2/5 个有
+- `LCSSharpnessIntervene` —— 2/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `easy cleanGpuUsed` —— 2/5 个有
+- `easy seed` —— 2/5 个有
+- `ImageColorMatch+` —— 1/5 个有
+- `ImageCompositeMasked` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `InvertMask` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 512 | 512 - 512 | 4 | 100% |
-| 高度 | 512 | 512 - 512 | 4 | 100% |
-| 采样步数 | 8 | 8 - 8 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | res_2m | - | 4 | 100% |
-| 调度器 | sgm_uniform | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，4 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2m，4 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（8/4 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

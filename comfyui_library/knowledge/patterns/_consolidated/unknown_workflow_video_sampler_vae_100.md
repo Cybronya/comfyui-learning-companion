@@ -1,56 +1,56 @@
 ---
 name: unknown_workflow_video_sampler_vae_100
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.857
-common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, LoadImage, Note _O, VHS_VideoCombine]
+coverage: 0.9505
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/KJ版新版混元图生视频人物一致性优化版工作流_1898308200272482306.json, 视频生成/图生视频/图生视频-KJ版新版混元图生视频人物一致性优化版工作流_2065290197557932034.json, 视频生成/图生视频/新版官方开源混元KJ版图生视频_1897648675362164738.json, 视频生成/图生视频/超级加速AccVideo一致性修复混元图生视频_1908742730107727873.json, 视频生成/图生视频/🦖 炸裂版 混元i2v（ 更新至0309）_1897601417920598018.json]
+members: [视频生成/图生视频/FLF2V首尾帧图生视频_1913525261151760386.json, 视频生成/图生视频/FLF2V首尾帧高质量视频_1916010425433915394.json, 视频生成/图生视频/SLG 提升 WAN2.1 视频画质工作流_1919056662093561858.json, 视频生成/图生视频/Wan FusionX 图生视频-极速版_1962815833489715202.json, 视频生成/图生视频/Wan-Fun视频首尾帧-KJ版_1905999669091307522.json, 视频生成/文生视频/【Wan2.1系列】画质救星SLG技术_1918486985445675009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_100
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/KJ版新版混元图生视频人物一致性优化版工作流_1898308200272482306.json、视频生成/图生视频/图生视频-KJ版新版混元图生视频人物一致性优化版工作流_2065290197557932034.json、视频生成/图生视频/新版官方开源混元KJ版图生视频_1897648675362164738.json、视频生成/图生视频/超级加速AccVideo一致性修复混元图生视频_1908742730107727873.json、视频生成/图生视频/🦖 炸裂版 混元i2v（ 更新至0309）_1897601417920598018.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/FLF2V首尾帧图生视频_1913525261151760386.json、视频生成/图生视频/FLF2V首尾帧高质量视频_1916010425433915394.json、视频生成/图生视频/SLG 提升 WAN2.1 视频画质工作流_1919056662093561858.json、视频生成/图生视频/Wan FusionX 图生视频-极速版_1962815833489715202.json、视频生成/图生视频/Wan-Fun视频首尾帧-KJ版_1905999669091307522.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `DownloadAndLoadHyVideoTextEncoder`
-- `GetImageSizeAndCount`
-- `HyVideoBlockSwap`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoEnhanceAVideo`
-- `HyVideoI2VEncode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTorchCompileSettings`
-- `HyVideoVAELoader`
+全部 6 个 workflow 都包含：
+- `ImageResizeKJ`
 - `LoadImage`
-- `Note _O`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Resize` —— 4/5 个有
-- `LayerUtility: PurgeVRAM` —— 4/5 个有
-- `Note Plus (mtb)` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `HyVideoLoraSelect` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImageScale` —— 1/5 个有
-- `JWImageResizeByLongerSide` —— 1/5 个有
-- `JWInteger` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `WanVideoClipVisionEncode` —— 5/6 个有
+- `WanVideoSLG` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `LoadWanVideoClipTextEncoder` —— 3/6 个有
+- `WanVideoExperimentalArgs` —— 3/6 个有
+- `CLIPVisionLoader` —— 2/6 个有
+- `CR Text` —— 1/6 个有
+- `DF_Integer` —— 1/6 个有
+- `Evaluate Integers` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `easy imageSize` —— 1/6 个有
 
 ## 典型参数
 

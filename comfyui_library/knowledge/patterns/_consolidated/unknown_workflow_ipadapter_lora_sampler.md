@@ -3,57 +3,51 @@ name: unknown_workflow_ipadapter_lora_sampler
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6365
-common_nodes: [ApplyFluxIPAdapter, CLIPTextEncode, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, GetNode, INTConstant, Image Comparer (rgthree), ImageScale, LoadFluxIPAdapter, LoadImage, LoraLoader, PreviewImage, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, XlabsSampler]
+coverage: 0.952
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, IPAdapterFaceID, IPAdapterUnifiedLoader, ImageResizeKJ, KSamplerSelect, LayerUtility: TextJoin, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader, WD14Tagger|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/多图风格融合  Flux+IPAdapter_1915051485367889922.json, 图片生成/文生图/Flux+IPAdapter 文生同风格图片_1914704276978106370.json]
+members: [图片生成/反推提示词/【真人转动漫】FLUX真人模特图片转漫画风格转绘秒变插画大师_1919942569487437825.json, 平台全量/【真人转动漫】FLUX真人模特图片转漫画风格转绘秒变插画大师_1977340191155343362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_ipadapter_lora_sampler
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/多图风格融合  Flux+IPAdapter_1915051485367889922.json、图片生成/文生图/Flux+IPAdapter 文生同风格图片_1914704276978106370.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/【真人转动漫】FLUX真人模特图片转漫画风格转绘秒变插画大师_1919942569487437825.json、平台全量/【真人转动漫】FLUX真人模特图片转漫画风格转绘秒变插画大师_1977340191155343362.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ApplyFluxIPAdapter`
-- `CLIPTextEncode`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncodeFlux`
 - `DualCLIPLoader`
-- `EmptyLatentImage`
-- `GetNode`
-- `INTConstant`
-- `Image Comparer (rgthree)`
-- `ImageScale`
-- `LoadFluxIPAdapter`
+- `IPAdapterFaceID`
+- `IPAdapterUnifiedLoader`
+- `ImageResizeKJ`
+- `KSamplerSelect`
+- `LayerUtility: TextJoin`
 - `LoadImage`
-- `LoraLoader`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
+- `ShowText|pysssss`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `XlabsSampler`
-
-**可变部分**（部分 workflow 才有）：
-- `ImpactMakeImageBatch` —— 1/2 个有
+- `WD14Tagger|pysssss`
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| 宽度 | 636 | - | 2 | 79% |
-| 高度 | 768 | - | 2 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,8 +55,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 636，样本不足，未给区间，2 个样本
-- 高度 中位数 768，样本不足，未给区间，2 个样本
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

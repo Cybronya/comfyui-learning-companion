@@ -3,32 +3,33 @@ name: unknown_workflow_generic_1872
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9665
-common_nodes: [AudioConcatenate, LoadAudio, SaveAudio]
+coverage: 0.8165
+common_nodes: [JjkText, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/多段音频合并工具2-5段可选_1966088083164884994.json, 音频生成/音频生成/多段音频合并工具2-5段可选_2048751939168505858.json]
+members: [图片生成/文生图/超低价G2 10参考图_2086338905246355457.json, 平台全量/全身白底图制作-单图参考-全能图片G2_2090385196695773186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1872
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/多段音频合并工具2-5段可选_1966088083164884994.json、音频生成/音频生成/多段音频合并工具2-5段可选_2048751939168505858.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/超低价G2 10参考图_2086338905246355457.json、平台全量/全身白底图制作-单图参考-全能图片G2_2090385196695773186.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioConcatenate`
-- `LoadAudio`
-- `SaveAudio`
+- `JjkText`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
 
 ## 典型参数
 

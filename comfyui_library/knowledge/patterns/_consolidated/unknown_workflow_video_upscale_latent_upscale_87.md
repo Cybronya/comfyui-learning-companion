@@ -1,47 +1,44 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_87
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.89875
-common_nodes: [AnyBooleanSwitch, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MinimaxH3LatentUpscaler3D, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.7424
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/海螺H3 极速6分钟生成1.5M 10秒视频-标准模式-文图首尾帧视频3合一工作流_2084510220184809474.json, 图片生成/图生图/海螺H3_极速6分钟生成1.5M_10秒视频-标准模式-全能参考生视频_2114641161150353410.json, 视频生成/文生视频/H3全能参考生视频-练习模式_2092890005231464450.json, 视频生成/文生视频/海螺H3 极速6分钟生成1.5M 10秒视频-标准模式-全能参考生视频_2084582921754730497.json]
+members: [视频生成/图生视频/MiniMax+H3图生视频-高清_2096765437517328385.json, 视频生成/图生视频/视频带货+Images+into+Videos—Digital+Avatars+Drive_2100028236955738114.json, 视频生成/图生视频/视频带货+Images+into+Videos—Digital+Avatars+Drive_2101558136091013122.json, 视频生成/文生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频 口播带货视频_2098680337055444993.json, 视频生成/文生视频/MiniMaxH3数字人视频带货！H3多图生视频！_2098729617451479042.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_87
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/海螺H3 极速6分钟生成1.5M 10秒视频-标准模式-文图首尾帧视频3合一工作流_2084510220184809474.json、图片生成/图生图/海螺H3_极速6分钟生成1.5M_10秒视频-标准模式-全能参考生视频_2114641161150353410.json、视频生成/文生视频/H3全能参考生视频-练习模式_2092890005231464450.json、视频生成/文生视频/海螺H3 极速6分钟生成1.5M 10秒视频-标准模式-全能参考生视频_2084582921754730497.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax+H3图生视频-高清_2096765437517328385.json、视频生成/图生视频/视频带货+Images+into+Videos—Digital+Avatars+Drive_2100028236955738114.json、视频生成/图生视频/视频带货+Images+into+Videos—Digital+Avatars+Drive_2101558136091013122.json、视频生成/文生视频/MiniMax-H3开源 数字人视频带货 H3多图生视频 口播带货视频_2098680337055444993.json、视频生成/文生视频/MiniMaxH3数字人视频带货！H3多图生视频！_2098729617451479042.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AnyBooleanSwitch`
+全部 5 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `GetNode`
 - `KSamplerSelect`
 - `LTXVConcatAVLatent`
 - `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
 - `MinimaxH3LatentUpscaler3D`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -49,20 +46,22 @@ source: knowledge_consolidation
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `MiniMaxChunkFeedForward` —— 3/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
-- `MiniMaxLowVRAMAttention` —— 3/4 个有
-- `LoadAudio` —— 2/4 个有
-- `PrimitiveInt` —— 2/4 个有
-- `ResizeImagesByShorterEdge` —— 2/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
-- `EmptyImage` —— 1/4 个有
-- `GetImageSize` —— 1/4 个有
-- `H3SigmaRefiner` —— 1/4 个有
-- `ImageScaleToTotalPixels` —— 1/4 个有
-- `MiniMaxH3ImageToVideo` —— 1/4 个有
-- `easy imageIndexSwitch` —— 1/4 个有
+- `JjkText` —— 4/5 个有
+- `ManualSigmas` —— 4/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 4/5 个有
+- `CR Text` —— 1/5 个有
+- `ComfySwitchNode` —— 1/5 个有
+- `Compare` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
+- `Fans Text Concatenate` —— 1/5 个有
+- `GetImageSize` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `MiniMaxH3ImageToVideo` —— 1/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `Seed Everywhere` —— 1/5 个有
+- `SplitSigmas` —— 1/5 个有
 
 ## 典型参数
 

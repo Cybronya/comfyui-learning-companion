@@ -3,68 +3,55 @@ name: unknown_workflow_video_sampler_clip_61
 type: Unknown Workflow
 frequency: 10
 level: moderate
-coverage: 0.8342
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ImageResizeKJ, KSamplerSelect, LTXVAdainLatent, LTXVBaseSampler, LTXVConditioning, LTXVFilmGrain, LTXVLatentUpsampler, LTXVLatentUpsamplerModelLoader, LTXVTiledSampler, LoadImage, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, SplitSigmas, VAEDecode, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.8678
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/3图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921462278720520193.json, 视频生成/图生视频/4图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921473560848826369.json, 视频生成/图生视频/LTXV 0.9.7 13B 关键帧工作流_1921533815024467970.json, 视频生成/图生视频/ltxv-13b-i2v-base-fp8快速图生视频_1921753494003580929.json, 视频生成/图生视频/ltxv-13b-i2v-base图生视频+视频扩展_1921820658055987202.json, 视频生成/图生视频/图生视频-极速视频模型_1932368419218190337.json, 视频生成/图生视频/最新LTXV13B图生视频-极速视频模型_1920144851361533954.json, 视频生成/图生视频/最新LTXV13B多段分镜续写扩展_1920634402723008514.json, 视频生成/图生视频/最新LTXV13B首尾帧-多帧控制_1921825249476935682.json, 视频生成/图生视频/最新LTXV13B首尾帧控制(可多帧)_1920639676355379202.json]
+members: [视频生成/图生视频/CFG Zreo Star万相图生视频_1907807736166232066.json, 视频生成/图生视频/SkyReels  图生视频加速版_1932067236700127234.json, 视频生成/图生视频/SkyReels V2 161帧长序列稳定性图生视频优化版V1_1914225072540741633.json, 视频生成/图生视频/SkyReels V2 161帧长序列稳定性图生视频优化版_1914706731866255362.json, 视频生成/图生视频/SkyReels V2 图生视频_1926816500064358401.json, 视频生成/图生视频/WAN复杂动作防崩图生视频工作流V5（调整模型缩放）_1905280453560176642.json, 视频生成/图生视频/Wan kijai版-SLG模式_1903813340349501441.json, 视频生成/图生视频/Wan图生视频Latent保存本地解码工作流_1913242706372456449.json, 视频生成/图生视频/（自用）Wan图生视频Latent保存工作流_1911248941428736001.json, 视频生成/图生视频/🦖SkyReels V2 161帧图生视频_1914494071358877697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_61
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/3图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921462278720520193.json、视频生成/图生视频/4图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921473560848826369.json、视频生成/图生视频/LTXV 0.9.7 13B 关键帧工作流_1921533815024467970.json、视频生成/图生视频/ltxv-13b-i2v-base-fp8快速图生视频_1921753494003580929.json、视频生成/图生视频/ltxv-13b-i2v-base图生视频+视频扩展_1921820658055987202.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/CFG Zreo Star万相图生视频_1907807736166232066.json、视频生成/图生视频/SkyReels  图生视频加速版_1932067236700127234.json、视频生成/图生视频/SkyReels V2 161帧长序列稳定性图生视频优化版V1_1914225072540741633.json、视频生成/图生视频/SkyReels V2 161帧长序列稳定性图生视频优化版_1914706731866255362.json、视频生成/图生视频/SkyReels V2 图生视频_1926816500064358401.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ImageResizeKJ`
-- `KSamplerSelect`
-- `LTXVAdainLatent`
-- `LTXVBaseSampler`
-- `LTXVConditioning`
-- `LTXVFilmGrain`
-- `LTXVLatentUpsampler`
-- `LTXVLatentUpsamplerModelLoader`
-- `LTXVTiledSampler`
 - `LoadImage`
-- `RandomNoise`
-- `STGAdvancedPresets`
-- `STGGuiderAdvanced`
-- `Set VAE Decoder Noise`
-- `SplitSigmas`
-- `VAEDecode`
-- `VAEDecodeTiled`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 8/10 个有
-- `LTXVPromptEnhancer` —— 7/10 个有
-- `LTXVPromptEnhancerLoader` —— 7/10 个有
-- `Text Concatenate (JPS)` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
-- `LayerUtility: PurgeVRAM` —— 6/10 个有
-- `LTXVExtendSampler` —— 5/10 个有
-- `Text Multiline` —— 5/10 个有
-- `LTXQ8Patch` —— 3/10 个有
-- `ShowText|pysssss` —— 3/10 个有
-- `ImageResizeKJv2` —— 2/10 个有
-- `JWInteger` —— 2/10 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/10 个有
-- `easy cleanGpuUsed` —— 2/10 个有
-- `easy int` —— 2/10 个有
-- `CR Text` —— 1/10 个有
-- `ImageScale` —— 1/10 个有
-- `RH_Translator` —— 1/10 个有
+- `WanVideoExperimentalArgs` —— 9/10 个有
+- `JWInteger` —— 8/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/10 个有
+- `LayerUtility: PurgeVRAM` —— 8/10 个有
+- `WanVideoEnhanceAVideo` —— 8/10 个有
+- `CR Prompt Text` —— 7/10 个有
+- `Note Plus (mtb)` —— 3/10 个有
+- `HyVideoEnhanceAVideo` —— 2/10 个有
+- `LTXVPromptEnhancer` —— 2/10 个有
+- `LTXVPromptEnhancerLoader` —— 2/10 个有
+- `LoadLatent` —— 2/10 个有
+- `SaveImage` —— 2/10 个有
+- `SaveLatent` —— 2/10 个有
+- `PrimitiveInt` —— 1/10 个有
 
 ## 典型参数
 

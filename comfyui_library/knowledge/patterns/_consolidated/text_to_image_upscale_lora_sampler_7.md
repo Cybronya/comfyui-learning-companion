@@ -1,104 +1,76 @@
 ---
 name: text_to_image_upscale_lora_sampler_7
 type: Text To Image
-frequency: 15
-level: weak
-coverage: 0.886533
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, ImageScaleToTotalPixels, JjkText, KSampler, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: NumberCalculator, ModelSamplingAuraFlow, PathchSageAttentionKJ, PreviewImage, QZ_ResolutionPreset, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SimpleMathDual+, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy loraStack, easy loraStackApply, easy seed]
+frequency: 18
+level: moderate
+coverage: 0.951667
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/图片反推提示词Krea2超写实高清大图｜人物特效反推一键出图_2114260985493151746.json, 图片生成/反推提示词/图片反推提示词加Krea2超写实生成，高清大图还原度拉满_2114492777340952578.json, 图片生成/图生图/4K高清婚纱自然街拍生成 _ 随性抓拍 _ 日系胶片 _ 街拍 __2113320436816769026.json, 图片生成/图生图/Krea2 超写实 4K 文生图｜超写实去AI感画面更真实_2096870089223131138.json, 图片生成/图生图/Krea2超写实4K图生图｜美少女写实出图质感在线_2108060491858931713.json, 图片生成/图生图/Krea2超写实4K文生图｜去AI感真实感人像场景生成_2096677854607142913.json, 图片生成/文生图/4K超写实去ai感｜Krea2文生图高清一键生成_2094764662138163201.json, 图片生成/文生图/4K超写实文生图｜Krea2人像写真角色设计超清直出_2089043670136868866.json, 图片生成/文生图/4K超写实文生图｜Krea2写实大片生成_2092583582224175105.json, 图片生成/文生图/Krea 2超写实4K文生图处理生成工作流_2101031767800115202.json, 图片生成/文生图/Krea2 4K超清写实文生图｜美少女直出高质量_2089433996257222657.json, 图片生成/文生图/Krea2 超写实4K文生图｜去AI感真实到犯规 直出大片_2097582803880865794.json, 图片生成/文生图/Krea2 超写实4K文生图｜美少女写实大片直出_2112441686365396994.json, 图片生成/文生图/Krea2写实美少女文生图，4K超高清流量出图_2110888355004239873.json, 图片生成/文生图/Krea2文生图_超写实4K商业级工作流_2082042807304409089.json]
+members: [图片生成/文生图/二次元人物生成_2088191460100362241.json, 图片生成/文生图/二次元真人(男生）_2088399659025911810.json, 图片生成/文生图/二次元真人_2088197741246767105.json, 图片生成/文生图/千问-文生图-高配精细_2097549428528869378.json, 图片生成/文生图/千问优质生图快速工作流_1988895729412354050.json, 图片生成/文生图/千问文生图 高质量 高清晰_2097963267984543745.json, 图片生成/文生图/千问文生图-电商专用_2066788213078978561.json, 图片生成/文生图/千问文生图-电商专用_2108042168052043777.json, 图片生成/文生图/千问文生图-电商专用_2112373154172719105.json, 图片生成/文生图/千问文生图-电商专用_2113920181155225601.json, 图片生成/文生图/千问文生图_高质量_高清晰_2098219987013033986.json, 图片生成/文生图/千问文生图基础款_1985377282284003329.json, 图片生成/文生图/千问文生图电商产品_2090229875432050689.json, 图片生成/文生图/千问超写实文生图（AI仿真人漫剧资产制作）_2021440026743148546.json, 图片生成/文生图/千问（qwen2512最新版）文生图（加速+电影感）_1978855905909444610.json, 图片生成/文生图/文生图-人像生成写实风格_2087860545537011714.json, 图片生成/文生图/文生图-人像生成写实风格_2088186685191450626.json, 图片生成/文生图/文生图-人像生成写实风格_2091172485961175041.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/反推提示词/图片反推提示词Krea2超写实高清大图｜人物特效反推一键出图_2114260985493151746.json、图片生成/反推提示词/图片反推提示词加Krea2超写实生成，高清大图还原度拉满_2114492777340952578.json、图片生成/图生图/4K高清婚纱自然街拍生成 _ 随性抓拍 _ 日系胶片 _ 街拍 __2113320436816769026.json、图片生成/图生图/Krea2 超写实 4K 文生图｜超写实去AI感画面更真实_2096870089223131138.json、图片生成/图生图/Krea2超写实4K图生图｜美少女写实出图质感在线_2108060491858931713.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/二次元人物生成_2088191460100362241.json、图片生成/文生图/二次元真人(男生）_2088399659025911810.json、图片生成/文生图/二次元真人_2088197741246767105.json、图片生成/文生图/千问-文生图-高配精细_2097549428528869378.json、图片生成/文生图/千问优质生图快速工作流_1988895729412354050.json…）
 
 - **类型**：Text To Image
-- **样本数**：15
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：18
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CLIPLoader`
+全部 18 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CR Text`
-- `CheckpointLoaderSimple`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `ImageScaleToTotalPixels`
-- `JjkText`
+- `ImageUpscaleWithModel`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: NumberCalculator`
-- `ModelSamplingAuraFlow`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `QZ_ResolutionPreset`
+- `LoraLoaderModelOnly`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SimpleMathDual+`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy loraStack`
-- `easy loraStackApply`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 14/15 个有
-- `LoraLoaderModelOnly` —— 14/15 个有
-- `solarL_SaveImagesToZip` —— 14/15 个有
-- `孤海注释` —— 14/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 9/15 个有
-- `LoadImage` —— 3/15 个有
-- `ShowText|pysssss` —— 2/15 个有
-- `easy saveText` —— 2/15 个有
-- `llama_cpp_instruct_adv` —— 2/15 个有
-- `llama_cpp_model_loader` —— 2/15 个有
-- `llama_cpp_parameters` —— 2/15 个有
-- `GetImageSize+` —— 1/15 个有
-- `ImageCASharpening+` —— 1/15 个有
-- `ImageResize+` —— 1/15 个有
-- `ImageScaleBy` —— 1/15 个有
-- `RH_RhartImageG2ImageToImage` —— 1/15 个有
-- `TTP_Image_Assy` —— 1/15 个有
-- `TTP_Image_Tile_Batch` —— 1/15 个有
-- `TTP_Tile_image_size` —— 1/15 个有
-- `TextGenerateLTX2Prompt` —— 1/15 个有
+- `CFGNorm` —— 12/18 个有
+- `CLIPLoader` —— 12/18 个有
+- `PreviewImage` —— 10/18 个有
+- `CLIPLoaderGGUF` —— 6/18 个有
+- `KOOK_ImageCompression` —— 6/18 个有
+- `TextInputBasic` —— 5/18 个有
+- `Image Comparer (rgthree)` —— 2/18 个有
+- `MuyeTextEditOutput` —— 1/18 个有
+- `QwenImageLatentAspectRatio` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1152 | 15 | 0% |
-| 高度 | 80 | 80 - 1536 | 15 | 0% |
-| 采样步数 | 4 | 2 - 4 | 15 | 87% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 15 | 80% |
-| 采样算法 | er_sde | - | 15 | 93% |
-| 调度器 | beta | - | 15 | 93% |
-| 重绘幅度 | 1 | 0.1 - 1 | 15 | 76% |
+| 宽度 | 1192 | 768 - 2304 | 18 | 65% |
+| 高度 | 1024 | 904 - 2048 | 18 | 68% |
+| 采样步数 | 8 | 4 - 12 | 18 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 18 | 89% |
+| 采样算法 | euler | - | 18 | 100% |
+| 调度器 | simple | - | 18 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1152，15 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1536，15 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 2 - 4，15 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，15 个样本
-- 采样算法 最常用 er_sde，15 个样本，一致性 93%
-- 调度器 最常用 beta，15 个样本，一致性 93%
-- 重绘幅度 中位数 1，观测区间 0.1 - 1，15 个样本
-- 高发问题（15/15 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1192，观测区间 768 - 2304，18 个样本
+- 高度 中位数 1024，观测区间 904 - 2048，18 个样本
+- 采样步数 中位数 8，观测区间 4 - 12，18 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，18 个样本，取值集中（一致性 89%）
+- 采样算法 最常用 euler，18 个样本，一致性 100%
+- 调度器 最常用 simple，18 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 高发问题（11/18 个样本）：Steps较低可能导致细节不足

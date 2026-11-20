@@ -1,38 +1,41 @@
 ---
 name: unknown_workflow_generic_196
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.977909
-common_nodes: [CR Prompt Text, RH_Sora2_T2V, SaveText|pysssss, SaveVideo, ShowText]
+coverage: 0.723417
+common_nodes: [Audio To Text (mtb), FishS2VoiceCloneTTS, Load Whisper (mtb), LoadAudio, ShowText|pysssss]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S文生视频(输入主题自动生成提示词)_1985877663703281666.json, 视频生成/文生视频/[众馨]全能视频S文生视频_1981644784269959169.json, 视频生成/文生视频/全能视频S 文生视频_1973992409312923649.json, 视频生成/文生视频/全能视频S文生视频 (支持横版竖版1080p、支持10s和15s）_1985957787626811393.json, 视频生成/文生视频/全能视频S文生视频 openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1976181162492215297.json, 视频生成/文生视频/全能视频S文生视频 支持15s_1991163256226054145.json, 视频生成/文生视频/全能视频S文生视频 每日5次免费_2073213996060209153.json, 视频生成/文生视频/全能视频S文生视频（15s）_1986863698721574914.json, 视频生成/文生视频/全能视频S文生视频（支持横版竖版1080p）支持15s_1996581085431603202.json, 视频生成/文生视频/抖音巨火的漫剧—全能视频S文生视频（15s）_1986077275487686658.json, 视频生成/文生视频/🦖全能视频S文生视频 （自动优化提示词）_1976842092368609281.json]
+members: [音频生成/音频生成/FishAudio S2 TTS带语气音频_2037775525090959361.json, 音频生成/音频生成/FishAudio S2 TTS语气标签_2038928881759035393.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2033362779276578818.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2034135360757833730.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2037180942623707137.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2038824621578919937.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2043543938941853698.json, 音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2075456272979283970.json, 音频生成/音频生成/FishAudio_2060290526255083522.json, 音频生成/音频生成/【3月】FishAudio S2TTS单人音色克隆_2033527407566659586.json, 音频生成/音频生成/单人语音克隆-83种语言-FishAudio S2 TTS（含特殊音效）吊打闭源_2033180836341747713.json, 音频生成/音频生成/带强调语气音频生成 FishAudio S2 TTS语气标签自动插入_2036968089769746434.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_196
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/全能视频S文生视频(输入主题自动生成提示词)_1985877663703281666.json、视频生成/文生视频/[众馨]全能视频S文生视频_1981644784269959169.json、视频生成/文生视频/全能视频S 文生视频_1973992409312923649.json、视频生成/文生视频/全能视频S文生视频 (支持横版竖版1080p、支持10s和15s）_1985957787626811393.json、视频生成/文生视频/全能视频S文生视频 openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1976181162492215297.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（音频生成/音频生成/FishAudio S2 TTS带语气音频_2037775525090959361.json、音频生成/音频生成/FishAudio S2 TTS语气标签_2038928881759035393.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2033362779276578818.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2034135360757833730.json、音频生成/音频生成/FishAudio S2 TTS语气标签自动插入_2037180942623707137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_Sora2_T2V`
-- `SaveText|pysssss`
-- `SaveVideo`
-- `ShowText`
+全部 12 个 workflow 都包含：
+- `Audio To Text (mtb)`
+- `FishS2VoiceCloneTTS`
+- `Load Whisper (mtb)`
+- `LoadAudio`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 2/11 个有
-- `LoadImage` —— 1/11 个有
-- `Text Concatenate` —— 1/11 个有
+- `CR Prompt Text` —— 10/12 个有
+- `PrimitiveStringMultiline` —— 10/12 个有
+- `SaveAudioMP3` —— 10/12 个有
+- `RH_LLMAPI_Pro_Node` —— 8/12 个有
+- `SaveAudio` —— 2/12 个有
+- `easy clearCacheAll` —— 1/12 个有
 
 ## 典型参数
 

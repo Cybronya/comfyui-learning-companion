@@ -1,71 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_48
 type: Unknown Workflow
-frequency: 22
+frequency: 26
 level: moderate
-coverage: 0.840227
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.742462
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Infinite Talk+IndexTTS 2 语音克隆版_1995765952610447361.json, 视频生成/图生视频/Infinite Talk单图+音频+提示词=数字人无限MV_1981723961920757761.json, 视频生成/图生视频/Infinite Talk数字人图生视频流V2极速版_2073246385209700353.json, 视频生成/图生视频/Infinite Talk数字人图生视频流双人版_2073246674415349762.json, 视频生成/图生视频/Infinite Talk极速高质量提示词调度动作控制图生视频KTV_1960989551487594497.json, 视频生成/图生视频/Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人_1958729195713097730.json, 视频生成/图生视频/Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人_2016014882017120257.json, 视频生成/图生视频/Infinite Talk极速高质量视频数字人_1983918698648010754.json, 视频生成/图生视频/Infinite talk  超长视频生成图生视频 写实高清视频 数字人说话  Lightx2v+_2026172210423013377.json, 视频生成/图生视频/Infinite talk 动态加强版V2（Lightx2v+Rcm）_2017268323733479425.json, 视频生成/图生视频/Infinite talk动态加强（Lightx2v+Rcm）_1981983249872371714.json, 视频生成/图生视频/Infinite talk单图人物对口型加强版_2015681612746330114.json, 视频生成/图生视频/Infinite talk数字人V4（Lightx2v+Rcm） 浮云12.11_1998792511760031746.json, 视频生成/图生视频/Infinite talk数字人V4（Lightx2v+Rcm） 浮云12.11_1999018182650290177.json, 视频生成/图生视频/Infinite talk数字人V4（Lightx2v+Rcm） 浮云12.30 测试流_2005664941799600130.json, 视频生成/图生视频/Infinite talk数字人动态加强版V2（Lightx2v+Rcm多重注意力机制）_1980212523465084929.json, 视频生成/图生视频/Infinite talk数字人动态加强版（高配动态升级））_2015232276317081602.json, 视频生成/图生视频/Infinite talk数字人动态加强高版V3（Lightx2v+Rcm多重注意力机制）_1981699993402785793.json, 视频生成/图生视频/Infinite talk数字人动态加强高版V4工作流（Lightx2v+Rcm）_2036305163903836161.json, 视频生成/图生视频/Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2046423290310303746.json, 视频生成/图生视频/Infinite talk数字人动态加强高版V4（对口型）_2016403173090533378.json, 视频生成/图生视频/全能图片V1+infinite talk数字人动态加强高版v4（lightx2v+rcm）_1995303342127689730.json]
+members: [视频生成/图生视频/IndexTTS2图生视频对口型_1958425733460815874.json, 视频生成/图生视频/InfiniTetalk  数字人  口播对口型 情感口播   超自然数字人对口型_2085049062558097410.json, 视频生成/图生视频/InfiniTetalk  数字人对口型  对口型 情感口播  数字人  超自然_2075937948620644353.json, 视频生成/图生视频/InfiniTetalk  数字人对口型  对口型 情感口播  数字人  超自然_2080536331532455937.json, 视频生成/图生视频/InfiniTetalk 对口型  超自然数字人情感口播 数字人_2082828282084548609.json, 视频生成/图生视频/InfiniTetalk 对口型 情感口播  数字人 超自然数字人对口型_2091473947605946369.json, 视频生成/图生视频/InfiniTetalk 对口型 情感口播  数字人 超自然数字人对口型_2091507985901244418.json, 视频生成/图生视频/InfiniTetalk 超自然数字人对口型 对口型 情感口播 数字人_2076605840307609602.json, 视频生成/图生视频/InfiniTetalk+美化lora数字人workflow_2101551649981554690.json, 视频生成/图生视频/InfiniTetalk+音频+图片数字人+配音必备神器_2046158426501287938.json, 视频生成/图生视频/InfiniTetalk数字人 对口型 情感口播  超自然数字人对口型_2079894310165766146.json, 视频生成/图生视频/InfiniTetalk数字人 对口型 情感口播  超自然数字人对口型_2080989129587908609.json, 视频生成/图生视频/InfiniTetalk数字人对口型 唱歌MV  超自然数字人对口型_2066129601021169666.json, 视频生成/图生视频/InfiniTetalk数字人对口型 唱歌MV  超自然数字人对口型_2082091396546252802.json, 视频生成/图生视频/InfiniTetalk数字人对口型音频驱动版本_2058786712498823169.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型_2043703040162668545.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型单人图像驱动_2013593490084597762.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型单人图像驱动_2039942750560325634.json, 视频生成/图生视频/InfiniTetalk超自然数字单人对口型_2015642487410401281.json, 视频生成/图生视频/双人对话图生视频_2026471529856372738.json, 视频生成/图生视频/双人对话图生视频_2057657277599010818.json, 视频生成/图生视频/双人播客+电商带货+双人对话图生视频_2020864511145676802.json, 视频生成/图生视频/只需输入任意长度文本直出超自然口播数字人_2052234323893465089.json, 视频生成/文生视频/声音克隆数字人对口型单人图像驱动_可编辑_精简稳定版_稍快版_2076654319981654018.json, 视频生成/文生视频/我的数字人口播3_2095509150016040961.json, 视频生成/文生视频/我的数字人口播_2076595656273260545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_48
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（视频生成/图生视频/Infinite Talk+IndexTTS 2 语音克隆版_1995765952610447361.json、视频生成/图生视频/Infinite Talk单图+音频+提示词=数字人无限MV_1981723961920757761.json、视频生成/图生视频/Infinite Talk数字人图生视频流V2极速版_2073246385209700353.json、视频生成/图生视频/Infinite Talk数字人图生视频流双人版_2073246674415349762.json、视频生成/图生视频/Infinite Talk极速高质量提示词调度动作控制图生视频KTV_1960989551487594497.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（视频生成/图生视频/IndexTTS2图生视频对口型_1958425733460815874.json、视频生成/图生视频/InfiniTetalk  数字人  口播对口型 情感口播   超自然数字人对口型_2085049062558097410.json、视频生成/图生视频/InfiniTetalk  数字人对口型  对口型 情感口播  数字人  超自然_2075937948620644353.json、视频生成/图生视频/InfiniTetalk  数字人对口型  对口型 情感口播  数字人  超自然_2080536331532455937.json、视频生成/图生视频/InfiniTetalk 对口型  超自然数字人情感口播 数字人_2082828282084548609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
+- **样本数**：26
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
+全部 26 个 workflow 都包含：
+- `AudioCrop`
 - `AudioSeparation`
 - `CLIPVisionLoader`
 - `DownloadAndLoadWav2VecModel`
-- `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 21/22 个有
-- `CR Prompt Text` —— 20/22 个有
-- `GetImageSizeAndCount` —— 20/22 个有
-- `LoadAudio` —— 20/22 个有
-- `LoadWanVideoT5TextEncoder` —— 20/22 个有
-- `PreviewAny` —— 20/22 个有
-- `WanVideoBlockSwap` —— 20/22 个有
-- `WanVideoTextEncode` —— 20/22 个有
-- `JWFloat` —— 14/22 个有
-- `PreviewImage` —— 3/22 个有
-- `ImageResize+` —— 2/22 个有
-- `RH_Nano_Banana_Image2Image` —— 2/22 个有
-- `RH_Translator` —— 2/22 个有
-- `VHS_LoadVideoFFmpeg` —— 2/22 个有
-- `VHS_VideoInfoLoaded` —— 2/22 个有
-- `WanVideoTextEncodeCached` —— 2/22 个有
-- `Anything Everywhere` —— 1/22 个有
-- `Audio Duration (mtb)` —— 1/22 个有
-- `IndexTTS2Run` —— 1/22 个有
-- `JjkText` —— 1/22 个有
-- `MathExpression|pysssss` —— 1/22 个有
-- `PreviewAudio` —— 1/22 个有
-- `Text Multiline` —— 1/22 个有
-- `VHS_LoadVideo` —— 1/22 个有
-- `WanVideoTorchCompileSettings` —— 1/22 个有
+- `Audio Duration (mtb)` —— 25/26 个有
+- `GetImageRangeFromBatch` —— 25/26 个有
+- `GetNode` —— 25/26 个有
+- `MathExpression|pysssss` —— 25/26 个有
+- `SetNode` —— 25/26 个有
+- `PlaySound|pysssss` —— 23/26 个有
+- `easy showAnything` —— 15/26 个有
+- `easy int` —— 14/26 个有
+- `Anything Everywhere` —— 13/26 个有
+- `PreviewAudio` —— 11/26 个有
+- `WanVideoTorchCompileSettings` —— 10/26 个有
+- `ColorCorrectOfUtils` —— 6/26 个有
+- `ImageCASharpening+` —— 6/26 个有
+- `IndexTTS2Run` —— 5/26 个有
+- `PrimitiveStringMultiline` —— 4/26 个有
+- `LogicUtil_SleepNodeAny` —— 2/26 个有
+- `Apply Whisper` —— 1/26 个有
+- `CR Text` —— 1/26 个有
+- `GetAudioDurationFromAudio` —— 1/26 个有
+- `Getter` —— 1/26 个有
+- `Label (rgthree)` —— 1/26 个有
+- `MelBandRoFormerModelLoader` —— 1/26 个有
+- `MelBandRoFormerSampler` —— 1/26 个有
+- `PrimitiveString` —— 1/26 个有
+- `SaveAudio` —— 1/26 个有
+- `Setter` —— 1/26 个有
+- `SimpleMath+` —— 1/26 个有
 
 ## 典型参数
 

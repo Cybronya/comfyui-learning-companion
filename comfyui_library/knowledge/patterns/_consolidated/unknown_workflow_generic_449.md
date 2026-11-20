@@ -1,40 +1,43 @@
 ---
 name: unknown_workflow_generic_449
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.448167
-common_nodes: [Fast Groups Muter (rgthree), JjkText, LoadImage, PreviewAny, RHSettingsNode, RH_RhartImageG2ImageToImage, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.789
+common_nodes: [CR Draw Shape, GetImageSizeAndCount, Image Crop Location, ImageCompositeMasked, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LoadImage, Mask Crop Region, MaskPreview+, SaveImage, SplitImageWithAlpha, TTP_Expand_And_Mask]
 problems: []
 missing: []
-members: [图片生成/图生图/G-image2低价版【五图参考】_2094436889347575809.json, 图片生成/图生图/G-image2低价版【五图参考】_2094440139308224514.json, 图片生成/图生图/G-image2低价版【短剧、广告、设计、摄影】_2087359275369848834.json, 图片生成/图生图/G-image2低价版【短剧、广告、设计、摄影】_2094422875485851649.json, 图片生成/图生图/G-image2低价版【短剧、广告、设计、摄影】_2098972993111285762.json, 图片生成/文生图/G-image2低价版【短剧、广告、设计、摄影】_2046763745652776961.json]
+members: [图片生成/图生图/vscode-logo-抠图裁剪_2065671201363677185.json, 图片生成/图生图/一键抠图_2069242214223532033.json, 图片生成/图生图/万能抠图自动抠图透明底去白边_2058540500080222209.json, 图片生成/图生图/抠图（自动抠图+去白边）_1952206056334282753.json, 图片生成/图生图/最强抠图 BiRefNet （自动抠图+去白边）_2037019300644528129.json, 图片生成/图生图/最强智能扣白底图，透明底，可以自定义各种底色，电商专用_2059924781755092993.json, 平台全量/人物抠图（主体抠图）_1881224660024008706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_449
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/G-image2低价版【五图参考】_2094436889347575809.json、图片生成/图生图/G-image2低价版【五图参考】_2094440139308224514.json、图片生成/图生图/G-image2低价版【短剧、广告、设计、摄影】_2087359275369848834.json、图片生成/图生图/G-image2低价版【短剧、广告、设计、摄影】_2094422875485851649.json、图片生成/图生图/G-image2低价版【短剧、广告、设计、摄影】_2098972993111285762.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/vscode-logo-抠图裁剪_2065671201363677185.json、图片生成/图生图/一键抠图_2069242214223532033.json、图片生成/图生图/万能抠图自动抠图透明底去白边_2058540500080222209.json、图片生成/图生图/抠图（自动抠图+去白边）_1952206056334282753.json、图片生成/图生图/最强抠图 BiRefNet （自动抠图+去白边）_2037019300644528129.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `JjkText`
+全部 7 个 workflow 都包含：
+- `CR Draw Shape`
+- `GetImageSizeAndCount`
+- `Image Crop Location`
+- `ImageCompositeMasked`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
 - `LoadImage`
-- `PreviewAny`
-- `RHSettingsNode`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2TextToImage`
+- `Mask Crop Region`
+- `MaskPreview+`
 - `SaveImage`
+- `SplitImageWithAlpha`
+- `TTP_Expand_And_Mask`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
+- `PreviewImage` —— 6/7 个有
 
 ## 典型参数
 

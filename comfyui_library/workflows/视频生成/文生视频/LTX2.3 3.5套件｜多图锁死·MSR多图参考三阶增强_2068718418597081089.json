@@ -6674,8 +6674,8 @@
 			"stage1_allowed_band":"0.10-0.15 megapixels"
 		},
 		"ksk_vhs_safe_conversion_20260619":{
-			"output_folder":"C:\\Users\\KSK\\Documents\\Codex\\2026-06-16\\c-users-ksk-downloads-616-ltx2\\outputs\\LTX2.3_4.0_JSON_WORKFLOWS_OMNICINE_LORA_TUNED_VHS_SAFE",
-			"source_folder":"C:\\Users\\KSK\\Documents\\Codex\\2026-06-16\\c-users-ksk-downloads-616-ltx2\\outputs\\LTX2.3_4.0_JSON_WORKFLOWS_OMNICINE_LORA_TUNED",
+			"output_folder":"C:\\Users\\KSK\\Documents\\Codex\\2026-06-16\\c-users-kREDACTED0000000000000\\outputs\\LTX2.3_4.0_JSON_WORKFLOWS_OMNICINE_LORA_TUNED_VHS_SAFE",
+			"source_folder":"C:\\Users\\KSK\\Documents\\Codex\\2026-06-16\\c-users-kREDACTED0000000000000\\outputs\\LTX2.3_4.0_JSON_WORKFLOWS_OMNICINE_LORA_TUNED",
 			"added_vhs_node":79,
 			"action":"converted SaveVideo/CreateVideo final output to VHS_VideoCombine",
 			"existing_vhs_found":0,

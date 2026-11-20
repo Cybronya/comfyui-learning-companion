@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_317
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.8285
-common_nodes: [CR Text, PromptBatchQueue, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.977778
+common_nodes: [LoadImage, RH_Vidu_Image2Video, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/ppt生成-全能图像G image2.0_2062005096938033154.json, 图片生成/文生图/全能图像G image2.0ppt生成_2070710615466930178.json, 图片生成/文生图/全能图像G image2.0ppt生成_2071064766843539457.json, 图片生成/文生图/全能图像G image2.0ppt生成_2071080439430864898.json, 图片生成/文生图/全能图像G image2.0批量文生图_2059814852197179393.json, 图片生成/文生图/全能图像G image2.0批量文生图_2070714249630019586.json, 图片生成/文生图/全能图像G image2.0批量文生图_2071060280838279169.json, 图片生成/文生图/全能图像G image2.0批量文生图_2071076531887230978.json]
+members: [平台全量/RH Viduq2 图生视频_1982497786375618562.json, 平台全量/Viduq2 首尾帧视频_1982699566933917697.json, 视频生成/图生视频/RH Viduq2 图生视频_1988300769243873282.json, 视频生成/图生视频/Vidu Q2 首尾帧视频_1985000426129035266.json, 视频生成/图生视频/Viduq2图生视频_1982776323204624385.json, 视频生成/图生视频/Viduq2首尾帧图生视频_1982781218146136065.json, 视频生成/图生视频/一镜到底，图生视频嵌入文本与图像_2018320184095805441.json, 视频生成/图生视频/图生视频流程_2060592796674908161.json, 视频生成/文生视频/RH Viduq2 图生视频_1986437827120558081.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_317
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/ppt生成-全能图像G image2.0_2062005096938033154.json、图片生成/文生图/全能图像G image2.0ppt生成_2070710615466930178.json、图片生成/文生图/全能图像G image2.0ppt生成_2071064766843539457.json、图片生成/文生图/全能图像G image2.0ppt生成_2071080439430864898.json、图片生成/文生图/全能图像G image2.0批量文生图_2059814852197179393.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/RH Viduq2 图生视频_1982497786375618562.json、平台全量/Viduq2 首尾帧视频_1982699566933917697.json、视频生成/图生视频/RH Viduq2 图生视频_1988300769243873282.json、视频生成/图生视频/Vidu Q2 首尾帧视频_1985000426129035266.json、视频生成/图生视频/Viduq2图生视频_1982776323204624385.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Text`
-- `PromptBatchQueue`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
+全部 9 个 workflow 都包含：
+- `LoadImage`
+- `RH_Vidu_Image2Video`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `HAIGC_ImagesToPPTX` —— 4/8 个有
-- `easy imageBatchToImageList` —— 4/8 个有
+- `RHHiddenNodes` —— 1/9 个有
+- `ShowText|pysssss` —— 1/9 个有
 
 ## 典型参数
 

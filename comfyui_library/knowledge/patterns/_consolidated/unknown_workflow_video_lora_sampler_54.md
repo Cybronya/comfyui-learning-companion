@@ -1,69 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_54
 type: Unknown Workflow
-frequency: 21
+frequency: 25
 level: moderate
-coverage: 0.947238
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, Int, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+coverage: 0.81332
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/Infinite Talk单人版_1988502915675504642.json, 数字人/数字人/Infinite Talk多角色单人说话_1979921056326651906.json, 数字人/数字人/Infinitetalk单人数字人无限时长自循环_2088948708812611585.json, 数字人/数字人/Infinitetalk单人数字人无限时长自循环_2108715715753766913.json, 数字人/数字人/Infinitetalk数字人_2011352254523117570.json, 数字人/数字人/digital_combination.json_2061365227471589378.json, 数字人/数字人/infinitetalk单人_1971164845422845953.json, 数字人/数字人/infinitetalk单人_1982997553975296001.json, 数字人/数字人/infinitetalk单人_2015405889087348737.json, 数字人/数字人/infinitetalk单人_2045855900015009793.json, 数字人/数字人/infinitetalk单人数字人 横版_2082645345531682818.json, 数字人/数字人/infinitetalk单图数字人_1972220887082725378.json, 数字人/数字人/infinitetalk单图数字人_2010695881040859138.json, 数字人/数字人/infinitetalk数字人_1958547075095019522.json, 数字人/数字人/multi synic_1992613566192873473.json, 数字人/数字人/出单捷径：生成虚拟IP口播数字人视频工作流_2043705488394686466.json, 数字人/数字人/图片+音频对口型_2039190838558855170.json, 数字人/数字人/对口型-数字人_2052629675733733377.json, 数字人/数字人/常用Infinite Talk单人版 720P_2002190519998529538.json, 视频生成/图生视频/API-对口型-数字人_2051682079896809474.json, 视频生成/图生视频/InfiniteTalk_单人 数字人_1978645327920173058.json]
+members: [视频生成/图生视频/MiniMax H3 文生视频 _ 图生视频 首尾帧 【超级加速版】_1896972443683069953.json, 视频生成/图生视频/MiniMax H3-4步加速-图生视频_2090916306450210818.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2086823760027545602.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087059347460411394.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087069140904407041.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087886342087860226.json, 视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速_2085708995028938754.json, 视频生成/图生视频/MiniMax H3-图生视频V1-双时钟-8步高质量极速-step600_2086814507325808641.json, 视频生成/图生视频/MiniMax H3-图生视频V1-双时钟-8步高质量极速-step600_2087891422266609666.json, 视频生成/图生视频/MiniMax H3-图生视频V1-双时钟-8步高质量极速_2085709043984855041.json, 视频生成/图生视频/MiniMax H3-视频复刻-数字人-加速版-参考生视频-长视频直出_2102344546796523522.json, 视频生成/图生视频/MiniMax H3-首尾帧视频V1-双时钟-8步高质量极速-step600_2087895091745738753.json, 视频生成/图生视频/MiniMax H3开源 音频驱动数字人图生视频加速版_2092558393386033154.json, 视频生成/图生视频/MiniMax H3开源版 去油版数字人_口播_唱歌_MV加速版_2088208371999657986.json, 视频生成/图生视频/MiniMax H3开源版 去油版数字人_口播_唱歌_MV加速版_2088234673238536194.json, 视频生成/图生视频/MiniMax H3数字人音乐MV加速版V1_2101835373805658113.json, 视频生成/图生视频/MiniMax H3音频驱动数字人-参考生视频-长视频直出【加速版】_2103404335605571585.json, 视频生成/图生视频/MiniMax H3音频驱动数字人-多人对话-一键实现语音+口型同步_2101937972219305986.json, 视频生成/图生视频/Minimax H3 参考生视频 ｜不油、不崩脸、真实感强｜Hybird V1 + Sla 4步加速_2091946357614534657.json, 视频生成/图生视频/Minimax H3-参考生视频-电商带货-创意视频_2107731728155627522.json, 视频生成/图生视频/minimax H3 8.23_2091335794387673090.json, 视频生成/图生视频/音频驱动 H3数字人 唱歌MV（多参视频生成）_2092869013713022978.json, 视频生成/图生视频/音频驱动 H3数字人_2092779198917210114.json, 视频生成/文生视频/MiniMax H3音频驱动数字人-加速版-参考生视频-超长时长_2100241874136166402.json, 视频生成/文生视频/MiniMax H3音频驱动数字人-加速版-参考生视频-长视频直出_2100530217365364737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_54
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（数字人/数字人/Infinite Talk单人版_1988502915675504642.json、数字人/数字人/Infinite Talk多角色单人说话_1979921056326651906.json、数字人/数字人/Infinitetalk单人数字人无限时长自循环_2088948708812611585.json、数字人/数字人/Infinitetalk单人数字人无限时长自循环_2108715715753766913.json、数字人/数字人/Infinitetalk数字人_2011352254523117570.json…）
+> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 文生视频 _ 图生视频 首尾帧 【超级加速版】_1896972443683069953.json、视频生成/图生视频/MiniMax H3-4步加速-图生视频_2090916306450210818.json、视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2086823760027545602.json、视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087059347460411394.json、视频生成/图生视频/MiniMax H3-参考生视频V1-双时钟-8步高质量极速-step600_2087069140904407041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
+- **样本数**：25
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `Int`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
-- `ToInt`
+全部 25 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 19/21 个有
-- `LoadAudio` —— 17/21 个有
-- `RH_GetAudioDuration` —— 16/21 个有
-- `PrimitiveStringMultiline` —— 4/21 个有
-- `ImageUpscaleWithModel` —— 3/21 个有
-- `ImpactInt` —— 3/21 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/21 个有
-- `Upscale Model Loader` —— 3/21 个有
-- `VHS_LoadAudioUpload` —— 3/21 个有
-- `easy int` —— 3/21 个有
-- `Load Image From Url (mtb)` —— 2/21 个有
-- `LoadAudioFromUrl` —— 2/21 个有
-- `PrimitiveString` —— 2/21 个有
-- `SoundFlow_GetLength` —— 2/21 个有
-- `VHS_LoadAudio` —— 2/21 个有
-- `EmptyAudio` —— 1/21 个有
+- `MiniMaxH3AVDecodeT8` —— 24/25 个有
+- `PrimitiveFloat` —— 24/25 个有
+- `ResolutionSelector` —— 24/25 个有
+- `孤海注释` —— 16/25 个有
+- `ModelAttentionBackend` —— 14/25 个有
+- `SolAttnMiniMax` —— 12/25 个有
+- `LoadAudio` —— 11/25 个有
+- `PreviewAudio` —— 4/25 个有
+- `TrimAudioDuration` —— 4/25 个有
+- `JjkText` —— 2/25 个有
+- `easy cleanGpuUsed` —— 2/25 个有
+- `AudioCrop` —— 1/25 个有
+- `GoohaiUniversalSlider` —— 1/25 个有
+- `VAEDecode` —— 1/25 个有
+- `VAEDecodeAudio` —— 1/25 个有
+- `VHS_LoadVideo` —— 1/25 个有
+- `easy clearCacheAll` —— 1/25 个有
+- `忽略多组孤海` —— 1/25 个有
 
 ## 典型参数
 

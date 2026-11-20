@@ -2,58 +2,76 @@
 name: unknown_workflow_lora_sampler_clip_234
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.893333
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, KSamplerSelect, LoraLoader, PreviewImage, RandomNoise, SDXLEmptyLatentSizePicker+, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: moderate
+coverage: 0.846667
+common_nodes: [AIO_Preprocessor, Anything Everywhere3, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DrawMaskOnImage, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), FastCanvas, FastCanvasTool, Flux2Scheduler, GetImageSize, GrowMask, ImagePadKJ, Int, KSamplerSelect, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LayerUtility: ColorImage V2, LayerUtility: ImageBlendAdvance, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/文生图/游戏图标icon_1953439745546309634.json, 图片生成/文生图/游戏图标icon一键生成_1937517741597179906.json, 图片生成/文生图/蒜-对比2个大模型出图效果_1996919135156256770.json]
+members: [图片生成/图生图/青沫-Flux2_klein_TrueV2图像编辑全功能合集（自用）_2097566514273673217.json, 图片生成/文生图/Flux2_klein_TrueV2图像编辑全功能合集_2051679334766788609.json, 平台全量/Flux2_Klein_Truev2-图片编辑工作流合集_2064671268640743426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_234
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/游戏图标icon_1953439745546309634.json、图片生成/文生图/游戏图标icon一键生成_1937517741597179906.json、图片生成/文生图/蒜-对比2个大模型出图效果_1996919135156256770.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/青沫-Flux2_klein_TrueV2图像编辑全功能合集（自用）_2097566514273673217.json、图片生成/文生图/Flux2_klein_TrueV2图像编辑全功能合集_2051679334766788609.json、平台全量/Flux2_Klein_Truev2-图片编辑工作流合集_2064671268640743426.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `AIO_Preprocessor`
+- `Anything Everywhere3`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
+- `ConditioningZeroOut`
+- `DrawMaskOnImage`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `FastCanvas`
+- `FastCanvasTool`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GrowMask`
+- `ImagePadKJ`
+- `Int`
 - `KSamplerSelect`
-- `LoraLoader`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModel`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ImageBlendAdvance`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `Mask Fill Holes`
 - `PreviewImage`
 - `RandomNoise`
-- `SDXLEmptyLatentSizePicker+`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `DisplayText` —— 2/3 个有
-- `TextConcat` —— 2/3 个有
-- `Textbox` —— 2/3 个有
-- `FluxGuidance` —— 1/3 个有
-- `ModelSamplingFlux` —— 1/3 个有
-- `ttN imageREMBG` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `GetNode` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `SetNode` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1024x1024 (1.0) | - | 3 | 33% |
-| 高度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,7 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 最常用 1024x1024 (1.0)，3 个样本，一致性 33%
-- 高度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

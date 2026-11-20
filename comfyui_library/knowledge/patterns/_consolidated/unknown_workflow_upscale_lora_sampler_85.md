@@ -1,99 +1,96 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_85
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9185
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, Image Comparer (rgthree), ImageListToImageBatch, ImageResizeKJ, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler (Efficient), LoadImage, LoraLoaderModelOnly, PreviewImage, RH_Translator, ReferenceLatent, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy clearCacheAll, easy imageBatchToImageList, easy imageSize]
-problems: []
+frequency: 3
+level: moderate
+coverage: 0.745
+common_nodes: [AutoCropFaces, CLIPLoader, ConditioningZeroOut, Fast Groups Bypasser (rgthree), GGUFLoaderKJ, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveBoolean, PrimitiveStringMultiline, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAELoader, easy ifElse]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/8步快速出图超强！图像编辑FLUX.1 Kontext-DEV一键去水印或者文字_1938870254367858690.json, 图片生成/图生图/kontext-dev迄今8步最强原图重新打光溶图光影融合万物99%保持物置大小不变，保留中文细信息_1954718279141081090.json]
+members: [图片生成/图生图/脸部生成全身照Qwen Image Edit AIO 版_2075080327214755842.json, 图片生成/图生图/脸部生成全身照洗图版_2075078074802196482.json, 图片生成/图生图/高还原度换脸 Qwen Image Edit F2P lora_2075075662355980290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_85
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/8步快速出图超强！图像编辑FLUX.1 Kontext-DEV一键去水印或者文字_1938870254367858690.json、图片生成/图生图/kontext-dev迄今8步最强原图重新打光溶图光影融合万物99%保持物置大小不变，保留中文细信息_1954718279141081090.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/脸部生成全身照Qwen Image Edit AIO 版_2075080327214755842.json、图片生成/图生图/脸部生成全身照洗图版_2075078074802196482.json、图片生成/图生图/高还原度换脸 Qwen Image Edit F2P lora_2075075662355980290.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPTextEncode`
+全部 3 个 workflow 都包含：
+- `AutoCropFaces`
+- `CLIPLoader`
 - `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
-- `Image Comparer (rgthree)`
-- `ImageListToImageBatch`
-- `ImageResizeKJ`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
-- `KSampler (Efficient)`
+- `Fast Groups Bypasser (rgthree)`
+- `GGUFLoaderKJ`
+- `KSampler`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `PreviewImage`
-- `RH_Translator`
-- `ReferenceLatent`
+- `PrimitiveBoolean`
+- `PrimitiveStringMultiline`
 - `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
-- `UpscaleModelLoader`
-- `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy imageBatchToImageList`
-- `easy imageSize`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere3` —— 1/2 个有
-- `ConstrainImage|pysssss` —— 1/2 个有
-- `DF_Text_Box` —— 1/2 个有
-- `Fast Bypasser (rgthree)` —— 1/2 个有
-- `ImageColorMatch+` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
-- `easy promptConcat` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
-- `workflow>不要动1` —— 1/2 个有
+- `AILab_QwenVL` —— 2/3 个有
+- `CFGNorm` —— 2/3 个有
+- `CheckpointLoaderSimple` —— 2/3 个有
+- `EmptySD3LatentImage` —— 2/3 个有
+- `Float` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `ModelSamplingAuraFlow` —— 2/3 个有
+- `Text Concatenate` —— 2/3 个有
+- `VAEDecodeTiled` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `DifferentialDiffusion` —— 1/3 个有
+- `DrawMaskOnImage` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `ImageRemoveAlpha+` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 1/3 个有
+- `InpaintModelConditioning` —— 1/3 个有
+- `LayerMask: HumanPartsUltra` —— 1/3 个有
+- `LayerMask: MaskGrow` —— 1/3 个有
+- `LayerMask: MaskPreview` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `VAEDecode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.15 | - | 2 | 67% |
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1024 | - | 2 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 4 | 4 - 8 | 3 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 67% |
+| 调度器 | beta | - | 3 | 67% |
+| 重绘幅度 | 1 | 0.7 - 1 | 3 | 84% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 2/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.15，样本不足，未给区间，2 个样本
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 67%
+- 调度器 最常用 beta，3 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 0.7 - 1，3 个样本，取值集中（一致性 84%）
+- 高发问题（4/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（2/3 个样本）：发现KSampler但没有VAEDecode

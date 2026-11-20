@@ -1,47 +1,37 @@
 ---
 name: unknown_workflow_generic_1377
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.932
-common_nodes: [FastCanvas, FastCanvasTool, Get resolution [Crystools], LayerUtility: ColorImage, LayerUtility: ImageBlend, LayerUtility: ImageOpacity, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, MuyeTextEditOutput, SaveImage, easy imageRemBg]
+frequency: 3
+level: moderate
+coverage: 0.731333
+common_nodes: [LoadImage, PrimitiveStringMultiline, RH_Sora2_I2V, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/KMQ-LOGO样图定制_2041044001616302081.json, 图片生成/图生图/KMQ-LOGO样图定制_2041062606558990337.json]
+members: [视频生成/图生视频/视频-图生视频-全能视频S_1985541163090329601.json, 视频生成/文生视频/全能视频S-电影预告片+动物跳舞+纸巾变鱼_1976522930123313154.json, 视频生成/文生视频/全能视频S最强文生视频、图生视频二合一工作流15秒_1996207366158819329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1377
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/KMQ-LOGO样图定制_2041044001616302081.json、图片生成/图生图/KMQ-LOGO样图定制_2041062606558990337.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/视频-图生视频-全能视频S_1985541163090329601.json、视频生成/文生视频/全能视频S-电影预告片+动物跳舞+纸巾变鱼_1976522930123313154.json、视频生成/文生视频/全能视频S最强文生视频、图生视频二合一工作流15秒_1996207366158819329.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `FastCanvas`
-- `FastCanvasTool`
-- `Get resolution [Crystools]`
-- `LayerUtility: ColorImage`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageOpacity`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 3 个 workflow 都包含：
 - `LoadImage`
-- `MaskToImage`
-- `MuyeTextEditOutput`
-- `SaveImage`
-- `easy imageRemBg`
+- `PrimitiveStringMultiline`
+- `RH_Sora2_I2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Remove Background (Alpha)` —— 1/2 个有
-- `ImageToMask` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `ZML_AnyTypeSwitch` —— 1/2 个有
+- `RH_Sora2_T2V` —— 2/3 个有
+- `easy seed` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -53,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

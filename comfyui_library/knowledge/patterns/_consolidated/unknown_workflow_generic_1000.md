@@ -1,33 +1,36 @@
 ---
 name: unknown_workflow_generic_1000
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [ConcatTextOfUtils, LoadImage, RH_Captioner, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.857
+common_nodes: [LoadImage, RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/产品KV排版_2099759370530803714.json, 图片生成/图生图/产品KV排版_2100865001560039426.json, 图片生成/图生图/产品KV排版_2101133292077674498.json]
+members: [视频生成/图生视频/Happyhorse  文生视频+参考图生视频二合一_2050787317543124993.json, 视频生成/图生视频/Happyhorse 1.0 图生视频_2048930844718407682.json, 视频生成/图生视频/Happyhorse1.0 图生视频_2048761610067517441.json, 视频生成/文生视频/Happyhorse1.0 文生视频_2048769437599277058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1000
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品KV排版_2099759370530803714.json、图片生成/图生图/产品KV排版_2100865001560039426.json、图片生成/图生图/产品KV排版_2101133292077674498.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Happyhorse  文生视频+参考图生视频二合一_2050787317543124993.json、视频生成/图生视频/Happyhorse 1.0 图生视频_2048930844718407682.json、视频生成/图生视频/Happyhorse1.0 图生视频_2048761610067517441.json、视频生成/文生视频/Happyhorse1.0 文生视频_2048769437599277058.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ConcatTextOfUtils`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_Captioner`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+- `RH_AlibabaHappyhorse10TextToVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_AlibabaHappyhorse10ImageToVideo` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `RH_AlibabaHappyhorse10ReferenceToVideo` —— 1/4 个有
 
 ## 典型参数
 

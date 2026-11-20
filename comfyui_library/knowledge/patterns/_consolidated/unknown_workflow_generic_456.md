@@ -1,39 +1,42 @@
 ---
 name: unknown_workflow_generic_456
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, Preview3D, RunningHubPixal3DImageTo3D, RunningHubPixal3DModelLoader, RunningHubPixal3DSaveGLB]
+coverage: 0.709
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_gpt_image_2, Fast Groups Bypasser (rgthree), LoadImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Pixal3D 图像生成3D形象--桌宠、虚拟人_2056651420660756482.json, 图片生成/图生图/Pixal3D 图转3D_2073321666113007617.json, 图片生成/图生图/Pixal3D-图片转3D_2055657209236869121.json, 图片生成/图生图/图片转3D模型_2059133516037844993.json, 图片生成/图生图/👾怪獸-Pixal3D 图像转3D👾_2055563799721193474.json, 视频生成/文生视频/Pixal3D Image to 3D_2057792674358452225.json]
+members: [图片生成/图生图/上传产品_模特生成海报图 最新超强image2图生图_2053290085801578498.json, 图片生成/图生图/全能图片 脸部生成全身照片  image-2+全能图像编辑 贞贞的AI工坊_2052215475924418561.json, 图片生成/图生图/最新超强image2图生图 上传产品_模特生成海报图_2053291754660610050.json, 图片生成/图生图/脸部生成全身照片 全能图片 image-2+全能图像编辑    贞贞的AI工坊_2052213526911045633.json, 图片生成/文生图/image2  万能图像编辑 gxx-image-2 图生图 全能图像编辑 海报生成_2048968377275785218.json, 图片生成/文生图/万能图像编辑 gxx-image-2 image2 图生图 全能图像编辑 海报生成_2048941435507974146.json, 平台全量/拼贴写真海报 美图生成-抖音快手小红书 洗图 文生图 人像写真_2059455032558444546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_456
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Pixal3D 图像生成3D形象--桌宠、虚拟人_2056651420660756482.json、图片生成/图生图/Pixal3D 图转3D_2073321666113007617.json、图片生成/图生图/Pixal3D-图片转3D_2055657209236869121.json、图片生成/图生图/图片转3D模型_2059133516037844993.json、图片生成/图生图/👾怪獸-Pixal3D 图像转3D👾_2055563799721193474.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/上传产品_模特生成海报图 最新超强image2图生图_2053290085801578498.json、图片生成/图生图/全能图片 脸部生成全身照片  image-2+全能图像编辑 贞贞的AI工坊_2052215475924418561.json、图片生成/图生图/最新超强image2图生图 上传产品_模特生成海报图_2053291754660610050.json、图片生成/图生图/脸部生成全身照片 全能图片 image-2+全能图像编辑    贞贞的AI工坊_2052213526911045633.json、图片生成/文生图/image2  万能图像编辑 gxx-image-2 图生图 全能图像编辑 海报生成_2048968377275785218.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_gpt_image_2`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `Preview3D`
-- `RunningHubPixal3DImageTo3D`
-- `RunningHubPixal3DModelLoader`
-- `RunningHubPixal3DSaveGLB`
+- `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 3/6 个有
-- `easy saveText` —— 3/6 个有
-- `InspyrenetRembg` —— 1/6 个有
-- `SaveText|pysssss` —— 1/6 个有
+- `JjkText` —— 5/7 个有
+- `RH_RhartImageG2ImageToImage` —— 5/7 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/7 个有
+- `RH_RhartImageG2TextToImage` —— 2/7 个有
+- `AspectRatioSelect` —— 1/7 个有
 
 ## 典型参数
 

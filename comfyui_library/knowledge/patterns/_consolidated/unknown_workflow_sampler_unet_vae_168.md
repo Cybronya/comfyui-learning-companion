@@ -1,66 +1,74 @@
 ---
 name: unknown_workflow_sampler_unet_vae_168
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.838143
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.727125
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, KSamplerSelect, LoadImage, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/开源 Minimax-H3 多参全模态音视频生成_2084313713590493186.json, 视频生成/图生视频/开源 Minimax-H3 数字人（多参视频生成）_2084210486131908609.json, 视频生成/图生视频/海螺H3 多参视频（加速节点-加速版）768P_2085282734813044738.json, 视频生成/图生视频/海螺H3 数字人（多参视频生成）开源版_2085277180266893314.json, 视频生成/图生视频/海螺H3八步极速生成全能参考生视频_2087529254698446850.json, 视频生成/文生视频/Minimax H3多参视频生成+全节点注释_2084873538615472129.json, 视频生成/文生视频/Minimax-h3 多模态全能参考版_2093519190757044225.json]
+members: [数字人/数字人/🎙原生对白一起生成｜MiniMax H3 V5.1 · Ref8 × SelfLift_2115813641588137986.json, 视频生成/图生视频/H3完整版-无LoRA-480P_2099176270763479041.json, 视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2101858620555223042.json, 视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2102674471441227777.json, 视频生成/图生视频/Minimax H3 最佳动作视频生成 Ref2V 工作流_2112874707992276993.json, 视频生成/图生视频/YZ金鱼-MiniMax H3-三图参考版_2117081149389500418.json, 视频生成/图生视频/【开源】MiniMax-H3 加速双采-self-lift_2099618432286281730.json, 视频生成/图生视频/（修脸极速）黑科技加速minimax h3 self-lift双采多参生视频_2098223404263497730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_168
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/开源 Minimax-H3 多参全模态音视频生成_2084313713590493186.json、视频生成/图生视频/开源 Minimax-H3 数字人（多参视频生成）_2084210486131908609.json、视频生成/图生视频/海螺H3 多参视频（加速节点-加速版）768P_2085282734813044738.json、视频生成/图生视频/海螺H3 数字人（多参视频生成）开源版_2085277180266893314.json、视频生成/图生视频/海螺H3八步极速生成全能参考生视频_2087529254698446850.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/🎙原生对白一起生成｜MiniMax H3 V5.1 · Ref8 × SelfLift_2115813641588137986.json、视频生成/图生视频/H3完整版-无LoRA-480P_2099176270763479041.json、视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2101858620555223042.json、视频生成/图生视频/MiniMax_H3｜TaoMate_3步加速_lora_2102674471441227777.json、视频生成/图生视频/Minimax H3 最佳动作视频生成 Ref2V 工作流_2112874707992276993.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
+全部 8 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `ConditioningZeroOut`
 - `KSamplerSelect`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SelfLiftH3Sampler`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 5/7 个有
-- `ResolutionSelector` —— 5/7 个有
-- `CR Text` —— 4/7 个有
-- `PathchSageAttentionKJ` —— 4/7 个有
-- `PrimitiveStringMultiline` —— 4/7 个有
-- `VHS_LoadVideoFFmpeg` —— 4/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `EasyCache` —— 2/7 个有
-- `Int` —— 2/7 个有
-- `AnyBooleanSwitch` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
-- `MiniMaxH3BlockCacheT8` —— 1/7 个有
-- `PrimitiveBoolean` —— 1/7 个有
-- `SolAttnPatch` —— 1/7 个有
-- `Text` —— 1/7 个有
+- `CreateVideo` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `ResolutionSelector` —— 7/8 个有
+- `ComfyMathExpression` —— 6/8 个有
+- `LoadAudio` —— 6/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/8 个有
+- `ModelAttentionBackend` —— 6/8 个有
+- `PrimitiveFloat` —— 6/8 个有
+- `SaveVideo` —— 5/8 个有
+- `ModelPreviewOverrideKJ` —— 4/8 个有
+- `GetNode` —— 3/8 个有
+- `H3SigmaRefiner` —— 3/8 个有
+- `MiniMaxH3SigmaShift` —— 3/8 个有
+- `PrimitiveStringMultiline` —— 3/8 个有
+- `SetNode` —— 3/8 个有
+- `Text` —— 3/8 个有
+- `VHS_VideoCombine` —— 3/8 个有
+- `BlockSparseAttention` —— 2/8 个有
+- `LTXVSeparateAVLatent` —— 2/8 个有
+- `LoraLoader` —— 2/8 个有
+- `MiniMaxChunkFeedForward` —— 2/8 个有
+- `MiniMaxH3AudioConditioningT8` —— 2/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/8 个有
+- `MiniMaxLowVRAMAttention` —— 1/8 个有
+- `VHS_LoadVideo` —— 1/8 个有
+- `easy float` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 0.75 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -68,4 +76,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- LoRA 模型强度 中位数 0.75，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

@@ -1,50 +1,37 @@
 ---
 name: unknown_workflow_video_111
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.508
-common_nodes: [GetNode, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, PlaySound|pysssss, PreviewAny, PreviewImage, PrimitiveString, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, SetNode, StringConcatenate, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy int]
+frequency: 4
+level: moderate
+coverage: 0.96875
+common_nodes: [LoadImage, RunningHub_FramePack, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/SeedVR2高清视频放大  最强视频放大神器_1999758543504932866.json, 视频生成/图生视频/当今最强视频放大神器 SeedVR2_1974856721065709570.json]
+members: [视频生成/图生视频/87工具流 FramePack  图生视频_1913506656041299970.json, 视频生成/图生视频/FramePack_1913209812224569346.json, 视频生成/图生视频/FramePack混元首尾帧图生视频_1915426980001681410.json, 视频生成/图生视频/framepack首尾帧图生视频_1914240027012886529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_111
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SeedVR2高清视频放大  最强视频放大神器_1999758543504932866.json、视频生成/图生视频/当今最强视频放大神器 SeedVR2_1974856721065709570.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/87工具流 FramePack  图生视频_1913506656041299970.json、视频生成/图生视频/FramePack_1913209812224569346.json、视频生成/图生视频/FramePack混元首尾帧图生视频_1915426980001681410.json、视频生成/图生视频/framepack首尾帧图生视频_1914240027012886529.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `GetNode`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `PlaySound|pysssss`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveString`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SeedVR2GGUF`
-- `SetNode`
-- `StringConcatenate`
-- `VHS_LoadVideo`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `RunningHub_FramePack`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 1/2 个有
-- `ImageResizeKJ` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
+- `ImageResizeKJ` —— 3/4 个有
+- `Int` —— 2/4 个有
+- `String Literal` —— 2/4 个有
+- `JjkText` —— 1/4 个有
 
 ## 典型参数
 
@@ -56,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

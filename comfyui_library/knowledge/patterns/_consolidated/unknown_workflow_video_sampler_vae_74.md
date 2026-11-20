@@ -1,66 +1,63 @@
 ---
 name: unknown_workflow_video_sampler_vae_74
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.812429
-common_nodes: [LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.98425
+common_nodes: [CLIPVisionLoader, Compare, DWPreprocessor, FaceMaskFromPoseKeypoints, INTConstant, If ANY execute A else B, ImageFromBatch, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart]
 problems: []
 missing: []
-members: [视频生成/图生视频/【阡陌】Ditto只需一句话视频风格转绘_1984179008936050689.json, 视频生成/图生视频/电商商品展示_1924016884511854593.json, 视频生成/图生视频/电商首尾帧丝滑转场特效（加速版）_1991857702083293186.json, 视频生成/图生视频/直播图生视频（加速版）_1928609349776654338.json, 视频生成/图生视频/直播首尾帧图生视频（加速版）_1930066639159508993.json, 视频生成/图生视频/直播首尾帧生成人物换装视频（加速版）_1946416276699013121.json, 视频生成/图生视频/进阶版直播真实视频转动漫_1948659044000104450.json]
+members: [视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json, 视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情胸部略微抖动_2039951088849260546.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）3月8号_2030568462560534529.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json, 视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json, 视频生成/图生视频/需要Plus跑通，角色替换+动作迁移+面部表情_2034480754176036865.json, 视频生成/图生视频/需要Plus跑通，角色替换+动作迁移+面部表情_2046249922785189889.json, 视频生成/图生视频/需要Plus跑通，角色替换+动作迁移+面部表情_2046394046041563138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_74
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/【阡陌】Ditto只需一句话视频风格转绘_1984179008936050689.json、视频生成/图生视频/电商商品展示_1924016884511854593.json、视频生成/图生视频/电商首尾帧丝滑转场特效（加速版）_1991857702083293186.json、视频生成/图生视频/直播图生视频（加速版）_1928609349776654338.json、视频生成/图生视频/直播首尾帧图生视频（加速版）_1930066639159508993.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情优化身材_2035224178051256321.json、视频生成/图生视频/动作迁移PLUS【不限时长】优化动作和面部表情胸部略微抖动_2039951088849260546.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）3月8号_2030568462560534529.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化可全部解密）_2099046947024887810.json、视频生成/图生视频/角色替换+动作迁移+面部表情=爆款复刻（排版优化）2月3号_2018532380960628737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 8 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `Compare`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `INTConstant`
+- `If ANY execute A else B`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `OnnxDetectionModelLoader`
+- `PixelPerfectResolution`
+- `PoseAndFaceDetection`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
+- `WanVideoSetBlockSwap`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `WanVideoEnhanceAVideo` —— 6/7 个有
-- `WanVideoExperimentalArgs` —— 6/7 个有
-- `WanVideoLoraSelect` —— 6/7 个有
-- `ImageRepeat` —— 5/7 个有
-- `JjkText` —— 5/7 个有
-- `ImageAndMaskPreview` —— 4/7 个有
-- `Int` —— 4/7 个有
-- `WanVideoVACEStartToEndFrame` —— 4/7 个有
-- `PreviewImage` —— 3/7 个有
-- `ImageResizeKJv2` —— 2/7 个有
-- `VHS_LoadVideo` —— 2/7 个有
-- `WanVideoFreeInitArgs` —— 2/7 个有
-- `WanVideoTeaCache` —— 2/7 个有
-- `easy imageConcat` —— 2/7 个有
-- `DepthAnything_V2` —— 1/7 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 1/7 个有
-- `Fast Groups Muter (rgthree)` —— 1/7 个有
-- `GetNode` —— 1/7 个有
-- `ImageFromBatch` —— 1/7 个有
-- `ImageFromBatch+` —— 1/7 个有
-- `SaveImage` —— 1/7 个有
-- `SetNode` —— 1/7 个有
-- `VHS_MergeImages` —— 1/7 个有
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 
 ## 典型参数
 

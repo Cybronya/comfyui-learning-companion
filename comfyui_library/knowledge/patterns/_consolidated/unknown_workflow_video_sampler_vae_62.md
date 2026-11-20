@@ -3,61 +3,64 @@ name: unknown_workflow_video_sampler_vae_62
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.948875
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.898625
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan数字人对口型工作流_2065613874346418178.json, 视频生成/文生视频/InfiniteTalk对口型_1963933041288728578.json, 视频生成/文生视频/infinitetalk图片数字人唱歌不限时长版_2004411444588408834.json, 视频生成/文生视频/最强数字人infinitetalk（图片唱歌图片说话）_1957952304787898369.json, 音频生成/音频生成/InfiniteTalk数字人-唱歌自由_2046674996084346882.json, 音频生成/音频生成/超强视频对口型唱歌数字人_2100410279401181185.json, 音频生成/音频生成/超强视频对口型唱歌数字人_2100497922336055297.json, 音频生成/音频生成/超自然对口型 视频数字人_2000587001097224194.json]
+members: [图片生成/图生图/Wan-VACE-图生视频_1933481916970487810.json, 平台全量/CausVid-3步720P视频扩展(Wan2.1&MoviiGen&Skyreels)_1923429151527587842.json, 平台全量/WAN-VACE（视频扩展）_1909169358428643330.json, 平台全量/Wan2.1-VACE视频镜头画面扩展延伸_1988234816409788417.json, 平台全量/视频扩展(Wan2.1-VACE-14B)_1923187127436103682.json, 平台全量/视频的虚拟换装-一步到位-参考编辑_1935181584616050690.json, 视频生成/图生视频/CausVid-3步720P首尾帧(Wan2.1&MoviiGen&Skyreels)_1923394290066575361.json, 视频生成/图生视频/vace-1.3b-1280-causvid-pose-fast_1924012489724317698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_62
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/wan数字人对口型工作流_2065613874346418178.json、视频生成/文生视频/InfiniteTalk对口型_1963933041288728578.json、视频生成/文生视频/infinitetalk图片数字人唱歌不限时长版_2004411444588408834.json、视频生成/文生视频/最强数字人infinitetalk（图片唱歌图片说话）_1957952304787898369.json、音频生成/音频生成/InfiniteTalk数字人-唱歌自由_2046674996084346882.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Wan-VACE-图生视频_1933481916970487810.json、平台全量/CausVid-3步720P视频扩展(Wan2.1&MoviiGen&Skyreels)_1923429151527587842.json、平台全量/WAN-VACE（视频扩展）_1909169358428643330.json、平台全量/Wan2.1-VACE视频镜头画面扩展延伸_1988234816409788417.json、平台全量/视频扩展(Wan2.1-VACE-14B)_1923187127436103682.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `MultiTalkWav2VecEmbeds`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 7/8 个有
-- `AudioSeparation` —— 7/8 个有
-- `INTConstant` —— 7/8 个有
-- `MultiTalkModelLoader` —— 7/8 个有
-- `WanVideoLoraSelect` —— 6/8 个有
-- `Anything Everywhere` —— 5/8 个有
-- `LoadImage` —— 5/8 个有
-- `WanVideoTextEncodeCached` —— 5/8 个有
-- `GetImageRangeFromBatch` —— 4/8 个有
-- `WanVideoEncode` —— 4/8 个有
-- `easy int` —— 4/8 个有
-- `LoadWanVideoT5TextEncoder` —— 3/8 个有
-- `VHS_LoadVideo` —— 3/8 个有
-- `WanVideoTextEncode` —— 3/8 个有
-- `AudioCropProcessUTK` —— 1/8 个有
-- `MelBandRoFormerModelLoader` —— 1/8 个有
-- `MelBandRoFormerSampler` —— 1/8 个有
-- `PreviewAudio` —— 1/8 个有
-- `RHHiddenNodes` —— 1/8 个有
+- `WanVideoSLG` —— 7/8 个有
+- `WanVideoTeaCache` —— 7/8 个有
+- `WanVideoVACEModelSelect` —— 7/8 个有
+- `ImageResizeKJ` —— 6/8 个有
+- `String Literal` —— 6/8 个有
+- `VHS_LoadVideo` —— 6/8 个有
+- `WanVideoTorchCompileSettings` —— 6/8 个有
+- `GetImageSize+` —— 5/8 个有
+- `MaskToImage` —— 5/8 个有
+- `ImagePadKJ` —— 4/8 个有
+- `LoadImage` —— 4/8 个有
+- `GetNode` —— 3/8 个有
+- `WanVideoLoraSelect` —— 3/8 个有
+- `GetImageSizeAndCount` —— 2/8 个有
+- `GrowMaskWithBlur` —— 2/8 个有
+- `INTConstant` —— 2/8 个有
+- `SetNode` —— 2/8 个有
+- `WanVideoVACEStartToEndFrame` —— 2/8 个有
+- `ImageResize+` —— 1/8 个有
+- `ImageScale` —— 1/8 个有
+- `ImageToMask` —— 1/8 个有
+- `InpaintPreprocessor` —— 1/8 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 1/8 个有
+- `easy int` —— 1/8 个有
+- `easy seed` —— 1/8 个有
 
 ## 典型参数
 

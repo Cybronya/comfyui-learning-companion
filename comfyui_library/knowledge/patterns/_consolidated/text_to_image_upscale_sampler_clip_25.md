@@ -1,78 +1,71 @@
 ---
 name: text_to_image_upscale_sampler_clip_25
 type: Text To Image
-frequency: 4
-level: weak
-coverage: 0.906
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageUpscaleWithModel, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: strong
+coverage: 0.8024
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSampler, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen文生图+真实感+8K高清_1994701699338080257.json, 图片生成/文生图/Qwen文生图真实感_1991384108102430721.json, 图片生成/文生图/Z image_1984983374504804353.json, 图片生成/文生图/Z-Image Turbo 图像放大和细节处理_2051922049270071297.json]
+members: [图片生成/文生图/Anima3—动漫图像模型+ 自动提示词扩写_2049482150319230977.json, 图片生成/文生图/Anima3—动漫图像模型全自动进化模式_2049003395775729665.json, 图片生成/文生图/Anima3动漫_反推提示词+全自动进化模式_2049394805997834242.json, 图片生成/文生图/Anima预览版动漫模型-文生图 邪修版 RH工作流_2021210100874092545.json, 图片生成/文生图/全新Anima3动漫图像模型-文生图-高级工作流_2049713795706175490.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_sampler_clip_25
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Qwen文生图+真实感+8K高清_1994701699338080257.json、图片生成/文生图/Qwen文生图真实感_1991384108102430721.json、图片生成/文生图/Z image_1984983374504804353.json、图片生成/文生图/Z-Image Turbo 图像放大和细节处理_2051922049270071297.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Anima3—动漫图像模型+ 自动提示词扩写_2049482150319230977.json、图片生成/文生图/Anima3—动漫图像模型全自动进化模式_2049003395775729665.json、图片生成/文生图/Anima3动漫_反推提示词+全自动进化模式_2049394805997834242.json、图片生成/文生图/Anima预览版动漫模型-文生图 邪修版 RH工作流_2021210100874092545.json、图片生成/文生图/全新Anima3动漫图像模型-文生图-高级工作流_2049713795706175490.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `ImageUpscaleWithModel`
+- `Fast Groups Bypasser (rgthree)`
 - `KSampler`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ImageScaleBy` —— 2/4 个有
-- `ImageScaleDownToSize` —— 2/4 个有
-- `RHHiddenNodes` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `CheckpointLoaderSimple` —— 1/4 个有
-- `EmptySD3LatentImage` —— 1/4 个有
-- `ImageScaleToTotalPixels` —— 1/4 个有
+- `JjkText` —— 4/5 个有
+- `PreviewAny` —— 4/5 个有
+- `RH_LLMAPI_Pro_Node` —— 4/5 个有
+- `DuckHideNode` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy clearCacheAll` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 928 | 768 - 1280 | 4 | 81% |
-| 高度 | 1344 | 720 - 1664 | 4 | 68% |
-| 采样步数 | 17 | 9 - 25 | 4 | 53% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 2.5 | 4 | 57% |
-| 采样算法 | res_2m | - | 4 | 50% |
-| 调度器 | sgm_uniform | - | 4 | 75% |
-| 重绘幅度 | 0.625 | 0.15 - 1 | 4 | 33% |
+| 宽度 | 896 | 768 - 1080 | 5 | 89% |
+| 高度 | 1152 | 1024 - 1920 | 5 | 75% |
+| 采样步数 | 40 | 30 - 40 | 5 | 89% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 80% |
+| 调度器 | beta57 | - | 5 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 928，观测区间 768 - 1280，4 个样本，取值集中（一致性 81%）
-- 高度 中位数 1344，观测区间 720 - 1664，4 个样本
-- 采样步数 中位数 17，观测区间 9 - 25，4 个样本
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 2.5，4 个样本
-- 采样算法 最常用 res_2m，4 个样本，一致性 50%
-- 调度器 最常用 sgm_uniform，4 个样本，一致性 75%
-- 重绘幅度 中位数 0.625，观测区间 0.15 - 1，4 个样本，取值分散，一致性仅 33%
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 896，观测区间 768 - 1080，5 个样本，取值集中（一致性 89%）
+- 高度 中位数 1152，观测区间 1024 - 1920，5 个样本
+- 采样步数 中位数 40，观测区间 30 - 40，5 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 80%
+- 调度器 最常用 beta57，5 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

@@ -1,101 +1,79 @@
 ---
 name: image_to_image_lora_sampler_unet_117
 type: Image To Image
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.7285
-common_nodes: [CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, EmptyImage, GetImageSize, GrowMask, ImageBlend, ImageCompositeMasked, ImageFromBatch, ImageResizeKJv2, InvertMask, KSampler, LTXVConcatAVLatent, LoadBackgroundRemovalModel, LoadImage, LoraLoaderModelOnly, MaskToImage, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PointsEditor, PreviewAnimation, RemoveBackground, ResizeImageMaskNode, ResolutionSelector, SaveVideo, SeCModelLoader, SeCVideoSegmentation, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_LoadVideo]
+coverage: 0.9
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, QwenMultiangleCameraNode, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptList]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/海螺H3！Sec定点遮罩替换_2092136875254439938.json, 数字人/数字人/视频指定人物替换 Minimax H3  - SEC_2092432088149610498.json, 视频生成/图生视频/Minimax H3+sec4B角色替换_2090226018845024258.json, 视频生成/图生视频/Minimax H3+sec4B角色替换_2109443531659104257.json, 视频生成/图生视频/Minimax H3+sec4B角色替换_2110274068917342210.json, 视频生成/图生视频/Minimax+H3+局部编辑_2090659815860297729.json]
+members: [图片生成/图生图/全能生图 千问 2511多角度变换_2012356861068054529.json, 图片生成/图生图/图像多角度编辑手动控制更精准_2017089045016350722.json, 图片生成/图生图/多角度改变图片角度和镜头 - Qwen Multiangle Camera_2010967693100326913.json, 图片生成/图生图/多角度改变图片角度和镜头 - Qwen Multiangle Camera_2026477268612161538.json, 图片生成/图生图/手动改变图片角度和镜头--陈晨up99811_2077999684022530049.json, 图片生成/图生图/手动改变图片角度和镜头！Multiple angles Qwen edit 2511_2009495468832727041.json, 图片生成/图生图/手动调整场景角度（免费版）_2010620776700973058.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_117
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/海螺H3！Sec定点遮罩替换_2092136875254439938.json、数字人/数字人/视频指定人物替换 Minimax H3  - SEC_2092432088149610498.json、视频生成/图生视频/Minimax H3+sec4B角色替换_2090226018845024258.json、视频生成/图生视频/Minimax H3+sec4B角色替换_2109443531659104257.json、视频生成/图生视频/Minimax H3+sec4B角色替换_2110274068917342210.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/全能生图 千问 2511多角度变换_2012356861068054529.json、图片生成/图生图/图像多角度编辑手动控制更精准_2017089045016350722.json、图片生成/图生图/多角度改变图片角度和镜头 - Qwen Multiangle Camera_2010967693100326913.json、图片生成/图生图/多角度改变图片角度和镜头 - Qwen Multiangle Camera_2026477268612161538.json、图片生成/图生图/手动改变图片角度和镜头--陈晨up99811_2077999684022530049.json…）
 
 - **类型**：Image To Image
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `CreateVideo`
-- `EmptyImage`
-- `GetImageSize`
-- `GrowMask`
-- `ImageBlend`
-- `ImageCompositeMasked`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `InvertMask`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
-- `LTXVConcatAVLatent`
-- `LoadBackgroundRemovalModel`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskToImage`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PointsEditor`
-- `PreviewAnimation`
-- `RemoveBackground`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
-- `SaveVideo`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetLatentNoiseMask`
-- `SolidMask`
+- `ModelSamplingAuraFlow`
+- `QwenMultiangleCameraNode`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAEEncode`
-- `VAEEncodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/6 个有
-- `ImageStitch` —— 5/6 个有
-- `SetNode` —— 5/6 个有
-- `PreviewImage` —— 4/6 个有
-- `JjkText` —— 2/6 个有
-- `VHS_VideoCombine` —— 2/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
-- `easy sam3ModelLoader` —— 1/6 个有
-- `easy sam3VideoSegmentation` —— 1/6 个有
+- `INTConstant` —— 6/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
+- `VNCCS_VisualPositionControl` —— 6/7 个有
+- `easy showAnything` —— 6/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/7 个有
+- `Text Multiline` —— 2/7 个有
+- `ConstrainImage|pysssss` —— 1/7 个有
+- `ImageScaleToTotalPixels` —— 1/7 个有
+- `MultiTextConcatenate` —— 1/7 个有
+- `Text Concatenate` —— 1/7 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 8 | 6 | 88% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 5 | 4 - 5 | 7 | 93% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 8，6 个样本，取值集中（一致性 88%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 5，观测区间 4 - 5，7 个样本，取值集中（一致性 93%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

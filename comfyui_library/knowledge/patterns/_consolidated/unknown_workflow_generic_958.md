@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_958
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.952667
-common_nodes: [ImageConcatMulti, LoadImage, RH_ComfyFluxKontext, RH_Translator, SaveImage]
+coverage: 0.82725
+common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext多图参考模式（电商特供）_1930843229246435330.json, 图片生成/图生图/Flux Kontext多图编辑模式_1929170174723919873.json, 图片生成/图生图/电商产品展示商品替换-产品人像融合_1941683234705195009.json]
+members: [图片生成/文生图/视频封面生成器-全新全能图片 2模型 【每张图0.08元】_2027724807621582850.json, 平台全量/晓华同学作业-1.6_2063450787925291009.json, 视频生成/图生视频/9分镜图_2038856574608871426.json, 视频生成/图生视频/seedance2.0超能视频生成全流程发布_2034535724053172225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_958
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux Kontext多图参考模式（电商特供）_1930843229246435330.json、图片生成/图生图/Flux Kontext多图编辑模式_1929170174723919873.json、图片生成/图生图/电商产品展示商品替换-产品人像融合_1941683234705195009.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/视频封面生成器-全新全能图片 2模型 【每张图0.08元】_2027724807621582850.json、平台全量/晓华同学作业-1.6_2063450787925291009.json、视频生成/图生视频/9分镜图_2038856574608871426.json、视频生成/图生视频/seedance2.0超能视频生成全流程发布_2034535724053172225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageConcatMulti`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_ComfyFluxKontext`
-- `RH_Translator`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LayerMask: SegmentAnythingUltra V2` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `RMBG` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `JoinStringMulti` —— 1/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/4 个有
+- `SaveVideo` —— 1/4 个有
 
 ## 典型参数
 

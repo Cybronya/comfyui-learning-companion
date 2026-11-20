@@ -1,42 +1,36 @@
 ---
 name: unknown_workflow_sampler_55
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [Apply Whisper, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, LayerUtility: PurgeVRAM V2, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, SaveAudio]
+coverage: 0.8635
+common_nodes: [LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen3-TTS多人对话_2015350699822944258.json, 音频生成/音频生成/Qwen3 TTS-多人音频对话_2060685586805121025.json, 音频生成/音频生成/Qwen3-TTS多人对话_2057792545501048834.json]
+members: [数字人/数字人/烟嗓版翻唱必备人声分离_2117072683547578370.json, 音频生成/音频生成/人声分离背景音去除提取人声去除杂音-方便克隆_2061002830537912321.json, 音频生成/音频生成/人声和音乐分离_2041783462037823490.json, 音频生成/音频生成/声音分离_2000428461267316737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_55
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen3-TTS多人对话_2015350699822944258.json、音频生成/音频生成/Qwen3 TTS-多人音频对话_2060685586805121025.json、音频生成/音频生成/Qwen3-TTS多人对话_2057792545501048834.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/烟嗓版翻唱必备人声分离_2117072683547578370.json、音频生成/音频生成/人声分离背景音去除提取人声去除杂音-方便克隆_2061002830537912321.json、音频生成/音频生成/人声和音乐分离_2041783462037823490.json、音频生成/音频生成/声音分离_2000428461267316737.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Apply Whisper`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `LayerUtility: PurgeVRAM V2`
+全部 4 个 workflow 都包含：
 - `LoadAudio`
 - `MelBandRoFormerModelLoader`
 - `MelBandRoFormerSampler`
-- `SaveAudio`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/3 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
-- `VRAMReserver` —— 1/3 个有
+- `AudioCrop` —— 2/4 个有
+- `Bjornulf_FreeVRAM` —— 2/4 个有
 
 ## 典型参数
 

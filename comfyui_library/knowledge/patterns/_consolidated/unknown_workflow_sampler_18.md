@@ -1,36 +1,46 @@
 ---
 name: unknown_workflow_sampler_18
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.972167
-common_nodes: [CR Prompt Text, SaveImage, SenseNova_SM_Model, SenseNova_SM_Sampler]
+coverage: 0.768286
+common_nodes: [ImageCompositeMasked, ImageRemoveBackground+, ImageResizeKJv2, LBMSampler, LoadImage, LoadLBMModel, PreviewImage, SaveImage, TransparentBGSession+]
 problems: []
 missing: []
-members: [图片生成/图生图/SebseNova-单图编辑（加速版）_2053453777033801729.json, 图片生成/图生图/SenseNova SFT+8步lora图像编辑V2_2052706584341565442.json, 图片生成/图生图/SenseNova标准8步模型图像编辑V1_2053029715476262914.json, 图片生成/文生图/SenseNova -文生图（加速版）_2046948115416092673.json, 图片生成/文生图/SenseNova SFT+8步文生图V1_2053041066647011329.json, 图片生成/文生图/SenseNova 文生图_2053116115265572866.json]
+members: [图片生成/图生图/lbm_relight电商或写真打光_1923791238191828994.json, 图片生成/图生图/【AI由北】融合打光 lbm_relight_1924464375623839745.json, 图片生成/图生图/🤖一键给人物换背景+LBM打光_1922512736742248449.json, 平台全量/LBM换背景重新打光工作流_1925161231576199170.json, 平台全量/LBM重打光工作流_1923364570792906753.json, 平台全量/lbm_relight电商或写真打光_1923768675520999426.json, 平台全量/lbm打光工作流_1927971848062156801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_18
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/SebseNova-单图编辑（加速版）_2053453777033801729.json、图片生成/图生图/SenseNova SFT+8步lora图像编辑V2_2052706584341565442.json、图片生成/图生图/SenseNova标准8步模型图像编辑V1_2053029715476262914.json、图片生成/文生图/SenseNova -文生图（加速版）_2046948115416092673.json、图片生成/文生图/SenseNova SFT+8步文生图V1_2053041066647011329.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/lbm_relight电商或写真打光_1923791238191828994.json、图片生成/图生图/【AI由北】融合打光 lbm_relight_1924464375623839745.json、图片生成/图生图/🤖一键给人物换背景+LBM打光_1922512736742248449.json、平台全量/LBM换背景重新打光工作流_1925161231576199170.json、平台全量/LBM重打光工作流_1923364570792906753.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Prompt Text`
+全部 7 个 workflow 都包含：
+- `ImageCompositeMasked`
+- `ImageRemoveBackground+`
+- `ImageResizeKJv2`
+- `LBMSampler`
+- `LoadImage`
+- `LoadLBMModel`
+- `PreviewImage`
 - `SaveImage`
-- `SenseNova_SM_Model`
-- `SenseNova_SM_Sampler`
+- `TransparentBGSession+`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/6 个有
-- `ImageConcanate` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 5/7 个有
+- `DF_Get_image_size` —— 1/7 个有
+- `GetImageSize+` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `Note _O` —— 1/7 个有
+- `PreviewMask_` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_680
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8055
-common_nodes: [LoadImage, SaveImage, ShowText|pysssss, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.935
+common_nodes: [CR Prompt Text, ImageConcanate, JWInteger, LoadImage, RunningHub_Step1XEdit, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/001-提示词增强_2080208454978981890.json, 图片生成/反推提示词/提示词反推-Qwen3-VL-Llama-cpp_2037912443044765697.json, 视频生成/文生视频/【遇见AI】llama_cpp图片反推视频反推，qwen3.5模型_2059562160774270978.json, 音频生成/音频生成/qwen3.5工作流+歌词创作_2042814512310521857.json]
+members: [图片生成/图生图/Step1X-Edit图像编辑_1932611234569068545.json, 图片生成/图生图/Step1X-Edit多模态超强一致性图像生成_1917021061748031489.json, 图片生成/图生图/Step1X-Edit平替全能图片G-4O，重磅来袭！_1917392996323758082.json, 图片生成/图生图/Step1X-Edit强一致性图像编辑_1920018651477643265.json, 图片生成/图生图/Step1X-Edit强一致性图像编辑（非真人版）_1916752400680419330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_680
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/001-提示词增强_2080208454978981890.json、图片生成/反推提示词/提示词反推-Qwen3-VL-Llama-cpp_2037912443044765697.json、视频生成/文生视频/【遇见AI】llama_cpp图片反推视频反推，qwen3.5模型_2059562160774270978.json、音频生成/音频生成/qwen3.5工作流+歌词创作_2042814512310521857.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Step1X-Edit图像编辑_1932611234569068545.json、图片生成/图生图/Step1X-Edit多模态超强一致性图像生成_1917021061748031489.json、图片生成/图生图/Step1X-Edit平替全能图片G-4O，重磅来袭！_1917392996323758082.json、图片生成/图生图/Step1X-Edit强一致性图像编辑_1920018651477643265.json、图片生成/图生图/Step1X-Edit强一致性图像编辑（非真人版）_1916752400680419330.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `ImageConcanate`
+- `JWInteger`
 - `LoadImage`
+- `RunningHub_Step1XEdit`
 - `SaveImage`
-- `ShowText|pysssss`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `SetNode` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
+- `Note Plus (mtb)` —— 2/5 个有
 
 ## 典型参数
 

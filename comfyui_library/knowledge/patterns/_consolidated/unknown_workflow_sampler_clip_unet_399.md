@@ -2,58 +2,57 @@
 name: unknown_workflow_sampler_clip_unet_399
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.846
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.863667
+common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, Image Comparer (rgthree), InstructPixToPixConditioning, KSampler, LoadImage, PreviewImage, RH_Translator, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/flux2图像修复_2064329697353359361.json, 图片生成/文生图/flux2基础_文生图_图生图_迁移_1993562025060139010.json, 图片生成/文生图/image_flux2_1999252927225229314.json]
+members: [图片生成/图生图/Flux室内装修风格换装_1977731719371575297.json, 图片生成/图生图/Flux室内装修风格换装_1977738312892960769.json, 平台全量/室内装修风格换装 - Flux_1991901552944410625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_399
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/flux2图像修复_2064329697353359361.json、图片生成/文生图/flux2基础_文生图_图生图_迁移_1993562025060139010.json、图片生成/文生图/image_flux2_1999252927225229314.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux室内装修风格换装_1977731719371575297.json、图片生成/图生图/Flux室内装修风格换装_1977738312892960769.json、平台全量/室内装修风格换装 - Flux_1991901552944410625.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `Flux2Scheduler`
-- `FluxGuidance`
-- `KSamplerSelect`
+- `CLIPTextEncodeFlux`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `Image Comparer (rgthree)`
+- `InstructPixToPixConditioning`
+- `KSampler`
 - `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `PreviewImage`
+- `RH_Translator`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `PiDTextPrompt` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `image_scale_pixel_v2` —— 1/3 个有
+- `DepthAnythingV2Preprocessor` —— 2/3 个有
+- `LoraLoader` —— 2/3 个有
+- `LineArtPreprocessor` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 0.9 - 1 | 3 | 95% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 0.91 | - | 2 | 90% |
+| LoRA 文本强度 | 1.04 | - | 2 | 96% |
 
 ## 常见问题
 
@@ -61,4 +60,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 0.9 - 1，3 个样本，取值集中（一致性 95%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.91，样本不足，未给区间，2 个样本，取值集中（一致性 90%）
+- LoRA 文本强度 中位数 1.04，样本不足，未给区间，2 个样本，取值集中（一致性 96%）
+- 风险：Prompt 约束强度(CFG) 观测到 0.9，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）

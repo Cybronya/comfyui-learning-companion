@@ -1,37 +1,33 @@
 ---
 name: unknown_workflow_generic_622
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.3806
-common_nodes: [Fast Groups Muter (rgthree), JjkText, LoadAudio, RH_RhartAudioSunoV55Custom, SaveAudio]
+coverage: 1
+common_nodes: [RH_BytedanceSeedance25TokenTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/最强的音乐模型  Suno V5.5音乐一键创作_2089369115181015041.json, 音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作628_2065434432718336002.json, 音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作_2059586066713239554.json, 音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作_2070703592020996098.json, 音频生成/音频生成/最强音乐Suno V5.5_2062113185355886593.json]
+members: [视频生成/文生视频/Seedance 2.5 文生视频｜支持4K｜支持30S视频_2097521959767732226.json, 视频生成/文生视频/Seedance2.5文生视频_2085869860671807489.json, 视频生成/文生视频/Seedance2.5文生视频_2086086227874377729.json, 视频生成/文生视频/Seedance2.5文生视频_2095858068381851649.json, 视频生成/文生视频/Seedance2.5文生视频运镜版｜镜头语言丰富有电影感｜其它视频处理友好_2102298146926850050.json, 视频生成/文生视频/Seedance2.5文生视频｜视频运镜控制自如_2097929543557406721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_622
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/最强的音乐模型  Suno V5.5音乐一键创作_2089369115181015041.json、音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作628_2065434432718336002.json、音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作_2059586066713239554.json、音频生成/音频生成/最强的音乐模型  Suno V5.5音乐一键创作_2070703592020996098.json、音频生成/音频生成/最强音乐Suno V5.5_2062113185355886593.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/Seedance 2.5 文生视频｜支持4K｜支持30S视频_2097521959767732226.json、视频生成/文生视频/Seedance2.5文生视频_2085869860671807489.json、视频生成/文生视频/Seedance2.5文生视频_2086086227874377729.json、视频生成/文生视频/Seedance2.5文生视频_2095858068381851649.json、视频生成/文生视频/Seedance2.5文生视频运镜版｜镜头语言丰富有电影感｜其它视频处理友好_2102298146926850050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：38%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `JjkText`
-- `LoadAudio`
-- `RH_RhartAudioSunoV55Custom`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `RH_BytedanceSeedance25TokenTextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartAudioSunoV55Single` —— 4/5 个有
-- `PreviewAny` —— 1/5 个有
+- `MuyeTextEditOutput` —— 1/6 个有
 
 ## 典型参数
 

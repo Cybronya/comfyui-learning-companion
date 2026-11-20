@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_sampler_clip_unet_117
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.9824
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, Flux2Scheduler, ImageScaleToTotalPixels, JWFloat, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.898455
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/换装换脸_优化升级_姿态动作迁移_多图编辑加速版_2064901253225869314.json, 图片生成/图生图/泳装专用对镜自拍跨境带货涨粉买家秀_2039984637874806786.json, 图片生成/图生图/真实换脸 - Flux2Klein4B加速版_2078661674969681922.json, 图片生成/图生图/精准换脸换头 换脸换装多图编辑+人物一致+自然真实+多图编辑加速版_2088433029512519682.json, 图片生成/图生图/赫本公主风换脸换装 _ 写实保留服饰细节 Flux2_2109120696780673025.json, 图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093340946711793665.json, 图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093623432524156930.json, 图片生成/图生图/超级换脸Flux2Klein多图编辑4B加速版_2093892857491976194.json, 图片生成/文生图/换装Flux2Klein多图编辑4B加速版Flux2Klein多图编辑4B加速版_2035315458378833922.json, 数字人/数字人/超自然换脸_2082419039321808897.json]
+members: [图片生成/图生图/任意图片转“手持自拍”_2052670657846099969.json, 图片生成/图生图/任意画风转写实_2053048956061536257.json, 图片生成/图生图/优化场景去除图像AI感 增加细节_2041708135127191554.json, 图片生成/图生图/动漫少女现实化_2056400490073780225.json, 图片生成/图生图/去AI塑料感与真实肤质_2051201941220405249.json, 图片生成/图生图/去除图像AI感 增加细节_2032271913573158914.json, 图片生成/图生图/去除图像AI感 增加细节_2036273754577313794.json, 图片生成/图生图/场景去除图像AI感 增加细节_2032342155766796289.json, 图片生成/图生图/场景去除图像AI感+增加细节_2046436726729613313.json, 图片生成/文生图/klein建筑，室内工作流+Klein放大工作流_2087711918889984002.json, 图片生成/文生图/去除图像AI感 去油腻质感，增加细节纹理，防止僵尸脸_2093538755654275073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_117
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/换装换脸_优化升级_姿态动作迁移_多图编辑加速版_2064901253225869314.json、图片生成/图生图/泳装专用对镜自拍跨境带货涨粉买家秀_2039984637874806786.json、图片生成/图生图/真实换脸 - Flux2Klein4B加速版_2078661674969681922.json、图片生成/图生图/精准换脸换头 换脸换装多图编辑+人物一致+自然真实+多图编辑加速版_2088433029512519682.json、图片生成/图生图/赫本公主风换脸换装 _ 写实保留服饰细节 Flux2_2109120696780673025.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/任意图片转“手持自拍”_2052670657846099969.json、图片生成/图生图/任意画风转写实_2053048956061536257.json、图片生成/图生图/优化场景去除图像AI感 增加细节_2041708135127191554.json、图片生成/图生图/动漫少女现实化_2056400490073780225.json、图片生成/图生图/去AI塑料感与真实肤质_2051201941220405249.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `ImageScaleToTotalPixels`
-- `JWFloat`
+- `GetImageSize`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
@@ -43,20 +42,31 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 9/10 个有
-- `AspectRatioSelect` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `RH_RhartImageG2ImageToImage` —— 2/10 个有
-- `easy imageColorMatch` —— 2/10 个有
-- `easy imageSize` —— 2/10 个有
-- `EmptyFlux2LatentImage` —— 1/10 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/10 个有
-- `Text` —— 1/10 个有
-- `TextConcat` —— 1/10 个有
+- `Image Comparer (rgthree)` —— 10/11 个有
+- `ColorMatch` —— 7/11 个有
+- `ImageScaleToTotalPixels` —— 7/11 个有
+- `ImageSharpen` —— 7/11 个有
+- `LoraLoaderModelOnly` —— 7/11 个有
+- `DetailDaemonSamplerNode` —— 6/11 个有
+- `ImageResize+` —— 6/11 个有
+- `ImpactInt` —— 6/11 个有
+- `easy float` —— 6/11 个有
+- `FluxKontextImageScale` —— 4/11 个有
+- `PrimitiveInt` —— 2/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `ImageConcatenate_UTK` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
+- `LoraLoader` —— 1/11 个有
+- `PlaySound|pysssss` —— 1/11 个有
+- `PrimitiveStringMultiline` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 

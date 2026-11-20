@@ -3,31 +3,38 @@ name: unknown_workflow_generic_1527
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8
-common_nodes: [LoadImagesToBatch, MaskToImage, PreviewImage, SaveImage, easy imageRemBg]
+coverage: 0.643
+common_nodes: [ComfyMathExpression, PreviewAny, PrimitiveStringMultiline, StringReplace, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [图片生成/图生图/批量移除背景工作流_1990627919011733506.json, 图片生成/图生图/批量移除背景工作流_2110303800144777217.json]
+members: [图片生成/反推提示词/ideogram提示词生成t2t_2074360852504993794.json, 图片生成/反推提示词/图片反推json提示词（用于Ideogram4.0）工作流_2074046331919884290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1527
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量移除背景工作流_1990627919011733506.json、图片生成/图生图/批量移除背景工作流_2110303800144777217.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/ideogram提示词生成t2t_2074360852504993794.json、图片生成/反推提示词/图片反推json提示词（用于Ideogram4.0）工作流_2074046331919884290.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadImagesToBatch`
-- `MaskToImage`
-- `PreviewImage`
-- `SaveImage`
-- `easy imageRemBg`
+- `ComfyMathExpression`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `StringReplace`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+
+**可变部分**（部分 workflow 才有）：
+- `GetImageSize` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `ResolutionSelector` —— 1/2 个有
 
 ## 典型参数
 

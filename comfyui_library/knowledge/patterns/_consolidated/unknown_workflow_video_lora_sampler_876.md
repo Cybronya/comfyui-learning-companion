@@ -1,73 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_876
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4875
-common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, INTConstant, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, SetNode, Text Load Line From File, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy forLoopEnd, easy forLoopStart]
+frequency: 3
+level: moderate
+coverage: 0.651667
+common_nodes: [BasicGuider, BasicScheduler, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, KSamplerSelect, LTXVConcatAVLatent, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, SetNode, UniBlockSwap, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, VRAM_Debug, easy clearCacheAll, easy ifElse]
 problems: []
 missing: []
-members: [视频生成/图生视频/SVI 2.0Pro 一键生成长视频！_2008875910526668802.json, 视频生成/文生视频/大凯辰光_SVI_2.0_Pro 长视频优化工作流-For循环+旅行提示词高级版_2006383252696735745.json]
+members: [视频生成/图生视频/MinimaxH3全能参考：电影质量V2_2095725291497938946.json, 视频生成/文生视频/MinimaxH3全能参考：电影质量V3（浅空间放大版）_2094139603556069377.json, 视频生成/文生视频/MinimaxH3全能参考：高画质电影感V2_2094095183708246018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_876
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SVI 2.0Pro 一键生成长视频！_2008875910526668802.json、视频生成/文生视频/大凯辰光_SVI_2.0_Pro 长视频优化工作流-For循环+旅行提示词高级版_2006383252696735745.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3全能参考：电影质量V2_2095725291497938946.json、视频生成/文生视频/MinimaxH3全能参考：电影质量V3（浅空间放大版）_2094139603556069377.json、视频生成/文生视频/MinimaxH3全能参考：高画质电影感V2_2094095183708246018.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：49%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `FeiHouEasyH3RH`
+- `FeiHouEasyH3RHLoader`
+- `FeiHouEasyH3RHOutput`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchExtendWithOverlap`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoadImage`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `ModelPreviewOverrideKJ`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `Text Load Line From File`
-- `UNETLoader`
+- `UniBlockSwap`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `VRAM_Debug`
+- `easy clearCacheAll`
+- `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGZeroStar` —— 1/2 个有
-- `CLIPVisionLoader` —— 1/2 个有
-- `Display Any (rgthree)` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `ModelSamplingSD3` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `WanVideoNAG` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy clearCacheAll` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
-- `easy isNone` —— 1/2 个有
+- `Float` —— 2/3 个有
+- `LTXVSeparateAVLatent` —— 2/3 个有
+- `MiniMaxH3BlockCacheT8` —— 2/3 个有
+- `MiniMaxLowVRAMAttention` —— 2/3 个有
+- `MinimaxH3LatentUpscaler3D` —— 2/3 个有
+- `ModelAttentionBackend` —— 2/3 个有
+- `SplitSigmas` —— 2/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `RandomSeedNoise` —— 1/3 个有
+- `ResolutionSelector` —— 1/3 个有
+- `VAEEncode` —— 1/3 个有
+- `VAEEncodeAudio` —— 1/3 个有
+- `忽略多组孤海` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 50% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -75,9 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 50%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

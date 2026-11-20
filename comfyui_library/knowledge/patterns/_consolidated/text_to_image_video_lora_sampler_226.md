@@ -3,60 +3,57 @@ name: text_to_image_video_lora_sampler_226
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.683
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Value, ComfyMathExpression, EmptyLatentImage, GetNode, JWImageResizeToMegapixels, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, ViggleAnimateConditioning, ViggleTextCondLoader, solarL_SaveImagesToZip]
+coverage: 0.871
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text Concatenate, CR Text Replace, EmptyLatentImage, ImageResizeKJ, ImpactSwitch, JWInteger, JjkText, KSampler, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, Primitive integer [Crystools], PrimitiveBoolean, RHHiddenNodes, RH_Captioner, SimpleMath+, TextBox, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy ifElse, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/minimax-H3加Viggle动作迁移强化版，免提示词直接出片_2110451947428995074.json, 视频生成/图生视频/minimax-H3加Viggle动作迁移强化版，免提示词直接出片_2113808831812816898.json]
+members: [视频生成/图生视频/720p直出高速生成｜Wan2.2自动提示词CG幻想图生视频_2092138531375378434.json, 视频生成/图生视频/自动提示词直出720pWan2.2-高速版_2087413367249133570.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_226
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/minimax-H3加Viggle动作迁移强化版，免提示词直接出片_2110451947428995074.json、视频生成/图生视频/minimax-H3加Viggle动作迁移强化版，免提示词直接出片_2113808831812816898.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/720p直出高速生成｜Wan2.2自动提示词CG幻想图生视频_2092138531375378434.json、视频生成/图生视频/自动提示词直出720pWan2.2-高速版_2087413367249133570.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Value`
-- `ComfyMathExpression`
+- `CR Text Concatenate`
+- `CR Text Replace`
 - `EmptyLatentImage`
-- `GetNode`
-- `JWImageResizeToMegapixels`
+- `ImageResizeKJ`
+- `ImpactSwitch`
+- `JWInteger`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `SetNode`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `Primitive integer [Crystools]`
+- `PrimitiveBoolean`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `SimpleMath+`
+- `TextBox`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `ViggleAnimateConditioning`
-- `ViggleTextCondLoader`
+- `WanImageToVideo`
+- `easy ifElse`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
-
-**可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `孤海注释`
 
 ## 典型参数
 

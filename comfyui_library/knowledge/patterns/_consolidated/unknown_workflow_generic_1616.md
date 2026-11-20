@@ -3,31 +3,45 @@ name: unknown_workflow_generic_1616
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [EmptyImage, SaveImage]
+coverage: 0.727
+common_nodes: [Fast Groups Bypasser (rgthree), GetNode, ImageCompositeMasked, InspyrenetRembgAdvanced, InvertMask, JWImageResizeByLongerSide, LayerMask: BiRefNetUltraV2, LayerMask: HumanPartsUltra, LayerMask: LoadBiRefNetModelV2, LayerMask: SegmentAnythingUltra V2, LayerUtility: ColorImage V2, LayerUtility: ColorPicker, LoadImage, MaskToImage, PreviewImage, SaveImage, SetNode, String Literal, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/文生图/test_2052873184361369601.json, 数字人/数字人/-全能图片V1 文生图工作流_1979115603401281538.json]
+members: [图片生成/图生图/V3一键抠图4选1_2115282714390777857.json, 平台全量/V3一键抠图（4选1）_1910962689596948482.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1616
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/test_2052873184361369601.json、数字人/数字人/-全能图片V1 文生图工作流_1979115603401281538.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/V3一键抠图4选1_2115282714390777857.json、平台全量/V3一键抠图（4选1）_1910962689596948482.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `EmptyImage`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `ImageCompositeMasked`
+- `InspyrenetRembgAdvanced`
+- `InvertMask`
+- `JWImageResizeByLongerSide`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: HumanPartsUltra`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerMask: SegmentAnythingUltra V2`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ColorPicker`
+- `LoadImage`
+- `MaskToImage`
+- `PreviewImage`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana_Image2Image` —— 1/2 个有
+- `SetNode`
+- `String Literal`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 

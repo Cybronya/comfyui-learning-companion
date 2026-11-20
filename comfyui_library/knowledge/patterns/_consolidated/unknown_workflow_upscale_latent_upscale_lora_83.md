@@ -3,63 +3,66 @@ name: unknown_workflow_upscale_latent_upscale_lora_83
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9625
-common_nodes: [BasicGuider, CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, ConcatTextOfUtils, CreateVideo, GetVideoComponents, LTXVConditioning, LTXVLatentUpsampler, LatentUpscaleModelLoader, LoadImage, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3OutputTrimT8, MiniMaxH3SolEngineDraftToLTXT8Advanced, MiniMaxH3SolEngineLTXIdentityRefinerSetupT8Advanced, MiniMaxH3SolEngineTAEHVDecodeT8Advanced, MiniMaxH3SolEngineTAEHVLoaderT8Advanced, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SolAttnMiniMax, UNETLoader, VAEEncode, VAELoader]
+coverage: 0.9145
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR SDXL Aspect Ratio, CR Text Concatenate, DetailDaemonSamplerNode, DisableNoise, DualCLIPLoader, FL_SDUltimate_Slices, FluxGuidance, Image Comparer (rgthree), InjectLatentNoise+, KSamplerSelect, LatentInterpolate, LatentUpscaleBy, LoadImage, ModelSamplingFlux, PreviewImage, RH_Captioner, RandomNoise, SamplerCustomAdvanced, SaveImage, SplitSigmasDenoise, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader, easy loraStack, easy loraStackApply]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 Super Acceleration二阶段超级加速（仅适合文戏）_2093866023492603906.json, 视频生成/图生视频/MiniMax H3 二阶超级加速（不适合动作戏）_2095489832930865153.json]
+members: [图片生成/图生图/橙AI_1907001812128505858.json, 平台全量/为720P图生视频准备的遮脸自拍照片_1907473499219193858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_83
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Super Acceleration二阶段超级加速（仅适合文戏）_2093866023492603906.json、视频生成/图生视频/MiniMax H3 二阶超级加速（不适合动作戏）_2095489832930865153.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/橙AI_1907001812128505858.json、平台全量/为720P图生视频准备的遮脸自拍照片_1907473499219193858.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `BasicGuider`
-- `CFGGuider`
-- `CLIPLoader`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `ConcatTextOfUtils`
-- `CreateVideo`
-- `GetVideoComponents`
-- `LTXVConditioning`
-- `LTXVLatentUpsampler`
-- `LatentUpscaleModelLoader`
+- `CR SDXL Aspect Ratio`
+- `CR Text Concatenate`
+- `DetailDaemonSamplerNode`
+- `DisableNoise`
+- `DualCLIPLoader`
+- `FL_SDUltimate_Slices`
+- `FluxGuidance`
+- `Image Comparer (rgthree)`
+- `InjectLatentNoise+`
+- `KSamplerSelect`
+- `LatentInterpolate`
+- `LatentUpscaleBy`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3OutputTrimT8`
-- `MiniMaxH3SolEngineDraftToLTXT8Advanced`
-- `MiniMaxH3SolEngineLTXIdentityRefinerSetupT8Advanced`
-- `MiniMaxH3SolEngineTAEHVDecodeT8Advanced`
-- `MiniMaxH3SolEngineTAEHVLoaderT8Advanced`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
+- `ModelSamplingFlux`
+- `PreviewImage`
+- `RH_Captioner`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SolAttnMiniMax`
+- `SaveImage`
+- `SplitSigmasDenoise`
 - `UNETLoader`
-- `VAEEncode`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
+- `VAEDecode`
 - `VAELoader`
+- `easy loraStack`
+- `easy loraStackApply`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 1/2 个有
+- `LayerUtility: TextJoin` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `StringConstantMultiline` —— 1/2 个有
+- `TeaCache` —— 1/2 个有
+- `TeaCacheForImgGen` —— 1/2 个有
+- `TextInput_` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

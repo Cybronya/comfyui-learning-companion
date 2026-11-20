@@ -1,71 +1,101 @@
 ---
 name: unknown_workflow_lora_sampler_clip_21
 type: Unknown Workflow
-frequency: 14
+frequency: 17
 level: strong
-coverage: 0.826357
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptySD3LatentImage, FluxGuidance, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.918529
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CR Text, EmptyLTXVLatentVideo, JWInteger, KSamplerSelect, LTX2AttentionTunerPatch, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Labubu（拉布布）生成器_1935575269891559426.json, 图片生成/文生图/Nunchaku-flux2秒极速文生图_1909968900275273729.json, 图片生成/文生图/Nunchaku-flux2秒极速文生图_2042435095121891330.json, 图片生成/文生图/Nunchaku-flux2秒极速文生图_2047558509369233409.json, 图片生成/文生图/SVDQ和官方FLUX对比_1910633207707172866.json, 图片生成/文生图/hidream_全系出图与FLUX对比_1917844166154321921.json, 图片生成/文生图/天才樱木花道_1925124635254267905.json, 图片生成/文生图/太乙真人工作流_1929399159059595265.json, 图片生成/文生图/汉服美女工生成作流_1931186440095641601.json, 图片生成/文生图/灌篮高手-三井寿_1926264181538910210.json, 图片生成/文生图/灌篮高手-宫城良田_1926262954042290178.json, 图片生成/文生图/灌篮高手-流川枫_1925427219194163201.json, 图片生成/文生图/灌篮高手-赤木刚宪_1926115550580338689.json, 图片生成/文生图/越前龙马工作流_1933821200713830402.json]
+members: [视频生成/图生视频/Dasiwa LTX2.3 超强一致性工作i流，宽审核！_2073670944987635714.json, 视频生成/图生视频/LTX2.3 图生视频 自动提示词 一致性最新模型改进版_2045468289630998529.json, 视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070413012745412609.json, 视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070799952854474753.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2051501055195791361.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2053052230592409601.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2051614845358886913.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2052714455703801858.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2074073783828307970.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2075903253178572801.json, 视频生成/图生视频/Ltx 2.3图生视频自动提示词一致性改进版V2（新版模型）_2043901634517929985.json, 视频生成/图生视频/Ltx 2.3图生视频自动提示词一致性改进版（转自T8大佬）_2044013454645796866.json, 视频生成/图生视频/Ltx+2.3_Dasiwa图生视频+高清_2051956185665949698.json, 视频生成/图生视频/Ltx2.3-Dasiwa_V3--图生视频(人脸一致性)_2070741486152544258.json, 视频生成/图生视频/【阿良绘】Ltx 2.3图生视频 _ 自动提示词 改进版V2（新版模型）_2047130634124005377.json, 视频生成/图生视频/电商Ltx 2.3 Dasiwa V3最强人脸一致性-图生视频-自动提示词_2071794248864845826.json, 视频生成/图生视频/（新版模型）Ltx 2.3图生视频自动提示词一致性改进版_2044326986830585858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_21
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Labubu（拉布布）生成器_1935575269891559426.json、图片生成/文生图/Nunchaku-flux2秒极速文生图_1909968900275273729.json、图片生成/文生图/Nunchaku-flux2秒极速文生图_2042435095121891330.json、图片生成/文生图/Nunchaku-flux2秒极速文生图_2047558509369233409.json、图片生成/文生图/SVDQ和官方FLUX对比_1910633207707172866.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/Dasiwa LTX2.3 超强一致性工作i流，宽审核！_2073670944987635714.json、视频生成/图生视频/LTX2.3 图生视频 自动提示词 一致性最新模型改进版_2045468289630998529.json、视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070413012745412609.json、视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070799952854474753.json、视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2051501055195791361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：17
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 17 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptySD3LatentImage`
-- `FluxGuidance`
+- `CM_FloatToInt`
+- `CR Text`
+- `EmptyLTXVLatentVideo`
+- `JWInteger`
 - `KSamplerSelect`
+- `LTX2AttentionTunerPatch`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingFlux`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResizeImageMaskNode`
 - `SamplerCustomAdvanced`
-- `SaveImage`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 10/14 个有
-- `JoinStrings` —— 9/14 个有
-- `PrimitiveString` —— 9/14 个有
-- `Text Multiline` —— 9/14 个有
-- `easy hiresFix` —— 9/14 个有
-- `CR Text` —— 4/14 个有
-- `NunchakuFluxDiTLoader` —— 4/14 个有
-- `NunchakuFluxLoraLoader` —— 4/14 个有
-- `NunchakuTextEncoderLoader` —— 4/14 个有
-- `Note Plus (mtb)` —— 2/14 个有
-- `SDXLEmptyLatentSizePicker+` —— 2/14 个有
-- `KSampler` —— 1/14 个有
-- `ModelSamplingSD3` —— 1/14 个有
-- `QuadrupleCLIPLoader` —— 1/14 个有
+- `CR Prompt Text` —— 16/17 个有
+- `ConcatTextOfUtils` —— 16/17 个有
+- `RH_LLMAPI_Pro_Node` —— 16/17 个有
+- `VHS_VideoCombine` —— 16/17 个有
+- `easy cleanGpuUsed` —— 16/17 个有
+- `LTXVPreprocess` —— 15/17 个有
+- `LatentUpscaleModelLoader` —— 15/17 个有
+- `CreateVideo` —— 13/17 个有
+- `LTXVLatentUpsampler` —— 13/17 个有
+- `SaveVideo` —— 13/17 个有
+- `FlashVSR_SM_KSampler` —— 12/17 个有
+- `FlashVSR_SM_Model` —— 12/17 个有
+- `Float` —— 12/17 个有
+- `ImageFromBatch+` —— 12/17 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/17 个有
+- `GetNode` —— 2/17 个有
+- `Int` —— 2/17 个有
+- `LTXICLoRALoaderModelOnly` —— 2/17 个有
+- `SetNode` —— 2/17 个有
+- `SimpleMath+` —— 2/17 个有
+- `孤海注释` —— 2/17 个有
+- `GetImageSize` —— 1/17 个有
+- `ImageScaleBy` —— 1/17 个有
+- `PreviewAny` —— 1/17 个有
+- `Qwen3_VQA` —— 1/17 个有
+- `ShowAnything|Mie` —— 1/17 个有
+- `TextListSplit` —— 1/17 个有
+- `easy promptConcat` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024x1024 (1.0) | - | 2 | 100% |
-| 高度 | 1 | - | 2 | 100% |
-| 采样步数 | 28 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | lcm | - | 1 | 100% |
-| 调度器 | normal | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+| 宽度 | 97 | 97 - 97 | 17 | 100% |
+| 高度 | 25 | 25 - 25 | 17 | 100% |
+| 采样步数 | 1.59005e+09 | 1.01555e+07 - 2.01633e+09 | 12 | 41% |
+| Prompt 约束强度(CFG) | randomize | - | 12 | 100% |
+| 采样算法 | 2 | 2 - 2 | 12 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 12 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 12 | 100% |
 
 ## 常见问题
 
@@ -73,5 +103,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 最常用 1024x1024 (1.0)，2 个样本，一致性 100%
-- 高度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，17 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，17 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 1.59005e+09，观测区间 1.01555e+07 - 2.01633e+09，12 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 最常用 randomize，12 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，12 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，12 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，12 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 2.01633e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

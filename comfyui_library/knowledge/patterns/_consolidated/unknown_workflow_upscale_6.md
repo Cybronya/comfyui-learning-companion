@@ -1,39 +1,42 @@
 ---
 name: unknown_workflow_upscale_6
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.94275
-common_nodes: [CompositeImages_, EmptyImage, ImageCropByMask, ImageScale, InspyrenetRembg, LoadImage, SaveImage, SolidMask]
+coverage: 0.922556
+common_nodes: [ImageUpscaleWithModel, LoadImage, SaveImage, UpscaleModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/一键抠图 - 集6倍超分4K透明底 PNG格式自动去边工作流_2053744136364273665.json, 图片生成/图生图/一键抠图-MAGIC-M1_2096510725282951169.json, 图片生成/图生图/一键抠图-MAGIC-M1_2096868268760981505.json, 图片生成/图生图/一键抠图｜集6倍超分4K透明底自动去边_2053279905466597378.json, 图片生成/图生图/一键抠图｜集6倍超分4K透明底自动去边_2057502157112434689.json, 图片生成/图生图/抠图｜集6倍超分4K透明底自动去边_2054403092984147969.json, 图片生成/图生图/超快一键抠图｜集6倍超分4K透明底自动去边_2056553234961092609.json, 图片生成/文生图/发丝级精细抠图+透明底自动去边+全节点注释_2055631414724448257.json]
+members: [图片生成/图生图/NomosUni图像放大+全节点注释_2057767344423919617.json, 图片生成/图生图/全能图片V1 Image 丨完美手办生成丨最强图像编辑丨直出高清图_1981270448275095554.json, 图片生成/图生图/全能图片V1 动漫手办_1966910125351034882.json, 图片生成/图生图/全能图片V1 单图编辑 {添加_移除_修改}_1966769750464507906.json, 图片生成/图生图/全能图片V1 参考素材-生成素材_1978282454127632386.json, 图片生成/图生图/全能图片V1 局部重绘-生成万物（遮罩版）_1966561469099880450.json, 图片生成/图生图/全能图片V1 局部重绘-移除万物（遮罩版）_1966318196200517633.json, 图片生成/图生图/全能图片V1-合成海报_1966158101890199553.json, 图片生成/图生图/全能图片V1-拆分衣物_1966741340556079106.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_6
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/一键抠图 - 集6倍超分4K透明底 PNG格式自动去边工作流_2053744136364273665.json、图片生成/图生图/一键抠图-MAGIC-M1_2096510725282951169.json、图片生成/图生图/一键抠图-MAGIC-M1_2096868268760981505.json、图片生成/图生图/一键抠图｜集6倍超分4K透明底自动去边_2053279905466597378.json、图片生成/图生图/一键抠图｜集6倍超分4K透明底自动去边_2057502157112434689.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/NomosUni图像放大+全节点注释_2057767344423919617.json、图片生成/图生图/全能图片V1 Image 丨完美手办生成丨最强图像编辑丨直出高清图_1981270448275095554.json、图片生成/图生图/全能图片V1 动漫手办_1966910125351034882.json、图片生成/图生图/全能图片V1 单图编辑 {添加_移除_修改}_1966769750464507906.json、图片生成/图生图/全能图片V1 参考素材-生成素材_1978282454127632386.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CompositeImages_`
-- `EmptyImage`
-- `ImageCropByMask`
-- `ImageScale`
-- `InspyrenetRembg`
+全部 9 个 workflow 都包含：
+- `ImageUpscaleWithModel`
 - `LoadImage`
 - `SaveImage`
-- `SolidMask`
+- `UpscaleModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Upscale Image` —— 6/8 个有
+- `RH_Nano_Banana_Image2Image` —— 8/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
+- `CR Text` —— 5/9 个有
+- `LayerUtility: PurgeVRAM` —— 5/9 个有
+- `CR Text Concatenate` —— 3/9 个有
+- `ImageAndMaskPreview` —— 2/9 个有
+- `easy imageSize` —— 2/9 个有
+- `CR Prompt Text` —— 1/9 个有
 
 ## 典型参数
 

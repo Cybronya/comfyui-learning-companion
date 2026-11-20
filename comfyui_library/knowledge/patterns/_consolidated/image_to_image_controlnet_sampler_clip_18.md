@@ -1,71 +1,71 @@
 ---
 name: image_to_image_controlnet_sampler_clip_18
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.8435
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ControlNetApply, ControlNetLoader, Image Comparer (rgthree), KSampler, LineArtPreprocessor, LoadImage, PreviewImage, SaveImage, VAEDecode, VAEEncode]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: strong
+coverage: 0.958667
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ControlNetApply, ControlNetLoader, KSampler, LoadImage, SaveImage, VAEDecode, VAEEncode]
+problems: []
 missing: []
-members: [图片生成/图生图/【AI小王子】17.Controlnet线稿工作流（动漫真人互转）_2046806320371732481.json, 图片生成/文生图/根据提示词就可以转换各种风格_1832312545226174466.json]
+members: [图片生成/图生图/传统controlnet加载器inpaint内补图生图扩图工作流（练习）_1965849915626819585.json, 图片生成/图生图/电商工作流_2070325171109580802.json, 平台全量/人像妆容_1778058323459903490.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_sampler_clip_18
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【AI小王子】17.Controlnet线稿工作流（动漫真人互转）_2046806320371732481.json、图片生成/文生图/根据提示词就可以转换各种风格_1832312545226174466.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/传统controlnet加载器inpaint内补图生图扩图工作流（练习）_1965849915626819585.json、图片生成/图生图/电商工作流_2070325171109580802.json、平台全量/人像妆容_1778058323459903490.json）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
 - `ControlNetApply`
 - `ControlNetLoader`
-- `Image Comparer (rgthree)`
 - `KSampler`
-- `LineArtPreprocessor`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
 - `VAEDecode`
 - `VAEEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScale` —— 1/2 个有
-- `MiDaS-DepthMapPreprocessor` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `RepeatLatentBatch` —— 1/2 个有
+- `Canny` —— 2/3 个有
+- `ImageScale` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `CLIPSetLastLayer` —— 1/3 个有
+- `DF_Text_Box` —— 1/3 个有
+- `ImagePadForOutpaint` —— 1/3 个有
+- `ImageUpscaleWithModel` —— 1/3 个有
+- `InpaintPreprocessor` —— 1/3 个有
+- `MaskToImage` —— 1/3 个有
+- `SDXLResolutionPresets` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 14 | - | 2 | 57% |
-| Prompt 约束强度(CFG) | 6.25 | - | 2 | 80% |
-| 采样算法 | dpmpp_2m_sde | - | 2 | 50% |
-| 调度器 | karras | - | 2 | 100% |
-| 重绘幅度 | 0.95 | - | 2 | 95% |
-| ControlNet 权重 | 0.625 | - | 2 | 72% |
+| 采样步数 | 25 | 25 - 30 | 3 | 91% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
+| 采样算法 | dpmpp_2m | - | 3 | 67% |
+| 调度器 | karras | - | 3 | 67% |
+| 重绘幅度 | 0.36 | 0.35 - 0.6 | 3 | 74% |
+| ControlNet 权重 | 1 | 0.85 - 1 | 3 | 93% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 14，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 6.25，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- 采样算法 最常用 dpmpp_2m_sde，2 个样本，一致性 50%
-- 调度器 最常用 karras，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.95，样本不足，未给区间，2 个样本，取值集中（一致性 95%）
-- ControlNet 权重 中位数 0.625，样本不足，未给区间，2 个样本
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 25，观测区间 25 - 30，3 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m，3 个样本，一致性 67%
+- 调度器 最常用 karras，3 个样本，一致性 67%
+- 重绘幅度 中位数 0.36，观测区间 0.35 - 0.6，3 个样本
+- ControlNet 权重 中位数 1，观测区间 0.85 - 1，3 个样本，取值集中（一致性 93%）

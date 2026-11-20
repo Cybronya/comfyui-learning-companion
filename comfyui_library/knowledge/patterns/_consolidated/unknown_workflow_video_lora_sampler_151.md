@@ -1,88 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_151
 type: Unknown Workflow
-frequency: 12
-level: moderate
-coverage: 0.60875
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, SetNode, VHS_LoadVideo, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 14
+level: strong
+coverage: 0.848286
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSamplerAdvanced, LoadAudio, LoraLoaderModelOnly, ModelPatchLoader, PainterAV2V, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/11dongzuoqianyi(gai1)_2055210834040770561.json, 图片生成/反推提示词/11yjqyyh_2054451210467454978.json, 图片生成/图生图/SteadyDancer动作迁移-_2043535021054627841.json, 图片生成/图生图/SteadyDancer（最强骨骼迁移）_1995352234491883521.json, 图片生成/图生图/wanvideo_SteadyDancer_1997203294399447042.json, 视频生成/图生视频/SteadDancer动作迁移_2017466618615439361.json, 视频生成/图生视频/SteadDancer动作迁移（支持动漫人物）长视频一致性加强版_2011405479620124674.json, 视频生成/图生视频/SteadyDancer（最强骨骼迁移）_1995844904171495425.json, 视频生成/图生视频/SteadyDancer（最强骨骼迁移）_2061068385760399361.json, 视频生成/图生视频/SteadyDancer（最强骨骼迁移）_2062090699058798593.json, 视频生成/图生视频/SteadyDancer（最强骨骼迁移）_2068716358623391746.json, 视频生成/图生视频/【橘子AI】SteadyDancer（百搭骨骼迁移）_1995725668220538882.json]
+members: [平台全量/V2V  一键视频换脸     人物口型同步_2016833674750201858.json, 平台全量/（脸部参考）InfiniteTalk 视频V2V对口型V3_2015752297149632514.json, 平台全量/（视频换脸+对口型）InfiniteTalk视频V2V 林耀_2016710127927169026.json, 数字人/数字人/03-10-13-WAN2.1-数字人-InfiniteTalk-视频AV2V对口型-脸部参考_2019272890222383105.json, 数字人/数字人/InfiniteTalk 视频V2V对口型-轻度换脸OR增强一致性_2018621192965464066.json, 数字人/数字人/【2月】视频唇型同步+一致性加强，更好的支持人物动态_2017966613697404930.json, 数字人/数字人/脸部参考InfiniteTalk 对口型V2_2022007193763061762.json, 数字人/数字人/（单人脸部参考）InfiniteTalk 视频V2V对口型forWAN_2019689018878857217.json, 数字人/数字人/（脸部参考）InfiniteTalk 视频对口型_2016703138547376130.json, 视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2064514546374631425.json, 视频生成/图生视频/图生视频 脸部参考 InfiniteTalk+视频 数字人对口型_2075412859504390145.json, 视频生成/图生视频/视频换脸 图生视频+脸部参考替换+InfiniteTalk+视频+数字人对口型_2078010993078263809.json, 音频生成/音频生成/DG_infinite talk 对口型（视频编辑）+脸部参考 （整理T8的）_2016819542332280834.json, 音频生成/音频生成/Digital Avatars Lip-Syncing数字人对口型_2097153340940574722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_151
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/反推提示词/11dongzuoqianyi(gai1)_2055210834040770561.json、图片生成/反推提示词/11yjqyyh_2054451210467454978.json、图片生成/图生图/SteadyDancer动作迁移-_2043535021054627841.json、图片生成/图生图/SteadyDancer（最强骨骼迁移）_1995352234491883521.json、图片生成/图生图/wanvideo_SteadyDancer_1997203294399447042.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（平台全量/V2V  一键视频换脸     人物口型同步_2016833674750201858.json、平台全量/（脸部参考）InfiniteTalk 视频V2V对口型V3_2015752297149632514.json、平台全量/（视频换脸+对口型）InfiniteTalk视频V2V 林耀_2016710127927169026.json、数字人/数字人/03-10-13-WAN2.1-数字人-InfiniteTalk-视频AV2V对口型-脸部参考_2019272890222383105.json、数字人/数字人/InfiniteTalk 视频V2V对口型-轻度换脸OR增强一致性_2018621192965464066.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **样本数**：14
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetImageRangeFromBatch`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `OnnxDetectionModelLoader`
-- `SetNode`
+全部 14 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `KSamplerAdvanced`
+- `LoadAudio`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
+- `PainterAV2V`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `VHS_VideoCombine`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 11/12 个有
-- `Int` —— 11/12 个有
-- `VHS_VideoCombine` —— 11/12 个有
-- `SimpleMath+` —— 10/12 个有
-- `CR Text` —— 9/12 个有
-- `GetImageSizeAndCount` —— 9/12 个有
-- `WanVideoSetBlockSwap` —— 9/12 个有
-- `WanVideoTorchCompileSettings` —— 9/12 个有
-- `DrawViTPose` —— 7/12 个有
-- `PoseAndFaceDetection` —— 7/12 个有
-- `Anything Everywhere` —— 6/12 个有
-- `ImageUpscaleWithModelBatched` —— 6/12 个有
-- `RIFE VFI` —— 6/12 个有
-- `RunningHub Deepcleaner` —— 6/12 个有
-- `UpscaleModelLoader` —— 6/12 个有
-- `ImageConcatMulti` —— 5/12 个有
-- `PoseDetectionOneToAllAnimation` —— 5/12 个有
-- `Fast Groups Muter (rgthree)` —— 3/12 个有
-- `PreviewImage` —— 3/12 个有
-- `PrimitiveFloat` —— 3/12 个有
-- `PrimitiveInt` —— 3/12 个有
-- `CR Prompt Text` —— 2/12 个有
-- `CreateVideo` —— 2/12 个有
-- `SaveVideo` —— 2/12 个有
-- `Label (rgthree)` —— 1/12 个有
-- `SDPoseOODLoader` —— 1/12 个有
-- `SDPoseOODProcessor` —— 1/12 个有
-- `VHS_VideoInfoSource` —— 1/12 个有
-- `YOLOModelLoader` —— 1/12 个有
-- `easy convertAnything` —— 1/12 个有
-- `easy mathInt` —— 1/12 个有
-- `easy showAnything` —— 1/12 个有
+- `LoadImage` —— 13/14 个有
+- `PainterAudioCut` —— 13/14 个有
+- `easy cleanGpuUsed` —— 13/14 个有
+- `ImageConcatMulti` —— 11/14 个有
+- `MathExpression|pysssss` —— 6/14 个有
+- `easy showAnything` —— 6/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/14 个有
+- `GetNode` —— 2/14 个有
+- `ImageFromBatch+` —— 2/14 个有
+- `SetNode` —— 2/14 个有
+- `CR Text` —— 1/14 个有
+- `CRTFirstLastFrameSelector` —— 1/14 个有
+- `ImageFromBatch` —— 1/14 个有
+- `ImageRepeat` —— 1/14 个有
+- `ImageResizeKJv2` —— 1/14 个有
+- `Int` —— 1/14 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/14 个有
+- `SimpleMath+` —— 1/14 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 14 | 100% |
+| Prompt 约束强度(CFG) | 3 | 3 - 4 | 14 | 92% |
+| 采样算法 | 1 | 1 - 1 | 14 | 100% |
+| 调度器 | dpmpp_sde | - | 14 | 100% |
+| 重绘幅度 | normal | - | 14 | 100% |
 
 ## 常见问题
 
@@ -90,4 +77,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，14 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 4，14 个样本，取值集中（一致性 92%）
+- 采样算法 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_sde，14 个样本，一致性 100%
+- 重绘幅度 最常用 normal，14 个样本，一致性 100%

@@ -1,35 +1,38 @@
 ---
 name: unknown_workflow_upscale_25
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.861
-common_nodes: [LoadImage, SUPIR_Upscale, SaveImage]
+coverage: 0.749
+common_nodes: [Image Comparer (rgthree), LoadImage, SUPIR_Upscale, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/SUPIR高清放大_1929152001744211970.json, 图片生成/图生图/一键超级放大-可在线运行_1909071667459727361.json, 图片生成/图生图/图片放大修复细节_1897938893076156417.json]
+members: [图片生成/图生图/人像专用无损高清放大_1919969651130826754.json, 图片生成/图生图/动漫图片超清放大_1947215619278196738.json, 图片生成/图生图/图片-高清放大-人像专用无损高清放大V4_1962898705550643202.json, 平台全量/SUPIR 放大_1866552570172100609.json, 平台全量/千府AI高清放大(SUPIR)_1912746249479749633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_25
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SUPIR高清放大_1929152001744211970.json、图片生成/图生图/一键超级放大-可在线运行_1909071667459727361.json、图片生成/图生图/图片放大修复细节_1897938893076156417.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/人像专用无损高清放大_1919969651130826754.json、图片生成/图生图/动漫图片超清放大_1947215619278196738.json、图片生成/图生图/图片-高清放大-人像专用无损高清放大V4_1962898705550643202.json、平台全量/SUPIR 放大_1866552570172100609.json、平台全量/千府AI高清放大(SUPIR)_1912746249479749633.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
 - `SUPIR_Upscale`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Simple Image Compare` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
+- `ConstrainImage|pysssss` —— 3/5 个有
+- `easy imageSize` —— 2/5 个有
+- `ImageScaleBy` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

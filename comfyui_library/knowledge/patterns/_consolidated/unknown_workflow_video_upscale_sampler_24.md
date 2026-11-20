@@ -3,59 +3,50 @@ name: unknown_workflow_video_upscale_sampler_24
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4445
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Display Int (rgthree), DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageSizeAndCount, GetNode, ImageResizeKJv2, KSamplerSelect, LoadImage, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2TorchCompileSettings, SeedVR2VideoUpscaler, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy int]
+coverage: 0.957
+common_nodes: [GetImageSizeAndCount, ImageResize+, ImageScaleToMegapixels, Int, LoadImage, LoadWanVideoT5TextEncoder, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/视频生成-MiniMax_H3-参考生视频_2084163650293686273.json, 视频生成/文生视频/视频生成-MiniMax_H3-首尾帧生视频_2084190567281549314.json]
+members: [视频生成/图生视频/Wan2.1 多关键帧_1949705489898184706.json, 视频生成/图生视频/Wan2.1 首尾帧_1949686790592045057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_24
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/视频生成-MiniMax_H3-参考生视频_2084163650293686273.json、视频生成/文生视频/视频生成-MiniMax_H3-首尾帧生视频_2084190567281549314.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 多关键帧_1949705489898184706.json、视频生成/图生视频/Wan2.1 首尾帧_1949686790592045057.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `Display Int (rgthree)`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+- `ImageResize+`
+- `ImageScaleToMegapixels`
+- `Int`
 - `LoadImage`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2TorchCompileSettings`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `RIFE VFI`
+- `UpscaleModelLoader`
 - `VHS_VideoCombine`
-- `easy int`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ImageToVideo` —— 1/2 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/2 个有
+- `ImageBatchMulti` —— 1/2 个有
+- `MaskBatchMulti` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
 
 ## 典型参数
 

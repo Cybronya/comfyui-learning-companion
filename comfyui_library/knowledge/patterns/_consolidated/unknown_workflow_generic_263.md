@@ -1,35 +1,49 @@
 ---
 name: unknown_workflow_generic_263
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.880889
-common_nodes: [CR Prompt Text, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.9031
+common_nodes: [Image Comparer (rgthree), ImageCASharpening+, ImageResize+, ImpactMinMax, LoadImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片2.0-文生图-低价渠道版_2064011654022647809.json, "图片生成/文生图/全能图片G2, 封面图 海报图 文生图优化版 RH性价比版_2089642739397906433.json", "图片生成/文生图/全能图片G2,文生图工作流 text to Image 2.0 RH性价比版_2056388878541611009.json", 图片生成/文生图/全能图片G2文生图（RH版）-天运子_2088336241300426753.json, 图片生成/文生图/全能图片G2文生图（RH版）_2055669033319583746.json, 图片生成/文生图/全能图片G2文生图（RH版）_2056205569383518209.json, 图片生成/文生图/场景、道具图_2102679130457333761.json, 图片生成/文生图/自用版全能图片V2-文生图-低价渠道版_2064161571298955265.json, 图片生成/文生图/超好用全能图片G2文生图片电商海报产品文字说明放大好用_2073682298935013377.json]
+members: [图片生成/图生图/高清放大_2078332474970689538.json, 平台全量/万物高清放大_2026851771116691457.json, 平台全量/万物高清放大（seedVR2）_1985191698848489474.json, 平台全量/文字超高清及万物人像超高清放大-8K_2015597576719962113.json, 平台全量/文字高清+万物、人像超高清放大-8K_2033745906973024257.json, 平台全量/目前最好的修复放大模型 - SeedVR2  超高清 分块放大-8K_2027293254550560769.json, 平台全量/阮旭东AIGC：万物高清放大（分块）_seedVR2 高清放大工作流_1986807526840856578.json, 平台全量/阮旭东AIGC：万物高清放大（分块）_seedVR2_1986681893368299521.json, 平台全量/高保真放大v2_1971110637956931585.json, 平台全量/高清放大-SV_2118180523976781826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_263
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/全能图片2.0-文生图-低价渠道版_2064011654022647809.json、图片生成/文生图/全能图片G2, 封面图 海报图 文生图优化版 RH性价比版_2089642739397906433.json、图片生成/文生图/全能图片G2,文生图工作流 text to Image 2.0 RH性价比版_2056388878541611009.json、图片生成/文生图/全能图片G2文生图（RH版）-天运子_2088336241300426753.json、图片生成/文生图/全能图片G2文生图（RH版）_2055669033319583746.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/高清放大_2078332474970689538.json、平台全量/万物高清放大_2026851771116691457.json、平台全量/万物高清放大（seedVR2）_1985191698848489474.json、平台全量/文字超高清及万物人像超高清放大-8K_2015597576719962113.json、平台全量/文字高清+万物、人像超高清放大-8K_2033745906973024257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_RhartImageG2TextToImage`
+全部 10 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImpactMinMax`
+- `LoadImage`
 - `SaveImage`
+- `SeedVR2`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowAnything|Mie` —— 6/9 个有
-- `PreviewImage` —— 1/9 个有
+- `DF_Integer` —— 9/10 个有
+- `easy cleanGpuUsed` —— 9/10 个有
+- `Get Image Size` —— 8/10 个有
+- `ImageAddNoise` —— 2/10 个有
+- `PreviewImage` —— 2/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `GetImageSize` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `LayerUtility: GetImageSize` —— 1/10 个有
 
 ## 典型参数
 

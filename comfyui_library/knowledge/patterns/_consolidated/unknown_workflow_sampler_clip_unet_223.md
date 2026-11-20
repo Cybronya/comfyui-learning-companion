@@ -1,73 +1,82 @@
 ---
 name: unknown_workflow_sampler_clip_unet_223
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.89
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, Krea2SizePreset, Krea2StyleReference, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.904857
+common_nodes: [BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ModelSamplingAuraFlow, PreviewImage, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SamplerEulerAncestral, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Krea2风格参考_2073729211445108737.json, 图片生成/图生图/Krea2风格参考产品设计_2082828018342522882.json, 图片生成/图生图/[Krea_2_·_08.2]_双图风格迁移_两张参考图，如何控制各自影响？_2098214446819799041.json, 图片生成/文生图/Krea2 风格参考_2073576483880259585.json, 图片生成/文生图/Krea2-风格参考_2073836086790541314.json, 图片生成/文生图/Krea2双图-风格参考-融合-迁移Style Reference_2074414607590060034.json]
+members: [图片生成/文生图/2029507207917735938.json, 图片生成/文生图/2029507218332196866.json, 图片生成/文生图/2030979831659241473.json, 图片生成/文生图/2512两步出图_2017532037657272322.json, 图片生成/文生图/Base+Turbo分段渲染_2017271994244403202.json, 图片生成/文生图/Z-Image Base+ControlNet+Turbo高低噪_2022635998764601346.json, 图片生成/文生图/Z-Image-i2L (Image to LoRA)快速lora训练+联合CN测试_2023370355200495617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_223
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Krea2风格参考_2073729211445108737.json、图片生成/图生图/Krea2风格参考产品设计_2082828018342522882.json、图片生成/图生图/[Krea_2_·_08.2]_双图风格迁移_两张参考图，如何控制各自影响？_2098214446819799041.json、图片生成/文生图/Krea2 风格参考_2073576483880259585.json、图片生成/文生图/Krea2-风格参考_2073836086790541314.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/2029507207917735938.json、图片生成/文生图/2029507218332196866.json、图片生成/文生图/2030979831659241473.json、图片生成/文生图/2512两步出图_2017532037657272322.json、图片生成/文生图/Base+Turbo分段渲染_2017271994244403202.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `KSampler`
-- `Krea2SizePreset`
-- `Krea2StyleReference`
-- `LoadImage`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SamplerEulerAncestral`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Krea2TwoStyleReferences` —— 5/6 个有
-- `Krea2TwoStyleTransfer` —— 5/6 个有
-- `Krea2StyleTransfer` —— 4/6 个有
-- `PreviewImage` —— 3/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
-- `ImageConcatMulti` —— 2/6 个有
-- `Anything Everywhere` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
-- `SetNode` —— 1/6 个有
+- `DetailDaemonSamplerNode` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `easy int` —— 6/7 个有
+- `AIO_Preprocessor` —— 5/7 个有
+- `EmptyLatentImage` —— 5/7 个有
+- `LoadImage` —— 5/7 个有
+- `ModelPatchLoader` —— 5/7 个有
+- `SplitSigmas` —— 5/7 个有
+- `VAEEncode` —— 5/7 个有
+- `ZImageFunControlnet` —— 5/7 个有
+- `image_scale_pixel_v2` —— 5/7 个有
+- `ImageScaleBy` —— 4/7 个有
+- `ImageLoader` —— 2/7 个有
+- `ImageResizeKJv2` —— 2/7 个有
+- `ClipLoaderGGUF` —— 1/7 个有
+- `ImageBatchMulti` —— 1/7 个有
+- `LoraLoader` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `RunningHub_ZImageI2L_Loader` —— 1/7 个有
+- `RunningHub_ZImageI2L_LoraGenerator` —— 1/7 个有
+- `RunningHub_ZImageI2L_Saver` —— 1/7 个有
+- `Seed Everywhere` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 6 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler_ancestral | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 512 | 512 - 512 | 5 | 100% |
+| 高度 | 472 | 472 - 472 | 5 | 100% |
+| LoRA 模型强度 | 1.1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，6 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（7/6 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 472，观测区间 472 - 472，5 个样本，取值集中（一致性 100%）

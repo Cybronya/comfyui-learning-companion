@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1081
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.563333
-common_nodes: [Comfly_api_set, Comfly_gpt_image_1, LoadImage, RH_Translator, SaveImage]
+coverage: 0.794333
+common_nodes: [JanusImageUnderstanding, JanusModelLoader, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G+Image+1.5文生图+0.35每张 10s极速出图_2001559017518428162.json, 图片生成/文生图/全能图片g image 1 mini & 文生图 全能图片G-image-1-mini 0.15每张_2000835546555576321.json, 图片生成/文生图/全能图片g image 1.5 & 文生图 全能图片G-image-1.5 0.03每张_2001208565605990402.json]
+members: [图片生成/反推提示词/Deep Seek高效提示词反推工作流_1923636452712697858.json, 图片生成/反推提示词/Janus-Pro 反推提示词基础工作流_1937843505886576642.json, 图片生成/反推提示词/Prompt反推_1969966801851457538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1081
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G+Image+1.5文生图+0.35每张 10s极速出图_2001559017518428162.json、图片生成/文生图/全能图片g image 1 mini & 文生图 全能图片G-image-1-mini 0.15每张_2000835546555576321.json、图片生成/文生图/全能图片g image 1.5 & 文生图 全能图片G-image-1.5 0.03每张_2001208565605990402.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/Deep Seek高效提示词反推工作流_1923636452712697858.json、图片生成/反推提示词/Janus-Pro 反推提示词基础工作流_1937843505886576642.json、图片生成/反推提示词/Prompt反推_1969966801851457538.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Comfly_api_set`
-- `Comfly_gpt_image_1`
+- `JanusImageUnderstanding`
+- `JanusModelLoader`
 - `LoadImage`
-- `RH_Translator`
 - `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 2/3 个有
-- `RH_GPT_Image15` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `Save Text File` —— 1/3 个有
+- `Translate` —— 1/3 个有
 
 ## 典型参数
 

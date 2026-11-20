@@ -1,81 +1,59 @@
 ---
 name: unknown_workflow_video_sampler_vae_182
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6375
-common_nodes: [AIO_Preprocessor, CR Color Panel, CR Image Input Switch, DWPreprocessor, EsesImageEffectLevels, Float, GetImageRangeFromBatch, GetNode, INTConstant, ImageBatchMulti, ImageBlend, ImageCompositeMasked, ImageFromBatch, ImageResizeKJv2, InspyrenetRembg, Label (rgthree), LayerMask: MaskGrow, LayerUtility: ImageBlendAdvance, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoT5TextEncoder, MaskPreview+, MaskToImage, MathExpression|pysssss, PreviewImage, RHHiddenNodes, RH_Captioner, SetNode, Switch image [Crystools], Text Multiline, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoDecode, WanVideoEncode, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy seed, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.747667
+common_nodes: [GetImageSizeAndCount, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/视频换人 动作迁移 人物替换  重大升级_1980645672854704129.json, 视频生成/图生视频/人物替换背景（提示词）浮云_1993626350875590658.json]
+members: [平台全量/人物动作控制变装跳舞视频案例_1960222237146165249.json, 视频生成/图生视频/VACE14B-1024-casvid-fast_1924010211143503873.json, 视频生成/图生视频/Wan VACE 14B首尾帧生成视频-加速版_1922976069052526594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_182
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/视频换人 动作迁移 人物替换  重大升级_1980645672854704129.json、视频生成/图生视频/人物替换背景（提示词）浮云_1993626350875590658.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/人物动作控制变装跳舞视频案例_1960222237146165249.json、视频生成/图生视频/VACE14B-1024-casvid-fast_1924010211143503873.json、视频生成/图生视频/Wan VACE 14B首尾帧生成视频-加速版_1922976069052526594.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：64%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `CR Color Panel`
-- `CR Image Input Switch`
-- `DWPreprocessor`
-- `EsesImageEffectLevels`
-- `Float`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageBlend`
-- `ImageCompositeMasked`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `InspyrenetRembg`
-- `Label (rgthree)`
-- `LayerMask: MaskGrow`
-- `LayerUtility: ImageBlendAdvance`
-- `LayerUtility: PurgeVRAM`
+全部 3 个 workflow 都包含：
+- `GetImageSizeAndCount`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MaskPreview+`
-- `MaskToImage`
-- `MathExpression|pysssss`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `SetNode`
-- `Switch image [Crystools]`
-- `Text Multiline`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `InvertMask` —— 1/2 个有
-- `LayerMask: PersonMaskUltra V2` —— 1/2 个有
-- `RMBG` —— 1/2 个有
+- `GetNode` —— 2/3 个有
+- `Primitive integer [Crystools]` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `WanVideoExperimentalArgs` —— 2/3 个有
+- `WanVideoLoraSelect` —— 2/3 个有
+- `ColorMatch` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `DepthAnythingV2Preprocessor` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `WanVideoMagCache` —— 1/3 个有
+- `WanVideoVACEStartToEndFrame` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -87,4 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

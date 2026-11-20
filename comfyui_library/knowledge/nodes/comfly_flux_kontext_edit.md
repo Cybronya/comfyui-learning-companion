@@ -37,8 +37,8 @@ Utility
 
 - `["", "flux-kontext-pro", "", "1:1", 1, 1684484037, "randomize"]`（1 次）
 - `["", "flux-kontext-pro", "", "1:1", 1, 810058173, "randomize"]`（1 次）
-- `["", "flux-kontext-pro", "sk-pIsh8VOwG2Iz2Y0gCdBaE52483994a5bA2Ff43D51b7859E5", "4:3", 1, 59614995, "randomize"]`（1 次）
-- `["", "flux-kontext-pro", "sk-Wz67SuGD3tzhcEJa27Ec09122bB848C6Ad10CfCd2b0c2cDe", "4:3", 1, 1711218432, "randomize"]`（1 次）
+- `["", "flux-kontext-pro", "REDACTED0000000000000000000000000000000000000000000", "4:3", 1, 59614995, "randomize"]`（1 次）
+- `["", "flux-kontext-pro", "REDACTED0000000000000000000000000000000000000000000", "4:3", 1, 1711218432, "randomize"]`（1 次）
 
 ## 可信度
 

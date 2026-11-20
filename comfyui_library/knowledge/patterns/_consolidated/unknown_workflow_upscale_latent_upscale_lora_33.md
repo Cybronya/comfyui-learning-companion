@@ -1,76 +1,96 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_33
 type: Unknown Workflow
-frequency: 10
-level: moderate
-coverage: 0.9048
-common_nodes: [BasicGuider, CLIPLoader, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SolAttnMiniMax, UNETLoader, VAELoader]
+frequency: 11
+level: strong
+coverage: 0.866636
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
 problems: []
 missing: []
-members: [视频生成/图生视频/01_BUNNY_首帧视频_原生声音_2102237008474230785.json, 视频生成/图生视频/01_BUNNY_首帧视频_原生声音_2104442997843783681.json, 视频生成/图生视频/02_BUNNY_1人音色参考_生成新对白_2102300239691599874.json, 视频生成/图生视频/02_BUNNY_2人音色参考_生成新对白_2102237076006719490.json, 视频生成/图生视频/03_BUNNY_已有配音驱动_单人镜头_2102237115760332802.json, 视频生成/图生视频/03_BUNNY_已有配音驱动_多人同框_2102308527359479809.json, 视频生成/图生视频/BUNNY_H3_高动态双采放大专属_FL2VA_REF2VA_2100950589130760193.json, 视频生成/图生视频/双参战斗版 MiniMax H3开源 参考生视频_2095814447255347202.json, 视频生成/图生视频/尾帧生视频_2099041242926632962.json, 视频生成/文生视频/10Eros Beta5 + FL2VA_Ref2VA小脸去油二采精修流_2101605881900261377.json]
+members: [视频生成/图生视频/LTX-2.3首尾帧视频生成_2030927886542180353.json, 视频生成/图生视频/LTX-2.3高动态MV无限时长，一张图一段音频一键生成。_2037366573874290689.json, 视频生成/图生视频/LTX-2.3：把”白狐酱板鸭_装进OpenClaw！_2058356490804752385.json, 视频生成/图生视频/LTX2.3 图 + 音频数字人对口型_2043593704170070018.json, 视频生成/图生视频/LTX2.3 图生视频_2043581288925372417.json, 视频生成/图生视频/LTX2.3 多图参考_2031341831253925890.json, 视频生成/图生视频/LTX2.3 多图参考_2032121353918226434.json, 视频生成/图生视频/LTX2.3 数字人艾希&李小小《我们都是数字人》播客生产工作流 V3.00331_2038794251055669250.json, 视频生成/图生视频/LTX2.3-图像音频生视频，口型同步_2031297244112101377.json, 视频生成/图生视频/LTX2.3-数字人（支持双人对话）_2031346405217935361.json, 视频生成/图生视频/LTX2_3_image_and_audio_to_video_ia2v_2083484804493955073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_33
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/01_BUNNY_首帧视频_原生声音_2102237008474230785.json、视频生成/图生视频/01_BUNNY_首帧视频_原生声音_2104442997843783681.json、视频生成/图生视频/02_BUNNY_1人音色参考_生成新对白_2102300239691599874.json、视频生成/图生视频/02_BUNNY_2人音色参考_生成新对白_2102237076006719490.json、视频生成/图生视频/03_BUNNY_已有配音驱动_单人镜头_2102237115760332802.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3首尾帧视频生成_2030927886542180353.json、视频生成/图生视频/LTX-2.3高动态MV无限时长，一张图一段音频一键生成。_2037366573874290689.json、视频生成/图生视频/LTX-2.3：把”白狐酱板鸭_装进OpenClaw！_2058356490804752385.json、视频生成/图生视频/LTX2.3 图 + 音频数字人对口型_2043593704170070018.json、视频生成/图生视频/LTX2.3 图生视频_2043581288925372417.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
+全部 11 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3TwoPassDetailMixerT8Advanced`
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SolAttnMiniMax`
-- `UNETLoader`
-- `VAELoader`
+- `SaveVideo`
+- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 9/10 个有
-- `VHS_VideoCombine` —— 9/10 个有
-- `ModelPreviewOverrideKJ` —— 7/10 个有
-- `PrimitiveStringMultiline` —— 7/10 个有
-- `ComfyMathExpression` —— 6/10 个有
-- `GetImageSize` —— 6/10 个有
-- `ImageScaleToTotalPixels` —— 6/10 个有
-- `LoadAudio` —— 6/10 个有
-- `MiniMaxH3OutputTrimT8` —— 6/10 个有
-- `MiniMaxH3DurationPlannerT8` —— 4/10 个有
-- `ResolutionSelector` —— 4/10 个有
-- `CR Prompt Text` —— 3/10 个有
-- `CreateVideo` —— 2/10 个有
-- `MiniMaxH3AudioWindowT8` —— 2/10 个有
-- `MiniMaxH3TwoPassAudioAuditT8Advanced` —— 2/10 个有
-- `SaveVideo` —— 2/10 个有
-- `SoundFlow_GetLength` —— 2/10 个有
-- `AudioCrop` —— 1/10 个有
-- `ConcatTextOfUtils` —— 1/10 个有
-- `GetVideoComponents` —— 1/10 个有
-- `LoadVideo` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `Video Slice` —— 1/10 个有
+- `ComfyMathExpression` —— 10/11 个有
+- `LTXVImgToVideoInplace` —— 10/11 个有
+- `ResizeImagesByLongerEdge` —— 10/11 个有
+- `PrimitiveStringMultiline` —— 9/11 个有
+- `ResizeImageMaskNode` —— 7/11 个有
+- `LTXVEmptyLatentAudio` —— 6/11 个有
+- `LTXVAudioVAEEncode` —— 5/11 个有
+- `LoadAudio` —— 5/11 个有
+- `PrimitiveBoolean` —— 5/11 个有
+- `PrimitiveFloat` —— 5/11 个有
+- `SetLatentNoiseMask` —— 5/11 个有
+- `SolidMask` —— 5/11 个有
+- `TrimAudioDuration` —— 4/11 个有
+- `ImageResizeKJv2` —— 3/11 个有
+- `LTXVImgToVideoInplaceKJ` —— 3/11 个有
+- `PreviewAny` —— 3/11 个有
+- `LTX2_NAG` —— 2/11 个有
+- `LoraLoader` —— 2/11 个有
+- `SimpleMath+` —— 2/11 个有
+- `TextGenerateLTX2Prompt` —— 2/11 个有
+- `AudioCrop` —— 1/11 个有
+- `ComfySwitchNode` —— 1/11 个有
+- `FloatConstant` —— 1/11 个有
+- `GetImageSize` —— 1/11 个有
+- `ImageResize+` —— 1/11 个有
+- `LTXVFirstLastFrameControl_TTP` —— 1/11 个有
+- `MathExpression|pysssss` —— 1/11 个有
+- `RH_LLMAPI_Pro_Node` —— 1/11 个有
+- `RecordAudio` —— 1/11 个有
+- `Resize` —— 1/11 个有
+- `StringReplace` —— 1/11 个有
+- `easy showAnything` —— 1/11 个有
+- `string_util_StrConcat` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 6 | 100% |
+| 高度 | 25 | 24 - 25 | 6 | 98% |
+| LoRA 模型强度 | 1 | - | 2 | 100% |
+| LoRA 文本强度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -78,4 +98,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 24 - 25，6 个样本，取值集中（一致性 98%）
+- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）

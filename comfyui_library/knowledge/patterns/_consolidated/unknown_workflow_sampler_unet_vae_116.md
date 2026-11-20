@@ -1,83 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_116
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.726889
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, MiniMaxH3SigmaShift, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 10
+level: strong
+coverage: 0.8389
+common_nodes: [CLIPLoader, Easy_QwenEdit2509, FluxKontextMultiReferenceLatentMethod, KSampler, Krea2OstrisEditModelPatch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/minimax h3文生视频双采高清流_2093374091788115970.json, 视频生成/文生视频/minimax_h3_r2v_video_edit视频编辑_2094267455395950594.json, 视频生成/文生视频/【遇见AI】Minimax H3 latent upscale潜空间放大 FL2VA版_2090678319321800705.json, 视频生成/文生视频/人物真实低动态H3+sigma强化+潜空间放大工作流 双采_2096114490512330753.json, 视频生成/文生视频/动漫短剧工作流（一键直出1080P竖屏短剧提示词未自动优化）_2093587306430160898.json, 视频生成/文生视频/啊癫 minimaxh3极速版二采潜空间直接放大（去油版）_2093957991434379265.json, 视频生成/文生视频/收藏级！H3 加速+二采+打斗全能工作流拆解系列05集_2092970619469123586.json, 视频生成/文生视频/海螺H3 sigma强化+潜空间放大+高清人脸工作流_2089624110652551169.json, 视频生成/文生视频/海螺H3优化 小脸 打斗 浅空间_2091512771916681217.json]
+members: [图片生成/图生图/Krea2 动漫转真人_2102002514861314049.json, 图片生成/图生图/Krea2-动漫转真人V3_2094037108511035394.json, 图片生成/图生图/Krea2_漫转写实真人V2_2085011207811059713.json, 图片生成/图生图/Krea2_漫转写实真人V2_2085285424783773698.json, 图片生成/图生图/Krea2_漫转写实真人V2_2087387221463748610.json, 图片生成/图生图/Krea2_漫转写实真人V2_2089714152586702849.json, 图片生成/图生图/Krea2_漫转写实真人V3_2091170195137191937.json, 图片生成/图生图/Krea2_漫转写实真人V3_2098921299581161474.json, 图片生成/图生图/Krea2_漫转写实真人V3_2098979826014179329.json, 图片生成/图生图/Krea2_漫转写实真人V3_2099656062805831681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_116
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/minimax h3文生视频双采高清流_2093374091788115970.json、视频生成/文生视频/minimax_h3_r2v_video_edit视频编辑_2094267455395950594.json、视频生成/文生视频/【遇见AI】Minimax H3 latent upscale潜空间放大 FL2VA版_2090678319321800705.json、视频生成/文生视频/人物真实低动态H3+sigma强化+潜空间放大工作流 双采_2096114490512330753.json、视频生成/文生视频/动漫短剧工作流（一键直出1080P竖屏短剧提示词未自动优化）_2093587306430160898.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Krea2 动漫转真人_2102002514861314049.json、图片生成/图生图/Krea2-动漫转真人V3_2094037108511035394.json、图片生成/图生图/Krea2_漫转写实真人V2_2085011207811059713.json、图片生成/图生图/Krea2_漫转写实真人V2_2085285424783773698.json、图片生成/图生图/Krea2_漫转写实真人V2_2087387221463748610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **样本数**：10
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SplitSigmas`
+- `Easy_QwenEdit2509`
+- `FluxKontextMultiReferenceLatentMethod`
+- `KSampler`
+- `Krea2OstrisEditModelPatch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 8/9 个有
-- `LoraLoaderModelOnly` —— 8/9 个有
-- `MiniMaxH3ReferenceToVideo` —— 8/9 个有
-- `MinimaxH3LatentUpscaler3D` —— 7/9 个有
-- `ModelPreviewOverrideKJ` —— 7/9 个有
-- `CreateVideo` —— 6/9 个有
-- `PrimitiveStringMultiline` —— 6/9 个有
-- `SaveVideo` —— 6/9 个有
-- `GetNode` —— 5/9 个有
-- `H3SigmaRefiner` —— 5/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/9 个有
-- `SetNode` —— 5/9 个有
-- `VHS_VideoCombine` —— 5/9 个有
-- `ManualSigmas` —— 4/9 个有
-- `LoadAudio` —— 2/9 个有
-- `SolAttnMiniMax` —— 2/9 个有
-- `VHS_LoadVideo` —— 2/9 个有
-- `CR Prompt Text` —— 1/9 个有
-- `MiniMaxH3ImageToVideo` —— 1/9 个有
-- `MiniMaxH3LatentUpscaleBy32T8` —— 1/9 个有
-- `MiniMaxLowVRAMAttention` —— 1/9 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 1/9 个有
-- `MuyeTextEditOutput` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
-- `孤海注释` —— 1/9 个有
+- `ColorCorrect` —— 6/10 个有
+- `Lora Loader Stack (rgthree)` —— 6/10 个有
+- `LoraLoaderModelOnly` —— 4/10 个有
+- `EmptyImage` —— 3/10 个有
+- `PreviewImage` —— 3/10 个有
+- `Int` —— 2/10 个有
+- `CR Prompt Text` —— 1/10 个有
+- `Image Comparer (rgthree)` —— 1/10 个有
+- `ImageMergeNode` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 10 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | beta57 | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 beta57，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

@@ -1,92 +1,87 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_22
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.9016
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImageConcanate, ImageCrop+, InpaintCrop, InpaintModelConditioning, InpaintStitch, KSampler, LoadImage, MaskToImage, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 8
+level: moderate
+coverage: 0.735125
+common_nodes: [CLIPTextEncode, CR Latent Batch Size, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), InpaintModelConditioning, KSampler, LoadImage, MaskPreview+, PreviewImage, RH_Translator, SaveImage, ShowText|pysssss, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX_Redux_电商模特换装_1896041388389826561.json, 图片生成/图生图/FLUX淘宝一键换装换鞋_2014910556368543745.json, 图片生成/图生图/Flux_服装迁移换装_1900211139815403521.json, 图片生成/图生图/【极致精准换装】FLUX 一键快速迁移换装_1929459573017493505.json, 图片生成/图生图/电商场景生成模特，保持模特不变_1899787202992156674.json]
+members: [图片生成/图生图/局部重绘---适合非常小的局部 (新节点）_1962323843031482369.json, 图片生成/图生图/局部重绘---适合非常小的局部_1941299544011468802.json, 图片生成/图生图/局部重绘---适合非常小的局部_1953682902464778241.json, 图片生成/图生图/局部重绘Flux_Fill_OneReward——自动合层工作流（加速版）【阿夕AI】_2099872308956581889.json, 图片生成/图生图/局部重绘OneReward---适合非常小的局部（加速版）_1966492793738833922.json, 平台全量/【功能】局部重绘_1981292990843052034.json, 平台全量/局部重绘Flux_Fill_OneReward——自动合层工作流（加速版）【阿夕AI】_2053797875498397697.json, 平台全量/局部重绘完美移除版OneReward——自动合层工作流（加速版）【阿夕AI】_2057771003970932737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_22
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX_Redux_电商模特换装_1896041388389826561.json、图片生成/图生图/FLUX淘宝一键换装换鞋_2014910556368543745.json、图片生成/图生图/Flux_服装迁移换装_1900211139815403521.json、图片生成/图生图/【极致精准换装】FLUX 一键快速迁移换装_1929459573017493505.json、图片生成/图生图/电商场景生成模特，保持模特不变_1899787202992156674.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/局部重绘---适合非常小的局部 (新节点）_1962323843031482369.json、图片生成/图生图/局部重绘---适合非常小的局部_1941299544011468802.json、图片生成/图生图/局部重绘---适合非常小的局部_1953682902464778241.json、图片生成/图生图/局部重绘Flux_Fill_OneReward——自动合层工作流（加速版）【阿夕AI】_2099872308956581889.json、图片生成/图生图/局部重绘OneReward---适合非常小的局部（加速版）_1966492793738833922.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
+- `CR Latent Batch Size`
+- `ConditioningZeroOut`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `ImageConcanate`
-- `ImageCrop+`
-- `InpaintCrop`
+- `Image Comparer (rgthree)`
 - `InpaintModelConditioning`
-- `InpaintStitch`
 - `KSampler`
 - `LoadImage`
-- `MaskToImage`
+- `MaskPreview+`
+- `PreviewImage`
+- `RH_Translator`
 - `SaveImage`
-- `StyleModelLoader`
-- `UNETLoader`
+- `ShowText|pysssss`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageToMask` —— 4/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `StyleModelApply` —— 4/5 个有
-- `GetImageSize+` —— 3/5 个有
-- `GroundingDinoModelLoader (segment anything)` —— 3/5 个有
-- `GroundingDinoSAMSegment (segment anything)` —— 3/5 个有
-- `Image Filter Adjustments` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `SAMModelLoader (segment anything)` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `ConstrainImage|pysssss` —— 2/5 个有
-- `ImageResize+` —— 2/5 个有
-- `InspyrenetRembg` —— 2/5 个有
-- `Anything Everywhere` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `Image To Mask` —— 1/5 个有
-- `ImpactInt` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `LayerColor: Brightness & Contrast` —— 1/5 个有
-- `LayerUtility: ColorImage V2` —— 1/5 个有
-- `ReduxAdvanced` —— 1/5 个有
-- `easy clearCacheAll` —— 1/5 个有
-- `preview_mask` —— 1/5 个有
+- `InpaintCropImproved` —— 6/8 个有
+- `InpaintStitchImproved` —— 6/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `UNETLoader` —— 6/8 个有
+- `Text Prompt (JPS)` —— 3/8 个有
+- `孤海注释` —— 3/8 个有
+- `InpaintCrop` —— 2/8 个有
+- `InpaintResize` —— 2/8 个有
+- `InpaintStitch` —— 2/8 个有
+- `NunchakuFluxDiTLoader` —— 2/8 个有
+- `Text` —— 2/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `ImageCompositeMasked` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `MaskToImage` —— 1/8 个有
+- `PrimitiveInt` —— 1/8 个有
+- `SDVN Get Mask Size` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 35 | 5 | 76% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 80% |
-| 调度器 | simple | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 8 | 8 - 20 | 8 | 53% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | normal | - | 8 | 88% |
+| 重绘幅度 | 1 | 0.4 - 1 | 8 | 79% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 35，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 simple，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 20，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 normal，8 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 0.4 - 1，8 个样本
+- 高发问题（6/8 个样本）：Steps较低可能导致细节不足

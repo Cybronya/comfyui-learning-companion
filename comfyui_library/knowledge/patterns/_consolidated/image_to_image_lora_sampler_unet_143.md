@@ -2,61 +2,67 @@
 name: image_to_image_lora_sampler_unet_143
 type: Image To Image
 frequency: 5
-level: moderate
-coverage: 0.8436
-common_nodes: [CFGNorm, CLIPLoader, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+level: strong
+coverage: 0.8818
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen-Image_字体直出_字体设计_书法字体_综艺字体_海报生成QwenEdit_1982996678984773634.json, 图片生成/文生图/最新千问图像编辑_1970656696915927042.json, 数字人/数字人/【老金驿站】Qwen2509肌肤改善器工作流_1985948966875537410.json, 数字人/数字人/替换物品，人物，让人物穿上你想要的衣服，鞋子_2032482079761502210.json, 视频生成/文生视频/QwenEdit 2511（FH修复油腻感模型）_2004948756900573185.json]
+members: [图片生成/图生图/002.Qwen编辑之王020.单图自动多角度_2034850323080159233.json, 图片生成/图生图/Qwen Edit 2511 多景别镜头 13镜（普通版）_2008008936619773954.json, 图片生成/图生图/Qwen-Edit-2511多视角批量出图_2007857356884942850.json, 图片生成/图生图/一键多角度多场景_Qwen2511_2010642429887651842.json, 图片生成/图生图/动漫转绘_2015108810058240001.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_143
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen-Image_字体直出_字体设计_书法字体_综艺字体_海报生成QwenEdit_1982996678984773634.json、图片生成/文生图/最新千问图像编辑_1970656696915927042.json、数字人/数字人/【老金驿站】Qwen2509肌肤改善器工作流_1985948966875537410.json、数字人/数字人/替换物品，人物，让人物穿上你想要的衣服，鞋子_2032482079761502210.json、视频生成/文生视频/QwenEdit 2511（FH修复油腻感模型）_2004948756900573185.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/002.Qwen编辑之王020.单图自动多角度_2034850323080159233.json、图片生成/图生图/Qwen Edit 2511 多景别镜头 13镜（普通版）_2008008936619773954.json、图片生成/图生图/Qwen-Edit-2511多视角批量出图_2007857356884942850.json、图片生成/图生图/一键多角度多场景_Qwen2511_2010642429887651842.json、图片生成/图生图/动漫转绘_2015108810058240001.json）
 
 - **类型**：Image To Image
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `ReferenceLatent`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImageEditPlus` —— 4/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `TextEncodeQwenImageEdit` —— 2/5 个有
-- `CLIPTextEncode` —— 1/5 个有
-- `CR SDXL Aspect Ratio` —— 1/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `LayerUtility: ImageReel` —— 1/5 个有
-- `LayerUtility: ImageReelComposit` —— 1/5 个有
-- `NunchakuQwenImageDiTLoader` —— 1/5 个有
-- `ReferenceLatent` —— 1/5 个有
+- `INTConstant` —— 4/5 个有
+- `easy promptLine` —— 4/5 个有
+- `CR Prompt Text` —— 3/5 个有
+- `Qwen3_VQA` —— 3/5 个有
+- `JoinStrings` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `CR Prompt List` —— 1/5 个有
+- `CR Text` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `JWStringConcat` —— 1/5 个有
+- `ModelSamplingAuraFlow` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `Prompt_Edit` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 25 | 5 | 40% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 5 | 54% |
+| 采样步数 | 4 | 4 - 8 | 5 | 69% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
 | 采样算法 | euler | - | 5 | 80% |
-| 调度器 | simple | - | 5 | 60% |
+| 调度器 | beta | - | 5 | 40% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
@@ -67,9 +73,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 25，5 个样本，取值分散，一致性仅 40%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，5 个样本
+- 采样步数 中位数 4，观测区间 4 - 8，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 simple，5 个样本，一致性 60%
+- 调度器 最常用 beta，5 个样本，一致性 40%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 高发问题（5/5 个样本）：Steps较低可能导致细节不足

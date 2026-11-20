@@ -2,88 +2,74 @@
 name: unknown_workflow_video_upscale_latent_upscale_100
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.927
-common_nodes: [1hew_AudioDuration, BasicScheduler, CFGGuider, CLIPTextEncode, CM_FloatToInt, CM_IntToFloat, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, INTConstant, ImageFromBatch, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVEnhanceAVideoKJ, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: NumberCalculatorV2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, RTXVideoSuperResolution, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, Text, TrimAudioDuration, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, easy positive]
+level: moderate
+coverage: 0.789
+common_nodes: [1hew_TextListToString, CFGGuider, CR Text, ComfyMathExpression, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, ExtractLinesByIndex, GetImageSize, Int, JsonExtractString, KSamplerSelect, LTX2MemoryEfficientSageAttentionPatch, LTX2SamplingPreviewOverride, LTXVAddGuideMulti, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PreviewAny, PrimitiveFloat, PromptRelaySmartEncode, Qwen3_VQA, RH_LLMAPI_NODE, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, StringToInt, Text, Text List, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/解说漫-三图声音控时长V1_2054612092153548802.json, 视频生成/图生视频/解说漫-三图音频_2054399661825380353.json, 视频生成/图生视频/解说漫-二图声音控时长V1_2057031917425487874.json, 视频生成/图生视频/解说漫-二图声音控时长_2054997494110670850.json]
+members: [视频生成/图生视频/LTX2.3三帧丝滑流转与全自动动态编排_2056187617363931138.json, 视频生成/图生视频/LTX2.3四帧丝滑流转与全自动动态编排_2054820963426021378.json, 视频生成/图生视频/LTX2.3四帧丝滑流转与全自动动态编排_2058558198705119234.json, 视频生成/图生视频/超好用🔥四帧丝滑流转全自动动态编排-最新版_2056631310260719617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_100
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/解说漫-三图声音控时长V1_2054612092153548802.json、视频生成/图生视频/解说漫-三图音频_2054399661825380353.json、视频生成/图生视频/解说漫-二图声音控时长V1_2057031917425487874.json、视频生成/图生视频/解说漫-二图声音控时长_2054997494110670850.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3三帧丝滑流转与全自动动态编排_2056187617363931138.json、视频生成/图生视频/LTX2.3四帧丝滑流转与全自动动态编排_2054820963426021378.json、视频生成/图生视频/LTX2.3四帧丝滑流转与全自动动态编排_2058558198705119234.json、视频生成/图生视频/超好用🔥四帧丝滑流转全自动动态编排-最新版_2056631310260719617.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `1hew_AudioDuration`
-- `BasicScheduler`
+- `1hew_TextListToString`
 - `CFGGuider`
-- `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CM_IntToFloat`
+- `CR Text`
 - `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
+- `ExtractLinesByIndex`
+- `GetImageSize`
+- `Int`
+- `JsonExtractString`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
+- `LTX2MemoryEfficientSageAttentionPatch`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAddGuideMulti`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVEnhanceAVideoKJ`
-- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
-- `LTXVSeparateAVLatent`
+- `LTXVPreprocess`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: NumberCalculatorV2`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
+- `PreviewAny`
 - `PrimitiveFloat`
-- `RTXVideoSuperResolution`
+- `PromptRelaySmartEncode`
+- `Qwen3_VQA`
+- `RH_LLMAPI_NODE`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
+- `StringToInt`
 - `Text`
-- `TrimAudioDuration`
+- `Text List`
 - `UNETLoader`
 - `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
-- `easy positive`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 3/4 个有
-- `LTXVAddGuideMulti` —— 2/4 个有
-- `LTXVAddGuideMultiDynamic` —— 2/4 个有
-- `STGGuiderAdvanced` —— 2/4 个有
-- `LTXVAudioVAEEncode` —— 1/4 个有
+- `PrimitiveInt` —— 3/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 4 | 100% |
-| 高度 | 25 | 24 - 25 | 4 | 98% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -91,5 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 24 - 25，4 个样本，取值集中（一致性 98%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,45 +1,56 @@
 ---
 name: unknown_workflow_sampler_unet_vae_300
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [BasicGuider, CLIPLoader, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader]
+coverage: 0.6325
+common_nodes: [BasicGuider, CLIPLoader, ComfySwitchNode, JsonExtractString, KSamplerSelect, ManualSigmas, MiniMaxH3ImageConditioning, PreviewAny, PrimitiveBoolean, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, StringReplace, TextGenerateV2, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜首尾帧视频_2098317979074260993.json, 视频生成/文生视频/MiniMax H3｜PDD 8步｜参考生视频_2098326349755805698.json, 视频生成/文生视频/MiniMax H3｜PDD 8步｜首尾帧视频_2098317966491340801.json]
+members: [平台全量/MiniMax H3-Image｜中文海报烧字_2120393071899799553.json, 平台全量/Minimax H3 Image精准Sigma图像编辑_2120254692004556802.json, 平台全量/Minimax-H3 Image 文生图 Sigma精准调度&自动提示词_2120391350930731009.json, 平台全量/minimaxh3 文生图_2120496330027130881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_300
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜OpenVDN DMD8｜首尾帧视频_2098317979074260993.json、视频生成/文生视频/MiniMax H3｜PDD 8步｜参考生视频_2098326349755805698.json、视频生成/文生视频/MiniMax H3｜PDD 8步｜首尾帧视频_2098317966491340801.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/MiniMax H3-Image｜中文海报烧字_2120393071899799553.json、平台全量/Minimax H3 Image精准Sigma图像编辑_2120254692004556802.json、平台全量/Minimax-H3 Image 文生图 Sigma精准调度&自动提示词_2120391350930731009.json、平台全量/minimaxh3 文生图_2120496330027130881.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicGuider`
 - `CLIPLoader`
-- `LoadImage`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
+- `ComfySwitchNode`
+- `JsonExtractString`
+- `KSamplerSelect`
+- `ManualSigmas`
+- `MiniMaxH3ImageConditioning`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveImage`
+- `StringReplace`
+- `TextGenerateV2`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3PDD8StepSetupT8Advanced` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
-- `CreateVideo` —— 1/3 个有
-- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 1/3 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/3 个有
-- `SaveVideo` —— 1/3 个有
+- `ResolutionSelector` —— 3/4 个有
+- `LoadImage` —— 2/4 个有
+- `BasicScheduler` —— 1/4 个有
+- `GetImageSize` —— 1/4 个有
+- `GetNode` —— 1/4 个有
+- `ResizeImageMaskNode` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `孤海注释` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,63 +1,74 @@
 ---
 name: unknown_workflow_sampler_vae_60
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.922
-common_nodes: [CLIPLoader, CreateVideo, LoadImage, Lynx_Encode, Lynx_KSampler, Lynx_Model, SaveVideo, VAEDecode, VAELoader]
-problems: []
+coverage: 0.943
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus_lrzjason, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/LYNX字节跳动高保真人脸迁移视频生成_1972500268996882433.json, 视频生成/文生视频/Smthem版Lynx ID特征一致性Full版_1972855654023143425.json, 视频生成/文生视频/Smthem版Lynx ID特征一致性Lite版_1975547820323246081.json]
+members: [图片生成/图生图/Qwen edit-Rapid-v7.1 单人+多人智能编辑 低配置运行版_1984198272912867330.json, 图片生成/图生图/证件照快速生成_1971776074260672513.json, 图片生成/图生图/🦖QwenEdit Plus单图文字修改_1971088622319505410.json, 平台全量/Qwen Edit 2509 一键证件照_1982684674193530882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_60
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LYNX字节跳动高保真人脸迁移视频生成_1972500268996882433.json、视频生成/文生视频/Smthem版Lynx ID特征一致性Full版_1972855654023143425.json、视频生成/文生视频/Smthem版Lynx ID特征一致性Lite版_1975547820323246081.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen edit-Rapid-v7.1 单人+多人智能编辑 低配置运行版_1984198272912867330.json、图片生成/图生图/证件照快速生成_1971776074260672513.json、图片生成/图生图/🦖QwenEdit Plus单图文字修改_1971088622319505410.json、平台全量/Qwen Edit 2509 一键证件照_1982684674193530882.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `CreateVideo`
+- `KSampler`
 - `LoadImage`
-- `Lynx_Encode`
-- `Lynx_KSampler`
-- `Lynx_Model`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `SaveImage`
+- `TextEncodeQwenImageEditPlus_lrzjason`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `VHS_VideoCombine` —— 2/3 个有
+- `ConditioningZeroOut` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ImageScaleToTotalPixels` —— 3/4 个有
+- `ImageStitch` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `Textbox` —— 2/4 个有
+- `UNETLoader` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `NunchakuQwenImageDiTLoader` —— 1/4 个有
+- `TextEncodeQwenImageEdit` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 121 | 81 - 121 | 3 | 82% |
-| 调度器 | 1 | 1 - 1 | 3 | 100% |
-| 重绘幅度 | 2 | 2 - 2 | 3 | 100% |
+| 采样步数 | 8 | 4 - 8 | 4 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 121，观测区间 81 - 121，3 个样本，取值集中（一致性 82%）
-- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
-- 风险：重绘幅度 观测到 2，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 采样步数 中位数 8，观测区间 4 - 8，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

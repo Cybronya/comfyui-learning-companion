@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_634
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8685
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyImage, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.8655
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen_Image_2.1溶图工作流，图片融合其它图片处理方案_2109813671357669377.json, 图片生成/图生图/精修图生图工作流，提升图片细节与质感的专业修图方案_2104746115060031490.json]
+members: [图片生成/图生图/Flux2 老照片修复｜图生图唤醒泛黄回忆 模糊脸变清晰_2097586011000885249.json, 图片生成/图生图/一分钟快速换脸｜flux图片人脸变换图生图_2089844957984157698.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_634
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen_Image_2.1溶图工作流，图片融合其它图片处理方案_2109813671357669377.json、图片生成/图生图/精修图生图工作流，提升图片细节与质感的专业修图方案_2104746115060031490.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux2 老照片修复｜图生图唤醒泛黄回忆 模糊脸变清晰_2097586011000885249.json、图片生成/图生图/一分钟快速换脸｜flux图片人脸变换图生图_2089844957984157698.json）
 
 - **类型**：Text To Image
 - **样本数**：2
@@ -25,31 +25,38 @@ source: knowledge_consolidation
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyImage`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
+- `GetImageSize`
 - `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Text_Box` —— 1/2 个有
-- `DetailTransfer` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/2 个有
-- `PainterFluxImageEdit` —— 1/2 个有
-- `QwenImage21BlockCacheT8` —— 1/2 个有
-- `QwenImage21SageAttentionT8` —— 1/2 个有
-- `QwenImage21SpectrumT8` —— 1/2 个有
-- `TextEncodeQwenImage21GH` —— 1/2 个有
+- `AddLabel` —— 1/2 个有
+- `CR Prompt Text` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `ColorMatch` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `ImageConcatMulti` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `WD14Tagger|pysssss` —— 1/2 个有
+- `easy imageConcat` —— 1/2 个有
 
 ## 典型参数
 
@@ -67,7 +74,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -78,5 +85,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（3/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

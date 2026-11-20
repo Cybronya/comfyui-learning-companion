@@ -1,82 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_97
 type: Unknown Workflow
-frequency: 16
+frequency: 18
 level: moderate
-coverage: 0.787188
-common_nodes: [Audio Duration (mtb), AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, ImageFromBatch+, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveInt, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.906944
+common_nodes: [CogVideoEnhanceAVideo, CreateCFGScheduleFloatList, DF_Integer, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, RH_Captioner, SimpleMath+, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/1.1_infinitetalk视频双人对口型（效果最好）_1994720356055326722.json, 数字人/数字人/1.2_InfiniteTalk视频+音频对口型（效果最好）_1994683257532915714.json, 数字人/数字人/InfiniteTalkV2V 视频对口型数字人说话唱歌_2042253660570263554.json, 数字人/数字人/InfiniteTalk数字人视频生视频2_1978763649466699777.json, 数字人/数字人/InfiniteTalk数字人视频生视频_1958502190061142018.json, 数字人/数字人/InfiniteTalk数字人视频生视频_1982814946415259649.json, 数字人/数字人/InfiniteTalk数字人视频生视频_2001131954474975234.json, 数字人/数字人/infinitetalk图像对口型_1971910981158891521.json, 数字人/数字人/infinitetalk视频双人对口型_1980526429727313921.json, 数字人/数字人/infinitetalk视频对口型（hua）_1998027187120955394.json, 数字人/数字人/infinitetalk视频对口型（hua）_2006207828683395074.json, 数字人/数字人/wan2.1视频对口型（支持超长30秒）_2061334128561315841.json, 数字人/数字人/【808】视频角色对口型_2038885608399048706.json, 数字人/数字人/视频对口型（指定角色）_2036439627673899009.json, 数字人/数字人/视频对口型（指定角色）_2037210359945240577.json, 音频生成/音频生成/视频对口型（指定角色）_2012598659203997698.json]
+members: [视频生成/图生视频/KJ版-wan2.2-14B 图生视频_1950075530189127682.json, 视频生成/图生视频/KJ版-wan2.2-14B 首尾帧最新_1952043105937731585.json, 视频生成/图生视频/Wan2.2-14B-首尾帧最新视频工作流_2067129224686821377.json, 视频生成/图生视频/Wan2.2-14B-首尾帧视频工作流_2085669231730974721.json, 视频生成/图生视频/Wan2.2-首尾帧-kj优化加速版_1954893685562359810.json, 视频生成/图生视频/wan2.2 8步lora 加速图生视频_1955443170857422849.json, 视频生成/图生视频/wan2.2 图生视频｜ 4步lora 加速_1953398457706971138.json, 视频生成/图生视频/wan2.2+4步lora 图生视频_1952550941541240833.json, 视频生成/图生视频/wan2.2+FusxionX_14B_自动提示词优化_图生视频-加速版-KJ模型_1951465254188429313.json, 视频生成/图生视频/wan2.2+Seko新4步 图生视频_1953648114819321858.json, 视频生成/图生视频/wan2.2-14B 首尾帧工作流_2011405192771674114.json, 视频生成/图生视频/wan2.2-14B 首尾帧工作流_2012117442817953793.json, 视频生成/图生视频/wan2.2-14B 首尾帧最新-速度快，质量好_1956190750184755201.json, 视频生成/图生视频/wan2.2-14B 首尾帧最新工作流_2011413743489523713.json, 视频生成/图生视频/wan2.2首尾帧工作流_2009530449273561089.json, 视频生成/图生视频/图生视频wan2.2视频循环首尾帧_1964548830723231746.json, 视频生成/图生视频/工作流视频篇3-wan2.2首尾帧工作流_2018219380894601218.json, 视频生成/图生视频/无缝循环动态壁纸视频生成wan2.2首尾帧_1964562297249218562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_97
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（数字人/数字人/1.1_infinitetalk视频双人对口型（效果最好）_1994720356055326722.json、数字人/数字人/1.2_InfiniteTalk视频+音频对口型（效果最好）_1994683257532915714.json、数字人/数字人/InfiniteTalkV2V 视频对口型数字人说话唱歌_2042253660570263554.json、数字人/数字人/InfiniteTalk数字人视频生视频2_1978763649466699777.json、数字人/数字人/InfiniteTalk数字人视频生视频_1958502190061142018.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/KJ版-wan2.2-14B 图生视频_1950075530189127682.json、视频生成/图生视频/KJ版-wan2.2-14B 首尾帧最新_1952043105937731585.json、视频生成/图生视频/Wan2.2-14B-首尾帧最新视频工作流_2067129224686821377.json、视频生成/图生视频/Wan2.2-14B-首尾帧视频工作流_2085669231730974721.json、视频生成/图生视频/Wan2.2-首尾帧-kj优化加速版_1954893685562359810.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `ImageFromBatch+`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PrimitiveInt`
+全部 18 个 workflow 都包含：
+- `CogVideoEnhanceAVideo`
+- `CreateCFGScheduleFloatList`
+- `DF_Integer`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `RH_Captioner`
 - `SimpleMath+`
-- `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_LoadVideo` —— 15/16 个有
-- `WanVideoEncode` —— 15/16 个有
-- `AudioCrop` —— 14/16 个有
-- `ImageResizeKJv2` —— 14/16 个有
-- `CR Text` —— 10/16 个有
-- `easy showAnything` —— 10/16 个有
-- `WanVideoTorchCompileSettings` —— 9/16 个有
-- `easy cleanGpuUsed` —— 8/16 个有
-- `GetNode` —— 6/16 个有
-- `JjkText` —— 6/16 个有
-- `LayerUtility: PurgeVRAM` —— 6/16 个有
-- `PreviewAny` —— 6/16 个有
-- `PrimitiveString` —— 6/16 个有
-- `SetNode` —— 6/16 个有
-- `PreviewImage` —— 5/16 个有
-- `AILab_MaskPreview` —— 4/16 个有
-- `ImageFromBatch` —— 4/16 个有
-- `MaskListToMaskBatch` —— 4/16 个有
-- `PreviewAudio` —— 4/16 个有
-- `RH_Translator` —— 4/16 个有
-- `Text` —— 4/16 个有
-- `VHS_VideoInfo` —— 4/16 个有
-- `easy sam3ModelLoader` —— 4/16 个有
-- `easy sam3VideoSegmentation` —— 4/16 个有
-- `LoadImage` —— 3/16 个有
-- `ImageResize+` —— 2/16 个有
-- `SaveImage` —— 2/16 个有
-- `VHS_VideoInfoLoaded` —— 2/16 个有
-- `FloatConstant` —— 1/16 个有
-- `PrimitiveFloat` —— 1/16 个有
+- `PrimitiveBoolean` —— 17/18 个有
+- `VHS_VideoCombine` —— 17/18 个有
+- `WanVideoSetLoRAs` —— 17/18 个有
+- `easy ifElse` —— 17/18 个有
+- `easy int` —— 17/18 个有
+- `WanVideoClipVisionEncode` —— 13/18 个有
+- `WanVideoTorchCompileSettings` —— 13/18 个有
+- `ImageStitch` —— 12/18 个有
+- `LayerUtility: ImageMaskScaleAs` —— 12/18 个有
+- `LoadWanVideoClipTextEncoder` —— 12/18 个有
+- `RH_Translator` —— 12/18 个有
+- `Textbox` —— 11/18 个有
+- `CLIPVisionLoader` —— 8/18 个有
+- `CR Text Replace` —— 6/18 个有
+- `TextBox` —— 6/18 个有
+- `easy seed` —— 5/18 个有
+- `ColorCorrectOfUtils` —— 1/18 个有
+- `ColorMatchToReference` —— 1/18 个有
+- `CreateVideo` —— 1/18 个有
+- `EsesImageEffectLevels` —— 1/18 个有
+- `FloatToSigmas` —— 1/18 个有
+- `ImageCASharpening+` —— 1/18 个有
+- `Int` —— 1/18 个有
+- `LayerUtility: PurgeVRAM` —— 1/18 个有
+- `SaveVideo` —— 1/18 个有
+- `StringToFloatList` —— 1/18 个有
+- `WanVideoExperimentalArgs` —— 1/18 个有
 
 ## 典型参数
 

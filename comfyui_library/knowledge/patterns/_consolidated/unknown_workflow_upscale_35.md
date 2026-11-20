@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_upscale_35
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7335
-common_nodes: [ImageCompare, LoadImage, SaveImage]
+frequency: 4
+level: moderate
+coverage: 0.88675
+common_nodes: [LoadVideo, RH_RhartVideoVideoUpscaler, RH_Upscale, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/utility_hitpaw_general_image_enhance.json, comfyui-workflow-templates-json/utility_recraft_creative_image_upscale.json]
+members: [平台全量/RH Upscale双版本视频极速高清放大_2109811684759130114.json, 平台全量/RH Upscale视频极速超分--RH币版+api版_2110640995837759490.json, 平台全量/RH Upscale视频高清放大_画质还原_人物一致性_时序稳定性_2106955556006227970.json, 数字人/数字人/RH Upscale双版本(RH币API版)视频极速高清放大_2105207523186929665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_35
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/utility_hitpaw_general_image_enhance.json、comfyui-workflow-templates-json/utility_recraft_creative_image_upscale.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/RH Upscale双版本视频极速高清放大_2109811684759130114.json、平台全量/RH Upscale视频极速超分--RH币版+api版_2110640995837759490.json、平台全量/RH Upscale视频高清放大_画质还原_人物一致性_时序稳定性_2106955556006227970.json、数字人/数字人/RH Upscale双版本(RH币API版)视频极速高清放大_2105207523186929665.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageCompare`
-- `LoadImage`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `LoadVideo`
+- `RH_RhartVideoVideoUpscaler`
+- `RH_Upscale`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `HitPawGeneralImageEnhance` —— 1/2 个有
-- `RecraftCreativeUpscaleNode` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `孤海注释` —— 1/4 个有
 
 ## 典型参数
 
@@ -41,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

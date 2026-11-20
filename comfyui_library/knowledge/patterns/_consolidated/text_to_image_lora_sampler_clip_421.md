@@ -3,61 +3,48 @@ name: text_to_image_lora_sampler_clip_421
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8244
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, EmptyMiniMaxMusic3LatentAudio, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxMusic3TextEncode, SaveAudioAdvanced, SeedNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8854
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/MiniMax_Music3音乐生成完结版｜歌曲信息歌词时长设置音频生成_2088724711751639042.json, 音频生成/音频生成/Minimax Music 3开源｜最长5分钟音乐生成音频生成_2089692123355500546.json, 音频生成/音频生成/Minimax Music3文生音频工作流｜音频生成_2090079394516791298.json, 音频生成/音频生成/Minimax Music3音乐生成神器开源版｜官方skill自动优化音频生成_2089728078477094913.json, 音频生成/音频生成/Music3音乐生成完结版｜MiniMax歌曲信息歌词一键成曲_2089067866262949890.json]
+members: [图片生成/文生图/小红书抖音种草唯美照片 AI创意摄影集成升级_2098111917645713410.json, 图片生成/文生图/抖音小红书种草专用｜唯美照片文生图V2.0_2090528858159271937.json, 图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片创作_2090823875012685825.json, 图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片生成_2094309486575050753.json, 视频生成/文生视频/全能图片PRO低价渠道版｜十图批量编辑图生图省币必囤_2103677088447426561.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_421
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/MiniMax_Music3音乐生成完结版｜歌曲信息歌词时长设置音频生成_2088724711751639042.json、音频生成/音频生成/Minimax Music 3开源｜最长5分钟音乐生成音频生成_2089692123355500546.json、音频生成/音频生成/Minimax Music3文生音频工作流｜音频生成_2090079394516791298.json、音频生成/音频生成/Minimax Music3音乐生成神器开源版｜官方skill自动优化音频生成_2089728078477094913.json、音频生成/音频生成/Music3音乐生成完结版｜MiniMax歌曲信息歌词一键成曲_2089067866262949890.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/小红书抖音种草唯美照片 AI创意摄影集成升级_2098111917645713410.json、图片生成/文生图/抖音小红书种草专用｜唯美照片文生图V2.0_2090528858159271937.json、图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片创作_2090823875012685825.json、图片生成/文生图/抖音小红书种草专用｜文生图V2.0唯美照片生成_2094309486575050753.json、视频生成/文生视频/全能图片PRO低价渠道版｜十图批量编辑图生图省币必囤_2103677088447426561.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `EmptyMiniMaxMusic3LatentAudio`
 - `JjkText`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxMusic3TextEncode`
-- `SaveAudioAdvanced`
-- `SeedNode`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 3/5 个有
-- `easy showAnything` —— 3/5 个有
-- `ComfySwitchNode` —— 2/5 个有
-- `GetNode` —— 2/5 个有
-- `ImpactConditionalBranch` —— 2/5 个有
-- `MuyeTextEditOutput` —— 2/5 个有
-- `PrimitiveFloat` —— 2/5 个有
-- `SetNode` —— 2/5 个有
-- `VAEDecodeAudioTiled` —— 2/5 个有
-- `ZML_BooleanSwitch` —— 2/5 个有
-- `llama_cpp_instruct_adv` —— 2/5 个有
-- `llama_cpp_model_loader` —— 2/5 个有
-- `llama_cpp_parameters` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `DapaoMusic3CaptionPromptNode` —— 1/5 个有
-- `PrimitiveString` —— 1/5 个有
+- `DF_Text_Box` —— 4/5 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `workflow>儿童AI摄影` —— 4/5 个有
+- `workflow>创意图片处理` —— 4/5 个有
+- `workflow>宠物守护神AI摄影` —— 4/5 个有
+- `workflow>真实照片处理` —— 4/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/5 个有
 
 ## 典型参数
 
@@ -75,7 +62,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -86,4 +73,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（6/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

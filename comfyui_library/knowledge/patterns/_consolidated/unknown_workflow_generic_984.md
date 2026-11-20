@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_984
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.931333
-common_nodes: [EmptyImage, LoadAudio, LoadImage, LoadVideo, PreviewImage, SaveVideo]
+coverage: 0.71425
+common_nodes: [LoadAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionVector, easy indexTTSGenerate]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance2.5全参工作流_2101625313246666753.json, 图片生成/文生图/Moss-image(文生图+可选提示词增强MOSS-Image-SFT_原始50步_25步_8步极速生图加速按需3选1+可选无损超分高清放大_2113558751847469057.json, 视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2101626273922641921.json]
+members: [数字人/数字人/AI语音克隆+情绪调节_2026959078060199938.json, 数字人/数字人/AI语音克隆+情绪调节_2056685949249216514.json, 音频生成/音频生成/IndexTTS2情绪调整克隆_1970367640868974593.json, 音频生成/音频生成/语速+情感单人INDEXTTS_2066426440756846594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_984
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Seedance2.5全参工作流_2101625313246666753.json、图片生成/文生图/Moss-image(文生图+可选提示词增强MOSS-Image-SFT_原始50步_25步_8步极速生图加速按需3选1+可选无损超分高清放大_2113558751847469057.json、视频生成/图生视频/Seedance_2.5_多模态全能参考视频｜图生视频｜视频生视频_2101626273922641921.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/AI语音克隆+情绪调节_2026959078060199938.json、数字人/数字人/AI语音克隆+情绪调节_2056685949249216514.json、音频生成/音频生成/IndexTTS2情绪调整克隆_1970367640868974593.json、音频生成/音频生成/语速+情感单人INDEXTTS_2066426440756846594.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `EmptyImage`
+全部 4 个 workflow 都包含：
 - `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `PreviewImage`
-- `SaveVideo`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSEmotionVector`
+- `easy indexTTSGenerate`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance25TokenMultimodalVideo` —— 2/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/3 个有
-- `ttN text` —— 1/3 个有
+- `easy indexTTSEmotionMerge` —— 3/4 个有
+- `SaveAudio` —— 2/4 个有
+- `SaveAudioMP3` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 

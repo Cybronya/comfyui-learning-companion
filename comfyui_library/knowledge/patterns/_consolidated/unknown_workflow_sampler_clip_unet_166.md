@@ -1,79 +1,63 @@
 ---
 name: unknown_workflow_sampler_clip_unet_166
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.72675
-common_nodes: [CFGOverride, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DualModelGuider, Ideogram4Scheduler, KSamplerSelect, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: weak
+coverage: 0.966111
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Ideogram4（无审查版）_2071111233360715777.json, 图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2094723434193448962.json, 图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2098917767268360194.json, 图片生成/文生图/Ideogram强势开源支持自然语言极简输入_2064195567823183874.json, 图片生成/文生图/Ideogram自然语文生图_2064911052713844737.json, 图片生成/文生图/[Ideogram 4 系列 01] Ideogram 4 第一课：官方 ComfyUI 工作流解析_2084558233645174785.json, 图片生成/文生图/[Ideogram 4 系列 02] Prompt Builder 解析_2084481304804024321.json, 图片生成/文生图/ideogram4_t2i文生图_2064543465328963586.json]
+members: [图片生成/文生图/wan2.2文生视频稳定版（wan2.2_14B_t2v）_1950957566572568577.json, 图片生成/文生图/wan2.2超级加速文生视频_1957777125837303810.json, 视频生成/图生视频/wan2.2 优化2.0 文生视频14B_1950898146819899393.json, 视频生成/文生视频/Wan2.2文生视频-高质量_1994736642340556801.json, 视频生成/文生视频/Wan2.2文生视频_2020007175808094210.json, 视频生成/文生视频/wan2.2文生视频（kj模型加速版）_1949875835437236226.json, 视频生成/文生视频/【阡陌】SageAttention+wan2.2+light4步加速lora提速40%文生视频工作流_1968491886845546497.json, 视频生成/文生视频/文生视频Holocine电影分镜工作流（自己测试吧）_1985283263507873793.json, 视频生成/文生视频/最新Wan2.2文生视频_1949836969900687362.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_166
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Ideogram4（无审查版）_2071111233360715777.json、图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2094723434193448962.json、图片生成/文生图/Ideogram_4｜结构化视觉海报_文生图生成器_2098917767268360194.json、图片生成/文生图/Ideogram强势开源支持自然语言极简输入_2064195567823183874.json、图片生成/文生图/Ideogram自然语文生图_2064911052713844737.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/wan2.2文生视频稳定版（wan2.2_14B_t2v）_1950957566572568577.json、图片生成/文生图/wan2.2超级加速文生视频_1957777125837303810.json、视频生成/图生视频/wan2.2 优化2.0 文生视频14B_1950898146819899393.json、视频生成/文生视频/Wan2.2文生视频-高质量_1994736642340556801.json、视频生成/文生视频/Wan2.2文生视频_2020007175808094210.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：73%
+- **样本数**：9
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGOverride`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DualModelGuider`
-- `Ideogram4Scheduler`
-- `KSamplerSelect`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `EmptyHunyuanLatentVideo`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyNumberConvert` —— 7/8 个有
-- `CustomCombo` —— 7/8 个有
-- `JsonExtractString` —— 7/8 个有
-- `StringReplace` —— 7/8 个有
-- `EmptyFlux2LatentImage` —— 6/8 个有
-- `PrimitiveInt` —— 6/8 个有
-- `ResolutionSelector` —— 6/8 个有
-- `ComfyMathExpression` —— 5/8 个有
-- `PreviewAny` —— 5/8 个有
-- `PreviewImage` —— 3/8 个有
-- `llama_cpp_instruct_adv` —— 3/8 个有
-- `llama_cpp_model_loader` —— 3/8 个有
-- `llama_cpp_parameters` —— 3/8 个有
-- `EmptyLatentImage` —— 2/8 个有
-- `GetNode` —— 2/8 个有
-- `Ideogram4PromptBuilderKJ` —— 2/8 个有
-- `JjkText` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `easy promptLine` —— 2/8 个有
-- `EmptyImage` —— 1/8 个有
-- `InversionDemoLazySwitch` —— 1/8 个有
-- `LoadImage` —— 1/8 个有
-- `LoraLoaderModelOnly` —— 1/8 个有
-- `ModelSamplingAuraFlow` —— 1/8 个有
-- `SimpleToggleNode` —— 1/8 个有
-- `StringSplitSelect` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 7/9 个有
+- `PathchSageAttentionKJ` —— 7/9 个有
+- `CreateVideo` —— 6/9 个有
+- `SaveVideo` —— 6/9 个有
+- `Int` —— 5/9 个有
+- `easy cleanGpuUsed` —— 5/9 个有
+- `MathExpression|pysssss` —— 4/9 个有
+- `ModelPatchTorchSettings` —— 4/9 个有
+- `VHS_VideoCombine` —— 3/9 个有
+- `INTConstant` —— 2/9 个有
+- `ImageUpscaleWithModel` —— 1/9 个有
+- `LoadImage` —— 1/9 个有
+- `MuyeMathCalculator` —— 1/9 个有
+- `UpscaleModelLoader` —— 1/9 个有
+- `easy showAnything` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
+| 采样步数 | fixed | - | 9 | 67% |
+| Prompt 约束强度(CFG) | 9 | 4 - 20 | 9 | 45% |
+| 采样算法 | 1 | 1 - 3.5 | 9 | 41% |
+| 调度器 | euler | - | 9 | 89% |
+| 重绘幅度 | simple | - | 9 | 89% |
 
 ## 常见问题
 
@@ -81,5 +65,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 fixed，9 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 9，观测区间 4 - 20，9 个样本，取值分散，一致性仅 45%
+- 采样算法 中位数 1，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 41%
+- 调度器 最常用 euler，9 个样本，一致性 89%
+- 重绘幅度 最常用 simple，9 个样本，一致性 89%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

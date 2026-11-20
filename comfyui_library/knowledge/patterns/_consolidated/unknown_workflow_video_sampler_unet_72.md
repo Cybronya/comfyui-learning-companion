@@ -1,58 +1,58 @@
 ---
 name: unknown_workflow_video_sampler_unet_72
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.792
-common_nodes: [Any To String (mtb), BasicGuider, BatchImagesNode, CLIPLoader, ComfyMathExpression, JoinStringMulti, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, StringConcatenate, UNETLoader, UniBlockSwap, VAELoader, VHS_VideoCombine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 5
+level: moderate
+coverage: 0.5986
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/MiniMax H3 int8文生视频 _4步加速_提示词优化工作流_2090316979256254466.json, 视频生成/图生视频/MiniMax H3 多参考图生视频_4步加速_提示词自动优化_2090474972128047106.json]
+members: [视频生成/图生视频/单图-MiniMaxH3-图生视频-BV2-模板_2090031132980109314.json, 视频生成/图生视频/双时钟采样6步极速参考生视频_2085777514399625218.json, 视频生成/图生视频/基础 H3工作流-参考图逻辑判断版_2101186866648276994.json, 视频生成/文生视频/H3基础文生视频工作流_2101289589221715969.json, 视频生成/文生视频/MINIMAX-H3 全能参考生成视频｜文生｜图生｜首尾帧｜尾帧｜首帧_2085961446109831169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_72
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/MiniMax H3 int8文生视频 _4步加速_提示词优化工作流_2090316979256254466.json、视频生成/图生视频/MiniMax H3 多参考图生视频_4步加速_提示词自动优化_2090474972128047106.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/单图-MiniMaxH3-图生视频-BV2-模板_2090031132980109314.json、视频生成/图生视频/双时钟采样6步极速参考生视频_2085777514399625218.json、视频生成/图生视频/基础 H3工作流-参考图逻辑判断版_2101186866648276994.json、视频生成/文生视频/H3基础文生视频工作流_2101289589221715969.json、视频生成/文生视频/MINIMAX-H3 全能参考生成视频｜文生｜图生｜首尾帧｜尾帧｜首帧_2085961446109831169.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any To String (mtb)`
+全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `BatchImagesNode`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `JoinStringMulti`
 - `MiniMaxH3AVDecodeT8`
 - `MiniMaxH3AudioConditioningT8`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MultiRateSamplerEXPT8`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `StringConcatenate`
 - `UNETLoader`
-- `UniBlockSwap`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `LoraLoaderBypassModelOnly` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
+- `LoadAudio` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `LoraLoaderBypassModelOnly` —— 4/5 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 4/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 3/5 个有
+- `GetNode` —— 2/5 个有
+- `ModelPreviewOverrideKJ` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `VHS_LoadVideo` —— 2/5 个有
+- `1hew_AnySwitchBool` —— 1/5 个有
+- `ComfySwitchNode` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
+- `MiniMaxH3DualClockSamplerT8` —— 1/5 个有
+- `VRAMReserver` —— 1/5 个有
 
 ## 典型参数
 
@@ -64,4 +64,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

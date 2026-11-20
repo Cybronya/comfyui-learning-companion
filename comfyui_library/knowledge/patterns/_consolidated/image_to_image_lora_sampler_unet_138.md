@@ -1,84 +1,79 @@
 ---
 name: image_to_image_lora_sampler_unet_138
 type: Image To Image
-frequency: 5
-level: strong
-coverage: 0.8606
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 6
+level: moderate
+coverage: 0.913333
+common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/多角度视角_1998365944550424577.json, 图片生成/图生图/头像生成_2044697290111193089.json, 图片生成/图生图/溶图打光-透视纠正_1980932243189317633.json, 数字人/数字人/QWEN image edit_最新上睫毛终极版_ 许老师版_1985625300958621698.json, 数字人/数字人/qwenImage终极版万能生图_许老师版_1988925629787672578.json]
+members: [图片生成/文生图/Qwen-Image-Edit2509&eigen-lora对比_1990410928502050818.json, 图片生成/文生图/Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json, 图片生成/文生图/Qwen-Image-Edit转真实3种lora对比_1990373406426226689.json, 图片生成/文生图/Qwen-Image-Edit镜头控制_1990374981525803009.json, 图片生成/文生图/Qwen‑Image‑Edit‑2511的2509lora测试_2004203833310019585.json, 平台全量/【Qwen-Edit-2509】极限姿态参考技巧_1987752878540525569.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_138
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/多角度视角_1998365944550424577.json、图片生成/图生图/头像生成_2044697290111193089.json、图片生成/图生图/溶图打光-透视纠正_1980932243189317633.json、数字人/数字人/QWEN image edit_最新上睫毛终极版_ 许老师版_1985625300958621698.json、数字人/数字人/qwenImage终极版万能生图_许老师版_1988925629787672578.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Qwen-Image-Edit2509&eigen-lora对比_1990410928502050818.json、图片生成/文生图/Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json、图片生成/文生图/Qwen-Image-Edit转真实3种lora对比_1990373406426226689.json、图片生成/文生图/Qwen-Image-Edit镜头控制_1990374981525803009.json、图片生成/文生图/Qwen‑Image‑Edit‑2511的2509lora测试_2004203833310019585.json…）
 
 - **类型**：Image To Image
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `PreviewImage`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 4/5 个有
-- `FastCanvas` —— 3/5 个有
-- `FastCanvasTool` —— 3/5 个有
-- `Image Comparer (rgthree)` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `TextEncodeQwenImageEditPlus` —— 3/5 个有
-- `easy imageRemBg` —— 3/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `FluxKontextImageScale` —— 2/5 个有
-- `LayerUtility: CropByMask V2` —— 2/5 个有
-- `NunchakuQwenImageDiTLoader` —— 2/5 个有
-- `TextEncodeQwenImageEdit` —— 2/5 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/5 个有
-- `AILab_QwenVL` —— 1/5 个有
-- `CombineImagesForQwen3VL` —— 1/5 个有
-- `GoogleTranslateTextNode` —— 1/5 个有
-- `ImageResizePresetNode` —— 1/5 个有
-- `ImageScaleBy` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `RMBG` —— 1/5 个有
+- `ImageConcatMulti` —— 4/6 个有
+- `ImageScaleBy` —— 4/6 个有
+- `ImageUpscaleWithModel` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `UpscaleModelLoader` —— 4/6 个有
+- `easy seed` —— 4/6 个有
+- `AddLabel` —— 3/6 个有
+- `TextEncodeQwenImageEdit` —— 2/6 个有
+- `DepthAnythingV2Preprocessor` —— 1/6 个有
+- `EmptySD3LatentImage` —— 1/6 个有
+- `String Literal` —— 1/6 个有
+- `VAEDecodeTiled` —— 1/6 个有
+- `VAEEncodeTiled` —— 1/6 个有
+- `easy promptLine` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 5 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 6 | 4 - 8 | 6 | 67% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 0.7 | 0.4 - 1 | 6 | 57% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 21/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（11/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 6，观测区间 4 - 8，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 0.7，观测区间 0.4 - 1，6 个样本
+- 高发问题（21/6 个样本）：Steps较低可能导致细节不足

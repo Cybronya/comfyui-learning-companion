@@ -3,33 +3,39 @@ name: unknown_workflow_generic_1638
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5355
-common_nodes: [LoadImage, PreviewAny, SaveImage]
+coverage: 0.976
+common_nodes: [CR Text, DapaoImageLayoutNode, DapaoRandomPromptLineExtractNode, DapaoSafeSaveImage, ImageListToBatch+, ImageStitch, ImpactInt, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/图生图文生图_2047589701435006977.json, 图片生成/文生图/大香蕉  Pro 免费体验_1970664059605577729.json]
+members: [图片生成/图生图/ye服装换装【0.1】_2045009545092665345.json, 图片生成/图生图/超微距服装带细节换装【API调用每次1毛】_2011332640250531841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1638
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/图生图文生图_2047589701435006977.json、图片生成/文生图/大香蕉  Pro 免费体验_1970664059605577729.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/ye服装换装【0.1】_2045009545092665345.json、图片生成/图生图/超微距服装带细节换装【API调用每次1毛】_2011332640250531841.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
+- `DapaoImageLayoutNode`
+- `DapaoRandomPromptLineExtractNode`
+- `DapaoSafeSaveImage`
+- `ImageListToBatch+`
+- `ImageStitch`
+- `ImpactInt`
 - `LoadImage`
-- `PreviewAny`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_nano_banana2_edit` —— 1/2 个有
-- `🙅GPT_image_2_异步@炮老师的小课堂` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
 
 ## 典型参数
 

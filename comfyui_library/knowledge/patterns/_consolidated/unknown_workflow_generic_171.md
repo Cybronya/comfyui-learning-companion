@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_171
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.81
-common_nodes: [JjkText, LoadImage, RH_RhartImageG2OfficialImageToImage, SaveImage]
+coverage: 0.7795
+common_nodes: [FlashVSRNode, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Background Page_2088163751735414786.json, 图片生成/图生图/Background Page_2094985040261373953.json, 图片生成/图生图/G-image2  公众号长图推文分图_2065235483633995777.json, 图片生成/图生图/【G2官方稳定版】3D分层纸质动漫海报_2071490141159518210.json, 图片生成/图生图/【G2官方稳定版】一键Q版夸张肖像手办_2070864524076474370.json, 图片生成/图生图/【G2官方稳定版】一键拍立得拼图海报_2073951689585025025.json, 图片生成/图生图/【G2官方稳定版】商用定制 3D 卡通头像表情合集_2073183598303342594.json, 图片生成/图生图/【G2官方稳定版】手绘涂鸦简笔马克笔速写风_2071757125566681089.json, 图片生成/图生图/全能图片G2.0----官方稳定版_2048615974139600898.json, 图片生成/文生图/龙虾自用官方版十图参考_2048447841378504706.json, 视频生成/图生视频/全能图片G2.0----官方稳定版_2100409012704595969.json]
+members: [图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json, 图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json, 图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json, 图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json, 图片生成/图生图/flashVSR图片高清放大_2067075698631729154.json, 平台全量/FlashVSR1.1图像修复_2049418490334945282.json, 平台全量/FlashVSR放大_2057711432426418178.json, 平台全量/FlashVSR放大工作流，模糊照片放大效果更好_2049699928091447298.json, 平台全量/flashVSR图像高清放大_2069303020919283714.json, 平台全量/flashVSR图片高清放大模糊图片瞬间变清晰_2069307349780746241.json, 平台全量/flashVSR图片高清放大模糊图片秒变高清_2069305844700901378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_171
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Background Page_2088163751735414786.json、图片生成/图生图/Background Page_2094985040261373953.json、图片生成/图生图/G-image2  公众号长图推文分图_2065235483633995777.json、图片生成/图生图/【G2官方稳定版】3D分层纸质动漫海报_2071490141159518210.json、图片生成/图生图/【G2官方稳定版】一键Q版夸张肖像手办_2070864524076474370.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/FlashVSR放大工作流模糊照片放大_2059091738949672962.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095685096534798338.json、图片生成/图生图/FlashVSR放大工作流，模糊照片放大效果更好_2095694099302146050.json、图片生成/图生图/FlashVSR放大，自用_1998393133144662017.json、图片生成/图生图/flashVSR图片高清放大2k4k88图片像数放大_2067528242667544578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `JjkText`
+全部 12 个 workflow 都包含：
+- `FlashVSRNode`
 - `LoadImage`
-- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScale` —— 2/11 个有
-- `ShowAnything|Mie` —— 2/11 个有
+- `Image Comparer (rgthree)` —— 11/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/12 个有
+- `INTConstant` —— 7/12 个有
+- `Int` —— 5/12 个有
+- `easy imageScaleDownToSize` —— 4/12 个有
 
 ## 典型参数
 

@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_video_36
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.95825
-common_nodes: [LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster]
+coverage: 1
+common_nodes: [GetVideoComponents, LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/LatentSync 1.6_2091491962556866562.json, 数字人/数字人/LatentSync 视频生数字人_1999018084654534658.json, 数字人/数字人/LatentSync口型同步功能_1876327461943496706.json, 数字人/数字人/latentsync1.5数字人_1907685948761772033.json]
+members: [平台全量/HunyuanVideo-Foley音效生成，视频智能匹配音效_2086637237353144321.json, 平台全量/多视频合并_2013176883336192001.json, 平台全量/多视频合并_2039342661047427073.json, 平台全量/视频合并_2048756885574127617.json, 数字人/数字人/ai漫剧用  多视频合并（懒人版）_2068059424350097410.json, 音频生成/音频生成/HunyuanVideo-Foley音效生成，视频智能匹配音效_2056422741049438209.json, 音频生成/音频生成/混元视频-Foley音效生成-视频智能匹配音效_2071215947767173121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_36
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/LatentSync 1.6_2091491962556866562.json、数字人/数字人/LatentSync 视频生数字人_1999018084654534658.json、数字人/数字人/LatentSync口型同步功能_1876327461943496706.json、数字人/数字人/latentsync1.5数字人_1907685948761772033.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/HunyuanVideo-Foley音效生成，视频智能匹配音效_2086637237353144321.json、平台全量/多视频合并_2013176883336192001.json、平台全量/多视频合并_2039342661047427073.json、平台全量/视频合并_2048756885574127617.json、数字人/数字人/ai漫剧用  多视频合并（懒人版）_2068059424350097410.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LatentSyncNode`
-- `LoadAudio`
-- `VHS_LoadVideo`
+全部 7 个 workflow 都包含：
+- `GetVideoComponents`
+- `LoadVideo`
 - `VHS_VideoCombine`
-- `VideoLengthAdjuster`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleBy` —— 1/4 个有
-- `IndexTTSNode` —— 1/4 个有
-- `MuyeTextEditOutput` —— 1/4 个有
+- `easy batchAnything` —— 4/7 个有
+- `HunyuanVideoFoley` —— 3/7 个有
+- `Textbox` —— 1/7 个有
 
 ## 典型参数
 

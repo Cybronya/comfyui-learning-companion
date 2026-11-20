@@ -3,33 +3,35 @@ name: unknown_workflow_generic_1085
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [ExecutionBlocker, ImpactNeg, MuyeTextEditOutput, PrimitiveBoolean, RH_RhartImageG25FlareTextToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
+coverage: 0.727
+common_nodes: [PreviewAny, RHUploadPdf, RunningHub DeepSeekOCR Infer(Pdf), SaveImage, easy saveText]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G2.5双模型自由切换 -文生图｜4K画质_2098218223492755458.json, 图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2100861571185602561.json, 图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2101130815630565377.json]
+members: [图片生成/反推提示词/PDF+DeepSeekOCR V1_1998839826889760769.json, 平台全量/PDF上传+DeepSeekOCR 演示工作流_1998740905962131458.json, 视频生成/图生视频/PDF上传+DeepSeekOCR 在线识别_1998752851130208257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1085
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G2.5双模型自由切换 -文生图｜4K画质_2098218223492755458.json、图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2100861571185602561.json、图片生成/文生图/全能图片G2.5双模型自由切换_-文生图｜4K画质_2101130815630565377.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/PDF+DeepSeekOCR V1_1998839826889760769.json、平台全量/PDF上传+DeepSeekOCR 演示工作流_1998740905962131458.json、视频生成/图生视频/PDF上传+DeepSeekOCR 在线识别_1998752851130208257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ExecutionBlocker`
-- `ImpactNeg`
-- `MuyeTextEditOutput`
-- `PrimitiveBoolean`
-- `RH_RhartImageG25FlareTextToImage`
-- `RH_RhartImageG25SunburstTextToImage`
+- `PreviewAny`
+- `RHUploadPdf`
+- `RunningHub DeepSeekOCR Infer(Pdf)`
 - `SaveImage`
+- `easy saveText`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 

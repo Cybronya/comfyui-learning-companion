@@ -3,37 +3,33 @@ name: unknown_workflow_generic_1499
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.895
-common_nodes: [AIO_Preprocessor, FluxKontextImageScale, GetImageSize, Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage, SeedVR2, Text, easy cleanGpuUsed, workflow>运行程序]
+coverage: 0.697
+common_nodes: [LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/商品融合，多图融合，换装-qwen_image_edit_2509_2035319296951328770.json, 数字人/数字人/换装_商品融合，多图融合等-qwen_image_edit_2509_1977564806859366402.json]
+members: [comfyui-workflow-templates-json/video_wan_vace_inpainting.json, 图片生成/图生图/Vidu广告专业级系列视频模型_2100411832715530241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1499
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/商品融合，多图融合，换装-qwen_image_edit_2509_2035319296951328770.json、数字人/数字人/换装_商品融合，多图融合等-qwen_image_edit_2509_1977564806859366402.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/video_wan_vace_inpainting.json、图片生成/图生图/Vidu广告专业级系列视频模型_2100411832715530241.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `FluxKontextImageScale`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-- `SeedVR2`
-- `Text`
-- `easy cleanGpuUsed`
-- `workflow>运行程序`
+- `LoadVideo`
+- `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `LLViduQ3` —— 1/2 个有
+- `bd7f73a0-ec67-4f46-8671-17088d8e31b7` —— 1/2 个有
 
 ## 典型参数
 

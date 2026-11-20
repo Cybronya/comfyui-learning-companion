@@ -3,42 +3,40 @@ name: unknown_workflow_generic_1593
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4555
-common_nodes: [CR Text, GetNode, LoadImage, MultiTextConcatenate, MuyeTextEditOutput, PreviewAny, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, SetNode]
+coverage: 0.6485
+common_nodes: [> Text Replace, ACE_TextSelector, Compare, ImageConcanate, LoadImage, Primitive integer [Crystools], RH_ComfyFluxKontext, RH_Translator, RandomInt, SaveImage, Text Multiline, easy ifElse, easy imageScaleDownToSize, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/2030164324051849217.json, 图片生成/文生图/花瓣坐垫&二代背靠&一代背靠_小红书风格flow_2026851989224693762.json]
+members: [图片生成/图生图/Kontext全能转绘王_1935581721582555138.json, 平台全量/23种风格转绘_支持随机抽卡和用户自定义全能转绘神器(Kontext）_1928655109390241793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1593
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/2030164324051849217.json、图片生成/文生图/花瓣坐垫&二代背靠&一代背靠_小红书风格flow_2026851989224693762.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Kontext全能转绘王_1935581721582555138.json、平台全量/23种风格转绘_支持随机抽卡和用户自定义全能转绘神器(Kontext）_1928655109390241793.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：46%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `GetNode`
+- `> Text Replace`
+- `ACE_TextSelector`
+- `Compare`
+- `ImageConcanate`
 - `LoadImage`
-- `MultiTextConcatenate`
-- `MuyeTextEditOutput`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
+- `Primitive integer [Crystools]`
+- `RH_ComfyFluxKontext`
+- `RH_Translator`
+- `RandomInt`
 - `SaveImage`
-- `SetNode`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `ImageCrop+` —— 1/2 个有
+- `Text Multiline`
+- `easy ifElse`
+- `easy imageScaleDownToSize`
+- `easy showAnything`
 
 ## 典型参数
 

@@ -1,72 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_153
 type: Unknown Workflow
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.9945
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, EnhancedLoadDiffusionModel, Int, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, Text, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.932571
+common_nodes: [CreateCFGScheduleFloatList, INTConstant, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2101303792682749953.json, 视频生成/动作迁移/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2087445019107090434.json, 视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速_2087442235926335490.json, 视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2087941851805470722.json, 视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2099789060956053506.json, 视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2100044654115905537.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2087477812772036610.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2091802269355433986.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2100063481834852353.json, 视频生成/图生视频/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2100141839650217986.json, 视频生成/图生视频/MinimaxH3八步加速极速版T2_2088826644688629762.json, 视频生成/图生视频/高清图生视频_2087823632620937217.json]
+members: [平台全量/[泼水动画] Wan2.2 万相 图生视频 美女泼水舞蹈 图生视频 美女唱歌_1980807004694466562.json, 视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json, 视频生成/图生视频/2.2mtv图生前置版本_1958323802964967425.json, 视频生成/图生视频/WAN2.2 图生视频-超清极速版_1990675353976922114.json, 视频生成/图生视频/WAN2.2图生视频工作流_1963496019524816898.json, 视频生成/图生视频/WAN2.2最新图生视频_1960986981260038145.json, 视频生成/图生视频/Wan2.2 图生视频工作流_1991827663358849025.json, 视频生成/图生视频/Wan2.2 洒水 [泼水动画]  万相 图生视频 美女泼水舞蹈 图生视频 美女唱歌_1993179574894788609.json, 视频生成/图生视频/Wan2.2-图生视频_2064953118089113601.json, 视频生成/图生视频/Wan2.2图生视频_1986361069599916033.json, 视频生成/图生视频/Wan2.2图生视频_2007643731159162882.json, 视频生成/图生视频/[泼水特效] WAN2.2 美女真实泼水换装 画风真实 运行流畅 可更换lora_1980795448254484481.json, 视频生成/图生视频/wan2.2 kj版_1955015931215822850.json, 视频生成/图生视频/图生视频_1965606390897233921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_153
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/MInimaxH3_i2AV_bf16-lightx2v_1.0-Flashvsr高清画质_2101303792682749953.json、视频生成/动作迁移/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2087445019107090434.json、视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速_2087442235926335490.json、视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2087941851805470722.json、视频生成/图生视频/MInimaxH3_FL2AV_bf16-lightx2v_1.0正式版8步加速v2_2099789060956053506.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（平台全量/[泼水动画] Wan2.2 万相 图生视频 美女泼水舞蹈 图生视频 美女唱歌_1980807004694466562.json、视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json、视频生成/图生视频/2.2mtv图生前置版本_1958323802964967425.json、视频生成/图生视频/WAN2.2 图生视频-超清极速版_1990675353976922114.json、视频生成/图生视频/WAN2.2图生视频工作流_1963496019524816898.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `EnhancedLoadDiffusionModel`
-- `Int`
-- `KSamplerSelect`
+全部 14 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `Text`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 11/12 个有
-- `DF_Get_image_size` —— 7/12 个有
-- `FlashVSR_SM_KSampler` —— 7/12 个有
-- `FlashVSR_SM_Model` —— 7/12 个有
-- `GetImageRangeFromBatch` —— 7/12 个有
-- `JWInteger` —— 7/12 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/12 个有
-- `CreateVideo` —— 5/12 个有
-- `SaveVideo` —— 5/12 个有
-- `AnyBooleanSwitch` —— 1/12 个有
-- `ComfyMathExpression` —— 1/12 个有
-- `EmptyImage` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `PrimitiveFloat` —— 1/12 个有
+- `GetImageSizeAndCount` —— 13/14 个有
+- `MathExpression|pysssss` —— 13/14 个有
+- `easy int` —— 13/14 个有
+- `DF_Integer` —— 12/14 个有
+- `JWInteger` —— 12/14 个有
+- `SimpleMath+` —— 12/14 个有
+- `JjkText` —— 10/14 个有
+- `WanVideoTorchCompileSettings` —— 4/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/14 个有
+- `RH_Translator` —— 2/14 个有
+- `Text Multiline` —— 2/14 个有
+- `ImpactInt` —— 1/14 个有
+- `LoadAudio` —— 1/14 个有
+- `RH_Captioner` —— 1/14 个有
+- `RH_LLMAPI_NODE` —— 1/14 个有
+- `ShowText` —— 1/14 个有
+- `ShowText|pysssss` —— 1/14 个有
+- `WanVideoTeaCache` —— 1/14 个有
+- `easy seed` —— 1/14 个有
+- `string_util_StrReplace` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 2.73608e+08 | 7.7008e+07 - 1.25877e+09 | 7 | 18% |
-| Prompt 约束强度(CFG) | randomize | - | 7 | 100% |
-| 采样算法 | 2 | 2 - 2 | 7 | 100% |
-| 调度器 | 3.5 | 3.5 - 3.5 | 7 | 100% |
-| 重绘幅度 | 11 | 11 - 11 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -74,10 +72,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 2.73608e+08，观测区间 7.7008e+07 - 1.25877e+09，7 个样本，取值分散，一致性仅 18%
-- Prompt 约束强度(CFG) 最常用 randomize，7 个样本，一致性 100%
-- 采样算法 中位数 2，观测区间 2 - 2，7 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，观测区间 3.5 - 3.5，7 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，观测区间 11 - 11，7 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.25877e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

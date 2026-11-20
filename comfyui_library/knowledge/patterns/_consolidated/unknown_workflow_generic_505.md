@@ -1,41 +1,40 @@
 ---
 name: unknown_workflow_generic_505
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.895833
-common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
+coverage: 0.790143
+common_nodes: [AFL:AudioMixStems, AudioSeparation, AudioTrim, LoadAudio, RunningHubRVCVoiceConversion, SaveAudio]
 problems: []
-missing: []
-members: [视频生成/图生视频/Seedance2.0 Fast全能参考视频_2040713981702180865.json, 视频生成/图生视频/Seedance2.0 fast 全能参考视频(支持真人)_2067073738482470914.json, 视频生成/文生视频/RhartVideoSparkvideo20FastMultimodalVideo+全节点注释_2052012439998345217.json, 视频生成/文生视频/RhartVideoSparkvideo20MultimodalVideo_2038486808283062273.json, 视频生成/文生视频/Seedance2.0全能参考视频（3张图片+1个参考视频+1条音频）支持真人_2101580146510749698.json, 视频生成/文生视频/视频生成seedance 2.0满血版_2058854158081552385.json]
+missing: [AFL:AudioMixStems, RunningHubRVCModelLoader, RunningHubRVCVoiceConversion, RunningHubRVCZipModelLoader]
+members: [音频生成/音频生成/ComfyUI_RH_RVC 基础工作流_2060185145348550658.json, 音频生成/音频生成/ComfyUI_RH_RVC 自传模型工作流_2060752729634590721.json, 音频生成/音频生成/RVC 基础工作流（RH版）_2099657242881646593.json, 音频生成/音频生成/RVC 自传模型工作流_2099657254856388610.json, 音频生成/音频生成/RVC_自传模型工作流_2100406899551330306.json, 音频生成/音频生成/RVC_自传模型工作流_2100494860670291970.json, 音频生成/音频生成/【ComfyUI】RH-RVC基础工作流｜AI变声_声音克隆+全节点注释_2061331767608565762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_505
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast全能参考视频_2040713981702180865.json、视频生成/图生视频/Seedance2.0 fast 全能参考视频(支持真人)_2067073738482470914.json、视频生成/文生视频/RhartVideoSparkvideo20FastMultimodalVideo+全节点注释_2052012439998345217.json、视频生成/文生视频/RhartVideoSparkvideo20MultimodalVideo_2038486808283062273.json、视频生成/文生视频/Seedance2.0全能参考视频（3张图片+1个参考视频+1条音频）支持真人_2101580146510749698.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/ComfyUI_RH_RVC 基础工作流_2060185145348550658.json、音频生成/音频生成/ComfyUI_RH_RVC 自传模型工作流_2060752729634590721.json、音频生成/音频生成/RVC 基础工作流（RH版）_2099657242881646593.json、音频生成/音频生成/RVC 自传模型工作流_2099657254856388610.json、音频生成/音频生成/RVC_自传模型工作流_2100406899551330306.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `AFL:AudioMixStems`
+- `AudioSeparation`
+- `AudioTrim`
 - `LoadAudio`
-- `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `RunningHubRVCVoiceConversion`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_SparkVideoAssetCreate` —— 5/6 个有
-- `RH_SparkVideoAssetIdsMerge` —— 5/6 个有
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 3/6 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/6 个有
-- `RH_SparkVideoAssetQuery` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `SoundFlow_TrimAudio` —— 1/6 个有
+- `RunningHubRVCZipModelLoader` —— 4/7 个有
+- `RunningHubRVCModelLoader` —— 3/7 个有
+- `LoadImage` —— 1/7 个有
+- `RHHiddenNodes` —— 1/7 个有
 
 ## 典型参数
 
@@ -47,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 这些节点还没有知识卡，系统对它们的理解有限：AFL:AudioMixStems、RunningHubRVCModelLoader、RunningHubRVCVoiceConversion、RunningHubRVCZipModelLoader

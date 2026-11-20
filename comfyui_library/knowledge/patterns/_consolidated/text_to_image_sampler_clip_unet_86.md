@@ -2,23 +2,23 @@
 name: text_to_image_sampler_clip_unet_86
 type: Text To Image
 frequency: 8
-level: moderate
-coverage: 0.931125
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: weak
+coverage: 0.937125
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/QWEN2512_T2I_油光_2042047802875846657.json, 图片生成/文生图/QWEN2512加速文生图_2045334643985096706.json, 图片生成/文生图/Qwen Image 2512 文生图_2011450632992989185.json, 图片生成/文生图/Z-image文生图V2（Lora）_2026213692454477825.json, 图片生成/文生图/Z-image真实感文生图急速出图_1993918066069356545.json, 图片生成/文生图/Z-image美女IP角色工作流（单图训练的lora）_2008089851932975106.json, 图片生成/文生图/【极速版】Krea2 Trubo 美商极高文生图 V2_2098689048914259969.json, 图片生成/文生图/文生图ZImage_2064901103308861442.json]
+members: [图片生成/图生图/Boogu图生图标准版_2068947798048989186.json, 图片生成/图生图/F2_klein多图_2056028041498898434.json, 图片生成/图生图/Klein 9B-动漫上色+室内风格迁移_2071151331997474818.json, 图片生成/图生图/Klein-9B-姿势控制按参考图生成_2071965968569552898.json, 图片生成/图生图/Klein-9B-法线按参考图生成_2071952516740370433.json, 图片生成/图生图/Klein-9B-深度控制按参考图生成_2071964572617105410.json, 图片生成/图生图/Klein-9B-线稿按参考图生成_2071927150692880385.json, 图片生成/图生图/双图姿势迁移＋4K高清放大工作流｜自动跟随构图，换图即可运行_2095860795405070337.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_86
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/QWEN2512_T2I_油光_2042047802875846657.json、图片生成/文生图/QWEN2512加速文生图_2045334643985096706.json、图片生成/文生图/Qwen Image 2512 文生图_2011450632992989185.json、图片生成/文生图/Z-image文生图V2（Lora）_2026213692454477825.json、图片生成/文生图/Z-image真实感文生图急速出图_1993918066069356545.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Boogu图生图标准版_2068947798048989186.json、图片生成/图生图/F2_klein多图_2056028041498898434.json、图片生成/图生图/Klein 9B-动漫上色+室内风格迁移_2071151331997474818.json、图片生成/图生图/Klein-9B-姿势控制按参考图生成_2071965968569552898.json、图片生成/图生图/Klein-9B-法线按参考图生成_2071952516740370433.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
@@ -27,51 +27,59 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
+- `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 6/8 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `Image Comparer (rgthree)` —— 7/8 个有
+- `ImageScaleToTotalPixels` —— 6/8 个有
 - `LoraLoaderModelOnly` —— 6/8 个有
-- `CR Text` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `MultipleLoraLoader5|cgem156` —— 2/8 个有
-- `PromptBatchQueue` —— 2/8 个有
-- `Seed Generator` —— 2/8 个有
-- `JjkText` —— 1/8 个有
-- `LatentRotate` —— 1/8 个有
-- `SaveLatent` —— 1/8 个有
+- `ImageResizeKJv2` —— 5/8 个有
+- `Int` —— 5/8 个有
+- `PreviewImage` —— 4/8 个有
+- `DWPreprocessor` —— 2/8 个有
+- `GetImageSize` —— 2/8 个有
+- `CannyEdgePreprocessor` —— 1/8 个有
+- `DSINE-NormalMapPreprocessor` —— 1/8 个有
+- `DepthAnythingV2Preprocessor` —— 1/8 个有
+- `EmptyFlux2LatentImage` —— 1/8 个有
+- `INTConstant` —— 1/8 个有
+- `SeedVR2LoadDiTModel` —— 1/8 个有
+- `SeedVR2LoadVAEModel` —— 1/8 个有
+- `SeedVR2VideoUpscaler` —— 1/8 个有
+- `ZML_PreviewImage` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 6 - 30 | 8 | 37% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 8 | 0% |
-| 采样算法 | euler | - | 8 | 75% |
+| 宽度 | 512 | 512 - 1024 | 8 | 71% |
+| 高度 | 512 | 512 - 1344 | 8 | 56% |
+| 采样步数 | 8 | 6 - 50 | 8 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 8 | 28% |
+| 采样算法 | euler | - | 8 | 100% |
 | 调度器 | simple | - | 8 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 944 | 720 - 1152 | 8 | 84% |
-| 高度 | 1408 | 1024 - 1920 | 8 | 82% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | meinv26_5.safetensors | - | 2 | 50% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 6 - 30，8 个样本，取值分散，一致性仅 37%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，8 个样本，取值分散，一致性仅 0%
-- 采样算法 最常用 euler，8 个样本，一致性 75%
+- 宽度 中位数 512，观测区间 512 - 1024，8 个样本
+- 高度 中位数 512，观测区间 512 - 1344，8 个样本
+- 采样步数 中位数 8，观测区间 6 - 50，8 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，8 个样本，取值分散，一致性仅 28%
+- 采样算法 最常用 euler，8 个样本，一致性 100%
 - 调度器 最常用 simple，8 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 944，观测区间 720 - 1152，8 个样本，取值集中（一致性 84%）
-- 高度 中位数 1408，观测区间 1024 - 1920，8 个样本，取值集中（一致性 82%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 最常用 meinv26_5.safetensors，2 个样本，一致性 50%
+- 高发问题（7/8 个样本）：Steps较低可能导致细节不足

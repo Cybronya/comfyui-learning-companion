@@ -3,85 +3,79 @@ name: unknown_workflow_video_sampler_vae_24
 type: Unknown Workflow
 frequency: 13
 level: moderate
-coverage: 0.482385
-common_nodes: [BatchCount+, CLIPVisionLoader, DrawViTPose, GetNode, ImageBatch, ImageFromBatch, ImageResizeKJv2, LazySwitch1way, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, RHHiddenNodes, RepeatImageBatch, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, easy compare, easy mathInt]
+coverage: 0.795462
+common_nodes: [ColorMatch, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], SimpleMath+, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/1_1视频人物换脸_2007621094634688513.json, 视频生成/图生视频/Wan2.2 Animate动作迁移稳定版长视频_2061113125402927106.json, 视频生成/图生视频/Wan2.2 Animate动作迁移稳定版长视频_2062092554732138498.json, 视频生成/图生视频/Wan2.2 Animate动作迁移稳定版长视频_2062097231444013057.json, 视频生成/图生视频/Wan2.2 Animate动作迁移稳定版长视频_2066792734605791233.json, 视频生成/图生视频/Wan2.2 Animate循环长视频（动作迁移稳定版）_1987919174796292097.json, 视频生成/图生视频/Wan2.2 Animate（动作迁移：让图片做视频动作）_1990599276940201985.json, 视频生成/图生视频/Wan2.2 （Animate） 人物替换 循环长视频_1996246888737284098.json, 视频生成/图生视频/【Wan2.2 Animate】循环长视频（动作迁移稳定版）_2007836084251660289.json, 视频生成/图生视频/人物替换4_2054046238735118337.json, 视频生成/图生视频/视频人物替换3（多人）_2046063454615769090.json, 视频生成/图生视频/（可短剧）Wan2.2 Animate人物替换V2_2041059568435863554.json, 视频生成/图生视频/（可短剧）Wan2.2 Animate人物替换V2_2041230644306513921.json]
+members: [图片生成/图生图/150帧-跳舞-动作迁移-直出1920P高清-V1版本_2115270826776940546.json, 图片生成/图生图/160帧-舞蹈-超高拟态-直出1920高清-V2版本_2115275205852614657.json, 图片生成/图生图/v2-动漫跳舞-玩偶特化-8秒版_2115620339060400130.json, 图片生成/图生图/v2-动漫跳舞-玩偶特化-8秒版_2115667680685543425.json, 图片生成/图生图/超高拟态-直出1920高清-V2版本-循环版_2115654116990083073.json, 图片生成/图生图/超高拟态-直出1920高清-V2版本-循环版_2115675292827217921.json, 平台全量/1.1_首帧视频转绘（KJ大神加速版，首帧一致Z）_1960989893646331906.json, 平台全量/v2-动漫跳舞-玩偶特化-8秒版_1940384919187255297.json, 平台全量/动作迁移_人物跳舞图生视频_加速版_支持15S_2091168442027167746.json, 数字人/数字人/动作迁移_人物跳舞图生视频_加速版_支持15S-表达式科技AIGC_1994595952977645569.json, 视频生成/图生视频/动作迁移_人物跳舞图生视频_加速版_支持15S_1968167021571616770.json, 视频生成/图生视频/动作迁移_人物跳舞图生视频_加速版_支持15S_2000276235513196545.json, 视频生成/图生视频/视频动作迁移_wan2.2_15秒版_1968700709732589569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_24
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/1_1视频人物换脸_2007621094634688513.json、视频生成/图生视频/Wan2.2 Animate动作迁移稳定版长视频_2061113125402927106.json、视频生成/图生视频/Wan2.2 Animate动作迁移稳定版长视频_2062092554732138498.json、视频生成/图生视频/Wan2.2 Animate动作迁移稳定版长视频_2062097231444013057.json、视频生成/图生视频/Wan2.2 Animate动作迁移稳定版长视频_2066792734605791233.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/150帧-跳舞-动作迁移-直出1920P高清-V1版本_2115270826776940546.json、图片生成/图生图/160帧-舞蹈-超高拟态-直出1920高清-V2版本_2115275205852614657.json、图片生成/图生图/v2-动漫跳舞-玩偶特化-8秒版_2115620339060400130.json、图片生成/图生图/v2-动漫跳舞-玩偶特化-8秒版_2115667680685543425.json、图片生成/图生图/超高拟态-直出1920高清-V2版本-循环版_2115654116990083073.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `BatchCount+`
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetNode`
-- `ImageBatch`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `LazySwitch1way`
+- `ColorMatch`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `RHHiddenNodes`
-- `RepeatImageBatch`
-- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `Primitive integer [Crystools]`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy compare`
-- `easy mathInt`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 12/13 个有
-- `WanVideoSetLoRAs` —— 11/13 个有
-- `easy int` —— 11/13 个有
-- `CM_FloatToInt` —— 9/13 个有
-- `ImageBatchMulti` —— 9/13 个有
-- `easy batchAnything` —— 9/13 个有
-- `easy forLoopEnd` —— 9/13 个有
-- `easy forLoopStart` —— 9/13 个有
-- `easy showAnything` —— 9/13 个有
-- `easy cleanGpuUsed` —— 8/13 个有
-- `CM_IntToFloat` —— 7/13 个有
-- `BlockifyMask` —— 6/13 个有
-- `DrawMaskOnImage` —— 6/13 个有
-- `GrowMask` —— 6/13 个有
-- `Image Blank` —— 6/13 个有
-- `LayerUtility: ImageBlend` —— 6/13 个有
-- `PointsEditor` —— 6/13 个有
-- `SeCModelLoader` —— 6/13 个有
-- `SeCVideoSegmentation` —— 6/13 个有
-- `VHS_VideoInfo` —— 6/13 个有
-- `Bookmark (rgthree)` —— 4/13 个有
-- `VHS_VideoInfoLoaded` —— 4/13 个有
-- `WanVideoLoraSelectMulti` —— 4/13 个有
-- `WanVideoModelLoader` —— 4/13 个有
-- `CoordinatePlotter` —— 2/13 个有
-- `ImpactInt` —— 2/13 个有
-- `LayerUtility: ImageBlendAdvance` —— 2/13 个有
-- `PrimitiveInt` —— 2/13 个有
-- `WanVideoLoraSelect` —— 2/13 个有
-- `Int` —— 1/13 个有
-- `SimpleMath+` —— 1/13 个有
+- `ImpactSwitch` —— 12/13 个有
+- `ShowText|pysssss` —— 12/13 个有
+- `WanVideoExperimentalArgs` —— 12/13 个有
+- `WanVideoSLG` —— 12/13 个有
+- `WanVideoTeaCache` —— 12/13 个有
+- `AIO_Preprocessor` —— 10/13 个有
+- `AddLabel` —— 8/13 个有
+- `GetNode` —— 8/13 个有
+- `SetNode` —— 8/13 个有
+- `RHHiddenNodes` —— 7/13 个有
+- `WanVideoBlockSwap` —— 7/13 个有
+- `WanVideoLoraSelect` —— 7/13 个有
+- `WanVideoModelLoader` —— 7/13 个有
+- `WanVideoTorchCompileSettings` —— 7/13 个有
+- `WanVideoVACEModelSelect` —— 7/13 个有
+- `easy cleanGpuUsed` —— 7/13 个有
+- `DWPreprocessor` —— 6/13 个有
+- `ImageBlend` —— 6/13 个有
+- `ImagePadKJ` —— 5/13 个有
+- `Int` —— 5/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/13 个有
+- `PreviewImage` —— 5/13 个有
+- `RH_Captioner` —— 5/13 个有
+- `WanVideoEnhanceAVideo` —— 5/13 个有
+- `easy int` —— 5/13 个有
+- `ImageResize+` —— 3/13 个有
+- `RH_LLMAPI_NODE` —— 3/13 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 3/13 个有
+- `easy seed` —— 3/13 个有
+- `DepthAnythingV2Preprocessor` —— 1/13 个有
+- `Display Any (rgthree)` —— 1/13 个有
+- `PrimitiveStringMultiline` —— 1/13 个有
 
 ## 典型参数
 

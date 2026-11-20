@@ -1,81 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_209
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.545
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoNAG]
+frequency: 12
+level: moderate
+coverage: 0.789167
+common_nodes: [CreateCFGScheduleFloatList, JWInteger, JjkText, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/Wan2.2 I2V FFGO电商视频生成产品介绍_2001583427876974593.json, 视频生成/图生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_1997866783497486337.json, 视频生成/图生视频/Wan2.2快速图生视频_1999450215444869122.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_basic_workflow_1993579286244294658.json, 视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_change_camera_1993311257635782657.json, 视频生成/图生视频/video_wan2_2_14B_i2v图生视频_1964155751138775041.json, 视频生成/图生视频/三帧流转视频_1996195758498004994.json, 视频生成/图生视频/人物-场景-道具 多图生视频 Wan2_2_14B_i2v_FFGO_basic_2018679573021462530.json, 视频生成/图生视频/超能视频2.0-丐版Wan22-FFGO（参考生视频）_2030310808810430466.json, 视频生成/文生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_2050153435672129537.json]
+members: [视频生成/图生视频/Wan2.2-14B 图生视频-480P_1965347349298036737.json, 视频生成/图生视频/Wan2.2-14B 图生视频-极速版_1957628788819554305.json, 视频生成/图生视频/Wan2.2-14B 图生视频_1950542819607891970.json, 视频生成/图生视频/Wan2.2-14B+图生视频-极速24G可用_2013815675508232194.json, 视频生成/文生视频/AI-Wan2.2-14B 文生视频-极速版_1959882410156568578.json, 视频生成/文生视频/AI站-Wan2.2-14B+文生视频-极速版_1958719842708832257.json, 视频生成/文生视频/CN-Wan2.2-14B 文生视频-极速版_1959814515066089473.json, 视频生成/文生视频/Wan2.2  文生视频-3D漫画风格_1999323128973193217.json, 视频生成/文生视频/Wan2.2-14B 图生视频-123_2001306225730088961.json, 视频生成/文生视频/Wan2.2-14B 文生视频-极速版_1950428124720881665.json, 视频生成/文生视频/Wan2.2-14B 文生视频-极速版_1957626244445696001.json, 视频生成/文生视频/文生视频-Wan2.2（优化版）_1962018949422628865.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_209
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/Wan2.2 I2V FFGO电商视频生成产品介绍_2001583427876974593.json、视频生成/图生视频/FFGO 多图组合生成动画视频，电影镜头 2025-12-08_1997866783497486337.json、视频生成/图生视频/Wan2.2快速图生视频_1999450215444869122.json、视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_basic_workflow_1993579286244294658.json、视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_change_camera_1993311257635782657.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-14B 图生视频-480P_1965347349298036737.json、视频生成/图生视频/Wan2.2-14B 图生视频-极速版_1957628788819554305.json、视频生成/图生视频/Wan2.2-14B 图生视频_1950542819607891970.json、视频生成/图生视频/Wan2.2-14B+图生视频-极速24G可用_2013815675508232194.json、视频生成/文生视频/AI-Wan2.2-14B 文生视频-极速版_1959882410156568578.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：55%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CFGZeroStar`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `GetNode`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 12 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `JWInteger`
+- `JjkText`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
-- `WanVideoNAG`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 9/10 个有
-- `INTConstant` —— 9/10 个有
-- `PreviewImage` —— 9/10 个有
-- `ImageStitch` —— 8/10 个有
-- `PainterI2V` —— 8/10 个有
-- `RMBG` —— 8/10 个有
-- `TrimVideoLatent` —— 8/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `RIFE VFI` —— 2/10 个有
-- `WanImageToVideo` —— 2/10 个有
-- `AILab_ImageStitch` —— 1/10 个有
-- `CR Prompt Text` —— 1/10 个有
-- `CR SDXL Aspect Ratio` —— 1/10 个有
-- `ImageRotate` —— 1/10 个有
-- `PrimitiveFloat` —— 1/10 个有
-- `PrimitiveInt` —— 1/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
-- `ShowText|pysssss` —— 1/10 个有
-- `SimpleMath+` —— 1/10 个有
-- `easy cleanGpuUsed` —— 1/10 个有
-- `easy promptConcat` —— 1/10 个有
-- `llama_cpp_instruct_adv` —— 1/10 个有
-- `llama_cpp_model_loader` —— 1/10 个有
+- `RH_Prompter` —— 11/12 个有
+- `TextCombinerTwo` —— 11/12 个有
+- `easy showAnything` —— 11/12 个有
+- `ImpactSwitch` —— 10/12 个有
+- `Int` —— 10/12 个有
+- `easy anythingIndexSwitch` —— 10/12 个有
+- `WanVideoBlockSwap` —— 8/12 个有
+- `WanVideoEmptyEmbeds` —— 7/12 个有
+- `easy cleanGpuUsed` —— 7/12 个有
+- `LoadImage` —— 6/12 个有
+- `WanVideoSetBlockSwap` —— 6/12 个有
+- `ImageFromBatch+` —— 5/12 个有
+- `LayerColor: Brightness & Contrast` —— 5/12 个有
+- `WanVideoImageToVideoEncode` —— 5/12 个有
+- `ImageResize+` —— 4/12 个有
+- `RH_Captioner` —— 4/12 个有
+- `RH_Translator` —— 4/12 个有
+- `PreviewImage` —— 3/12 个有
+- `Anything Everywhere` —— 1/12 个有
+- `CR Text Concatenate` —— 1/12 个有
+- `ImageResizeKJv2` —— 1/12 个有
+- `LoadImagesFromURL` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 10 | 90% |
-| Prompt 约束强度(CFG) | 6 | 4 - 8 | 10 | 85% |
-| 采样算法 | 1 | 1 - 1 | 10 | 100% |
-| 调度器 | lcm | - | 10 | 90% |
-| 重绘幅度 | simple | - | 10 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -83,8 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，10 个样本，一致性 90%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，10 个样本，取值集中（一致性 85%）
-- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，10 个样本，一致性 90%
-- 重绘幅度 最常用 simple，10 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

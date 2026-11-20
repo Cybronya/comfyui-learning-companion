@@ -1,79 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_295
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.931
-common_nodes: [CLIPLoader, CR Text, CR Text Replace, EmptyLatentImage, ExtractLinesByIndex, ImageScale, ImageScaleToTotalPixels, JWStringConcat, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, Qwen3_VQA, SaveImage, Text Multiline, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy convertAnything, easy promptList, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.859333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MotionContext, MiniMaxH3MotionContextLoadLatent, MiniMaxH3MotionContextSaveLatent, MiniMaxH3MotionContextTrim, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/分镜图自动提示词_2001210347631542273.json, 图片生成/图生图/分镜图自动提示词_2041194194231894018.json]
+members: [视频生成/图生视频/【遇见AI】Minimax H3 连续衔接插件 H3 Motion Context REF加无限循环_2113847877008187394.json, 视频生成/图生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context REF2V_2090326053301612546.json, 视频生成/文生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context FL2VA_2090325146975424514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_295
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/分镜图自动提示词_2001210347631542273.json、图片生成/图生图/分镜图自动提示词_2041194194231894018.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【遇见AI】Minimax H3 连续衔接插件 H3 Motion Context REF加无限循环_2113847877008187394.json、视频生成/图生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context REF2V_2090326053301612546.json、视频生成/文生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context FL2VA_2090325146975424514.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `CR Text Replace`
-- `EmptyLatentImage`
-- `ExtractLinesByIndex`
-- `ImageScale`
-- `ImageScaleToTotalPixels`
-- `JWStringConcat`
-- `KSampler`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `Qwen3_VQA`
-- `SaveImage`
-- `Text Multiline`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3MotionContext`
+- `MiniMaxH3MotionContextLoadLatent`
+- `MiniMaxH3MotionContextSaveLatent`
+- `MiniMaxH3MotionContextTrim`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy convertAnything`
-- `easy promptList`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadAudio` —— 2/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `GoohaiAnySwitch` —— 1/3 个有
+- `MiniMaxH3ImageToVideo` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `easy batchAnything` —— 1/3 个有
+- `easy forLoopEnd` —— 1/3 个有
+- `easy forLoopStart` —— 1/3 个有
+- `easy ifElse` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `easy textIndexSwitch` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 1024 | - | 2 | 100% |
-| 高度 | 1536 | - | 2 | 100% |
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

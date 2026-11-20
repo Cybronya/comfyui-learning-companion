@@ -1,64 +1,82 @@
 ---
 name: unknown_workflow_sampler_unet_vae_37
 type: Unknown Workflow
-frequency: 15
+frequency: 18
 level: moderate
-coverage: 0.815
-common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.666889
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/AI图像创作丨Qwen-Image丨参考图生成_2113093276168450049.json, 图片生成/图生图/Action Transfer人物替换+人物换装 Qwen+Image+2.1_2109808936437243905.json, 图片生成/图生图/CGD_qwen-image-2.1-rh-background-removal_2104833999733616641.json, 图片生成/图生图/Qwen Image 2.1 人物替换+图片换人_2109588672441049090.json, 图片生成/图生图/Qwen Image 2.1 人物替换+图片换人_2109604944461520897.json, 图片生成/图生图/Qwen Image 2.1 人物替换+图片换人！B站艾橘溪_2109524734416351233.json, 图片生成/图生图/Qwen Image 2.1 双参考图换装编辑｜本地 GGUF 提示词增强_2101976709301096450.json, 图片生成/图生图/Qwen Image 2.1 多参考图生图标准版_2105099788420210690.json, 图片生成/图生图/Qwen Image 2.1 ｜生图及编辑_2101865008786395137.json, 图片生成/图生图/Qwen Image 2.1_人物替换+图片换人_2109576795904372737.json, 图片生成/图生图/Qwen image 2.1图像编辑_2101926899231584257.json, 图片生成/图生图/Qwen_Image_2.1_｜生图及编辑_2109445975751352321.json, 图片生成/图生图/人物替换+图片换人_2109643939279106049.json, 图片生成/图生图/图片换人丨Qwen_Image_2.1丨双图替换·保留姿态_2113801696882282497.json, 图片生成/文生图/图片换人丨Qwen Image 2.1丨双图替换·保留姿态_2112093115338280962.json]
+members: [平台全量/MiniMax-H3开源 数字人带货视频 H3多图生视频_2119764971314831362.json, 平台全量/MiniMax-H3开源 数字人带货视频 H3多图生视频_2119767314085277697.json, 平台全量/MiniMax_H3 Singularity V2 + Pika H3 多参考-高动态视频生成工作流11-3_2118000376271171586.json, 平台全量/fastH3_ref2va_2117473692455358465.json, 平台全量/【遇见AI】Minimax H3 latent upscale潜空间放大 REF2VA版_2090678350456123394.json, 数字人/数字人/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货_2111730699559587842.json, 数字人/数字人/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货！_2114896287438041089.json, 数字人/数字人/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货！_2115216078598135809.json, 数字人/数字人/MiniMax-H3_数字人视频带货_2097140288111341570.json, 数字人/数字人/MiniMax-H3开源 数字人视频带货 H3多图生视频_2114678453109874689.json, 数字人/数字人/MiniMax-H3开源 数字人视频带货 H3多图生视频_2114686420479725569.json, 数字人/数字人/MiniMaxH3  数字人视频带货  H3多图生视频_2099428215952596994.json, 数字人/数字人/开源免费电商短视频带货 MiniMax-H3数字人视频带货！_2098017732544524289.json, 数字人/数字人/电影_2105166179148066817.json, 数字人/数字人/电影_2113898825818660866.json, 数字人/数字人/视频带货+Images+into+Videos—Digital+Avatars+Drive_2111625660065206273.json, 视频生成/图生视频/2采五段加速流_2104580181368336385.json, 视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_37
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/AI图像创作丨Qwen-Image丨参考图生成_2113093276168450049.json、图片生成/图生图/Action Transfer人物替换+人物换装 Qwen+Image+2.1_2109808936437243905.json、图片生成/图生图/CGD_qwen-image-2.1-rh-background-removal_2104833999733616641.json、图片生成/图生图/Qwen Image 2.1 人物替换+图片换人_2109588672441049090.json、图片生成/图生图/Qwen Image 2.1 人物替换+图片换人_2109604944461520897.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（平台全量/MiniMax-H3开源 数字人带货视频 H3多图生视频_2119764971314831362.json、平台全量/MiniMax-H3开源 数字人带货视频 H3多图生视频_2119767314085277697.json、平台全量/MiniMax_H3 Singularity V2 + Pika H3 多参考-高动态视频生成工作流11-3_2118000376271171586.json、平台全量/fastH3_ref2va_2117473692455358465.json、平台全量/【遇见AI】Minimax H3 latent upscale潜空间放大 REF2VA版_2090678350456123394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 18 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ComfySwitchNode`
-- `EmptyLatentImage`
-- `KSampler`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
-- `QwenImage21Cache`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 10/15 个有
-- `ImageResizeKJv2` —— 9/15 个有
-- `PrimitiveInt` —— 9/15 个有
-- `easy imageConcat` —— 9/15 个有
-- `ResolutionSelector` —— 5/15 个有
-- `SaveImageAdvanced` —— 4/15 个有
-- `PreviewImage` —— 3/15 个有
-- `EmptyImage` —— 2/15 个有
-- `ImageScale` —— 2/15 个有
-- `LoraLoaderModelOnly` —— 2/15 个有
-- `ImageCompare` —— 1/15 个有
+- `GetNode` —— 17/18 个有
+- `LTXVConcatAVLatent` —— 17/18 个有
+- `LTXVSeparateAVLatent` —— 17/18 个有
+- `LoraLoaderModelOnly` —— 17/18 个有
+- `MinimaxH3LatentUpscaler3D` —— 17/18 个有
+- `SetNode` —— 17/18 个有
+- `VHS_VideoCombine` —— 17/18 个有
+- `ManualSigmas` —— 12/18 个有
+- `JjkText` —— 11/18 个有
+- `LoadAudio` —— 5/18 个有
+- `SplitSigmas` —— 5/18 个有
+- `CreateVideo` —— 4/18 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/18 个有
+- `ModelAttentionBackend` —— 4/18 个有
+- `SaveVideo` —— 4/18 个有
+- `Text` —— 4/18 个有
+- `VHS_LoadVideo` —— 4/18 个有
+- `easy float` —— 4/18 个有
+- `MiniMaxH3SigmaShift` —— 3/18 个有
+- `AudioConcat` —— 2/18 个有
+- `BlockSparseAttention` —— 2/18 个有
+- `GetImageRangeFromBatch` —— 2/18 个有
+- `ImageBatchMulti` —— 2/18 个有
+- `MiniMaxH3AddGuide` —— 2/18 个有
+- `PrimitiveStringMultiline` —— 2/18 个有
+- `SaveAudio` —— 2/18 个有
+- `TrimAudioDuration` —— 2/18 个有
+- `忽略多组孤海` —— 2/18 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/18 个有
+- `H3AudioRefineSampler` —— 1/18 个有
+- `Label (rgthree)` —— 1/18 个有
+- `LayerColor: ColorAdapter` —— 1/18 个有
+- `PrimitiveInt` —— 1/18 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 25 - 50 | 15 | 70% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 15 | 36% |
-| 采样算法 | euler | - | 15 | 87% |
-| 调度器 | beta | - | 15 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
-| 宽度 | 1024 | 960 - 1024 | 15 | 98% |
-| 高度 | 1024 | 1024 - 1280 | 15 | 92% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,10 +84,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 50，15 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，15 个样本，取值分散，一致性仅 36%
-- 采样算法 最常用 euler，15 个样本，一致性 87%
-- 调度器 最常用 beta，15 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 960 - 1024，15 个样本，取值集中（一致性 98%）
-- 高度 中位数 1024，观测区间 1024 - 1280，15 个样本，取值集中（一致性 92%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

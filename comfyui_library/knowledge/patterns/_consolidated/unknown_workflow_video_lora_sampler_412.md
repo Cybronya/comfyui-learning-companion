@@ -1,70 +1,70 @@
 ---
 name: unknown_workflow_video_lora_sampler_412
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.976167
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SeparateMasks, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.879143
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MultiTalk+LightX2v Rank64+AniWan双人加速版极限动态质量版V1（KJ）_1945360751139934210.json, 视频生成/图生视频/MultiTalk双人加速KJ版+视频放大_1941283119796535298.json, 视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ非真人）_1941338366120194050.json, 视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ）_1941135610319106050.json, 视频生成/图生视频/MultiTalk双人加速版高运动运镜版V1（KJ）_1945014615811219457.json, 视频生成/图生视频/电商带货 双人对话图生视频（multiTalk）_1944226088988053505.json]
+members: [图片生成/图生图/利用图片替换视频中的角色_1916038900895121410.json, 图片生成/文生图/wan2.1 高速飘移动态特效_1936223818082062337.json, 平台全量/UniAnimate（姿态→视频）+WanVideo-720P_1914694029660094466.json, 平台全量/unianimate动画_1913579274467536898.json, 平台全量/人物和背景一致性舞蹈视频(UniAnimate)_1913611128453431298.json, 平台全量/图片动作控制 跳舞视频_1916096114783617026.json, 视频生成/图生视频/wan姿态控制图生视频_1914987342183002113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_412
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MultiTalk+LightX2v Rank64+AniWan双人加速版极限动态质量版V1（KJ）_1945360751139934210.json、视频生成/图生视频/MultiTalk双人加速KJ版+视频放大_1941283119796535298.json、视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ非真人）_1941338366120194050.json、视频生成/图生视频/MultiTalk双人加速版高质量修改版V1（KJ）_1941135610319106050.json、视频生成/图生视频/MultiTalk双人加速版高运动运镜版V1（KJ）_1945014615811219457.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/利用图片替换视频中的角色_1916038900895121410.json、图片生成/文生图/wan2.1 高速飘移动态特效_1936223818082062337.json、平台全量/UniAnimate（姿态→视频）+WanVideo-720P_1914694029660094466.json、平台全量/unianimate动画_1913579274467536898.json、平台全量/人物和背景一致性舞蹈视频(UniAnimate)_1913611128453431298.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
+全部 7 个 workflow 都包含：
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SeparateMasks`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 5/6 个有
-- `MathExpression|pysssss` —— 5/6 个有
-- `SaveAudio` —— 5/6 个有
-- `AudioCrop` —— 4/6 个有
-- `AudioSeparation` —— 4/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `JWStringToInteger` —— 4/6 个有
-- `WanVideoEnhanceAVideo` —— 3/6 个有
-- `WanVideoExperimentalArgs` —— 3/6 个有
-- `WanVideoFreeInitArgs` —— 3/6 个有
-- `WanVideoSLG` —— 3/6 个有
-- `ACE_AudioCrop` —— 1/6 个有
-- `Audio Duration (mtb)` —— 1/6 个有
-- `Compare` —— 1/6 个有
-- `ImageUpscaleWithModel` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `JjkText` —— 1/6 个有
-- `RIFE VFI` —— 1/6 个有
-- `UpscaleModelLoader` —— 1/6 个有
-- `easy ifElse` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `VHS_LoadVideo` —— 6/7 个有
+- `WanVideoSLG` —— 6/7 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 6/7 个有
+- `WanVideoUniAnimatePoseInput` —— 6/7 个有
+- `WanVideoTorchCompileSettings` —— 5/7 个有
+- `CLIPVisionLoader` —— 4/7 个有
+- `LoadWanVideoClipTextEncoder` —— 3/7 个有
+- `WanVideoExperimentalArgs` —— 3/7 个有
+- `easy showAnything` —— 3/7 个有
+- `GetNode` —— 2/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `KepStringLiteral` —— 2/7 个有
+- `PreviewImage` —— 2/7 个有
+- `Primitive integer [Crystools]` —— 2/7 个有
+- `SetNode` —— 2/7 个有
+- `easy clearCacheAll` —— 2/7 个有
+- `DWPreprocessor` —— 1/7 个有
+- `EmptyImage` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `ImageConcatMulti` —— 1/7 个有
+- `MyOpenPoseNode` —— 1/7 个有
+- `OpenposePreprocessor` —— 1/7 个有
+- `Text Multiline` —— 1/7 个有
+- `WanVideoVACEModelSelect` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 

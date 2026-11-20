@@ -1,72 +1,75 @@
 ---
 name: image_to_image_sampler_clip_unet_169
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.7245
-common_nodes: [CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), ImageScaleBy, KSampler, LoadImage, Qwen3_VQA, SaveImage, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+frequency: 3
+level: moderate
+coverage: 0.816
+common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, CR Text, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/WAN洗图（皮肤质感介于Flux洗图和Z洗图的中间值）_2012082369309712385.json, 图片生成/图生图/Z 洗图（皮肤质感偏真实，容易有噪点）_1994271541458386946.json]
+members: [图片生成/图生图/F+k 双洗图对比_2099751929961345026.json, 图片生成/图生图/Krea2图生图重绘幅度对比_2100063950384746498.json, 图片生成/文生图/动漫转真人_Qwen+Z-image写实重绘+全节点注释_2061712347558924290.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_169
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/WAN洗图（皮肤质感介于Flux洗图和Z洗图的中间值）_2012082369309712385.json、图片生成/图生图/Z 洗图（皮肤质感偏真实，容易有噪点）_1994271541458386946.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/F+k 双洗图对比_2099751929961345026.json、图片生成/图生图/Krea2图生图重绘幅度对比_2100063950384746498.json、图片生成/文生图/动漫转真人_Qwen+Z-image写实重绘+全节点注释_2061712347558924290.json）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageScaleBy`
+- `CR Text`
 - `KSampler`
 - `LoadImage`
-- `Qwen3_VQA`
 - `SaveImage`
-- `SetNode`
-- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `MemoryCleaner` —— 1/2 个有
-- `ModelSamplingSD3` —— 1/2 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `Float` —— 2/3 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `PixaromaLoraLoader` —— 2/3 个有
+- `StringFunction|pysssss` —— 2/3 个有
+- `Image Compare (mtb)` —— 1/3 个有
+- `JjkShowText` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `PreviewAny` —— 1/3 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 75% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | res_2s | - | 2 | 50% |
-| 调度器 | bong_tangent | - | 2 | 50% |
-| 重绘幅度 | 0.65 | - | 2 | 92% |
+| 采样步数 | 8 | 6 - 8 | 3 | 87% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 33% |
+| 调度器 | simple | - | 3 | 67% |
+| 重绘幅度 | 0.32 | 0 - 1 | 3 | 5% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s，2 个样本，一致性 50%
-- 调度器 最常用 bong_tangent，2 个样本，一致性 50%
-- 重绘幅度 中位数 0.65，样本不足，未给区间，2 个样本，取值集中（一致性 92%）
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 6 - 8，3 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 33%
+- 调度器 最常用 simple，3 个样本，一致性 67%
+- 重绘幅度 中位数 0.32，观测区间 0 - 1，3 个样本，取值分散，一致性仅 5%
+- 风险：重绘幅度 观测到 0，低于常用下限 0.1（）
+- 高发问题（6/3 个样本）：Steps较低可能导致细节不足

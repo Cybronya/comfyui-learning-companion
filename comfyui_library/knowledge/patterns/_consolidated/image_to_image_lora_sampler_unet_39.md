@@ -1,36 +1,34 @@
 ---
 name: image_to_image_lora_sampler_unet_39
 type: Image To Image
-frequency: 12
+frequency: 14
 level: moderate
-coverage: 0.830333
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.88
+common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen 2511-角色全身侧面站立图_2082270603360428034.json, 图片生成/图生图/Qwen 2511-角色全身正面站立图_2082264674363592706.json, 图片生成/图生图/Qwen 单张图像编辑_2020825475739820033.json, 图片生成/图生图/Qwen-Edit-2511 外部扩图工作流_2091508580599025665.json, 图片生成/图生图/Qwen-Edit-2511_外部扩图工作流_2097157315584675841.json, 图片生成/图生图/Qwen-Edit-2511_外部扩图工作流_2097496668118802434.json, 图片生成/图生图/Qwen-Image-Edit ComfyUI 原生工作流 1图_2089987209536561154.json, 图片生成/图生图/Qwen-Image-Edit ComfyUI 原生工作流 2图_2089986353214873602.json, 图片生成/图生图/Qwen-Image-Edit ComfyUI 原生工作流 3图_2089973995432136705.json, 图片生成/图生图/Qwen-Image-Edit ComfyUI 原生工作流_1971196767998033922.json, 图片生成/图生图/扩图 - Qwen-Image-Edit-2511_2039543264075849730.json, 图片生成/图生图/扩图，上下左右自定义尺寸，超快_2018966865443295233.json]
+members: [图片生成/图生图/2511-AnyPose用参考图实现姿势控制_2065718964432494594.json, 图片生成/图生图/Qwen_千问一键丰胸工作流_2003473370219986945.json, 图片生成/图生图/yj丰胸_2011686538739982337.json, 图片生成/图生图/一键丰胸神器，即刻变美！_2005605400391151618.json, 图片生成/图生图/一键丰胸神器，完美丰胸！_2033013429618872322.json, 图片生成/图生图/一键改变人物视角_1991135857899864066.json, 图片生成/图生图/一键生成图片视角转变_2049739021416443905.json, 图片生成/图生图/一键生成图片视角转变_2049751286458884098.json, 图片生成/图生图/产品六视图生成-直接宫格_2043952379636228098.json, 图片生成/图生图/产品六视图生成-组合图分析_2044290263606104065.json, 图片生成/图生图/产品增加光影_2022309920766431234.json, 图片生成/图生图/人物变胖工作流_1997692792333864962.json, 图片生成/图生图/姿势控制 Qwen2511-AnyPose_2065745202484170754.json, 图片生成/图生图/胸部增强模型-丰胸自动流程-qwen2511新模型_2014336544496164865.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_39
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen 2511-角色全身侧面站立图_2082270603360428034.json、图片生成/图生图/Qwen 2511-角色全身正面站立图_2082264674363592706.json、图片生成/图生图/Qwen 单张图像编辑_2020825475739820033.json、图片生成/图生图/Qwen-Edit-2511 外部扩图工作流_2091508580599025665.json、图片生成/图生图/Qwen-Edit-2511_外部扩图工作流_2097157315584675841.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/2511-AnyPose用参考图实现姿势控制_2065718964432494594.json、图片生成/图生图/Qwen_千问一键丰胸工作流_2003473370219986945.json、图片生成/图生图/yj丰胸_2011686538739982337.json、图片生成/图生图/一键丰胸神器，即刻变美！_2005605400391151618.json、图片生成/图生图/一键丰胸神器，完美丰胸！_2033013429618872322.json…）
 
 - **类型**：Image To Image
-- **样本数**：12
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 14 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `ConditioningZeroOut`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `ReferenceLatent`
 - `SaveImage`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
@@ -39,44 +37,40 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 9/12 个有
-- `EmptyLatentImage` —— 6/12 个有
-- `ImagePadKJ` —— 5/12 个有
-- `PreviewImage` —— 5/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/12 个有
-- `YK_LoadImageFromURL` —— 3/12 个有
-- `CR Text` —— 2/12 个有
-- `ConstrainImage|pysssss` —— 2/12 个有
-- `GetImageSize` —— 2/12 个有
-- `LayerUtility: TextJoin` —— 2/12 个有
-- `ResizeImageMaskNode` —— 2/12 个有
-- `TTResolutionSelector` —— 2/12 个有
+- `Image Comparer (rgthree)` —— 12/14 个有
+- `ImageScaleToTotalPixels` —— 11/14 个有
+- `ImageUpscaleWithModel` —— 9/14 个有
+- `UpscaleModelLoader` —— 9/14 个有
+- `PreviewImage` —— 7/14 个有
+- `easy imageSize` —— 7/14 个有
+- `ImageResizeKJv2` —— 2/14 个有
+- `ImageTile+` —— 2/14 个有
+- `ImageUntile+` —— 2/14 个有
+- `PIP_图像联结` —— 2/14 个有
+- `RMBG` —— 2/14 个有
+- `CR Prompt Text` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 7 | 4 - 20 | 12 | 37% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| 宽度 | 1680 | 512 - 1680 | 6 | 57% |
-| 高度 | 768 | 512 - 768 | 6 | 82% |
+| 采样步数 | 8 | 4 - 20 | 14 | 51% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 14 | 57% |
+| 采样算法 | euler | - | 14 | 100% |
+| 调度器 | simple | - | 14 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 20/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 7，观测区间 4 - 20，12 个样本，取值分散，一致性仅 37%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1680，观测区间 512 - 1680，6 个样本
-- 高度 中位数 768，观测区间 512 - 768，6 个样本，取值集中（一致性 82%）
-- 高发问题（10/12 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 20，14 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，14 个样本
+- 采样算法 最常用 euler，14 个样本，一致性 100%
+- 调度器 最常用 simple，14 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 高发问题（20/14 个样本）：Steps较低可能导致细节不足

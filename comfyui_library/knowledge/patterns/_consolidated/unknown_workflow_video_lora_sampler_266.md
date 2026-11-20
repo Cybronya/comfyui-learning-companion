@@ -1,65 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_266
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.899667
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.7661
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ImageBatchMulti, ImageResizeKJv2, LoadImage, SAM3_VideoTrack, SCAIL2ColoredMask, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/大家一起来冲浪（Lora版）_2073033317150187521.json, 视频生成/图生视频/已做生图动画_1954716501561491457.json, 视频生成/图生视频/扭起来_1997179060881133570.json, 视频生成/图生视频/抖音坐着自拍_1959215164312727553.json, 视频生成/图生视频/抖音扭一扭_1957833676750159874.json, 视频生成/图生视频/抖音摇摆_1957824248537776130.json, 视频生成/图生视频/抖音涨粉利器真实跳舞抖胸_1979579693227741185.json, 视频生成/图生视频/抖音走路_1958894026126733314.json, 视频生成/图生视频/自拍2_1972314410939248641.json]
+members: [平台全量/scail2+多参+自定义背景-工作流_2066411514587865089.json, 数字人/数字人/动作迁移   Scail-V2  更强的人物一致性 多参+ 换背景_2066157381343596545.json, 数字人/数字人/视频动作迁移  scail2 多参考图 可换背景_2065797278249607169.json, 视频生成/图生视频/Scail2 多参动作迁移＆人物替换_支持超长视频_2066423753369808897.json, 视频生成/图生视频/Wan-Scail2-多图参考换姿势+换背景_2066016584279347201.json, 视频生成/图生视频/Wan-Scail2-多图姿势迁移_2066001113731649537.json, 视频生成/图生视频/scail2 多参人物图动作模仿工作流_2066378010617540610.json, 视频生成/图生视频/scail2 多参工作流-多图参考-动作迁移_2073343102223470594.json, 视频生成/图生视频/scail2 多参工作流动作迁移保持人物多角度不崩_2065965062183018498.json, 视频生成/图生视频/史上最强的scail2 多图参考工作流_2066889873231015938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_266
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/大家一起来冲浪（Lora版）_2073033317150187521.json、视频生成/图生视频/已做生图动画_1954716501561491457.json、视频生成/图生视频/扭起来_1997179060881133570.json、视频生成/图生视频/抖音坐着自拍_1959215164312727553.json、视频生成/图生视频/抖音扭一扭_1957833676750159874.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/scail2+多参+自定义背景-工作流_2066411514587865089.json、数字人/数字人/动作迁移   Scail-V2  更强的人物一致性 多参+ 换背景_2066157381343596545.json、数字人/数字人/视频动作迁移  scail2 多参考图 可换背景_2065797278249607169.json、视频生成/图生视频/Scail2 多参动作迁移＆人物替换_支持超长视频_2066423753369808897.json、视频生成/图生视频/Wan-Scail2-多图参考换姿势+换背景_2066016584279347201.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `INTConstant`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 10 个 workflow 都包含：
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `SAM3_VideoTrack`
+- `SCAIL2ColoredMask`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanAnimatePlus BlockSwap`
+- `WanAnimatePlus Decode`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `WanAnimatePlus Sampler`
+- `WanAnimatePlus TextEncodeCached`
+- `WanAnimatePlus VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 8/9 个有
-- `LayerUtility: PurgeVRAM` —— 8/9 个有
-- `CR Text Concatenate` —— 7/9 个有
-- `WanVideoTorchCompileSettings` —— 7/9 个有
-- `DownloadAndLoadGIMMVFIModel` —— 6/9 个有
-- `GIMMVFI_interpolate` —— 6/9 个有
-- `RHHiddenNodes` —— 6/9 个有
-- `GetImageSizeAndCount` —— 5/9 个有
-- `ImageUpscaleWithModel` —— 4/9 个有
-- `UpscaleModelLoader` —— 4/9 个有
-- `easy cleanGpuUsed` —— 2/9 个有
-- `GetNode` —— 1/9 个有
-- `RH_Captioner` —— 1/9 个有
-- `RIFE VFI` —— 1/9 个有
-- `SetNode` —— 1/9 个有
-- `ShowText` —— 1/9 个有
-- `StringReplace` —— 1/9 个有
-- `WanVideoContextOptions` —— 1/9 个有
+- `DownloadAndLoadGIMMVFIModel` —— 9/10 个有
+- `GIMMVFI_interpolate` —— 9/10 个有
+- `ImageConcatMulti` —— 9/10 个有
+- `PreviewImage` —— 9/10 个有
+- `WanAnimatePlus ContextOptions` —— 9/10 个有
+- `WanAnimatePlus SetLoRAs` —— 9/10 个有
+- `Int` —— 6/10 个有
+- `JjkText` —— 4/10 个有
+- `easy boolean` —— 4/10 个有
+- `Text` —— 2/10 个有
+- `ToBoolNode` —— 2/10 个有
+- `VHS_VideoInfo` —— 2/10 个有
+- `easy showAnything` —— 2/10 个有
+- `CLIPVisionLoader` —— 1/10 个有
+- `CM_IntToFloat` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `SetNode` —— 1/10 个有
+- `WanVideoClipVisionEncode` —— 1/10 个有
 
 ## 典型参数
 

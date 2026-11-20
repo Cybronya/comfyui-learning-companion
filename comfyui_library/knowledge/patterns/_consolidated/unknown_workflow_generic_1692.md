@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1692
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9
-common_nodes: [CR Text, LoadImage, SaveVideo, SetNode]
+coverage: 0.85
+common_nodes: [LoadImage, PreviewAny, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0 Fast _ 全能参考 · 支持真人_2059046294068482049.json, 视频生成/图生视频/Seedance2.0 _ 全能参考 · 支持真人_2058650109591773186.json]
+members: [图片生成/图生图/剧本出9宫格-水哥AI_2019851617624920066.json, 图片生成/图生图/🍌📷_2031933836619157505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1692
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0 Fast _ 全能参考 · 支持真人_2059046294068482049.json、视频生成/图生视频/Seedance2.0 _ 全能参考 · 支持真人_2058650109591773186.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/剧本出9宫格-水哥AI_2019851617624920066.json、图片生成/图生图/🍌📷_2031933836619157505.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
 - `LoadImage`
-- `SaveVideo`
-- `SetNode`
+- `PreviewAny`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
+- `QwenMultiangleCameraNode` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
 
 ## 典型参数
 

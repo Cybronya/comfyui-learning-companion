@@ -1,73 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_803
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.783
-common_nodes: [CR Prompt Text, ComfyMathExpression, ComfyNumberConvert, Float, GetImageRangeFromBatch, GetImageSizeAndCount, ImageBatchExtendWithOverlap, ImageResizeKJv2, Int, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, ReplaceVideoLatentFrames, TrimAudioDuration, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader, easy forLoopEnd, easy forLoopStart]
+frequency: 3
+level: moderate
+coverage: 0.9
+common_nodes: [Any Switch (rgthree), AudioSeparation, BlockifyMask, CLIPVisionLoader, DownloadAndLoadWav2VecModel, DrawMaskOnImage, DrawViTPose, GetImageRangeFromBatch, GetImageSizeAndCount, GrowMask, ImageConcatMulti, ImageResizeKJ, ImageResizeKJv2, Int, KEEP_ModelLoader, KEEP_ProcessImageSequence, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, OnnxDetectionModelLoader, PoseAndFaceDetection, RHHiddenNodes, ResizeMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll, easy int]
 problems: []
 missing: []
-members: [数字人/数字人/Longcat-Avatar1.5-超长时长数字人（for循环）_2060344344913211393.json, 数字人/数字人/Longcat-Avatar1.5数字人说话循环静态手动遮罩_2067886174374551553.json]
+members: [平台全量/AnimateV2+wan2.2单人OR多人极速角色背景替换、动作迁移极速生成复刻视频_1976130068323938305.json, 数字人/数字人/角色替换+动作迁移-表达式科技AIGC_1992618632486211585.json, 视频生成/图生视频/AnimateV2 wan2.2+SeC+CPM可多人手自一体换角色、衣服、背景、动作迁移复刻视频等_1960236846783606786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_803
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Longcat-Avatar1.5-超长时长数字人（for循环）_2060344344913211393.json、数字人/数字人/Longcat-Avatar1.5数字人说话循环静态手动遮罩_2067886174374551553.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/AnimateV2+wan2.2单人OR多人极速角色背景替换、动作迁移极速生成复刻视频_1976130068323938305.json、数字人/数字人/角色替换+动作迁移-表达式科技AIGC_1992618632486211585.json、视频生成/图生视频/AnimateV2 wan2.2+SeC+CPM可多人手自一体换角色、衣服、背景、动作迁移复刻视频等_1960236846783606786.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `Float`
+全部 3 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `AudioSeparation`
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `DrawMaskOnImage`
+- `DrawViTPose`
 - `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
-- `ImageBatchExtendWithOverlap`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
 - `ImageResizeKJv2`
 - `Int`
-- `LoadAudio`
+- `KEEP_ModelLoader`
+- `KEEP_ProcessImageSequence`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LongCatAvatarWhisperEmbeds`
-- `ReplaceVideoLatentFrames`
-- `TrimAudioDuration`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `RHHiddenNodes`
+- `ResizeMask`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimatePlus BlockSwap`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `WhisperModelLoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt List` —— 1/2 个有
-- `CR Text Replace` —— 1/2 个有
-- `ColorMatchV2` —— 1/2 个有
-- `DrawMaskOnImage` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ImageCompositeMasked` —— 1/2 个有
-- `InvertMask` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ProcessString` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
-- `SetNode` —— 1/2 个有
-- `easy imageRemBg` —— 1/2 个有
-- `easy indexAnything` —— 1/2 个有
-- `easy promptList` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `APersonMaskGenerator` —— 2/3 个有
+- `ApplyFaceProcessor` —— 2/3 个有
+- `FaceProcessorLoader` —— 2/3 个有
+- `Fast Groups Muter (rgthree)` —— 2/3 个有
+- `ImageFromBatch` —— 2/3 个有
+- `PointsEditor` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `SeCModelLoader` —— 2/3 个有
+- `SeCVideoSegmentation` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `LayerMask: LoadSegformerModel` —— 1/3 个有
+- `LayerMask: SegformerClothesSetting` —— 1/3 个有
+- `LayerMask: SegformerUltraV3` —— 1/3 个有
 
 ## 典型参数
 
@@ -79,4 +91,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

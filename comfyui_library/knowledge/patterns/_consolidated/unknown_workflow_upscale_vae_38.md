@@ -1,34 +1,33 @@
 ---
 name: unknown_workflow_upscale_vae_38
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.703
-common_nodes: [Fast Groups Bypasser (rgthree), GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size]
+coverage: 0.7936
+common_nodes: [GetImageSize, Image Comparer (rgthree), ImageScaleBy, LoadImage, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size]
 problems: []
 missing: []
-members: [图片生成/图生图/（漫剧人物）放大细节修复（极速版）_2045585679790379010.json, 图片生成/图生图/（超好用！）SeedVR2+TTP一亿像素极限放大+0损耗压缩_2004539129138475009.json, 图片生成/图生图/🍭老许Gary：SeedVR2.5图像放大修复_2018018624648253441.json, 图片生成/文生图/SeedVR2+TTP放大+0损耗压缩_2001561615235444738.json]
+members: [图片生成/图生图/TTP-SEEDVR2分块8倍放大_2063088756915265538.json, 图片生成/图生图/TTP-SEEDVR2分块8倍放大_2064161314121019393.json, 图片生成/图生图/seedvr2图像放大_2045732584243601409.json, 平台全量/TTP-SEEDVR2分块4倍放大_2061375490602135553.json, 平台全量/TTP-SEEDVR2分块8倍放大_2062913146871963649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_38
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/（漫剧人物）放大细节修复（极速版）_2045585679790379010.json、图片生成/图生图/（超好用！）SeedVR2+TTP一亿像素极限放大+0损耗压缩_2004539129138475009.json、图片生成/图生图/🍭老许Gary：SeedVR2.5图像放大修复_2018018624648253441.json、图片生成/文生图/SeedVR2+TTP放大+0损耗压缩_2001561615235444738.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/TTP-SEEDVR2分块8倍放大_2063088756915265538.json、图片生成/图生图/TTP-SEEDVR2分块8倍放大_2064161314121019393.json、图片生成/图生图/seedvr2图像放大_2045732584243601409.json、平台全量/TTP-SEEDVR2分块4倍放大_2061375490602135553.json、平台全量/TTP-SEEDVR2分块8倍放大_2062913146871963649.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize+`
+全部 5 个 workflow 都包含：
+- `GetImageSize`
 - `Image Comparer (rgthree)`
-- `ImageResize+`
 - `ImageScaleBy`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
@@ -38,13 +37,13 @@ source: knowledge_consolidation
 - `TTP_Tile_image_size`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
-- `INTConstant` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `KOOK_ImageCompression` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `CR Simple Image Compare` —— 1/4 个有
-- `Float` —— 1/4 个有
+- `easy compare` —— 4/5 个有
+- `easy ifElse` —— 4/5 个有
+- `KOOK_ImageCompression` —— 3/5 个有
+- `Any Switch (rgthree)` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `ImageResize+` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
 
 ## 典型参数
 

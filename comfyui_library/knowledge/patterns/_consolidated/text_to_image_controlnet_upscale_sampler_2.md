@@ -1,108 +1,94 @@
 ---
 name: text_to_image_controlnet_upscale_sampler_2
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.821
-common_nodes: [AIO_Preprocessor, BasicGuider, BasicScheduler, CLIPTextEncode, CheckpointLoaderSimple, ControlNetApply, ControlNetLoader, DualCLIPLoader, EmptyLatentImage, GetImageSize+, ImageInvert, ImageResizeKJ, ImageUpscaleWithModel, KSampler, KSamplerSelect, LoadImage, PreviewImage, RH_Captioner, RH_Prompter, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, TextBox, TextCombinerSix, TextCombinerTwo, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
-problems: []
+frequency: 3
+level: strong
+coverage: 0.844667
+common_nodes: [BOPBTL_DetectEnhanceBlendFaces, BOPBTL_LoadFaceDetectorModel, BOPBTL_LoadFaceEnhancerModel, BOPBTL_LoadRestoreOldPhotosModel, BOPBTL_LoadScratchMaskModel, BOPBTL_RestoreOldPhotos, BOPBTL_ScratchMask, CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, DiffControlNetLoader, EmptyLatentImage, Get resolution [Crystools], Image Blending Mode, Image Levels Adjustment, Image To Mask, ImageResize+, ImageScaleBy, ImageUpscaleWithModel, KSampler, LoadImage, MaskToImage, PreviewImage, SaveImage, UpscaleModelLoader, VAEDecode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/【自用，修复部分bug】服装设计3-线稿上色_2027728162251083777.json, 图片生成/图生图/线稿一键上色质感动漫_1890706658040094722.json]
+members: [平台全量/修复上色，激活老照片的表情世界_1820426226468327425.json, 平台全量/修复上色，激活老照片的表情世界_1821405398510252033.json, 平台全量/老照片修复上色_1820290815980933121.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_upscale_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【自用，修复部分bug】服装设计3-线稿上色_2027728162251083777.json、图片生成/图生图/线稿一键上色质感动漫_1890706658040094722.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/修复上色，激活老照片的表情世界_1820426226468327425.json、平台全量/修复上色，激活老照片的表情世界_1821405398510252033.json、平台全量/老照片修复上色_1820290815980933121.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `BOPBTL_DetectEnhanceBlendFaces`
+- `BOPBTL_LoadFaceDetectorModel`
+- `BOPBTL_LoadFaceEnhancerModel`
+- `BOPBTL_LoadRestoreOldPhotosModel`
+- `BOPBTL_LoadScratchMaskModel`
+- `BOPBTL_RestoreOldPhotos`
+- `BOPBTL_ScratchMask`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ControlNetApply`
+- `ControlNetApplyAdvanced`
 - `ControlNetLoader`
-- `DualCLIPLoader`
+- `DiffControlNetLoader`
 - `EmptyLatentImage`
-- `GetImageSize+`
-- `ImageInvert`
-- `ImageResizeKJ`
+- `Get resolution [Crystools]`
+- `Image Blending Mode`
+- `Image Levels Adjustment`
+- `Image To Mask`
+- `ImageResize+`
+- `ImageScaleBy`
 - `ImageUpscaleWithModel`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
+- `MaskToImage`
 - `PreviewImage`
-- `RH_Captioner`
-- `RH_Prompter`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextBox`
-- `TextCombinerSix`
-- `TextCombinerTwo`
-- `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `CR Text Input Switch` —— 1/2 个有
-- `FluxGuidance` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `LayerUtility: GetMainColors` —— 1/2 个有
-- `LoraLoader` —— 1/2 个有
-- `Note _O` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `RepeatLatentBatch` —— 1/2 个有
-- `TTP_Image_Assy` —— 1/2 个有
-- `TTP_Image_Tile_Batch` —— 1/2 个有
-- `TTP_Tile_image_size` —— 1/2 个有
-- `VAEDecodeTiled` —— 1/2 个有
-- `easy imageBatchToImageList` —— 1/2 个有
-- `easy imageListToImageBatch` —— 1/2 个有
+- `GetNode` —— 2/3 个有
+- `LivePortraitNode` —— 2/3 个有
+- `LoadVideoAndSegment_` —— 2/3 个有
+- `ScenesNode_` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `VHS_VideoCombine` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `easy getNode` —— 1/3 个有
+- `easy setNode` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
-| ControlNet 权重 | 0.85 | - | 2 | 100% |
-| LoRA 模型强度 | 0.7 | - | 1 | 100% |
-| LoRA 文本强度 | 0.7 | - | 1 | 100% |
-| 采样步数 | 16 | - | 2 | 75% |
-| Prompt 约束强度(CFG) | 6.105 | - | 2 | 69% |
-| 采样算法 | euler_ancestral | - | 2 | 100% |
-| 调度器 | normal | - | 2 | 100% |
-| 重绘幅度 | 0.69 | - | 2 | 55% |
+| ControlNet 权重 | 0.65 | 0.55 - 0.65 | 3 | 92% |
+| 宽度 | 1216 | 1216 - 1216 | 3 | 100% |
+| 高度 | 832 | 832 - 832 | 3 | 100% |
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 2.54 | 2.54 - 2.54 | 3 | 100% |
+| 采样算法 | dpmpp_sde | - | 3 | 100% |
+| 调度器 | karras | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 0.85，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 16，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 6.105，样本不足，未给区间，2 个样本
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 100%
-- 调度器 最常用 normal，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.69，样本不足，未给区间，2 个样本
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- ControlNet 权重 中位数 0.65，观测区间 0.55 - 0.65，3 个样本，取值集中（一致性 92%）
+- 宽度 中位数 1216，观测区间 1216 - 1216，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 832，观测区间 832 - 832，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.54，观测区间 2.54 - 2.54，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_sde，3 个样本，一致性 100%
+- 调度器 最常用 karras，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

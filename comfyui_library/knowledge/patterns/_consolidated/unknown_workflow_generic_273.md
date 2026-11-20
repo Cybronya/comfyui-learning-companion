@@ -1,47 +1,37 @@
 ---
 name: unknown_workflow_generic_273
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.789444
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveVideo, ShowText|pysssss]
+coverage: 1
+common_nodes: [CR Prompt Text, ConcatTextOfUtils, LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/导演分镜故事板+SD2短视频全自动生成_2085305714741956610.json, 视频生成/图生视频/导演分镜故事板+全自动短视频生成_2089561615795572737.json, 视频生成/图生视频/导演分镜故事版+短剧视频全自动生成_2077355218928492546.json, 视频生成/图生视频/小红薯服装带货视频（自由换场景）全自动生成_2082343833567846402.json, 视频生成/图生视频/服装带货SD2短视频-全自动视频生成_2085536138990800897.json, 视频生成/图生视频/服装带货—街拍服装带货短视频（全自动生成）_2095749153849700354.json, 视频生成/图生视频/红果短剧・短视频・AI全自动生成工作流_2081954189047066625.json, 视频生成/图生视频/街拍服装带货短视频（全自动生成）_2079176863691399170.json, 视频生成/文生视频/导演分镜故事板+SD2全自动短剧视频工作流_2076975761147383810.json]
+members: [视频生成/图生视频/Seedance2.0多参（RH版）_2088693195826880513.json, 视频生成/图生视频/Seedance2.5多参视频生成15S（RH版）_2088693184313511938.json, 视频生成/图生视频/Seedance2.5多参视频生成30S（RH版）_2088693984452497409.json, 视频生成/图生视频/Seedance2.5多参视频生成（RH版）_2088161723437117442.json, 视频生成/图生视频/剧情短片丨Seedance 2.5 Global丨多图参考·环境音效_2110593359705362434.json, 视频生成/图生视频/牛来版Seedance2.5片头（RH版）_2089590549220253697.json, 视频生成/图生视频/（新片头2-自用）Seedance2.5片头（RH版）_2097963487086600194.json, 视频生成/图生视频/（新片头3-自用）Seedance2.5片头（RH版）_2099453313115836417.json, 视频生成/图生视频/（新片头3-自用）Seedance2.5片头（RH版）_2099460900435611649.json, 视频生成/图生视频/（新片头4-自用-12图）Seedance2.5片头（RH版）_2102017601940578305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_273
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/导演分镜故事板+SD2短视频全自动生成_2085305714741956610.json、视频生成/图生视频/导演分镜故事板+全自动短视频生成_2089561615795572737.json、视频生成/图生视频/导演分镜故事版+短剧视频全自动生成_2077355218928492546.json、视频生成/图生视频/小红薯服装带货视频（自由换场景）全自动生成_2082343833567846402.json、视频生成/图生视频/服装带货SD2短视频-全自动视频生成_2085536138990800897.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0多参（RH版）_2088693195826880513.json、视频生成/图生视频/Seedance2.5多参视频生成15S（RH版）_2088693184313511938.json、视频生成/图生视频/Seedance2.5多参视频生成30S（RH版）_2088693984452497409.json、视频生成/图生视频/Seedance2.5多参视频生成（RH版）_2088161723437117442.json、视频生成/图生视频/剧情短片丨Seedance 2.5 Global丨多图参考·环境音效_2110593359705362434.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
+全部 10 个 workflow 都包含：
+- `CR Prompt Text`
+- `ConcatTextOfUtils`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
 - `SaveVideo`
-- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialImageToImage` —— 8/9 个有
-- `SaveImage` —— 8/9 个有
-- `PD_JoinStringMultiLine` —— 6/9 个有
-- `PreviewAny` —— 5/9 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 5/9 个有
-- `CR Prompt Text` —— 4/9 个有
-- `Qwen3_VQA` —— 4/9 个有
-- `easy showAnything` —— 4/9 个有
-- `RH_RhartImageG2OfficialTextToImage` —— 3/9 个有
+- `RH_BytedanceSeedance25GlobalTokenMultimodalVideo` —— 9/10 个有
+- `LoadAudio` —— 6/10 个有
+- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/10 个有
 
 ## 典型参数
 

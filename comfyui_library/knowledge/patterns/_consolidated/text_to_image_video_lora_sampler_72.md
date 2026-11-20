@@ -3,17 +3,17 @@ name: text_to_image_video_lora_sampler_72
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.751545
-common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatch, EmptyImage, EmptyLatentImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, ImpactSwitch, JjkText, KSampler, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, SimpleMath+, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoExperimentalArgs, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.751727
+common_nodes: [AddLabel, CLIPLoader, CLIPTextEncode, ColorMatch, EmptyImage, EmptyLatentImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, ImpactSwitch, JjkText, KSampler, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, Primitive integer [Crystools], RHHiddenNodes, SetNode, SimpleMath+, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoExperimentalArgs, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json, 视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087323889797001217.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087470174856368129.json, 视频生成/图生视频/V2超高拟态舞蹈｜160帧直出1920高清动作迁移_2092184846041960450.json, 视频生成/图生视频/平行世界的我起号专用动作迁移图生视频_2087313287083020289.json, 视频生成/图生视频/平行世界的我风格转换｜动漫手办乐高多风格视频生成_2097806857049042945.json, 视频生成/图生视频/平行世界的我｜起号专用动作迁移图生视频一键生成_2092147311823638530.json, 视频生成/文生视频/V2视频换背景｜文生视频视频生视频替换生成_2092171934913097729.json]
+members: [平台全量/玩偶特化8秒版v2 动漫角色跳舞视频一键生成_2094811901338411010.json, 视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json, 视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json, 视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087323889797001217.json, 视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087470174856368129.json, 视频生成/图生视频/V2超高拟态舞蹈｜160帧直出1920高清动作迁移_2092184846041960450.json, 视频生成/图生视频/平行世界的我起号专用动作迁移图生视频_2087313287083020289.json, 视频生成/图生视频/平行世界的我风格转换｜动漫手办乐高多风格视频生成_2097806857049042945.json, 视频生成/图生视频/平行世界的我｜起号专用动作迁移图生视频一键生成_2092147311823638530.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_72
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json、视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json、视频生成/图生视频/V2版本直出1920高清超高拟态舞蹈160帧_2087323889797001217.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/玩偶特化8秒版v2 动漫角色跳舞视频一键生成_2094811901338411010.json、视频生成/图生视频/V1版本 150帧跳舞动作迁移 直出1920P高清画质视频_2094821599244546050.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087325234281144321.json、视频生成/图生视频/V1版本直出1920P高清动作迁移跳舞150帧_2087471552114806786.json、视频生成/图生视频/V1跳舞动作迁移｜150帧直出1920P高清图生视频_2092188304195284994.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
@@ -23,6 +23,7 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 11 个 workflow 都包含：
+- `AddLabel`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ColorMatch`
@@ -38,10 +39,8 @@ source: knowledge_consolidation
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
 - `Primitive integer [Crystools]`
 - `RHHiddenNodes`
-- `RH_Captioner`
 - `SetNode`
 - `SimpleMath+`
 - `Text Concatenate`
@@ -55,6 +54,7 @@ source: knowledge_consolidation
 - `WanVideoExperimentalArgs`
 - `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVACEEncode`
 - `WanVideoVAELoader`
@@ -64,8 +64,8 @@ source: knowledge_consolidation
 
 **可变部分**（部分 workflow 才有）：
 - `AIO_Preprocessor` —— 10/11 个有
-- `AddLabel` —— 10/11 个有
-- `WanVideoTeaCache` —— 10/11 个有
+- `PreviewImage` —— 10/11 个有
+- `RH_Captioner` —— 10/11 个有
 - `ShowText|pysssss` —— 7/11 个有
 - `WanVideoBlockSwap` —— 4/11 个有
 - `WanVideoLoraSelect` —— 4/11 个有
@@ -86,9 +86,9 @@ source: knowledge_consolidation
 - `VAEEncode` —— 3/11 个有
 - `easy imageConcat` —— 3/11 个有
 - `easy seed` —— 3/11 个有
-- `ImageFromBatch` —— 1/11 个有
-- `LayerUtility: ImageBlend` —— 1/11 个有
-- `WanVideoEnhanceAVideo` —— 1/11 个有
+- `ImageResize+` —— 1/11 个有
+- `RH_LLMAPI_NODE` —— 1/11 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 1/11 个有
 
 ## 典型参数
 

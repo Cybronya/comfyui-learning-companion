@@ -1,59 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_804
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, ComfyMathExpression, ComfyNumberConvert, Float, ImageResizeKJv2, Int, LoadAudio, LoadImage, LongCatAvatarWhisperEmbeds, TrimAudioDuration, VHS_VideoCombine, WanAnimatePlus BlockSwap, WanVideoDecode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
+frequency: 3
+level: moderate
+coverage: 0.654333
+common_nodes: [BasicScheduler, BerniniConditioning, CLIPLoader, CLIPTextEncode, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SplitSigmas, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/Longcat-avatar1.5-数字人_2060540965919744002.json, 视频生成/图生视频/Longcat-Avatar1.5-超长时长数字人v1_2107328414905626625.json]
+members: [平台全量/Bernini视频分段编辑【二创神器】_2072825480406982657.json, 平台全量/bernini人物替换_2062063367837278210.json, 视频生成/图生视频/贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_804
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Longcat-avatar1.5-数字人_2060540965919744002.json、视频生成/图生视频/Longcat-Avatar1.5-超长时长数字人v1_2107328414905626625.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Bernini视频分段编辑【二创神器】_2072825480406982657.json、平台全量/bernini人物替换_2062063367837278210.json、视频生成/图生视频/贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `ComfyNumberConvert`
-- `Float`
-- `ImageResizeKJv2`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `BerniniConditioning`
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `Int`
-- `LoadAudio`
+- `KSamplerSelect`
 - `LoadImage`
-- `LongCatAvatarWhisperEmbeds`
-- `TrimAudioDuration`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `SplitSigmas`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanAnimatePlus BlockSwap`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoLongCatAvatarExtendEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `ReplaceVideoLatentFrames` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
-- `easy indexAnything` —— 1/2 个有
-- `easy promptList` —— 1/2 个有
+- `BatchImagesNode` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `CR Value` —— 1/3 个有
+- `ComfyMathExpression` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `LoadVideoUI` —— 1/3 个有
+- `VHS_VideoInfo` —— 1/3 个有
+- `VHS_VideoInfoLoaded` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `kkVideoFramesAdvanced` —— 1/3 个有
 
 ## 典型参数
 
@@ -65,4 +66,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

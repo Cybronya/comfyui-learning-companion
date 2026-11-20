@@ -1,77 +1,91 @@
 ---
 name: image_to_image_lora_sampler_clip_45
 type: Image To Image
-frequency: 6
-level: moderate
-coverage: 0.920167
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetImageSize, ImageScaleToTotalPixels, KSampler, LatentCutToBatch, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: strong
+coverage: 0.823875
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen-image-layered图片分层工作流_2003451865083854850.json, 图片生成/图生图/qwen-image-layered-image2image-分层式生图-图生图_2003438837143642113.json, 图片生成/图生图/qwen-image-layered-image2image_2002227567119724545.json, 图片生成/图生图/qwen_layered_一键图像分层工作流_2007791149074878466.json, 图片生成/图生图/图片分层_2013537317499179010.json, 图片生成/文生图/图片分层工作流（支持复杂图层，亲测可跑！！！）_2093280821024223233.json]
+members: [图片生成/图生图/灰度信息图_2105841689272344577.json, 图片生成/图生图/电商 图片高清放大4K_1963862609970941954.json, 图片生成/图生图/葫芦娃Kontext高清放大_1963559904337547265.json, 图片生成/图生图/葫芦娃Kontext高清放大_1982989364558999553.json, 图片生成/图生图/葫芦娃_kontext_hires+PMRF_1967343441250279425.json, 图片生成/图生图/葫芦娃大佬Kontext无损高清放大_1971766740843753474.json, 图片生成/图生图/葫芦娃版Highres Kontext图像超分V1_1963909701552656385.json, 图片生成/图生图/轻微模糊图像高清放大【6K】_1965274033971449858.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_45
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-image-layered图片分层工作流_2003451865083854850.json、图片生成/图生图/qwen-image-layered-image2image-分层式生图-图生图_2003438837143642113.json、图片生成/图生图/qwen-image-layered-image2image_2002227567119724545.json、图片生成/图生图/qwen_layered_一键图像分层工作流_2007791149074878466.json、图片生成/图生图/图片分层_2013537317499179010.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/灰度信息图_2105841689272344577.json、图片生成/图生图/电商 图片高清放大4K_1963862609970941954.json、图片生成/图生图/葫芦娃Kontext高清放大_1963559904337547265.json、图片生成/图生图/葫芦娃Kontext高清放大_1982989364558999553.json、图片生成/图生图/葫芦娃_kontext_hires+PMRF_1967343441250279425.json…）
 
 - **类型**：Image To Image
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
+全部 8 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
-- `LatentCutToBatch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `ReferenceLatent`
 - `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 3/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `PrimitiveInt` —— 3/6 个有
-- `ShowText|pysssss` —— 3/6 个有
-- `SimpleMath+` —— 3/6 个有
-- `Text Multiline` —— 3/6 个有
-- `easy cleanGpuUsed` —— 3/6 个有
-- `easy promptConcat` —— 3/6 个有
-- `CFGNorm` —— 1/6 个有
+- `LayerColor: ColorAdapter` —— 7/8 个有
+- `LayerUtility: NumberCalculatorV2` —— 7/8 个有
+- `PrimitiveInt` —— 7/8 个有
+- `Image Comparer (rgthree)` —— 6/8 个有
+- `ImageListToBatch+` —— 6/8 个有
+- `LayerUtility: Seed` —— 6/8 个有
+- `TeaCache` —— 6/8 个有
+- `LayerUtility: ImageMaskScaleAs` —— 5/8 个有
+- `ImpactImageBatchToImageList` —— 3/8 个有
+- `LayerUtility: ImageMaskScaleAsV2` —— 3/8 个有
+- `ImageBatchToList+` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `UpscaleModelLoader` —— 2/8 个有
+- `easy imageListToImageBatch` —— 2/8 个有
+- `CLIPLoader` —— 1/8 个有
+- `ImageBatchToList` —— 1/8 个有
+- `ImageUpscaleWithModel` —— 1/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
+- `ModelSamplingAuraFlow` —— 1/8 个有
+- `NunchakuQwenImageDiTLoader` —— 1/8 个有
+- `PMRF` —— 1/8 个有
+- `UltimateSDUpscale` —— 1/8 个有
+- `easy imageBatchToImageList` —— 1/8 个有
+- `easy positive` —— 1/8 个有
+- `easy sleep` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 14 | 8 - 20 | 6 | 57% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 2.5 | 6 | 57% |
-| 采样算法 | euler | - | 6 | 50% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 25 | 20 - 25 | 8 | 93% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 88% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 14，观测区间 8 - 20，6 个样本
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 2.5，6 个样本
-- 采样算法 最常用 euler，6 个样本，一致性 50%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（3/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 25，观测区间 20 - 25，8 个样本，取值集中（一致性 93%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）

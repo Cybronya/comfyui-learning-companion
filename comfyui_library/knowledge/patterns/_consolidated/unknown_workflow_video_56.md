@@ -1,38 +1,43 @@
 ---
 name: unknown_workflow_video_56
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [ImageScaleToTotalPixels, LoadImage, Note Plus (mtb), SaveImage, VHS_VideoCombine, workflow>参数设置, workflow>面部参考]
+coverage: 0.905833
+common_nodes: [VHS_LoadVideo, VHS_VideoCombine, WooshLoadFlow, WooshLoadVideo, WooshSample, WooshTextEncode]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json, 图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json, 图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json]
+members: [平台全量/Woosh：一键生成拟声音效！_2043935798940143617.json, 平台全量/视频一键配音效- Woosh音效大模型_2045530872211836929.json, 音频生成/音频生成/Woosh文本_视频 一键配音_2043887523105083394.json, 音频生成/音频生成/Woosh音效生成_2049036424091013121.json, 音频生成/音频生成/开源音效大模型 Woosh：一键生成拟声音效！_2043511585079037953.json, 音频生成/音频生成/开源音效大模型 Woosh：为视频生成音效_2043928334706413570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_56
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1911517305153515522.json、图片生成/图生图/全能图片G4o-jojo风格图像转绘日漫画风_1912400449222209537.json、图片生成/图生图/全能图片G4o-吉卜力风格图像转绘宫崎骏画风_1907719568692027393.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Woosh：一键生成拟声音效！_2043935798940143617.json、平台全量/视频一键配音效- Woosh音效大模型_2045530872211836929.json、音频生成/音频生成/Woosh文本_视频 一键配音_2043887523105083394.json、音频生成/音频生成/Woosh音效生成_2049036424091013121.json、音频生成/音频生成/开源音效大模型 Woosh：一键生成拟声音效！_2043511585079037953.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `Note Plus (mtb)`
-- `SaveImage`
+全部 6 个 workflow 都包含：
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `workflow>参数设置`
-- `workflow>面部参考`
+- `WooshLoadFlow`
+- `WooshLoadVideo`
+- `WooshSample`
+- `WooshTextEncode`
 
 **可变部分**（部分 workflow 才有）：
-- `workflow>过度动画` —— 2/3 个有
+- `PreviewAudio` —— 5/6 个有
+- `CR Text` —— 3/6 个有
+- `SaveAudio` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `RH_Translator` —— 2/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `YC_ShowText` —— 1/6 个有
 
 ## 典型参数
 

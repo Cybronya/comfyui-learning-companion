@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_248
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.944444
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.9571
+common_nodes: [CR Prompt Text, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json, 视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json, 视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json, 视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json, 视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json, 视频生成/图生视频/seedance2.5首尾帧生视频_2086150447953440769.json, 视频生成/图生视频/wan2.7首尾帧图生视频万相2.7-图生视频-首尾帧生视频_2042436062873653250.json, 视频生成/文生视频/Seedance2.5 图生视频_2096218350560038913.json, 视频生成/文生视频/Seedance2.5 图生视频工作流+全节点注释_2085928936822890498.json]
+members: [图片生成/图生图/GPT全能参考0.1元，支持10张参考。场景，镜头，人物三视图都可以生成_2113917687809269761.json, 图片生成/图生图/Image-2 低质版_2056271877085163522.json, 图片生成/图生图/Minimax H3人物三视图和场景图生成，优化版v3_2087051938029457409.json, 图片生成/图生图/Minimax H3人物三视图和场景图生成，超清优化版_2092543504739299330.json, 图片生成/图生图/Minimax H3人物三视图和场景图生成，超清优化版_2092922360243511297.json, 图片生成/图生图/Minimax H3人物三视图（可生成场景）_2101592057658826754.json, 图片生成/图生图/Minimax_H3人物三视图和场景图生成，优化版v3_2100869042344128514.json, 图片生成/图生图/Minimax_H3人物三视图和场景图生成，优化版v3_2101135799998832641.json, 图片生成/图生图/全能图像G 图生图-图像编辑_2081239792947384321.json, 图片生成/文生图/Minimax H3人物三视图和场景图生成，图像优化版_2085912198970433537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_248
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json、视频生成/图生视频/Seedance2.5 图生视频_2085918745851154433.json、视频生成/图生视频/Seedance2.5_图生视频_2085870748534661122.json、视频生成/图生视频/Seedance2.5_图生视频_2089270302139305985.json、视频生成/图生视频/seedance2.5(支持30秒长视频)_图生视频首尾帧_2086003106806063106.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/GPT全能参考0.1元，支持10张参考。场景，镜头，人物三视图都可以生成_2113917687809269761.json、图片生成/图生图/Image-2 低质版_2056271877085163522.json、图片生成/图生图/Minimax H3人物三视图和场景图生成，优化版v3_2087051938029457409.json、图片生成/图生图/Minimax H3人物三视图和场景图生成，超清优化版_2092543504739299330.json、图片生成/图生图/Minimax H3人物三视图和场景图生成，超清优化版_2092922360243511297.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CR Prompt Text`
 - `LoadImage`
-- `SaveVideo`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance25TokenImageToVideo` —— 8/9 个有
-- `CR Text` —— 3/9 个有
-- `JjkText` —— 1/9 个有
-- `RH_AlibabaWan27ImageToVideo` —— 1/9 个有
+- `CR Text Concatenate` —— 9/10 个有
+- `KOOK_SaveJPGImage` —— 9/10 个有
+- `忽略多组孤海` —— 7/10 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 3/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

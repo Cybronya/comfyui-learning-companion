@@ -3,54 +3,53 @@ name: unknown_workflow_upscale_sampler_unet_19
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.73
-common_nodes: [CLIPLoader, Fast Groups Bypasser (rgthree), GetImageSize+, GrowMaskWithBlur, Image Comparer (rgthree), ImageResize+, ImageScaleBy, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskPreview+, PainterFluxImageEdit, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy imageDetailTransfer, easy imageRemBg, easy showAnything]
+coverage: 0.3845
+common_nodes: [AutoCropFaces, CLIPLoader, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageConcanate, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, MaskPreview+, PainterFluxImageEdit, PreviewImage, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SolidMask, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, easy ifElse, easy imageRemBg, easy isMaskEmpty]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/产品更换背景 Flux2 Klein 极速 8k 细节迁移_2014699939774865409.json, 图片生成/图生图/更换背景，Flux2 Klein 8k 细节迁移_2017781996658892801.json]
+members: [图片生成/图生图/Flux 2 Klein 精准换脸换头_2075081119262928898.json, 图片生成/图生图/Flux+2+Klein+Precise换脸或换头RH工作流_2018333958102061058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_unet_19
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/产品更换背景 Flux2 Klein 极速 8k 细节迁移_2014699939774865409.json、图片生成/图生图/更换背景，Flux2 Klein 8k 细节迁移_2017781996658892801.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux 2 Klein 精准换脸换头_2075081119262928898.json、图片生成/图生图/Flux+2+Klein+Precise换脸或换头RH工作流_2018333958102061058.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AutoCropFaces`
 - `CLIPLoader`
 - `Fast Groups Bypasser (rgthree)`
-- `GetImageSize+`
-- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
-- `ImageResize+`
-- `ImageScaleBy`
-- `JjkText`
+- `ImageConcanate`
 - `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `MaskPreview+`
 - `PainterFluxImageEdit`
 - `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `SolidMask`
 - `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy imageDetailTransfer`
+- `easy ifElse`
 - `easy imageRemBg`
-- `easy showAnything`
+- `easy isMaskEmpty`
 
 ## 典型参数
 
@@ -66,7 +65,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -75,5 +74,5 @@ source: knowledge_consolidation
 - 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

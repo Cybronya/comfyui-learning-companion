@@ -1,69 +1,68 @@
 ---
 name: unknown_workflow_sampler_clip_unet_190
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.935286
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, ImageConcanate, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.948
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein-9B-产品迁移完美细节多图编辑+放大_2012088188105400322.json, 图片生成/图生图/Flux2 Klein-多图编辑-4B加速版_2012124773035286530.json, 图片生成/图生图/Flux2-Klein+产品精修_2017042202211389442.json, 图片生成/图生图/Flux2-Klein+模特换姿势_2012147180743692290.json, 图片生成/图生图/Flux2-Klein+模特换装_2012142481311277058.json, 图片生成/图生图/Flux2-Klein-9b(仅启用图片编辑，可转角度重打光）_2012726330126766082.json, 图片生成/图生图/klein单图编辑——修改版_2033387043891449857.json]
+members: [图片生成/图生图/家纺四件套扒花型_2031572811197714434.json, 图片生成/图生图/提亮光影111_2067431193964015617.json, 图片生成/图生图/效果图增强细节，软装色彩分析_2071601421786636290.json, 图片生成/图生图/效果图洗图_增强细节_真实感_2102679806793043970.json, 图片生成/图生图/效果图洗图_增强细节_真实感_2103373723498795010.json, 图片生成/图生图/效果图洗图_增强细节_真实感_零偏移_2062401252247564290.json, 图片生成/图生图/文字清除工作流333333333_2071422706821713921.json, 平台全量/F.2Klein9b产品渲染精修_2058201687063617538.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_190
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein-9B-产品迁移完美细节多图编辑+放大_2012088188105400322.json、图片生成/图生图/Flux2 Klein-多图编辑-4B加速版_2012124773035286530.json、图片生成/图生图/Flux2-Klein+产品精修_2017042202211389442.json、图片生成/图生图/Flux2-Klein+模特换姿势_2012147180743692290.json、图片生成/图生图/Flux2-Klein+模特换装_2012142481311277058.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/家纺四件套扒花型_2031572811197714434.json、图片生成/图生图/提亮光影111_2067431193964015617.json、图片生成/图生图/效果图增强细节，软装色彩分析_2071601421786636290.json、图片生成/图生图/效果图洗图_增强细节_真实感_2102679806793043970.json、图片生成/图生图/效果图洗图_增强细节_真实感_2103373723498795010.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
+- `ConditioningZeroOut`
 - `Flux2Scheduler`
-- `ImageConcanate`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 6/7 个有
-- `GetImageSize` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `ConditioningZeroOut` —— 4/7 个有
-- `Image Comparer (rgthree)` —— 2/7 个有
-- `ImageUpscaleWithModel` —— 2/7 个有
-- `JWFloat` —— 2/7 个有
-- `UpscaleModelLoader` —— 2/7 个有
-- `easy imageSize` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `ConstrainImage|pysssss` —— 1/7 个有
-- `ImagePadForOutpaint` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `LoraLoaderModelOnly` —— 1/7 个有
-- `OpenposePreprocessor` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `QwenMultiangleCameraNode` —— 1/7 个有
-- `QwenMultiangleLightningNode` —— 1/7 个有
-- `easy seed` —— 1/7 个有
+- `EmptyFlux2LatentImage` —— 7/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
+- `LoadImage` —— 7/8 个有
+- `SaveImage` —— 7/8 个有
+- `Image Comparer (rgthree)` —— 6/8 个有
+- `LoraLoaderBypassModelOnly` —— 4/8 个有
+- `LoraLoaderModelOnly` —— 4/8 个有
+- `GetImageSize` —— 3/8 个有
+- `ConstrainImage|pysssss` —— 2/8 个有
+- `Fast Groups Muter (rgthree)` —— 2/8 个有
+- `ImageUpscaleWithModel` —— 2/8 个有
+- `UpscaleModelLoader` —— 2/8 个有
+- `EmptyLatentImage` —— 1/8 个有
+- `Load Image From Url (mtb)` —— 1/8 个有
+- `PreviewImage` —— 1/8 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/8 个有
+- `SaveImageJPG_GH` —— 1/8 个有
+- `Text Multiline` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 1536 | - | 1 | 100% |
+| 高度 | 1536 | - | 1 | 100% |
 
 ## 常见问题
 

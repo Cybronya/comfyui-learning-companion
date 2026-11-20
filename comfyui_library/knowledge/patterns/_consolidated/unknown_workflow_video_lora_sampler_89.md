@@ -1,105 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_89
 type: Unknown Workflow
-frequency: 17
-level: moderate
-coverage: 0.620647
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
-problems: []
+frequency: 18
+level: strong
+coverage: 0.997056
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, LoraLoader, TeaCache, VAEDecodeTiled, VAELoader, VHS_VideoCombine, WanImageToVideo]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/Wan2.2 Animate sec自动抠像人物替换_2057002999330988034.json, 图片生成/图生图/Wan2.2Animate点编辑器指定替换人物局部_2028106785063702529.json, 数字人/数字人/alan自用-主体替换sec video segmentation_1983904795276836866.json, 数字人/数字人/人物替换   角色替换   二创首选  Wan2.2 wan22_2045772090871123969.json, 数字人/数字人/人物替换  角色替换   二创首选_2052270878615977985.json, 视频生成/图生视频/(Relight修正版)Wan Animate KJ V2版+Sec稳定遮罩视频换装V1_1978363035192549378.json, 视频生成/图生视频/Wan Animate KJ V2版+Sec稳定自动遮罩视频换装_1977311321710567425.json, 视频生成/图生视频/Wan2.2  Wan22 角色替换   动作迁移  二创首选_2042132086164819970.json, 视频生成/图生视频/Wan2.2  wan 二创首选 角色替换 动作模仿 图生视频_2042131699907170305.json, 视频生成/图生视频/Wan2.2  wan 角色替换 动作模仿 图生视频_2042176153171009537.json, 视频生成/图生视频/Wan2.2  wan 角色替换 动作模仿 图生视频_2042932527039516674.json, 视频生成/图生视频/Wan2.2  二创首选 角色替换 动作模仿 图生视频_2041872588984557569.json, 视频生成/图生视频/Wan2.2  人物替换_角色替换_动作模仿_二创首选_2039518740357844993.json, 视频生成/图生视频/Wan2.2  角色替换_动作模仿_图生视频_2039615736561274882.json, 视频生成/图生视频/视频换装稳定版，可切镜头V3_1990353025669754881.json, 视频生成/图生视频/（自用）Wan Animate KJ V2版+Sec稳定遮罩Mix视频V3（换装前置）_1977639019339239426.json, 视频生成/文生视频/Wan Animate KJ V2版+Sec稳定遮罩视频换装V3_1976929662687420417.json]
+members: [图片生成/图生图/专业级电影运镜 Motion｜一键生成视频系列_1907317036790505474.json, 视频生成/图生视频/360度盲盒旋转展示工作流 WAN2.1 ｜一键生成视频系列_1907272567051444225.json, 视频生成/图生视频/NFT卡牌 360度旋转展示工作流 WAN2.1｜一键生成视频系列_1914851220903686145.json, 视频生成/图生视频/WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json, 视频生成/图生视频/WAN2.1图生视频360度旋转_1906686265050247170.json, 视频生成/图生视频/WAN2.1图生视频一键变身恶灵骑士_1912469568701329410.json, 视频生成/图生视频/WAN2.1图生视频万物成盒_1913534894562078722.json, 视频生成/图生视频/WAN2.1图生视频美女原地起飞_1908140275909468162.json, 视频生成/图生视频/WAN2.1图生视频美女射击_1910308143438491650.json, 视频生成/图生视频/WAN2.1图生视频美女转身_1909579567680684034.json, 视频生成/图生视频/WAN2.1美女热舞大摆锤_1908472121150812161.json, 视频生成/图生视频/Wan2.1 人物小丑面具特效｜i2V_1911952901085036546.json, 视频生成/图生视频/Wan2.1 愤怒人物表情特效｜i2V_1911801404531638273.json, 视频生成/图生视频/Wan2.1_人物哭泣特效｜i2V_1912077836331511810.json, 视频生成/图生视频/【360度旋转】wan2.1人物生成+万物旋转动画视频展示_1911646094139555841.json, 视频生成/图生视频/【七龙珠元气弹特效】wan2.1人物发射元气弹特效_1911792144137318401.json, 视频生成/图生视频/任意物体360度旋转展示 ｜盲盒、泡泡玛特_1910201244638740482.json, 视频生成/图生视频/抖胸舞跳起来_1921368068402921474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_89
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Animate sec自动抠像人物替换_2057002999330988034.json、图片生成/图生图/Wan2.2Animate点编辑器指定替换人物局部_2028106785063702529.json、数字人/数字人/alan自用-主体替换sec video segmentation_1983904795276836866.json、数字人/数字人/人物替换   角色替换   二创首选  Wan2.2 wan22_2045772090871123969.json、数字人/数字人/人物替换  角色替换   二创首选_2052270878615977985.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/专业级电影运镜 Motion｜一键生成视频系列_1907317036790505474.json、视频生成/图生视频/360度盲盒旋转展示工作流 WAN2.1 ｜一键生成视频系列_1907272567051444225.json、视频生成/图生视频/NFT卡牌 360度旋转展示工作流 WAN2.1｜一键生成视频系列_1914851220903686145.json、视频生成/图生视频/WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json、视频生成/图生视频/WAN2.1图生视频360度旋转_1906686265050247170.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
-- **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **样本数**：18
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `BlockifyMask`
+全部 18 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `ImageResizeKJv2`
+- `KSampler`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `VHS_LoadVideo`
+- `LoraLoader`
+- `TeaCache`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanImageToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 16/17 个有
-- `PreviewImage` —— 16/17 个有
-- `GetNode` —— 15/17 个有
-- `GrowMask` —— 15/17 个有
-- `ImageConcanate` —— 15/17 个有
-- `JWInteger` —— 15/17 个有
-- `PointsEditor` —— 15/17 个有
-- `SetNode` —— 15/17 个有
-- `VHS_VideoInfo` —— 14/17 个有
-- `INTConstant` —— 11/17 个有
-- `CR Text` —— 10/17 个有
-- `InvertMask` —— 10/17 个有
-- `LayerUtility: ImageBlend` —— 10/17 个有
-- `MaskToImage` —— 10/17 个有
-- `easy cleanGpuUsed` —— 10/17 个有
-- `ImageFromBatch+` —— 9/17 个有
-- `ImageConcatMulti` —— 7/17 个有
-- `ImageFromBatch` —— 7/17 个有
-- `PrimitiveInt` —— 7/17 个有
-- `ACE_ImageFaceCrop` —— 6/17 个有
-- `ClothesSegment` —— 6/17 个有
-- `EmptyImage` —— 6/17 个有
-- `PDIMAGE_LongerSize` —— 6/17 个有
-- `CR Prompt Text` —— 5/17 个有
-- `DownloadAndLoadSAM2Model` —— 5/17 个有
-- `PoseRetargetPromptHelper` —— 5/17 个有
-- `Sam2Segmentation` —— 5/17 个有
-- `WanVideoEncode` —— 5/17 个有
-- `WanVideoTorchCompileSettings` —— 5/17 个有
-- `WanVideoUni3C_ControlnetLoader` —— 5/17 个有
-- `WanVideoUni3C_embeds` —— 5/17 个有
-- `easy showAnything` —— 5/17 个有
-- `WanVideoContextOptions` —— 4/17 个有
-- `segformer_b2_clothes` —— 3/17 个有
-- `GrowMaskWithBlur` —— 2/17 个有
-- `CoordinatePlotter` —— 1/17 个有
-- `ImageUpscaleWithModel` —— 1/17 个有
-- `LayerMask: MaskPreview` —— 1/17 个有
-- `SaveImage` —— 1/17 个有
-- `SimpleMath+` —— 1/17 个有
-- `TT_img_enc_v2` —— 1/17 个有
-- `UpscaleModelLoader` —— 1/17 个有
-- `easy framesEditor` —— 1/17 个有
+- `ImageResizeKJ` —— 11/18 个有
+- `UnetLoaderGGUF` —— 11/18 个有
+- `ConcatTextOfUtils` —— 10/18 个有
+- `Joy_caption` —— 10/18 个有
+- `Joy_caption_load` —— 10/18 个有
+- `UNETLoader` —— 7/18 个有
+- `Int` —— 1/18 个有
+- `JjkText` —— 1/18 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 18 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 18 | 100% |
+| 采样算法 | uni_pc | - | 18 | 100% |
+| 调度器 | simple | - | 18 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 18 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 18/18 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，18 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，18 个样本，一致性 100%
+- 调度器 最常用 simple，18 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 高发问题（18/18 个样本）：发现KSampler但没有VAEDecode

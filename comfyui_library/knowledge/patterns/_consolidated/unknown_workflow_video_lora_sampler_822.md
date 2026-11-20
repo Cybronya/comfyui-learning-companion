@@ -1,64 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_822
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.476
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CropFace, DWPreprocessor, FloatConstant, GetImageSizeAndCount, INTConstant, ImageFromBatch, ImageResize+, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, PixelPerfectResolution, PrimitiveStringMultiline, Seed (rgthree), SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 3
+level: moderate
+coverage: 0.866667
+common_nodes: [Audio Duration (mtb), AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, FloatConstant, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/06 低消耗KJ加速版+全节点注释_2055499286644838401.json, 视频生成/图生视频/Wan Animate 视频动作驱动 动作迁移 低消耗 人物一致 精准版  Remix图生视频_2005823918298595330.json]
+members: [平台全量/【跟甲亢哥对唱“兄弟抱一下”】MAGREF+MultiTalk+Flux.1 Kontext完美实现_1938207481669554177.json, 数字人/数字人/MAGREF+MultiTalk_1942507580919058434.json, 视频生成/图生视频/Wan2.1数字人_1951180458820313090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_822
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/06 低消耗KJ加速版+全节点注释_2055499286644838401.json、视频生成/图生视频/Wan Animate 视频动作驱动 动作迁移 低消耗 人物一致 精准版  Remix图生视频_2005823918298595330.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/【跟甲亢哥对唱“兄弟抱一下”】MAGREF+MultiTalk+Flux.1 Kontext完美实现_1938207481669554177.json、数字人/数字人/MAGREF+MultiTalk_1942507580919058434.json、视频生成/图生视频/Wan2.1数字人_1951180458820313090.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：48%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `CLIPLoader`
-- `CLIPTextEncode`
+全部 3 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `CropFace`
-- `DWPreprocessor`
+- `DownloadAndLoadWav2VecModel`
 - `FloatConstant`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResize+`
 - `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `PrimitiveStringMultiline`
-- `Seed (rgthree)`
-- `SimpleMath+`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEmbedBridge`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchCropFromMask` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `Bookmark (rgthree)` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `GetNode` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `ImageResizeKJ` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `RMBG` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
+- `WanVideoExperimentalArgs` —— 1/3 个有
+- `WanVideoTorchCompileSettings` —— 1/3 个有
 
 ## 典型参数
 
@@ -70,4 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,39 +1,39 @@
 ---
 name: unknown_workflow_generic_208
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.7454
-common_nodes: [CR Prompt Text, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.694727
+common_nodes: [JjkText, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Image-2 低质版_2056271877085163522.json, 图片生成/图生图/Image-2 单图_2056307334154117122.json, 图片生成/图生图/x海报双图编辑全能图片G低耗_2054921213780217857.json, 图片生成/图生图/三图生图-0.1元低价版-全能图片G2-10比例选择-1K、2K_2049707741547073537.json, 图片生成/图生图/人物角色看板-全能模型g2_2058736453479395329.json, 图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G 低价渠道_2053173826476879873.json, 图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G 低价渠道_2100061659556564994.json, 图片生成/图生图/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2100212074252165121.json, 视频生成/图生视频/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2100183570366156801.json, 视频生成/图生视频/俯视图拆分九宫格平视分镜横板_全能图像G_低价渠道_2101868979630465026.json]
+members: [图片生成/图生图/人物角色图_2088438846102007810.json, 图片生成/图生图/全套品牌 VI 工装视觉提案应用_2070347956980637697.json, 图片生成/图生图/全能图像G 2.0 全能图片G Image 2.0_2046779640945053698.json, 图片生成/图生图/全能图像G Image 2.0 ：从语言到视觉的生成引擎_图生图全能图片G2.0_2046587291623235586.json, 图片生成/图生图/全能图像G Image 2.0单图编辑_2046770393905635330.json, 图片生成/图生图/全能图像G Image 2.0双图编辑_2046784881849536513.json, 图片生成/图生图/全能图像G Image 2.0多图编辑（目前最强双图编辑）_2046805508866183169.json, 图片生成/图生图/全能图片2.5 鸡皮提新模型_2097894328864694274.json, 图片生成/图生图/全能图片2.5_鸡皮提新模型_2098956670054522882.json, 图片生成/图生图/全能图片2.5_鸡皮提新模型_2099068203778535426.json, 图片生成/图生图/全能图片2.5_鸡皮提新模型_2100023234648436738.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_208
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Image-2 低质版_2056271877085163522.json、图片生成/图生图/Image-2 单图_2056307334154117122.json、图片生成/图生图/x海报双图编辑全能图片G低耗_2054921213780217857.json、图片生成/图生图/三图生图-0.1元低价版-全能图片G2-10比例选择-1K、2K_2049707741547073537.json、图片生成/图生图/人物角色看板-全能模型g2_2058736453479395329.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/人物角色图_2088438846102007810.json、图片生成/图生图/全套品牌 VI 工装视觉提案应用_2070347956980637697.json、图片生成/图生图/全能图像G 2.0 全能图片G Image 2.0_2046779640945053698.json、图片生成/图生图/全能图像G Image 2.0 ：从语言到视觉的生成引擎_图生图全能图片G2.0_2046587291623235586.json、图片生成/图生图/全能图像G Image 2.0单图编辑_2046770393905635330.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Prompt Text`
+全部 11 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
 - `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 6/10 个有
-- `GuHaiAutoImageSplit` —— 5/10 个有
-- `EmptyImage` —— 3/10 个有
-- `PreviewImage` —— 3/10 个有
-- `DuckHideNode` —— 1/10 个有
+- `PreviewImage` —— 5/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 4/11 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 4/11 个有
+- `EmptyImage` —— 3/11 个有
 
 ## 典型参数
 

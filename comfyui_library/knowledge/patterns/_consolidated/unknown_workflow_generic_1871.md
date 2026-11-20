@@ -3,41 +3,34 @@ name: unknown_workflow_generic_1871
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [Apply Whisper, AudioCrop, CR Text, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, LayerUtility: PurgeVRAM V2, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.7255
+common_nodes: [LayerMask: MaskPreview, LayerUtility: ImageBlendAdvance V2, LayerUtility: SimpleTextImage, LayerUtility: TextImage V2, LoadImage, PreviewImage, RGB_Picker, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/四角色千问TTS_2082497969068265473.json, 音频生成/音频生成/📻Qwen3 TTS多角色配音及克隆音色 📻_2018613919941660673.json]
+members: [图片生成/文生图/节点系列36-LayerUtility_ TextImage V2文本转图片节点_2048547786320252929.json, 平台全量/节点系列37-LayerUtility_ SimpleTextImage简易文本转图像节点_2048631641572118530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1871
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/四角色千问TTS_2082497969068265473.json、音频生成/音频生成/📻Qwen3 TTS多角色配音及克隆音色 📻_2018613919941660673.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/节点系列36-LayerUtility_ TextImage V2文本转图片节点_2048547786320252929.json、平台全量/节点系列37-LayerUtility_ SimpleTextImage简易文本转图像节点_2048631641572118530.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `CR Text`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `FB_Qwen3TTSVoiceDesign` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
+- `LayerMask: MaskPreview`
+- `LayerUtility: ImageBlendAdvance V2`
+- `LayerUtility: SimpleTextImage`
+- `LayerUtility: TextImage V2`
+- `LoadImage`
+- `PreviewImage`
+- `RGB_Picker`
+- `SaveImage`
 
 ## 典型参数
 

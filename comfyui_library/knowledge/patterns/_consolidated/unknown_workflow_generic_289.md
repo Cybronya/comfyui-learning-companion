@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_289
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.91375
-common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.865556
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/11-设计解析_2094954460723372033.json, 图片生成/图生图/2-单次0.16_2064555494005633025.json, 图片生成/图生图/全能模型2海报制作_2027208756517412865.json, 图片生成/图生图/测试工作流_2114599680695947265.json, 图片生成/图生图/电商图片生成_2038477037366677505.json, 图片生成/图生图/街区立面更新改造工作流_2075399434468421633.json, 图片生成/图生图/高级感调色工作流_2088578741176983554.json, 图片生成/文生图/Gemini 3.1 API调用-文生图+图生图_2027300959487008770.json]
+members: [图片生成/图生图/Banan图片编辑新王_1960530321286623233.json, 图片生成/图生图/万物巨大化_全能图片V1_1968660887684960258.json, 图片生成/图生图/全能图像编辑V1（双图）_1962428403884363778.json, 图片生成/图生图/全能图片V1-双人合影_1971602639098146817.json, 图片生成/图生图/全能图片V1在线OOTD工作流_1960459054986555394.json, 图片生成/图生图/全能图片V1自拍照_1991483937440669698.json, 图片生成/图生图/文玩2.0付费版（自用）_1965327877933776897.json, 图片生成/文生图/nano 全能图片V1史诗级 改图神器_1960889176243802113.json, 图片生成/文生图/图片生成_2018542793328697346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_289
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/11-设计解析_2094954460723372033.json、图片生成/图生图/2-单次0.16_2064555494005633025.json、图片生成/图生图/全能模型2海报制作_2027208756517412865.json、图片生成/图生图/测试工作流_2114599680695947265.json、图片生成/图生图/电商图片生成_2038477037366677505.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Banan图片编辑新王_1960530321286623233.json、图片生成/图生图/万物巨大化_全能图片V1_1968660887684960258.json、图片生成/图生图/全能图像编辑V1（双图）_1962428403884363778.json、图片生成/图生图/全能图片V1-双人合影_1971602639098146817.json、图片生成/图生图/全能图片V1在线OOTD工作流_1960459054986555394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 7/8 个有
-- `LoadImageFromUrl` —— 2/8 个有
-- `RHLLMChatNode` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 6/9 个有
+- `ImageConcanate` —— 4/9 个有
+- `ImageStitch` —— 1/9 个有
 
 ## 典型参数
 

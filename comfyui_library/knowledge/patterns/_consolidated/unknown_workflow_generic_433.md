@@ -1,48 +1,38 @@
 ---
 name: unknown_workflow_generic_433
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.659833
-common_nodes: [Fast Groups Muter (rgthree), LayerUtility: JoyCaption2ExtraOptions, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RH_Translator, SaveImage, ShowText|pysssss, WD14Tagger|pysssss]
+coverage: 0.686
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/图片+视频提示词反推合集_2057727610263785473.json, 图片生成/反推提示词/提示词反推合集2_2048693342279569410.json, 图片生成/反推提示词/提示词反推合集_2009661922576175106.json, 图片生成/反推提示词/提示词反推工作流合集_2105922119401041922.json, 图片生成/文生图/图片、视频提示词反推合集_2089248784986501121.json, 图片生成/文生图/图片和视频提示词反推集合_2088982301207257089.json]
+members: [图片生成/图生图/Nano全能图片V12 香蕉2单图编辑_1995777577551802370.json, 图片生成/图生图/YZ金鱼-全能图片pro 数字人图像设计_2002068103905329153.json, 图片生成/图生图/【通用】 全能图片V12单图编辑_1991751205623902209.json, 图片生成/图生图/全能图片V1proeditdouble_1995693136435359746.json, 图片生成/图生图/全能图片V1proeditdouble_1995728249617518593.json, 图片生成/文生图/全能图2 pro 多图编辑 文生图_1996585561089515522.json, 图片生成/文生图/生图生图_2013606476442509314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_433
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/图片+视频提示词反推合集_2057727610263785473.json、图片生成/反推提示词/提示词反推合集2_2048693342279569410.json、图片生成/反推提示词/提示词反推合集_2009661922576175106.json、图片生成/反推提示词/提示词反推工作流合集_2105922119401041922.json、图片生成/文生图/图片、视频提示词反推合集_2089248784986501121.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Nano全能图片V12 香蕉2单图编辑_1995777577551802370.json、图片生成/图生图/YZ金鱼-全能图片pro 数字人图像设计_2002068103905329153.json、图片生成/图生图/【通用】 全能图片V12单图编辑_1991751205623902209.json、图片生成/图生图/全能图片V1proeditdouble_1995693136435359746.json、图片生成/图生图/全能图片V1proeditdouble_1995728249617518593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Fast Groups Muter (rgthree)`
-- `LayerUtility: JoyCaption2ExtraOptions`
-- `LayerUtility: JoyCaptionBeta1`
-- `LayerUtility: LoadJoyCaptionBeta1Model`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Translator`
+- `PreviewImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `ShowText|pysssss`
-- `WD14Tagger|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 5/6 个有
-- `VHS_LoadVideo` —— 5/6 个有
-- `easy saveText` —— 5/6 个有
-- `llama_cpp_instruct_adv` —— 5/6 个有
-- `llama_cpp_model_loader` —— 5/6 个有
-- `llama_cpp_parameters` —— 5/6 个有
-- `Qwen3_VQA` —— 1/6 个有
+- `MuyeTextEditOutput` —— 5/7 个有
+- `TextInput_` —— 2/7 个有
+- `ZML_MaskStroke` —— 1/7 个有
+- `iToolsCompareImage` —— 1/7 个有
 
 ## 典型参数
 

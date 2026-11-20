@@ -1,51 +1,42 @@
 ---
 name: unknown_workflow_video_sampler_14
 type: Unknown Workflow
-frequency: 4
+frequency: 9
 level: moderate
-coverage: 0.72275
-common_nodes: [DiffuEraserLoader, DiffuEraserSampler, ImageResizeKJv2, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 0.945667
+common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, RunningHub_TurboDiffusion_TurboWan_Loader, RunningHub_TurboDiffusion_TurboWan_Sampler, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/文生图/即梦去水印-（9_16竖版）_2040101639603884034.json, 视频生成/图生视频/全能视频S横屏视频动态去水印消除（保留音频）_1975893175250366465.json, 视频生成/图生视频/全能视频S视频工具2：一键去水印（速度快、注意选择横屏还是竖屏）_1974023372034191362.json, 视频生成/图生视频/视频去水印_1977048593158807553.json]
+members: [数字人/数字人/RH TurboWan图生视频-48G_2022137034055356417.json, 数字人/数字人/RH TurboWan图生视频-48G_2030238252237590530.json, 数字人/数字人/RH TurboWan图生视频_2014536995703365634.json, 视频生成/图生视频/RH TurboWan图生视频_2005359205680906241.json, 视频生成/图生视频/TurboWan采样 图生视频_2003352781807353858.json, 视频生成/图生视频/Wan 图生视频_2007995270973366274.json, 视频生成/图生视频/Wan2.2Turbo图生视频（超快）_2012460776447021058.json, 视频生成/图生视频/图生视频-48G 运动视频效果较好 目前较好的动态视频生成_2025435133624459265.json, 视频生成/图生视频/🦖TurboWan图生视频_2005914063492313090.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/即梦去水印-（9_16竖版）_2040101639603884034.json、视频生成/图生视频/全能视频S横屏视频动态去水印消除（保留音频）_1975893175250366465.json、视频生成/图生视频/全能视频S视频工具2：一键去水印（速度快、注意选择横屏还是竖屏）_1974023372034191362.json、视频生成/图生视频/视频去水印_1977048593158807553.json）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/RH TurboWan图生视频-48G_2022137034055356417.json、数字人/数字人/RH TurboWan图生视频-48G_2030238252237590530.json、数字人/数字人/RH TurboWan图生视频_2014536995703365634.json、视频生成/图生视频/RH TurboWan图生视频_2005359205680906241.json、视频生成/图生视频/TurboWan采样 图生视频_2003352781807353858.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DiffuEraserLoader`
-- `DiffuEraserSampler`
-- `ImageResizeKJv2`
+全部 9 个 workflow 都包含：
 - `JWInteger`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MaskToImage`
-- `RepeatImageBatch`
-- `VHS_LoadVideo`
+- `MathExpression|pysssss`
+- `RunningHub_TurboDiffusion_TurboWan_Loader`
+- `RunningHub_TurboDiffusion_TurboWan_Sampler`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `CustomAddLabel` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy ifElse` —— 1/4 个有
+- `ShowAnything|Mie` —— 8/9 个有
+- `CR Prompt Text` —— 7/9 个有
+- `PrimitiveInt` —— 3/9 个有
+- `Int` —— 1/9 个有
+- `PrimitiveFloat` —— 1/9 个有
 
 ## 典型参数
 

@@ -3,69 +3,54 @@ name: text_to_image_lora_sampler_clip_532
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.901667
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.845
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, ReferenceMultiLatent, SaveImage, TextGenerate, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/灯光优化图生图工作流，改善人像与产品光影效果_2102874032126382081.json, 图片生成/图生图/超强一致性全能编辑｜Flux2+Klein9b换装换背景_2092943005975146497.json, 视频生成/图生视频/灯光优化图生图工作流，改善人像与产品光影效果_2105124719635812353.json]
+members: [图片生成/图生图/Flux3 Klein线稿转效果图 双图参考图生图处理工具_2114078850677301249.json, 图片生成/文生图/flux3_image_klein多图编辑，文生图图生图双修_2111532002741673986.json, 图片生成/文生图/flux3_image_klein多图编辑｜文生图图生图双模式自由切换_2111289103454138369.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_532
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/灯光优化图生图工作流，改善人像与产品光影效果_2102874032126382081.json、图片生成/图生图/超强一致性全能编辑｜Flux2+Klein9b换装换背景_2092943005975146497.json、视频生成/图生视频/灯光优化图生图工作流，改善人像与产品光影效果_2105124719635812353.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux3 Klein线稿转效果图 双图参考图生图处理工具_2114078850677301249.json、图片生成/文生图/flux3_image_klein多图编辑，文生图图生图双修_2111532002741673986.json、图片生成/文生图/flux3_image_klein多图编辑｜文生图图生图双模式自由切换_2111289103454138369.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
+- `Fast Groups Bypasser (rgthree)`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `PrimitiveStringMultiline`
+- `ReferenceMultiLatent`
 - `SaveImage`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 2/3 个有
-- `DualCLIPLoader` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `FluxGuidance` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `PainterFluxImageEdit` —— 2/3 个有
-- `RH_LLMAPI_Pro_Node` —— 2/3 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 2/3 个有
-- `SphereLightNode` —— 2/3 个有
-- `TextEncodeQwenImageEditPlus` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `孤海注释` —— 2/3 个有
-- `EmptyImage` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `BatchImagesNode` —— 2/3 个有
+- `EmptyFlux2LatentImage` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `MultiTextConcatenate` —— 1/3 个有
+- `ShunjingAIShade` —— 1/3 个有
+- `图像缩放V2_孤海` —— 1/3 个有
 
 ## 典型参数
 
@@ -83,7 +68,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -94,4 +79,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高发问题（7/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

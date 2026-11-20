@@ -3,57 +3,64 @@ name: unknown_workflow_sampler_clip_unet_241
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.925
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.9515
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/基础flux文生图1009_1976073946242093057.json, 图片生成/文生图/大家电场景图2.0_1943614394796568578.json, 图片生成/文生图/大家电场景图_1948667723191595009.json, 图片生成/文生图/室内建筑景观高质感文生图_2067220940961964033.json, 图片生成/文生图/沙雕动漫专用表情包快速生成_2043984326500556801.json, 图片生成/文生图/生成系列性服装设计_1884234765942538241.json]
+members: [图片生成/反推提示词/02face-image（th）_2054903846115266562.json, 图片生成/反推提示词/14oldphonerestore_2049045395405283329.json, 图片生成/反推提示词/换脸_2048159102316060674.json, 图片生成/图生图/2026最新FLUX2-Klein 9B版文生图_单图多图编辑工作流_2012390556902625281.json, 图片生成/图生图/Flux2-Klein-9B双图编辑_2013423771364888578.json, 图片生成/图生图/换脸换头 Klein多图编辑 Face and Head Swap_ Klein Multi-Ima_2113063253717897218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_241
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/基础flux文生图1009_1976073946242093057.json、图片生成/文生图/大家电场景图2.0_1943614394796568578.json、图片生成/文生图/大家电场景图_1948667723191595009.json、图片生成/文生图/室内建筑景观高质感文生图_2067220940961964033.json、图片生成/文生图/沙雕动漫专用表情包快速生成_2043984326500556801.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/02face-image（th）_2054903846115266562.json、图片生成/反推提示词/14oldphonerestore_2049045395405283329.json、图片生成/反推提示词/换脸_2048159102316060674.json、图片生成/图生图/2026最新FLUX2-Klein 9B版文生图_单图多图编辑工作流_2012390556902625281.json、图片生成/图生图/Flux2-Klein-9B双图编辑_2013423771364888578.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
+- `Flux2Scheduler`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Translator` —— 4/6 个有
-- `LoraLoader` —— 2/6 个有
-- `LoraLoaderModelOnly` —— 2/6 个有
-- `DeepTranslatorTextNode` —— 1/6 个有
-- `LoraLoader|pysssss` —— 1/6 个有
-- `PrimitiveInt` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `Text` —— 1/6 个有
+- `EmptyFlux2LatentImage` —— 5/6 个有
+- `CR Text` —— 4/6 个有
+- `ConditioningZeroOut` —— 4/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `GetImageSize` —— 3/6 个有
+- `ImageScaleToTotalPixels` —— 3/6 个有
+- `Int` —— 2/6 个有
+- `Any Switch (rgthree)` —— 1/6 个有
+- `DWPreprocessor` —— 1/6 个有
+- `Fast Groups Muter (rgthree)` —— 1/6 个有
+- `JWFloat` —— 1/6 个有
+- `PlaySound|pysssss` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `QwenMultiangleCameraNode` —— 1/6 个有
+- `RTXVideoSuperResolution` —— 1/6 个有
+- `easy int` —— 1/6 个有
+- `easy seed` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 964 | 720 - 2048 | 6 | 61% |
-| 高度 | 1392 | 1024 - 1536 | 6 | 87% |
-| LoRA 模型强度 | 0.6 | 0.6 - 1 | 3 | 74% |
-| LoRA 文本强度 | 1 | 1 - 1.02 | 3 | 99% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -61,7 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 964，观测区间 720 - 2048，6 个样本
-- 高度 中位数 1392，观测区间 1024 - 1536，6 个样本，取值集中（一致性 87%）
-- LoRA 模型强度 中位数 0.6，观测区间 0.6 - 1，3 个样本
-- LoRA 文本强度 中位数 1，观测区间 1 - 1.02，3 个样本，取值集中（一致性 99%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

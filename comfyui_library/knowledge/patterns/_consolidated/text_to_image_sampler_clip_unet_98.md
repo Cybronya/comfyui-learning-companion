@@ -2,95 +2,75 @@
 name: text_to_image_sampler_clip_unet_98
 type: Text To Image
 frequency: 7
-level: weak
-coverage: 0.861714
-common_nodes: [BatchImagesNode, CLIPLoader, CLIPTextEncode, ComfySwitchNode, ConditioningZeroOut, EmptyLatentImage, EmptySD3LatentImage, GetImageSize, Image Comparer (rgthree), ImagesConcanateToGrid, KSampler, LoadImage, ModelSamplingAuraFlow, PreviewAny, PrimitiveStringMultiline, QwenImage21Cache, ResolutionSelector, SaveImage, Seed (rgthree), TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.943571
+common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1文生图+图片编辑-实用版_2102374646296440834.json, 图片生成/图生图/【AI军火商】Qwen Image 2.1文生图+图片编辑-实用版_2107311397913845762.json, 图片生成/图生图/图片批次与图片列表_2113602731146563585.json, 图片生成/文生图/Qwen Image 2.1文生图与图片编辑实用版，双模式合一的图生图工作流_2102819239848665090.json, 图片生成/文生图/Qwen Image 2.1文生图加图片编辑实用版｜生图修图一气呵成_2102590122079375361.json, 数字人/数字人/Qwen Image 2.1文生图加图片编辑实用版工作流，数字人图生图处理方案_2107983478271856641.json, 视频生成/图生视频/Qwen_Image_2.1文生图与图片编辑实用版，双模式合一的图生图工作流_2106550821646331905.json]
+members: [图片生成/图生图/Kontext_智能图文编辑_2075118959145349121.json, 图片生成/图生图/kontext商业级印花提取工作流_2033184278510571521.json, 图片生成/图生图/kontext商业级印花提取工作流_2033521179331399681.json, 图片生成/图生图/【遇见AI】flux-kontext 多图编辑工作流_2050856956960747521.json, 图片生成/图生图/单图生成全景图_1916887048446480386.json, 图片生成/图生图/平铺服装加模特v1.0_1967477894467477505.json, 图片生成/图生图/新-kontext商业级印花提取工作流_2060922860222373890.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_98
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1文生图+图片编辑-实用版_2102374646296440834.json、图片生成/图生图/【AI军火商】Qwen Image 2.1文生图+图片编辑-实用版_2107311397913845762.json、图片生成/图生图/图片批次与图片列表_2113602731146563585.json、图片生成/文生图/Qwen Image 2.1文生图与图片编辑实用版，双模式合一的图生图工作流_2102819239848665090.json、图片生成/文生图/Qwen Image 2.1文生图加图片编辑实用版｜生图修图一气呵成_2102590122079375361.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Kontext_智能图文编辑_2075118959145349121.json、图片生成/图生图/kontext商业级印花提取工作流_2033184278510571521.json、图片生成/图生图/kontext商业级印花提取工作流_2033521179331399681.json、图片生成/图生图/【遇见AI】flux-kontext 多图编辑工作流_2050856956960747521.json、图片生成/图生图/单图生成全景图_1916887048446480386.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `BatchImagesNode`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
-- `ConditioningZeroOut`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `EmptySD3LatentImage`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImagesConcanateToGrid`
+- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `PreviewAny`
-- `PrimitiveStringMultiline`
-- `QwenImage21Cache`
-- `ResolutionSelector`
+- `ReferenceLatent`
 - `SaveImage`
-- `Seed (rgthree)`
-- `TextEncodeQwenImage21`
-- `TextGenerateLTX2Prompt`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 6/7 个有
-- `AddLabel` —— 6/7 个有
-- `LoraLoaderModelOnly` —— 6/7 个有
-- `easy anythingIndexSwitch` —— 6/7 个有
-- `easy promptList` —— 5/7 个有
-- `JjkText` —— 4/7 个有
-- `solarL_SaveImagesToZip` —— 4/7 个有
-- `Label (rgthree)` —— 3/7 个有
-- `孤海注释` —— 3/7 个有
-- `PreviewImage` —— 2/7 个有
-- `CR SDXL Aspect Ratio` —— 1/7 个有
-- `CreateList` —— 1/7 个有
-- `EmptyFlux2LatentImage` —— 1/7 个有
-- `EmptyImage` —— 1/7 个有
-- `easy imageBatchToImageList` —— 1/7 个有
-- `easy imageListToImageBatch` —— 1/7 个有
+- `FluxKontextImageScale` —— 6/7 个有
+- `ConditioningZeroOut` —— 5/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `Anything Everywhere3` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `Get Image Size` —— 1/7 个有
+- `GetImageSize` —— 1/7 个有
+- `ImageConcatMulti` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 25 | 7 | 20% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 7 | 42% |
-| 采样算法 | er_sde | - | 7 | 57% |
-| 调度器 | beta | - | 7 | 57% |
+| 采样步数 | 25 | 20 - 25 | 7 | 90% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 71% |
 | 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 80 | 80 - 1024 | 7 | 4% |
-| 高度 | 80 | 80 - 1024 | 7 | 4% |
+| 宽度 | 1024 | 512 - 1536 | 7 | 66% |
+| 高度 | 1024 | 512 - 1024 | 7 | 73% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 17/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 25，7 个样本，取值分散，一致性仅 20%
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，7 个样本，取值分散，一致性仅 42%
-- 采样算法 最常用 er_sde，7 个样本，一致性 57%
-- 调度器 最常用 beta，7 个样本，一致性 57%
+- 采样步数 中位数 25，观测区间 20 - 25，7 个样本，取值集中（一致性 90%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 71%
 - 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1024，7 个样本，取值分散，一致性仅 4%
-- 高度 中位数 80，观测区间 80 - 1024，7 个样本，取值分散，一致性仅 4%
-- 高发问题（17/7 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 512 - 1536，7 个样本
+- 高度 中位数 1024，观测区间 512 - 1024，7 个样本

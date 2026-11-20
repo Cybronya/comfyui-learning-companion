@@ -1,33 +1,39 @@
 ---
 name: unknown_workflow_generic_398
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.833
-common_nodes: [ComfyMathExpression, LoadImage, SaveVideo, workflow>参数调整组, workflow>工作节点组]
+coverage: 0.9665
+common_nodes: [LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 -角色设定图生视频-封装版_2091265732331003906.json, 视频生成/图生视频/MiniMax H3 FL2VA-图生视频-优化版V2_2088597720071237633.json, 视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频-荒星远征_2089325717719965697.json, 视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频_2089363087576100865.json, 视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频《星空遗迹》_2090107308679454721.json, 视频生成/图生视频/MiniMax H3 图生视频-操作简单_2089018608247721985.json, 视频生成/图生视频/MiniMax H3 图生视频-操作简单_2089537873346392066.json]
+members: [音频生成/音频生成/indexTTS2-带情绪克隆声音_2034217291604299777.json, 音频生成/音频生成/indexTTS2-带情绪的克隆声音_2056016979491860482.json, 音频生成/音频生成/indexTTS2-语音模仿_2051153376838201345.json, 音频生成/音频生成/indextts2-basic-2025-08_2006415462111907841.json, 音频生成/音频生成/indextts2-带情感调节_2004749199671525378.json, 音频生成/音频生成/声音克隆_2045108562933850114.json, 音频生成/音频生成/声音克隆（最强中文克隆音色，情感调节_2041803500815912961.json, 音频生成/音频生成/声音克隆（最强中文克隆音色，情感调节）_2038700929708462082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_398
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 -角色设定图生视频-封装版_2091265732331003906.json、视频生成/图生视频/MiniMax H3 FL2VA-图生视频-优化版V2_2088597720071237633.json、视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频-荒星远征_2089325717719965697.json、视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频_2089363087576100865.json、视频生成/图生视频/MiniMax H3 FL2VA-首帧生视频《星空遗迹》_2090107308679454721.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/indexTTS2-带情绪克隆声音_2034217291604299777.json、音频生成/音频生成/indexTTS2-带情绪的克隆声音_2056016979491860482.json、音频生成/音频生成/indexTTS2-语音模仿_2051153376838201345.json、音频生成/音频生成/indextts2-basic-2025-08_2006415462111907841.json、音频生成/音频生成/indextts2-带情感调节_2004749199671525378.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ComfyMathExpression`
-- `LoadImage`
-- `SaveVideo`
-- `workflow>参数调整组`
-- `workflow>工作节点组`
+全部 8 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSGenerateSimple`
+
+**可变部分**（部分 workflow 才有）：
+- `easy indexTTSEmotionVector` —— 6/8 个有
+- `PreviewAudio` —— 5/8 个有
+- `Fast Groups Muter (rgthree)` —— 1/8 个有
+- `LoadImage` —— 1/8 个有
+- `Text` —— 1/8 个有
 
 ## 典型参数
 

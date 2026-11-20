@@ -2,97 +2,84 @@
 name: unknown_workflow_video_upscale_latent_upscale_114
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.619333
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, GuHaiAutoImageSplit, ImageFromBatch+, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, ManualSigmas, PreviewImage, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, Text, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+level: moderate
+coverage: 0.810667
+common_nodes: [AudioCrop, BasicGuider, Bjornulf_ShowFloat, CLIPLoader, CR Float To String, CR Prompt Text, CR Text, CR Text Concatenate, CR Text Replace, ComfyMathExpression, ConcatTextOfUtils, Float, GetNode, ImageBatchMultiV2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadVideo, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, ModelAttentionBackend, PreviewAny, PreviewAudio, PrimitiveFloat, PrimitiveStringMultiline, PurgeVRAM_UTK, RH_GetAudioDuration, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, ShowAnything|Mie, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine, easy anythingIndexSwitch, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [视频生成/图生视频/ltx2.3图生视频4图参考音色版（无字幕)_2046461995771236354.json, 视频生成/图生视频/一键短视频 四宫格短视频    自带声音 音乐 LTX-2.3（Fisher大佬优化版）_2037855814051958786.json, 视频生成/图生视频/四宫格-LTX-2.3 图生视频（全面优化版）音频驱动_2041772367239712769.json]
+members: [数字人/数字人/动漫MV_动漫角色唱歌专用-For anime MV_2098030514513997826.json, 视频生成/图生视频/动漫MV_人物唱歌专用-For_anime_MV_2101855970652680194.json, 视频生成/图生视频/动漫MV_人物唱歌专用-For_anime_MV_2102666887120379905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_114
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/ltx2.3图生视频4图参考音色版（无字幕)_2046461995771236354.json、视频生成/图生视频/一键短视频 四宫格短视频    自带声音 音乐 LTX-2.3（Fisher大佬优化版）_2037855814051958786.json、视频生成/图生视频/四宫格-LTX-2.3 图生视频（全面优化版）音频驱动_2041772367239712769.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/动漫MV_动漫角色唱歌专用-For anime MV_2098030514513997826.json、视频生成/图生视频/动漫MV_人物唱歌专用-For_anime_MV_2101855970652680194.json、视频生成/图生视频/动漫MV_人物唱歌专用-For_anime_MV_2102666887120379905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：62%
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `AudioCrop`
+- `BasicGuider`
+- `Bjornulf_ShowFloat`
+- `CLIPLoader`
+- `CR Float To String`
+- `CR Prompt Text`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Replace`
+- `ComfyMathExpression`
+- `ConcatTextOfUtils`
+- `Float`
 - `GetNode`
-- `GuHaiAutoImageSplit`
-- `ImageFromBatch+`
-- `KSamplerSelect`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
+- `ImageBatchMultiV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `ManualSigmas`
-- `PreviewImage`
-- `RH_LLMAPI_Pro_Node`
+- `LoadVideo`
+- `LoraLoaderBypassModelOnly`
+- `LoraLoaderModelOnly`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3TwoPassDetailMixerT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
+- `ModelAttentionBackend`
+- `PreviewAny`
+- `PreviewAudio`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `PurgeVRAM_UTK`
+- `RH_GetAudioDuration`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SetNode`
-- `SimpleMath+`
-- `Text`
+- `ShowAnything|Mie`
+- `SolAttnMiniMax`
 - `UNETLoader`
-- `VAEDecodeTiled`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `easy anythingIndexSwitch`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Float To Integer` —— 2/3 个有
-- `INTConstant` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `LTXVEmptyLatentAudio` —— 2/3 个有
-- `LoadAudio` —— 2/3 个有
-- `MelBandRoFormerModelLoader` —— 2/3 个有
-- `MelBandRoFormerSampler` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `AudioCrop` —— 1/3 个有
-- `AudioInfo` —— 1/3 个有
-- `CM_IntToFloat` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `DapaoSmartMemoryOptimizerNode` —— 1/3 个有
-- `Display Any (rgthree)` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `ImpactInversedSwitch` —— 1/3 个有
-- `LTXVAudioVAEEncode` —— 1/3 个有
-- `LTXVReferenceAudio` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `NormalizeAudioLoudness` —— 1/3 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `SetLatentNoiseMask` —— 1/3 个有
-- `SolidMask` —— 1/3 个有
-- `TTResolutionSelector` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
-- `easy int` —— 1/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | - | 2 | 100% |
-| 高度 | 25 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -100,5 +87,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

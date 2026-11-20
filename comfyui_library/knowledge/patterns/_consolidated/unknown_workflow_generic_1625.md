@@ -3,30 +3,38 @@ name: unknown_workflow_generic_1625
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [CR Prompt Text, LoadImage, RH_GPT_Image15, SaveImage]
+coverage: 0.7635
+common_nodes: [ImageScale, ImageStitch, JjkText, LoadImage, PreviewImage, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G+Image+1.5图片修改+1.4每张 10s极速出图 高质量，低画质没有用_2001560758108450818.json, 图片生成/文生图/（每天免费5次1k low）全能图片G image 1.5(rh api版)_2002077598610014209.json]
+members: [图片生成/图生图/kontext 一键双人合影生成_1938146335730372610.json, 图片生成/图生图/kontext 万物迁移 （优化版）_1938089963911319554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1625
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G+Image+1.5图片修改+1.4每张 10s极速出图 高质量，低画质没有用_2001560758108450818.json、图片生成/文生图/（每天免费5次1k low）全能图片G image 1.5(rh api版)_2002077598610014209.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/kontext 一键双人合影生成_1938146335730372610.json、图片生成/图生图/kontext 万物迁移 （优化版）_1938089963911319554.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
+- `ImageScale`
+- `ImageStitch`
+- `JjkText`
 - `LoadImage`
-- `RH_GPT_Image15`
+- `PreviewImage`
+- `RH_ComfyFluxKontext`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `InspyrenetRembg` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
 
 ## 典型参数
 

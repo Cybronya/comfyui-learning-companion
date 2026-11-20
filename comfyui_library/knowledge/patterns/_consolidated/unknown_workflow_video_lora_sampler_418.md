@@ -1,69 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_418
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.632167
-common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.873571
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelPreviewOverrideKJ, PreviewAny, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 FUN 控制模型 视频姿态动作迁移_1957318001500549121.json, 视频生成/图生视频/Wan2.2ControlNet生视频_1957996750323822593.json, 视频生成/图生视频/Wan2.2_Funcontrol图生视频（动作迁移）_1954008121176051713.json, 视频生成/图生视频/wanvideo_Fun_2_2_control_深度图控制_1955648318090067969.json, 视频生成/图生视频/🐳wan2_2 FUN 控制模型姿态复刻【跳舞转绘等】🦋_1955903499915677697.json, 视频生成/文生视频/通义万相wan2.2视频转绘视频人物替换视频换脸V1.0_1957329600441413634.json]
+members: [平台全量/H3最精准的动作迁移（支持多人）_2117882854582603778.json, 平台全量/H3角色替换提示词调整版_2113842946683523074.json, 平台全量/H3角色替换简易版_2110633674113896449.json, 平台全量/Viggle 6步Pika角色替换_2120437453331984385.json, 视频生成/图生视频/minimax-H3角色替换 动作迁移提示词调整版_2115034226574848002.json, 视频生成/图生视频/minimax-H3角色替换 动作迁移提示词调整版_2115040443187687426.json, 视频生成/视频生视频/Viggle 6步Pika视频编辑_2120743219825831937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_418
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 FUN 控制模型 视频姿态动作迁移_1957318001500549121.json、视频生成/图生视频/Wan2.2ControlNet生视频_1957996750323822593.json、视频生成/图生视频/Wan2.2_Funcontrol图生视频（动作迁移）_1954008121176051713.json、视频生成/图生视频/wanvideo_Fun_2_2_control_深度图控制_1955648318090067969.json、视频生成/图生视频/🐳wan2_2 FUN 控制模型姿态复刻【跳舞转绘等】🦋_1955903499915677697.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/H3最精准的动作迁移（支持多人）_2117882854582603778.json、平台全量/H3角色替换提示词调整版_2113842946683523074.json、平台全量/H3角色替换简易版_2110633674113896449.json、平台全量/Viggle 6步Pika角色替换_2120437453331984385.json、视频生成/图生视频/minimax-H3角色替换 动作迁移提示词调整版_2115034226574848002.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelPreviewOverrideKJ`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoControlEmbeds`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DepthAnything_V2` —— 5/6 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 5/6 个有
-- `GetNode` —— 5/6 个有
-- `ImageConcatMulti` —— 5/6 个有
-- `AIO_Preprocessor` —— 4/6 个有
-- `WanVideoTorchCompileSettings` —— 4/6 个有
-- `CR Text` —— 3/6 个有
-- `ImpactInt` —— 3/6 个有
-- `SimpleMath+` —— 3/6 个有
-- `GetImageRangeFromBatch` —— 2/6 个有
-- `ImageBlend` —— 2/6 个有
-- `RHHiddenNodes` —— 2/6 个有
-- `easy anythingIndexSwitch` —— 2/6 个有
-- `ImageBlur` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `JjkText` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `VHS_VideoInfoLoaded` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
-- `workflow>文本处理` —— 1/6 个有
+- `VHS_LoadVideo` —— 6/7 个有
+- `CM_FloatToInt` —— 5/7 个有
+- `CreateVideo` —— 5/7 个有
+- `MiniMaxH3PromptEnhancerT8` —— 5/7 个有
+- `TextGenerate` —— 2/7 个有
+- `BatchImagesNode` —— 1/7 个有
+- `GetImageSize` —— 1/7 个有
+- `ImageResizeKJv2` —— 1/7 个有
+- `MiniMaxH3AddGuide` —— 1/7 个有
+- `SmartImageConcat` —— 1/7 个有
+- `SomethingToString` —— 1/7 个有
+- `StringReplace` —— 1/7 个有
+- `VHS_LoadVideoFFmpeg` —— 1/7 个有
+- `VHS_SelectEveryNthImage` —— 1/7 个有
 
 ## 典型参数
 

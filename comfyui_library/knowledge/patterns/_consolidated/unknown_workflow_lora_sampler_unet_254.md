@@ -1,83 +1,74 @@
 ---
 name: unknown_workflow_lora_sampler_unet_254
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8745
-common_nodes: [CLIPLoader, ConditioningZeroOut, EmptyLatentImage, FluxKontextImageScale, FluxResolutionNode, ImageConcanate, KSampler, LoadImage, LoraLoaderModelOnly, OpenposePreprocessor, PreviewImage, SaveImage, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 3
+level: moderate
+coverage: 0.849333
+common_nodes: [CFGGuider, CLIPLoader, ConditioningZeroOut, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2KleinOutputExtractor_EditUtils, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/反推提示词/千问Edit2511图像编辑-多图融合【2025-12-29】_2008774703871172610.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合（无偏移）_2004251023571124225.json]
+members: [图片生成/图生图/klein汽车图片车漆改色_2048755332972814337.json, 图片生成/图生图/一键去除水印高清极速版_2046154084654256130.json, 图片生成/图生图/单图强一致性编辑_2078743919415873537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_254
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/千问Edit2511图像编辑-多图融合【2025-12-29】_2008774703871172610.json、图片生成/图生图/千问Edit2511图像编辑-多图融合（无偏移）_2004251023571124225.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/klein汽车图片车漆改色_2048755332972814337.json、图片生成/图生图/一键去除水印高清极速版_2046154084654256130.json、图片生成/图生图/单图强一致性编辑_2078743919415873537.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `FluxKontextImageScale`
-- `FluxResolutionNode`
-- `ImageConcanate`
-- `KSampler`
+- `CropWithPadInfo_EditUtils`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2KleinOutputExtractor_EditUtils`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `OpenposePreprocessor`
 - `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Text Multiline`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GetImageSize+` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `AdaptiveLongestEdge_EditUtils` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `CR Value` —— 1/3 个有
+- `GrowMask` —— 1/3 个有
+- `ImpactConditionalBranch` —— 1/3 个有
+- `InpaintCrop` —— 1/3 个有
+- `InpaintStitch` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/3 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/3 个有
+- `MaskPreview+` —— 1/3 个有
+- `easy boolean` —— 1/3 个有
+- `easy imageColorMatch` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 512 | - | 2 | 100% |
-| 高度 | 512 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

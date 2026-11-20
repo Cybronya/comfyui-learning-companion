@@ -1,93 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_298
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.942875
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, CheckpointLoaderSimple, DualCLIPLoader, EmptyLTXVLatentVideo, JWInteger, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PreviewAny, PrimitiveInt, RH_LLMAPI_NODE, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy convertAnything]
+frequency: 9
+level: moderate
+coverage: 0.964444
+common_nodes: [Apply Whisper, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SoundFlow_TrimAudio, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-图生视频-没字幕版-人物一致性-电商带货短剧漫剧生成工作流_2039199521229512706.json, 视频生成/图生视频/LTX2.3-图生视频-没字幕版-人物一致性-电商带货短剧漫剧生成工作流_2076654345638207490.json, 视频生成/图生视频/LTX2.3-图生视频-没字幕版工作流_2038220174460981249.json, 视频生成/图生视频/LTX2.3-图生视频-没字幕版工作流_2038226644200067073.json, 视频生成/图生视频/ltx-2.3-图生视频_2030107128194666498.json, 视频生成/图生视频/ltx-2.3-首尾帧-图生视频_2031574051621183490.json, 视频生成/图生视频/ltx2.3-图生视频-没字幕版_2031643477628428290.json, 视频生成/图生视频/ltx2.3_2050884030723305474.json]
+members: [图片生成/反推提示词/69-tszrvideo_2053019815362744322.json, 图片生成/反推提示词/99视频数字人spszr放大_2046871555069714433.json, 图片生成/反推提示词/数字人形象_2062166224678772738.json, 数字人/数字人/infinite视频单人对口型_2003664453008826370.json, 数字人/数字人/最强视频数字人对口型万相wan2.1+InfiniteTalk+VoxCPM TTS超长超自然_1960272591191748610.json, 数字人/数字人/视频数字人对口型_2017542922996031489.json, 视频生成/图生视频/【亲测好用】最强视频数字人对口型万相wan2.1Q8+InfiniteTalk+VoxCPM TTS超长超自然_1994362409961857025.json, 音频生成/音频生成/wan 2.2 数字人对口型_1986380429831925762.json, 音频生成/音频生成/视频数字人对口型_1985952196049215490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_298
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-图生视频-没字幕版-人物一致性-电商带货短剧漫剧生成工作流_2039199521229512706.json、视频生成/图生视频/LTX2.3-图生视频-没字幕版-人物一致性-电商带货短剧漫剧生成工作流_2076654345638207490.json、视频生成/图生视频/LTX2.3-图生视频-没字幕版工作流_2038220174460981249.json、视频生成/图生视频/LTX2.3-图生视频-没字幕版工作流_2038226644200067073.json、视频生成/图生视频/ltx-2.3-图生视频_2030107128194666498.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/69-tszrvideo_2053019815362744322.json、图片生成/反推提示词/99视频数字人spszr放大_2046871555069714433.json、图片生成/反推提示词/数字人形象_2062166224678772738.json、数字人/数字人/infinite视频单人对口型_2003664453008826370.json、数字人/数字人/最强视频数字人对口型万相wan2.1+InfiniteTalk+VoxCPM TTS超长超自然_1960272591191748610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CR Text`
-- `CheckpointLoaderSimple`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `JWInteger`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `PrimitiveInt`
-- `RH_LLMAPI_NODE`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
-- `VHS_VideoCombine`
-- `easy convertAnything`
+全部 9 个 workflow 都包含：
+- `Apply Whisper`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SoundFlow_TrimAudio`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 7/8 个有
-- `LTXVImgToVideoInplace` —— 7/8 个有
-- `LTXVPreprocess` —— 7/8 个有
-- `RH_LLMAPI_Pro_Node` —— 7/8 个有
-- `LTXVScheduler` —— 6/8 个有
-- `SetLatentNoiseMask` —— 6/8 个有
-- `SolidMask` —— 6/8 个有
-- `LTXVLatentUpsampler` —— 5/8 个有
-- `LatentUpscaleModelLoader` —— 5/8 个有
-- `ImageSharpen` —— 4/8 个有
-- `LTX2SamplingPreviewOverride` —— 4/8 个有
-- `LTXVChunkFeedForward` —— 4/8 个有
-- `LayerFilter: GaussianBlur` —— 4/8 个有
-- `ModelPatchTorchSettings` —— 4/8 个有
-- `RTXVideoSuperResolution` —— 4/8 个有
-- `VAELoader` —— 3/8 个有
-- `ImageFromBatch+` —— 2/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/8 个有
-- `LazySwitch1way` —— 2/8 个有
-- `PrimitiveBoolean` —— 2/8 个有
-- `DuckHideNode` —— 1/8 个有
-- `GetImageRangeFromBatch` —— 1/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `LTXVAddGuideMulti` —— 1/8 个有
-- `RH_RhartTextG3ProPreviewImageToText` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `ttN concat` —— 1/8 个有
+- `LoadAudio` —— 8/9 个有
+- `SimpleMath+` —— 8/9 个有
+- `VHS_LoadVideo` —— 8/9 个有
+- `Float to Int` —— 7/9 个有
+- `GetNode` —— 7/9 个有
+- `RH_GetAudioDuration` —— 7/9 个有
+- `easy anythingIndexSwitch` —— 7/9 个有
+- `String Literal` —— 6/9 个有
+- `VHS_VideoCombine` —— 6/9 个有
+- `VoxCPM_TTS` —— 6/9 个有
+- `CreateVideo` —— 3/9 个有
+- `ImageConcatMulti` —— 3/9 个有
+- `IndexTTS2_Emotion` —— 3/9 个有
+- `RTXVideoSuperResolution` —— 3/9 个有
+- `SaveVideo` —— 3/9 个有
+- `Anything Everywhere` —— 2/9 个有
+- `Audio Duration (mtb)` —— 1/9 个有
+- `LoadVideoFromUrl` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `RHHiddenNodes` —— 1/9 个有
+- `VHS_LoadAudio` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 93 | 93 - 93 | 8 | 100% |
-| 高度 | 20 | 20 - 20 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -95,5 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 93，观测区间 93 - 93，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 20，观测区间 20 - 20，8 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

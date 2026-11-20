@@ -1,50 +1,52 @@
 ---
 name: image_to_image_video_lora_sampler
 type: Image To Image
-frequency: 12
+frequency: 15
 level: strong
-coverage: 0.481833
-common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageFromBatch, JjkText, KSampler, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingAuraFlow, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, SimpleMath+, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo, wanBlockSwap]
+coverage: 0.929733
+common_nodes: [AILab_QwenVL_Advanced, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, CR Text Concatenate, Display Any (rgthree), ImageFromBatch+, ImageResizeKJv2, ImpactInt, JWInteger, JjkText, KSampler, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, ProcessString, RH_LLMAPI_Pro_Node, Seed (rgthree), SimpleMath+, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, easy anythingIndexSwitch, easy forLoopEnd, easy forLoopStart, easy imageListToImageBatch, easy promptLine, wanBlockSwap]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/技术赋能创作：WAN2.2 与 QWEN 联合，实现图片到运镜长视频一键生成_1986723518039666690.json, 视频生成/图生视频/Qwen-Image-Edit图片多角度镜头+首中尾图生视频工作流_2037969942770880514.json, 视频生成/图生视频/WAN2.2+QWEN强强联合 图片多角度一键生成并运镜长视频优化版_1986219220310654977.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成=B站艾橘溪_1985575003364249602.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2033878962325164034.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2075060174733266945.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2076466189928329218.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2077195036592267266.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2079113575385354241.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2079390921430487042.json, 视频生成/图生视频/一键多角度Ai运镜+长视频生成_2080571381951066114.json, 视频生成/图生视频/图生视频一键多角度Ai运镜+长视频生成_2038792996770025474.json]
+members: [平台全量/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+图生视频 排版_2020751667284676609.json, 平台全量/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+图生视频_2019363875610697730.json, 平台全量/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+首尾帧_2019390187318546433.json, 平台全量/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+首尾帧最新版_2031748894106849281.json, 平台全量/AI漫剧规模化工作流：全自动Agent支持多人批量生成与矩阵账号批量衔接_2019685529691885569.json, 视频生成/图生视频/AI漫剧 工作流 支持多人  全自动agent 规模化批量+矩阵账号_2019692066992820226.json, 视频生成/图生视频/AI漫剧一键生成（娱乐适用）_2021404969047433218.json, 视频生成/图生视频/AI漫剧工作流_全自动agent+规模化批量+矩阵账号+首尾帧_2020743770496569345.json, 视频生成/图生视频/AI漫剧工作流_全自动agent+规模化批量+矩阵账号_2014568371844554754.json, 视频生成/图生视频/AI漫剧工作流_全自动agent+首尾帧_2035185865479163905.json, 视频生成/图生视频/AI漫剧工作流_博物馆终极版_2014300434378268674.json, 视频生成/图生视频/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+首尾帧（优化版）_2023718194728407042.json, 视频生成/图生视频/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号_2015622701288792066.json, 视频生成/图生视频/全自动AgentAI漫剧工作流多人批量真人漫画故事短片视频生成wan模型视频生成_2019748933689417730.json, 视频生成/文生视频/全自动可爱DORO_2032369998534021121.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/技术赋能创作：WAN2.2 与 QWEN 联合，实现图片到运镜长视频一键生成_1986723518039666690.json、视频生成/图生视频/Qwen-Image-Edit图片多角度镜头+首中尾图生视频工作流_2037969942770880514.json、视频生成/图生视频/WAN2.2+QWEN强强联合 图片多角度一键生成并运镜长视频优化版_1986219220310654977.json、视频生成/图生视频/一键多角度Ai运镜+长视频生成=B站艾橘溪_1985575003364249602.json、视频生成/图生视频/一键多角度Ai运镜+长视频生成_2033878962325164034.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（平台全量/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+图生视频 排版_2020751667284676609.json、平台全量/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+图生视频_2019363875610697730.json、平台全量/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+首尾帧_2019390187318546433.json、平台全量/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+首尾帧最新版_2031748894106849281.json、平台全量/AI漫剧规模化工作流：全自动Agent支持多人批量生成与矩阵账号批量衔接_2019685529691885569.json…）
 
 - **类型**：Image To Image
-- **样本数**：12
+- **样本数**：15
 - **可信度**：强结论
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CFGNorm`
+全部 15 个 workflow 都包含：
+- `AILab_QwenVL_Advanced`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageFromBatch`
+- `CR Text`
+- `CR Text Concatenate`
+- `Display Any (rgthree)`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `JWInteger`
 - `JjkText`
 - `KSampler`
 - `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingAuraFlow`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `SetNode`
+- `ProcessString`
+- `RH_LLMAPI_Pro_Node`
+- `Seed (rgthree)`
 - `SimpleMath+`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
@@ -52,40 +54,56 @@ source: knowledge_consolidation
 - `VAEEncode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanFirstMiddleLastFrameToVideo`
+- `WanFirstLastFrameToVideo`
+- `easy anythingIndexSwitch`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageListToImageBatch`
+- `easy promptLine`
 - `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatch` —— 11/12 个有
-- `ImageResizeKJv2` —— 11/12 个有
-- `PrimitiveInt` —— 11/12 个有
-- `SaveImage` —— 11/12 个有
-- `DF_Integer` —— 1/12 个有
-- `ImageBatchJoin` —— 1/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
+- `Fast Bypasser (rgthree)` —— 14/15 个有
+- `LayerUtility: PurgeVRAM V2` —— 14/15 个有
+- `Mute / Bypass Repeater (rgthree)` —— 14/15 个有
+- `easy batchAnything` —— 14/15 个有
+- `IfInnerExecute` —— 13/15 个有
+- `Int` —— 13/15 个有
+- `easy compare` —— 13/15 个有
+- `easy imageCount` —— 13/15 个有
+- `easy showAnything` —— 13/15 个有
+- `CompressImages` —— 8/15 个有
+- `AppendImageBatch` —— 1/15 个有
+- `Bjornulf_ShowInt` —— 1/15 个有
+- `GetNode` —— 1/15 个有
+- `MathExpression|pysssss` —— 1/15 个有
+- `PreviewImage` —— 1/15 个有
+- `RH_LLMAPI_NODE` —— 1/15 个有
+- `SaveStringKJ` —— 1/15 个有
+- `SetNode` —— 1/15 个有
+- `ToInt` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 12 | 100% |
-| Prompt 约束强度(CFG) | 8 | 6 - 8 | 12 | 90% |
-| 采样算法 | 1 | 1 - 1 | 12 | 100% |
-| 调度器 | euler | - | 12 | 100% |
-| 重绘幅度 | simple | - | 12 | 100% |
+| 采样步数 | randomize | - | 15 | 73% |
+| Prompt 约束强度(CFG) | 6 | 1 - 6 | 15 | 78% |
+| 采样算法 | 1 | 1 - 1 | 14 | 100% |
+| 调度器 | euler | - | 15 | 93% |
+| 重绘幅度 | simple | - | 15 | 93% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 48/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，12 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，12 个样本，取值集中（一致性 90%）
-- 采样算法 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，12 个样本，一致性 100%
-- 重绘幅度 最常用 simple，12 个样本，一致性 100%
-- 高发问题（48/12 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，15 个样本，一致性 73%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 1 - 6，15 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，15 个样本，一致性 93%
+- 重绘幅度 最常用 simple，15 个样本，一致性 93%
+- 高发问题（15/15 个样本）：Steps较低可能导致细节不足

@@ -1,56 +1,74 @@
 ---
 name: unknown_workflow_sampler_unet_vae_320
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8545
-common_nodes: [CLIPLoader, ConditioningZeroOut, ImageConcanate, KSampler, LoadImage, RH_Nano_Banana_Image2Image, SaveImage, TextEncodeQwenImageEditPlus_lrzjason, UNETLoader, VAEDecode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.472667
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, GetNode, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewAny, PrimitiveBoolean, PrimitiveInt, PrimitiveStringMultiline, QwenImage21Cache, SaveImage, SetNode, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy seed]
 problems: []
 missing: []
-members: [图片生成/图生图/qwen edit  Plus+  全能图片V1 手办生成 + 随机背景_1970461203736764417.json, 图片生成/图生图/qwen edit Plus+  全能图片V1 手办生成_1970485985945546754.json]
+members: [图片生成/图生图/qwen-image2.1_人物定装照四视图_六视图_2102742894242263042.json, 图片生成/图生图/qwen-image2.1故事分镜_参考图生成_九六四宫格三模式_2102369371170623489.json, 图片生成/图生图/故事分镜_参考图生成_九六四宫格三模式_自动裁剪单图放大_2105611989971197954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_320
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/qwen edit  Plus+  全能图片V1 手办生成 + 随机背景_1970461203736764417.json、图片生成/图生图/qwen edit Plus+  全能图片V1 手办生成_1970485985945546754.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/qwen-image2.1_人物定装照四视图_六视图_2102742894242263042.json、图片生成/图生图/qwen-image2.1故事分镜_参考图生成_九六四宫格三模式_2102369371170623489.json、图片生成/图生图/故事分镜_参考图生成_九六四宫格三模式_自动裁剪单图放大_2105611989971197954.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：85%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `ImageConcanate`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `GetNode`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `QwenImage21Cache`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus_lrzjason`
+- `SetNode`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `RHLLMChatNode` —— 2/3 个有
+- `StringConcatenate` —— 2/3 个有
+- `EmptyImage` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `ImageBatch` —— 1/3 个有
+- `ImageCrop+` —— 1/3 个有
+- `ImageFromBatch` —— 1/3 个有
+- `ImageScaleBy` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `easy forLoopEnd` —— 1/3 个有
+- `easy forLoopStart` —— 1/3 个有
+- `easy imageSplitGrid` —— 1/3 个有
+- `easy mathInt` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta57 | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 25 | 25 - 40 | 3 | 76% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 2048 | 2048 - 2048 | 3 | 100% |
+| 高度 | 2048 | 1152 - 2048 | 3 | 76% |
 
 ## 常见问题
 
@@ -58,9 +76,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta57，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 25，观测区间 25 - 40，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 2048，观测区间 2048 - 2048，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 2048，观测区间 1152 - 2048，3 个样本

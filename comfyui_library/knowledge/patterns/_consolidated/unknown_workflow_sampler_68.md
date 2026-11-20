@@ -3,54 +3,58 @@ name: unknown_workflow_sampler_68
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.774333
-common_nodes: [AudioCrop, Bjornulf_FreeVRAM, HeartMuLa_Transcribe, IndexTTS2_Basic, JWStringConcat, JjkText, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, Qwen3_VQA, SaveAudio, ShowText|pysssss, Text Concatenate, Text Multiline, easy saveText, easy showAnything]
+coverage: 0.953
+common_nodes: [FlashVSR_SM_KSampler, FlashVSR_SM_Model, Get Image Size, GetImageRangeFromBatch, ImageCASharpening+, ImpactMinMax, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, SaveImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch]
 problems: []
 missing: []
-members: [音频生成/音频生成/多国语言音频翻译_2033365420601774081.json, 音频生成/音频生成/语音翻译！Ai音频传译！B站艾橘溪_2014338264907386881.json, 音频生成/音频生成/语音翻译！Ai音频传译！_2109826567848415233.json]
+members: [平台全量/FlashVsr1.1+SeedVR2.5+TTP图像高清修复_2086373630421852161.json, 平台全量/（能力层调用）图像4K放大_2066351399725785089.json, 平台全量/🦖8K高清放大修复_1995326257573322753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_68
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/多国语言音频翻译_2033365420601774081.json、音频生成/音频生成/语音翻译！Ai音频传译！B站艾橘溪_2014338264907386881.json、音频生成/音频生成/语音翻译！Ai音频传译！_2109826567848415233.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/FlashVsr1.1+SeedVR2.5+TTP图像高清修复_2086373630421852161.json、平台全量/（能力层调用）图像4K放大_2066351399725785089.json、平台全量/🦖8K高清放大修复_1995326257573322753.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `AudioCrop`
-- `Bjornulf_FreeVRAM`
-- `HeartMuLa_Transcribe`
-- `IndexTTS2_Basic`
-- `JWStringConcat`
-- `JjkText`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `Qwen3_VQA`
-- `SaveAudio`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
-- `easy saveText`
-- `easy showAnything`
+- `FlashVSR_SM_KSampler`
+- `FlashVSR_SM_Model`
+- `Get Image Size`
+- `GetImageRangeFromBatch`
+- `ImageCASharpening+`
+- `ImpactMinMax`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `SaveImage`
+- `SeedVR2`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio To Text (mtb)` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `FishS2VoiceCloneTTS` —— 1/3 个有
-- `Load Whisper (mtb)` —— 1/3 个有
-- `PreviewAny` —— 1/3 个有
-- `RunningHub SeedXPro Translator` —— 1/3 个有
+- `ImageResize+` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `ComfyMathExpression` —— 1/3 个有
+- `DF_Get_image_size` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.42025e+09 | 1.15123e+08 - 2.07655e+09 | 3 | 32% |
+| Prompt 约束强度(CFG) | randomize | - | 3 | 100% |
+| 采样算法 | 2 | 2 - 2 | 3 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 3 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 3 | 100% |
 
 ## 常见问题
 
@@ -58,4 +62,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1.42025e+09，观测区间 1.15123e+08 - 2.07655e+09，3 个样本，取值分散，一致性仅 32%
+- Prompt 约束强度(CFG) 最常用 randomize，3 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，3 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 2.07655e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

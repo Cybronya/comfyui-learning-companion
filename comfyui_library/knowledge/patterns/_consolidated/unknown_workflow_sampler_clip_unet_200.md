@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_sampler_clip_unet_200
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.876429
+coverage: 0.836
 common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX-Klein-文生图-10秒急速出图_2012122075317669889.json, 图片生成/文生图/FLUX.2 klein base 版文生图_2012463751529762817.json, 图片生成/文生图/FLUX.2 klein 蒸馏版文生图_2012457929915502594.json, 图片生成/文生图/FLUX.2-klein_官方基础工作流（文生图）_2048617862490759170.json, 图片生成/文生图/FLUX2 KLEIN True-V2底模升级-文生图_2049082614698479618.json, 图片生成/文生图/Flux.2-klein-4b + SeedVR2_2012787694857883649.json, 图片生成/文生图/Flux.2-klein-9b_1927021794954268673.json]
+members: [图片生成/文生图/WH-AI-Studio（Flux2-Klein完美文生图）_2026681586271391745.json, 图片生成/文生图/flux-2-klein 文生图_2013532963312504833.json, 图片生成/文生图/flux-2-klein-9b（文生图）_2012052794068443137.json, 图片生成/文生图/flux2 klein文生图9B_2073301542874206209.json, 图片生成/文生图/flux2-klein文生图工作流_2012032539350798337.json, 图片生成/文生图/flux2_klein文生图_2051855653928480769.json, 图片生成/文生图/【阡陌】FLUX-2-Klein 9B base版文生图工作流_2016491648590553089.json, 图片生成/文生图/【阡陌】FLUX-2-Klein 9B 蒸馏版4步极速文生图工作流_2016500518138421250.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_200
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/FLUX-Klein-文生图-10秒急速出图_2012122075317669889.json、图片生成/文生图/FLUX.2 klein base 版文生图_2012463751529762817.json、图片生成/文生图/FLUX.2 klein 蒸馏版文生图_2012457929915502594.json、图片生成/文生图/FLUX.2-klein_官方基础工作流（文生图）_2048617862490759170.json、图片生成/文生图/FLUX2 KLEIN True-V2底模升级-文生图_2049082614698479618.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/WH-AI-Studio（Flux2-Klein完美文生图）_2026681586271391745.json、图片生成/文生图/flux-2-klein 文生图_2013532963312504833.json、图片生成/文生图/flux-2-klein-9b（文生图）_2012052794068443137.json、图片生成/文生图/flux2 klein文生图9B_2073301542874206209.json、图片生成/文生图/flux2-klein文生图工作流_2012032539350798337.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
@@ -37,22 +37,16 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 5/7 个有
-- `ConditioningZeroOut` —— 4/7 个有
-- `PrimitiveStringMultiline` —— 4/7 个有
-- `SeedVR2LoadDiTModel` —— 3/7 个有
-- `SeedVR2LoadVAEModel` —— 3/7 个有
-- `SeedVR2VideoUpscaler` —— 3/7 个有
-- `Int` —— 2/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `easy promptList` —— 2/7 个有
-- `ttN seed` —— 2/7 个有
-- `AddLabel` —— 1/7 个有
-- `CR Prompt Text` —— 1/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `PlaySound|pysssss` —— 1/7 个有
-- `Seed (rgthree)` —— 1/7 个有
+- `PrimitiveInt` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 4/8 个有
+- `LoadImage` —— 3/8 个有
+- `ConditioningZeroOut` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `INTConstant` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `JjkText` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 1/8 个有
 
 ## 典型参数
 

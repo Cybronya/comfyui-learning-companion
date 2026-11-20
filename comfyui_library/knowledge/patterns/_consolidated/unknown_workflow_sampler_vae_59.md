@@ -1,47 +1,40 @@
 ---
 name: unknown_workflow_sampler_vae_59
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.73
-common_nodes: [DualCLIPLoader, DyPE_Condition, DyPE_Encode, DyPE_KSampler, DyPE_Model, SaveImage, VAEDecode, VAELoader]
+coverage: 0.77575
+common_nodes: [LoadImage, LoadLotusModel, LotusSampler, PreviewImage, SaveImage, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/DyPE Krea文生图修正稳定版V1（2-4K高清直出）_1984246530523742209.json, 图片生成/文生图/dype仿图高分辨率_1984409596913664002.json, 图片生成/文生图/文生图2-4K高清直出-DyPE Krea_1984816251937636354.json]
+members: [图片生成/图生图/Lotus_深度+法线预测_BY_ZERO_1940232640807223298.json, 图片生成/图生图/图片转法线深度贴图工作流_2034509684610174978.json, 平台全量/图片转法线深度贴图工作流_2032773935200210945.json, 平台全量/法线与深度图生成_1858914488073293825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_59
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/DyPE Krea文生图修正稳定版V1（2-4K高清直出）_1984246530523742209.json、图片生成/文生图/dype仿图高分辨率_1984409596913664002.json、图片生成/文生图/文生图2-4K高清直出-DyPE Krea_1984816251937636354.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Lotus_深度+法线预测_BY_ZERO_1940232640807223298.json、图片生成/图生图/图片转法线深度贴图工作流_2034509684610174978.json、平台全量/图片转法线深度贴图工作流_2032773935200210945.json、平台全量/法线与深度图生成_1858914488073293825.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DualCLIPLoader`
-- `DyPE_Condition`
-- `DyPE_Encode`
-- `DyPE_KSampler`
-- `DyPE_Model`
+全部 4 个 workflow 都包含：
+- `LoadImage`
+- `LoadLotusModel`
+- `LotusSampler`
+- `PreviewImage`
 - `SaveImage`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `JWInteger` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `DeepTranslatorTextNode` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `RH_Captioner` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `ImageInvert` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
 
 ## 典型参数
 

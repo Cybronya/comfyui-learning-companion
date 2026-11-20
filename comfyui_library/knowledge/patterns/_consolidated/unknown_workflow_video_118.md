@@ -1,46 +1,59 @@
 ---
 name: unknown_workflow_video_118
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.84
-common_nodes: [CR Integer To String, CR Text, CR Text Concatenate, Compare, FlashVSRNode, GetNode, ImageResize+, Int, Make Interpolation State List, MathExpression|pysssss, RHHiddenNodes, RIFE VFI, SetNode, StringConcatenate, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy ifElse]
+frequency: 4
+level: moderate
+coverage: 0.788
+common_nodes: [ForLoopClose, ForLoopOpen, GetImageSize, ImageCropByMask, ImageFromBatch+, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, MaskFix+, MathExpression|pysssss, PlaySound|pysssss, PointsEditor, PreviewImage, PrimitiveInt, QuadMaskWarper, RTXVideoSuperResolution, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy batchAnything, easy indexAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/【视频超清插帧】Flash Vsr（16帧插至25帧）_2056548182066290690.json, 视频生成/图生视频/【视频超清插帧】Flash+Vsr_2056903678707191809.json]
+members: [视频生成/图生视频/举牌特效1漫剧电商服装分镜真人_2072948552581599233.json, 视频生成/图生视频/举牌特效2漫剧电商服装分镜真人_2073066511052398593.json, 视频生成/图生视频/举牌特效3漫剧电商服装分镜真人_2073276265880182786.json, 视频生成/图生视频/举牌特效4漫剧电商服装分镜真人_2073276252827512833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_118
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【视频超清插帧】Flash Vsr（16帧插至25帧）_2056548182066290690.json、视频生成/图生视频/【视频超清插帧】Flash+Vsr_2056903678707191809.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/举牌特效1漫剧电商服装分镜真人_2072948552581599233.json、视频生成/图生视频/举牌特效2漫剧电商服装分镜真人_2073066511052398593.json、视频生成/图生视频/举牌特效3漫剧电商服装分镜真人_2073276265880182786.json、视频生成/图生视频/举牌特效4漫剧电商服装分镜真人_2073276252827512833.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Integer To String`
-- `CR Text`
-- `CR Text Concatenate`
-- `Compare`
-- `FlashVSRNode`
-- `GetNode`
-- `ImageResize+`
-- `Int`
-- `Make Interpolation State List`
+全部 4 个 workflow 都包含：
+- `ForLoopClose`
+- `ForLoopOpen`
+- `GetImageSize`
+- `ImageCropByMask`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
+- `MaskFix+`
 - `MathExpression|pysssss`
-- `RHHiddenNodes`
-- `RIFE VFI`
-- `SetNode`
-- `StringConcatenate`
+- `PlaySound|pysssss`
+- `PointsEditor`
+- `PreviewImage`
+- `PrimitiveInt`
+- `QuadMaskWarper`
+- `RTXVideoSuperResolution`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `easy ifElse`
+- `VHS_VideoInfo`
+- `easy batchAnything`
+- `easy indexAnything`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `LoadImage` —— 3/4 个有
+- `Bjornulf_ShowInt` —— 2/4 个有
+- `ImagePadKJ` —— 2/4 个有
+- `Images to RGB` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `ImageConcatenate_UTK` —— 1/4 个有
 
 ## 典型参数
 
@@ -52,4 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

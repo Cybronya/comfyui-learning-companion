@@ -3,30 +3,34 @@ name: unknown_workflow_generic_1836
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.55
-common_nodes: [PrimitiveStringMultiline, SaveAudioMP3, YuE2Generate, YuE2Loader]
+coverage: 1
+common_nodes: [ImageResize+, LoadImage, RH_Nano_Banana2_Image2Image, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/SunoV5文生歌-描述生歌工作流_2094582451027931137.json, 音频生成/音频生成/SunoV5自定义歌词-歌词生歌工作流_2094584641507389442.json]
+members: [图片生成/文生图/一键16：9三视图plus版本2.0_2037365706097958913.json, 平台全量/四视图_api_2016730665907130369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1836
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/SunoV5文生歌-描述生歌工作流_2094582451027931137.json、音频生成/音频生成/SunoV5自定义歌词-歌词生歌工作流_2094584641507389442.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一键16：9三视图plus版本2.0_2037365706097958913.json、平台全量/四视图_api_2016730665907130369.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-- `YuE2Generate`
-- `YuE2Loader`
+- `ImageResize+`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `RH_Translator`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `JjkConcat` —— 1/2 个有
 
 ## 典型参数
 

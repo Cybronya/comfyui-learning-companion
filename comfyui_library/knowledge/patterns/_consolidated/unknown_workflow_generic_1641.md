@@ -3,29 +3,34 @@ name: unknown_workflow_generic_1641
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, RH_RhartImageG25SunburstTextToImage, SaveImage]
+coverage: 0.833
+common_nodes: [Int Literal, LoadImage, SaveImage, SeedVR2, easy imageColorMatch]
 problems: []
 missing: []
-members: [图片生成/文生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007888886325250.json, 图片生成/文生图/文生图 aigc -image-2.5 （9 图）太平_2106711934480506881.json]
+members: [图片生成/图生图/【CQ808】高清放大(人物肖像Seedvr2版)_2019644778903769089.json, 平台全量/高清放大(人物肖像Seedvr2版)_1991321800751820801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1641
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/大峰 aigc -image-2.5 （9 图）代价版本_2098007888886325250.json、图片生成/文生图/文生图 aigc -image-2.5 （9 图）太平_2106711934480506881.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【CQ808】高清放大(人物肖像Seedvr2版)_2019644778903769089.json、平台全量/高清放大(人物肖像Seedvr2版)_1991321800751820801.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `RH_RhartImageG25SunburstTextToImage`
+- `Int Literal`
+- `LoadImage`
 - `SaveImage`
+- `SeedVR2`
+- `easy imageColorMatch`
+
+**可变部分**（部分 workflow 才有）：
+- `Image Comparer (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

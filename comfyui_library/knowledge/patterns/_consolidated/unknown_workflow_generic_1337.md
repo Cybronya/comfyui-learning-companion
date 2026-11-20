@@ -1,34 +1,40 @@
 ---
 name: unknown_workflow_generic_1337
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9
-common_nodes: [DisplayImageFromURL, SaveImage, easy imageConcat]
+frequency: 3
+level: moderate
+coverage: 0.939
+common_nodes: [CR Prompt Text, IndexTTSNode, LayerUtility: PurgeVRAM, LoadAudio, LoadVideo, RH_HeyGemNode, SaveAudio, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/14-单张四宫格2_2094960129585270786.json, 图片生成/图生图/1_2094696368240676866.json]
+members: [数字人/数字人/培训视频工作流_1937183270608257026.json, 视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json, "视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1337
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/14-单张四宫格2_2094960129585270786.json、图片生成/图生图/1_2094696368240676866.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/培训视频工作流_1937183270608257026.json、视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json、视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `DisplayImageFromURL`
-- `SaveImage`
-- `easy imageConcat`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `IndexTTSNode`
+- `LayerUtility: PurgeVRAM`
+- `LoadAudio`
+- `LoadVideo`
+- `RH_HeyGemNode`
+- `SaveAudio`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageAutoCrop V2` —— 1/2 个有
+- `ImpactSwitch` —— 2/3 个有
+- `IndexTTS2BaseNode` —— 1/3 个有
 
 ## 典型参数
 
@@ -40,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

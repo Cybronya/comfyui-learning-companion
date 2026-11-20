@@ -1,97 +1,80 @@
 ---
 name: image_to_image_upscale_lora_sampler_55
 type: Image To Image
-frequency: 3
-level: moderate
-coverage: 0.824667
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, INTConstant, Image Comparer (rgthree), ImageScaleToTotalPixels, ImageSharpen, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.933
+common_nodes: [CFGNorm, CLIPLoader, Image Comparer (rgthree), KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z-image-base+高清放大 文生图_图生图  高清放大Z-image+Flux2-klein_2020661220746993665.json, 图片生成/图生图/flux-2-klein全家桶系列7（单图+双图+三图编辑流）_2042089381166587905.json, 图片生成/文生图/Z-image-base+高清放大_2019659749075197954.json]
+members: [图片生成/图生图/参考图像打光 艺术照打光  Qwen-Edit-2509 + SeedVR2图片高清放大 重新打光_2041348969401425921.json, 图片生成/图生图/多角度+放大+qwen_2511_multiangle_2009943128391819266.json, 平台全量/参考图像打光 _ Qwen-Edit-2509_1890370127920013313.json, 平台全量/参考图像打光 艺术照打光  Qwen-Edit-2509 + SeedVR2图片高清放大 重新打光_2002586863250599937.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_55
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Z-image-base+高清放大 文生图_图生图  高清放大Z-image+Flux2-klein_2020661220746993665.json、图片生成/图生图/flux-2-klein全家桶系列7（单图+双图+三图编辑流）_2042089381166587905.json、图片生成/文生图/Z-image-base+高清放大_2019659749075197954.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/参考图像打光 艺术照打光  Qwen-Edit-2509 + SeedVR2图片高清放大 重新打光_2041348969401425921.json、图片生成/图生图/多角度+放大+qwen_2511_multiangle_2009943128391819266.json、平台全量/参考图像打光 _ Qwen-Edit-2509_1890370127920013313.json、平台全量/参考图像打光 艺术照打光  Qwen-Edit-2509 + SeedVR2图片高清放大 重新打光_2002586863250599937.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `ColorMatch`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `INTConstant`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `ImageSharpen`
 - `KSampler`
-- `KSamplerSelect`
 - `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
-- `EmptySD3LatentImage` —— 2/3 个有
-- `ImageScaleBy` —— 2/3 个有
-- `MemoryCleaner` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `Qwen3_VQA` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `SomethingToString` —— 2/3 个有
-- `GetNode` —— 1/3 个有
-- `Mute / Bypass Relay (rgthree)` —— 1/3 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/3 个有
-- `PlaySound|pysssss` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `图像缩放V2_孤海` —— 1/3 个有
+- `ConditioningZeroOut` —— 3/4 个有
+- `ConstrainImage|pysssss` —— 3/4 个有
+- `ImageScaleBy` —— 3/4 个有
+- `RepeatLatentBatch` —— 3/4 个有
+- `CreateVideo` —— 1/4 个有
+- `FluxKontextImageScale` —— 1/4 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `QwenMultiangleCameraNode` —— 1/4 个有
+- `ReActorFaceSwap` —— 1/4 个有
+- `VideoFrameExtractor` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 40 | 6 - 40 | 3 | 44% |
-| Prompt 约束强度(CFG) | 3 | 1 - 3 | 3 | 60% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 8 | 4 - 8 | 4 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 40，观测区间 6 - 40，3 个样本，取值分散，一致性仅 44%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 3，3 个样本
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 8，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

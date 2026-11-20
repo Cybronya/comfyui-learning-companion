@@ -1,44 +1,42 @@
 ---
 name: unknown_workflow_video_46
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.85325
-common_nodes: [Int, Int To Bool (mtb), LoadImage, RH_Captioner, RunningHub_FramePack, ShowText|pysssss, Textbox, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, easy textSwitch]
+coverage: 0.727143
+common_nodes: [LoadImage, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, RH_Sora2_I2V, SaveImage, SaveVideo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/【支持最长60s】FramePack 图生视频_1925152537710632961.json, 视频生成/图生视频/【杂志大片】图生视频 FramePack_1914256158851330049.json, 视频生成/图生视频/图生视频 _ FramePack（支持最长60s）_1911225665679753217.json, 视频生成/图生视频/首尾帧 _ FramePack_1914196891058302977.json]
+members: [视频生成/图生视频/全能视频S+ 全能图片v1 人物参考+自动分镜出片_1978674363534823426.json, 视频生成/图生视频/全能视频S做tvc广告_1989011351987163137.json, 视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987500333691809794.json, 视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987847194495619074.json, 视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987855331382505473.json, 视频生成/文生视频/全能视频S+ 全能图片v1图片参考，自动分镜出片_1986439647997947905.json, 视频生成/文生视频/全能视频S+ 全能图片v1谷歌人物参考自动分镜广告tvc广告视频高清无水印_1979876369238757378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_46
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【支持最长60s】FramePack 图生视频_1925152537710632961.json、视频生成/图生视频/【杂志大片】图生视频 FramePack_1914256158851330049.json、视频生成/图生视频/图生视频 _ FramePack（支持最长60s）_1911225665679753217.json、视频生成/图生视频/首尾帧 _ FramePack_1914196891058302977.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/全能视频S+ 全能图片v1 人物参考+自动分镜出片_1978674363534823426.json、视频生成/图生视频/全能视频S做tvc广告_1989011351987163137.json、视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987500333691809794.json、视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987847194495619074.json、视频生成/图生视频/电商带货全能视频S图生视频 全能图片v1图片参考自动分镜出片大语言提示词优化_1987855331382505473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Int`
-- `Int To Bool (mtb)`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `RH_Captioner`
-- `RunningHub_FramePack`
-- `ShowText|pysssss`
-- `Textbox`
-- `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `RH_LLMAPI_NODE`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Sora2_I2V`
+- `SaveImage`
+- `SaveVideo`
 - `easy showAnything`
-- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `easy imageConcat` —— 1/4 个有
+- `workflow>线稿` —— 5/7 个有
+- `Bookmark (rgthree)` —— 3/7 个有
+- `VHS_LoadVideoPath` —— 3/7 个有
+- `VHS_VideoCombine` —— 3/7 个有
+- `VHS_VideoInfo` —— 3/7 个有
 
 ## 典型参数
 

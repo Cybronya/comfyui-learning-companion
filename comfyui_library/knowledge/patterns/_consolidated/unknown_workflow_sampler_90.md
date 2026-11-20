@@ -3,34 +3,39 @@ name: unknown_workflow_sampler_90
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.969
-common_nodes: [LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
+coverage: 0.867
+common_nodes: [AIO_Preprocessor, GetImageSizeAndCount, ImageConcanate, LayerUtility: TextJoin, LoadImage, PreviewImage, RH_Captioner, RunningHub QwenImage Canny Pipeline, RunningHub QwenImage Canny Sampler, SaveImage, Text Multiline, easy imageScaleDownToSize, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/USO风格迁多三合一工作流！_1964595430032068610.json, 图片生成/文生图/字节USO风格迁移_1962533944346456065.json]
+members: [图片生成/图生图/QwenImage深度控制-Depth深度_1958211256522051585.json, 图片生成/文生图/QwenImage线稿控制-Canny_1956777535356985346.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_90
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/USO风格迁多三合一工作流！_1964595430032068610.json、图片生成/文生图/字节USO风格迁移_1962533944346456065.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/QwenImage深度控制-Depth深度_1958211256522051585.json、图片生成/文生图/QwenImage线稿控制-Canny_1956777535356985346.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `LayerUtility: TextJoin`
 - `LoadImage`
-- `RunningHub USO Loader`
-- `RunningHub USO Sampler`
+- `PreviewImage`
+- `RH_Captioner`
+- `RunningHub QwenImage Canny Pipeline`
+- `RunningHub QwenImage Canny Sampler`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
+- `Text Multiline`
+- `easy imageScaleDownToSize`
+- `easy showAnything`
 
 ## 典型参数
 

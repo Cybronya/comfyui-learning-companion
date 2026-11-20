@@ -3,35 +3,37 @@ name: unknown_workflow_generic_1208
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.717
-common_nodes: [LoadAudio, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker, SaveAudio]
+coverage: 0.789667
+common_nodes: [ConstrainImage|pysssss, ImageConcatMulti, JjkText, LoadImage, PreviewImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/voxcpm2语音克隆_2076559639533154305.json, 音频生成/音频生成/【遇见AI】VoxCPM2语音模型，语音参考，声音设计，多人对话_2044573273899409410.json, 音频生成/音频生成/终极克隆 & 可控克隆+ 语音设计｜单人或多人说话｜克隆+ 语音设计_2045145033673809922.json]
+members: [图片生成/图生图/换脸换装 真实高度一致 多图编辑 加强版_2089531169330253825.json, 图片生成/图生图/换衣服换人脸 _ Qwen3.0Pro_2088504381816786946.json, 图片生成/图生图/服饰迁移 姿态克隆 替换人物与服装 洗图 指定模特姿势 动作迁移_2068854417989914626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1208
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/voxcpm2语音克隆_2076559639533154305.json、音频生成/音频生成/【遇见AI】VoxCPM2语音模型，语音参考，声音设计，多人对话_2044573273899409410.json、音频生成/音频生成/终极克隆 & 可控克隆+ 语音设计｜单人或多人说话｜克隆+ 语音设计_2045145033673809922.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/换脸换装 真实高度一致 多图编辑 加强版_2089531169330253825.json、图片生成/图生图/换衣服换人脸 _ Qwen3.0Pro_2088504381816786946.json、图片生成/图生图/服饰迁移 姿态克隆 替换人物与服装 洗图 指定模特姿势 动作迁移_2068854417989914626.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `RunningHub_VoxCPM_MultiSpeaker`
-- `SaveAudio`
+- `ConstrainImage|pysssss`
+- `ImageConcatMulti`
+- `JjkText`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
+- `RH_AlibabaQwenImage30ProImageEdit` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
 
 ## 典型参数
 

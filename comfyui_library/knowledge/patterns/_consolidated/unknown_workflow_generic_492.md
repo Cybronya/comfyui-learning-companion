@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_492
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.801167
-common_nodes: [MuyeTextEditOutput, PreviewAny, RH_LLMAPI_Pro_Node, easy saveText]
+coverage: 0.900143
+common_nodes: [LoadImage, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [图片生成/文生图/2.1.小说 转成 剧本_2031699309548277761.json, 图片生成/文生图/生成人物系统提示词_api_2016742675545858049.json, 图片生成/文生图/脱敏工作流_2013600929546768386.json, 图片生成/文生图/自见剧本改分镜_2037876386517491713.json, 图片生成/文生图/超能视频2.0文本洗稿工作流_2037097837971906562.json, 视频生成/文生视频/2.6.脱敏提示词_2031735091793240065.json]
+members: [数字人/数字人/MagiHuman达芬奇魔法人_2033187173230448641.json, 视频生成/图生视频/图生视频RH-daVinci-MagiHuman 达芬奇 媲美seedance2.0_2037525750772928513.json, 视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman2.0_2038078503165366274.json, 视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman_2037761306891128833.json, 视频生成/图生视频/最强开源视频模型daVinci-MagiHuman_2037758920298602497.json, 视频生成/图生视频/（双人对话）DaVinci-MagiHuman+Qwen3.5图生视频数字人V1（540P）_2037733253083303937.json, 视频生成/图生视频/（音色参考）DaVinci-MagiHuman+Qwen3.5图生视频V1（540P）_2037721979842732034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_492
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/2.1.小说 转成 剧本_2031699309548277761.json、图片生成/文生图/生成人物系统提示词_api_2016742675545858049.json、图片生成/文生图/脱敏工作流_2013600929546768386.json、图片生成/文生图/自见剧本改分镜_2037876386517491713.json、图片生成/文生图/超能视频2.0文本洗稿工作流_2037097837971906562.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/MagiHuman达芬奇魔法人_2033187173230448641.json、视频生成/图生视频/图生视频RH-daVinci-MagiHuman 达芬奇 媲美seedance2.0_2037525750772928513.json、视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman2.0_2038078503165366274.json、视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman_2037761306891128833.json、视频生成/图生视频/最强开源视频模型daVinci-MagiHuman_2037758920298602497.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `MuyeTextEditOutput`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `easy saveText`
+全部 7 个 workflow 都包含：
+- `LoadImage`
+- `RH_MagiHumanGenerate`
+- `RH_MagiHumanModelLoader`
+- `SaveVideo`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/6 个有
-- `SeargeTextInputV2` —— 1/6 个有
+- `PreviewAny` —— 6/7 个有
+- `easy cleanGpuUsed` —— 6/7 个有
+- `CR Prompt Text` —— 4/7 个有
+- `JWInteger` —— 4/7 个有
+- `LoadAudio` —— 4/7 个有
 
 ## 典型参数
 

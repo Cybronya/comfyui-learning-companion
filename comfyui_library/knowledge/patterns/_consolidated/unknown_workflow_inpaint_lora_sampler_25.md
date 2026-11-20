@@ -1,66 +1,82 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_25
 type: Unknown Workflow
-frequency: 4
-level: strong
-coverage: 0.94975
-common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, ImageCrop, ImageGenResolutionFromImage, InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 5
+level: moderate
+coverage: 0.9148
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, CR Color Panel, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GrowMaskWithBlur, ImageCompositeMasked, ImageCrop+, InpaintCrop, InpaintModelConditioning, InpaintStitch, Int, KSamplerSelect, LayerMask: MaskGrow, LayerMask: MaskPreview, LayerUtility: CropByMask V2, LayerUtility: ImageBlendAdvance, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, MaskPreview+, ModelSamplingFlux, PreviewImage, RMBG, RandomNoise, ReduxAdvanced, SamplerCustomAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy makeImageForICLora]
 problems: []
 missing: []
-members: [图片生成/图生图/ACE++_Portrait_Reface_换脸_1956950372058107905.json, 图片生成/图生图/M_ACE_Plus_LoRA_subject_refence主体一致性生成_1956725732975022081.json, 图片生成/图生图/Scepter-ace ++ 更方便地更换所有东西_1911609850827108353.json, 图片生成/图生图/服装图案迁移_1900869896836915201.json]
+members: [图片生成/图生图/Flux 万物迁移_1983079864918024194.json, 图片生成/图生图/万物迁移（字节最新重绘模型）_1969029474002104321.json, 图片生成/图生图/万物迁移（河南ai之神）_1958511419870310401.json, 图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1936726800812904450.json, 图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1975103087293632513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_25
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/ACE++_Portrait_Reface_换脸_1956950372058107905.json、图片生成/图生图/M_ACE_Plus_LoRA_subject_refence主体一致性生成_1956725732975022081.json、图片生成/图生图/Scepter-ace ++ 更方便地更换所有东西_1911609850827108353.json、图片生成/图生图/服装图案迁移_1900869896836915201.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux 万物迁移_1983079864918024194.json、图片生成/图生图/万物迁移（字节最新重绘模型）_1969029474002104321.json、图片生成/图生图/万物迁移（河南ai之神）_1958511419870310401.json、图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1936726800812904450.json、图片生成/图生图/最好用的 万物迁移（小物品可用）物品还原度99%_1975103087293632513.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：95%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CR Color Panel`
+- `ConditioningZeroOut`
 - `DifferentialDiffusion`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `ImageCrop`
-- `ImageGenResolutionFromImage`
+- `GrowMaskWithBlur`
+- `ImageCompositeMasked`
+- `ImageCrop+`
+- `InpaintCrop`
 - `InpaintModelConditioning`
-- `KSampler`
+- `InpaintStitch`
+- `Int`
+- `KSamplerSelect`
+- `LayerMask: MaskGrow`
+- `LayerMask: MaskPreview`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageBlendAdvance`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `Mask Fill Holes`
+- `MaskPreview+`
+- `ModelSamplingFlux`
+- `PreviewImage`
+- `RMBG`
+- `RandomNoise`
+- `ReduxAdvanced`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy makeImageForICLora`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 3/4 个有
-- `ImageConcanate` —— 3/4 个有
-- `ImageResize+` —— 3/4 个有
-- `ImageToMask` —— 3/4 个有
-- `MaskToImage` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ImagePadForOutpaint` —— 2/4 个有
-- `LoadImageFromUrl` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
-- `RMBG` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Get Image Size` —— 4/5 个有
+- `IsMaskEmpty` —— 4/5 个有
+- `LayerUtility: ImageReel` —— 4/5 个有
+- `LayerUtility: ImageReelComposit` —— 4/5 个有
+- `Seed (rgthree)` —— 4/5 个有
+- `easy anythingIndexSwitch` —— 4/5 个有
+- `easy convertAnything` —— 4/5 个有
+- `BiRefNetRMBG` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 1/5 个有
+- `LayerUtility: CropByMask` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 28 | 23 - 28 | 4 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | normal | - | 4 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,8 +84,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 28，观测区间 23 - 28，4 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 normal，4 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

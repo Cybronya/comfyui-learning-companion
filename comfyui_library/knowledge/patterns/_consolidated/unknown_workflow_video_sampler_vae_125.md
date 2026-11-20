@@ -1,67 +1,64 @@
 ---
 name: unknown_workflow_video_sampler_vae_125
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9565
-common_nodes: [ImagePadKJ, ImageResizeKJ, Int, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.696
+common_nodes: [CR Text, GetImageSizeAndCount, GetNode, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/字节开源Phantom 14B-多图参考电商带货-产品介绍视频生成-StarAI_1927665720824610817.json, 视频生成/图生视频/phantom图生视频工作流_1917413592033853442.json, 视频生成/图生视频/双图Phantom视频版FX人物一致性_1934212623216898050.json, 视频生成/图生视频/字节开源Phantom-多图参考电商带货-产品介绍视频生成-StarAI_1914926063179264002.json]
+members: [视频生成/图生视频/Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-StarAI_1925121936324501506.json, 视频生成/图生视频/Self Forcing图生视频完美加速版_1933702527525244929.json, 视频生成/图生视频/VACE 14B MoviiGen图生视频超强工作流_1923563610159968258.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度大）_1923713594662244354.json, 视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度小）_1923650703401603074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_125
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/字节开源Phantom 14B-多图参考电商带货-产品介绍视频生成-StarAI_1927665720824610817.json、视频生成/图生视频/phantom图生视频工作流_1917413592033853442.json、视频生成/图生视频/双图Phantom视频版FX人物一致性_1934212623216898050.json、视频生成/图生视频/字节开源Phantom-多图参考电商带货-产品介绍视频生成-StarAI_1914926063179264002.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-StarAI_1925121936324501506.json、视频生成/图生视频/Self Forcing图生视频完美加速版_1933702527525244929.json、视频生成/图生视频/VACE 14B MoviiGen图生视频超强工作流_1923563610159968258.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度大）_1923713594662244354.json、视频生成/图生视频/Vace 14B CausVid 3倍加速图生视频（幅度小）_1923650703401603074.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImagePadKJ`
-- `ImageResizeKJ`
-- `Int`
+全部 5 个 workflow 都包含：
+- `CR Text`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImpactSwitch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `ImageUpscaleWithModel` —— 3/4 个有
-- `UpscaleModelLoader` —— 3/4 个有
-- `WanVideoEnhanceAVideo` —— 3/4 个有
-- `WanVideoSLG` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `FILM VFI` —— 2/4 个有
-- `ImpactSwitch` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `Note Plus (mtb)` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `ColorMatch` —— 1/4 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
-- `GIMMVFI_interpolate` —— 1/4 个有
-- `INTConstant` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `ImageSmartSharpen+` —— 1/4 个有
-- `WanVideoVACEEncode` —— 1/4 个有
-- `easy imageScaleDownToSize` —— 1/4 个有
-- `easy int` —— 1/4 个有
+- `MathExpression|pysssss` —— 4/5 个有
+- `WanVideoVACEModelSelect` —— 4/5 个有
+- `RHHiddenNodes` —— 3/5 个有
+- `WanVideoLoraSelect` —— 3/5 个有
+- `ColorMatch` —— 2/5 个有
+- `RH_LLMAPI_NODE` —— 2/5 个有
+- `ImageRepeat` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
 
 ## 典型参数
 

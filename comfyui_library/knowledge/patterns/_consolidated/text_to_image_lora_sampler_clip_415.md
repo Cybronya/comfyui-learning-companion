@@ -3,91 +3,63 @@ name: text_to_image_lora_sampler_clip_415
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8642
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SigmasToFloat, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.9138
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/全参考三采模式｜MiniMaxH3 sigma强化潜空间放大视频生成_2090215257896738818.json, 视频生成/图生视频/全参考多参专用｜MiniMax H3视频生成工作流_2090224936303554562.json, 视频生成/图生视频/图生视频单图直出｜MiniMax H3 8.20新版模板_2090853514540052482.json, 视频生成/文生视频/MINIMAXH3三采latent放大｜高清无损单次解码零损失_2090058920059555841.json, 视频生成/文生视频/MINIMAXH3三采latent放大｜高速无损单次解码零损失_2089442453534371841.json]
+members: [图片生成/文生图/Qwen image 2.1文生图稳定版｜中文语义理解到位｜长句描述也不崩_2102287119891918849.json, 图片生成/文生图/Qwen2.1 BF16官方文生图工作流｜海报制作字体设计一次到位_2102219743238385666.json, 图片生成/文生图/qwen image2.1文生图利器｜数字人海报制作一步搞定_2104529003418836993.json, 图片生成/文生图/qwen-image-2.1官方原版｜纯净文生图像模型直出_2103085016224985090.json, 图片生成/文生图/qwen-image-2.1文生图基础款｜参数清爽开箱即用｜日常出图够用了_2102267329873801217.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_415
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/全参考三采模式｜MiniMaxH3 sigma强化潜空间放大视频生成_2090215257896738818.json、视频生成/图生视频/全参考多参专用｜MiniMax H3视频生成工作流_2090224936303554562.json、视频生成/图生视频/图生视频单图直出｜MiniMax H3 8.20新版模板_2090853514540052482.json、视频生成/文生视频/MINIMAXH3三采latent放大｜高清无损单次解码零损失_2090058920059555841.json、视频生成/文生视频/MINIMAXH3三采latent放大｜高速无损单次解码零损失_2089442453534371841.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1文生图稳定版｜中文语义理解到位｜长句描述也不崩_2102287119891918849.json、图片生成/文生图/Qwen2.1 BF16官方文生图工作流｜海报制作字体设计一次到位_2102219743238385666.json、图片生成/文生图/qwen image2.1文生图利器｜数字人海报制作一步搞定_2104529003418836993.json、图片生成/文生图/qwen-image-2.1官方原版｜纯净文生图像模型直出_2103085016224985090.json、图片生成/文生图/qwen-image-2.1文生图基础款｜参数清爽开箱即用｜日常出图够用了_2102267329873801217.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SigmasToFloat`
-- `SplitSigmas`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 4/5 个有
-- `DisableNoise` —— 4/5 个有
-- `ExtendIntermediateSigmas` —— 4/5 个有
-- `PrimitiveInt` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `easy boolean` —— 4/5 个有
-- `LatentUpscaleBy` —— 3/5 个有
-- `LoadAudio` —— 3/5 个有
-- `LoadImage` —— 3/5 个有
-- `Lora Loader Stack (rgthree)` —— 3/5 个有
-- `PixaromaSaveMp4` —— 3/5 个有
-- `easy cleanGpuUsed` —— 3/5 个有
-- `CreateVideo` —— 2/5 个有
-- `GetImageRangeFromBatch` —— 2/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `MathExpression|pysssss` —— 2/5 个有
-- `MiniMaxChunkFeedForward` —— 2/5 个有
-- `MiniMaxH3SigmaShift` —— 2/5 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 2/5 个有
-- `PathchSageAttentionKJ` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `SaveVideo` —— 2/5 个有
-- `VHS_LoadVideo` —— 2/5 个有
-- `ModelAttentionBackend` —— 1/5 个有
-- `SolAttnMiniMax` —— 1/5 个有
+- `ResolutionSelector` —— 4/5 个有
+- `SaveImageAdvanced` —— 4/5 个有
+- `AnySwitch` —— 1/5 个有
+- `Fast Bypasser (rgthree)` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `MathExpression|pysssss` —— 1/5 个有
+- `Seed Generator` —— 1/5 个有
+- `easy batchAnything` —— 1/5 个有
+- `easy forLoopEnd` —— 1/5 个有
+- `easy forLoopStart` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 | 采样步数 | 4 | 4 - 4 | 5 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
 | 采样算法 | er_sde | - | 5 | 100% |
 | 调度器 | beta | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
@@ -97,11 +69,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，5 个样本，一致性 100%
 - 调度器 最常用 beta，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高发问题（5/5 个样本）：Steps较低可能导致细节不足

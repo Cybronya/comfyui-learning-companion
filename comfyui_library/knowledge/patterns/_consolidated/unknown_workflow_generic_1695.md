@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1695
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.606
-common_nodes: [Comfly_Googel_Veo3, LoadImage, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.6845
+common_nodes: [CR Prompt Text, Comfly_Doubao_Seedream_4, Comfly_api_set, ImageConcanate, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.1 ZOEY 万相图生视频 I2V 液体碰撞溅射_1944992490362691586.json, 视频生成/图生视频/最强图生视频全能视频V3_1965819438404669441.json]
+members: [图片生成/图生图/即梦4.0图像编辑单图4K HD升级版V2（贞贞工坊API版）_1965512821259780098.json, 图片生成/图生图/即梦4.0图像编辑双图4K HD升级版V3（贞贞工坊API版）_1965811870189924354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1695
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.1 ZOEY 万相图生视频 I2V 液体碰撞溅射_1944992490362691586.json、视频生成/图生视频/最强图生视频全能视频V3_1965819438404669441.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/即梦4.0图像编辑单图4K HD升级版V2（贞贞工坊API版）_1965512821259780098.json、图片生成/图生图/即梦4.0图像编辑双图4K HD升级版V3（贞贞工坊API版）_1965811870189924354.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Comfly_Googel_Veo3`
+- `CR Prompt Text`
+- `Comfly_Doubao_Seedream_4`
+- `Comfly_api_set`
+- `ImageConcanate`
 - `LoadImage`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_kling_videoPreview` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
+- `ImageBatch` —— 1/2 个有
+- `PDIMAGE_LongerSize` —— 1/2 个有
 
 ## 典型参数
 

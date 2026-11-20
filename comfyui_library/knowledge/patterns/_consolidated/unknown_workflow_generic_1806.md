@@ -3,39 +3,31 @@ name: unknown_workflow_generic_1806
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8045
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, MossTTSGenerate, MossTTSModelLoader, MossTTSVoiceDesign, SaveAudioMP3, Text]
+coverage: 0.8335
+common_nodes: [RH_SeedreamV4TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/MOSS-TTS 设计声音 音色迁移 声音克隆 情绪克隆 效果逼真_2045081836572905473.json, 音频生成/音频生成/声音设计，声音克隆，音效生成 全家桶 Moss TTS_2076910745689874433.json]
+members: [图片生成/文生图/01豆包_SeedreamV4_文生图+全节点注释_2058540818750853121.json, 图片生成/文生图/SeedreamV4_TextToImage_v4.0_2034593372429623297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1806
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/MOSS-TTS 设计声音 音色迁移 声音克隆 情绪克隆 效果逼真_2045081836572905473.json、音频生成/音频生成/声音设计，声音克隆，音效生成 全家桶 Moss TTS_2076910745689874433.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/01豆包_SeedreamV4_文生图+全节点注释_2058540818750853121.json、图片生成/文生图/SeedreamV4_TextToImage_v4.0_2034593372429623297.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `MossTTSGenerate`
-- `MossTTSModelLoader`
-- `MossTTSVoiceDesign`
-- `SaveAudioMP3`
-- `Text`
+- `RH_SeedreamV4TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `AudioSeparation` —— 1/2 个有
-- `CR Prompt Text` —— 1/2 个有
-- `MossSoundEffectV2Generate` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

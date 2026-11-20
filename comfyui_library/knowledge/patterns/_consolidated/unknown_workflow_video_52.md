@@ -1,43 +1,46 @@
 ---
 name: unknown_workflow_video_52
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.85875
-common_nodes: [VHS_LoadVideo, VHS_VideoCombine, WooshLoadFlow, WooshLoadVideo, WooshSample, WooshTextEncode]
+coverage: 0.542333
+common_nodes: [ImageConcanate, ImageScaleToTotalPixels, PlaySound|pysssss, PreviewImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VHS_LoadVideo, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [音频生成/音频生成/Woosh文本_视频 一键配音_2043887523105083394.json, 音频生成/音频生成/Woosh音效生成_2049036424091013121.json, 音频生成/音频生成/开源音效大模型 Woosh：一键生成拟声音效！_2043511585079037953.json, 音频生成/音频生成/开源音效大模型 Woosh：为视频生成音效_2043928334706413570.json]
+members: [平台全量/SeedVR2 视频放大_2087121102681239554.json, 平台全量/无损图像及视频高清修复-SeedVR2_2014181882765774849.json, 平台全量/无损图像及视频高清修复-SeedVR2_2014885625396207617.json, 平台全量/最强视频高清修复-SeedVR2终极版_2006979234631258114.json, 平台全量/视频高清修复_2008465788222574593.json, 平台全量/视频高清放大 v1_1998206062060822529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_52
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Woosh文本_视频 一键配音_2043887523105083394.json、音频生成/音频生成/Woosh音效生成_2049036424091013121.json、音频生成/音频生成/开源音效大模型 Woosh：一键生成拟声音效！_2043511585079037953.json、音频生成/音频生成/开源音效大模型 Woosh：为视频生成音效_2043928334706413570.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/SeedVR2 视频放大_2087121102681239554.json、平台全量/无损图像及视频高清修复-SeedVR2_2014181882765774849.json、平台全量/无损图像及视频高清修复-SeedVR2_2014885625396207617.json、平台全量/最强视频高清修复-SeedVR2终极版_2006979234631258114.json、平台全量/视频高清修复_2008465788222574593.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `ImageConcanate`
+- `ImageScaleToTotalPixels`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WooshLoadFlow`
-- `WooshLoadVideo`
-- `WooshSample`
-- `WooshTextEncode`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `PreviewAudio` —— 3/4 个有
-- `SaveAudio` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
-- `RH_Translator` —— 2/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `YC_ShowText` —— 1/4 个有
+- `GetNode` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 2/6 个有
+- `LoadImage` —— 2/6 个有
+- `SaveImage` —— 2/6 个有
 
 ## 典型参数
 

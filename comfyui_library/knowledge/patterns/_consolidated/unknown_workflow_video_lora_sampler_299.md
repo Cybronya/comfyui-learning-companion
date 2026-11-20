@@ -1,85 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_299
 type: Unknown Workflow
-frequency: 8
-level: weak
-coverage: 0.752
-common_nodes: [CFGGuider, CLIPTextEncode, CreateVideo, Dapao_LlamaCaption, Dapao_LlamaCaptionOptions, EmptyLTXVLatentVideo, GetVideoComponents, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, RegexReplace, SamplerCustomAdvanced, VAEDecode, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+frequency: 9
+level: moderate
+coverage: 0.878444
+common_nodes: [CLIPVisionLoader, CR Text, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Ltx2.3 Licon-MSR  慢镜头用（可惜只能人类写实）_2069279414692704257.json, 视频生成/图生视频/Ltx2.3 Licon-MSR-全能参考生视频_2068903513152909314.json, 视频生成/图生视频/Ltx2.3 Licon-MSR-全能参考生视频_2069328807546417154.json, 视频生成/图生视频/Ltx2.3 Licon-MSR-全能参考生视频正式版V1-自动提示词版-高帧率-高动态-去字幕_2064345849135722497.json, 视频生成/图生视频/Ltx2.3 Licon-MSR-全能参考生视频正式版V1-自动提示词版-高帧率-高动态-去字幕_2064359460616884226.json, 视频生成/图生视频/Ltx2.3 Licon-MSR-全能参考生视频正式版V1-自动提示词版-高帧率-高动态_2064002512151212034.json, 视频生成/图生视频/Ltx2.3+Licon-MSR-全能参考生视频_2069219281786720258.json, 视频生成/图生视频/Ltx2.3+Licon-MSR-全能参考生视频_2069991614805798913.json]
+members: [图片生成/反推提示词/MiniCPM4.5视频反推提示词+图生视频_1966696077435056130.json, 图片生成/反推提示词/MiniCPM4.5视频反推提示词_2072539419097264129.json, 图片生成/反推提示词/MiniCPM4.5视频反推提示词_2072540868833267714.json, 图片生成/反推提示词/MiniCPM4.5视频反推提示词_2072550656325537793.json, 视频生成/图生视频/WAN2.2图生视频(更新优化版）_2019998989524934657.json, 视频生成/图生视频/Wan2.2图生视频（优化版）_2067174890066763778.json, 视频生成/图生视频/Wan2.2首尾帧工作流_1976854157967740929.json, 视频生成/图生视频/发布Wan2.2图生视频——优化版_1983835133948174337.json, 视频生成/文生视频/MiniCPM4.5视频反推+图生视频+文生视频_2003004980099465217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_299
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Ltx2.3 Licon-MSR  慢镜头用（可惜只能人类写实）_2069279414692704257.json、视频生成/图生视频/Ltx2.3 Licon-MSR-全能参考生视频_2068903513152909314.json、视频生成/图生视频/Ltx2.3 Licon-MSR-全能参考生视频_2069328807546417154.json、视频生成/图生视频/Ltx2.3 Licon-MSR-全能参考生视频正式版V1-自动提示词版-高帧率-高动态-去字幕_2064345849135722497.json、视频生成/图生视频/Ltx2.3 Licon-MSR-全能参考生视频正式版V1-自动提示词版-高帧率-高动态-去字幕_2064359460616884226.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/MiniCPM4.5视频反推提示词+图生视频_1966696077435056130.json、图片生成/反推提示词/MiniCPM4.5视频反推提示词_2072539419097264129.json、图片生成/反推提示词/MiniCPM4.5视频反推提示词_2072540868833267714.json、图片生成/反推提示词/MiniCPM4.5视频反推提示词_2072550656325537793.json、视频生成/图生视频/WAN2.2图生视频(更新优化版）_2019998989524934657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CreateVideo`
-- `Dapao_LlamaCaption`
-- `Dapao_LlamaCaptionOptions`
-- `EmptyLTXVLatentVideo`
-- `GetVideoComponents`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LiconMSR`
+全部 9 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `CR Text`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `ManualSigmas`
-- `RandomNoise`
-- `RegexReplace`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveInt`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 - `easy cleanGpuUsed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 7/8 个有
-- `VAELoaderKJ` —— 7/8 个有
-- `CheckpointLoaderSimple` —— 5/8 个有
-- `GuHaiAutoImageSplit` —— 5/8 个有
-- `MathExpression|pysssss` —— 5/8 个有
-- `PrimitiveInt` —— 5/8 个有
-- `PrimitiveStringMultiline` —— 5/8 个有
-- `SaveImage` —— 5/8 个有
-- `StringConcatenate` —— 5/8 个有
-- `CR Prompt Text` —— 3/8 个有
-- `Float` —— 3/8 个有
-- `GetNode` —— 3/8 个有
-- `Int` —— 3/8 个有
-- `LTXICLoRALoaderModelOnly` —— 3/8 个有
-- `LowVRAMCheckpointLoader` —— 3/8 个有
-- `MultiTextConcatenate` —— 3/8 个有
-- `RH_LLMAPI_Pro_Node` —— 3/8 个有
-- `SetNode` —— 3/8 个有
-- `SimpleMath+` —— 3/8 个有
-- `孤海注释` —— 3/8 个有
-- `DualCLIPLoader` —— 2/8 个有
+- `ShowText|pysssss` —— 8/9 个有
+- `WanVideoTorchCompileSettings` —— 8/9 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/9 个有
+- `INTConstant` —— 5/9 个有
+- `ImageFromBatch+` —— 5/9 个有
+- `LoadVideo` —— 5/9 个有
+- `SaveImage` —— 5/9 个有
+- `ShellAgentPluginOutputText` —— 5/9 个有
+- `WanVideoEmptyEmbeds` —— 5/9 个有
+- `Wan_video_prompt_generator` —— 5/9 个有
+- `AILab_QwenVL` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 241 | 8 | 54% |
-| 高度 | 25 | 25 - 50 | 8 | 65% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -87,5 +68,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 241，8 个样本
-- 高度 中位数 25，观测区间 25 - 50，8 个样本
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

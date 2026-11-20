@@ -3,34 +3,50 @@ name: unknown_workflow_generic_1114
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.830667
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.745
+common_nodes: [Bjornulf_ShowInt, CompressImages, ConstrainImage|pysssss, Fast Groups Bypasser (rgthree), ImageListToBatch_, Int, JjkText, PreviewImage, ProcessString, RHBatchImages:, RHExtractImage, RHUploadZip, RH_Nano_Banana2_Image2Image, SaveImage, easy forLoopEnd, easy forLoopStart, easy imageCount, easy promptLine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Kling O3 Pro参考生视频工作流｜角色一致性参考生视频_2099453250490691586.json, 视频生成/图生视频/Kling O3 Pro图生视频工作流｜可灵 O3 旗舰图生视频_2099453238016831489.json, 视频生成/图生视频/Kling_O3ProImageReferenceToVideo_v3_2058854531957612545.json]
+members: [图片生成/图生图/AIGC批量处理底图_2020703649630003201.json, 图片生成/图生图/AIGC批量处理底图（社媒）_2025567100470824962.json, 图片生成/图生图/AIGC批量洗图（场景）_2027213759646797825.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1114
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Kling O3 Pro参考生视频工作流｜角色一致性参考生视频_2099453250490691586.json、视频生成/图生视频/Kling O3 Pro图生视频工作流｜可灵 O3 旗舰图生视频_2099453238016831489.json、视频生成/图生视频/Kling_O3ProImageReferenceToVideo_v3_2058854531957612545.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/AIGC批量处理底图_2020703649630003201.json、图片生成/图生图/AIGC批量处理底图（社媒）_2025567100470824962.json、图片生成/图生图/AIGC批量洗图（场景）_2027213759646797825.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+- `Bjornulf_ShowInt`
+- `CompressImages`
+- `ConstrainImage|pysssss`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageListToBatch_`
+- `Int`
+- `JjkText`
+- `PreviewImage`
+- `ProcessString`
+- `RHBatchImages:`
+- `RHExtractImage`
+- `RHUploadZip`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy imageCount`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 2/3 个有
-- `RH_KlingVideoO3ProImageToVideo` —— 2/3 个有
-- `RH_KlingVideoO3ProReferenceToVideo` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `LoadImage` —— 2/3 个有
+- `SDVN Menu Option` —— 2/3 个有
+- `Text Multiline` —— 2/3 个有
 
 ## 典型参数
 

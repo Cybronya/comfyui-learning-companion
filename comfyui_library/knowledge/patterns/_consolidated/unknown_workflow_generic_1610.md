@@ -3,17 +3,17 @@ name: unknown_workflow_generic_1610
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.625
-common_nodes: [CR Text, LoadImage, SaveImage]
+coverage: 0.6215
+common_nodes: [DF_Integer, Image Comparer (rgthree), ImageResize+, Int, KuwaharaBlur, LoadImage, RHHiddenNodes, SaveImage, easy boolean, easy ifElse]
 problems: []
 missing: []
-members: [图片生成/文生图/Seedream-V5-Lite-文生图 工作流+全节点注释_2076249045282156546.json, 图片生成/文生图/image-2.5文生图 极速版image2.5_全能图片G2.5_全能图片G image2.5+全节点注释_2097918475661561858.json]
+members: [图片生成/图生图/SeedVR2放大终章_2065788893877858305.json, 图片生成/图生图/SeedVR2放大终章_2069068701252546561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1610
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Seedream-V5-Lite-文生图 工作流+全节点注释_2076249045282156546.json、图片生成/文生图/image-2.5文生图 极速版image2.5_全能图片G2.5_全能图片G image2.5+全节点注释_2097918475661561858.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2放大终章_2065788893877858305.json、图片生成/图生图/SeedVR2放大终章_2069068701252546561.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,13 +23,16 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
+- `DF_Integer`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `Int`
+- `KuwaharaBlur`
 - `LoadImage`
+- `RHHiddenNodes`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25OfficialTokenFlareTextToImage` —— 1/2 个有
-- `RH_SeedreamV5LiteTextToImage` —— 1/2 个有
+- `easy boolean`
+- `easy ifElse`
 
 ## 典型参数
 

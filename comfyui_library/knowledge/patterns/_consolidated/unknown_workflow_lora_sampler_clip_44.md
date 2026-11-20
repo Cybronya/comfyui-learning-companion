@@ -1,84 +1,66 @@
 ---
 name: unknown_workflow_lora_sampler_clip_44
 type: Unknown Workflow
-frequency: 9
-level: moderate
-coverage: 0.927333
-common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Florence2ModelLoader, Florence2Run, FluxGuidance, KSamplerSelect, LoadImage, LoraLoader, MaskToSEGS, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SEGSPreview, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 10
+level: strong
+coverage: 0.9257
+common_nodes: [ApplyDreamO, CLIPTextEncode, DreamOProcessorLoader, DreamORefEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/3D Pixar 皮克斯风格头像_1910151890116771841.json, 图片生成/图生图/4格动漫表情包生成 Flux 卡通人物_1921028630795714561.json, 图片生成/图生图/Airbnb 同款 3D 拟物图标_1926835855200260098.json, 图片生成/图生图/【最新】一键生成卡通3D收藏娃娃_1914669593783402497.json, 图片生成/图生图/一键雕琢精致商业图标v1.0_1911401582112768002.json, 图片生成/图生图/上传图片｜一键卡通可爱四宫格漫画_1913221382929379329.json, 图片生成/图生图/全能图片G-4o真人转水晶球摆件V2_1916741073857609730.json, 图片生成/图生图/定制人像专属冰箱贴_2023641529029496833.json, 图片生成/图生图/真人转全能图片G-4o卡通3D盲盒手办套装_1916399661408784386.json]
+members: [图片生成/图生图/Dream o 真人穿动漫角色衣服_1929070963315609601.json, 图片生成/图生图/DreamO 官方急速版_1929981652209143809.json, 图片生成/图生图/DreamO-1.1单图参考_风格迁移_1938231620748906498.json, 图片生成/图生图/DreamO-1.1多图参考_风格一致性迁移_1938241613502283778.json, 图片生成/图生图/dreamo_comfyui_v1.1_1938194559962628097.json, 图片生成/图生图/【极速版】DreamO图像编辑（1分钟出图）_1930877725429399554.json, 图片生成/图生图/和拉布布合影-DreamO_1928569169275658241.json, 图片生成/文生图/DreamO官方10秒加速_IP&ID&Try-On和Style轻松搞定_字节开源服装一致性_1931254643706540033.json, 平台全量/DreamO IP_ID_Style 人物一致性、图片融合、虚拟试穿_1930793616732827650.json, 平台全量/DreamO1.1官方10秒加速_IP&ID&Try-On和Style轻松搞定_字节开源服装一致性_1928807838402121730.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_44
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/3D Pixar 皮克斯风格头像_1910151890116771841.json、图片生成/图生图/4格动漫表情包生成 Flux 卡通人物_1921028630795714561.json、图片生成/图生图/Airbnb 同款 3D 拟物图标_1926835855200260098.json、图片生成/图生图/【最新】一键生成卡通3D收藏娃娃_1914669593783402497.json、图片生成/图生图/一键雕琢精致商业图标v1.0_1911401582112768002.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Dream o 真人穿动漫角色衣服_1929070963315609601.json、图片生成/图生图/DreamO 官方急速版_1929981652209143809.json、图片生成/图生图/DreamO-1.1单图参考_风格迁移_1938231620748906498.json、图片生成/图生图/DreamO-1.1多图参考_风格一致性迁移_1938241613502283778.json、图片生成/图生图/dreamo_comfyui_v1.1_1938194559962628097.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：中等可信
+- **样本数**：10
+- **可信度**：强结论
 - **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BasicGuider`
-- `BasicScheduler`
+全部 10 个 workflow 都包含：
+- `ApplyDreamO`
 - `CLIPTextEncode`
+- `DreamOProcessorLoader`
+- `DreamORefEncode`
 - `DualCLIPLoader`
-- `EmptyLatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
 - `FluxGuidance`
-- `KSamplerSelect`
+- `KSampler`
 - `LoadImage`
-- `LoraLoader`
-- `MaskToSEGS`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `RandomNoise`
-- `SEGSPreview`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy cleanGpuUsed` —— 8/9 个有
-- `LayerUtility: TextJoin` —— 6/9 个有
-- `ModelSamplingFlux` —— 6/9 个有
-- `SDXLAspectRatioSelector` —— 6/9 个有
-- `ConstrainImage|pysssss` —— 5/9 个有
-- `ShowText|pysssss` —— 5/9 个有
-- `easy showAnything` —— 5/9 个有
-- `CR Text` —— 3/9 个有
-- `FluxResolutionNode` —— 3/9 个有
-- `JanusImageUnderstanding` —— 3/9 个有
-- `JanusModelLoader` —— 3/9 个有
-- `JjkText` —— 3/9 个有
-- `PreviewImage` —— 3/9 个有
-- `RH_Captioner` —— 3/9 个有
-- `Text _O` —— 3/9 个有
-- `TextCombinerTwo` —— 3/9 个有
-- `DownloadAndLoadFlorence2Model` —— 2/9 个有
-- `ImageUpscaleWithModel` —— 2/9 个有
-- `Note Plus (mtb)` —— 2/9 个有
-- `UpscaleModelLoader` —— 2/9 个有
-- `RH_Prompter` —— 1/9 个有
-- `RH_Translator` —— 1/9 个有
+- `PreviewImage` —— 8/10 个有
+- `CR SDXL Aspect Ratio` —— 5/10 个有
+- `EmptySD3LatentImage` —— 5/10 个有
+- `ImageConcanate` —— 5/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/10 个有
+- `ImageScaleDownToSize` —— 3/10 个有
+- `ImageConcatMulti` —— 2/10 个有
+- `RH_Translator` —— 2/10 个有
+- `Anything Everywhere3` —— 1/10 个有
+- `ConditioningZeroOut` —— 1/10 个有
+- `DeepTranslatorTextNode` —— 1/10 个有
+- `LayerUtility: TextBox` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 832 | 768 - 832 | 9 | 96% |
-| 高度 | 1216 | 1024 - 1216 | 9 | 92% |
-| LoRA 模型强度 | 1 | 0.2 - 1 | 9 | 69% |
-| LoRA 文本强度 | 1 | 0.2 - 1 | 9 | 71% |
+| 采样步数 | 12 | 12 - 30 | 10 | 62% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
@@ -86,7 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 832，观测区间 768 - 832，9 个样本，取值集中（一致性 96%）
-- 高度 中位数 1216，观测区间 1024 - 1216，9 个样本，取值集中（一致性 92%）
-- LoRA 模型强度 中位数 1，观测区间 0.2 - 1，9 个样本
-- LoRA 文本强度 中位数 1，观测区间 0.2 - 1，9 个样本
+- 采样步数 中位数 12，观测区间 12 - 30，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）

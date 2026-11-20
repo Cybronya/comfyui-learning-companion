@@ -1,109 +1,116 @@
 ---
 name: text_to_image_video_lora_sampler_86
 type: Text To Image
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.775333
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, EmptyLatentImage, GetImageRangeFromBatch, GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, Int, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, solarL_SaveImagesToZip]
+coverage: 0.6555
+common_nodes: [CLIPLoader, CLIPTextEncode, ColorMatch, EmptyLatentImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageFromBatch, ImageResizeKJ, ImpactSwitch, JjkText, KSampler, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, PreviewImage, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, SetNode, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/人物动作完美迁移｜SteadyDancer创意形象生成_2091220370769666050.json, 图片生成/图生图/人物动作完美迁移｜SteadyDancer角色设计生成_2090905693795737601.json, 视频生成/图生视频/SteadDancer动作迁移2.0_支持动漫人物一致性加强10秒以上_2109098445825990657.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞骨骼迁移不限时长_2106157070495080450.json, 视频生成/图生视频/SteadyDancer动作迁移不限时长 单人跳舞表情复刻视频生成_2104767103415963649.json, 视频生成/图生视频/SteadyDancer动作迁移不限时长版｜表情复刻单人跳舞，舞姿神还原_2107334075940958210.json, 视频生成/图生视频/SteadyDancer单人跳舞动作迁移｜不限时长版表情复刻，视频生视频_2104525759527350274.json, 视频生成/图生视频/SteadyDancer骨骼迁移不限时长｜单人跳舞动物跳舞动作生成_2096710822365057025.json, 视频生成/图生视频/SteadyDancer骨骼迁移跳舞视频｜小猫小狗多人不限时长_2105832688631508994.json]
+members: [视频生成/图生视频/30秒整条视频一键复刻｜Wan2.2动作迁移真实度拉满图生视频_2092135573669629954.json, 视频生成/图生视频/Wan2.2动作迁移30s复刻｜整条视频一键操作真实度拉满_2089492438435065857.json, 视频生成/图生视频/Wan2.2动作迁移30秒整条视频复刻 真实度拉满一键操作图生视频_2089707963748540418.json, 视频生成/图生视频/Wan2.2动作迁移30秒整条视频复刻 真实度拉满一键操作图生视频_2092133210959466497.json, 视频生成/图生视频/Wan2.2动作迁移单次复刻30s｜整条视频一键真实度拉满_2095127512291565569.json, 视频生成/图生视频/Wan2.2单次复刻30秒时长｜动作迁移整条视频一键真实度拉满_2092005020848971778.json, 视频生成/图生视频/wan2.2动作迁移打造真实感视频 真人级动作复刻效果_2094816106904113154.json, 视频生成/图生视频/真实度拉满动作迁移：整条视频一键操作时长！Wan2.230s单次复刻_2087304945753214978.json, 视频生成/图生视频/真实感动作迁移｜wan2.2图生视频一键生成_2092165775426674689.json, 视频生成/文生视频/V2视频换背景｜文生视频视频生视频替换生成_2092171934913097729.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_86
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/人物动作完美迁移｜SteadyDancer创意形象生成_2091220370769666050.json、图片生成/图生图/人物动作完美迁移｜SteadyDancer角色设计生成_2090905693795737601.json、视频生成/图生视频/SteadDancer动作迁移2.0_支持动漫人物一致性加强10秒以上_2109098445825990657.json、视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞骨骼迁移不限时长_2106157070495080450.json、视频生成/图生视频/SteadyDancer动作迁移不限时长 单人跳舞表情复刻视频生成_2104767103415963649.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/30秒整条视频一键复刻｜Wan2.2动作迁移真实度拉满图生视频_2092135573669629954.json、视频生成/图生视频/Wan2.2动作迁移30s复刻｜整条视频一键操作真实度拉满_2089492438435065857.json、视频生成/图生视频/Wan2.2动作迁移30秒整条视频复刻 真实度拉满一键操作图生视频_2089707963748540418.json、视频生成/图生视频/Wan2.2动作迁移30秒整条视频复刻 真实度拉满一键操作图生视频_2092133210959466497.json、视频生成/图生视频/Wan2.2动作迁移单次复刻30s｜整条视频一键真实度拉满_2095127512291565569.json…）
 
 - **类型**：Text To Image
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
+- `ColorMatch`
 - `EmptyLatentImage`
-- `GetImageRangeFromBatch`
 - `GetImageSizeAndCount`
+- `GetNode`
 - `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `Int`
+- `ImageFromBatch`
+- `ImageResizeKJ`
+- `ImpactSwitch`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `OnnxDetectionModelLoader`
 - `PreviewImage`
+- `Primitive integer [Crystools]`
+- `RHHiddenNodes`
+- `RH_Captioner`
+- `SetNode`
+- `ShowText|pysssss`
+- `SimpleMath+`
+- `Text Concatenate`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoScheduler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PoseDetectionOneToAllAnimation` —— 8/9 个有
-- `TextInput_` —— 8/9 个有
-- `孤海注释` —— 8/9 个有
-- `GetNode` —— 7/9 个有
-- `SetNode` —— 7/9 个有
-- `SaveImage` —— 2/9 个有
-- `DF_Int_to_Float` —— 1/9 个有
-- `DrawViTPose` —— 1/9 个有
-- `EmptyImage` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
-- `MathExpression|pysssss` —— 1/9 个有
-- `PoseAndFaceDetection` —— 1/9 个有
-- `RH_Sora2_I2V` —— 1/9 个有
-- `Text` —— 1/9 个有
-- `WanVideoBlockSwap` —— 1/9 个有
-- `WanVideoSetBlockSwap` —— 1/9 个有
-- `WanVideoTorchCompileSettings` —— 1/9 个有
-- `easy setNode` —— 1/9 个有
+- `ControlNextGetPoses` —— 9/10 个有
+- `ImageResizeKJv2` —— 9/10 个有
+- `Int` —— 9/10 个有
+- `Primitive float [Crystools]` —— 9/10 个有
+- `VHS_VideoInfoLoaded` —— 9/10 个有
+- `WanVideoBlockSwap` —— 9/10 个有
+- `WanVideoControlEmbeds` —— 9/10 个有
+- `WanVideoEncode` —— 9/10 个有
+- `WanVideoImageToVideoEncode` —— 9/10 个有
+- `WanVideoSetLoRAs` —— 9/10 个有
+- `WanVideoTorchCompileSettings` —— 9/10 个有
+- `GetImageRangeFromBatch` —— 7/10 个有
+- `ImageBatchMulti` —— 7/10 个有
+- `RepeatImageBatch` —— 7/10 个有
+- `easy forLoopEnd` —— 7/10 个有
+- `easy forLoopStart` —— 7/10 个有
+- `easy showAnything` —— 7/10 个有
+- `WanVideoSetBlockSwap` —— 2/10 个有
+- `EmptyImage` —— 1/10 个有
+- `LayerUtility: ImageBlend` —— 1/10 个有
+- `WanVideoEnhanceAVideo` —— 1/10 个有
+- `WanVideoExperimentalArgs` —— 1/10 个有
+- `WanVideoVACEEncode` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 10 | 100% |
+| 高度 | 80 | 80 - 80 | 10 | 100% |
+| 采样步数 | 4 | 4 - 4 | 10 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
+| 采样算法 | er_sde | - | 10 | 100% |
+| 调度器 | beta | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，10 个样本，一致性 100%
+- 调度器 最常用 beta，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

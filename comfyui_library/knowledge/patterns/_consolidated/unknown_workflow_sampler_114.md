@@ -3,41 +3,43 @@ name: unknown_workflow_sampler_114
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.917
-common_nodes: [LongCatVoiceCloneTTS, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioAdvanced]
+coverage: 0.8575
+common_nodes: [CR Prompt Text, CR Text, ImageScaleToTotalPixels, LayerUtility: PurgeVRAM, LoadImage, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, Qwen3_VQA, SaveAudio, easy saveText, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/简单换单词_2072195152751456258.json, 音频生成/音频生成/简单换单词v2_2084900520828952577.json]
+members: [数字人/数字人/AA--全自动超快数字人-FlashHead+Qwen声音设计-一张图自动反推-数字人抽卡！_2030589859588476930.json, 音频生成/音频生成/AA--图生声音--自动反推Qwen3TTS声音设计--抽（声音）卡！_2017627896218656769.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_114
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/简单换单词_2072195152751456258.json、音频生成/音频生成/简单换单词v2_2084900520828952577.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/AA--全自动超快数字人-FlashHead+Qwen声音设计-一张图自动反推-数字人抽卡！_2030589859588476930.json、音频生成/音频生成/AA--图生声音--自动反推Qwen3TTS声音设计--抽（声音）卡！_2017627896218656769.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LongCatVoiceCloneTTS`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAny`
-- `PreviewAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioAdvanced`
+- `CR Prompt Text`
+- `CR Text`
+- `ImageScaleToTotalPixels`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `Qwen3_VQA`
+- `SaveAudio`
+- `easy saveText`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioAdjustVolume` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `LoadAudioUI` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
+- `RunningHub SoulX-FlashHead Loader` —— 1/2 个有
+- `RunningHub SoulX-FlashHead Sampler` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

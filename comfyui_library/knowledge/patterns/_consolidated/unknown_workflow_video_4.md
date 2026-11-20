@@ -1,37 +1,41 @@
 ---
 name: unknown_workflow_video_4
 type: Unknown Workflow
-frequency: 10
+frequency: 16
 level: moderate
-coverage: 0.9381
-common_nodes: [LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, VideoLengthAdjuster]
+coverage: 0.816562
+common_nodes: [DepthCrafter, DownloadAndLoadDepthCrafterModel, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092548570334457857.json, 数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092562570455642113.json, 数字人/数字人/【老金驿站】latentsync1.5语音完美口型工作流_1901881309147635713.json, 数字人/数字人/视频数字人LatentSync 1.6，可说话可唱歌_1949282157731688450.json, 数字人/数字人/视频生成视频-latentsync数字人对口型唱歌_1909469883543728130.json, 视频生成/图生视频/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_1948969805475454977.json, 视频生成/图生视频/LatentSync 1.6数字人_1945362805107380226.json, 视频生成/图生视频/latentsync1.5_comfyui 升级版_1920521847933173762.json, 音频生成/音频生成/视频生数字人_1988266076419088385.json, 音频生成/音频生成/音频推动视频生成数字人加强latentsync1.5_1929185483350511617.json]
+members: [图片生成/文生图/视频转深度视频素材+全节点注释_2116150501166374913.json, 平台全量/33号特工：DepthCrafter黑白深度视频制作，可用于H3等动作迁移_2095783001841033217.json, 平台全量/depth maps深度图视频制作DepthCrafter视频转深度视频深度图白模视频h3s参考视频_2097263782996303874.json, 平台全量/depth maps深度图视频制作DepthCrafter视频转深度视频深度图白模视频h3s参考视频_2103080269875081217.json, 平台全量/depth maps深度图视频制作DepthCrafter视频转深度视频深度图白模视频h3s参考视频_2103087316616175618.json, 平台全量/深度图视频制作_2106025161253285890.json, 平台全量/视频转深度视频_2092132639607185410.json, 平台全量/视频转深度视频素材_2090117319568744449.json, 平台全量/视频转深度视频素材_2093428786497941505.json, 平台全量/视频转深度视频素材_2100753835684884482.json, 平台全量/视频转深度视频素材_2101123081556283393.json, 平台全量/转深度图视频-爆款复刻的前提操作_2099782857597218818.json, 平台全量/转深度图视频-爆款复刻的前提操作_2100394664716230658.json, 平台全量/转深度图视频-爆款复刻的前提操作_2100426040500899841.json, 视频生成/图生视频/视频转深度视频素材+全节点注释_2082953986570809346.json, 视频生成/图生视频/视频转深度视频素材+全节点注释_2116357929149489154.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_4
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092548570334457857.json、数字人/数字人/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_2092562570455642113.json、数字人/数字人/【老金驿站】latentsync1.5语音完美口型工作流_1901881309147635713.json、数字人/数字人/视频数字人LatentSync 1.6，可说话可唱歌_1949282157731688450.json、数字人/数字人/视频生成视频-latentsync数字人对口型唱歌_1909469883543728130.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/视频转深度视频素材+全节点注释_2116150501166374913.json、平台全量/33号特工：DepthCrafter黑白深度视频制作，可用于H3等动作迁移_2095783001841033217.json、平台全量/depth maps深度图视频制作DepthCrafter视频转深度视频深度图白模视频h3s参考视频_2097263782996303874.json、平台全量/depth maps深度图视频制作DepthCrafter视频转深度视频深度图白模视频h3s参考视频_2103080269875081217.json、平台全量/depth maps深度图视频制作DepthCrafter视频转深度视频深度图白模视频h3s参考视频_2103087316616175618.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LatentSyncNode`
-- `LoadAudio`
+全部 16 个 workflow 都包含：
+- `DepthCrafter`
+- `DownloadAndLoadDepthCrafterModel`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VideoLengthAdjuster`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 4/10 个有
-- `孤海注释` —— 1/10 个有
+- `CR Text` —— 8/16 个有
+- `Int` —— 8/16 个有
+- `ImageConcanate` —— 5/16 个有
+- `LoadImage` —— 4/16 个有
+- `孤海注释` —— 4/16 个有
+- `SimpleMath+` —— 3/16 个有
 
 ## 典型参数
 

@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_355
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.810143
-common_nodes: [ChordLoadModel, ChordMaterialEstimation, ChordNormalToHeight, LoadImage, SaveImage]
+coverage: 0.973
+common_nodes: [LoadImage, RHHiddenNodes, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Chord Ubisoft PBR materials by 😎 iiMate24_2064893481834868737.json, 图片生成/图生图/Chord_2078351825794854914.json, 图片生成/图生图/PBR材质生成 模型贴图生成 育碧开源CHORD模型 图生图_1998986890256732161.json, 图片生成/图生图/Ubisoft-PBR Material Generation_2018280854061064194.json, 图片生成/图生图/一键PBR贴图生成器_2046488451918340097.json, 图片生成/图生图/贴图_2018126072302276610.json, 图片生成/图生图/贴图_2102323852033478658.json]
+members: [图片生成/图生图/【色卡资产】全能图片G2.0-图生图_2093130298342068225.json, 图片生成/图生图/【茗翠Ai】IP设计：单图生成六视图（工作流版）_1949887349128871938.json, 图片生成/图生图/一致性套图工作流_1995529241385172994.json, 图片生成/图生图/一键生成一致性模特套图工作流_2042682534282141698.json, 图片生成/图生图/一键电商主图+详情页工作流 260708_2074710783505813506.json, 图片生成/图生图/全能图片G-image2一键剧本到漫剧故事板_2074773182019629058.json, 图片生成/图生图/电商白底图（服装类产品细节）260708_2074719072713007105.json, 平台全量/一键快速换装各种服装都可以换无需手动遮罩_2008839606137004034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_355
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Chord Ubisoft PBR materials by 😎 iiMate24_2064893481834868737.json、图片生成/图生图/Chord_2078351825794854914.json、图片生成/图生图/PBR材质生成 模型贴图生成 育碧开源CHORD模型 图生图_1998986890256732161.json、图片生成/图生图/Ubisoft-PBR Material Generation_2018280854061064194.json、图片生成/图生图/一键PBR贴图生成器_2046488451918340097.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【色卡资产】全能图片G2.0-图生图_2093130298342068225.json、图片生成/图生图/【茗翠Ai】IP设计：单图生成六视图（工作流版）_1949887349128871938.json、图片生成/图生图/一致性套图工作流_1995529241385172994.json、图片生成/图生图/一键生成一致性模特套图工作流_2042682534282141698.json、图片生成/图生图/一键电商主图+详情页工作流 260708_2074710783505813506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `ChordLoadModel`
-- `ChordMaterialEstimation`
-- `ChordNormalToHeight`
+全部 8 个 workflow 都包含：
 - `LoadImage`
+- `RHHiddenNodes`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/7 个有
-- `CR Text` —— 2/7 个有
-- `PreviewImage` —— 2/7 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 2/7 个有
-- `EmptyImage` —— 1/7 个有
+- `CR Prompt Text` —— 5/8 个有
+- `RH_RhartImageG2ImageToImage` —— 4/8 个有
+- `DapaoImageSplitNode` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `MultiTextConcatenate` —— 1/8 个有
 
 ## 典型参数
 

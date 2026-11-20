@@ -1,60 +1,51 @@
 ---
 name: unknown_workflow_inpaint_sampler_unet_5
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.571
-common_nodes: [CFGGuider, CLIPLoader, Flux2Scheduler, GetImageSize, GetNode, GrowMaskWithBlur, Image Comparer (rgthree), ImageBatchToList, ImpactInt, InpaintCropImproved, InpaintStitchImproved, KSamplerSelect, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskFillHoles, PainterFluxImageEdit, RandomNoise, RepeatLatentBatch, SamplerCustomAdvanced, SaveImage, SetNode, Text, UNETLoader, VAEDecode, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.928667
+common_nodes: [CLIPVisionLoader, DualCLIPLoader, GetImageSize_, ImageCrop, InpaintStitch, KSampler, LoadImage, RHHiddenNodes, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX.2 模特换装遮罩版，ComfyUI 换衣_换鞋通用，可换内衣_2084887226533629954.json, 图片生成/图生图/FLUX.2_模特换装遮罩版，一键换衣_换鞋通用_2085630087579389954.json, 图片生成/图生图/FLUX.2_模特换装遮罩版，一键换衣_换鞋通用_2085639692602658817.json]
+members: [图片生成/图生图/一致性模特换装_1988483341580197889.json, 图片生成/图生图/一致性模特换装_2021474834798092290.json, 图片生成/图生图/一致性模特换装_2076942948255748098.json, 平台全量/一致性模特换装_1863215114475253761.json, 平台全量/一致性模特换装【快速redux参考不需要遮罩】_1931522972912431105.json, 平台全量/（电商版换装）100%相似度高融合_1915297733916164098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_unet_5
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX.2 模特换装遮罩版，ComfyUI 换衣_换鞋通用，可换内衣_2084887226533629954.json、图片生成/图生图/FLUX.2_模特换装遮罩版，一键换衣_换鞋通用_2085630087579389954.json、图片生成/图生图/FLUX.2_模特换装遮罩版，一键换衣_换鞋通用_2085639692602658817.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/一致性模特换装_1988483341580197889.json、图片生成/图生图/一致性模特换装_2021474834798092290.json、图片生成/图生图/一致性模特换装_2076942948255748098.json、平台全量/一致性模特换装_1863215114475253761.json、平台全量/一致性模特换装【快速redux参考不需要遮罩】_1931522972912431105.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `Image Comparer (rgthree)`
-- `ImageBatchToList`
-- `ImpactInt`
-- `InpaintCropImproved`
-- `InpaintStitchImproved`
-- `KSamplerSelect`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerUtility: CropByMask V2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 6 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `GetImageSize_`
+- `ImageCrop`
+- `InpaintStitch`
+- `KSampler`
 - `LoadImage`
-- `MaskFillHoles`
-- `PainterFluxImageEdit`
-- `RandomNoise`
-- `RepeatLatentBatch`
-- `SamplerCustomAdvanced`
+- `RHHiddenNodes`
 - `SaveImage`
-- `SetNode`
-- `Text`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -62,4 +53,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

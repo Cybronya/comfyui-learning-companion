@@ -1,72 +1,87 @@
 ---
 name: text_to_image_inpaint_sampler_clip_3
 type: Text To Image
-frequency: 3
-level: moderate
-coverage: 0.696667
-common_nodes: [CLIPLoaderGGUF, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, GetNode, GrowMaskWithBlur, InpaintModelConditioning, KSampler, LoadImage, SaveImage, SetNode, UnetLoaderGGUF, VAEDecode, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.76575
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, DetailerForEach, EmptyLatentImage, GetNode, Image Comparer (rgthree), ImageResize+, ImpactSwitch, KSampler, LayerMask: MaskGrow, LayerMask: MaskPreview, LayerUtility: ImageBlendAdvance, LoadImage, MZ_ChatGLM3Loader, MZ_ChatGLM3_V2, MZ_KolorsUNETLoaderV2, Mask Invert, MaskPreview+, MaskToSEGS, PreviewImage, SaveImage, SetNode, VAEDecode, VAEEncodeForInpaint, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image 文生图+局部重绘+CN控制 汇总_1995296468326080514.json, 图片生成/文生图/Z-image 文生图+局部重绘_1995283943396139010.json, 图片生成/文生图/Z-image系列 文生图+CN2控制+重绘_2001079224679231490.json]
+members: [平台全量/Kolors模型局部重绘_1821071450840150017.json, 平台全量/Kolors模型局部重绘_1848929035710611458.json, 平台全量/人像换背景_1833023390457487361.json, 平台全量/高精度人物换背景溶图_1915076276024184834.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_inpaint_sampler_clip_3
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Z-image 文生图+局部重绘+CN控制 汇总_1995296468326080514.json、图片生成/文生图/Z-image 文生图+局部重绘_1995283943396139010.json、图片生成/文生图/Z-image系列 文生图+CN2控制+重绘_2001079224679231490.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Kolors模型局部重绘_1821071450840150017.json、平台全量/Kolors模型局部重绘_1848929035710611458.json、平台全量/人像换背景_1833023390457487361.json、平台全量/高精度人物换背景溶图_1915076276024184834.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoaderGGUF`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
+- `CheckpointLoaderSimple`
+- `DetailerForEach`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
 - `GetNode`
-- `GrowMaskWithBlur`
-- `InpaintModelConditioning`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImpactSwitch`
 - `KSampler`
+- `LayerMask: MaskGrow`
+- `LayerMask: MaskPreview`
+- `LayerUtility: ImageBlendAdvance`
 - `LoadImage`
+- `MZ_ChatGLM3Loader`
+- `MZ_ChatGLM3_V2`
+- `MZ_KolorsUNETLoaderV2`
+- `Mask Invert`
+- `MaskPreview+`
+- `MaskToSEGS`
+- `PreviewImage`
 - `SaveImage`
 - `SetNode`
-- `UnetLoaderGGUF`
 - `VAEDecode`
+- `VAEEncodeForInpaint`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 2/3 个有
-- `ModelPatchLoader` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `QwenImageDiffsynthControlnet` —— 2/3 个有
-- `GetImageSize` —— 1/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `Preview from image [Crystools]` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SetLatentNoiseMask` —— 1/3 个有
-- `ZImageFunControlnet` —— 1/3 个有
-- `easy imagePixelPerfect` —— 1/3 个有
+- `ArgosTranslateTextNode` —— 3/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `Textbox` —— 3/4 个有
+- `BRIA_RMBG_ModelLoader_Zho` —— 2/4 个有
+- `BRIA_RMBG_Zho` —— 2/4 个有
+- `GrowMask` —— 2/4 个有
+- `HD UltimateSDUpscale` —— 2/4 个有
+- `ImageUpscaleWithModel` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `LayerColor: ColorAdapter` —— 2/4 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 2/4 个有
+- `MZ_IPAdapterAdvancedKolors` —— 2/4 个有
+- `MZ_IPAdapterModelLoaderKolors` —— 2/4 个有
+- `MZ_KolorsCLIPVisionLoader` —— 2/4 个有
+- `TextCombinerTwo` —— 2/4 个有
+- `UpscaleModelLoader` —— 2/4 个有
+- `Bjornulf_ShowStringText` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `Joy_caption_two` —— 1/4 个有
+- `Joy_caption_two_load` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 512 - 1920 | 3 | 51% |
-| 高度 | 1080 | 512 - 1920 | 3 | 51% |
-| 采样步数 | 10 | 10 - 10 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 768 | 768 - 768 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 采样步数 | 30 | 30 - 30 | 4 | 100% |
+| Prompt 约束强度(CFG) | 3 | 3 - 3 | 4 | 100% |
+| 采样算法 | dpmpp_3m_sde | - | 4 | 100% |
+| 调度器 | exponential | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -74,10 +89,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 512 - 1920，3 个样本
-- 高度 中位数 1080，观测区间 512 - 1920，3 个样本
-- 采样步数 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 768 - 768，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，观测区间 30 - 30，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_3m_sde，4 个样本，一致性 100%
+- 调度器 最常用 exponential，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

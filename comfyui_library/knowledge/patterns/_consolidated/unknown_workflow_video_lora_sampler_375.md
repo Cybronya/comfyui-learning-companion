@@ -1,68 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_375
 type: Unknown Workflow
-frequency: 7
-level: moderate
-coverage: 0.69
-common_nodes: [BasicScheduler, CFGGuider, ConditioningZeroOut, DualCLIPLoader, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
+frequency: 8
+level: strong
+coverage: 0.90675
+common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CR Seed, DiffusionModelLoaderKJ, DuckHideNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, Power Lora Loader (rgthree), PrimitiveFloat, SaveImage, VAEDecode, VAELoader, WanVideoNAG]
 problems: []
 missing: []
-members: [视频生成/图生视频/全自动四宫格LTX2.3导演台_2068160315895934977.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定20秒）_2069405147431792641.json, 视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定20秒）_2074632138728763394.json, 视频生成/文生视频/万象+rh六宫格横屏1280导演台自动化工作流（固定15秒）_2069737985674928129.json, 视频生成/文生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2066856869905395714.json, 视频生成/文生视频/万象+rh四宫格竖屏1280导演台自动化工作流(固定12秒插件0707）_2074626267659456513.json, 视频生成/文生视频/全自动多宫格LTX2.3导演台+光锥多参生视频(0623修复）_2066670452965199873.json]
+members: [视频生成/图生视频/115699026_2047258270540238850.json, 视频生成/图生视频/117909771_2047514506162610178.json, 视频生成/图生视频/122698483_2033451412193021953.json, 视频生成/图生视频/5b446151_2045866121294778369.json, 视频生成/图生视频/5ccd6a45_2048270187077570561.json, 视频生成/图生视频/951beec7_2038854972158255106.json, 视频生成/图生视频/d0403e40_2047132331764355074.json, 视频生成/图生视频/e652f952_2048665602092441601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_375
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/全自动四宫格LTX2.3导演台_2068160315895934977.json、视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定20秒）_2069405147431792641.json、视频生成/文生视频/万象+rh九宫格横屏1280导演台自动化工作流（固定20秒）_2074632138728763394.json、视频生成/文生视频/万象+rh六宫格横屏1280导演台自动化工作流（固定15秒）_2069737985674928129.json、视频生成/文生视频/万象+rh四宫格横屏1280导演台自动化工作流(固定12秒插件已修复0624）_2066856869905395714.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/115699026_2047258270540238850.json、视频生成/图生视频/117909771_2047514506162610178.json、视频生成/图生视频/122698483_2033451412193021953.json、视频生成/图生视频/5b446151_2045866121294778369.json、视频生成/图生视频/5ccd6a45_2048270187077570561.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicScheduler`
-- `CFGGuider`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
+全部 8 个 workflow 都包含：
+- `CFGZeroStar`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Seed`
+- `DiffusionModelLoaderKJ`
+- `DuckHideNode`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
-- `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `Power Lora Loader (rgthree)`
+- `PrimitiveFloat`
+- `SaveImage`
+- `VAEDecode`
+- `VAELoader`
+- `WanVideoNAG`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/7 个有
-- `PreviewAny` —— 6/7 个有
-- `SetNode` —— 6/7 个有
-- `TTResolutionSelector` —— 6/7 个有
-- `LoadVideo` —— 5/7 个有
-- `Text Multiline` —— 5/7 个有
-- `SF-LTXDirectorGuide` —— 4/7 个有
-- `SF-LTXGridDirector` —— 4/7 个有
-- `CS-LTXDirectorGuide` —— 3/7 个有
-- `CS-LTXGridDirector` —— 3/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `ImpactSwitch` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `ImpactWildcardProcessor` —— 7/8 个有
+- `GetNode` —— 6/8 个有
+- `SetNode` —— 6/8 个有
+- `easy cleanGpuUsed` —— 6/8 个有
+- `CLIPVisionEncode` —— 4/8 个有
+- `CLIPVisionLoader` —— 4/8 个有
+- `ImageBatchMulti` —— 4/8 个有
+- `PainterI2VAdvanced` —— 4/8 个有
+- `RIFE VFI` —— 4/8 个有
+- `VHS_SplitImages` —— 4/8 个有
+- `WanAdvancedI2V` —— 4/8 个有
+- `ColorMatch` —— 2/8 个有
+- `ImageBatchExtendWithOverlap` —— 2/8 个有
+- `ImageFromBatch` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 8 | 100% |
+| Prompt 约束强度(CFG) | 20 | 20 - 20 | 8 | 100% |
+| 采样算法 | 1 | 1 - 1.1 | 8 | 96% |
+| 调度器 | euler | - | 8 | 88% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -70,4 +75,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，8 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，8 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1.1，8 个样本，取值集中（一致性 96%）
+- 调度器 最常用 euler，8 个样本，一致性 88%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

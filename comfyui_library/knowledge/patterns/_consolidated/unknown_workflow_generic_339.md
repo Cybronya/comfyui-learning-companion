@@ -3,40 +3,41 @@ name: unknown_workflow_generic_339
 type: Unknown Workflow
 frequency: 8
 level: moderate
-coverage: 0.853
-common_nodes: [CR Prompt Text, LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio]
+coverage: 1
+common_nodes: [Preview3D, Trellis2ExportMesh, Trellis2LoadModel, Trellis2MeshWithVoxelGenerator, Trellis2PostProcessAndUnWrapAndRasterizer, Trellis2SimplifyMesh]
 problems: []
 missing: []
-members: [音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2046481783285354498.json, 音频生成/音频生成/OmniVoice语音克隆+声音设计（支持600+语言，多种方言）_2048118551294251010.json, 音频生成/音频生成/OmniVoice语音克隆生成器-600种语言-支持方言_2041727319890468866.json, 音频生成/音频生成/OmniVoice语音克隆，omnivoice声音克隆，跨境声音，电商语音克隆_2042050604117266433.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041470375313281025.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041935163369721858.json]
+members: [图片生成/图生图/ComfyUI-3D-Trellis2自动建模_2004456831420428290.json, 图片生成/图生图/Trellis2 3D_2005307477589716994.json, 平台全量/ComfyUI-Trellis2 基础流_2002316118133993474.json, 平台全量/Trellis2 3D（支持特殊产品）_2013295299153891330.json, 平台全量/Trellis2—2D转3D_2005528728509841409.json, 平台全量/微软开源-Trellis2 图生3D(含材质贴图)_2007062973176614913.json, 平台全量/微软开源-Trellis2 图生3D(含材质贴图)_2013185178423791617.json, 数字人/数字人/3d建模2_2030208153794650114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_339
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json、音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json、音频生成/音频生成/OmniVoice最强单人语音克隆_2046481783285354498.json、音频生成/音频生成/OmniVoice语音克隆+声音设计（支持600+语言，多种方言）_2048118551294251010.json、音频生成/音频生成/OmniVoice语音克隆生成器-600种语言-支持方言_2041727319890468866.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/ComfyUI-3D-Trellis2自动建模_2004456831420428290.json、图片生成/图生图/Trellis2 3D_2005307477589716994.json、平台全量/ComfyUI-Trellis2 基础流_2002316118133993474.json、平台全量/Trellis2 3D（支持特殊产品）_2013295299153891330.json、平台全量/Trellis2—2D转3D_2005528728509841409.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudio`
+- `Preview3D`
+- `Trellis2ExportMesh`
+- `Trellis2LoadModel`
+- `Trellis2MeshWithVoxelGenerator`
+- `Trellis2PostProcessAndUnWrapAndRasterizer`
+- `Trellis2SimplifyMesh`
 
 **可变部分**（部分 workflow 才有）：
-- `OmniVoiceVoiceCloneTTS` —— 6/8 个有
-- `PreviewAny` —— 5/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 4/8 个有
-- `OmniVoiceVoiceDesignTTS` —— 3/8 个有
-- `SaveAudioMP3` —— 3/8 个有
-- `OmniVoiceMultiSpeakerTTS` —— 2/8 个有
-- `SaveAudioOpus` —— 2/8 个有
+- `SaveImage` —— 7/8 个有
+- `ImageResizeKJv2` —— 4/8 个有
+- `LoadImage` —— 4/8 个有
+- `Trellis2LoadImageWithTransparency` —— 4/8 个有
+- `easy imageRemBg` —— 4/8 个有
+- `SaveGLB` —— 2/8 个有
+- `TrimeshToMESH` —— 2/8 个有
 
 ## 典型参数
 

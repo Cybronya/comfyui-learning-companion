@@ -1,76 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_813
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.753
-common_nodes: [AudioConcat, BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, CreateVideo, ExtendIntermediateSigmas, GH_ImageVideoComparer, GetImageSizeAndCount, GoohaiRatioAndResolution, ImageBatchMulti, ImageFromBatch, ImageFromBatch+, Int, KSamplerSelect, LazySwitchKJ, LoadImage, LoraLoaderModelOnly, MiniMaxH3AddGuide, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, MultiplicationNode, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), SimpleMath+, SolAttnMiniMax, SoundFlow_GetLength, SoundFlow_TrimAudio, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideoPath, VHS_SelectFilename, VHS_VideoCombine, YusuLoadVideoUI, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.501
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetNode, GrowMask, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SeCModelLoader, SeCVideoSegmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/海螺H3 视频引导生成视频 视频衔接_2105681969299410946.json, 数字人/数字人/视频引导生视频，视频衔接过渡_2105435289228496898.json]
+members: [平台全量/Wan2.2动作迁移animate背景锁定+背部？？？_2056022446129598465.json, 平台全量/wan animate v3——优化版_1983149864626364417.json, 视频生成/图生视频/Wan2.2 Animate高质量电商换模特_1972598111484968962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_813
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/海螺H3 视频引导生成视频 视频衔接_2105681969299410946.json、数字人/数字人/视频引导生视频，视频衔接过渡_2105435289228496898.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Wan2.2动作迁移animate背景锁定+背部？？？_2056022446129598465.json、平台全量/wan animate v3——优化版_1983149864626364417.json、视频生成/图生视频/Wan2.2 Animate高质量电商换模特_1972598111484968962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Text`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `ExtendIntermediateSigmas`
-- `GH_ImageVideoComparer`
-- `GetImageSizeAndCount`
-- `GoohaiRatioAndResolution`
-- `ImageBatchMulti`
-- `ImageFromBatch`
-- `ImageFromBatch+`
-- `Int`
-- `KSamplerSelect`
-- `LazySwitchKJ`
+全部 3 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GetNode`
+- `GrowMask`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AddGuide`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `MultiplicationNode`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `Seed (rgthree)`
-- `SimpleMath+`
-- `SolAttnMiniMax`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
-- `SplitSigmas`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
-- `VHS_LoadVideoPath`
-- `VHS_SelectFilename`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `YusuLoadVideoUI`
-- `easy showAnything`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `GetImageSizeAndCount` —— 2/3 个有
+- `ImageConcatMulti` —— 2/3 个有
+- `ImageFromBatch` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `PointsEditor` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `RepeatImageBatch` —— 2/3 个有
+- `VHS_VideoInfo` —— 2/3 个有
+- `WanVideoContextOptions` —— 2/3 个有
+- `WanVideoEncode` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `WanVideoUni3C_ControlnetLoader` —— 2/3 个有
+- `WanVideoUni3C_embeds` —— 2/3 个有
+- `CoordinatePlotter` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `LazySwitch1way` —— 1/3 个有
+- `PoseRetargetPromptHelper` —— 1/3 个有
+- `easy boolean` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy sam3ImageSegmentation` —— 1/3 个有
+- `easy sam3ModelLoader` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `int _O` —— 1/3 个有
 
 ## 典型参数
 
@@ -82,4 +86,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

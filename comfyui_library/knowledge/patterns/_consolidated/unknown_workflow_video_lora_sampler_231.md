@@ -1,98 +1,100 @@
 ---
 name: unknown_workflow_video_lora_sampler_231
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.579778
-common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetNode, GrowMask, INTConstant, ImageBatch, ImageFromBatch, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PixelPerfectResolution, PointsEditor, Sam2Segmentation, SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo]
-problems: [Steps较低可能导致细节不足]
+frequency: 11
+level: moderate
+coverage: 0.766545
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/1_1模式视频动作_2000449752623874050.json, 视频生成/图生视频/Wan Animate+kj骨骼绑定人物角色图生视频动作_1999382397340839937.json, 视频生成/图生视频/可爱大头娃娃工作流V2+骨骼绑定与动作迁移_2042618078990704642.json, 视频生成/图生视频/可爱娃娃工作流_2057269921096232961.json, 视频生成/图生视频/可爱娃娃工作流_2059070496771239938.json, 视频生成/图生视频/图生视频---太极动作工作流-Aiwood_2039883987727949826.json, 视频生成/图生视频/大头娃娃工作流-Aiwood_1998717600895000577.json, 视频生成/文生视频/Wan-Animate原生无限流（修正）_1971749907403108354.json, 视频生成/文生视频/角色参考-原生无限流-补帧_1975828769351012354.json]
+members: [平台全量/Scail 一键跳舞！骨骼完美驱动！_2001570151873015810.json, 平台全量/Scail 最强动作迁移_PLUS模式运行_2005661946890383361.json, 平台全量/Scail单_双人动作迁移自由切换版_2000863323744763906.json, 平台全量/Scail单人动作迁移(720P高质量版)V2_2001623314743345153.json, 平台全量/WanVideo SCAIL Context LongLength - SCAIL上下文长视频_2001122624182812674.json, 平台全量/Wanvideo SCAIL 动作和镜头控制_2001578961287147521.json, 平台全量/scail 增加晃动lora 跳舞更诱人 自带提示词_2001830125261975554.json, 平台全量/【舞蹈】超稳舞蹈Scail单_双人动作迁移_2030222144050827266.json, 视频生成/图生视频/(卡通-脸部识别)Scail双人动作迁移(720P高质量版)V2_2001008301930315778.json, 视频生成/图生视频/(脸部识别版)Scail多人动作迁移(720P高质量版)V2_2001007812647976961.json, 视频生成/图生视频/(脸部识别版)Scail多人动作迁移(720P高质量版)V2_2001114999428968450.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_231
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/1_1模式视频动作_2000449752623874050.json、视频生成/图生视频/Wan Animate+kj骨骼绑定人物角色图生视频动作_1999382397340839937.json、视频生成/图生视频/可爱大头娃娃工作流V2+骨骼绑定与动作迁移_2042618078990704642.json、视频生成/图生视频/可爱娃娃工作流_2057269921096232961.json、视频生成/图生视频/可爱娃娃工作流_2059070496771239938.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/Scail 一键跳舞！骨骼完美驱动！_2001570151873015810.json、平台全量/Scail 最强动作迁移_PLUS模式运行_2005661946890383361.json、平台全量/Scail单_双人动作迁移自由切换版_2000863323744763906.json、平台全量/Scail单人动作迁移(720P高质量版)V2_2001623314743345153.json、平台全量/WanVideo SCAIL Context LongLength - SCAIL上下文长视频_2001122624182812674.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：58%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 11 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `GetNode`
-- `GrowMask`
-- `INTConstant`
-- `ImageBatch`
-- `ImageFromBatch`
-- `KSampler`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PixelPerfectResolution`
-- `PointsEditor`
-- `Sam2Segmentation`
-- `SetNode`
-- `TrimVideoLatent`
-- `UNETLoader`
-- `VAEDecode`
+- `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
+- `RenderNLFPoses`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimateToVideo`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoModelLoader`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 8/9 个有
-- `GIMMVFI_interpolate` —— 8/9 个有
-- `SimpleMath+` —— 8/9 个有
-- `AV_VAELoader` —— 7/9 个有
-- `Display Int (rgthree)` —— 7/9 个有
-- `EmptyImage` —— 7/9 个有
-- `ImageResizeKJv2` —— 7/9 个有
-- `OnnxDetectionModelLoader` —— 7/9 个有
-- `PoseDetectionOneToAllAnimation` —— 7/9 个有
-- `Float` —— 2/9 个有
-- `GetImageSizeAndCount` —— 2/9 个有
-- `MaskPreview` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `VAELoader` —— 2/9 个有
-- `easy forLoopEnd` —— 2/9 个有
-- `easy forLoopStart` —— 2/9 个有
-- `DF_Float` —— 1/9 个有
-- `Int` —— 1/9 个有
-- `Setter` —— 1/9 个有
+- `DownloadAndLoadNLFModel` —— 10/11 个有
+- `GetImageSizeAndCount` —— 10/11 个有
+- `ImageConcatMulti` —— 10/11 个有
+- `WanVideoLoraSelect` —— 10/11 个有
+- `LoadWanVideoT5TextEncoder` —— 9/11 个有
+- `WanVideoTextEncode` —— 9/11 个有
+- `WanVideoEncode` —— 8/11 个有
+- `WanVideoUni3C_ControlnetLoader` —— 8/11 个有
+- `WanVideoUni3C_embeds` —— 8/11 个有
+- `CR Prompt Text` —— 6/11 个有
+- `JWInteger` —— 6/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/11 个有
+- `MathExpression|pysssss` —— 6/11 个有
+- `PreviewImage` —— 5/11 个有
+- `INTConstant` —— 4/11 个有
+- `PDIMAGE_LongerSize` —— 4/11 个有
+- `RunningHub Deepcleaner` —— 4/11 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 3/11 个有
+- `DWPreprocessor` —— 3/11 个有
+- `GetNode` —— 3/11 个有
+- `SetNode` —— 3/11 个有
+- `SimpleMath+` —— 3/11 个有
+- `WanVideoTorchCompileSettings` —— 3/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/11 个有
+- `FloatConstant` —— 2/11 个有
+- `ImageFromBatch+` —— 2/11 个有
+- `Label (rgthree)` —— 2/11 个有
+- `SimpleCalculatorKJ` —— 2/11 个有
+- `WanVideoScheduler` —— 2/11 个有
+- `WanVideoTextEncodeCached` —— 2/11 个有
+- `CM_IntToFloat` —— 1/11 个有
+- `CR SDXL Aspect Ratio` —— 1/11 个有
+- `LoadNLFModel` —— 1/11 个有
+- `MuyeTextEditOutput` —— 1/11 个有
+- `PIP_IntegerCalculator` —— 1/11 个有
+- `WanVideoLoraSelectMulti` —— 1/11 个有
+- `WanVideoSampler` —— 1/11 个有
+- `easy clearCacheAll` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 9 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | euler | - | 9 | 100% |
-| 调度器 | simple | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 25/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，9 个样本，一致性 100%
-- 调度器 最常用 simple，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（25/9 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

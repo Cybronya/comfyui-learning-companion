@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_video_77
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.933333
-common_nodes: [LoadImage, RunningHub_FramePack, SeargePromptText, VHS_VideoCombine]
+coverage: 0.7652
+common_nodes: [Bookmark (rgthree), CR Prompt Text, RH_Sora2_T2V, SeedVR2, VHS_LoadVideoPath, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/一分钟视频_1913101835836583938.json, 视频生成/图生视频/最新FramePack首尾帧视频生成_1914139534286647297.json, 视频生成/图生视频/🦖FramePack 首尾帧_1914129631170232321.json]
+members: [平台全量/全能视频S文生视频+ seedVR2视频高清放大_1974522922213748737.json, 平台全量/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974726243990024194.json, 视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980259189755905.json, 视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980703391756289.json, 视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1975033052323778562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_77
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/一分钟视频_1913101835836583938.json、视频生成/图生视频/最新FramePack首尾帧视频生成_1914139534286647297.json、视频生成/图生视频/🦖FramePack 首尾帧_1914129631170232321.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/全能视频S文生视频+ seedVR2视频高清放大_1974522922213748737.json、平台全量/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974726243990024194.json、视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980259189755905.json、视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980703391756289.json、视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1975033052323778562.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RunningHub_FramePack`
-- `SeargePromptText`
+全部 5 个 workflow 都包含：
+- `Bookmark (rgthree)`
+- `CR Prompt Text`
+- `RH_Sora2_T2V`
+- `SeedVR2`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/3 个有
+- `SaveVideo` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `Label (rgthree)` —— 1/5 个有
 
 ## 典型参数
 

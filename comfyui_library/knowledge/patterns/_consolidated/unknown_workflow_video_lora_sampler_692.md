@@ -1,71 +1,57 @@
 ---
 name: unknown_workflow_video_lora_sampler_692
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.666667
-common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, GetNode, ImageScaleToMaxDimension, KSamplerSelect, LTXAVTextEncoderLoader, LTXVConditioning, LTXVLoopingSampler, LTXVSpatioTemporalTiledVAEDecode, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3SigmaShift, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnPatch, SpectrumApplyMiniMaxH3, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncodeTiled, VAELoader, VHS_VideoCombine, VisualizeSigmasKJ, easy cleanGpuUsed, easy clearCacheAll]
+coverage: 0.9055
+common_nodes: [DrawGaussianNoiseOnImage, DrawMaskOnImage, GetImageSizeAndCount, ImageConcatMulti, ImageRemoveBackground+, ImageResizeKJv2, InvertMask, LoadWanVideoT5TextEncoder, TransparentBGSession+, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoUniLumosEmbeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax 4步 LoRa 加速 首尾帧视频 + Ltx 视频放大工作流_2085659057788121090.json, 视频生成/图生视频/MiniMax H3  ref-多参考注入 - 4步加速 视频生成+LTX放大工作流_2085936299189563393.json, 视频生成/文生视频/MiniMax H3+新4步LoRaV1.1+首尾帧视频 + LTX2.5 视频超分工作流_2092489232135839745.json]
+members: [平台全量/wanvideo_1_3B_UniLumos_relight_1988089034918531073.json, 平台全量/一键换视频背景+打光_1996466748704571394.json, 平台全量/一键换视频背景+重新打光，UniLumos模型+ComfyUI！_1988927099337576449.json, 平台全量/重打光-重上色-UniLumos-视频IC-Light_1988123663885049858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_692
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax 4步 LoRa 加速 首尾帧视频 + Ltx 视频放大工作流_2085659057788121090.json、视频生成/图生视频/MiniMax H3  ref-多参考注入 - 4步加速 视频生成+LTX放大工作流_2085936299189563393.json、视频生成/文生视频/MiniMax H3+新4步LoRaV1.1+首尾帧视频 + LTX2.5 视频超分工作流_2092489232135839745.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/wanvideo_1_3B_UniLumos_relight_1988089034918531073.json、平台全量/一键换视频背景+打光_1996466748704571394.json、平台全量/一键换视频背景+重新打光，UniLumos模型+ComfyUI！_1988927099337576449.json、平台全量/重打光-重上色-UniLumos-视频IC-Light_1988123663885049858.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CFGGuider`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
-- `GetNode`
-- `ImageScaleToMaxDimension`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVConditioning`
-- `LTXVLoopingSampler`
-- `LTXVSpatioTemporalTiledVAEDecode`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MiniMaxH3SigmaShift`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `SolAttnPatch`
-- `SpectrumApplyMiniMaxH3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncodeTiled`
-- `VAELoader`
+全部 4 个 workflow 都包含：
+- `DrawGaussianNoiseOnImage`
+- `DrawMaskOnImage`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `ImageRemoveBackground+`
+- `ImageResizeKJv2`
+- `InvertMask`
+- `LoadWanVideoT5TextEncoder`
+- `TransparentBGSession+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoUniLumosEmbeds`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ImageToVideo` —— 2/3 个有
-- `ResizeImageMaskNode` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 1/3 个有
-- `LTXVAudioVAELoader` —— 1/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
-- `VHS_LoadAudio` —— 1/3 个有
+- `Bjornulf_ShowInt` —— 1/4 个有
+- `CR Text` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImpactInt` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `VHS_VideoInfoSource` —— 1/4 个有
+- `WanVideoTorchCompileSettings` —— 1/4 个有
 
 ## 典型参数
 

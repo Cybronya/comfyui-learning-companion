@@ -1,63 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_868
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9115
-common_nodes: [Any To String (mtb), CLIPLoader, CLIPTextEncode, INTConstant, ImageResize+, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, Qwen3_VQA, Seed (rgthree), ShowText|pysssss, Textbox, UNETLoader, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed, easy textSwitch]
+frequency: 3
+level: strong
+coverage: 0.957667
+common_nodes: [BasicScheduler, CLIPTextEncode, ComfyNumberConvert, EmptyLTXVLatentVideo, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SimpleCalculatorKJ, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Qwen3自动提示词+wan2.2图生视频N版_2011091224547037185.json, 视频生成/文生视频/大凯辰光-Qwen3自动提示词+wan2.2图生视频_2008174845816741889.json]
+members: [视频生成/图生视频/LTX-2.5多参视频生成MSR2+BFS_2087556124504584194.json, 视频生成/图生视频/LTX多参生视频MSR2+BFS+Yuan_2079557300314005506.json, 视频生成/图生视频/LTX多参生视频MSR2+BFS_2081015691444047873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_868
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Qwen3自动提示词+wan2.2图生视频N版_2011091224547037185.json、视频生成/文生视频/大凯辰光-Qwen3自动提示词+wan2.2图生视频_2008174845816741889.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX-2.5多参视频生成MSR2+BFS_2087556124504584194.json、视频生成/图生视频/LTX多参生视频MSR2+BFS+Yuan_2079557300314005506.json、视频生成/图生视频/LTX多参生视频MSR2+BFS_2081015691444047873.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any To String (mtb)`
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPTextEncode`
+- `ComfyNumberConvert`
+- `EmptyLTXVLatentVideo`
 - `INTConstant`
-- `ImageResize+`
-- `KSamplerAdvanced`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTX2AttentionTunerPatch`
+- `LTX2SamplingPreviewOverride`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `Qwen3_VQA`
-- `Seed (rgthree)`
-- `ShowText|pysssss`
-- `Textbox`
+- `PathchSageAttentionKJ`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SimpleCalculatorKJ`
 - `UNETLoader`
-- `VAELoader`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy cleanGpuUsed`
-- `easy textSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveLatent` —— 1/2 个有
-- `TT_img_enc` —— 1/2 个有
-- `VAEDecode` —— 1/2 个有
-- `VAEDecodeTiled` —— 1/2 个有
+- `CFGGuider` —— 2/3 个有
+- `DualCLIPLoader` —— 2/3 个有
+- `LiconMSR` —— 2/3 个有
+- `PromptRelayEncode` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `CLIPLoader` —— 1/3 个有
+- `LTXVDualCFGGuider` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `YuanCLIPTimeline` —— 1/3 个有
+- `YuanTool` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 12 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+| 宽度 | 241 | 241 - 241 | 3 | 100% |
+| 高度 | 24 | 24 - 24 | 3 | 100% |
 
 ## 常见问题
 
@@ -65,9 +80,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 12，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 241，观测区间 241 - 241，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）

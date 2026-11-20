@@ -1,41 +1,40 @@
 ---
 name: unknown_workflow_generic_347
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.768143
-common_nodes: [LoadImage, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.847125
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/qwen3.5 反推、提示词助手_2030978009959768066.json, 图片生成/反推提示词/qwen3.5 反推、提示词助手_2033361496536784897.json, 图片生成/反推提示词/千问3.5 大模型可支持9个图片大语言模型_2102003722409824258.json, 图片生成/反推提示词/给ComfyUI接入Qwen3.5大模型，自动生成专业提示词｜图片视频智能解析｜本地部署离线可用_2029522652318146562.json, 图片生成/反推提示词/给ComfyUI接入Qwen3.5大模型，自动生成专业提示词｜图片视频智能解析｜本地部署离线可用_2046685017111269377.json, 图片生成/图生图/Qwen3.5 反推图片+视频工作流_2040610012187332609.json, 图片生成/图生图/Qwen3.5 反推工作流_2035976986505519106.json]
+members: [图片生成/图生图/Seedance2.0角色过审多视图_2051159980925042690.json, 图片生成/图生图/人物角色三视图_九视图_多视图（seedance真人可过审）_2038535357179891713.json, 图片生成/图生图/人物角色三视图（AI仿真人漫剧资产制作）_2046503440838299650.json, 图片生成/图生图/全能图片Pro风格迁移融合场景_2059464168880824321.json, 图片生成/图生图/全能图片Pro风格迁移融合场景_2059464777260429313.json, 图片生成/图生图/手机壳详情页_主图_海报_SKU图1.0_2008447531130294274.json, 图片生成/文生图/Seedance2.0角色过审多视图_2027226931736879106.json, 图片生成/文生图/Seedance2.0过审六宫格_2043525282723799041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_347
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/qwen3.5 反推、提示词助手_2030978009959768066.json、图片生成/反推提示词/qwen3.5 反推、提示词助手_2033361496536784897.json、图片生成/反推提示词/千问3.5 大模型可支持9个图片大语言模型_2102003722409824258.json、图片生成/反推提示词/给ComfyUI接入Qwen3.5大模型，自动生成专业提示词｜图片视频智能解析｜本地部署离线可用_2029522652318146562.json、图片生成/反推提示词/给ComfyUI接入Qwen3.5大模型，自动生成专业提示词｜图片视频智能解析｜本地部署离线可用_2046685017111269377.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Seedance2.0角色过审多视图_2051159980925042690.json、图片生成/图生图/人物角色三视图_九视图_多视图（seedance真人可过审）_2038535357179891713.json、图片生成/图生图/人物角色三视图（AI仿真人漫剧资产制作）_2046503440838299650.json、图片生成/图生图/全能图片Pro风格迁移融合场景_2059464168880824321.json、图片生成/图生图/全能图片Pro风格迁移融合场景_2059464777260429313.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `LoadImage`
-- `easy saveText`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
-- `PreviewAny` —— 6/7 个有
-- `VHS_LoadVideo` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 3/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `BatchImagesNode` —— 1/7 个有
+- `RH_Translator` —— 7/8 个有
+- `CR Text` —— 6/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
+- `ImageResize+` —— 5/8 个有
+- `Image Comparer (rgthree)` —— 4/8 个有
+- `CR Text Replace` —— 1/8 个有
+- `Fast Bypasser (rgthree)` —— 1/8 个有
 
 ## 典型参数
 

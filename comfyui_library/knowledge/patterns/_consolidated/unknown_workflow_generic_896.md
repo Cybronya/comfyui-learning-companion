@@ -1,31 +1,36 @@
 ---
 name: unknown_workflow_generic_896
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.904
-common_nodes: [GrokImageEditNodeV2, LoadImage, SaveImage]
+coverage: 0.875
+common_nodes: [EmptyImage, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_grok_image_edit.json, comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json, comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json]
+members: [图片生成/图生图/全能图片V2-图生图-低价渠道版_2098972302976307202.json, 图片生成/图生图/全能图片V2-图生图-低价渠道版_2099074098570813442.json, 图片生成/图生图/全能图片V2-图生图-低价渠道版_2100053068493709313.json, 图片生成/图生图/全能图片V3-多图参考生图-官方稳定版_2104060260775448577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_896
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_grok_image_edit.json、comfyui-workflow-templates-json/api_grok_imagine_image_2_image_edit.json、comfyui-workflow-templates-json/templates-1_input-multiple_styles_prompt.app.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片V2-图生图-低价渠道版_2098972302976307202.json、图片生成/图生图/全能图片V2-图生图-低价渠道版_2099074098570813442.json、图片生成/图生图/全能图片V2-图生图-低价渠道版_2100053068493709313.json、图片生成/图生图/全能图片V3-多图参考生图-官方稳定版_2104060260775448577.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GrokImageEditNodeV2`
+全部 4 个 workflow 都包含：
+- `EmptyImage`
 - `LoadImage`
+- `PreviewImage`
 - `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartImageNG31FlashImageToImage` —— 3/4 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/4 个有
 
 ## 典型参数
 

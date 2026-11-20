@@ -1,36 +1,43 @@
 ---
 name: unknown_workflow_generic_455
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.653286
+common_nodes: [AddBackgroundNode, HivisionLayOutNode, HivisionNode, LaterProcessNode, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/PixVerse V6 图生视频_2044293935551488002.json, 图片生成/图生图/RH Seedance2.0多图参考_2068395107723866114.json, 视频生成/图生视频/PixVerse V6 图生视频_2043712125037715457.json, 视频生成/图生视频/PixVerse V6 图生视频（2分钟出10秒视频0.2元_秒）_2042956717356486657.json, 视频生成/图生视频/SDM展款-九宫格图生视频_2061625263947079681.json, 视频生成/文生视频/SDM-图+脚本生视频_2061983483773407233.json]
+members: [图片生成/图生图/一键生成红蓝白底证件照comfyui_1884596477962997762.json, 图片生成/图生图/一键证件照换背景，调尺寸_2005820642060627970.json, 图片生成/图生图/上传图像一键生成证件照_1915222478162169858.json, 图片生成/图生图/证件照生成器，生成各种规格的证件照，直接拿去打印_2056183015931424770.json, 图片生成/图生图/证件照生成，生成各种规格的证件照，可打印，_1992110211850891266.json, 平台全量/一键生成蓝白底证件照comfyui_1884593346638397442.json, 平台全量/蓝底证件照2.0_1943481271786106881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_455
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/PixVerse V6 图生视频_2044293935551488002.json、图片生成/图生图/RH Seedance2.0多图参考_2068395107723866114.json、视频生成/图生视频/PixVerse V6 图生视频_2043712125037715457.json、视频生成/图生视频/PixVerse V6 图生视频（2分钟出10秒视频0.2元_秒）_2042956717356486657.json、视频生成/图生视频/SDM展款-九宫格图生视频_2061625263947079681.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/一键生成红蓝白底证件照comfyui_1884596477962997762.json、图片生成/图生图/一键证件照换背景，调尺寸_2005820642060627970.json、图片生成/图生图/上传图像一键生成证件照_1915222478162169858.json、图片生成/图生图/证件照生成器，生成各种规格的证件照，直接拿去打印_2056183015931424770.json、图片生成/图生图/证件照生成，生成各种规格的证件照，可打印，_1992110211850891266.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `AddBackgroundNode`
+- `HivisionLayOutNode`
+- `HivisionNode`
+- `LaterProcessNode`
 - `LoadImage`
-- `SaveVideo`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 4/6 个有
-- `RH_PixverseV6ImageToVideo` —— 3/6 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
+- `AddWaterMarkNode` —— 5/7 个有
+- `ENHivisionParamsNode` —— 4/7 个有
+- `ZHHivisionParamsNode` —— 3/7 个有
+- `Anything Everywhere` —— 1/7 个有
+- `GetNode` —— 1/7 个有
+- `SetNode` —— 1/7 个有
 
 ## 典型参数
 

@@ -1,50 +1,41 @@
 ---
 name: unknown_workflow_upscale_vae_10
 type: Unknown Workflow
-frequency: 13
+frequency: 16
 level: moderate
-coverage: 0.872462
-common_nodes: [SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed, easy clearCacheAll, easy int]
+coverage: 0.784
+common_nodes: [LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
 problems: []
 missing: []
-members: [图片生成/图生图/21   永青  图片改4K高清_2016788848201699330.json, 图片生成/图生图/SeedVR2.5图片快速高清放大_2083459672052428802.json, 图片生成/图生图/SeedVR2.5图片快速高清放大_2086055129912008706.json, 图片生成/图生图/SeedVR2.5最新版高清放大工作流_2034162075945144322.json, 图片生成/图生图/SeedVR2.5最新版高清放大工作流_2087433746885734401.json, 图片生成/图生图/SeedVR2.5最新版高清放大工作流_2096806094365614081.json, 图片生成/图生图/SeedVR2.5最新版高清放大工作流_2097152097107136514.json, 图片生成/图生图/单图处理——包装字体无损高清放大_2029828633174482946.json, 图片生成/图生图/单图处理——包装字体无损高清放大_2099052252437766146.json, 图片生成/图生图/单图处理——包装字体无损高清放大_2099424441473261569.json, 图片生成/图生图/食杂素材批量高清放大处理【压缩包上传+压缩包下载】_2014306372078280706.json, 图片生成/图生图/（电商流工具流）SeedVR2单图高清4K_2028382443518038017.json, 图片生成/文生图/Image2低价版+4K放大器_2048305204277284866.json]
+members: [图片生成/图生图/花型设计图高清_2108474871826182146.json, 图片生成/图生图/花型高清_2111753801672773634.json, 平台全量/SEEDVR2.5图片超清修复极速版_2065613776669462530.json, 平台全量/SEEDVR2放大_2025855321327017985.json, 平台全量/SVR2高清修复修复_2034167369525895169.json, 平台全量/SeedVR2-Image_2080618481539698689.json, 平台全量/SeedVR2-图片高清放大工作流_2076244587592638465.json, 平台全量/SeedVR2.5.1图像高清放大_1991838615928107010.json, 平台全量/SeedVR2.5.1图像高清放大效果非常好_1992067155384487937.json, 平台全量/SeedVR2.5.1图片高清放大_1992468759749218305.json, 平台全量/SeedVR2.5最新版 史上最强图像无损高清放大_2000920538589655041.json, 平台全量/SeedVR2_图片放大_2030076513076383745.json, 平台全量/SeedVR2图像高清放大工作流_2049095129985716226.json, 平台全量/SeedVR2图片放大_2078377939732877313.json, 平台全量/图片高清修复SeedVR2.5_2005642594820517890.json, 平台全量/图片高清修复SeedVR2.5_2013935198743830529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_10
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/21   永青  图片改4K高清_2016788848201699330.json、图片生成/图生图/SeedVR2.5图片快速高清放大_2083459672052428802.json、图片生成/图生图/SeedVR2.5图片快速高清放大_2086055129912008706.json、图片生成/图生图/SeedVR2.5最新版高清放大工作流_2034162075945144322.json、图片生成/图生图/SeedVR2.5最新版高清放大工作流_2087433746885734401.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/花型设计图高清_2108474871826182146.json、图片生成/图生图/花型高清_2111753801672773634.json、平台全量/SEEDVR2.5图片超清修复极速版_2065613776669462530.json、平台全量/SEEDVR2放大_2025855321327017985.json、平台全量/SVR2高清修复修复_2034167369525895169.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `LoadImage`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 12/13 个有
-- `LoadImage` —— 12/13 个有
-- `ImageScaleToTotalPixels` —— 7/13 个有
-- `easy imageSize` —— 7/13 个有
-- `JoinImageWithAlpha` —— 6/13 个有
-- `ResizeImagesByLongerEdge` —— 6/13 个有
-- `CompressImages` —— 4/13 个有
-- `ImageListToBatch_` —— 4/13 个有
-- `PreviewImage` —— 2/13 个有
-- `MuyeTextEditOutput` —— 1/13 个有
-- `RHUploadZip_V2` —— 1/13 个有
-- `RH_RhartImageG2ImageToImage` —— 1/13 个有
-- `RH_RhartImageG2TextToImage` —— 1/13 个有
+- `Image Comparer (rgthree)` —— 13/16 个有
+- `ImageScaleBy` —— 10/16 个有
+- `PrimitiveInt` —— 6/16 个有
+- `Int` —— 3/16 个有
+- `PreviewImage` —— 2/16 个有
+- `SimpleMath+` —— 2/16 个有
 
 ## 典型参数
 

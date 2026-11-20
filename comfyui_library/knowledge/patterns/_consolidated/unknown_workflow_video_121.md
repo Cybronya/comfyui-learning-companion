@@ -1,42 +1,44 @@
 ---
 name: unknown_workflow_video_121
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [ImageConcanate, ImageScaleToTotalPixels, LoadImage, ReActorBuildFaceModel, ReActorFaceBoost, ReActorFaceSwap, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WujiCleaner]
+frequency: 3
+level: moderate
+coverage: 0.719667
+common_nodes: [AILab_QwenVL, SaveVideo, ShowText|pysssss, VHS_LoadVideo, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/三脸+视频换脸+自定义时长+精度_2077007977915174913.json, 视频生成/图生视频/视频换脸_1920378379508584450.json]
+members: [图片生成/反推提示词/Qwen3 VL视频反推+全能视频S文生视频无需输入提示词_1981604972750086145.json, 视频生成/图生视频/Qwen3 VL视频反推+全能视频S图生视频无需手动输入提示词_1981621475977371649.json, 视频生成/文生视频/Qwen3 视频反推+全能视频S文生视频，直出视频，无需输入提示词_1986442098058657793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_121
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/三脸+视频换脸+自定义时长+精度_2077007977915174913.json、视频生成/图生视频/视频换脸_1920378379508584450.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/Qwen3 VL视频反推+全能视频S文生视频无需输入提示词_1981604972750086145.json、视频生成/图生视频/Qwen3 VL视频反推+全能视频S图生视频无需手动输入提示词_1981621475977371649.json、视频生成/文生视频/Qwen3 视频反推+全能视频S文生视频，直出视频，无需输入提示词_1986442098058657793.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageConcanate`
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `ReActorBuildFaceModel`
-- `ReActorFaceBoost`
-- `ReActorFaceSwap`
+全部 3 个 workflow 都包含：
+- `AILab_QwenVL`
+- `SaveVideo`
+- `ShowText|pysssss`
 - `VHS_LoadVideo`
+- `VHS_LoadVideoPath`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `WujiCleaner`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/2 个有
-- `MathExpression|pysssss` —— 1/2 个有
+- `CR Text` —— 2/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
+- `RH_Sora2_T2V` —— 2/3 个有
+- `String` —— 2/3 个有
+- `RH_Sora2_I2V` —— 1/3 个有
 
 ## 典型参数
 
@@ -48,4 +50,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

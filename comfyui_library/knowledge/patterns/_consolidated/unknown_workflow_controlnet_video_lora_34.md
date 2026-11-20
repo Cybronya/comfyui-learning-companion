@@ -1,65 +1,73 @@
 ---
 name: unknown_workflow_controlnet_video_lora_34
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9565
-common_nodes: [Audio Duration (mtb), CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJ, ImageResizeKJv2, IndexTTS2Run, Int, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MaxNode, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveStringMultiline, SaveAudio, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy anythingIndexSwitch, easy cleanGpuUsed]
+frequency: 3
+level: moderate
+coverage: 0.916667
+common_nodes: [CLIPVisionLoader, Fast Groups Bypasser (rgthree), ImageResizeKJv2, Int, LoadImage, LoadWanVideoT5TextEncoder, Note Plus (mtb), SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoMagCache, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy imageRemBg]
 problems: []
 missing: []
-members: [数字人/数字人/图生数字人、动物、MultiTalk + IndexTTS2语音克隆_2004539486237327361.json, 视频生成/图生视频/图生数字人、动物、角色--MultiTalk+IndexTTS2语音克隆_1936336489322041346.json]
+members: ["平台全量/Magref 三图参考人物一致性视频生成,智能描述极速版-StarAI_1938191803185020930.json", 视频生成/图生视频/Magref 全自动单图参考人物一致性视频生成 uni3c镜头控制+Lightx2v极速版_1937589913980440578.json, 视频生成/图生视频/Magref 双图参考人物一致性视频生成 uni3c镜头控制+闪电极速版-StarAI_1937919496172519425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_34
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/图生数字人、动物、MultiTalk + IndexTTS2语音克隆_2004539486237327361.json、视频生成/图生视频/图生数字人、动物、角色--MultiTalk+IndexTTS2语音克隆_1936336489322041346.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Magref 三图参考人物一致性视频生成,智能描述极速版-StarAI_1938191803185020930.json、视频生成/图生视频/Magref 全自动单图参考人物一致性视频生成 uni3c镜头控制+Lightx2v极速版_1937589913980440578.json、视频生成/图生视频/Magref 双图参考人物一致性视频生成 uni3c镜头控制+闪电极速版-StarAI_1937919496172519425.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Audio Duration (mtb)`
+全部 3 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJ`
+- `Fast Groups Bypasser (rgthree)`
 - `ImageResizeKJv2`
-- `IndexTTS2Run`
 - `Int`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `MaxNode`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `VHS_LoadAudioUpload`
+- `Note Plus (mtb)`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
 - `WanVideoEncode`
 - `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
+- `WanVideoMagCache`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy anythingIndexSwitch`
-- `easy cleanGpuUsed`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTeaCache` —— 1/2 个有
+- `CR Text` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `ImageConcanate` —— 2/3 个有
+- `ImpactSwitch` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `easy imageScaleDownToSize` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `AddLabel` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy globalSeed` —— 1/3 个有
 
 ## 典型参数
 
@@ -71,4 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

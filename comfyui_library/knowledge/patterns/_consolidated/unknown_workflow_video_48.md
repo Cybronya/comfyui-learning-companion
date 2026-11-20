@@ -1,39 +1,43 @@
 ---
 name: unknown_workflow_video_48
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.719
-common_nodes: [LoadImage, Qwen3_VQA, RHHiddenNodes, RH_Sora2_I2V, RH_Translator, SaveVideo, ShowText|pysssss, Text Multiline, VHS_VideoCombine, easy anythingIndexSwitch, easy showAnything]
+coverage: 0.901
+common_nodes: [BiRefNet_Hugo, InspyrenetRembg, LoadImage, MaskPreview+, MaskToImage, PreviewImage, SaveImage, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S产品图自动变高清视频-分镜提示词_1998643899310727169.json, 视频生成/图生视频/全能视频S产品视频-高清-提示词优化版_1985607215363117058.json, 视频生成/图生视频/全能视频S静态产品图片转化为专业的视频广告内容_1998575917553344513.json, 视频生成/图生视频/全能视频S静态产品图片转化为专业的视频广告内容，提示词自动化_1998633467942461442.json]
+members: [图片生成/图生图/万能抠图 细到发丝｜BiRefNet_V2-_Inspyrenet_Rembg_2079019985149714434.json, 图片生成/图生图/万能抠图 细到发丝｜BiRefNet_V2-_Inspyrenet_Rembg_2079876944308563969.json, 图片生成/图生图/抠图扣视频｜细到发丝_2088152155160137730.json, 图片生成/图生图/抠图扣视频｜细到发丝_2088172223516463106.json, 平台全量/抠图扣视频｜细到发丝｜BiRefNet V2- Inspyrenet Rembg多流合集_2087078373414756354.json, 平台全量/抠图｜细到发丝｜BiRefNet V2- Inspyrenet Rembg_2078241512596533249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_48
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频S产品图自动变高清视频-分镜提示词_1998643899310727169.json、视频生成/图生视频/全能视频S产品视频-高清-提示词优化版_1985607215363117058.json、视频生成/图生视频/全能视频S静态产品图片转化为专业的视频广告内容_1998575917553344513.json、视频生成/图生视频/全能视频S静态产品图片转化为专业的视频广告内容，提示词自动化_1998633467942461442.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/万能抠图 细到发丝｜BiRefNet_V2-_Inspyrenet_Rembg_2079019985149714434.json、图片生成/图生图/万能抠图 细到发丝｜BiRefNet_V2-_Inspyrenet_Rembg_2079876944308563969.json、图片生成/图生图/抠图扣视频｜细到发丝_2088152155160137730.json、图片生成/图生图/抠图扣视频｜细到发丝_2088172223516463106.json、平台全量/抠图扣视频｜细到发丝｜BiRefNet V2- Inspyrenet Rembg多流合集_2087078373414756354.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BiRefNet_Hugo`
+- `InspyrenetRembg`
 - `LoadImage`
-- `Qwen3_VQA`
-- `RHHiddenNodes`
-- `RH_Sora2_I2V`
-- `RH_Translator`
-- `SaveVideo`
-- `ShowText|pysssss`
-- `Text Multiline`
+- `MaskPreview+`
+- `MaskToImage`
+- `PreviewImage`
+- `SaveImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `BiRefNet_ModelLoader_Zho` —— 3/6 个有
+- `BiRefNet_Zho` —— 3/6 个有
+- `Fast Groups Muter (rgthree)` —— 3/6 个有
+- `YK_LoadImageFromURL` —— 2/6 个有
 
 ## 典型参数
 

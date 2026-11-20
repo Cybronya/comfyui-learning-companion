@@ -1,80 +1,77 @@
 ---
 name: unknown_workflow_sampler_unet_vae_159
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.867286
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.5795
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/人像VLOG丨MiniMax-H3丨三图参考·音画生成_2099794040656060418.json, 图片生成/图生图/全能参考视频_Minimax H3_v2_2107298598168915969.json, 图片生成/图生图/剧情短片丨MiniMax H3丨双图参考·有声视频_2112107687327649793.json, 图片生成/文生图/H3fast-v2全参加速_2110710299581046785.json, 视频生成/图生视频/(0713)MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2088910957308370946.json, 视频生成/图生视频/(0715)MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2088947852180545538.json, 视频生成/图生视频/minimax   h3 最强动作迁移_2089285244263424001.json]
+members: [图片生成/图生图/Qwen Image2.1 角色四视图生成（短剧通用）_2109421554764439554.json, 图片生成/图生图/Qwen-image2.1 空间折叠流之万法编辑_2103006271149531137.json, 图片生成/图生图/Qwen2.1 抠图V2_2107650772061220865.json, 图片生成/图生图/qwen2.1图片编辑_2104273369309995009.json, 图片生成/图生图/角色资产四视图极速版Qwen image 2.1 4(8)步加速_2103425351551635458.json, 图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json, 图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2108373842572959745.json, 图片生成/文生图/心然·寻源-qwen-iamge2.1图像编辑_2101982996449554433.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_159
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/人像VLOG丨MiniMax-H3丨三图参考·音画生成_2099794040656060418.json、图片生成/图生图/全能参考视频_Minimax H3_v2_2107298598168915969.json、图片生成/图生图/剧情短片丨MiniMax H3丨双图参考·有声视频_2112107687327649793.json、图片生成/文生图/H3fast-v2全参加速_2110710299581046785.json、视频生成/图生视频/(0713)MiniMaxH3 参考生视频（量化加速版） _ 文本 图像 音频 视频_2088910957308370946.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen Image2.1 角色四视图生成（短剧通用）_2109421554764439554.json、图片生成/图生图/Qwen-image2.1 空间折叠流之万法编辑_2103006271149531137.json、图片生成/图生图/Qwen2.1 抠图V2_2107650772061220865.json、图片生成/图生图/qwen2.1图片编辑_2104273369309995009.json、图片生成/图生图/角色资产四视图极速版Qwen image 2.1 4(8)步加速_2103425351551635458.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `QwenImage21Cache`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 6/7 个有
-- `CreateVideo` —— 5/7 个有
-- `LoraLoaderModelOnly` —— 5/7 个有
-- `ModelAttentionBackend` —— 5/7 个有
-- `PrimitiveStringMultiline` —— 5/7 个有
-- `SaveVideo` —— 5/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/7 个有
-- `LoadAudio` —— 3/7 个有
-- `SolAttnMiniMax` —— 3/7 个有
-- `VHS_LoadVideo` —— 3/7 个有
-- `ComfyMiniMaxH3Director` —— 2/7 个有
-- `ImageResizeKJv2` —— 2/7 个有
-- `MiniMaxH3BlockCacheT8` —— 2/7 个有
-- `MiniMaxH3SigmaShift` —— 2/7 个有
-- `PathchSageAttentionKJ` —— 2/7 个有
-- `VHS_VideoCombine` —— 2/7 个有
-- `BlockSparseAttention` —— 1/7 个有
-- `GetNode` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `ImageScaleToTotalPixels` —— 1/7 个有
-- `MiniMaxH3AddGuide` —— 1/7 个有
-- `ModelPreviewOverrideKJ` —— 1/7 个有
-- `PainterVRAM` —— 1/7 个有
-- `RTXVideoSuperResolution` —— 1/7 个有
-- `SetNode` —— 1/7 个有
-- `UniBlockSwapTE` —— 1/7 个有
-- `easy positive` —— 1/7 个有
+- `ResolutionSelector` —— 7/8 个有
+- `GetNode` —— 6/8 个有
+- `SetNode` —— 6/8 个有
+- `ComfySwitchNode` —— 5/8 个有
+- `Text` —— 5/8 个有
+- `忽略多组孤海` —— 4/8 个有
+- `CR Prompt Text` —— 2/8 个有
+- `BatchImagesNode` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 1/8 个有
+- `Seed (rgthree)` —— 1/8 个有
+- `TextGenerateLTX2Prompt` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 35 | 8 - 40 | 8 | 68% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 8 | 28% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 1024 | 1024 - 2048 | 8 | 71% |
+| 高度 | 1024 | 1024 - 1280 | 8 | 92% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 35，观测区间 8 - 40，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，8 个样本，取值分散，一致性仅 28%
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 2048，8 个样本
+- 高度 中位数 1024，观测区间 1024 - 1280，8 个样本，取值集中（一致性 92%）

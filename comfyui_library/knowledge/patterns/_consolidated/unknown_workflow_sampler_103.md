@@ -3,42 +3,36 @@ name: unknown_workflow_sampler_103
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.793
-common_nodes: [1hew_AudioDuration, CR Prompt Text, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, RunningHub FlashTalk Loader, RunningHub FlashTalk Sampler, SaveVideo, easy showAnything]
+coverage: 0.812
+common_nodes: [Fast Groups Muter (rgthree), ImageConcanate, LoadImage, PreviewAny, SaveImage, SenseNova_SM_Model, SenseNova_SM_Sampler]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--FlashTalk数字人+Qwen TTS声音预设-一张图生成数字主播_2029760205487087617.json, 音频生成/音频生成/AA--FlashTalk数字人+声音克隆（情感控制）_2029525701015117826.json]
+members: [图片生成/文生图/SenseNova U1 图像编辑 文生图 视觉理解集合 商汤大模型_2053080764119560193.json, 图片生成/文生图/SenseNova图像生成、图像编辑与问答三合一工作流_2052920004227674114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_103
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AA--FlashTalk数字人+Qwen TTS声音预设-一张图生成数字主播_2029760205487087617.json、音频生成/音频生成/AA--FlashTalk数字人+声音克隆（情感控制）_2029525701015117826.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/SenseNova U1 图像编辑 文生图 视觉理解集合 商汤大模型_2053080764119560193.json、图片生成/文生图/SenseNova图像生成、图像编辑与问答三合一工作流_2052920004227674114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `1hew_AudioDuration`
-- `CR Prompt Text`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
+- `Fast Groups Muter (rgthree)`
+- `ImageConcanate`
 - `LoadImage`
-- `RunningHub FlashTalk Loader`
-- `RunningHub FlashTalk Sampler`
-- `SaveVideo`
-- `easy showAnything`
+- `PreviewAny`
+- `SaveImage`
+- `SenseNova_SM_Model`
+- `SenseNova_SM_Sampler`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `Qwen3TTSCustomVoice` —— 1/2 个有
-- `Qwen3TTSModelLoader` —— 1/2 个有
-- `SaveAudio` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
 
 ## 典型参数
 

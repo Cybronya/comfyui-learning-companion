@@ -1,82 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_88
 type: Unknown Workflow
-frequency: 17
+frequency: 18
 level: moderate
-coverage: 0.504353
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.463056
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Float, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/Scail2视频角色替换又快又好_2065296557842460673.json, 图片生成/图生图/【遇见AI】wan2.1 SCAIL2 角色替换 动作迁移 姿势参考_2065988482132168705.json, 图片生成/图生图/余温｜麦田动漫工作室专属的人物替换视频换脸处理工作流_2114619410991378434.json, 图片生成/图生图/余温｜麦田动漫工作室专属的动作迁移加视频换背景换脸工作流_2114617576302145537.json, 图片生成/图生图/全新动作模仿 SCAIL2！单人or双人（懒人版）_2066568712282525697.json, 数字人/数字人/Wan21_SCAIL2多角色动作迁移_2064537633363156994.json, 视频生成/图生视频/SCAIL2全新单双人动作模仿_2065273822449856514.json, 视频生成/图生视频/SCAIL2双人+单人角色替换！视频换人_2067601389454454786.json, 视频生成/图生视频/SCAIL2双人+单人角色替换！视频换人_2067602340542246914.json, 视频生成/图生视频/SCAIL2视频单双人动作模仿_2065718753207349250.json, 视频生成/图生视频/Scail2视频角色替换_2065006346432503810.json, 视频生成/图生视频/全新动作模仿 SCAIL2_2066834222895161346.json, 视频生成/图生视频/全新动作模仿 SCAIL2！单人or双人角色替换_2065258951524048898.json, 视频生成/图生视频/全新动作模仿 SCAIL2！单人or双人（懒人版）_2067171226954584065.json, 视频生成/图生视频/全新走路跳舞动作模仿迁移复制转移 SCAIL2！单人or双人（懒人版）_2069078995290906625.json, 视频生成/图生视频/动作迁移 双人_单人视频换人 角色替换SCAIL2_2066697586874085378.json, 视频生成/图生视频/双人多人全新动作迁移复制对打_2065406697937657858.json]
+members: [图片生成/图生图/AITUDOU-MiniMax+H3+lightx2v+8step+高动态加速流_2088160159993516034.json, 图片生成/图生图/AITUDOU-MiniMax_H3_短剧公司版本_2113459502426185730.json, 图片生成/文生图/MiniMax H3 短剧生成 _ 9图3音色参考 _ 省算力高动态加速版_2091615916835557378.json, 平台全量/AITUDOU-MiniMax H3 Skill2.0 全能参考版单采_2099072668573196290.json, 平台全量/MiniMax H3 短剧创作-分镜视频工作流_2115395659619721218.json, 平台全量/MiniMax_H3_短剧创作-分镜视频工作流_2117815235531853825.json, 平台全量/短剧制作全流程-MiniMax H3 分镜视频工作流_2117640914402373633.json, 视频生成/图生视频/AITUDOU-MiniMax H3 Skill2.0 全能参考版单采_2098354620342030337.json, 视频生成/图生视频/AITUDOU-MiniMax H3 打斗-单采_2095430334602113026.json, 视频生成/图生视频/AITUDOU-MiniMax H3 打斗-双采_2095430950619537409.json, 视频生成/图生视频/AITUDOU-MiniMax H3 短剧公司版本_2113173574050729986.json, 视频生成/图生视频/AITUDOU-MiniMax H3 配合Skill短片自用-双采_2093313656774807553.json, 视频生成/图生视频/Fused-MiniMax H3 战斗增强-1280单采_2097598203356073986.json, 视频生成/图生视频/Fused-MiniMax H3-战斗增强-双采_2097606528458121218.json, 视频生成/图生视频/H3最强电影LORA+巅峰双采去油PRO版_2100507019949203458.json, 视频生成/图生视频/MiniMax_H3-单采_2106176867115036673.json, 视频生成/文生视频/H3最强电影LORA+巅峰双采去油PRO版_2094788799023894529.json, 视频生成/文生视频/MiniMax H3 8.29_2093713039521566722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_88
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Scail2视频角色替换又快又好_2065296557842460673.json、图片生成/图生图/【遇见AI】wan2.1 SCAIL2 角色替换 动作迁移 姿势参考_2065988482132168705.json、图片生成/图生图/余温｜麦田动漫工作室专属的人物替换视频换脸处理工作流_2114619410991378434.json、图片生成/图生图/余温｜麦田动漫工作室专属的动作迁移加视频换背景换脸工作流_2114617576302145537.json、图片生成/图生图/全新动作模仿 SCAIL2！单人or双人（懒人版）_2066568712282525697.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/AITUDOU-MiniMax+H3+lightx2v+8step+高动态加速流_2088160159993516034.json、图片生成/图生图/AITUDOU-MiniMax_H3_短剧公司版本_2113459502426185730.json、图片生成/文生图/MiniMax H3 短剧生成 _ 9图3音色参考 _ 省算力高动态加速版_2091615916835557378.json、平台全量/AITUDOU-MiniMax H3 Skill2.0 全能参考版单采_2099072668573196290.json、平台全量/MiniMax H3 短剧创作-分镜视频工作流_2115395659619721218.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 18 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
-- `BatchImagesNode`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
-- `ImageResizeKJv2`
+- `ComfyMathExpression`
+- `Float`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `Text`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorTransfer` —— 16/17 个有
-- `GetImageRangeFromBatch` —— 16/17 个有
-- `WanChunkFeedForward` —— 16/17 个有
-- `GetNode` —— 14/17 个有
-- `ImageConcatMulti` —— 14/17 个有
-- `SetNode` —— 14/17 个有
-- `ImageFromBatch` —— 13/17 个有
-- `PreviewAny` —— 13/17 个有
-- `PrimitiveInt` —— 13/17 个有
-- `SimpleMath+` —— 13/17 个有
-- `ttN int` —— 13/17 个有
-- `PreviewImage` —— 12/17 个有
-- `easy cleanGpuUsed` —— 11/17 个有
-- `JjkText` —— 9/17 个有
-- `Seed` —— 8/17 个有
-- `AILab_QwenVL` —— 7/17 个有
-- `easy imageRemBg` —— 6/17 个有
-- `ShowText|pysssss` —— 4/17 个有
-- `InversionDemoLazySwitch` —— 3/17 个有
-- `PrimitiveBoolean` —— 3/17 个有
-- `INTConstant` —— 2/17 个有
-- `Label (rgthree)` —— 2/17 个有
-- `LayerMask: RemBgUltra` —— 2/17 个有
-- `SaveVideoNode` —— 2/17 个有
-- `RH_Translator` —— 1/17 个有
-- `SaveImage` —— 1/17 个有
-- `TT_img_enc` —— 1/17 个有
-- `WanAnimatePlus SetBlockSwap` —— 1/17 个有
-- `WanVideoBlockSwap` —— 1/17 个有
-- `WanVideoSetBlockSwap` —— 1/17 个有
-- `wanBlock_Swap` —— 1/17 个有
+- `GetNode` —— 17/18 个有
+- `SetNode` —— 17/18 个有
+- `Fast Groups Bypasser (rgthree)` —— 16/18 个有
+- `H3SigmaRefiner` —— 9/18 个有
+- `Label (rgthree)` —— 9/18 个有
+- `LoadAudio` —— 8/18 个有
+- `SplitSigmas` —— 8/18 个有
+- `LTXVConcatAVLatent` —— 6/18 个有
+- `LTXVSeparateAVLatent` —— 6/18 个有
+- `MinimaxH3LatentUpscaler3D` —— 6/18 个有
+- `ConditioningZeroOut` —— 5/18 个有
+- `ModelAttentionBackend` —— 5/18 个有
+- `SelfLiftH3Sampler` —— 5/18 个有
+- `ExtendIntermediateSigmas` —— 3/18 个有
+- `孤海注释` —— 3/18 个有
+- `AudioSeparation` —— 2/18 个有
+- `EmptyImage` —— 2/18 个有
+- `PreviewImage` —— 2/18 个有
+- `MiniMaxH3BlockCacheT8` —— 1/18 个有
+- `MiniMaxH3VoiceLibraryLoadT8` —— 1/18 个有
+- `SaveImage` —— 1/18 个有
+- `SigmasGraph` —— 1/18 个有
 
 ## 典型参数
 

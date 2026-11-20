@@ -2,64 +2,73 @@
 name: unknown_workflow_sampler_clip_unet_178
 type: Unknown Workflow
 frequency: 8
-level: strong
-coverage: 0.97925
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.930375
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, ImageConcanate, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/文生图 FLUX 3 Image Klein-_2112067114927480834.json, 图片生成/文生图/文生图Flux2-Klein_2080293479414059009.json, 图片生成/文生图/最新ERNIE-Image-Turbo 文生图_2046566486847787009.json, 图片生成/文生图/治愈极简印象油画风｜日系氛围感风景插画｜温柔治愈扁平厚涂 CG 光影美学_2046565807789969410.json, 图片生成/文生图/空白工作流_2033896316320882689.json, 图片生成/文生图/鞋履_1914548552176205826.json, 图片生成/文生图/鞋履_2040302614029537281.json, 图片生成/文生图/黑森林Flux2文生图_1993588775534133249.json]
+members: [图片生成/图生图/Flux2 Klein-9B-产品迁移完美细节多图编辑+放大_2012088188105400322.json, 图片生成/图生图/Flux2 Klein-多图编辑-4B加速版_2012124773035286530.json, 图片生成/图生图/Flux2-Klein+产品精修_2017042202211389442.json, 图片生成/图生图/Flux2-Klein+模特换姿势_2012147180743692290.json, 图片生成/图生图/Flux2-Klein+模特换装_2012142481311277058.json, 图片生成/图生图/Flux2-Klein-9b(仅启用图片编辑，可转角度重打光）_2012726330126766082.json, 图片生成/图生图/klein单图编辑——修改版_2033387043891449857.json, 平台全量/Klein编辑图片换脸换装服装迁移风格迁移_2036249839138250754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_178
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/文生图 FLUX 3 Image Klein-_2112067114927480834.json、图片生成/文生图/文生图Flux2-Klein_2080293479414059009.json、图片生成/文生图/最新ERNIE-Image-Turbo 文生图_2046566486847787009.json、图片生成/文生图/治愈极简印象油画风｜日系氛围感风景插画｜温柔治愈扁平厚涂 CG 光影美学_2046565807789969410.json、图片生成/文生图/空白工作流_2033896316320882689.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein-9B-产品迁移完美细节多图编辑+放大_2012088188105400322.json、图片生成/图生图/Flux2 Klein-多图编辑-4B加速版_2012124773035286530.json、图片生成/图生图/Flux2-Klein+产品精修_2017042202211389442.json、图片生成/图生图/Flux2-Klein+模特换姿势_2012147180743692290.json、图片生成/图生图/Flux2-Klein+模特换装_2012142481311277058.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：98%
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `ImageConcanate`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 7/8 个有
-- `ConditioningZeroOut` —— 6/8 个有
-- `CR Text` —— 2/8 个有
-- `FlexLoraLoaderModelOnly` —— 2/8 个有
-- `FluxGuidance` —— 2/8 个有
-- `TTResolutionSelector` —— 2/8 个有
-- `EmptySD3LatentImage` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 7/8 个有
+- `GetImageSize` —— 6/8 个有
+- `PreviewImage` —— 6/8 个有
+- `ConditioningZeroOut` —— 5/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `ImageUpscaleWithModel` —— 2/8 个有
+- `JWFloat` —— 2/8 个有
+- `QwenMultiangleCameraNode` —— 2/8 个有
+- `QwenMultiangleLightningNode` —— 2/8 个有
+- `UpscaleModelLoader` —— 2/8 个有
+- `easy imageSize` —— 2/8 个有
+- `CR Text` —— 1/8 个有
+- `ConstrainImage|pysssss` —— 1/8 个有
+- `ImagePadForOutpaint` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 1/8 个有
+- `OpenposePreprocessor` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `easy seed` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 18 | 6 - 20 | 8 | 60% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 18，观测区间 6 - 20，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

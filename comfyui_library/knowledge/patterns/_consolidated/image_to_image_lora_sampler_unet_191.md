@@ -1,38 +1,37 @@
 ---
 name: image_to_image_lora_sampler_unet_191
 type: Image To Image
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.788333
-common_nodes: [CFGNorm, CLIPLoader, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.92875
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextImageScale, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/qwen-imaget批直出电商多图 自定义姿态与图片数量提示词控制图片数量_2097728974460903425.json, 图片生成/图生图/qwen-imaget直出电商多图【智能逻辑】【自定义姿态与图片数量_使用方法请查看工作流介绍_】_2057372450048008194.json, 图片生成/图生图/图片转桌面手办（Qwen+编辑）_1962479307606110209.json]
+members: [图片生成/图生图/大凯辰光 Qwen2511-96种相机角度转换+强一致性工作流_2009524069233860609.json, 图片生成/图生图/姿态迁移qwenedit-anypose_2003050010809888769.json, 图片生成/图生图/姿态迁移（多人）qwenedit-anypose_2007344713338195969.json, 图片生成/文生图/2511+llm 多 prompt改_2037368108129722369.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_191
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/qwen-imaget批直出电商多图 自定义姿态与图片数量提示词控制图片数量_2097728974460903425.json、图片生成/图生图/qwen-imaget直出电商多图【智能逻辑】【自定义姿态与图片数量_使用方法请查看工作流介绍_】_2057372450048008194.json、图片生成/图生图/图片转桌面手办（Qwen+编辑）_1962479307606110209.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/大凯辰光 Qwen2511-96种相机角度转换+强一致性工作流_2009524069233860609.json、图片生成/图生图/姿态迁移qwenedit-anypose_2003050010809888769.json、图片生成/图生图/姿态迁移（多人）qwenedit-anypose_2007344713338195969.json、图片生成/文生图/2511+llm 多 prompt改_2037368108129722369.json）
 
 - **类型**：Image To Image
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `JjkText`
+- `FluxKontextImageScale`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEdit`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
@@ -40,36 +39,36 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageSharpen` —— 2/3 个有
-- `Qwen3_VQA` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `workflow>内部提示词` —— 2/3 个有
-- `workflow>文本处理` —— 2/3 个有
-- `workflow>逻辑判断` —— 2/3 个有
-- `孤海注释` —— 1/3 个有
+- `CR Prompt List` —— 1/4 个有
+- `Display Any (rgthree)` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `PIP_图像联结` —— 1/4 个有
+- `Textbox` —— 1/4 个有
+- `ZML_TextLine` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

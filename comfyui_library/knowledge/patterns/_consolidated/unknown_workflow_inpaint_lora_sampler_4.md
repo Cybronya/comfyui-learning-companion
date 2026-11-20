@@ -1,99 +1,95 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_4
 type: Unknown Workflow
-frequency: 12
+frequency: 16
 level: strong
-coverage: 0.893167
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, ConstrainImage|pysssss, DetailerForEach, DualCLIPLoader, EmptyImage, FaceAnalysisModels, FaceBoundingBox, FluxGuidance, GrowMaskWithBlur, Image Comparer (rgthree), ImageConcanate, ImageCrop, ImageResize+, ImageToMask, ImpactGaussianBlurMask, InpaintModelConditioning, KSampler, LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, MaskToImage, MaskToSEGS, PreviewImage, ReduxAdvanced, ResizeMask, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, preview_mask]
+coverage: 0.953125
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, GetImageRangeFromBatch, Image To Mask, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ColorImage, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, RepeatImageBatch, ResizeImageMaskNode, SamplerCustomAdvanced, VAEDecodeTiled, VAEEncodeForInpaint, VHS_LoadVideo, VHS_VideoInfoLoaded]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX Redux+ACE++ 换脸_2001943816934420482.json, 图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_1895719152445751298.json, 图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2012087167392157697.json, 图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2020043139452510210.json, 图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2047506205597241345.json, 图片生成/图生图/FLUX Redux+ACE高清换脸_2066039713353523202.json, 图片生成/图生图/FLUX+Redux+ACE+++换脸工作流_2042518669216976898.json, 图片生成/图生图/FLUX_Redux+ACE++_换脸工作流_2098910351919243265.json, 图片生成/图生图/FLUX_Redux+ACE++_换脸工作流_2098972141172649985.json, 图片生成/图生图/全自动换头换脸  指定换脸真实自然 写实换脸换装_2091707597454925826.json, 图片生成/图生图/无痕换脸-FLUX+Redux+ACE_2089616148764643330.json, 图片生成/图生图/角色一致性换脸工作流_2044033278356754433.json]
+members: [图片生成/图生图/K老师_专属_去水印，去字幕，去模糊_2069077577020559362.json, 图片生成/图生图/YJ-ltx2.3去水印_2059470618550161409.json, 图片生成/图生图/全自动一键去水印+字幕+修复模糊+高清放大_2054218745601642497.json, 图片生成/图生图/去水印，去字幕（豆包水印去除)_2072800070940053506.json, 图片生成/文生图/LTX2.3-ICEdit-Insight去水印+去字幕_2073320595470770178.json, 图片生成/文生图/LTX2.3-ICEdit-Insight去水印_去字幕_去模糊_高清化_2073320398938267649.json, 图片生成/文生图/去模糊，高清LTX2.3_iclora_insight工作流_2057411893463179265.json, 图片生成/文生图/四合一去水印_字幕_修复模糊_高清放大_2057406073866379265.json, 图片生成/文生图/视频全自动一键去水印_字幕_修复模糊_高清放大全自动一键去水印_字幕_修复模糊_高清放大_2068564459328729090.json, 平台全量/(自用) LTX2.3 字幕水印修复、高清、去模糊工作流_2059272599074594817.json, 平台全量/LTX2.3极速去水印去字幕去模糊高清即梦豆包去水印_2101873762080747522.json, 平台全量/ltx23智能一键去字幕_2074494133229674497.json, 平台全量/seedance2.0视频处理工具去水印、去字幕（ltx2.3模型最新lora）_2055285710722215938.json, 平台全量/视频去字幕_去模糊_高清化_2074861201686876162.json, 视频生成/图生视频/一键去字幕水印去模糊_2094407100247134209.json, 视频生成/图生视频/四合一去水印+_+字幕+_+修复模糊+_+高清放大_2059081651447222274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_4
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/FLUX Redux+ACE++ 换脸_2001943816934420482.json、图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_1895719152445751298.json、图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2012087167392157697.json、图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2020043139452510210.json、图片生成/图生图/FLUX Redux+ACE++ 换脸工作流_2047506205597241345.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/K老师_专属_去水印，去字幕，去模糊_2069077577020559362.json、图片生成/图生图/YJ-ltx2.3去水印_2059470618550161409.json、图片生成/图生图/全自动一键去水印+字幕+修复模糊+高清放大_2054218745601642497.json、图片生成/图生图/去水印，去字幕（豆包水印去除)_2072800070940053506.json、图片生成/文生图/LTX2.3-ICEdit-Insight去水印+去字幕_2073320595470770178.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
+- **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `ConstrainImage|pysssss`
-- `DetailerForEach`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `FaceAnalysisModels`
-- `FaceBoundingBox`
-- `FluxGuidance`
-- `GrowMaskWithBlur`
-- `Image Comparer (rgthree)`
-- `ImageConcanate`
-- `ImageCrop`
-- `ImageResize+`
-- `ImageToMask`
-- `ImpactGaussianBlurMask`
-- `InpaintModelConditioning`
-- `KSampler`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: CropByMask V2`
-- `LayerUtility: RestoreCropBox`
-- `LoadImage`
+- `CheckpointLoaderSimple`
+- `GetImageRangeFromBatch`
+- `Image To Mask`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ColorImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoraLoaderModelOnly`
-- `MaskToImage`
-- `MaskToSEGS`
-- `PreviewImage`
-- `ReduxAdvanced`
-- `ResizeMask`
-- `SaveImage`
-- `StyleModelLoader`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `easy cleanGpuUsed`
-- `preview_mask`
+- `ManualSigmas`
+- `PathchSageAttentionKJ`
+- `RandomNoise`
+- `RepeatImageBatch`
+- `ResizeImageMaskNode`
+- `SamplerCustomAdvanced`
+- `VAEDecodeTiled`
+- `VAEEncodeForInpaint`
+- `VHS_LoadVideo`
+- `VHS_VideoInfoLoaded`
 
 **可变部分**（部分 workflow 才有）：
-- `TeaCache` —— 11/12 个有
-- `GetImageSize+` —— 1/12 个有
-- `GetNode` —— 1/12 个有
-- `If ANY execute A else B` —— 1/12 个有
-- `Image Tiled` —— 1/12 个有
-- `ImageConcanateOfUtils` —— 1/12 个有
-- `ImageFromBatch` —— 1/12 个有
-- `ImageListToBatch+` —— 1/12 个有
-- `ImagePass` —— 1/12 个有
-- `ImageUpscaleWithModel` —— 1/12 个有
-- `Images to RGB` —— 1/12 个有
-- `ImpactCompare` —— 1/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
-- `PrimitiveInt` —— 1/12 个有
-- `SeedVR2LoadDiTModel` —— 1/12 个有
-- `SeedVR2LoadVAEModel` —— 1/12 个有
-- `SeedVR2VideoUpscaler` —— 1/12 个有
-- `SetNode` —— 1/12 个有
-- `TTP_Image_Assy` —— 1/12 个有
-- `TTP_Image_Tile_Batch` —— 1/12 个有
-- `TTP_Tile_image_size` —— 1/12 个有
-- `UpscaleModelLoader` —— 1/12 个有
-- `easy imageBatchToImageList` —— 1/12 个有
+- `Seed (rgthree)` —— 12/16 个有
+- `SimpleMath+` —— 12/16 个有
+- `VHS_VideoCombine` —— 12/16 个有
+- `easy imageSize` —— 12/16 个有
+- `Text Multiline` —— 10/16 个有
+- `ImageConcatMulti` —— 9/16 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/16 个有
+- `INTConstant` —— 5/16 个有
+- `ComfyMathExpression` —— 4/16 个有
+- `CreateVideo` —— 4/16 个有
+- `GetImageSize` —— 4/16 个有
+- `Int` —— 4/16 个有
+- `LTXVAudioVAEDecode` —— 4/16 个有
+- `PrimitiveInt` —— 4/16 个有
+- `SaveVideo` —— 4/16 个有
+- `CR String To Combo` —— 3/16 个有
+- `ImpactStringSelector` —— 3/16 个有
+- `MathExpression|pysssss` —— 3/16 个有
+- `SplitStringByDelimiter` —— 3/16 个有
+- `easy showAnything` —— 3/16 个有
+- `BatchImagesNode` —— 1/16 个有
+- `CR Prompt Text` —— 1/16 个有
+- `LoadVideo` —— 1/16 个有
+- `PlaySound|pysssss` —— 1/16 个有
+- `RIFE VFI` —— 1/16 个有
+- `VAEDecode` —— 1/16 个有
+- `忽略多组孤海` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 15 | 15 - 15 | 12 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | normal | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 宽度 | 97 | 97 - 97 | 16 | 100% |
+| 高度 | 25 | 25 - 25 | 16 | 100% |
 
 ## 常见问题
 
@@ -101,8 +97,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 15，观测区间 15 - 15，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 normal，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，16 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，16 个样本，取值集中（一致性 100%）

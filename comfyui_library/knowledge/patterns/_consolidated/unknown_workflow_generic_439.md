@@ -1,42 +1,38 @@
 ---
 name: unknown_workflow_generic_439
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.945833
-common_nodes: [CR Prompt Text, CR Text, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, StringConcatenate, Text, easy showAnything]
+coverage: 0.913143
+common_nodes: [CR Prompt Text, LoadImage, RH_Jimeng4_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/9宫格分镜稳定版_2086323864497377281.json, 图片生成/图生图/【xscm】横竖屏9宫格稳定_2032477724102627330.json, 图片生成/文生图/【CQ808】25宫格-竖屏稳定版本V3.0_2019809108249026562.json, 图片生成/文生图/【CQ808】九宫格_竖版_2020833810031579138.json, 图片生成/文生图/【海皮】横竖屏9宫格分镜稳定版_2027391147160641537.json, 图片生成/文生图/【海皮】横竖屏9宫格稳定版_2028685414927699970.json]
+members: [图片生成/图生图/Seedream 4.0 -即梦4.0图像编辑_1966151529008984066.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成商务证件照_1967828450574741506.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成真人手办_1967760399078756353.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成美式证件照_1967520561960194049.json, 图片生成/图生图/Seedream4.0(即梦4.0)生成艺术肖像照_1969417687984205825.json, 图片生成/图生图/（RH版）即梦4.0图像编辑单图V1_1965514036240633858.json, 图片生成/图生图/（RH版）即梦4.0图像编辑双图V1_1965516818934808577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_439
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/9宫格分镜稳定版_2086323864497377281.json、图片生成/图生图/【xscm】横竖屏9宫格稳定_2032477724102627330.json、图片生成/文生图/【CQ808】25宫格-竖屏稳定版本V3.0_2019809108249026562.json、图片生成/文生图/【CQ808】九宫格_竖版_2020833810031579138.json、图片生成/文生图/【海皮】横竖屏9宫格分镜稳定版_2027391147160641537.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 4.0 -即梦4.0图像编辑_1966151529008984066.json、图片生成/图生图/Seedream4.0(即梦4.0)生成商务证件照_1967828450574741506.json、图片生成/图生图/Seedream4.0(即梦4.0)生成真人手办_1967760399078756353.json、图片生成/图生图/Seedream4.0(即梦4.0)生成美式证件照_1967520561960194049.json、图片生成/图生图/Seedream4.0(即梦4.0)生成艺术肖像照_1969417687984205825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CR Prompt Text`
-- `CR Text`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Image2Image`
+- `RH_Jimeng4_Image2Image`
 - `SaveImage`
-- `StringConcatenate`
-- `Text`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 5/6 个有
-- `JjkConcat` —— 4/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
+- `easy showAnything` —— 3/7 个有
+- `ImageConcanate` —— 2/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `PDIMAGE_LongerSize` —— 1/7 个有
 
 ## 典型参数
 

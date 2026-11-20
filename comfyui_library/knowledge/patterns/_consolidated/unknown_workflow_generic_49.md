@@ -1,36 +1,42 @@
 ---
 name: unknown_workflow_generic_49
 type: Unknown Workflow
-frequency: 21
+frequency: 24
 level: moderate
-coverage: 0.829857
-common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 0.926875
+common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS--双人语音克隆--8种情感控制_2036366094109249538.json, 音频生成/音频生成/IndexTTS2 单人音色克隆，三种情绪方案，简单易用_1965717630348886018.json, 音频生成/音频生成/IndexTTS2 双人对话，音色克隆，三种带情绪方案_1965718025867587585.json, 音频生成/音频生成/IndexTTS2单人音色克隆（三种带情绪方案）_1965583606653571073.json, 音频生成/音频生成/IndexTTS2双人对话_1966129270735147009.json, 音频生成/音频生成/IndexTTS2双人语音克隆（可调节情绪）_1966762830072623106.json, 音频生成/音频生成/IndexTTS2双人语音对话V1_1965493960078708737.json, 音频生成/音频生成/IndexTTS2双人音色克隆（带情绪）_1965583673481416706.json, 音频生成/音频生成/IndexTTS2双人音色克隆（带情绪）_1965679753703342082.json, 音频生成/音频生成/IndexTTS2双人音色克隆（带情绪）_2016823371333373954.json, 音频生成/音频生成/IndexTTS2史上最强音色克隆带语气情感_1991851411736514562.json, 音频生成/音频生成/IndexTTSV2 双人声音克隆_1965557718599782401.json, 音频生成/音频生成/tts-2情感参考_2077983399180066818.json, 音频生成/音频生成/tts_index2.json_2072938155275284482.json, 音频生成/音频生成/tts_index2.json_2076903926951137282.json, 音频生成/音频生成/【文字转音频】IndexTTS V2 带情绪的声音克隆 能生成一段音频，根据不同类型音调克隆声音_2006233294836338690.json, 音频生成/音频生成/克隆声音 情感参考_2059452394957791234.json, 音频生成/音频生成/克隆声音+情感参考-电商_2002264448452685826.json, 音频生成/音频生成/克隆声音+情感参考-阿浩_2026920393554006018.json, 音频生成/音频生成/文生语音---音色克隆情绪克隆IndexTTS2_1967970134105161730.json, 音频生成/音频生成/文生语音--音色克隆情绪克隆IndexTTS2_1969377518765678593.json]
+members: [图片生成/图生图/IndexTTS 2.5语音克隆V3_2087747979565428737.json, 平台全量/indextts2.5语音克隆_2118547836945125377.json, 数字人/数字人/IndexTTS 2.5情感文本控制语音克隆_2105621844203233282.json, 视频生成/文生视频/IndexTTS 2.5情感文本控制语音克隆_2100454570265767937.json, 音频生成/音频生成/IndexTTS 2.5 可控情感声音克隆_2088298059091496961.json, 音频生成/音频生成/IndexTTS 2.5 声音克隆_2088126566806151169.json, 音频生成/音频生成/IndexTTS 2.5 情感文本控制配音｜语气一句话控制 · 声音克隆 · 稳定采样_2087838493203582977.json, 音频生成/音频生成/IndexTTS 2.5 情感迁移 声音克隆（indextts2.5）_2087900181642694657.json, 音频生成/音频生成/IndexTTS 2.5 长文本语音克隆｜剧本旁白不限长度 · 自动分段 · 音色稳定v1_2087829803192901634.json, 音频生成/音频生成/IndexTTS 2.5_2088155807824302081.json, 音频生成/音频生成/IndexTTS 2.5声音克隆（情感向量控制）_2088841224718479361.json, 音频生成/音频生成/IndexTTS 2.5声音克隆（情感文本控制）_2088834886940581890.json, 音频生成/音频生成/IndexTTS 2.5多情绪控制语音克隆_2108107374111313922.json, 音频生成/音频生成/IndexTTS 2.5情感参考语音克隆_2087748014218764290.json, 音频生成/音频生成/IndexTTS 2.5情感参考语音克隆_2087829142862651394.json, 音频生成/音频生成/IndexTTS 2.5情感参考语音克隆_2088207276824944641.json, 音频生成/音频生成/IndexTTS 2.5情感向量控制语音克隆_2087748029699940353.json, 音频生成/音频生成/IndexTTS 2.5情感向量控制语音克隆_2087829153625231362.json, 音频生成/音频生成/IndexTTS 2.5情感向量控制语音克隆_2089188391467438081.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2087748042819723266.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2089196373471227906.json, 音频生成/音频生成/IndexTTS 2.5情感文本控制语音克隆_2094792884804476930.json, 音频生成/音频生成/IndexTTS2.5音频向量克隆语音克隆_2089230919512186882.json, 音频生成/音频生成/语音克隆IndexTTS 2.5情感文本控制_2106003808852729858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_49
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（音频生成/音频生成/IndexTTS--双人语音克隆--8种情感控制_2036366094109249538.json、音频生成/音频生成/IndexTTS2 单人音色克隆，三种情绪方案，简单易用_1965717630348886018.json、音频生成/音频生成/IndexTTS2 双人对话，音色克隆，三种带情绪方案_1965718025867587585.json、音频生成/音频生成/IndexTTS2单人音色克隆（三种带情绪方案）_1965583606653571073.json、音频生成/音频生成/IndexTTS2双人对话_1966129270735147009.json…）
+> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/IndexTTS 2.5语音克隆V3_2087747979565428737.json、平台全量/indextts2.5语音克隆_2118547836945125377.json、数字人/数字人/IndexTTS 2.5情感文本控制语音克隆_2105621844203233282.json、视频生成/文生视频/IndexTTS 2.5情感文本控制语音克隆_2100454570265767937.json、音频生成/音频生成/IndexTTS 2.5 可控情感声音克隆_2088298059091496961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：21
+- **样本数**：24
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 21 个 workflow 都包含：
-- `IndexTTS2Run`
+全部 24 个 workflow 都包含：
 - `LoadAudio`
 - `SaveAudio`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 13/21 个有
-- `CR Prompt Text` —— 10/21 个有
-- `AudioCrop` —— 7/21 个有
+- `CR Prompt Text` —— 22/24 个有
+- `T8_IndexTTS25_EmotionControl` —— 22/24 个有
+- `Float` —— 17/24 个有
+- `T8_IndexTTS25_SamplingConfig` —— 11/24 个有
+- `孤海注释` —— 5/24 个有
+- `AppParams` —— 1/24 个有
+- `T8_IndexTTS25_Pronunciation` —— 1/24 个有
+- `easy showAnything` —— 1/24 个有
 
 ## 典型参数
 

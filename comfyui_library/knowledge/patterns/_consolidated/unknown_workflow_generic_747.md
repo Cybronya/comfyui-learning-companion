@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_747
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.64075
-common_nodes: [CR Prompt Text, LoadImage, PreviewAny, RH_RhartImageNG31FlashImageToImage, SaveImage]
+coverage: 0.6912
+common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片2-图像编辑（RH低价版）_2062396139701366785.json, 图片生成/图生图/换装工作流_2080218570700713986.json, 图片生成/文生图/AI模特_2093953217888608257.json, 图片生成/文生图/全能图片2-图像编辑（RH低价版）_2099697626366177282.json]
+members: ["平台全量/史上最屌高清放大,降维打击图片版,SeedVR2_1938493195032682497.json", "平台全量/史上最屌高清放大,降维打击图片版_1938500988066004994.json", 平台全量/图像放大_超清放大_SeedVR2吊打SUPIR和TTP_V2_1938220288989401090.json, 平台全量/服装换装，羊毛大衣，_1988239319108378626.json, 平台全量/高清放大（SeedVR2）_1996257014185598978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_747
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片2-图像编辑（RH低价版）_2062396139701366785.json、图片生成/图生图/换装工作流_2080218570700713986.json、图片生成/文生图/AI模特_2093953217888608257.json、图片生成/文生图/全能图片2-图像编辑（RH低价版）_2099697626366177282.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/史上最屌高清放大,降维打击图片版,SeedVR2_1938493195032682497.json、平台全量/史上最屌高清放大,降维打击图片版_1938500988066004994.json、平台全量/图像放大_超清放大_SeedVR2吊打SUPIR和TTP_V2_1938220288989401090.json、平台全量/服装换装，羊毛大衣，_1988239319108378626.json、平台全量/高清放大（SeedVR2）_1996257014185598978.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Prompt Text`
+全部 5 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `LoadImage`
-- `PreviewAny`
-- `RH_RhartImageNG31FlashImageToImage`
 - `SaveImage`
+- `SeedVR2`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 2/4 个有
+- `SeedVR2BlockSwap` —— 3/5 个有
+- `ImageConcanate` —— 1/5 个有
+- `RH_Nano_Banana_Image2Image` —— 1/5 个有
 
 ## 典型参数
 

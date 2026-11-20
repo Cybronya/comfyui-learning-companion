@@ -1,51 +1,37 @@
 ---
 name: unknown_workflow_generic_775
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.64225
-common_nodes: [Get Image Size, Image Crop Location, Image Scale by Shortside (WLSH), ImageBatch, ImageConcanateOfUtils, ImpactMinMax, ImpactSwitch, Int, JWImageResizeByLongerSide, LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, Resolutions by Ratio (WLSH), SaveImage, easy showAnything]
+coverage: 0.6556
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LoadAudio, SaveAudio, VHS_LoadVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/柜机柜贴全流程_1993887255498522626.json, 图片生成/图生图/海报机器合成_1985965796599967746.json, 图片生成/图生图/海报机器合成url_1991417885222522881.json, 图片生成/图生图/海报机器合成本地_1991791658786451458.json]
+members: [音频生成/音频生成/B站开源indexTTS2双人对话语音克隆_1965649371641561089.json, 音频生成/音频生成/B站开源indexTTS2语音克隆_1965620350593716225.json, 音频生成/音频生成/VibeVoice双人对话语音克隆_1964910094381105153.json, 音频生成/音频生成/indexTTS2语音克隆-带情绪控制_1966071378376126465.json, 音频生成/音频生成/indexTTS2语音克隆双人情绪控制_1966077542711070721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_775
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/柜机柜贴全流程_1993887255498522626.json、图片生成/图生图/海报机器合成_1985965796599967746.json、图片生成/图生图/海报机器合成url_1991417885222522881.json、图片生成/图生图/海报机器合成本地_1991791658786451458.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/B站开源indexTTS2双人对话语音克隆_1965649371641561089.json、音频生成/音频生成/B站开源indexTTS2语音克隆_1965620350593716225.json、音频生成/音频生成/VibeVoice双人对话语音克隆_1964910094381105153.json、音频生成/音频生成/indexTTS2语音克隆-带情绪控制_1966071378376126465.json、音频生成/音频生成/indexTTS2语音克隆双人情绪控制_1966077542711070721.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Get Image Size`
-- `Image Crop Location`
-- `Image Scale by Shortside (WLSH)`
-- `ImageBatch`
-- `ImageConcanateOfUtils`
-- `ImpactMinMax`
-- `ImpactSwitch`
-- `Int`
-- `JWImageResizeByLongerSide`
-- `LoadImage`
-- `PreviewImage`
-- `RH_Nano_Banana_Image2Image`
-- `Resolutions by Ratio (WLSH)`
-- `SaveImage`
-- `easy showAnything`
+全部 5 个 workflow 都包含：
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadAudio`
+- `SaveAudio`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImagesFromURL` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 1/4 个有
-- `MaskToImage` —— 1/4 个有
-- `Mix Color By Mask` —— 1/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
-- `TopazImageEnhance` —— 1/4 个有
+- `IndexTTS2Run` —— 4/5 个有
+- `VibeVoiceTTS` —— 1/5 个有
 
 ## 典型参数
 

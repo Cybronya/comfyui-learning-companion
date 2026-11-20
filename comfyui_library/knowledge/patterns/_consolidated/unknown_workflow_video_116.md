@@ -1,41 +1,44 @@
 ---
 name: unknown_workflow_video_116
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.526
-common_nodes: [Anything Everywhere, DownloadAndLoadFlorence2Model, Florence2Run, GetNode, Int, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, RunningHub_FramePack, Seed Everywhere, SetNode, StringFunction|pysssss, VHS_VideoCombine]
+frequency: 4
+level: moderate
+coverage: 0.85325
+common_nodes: [Int, Int To Bool (mtb), LoadImage, RH_Captioner, RunningHub_FramePack, ShowText|pysssss, Textbox, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, easy textSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/【KJ 优化】Framepack 图生视频_1913943457507831810.json, 视频生成/图生视频/【加速优化】Framepack 图生视频_1913942332960403457.json]
+members: [视频生成/图生视频/【支持最长60s】FramePack 图生视频_1925152537710632961.json, 视频生成/图生视频/【杂志大片】图生视频 FramePack_1914256158851330049.json, 视频生成/图生视频/图生视频 _ FramePack（支持最长60s）_1911225665679753217.json, 视频生成/图生视频/首尾帧 _ FramePack_1914196891058302977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_116
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【KJ 优化】Framepack 图生视频_1913943457507831810.json、视频生成/图生视频/【加速优化】Framepack 图生视频_1913942332960403457.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/【支持最长60s】FramePack 图生视频_1925152537710632961.json、视频生成/图生视频/【杂志大片】图生视频 FramePack_1914256158851330049.json、视频生成/图生视频/图生视频 _ FramePack（支持最长60s）_1911225665679753217.json、视频生成/图生视频/首尾帧 _ FramePack_1914196891058302977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：53%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `GetNode`
+全部 4 个 workflow 都包含：
 - `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
+- `Int To Bool (mtb)`
 - `LoadImage`
+- `RH_Captioner`
 - `RunningHub_FramePack`
-- `Seed Everywhere`
-- `SetNode`
-- `StringFunction|pysssss`
+- `ShowText|pysssss`
+- `Textbox`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `easy textSwitch`
+
+**可变部分**（部分 workflow 才有）：
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `easy imageConcat` —— 1/4 个有
 
 ## 典型参数
 
@@ -47,4 +50,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

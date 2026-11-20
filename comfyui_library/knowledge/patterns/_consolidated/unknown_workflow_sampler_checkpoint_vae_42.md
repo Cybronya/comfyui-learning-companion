@@ -3,68 +3,59 @@ name: unknown_workflow_sampler_checkpoint_vae_42
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.819667
-common_nodes: [CheckpointLoaderSimple, ConditioningZeroOut, EmptyYuE2LatentAudio, Fast Groups Bypasser (rgthree), JWStringToFloat, KSampler, LoadAudio, PreviewAudio, PrimitiveStringMultiline, RH_Screenwriter, SaveAudioAdvanced, ShowText|pysssss, VAEDecodeAudio, WujiYue2Lyricist, YuE2GenerateMusic, YuE2ModelLoader, YuE2ReferenceVoiceCover]
-problems: [发现KSampler但没有VAEDecode]
+coverage: 1
+common_nodes: [CR Prompt Text, EmptyLatentImage, KSampler, LoadImage, ResolutionSelector, SaveImage, VAEDecode, ZenImageEditCheckpointLoader, ZenImageEditEncodeAdvanced, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [音频生成/音频生成/Yue2AI歌曲制作_2104410641921568770.json, 音频生成/音频生成/Yue2最强AI歌曲制作四合一（文生、翻唱、改词）_2101922999753596930.json, 音频生成/音频生成/Yue2最强AI歌曲制作多合一（文生、翻唱、改词）_2102605880918368258.json]
+members: [图片生成/图生图/Zen Image Edit图像编辑_2103757151029260289.json, 图片生成/图生图/Zen Image Edit图像编辑_2103820859654893569.json, 图片生成/图生图/Zen Image Edit图像编辑_2103823692970151937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae_42
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Yue2AI歌曲制作_2104410641921568770.json、音频生成/音频生成/Yue2最强AI歌曲制作四合一（文生、翻唱、改词）_2101922999753596930.json、音频生成/音频生成/Yue2最强AI歌曲制作多合一（文生、翻唱、改词）_2102605880918368258.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Zen Image Edit图像编辑_2103757151029260289.json、图片生成/图生图/Zen Image Edit图像编辑_2103820859654893569.json、图片生成/图生图/Zen Image Edit图像编辑_2103823692970151937.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `EmptyYuE2LatentAudio`
-- `Fast Groups Bypasser (rgthree)`
-- `JWStringToFloat`
+- `CR Prompt Text`
+- `EmptyLatentImage`
 - `KSampler`
-- `LoadAudio`
-- `PreviewAudio`
-- `PrimitiveStringMultiline`
-- `RH_Screenwriter`
-- `SaveAudioAdvanced`
-- `ShowText|pysssss`
-- `VAEDecodeAudio`
-- `WujiYue2Lyricist`
-- `YuE2GenerateMusic`
-- `YuE2ModelLoader`
-- `YuE2ReferenceVoiceCover`
-
-**可变部分**（部分 workflow 才有）：
-- `ShowText|fofo` —— 1/3 个有
+- `LoadImage`
+- `ResolutionSelector`
+- `SaveImage`
+- `VAEDecode`
+- `ZenImageEditCheckpointLoader`
+- `ZenImageEditEncodeAdvanced`
+- `easy cleanGpuUsed`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 32 | 32 - 32 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | dpm_2 | - | 3 | 100% |
-| 调度器 | sgm_uniform | - | 3 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
+| 采样步数 | 40 | 40 - 40 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 32，观测区间 32 - 32，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpm_2，3 个样本，一致性 100%
-- 调度器 最常用 sgm_uniform，3 个样本，一致性 100%
+- 宽度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 40，观测区间 40 - 40，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode

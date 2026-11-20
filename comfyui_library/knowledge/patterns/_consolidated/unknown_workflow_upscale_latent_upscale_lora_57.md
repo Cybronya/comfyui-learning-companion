@@ -2,86 +2,90 @@
 name: unknown_workflow_upscale_latent_upscale_lora_57
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.896333
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VAEDecode]
+level: moderate
+coverage: 0.542167
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, Fast Groups Bypasser (rgthree), GetNode, INTConstant, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResizeShortestToNode, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/【Supermate 稳定版2】ltx2单图原音驱动工作流_2012047557043687425.json, 视频生成/图生视频/【Supermate】优化LTX-2 图生视频 （Plus会员版）_2008554221829885954.json, 视频生成/图生视频/【加速】LTX2.0 图生视频工作流_2017478785842548737.json, 视频生成/图生视频/【老金驿站】LTX2-19B一镜聚焦工作流_2014309275279036418.json, 视频生成/图生视频/图生视频--LTX_2_首尾帧工作流_2057285774952980482.json, 视频生成/图生视频/大凯辰光 LTX-2 首尾帧工作流PLus版在线工作流_2009604954146742273.json]
+members: [平台全量/MINImax-H3_视频编辑_人物替换迁移_全自动流_2092918180590211074.json, 平台全量/单模型无编解码二采放大！Minimax H3全能参考！提示词自动反推版！_2089662477566046210.json, 平台全量/单模型无编解码二采放大！Minimax H3全能参考！提示词自动反推版！_2118201006042472449.json, 平台全量/单模型无编解码二采放大！Minimax_H3全能参考！提示词自动反推版！_2117752337182846978.json, 视频生成/文生视频/MINImax-H3_单人音乐MV制作_2094691958299123714.json, 视频生成/文生视频/minimaxH3混合模型不油腻_sigma强化+潜空间放大高清直出_2086021060973125633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_57
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/【Supermate 稳定版2】ltx2单图原音驱动工作流_2012047557043687425.json、视频生成/图生视频/【Supermate】优化LTX-2 图生视频 （Plus会员版）_2008554221829885954.json、视频生成/图生视频/【加速】LTX2.0 图生视频工作流_2017478785842548737.json、视频生成/图生视频/【老金驿站】LTX2-19B一镜聚焦工作流_2014309275279036418.json、视频生成/图生视频/图生视频--LTX_2_首尾帧工作流_2057285774952980482.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/MINImax-H3_视频编辑_人物替换迁移_全自动流_2092918180590211074.json、平台全量/单模型无编解码二采放大！Minimax H3全能参考！提示词自动反推版！_2089662477566046210.json、平台全量/单模型无编解码二采放大！Minimax H3全能参考！提示词自动反推版！_2118201006042472449.json、平台全量/单模型无编解码二采放大！Minimax_H3全能参考！提示词自动反推版！_2117752337182846978.json、视频生成/文生视频/MINImax-H3_单人音乐MV制作_2094691958299123714.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：中等可信
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyImage`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageScaleBy`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `INTConstant`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `LatentUpscaleModelLoader`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
+- `MiniMaxH3ReferenceToVideo`
+- `MinimaxH3LatentUpscaler3D`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
+- `ResizeShortestToNode`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
+- `SplitSigmas`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
+- `RHLLMChatNode` —— 5/6 个有
+- `VAEDecodeAudio` —— 5/6 个有
+- `easy showAnything` —— 5/6 个有
 - `ImageResizeKJv2` —— 4/6 个有
-- `LTXVImgToVideoInplace` —— 4/6 个有
-- `easy cleanGpuUsed` —— 4/6 个有
-- `CreateVideo` —— 3/6 个有
-- `MemoryCleaner` —— 3/6 个有
+- `LoadAudio` —— 4/6 个有
+- `LoraLoaderBypassModelOnly` —— 4/6 个有
+- `TrimAudioDuration` —— 4/6 个有
+- `VHS_LoadVideo` —— 4/6 个有
+- `easy clearCacheAll` —— 4/6 个有
+- `EasyCache` —— 3/6 个有
+- `H3SigmaRefiner` —— 3/6 个有
+- `Label (rgthree)` —— 3/6 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/6 个有
+- `ModelPreviewOverrideKJ` —— 3/6 个有
 - `SaveVideo` —— 3/6 个有
+- `SolAttnMiniMax` —— 3/6 个有
+- `StringFunction|pysssss` —— 3/6 个有
 - `VHS_VideoCombine` —— 3/6 个有
-- `BetaSamplingScheduler` —— 2/6 个有
-- `LTXVFirstLastFrameControl_TTP` —— 2/6 个有
-- `Any To String (mtb)` —— 1/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `INTConstant` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `Qwen3_VQA` —— 1/6 个有
-- `Resize` —— 1/6 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `easy float` —— 3/6 个有
+- `MuyeTextEditOutput` —— 2/6 个有
+- `CR String To Number` —— 1/6 个有
+- `JDCN_VHSFileMover` —— 1/6 个有
+- `PreviewAudio` —— 1/6 个有
 - `SaveImage` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `SmartImageConcat` —— 1/6 个有
-- `Textbox` —— 1/6 个有
-- `easy promptConcat` —— 1/6 个有
-- `easy seed` —— 1/6 个有
-- `easy textSwitch` —— 1/6 个有
+- `SoundFlow_GetLength` —— 1/6 个有
+- `VHS_VideoInfo` —— 1/6 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 1/6 个有
+- `Vignette` —— 1/6 个有
+- `easy saveText` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -89,5 +93,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

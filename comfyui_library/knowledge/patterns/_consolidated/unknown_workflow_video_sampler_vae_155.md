@@ -1,79 +1,70 @@
 ---
 name: unknown_workflow_video_sampler_vae_155
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.629
-common_nodes: [Anything Everywhere, CR Text, CogVideoEnhanceAVideo, ColorCorrectOfUtils, GetImageSizeAndCount, GetNode, ImageCASharpening+, ImageResize+, Int, LayerColor: Brightness & Contrast, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, OpenposePreprocessor, SetNode, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.98
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, Int, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Fusion 舞蹈迁移 Plus模式_1938126727686045697.json, 视频生成/图生视频/【Fusion X舞蹈迁移】15秒视频-Plus模式48G版_1935596429144412161.json, 视频生成/图生视频/【唱跳数字人】MultiTalk+FusionX4步（进阶）_1946270873122955265.json]
+members: [视频生成/图生视频/Aniwan+FusionX+VACE打造精致wan2.1加速首尾帧_1933695659235303425.json, 视频生成/图生视频/MAGEF+FusionX VACE强一致性控尾帧图生视频万相wan2.1_1943311960978956289.json, 视频生成/图生视频/极致首中尾帧万相wan2.1+FusionX+VACE图生视频_1934272711260856322.json, 视频生成/图生视频/首中尾帧万相wan2.1+VACE+FlashVSR高清丝滑变身图生视频_1981344492861169666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_155
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Fusion 舞蹈迁移 Plus模式_1938126727686045697.json、视频生成/图生视频/【Fusion X舞蹈迁移】15秒视频-Plus模式48G版_1935596429144412161.json、视频生成/图生视频/【唱跳数字人】MultiTalk+FusionX4步（进阶）_1946270873122955265.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Aniwan+FusionX+VACE打造精致wan2.1加速首尾帧_1933695659235303425.json、视频生成/图生视频/MAGEF+FusionX VACE强一致性控尾帧图生视频万相wan2.1_1943311960978956289.json、视频生成/图生视频/极致首中尾帧万相wan2.1+FusionX+VACE图生视频_1934272711260856322.json、视频生成/图生视频/首中尾帧万相wan2.1+VACE+FlashVSR高清丝滑变身图生视频_1981344492861169666.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Anything Everywhere`
-- `CR Text`
-- `CogVideoEnhanceAVideo`
-- `ColorCorrectOfUtils`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageCASharpening+`
-- `ImageResize+`
+全部 4 个 workflow 都包含：
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
 - `Int`
-- `LayerColor: Brightness & Contrast`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `OpenposePreprocessor`
-- `SetNode`
-- `ShowText|pysssss`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
 - `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncodeSingle`
 - `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Integer To String` —— 2/3 个有
-- `CR String To Number` —— 2/3 个有
-- `FluxResolutionNode` —— 2/3 个有
-- `RH_Captioner` —— 2/3 个有
-- `WanVideoSetBlockSwap` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `DownloadAndLoadWav2VecModel` —— 1/3 个有
-- `ImageBlend` —— 1/3 个有
-- `JWInteger` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `MultiTalkModelLoader` —— 1/3 个有
-- `MultiTalkWav2VecEmbeds` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `WanVideoLoraSelect` —— 1/3 个有
+- `GetImageRangeFromBatch` —— 3/4 个有
+- `GetImageSizeAndCount` —— 3/4 个有
+- `ImageResizeKJ` —— 3/4 个有
+- `PrimitiveStringMultiline` —— 3/4 个有
+- `WanVideoMagCache` —— 3/4 个有
+- `ImageBatchMulti` —— 2/4 个有
+- `MaskBatchMulti` —— 2/4 个有
+- `PMRF` —— 2/4 个有
+- `SimpleMath+` —— 2/4 个有
+- `WanVideoLoraSelect` —— 2/4 个有
+- `WanVideoVACEModelSelect` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `FlashVSRNode` —— 1/4 个有
+- `InvSRSampler` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
+- `LoadInvSRModels` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
+- `WanVideoEasyCache` —— 1/4 个有
+- `WanVideoExtraModelSelect` —— 1/4 个有
+- `WanVideoLoraSelectMulti` —— 1/4 个有
+- `WanVideoSetRadialAttention` —— 1/4 个有
 
 ## 典型参数
 

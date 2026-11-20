@@ -1,70 +1,84 @@
 ---
 name: unknown_workflow_sampler_unet_vae_282
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.772
-common_nodes: [Fast Groups Bypasser (rgthree), Image Comparer (rgthree), ImageSmartSharpen+, JoinImageWithAlpha, KSampler, Label (rgthree), LoadImage, PrimitiveFloat, ResizeImageMaskNode, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SplitImageWithAlpha, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.7075
+common_nodes: [BatchImagesNode, CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, PreviewAny, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/▶SeedVR2-int8图像放大_2098439850860048386.json, 图片生成/图生图/▶SeedVR2-int8图像放大_2099319281182920706.json, 图片生成/图生图/▶SeedVR2-int8图像放大_2099663595641589761.json]
+members: [图片生成/图生图/Qwen Image 2.1 多图编辑_2104447345671888898.json, 图片生成/图生图/Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882.json, 图片生成/图生图/Qwen image 2.1 多图编辑_2101841037932191746.json, 图片生成/文生图/qwen-image2.1合集 文生图_单_多图编辑+提示词增强_1938466701136560129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_282
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/▶SeedVR2-int8图像放大_2098439850860048386.json、图片生成/图生图/▶SeedVR2-int8图像放大_2099319281182920706.json、图片生成/图生图/▶SeedVR2-int8图像放大_2099663595641589761.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 多图编辑_2104447345671888898.json、图片生成/图生图/Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882.json、图片生成/图生图/Qwen image 2.1 多图编辑_2101841037932191746.json、图片生成/文生图/qwen-image2.1合集 文生图_单_多图编辑+提示词增强_1938466701136560129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `Image Comparer (rgthree)`
-- `ImageSmartSharpen+`
-- `JoinImageWithAlpha`
+全部 4 个 workflow 都包含：
+- `BatchImagesNode`
+- `CLIPLoader`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
 - `KSampler`
-- `Label (rgthree)`
 - `LoadImage`
-- `PrimitiveFloat`
-- `ResizeImageMaskNode`
+- `PreviewAny`
+- `QwenImage21Cache`
+- `ResolutionSelector`
 - `SaveImage`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
-- `SplitImageWithAlpha`
+- `TextEncodeQwenImage21`
+- `TextGenerateLTX2Prompt`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEDecode`
 - `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `ImageConcanate` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `Latent Switch (JPS)` —— 2/4 个有
+- `RH_Translator` —— 2/4 个有
+- `GetNode` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `SaveImageAdvanced` —— 1/4 个有
+- `SetNode` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
+- `TextCombinerSix` —— 1/4 个有
+- `easy seed` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 1 | 1 - 1 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 采样步数 | 50 | 25 - 50 | 4 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
-- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 50，观测区间 25 - 50，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

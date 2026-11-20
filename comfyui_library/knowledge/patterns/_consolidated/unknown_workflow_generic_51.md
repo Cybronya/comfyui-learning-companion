@@ -1,53 +1,42 @@
 ---
 name: unknown_workflow_generic_51
 type: Unknown Workflow
-frequency: 20
+frequency: 23
 level: moderate
-coverage: 0.7043
-common_nodes: [Get Image Size, ImageCASharpening+, ImageResize+, ImpactMinMax, SaveImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch]
+coverage: 0.67487
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_nano_banana2_edit_S2A, LoadImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2分块放大+4K&8K不变形+全节点注释_2059535091696750594.json, 图片生成/图生图/SeedVR2图片高清细节放大_2037772953709977602.json, 图片生成/图生图/SeedVR无损4k放大（极速）_2006705954708000770.json, 图片生成/图生图/SeedVR无损4k放大（极速）_2011349356733014017.json, 图片生成/图生图/SeedVR无损4k放大（极速）_2021427542640566274.json, 图片生成/图生图/Seedvr2图像高清变清晰_1972617007914999809.json, 图片生成/图生图/TTP分块万物高清放大（效果好）_1979143501155831809.json, 图片生成/图生图/chatgtt2 4分钱一张图_2046811296292671489.json, 图片生成/图生图/seedVR2 无瑕疵—8k放大_1999000293922721793.json, 图片生成/图生图/seedVR2万物高清放大修复不改变原细节（分块）_2010520954174185473.json, 图片生成/图生图/万物高清放大修复不改变原细节分块seedVR2_2094713796085510145.json, 图片生成/图生图/万物高清放大修复不改变原细节分块seedVR2_2094733300840620034.json, 图片生成/图生图/万物高清放大修复不改变原细节（分块）seedVR2  李富杰_2047193571438108674.json, 图片生成/图生图/万物高清放大修复不改变原细节（分块）seedVR2_2011443550675800066.json, 图片生成/图生图/万物高清放大修复不改变原细节（分块）seedVR2_2015649616083034114.json, 图片生成/图生图/万物高清放大修复不改变原细节（分块）seedVR2_2021107252354097153.json, 图片生成/图生图/万物高清放大修复不改变原细节（分块）seedVR2_2039349232649375745.json, 图片生成/图生图/万物高清放大修复不改变原细节（分块）seedVR2_2088174964351528961.json, 图片生成/图生图/人像高清放大修复不改变原细节 产品高清修复 人物高清修复 产品高清放大4K 8k_2007832429540675585.json, 图片生成/图生图/图片4K高清放大修复不改变原细节（分块）seedVR2_2032131005594738690.json]
+members: [图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro可爱风贴纸照片(贞贞AI工坊)_1997301655353888770.json, 图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro同人同景9镜头电影照片(贞贞AI工坊)_1997290679791456258.json, 图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro和卡通人物合影(贞贞AI工坊)_1997308366559068161.json, 图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro四宫格女性私房照(贞贞AI工坊)_1997282243636826113.json, 图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro图像编辑V1(贞贞AI工坊)_1997204960603488257.json, 图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro广场上的巨型雕塑(贞贞AI工坊)_1997305367770107906.json, 图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro桌面人偶(贞贞AI工坊)_1997299061994754050.json, 图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro电影幕后镜头(贞贞AI工坊)_1997301244370817026.json, 图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro赛博朋克代码照(贞贞AI工坊)_1997287925358465025.json, 图片生成/图生图/(同步转异步-基准0.15)Nano 全能图片V1 Pro四宫格黑夜风肖像照(贞贞AI工坊)_1997286773606793217.json, 图片生成/图生图/(同步转异步-基准0.2)全能图片V1 Pro图生三宫图V1(贞贞AI工坊)_2019859893871714305.json, 图片生成/图生图/(同步转异步-基准0.2)全能图片V1 Pro风格素材集10图(贞贞AI工坊)_2016777784831512578.json, 图片生成/图生图/(同步转异步-基准0.2)全能图片场景概念图V1(贞贞AI工坊)_2020851732229656578.json, 图片生成/图生图/(同步转异步-基准0.2)全能图片角色三视图V1(贞贞AI工坊)_2020851705872650242.json, 图片生成/图生图/(同步转异步-基准0.20) 全能图片V1 Pro日本东京塔组照(贞贞AI工坊)_1999038187160883201.json, 图片生成/图生图/Nano 全能图片V1 Pro2+0.2积分一个标准九宫图_2000411475376304129.json, 图片生成/图生图/api版-全能图片pro-角色三视图250214(贞贞AI工坊)_2022562695328833538.json, 图片生成/图生图/全能图片 Pro风格素材集10图-带切图(贞贞AI工坊)  林耀_2016853720771858433.json, 图片生成/图生图/全能图片-pro-一次出10张风格图-贞贞AI工坊版_2018713401467342849.json, 图片生成/图生图/全能图片Pro图像编辑V1（贞贞工坊-需要gemini优质分组）_2045900621408116738.json, 图片生成/图生图/全能图片场景转场连接图V1_2021044823670661121.json, 图片生成/图生图/全能图片角色三视图V1_2021037199537479681.json, 图片生成/文生图/(同步转异步-基准0.2)全能图片V1 Pro文生三宫图V1(贞贞AI工坊)_2019789015913865217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_51
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/SeedVR2分块放大+4K&8K不变形+全节点注释_2059535091696750594.json、图片生成/图生图/SeedVR2图片高清细节放大_2037772953709977602.json、图片生成/图生图/SeedVR无损4k放大（极速）_2006705954708000770.json、图片生成/图生图/SeedVR无损4k放大（极速）_2011349356733014017.json、图片生成/图生图/SeedVR无损4k放大（极速）_2021427542640566274.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro可爱风贴纸照片(贞贞AI工坊)_1997301655353888770.json、图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro同人同景9镜头电影照片(贞贞AI工坊)_1997290679791456258.json、图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro和卡通人物合影(贞贞AI工坊)_1997308366559068161.json、图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro四宫格女性私房照(贞贞AI工坊)_1997282243636826113.json、图片生成/图生图/(同步转异步-基准0.15) 全能图片V1 Pro图像编辑V1(贞贞AI工坊)_1997204960603488257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `Get Image Size`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImpactMinMax`
+全部 23 个 workflow 都包含：
+- `CR Prompt Text`
+- `Comfly_api_set`
+- `Comfly_nano_banana2_edit_S2A`
+- `LoadImage`
 - `SaveImage`
-- `SeedVR2`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 19/20 个有
-- `LoadImage` —— 19/20 个有
-- `DF_Integer` —— 17/20 个有
-- `PreviewImage` —— 17/20 个有
-- `SimpleMath+` —— 17/20 个有
-- `easy cleanGpuUsed` —— 16/20 个有
-- `GetNode` —— 13/20 个有
-- `SetNode` —— 13/20 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/20 个有
-- `RHHiddenNodes` —— 2/20 个有
-- `CR Prompt Text` —— 1/20 个有
-- `Comfly_api_set` —— 1/20 个有
-- `Comfly_gpt_image_2` —— 1/20 个有
-- `YK_LoadImageFromURL` —— 1/20 个有
-- `easy showAnything` —— 1/20 个有
+- `ImageConcanate` —— 22/23 个有
+- `PDIMAGE_LongerSize` —— 21/23 个有
+- `1hew_ImageGridSplit` —— 9/23 个有
+- `ImageGridtoBatch` —— 9/23 个有
+- `PreviewImage` —— 2/23 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/23 个有
 
 ## 典型参数
 

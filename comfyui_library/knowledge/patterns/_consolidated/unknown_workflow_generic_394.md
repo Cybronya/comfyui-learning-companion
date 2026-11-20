@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_394
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.845143
-common_nodes: [CR Text, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign]
+coverage: 0.7875
+common_nodes: [CR Prompt Text, RH_Sora2_T2V_PRO, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/QwenTTS 语音克隆 音色设计_2019671182676598785.json, 视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json, 音频生成/音频生成/QWEN音色设计【厉害】_2014579284521787394.json, 音频生成/音频生成/Qwen3 TTS -声音设计_2060677952165212161.json, 音频生成/音频生成/Qwen3-TTS 声音设计_2016044750641565698.json, 音频生成/音频生成/Qwen3-TTS 音色设计_2014660811913957377.json, 音频生成/音频生成/qwen3tts声音设计_2049857933596471298.json]
+members: [视频生成/文生视频/5ora2文生视频25s（竖屏）_2019260585539538945.json, 视频生成/文生视频/全能视频S PRO  25秒会员文生视频版  3元一条_1983557093993193474.json, 视频生成/文生视频/全能视频S PRO 丨文生视频增强版！！_1980888965387603969.json, 视频生成/文生视频/全能视频SPRO25s（横屏）文生视频25s_1983745434290200577.json, 视频生成/文生视频/全能视频SPRO文生视频25s（横屏）_1984574089375465473.json, 视频生成/文生视频/全能视频SPRO文生视频25s（竖屏）_1984573281137278978.json, 视频生成/文生视频/梭罗2文生视频25s（竖屏）全能视频SPRO_1983038421939683330.json, 视频生成/文生视频/高清无水印25秒文生嗦罗2pro_2014333182442737666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_394
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/QwenTTS 语音克隆 音色设计_2019671182676598785.json、视频生成/文生视频/Qwen3-TTS 声音设计 ，多种声音设计，匹配声线，御姐，甜妹，磁性_2036362341129916418.json、音频生成/音频生成/QWEN音色设计【厉害】_2014579284521787394.json、音频生成/音频生成/Qwen3 TTS -声音设计_2060677952165212161.json、音频生成/音频生成/Qwen3-TTS 声音设计_2016044750641565698.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/5ora2文生视频25s（竖屏）_2019260585539538945.json、视频生成/文生视频/全能视频S PRO  25秒会员文生视频版  3元一条_1983557093993193474.json、视频生成/文生视频/全能视频S PRO 丨文生视频增强版！！_1980888965387603969.json、视频生成/文生视频/全能视频SPRO25s（横屏）文生视频25s_1983745434290200577.json、视频生成/文生视频/全能视频SPRO文生视频25s（横屏）_1984574089375465473.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `RH_Sora2_T2V_PRO`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudio` —— 5/7 个有
-- `SaveAudioMP3` —— 2/7 个有
-- `CR Prompt Text` —— 1/7 个有
+- `easy showAnything` —— 7/8 个有
+- `Label (rgthree)` —— 1/8 个有
 
 ## 典型参数
 

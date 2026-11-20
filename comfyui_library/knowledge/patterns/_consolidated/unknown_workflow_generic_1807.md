@@ -3,35 +3,33 @@ name: unknown_workflow_generic_1807
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadAudio, OmniVoiceVoiceCloneTTS, OmniVoiceWhisperLoader, PreviewAudio, SaveAudio]
+coverage: 0.8335
+common_nodes: [LoadImage, RH_SeedreamV5LiteTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/OmniVoice-TTS工作流 声音克隆_2043154975521509378.json, 音频生成/音频生成/OmniVoice-tts语音克隆_2064775902487207937.json]
+members: [图片生成/文生图/02豆包_SeedreamV5Lite_文生图+全节点注释_2058541341457608706.json, 图片生成/文生图/2029812011953033217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1807
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/OmniVoice-TTS工作流 声音克隆_2043154975521509378.json、音频生成/音频生成/OmniVoice-tts语音克隆_2064775902487207937.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/02豆包_SeedreamV5Lite_文生图+全节点注释_2058541341457608706.json、图片生成/文生图/2029812011953033217.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `OmniVoiceVoiceCloneTTS`
-- `OmniVoiceWhisperLoader`
-- `PreviewAudio`
-- `SaveAudio`
+- `LoadImage`
+- `RH_SeedreamV5LiteTextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `DoubaoSizePreset` —— 1/2 个有
+- `TextInput_` —— 1/2 个有
 
 ## 典型参数
 

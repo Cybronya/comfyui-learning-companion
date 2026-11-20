@@ -1,97 +1,106 @@
 ---
 name: text_to_image_lora_sampler_clip_86
 type: Text To Image
-frequency: 14
+frequency: 15
 level: strong
-coverage: 0.800357
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.872267
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1多合一极简版文生图图生图处理工具_2102513018897788929.json, 图片生成/图生图/Qwen Image 2.1多图编辑图生图处理生成工具_2102483334352953345.json, 图片生成/图生图/Qwen Image 2.1官方原版图生图工作流，通义千问7B DiT轻量高效方案_2103198014163742721.json, 图片生成/图生图/Qwen Image 2.1换头换脸Face Swap模特换头加换脸，图生图面部替换_2105790956023926785.json, 图片生成/图生图/Qwen Image 2.1换头换脸Face Swap模特换头加换脸，图生图面部替换工具_2105730994383974402.json, 图片生成/图生图/Qwen Image 2.1换头换脸Face Swap模特换头加换脸，图生图面部替换工具_2106109794053607425.json, 图片生成/图生图/Qwen Image 2.1｜万能输入文生图图生图一体工作流，千问2.1一站式创作_2107281533928300545.json, 图片生成/图生图/Qwen Image2.1角色四视图生成 短剧通用图生图工具_2113679532476682242.json, 图片生成/图生图/Qwen Image2.1角色四视图生成短剧通用 角色设定批量产出_2109794002504601602.json, 图片生成/图生图/qwen-image-2.1多合一极简版｜文生图图生图一页搞定｜界面清爽好用_2102274702399070209.json, 图片生成/图生图/最多10张参考图 Qwen-Image-2.1图像编辑2K输出换装局部重绘_2104274563130548225.json, 图片生成/图生图/最强换装工作流，电商服装展示一键换衣图生图处理工具_2106510801598246914.json, 图片生成/文生图/Qwen Image 2.1万能输入工作流，文生图图生图全场景覆盖处理方案_2107588581916233729.json, 视频生成/图生视频/Qwen_Image_2.1图像生成二十步大合集，全方位图生图能力覆盖_2106178017696505857.json]
+members: [视频生成/图生视频/8step加速开源版｜MinimaxH3参考生视频图生视频_2093224901363720194.json, 视频生成/图生视频/8步加速1.0正式版｜minimax 1.0视频生视频图生视频工作流_2088345029642379265.json, 视频生成/图生视频/8步加速全能参考｜minimax 视频生成_2089308419999223810.json, 视频生成/图生视频/8步加速全能参考｜minimax 视频生成_2090728184093437953.json, 视频生成/图生视频/8步加速首帧参考｜MiniMax H3写实图生视频战斗特效_2089381704552247298.json, 视频生成/图生视频/9图3视频3音频多参考｜Minimax H3开源版音视频生成_2089469135704117249.json, 视频生成/图生视频/9图3视频3音频｜海螺H3全能多参开源版音视频生成_2090229409646202881.json, 视频生成/图生视频/H3 FACE REFINE面部重绘修复崩脸｜图生视频画质修复_2090410678174707713.json, 视频生成/图生视频/H3单图生视频_2102656768471031809.json, 视频生成/图生视频/MiniMax H3多参图像音频生视频｜Singulari极速加速版_2107645905364152321.json, 视频生成/图生视频/加速版 MiniMax H3｜多参图像音频极速生视频_2096900307132444673.json, 视频生成/图生视频/加速版MiniMax H3多参图像音频极速生视频Singulari工作流，图生视频方案_2107951250322059266.json, 视频生成/图生视频/加速版MiniMax_H3多参生视频｜图像音频一起喂，出片速度起飞_2099442755004096513.json, 视频生成/文生视频/biaozhun6 accel jellyfish文生视频图生视频加速_2088205047762083842.json, 视频生成/文生视频/多参图像音频极速生视频｜加速版MiniMax H3生成_2096328491850625026.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_86
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1多合一极简版文生图图生图处理工具_2102513018897788929.json、图片生成/图生图/Qwen Image 2.1多图编辑图生图处理生成工具_2102483334352953345.json、图片生成/图生图/Qwen Image 2.1官方原版图生图工作流，通义千问7B DiT轻量高效方案_2103198014163742721.json、图片生成/图生图/Qwen Image 2.1换头换脸Face Swap模特换头加换脸，图生图面部替换_2105790956023926785.json、图片生成/图生图/Qwen Image 2.1换头换脸Face Swap模特换头加换脸，图生图面部替换工具_2105730994383974402.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/8step加速开源版｜MinimaxH3参考生视频图生视频_2093224901363720194.json、视频生成/图生视频/8步加速1.0正式版｜minimax 1.0视频生视频图生视频工作流_2088345029642379265.json、视频生成/图生视频/8步加速全能参考｜minimax 视频生成_2089308419999223810.json、视频生成/图生视频/8步加速全能参考｜minimax 视频生成_2090728184093437953.json、视频生成/图生视频/8步加速首帧参考｜MiniMax H3写实图生视频战斗特效_2089381704552247298.json…）
 
 - **类型**：Text To Image
-- **样本数**：14
+- **样本数**：15
 - **可信度**：强结论
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 15 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
-- `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 13/14 个有
-- `LoadImage` —— 12/14 个有
-- `ComfySwitchNode` —— 10/14 个有
-- `CR Prompt Text` —— 9/14 个有
-- `TextGenerateLTX2Prompt` —— 9/14 个有
-- `GetNode` —— 8/14 个有
-- `SetNode` —— 8/14 个有
-- `BatchImagesNode` —— 6/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/14 个有
-- `PreviewAny` —— 6/14 个有
-- `Seed (rgthree)` —— 5/14 个有
-- `Anything Everywhere3` —— 4/14 个有
-- `Int` —— 2/14 个有
-- `MiniMaxH3EasyMediaLoader` —— 2/14 个有
-- `MiniMaxH3EasyMediaSplitter` —— 2/14 个有
-- `EmptyImage` —— 1/14 个有
-- `Image Comparer (rgthree)` —— 1/14 个有
-- `ImageBatchMultiV2` —— 1/14 个有
-- `LayerUtility: ImageReel` —— 1/14 个有
-- `LayerUtility: ImageReelComposit` —— 1/14 个有
-- `PreviewImage` —— 1/14 个有
-- `PrimitiveStringMultiline` —— 1/14 个有
-- `QwenPERewriteT8` —— 1/14 个有
-- `RHLLMChatNode` —— 1/14 个有
-- `ShowText|pysssss` —— 1/14 个有
-- `easy setNode` —— 1/14 个有
-- `easy showAnything` —— 1/14 个有
+- `MiniMaxH3ReferenceToVideo` —— 14/15 个有
+- `ResolutionSelector` —— 14/15 个有
+- `孤海注释` —— 13/15 个有
+- `LoadAudio` —— 11/15 个有
+- `CreateVideo` —— 10/15 个有
+- `PathchSageAttentionKJ` —— 10/15 个有
+- `SaveVideo` —— 10/15 个有
+- `CR Prompt Text` —— 7/15 个有
+- `GetVideoComponents` —— 7/15 个有
+- `LoadVideo` —— 7/15 个有
+- `PrimitiveStringMultiline` —— 7/15 个有
+- `EasyCache` —— 6/15 个有
+- `ImpactSwitch` —— 6/15 个有
+- `ShowAnything|Mie` —— 6/15 个有
+- `VHS_VideoCombine` —— 6/15 个有
+- `PainterVRAM` —— 3/15 个有
+- `VHS_LoadVideo` —— 3/15 个有
+- `easy showAnything` —— 3/15 个有
+- `DF_Int_to_Float` —— 2/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/15 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/15 个有
+- `EmptyImage` —— 1/15 个有
+- `H3FaceStitch` —— 1/15 个有
+- `H3FaceTrackCrop` —— 1/15 个有
+- `H3InjectVideoLatent` —— 1/15 个有
+- `H3PerFrameDenoise` —— 1/15 个有
+- `MiniMaxH3ImageToVideo` —— 1/15 个有
+- `MiniMaxH3NativeAudioLock` —— 1/15 个有
+- `PreviewImage` —— 1/15 个有
+- `SaveImage` —— 1/15 个有
+- `SolAttnPatch` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 14 | 100% |
-| 高度 | 80 | 80 - 80 | 14 | 100% |
-| 采样步数 | 4 | 4 - 4 | 14 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 14 | 100% |
-| 采样算法 | er_sde | - | 14 | 100% |
-| 调度器 | beta | - | 14 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 宽度 | 80 | 80 - 80 | 15 | 100% |
+| 高度 | 80 | 80 - 80 | 15 | 100% |
+| 采样步数 | 4 | 4 - 4 | 15 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 15 | 100% |
+| 采样算法 | er_sde | - | 15 | 100% |
+| 调度器 | beta | - | 15 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，14 个样本，一致性 100%
-- 调度器 最常用 beta，14 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 高发问题（15/14 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，15 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，15 个样本，一致性 100%
+- 调度器 最常用 beta，15 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（15/15 个样本）：Steps较低可能导致细节不足

@@ -1,95 +1,61 @@
 ---
 name: unknown_workflow_controlnet_upscale_lora_7
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.888
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Latent Batch Size, CheckpointLoaderSimple, ControlNetApply, ControlNetLoader, DualCLIPLoader, Fast Groups Muter (rgthree), FluxGuidance, Image Comparer (rgthree), ImageBlend, ImageResize+, ImpactInt, LoadImage, LoraLoader, PreviewImage, SUPIR_conditioner, SUPIR_decode, SUPIR_encode, SUPIR_first_stage, SUPIR_model_loader_v2, SUPIR_sample, SaveImage, Seed_, StyleModelApply, StyleModelLoader, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader]
+frequency: 3
+level: moderate
+coverage: 0.901
+common_nodes: [AIO_Preprocessor, APersonMaskGenerator, CLIPTextEncode, CR Apply LoRA Stack, CR Apply Multi-ControlNet, CR LoRA Stack, CR Multi-ControlNet Stack, CR Simple Image Compare, CheckpointLoaderSimple, ConstrainImage|pysssss, DetailerForEachDebugPipe, GrowMaskWithBlur, ImageCompositeMasked, ImageUpscaleWithModel, ImpactSimpleDetectorSEGS, LoadImage, MaskToSEGS, PreviewImage, SAMLoader, SEGSSwitch, SaveImage, ToBasicPipe, UltralyticsDetectorProvider, UpscaleModelLoader, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/局部重绘-fill局部重绘封装_2059816583098355714.json, 图片生成/文生图/FLUX 小红书 抖音 快手 批量生成人物风格一致性模特_1902182310718889986.json]
+members: [图片生成/图生图/一键皮肤光泽感质感增强_1894267978274242561.json, 图片生成/图生图/一键纹身工作流_1894337929311879169.json, 平台全量/Oiled - Shiny - Sweaty_ Skin Enhance Workflow_1894204731424702466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_upscale_lora_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/局部重绘-fill局部重绘封装_2059816583098355714.json、图片生成/文生图/FLUX 小红书 抖音 快手 批量生成人物风格一致性模特_1902182310718889986.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键皮肤光泽感质感增强_1894267978274242561.json、图片生成/图生图/一键纹身工作流_1894337929311879169.json、平台全量/Oiled - Shiny - Sweaty_ Skin Enhance Workflow_1894204731424702466.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `APersonMaskGenerator`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Latent Batch Size`
+- `CR Apply LoRA Stack`
+- `CR Apply Multi-ControlNet`
+- `CR LoRA Stack`
+- `CR Multi-ControlNet Stack`
+- `CR Simple Image Compare`
 - `CheckpointLoaderSimple`
-- `ControlNetApply`
-- `ControlNetLoader`
-- `DualCLIPLoader`
-- `Fast Groups Muter (rgthree)`
-- `FluxGuidance`
-- `Image Comparer (rgthree)`
-- `ImageBlend`
-- `ImageResize+`
-- `ImpactInt`
+- `ConstrainImage|pysssss`
+- `DetailerForEachDebugPipe`
+- `GrowMaskWithBlur`
+- `ImageCompositeMasked`
+- `ImageUpscaleWithModel`
+- `ImpactSimpleDetectorSEGS`
 - `LoadImage`
-- `LoraLoader`
+- `MaskToSEGS`
 - `PreviewImage`
-- `SUPIR_conditioner`
-- `SUPIR_decode`
-- `SUPIR_encode`
-- `SUPIR_first_stage`
-- `SUPIR_model_loader_v2`
-- `SUPIR_sample`
+- `SAMLoader`
+- `SEGSSwitch`
 - `SaveImage`
-- `Seed_`
-- `StyleModelApply`
-- `StyleModelLoader`
-- `UNETLoader`
-- `UltimateSDUpscale`
+- `ToBasicPipe`
+- `UltralyticsDetectorProvider`
 - `UpscaleModelLoader`
-- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ArgosTranslateTextNode` —— 1/2 个有
-- `BaiduTranslateNode` —— 1/2 个有
-- `BasicGuider` —— 1/2 个有
-- `BasicScheduler` —— 1/2 个有
-- `CR Color Panel` —— 1/2 个有
-- `DifferentialDiffusion` —— 1/2 个有
-- `Florence2ModelLoader` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageGenResolutionFromImage` —— 1/2 个有
-- `ImageScale` —— 1/2 个有
-- `ImageToMask` —— 1/2 个有
-- `InpaintModelConditioning` —— 1/2 个有
-- `KSampler` —— 1/2 个有
-- `KSamplerSelect` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `MaskToImage` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
+- `AddMask` —— 1/3 个有
+- `SegsToCombinedMask` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| ControlNet 权重 | 0.35 | - | 2 | 100% |
-| LoRA 模型强度 | 0.2 | - | 2 | 100% |
-| LoRA 文本强度 | 0 | - | 2 | 100% |
-| 采样步数 | 25 | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
-| 采样算法 | euler | - | 1 | 100% |
-| 调度器 | normal | - | 1 | 100% |
-| 重绘幅度 | 1 | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -97,7 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 0.35，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,77 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_512
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.975
-common_nodes: [AudioSeparation, Display Int (rgthree), HuMoEmbeds, INTConstant, ImageFromBatch, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAudio, SimpleMath+, SoundFlow_GetLength, SoundFlow_TrimAudio, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, Wav2VecModelLoader, WhisperModelLoader, easy imageRemBg, easy int]
+coverage: 0.901
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/上传音频生成对应口播视频—Humo+Infinite+talk 优化后_2034484341866237954.json, 视频生成/图生视频/上传音频生成对应口播视频—Humo+Infinite+talk_2029082504245809153.json, 视频生成/图生视频/上传音频生成对应口播视频—Humo+Infinite+talk_2032263750392225793.json, 视频生成/图生视频/电商专用：口播视频—Humo+Infinite talk+IndexTTS_2028749472515235842.json, 音频生成/音频生成/Humo+Infinite talk音乐MV生成_1975845273735925761.json]
+members: [视频生成/图生视频/AniWan专业动漫模型版图生视频_1945026256120504322.json, 视频生成/图生视频/AniWan专业动漫模型版图生视频lightx2v发布_1947494029451743234.json, 视频生成/图生视频/AniWan专业动漫模型版图生视频lightx2v对比_1945320881478410242.json, 视频生成/图生视频/FastWan图生视频_1949619051676475394.json, 视频生成/图生视频/Radial 提速20% wan2.1图生视频工作流_1947317723317555201.json, 视频生成/图生视频/Radial 提速20% 万相图生视频工作流_1946283928597458945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_512
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/上传音频生成对应口播视频—Humo+Infinite+talk 优化后_2034484341866237954.json、视频生成/图生视频/上传音频生成对应口播视频—Humo+Infinite+talk_2029082504245809153.json、视频生成/图生视频/上传音频生成对应口播视频—Humo+Infinite+talk_2032263750392225793.json、视频生成/图生视频/电商专用：口播视频—Humo+Infinite talk+IndexTTS_2028749472515235842.json、音频生成/音频生成/Humo+Infinite talk音乐MV生成_1975845273735925761.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/AniWan专业动漫模型版图生视频_1945026256120504322.json、视频生成/图生视频/AniWan专业动漫模型版图生视频lightx2v发布_1947494029451743234.json、视频生成/图生视频/AniWan专业动漫模型版图生视频lightx2v对比_1945320881478410242.json、视频生成/图生视频/FastWan图生视频_1949619051676475394.json、视频生成/图生视频/Radial 提速20% wan2.1图生视频工作流_1947317723317555201.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AudioSeparation`
-- `Display Int (rgthree)`
-- `HuMoEmbeds`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `LoadAudio`
+全部 6 个 workflow 都包含：
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAudio`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
-- `ToInt`
+- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoCombineEmbeds`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `Wav2VecModelLoader`
-- `WhisperModelLoader`
-- `easy imageRemBg`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Display Any (rgthree)` —— 4/5 个有
-- `HAIGC_VideoLastFrame` —— 4/5 个有
-- `ImageBatchMulti` —— 4/5 个有
-- `Seed_` —— 4/5 个有
-- `Text` —— 4/5 个有
-- `ToFloat` —— 4/5 个有
-- `WanVideoEncode` —— 4/5 个有
-- `AudioBeforeAfterSilence` —— 1/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `CR Text` —— 1/5 个有
-- `JWImageBatchCount` —— 1/5 个有
-- `MaxNode` —— 1/5 个有
-- `PrimitiveFloat` —— 1/5 个有
-- `ZML_ImageBatchToInt` —— 1/5 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/5 个有
-- `easy indexTTSGenerateSimple` —— 1/5 个有
+- `RH_Translator` —— 3/6 个有
+- `WanVideoSetRadialAttention` —— 2/6 个有
+- `CR Upscale Image` —— 1/6 个有
+- `PrimitiveString` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `ShellAgentPluginInputImage` —— 1/6 个有
+- `ShellAgentPluginInputText` —— 1/6 个有
+- `ShellAgentPluginSaveVideoVHS` —— 1/6 个有
+- `WanVideoEasyCache` —— 1/6 个有
 
 ## 典型参数
 

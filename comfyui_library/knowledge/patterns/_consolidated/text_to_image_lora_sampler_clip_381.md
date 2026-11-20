@@ -3,57 +3,58 @@ name: text_to_image_lora_sampler_clip_381
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.882
-common_nodes: [CLIPLoader, CLIPTextEncode, DF_Text_Box, EmptyLatentImage, GH_ImageVideoComparer, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 图像缩放V2_孤海]
+coverage: 0.867
+common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MuyeTextEditOutput, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102508530350772225.json, 图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545.json, 图片生成/图生图/Qwen_Image_2.1图像编辑｜图生图实操经验版｜稳定可靠_2102313763641847810.json, 图片生成/图生图/老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042.json, 图片生成/图生图/角色资产四视图一键生成｜SeedVR2高清放大加持｜设定图图生图标配_2102265852648312834.json]
+members: [图片生成/图生图/Flux 2 Kelin图片编辑PS专用 绿色遮罩重绘扩图工具_2113780878739595266.json, 图片生成/图生图/无痕扩图+图片编辑二合一｜Flux-2-Kelin图生图处理_2093255855188824066.json, 图片生成/图生图/无痕扩图图片编辑二合一｜Flux-2-Kelin图生图处理_2093097024676782082.json, 图片生成/图生图/无痕扩图图片编辑二合一｜Flux-2-Kelin图生图处理_2093499770567479298.json, 图片生成/图生图/无痕扩图图片编辑二合一｜Flux-2-Kelin图生图处理_2093540237699014658.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_381
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102508530350772225.json、图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545.json、图片生成/图生图/Qwen_Image_2.1图像编辑｜图生图实操经验版｜稳定可靠_2102313763641847810.json、图片生成/图生图/老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042.json、图片生成/图生图/角色资产四视图一键生成｜SeedVR2高清放大加持｜设定图图生图标配_2102265852648312834.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux 2 Kelin图片编辑PS专用 绿色遮罩重绘扩图工具_2113780878739595266.json、图片生成/图生图/无痕扩图+图片编辑二合一｜Flux-2-Kelin图生图处理_2093255855188824066.json、图片生成/图生图/无痕扩图图片编辑二合一｜Flux-2-Kelin图生图处理_2093097024676782082.json、图片生成/图生图/无痕扩图图片编辑二合一｜Flux-2-Kelin图生图处理_2093499770567479298.json、图片生成/图生图/无痕扩图图片编辑二合一｜Flux-2-Kelin图生图处理_2093540237699014658.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `Any Switch (rgthree)`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DF_Text_Box`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GH_ImageVideoComparer`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
+- `MuyeTextEditOutput`
+- `ReferenceLatent`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `图像缩放V2_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `GoohaiUniversalSlider` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `easy ifElse` —— 4/5 个有
-- `孤海注释` —— 4/5 个有
-- `布尔孤海` —— 4/5 个有
-- `GoohaiRatioAndResolution` —— 1/5 个有
-- `ImpactMinMax` —— 1/5 个有
-- `KepStringLiteral` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `SeedVR2LoadDiTModel` —— 1/5 个有
-- `SeedVR2LoadVAEModel` —— 1/5 个有
-- `SeedVR2VideoUpscaler` —— 1/5 个有
+- `DapaoImagePadDirectionNode` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `ImpactInt` —— 4/5 个有
+- `孤海注释` —— 3/5 个有
+- `GrowMask` —— 1/5 个有
+- `ImageCompositeMasked` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `InvertMask` —— 1/5 个有
+- `LayerMask: MaskByColor` —— 1/5 个有
+- `MaskBlur+` —— 1/5 个有
+- `easy imageSizeByLongerSide` —— 1/5 个有
 
 ## 典型参数
 
@@ -71,7 +72,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -82,4 +83,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（10/5 个样本）：Steps较低可能导致细节不足

@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_1303
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6855
-common_nodes: [LoadImage, RH_Captioner, RH_Translator, SaveImage, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.783333
+common_nodes: [LoadVideo, RH_AlibabaWan27VideoExtend, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/RH超强首尾帧提示词写法_1952311186140409857.json, 图片生成/反推提示词/图片反推 一键翻译中英文_1957330684597694466.json]
+members: [平台全量/Wan2.7 视频续写_2044726356818268161.json, 平台全量/视频延长工作流｜万相 2.7 镜头续写 可带音频_2099690002115547137.json, 视频生成/图生视频/Wan2.7 视频延长_2041456018126807041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1303
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/RH超强首尾帧提示词写法_1952311186140409857.json、图片生成/反推提示词/图片反推 一键翻译中英文_1957330684597694466.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Wan2.7 视频续写_2044726356818268161.json、平台全量/视频延长工作流｜万相 2.7 镜头续写 可带音频_2099690002115547137.json、视频生成/图生视频/Wan2.7 视频延长_2041456018126807041.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadImage`
-- `RH_Captioner`
-- `RH_Translator`
-- `SaveImage`
-- `easy showAnything`
+全部 3 个 workflow 都包含：
+- `LoadVideo`
+- `RH_AlibabaWan27VideoExtend`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 1/2 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoadAudio` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

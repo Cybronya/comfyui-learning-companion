@@ -3,30 +3,29 @@ name: unknown_workflow_generic_1150
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.286
-common_nodes: [JjkText, PrimitiveInt, RHBerniniFullTextToVideo, SaveVideo]
+coverage: 1
+common_nodes: [RHUploadZip_V2, SaveImage, SeedVR2]
 problems: []
 missing: []
-members: [视频生成/图生视频/（满血版）Bernini-Full 文生视频_2066950063997407233.json, 视频生成/文生视频/Bernini-Full 文生视频_2067237273439129601.json, 视频生成/文生视频/Bernini-Full 文生视频工作流_2066829259058016257.json]
+members: [图片生成/图生图/zip批量放大-SeedVR2工作流_2094968735055564801.json, 图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096503819977977857.json, 图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096810280884981762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1150
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/（满血版）Bernini-Full 文生视频_2066950063997407233.json、视频生成/文生视频/Bernini-Full 文生视频_2067237273439129601.json、视频生成/文生视频/Bernini-Full 文生视频工作流_2066829259058016257.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/zip批量放大-SeedVR2工作流_2094968735055564801.json、图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096503819977977857.json、图片生成/图生图/批量图片高清放大工作流｜zip多图+SeedVR2_2096810280884981762.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：29%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `JjkText`
-- `PrimitiveInt`
-- `RHBerniniFullTextToVideo`
-- `SaveVideo`
+- `RHUploadZip_V2`
+- `SaveImage`
+- `SeedVR2`
 
 ## 典型参数
 

@@ -3,54 +3,53 @@ name: unknown_workflow_video_sampler_vae_141
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.945
-common_nodes: [CLIPVisionEncode, CLIPVisionLoader, DualCLIPLoader, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTextEmbedBridge, HyVideoTorchCompileSettings, HyVideoVAELoader, ImageResizeKJv2, LoadImage, TextEncodeHunyuanVideo_ImageToVideo, VHS_VideoCombine]
+coverage: 0.88875
+common_nodes: [ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/混元Custom人物商品参考图生视频_1929828891127615489.json, 视频生成/图生视频/混元Custom单主体参考_1920972713995730945.json, 视频生成/图生视频/混元Custom单主题参考_1920770416519090178.json, 视频生成/图生视频/混元Custom多主题参考_1920831493852303362.json]
+members: [图片生成/图生图/电商多图参考生成视频 skyreel V3_2017384271350075393.json, 平台全量/Wan21_FusionX_PhantomWFv2_Y_Workflow_1934801211566530561.json, 视频生成/图生视频/SkyReels V3多图参考大模型：上传两张人物照生成合拍视频！_2017184716553719810.json, 视频生成/图生视频/多图合成视频工作流_2019122277626941442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_141
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/混元Custom人物商品参考图生视频_1929828891127615489.json、视频生成/图生视频/混元Custom单主体参考_1920972713995730945.json、视频生成/图生视频/混元Custom单主题参考_1920770416519090178.json、视频生成/图生视频/混元Custom多主题参考_1920831493852303362.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/电商多图参考生成视频 skyreel V3_2017384271350075393.json、平台全量/Wan21_FusionX_PhantomWFv2_Y_Workflow_1934801211566530561.json、视频生成/图生视频/SkyReels V3多图参考大模型：上传两张人物照生成合拍视频！_2017184716553719810.json、视频生成/图生视频/多图合成视频工作流_2019122277626941442.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DualCLIPLoader`
-- `HyVideoBlockSwap`
-- `HyVideoDecode`
-- `HyVideoEncode`
-- `HyVideoModelLoader`
-- `HyVideoSampler`
-- `HyVideoTeaCache`
-- `HyVideoTextEmbedBridge`
-- `HyVideoTorchCompileSettings`
-- `HyVideoVAELoader`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `TextEncodeHunyuanVideo_ImageToVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ImageConcanate` —— 2/4 个有
-- `Primitive integer [Crystools]` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `HyVideoEnhanceAVideo` —— 1/4 个有
+- `WanVideoLoraSelectMulti` —— 3/4 个有
+- `WanVideoSetBlockSwap` —— 3/4 个有
+- `WanVideoSetLoRAs` —— 3/4 个有
+- `INTConstant` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `ImageConcatMulti` —— 1/4 个有
 - `Int` —— 1/4 个有
 - `JjkText` —— 1/4 个有
-- `PrimitiveString` —— 1/4 个有
-- `easy imageRemBg` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `PrimitiveInt` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
+- `WanVideoLoraSelect` —— 1/4 个有
 
 ## 典型参数
 

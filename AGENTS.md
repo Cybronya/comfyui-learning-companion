@@ -5,7 +5,7 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 **接手本项目时，先读完本文，再动手。** 本文是项目的唯一入口文档：
 第 2-7 节是不变的约定与环境（必读），第 8 节是项目定位，第 9 节是实时状态（改代码后必须一起更新）。
 
-- 最后更新：2026-10-26
+- 最后更新：2026-11-15
 - **版本号唯一权威来源：`docs/roadmap.md` 第 3 节**（本文不另立版本表，只在状态描述里引用）
 - 规则版本：v0.3.1（Skill 规范定稿）｜v0.4 架构标准化 ✅｜v0.5 引擎实装进行中
 - 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master，无 git tag）
@@ -154,6 +154,27 @@ python -X utf8 -m engine.test_workflow_learning   # 跑完记得 Remove-Item Env
 若真遇到半残：`git checkout -- comfyui_library/workflows/learning` 即可回到基线，
 未入库的新记录可用 `learn_pipeline.py` 重学补回。
 
+#### 3.6 长跑收尾必须可断点续跑（2026-11-14 机器重启教训）
+
+**机器重启是常态**，不是意外。长跑收尾（下载 → 消化 → 归纳 → 图谱）动辄跑几小时，
+中途被强杀是常态而非例外。因此：
+
+1. **收尾的每个阶段必须是独立进程、独立日志**，能用单独命令重跑。
+   禁止把多个阶段绑进同一个 `finally` 块 —— 前一步被杀后面全丢。
+   （反例：`learn_pipeline.py` 曾把 `save → save_all → consolidate → build_graph`
+   四步绑在一个 finally 块里，2026-11-14 03:05 重启后三步全丢。）
+2. **学习阶段本身是幂等的**，按内容指纹（sha256）跳过已学条目，
+   被强杀不会留下半残学习库；重跑 `learn_folder()` 安全。
+   但**学习之后的收尾动作（索引 / 归纳 / 图谱）不幂等也不自动恢复**，
+   必须靠独立阶段显式重跑。
+3. **被强杀后先体检再决定重跑什么**，别盲目从头再来：
+   - 学习记录 `.md` 数 == 库内 json 数 → 学习已完成，别重学
+   - `PRAGMA quick_check` == ok 且空洞 0% → 库健康，别重建
+   - 派生索引 / 模式卡 / 图谱的**文件时间戳**是判断断点的依据
+4. **下载未结束前不能并发入库** —— 下载器非原子落盘
+   （`write_bytes` 无 tmp+rename），并发读会读到半截 JSON。
+5. 可重启的收尾编排参考 `download/resume_2026-11-15.py`（三段独立、带头禁）。
+
 ---
 
 ## 4. 模块地图
@@ -161,7 +182,7 @@ python -X utf8 -m engine.test_workflow_learning   # 跑完记得 Remove-Item Env
 ```
 AGENTS.md                     ← 本文件（唯一入口：约定 + 状态）
 README.md                     对外门面（版本号只做指针，不重复维护）
-docs/                         设计文档（10 篇）
+docs/                         设计文档（12 篇，含 collection-strategy.md 收集策略）
 skills/
   _core/                      Skill 框架骨架（🔶 占位）
   comfyui-learning/           主技能 + 11 个子技能（规范 + schema + 模板 + 工具）
@@ -232,6 +253,7 @@ engine/                       可执行层（v0.5 起）
 | 分析怎么做的 | `docs/workflow-analysis.md`、`docs/pattern-learning.md`、`docs/pattern_evolution.md` |
 | 知识体系怎么组织 | `docs/knowledge-system.md` |
 | Skill 体系规范 | `docs/skill-system.md`、`skills/comfyui-learning/SKILL.md` |
+| **怎么收集工作流 / 清点欠账** | `docs/collection-strategy.md`（2026-11-13：按分类收集已收尽，改走全平台扫描） |
 
 模块级设计文档在模块目录内：`engine/learning_loop/{README,ARCHITECTURE,USAGE_EXAMPLE}.md`。
 
@@ -305,9 +327,9 @@ engine/                       可执行层（v0.5 起）
 
 | 内容 | 状态 |
 |---|---|
-| 节点知识卡 | ✅ **7248 张**（截至 2026-10-24，历经多轮预建：16 张早期人工核对卡 + 大批 `draft_cards_from_workflows.py` 自动起草卡，输入/输出槽与取值分布为实测 workflow，作用为名称推断标 TODO(待验证)）+ `node_index.json` v1.2（auto_drafted 标记区分两类卡）。10-24 图生图 backfill 净增 996 张 |
+| 节点知识卡 | ✅ **8,198 张**（截至 2026-11-15，历经多轮预建：16 张早期人工核对卡 + 大批 `draft_cards_from_workflows.py` 自动起草卡，输入/输出槽与取值分布为实测 workflow，作用为名称推断标 TODO(待验证)）+ `node_index.json` v1.2（auto_drafted 标记区分两类卡）。11-13 全平台扫描批次净增 750 张 |
 | 布线节点忽略清单 | ✅ `engine/workflow_learning/ignore_nodes.py`（Note / Reroute / GetNode / SetNode / 注释、预览与 rgthree 分组控件等，不建卡、不计缺口；`node_frequency(exclude_ignored=True)` 排建卡优先级） |
-| Pattern 卡 | ✅ 手写 2 张（sd15-t2i-basic / sd15-t2i-lora）；`_consolidated/` 归纳模式 **9437 张**（2026-10-24 全量 74208 条真实归纳产出，自动生成勿手改，成员全部是库里真实 workflow） |
+| Pattern 卡 | ✅ 手写 2 张（sd15-t2i-basic / sd15-t2i-lora）；`_consolidated/` 归纳模式 **11,983 张**（2026-11-15 全量 94,353 条真实归纳产出，自动生成勿手改，成员全部是库里真实 workflow） |
 | 节点摘要 | ✅ 1 张（loraloader） |
 | 真实 workflow 样本 | 🔶 仅 `workflows/sd1.5/` 有内容（`_workflow.json` / `_prompt.json` / `basic.json` / 两张 png）；`wan` / `flux` / `sdxl` 为空骨架 |
 | 知识卡格式对齐 | 🔶 8 张 v0.2 遗产卡（`skills/comfyui-learning/knowledge/`）内容有效但**格式先于 v0.3.1 规范**，待迁移 |
@@ -319,7 +341,7 @@ engine/                       可执行层（v0.5 起）
 | `WorkflowDatabase` 持久化核心 | ✅ **sqlite3 后端**（2026-10-14 迁移，2026-10-15 VACUUM + 删旧 JSON）：逻辑路径仍是 `database/storage/workflow_database.json`，物理库是同名 `.sqlite`；四仓库 / `summary()` / `.data` 兼容视图 / `auto_save` 批量语义全部保持，老调用方无感；`version` 守卫 + 缺键回填 + 超 200MB 的旧 JSON 拒绝自动迁移（提示跑流式迁移工具 `skills/comfyui-learning/tools/migrate_database_sqlite.py`） |
 | 四仓库 | ✅ workflow（增删查 + **rename 换键** + add/delete 对账 used_in + patterns 并集合并 + content_hash）/ node（register 带 category，只填空不覆盖）/ pattern（add 回填 workflow.patterns，悬空成员可见）/ experience（同 workflow_id 最新覆盖 + delete + `iter_items()` 流式 + `data` 结构化载荷，zlib 压缩实测 3.06x） |
 | `IndexManager` | ✅ 三个派生索引构建 + 落盘（workflow_index / node_index / pattern_index，`save_all()` 可重建）；构建改走 SQL 直查，不再经 `.data` 物化全库（那是旧 OOM 路径） |
-| 体积构成 | 1.25GB JSON → 419MB sqlite → **VACUUM 后 235MB**（回收 165MB 空洞，10s）。实测各表占比：`node_used_in` **138.7MB (59%)**（`workflow_id` 长路径文本，表与主键索引各存一份）/ `experiences` 68.4MB (29%) / 其余 27MB —— 再瘦身得上整数外键（待办 22） |
+| 体积构成 | 3.1GB sqlite（2026-11-15 实测，零空洞）；表占比：`node_used_in` **2,163,990 行**（`workflow_id` 长路径文本，表与主键索引各存一份，是唯一大头）/ `experiences` 94,353 条（`data` zlib 压缩载荷）—— 再瘦身得上整数外键（待办 22） |
 | 测试 | ✅ `engine/test_database.py`（24 组，含新增 B7 rename 换键）+ 引擎接库集成 `engine/test_database_integration.py`（14 组），均从仓库根跑、全走 TemporaryDirectory；**18 个 test_*.py 全部 exit=0（2026-10-15 复测，D5 已加门禁默认跳过）** |
 
 **引擎层（`engine/`，v0.5 实装）**
@@ -501,6 +523,17 @@ agent_core/ComfyUIAgent.ask()
 - 终态：全库 **78,181 条**、平均覆盖 83%、深懂（≥80%）54,746 / 浅懂 3；
   重归纳 **9,969 个模式**（新先写后清逻辑存量零删除通过）；图谱 **103,066 顶点 / 2,393,006 边**（707MB）；sqlite 2,429MB
 
+**2026-10-30 四日增量收集消化收官（+914 独立内容，三阶段 rc=0）**：
+- 收集下载：七分类 NEWEST 续收（10-26 锚点 +4 天）合计 **1,113** 个新增
+  （图生图 416 / 图生视频 328 / 文生图 194 / 数字人 83 / 文生视频 46 /
+  反推提示词 24 / 音频 22），**1,113/1,113 全落地零失败**（无 404/412）；
+  runner 泛化为日期参数化 + `--only` 分类过滤（断点续跑，中途服务器重启后实测有效）
+- 消化（digest_runner 全程 64.2 分钟，三阶段 rc=0）：入库 **914**（闸门拦
+  199 个排版/跨 id 重复）→ 预建卡 28 → **学习 914 / 失败 0 / 死键 0**
+- 终态：全库 **79,095 条**、平均覆盖 83%、深懂（≥80%）55,309 / 浅懂 3；
+  重归纳 **10,012 个模式**（首次破万）；图谱 **104,079 顶点 / 2,420,469 边**（715MB）；
+  sqlite 2,488MB
+
 **v0.6 Pattern Learning Engine 已启动**（方案见 `docs/v0.6-plan.md`）：
 - 待办 14/17/20 的根因：检索层与图谱层**都不消费**结构层派生索引，三个索引
   （node 7,302 / workflow 7,301 / pattern 9,604）只由 IndexManager 写、无人读；
@@ -526,6 +559,52 @@ agent_core/ComfyUIAgent.ask()
 这类需求才真正需要接模型。
 
 ### 9.2 进行中
+
+**2026-11-13 全平台扫描批次收官（+15,150 ID，库内 94,353 条，图谱 289 万边）**：
+- 起因：用户要求「收集新的工作流 ID 并下载」。先按既有分类收集跑了一轮，
+  却发现**7 个主线分类早已收尽** —— 各分类 state 的「已见 ID 数」都 ≥ 平台该分类
+  总量（图生图本地 35,205 vs 平台 33,370，多出的是跨标签重复），
+  第 2/3 轮翻 900 页全是零收获，纯空转
+- 盲区实测：直接打平台**全量列表**（`POST /api/portal/template/list` 不带 `tags`
+  参数 = 全平台，total ≈ 91,888，无需登录），扫前 1,800 条 → 本地**完全没见过的
+  ID 有 1,022 个（57%）**。按 `tags` 过滤会漏掉那些归类在未收集子分类下的工作流
+- 新工具 `download/collect_platform_sweep.py`：按 NEWEST 扫全平台列表（3,063 页），
+  与本地已知集合比对（三来源并集：各分类 `state.json` 的 known_ids +
+  各分类 `ids.txt` + **下载目录已落地文件名**）→ 未见过的 ID 写入
+  `ids-by-tag/平台全量/` → `download_by_ids.py` 下载到 `workflows-by-tag/平台全量/`
+  （独立目录，不与分类目录混 manifest 账）
+- 补收工具 `download/collect_extra_2026-11-13.py`：补三个从未建清单的子分类
+  （视频生视频 / 其它视频处理 / 动作迁移）—— 平台分类树里有，
+  本地只有 17~27 个历史零星文件且无 `ids.txt` / `meta.csv`
+- 下载：新增 **15,150** 个 ID，成功 **15,020** / 失败 **130**（全 404 站点下架）；
+  清单累计 15,326 → 落地 **15,060**，落地率 **98.26%**，未落地 266 个已留档
+  （`平台全量_ids_未落地.txt`）；下载+扫描整轮约 5 小时 6 分
+- 消化：入库 **14,609**（与库内重复跳 85,238 / 排版重复跳 3,509 / 批次内重复跳 1,122）
+  → 预建卡 **750** → 学习 **14,609 / 0 失败**
+- 终态（2026-11-15 校验）：workflows **94,353** / experiences **94,353** /
+  patterns **12,009** / nodes **8,243** / node_used_in **2,163,990**；
+  学习记录 **94,353** 个 .md（与库内 json 一一对应，体检零半截零空壳）；
+  节点卡 8,198 / 模式卡 11,983；
+  图谱 **122,880 顶点 / 2,893,391 边**（848MB，**孤立节点 0、悬空边 0**）；
+  sqlite 3.1GB 零空洞，`quick_check: ok`
+- ⚠ **口径教训**：库内 `workflows.id` 存的是**相对路径**
+  （`图片生成/图生图/xxx.json`）而非纯 ID。按路径比对会得出「24,211 未入库」
+  的错误结论；按 **ID 全局去重** 才是真口径 —— 去重后下载目录 81,708 个工作流、
+  库内 79,744，真实欠账 **2,609**（图生视频 1,099 / 图生图 735 / 文生图 494 /
+  音频 98 / 数字人 86 / 文生视频 77 / 反推提示词 18 / 其它 2）
+- ⚠ **11-02 那轮写卡也未完全成功**：DB 有 **96 个模式有成员 workflow 却没落盘**
+  （占 10,185 的 0.94%）。本次重跑归纳已补齐（写卡逻辑已于 10-26 修好）
+
+**⚠ 2026-11-14 03:05 机器重启导致收尾链被强杀（已修，见 3.6）**：
+- 现象：`finalize_2026-11-13.py` 与 `learn_pipeline.py` 双双被杀，日志停在 `[5/6] 增量学习`
+- 体检结论：**学习阶段已跑完**（94,353 个 .md 全部落盘且完整，库内 94,353 行零缺口，
+  空洞 0%），断在 `db.indexes.save_all()` 之后 → 派生索引 / 模式卡 / 图谱
+  三样都停在 11-02 旧水位
+- 根因：`learn_pipeline.py` 把 `save → save_all → consolidate → build_graph`
+  四步绑在同一个 `finally` 块里连着跑，**前一步被杀后面全丢**
+- 修复：新增 `download/resume_2026-11-15.py`，把三步拆成独立可重启阶段，
+  各自带门禁与日志。补跑实测：索引重建 0.5 分 → 重归纳 36.1 分（11,983 模式）
+  → 图谱重建 15.3 分（122,880 顶点 / 2,893,391 边），三段 rc=0
 
 **2026-10-24 图生图 backfill 收官 + matches 匹配率 76%→100%（两层死键连修）**：
 - 背景：10-21~22 图生图清单补齐至 33,326（深页 runner 翻满 1111 页），待下载 23,808；
@@ -1760,6 +1839,22 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
     另外 `LearningRecord.content_hash` 与 `dedupe_by_content_hash` 仍是
     字节口径（聚合层统计会漏排版变体），存量记录要回填归一化指纹才能根治
     （代价约 30 分钟重学），暂按「导入闸门拦住新的」处理
+
+25. **`learn_pipeline.py` 的收尾四步仍在同一个 finally 块里**（2026-11-14 事故遗留）：
+    `save → save_all → consolidate → build_graph` 绑在 `learn_pipeline.py` 的
+    finally 块中连着跑，被强杀时后三步全丢（2026-11-14 03:05 实测）。
+    已用 `download/resume_2026-11-15.py` 补跑救回，但**代码层面的隐患仍在**：
+    下次直接跑 `learn_pipeline.py` 仍会遇到同样的断点问题。
+    建议把 `learn_pipeline.py` 的 finally 块改成只留 `db.save()`，
+    其余三步交给独立阶段编排（与 3.6 的约定对齐）
+
+26. **全平台扫描仍有未查子分类**：`collect_platform_sweep.py` 扫的是
+    `POST /api/portal/template/list` 不带 tags 的全量列表（total ≈ 91,888），
+    但平台分类树里还有从未建过清单的子分类（11-13 只补收了
+    视频生视频 / 其它视频处理 / 动作迁移三个）。
+    本轮落地率 98.26%，未落地 266 个全是 404/412（站点侧永久失败，不可恢复），
+    但**是否还有整片从未扫描过的子分类**未验证 —— 下次可对比
+    平台分类树的叶子节点数与本地已建 `ids.txt` 的分类数，找差集
 
 ### 9.4 维护规则
 

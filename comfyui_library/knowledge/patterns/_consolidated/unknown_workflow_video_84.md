@@ -1,35 +1,50 @@
 ---
 name: unknown_workflow_video_84
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.769
-common_nodes: [Bookmark (rgthree), CR Prompt Text, RH_Sora2_T2V, SaveVideo, SeedVR2, VHS_LoadVideoPath, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything]
+coverage: 0.8
+common_nodes: [ACEStepGen, CR Image Input Switch (4 way), CR Overlay Text, CR Text, Float, GenerationParameters, Get resolution [Crystools], GetRandomIntegerInRange, ImageBlend, JjkText, LoadImage, MultiLineLyrics, MultiLinePromptACES, PreviewImage, RH_Prompter, RH_Translator, SaveAudio, ShowText, TextCombinerSix, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy cleanGpuUsed, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980259189755905.json, 视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980703391756289.json, 视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1975033052323778562.json]
+members: [视频生成/图生视频/ACE-Step音乐(视频)生成_2021195368242876418.json, 音频生成/音频生成/ACE-Step音乐生成器-歌词展示_1928402394680573953.json, 音频生成/音频生成/ACE-Step音乐生成器-歌词展示_2060189449031606274.json, 音频生成/音频生成/AI音乐 ACE-Step 音乐生成器-歌词展示_2018910502071570434.json, 音频生成/音频生成/AI音乐 ACE-Step 音乐生成器-歌词展示_2019050901134123009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_84
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980259189755905.json、视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1974980703391756289.json、视频生成/文生视频/全能视频S文生视频V2+SeddVR2二次高清输出视频支持竖版9_16横版16_9多模型输出T8_1975033052323778562.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/ACE-Step音乐(视频)生成_2021195368242876418.json、音频生成/音频生成/ACE-Step音乐生成器-歌词展示_1928402394680573953.json、音频生成/音频生成/ACE-Step音乐生成器-歌词展示_2060189449031606274.json、音频生成/音频生成/AI音乐 ACE-Step 音乐生成器-歌词展示_2018910502071570434.json、音频生成/音频生成/AI音乐 ACE-Step 音乐生成器-歌词展示_2019050901134123009.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Bookmark (rgthree)`
-- `CR Prompt Text`
-- `RH_Sora2_T2V`
-- `SaveVideo`
-- `SeedVR2`
-- `VHS_LoadVideoPath`
+全部 5 个 workflow 都包含：
+- `ACEStepGen`
+- `CR Image Input Switch (4 way)`
+- `CR Overlay Text`
+- `CR Text`
+- `Float`
+- `GenerationParameters`
+- `Get resolution [Crystools]`
+- `GetRandomIntegerInRange`
+- `ImageBlend`
+- `JjkText`
+- `LoadImage`
+- `MultiLineLyrics`
+- `MultiLinePromptACES`
+- `PreviewImage`
+- `RH_Prompter`
+- `RH_Translator`
+- `SaveAudio`
+- `ShowText`
+- `TextCombinerSix`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `easy cleanGpuUsed`
 - `easy showAnything`
 

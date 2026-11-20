@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_upscale_31
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.691667
-common_nodes: [DF_Image_scale_to_side, LoadImage, SUPIR_Upscale, SaveImage]
+coverage: 0.667
+common_nodes: [CCSR_Model_Select, CCSR_Upscale, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/快速换脸 InfiniteYou_1923673512211304450.json, 图片生成/文生图/SUPIR-8K图片放大+高清放大+4K+8K+大分辨率+全节点注释_2057704104763412482.json, 图片生成/文生图/SUPIR-壁纸级放大+全节点注释_2056290929077743618.json]
+members: [图片生成/图生图/CCSR放大_1980683599676620801.json, 平台全量/CCSR图像放大修复_1810277910010900481.json, 平台全量/CCSR放大_2057717179210100738.json, 平台全量/【遇见AI】放大的5种高级方法-CCSR放大_2032752734314700802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_31
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/快速换脸 InfiniteYou_1923673512211304450.json、图片生成/文生图/SUPIR-8K图片放大+高清放大+4K+8K+大分辨率+全节点注释_2057704104763412482.json、图片生成/文生图/SUPIR-壁纸级放大+全节点注释_2056290929077743618.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/CCSR放大_1980683599676620801.json、平台全量/CCSR图像放大修复_1810277910010900481.json、平台全量/CCSR放大_2057717179210100738.json、平台全量/【遇见AI】放大的5种高级方法-CCSR放大_2032752734314700802.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DF_Image_scale_to_side`
+全部 4 个 workflow 都包含：
+- `CCSR_Model_Select`
+- `CCSR_Upscale`
 - `LoadImage`
-- `SUPIR_Upscale`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/3 个有
-- `ReActorFaceSwap` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

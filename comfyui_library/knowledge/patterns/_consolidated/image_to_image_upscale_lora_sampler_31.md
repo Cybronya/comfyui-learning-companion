@@ -2,80 +2,92 @@
 name: image_to_image_upscale_lora_sampler_31
 type: Image To Image
 frequency: 5
-level: strong
-coverage: 0.8376
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), Image Lucy Sharpen, ImageScaleBy, ImageUpscaleWithModel, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, UltimateSDUpscaleNoUpscale, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+level: moderate
+coverage: 0.629
+common_nodes: [AILab_QwenVL, Any Switch (rgthree), CLIPLoader, CLIPTextEncode, CR Image Grid Panel, CR String To Number, CR Text, CR Text Concatenate, ConditioningZeroOut, Fast Groups Muter (rgthree), GetNode, ImageBlend, ImageListToBatch+, ImageScaleBy, ImageUpscaleWithModel, ImpactSwitch, Int, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, ProcessString, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, SaveImage, SetNode, ShellAgentPluginOutputText, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy imageIndexSwitch, easy promptLine, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX-2xNomos 高质量材质修复放大_1935249237552582657.json, 图片生成/图生图/FLUX-2xNomos 高质量材质修复放大_1959792403232272385.json, 图片生成/图生图/面料材质放大【不变形】_2097883345781878785.json, 图片生成/图生图/面料材质放大【不变形】_2099412425505329153.json, 图片生成/文生图/面料材质放大【不变形】_1935227966781849602.json]
+members: [图片生成/图生图/AI电影分镜制作+Z-image写实洗图_2006979481432494081.json, 图片生成/图生图/亿薪AI分镜制作（真人）_2017320281571860482.json, 图片生成/图生图/提示词+分镜图压缩包自动打包！AI短剧_AI漫剧_AI电影分镜图工作流+Z-image写实洗图_2044432724458475522.json, 图片生成/图生图/电影动漫分镜制作Z-image写实洗图_2014155916240756738.json, 平台全量/AI短剧_AI漫剧_AI电影分镜制作+Z-image写实洗图_2005279792142446593.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_31
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX-2xNomos 高质量材质修复放大_1935249237552582657.json、图片生成/图生图/FLUX-2xNomos 高质量材质修复放大_1959792403232272385.json、图片生成/图生图/面料材质放大【不变形】_2097883345781878785.json、图片生成/图生图/面料材质放大【不变形】_2099412425505329153.json、图片生成/文生图/面料材质放大【不变形】_1935227966781849602.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/AI电影分镜制作+Z-image写实洗图_2006979481432494081.json、图片生成/图生图/亿薪AI分镜制作（真人）_2017320281571860482.json、图片生成/图生图/提示词+分镜图压缩包自动打包！AI短剧_AI漫剧_AI电影分镜图工作流+Z-image写实洗图_2044432724458475522.json、图片生成/图生图/电影动漫分镜制作Z-image写实洗图_2014155916240756738.json、平台全量/AI短剧_AI漫剧_AI电影分镜制作+Z-image写实洗图_2005279792142446593.json）
 
 - **类型**：Image To Image
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：84%
+- **可信度**：中等可信
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `AILab_QwenVL`
+- `Any Switch (rgthree)`
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Image Grid Panel`
+- `CR String To Number`
+- `CR Text`
+- `CR Text Concatenate`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `Image Comparer (rgthree)`
-- `Image Lucy Sharpen`
+- `Fast Groups Muter (rgthree)`
+- `GetNode`
+- `ImageBlend`
+- `ImageListToBatch+`
 - `ImageScaleBy`
 - `ImageUpscaleWithModel`
+- `ImpactSwitch`
+- `Int`
+- `JjkText`
 - `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
+- `PrimitiveFloat`
+- `ProcessString`
+- `QwenEditAdaptiveLongestEdge`
+- `QwenEditConfigPreparer`
 - `SaveImage`
+- `SetNode`
+- `ShellAgentPluginOutputText`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
-- `UltimateSDUpscaleNoUpscale`
 - `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy imageIndexSwitch`
+- `easy promptLine`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `Florence2ModelLoader` —— 3/5 个有
-- `Florence2Run` —— 3/5 个有
-- `easy showAnything` —— 3/5 个有
-- `Anything Everywhere3` —— 1/5 个有
-- `Florence2` —— 1/5 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/5 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/5 个有
-- `LoadFlorence2Model` —— 1/5 个有
+- `HAIGC_SaveImagesToZip` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
+| 采样步数 | 4 | 4 - 10 | 5 | 54% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
 | 采样算法 | euler | - | 5 | 100% |
-| 调度器 | kl_optimal | - | 5 | 100% |
-| 重绘幅度 | 0.3 | 0.3 - 0.3 | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 0.78 - 1 | 5 | 91% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 10，5 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 kl_optimal，5 个样本，一致性 100%
-- 重绘幅度 中位数 0.3，观测区间 0.3 - 0.3，5 个样本，取值集中（一致性 100%）
-- 高发问题（8/5 个样本）：Steps较低可能导致细节不足
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.78 - 1，5 个样本，取值集中（一致性 91%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

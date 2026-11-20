@@ -3,33 +3,35 @@ name: unknown_workflow_generic_1536
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [Comfly_Flux_Kontext, DeepTranslatorTextNode, LoadImage, SaveImage]
+coverage: 0.833
+common_nodes: [LoadImage, PreviewImage, RH_RhartImageG25OfficialTokenSunburstTextToImage, SaveImage, 忽略多组孤海]
 problems: []
 missing: []
-members: [图片生成/图生图/最新 Kontext 一键服装模特试穿_1932060641098723330.json, 图片生成/文生图/kontext 图像编辑丨万物改图_1931162032916070402.json]
+members: [图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json, 图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1536
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新 Kontext 一键服装模特试穿_1932060641098723330.json、图片生成/文生图/kontext 图像编辑丨万物改图_1931162032916070402.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json、图片生成/反推提示词/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Comfly_Flux_Kontext`
-- `DeepTranslatorTextNode`
 - `LoadImage`
+- `PreviewImage`
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
 - `SaveImage`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `ReroutePrimitive|pysssss` —— 1/2 个有
+- `RH_RhartImageG25OfficialTokenFlareEdit` —— 1/2 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,53 +1,46 @@
 ---
 name: unknown_workflow_sampler_vae_73
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9085
-common_nodes: [CreateVideo, ImageResize+, LoadImage, PDRatioSelector, PreviewImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, RH_Captioner, SaveVideo, StringConcatenate, StringConstantMultiline]
+frequency: 3
+level: moderate
+coverage: 0.979333
+common_nodes: [CreateVideo, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 FL2VA开源版-尾参考生视频_2084223496103747586.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-首帧参考生视频_2084209553008316417.json]
+members: [视频生成/文生视频/MiniMax+H3文生视频_2084569586896297985.json, 视频生成/文生视频/MiniMax-H3-文生视频-提示词自动扩写_2085187597655166978.json, 视频生成/文生视频/MiniMax-H3-文生视频-极简-手动提示词_2084575861231144962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_73
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 FL2VA开源版-尾参考生视频_2084223496103747586.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-首帧参考生视频_2084209553008316417.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax+H3文生视频_2084569586896297985.json、视频生成/文生视频/MiniMax-H3-文生视频-提示词自动扩写_2085187597655166978.json、视频生成/文生视频/MiniMax-H3-文生视频-极简-手动提示词_2084575861231144962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CreateVideo`
-- `ImageResize+`
-- `LoadImage`
-- `PDRatioSelector`
-- `PreviewImage`
 - `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DirectModelLoader`
+- `RHMiniMaxH3DirectTextEncoderLoader`
+- `RHMiniMaxH3DirectVAELoader`
 - `RHMiniMaxH3DualSigmaSampler`
 - `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3FL2VAEncode`
-- `RHMiniMaxH3FL2VAModelLoader`
-- `RHMiniMaxH3FL2VATarget`
-- `RHMiniMaxH3FL2VATextEncoderLoader`
-- `RHMiniMaxH3FL2VAVAELoader`
-- `RH_Captioner`
+- `RHMiniMaxH3T2VATarget`
+- `RHMiniMaxH3T2VATextEncode`
 - `SaveVideo`
-- `StringConcatenate`
-- `StringConstantMultiline`
 
 **可变部分**（部分 workflow 才有）：
-- `CustomAddLabel` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `RHMiniMaxH3FL2VAFirstFrameCondition` —— 1/2 个有
-- `RHMiniMaxH3FL2VALastFrameCondition` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
+- `easy float` —— 2/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `PreviewVideoNode` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
+- `ShellAgentPluginOutputText` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -59,4 +52,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

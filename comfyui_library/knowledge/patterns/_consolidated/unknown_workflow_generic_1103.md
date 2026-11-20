@@ -3,35 +3,34 @@ name: unknown_workflow_generic_1103
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.916667
-common_nodes: [LoadAudio, RH_IndexTTS25_Loader, RH_IndexTTS25_Synthesize, SaveAudio]
+coverage: 0.857
+common_nodes: [LoadImage, RH_SparkVideoAssetCreate, SaveImage, ShellAgentPluginOutputText]
 problems: []
 missing: []
-members: [数字人/数字人/T8修复官版IndexTTS 2.5多音字语音克隆(中文版)_2091740726399954945.json, 音频生成/音频生成/index TTS 2.5 声音克隆_2114601606170894338.json, 音频生成/音频生成/声音克隆-TTS-index-2.5_2087910558707306497.json]
+members: [图片生成/反推提示词/超能视频2.0真人ID获取工作流_2037437605897314306.json, 图片生成/图生图/Seedance2.0真人ID获取_2040700188100136962.json, 平台全量/SeeDance 2.0 素材创建_2037456452494827521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1103
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/T8修复官版IndexTTS 2.5多音字语音克隆(中文版)_2091740726399954945.json、音频生成/音频生成/index TTS 2.5 声音克隆_2114601606170894338.json、音频生成/音频生成/声音克隆-TTS-index-2.5_2087910558707306497.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/超能视频2.0真人ID获取工作流_2037437605897314306.json、图片生成/图生图/Seedance2.0真人ID获取_2040700188100136962.json、平台全量/SeeDance 2.0 素材创建_2037456452494827521.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `RH_IndexTTS25_Loader`
-- `RH_IndexTTS25_Synthesize`
-- `SaveAudio`
+- `LoadImage`
+- `RH_SparkVideoAssetCreate`
+- `SaveImage`
+- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `Float` —— 1/3 个有
-- `T8_IndexTTS25_Pronunciation` —— 1/3 个有
+- `ShowAnything|Mie` —— 2/3 个有
+- `PreviewAny` —— 1/3 个有
 
 ## 典型参数
 

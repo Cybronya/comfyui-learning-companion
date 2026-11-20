@@ -1,66 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_704
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.888333
-common_nodes: [CreateCFGScheduleFloatList, JjkText, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy float, easy int, easy seed]
-problems: []
+coverage: 0.9535
+common_nodes: [CLIPLoader, CLIPTextEncode, DWPreprocessor, DepthAnythingV2Preprocessor, ImageBlend, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan 2.2 图生视频 高清+加速版+自动提示词_1953388513221902338.json, 视频生成/图生视频/【24帧强动态】万相_wan2.2图生视频KJ版_1952243502325420034.json, 视频生成/文生视频/万相_wan2.2文生视频KJ版 基础工作流 旧版lightx2v加速_1951199136504852481.json]
+members: [平台全量/首帧视频转绘（14B有点慢但是质量好）_1960977956611010562.json, 视频生成/图生视频/WanVace快速视频动作迁移_1934797316740325377.json, 视频生成/图生视频/wan2.1 vace 动作参考视频生成_1933802082413797378.json, 视频生成/图生视频/首帧视频转绘（AI匹夫）_1956996435298410498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_704
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 图生视频 高清+加速版+自动提示词_1953388513221902338.json、视频生成/图生视频/【24帧强动态】万相_wan2.2图生视频KJ版_1952243502325420034.json、视频生成/文生视频/万相_wan2.2文生视频KJ版 基础工作流 旧版lightx2v加速_1951199136504852481.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/首帧视频转绘（14B有点慢但是质量好）_1960977956611010562.json、视频生成/图生视频/WanVace快速视频动作迁移_1934797316740325377.json、视频生成/图生视频/wan2.1 vace 动作参考视频生成_1933802082413797378.json、视频生成/图生视频/首帧视频转绘（AI匹夫）_1956996435298410498.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `JjkText`
-- `LayerUtility: PurgeVRAM`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `DWPreprocessor`
+- `DepthAnythingV2Preprocessor`
+- `ImageBlend`
+- `KSampler`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `TrimVideoLatent`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy float`
-- `easy int`
-- `easy seed`
+- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactFloat` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `RH_LLMAPI_NODE` —— 2/3 个有
-- `WanVideoImageToVideoEncode` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `WanVideoEmptyEmbeds` —— 1/3 个有
-- `easy clearCacheAll` —— 1/3 个有
+- `UnetLoaderGGUF` —— 3/4 个有
+- `PreviewImage` —— 2/4 个有
+- `Anything Everywhere` —— 1/4 个有
+- `ChinesePrompt_Mix` —— 1/4 个有
+- `Display Any (rgthree)` —— 1/4 个有
+- `ImageCrop` —— 1/4 个有
+- `ImageScaleBy` —— 1/4 个有
+- `SimpleMath+` —— 1/4 个有
+- `UNETLoader` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 7.5 | 7 - 8 | 4 | 93% |
+| Prompt 约束强度(CFG) | 1 | 1 - 8 | 4 | 0% |
+| 采样算法 | ddim | - | 4 | 100% |
+| 调度器 | ddim_uniform | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 7.5，观测区间 7 - 8，4 个样本，取值集中（一致性 93%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，4 个样本，取值分散，一致性仅 0%
+- 采样算法 最常用 ddim，4 个样本，一致性 100%
+- 调度器 最常用 ddim_uniform，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

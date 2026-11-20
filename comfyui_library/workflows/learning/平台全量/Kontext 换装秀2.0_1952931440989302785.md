@@ -1,0 +1,96 @@
+---
+key: 平台全量/Kontext 换装秀2.0_1952931440989302785.json
+name: Kontext 换装秀2.0_1952931440989302785
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/Kontext 换装秀2.0_1952931440989302785.json
+hash: 9969ece026843f46
+coverage: 0.897959
+learned_at: 2026-11-14 00:34:37
+nodes: [FluxGuidance, VAEEncode, VAELoader, ImageStitch, ReferenceLatent, ConditioningZeroOut, FluxKontextImageScale, LayerUtility: JoyCaptionBeta1, PreviewImage, PreviewImage, GetImageSize+, EmptyLatentImage, Reroute, UNETLoader, DualCLIPLoader, LoraLoaderModelOnly, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1ExtraOptions, easy showAnything, TextInput_, Text Concatenate (JPS), KSampler, CLIPTextEncode, LayerMask: BenUltra, LayerMask: LoadBenModel, LayerUtility: CropByMask V2, LoraLoaderModelOnly, LoraLoaderModelOnly, LayerUtility: ImageScaleByAspectRatio V2, VAEDecode, LoadImage, LoadImage, LoadImage, ImageStitch, VAEEncode, PreviewImage, CLIPTextEncode, SaveImage, SaveImage, KSampler, ApplyPulidFlux, PulidFluxInsightFaceLoader, PulidFluxEvaClipLoader, PulidFluxModelLoader, LayerUtility: ImageReel, VAEDecode, LayerUtility: ImageReelComposit, ConditioningZeroOut, ReferenceLatent]
+patterns: [text_to_image, image_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1152, "sampler_name": "euler", "scheduler": "simple", "seed": 210374551924821, "steps": 25, "width": 1536}
+---
+
+# 平台全量/Kontext 换装秀2.0_1952931440989302785.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/Kontext 换装秀2.0_1952931440989302785.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（49 个）：
+- `FluxGuidance`
+- `VAEEncode` ★核心
+- `VAELoader`
+- `ImageStitch`
+- `ReferenceLatent`
+- `ConditioningZeroOut`
+- `FluxKontextImageScale`
+- `LayerUtility: JoyCaptionBeta1`
+- `PreviewImage`
+- `PreviewImage`
+- `GetImageSize+`
+- `EmptyLatentImage` ★核心
+- `Reroute`
+- `UNETLoader` ★核心
+- `DualCLIPLoader`
+- `LoraLoaderModelOnly` ★核心
+- `LayerUtility: LoadJoyCaptionBeta1Model`
+- `LayerUtility: JoyCaptionBeta1ExtraOptions`
+- `easy showAnything`
+- `TextInput_`
+- `Text Concatenate (JPS)`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `LayerMask: BenUltra`
+- `LayerMask: LoadBenModel`
+- `LayerUtility: CropByMask V2`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VAEDecode` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `ImageStitch`
+- `VAEEncode` ★核心
+- `PreviewImage`
+- `CLIPTextEncode` ★核心
+- `SaveImage`
+- `SaveImage`
+- `KSampler` ★核心
+- `ApplyPulidFlux`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxModelLoader`
+- `LayerUtility: ImageReel`
+- `VAEDecode` ★核心
+- `LayerUtility: ImageReelComposit`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `width` = `1536`
+- `height` = `1152`
+- `batch_size` = `1`
+- `seed` = `210374551924821`
+- `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **90%**（44/49）
+
+**有卡**：`FluxGuidance`、`VAEEncode`、`VAELoader`、`ImageStitch`、`ReferenceLatent`、`ConditioningZeroOut`、`FluxKontextImageScale`、`LayerUtility: JoyCaptionBeta1`、`GetImageSize+`、`EmptyLatentImage`、`UNETLoader`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`TextInput_`、`Text Concatenate (JPS)`、`KSampler`、`CLIPTextEncode`、`LayerMask: BenUltra`、`LayerMask: LoadBenModel`、`LayerUtility: CropByMask V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`VAEDecode`、`LoadImage`、`SaveImage`、`ApplyPulidFlux`、`PulidFluxInsightFaceLoader`、`PulidFluxEvaClipLoader`、`PulidFluxModelLoader`、`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage

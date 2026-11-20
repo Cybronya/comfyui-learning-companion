@@ -3,100 +3,56 @@ name: unknown_workflow_video_lora_sampler_953
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.56
-common_nodes: [CFGZeroStar, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, CR Text Input Switch, DWPreprocessor, DepthAnythingV2Preprocessor, DisplayText_Zho, DownloadAndLoadDepthAnythingV2Model, EmptyImage, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageBlend, ImageConcatMulti, ImageListToImageBatch, ImageResizeKJ, ImpactImageBatchToImageList, KSampler, LoadImage, LoraLoaderModelOnly, MaskToImage, MediaPipe-FaceMeshPreprocessor, MediaPipeFaceMeshToSEGS, ModelSamplingSD3, PreviewImage, Primitive integer [Crystools], RH_Captioner, RMBG, SegsToCombinedMask, SetNode, SkipLayerGuidanceDiT, UNETLoader, UNetTemporalAttentionMultiply, VAEDecodeTiled, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VRAM_Debug, WanFunControlToVideo, easy clearCacheAll]
-problems: [发现KSampler但没有VAEDecode]
+coverage: 1
+common_nodes: [CR Text, GetImageSize, LoadImage, LoadWanVideoT5TextEncoder, SaveImage, VHS_SelectImages, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageResizeToClosest, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+problems: []
 missing: []
-members: [视频生成/图生视频/【首帧+控制网】MICKMUMPITZ_WAN2_1_StartFrame+CN_SMPL_v01_1919653290769059842.json, 视频生成/文生视频/250501_MICKMUMPITZ_WAN2_1_StartFrame+CN_SMPL_v01_1918272046009356289.json]
+members: [图片生成/图生图/图像编辑ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1986453449023881218.json, 视频生成/图生视频/ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1984647925185855490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_953
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【首帧+控制网】MICKMUMPITZ_WAN2_1_StartFrame+CN_SMPL_v01_1919653290769059842.json、视频生成/文生视频/250501_MICKMUMPITZ_WAN2_1_StartFrame+CN_SMPL_v01_1918272046009356289.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/图像编辑ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1986453449023881218.json、视频生成/图生视频/ChronoEdit让P图学会物理常识，时序推理颠覆图像编辑！_1984647925185855490.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CFGZeroStar`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
 - `CR Text`
-- `CR Text Input Switch`
-- `DWPreprocessor`
-- `DepthAnythingV2Preprocessor`
-- `DisplayText_Zho`
-- `DownloadAndLoadDepthAnythingV2Model`
-- `EmptyImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageBlend`
-- `ImageConcatMulti`
-- `ImageListToImageBatch`
-- `ImageResizeKJ`
-- `ImpactImageBatchToImageList`
-- `KSampler`
+- `GetImageSize`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MaskToImage`
-- `MediaPipe-FaceMeshPreprocessor`
-- `MediaPipeFaceMeshToSEGS`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `Primitive integer [Crystools]`
-- `RH_Captioner`
-- `RMBG`
-- `SegsToCombinedMask`
-- `SetNode`
-- `SkipLayerGuidanceDiT`
-- `UNETLoader`
-- `UNetTemporalAttentionMultiply`
-- `VAEDecodeTiled`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `SaveImage`
+- `VHS_SelectImages`
 - `VHS_VideoCombine`
-- `VRAM_Debug`
-- `WanFunControlToVideo`
-- `easy clearCacheAll`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageResizeToClosest`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Upscale Image` —— 1/2 个有
-- `JWImageResizeByLongerSide` —— 1/2 个有
-- `LayerMask: PersonMaskUltra V2` —— 1/2 个有
-- `LayerUtility: CropByMask` —— 1/2 个有
-- `MaskPreview+` —— 1/2 个有
-- `ReActorFaceSwap` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 30 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 5 | - | 2 | 100% |
-| 采样算法 | uni_pc | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 2/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：发现KSampler但没有VAEDecode
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

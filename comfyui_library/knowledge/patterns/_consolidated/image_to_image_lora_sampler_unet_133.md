@@ -1,82 +1,70 @@
 ---
 name: image_to_image_lora_sampler_unet_133
 type: Image To Image
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.9302
-common_nodes: [CFGNorm, CLIPLoader, Get Image Size, ImageScale, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, crop, easy imageRemBg]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.821833
+common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/前置判断+图片处理_2042070492542144514.json, 图片生成/图生图/横向-4张处理_2034900727230898178.json, 图片生成/图生图/横向-4张处理_2039340323746353153.json, 图片生成/图生图/竖版-4张处理_2034826289911173122.json, 图片生成/图生图/竖版-4张处理_2039318003090726913.json]
+members: [图片生成/图生图/图像编辑 Krea2 Identity 单_双图编辑_2081923868243095554.json, 图片生成/图生图/图片编辑 单_双图编辑 Krea2-Identity_2081930115990253569.json, 图片生成/文生图/pipi-krea2单图编辑单图洗图换图片元素改图改元素洗图神器_2089518838948917250.json, 图片生成/文生图/pipi-krea2换装编辑工作流换衣服模特换装人物换衣换装图片工作流_2089518265252012034.json, 平台全量/krea2人物一致性换装_2082656137358434306.json, 平台全量/krea2单图编辑工作流_2082249724945592322.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_133
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/前置判断+图片处理_2042070492542144514.json、图片生成/图生图/横向-4张处理_2034900727230898178.json、图片生成/图生图/横向-4张处理_2039340323746353153.json、图片生成/图生图/竖版-4张处理_2034826289911173122.json、图片生成/图生图/竖版-4张处理_2039318003090726913.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/图像编辑 Krea2 Identity 单_双图编辑_2081923868243095554.json、图片生成/图生图/图片编辑 单_双图编辑 Krea2-Identity_2081930115990253569.json、图片生成/文生图/pipi-krea2单图编辑单图洗图换图片元素改图改元素洗图神器_2089518838948917250.json、图片生成/文生图/pipi-krea2换装编辑工作流换衣服模特换装人物换衣换装图片工作流_2089518265252012034.json、平台全量/krea2人物一致性换装_2082656137358434306.json…）
 
 - **类型**：Image To Image
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CFGNorm`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
-- `Get Image Size`
-- `ImageScale`
-- `ImageScaleToTotalPixels`
+- `EmptySD3LatentImage`
 - `KSampler`
+- `Krea2EditGroundedEncode`
+- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingAuraFlow`
 - `PreviewImage`
 - `SaveImage`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `crop`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `PadImageToCanvas` —— 4/5 个有
-- `MaskToImage` —— 3/5 个有
-- `Preview from image [Crystools]` —— 3/5 个有
-- `Qwen3VL_Chat` —— 3/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `ttN text` —— 3/5 个有
-- `ImpactCompare` —— 1/5 个有
-- `ImpactImageInfo` —— 1/5 个有
-- `easy ifElse` —— 1/5 个有
-- `kkPadImageToCanvas` —— 1/5 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `Image Comparer (rgthree)` —— 3/6 个有
+- `String Literal` —— 3/6 个有
+- `CR Text` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `easy imageSize` —— 2/6 个有
+- `ResolutionSelector` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 10 | 10 - 10 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 18/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（18/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 10 - 10，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

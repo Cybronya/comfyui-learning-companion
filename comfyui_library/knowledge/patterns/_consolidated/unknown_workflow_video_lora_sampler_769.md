@@ -1,65 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_769
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.914333
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.59775
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GetNode, GrowMask, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/AI Video Studio PR插件专用 数字人口播(照片)工作流_2094330406354120705.json, 视频生成/文生视频/Wan2_1+infinite+数字人唱歌对口型_2064331203859279874.json, 视频生成/文生视频/数字人带货视频 数字人口播 美妆模特 主播 静态图一键生成带货_2074320987222528002.json]
+members: [视频生成/图生视频/长视频动作迁移+迁移人物_2020513230719815681.json, 视频生成/文生视频/Wan-Animate+Sa2VA多人场景角色替换_1989959828757991425.json, 视频生成/文生视频/Wan-Animate-SecNodes角色替换_1977718983715606530.json, 视频生成/文生视频/Wan-Animate多人场景角色替换_1974519641752080386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_769
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/AI Video Studio PR插件专用 数字人口播(照片)工作流_2094330406354120705.json、视频生成/文生视频/Wan2_1+infinite+数字人唱歌对口型_2064331203859279874.json、视频生成/文生视频/数字人带货视频 数字人口播 美妆模特 主播 静态图一键生成带货_2074320987222528002.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/长视频动作迁移+迁移人物_2020513230719815681.json、视频生成/文生视频/Wan-Animate+Sa2VA多人场景角色替换_1989959828757991425.json、视频生成/文生视频/Wan-Animate-SecNodes角色替换_1977718983715606530.json、视频生成/文生视频/Wan-Animate多人场景角色替换_1974519641752080386.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GrowMask`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEasyCache`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float to Int` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `PrimitiveFloat` —— 2/3 个有
-- `RH_GetAudioDuration` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `AudioSeparation` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `ResolutionSelector` —— 1/3 个有
-- `SoundFlow_TrimAudio` —— 1/3 个有
-- `intToFloat _O` —— 1/3 个有
+- `Float` —— 3/4 个有
+- `LayerMask: MaskInvert` —— 3/4 个有
+- `PreviewImage` —— 3/4 个有
+- `Setter` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `easy ifElse` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `PointsEditor` —— 2/4 个有
+- `DownloadAndLoadSAM2Model` —— 1/4 个有
+- `FloatConstant` —— 1/4 个有
+- `ImageBlend` —— 1/4 个有
+- `ImageRemoveBackground+` —— 1/4 个有
+- `JWImageExtractFromBatch` —— 1/4 个有
+- `LayerMask: SAM2VideoUltra` —— 1/4 个有
+- `RemBGSession+` —— 1/4 个有
+- `Sa2VANodeTpl` —— 1/4 个有
+- `Sam2Segmentation` —— 1/4 个有
+- `SeCModelLoader` —— 1/4 个有
+- `SeCVideoSegmentation` —— 1/4 个有
+- `WanVideoContextOptions` —— 1/4 个有
 
 ## 典型参数
 

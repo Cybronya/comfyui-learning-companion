@@ -3,47 +3,72 @@ name: unknown_workflow_video_lora_sampler_1010
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9835
-common_nodes: [BasicGuider, CreateVideo, GetImageRangeFromBatch, ImageResizeKJv2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3MultiRateSamplerEXPT8, RandomNoise, SamplerCustomAdvanced, VHS_LoadVideo, VHS_VideoCombine, easy clearCacheAll]
+coverage: 0.927
+common_nodes: [AudioCrop, CR Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, INTConstant, ImageFromBatch+, ImageResizeKJv2, Int, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewAudio, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy getNode, easy setNode, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MinimaxH3-4步极速工作流（手动填写提示词版）_2085573024950087681.json, 视频生成/文生视频/Minimax_h3_多参生视频+手动@插件+light2V加速lora0.1版本_2085874663896477697.json]
+members: [数字人/数字人/KJ-wan2.2-infinitetalk双采-魔改_2040992271016923137.json, 数字人/数字人/邪修-（KJ）wan2.2-infinitetalk三采_2040715355902976002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1010
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3-4步极速工作流（手动填写提示词版）_2085573024950087681.json、视频生成/文生视频/Minimax_h3_多参生视频+手动@插件+light2V加速lora0.1版本_2085874663896477697.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/KJ-wan2.2-infinitetalk双采-魔改_2040992271016923137.json、数字人/数字人/邪修-（KJ）wan2.2-infinitetalk三采_2040715355902976002.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `CreateVideo`
-- `GetImageRangeFromBatch`
+- `AudioCrop`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageFromBatch+`
 - `ImageResizeKJv2`
+- `Int`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3MultiRateSamplerEXPT8`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `PreviewAudio`
 - `VHS_VideoCombine`
-- `easy clearCacheAll`
+- `WanVideoApplyNAG`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy getNode`
+- `easy setNode`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `UniBlockSwap` —— 1/2 个有
+- `CLIPVisionLoader` —— 1/2 个有
+- `Frames Concat Latent` —— 1/2 个有
+- `Frames Slice Latent` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `StringToInt` —— 1/2 个有
+- `WanVideoClipVisionEncode` —— 1/2 个有
+- `WanVideoContextOptions` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

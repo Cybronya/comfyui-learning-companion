@@ -3,33 +3,33 @@ name: unknown_workflow_generic_1534
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, LoadAudio, SaveAudio]
+coverage: 0.9
+common_nodes: [1hew_SaveTxt, AILab_QwenVL, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/文字控制 音色+情绪参考_2068348108735598593.json, 音频生成/音频生成/FireRedTTS2单人语音克隆话V2_1968563779053203458.json]
+members: [图片生成/反推提示词/人物动作提示词反推_2068260016997621761.json, 图片生成/反推提示词/人物动作提示词反推_2072582775118585858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1534
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/文字控制 音色+情绪参考_2068348108735598593.json、音频生成/音频生成/FireRedTTS2单人语音克隆话V2_1968563779053203458.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/人物动作提示词反推_2068260016997621761.json、图片生成/反推提示词/人物动作提示词反推_2072582775118585858.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudio`
+- `1hew_SaveTxt`
+- `AILab_QwenVL`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `FireRedTTS2MonologueNode` —— 1/2 个有
-- `IndexTTS2_Advanced` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,71 +1,72 @@
 ---
 name: unknown_workflow_sampler_clip_unet_191
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.933
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, Krea2SizePreset, Krea2StyleReference, Krea2StyleTransfer, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: moderate
+coverage: 0.9475
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Krea2 单图风格参考_2074315052915712001.json, 图片生成/图生图/Krea2 单图风格迁移_2074085764102709250.json, 图片生成/图生图/Krea2-真风格迁移（单图）_2081019058392227841.json, 图片生成/图生图/Krea2单图风格参考Style+Reference+seedvr2超清8K放大_2074739996078206977.json, 图片生成/文生图/Krea2单图风格参考Style Reference+seedvr2超清8K放大_2074388519597989889.json, 图片生成/文生图/Krea2单图风格参考seedvr2超清8K放大_2074756140059152385.json, 图片生成/文生图/krea2风格迁移_2074377841915027457.json]
+members: [图片生成/文生图/1_2023028109125099521.json, 平台全量/Flux-2-Klein-9B 多图编辑 写实自然 保持人物一致 王炸登场！_2015348302610440194.json, 平台全量/Flux-2-Klein-9B+多图编辑 电商产品展示+写实自然+保持人物一致+王炸登场！_2021417987793752066.json, 平台全量/Flux2 Klein 单图编辑9B版_2013622163370151938.json, 平台全量/flux.2 klein 只转人物，不转背景，控制人物角度_2011896495527694337.json, 平台全量/双图编辑版（全能编辑模型 VS flux.2klein）_2019336417431789570.json, 平台全量/增强现实Flux2 Klein_2028749023439495170.json, 平台全量/室内设计风格迁移_2082479153508605953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_191
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Krea2 单图风格参考_2074315052915712001.json、图片生成/图生图/Krea2 单图风格迁移_2074085764102709250.json、图片生成/图生图/Krea2-真风格迁移（单图）_2081019058392227841.json、图片生成/图生图/Krea2单图风格参考Style+Reference+seedvr2超清8K放大_2074739996078206977.json、图片生成/文生图/Krea2单图风格参考Style Reference+seedvr2超清8K放大_2074388519597989889.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/1_2023028109125099521.json、平台全量/Flux-2-Klein-9B 多图编辑 写实自然 保持人物一致 王炸登场！_2015348302610440194.json、平台全量/Flux-2-Klein-9B+多图编辑 电商产品展示+写实自然+保持人物一致+王炸登场！_2021417987793752066.json、平台全量/Flux2 Klein 单图编辑9B版_2013622163370151938.json、平台全量/flux.2 klein 只转人物，不转背景，控制人物角度_2011896495527694337.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：93%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `KSampler`
-- `Krea2SizePreset`
-- `Krea2StyleReference`
-- `Krea2StyleTransfer`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `KSamplerSelect`
 - `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/7 个有
-- `SeedVR2LoadDiTModel` —— 3/7 个有
-- `SeedVR2LoadVAEModel` —— 3/7 个有
-- `SeedVR2VideoUpscaler` —— 3/7 个有
-- `easy int` —— 3/7 个有
-- `PreviewImage` —— 2/7 个有
-- `RH_Translator` —— 1/7 个有
+- `CR Text` —— 7/8 个有
+- `GetImageSize` —— 7/8 个有
+- `ConditioningZeroOut` —— 6/8 个有
+- `ImageScaleToTotalPixels` —— 6/8 个有
+- `LayerUtility: ImageReel` —— 6/8 个有
+- `LayerUtility: ImageReelComposit` —— 6/8 个有
+- `PreviewImage` —— 6/8 个有
+- `Image Comparer (rgthree)` —— 2/8 个有
+- `ImageResize+` —— 2/8 个有
+- `LoraLoaderModelOnly` —— 2/8 个有
+- `PrimitiveInt` —— 2/8 个有
+- `QwenMultiangleCameraNode` —— 2/8 个有
+- `RH_Captioner` —— 2/8 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/8 个有
+- `StringFunction|pysssss` —— 2/8 个有
+- `Get Image Size` —— 1/8 个有
+- `ImageStitch` —— 1/8 个有
+- `PrimitiveFloat` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 7 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
-| 采样算法 | euler | - | 7 | 57% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，7 个样本，一致性 57%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（7/7 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

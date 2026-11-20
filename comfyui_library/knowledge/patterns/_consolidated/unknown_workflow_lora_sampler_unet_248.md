@@ -2,88 +2,86 @@
 name: unknown_workflow_lora_sampler_unet_248
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.785333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, ExtractLinesByIndex, ImageFromBatch+, Int, JjkText, KSamplerSelect, LoraLoaderModelOnly, MathExpression|pysssss, MiniMaxH3SigmaShift, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SaveVideo, ShowText|pysssss, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy showAnything]
-problems: []
+level: strong
+coverage: 0.754
+common_nodes: [CLIPLoader, ConditioningZeroOut, DrawMaskOnImage, Image Comparer (rgthree), KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenEditConfigPreparer, SaveImage, SolidMask, SynVowColorPicker, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy isMaskEmpty]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/一键生成一分钟产品宣传视频 文字版 Minimax H3_2092214066478665730.json, 视频生成/图生视频/一键生成一分钟双人播客视频 Minimax H3_2091884900138962946.json, 视频生成/文生视频/一键生成一分钟MV视频  Minimax H3_2092618341969129473.json]
+members: [图片生成/图生图/Qwen-Image-Edit-2511色块引导式图像重打光_2011796984142761986.json, 图片生成/图生图/Qwen-Image-Edit-2511色块引导式图像重打光_2012032970709798914.json, 图片生成/图生图/重打光之色块引导qwen2511_2011964595547672577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_248
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/一键生成一分钟产品宣传视频 文字版 Minimax H3_2092214066478665730.json、视频生成/图生视频/一键生成一分钟双人播客视频 Minimax H3_2091884900138962946.json、视频生成/文生视频/一键生成一分钟MV视频  Minimax H3_2092618341969129473.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen-Image-Edit-2511色块引导式图像重打光_2011796984142761986.json、图片生成/图生图/Qwen-Image-Edit-2511色块引导式图像重打光_2012032970709798914.json、图片生成/图生图/重打光之色块引导qwen2511_2011964595547672577.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **可信度**：强结论
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `ExtractLinesByIndex`
-- `ImageFromBatch+`
-- `Int`
-- `JjkText`
-- `KSamplerSelect`
+- `ConditioningZeroOut`
+- `DrawMaskOnImage`
+- `Image Comparer (rgthree)`
+- `KSampler`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `PreviewImage`
+- `QwenEditConfigPreparer`
 - `SaveImage`
-- `SaveVideo`
-- `ShowText|pysssss`
+- `SolidMask`
+- `SynVowColorPicker`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy showAnything`
+- `easy ifElse`
+- `easy isMaskEmpty`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/3 个有
-- `String to Float` —— 2/3 个有
-- `Float` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `Int Literal` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `MiniMaxH3ImageToVideo` —— 1/3 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/3 个有
-- `MiniMaxH3MotionContext` —— 1/3 个有
-- `MiniMaxH3MotionContextTrim` —— 1/3 个有
-- `PreviewAudio` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
+- `ImpactMinMax` —— 2/3 个有
+- `CFGNorm` —— 1/3 个有
+- `CR Multiline Text` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `MaxNode` —— 1/3 个有
+- `MemoryCleaner` —— 1/3 个有
+- `ModelSamplingAuraFlow` —— 1/3 个有
+- `QwenMultiangleLightningNode` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 - `Text Multiline` —— 1/3 个有
-- `ToFloat` —— 1/3 个有
-- `TrimAudioDuration` —— 1/3 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/3 个有
-- `easy promptConcat` —— 1/3 个有
-- `easy saveVideo` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy int` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | beta57 | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 beta57，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

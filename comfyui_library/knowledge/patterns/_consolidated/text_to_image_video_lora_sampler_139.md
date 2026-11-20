@@ -1,104 +1,101 @@
 ---
 name: text_to_image_video_lora_sampler_139
 type: Text To Image
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.8658
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, GetNode, INTConstant, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, MuyeTextEditOutput, RHLLMChatNode, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, solarL_SaveImagesToZip]
+coverage: 0.882667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/全行业广告制作加音频驱动加提示词生成器辅助扩写，数字人电商产品方案_2107226505611923457.json, 数字人/数字人/全行业广告制作助手｜音频驱动加提示词生成器辅助扩写_2106927316462039041.json, 视频生成/图生视频/全行业广告制作助手｜音频驱动加提示词生成器辅助扩写_2107981763464220673.json, 视频生成/图生视频/全行业广告制作｜提示词生成器辅助扩写图生视频_2092373596747419650.json, 视频生成/图生视频/提示词生成器辅助扩写｜全行业电商视频广告制作_2090833556611362817.json]
+members: [视频生成/图生视频/MinimaxH3全自动长视频数字人工作流｜图生视频一站式出片_2101897607634317313.json, 视频生成/图生视频/数字人MV视频生成｜音频驱动口型同步工作流_2094882855536128001.json, 视频生成/图生视频/音频加图片秒变口播数字人｜MinimaxH3 全节点注释_2096234556499259394.json, 视频生成/图生视频/音频图片生成口播数字人｜MinimaxH3全节点注释版_2095947201854918658.json, 视频生成/图生视频/音频驱动单人数字人｜MinimaxH3 lightx2v加速出片_2096243868416167937.json, 视频生成/图生视频/音频驱动数字人单人版｜MinimaxH3 lightx2v加速_2095947625072779266.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_139
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/全行业广告制作加音频驱动加提示词生成器辅助扩写，数字人电商产品方案_2107226505611923457.json、数字人/数字人/全行业广告制作助手｜音频驱动加提示词生成器辅助扩写_2106927316462039041.json、视频生成/图生视频/全行业广告制作助手｜音频驱动加提示词生成器辅助扩写_2107981763464220673.json、视频生成/图生视频/全行业广告制作｜提示词生成器辅助扩写图生视频_2092373596747419650.json、视频生成/图生视频/提示词生成器辅助扩写｜全行业电商视频广告制作_2090833556611362817.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3全自动长视频数字人工作流｜图生视频一站式出片_2101897607634317313.json、视频生成/图生视频/数字人MV视频生成｜音频驱动口型同步工作流_2094882855536128001.json、视频生成/图生视频/音频加图片秒变口播数字人｜MinimaxH3 全节点注释_2096234556499259394.json、视频生成/图生视频/音频图片生成口播数字人｜MinimaxH3全节点注释版_2095947201854918658.json、视频生成/图生视频/音频驱动单人数字人｜MinimaxH3 lightx2v加速出片_2096243868416167937.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
-- `INTConstant`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
-- `MultiTextConcatenate`
-- `MuyeTextEditOutput`
-- `RHLLMChatNode`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `VRGDG_MiniMaxH3AudioDrive`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 4/5 个有
-- `ComfyMathExpression` —— 3/5 个有
-- `LTXVAudioVAEEncode` —— 3/5 个有
-- `LTXVConcatAVLatent` —— 3/5 个有
-- `LTXVSeparateAVLatent` —— 3/5 个有
-- `SetLatentNoiseMask` —— 3/5 个有
-- `SolidMask` —— 3/5 个有
-- `SoundFlow_GetLength` —— 3/5 个有
-- `MathExpression|pysssss` —— 2/5 个有
-- `VAEDecodeAudio` —— 2/5 个有
-- `easy int` —— 2/5 个有
-- `EasyCache` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `LoraLoaderBypassModelOnly` —— 1/5 个有
-- `ModelAttentionBackend` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `忽略多组孤海` —— 1/5 个有
+- `PrimitiveFloat` —— 5/6 个有
+- `PrimitiveStringMultiline` —— 5/6 个有
+- `SoundFlow_GetLength` —— 5/6 个有
+- `LoadAudio` —— 4/6 个有
+- `LoadImage` —— 4/6 个有
+- `PreviewAudio` —— 4/6 个有
+- `TrimAudioDuration` —— 4/6 个有
+- `AudioCrop` —— 2/6 个有
+- `CR Text` —— 2/6 个有
+- `SDVN Load Image Url` —— 2/6 个有
+- `VHS_LoadAudio` —— 2/6 个有
+- `AudioConcat` —— 1/6 个有
+- `ExtendIntermediateSigmas` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `Float` —— 1/6 个有
+- `GetImageRangeFromBatch` —— 1/6 个有
+- `ImageBatchMulti` —— 1/6 个有
+- `MiniMaxH3AddGuide` —— 1/6 个有
+- `MiniMaxH3SigmaShift` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RIFE VFI` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_543
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9028
-common_nodes: [MuyeTextEditOutput, PreviewAny, RH_LLMAPI_Pro_Node, Text, easy saveText]
+coverage: 0.865833
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/即梦seedance提示词_2051145502170853378.json, 图片生成/图生图/【海皮】Seedance2.0 分镜提示词_2024673661352943617.json, 图片生成/文生图/【808】Seedance2.0剧本新增站位关系V3.1_2039643479717978113.json, 图片生成/文生图/【808】首席 AI 视频分镜导演 (V3.9 )_2042157149765242882.json, 视频生成/图生视频/【808】首席 AI 视频分镜导演 (V5.6)_2049743641312276481.json]
+members: [图片生成/图生图/DreamFit Flux_1923377996378329090.json, 图片生成/图生图/G批T-2低价4k版图生图_2049156050623930370.json, 图片生成/图生图/NG31Flash_ImageToImage_v3.1_2033838449861599233.json, 图片生成/图生图/全能图片V2 图生图｜低价渠道版｜超强一致性_2093835944704167937.json, 图片生成/文生图/DreamFit 虚拟换装_1924656825503764482.json, 图片生成/文生图/超强生图2.0_2049852572097363970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_543
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/即梦seedance提示词_2051145502170853378.json、图片生成/图生图/【海皮】Seedance2.0 分镜提示词_2024673661352943617.json、图片生成/文生图/【808】Seedance2.0剧本新增站位关系V3.1_2039643479717978113.json、图片生成/文生图/【808】首席 AI 视频分镜导演 (V3.9 )_2042157149765242882.json、视频生成/图生视频/【808】首席 AI 视频分镜导演 (V5.6)_2049743641312276481.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/DreamFit Flux_1923377996378329090.json、图片生成/图生图/G批T-2低价4k版图生图_2049156050623930370.json、图片生成/图生图/NG31Flash_ImageToImage_v3.1_2033838449861599233.json、图片生成/图生图/全能图片V2 图生图｜低价渠道版｜超强一致性_2093835944704167937.json、图片生成/文生图/DreamFit 虚拟换装_1924656825503764482.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `MuyeTextEditOutput`
-- `PreviewAny`
-- `RH_LLMAPI_Pro_Node`
-- `Text`
-- `easy saveText`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `CR Text Concatenate` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 4/6 个有
+- `PreviewImage` —— 2/6 个有
+- `RunningHub_DreamFit_Flux` —— 2/6 个有
 
 ## 典型参数
 

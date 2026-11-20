@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_generic_203
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.6414
-common_nodes: [CR Prompt Text, Comfly_api_set, SaveImage]
+coverage: 0.871091
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/0.04全能图片G+V2图像编辑（API申请看简介）+全节点注释_2047286656398532610.json, 图片生成/图生图/Gxx2模型-设计编辑工作流_2046754566573662210.json, 图片生成/图生图/Krea2 双风格融合图像生成V1(贞贞工坊版)_2069775095714893825.json, 图片生成/图生图/api实惠版-全能图片Pro双图编辑_2028100534971928578.json, 图片生成/图生图/动漫角色 2 真人工作流（附焚诀）_2003025095075479554.json, 图片生成/图生图/（0.04积分）全能图片G V2图像编辑（贞贞的AI工坊-异步任务）_2046776057306554369.json, 图片生成/文生图/(4K-基准0.15)Nano 全能图片V1 Pro文生图（贞贞AI工坊版）_1991886260597837825.json, 图片生成/文生图/1k-4K都是基准0.15- 全能图片V1 Pro文生图-调用贞贞工坊版_1992138380995612674.json, 图片生成/文生图/2029473922252541954.json, 图片生成/文生图/image2.0_2052278702922321921.json]
+members: [图片生成/图生图/image 2.0图生图_2047234111944794114.json, 图片生成/图生图/【画意手记 • 时光碎碎念涂鸦】手绘注解造像师：定格生活碎碎念的治愈瞬间_全能图片G2.0图生图_2051859619470954497.json, 图片生成/图生图/印尼饰品海报（铭匠珠宝团队）_2093518497904152577.json, 图片生成/图生图/图片转手绘涂鸦手绘注解造像师_全能图片G2.0图生图_2068085420554014722.json, 图片生成/图生图/图片转手绘涂鸦手绘注解造像师_全能图片G2.0图生图（网红必备）_2068086393603186690.json, 图片生成/图生图/埃及饰品海报_2093907378327613442.json, 图片生成/图生图/定格生活的治愈瞬间_全能图片G2.0图生图_2055118199817023489.json, 图片生成/图生图/沙特饰品海报_2093895609467097090.json, 图片生成/图生图/泰国饰品海报（铭匠珠宝团队）_2093628384592093185.json, 图片生成/图生图/涂鸦手绘注解造像师_批量_2098344967252037634.json, 平台全量/鹰哥涂鸦手绘注解造像师 批量_2097983287309463553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_203
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/0.04全能图片G+V2图像编辑（API申请看简介）+全节点注释_2047286656398532610.json、图片生成/图生图/Gxx2模型-设计编辑工作流_2046754566573662210.json、图片生成/图生图/Krea2 双风格融合图像生成V1(贞贞工坊版)_2069775095714893825.json、图片生成/图生图/api实惠版-全能图片Pro双图编辑_2028100534971928578.json、图片生成/图生图/动漫角色 2 真人工作流（附焚诀）_2003025095075479554.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/image 2.0图生图_2047234111944794114.json、图片生成/图生图/【画意手记 • 时光碎碎念涂鸦】手绘注解造像师：定格生活碎碎念的治愈瞬间_全能图片G2.0图生图_2051859619470954497.json、图片生成/图生图/印尼饰品海报（铭匠珠宝团队）_2093518497904152577.json、图片生成/图生图/图片转手绘涂鸦手绘注解造像师_全能图片G2.0图生图_2068085420554014722.json、图片生成/图生图/图片转手绘涂鸦手绘注解造像师_全能图片G2.0图生图（网红必备）_2068086393603186690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
+全部 11 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 9/10 个有
-- `easy showAnything` —— 9/10 个有
-- `Comfly_nano_banana2_edit` —— 5/10 个有
-- `Comfly_gpt_image_2_S2A` —— 4/10 个有
-- `Comfly_krea_v2_fal` —— 1/10 个有
-- `CompressImages` —— 1/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `PreviewImage` —— 7/11 个有
+- `Text` —— 7/11 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 5/11 个有
+- `PlaySound|pysssss` —— 2/11 个有
+- `RHUploadZip_V2` —— 2/11 个有
 
 ## 典型参数
 

@@ -1,75 +1,76 @@
 ---
 name: image_to_image_sampler_clip_vae_42
 type: Image To Image
-frequency: 4
-level: moderate
-coverage: 0.89225
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: strong
+coverage: 0.811
+common_nodes: [Anything Everywhere3, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, NunchakuFluxDiTLoader, PreviewImage, RH_Translator, ReferenceLatent, SaveImage, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/图生图/人物线稿提取_2031290016340647937.json, 图片生成/图生图/最好用的 nunchaku flux kontext 去水印_2053752457087467522.json, 图片生成/图生图/比中指_1953770429464891394.json, 图片生成/图生图/陶瓷浮雕_2032083602745331713.json]
+members: [图片生成/图生图/Kontext 局部重绘，融图重绘，双图局部重绘（指定物品，加速）_1957337322624839682.json, 图片生成/图生图/Kontext局部重绘加速体（二合一版，可文字，可融图）_1961617656002580482.json, 图片生成/图生图/Kontext，一句话改图。_1970665673284329473.json, 图片生成/图生图/Kontext，一句话改图。_2073218617499537410.json, 图片生成/文生图/Kontext，一句话改图。_2070705333793804290.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_vae_42
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/人物线稿提取_2031290016340647937.json、图片生成/图生图/最好用的 nunchaku flux kontext 去水印_2053752457087467522.json、图片生成/图生图/比中指_1953770429464891394.json、图片生成/图生图/陶瓷浮雕_2032083602745331713.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Kontext 局部重绘，融图重绘，双图局部重绘（指定物品，加速）_1957337322624839682.json、图片生成/图生图/Kontext局部重绘加速体（二合一版，可文字，可融图）_1961617656002580482.json、图片生成/图生图/Kontext，一句话改图。_1970665673284329473.json、图片生成/图生图/Kontext，一句话改图。_2073218617499537410.json、图片生成/文生图/Kontext，一句话改图。_2070705333793804290.json）
 
 - **类型**：Image To Image
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `FluxKontextImageScale`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `NunchakuFluxDiTLoader`
+- `PreviewImage`
+- `RH_Translator`
 - `ReferenceLatent`
 - `SaveImage`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `DifferentialDiffusion` —— 2/4 个有
-- `EnhancedLoadDiffusionModel` —— 2/4 个有
-- `NunchakuFluxDiTLoader` —— 2/4 个有
-- `RepeatLatentBatch` —— 2/4 个有
-- `Text` —— 2/4 个有
-- `ColorCorrectOfUtils` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `NunchakuFluxLoraLoader` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `easy indexAnything` —— 1/4 个有
+- `Text` —— 3/5 个有
+- `FluxKontextImageScale` —— 2/5 个有
+- `GrowMaskWithBlur` —— 2/5 个有
+- `Kontext Inpainting Conditioning` —— 2/5 个有
+- `MaskPreview` —— 2/5 个有
+- `easy imageRemBg` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Note _O` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 17.5 | 8 - 25 | 4 | 53% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | normal | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 20 | 20 - 20 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | dpmpp_sde | - | 5 | 100% |
+| 调度器 | sgm_uniform | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 17.5，观测区间 8 - 25，4 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 normal，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_sde，5 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

@@ -1,47 +1,43 @@
 ---
 name: unknown_workflow_generic_238
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.834222
-common_nodes: [CR Prompt Text, INTConstant, LoadImage, MultiTextConcatenate, RH_LLMAPI_Pro_Node, RH_Utils, Text, easy saveText, easy showAnything]
+coverage: 0.7799
+common_nodes: [LoadImage, PreviewAny, VHS_LoadVideo, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/反推提示词/MiniMax -图生视频专用-自动提示词-多分镜连贯系统_2092215167718346753.json, 图片生成/反推提示词/MiniMax H3 视频提示词工程师_2085364928906620929.json, 图片生成/反推提示词/MiniMax-H3 心灵鸡汤-口播视频提示词生成工作流_2089068681627262978.json, 图片生成/反推提示词/一键自动生成 MiniMax -导演台-自动提示词_2090683533688926209.json, 图片生成/反推提示词/一键自动生成 MiniMax -导演台-自动提示词_2104910050916651010.json, 图片生成/反推提示词/一键自动生成 MiniMax 自动提示词_2084454967406059521.json, 图片生成/反推提示词/一键自动生成 适合MiniMax H3模型的提示词_2096618725700104193.json, 图片生成/图生图/一键自动生成_MiniMax_-导演台-自动提示词_2098951598125961218.json, 图片生成/图生图/一键自动生成_MiniMax_-导演台-自动提示词_2099063288016498689.json]
+members: [图片生成/反推提示词/Gemma4-爆款视频反推V2-提示词分析-视频脚本反推_2063245873513062401.json, 图片生成/反推提示词/Qwen3.5 做视频必须工作流 反推图片_视频提示词+剧情文本生成器_2048585696616648706.json, 图片生成/反推提示词/Qwen3.5 反推图片_视频提示词+剧情文本生成器_2040666513484550145.json, 图片生成/反推提示词/Qwen3.5 反推工作流_2033884387187625985.json, 图片生成/反推提示词/Qwen3.5 视频反推提示词_2042159909973790722.json, 图片生成/反推提示词/Qwen3.5专业版图片_视频反推提示词-内嵌不同的任务场景预设提示词模板_2048392885107691522.json, 图片生成/反推提示词/Qwen3.5图片_视频提示词反推 专业版_2036261606904045569.json, 图片生成/反推提示词/Qwen3.5大模型专业提示词反推_2030269513064783873.json, 图片生成/反推提示词/Qwen3.5大模型专业提示词反推_2032748932958261249.json, 图片生成/反推提示词/Qwen3.5大模型，爆款视频反推V2-提示词分析-视频脚本反推_2059957931776503810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_238
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/MiniMax -图生视频专用-自动提示词-多分镜连贯系统_2092215167718346753.json、图片生成/反推提示词/MiniMax H3 视频提示词工程师_2085364928906620929.json、图片生成/反推提示词/MiniMax-H3 心灵鸡汤-口播视频提示词生成工作流_2089068681627262978.json、图片生成/反推提示词/一键自动生成 MiniMax -导演台-自动提示词_2090683533688926209.json、图片生成/反推提示词/一键自动生成 MiniMax -导演台-自动提示词_2104910050916651010.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/Gemma4-爆款视频反推V2-提示词分析-视频脚本反推_2063245873513062401.json、图片生成/反推提示词/Qwen3.5 做视频必须工作流 反推图片_视频提示词+剧情文本生成器_2048585696616648706.json、图片生成/反推提示词/Qwen3.5 反推图片_视频提示词+剧情文本生成器_2040666513484550145.json、图片生成/反推提示词/Qwen3.5 反推工作流_2033884387187625985.json、图片生成/反推提示词/Qwen3.5 视频反推提示词_2042159909973790722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Prompt Text`
-- `INTConstant`
+全部 10 个 workflow 都包含：
 - `LoadImage`
-- `MultiTextConcatenate`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Utils`
-- `Text`
+- `PreviewAny`
+- `VHS_LoadVideo`
 - `easy saveText`
-- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 7/9 个有
-- `ShowAnything|Mie` —— 7/9 个有
-- `孤海注释` —— 6/9 个有
-- `EmptyImage` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
-- `GetNode` —— 1/9 个有
-- `SetNode` —— 1/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/10 个有
+- `Text` —— 4/10 个有
+- `JjkText` —— 2/10 个有
+- `RHHiddenNodes` —— 2/10 个有
+- `SaveImage` —— 2/10 个有
+- `CR Text` —— 1/10 个有
 
 ## 典型参数
 

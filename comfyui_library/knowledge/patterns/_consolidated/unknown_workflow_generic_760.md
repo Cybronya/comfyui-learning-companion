@@ -1,37 +1,41 @@
 ---
 name: unknown_workflow_generic_760
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.7595
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.826
+common_nodes: [LoadAudio, LoadImage, LoadVideo, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2103398671529373698.json, 图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2106001411757666306.json, 图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2106003062849630209.json, 图片生成/图生图/衣服上身_2106305057271668737.json]
+members: [视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json, 视频生成/文生视频/2K高清官方版 _ 海螺H3全能多参视频生成_2085550153636864002.json, 视频生成/文生视频/2K高清：海螺H3全能参考视频生成（支持9图3视频3音频）_2084819553388945410.json, 视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json, 视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_760
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2103398671529373698.json、图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2106001411757666306.json、图片生成/图生图/全能图片V2-图生图-官方稳定版-提示词优化_2106003062849630209.json、图片生成/图生图/衣服上身_2106305057271668737.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3 全家桶 文生视频 首尾帧 图生视频+多参_2083358671848955906.json、视频生成/文生视频/2K高清官方版 _ 海螺H3全能多参视频生成_2085550153636864002.json、视频生成/文生视频/2K高清：海螺H3全能参考视频生成（支持9图3视频3音频）_2084819553388945410.json、视频生成/文生视频/RH MiniMax H3视频  算力和 满血开源版一个价格_2083190636123082754.json、视频生成/文生视频/海螺H3 文生视频 图生视频 首尾帧 多参_2083362380217671682.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+- `LoadVideo`
+- `RH_MinimaxHailuoH3MultimodalToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `RHLLMChatNode` —— 3/4 个有
-- `ResizeLongestToNode` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 3/5 个有
+- `RH_MinimaxHailuoH3TextToVideo` —— 3/5 个有
+- `easy showAnything` —— 2/5 个有
+- `Fast Groups Muter (rgthree)` —— 1/5 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 

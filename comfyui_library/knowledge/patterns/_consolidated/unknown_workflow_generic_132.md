@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_132
 type: Unknown Workflow
-frequency: 13
+frequency: 15
 level: moderate
-coverage: 0.836615
-common_nodes: [CR Text, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.97
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/AI 影像魔匠 Pro 套装“融图、换脸、换装、洗图、换背景”换一切的一站式能力_1994966432108752897.json, 图片生成/图生图/一换三（1.0）_2070138465358012418.json, 图片生成/图生图/一换五_2070155278921854978.json, 图片生成/图生图/一换四_2069982047782924290.json, 图片生成/图生图/全能图像Pro提示词合集玩法大全，电商主图详情页复刻_2099783551586758657.json, 图片生成/图生图/全能图像Pro提示词玩法大全合集_2101580457585496066.json, 图片生成/图生图/全能图像Pro（单图编辑）_2018635166800941057.json, 图片生成/图生图/全能图像pro 产品迁移_2013137982735261698.json, 图片生成/图生图/全能图像pro 换装_2013071292873842689.json, 图片生成/图生图/香蕉1K2K4K出图_1993897280621264898.json, 图片生成/文生图/全能图片2-电商模特换装-多主体一致性与可控性图像编辑_2029028946091708417.json, 数字人/数字人/全能图像Pro提示词合集玩法大全，电商主图详情页复刻_2046175824281341954.json, 视频生成/图生视频/全能图像Pro提示词合集玩法大全，换脸 换装 洗图 融图 一键详情 模特生成_优化版_2093374928224612353.json]
+members: [图片生成/文生图/全能G生成视频_2029105561215700993.json, 数字人/数字人/自用G3_2067294107592126465.json, 视频生成/图生视频/+Video3+8秒+图生视频_2001244265034416130.json, 视频生成/图生视频/GK Video3 图生视频_2004525161468620801.json, 视频生成/图生视频/Grok Video3 图生视频_2000471855083421697.json, 视频生成/图生视频/Grok 图生视频_1999287670520020993.json, 视频生成/图生视频/Seedance 1.5 Pro Fast 图生视频｜首尾帧视频｜支持1080P_2097537038789730305.json, 视频生成/图生视频/SeedanceV15ProImageToVideoFast_2038487770900992001.json, 视频生成/图生视频/全能GVideo3 (T2V_I2V)视频生成_2018214912014684161.json, 视频生成/图生视频/全能视频 G图生视频_2034836093006254081.json, 视频生成/图生视频/全能视频X-图生视频-低价渠道版_2049821213257674753.json, 视频生成/图生视频/全能视频X图生视频_1998230093191372801.json, 视频生成/图生视频/全能视频X图生视频_2034090844533297154.json, 视频生成/图生视频/图生视频 自定义动作高清视频_2014217858514952193.json, 视频生成/图生视频/老陈 Gork图生视频 2毛一次_2016146712053686273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_132
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/AI 影像魔匠 Pro 套装“融图、换脸、换装、洗图、换背景”换一切的一站式能力_1994966432108752897.json、图片生成/图生图/一换三（1.0）_2070138465358012418.json、图片生成/图生图/一换五_2070155278921854978.json、图片生成/图生图/一换四_2069982047782924290.json、图片生成/图生图/全能图像Pro提示词合集玩法大全，电商主图详情页复刻_2099783551586758657.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/全能G生成视频_2029105561215700993.json、数字人/数字人/自用G3_2067294107592126465.json、视频生成/图生视频/+Video3+8秒+图生视频_2001244265034416130.json、视频生成/图生视频/GK Video3 图生视频_2004525161468620801.json、视频生成/图生视频/Grok Video3 图生视频_2000471855083421697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `CR Text`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 15 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 12/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 10/13 个有
-- `PreviewImage` —— 3/13 个有
-- `ImageConcanate` —— 2/13 个有
+- `RH_Grok_Video3` —— 13/15 个有
+- `MuyeTextEditOutput` —— 3/15 个有
+- `RH_SeedanceV15ProImageToVideoFast` —— 2/15 个有
 
 ## 典型参数
 

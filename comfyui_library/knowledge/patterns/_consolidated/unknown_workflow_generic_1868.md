@@ -3,31 +3,37 @@ name: unknown_workflow_generic_1868
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [HeartMuLa_Generate, LayerUtility: PurgeVRAM V2, PreviewAudio, SaveAudio, Text]
+coverage: 0.846
+common_nodes: [CustomAddLabel, Float, LayerUtility: PurgeVRAM V2, PreviewAny, RH_RhartImageG2TextToImage, RTXVideoSuperResolution, SaveImage, Text, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [音频生成/音频生成/免费生成音乐 开源版SUNO-HeartMuLa_2013583726898319361.json, 音频生成/音频生成/免费生成音乐+开源版SUNO-HeartMuLa_2022940231028187138.json]
+members: [图片生成/文生图/纯欲校园风-地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2047708528244170754.json, 图片生成/文生图/纯欲校园风-地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2058545849621372930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1868
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/免费生成音乐 开源版SUNO-HeartMuLa_2013583726898319361.json、音频生成/音频生成/免费生成音乐+开源版SUNO-HeartMuLa_2022940231028187138.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/纯欲校园风-地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2047708528244170754.json、图片生成/文生图/纯欲校园风-地表最强-全能图片G2-GP-T-Image-2-文生图-0.1元_次_2058545849621372930.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `HeartMuLa_Generate`
+- `CustomAddLabel`
+- `Float`
 - `LayerUtility: PurgeVRAM V2`
-- `PreviewAudio`
-- `SaveAudio`
+- `PreviewAny`
+- `RH_RhartImageG2TextToImage`
+- `RTXVideoSuperResolution`
+- `SaveImage`
 - `Text`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 ## 典型参数
 

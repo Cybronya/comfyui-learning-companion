@@ -1,88 +1,75 @@
 ---
 name: image_to_image_sampler_clip_unet_43
 type: Image To Image
-frequency: 8
-level: moderate
-coverage: 0.49725
-common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, PlaySound|pysssss, PreviewImage, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+frequency: 11
+level: strong
+coverage: 0.943091
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/反推提示词/YZ金鱼-Z_Image-图文生图&洗图&高清修复v1_2053381046279917570.json, 图片生成/图生图/ProReal Pipeline_2001169170496712705.json, 图片生成/图生图/Z-Image-图文生图-洗图-高清修复 z image zimage_1995761280600387585.json, 图片生成/图生图/去照片AI味道_2009622540498505729.json, 图片生成/图生图/洗图_1941160724741963777.json, 图片生成/图生图/洗图工作流_2031338925985370113.json, 图片生成/文生图/YZ金鱼-Z_Image-图文生图&洗图&高清修复v1_1993975579062059010.json, 图片生成/文生图/Z-Image-图文生图-洗图-高清修复 z image zimage_2007444305413148674.json]
+members: [平台全量/Kontext快速出图comfyui物品迁移_1940393934617030657.json, 平台全量/flux kontext多图合成_1944743285359300609.json, 平台全量/flux kontext真人转吉卜力风格_1941662342616924161.json, 平台全量/flux kontext线稿转效果图_1942221589012484098.json, 平台全量/flux-kontext-dev官方工作流_1938576045555507202.json, 平台全量/flux1图生图工作流_2117132770823729154.json, 平台全量/kontext一键打光lora工作流_1941442117841612802.json, 平台全量/扩图  kontext_1950897398702866434.json, 平台全量/美妆精修(包装盒)_1962391840064409602.json, 平台全量/美妆精修(金属材质)_1961592020294942722.json, 平台全量/美妆精修（透明材质）_1955591299962322945.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_43
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/YZ金鱼-Z_Image-图文生图&洗图&高清修复v1_2053381046279917570.json、图片生成/图生图/ProReal Pipeline_2001169170496712705.json、图片生成/图生图/Z-Image-图文生图-洗图-高清修复 z image zimage_1995761280600387585.json、图片生成/图生图/去照片AI味道_2009622540498505729.json、图片生成/图生图/洗图_1941160724741963777.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/Kontext快速出图comfyui物品迁移_1940393934617030657.json、平台全量/flux kontext多图合成_1944743285359300609.json、平台全量/flux kontext真人转吉卜力风格_1941662342616924161.json、平台全量/flux kontext线稿转效果图_1942221589012484098.json、平台全量/flux-kontext-dev官方工作流_1938576045555507202.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
+全部 11 个 workflow 都包含：
 - `CLIPTextEncode`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `PreviewImage`
 - `SaveImage`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 7/8 个有
-- `CR SDXL Aspect Ratio` —— 7/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/8 个有
-- `GetImageSize` —— 7/8 个有
-- `ImageScaleBy` —— 7/8 个有
-- `Qwen3_VQA` —— 7/8 个有
-- `SeedVR2` —— 7/8 个有
-- `SeedVR2BlockSwap` —— 7/8 个有
-- `SeedVR2ExtraArgs` —— 7/8 个有
-- `ShowText|pysssss` —— 7/8 个有
-- `LayerUtility: ImageReel` —— 6/8 个有
-- `LayerUtility: ImageReelComposit` —— 6/8 个有
-- `Float` —— 1/8 个有
-- `Lora Loader Stack (rgthree)` —— 1/8 个有
-- `LoraLoaderModelOnly` —— 1/8 个有
-- `SeedVR2LoadDiTModel` —— 1/8 个有
-- `SeedVR2LoadVAEModel` —— 1/8 个有
-- `SeedVR2VideoUpscaler` —— 1/8 个有
-- `UnetLoaderGGUF` —— 1/8 个有
-- `VAEDecodeTiled` —— 1/8 个有
+- `ConditioningZeroOut` —— 10/11 个有
+- `ReferenceLatent` —— 10/11 个有
+- `FluxKontextImageScale` —— 9/11 个有
+- `LoraLoaderModelOnly` —— 8/11 个有
+- `ImageConcanate` —— 5/11 个有
+- `ImageStitch` —— 5/11 个有
+- `PreviewImage` —— 5/11 个有
+- `easy cleanGpuUsed` —— 3/11 个有
+- `EmptySD3LatentImage` —— 2/11 个有
+- `ImagePadForOutpaint` —— 2/11 个有
+- `CR Prompt Text` —— 1/11 个有
+- `ImageConcatMulti` —— 1/11 个有
+- `ImageResize+` —— 1/11 个有
+- `ImageScale` —— 1/11 个有
+- `RH_Translator` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 10 | 8 | 92% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.53 | 8 | 84% |
-| 采样算法 | euler | - | 8 | 88% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 0.65 | 0.25 - 0.65 | 8 | 69% |
+| 采样步数 | 20 | 20 - 30 | 11 | 86% |
+| Prompt 约束强度(CFG) | 1 | 0.85 - 1 | 11 | 96% |
+| 采样算法 | euler | - | 11 | 91% |
+| 调度器 | simple | - | 11 | 55% |
+| 重绘幅度 | 1 | 0.5 - 1 | 11 | 85% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 10，8 个样本，取值集中（一致性 92%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.53，8 个样本，取值集中（一致性 84%）
-- 采样算法 最常用 euler，8 个样本，一致性 88%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 0.65，观测区间 0.25 - 0.65，8 个样本
-- 高发问题（7/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 30，11 个样本，取值集中（一致性 86%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 0.85 - 1，11 个样本，取值集中（一致性 96%）
+- 采样算法 最常用 euler，11 个样本，一致性 91%
+- 调度器 最常用 simple，11 个样本，一致性 55%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，11 个样本，取值集中（一致性 85%）
+- 风险：Prompt 约束强度(CFG) 观测到 0.85，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）

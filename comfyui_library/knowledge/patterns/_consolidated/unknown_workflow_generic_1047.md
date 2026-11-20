@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_1047
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.6
-common_nodes: [CR Prompt Text, SaveImage, easy showAnything]
+coverage: 0.97375
+common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/最强语言翻译Seed X Pro_1948335630064451586.json, 图片生成/文生图/（RH版）全能图片2极速文生图_2027396682912112642.json, 图片生成/文生图/（RH版）全能图片2极速版文生图V1_2027097516868636673.json]
+members: [音频生成/音频生成/Qwen3 TTS 设计音色_2026212800921604098.json, 音频生成/音频生成/Qwen3 TTS语音生成_2015055128176369665.json, 音频生成/音频生成/Qwen3 TTS音色设计（可自定义）_2014978319221002241.json, 音频生成/音频生成/opsv-Qwen3 TTS 设计音色_2061476772725747713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1047
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/最强语言翻译Seed X Pro_1948335630064451586.json、图片生成/文生图/（RH版）全能图片2极速文生图_2027396682912112642.json、图片生成/文生图/（RH版）全能图片2极速版文生图V1_2027097516868636673.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 设计音色_2026212800921604098.json、音频生成/音频生成/Qwen3 TTS语音生成_2015055128176369665.json、音频生成/音频生成/Qwen3 TTS音色设计（可自定义）_2014978319221002241.json、音频生成/音频生成/opsv-Qwen3 TTS 设计音色_2061476772725747713.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `SaveImage`
-- `easy showAnything`
+全部 4 个 workflow 都包含：
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 2/3 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/3 个有
-- `RunningHub SeedXPro Translator` —— 1/3 个有
+- `CR Seed` —— 1/4 个有
+- `Note Plus (mtb)` —— 1/4 个有
 
 ## 典型参数
 

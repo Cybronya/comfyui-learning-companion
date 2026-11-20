@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_946
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.877667
-common_nodes: [BagelImageEdit, BagelModelLoader, LoadImage, SaveImage]
+coverage: 0.91675
+common_nodes: [RH_RhartImageG25SunburstTextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/BAGEL 老照片修复_1927389841900867586.json, 图片生成/图生图/Bagel多模态模型_图像编辑_1928264819231866882.json, 图片生成/图生图/言出法随，小豆包Bagel图像处理加速版_1928639095021670402.json]
+members: [图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json, 图片生成/文生图/全能图片G IMAGE 2.5 Flare文生图(RH版)_2098080212641738754.json, 图片生成/文生图/全能图片G-Image-2.5 Sunburst_2093764243769348098.json, 图片生成/文生图/全能图片G2.5 Sunburst-文生图｜4K画质｜经济型_2097854291200536577.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_946
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/BAGEL 老照片修复_1927389841900867586.json、图片生成/图生图/Bagel多模态模型_图像编辑_1928264819231866882.json、图片生成/图生图/言出法随，小豆包Bagel图像处理加速版_1928639095021670402.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json、图片生成/文生图/全能图片G IMAGE 2.5 Flare文生图(RH版)_2098080212641738754.json、图片生成/文生图/全能图片G-Image-2.5 Sunburst_2093764243769348098.json、图片生成/文生图/全能图片G2.5 Sunburst-文生图｜4K画质｜经济型_2097854291200536577.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BagelImageEdit`
-- `BagelModelLoader`
-- `LoadImage`
+全部 4 个 workflow 都包含：
+- `RH_RhartImageG25SunburstTextToImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `JWImageResizeByLongerSide` —— 1/3 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

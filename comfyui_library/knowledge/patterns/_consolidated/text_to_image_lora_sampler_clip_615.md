@@ -3,88 +3,86 @@ name: text_to_image_lora_sampler_clip_615
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.8655
-common_nodes: [Bounded Image Crop, Bounded Image Crop with Mask, CLIPLoader, CLIPTextEncode, ColorMatch, DF_Integer, EmptyLatentImage, Get Image Size, GetImageSize+, Image Comparer (rgthree), ImageSmartSharpen+, ImageToMask, ImpactInt, JjkText, KSampler, LG_Color_Match_V2, LoadImage, LoraLoaderModelOnly, PreviewImage, ResizeAndPadImage, ResizeImageMixlab, SaveImage, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize, solarL_SaveImagesToZip, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9425
+common_nodes: [Apply Text Template (mtb), ApplyPulidFlux, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, FluxGuidance, Image Crop Face, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingFlux, PreviewImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RH_Captioner, SDXLAspectRatioSelector, SaveImage, VAEDecode, VAELoader, easy promptConcat]
+problems: []
 missing: []
-members: [图片生成/图生图/KoneText溶图打光 图生图处理工具_2100651281701498882.json, 图片生成/图生图/konetext溶图打光｜图生图打光高清放大三连，溶图氛围感直接拉满_2100511396101451778.json]
+members: [图片生成/反推提示词/Flux最强肖像转素描(铅笔画_速写_线稿_底稿_灰度画_单色画)工作流_1905892025487511554.json, 平台全量/肖像转素描_1856959468931108865.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_615
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/KoneText溶图打光 图生图处理工具_2100651281701498882.json、图片生成/图生图/konetext溶图打光｜图生图打光高清放大三连，溶图氛围感直接拉满_2100511396101451778.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Flux最强肖像转素描(铅笔画_速写_线稿_底稿_灰度画_单色画)工作流_1905892025487511554.json、平台全量/肖像转素描_1856959468931108865.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Bounded Image Crop`
-- `Bounded Image Crop with Mask`
-- `CLIPLoader`
+- `Apply Text Template (mtb)`
+- `ApplyPulidFlux`
 - `CLIPTextEncode`
-- `ColorMatch`
-- `DF_Integer`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
-- `Get Image Size`
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
-- `ImageSmartSharpen+`
-- `ImageToMask`
-- `ImpactInt`
-- `JjkText`
+- `FluxGuidance`
+- `Image Crop Face`
 - `KSampler`
-- `LG_Color_Match_V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingFlux`
 - `PreviewImage`
-- `ResizeAndPadImage`
-- `ResizeImageMixlab`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RH_Captioner`
+- `SDXLAspectRatioSelector`
 - `SaveImage`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
-- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy imageSize`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy promptConcat`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 1/2 个有
+- `ConditioningZeroOut` —— 1/2 个有
+- `ControlNetApplyAdvanced` —— 1/2 个有
+- `ControlNetLoader` —— 1/2 个有
+- `DepthAnythingV2Preprocessor` —— 1/2 个有
+- `Get resolution [Crystools]` —— 1/2 个有
+- `Grayscale Image (WLSH)` —— 1/2 个有
+- `ImageEffectsGrayscale` —— 1/2 个有
+- `ImageScale` —— 1/2 个有
+- `LineArtPreprocessor` —— 1/2 个有
+- `SetUnionControlNetType` —— 1/2 个有
+- `StringFunction|pysssss` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
+| ControlNet 权重 | 0.5 | - | 1 | 100% |
+| 宽度 | 720 | - | 2 | 100% |
+| 高度 | 1280 | - | 2 | 100% |
+| 采样步数 | 20 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 50% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
+- 宽度 中位数 720，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1280，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 50%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

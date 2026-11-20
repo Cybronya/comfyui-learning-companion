@@ -30025,8 +30025,8 @@
 			"policy":"Stage preview SaveVideo nodes are renamed from left to right with filename_prefix 1, 2, 3, ..."
 		},
 		"ksk_vhs_safe_conversion_20260619":{
-			"output_folder":"C:\\Users\\KSK\\Documents\\Codex\\2026-06-16\\c-users-ksk-downloads-616-ltx2\\outputs\\LTX2.3_4.0_JSON_WORKFLOWS_OMNICINE_LORA_TUNED_VHS_SAFE",
-			"source_folder":"C:\\Users\\KSK\\Documents\\Codex\\2026-06-16\\c-users-ksk-downloads-616-ltx2\\outputs\\LTX2.3_4.0_JSON_WORKFLOWS_OMNICINE_LORA_TUNED",
+			"output_folder":"C:\\Users\\KSK\\Documents\\Codex\\2026-06-16\\c-users-kREDACTED0000000000000\\outputs\\LTX2.3_4.0_JSON_WORKFLOWS_OMNICINE_LORA_TUNED_VHS_SAFE",
+			"source_folder":"C:\\Users\\KSK\\Documents\\Codex\\2026-06-16\\c-users-kREDACTED0000000000000\\outputs\\LTX2.3_4.0_JSON_WORKFLOWS_OMNICINE_LORA_TUNED",
 			"added_vhs_node":6699,
 			"action":"converted SaveVideo/CreateVideo final output to VHS_VideoCombine",
 			"existing_vhs_found":0,
@@ -30077,7 +30077,7 @@
 			"touched_existing_loras":[
 				"Ltx2.3-Licon-VBVR-I2V-390K-R32.safetensors:ON@0.9",
 				"LTX2.3_Crisp_Enhance.safetensors:ON@0.45",
-				"ltx2.3-ic-watermark-remove-general-lora.safetensors:ON@1",
+				"ltx2.3-ic-watermREDACTED000000000000000.safetensors:ON@1",
 				"ltx2.3-ic-subtitles-remove-general-lora.safetensors:ON@1",
 				"ltx-2.3-22b-distilled-lora-384.safetensors:BYPASS@0",
 				"ltx-2.3-22b-ic-lora-motion-track-control-ref0.5.safetensors:BYPASS@0",

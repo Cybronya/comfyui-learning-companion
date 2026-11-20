@@ -1,70 +1,86 @@
 ---
 name: unknown_workflow_sampler_clip_unet_260
 type: Unknown Workflow
-frequency: 5
-level: weak
-coverage: 0.8598
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 6
+level: strong
+coverage: 0.823167
+common_nodes: [ApplyPulidFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Florence2ModelLoader, Florence2Run, KSamplerSelect, LayerUtility: TextJoin, LoadImage, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/MOSS_Text-to-Image_2K_Turbo_Edition_图生图2K极速版_2113466135764099073.json, 图片生成/图生图/Moss-image-文生图（8步加速）_2112146425906814977.json, 图片生成/图生图/Moss-image-文生图（提示词增强）_2112140949404082178.json, 图片生成/文生图/(贞贞Lora)Ernie Turbo文生图自动提示词优化极速版V1_2045747492465156097.json, 图片生成/文生图/Flux3-klein-文生图（提示词增强）_2111099390617280514.json]
+members: [图片生成/图生图/一键生成新年头像_1892845550293979138.json, 图片生成/图生图/宫崎骏吉卜力 Ghibli_1910150250202628098.json, 图片生成/图生图/生成专属 JelleyCat 毛绒玩具 一键生图系列_1908158686215155713.json, 图片生成/文生图/地标冰箱贴+全节点注释_2055980297757437953.json, 图片生成/文生图/宠物冰箱贴+全节点注释_2054823619720687618.json, 平台全量/定制人像专属冰箱贴_1909502444630646786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_260
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MOSS_Text-to-Image_2K_Turbo_Edition_图生图2K极速版_2113466135764099073.json、图片生成/图生图/Moss-image-文生图（8步加速）_2112146425906814977.json、图片生成/图生图/Moss-image-文生图（提示词增强）_2112140949404082178.json、图片生成/文生图/(贞贞Lora)Ernie Turbo文生图自动提示词优化极速版V1_2045747492465156097.json、图片生成/文生图/Flux3-klein-文生图（提示词增强）_2111099390617280514.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/一键生成新年头像_1892845550293979138.json、图片生成/图生图/宫崎骏吉卜力 Ghibli_1910150250202628098.json、图片生成/图生图/生成专属 JelleyCat 毛绒玩具 一键生图系列_1908158686215155713.json、图片生成/文生图/地标冰箱贴+全节点注释_2055980297757437953.json、图片生成/文生图/宠物冰箱贴+全节点注释_2054823619720687618.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
+全部 6 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `KSampler`
-- `SaveImage`
+- `DualCLIPLoader`
+- `EmptyLatentImage`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `KSamplerSelect`
+- `LayerUtility: TextJoin`
+- `LoadImage`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `TextGenerate` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `easy showAnything` —— 2/5 个有
-- `ConcatTextOfUtils` —— 1/5 个有
-- `ConditioningZeroOut` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `StringReplace` —— 1/5 个有
+- `FluxGuidance` —— 5/6 个有
+- `LoraLoader` —— 5/6 个有
+- `MaskToSEGS` —— 5/6 个有
+- `ModelSamplingFlux` —— 5/6 个有
+- `SDXLAspectRatioSelector` —— 5/6 个有
+- `SEGSPreview` —— 5/6 个有
+- `SaveImage` —— 5/6 个有
+- `ConstrainImage|pysssss` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `RH_Captioner` —— 3/6 个有
+- `LoadImageFromUrl` —— 2/6 个有
+- `Text _O` —— 2/6 个有
+- `easy cleanGpuUsed` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
+- `JWStringMultiline` —— 1/6 个有
+- `Joy_caption` —— 1/6 个有
+- `Joy_caption_load` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `SaveImageAndMetadata_` —— 1/6 个有
+- `ShowText|pysssss` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 50 | 5 | 13% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 5 | 55% |
-| 采样算法 | euler | - | 5 | 100% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 832 | 768 - 832 | 6 | 97% |
+| 高度 | 1216 | 1024 - 1216 | 6 | 94% |
+| LoRA 模型强度 | 1 | 0.8 - 1 | 5 | 92% |
+| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 50，5 个样本，取值分散，一致性仅 13%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，5 个样本
-- 采样算法 最常用 euler，5 个样本，一致性 100%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 832，观测区间 768 - 832，6 个样本，取值集中（一致性 97%）
+- 高度 中位数 1216，观测区间 1024 - 1216，6 个样本，取值集中（一致性 94%）
+- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，5 个样本，取值集中（一致性 92%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

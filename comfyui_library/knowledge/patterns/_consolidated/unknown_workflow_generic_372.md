@@ -1,33 +1,33 @@
 ---
 name: unknown_workflow_generic_372
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 1
-common_nodes: [RH_SeedreamV5ProTextToImage, SaveImage]
+coverage: 0.625
+common_nodes: [CR Text, RH_LLMAPI_Pro_Node, RH_RhartImageG2TextToImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075085505724768257.json, 图片生成/文生图/RH seedream-v5-pro-文生图_2075070938386886657.json, 图片生成/文生图/RH seedream-v5-pro-文生图_2075154182012751873.json, 图片生成/文生图/Seedream 5.0 PRO 文生图_2075240057946071041.json, 图片生成/文生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075473593953247234.json, 图片生成/文生图/Seedream V5 Pro T2I 文生图_2077556986736111618.json, 图片生成/文生图/文生图  Seedream 5.0 Pro_2075504105182810113.json]
+members: [图片生成/文生图/B站封面生成全能图像G image2.0_2059819232501784577.json, 图片生成/文生图/全能图像G image2.0B站封面生成_2070707709644722177.json, 图片生成/文生图/全能图像G image2.0B站封面生成_2071065904363954178.json, 图片生成/文生图/全能图像G image2.0B站封面生成_2071081676318535682.json, 图片生成/文生图/小红书封面生成全能图像G image2.0_2059820340053893122.json, 图片生成/文生图/小红书封面生成全能图像G image2.0_2070711928586072066.json, 图片生成/文生图/小红书封面生成全能图像G image2.0_2071062218250215426.json, 图片生成/文生图/小红书封面生成全能图像G image2.0_2071077447948394497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_372
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075085505724768257.json、图片生成/文生图/RH seedream-v5-pro-文生图_2075070938386886657.json、图片生成/文生图/RH seedream-v5-pro-文生图_2075154182012751873.json、图片生成/文生图/Seedream 5.0 PRO 文生图_2075240057946071041.json、图片生成/文生图/Seedream 5.0 Pro文生图（RH版-即梦5.0 Pro）_2075473593953247234.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/B站封面生成全能图像G image2.0_2059819232501784577.json、图片生成/文生图/全能图像G image2.0B站封面生成_2070707709644722177.json、图片生成/文生图/全能图像G image2.0B站封面生成_2071065904363954178.json、图片生成/文生图/全能图像G image2.0B站封面生成_2071081676318535682.json、图片生成/文生图/小红书封面生成全能图像G image2.0_2059820340053893122.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `RH_SeedreamV5ProTextToImage`
+全部 8 个 workflow 都包含：
+- `CR Text`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/7 个有
+- `ShowText|pysssss`
 
 ## 典型参数
 

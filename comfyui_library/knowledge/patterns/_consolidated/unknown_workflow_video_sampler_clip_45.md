@@ -1,75 +1,74 @@
 ---
 name: unknown_workflow_video_sampler_clip_45
 type: Unknown Workflow
-frequency: 12
-level: weak
-coverage: 0.975083
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 11
+level: moderate
+coverage: 0.847455
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, ImageResizeKJ, KSamplerSelect, LTXVAdainLatent, LTXVBaseSampler, LTXVConditioning, LTXVFilmGrain, LTXVLatentUpsampler, LTXVLatentUpsamplerModelLoader, LTXVTiledSampler, LoadImage, RandomNoise, STGAdvancedPresets, STGGuiderAdvanced, Set VAE Decoder Noise, SplitSigmas, VAEDecode, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 SVI2 Pro 10秒长视频_2036317087181840385.json, 视频生成/图生视频/Wan2.2-native-control-Inp_1955921227057647617.json, 视频生成/图生视频/smooth图生视频工作流_2067249517136797697.json, 视频生成/图生视频/wan2.2图生视频官方工作流_2037349147073843201.json, 视频生成/图生视频/wan2.2图生视频（3分钟）_1982023168992919554.json, 视频生成/图生视频/图生视频工作流_2066459393683705858.json, 视频生成/图生视频/社区模型图生视频Smooth Mix i2V v2.0模型测试_2050537311854710785.json, 视频生成/文生视频/wan2.2-图文生视频_1986058080360300545.json, 视频生成/文生视频/wan2.2-图生视频-20秒长视频_1985192415910838274.json, 视频生成/文生视频/图+文生视频 -WanImageToVideo_1986023978202529793.json, 视频生成/文生视频/图生视频  (支持AI自动生成剧本)_1983914577035493377.json, 视频生成/文生视频/图生视频 (支持AI自动手动生成短视频剧本)_1985873348330696706.json]
+members: [平台全量/2图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921088284032712705.json, 视频生成/图生视频/3图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921462278720520193.json, 视频生成/图生视频/4图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921473560848826369.json, 视频生成/图生视频/LTXV 0.9.7 13B 关键帧工作流_1921533815024467970.json, 视频生成/图生视频/ltxv-13b-i2v-base-fp8快速图生视频_1921753494003580929.json, 视频生成/图生视频/ltxv-13b-i2v-base图生视频+视频扩展_1921820658055987202.json, 视频生成/图生视频/图生视频-极速视频模型_1932368419218190337.json, 视频生成/图生视频/最新LTXV13B图生视频-极速视频模型_1920144851361533954.json, 视频生成/图生视频/最新LTXV13B多段分镜续写扩展_1920634402723008514.json, 视频生成/图生视频/最新LTXV13B首尾帧-多帧控制_1921825249476935682.json, 视频生成/图生视频/最新LTXV13B首尾帧控制(可多帧)_1920639676355379202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_45
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 SVI2 Pro 10秒长视频_2036317087181840385.json、视频生成/图生视频/Wan2.2-native-control-Inp_1955921227057647617.json、视频生成/图生视频/smooth图生视频工作流_2067249517136797697.json、视频生成/图生视频/wan2.2图生视频官方工作流_2037349147073843201.json、视频生成/图生视频/wan2.2图生视频（3分钟）_1982023168992919554.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/2图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921088284032712705.json、视频生成/图生视频/3图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921462278720520193.json、视频生成/图生视频/4图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921473560848826369.json、视频生成/图生视频/LTXV 0.9.7 13B 关键帧工作流_1921533815024467970.json、视频生成/图生视频/ltxv-13b-i2v-base-fp8快速图生视频_1921753494003580929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
+- `CheckpointLoaderSimple`
+- `ImageResizeKJ`
+- `KSamplerSelect`
+- `LTXVAdainLatent`
+- `LTXVBaseSampler`
+- `LTXVConditioning`
+- `LTXVFilmGrain`
+- `LTXVLatentUpsampler`
+- `LTXVLatentUpsamplerModelLoader`
+- `LTXVTiledSampler`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `UNETLoader`
+- `RandomNoise`
+- `STGAdvancedPresets`
+- `STGGuiderAdvanced`
+- `Set VAE Decoder Noise`
+- `SplitSigmas`
 - `VAEDecode`
-- `VAELoader`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `WanImageToVideo` —— 10/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/12 个有
-- `LoraLoaderModelOnly` —— 7/12 个有
-- `ImageResizeKJv2` —— 6/12 个有
-- `JWInteger` —— 6/12 个有
-- `CLIPVisionEncode` —— 5/12 个有
-- `CLIPVisionLoader` —— 5/12 个有
-- `MathExpression|pysssss` —— 5/12 个有
-- `Seed (rgthree)` —— 5/12 个有
-- `CR Prompt Text` —— 4/12 个有
-- `CR Text` —— 3/12 个有
-- `Int` —— 2/12 个有
-- `ShowText|pysssss` —— 2/12 个有
-- `easy textSwitch` —— 2/12 个有
-- `CR Text Concatenate` —— 1/12 个有
-- `ConstrainImage|pysssss` —— 1/12 个有
-- `GetNode` —— 1/12 个有
-- `ImageBatchExtendWithOverlap` —— 1/12 个有
-- `ImageFromBatch+` —— 1/12 个有
-- `RHHiddenNodes` —— 1/12 个有
-- `RH_Captioner` —— 1/12 个有
-- `SetNode` —— 1/12 个有
-- `WanAdvancedI2V` —— 1/12 个有
-- `WanFunInpaintToVideo` —— 1/12 个有
-- `easy batchAnything` —— 1/12 个有
-- `ttN concat` —— 1/12 个有
+- `ImageBatch` —— 9/11 个有
+- `LTXVPromptEnhancer` —— 7/11 个有
+- `LTXVPromptEnhancerLoader` —— 7/11 个有
+- `Text Concatenate (JPS)` —— 7/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/11 个有
+- `LayerUtility: PurgeVRAM` —— 6/11 个有
+- `LTXVExtendSampler` —— 5/11 个有
+- `Text Multiline` —— 5/11 个有
+- `LTXQ8Patch` —— 4/11 个有
+- `ImageResizeKJv2` —— 3/11 个有
+- `JWInteger` —— 3/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/11 个有
+- `ShowText|pysssss` —— 3/11 个有
+- `easy int` —— 3/11 个有
+- `easy cleanGpuUsed` —— 2/11 个有
+- `CR Text` —— 1/11 个有
+- `ImageScale` —— 1/11 个有
+- `RH_Translator` —— 1/11 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 12 | 75% |
-| Prompt 约束强度(CFG) | 8 | 4 - 20 | 12 | 55% |
-| 采样算法 | 1 | 1 - 3.5 | 12 | 34% |
-| 调度器 | euler | - | 12 | 58% |
-| 重绘幅度 | simple | - | 12 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,9 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，12 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 20，12 个样本
-- 采样算法 中位数 1，观测区间 1 - 3.5，12 个样本，取值分散，一致性仅 34%
-- 调度器 最常用 euler，12 个样本，一致性 58%
-- 重绘幅度 最常用 simple，12 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

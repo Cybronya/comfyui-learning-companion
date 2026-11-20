@@ -1,119 +1,88 @@
 ---
 name: image_to_image_controlnet_upscale_sampler
 type: Image To Image
-frequency: 9
+frequency: 12
 level: moderate
-coverage: 0.849222
-common_nodes: [ApplyInstantID, CLIPTextEncode, CM_IntToFloat, CM_IntToNumber, CM_NumberToInt, CM_NumberUnaryOperation, CR Upscale Image, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, FaceAnalysisModels, FaceBoundingBox, GetImageSize+, Image Comparer (rgthree), ImageComposite+, ImageConcanate, ImageScale, ImageScaleBy, InstantIDFaceAnalysis, InstantIDModelLoader, JWImageResizeByLongerSide, KSampler, LayerMask: MaskGrow, LayerMask: PersonMaskUltra V2, LayerUtility: CropBoxResolve, LayerUtility: CropByMask, LayerUtility: LayerImageTransform, LoadImage, MaskPreview+, PreviewImage, SaveImage, SetLatentNoiseMask, VAEDecode, VAEEncode, easy imageColorMatch]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.7785
+common_nodes: [AIO_Preprocessor, BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, BrushNet, BrushNetLoader, CLIPSetLastLayer, CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, GrowMask, ImageResize+, ImageUpscaleWithModel, ImpactDilateMask, InvertMask, KSampler, LoadImage, PreviewImage, RepeatLatentBatch, SaveImage, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, preview_mask]
+problems: []
 missing: []
-members: [图片生成/图生图/AI摄影，生成专属自己的海报_1953124001817292802.json, 图片生成/图生图/DreamFit Flux高质量性感换装工作流V3（人脸一致性版）_1923641767445319681.json, 图片生成/图生图/DreamFit Flux高质量性感换装工作流V3（姿势，人脸版）_1923650301994127361.json, 图片生成/图生图/DreamFit Flux高质量换装生成V1（上下装鞋子，人脸，姿势）_1923689036513202178.json, 图片生成/图生图/DreamFit Flux高质量换装生成V1（上下装，人脸，姿势）_1923677323194003457.json, 图片生成/图生图/DreamO 双图融合人物一致性加强版V2（不炸显存）_1925924770247053313.json, 图片生成/图生图/DreanFit性感百变双主体上下装优化版工作流（人脸一致性）_1921065415924187137.json, 图片生成/图生图/Ominigen2单主体动作编辑ID加强+高清化V1_1936624718294454274.json, 图片生成/文生图/DreamO IP控制文生图人物一致性进阶版V2（不炸显存）_1925972588705845250.json]
+members: [平台全量/可乐_罐装饮料 拍摄广告_1812677792222863361.json, 平台全量/咖啡机商品图摄影_1807671436113850369.json, 平台全量/室内设计手稿-原木风家居转换器_1797811268577521666.json, 平台全量/服装摄影大片换背景_1813455340590526465.json, 平台全量/白瓷壶商品图摄影_1808830603507773442.json, 平台全量/箱包商品图摄影_1810871928560742402.json, 平台全量/背包商品图摄影_1796372501710880770.json, 平台全量/背包商品图摄影_1824356445121851394.json, 平台全量/茶壶商品图摄影_1797453465895579649.json, 平台全量/载具车背景替换_1811320588016742401.json, 平台全量/运动鞋产品拍摄图_1810234154149146626.json, 平台全量/香水商品图摄影_1797501651666341889.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_upscale_sampler
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/AI摄影，生成专属自己的海报_1953124001817292802.json、图片生成/图生图/DreamFit Flux高质量性感换装工作流V3（人脸一致性版）_1923641767445319681.json、图片生成/图生图/DreamFit Flux高质量性感换装工作流V3（姿势，人脸版）_1923650301994127361.json、图片生成/图生图/DreamFit Flux高质量换装生成V1（上下装鞋子，人脸，姿势）_1923689036513202178.json、图片生成/图生图/DreamFit Flux高质量换装生成V1（上下装，人脸，姿势）_1923677323194003457.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（平台全量/可乐_罐装饮料 拍摄广告_1812677792222863361.json、平台全量/咖啡机商品图摄影_1807671436113850369.json、平台全量/室内设计手稿-原木风家居转换器_1797811268577521666.json、平台全量/服装摄影大片换背景_1813455340590526465.json、平台全量/白瓷壶商品图摄影_1808830603507773442.json…）
 
 - **类型**：Image To Image
-- **样本数**：9
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `ApplyInstantID`
+全部 12 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `BRIA_RMBG_ModelLoader_Zho`
+- `BRIA_RMBG_Zho`
+- `BrushNet`
+- `BrushNetLoader`
+- `CLIPSetLastLayer`
 - `CLIPTextEncode`
-- `CM_IntToFloat`
-- `CM_IntToNumber`
-- `CM_NumberToInt`
-- `CM_NumberUnaryOperation`
-- `CR Upscale Image`
 - `CheckpointLoaderSimple`
 - `ControlNetApplyAdvanced`
 - `ControlNetLoader`
-- `FaceAnalysisModels`
-- `FaceBoundingBox`
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
-- `ImageComposite+`
-- `ImageConcanate`
-- `ImageScale`
-- `ImageScaleBy`
-- `InstantIDFaceAnalysis`
-- `InstantIDModelLoader`
-- `JWImageResizeByLongerSide`
+- `GrowMask`
+- `ImageResize+`
+- `ImageUpscaleWithModel`
+- `ImpactDilateMask`
+- `InvertMask`
 - `KSampler`
-- `LayerMask: MaskGrow`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: CropBoxResolve`
-- `LayerUtility: CropByMask`
-- `LayerUtility: LayerImageTransform`
 - `LoadImage`
-- `MaskPreview+`
 - `PreviewImage`
+- `RepeatLatentBatch`
 - `SaveImage`
-- `SetLatentNoiseMask`
+- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
-- `easy imageColorMatch`
+- `VAELoader`
+- `preview_mask`
 
 **可变部分**（部分 workflow 才有）：
-- `PMRF` —— 8/9 个有
-- `LayerUtility: PurgeVRAM V2` —— 7/9 个有
-- `CR Prompt Text` —— 6/9 个有
-- `Note Plus (mtb)` —— 5/9 个有
-- `easy showAnything` —— 5/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/9 个有
-- `PDIMAGE_LongerSize` —— 4/9 个有
-- `RunningHub_DreamFit_Flux` —— 4/9 个有
-- `JWInteger` —— 2/9 个有
-- `RH_Captioner` —— 2/9 个有
-- `RunningHub DreamO` —— 2/9 个有
-- `CLIPLoader` —— 1/9 个有
-- `EmptySD3LatentImage` —— 1/9 个有
-- `Fast Groups Muter (rgthree)` —— 1/9 个有
-- `ImageMaskSwitch` —— 1/9 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/9 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/9 个有
-- `LayerUtility: PurgeVRAM` —— 1/9 个有
-- `LoadOmniGen2Model` —— 1/9 个有
-- `ModelSamplingAuraFlow` —— 1/9 个有
-- `OmniGen2` —— 1/9 个有
-- `RH_Translator` —— 1/9 个有
-- `RunningHub_DreamFit_SD` —— 1/9 个有
-- `SeedVR2` —— 1/9 个有
-- `SeedVR2BlockSwap` —— 1/9 个有
-- `TTP_Expand_And_Mask` —— 1/9 个有
-- `TextConcatenator` —— 1/9 个有
-- `UNETLoader` —— 1/9 个有
-- `VAELoader` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
+- `GetNode` —— 10/12 个有
+- `Image Overlay` —— 10/12 个有
+- `ImageScale` —— 10/12 个有
+- `SetNode` —— 10/12 个有
+- `IPAdapter` —— 8/12 个有
+- `IPAdapterUnifiedLoader` —— 8/12 个有
+- `LayerColor: ColorAdapter` —— 8/12 个有
+- `Mask Gaussian Region` —— 6/12 个有
+- `LayerColor: RGB` —— 4/12 个有
+- `ImageToMask` —— 2/12 个有
+- `MaskToImage` —— 2/12 个有
+- `AegisFlow/aflogo` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 9 | 60% |
-| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 9 | 39% |
-| 采样算法 | euler_ancestral | - | 9 | 89% |
-| 调度器 | sgm_uniform | - | 9 | 89% |
-| 重绘幅度 | 0.5 | 0.5 - 1 | 9 | 72% |
-| ControlNet 权重 | 0.1 | 0.1 - 0.1 | 9 | 100% |
+| ControlNet 权重 | 0.675 | 0.6 - 1 | 12 | 76% |
+| 采样步数 | 20 | 20 - 27 | 12 | 91% |
+| Prompt 约束强度(CFG) | 7 | 7 - 7 | 12 | 100% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 12 | 50% |
+| 调度器 | karras | - | 12 | 75% |
+| 重绘幅度 | 0.48 | 0.15 - 1 | 12 | 40% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，9 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 39%
-- 采样算法 最常用 euler_ancestral，9 个样本，一致性 89%
-- 调度器 最常用 sgm_uniform，9 个样本，一致性 89%
-- 重绘幅度 中位数 0.5，观测区间 0.5 - 1，9 个样本
-- ControlNet 权重 中位数 0.1，观测区间 0.1 - 0.1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- ControlNet 权重 中位数 0.675，观测区间 0.6 - 1，12 个样本
+- 采样步数 中位数 20，观测区间 20 - 27，12 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 7，观测区间 7 - 7，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_2m_sde_gpu，12 个样本，一致性 50%
+- 调度器 最常用 karras，12 个样本，一致性 75%
+- 重绘幅度 中位数 0.48，观测区间 0.15 - 1，12 个样本，取值分散，一致性仅 40%

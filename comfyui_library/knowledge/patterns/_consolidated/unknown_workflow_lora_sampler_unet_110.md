@@ -2,88 +2,66 @@
 name: unknown_workflow_lora_sampler_unet_110
 type: Unknown Workflow
 frequency: 7
-level: strong
-coverage: 0.891
-common_nodes: [CFGGuider, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAddGuidesFromBatchIndexes, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PrimitiveBoolean, PromptRelaySmartEncode, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetLatentNoiseMask, SimpleMath+, SolidMask, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, easy ifElse, easy saveVideo, easy timelineEditor, easy timelineInfoOutput]
-problems: []
+level: weak
+coverage: 0.934286
+common_nodes: [CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/(智能多参) Ltx2.3 Singularity+Licon-MSR+EasyMedia导演台V3_2063189005126168577.json, 视频生成/图生视频/(智能多参-正式版）- Ltx2.3 Licon-MSR+EasyMedia导演台V1_2063442671171104770.json, 视频生成/图生视频/(智能多帧) Ltx2.3 Singularity+EasyMedia导演工作台v3_2063140910652813313.json, 视频生成/图生视频/(首尾帧) Ltx2.3 Singularity+EasyMedia导演工作台V3_2063140222006808577.json, 视频生成/图生视频/LTX 2.3 + Licon-MSR：多参考图时间线导演_2066752524996136961.json, 视频生成/图生视频/Ltx2.3 Singularity+EasyMedia导演工作台(乱神版)V3_2063129511406952450.json, 视频生成/图生视频/开源版seedance2.0(智能多参)+Ltx2.3+Singularity+Licon-MSR_2063514127636717569.json]
+members: [图片生成/图生图/Flux2-Klein换脸_换头_高级换脸多种参数色调可调_2063593099074560001.json, 图片生成/图生图/Flux2-Klein换脸_换头_高级换脸多种参数色调可调_2063946262113767426.json, 图片生成/图生图/flux klein MC皮肤生成_2048078695188926466.json, 图片生成/图生图/换脸_换头_Flux2-Klein_2070314503065137153.json, 图片生成/图生图/换脸_换头_Flux2-Klein不但换脸直接给你换头发型也换了高级换脸多种参数色调可调_2037844279611101186.json, 平台全量/换脸_换头_Flux2-Klein_2029220325677867009.json, 平台全量/换脸_换头_Flux2-Klein_2030943821265117186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_110
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/(智能多参) Ltx2.3 Singularity+Licon-MSR+EasyMedia导演台V3_2063189005126168577.json、视频生成/图生视频/(智能多参-正式版）- Ltx2.3 Licon-MSR+EasyMedia导演台V1_2063442671171104770.json、视频生成/图生视频/(智能多帧) Ltx2.3 Singularity+EasyMedia导演工作台v3_2063140910652813313.json、视频生成/图生视频/(首尾帧) Ltx2.3 Singularity+EasyMedia导演工作台V3_2063140222006808577.json、视频生成/图生视频/LTX 2.3 + Licon-MSR：多参考图时间线导演_2066752524996136961.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein换脸_换头_高级换脸多种参数色调可调_2063593099074560001.json、图片生成/图生图/Flux2-Klein换脸_换头_高级换脸多种参数色调可调_2063946262113767426.json、图片生成/图生图/flux klein MC皮肤生成_2048078695188926466.json、图片生成/图生图/换脸_换头_Flux2-Klein_2070314503065137153.json、图片生成/图生图/换脸_换头_Flux2-Klein不但换脸直接给你换头发型也换了高级换脸多种参数色调可调_2037844279611101186.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CFGGuider`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAddGuidesFromBatchIndexes`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+- `CLIPLoader`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
-- `PromptRelaySmartEncode`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetLatentNoiseMask`
-- `SimpleMath+`
-- `SolidMask`
+- `PainterFluxImageEdit`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
-- `easy ifElse`
-- `easy saveVideo`
-- `easy timelineEditor`
-- `easy timelineInfoOutput`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 4/7 个有
-- `LTXVMakeRefVideo` —— 4/7 个有
-- `easy timelineSegmentOutput` —— 4/7 个有
-- `ConditioningZeroOut` —— 3/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `LTXVImgToVideoInplace` —— 3/7 个有
-- `LTXVLatentUpsampler` —— 3/7 个有
-- `LatentUpscaleModelLoader` —— 3/7 个有
-- `PrimitiveInt` —— 3/7 个有
-- `SimpleMathDual+` —— 3/7 个有
-- `easy indexAnything` —— 3/7 个有
-- `PreviewImage` —— 1/7 个有
-- `VHS_VideoCombine` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
+- `GetImageSize` —— 6/7 个有
+- `ImageSharpen` —— 6/7 个有
+- `ModelSamplingAuraFlow` —— 6/7 个有
+- `easy cleanGpuUsed` —— 6/7 个有
+- `RepeatLatentBatch` —— 4/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 7 | 100% |
-| 高度 | 24 | 24 - 24 | 7 | 100% |
+| 采样步数 | 8 | 8 - 20 | 7 | 57% |
+| Prompt 约束强度(CFG) | 1 | 1 - 5 | 7 | 11% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 8 - 20，7 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 5，7 个样本，取值分散，一致性仅 11%
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（6/7 个样本）：Steps较低可能导致细节不足

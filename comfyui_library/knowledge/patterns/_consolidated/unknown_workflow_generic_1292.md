@@ -1,34 +1,43 @@
 ---
 name: unknown_workflow_generic_1292
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5
-common_nodes: [LoadImage, PrimitiveStringMultiline, Qwen3_VQA, Text Concatenate, easy saveText, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.75
+common_nodes: [1hew_AnySwitchBool, AudioCrop, LoadAudio, OmniVoiceMultiSpeakerTTS, OmniVoiceVoiceCloneTTS, OmniVoiceVoiceDesignTTS, OmniVoiceWhisperLoader, PreviewAudio, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, SaveAudio, easy compare]
 problems: []
 missing: []
-members: [图片生成/反推提示词/LTX-2提示词辅助生成中英文版01-在线流程_2015054872969748482.json, 图片生成/反推提示词/LTX-2提示词辅助生成中英文版02-在线流程_2015069348125220865.json]
+members: [平台全量/OmniVoice原生-1至10人-人数控制-v5_2119251279292755969.json, 平台全量/OmniVoice原生-1至10人-人数控制-v5_2119268650195701761.json, 音频生成/音频生成/OmniVoice原生-1至10人-人数控制-v5_2115027028184489985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1292
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/LTX-2提示词辅助生成中英文版01-在线流程_2015054872969748482.json、图片生成/反推提示词/LTX-2提示词辅助生成中英文版02-在线流程_2015069348125220865.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/OmniVoice原生-1至10人-人数控制-v5_2119251279292755969.json、平台全量/OmniVoice原生-1至10人-人数控制-v5_2119268650195701761.json、音频生成/音频生成/OmniVoice原生-1至10人-人数控制-v5_2115027028184489985.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：50%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `1hew_AnySwitchBool`
+- `AudioCrop`
+- `LoadAudio`
+- `OmniVoiceMultiSpeakerTTS`
+- `OmniVoiceVoiceCloneTTS`
+- `OmniVoiceVoiceDesignTTS`
+- `OmniVoiceWhisperLoader`
+- `PreviewAudio`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveString`
 - `PrimitiveStringMultiline`
-- `Qwen3_VQA`
-- `Text Concatenate`
-- `easy saveText`
-- `easy showAnything`
+- `SaveAudio`
+- `easy compare`
 
 ## 典型参数
 
@@ -40,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

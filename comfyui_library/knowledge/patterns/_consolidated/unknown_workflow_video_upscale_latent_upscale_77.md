@@ -2,98 +2,93 @@
 name: unknown_workflow_video_upscale_latent_upscale_77
 type: Unknown Workflow
 frequency: 5
-level: strong
-coverage: 0.4498
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CM_IntToFloat, CheckpointLoaderSimple, DF_Int_to_Float, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, JWIntegerDiv, JoinStrings, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVFirstLastFrameControl_TTP, LTXVLatentUpsampler, LTXVMiddleFrame_TTP, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, Label (rgthree), LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, Qwen3_VQA, RandomNoise, SamplerCustomAdvanced, SetNode, ShellAgentPluginOutputText, TextInput_, VAEDecode, VHS_VideoCombine, easy showAnything]
+level: moderate
+coverage: 0.893
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TrimAudioDuration, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.0首尾帧_首中尾帧生视频V2（附自动生提示词） 适合人物开车，动态适宜_2016865338914250754.json, 视频生成/图生视频/LTX2.0首尾帧生视频V3_极速优化版_三次采样（支持自动提示词）_2017376776682475522.json, 视频生成/图生视频/LTX2.0首尾帧生视频V3音频驱动版_三次采样(自行上传音频)_2017697617920135169.json, 视频生成/图生视频/LTX2.3首尾帧生视频 音频驱动版_三次采样(自行上传音频)_2037425677011525633.json, 视频生成/图生视频/LTX2.3首尾帧生视频（支持自动提示词）_2031682937711759362.json]
+members: [数字人/数字人/Moss语音设计-LTX-2.3 双人 or 单人对口型优化版（时长由说话时长决定）无字幕版_2050361109261107202.json, 视频生成/图生视频/LTX-2.3 双人对口型横屏优化版（时长由说话时长决定）1920p_2045788656627097601.json, 视频生成/图生视频/LTX2.3 自用版 I2V Customer Audio_2063969467373281282.json, 视频生成/图生视频/🦞LTX-2.3 单人对口型数字人（带配音）极速无字幕版_2046500148146085890.json, 音频生成/音频生成/Moss语音设计-LTX-2.3 双人 or 单人对口型优化版（时长由说话时长决定）1920p_2046997844069982210.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_77
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/LTX2.0首尾帧_首中尾帧生视频V2（附自动生提示词） 适合人物开车，动态适宜_2016865338914250754.json、视频生成/图生视频/LTX2.0首尾帧生视频V3_极速优化版_三次采样（支持自动提示词）_2017376776682475522.json、视频生成/图生视频/LTX2.0首尾帧生视频V3音频驱动版_三次采样(自行上传音频)_2017697617920135169.json、视频生成/图生视频/LTX2.3首尾帧生视频 音频驱动版_三次采样(自行上传音频)_2037425677011525633.json、视频生成/图生视频/LTX2.3首尾帧生视频（支持自动提示词）_2031682937711759362.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/Moss语音设计-LTX-2.3 双人 or 单人对口型优化版（时长由说话时长决定）无字幕版_2050361109261107202.json、视频生成/图生视频/LTX-2.3 双人对口型横屏优化版（时长由说话时长决定）1920p_2045788656627097601.json、视频生成/图生视频/LTX2.3 自用版 I2V Customer Audio_2063969467373281282.json、视频生成/图生视频/🦞LTX-2.3 单人对口型数字人（带配音）极速无字幕版_2046500148146085890.json、音频生成/音频生成/Moss语音设计-LTX-2.3 双人 or 单人对口型优化版（时长由说话时长决定）1920p_2046997844069982210.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：45%
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CM_IntToFloat`
-- `CheckpointLoaderSimple`
-- `DF_Int_to_Float`
+- `ComfyMathExpression`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `JWIntegerDiv`
-- `JoinStrings`
 - `KSamplerSelect`
 - `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVFirstLastFrameControl_TTP`
+- `LTXVCropGuides`
+- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
-- `LTXVMiddleFrame_TTP`
 - `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `Label (rgthree)`
 - `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `Qwen3_VQA`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PreviewAudio`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `ShellAgentPluginOutputText`
-- `TextInput_`
-- `VAEDecode`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `TrimAudioDuration`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `Compare` —— 4/5 个有
-- `EmptyImage` —— 4/5 个有
-- `ImpactSwitch` —— 4/5 个有
-- `LayerUtility: PurgeVRAM` —— 4/5 个有
-- `StringReplace` —— 4/5 个有
-- `ToString` —— 4/5 个有
-- `VAELoaderKJ` —— 4/5 个有
-- `easy cleanGpuUsed` —— 4/5 个有
-- `easy ifElse` —— 4/5 个有
-- `DualCLIPLoader` —— 3/5 个有
-- `LTXAVTextEncoderLoader` —— 3/5 个有
-- `Audio Duration (mtb)` —— 2/5 个有
-- `LTXVAudioVAEEncode` —— 2/5 个有
-- `LoadAudio` —— 2/5 个有
-- `PreviewAudio` —— 2/5 个有
-- `SetLatentNoiseMask` —— 2/5 个有
-- `SimpleCalculatorKJ` —— 2/5 个有
-- `SolidMask` —— 2/5 个有
-- `TrimAudioDuration` —— 2/5 个有
-- `LTXVAudioVAELoader` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
+- `AudioConcat` —— 4/5 个有
+- `CreateVideo` —— 4/5 个有
+- `GetAudioDurationFromAudio` —— 4/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
+- `PrimitiveBoolean` —— 4/5 个有
+- `ResizeImageMaskNode` —— 4/5 个有
+- `SimpleCalculatorKJ` —— 4/5 个有
+- `Text` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `math_calculate` —— 4/5 个有
+- `DiffusionModelLoaderKJ` —— 3/5 个有
+- `RunningHub_VoxCPM_Generate` —— 3/5 个有
+- `RunningHub_VoxCPM_LoadModel` —— 3/5 个有
+- `Fast Groups Muter (rgthree)` —— 2/5 个有
+- `MossTTSModelLoader` —— 2/5 个有
+- `MossTTSVoiceDesign` —— 2/5 个有
+- `LTX2_NAG` —— 1/5 个有
+- `LTXTiledSampler` —— 1/5 个有
+- `LTXVChunkFeedForward` —— 1/5 个有
+- `LayerUtility: PurgeVRAM` —— 1/5 个有
+- `ModelPatchTorchSettings` —— 1/5 个有
+- `PathchSageAttentionKJ` —— 1/5 个有
+- `PromptRelayEncode` —— 1/5 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/5 个有
+- `easy indexTTSGenerateSimple` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 5 | 100% |
-| 高度 | 25 | 25 - 25 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -101,5 +96,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

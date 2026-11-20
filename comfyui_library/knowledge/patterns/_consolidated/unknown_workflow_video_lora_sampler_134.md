@@ -1,57 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_134
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.838929
-common_nodes: [BasicGuider, CLIPLoader, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.5224
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetNode, GrowMask, LoadImage, OnnxDetectionModelLoader, PointsEditor, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3｜VSA 4步_2098331619802308610.json, 视频生成/文生视频/Minimax参考生视频(最新插件双时钟+4步lora8步高质量极速)_2085606301979209730.json, 视频生成/文生视频/Minimax双时钟图生视频加速版_2087634755666931713.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V1_2085629759433822210.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V2_2093869475740344321.json, 视频生成/文生视频/Minimax文生视频（Lightx2v正式版8步lora+双时钟）_2087718430937014273.json, 视频生成/文生视频/minimaxH3文生视频（light2v8步lora+双时钟）_2087529767288524801.json, 视频生成/文生视频/minimax三图工作流_2090738092591378434.json, 视频生成/文生视频/minimax三图工作流_2091847130888630274.json, 视频生成/文生视频/minimax九图工作流_2091582636920758274.json, 视频生成/文生视频/minimax九图工作流_2092593622448427010.json, 视频生成/文生视频/minimax九图工作流_2102148767163183105.json, 视频生成/文生视频/双时钟采样6步极速图文生视频_2085767587174113281.json, 视频生成/文生视频/极速版 MinimaxH3 文生视频 图生视频  T8版_2085912109149417474.json]
+members: [平台全量/Wan2.2 Animate V2+SeC遮罩优化版_1977197157231022082.json, 平台全量/Wan2.2 Animate V2视频人物替换+SeC遮罩最新版_2028100957145403393.json, 平台全量/Wan2.2Animate视频换人物_2062474652877942786.json, 平台全量/动作迁移  V2 Wan2.2 Animate_2028994297055416322.json, 平台全量/自用换视频_2001631616843825154.json, 数字人/数字人/Wan Animate V2版 视频多人场景精准替换_1970675787114422273.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移  24G显存_1998993890759860225.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_1991192921735278594.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_2043632215732523009.json, 视频生成/图生视频/V2 Wan2.2 Animate 动作迁移_2043636277030948866.json, 视频生成/图生视频/V2 Wan2.2 Animate 视频替换人物_产品_背景 (3)_1997005381832478722.json, 视频生成/图生视频/V2 Wan2.2 Animate 视频替换人物_产品_背景_1974719882828845058.json, 视频生成/图生视频/V2 Wan2.3 Animate 超自然动作迁移_2008454973708832769.json, 视频生成/图生视频/V2 Wan2.5 Animate 超自然动作迁移 视频换人_2064595765720346625.json, 视频生成/图生视频/V2+Wan2.2+Animate+动作迁移_2016043271843225601.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_134
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3｜VSA 4步_2098331619802308610.json、视频生成/文生视频/Minimax参考生视频(最新插件双时钟+4步lora8步高质量极速)_2085606301979209730.json、视频生成/文生视频/Minimax双时钟图生视频加速版_2087634755666931713.json、视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V1_2085629759433822210.json、视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V2_2093869475740344321.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（平台全量/Wan2.2 Animate V2+SeC遮罩优化版_1977197157231022082.json、平台全量/Wan2.2 Animate V2视频人物替换+SeC遮罩最新版_2028100957145403393.json、平台全量/Wan2.2Animate视频换人物_2062474652877942786.json、平台全量/动作迁移  V2 Wan2.2 Animate_2028994297055416322.json、平台全量/自用换视频_2001631616843825154.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+全部 15 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GetNode`
+- `GrowMask`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PointsEditor`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 13/14 个有
-- `MiniMaxH3DualClockSamplerT8` —— 13/14 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 13/14 个有
-- `ResolutionSelector` —— 13/14 个有
-- `CR Prompt Text` —— 12/14 个有
-- `LoadImage` —— 12/14 个有
-- `ModelAttentionBackend` —— 4/14 个有
-- `VHS_LoadVideo` —— 3/14 个有
-- `GetNode` —— 2/14 个有
-- `SetNode` —— 2/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
-- `LoadAudio` —— 1/14 个有
-- `MiniMaxH3FastH34StepSetupT8Advanced` —— 1/14 个有
-- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 1/14 个有
-- `MiniMaxH3SigmaShift` —— 1/14 个有
-- `ModelPreviewOverrideKJ` —— 1/14 个有
+- `ImageConcanate` —— 14/15 个有
+- `WanVideoSetBlockSwap` —— 14/15 个有
+- `WanVideoSetLoRAs` —— 14/15 个有
+- `DownloadAndLoadSAM2Model` —— 12/15 个有
+- `GetImageSize` —— 12/15 个有
+- `GetImageSizeAndCount` —— 12/15 个有
+- `INTConstant` —— 12/15 个有
+- `ImageResizeKJv2` —— 12/15 个有
+- `Sam2Segmentation` —— 12/15 个有
+- `VHS_VideoInfoLoaded` —— 12/15 个有
+- `WanVideoTorchCompileSettings` —— 12/15 个有
+- `easy cleanGpuUsed` —— 12/15 个有
+- `JjkText` —— 11/15 个有
+- `PreviewImage` —— 4/15 个有
+- `ImageResize+` —— 3/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/15 个有
+- `Float to Int` —— 2/15 个有
+- `MuyeLoadImage` —— 2/15 个有
+- `SeCModelLoader` —— 2/15 个有
+- `SeCVideoSegmentation` —— 2/15 个有
+- `AdaptiveWanVideoAnimateEmbeds` —— 1/15 个有
+- `Frame Select` —— 1/15 个有
+- `LayerMask: MaskPreview` —— 1/15 个有
+- `SaveVideoRGBA` —— 1/15 个有
+- `VHS_LoadVideoPath` —— 1/15 个有
+- `Vignette` —— 1/15 个有
+- `WanVideoTeaCache` —— 1/15 个有
+- `easy sam3ModelLoader` —— 1/15 个有
+- `easy sam3VideoSegmentation` —— 1/15 个有
 
 ## 典型参数
 

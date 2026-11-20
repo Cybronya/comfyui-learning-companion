@@ -3,33 +3,36 @@ name: unknown_workflow_generic_522
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [Float, LoadAudio, SaveAudio, SongBloomDecoder, SongBloomGenerate, SongBloomModelLoader, Text Multiline]
+coverage: 0.789333
+common_nodes: [LoadImage, SaveImage, ShowText|pysssss, llama_cpp_instruct_adv, llama_cpp_model_loader]
 problems: []
 missing: []
-members: [音频生成/音频生成/Song Bloom音乐生成_1949379598588510209.json, 音频生成/音频生成/SongBloom Plus音乐生成稳定版V2（支持歌曲模仿）_1971620889362100226.json, 音频生成/音频生成/SongBloom Plus音乐生成稳定版（支持歌曲模仿）_1982452473073934337.json, 音频生成/音频生成/SongBloom音乐生成稳定版V1（支持歌曲模仿）_1949302900293021697.json, 音频生成/音频生成/歌曲模仿SongBloom Plus音乐生成稳定版V2_1971842690109337601.json, 音频生成/音频生成/音乐生成（支持歌曲模仿）_2008964386093797378.json]
+members: [图片生成/反推提示词/001-提示词增强_2080208454978981890.json, 图片生成/反推提示词/提示词反推-Qwen3-VL-Llama-cpp_2037912443044765697.json, 平台全量/Gemma4-26B-图像反推_2043302580717096961.json, 平台全量/comfyui ：qwen3.5  反推 聊天_2032352869940203521.json, 视频生成/文生视频/【遇见AI】llama_cpp图片反推视频反推，qwen3.5模型_2059562160774270978.json, 音频生成/音频生成/qwen3.5工作流+歌词创作_2042814512310521857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_522
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/Song Bloom音乐生成_1949379598588510209.json、音频生成/音频生成/SongBloom Plus音乐生成稳定版V2（支持歌曲模仿）_1971620889362100226.json、音频生成/音频生成/SongBloom Plus音乐生成稳定版（支持歌曲模仿）_1982452473073934337.json、音频生成/音频生成/SongBloom音乐生成稳定版V1（支持歌曲模仿）_1949302900293021697.json、音频生成/音频生成/歌曲模仿SongBloom Plus音乐生成稳定版V2_1971842690109337601.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/001-提示词增强_2080208454978981890.json、图片生成/反推提示词/提示词反推-Qwen3-VL-Llama-cpp_2037912443044765697.json、平台全量/Gemma4-26B-图像反推_2043302580717096961.json、平台全量/comfyui ：qwen3.5  反推 聊天_2032352869940203521.json、视频生成/文生视频/【遇见AI】llama_cpp图片反推视频反推，qwen3.5模型_2059562160774270978.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `Float`
-- `LoadAudio`
-- `SaveAudio`
-- `SongBloomDecoder`
-- `SongBloomGenerate`
-- `SongBloomModelLoader`
-- `Text Multiline`
+- `LoadImage`
+- `SaveImage`
+- `ShowText|pysssss`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+
+**可变部分**（部分 workflow 才有）：
+- `llama_cpp_parameters` —— 5/6 个有
+- `SetNode` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_generic_514
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.896
-common_nodes: [CR Prompt Text, FB_Qwen3TTSVoiceDesign, PreviewAny, PreviewAudio, RH_LLMAPI_Pro_Node, SaveAudio]
+coverage: 0.959143
+common_nodes: [FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, SaveAudio, VRAMReserver]
 problems: []
 missing: []
-members: [音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015076900074426370.json, 音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015998086245519362.json, 音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2033382385605156865.json, 音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版_2046465787099095041.json, 音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版工作流_2046803129345249282.json, 音频生成/音频生成/Qwen3-TTS 音色设计_2034082246776332290.json]
+members: [音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json, 音频生成/音频生成/Qwen3 TTS多角色配音V2（声音克隆版）_2015094220624764929.json, 音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json, 音频生成/音频生成/Qwen3 TTS有声书制作   多人语音设计+模仿_2017771927997259777.json, 音频生成/音频生成/Qwen3-TTS多角色多轮对话-SZ_2063441379161886722.json, 音频生成/音频生成/Qwen3-TTS多角色多轮对话生成工作流_2014703508829769729.json, 音频生成/音频生成/🦖多角色对话配音（自定义音色）_2018213546974253057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_514
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015076900074426370.json、音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2015998086245519362.json、音频生成/音频生成/(Smile版)Qwen3 TTS声音设计_2033382385605156865.json、音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版_2046465787099095041.json、音频生成/音频生成/Qwen3 TTS声音设计+VoxCPM2语音克隆组合版工作流_2046803129345249282.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS多角色配音V2_2015075625282838530.json、音频生成/音频生成/Qwen3 TTS多角色配音V2（声音克隆版）_2015094220624764929.json、音频生成/音频生成/Qwen3 TTS多角色配音_2015413055974285314.json、音频生成/音频生成/Qwen3 TTS有声书制作   多人语音设计+模仿_2017771927997259777.json、音频生成/音频生成/Qwen3-TTS多角色多轮对话-SZ_2063441379161886722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Prompt Text`
+全部 7 个 workflow 都包含：
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
 - `FB_Qwen3TTSVoiceDesign`
-- `PreviewAny`
-- `PreviewAudio`
-- `RH_LLMAPI_Pro_Node`
+- `LayerUtility: PurgeVRAM V2`
 - `SaveAudio`
+- `VRAMReserver`
 
 **可变部分**（部分 workflow 才有）：
-- `ConcatTextOfUtils` —— 2/6 个有
-- `RunningHub_VoxCPM_LoadModel` —— 2/6 个有
-- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 2/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
+- `CR Prompt Text` —— 4/7 个有
+- `LoadAudio` —— 3/7 个有
+- `WhisperSTT` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
 
 ## 典型参数
 

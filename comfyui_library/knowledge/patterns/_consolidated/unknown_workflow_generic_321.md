@@ -1,35 +1,46 @@
 ---
 name: unknown_workflow_generic_321
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.725125
-common_nodes: [HeartMuLa_Generate, SaveAudio]
+coverage: 0.741111
+common_nodes: [1hew_MaskBatchToList, Bjornulf_LoopBasicBatch, Eden_Save_Param_Dict, LoadImage, LoadSAM3Model, PreviewAny, PrimitiveFloat, PrimitiveString, SaveImageWithAlpha, easy saveText]
 problems: []
 missing: []
-members: [数字人/数字人/HeartMula写歌_2016410254724042753.json, 音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json, 音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json, 音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json, 音频生成/音频生成/工作流视频篇8-AI音乐创作生成-HeartMuLa_2018290723933655042.json, 音频生成/音频生成/音乐生成--HeartMula让你写歌自由_2013804466218209282.json, 音频生成/音频生成/🎵HeartMuLa🎵最新最强开源音乐生成_2014297660701810690.json]
+members: [平台全量/sam3 图片智能遮罩_2032376843847868418.json, 数字人/数字人/sam3组件-multitle3_2036880850557603842.json, 数字人/数字人/sam3组件-multitle4_2037263503836323842.json, 数字人/数字人/sam3组件-multitle5_2037902728327860225.json, 数字人/数字人/sam3组件-multitle6_2041777046006796289.json, 数字人/数字人/sam3组件-multitle7_2042214581564608514.json, 数字人/数字人/sam3组件-multitle8_2046255489444487169.json, 数字人/数字人/sam3组件-multitle9_2046807394075811841.json, 数字人/数字人/sam3组件-multitle_2032354223064616961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_321
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/HeartMula写歌_2016410254724042753.json、音频生成/音频生成/HeartMuLa - AI音乐生成 - 基于歌词和标签生成音乐_2015852615384436738.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2013588895073574913.json、音频生成/音频生成/HeartMuLa音乐生成基础版_2014240945285369857.json、音频生成/音频生成/SUNO-HeartMuLa：一句话+一段歌词=一首歌_2018149736544473089.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/sam3 图片智能遮罩_2032376843847868418.json、数字人/数字人/sam3组件-multitle3_2036880850557603842.json、数字人/数字人/sam3组件-multitle4_2037263503836323842.json、数字人/数字人/sam3组件-multitle5_2037902728327860225.json、数字人/数字人/sam3组件-multitle6_2041777046006796289.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `SaveAudio`
+全部 9 个 workflow 都包含：
+- `1hew_MaskBatchToList`
+- `Bjornulf_LoopBasicBatch`
+- `Eden_Save_Param_Dict`
+- `LoadImage`
+- `LoadSAM3Model`
+- `PreviewAny`
+- `PrimitiveFloat`
+- `PrimitiveString`
+- `SaveImageWithAlpha`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 2/8 个有
-- `INTConstant` —— 1/8 个有
-- `SaveAudioMP3` —— 1/8 个有
+- `easy sam3ImageSegmentation` —— 7/9 个有
+- `easy sam3ModelLoader` —— 7/9 个有
+- `EmptyImage` —— 5/9 个有
+- `GetImage_(Width&Height) _O` —— 5/9 个有
+- `SAM3Segmentation` —— 4/9 个有
+- `preview_mask` —— 2/9 个有
 
 ## 典型参数
 

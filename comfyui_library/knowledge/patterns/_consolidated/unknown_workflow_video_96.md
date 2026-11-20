@@ -1,41 +1,36 @@
 ---
 name: unknown_workflow_video_96
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [HYMotionEncodeText, HYMotionExportFBX, HYMotionGenerate, HYMotionLoadLLM, HYMotionLoadNetwork, HYMotionPreview, Preview3D, VHS_VideoCombine]
+frequency: 4
+level: moderate
+coverage: 0.866
+common_nodes: [ImageConcanate, KEEP_ModelLoader, KEEP_ProcessImageSequence, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/3D角色动作生成_2044976802380128257.json, 视频生成/文生视频/HY-motion 1.0骨骼动画V1_2007835675105693697.json]
+members: [平台全量/Keep快速视频转高清_1983775719157342209.json, 平台全量/Keep视频人脸高清化极速版V1_1938249855473221633.json, 平台全量/keep视频一键高清放大工作流_1937866199424503810.json, 平台全量/即插即用！Keep视频人脸高清化极速版V1_1937842308656336898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_96
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/3D角色动作生成_2044976802380128257.json、视频生成/文生视频/HY-motion 1.0骨骼动画V1_2007835675105693697.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Keep快速视频转高清_1983775719157342209.json、平台全量/Keep视频人脸高清化极速版V1_1938249855473221633.json、平台全量/keep视频一键高清放大工作流_1937866199424503810.json、平台全量/即插即用！Keep视频人脸高清化极速版V1_1937842308656336898.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `HYMotionEncodeText`
-- `HYMotionExportFBX`
-- `HYMotionGenerate`
-- `HYMotionLoadLLM`
-- `HYMotionLoadNetwork`
-- `HYMotionPreview`
-- `Preview3D`
+全部 4 个 workflow 都包含：
+- `ImageConcanate`
+- `KEEP_ModelLoader`
+- `KEEP_ProcessImageSequence`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `HYMotionPreviewAnimation` —— 1/2 个有
+- `VHS_VideoInfoLoaded` —— 1/4 个有
 
 ## 典型参数
 
@@ -47,4 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

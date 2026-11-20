@@ -3,34 +3,39 @@ name: unknown_workflow_generic_1843
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.667
-common_nodes: [LoadAudio, PrimitiveStringMultiline, RunningHub_VoxCPM_LoadModel, SaveAudio]
+coverage: 0.531
+common_nodes: [Any Switch (rgthree), CR Text, CR Text Replace, Fast Groups Bypasser (rgthree), LoadImage, MathExpression|pysssss, RH_RhartImageG2OfficialImageToImage, RH_RhartImageG2OfficialTextToImage, SaveImage, easy int, easy promptLine, easy showAnything, easy textIndexSwitch]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2 语音克隆_2056949209022164994.json, 音频生成/音频生成/VoxCPM2语音克隆_2065345286356164609.json]
+members: [图片生成/文生图/全能图片G-2.0 官方稳定版_2048698636799840257.json, 图片生成/文生图/全能图片G-2.0 官方稳定版_2058128888185839617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1843
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 语音克隆_2056949209022164994.json、音频生成/音频生成/VoxCPM2语音克隆_2065345286356164609.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G-2.0 官方稳定版_2048698636799840257.json、图片生成/文生图/全能图片G-2.0 官方稳定版_2058128888185839617.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `RunningHub_VoxCPM_LoadModel`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `RunningHub_VoxCPM_Generate` —— 1/2 个有
-- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 1/2 个有
+- `Any Switch (rgthree)`
+- `CR Text`
+- `CR Text Replace`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `RH_RhartImageG2OfficialImageToImage`
+- `RH_RhartImageG2OfficialTextToImage`
+- `SaveImage`
+- `easy int`
+- `easy promptLine`
+- `easy showAnything`
+- `easy textIndexSwitch`
 
 ## 典型参数
 

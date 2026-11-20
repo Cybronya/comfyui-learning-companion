@@ -1,90 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_367
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.782143
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Fast Bypasser (rgthree), GetNode, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, RIFE VFI, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, easy setNode]
+frequency: 8
+level: moderate
+coverage: 0.637625
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2-REMIX V3-PromptRelay-无审查-图生视频_2061793928344588289.json, 视频生成/图生视频/Wan2.2-REMIX V3-无审查-首尾帧视频_2061751615295680514.json, 视频生成/图生视频/Wan2.2工作流-REMIX V3-图生视频_2061718724150906881.json, 视频生成/图生视频/最好用的Wan2.2工作流-REMIX V3-图生视频_2035281651009327105.json, 视频生成/图生视频/极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2038957915788283906.json, 视频生成/图生视频/极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2089713058884177921.json, 视频生成/图生视频/电商带货V2-Wan2.2工作流-REMIX V3-图生视频_2052999624771813378.json]
+members: [平台全量/视频单人姿势匹配_WanAnimate2.2_1990625748220350465.json, 平台全量/角色动作互换工作流_1990974899604889601.json, 数字人/数字人/AI在学抛媚眼？眼神训练挑战！Wan2.2 Animate数字人教程_1969659436019163137.json, 数字人/数字人/Wan Animate 2.2：角色动作迁移_1969987148046868481.json, 数字人/数字人/视频-动作表情口型-wan2.2-animate-KJ_1973995545582768129.json, 视频生成/图生视频/Best_Wan2.2_图片跳舞指定动作_1973849425091104769.json, 视频生成/图生视频/Wan Animate2.2动作迁移_1969366584278085634.json, 视频生成/图生视频/表哥超级画质动作复刻V2.1_2002002967475699713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_367
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-REMIX V3-PromptRelay-无审查-图生视频_2061793928344588289.json、视频生成/图生视频/Wan2.2-REMIX V3-无审查-首尾帧视频_2061751615295680514.json、视频生成/图生视频/Wan2.2工作流-REMIX V3-图生视频_2061718724150906881.json、视频生成/图生视频/最好用的Wan2.2工作流-REMIX V3-图生视频_2035281651009327105.json、视频生成/图生视频/极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2038957915788283906.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/视频单人姿势匹配_WanAnimate2.2_1990625748220350465.json、平台全量/角色动作互换工作流_1990974899604889601.json、数字人/数字人/AI在学抛媚眼？眼神训练挑战！Wan2.2 Animate数字人教程_1969659436019163137.json、数字人/数字人/Wan Animate 2.2：角色动作迁移_1969987148046868481.json、数字人/数字人/视频-动作表情口型-wan2.2-animate-KJ_1973995545582768129.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：78%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 8 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `Fast Bypasser (rgthree)`
-- `GetNode`
-- `ImpactInt`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `Mute / Bypass Repeater (rgthree)`
-- `PathchSageAttentionKJ`
-- `RIFE VFI`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `PixelPerfectResolution`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `easy setNode`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoSmartMemoryOptimizerNode` —— 6/7 个有
-- `PainterI2V` —— 6/7 个有
-- `easy showAnything` —— 6/7 个有
-- `llama_cpp_instruct_adv` —— 6/7 个有
-- `llama_cpp_model_loader` —— 6/7 个有
-- `llama_cpp_parameters` —— 6/7 个有
-- `CR Text` —— 5/7 个有
-- `easy ifElse` —— 5/7 个有
-- `easy isNone` —— 5/7 个有
-- `CustomAddLabel` —— 4/7 个有
-- `easy getNode` —— 4/7 个有
-- `FlashVSRNode` —— 3/7 个有
-- `ImageConcanate` —— 3/7 个有
-- `PrimitiveInt` —— 3/7 个有
-- `EmptyLTXVLatentVideo` —— 1/7 个有
-- `ImageResizeKJ` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `MultiTextConcatenate` —— 1/7 个有
-- `PainterFLF2V` —— 1/7 个有
-- `PromptRelayEncodeTimeline` —— 1/7 个有
-- `RH_Utils` —— 1/7 个有
-- `SeedGeneratorMira` —— 1/7 个有
-- `ShowText|pysssss` —— 1/7 个有
-- `Text` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
-- `easy positive` —— 1/7 个有
-- `ttN concat` —— 1/7 个有
+- `JWInteger` —— 7/8 个有
+- `GetImageSizeAndCount` —— 6/8 个有
+- `GetNode` —— 6/8 个有
+- `ImageConcatMulti` —— 6/8 个有
+- `SetNode` —— 6/8 个有
+- `WanVideoAnimateEmbeds` —— 6/8 个有
+- `CR Prompt Text` —— 3/8 个有
+- `Text` —— 3/8 个有
+- `WanVideoTorchCompileSettings` —— 3/8 个有
+- `GetImageRangeFromBatch` —— 2/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `RHHiddenNodes` —— 2/8 个有
+- `VHS_VideoInfo` —— 2/8 个有
+- `VHS_VideoInfoLoaded` —— 2/8 个有
+- `easy seed` —— 2/8 个有
+- `Anything Everywhere` —— 1/8 个有
+- `Bjornulf_ShowInt` —— 1/8 个有
+- `DrawViTPose` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `INTConstant` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `OnnxDetectionModelLoader` —— 1/8 个有
+- `PoseAndFaceDetection` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 7 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 7 | 100% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | 1 | 1 - 1 | 7 | 100% |
-| 重绘幅度 | euler_ancestral | - | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -92,8 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，7 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，7 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler_ancestral，7 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,35 +1,40 @@
 ---
 name: unknown_workflow_generic_790
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.49175
-common_nodes: [JjkText, SaveImage]
+coverage: 0.7908
+common_nodes: [LoadAudio, SaveAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text]
 problems: []
 missing: []
-members: [图片生成/文生图/image2.5 文生图_2099762734467469314.json, 图片生成/文生图/全能图像G2.5文生图 高质量版_2097978355088973825.json, 图片生成/文生图/全能图片 G-PT Image 2.5 高精度版-文生图_2097954896338309122.json, 图片生成/文生图/文生图 全能图片G Image 2.5_2100062869684572162.json]
+members: [音频生成/音频生成/SoulX-Podcast，四川话萌妹配音_2046779859891920898.json, 音频生成/音频生成/TTS大模型：SoulX-Podcast，配合ComfyUI生成多人对话音频，支持方言：粤语、河南、四川话_1984899462583762946.json, 音频生成/音频生成/声音克隆SoulX-Podcast极速版_1984449274891157506.json, 音频生成/音频生成/音频生成  声音克隆 SoulX-Podcast极速版 情绪复制  情感向量_文本描述音色迁移_2047187675744047106.json, 音频生成/音频生成/音频生成 SoulX-Podcast极速版 声音克隆  情绪复制 情感向量_文本描述音色迁移_2048597237118279681.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_790
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/image2.5 文生图_2099762734467469314.json、图片生成/文生图/全能图像G2.5文生图 高质量版_2097978355088973825.json、图片生成/文生图/全能图片 G-PT Image 2.5 高精度版-文生图_2097954896338309122.json、图片生成/文生图/文生图 全能图片G Image 2.5_2100062869684572162.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/SoulX-Podcast，四川话萌妹配音_2046779859891920898.json、音频生成/音频生成/TTS大模型：SoulX-Podcast，配合ComfyUI生成多人对话音频，支持方言：粤语、河南、四川话_1984899462583762946.json、音频生成/音频生成/声音克隆SoulX-Podcast极速版_1984449274891157506.json、音频生成/音频生成/音频生成  声音克隆 SoulX-Podcast极速版 情绪复制  情感向量_文本描述音色迁移_2047187675744047106.json、音频生成/音频生成/音频生成 SoulX-Podcast极速版 声音克隆  情绪复制 情感向量_文本描述音色迁移_2048597237118279681.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：49%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `LoadAudio`
+- `SaveAudio`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25SunburstTextToImage` —— 3/4 个有
-- `PreviewImage` —— 2/4 个有
-- `RH_RhartImageG25OfficialTokenFlareTextToImage` —— 1/4 个有
+- `easy promptConcat` —— 3/5 个有
+- `Label (rgthree)` —— 2/5 个有
+- `easy showAnything` —— 2/5 个有
+- `PrimitiveFloat` —— 1/5 个有
 
 ## 典型参数
 

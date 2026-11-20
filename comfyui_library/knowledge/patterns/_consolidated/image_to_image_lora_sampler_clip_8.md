@@ -1,37 +1,40 @@
 ---
 name: image_to_image_lora_sampler_clip_8
 type: Image To Image
-frequency: 14
+frequency: 17
 level: strong
-coverage: 0.719929
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.942471
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskGrow, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux-Kontext 人像换脸_1978745605067575298.json, 图片生成/图生图/Kontext dev 多彩活力插画_1941691114552455170.json, 图片生成/图生图/Kontext换脸100%相同脸型电商换脸工作流_1958510941182783489.json, 图片生成/图生图/flux-kontext 高精度换脸工作流_1965603567757312002.json, 图片生成/图生图/kontext 高精度换脸（默认自动，可选手动）_1957260449853140994.json, 图片生成/图生图/tonnie-kontext换脸（面部对齐+place it）效果不错_1993749173929525249.json, 图片生成/图生图/换脸丨最强一致性换脸丨Kontext换脸丨100%电商换脸工作流！！_1980521213351120897.json, 图片生成/图生图/换脸丨最强一致性换脸丨Kontext换脸丨100%电商换脸工作流！！_2032681757337718786.json, 图片生成/图生图/最强换脸工作流-完美换脸_1986002608529842178.json, 图片生成/图生图/生图-图换脸换头-flux-kontext_1983732617906429954.json, 图片生成/文生图/flux-kontext 高精度+高清修复换脸 无需提示词工作流_1969302778873061378.json, 数字人/数字人/flux-kontext 高精度换脸工作流-许老师版_1974147774952378370.json, 数字人/数字人/flux-kontext 高精度换脸工作流_1948653600412184578.json, 数字人/数字人/高精度换脸工作流_1973604036207316994.json]
+members: [图片生成/图生图/PS专用溶图流_2080460737826344962.json, 图片生成/图生图/PS专用溶图流_2081930794498617346.json, 图片生成/图生图/PS专用溶图流_2081982051393302529.json, 图片生成/图生图/PS专用溶图流_2082013615124733954.json, 图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein——电商产品光影融合溶图打光_2018488925819506690.json, 图片生成/图生图/主图万物电商产品光影融合溶图打光产品场景合成阴影生成细节迁移海报合成_2072999532249567233.json, 图片生成/图生图/亚马逊光影融合1.0_2037456527702888450.json, 图片生成/图生图/溶图+打光_2098231532556210177.json, 图片生成/图生图/溶图打光-F.2_Klein人像细节迁移_2096170592125939714.json, 图片生成/图生图/溶图打光-F.2_Klein人像细节迁移_2096405298079686657.json, 图片生成/图生图/电商产品打光换背景光影溶图细节迁移保持细节尺寸不变_2073002986959364097.json, 图片生成/图生图/通道ID图2.0_2060658643808382978.json, 图片生成/文生图/产品融图打光（产品标贴一致性）_2037437084016844802.json, 平台全量/F.2 Klein万物电商光影融合溶图打光产品场景合成阴影生成细节迁移海报合成_2018259477744586754.json, 平台全量/F.2 Klein万物电商光影融合溶图打光产品场景合成阴影生成细节迁移海报合成_2087439133961711617.json, 平台全量/F.2 Klein人像溶图打光光影融合溶图打光产品场景合成阴影生成细节迁移海报合成_2044633210293850114.json, 平台全量/光影融合溶图打光 FLUX2 Klein万物电商产品 产品场景合成阴影生成细节迁移海报合成_2050803031171706882.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_8
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Flux-Kontext 人像换脸_1978745605067575298.json、图片生成/图生图/Kontext dev 多彩活力插画_1941691114552455170.json、图片生成/图生图/Kontext换脸100%相同脸型电商换脸工作流_1958510941182783489.json、图片生成/图生图/flux-kontext 高精度换脸工作流_1965603567757312002.json、图片生成/图生图/kontext 高精度换脸（默认自动，可选手动）_1957260449853140994.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/PS专用溶图流_2080460737826344962.json、图片生成/图生图/PS专用溶图流_2081930794498617346.json、图片生成/图生图/PS专用溶图流_2081982051393302529.json、图片生成/图生图/PS专用溶图流_2082013615124733954.json、图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein——电商产品光影融合溶图打光_2018488925819506690.json…）
 
 - **类型**：Image To Image
-- **样本数**：14
+- **样本数**：17
 - **可信度**：强结论
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 17 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `FluxKontextImageScale`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerMask: MaskGrow`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
 - `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
@@ -40,42 +43,40 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `TeaCache` —— 13/14 个有
-- `AutoCropFaces` —— 12/14 个有
-- `FaceAlign` —— 12/14 个有
-- `FaceAnalysisModels` —— 12/14 个有
-- `Image Paste Crop` —— 12/14 个有
-- `ImageStitch` —— 11/14 个有
-- `GetNode` —— 7/14 个有
-- `SetNode` —— 7/14 个有
-- `Image Comparer (rgthree)` —— 4/14 个有
-- `ImageConcatMulti` —— 2/14 个有
-- `ImageConcanate` —— 1/14 个有
-- `ImpactInt` —— 1/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
-- `RepeatLatentBatch` —— 1/14 个有
-- `SUPIR_Upscale` —— 1/14 个有
-- `easy imageSwitch` —— 1/14 个有
-- `easy seed` —— 1/14 个有
+- `LayerUtility: HLFrequencyDetailRestore` —— 16/17 个有
+- `ImpactInt` —— 11/17 个有
+- `FastCanvas` —— 6/17 个有
+- `FastCanvasTool` —— 6/17 个有
+- `ImageCropper` —— 6/17 个有
+- `easy imageRemBg` —— 6/17 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/17 个有
+- `Int` —— 1/17 个有
+- `LayerStyle: ColorOverlay V2` —— 1/17 个有
+- `MaskPreview+` —— 1/17 个有
+- `Preview from image [Crystools]` —— 1/17 个有
+- `Switch any [Crystools]` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 14 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | euler | - | 14 | 100% |
-| 调度器 | simple | - | 14 | 93% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 采样步数 | 4 | 4 - 4 | 17 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 17 | 100% |
+| 采样算法 | euler | - | 17 | 100% |
+| 调度器 | simple | - | 17 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 21/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，14 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，14 个样本，一致性 100%
-- 调度器 最常用 simple，14 个样本，一致性 93%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，17 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，17 个样本，一致性 100%
+- 调度器 最常用 simple，17 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 高发问题（21/17 个样本）：Steps较低可能导致细节不足

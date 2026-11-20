@@ -1,58 +1,56 @@
 ---
 name: image_to_image_sampler_unet_vae_44
 type: Image To Image
-frequency: 4
-level: moderate
-coverage: 0.97925
-common_nodes: [DualCLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 6
+level: strong
+coverage: 0.881167
+common_nodes: [CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, PrimitiveStringMultiline, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux.1-图生图工作流_2087420374983200769.json, 图片生成/文生图/Flux基础文_图生图_2010971059218026497.json, 图片生成/文生图/自用美女_1963796521585299457.json, 数字人/数字人/jjll_1988794258486341634.json]
+members: [图片生成/图生图/AI完美扩图-三档倍率原图零偏移工作流_2096613161687408642.json, 图片生成/图生图/AI无痕改字-图片文字一键替换工作流_2096603998215303170.json, 图片生成/图生图/Qwen Image 3.0图像编辑工作流｜多图融合一句话改图_2103056580613857281.json, 图片生成/图生图/全能图片2全能图片编辑-一句话P图工作流_2096603719419912194.json, 图片生成/图生图/全能图片G-Image-2.5图像编辑工作流_2098372807368470529.json, 图片生成/图生图/全能图片G-Image-2全能图片编辑-低价一句话P图工作流_2096603788789510146.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_44
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Flux.1-图生图工作流_2087420374983200769.json、图片生成/文生图/Flux基础文_图生图_2010971059218026497.json、图片生成/文生图/自用美女_1963796521585299457.json、数字人/数字人/jjll_1988794258486341634.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/AI完美扩图-三档倍率原图零偏移工作流_2096613161687408642.json、图片生成/图生图/AI无痕改字-图片文字一键替换工作流_2096603998215303170.json、图片生成/图生图/Qwen Image 3.0图像编辑工作流｜多图融合一句话改图_2103056580613857281.json、图片生成/图生图/全能图片2全能图片编辑-一句话P图工作流_2096603719419912194.json、图片生成/图生图/全能图片G-Image-2.5图像编辑工作流_2098372807368470529.json…）
 
 - **类型**：Image To Image
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DualCLIPLoader`
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
+- `PrimitiveStringMultiline`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 3/4 个有
-- `CLIPTextEncodeFlux` —— 1/4 个有
-- `EmptyLatentImage` —— 1/4 个有
-- `ImageScale` —— 1/4 个有
-- `LoraLoader` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `CLIPTextEncode` —— 4/6 个有
+- `ComfyMathExpression` —— 1/6 个有
+- `GetImageSize` —— 1/6 个有
+- `ImagePadForOutpaint` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 4 | 100% |
-| Prompt 约束强度(CFG) | 2.25 | 1 - 8 | 4 | 15% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 75% |
-| 重绘幅度 | 0.9 | 0.5 - 1 | 4 | 75% |
-| 宽度 | 768 | - | 1 | 100% |
-| 高度 | 1024 | - | 1 | 100% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 0.8 | - | 1 | 100% |
+| 采样步数 | 24 | 24 - 24 | 6 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | 2.5 - 2.5 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
@@ -60,8 +58,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 2.25，观测区间 1 - 8，4 个样本，取值分散，一致性仅 15%
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 75%
-- 重绘幅度 中位数 0.9，观测区间 0.5 - 1，4 个样本
+- 采样步数 中位数 24，观测区间 24 - 24，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 2.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

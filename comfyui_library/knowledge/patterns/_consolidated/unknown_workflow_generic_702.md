@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_702
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.87325
-common_nodes: [Apply Whisper, FishS2MultiSpeakerTTS, FishS2TTS, FishS2VoiceCloneTTS, LoadAudio, SaveAudio]
+coverage: 0.8934
+common_nodes: [CR Prompt Text, SaveImage, Seedance_Config, Zhenzhen_Image_G25_Lowprice]
 problems: []
 missing: []
-members: [图片生成/图生图/FishAudio S2多模式切换TTS工作流_2073316148124409858.json, 音频生成/音频生成/FishAudio S2pro支持83国语言，最多10人对话语音克隆_2033147801588211714.json, 音频生成/音频生成/FishAudio 语音克隆（多人对话+情感控制）_2040236446275084290.json, 音频生成/音频生成/多角色对话语音 不同语调语气音频生成 多国语言语音生成 FishAudio S2pro，最多10人_2034145143103688705.json]
+members: [图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json, 图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json, 图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json, 图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_702
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FishAudio S2多模式切换TTS工作流_2073316148124409858.json、音频生成/音频生成/FishAudio S2pro支持83国语言，最多10人对话语音克隆_2033147801588211714.json、音频生成/音频生成/FishAudio 语音克隆（多人对话+情感控制）_2040236446275084290.json、音频生成/音频生成/多角色对话语音 不同语调语气音频生成 多国语言语音生成 FishAudio S2pro，最多10人_2034145143103688705.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片G IMAGE 2.5  （15图）（0.04_一张）（贞贞的平价AI小屋）_2098186260811706369.json、图片生成/图生图/（0.04_一张）全能图片G image 2.5图像编辑（贞贞的平价AI小屋）_2098081330285334529.json、图片生成/文生图/心然·寻源-全能图片G image 2.5图像编辑（贞贞版）_2099339997236256770.json、图片生成/文生图/心然·寻源-全能图片G image 2.5文生图（贞贞版）_2101338652046610434.json、图片生成/文生图/（0.04_一张）全能图片G image 2.5文生图（贞贞的平价AI小屋）_2098084101663313921.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Apply Whisper`
-- `FishS2MultiSpeakerTTS`
-- `FishS2TTS`
-- `FishS2VoiceCloneTTS`
-- `LoadAudio`
-- `SaveAudio`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `SaveImage`
+- `Seedance_Config`
+- `Zhenzhen_Image_G25_Lowprice`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `LoadImage` —— 2/4 个有
-- `Text` —— 1/4 个有
+- `LoadImage` —— 3/5 个有
 
 ## 典型参数
 

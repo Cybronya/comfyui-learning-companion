@@ -3,37 +3,42 @@ name: unknown_workflow_generic_851
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.66475
-common_nodes: [CR Text, LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudioMP3, ShowText|pysssss]
+coverage: 0.9915
+common_nodes: [GetExpression2, GetFaceLandmarks, GetHeadPose, HMFaceToolkitsLoader, HMImagePipelineLoader, HMPipelineImage, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Qwen3-TTS 声音克隆，适用解说漫，配音色，文本转音频_2094370946944692226.json, 音频生成/音频生成/Qwen3-TTS 声音克隆_2015963024938504194.json, 音频生成/音频生成/Qwen3-TTS 音色克隆_2014663509912588289.json, 音频生成/音频生成/Qwen3-TTS--声音克隆（方言可克隆）_2059954156898705410.json]
+members: [图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json, 图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json, 图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json, 图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_851
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Qwen3-TTS 声音克隆，适用解说漫，配音色，文本转音频_2094370946944692226.json、音频生成/音频生成/Qwen3-TTS 声音克隆_2015963024938504194.json、音频生成/音频生成/Qwen3-TTS 音色克隆_2014663509912588289.json、音频生成/音频生成/Qwen3-TTS--声音克隆（方言可克隆）_2059954156898705410.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json、图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json、图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json、图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
-- `LoadAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `SaveAudioMP3`
-- `ShowText|pysssss`
+- `GetExpression2`
+- `GetFaceLandmarks`
+- `GetHeadPose`
+- `HMFaceToolkitsLoader`
+- `HMImagePipelineLoader`
+- `HMPipelineImage`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Qwen3ASRLoader` —— 3/4 个有
-- `Qwen3ASRTranscribe` —— 3/4 个有
-- `Apply Whisper` —— 1/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `ExpressionEditor` —— 1/4 个有
+- `Get Image Size` —— 1/4 个有
+- `JWImageResize` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 

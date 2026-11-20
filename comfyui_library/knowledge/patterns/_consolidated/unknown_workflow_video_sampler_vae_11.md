@@ -3,68 +3,69 @@ name: unknown_workflow_video_sampler_vae_11
 type: Unknown Workflow
 frequency: 21
 level: moderate
-coverage: 0.613857
-common_nodes: [Any Switch (rgthree), Audio Duration (mtb), AudioCrop, AudioSeparation, CR Text, CR Text Concatenate, CreateCFGScheduleFloatList, DownloadAndLoadWav2VecModel, Fast Groups Muter (rgthree), FlashVSRNode, Float to Int, GetNode, INTConstant, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkWav2VecEmbeds, RHHiddenNodes, RH_Captioner, RH_GetAudioDuration, RH_LLMAPI_Pro_Node, RIFEInterpolation, SaveAudio, SetNode, ShowText|pysssss, VHS_LoadVideo, VHS_VideoCombine, WanVideoContextOptions, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy boolean, easy cleanGpuUsed, easy clearCacheAll, easy ifElse, easy imageSize, easy showAnything]
+coverage: 0.885524
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, Text, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/wan 2.2-提示词丝滑运镜-高动态-mv_2007748666148265985.json, 视频生成/图生视频/Wan 2.2：一键生成MV视频 丝滑运镜提示词与高动态MV视频生成_2081293550364487682.json, 视频生成/图生视频/Wan 2.2：丝滑运镜提示词与高动态MV视频生成_2016733376622895105.json, 视频生成/图生视频/Wan 2.2：丝滑运镜提示词与高动态MV视频生成_2068665808049491970.json, 视频生成/图生视频/Wan 2.2：丝滑运镜提示词与高动态MV视频生成_2104182447519916033.json, 视频生成/图生视频/Wan 2.2：高动态MV视频生成 - 丝滑运镜提示词_2057387690554908674.json, 视频生成/图生视频/wan 2.2-提示词丝滑运镜-高动态-mv_2007748666148265985.json, 视频生成/图生视频/wan 2.2-提示词丝滑运镜-高动态-mv_2031177756058329090.json, 视频生成/图生视频/wan 2.2-提示词丝滑运镜-高动态-mv_2056967219728437250.json, 视频生成/图生视频/wan 2.2-提示词丝滑运镜-高动态-mv_2056977197285601281.json, 视频生成/图生视频/wan 2.2-提示词丝滑运镜-高动态-mv_2056978773685395458.json, 视频生成/图生视频/wan 2.2-提示词丝滑运镜-高动态_2008113617589248001.json, 视频生成/图生视频/wan 2.2-提示词丝滑运镜-高动态_2065063061387571202.json, 视频生成/图生视频/wan 2.2-提示词丝滑运镜V2.0版本高动态mv_2021495540655067138.json, 视频生成/图生视频/wan+2.2-提示词丝滑运镜-高动态-mv_2046063680273522689.json, 视频生成/图生视频/wan+2.2-提示词丝滑运镜_2008347643281412098.json, 视频生成/图生视频/wan_2.2-提示词丝滑运镜-高动态-mv_2102929808148746242.json, 视频生成/图生视频/wan_2.2-提示词丝滑运镜-高动态-mv_2104845915793215490.json, 视频生成/图生视频/图生视频   提示词丝滑运镜-高动态-mv_2031687213750165505.json, 视频生成/图生视频/图生视频--wan 2.2-提示词丝滑运镜-高动态-mv_2039152113221115906.json, 视频生成/图生视频/超好用🔥提示词丝滑运镜-高动态-mv_2046839178045952001.json]
+members: [视频生成/图生视频/minimaxH3全参双人对话test_2084712710343839746.json, 视频生成/图生视频/minimaxH3参考图生成视频_2088465091976056833.json, 视频生成/图生视频/minimaxH3可爱的小兔子_2090680892384694273.json, 视频生成/图生视频/minimaxH3荷叶上舞蹈女孩_2090678919732228098.json, 视频生成/图生视频/minimaxH3首尾帧_2090676134592733185.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T1_2085350214604513281.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T2_2085358927612563457.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T3_2085391641258582017.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T4_2085391626901475329.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T5_2085411686395236353.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词T6_2085444171992748033.json, 视频生成/图生视频/minimaxh3全参官方指南自动扩展提示词_2086276081564344321.json, 视频生成/图生视频/minimaxh3吉卜力风格_2086267947819028481.json, 视频生成/图生视频/minimaxh3多参官方指南自动扩展提示词T1_2085348535347802114.json, 视频生成/图生视频/人物微表情变化_2097294907064012801.json, 视频生成/图生视频/人物表情变化动作_2097300292181258241.json, 视频生成/图生视频/人物表情语言变化_2098063808349696001.json, 视频生成/图生视频/双姝_2098043624184434690.json, 视频生成/图生视频/古装美女扮相_2098413882426609665.json, 视频生成/图生视频/快乐的小猫咪_2092480218379411457.json, 视频生成/图生视频/摘松果的松鼠_2091046140023234562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_11
 
-> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（数字人/数字人/wan 2.2-提示词丝滑运镜-高动态-mv_2007748666148265985.json、视频生成/图生视频/Wan 2.2：一键生成MV视频 丝滑运镜提示词与高动态MV视频生成_2081293550364487682.json、视频生成/图生视频/Wan 2.2：丝滑运镜提示词与高动态MV视频生成_2016733376622895105.json、视频生成/图生视频/Wan 2.2：丝滑运镜提示词与高动态MV视频生成_2068665808049491970.json、视频生成/图生视频/Wan 2.2：丝滑运镜提示词与高动态MV视频生成_2104182447519916033.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（视频生成/图生视频/minimaxH3全参双人对话test_2084712710343839746.json、视频生成/图生视频/minimaxH3参考图生成视频_2088465091976056833.json、视频生成/图生视频/minimaxH3可爱的小兔子_2090680892384694273.json、视频生成/图生视频/minimaxH3荷叶上舞蹈女孩_2090678919732228098.json、视频生成/图生视频/minimaxH3首尾帧_2090676134592733185.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 21 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
-- `CR Text`
-- `CR Text Concatenate`
-- `CreateCFGScheduleFloatList`
-- `DownloadAndLoadWav2VecModel`
-- `Fast Groups Muter (rgthree)`
-- `FlashVSRNode`
-- `Float to Int`
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `MultiTalkWav2VecEmbeds`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `RH_GetAudioDuration`
-- `RH_LLMAPI_Pro_Node`
-- `RIFEInterpolation`
-- `SaveAudio`
-- `SetNode`
-- `ShowText|pysssss`
-- `VHS_LoadVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `Text`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy ifElse`
-- `easy imageSize`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `easy showAnything` —— 17/21 个有
+- `UNETLoader` —— 16/21 个有
+- `ResolutionSelector` —— 13/21 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 12/21 个有
+- `MiniMaxH3ImageToVideo` —— 11/21 个有
+- `RH_Captioner` —— 11/21 个有
+- `TextConcatenate_UTK` —— 11/21 个有
+- `easy MiniMaxH3ReferenceToVideoBridge` —— 10/21 个有
+- `ImageConcatenateMulti_UTK` —— 9/21 个有
+- `LoadAudio` —— 9/21 个有
+- `PreviewImage` —— 9/21 个有
+- `RHHiddenNodes` —— 9/21 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/21 个有
+- `EnhancedLoadDiffusionModel` —— 5/21 个有
+- `LoraLoaderBypassModelOnly` —— 5/21 个有
+- `MiniMaxH3BlockCacheT8` —— 5/21 个有
+- `ExtractSubstring` —— 2/21 个有
+- `ImageResizeKJv2` —— 2/21 个有
+- `JWStringToFloat` —— 2/21 个有
+- `CreateVideo` —— 1/21 个有
+- `ImageFromBatch` —— 1/21 个有
+- `LoadVideoUI` —— 1/21 个有
+- `ModelAttentionBackend` —— 1/21 个有
+- `PD_Extract_Image` —— 1/21 个有
+- `RH_Translator` —— 1/21 个有
+- `SaveVideo` —— 1/21 个有
+- `easy indexAnything` —— 1/21 个有
 
 ## 典型参数
 

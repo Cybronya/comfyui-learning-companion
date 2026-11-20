@@ -3,62 +3,69 @@ name: text_to_image_lora_sampler_clip_649
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.683
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Image Border, EmptyLatentImage, Fast Bypasser (rgthree), GuHai_IDPhotoCrop, Image Comparer (rgthree), JjkText, KSampler, LayerColor: ColorofShadowHighlightV2, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenMultiangleCameraNode, QwenMultiangleLightningNode, SaveImage, SingleImageLayoutNode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, workflow>采样器, 孤海-自定义颜色, 孤海注释]
+coverage: 0.85
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImpactWildcardProcessor, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveInt, QwenImage21Cache, ResolutionSelector, SaveImage, SaveImageKJ, StringConcatenate, TTResolutionSelector, Text Load Line From File, Text Multiline, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy showAnything, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/单图生成证件照排版高可控，图生图角色一致性证件照制作_2112628284457574402.json, 图片生成/图生图/单图生证件照排版高可控｜附主页ai应用入口_2112430198967848961.json]
+members: [图片生成/图生图/Qwen Image 2.1人物资产集｜自由角度光影表情随心生成_2106941033681608705.json, 视频生成/图生视频/Qwen_Image_2.1人物资产集｜自由角度光影表情随心生成_2107280634405281794.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_649
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/单图生成证件照排版高可控，图生图角色一致性证件照制作_2112628284457574402.json、图片生成/图生图/单图生证件照排版高可控｜附主页ai应用入口_2112430198967848961.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1人物资产集｜自由角度光影表情随心生成_2106941033681608705.json、视频生成/图生视频/Qwen_Image_2.1人物资产集｜自由角度光影表情随心生成_2107280634405281794.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Image Border`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `Fast Bypasser (rgthree)`
-- `GuHai_IDPhotoCrop`
-- `Image Comparer (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `ImpactWildcardProcessor`
 - `JjkText`
 - `KSampler`
-- `LayerColor: ColorofShadowHighlightV2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `PreviewImage`
-- `QwenMultiangleCameraNode`
-- `QwenMultiangleLightningNode`
+- `PrimitiveInt`
+- `QwenImage21Cache`
+- `ResolutionSelector`
 - `SaveImage`
-- `SingleImageLayoutNode`
+- `SaveImageKJ`
+- `StringConcatenate`
+- `TTResolutionSelector`
+- `Text Load Line From File`
+- `Text Multiline`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
-- `workflow>采样器`
-- `孤海-自定义颜色`
-- `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `EmptyImage` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | - | 2 | 100% |
+| 高度 | 80 | - | 2 | 100% |
 | 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
 | 采样算法 | er_sde | - | 2 | 100% |
 | 调度器 | beta | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -68,12 +75,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，2 个样本，一致性 100%
 - 调度器 最常用 beta，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

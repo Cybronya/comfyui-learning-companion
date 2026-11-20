@@ -1,41 +1,37 @@
 ---
 name: unknown_workflow_generic_231
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8143
-common_nodes: [LoadAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.676364
+common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS2-AudioEmo_Multi_Clone_2068685833959469057.json, 音频生成/音频生成/IndexTTS2-AudioEmo_Single_Clone_2068687257116168194.json, 音频生成/音频生成/IndexTTS2-VectorEmo_Multi_Clone_2068687860949143553.json, 音频生成/音频生成/IndexTTS2-VectorEmo_Single_Clone_2068688742629601281.json, 音频生成/音频生成/indextts2基础+情感_2014670620402913282.json, 音频生成/音频生成/indextts2声音模仿+语气情感设置_1981744577625374722.json, 音频生成/音频生成/indextts多人参考+情感_2002383614916608001.json, 音频生成/音频生成/indextts多人参考+情感_2014670668457054209.json, 音频生成/音频生成/indextts多人声音参考+情感_1992213630209028098.json, 音频生成/音频生成/情感参考声音克隆_2080548502798692353.json]
+members: [视频生成/图生视频/全能视频S图生视频15s_1986346591709777921.json, 视频生成/图生视频/全能视频S图生视频15s_2035894174544826370.json, 视频生成/图生视频/全能视频S图生视频15秒（0.2元_次）_1979231366602723329.json, 视频生成/图生视频/全能视频S图生视频V2-支持竖版9_16和横版16_9及HD版 可以自定义真人出视频_1974758472204029953.json, 视频生成/图生视频/全能视频S图生视频V2（支持横版及HD版-RH API版-国庆0.05元_10秒）_1973424043997138946.json, 视频生成/图生视频/全能视频S图生视频_1973806948393070594.json, 视频生成/图生视频/全能视频S图生视频_1974002817679626241.json, 视频生成/图生视频/全能视频S图生视频_1977383685840359426.json, 视频生成/图生视频/全能视频S图生视频_1978055824553693186.json, 视频生成/图生视频/全能视频S图生视频最新超清优化版模型提示词参考0.05元_次_1984245042065850369.json, 视频生成/图生视频/图生视频_2019420452292136961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_231
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/IndexTTS2-AudioEmo_Multi_Clone_2068685833959469057.json、音频生成/音频生成/IndexTTS2-AudioEmo_Single_Clone_2068687257116168194.json、音频生成/音频生成/IndexTTS2-VectorEmo_Multi_Clone_2068687860949143553.json、音频生成/音频生成/IndexTTS2-VectorEmo_Single_Clone_2068688742629601281.json、音频生成/音频生成/indextts2基础+情感_2014670620402913282.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/全能视频S图生视频15s_1986346591709777921.json、视频生成/图生视频/全能视频S图生视频15s_2035894174544826370.json、视频生成/图生视频/全能视频S图生视频15秒（0.2元_次）_1979231366602723329.json、视频生成/图生视频/全能视频S图生视频V2-支持竖版9_16和横版16_9及HD版 可以自定义真人出视频_1974758472204029953.json、视频生成/图生视频/全能视频S图生视频V2（支持横版及HD版-RH API版-国庆0.05元_10秒）_1973424043997138946.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LoadAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+全部 11 个 workflow 都包含：
+- `LoadImage`
+- `RH_Sora2_I2V`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `easy indexTTSEmotionVector` —— 8/10 个有
-- `SaveAudioMP3` —— 7/10 个有
-- `easy indexTTSEmotionAudio` —— 7/10 个有
-- `easy indexTTSEmotionMerge` —— 6/10 个有
-- `PrimitiveStringMultiline` —— 5/10 个有
-- `PreviewAudio` —— 4/10 个有
-- `SaveAudio` —— 4/10 个有
-- `PrimitiveFloat` —— 1/10 个有
+- `easy showAnything` —— 10/11 个有
+- `CR Prompt Text` —— 8/11 个有
+- `Bookmark (rgthree)` —— 1/11 个有
+- `RH_Grok_Video3` —— 1/11 个有
 
 ## 典型参数
 

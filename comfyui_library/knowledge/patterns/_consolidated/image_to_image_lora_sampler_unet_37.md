@@ -1,79 +1,83 @@
 ---
 name: image_to_image_lora_sampler_unet_37
 type: Image To Image
-frequency: 12
-level: moderate
-coverage: 0.9125
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 15
+level: weak
+coverage: 0.861933
+common_nodes: [CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/34.tonnie-Qwen edit物品迁移工作流_2003212052573429762.json, 图片生成/图生图/3D转绘-Qwen-Image-Edit图像编辑-Comfy官方_1970486961637105665.json, 图片生成/图生图/3D转绘-Qwen-Image-Edit图像编辑-Comfy官方_2018211066441900034.json, 图片生成/图生图/57.tonnie-2509换脸_2008688247454568450.json, 图片生成/图生图/FireRed Image edit_2030887570980212737.json, 图片生成/图生图/Put It Here v1 Qwen Edit万物融图_1965935009678954497.json, 图片生成/图生图/Put It Here v1 Qwen Edit融图_1994337831405502465.json, 图片生成/图生图/Qwen Edit图像融合_1966514470820458497.json, 图片生成/图生图/家具设计溶图-Put-It-Here-Qwen版_1962136791979593730.json, 图片生成/图生图/手持商品溶图-Put-It-Here-Qwen版_1962135540076318722.json, 图片生成/图生图/溶图Qwen版_1965249068194742273.json, 图片生成/图生图/溶图_1965258732785516546.json]
+members: [图片生成/图生图/Qwen-Edit-2511姿态迁移_2012123669828472833.json, 图片生成/图生图/Qwen-Edit-2511真实转动漫风V2.0_2015682167266873345.json, 图片生成/图生图/QwenEdit2511多图编辑工作流_2062019518045708289.json, 图片生成/图生图/Qwen_Edit_2511 多图编辑工作流_2049747436729536513.json, 图片生成/图生图/Qwen_Edit_2511 零偏移多图编辑工作流_2019645832496160769.json, 图片生成/图生图/Qwen_Edit_2511_真正的零偏移工作流_2009132588815880194.json, 图片生成/图生图/Qwen_Edit_2511多图改图_2055553864379715585.json, 图片生成/图生图/Qwen_Edit_2511改图_2055536614876688385.json, 图片生成/图生图/Qwen_image_Edit_2511_单图编辑_2004473601208315905.json, 图片生成/图生图/Qwen_image_Edit_2511_多图编辑_2004495314616811522.json, 图片生成/图生图/Qwenedit 2511 一键换衣_2004388430463332354.json, 图片生成/图生图/【🛫书墨】姿态构图迁移v3-anypose_2010972516814168065.json, 图片生成/图生图/多图编辑-小红书FireRed-Image-edit1.1-40步原版 电商模特换装等_2030532517639495682.json, 图片生成/图生图/多图编辑-小红书FireRed-Image-edit1.1-加速版 电商模特换装等_2030120115282386945.json, 平台全量/多图编辑-电商模特换装-FireRed-Image-edit1.1-加速版_2030612656188563458.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_37
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/34.tonnie-Qwen edit物品迁移工作流_2003212052573429762.json、图片生成/图生图/3D转绘-Qwen-Image-Edit图像编辑-Comfy官方_1970486961637105665.json、图片生成/图生图/3D转绘-Qwen-Image-Edit图像编辑-Comfy官方_2018211066441900034.json、图片生成/图生图/57.tonnie-2509换脸_2008688247454568450.json、图片生成/图生图/FireRed Image edit_2030887570980212737.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit-2511姿态迁移_2012123669828472833.json、图片生成/图生图/Qwen-Edit-2511真实转动漫风V2.0_2015682167266873345.json、图片生成/图生图/QwenEdit2511多图编辑工作流_2062019518045708289.json、图片生成/图生图/Qwen_Edit_2511 多图编辑工作流_2049747436729536513.json、图片生成/图生图/Qwen_Edit_2511 零偏移多图编辑工作流_2019645832496160769.json…）
 
 - **类型**：Image To Image
-- **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：15
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `CFGNorm`
+全部 15 个 workflow 都包含：
 - `CLIPLoader`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 10/12 个有
-- `FastCanvas` —— 8/12 个有
-- `FastCanvasTool` —— 8/12 个有
-- `ImageStitch` —— 8/12 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/12 个有
-- `TextEncodeQwenImageEditEnhanced` —— 7/12 个有
-- `easy imageRemBg` —— 7/12 个有
-- `PreviewImage` —— 6/12 个有
-- `TextEncodeQwenImageEdit` —— 5/12 个有
-- `ImageScaleDownToSize` —— 4/12 个有
-- `TextEncodeQwenImageEditPlus` —— 4/12 个有
-- `ConditioningZeroOut` —— 3/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/12 个有
-- `Fast Groups Muter (rgthree)` —— 1/12 个有
-- `InspyrenetRembg` —— 1/12 个有
-- `SeedVR2` —— 1/12 个有
-- `SeedVR2BlockSwap` —— 1/12 个有
+- `CFGNorm` —— 13/15 个有
+- `FluxKontextImageScale` —— 12/15 个有
+- `Image Comparer (rgthree)` —— 12/15 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 11/15 个有
+- `PreviewImage` —— 10/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/15 个有
+- `ImageConcatMulti` —— 6/15 个有
+- `AddLabel` —— 4/15 个有
+- `CR Prompt Text` —— 4/15 个有
+- `KOOK_SaveJPGImage` —— 4/15 个有
+- `easy int` —— 3/15 个有
+- `ColorCorrect` —— 2/15 个有
+- `ImageBlend` —— 2/15 个有
+- `SDPoseOODLoader` —— 2/15 个有
+- `SDPoseOODProcessor` —— 2/15 个有
+- `CLIPTextEncode` —— 1/15 个有
+- `CR Text` —— 1/15 个有
+- `CR Text Concatenate` —— 1/15 个有
+- `EmptySD3LatentImage` —— 1/15 个有
+- `Int` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 15 | 8 - 20 | 12 | 60% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 12 | 69% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 92% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 采样步数 | 8 | 4 - 40 | 15 | 4% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 15 | 27% |
+| 采样算法 | euler | - | 15 | 80% |
+| 调度器 | simple | - | 15 | 87% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 14/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 15，观测区间 8 - 20，12 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，12 个样本
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 92%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 40，15 个样本，取值分散，一致性仅 4%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，15 个样本，取值分散，一致性仅 27%
+- 采样算法 最常用 euler，15 个样本，一致性 80%
+- 调度器 最常用 simple，15 个样本，一致性 87%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（14/15 个样本）：Steps较低可能导致细节不足

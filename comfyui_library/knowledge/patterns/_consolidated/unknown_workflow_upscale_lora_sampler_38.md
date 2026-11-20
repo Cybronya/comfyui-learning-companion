@@ -1,28 +1,28 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_38
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.991667
+coverage: 0.992857
 common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, FlowMatchEulerDiscreteScheduler (Custom), KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Z-image-Turbo文生图_2003476119510786049.json, 图片生成/文生图/凌波_2104236095805419521.json, 图片生成/文生图/含章plus pro max v7_2094807352477315073.json, 图片生成/文生图/含章plus pro max决定版_2101643981267488770.json, 图片生成/文生图/鱼龙百变_2106036449396215809.json, 图片生成/文生图/鱼龙百变_2114525151864901634.json]
+members: [图片生成/文生图/Z-image-Turbo文生图_2003476119510786049.json, 图片生成/文生图/凌波_2104236095805419521.json, 图片生成/文生图/含章plus pro max v7_2094807352477315073.json, 图片生成/文生图/含章plus pro max决定版_2101643981267488770.json, 图片生成/文生图/鱼龙百变_2106036449396215809.json, 图片生成/文生图/鱼龙百变_2114525151864901634.json, 平台全量/千界婆娑_2107772285561163778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_38
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Z-image-Turbo文生图_2003476119510786049.json、图片生成/文生图/凌波_2104236095805419521.json、图片生成/文生图/含章plus pro max v7_2094807352477315073.json、图片生成/文生图/含章plus pro max决定版_2101643981267488770.json、图片生成/文生图/鱼龙百变_2106036449396215809.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Z-image-Turbo文生图_2003476119510786049.json、图片生成/文生图/凌波_2104236095805419521.json、图片生成/文生图/含章plus pro max v7_2094807352477315073.json、图片生成/文生图/含章plus pro max决定版_2101643981267488770.json、图片生成/文生图/鱼龙百变_2106036449396215809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
 - **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
@@ -40,16 +40,16 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 5/6 个有
-- `CR Prompt Text` —— 5/6 个有
-- `EmptySD3LatentImage` —— 5/6 个有
-- `LayerColor: BrightnessContrastV2` —— 5/6 个有
-- `ResolutionSelector` —— 5/6 个有
-- `TextConcat` —— 5/6 个有
-- `CFGGuider` —— 1/6 个有
-- `EmptyLatentImage` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `BasicGuider` —— 6/7 个有
+- `CR Prompt Text` —— 6/7 个有
+- `EmptySD3LatentImage` —— 6/7 个有
+- `LayerColor: BrightnessContrastV2` —— 6/7 个有
+- `ResolutionSelector` —— 6/7 个有
+- `TextConcat` —— 6/7 个有
+- `CFGGuider` —— 1/7 个有
+- `EmptyLatentImage` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
 
 ## 典型参数
 

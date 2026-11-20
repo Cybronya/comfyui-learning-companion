@@ -3,17 +3,17 @@ name: unknown_workflow_video_upscale_sampler_18
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.769
-common_nodes: [ConvertAny2Float, GetNode, ImageUpscaleWithModel, Int, LoadWanVideoT5TextEncoder, MathExpression|pysssss, Note Plus (mtb), PlaySound|pysssss, RIFE VFI, SeargePromptText, SetNode, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.774
+common_nodes: [BboxDetectorCombined_v2, DuckHideNode, Fast Groups Bypasser (rgthree), FlashVSRNode, Float to Int, GrowMaskWithBlur, INTConstant, ImageCompositeMasked, ImageConcatMulti, ImageScaleToTotalPixels, JWInteger, LayerUtility: ColorImage V2, LayerUtility: ImageScaleByAspectRatio V2, MaskListToMaskBatch, MaskToImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, SolidMask, UltralyticsDetectorProvider, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoDecode, WanVideoEncode, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy imageBatchToImageList]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json, 视频生成/文生视频/Wan 2.1 文生视频疾速版，960x960，4分钟生成10秒_1895115553986183169.json]
+members: [平台全量/视频修复水印去除整合包_2021881966093668353.json, 平台全量/视频修复水印去除整合包_2029108553381842945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_18
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json、视频生成/文生视频/Wan 2.1 文生视频疾速版，960x960，4分钟生成10秒_1895115553986183169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/视频修复水印去除整合包_2021881966093668353.json、平台全量/视频修复水印去除整合包_2029108553381842945.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,35 +23,39 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ConvertAny2Float`
-- `GetNode`
-- `ImageUpscaleWithModel`
-- `Int`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `Note Plus (mtb)`
-- `PlaySound|pysssss`
-- `RIFE VFI`
-- `SeargePromptText`
+- `BboxDetectorCombined_v2`
+- `DuckHideNode`
+- `Fast Groups Bypasser (rgthree)`
+- `FlashVSRNode`
+- `Float to Int`
+- `GrowMaskWithBlur`
+- `INTConstant`
+- `ImageCompositeMasked`
+- `ImageConcatMulti`
+- `ImageScaleToTotalPixels`
+- `JWInteger`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MaskListToMaskBatch`
+- `MaskToImage`
+- `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `SetNode`
-- `UpscaleModelLoader`
+- `SolidMask`
+- `UltralyticsDetectorProvider`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoContextOptions`
+- `VHS_VideoInfo`
 - `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoMiniMaxRemoverEmbeds`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 1/2 个有
-- `LoadImage` —— 1/2 个有
-- `LoadWanVideoClipTextEncoder` —— 1/2 个有
-- `WanVideoEmptyEmbeds` —— 1/2 个有
-- `WanVideoImageClipEncode` —— 1/2 个有
-- `WanVideoTorchCompileSettings` —— 1/2 个有
+- `easy imageBatchToImageList`
 
 ## 典型参数
 

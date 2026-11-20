@@ -3,87 +3,108 @@ name: text_to_image_video_lora_sampler_67
 type: Text To Image
 frequency: 12
 level: strong
-coverage: 0.946583
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, Compare, DWPreprocessor, EmptyLatentImage, FaceMaskFromPoseKeypoints, INTConstant, If ANY execute A else B, ImageFromBatch, ImageResizeKJv2, JjkText, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, Primitive integer [Crystools], RHHiddenNodes, RH_Captioner, ShowText|pysssss, SimpleMath+, Text Concatenate, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.537333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/不限时长动作迁移PLUS｜面部表情身材优化图生视频_2095505487574953985.json, 视频生成/图生视频/动作迁移PLUS不限时长｜动作面部表情身材优化_2095235508216619010.json, 视频生成/图生视频/爆款复刻三合一｜角色替换+动作迁移+面部表情图生视频_2092558999911755778.json, 视频生成/图生视频/爆款复刻面部表情动作迁移角色替换 视频生视频动作迁移排版优化_2094020897270231042.json, 视频生成/图生视频/爆款复刻面部表情动作迁移角色替换 视频生视频动作迁移排版优化_2097100031206707202.json, 视频生成/图生视频/爆款视频复刻公式 面部表情自然的角色替换加动作迁移（排版优化）_2095068461927059458.json, 视频生成/图生视频/爆款视频复刻公式 面部表情自然的角色替换加动作迁移（排版优化）_2106524735935967234.json, 视频生成/图生视频/角色替换加动作迁移加面部表情 爆款视频复刻工具_2099210651427237889.json, 视频生成/图生视频/角色替换加动作迁移加面部表情 爆款视频复刻工具_2099589829465042946.json, 视频生成/图生视频/角色替换动作迁移面部表情三件套｜爆款视频一键复刻，节点全解密_2099484578393190402.json, 视频生成/图生视频/角色替换动作迁移面部表情｜爆款复刻排版优化可解密_2092324804513845250.json, 视频生成/图生视频/面部表情动作迁移角色替换｜爆款复刻视频生视频方案_2093761798544642049.json]
+members: [数字人/数字人/探店商品视频无滤镜版｜MiniMax+H3数字人生成_2093789772853633025.json, 视频生成/图生视频/9图参考一次出片｜MiniMax H3图生视频多图玩法_2089030736761409538.json, 视频生成/图生视频/AITUDOU H3 Skill2.0全能参考版｜单采直出视频_2098755113656610818.json, 视频生成/图生视频/H3多参考生视频优化版 高质量图生视频工具_2099586599930646530.json, 视频生成/图生视频/H3多参考生视频优化版9图全开 多图参考高质量生成_2099220276063068161.json, 视频生成/图生视频/H3多参考生视频优化版9图全开 多图参考高质量生成_2099597584175292417.json, 视频生成/图生视频/H3多图参考2K高清工作流 9图参考低显存加速_2099565414308208641.json, 视频生成/图生视频/MiniMax H3全栈式短剧多图参考自动生成二采提示词自动优化版V2.0_2109368887719587842.json, 视频生成/图生视频/MiniMax H3多图参考2K高清图生视频处理工作流_2101011461173760002.json, 视频生成/图生视频/MiniMax H3多图参考2K高清工作流 9图参考低显存加速_2099199366883012609.json, 视频生成/图生视频/minimax h3多图参考2K高清工作流｜写实运镜图生视频_2100796636741070849.json, 视频生成/文生视频/MiniMax-H3 全栈式短剧 V1.0｜多图音频参考二采优化_2096882058416189442.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_67
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/不限时长动作迁移PLUS｜面部表情身材优化图生视频_2095505487574953985.json、视频生成/图生视频/动作迁移PLUS不限时长｜动作面部表情身材优化_2095235508216619010.json、视频生成/图生视频/爆款复刻三合一｜角色替换+动作迁移+面部表情图生视频_2092558999911755778.json、视频生成/图生视频/爆款复刻面部表情动作迁移角色替换 视频生视频动作迁移排版优化_2094020897270231042.json、视频生成/图生视频/爆款复刻面部表情动作迁移角色替换 视频生视频动作迁移排版优化_2097100031206707202.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/探店商品视频无滤镜版｜MiniMax+H3数字人生成_2093789772853633025.json、视频生成/图生视频/9图参考一次出片｜MiniMax H3图生视频多图玩法_2089030736761409538.json、视频生成/图生视频/AITUDOU H3 Skill2.0全能参考版｜单采直出视频_2098755113656610818.json、视频生成/图生视频/H3多参考生视频优化版 高质量图生视频工具_2099586599930646530.json、视频生成/图生视频/H3多参考生视频优化版9图全开 多图参考高质量生成_2099220276063068161.json…）
 
 - **类型**：Text To Image
 - **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：54%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `Compare`
-- `DWPreprocessor`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `FaceMaskFromPoseKeypoints`
-- `INTConstant`
-- `If ANY execute A else B`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
+- `GetNode`
 - `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM V2`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
-- `PoseAndFaceDetection`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RH_Captioner`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `Text Concatenate`
-- `Text Multiline`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/12 个有
+- `PrimitiveFloat` —— 11/12 个有
+- `SplitSigmas` —— 10/12 个有
+- `LTXVConcatAVLatent` —— 9/12 个有
+- `LTXVSeparateAVLatent` —— 9/12 个有
+- `MinimaxH3LatentUpscaler3D` —— 9/12 个有
+- `easy float` —— 9/12 个有
+- `PrimitiveStringMultiline` —— 7/12 个有
+- `SaveImage` —— 7/12 个有
+- `VHS_LoadVideo` —— 7/12 个有
+- `llama_cpp_instruct_adv` —— 7/12 个有
+- `llama_cpp_model_loader` —— 7/12 个有
+- `llama_cpp_parameters` —— 7/12 个有
+- `Any Switch (rgthree)` —— 6/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/12 个有
+- `PurgeVRAM_UTK` —— 6/12 个有
+- `easy showAnything` —— 6/12 个有
+- `LoadAudio` —— 5/12 个有
+- `Text` —— 5/12 个有
+- `ModelAttentionBackend` —— 4/12 个有
+- `PrimitiveBoolean` —— 4/12 个有
+- `UniBlockSwap` —— 4/12 个有
+- `VHS_LoadAudioUpload` —— 4/12 个有
+- `easy ifElse` —— 4/12 个有
+- `ShowText|pysssss` —— 3/12 个有
+- `StringConcatenate` —— 3/12 个有
+- `GetImage` —— 2/12 个有
+- `ImageScale` —— 2/12 个有
+- `JoinStringMulti` —— 2/12 个有
+- `PreviewImage` —— 2/12 个有
+- `PrimitiveInt` —— 2/12 个有
+- `TextGenerate` —— 2/12 个有
+- `ToString` —— 2/12 个有
+- `YUAN_TXTJsonExtractor` —— 2/12 个有
+- `YUAN_TXTParagraphSplitter` —— 2/12 个有
+- `YUAN_TXTShotReplace` —— 2/12 个有
+- `YuanAudioList` —— 2/12 个有
+- `YuanAudioSplit` —— 2/12 个有
+- `YuanMultiImage` —— 2/12 个有
+- `YuanTool` —— 2/12 个有
+- `AudioSeparation` —— 1/12 个有
+- `BatchImagesNode` —— 1/12 个有
+- `Float` —— 1/12 个有
+- `TrimAudioDuration` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 12 | 100% |
-| 高度 | 80 | 80 - 80 | 12 | 100% |
 | 采样步数 | 4 | 4 - 4 | 12 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 12 | 100% |
 | 采样算法 | er_sde | - | 12 | 100% |
 | 调度器 | beta | - | 12 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 宽度 | 80 | 80 - 80 | 12 | 100% |
+| 高度 | 80 | 80 - 80 | 12 | 100% |
 
 ## 常见问题
 
@@ -93,11 +114,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，12 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，12 个样本，一致性 100%
 - 调度器 最常用 beta，12 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
 - 高发问题（12/12 个样本）：Steps较低可能导致细节不足

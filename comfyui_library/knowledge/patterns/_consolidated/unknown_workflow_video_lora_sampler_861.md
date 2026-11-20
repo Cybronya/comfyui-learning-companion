@@ -1,63 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_861
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5235
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, H3SigmaRefiner, KSamplerSelect, LayerColor: Brightness & Contrast, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, SolAttnPatch, TrimAudioDuration, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+frequency: 3
+level: moderate
+coverage: 0.513333
+common_nodes: [AILab_Preview, BiRefNetRMBG, CLIPLoader, CLIPVisionLoader, FloatConstant, GetImageSize, GetNode, INTConstant, ImageScaleToMaxDimension, InvertMask, JWStringMultiline, LoadImage, LoadWanVideoT5TextEncoder, PreviewAny, PreviewImage, SetNode, SomethingToString, TextImageEncodeQwenVL, VHS_VideoCombine, WanVideoAddBindweaveEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncodeLatentBatch, WanVideoImageResizeToClosest, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy int, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax 单采打戏_2095742874632675330.json, 视频生成/图生视频/MinimaxH3 长视频生成~_2095477683223355393.json]
+members: [视频生成/图生视频/BindWeave_角色360度全视角_Lora训练集生成_超高一致性和高保真方案_1990334603498057730.json, 视频生成/图生视频/BindWeave_角色360度全视角_超高一致性(可用于Lora训练集生成)_2028822051032666113.json, 视频生成/图生视频/BindWeave_角色全视角_Lora训练集生成_2005583710823088129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_861
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Minimax 单采打戏_2095742874632675330.json、视频生成/图生视频/MinimaxH3 长视频生成~_2095477683223355393.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/BindWeave_角色360度全视角_Lora训练集生成_超高一致性和高保真方案_1990334603498057730.json、视频生成/图生视频/BindWeave_角色360度全视角_超高一致性(可用于Lora训练集生成)_2028822051032666113.json、视频生成/图生视频/BindWeave_角色全视角_Lora训练集生成_2005583710823088129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：52%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `AILab_Preview`
+- `BiRefNetRMBG`
 - `CLIPLoader`
-- `ComfyMathExpression`
+- `CLIPVisionLoader`
+- `FloatConstant`
+- `GetImageSize`
 - `GetNode`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LayerColor: Brightness & Contrast`
+- `INTConstant`
+- `ImageScaleToMaxDimension`
+- `InvertMask`
+- `JWStringMultiline`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewAny`
+- `PreviewImage`
 - `SetNode`
-- `SolAttnPatch`
-- `TrimAudioDuration`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `SomethingToString`
+- `TextImageEncodeQwenVL`
 - `VHS_VideoCombine`
+- `WanVideoAddBindweaveEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoEncodeLatentBatch`
+- `WanVideoImageResizeToClosest`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy int`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `FrameInterpolate` —— 1/2 个有
-- `FrameInterpolationModelLoader` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/2 个有
-- `MiniMaxH3AddGuide` —— 1/2 个有
-- `RTXVideoSuperResolution` —— 1/2 个有
+- `Create Grid Image from Batch` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
+- `GIMMVFI_interpolate` —— 2/3 个有
+- `ImageConcanate` —— 2/3 个有
+- `ImageScaleBy` —— 2/3 个有
+- `ImpactMinMax` —— 2/3 个有
+- `MaskToImage` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `SeedVR2LoadDiTModel` —— 2/3 个有
+- `SeedVR2LoadVAEModel` —— 2/3 个有
+- `SeedVR2VideoUpscaler` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `string_util_StrConcat` —— 2/3 个有
+- `ImageFromBatch+` —— 1/3 个有
 
 ## 典型参数
 
@@ -69,4 +85,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

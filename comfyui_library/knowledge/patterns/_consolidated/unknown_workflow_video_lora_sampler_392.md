@@ -1,116 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_392
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.568
-common_nodes: [Any Switch (rgthree), BlockifyMask, Bookmark (rgthree), CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSize, GetImageSize+, GetImageSizeAndCount, GetNode, GrowMask, ImageBatch, ImageCompositeMasked, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, ImageToMask, Label (rgthree), LayerMask: DrawBBoxMaskV2, LayerMask: MaskGrow, LayerMask: ObjectDetectorMask, LayerMask: SegformerB2ClothesUltra, LayerUtility: CropByMask V2, LoadImage, LoadWanVideoT5TextEncoder, Mask Fill Holes, MaskToImage, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), OnnxDetectionModelLoader, PixelPerfectResolution, PoseAndFaceDetection, PowerVisionObjectDetection, PowerVisionQwenModelLoader, PreviewImage, PrimitiveBoolean, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, RHHiddenNodes, RH_Translator, RMBG, RepeatImageBatch, ResizeMask, SeCModelLoader, SeCVideoSegmentation, SetNode, SimpleMath+, StringConcatenate, Switch any [Crystools], ToBinaryMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy cleanGpuUsed, easy compare, easy ifElse, easy int, easy isMaskEmpty, easy sam3ModelLoader, easy sam3VideoSegmentation, easy seed, easy showAnything]
+coverage: 0.88425
+common_nodes: [CR Prompt Text, Float, GetImageSizeAndCount, INTConstant, JWInteger, LoadWanVideoT5TextEncoder, SaveLatent, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/V5.2-PRO（遮罩20 开启人脸检测）_2034257190483140609.json, 数字人/数字人/Wan视频编辑高级版V5.2-PRO_2101706051115638786.json, 视频生成/图生视频/VIP-Wan视频编辑高级版V5.2-PRO（加大遮罩版）_2033533523109355521.json, 视频生成/图生视频/Wan视频编辑高级版V5.2-PRO_2031919124909137922.json, 视频生成/文生视频/VIP-Wan视频编辑高级版V5.2-PRO_2011701676641619970.json, 视频生成/文生视频/菠萝仔专用工作流_2022698322439442433.json]
+members: [视频生成/图生视频/wan2.2 control控制_1966742439342059521.json, 视频生成/图生视频/【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_1982245487325659137.json, 视频生成/图生视频/（4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.json, 视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_1980903199232184321.json, 视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V新版高噪模型优调版图生视频V2_1978368090293555201.json, 视频生成/图生视频/（4+4）KJ版Wan2.2优调版图生视频实验版V2（LightX2v+Rcm）_1980273017576185857.json, 视频生成/文生视频/(KJ版)Wan2.2+Foley精调版文生视频V1_1970702549865164802.json, 视频生成/文生视频/Comfy挑战赛6（心跳）Wan2.2文生视频+音频_1971180956935720962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_392
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/V5.2-PRO（遮罩20 开启人脸检测）_2034257190483140609.json、数字人/数字人/Wan视频编辑高级版V5.2-PRO_2101706051115638786.json、视频生成/图生视频/VIP-Wan视频编辑高级版V5.2-PRO（加大遮罩版）_2033533523109355521.json、视频生成/图生视频/Wan视频编辑高级版V5.2-PRO_2031919124909137922.json、视频生成/文生视频/VIP-Wan视频编辑高级版V5.2-PRO_2011701676641619970.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/wan2.2 control控制_1966742439342059521.json、视频生成/图生视频/【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_1982245487325659137.json、视频生成/图生视频/（4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.json、视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_1980903199232184321.json、视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V新版高噪模型优调版图生视频V2_1978368090293555201.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `BlockifyMask`
-- `Bookmark (rgthree)`
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `GetImageSize+`
+全部 8 个 workflow 都包含：
+- `CR Prompt Text`
+- `Float`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageBatch`
-- `ImageCompositeMasked`
-- `ImageConcatMulti`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `Label (rgthree)`
-- `LayerMask: DrawBBoxMaskV2`
-- `LayerMask: MaskGrow`
-- `LayerMask: ObjectDetectorMask`
-- `LayerMask: SegformerB2ClothesUltra`
-- `LayerUtility: CropByMask V2`
-- `LoadImage`
+- `INTConstant`
+- `JWInteger`
 - `LoadWanVideoT5TextEncoder`
-- `Mask Fill Holes`
-- `MaskToImage`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `OnnxDetectionModelLoader`
-- `PixelPerfectResolution`
-- `PoseAndFaceDetection`
-- `PowerVisionObjectDetection`
-- `PowerVisionQwenModelLoader`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveInt`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `RH_Translator`
-- `RMBG`
-- `RepeatImageBatch`
-- `ResizeMask`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetNode`
-- `SimpleMath+`
-- `StringConcatenate`
-- `Switch any [Crystools]`
-- `ToBinaryMask`
-- `VHS_LoadVideo`
+- `SaveLatent`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy compare`
-- `easy ifElse`
-- `easy int`
-- `easy isMaskEmpty`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 4/6 个有
-- `ImpactIfNone` —— 4/6 个有
-- `Note Plus (mtb)` —— 4/6 个有
-- `PointsEditor` —— 4/6 个有
-- `easy framesEditor` —— 4/6 个有
-- `DownloadAndLoadSAM2Model` —— 2/6 个有
-- `Sam2Segmentation` —— 2/6 个有
+- `CreateCFGScheduleFloatList` —— 7/8 个有
+- `HunyuanVideoFoley` —— 7/8 个有
+- `easy showAnything` —— 7/8 个有
+- `text_mul_replace` —— 7/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
+- `LoadImage` —— 6/8 个有
+- `WanVideoImageToVideoEncode` —— 6/8 个有
+- `WanVideoEmptyEmbeds` —— 2/8 个有
+- `PreviewImage` —— 1/8 个有
+- `SaveImage` —— 1/8 个有
+- `StringToFloatList` —— 1/8 个有
+- `VHS_LoadVideo` —— 1/8 个有
+- `WanVideoContextOptions` —— 1/8 个有
+- `WanVideoControlEmbeds` —— 1/8 个有
+- `WanVideoEncode` —— 1/8 个有
+- `easy seed` —— 1/8 个有
 
 ## 典型参数
 

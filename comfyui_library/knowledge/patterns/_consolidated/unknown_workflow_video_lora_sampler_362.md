@@ -1,63 +1,57 @@
 ---
 name: unknown_workflow_video_lora_sampler_362
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.905143
-common_nodes: [CreateCFGScheduleFloatList, INTConstant, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.923
+common_nodes: [CR Text, CogVideoEnhanceAVideo, CombinationText, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, ImageResizeKJv2, Int, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PreviewImage, RH_LLMAPI_NODE, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, easy string, easy textSwitch]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.2 Upskirt_1964201625864818690.json, 视频生成/图生视频/WAN2.2 dancing_1964640487892242434.json, 视频生成/图生视频/WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json, 视频生成/图生视频/WAN2.2图生视频_1963873192061521922.json, 视频生成/图生视频/WAN2.2图生视频（KJ8步+可做数据集）_1958716775745667074.json, 视频生成/图生视频/WAN2.2跨镜头切换_1963945783164850177.json, 视频生成/文生视频/(KJ版)Wan2.2图生视频超级加速版V3（大幅度提高速度）_1950046289267441666.json]
+members: [平台全量/【360度旋转】万物旋转特效+wan2.2+图生视频 360度产品动画旋转展示_1981616110237818882.json, 视频生成/图生视频/360度旋转+细节保留+真实光影+超强一致+Wan2.2万物旋转+-+360度轨道镜头_2005435455309049858.json, 视频生成/图生视频/Wan2.2电商产品旋转 - 360度轨道镜头  【万物360度旋转】万相任意物体三视图IP多角度_1993950119504576514.json, 视频生成/图生视频/Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json, 视频生成/图生视频/万物360度旋转_1994253220916690946.json, 视频生成/图生视频/图生视频_2000816719373496322.json, 视频生成/文生视频/360度旋转 细节保留 真实光影 超强一致 Wan2.2万物旋转 - 360度轨道镜头   万相任意_2000731719860879361.json, 视频生成/文生视频/【wan2.2】360度旋转特效+图生视频  万物旋转360度 KJ加速版_1972165939687059457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_362
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/WAN2.2 Upskirt_1964201625864818690.json、视频生成/图生视频/WAN2.2 dancing_1964640487892242434.json、视频生成/图生视频/WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json、视频生成/图生视频/WAN2.2图生视频_1963873192061521922.json、视频生成/图生视频/WAN2.2图生视频（KJ8步+可做数据集）_1958716775745667074.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/【360度旋转】万物旋转特效+wan2.2+图生视频 360度产品动画旋转展示_1981616110237818882.json、视频生成/图生视频/360度旋转+细节保留+真实光影+超强一致+Wan2.2万物旋转+-+360度轨道镜头_2005435455309049858.json、视频生成/图生视频/Wan2.2电商产品旋转 - 360度轨道镜头  【万物360度旋转】万相任意物体三视图IP多角度_1993950119504576514.json、视频生成/图生视频/Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json、视频生成/图生视频/万物360度旋转_1994253220916690946.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `CR Text`
+- `CogVideoEnhanceAVideo`
+- `CombinationText`
 - `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
 - `INTConstant`
+- `ImageResizeKJv2`
+- `Int`
+- `JWInteger`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 4/7 个有
-- `ImageResizeKJv2` —— 4/7 个有
-- `PreviewImage` —— 4/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `LayerUtility: PurgeVRAM` —— 3/7 个有
-- `PrimitiveFloat` —— 3/7 个有
-- `WanVideoEnhanceAVideo` —— 3/7 个有
-- `WanVideoSLG` —— 3/7 个有
-- `easy positive` —— 3/7 个有
-- `CR Prompt Text` —— 2/7 个有
-- `ImageFromBatch+` —— 2/7 个有
-- `JWInteger` —— 2/7 个有
-- `GetImageSize` —— 1/7 个有
-- `ImageStitch` —— 1/7 个有
-- `MathExpression|pysssss` —— 1/7 个有
-- `PrimitiveInt` —— 1/7 个有
-- `easy humanSegmentation` —— 1/7 个有
+- `easy showAnything`
+- `easy string`
+- `easy textSwitch`
 
 ## 典型参数
 

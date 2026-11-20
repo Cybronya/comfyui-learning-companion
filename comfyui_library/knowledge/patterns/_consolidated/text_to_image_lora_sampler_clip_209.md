@@ -3,62 +3,65 @@ name: text_to_image_lora_sampler_clip_209
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.890111
-common_nodes: [BatchImagesNode, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.882222
+common_nodes: [CLIPLoader, CLIPTextEncode, CM_FloatToInt, CM_FloatUnaryOperation, CM_IntToFloat, CR Prompt Text, EmptyLatentImage, FL_ImageBatchToGrid, FluxKontextMultiReferenceLatentMethod, GetImageSizeAndCount, ImageListToBatch+, Int, JWIntegerToString, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, ProcessString, Qwen3_VQA_Plus, RH_LLMAPI_NODE, SaveImage, StringFunction|pysssss, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy promptLine, easy saveText, easy seed, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen 2.1图片编辑测试工作流，图生图处理方案_2103536589963087874.json, 图片生成/图生图/Qwen Image 2.1 BFS换脸换头工作流，角色一致性图生图面部替换_2106134123172683777.json, 图片生成/图生图/Qwen Image 2.1 BFS换脸换头工作流，角色一致性图生图面部替换工具_2105787847952392193.json, 图片生成/图生图/Qwen Image 2.1 BFS换脸换头工作流，角色一致性图生图面部替换工具_2106129646071926786.json, 图片生成/图生图/Qwen Image 2.1图片编辑工作流官流版，局部重绘人像写真图生图方案_2106901434481602561.json, 图片生成/图生图/Qwen Image 2.1官方图片编辑｜局部重绘人像写真_2106601449881952257.json, 图片生成/图生图/Qwen Image 2.1漫转真｜二次元图一键转真人写真_2106609135612686338.json, 图片生成/图生图/Qwen_Image_2.1图片编辑工作流官流版，局部重绘人像写真图生图方案_2108733918542389249.json, 图片生成/图生图/千问2.1图片编辑测试工作流｜文生图图生图双修，稳定可用优先_2107371246542475265.json]
+members: [图片生成/图生图/Qwen-Edit NextScene｜图生图多分镜自动生成 8步写实写真_2097535884341112834.json, 图片生成/图生图/Qwen-Edit-NextScene-2511｜多分镜自动图生图8步一致性出图_2092615856743342081.json, 图片生成/图生图/Qwen-Edit-NextScene2511｜图生图多分镜自动8步_2107675125259792386.json, 图片生成/图生图/Qwen-Edit多分镜图生图｜NextScene 2511八步自动分镜_2099917725115179009.json, 图片生成/图生图/图生图加多分镜自动Qwen Edit NextScene 2511 8步工作流，角色一致性图生图_2107928830039117826.json, 图片生成/图生图/图生图加多分镜自动Qwen Edit NextScene 2511 8步工作流，角色一致性图生图_2107963550802210817.json, 图片生成/图生图/多分镜自动出图｜Qwen-Edit NextScene 2511八步，角色一致性_2099881138817949697.json, 图片生成/图生图/多分镜自动图生图｜Qwen-Edit-NextScene-2511-8步生成_2095101182455934978.json, 图片生成/图生图/多分镜自动生成｜Qwen Edit NextScene 2511图生图8步一致性出图_2090876709213138946.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_209
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen 2.1图片编辑测试工作流，图生图处理方案_2103536589963087874.json、图片生成/图生图/Qwen Image 2.1 BFS换脸换头工作流，角色一致性图生图面部替换_2106134123172683777.json、图片生成/图生图/Qwen Image 2.1 BFS换脸换头工作流，角色一致性图生图面部替换工具_2105787847952392193.json、图片生成/图生图/Qwen Image 2.1 BFS换脸换头工作流，角色一致性图生图面部替换工具_2106129646071926786.json、图片生成/图生图/Qwen Image 2.1图片编辑工作流官流版，局部重绘人像写真图生图方案_2106901434481602561.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen-Edit NextScene｜图生图多分镜自动生成 8步写实写真_2097535884341112834.json、图片生成/图生图/Qwen-Edit-NextScene-2511｜多分镜自动图生图8步一致性出图_2092615856743342081.json、图片生成/图生图/Qwen-Edit-NextScene2511｜图生图多分镜自动8步_2107675125259792386.json、图片生成/图生图/Qwen-Edit多分镜图生图｜NextScene 2511八步自动分镜_2099917725115179009.json、图片生成/图生图/图生图加多分镜自动Qwen Edit NextScene 2511 8步工作流，角色一致性图生图_2107928830039117826.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BatchImagesNode`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CM_FloatUnaryOperation`
+- `CM_IntToFloat`
+- `CR Prompt Text`
 - `EmptyLatentImage`
+- `FL_ImageBatchToGrid`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetImageSizeAndCount`
+- `ImageListToBatch+`
+- `Int`
+- `JWIntegerToString`
 - `JjkText`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
-- `ResolutionSelector`
+- `PrimitiveStringMultiline`
+- `ProcessString`
+- `Qwen3_VQA_Plus`
+- `RH_LLMAPI_NODE`
 - `SaveImage`
-- `TextEncodeQwenImage21`
-- `TextGenerate`
+- `StringFunction|pysssss`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy promptLine`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 8/9 个有
-- `ComfySwitchNode` —— 6/9 个有
-- `JoinStrings` —— 6/9 个有
-- `PreviewImage` —— 6/9 个有
-- `PrimitiveBoolean` —— 6/9 个有
-- `ShowText|pysssss` —— 6/9 个有
-- `easy positive` —— 6/9 个有
-- `ImageConcatMulti` —— 5/9 个有
-- `ImageScaleToTotalPixels` —— 5/9 个有
-- `LoadImageGoohai` —— 3/9 个有
-- `MuyeTextEditOutput` —— 3/9 个有
-- `SplitImageWithAlpha` —— 3/9 个有
-- `VOSR2ModelLoader` —— 3/9 个有
-- `VOSR2Upscale` —— 3/9 个有
-- `ModelPreviewOverrideKJ` —— 2/9 个有
-- `EmptyImage` —— 1/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `CFGNorm` —— 8/9 个有
+- `ModelSamplingAuraFlow` —— 8/9 个有
 
 ## 典型参数
 
@@ -76,7 +79,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 18/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -87,4 +90,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（13/9 个样本）：Steps较低可能导致细节不足
+- 高发问题（18/9 个样本）：Steps较低可能导致细节不足

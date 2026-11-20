@@ -1,34 +1,31 @@
 ---
 name: unknown_workflow_sampler_clip_unet_23
 type: Unknown Workflow
-frequency: 24
+frequency: 23
 level: moderate
-coverage: 0.946292
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.791565
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux 2-klein9b换脸换装组合_2064976052706963458.json, 图片生成/图生图/Flux2  Klein图像单图编辑9B版官方版_2012125328356941826.json, 图片生成/图生图/Flux2 Klein 一键转3D纸雕_2025543049413136385.json, 图片生成/图生图/Flux2 Klein 万物增强细节LoRA 林耀2.9_2020708657654145026.json, 图片生成/图生图/Flux2 Klein 三图编辑9B版_2012176832983998465.json, 图片生成/图生图/Flux2 Klein 单图编辑9B版_2012048543007121409.json, 图片生成/图生图/Flux2 Klein 单图编辑9B版_2012107262248095745.json, 图片生成/图生图/Flux2 Klein 双图编辑9B版_2012162140509052929.json, 图片生成/图生图/Flux2 Klein 双图编辑_2012443837314113537.json, 图片生成/图生图/Flux2 Klein 双图编辑_2070334381268488193.json, 图片生成/图生图/Flux2 Klein 图像编辑4B版V1_2012059257029533698.json, 图片生成/图生图/Flux2 Klein 图像编辑9B_单图编辑_2012093251225915394.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版V1_2012042587716194306.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版_2012021681962881026.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版_2012348312397029378.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版_2070062677459820545.json, 图片生成/图生图/Flux2 Klein 图像编辑9B版（15s出图）_2012157839531315202.json, 图片生成/图生图/Flux2 Klein 图像编辑_2013088463502974978.json, 图片生成/图生图/Flux2 Klein 图像编辑_2070063458003021826.json, 图片生成/图生图/Flux2 Klein 指定角度生图  Multiangle Camera 可视化镜头角度控制_2012390917050732546.json, 图片生成/图生图/flux-2-klein换脸换装组合_2063802064890843138.json, 图片生成/图生图/手部修复 修手换头换脸换装+ 最新完美修手+重绘修手-完美修手+自然真实+多图编辑加速版_2056901858727391234.json, 图片生成/图生图/换脸Flux2Klein全能编辑20版人物一致自然真实多图编辑加速版_2062017636703227905.json, 图片生成/图生图/换脸换装 人物一致+自然真实全能编辑2.0版_2078751895195312130.json]
+members: [图片生成/图生图/ComfyUI电商换装：男女装一套流搞定，全节点注释喂饭级教学_2062768387176095745.json, 图片生成/图生图/DG_Flux2-klein单图+双图编辑工作流_2012101006372376578.json, 图片生成/图生图/F.2-klein-9B一键转漫画_2016138424301916161.json, 图片生成/图生图/F.2Klein9b专业证件照人像精修_2054409238532894721.json, 图片生成/图生图/F.2Klein9b证件照AI生成专业证件照_2054205043909382146.json, 图片生成/图生图/F.2Klein9b证件照AI生成专业证件照_2054363365077725186.json, 图片生成/图生图/F.2Klein9b证件照AI生成专业证件照_2057662197085589505.json, 图片生成/图生图/F2-klein-9B 产品_人物 换背景 光源一致 图片换背景_2092964367598968834.json, 图片生成/图生图/F2-klein-9B 产品_人物 换背景 光源一致_2083502820053049346.json, 图片生成/图生图/F2-klein-9B 产品_人物 换背景 光源一致_2083532831615176705.json, 图片生成/图生图/F2-klein-9B_产品_人物_换背景_光源一致_图片换背景_2093514978438508546.json, 图片生成/图生图/F2-klein-9B万物溶图_2027384708258078721.json, 图片生成/图生图/F2-klein-9B万物迁移2.0_2025429156120498178.json, 图片生成/图生图/F2-klein-9B万物迁移2.0_2057717802529812481.json, 图片生成/图生图/F2-klein-9B产品精修2.0_2027658019277905921.json, 图片生成/图生图/F2-klein-9B换背景_2028738168064839682.json, 图片生成/图生图/F2k_9B_移除文字+高清放大_2019016429546246145.json, 图片生成/图生图/Flux2 Klein LoRA效果测试_2033882764415602689.json, 图片生成/图生图/Flux2-klein-提取服装_2023254759578279937.json, 图片生成/图生图/f2k-9B-产品精修_2020706793617362946.json, 图片生成/图生图/产品精修_2072889271643623426.json, 平台全量/换脸换装+高清放大 SeedVR2.5 万物迁移+换背景+局部重绘FLUX+2_2053997166942801921.json, 平台全量/换脸换装+高清放大 万物迁移+换背景+局部重绘 SeedVR2.5 FLUX+2_2054039953520242689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_23
 
-> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（图片生成/图生图/Flux 2-klein9b换脸换装组合_2064976052706963458.json、图片生成/图生图/Flux2  Klein图像单图编辑9B版官方版_2012125328356941826.json、图片生成/图生图/Flux2 Klein 一键转3D纸雕_2025543049413136385.json、图片生成/图生图/Flux2 Klein 万物增强细节LoRA 林耀2.9_2020708657654145026.json、图片生成/图生图/Flux2 Klein 三图编辑9B版_2012176832983998465.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/ComfyUI电商换装：男女装一套流搞定，全节点注释喂饭级教学_2062768387176095745.json、图片生成/图生图/DG_Flux2-klein单图+双图编辑工作流_2012101006372376578.json、图片生成/图生图/F.2-klein-9B一键转漫画_2016138424301916161.json、图片生成/图生图/F.2Klein9b专业证件照人像精修_2054409238532894721.json、图片生成/图生图/F.2Klein9b证件照AI生成专业证件照_2054205043909382146.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：24
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 24 个 workflow 都包含：
+全部 23 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
 - `LoadImage`
 - `RandomNoise`
@@ -41,24 +38,37 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 22/24 个有
-- `GetImageSize` —— 19/24 个有
-- `EmptyFlux2LatentImage` —— 18/24 个有
-- `ImageConcanate` —— 10/24 个有
-- `Image Comparer (rgthree)` —— 8/24 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/24 个有
-- `JWFloat` —— 5/24 个有
-- `MuyeTextEditOutput` —— 5/24 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 5/24 个有
-- `RH_Nano_Banana2_Image2Image` —— 5/24 个有
-- `LoraLoaderModelOnly` —— 2/24 个有
-- `CR Prompt Text` —— 1/24 个有
-- `CR Text Concatenate` —— 1/24 个有
-- `ImageResize+` —— 1/24 个有
-- `ImageScaleBy` —— 1/24 个有
-- `KepStringList` —— 1/24 个有
-- `PreviewImage` —— 1/24 个有
-- `QwenMultiangleCameraNode` —— 1/24 个有
+- `ConditioningZeroOut` —— 22/23 个有
+- `EmptyFlux2LatentImage` —— 22/23 个有
+- `CR Text` —— 21/23 个有
+- `LoraLoaderModelOnly` —— 21/23 个有
+- `Flux2Scheduler` —— 19/23 个有
+- `GetImageSize` —— 18/23 个有
+- `GetNode` —— 17/23 个有
+- `SetNode` —— 17/23 个有
+- `LayerUtility: ImageReel` —— 16/23 个有
+- `LayerUtility: ImageReelComposit` —— 16/23 个有
+- `Image Comparer (rgthree)` —— 15/23 个有
+- `easy imageScaleDownToSize` —— 15/23 个有
+- `Fast Groups Bypasser (rgthree)` —— 14/23 个有
+- `ImageScaleToTotalPixels` —— 8/23 个有
+- `SeedVR2LoadDiTModel` —— 8/23 个有
+- `SeedVR2LoadVAEModel` —— 8/23 个有
+- `SeedVR2VideoUpscaler` —— 8/23 个有
+- `easy cleanGpuUsed` —— 8/23 个有
+- `Int` —— 6/23 个有
+- `BasicScheduler` —— 4/23 个有
+- `JWInteger` —— 4/23 个有
+- `easy promptConcat` —— 4/23 个有
+- `easy showAnything` —— 4/23 个有
+- `easy int` —— 3/23 个有
+- `ResizeImagesByLongerEdge` —— 2/23 个有
+- `easy clearCacheAll` —— 2/23 个有
+- `CR Index` —— 1/23 个有
+- `JWFloat` —— 1/23 个有
+- `Text` —— 1/23 个有
+- `easy anythingIndexSwitch` —— 1/23 个有
+- `easy imageSize` —— 1/23 个有
 
 ## 典型参数
 

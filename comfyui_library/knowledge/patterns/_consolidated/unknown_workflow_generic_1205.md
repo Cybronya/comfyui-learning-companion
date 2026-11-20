@@ -3,42 +3,31 @@ name: unknown_workflow_generic_1205
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.788667
-common_nodes: [LoadAudio, LongCatMultiSpeakerTTS, LongCatTTS, LongCatVoiceCloneTTS, NormalizeAudioLoudness, PrimitiveStringMultiline, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudioMP3]
+coverage: 0.833333
+common_nodes: [RH_YouchuanTextToImageV6, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/VividMuse LongCat AudioDIT 工作流合集_2039688939547664386.json, 音频生成/音频生成/声音克隆合集 LongCat AudioDIT 简单极速 单人-多人-文生语音_2040358317037457409.json, 音频生成/音频生成/语音克隆 一键生成 LongCat-AudioDIT 单人+多人_2040364226820182018.json]
+members: [图片生成/图生图/悠船图生图-v6_2080554845563613185.json, 图片生成/文生图/Youchuan_TextToImageV6_v6.0_2034593945862283265.json, 图片生成/文生图/悠船文生图-v6_2080610458544992257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1205
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/VividMuse LongCat AudioDIT 工作流合集_2039688939547664386.json、音频生成/音频生成/声音克隆合集 LongCat AudioDIT 简单极速 单人-多人-文生语音_2040358317037457409.json、音频生成/音频生成/语音克隆 一键生成 LongCat-AudioDIT 单人+多人_2040364226820182018.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/悠船图生图-v6_2080554845563613185.json、图片生成/文生图/Youchuan_TextToImageV6_v6.0_2034593945862283265.json、图片生成/文生图/悠船文生图-v6_2080610458544992257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
-- `LongCatMultiSpeakerTTS`
-- `LongCatTTS`
-- `LongCatVoiceCloneTTS`
-- `NormalizeAudioLoudness`
-- `PrimitiveStringMultiline`
-- `Qwen3ASRLoader`
-- `Qwen3ASRTranscribe`
-- `SaveAudioMP3`
+- `RH_YouchuanTextToImageV6`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 2/3 个有
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `PreviewAudio` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `easy promptList` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
 
 ## 典型参数
 

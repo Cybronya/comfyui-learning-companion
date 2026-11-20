@@ -3,32 +3,38 @@ name: unknown_workflow_generic_1737
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, CR Text, JWInteger, RunningHubHeliosModelLoader, RunningHubHeliosT2V, SaveVideo]
+coverage: 0.7
+common_nodes: [Int, LoadImage, SaveImage, easy forLoopEnd, easy forLoopStart, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/Helios极速文生视频智能提示词超长版（最长2400帧）_2031217208579334145.json, 视频生成/文生视频/🦖Helios文生视频（最长2400帧）_2031567354924109825.json]
+members: [图片生成/图生图/批量产品模特通用产品_2034513734130995201.json, 平台全量/For循环1加到100_1896082392539398145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1737
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Helios极速文生视频智能提示词超长版（最长2400帧）_2031217208579334145.json、视频生成/文生视频/🦖Helios文生视频（最长2400帧）_2031567354924109825.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量产品模特通用产品_2034513734130995201.json、平台全量/For循环1加到100_1896082392539398145.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text`
-- `JWInteger`
-- `RunningHubHeliosModelLoader`
-- `RunningHubHeliosT2V`
-- `SaveVideo`
+- `Int`
+- `LoadImage`
+- `SaveImage`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text Concatenate` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `RH_Nano_Banana_Image2Image` —— 1/2 个有
+- `easy mathInt` —— 1/2 个有
 
 ## 典型参数
 

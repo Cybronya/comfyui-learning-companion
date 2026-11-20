@@ -1,85 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_447
 type: Unknown Workflow
-frequency: 5
-level: strong
-coverage: 0.7862
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PainterI2V, PathchSageAttentionKJ, RIFE VFI, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler, easy getNode, easy setNode]
+frequency: 7
+level: moderate
+coverage: 0.754286
+common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/REMIX V3 图生视频-批量_2035929397282217985.json, 视频生成/图生视频/REMIX V2 在线批量-图生视频_2004740865878884354.json, 视频生成/图生视频/图生视频_1999866584787189761.json, 视频生成/图生视频/图生视频修改_2009703059848433666.json, 视频生成/图生视频/🕵🏻极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2034912808818712577.json]
+members: [视频生成/图生视频/MiniMaxH3参考图生视频_2094795058393468929.json, 视频生成/图生视频/MiniMaxH3参考图生视频_2097348758643240962.json, 视频生成/图生视频/MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2088895118051991553.json, 视频生成/图生视频/Minimax_H3-Easy_15秒多图叙事慢剧_2116713458950561793.json, 视频生成/图生视频/稳定性优化MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2093293369748451329.json, 视频生成/文生视频/MinimaxH3+极简版工作台_2090287273068818434.json, 视频生成/文生视频/MinimaxH3- 完美优化版_2092903917620387842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_447
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/REMIX V3 图生视频-批量_2035929397282217985.json、视频生成/图生视频/REMIX V2 在线批量-图生视频_2004740865878884354.json、视频生成/图生视频/图生视频_1999866584787189761.json、视频生成/图生视频/图生视频修改_2009703059848433666.json、视频生成/图生视频/🕵🏻极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2034912808818712577.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3参考图生视频_2094795058393468929.json、视频生成/图生视频/MiniMaxH3参考图生视频_2097348758643240962.json、视频生成/图生视频/MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2088895118051991553.json、视频生成/图生视频/Minimax_H3-Easy_15秒多图叙事慢剧_2116713458950561793.json、视频生成/图生视频/稳定性优化MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2093293369748451329.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `GetNode`
-- `ImpactInt`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 7 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `Mute / Bypass Repeater (rgthree)`
-- `PainterI2V`
-- `PathchSageAttentionKJ`
-- `RIFE VFI`
-- `SetNode`
-- `UNETLoader`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyLoader`
+- `MiniMaxH3EasyOutput`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `VAEDecode`
-- `VAELoader`
+- `VAEDecodeAudio`
 - `VHS_VideoCombine`
-- `WanMoeKSampler`
-- `easy getNode`
-- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `Fast Bypasser (rgthree)` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `easy showAnything` —— 3/5 个有
-- `wanBlockSwap` —— 3/5 个有
-- `RHBatchImages:` —— 2/5 个有
-- `RHExtractImage` —— 2/5 个有
-- `RHUploadZip` —— 2/5 个有
-- `easy forLoopEnd` —— 2/5 个有
-- `easy forLoopStart` —— 2/5 个有
-- `easy ifElse` —— 2/5 个有
-- `easy imageCount` —— 2/5 个有
-- `easy isNone` —— 2/5 个有
-- `llama_cpp_instruct_adv` —— 2/5 个有
-- `llama_cpp_model_loader` —— 2/5 个有
-- `llama_cpp_parameters` —— 2/5 个有
-- `DapaoSmartMemoryOptimizerNode` —— 1/5 个有
-- `Fast Muter (rgthree)` —— 1/5 个有
-- `LayerUtility: PurgeVRAM` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `RH_LLMAPI_NODE` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
+- `LoadVideo` —— 5/7 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/7 个有
+- `LoadAudio` —— 3/7 个有
+- `CR Text` —— 2/7 个有
+- `ModelAttentionBackend` —— 2/7 个有
+- `PrimitiveInt` —— 2/7 个有
+- `RTXVideoSuperResolution` —— 2/7 个有
+- `SetNode` —— 2/7 个有
+- `TextInput_` —— 2/7 个有
+- `BiRefNetRMBG` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 1/7 个有
+- `Text` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 5 | 100% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 5 | 100% |
-| 采样算法 | 1 | 1 - 1 | 5 | 100% |
-| 调度器 | 1 | 1 - 1 | 5 | 100% |
-| 重绘幅度 | euler_ancestral | - | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -87,8 +62,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，5 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler_ancestral，5 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

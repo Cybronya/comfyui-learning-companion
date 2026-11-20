@@ -1,71 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_938
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.564
-common_nodes: [Anything Everywhere, Anything Everywhere3, CLIPLoader, CLIPTextEncode, Fast Groups Bypasser (rgthree), FramePackFindNearestBucket, GetNode, ImageResize+, Int, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, SeedVR2, SetNode, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanImageToVideo, WanVideoNAG, easy seed]
+frequency: 3
+level: moderate
+coverage: 0.921667
+common_nodes: [ApplyFaceProcessor, FaceProcessorLoader, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2生日会氛围_1956043576671174657.json, 视频生成/图生视频/光效传送_1957310369100394498.json]
+members: [视频生成/文生视频/Stand-In-面部参考-视频换脸-角色一致性-文生视频_1956922387473076226.json, 视频生成/文生视频/Stand-In视频一致性(文生视频)_1957002960897236994.json, 视频生成/文生视频/wan2.1-自定义人脸-文生视频_1956683255350005762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_938
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.2生日会氛围_1956043576671174657.json、视频生成/图生视频/光效传送_1957310369100394498.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Stand-In-面部参考-视频换脸-角色一致性-文生视频_1956922387473076226.json、视频生成/文生视频/Stand-In视频一致性(文生视频)_1957002960897236994.json、视频生成/文生视频/wan2.1-自定义人脸-文生视频_1956683255350005762.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere`
-- `Anything Everywhere3`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `Fast Groups Bypasser (rgthree)`
-- `FramePackFindNearestBucket`
-- `GetNode`
-- `ImageResize+`
-- `Int`
-- `KSamplerAdvanced`
-- `LayerUtility: PurgeVRAM`
+全部 3 个 workflow 都包含：
+- `ApplyFaceProcessor`
+- `FaceProcessorLoader`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
-- `SeedVR2`
-- `SetNode`
-- `UnetLoaderGGUF`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanVideoNAG`
-- `easy seed`
+- `WanVideoAddStandInLatent`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `StringReplace` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `Int` —— 2/3 个有
+- `CR Text Replace` —— 1/3 个有
+- `RH_Prompter` —— 1/3 个有
+- `RIFE VFI` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `TextBox` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 20 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | uni_pc | - | 2 | 100% |
-| 重绘幅度 | beta | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -73,10 +63,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 uni_pc，2 个样本，一致性 100%
-- 重绘幅度 最常用 beta，2 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

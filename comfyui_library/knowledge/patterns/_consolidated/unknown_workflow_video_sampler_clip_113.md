@@ -3,55 +3,68 @@ name: unknown_workflow_video_sampler_clip_113
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.910333
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.761333
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, ImageConcatMulti, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1万相1080P60帧图生视频KJ版（提示词优化+高清放大+插帧）_1900072045734932482.json, 视频生成/图生视频/万相SkyreelsV2图生视频突破5秒时长_1914997055247347713.json, 视频生成/图生视频/直播子弹时间特效_1927650029039960065.json, 视频生成/图生视频/直播定制赛亚人特效视频_1926260024211894274.json, 视频生成/图生视频/直播戏服变身_1926859927644704769.json, 视频生成/图生视频/（真人_动漫）图生视频（加速稳定版）_1949494090500579330.json]
+members: [视频生成/图生视频/Fun-V1.1-InP首尾帧(Wan2.1)_1905144833516965890.json, 视频生成/图生视频/WAN2.1 首尾帧 生成视频_1919985178293239809.json, 视频生成/图生视频/Wan2.1-KJ首尾帧图生视频_1911321308582608897.json, 视频生成/图生视频/Wan2.1官方首尾帧FLF2V14b_1918282117372121090.json, 视频生成/图生视频/wan2.1_FLF2V(首尾帧图片转视频）_1914979935533105154.json, 视频生成/图生视频/wan2.1图生视频480KJ稳定版_1912043048983851010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_113
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/wan2.1万相1080P60帧图生视频KJ版（提示词优化+高清放大+插帧）_1900072045734932482.json、视频生成/图生视频/万相SkyreelsV2图生视频突破5秒时长_1914997055247347713.json、视频生成/图生视频/直播子弹时间特效_1927650029039960065.json、视频生成/图生视频/直播定制赛亚人特效视频_1926260024211894274.json、视频生成/图生视频/直播戏服变身_1926859927644704769.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Fun-V1.1-InP首尾帧(Wan2.1)_1905144833516965890.json、视频生成/图生视频/WAN2.1 首尾帧 生成视频_1919985178293239809.json、视频生成/图生视频/Wan2.1-KJ首尾帧图生视频_1911321308582608897.json、视频生成/图生视频/Wan2.1官方首尾帧FLF2V14b_1918282117372121090.json、视频生成/图生视频/wan2.1_FLF2V(首尾帧图片转视频）_1914979935533105154.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
 - `LoadImage`
 - `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoTeaCache` —— 5/6 个有
-- `ImageResizeKJ` —— 4/6 个有
-- `JjkText` —— 4/6 个有
+- `GetNode` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `ImageResize+` —— 4/6 个有
 - `WanVideoExperimentalArgs` —— 4/6 个有
-- `WanVideoLoraSelect` —— 4/6 个有
-- `Int` —— 3/6 个有
-- `WanVideoSLG` —— 3/6 个有
-- `CR Upscale Image` —— 2/6 个有
-- `ImageSizeAndBatchSize` —— 1/6 个有
-- `MathExpression|pysssss` —— 1/6 个有
-- `RHHiddenNodes` —— 1/6 个有
-- `RIFE VFI` —— 1/6 个有
-- `WanVideoMagCache` —— 1/6 个有
-- `easy showAnything` —— 1/6 个有
+- `ImageResizeKJ` —— 3/6 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/6 个有
+- `GIMMVFI_interpolate` —— 2/6 个有
+- `LayerUtility: PurgeVRAM` —— 2/6 个有
+- `WanVideoTorchCompileSettings` —— 2/6 个有
+- `WanVideoVRAMManagement` —— 2/6 个有
+- `CLIPLoader` —— 1/6 个有
+- `CLIPTextEncode` —— 1/6 个有
+- `CLIPVisionLoader` —— 1/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `Get resolution [Crystools]` —— 1/6 个有
+- `ImageUpscaleWithModel` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
+- `UpscaleModelLoader` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
+- `WanVideoTextEmbedBridge` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 

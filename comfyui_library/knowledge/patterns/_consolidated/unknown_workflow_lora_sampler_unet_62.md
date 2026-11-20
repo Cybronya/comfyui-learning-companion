@@ -1,87 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_unet_62
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: strong
-coverage: 0.908667
-common_nodes: [CFGNorm, CLIPLoader, CR Text, JDCN_StringToList, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ProcessString, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8448
+common_nodes: [ConditioningZeroOut, DiptychCreate, DualCLIPLoader, FluxGuidance, ICEFConditioning, ImageCrop, InContextEditInstruction, KSamplerAdvanced, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [图片生成/反推提示词/32nineimage_2049742594141327361.json, 图片生成/图生图/12分镜 自动分镜_2082124227095912450.json, 图片生成/图生图/3月固定人物IP多场景生成（IP打造）人物一致性多图编辑_2036989882937122818.json, 图片生成/图生图/ComfyUI图生图神级工作流｜人脸不变，一键自动换衣+换背景_2041457441367400450.json, 图片生成/图生图/FireRed-Image-Edit 1.1 上传人物图片一键套图_2033189810042576897.json, 图片生成/图生图/FireRed-Image-Edit 1.1-单图一键生成专业影视分镜与关键帧全流程提示词_2104790428624183297.json, 图片生成/图生图/FireRed-Image-Edit 小红书 一键套图 九宫格_2036051449859280898.json, 图片生成/图生图/FireRed-Image-Edit 小红书一键套图 模特套图_2037760135145201666.json, 图片生成/图生图/FireRed-Image-Edit 小红书专用  小红书大模型 一键套图 网红感_2038118562136596482.json]
+members: [图片生成/图生图/IC+Edit全能图片G4o创成式填充服务端_1921536493649608705.json, 图片生成/图生图/IC-EDIT官方工作流优化版  提示词修改图片_1924492642829463553.json, 图片生成/图生图/ICEdit 工作流_1921046053074698242.json, 图片生成/图生图/ICEdit-MoE 最新图像编辑处理，低显存运行_1923196553685889025.json, 图片生成/图生图/ICEdit官方稳定版（一致性超强，成功率超高）_1920531109803655169.json, 图片生成/图生图/ICEdit官方稳定版（一致性超强，成功率超高）_1920674826652942338.json, 平台全量/ComfyUI In-Context Edit_1921752752244867074.json, 平台全量/ICEdit-MoE图像编辑_1918326947334520834.json, 平台全量/ICEdit图像编辑工作流_1921021423777677313.json, 平台全量/一句话编辑图片 免费全能图片G4o icedit_1923312039849021442.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_62
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/32nineimage_2049742594141327361.json、图片生成/图生图/12分镜 自动分镜_2082124227095912450.json、图片生成/图生图/3月固定人物IP多场景生成（IP打造）人物一致性多图编辑_2036989882937122818.json、图片生成/图生图/ComfyUI图生图神级工作流｜人脸不变，一键自动换衣+换背景_2041457441367400450.json、图片生成/图生图/FireRed-Image-Edit 1.1 上传人物图片一键套图_2033189810042576897.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/IC+Edit全能图片G4o创成式填充服务端_1921536493649608705.json、图片生成/图生图/IC-EDIT官方工作流优化版  提示词修改图片_1924492642829463553.json、图片生成/图生图/ICEdit 工作流_1921046053074698242.json、图片生成/图生图/ICEdit-MoE 最新图像编辑处理，低显存运行_1923196553685889025.json、图片生成/图生图/ICEdit官方稳定版（一致性超强，成功率超高）_1920531109803655169.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CFGNorm`
-- `CLIPLoader`
-- `CR Text`
-- `JDCN_StringToList`
-- `KSampler`
-- `LoadImage`
+全部 10 个 workflow 都包含：
+- `ConditioningZeroOut`
+- `DiptychCreate`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `ICEFConditioning`
+- `ImageCrop`
+- `InContextEditInstruction`
+- `KSamplerAdvanced`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `ProcessString`
+- `PreviewImage`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Replace` —— 8/9 个有
-- `ShowText|pysssss` —— 8/9 个有
-- `llama_cpp_instruct_adv` —— 8/9 个有
-- `llama_cpp_model_loader` —— 8/9 个有
-- `llama_cpp_parameters` —— 8/9 个有
-- `EmptySD3LatentImage` —— 7/9 个有
-- `GetImageSize` —— 7/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
-- `PreviewImage` —— 6/9 个有
-- `MemoryCleaner` —— 2/9 个有
-- `RH_LLMAPI_NODE` —— 2/9 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/9 个有
-- `BatchImagesNode` —— 1/9 个有
-- `CustomAddLabel` —— 1/9 个有
-- `CustomCombo` —— 1/9 个有
-- `Int2String` —— 1/9 个有
-- `PrimitiveInt` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
-- `ResolutionSelector` —— 1/9 个有
-- `Text Find and Replace` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `ImageUpscaleWithModel` —— 8/10 个有
+- `MaskPreview` —— 8/10 个有
+- `UpscaleModelLoader` —— 8/10 个有
+- `RH_Translator` —— 5/10 个有
+- `Image Comparer (rgthree)` —— 3/10 个有
+- `Anything Everywhere` —— 1/10 个有
+- `DeepTranslatorTextNode` —— 1/10 个有
+- `ImageScaleBy` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `Note _O` —— 1/10 个有
+- `Seed Everywhere` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
+- `VHS_DuplicateLatents` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 8 | 9 | 87% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
-| 采样算法 | er_sde | - | 9 | 78% |
-| 调度器 | FlowMatchEulerDiscreteScheduler | - | 9 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 采样步数 | randomize | - | 10 | 90% |
+| Prompt 约束强度(CFG) | 28 | 28 - 28 | 10 | 100% |
+| 采样算法 | 1 | 1 - 1 | 10 | 100% |
+| 调度器 | euler | - | 10 | 100% |
+| 重绘幅度 | simple | - | 10 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 8，9 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，9 个样本，一致性 78%
-- 调度器 最常用 FlowMatchEulerDiscreteScheduler，9 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 randomize，10 个样本，一致性 90%
+- Prompt 约束强度(CFG) 中位数 28，观测区间 28 - 28，10 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，10 个样本，一致性 100%
+- 重绘幅度 最常用 simple，10 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 28，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

@@ -1,92 +1,78 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_15
 type: Unknown Workflow
-frequency: 6
+frequency: 10
 level: strong
-coverage: 0.861167
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, Image Comparer (rgthree), InpaintCrop, InpaintModelConditioning, InpaintStitch, KSampler, LayerMask: MaskStroke, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy imageInsetCrop]
+coverage: 0.8828
+common_nodes: [CLIPLoader, FluxKontextImageScale, GrowMaskWithBlur, Image Comparer (rgthree), InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/ACE万物迁移_1988895003441238017.json, 图片生成/图生图/FLUX 万物迁移工作流_2091471917231460354.json, 图片生成/图生图/FLUX、ACE++产品迁移、万物迁移_1937927899880013825.json, 图片生成/图生图/Flux_产品迁移_sdz_1935332432474198018.json, 图片生成/图生图/石头_1955118653920481281.json, 图片生成/图生图/细小产品迁移工作流_2036107912103333890.json]
+members: [图片生成/图生图/FireRed-Image-edit1.1无痕扩图_1987748417499803649.json, 图片生成/图生图/Flux2_Klein-PS扩图_无需参数_2093889851933421569.json, 图片生成/图生图/Flux2_Klein-PS扩图_无需参数_2093908406183747586.json, 图片生成/图生图/小红书扩图工作流_2036288458133610498.json, 图片生成/图生图/无痕真实扩图  FireRed-Image-Edit 极限扩图 图像边界外扩v1.3_2032054868092919810.json, 图片生成/图生图/极限扩图 _ 图像边界外扩_2081607122642628609.json, 图片生成/图生图/极限扩图_图像边界外扩_2084970530326798338.json, 图片生成/图生图/极限扩图_图像边界外扩_2085175397221748737.json, 平台全量/FireRedEdit1.1小红书扩图_2039276282973786114.json, 平台全量/SUNE-智能扩图-FireRed-Image-Edit_2066351360525819905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_15
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/ACE万物迁移_1988895003441238017.json、图片生成/图生图/FLUX 万物迁移工作流_2091471917231460354.json、图片生成/图生图/FLUX、ACE++产品迁移、万物迁移_1937927899880013825.json、图片生成/图生图/Flux_产品迁移_sdz_1935332432474198018.json、图片生成/图生图/石头_1955118653920481281.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FireRed-Image-edit1.1无痕扩图_1987748417499803649.json、图片生成/图生图/Flux2_Klein-PS扩图_无需参数_2093889851933421569.json、图片生成/图生图/Flux2_Klein-PS扩图_无需参数_2093908406183747586.json、图片生成/图生图/小红书扩图工作流_2036288458133610498.json、图片生成/图生图/无痕真实扩图  FireRed-Image-Edit 极限扩图 图像边界外扩v1.3_2032054868092919810.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
+全部 10 个 workflow 都包含：
+- `CLIPLoader`
+- `FluxKontextImageScale`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
-- `InpaintCrop`
 - `InpaintModelConditioning`
-- `InpaintStitch`
 - `KSampler`
-- `LayerMask: MaskStroke`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `PreviewImage`
-- `SaveImage`
-- `StyleModelApply`
-- `StyleModelLoader`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageInsetCrop`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 5/6 个有
-- `GrowMaskWithBlur` —— 5/6 个有
-- `ImageCompositeMasked` —— 5/6 个有
-- `ImageScale` —— 5/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
-- `Mask Fill Holes` —— 5/6 个有
-- `easy makeImageForICLora` —— 5/6 个有
-- `ImageAndMaskPreview` —— 4/6 个有
-- `LayerMask: LoadFlorence2Model` —— 3/6 个有
-- `LayerUtility: Florence2Image2Prompt` —— 3/6 个有
-- `InpaintResize` —— 2/6 个有
-- `GetImageSize` —— 1/6 个有
-- `ImageResize+` —— 1/6 个有
-- `ImageToMask` —— 1/6 个有
-- `LayerMask: MaskPreview` —— 1/6 个有
-- `LayerUtility: ColorImage` —— 1/6 个有
-- `MaskToImage` —— 1/6 个有
-- `easy imageConcat` —— 1/6 个有
+- `SaveImage` —— 8/10 个有
+- `LayerUtility: ExtendCanvas` —— 5/10 个有
+- `LayerUtility: ExtendCanvasV2` —— 5/10 个有
+- `easy int` —— 5/10 个有
+- `Int` —— 4/10 个有
+- `Any Switch (rgthree)` —— 2/10 个有
+- `GetImageSize` —— 2/10 个有
+- `LayerMask: MaskInvert` —— 2/10 个有
+- `LayerUtility: SaveImagePlusV2` —— 2/10 个有
+- `SolidMask` —— 2/10 个有
+- `ImageComposite+` —— 1/10 个有
+- `MaskPreview` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 6 | 59% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | beta | - | 6 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 8 | 8 - 8 | 10 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，6 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 beta，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（8/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，10 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

@@ -1,82 +1,72 @@
 ---
 name: unknown_workflow_lora_sampler_unet_53
 type: Unknown Workflow
-frequency: 10
-level: moderate
-coverage: 0.5009
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, PrimitiveFloat, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 11
+level: strong
+coverage: 0.846
+common_nodes: [CLIPLoader, CR Text, GetImageSize+, KSampler, LoadImage, LoraLoaderModelOnly, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/128.用Minimax H3+360度环绕lora+Skill做动态故事板，动态漫画，高级分镜视频_2109941253944201218.json, 图片生成/图生图/H3_终极篇-文武双全短剧-广告通用_2114203657913856001.json, 图片生成/图生图/MiniMax_H3_终极视频生成_多模态+提示词加强_高清加速工作流_2114254930012889090.json, 图片生成/图生图/YZ金鱼-MiniMax H3 终极篇-文武双全_2113256076882825218.json, 视频生成/图生视频/MiniMax H3 终极视频生成 （多模态+提示词加强 高清加速工作流）_2111249057271336962.json, 视频生成/图生视频/YZ金鱼-MiniMax H3 终极篇-文武双全_2113823810985226242.json, 视频生成/图生视频/YZ金鱼-MiniMax H3 终极篇-文武双全_2113860678867046402.json, 视频生成/图生视频/文武双全首尾帧_2112932870200320002.json, 视频生成/图生视频/自己用的_2110993734681841665.json, 视频生成/图生视频/自用YZ金鱼-MiniMax H3 终极篇-文武双全_2110932091864174593.json]
+members: [图片生成/图生图/003.FLUX.2智能综合015.去AI增加真实感_2035272359480922113.json, 图片生成/图生图/003.FLUX.2智能综合016.动漫转真人_2035273526944473089.json, 图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-011.FLUX.2-Klein 动漫转真人_2027047523076018178.json, 图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-012.FLUX.2-Klein去AI增加真实感_2027047541266714626.json, 图片生成/图生图/F2K万物迁移全能版｜产品｜颜色｜服装｜饰品｜光影迁移_2088535780623994881.json, 图片生成/图生图/Klein细节增强【脱离AI味 增加真实感】_2026580381029376001.json, 图片生成/图生图/图片细节恢复及放大 02_2033577021472776194.json, 图片生成/图生图/图片超强去AI味【Klein细节增强+增加真实感】_2039591122405691394.json, 图片生成/图生图/🐅Klein 动漫转真人🐅_2022832031020879874.json, 平台全量/Klein细节增强【脱离AI味 增加真实感】_2027307337135955969.json, 平台全量/Klein细节增强【脱离AI味+增加真实感】_2026665628941164545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_53
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/128.用Minimax H3+360度环绕lora+Skill做动态故事板，动态漫画，高级分镜视频_2109941253944201218.json、图片生成/图生图/H3_终极篇-文武双全短剧-广告通用_2114203657913856001.json、图片生成/图生图/MiniMax_H3_终极视频生成_多模态+提示词加强_高清加速工作流_2114254930012889090.json、图片生成/图生图/YZ金鱼-MiniMax H3 终极篇-文武双全_2113256076882825218.json、视频生成/图生视频/MiniMax H3 终极视频生成 （多模态+提示词加强 高清加速工作流）_2111249057271336962.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合015.去AI增加真实感_2035272359480922113.json、图片生成/图生图/003.FLUX.2智能综合016.动漫转真人_2035273526944473089.json、图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-011.FLUX.2-Klein 动漫转真人_2027047523076018178.json、图片生成/图生图/5.其他类型-06.NSF+-06.FLUX.2-012.FLUX.2-Klein去AI增加真实感_2027047541266714626.json、图片生成/图生图/F2K万物迁移全能版｜产品｜颜色｜服装｜饰品｜光影迁移_2088535780623994881.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicScheduler`
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `KSamplerSelect`
+- `CR Text`
+- `GetImageSize+`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
+- `PainterFluxImageEdit`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockSparseAttention` —— 9/10 个有
-- `GetNode` —— 9/10 个有
-- `GoohaiUniversalSlider` —— 9/10 个有
-- `LoadAudio` —— 9/10 个有
-- `ModelPreviewOverrideKJ` —— 9/10 个有
-- `SetNode` —— 9/10 个有
-- `Text` —— 9/10 个有
-- `忽略多组孤海` —— 9/10 个有
-- `VHS_VideoCombine` —— 8/10 个有
-- `VHS_LoadVideo` —— 7/10 个有
-- `MiniMaxChunkFeedForward` —— 5/10 个有
-- `CM_FloatToInt` —— 2/10 个有
-- `CreateVideo` —— 2/10 个有
-- `GetVideoComponents` —— 2/10 个有
-- `LoadVideo` —— 2/10 个有
-- `MiniMaxH3PromptEnhancerT8` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `SaveVideo` —— 2/10 个有
-- `ShowAnything|Mie` —— 2/10 个有
-- `T8SpeechReference` —— 2/10 个有
-- `ZNGB_AudioConcatMulti` —— 2/10 个有
-- `ExtendIntermediateSigmas` —— 1/10 个有
-- `MiniMaxH3AddGuide` —— 1/10 个有
-- `SaveImage` —— 1/10 个有
-- `Seed (rgthree)` —— 1/10 个有
-- `Vignette` —— 1/10 个有
+- `ImageScaleToTotalPixels` —— 10/11 个有
+- `ImageStitch` —— 10/11 个有
+- `Image Comparer (rgthree)` —— 8/11 个有
+- `easy int` —— 8/11 个有
+- `CR Text Concatenate` —— 7/11 个有
+- `ImpactFloat` —— 7/11 个有
+- `Note Plus (mtb)` —— 2/11 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/11 个有
+- `PreviewImage` —— 1/11 个有
+- `孤海注释` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 12 | 4 - 12 | 11 | 59% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 12，观测区间 4 - 12，11 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）

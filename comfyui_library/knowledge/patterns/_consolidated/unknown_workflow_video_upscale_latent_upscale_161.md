@@ -3,60 +3,85 @@ name: unknown_workflow_video_upscale_latent_upscale_161
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.95
-common_nodes: [BasicGuider, CLIPLoader, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3LatentUpscaleBy32T8, PathchSageAttentionKJ, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine]
+coverage: 0.519
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, EmptyLTXVLatentVideo, Float, GetNode, ImageResizeKJv2, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, SetNode, Text, VAEDecodeTiled, VHS_VideoCombine, math_calculate]
 problems: []
 missing: []
-members: [视频生成/文生视频/长视频_2096817182402502658.json, 视频生成/文生视频/（9.8）MiniMax H3 导演台全能工作流_2096955930675073026.json]
+members: [视频生成/图生视频/LTX2.3_图生视频_多帧_2045362870476607490.json, 视频生成/文生视频/LTX2.3文生视频+图生视频_2034150036669472770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_161
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/长视频_2096817182402502658.json、视频生成/文生视频/（9.8）MiniMax H3 导演台全能工作流_2096955930675073026.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3_图生视频_多帧_2045362870476607490.json、视频生成/文生视频/LTX2.3文生视频+图生视频_2034150036669472770.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CreateVideo`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
+- `EmptyLTXVLatentVideo`
+- `Float`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MiniMaxH3LatentUpscaleBy32T8`
+- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
+- `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `SetNode`
+- `Text`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
+- `math_calculate`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `JZL_MiniMaxAssetManager` —— 1/2 个有
-- `MiniMaxH3Director` —— 1/2 个有
-- `MiniMaxH3DirectorRefine` —— 1/2 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
-- `MiniMaxH3SigmaShift` —— 1/2 个有
-- `ModelAttentionBackend` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `XB_ReferenceAny` —— 1/2 个有
-- `XB_Sage_BlockSwap` —— 1/2 个有
+- `BOOLConstant` —— 1/2 个有
+- `Bool` —— 1/2 个有
+- `CheckpointLoaderSimple` —— 1/2 个有
+- `LTX2SamplingPreviewOverride` —— 1/2 个有
+- `LTX2_NAG` —— 1/2 个有
+- `LTXVAudioVAELoader` —— 1/2 个有
+- `LTXVCropGuides` —— 1/2 个有
+- `LTXVImgToVideoInplaceKJ` —— 1/2 个有
+- `LoraLoader` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `ResizeImagesByLongerEdge` —— 1/2 个有
+- `TTResolutionSelector` —— 1/2 个有
+- `UNETLoader` —— 1/2 个有
+- `VAELoader` —— 1/2 个有
+- `VAELoaderKJ` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | - | 2 | 100% |
+| 高度 | 25 | - | 2 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -64,4 +89,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 97，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

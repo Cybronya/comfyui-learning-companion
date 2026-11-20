@@ -1,62 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_277
 type: Unknown Workflow
-frequency: 8
+frequency: 10
 level: moderate
-coverage: 0.983625
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.504
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, GetNode, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
 problems: []
 missing: []
-members: [图片生成/图生图/【kj版+VBVR】Wan2_2首尾帧生视频_2038129032830652418.json, 图片生成/图生图/极简——Wan2.2 KJ 图生视频_1951508080301387777.json, 图片生成/图生图/🐳SVI2.0PRO长视频生成 图生视频 简易版🦋_2005507420082368514.json, 视频生成/图生视频/Wan2.2 Kj-图生视频工作流_1956914143121039362.json, 视频生成/图生视频/Wan2.2 图生视频一键工作流_2032825101573431298.json, 视频生成/图生视频/【VBVR+KJ】最强参考Wan2.2图生视频_分块处理低显存版_2038129014153420801.json, 视频生成/图生视频/安-Wan2.2 首尾帧频工作流_1965415363951382530.json, 视频生成/文生视频/🐳wan2.2 文生视频 超清臻享版🦋【KJ模型】_1950063356758638593.json]
+members: [视频生成/图生视频/20秒长视频生成，一张图，5段辞令控制动作，稳定版_2030666773145587713.json, 视频生成/图生视频/SVI 2.0超强长视频生成-10秒版_2006030934327431170.json, 视频生成/图生视频/SVI 2.0超强长视频生成-10秒版_2008158274641731586.json, 视频生成/图生视频/SVI 2.0超强长视频生成（完美一致性）-10秒版_2005641613118504962.json, 视频生成/图生视频/SVI 2.0超强长视频生成（完美一致性）-20秒版_2005640178825920513.json, 视频生成/图生视频/SVI 2.0超强长视频生成（完美一致性）-20秒版_2006214807296413698.json, 视频生成/图生视频/SVI 2.0超强长视频生成（完美一致性）-20秒版_2017042085358080002.json, 视频生成/图生视频/SVI超强一致性图生视频_2042238422814822401.json, 视频生成/图生视频/wan2.2+SVI-PRO2.0循环长视频生成_2006663467071180801.json, 视频生成/图生视频/【Supermate】优化WAN2.2-SVI 2.0-全自动-单图文字5段采样长视频_2006611754909962242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_277
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【kj版+VBVR】Wan2_2首尾帧生视频_2038129032830652418.json、图片生成/图生图/极简——Wan2.2 KJ 图生视频_1951508080301387777.json、图片生成/图生图/🐳SVI2.0PRO长视频生成 图生视频 简易版🦋_2005507420082368514.json、视频生成/图生视频/Wan2.2 Kj-图生视频工作流_1956914143121039362.json、视频生成/图生视频/Wan2.2 图生视频一键工作流_2032825101573431298.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/20秒长视频生成，一张图，5段辞令控制动作，稳定版_2030666773145587713.json、视频生成/图生视频/SVI 2.0超强长视频生成-10秒版_2006030934327431170.json、视频生成/图生视频/SVI 2.0超强长视频生成-10秒版_2008158274641731586.json、视频生成/图生视频/SVI 2.0超强长视频生成（完美一致性）-10秒版_2005641613118504962.json、视频生成/图生视频/SVI 2.0超强长视频生成（完美一致性）-20秒版_2005640178825920513.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：50%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
+全部 10 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `GetNode`
 - `INTConstant`
-- `LoadWanVideoT5TextEncoder`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanImageToVideoSVIPro`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 7/8 个有
-- `WanVideoImageToVideoEncode` —— 7/8 个有
-- `WanVideoLoraSelect` —— 7/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
-- `SimpleMath+` —— 5/8 个有
-- `ImpactInt` —— 4/8 个有
-- `CR Text` —— 2/8 个有
-- `Note Plus (mtb)` —— 2/8 个有
-- `WanVideoContextOptions` —— 2/8 个有
-- `WanVideoLoraSelectMulti` —— 2/8 个有
-- `easy convertAnything` —— 2/8 个有
-- `ImageResize+` —— 1/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `WanVideoEmptyEmbeds` —— 1/8 个有
-- `WanVideoTorchCompileSettings` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/10 个有
+- `ImageBatchExtendWithOverlap` —— 9/10 个有
+- `PlaySound|pysssss` —— 7/10 个有
+- `LoadAudio` —— 2/10 个有
+- `PreviewAny` —— 2/10 个有
+- `CR Text Concatenate` —— 1/10 个有
+- `MemoryCleaner` —— 1/10 个有
+- `ModelSamplingSD3` —— 1/10 个有
+- `Qwen3_VQA` —— 1/10 个有
+- `ShowText|pysssss` —— 1/10 个有
+- `SomethingToString` —— 1/10 个有
+- `Split String` —— 1/10 个有
+- `WanVideoNAG` —— 1/10 个有
+- `easy forLoopEnd` —— 1/10 个有
+- `easy forLoopStart` —— 1/10 个有
+- `easy promptLine` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 10 | 100% |
+| Prompt 约束强度(CFG) | 8 | 6 - 8 | 10 | 92% |
+| 采样算法 | 1.75 | 1 - 2.5 | 10 | 57% |
+| 调度器 | euler | - | 10 | 90% |
+| 重绘幅度 | simple | - | 10 | 100% |
 
 ## 常见问题
 
@@ -64,4 +76,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，10 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 6 - 8，10 个样本，取值集中（一致性 92%）
+- 采样算法 中位数 1.75，观测区间 1 - 2.5，10 个样本
+- 调度器 最常用 euler，10 个样本，一致性 90%
+- 重绘幅度 最常用 simple，10 个样本，一致性 100%

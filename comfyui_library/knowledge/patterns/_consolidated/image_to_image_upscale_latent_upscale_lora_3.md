@@ -3,76 +3,62 @@ name: image_to_image_upscale_latent_upscale_lora_3
 type: Image To Image
 frequency: 2
 level: weak
-coverage: 0.9695
-common_nodes: [BooleanPrimitive, CLIPLoader, CLIPTextEncode, ComfyUI-Krea2T-Enhancer, ConditioningKrea2Rebalance, ConditioningZeroOut, DA3Inference, DA3Render, GetImageSizeAndCount, INTConstant, ImageScale, ImageUpscaleWithModel, KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, LatentUpscale, LazySwitchKJ, LoadDA3Model, LoadImage, MathExpression|pysssss, PrimitiveStringMultiline, Qwen3VLProcessor, RH_LLMAPI_Pro_Node, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8755
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Image Comparer (rgthree), KSampler, LatentUpscaleBy, LayerColor: ColorAdapter, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, PreviewImage, RMBG, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy positive]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea 2 单图洗图_2080681456040501249.json, 图片生成/文生图/Krea 2单图洗图_2078868402176872450.json]
+members: [图片生成/图生图/人物三视图生成_2045708482996867074.json, 平台全量/Flux.2 Klein： 人物三视图 + 高清放大_2033885998240768002.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_latent_upscale_lora_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Krea 2 单图洗图_2080681456040501249.json、图片生成/文生图/Krea 2单图洗图_2078868402176872450.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/人物三视图生成_2045708482996867074.json、平台全量/Flux.2 Klein： 人物三视图 + 高清放大_2033885998240768002.json）
 
 - **类型**：Image To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BooleanPrimitive`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyUI-Krea2T-Enhancer`
-- `ConditioningKrea2Rebalance`
-- `ConditioningZeroOut`
-- `DA3Inference`
-- `DA3Render`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageScale`
-- `ImageUpscaleWithModel`
+- `EmptyFlux2LatentImage`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `Krea2ControlApply`
-- `Krea2ControlImageEncode`
-- `Krea2ControlLoRALoader`
-- `LatentUpscale`
-- `LazySwitchKJ`
-- `LoadDA3Model`
+- `LatentUpscaleBy`
+- `LayerColor: ColorAdapter`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `PrimitiveStringMultiline`
-- `Qwen3VLProcessor`
-- `RH_LLMAPI_Pro_Node`
+- `PreviewImage`
+- `RMBG`
+- `ReferenceLatent`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 1/2 个有
-- `CFGGuider` —— 1/2 个有
-- `JsonExtractString` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
-- `SamplerEulerAncestral` —— 1/2 个有
-- `SplitSigmas` —— 1/2 个有
+- `ImageScaleBy` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | - | 2 | 89% |
+| 采样步数 | 6 | - | 2 | 67% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler_ancestral | - | 2 | 50% |
+| 采样算法 | euler | - | 2 | 100% |
 | 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.275 | - | 2 | 91% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -82,10 +68,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 9，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 6，样本不足，未给区间，2 个样本
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，2 个样本，一致性 50%
+- 采样算法 最常用 euler，2 个样本，一致性 100%
 - 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.275，样本不足，未给区间，2 个样本，取值集中（一致性 91%）
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

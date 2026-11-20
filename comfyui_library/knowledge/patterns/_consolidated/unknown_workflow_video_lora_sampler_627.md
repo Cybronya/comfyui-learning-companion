@@ -1,64 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_627
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.930667
-common_nodes: [GetImageSize, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.7224
+common_nodes: [GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2-14B 图生视频 6s 短边720自适应_1956713305550065665.json, 视频生成/图生视频/wan 2.2 图生视频  kj 加速_1950010533321859074.json, 视频生成/图生视频/wan2.2图生视频api_1950068029456564225.json]
+members: [视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967373379772801025.json, 视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967775311335161858.json, 视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ_1967233972919001089.json, 视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ版【自动提示词】_1968394134803361794.json, 视频生成/图生视频/图生视频---wan2.2-Fun-VACE图生视频-_2043853929309540354.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_627
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Wan2.2-14B 图生视频 6s 短边720自适应_1956713305550065665.json、视频生成/图生视频/wan 2.2 图生视频  kj 加速_1950010533321859074.json、视频生成/图生视频/wan2.2图生视频api_1950068029456564225.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967373379772801025.json、视频生成/图生视频/wan2.2-Fun-VACE图生视频-KJ_1967775311335161858.json、视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ_1967233972919001089.json、视频生成/图生视频/wan2.2-Fun-VACE首尾帧-KJ版【自动提示词】_1968394134803361794.json、视频生成/图生视频/图生视频---wan2.2-Fun-VACE图生视频-_2043853929309540354.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GetImageSize`
-- `GetImageSizeAndCount`
+全部 5 个 workflow 都包含：
+- `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 2/3 个有
-- `INTConstant` —— 2/3 个有
-- `ImageScale` —— 2/3 个有
-- `LayerUtility: BooleanOperatorV2` —— 2/3 个有
-- `LayerUtility: If ` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy imageScaleDownToSize` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/3 个有
-- `GIMMVFI_interpolate` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `easy int` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `Text Multiline` —— 4/5 个有
+- `WanVideoScheduler` —— 4/5 个有
+- `ColorMatch` —— 2/5 个有
+- `CreateCFGScheduleFloatList` —— 2/5 个有
+- `ImageStitch` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `LayerUtility: TextJoinV2` —— 1/5 个有
+- `PrimitiveBoolean` —— 1/5 个有
+- `PrimitiveFloat` —— 1/5 个有
+- `RH_Captioner` —— 1/5 个有
+- `RH_Translator` —— 1/5 个有
+- `Textbox` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy ifElse` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,0 +1,73 @@
+---
+key: 平台全量/Wan2.2 Animate篮球动作一比一复刻，运球突破细节稳定直出_2117488246933516289.json
+name: Wan2.2 Animate篮球动作一比一复刻，运球突破细节稳定直出_2117488246933516289
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/Wan2.2 Animate篮球动作一比一复刻，运球突破细节稳定直出_2117488246933516289.json
+hash: 38b91a459d9b9af7
+coverage: 0.756098
+learned_at: 2026-11-14 01:05:23
+nodes: [ImageFromBatch, WanVideoSampler, MemoryCleaner, WanVideoDecode, VHS_VideoCombine, GrowMask, WanVideoContextOptions, OnnxDetectionModelLoader, PoseAndFaceDetection, DrawViTPose, BlockifyMask, DrawMaskOnImage, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageMaskScaleAsV2, WanVideoModelLoader, Evaluate Integers, ClothesSegment, easy int, ImageFromBatch, SeCVideoSegmentation, SeCModelLoader, WanVideoTorchCompileSettings, WanVideoVAELoader, LoadImage, WanVideoAnimateEmbeds, VHS_LoadVideo, WanVideoTextEncodeCached, WanVideoClipVisionEncode, CLIPVisionLoader, SaveImage, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, 孤海注释, 孤海注释, ImageFromBatch]
+patterns: []
+missing: []
+---
+
+# 平台全量/Wan2.2 Animate篮球动作一比一复刻，运球突破细节稳定直出_2117488246933516289.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/Wan2.2 Animate篮球动作一比一复刻，运球突破细节稳定直出_2117488246933516289.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（41 个）：
+- `ImageFromBatch`
+- `WanVideoSampler` ★核心
+- `MemoryCleaner`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `GrowMask`
+- `WanVideoContextOptions`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `DrawViTPose`
+- `BlockifyMask`
+- `DrawMaskOnImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageMaskScaleAsV2`
+- `WanVideoModelLoader`
+- `Evaluate Integers`
+- `ClothesSegment`
+- `easy int`
+- `ImageFromBatch`
+- `SeCVideoSegmentation`
+- `SeCModelLoader`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `LoadImage`
+- `WanVideoAnimateEmbeds`
+- `VHS_LoadVideo`
+- `WanVideoTextEncodeCached`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `SaveImage`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `孤海注释`
+- `孤海注释`
+- `ImageFromBatch`
+
+## 知识
+
+覆盖率 **76%**（31/41）
+
+**有卡**：`ImageFromBatch`、`WanVideoSampler`、`MemoryCleaner`、`WanVideoDecode`、`VHS_VideoCombine`、`GrowMask`、`WanVideoContextOptions`、`OnnxDetectionModelLoader`、`PoseAndFaceDetection`、`DrawViTPose`、`BlockifyMask`、`DrawMaskOnImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageMaskScaleAsV2`、`WanVideoModelLoader`、`Evaluate Integers`、`ClothesSegment`、`easy int`、`SeCVideoSegmentation`、`SeCModelLoader`、`WanVideoTorchCompileSettings`、`WanVideoVAELoader`、`LoadImage`、`WanVideoAnimateEmbeds`、`VHS_LoadVideo`、`WanVideoTextEncodeCached`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`SaveImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoClipVisionEncode、WanVideoDecode、WanVideoTextEncodeCached、WanVideoVAELoader、CLIPVisionLoader、SaveImage

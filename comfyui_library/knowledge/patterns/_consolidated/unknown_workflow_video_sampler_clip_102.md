@@ -1,92 +1,104 @@
 ---
 name: unknown_workflow_video_sampler_clip_102
 type: Unknown Workflow
-frequency: 7
-level: weak
-coverage: 0.593429
-common_nodes: [Any Switch (rgthree), Bookmark (rgthree), CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, GetNode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, PrimitiveString, PrimitiveStringMultiline, SetNode, StringConcatenate, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy int, easy seed]
-problems: []
+frequency: 6
+level: strong
+coverage: 0.62
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CM_IntToFloat, GetImageRangeFromBatch, GetNode, ImageBatchMulti, ImageResizeKJv2, Int, KSampler, LoadImage, PreviewImage, SetNode, SimpleMath+, TrimVideoLatent, VAEDecode, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimateToVideo, easy seed]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: ["视频生成/文生视频/smoothMixWan图生视频，首尾帧生视频，文生视频,效果好速度快_1985642136488091650.json", 视频生成/文生视频/smoothMixWan生视频官方版本_全功能_1980313348170539010.json, 视频生成/文生视频/wan2.2_14B_文生图生视频_lightX加速版_1950129708211027969.json, 视频生成/文生视频/wan2.2_14B_文生图生视频原版+sage加速_1950329172787904513.json, 视频生成/文生视频/wan2.2_14B_文生视频（预设四种动作）+sage加速 (1)_2051901085580840962.json, 视频生成/文生视频/wan2.2_14B_文生视频（预设四种动作）+sage加速 (1)_2051927696871051266.json, 视频生成/文生视频/wan2.2_14B官方版本_全功能_1954176509042946049.json]
+members: [图片生成/反推提示词/11characterreplacement_2048960943010353154.json, 图片生成/图生图/Wan2.2-Animate 跳舞打拳动作丝滑、不变背景 动作迁移，长视频稳定输出新标杆_1986748092575903745.json, 图片生成/图生图/Wan2.2-Animate-图生视频 官方原版更稳定 动作迁移（不变背景）+长视频 稳如老狗_1983452230231760897.json, 平台全量/wan2.2动作迁移+姿势对齐BodyRatioMapper 解决Q版人物+多人一致性问题+自动时长最高50秒_2052662659287404545.json, 平台全量/动作模仿+抠像（Animate+SAM3）支持无限时长（手指稳定、支持更高分辨率）_2034881058252005377.json, 平台全量/动作迁移 V4（人物一致性、面部表情、对口型、肢体手部优化、胸部抖动优化版）_2063143197127307265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_102
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/smoothMixWan图生视频，首尾帧生视频，文生视频,效果好速度快_1985642136488091650.json、视频生成/文生视频/smoothMixWan生视频官方版本_全功能_1980313348170539010.json、视频生成/文生视频/wan2.2_14B_文生图生视频_lightX加速版_1950129708211027969.json、视频生成/文生视频/wan2.2_14B_文生图生视频原版+sage加速_1950329172787904513.json、视频生成/文生视频/wan2.2_14B_文生视频（预设四种动作）+sage加速 (1)_2051901085580840962.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/11characterreplacement_2048960943010353154.json、图片生成/图生图/Wan2.2-Animate 跳舞打拳动作丝滑、不变背景 动作迁移，长视频稳定输出新标杆_1986748092575903745.json、图片生成/图生图/Wan2.2-Animate-图生视频 官方原版更稳定 动作迁移（不变背景）+长视频 稳如老狗_1983452230231760897.json、平台全量/wan2.2动作迁移+姿势对齐BodyRatioMapper 解决Q版人物+多人一致性问题+自动时长最高50秒_2052662659287404545.json、平台全量/动作模仿+抠像（Animate+SAM3）支持无限时长（手指稳定、支持更高分辨率）_2034881058252005377.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：59%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Bookmark (rgthree)`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CM_IntToFloat`
+- `GetImageRangeFromBatch`
 - `GetNode`
-- `KSamplerAdvanced`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
+- `Int`
+- `KSampler`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
-- `PathchSageAttentionKJ`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
+- `PreviewImage`
 - `SetNode`
-- `StringConcatenate`
-- `UNETLoader`
+- `SimpleMath+`
+- `TrimVideoLatent`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_GetImageCount`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `easy int`
+- `VHS_VideoInfoLoaded`
+- `WanAnimateToVideo`
 - `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 6/7 个有
-- `LoraLoaderModelOnly` —— 4/7 个有
-- `Fast Groups Muter (rgthree)` —— 3/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `VAEDecodeTiled` —— 3/7 个有
-- `WanFirstLastFrameToVideo` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `1hew_AnySwitchSelect` —— 2/7 个有
-- `Int` —— 2/7 个有
-- `ModelPatchTorchSettings` —— 2/7 个有
-- `PreviewAny` —— 2/7 个有
-- `RH_LLMAPI_NODE` —— 2/7 个有
-- `SaveImage` —— 2/7 个有
-- `SimpleMath+` —— 2/7 个有
-- `TT_img_enc_v2` —— 2/7 个有
-- `text_mul_Join` —— 2/7 个有
-- `wanBlockSwap` —— 2/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `TorchCompileModelWanVideoV2` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `ModelSamplingSD3` —— 5/6 个有
+- `UNETLoader` —— 5/6 个有
+- `PoseAndFaceDetection` —— 4/6 个有
+- `DWPreprocessor` —— 3/6 个有
+- `Display Int (rgthree)` —— 3/6 个有
+- `DrawViTPose` —— 3/6 个有
+- `ImageScale` —— 3/6 个有
+- `OnnxDetectionModelLoader` —— 3/6 个有
+- `RHHiddenNodes` —— 3/6 个有
+- `PathchSageAttentionKJ` —— 2/6 个有
+- `Primitive integer [Crystools]` —— 2/6 个有
+- `BBoxYOLO` —— 1/6 个有
+- `BlockifyMask` —— 1/6 个有
+- `BodyRatioMapperProportionTransfer` —— 1/6 个有
+- `BodyRatioMapperSDPoseRender` —— 1/6 个有
+- `CheckpointLoaderSimple` —— 1/6 个有
+- `DrawMaskOnImage` —— 1/6 个有
+- `LayerMask: MaskGrow` —— 1/6 个有
+- `PixelPerfectResolution` —— 1/6 个有
+- `RMBG` —— 1/6 个有
+- `RTXVideoSuperResolution` —— 1/6 个有
+- `SDPoseKeypointExtractor` —— 1/6 个有
+- `Text` —— 1/6 个有
+- `YOLOModelLoader` —— 1/6 个有
+- `easy float` —— 1/6 个有
+- `easy sam3ModelLoader` —— 1/6 个有
+- `easy sam3VideoSegmentation` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 7 | 86% |
-| Prompt 约束强度(CFG) | 10 | 6 - 20 | 7 | 52% |
-| 采样算法 | 3.5 | 1 - 3.5 | 7 | 59% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | simple | - | 7 | 71% |
+| 采样步数 | 6 | 4 - 6 | 6 | 87% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 18/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，7 个样本，一致性 86%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 6 - 20，7 个样本
-- 采样算法 中位数 3.5，观测区间 1 - 3.5，7 个样本
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 simple，7 个样本，一致性 71%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 6，观测区间 4 - 6，6 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（18/6 个样本）：Steps较低可能导致细节不足

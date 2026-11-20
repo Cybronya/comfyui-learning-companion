@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_sampler_8
 type: Unknown Workflow
-frequency: 10
+frequency: 12
 level: moderate
-coverage: 1
-common_nodes: [LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, SaveAudio]
+coverage: 0.974333
+common_nodes: [LoadImage, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/53fenlibanzou_2051271674208768002.json, 音频生成/音频生成/人声 音乐分离_2075862276602683394.json, 音频生成/音频生成/人声 音乐分离_2079783956492410881.json, 音频生成/音频生成/人声伴奏分离_2023762226083012609.json, 音频生成/音频生成/人声和伴奏分离（超高质量）_2071847085384757249.json, 音频生成/音频生成/分离人声伴奏_2032370394153361409.json, 音频生成/音频生成/无限画布-分离人声伴奏_2075086244081659906.json, 音频生成/音频生成/音乐人声和伴奏分离=B站艾橘溪_1961060172628168705.json, 音频生成/音频生成/音色转换-Seed Voice Conversion_2052999260559429633.json, 音频生成/音频生成/音频分离人声和背景_2054841869460353025.json]
+members: [图片生成/图生图/USO-图片风格参考_1962725955003367426.json, 图片生成/图生图/USO：字节开源画风参考角色一致性工作流_2046950467451756545.json, 图片生成/图生图/uso-难道全能图片V1开源了？_1962733084800073730.json, 图片生成/图生图/字节-USO FLUX-单图参考-煮个蛋_1964122121494478849.json, 图片生成/图生图/字节-USO FLUX-单图编辑-人物手办_1964124265073266690.json, 图片生成/图生图/字节USO-FLUX-三图参考_1964127783234490369.json, 图片生成/图生图/字节USO-FLUX-单图参考-女孩登雪山_1964125057951875073.json, 图片生成/图生图/字节USO-FLUX-双图参考-女孩在卧室睡觉_1963777204847087617.json, 图片生成/图生图/字节开源画风参考角色一致性工作流_2033434710512242690.json, 图片生成/图生图/字节开源画风参考角色一致性工作流_2036245665436667906.json, 图片生成/图生图/最新uso-全能图片V1开源了？_1962730818986721282.json, 平台全量/【风格迁移】极速生成真实摄影照片变动漫卡通风格_1962677683886927874.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_8
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/反推提示词/53fenlibanzou_2051271674208768002.json、音频生成/音频生成/人声 音乐分离_2075862276602683394.json、音频生成/音频生成/人声 音乐分离_2079783956492410881.json、音频生成/音频生成/人声伴奏分离_2023762226083012609.json、音频生成/音频生成/人声和伴奏分离（超高质量）_2071847085384757249.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/USO-图片风格参考_1962725955003367426.json、图片生成/图生图/USO：字节开源画风参考角色一致性工作流_2046950467451756545.json、图片生成/图生图/uso-难道全能图片V1开源了？_1962733084800073730.json、图片生成/图生图/字节-USO FLUX-单图参考-煮个蛋_1964122121494478849.json、图片生成/图生图/字节-USO FLUX-单图编辑-人物手办_1964124265073266690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `SaveAudio`
+全部 12 个 workflow 都包含：
+- `LoadImage`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_FreeVRAM` —— 2/10 个有
-- `SeedVCRun` —— 1/10 个有
+- `RH_Translator` —— 11/12 个有
+- `ImageConcanate` —— 8/12 个有
+- `ImageResizeKJv2` —— 6/12 个有
+- `FluxResolutionNode` —— 4/12 个有
+- `PreviewImage` —— 1/12 个有
 
 ## 典型参数
 

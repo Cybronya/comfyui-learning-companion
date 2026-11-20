@@ -3,31 +3,36 @@ name: unknown_workflow_generic_850
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.91675
-common_nodes: [RH_Grok_Video3, SaveVideo]
+coverage: 0.773
+common_nodes: [LoadImage, PrimitiveStringMultiline, RH_MinimaxHailuoH3ContextIrMultimodal, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/GK Video3 文生视频_2004533059217223682.json, 视频生成/文生视频/Grok Video3 文生视频_2000439584469250050.json, 视频生成/文生视频/Video 3文生视频工作流｜6秒10秒 五种画幅_2099677234368966657.json, 视频生成/文生视频/全能视频X文生视频_1998220916691755010.json]
+members: [图片生成/图生图/H3_MAX智能运镜工作流｜AI看图自动运镜_2101301949768491010.json, 视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100069057369300993.json, 视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100145638406184962.json, 视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2101304865048846337.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_850
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/GK Video3 文生视频_2004533059217223682.json、视频生成/文生视频/Grok Video3 文生视频_2000439584469250050.json、视频生成/文生视频/Video 3文生视频工作流｜6秒10秒 五种画幅_2099677234368966657.json、视频生成/文生视频/全能视频X文生视频_1998220916691755010.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/H3_MAX智能运镜工作流｜AI看图自动运镜_2101301949768491010.json、视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100069057369300993.json、视频生成/图生视频/H3_MAX智能运镜工作流｜AI看图自动运镜_2100145638406184962.json、视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2101304865048846337.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `RH_Grok_Video3`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `RH_MinimaxHailuoH3ContextIrMultimodal`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `RH_MinimaxHailuoH3MaxImageToVideo` —— 3/4 个有
+- `EmptyImage` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,39 +1,43 @@
 ---
 name: unknown_workflow_video_lora_sampler_399
 type: Unknown Workflow
-frequency: 6
+frequency: 8
 level: moderate
-coverage: 0.844333
-common_nodes: [AppendStringsToList, CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, SplineEditor, VHS_VideoCombine, WanVideoATITracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.940375
+common_nodes: [Audio Duration (mtb), CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/2025-06-04 wanvideo_ATI_1929480166395822081.json, 视频生成/图生视频/ATI字节最新轨迹驱动wan视频生成版ATI_1929748784421703681.json, 视频生成/图生视频/ATI字节最新轨迹驱动wan视频生成版_1928747025259511810.json, 视频生成/图生视频/Wan2.1 ATI多点轨迹引导图生视频工作流_1929199069892349953.json, 视频生成/图生视频/万相ATI字节最新轨迹驱动图生视频_1929817339246624770.json, 视频生成/图生视频/万相ATI轨迹控制_1928843752012681217.json]
+members: [视频生成/图生视频/👾【大炮数字人】MultiTalk双人对口型加速版👾_1941429442441015297.json, 视频生成/图生视频/💂_IndexTTS语音克隆+Multitalk数字人对口型💂__1954737241992118273.json, 视频生成/文生视频/小赛数字人_1958479331356000258.json, 视频生成/文生视频/视频数字人对口 IndexTTS V2 带情绪的声音克隆 能生成一段音频，根据不同类型音调克隆声音_1994301248816037890.json, 音频生成/音频生成/IndexTTS语音克隆+Multitalk数字人对口型_1954811221523390466.json, 音频生成/音频生成/【数字人说话】 语音克隆音频驱动对口型_1957341883464871937.json, 音频生成/音频生成/【文字转音频】IndexTTS V2 带情绪的声音克隆 能生成一段音频，根据不同类型音调克隆声音_1986588000891109378.json, 音频生成/音频生成/文字转语音_1983514355780263937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_399
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/2025-06-04 wanvideo_ATI_1929480166395822081.json、视频生成/图生视频/ATI字节最新轨迹驱动wan视频生成版ATI_1929748784421703681.json、视频生成/图生视频/ATI字节最新轨迹驱动wan视频生成版_1928747025259511810.json、视频生成/图生视频/Wan2.1 ATI多点轨迹引导图生视频工作流_1929199069892349953.json、视频生成/图生视频/万相ATI字节最新轨迹驱动图生视频_1929817339246624770.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/👾【大炮数字人】MultiTalk双人对口型加速版👾_1941429442441015297.json、视频生成/图生视频/💂_IndexTTS语音克隆+Multitalk数字人对口型💂__1954737241992118273.json、视频生成/文生视频/小赛数字人_1958479331356000258.json、视频生成/文生视频/视频数字人对口 IndexTTS V2 带情绪的声音克隆 能生成一段音频，根据不同类型音调克隆声音_1994301248816037890.json、音频生成/音频生成/IndexTTS语音克隆+Multitalk数字人对口型_1954811221523390466.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AppendStringsToList`
+全部 8 个 workflow 都包含：
+- `Audio Duration (mtb)`
 - `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `LoadAudio`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SplineEditor`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanVideoATITracks`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
@@ -41,20 +45,26 @@ source: knowledge_consolidation
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 5/6 个有
-- `WanVideoTorchCompileSettings` —— 5/6 个有
-- `CreateShapeImageOnPath` —— 3/6 个有
-- `ImageCompositeMasked` —— 3/6 个有
-- `Text Multiline` —— 3/6 个有
-- `Primitive integer [Crystools]` —— 2/6 个有
-- `WanVideoATITracksVisualize` —— 2/6 个有
-- `GetNode` —— 1/6 个有
-- `INTConstant` —— 1/6 个有
-- `ImageConcanate` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/6 个有
-- `LayerUtility: PurgeVRAM` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `WanVideoTeaCache` —— 1/6 个有
+- `CR Text` —— 7/8 个有
+- `WanVideoTorchCompileSettings` —— 7/8 个有
+- `ImpactInt` —— 6/8 个有
+- `IndexTTSRun` —— 6/8 个有
+- `MultiLinePromptIndex` —— 5/8 个有
+- `SaveAudioMP3` —— 5/8 个有
+- `AudioSeparation` —— 3/8 个有
+- `easy showAnything` —— 3/8 个有
+- `SaveAudio` —— 2/8 个有
+- `String Literal` —— 2/8 个有
+- `ttN int` —— 2/8 个有
+- `Audio Cut (mtb)` —— 1/8 个有
+- `CR Text Input Switch` —— 1/8 个有
+- `DeepTranslatorTextNode` —— 1/8 个有
+- `IndexTTS2Run` —— 1/8 个有
+- `MaskPreview+` —— 1/8 个有
+- `Primitive integer [Crystools]` —— 1/8 个有
+- `Reroute (rgthree)` —— 1/8 个有
+- `SeparateMasks` —— 1/8 个有
+- `easy convertAnything` —— 1/8 个有
 
 ## 典型参数
 

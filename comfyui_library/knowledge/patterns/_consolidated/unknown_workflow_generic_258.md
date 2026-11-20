@@ -1,50 +1,38 @@
 ---
 name: unknown_workflow_generic_258
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.783889
-common_nodes: [DF_Integer, Get Image Size, ImageCASharpening+, ImageResize+, ImpactMinMax, LoadImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, easy cleanGpuUsed]
+coverage: 0.7423
+common_nodes: [LoadImage, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/多分镜&二次放大-Rubby_2007714930438443010.json, 图片生成/图生图/多分镜&二次放大-rubby_2008814429311340545.json, 图片生成/图生图/无损放大-最长边两万像素_2046129740641214466.json, 图片生成/图生图/最好用的8k放大工作流-放大的图片一点都不油腻和畸变（懂得自然懂)_1989240428505468930.json, 图片生成/图生图/最新3.0万物高清放大_2065014492030914562.json, 图片生成/图生图/高效精准高清放大2_2070751671319355393.json, 图片生成/图生图/高清修复万物高清放大修复不改变原细节（分块）seedVR2_1985569698718928898.json, 图片生成/图生图/高清放大修复不改变原细节_2039941695437021186.json, 数字人/数字人/万物高清放大修复不改变原细节（分块）seedVR2_1992434430134341633.json]
+members: [图片生成/图生图/全能图像2_2027222749164347394.json, 视频生成/图生视频/Digital Avatar Product Promotion Video数字人带货_2095696325479329794.json, 视频生成/图生视频/RH超能视频 多角色图生视频_2037347862715043842.json, 视频生成/图生视频/RhartVideoSparkvideo20ImageToVideo_2038486780621623297.json, 视频生成/图生视频/产品介绍图生视频 模特主播 数字人手持产品带货视频-15秒长视频_2060157052013600769.json, 视频生成/图生视频/图生视频数字人手持产品带货视频15秒短视频_2076931692736106497.json, 视频生成/图生视频/多角色库模式_2039312431591198722.json, 视频生成/图生视频/数字人手持产品带货视频-15秒短视频_2046555653115744258.json, 视频生成/图生视频/电商带货，抖音带货，爆款复刻，手持产品带货视频-15秒短视频，已经做到百分之99%还原_2046648278296567810.json, 视频生成/图生视频/（多ID录入版-支持真人）地表最强超能视频2.0_全能参考_2037519797197479937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_258
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/多分镜&二次放大-Rubby_2007714930438443010.json、图片生成/图生图/多分镜&二次放大-rubby_2008814429311340545.json、图片生成/图生图/无损放大-最长边两万像素_2046129740641214466.json、图片生成/图生图/最好用的8k放大工作流-放大的图片一点都不油腻和畸变（懂得自然懂)_1989240428505468930.json、图片生成/图生图/最新3.0万物高清放大_2065014492030914562.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/全能图像2_2027222749164347394.json、视频生成/图生视频/Digital Avatar Product Promotion Video数字人带货_2095696325479329794.json、视频生成/图生视频/RH超能视频 多角色图生视频_2037347862715043842.json、视频生成/图生视频/RhartVideoSparkvideo20ImageToVideo_2038486780621623297.json、视频生成/图生视频/产品介绍图生视频 模特主播 数字人手持产品带货视频-15秒长视频_2060157052013600769.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `DF_Integer`
-- `Get Image Size`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImpactMinMax`
+全部 10 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
-- `SeedVR2`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `easy cleanGpuUsed`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetIdsMerge`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 7/9 个有
-- `PreviewImage` —— 6/9 个有
-- `SetNode` —— 6/9 个有
-- `GetNode` —— 5/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/9 个有
-- `Bilateral_Filter` —— 1/9 个有
-- `ImageConcatMulti` —— 1/9 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 8/10 个有
+- `PreviewAny` —— 6/10 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 2/10 个有
+- `RH_SparkVideoAssetQuery` —— 1/10 个有
 
 ## 典型参数
 

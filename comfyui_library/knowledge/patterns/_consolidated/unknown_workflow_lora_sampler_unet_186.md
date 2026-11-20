@@ -1,77 +1,73 @@
 ---
 name: unknown_workflow_lora_sampler_unet_186
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.928
-common_nodes: [CLIPLoader, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.7508
+common_nodes: [CLIPLoader, ConditioningZeroOut, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/qwen-edit-2509-袜子迁移_1993141793747386370.json, 图片生成/图生图/qwen-edit-2509万物迁移2.0_1989172412551925762.json, 图片生成/图生图/qwen-edit-2509模特电商换装换物品换袜子电商产品图更换替换_2011512690249830401.json, 图片生成/图生图/qwen-edit-2511-换装迁移_2006598879860494338.json]
+members: [平台全量/电商模特指定图片换背景FireRed_2029026525802143745.json, 平台全量/电商模特换服装 FireRed_2028291580733427714.json, 平台全量/电商模特换首饰 FireRed 1.1_2034444255673978881.json, 平台全量/电商海报改文字 FireRed_2031561485498982401.json, 数字人/数字人/YJ-APP-FireRed-多图编辑_2034470620423004161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_186
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/qwen-edit-2509-袜子迁移_1993141793747386370.json、图片生成/图生图/qwen-edit-2509万物迁移2.0_1989172412551925762.json、图片生成/图生图/qwen-edit-2509模特电商换装换物品换袜子电商产品图更换替换_2011512690249830401.json、图片生成/图生图/qwen-edit-2511-换装迁移_2006598879860494338.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/电商模特指定图片换背景FireRed_2029026525802143745.json、平台全量/电商模特换服装 FireRed_2028291580733427714.json、平台全量/电商模特换首饰 FireRed 1.1_2034444255673978881.json、平台全量/电商海报改文字 FireRed_2031561485498982401.json、数字人/数字人/YJ-APP-FireRed-多图编辑_2034470620423004161.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
+- `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenEditConfigPreparer`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 3/4 个有
-- `CR Text` —— 3/4 个有
-- `LayerUtility: ImageReel` —— 3/4 个有
-- `LayerUtility: ImageReelComposit` —— 3/4 个有
-- `LayerUtility: PurgeVRAM` —— 3/4 个有
-- `ModelSamplingAuraFlow` —— 3/4 个有
-- `图像缩放V2_孤海` —— 3/4 个有
-- `Bookmark (rgthree)` —— 1/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `MaskFillHoles` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 4/5 个有
+- `ImageResizeKJv2` —— 2/5 个有
+- `EmptyLatentImage` —— 1/5 个有
+- `FastCanvas` —— 1/5 个有
+- `FastCanvasTool` —— 1/5 个有
+- `PrimitiveInt` —— 1/5 个有
+- `Switch` —— 1/5 个有
+- `easy imageRemBg` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 4 | 40% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 4 | 53% |
-| 采样算法 | res_2s | - | 4 | 75% |
-| 调度器 | bong_tangent | - | 4 | 75% |
-| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 4 | 4 - 8 | 5 | 67% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 1080 | - | 1 | 100% |
+| 高度 | 1920 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，4 个样本，取值分散，一致性仅 40%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，4 个样本
-- 采样算法 最常用 res_2s，4 个样本，一致性 75%
-- 调度器 最常用 bong_tangent，4 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

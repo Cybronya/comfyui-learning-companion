@@ -1,74 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_533
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.85925
-common_nodes: [BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PreviewAudio, ResolutionSelector, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3TST, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.749167
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/Minimax H3  音频驱动数字人-神态口型自然-双采加速_2111647737732231170.json, 视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流 MiniMax H3新技术_2101122144590712834.json, 视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流+MiniMax+H3新技术_2111456170199310337.json, 视频生成/图生视频/高阶双采音色克隆台词驱动数字人- MiniMax H3视频工作流_2110580224256724993.json]
+members: [视频生成/图生视频/steady dancer卡通动物动作漫剧电商服装分镜真人_2072526167571263489.json, 视频生成/图生视频/漫剧舞蹈动作迁移1_2077308268699021313.json, 视频生成/文生视频/SteadyDancer+SDpose一张人物照片 + 一段姿态（骨架）_1995841055381762050.json, 视频生成/文生视频/SteadyDancer视频风格化转绘_1998364456965038082.json, 视频生成/文生视频/kj新Pose Detection +SteadyDancer_1998291780594491394.json, 视频生成/文生视频/卡通人物跳舞_2010624770362052610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_533
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Minimax H3  音频驱动数字人-神态口型自然-双采加速_2111647737732231170.json、视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流 MiniMax H3新技术_2101122144590712834.json、视频生成/图生视频/高阶双采加速不降质音频驱动数字人-视频工作流+MiniMax+H3新技术_2111456170199310337.json、视频生成/图生视频/高阶双采音色克隆台词驱动数字人- MiniMax H3视频工作流_2110580224256724993.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/steady dancer卡通动物动作漫剧电商服装分镜真人_2072526167571263489.json、视频生成/图生视频/漫剧舞蹈动作迁移1_2077308268699021313.json、视频生成/文生视频/SteadyDancer+SDpose一张人物照片 + 一段姿态（骨架）_1995841055381762050.json、视频生成/文生视频/SteadyDancer视频风格化转绘_1998364456965038082.json、视频生成/文生视频/kj新Pose Detection +SteadyDancer_1998291780594491394.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+全部 6 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PreviewAudio`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `SelfLiftAvatarH3TST`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `MelBandRoFormerModelLoader` —— 3/4 个有
-- `MelBandRoFormerSampler` —— 3/4 个有
-- `PrimitiveFloat` —— 3/4 个有
-- `TrimAudioDuration` —— 3/4 个有
-- `Label (rgthree)` —— 2/4 个有
-- `Qwen3ASRLoader` —— 2/4 个有
-- `Qwen3ASRTranscribe` —— 2/4 个有
-- `RunningHub_VoxCPM_Generate` —— 2/4 个有
-- `RunningHub_VoxCPM_LoadModel` —— 2/4 个有
-- `SaveAudioMP3` —— 1/4 个有
-- `Seed` —— 1/4 个有
-- `XB_CanvasLabel` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `PreviewImage` —— 5/6 个有
+- `WanVideoScheduler` —— 5/6 个有
+- `ImageResizeKJv2` —— 4/6 个有
+- `SDPoseOODLoader` —— 4/6 个有
+- `SDPoseOODProcessor` —— 4/6 个有
+- `YOLOModelLoader` —— 4/6 个有
+- `GetNode` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 3/6 个有
+- `SetNode` —— 3/6 个有
+- `DF_Int_to_Float` —— 2/6 个有
+- `INTConstant` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `OnnxDetectionModelLoader` —— 2/6 个有
+- `PoseDetectionOneToAllAnimation` —— 2/6 个有
+- `WanVideoTorchCompileSettings` —— 2/6 个有
+- `easy indexAnything` —— 2/6 个有
+- `easy mathInt` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
+- `DWPreprocessor` —— 1/6 个有
+- `DrawViTPose` —— 1/6 个有
+- `JWInteger` —— 1/6 个有
+- `LayerUtility: PurgeVRAM` —— 1/6 个有
+- `PoseAndFaceDetection` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `SimpleMath+` —— 1/6 个有
+- `ZML_AnyTypeSwitchFive` —— 1/6 个有
+- `ttN float` —— 1/6 个有
 
 ## 典型参数
 

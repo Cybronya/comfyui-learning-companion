@@ -1,37 +1,33 @@
 ---
 name: unknown_workflow_video_sampler_unet_51
 type: Unknown Workflow
-frequency: 6
+frequency: 9
 level: moderate
-coverage: 0.5195
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetNode, JoinStringMulti, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, StringConcatenate, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, easy showAnything]
+coverage: 0.690556
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, CreateVideo, ImageResizeKJv2, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, StringFunction|pysssss, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy clearCacheAll, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3图片加音色参考生视频-自动提示词优化-V1_2086980450555355138.json, 视频生成/图生视频/MiniMax H3图片加音色参考生视频-自动提示词优化-V2.1_2083091369735843842.json, 视频生成/图生视频/Minimax H3 二采优化版+Gemma4_2089334608109334530.json, 视频生成/图生视频/Minimax H3 提示词优化&视频画质优化_2087010732222279682.json, 视频生成/图生视频/绘影-MiniMax H3 参考生视频-混合25-49-int8-720P-V2_2102552907047596033.json, 视频生成/文生视频/H3 全能多参+4步加速+提示词优化_2087394908050124802.json]
+members: [视频生成/图生视频/Minimax H3_全能参考提示词自动反推_2085332365689319426.json, 视频生成/图生视频/加速lora高质开源MiniMax+H3+RE2VA开源版-多图参考生视频_2084144233992253441.json, 视频生成/图生视频/加速版-MiniMax H3 -多参考生视频-提示词自动优化-EasyCache+sag_2084987956389044226.json, 视频生成/图生视频/加速版-MiniMax H3 -多参考生视频-提示词自动优化_2085190964104228865.json, 视频生成/图生视频/高质量双采样Minimax H3高清修复-加速-优秀的一致性_2086079440601313281.json, 视频生成/文生视频/Minimax H3二采重绘，超强一致性！_2087874789624078338.json, 视频生成/文生视频/Minimax H3目前最优方案_2086647576996171777.json, 视频生成/文生视频/Minimax双采高清人脸工作流（自动提示词+最新加速lora）_2088225624673574914.json, 视频生成/文生视频/开源H3二次采样 2K高清 (清晰度升级版）_2088273350861869058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_51
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3图片加音色参考生视频-自动提示词优化-V1_2086980450555355138.json、视频生成/图生视频/MiniMax H3图片加音色参考生视频-自动提示词优化-V2.1_2083091369735843842.json、视频生成/图生视频/Minimax H3 二采优化版+Gemma4_2089334608109334530.json、视频生成/图生视频/Minimax H3 提示词优化&视频画质优化_2087010732222279682.json、视频生成/图生视频/绘影-MiniMax H3 参考生视频-混合25-49-int8-720P-V2_2102552907047596033.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Minimax H3_全能参考提示词自动反推_2085332365689319426.json、视频生成/图生视频/加速lora高质开源MiniMax+H3+RE2VA开源版-多图参考生视频_2084144233992253441.json、视频生成/图生视频/加速版-MiniMax H3 -多参考生视频-提示词自动优化-EasyCache+sag_2084987956389044226.json、视频生成/图生视频/加速版-MiniMax H3 -多参考生视频-提示词自动优化_2085190964104228865.json、视频生成/图生视频/高质量双采样Minimax H3高清修复-加速-优秀的一致性_2086079440601313281.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 9 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
-- `JoinStringMulti`
-- `KSamplerSelect`
+- `CreateVideo`
+- `ImageResizeKJv2`
 - `LoadAudio`
 - `LoadImage`
 - `MiniMaxH3ReferenceToVideo`
@@ -40,44 +36,47 @@ source: knowledge_consolidation
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SetNode`
-- `StringConcatenate`
+- `StringFunction|pysssss`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `easy clearCacheAll`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchImagesNode` —— 5/6 个有
-- `llama_cpp_instruct_adv` —— 5/6 个有
-- `llama_cpp_model_loader` —— 5/6 个有
-- `llama_cpp_parameters` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 4/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/6 个有
-- `PurgeVRAM_UTK` —— 4/6 个有
-- `ToString` —— 4/6 个有
-- `MiniMaxH3SigmaShift` —— 3/6 个有
-- `Any To String (mtb)` —— 2/6 个有
-- `ModelAttentionBackend` —— 2/6 个有
-- `PT_H3ConcatAVLatent` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `H3LatentUpscaleByJingchen573` —— 1/6 个有
-- `H3SigmaRefiner` —— 1/6 个有
-- `ImageResizeKJv2` —— 1/6 个有
-- `LTXVSeparateAVLatent` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
-- `MiniMaxChunkFeedForward` —— 1/6 个有
-- `MiniMaxLowVRAMAttention` —— 1/6 个有
-- `SimpleMath+` —— 1/6 个有
-- `SplitSigmas` —— 1/6 个有
-- `TextGenerate` —— 1/6 个有
-- `VAEEncode` —— 1/6 个有
-- `VAEEncodeAudio` —— 1/6 个有
-- `VHS_LoadVideo` —— 1/6 个有
-- `ZNGB_ImageBatchMulti` —— 1/6 个有
+- `BasicScheduler` —— 8/9 个有
+- `EasyCache` —— 8/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/9 个有
+- `KSamplerSelect` —— 8/9 个有
+- `RHLLMChatNode` —— 8/9 个有
+- `VAEDecode` —— 8/9 个有
+- `VAEDecodeAudio` —— 8/9 个有
+- `AudioCrop` —— 6/9 个有
+- `LoraLoaderBypassModelOnly` —— 6/9 个有
+- `PathchSageAttentionKJ` —— 6/9 个有
+- `GetNode` —— 5/9 个有
+- `INTConstant` —— 5/9 个有
+- `PT_H3ConcatAVLatent` —— 5/9 个有
+- `ResizeShortestToNode` —— 5/9 个有
+- `SetNode` —— 5/9 个有
+- `VAEEncode` —— 5/9 个有
+- `VAEEncodeAudio` —— 5/9 个有
+- `GetImageRangeFromBatch` —— 4/9 个有
+- `Label (rgthree)` —— 4/9 个有
+- `CR Text` —— 3/9 个有
+- `LoraLoaderModelOnly` —— 3/9 个有
+- `ModelAttentionBackend` —— 3/9 个有
+- `孤海注释` —— 3/9 个有
+- `VHS_VideoInfoLoaded` —— 2/9 个有
+- `LoadVideo` —— 1/9 个有
+- `MiniMaxH3AVDecodeT8` —— 1/9 个有
+- `MiniMaxH3BlockCacheT8` —— 1/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/9 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/9 个有
+- `PreviewAny` —— 1/9 个有
+- `Text Multiline` —— 1/9 个有
+- `TrimAudioDuration` —— 1/9 个有
 
 ## 典型参数
 

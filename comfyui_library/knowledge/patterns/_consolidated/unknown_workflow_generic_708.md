@@ -1,44 +1,38 @@
 ---
 name: unknown_workflow_generic_708
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9915
-common_nodes: [GetExpression2, GetFaceLandmarks, GetHeadPose, HMFaceToolkitsLoader, HMImagePipelineLoader, HMPipelineImage, LoadImage, SaveImage]
+coverage: 0.7694
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json, 图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json, 图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json, 图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json]
+members: [图片生成/图生图/全能图片V1 Pro 万物迁移_一致性姿势_1991525969649418242.json, 图片生成/图生图/香蕉全能图片V12 pro多图编辑(注意官方和第三方api价格不同)_2007633541886124033.json, 图片生成/文生图/Nano 全能图片V1 Pro 电商设计万物迁移_一致性姿势 工作流V1.0_1995903616886194178.json, 图片生成/文生图/香蕉全能图片V12_全能图片V1 pro多图编辑(注意官方和第三方api价格不同)_1996135618931572738.json, 平台全量/多宫格自由切换_生成版_switch_2to6_2021919502388170753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_708
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1931960784979734529.json、图片生成/图生图/HelloMeme V5单图风格转绘V1（自定义风格）_1932068330126176257.json、图片生成/图生图/HelloMeme-image_style_transfer_1933525598557884418.json、图片生成/图生图/表情王！高难度表情及姿态迁移HelloMeme V5+Advaced LivePortrait_1931963371325685761.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片V1 Pro 万物迁移_一致性姿势_1991525969649418242.json、图片生成/图生图/香蕉全能图片V12 pro多图编辑(注意官方和第三方api价格不同)_2007633541886124033.json、图片生成/文生图/Nano 全能图片V1 Pro 电商设计万物迁移_一致性姿势 工作流V1.0_1995903616886194178.json、图片生成/文生图/香蕉全能图片V12_全能图片V1 pro多图编辑(注意官方和第三方api价格不同)_1996135618931572738.json、平台全量/多宫格自由切换_生成版_switch_2to6_2021919502388170753.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GetExpression2`
-- `GetFaceLandmarks`
-- `GetHeadPose`
-- `HMFaceToolkitsLoader`
-- `HMImagePipelineLoader`
-- `HMPipelineImage`
+全部 5 个 workflow 都包含：
 - `LoadImage`
+- `PreviewImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 3/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `ExpressionEditor` —— 1/4 个有
-- `Get Image Size` —— 1/4 个有
-- `JWImageResize` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 4/5 个有
+- `CR Prompt Text` —— 3/5 个有
+- `DWPreprocessor` —— 2/5 个有
+- `ImpactSwitch` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,50 +3,64 @@ name: unknown_workflow_video_upscale_sampler_20
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.957
-common_nodes: [GetImageSizeAndCount, ImageResize+, ImageScaleToMegapixels, Int, LoadImage, LoadWanVideoT5TextEncoder, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.889
+common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, ImageScale, ImageUpscaleWithModel, LoadImage, LoadWanVideoT5TextEncoder, MimicMotionGetPoses, PlaySound|pysssss, PreviewImage, RIFE VFI, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.1 多关键帧_1949705489898184706.json, 视频生成/图生视频/Wan2.1 首尾帧_1949686790592045057.json]
+members: [数字人/数字人/通义万相VACE版_美女跳舞视频转绘_1933718578392948738.json, 视频生成/图生视频/Wan2.1__VACE版_美女跳舞（动作控制）_1933177373691158529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_20
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 多关键帧_1949705489898184706.json、视频生成/图生视频/Wan2.1 首尾帧_1949686790592045057.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/通义万相VACE版_美女跳舞视频转绘_1933718578392948738.json、视频生成/图生视频/Wan2.1__VACE版_美女跳舞（动作控制）_1933177373691158529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `GetImageSizeAndCount`
-- `ImageResize+`
-- `ImageScaleToMegapixels`
-- `Int`
+- `ImageResizeKJv2`
+- `ImageScale`
+- `ImageUpscaleWithModel`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MimicMotionGetPoses`
+- `PlaySound|pysssss`
+- `PreviewImage`
 - `RIFE VFI`
 - `UpscaleModelLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatchMulti` —— 1/2 个有
-- `MaskBatchMulti` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
+- `Florence2ModelLoader` —— 1/2 个有
+- `Florence2Run` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `OpenposePreprocessor` —— 1/2 个有
+- `RH_Captioner` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `SimpleMath+` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `easy anythingIndexSwitch` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,38 +1,38 @@
 ---
 name: unknown_workflow_generic_538
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.745
-common_nodes: [MultiplePathsInput, Qwen3_VQA, ShowText|pysssss, easy positive, easy saveText]
+coverage: 0.783
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Qwen3-VL-4B 视频反推_1993936457918251009.json, 图片生成/反推提示词/千问反推-视频提示词-Qwen3VL_1983393808253689857.json, 图片生成/反推提示词/反推-视频提示词2-Qwen3VL_1982447180357214210.json, 图片生成/反推提示词/反推-视频提示词2-Qwen3VL_2066055925569744896.json, 图片生成/反推提示词/反推-视频翻译-Qwen3VL_1988327686353371137.json]
+members: [图片生成/图生图/4+1_2059565424248967169.json, 图片生成/图生图/4图参图像编辑PRO_2044594283658874881.json, 图片生成/图生图/DIY人物_1995858690374787074.json, 图片生成/图生图/产品精修_吊打一切_2049827708439412738.json, 图片生成/图生图/全能图片V1 2.0图像编辑_1991502787389431809.json, 图片生成/图生图/分镜头时空裂变推演工作流_2040007421787119618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_538
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/Qwen3-VL-4B 视频反推_1993936457918251009.json、图片生成/反推提示词/千问反推-视频提示词-Qwen3VL_1983393808253689857.json、图片生成/反推提示词/反推-视频提示词2-Qwen3VL_1982447180357214210.json、图片生成/反推提示词/反推-视频提示词2-Qwen3VL_2066055925569744896.json、图片生成/反推提示词/反推-视频翻译-Qwen3VL_1988327686353371137.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/4+1_2059565424248967169.json、图片生成/图生图/4图参图像编辑PRO_2044594283658874881.json、图片生成/图生图/DIY人物_1995858690374787074.json、图片生成/图生图/产品精修_吊打一切_2049827708439412738.json、图片生成/图生图/全能图片V1 2.0图像编辑_1991502787389431809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `MultiplePathsInput`
-- `Qwen3_VQA`
-- `ShowText|pysssss`
-- `easy positive`
-- `easy saveText`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `VideoLoader` —— 3/5 个有
-- `VideoLoaderPlus` —— 2/5 个有
-- `easy seed` —— 1/5 个有
+- `PreviewImage` —— 5/6 个有
+- `CR Prompt Text` —— 4/6 个有
+- `InversionDemoLazyIndexSwitch` —— 1/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
+- `Text Input [DVB]` —— 1/6 个有
 
 ## 典型参数
 

@@ -1,68 +1,67 @@
 ---
 name: unknown_workflow_video_sampler_vae_157
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.812667
-common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageBatchMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.75725
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FusionX长视频拼接工作流_1938494783562121217.json, 视频生成/图生视频/Self Forcing-多图首尾帧_1933059633864998913.json, 视频生成/图生视频/lightx2v-高质量加速模型测试_1935325590822256642.json]
+members: [视频生成/图生视频/FusionX-Phantom 多图融合14B高清版_1934266873917956097.json, 视频生成/图生视频/FusionX-VACE多图融合_1934249713015156738.json, 视频生成/图生视频/模特产品互动、多人合照、 产品结合、图片结合 WAN 2.1 VACE 14b_1926293882655457281.json, 视频生成/图生视频/视频-破次元融合版-多主体融合 FusionX-VACE_1934523459177250818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_157
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/FusionX长视频拼接工作流_1938494783562121217.json、视频生成/图生视频/Self Forcing-多图首尾帧_1933059633864998913.json、视频生成/图生视频/lightx2v-高质量加速模型测试_1935325590822256642.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/FusionX-Phantom 多图融合14B高清版_1934266873917956097.json、视频生成/图生视频/FusionX-VACE多图融合_1934249713015156738.json、视频生成/图生视频/模特产品互动、多人合照、 产品结合、图片结合 WAN 2.1 VACE 14b_1926293882655457281.json、视频生成/图生视频/视频-破次元融合版-多主体融合 FusionX-VACE_1934523459177250818.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GetImageRangeFromBatch`
+全部 4 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
 - `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageBatchMulti`
+- `GetNode`
+- `ImageConcatMulti`
 - `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskBatchMulti` —— 2/3 个有
-- `VHS_LoadVideo` —— 2/3 个有
-- `WanVideoTextEncode` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `DWPreprocessor` —— 1/3 个有
-- `GetImageSize+` —— 1/3 个有
-- `GetNode` —— 1/3 个有
-- `ImageColorMatch+` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `RH_ComfyFluxKontext` —— 1/3 个有
-- `RH_Translator` —— 1/3 个有
-- `SetNode` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `String Literal` —— 1/3 个有
-- `WanVideoApplyNAG` —— 1/3 个有
-- `WanVideoLoraSelect` —— 1/3 个有
-- `WanVideoTextEncodeSingle` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `InspyrenetRembg` —— 3/4 个有
+- `JWInteger` —— 3/4 个有
+- `LayerUtility: ImageRemoveAlpha` —— 3/4 个有
+- `MathExpression|pysssss` —— 3/4 个有
+- `WanVideoApplyNAG` —— 3/4 个有
+- `WanVideoTextEncodeSingle` —— 3/4 个有
+- `WanVideoVACEEncode` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `ImagePadKJ` —— 1/4 个有
+- `Note _O` —— 1/4 个有
+- `WanVideoEncode` —— 1/4 个有
+- `WanVideoPhantomEmbeds` —— 1/4 个有
+- `WanVideoTeaCache` —— 1/4 个有
+- `WanVideoTextEncode` —— 1/4 个有
+- `WanVideoVACEModelSelect` —— 1/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
 
 ## 典型参数
 

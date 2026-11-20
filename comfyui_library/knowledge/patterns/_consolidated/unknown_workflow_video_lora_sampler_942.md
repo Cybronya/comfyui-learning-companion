@@ -1,45 +1,41 @@
 ---
 name: unknown_workflow_video_lora_sampler_942
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5135
-common_nodes: [CLIPVisionLoader, DWPreprocessor, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, ImpactSwitch, LoadImage, MathExpression|pysssss, PixelPerfectResolution, PreviewAny, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy cleanGpuUsed, easy compare, easy forLoopEnd, easy forLoopStart, easy ifElse, easy int]
+frequency: 3
+level: moderate
+coverage: 0.569
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan_animate+KJ版+长视频动作迁移+分辨率、帧率选择，首尾帧丢弃选择_1970700408228376577.json, 视频生成/图生视频/wan_animate+长视频不限时长人物替换_1970265248752148481.json]
+members: [视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_1969434671211814914.json, 视频生成/文生视频/Wan-Animate角色替换 (Character Replacement)_1969435322595635201.json, 视频生成/文生视频/🦖Wan Animate2.2换主体_1970311265270853633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_942
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan_animate+KJ版+长视频动作迁移+分辨率、帧率选择，首尾帧丢弃选择_1970700408228376577.json、视频生成/图生视频/wan_animate+长视频不限时长人物替换_1970265248752148481.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan-Animate​​角色动画 (Character Animation)_1969434671211814914.json、视频生成/文生视频/Wan-Animate角色替换 (Character Replacement)_1969435322595635201.json、视频生成/文生视频/🦖Wan Animate2.2换主体_1970311265270853633.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPVisionLoader`
 - `DWPreprocessor`
-- `EmptyImage`
-- `GetImageRangeFromBatch`
+- `FaceMaskFromPoseKeypoints`
 - `GetImageSizeAndCount`
 - `GetNode`
 - `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
 - `ImageResizeKJv2`
-- `ImpactSwitch`
 - `LoadImage`
-- `MathExpression|pysssss`
 - `PixelPerfectResolution`
-- `PreviewAny`
 - `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
 - `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -47,32 +43,38 @@ source: knowledge_consolidation
 - `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy compare`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `BlockifyMask` —— 1/2 个有
-- `ConvertAny2Int` —— 1/2 个有
-- `Display Int (rgthree)` —— 1/2 个有
-- `DownloadAndLoadFlorence2Model` —— 1/2 个有
-- `DownloadAndLoadSAM2Model` —— 1/2 个有
-- `DrawMaskOnImage` —— 1/2 个有
-- `FaceMaskFromPoseKeypoints` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `Florence2toCoordinates` —— 1/2 个有
-- `GrowMask` —— 1/2 个有
-- `ImageCropByMaskAndResize` —— 1/2 个有
-- `PointsEditor` —— 1/2 个有
-- `Sam2Segmentation` —— 1/2 个有
-- `Switch any [Crystools]` —— 1/2 个有
-- `easy float` —— 1/2 个有
+- `BlockifyMask` —— 2/3 个有
+- `DownloadAndLoadSAM2Model` —— 2/3 个有
+- `DrawMaskOnImage` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `GetImageSize` —— 2/3 个有
+- `GrowMask` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `PointsEditor` —— 2/3 个有
+- `Sam2Segmentation` —— 2/3 个有
+- `WanVideoContextOptions` —— 2/3 个有
+- `Bjornulf_ShowInt` —— 1/3 个有
+- `CR Prompt Text` —— 1/3 个有
+- `ImageGetSize` —— 1/3 个有
+- `ImageResize` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `LayerMask: LoadFlorence2Model` —— 1/3 个有
+- `LayerUtility: Florence2Image2Prompt` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `ResizeLongestToNode` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoUni3C_ControlnetLoader` —— 1/3 个有
+- `WanVideoUni3C_embeds` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
@@ -84,4 +86,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

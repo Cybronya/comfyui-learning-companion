@@ -1,106 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_20
 type: Unknown Workflow
-frequency: 37
+frequency: 45
 level: moderate
-coverage: 0.521324
-common_nodes: [BatchCount+, CLIPVisionLoader, DrawViTPose, ImageBatch, ImageFromBatch, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, RepeatImageBatch, VHS_LoadVideo, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy mathInt]
+coverage: 0.8016
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2068585961738559490.json, 视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2069032676627144706.json, 视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2076643625286594562.json, 视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2104891951400177666.json, 视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2104922237492088834.json, 视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）动作复刻_2082420883087519746.json, 视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）复刻动作_2082464936093118466.json, 视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）复刻动作_2096557242077241346.json, 视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）复刻动作_2096566243015876610.json, 视频生成/图生视频/动作迁移-图片跳舞-动作模仿_2040075523052802049.json, 视频生成/图生视频/动作迁移_2047655725190619137.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2042165206326976513.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2056034376437256194.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2056388313015209985.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2058520279621652482.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2059247790496243714.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2070370786665385985.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2071503643160956929.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2078450483810889729.json, 视频生成/图生视频/动作迁移【可抖X】-邻家AI大女孩_2078647438625300482.json, 视频生成/图生视频/动作迁移【可抖X】-高清-偏慢-预计400RH_2082351326247350274.json, 视频生成/图生视频/动作迁移【可抖X】_2030874906992320514.json, 视频生成/图生视频/动作迁移【可抖X】_2039672522324582401.json, 视频生成/图生视频/动作迁移【可抖X】清晰-好-6秒300RH_2082825993336745985.json, 视频生成/图生视频/动作迁移【可抖X】高显存跑_2036032896015802370.json, 视频生成/图生视频/动作迁移抖胸设置动作高仿舞蹈复刻模仿角色替换人物替换_2092861283463950338.json, 视频生成/图生视频/动作迁移，这个动作高仿，还是这个模仿的好_2033570281733758977.json, 视频生成/图生视频/动作迁移，这个动作高仿，需要高显存跑_2060615103225094145.json, 视频生成/图生视频/口哨舞-动作迁移_2089255191454502914.json, 视频生成/图生视频/口哨舞_1890311094009835522.json, 视频生成/图生视频/唱歌30秒_2099739134943391746.json, 视频生成/图生视频/啊癫 最新 动作迁移，高清Wan2.2 Animate动作迁移V44-1_2032851375377354753.json, 视频生成/图生视频/地表最强动作迁移工作流_2038516912669335553.json, 视频生成/图生视频/新版Wan2.2 Animate动作迁移-跳舞视频专用工作流V5_2035706111285792769.json, 视频生成/图生视频/模式二测试_2052770687701528577.json, 视频生成/图生视频/绿幕数字人口播V1_2081637987401687042.json, 视频生成/图生视频/角色表情+手部一致性 视频动作迁移+ Animate_2080519359495237633.json]
+members: [平台全量/视频outpaint_2095726901141790722.json, 平台全量/视频编辑 双人替换 MiniMaxH3_2118752939245391874.json, 平台全量/视频编辑 双人替换 MiniMaxH3视频衔接MontionContext_2119054447769899009.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2087995933471633410.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2089394180136202241.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2090724049633767426.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2091927476283990018.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2093930850265165825.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2094468104112918529.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2096641134952017922.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2099727783529377793.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2102293136897822721.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2104441196906106882.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2108197816526008322.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2110435950810722306.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2113455433640923138.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2113892922319007745.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2114409257784397825.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2114610429753384961.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2115329810900807681.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑支持上传参考图_2100941400337633282.json, 视频生成/图生视频/MiniMaxH3 视频编辑 视频添加物品_2090730748214071297.json, 视频生成/图生视频/MiniMaxH3+视频换背景+视频编辑_2095756640099328001.json, 视频生成/图生视频/MiniMaxH3_视频换背景_视频编辑_2114186136829652994.json, 视频生成/图生视频/MiniMaxH3_视频换背景_视频编辑_2114207563104477185.json, 视频生成/图生视频/MiniMaxH3_视频换背景换衣服_视频编辑_2114516950658412545.json, 视频生成/图生视频/MiniMaxH3视频人物添加物品-视频编辑-电商_2088925088992288769.json, 视频生成/图生视频/MiniMaxH3视频扩展视频编辑视频画面扩展画布扩大_2108924053011656705.json, 视频生成/图生视频/MiniMaxH3视频换背景-视频编辑换背景_2108927681390800898.json, 视频生成/图生视频/MiniMaxH3视频添加物品视频编辑穿着穿戴编辑人物形象编辑_2108909549162942466.json, 视频生成/图生视频/MiniMaxH3视频添加物品视频编辑穿着穿戴编辑人物形象编辑_2110310568484757505.json, 视频生成/图生视频/MiniMaxH3视频添加物品视频编辑穿着穿戴编辑人物形象编辑_2110327392165257218.json, 视频生成/图生视频/MiniMaxH3视频添加物品！视频编辑！B站艾橘溪_2087527157911343105.json, 视频生成/图生视频/MiniMaxH3视频添加物品！视频编辑！_2089879333405024258.json, 视频生成/图生视频/MiniMaxH3视频编辑 换装+动作迁移+全节点注释_2088511380671520770.json, 视频生成/图生视频/视频编辑  MiniMaxH3  视频换背景_2096851490538348545.json, 视频生成/图生视频/视频编辑  MiniMaxH3  视频换背景_2107880307142778881.json, 视频生成/图生视频/视频编辑！MiniMaxH3视频换背景！_2088090526691188738.json, 视频生成/文生视频/MiniMaxH3_视频换背景_视频编辑_2100921498822332417.json, 视频生成/文生视频/超好用🔥MiniMaxH3-视频换背景-视频编辑_2090316317168590850.json, 视频生成/视频生视频/MiniMax-H3  视频换背景  视频编辑_2120821237097259009.json, 视频生成/视频生视频/MiniMax-H3  视频换背景  视频编辑_2120854651854737410.json, 视频生成/视频生视频/MiniMax-H3-视频换背景-视频编辑-AI短剧创作.json, 视频生成/视频生视频/MiniMax-H3-视频换背景-视频编辑-牛哥玩ai.json, 视频生成/视频生视频/MiniMaxH3  视频换背景   视频编辑_2120745439975788546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_20
 
-> 由 `engine/knowledge_consolidation` 从 37 个 workflow 归纳得出（视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2068585961738559490.json、视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2069032676627144706.json、视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2076643625286594562.json、视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2104891951400177666.json、视频生成/图生视频/Animate动作迁移极速版 复刻跳舞（自动尺寸）_2104922237492088834.json…）
+> 由 `engine/knowledge_consolidation` 从 45 个 workflow 归纳得出（平台全量/视频outpaint_2095726901141790722.json、平台全量/视频编辑 双人替换 MiniMaxH3_2118752939245391874.json、平台全量/视频编辑 双人替换 MiniMaxH3视频衔接MontionContext_2119054447769899009.json、视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2087995933471633410.json、视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2089394180136202241.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：37
+- **样本数**：45
 - **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 37 个 workflow 都包含：
-- `BatchCount+`
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `ImageBatch`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `RepeatImageBatch`
+全部 45 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy mathInt`
+- `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 36/37 个有
-- `easy float` —— 36/37 个有
-- `GetNode` —— 35/37 个有
-- `RHHiddenNodes` —— 35/37 个有
-- `SetNode` —— 35/37 个有
-- `easy cleanGpuUsed` —— 34/37 个有
-- `WanVideoBlockSwap` —— 28/37 个有
-- `WanVideoSetBlockSwap` —— 28/37 个有
-- `PreviewImage` —— 25/37 个有
-- `Int` —— 23/37 个有
-- `VRAMReserver` —— 23/37 个有
-- `WanVideoLoraSelect` —— 23/37 个有
-- `easy showAnything` —— 19/37 个有
-- `easy int` —— 15/37 个有
-- `LazySwitch1way` —— 14/37 个有
-- `easy boolean` —— 14/37 个有
-- `CR Text` —— 13/37 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 13/37 个有
-- `easy compare` —— 13/37 个有
-- `easy imageSize` —— 13/37 个有
-- `孤海注释` —— 13/37 个有
-- `LazySwitch2way` —— 12/37 个有
-- `ImageScaleToTotalPixels` —— 11/37 个有
-- `LayerUtility: ColorImage V2` —— 10/37 个有
-- `MemoryCleaner` —— 9/37 个有
-- `YOLOModelLoader` —— 5/37 个有
-- `easy anythingIndexSwitch` —— 5/37 个有
-- `ImpactSwitch` —— 4/37 个有
-- `BBoxYOLO` —— 3/37 个有
-- `CheckpointLoaderSimple` —— 3/37 个有
-- `CompressImages` —— 3/37 个有
-- `DownloadAndLoadNLFModel` —— 3/37 个有
-- `NLFPredict` —— 3/37 个有
-- `PoseDetectionVitPoseToDWPose` —— 3/37 个有
-- `RenderNLFPoses` —— 3/37 个有
-- `SDPoseDrawKeypoints` —— 3/37 个有
-- `SDPoseKeypointExtractor` —— 3/37 个有
-- `SimpleMath+` —— 3/37 个有
-- `VideoCombineNode` —— 3/37 个有
-- `BodyRatioMapperProportionTransfer` —— 2/37 个有
-- `BodyRatioMapperSDPoseRender` —— 2/37 个有
-- `ComfyMathExpression` —— 2/37 个有
-- `Primitive integer [Crystools]` —— 2/37 个有
-- `SDPoseOODLoader` —— 2/37 个有
-- `SDPoseOODProcessor` —— 2/37 个有
-- `WanVideoEncode` —— 2/37 个有
-- `WanVideoUni3C_ControlnetLoader` —— 2/37 个有
-- `WanVideoUni3C_embeds` —— 2/37 个有
-- `ZML_AnyTypeSwitchFiveBoolean` —— 2/37 个有
-- `Bool` —— 1/37 个有
-- `GoohaiUniversalSlider` —— 1/37 个有
-- `SaveImage` —— 1/37 个有
-- `TT_img_enc` —— 1/37 个有
+- `VRAM_Debug` —— 44/45 个有
+- `ComfyMathExpression` —— 42/45 个有
+- `ImageConcanate` —— 42/45 个有
+- `PrimitiveFloat` —— 42/45 个有
+- `VAEDecodeAudio` —— 42/45 个有
+- `GetNode` —— 41/45 个有
+- `SetNode` —— 41/45 个有
+- `LoadImage` —— 11/45 个有
+- `EmptyImage` —— 3/45 个有
+- `PreviewImage` —— 3/45 个有
+- `孤海注释` —— 3/45 个有
+- `CM_IntToFloat` —— 1/45 个有
+- `CR Text` —— 1/45 个有
+- `MiniMaxH3MotionContext` —— 1/45 个有
+- `MiniMaxH3MotionContextTrim` —— 1/45 个有
+- `PainterVRAM` —— 1/45 个有
+- `easy int` —— 1/45 个有
 
 ## 典型参数
 

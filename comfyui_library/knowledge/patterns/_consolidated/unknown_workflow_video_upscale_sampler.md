@@ -1,75 +1,67 @@
 ---
 name: unknown_workflow_video_upscale_sampler
 type: Unknown Workflow
-frequency: 22
+frequency: 36
 level: moderate
-coverage: 0.820864
-common_nodes: [CM_IntToNumber, CM_NumberToInt, CR String To Number, ImageResize+, ImageResizeAdvanced, ImageUpscaleWithModel, ImpactSwitch, Int, JjkText, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrimitiveInt, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.874083
+common_nodes: [CR Text, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadWanVideoT5TextEncoder, SimpleMath+, UpscaleModelLoader, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/Wan 2.1 万相图生视频，王炸效果_1922826056431013890.json, 图片生成/文生图/图生万物视频，效果炸雷_1938593355519418370.json, 视频生成/图生视频/KJ版 WAN2.1-加速高清放大补帧720P图生视频基础工作流 -Starai_1894638096829317121.json, 视频生成/图生视频/Painting into a Moving Scroll   丹青化影卷_1982013169939955713.json, 视频生成/图生视频/WAN2.1 万相图生视频_1926968695568912386.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂_1894610227340181506.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂_1976926157406932994.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂_2044597335015038978.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂_2053734513896902657.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂！_2038804340802064386.json, 视频生成/图生视频/WAN2.2 万相图生视频｜完美效果_1952903876091514881.json, 视频生成/图生视频/万相图生视频，就问你怕不怕_1913918881457733633.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2041692917349224449.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2042065465006104577.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2046394891109933057.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2052558625096388610.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2077563193140006913.json, 视频生成/图生视频/图生视频----WAN2.1+万相图生视频_2053667111112851458.json, 视频生成/图生视频/图生视频----WAN2.1+万相图生视频_2054018452377088002.json, 视频生成/图生视频/最新 万相图生视频_1919003466109222914.json, 视频生成/文生视频/【粒子生成】WAN2.1 万物粒子生成视频特效_1929695219774603265.json, 视频生成/文生视频/【美女背影】wan2.1 I2V 14Bi2v 走路背影_1929716786508500994.json]
+members: [平台全量/图生视频低动态高级感镜头，自动补充提示词_2054754263183708161.json, 视频生成/图生视频/3D流体模型_海底火山立方体沙盘_FusionX 图生视频_1947497424588804097.json, 视频生成/图生视频/FusionX 图生视频_1940026331533053954.json, 视频生成/图生视频/FusioniX 加速 文生视频 质量爱了了_1934583332875509762.json, 视频生成/图生视频/WAN2.1——图生视频_2057084375598190594.json, 视频生成/图生视频/WAN2.1——图生视频_2057084731044491265.json, 视频生成/图生视频/fusionx 图生视频提速补版又爱了+lora_1934580843572862978.json, 视频生成/图生视频/lightx2v 4k视频加速 Wan2.1 图生视频_1935278134251933697.json, 视频生成/图生视频/低动态高级感镜头图生视频 -自动补充提示词-丰富镜头感_2055195231242473473.json, 视频生成/图生视频/低动态高级感镜头图生视频 -自动补充提示词-丰富镜头感_2056229188012609537.json, 视频生成/图生视频/低动态高级感镜头图生视频 -自动补充提示词-丰富镜头感_2079527648375689218.json, 视频生成/图生视频/低动态高级感镜头，自动补充提示词_2075860767596957698.json, 视频生成/图生视频/图生视频+大片高清镜头（1）_2068610763643777025.json, 视频生成/图生视频/图生视频_2066417001643466754.json, 视频生成/图生视频/图生视频_2067229672198467586.json, 视频生成/图生视频/图生视频低动态高级感镜头_2057085752223289345.json, 视频生成/图生视频/图生视频低动态高级感镜头_2057099932099764225.json, 视频生成/图生视频/图生视频低动态高级感镜头_2058161802457993218.json, 视频生成/图生视频/图生视频低动态高级感镜头_2058161864189759489.json, 视频生成/图生视频/图生视频低动态高级感镜头_2058214377865699330.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2053757688374407170.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2054373012950003714.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2057090521096605698.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2057702030290022402.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2059161156807389185.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2061465630519422977.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2061806642852884482.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2061848754252247041.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2079207279131447297.json, 视频生成/图生视频/图生视频高清镜头，大片既视感！_2060256682403516417.json, 视频生成/图生视频/图生视频高清镜头，大片既视感！_2061266083507691521.json, 视频生成/图生视频/图生视频高清镜头，大片既视感！_2068190799677972481.json, 视频生成/图生视频/高清图生视频_2066424206253973505.json, 视频生成/图生视频/高清图生视频_2069697154142269441.json, 视频生成/图生视频/🤖FusionX 图生视频  超清臻享版🤖_1934859937551949825.json, 视频生成/图生视频/🤖【Wan2.1视频】lightx2v 图生视频  超清加速版🤖_1935242546002198529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/Wan 2.1 万相图生视频，王炸效果_1922826056431013890.json、图片生成/文生图/图生万物视频，效果炸雷_1938593355519418370.json、视频生成/图生视频/KJ版 WAN2.1-加速高清放大补帧720P图生视频基础工作流 -Starai_1894638096829317121.json、视频生成/图生视频/Painting into a Moving Scroll   丹青化影卷_1982013169939955713.json、视频生成/图生视频/WAN2.1 万相图生视频_1926968695568912386.json…）
+> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（平台全量/图生视频低动态高级感镜头，自动补充提示词_2054754263183708161.json、视频生成/图生视频/3D流体模型_海底火山立方体沙盘_FusionX 图生视频_1947497424588804097.json、视频生成/图生视频/FusionX 图生视频_1940026331533053954.json、视频生成/图生视频/FusioniX 加速 文生视频 质量爱了了_1934583332875509762.json、视频生成/图生视频/WAN2.1——图生视频_2057084375598190594.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
+- **样本数**：36
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `CM_IntToNumber`
-- `CM_NumberToInt`
-- `CR String To Number`
-- `ImageResize+`
-- `ImageResizeAdvanced`
-- `ImageUpscaleWithModel`
-- `ImpactSwitch`
-- `Int`
-- `JjkText`
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
+全部 36 个 workflow 都包含：
+- `CR Text`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PrimitiveInt`
+- `SimpleMath+`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
+- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageClipEncode`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `FILM VFI` —— 21/22 个有
-- `ImageResizeKJ` —— 21/22 个有
-- `easy showAnything` —— 21/22 个有
-- `easy textSwitch` —— 21/22 个有
-- `RH_Captioner` —— 19/22 个有
-- `Bjornulf_ShowStringText` —— 18/22 个有
-- `Note _O` —— 18/22 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/22 个有
-- `WanVideoLoraSelect` —— 3/22 个有
-- `ShowText|pysssss` —— 2/22 个有
-- `WD14Tagger|pysssss` —— 2/22 个有
-- `Fast Muter (rgthree)` —— 1/22 个有
-- `Label (rgthree)` —— 1/22 个有
-- `LayerUtility: PurgeVRAM` —— 1/22 个有
-- `Note Plus (mtb)` —— 1/22 个有
-- `WanVideoTorchCompileSettings` —— 1/22 个有
-- `easy imageSize` —— 1/22 个有
+- `ImageResizeKJ` —— 35/36 个有
+- `ImpactInt` —— 35/36 个有
+- `LoadImage` —— 35/36 个有
+- `PreviewImage` —— 35/36 个有
+- `WanVideoImageToVideoEncode` —— 35/36 个有
+- `CLIPVisionLoader` —— 34/36 个有
+- `Fast Groups Bypasser (rgthree)` —— 34/36 个有
+- `WanVideoClipVisionEncode` —— 34/36 个有
+- `Qwen3VL_Advanced` —— 29/36 个有
+- `ImageScaleToMegapixels` —— 7/36 个有
+- `Text` —— 3/36 个有
+- `WanVideoLoraSelect` —— 3/36 个有
+- `Seed (rgthree)` —— 2/36 个有
+- `WanVideoMagCache` —— 2/36 个有
+- `WanVideoSLG` —— 2/36 个有
+- `easy cleanGpuUsed` —— 2/36 个有
+- `ImageSmartSharpen+` —— 1/36 个有
+- `Int` —— 1/36 个有
+- `Note Plus (mtb)` —— 1/36 个有
+- `WanVideoEmptyEmbeds` —— 1/36 个有
 
 ## 典型参数
 

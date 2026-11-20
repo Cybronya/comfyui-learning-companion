@@ -1,69 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_247
 type: Unknown Workflow
-frequency: 9
+frequency: 11
 level: moderate
-coverage: 0.87
-common_nodes: [BasicScheduler, CLIPTextEncode, DualCLIPLoader, Fast Groups Bypasser (rgthree), GuHaiAutoImageSplit, ImageScaleToTotalPixels, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, PreviewImage, SamplerCustom, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+coverage: 0.836091
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_2078887009887809537.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-30秒直出_2063484969040834562.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2063953334742114305.json, 视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版_2063277846595981313.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2063095957193056258.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2064190064883757058.json, 视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪，电商产品宣传_2070140251913412610.json, 视频生成/图生视频/LTX2.3-最新导演台_2063451462600052737.json, 视频生成/图生视频/导演台LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2077620703326728194.json]
+members: [视频生成/图生视频/音频+图片数字人_2004504763003793409.json, 视频生成/图生视频/（单人版）Infinite Talk超自然无限长度图生视频数字人V3_1957839924697427969.json, 视频生成/图生视频/（单人版）Infinite Talk超自然无限长度视频生视频数字人V3_1957830385059164161.json, 视频生成/图生视频/（鹊桥渡版）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1961400191553355778.json, 视频生成/图生视频/（黑版）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1963526752599511041.json, 视频生成/图生视频/🦖Infinite Talk提示词调度KTV数字人_1959825457199919105.json, 视频生成/图生视频/🦖最强嘴替（数字人）_1977593107141283841.json, 视频生成/文生视频/(正面）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2035404909490741250.json, 视频生成/文生视频/Infinite+talk数字人动态加强高版V3.5_1991175069309448194.json, 音频生成/音频生成/对口型数字人Infinite+Talk_1977882176555470849.json, 音频生成/音频生成/数字人对口型数字人最新Infinite Talk_1975402889982119938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_247
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_2078887009887809537.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-30秒直出_2063484969040834562.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版-电商带货_2063953334742114305.json、视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-升级版_2063277846595981313.json、视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪_2063095957193056258.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/音频+图片数字人_2004504763003793409.json、视频生成/图生视频/（单人版）Infinite Talk超自然无限长度图生视频数字人V3_1957839924697427969.json、视频生成/图生视频/（单人版）Infinite Talk超自然无限长度视频生视频数字人V3_1957830385059164161.json、视频生成/图生视频/（鹊桥渡版）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1961400191553355778.json、视频生成/图生视频/（黑版）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1963526752599511041.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `GuHaiAutoImageSplit`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SamplerCustom`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+全部 11 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXDirectorGuide` —— 7/9 个有
-- `YusuLTXDirector` —— 6/9 个有
-- `CheckpointLoaderSimple` —— 5/9 个有
-- `CreateVideo` —— 5/9 个有
-- `GetVideoComponents` —— 5/9 个有
-- `UNETLoader` —— 4/9 个有
-- `孤海注释` —— 3/9 个有
-- `Label (rgthree)` —— 2/9 个有
-- `Yusu-LTXDirector` —— 2/9 个有
-- `YusuLTXDirectorGuide` —— 2/9 个有
-- `CS-LTXGridDirector` —— 1/9 个有
-- `MuyeTextEditOutput` —— 1/9 个有
-- `PreviewAny` —— 1/9 个有
+- `CR Prompt Text` —— 10/11 个有
+- `JWInteger` —— 10/11 个有
+- `LoadImage` —— 10/11 个有
+- `GetImageSizeAndCount` —— 9/11 个有
+- `PreviewAny` —— 9/11 个有
+- `LoadWanVideoT5TextEncoder` —— 8/11 个有
+- `WanVideoTextEncode` —— 8/11 个有
+- `WanVideoTextEncodeCached` —— 3/11 个有
+- `JWFloat` —— 2/11 个有
+- `GetNode` —— 1/11 个有
+- `Int` —— 1/11 个有
+- `MathExpression|pysssss` —— 1/11 个有
+- `PrimitiveStringMultiline` —— 1/11 个有
+- `SetNode` —— 1/11 个有
+- `VHS_LoadVideo` —— 1/11 个有
+- `WanVideoTorchCompileSettings` —— 1/11 个有
+- `easy int` —— 1/11 个有
 
 ## 典型参数
 

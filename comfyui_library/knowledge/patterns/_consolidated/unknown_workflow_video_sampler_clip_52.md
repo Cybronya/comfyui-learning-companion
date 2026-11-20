@@ -2,82 +2,74 @@
 name: unknown_workflow_video_sampler_clip_52
 type: Unknown Workflow
 frequency: 11
-level: moderate
-coverage: 0.451455
-common_nodes: [Audio Duration (mtb), AudioCrop, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoadAudio, LoadImage, ManualSigmas, MathExpression|pysssss, PromptRelayEncode, SamplerCustom, SetLatentNoiseMask, SetNode, SolidMask, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
+level: strong
+coverage: 0.850727
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, ImageConcanate, ImageResizeKJ, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, easy showAnything, wanBlockSwap]
 problems: []
 missing: []
-members: [数字人/数字人/LTX2.3-超自然口播数字人_2092630885337231361.json, 数字人/数字人/LTX2.3-超自然口播数字人_2092655473743982594.json, 数字人/数字人/zdx_2072563840520376322.json, 数字人/数字人/绝对真实超自然 带货数字人【LTX2.3 高清全自动 奇变版】_2057303275329904641.json, 视频生成/图生视频/LTX2.3-超自然电商口播数字人-自动版_2086680366970138625.json, 视频生成/图生视频/LTX2.3单图对口型_2054532786014433282.json, 视频生成/图生视频/LTX2.3首尾帧数字人（打造你的专属MV）_2054541645990907905.json, 视频生成/图生视频/LTX2.3高清超自然数字人-全自动版_2049461897627443201.json, 视频生成/图生视频/LTX2.3高清超自然电商数字人_2048640323944976386.json, 视频生成/图生视频/LTX2.3高清超自然电商数字人_2049330125983981569.json, 音频生成/音频生成/LTX2.3高清超自然数字人-全自动版_2072579317611196418.json]
+members: [视频生成/图生视频/Wan2.2双模型首尾帧图生视频_2080624345147334658.json, 视频生成/图生视频/Wan2.2双模型首尾帧视频_2082282165500469249.json, 视频生成/图生视频/Wan2.2双模型首尾帧视频_2083014224594427906.json, 视频生成/图生视频/Wan2.2双模型首尾帧视频_2083105850020950017.json, 视频生成/图生视频/最强首尾帧视频 - Wan2.2动漫模型DaSiWa-_2009700904043286530.json, 视频生成/图生视频/首尾帧Wan2.2动漫模型DaSiWa10_2053001977566638081.json, 视频生成/图生视频/首尾震·2张照片丝滑变视频_2010988628385730561.json, 视频生成/文生视频/Wan2.2 Smooth Mix首尾帧_1980878054304206850.json, 视频生成/文生视频/Wan2.2双模型首尾帧视频_2061638984954105858.json, 视频生成/文生视频/Wan2.2双模型首尾帧视频_2064706031250395137.json, 视频生成/文生视频/动图首选+wan2.2首尾帧+全节点注释_2061457988065513474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_52
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/LTX2.3-超自然口播数字人_2092630885337231361.json、数字人/数字人/LTX2.3-超自然口播数字人_2092655473743982594.json、数字人/数字人/zdx_2072563840520376322.json、数字人/数字人/绝对真实超自然 带货数字人【LTX2.3 高清全自动 奇变版】_2057303275329904641.json、视频生成/图生视频/LTX2.3-超自然电商口播数字人-自动版_2086680366970138625.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Wan2.2双模型首尾帧图生视频_2080624345147334658.json、视频生成/图生视频/Wan2.2双模型首尾帧视频_2082282165500469249.json、视频生成/图生视频/Wan2.2双模型首尾帧视频_2083014224594427906.json、视频生成/图生视频/Wan2.2双模型首尾帧视频_2083105850020950017.json、视频生成/图生视频/最强首尾帧视频 - Wan2.2动漫模型DaSiWa-_2009700904043286530.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：11
-- **可信度**：中等可信
-- **平均知识覆盖**：45%
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetNode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CR Text`
+- `ImageConcanate`
+- `ImageResizeKJ`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ManualSigmas`
 - `MathExpression|pysssss`
-- `PromptRelayEncode`
-- `SamplerCustom`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `WanFirstLastFrameToVideo`
+- `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `DiffusionModelLoaderKJ` —— 10/11 个有
-- `ImageResizeKJv2` —— 10/11 个有
-- `KSamplerSelect` —— 10/11 个有
-- `LoraLoaderModelOnly` —— 10/11 个有
-- `PreviewImage` —— 10/11 个有
-- `TTResolutionSelector` —— 10/11 个有
-- `easy showAnything` —— 10/11 个有
-- `Float` —— 9/11 个有
-- `MelBandRoFormerModelLoader` —— 9/11 个有
-- `MelBandRoFormerSampler` —— 9/11 个有
-- `Text` —— 9/11 个有
-- `easy cleanGpuUsed` —— 9/11 个有
-- `Int` —— 8/11 个有
-- `1hew_StringJoinMulti` —— 6/11 个有
-- `IntToString` —— 6/11 个有
-- `JSON取值节点` —— 6/11 个有
-- `JoinStrings` —— 6/11 个有
-- `PrimitiveString` —— 6/11 个有
-- `RH_LLMAPI_Pro_Node` —— 6/11 个有
-- `PreviewAny` —— 5/11 个有
-- `JWFloat` —— 2/11 个有
-- `StringConstant` —— 2/11 个有
-- `Text Multiline` —— 2/11 个有
-- `AudioSeparation` —— 1/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
-- `RHHiddenNodes` —— 1/11 个有
+- `Images to RGB` —— 8/11 个有
+- `Qwen3_VQA` —— 8/11 个有
+- `easy textSwitch` —— 8/11 个有
+- `intToFloat _O` —— 6/11 个有
+- `GetNode` —— 4/11 个有
+- `RH_LLMAPI_NODE` —— 4/11 个有
+- `SetNode` —— 4/11 个有
+- `ImpactSwitch` —— 3/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
+- `Maoyu_ListToString` —— 1/11 个有
+- `SaveImage` —— 1/11 个有
+- `TT_img_enc` —— 1/11 个有
+- `YC_SingleTextNode` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 11 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 11 | 100% |
+| 采样算法 | 1 | 1 - 1 | 11 | 100% |
+| 调度器 | euler | - | 11 | 82% |
+| 重绘幅度 | simple | - | 11 | 100% |
 
 ## 常见问题
 
@@ -85,4 +77,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，11 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，11 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，11 个样本，一致性 82%
+- 重绘幅度 最常用 simple，11 个样本，一致性 100%

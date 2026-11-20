@@ -1,66 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_clip_153
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.812
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncodeFlux, DualCLIPLoader, KSamplerSelect, LoraLoader, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.853
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/电商洗图_1925833819461750786.json, 图片生成/文生图/Flux网红美女跑图工作流1124_1893653901269241858.json, 图片生成/文生图/发光粒子衣服_1916014463953076225.json, 图片生成/文生图/最强joy3反推+Flux网红美女跑图工作流_1934549977387442177.json]
+members: [图片生成/文生图/Anima-702-护士长_2072661208766959618.json, 平台全量/Flux2 Klein9b 提取服装精修 服装提取 3D虚拟模特 服装展示 隐形模特 移除褶皱_2020698339708243970.json, 平台全量/Flux2-Klein9b 万能提取服装 服装3D立体展示效果 精修褶皱 修复移除褶皱_2025379732933578754.json, 平台全量/Flux2-Klein9b 万能提取服装 服装3D立体展示效果 精修褶皱 修复移除褶皱_2025804639882448898.json, 平台全量/Flux2_Klein光影写实风格颜色匹配_2062402292011323393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_153
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/电商洗图_1925833819461750786.json、图片生成/文生图/Flux网红美女跑图工作流1124_1893653901269241858.json、图片生成/文生图/发光粒子衣服_1916014463953076225.json、图片生成/文生图/最强joy3反推+Flux网红美女跑图工作流_1934549977387442177.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Anima-702-护士长_2072661208766959618.json、平台全量/Flux2 Klein9b 提取服装精修 服装提取 3D虚拟模特 服装展示 隐形模特 移除褶皱_2020698339708243970.json、平台全量/Flux2-Klein9b 万能提取服装 服装3D立体展示效果 精修褶皱 修复移除褶皱_2025379732933578754.json、平台全量/Flux2-Klein9b 万能提取服装 服装3D立体展示效果 精修褶皱 修复移除褶皱_2025804639882448898.json、平台全量/Flux2_Klein光影写实风格颜色匹配_2062402292011323393.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncodeFlux`
-- `DualCLIPLoader`
+全部 5 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
-- `LoraLoader`
+- `LoraLoaderModelOnly`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Aspect Ratio SDXL` —— 3/4 个有
-- `EmptyLatentImage` —— 3/4 个有
-- `LoadImage` —— 3/4 个有
-- `RepeatLatentBatch` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `StringFunction|pysssss` —— 3/4 个有
-- `VAEEncode` —— 3/4 个有
-- `Florence2ModelLoader` —— 2/4 个有
-- `Florence2Run` —— 2/4 个有
-- `Float` —— 1/4 个有
-- `ImageResizeKJ` —— 1/4 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/4 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/4 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `ColorMatch` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `EmptySD3LatentImage` —— 1/5 个有
+- `FLS_SamplerV4` —— 1/5 个有
+- `FluxKontextImageScale` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `Latent Noise Injection` —— 1/5 个有
+- `PlaySound|pysssss` —— 1/5 个有
+- `Power Lora Loader (rgthree)` —— 1/5 个有
+- `RTXVideoSuperResolution` —— 1/5 个有
+- `ResolutionSelector` —— 1/5 个有
+- `SplitSigmasDenoise` —— 1/5 个有
+- `UnetLoaderGGUF` —— 1/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| LoRA 模型强度 | 0.6 | 0.1 - 1 | 4 | 39% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
-| 宽度 | 800 | 800 - 800 | 3 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,7 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- LoRA 模型强度 中位数 0.6，观测区间 0.1 - 1，4 个样本，取值分散，一致性仅 39%
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 宽度 中位数 800，观测区间 800 - 800，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，3 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,64 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_665
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.852333
-common_nodes: [CLIPVisionLoader, DrawViTPose, INTConstant, ImageFromBatch, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+frequency: 4
+level: strong
+coverage: 0.93575
+common_nodes: [BasicScheduler, CLIPTextEncode, CM_FloatToInt, CR Text, DualCLIPLoader, KSamplerSelect, LTXVAddGuide, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoraLoaderModelOnly, SamplerCustom, UNETLoader, VAEDecode, VAEEncode, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [数字人/数字人/视频制作222_2013521126407806978.json, 视频生成/图生视频/SAM3 + Wan2.2_Animate 视频制作最新版_2003695576329953281.json, 视频生成/图生视频/传视频，指导图像人物按照视频动作跳舞（SAM3 + Wan2.2_Animate）动作迁移_2038176631273037826.json]
+members: [平台全量/LTX2.3 Edit Anything视频编辑_风格转绘_物体移除_2052715103241416706.json, 平台全量/LTX2.3 视频一键换装与场景替换工作流_2058448678020542466.json, 平台全量/[ComfyUI]LTX2.3视频编辑1_2052017192589381634.json, 平台全量/视频-编辑_转绘_移除-LTX2.3-Edit Anything_2055203510806949889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_665
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/视频制作222_2013521126407806978.json、视频生成/图生视频/SAM3 + Wan2.2_Animate 视频制作最新版_2003695576329953281.json、视频生成/图生视频/传视频，指导图像人物按照视频动作跳舞（SAM3 + Wan2.2_Animate）动作迁移_2038176631273037826.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/LTX2.3 Edit Anything视频编辑_风格转绘_物体移除_2052715103241416706.json、平台全量/LTX2.3 视频一键换装与场景替换工作流_2058448678020542466.json、平台全量/[ComfyUI]LTX2.3视频编辑1_2052017192589381634.json、平台全量/视频-编辑_转绘_移除-LTX2.3-Edit Anything_2055203510806949889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CR Text`
+- `DualCLIPLoader`
+- `KSamplerSelect`
+- `LTXVAddGuide`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly`
+- `SamplerCustom`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoaderKJ`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorToMask` —— 2/3 个有
-- `LayerUtility: ImageBlend V2` —— 2/3 个有
-- `SDPoseOODLoader` —— 2/3 个有
-- `SDPoseOODProcessor` —— 2/3 个有
-- `Int` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
+- `ImageConcanate` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `CLIPLoader` —— 1/4 个有
+- `DeepTranslatorTextNode` —— 1/4 个有
+- `Float` —— 1/4 个有
+- `GetImageRangeFromBatch` —— 1/4 个有
+- `GetImageSizeAndCount` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
+- `MathExpression|pysssss` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `StringConcatenate` —— 1/4 个有
+- `TextGenerate` —— 1/4 个有
+- `easy int` —— 1/4 个有
+- `easy seed` —— 1/4 个有
+- `easy showAnything` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 4 | 100% |
+| 高度 | 25 | 25 - 25 | 4 | 100% |
 
 ## 常见问题
 
@@ -66,4 +79,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）

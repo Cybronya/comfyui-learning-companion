@@ -2,66 +2,65 @@
 name: unknown_workflow_video_sampler_clip_101
 type: Unknown Workflow
 frequency: 7
-level: weak
-coverage: 0.95
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, ModelSamplingSD3, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
-problems: []
+level: strong
+coverage: 0.829143
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSampler, LoadImage, ModelSamplingSD3, PrimitiveInt, VAEDecode, WanVaceToVideo, WanVideoVACEStartToEndFrame]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/Wan2.2 smoothmix v2 文生视频+ 补帧_2064601257079296001.json, 视频生成/文生视频/Wan2.2 文生视频工作流_1991800430478962690.json, 视频生成/文生视频/Wan2.2-RemixV2-comfy-文生视频在线运行工作流_1988239107312762882.json, 视频生成/文生视频/Wan2.2Remix高质量文生视频_1988716572640423937.json, 视频生成/文生视频/Wan2.2文生视频_2002368127193235457.json, 视频生成/文生视频/惊艳文生视频 Remix最新万相 Wan2.2-Remix-Comfy-T2V-文生视频_1998211525884174338.json, "视频生成/文生视频/纯净万相 Wan2.2-Remix-Comfy-T2V-文生视频 不带lora,带插帧丝滑_2042646743598243841.json"]
+members: [视频生成/文生视频/wan2.2-rapid-mega-aio-v12_1996131644778168321.json, 视频生成/文生视频/wan2.2文生视频_2021070799720943618.json, 视频生成/文生视频/▶Wan2.2-AllInOne-Mega-V12首尾帧、文生视频、图生视频工作流【好奇漫步】_1970121529851867137.json, 视频生成/文生视频/文生视频-AIO-MegaV7_1968182535878488065.json, 视频生成/文生视频/文生视频-AIO-MegaV7_2041408782072287234.json, 视频生成/文生视频/文生视频Wan2.2-MegaAIO_1968902178624741378.json, 视频生成/文生视频/文生视频千里江山图_2048964410516967425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_101
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/Wan2.2 smoothmix v2 文生视频+ 补帧_2064601257079296001.json、视频生成/文生视频/Wan2.2 文生视频工作流_1991800430478962690.json、视频生成/文生视频/Wan2.2-RemixV2-comfy-文生视频在线运行工作流_1988239107312762882.json、视频生成/文生视频/Wan2.2Remix高质量文生视频_1988716572640423937.json、视频生成/文生视频/Wan2.2文生视频_2002368127193235457.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/文生视频/wan2.2-rapid-mega-aio-v12_1996131644778168321.json、视频生成/文生视频/wan2.2文生视频_2021070799720943618.json、视频生成/文生视频/▶Wan2.2-AllInOne-Mega-V12首尾帧、文生视频、图生视频工作流【好奇漫步】_1970121529851867137.json、视频生成/文生视频/文生视频-AIO-MegaV7_1968182535878488065.json、视频生成/文生视频/文生视频-AIO-MegaV7_2041408782072287234.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced`
+- `CheckpointLoaderSimple`
+- `KSampler`
+- `LoadImage`
 - `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
+- `PrimitiveInt`
 - `VAEDecode`
-- `VAELoader`
-- `VHS_VideoCombine`
+- `WanVaceToVideo`
+- `WanVideoVACEStartToEndFrame`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 5/7 个有
-- `RIFE VFI` —— 2/7 个有
-- `Int` —— 1/7 个有
-- `ModelPatchTorchSettings` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `easy int` —— 1/7 个有
-- `孤海注释` —— 1/7 个有
+- `VHS_VideoCombine` —— 6/7 个有
+- `INTConstant` —— 4/7 个有
+- `DuckHideNode` —— 1/7 个有
+- `SaveImage` —— 1/7 个有
+- `ShellAgentPluginInputInteger` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 7 | 71% |
-| Prompt 约束强度(CFG) | 12 | 6 - 30 | 7 | 49% |
-| 采样算法 | 1 | 1 - 3.5 | 7 | 36% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | simple | - | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler_ancestral | - | 7 | 57% |
+| 调度器 | beta | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，7 个样本，一致性 71%
-- Prompt 约束强度(CFG) 中位数 12，观测区间 6 - 30，7 个样本，取值分散，一致性仅 49%
-- 采样算法 中位数 1，观测区间 1 - 3.5，7 个样本，取值分散，一致性仅 36%
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler_ancestral，7 个样本，一致性 57%
+- 调度器 最常用 beta，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

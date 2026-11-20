@@ -1,63 +1,56 @@
 ---
 name: unknown_workflow_video_sampler_vae_123
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.93
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CM_FloatToInt, CR Prompt Text, ImageResize+, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, PlaySound|pysssss, PreviewAudio, SoundFlow_GetLength, VHS_VideoCombine, WanVideoAddAudioEmbeds, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything]
+coverage: 0.857
+common_nodes: [DownloadAndLoadHyVideoTextEncoder, GetImageSizeAndCount, HyVideoBlockSwap, HyVideoDecode, HyVideoEncode, HyVideoEnhanceAVideo, HyVideoI2VEncode, HyVideoModelLoader, HyVideoSampler, HyVideoTeaCache, HyVideoTorchCompileSettings, HyVideoVAELoader, LoadImage, Note _O, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/s2v口播_1962087593619996674.json, 视频生成/图生视频/S2V-长视频数字人工作流_1983508119022149633.json, 视频生成/图生视频/S2V-长视频数字人工作流_1984410578229870594.json, 视频生成/图生视频/video_wan2_2_s2v口播_1981551177856892929.json]
+members: [视频生成/图生视频/KJ版新版混元图生视频人物一致性优化版工作流_1898308200272482306.json, 视频生成/图生视频/图生视频-KJ版新版混元图生视频人物一致性优化版工作流_2065290197557932034.json, 视频生成/图生视频/新版官方开源混元KJ版图生视频_1897648675362164738.json, 视频生成/图生视频/超级加速AccVideo一致性修复混元图生视频_1908742730107727873.json, 视频生成/图生视频/🦖 炸裂版 混元i2v（ 更新至0309）_1897601417920598018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_123
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/s2v口播_1962087593619996674.json、视频生成/图生视频/S2V-长视频数字人工作流_1983508119022149633.json、视频生成/图生视频/S2V-长视频数字人工作流_1984410578229870594.json、视频生成/图生视频/video_wan2_2_s2v口播_1981551177856892929.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/KJ版新版混元图生视频人物一致性优化版工作流_1898308200272482306.json、视频生成/图生视频/图生视频-KJ版新版混元图生视频人物一致性优化版工作流_2065290197557932034.json、视频生成/图生视频/新版官方开源混元KJ版图生视频_1897648675362164738.json、视频生成/图生视频/超级加速AccVideo一致性修复混元图生视频_1908742730107727873.json、视频生成/图生视频/🦖 炸裂版 混元i2v（ 更新至0309）_1897601417920598018.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `CM_FloatToInt`
-- `CR Prompt Text`
-- `ImageResize+`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+全部 5 个 workflow 都包含：
+- `DownloadAndLoadHyVideoTextEncoder`
+- `GetImageSizeAndCount`
+- `HyVideoBlockSwap`
+- `HyVideoDecode`
+- `HyVideoEncode`
+- `HyVideoEnhanceAVideo`
+- `HyVideoI2VEncode`
+- `HyVideoModelLoader`
+- `HyVideoSampler`
+- `HyVideoTeaCache`
+- `HyVideoTorchCompileSettings`
+- `HyVideoVAELoader`
 - `LoadImage`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
-- `PlaySound|pysssss`
-- `PreviewAudio`
-- `SoundFlow_GetLength`
+- `Note _O`
 - `VHS_VideoCombine`
-- `WanVideoAddAudioEmbeds`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 3/4 个有
-- `PreviewImage` —— 2/4 个有
-- `WanVideoBlockSwap` —— 1/4 个有
-- `WanVideoLoraSelectMulti` —— 1/4 个有
-- `WanVideoModelLoader` —— 1/4 个有
-- `WanVideoSetBlockSwap` —— 1/4 个有
-- `WanVideoSetLoRAs` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
+- `Image Resize` —— 4/5 个有
+- `LayerUtility: PurgeVRAM` —— 4/5 个有
+- `Note Plus (mtb)` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `HyVideoLoraSelect` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `JWImageResizeByLongerSide` —— 1/5 个有
+- `JWInteger` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

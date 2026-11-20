@@ -1,89 +1,75 @@
 ---
 name: image_to_image_sampler_unet_vae_52
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.4285
-common_nodes: [CLIPLoader, CM_BoolToInt, CR Text Replace, ComfySwitchNode, DapaoMakeImageBatchNode, ExecutionBlocker, GetNode, ImageScaleToTotalPixels, ImpactNeg, JjkText, JsonExtractString, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, QwenImage21Cache, SaveImage, SaveImageAdvanced, SetNode, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy anythingIndexSwitch, easy seed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, 孤海注释, 忽略多组孤海]
-problems: [Steps较低可能导致细节不足]
+frequency: 5
+level: strong
+coverage: 0.8522
+common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, ConditioningZeroOut, Fast Groups Bypasser (rgthree), ImageConcanate, KSampler, LoadImage, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/反推提示词/Qwen image 2.1图像编辑(8)4步加速版_2103517980582834177.json, 图片生成/图生图/图像编辑by Qwen image 2.1 自动优化提示词_2102274359825100801.json]
+members: [图片生成/图生图/Qwen_edit服装lora——服装提取、上身迁移工作流_1967424202137591810.json, 图片生成/图生图/万物迁移 · 千问服装迁移 1.0（可提取上身服装）_1967251249718550530.json, 图片生成/图生图/服装提取+上身迁移工作流_1967210000202522625.json, 图片生成/图生图/衣服替换加上身模特_2002451937192755201.json, 平台全量/服装提取+上身迁移工作流_1980585142341255170.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_52
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Qwen image 2.1图像编辑(8)4步加速版_2103517980582834177.json、图片生成/图生图/图像编辑by Qwen image 2.1 自动优化提示词_2102274359825100801.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen_edit服装lora——服装提取、上身迁移工作流_1967424202137591810.json、图片生成/图生图/万物迁移 · 千问服装迁移 1.0（可提取上身服装）_1967251249718550530.json、图片生成/图生图/服装提取+上身迁移工作流_1967210000202522625.json、图片生成/图生图/衣服替换加上身模特_2002451937192755201.json、平台全量/服装提取+上身迁移工作流_1980585142341255170.json）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：43%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CFGNorm`
 - `CLIPLoader`
-- `CM_BoolToInt`
-- `CR Text Replace`
-- `ComfySwitchNode`
-- `DapaoMakeImageBatchNode`
-- `ExecutionBlocker`
-- `GetNode`
-- `ImageScaleToTotalPixels`
-- `ImpactNeg`
-- `JjkText`
-- `JsonExtractString`
+- `ConditioningZeroOut`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageConcanate`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `QwenImage21Cache`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `SaveImageAdvanced`
-- `SetNode`
-- `TextEncodeQwenImage21`
+- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy seed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `孤海注释`
-- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageRGBA2RGB` —— 1/2 个有
-- `SaveLatent` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 4/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `ImageResizeKJv2` —— 3/5 个有
+- `SeedVR2` —— 3/5 个有
+- `Anything Everywhere3` —— 1/5 个有
+- `JjkText` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `RHHiddenNodes` —— 1/5 个有
+- `easy imageConcat` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 29 | - | 2 | 28% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 20 | 20 - 20 | 5 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | 2.5 - 2.5 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 29，样本不足，未给区间，2 个样本，取值分散，一致性仅 28%
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 2.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

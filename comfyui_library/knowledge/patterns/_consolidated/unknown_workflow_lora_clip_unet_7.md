@@ -1,84 +1,60 @@
 ---
 name: unknown_workflow_lora_clip_unet_7
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.773167
-common_nodes: [BatchImagesNode, BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, CreateVideo, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, SaveVideo, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: weak
+coverage: 0.961111
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Bernini多图参考成片_2062857023867408385.json, 数字人/数字人/贝尔尼尼Bernini 视频编辑加速版_2072937099875143681.json, 视频生成/图生视频/Bernini Prompt Relay多图参考时序控制视频_2067931552071376897.json, 视频生成/图生视频/Bernini+Prompt Relay视频编辑or多图参考_2068343750555955202.json, 视频生成/图生视频/Bernini多图参考视频_2067557998221946881.json, 视频生成/图生视频/bernini context视频编辑不限时长_2073236445627772930.json]
+members: [视频生成/文生视频/Wan2.1_1.3B_BF16_FunInPMPSLoRA_Sage_T2V_2037780855766126593.json, 视频生成/文生视频/Wan2.2+WAN2.1-lightx2v文生视频_1949895198085136386.json, 视频生成/文生视频/Wan2.2-T2V-A14B-4steps-250928-dyno-NativeComfy_1974515256741507074.json, 视频生成/文生视频/Wan2.2_14B_文生视频-加速版-KJ模型_1950219353737314306.json, 视频生成/文生视频/【加速版】Wan2.2 文生视频_1950372812230934530.json, 视频生成/文生视频/文生视频（解禁模型）：Wan2.2_Remix_2053378746035515394.json, 视频生成/文生视频/文生视频（解禁模型）：Wan2.2_Remix_2068556222554533890.json, 视频生成/文生视频/最强文生视频 wan2.2_1952267409933717505.json, 视频生成/文生视频/电商模特IP Lora 视频版 wan2.2_1985602072307552257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_clip_unet_7
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Bernini多图参考成片_2062857023867408385.json、数字人/数字人/贝尔尼尼Bernini 视频编辑加速版_2072937099875143681.json、视频生成/图生视频/Bernini Prompt Relay多图参考时序控制视频_2067931552071376897.json、视频生成/图生视频/Bernini+Prompt Relay视频编辑or多图参考_2068343750555955202.json、视频生成/图生视频/Bernini多图参考视频_2067557998221946881.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/Wan2.1_1.3B_BF16_FunInPMPSLoRA_Sage_T2V_2037780855766126593.json、视频生成/文生视频/Wan2.2+WAN2.1-lightx2v文生视频_1949895198085136386.json、视频生成/文生视频/Wan2.2-T2V-A14B-4steps-250928-dyno-NativeComfy_1974515256741507074.json、视频生成/文生视频/Wan2.2_14B_文生视频-加速版-KJ模型_1950219353737314306.json、视频生成/文生视频/【加速版】Wan2.2 文生视频_1950372812230934530.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：77%
+- **样本数**：9
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BatchImagesNode`
-- `BerniniConditioning`
-- `BerniniPromptEnhancer`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CreateVideo`
-- `ImageResizeKJv2`
-- `LoadImage`
+- `EmptyHunyuanLatentVideo`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PreviewAny`
-- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Bool` —— 5/6 个有
-- `ComfySwitchNode` —— 5/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
-- `PrimitiveInt` —— 5/6 个有
-- `RH_LLMAPI_NODE` —— 5/6 个有
-- `TTP_text_mix` —— 5/6 个有
-- `TextInput_` —— 5/6 个有
-- `BasicScheduler` —— 4/6 个有
-- `KSamplerAdvanced` —— 4/6 个有
-- `KSamplerSelect` —— 4/6 个有
-- `SplitSigmas` —— 4/6 个有
-- `StringReplace` —— 4/6 个有
-- `ConditioningZeroOut` —— 3/6 个有
-- `EmptyHunyuanLatentVideo` —— 3/6 个有
-- `BerniniPromptResultParser` —— 2/6 个有
-- `MaxNode` —— 2/6 个有
-- `PromptRelayEncodeTimeline` —— 2/6 个有
-- `SamplerCustom` —— 2/6 个有
-- `VHS_LoadVideo` —— 2/6 个有
-- `VHS_VideoCombine` —— 2/6 个有
-- `VRAM_Debug` —— 2/6 个有
-- `easy convertAnything` —— 2/6 个有
-- `GetVideoComponents` —— 1/6 个有
-- `ImageConcanate` —— 1/6 个有
-- `LoadVideo` —— 1/6 个有
-- `PromptRelayEncode` —— 1/6 个有
-- `RHLLMChatNode` —— 1/6 个有
-- `SplitStringByDelimiter` —— 1/6 个有
-- `WanContextWindowsManual` —— 1/6 个有
+- `ModelSamplingSD3` —— 8/9 个有
+- `KSamplerAdvanced` —— 7/9 个有
+- `CreateVideo` —— 6/9 个有
+- `SaveVideo` —— 6/9 个有
+- `PathchSageAttentionKJ` —— 5/9 个有
+- `Text` —— 4/9 个有
+- `VHS_VideoCombine` —— 3/9 个有
+- `ImpactInt` —— 2/9 个有
+- `LayerUtility: PurgeVRAM` —— 2/9 个有
+- `SimpleMath+` —— 2/9 个有
+- `easy seed` —— 2/9 个有
+- `KSampler` —— 1/9 个有
+- `WanMoeKSampler` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 10 | 10 - 10 | 4 | 100% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 采样步数 | fixed | - | 9 | 56% |
+| Prompt 约束强度(CFG) | 8 | 4 - 20 | 9 | 35% |
+| 采样算法 | 1 | 1 - 3.5 | 8 | 33% |
+| 调度器 | euler | - | 9 | 56% |
+| 重绘幅度 | simple | - | 9 | 67% |
 
 ## 常见问题
 
@@ -86,8 +62,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，4 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 采样步数 最常用 fixed，9 个样本，一致性 56%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 20，9 个样本，取值分散，一致性仅 35%
+- 采样算法 中位数 1，观测区间 1 - 3.5，8 个样本，取值分散，一致性仅 33%
+- 调度器 最常用 euler，9 个样本，一致性 56%
+- 重绘幅度 最常用 simple，9 个样本，一致性 67%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

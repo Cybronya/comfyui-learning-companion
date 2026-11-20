@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_sampler_clip_unet_186
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.876286
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DisableNoise, FlipSigmas, FluxForwardODESampler, FluxReverseODESampler, InFluxModelSamplingPred, LoadImage, OutFluxModelSamplingPred, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.929875
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/64.tonnie-Zimage逆降噪精修（效果反而变得极差）_2009428798395125762.json, 图片生成/图生图/FLUX一键精修增强版本_1892213225352765442.json, 图片生成/图生图/Z-image-万物精修（速度狠快）_2001643362954407937.json, 图片生成/图生图/一键产品精修_1917438601485811714.json, 图片生成/图生图/一键产品精修_1930085411941466113.json, 图片生成/图生图/产品精修_1900359476417916930.json, 图片生成/图生图/精修3.0_1949401662776586242.json]
+members: [图片生成/图生图/klein人物资产图三视图工作流_2085581343009886209.json, 图片生成/图生图/klein人物资产图四视图工作流_2095363498720186370.json, 图片生成/图生图/z2.tonnie-Klein单图编辑_2007964265013059585.json, 图片生成/图生图/z3.tonnie-klein双图编辑_2012791905364480002.json, 图片生成/图生图/z4.tonnie-klein三图编辑_2012802358866092033.json, 图片生成/图生图/人物换装-Klein-9B-工作流_2041526824202674177.json, 图片生成/图生图/最新Flux.2-Klein单图编辑双图编辑文生图（4B加速版工作流）1.0_2013425810153152514.json, 图片生成/图生图/角色四视图-klein9b_2083577051046567937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_186
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/64.tonnie-Zimage逆降噪精修（效果反而变得极差）_2009428798395125762.json、图片生成/图生图/FLUX一键精修增强版本_1892213225352765442.json、图片生成/图生图/Z-image-万物精修（速度狠快）_2001643362954407937.json、图片生成/图生图/一键产品精修_1917438601485811714.json、图片生成/图生图/一键产品精修_1930085411941466113.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/klein人物资产图三视图工作流_2085581343009886209.json、图片生成/图生图/klein人物资产图四视图工作流_2095363498720186370.json、图片生成/图生图/z2.tonnie-Klein单图编辑_2007964265013059585.json、图片生成/图生图/z3.tonnie-klein双图编辑_2012791905364480002.json、图片生成/图生图/z4.tonnie-klein三图编辑_2012802358866092033.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 8 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DisableNoise`
-- `FlipSigmas`
-- `FluxForwardODESampler`
-- `FluxReverseODESampler`
-- `InFluxModelSamplingPred`
+- `EmptyFlux2LatentImage`
+- `KSamplerSelect`
 - `LoadImage`
-- `OutFluxModelSamplingPred`
+- `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
@@ -41,29 +39,20 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 6/7 个有
-- `DualCLIPLoader` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `FluxDeGuidance` —— 4/7 个有
-- `Image Lucy Sharpen` —— 4/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
-- `LoraLoaderModelOnly` —— 4/7 个有
-- `ImageResize+` —— 3/7 个有
-- `CLIPLoader` —— 2/7 个有
-- `FluxGuidance` —— 2/7 个有
-- `Anything Everywhere` —— 1/7 个有
-- `CR Simple Image Compare` —— 1/7 个有
-- `ConditioningAddConDelta` —— 1/7 个有
-- `ConditioningScale` —— 1/7 个有
-- `ConditioningSubtract` —— 1/7 个有
-- `ConfigureModifiedFlux` —— 1/7 个有
-- `Display Int (rgthree)` —— 1/7 个有
-- `FlowEditGuider` —— 1/7 个有
-- `FlowEditSampler` —— 1/7 个有
-- `Get Image Size` —— 1/7 个有
-- `GetImageSize+` —— 1/7 个有
-- `INTConstant` —— 1/7 个有
-- `ImpactInt` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `Flux2Scheduler` —— 5/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `PreviewImage` —— 4/8 个有
+- `BasicScheduler` —— 3/8 个有
+- `ModelSamplingAuraFlow` —— 3/8 个有
+- `easy int` —— 3/8 个有
+- `CR Text Concatenate` —— 2/8 个有
+- `JjkText` —— 2/8 个有
+- `ResizeImagesByLongerEdge` —— 2/8 个有
+- `GetImageSize+` —— 1/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `ImageScaleToTotalPixels` —— 1/8 个有
+- `ResolutionSelector` —— 1/8 个有
 
 ## 典型参数
 

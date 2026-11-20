@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_277
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.978778
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_DialogueGenerate, T8_IndexTTS25_DialogueScript, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_RoleLibrary, T8_IndexTTS25_VoiceProfile]
+coverage: 0.8824
+common_nodes: [CR Text, LoadAudio, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json, 音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json, 音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json, 音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json, 音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json, 音频生成/音频生成/index TTS 2.5双人对话_2106950122910347266.json, 音频生成/音频生成/index tts2.5多角色语音克隆_2090297846103891969.json, 音频生成/音频生成/indexTTS2.5单人srt_2109135687684542465.json, 音频生成/音频生成/双人对话（语音克隆）indexTTS2.5 双人音色模仿 台词编辑_2108947740846809090.json]
+members: [音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json, 音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json, 音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json, 音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json, 音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json, 音频生成/音频生成/Soulx-podcast单人语音克隆_1984080844845449217.json, 音频生成/音频生成/Soulx-podcast双人对话语音克隆_1984822307040477186.json, 音频生成/音频生成/Soulx单人语音克隆_1984192624682811393.json, 音频生成/音频生成/Soulx双人语音克隆_1985525949963845634.json, 音频生成/音频生成/多人普通话、河南话、粤语、四川话音色克隆_2019250961474129921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_277
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5多人对话SRT自动语速控制_2094793005919195138.json、音频生成/音频生成/IndexTTS 2.5多人对话_2089775738533801985.json、音频生成/音频生成/IndexTTS 2.5多人对话（SRT自动语速控制）2608_2094635655593811970.json、音频生成/音频生成/IndexTTS 2.5逐句情感控制_2094492239849410561.json、音频生成/音频生成/IndexTTS2.5多角色对话-SRT剧本配音工作流_2094790441936973826.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/SoulX  Podcast方言语音克隆_1985978787781324802.json、音频生成/音频生成/SoulX - Podcast 单人语音克隆 _ 双人对话 （ 粤语 _ 四川 _ 河南 ）工作流_1986391891249950722.json、音频生成/音频生成/SoulX Podcast常规语音克隆（普通话、英文）_1982712454398517250.json、音频生成/音频生成/SoulX-Podcas TTS （带方言）_1985552859305594881.json、音频生成/音频生成/SoulX-Podcast 方言语音克隆_1985596044681662466.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CR Text`
 - `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_DialogueGenerate`
-- `T8_IndexTTS25_DialogueScript`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_RoleLibrary`
-- `T8_IndexTTS25_VoiceProfile`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_SamplingConfig` —— 3/9 个有
-- `Text` —— 1/9 个有
-- `孤海注释` —— 1/9 个有
+- `SaveAudio` —— 6/10 个有
+- `SaveAudioMP3` —— 6/10 个有
+- `CR Text Concatenate` —— 3/10 个有
+- `SaveImage` —— 3/10 个有
+- `String` —— 1/10 个有
 
 ## 典型参数
 

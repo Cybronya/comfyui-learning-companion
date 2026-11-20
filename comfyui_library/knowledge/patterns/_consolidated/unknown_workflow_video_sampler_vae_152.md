@@ -1,55 +1,67 @@
 ---
 name: unknown_workflow_video_sampler_vae_152
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [AIO_Preprocessor, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.9565
+common_nodes: [ImagePadKJ, ImageResizeKJ, Int, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/All-in-one 视频驱动图片_1965428165915103234.json, 视频生成/图生视频/wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json, 视频生成/文生视频/WAN2.2-AllInOne控制+参考_1963899111291572225.json]
+members: [数字人/数字人/字节开源Phantom 14B-多图参考电商带货-产品介绍视频生成-StarAI_1927665720824610817.json, 视频生成/图生视频/phantom图生视频工作流_1917413592033853442.json, 视频生成/图生视频/双图Phantom视频版FX人物一致性_1934212623216898050.json, 视频生成/图生视频/字节开源Phantom-多图参考电商带货-产品介绍视频生成-StarAI_1914926063179264002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_152
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/All-in-one 视频驱动图片_1965428165915103234.json、视频生成/图生视频/wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json、视频生成/文生视频/WAN2.2-AllInOne控制+参考_1963899111291572225.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/字节开源Phantom 14B-多图参考电商带货-产品介绍视频生成-StarAI_1927665720824610817.json、视频生成/图生视频/phantom图生视频工作流_1917413592033853442.json、视频生成/图生视频/双图Phantom视频版FX人物一致性_1934212623216898050.json、视频生成/图生视频/字节开源Phantom-多图参考电商带货-产品介绍视频生成-StarAI_1914926063179264002.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `GetImageSizeAndCount`
+全部 4 个 workflow 都包含：
+- `ImagePadKJ`
+- `ImageResizeKJ`
+- `Int`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
+- `WanVideoPhantomEmbeds`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 2/3 个有
-- `ImageResizeKJv2` —— 2/3 个有
-- `WanVideoLoraSelect` —— 2/3 个有
-- `ColorMatch` —— 1/3 个有
-- `ImageSmartSharpen+` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `SaveImage` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `WanVideoSetLoRAs` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `ImageUpscaleWithModel` —— 3/4 个有
+- `UpscaleModelLoader` —— 3/4 个有
+- `WanVideoEnhanceAVideo` —— 3/4 个有
+- `WanVideoSLG` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `FILM VFI` —— 2/4 个有
+- `ImpactSwitch` —— 2/4 个有
+- `LayerUtility: PurgeVRAM` —— 2/4 个有
+- `Note Plus (mtb)` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `ColorMatch` —— 1/4 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/4 个有
+- `GIMMVFI_interpolate` —— 1/4 个有
+- `INTConstant` —— 1/4 个有
+- `ImageConcanate` —— 1/4 个有
+- `ImageSmartSharpen+` —— 1/4 个有
+- `WanVideoVACEEncode` —— 1/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
+- `easy int` —— 1/4 个有
 
 ## 典型参数
 

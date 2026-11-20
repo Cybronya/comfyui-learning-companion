@@ -1,84 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_126
 type: Unknown Workflow
-frequency: 14
+frequency: 16
 level: moderate
-coverage: 0.681357
-common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.874938
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/Infinitetalk_视频对口型-完美复刻动作，保持原视频动作一致_2014641499442515970.json, 数字人/数字人/Infinitetalk视频对口型_1998680361062293506.json, 数字人/数字人/infiniteTalk单人v2v_2005939130049724418.json, 数字人/数字人/infiniteTalk多人图单人说话_2008829722586783746.json, 数字人/数字人/zy1736_2015662602763898882.json, 数字人/数字人/zy_2014586051662192641.json, 数字人/数字人/改进版KJ-Infinitetalk视频对口型工作流_1959936098648666113.json, 数字人/数字人/最新Infinitetalk优化版视频数字人_1958342598316474369.json, 数字人/数字人/视频对口型 1_2080489097541537793.json, 数字人/数字人/视频对口型_2032501393390571522.json, 数字人/数字人/视频对口型_2036369932333617153.json, 数字人/数字人/🌙最强视频对口型数字人 infinitetalk 真王炸  ⭐_1977899307464622081.json, 数字人/数字人/🥳infinitetalk地表最强数字人 视频对口型 真王炸🐟_1968680206921814017.json, 数字人/数字人/🥳真人视频对口型数字人🐟_2069607155229093890.json]
+members: [视频生成/图生视频/wan2.1- InfiniTetalk -数字人-声音处理更贴近真人_2089506992883847170.json, 视频生成/图生视频/对口型 唱歌MV  数字人 InfiniTetalk 超自然数字人对口型_2078433994730983425.json, 视频生成/图生视频/对口型全新整理版 唱歌MV  数字人 InfiniTetalk 超自然数字人对口型_2078746317433696257.json, 视频生成/图生视频/数字人对口型 对口型 情感口播  数字人 InfiniTetalk 超自然_2075939070710206466.json, 视频生成/图生视频/数字人对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2090021885932294145.json, 视频生成/图生视频/数字人对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2090054337321070594.json, 视频生成/图生视频/数字人对口型工作流_2079450772135309313.json, 视频生成/图生视频/最新对口型+唱歌MV++数字人+InfiniTetalk+超自然数字人对口型_2068963777298657282.json, 视频生成/图生视频/高质量数字人+对口型+情感口播+++InfiniTetalk+超自然数字人对口型_2079740437828558849.json, 视频生成/文生视频/对口型 唱歌MV  数字人 InfiniTetalk 超自然数字人对口型_2069061319730487297.json, 视频生成/文生视频/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2100098063678402561.json, 视频生成/文生视频/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2100283307127828482.json, 视频生成/文生视频/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2100657595391504385.json, 视频生成/文生视频/对口型+情感口播++数字人+InfiniTetalk+超自然数字人对口型_2078001198422126593.json, 视频生成/文生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2105209945678503938.json, 视频生成/文生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2105211855311556610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_126
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（数字人/数字人/Infinitetalk_视频对口型-完美复刻动作，保持原视频动作一致_2014641499442515970.json、数字人/数字人/Infinitetalk视频对口型_1998680361062293506.json、数字人/数字人/infiniteTalk单人v2v_2005939130049724418.json、数字人/数字人/infiniteTalk多人图单人说话_2008829722586783746.json、数字人/数字人/zy1736_2015662602763898882.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/wan2.1- InfiniTetalk -数字人-声音处理更贴近真人_2089506992883847170.json、视频生成/图生视频/对口型 唱歌MV  数字人 InfiniTetalk 超自然数字人对口型_2078433994730983425.json、视频生成/图生视频/对口型全新整理版 唱歌MV  数字人 InfiniTetalk 超自然数字人对口型_2078746317433696257.json、视频生成/图生视频/数字人对口型 对口型 情感口播  数字人 InfiniTetalk 超自然_2075939070710206466.json、视频生成/图生视频/数字人对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2090021885932294145.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 16 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `SetNode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEncode`
 - `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadWav2VecModel` —— 13/14 个有
-- `AudioSeparation` —— 12/14 个有
-- `LoadAudio` —— 12/14 个有
-- `SimpleMath+` —— 12/14 个有
-- `WanVideoTorchCompileSettings` —— 12/14 个有
-- `PreviewAny` —— 11/14 个有
-- `AudioCrop` —— 10/14 个有
-- `Display Int (rgthree)` —— 9/14 个有
-- `SoundFlow_GetLength` —— 9/14 个有
-- `ToInt` —— 9/14 个有
-- `easy int` —— 9/14 个有
-- `ImageBatchMulti` —— 8/14 个有
-- `ReverseImageBatch` —— 8/14 个有
-- `ImageConcatMulti` —— 7/14 个有
-- `CR Text` —— 6/14 个有
-- `ImpactInt` —— 6/14 个有
-- `INTConstant` —— 5/14 个有
-- `JWIntegerToString` —— 5/14 个有
-- `VHS_LoadAudioUpload` —— 2/14 个有
-- `VHS_VideoInfo` —— 2/14 个有
-- `Wav2VecModelLoader` —— 2/14 个有
-- `image_scale_pixel_v2` —— 2/14 个有
-- `Bjornulf_ShowInt` —— 1/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/14 个有
-- `GetAudioDurationFromAudio` —— 1/14 个有
-- `Int` —— 1/14 个有
-- `JjkText` —— 1/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
-- `LoadImage` —— 1/14 个有
-- `MaskPreview` —— 1/14 个有
-- `Sa2VANodeTpl` —— 1/14 个有
-- `SaveAudioMP3` —— 1/14 个有
-- `ShowText|pysssss` —— 1/14 个有
-- `easy mathInt` —— 1/14 个有
+- `GetNode` —— 14/16 个有
+- `SetNode` —— 14/16 个有
+- `PlaySound|pysssss` —— 13/16 个有
+- `AudioCombine` —— 1/16 个有
+- `ImageScaleToTotalPixels` —— 1/16 个有
+- `PreviewAudio` —— 1/16 个有
+- `Qwen3TTSCustomVoice` —— 1/16 个有
+- `SaveAudioAdvanced` —— 1/16 个有
+- `SeedVCRun` —— 1/16 个有
+- `SeedVR2` —— 1/16 个有
+- `SeedVR2BlockSwap` —— 1/16 个有
+- `SeedVR2ExtraArgs` —— 1/16 个有
+- `TDQwen3TTSModelLoader` —— 1/16 个有
 
 ## 典型参数
 

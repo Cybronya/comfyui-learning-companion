@@ -1,34 +1,38 @@
 ---
 name: unknown_workflow_generic_138
 type: Unknown Workflow
-frequency: 13
+frequency: 14
 level: moderate
-coverage: 0.809
-common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.725643
+common_nodes: [LayerUtility: PurgeVRAM, LoadVideo, Qwen3VLProcessor, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片V1 2标准版文生图，1K分辨率每日前5次免费，只扣RH点数_1994263602983092225.json, 图片生成/文生图/全能图片V1 Pro文生图_1996082688178241538.json, 图片生成/文生图/全能图片V1 pro&2-text to image文生图1k-4k_1993157671071268865.json, 图片生成/文生图/全能图片V12 & Pro_1997142573481410561.json, 图片生成/文生图/全能图片V12 & Pro最强文本到图像生成_1992475992325419010.json, 图片生成/文生图/全能图片V12文生图_1991527043806478338.json, 图片生成/文生图/单点文生图_2015404463237898241.json, 图片生成/文生图/谷歌全能图片V12文生图_1991538118333513730.json, 图片生成/文生图/趣味工作流_01_卧室闪光回忆_9x16_2038171306025291778.json, 图片生成/文生图/趣味工作流_02_列车窗边回眸_3x4_2038172583274749953.json, 图片生成/文生图/趣味工作流_03_居酒屋抓拍闪光_3x4_2038173333719617537.json, 图片生成/文生图/趣味工作流_04_复古警服酒吧叙事_3x4_2038178540432134146.json, 图片生成/文生图/🍌文生图_2040074913238749186.json]
+members: [图片生成/反推提示词/1视频 Qwen3VL  视频反推视频剧情内容_2111439074992152578.json, 图片生成/反推提示词/Qwen3VL-视频反推剧情内容_2044424415521280001.json, 图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2042091855675924481.json, 图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2042921981309362177.json, 图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2076660879998939137.json, 图片生成/反推提示词/视频剧情内容反推！Qwen3VL！_2042397334411157505.json, 图片生成/反推提示词/视频反推视频剧情内容！Qwen3VL！Video-based plot analysis! Qwen_2115256001208348674.json, 图片生成/反推提示词/视频反推视频剧情内容！Qwen3VL！_2029484149798604802.json, 图片生成/反推提示词/视频反推视频剧情内容！Qwen3VL！_2050999069090295810.json, 图片生成/反推提示词/视频图像反推工作流_2105221614995591169.json, 图片生成/反推提示词/视频图像反推工作流_2115806291603058690.json, 图片生成/反推提示词/🦄Qwen3视频反推 🎯天下无腰_2069454766840827905.json, 图片生成/图生图/Qwen3VL-视频反推剧情内容_2063494888439767042.json, 平台全量/视频反推工作流_2052261344098963458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_138
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/全能图片V1 2标准版文生图，1K分辨率每日前5次免费，只扣RH点数_1994263602983092225.json、图片生成/文生图/全能图片V1 Pro文生图_1996082688178241538.json、图片生成/文生图/全能图片V1 pro&2-text to image文生图1k-4k_1993157671071268865.json、图片生成/文生图/全能图片V12 & Pro_1997142573481410561.json、图片生成/文生图/全能图片V12 & Pro最强文本到图像生成_1992475992325419010.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/反推提示词/1视频 Qwen3VL  视频反推视频剧情内容_2111439074992152578.json、图片生成/反推提示词/Qwen3VL-视频反推剧情内容_2044424415521280001.json、图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2042091855675924481.json、图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2042921981309362177.json、图片生成/反推提示词/Qwen3VL视频反推视频剧情内容工作流_2076660879998939137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+全部 14 个 workflow 都包含：
+- `LayerUtility: PurgeVRAM`
+- `LoadVideo`
+- `Qwen3VLProcessor`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 7/13 个有
-- `RH_Translator` —— 1/13 个有
+- `JjkText` —— 5/14 个有
+- `LoadImage` —— 2/14 个有
+- `SaveText|pysssss` —— 1/14 个有
 
 ## 典型参数
 

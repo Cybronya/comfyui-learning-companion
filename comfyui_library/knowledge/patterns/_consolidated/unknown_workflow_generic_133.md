@@ -1,41 +1,34 @@
 ---
 name: unknown_workflow_generic_133
 type: Unknown Workflow
-frequency: 13
+frequency: 15
 level: moderate
-coverage: 0.571692
-common_nodes: [Image Comparer (rgthree), LoadImage, SaveImage, SeedVR2]
+coverage: 0.929133
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2 Video Upscaler_1965075456494026754.json, 图片生成/图生图/SeedVR2 超清放大工作流，以前的都可以舍弃了_1940334436053291009.json, 图片生成/图生图/SeedVR2-图像无损高清放大_2025749390215876609.json, 图片生成/图生图/SeedVR2VideoUpscal-高清放大_1964004290580893698.json, 图片生成/图生图/SeedVR2图片放大高清修复小图变大图_2058029259901464577.json, 图片生成/图生图/SeedVR2图片放大高清修复小图变大图_2061389188360134657.json, 图片生成/图生图/不限图片类型 精修 局部重绘_2100825346823249922.json, 图片生成/图生图/图片放大 高清修复 精修 局部重绘 适合电商 自媒体 娱乐博主+全节点注释_2052257486786310145.json, 图片生成/图生图/图片放大 高清修复_2033929039899009026.json, 图片生成/图生图/图片放大+高清修复+精修+局部重绘+适合电商+自媒体+娱乐博主_2022335164046647297.json, 图片生成/图生图/最强图片高清修复-SeedVR2终极版_2006200038925541378.json, 图片生成/图生图/高清修复放大_1991057768348065794.json, 图片生成/图生图/高清修复放大_2095063717544292354.json]
+members: [图片生成/文生图/全能图片V12三图编辑_1991713726084771841.json, 平台全量/景观生图：从CAD到全套图_2013495473935486978.json, 平台全量/最强香蕉-多角色融合_1997861356336558082.json, 平台全量/服装平铺图电商专用-完美丝滑_2046481764259991553.json, 平台全量/海报+P图+高清放大+替换产品（全能图片编辑 ）_1991789820309762050.json, 平台全量/电商模特服装白底商品图生成+服装提取_2009622191947653121.json, 平台全量/老照片修复pro图像王者（可以10图编辑）_2093397098212450305.json, 平台全量/🍌 Pro 角色一致性设定_2031332620847554562.json, 平台全量/🦖香蕉2 全能图片V1 2 & Pro_1992830697545027585.json, 平台全量/🦖香蕉2 全能图片V1 2 & Pro（单图编辑）_1992849160768647169.json, 数字人/数字人/zt1_1998291443762520065.json, 数字人/数字人/zt_1996405530409181185.json, 数字人/数字人/自用 全能图片 Pro1_2031019948478308354.json, 数字人/数字人/自用 全能图片 Pro_2012713438467854337.json, 数字人/数字人/香蕉2 全能图片V1 2 九图混合编辑_1996508589265133570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_133
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/SeedVR2 Video Upscaler_1965075456494026754.json、图片生成/图生图/SeedVR2 超清放大工作流，以前的都可以舍弃了_1940334436053291009.json、图片生成/图生图/SeedVR2-图像无损高清放大_2025749390215876609.json、图片生成/图生图/SeedVR2VideoUpscal-高清放大_1964004290580893698.json、图片生成/图生图/SeedVR2图片放大高清修复小图变大图_2058029259901464577.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/全能图片V12三图编辑_1991713726084771841.json、平台全量/景观生图：从CAD到全套图_2013495473935486978.json、平台全量/最强香蕉-多角色融合_1997861356336558082.json、平台全量/服装平铺图电商专用-完美丝滑_2046481764259991553.json、平台全量/海报+P图+高清放大+替换产品（全能图片编辑 ）_1991789820309762050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `LoadImage`
+全部 15 个 workflow 都包含：
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `SeedVR2`
 
 **可变部分**（部分 workflow 才有）：
-- `SeedVR2BlockSwap` —— 12/13 个有
-- `ImageScaleToTotalPixels` —— 9/13 个有
-- `PlaySound|pysssss` —— 8/13 个有
-- `PreviewImage` —— 8/13 个有
-- `easy int` —— 7/13 个有
-- `RHHiddenNodes` —— 6/13 个有
-- `SeedVR2ExtraArgs` —— 3/13 个有
+- `LoadImage` —— 14/15 个有
+- `LoadImageFromURL` —— 2/15 个有
 
 ## 典型参数
 

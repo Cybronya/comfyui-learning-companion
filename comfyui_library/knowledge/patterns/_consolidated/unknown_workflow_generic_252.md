@@ -1,42 +1,35 @@
 ---
 name: unknown_workflow_generic_252
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.848778
-common_nodes: [CR Text, LoadImage, RH_LLMAPI_NODE, RH_Nano_Banana_Image2Image, SaveImage, easy imageConcat, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/从分镜到视频--适合影视服装等多个行业_2011316728734687233.json, 图片生成/图生图/全能视频S-分镜头制作-图生分镜头_1992890764482990082.json, 图片生成/文生图/从分镜到视频--影视行业适合提案(在用-11)_1986465925241204738.json, 图片生成/文生图/视频-分镜头制作-图生分镜头_P2_2010196785133785089.json, 视频生成/图生视频/从分镜到视频--广告行业解决方案_1998230592728760321.json, 视频生成/图生视频/从分镜到视频--影视行业适合提案_1979888562357309441.json, 视频生成/图生视频/全能图片V12+全能视频S 从分镜到视频--影视行业适合提案_1992093432994918401.json, 视频生成/图生视频/全能视频S-从分镜到视频--适合电商及广告行业_1992815062568030210.json, 视频生成/图生视频/广告从分镜到视频_1988781276498890753.json]
+members: [图片生成/图生图/Seedance 2.0 图生视频｜首尾帧视频_2095369520776048642.json, 图片生成/文生图/万相2.7-参考生视频 大峰_2042185330912141314.json, 视频生成/图生视频/SK_img2vid_2038867308285796354.json, 视频生成/图生视频/Seedance 2.0 图生视频-真人参考_2046119417926389762.json, 视频生成/图生视频/Seedance2.0图生视频_2037036284312559617.json, 视频生成/图生视频/Seedance2.0图生视频_2039910706035822593.json, 视频生成/图生视频/地表最强超能视频2.0_图生视频_2037443315422994434.json, 视频生成/图生视频/首帧图生视频2_2042070638961102849.json, 视频生成/图生视频/（支持真人）地表最强超能视频2.0_图生视频_2037432989239484418.json, 视频生成/文生视频/WAN2.7 多参考生视频_2041482681619320833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_252
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/从分镜到视频--适合影视服装等多个行业_2011316728734687233.json、图片生成/图生图/全能视频S-分镜头制作-图生分镜头_1992890764482990082.json、图片生成/文生图/从分镜到视频--影视行业适合提案(在用-11)_1986465925241204738.json、图片生成/文生图/视频-分镜头制作-图生分镜头_P2_2010196785133785089.json、视频生成/图生视频/从分镜到视频--广告行业解决方案_1998230592728760321.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Seedance 2.0 图生视频｜首尾帧视频_2095369520776048642.json、图片生成/文生图/万相2.7-参考生视频 大峰_2042185330912141314.json、视频生成/图生视频/SK_img2vid_2038867308285796354.json、视频生成/图生视频/Seedance 2.0 图生视频-真人参考_2046119417926389762.json、视频生成/图生视频/Seedance2.0图生视频_2037036284312559617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CR Text`
+全部 10 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
-- `easy imageConcat`
-- `easy showAnything`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RHHiddenNodes` —— 8/9 个有
-- `RH_Sora2_I2V` —— 7/9 个有
-- `SaveVideo` —— 7/9 个有
-- `PreviewImage` —— 6/9 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/9 个有
+- `RH_RhartVideoSparkvideo20ImageToVideo` —— 8/10 个有
+- `MuyeTextEditOutput` —— 2/10 个有
+- `RH_AlibabaWan27ReferenceToVideo` —— 2/10 个有
 
 ## 典型参数
 

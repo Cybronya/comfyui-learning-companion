@@ -1,85 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_762
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.889667
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, CreateCFGScheduleFloatList, Fast Bypasser (rgthree), GetNode, ImageResizeKJv2, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, Primitive integer [Crystools], RHHiddenNodes, RIFE VFI, SetNode, SimpleMath+, Text Multiline, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanMoeKSampler, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy getNode, easy setNode, wanBlockSwap]
+frequency: 4
+level: moderate
+coverage: 0.91275
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/球球抖动弹跳~TIPTOK引流专用_2028753060067020801.json, 视频生成/图生视频/球球抖动弹跳引流专用_1997167105533480961.json, 视频生成/图生视频/🦺【大炮擦边】球球抖动弹跳~TIPTOK引流专用_1990714282465779714.json]
+members: [视频生成/图生视频/哆哆无限画布-Minimax+H3+Selflift数字人_2113284997036724225.json, 视频生成/图生视频/哆哆无限画布_Minimax_H3_Selflift数字人_唱歌_带音频参考_2113462291067924481.json, 视频生成/文生视频/10Eros Beta5 SelfLift音频数字人精修流_2101538490512142337.json, 视频生成/文生视频/AI音乐MV数字人（ngualarith+Minimax H3 Selflift）新二采_2100506281638457345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_762
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/球球抖动弹跳~TIPTOK引流专用_2028753060067020801.json、视频生成/图生视频/球球抖动弹跳引流专用_1997167105533480961.json、视频生成/图生视频/🦺【大炮擦边】球球抖动弹跳~TIPTOK引流专用_1990714282465779714.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/哆哆无限画布-Minimax+H3+Selflift数字人_2113284997036724225.json、视频生成/图生视频/哆哆无限画布_Minimax_H3_Selflift数字人_唱歌_带音频参考_2113462291067924481.json、视频生成/文生视频/10Eros Beta5 SelfLift音频数字人精修流_2101538490512142337.json、视频生成/文生视频/AI音乐MV数字人（ngualarith+Minimax H3 Selflift）新二采_2100506281638457345.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CR Text`
-- `CreateCFGScheduleFloatList`
-- `Fast Bypasser (rgthree)`
-- `GetNode`
-- `ImageResizeKJv2`
-- `ImpactInt`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `Mute / Bypass Repeater (rgthree)`
-- `PathchSageAttentionKJ`
-- `Primitive integer [Crystools]`
-- `RHHiddenNodes`
-- `RIFE VFI`
-- `SetNode`
-- `SimpleMath+`
-- `Text Multiline`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
-- `WanMoeKSampler`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy getNode`
-- `easy setNode`
-- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/3 个有
+- `ModelPreviewOverrideKJ` —— 3/4 个有
+- `PreviewAny` —— 3/4 个有
+- `Audio Duration (mtb)` —— 2/4 个有
+- `BlockSparseAttention` —— 2/4 个有
+- `ComfyNumberConvert` —— 2/4 个有
+- `MathExpression|pysssss` —— 2/4 个有
+- `SoundFlow_GetLength` —— 2/4 个有
+- `easy loraStack` —— 2/4 个有
+- `easy loraStackApply` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
+- `Text Multiline` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 3 | 100% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | 1 | 1 - 1 | 3 | 100% |
-| 重绘幅度 | euler_ancestral | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -87,8 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 最常用 euler_ancestral，3 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

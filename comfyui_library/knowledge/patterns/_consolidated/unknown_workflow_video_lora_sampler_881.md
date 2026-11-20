@@ -1,74 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_881
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.818
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ColorMatch, ImageResizeKJv2, ImageScaleBy, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, Pick From Batch (mtb), PreviewImage, RIFE VFI, SaveImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
+frequency: 3
+level: moderate
+coverage: 0.948333
+common_nodes: [CR Text Concatenate, ColorMatch, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, RH_Translator, ShowText|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/Smooth Mix 图生视频工作流_1982322228085833729.json, 视频生成/图生视频/男人摸脸开头2秒  浮云 12.29 图生视频_2005566956688343042.json]
+members: [视频生成/图生视频/Self-Forcing-VACE极速版-VACE 14B图生视频_1934433981473452033.json, 视频生成/图生视频/wan2.1-fusionx系列极速完美复刻迁移动作_1937759191832662018.json, 视频生成/图生视频/（VACE-14B系列）动作迁移Causvid加速_1932804540896792578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_881
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Smooth Mix 图生视频工作流_1982322228085833729.json、视频生成/图生视频/男人摸脸开头2秒  浮云 12.29 图生视频_2005566956688343042.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Self-Forcing-VACE极速版-VACE 14B图生视频_1934433981473452033.json、视频生成/图生视频/wan2.1-fusionx系列极速完美复刻迁移动作_1937759191832662018.json、视频生成/图生视频/（VACE-14B系列）动作迁移Causvid加速_1932804540896792578.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
+全部 3 个 workflow 都包含：
+- `CR Text Concatenate`
 - `ColorMatch`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerMask: LoadFlorence2Model`
+- `LayerUtility: Florence2Image2Prompt`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `Pick From Batch (mtb)`
-- `PreviewImage`
-- `RIFE VFI`
-- `SaveImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `RH_Translator`
+- `ShowText|pysssss`
 - `VHS_VideoCombine`
-- `WanImageToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `Seed (rgthree)` —— 1/2 个有
-- `SeedVR2BlockSwap` —— 1/2 个有
-- `SeedVR2ExtraArgs` —— 1/2 个有
-- `SeedVR2GGUF` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `TT_img_enc` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `AIO_Preprocessor` —— 2/3 个有
+- `ImageResize+` —— 2/3 个有
+- `ImageResizeKJ` —— 2/3 个有
+- `VHS_LoadVideo` —— 2/3 个有
+- `WanVideoEnhanceAVideo` —— 2/3 个有
+- `WanVideoVACEModelSelect` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `WanVideoMagCache` —— 1/3 个有
+- `WanVideoVACEStartToEndFrame` —— 1/3 个有
+- `easy textSwitch` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 8 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler_ancestral | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -76,9 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

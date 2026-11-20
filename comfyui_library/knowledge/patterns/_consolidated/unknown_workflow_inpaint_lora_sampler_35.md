@@ -1,96 +1,78 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_35
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.917
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CR Color Panel, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, EmptyImage, FluxGuidance, GrowMask, ImageConcanate, ImageScale, ImageToMask, Images to RGB, InpaintCrop, InpaintModelConditioning, InpaintStitch, InspyrenetRembgAdvanced, KSamplerSelect, LayerMask: MaskGrow, LayerUtility: ImageBlendAdvance, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MaskToImage, ModelSamplingFlux, RandomNoise, SamplerCustomAdvanced, SaveImage, Seed (rgthree), StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.9408
+common_nodes: [AILab_QwenVL, BasicGuider, BasicScheduler, CFGNorm, CLIPLoader_Any, CLIPTextEncode, DWPreprocessor, DetailDaemonSamplerNode, ImageScaleToTotalPixelsX, InpaintCropImproved, InpaintStitchImproved, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RandomNoise, ReActorFaceSwap, ReferenceLatent, SAM3Segment, SamplerCustom, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SetLatentNoiseMask, SplitSigmas, UNETLoader_Any, VAEDecode, VAEEncode, VAELoader_Any, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX-fill-onereword万物迁移优化版V7.1_2015794339158433793.json, 图片生成/图生图/万物迁移优化版V3_1911432833443819521.json, 图片生成/图生图/头部迁移_1991460536573444097.json]
+members: [图片生成/图生图/电商服装内衣睡衣模特图生成_2066020868601507842.json, 平台全量/z-image-turbo-firered-image-edit-flux2-klein-电商内衣模特图生成：终极版_2046104413936291842.json, 平台全量/z-image-turbo-firered-image-edit-flux2-klein-电商泳装模特图生成：最终版_2046493082887131138.json, 平台全量/z-image-turbo-flux2-klein-服装电商lookbook展示图：换脸，换装，换姿_2046432076110499841.json, 平台全量/换装换脸姿势迁移 z-image turbo+firered+flux2-klein 电商模特全能编_2047491989666537474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_35
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX-fill-onereword万物迁移优化版V7.1_2015794339158433793.json、图片生成/图生图/万物迁移优化版V3_1911432833443819521.json、图片生成/图生图/头部迁移_1991460536573444097.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/电商服装内衣睡衣模特图生成_2066020868601507842.json、平台全量/z-image-turbo-firered-image-edit-flux2-klein-电商内衣模特图生成：终极版_2046104413936291842.json、平台全量/z-image-turbo-firered-image-edit-flux2-klein-电商泳装模特图生成：最终版_2046493082887131138.json、平台全量/z-image-turbo-flux2-klein-服装电商lookbook展示图：换脸，换装，换姿_2046432076110499841.json、平台全量/换装换脸姿势迁移 z-image turbo+firered+flux2-klein 电商模特全能编_2047491989666537474.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `AILab_QwenVL`
 - `BasicGuider`
 - `BasicScheduler`
+- `CFGNorm`
+- `CLIPLoader_Any`
 - `CLIPTextEncode`
-- `CR Color Panel`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
-- `EmptyImage`
-- `FluxGuidance`
-- `GrowMask`
-- `ImageConcanate`
-- `ImageScale`
-- `ImageToMask`
-- `Images to RGB`
-- `InpaintCrop`
-- `InpaintModelConditioning`
-- `InpaintStitch`
-- `InspyrenetRembgAdvanced`
+- `DWPreprocessor`
+- `DetailDaemonSamplerNode`
+- `ImageScaleToTotalPixelsX`
+- `InpaintCropImproved`
+- `InpaintStitchImproved`
 - `KSamplerSelect`
-- `LayerMask: MaskGrow`
-- `LayerUtility: ImageBlendAdvance`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MaskToImage`
-- `ModelSamplingFlux`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `RandomNoise`
+- `ReActorFaceSwap`
+- `ReferenceLatent`
+- `SAM3Segment`
+- `SamplerCustom`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `Seed (rgthree)`
-- `StyleModelLoader`
-- `UNETLoader`
+- `SetLatentNoiseMask`
+- `SplitSigmas`
+- `UNETLoader_Any`
 - `VAEDecode`
-- `VAELoader`
+- `VAEEncode`
+- `VAELoader_Any`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 2/3 个有
-- `Anything Everywhere3` —— 2/3 个有
-- `CLIPVisionLoader` —— 2/3 个有
-- `ChinesePrompt_Mix` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `IsMaskEmpty` —— 2/3 个有
-- `LayerUtility: CropByMask` —— 2/3 个有
-- `LayerUtility: CropByMask V2` —— 2/3 个有
-- `MaskPreview+` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `ReduxAdvanced` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `easy convertAnything` —— 2/3 个有
-- `AdvancedVisionLoader` —— 1/3 个有
-- `CLIPVisionEncode` —— 1/3 个有
-- `CropMask` —— 1/3 个有
-- `DF_Get_image_size` —— 1/3 个有
-- `FL_ImageSlicer` —— 1/3 个有
-- `Get Image Size` —— 1/3 个有
-- `Get resolution [Crystools]` —— 1/3 个有
-- `Image To Mask` —— 1/3 个有
-- `ImageComposite+` —— 1/3 个有
-- `ImageFromBatch` —— 1/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `LayerUtility: CropBoxResolve` —— 1/3 个有
-- `Mask Fill Holes` —— 1/3 个有
-- `Mask Invert` —— 1/3 个有
-- `StyleModelApply` —— 1/3 个有
-- `Switch any [Crystools]` —— 1/3 个有
-- `easy imageCropFromMask` —— 1/3 个有
+- `AIO_Preprocessor` —— 4/5 个有
+- `EmptyFlux2LatentImage` —— 4/5 个有
+- `Flux2Scheduler` —— 4/5 个有
+- `ImitationHueNode` —— 4/5 个有
+- `ModelPatchLoader` —— 4/5 个有
+- `TextEncodeQwenImageEditPlus` —— 4/5 个有
+- `ZImageFunControlnet` —— 4/5 个有
+- `easy imageSize` —— 4/5 个有
+- `easy imageSizeBySide` —— 4/5 个有
+- `CLIPLoader` —— 3/5 个有
+- `UNETLoader` —— 3/5 个有
+- `VAELoader` —— 3/5 个有
+- `easy ifElse` —— 2/5 个有
+- `Anything Everywhere3` —— 1/5 个有
+- `ColorBalanceNode` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `easy positive` —— 1/5 个有
 
 ## 典型参数
 

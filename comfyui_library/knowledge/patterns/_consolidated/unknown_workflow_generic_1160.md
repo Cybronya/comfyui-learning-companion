@@ -3,31 +3,38 @@ name: unknown_workflow_generic_1160
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.889
-common_nodes: [RH_Wan26_T2V, SaveVideo]
+coverage: 0.722333
+common_nodes: [HAIGC_SaveImagesToZip, LoadImage, PromptBatchQueue, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, Text, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.6文生视频T2V_2007711298678693889.json, 视频生成/文生视频/wan2.6 t2v_2000818374349385729.json, 视频生成/文生视频/音画同步文生视频工作流 Wan2.6多模态模型！让文字创意直接升级为电影_2049881107818135554.json]
+members: [图片生成/图生图/一键生成多张产品宣传图-最多支持8张图_2085312559778983938.json, 图片生成/文生图/LLM自动图文优化一键生成PSD和产品商详图片工作流_2054230752161738753.json, 平台全量/支持8张图片！一键生成多张产品详图片工作流_2058920926288375810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1160
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan2.6文生视频T2V_2007711298678693889.json、视频生成/文生视频/wan2.6 t2v_2000818374349385729.json、视频生成/文生视频/音画同步文生视频工作流 Wan2.6多模态模型！让文字创意直接升级为电影_2049881107818135554.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键生成多张产品宣传图-最多支持8张图_2085312559778983938.json、图片生成/文生图/LLM自动图文优化一键生成PSD和产品商详图片工作流_2054230752161738753.json、平台全量/支持8张图片！一键生成多张产品详图片工作流_2058920926288375810.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RH_Wan26_T2V`
-- `SaveVideo`
+- `HAIGC_SaveImagesToZip`
+- `LoadImage`
+- `PromptBatchQueue`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `Text`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 1/3 个有
+- `HAIGC_SavePSD` —— 1/3 个有
 
 ## 典型参数
 

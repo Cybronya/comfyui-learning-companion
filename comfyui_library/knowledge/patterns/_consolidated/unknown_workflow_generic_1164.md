@@ -3,43 +3,31 @@ name: unknown_workflow_generic_1164
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.847333
-common_nodes: [CR Prompt Text, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, LayerUtility: PurgeVRAM V2, SaveAudio, VRAMReserver, easy float, easy int]
+coverage: 1
+common_nodes: [ConcatTextOfUtils, LoadImage, RH_Captioner, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--Qwen3 TTS多人配音--声音克隆版本-三角色-漫剧_推文_有声书_2015768667132268546.json, 音频生成/音频生成/AA--Qwen3 TTS多人配音-声音设计版本--三角色-漫剧_推文_有声书_2015768802629259265.json, 音频生成/音频生成/AA--增强版Qwen3TTS-语音克隆-说话情感和断句节奏自定义-单人版本_2016508411113906178.json]
+members: [图片生成/图生图/产品KV排版_2099759370530803714.json, 图片生成/图生图/产品KV排版_2100865001560039426.json, 图片生成/图生图/产品KV排版_2101133292077674498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1164
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AA--Qwen3 TTS多人配音--声音克隆版本-三角色-漫剧_推文_有声书_2015768667132268546.json、音频生成/音频生成/AA--Qwen3 TTS多人配音-声音设计版本--三角色-漫剧_推文_有声书_2015768802629259265.json、音频生成/音频生成/AA--增强版Qwen3TTS-语音克隆-说话情感和断句节奏自定义-单人版本_2016508411113906178.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品KV排版_2099759370530803714.json、图片生成/图生图/产品KV排版_2100865001560039426.json、图片生成/图生图/产品KV排版_2101133292077674498.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `LayerUtility: PurgeVRAM V2`
-- `SaveAudio`
-- `VRAMReserver`
-- `easy float`
-- `easy int`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 2/3 个有
-- `WhisperSTT` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
-- `IndexTTS2Run` —— 1/3 个有
-- `LayerUtility: TextJoin` —— 1/3 个有
+- `ConcatTextOfUtils`
+- `LoadImage`
+- `RH_Captioner`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 ## 典型参数
 

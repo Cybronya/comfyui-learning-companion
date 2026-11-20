@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_395
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.910143
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.753
+common_nodes: [RH_CinematicVideoGenerator, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/Seedance 1.5Pro图生视频_文生视频_2019735887625592833.json, 视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json, 视频生成/图生视频/MiniMax H3-TVC成片_2084238094596919298.json, 视频生成/图生视频/MiniMax H3-拼贴画_2084241565920350210.json, 视频生成/图生视频/MiniMax-H3 多模态参考生视频_2083019872191213570.json, 视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2100060414972350466.json, 视频生成/图生视频/MiniMax_H3上下文参考视频+图生视频-融合运镜与角色工作流_2100139807161798657.json]
+members: [视频生成/文生视频/全能视频SD2.0 文生视频(体验版)_2033892179386568705.json, 视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034120645298098177.json, 视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034146948994834434.json, 视频生成/文生视频/全能视频Seedance 2.0 Video Generator 文生视频  sd2.0_2034116772126793729.json, 视频生成/文生视频/全能视频Seedance+2.0+Video+Generator+文生视频++sd2.0 (1)_2034148083075915777.json, 视频生成/文生视频/超能视频2.0 在线生成 自定义分辨率1080P，帧率30fps，时长10秒_2038429253519286274.json, 视频生成/文生视频/超能视频2.0 多图参考_2036032722329669634.json, 视频生成/文生视频/超能视频2.0已接入，不用排队（5s_10s_15s）_2035676995136266241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_395
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/Seedance 1.5Pro图生视频_文生视频_2019735887625592833.json、视频生成/图生视频/H3全能参考工作流｜MiniMax H3 多图参考生成视频_2099348938208927746.json、视频生成/图生视频/MiniMax H3-TVC成片_2084238094596919298.json、视频生成/图生视频/MiniMax H3-拼贴画_2084241565920350210.json、视频生成/图生视频/MiniMax-H3 多模态参考生视频_2083019872191213570.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/全能视频SD2.0 文生视频(体验版)_2033892179386568705.json、视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034120645298098177.json、视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034146948994834434.json、视频生成/文生视频/全能视频Seedance 2.0 Video Generator 文生视频  sd2.0_2034116772126793729.json、视频生成/文生视频/全能视频Seedance+2.0+Video+Generator+文生视频++sd2.0 (1)_2034148083075915777.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `LoadImage`
+全部 8 个 workflow 都包含：
+- `RH_CinematicVideoGenerator`
 - `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_MinimaxHailuoH3MultimodalToVideo` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 4/7 个有
-- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 2/7 个有
-- `RH_Doubao_Seedance_1_5_Pro` —— 1/7 个有
+- `LoadImage` —— 7/8 个有
 
 ## 典型参数
 

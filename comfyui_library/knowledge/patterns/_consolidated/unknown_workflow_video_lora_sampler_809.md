@@ -1,74 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_809
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9245
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, Int, JjkText, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, RH_GetAudioDuration, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.994333
+common_nodes: [CFGZeroStarAndInit, CLIPLoader, CLIPTextEncode, Florence2ModelLoader, Florence2Run, GetImageSizeAndCount, INTConstant, ImageResizeKJ, KSampler, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PatchModelPatcherOrder, TorchCompileModelWanVideo, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo, WanVideoEnhanceAVideoKJ]
 problems: []
 missing: []
-members: [数字人/数字人/个人测试_2032111547727745025.json, 视频生成/图生视频/InfiniteTalk单人对口型_1978307219957637121.json]
+members: [平台全量/VACE-更精准的姿态调节-视频转绘_1932353856917635074.json, 平台全量/控制+参考(CausVid与AccVideo10步对比)_1928029684129513473.json, 视频生成/图生视频/控制+参考-Wan2.1-VACE-Native_1924845181453934593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_809
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/个人测试_2032111547727745025.json、视频生成/图生视频/InfiniteTalk单人对口型_1978307219957637121.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/VACE-更精准的姿态调节-视频转绘_1932353856917635074.json、平台全量/控制+参考(CausVid与AccVideo10步对比)_1928029684129513473.json、视频生成/图生视频/控制+参考-Wan2.1-VACE-Native_1924845181453934593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `Int`
-- `JjkText`
-- `LoadAudio`
+全部 3 个 workflow 都包含：
+- `CFGZeroStarAndInit`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageResizeKJ`
+- `KSampler`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `RH_GetAudioDuration`
-- `SimpleMath+`
-- `ToInt`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PatchModelPatcherOrder`
+- `TorchCompileModelWanVideo`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `WanVaceToVideo`
+- `WanVideoEnhanceAVideoKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `1hew_TextListToString` —— 1/2 个有
-- `AudioSeparation` —— 1/2 个有
-- `IndexTTS2Run` —— 1/2 个有
-- `LongCatVoiceCloneTTS` —— 1/2 个有
-- `NormalizeAudioLoudness` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `Qwen3ASRLoader` —— 1/2 个有
-- `Qwen3ASRTranscribe` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
-- `RunningHub SoulX-FlashHead Loader` —— 1/2 个有
-- `RunningHub SoulX-FlashHead Sampler` —— 1/2 个有
-- `SaveVideo` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `TextCombinerTwo` —— 1/2 个有
+- `AIO_Preprocessor` —— 2/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `MyOpenPoseNode` —— 1/3 个有
+- `OpenposePreprocessor` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 10 | 10 - 20 | 3 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 3 | 29% |
+| 采样算法 | uni_pc | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -76,4 +70,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 10，观测区间 10 - 20，3 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，3 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

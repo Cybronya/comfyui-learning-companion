@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_735
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.6845
-common_nodes: [LoadImage, SDPoseOODLoader, SDPoseOODProcessor, SaveImage]
+coverage: 0.96
+common_nodes: [Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/万能姿态图 SDPose_1988986163945934849.json, 图片生成/图生图/万能骨骼图 SDPose_1989359431509004289.json, 图片生成/图生图/动作提取+姿势提取+万能骨骼图 SDPose+全节点注释_2054183862510604289.json, 图片生成/图生图/生成骨骼图_2054638352711856130.json]
+members: [图片生成/文生图/空白工作流Qwen3_TTS_声音设计_2104061758985031681.json, 音频生成/音频生成/Qwen3 TTS 文转音_2014820201501564929.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2068307737154506754.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2080159967465795585.json, 音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2102194077264601089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_735
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/万能姿态图 SDPose_1988986163945934849.json、图片生成/图生图/万能骨骼图 SDPose_1989359431509004289.json、图片生成/图生图/动作提取+姿势提取+万能骨骼图 SDPose+全节点注释_2054183862510604289.json、图片生成/图生图/生成骨骼图_2054638352711856130.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/空白工作流Qwen3_TTS_声音设计_2104061758985031681.json、音频生成/音频生成/Qwen3 TTS 文转音_2014820201501564929.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2068307737154506754.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2080159967465795585.json、音频生成/音频生成/空白工作流Qwen3 TTS 声音设计_2102194077264601089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `GroundingDinoModelLoader_SDPose` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `YOLOModelLoader` —— 3/4 个有
-- `VHS_LoadVideo` —— 2/4 个有
+- `EmptyImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

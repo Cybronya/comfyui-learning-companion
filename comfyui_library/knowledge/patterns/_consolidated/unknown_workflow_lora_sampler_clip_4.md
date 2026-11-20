@@ -1,79 +1,78 @@
 ---
 name: unknown_workflow_lora_sampler_clip_4
 type: Unknown Workflow
-frequency: 41
-level: strong
-coverage: 0.86022
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: NumberCalculator, ModelSamplingAuraFlow, PathchSageAttentionKJ, SaveImage, SimpleMathDual+, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy loraStack, easy loraStackApply]
+frequency: 60
+level: moderate
+coverage: 0.74875
+common_nodes: [AILab_QwenVL, BasicScheduler, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, DiffusionModelLoaderKJ, ImageResizeKJv2, Int, JjkText, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SAM3_VideoTrack, SimpleMath+, VAELoader, VHS_LoadVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/Krea2文生图_2093651372473413634.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2099674585972170753.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2099757996581670913.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2099777480667258881.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2100036055553630209.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2100215576986738690.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2100382966370357250.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2100451727454593026.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2101498792242671618.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2101858635814100993.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2101874744894251010.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2101919357784903681.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2105190962019528706.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2108153905476624385.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2108157272307359745.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2109533105907392513.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2110286121266671617.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2110612959117529090.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2110891965507260418.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2110901812344745985.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2111731509643268097.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2111998893159436289.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2113167168778096641.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2113439895862730754.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2113549574345416706.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2_2098926440317280258.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2_2098984823439319042.json, 图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2_2099660806790139905.json, 图片生成/文生图/Krea2超写实4K文生图（+反推提示词）_2088541457622847490.json, 图片生成/文生图/Krea2超写实超清4K文生图 超写实去ai感_2082042850321199106.json, 图片生成/文生图/Krea2超写实超清4K文生图_2088931453882167298.json, 图片生成/文生图/Krea2超写实超清4K文生图_2088958119845126146.json, 图片生成/文生图/Krea2（4K文生图）_2092158856821559298.json, 图片生成/文生图/z-image&Krea2双_2112713250352750594.json, 图片生成/文生图/z-image&Krea2双采超写实4K文生图 (1)_2108874930459860994.json, 图片生成/文生图/z-image&Krea2双采超写实4K文生图 (1)_2113178040065941506.json, 图片生成/文生图/z-image&Krea2双采超写实4K文生图 (1)hyy_2114238489192652802.json, 图片生成/文生图/z-image&Krea2双采超写实4K文生图_2082779827182063618.json, 图片生成/文生图/z-image&Krea2双采超写实4K文生图_2101552534488961025.json, 图片生成/文生图/z-image&Krea2双采超写实4K文生图工作流_2113131065996038145.json, 图片生成/文生图/写实摄影 Krea2超写实4K文生图 高度一致统一_2075461758533328898.json]
+members: [平台全量/Scail2视频动作迁移_2069671493960814593.json, 平台全量/Scail2视频动作迁移_2069682582454886401.json, 平台全量/Scail2视频动作迁移_2069683949407924226.json, 平台全量/Scail2视频动作迁移_2083757993337905154.json, 平台全量/Scail视频动作迁移_2069687039821438977.json, 平台全量/Scail视频动作迁移_2069737469632925698.json, 数字人/数字人/最新版超长视频 动作迁移 模特动作克隆 SCAIL2  动作模仿 单人+双人跳舞_2069969457795129346.json, 视频生成/图生视频/60-Second Extended Dance Video60秒超长跳舞视频Scail2动作迁移_2097856216323158017.json, 视频生成/图生视频/60秒女装跳舞长视频_模仿动作迁移_2076620724726493186.json, 视频生成/图生视频/AI萌宠摇头晃脑舞_2082095205276278786.json, 视频生成/图生视频/Ai女友跳舞长视频生成全能视频一键图生视频跳舞_2076933964522147842.json, 视频生成/图生视频/Scail-2 表情迁移模仿  精准还原表情细节_2096965738941734913.json, 视频生成/图生视频/Scail-2 表情迁移（表情模仿）微表情控制 动作迁移图生视频_2078421287764062209.json, 视频生成/图生视频/Scail-2 表情迁移（表情模仿）微表情控制 动作迁移图生视频_2078472759180619778.json, 视频生成/图生视频/Scail-2 表情迁移（表情模仿）微表情控制_2077926444260487169.json, 视频生成/图生视频/Scail-2 表情迁移（表情模仿）微表情控制_2079084034839371777.json, 视频生成/图生视频/Scail-2 表情迁移（表情模仿）微表情控制_2082290650309029889.json, 视频生成/图生视频/Scail2动作模仿_2080267602588430337.json, 视频生成/图生视频/Scail2动作模迁移 Ai跳舞视频_2085179312327716866.json, 视频生成/图生视频/Scail2动作模迁移 Ai跳舞视频_2085272472949186562.json, 视频生成/图生视频/Scail2动作模迁移+Ai跳舞视频_2090329676400123906.json, 视频生成/图生视频/Scail2视频换人 动作迁移 图生视频 跳舞 唱歌 数字人 角色替换_2081281253269139458.json, 视频生成/图生视频/scail2一键AI表情复刻｜表情迁移模仿的视频生视频玩法_2114680387304771585.json, 视频生成/图生视频/scail2一键Ai表情复刻 表情迁移 表情模仿_2079883530137595906.json, 视频生成/图生视频/scail2一键Ai表情复刻 表情迁移 表情模仿_2080971778050052098.json, 视频生成/图生视频/scail2一键Ai表情复刻 表情迁移 表情模仿_2098734112021504001.json, 视频生成/图生视频/scail2一键Ai表情复刻 表情迁移 表情模仿_2098742667827044354.json, 视频生成/图生视频/scail2一键Ai表情复刻 表情迁移 表情模仿_2114312573096124417.json, 视频生成/图生视频/scail2一键Ai表情复刻 表情迁移 表情模仿_2114328695732264961.json, 视频生成/图生视频/scail2动作迁移+表情复刻+表情模仿_2113810161570762753.json, 视频生成/图生视频/scail2表情复刻+表情模仿 全新Ai表情迁移_2073012625855827969.json, 视频生成/图生视频/scail2表情复刻+表情模仿 全新Ai表情迁移_2077012987868696578.json, 视频生成/图生视频/scail2表情复刻+表情模仿 全新Ai表情迁移_2079166595833880577.json, 视频生成/图生视频/scail2表情复刻+表情模仿 全新Ai表情迁移_2083915847667642369.json, 视频生成/图生视频/scail2表情复刻+表情模仿 动作迁移 全新Ai表情迁移_2087848717364850690.json, 视频生成/图生视频/scail2表情迁移+动作迁移_2082314494415560706.json, 视频生成/图生视频/scail2表情迁移+动作迁移_2082407368863870978.json, 视频生成/图生视频/scail2表情迁移_2079467843212632066.json, 视频生成/图生视频/scail2表情迁移_2081546824543985666.json, 视频生成/图生视频/scail2表情迁移_2085904621087842305.json, 视频生成/图生视频/scail2！全新Ai表情迁移！表情模仿+表情复刻_2083007165882785794.json, 视频生成/图生视频/一键60秒Ai女友跳舞长视频生成！全新Scail2动作模仿！B站艾橘溪_2065086911793942530.json, 视频生成/图生视频/一键60秒！Ai女友跳舞长视频生成！Scail2动作模仿！_2088062482970669057.json, 视频生成/图生视频/全新Ai表情迁移！scail2表情复刻+表情模仿！B站艾橘溪_2072570517835575298.json, 视频生成/图生视频/全新Ai表情迁移！scail2表情复刻+表情模仿！_2098675641225928706.json, 视频生成/图生视频/全新Scail2动作模仿 姿势迁移 高质量超长60秒视频_2082314245110329345.json, 视频生成/图生视频/全新Scail2动作模仿 姿势迁移 高质量超长60秒视频_2083365949243224065.json, 视频生成/图生视频/全新Scail2动作模仿 姿势迁移 高质量超长60秒视频_2084096614234411010.json, 视频生成/图生视频/全新Scail2动作模仿 高质量超长60秒图生视频  姿势迁移  动作迁移_2080961899516227585.json, 视频生成/图生视频/全新Scail2动作模仿+姿势迁移+高质量超长60秒视频_2095745340199759874.json, 视频生成/图生视频/全新Scail2动作模仿！_60秒Ai女友跳舞长视频生成！_2117024306508165122.json, 视频生成/图生视频/全新scail2表情迁移复刻！_2072872974780293121.json, 视频生成/图生视频/动作迁移 超长视频 全新Scail2动作模仿（人物一致性+表情+手指优话+多人）_2080536427523305473.json, 视频生成/图生视频/图生视频-全新Scail2动作模仿！  60秒Ai女友跳舞长视频生成！_2084091641723441153.json, 视频生成/图生视频/巨牛数字人一键60秒跳舞长视频生成！全新Scail2动作模仿！_2079531560948289538.json, 视频生成/图生视频/表情迁移-scail2-真人表情模仿_2107013850011889666.json, 视频生成/图生视频/高质量超长60秒图生视频 全新Scail2动作模仿 姿势迁移_2076101279394390017.json, 视频生成/图生视频/高质量超长60秒图生视频 全新Scail2动作模仿 姿势迁移_2090253597362712578.json, 视频生成/图生视频/高质量超长一分钟图生视频 全新Scail2动作模仿 姿势迁移_2082745710826573825.json, 视频生成/文生视频/DG_全新Ai表情迁移！scail2表情复刻+表情模仿_2085237532748509185.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 41 个 workflow 归纳得出（图片生成/文生图/Krea2文生图_2093651372473413634.json、图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2099674585972170753.json、图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2099757996581670913.json、图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2099777480667258881.json、图片生成/文生图/Krea2超写实4K文生图、超写实去ai感_2100036055553630209.json…）
+> 由 `engine/knowledge_consolidation` 从 60 个 workflow 归纳得出（平台全量/Scail2视频动作迁移_2069671493960814593.json、平台全量/Scail2视频动作迁移_2069682582454886401.json、平台全量/Scail2视频动作迁移_2069683949407924226.json、平台全量/Scail2视频动作迁移_2083757993337905154.json、平台全量/Scail视频动作迁移_2069687039821438977.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：41
-- **可信度**：强结论
-- **平均知识覆盖**：86%
+- **样本数**：60
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 41 个 workflow 都包含：
+全部 60 个 workflow 都包含：
+- `AILab_QwenVL`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
 - `CheckpointLoaderSimple`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: NumberCalculator`
-- `ModelSamplingAuraFlow`
-- `PathchSageAttentionKJ`
-- `SaveImage`
-- `SimpleMathDual+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
+- `DiffusionModelLoaderKJ`
+- `ImageResizeKJv2`
+- `Int`
+- `JjkText`
+- `KSamplerSelect`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `PrimitiveInt`
+- `SAM3_VideoTrack`
+- `SimpleMath+`
 - `VAELoader`
-- `easy loraStack`
-- `easy loraStackApply`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 40/41 个有
-- `PreviewImage` —— 40/41 个有
-- `QZ_ResolutionPreset` —— 40/41 个有
-- `SeedVR2LoadDiTModel` —— 40/41 个有
-- `SeedVR2LoadVAEModel` —— 40/41 个有
-- `SeedVR2VideoUpscaler` —— 40/41 个有
-- `Image Comparer (rgthree)` —— 39/41 个有
-- `Fast Groups Bypasser (rgthree)` —— 34/41 个有
-- `easy seed` —— 34/41 个有
-- `孤海注释` —— 5/41 个有
-- `EmptyImage` —— 3/41 个有
-- `LoadImage` —— 2/41 个有
-- `PreviewAny` —— 1/41 个有
-- `PrimitiveInt` —— 1/41 个有
-- `Qwen3_VQA` —— 1/41 个有
-- `RH_Captioner` —— 1/41 个有
-- `ShowText|pysssss` —— 1/41 个有
-- `Text Concatenate` —— 1/41 个有
+- `CLIPVisionLoader` —— 59/60 个有
+- `GetNode` —— 54/60 个有
+- `SetNode` —— 54/60 个有
+- `ShowText|pysssss` —— 54/60 个有
+- `LayerUtility: PurgeVRAM` —— 53/60 个有
+- `SCAIL2FitVideo` —— 53/60 个有
+- `SCAIL2ReferencePack` —— 53/60 个有
+- `SCAIL2ReferenceSAMBuilder` —— 53/60 个有
+- `SCAIL2SimpleVideo` —— 53/60 个有
+- `WanChunkFeedForward` —— 53/60 个有
+- `VHS_VideoCombine` —— 32/60 个有
+- `DownloadAndLoadGIMMVFIModel` —— 31/60 个有
+- `GIMMVFI_interpolate` —— 31/60 个有
+- `CreateVideo` —— 28/60 个有
+- `SaveVideo` —— 28/60 个有
+- `RIFE VFI` —— 21/60 个有
+- `DF_Int_to_Float` —— 7/60 个有
+- `SCAIL2MultiReferenceColoredMask` —— 7/60 个有
+- `SCAIL2ScheduledLongVideo` —— 7/60 个有
+- `SCAIL2SegmentPlanBuilder` —— 7/60 个有
+- `孤海注释` —— 2/60 个有
+- `Getter` —— 1/60 个有
+- `ImageConcatMulti` —— 1/60 个有
+- `PreviewImage` —— 1/60 个有
+- `RHHiddenNodes` —— 1/60 个有
+- `Setter` —— 1/60 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 41 | 100% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 41 | 100% |
-| 采样算法 | 1 | 1 - 1 | 41 | 100% |
-| 调度器 | res_2s | - | 41 | 100% |
-| 重绘幅度 | linear_quadratic | - | 41 | 100% |
-| 宽度 | 512 | 512 - 512 | 41 | 100% |
-| 高度 | 512 | 512 - 512 | 41 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,10 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，41 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，41 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，41 个样本，取值集中（一致性 100%）
-- 调度器 最常用 res_2s，41 个样本，一致性 100%
-- 重绘幅度 最常用 linear_quadratic，41 个样本，一致性 100%
-- 宽度 中位数 512，观测区间 512 - 512，41 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，41 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

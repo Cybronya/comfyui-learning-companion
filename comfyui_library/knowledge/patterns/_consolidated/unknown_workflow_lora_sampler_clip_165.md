@@ -1,47 +1,68 @@
 ---
 name: unknown_workflow_lora_sampler_clip_165
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.67525
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyFlux2LatentImage, Flux2Scheduler, INTConstant, KSamplerSelect, Load Lora, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.64
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, CreateVideo, ImageBatch, ImageFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAELoader, WanInfiniteTalkToVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/kelin文生图_清新插画风格lora_2018877722025533441.json, 图片生成/文生图/kelin文生图_清新插画风格lora_2020376014404194305.json, 图片生成/文生图/klein文生图_手绘吉卜力风格lora一键出图_2019720294700687361.json, 图片生成/文生图/klein文生图_手绘吉卜力风格lora有原模型生图对比_2019693546772631553.json]
+members: [数字人/数字人/infinitalk-数字人唱歌对口型-无限时长_2060296846307844097.json, 视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2042859514055106562.json, 视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2066742321412136962.json, 视频生成/图生视频/官方版InfineTalk长视频生成(无劣化)_2019387715191578626.json, 视频生成/图生视频/数字人唱歌对口型-无限时长_2115428337488318466.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_165
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/kelin文生图_清新插画风格lora_2018877722025533441.json、图片生成/文生图/kelin文生图_清新插画风格lora_2020376014404194305.json、图片生成/文生图/klein文生图_手绘吉卜力风格lora一键出图_2019720294700687361.json、图片生成/文生图/klein文生图_手绘吉卜力风格lora有原模型生图对比_2019693546772631553.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/infinitalk-数字人唱歌对口型-无限时长_2060296846307844097.json、视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2042859514055106562.json、视频生成/图生视频/InfiniteTalk：图片 + 音频，生成数字人视频_2066742321412136962.json、视频生成/图生视频/官方版InfineTalk长视频生成(无劣化)_2019387715191578626.json、视频生成/图生视频/数字人唱歌对口型-无限时长_2115428337488318466.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `BasicScheduler`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `INTConstant`
+- `ConditioningZeroOut`
+- `CreateVideo`
+- `ImageBatch`
+- `ImageFromBatch`
 - `KSamplerSelect`
-- `Load Lora`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelPatchLoader`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `UNETLoader`
+- `SaveVideo`
 - `VAEDecode`
 - `VAELoader`
+- `WanInfiniteTalkToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageReel` —— 2/4 个有
-- `LayerUtility: ImageReelComposit` —— 2/4 个有
+- `UnetLoaderGGUF` —— 4/5 个有
+- `CLIPVisionEncode` —— 3/5 个有
+- `CLIPVisionLoader` —— 3/5 个有
+- `GetNode` —— 3/5 个有
+- `LoadAudio` —— 3/5 个有
+- `PrimitiveInt` —— 3/5 个有
+- `SetNode` —— 3/5 个有
+- `Anything Everywhere3` —— 2/5 个有
+- `GetImageSizeAndCount` —— 2/5 个有
+- `ImageScaleToMaxDimension` —— 2/5 个有
+- `ModelPatchTorchSettings` —— 2/5 个有
+- `PathchSageAttentionKJ` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `WujiAudioLoader` —— 2/5 个有
+- `忽略多组孤海` —— 2/5 个有
+- `FL_Audio_Crop` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `UNETLoader` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,37 +3,36 @@ name: unknown_workflow_generic_526
 type: Unknown Workflow
 frequency: 6
 level: moderate
-coverage: 0.8955
-common_nodes: [LoadAudio, PreviewAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.837167
+common_nodes: [CR Prompt Text, LoadVideo, RH_LLMAPI_Pro_Node, SaveVideo, ShellAgentPluginOutputText]
 problems: []
 missing: []
-members: [音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json, 音频生成/音频生成/声音克隆（最强克隆音色，情感调节）_2083171538429366274.json, 音频生成/音频生成/对话人声模仿工作流_2045830581509955585.json, 音频生成/音频生成/工作流视频篇6-TTS2声音克隆+情感参考_2018236652564516865.json, 音频生成/音频生成/工作流视频篇7-多人声音克隆+情感参考_2018238669697589249.json, 音频生成/音频生成/语音生成工作流-indextts2-带情感调节_1979545115100352513.json]
+members: [图片生成/反推提示词/DG_视频拆析_2025467829289492481.json, 图片生成/反推提示词/SeeDance 2.0爆款视频反推_2020689534173847554.json, 图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2038520232981041153.json, 图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2044864817202208769.json, 图片生成/反推提示词/无限画布-视频反推-gemini-3_2068845275380281346.json, 图片生成/反推提示词/视频反推-复刻爆款视频脚本分析输出提示词-超能视频2.0_2022603238289182722.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_526
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/单人语音克隆（indexTTS2）_1998623860884955138.json、音频生成/音频生成/声音克隆（最强克隆音色，情感调节）_2083171538429366274.json、音频生成/音频生成/对话人声模仿工作流_2045830581509955585.json、音频生成/音频生成/工作流视频篇6-TTS2声音克隆+情感参考_2018236652564516865.json、音频生成/音频生成/工作流视频篇7-多人声音克隆+情感参考_2018238669697589249.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/DG_视频拆析_2025467829289492481.json、图片生成/反推提示词/SeeDance 2.0爆款视频反推_2020689534173847554.json、图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2038520232981041153.json、图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2044864817202208769.json、图片生成/反推提示词/无限画布-视频反推-gemini-3_2068845275380281346.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `CR Prompt Text`
+- `LoadVideo`
+- `RH_LLMAPI_Pro_Node`
+- `SaveVideo`
+- `ShellAgentPluginOutputText`
 
 **可变部分**（部分 workflow 才有）：
-- `easy indexTTSEmotionVector` —— 5/6 个有
-- `Fast Groups Muter (rgthree)` —— 2/6 个有
-- `easy indexTTSEmotionMerge` —— 2/6 个有
-- `TextInput_` —— 1/6 个有
+- `easy showAnything` —— 5/6 个有
+- `LoadImage` —— 2/6 个有
+- `ShowText` —— 1/6 个有
 
 ## 典型参数
 

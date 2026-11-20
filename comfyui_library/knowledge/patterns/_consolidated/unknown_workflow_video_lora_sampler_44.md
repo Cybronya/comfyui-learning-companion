@@ -1,70 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_44
 type: Unknown Workflow
-frequency: 23
+frequency: 27
 level: moderate
-coverage: 0.897435
-common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.705185
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageRangeFromBatch, ImageResizeKJv2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/(Insight版)Wan2.2 Lightx2v权重差异调度图生视频加速版V1_1972516468346777602.json, 视频生成/图生视频/(Insight版)Wan2.2 图生视频加速版V1_1972495972968361985.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度HPS低噪加速版V1_1964938797580472321.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度HPS高噪MPS低噪加速版V1_1964944086870446082.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度MPS低噪加速版V1_1964938910965055490.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度MPS高噪HPS低噪加速版V1_1964939637061992450.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度加速版V1_1964922517129449473.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度双HPS加速版V1_1964962466272825346.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度双MPS加速版V1_1964938181672095745.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频breast弹弹V2_1966515358914031618.json, 视频生成/图生视频/(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_2004808833312714753.json, 视频生成/图生视频/(KJ版)Wan2.2+Pusa图生视频加速版V1_1963292040106840066.json, 视频生成/图生视频/(KJ版)Wan2.2图生视频精准调度加速_1976470630323326977.json, 视频生成/图生视频/(KJ版)Wan2.2图生视频精准调度加速版V5（加速及质量提高）_1950024658970173442.json, 视频生成/图生视频/(Palingenesis版)Wan2.2 图生视频加速版V1_1972111264942059521.json, 视频生成/图生视频/(insight+ani全能视频Sv3新版)wan2.2高动态卡通动漫图生视频加速版v1_1972564669351260162.json, 视频生成/图生视频/001-(KJ版)Wan2.2高质量图生视频-优调版_1958374851545350145.json, 视频生成/图生视频/Lightx2v 1030 差异模型高低噪图生视频V1(手动提示词)_1984649451941806082.json, 视频生成/图生视频/Wan 图生视频breast弹弹_1968517306395570177.json, 视频生成/图生视频/Wan2.2 kijai 4步lora 快速图生视频极速版_1978124333073719297.json, 视频生成/图生视频/Wan2.2图生视频-老照片动起来V2_1988928364830404610.json, 视频生成/图生视频/wan2.2老照片动起来复活版-图生美女视频_1989169406058049538.json, 视频生成/图生视频/【导演版】AI 短剧视频生成器——图到视频一键生成_1984149436848865282.json]
+members: [平台全量/Infinitetalk_ Video-to-Digital Human – More Dynami_2087398291481911298.json, 平台全量/Infinitetalk_ Video-to-Digital Human – More Dynami_2109809915975004162.json, 平台全量/视频对口型InfiniteTalk数字人（经典本非常好用）_2100573942074396673.json, 平台全量/视频对口型_2042947677700231170.json, 数字人/数字人/InfiniteTalkV2V 视频对口型数字人说话唱歌_2042253660570263554.json, 数字人/数字人/Infinitetalk--视频对口型-完美复刻动作，保持原视频动作一致_1992505491098062850.json, 数字人/数字人/Infinitetalk视频转数字人-V2V_2042509042618208258.json, 数字人/数字人/Infinitetalk视频转数字人-动态更强更自然_2043528487876694017.json, 数字人/数字人/wan2.1视频对口型（支持超长30秒）_2061334128561315841.json, 数字人/数字人/【808】视频角色对口型_2038885608399048706.json, 数字人/数字人/【CQ808】单人视频对口型工作流_2012015791977271298.json, 数字人/数字人/单人对口型New_2001319672345657346.json, 数字人/数字人/单人对口型_2002722406730985474.json, 数字人/数字人/视频对口型 自用_2034144635550965761.json, 数字人/数字人/视频对口型InfiniteTalkV2V数字人说话唱歌! B站艾橘溪_1961385278642569218.json, 数字人/数字人/视频对口型InfiniteTalk数字人_2011318591227961346.json, 数字人/数字人/视频对口型InfiniteTalk数字人（新版本非常好用）_2006294001602797570.json, 数字人/数字人/视频对口型InfiniteTalk数字人（新版本非常好用）_2055455568445362178.json, 数字人/数字人/视频对口型（指定角色）_2036439627673899009.json, 数字人/数字人/视频对口型（指定角色）_2037210359945240577.json, 数字人/数字人/视频语音对口型 InfiniteTalk-Wan2.1_2027827389857796097.json, 视频生成/图生视频/数字人-InfiniteTalk单人视频对口型_2021869907490639874.json, 视频生成/图生视频/视频对口型InfiniteTalk数字人（新版本非常好用）_2003771753522470913.json, 视频生成/图生视频/视频对口型InfiniteTalk数字人（新版本非常好用）_2010335855776374785.json, 音频生成/音频生成/InfiniteTalkV2V 视频对口型数字人说话唱歌_2005896738135306242.json, 音频生成/音频生成/视频对口型 自用_2019776475708268545.json, 音频生成/音频生成/视频对口型（指定角色）_2012598659203997698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_44
 
-> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/(Insight版)Wan2.2 Lightx2v权重差异调度图生视频加速版V1_1972516468346777602.json、视频生成/图生视频/(Insight版)Wan2.2 图生视频加速版V1_1972495972968361985.json、视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度HPS低噪加速版V1_1964938797580472321.json、视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度HPS高噪MPS低噪加速版V1_1964944086870446082.json、视频生成/图生视频/(KJ版)Wan2.2 图生视频SIMGA精准调度MPS低噪加速版V1_1964938910965055490.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（平台全量/Infinitetalk_ Video-to-Digital Human – More Dynami_2087398291481911298.json、平台全量/Infinitetalk_ Video-to-Digital Human – More Dynami_2109809915975004162.json、平台全量/视频对口型InfiniteTalk数字人（经典本非常好用）_2100573942074396673.json、平台全量/视频对口型_2042947677700231170.json、数字人/数字人/InfiniteTalkV2V 视频对口型数字人说话唱歌_2042253660570263554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：23
+- **样本数**：27
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 23 个 workflow 都包含：
-- `CR Prompt Text`
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `INTConstant`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+全部 27 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoBlockSwap` —— 22/23 个有
-- `WanVideoSetBlockSwap` —— 21/23 个有
-- `WanVideoSetLoRAs` —— 21/23 个有
-- `WanVideoTorchCompileSettings` —— 21/23 个有
-- `Float` —— 20/23 个有
-- `WanVideoScheduler` —— 20/23 个有
-- `WanVideoSigmaToStep` —— 20/23 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/23 个有
-- `MathExpression|pysssss` —— 4/23 个有
-- `LayerUtility: PurgeVRAM` —— 3/23 个有
-- `StringToFloatList` —— 3/23 个有
-- `FloatToSigmas` —— 2/23 个有
-- `ImageFromBatch+` —— 2/23 个有
-- `CR Seed` —— 1/23 个有
-- `ConditioningSetArea` —— 1/23 个有
-- `GetNode` —— 1/23 个有
-- `ImageScaleBy` —— 1/23 个有
-- `Int` —— 1/23 个有
-- `Label (rgthree)` —— 1/23 个有
-- `MuyeTextEditOutput` —— 1/23 个有
-- `RHHiddenNodes` —— 1/23 个有
-- `RIFE VFI` —— 1/23 个有
-- `SetNode` —— 1/23 个有
-- `easy int` —— 1/23 个有
+- `SimpleMath+` —— 26/27 个有
+- `PrimitiveInt` —— 25/27 个有
+- `GetImageSizeAndCount` —— 23/27 个有
+- `GetNode` —— 23/27 个有
+- `SetNode` —— 23/27 个有
+- `Audio Duration (mtb)` —— 22/27 个有
+- `ImageFromBatch+` —— 22/27 个有
+- `JjkText` —— 22/27 个有
+- `LayerUtility: PurgeVRAM` —— 22/27 个有
+- `PreviewAny` —— 22/27 个有
+- `PrimitiveString` —— 22/27 个有
+- `easy cleanGpuUsed` —— 8/27 个有
+- `AILab_MaskPreview` —— 4/27 个有
+- `Float to Int` —— 4/27 个有
+- `Getter` —— 4/27 个有
+- `ImageConcanate` —— 4/27 个有
+- `ImageFromBatch` —— 4/27 个有
+- `MaskListToMaskBatch` —— 4/27 个有
+- `RH_Translator` —— 4/27 个有
+- `Setter` —— 4/27 个有
+- `SoundFlow_GetLength` —— 4/27 个有
+- `Text` —— 4/27 个有
+- `easy sam3ModelLoader` —— 4/27 个有
+- `easy sam3VideoSegmentation` —— 4/27 个有
+- `VHS_VideoInfoLoaded` —— 2/27 个有
+- `FloatConstant` —— 1/27 个有
+- `SaveAudio` —— 1/27 个有
+- `easy int` —— 1/27 个有
 
 ## 典型参数
 

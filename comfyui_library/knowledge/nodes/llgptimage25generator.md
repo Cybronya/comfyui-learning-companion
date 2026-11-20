@@ -39,7 +39,7 @@ Image Processing
 
 常见取值：
 
-- `["image", "gpt-image2.5", "v1/images", "gpt-image-2.5-sunburst", "sk-4Hk0J5bEYRmlgL4Nt79YOqzvhCs0zD2U9Lg98cTMi5MOAP26", `（3 次）
+- `["image", "gpt-image2.5", "v1/images", "gpt-image-2.5-sunburst", "REDACTED0000000000000000000000000000000000000000000", `（3 次）
 
 ## 可信度
 

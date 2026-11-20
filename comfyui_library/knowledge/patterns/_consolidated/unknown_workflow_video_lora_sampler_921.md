@@ -1,75 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_921
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9665
-common_nodes: [AudioCropProcessUTK, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, ImageSharpen, JWInteger, KSamplerSelect, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveFloat, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, TrimAudioDuration, VAEDecode, VAELoaderKJ, VHS_VideoCombine, easy float]
+frequency: 3
+level: moderate
+coverage: 0.798667
+common_nodes: [JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, PrimitiveStringMultiline, SaveLatent, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/ltx-2-数字人-Digital Human_2019699591033131009.json, 视频生成/图生视频/ltx2.3数字人-图生视频_2033035717600878594.json]
+members: [视频生成/图生视频/正在测试lora  -_1944651399730745345.json, 视频生成/图生视频/正在测试lora  -_1944662370163544065.json, 视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_921
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/ltx-2-数字人-Digital Human_2019699591033131009.json、视频生成/图生视频/ltx2.3数字人-图生视频_2033035717600878594.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/正在测试lora  -_1944651399730745345.json、视频生成/图生视频/正在测试lora  -_1944662370163544065.json、视频生成/图生视频/（自用）N-API 14B图生视频超级加速版V1_1937513401944051713.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioCropProcessUTK`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
-- `ImageSharpen`
+全部 3 个 workflow 都包含：
 - `JWInteger`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `RH_LLMAPI_NODE`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
-- `VAEDecode`
-- `VAELoaderKJ`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `SaveLatent`
 - `VHS_VideoCombine`
-- `easy float`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `LTXAVTextEncoderLoader` —— 1/2 个有
-- `LTXVScheduler` —— 1/2 个有
-- `LayerFilter: GaussianBlur` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
-- `MelBandRoFormerModelLoader` —— 1/2 个有
-- `MelBandRoFormerSampler` —— 1/2 个有
-- `ModelPatchTorchSettings` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
+- `ACE_TextConcatenate` —— 2/3 个有
+- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
+- `GIMMVFI_interpolate` —— 2/3 个有
+- `RH_Translator` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `LoadLatent` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -81,4 +65,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,60 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_620
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.7585
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.9602
+common_nodes: [CreateCFGScheduleFloatList, ImageResizeKJv2, LoadImage, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/万象AI--MiniMax H3 多参生视频-V2（加速版）_2085937471304585218.json, 视频生成/文生视频/万象AI--MiniMax H3 多参生视频-V3（加速提示词优化版）_2086606105207205889.json, 视频生成/文生视频/加速版 只需4步，300s，0.9倍百万像素 minimax h3 4步加速lightx2v_2086649957204979713.json, 视频生成/文生视频/打斗专用工作流MINIMAX-H3_2089439571347066881.json]
+members: [视频生成/图生视频/Wan2.2-lightx2v-6步加速图生视频-KJ版_1950132208273154049.json, 视频生成/图生视频/Wan2.2一致性长视频_1950574501610311681.json, 视频生成/图生视频/Wan2.2图生视频-速度和质量的再一次提升_1950204585861365762.json, 视频生成/图生视频/Wan2.2电商产品旋转360度轨道镜头-任意物体三视图IP多角度v1.2_2005434183445086209.json, 视频生成/图生视频/wan2.2图生视频_2037533224406093826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_620
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/万象AI--MiniMax H3 多参生视频-V2（加速版）_2085937471304585218.json、视频生成/文生视频/万象AI--MiniMax H3 多参生视频-V3（加速提示词优化版）_2086606105207205889.json、视频生成/文生视频/加速版 只需4步，300s，0.9倍百万像素 minimax h3 4步加速lightx2v_2086649957204979713.json、视频生成/文生视频/打斗专用工作流MINIMAX-H3_2089439571347066881.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-lightx2v-6步加速图生视频-KJ版_1950132208273154049.json、视频生成/图生视频/Wan2.2一致性长视频_1950574501610311681.json、视频生成/图生视频/Wan2.2图生视频-速度和质量的再一次提升_1950204585861365762.json、视频生成/图生视频/Wan2.2电商产品旋转360度轨道镜头-任意物体三视图IP多角度v1.2_2005434183445086209.json、视频生成/图生视频/wan2.2图生视频_2037533224406093826.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 5 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
-- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3DualClockSamplerT8` —— 3/4 个有
-- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
-- `VHS_LoadVideo` —— 3/4 个有
-- `BasicScheduler` —— 2/4 个有
-- `KSamplerSelect` —— 2/4 个有
-- `MiniMaxH3ImageToVideo` —— 2/4 个有
-- `LoadAudio` —— 1/4 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/4 个有
-- `PT_H3ConcatAVLatent` —— 1/4 个有
-- `PlaySound|pysssss` —— 1/4 个有
-- `RHLLMChatNode` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
-- `VAEEncode` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `GetImageSizeAndCount` —— 4/5 个有
+- `INTConstant` —— 4/5 个有
+- `LoadWanVideoT5TextEncoder` —— 4/5 个有
+- `VHS_VideoCombine` —— 4/5 个有
+- `WanVideoTextEncode` —— 4/5 个有
+- `CLIPLoader` —— 3/5 个有
+- `CLIPTextEncode` —— 3/5 个有
+- `WanVideoTextEmbedBridge` —— 3/5 个有
+- `CreateVideo` —— 2/5 个有
+- `PreViewVideo` —— 2/5 个有
+- `CLIPLoaderGGUF` —— 1/5 个有
+- `MathExpression|pysssss` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `Primitive integer [Crystools]` —— 1/5 个有
+- `ReActorFaceSwap` —— 1/5 个有
+- `SaveVideo` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
+- `VideoFrameExtractor` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy seed` —— 1/5 个有
 
 ## 典型参数
 

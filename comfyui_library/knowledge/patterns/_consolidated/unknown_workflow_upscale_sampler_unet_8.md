@@ -1,84 +1,63 @@
 ---
 name: unknown_workflow_upscale_sampler_unet_8
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.892167
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, CreateVideo, DF_Int_to_Float, EasyCache, Fast Groups Bypasser (rgthree), GetVideoComponents, ImpactSwitch, KSamplerSelect, LTXVConcatAVLatent, LoadAudio, LoadImage, LoadVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowAnything|Mie, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.815143
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ColorTransfer, ComfyMathExpression, ImageConcatMulti, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/b25-49混合模型提示词优化反推_2110794014583771137.json, 视频生成/图生视频/h3提示词优化反推加速双采_2097892087424438274.json, 视频生成/图生视频/h3提示词优化反推加速双采_2110570373136871425.json, 视频生成/图生视频/h3提示词优化反推加速双采_2111011900757729281.json, 视频生成/文生视频/h3提示词优化反推加速双采_2097892087424438274.json, 视频生成/文生视频/双采高低采singularity模型加速版vdn高步数-MiniMax H3｜多参图像音频极速生视频_2097862187531456514.json]
+members: [图片生成/图生图/MiniMax H3图生图2K加速+seedVR2超分细节翻倍_2116446087585288194.json, 图片生成/图生图/MiniMax H3图生图2K加速，再SeedVR2超分细节翻倍_2116396834464821250.json, 平台全量/H3一键转吉卜力动画电影风，SeedVR2超分2K细节直出_2117979820951953410.json, 平台全量/H3一键转手绘动画风，SeedVR2超分2K细节直出_2117494281727471618.json, 平台全量/H3一键转治愈手绘动画风，SeedVR2超分2K细节直出_2117970881522782209.json, 视频生成/图生视频/MiniMax_H3图生图2K加速+seedVR2超分细节翻倍_2116701727683604481.json, 视频生成/图生视频/MiniMax_H3图生图2K加速+seedVR2超分细节翻倍_2116715950119673857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_unet_8
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/b25-49混合模型提示词优化反推_2110794014583771137.json、视频生成/图生视频/h3提示词优化反推加速双采_2097892087424438274.json、视频生成/图生视频/h3提示词优化反推加速双采_2110570373136871425.json、视频生成/图生视频/h3提示词优化反推加速双采_2111011900757729281.json、视频生成/文生视频/h3提示词优化反推加速双采_2097892087424438274.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/MiniMax H3图生图2K加速+seedVR2超分细节翻倍_2116446087585288194.json、图片生成/图生图/MiniMax H3图生图2K加速，再SeedVR2超分细节翻倍_2116396834464821250.json、平台全量/H3一键转吉卜力动画电影风，SeedVR2超分2K细节直出_2117979820951953410.json、平台全量/H3一键转手绘动画风，SeedVR2超分2K细节直出_2117494281727471618.json、平台全量/H3一键转治愈手绘动画风，SeedVR2超分2K细节直出_2117970881522782209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CR Prompt Text`
+- `ColorTransfer`
 - `ComfyMathExpression`
-- `CreateVideo`
-- `DF_Int_to_Float`
-- `EasyCache`
-- `Fast Groups Bypasser (rgthree)`
-- `GetVideoComponents`
-- `ImpactSwitch`
+- `ImageConcatMulti`
 - `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LoadAudio`
 - `LoadImage`
-- `LoadVideo`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
 - `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `ShowAnything|Mie`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 5/6 个有
-- `DapaoH3LocalPromptNode` —— 5/6 个有
-- `DapaoH3PromptBoxNode` —— 5/6 个有
-- `ImageResizeKJv2` —— 5/6 个有
-- `LoraLoaderModelOnly` —— 5/6 个有
-- `MiniMaxH3VDNRuntimeAuditT8Advanced` —— 5/6 个有
-- `PreviewAny` —— 5/6 个有
-- `SolAttnMiniMax` —— 5/6 个有
-- `VAEEncode` —— 5/6 个有
-- `VAEEncodeAudio` —— 5/6 个有
-- `RandomSeedNoise` —— 4/6 个有
-- `SaveAudio` —— 4/6 个有
-- `T8_IndexTTS25_EmotionControl` —— 4/6 个有
-- `T8_IndexTTS25_Generate` —— 4/6 个有
-- `T8_IndexTTS25_ModelLoader` —— 4/6 个有
-- `ManualSigmas` —— 2/6 个有
-- `GoohaiUniversalSlider` —— 1/6 个有
-- `LTXVSeparateAVLatent` —— 1/6 个有
-- `Lora Loader Stack (rgthree)` —— 1/6 个有
-- `MiniMaxH3SparkAttentionAuto` —— 1/6 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/6 个有
-- `SplitSigmas` —— 1/6 个有
+- `ImageFromBatch` —— 4/7 个有
+- `PrimitiveFloat` —— 4/7 个有
+- `孤海注释` —— 4/7 个有
+- `Anything Everywhere3` —— 3/7 个有
+- `GetNode` —— 3/7 个有
+- `ImageFromBatch+` —— 3/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/7 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `MiniMaxChunkFeedForward` —— 3/7 个有
+- `MiniMaxLowVRAMAttention` —— 3/7 个有
+- `ModelAttentionBackend` —— 3/7 个有
+- `PreviewImage` —— 3/7 个有
+- `PrimitiveInt` —— 3/7 个有
+- `SetNode` —— 3/7 个有
 
 ## 典型参数
 

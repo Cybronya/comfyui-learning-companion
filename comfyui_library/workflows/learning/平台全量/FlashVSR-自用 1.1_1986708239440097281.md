@@ -1,0 +1,38 @@
+---
+key: 平台全量/FlashVSR-自用 1.1_1986708239440097281.json
+name: FlashVSR-自用 1.1_1986708239440097281
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/FlashVSR-自用 1.1_1986708239440097281.json
+hash: 7ee7cafc55e54cb1
+coverage: 1
+learned_at: 2026-11-14 00:27:01
+nodes: [VHS_VideoInfoLoaded, VHS_VideoCombine, LayerUtility: ImageScaleByAspectRatio V2, VHS_VideoCombine, FlashVSRNode, VHS_LoadVideo]
+patterns: []
+missing: []
+---
+
+# 平台全量/FlashVSR-自用 1.1_1986708239440097281.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/FlashVSR-自用 1.1_1986708239440097281.json`
+
+## 结构
+
+**生成流程**：Process → Other
+
+**节点**（6 个）：
+- `VHS_VideoInfoLoaded`
+- `VHS_VideoCombine`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_VideoCombine`
+- `FlashVSRNode`
+- `VHS_LoadVideo`
+
+## 知识
+
+覆盖率 **100%**（6/6）
+
+**有卡**：`VHS_VideoInfoLoaded`、`VHS_VideoCombine`、`LayerUtility: ImageScaleByAspectRatio V2`、`FlashVSRNode`、`VHS_LoadVideo`
+
+**用到的条目**：FlashVSRNode、LayerUtility: ImageScaleByAspectRatio V2、VHS_LoadVideo、VHS_VideoCombine、VHS_VideoInfoLoaded、AspectRatio、ImageScale、ImageScaleBy

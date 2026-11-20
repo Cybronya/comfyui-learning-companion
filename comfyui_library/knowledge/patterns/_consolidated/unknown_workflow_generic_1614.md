@@ -3,34 +3,39 @@ name: unknown_workflow_generic_1614
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, Text]
+coverage: 0.6135
+common_nodes: [Image Comparer (rgthree), LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, PreviewImage, SaveImage, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs]
 problems: []
 missing: []
-members: [图片生成/文生图/image2 网红破屏 3D 提示词生成器+全节点注释_2056695584635047938.json, 图片生成/文生图/全能图片 pro网红破屏 3D 提示词生成器+全节点注释_2056690837379182594.json]
+members: [图片生成/图生图/Seedvr高清放大_1988909843182399489.json, 图片生成/图生图/seedVR2最强放大，细节还原夸张_1950769674688618497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1614
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/image2 网红破屏 3D 提示词生成器+全节点注释_2056695584635047938.json、图片生成/文生图/全能图片 pro网红破屏 3D 提示词生成器+全节点注释_2056690837379182594.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Seedvr高清放大_1988909843182399489.json、图片生成/图生图/seedVR2最强放大，细节还原夸张_1950769674688618497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Image Comparer (rgthree)`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
+- `PreviewImage`
 - `SaveImage`
-- `Text`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2TextToImage` —— 1/2 个有
-- `RH_RhartImageNProTextToImage` —— 1/2 个有
+- `ImageScaleBy` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 

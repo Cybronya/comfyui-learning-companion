@@ -1,91 +1,106 @@
 ---
 name: unknown_workflow_video_lora_sampler_640
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.929
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CR Text, EmptySD3LatentImage, GetImageSizeAndCount, ImageResizeKJv2, KSampler, LoadImage, LoadWanVideoT5TextEncoder, ModelSamplingAuraFlow, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.83675
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, ImageFromBatch, ImageResizeKJv2, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PT_H3ConcatAVLatent, PixaromaGetNode, PixaromaLabel, PixaromaResolution, PixaromaSetNode, PreviewImage, RHHiddenNodes, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, Switch any [Crystools], Text, UNETLoader, VAEDecode, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy boolean, easy cleanGpuUsed, easy imageListToImageBatch, easy seed, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json, 图片生成/文生图/Wan2.2+千问剪纸风格视频生成_1976913869014765569.json, 图片生成/文生图/文生动态表情包微信动态表情制作_1979202770127458305.json]
+members: [图片生成/图生图/Flux2 Klein 9B 电影级分镜 + MiniMax H3 影像生成工作流_2088827135791296513.json, 视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104386310512406530.json, 视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104752656664317954.json, 视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_640
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json、图片生成/文生图/Wan2.2+千问剪纸风格视频生成_1976913869014765569.json、图片生成/文生图/文生动态表情包微信动态表情制作_1979202770127458305.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 9B 电影级分镜 + MiniMax H3 影像生成工作流_2088827135791296513.json、视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104386310512406530.json、视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104752656664317954.json、视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CR Text`
-- `EmptySD3LatentImage`
-- `GetImageSizeAndCount`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `KSampler`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `ModelSamplingAuraFlow`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PT_H3ConcatAVLatent`
+- `PixaromaGetNode`
+- `PixaromaLabel`
+- `PixaromaResolution`
+- `PixaromaSetNode`
 - `PreviewImage`
+- `RHHiddenNodes`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `Switch any [Crystools]`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
+- `VAEEncodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `easy boolean`
 - `easy cleanGpuUsed`
+- `easy imageListToImageBatch`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_MiniCPM_4_V_Advanced` —— 2/3 个有
-- `ColorMatch` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `WanVideoBlockSwap` —— 2/3 个有
-- `WanVideoTorchCompileSettings` —— 2/3 个有
-- `CR Text Concatenate` —— 1/3 个有
-- `ImageScale` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `String` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `CFGGuider` —— 3/4 个有
+- `CLIPTextEncode` —— 3/4 个有
+- `CR Text` —— 3/4 个有
+- `CR Text Concatenate` —— 3/4 个有
+- `ConditioningZeroOut` —— 3/4 个有
+- `EmptyFlux2LatentImage` —— 3/4 个有
+- `Float` —— 3/4 个有
+- `Flux2Scheduler` —— 3/4 个有
+- `ModelMemoryUsageFactorOverride` —— 3/4 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `ProcessString` —— 3/4 个有
+- `ReferenceLatent` —— 3/4 个有
+- `ShowText|pysssss` —— 3/4 个有
+- `Text Multiline` —— 3/4 个有
+- `easy promptLine` —— 3/4 个有
+- `llama_cpp_instruct_adv` —— 3/4 个有
+- `llama_cpp_model_loader` —— 3/4 个有
+- `llama_cpp_parameters` —— 3/4 个有
+- `Images to RGB` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
+- `RHLLMChatNode` —— 1/4 个有
+- `RHSettingsNode` —— 1/4 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/4 个有
+- `easy imageSplitGrid` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 3 | 53% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 3 | 29% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | beta57 | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，3 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 beta57，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

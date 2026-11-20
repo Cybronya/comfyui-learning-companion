@@ -3,44 +3,55 @@ name: unknown_workflow_video_sampler_vae_116
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.8974
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.984
+common_nodes: [ImageResizeKJ, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/DeepSeek优化提示词+Wan文生视频_1900894135266459649.json, 视频生成/文生视频/Wan2.1文生视频【快速出片】_1911285182320836610.json, 视频生成/文生视频/【Wan2.1系列】文生视频工作流_1912089275754840066.json, 视频生成/文生视频/万相2.1-最强TEACACHE加速文生视频_1896798739846037506.json, 视频生成/文生视频/文生视频+通义万相KJ=艾橘溪_1895119782863831041.json]
+members: [平台全量/Wan2.1+视频生视频 lora高清_2041685485076090882.json, 平台全量/Wan视频生视频高质量加速工作流V2（比V1快1倍）_1894660227172839426.json, 平台全量/油画版Wan高质量加速版视频转视频工作流_1906709327091052546.json, 平台全量/通义万相wan2.1视频转绘支持Control 控制_1907050424120303617.json, 平台全量/🦖Wan2.1 视频生视频（更新03014）更新lora高清_1894921636406308866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_116
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/DeepSeek优化提示词+Wan文生视频_1900894135266459649.json、视频生成/文生视频/Wan2.1文生视频【快速出片】_1911285182320836610.json、视频生成/文生视频/【Wan2.1系列】文生视频工作流_1912089275754840066.json、视频生成/文生视频/万相2.1-最强TEACACHE加速文生视频_1896798739846037506.json、视频生成/文生视频/文生视频+通义万相KJ=艾橘溪_1895119782863831041.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/Wan2.1+视频生视频 lora高清_2041685485076090882.json、平台全量/Wan视频生视频高质量加速工作流V2（比V1快1倍）_1894660227172839426.json、平台全量/油画版Wan高质量加速版视频转视频工作流_1906709327091052546.json、平台全量/通义万相wan2.1视频转绘支持Control 控制_1907050424120303617.json、平台全量/🦖Wan2.1 视频生视频（更新03014）更新lora高清_1894921636406308866.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `ImageResizeKJ`
 - `LoadWanVideoT5TextEncoder`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoBlockSwap` —— 4/5 个有
-- `WanVideoTeaCache` —— 4/5 个有
-- `LayerUtility: PurgeVRAM` —— 3/5 个有
-- `JjkText` —— 2/5 个有
-- `LayerUtility: DeepSeekAPI` —— 1/5 个有
-- `Note Plus (mtb)` —— 1/5 个有
-- `WanVideoEnhanceAVideo` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
+- `ImageConcatMulti` —— 4/5 个有
+- `Note _O` —— 4/5 个有
+- `WanVideoLoraSelect` —— 4/5 个有
+- `WanVideoTorchCompileSettings` —— 4/5 个有
+- `WanVideoExperimentalArgs` —— 3/5 个有
+- `WanVideoSLG` —— 3/5 个有
+- `FusionText` —— 2/5 个有
+- `Note Plus (mtb)` —— 2/5 个有
+- `Primitive string multiline [Crystools]` —— 2/5 个有
+- `String` —— 2/5 个有
+- `GetImageSizeAndCount` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
+- `WanVideoControlEmbeds` —— 1/5 个有
 
 ## 典型参数
 

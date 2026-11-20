@@ -1,76 +1,77 @@
 ---
 name: unknown_workflow_video_lora_sampler_794
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.703
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, Fast Bypasser (rgthree), Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageResizeKJv2, JjkText, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, SaveAudioMP3, SetNode, ShowText|pysssss, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Switch, Text Concatenate, VHS_LoadVideo, VHS_VideoCombine, VoxCPM_TTS, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.799
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, INTConstant, ImageLoader, ImageResizeKJv2, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ModelSamplingSD3, MultiplePathsInput, PathchSageAttentionKJ, PreviewImage, Qwen3_VQA, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, YC_textReplaceNode, easy showAnything, wanBlockSwap]
 problems: []
 missing: []
-members: [数字人/数字人/03-10-01-WAN2.1-数字人-InfiniteTalk_单人_1989933509160693761.json, 数字人/数字人/03-10-10-WAN2.1-数字人-InfiniteTalk_小香加速lora_2019178024100433921.json]
+members: [图片生成/图生图/片场探班首尾帧驱动一镜到底运镜Smooth Mix Wan 2.2 I2V High_2004828661687742466.json, 视频生成/图生视频/明星合影相遇图生视频首尾帧V3_2003113307240374273.json, 视频生成/图生视频/电影片场转场合影图生视频（首尾帧）_2003436959081111553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_794
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/03-10-01-WAN2.1-数字人-InfiniteTalk_单人_1989933509160693761.json、数字人/数字人/03-10-10-WAN2.1-数字人-InfiniteTalk_小香加速lora_2019178024100433921.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/片场探班首尾帧驱动一镜到底运镜Smooth Mix Wan 2.2 I2V High_2004828661687742466.json、视频生成/图生视频/明星合影相遇图生视频首尾帧V3_2003113307240374273.json、视频生成/图生视频/电影片场转场合影图生视频（首尾帧）_2003436959081111553.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
-- `Fast Bypasser (rgthree)`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
 - `INTConstant`
+- `ImageLoader`
 - `ImageResizeKJv2`
-- `JjkText`
-- `LoadAudio`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `RH_LLMAPI_NODE`
-- `RH_LLMAPI_Pro_Node`
-- `SaveAudioMP3`
-- `SetNode`
-- `ShowText|pysssss`
-- `SoulXPodcastGenerate`
-- `SoulXPodcastInputParser`
-- `SoulXPodcastLoader`
-- `Switch`
-- `Text Concatenate`
-- `VHS_LoadVideo`
+- `Int`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `MultiplePathsInput`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `Qwen3_VQA`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VoxCPM_TTS`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `WanFirstLastFrameToVideo`
+- `YC_textReplaceNode`
 - `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `JWFloat` —— 1/2 个有
+- `Any To Any` —— 2/3 个有
+- `HunyuanVideoFoley` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `SaveLatent` —— 2/3 个有
+- `VAEEncode` —— 2/3 个有
+- `VHS_SelectFilename` —— 2/3 个有
+- `CR Integer To String` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ImageConcatMulti` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `SetNode` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | normal | - | 3 | 100% |
 
 ## 常见问题
 
@@ -78,4 +79,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 normal，3 个样本，一致性 100%

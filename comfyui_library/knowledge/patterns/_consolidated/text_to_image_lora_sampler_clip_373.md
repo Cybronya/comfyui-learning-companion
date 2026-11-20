@@ -3,66 +3,53 @@ name: text_to_image_lora_sampler_clip_373
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.886
-common_nodes: [Anything Everywhere3, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8686
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2 Klein 9B一键提取服装白底图，图生图电商服装抠图工具_2103984244711313410.json, 图片生成/图生图/Flux2 Klein去除卡片工作流，图生图精准移除图片中卡片元素工具_2103909515577094145.json, 图片生成/图生图/flux2klein去除主体教程｜照片多余路人杂物一键消失_2103731555385569281.json, 图片生成/图生图/flux2klein去除卡片利器｜图片多余元素一键抹干净_2103710390667538433.json, 图片生成/图生图/flux2klein添加主体工具｜往照片里加人加物毫无违和感_2103708896031498241.json]
+members: [图片生成/反推提示词/Gemma4 FT反推提示词 图片反推提示词生成工具_2099218768928006145.json, 图片生成/反推提示词/Gemma4视频FT微调流｜视频内容反推提示词更精准_2111768126886076417.json, 图片生成/反推提示词/Image2.5光影迁移重打光｜一键换光线换氛围光，画面光影重塑_2104512814172954625.json, 图片生成/反推提示词/Llama-cpp提示词反推工作流｜图像描述文字提取生成_2097096966701404161.json, 图片生成/反推提示词/Llama-cpp提示词反推｜看图直接反写咒语_2097154776684388353.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_373
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 9B一键提取服装白底图，图生图电商服装抠图工具_2103984244711313410.json、图片生成/图生图/Flux2 Klein去除卡片工作流，图生图精准移除图片中卡片元素工具_2103909515577094145.json、图片生成/图生图/flux2klein去除主体教程｜照片多余路人杂物一键消失_2103731555385569281.json、图片生成/图生图/flux2klein去除卡片利器｜图片多余元素一键抹干净_2103710390667538433.json、图片生成/图生图/flux2klein添加主体工具｜往照片里加人加物毫无违和感_2103708896031498241.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/Gemma4 FT反推提示词 图片反推提示词生成工具_2099218768928006145.json、图片生成/反推提示词/Gemma4视频FT微调流｜视频内容反推提示词更精准_2111768126886076417.json、图片生成/反推提示词/Image2.5光影迁移重打光｜一键换光线换氛围光，画面光影重塑_2104512814172954625.json、图片生成/反推提示词/Llama-cpp提示词反推工作流｜图像描述文字提取生成_2097096966701404161.json、图片生成/反推提示词/Llama-cpp提示词反推｜看图直接反写咒语_2097154776684388353.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `Anything Everywhere3`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `Flux2Scheduler`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 4/5 个有
-- `FluxGuidance` —— 4/5 个有
-- `GetImageSize` —— 2/5 个有
-- `ImageToMask` —— 2/5 个有
-- `PixaromaInpaintCrop` —— 2/5 个有
-- `PixaromaUncrop` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `AILab_ImageResize` —— 1/5 个有
-- `CFGGuider` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `ImageStitch` —— 1/5 个有
-- `Int` —— 1/5 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `Qwen3VL_Chat` —— 1/5 个有
-- `Seed (rgthree)` —— 1/5 个有
-- `SetNode` —— 1/5 个有
+- `LoadImage` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `VHS_LoadVideo` —— 3/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
+- `GetVideoComponents` —— 2/5 个有
+- `LoadVideo` —— 2/5 个有
+- `SaveText|pysssss` —— 2/5 个有
+- `ShowText|pysssss` —— 2/5 个有
+- `TextGenerate` —— 2/5 个有
+- `llama_cpp_instruct_adv` —— 2/5 个有
+- `llama_cpp_model_loader` —— 2/5 个有
+- `llama_cpp_parameters` —— 2/5 个有
+- `RH_RhartImageG25FlareImageToImage` —— 1/5 个有
 
 ## 典型参数
 

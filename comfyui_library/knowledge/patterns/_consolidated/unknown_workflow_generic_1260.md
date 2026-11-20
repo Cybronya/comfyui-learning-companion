@@ -1,31 +1,32 @@
 ---
 name: unknown_workflow_generic_1260
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.675
-common_nodes: [ResolutionSelector, SaveImage, ec44c008-5f23-4498-a682-eb96a8598475]
+frequency: 3
+level: moderate
+coverage: 0.75
+common_nodes: [EmptyImage, PreviewImage, RH_RhartImageG25OfficialTokenSunburstTextToImage, SaveImage]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_lens_t2i.json, comfyui-workflow-templates-json/image_lens_turbo_t2i.json]
+members: [图片生成/文生图/全能图片G-image-2.5文生图高品质版_2098959046538780674.json, 图片生成/文生图/全能图片G-image-2.5文生图高品质版_2099070632343465986.json, 图片生成/文生图/全能图片G-image-2.5文生图高品质版_2100025785670266882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1260
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_lens_t2i.json、comfyui-workflow-templates-json/image_lens_turbo_t2i.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/全能图片G-image-2.5文生图高品质版_2098959046538780674.json、图片生成/文生图/全能图片G-image-2.5文生图高品质版_2099070632343465986.json、图片生成/文生图/全能图片G-image-2.5文生图高品质版_2100025785670266882.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ResolutionSelector`
+全部 3 个 workflow 都包含：
+- `EmptyImage`
+- `PreviewImage`
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage`
 - `SaveImage`
-- `ec44c008-5f23-4498-a682-eb96a8598475`
 
 ## 典型参数
 
@@ -37,4 +38,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

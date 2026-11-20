@@ -1,43 +1,37 @@
 ---
 name: unknown_workflow_sampler_clip_unet_295
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.925
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, FastCanvas, FastCanvasTool, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.788
+common_nodes: [Anything Everywhere3, CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein 双图编辑 极速4步模特换衣换装溶图光影融合_2014176840830685186.json, 图片生成/图生图/Flux2 Klein 编辑多合一版  多图保持人物一致性丨产品光影融合_2022519193781936129.json, 图片生成/图生图/Klein 编辑多合一版  多图保持人物一致性丨产品光影融合 林耀_2014020601354133505.json, 图片生成/文生图/Klein 编辑多合一版_2073302428295983105.json]
+members: [图片生成/图生图/Klein 换脸【基础流】_2017112299043037185.json, 图片生成/图生图/Klein 转写实【基础流】_2018227045939023874.json, 图片生成/图生图/Klein+LLM极速扩图【效果强】_2016684919459680257.json, 图片生成/图生图/Klein9b扩图工作流_(只支持2K尺寸)_2064244174521724929.json, 平台全量/Klein9b扩图工作流 (只支持2K尺寸)_2043619791528792065.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_295
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 双图编辑 极速4步模特换衣换装溶图光影融合_2014176840830685186.json、图片生成/图生图/Flux2 Klein 编辑多合一版  多图保持人物一致性丨产品光影融合_2022519193781936129.json、图片生成/图生图/Klein 编辑多合一版  多图保持人物一致性丨产品光影融合 林耀_2014020601354133505.json、图片生成/文生图/Klein 编辑多合一版_2073302428295983105.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Klein 换脸【基础流】_2017112299043037185.json、图片生成/图生图/Klein 转写实【基础流】_2018227045939023874.json、图片生成/图生图/Klein+LLM极速扩图【效果强】_2016684919459680257.json、图片生成/图生图/Klein9b扩图工作流_(只支持2K尺寸)_2064244174521724929.json、平台全量/Klein9b扩图工作流 (只支持2K尺寸)_2043619791528792065.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `FastCanvas`
-- `FastCanvasTool`
 - `Flux2Scheduler`
 - `GetImageSize`
 - `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
@@ -49,21 +43,18 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 3/4 个有
-- `AIO_Preprocessor` —— 3/4 个有
-- `CR Prompt List` —— 3/4 个有
-- `ColorMatch` —— 3/4 个有
-- `DrawMaskOnImage` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `ImagePadForOutpaint` —— 3/4 个有
-- `LayerUtility: PurgeVRAM` —— 3/4 个有
-- `BiRefNetRMBG` —— 1/4 个有
-- `DetailTransfer` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `ImageResizeKJv2` —— 1/4 个有
-- `LayerMask: MaskGrow` —— 1/4 个有
-- `LayerMask: MaskPreview` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
+- `ImagePadForOutpaint` —— 3/5 个有
+- `ImageResize+` —— 3/5 个有
+- `RH_LLMAPI_NODE` —— 3/5 个有
+- `ShowText` —— 3/5 个有
+- `ImageColorMatch+` —— 2/5 个有
+- `ImitationHueNode` —— 1/5 个有
+- `LayerMask: HumanPartsUltra` —— 1/5 个有
+- `LayerMask: MaskGrow` —— 1/5 个有
+- `MaskPreview+` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SetLatentNoiseMask` —— 1/5 个有
 
 ## 典型参数
 

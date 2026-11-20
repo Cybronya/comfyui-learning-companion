@@ -1,73 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_145
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.904
-common_nodes: [CLIPLoader, EmptyLatentImage, ImageConcanate, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 9
+level: weak
+coverage: 0.742
+common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, SaveAudioMP3, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio]
+problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Boogu-Image-Edit图片编辑_2070450081513426945.json, 图片生成/图生图/Boogu-Image-Edit图片编辑工作流_2069671736781660161.json, 图片生成/图生图/Boogu-Image-Edit图片编辑工作流_2078866342920413186.json, 图片生成/图生图/Boogu-Image-Edit图片编辑工作流_2079877696288546817.json, 图片生成/图生图/Boogu-Image-Edit图片编辑工作流_2080470029400895490.json, 图片生成/图生图/boogu edit 单图-编辑_2067886135044562945.json, 图片生成/图生图/boogu edit 多图-编辑_2068139224456581122.json]
+members: [音频生成/音频生成/ACE-Step1.5 文生音乐双Clip_2018882325588742146.json, 音频生成/音频生成/ACE1.5音乐生成_2030182345428439042.json, 音频生成/音频生成/ACE_Step-Ai歌曲音乐一键生成工作流_2069067060977684481.json, 音频生成/音频生成/ACE_Step开源音乐生成器_2058059955965612033.json, 音频生成/音频生成/Ace-Step1.5X工作流(打造你的专属音乐)_2054411129350311938.json, 音频生成/音频生成/Acestep1.5音乐制作_2043518374143070209.json, 音频生成/音频生成/acestep_v1.5_xl_BASE_音乐生成_2042893593232285698.json, 音频生成/音频生成/acestep_v1.5_xl_SFT_音乐生成_2042899033756274690.json, 音频生成/音频生成/acestep_v1.5_xl_turbo 音乐生成_2016715807329361921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_145
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Boogu-Image-Edit图片编辑_2070450081513426945.json、图片生成/图生图/Boogu-Image-Edit图片编辑工作流_2069671736781660161.json、图片生成/图生图/Boogu-Image-Edit图片编辑工作流_2078866342920413186.json、图片生成/图生图/Boogu-Image-Edit图片编辑工作流_2079877696288546817.json、图片生成/图生图/Boogu-Image-Edit图片编辑工作流_2080470029400895490.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/ACE-Step1.5 文生音乐双Clip_2018882325588742146.json、音频生成/音频生成/ACE1.5音乐生成_2030182345428439042.json、音频生成/音频生成/ACE_Step-Ai歌曲音乐一键生成工作流_2069067060977684481.json、音频生成/音频生成/ACE_Step开源音乐生成器_2058059955965612033.json、音频生成/音频生成/Ace-Step1.5X工作流(打造你的专属音乐)_2054411129350311938.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：9
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CLIPLoader`
-- `EmptyLatentImage`
-- `ImageConcanate`
+全部 9 个 workflow 都包含：
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyAceStep1.5LatentAudio`
 - `KSampler`
-- `LoadImage`
 - `ModelSamplingAuraFlow`
-- `SaveImage`
-- `TextEncodeBooguEdit`
+- `SaveAudioMP3`
+- `TextEncodeAceStepAudio1.5`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VAEDecodeAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 5/7 个有
-- `JjkText` —— 5/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/7 个有
-- `Seed (rgthree)` —— 5/7 个有
-- `Image Comparer (rgthree)` —— 4/7 个有
-- `DF_Get_image_size` —— 2/7 个有
-- `ImageScaleToTotalPixels` —— 2/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `LoraLoaderBypassModelOnly` —— 2/7 个有
+- `VAELoader` —— 8/9 个有
+- `PrimitiveFloat` —— 5/9 个有
+- `PrimitiveStringMultiline` —— 5/9 个有
+- `LoadImage` —— 3/9 个有
+- `PrimitiveInt` —— 3/9 个有
+- `Int` —— 2/9 个有
+- `AV_VAELoader` —— 1/9 个有
+- `Float` —— 1/9 个有
+- `Text` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 7 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | 3.5 - 3.5 | 7 | 100% |
-| 采样算法 | dpmpp_2m | - | 7 | 71% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
-| 宽度 | 1984 | 1024 - 1984 | 7 | 75% |
-| 高度 | 1536 | 1024 - 1536 | 7 | 83% |
+| 采样步数 | 8 | 8 - 50 | 9 | 10% |
+| Prompt 约束强度(CFG) | 1 | 1 - 7 | 9 | 7% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 9/9 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 6/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 3.5 - 3.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 dpmpp_2m，7 个样本，一致性 71%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1984，观测区间 1024 - 1984，7 个样本
-- 高度 中位数 1536，观测区间 1024 - 1536，7 个样本，取值集中（一致性 83%）
+- 采样步数 中位数 8，观测区间 8 - 50，9 个样本，取值分散，一致性仅 10%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 7，9 个样本，取值分散，一致性仅 7%
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：发现KSampler但没有VAEDecode
+- 高发问题（6/9 个样本）：Steps较低可能导致细节不足

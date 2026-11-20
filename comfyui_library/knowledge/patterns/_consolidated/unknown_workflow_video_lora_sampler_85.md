@@ -1,93 +1,92 @@
 ---
 name: unknown_workflow_video_lora_sampler_85
 type: Unknown Workflow
-frequency: 18
-level: moderate
-coverage: 0.549056
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, GrowMask, ImageConcatMulti, ImageResizeKJv2, LoadImage, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 19
+level: strong
+coverage: 0.943158
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无限时长）_1969341000269373441.json, 视频生成/图生视频/Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1969352799354056706.json, 视频生成/图生视频/Wan Animate2.2主体混合mix魔改加速版V2（无限时长）_1969110399318716418.json, 视频生成/图生视频/Wan Animate2.2人物融合_2073212185333026818.json, 视频生成/图生视频/Wan Animate2.2加速版无限时长_1969703078859579394.json, 视频生成/图生视频/Wan Animate2.2动作迁移Move魔改加速版V2（无限时长）_1969116607094157313.json, 视频生成/图生视频/Wan Animate2.2动作迁移_2073212149740163073.json, 视频生成/图生视频/Wan2.2-Animate 视频换脸+动作迁移_1981706242731196418.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_1970283537297514497.json, 视频生成/图生视频/WanAnimate 场景三 视频换脸_2059310361421115394.json, 视频生成/图生视频/WanAnimate 场景九 多人视频精准替换_2044021235868241922.json, 视频生成/图生视频/WanAnimate 场景六 单独面部表情迁移_1970399426625892354.json, 视频生成/图生视频/wanvideo2.2_Animate动画模型-视频动作迁移_1969437139119337473.json, 视频生成/文生视频/Wan Animate2.2主体替换MIX单独背景骚操作去油提高一致性加速版V1（无限时长）_1969355024180649986.json, 视频生成/文生视频/Wan Animate2.2主体替换MIX骚操作去油提高一致性加速版V1（无限时长）_1969358943149563905.json, 视频生成/文生视频/Wan Animate2.2非人类主体混合mix提示词加强+葫芦娃SAM2加速版V4（无限时长）_1969371914298925058.json, 视频生成/文生视频/Wan Animate2.2非人类主体混合mix魔改加速版V3（无限时长）_1969373357202436097.json, 视频生成/文生视频/Wan2.2 Animate V2模型高质量版本动物姿态Mix主体混合特别版V1_1974432637244805122.json]
+members: [视频生成/图生视频/LTX-2.3-图生视频-音画同步-人物一致性优化版_2039916059230216193.json, 视频生成/图生视频/LTX2.3 双人对话-图生视频_2050558938583707649.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2030554473583611905.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2030803826088873986.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2031218465863897089.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2033196066207703042.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2036786729985777666.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版工作流_2038212622302056450.json, 视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版工作流_2038574000934227969.json, 视频生成/图生视频/LTX2.3 图生视频（提示词自动优化版）_2047146472457637889.json, 视频生成/图生视频/LTX2.3 图生视频（提示词自动优化版）_2049309806019743746.json, 视频生成/图生视频/LTX2.3 图生视频（提示词自动优化版）_2055254996790333442.json, 视频生成/图生视频/LTX2.3 图生视频（提示词自动优化版）_2060523387025444866.json, 视频生成/图生视频/LTX2.3+单人_双人对话-图生视频_2082722092436512769.json, 视频生成/图生视频/LTX2.3+图生视频+提示词扩写自动优化版+数字人说话唱歌+_2072475992752484353.json, 视频生成/图生视频/LTX2.3+图生视频自动 提示词自动 数字人_2065067084408774657.json, 视频生成/图生视频/LTX2.3_2037103853568528385.json, 视频生成/图生视频/LTX2.3服装模特手机自拍-图生视频_2056038472141549569.json, 视频生成/图生视频/aidir-LTX2.3 首帧图生视频 人物一致性优化版💃_2069596918434590721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_85
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无限时长）_1969341000269373441.json、视频生成/图生视频/Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1969352799354056706.json、视频生成/图生视频/Wan Animate2.2主体混合mix魔改加速版V2（无限时长）_1969110399318716418.json、视频生成/图生视频/Wan Animate2.2人物融合_2073212185333026818.json、视频生成/图生视频/Wan Animate2.2加速版无限时长_1969703078859579394.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3-图生视频-音画同步-人物一致性优化版_2039916059230216193.json、视频生成/图生视频/LTX2.3 双人对话-图生视频_2050558938583707649.json、视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2030554473583611905.json、视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2030803826088873986.json、视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2031218465863897089.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **样本数**：19
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+全部 19 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CheckpointLoaderSimple`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `Sam2Segmentation`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DWPreprocessor` —— 17/18 个有
-- `FaceMaskFromPoseKeypoints` —— 17/18 个有
-- `ImageCropByMaskAndResize` —— 17/18 个有
-- `PixelPerfectResolution` —— 17/18 个有
-- `PointsEditor` —— 17/18 个有
-- `WanVideoContextOptions` —— 16/18 个有
-- `CR Prompt Text` —— 12/18 个有
-- `JWInteger` —— 12/18 个有
-- `WanVideoEncode` —— 10/18 个有
-- `WanVideoUni3C_ControlnetLoader` —— 10/18 个有
-- `WanVideoUni3C_embeds` —— 10/18 个有
-- `INTConstant` —— 6/18 个有
-- `EmptyImage` —— 3/18 个有
-- `LayerUtility: PurgeVRAM` —— 3/18 个有
-- `RH_Captioner` —— 2/18 个有
-- `ShowText` —— 2/18 个有
-- `easy promptConcat` —— 2/18 个有
-- `AnimalPosePreprocessor` —— 1/18 个有
-- `AudioCrop` —— 1/18 个有
-- `AudioSeparation` —— 1/18 个有
-- `DownloadAndLoadWav2VecModel` —— 1/18 个有
-- `ImageConcanate` —— 1/18 个有
-- `ImageListToImageBatch` —— 1/18 个有
-- `LayerMask: LoadSegmentAnythingModels` —— 1/18 个有
-- `LayerMask: SegmentAnythingUltra V3` —— 1/18 个有
-- `MultiTalkModelLoader` —— 1/18 个有
-- `MultiTalkWav2VecEmbeds` —— 1/18 个有
-- `PDIMAGE_LongerSize` —— 1/18 个有
-- `PreviewAny` —— 1/18 个有
-- `SDVN Image Repeat` —— 1/18 个有
-- `WanVideoCombineEmbeds` —— 1/18 个有
-- `WanVideoImageToVideoMultiTalk` —— 1/18 个有
-- `easy showAnything` —— 1/18 个有
+- `easy cleanGpuUsed` —— 18/19 个有
+- `CR Text` —— 17/19 个有
+- `Seed (rgthree)` —— 17/19 个有
+- `easy int` —— 17/19 个有
+- `DapaoImageAspectRatioResizeNode` —— 16/19 个有
+- `RH_LLMAPI_Pro_Node` —— 16/19 个有
+- `SimpleMath+` —— 16/19 个有
+- `Label (rgthree)` —— 3/19 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/19 个有
+- `llama_cpp_instruct_adv` —— 3/19 个有
+- `llama_cpp_model_loader` —— 3/19 个有
+- `INTConstant` —— 2/19 个有
+- `LTXVLatentUpsampler` —— 2/19 个有
+- `LatentUpscaleModelLoader` —— 2/19 个有
+- `PrimitiveInt` —— 2/19 个有
+- `ShowText|pysssss` —— 2/19 个有
+- `Switch` —— 2/19 个有
+- `CR Prompt Text` —— 1/19 个有
+- `CustomAddLabel` —— 1/19 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/19 个有
+- `GetNode` —— 1/19 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/19 个有
+- `Note Plus (mtb)` —— 1/19 个有
+- `PreviewAny` —— 1/19 个有
+- `PrimitiveStringMultiline` —— 1/19 个有
+- `SetNode` —— 1/19 个有
+- `TTResolutionSelector` —— 1/19 个有
+- `llama_cpp_parameters` —— 1/19 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 19 | 100% |
+| 高度 | 25 | 25 - 25 | 19 | 100% |
 
 ## 常见问题
 
@@ -95,4 +94,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，19 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，19 个样本，取值集中（一致性 100%）

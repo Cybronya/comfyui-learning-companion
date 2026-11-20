@@ -1,76 +1,62 @@
 ---
 name: unknown_workflow_sampler_vae_57
 type: Unknown Workflow
-frequency: 3
+frequency: 5
 level: moderate
-coverage: 0.984
-common_nodes: [CFGNorm, ConditioningZeroOut, EmptyLatentImage, KSampler, LoadImage, SaveImage, TextEncodeQwenImageEditPlus, VAEDecode]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.7836
+common_nodes: [CreateVideo, LoadAudio, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3Ref2VAAudioReference, RHMiniMaxH3Ref2VAEncode, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAVAELoader, SaveVideo]
+problems: []
 missing: []
-members: [图片生成/图生图/QwenAIO动漫转真人三视图_2035514846493544449.json, 图片生成/图生图/QwenEdit2511-融图-去塑料感-v5.0_2046110169540599810.json, 图片生成/图生图/qwen 最新2026多视角生成保持一致性_2013805117430042625.json]
+members: [视频生成/图生视频/MiniMax H3 Ref2VA开源版-多图参考生视频-支持音频输入_2084499175890317313.json, 视频生成/图生视频/MiniMax H3 Ref2VA开源版-多图参考生视频-支持音频输入_2094970680646389762.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098932120847732737.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098989849817731073.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2099665472349364225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_57
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QwenAIO动漫转真人三视图_2035514846493544449.json、图片生成/图生图/QwenEdit2511-融图-去塑料感-v5.0_2046110169540599810.json、图片生成/图生图/qwen 最新2026多视角生成保持一致性_2013805117430042625.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Ref2VA开源版-多图参考生视频-支持音频输入_2084499175890317313.json、视频生成/图生视频/MiniMax H3 Ref2VA开源版-多图参考生视频-支持音频输入_2094970680646389762.json、视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098932120847732737.json、视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098989849817731073.json、视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2099665472349364225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGNorm`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `KSampler`
+全部 5 个 workflow 都包含：
+- `CreateVideo`
+- `LoadAudio`
 - `LoadImage`
-- `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `VAEDecode`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3Ref2VAAudioReference`
+- `RHMiniMaxH3Ref2VAEncode`
+- `RHMiniMaxH3Ref2VAImageReference`
+- `RHMiniMaxH3Ref2VAModelLoader`
+- `RHMiniMaxH3Ref2VATarget`
+- `RHMiniMaxH3Ref2VATextEncoderLoader`
+- `RHMiniMaxH3Ref2VAVAELoader`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `LoraLoaderModelOnly` —— 2/3 个有
-- `ModelSamplingAuraFlow` —— 2/3 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/3 个有
-- `QWenVL_API_S_Multi_Zho` —— 1/3 个有
-- `Qwen2.5VL` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `UNETLoader` —— 1/3 个有
-- `VAELoader` —— 1/3 个有
-- `easy promptLine` —— 1/3 个有
+- `EmptyImage` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `GetNode` —— 2/5 个有
+- `ImageResizeKJv2` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `easy anythingIndexSwitch` —— 2/5 个有
+- `easy boolean` —— 2/5 个有
+- `easy ifElse` —— 2/5 个有
+- `easy int` —— 2/5 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 1.2 | 1 - 1.2 | 3 | 92% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1024 | 512 - 1024 | 3 | 72% |
-| 高度 | 1536 | 512 - 1792 | 3 | 57% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 1.2，观测区间 1 - 1.2，3 个样本，取值集中（一致性 92%）
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 512 - 1024，3 个样本
-- 高度 中位数 1536，观测区间 512 - 1792，3 个样本
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

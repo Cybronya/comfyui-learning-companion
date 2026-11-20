@@ -1,63 +1,72 @@
 ---
 name: unknown_workflow_lora_sampler_unet_217
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.918333
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoraLoaderModelOnly, ResolutionSelector, SaveImage, StringConstantMultiline, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.46525
+common_nodes: [CFGNorm, CLIPLoader, CR Seed, Fast Groups Bypasser (rgthree), GetImageSize+, GetNode, Image Comparer (rgthree), KSampler (Efficient), LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoraLoaderModelOnly, ModelSamplingAuraFlow, PainterFluxImageEdit, PreviewImage, SetNode, UNETLoader, VAELoader, easy getNode, easy setNode]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen2.1文_图生图(提示词增强)_2106902512568717313.json, 图片生成/文生图/Qwen 2.1 Fusal_文生图_官方扩写_2109838854785163266.json, 图片生成/文生图/Qwen2.1文生图(提示词增强)_2104119059133587458.json]
+members: [图片生成/图生图/flux-2-klein-9b-KV-fp8    单图编辑_2032695788039577601.json, 图片生成/图生图/一键运行：flux-2-klein-9b-fp8 EDIT 单独修图优化版 文生图_2063462407997059073.json, 图片生成/图生图/一键运行：klein 人物衣服提取，3D质感展示工作流_2035568544326361090.json, 图片生成/文生图/一键运行：flux-2-klein-9b-fp8    GGUF  文生图 图像控制 升级版本_2017375676734640130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_217
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen2.1文_图生图(提示词增强)_2106902512568717313.json、图片生成/文生图/Qwen 2.1 Fusal_文生图_官方扩写_2109838854785163266.json、图片生成/文生图/Qwen2.1文生图(提示词增强)_2104119059133587458.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/flux-2-klein-9b-KV-fp8    单图编辑_2032695788039577601.json、图片生成/图生图/一键运行：flux-2-klein-9b-fp8 EDIT 单独修图优化版 文生图_2063462407997059073.json、图片生成/图生图/一键运行：klein 人物衣服提取，3D质感展示工作流_2035568544326361090.json、图片生成/文生图/一键运行：flux-2-klein-9b-fp8    GGUF  文生图 图像控制 升级版本_2017375676734640130.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
+- `CR Seed`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize+`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `KSampler (Efficient)`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LoraLoaderModelOnly`
-- `ResolutionSelector`
-- `SaveImage`
-- `StringConstantMultiline`
-- `TextEncodeQwenImage21`
-- `TextGenerate`
+- `ModelSamplingAuraFlow`
+- `PainterFluxImageEdit`
+- `PreviewImage`
+- `SetNode`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
+- `easy getNode`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `easy clearCacheAll` —— 2/3 个有
-- `INTConstant` —— 1/3 个有
-- `JoinStrings` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `StringConstant` —— 1/3 个有
-- `easy saveText` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `LoadImage` —— 3/4 个有
+- `PromptExpand` —— 3/4 个有
+- `SaveImage` —— 3/4 个有
+- `ShowText|pysssss` —— 3/4 个有
+- `FluxKVCache` —— 2/4 个有
+- `easy textSwitch` —— 2/4 个有
+- `ClipLoaderGGUF` —— 1/4 个有
+- `KOOK_ImageCompression` —— 1/4 个有
+- `KOOK_SaveJPGImage` —— 1/4 个有
+- `LoaderGGUF` —— 1/4 个有
+- `MultiImageLoader` —— 1/4 个有
+- `StringFunction|pysssss` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 40 | 40 - 40 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 1024 | 896 - 1024 | 3 | 94% |
-| 高度 | 1024 | 1024 - 1184 | 3 | 93% |
+| 采样步数 | 6 | 4 - 8 | 4 | 67% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -65,10 +74,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 40，观测区间 40 - 40，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 896 - 1024，3 个样本，取值集中（一致性 94%）
-- 高度 中位数 1024，观测区间 1024 - 1184，3 个样本，取值集中（一致性 93%）
+- 采样步数 中位数 6，观测区间 4 - 8，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

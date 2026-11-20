@@ -1,59 +1,56 @@
 ---
 name: unknown_workflow_sampler_clip_unet_433
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.93
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, Florence2ModelLoader, Florence2Run, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 3
+level: strong
+coverage: 0.868667
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyFlux2LatentImage, FLS_SamplerV4, KSamplerAdvanced, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, 孤海注释]
 problems: []
 missing: []
-members: [图片生成/图生图/flux1-krea-dev 图生图_1951291484605722625.json, 图片生成/图生图/flux图片高清放大_1902298925074919425.json]
+members: [图片生成/文生图/Flux2-Klein9B V2版文生图工作流 增强采样器，实景般逼真体验_2071099547346100225.json, 图片生成/文生图/Klein9B  社区优质模型 真实感爆棚V2版_2060263775722364930.json, 图片生成/文生图/Klein9B V2版  硬核优质模型 观感宛若实景_2060280246104055810.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_433
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/flux1-krea-dev 图生图_1951291484605722625.json、图片生成/图生图/flux图片高清放大_1902298925074919425.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein9B V2版文生图工作流 增强采样器，实景般逼真体验_2071099547346100225.json、图片生成/文生图/Klein9B  社区优质模型 真实感爆棚V2版_2060263775722364930.json、图片生成/文生图/Klein9B V2版  硬核优质模型 观感宛若实景_2060280246104055810.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `CR Text`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `FLS_SamplerV4`
+- `KSamplerAdvanced`
 - `SaveImage`
-- `ShowText|pysssss`
+- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 1/2 个有
-- `ConstrainImage|pysssss` —— 1/2 个有
-- `FluxGuidance` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `RHHiddenNodes` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `RepeatLatentBatch` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `DapaoImageRatioLimitNode` —— 2/3 个有
+- `Note Plus (mtb)` —— 1/3 个有
+- `Ratio to Size` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 10 | 10 - 10 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1.2 | 3 | 91% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -61,4 +58,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1.2，3 个样本，取值集中（一致性 91%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

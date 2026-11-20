@@ -1,65 +1,59 @@
 ---
 name: unknown_workflow_video_lora_sampler_208
 type: Unknown Workflow
-frequency: 10
+frequency: 12
 level: moderate
-coverage: 0.8747
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveFloat, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.98875
+common_nodes: [Int, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MathExpression|pysssss, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/MiniMaxH3带货视频生成工作流_2112497234167291905.json, 视频生成/图生视频/CGD加电影lora_2104927511938428929.json, 视频生成/图生视频/H3-8STEP-双采-音频_2102375764057481217.json, 视频生成/图生视频/H3-8STEP-双采_2101940350767165442.json, 视频生成/图生视频/LAOBA  黑科技加速双采-self-lift工作流_2099340731876986882.json, 视频生成/图生视频/MINIMAX H3 急速双采 + 无线时长_2099690271108845570.json, 视频生成/图生视频/MINIMAX_H3_急速双采_+_无线时长_2100409429870075905.json, 视频生成/图生视频/MINIMAX_H3_急速双采_+_无线时长_2100496703639089154.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流_2097505105535913985.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流_2109640374049402882.json]
+members: [视频生成/图生视频/WAN2.1图生视频快速流myshell版本_1952757197195382785.json, 视频生成/图生视频/wan视频图生视频_1909948084502364162.json, 视频生成/图生视频/【Wan2.1】泼水变装+换装_1931328744601137153.json, 视频生成/图生视频/出来吧雷电法王_1934787989723914241.json, 视频生成/图生视频/动物跳海草舞_1938411003644153857.json, 视频生成/图生视频/变身美人鱼_1931540318901219330.json, 视频生成/图生视频/可灵同款特效泼水变装_1929806483200884737.json, 视频生成/图生视频/可灵同款特效泼水变装_2042132156083871746.json, 视频生成/图生视频/可灵同款特效泼水变装_2049016895038300162.json, 视频生成/图生视频/水底游泳拉布布_1934069436511117313.json, 视频生成/图生视频/特效泼水变装_1940599811882250242.json, 视频生成/图生视频/百变女郎N版_1940634031115628545.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_208
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/MiniMaxH3带货视频生成工作流_2112497234167291905.json、视频生成/图生视频/CGD加电影lora_2104927511938428929.json、视频生成/图生视频/H3-8STEP-双采-音频_2102375764057481217.json、视频生成/图生视频/H3-8STEP-双采_2101940350767165442.json、视频生成/图生视频/LAOBA  黑科技加速双采-self-lift工作流_2099340731876986882.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/WAN2.1图生视频快速流myshell版本_1952757197195382785.json、视频生成/图生视频/wan视频图生视频_1909948084502364162.json、视频生成/图生视频/【Wan2.1】泼水变装+换装_1931328744601137153.json、视频生成/图生视频/出来吧雷电法王_1934787989723914241.json、视频生成/图生视频/动物跳海草舞_1938411003644153857.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `H3SigmaRefiner`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `ResolutionSelector`
-- `SelfLiftH3Sampler`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+全部 12 个 workflow 都包含：
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 9/10 个有
-- `ModelPreviewOverrideKJ` —— 9/10 个有
-- `PrimitiveStringMultiline` —— 9/10 个有
-- `AudioConcat` —— 4/10 个有
-- `MiniMaxH3MotionContext` —— 3/10 个有
-- `MiniMaxH3MotionContextSaveLatent` —— 3/10 个有
-- `MiniMaxH3MotionContextTrim` —— 3/10 个有
-- `QwenH3PromptLocal` —— 3/10 个有
-- `VHS_MergeImages` —— 3/10 个有
-- `easy showAnything` —— 3/10 个有
-- `LoadAudio` —— 2/10 个有
-- `ImageBatch` —— 1/10 个有
-- `ImageFromBatch` —— 1/10 个有
-- `MiniMaxH3AddGuide` —— 1/10 个有
-- `TrimAudioDuration` —— 1/10 个有
+- `LoadImage` —— 11/12 个有
+- `TextInput_` —— 11/12 个有
+- `ImageUpscaleWithModel` —— 10/12 个有
+- `Upscale Model Loader` —— 10/12 个有
+- `CR Text Concatenate` —— 7/12 个有
+- `LoadAudio` —— 4/12 个有
+- `SaveLatent` —— 2/12 个有
+- `WanVideoTeaCache` —— 2/12 个有
+- `ImageSizeAndBatchSize` —— 1/12 个有
+- `SaveImage` —— 1/12 个有
+- `ShellAgentPluginInputImage` —— 1/12 个有
+- `ShellAgentPluginSaveVideoVHS` —— 1/12 个有
+- `String Replace (mtb)` —— 1/12 个有
+- `WanVideoVACEModelSelect` —— 1/12 个有
+- `easy cleanGpuUsed` —— 1/12 个有
 
 ## 典型参数
 

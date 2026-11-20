@@ -1,60 +1,58 @@
 ---
 name: unknown_workflow_video_sampler_vae_57
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.912375
-common_nodes: [ImageConcatMulti, ImagePadKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoModelLoader, WanVideoPhantomEmbeds, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.995
+common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json, 视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json, 视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json, 视频生成/图生视频/【FusionX】模特产品展示动态｜加速版_1934517435972419585.json, 视频生成/图生视频/上传一张图生成电商产品展示视频（phantom主体一致性）_1917815570186567682.json, 视频生成/图生视频/字节Phantom14B_最新多图参考一致性视频(电商带货)_1916395426835005442.json, 视频生成/图生视频/字节Phantom14B单主体(电商广告视频生成)_1927557646478643202.json]
+members: [视频生成/图生视频/FusionX-VACE加速高细节最强首尾帧_1934640445391872001.json, 视频生成/图生视频/FusionX-VACE首尾帧_1934644328725684226.json, 视频生成/图生视频/FusionX高细节双图首尾帧视频生成_1943227565869842433.json, 视频生成/图生视频/Wan2.1-FusionX-VACE首尾帧加速工作流_1935621169481711618.json, 视频生成/图生视频/Wan2.1-FusionX-VACE首尾帧图生视频_1933717714491854849.json, 视频生成/图生视频/最强模型FusionX加速高细节图生视频_1934634580886659073.json, 视频生成/图生视频/自己用：FusionX双图首尾帧视频生成+lora_1945368931681095682.json, 视频生成/图生视频/🦖FusionX高细节首尾帧_1934430559047217153.json, 视频生成/文生视频/wan2.1-fusionx系列文生视频（加lora版）_1938193111518744578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_57
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/FusionX-Phantom电商带货14B加速版_1934826257706065921.json、视频生成/图生视频/Phantom多图组合视频生成_1918902394158256130.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1922106634145841154.json、视频生成/图生视频/Plantom一致性多图组合视频生成（适用电商场景展示）_1991787446910267394.json、视频生成/图生视频/【FusionX】模特产品展示动态｜加速版_1934517435972419585.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/FusionX-VACE加速高细节最强首尾帧_1934640445391872001.json、视频生成/图生视频/FusionX-VACE首尾帧_1934644328725684226.json、视频生成/图生视频/FusionX高细节双图首尾帧视频生成_1943227565869842433.json、视频生成/图生视频/Wan2.1-FusionX-VACE首尾帧加速工作流_1935621169481711618.json、视频生成/图生视频/Wan2.1-FusionX-VACE首尾帧图生视频_1933717714491854849.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `ImageConcatMulti`
-- `ImagePadKJ`
-- `LoadImage`
+全部 9 个 workflow 都包含：
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoPhantomEmbeds`
+- `WanVideoSLG`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 7/8 个有
-- `Text Multiline` —— 7/8 个有
-- `Primitive integer [Crystools]` —— 6/8 个有
-- `WanVideoTeaCache` —— 6/8 个有
-- `EmptyImage` —— 2/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
-- `RH_Translator` —— 2/8 个有
-- `AddLabel` —— 1/8 个有
-- `DF_Integer` —— 1/8 个有
-- `GetImageSize` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `SetNode` —— 1/8 个有
-- `SimpleMath+` —— 1/8 个有
-- `easy clearCacheAll` —— 1/8 个有
-- `easy int` —— 1/8 个有
+- `GetImageSizeAndCount` —— 8/9 个有
+- `ImageResizeKJ` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `WanVideoVACEStartToEndFrame` —— 8/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/9 个有
+- `WanVideoTeaCache` —— 5/9 个有
+- `JWInteger` —— 4/9 个有
+- `RH_Translator` —— 4/9 个有
+- `WanVideoMagCache` —— 4/9 个有
+- `easy int` —— 4/9 个有
+- `CR Prompt Text` —— 3/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/9 个有
+- `WanVideoLoraSelect` —— 3/9 个有
+- `Text` —— 2/9 个有
+- `ColorMatch` —— 1/9 个有
+- `MathExpression|pysssss` —— 1/9 个有
+- `WanVideoVACEModelSelect` —— 1/9 个有
 
 ## 典型参数
 

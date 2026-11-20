@@ -1,75 +1,74 @@
 ---
 name: image_to_image_lora_sampler_clip_47
 type: Image To Image
-frequency: 6
-level: moderate
-coverage: 0.902333
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.914857
+common_nodes: [CLIPLoader, CLIPTextEncode, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ResizeImageMaskNode, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SkipLayerGuidanceDiTSimple, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/WAN2.1洗图_1947171235845562370.json, 图片生成/图生图/Wan2.1图像高清修复终结者_1899402301684236290.json, 图片生成/图生图/Wan2.1降维打击：你的视觉内容终极利器！强力细节提升、画质增强、画面修复、细节增强_1945633552090451969.json, 图片生成/图生图/Wan2.2  图生图_1952005600597233666.json, 图片生成/图生图/Wan降维打击：智能洗稿洗图，内容创作新范式！一键洗图终极利器~_洗图_洗稿_仿图_图生图_1948924219665653761.json, 数字人/数字人/高清修复_1991726670811967489.json]
+members: [图片生成/反推提示词/Moss 洗图工作流（4K）_2116408123891212289.json, 图片生成/图生图/【AIGC特异点】Moss 洗图工作流（4K）_2115804624581124098.json, 平台全量/Moss 一键洗图工作流（4K）图生图_2117933395819982849.json, 平台全量/Moss 一键洗图（4K）_2117927683479924737.json, 平台全量/Moss 洗图 8步 工作流（4K）_2118221862755987458.json, 平台全量/Moss+洗图 4K高清放大Moss+ Image Processing_ 4K HD Enlarg_2117786992330235906.json, 平台全量/Moss_洗图工作流（4K）_2117478679088553986.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_47
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/WAN2.1洗图_1947171235845562370.json、图片生成/图生图/Wan2.1图像高清修复终结者_1899402301684236290.json、图片生成/图生图/Wan2.1降维打击：你的视觉内容终极利器！强力细节提升、画质增强、画面修复、细节增强_1945633552090451969.json、图片生成/图生图/Wan2.2  图生图_1952005600597233666.json、图片生成/图生图/Wan降维打击：智能洗稿洗图，内容创作新范式！一键洗图终极利器~_洗图_洗稿_仿图_图生图_1948924219665653761.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/Moss 洗图工作流（4K）_2116408123891212289.json、图片生成/图生图/【AIGC特异点】Moss 洗图工作流（4K）_2115804624581124098.json、平台全量/Moss 一键洗图工作流（4K）图生图_2117933395819982849.json、平台全量/Moss 一键洗图（4K）_2117927683479924737.json、平台全量/Moss 洗图 8步 工作流（4K）_2118221862755987458.json…）
 
 - **类型**：Image To Image
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ResizeImageMaskNode`
 - `SaveImage`
+- `SeedVR2Conditioning`
+- `SeedVR2PostProcessing`
+- `SeedVR2Preprocess`
+- `SkipLayerGuidanceDiTSimple`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
 - `VAEEncode`
+- `VAEEncodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageUpscaleWithModel` —— 5/6 个有
-- `LayerUtility: ImageScaleRestore V2` —— 5/6 个有
-- `RH_Captioner` —— 5/6 个有
-- `UpscaleModelLoader` —— 5/6 个有
-- `Image Comparer (rgthree)` —— 4/6 个有
-- `PathchSageAttentionKJ` —— 2/6 个有
-- `easy showAnything` —— 2/6 个有
-- `CR Text Concatenate` —— 1/6 个有
-- `ConstrainImage|pysssss` —— 1/6 个有
-- `FastFilmGrain` —— 1/6 个有
-- `ModelSamplingSD3` —— 1/6 个有
-- `PrimitiveString` —— 1/6 个有
-- `Seed_` —— 1/6 个有
-- `ShowText` —— 1/6 个有
+- `忽略多组孤海` —— 6/7 个有
+- `CR Text` —— 1/7 个有
+- `Fast Groups Muter (rgthree)` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 0.4 - 1 | 6 | 75% |
-| 采样算法 | uni_pc | - | 6 | 83% |
-| 调度器 | simple | - | 6 | 67% |
-| 重绘幅度 | 0.19 | 0.08 - 0.5 | 6 | 37% |
+| 采样步数 | 1 | 1 - 1 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 0.4 - 1，6 个样本
-- 采样算法 最常用 uni_pc，6 个样本，一致性 83%
-- 调度器 最常用 simple，6 个样本，一致性 67%
-- 重绘幅度 中位数 0.19，观测区间 0.08 - 0.5，6 个样本，取值分散，一致性仅 37%
-- 风险：Prompt 约束强度(CFG) 观测到 0.4，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）
-- 风险：重绘幅度 观测到 0.08，低于常用下限 0.1（）
+- 采样步数 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（8/7 个样本）：Steps较低可能导致细节不足

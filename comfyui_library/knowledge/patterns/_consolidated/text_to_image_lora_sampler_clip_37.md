@@ -1,109 +1,81 @@
 ---
 name: text_to_image_lora_sampler_clip_37
 type: Text To Image
-frequency: 20
+frequency: 21
 level: strong
-coverage: 0.8093
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.910667
+common_nodes: [CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/Qwen Image 2.1全功能工作流 文生图编辑反推一体工具_2114105118831505410.json, 图片生成/反推提示词/qwen Image 2.1全功能工作流｜文生图反推提示词图生图_2114006893998989313.json, 图片生成/图生图/Qwen Image 2.1 AI短剧漫剧人物三视图，图生图角色一致性设计工具_2103949584014860290.json, 图片生成/图生图/Qwen Image 2.1万能输入工作流 文生图图生图处理工具_2113338289234202625.json, 图片生成/图生图/Qwen Image 2.1人物换姿势服装模特姿势复刻工作流，服装展示图生图工具_2107565485087870977.json, 图片生成/图生图/Qwen Image 2.1人物换姿势服装模特姿势复刻工作流，服装展示图生图工具_2107938760527798274.json, 图片生成/图生图/Qwen Image 2.1人物换姿势服装模特姿势复刻工作流，服装展示图生图工具_2108332170640187393.json, 图片生成/图生图/Qwen Image 2.1人物换姿势｜服装模特姿势复刻，摆拍角度随心控_2107360567005634561.json, 图片生成/图生图/Qwen Image 2.1图像合集人像写真实图生图处理工具_2102543389462982657.json, 图片生成/图生图/Qwen Image 2.1图像生成二十步大合集，全方位图生图能力覆盖_2102828879642714114.json, 图片生成/图生图/Qwen Image 2.1图像生成大合集，场景换装图生图多场景一站式工具_2103254188389130241.json, 图片生成/图生图/Qwen Image 2.1图像生成大合集｜多场景文生图图生图一站搞定_2113572080506724353.json, 图片生成/图生图/Qwen Image 2.1图像生成大合集｜文生图图生图全都有｜收藏一个够用了_2102628402149806081.json, 图片生成/图生图/Qwen Image 2.1工作流合集图生图处理生成工具_2102495775229046786.json, 图片生成/图生图/Qwen Image 2.1工作流合集文生图图生图处理工具_2102555854674419713.json, 图片生成/图生图/Qwen Image 2.1工作流大合集｜图生图多种玩法一网打尽｜新手必存_2102238523955965954.json, 图片生成/图生图/Qwen Image 2.1洗图反推提示词，图生图图像分析与提示词提取工具_2103236925317537793.json, 图片生成/图生图/Qwen image 2.1图像高清修复 4K超分放大增强_2110244395655188481.json, 图片生成/图生图/Qwen image 2.1图像高清修复 4K超分放大增强_2110370717484273665.json, 图片生成/图生图/Qwen image 2.1高清修复流程，老图一键放大到4K_2110478470630436865.json]
+members: [图片生成/文生图/SDXL文生图工作流，高质量文本到图像生成方案_2106904544729985026.json, 图片生成/文生图/SDXL文生图工作流，高质量文本到图像生成方案_2108380198407327746.json, 图片生成/文生图/sdxl文生图工作流｜输入描述文字直接生成图片_2106604632175890434.json, 图片生成/文生图/光辉绘画工作流｜光效氛围感唯美插画一键直出_2112426661630275588.json, 图片生成/文生图/冷冬圣诞夜漫画风出图｜动漫角色分镜文生图_2096901929984151554.json, 图片生成/文生图/动漫二次元风格文生图｜创意插画一键生成工具_2101181321061167106.json, 图片生成/文生图/动漫女孩文生图工作流｜动漫角色插画配图｜小说插图轻松出图_2101862601419481090.json, 图片生成/文生图/咖啡馆漫画风文生图工作流｜动漫角色场景插图｜氛围感出图利器_2101873892548759553.json, 图片生成/文生图/手鞠文生图工作流，动漫角色博人传风格文本到图像生成_2107189994585677825.json, 图片生成/文生图/火影人气角色手鞠文生图｜动漫角色一键生成立绘_2107011468645457922.json, 图片生成/文生图/火影人气角色雏田文生图｜一键生成动漫美少女立绘_2106935012426862593.json, 图片生成/文生图/火影人气角色雏田文生图｜一键生成动漫美少女立绘_2107648182992850946.json, 图片生成/文生图/精致漫画风文生图工作流｜动漫角色封面插图｜叙事感拉满出片_2101869067136233474.json, 图片生成/文生图/纲手文生图工作流，动漫角色博人传风格文本到图像生成_2106463739347300354.json, 图片生成/文生图/纲手文生图工作流，动漫角色文本到图像生成方案_2106460519686303745.json, 图片生成/文生图/纲手文生图工作流｜火影角色写真一键生成还原度高_2106272994342559745.json, 图片生成/文生图/纲手角色文生图模型｜二次元忍界女神写真轻松出图_2106276130637574145.json, 图片生成/文生图/视频跟练｜文生图打造跟练画面素材，健身舞蹈教学好帮手_2107363684484993025.json, 图片生成/文生图/雏田文生图工作流，动漫角色博人传风格文本到图像生成_2106465199158030337.json, 图片生成/文生图/雏田文生图工作流，动漫角色博人传风格文本到图像生成_2107205250850582529.json, 图片生成/文生图/雏田文生图模型｜火影白眼公主写真还原度惊艳_2106277753761914881.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_37
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/反推提示词/Qwen Image 2.1全功能工作流 文生图编辑反推一体工具_2114105118831505410.json、图片生成/反推提示词/qwen Image 2.1全功能工作流｜文生图反推提示词图生图_2114006893998989313.json、图片生成/图生图/Qwen Image 2.1 AI短剧漫剧人物三视图，图生图角色一致性设计工具_2103949584014860290.json、图片生成/图生图/Qwen Image 2.1万能输入工作流 文生图图生图处理工具_2113338289234202625.json、图片生成/图生图/Qwen Image 2.1人物换姿势服装模特姿势复刻工作流，服装展示图生图工具_2107565485087870977.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/文生图/SDXL文生图工作流，高质量文本到图像生成方案_2106904544729985026.json、图片生成/文生图/SDXL文生图工作流，高质量文本到图像生成方案_2108380198407327746.json、图片生成/文生图/sdxl文生图工作流｜输入描述文字直接生成图片_2106604632175890434.json、图片生成/文生图/光辉绘画工作流｜光效氛围感唯美插画一键直出_2112426661630275588.json、图片生成/文生图/冷冬圣诞夜漫画风出图｜动漫角色分镜文生图_2096901929984151554.json…）
 
 - **类型**：Text To Image
-- **样本数**：20
+- **样本数**：21
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 21 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
-- `ResolutionSelector`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 19/20 个有
-- `PreviewImage` —— 19/20 个有
-- `ComfySwitchNode` —— 18/20 个有
-- `GetNode` —— 18/20 个有
-- `SetNode` —— 18/20 个有
-- `Fast Groups Bypasser (rgthree)` —— 17/20 个有
-- `Anything Everywhere3` —— 16/20 个有
-- `CR Prompt Text` —— 16/20 个有
-- `LayerUtility: ImageReel` —— 16/20 个有
-- `LayerUtility: ImageReelComposit` —— 16/20 个有
-- `TextGenerateLTX2Prompt` —— 14/20 个有
-- `PreviewAny` —— 13/20 个有
-- `BatchImagesNode` —— 12/20 个有
-- `easy setNode` —— 11/20 个有
-- `easy showAnything` —— 10/20 个有
-- `ShowText|pysssss` —— 9/20 个有
-- `ImageResize+` —— 8/20 个有
-- `ImageScaleBy` —— 8/20 个有
-- `Seed (rgthree)` —— 8/20 个有
-- `SeedVR2LoadDiTModel` —— 8/20 个有
-- `SeedVR2LoadVAEModel` —— 8/20 个有
-- `SeedVR2VideoUpscaler` —— 8/20 个有
-- `TTP_Image_Assy` —— 8/20 个有
-- `TTP_Image_Tile_Batch` —— 8/20 个有
-- `TTP_Tile_image_size` —— 8/20 个有
-- `easy imageSize` —— 8/20 个有
-- `LayerUtility: PurgeVRAM` —— 7/20 个有
-- `CR Text` —— 3/20 个有
-- `ImageResizeKJv2` —— 3/20 个有
-- `Latent Switch (JPS)` —— 3/20 个有
-- `RepeatLatentBatch` —— 2/20 个有
-- `llama_cpp_instruct_adv` —— 2/20 个有
-- `llama_cpp_model_loader` —— 2/20 个有
-- `llama_cpp_parameters` —— 2/20 个有
-- `DWPreprocessor` —— 1/20 个有
-- `DepthAnythingV2Preprocessor` —— 1/20 个有
-- `LineArtPreprocessor` —— 1/20 个有
+- `孤海注释` —— 19/21 个有
+- `LoraLoader` —— 15/21 个有
+- `CR Text` —— 3/21 个有
+- `CR Text Concatenate` —— 3/21 个有
+- `SDXL Empty Latent Image (rgthree)` —— 3/21 个有
+- `ShowText|pysssss` —— 3/21 个有
+- `TextInputBasic` —— 3/21 个有
+- `EmptyImage` —— 1/21 个有
+- `PreviewImage` —— 1/21 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 20 | 100% |
-| 高度 | 80 | 80 - 80 | 20 | 100% |
-| 采样步数 | 4 | 4 - 4 | 20 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 20 | 100% |
-| 采样算法 | er_sde | - | 20 | 100% |
-| 调度器 | beta | - | 20 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+| 宽度 | 80 | 80 - 80 | 21 | 100% |
+| 高度 | 80 | 80 - 80 | 21 | 100% |
+| LoRA 模型强度 | 0.7 | 0.6 - 1 | 15 | 85% |
+| LoRA 文本强度 | 0.7 | 0.6 - 1 | 15 | 78% |
+| 采样步数 | 4 | 4 - 4 | 21 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 21 | 100% |
+| 采样算法 | er_sde | - | 21 | 100% |
+| 调度器 | beta | - | 21 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 21 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 23/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 21/21 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，20 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，20 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，20 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，20 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，20 个样本，一致性 100%
-- 调度器 最常用 beta，20 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 高发问题（23/20 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，21 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，21 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.7，观测区间 0.6 - 1，15 个样本，取值集中（一致性 85%）
+- LoRA 文本强度 中位数 0.7，观测区间 0.6 - 1，15 个样本
+- 采样步数 中位数 4，观测区间 4 - 4，21 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，21 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，21 个样本，一致性 100%
+- 调度器 最常用 beta，21 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，21 个样本，取值集中（一致性 100%）
+- 高发问题（21/21 个样本）：Steps较低可能导致细节不足

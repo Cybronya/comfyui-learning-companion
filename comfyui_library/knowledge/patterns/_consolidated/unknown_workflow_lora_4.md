@@ -1,45 +1,36 @@
 ---
 name: unknown_workflow_lora_4
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.898333
-common_nodes: [EasyControlGenerate, EasyControlLoadFlux, EasyControlLoadLora, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage]
+coverage: 0.75
+common_nodes: [InstantCharacterGenerateWithStyleLora, InstantCharacterLoadModel, JjkText, LoadImage, RH_Translator, SaveImage, easy showAnything, workflow>反推-关键词扩写文本]
 problems: []
 missing: []
-members: [图片生成/图生图/EasyControl-吉卜力转绘__1925391377469779970.json, 图片生成/图生图/EasyControl转玉石风格_1916080977951789058.json, 图片生成/图生图/🦖万物吉卜力（最强CN）_1909415490068819970.json]
+members: [图片生成/图生图/Instant Character 人物一致性 ｜黑白 Manga 风格_1917607012408950785.json, 图片生成/图生图/InstantCharacter人物四格漫画_1923200987312345090.json, 图片生成/文生图/InstantCharacter人物一致性【儿童漫画风格】_2036260342862454785.json, 平台全量/InstantCharacter人物一致性【儿童漫画风格】_1914869826504880130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_4
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/EasyControl-吉卜力转绘__1925391377469779970.json、图片生成/图生图/EasyControl转玉石风格_1916080977951789058.json、图片生成/图生图/🦖万物吉卜力（最强CN）_1909415490068819970.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Instant Character 人物一致性 ｜黑白 Manga 风格_1917607012408950785.json、图片生成/图生图/InstantCharacter人物四格漫画_1923200987312345090.json、图片生成/文生图/InstantCharacter人物一致性【儿童漫画风格】_2036260342862454785.json、平台全量/InstantCharacter人物一致性【儿童漫画风格】_1914869826504880130.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `EasyControlGenerate`
-- `EasyControlLoadFlux`
-- `EasyControlLoadLora`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 4 个 workflow 都包含：
+- `InstantCharacterGenerateWithStyleLora`
+- `InstantCharacterLoadModel`
+- `JjkText`
 - `LoadImage`
+- `RH_Translator`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `easy clearCacheAll` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `ColorCorrect` —— 1/3 个有
-- `GetImageSizeRatio` —— 1/3 个有
-- `LayerUtility: PurgeVRAM` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `easy showAnything`
+- `workflow>反推-关键词扩写文本`
 
 ## 典型参数
 

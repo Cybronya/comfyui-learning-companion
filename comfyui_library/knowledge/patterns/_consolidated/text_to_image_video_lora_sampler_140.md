@@ -1,28 +1,28 @@
 ---
 name: text_to_image_video_lora_sampler_140
 type: Text To Image
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.6958
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SaveImage, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.814333
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveStringMultiline, ResolutionSelector, SaveImage, SelfLiftAvatarH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3视频蒸馏复刻采样工作流拆解系列，风格迁移与动作迁移十集教程_2105121681349103617.json, 视频生成/图生视频/MiniMax H3 Singularity V2 R2VA 去油抗飘图生视频工具_2114080323918192641.json, 视频生成/图生视频/MiniMax H3 Singularity V2面部精修 高清图生视频工具_2114081864469278722.json, 视频生成/图生视频/MiniMax_H3导演Skill加双采2K直出工作流，文生视频视频生视频图生视频_2109823268537585666.json, 视频生成/图生视频/Minimax H3 Singularity V2八步加速工作流，人脸修复细节清晰_2114464058652053505.json]
+members: [视频生成/图生视频/SelfLift优化加速视频_2111462433582833666.json, 视频生成/图生视频/SelfLift优化速度流 视频生成加速方案_2108986698486079490.json, 视频生成/图生视频/短剧制作直出1080P最高质量版MMH3 Selflift工作流，图生视频方案_2106889115852689410.json, 视频生成/图生视频/短剧制作直出1080P最高质量版MMH3_Selflift工作流，图生视频方案_2109094089965789186.json, 视频生成/图生视频/短剧制作直出1080p最高质量版 MMH3 Selflift 视频生成优化_2109336160928616450.json, 视频生成/图生视频/短剧制作直出1080p最高质量版MMH3 Selflift 视频生成优化_2109762427930890242.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_140
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/H3视频蒸馏复刻采样工作流拆解系列，风格迁移与动作迁移十集教程_2105121681349103617.json、视频生成/图生视频/MiniMax H3 Singularity V2 R2VA 去油抗飘图生视频工具_2114080323918192641.json、视频生成/图生视频/MiniMax H3 Singularity V2面部精修 高清图生视频工具_2114081864469278722.json、视频生成/图生视频/MiniMax_H3导演Skill加双采2K直出工作流，文生视频视频生视频图生视频_2109823268537585666.json、视频生成/图生视频/Minimax H3 Singularity V2八步加速工作流，人脸修复细节清晰_2114464058652053505.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/SelfLift优化加速视频_2111462433582833666.json、视频生成/图生视频/SelfLift优化速度流 视频生成加速方案_2108986698486079490.json、视频生成/图生视频/短剧制作直出1080P最高质量版MMH3 Selflift工作流，图生视频方案_2106889115852689410.json、视频生成/图生视频/短剧制作直出1080P最高质量版MMH3_Selflift工作流，图生视频方案_2109094089965789186.json、视频生成/图生视频/短剧制作直出1080p最高质量版 MMH3 Selflift 视频生成优化_2109336160928616450.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
@@ -32,75 +32,70 @@ source: knowledge_consolidation
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxChunkFeedForward`
 - `MiniMaxH3ReferenceToVideo`
+- `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
-- `PrimitiveFloat`
+- `ModelPreviewOverrideKJ`
 - `PrimitiveStringMultiline`
 - `ResolutionSelector`
 - `SaveImage`
-- `SelfLiftH3Sampler`
+- `SelfLiftAvatarH3Sampler`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecodeAudio` —— 4/5 个有
-- `BlockSparseAttention` —— 3/5 个有
-- `GetNode` —— 3/5 个有
-- `ImageScaleToTotalPixels` —— 3/5 个有
-- `MiniMaxH3SigmaShift` —— 3/5 个有
-- `SetNode` —— 3/5 个有
-- `孤海注释` —— 3/5 个有
-- `EmptyImage` —— 2/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `H3FaceStitch` —— 2/5 个有
-- `H3FaceTrackCrop` —— 2/5 个有
-- `H3SigmaRefiner` —— 2/5 个有
-- `ModelPreviewOverrideKJ` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `VOSR2ModelLoader` —— 2/5 个有
-- `VOSR2Upscale` —— 2/5 个有
-- `Display Any (rgthree)` —— 1/5 个有
-- `LoadAudio` —— 1/5 个有
-- `MiniMaxH3AVDecodeT8` —— 1/5 个有
-- `MiniMaxH3Unified` —— 1/5 个有
-- `RandomNoise` —— 1/5 个有
-- `Seed (rgthree)` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
-- `easy getNode` —— 1/5 个有
-- `easy setNode` —— 1/5 个有
+- `孤海注释` —— 5/6 个有
+- `LTXVSeparateAVLatent` —— 4/6 个有
+- `PreviewAny` —— 4/6 个有
+- `H3SigmaRefiner` —— 2/6 个有
+- `ImageFromBatch` —— 2/6 个有
+- `ImageScaleBy` —— 2/6 个有
+- `Int` —— 2/6 个有
+- `JWStringToFloat` —— 2/6 个有
+- `LTXVConcatAVLatent` —— 2/6 个有
+- `PrimitiveFloat` —— 2/6 个有
+- `SetLatentNoiseMask` —— 2/6 个有
+- `SolidMask` —— 2/6 个有
+- `VAEEncodeAudio` —— 2/6 个有
+- `VOSR2ModelLoader` —— 2/6 个有
+- `VOSR2Upscale` —— 2/6 个有
+- `VedaSparseAttention` —— 2/6 个有
+- `EmptyImage` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高发问题（7/6 个样本）：Steps较低可能导致细节不足

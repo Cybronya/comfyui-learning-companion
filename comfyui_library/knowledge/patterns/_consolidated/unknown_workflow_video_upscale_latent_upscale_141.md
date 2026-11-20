@@ -1,87 +1,96 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_141
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.506
-common_nodes: [Bjornulf_ShowInt, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, EmptyLatentImage, GetNode, INTConstant, JoinStrings, KSamplerSelect, LTX2_NAG, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, Label (rgthree), LatentUpscaleModelLoader, LayerUtility: NumberCalculatorV2, LayerUtility: TextBox, LoadAudioUI, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiImageLoader, PathchSageAttentionKJ, PreviewImage, PrimitiveFloat, RH_Translator, ResizeImageMaskNode, SamplerCustom, Seed (rgthree), SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, UNETLoader, VAEDecodeTiled, VAELoader, VHS_SelectImages, VHS_VideoCombine, easy convertAnything, easy showAnything, easy string]
+frequency: 3
+level: strong
+coverage: 0.422333
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, ComfySwitchNode, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, KSamplerSelect, LTX2AttentionTunerPatch, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PreviewAny, PrimitiveBoolean, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, SetNode, StringConcatenate, TextGenerateLTX2Prompt, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_LoadVideoFFmpeg, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX+2.3首中尾帧(多帧)工作流_2085770570255392770.json, 视频生成/图生视频/工作流基础系列28-LTX+2.3首中尾帧(多帧)工作流_2063277265433219074.json]
+members: [音频生成/音频生成/LTX-2.3视频扩展（增亮色彩版）_2045866940337491969.json, 音频生成/音频生成/LTX-2.3视频扩展（完美扩展版）_2045860108604805122.json, 音频生成/音频生成/LTX2.3 视频配音角色对口型_2062400772872167426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_141
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX+2.3首中尾帧(多帧)工作流_2085770570255392770.json、视频生成/图生视频/工作流基础系列28-LTX+2.3首中尾帧(多帧)工作流_2063277265433219074.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/LTX-2.3视频扩展（增亮色彩版）_2045866940337491969.json、音频生成/音频生成/LTX-2.3视频扩展（完美扩展版）_2045860108604805122.json、音频生成/音频生成/LTX2.3 视频配音角色对口型_2062400772872167426.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：42%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Bjornulf_ShowInt`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
 - `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `EmptyLatentImage`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
 - `GetNode`
 - `INTConstant`
-- `JoinStrings`
 - `KSamplerSelect`
+- `LTX2AttentionTunerPatch`
+- `LTX2SamplingPreviewOverride`
 - `LTX2_NAG`
-- `LTXVAddGuideMulti`
+- `LTXAddVideoICLoRAGuide`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `Label (rgthree)`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: NumberCalculatorV2`
-- `LayerUtility: TextBox`
-- `LoadAudioUI`
-- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiImageLoader`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `RH_Translator`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
 - `ResizeImageMaskNode`
-- `SamplerCustom`
-- `Seed (rgthree)`
-- `SetLatentNoiseMask`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `SimpleCalculatorKJ`
-- `SolidMask`
+- `StringConcatenate`
+- `TextGenerateLTX2Prompt`
 - `UNETLoader`
 - `VAEDecodeTiled`
 - `VAELoader`
-- `VHS_SelectImages`
+- `VAELoaderKJ`
+- `VHS_LoadVideoFFmpeg`
 - `VHS_VideoCombine`
-- `easy convertAnything`
 - `easy showAnything`
-- `easy string`
+
+**可变部分**（部分 workflow 才有）：
+- `ImagePadKJ` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LTXICLoRALoaderModelOnly` —— 2/3 个有
+- `LazySwitchKJ` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `VHS_VideoInfo` —— 2/3 个有
+- `BasicScheduler` —— 1/3 个有
+- `Color Correct (mtb)` —— 1/3 个有
+- `CreateVideo` —— 1/3 个有
+- `GetVideoComponents` —— 1/3 个有
+- `LTXVAudioVAEEncode` —— 1/3 个有
+- `LTXVChunkFeedForward` —— 1/3 个有
+- `LTXVLatentUpsampler` —— 1/3 个有
+- `LTXVSetAudioRefTokens` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `SimpleCalculatorKJ` —— 1/3 个有
+- `easy convertAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | - | 2 | 100% |
-| 高度 | 24 | - | 2 | 100% |
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 24 - 25 | 3 | 98% |
 
 ## 常见问题
 
@@ -89,6 +98,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 24 - 25，3 个样本，取值集中（一致性 98%）

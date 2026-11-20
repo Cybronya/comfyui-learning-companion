@@ -3,46 +3,34 @@ name: text_to_image_lora_sampler_clip_346
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.8085
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MiniMaxLowVRAMAttention, ModelAttentionBackend, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.854167
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/MiniMax H3快速动作一镜到底多图参考，文生图图生视频高效创作工具_2103959005801574402.json, 数字人/数字人/MiniMax H3 MV造梦机 超快数字人低显存音乐节拍处理工具_2113020217671639041.json, 数字人/数字人/老王房产专用流｜Minimax+H3双模双采数字人_2097974073354702849.json, 视频生成/图生视频/4K加二采新condition加同模双采加H3加动态修复 视频生成优化_2108981922180452354.json, 视频生成/图生视频/LMS二采新Condition同模双采语义桥图生视频处理工具_2101405530886598657.json, 视频生成/图生视频/LMS二采新condition测试｜同模双采语义桥实战_2101147756453785601.json]
+members: [图片生成/图生图/双图服装替换工作流｜全能图片2官方稳定版_2095583561020698625.json, 图片生成/图生图/商品图一键抠图透明底 Qwen-Image-2.1自动识别主体_2104347960355151874.json, 图片生成/图生图/商用版人物介绍产品四宫格 全能图片2图生图排版_2094236619254616065.json, 图片生成/图生图/商用版全能图片2｜人物介绍产品四宫格图生图生成_2094355396973649921.json, 图片生成/图生图/真2K白底图产品图生成 电商产品展示背景处理方案_2109740581042876418.json, 图片生成/文生图/Qwen 2.1洗图工作流，文生图反推提示词处理工具_2108319840565030913.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_346
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/MiniMax H3快速动作一镜到底多图参考，文生图图生视频高效创作工具_2103959005801574402.json、数字人/数字人/MiniMax H3 MV造梦机 超快数字人低显存音乐节拍处理工具_2113020217671639041.json、数字人/数字人/老王房产专用流｜Minimax+H3双模双采数字人_2097974073354702849.json、视频生成/图生视频/4K加二采新condition加同模双采加H3加动态修复 视频生成优化_2108981922180452354.json、视频生成/图生视频/LMS二采新Condition同模双采语义桥图生视频处理工具_2101405530886598657.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/双图服装替换工作流｜全能图片2官方稳定版_2095583561020698625.json、图片生成/图生图/商品图一键抠图透明底 Qwen-Image-2.1自动识别主体_2104347960355151874.json、图片生成/图生图/商用版人物介绍产品四宫格 全能图片2图生图排版_2094236619254616065.json、图片生成/图生图/商用版全能图片2｜人物介绍产品四宫格图生图生成_2094355396973649921.json、图片生成/图生图/真2K白底图产品图生成 电商产品展示背景处理方案_2109740581042876418.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -50,44 +38,22 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVConcatAVLatent` —— 5/6 个有
-- `LTXVSeparateAVLatent` —— 5/6 个有
-- `MiniMaxChunkFeedForward` —— 5/6 个有
-- `MinimaxH3LatentUpscaler3D` —— 5/6 个有
-- `PrimitiveFloat` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `SplitSigmas` —— 5/6 个有
-- `VAEDecodeAudio` —— 5/6 个有
-- `VHS_VideoCombine` —— 5/6 个有
-- `H3SigmaRefiner` —— 4/6 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/6 个有
-- `ModelPreviewOverrideKJ` —— 4/6 个有
-- `SaveImage` —— 4/6 个有
-- `easy cleanGpuUsed` —— 4/6 个有
-- `CR Prompt Text` —— 3/6 个有
-- `ConcatTextOfUtils` —— 3/6 个有
-- `CreateVideo` —— 3/6 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 3/6 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 3/6 个有
-- `MiniMaxH3TurboLoRA` —— 3/6 个有
-- `SaveVideo` —— 3/6 个有
-- `Seed (rgthree)` —— 3/6 个有
-- `ShellAgentPluginVideoCombineEncrypt` —— 3/6 个有
-- `SolAttnMiniMax` —— 3/6 个有
-- `SolAttnPatch` —— 2/6 个有
-- `Astra` —— 1/6 个有
-- `CR Text` —— 1/6 个有
-- `GetImageSize` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 3/6 个有
+- `QwenImage21Cache` —— 3/6 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 3/6 个有
+- `TextEncodeQwenImage21` —— 3/6 个有
+- `CR Prompt Text` —— 2/6 个有
+- `CR Text Concatenate` —— 2/6 个有
+- `ImageScaleToTotalPixels` —— 2/6 个有
+- `KOOK_SaveJPGImage` —— 2/6 个有
+- `ResolutionSelector` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
 - `ImageResizeKJv2` —— 1/6 个有
-- `LoadAudio` —— 1/6 个有
-- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 1/6 个有
-- `MiniMaxH3VAEDecodeFast` —— 1/6 个有
-- `MiniMaxH3VDNRuntimeAuditT8Advanced` —— 1/6 个有
-- `ModelPatchTorchSettings` —— 1/6 个有
-- `PathchSageAttentionKJ` —— 1/6 个有
-- `StringConcatenate` —— 1/6 个有
-- `VHS_LoadAudioUpload` —— 1/6 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `SeedGenerator` —— 1/6 个有
+- `TextGenerate` —— 1/6 个有
+- `VAEEncode` —— 1/6 个有
 
 ## 典型参数
 
@@ -105,7 +71,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 7/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -116,4 +82,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 高发问题（7/6 个样本）：Steps较低可能导致细节不足

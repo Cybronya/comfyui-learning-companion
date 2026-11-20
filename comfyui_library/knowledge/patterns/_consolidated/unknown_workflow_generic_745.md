@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_745
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9375
-common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
+coverage: 1
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片 Image0.05每次_2070463474865623042.json, 图片生成/图生图/全能图片V1 pose transfer_1960970113874890754.json, 图片生成/图生图/全能图片V1-单图编辑_1961100020743389185.json, 图片生成/图生图/全能图片V1-单图编辑_2073043159894020098.json]
+members: [平台全量/全能视频V3.1-pro-首尾帧生视频-低价渠道版_2046096299258290177.json, 视频生成/图生视频/RhartVideoV31ProStartEndToVideo_2038487586699747330.json, 视频生成/图生视频/全能视频V3.1-pro-首尾帧生视频-低价渠道版_2050237655522258945.json, 视频生成/图生视频/全能视频X-图生视频-低价渠道版 0.03_秒_2049413181075890177.json, 视频生成/图生视频/全能视频X-图生视频低价版_2036386645976551425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_745
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片 Image0.05每次_2070463474865623042.json、图片生成/图生图/全能图片V1 pose transfer_1960970113874890754.json、图片生成/图生图/全能图片V1-单图编辑_1961100020743389185.json、图片生成/图生图/全能图片V1-单图编辑_2073043159894020098.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/全能视频V3.1-pro-首尾帧生视频-低价渠道版_2046096299258290177.json、视频生成/图生视频/RhartVideoV31ProStartEndToVideo_2038487586699747330.json、视频生成/图生视频/全能视频V3.1-pro-首尾帧生视频-低价渠道版_2050237655522258945.json、视频生成/图生视频/全能视频X-图生视频-低价渠道版 0.03_秒_2049413181075890177.json、视频生成/图生视频/全能视频X-图生视频低价版_2036386645976551425.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SeargePromptText` —— 2/4 个有
-- `AddLabel` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `RH_RhartVideoV31ProStartEndToVideo` —— 3/5 个有
+- `CR Prompt Text` —— 2/5 个有
+- `RH_RhartVideoGImageToVideo` —— 2/5 个有
 
 ## 典型参数
 

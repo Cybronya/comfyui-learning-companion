@@ -1,38 +1,39 @@
 ---
 name: unknown_workflow_generic_380
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.955429
-common_nodes: [CR Text, LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.91675
+common_nodes: [ImageResize+, LoadImage, RH_Sora2_I2V_Realistic, SaveVideo, easy compare, easy imageSwitch]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图像G2图像编辑版_2047866724027994114.json, 图片生成/图生图/全能图像G2图像编辑版_2049035561326874625.json, 图片生成/图生图/全能图像Gimage2-三图编辑（工作流封面设计）_2079021048368033794.json, 图片生成/图生图/全能图像Gimage2-三图编辑（工作流封面设计）_2079876966806806529.json, 图片生成/图生图/全能图像image 2.0 图生图自用_2054850721660579842.json, 图片生成/图生图/全能图片G image 2.0-图生图_2054839956958400514.json, 图片生成/图生图/全能图片——电商创意海报+文案_2060265171804844034.json]
+members: [平台全量/全能视频S Image to Video (Official)_1988134596191625217.json, 平台全量/全能视频S 低价版本 图生视频  优点 价格比seedance 低 缺点 中文不友好_2055658444161593345.json, 视频生成/图生视频/RH_全能视频S_Image_to_Video_(Realistic_Supported)-真人版_1994395763994206210.json, 视频生成/图生视频/全能视频S 2：图生视频，世界模拟器，静态图片的新纪元！_1973551516617412609.json, 视频生成/图生视频/全能视频S Image to Video (RH-官方渠道)_2054431460349751298.json, 视频生成/图生视频/全能视频S 真人图生视频_1997595577485561858.json, 视频生成/图生视频/全能视频S 真人图生视频_2001547196065562625.json, 视频生成/图生视频/图生视频 写实风格动态视频_2017785280387878914.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_380
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/全能图像G2图像编辑版_2047866724027994114.json、图片生成/图生图/全能图像G2图像编辑版_2049035561326874625.json、图片生成/图生图/全能图像Gimage2-三图编辑（工作流封面设计）_2079021048368033794.json、图片生成/图生图/全能图像Gimage2-三图编辑（工作流封面设计）_2079876966806806529.json、图片生成/图生图/全能图像image 2.0 图生图自用_2054850721660579842.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/全能视频S Image to Video (Official)_1988134596191625217.json、平台全量/全能视频S 低价版本 图生视频  优点 价格比seedance 低 缺点 中文不友好_2055658444161593345.json、视频生成/图生视频/RH_全能视频S_Image_to_Video_(Realistic_Supported)-真人版_1994395763994206210.json、视频生成/图生视频/全能视频S 2：图生视频，世界模拟器，静态图片的新纪元！_1973551516617412609.json、视频生成/图生视频/全能视频S Image to Video (RH-官方渠道)_2054431460349751298.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text`
+全部 8 个 workflow 都包含：
+- `ImageResize+`
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+- `RH_Sora2_I2V_Realistic`
+- `SaveVideo`
+- `easy compare`
+- `easy imageSwitch`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialImageToImage` —— 2/7 个有
-- `RH_RhartImageNG31FlashOfficialImageToImage` —— 2/7 个有
-- `PreviewTextNode` —— 1/7 个有
-- `RHLLMChatNode` —— 1/7 个有
+- `CR Text` —— 2/8 个有
+- `PreviewAny` —— 2/8 个有
+- `RH_LLMAPI_NODE` —— 2/8 个有
 
 ## 典型参数
 

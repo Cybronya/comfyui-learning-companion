@@ -1,89 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_22
 type: Unknown Workflow
-frequency: 33
+frequency: 43
 level: moderate
-coverage: 0.836061
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.600465
+common_nodes: [CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/(Dasiwa+V1+SLA加速)Minimax参考生视频V1_2092548650743455745.json, 图片生成/图生图/(双时钟-8步高质量极速)Minimax图生视频V1_2085659323732156418.json, 图片生成/图生图/(最佳动态)MiniMax H3Dasiwa HybirdV1+600EMA参考生视频V1_2093686271318253570.json, 图片生成/图生图/(长视频-文武双修均衡版-高清)MiniMax H3多参双采参考生视频_2103931824199266305.json, 图片生成/图生图/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-参考生视频_2096774886025945089.json, 图片生成/图生图/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-文生视频_2104537651679420418.json, 数字人/数字人/（28秒）MiniMax H3双采参考生视频V1_2104395488899461122.json, 视频生成/图生视频/(30秒直出-最强文武双修均衡版)MiniMax H3多参双采参考生视频_2103209639994281986.json, 视频生成/图生视频/(30秒直出-最强文武双修均衡版)MiniMax H3多参双采参考生视频_2104379461897637889.json, 视频生成/图生视频/(Dasiwa v3长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2106423400968318978.json, 视频生成/图生视频/(Hybird+VBVR逻辑强化-长视频-均衡版)MiniMax H3双采生视频_2113845902539579393.json, 视频生成/图生视频/(Hybird+VBVR逻辑强化-长视频-均衡版)MiniMax H3双采生视频_2113895982030217218.json, 视频生成/图生视频/(Hybird-DMAD长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107064053121249282.json, 视频生成/图生视频/(Hybird全状态-长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107076455174856705.json, 视频生成/图生视频/(Hybird长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2106423021081812993.json, 视频生成/图生视频/(Remex0.8全状态-长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107078168841637889.json, 视频生成/图生视频/(Remix0.8-DMAD长视频-均衡版-动修2-Vbvr后置)MiniMax H3双采生视频_2107054072120565762.json, 视频生成/图生视频/(Singularity V2-+Lightx2v 1.3-均衡版-)MiniMax H3双采生视频_2112934108195278850.json, 视频生成/图生视频/(双桥)MiniMax H3双采生视频_2109246069212270593.json, 视频生成/图生视频/(四宫格图生视频-高清-HyperVae 2X)MiniMax H3多参双采参考生视频_2104730210489946113.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104238128981700610.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104528106504675330.json, 视频生成/图生视频/(长视频-Pov第一视角)MiniMax H3多参双采参考生视频_2104571196426768386.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清)MiniMax_H3多参双采参考生视频_2109822260604395522.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清)MiniMax_H3多参双采参考生视频_2110560337710895106.json, 视频生成/图生视频/(长视频-文武双修均衡版-高清)MiniMax_H3多参双采参考生视频_2113533204757049345.json, 视频生成/图生视频/MINIMAX H3 -高动态武戏-全自动-极速高清输出_2104934302449491970.json, 视频生成/图生视频/MiniMax H3 长视频直出（双采 多参）_2105338608524812290.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频-长视频-视频复刻-高清直出_2109641176335863810.json, 视频生成/图生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-文生视频-长视频-高清有直出_2106198509325217793.json, 视频生成/图生视频/MiniMax H3双采全能工作流V4-VBVR逻辑强化-文戏不油，武戏动态强-参考生视频-长视频-高清直出_2113982579975221250.json, 视频生成/文生视频/MiniMax H3双采全能工作流V3-语义桥-文戏不油，武戏动态强-参考生视频-长视频-高清有直出_2106353568906301442.json, 视频生成/文生视频/MiniMax H3双采全能工作流V4-VBVR逻辑强化-文戏不油，武戏动态强-文生视频-长视频-高清直出_2114001115871272961.json]
+members: [视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版 API_2007586660388708354.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_1999147645648109569.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2013157114394447873.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2034010993549910018.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2095327962378887170.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2051166636400496641.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2069752465066643458.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2082818312530124802.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2096551354021015553.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_单人跳舞动物跳舞_2096582434203725826.json, 视频生成/图生视频/SteadyDancer_骨骼迁移_（只需上传骨骼视频）_2002599529096572930.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移 不限时长版  表情复刻_2057305596684234753.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移 不限时长版  表情复刻_2079929209409069057.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2058381995545284610.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2058471840317788161.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2060364466436534274.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2060774599557738498.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2066792796987682818.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频图生视频 动作迁移_2066799489494638593.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2013945228213882882.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2014180561027342337.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2105653555704188930.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗人物跳舞视频多人跳舞图生视频 骨骼迁移 不限时长版_2105658223234740225.json, 视频生成/图生视频/SteadyDancer一键生成小猫小狗跳舞视频图生视频 骨骼迁移 不限时长版_2013887886935990273.json, 视频生成/图生视频/SteadyDancer人物动作1：1还原_2014591625648939009.json, 视频生成/图生视频/SteadyDancer人物动物 动作迁移  表情复刻 不限时长版_2061977258608381954.json, 视频生成/图生视频/SteadyDancer动作迁移 V2_2073292515553402882.json, 视频生成/图生视频/SteadyDancer动作迁移+_2082290282867023873.json, 视频生成/图生视频/SteadyDancer动作迁移-_1999406405557907458.json, 视频生成/图生视频/SteadyDancer动作迁移-_2045041013768589313.json, 视频生成/图生视频/SteadyDancer动作迁移-单人跳舞_2014994165557370881.json, 视频生成/图生视频/SteadyDancer动作迁移-流畅性好_2020680054753206273.json, 视频生成/图生视频/SteadyDancer动作迁移-让照片动起来_2022143730123280386.json, 视频生成/图生视频/SteadyDancer动作迁移Q版、真人等-舞蹈带货Motion Transfer_1999018425617932289.json, 视频生成/图生视频/SteadyDancer动作迁移V1（卡通版）_1995693634018217985.json, 视频生成/图生视频/SteadyDancer动作迁移V1（实验版）_1995735712467128322.json, 视频生成/图生视频/SteadyDancer动作迁移V1（最高质量版-视线修复）_1998614255215763457.json, 视频生成/图生视频/SteadyDancer动作迁移V1（测试版）_1995720940271054850.json, 视频生成/图生视频/SteadyDancer动作迁移V1（真人版）_1995709694230532098.json, 视频生成/图生视频/SteadyDancer动作迁移V1（高质量版）_1995712878860701698.json, 视频生成/图生视频/SteadyDancer动作迁移V1（高质量版）_1997197731166883841.json, 视频生成/图生视频/SteadyDancer动作迁移_1998741214134423553.json, 视频生成/图生视频/SteadyDancer动作迁移_2025728943478808578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_22
 
-> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/图生图/(Dasiwa+V1+SLA加速)Minimax参考生视频V1_2092548650743455745.json、图片生成/图生图/(双时钟-8步高质量极速)Minimax图生视频V1_2085659323732156418.json、图片生成/图生图/(最佳动态)MiniMax H3Dasiwa HybirdV1+600EMA参考生视频V1_2093686271318253570.json、图片生成/图生图/(长视频-文武双修均衡版-高清)MiniMax H3多参双采参考生视频_2103931824199266305.json、图片生成/图生图/MiniMax H3双采全能工作流V2-文戏不油，武戏动态强-参考生视频_2096774886025945089.json…）
+> 由 `engine/knowledge_consolidation` 从 43 个 workflow 归纳得出（视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版 API_2007586660388708354.json、视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_1999147645648109569.json、视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2013157114394447873.json、视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2034010993549910018.json、视频生成/图生视频/SteadyDancer_骨骼迁移_不限时长版_2095327962378887170.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：33
+- **样本数**：43
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 33 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
+全部 43 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAELoader`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSteadyDancerEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelAttentionBackend` —— 32/33 个有
-- `SolAttnMiniMax` —— 32/33 个有
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 31/33 个有
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 31/33 个有
-- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 31/33 个有
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 31/33 个有
-- `Float` —— 30/33 个有
-- `LoraLoaderModelOnly` —— 30/33 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 28/33 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 28/33 个有
-- `easy anythingIndexSwitch` —— 27/33 个有
-- `MiniMaxH3ChunkFeedForwardT8Advanced` —— 26/33 个有
-- `RunningHub Deepcleaner` —— 26/33 个有
-- `easy cleanGpuUsed` —— 26/33 个有
-- `Astra` —— 23/33 个有
-- `CreateVideo` —— 23/33 个有
-- `SaveVideo` —— 23/33 个有
-- `GetNode` —— 9/33 个有
-- `SetNode` —— 9/33 个有
-- `孤海注释` —— 8/33 个有
-- `Fast Groups Bypasser (rgthree)` —— 7/33 个有
-- `MiniMaxH3HyperVAE2xLoaderEXPT8` —— 6/33 个有
-- `VAEDecode` —— 6/33 个有
-- `ImpactFloat` —— 5/33 个有
-- `Int` —— 5/33 个有
-- `SimpleMath+` —— 5/33 个有
-- `BlockSparseAttention` —— 2/33 个有
-- `ConcatTextOfUtils` —— 2/33 个有
-- `MiniMaxH3ActivationChunkT8Advanced` —— 2/33 个有
-- `PreviewImage` —— 2/33 个有
-- `EmptyImage` —— 1/33 个有
-- `GetVideoComponents` —— 1/33 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/33 个有
-- `LoadAudio` —— 1/33 个有
-- `LoadVideo` —— 1/33 个有
-- `MiniMaxH3OutputTrimT8` —— 1/33 个有
-- `MiniMaxH3SemanticBridgeComposeT8` —— 1/33 个有
-- `PreviewAny` —— 1/33 个有
-- `RH_LLMAPI_Pro_Node` —— 1/33 个有
-- `SaveImage` —— 1/33 个有
-- `Vignette` —— 1/33 个有
-- `忽略多组孤海` —— 1/33 个有
+- `Int` —— 42/43 个有
+- `OnnxDetectionModelLoader` —— 42/43 个有
+- `WanVideoDecode` —— 42/43 个有
+- `ImageConcatMulti` —— 40/43 个有
+- `PoseDetectionOneToAllAnimation` —— 36/43 个有
+- `PreviewImage` —— 34/43 个有
+- `TextInput_` —— 25/43 个有
+- `WanVideoBlockSwap` —— 18/43 个有
+- `WanVideoSetBlockSwap` —— 18/43 个有
+- `WanVideoTorchCompileSettings` —— 16/43 个有
+- `CR Prompt Text` —— 15/43 个有
+- `DrawViTPose` —— 9/43 个有
+- `PoseAndFaceDetection` —— 9/43 个有
+- `SimpleMath+` —— 9/43 个有
+- `PrimitiveFloat` —— 8/43 个有
+- `easy convertAnything` —— 8/43 个有
+- `AILab_QwenVL` —— 1/43 个有
+- `CR Combine Prompt` —— 1/43 个有
+- `DeepTranslatorTextNode` —— 1/43 个有
+- `LayerUtility: TextBox` —— 1/43 个有
+- `PreviewAny` —— 1/43 个有
+- `RunningHub Deepcleaner` —— 1/43 个有
+- `SaveImage` —— 1/43 个有
+- `SaveLatent` —— 1/43 个有
+- `TT_img_enc` —— 1/43 个有
+- `easy showAnything` —— 1/43 个有
 
 ## 典型参数
 

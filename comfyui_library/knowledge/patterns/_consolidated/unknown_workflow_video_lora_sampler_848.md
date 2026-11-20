@@ -1,85 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_848
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4815
-common_nodes: [CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, FL_IntToFloat, GetImageRangeFromBatch, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy imageSize, easy int]
+frequency: 3
+level: strong
+coverage: 0.548
+common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, ColorMatch, GetNode, ImageFromBatch, ImageResizeKJv2, Int, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PainterAI2V, PainterAudioCut, PreviewAudio, SetNode, SimpleMath+, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy promptLine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX-2.3_Gemini3补全分镜提示词+自定义音频+首尾帧+多图段子视频生成_2055962684570521602.json, 视频生成/图生视频/LTX-2.3_Prompt Relay+自定义音频+首尾帧+多图段子视频生成_2055942419597799425.json]
+members: [数字人/数字人/【官流】数字人AI2V 图片转数字人_2016740657276129281.json, 视频生成/图生视频/【推荐，图片对口型】单图+音频+提示词驱动数字人_2018019225536831490.json, 视频生成/图生视频/图片转数字人_2045963626250506242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_848
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX-2.3_Gemini3补全分镜提示词+自定义音频+首尾帧+多图段子视频生成_2055962684570521602.json、视频生成/图生视频/LTX-2.3_Prompt Relay+自定义音频+首尾帧+多图段子视频生成_2055942419597799425.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/【官流】数字人AI2V 图片转数字人_2016740657276129281.json、视频生成/图生视频/【推荐，图片对口型】单图+音频+提示词驱动数字人_2018019225536831490.json、视频生成/图生视频/图片转数字人_2045963626250506242.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：48%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `AudioCrop`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `FL_IntToFloat`
-- `GetImageRangeFromBatch`
+- `ColorMatch`
 - `GetNode`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `Int`
+- `KSamplerAdvanced`
 - `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PathchSageAttentionKJ`
-- `PreviewImage`
-- `PrimitiveInt`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
+- `ModelPatchLoader`
+- `PainterAI2V`
+- `PainterAudioCut`
+- `PreviewAudio`
 - `SetNode`
 - `SimpleMath+`
-- `SolidMask`
-- `SoundFlow_GetLength`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `easy imageSize`
-- `easy int`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `DapaoGeminiInstructionZhenzhenNode` —— 1/2 个有
-- `FlashVSRNode` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `LTXVAddGuideMulti` —— 1/2 个有
-- `LTXVImgToVideoInplaceKJ` —— 1/2 个有
-- `PromptRelayEncodeTimeline` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `LayerUtility: PurgeVRAM` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `PreviewImage` —— 1/3 个有
+- `TextInput_` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 349 | - | 2 | 97% |
-| 高度 | 24.5 | - | 2 | 98% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -87,6 +73,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 349，样本不足，未给区间，2 个样本，取值集中（一致性 97%）
-- 高度 中位数 24.5，样本不足，未给区间，2 个样本，取值集中（一致性 98%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

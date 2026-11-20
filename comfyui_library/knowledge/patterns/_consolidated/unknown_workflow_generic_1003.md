@@ -1,44 +1,36 @@
 ---
 name: unknown_workflow_generic_1003
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.529333
-common_nodes: [CR Text, Float, HAIGC_VideoSubtitleEnhanced, ImpactConditionalBranch, LayerMask: MaskBoxDetect, LoadImage, MultiMaskSelectorNode, PrimitiveBoolean, SaveImage, 孤海-取色器]
+coverage: 0.95
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/产品海报制作（可自定义字体颜色渐变色）_1993684311503208450.json, 图片生成/图生图/海报制作参考模板（可自定义字体颜色渐变色投影更多超强功能）_1984427840852672514.json, 图片生成/图生图/生图-海报制作(遮罩)_2008810578072047618.json]
+members: [视频生成/图生视频/Seedance2.0  生长视频_2080856590562979842.json, 视频生成/图生视频/Seedance2.0 Fast _ 全能参考 · 支持真人_2059046294068482049.json, 视频生成/图生视频/Seedance2.0 Fast全能参考视频  分镜图加产品白底图加脚本_2069253062396571649.json, 视频生成/图生视频/Seedance2.0 _ 全能参考 · 支持真人_2058650109591773186.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1003
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品海报制作（可自定义字体颜色渐变色）_1993684311503208450.json、图片生成/图生图/海报制作参考模板（可自定义字体颜色渐变色投影更多超强功能）_1984427840852672514.json、图片生成/图生图/生图-海报制作(遮罩)_2008810578072047618.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0  生长视频_2080856590562979842.json、视频生成/图生视频/Seedance2.0 Fast _ 全能参考 · 支持真人_2059046294068482049.json、视频生成/图生视频/Seedance2.0 Fast全能参考视频  分镜图加产品白底图加脚本_2069253062396571649.json、视频生成/图生视频/Seedance2.0 _ 全能参考 · 支持真人_2058650109591773186.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Text`
-- `Float`
-- `HAIGC_VideoSubtitleEnhanced`
-- `ImpactConditionalBranch`
-- `LayerMask: MaskBoxDetect`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `MultiMaskSelectorNode`
-- `PrimitiveBoolean`
-- `SaveImage`
-- `孤海-取色器`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/3 个有
-- `MaskPreview` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/4 个有
 
 ## 典型参数
 

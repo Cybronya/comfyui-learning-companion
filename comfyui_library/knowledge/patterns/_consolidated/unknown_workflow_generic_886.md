@@ -3,34 +3,35 @@ name: unknown_workflow_generic_886
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.50825
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_suno_description, SaveAudio]
+coverage: 0.82725
+common_nodes: [JjkText, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json, 音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json, 音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json]
+members: [图片生成/图生图/全能图片2.0_2054867995964526594.json, 图片生成/图生图/全能图片Pro_2054847388522696706.json, 图片生成/文生图/全能图像2 3.1-flash-image 全能图片_2027228858046488578.json, 图片生成/文生图/全能图像V2 极速质量版_2027236295986122753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_886
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/Suno 4.5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1968700127772856321.json、音频生成/音频生成/Suno V5+音乐简易版-一句话生成音乐API版V1(基准0.45_两首歌)_1971612839280635905.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)+全节点注释_2045811313917566977.json、音频生成/音频生成/Suno V5.5顶级纯音乐生成V1(基准0.5_两首歌-贞贞AI工坊)_2045779390470037506.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片2.0_2054867995964526594.json、图片生成/图生图/全能图片Pro_2054847388522696706.json、图片生成/文生图/全能图像2 3.1-flash-image 全能图片_2027228858046488578.json、图片生成/文生图/全能图像V2 极速质量版_2027236295986122753.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_suno_description`
-- `SaveAudio`
+- `JjkText`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 3/4 个有
-- `LoadImage` —— 1/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/4 个有
+- `SetNode` —— 2/4 个有
+- `TextInput_` —— 2/4 个有
 
 ## 典型参数
 

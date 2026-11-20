@@ -1,63 +1,63 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_56
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8065
-common_nodes: [Any Switch (rgthree), CFGGuider, CLIPLoader, CLIPTextEncode, DifferentialDiffusion, Fast Groups Muter (rgthree), Flux2Scheduler, FluxKontextImageScale, GetImageSize, GrowMaskWithBlur, Image Comparer (rgthree), ImageConcatMulti, InpaintModelConditioning, KOOK_SaveJPGImage, KSamplerSelect, LayerMask: MaskPreview, LayerUtility: ExtendCanvasV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SolidMask, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy int]
+frequency: 4
+level: strong
+coverage: 0.871
+common_nodes: [ApplyPulidFlux, CLIPTextEncode, CropMask, DualCLIPLoader, GrowMask, Image Comparer (rgthree), ImageColorMatch+, ImageResize+, InpaintModelConditioning, KSampler, LayerMask: MaskPreview, LayerMask: PersonMaskUltra V2, LayerUtility: CropBoxResolve, LayerUtility: CropByMask V2, LayerUtility: RestoreCropBox, LoadImage, MaskBlur+, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, RepeatLatentBatch, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX2-klein扩图工作流_2012416157290074114.json, 图片生成/图生图/【🛫书墨】FLUX2-klein极限扩图工作流_2012079808972328961.json]
+members: [图片生成/图生图/08_换脸_2074311605063610369.json, 图片生成/图生图/Qwen-edit脸部重绘_2083479917173497857.json, 平台全量/FLUX换脸_1978405922328481794.json, 平台全量/Flux最强换脸工作流_1927241002766204930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_56
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/FLUX2-klein扩图工作流_2012416157290074114.json、图片生成/图生图/【🛫书墨】FLUX2-klein极限扩图工作流_2012079808972328961.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/08_换脸_2074311605063610369.json、图片生成/图生图/Qwen-edit脸部重绘_2083479917173497857.json、平台全量/FLUX换脸_1978405922328481794.json、平台全量/Flux最强换脸工作流_1927241002766204930.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CFGGuider`
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `ApplyPulidFlux`
 - `CLIPTextEncode`
-- `DifferentialDiffusion`
-- `Fast Groups Muter (rgthree)`
-- `Flux2Scheduler`
-- `FluxKontextImageScale`
-- `GetImageSize`
-- `GrowMaskWithBlur`
+- `CropMask`
+- `DualCLIPLoader`
+- `GrowMask`
 - `Image Comparer (rgthree)`
-- `ImageConcatMulti`
+- `ImageColorMatch+`
+- `ImageResize+`
 - `InpaintModelConditioning`
-- `KOOK_SaveJPGImage`
-- `KSamplerSelect`
+- `KSampler`
 - `LayerMask: MaskPreview`
-- `LayerUtility: ExtendCanvasV2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerMask: PersonMaskUltra V2`
+- `LayerUtility: CropBoxResolve`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: RestoreCropBox`
 - `LoadImage`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `MaskBlur+`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `RepeatLatentBatch`
 - `SaveImage`
-- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy int`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 30 | 30 - 30 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 0.6 | 0.6 - 0.6 | 4 | 100% |
 
 ## 常见问题
 
@@ -65,4 +65,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 30，观测区间 30 - 30，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 0.6，观测区间 0.6 - 0.6，4 个样本，取值集中（一致性 100%）

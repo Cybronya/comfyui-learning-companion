@@ -1,31 +1,31 @@
 ---
 name: unknown_workflow_inpaint_sampler_unet
 type: Unknown Workflow
-frequency: 10
-level: strong
-coverage: 0.97
-common_nodes: [DualCLIPLoader, InpaintModelConditioning, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 12
+level: moderate
+coverage: 0.92175
+common_nodes: [InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX+fill超强无痕扩图（在线运行）_1909981995647102977.json, 图片生成/图生图/FLUX-扩图_1914689252691537922.json, 图片生成/图生图/FLUX.1扩图_2055583012271730689.json, 图片生成/图生图/FLUX1-FILL-DEV-FP16扩图工作流_2032094121422233601.json, 图片生成/图生图/FLUX_FILL 【拒绝加班】一键扩图，快狠准_1955539055988523009.json, 图片生成/图生图/FLUX局部重绘_1914505476695097346.json, 图片生成/图生图/FLUX扩图_1900084516772536321.json, 图片生成/图生图/FLUX无缝扩图+高清放大_1915315024124903426.json, 图片生成/图生图/FLUX无缝扩图+高清放大_1917410405457793026.json, 图片生成/图生图/FLUX无缝扩图-工作流_1913971321963802625.json]
+members: [图片生成/图生图/Magic-Wan2.2-修手工作流_1995477299732656129.json, 图片生成/图生图/Moss-image-局部重绘_2112544404337676289.json, 图片生成/图生图/Qwen-image2.1-万能局部重绘_2108164582689824769.json, 图片生成/图生图/Qwen-image2.1-万能局部重绘_2110648449984196609.json, 图片生成/图生图/Qwen-image2.1-万能局部重绘_2111278068961730562.json, 图片生成/图生图/Qwen-image2.1-参考图+局部重绘_2108186043651551234.json, 图片生成/图生图/局部重绘移除(河南ai之神)_1931906923506151425.json, 平台全量/Fill One reward万物移除工作流_1966516003863736322.json, 平台全量/Fill One reward局部重绘工作流_1966521617511821313.json, 平台全量/Flux-fill-Oneward万物移除工作流_1985883620487376898.json, 平台全量/Flux-fill-Oneward局部重绘工作流_1986442165700227074.json, 平台全量/▶Flux万物移除流_2079140997283540994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_unet
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FLUX+fill超强无痕扩图（在线运行）_1909981995647102977.json、图片生成/图生图/FLUX-扩图_1914689252691537922.json、图片生成/图生图/FLUX.1扩图_2055583012271730689.json、图片生成/图生图/FLUX1-FILL-DEV-FP16扩图工作流_2032094121422233601.json、图片生成/图生图/FLUX_FILL 【拒绝加班】一键扩图，快狠准_1955539055988523009.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Magic-Wan2.2-修手工作流_1995477299732656129.json、图片生成/图生图/Moss-image-局部重绘_2112544404337676289.json、图片生成/图生图/Qwen-image2.1-万能局部重绘_2108164582689824769.json、图片生成/图生图/Qwen-image2.1-万能局部重绘_2110648449984196609.json、图片生成/图生图/Qwen-image2.1-万能局部重绘_2111278068961730562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `DualCLIPLoader`
+全部 12 个 workflow 都包含：
 - `InpaintModelConditioning`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `SaveImage`
 - `UNETLoader`
@@ -33,38 +33,43 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DifferentialDiffusion` —— 9/10 个有
-- `ImagePadForOutpaint` —— 9/10 个有
-- `CLIPTextEncode` —— 7/10 个有
-- `FluxGuidance` —— 7/10 个有
-- `CLIPTextEncodeFlux` —— 3/10 个有
-- `SUPIR_Upscale` —— 3/10 个有
-- `ConditioningZeroOut` —— 2/10 个有
-- `ImageResize+` —— 2/10 个有
-- `DF_Image_scale_to_side` —— 1/10 个有
-- `EmptySD3LatentImage` —— 1/10 个有
-- `LoadImageFromURL` —— 1/10 个有
-- `RH_Translator` —— 1/10 个有
-- `SDVM Image List Repeat` —— 1/10 个有
+- `Mask Fill Holes` —— 11/12 个有
+- `Image Comparer (rgthree)` —— 10/12 个有
+- `CLIPTextEncode` —— 8/12 个有
+- `DifferentialDiffusion` —— 7/12 个有
+- `LoraLoaderModelOnly` —— 7/12 个有
+- `CLIPLoader` —— 6/12 个有
+- `DualCLIPLoader` —— 6/12 个有
+- `FluxGuidance` —— 6/12 个有
+- `ConditioningZeroOut` —— 5/12 个有
+- `TextEncodeQwenImage21` —— 4/12 个有
+- `ImageAndMaskPreview` —— 3/12 个有
+- `Int` —— 2/12 个有
+- `JjkText` —— 2/12 个有
+- `CR Text` —— 1/12 个有
+- `DeepTranslatorTextNode` —— 1/12 个有
+- `MaskFillHoles` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 15 - 25 | 10 | 87% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | normal | - | 10 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 17.5 | 6 - 50 | 12 | 38% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 12 | 63% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | beta | - | 12 | 50% |
+| 重绘幅度 | 1 | 0.36 - 1 | 12 | 81% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 15 - 25，10 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 normal，10 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 17.5，观测区间 6 - 50，12 个样本，取值分散，一致性仅 38%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，12 个样本
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 beta，12 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 0.36 - 1，12 个样本，取值集中（一致性 81%）

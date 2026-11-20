@@ -3,35 +3,34 @@ name: unknown_workflow_generic_650
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.94
-common_nodes: [LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader]
+coverage: 0.7312
+common_nodes: [LoadImage, RH_Captioner_Pro, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS 2.5语音克隆_2092520347433267202.json, 音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json, 音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json, 音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json, 音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json]
+members: [图片生成/反推提示词/全能图片G5图片反推提示词（0.02元一次）保存txt-csv格式_1979765979641188353.json, 图片生成/反推提示词/智普GLM4.5V图片反推提示词（0.02元一次）保存TXT-CSV格式_1979789269592084481.json, 图片生成/反推提示词/谷歌Gemini-Pro图片反推提示词（0.02元一次）保存TXT-CSV格式_1979793045749141505.json, 图片生成/反推提示词/谷歌Gemini-flash图片反推提示词（0.02元一次）保存TXT-CSV格式_1979794645259554817.json, 图片生成/反推提示词/豆包Seed1.6Vision图片反推提示词（0.02元一次）保存TXT-CSV格式_1979760698370723842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_650
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS 2.5语音克隆_2092520347433267202.json、音频生成/音频生成/indextts2.5语音克隆_2090244931158888449.json、音频生成/音频生成/indextts2.5语音克隆_2102951330317955073.json、音频生成/音频生成/indextts2.5语音克隆（向量参考）_2090825269237075970.json、音频生成/音频生成/声音克隆（音色参考+情感语气控制）IndexTTS 2.5_2108928627483176962.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/全能图片G5图片反推提示词（0.02元一次）保存txt-csv格式_1979765979641188353.json、图片生成/反推提示词/智普GLM4.5V图片反推提示词（0.02元一次）保存TXT-CSV格式_1979789269592084481.json、图片生成/反推提示词/谷歌Gemini-Pro图片反推提示词（0.02元一次）保存TXT-CSV格式_1979793045749141505.json、图片生成/反推提示词/谷歌Gemini-flash图片反推提示词（0.02元一次）保存TXT-CSV格式_1979794645259554817.json、图片生成/反推提示词/豆包Seed1.6Vision图片反推提示词（0.02元一次）保存TXT-CSV格式_1979760698370723842.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
+- `LoadImage`
+- `RH_Captioner_Pro`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_EmotionControl` —— 3/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `Text` —— 1/5 个有
+- `CR Text` —— 1/5 个有
+- `CR Text Concatenate` —— 1/5 个有
 
 ## 典型参数
 

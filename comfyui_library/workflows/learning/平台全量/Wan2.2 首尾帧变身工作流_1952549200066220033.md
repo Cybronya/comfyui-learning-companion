@@ -1,0 +1,84 @@
+---
+key: 平台全量/Wan2.2 首尾帧变身工作流_1952549200066220033.json
+name: Wan2.2 首尾帧变身工作流_1952549200066220033
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/平台全量/Wan2.2 首尾帧变身工作流_1952549200066220033.json
+hash: 0407b0fd42fb1d6e
+coverage: 0.692308
+learned_at: 2026-11-14 01:05:47
+nodes: [GetNode, SetNode, SetNode, LoadImage, VHS_VideoCombine, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed, WanVideoDecode, WanVideoSampler, LoadWanVideoT5TextEncoder, WanVideoModelLoader, ImageResizeKJ, SetNode, WanVideoTextEncode, GetNode, LoadImage, Int, Int, easy showAnything, ImageResizeKJ, easy showAnything, easy anythingIndexSwitch, WanVideoBlockSwap, easy anythingIndexSwitch, Int, easy showAnything, easy showAnything, RH_Captioner, GetNode, CR Text Concatenate, easy showAnything, GetNode, WanVideoLoraSelect, SetNode, GetNode, WanVideoLoraSelect, WanVideoVACEEncode, SimpleMath+, SetNode, SimpleMath+, MaskPreview+, MaskPreview+, WanVideoVACEStartToEndFrame, WanVideoVACEStartToEndFrame, Int, MaskFromBatch+, MaskBatch+, MaskPreview+, PreviewImage, GetImageSizeAndCount, CR Text]
+patterns: []
+missing: []
+---
+
+# 平台全量/Wan2.2 首尾帧变身工作流_1952549200066220033.json
+
+> 来源文件 `comfyui_library/workflows/平台全量/Wan2.2 首尾帧变身工作流_1952549200066220033.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（52 个）：
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `ImageResizeKJ`
+- `SetNode`
+- `WanVideoTextEncode`
+- `GetNode`
+- `LoadImage`
+- `Int`
+- `Int`
+- `easy showAnything`
+- `ImageResizeKJ`
+- `easy showAnything`
+- `easy anythingIndexSwitch`
+- `WanVideoBlockSwap`
+- `easy anythingIndexSwitch`
+- `Int`
+- `easy showAnything`
+- `easy showAnything`
+- `RH_Captioner`
+- `GetNode`
+- `CR Text Concatenate`
+- `easy showAnything`
+- `GetNode`
+- `WanVideoLoraSelect`
+- `SetNode`
+- `GetNode`
+- `WanVideoLoraSelect`
+- `WanVideoVACEEncode`
+- `SimpleMath+`
+- `SetNode`
+- `SimpleMath+`
+- `MaskPreview+`
+- `MaskPreview+`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVACEStartToEndFrame`
+- `Int`
+- `MaskFromBatch+`
+- `MaskBatch+`
+- `MaskPreview+`
+- `PreviewImage`
+- `GetImageSizeAndCount`
+- `CR Text`
+
+## 知识
+
+覆盖率 **69%**（36/52）
+
+**有卡**：`LoadImage`、`VHS_VideoCombine`、`WanVideoVACEModelSelect`、`WanVideoVAELoader`、`easy cleanGpuUsed`、`WanVideoDecode`、`WanVideoSampler`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`ImageResizeKJ`、`WanVideoTextEncode`、`Int`、`easy anythingIndexSwitch`、`WanVideoBlockSwap`、`RH_Captioner`、`CR Text Concatenate`、`WanVideoLoraSelect`、`WanVideoVACEEncode`、`SimpleMath+`、`MaskPreview+`、`WanVideoVACEStartToEndFrame`、`MaskFromBatch+`、`MaskBatch+`、`GetImageSizeAndCount`、`CR Text`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVACEEncode、WanVideoVAELoader、WanVideoLoraSelect

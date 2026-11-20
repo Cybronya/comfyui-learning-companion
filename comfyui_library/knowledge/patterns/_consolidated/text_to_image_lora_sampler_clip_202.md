@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_202
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.851333
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Get Image Size, ImageMergeTileList, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, PrimitiveInt, SaveImage, SeedVR2, SplitImageToTileList, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.886667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/907一阶段放大不缩尺寸｜透明背景高清输出_2097151874083414018.json, 图片生成/图生图/913-VO+SE不透明版图生图｜913当天调试成品，参数锁定即取即用_2099529599943270402.json, 图片生成/图生图/913-VO+SE透明板版本｜透明通道保留完整，图生图后期好接手_2099531547643830273.json, 图片生成/图生图/999-vo+se不透明版图生图｜参数调好的成品流，导入即用不折腾_2099507003130466305.json, 图片生成/图生图/VO+SE不透明版图生图 视频叠加不透明效果处理_2099206060946051073.json, 图片生成/图生图/VO+SE透明版图生图 视频叠加透明效果处理工具_2099207580798251009.json, 图片生成/图生图/一阶段放大不缩小透明处理｜907图生图高清增强_2097095626621280258.json, 图片生成/图生图/图生图｜1.5到4倍无损放大，海分专用画质增强_2099889777045753857.json, 图片生成/图生图/透明背景放大3倍处理｜ESR高清画质增强图生图_2096706574864703489.json]
+members: [图片生成/图生图/Krea2局部重绘PS版工作流｜提示词反推写实图生图_2097491218342178818.json, 图片生成/图生图/LEON 产品精修｜图生图商品图一键出高级感 商详必备_2097581380665438210.json, 图片生成/图生图/LEON 无损放大｜细节恢复加肌理强化 图生图画质起飞_2097573526676000770.json, 图片生成/图生图/Qwen Image 2.1图像编辑最新版 透明抠图换背景工具_2113383323958595585.json, 图片生成/图生图/Qwen image 2.1一键模特换装｜服装迁移试衣黑科技｜电商换装省成本_2112088875962290178.json, 图片生成/图生图/Qwen-Image-2.1一键抠图，产品换背景透明底直出_2111571619721338881.json, 图片生成/图生图/Qwen-image2.1图像高清修复，老图翻新细节重建_2112296348044316674.json, 图片生成/图生图/Qwen-image2.1服装迁移，图生图款式面料高还原_2112294809196126209.json, 图片生成/图生图/Qwen-image2.1角色多角度lora，图生图同一角色随心转面_2112301019328761857.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_202
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/907一阶段放大不缩尺寸｜透明背景高清输出_2097151874083414018.json、图片生成/图生图/913-VO+SE不透明版图生图｜913当天调试成品，参数锁定即取即用_2099529599943270402.json、图片生成/图生图/913-VO+SE透明板版本｜透明通道保留完整，图生图后期好接手_2099531547643830273.json、图片生成/图生图/999-vo+se不透明版图生图｜参数调好的成品流，导入即用不折腾_2099507003130466305.json、图片生成/图生图/VO+SE不透明版图生图 视频叠加不透明效果处理_2099206060946051073.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Krea2局部重绘PS版工作流｜提示词反推写实图生图_2097491218342178818.json、图片生成/图生图/LEON 产品精修｜图生图商品图一键出高级感 商详必备_2097581380665438210.json、图片生成/图生图/LEON 无损放大｜细节恢复加肌理强化 图生图画质起飞_2097573526676000770.json、图片生成/图生图/Qwen Image 2.1图像编辑最新版 透明抠图换背景工具_2113383323958595585.json、图片生成/图生图/Qwen image 2.1一键模特换装｜服装迁移试衣黑科技｜电商换装省成本_2112088875962290178.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -26,17 +26,12 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `Get Image Size`
-- `ImageMergeTileList`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `PrimitiveInt`
 - `SaveImage`
-- `SeedVR2`
-- `SplitImageToTileList`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -44,33 +39,30 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactMinMax` —— 7/9 个有
-- `Int` —— 7/9 个有
-- `LayerUtility: BooleanOperatorV2` —— 7/9 个有
-- `easy ifElse` —— 7/9 个有
-- `JoinImageWithAlpha` —— 6/9 个有
-- `VOSR2ModelLoader` —— 5/9 个有
-- `VOSR2Upscale` —— 5/9 个有
-- `孤海-图像添加水印` —— 4/9 个有
-- `ImageResize+` —— 3/9 个有
-- `ImageUpscaleWithModel` —— 3/9 个有
-- `LayerUtility: PurgeVRAM` —— 3/9 个有
-- `UpscaleModelLoader` —— 3/9 个有
-- `easy boolean` —— 3/9 个有
-- `Image Comparer (rgthree)` —— 1/9 个有
-- `PreviewImage` —— 1/9 个有
+- `TextEncodeQwenImage21` —— 6/9 个有
+- `Int` —— 5/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/9 个有
+- `RHHiddenNodes` —— 4/9 个有
+- `QwenImage21Cache` —— 2/9 个有
+- `CR Text` —— 1/9 个有
+- `ConditioningZeroOut` —— 1/9 个有
+- `GoogleTranslator` —— 1/9 个有
+- `KSamplerAdvanced` —— 1/9 个有
+- `TextInput_` —— 1/9 个有
+- `VAEEncode` —— 1/9 个有
+- `ttN int` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
 | 采样步数 | 4 | 4 - 4 | 9 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
 | 采样算法 | er_sde | - | 9 | 100% |
 | 调度器 | beta | - | 9 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
 
 ## 常见问题
 
@@ -80,11 +72,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，9 个样本，一致性 100%
 - 调度器 最常用 beta，9 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
 - 高发问题（9/9 个样本）：Steps较低可能导致细节不足

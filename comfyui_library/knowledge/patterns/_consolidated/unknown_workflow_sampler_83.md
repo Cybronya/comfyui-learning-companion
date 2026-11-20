@@ -3,33 +3,35 @@ name: unknown_workflow_sampler_83
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.857
-common_nodes: [HiDreamSampler, LayerUtility: PurgeVRAM, SaveImage]
+coverage: 0.8
+common_nodes: [CR Prompt Text, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RH_Translator, RunningHubUniWorldSampler, RunningUniworldModelLoader, SaveImage, easy imageConcat]
 problems: []
 missing: []
-members: [图片生成/文生图/HiDream-17B参数媲美Flux文生图模型_1910009924368199682.json, 图片生成/文生图/HiDream-ai文生图_1911016710781239298.json]
+members: [图片生成/图生图/30秒Uniworld图片转绘_1931862507332239362.json, 图片生成/图生图/Uniworld去除对象_1933005400730112001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_83
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/HiDream-17B参数媲美Flux文生图模型_1910009924368199682.json、图片生成/文生图/HiDream-ai文生图_1911016710781239298.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/30秒Uniworld图片转绘_1931862507332239362.json、图片生成/图生图/Uniworld去除对象_1933005400730112001.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `HiDreamSampler`
-- `LayerUtility: PurgeVRAM`
+- `CR Prompt Text`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PreviewImage`
+- `RH_Translator`
+- `RunningHubUniWorldSampler`
+- `RunningUniworldModelLoader`
 - `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `easy imageConcat`
 
 ## 典型参数
 

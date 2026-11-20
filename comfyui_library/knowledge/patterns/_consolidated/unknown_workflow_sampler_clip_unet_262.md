@@ -1,34 +1,41 @@
 ---
 name: unknown_workflow_sampler_clip_unet_262
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8618
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), KSamplerAdvanced, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.853833
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Z-Image全自动洗图_1999031680910417921.json, 图片生成/图生图/krea.2局部重绘PS版本_2105581533611511809.json, 图片生成/图生图/krea.2局部重绘PS版本_2108367394333872130.json, 图片生成/图生图/krea.2局部重绘（PS版本）_2070875464536776706.json, 图片生成/图生图/蓝佬klein调色工作流_2055123937016729601.json]
+members: [图片生成/图生图/多多安全区banner_2079455432715890690.json, 图片生成/图生图/局部重绘-Flux2-klein-模板_2050108664723320834.json, 图片生成/图生图/扩图-Flux2-klein-模板_2050109267771961345.json, 图片生成/图生图/电商一键扩图 flux2 klein_2013426255588237313.json, 图片生成/文生图/一键拍立得+全节点注释_2077751254561943553.json, 平台全量/FLUX2Klein 单图编辑（一次性跑多图）_2046050882789314561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_262
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Z-Image全自动洗图_1999031680910417921.json、图片生成/图生图/krea.2局部重绘PS版本_2105581533611511809.json、图片生成/图生图/krea.2局部重绘PS版本_2108367394333872130.json、图片生成/图生图/krea.2局部重绘（PS版本）_2070875464536776706.json、图片生成/图生图/蓝佬klein调色工作流_2055123937016729601.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/多多安全区banner_2079455432715890690.json、图片生成/图生图/局部重绘-Flux2-klein-模板_2050108664723320834.json、图片生成/图生图/扩图-Flux2-klein-模板_2050109267771961345.json、图片生成/图生图/电商一键扩图 flux2 klein_2013426255588237313.json、图片生成/文生图/一键拍立得+全节点注释_2077751254561943553.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
-- `KSamplerAdvanced`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
 - `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -36,28 +43,27 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `Int` —— 3/5 个有
-- `PreviewImage` —— 2/5 个有
-- `Anything Everywhere` —— 1/5 个有
-- `CR Simple Image Compare` —— 1/5 个有
-- `LatentBlend` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `MemoryCleaner` —— 1/5 个有
-- `Qwen3_VQA` —— 1/5 个有
-- `ReferenceLatent` —— 1/5 个有
-- `ShowAnything|Mie` —— 1/5 个有
+- `ImagePadForOutpaint` —— 5/6 个有
+- `ColorMatch` —— 4/6 个有
+- `DrawMaskOnImage` —— 4/6 个有
+- `PreviewImage` —— 3/6 个有
+- `easy seed` —— 3/6 个有
+- `CR Text` —— 2/6 个有
+- `Image Comparer (rgthree)` —— 1/6 个有
+- `ImpactMakeAnyList` —— 1/6 个有
+- `JjkText` —— 1/6 个有
+- `LayerUtility: TextJoin` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `Text Multiline` —— 1/6 个有
+- `TextCombinerTwo` —— 1/6 个有
+- `图像缩放V2_孤海` —— 1/6 个有
+- `忽略多组孤海` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 8 | 4 - 13 | 5 | 65% |
-| 采样算法 | 1 | 1 - 1.5 | 5 | 82% |
-| 调度器 | euler_ancestral | - | 5 | 60% |
-| 重绘幅度 | sgm_uniform | - | 5 | 60% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,9 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 13，5 个样本
-- 采样算法 中位数 1，观测区间 1 - 1.5，5 个样本，取值集中（一致性 82%）
-- 调度器 最常用 euler_ancestral，5 个样本，一致性 60%
-- 重绘幅度 最常用 sgm_uniform，5 个样本，一致性 60%
-- 风险：Prompt 约束强度(CFG) 观测到 13，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

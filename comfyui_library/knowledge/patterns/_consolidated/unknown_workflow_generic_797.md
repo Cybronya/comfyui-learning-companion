@@ -1,34 +1,42 @@
 ---
 name: unknown_workflow_generic_797
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.57075
-common_nodes: [JjkText, RH_RhartImageG2TextToImage, SaveImage]
+coverage: 0.6958
+common_nodes: [CR Prompt Text, LoadAudio, PreviewAudio, SaveAudio, ShowText|pysssss, SoulXPodcastGenerate, SoulXPodcastInputParser, SoulXPodcastLoader, Text Concatenate]
 problems: []
 missing: []
-members: [图片生成/文生图/全能图片G2.0-低价渠道版 _ 文生图_1890357387222765569.json, 图片生成/文生图/文生分镜镜头（九宫图）_2084972055329599490.json, 图片生成/文生图/文生图，G-2_2086633762254843905.json, 图片生成/文生图/最强文生图 全能图片G2.0_2047595153946316802.json]
+members: [音频生成/音频生成/声音克隆方言版soulx单人语音克隆方言版粤语河南话四川话三合一自选版本_1984443107251011586.json, 音频生成/音频生成/（四川话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984251844593598465.json, 音频生成/音频生成/（四川话）SoulX-Podcast_+单人语音克隆工作流(Json格式-方言_1985650433349824513.json, 音频生成/音频生成/（河南话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984301863581401090.json, 音频生成/音频生成/（粤语）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984302488318787585.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_797
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/全能图片G2.0-低价渠道版 _ 文生图_1890357387222765569.json、图片生成/文生图/文生分镜镜头（九宫图）_2084972055329599490.json、图片生成/文生图/文生图，G-2_2086633762254843905.json、图片生成/文生图/最强文生图 全能图片G2.0_2047595153946316802.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/声音克隆方言版soulx单人语音克隆方言版粤语河南话四川话三合一自选版本_1984443107251011586.json、音频生成/音频生成/（四川话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984251844593598465.json、音频生成/音频生成/（四川话）SoulX-Podcast_+单人语音克隆工作流(Json格式-方言_1985650433349824513.json、音频生成/音频生成/（河南话）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984301863581401090.json、音频生成/音频生成/（粤语）SoulX-Podcast_ 单人语音克隆工作流(Json格式-方言)_1984302488318787585.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `RH_RhartImageG2TextToImage`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudio`
+- `ShowText|pysssss`
+- `SoulXPodcastGenerate`
+- `SoulXPodcastInputParser`
+- `SoulXPodcastLoader`
+- `Text Concatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `AspectRatioSelect` —— 1/4 个有
+- `Text` —— 4/5 个有
+- `PreviewAny` —— 1/5 个有
+- `StringReplace` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,36 +3,36 @@ name: unknown_workflow_generic_1877
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.861
-common_nodes: [LoadAudio, PrimitiveStringMultiline, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSGenerateSimple]
+coverage: 0.8665
+common_nodes: [ImageScaleToTotalPixels, LoadImage, LongCatImageEdit, LongCatImageModelLoader, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/文字转语音，音色克隆_2021917857117900801.json, 音频生成/音频生成/音频克隆_2034507663702233090.json]
+members: [图片生成/文生图/👹LongCat 美团龙猫模型强势插入 文生图+单图编辑模型👹_1998975689325993986.json, 平台全量/图像编辑（Longcat-人物一致性）_2001566152709029889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1877
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/文字转语音，音色克隆_2021917857117900801.json、音频生成/音频生成/音频克隆_2034507663702233090.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/👹LongCat 美团龙猫模型强势插入 文生图+单图编辑模型👹_1998975689325993986.json、平台全量/图像编辑（Longcat-人物一致性）_2001566152709029889.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSGenerateSimple`
+- `ImageScaleToTotalPixels`
+- `LoadImage`
+- `LongCatImageEdit`
+- `LongCatImageModelLoader`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 1/2 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/2 个有
-- `easy indexTTSEmotionVector` —— 1/2 个有
+- `LongCatImageTextToImage` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
 
 ## 典型参数
 

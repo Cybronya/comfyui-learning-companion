@@ -1,35 +1,42 @@
 ---
 name: unknown_workflow_generic_331
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.946375
-common_nodes: [LoadImage, RH_RhartVideoV31FastStartEndToVideo, SaveVideo]
+coverage: 0.965556
+common_nodes: [CR Prompt Text, LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/RhartVideoV31FastStartEndToVideo_2038487102777724929.json, 视频生成/图生视频/全能视频3.1 fast_2033498737447804930.json, 视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046112095577579522.json, 视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046251858011889665.json, 视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046878059822850050.json, 视频生成/图生视频/全能视频V3.1-首尾帧视频-低价版_2049857854470934530.json, 视频生成/图生视频/超好用🔥全能视频V3.1-首尾帧生视频-价低效果超棒_2047202620065980418.json, 视频生成/文生视频/角色发现镜头，对镜头做互动动作，添加人群噪音、体育场灯光和动态摄像机角度。+全节点注释_2054074849928196098.json]
+members: [音频生成/音频生成/(贞贞lora)VoxCPM2语音极限克隆V1_2049670919605456897.json, 音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2070445511508840450.json, 音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2079213870937362434.json, 音频生成/音频生成/VoxCPM2声音克隆 语音设计，支持方言_2067088845816029186.json, 音频生成/音频生成/VoxCPM2声音克隆（完美复刻音色）_2065355902638714882.json, 音频生成/音频生成/VoxCPM2语音克隆+声音设计_2056660403781984257.json, 音频生成/音频生成/VoxCPM2语音克隆_2090280073604718593.json, 音频生成/音频生成/VoxCPM2语音极限克隆V1  企财盈6.17_2067072588702113793.json, 音频生成/音频生成/vox cpm2语音克隆_2056202036819046401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_331
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/RhartVideoV31FastStartEndToVideo_2038487102777724929.json、视频生成/图生视频/全能视频3.1 fast_2033498737447804930.json、视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046112095577579522.json、视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046251858011889665.json、视频生成/图生视频/全能视频V3.1-fast-首尾帧生视频-低价渠道版_2046878059822850050.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（音频生成/音频生成/(贞贞lora)VoxCPM2语音极限克隆V1_2049670919605456897.json、音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2070445511508840450.json、音频生成/音频生成/VOXCPM2声音克隆语音克隆声音_2079213870937362434.json、音频生成/音频生成/VoxCPM2声音克隆 语音设计，支持方言_2067088845816029186.json、音频生成/音频生成/VoxCPM2声音克隆（完美复刻音色）_2065355902638714882.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartVideoV31FastStartEndToVideo`
-- `SaveVideo`
+全部 9 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoV31ProStartEndToVideo` —— 1/8 个有
-- `easy seed` —— 1/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
+- `AudioCrop` —— 1/9 个有
+- `AudioSeparation` —— 1/9 个有
+- `RunningHub_VoxCPM_MultiSpeaker_ListReference` —— 1/9 个有
+- `ShowAnything|Mie` —— 1/9 个有
 
 ## 典型参数
 

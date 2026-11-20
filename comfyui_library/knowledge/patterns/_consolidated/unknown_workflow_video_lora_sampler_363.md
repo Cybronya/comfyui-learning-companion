@@ -1,80 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_363
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.552286
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.558375
+common_nodes: [CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, ResolutionSelector, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan-Animate-KJ工作流（自动遮罩）_1970452175312875521.json, 视频生成/图生视频/WanAnimateV2-人物编辑_1975882698759737345.json, 视频生成/图生视频/WanAnimate_V2_视频人物自动替换(单人)_2006252507227496450.json, 视频生成/图生视频/WanAnimate_V2_视频动作迁移(单人)_2006246424253571074.json, 视频生成/图生视频/自动抠图--最新Animate图片主体替换视频主体_1970425229413654530.json, 视频生成/文生视频/Wan2.2 Animate KJ版 人物动作迁移视频生成视频_1970355314094710785.json, 视频生成/文生视频/Wan2.2 Animate-KJ 美女跳舞 动作一键迁移复制姿势_1971474322126782465.json]
+members: [平台全量/【API】MiniMaxH3 selflift采样工作流_2119627037374771202.json, 平台全量/【Minimax H3】pika极速出片版（8g可跑）_2117983774901366785.json, 平台全量/【Minimax H3】【API画布级工作流】【带音频】_2119709345268195330.json, 数字人/数字人/MiniMax H3_爱宠发布会_2112925200072396801.json, 数字人/数字人/写英文工作流_2113520537002663937.json, 视频生成/图生视频/minimaxh3的selflift+二采+音频参考_2105937177262772225.json, 视频生成/文生视频/1-Aiden-MiniMax-H3-疯狂测试工作流！！！！_2093054855547015170.json, 视频生成/文生视频/minimaxh3的selflift+二采_2101192695308963842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_363
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Wan-Animate-KJ工作流（自动遮罩）_1970452175312875521.json、视频生成/图生视频/WanAnimateV2-人物编辑_1975882698759737345.json、视频生成/图生视频/WanAnimate_V2_视频人物自动替换(单人)_2006252507227496450.json、视频生成/图生视频/WanAnimate_V2_视频动作迁移(单人)_2006246424253571074.json、视频生成/图生视频/自动抠图--最新Animate图片主体替换视频主体_1970425229413654530.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/【API】MiniMaxH3 selflift采样工作流_2119627037374771202.json、平台全量/【Minimax H3】pika极速出片版（8g可跑）_2117983774901366785.json、平台全量/【Minimax H3】【API画布级工作流】【带音频】_2119709345268195330.json、数字人/数字人/MiniMax H3_爱宠发布会_2112925200072396801.json、数字人/数字人/写英文工作流_2113520537002663937.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `GetImageSizeAndCount`
+全部 8 个 workflow 都包含：
+- `CLIPLoader`
+- `ComfyMathExpression`
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `Sam2Segmentation`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `ResolutionSelector`
 - `SetNode`
-- `VHS_LoadVideo`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 6/7 个有
-- `GIMMVFI_interpolate` —— 6/7 个有
-- `ImageConcatMulti` —— 6/7 个有
-- `GrowMask` —— 5/7 个有
-- `ImageBlend` —— 5/7 个有
-- `PreviewImage` —— 5/7 个有
-- `WanVideoTorchCompileSettings` —— 5/7 个有
-- `DrawViTPose` —— 4/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 3/7 个有
-- `GrowMaskWithBlur` —— 2/7 个有
-- `SimpleMath+` —— 2/7 个有
-- `Text Multiline` —— 2/7 个有
-- `FloatConstant` —— 1/7 个有
-- `GetImageRangeFromBatch` —— 1/7 个有
-- `Primitive integer [Crystools]` —— 1/7 个有
-- `PrimitiveStringMultiline` —— 1/7 个有
-- `WanVideoContextOptions` —— 1/7 个有
-- `WanVideoEncode` —— 1/7 个有
-- `WanVideoExperimentalArgs` —— 1/7 个有
-- `WanVideoSLG` —— 1/7 个有
-- `WanVideoScheduler` —— 1/7 个有
-- `WanVideoUni3C_ControlnetLoader` —— 1/7 个有
-- `WanVideoUni3C_embeds` —— 1/7 个有
-- `easy showAnything` —— 1/7 个有
+- `BasicGuider` —— 7/8 个有
+- `BasicScheduler` —— 7/8 个有
+- `ModelPreviewOverrideKJ` —— 7/8 个有
+- `PrimitiveStringMultiline` —— 7/8 个有
+- `RandomNoise` —— 7/8 个有
+- `SamplerCustomAdvanced` —— 7/8 个有
+- `LoadAudio` —— 6/8 个有
+- `忽略多组孤海` —— 6/8 个有
+- `BlockSparseAttention` —— 5/8 个有
+- `MiniMaxChunkFeedForward` —— 5/8 个有
+- `MiniMaxLowVRAMAttention` —— 5/8 个有
+- `ManualSigmas` —— 4/8 个有
+- `ConditioningZeroOut` —— 3/8 个有
+- `CreateVideo` —— 3/8 个有
+- `H3SigmaRefiner` —— 3/8 个有
+- `LTXVConcatAVLatent` —— 3/8 个有
+- `LTXVSeparateAVLatent` —— 3/8 个有
+- `MinimaxH3LatentUpscaler3D` —— 3/8 个有
+- `SelfLiftAvatarH3Sampler` —— 3/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/8 个有
+- `MiniMaxH3SigmaShift` —— 2/8 个有
+- `PlaySound|pysssss` —— 2/8 个有
+- `RunningHub Deepcleaner` —— 2/8 个有
+- `Seed (rgthree)` —— 2/8 个有
+- `VHS_LoadVideo` —— 2/8 个有
+- `AudioCrop` —— 1/8 个有
+- `CR Text Concatenate` —— 1/8 个有
+- `GetVideoComponents` —— 1/8 个有
+- `InversionDemoLazyIndexSwitch` —— 1/8 个有
+- `QZ_ResolutionPreset` —— 1/8 个有
+- `RH_Astra` —— 1/8 个有
+- `SplitSigmas` —— 1/8 个有
+- `easy int` —— 1/8 个有
+- `easy positive` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,35 +1,34 @@
 ---
 name: unknown_workflow_sampler_clip_unet_143
 type: Unknown Workflow
-frequency: 8
+frequency: 10
 level: moderate
-coverage: 0.931625
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.8676
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json, 图片生成/反推提示词/37e-commerceiamge_2049772682647969794.json, 图片生成/反推提示词/82huantou_2053067673583529985.json, 图片生成/图生图/003.FLUX.2智能综合004.手动提示词单图编辑_2035170282356350977.json, 图片生成/图生图/FLUX.2-klein_官方基础工作流（图像编辑）_2048613383078944770.json, 图片生成/图生图/FLUX克莱因指令编辑_2019953559508361217.json, 图片生成/图生图/Flux2 klein kv高速图片编辑_2040977793638469634.json, 图片生成/图生图/电商万物迁移 Flux klein_2021109944589754370.json]
+members: [图片生成/文生图/😶_🌫️FLUX新王炸 Klein 文生图急速10秒出图😶_🌫️_2012094524113297409.json, 图片生成/文生图/😼FLUX2-KLEIN 文生图、单图、多图编辑合集@言灵ru_2014708517436919810.json, 平台全量/FLUX.2-Klein 9B 图片高清修复 写实无损放大 真实造像大师 纤毫毕现 极清人像放大_2015591516651134977.json, 平台全量/FLUX.2-Klein_老照片修复与画质超分多模式智能V2  _ 图像去噪 _ 细节重构 _ 旧照_2063114156718510082.json, 平台全量/Flux2 Klein增加皮肤细节+高清放大+增强细节  图像修复高清放大 高清修复+去AI感_2016708999902662657.json, 平台全量/Flux2-Klein-9B 单图编辑_2021972439718170625.json, 平台全量/Flux2-Klein9b优化皮肤质感 添加真实感细节  高清放大 增加细节 去除AI塑料感 优化皮_2031199411719643137.json, 平台全量/Flux2-klein单图+双图编辑工作流_2046154927646449666.json, 平台全量/Klein 9b 黑兽BFS 最强换头工作流_2044806861702041602.json, 平台全量/Klein 9b 黑兽BFS 最强换头工作流（双图对比同出）_2045053032420876290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_143
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json、图片生成/反推提示词/37e-commerceiamge_2049772682647969794.json、图片生成/反推提示词/82huantou_2053067673583529985.json、图片生成/图生图/003.FLUX.2智能综合004.手动提示词单图编辑_2035170282356350977.json、图片生成/图生图/FLUX.2-klein_官方基础工作流（图像编辑）_2048613383078944770.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/文生图/😶_🌫️FLUX新王炸 Klein 文生图急速10秒出图😶_🌫️_2012094524113297409.json、图片生成/文生图/😼FLUX2-KLEIN 文生图、单图、多图编辑合集@言灵ru_2014708517436919810.json、平台全量/FLUX.2-Klein 9B 图片高清修复 写实无损放大 真实造像大师 纤毫毕现 极清人像放大_2015591516651134977.json、平台全量/FLUX.2-Klein_老照片修复与画质超分多模式智能V2  _ 图像去噪 _ 细节重构 _ 旧照_2063114156718510082.json、平台全量/Flux2 Klein增加皮肤细节+高清放大+增强细节  图像修复高清放大 高清修复+去AI感_2016708999902662657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 10 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
 - `KSamplerSelect`
-- `LoadImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
 - `SaveImage`
@@ -38,28 +37,26 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 7/8 个有
-- `GetImageSize` —— 7/8 个有
-- `ImageScaleToTotalPixels` —— 7/8 个有
-- `ReferenceLatent` —— 7/8 个有
-- `VAEEncode` —— 7/8 个有
-- `Image Comparer (rgthree)` —— 4/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
-- `FluxKVCache` —— 2/8 个有
-- `ImpactInt` —— 2/8 个有
-- `JjkText` —— 2/8 个有
-- `RTXVideoSuperResolution` —— 2/8 个有
-- `easy int` —— 2/8 个有
-- `27eacb9f-0da2-421d-a0bf-b4b4e5fe5709` —— 1/8 个有
-- `93041a64-452a-477a-9447-40330b7c1136` —— 1/8 个有
-- `CR Prompt Text` —— 1/8 个有
-- `CR Text` —— 1/8 个有
-- `Colored Image (mtb)` —— 1/8 个有
-- `ImageResize+` —— 1/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `LayerUtility: CropByMask V3` —— 1/8 个有
-- `LayerUtility: PurgeVRAM` —— 1/8 个有
-- `LayerUtility: RestoreCropBox` —— 1/8 个有
+- `LoadImage` —— 9/10 个有
+- `ReferenceLatent` —— 9/10 个有
+- `VAEEncode` —— 9/10 个有
+- `Image Comparer (rgthree)` —— 8/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/10 个有
+- `ConditioningZeroOut` —— 5/10 个有
+- `GetImageSize` —— 5/10 个有
+- `LoraLoaderModelOnly` —— 5/10 个有
+- `PrimitiveStringMultiline` —— 5/10 个有
+- `ImageScaleToTotalPixels` —— 4/10 个有
+- `Seed (rgthree)` —— 4/10 个有
+- `ImpactSwitch` —— 3/10 个有
+- `PlaySound|pysssss` —— 3/10 个有
+- `easy int` —— 2/10 个有
+- `Fast Bypasser (rgthree)` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `Note Plus (mtb)` —— 1/10 个有
+- `PreviewImageLam` —— 1/10 个有
+- `easy getNode` —— 1/10 个有
+- `easy setNode` —— 1/10 个有
 
 ## 典型参数
 

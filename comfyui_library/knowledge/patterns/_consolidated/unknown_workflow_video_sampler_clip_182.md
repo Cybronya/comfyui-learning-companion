@@ -1,73 +1,62 @@
 ---
 name: unknown_workflow_video_sampler_clip_182
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.973333
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageConcanate, ImageResizeKJ, KSampler, LoadImage, ModelSamplingSD3, Primitive integer [Crystools], UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
-problems: [发现KSampler但没有VAEDecode]
+frequency: 4
+level: moderate
+coverage: 0.88325
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyHunyuanLatentVideo, FluxGuidance, KSamplerSelect, ModelSamplingSD3, RandomNoise, UNETLoader, VAEDecodeTiled, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/720P高清FLF2V首尾帧ComfyUI原生支持_1913957506459103234.json, 视频生成/图生视频/WAN2.1-Fun-InP首尾帧视频生成ComfyUI原生版_1914626855226306562.json, 视频生成/图生视频/满血版Fun-InP万相首尾帧-ComfyUI原生_1914208993831780354.json]
+members: [视频生成/文生视频/hunyuan_video混元视频 8G显存可用_1879187801508929537.json, 视频生成/文生视频/混元FastVideo文生视频加速版_1901602052710244354.json, 视频生成/文生视频/混元VIP视频工作流_1870307237162815489.json, 视频生成/文生视频/混元视频移动增强器_1905450015412916226.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_182
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/720P高清FLF2V首尾帧ComfyUI原生支持_1913957506459103234.json、视频生成/图生视频/WAN2.1-Fun-InP首尾帧视频生成ComfyUI原生版_1914626855226306562.json、视频生成/图生视频/满血版Fun-InP万相首尾帧-ComfyUI原生_1914208993831780354.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/hunyuan_video混元视频 8G显存可用_1879187801508929537.json、视频生成/文生视频/混元FastVideo文生视频加速版_1901602052710244354.json、视频生成/文生视频/混元VIP视频工作流_1870307237162815489.json、视频生成/文生视频/混元视频移动增强器_1905450015412916226.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ImageConcanate`
-- `ImageResizeKJ`
-- `KSampler`
-- `LoadImage`
+- `DualCLIPLoader`
+- `EmptyHunyuanLatentVideo`
+- `FluxGuidance`
+- `KSamplerSelect`
 - `ModelSamplingSD3`
-- `Primitive integer [Crystools]`
+- `RandomNoise`
 - `UNETLoader`
 - `VAEDecodeTiled`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGZeroStar` —— 2/3 个有
-- `SkipLayerGuidanceDiT` —— 2/3 个有
-- `UNetTemporalAttentionMultiply` —— 2/3 个有
-- `WanFunInpaintToVideo` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `Note Plus (mtb)` —— 1/3 个有
-- `WanFirstLastFrameToVideo` —— 1/3 个有
+- `SamplerCustomAdvanced` —— 3/4 个有
+- `ApplyFirstBlockCachePatchAdvanced` —— 1/4 个有
+- `CR Upscale Image` —— 1/4 个有
+- `HunyuanVideoLoraLoader` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `StringConstantMultiline` —— 1/4 个有
+- `TeaCacheHunyuanVideoSampler` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 6 | 3 - 6 | 3 | 72% |
-| 采样算法 | uni_pc | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | double_blocks | - | 1 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| 发现KSampler但没有VAEDecode | 3/3 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 6，观测区间 3 - 6，3 个样本
-- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：发现KSampler但没有VAEDecode
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

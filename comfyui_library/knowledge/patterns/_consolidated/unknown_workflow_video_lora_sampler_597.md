@@ -1,65 +1,62 @@
 ---
 name: unknown_workflow_video_lora_sampler_597
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.91275
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.8808
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, PrimitiveStringMultiline, RoundNode, SaveAudio, SoundFlow_GetLength, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/哆哆无限画布-Minimax+H3+Selflift数字人_2113284997036724225.json, 视频生成/图生视频/哆哆无限画布_Minimax_H3_Selflift数字人_唱歌_带音频参考_2113462291067924481.json, 视频生成/文生视频/10Eros Beta5 SelfLift音频数字人精修流_2101538490512142337.json, 视频生成/文生视频/AI音乐MV数字人（ngualarith+Minimax H3 Selflift）新二采_2100506281638457345.json]
+members: [数字人/数字人/口播数字人 InfiniteTalk + IndexTTS2，远程加载版_2030935834236559362.json, 数字人/数字人/最强口播数字人 InfiniteTalk + IndexTTS-2_2074771103767158786.json, 视频生成/图生视频/Alan实测 InfiniteTalk + IndexTTS-2_1984183697027039233.json, 视频生成/图生视频/口播数字人天花板  InfiniteTalk 加IndexTTS2_1968328502552473602.json, 视频生成/图生视频/数字人口播_2057106913065787393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_597
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/哆哆无限画布-Minimax+H3+Selflift数字人_2113284997036724225.json、视频生成/图生视频/哆哆无限画布_Minimax_H3_Selflift数字人_唱歌_带音频参考_2113462291067924481.json、视频生成/文生视频/10Eros Beta5 SelfLift音频数字人精修流_2101538490512142337.json、视频生成/文生视频/AI音乐MV数字人（ngualarith+Minimax H3 Selflift）新二采_2100506281638457345.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/口播数字人 InfiniteTalk + IndexTTS2，远程加载版_2030935834236559362.json、数字人/数字人/最强口播数字人 InfiniteTalk + IndexTTS-2_2074771103767158786.json、视频生成/图生视频/Alan实测 InfiniteTalk + IndexTTS-2_1984183697027039233.json、视频生成/图生视频/口播数字人天花板  InfiniteTalk 加IndexTTS2_1968328502552473602.json、视频生成/图生视频/数字人口播_2057106913065787393.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `SolidMask`
-- `TrimAudioDuration`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+全部 5 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `RoundNode`
+- `SaveAudio`
+- `SoundFlow_GetLength`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPreviewOverrideKJ` —— 3/4 个有
-- `PreviewAny` —— 3/4 个有
-- `Audio Duration (mtb)` —— 2/4 个有
-- `BlockSparseAttention` —— 2/4 个有
-- `ComfyNumberConvert` —— 2/4 个有
-- `MathExpression|pysssss` —— 2/4 个有
-- `SoundFlow_GetLength` —— 2/4 个有
-- `easy loraStack` —— 2/4 个有
-- `easy loraStackApply` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
-- `Text Multiline` —— 1/4 个有
+- `IndexTTS2Run` —— 4/5 个有
+- `LoadAudio` —— 4/5 个有
+- `LoadImage` —— 4/5 个有
+- `PrimitiveString` —— 4/5 个有
+- `FFmpeg_LoadAudioFromURL_JX` —— 1/5 个有
+- `FFmpeg_LoadImageFromURL_JX` —— 1/5 个有
+- `IndexTTSNode` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
 
 ## 典型参数
 

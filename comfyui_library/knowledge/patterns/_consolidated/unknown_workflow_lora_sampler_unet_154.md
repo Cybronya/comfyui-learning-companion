@@ -3,61 +3,78 @@ name: unknown_workflow_lora_sampler_unet_154
 type: Unknown Workflow
 frequency: 5
 level: strong
-coverage: 0.9396
-common_nodes: [AddLabel, CLIPLoader, CR Prompt Text, Fast Groups Bypasser (rgthree), INTConstant, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, QwenImageIntegratedKSampler, SaveImage, UNETLoader, VAELoader]
-problems: []
+coverage: 0.77
+common_nodes: [CFGNorm, CLIPLoader, EmptySD3LatentImage, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/小红书FireRed-Image-edit1.1单图编辑 VS qwen_2030611704802971649.json, 图片生成/图生图/小红书FireRed-Image-edit1.1双图编辑 VS qwen_2030612012606169089.json, 图片生成/图生图/小红书FireRed-Image-edit1.1多图编辑 vs qwen_2030612111793065986.json, 图片生成/图生图/小红书FireRed-Image-edit1.1多图编辑 vs qwen_2044369995022475265.json, 图片生成/图生图/超好用🔥小红书多图编辑-使用简单丝滑_2046877239186300930.json]
+members: [图片生成/图生图/011.首饰穿戴_2005413026578792450.json, 图片生成/图生图/02-01-01-QwenEdit-基础修图-单图_1987548763893993473.json, 图片生成/图生图/Qwen Edit 2511满血版 - 图像编辑 - 双图版_2055202374033133569.json, 图片生成/图生图/Qwen Edit Plus 姿势复刻_1970451985361235970.json, 平台全量/Qwen Edit Plus 模特首饰穿戴_1970453919992324097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_154
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/小红书FireRed-Image-edit1.1单图编辑 VS qwen_2030611704802971649.json、图片生成/图生图/小红书FireRed-Image-edit1.1双图编辑 VS qwen_2030612012606169089.json、图片生成/图生图/小红书FireRed-Image-edit1.1多图编辑 vs qwen_2030612111793065986.json、图片生成/图生图/小红书FireRed-Image-edit1.1多图编辑 vs qwen_2044369995022475265.json、图片生成/图生图/超好用🔥小红书多图编辑-使用简单丝滑_2046877239186300930.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/011.首饰穿戴_2005413026578792450.json、图片生成/图生图/02-01-01-QwenEdit-基础修图-单图_1987548763893993473.json、图片生成/图生图/Qwen Edit 2511满血版 - 图像编辑 - 双图版_2055202374033133569.json、图片生成/图生图/Qwen Edit Plus 姿势复刻_1970451985361235970.json、平台全量/Qwen Edit Plus 模特首饰穿戴_1970453919992324097.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AddLabel`
+- `CFGNorm`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `INTConstant`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `EmptySD3LatentImage`
+- `ImageScaleToTotalPixels`
+- `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `QwenImageIntegratedKSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
+- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `PreviewImage` —— 4/5 个有
+- `Get resolution [Crystools]` —— 3/5 个有
+- `Image Comparer (rgthree)` —— 3/5 个有
+- `ImageConcanate` —— 3/5 个有
+- `Text` —— 3/5 个有
+- `GetImageSize+` —— 2/5 个有
+- `GetNode` —— 2/5 个有
+- `SetNode` —— 2/5 个有
+- `> Text Replace` —— 1/5 个有
+- `DWPreprocessor` —— 1/5 个有
+- `ImageStitch` —— 1/5 个有
+- `RH_Translator` —— 1/5 个有
+- `TextBox` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 图生图 image-to-image | - | 5 | 100% |
+| 采样步数 | 8 | 8 - 16 | 5 | 67% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | 1472 | 1472 - 1472 | 5 | 100% |
-| 调度器 | 1104 | 1104 - 1104 | 5 | 100% |
-| 重绘幅度 | 7.92762e+14 | 6.1076e+14 - 9.94435e+14 | 5 | 82% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 4/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 图生图 image-to-image，5 个样本，一致性 100%
+- 采样步数 中位数 8，观测区间 8 - 16，5 个样本
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1472，观测区间 1472 - 1472，5 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1104，观测区间 1104 - 1104，5 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 7.92762e+14，观测区间 6.1076e+14 - 9.94435e+14，5 个样本，取值集中（一致性 82%）
-- 风险：重绘幅度 观测到 9.94435e+14，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（4/5 个样本）：Steps较低可能导致细节不足

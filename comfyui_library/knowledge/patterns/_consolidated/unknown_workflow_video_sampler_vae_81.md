@@ -1,81 +1,86 @@
 ---
 name: unknown_workflow_video_sampler_vae_81
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.667833
-common_nodes: [CLIPVisionLoader, EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatch, ImageBatchMulti, ImageBatchRepeatInterleaving, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.554857
+common_nodes: [Any Switch (rgthree), DWPreprocessor, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, Fast Groups Muter (rgthree), GetImageSizeAndCount, GetNode, ImageResize+, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy int, easy positive]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan SkyReels-A2多物体参考工作流_1910194560243564546.json, 视频生成/图生视频/Wan SkyReels-A2多物体视频_1910218456598544385.json, 视频生成/图生视频/Wan2.1 SkyReels 双图参考 人+物体_1948673217209741314.json, 视频生成/图生视频/Wan2.1 skyreels 多图参考_1948677526125182978.json, 视频生成/图生视频/双分支图像融合一致性Wan Skyreels视频工作流V1_1909312671357743106.json, 视频生成/图生视频/最新王炸Wan2.1+SkyReels  自定义角色+物体+背景  超高还原_1911449763139547137.json]
+members: [平台全量/VACE 视频转绘 骨骼迁移_1915609929472737281.json, 平台全量/VACE 视频转绘_1921157630155489282.json, 平台全量/VACE_14B_视频首帧重绘_1930149558649786370.json, 平台全量/Wan2.1 VACE Control视频转绘_1949721598378549250.json, 平台全量/Wan2.1 VACE视频转绘&跳舞&姿势深度控制&放大补帧_1953090976094089217.json, 视频生成/图生视频/VACE 视频转绘 真人转漫画 漫画转真人即可_1913722947981508609.json, 视频生成/文生视频/【万能视频转绘】Wan2.1 VACE视频转绘 真人漫画可互相转换_1917086685719363586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_81
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan SkyReels-A2多物体参考工作流_1910194560243564546.json、视频生成/图生视频/Wan SkyReels-A2多物体视频_1910218456598544385.json、视频生成/图生视频/Wan2.1 SkyReels 双图参考 人+物体_1948673217209741314.json、视频生成/图生视频/Wan2.1 skyreels 多图参考_1948677526125182978.json、视频生成/图生视频/双分支图像融合一致性Wan Skyreels视频工作流V1_1909312671357743106.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/VACE 视频转绘 骨骼迁移_1915609929472737281.json、平台全量/VACE 视频转绘_1921157630155489282.json、平台全量/VACE_14B_视频首帧重绘_1930149558649786370.json、平台全量/Wan2.1 VACE Control视频转绘_1949721598378549250.json、平台全量/Wan2.1 VACE视频转绘&跳舞&姿势深度控制&放大补帧_1953090976094089217.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `EmptyImage`
-- `GetImageRangeFromBatch`
+全部 7 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `DWPreprocessor`
+- `DepthAnything_V2`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `Fast Groups Muter (rgthree)`
 - `GetImageSizeAndCount`
 - `GetNode`
-- `ImageBatch`
-- `ImageBatchMulti`
-- `ImageBatchRepeatInterleaving`
-- `ImageConcatMulti`
-- `ImageResizeKJ`
+- `ImageResize+`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `PreviewImage`
 - `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
-- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
+- `easy int`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 5/6 个有
-- `INTConstant` —— 5/6 个有
-- `ImageRemoveBackground+` —— 5/6 个有
-- `SimpleMath+` —— 5/6 个有
-- `TransparentBGSession+` —— 5/6 个有
-- `ImageCompositeMasked` —— 4/6 个有
-- `Note Plus (mtb)` —— 3/6 个有
-- `WanVideoTorchCompileSettings` —— 3/6 个有
-- `ImagePadKJ` —— 2/6 个有
-- `LayerUtility: ImageBlendAdvance V3` —— 2/6 个有
-- `LayerUtility: ImageRemoveAlpha` —— 2/6 个有
-- `LoadImageFromUrl` —— 2/6 个有
-- `WanVideoVRAMManagement` —— 2/6 个有
-- `CLIPLoader` —— 1/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `DF_Integer` —— 1/6 个有
-- `Evaluate Integers` —— 1/6 个有
-- `JWImageResizeByLongerSide` —— 1/6 个有
-- `LayerMask: RmBgUltra V2` —— 1/6 个有
-- `MathExpression|pysssss` —— 1/6 个有
-- `WanVideoEnhanceAVideo` —— 1/6 个有
-- `WanVideoTextEmbedBridge` —— 1/6 个有
-- `easy getNode` —— 1/6 个有
-- `easy imageScaleDownToSize` —— 1/6 个有
-- `easy setNode` —— 1/6 个有
+- `ImageConcatMulti` —— 6/7 个有
+- `ImageFromBatch` —— 6/7 个有
+- `WanVideoTeaCache` —— 6/7 个有
+- `AddLabel` —— 5/7 个有
+- `EmptyImage` —— 5/7 个有
+- `Florence2ModelLoader` —— 5/7 个有
+- `Florence2Run` —— 5/7 个有
+- `JoinStrings` —— 5/7 个有
+- `String Literal` —— 5/7 个有
+- `WanVideoVRAMManagement` —— 5/7 个有
+- `WanVideoVACEModelSelect` —— 4/7 个有
+- `easy seed` —— 4/7 个有
+- `Bookmark (rgthree)` —— 2/7 个有
+- `Label (rgthree)` —— 2/7 个有
+- `Note Plus (mtb)` —— 2/7 个有
+- `WanVideoLoraSelect` —— 2/7 个有
+- `AIO_Preprocessor` —— 1/7 个有
+- `DensePosePreprocessor` —— 1/7 个有
+- `FILM VFI` —— 1/7 个有
+- `GetImageSize` —— 1/7 个有
+- `ImageBlend` —— 1/7 个有
+- `ImageComposite+` —— 1/7 个有
+- `ImageResizeKJ` —— 1/7 个有
+- `ImageUpscaleWithModel` —— 1/7 个有
+- `InspyrenetRembg` —— 1/7 个有
+- `LoadImageFromUrl` —— 1/7 个有
+- `UpscaleModelLoader` —— 1/7 个有
 
 ## 典型参数
 

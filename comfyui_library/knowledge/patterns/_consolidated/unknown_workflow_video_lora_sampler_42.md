@@ -1,93 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_42
 type: Unknown Workflow
-frequency: 24
+frequency: 27
 level: moderate
-coverage: 0.894917
-common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SimpleMath+, VHS_LoadVideo, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.52163
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Scail动作复刻工作流_2008843749622816769.json, 视频生成/图生视频/Scail动物跳舞工作流_1953472755108904961.json, 视频生成/图生视频/Scail多人跳舞，24G版_1954212955724378113.json, 视频生成/图生视频/Scail武术动作，单人动作模仿，可转身，可武术_1995058553109065730.json, 视频生成/图生视频/WAN SCAIL 2 动作参考 高帧率（单人、多人、非人）_2069249951540015105.json, 视频生成/图生视频/WANSCAIL动作参考 高帧率（单人、多人、非人）_2003741598695497730.json, 视频生成/图生视频/[ 完美版 ]SCAIL多人姿态精准迁移_2001286511733637121.json, 视频生成/图生视频/bduck跳舞-升级版_2016000836404514818.json, 视频生成/图生视频/一键“疯狂的鸽子舞”图片跳舞！B站艾橘溪！_2012769463266975745.json, 视频生成/图生视频/一键生成_海豹舞_图片跳舞！_2019406882007425026.json, 视频生成/图生视频/一键生成_海豹舞_图片跳舞！人物模仿海豹跳舞！艾橘溪_2011467663087771649.json, 视频生成/图生视频/二创视频-多人角色迁移、动作迁移_2004185141352296449.json, 视频生成/图生视频/人物模仿海豹跳舞一键生成_图生视频_2022325838447910913.json, 视频生成/图生视频/单人、多人跳舞动作迁移（支持人类和非人类参考，支持运镜参考）_2013066531797737474.json, 视频生成/图生视频/多萌宠跳舞SCAIL+SDPose+Uni3C动作、运镜最强迁移_2027611708860145666.json, 视频生成/图生视频/多萌宠跳舞SCAIL+SDPose+Uni3C动作、运镜最强迁移_2033355110813802497.json, 视频生成/图生视频/老Y运镜最强动作迁移，单人、多人、非人_2044291284843630593.json, 视频生成/图生视频/跳舞SCAIL+SDPose+Uni3C动作、运镜最强迁移_2036792778885173250.json, 视频生成/图生视频/跳舞SCAIL+SDPose+Uni3C动作、运镜最强迁移_2062564633763995649.json, 视频生成/图生视频/跳舞SCAIL+SDPose+Uni3C动作、运镜最强迁移_2065067395315757058.json, 视频生成/图生视频/跳舞SCAIL+SDPose+Uni3C动作、运镜最强迁移_2065103727006142465.json, 视频生成/图生视频/跳舞SCAIL+SDPose+Uni3C动作、运镜最强迁移_2067593207650807809.json, 视频生成/图生视频/跳舞SCAIL+SDPose+Uni3C动作、运镜最强迁移_2067595594784395266.json, 视频生成/图生视频/运镜迁移 多萌宠跳舞_2044671295245262850.json]
+members: [图片生成/图生图/动作迁移自用_2035382692145012738.json, 图片生成/图生图/动作迁移，这个动作高仿，需要高显存跑_2114726342204944386.json, 图片生成/图生图/高精动作模仿，只模仿动作，1_1复刻动作_2115654858492702721.json, 图片生成/图生图/高精动作模仿，只模仿动作，1_1复刻动作_2115676223862042625.json, 平台全量/04动作迁移_2069766883884228609.json, 平台全量/2.2 Animate 人物动作迁移_2055917248015020034.json, 平台全量/Animate动作迁移高清全能V3版(WAN 2.2)-极致真人表情舞蹈动作模仿复刻天花板 人物场景_2075174251463794690.json, 平台全量/Animate舞蹈动作迁移(纸条版）_2058105446375968769.json, 平台全量/Animate舞蹈动作迁移_2045421548575662081.json, 平台全量/DG_(4-3)_animate-kj流-多lora-补针_2039978119695704065.json, 平台全量/DG_(4-3)_animate-kj流-多lora-补针_2041341057002115073.json, 平台全量/WAN 2.2 Animate动作迁移 动作模仿_2046161972512694274.json, 平台全量/WAN_2.2_Animate动作迁移_动作模仿_2110571969199558658.json, 平台全量/WAN_2.2_Animate动作迁移_动作模仿_2111272545948356610.json, 平台全量/Wan 2.2 Animate 动作迁移222_2120040051726966786.json, 平台全量/动作迁移_2029921889031823362.json, 平台全量/动作迁移_2047649067391524865.json, 视频生成/图生视频/WAN 2.2 Animate动作迁移 动作模仿_2108866123113525249.json, 视频生成/图生视频/WAN 2.2 Animate动作迁移 动作模仿_2108896219048271874.json, 视频生成/图生视频/WAN 2.2 Animate动作迁移 动作模仿_2109578513186643969.json, 视频生成/图生视频/WAN_2.2_Animate动作迁移_动作模仿_2116303163421712385.json, 视频生成/图生视频/Wan 2.2 Animate 人物角色动作迁移_2040732393052573697.json, 视频生成/图生视频/Wan 2.2 Animate 动作迁移_2035583580633571330.json, 视频生成/图生视频/Wan 2.2 Animate 动作迁移_2038260225177817089.json, 视频生成/图生视频/人物跳舞_动作迁移-原图背景_2032081877015728130.json, 视频生成/图生视频/🤷Wan 2.2 Animate 人物动作迁移优化版🤷_2026837951593844738.json, 视频生成/图生视频/🤷Wan 2.2 Animate 人物动作迁移优化版🤷_2095534621269254145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_42
 
-> 由 `engine/knowledge_consolidation` 从 24 个 workflow 归纳得出（视频生成/图生视频/Scail动作复刻工作流_2008843749622816769.json、视频生成/图生视频/Scail动物跳舞工作流_1953472755108904961.json、视频生成/图生视频/Scail多人跳舞，24G版_1954212955724378113.json、视频生成/图生视频/Scail武术动作，单人动作模仿，可转身，可武术_1995058553109065730.json、视频生成/图生视频/WAN SCAIL 2 动作参考 高帧率（单人、多人、非人）_2069249951540015105.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/动作迁移自用_2035382692145012738.json、图片生成/图生图/动作迁移，这个动作高仿，需要高显存跑_2114726342204944386.json、图片生成/图生图/高精动作模仿，只模仿动作，1_1复刻动作_2115654858492702721.json、图片生成/图生图/高精动作模仿，只模仿动作，1_1复刻动作_2115676223862042625.json、平台全量/04动作迁移_2069766883884228609.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：24
+- **样本数**：27
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 24 个 workflow 都包含：
+全部 27 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadNLFModel`
-- `GetImageSizeAndCount`
+- `DrawViTPose`
+- `GetNode`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `NLFPredict`
 - `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `RenderNLFPoses`
-- `SimpleMath+`
+- `PoseAndFaceDetection`
+- `SetNode`
 - `VHS_LoadVideo`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
+- `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoTextEncode`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoCombine` —— 20/24 个有
-- `WanVideoTorchCompileSettings` —— 19/24 个有
-- `easy cleanGpuUsed` —— 19/24 个有
-- `WanVideoEncode` —— 18/24 个有
-- `WanVideoUni3C_ControlnetLoader` —— 18/24 个有
-- `WanVideoUni3C_embeds` —— 18/24 个有
-- `ImageConcatMulti` —— 16/24 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 15/24 个有
-- `DWPreprocessor` —— 15/24 个有
-- `Any Switch (rgthree)` —— 14/24 个有
-- `CR Text` —— 14/24 个有
-- `GroundingDinoModelLoader_SDPose` —— 14/24 个有
-- `Int` —— 14/24 个有
-- `LayerUtility: PurgeVRAM V2` —— 14/24 个有
-- `SDPoseOODLoader` —— 14/24 个有
-- `SDPoseOODProcessor` —— 14/24 个有
-- `YOLOModelLoader` —— 14/24 个有
-- `Fast Groups Muter (rgthree)` —— 12/24 个有
-- `INTConstant` —— 10/24 个有
-- `WanVideoSetBlockSwap` —— 10/24 个有
-- `WanVideoSetLoRAs` —— 10/24 个有
-- `GetNode` —— 6/24 个有
-- `SetNode` —— 6/24 个有
-- `AudioToPath` —— 5/24 个有
-- `Float to Int` —— 5/24 个有
-- `OverlayVideos` —— 5/24 个有
-- `PrimitiveFloat` —— 5/24 个有
-- `PrimitiveInt` —— 5/24 个有
-- `SaveVideo` —— 5/24 个有
-- `VideoToPath` —— 5/24 个有
-- `PreviewImage` —— 3/24 个有
-- `FloatConstant` —— 2/24 个有
-- `ImpactSwitch` —— 1/24 个有
-- `PrimitiveBoolean` —— 1/24 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/24 个有
-- `SaveImage` —— 1/24 个有
-- `Text` —— 1/24 个有
+- `BatchCount+` —— 25/27 个有
+- `ImageBatch` —— 25/27 个有
+- `ImageFromBatch` —— 25/27 个有
+- `RepeatImageBatch` —— 25/27 个有
+- `WanVideoLoraSelect` —— 25/27 个有
+- `easy mathInt` —— 25/27 个有
+- `CR Text` —— 20/27 个有
+- `SimpleMath+` —— 20/27 个有
+- `ImpactInt` —— 19/27 个有
+- `PurgeVRAM_UTK` —— 19/27 个有
+- `easy convertAnything` —— 19/27 个有
+- `easy int` —— 19/27 个有
+- `Seed (rgthree)` —— 18/27 个有
+- `Int` —— 9/27 个有
+- `PreviewImage` —— 8/27 个有
+- `RHHiddenNodes` —— 8/27 个有
+- `VRAMReserver` —— 8/27 个有
+- `easy cleanGpuUsed` —— 8/27 个有
+- `easy float` —— 8/27 个有
+- `easy showAnything` —— 7/27 个有
+- `MemoryCleaner` —— 3/27 个有
+- `Getter` —— 2/27 个有
+- `Note Plus (mtb)` —— 2/27 个有
+- `Setter` —— 2/27 个有
+- `孤海注释` —— 2/27 个有
+- `BlockifyMask` —— 1/27 个有
+- `DrawMaskOnImage` —— 1/27 个有
+- `GetImageRangeFromBatch` —— 1/27 个有
+- `GrowMaskWithBlur` —— 1/27 个有
+- `PointsEditor` —— 1/27 个有
+- `Primitive integer [Crystools]` —— 1/27 个有
+- `SeCModelLoader` —— 1/27 个有
+- `SeCVideoSegmentation` —— 1/27 个有
+- `Seed` —— 1/27 个有
 
 ## 典型参数
 

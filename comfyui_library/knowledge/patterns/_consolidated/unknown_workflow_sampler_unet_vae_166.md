@@ -1,66 +1,63 @@
 ---
 name: unknown_workflow_sampler_unet_vae_166
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.757143
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.7845
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Minimax h3 故事多分镜图处理_2096523123339386881.json, 视频生成/图生视频/Minimax h3 高一致性-故事多分镜图处理_2103117440178810882.json, 视频生成/图生视频/Minimax+H3+多图生视频声音一致性工作流_2084677543038377986.json, 视频生成/图生视频/Minimax-H3 整合流程_2086427491039801346.json, 视频生成/图生视频/Minimax-H3-R2V 开源版本 多参考生视频_2084285644305682434.json, 视频生成/图生视频/Minimax-H3-多参-长视频-原版-736p直出_2096509767048060930.json, 视频生成/文生视频/Minimax-H3-✅文生长视频-原版-736p直出_2101978013062746113.json]
+members: [图片生成/图生图/最强开源视频！Minimax-h3 图生电商视频_2084291715531362305.json, 数字人/数字人/benson  声音克隆数字人_2097164489119588353.json, 视频生成/图生视频/H3-图生视频-首尾帧_2087831020287643649.json, 视频生成/图生视频/MiniMax+H3图生视频（首帧视频、尾帧视频、首尾帧视频）_2084465463463075842.json, 视频生成/图生视频/minimax_h3_迷你别墅视频工作流_2084267933227900930.json, 视频生成/图生视频/minimax_h3图生视频（稳定）_2085014325353340930.json, 视频生成/图生视频/video_minimax_h3_i2v_2084124570839240705.json, 视频生成/文生视频/Minimax H3 全系列工作流【AI小王子】_2084162640192032770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_166
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/Minimax h3 故事多分镜图处理_2096523123339386881.json、视频生成/图生视频/Minimax h3 高一致性-故事多分镜图处理_2103117440178810882.json、视频生成/图生视频/Minimax+H3+多图生视频声音一致性工作流_2084677543038377986.json、视频生成/图生视频/Minimax-H3 整合流程_2086427491039801346.json、视频生成/图生视频/Minimax-H3-R2V 开源版本 多参考生视频_2084285644305682434.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/最强开源视频！Minimax-h3 图生电商视频_2084291715531362305.json、数字人/数字人/benson  声音克隆数字人_2097164489119588353.json、视频生成/图生视频/H3-图生视频-首尾帧_2087831020287643649.json、视频生成/图生视频/MiniMax+H3图生视频（首帧视频、尾帧视频、首尾帧视频）_2084465463463075842.json、视频生成/图生视频/minimax_h3_迷你别墅视频工作流_2084267933227900930.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `CreateVideo`
 - `KSamplerSelect`
+- `LoadImage`
 - `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 6/7 个有
-- `MiniMaxH3ReferenceToVideo` —— 6/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
-- `VHS_VideoCombine` —— 5/7 个有
-- `CreateVideo` —— 4/7 个有
-- `ModelAttentionBackend` —— 4/7 个有
-- `LoadAudio` —— 3/7 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/7 个有
-- `GetImagesFromBatchIndexed` —— 2/7 个有
-- `GetVideoComponents` —— 2/7 个有
-- `LoadVideoUI` —— 2/7 个有
-- `MiniMaxH3ImageToVideo` —— 2/7 个有
-- `MiniMaxH3MotionContext` —— 2/7 个有
-- `MiniMaxH3MotionContextTrim` —— 2/7 个有
-- `MiniMaxH3SigmaShift` —— 2/7 个有
-- `SaveImage` —— 2/7 个有
-- `SaveVideo` —— 2/7 个有
-- `孤海注释` —— 2/7 个有
-- `BlockSparseAttention` —— 1/7 个有
-- `UniBlockSwap` —— 1/7 个有
-- `VHS_LoadVideo` —— 1/7 个有
-- `easy int` —— 1/7 个有
+- `ImageScaleToTotalPixels` —— 7/8 个有
+- `MiniMaxH3ImageToVideo` —— 7/8 个有
+- `GetImageSize` —— 6/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `CR Text` —— 2/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/8 个有
+- `AudioCrop` —— 1/8 个有
+- `Dapao_LlamaCaption` —— 1/8 个有
+- `Dapao_LlamaCaptionOptions` —— 1/8 个有
+- `ImageCrop+` —— 1/8 个有
+- `ImpactConditionalBranch` —— 1/8 个有
+- `LoadAudio` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
+- `RegexReplace` —— 1/8 个有
+- `easy boolean` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
+- `ttN int` —— 1/8 个有
 
 ## 典型参数
 

@@ -1,46 +1,45 @@
 ---
 name: unknown_workflow_video_sampler_35
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.91
-common_nodes: [CM_FloatToInt, Image2Video, ImageFromBatch+, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveInt, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, 加载视频路径, 视频缩放]
+frequency: 5
+level: moderate
+coverage: 0.9118
+common_nodes: [DownloadAndLoadMimicMotionModel, ImageResizeKJ, LoadImage, MimicMotionDecode, MimicMotionGetPoses, MimicMotionSampler, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/DreamID-V视频换脸_2009168696912125953.json, 视频生成/图生视频/字节DreamID-V视频换脸_2009174630229090305.json]
+members: [视频生成/图生视频/优化版图转视频加换脸修复加视频放大_1897825295863336961.json, 视频生成/图生视频/图生视频转绘-动作迁移_1896079729521262594.json, 视频生成/图生视频/美女跳舞视频转绘_1900150494789103617.json, 视频生成/图生视频/视频动作迁移—手指舞_1901488680866062338.json, "视频生成/图生视频/让图片跳舞,图片转视频_1883776618446602242.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_35
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/DreamID-V视频换脸_2009168696912125953.json、视频生成/图生视频/字节DreamID-V视频换脸_2009174630229090305.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/优化版图转视频加换脸修复加视频放大_1897825295863336961.json、视频生成/图生视频/图生视频转绘-动作迁移_1896079729521262594.json、视频生成/图生视频/美女跳舞视频转绘_1900150494789103617.json、视频生成/图生视频/视频动作迁移—手指舞_1901488680866062338.json、视频生成/图生视频/让图片跳舞,图片转视频_1883776618446602242.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：5
+- **可信度**：中等可信
 - **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CM_FloatToInt`
-- `Image2Video`
-- `ImageFromBatch+`
-- `Int`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 5 个 workflow 都包含：
+- `DownloadAndLoadMimicMotionModel`
+- `ImageResizeKJ`
 - `LoadImage`
-- `PrimitiveInt`
-- `RunningHub_DreamID-V_Loader`
-- `RunningHub_DreamID-V_Sampler`
-- `SimpleMath+`
+- `MimicMotionDecode`
+- `MimicMotionGetPoses`
+- `MimicMotionSampler`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `加载视频路径`
-- `视频缩放`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 1/2 个有
+- `GetImageSizeAndCount` —— 4/5 个有
+- `ReActorFaceSwap` —— 3/5 个有
+- `RIFE VFI` —— 2/5 个有
+- `CR Upscale Image` —— 1/5 个有
+- `Image Crop Face` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `Int` —— 1/5 个有
 
 ## 典型参数
 
@@ -52,4 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

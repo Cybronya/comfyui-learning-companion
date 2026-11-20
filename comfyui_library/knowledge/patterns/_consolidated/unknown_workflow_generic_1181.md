@@ -3,36 +3,34 @@ name: unknown_workflow_generic_1181
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.938
-common_nodes: [Fast Groups Bypasser (rgthree), IndexTTS2Run, IndexTTS2_Emotion, LoadAudio, SaveAudio, SeedVCRun, TextBox1]
+coverage: 1
+common_nodes: [SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2006904223438479362.json, 音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2043878575400558594.json, 音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制_2004082424306909186.json]
+members: [图片生成/图生图/全能图片G2.5-全能图片G-Image-2.5  Sunburst-稳定版-图生图_2101539341402202114.json, 图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5  Sunburst-稳定版-文生图_2101533136483078145.json, 平台全量/4.5k 全能图片G image2.0高清版_2118032952570507265.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1181
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2006904223438479362.json、音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制+仿音_2043878575400558594.json、音频生成/音频生成/INdexTTS2+SeedVC音频情绪控制_2004082424306909186.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G2.5-全能图片G-Image-2.5  Sunburst-稳定版-图生图_2101539341402202114.json、图片生成/文生图/全能图片G2.5-全能图片G-Image-2.5  Sunburst-稳定版-文生图_2101533136483078145.json、平台全量/4.5k 全能图片G image2.0高清版_2118032952570507265.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `IndexTTS2Run`
-- `IndexTTS2_Emotion`
-- `LoadAudio`
-- `SaveAudio`
-- `SeedVCRun`
-- `TextBox1`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveAudioMP3` —— 1/3 个有
+- `LoadImage` —— 2/3 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 2/3 个有
+- `RH_RhartImageG25SunburstTextToImage` —— 2/3 个有
+- `RH_RhartImageG2ImageToImage` —— 1/3 个有
 
 ## 典型参数
 

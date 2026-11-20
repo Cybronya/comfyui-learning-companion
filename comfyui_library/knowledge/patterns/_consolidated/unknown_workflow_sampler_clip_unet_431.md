@@ -1,68 +1,81 @@
 ---
 name: unknown_workflow_sampler_clip_unet_431
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.806
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, PreviewImage, RHBatchImages:, RHExtractImage, RHUploadZip, RH_Captioner, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.610667
+common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetNode, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageRemBg, easy seed]
 problems: []
 missing: []
-members: [图片生成/图生图/Z-image批量洗图图生图_1997513781804732418.json, 图片生成/图生图/wan2.1批量洗图_1964886774210248705.json]
+members: [图片生成/文生图/Flux.2 klein 单图_多图编辑 文生图 二合一 基础_2012476273980874753.json, 图片生成/文生图/Flux.2 基础 文生图 +多图编辑 _ 图像参考 二合一_1993632576155877378.json, 图片生成/文生图/加速优化！Flux.2 基础文生图+多图编辑_图像参考多合一工作流_2058209151062462465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_431
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Z-image批量洗图图生图_1997513781804732418.json、图片生成/图生图/wan2.1批量洗图_1964886774210248705.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Flux.2 klein 单图_多图编辑 文生图 二合一 基础_2012476273980874753.json、图片生成/文生图/Flux.2 基础 文生图 +多图编辑 _ 图像参考 二合一_1993632576155877378.json、图片生成/文生图/加速优化！Flux.2 基础文生图+多图编辑_图像参考多合一工作流_2058209151062462465.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
+- `Anything Everywhere`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
-- `PreviewImage`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
-- `RH_Captioner`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetNode`
+- `KSamplerSelect`
+- `LoadImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
+- `easy imageRemBg`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowInt` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `LayerUtility: ImageScaleRestore V2` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `AIO_Preprocessor` —— 2/3 个有
+- `BasicGuider` —— 2/3 个有
+- `DrawMaskOnImage` —— 2/3 个有
+- `EasyCache` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `FastCanvas` —— 2/3 个有
+- `FastCanvasTool` —— 2/3 个有
+- `FluxGuidance` —— 2/3 个有
+- `ImageScaleToTotalPixels` —— 2/3 个有
+- `Int` —— 2/3 个有
+- `JoinImageWithAlpha` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `ModelPatchTorchSettings` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 2/3 个有
+- `PreviewAny` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `Qwen3_VQA` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `孤海-图像与遮罩描边` —— 2/3 个有
+- `1hew_AnySwitchSelect` —— 1/3 个有
+- `CFGGuider` —— 1/3 个有
+- `ConditioningZeroOut` —— 1/3 个有
+- `GetImageSize` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `RebatchLatents` —— 1/3 个有
+- `RepeatLatentBatch` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 10 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 50% |
-| 调度器 | simple | - | 2 | 50% |
-| 重绘幅度 | 0.375 | - | 2 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -70,9 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 10，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 50%
-- 调度器 最常用 simple，2 个样本，一致性 50%
-- 重绘幅度 中位数 0.375，样本不足，未给区间，2 个样本
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

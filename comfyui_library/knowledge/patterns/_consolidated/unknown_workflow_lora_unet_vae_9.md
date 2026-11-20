@@ -1,92 +1,94 @@
 ---
 name: unknown_workflow_lora_unet_vae_9
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.531667
-common_nodes: [CLIPLoader, CM_BoolToInt, CR Prompt Text, ComfyMathExpression, CreateVideo, ExecutionBlocker, FloatToText, GetCurrentTimeNode, GetImageSize, GetNode, ImageScaleToTotalPixels, ImpactNeg, Int, IntConditions, JjkText, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3PromptEnhancerT8, PreviewAny, PrimitiveBoolean, PrimitiveFloat, RHLLMChatNode, RandomNoise, SaveAudioAdvanced, SaveLatent, SaveVideo, SetNode, StringReplace, UNETLoader, VAEEncode, VAELoader, easy anythingIndexSwitch, easy mathString, ttN concat, 孤海注释, 忽略多组孤海]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.8408
+common_nodes: [CLIPLoader, ImageResizeKJv2, LoraLoaderModelOnly, PathchSageAttentionKJ, PreviewAny, PrimitiveBoolean, RHLLMChatNode, SaveVideo, UNETLoader, UniBlockSwap, VAEDecode, VAEDecodeAudio, VAELoader, easy blocker, easy ifElse, easy minimaxH3ToVideo, easy multiTrackEditor, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy seed, easy splitImages]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax+VDN+selflift 快速参考生视频_2097697625758846978.json, 视频生成/图生视频/MiniMax+VDN+selflift_快速参考生视频_2100927216665321474.json, 视频生成/图生视频/MiniMax-H3-VDN 快速参考生视频_2096530698105614337.json]
+members: [平台全量/MiniMax 动作参考（多参图+视频）- 8步极速生成_2084889766784495618.json, 视频生成/图生视频/MiniMax 1080P 短剧创作Ⅰ（音频参考）- 8步极速生成_2084932680696815617.json, 视频生成/图生视频/MiniMax 1080P 短剧创作Ⅲ（分镜）- 8步极速生成_2085089066273558530.json, 视频生成/图生视频/MiniMax 文_图_首尾_参考多合一 - 全球最夯视频剪辑导演台_2072179712750870529.json, 视频生成/图生视频/Minimax 30~60秒短片循环流_2085300016134057986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_unet_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax+VDN+selflift 快速参考生视频_2097697625758846978.json、视频生成/图生视频/MiniMax+VDN+selflift_快速参考生视频_2100927216665321474.json、视频生成/图生视频/MiniMax-H3-VDN 快速参考生视频_2096530698105614337.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/MiniMax 动作参考（多参图+视频）- 8步极速生成_2084889766784495618.json、视频生成/图生视频/MiniMax 1080P 短剧创作Ⅰ（音频参考）- 8步极速生成_2084932680696815617.json、视频生成/图生视频/MiniMax 1080P 短剧创作Ⅲ（分镜）- 8步极速生成_2085089066273558530.json、视频生成/图生视频/MiniMax 文_图_首尾_参考多合一 - 全球最夯视频剪辑导演台_2072179712750870529.json、视频生成/图生视频/Minimax 30~60秒短片循环流_2085300016134057986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
-- `CM_BoolToInt`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `ExecutionBlocker`
-- `FloatToText`
-- `GetCurrentTimeNode`
-- `GetImageSize`
-- `GetNode`
-- `ImageScaleToTotalPixels`
-- `ImpactNeg`
-- `Int`
-- `IntConditions`
-- `JjkText`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
+- `ImageResizeKJv2`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3AudioConditioningT8`
-- `MiniMaxH3PromptEnhancerT8`
+- `PathchSageAttentionKJ`
 - `PreviewAny`
 - `PrimitiveBoolean`
-- `PrimitiveFloat`
 - `RHLLMChatNode`
-- `RandomNoise`
-- `SaveAudioAdvanced`
-- `SaveLatent`
 - `SaveVideo`
-- `SetNode`
-- `StringReplace`
 - `UNETLoader`
-- `VAEEncode`
+- `UniBlockSwap`
+- `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy anythingIndexSwitch`
-- `easy mathString`
-- `ttN concat`
-- `孤海注释`
-- `忽略多组孤海`
+- `easy blocker`
+- `easy ifElse`
+- `easy minimaxH3ToVideo`
+- `easy multiTrackEditor`
+- `easy multiTrackInfoOutput`
+- `easy multiTrackTaskOutput`
+- `easy seed`
+- `easy splitImages`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 2/3 个有
-- `ConditioningZeroOut` —— 2/3 个有
-- `H3SigmaRefiner` —— 2/3 个有
-- `KSamplerSelect` —— 2/3 个有
-- `MiniMaxH3VDNRuntimeAuditT8Advanced` —— 2/3 个有
-- `SelfLiftH3Sampler` —— 2/3 个有
-- `BasicGuider` —— 1/3 个有
-- `EmptyImage` —— 1/3 个有
-- `MiniMaxH3VDNExecutionPlanT8Advanced` —— 1/3 个有
-- `MiniMaxH3VDNModelComposerT8Advanced` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `SamplerCustomAdvanced` —— 1/3 个有
-- `SolAttnMiniMax` —— 1/3 个有
+- `CreateVideo` —— 4/5 个有
+- `ConditioningZeroOut` —— 3/5 个有
+- `KSampler` —— 3/5 个有
+- `PrimitiveInt` —— 3/5 个有
+- `BasicGuider` —— 2/5 个有
+- `ComfyMathExpression` —— 2/5 个有
+- `MiniMaxH3DualClockSamplerT8` —— 2/5 个有
+- `RandomNoise` —— 2/5 个有
+- `SamplerCustomAdvanced` —— 2/5 个有
+- `easy saveVideo` —— 2/5 个有
+- `DA3Inference` —— 1/5 个有
+- `DA3Render` —— 1/5 个有
+- `GetVideoComponents` —— 1/5 个有
+- `LoadDA3Model` —— 1/5 个有
+- `StringContains` —— 1/5 个有
+- `easy batchAnything` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy forLoopEnd` —— 1/5 个有
+- `easy forLoopStart` —— 1/5 个有
+- `easy mergeVideosFromPaths` —— 1/5 个有
+- `easy promptLine` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（3/5 个样本）：Steps较低可能导致细节不足

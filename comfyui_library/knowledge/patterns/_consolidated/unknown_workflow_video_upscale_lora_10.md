@@ -1,55 +1,58 @@
 ---
 name: unknown_workflow_video_upscale_lora_10
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 1
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleImageWithModelIfNeed, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoEnhanceAVideo, WanVideoLoraSelect, WanVideoSEDecode, WanVideoSEImageClipEncode, WanVideoSEModelLoader, WanVideoSESampler, WanVideoSLG, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.933167
+common_nodes: [ImageUpscaleWithModel, Int, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/WAN2.1动态壁纸循环首尾帧_1918858509570473986.json, 视频生成/图生视频/wan2.1动态壁纸循环首尾帧，全尺寸支持+自动提示词_1914665456270278658.json, 视频生成/图生视频/wan2.1动态壁纸首尾帧循环版_1914595453097209857.json, 视频生成/图生视频/【动态逼真】万相动态壁纸循环首尾帧_1918851032598642689.json]
+members: [视频生成/图生视频/火爆全网解压神器一起来切水果_1937513955088580610.json, 视频生成/图生视频/街霸特效超级波动拳-万相wan2.1_1899332733573746689.json, 视频生成/图生视频/被压扁特效-万相wan2.1新玩意_1899672945285877762.json, 视频生成/图生视频/解压神器，一起来切水晶--万相WAN2.1_1899288956402356225.json, 视频生成/图生视频/返老还童图生视频_1900773672473501697.json, 视频生成/文生视频/【万物360度旋转】Wan2.1万相任意物体三视图IP多角度动画视频展示_1915649803047604225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_10
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/WAN2.1动态壁纸循环首尾帧_1918858509570473986.json、视频生成/图生视频/wan2.1动态壁纸循环首尾帧，全尺寸支持+自动提示词_1914665456270278658.json、视频生成/图生视频/wan2.1动态壁纸首尾帧循环版_1914595453097209857.json、视频生成/图生视频/【动态逼真】万相动态壁纸循环首尾帧_1918851032598642689.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/火爆全网解压神器一起来切水果_1937513955088580610.json、视频生成/图生视频/街霸特效超级波动拳-万相wan2.1_1899332733573746689.json、视频生成/图生视频/被压扁特效-万相wan2.1新玩意_1899672945285877762.json、视频生成/图生视频/解压神器，一起来切水晶--万相WAN2.1_1899288956402356225.json、视频生成/图生视频/返老还童图生视频_1900773672473501697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
+全部 6 个 workflow 都包含：
+- `ImageUpscaleWithModel`
+- `Int`
 - `LoadImage`
 - `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `UpscaleImageWithModelIfNeed`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoEnhanceAVideo`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
 - `WanVideoLoraSelect`
-- `WanVideoSEDecode`
-- `WanVideoSEImageClipEncode`
-- `WanVideoSEModelLoader`
-- `WanVideoSESampler`
-- `WanVideoSLG`
-- `WanVideoTeaCache`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadFlorence2Model` —— 3/4 个有
-- `Florence2Run` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `StringFunction|pysssss` —— 3/4 个有
-- `ImageResize+` —— 1/4 个有
+- `WanVideoEnhanceAVideo` —— 5/6 个有
+- `LayerUtility: PurgeVRAM` —— 4/6 个有
+- `Note Plus (mtb)` —— 3/6 个有
+- `WanVideoTeaCache` —— 3/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `PrimitiveStringMultiline` —— 2/6 个有
+- `FILM VFI` —— 1/6 个有
+- `Fast Groups Muter (rgthree)` —— 1/6 个有
+- `LoadAudio` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `ReActorFaceSwap` —— 1/6 个有
+- `StringConstantMultiline` —— 1/6 个有
+- `Textbox` —— 1/6 个有
 
 ## 典型参数
 

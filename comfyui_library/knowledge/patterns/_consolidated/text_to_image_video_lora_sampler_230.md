@@ -4,16 +4,16 @@ type: Text To Image
 frequency: 2
 level: weak
 coverage: 0.925
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, EmptyLatentImage, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, Fast Groups Bypasser (rgthree), ImageConcatMulti, ImageResizeKJv2, JWInteger, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, SoundFlow_Fade, SoundFlow_GetLength, ToInt, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, UNETLoader, VAEDecode, VAELoader, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, Wav2VecModelLoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/万相表情迁移短剧方案｜Aniwan2.1+FantasyPortrait+InfiniteTalk_2101182808269086721.json, 视频生成/图生视频/表情迁移短剧神器｜万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2101152627349348354.json]
+members: [视频生成/图生视频/InfiniteTalk照片开口说话｜数字人口播视频生成_2106564287643869186.json, 视频生成/图生视频/写实数字人｜高清数字人生成图生视频一键直出_2089843547364225026.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_230
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/万相表情迁移短剧方案｜Aniwan2.1+FantasyPortrait+InfiniteTalk_2101182808269086721.json、视频生成/图生视频/表情迁移短剧神器｜万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2101152627349348354.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk照片开口说话｜数字人口播视频生成_2106564287643869186.json、视频生成/图生视频/写实数字人｜高清数字人生成图生视频一键直出_2089843547364225026.json）
 
 - **类型**：Text To Image
 - **样本数**：2
@@ -26,46 +26,40 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
 - `EmptyLatentImage`
-- `FantasyPortraitFaceDetector`
-- `FantasyPortraitModelLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `JWInteger`
 - `JjkText`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
-- `SoundFlow_Fade`
-- `SoundFlow_GetLength`
-- `ToInt`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAddFantasyPortrait`
-- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy showAnything`
+- `Wav2VecModelLoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
+
+**可变部分**（部分 workflow 才有）：
+- `Audio Duration` —— 1/2 个有
+- `ComfyMathExpression` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `ImageResizeKJv2` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoadAudio` —— 1/2 个有
+- `LogicUtil_CeilNode` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `VHS_LoadAudioUpload` —— 1/2 个有
+- `VHS_VideoCombine` —— 1/2 个有
+- `WanVideoBlockSwap` —— 1/2 个有
+- `WanVideoLoraSelect` —— 1/2 个有
 
 ## 典型参数
 

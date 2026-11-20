@@ -1,44 +1,38 @@
 ---
 name: unknown_workflow_generic_597
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8282
-common_nodes: [AddMask, CR Text, ChinesePrompt_Mix, GrowMaskWithBlur, JoinImageWithAlpha, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskPreview, LayerMask: SegmentAnythingUltra V2, LoadImage, Mask Invert, MaskPreview+, PreviewImage, RMBG, SDMatteApply, SaveImage]
+coverage: 0.459667
+common_nodes: [JjkText, LoadImage, RelayAPISettings, RelayImageGenerator, SaveImage, Text]
 problems: []
 missing: []
-members: [图片生成/图生图/抠图最强模型透明材质完美扣除_2097134466434162690.json, 图片生成/图生图/抠图最强模型透明材质完美扣除_2097231577305669633.json, 图片生成/图生图/抠图最强模型（透明材质完美扣除）_1957784334042329089.json, 图片生成/图生图/抠图最强模型（透明材质完美扣除）_2076128864685875201.json, 图片生成/图生图/抠图最强模型（透明材质完美扣除）_2078460342971224065.json]
+members: [图片生成/文生图/双图适合电商换装 image2 relay版本+生成质量更高+全节点注释_2059153551196250113.json, 图片生成/文生图/图生图image2 relay版本+最高质量+全节点注释_2059181858495229953.json, 图片生成/文生图/图生图image2 relay版本+生成质量更高+全节点注释_2059167597035343873.json, 图片生成/文生图/文生图image2 relay版本+最高质量+全节点注释_2059191844822667266.json, 平台全量/双图适合电商换装_image2_relay版本+生成质量更高+全节点注释_2065041859667386369.json, 平台全量/文生图image2_relay版本+最高质量+全节点注释_2065317181138759682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_597
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/抠图最强模型透明材质完美扣除_2097134466434162690.json、图片生成/图生图/抠图最强模型透明材质完美扣除_2097231577305669633.json、图片生成/图生图/抠图最强模型（透明材质完美扣除）_1957784334042329089.json、图片生成/图生图/抠图最强模型（透明材质完美扣除）_2076128864685875201.json、图片生成/图生图/抠图最强模型（透明材质完美扣除）_2078460342971224065.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/双图适合电商换装 image2 relay版本+生成质量更高+全节点注释_2059153551196250113.json、图片生成/文生图/图生图image2 relay版本+最高质量+全节点注释_2059181858495229953.json、图片生成/文生图/图生图image2 relay版本+生成质量更高+全节点注释_2059167597035343873.json、图片生成/文生图/文生图image2 relay版本+最高质量+全节点注释_2059191844822667266.json、平台全量/双图适合电商换装_image2_relay版本+生成质量更高+全节点注释_2065041859667386369.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AddMask`
-- `CR Text`
-- `ChinesePrompt_Mix`
-- `GrowMaskWithBlur`
-- `JoinImageWithAlpha`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerMask: MaskPreview`
-- `LayerMask: SegmentAnythingUltra V2`
+全部 6 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
-- `Mask Invert`
-- `MaskPreview+`
-- `PreviewImage`
-- `RMBG`
-- `SDMatteApply`
+- `RelayAPISettings`
+- `RelayImageGenerator`
 - `SaveImage`
+- `Text`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Text` —— 4/6 个有
+- `RHHiddenNodes` —— 2/6 个有
 
 ## 典型参数
 

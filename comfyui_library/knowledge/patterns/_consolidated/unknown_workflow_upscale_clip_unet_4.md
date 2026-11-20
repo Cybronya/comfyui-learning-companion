@@ -1,34 +1,30 @@
 ---
 name: unknown_workflow_upscale_clip_unet_4
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.796
-common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, Image Comparer (rgthree), LoadImage, PreviewImage, SaveImage, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAELoader]
+coverage: 0.917167
+common_nodes: [CLIPTextEncode, LoadImage, SaveImage, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX高清放大_1899380955994570753.json, 图片生成/图生图/SD放大工作流_1948937528062222337.json, 图片生成/图生图/🍭老许Gary：SD分块放大_2018383996949893122.json]
+members: [图片生成/图生图/FLUX1 动漫画质修复放大_2016701427971792897.json, 图片生成/图生图/SD放大（Flux版）_1984982029756416002.json, 图片生成/图生图/放大_1956860937392066561.json, 图片生成/图生图/🚀老许Gary：Z+SD图像修复放大_2037198846140354562.json, 平台全量/Flux SD高清无损放大_1964560645381345282.json, 平台全量/flux版SD放大工作流_1988884816869330945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_clip_unet_4
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/FLUX高清放大_1899380955994570753.json、图片生成/图生图/SD放大工作流_1948937528062222337.json、图片生成/图生图/🍭老许Gary：SD分块放大_2018383996949893122.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/FLUX1 动漫画质修复放大_2016701427971792897.json、图片生成/图生图/SD放大（Flux版）_1984982029756416002.json、图片生成/图生图/放大_1956860937392066561.json、图片生成/图生图/🚀老许Gary：Z+SD图像修复放大_2037198846140354562.json、平台全量/Flux SD高清无损放大_1964560645381345282.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPTextEncodeFlux`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `Image Comparer (rgthree)`
+全部 6 个 workflow 都包含：
+- `CLIPTextEncode`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `UltimateSDUpscale`
@@ -36,15 +32,15 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptySD3LatentImage` —— 2/3 个有
-- `CLIPTextEncode` —— 1/3 个有
-- `CR Simple Image Compare` —— 1/3 个有
-- `CheckpointLoaderSimple` —— 1/3 个有
-- `DeepTranslatorTextNode` —— 1/3 个有
-- `LayerMask: LoadFlorence2Model` —— 1/3 个有
-- `LayerUtility: Florence2Image2Prompt` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `DualCLIPLoader` —— 5/6 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `ConstrainImage|pysssss` —— 3/6 个有
+- `LoraLoaderModelOnly` —— 3/6 个有
+- `CLIPLoader` —— 1/6 个有
+- `ImageResize+` —— 1/6 个有
+- `Joy_caption` —— 1/6 个有
+- `Joy_caption_load` —— 1/6 个有
 
 ## 典型参数
 

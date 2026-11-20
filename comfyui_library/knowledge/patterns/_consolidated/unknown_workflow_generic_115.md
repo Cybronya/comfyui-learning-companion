@@ -1,35 +1,35 @@
 ---
 name: unknown_workflow_generic_115
 type: Unknown Workflow
-frequency: 14
+frequency: 16
 level: moderate
-coverage: 0.801786
-common_nodes: [LoadImage, SaveVideo]
+coverage: 0.94575
+common_nodes: [RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedance2.0 mini图生视频_2070424978759180289.json, 图片生成/文生图/全能视频 Omni Flash 图生视频+全节点注释_2061058541888299009.json, 视频生成/图生视频/Gemini Omni Flash多图生视频工作流（支持3张图）_2064374320712994817.json, 视频生成/图生视频/Omni Flash图生视频_2061328810875904001.json, 视频生成/图生视频/Omni Flash图生视频_2066774204372045825.json, 视频生成/图生视频/seedance2.0 mini图生视频_2070036008581812226.json, 视频生成/图生视频/seedance2.0 mini图生视频_2070040969587806209.json, 视频生成/图生视频/seedance2.0-Mini_图生视频_2069669860082274305.json, 视频生成/图生视频/seedance2.0mini图生视频最新图生视频_2070071367327903745.json, 视频生成/图生视频/全能视频 Omni Flash 图生视频-低价渠道版_2059980232874090498.json, 视频生成/图生视频/全能视频 Omni Flash 图生视频_2058788615504883714.json, 视频生成/文生视频/Seedance Mini-图生视频+全节点注释_2069737627246485505.json, 视频生成/文生视频/seedance2.0 mini图生视频_2070010907375259649.json, 视频生成/文生视频/seedance2.0 mini图生视频_2070038289159118850.json]
+members: [图片生成/文生图/NBP文生图_2031650567847682050.json, 图片生成/文生图/Nana_2041478839041269761.json, 图片生成/文生图/Nano 全能图片V1 2 十张图片融合_1992959578677723137.json, 图片生成/文生图/Z- 全能图片V1 Pro 2.1_1992917145441026049.json, 图片生成/文生图/nano 全能图片V1  pro 单图多图工作流_2004079074198888450.json, 图片生成/文生图/【CQ808】九宫格_横版_2020065174576701441.json, 图片生成/文生图/【推荐】 🍌2 Pro单图编辑_2018272466895904769.json, 图片生成/文生图/【推荐】 🍌Pro多图编辑_2018276372711477249.json, 图片生成/文生图/全能图片NB Pro 高清4K 支持多图编辑_2016510371841974273.json, 图片生成/文生图/全能图片V1 2   单图 分镜_2001937511008071681.json, 图片生成/文生图/全能图片V1 2_2009924195592966145.json, 图片生成/文生图/全能图片V2 Pro -RH版_2015970204999749634.json, 图片生成/文生图/分镜图_api_2016736667444453377.json, 图片生成/文生图/谷歌模型2 pro API_2097225886364946433.json, 图片生成/文生图/香蕉2 多图 分镜_2001930318577844225.json, 平台全量/pro提取单张图_2018385650524889089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_115
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Seedance2.0 mini图生视频_2070424978759180289.json、图片生成/文生图/全能视频 Omni Flash 图生视频+全节点注释_2061058541888299009.json、视频生成/图生视频/Gemini Omni Flash多图生视频工作流（支持3张图）_2064374320712994817.json、视频生成/图生视频/Omni Flash图生视频_2061328810875904001.json、视频生成/图生视频/Omni Flash图生视频_2066774204372045825.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/文生图/NBP文生图_2031650567847682050.json、图片生成/文生图/Nana_2041478839041269761.json、图片生成/文生图/Nano 全能图片V1 2 十张图片融合_1992959578677723137.json、图片生成/文生图/Z- 全能图片V1 Pro 2.1_1992917145441026049.json、图片生成/文生图/nano 全能图片V1  pro 单图多图工作流_2004079074198888450.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `LoadImage`
-- `SaveVideo`
+全部 16 个 workflow 都包含：
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 8/14 个有
-- `CR Text` —— 7/14 个有
-- `RH_GeminiOmniFlashImageToVideo` —— 6/14 个有
+- `LoadImage` —— 15/16 个有
+- `CR Prompt Text` —— 9/16 个有
+- `Text Input [Dream]` —— 2/16 个有
 
 ## 典型参数
 

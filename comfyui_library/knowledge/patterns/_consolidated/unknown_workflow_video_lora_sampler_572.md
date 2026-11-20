@@ -1,76 +1,83 @@
 ---
 name: unknown_workflow_video_lora_sampler_572
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.55675
-common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.8688
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimateToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan Animate2.2动作迁移V3(Move) 骨骼增强版_2073292954780917762.json, 视频生成/图生视频/Wan2.2 Animate人物动作+表情迁移_1972599286972231682.json, 视频生成/图生视频/animate+move视频动作模仿_2042582047956410370.json, 视频生成/图生视频/姿态声音Animate Wan2.2 增强更新版人物一致性百分百_1974720060226973697.json]
+members: [平台全量/GOZAO-Animate-动作迁移-优化版_2077400238037495810.json, 平台全量/Wan Animate姿势迁移官方版_1990427310165811202.json, 平台全量/动作参考_1983769804194684929.json, 视频生成/图生视频/Animate_视频自动人物姿势动作迁移_2002231206848655361.json, 视频生成/图生视频/wan animate动作迁移_1972997136394661890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_572
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan Animate2.2动作迁移V3(Move) 骨骼增强版_2073292954780917762.json、视频生成/图生视频/Wan2.2 Animate人物动作+表情迁移_1972599286972231682.json、视频生成/图生视频/animate+move视频动作模仿_2042582047956410370.json、视频生成/图生视频/姿态声音Animate Wan2.2 增强更新版人物一致性百分百_1974720060226973697.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/GOZAO-Animate-动作迁移-优化版_2077400238037495810.json、平台全量/Wan Animate姿势迁移官方版_1990427310165811202.json、平台全量/动作参考_1983769804194684929.json、视频生成/图生视频/Animate_视频自动人物姿势动作迁移_2002231206848655361.json、视频生成/图生视频/wan animate动作迁移_1972997136394661890.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：56%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageResizeKJv2`
+- `KSampler`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
+- `WanAnimateToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/4 个有
-- `ImageConcatMulti` —— 3/4 个有
-- `JWInteger` —— 3/4 个有
-- `DWPreprocessor` —— 2/4 个有
-- `DrawViTPose` —— 2/4 个有
-- `LayerUtility: PurgeVRAM` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `EmptyImage` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `PixelPerfectResolution` —— 1/4 个有
-- `PoseDetectionOneToAllAnimation` —— 1/4 个有
-- `PoseRetargetPromptHelper` —— 1/4 个有
-- `Primitive integer [Crystools]` —— 1/4 个有
-- `VHS_VideoInfo` —— 1/4 个有
-- `WanVideoTorchCompileSettings` —— 1/4 个有
-- `easy anythingIndexSwitch` —— 1/4 个有
+- `DWPreprocessor` —— 4/5 个有
+- `INTConstant` —— 4/5 个有
+- `PixelPerfectResolution` —— 4/5 个有
+- `ImageResizeKJv2` —— 3/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `DrawViTPose` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `GetNode` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `OnnxDetectionModelLoader` —— 1/5 个有
+- `PoseAndFaceDetection` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `RHHiddenNodes` —— 1/5 个有
+- `SetNode` —— 1/5 个有
+- `VHS_VideoInfo` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | 6 - 6 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，观测区间 6 - 6，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（6/5 个样本）：Steps较低可能导致细节不足

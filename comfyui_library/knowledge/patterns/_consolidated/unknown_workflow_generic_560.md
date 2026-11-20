@@ -1,44 +1,36 @@
 ---
 name: unknown_workflow_generic_560
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.641
-common_nodes: [ImageLoader, JjkText, MultiTextConcatenate, RH_LLMAPI_Pro_Node, SaveImage, Text, easy cleanGpuUsed, easy showAnything, ttN concat]
+coverage: 1
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程提示词-多图版_2092226117246742530.json, 图片生成/图生图/一键生成专业影视分镜与关键帧全流程提示词-image2_2052212257190359041.json, 图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2100166630381805569.json, 图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2102576863053963265.json, 视频生成/图生视频/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2101493126711042050.json]
+members: [图片生成/图生图/keyshot剧情续写九宫格_2044245749034131457.json, 图片生成/图生图/一键基于参考图生成产品主图_2046515708992950273.json, 图片生成/图生图/三视图一键生成保持人物一致性全能图片V1_2003332181290254337.json, 图片生成/图生图/全能图片pro多图参考改图_1993931956064894978.json, 图片生成/图生图/姿态迁移全能图片V12pro进阶版_2007699684537671682.json, 图片生成/图生图/建筑灯光改造（全能图像编辑）_2015618296388784130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_560
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/GP-T2.0一键生成专业影视分镜与关键帧全流程提示词-多图版_2092226117246742530.json、图片生成/图生图/一键生成专业影视分镜与关键帧全流程提示词-image2_2052212257190359041.json、图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2100166630381805569.json、图片生成/图生图/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2102576863053963265.json、视频生成/图生视频/全能图片G2.5一键生成专业影视分镜与关键帧全流程提示词-多图版_2101493126711042050.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/keyshot剧情续写九宫格_2044245749034131457.json、图片生成/图生图/一键基于参考图生成产品主图_2046515708992950273.json、图片生成/图生图/三视图一键生成保持人物一致性全能图片V1_2003332181290254337.json、图片生成/图生图/全能图片pro多图参考改图_1993931956064894978.json、图片生成/图生图/姿态迁移全能图片V12pro进阶版_2007699684537671682.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageLoader`
-- `JjkText`
-- `MultiTextConcatenate`
-- `RH_LLMAPI_Pro_Node`
+全部 6 个 workflow 都包含：
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `Text`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `ttN concat`
 
 **可变部分**（部分 workflow 才有）：
-- `easy saveText` —— 4/5 个有
-- `LoadImage` —— 3/5 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 3/5 个有
-- `RH_RhartImageG2ImageToImage` —— 1/5 个有
-- `TextPreview` —— 1/5 个有
+- `CR Text` —— 4/6 个有
+- `ImageConcanate` —— 4/6 个有
+- `CR Text Concatenate` —— 1/6 个有
 
 ## 典型参数
 

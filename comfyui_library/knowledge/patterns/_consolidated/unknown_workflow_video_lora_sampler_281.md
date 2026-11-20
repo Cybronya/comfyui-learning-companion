@@ -1,66 +1,66 @@
 ---
 name: unknown_workflow_video_lora_sampler_281
 type: Unknown Workflow
-frequency: 8
+frequency: 10
 level: moderate
-coverage: 0.888
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.7702
+common_nodes: [CLIPVisionLoader, FantasyPortraitFaceDetector, FantasyPortraitModelLoader, ImageResizeKJv2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddFantasyPortrait, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/Infinite Talk 视频生视频数字人（单人）_1958059584550219777.json, 数字人/数字人/Infinite Talk图片生成数字人_1959115013590036482.json, 数字人/数字人/Infinite Talk数字人_1958455819090214913.json, 数字人/数字人/InfiniteTalk视频生数字人_1959476452968312833.json, 数字人/数字人/InfiniteTalk视频生数字人_1999076022924570625.json, 视频生成/图生视频/Infinite Talk图片生成数字人_1999023790376017922.json, 视频生成/图生视频/【推荐，图片声音对口型（说话唱歌）】（单人版）Infinite Talk超自然无限长度图生视频数字人V3_2008048511492825090.json, 视频生成/图生视频/西游唱歌infinitetalk工作流_1984917641024454657.json]
+members: [视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956020151047127042.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956179221490094081.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-多人wan2.1_1956036782594904065.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956045555967381505.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956317081069342721.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_2051923749418610689.json, 视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_2052630555186999297.json, 视频生成/图生视频/Wan2.1+FantasyPortrait表情动作迁移V1_1956269991735775234.json, 视频生成/图生视频/wanvideo_2_1_I2V_FantasyPortrait_表情迁移_1957641914193473538.json, 视频生成/图生视频/最新FantasyPortrait音频驱动表情迁移_1956951532585541633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_281
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/Infinite Talk 视频生视频数字人（单人）_1958059584550219777.json、数字人/数字人/Infinite Talk图片生成数字人_1959115013590036482.json、数字人/数字人/Infinite Talk数字人_1958455819090214913.json、数字人/数字人/InfiniteTalk视频生数字人_1959476452968312833.json、数字人/数字人/InfiniteTalk视频生数字人_1999076022924570625.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956020151047127042.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-单人wan2.1_1956179221490094081.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-多人wan2.1_1956036782594904065.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956045555967381505.json、视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_1956317081069342721.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
+全部 10 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR Prompt Text`
-- `DownloadAndLoadWav2VecModel`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `FantasyPortraitFaceDetector`
+- `FantasyPortraitModelLoader`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddFantasyPortrait`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 7/8 个有
-- `Anything Everywhere` —— 6/8 个有
-- `CR String To Number` —— 6/8 个有
-- `GetImageRangeFromBatch` —— 6/8 个有
-- `GetImageSizeAndCount` —— 6/8 个有
-- `MathExpression|pysssss` —— 6/8 个有
-- `RH_GetAudioDuration` —— 6/8 个有
-- `WanVideoEncode` —— 6/8 个有
-- `LoadImage` —— 5/8 个有
-- `VHS_LoadVideo` —— 5/8 个有
-- `ImageBatchMulti` —— 4/8 个有
-- `ReverseImageBatch` —— 4/8 个有
-- `JWInteger` —— 2/8 个有
-- `Primitive integer [Crystools]` —— 2/8 个有
-- `easy anythingIndexSwitch` —— 2/8 个有
-- `Int` —— 1/8 个有
-- `SimpleMath+` —— 1/8 个有
+- `WanVideoTorchCompileSettings` —— 9/10 个有
+- `ImageConcatMulti` —— 8/10 个有
+- `GetNode` —— 6/10 个有
+- `Primitive integer [Crystools]` —— 6/10 个有
+- `SetNode` —— 6/10 个有
+- `INTConstant` —— 3/10 个有
+- `ImageConcanate` —— 2/10 个有
+- `PrimitiveInt` —— 2/10 个有
+- `VHS_VideoInfoLoaded` —— 2/10 个有
+- `GetImageRangeFromBatch` —— 1/10 个有
+- `JWInteger` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `VHS_VideoInfo` —— 1/10 个有
+- `WanVideoContextOptions` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 

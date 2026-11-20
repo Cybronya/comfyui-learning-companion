@@ -1,72 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_clip_139
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.87375
-common_nodes: [Bounded Image Crop, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Input Switch (4 way), ConditioningZeroOut, DF_Integer, EmptyFlux2LatentImage, Flux2Scheduler, Get Image Size, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RHHiddenNodes, RandomNoise, ReferenceLatent, ResizeAndPadImage, ResizeImageMixlab, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageColorMatch, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.8562
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Concatenate, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageResizeKJv2, ImageScaleToTotalPixels, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2修图打光_2070444065451233281.json, 图片生成/图生图/产品修图打光_2077941587761524737.json, 图片生成/图生图/电商产品修图打光无损无偏移工作流2.0_2067061200311119873.json, 图片生成/图生图/电商产品修图打光无损无偏移工作流2.0_2067170694919704578.json]
+members: [图片生成/图生图/KINGHERE-klein摄影溶图+KLEIN高清放大V4_2040852851857035265.json, 图片生成/图生图/Klein高清重绘放大_2032838566539169794.json, 图片生成/图生图/▶F2K-高清重绘_2046072734924414977.json, 图片生成/图生图/▶Flux2_Klein-换脸高一致性编辑流+KV加速流_2060565541210910722.json, 图片生成/图生图/▶Flux2_Klein-高清重绘+高一致性编辑流+KV加速流_2041692902253924353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_139
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2修图打光_2070444065451233281.json、图片生成/图生图/产品修图打光_2077941587761524737.json、图片生成/图生图/电商产品修图打光无损无偏移工作流2.0_2067061200311119873.json、图片生成/图生图/电商产品修图打光无损无偏移工作流2.0_2067170694919704578.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/KINGHERE-klein摄影溶图+KLEIN高清放大V4_2040852851857035265.json、图片生成/图生图/Klein高清重绘放大_2032838566539169794.json、图片生成/图生图/▶F2K-高清重绘_2046072734924414977.json、图片生成/图生图/▶Flux2_Klein-换脸高一致性编辑流+KV加速流_2060565541210910722.json、图片生成/图生图/▶Flux2_Klein-高清重绘+高一致性编辑流+KV加速流_2041692902253924353.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Bounded Image Crop`
+全部 5 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Input Switch (4 way)`
+- `CR Prompt Text`
+- `CR Text Concatenate`
+- `ColorMatch`
 - `ConditioningZeroOut`
-- `DF_Integer`
 - `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
 - `Flux2Scheduler`
-- `Get Image Size`
 - `GetImageSize`
 - `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RHHiddenNodes`
 - `RandomNoise`
 - `ReferenceLatent`
-- `ResizeAndPadImage`
-- `ResizeImageMixlab`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `Seed (rgthree)`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageColorMatch`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `ShowText|pysssss` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `GrowMask` —— 1/4 个有
-- `ImageUpscaleWithModel` —— 1/4 个有
-- `InvertMask` —— 1/4 个有
-- `JoinImageWithAlpha` —— 1/4 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/4 个有
-- `Upscale Model Loader` —— 1/4 个有
-- `YUAN_TXTConvertAny` —— 1/4 个有
+- `Florence2ModelLoader` —— 2/5 个有
+- `Florence2Run` —— 2/5 个有
+- `FluxKVCache` —— 2/5 个有
+- `WD14Tagger|pysssss` —— 2/5 个有
+- `BiRefNetRMBG` —— 1/5 个有
+- `ConstrainImage|pysssss` —— 1/5 个有
+- `Crop (mtb)` —— 1/5 个有
+- `DetailTransfer` —— 1/5 个有
+- `GetImageSize+` —— 1/5 个有
+- `ImpactSwitch` —— 1/5 个有
+- `Int` —— 1/5 个有
+- `LayerMask: MaskGrow` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
+- `SeedVR2LoadDiTModel` —— 1/5 个有
+- `SeedVR2LoadVAEModel` —— 1/5 个有
+- `SeedVR2VideoUpscaler` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,58 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_61
 type: Unknown Workflow
-frequency: 20
+frequency: 23
 level: moderate
-coverage: 0.6201
-common_nodes: [BasicGuider, GetNode, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8GH, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VHS_VideoCombine, easy anythingIndexSwitch, easy ifElse, 孤海注释]
+coverage: 0.562348
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/MiniMax-H3_二采分块_4K直出_2098929591372050434.json, 图片生成/文生图/MiniMax-H3_二采分块_4K直出_2099663162428715009.json, 视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2091427388746985474.json, 视频生成/图生视频/MiniMax-H3  二采分块  直出1080p视频！_2097546059542257665.json, 视频生成/图生视频/MiniMax-H3  二采分块 4K直出002_2114535419584012289.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2102927651173396481.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2104381990047932417.json, 视频生成/图生视频/MiniMax-H3_二采分块_2K_4K直出_2104842146724532225.json, 视频生成/图生视频/MiniMax-H3_二采分块_4K直出_2099775303945121794.json, 视频生成/图生视频/MiniMax-H3_二采分块_4K直出_2100034930007953410.json, 视频生成/图生视频/MiniMax-H3_孤海 V3_2104490856966348801.json, 视频生成/文生视频/MiniMax-H3   4K直出_2098005527233126402.json, 视频生成/文生视频/MiniMax-H3  二采分块 2K 4K直出_2100785082779918337.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出 改进_2098968521681235969.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出_2096756610927517697.json, 视频生成/文生视频/MiniMax-H3  二采分块 4K直出_2097566364851597314.json, 视频生成/文生视频/MiniMax-H3 智能创作平台+二采+分块 4K直出_2097563335922376706.json, 视频生成/文生视频/MiniMax_-_H3_智能一体化视频创作_2113552444729946113.json, 视频生成/文生视频/啊癫 MiniMax-H3  二采分块 4K直出_2097351601014001665.json, 视频生成/文生视频/孤海 - MiniMax - H3 智能一体化视频创作 V3_2097904013336473601.json]
+members: [数字人/数字人/Sec版本-视频人物替换-Wan Animate20251017_1978992368751906818.json, 数字人/数字人/alan自用-主体替换sec video segmentation_1983904795276836866.json, 数字人/数字人/人物替换   角色替换   二创首选  Wan2.2 wan22_2045772090871123969.json, 数字人/数字人/人物替换  角色替换   二创首选_2052270878615977985.json, 数字人/数字人/视频人物替换-Wan Animate_V2版_1976639386127343617.json, 数字人/数字人/视频人物替换电商跨境wan2.2-Animate_1988091546115416066.json, 数字人/数字人/长视频 人物替换动作迁移wan2.2-Animate_1976989855852961793.json, 视频生成/图生视频/Wan2.2  Wan22 角色替换   动作迁移  二创首选_2042132086164819970.json, 视频生成/图生视频/Wan2.2  wan 二创首选 角色替换 动作模仿 图生视频_2042131699907170305.json, 视频生成/图生视频/Wan2.2  wan 角色替换 动作模仿 图生视频_2042176153171009537.json, 视频生成/图生视频/Wan2.2  wan 角色替换 动作模仿 图生视频_2042932527039516674.json, 视频生成/图生视频/Wan2.2  二创首选 角色替换 动作模仿 图生视频_2041872588984557569.json, 视频生成/图生视频/Wan2.2  人物替换_角色替换_动作模仿_二创首选_2039518740357844993.json, 视频生成/图生视频/Wan2.2  角色替换_动作模仿_图生视频_2039615736561274882.json, 视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换 二创首选_2021541718369247233.json, 视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换 二创首选工作流_2088990764796825602.json, 视频生成/图生视频/Wan2.2 精准角色替换 动作迁移  人物替换_2039613263704494081.json, 视频生成/图生视频/Wan2.2 角色替换   动作迁移  二创首选_2039620407292076033.json, 视频生成/图生视频/kitten practicing kung fu_2084182943492300802.json, 视频生成/图生视频/kitten practicing kung fu_2091771507398762498.json, 视频生成/图生视频/人物替换  角色替换   二创首选  Wan2.2 wan22_2046064441040572417.json, 视频生成/图生视频/人物替换  角色替换   二创首选  Wan2.2 wan22_2046446441639448578.json, 视频生成/图生视频/双向引导人物主体替换2.2+sec_1984107698880970753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_61
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/MiniMax-H3_二采分块_4K直出_2098929591372050434.json、图片生成/文生图/MiniMax-H3_二采分块_4K直出_2099663162428715009.json、视频生成/图生视频/MiniMax - H3 智能一体化视频创作_2091427388746985474.json、视频生成/图生视频/MiniMax-H3  二采分块  直出1080p视频！_2097546059542257665.json、视频生成/图生视频/MiniMax-H3  二采分块 4K直出002_2114535419584012289.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（数字人/数字人/Sec版本-视频人物替换-Wan Animate20251017_1978992368751906818.json、数字人/数字人/alan自用-主体替换sec video segmentation_1983904795276836866.json、数字人/数字人/人物替换   角色替换   二创首选  Wan2.2 wan22_2045772090871123969.json、数字人/数字人/人物替换  角色替换   二创首选_2052270878615977985.json、数字人/数字人/视频人物替换-Wan Animate_V2版_1976639386127343617.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `BasicGuider`
+全部 23 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `LoraLoaderBypassModelOnly`
-- `MiniMaxH3AVDecodeT8GH`
-- `MiniMaxH3DualClockT8GH`
-- `MiniMaxH3IntegrationAdapterGH`
-- `MiniMaxH3IntegrationGH`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `SetNode`
-- `UNETLoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy anythingIndexSwitch`
-- `easy ifElse`
-- `孤海注释`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorCorrect` —— 18/20 个有
-- `GoohaiAnyExists` —— 18/20 个有
-- `GoohaiMinimaxH3LatentUpscalerGH` —— 18/20 个有
-- `GoohaiMinimaxH3TiledSampler` —— 18/20 个有
-- `GoohaiUniversalSlider` —— 18/20 个有
-- `SplitSigmas` —— 18/20 个有
-- `忽略多组孤海` —— 18/20 个有
-- `EmptyImage` —— 3/20 个有
-- `PreviewImage` —— 3/20 个有
-- `CM_FloatToInt` —— 1/20 个有
-- `PrimitiveFloat` —— 1/20 个有
-- `easy int` —— 1/20 个有
+- `SeCModelLoader` —— 21/23 个有
+- `SeCVideoSegmentation` —— 21/23 个有
+- `CR Text` —— 19/23 个有
+- `ImageConcanate` —— 19/23 个有
+- `InvertMask` —— 19/23 个有
+- `LayerUtility: ImageBlend` —— 19/23 个有
+- `MaskToImage` —— 19/23 个有
+- `PointsEditor` —— 18/23 个有
+- `GrowMask` —— 17/23 个有
+- `VHS_VideoInfo` —— 17/23 个有
+- `ImageFromBatch+` —— 16/23 个有
+- `JWInteger` —— 16/23 个有
+- `PreviewImage` —— 16/23 个有
+- `easy cleanGpuUsed` —— 16/23 个有
+- `GrowMaskWithBlur` —— 6/23 个有
+- `ConvertAny2Int` —— 4/23 个有
+- `ImageConcatMulti` —— 4/23 个有
+- `Text` —— 4/23 个有
+- `easy float` —— 4/23 个有
+- `easy framesEditor` —— 3/23 个有
+- `DownloadAndLoadSAM2Model` —— 2/23 个有
+- `ImageFromBatch` —— 2/23 个有
+- `ImageScaleToTotalPixels` —— 2/23 个有
+- `IndexTTSNode` —— 2/23 个有
+- `MemoryCleaner` —— 2/23 个有
+- `Sam2Segmentation` —— 2/23 个有
+- `SeedVR2LoadDiTModel` —— 2/23 个有
+- `SeedVR2LoadVAEModel` —— 2/23 个有
+- `SeedVR2VideoUpscaler` —— 2/23 个有
+- `Text Multiline` —— 2/23 个有
+- `WanVideoTorchCompileSettings` —— 2/23 个有
+- `easy showAnything` —— 2/23 个有
 
 ## 典型参数
 

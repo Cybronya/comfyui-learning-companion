@@ -3,33 +3,33 @@ name: unknown_workflow_generic_420
 type: Unknown Workflow
 frequency: 7
 level: moderate
-coverage: 0.985714
-common_nodes: [LoadAudio, SaveAudio, SeedVCRun]
+coverage: 0.834857
+common_nodes: [AIO_Preprocessor, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/【海皮】保姆级音色迁移_2041723481255055362.json, 音频生成/音频生成/亿薪AI-声线迁移_2020449982645538818.json, 音频生成/音频生成/语音音色克隆_2010759017274023937.json, 音频生成/音频生成/语音音色克隆（音频生音频）_1990429307434655745.json, 音频生成/音频生成/音频换音色_2029048391027658753.json, 音频生成/音频生成/音频转音色_1979826267300204545.json, 音频生成/音频生成/音频音色克隆-阿浩_2026923898918408193.json]
+members: [图片生成/图生图/AUX-Preprocessor_2068683667567890433.json, 图片生成/图生图/【CQ808】深度图生成_2054508777520549890.json, 图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054415809010774018.json, 图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054428621338619905.json, 图片生成/图生图/生成线稿工作流_1973003798635483138.json, 平台全量/服装细节_1998670366933405698.json, 平台全量/生成骨骼图 SDPose 批量处理+全节点注释_2072019837735493633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_420
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（音频生成/音频生成/【海皮】保姆级音色迁移_2041723481255055362.json、音频生成/音频生成/亿薪AI-声线迁移_2020449982645538818.json、音频生成/音频生成/语音音色克隆_2010759017274023937.json、音频生成/音频生成/语音音色克隆（音频生音频）_1990429307434655745.json、音频生成/音频生成/音频换音色_2029048391027658753.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/AUX-Preprocessor_2068683667567890433.json、图片生成/图生图/【CQ808】深度图生成_2054508777520549890.json、图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054415809010774018.json、图片生成/图生图/万能骨骼图 SDPose 批量处理+全节点注释_2054428621338619905.json、图片生成/图生图/生成线稿工作流_1973003798635483138.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
-- `LoadAudio`
-- `SaveAudio`
-- `SeedVCRun`
+- `AIO_Preprocessor`
+- `LoadImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioSeparation` —— 5/7 个有
-- `Label (rgthree)` —— 3/7 个有
+- `MakeListNode` —— 3/7 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/7 个有
 
 ## 典型参数
 

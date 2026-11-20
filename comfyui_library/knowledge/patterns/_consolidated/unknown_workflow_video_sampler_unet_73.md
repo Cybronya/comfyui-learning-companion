@@ -1,68 +1,55 @@
 ---
 name: unknown_workflow_video_sampler_unet_73
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6575
-common_nodes: [AudioCrop, BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, easy showAnything]
+frequency: 5
+level: moderate
+coverage: 0.6828
+common_nodes: [BasicGuider, MiniMaxH3AVDecodeT8GH, MiniMaxH3DualClockT8GH, MiniMaxH3IntegrationAdapterGH, MiniMaxH3IntegrationGH, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/MiniMax h3音频驱动数字人对口型-自动写提示词+全节点注释_2089689798725423105.json, 数字人/数字人/MinimaxH3音频驱动+语音克隆_2086995655117070338.json]
+members: [视频生成/文生视频/MiniMax-H3图生视频工作流.json, 视频生成/文生视频/minimax-h3-全能参考一体化_2093965123072380929.json, 视频生成/文生视频/【傲雪AIGC】MiniMax - H3 短剧+漫剧+真人剧 - 多参视频输出_2092871905568182273.json, 视频生成/文生视频/全自动智能MiniMax - H3 全自动提示词智能视频创作平台_2090358016645357569.json, 视频生成/文生视频/图+音+MiniMaxH3_2093570622650667014.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_73
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/MiniMax h3音频驱动数字人对口型-自动写提示词+全节点注释_2089689798725423105.json、数字人/数字人/MinimaxH3音频驱动+语音克隆_2086995655117070338.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3图生视频工作流.json、视频生成/文生视频/minimax-h3-全能参考一体化_2093965123072380929.json、视频生成/文生视频/【傲雪AIGC】MiniMax - H3 短剧+漫剧+真人剧 - 多参视频输出_2092871905568182273.json、视频生成/文生视频/全自动智能MiniMax - H3 全自动提示词智能视频创作平台_2090358016645357569.json、视频生成/文生视频/图+音+MiniMaxH3_2093570622650667014.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **样本数**：5
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioCrop`
+全部 5 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Text`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
+- `MiniMaxH3AVDecodeT8GH`
+- `MiniMaxH3DualClockT8GH`
+- `MiniMaxH3IntegrationAdapterGH`
+- `MiniMaxH3IntegrationGH`
 - `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SoundFlow_GetLength`
 - `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `AudioBeforeAfterSilence` —— 1/2 个有
-- `AudioConcat` —— 1/2 个有
-- `EmptyAudio` —— 1/2 个有
-- `HeartMuLa_Transcribe` —— 1/2 个有
-- `JoinStringMulti` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `Qwen3TTSModelLoader` —— 1/2 个有
-- `Qwen3TTSVoiceClone` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `ToString` —— 1/2 个有
-- `llama_cpp_instruct_adv` —— 1/2 个有
-- `llama_cpp_model_loader` —— 1/2 个有
-- `llama_cpp_parameters` —— 1/2 个有
+- `GetNode` —— 4/5 个有
+- `LoraLoaderBypassModelOnly` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `easy ifElse` —— 4/5 个有
+- `easy anythingIndexSwitch` —— 3/5 个有
+- `LoadImage` —— 2/5 个有
+- `SaveAudioAdvanced` —— 2/5 个有
+- `孤海注释` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `PlaySound|pysssss` —— 1/5 个有
+- `PreviewAudio` —— 1/5 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/5 个有
+- `RH_RhartImageG2OfficialTextToImage` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
 
 ## 典型参数
 
@@ -74,4 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

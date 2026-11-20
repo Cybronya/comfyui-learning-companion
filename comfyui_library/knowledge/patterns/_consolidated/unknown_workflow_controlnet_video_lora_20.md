@@ -1,77 +1,90 @@
 ---
 name: unknown_workflow_controlnet_video_lora_20
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.4732
-common_nodes: [CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ComfyMathExpression, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetNode, INTConstant, ImageConcanate, ImageResizeKJv2, ImpactConditionalBranch, LoadImage, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, TTResolutionSelector, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus ContextOptions, WanAnimatePlus Decode, WanAnimatePlus Encode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus TextEncodeCached, WanAnimatePlus Uni3C ControlnetLoader, WanAnimatePlus Uni3C Embeds, WanAnimatePlus VAELoader, easy boolean, easy imageRemBg]
+coverage: 0.651857
+common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Scail2-GGUF版本_2067110261546381314.json, 图片生成/图生图/【Aaron寄语秋歌】Scail-2无劣化+长视频手动分段工作流_2065490120324767746.json, 视频生成/图生视频/SCAIL-2长视频分段｜Aaron寄语秋歌工作流复用版_2101630581737091074.json, 视频生成/图生视频/【南音Scail-2客户高定版，会员专享_2074092071199272961.json, 视频生成/图生视频/（王炸版）Scail-2万能分段无缝视频替换工作流_2072271297572331522.json]
+members: [平台全量/视频编辑_动作迁移_多人_长视频_Scail_2002350987564183553.json, 平台全量/🕺丝滑动作迁移-SCAIL适配各种风格也适合双人🕺_2036317753467998209.json, 数字人/数字人/动作迁移-SCAIL_2000447654070976513.json, 视频生成/图生视频/044-SCAIL动作迁移3.0-适配各种风格-单双人均可25-12-16_2000835179973406721.json, 视频生成/图生视频/SCAIL 单人_双人，支持丝滑转身，Q版，动物等角色，支持不同构图_2007356620417798146.json, 视频生成/图生视频/SCAIL 多人动作迁移_2001530537791614977.json, 视频生成/图生视频/适配各种风格也适合双人动作迁移丝滑_2002389202262212609.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_20
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Scail2-GGUF版本_2067110261546381314.json、图片生成/图生图/【Aaron寄语秋歌】Scail-2无劣化+长视频手动分段工作流_2065490120324767746.json、视频生成/图生视频/SCAIL-2长视频分段｜Aaron寄语秋歌工作流复用版_2101630581737091074.json、视频生成/图生视频/【南音Scail-2客户高定版，会员专享_2074092071199272961.json、视频生成/图生视频/（王炸版）Scail-2万能分段无缝视频替换工作流_2072271297572331522.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/视频编辑_动作迁移_多人_长视频_Scail_2002350987564183553.json、平台全量/🕺丝滑动作迁移-SCAIL适配各种风格也适合双人🕺_2036317753467998209.json、数字人/数字人/动作迁移-SCAIL_2000447654070976513.json、视频生成/图生视频/044-SCAIL动作迁移3.0-适配各种风格-单双人均可25-12-16_2000835179973406721.json、视频生成/图生视频/SCAIL 单人_双人，支持丝滑转身，Q版，动物等角色，支持不同构图_2007356620417798146.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPTextEncode`
+全部 7 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `INTConstant`
-- `ImageConcanate`
+- `DownloadAndLoadNLFModel`
+- `GetImageSizeAndCount`
 - `ImageResizeKJv2`
-- `ImpactConditionalBranch`
 - `LoadImage`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
+- `LoadWanVideoT5TextEncoder`
+- `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
+- `RenderNLFPoses`
 - `SetNode`
-- `TTResolutionSelector`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode`
-- `WanAnimatePlus ContextOptions`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus Encode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus SamplerFromSettings`
-- `WanAnimatePlus SamplerSettings`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus Uni3C ControlnetLoader`
-- `WanAnimatePlus Uni3C Embeds`
-- `WanAnimatePlus VAELoader`
-- `easy boolean`
-- `easy imageRemBg`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoUni3C_ControlnetLoader`
+- `WanVideoUni3C_embeds`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 4/5 个有
-- `ImageFromBatch` —— 4/5 个有
-- `SimpleMath+` —— 4/5 个有
-- `easy int` —— 4/5 个有
-- `孤海注释` —— 3/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `ImageFromBatch+` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
-- `easy showAnything` —— 1/5 个有
-- `easy string` —— 1/5 个有
+- `GetNode` —— 6/7 个有
+- `ImageConcatMulti` —— 6/7 个有
+- `SimpleMath+` —— 6/7 个有
+- `FloatConstant` —— 5/7 个有
+- `CR Text` —— 4/7 个有
+- `WanVideoTorchCompileSettings` —— 4/7 个有
+- `easy int` —— 4/7 个有
+- `Fast Bypasser (rgthree)` —— 3/7 个有
+- `INTConstant` —— 3/7 个有
+- `Mute / Bypass Repeater (rgthree)` —— 3/7 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 2/7 个有
+- `DWPreprocessor` —— 2/7 个有
+- `VHS_VideoInfoLoaded` —— 2/7 个有
+- `CR SDXL Aspect Ratio` —— 1/7 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `GIMMVFI_interpolate` —— 1/7 个有
+- `ImageScaleBy` —— 1/7 个有
+- `ImageScaleToMaxDimension` —— 1/7 个有
+- `PreviewAny` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `SeedVR2LoadDiTModel` —— 1/7 个有
+- `SeedVR2LoadVAEModel` —— 1/7 个有
+- `SeedVR2VideoUpscaler` —— 1/7 个有
+- `SimpleCalculatorKJ` —— 1/7 个有
+- `WanVideoLoraSelectMulti` —— 1/7 个有
+- `easy compare` —— 1/7 个有
+- `easy ifElse` —— 1/7 个有
 
 ## 典型参数
 

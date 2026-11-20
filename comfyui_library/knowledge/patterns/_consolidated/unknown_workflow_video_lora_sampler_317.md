@@ -1,80 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_317
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.6485
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PainterI2V, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+frequency: 9
+level: moderate
+coverage: 0.880667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, Fast Groups Bypasser (rgthree), H3SigmaRefiner, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_2010362825717325826.json, 视频生成/图生视频/万象+runninghub制作动漫短剧-图生视频工作流（480P横屏）_2038254959346589697.json, 视频生成/图生视频/万象+runninghub制作动漫短剧图生视频工作流 480P图生视频+V：dxyc2291获取软件_2019552867903868930.json, 视频生成/图生视频/图生视频 自动提示词_2074669211259072514.json, 视频生成/图生视频/图生视频-最强Wan2.2动漫模型DaSiWa_2009346711700901890.json, 视频生成/图生视频/图生视频（6-10秒）自动提示词（动漫特化，写实也很强！）小白上手！_2013233044202721281.json, 视频生成/图生视频/无脑小白上手高画质：图生视频（3-10秒）v2版 更精准_2010920554626293761.json, 视频生成/文生视频/万象+runninghub制作动漫短剧图生视频工作流（480P横屏）+V：50259731获取软件_2002386569740861441.json]
+members: [平台全量/文不油_武不糊！MINIMAXH3_双采样V3_全面升级！_2118111267121618946.json, 平台全量/文武全能 MINIMAXH3 双采样V4_2115296750738169857.json, 平台全量/文武全能 MINIMAXH3 双采样V4_2119632947182657538.json, 视频生成/图生视频/Mnimaxh3 极简流分块二采 支持种子固定_2104508927865085954.json, 视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098588498583445506.json, 视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2109663330502795265.json, 视频生成/文生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098012326409621505.json, 视频生成/文生视频/文戏-提示词练习_2098925401614671874.json, 视频生成/文生视频/极简双采_2102955651466096641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_317
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/video_wan2_2_14B_i2v_more_motion_2010362825717325826.json、视频生成/图生视频/万象+runninghub制作动漫短剧-图生视频工作流（480P横屏）_2038254959346589697.json、视频生成/图生视频/万象+runninghub制作动漫短剧图生视频工作流 480P图生视频+V：dxyc2291获取软件_2019552867903868930.json、视频生成/图生视频/图生视频 自动提示词_2074669211259072514.json、视频生成/图生视频/图生视频-最强Wan2.2动漫模型DaSiWa_2009346711700901890.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/文不油_武不糊！MINIMAXH3_双采样V3_全面升级！_2118111267121618946.json、平台全量/文武全能 MINIMAXH3 双采样V4_2115296750738169857.json、平台全量/文武全能 MINIMAXH3 双采样V4_2119632947182657538.json、视频生成/图生视频/Mnimaxh3 极简流分块二采 支持种子固定_2104508927865085954.json、视频生成/图生视频/文不油 武不糊！MINIMAXH3 双采样V3  全面升级！_2098588498583445506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：65%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `GetNode`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Fast Groups Bypasser (rgthree)`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelSamplingSD3`
-- `PainterI2V`
-- `PathchSageAttentionKJ`
-- `SetNode`
+- `MiniMaxH3Easy`
+- `MiniMaxH3EasyModelAdapter`
+- `MiniMaxH3EasyOutput`
+- `ModelAttentionBackend`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 7/8 个有
-- `Text Concatenate` —— 7/8 个有
-- `CR Text Replace` —— 6/8 个有
-- `PreviewAny` —— 6/8 个有
-- `AILab_QwenVL` —— 4/8 个有
-- `CFGZeroStar` —— 4/8 个有
-- `CR Integer To String` —— 4/8 个有
-- `CR Text` —— 4/8 个有
-- `ColorMatch` —— 4/8 个有
-- `GetAudioDurationFromAudio` —— 4/8 个有
-- `JWInteger` —— 4/8 个有
-- `LoadAudio` —— 4/8 个有
-- `ModelPatchTorchSettings` —— 4/8 个有
-- `Text Multiline` —— 4/8 个有
-- `WanVideoNAG` —— 4/8 个有
-- `wanBlockSwap` —— 4/8 个有
-- `Qwen3_VQA` —— 3/8 个有
-- `TextInput_` —— 3/8 个有
-- `LoadVideo` —— 2/8 个有
-- `RHHiddenNodes` —— 1/8 个有
-- `Text` —— 1/8 个有
+- `ConditioningZeroOut` —— 8/9 个有
+- `GetLatentSizeAndCount` —— 8/9 个有
+- `MiniMaxChunkFeedForward` —— 8/9 个有
+- `MiniMaxH3EasyMediaLoader` —— 8/9 个有
+- `MiniMaxLowVRAMAttention` —— 8/9 个有
+- `ModelPreviewOverrideKJ` —— 8/9 个有
+- `SelfLiftH3Sampler` —— 6/9 个有
+- `GoohaiMinimaxH3TiledSampler` —— 3/9 个有
+- `LTXVConcatAVLatent` —— 3/9 个有
+- `LTXVSeparateAVLatent` —— 3/9 个有
+- `MiniMaxH3EasySecondPassConditioning` —— 3/9 个有
+- `MinimaxH3LatentUpscaler3D` —— 3/9 个有
+- `SplitSigmas` —— 3/9 个有
+- `BlockSparseAttention` —— 2/9 个有
+- `SelfLiftAvatarH3Sampler` —— 2/9 个有
+- `JDCN_VHSFileMover` —— 1/9 个有
+- `SaveImage` —— 1/9 个有
+- `Vignette` —— 1/9 个有
+- `easy saveText` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 8 | 50% |
-| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | lcm | - | 8 | 50% |
-| 重绘幅度 | simple | - | 8 | 88% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -82,8 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，8 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，8 个样本，一致性 50%
-- 重绘幅度 最常用 simple，8 个样本，一致性 88%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

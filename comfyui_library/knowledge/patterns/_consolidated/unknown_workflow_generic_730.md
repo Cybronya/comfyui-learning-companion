@@ -1,40 +1,41 @@
 ---
 name: unknown_workflow_generic_730
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.574
-common_nodes: [JjkText, LayerUtility: TextJoin, LoadImage, SaveImage, easy promptList]
+coverage: 0.7832
+common_nodes: [CR Prompt Text, Float, LoadAudio, PreviewAudio, SaveAudioAdvanced, YuE2GenerateCover, YuE2ModelLoader, YuE2ReferenceVoiceCover, YuE2Transcribe]
 problems: []
 missing: []
-members: [图片生成/图生图/image_gemini.json_2082301956990791681.json, 图片生成/图生图/image_gemini.json_2098290683168780289.json, 图片生成/文生图/Share Widget_2086637164250619906.json, 图片生成/文生图/check-in share image_2095684493167390722.json]
+members: [图片生成/文生图/Yue2音色参考歌词重写音乐生成_2101875297305063426.json, 音频生成/音频生成/AI歌曲翻唱丨YuE2＋Seed-VC丨旋律重制·音色转换_2100463228756254721.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105119345918701569.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105496644690210817.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐翻唱_2099767804454072322.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_730
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/image_gemini.json_2082301956990791681.json、图片生成/图生图/image_gemini.json_2098290683168780289.json、图片生成/文生图/Share Widget_2086637164250619906.json、图片生成/文生图/check-in share image_2095684493167390722.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Yue2音色参考歌词重写音乐生成_2101875297305063426.json、音频生成/音频生成/AI歌曲翻唱丨YuE2＋Seed-VC丨旋律重制·音色转换_2100463228756254721.json、音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105119345918701569.json、音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105496644690210817.json、音频生成/音频生成/Yue2音色参考歌词重写音乐翻唱_2099767804454072322.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：57%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `LayerUtility: TextJoin`
-- `LoadImage`
-- `SaveImage`
-- `easy promptList`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `Float`
+- `LoadAudio`
+- `PreviewAudio`
+- `SaveAudioAdvanced`
+- `YuE2GenerateCover`
+- `YuE2ModelLoader`
+- `YuE2ReferenceVoiceCover`
+- `YuE2Transcribe`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
-- `ShowAnything|Mie` —— 2/4 个有
-- `CR Text Concatenate` —— 1/4 个有
-- `ImageScale` —— 1/4 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/4 个有
+- `EmptyImage` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
 
 ## 典型参数
 

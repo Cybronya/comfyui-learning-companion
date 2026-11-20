@@ -3,52 +3,72 @@ name: unknown_workflow_video_upscale_latent_upscale_149
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.963
-common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyOutput, MinimaxH3LatentUpscaler3D, ModelAttentionBackend, RandomNoise, SamplerCustomAdvanced, SplitSigmas, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, 忽略多组孤海]
+coverage: 0.5715
+common_nodes: [AudioConcat, CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, GetImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchExtendWithOverlap, ImageBatchMulti, ImageResizeKJv2, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, ManualSigmas, NormalizeAudioLoudness, PreviewAny, PreviewAudio, PrimitiveBoolean, PrimitiveInt, RTXVideoSuperResolution, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetNode, TextGenerateLTX2Prompt, TrimAudio, TrimAudioDuration, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json, 视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json]
+members: [平台全量/video_ltx2_3_extend_video_hres_2034857619277488130.json, 视频生成/图生视频/LTX-2.3  2K高清视频扩展工作流 V1.0_2038707377737834497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_149
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/minimax H3 邪修音频驱动_2097635867723653122.json、视频生成/文生视频/MinimaxH3工作流多合一极简版（配套优化提示词直接@使用）_2096935267025379329.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/video_ltx2_3_extend_video_hres_2034857619277488130.json、视频生成/图生视频/LTX-2.3  2K高清视频扩展工作流 V1.0_2038707377737834497.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `AudioConcat`
+- `CFGGuider`
+- `CLIPTextEncode`
+- `ComfyMathExpression`
+- `DualCLIPLoader`
+- `GetImage`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVideoMask`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyMediaLoader`
-- `MiniMaxH3EasyOutput`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelAttentionBackend`
+- `LatentUpscaleModelLoader`
+- `ManualSigmas`
+- `NormalizeAudioLoudness`
+- `PreviewAny`
+- `PreviewAudio`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `RTXVideoSuperResolution`
 - `RandomNoise`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SplitSigmas`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `SetNode`
+- `TextGenerateLTX2Prompt`
+- `TrimAudio`
+- `TrimAudioDuration`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
+- `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `忽略多组孤海`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `ModelPreviewOverrideKJ` —— 1/2 个有
-- `VRGDG_MiniMaxH3AudioDrive` —— 1/2 个有
-- `easy float` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `VHS_VideoInfo`
+- `easy showAnything`
 
 ## 典型参数
 

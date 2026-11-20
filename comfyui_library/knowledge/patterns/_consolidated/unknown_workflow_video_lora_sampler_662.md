@@ -1,103 +1,96 @@
 ---
 name: unknown_workflow_video_lora_sampler_662
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.421
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetNode, GrowMaskWithBlur, INTConstant, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PrimitiveStringMultiline, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy cleanGpuUsed, easy clearCacheAll]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.643
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, ComfyEverAnimate, ComfyEverAnimateTrimImages, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, INTConstant, ImageBatch, ImageConcatMulti, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, ModelMemoryUsageFactorOverride, ModelPatchTorchSettings, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, PreviewImage, Sam2Segmentation, Seed (rgthree), SetNode, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanChunkFeedForward]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/啊不不2.0_1993514131133235201.json, 数字人/数字人/数字人抠图测试（请无视、别浪费大家的积分）_1993671742266818561.json, 视频生成/图生视频/自己玩_1995102886726184962.json]
+members: [平台全量/EverAnimate长视频人体动画动作迁移_2062510369326850050.json, 视频生成/图生视频/EverAnimate for循环任意时长视频动作迁移_人体替换_2062571158205198337.json, 视频生成/图生视频/EverAnimate 无限动作迁移_2062845176858628097.json, 视频生成/图生视频/EverAnimate多参视频编辑Beta版_2062427659103199234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_662
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/啊不不2.0_1993514131133235201.json、数字人/数字人/数字人抠图测试（请无视、别浪费大家的积分）_1993671742266818561.json、视频生成/图生视频/自己玩_1995102886726184962.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/EverAnimate长视频人体动画动作迁移_2062510369326850050.json、视频生成/图生视频/EverAnimate for循环任意时长视频动作迁移_人体替换_2062571158205198337.json、视频生成/图生视频/EverAnimate 无限动作迁移_2062845176858628097.json、视频生成/图生视频/EverAnimate多参视频编辑Beta版_2062427659103199234.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：42%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BlockifyMask`
-- `CLIPVisionLoader`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `ComfyEverAnimate`
+- `ComfyEverAnimateTrimImages`
+- `DownloadAndLoadSAM2Model`
 - `DrawMaskOnImage`
-- `Fast Groups Bypasser (rgthree)`
+- `DrawViTPose`
+- `GetImageSizeAndCount`
 - `GetNode`
 - `GrowMaskWithBlur`
 - `INTConstant`
+- `ImageBatch`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `KSampler`
 - `LoadImage`
+- `LoraLoaderModelOnly`
+- `ModelMemoryUsageFactorOverride`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
 - `OnnxDetectionModelLoader`
+- `PathchSageAttentionKJ`
 - `PoseAndFaceDetection`
-- `PrimitiveStringMultiline`
+- `PreviewImage`
+- `Sam2Segmentation`
+- `Seed (rgthree)`
 - `SetNode`
+- `TrimVideoLatent`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
+- `WanChunkFeedForward`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPLoader` —— 2/3 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/3 个有
-- `DrawViTPose` —— 2/3 个有
-- `GIMMVFI_interpolate` —— 2/3 个有
-- `GrowMask` —— 2/3 个有
-- `ImageConcatMulti` —— 2/3 个有
-- `ImageFromBatch` —— 2/3 个有
-- `ImageRemoveBackground+` —— 2/3 个有
-- `ImageScaleBy` —— 2/3 个有
-- `PlaySound|pysssss` —— 2/3 个有
-- `PointsEditor` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `RemBGSession+` —— 2/3 个有
-- `SeCModelLoader` —— 2/3 个有
-- `SeCVideoSegmentation` —— 2/3 个有
-- `SeedVR2` —— 2/3 个有
-- `SeedVR2BlockSwap` —— 2/3 个有
-- `SeedVR2ExtraArgs` —— 2/3 个有
-- `easy seed` —— 2/3 个有
-- `Any Switch (rgthree)` —— 1/3 个有
-- `Bookmark (rgthree)` —— 1/3 个有
-- `CR Image Input Switch (4 way)` —— 1/3 个有
-- `DownloadAndLoadSAM2Model` —— 1/3 个有
-- `Float` —— 1/3 个有
-- `GroundingDinoModelLoader (segment anything)` —— 1/3 个有
-- `ImpactSwitch` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `RMBG` —— 1/3 个有
-- `ResizeMask` —— 1/3 个有
-- `SDPoseOODLoader` —— 1/3 个有
-- `SDPoseOODProcessor` —— 1/3 个有
-- `Sam2Segmentation` —— 1/3 个有
-- `YOLOModelLoader` —— 1/3 个有
-- `easy sam3ModelLoader` —— 1/3 个有
-- `easy sam3VideoSegmentation` —— 1/3 个有
+- `FancyTimerNode` —— 3/4 个有
+- `Label (rgthree)` —— 3/4 个有
+- `TorchCompileModelWanVideo` —— 3/4 个有
+- `GetImageRangeFromBatch` —— 2/4 个有
+- `MathExpression|pysssss` —— 2/4 个有
+- `PrimitiveInt` —— 2/4 个有
+- `VHS_GetImageCount` —— 2/4 个有
+- `easy forLoopEnd` —— 2/4 个有
+- `easy forLoopStart` —— 2/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | lcm | - | 4 | 100% |
+| 调度器 | normal | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 30/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 lcm，4 个样本，一致性 100%
+- 调度器 最常用 normal，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（30/4 个样本）：Steps较低可能导致细节不足

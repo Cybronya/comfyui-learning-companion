@@ -3,35 +3,38 @@ name: unknown_workflow_generic_1701
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.833
-common_nodes: [LoadAudio, LoadImage, PrimitiveStringMultiline, SaveVideo, easy cleanGpuUsed]
+coverage: 0.981
+common_nodes: [CR Text, JjkShowText, LayerUtility: TextJoin, LoadImage, RHSettingsNode, RH_LLMAPI_Pro_Node, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/seedance2.0 fast 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046891021061066753.json, 视频生成/图生视频/seedance2.0 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046870997684457473.json]
+members: [图片生成/图生图/参考爆款的拍摄角度_2065011048004018177.json, 图片生成/图生图/鞋子多角度白底主图生成_2062560206743232514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1701
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/seedance2.0 fast 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046891021061066753.json、视频生成/图生视频/seedance2.0 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046870997684457473.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/参考爆款的拍摄角度_2065011048004018177.json、图片生成/图生图/鞋子多角度白底主图生成_2062560206743232514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadAudio`
+- `CR Text`
+- `JjkShowText`
+- `LayerUtility: TextJoin`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `SaveVideo`
-- `easy cleanGpuUsed`
+- `RHSettingsNode`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 1/2 个有
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 1/2 个有
+- `RH_RhartImageNG31FlashOfficialImageToImage` —— 1/2 个有
 
 ## 典型参数
 

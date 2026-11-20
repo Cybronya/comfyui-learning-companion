@@ -1,40 +1,57 @@
 ---
 name: unknown_workflow_generic_536
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7916
-common_nodes: [LoadImage, PreviewAny, SaveImage, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 0.799167
+common_nodes: [DF_Integer, ImageCASharpening+, ImageListToImageBatch, ImpactMinMax, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, PreviewImage, RH_Translator, SaveImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy cleanGpuUsed, easy clearCacheAll, easy imageBatchToImageList, easy imageSize]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Llama-cpp本地图片提示词反推_2100759282450001922.json, 图片生成/反推提示词/Qwen 3.5反推提示词_2071901170687365122.json, 图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜图片反推智能解析_2031694652381859842.json, 图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜视频剧情生成器_2031707148383690754.json, 图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜视频反推智能解析_2031700361131593729.json]
+members: [图片生成/图生图/-全能图片V12 4k服装上身_1991771005792235522.json, 图片生成/图生图/FluxKontext pro+高清放大（超高效）_1962366519088910337.json, 图片生成/图生图/迄今超强一致性-全能图片V12谷歌大香蕉一句话对图像编辑万物多图编辑+可选4k高清放大_1960610141710278658.json, 图片生成/图生图/迄今超强一致性-全能图片V12谷歌大香蕉一句话对图像编辑万物超多图编辑+可选4k高清放大_1961249181384032258.json, 图片生成/图生图/迄今超强全能图片2极速出图_Pro谷歌大香蕉一句话对图像编辑万物单_双图编辑+可选4k高清放大_1960707128661094401.json, 平台全量/超强一致性-全能图片V12服装迁移，可选4k高清放大_1992059637958594562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_536
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/Llama-cpp本地图片提示词反推_2100759282450001922.json、图片生成/反推提示词/Qwen 3.5反推提示词_2071901170687365122.json、图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜图片反推智能解析_2031694652381859842.json、图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜视频剧情生成器_2031707148383690754.json、图片生成/反推提示词/Qwen3.5大模型，自动生成专业提示词｜视频反推智能解析_2031700361131593729.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/-全能图片V12 4k服装上身_1991771005792235522.json、图片生成/图生图/FluxKontext pro+高清放大（超高效）_1962366519088910337.json、图片生成/图生图/迄今超强一致性-全能图片V12谷歌大香蕉一句话对图像编辑万物多图编辑+可选4k高清放大_1960610141710278658.json、图片生成/图生图/迄今超强一致性-全能图片V12谷歌大香蕉一句话对图像编辑万物超多图编辑+可选4k高清放大_1961249181384032258.json、图片生成/图生图/迄今超强全能图片2极速出图_Pro谷歌大香蕉一句话对图像编辑万物单_双图编辑+可选4k高清放大_1960707128661094401.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `DF_Integer`
+- `ImageCASharpening+`
+- `ImageListToImageBatch`
+- `ImpactMinMax`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewAny`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `RH_Translator`
 - `SaveImage`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
+- `SeedVR2`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy imageBatchToImageList`
+- `easy imageSize`
 
 **可变部分**（部分 workflow 才有）：
-- `llama_cpp_parameters` —— 4/5 个有
-- `easy saveText` —— 3/5 个有
-- `JjkText` —— 1/5 个有
-- `PromptEnhancerPreset` —— 1/5 个有
-- `VHS_LoadVideo` —— 1/5 个有
+- `ImageConcatMulti` —— 5/6 个有
+- `RH_LLMAPI_NODE` —— 5/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 5/6 个有
+- `Text Multiline` —— 5/6 个有
+- `easy showAnything` —— 5/6 个有
+- `ConstrainImage|pysssss` —— 4/6 个有
+- `RH_Nano_Banana_Image2Image` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `RH_ComfyFluxKontext` —— 1/6 个有
 
 ## 典型参数
 

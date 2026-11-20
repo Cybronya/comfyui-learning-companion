@@ -1,41 +1,41 @@
 ---
 name: unknown_workflow_video_lora_sampler_468
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.8808
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, PrimitiveStringMultiline, RoundNode, SaveAudio, SoundFlow_GetLength, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.735143
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/口播数字人 InfiniteTalk + IndexTTS2，远程加载版_2030935834236559362.json, 数字人/数字人/最强口播数字人 InfiniteTalk + IndexTTS-2_2074771103767158786.json, 视频生成/图生视频/Alan实测 InfiniteTalk + IndexTTS-2_1984183697027039233.json, 视频生成/图生视频/口播数字人天花板  InfiniteTalk 加IndexTTS2_1968328502552473602.json, 视频生成/图生视频/数字人口播_2057106913065787393.json]
+members: [视频生成/图生视频/音频驱动对口型Infinite Talk_1980685750213722114.json, 视频生成/图生视频/高质量数字人Infinite Talk极速版，音频+图片+提示词=生成视频_1979836579130806274.json, 视频生成/图生视频/（再说一遍）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1971615313714475009.json, 视频生成/图生视频/（别读博版）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1961304716842045442.json, 视频生成/图生视频/（白版）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1963526777896521730.json, 视频生成/图生视频/（紫衫）)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1988918406697070593.json, 视频生成/图生视频/（荷花灯）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2026180704601645057.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_468
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/口播数字人 InfiniteTalk + IndexTTS2，远程加载版_2030935834236559362.json、数字人/数字人/最强口播数字人 InfiniteTalk + IndexTTS-2_2074771103767158786.json、视频生成/图生视频/Alan实测 InfiniteTalk + IndexTTS-2_1984183697027039233.json、视频生成/图生视频/口播数字人天花板  InfiniteTalk 加IndexTTS2_1968328502552473602.json、视频生成/图生视频/数字人口播_2057106913065787393.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/音频驱动对口型Infinite Talk_1980685750213722114.json、视频生成/图生视频/高质量数字人Infinite Talk极速版，音频+图片+提示词=生成视频_1979836579130806274.json、视频生成/图生视频/（再说一遍）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1971615313714475009.json、视频生成/图生视频/（别读博版）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1961304716842045442.json、视频生成/图生视频/（白版）Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V1_1963526777896521730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
+- `CR Prompt Text`
 - `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LayerUtility: PurgeVRAM V2`
+- `GetImageSizeAndCount`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RoundNode`
-- `SaveAudio`
-- `SoundFlow_GetLength`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
@@ -45,18 +45,20 @@ source: knowledge_consolidation
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 4/5 个有
-- `LoadAudio` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `PrimitiveString` —— 4/5 个有
-- `FFmpeg_LoadAudioFromURL_JX` —— 1/5 个有
-- `FFmpeg_LoadImageFromURL_JX` —— 1/5 个有
-- `IndexTTSNode` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `PreviewAny` —— 6/7 个有
+- `GetAudioDurationFromAudio` —— 2/7 个有
+- `JWFloat` —— 2/7 个有
+- `SimpleMath+` —— 2/7 个有
+- `GetNode` —— 1/7 个有
+- `JjkText` —— 1/7 个有
+- `PrimitiveInt` —— 1/7 个有
+- `SetNode` —— 1/7 个有
+- `easy cleanGpuUsed` —— 1/7 个有
+- `easy convertAnything` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 

@@ -3,63 +3,90 @@ name: text_to_image_lora_sampler_clip_363
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.8305
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, PrimitiveStringMultiline, SaveAudioMP3, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.930167
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3BlockCacheT8, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, ResolutionSelector, SaveVideo, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [音频生成/音频生成/IndexTTS-2.5声音克隆A-16｜情感控制支持五国语言_2107684803452690433.json, 音频生成/音频生成/IndexTTS-2.5声音克隆｜上传参考音频即学即用｜音频生成自然流畅_2102247738854428674.json, 音频生成/音频生成/IndexTTS2.5声音克隆工作流｜语音合成高保真音频生成_2097038903340527618.json, 音频生成/音频生成/IndexTTS2.5语音合成工作流｜声音克隆更稳更拟真_2097218455132008449.json, 音频生成/音频生成/上传参考音频文案｜IndexTTS2声音克隆音频生成_2093779915991764994.json, 音频生成/音频生成/声音克隆IndexTTS 2.5情感控制五国语言工作流，音频生成语音克隆工具_2107971183093313538.json]
+members: [视频生成/图生视频/MiniMax H3无限时长数字人 音频驱动长视频处理工具_2113387983046012930.json, 视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人 长视频口播方案_2108997643908243457.json, 视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人，一张图一段音频生成口播视频_2106835559971901442.json, 视频生成/图生视频/MiniMax H3极速音频驱动数字人图生视频处理工具_2101747277764317185.json, 视频生成/图生视频/MiniMax H3音频驱动数字人｜无限时长极速出片_2106641111426097153.json, 视频生成/图生视频/MiniMax_H3无限时长极速音频驱动数字人，一张图一段音频生成口播视频_2110540152014729218.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_363
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/IndexTTS-2.5声音克隆A-16｜情感控制支持五国语言_2107684803452690433.json、音频生成/音频生成/IndexTTS-2.5声音克隆｜上传参考音频即学即用｜音频生成自然流畅_2102247738854428674.json、音频生成/音频生成/IndexTTS2.5声音克隆工作流｜语音合成高保真音频生成_2097038903340527618.json、音频生成/音频生成/IndexTTS2.5语音合成工作流｜声音克隆更稳更拟真_2097218455132008449.json、音频生成/音频生成/上传参考音频文案｜IndexTTS2声音克隆音频生成_2093779915991764994.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3无限时长数字人 音频驱动长视频处理工具_2113387983046012930.json、视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人 长视频口播方案_2108997643908243457.json、视频生成/图生视频/MiniMax H3无限时长极速音频驱动数字人，一张图一段音频生成口播视频_2106835559971901442.json、视频生成/图生视频/MiniMax H3极速音频驱动数字人图生视频处理工具_2101747277764317185.json、视频生成/图生视频/MiniMax H3音频驱动数字人｜无限时长极速出片_2106641111426097153.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `MiniMaxH3BlockCacheT8`
+- `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_IndexTTS25_Loader` —— 5/6 个有
-- `RH_IndexTTS25_Synthesize` —— 5/6 个有
-- `AudioCrop` —— 4/6 个有
-- `CR Text` —— 4/6 个有
-- `Float` —— 2/6 个有
-- `PrimitiveBoolean` —— 2/6 个有
-- `PrimitiveInt` —— 2/6 个有
-- `easy anythingIndexSwitch` —— 2/6 个有
-- `IndexTTS2Run` —— 1/6 个有
+- `AudioConcat` —— 5/6 个有
+- `BasicScheduler` —— 5/6 个有
+- `BatchImagesNode` —— 5/6 个有
+- `ComfySwitchNode` —— 5/6 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `Float` —— 5/6 个有
+- `GetImageRangeFromBatch` —— 5/6 个有
+- `Int` —— 5/6 个有
+- `SaveImage` —— 5/6 个有
+- `SelfLiftAvatarH3Sampler` —— 5/6 个有
+- `TrimAudioDuration` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `easy compare` —— 5/6 个有
+- `easy forLoopEnd` —— 5/6 个有
+- `easy forLoopStart` —— 5/6 个有
+- `孤海注释` —— 5/6 个有
+- `RIFE VFI` —— 4/6 个有
+- `AuKAudioTrim` —— 1/6 个有
+- `BasicGuider` —— 1/6 个有
+- `EmptyImage` —— 1/6 个有
+- `ManualSigmas` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RandomNoise` —— 1/6 个有
+- `SamplerCustomAdvanced` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 6 | 100% |
-| 高度 | 80 | 80 - 80 | 6 | 100% |
 | 采样步数 | 4 | 4 - 4 | 6 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
 | 采样算法 | er_sde | - | 6 | 100% |
 | 调度器 | beta | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
@@ -69,11 +96,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，6 个样本，一致性 100%
 - 调度器 最常用 beta，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高发问题（6/6 个样本）：Steps较低可能导致细节不足

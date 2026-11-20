@@ -1,95 +1,119 @@
 ---
 name: text_to_image_upscale_lora_sampler_5
 type: Text To Image
-frequency: 17
-level: strong
-coverage: 0.917647
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetImageSize+, ImageResize+, ImageScaleBy, KSampler, LoraLoaderModelOnly, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader]
+frequency: 20
+level: weak
+coverage: 0.8722
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageScaleToTotalPixels, KSampler, KSamplerSelect, LCSColorAnchor, LCSLoadData, LCSSharpnessCalibrate, LCSSharpnessIntervene, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/8K究极高清图像极速直出(异域风情性感比基尼)_20款任你挑选_2038860113427042305.json, 图片生成/文生图/KOOK_Qwen_2512_真实人像_2006334912823037953.json, 图片生成/文生图/Kook_Zimage_瑶光_2033767418278977537.json, 图片生成/文生图/Kook_Zimage_瑶光_2072528894925819906.json, 图片生成/文生图/Qwen Image 2512 Kook 真实人像文生图V1_2008514200146022401.json, 图片生成/文生图/Qwen Image 2512 Kook 真实人像文生图V1_2009133925792227330.json, 图片生成/文生图/Z-image 真实照片效果_2037377240018722818.json, 图片生成/文生图/Zimage超级真实人像_2052365553586712578.json, 图片生成/文生图/Zimage超级真实人像_Kook大佬瑶光lora_2052288192912605186.json, 图片生成/文生图/希帆解说漫-人设图生成_2051932454398775297.json, 图片生成/文生图/文生图_2047653558849376258.json, 图片生成/文生图/文生图_Zimage_瑶光_2036105144634449921.json, 图片生成/文生图/文生图_Zimage_高清_2039868544275451905.json, 图片生成/文生图/无Ai感超强文生图_2076312965044858881.json, 图片生成/文生图/自用提示词生成人物_2084129308481773570.json, 图片生成/文生图/（Kook版-贞贞lora）Z-Image-Base文生图+高清化_2035938949620830209.json, 图片生成/文生图/💫老许Gary：Z-image瑶光丨文生图_图像反推+SeedVR放大_2035003906622754817.json]
+members: [图片生成/图生图/Krea2+zimage+flux2-klein三采极致洗图工作流_2074299116301152258.json, 图片生成/图生图/mj风格美学-图生图反推仿图-zimage双采样4k高清_2079745419407613954.json, 图片生成/图生图/zimage双采样-图生图反推仿图-MJ风格美学-4k高清_2080247747168530434.json, 图片生成/图生图/万能无损4K高清放大_人像皮肤细节增强真实感优化工作流_2085624260873244674.json, 图片生成/图生图/万能无损4K高清放大_人像皮肤细节增强真实感优化工作流_2085638324873687042.json, 图片生成/图生图/三采样高质量生图（可洗图）Krea2 + Z-Image Turbo + Flux2-Klein_2073570611582033922.json, 图片生成/图生图/产品精修增加细节高清处理_AI一键画质增强优化工作流_2085622556278738945.json, 图片生成/图生图/产品精修增加细节高清处理_AI一键画质增强优化工作流_2085632911126122498.json, 图片生成/图生图/图像反推 图生图 krea2+Klein+zimage  适合于 高清修复 图片反推_2072716298559246338.json, 图片生成/图生图/图像模仿洗图-高质量三采样-krea2+Klein+zimage_2072881381113417730.json, 图片生成/图生图/图像模仿洗图-高质量三采样-krea2+Klein+zimage_2075139075983630338.json, 图片生成/图生图/极致美学 人物模特 皮肤质感细化 图像模仿洗图-高质量三采样-krea2+Klein+zimage_2079034737200549890.json, 图片生成/图生图/洗图 图像反推  多功能优化 Krea2 - Zimage - Klein + 高清放大_2075393317843587073.json, 图片生成/文生图/Krea2 + Flux2-Klein文生图_2096577029973041153.json, 图片生成/文生图/Krea2 + Z-Image Turbo + Flux2-Klein三模合体，直接王炸！_2071552520446636033.json, 图片生成/文生图/Krea2 + Z-Image Turbo + Flux2-Klein三模合体，直接王炸！_2071597722657968129.json, 图片生成/文生图/Krea2 + Z-Image Turbo + Flux2-Klein三模合体，直接王炸！_2088834570824273922.json, 图片生成/文生图/Krea2 + Z-Image Turbo + Flux2-Klein三模王炸合体_2071802083606618114.json, 图片生成/文生图/三模合体王炸｜Krea2+Z-Image Turbo+Flux2-Klein 文生图_2089298165005639682.json, 图片生成/文生图/极致美学高清生成｜Z-Image MJ风格版文生图制作_2096334353323347969.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/8K究极高清图像极速直出(异域风情性感比基尼)_20款任你挑选_2038860113427042305.json、图片生成/文生图/KOOK_Qwen_2512_真实人像_2006334912823037953.json、图片生成/文生图/Kook_Zimage_瑶光_2033767418278977537.json、图片生成/文生图/Kook_Zimage_瑶光_2072528894925819906.json、图片生成/文生图/Qwen Image 2512 Kook 真实人像文生图V1_2008514200146022401.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/Krea2+zimage+flux2-klein三采极致洗图工作流_2074299116301152258.json、图片生成/图生图/mj风格美学-图生图反推仿图-zimage双采样4k高清_2079745419407613954.json、图片生成/图生图/zimage双采样-图生图反推仿图-MJ风格美学-4k高清_2080247747168530434.json、图片生成/图生图/万能无损4K高清放大_人像皮肤细节增强真实感优化工作流_2085624260873244674.json、图片生成/图生图/万能无损4K高清放大_人像皮肤细节增强真实感优化工作流_2085638324873687042.json…）
 
 - **类型**：Text To Image
-- **样本数**：17
-- **可信度**：强结论
-- **平均知识覆盖**：92%
+- **样本数**：20
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 20 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ColorMatch`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `GetImageSize+`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
 - `ImageResize+`
 - `ImageScaleBy`
+- `ImageScaleToTotalPixels`
 - `KSampler`
+- `KSamplerSelect`
+- `LCSColorAnchor`
+- `LCSLoadData`
+- `LCSSharpnessCalibrate`
+- `LCSSharpnessIntervene`
 - `LoraLoaderModelOnly`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `SetNode`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `KOOK_SaveJPGImage` —— 16/17 个有
-- `SaveImage` —— 14/17 个有
-- `ImageCASharpening+` —— 13/17 个有
-- `RunningHub Deepcleaner` —— 13/17 个有
-- `FastFilmGrain` —— 12/17 个有
-- `LayerColor: BrightnessContrastV2` —— 12/17 个有
-- `PreviewImage` —— 7/17 个有
-- `ModelSamplingAuraFlow` —— 4/17 个有
-- `KOOK_ImageCompression` —— 3/17 个有
-- `HAIGC_SaveImagesToZip` —— 2/17 个有
-- `LatentFrequencyEnhancer_lrzjason` —— 2/17 个有
-- `CR Text` —— 1/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/17 个有
-- `Float` —— 1/17 个有
-- `GetImageSize` —— 1/17 个有
-- `ImpactSwitch` —— 1/17 个有
-- `Int` —— 1/17 个有
-- `MultiLinePromptIndex` —— 1/17 个有
-- `PhotoShakeNode` —— 1/17 个有
-- `Text` —— 1/17 个有
-- `Text Multiline` —— 1/17 个有
-- `easy cleanGpuUsed` —— 1/17 个有
+- `GetNode` —— 17/20 个有
+- `easy cleanGpuUsed` —— 17/20 个有
+- `easy imageSize` —— 17/20 个有
+- `CR Text` —— 15/20 个有
+- `PreviewImage` —— 15/20 个有
+- `CLIPLoaderGGUF` —— 12/20 个有
+- `Fast Groups Bypasser (rgthree)` —— 12/20 个有
+- `LoadImage` —— 12/20 个有
+- `TTResolutionSelector` —— 12/20 个有
+- `RH_LLMAPI_Pro_Node` —— 8/20 个有
+- `easy showAnything` —— 8/20 个有
+- `JjkText` —— 7/20 个有
+- `Label (rgthree)` —— 6/20 个有
+- `solarL_SaveImagesToZip` —— 6/20 个有
+- `GetImageSize+` —— 3/20 个有
+- `ImageCASharpening+` —— 3/20 个有
+- `Int` —— 3/20 个有
+- `PhotoShakeNode` —— 3/20 个有
+- `RunningHub Deepcleaner` —— 3/20 个有
+- `孤海注释` —— 3/20 个有
+- `PrimitiveFloat` —— 2/20 个有
+- `easy anythingIndexSwitch` —— 2/20 个有
+- `AIO_Preprocessor` —— 1/20 个有
+- `ConditioningKrea2Rebalance` —— 1/20 个有
+- `Krea2ControlApply` —— 1/20 个有
+- `Krea2ControlImageEncode` —— 1/20 个有
+- `Krea2ControlLoRALoader` —— 1/20 个有
+- `NIX_SwitchAnything` —— 1/20 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 1080 - 1920 | 17 | 82% |
-| 高度 | 1920 | 1080 - 1920 | 17 | 89% |
-| 采样步数 | 8 | 8 - 20 | 17 | 68% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.5 | 17 | 89% |
-| 采样算法 | res_2s | - | 17 | 94% |
-| 调度器 | bong_tangent | - | 17 | 76% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
+| 采样步数 | 7 | 4 - 10 | 20 | 70% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 20 | 22% |
+| 采样算法 | euler | - | 20 | 70% |
+| 调度器 | simple | - | 20 | 70% |
+| 重绘幅度 | 1 | 0.25 - 1 | 20 | 65% |
+| 宽度 | 1024 | 80 - 1080 | 20 | 42% |
+| 高度 | 1024 | 80 - 1920 | 20 | 36% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 16/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 31/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 1080 - 1920，17 个样本，取值集中（一致性 82%）
-- 高度 中位数 1920，观测区间 1080 - 1920，17 个样本，取值集中（一致性 89%）
-- 采样步数 中位数 8，观测区间 8 - 20，17 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.5，17 个样本，取值集中（一致性 89%）
-- 采样算法 最常用 res_2s，17 个样本，一致性 94%
-- 调度器 最常用 bong_tangent，17 个样本，一致性 76%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 高发问题（16/17 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 7，观测区间 4 - 10，20 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，20 个样本，取值分散，一致性仅 22%
+- 采样算法 最常用 euler，20 个样本，一致性 70%
+- 调度器 最常用 simple，20 个样本，一致性 70%
+- 重绘幅度 中位数 1，观测区间 0.25 - 1，20 个样本
+- 宽度 中位数 1024，观测区间 80 - 1080，20 个样本，取值分散，一致性仅 42%
+- 高度 中位数 1024，观测区间 80 - 1920，20 个样本，取值分散，一致性仅 36%
+- 高发问题（31/20 个样本）：Steps较低可能导致细节不足

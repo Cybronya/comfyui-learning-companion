@@ -2,89 +2,77 @@
 name: unknown_workflow_video_sampler_clip_158
 type: Unknown Workflow
 frequency: 4
-level: strong
-coverage: 0.763
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningCombine, DWPreprocessor, EmptyImage, ImageBatch, ImageBatchMultiple+, ImageConcanate, ImageConcatFromBatch, ImageResize+, ImageResizeKJv2, KSampler, LoadImage, ModelSamplingSD3, PreviewImage, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_GetImageCount, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanPhantomSubjectToVideo, WanVaceToVideo]
-problems: []
+level: moderate
+coverage: 0.79375
+common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, ResolutionSelector, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan+VACE+Phantom_多人视频人物替换-视频提示词反推_1964540735016062978.json, 视频生成/图生视频/万相 VACE+Phantom融合模  多人运动迁移控制_1955104991481511937.json, 视频生成/图生视频/万相 多人运动迁移控制 VACE+Phantom融合模ComfyUI工作流_2051908128723218434.json, 视频生成/图生视频/完美人物一致性替换 VACE+Phantom_1986477403138650114.json]
+members: [数字人/数字人/minimaxH3数字人_2084629238115823617.json, 数字人/数字人/minimaxH3数字人——8步极速版_2085194436836937730.json, 视频生成/图生视频/Minimax_h3_音乐MV+4步lora加速版_2085240329221005313.json, 视频生成/文生视频/Minimax_h3_产品广告视频+4步lora加速版_2085360762268250114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_158
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan+VACE+Phantom_多人视频人物替换-视频提示词反推_1964540735016062978.json、视频生成/图生视频/万相 VACE+Phantom融合模  多人运动迁移控制_1955104991481511937.json、视频生成/图生视频/万相 多人运动迁移控制 VACE+Phantom融合模ComfyUI工作流_2051908128723218434.json、视频生成/图生视频/完美人物一致性替换 VACE+Phantom_1986477403138650114.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/minimaxH3数字人_2084629238115823617.json、数字人/数字人/minimaxH3数字人——8步极速版_2085194436836937730.json、视频生成/图生视频/Minimax_h3_音乐MV+4步lora加速版_2085240329221005313.json、视频生成/文生视频/Minimax_h3_产品广告视频+4步lora加速版_2085360762268250114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
-- **可信度**：强结论
-- **平均知识覆盖**：76%
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningCombine`
-- `DWPreprocessor`
-- `EmptyImage`
-- `ImageBatch`
-- `ImageBatchMultiple+`
-- `ImageConcanate`
-- `ImageConcatFromBatch`
-- `ImageResize+`
-- `ImageResizeKJv2`
 - `KSampler`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `SimpleMath+`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_GetImageCount`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanPhantomSubjectToVideo`
-- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_MiniCPM_4_V_Advanced` —— 2/4 个有
-- `CR Text Replace` —— 2/4 个有
-- `TextBox` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `Any Switch (rgthree)` —— 1/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `GetNode` —— 1/4 个有
-- `ImageConcatMulti` —— 1/4 个有
-- `ImpactSwitch` —— 1/4 个有
-- `PrimitiveBoolean` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `SetNode` —— 1/4 个有
-- `Text Concatenate` —— 1/4 个有
-- `easy ifElse` —— 1/4 个有
+- `AudioCrop` —— 3/4 个有
+- `ComfyMathExpression` —— 3/4 个有
+- `LoadAudio` —— 3/4 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `MiniMaxH3SigmaShift` —— 3/4 个有
+- `PathchSageAttentionKJ` —— 3/4 个有
+- `SoundFlow_GetLength` —— 3/4 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `SimpleMath+` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `Float to Int` —— 1/4 个有
+- `ImageFromBatch` —— 1/4 个有
+- `PrimitiveFloat` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 12 | 12 - 12 | 4 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 3 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
+| 采样步数 | 8 | 8 - 20 | 4 | 53% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | normal | - | 4 | 50% |
 | 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 3/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 12，观测区间 12 - 12，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 3，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
+- 采样步数 中位数 8，观测区间 8 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 normal，4 个样本，一致性 50%
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（3/4 个样本）：Steps较低可能导致细节不足

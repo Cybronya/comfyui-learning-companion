@@ -1,62 +1,57 @@
 ---
 name: unknown_workflow_sampler_unet_vae_259
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.7575
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ImageToVideo, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.8448
+common_nodes: [Anything Everywhere3, CLIPLoader, KSampler, LoadImage, SaveImage, Text, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax H3 文生视频 _ 图生视频  首尾帧_1934647540794990594.json, 视频生成/文生视频/MiniMax-H3_插帧图生视频_2084843609874067458.json, 视频生成/文生视频/h3文生_首尾帧视频_2084566244484804610.json, 视频生成/文生视频/文生视频_图生视频MiniMax+H3_2084798105811251201.json]
+members: [图片生成/图生图/qwen2.1去除卡片_2104046325158469633.json, 图片生成/图生图/qwen2.1去除文字_2108072161025019906.json, 图片生成/图生图/qwen2.1去除油腻_2103758229087014913.json, 图片生成/图生图/qwen2.1替换主体_2103386241126457346.json, 图片生成/图生图/qwen2.1自定义修改_2103385944303951873.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_259
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 文生视频 _ 图生视频  首尾帧_1934647540794990594.json、视频生成/文生视频/MiniMax-H3_插帧图生视频_2084843609874067458.json、视频生成/文生视频/h3文生_首尾帧视频_2084566244484804610.json、视频生成/文生视频/文生视频_图生视频MiniMax+H3_2084798105811251201.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/qwen2.1去除卡片_2104046325158469633.json、图片生成/图生图/qwen2.1去除文字_2108072161025019906.json、图片生成/图生图/qwen2.1去除油腻_2103758229087014913.json、图片生成/图生图/qwen2.1替换主体_2103386241126457346.json、图片生成/图生图/qwen2.1自定义修改_2103385944303951873.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：76%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 5 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3ImageToVideo`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `Text`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 3/4 个有
-- `孤海注释` —— 3/4 个有
-- `忽略多组孤海` —— 3/4 个有
-- `CR Text` —— 2/4 个有
-- `GoohaiUniversalSlider` —— 2/4 个有
-- `PreviewImage` —— 2/4 个有
-- `PrimitiveFloat` —— 2/4 个有
-- `孤海图像缩放按像素` —— 2/4 个有
-- `GetImageSize+` —— 1/4 个有
-- `PathchSageAttentionKJ` —— 1/4 个有
-- `RIFE VFI` —— 1/4 个有
-- `ResolutionSelector` —— 1/4 个有
-- `VHS_VideoCombine` —— 1/4 个有
+- `PreviewImage` —— 4/5 个有
+- `ImageToMask` —— 3/5 个有
+- `PixaromaInpaintCrop` —— 3/5 个有
+- `PixaromaUncrop` —— 3/5 个有
+- `Image Remove Alpha JK` —— 2/5 个有
+- `ImageColorMatch+` —— 2/5 个有
+- `LoraLoaderModelOnly` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 25 - 25 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -64,4 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 25 - 25，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

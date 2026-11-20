@@ -1,69 +1,76 @@
 ---
 name: unknown_workflow_lora_sampler_clip_106
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8774
-common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, ColorCorrectOfUtils, ImageCASharpening+, KSamplerAdvanced, LoraLoaderModelOnly, PathchSageAttentionKJ, RHHiddenNodes, SaveImage, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed]
+coverage: 0.790667
+common_nodes: [AutoCropFaces, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, DrawMaskOnImage, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, GetNode, ImageConcanate, ImageScaleToTotalPixels, KSamplerSelect, LayerMask: MaskGrow, LayerMask: PersonMaskUltra V2, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, ProcessString, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy promptLine, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2 写实美女（图生图）_1993170303243190274.json, 图片生成/图生图/【Wan2.2+Wan2.2图生图】去除塑料感（基础流）_1953315187753451522.json, 图片生成/图生图/【Wan2.2+Wan2.2图生图】真实感图像_1953394177310642177.json, 图片生成/文生图/【Wan2.2+Wan2.2文生图】去除塑料感（基础流）_1952858079282065409.json, 图片生成/文生图/【wan2.2文生图V2】gemini3专业级人像摄影提示词_1991427455816790017.json]
+members: [图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2098918585958752257.json, 图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2098977260433920001.json, 图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2099652850648444929.json, 图片生成/图生图/Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2082053043998253058.json, 图片生成/图生图/Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2095363897950822401.json, 图片生成/文生图/77.Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2096535795153850369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_106
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Wan2.2 写实美女（图生图）_1993170303243190274.json、图片生成/图生图/【Wan2.2+Wan2.2图生图】去除塑料感（基础流）_1953315187753451522.json、图片生成/图生图/【Wan2.2+Wan2.2图生图】真实感图像_1953394177310642177.json、图片生成/文生图/【Wan2.2+Wan2.2文生图】去除塑料感（基础流）_1952858079282065409.json、图片生成/文生图/【wan2.2文生图V2】gemini3专业级人像摄影提示词_1991427455816790017.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2098918585958752257.json、图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2098977260433920001.json、图片生成/图生图/Klein_true_V3人物资产制作合集写真套图+换脸+角色定版图_2099652850648444929.json、图片生成/图生图/Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2082053043998253058.json、图片生成/图生图/Klein_true_V3人物资产制作合集（写真套图+换脸+角色定版图）_2095363897950822401.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Anything Everywhere`
+全部 6 个 workflow 都包含：
+- `AutoCropFaces`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ColorCorrectOfUtils`
-- `ImageCASharpening+`
-- `KSamplerAdvanced`
+- `CR Text`
+- `CR Text Concatenate`
+- `ConditioningZeroOut`
+- `DrawMaskOnImage`
+- `EmptyFlux2LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `ImageConcanate`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
+- `LayerMask: MaskGrow`
+- `LayerMask: PersonMaskUltra V2`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `RHHiddenNodes`
+- `PreviewImage`
+- `ProcessString`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 - `easy cleanGpuUsed`
+- `easy promptLine`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Seed` —— 4/5 个有
-- `CR Text` —— 4/5 个有
-- `FluxResolutionNode` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `MathExpression|pysssss` —— 3/5 个有
-- `VAEEncode` —— 3/5 个有
-- `EmptyLatentImage` —— 2/5 个有
-- `ImageResize+` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
-- `CR Text Concatenate` —— 1/5 个有
-- `ImageScale` —— 1/5 个有
-- `RH_Prompter` —— 1/5 个有
-- `ShowText|pysssss` —— 1/5 个有
+- `EmptyImage` —— 2/6 个有
+- `Label (rgthree)` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 16 | 16 - 16 | 5 | 100% |
-| 采样算法 | 2 | 2 - 2 | 5 | 100% |
-| 调度器 | euler | - | 5 | 100% |
-| 重绘幅度 | bong_tangent | - | 5 | 100% |
-| 宽度 | 676 | - | 2 | 76% |
-| 高度 | 864 | - | 2 | 59% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -71,11 +78,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 16，观测区间 16 - 16，5 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 2，观测区间 2 - 2，5 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，5 个样本，一致性 100%
-- 重绘幅度 最常用 bong_tangent，5 个样本，一致性 100%
-- 宽度 中位数 676，样本不足，未给区间，2 个样本
-- 高度 中位数 864，样本不足，未给区间，2 个样本
-- 风险：Prompt 约束强度(CFG) 观测到 16，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

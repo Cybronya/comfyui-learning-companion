@@ -1,85 +1,91 @@
 ---
 name: unknown_workflow_video_lora_sampler_113
 type: Unknown Workflow
-frequency: 15
-level: moderate
-coverage: 0.778667
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ComfyMathExpression, ContextWindowsManual, GetImageRangeFromBatch, ImageFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SamplerCustom, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanAnimate2Cache, WanAnimate2ToVideo]
+frequency: 16
+level: strong
+coverage: 0.44025
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, GetNode, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SetNode, VAEDecode, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/Animate2动作迁移循环流_2087178729373130754.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106306747928498177.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106379041409421313.json, 数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2114691557663264769.json, 视频生成/图生视频/Animate2-动作迁移（长视频for循环）_2087535506614743041.json, 视频生成/图生视频/Animate2-数字人唱歌_跳舞-动作迁移-不限时长-循环流_2086985804689268738.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移15秒内_2087549782628847618.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2097276416403533826.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2097297241835921409.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2114671698929872898.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移无限时长V1_2086760732246499329.json, 视频生成/图生视频/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移无限时长加速版_2087045861942579202.json, 视频生成/图生视频/wan-animate2动作姿势模仿_2087054631615680514.json, 视频生成/文生视频/Animate2动作迁移_2104741113713217538.json, 视频生成/文生视频/Wan animate2 视频编辑 循环流V1_2086206809366421506.json]
+members: [图片生成/图生图/LTX2.3-MSR多参考图V2_2116698209576906753.json, 平台全量/MSR_Sample_workflow_2064002647774031874.json, 视频生成/图生视频/3图 （人物1 人物2 三视图 场景图）LTX2.3-MSR多参考图V2（质量高）_2111328454267461633.json, 视频生成/图生视频/AI代码侠土豆-LTX2.3-MSR多参考图V2_2076177138851602434.json, 视频生成/图生视频/AI代码侠土豆-LTX2.3-MSR多参考图生成_2072900234711228417.json, 视频生成/图生视频/LTX-2.3-Licon-MSR-V2 一致性更好 逻辑性更强_2076669054097649666.json, 视频生成/图生视频/LTX-2.3-MSR_V2_Sample_workflow_2077298487875694594.json, 视频生成/图生视频/LTX2.3 MSR V2 (多主体参考) 图生视频_2083493730379722754.json, 视频生成/图生视频/LTX2.3-MSR-workflow_2066907383061901313.json, 视频生成/图生视频/LTX2.3-MSR2.0多参考图生成_2076157351371034626.json, 视频生成/图生视频/LTX2.3-MSR多参考图V2_2078645813319921665.json, 视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2065971442394689538.json, 视频生成/图生视频/Ltx2.3-Licon-MSR-多图参考-全能参考生视频_2067900124038254593.json, 视频生成/图生视频/MSR - 多图参考视频生成 - LTX2.3_2068177667341508609.json, 视频生成/图生视频/MSR_角色道具参考-ltx2.3_2067174173994213378.json, 视频生成/图生视频/MumsAIGC-LTX-MSR多参V2_2083224386701709313.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_113
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（数字人/数字人/Animate2动作迁移循环流_2087178729373130754.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106306747928498177.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2106379041409421313.json、数字人/数字人/Animate2数字人_跳舞_视频编辑_唱歌_动作迁移_复刻动作无限时长_2114691557663264769.json、视频生成/图生视频/Animate2-动作迁移（长视频for循环）_2087535506614743041.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/LTX2.3-MSR多参考图V2_2116698209576906753.json、平台全量/MSR_Sample_workflow_2064002647774031874.json、视频生成/图生视频/3图 （人物1 人物2 三视图 场景图）LTX2.3-MSR多参考图V2（质量高）_2111328454267461633.json、视频生成/图生视频/AI代码侠土豆-LTX2.3-MSR多参考图V2_2076177138851602434.json、视频生成/图生视频/AI代码侠土豆-LTX2.3-MSR多参考图生成_2072900234711228417.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **样本数**：16
+- **可信度**：强结论
+- **平均知识覆盖**：44%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
+全部 16 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `ComfyMathExpression`
-- `ContextWindowsManual`
-- `GetImageRangeFromBatch`
-- `ImageFromBatch`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `INTConstant`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `TrimVideoLatent`
-- `UNETLoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetNode`
 - `VAEDecode`
-- `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimate2Cache`
-- `WanAnimate2ToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 14/15 个有
-- `ImageResizeKJv2` —— 14/15 个有
-- `ResizeImageMaskNode` —— 14/15 个有
-- `VHS_VideoInfo` —— 14/15 个有
-- `easy int` —— 14/15 个有
-- `GetImageSize` —— 13/15 个有
-- `PrimitiveStringMultiline` —— 13/15 个有
-- `TensorLoopClose` —— 13/15 个有
-- `TensorLoopOpen` —— 13/15 个有
-- `ComfySwitchNode` —— 12/15 个有
-- `GetNode` —— 12/15 个有
-- `JWInteger` —— 12/15 个有
-- `ImageConcatMulti` —— 11/15 个有
-- `PrimitiveBoolean` —— 11/15 个有
-- `easy showAnything` —— 10/15 个有
-- `SetNode` —— 3/15 个有
-- `easy forLoopEnd` —— 2/15 个有
-- `easy forLoopStart` —— 2/15 个有
-- `Bookmark (rgthree)` —— 1/15 个有
-- `DF_Int_to_Float` —— 1/15 个有
-- `Int` —— 1/15 个有
-- `Label (rgthree)` —— 1/15 个有
-- `MathExpression|pysssss` —— 1/15 个有
-- `Note Plus (mtb)` —— 1/15 个有
-- `PlaySound|pysssss` —— 1/15 个有
-- `ShowAnything|Mie` —— 1/15 个有
-- `SimpleMath+` —— 1/15 个有
+- `LowVRAMCheckpointLoader` —— 13/16 个有
+- `SimpleMath+` —— 9/16 个有
+- `CM_FloatToInt` —— 8/16 个有
+- `ComfyMathExpression` —— 8/16 个有
+- `ImageResizeKJv2` —— 8/16 个有
+- `PrimitiveFloat` —— 8/16 个有
+- `TTResolutionSelector` —— 8/16 个有
+- `Text` —— 8/16 个有
+- `easy cleanGpuUsed` —— 8/16 个有
+- `LTX2_NAG` —— 7/16 个有
+- `PromptRelayEncode` —— 7/16 个有
+- `LTXVAddGuideMulti` —— 6/16 个有
+- `Label (rgthree)` —— 6/16 个有
+- `CheckpointLoaderSimple` —— 3/16 个有
+- `PreviewImage` —— 3/16 个有
+- `孤海注释` —— 2/16 个有
+- `Any Switch (rgthree)` —— 1/16 个有
+- `Audio Duration` —— 1/16 个有
+- `AudioMerge` —— 1/16 个有
+- `CM_IntToFloat` —— 1/16 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/16 个有
+- `LTXVAudioVAEEncode` —— 1/16 个有
+- `LTXVAudioVideoMask` —— 1/16 个有
+- `LoadAudio` —— 1/16 个有
+- `LoraLoaderModelOnly` —— 1/16 个有
+- `MelBandRoFormerModelLoader` —— 1/16 个有
+- `MelBandRoFormerSampler` —— 1/16 个有
+- `SeedVCRun` —— 1/16 个有
+- `SetLatentNoiseMask` —— 1/16 个有
+- `SolidMask` —— 1/16 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 133 | 121 - 145 | 16 | 91% |
+| 高度 | 24 | 24 - 24 | 16 | 100% |
 
 ## 常见问题
 
@@ -87,4 +93,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 133，观测区间 121 - 145，16 个样本，取值集中（一致性 91%）
+- 高度 中位数 24，观测区间 24 - 24，16 个样本，取值集中（一致性 100%）

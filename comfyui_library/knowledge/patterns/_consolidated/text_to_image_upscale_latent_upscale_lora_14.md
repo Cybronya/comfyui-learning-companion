@@ -1,101 +1,109 @@
 ---
 name: text_to_image_upscale_latent_upscale_lora_14
 type: Text To Image
-frequency: 3
-level: weak
-coverage: 0.778333
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize+, ImageSmartSharpen+, JoinImageWithAlpha, KSampler, KSamplerAdvanced, LatentUpscaleBy, LoraLoaderModelOnly, PrimitiveFloat, ResizeImageMaskNode, ResolutionSelector, Seed (rgthree), SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SimpleMathDual+, SplitImageWithAlpha, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.82275
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3DurationPlannerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3OutputTrimT8, MiniMaxH3SafeAVSaveT8Advanced, MiniMaxH3TwoPassAudioAuditT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, MiniMaxH3VDNRefinePlanT8Advanced, PreviewAny, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Krea2新模型开源二采出图4种图片放大汇总工作流详拆_2100305559923806210.json, 图片生成/文生图/Krea2生图+SeedVR2-int8放大 (1)_2101836851886780417.json, 图片生成/文生图/💗Krea2新模型开源二采出图！4种图片放大汇总工作流详拆系列09集_2098393973126688769.json]
+members: [视频生成/图生视频/MiniMax H3 ControlNet Union 2.0视频控制与局部重绘VDN 12步高清版_2108970658804887554.json, 视频生成/图生视频/MiniMax H3 ControlNet Union局部重绘专用工作流 精准控制改图_2109171442880442369.json, 视频生成/图生视频/MiniMax H3通用视频生成VDN 12步高清版 高质量动态生成_2108968961265192961.json, 视频生成/文生视频/H3 VDN 12NFE高质量二采商品展示Hero Shot工作流，文生视频图生视频方案_2108274637418352642.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_latent_upscale_lora_14
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Krea2新模型开源二采出图4种图片放大汇总工作流详拆_2100305559923806210.json、图片生成/文生图/Krea2生图+SeedVR2-int8放大 (1)_2101836851886780417.json、图片生成/文生图/💗Krea2新模型开源二采出图！4种图片放大汇总工作流详拆系列09集_2098393973126688769.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 ControlNet Union 2.0视频控制与局部重绘VDN 12步高清版_2108970658804887554.json、视频生成/图生视频/MiniMax H3 ControlNet Union局部重绘专用工作流 精准控制改图_2109171442880442369.json、视频生成/图生视频/MiniMax H3通用视频生成VDN 12步高清版 高质量动态生成_2108968961265192961.json、视频生成/文生视频/H3 VDN 12NFE高质量二采商品展示Hero Shot工作流，文生视频图生视频方案_2108274637418352642.json）
 
 - **类型**：Text To Image
-- **样本数**：3
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize+`
-- `ImageSmartSharpen+`
-- `JoinImageWithAlpha`
+- `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LatentUpscaleBy`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3DurationPlannerT8`
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
+- `MiniMaxH3OutputTrimT8`
+- `MiniMaxH3SafeAVSaveT8Advanced`
+- `MiniMaxH3TwoPassAudioAuditT8Advanced`
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
+- `MiniMaxH3VDNExecutionPlanT8Advanced`
+- `MiniMaxH3VDNModelComposerT8Advanced`
+- `MiniMaxH3VDNRefinePlanT8Advanced`
+- `PreviewAny`
+- `PrimitiveBoolean`
 - `PrimitiveFloat`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
-- `Seed (rgthree)`
-- `SeedVR2Conditioning`
-- `SeedVR2PostProcessing`
-- `SeedVR2Preprocess`
-- `SimpleMathDual+`
-- `SplitImageWithAlpha`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `UltimateSDUpscale`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageScaleBy` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `RH_DLSS5Enhance` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `VOSR2ModelLoader` —— 2/3 个有
-- `VOSR2Upscale` —— 2/3 个有
-- `easy float` —— 2/3 个有
-- `easy getNode` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `easy setNode` —— 2/3 个有
-- `孤海注释` —— 2/3 个有
-- `HAIGC_SaveImagesToZip` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `solarL_SaveImagesToZip` —— 1/3 个有
+- `MiniMaxH3AudioConditioningT8` —— 3/4 个有
+- `AIO_Preprocessor` —— 2/4 个有
+- `ComfyMathExpression` —— 2/4 个有
+- `GetVideoComponents` —— 2/4 个有
+- `GrowMask` —— 2/4 个有
+- `ImageScale` —— 2/4 个有
+- `LoadVideo` —— 2/4 个有
+- `MaskPreview` —— 2/4 个有
+- `MiniMaxH3FunControlNetApply` —— 2/4 个有
+- `ModelPatchLoader` —— 2/4 个有
+- `PointsEditor` —— 2/4 个有
+- `SeCModelLoader` —— 2/4 个有
+- `SeCVideoSegmentation` —— 2/4 个有
+- `VHS_LoadVideo` —— 2/4 个有
+- `VHS_VideoInfoLoaded` —— 2/4 个有
+- `Video Slice` —— 2/4 个有
+- `LoadAudio` —— 1/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 1 - 4 | 3 | 53% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 3 | 24% |
-| 采样算法 | euler | - | 3 | 67% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 0.5 - 1 | 3 | 72% |
-| 宽度 | 1024 | 80 - 1024 | 3 | 37% |
-| 高度 | 1024 | 80 - 1024 | 3 | 37% |
+| ControlNet 权重 | 1.4 | - | 2 | 71% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 80 | 80 - 80 | 4 | 100% |
+| 高度 | 80 | 80 - 80 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 1 - 4，3 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，3 个样本，取值分散，一致性仅 24%
-- 采样算法 最常用 euler，3 个样本，一致性 67%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 0.5 - 1，3 个样本
-- 宽度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
-- 高度 中位数 1024，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 37%
-- 高发问题（7/3 个样本）：Steps较低可能导致细节不足
+- ControlNet 权重 中位数 1.4，样本不足，未给区间，2 个样本
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

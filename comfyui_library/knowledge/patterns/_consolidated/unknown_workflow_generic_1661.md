@@ -3,51 +3,37 @@ name: unknown_workflow_generic_1661
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.835
-common_nodes: [Audio To Text (mtb), CR Prompt Text, FishS2VoiceCloneTTS, Load Whisper (mtb), LoadAudio, LoadImage, PrimitiveStringMultiline, RH_GetAudioDuration, RH_LLMAPI_Pro_Node, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, StringConcat|Mie, ToInt]
+coverage: 0.695
+common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_nano_banana2_edit, Fast Groups Bypasser (rgthree), LoadImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/daVinci-MagiHuman数字人=台本+图片_2038453298851745794.json, 视频生成/图生视频/MagiHuman数字人_2039711659421343746.json]
+members: [图片生成/图生图/全能图片1+2+pro 单图+多图生图 贞贞工坊api教学指引版_2009822492872941569.json, 图片生成/图生图/最强电商改图必备 最新 全能图片V12 Pro版 最强单图_多图编辑 API调用工作流_1994362792079659010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1661
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/daVinci-MagiHuman数字人=台本+图片_2038453298851745794.json、视频生成/图生视频/MagiHuman数字人_2039711659421343746.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片1+2+pro 单图+多图生图 贞贞工坊api教学指引版_2009822492872941569.json、图片生成/图生图/最强电商改图必备 最新 全能图片V12 Pro版 最强单图_多图编辑 API调用工作流_1994362792079659010.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Audio To Text (mtb)`
 - `CR Prompt Text`
-- `FishS2VoiceCloneTTS`
-- `Load Whisper (mtb)`
-- `LoadAudio`
+- `Comfly_api_set`
+- `Comfly_nano_banana2_edit`
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `RH_GetAudioDuration`
-- `RH_LLMAPI_Pro_Node`
-- `RH_MagiHumanGenerate`
-- `RH_MagiHumanModelLoader`
-- `SaveVideo`
-- `StringConcat|Mie`
-- `ToInt`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `PurgeVRAM_UTK` —— 1/2 个有
+- `Comfly_nano_banana` —— 1/2 个有
 - `RH_Nano_Banana2_Image2Image` —— 1/2 个有
-- `SaveAudioMP3` —— 1/2 个有
-- `ShowText` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `Textbox` —— 1/2 个有
+- `easy imageConcat` —— 1/2 个有
 
 ## 典型参数
 

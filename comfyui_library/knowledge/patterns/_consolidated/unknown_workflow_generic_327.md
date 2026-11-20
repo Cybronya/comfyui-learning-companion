@@ -1,46 +1,38 @@
 ---
 name: unknown_workflow_generic_327
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.879875
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, PreviewAny, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 0.688
+common_nodes: [LoadImage, RH_Sora2_I2V, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/（音色参考）DaVinci-MagiHuman+Qwen3.5图生视频-1_2056286130500358145.json, 视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频V1（1080P）_2037449795937243137.json, 视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频V1（540P）_2037446558546927617.json, 视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频数字人双人对话版工作流_2037748338019278849.json, 视频生成/图生视频/Davinci magihuman 图生视频带声音_2038532869190062082.json, 视频生成/图生视频/MagiHuman 数字人 音画同步 图生视频_2038925657266196481.json, 视频生成/图生视频/MagiHuman 数字人 音画同步 图生视频_2059211762397966338.json, 视频生成/图生视频/MagiHuman+Qwen3.5自动提示词--图生音视频_2038096687511638017.json]
+members: [视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json, 视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json, 视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json, 视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json, 视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json, 视频生成/文生视频/全能视频S-卖护肤品+衣服+兵马俑_1977261430313492482.json, 视频生成/文生视频/全能视频S-图生视频-蛤蟆精_1994200651171299330.json, 视频生成/文生视频/全能视频S-文生视频-与小时候的自己一起玩耍_1978032008305717250.json, 视频生成/文生视频/全能视频S-文生视频-老鼠人_1990657346928074753.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_327
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/（音色参考）DaVinci-MagiHuman+Qwen3.5图生视频-1_2056286130500358145.json、视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频V1（1080P）_2037449795937243137.json、视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频V1（540P）_2037446558546927617.json、视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频数字人双人对话版工作流_2037748338019278849.json、视频生成/图生视频/Davinci magihuman 图生视频带声音_2038532869190062082.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/【阡陌】全能视频S高清图生视频每日免费5次，超过0.05元_次_1976572209231695874.json、视频生成/图生视频/全能视频S 2图生视频工作流｜全能视频S 2 图片转视频 10 秒_2099402159090659330.json、视频生成/图生视频/全能视频S-图生视频-与小时候的自己边走边说笑_1987312263784763394.json、视频生成/图生视频/全能视频S-图生视频-九尾狐_1989150266970738689.json、视频生成/图生视频/全能视频S-图生视频-女店员卖孙悟空摆件_1987315176951189506.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
+全部 9 个 workflow 都包含：
 - `LoadImage`
-- `PreviewAny`
-- `RH_MagiHumanGenerate`
-- `RH_MagiHumanModelLoader`
+- `RH_Sora2_I2V`
 - `SaveVideo`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 4/8 个有
-- `ImageResize+` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/8 个有
-- `MultiTextConcatenate` —— 1/8 个有
-- `图像缩放V2_孤海` —— 1/8 个有
+- `PrimitiveStringMultiline` —— 8/9 个有
+- `RH_Sora2_T2V` —— 7/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `Fast Groups Muter (rgthree)` —— 1/9 个有
+- `TextInput_` —— 1/9 个有
 
 ## 典型参数
 

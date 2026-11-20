@@ -1,66 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_314
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.934875
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.665667
+common_nodes: [DownloadAndLoadSAM2Model, GetImageRangeFromBatch, GetNode, ImageResizeKJv2, LoadImage, MaskPreview, MochaEmbeds, PointsEditor, Sam2Segmentation, SetNode, VHS_LoadVideo, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/multiTalk多人对话小短剧，效果不错_1941298719130337281.json, 视频生成/图生视频/multiTalk多人对话震撼上线，效果不错_1940894901888512001.json, 视频生成/图生视频/双人对话对口型_1994221474806513665.json, 视频生成/图生视频/对嘴型·数字人·影视·唱歌·讲话对口型·超自然现实有喘息细节_2015414691312443393.json, 视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_1978726455507095554.json, 视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_2009633003546353665.json, 视频生成/图生视频/最新最稳infinitetalk双人数字人_1958019974432534529.json, 视频生成/图生视频/自制-MultiTalk  多人版_1941000380694294529.json]
+members: [平台全量/Mocha视频人物替换动作迁移_2002050355389186050.json, 平台全量/wanvideo_MoCha_replace_subject_1982722865655095298.json, 平台全量/wanvideo_MoCha_replace_subject_KJ_02_666_2000937921249148930.json, 平台全量/（（自用）-双参N版）Wan2.1 Mocha V2V人物视频替换V1（优化加速版）_1981010326328053761.json, 数字人/数字人/Mocha一键人物替换，快速_1981583280208265218.json, 数字人/数字人/mocha视频角色替换人物替换更换人物更换任意角色工作流_2003477047525711873.json, 视频生成/图生视频/视频人物替换 Mocha_1979526023647760386.json, 视频生成/图生视频/（单参版）Wan2.1 Mocha V2V人物视频替换V2（优化加速版）_1980912658343968770.json, 视频生成/文生视频/（双参版）Wan2.1 Mocha V2V人物视频替换V2（优化加速版）_1980845806502760449.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_314
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/multiTalk多人对话小短剧，效果不错_1941298719130337281.json、视频生成/图生视频/multiTalk多人对话震撼上线，效果不错_1940894901888512001.json、视频生成/图生视频/双人对话对口型_1994221474806513665.json、视频生成/图生视频/对嘴型·数字人·影视·唱歌·讲话对口型·超自然现实有喘息细节_2015414691312443393.json、视频生成/图生视频/数字人_Aiwood-infinitetalk双人对话_1978726455507095554.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/Mocha视频人物替换动作迁移_2002050355389186050.json、平台全量/wanvideo_MoCha_replace_subject_1982722865655095298.json、平台全量/wanvideo_MoCha_replace_subject_KJ_02_666_2000937921249148930.json、平台全量/（（自用）-双参N版）Wan2.1 Mocha V2V人物视频替换V1（优化加速版）_1981010326328053761.json、数字人/数字人/Mocha一键人物替换，快速_1981583280208265218.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+全部 9 个 workflow 都包含：
+- `DownloadAndLoadSAM2Model`
+- `GetImageRangeFromBatch`
+- `GetNode`
 - `ImageResizeKJv2`
-- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `VHS_VideoCombine`
+- `MaskPreview`
+- `MochaEmbeds`
+- `PointsEditor`
+- `Sam2Segmentation`
+- `SetNode`
+- `VHS_LoadVideo`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 7/8 个有
-- `SeparateMasks` —— 7/8 个有
-- `AudioCrop` —— 6/8 个有
-- `AudioSeparation` —— 6/8 个有
-- `INTConstant` —— 6/8 个有
-- `PreviewAudio` —— 6/8 个有
-- `WanVideoTextEncode` —— 6/8 个有
-- `WanVideoApplyNAG` —— 2/8 个有
-- `WanVideoExperimentalArgs` —— 2/8 个有
-- `WanVideoSLG` —— 2/8 个有
-- `WanVideoTextEncodeSingle` —— 2/8 个有
-- `EsesImageEffectBloom` —— 1/8 个有
-- `GetNode` —— 1/8 个有
-- `Int2String` —— 1/8 个有
-- `Manual XY Entry Info` —— 1/8 个有
-- `MaskPreview` —— 1/8 个有
-- `MathExpression|pysssss` —— 1/8 个有
-- `SetNode` —— 1/8 个有
+- `PreviewImage` —— 8/9 个有
+- `RMBG` —— 8/9 个有
+- `VHS_VideoCombine` —— 8/9 个有
+- `Crop Face` —— 6/9 个有
+- `GrowMask` —— 6/9 个有
+- `ImageConcanate` —— 6/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/9 个有
+- `Load RetinaFace` —— 6/9 个有
+- `VHS_VideoInfo` —— 6/9 个有
+- `CR Prompt Text` —— 3/9 个有
+- `GrowMaskWithBlur` —— 3/9 个有
+- `Int` —— 3/9 个有
+- `JWInteger` —— 3/9 个有
+- `PDIMAGE_LongerSize` —— 3/9 个有
+- `SaveImage` —— 3/9 个有
+- `WanVideoSetBlockSwap` —— 3/9 个有
+- `WanVideoTorchCompileSettings` —— 2/9 个有
+- `Anything Everywhere` —— 1/9 个有
+- `LayerUtility: PurgeVRAM` —— 1/9 个有
+- `TT_img_enc` —— 1/9 个有
+- `TT_img_enc_v2` —— 1/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
+- `easy int` —— 1/9 个有
 
 ## 典型参数
 

@@ -1,68 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_319
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.81625
-common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.833333
+common_nodes: [CreateCFGScheduleFloatList, HuMoEmbeds, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader, WhisperModelLoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/【AI影视剧制作】MiniMaxH3-最优官流_2113081896400936962.json, 视频生成/图生视频/【MINIMAX H3】高动态_单采高清_2109286224707022849.json, 视频生成/图生视频/【MiniMax H3】短剧工作流_2110380691388194818.json, 视频生成/图生视频/【MiniMax H3】短剧工作流（批量跑剧版）_2113319585146560513.json, 视频生成/图生视频/【MiniMax_H3】短剧工作流_2110893565873311745.json, 视频生成/图生视频/【疯了的动态】Dasiwa_单采样25步无加速lora_2096793272898383874.json, 视频生成/图生视频/【阿良绘】MiniMax H3加速版｜速度与质量均衡V2_2109543805493014529.json, 视频生成/图生视频/名画自动写脚本直出视频H-3_2108343061192466434.json]
+members: [数字人/数字人/HuMo单音频数字人工作流_1971596152221200385.json, 数字人/数字人/HuMo数字人工作流_1971185989165162498.json, 数字人/数字人/WanVideo21_HuMo数字人_1968481829999267842.json, 数字人/数字人/双图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967086191713587201.json, 数字人/数字人/🤖AI数字人新玩法！HuMo模型+IndexTTS2生成自定义口播视频｜ComfyUI全流程教程_1968012276299104257.json, 视频生成/图生视频/IndexTTS2音频生成+Humo数字人_1957726679996399618.json, 视频生成/图生视频/单图+语音-字节HuMo数字人(提示+图+音频驱动)含双图流_1968378350089719809.json, 视频生成/图生视频/单图-数字人-HuMo多模态+TTS数字人(提示+图+音频驱动)_1968155104769617921.json, 音频生成/音频生成/单图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967050326144638978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_319
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/【AI影视剧制作】MiniMaxH3-最优官流_2113081896400936962.json、视频生成/图生视频/【MINIMAX H3】高动态_单采高清_2109286224707022849.json、视频生成/图生视频/【MiniMax H3】短剧工作流_2110380691388194818.json、视频生成/图生视频/【MiniMax H3】短剧工作流（批量跑剧版）_2113319585146560513.json、视频生成/图生视频/【MiniMax_H3】短剧工作流_2110893565873311745.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/HuMo单音频数字人工作流_1971596152221200385.json、数字人/数字人/HuMo数字人工作流_1971185989165162498.json、数字人/数字人/WanVideo21_HuMo数字人_1968481829999267842.json、数字人/数字人/双图+语音数字人-字节HuMo多模态数字人(提示+图+音频驱动)_1967086191713587201.json、数字人/数字人/🤖AI数字人新玩法！HuMo模型+IndexTTS2生成自定义口播视频｜ComfyUI全流程教程_1968012276299104257.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+全部 9 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
+- `HuMoEmbeds`
+- `LoadAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `NormalizeAudioLoudness`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 7/8 个有
-- `ModelPreviewOverrideKJ` —— 7/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/8 个有
-- `LoraLoaderBypassModelOnly` —— 4/8 个有
-- `ManualSigmas` —— 4/8 个有
-- `SolAttnMiniMax` —— 4/8 个有
-- `VHS_LoadVideo` —— 4/8 个有
-- `BlockSparseAttention` —— 3/8 个有
-- `INTConstant` —— 3/8 个有
-- `LoadAudio` —— 3/8 个有
-- `忽略多组孤海` —— 3/8 个有
-- `ComfySwitchNode` —— 1/8 个有
-- `EmptyImage` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `MiniMaxH3SigmaShift` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `PrimitiveBoolean` —— 1/8 个有
-- `QWEN_TextDisplay` —— 1/8 个有
-- `RHLLMChatNode` —— 1/8 个有
-- `VHS_LoadAudioUpload` —— 1/8 个有
+- `ImageResizeKJv2` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `WanVideoSetLoRAs` —— 8/9 个有
+- `ImageBatchMulti` —— 7/9 个有
+- `PreviewImage` —— 7/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `GetNode` —— 6/9 个有
+- `INTConstant` —— 6/9 个有
+- `IndexTTS2Run` —— 6/9 个有
+- `PreviewAudio` —— 6/9 个有
+- `SetNode` —— 6/9 个有
+- `ImageConcatMulti` —— 5/9 个有
+- `PrimitiveInt` —— 4/9 个有
+- `Text Multiline` —— 3/9 个有
+- `Audio Duration (mtb)` —— 2/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `MathExpression|pysssss` —— 2/9 个有
+- `PrimitiveString` —— 2/9 个有
+- `SaveAudio` —— 2/9 个有
+- `easy cleanGpuUsed` —— 2/9 个有
+- `easy imageRemBg` —— 2/9 个有
+- `easy int` —— 2/9 个有
+- `ttN text` —— 2/9 个有
+- `AudioToFPS` —— 1/9 个有
+- `EmptyImage` —— 1/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `SimpleMath+` —— 1/9 个有
 
 ## 典型参数
 

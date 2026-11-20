@@ -3,34 +3,37 @@ name: unknown_workflow_generic_652
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [IndexTTSNode, LoadAudio, SaveAudio]
+coverage: 0.6624
+common_nodes: [AILab_QwenVL, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [音频生成/音频生成/IndexTTS1.0_1931991655790870530.json, 音频生成/音频生成/IndexTTS语音克隆单人版_1959112087551291394.json, 音频生成/音频生成/IndexTTS语音克隆单人版_1999021043161387009.json, 音频生成/音频生成/IndexTTS高效快速克隆人声，支持长文本_1919167474494017538.json, 音频生成/音频生成/【小白可用】IndexTTS单人语音无线生成_1959970598460010498.json]
+members: [图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085592824753512450.json, 图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085920153820295170.json, 图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085931991177973761.json, 平台全量/QWEN3（千问3）反推提示词工作流_2086060598399422465.json, 平台全量/提示词自动化工作流（qwen3& LLM 自动润色、反推）_2016826488607219713.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_652
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/IndexTTS1.0_1931991655790870530.json、音频生成/音频生成/IndexTTS语音克隆单人版_1959112087551291394.json、音频生成/音频生成/IndexTTS语音克隆单人版_1999021043161387009.json、音频生成/音频生成/IndexTTS高效快速克隆人声，支持长文本_1919167474494017538.json、音频生成/音频生成/【小白可用】IndexTTS单人语音无线生成_1959970598460010498.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085592824753512450.json、图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085920153820295170.json、图片生成/反推提示词/千问(QWEN3)反推提示词，国产大模型最强最准反推_2085931991177973761.json、平台全量/QWEN3（千问3）反推提示词工作流_2086060598399422465.json、平台全量/提示词自动化工作流（qwen3& LLM 自动润色、反推）_2016826488607219713.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `IndexTTSNode`
-- `LoadAudio`
-- `SaveAudio`
+- `AILab_QwenVL`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `String Literal` —— 3/5 个有
-- `Primitive string [Crystools]` —— 2/5 个有
-- `PreviewAudio` —— 1/5 个有
+- `RH_LLMAPI_Pro_Node` —— 3/5 个有
+- `Fast Groups Muter (rgthree)` —— 1/5 个有
+- `Text Concatenate` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
 
 ## 典型参数
 

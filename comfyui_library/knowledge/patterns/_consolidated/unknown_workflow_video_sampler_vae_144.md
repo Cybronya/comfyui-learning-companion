@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_vae_144
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.7315
-common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LoadImage, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
+coverage: 0.72925
+common_nodes: [EmptyImage, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, Int, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MimicMotionGetPoses, SetNode, TextInput_, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, WanVideoVRAMManagement, easy batchAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/54.MiniMax H3 Easy v2_2088141868772188161.json, 视频生成/文生视频/MinimaxH3 Easy多合一工作流+全节点注释_2088851369838071810.json, 视频生成/文生视频/MinimaxH3+极简版工作台_2090287273068818434.json, 视频生成/文生视频/MinimaxH3- 完美优化版_2092903917620387842.json]
+members: [平台全量/VACE14B+step1X自定义视频风格转绘_1923380770398720001.json, 平台全量/【首尾帧+动作迁移】换装变身动效_1976828890830323714.json, 平台全量/换装变身动效+++动作迁移｜FusionX+首尾帧生成视频_1976105825771106306.json, 视频生成/图生视频/换装变身动效 + 动作迁移｜FusionX 首尾帧生成视频_1936038942514794498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_144
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/54.MiniMax H3 Easy v2_2088141868772188161.json、视频生成/文生视频/MinimaxH3 Easy多合一工作流+全节点注释_2088851369838071810.json、视频生成/文生视频/MinimaxH3+极简版工作台_2090287273068818434.json、视频生成/文生视频/MinimaxH3- 完美优化版_2092903917620387842.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/VACE14B+step1X自定义视频风格转绘_1923380770398720001.json、平台全量/【首尾帧+动作迁移】换装变身动效_1976828890830323714.json、平台全量/换装变身动效+++动作迁移｜FusionX+首尾帧生成视频_1976105825771106306.json、视频生成/图生视频/换装变身动效 + 动作迁移｜FusionX 首尾帧生成视频_1936038942514794498.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
@@ -23,31 +23,52 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `EmptyImage`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `Int`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MimicMotionGetPoses`
+- `SetNode`
+- `TextInput_`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVACEEncode`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVAELoader`
+- `WanVideoVRAMManagement`
+- `easy batchAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `LoadAudio` —— 2/4 个有
-- `LoadVideo` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `CR Text` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `Label (rgthree)` —— 1/4 个有
-- `LoraLoaderBypassModelOnly` —— 1/4 个有
-- `PlaySound|pysssss` —— 1/4 个有
-- `Text` —— 1/4 个有
+- `LoadImage` —— 3/4 个有
+- `WanVideoLoraSelect` —— 3/4 个有
+- `AIO_Preprocessor` —— 1/4 个有
+- `GetImagesFromBatchIndexed` —— 1/4 个有
+- `ImageBlend` —— 1/4 个有
+- `ImageBlur` —— 1/4 个有
+- `Int Input [Dream]` —— 1/4 个有
+- `InversionDemoLazyIndexSwitch` —— 1/4 个有
+- `PixelPerfectResolution` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `RunningHub_Step1XEdit` —— 1/4 个有
+- `VHS_BatchManager` —— 1/4 个有
+- `VHS_GetImageCount` —— 1/4 个有
+- `easy forLoopEnd` —— 1/4 个有
+- `easy forLoopStart` —— 1/4 个有
 
 ## 典型参数
 

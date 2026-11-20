@@ -3,84 +3,74 @@ name: text_to_image_video_lora_sampler_170
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.47175
-common_nodes: [Any Switch (rgthree), BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, CR Prompt Text, ComfyMathExpression, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetNode, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, MiniMaxH3ReferenceToVideo, ModelPassThrough, PT_H3ConcatAVLatent, PathchSageAttentionKJ, PlaySound|pysssss, PreviewAny, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, Seed (rgthree), SetNode, SomethingToString, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine, easy clearCacheAll, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_unload_model, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.748
+common_nodes: [BasicGuider, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetNode, ImageScaleToMaxDimension, JjkText, KSampler, KSamplerSelect, LTXAVTextEncoderLoader, LTXVConditioning, LTXVLoopingSampler, LTXVSpatioTemporalTiledVAEDecode, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SolAttnPatch, SpectrumApplyMiniMaxH3, UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncodeTiled, VAELoader, VHS_VideoCombine, VisualizeSigmasKJ, easy cleanGpuUsed, easy clearCacheAll, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/Minimax H3五合一8.19版｜加速反推双采多参文图首尾帧_2092372050458537985.json, 视频生成/文生视频/Minimax_H3五合一工作流｜双采多参文生图生首尾帧_2094570805253464066.json, 视频生成/文生视频/五合一8.19带KJ预览｜Minimax_H3加速反推双采多参全模态_2094761663563124737.json, 视频生成/文生视频/五合一（加速+双采+反推+文Minimax_H3_生+图生+首尾帧+多参）ENG_2087113095792648193.json]
+members: [视频生成/图生视频/4步加速多参考注入｜MiniMax H3视频生成+LTX放大_2093843847783739394.json, 视频生成/图生视频/LTX放大工作流视频生成4步加速ref-多参考注入MiniMax_2086205211500175361.json, 视频生成/图生视频/ref多参考注入4步加速｜MiniMax H3战斗特效+LTX放大_2094049739330375681.json, 视频生成/文生视频/导演台双采SLA加速｜MiniMax H3 Latent Upscaler视频生成_2093122877859127297.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_170
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Minimax H3五合一8.19版｜加速反推双采多参文图首尾帧_2092372050458537985.json、视频生成/文生视频/Minimax_H3五合一工作流｜双采多参文生图生首尾帧_2094570805253464066.json、视频生成/文生视频/五合一8.19带KJ预览｜Minimax_H3加速反推双采多参全模态_2094761663563124737.json、视频生成/文生视频/五合一（加速+双采+反推+文Minimax_H3_生+图生+首尾帧+多参）ENG_2087113095792648193.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/4步加速多参考注入｜MiniMax H3视频生成+LTX放大_2093843847783739394.json、视频生成/图生视频/LTX放大工作流视频生成4步加速ref-多参考注入MiniMax_2086205211500175361.json、视频生成/图生视频/ref多参考注入4步加速｜MiniMax H3战斗特效+LTX放大_2094049739330375681.json、视频生成/文生视频/导演台双采SLA加速｜MiniMax H3 Latent Upscaler视频生成_2093122877859127297.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：47%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Any Switch (rgthree)`
 - `BasicGuider`
 - `BasicScheduler`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
 - `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `ImageResizeKJv2`
+- `ImageScaleToMaxDimension`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM`
-- `LoadAudio`
+- `LTXAVTextEncoderLoader`
+- `LTXVConditioning`
+- `LTXVLoopingSampler`
+- `LTXVSpatioTemporalTiledVAEDecode`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelPassThrough`
-- `PT_H3ConcatAVLatent`
+- `MiniMaxH3SigmaShift`
 - `PathchSageAttentionKJ`
-- `PlaySound|pysssss`
-- `PreviewAny`
 - `PrimitiveFloat`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
 - `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `Seed (rgthree)`
 - `SetNode`
-- `SomethingToString`
+- `SolAttnPatch`
+- `SpectrumApplyMiniMaxH3`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
-- `VAEEncode`
-- `VAEEncodeAudio`
+- `VAEEncodeTiled`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VisualizeSigmasKJ`
+- `easy cleanGpuUsed`
 - `easy clearCacheAll`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `llama_cpp_unload_model`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 3/4 个有
-- `ExtendIntermediateSigmas` —— 3/4 个有
-- `MiniMaxH3SigmaShift` —— 3/4 个有
-- `ModelAttentionBackend` —— 3/4 个有
-- `ModelPreviewOverrideKJ` —— 3/4 个有
-- `GetImageSize` —— 1/4 个有
-- `ImageScaleToTotalPixels` —— 1/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/4 个有
+- `CheckpointLoaderSimple` —— 3/4 个有
+- `LTXVAudioVAELoader` —— 3/4 个有
+- `ManualSigmas` —— 3/4 个有
+- `MiniMaxH3ReferenceToVideo` —— 3/4 个有
+- `VHS_LoadAudio` —— 3/4 个有
+- `MiniMaxH3ImageToVideo` —— 1/4 个有
+- `ResizeImageMaskNode` —— 1/4 个有
 
 ## 典型参数
 

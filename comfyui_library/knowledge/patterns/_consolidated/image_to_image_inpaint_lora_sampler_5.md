@@ -1,74 +1,74 @@
 ---
 name: image_to_image_inpaint_lora_sampler_5
 type: Image To Image
-frequency: 4
+frequency: 5
 level: strong
-coverage: 0.86025
-common_nodes: [ApplyPulidFlux, BboxDetectorSEGS, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, GrowMaskWithBlur, Image Comparer (rgthree), ImageColorMatch+, ImageToMask, InpaintModelConditioning, JanusImageUnderstanding, JanusModelLoader, KSampler, LayerMask: MaskPreview, LayerMask: PersonMaskUltra V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, MaskToImage, PreviewImage, PulidFluxEvaClipLoader, PulidFluxFaceDetector, PulidFluxInsightFaceLoader, PulidFluxModelLoader, PulidFluxOptions, SaveImage, SegsToCombinedMask, ShowText|pysssss, UNETLoader, UltralyticsDetectorProvider, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9074
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DeepTranslatorTextNode, DualCLIPLoader, FastCanvas, FastCanvasTool, FluxGuidance, InpaintCrop, InpaintStitch, KSampler, LayerUtility: CropByMask V3, LoadImage, LoraLoaderModelOnly, MaskPreview+, PreviewImage, RBGImageStitchPlus, ReferenceLatent, RepeatLatentBatch, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy ifElse, easy imageRemBg, easy imageScaleDownToSize]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX+PULID 人物换脸进阶版工作流_2046978360336719874.json, 图片生成/图生图/FLUX+PULID_人物换脸进阶版_2064162963505901569.json, 图片生成/图生图/FLUX+PULID_人物换脸进阶版工作流_2063086878060007426.json, 图片生成/图生图/FLUX+PULID_人物换脸进阶版工作流_2063443764861030402.json]
+members: [图片生成/图生图/Kontext万物迁移_1948656943796760577.json, 图片生成/图生图/Kontext万物迁移终极版_1947905426147946497.json, 图片生成/图生图/Kontext万物迁移｜完美版_1950499032189816834.json, 平台全量/Kontext 自动换装工作流_1948979514785898498.json, 平台全量/Kontext万物迁移电商必备_2030659845082320897.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_inpaint_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FLUX+PULID 人物换脸进阶版工作流_2046978360336719874.json、图片生成/图生图/FLUX+PULID_人物换脸进阶版_2064162963505901569.json、图片生成/图生图/FLUX+PULID_人物换脸进阶版工作流_2063086878060007426.json、图片生成/图生图/FLUX+PULID_人物换脸进阶版工作流_2063443764861030402.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Kontext万物迁移_1948656943796760577.json、图片生成/图生图/Kontext万物迁移终极版_1947905426147946497.json、图片生成/图生图/Kontext万物迁移｜完美版_1950499032189816834.json、平台全量/Kontext 自动换装工作流_1948979514785898498.json、平台全量/Kontext万物迁移电商必备_2030659845082320897.json）
 
 - **类型**：Image To Image
-- **样本数**：4
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ApplyPulidFlux`
-- `BboxDetectorSEGS`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
+- `DeepTranslatorTextNode`
 - `DualCLIPLoader`
+- `FastCanvas`
+- `FastCanvasTool`
 - `FluxGuidance`
-- `GrowMaskWithBlur`
-- `Image Comparer (rgthree)`
-- `ImageColorMatch+`
-- `ImageToMask`
-- `InpaintModelConditioning`
-- `JanusImageUnderstanding`
-- `JanusModelLoader`
+- `InpaintCrop`
+- `InpaintStitch`
 - `KSampler`
-- `LayerMask: MaskPreview`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: CropByMask V3`
 - `LoadImage`
-- `LoraLoader`
-- `MaskToImage`
+- `LoraLoaderModelOnly`
+- `MaskPreview+`
 - `PreviewImage`
-- `PulidFluxEvaClipLoader`
-- `PulidFluxFaceDetector`
-- `PulidFluxInsightFaceLoader`
-- `PulidFluxModelLoader`
-- `PulidFluxOptions`
+- `RBGImageStitchPlus`
+- `ReferenceLatent`
+- `RepeatLatentBatch`
 - `SaveImage`
-- `SegsToCombinedMask`
-- `ShowText|pysssss`
 - `UNETLoader`
-- `UltralyticsDetectorProvider`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy ifElse`
+- `easy imageRemBg`
+- `easy imageScaleDownToSize`
+
+**可变部分**（部分 workflow 才有）：
+- `RHHiddenNodes` —— 3/5 个有
+- `GODMT_AnyCast` —— 2/5 个有
+- `GetImageSize` —— 2/5 个有
+- `Image Blank` —— 2/5 个有
+- `IsMaskEmpty` —— 2/5 个有
+- `LayerUtility: ImageBlend` —— 2/5 个有
+- `Mask Fill Holes` —— 2/5 个有
+- `RH_LLMAPI_NODE` —— 2/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 0.7 | 0.7 - 0.7 | 4 | 100% |
-| LoRA 模型强度 | 0.7 | 0.7 - 0.7 | 4 | 100% |
-| LoRA 文本强度 | 0.7 | 0.7 - 0.7 | 4 | 100% |
+| 采样步数 | 20 | 20 - 20 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -76,10 +76,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.7，观测区间 0.7 - 0.7，4 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.7，观测区间 0.7 - 0.7，4 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 0.7，观测区间 0.7 - 0.7，4 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

@@ -1,72 +1,79 @@
 ---
 name: unknown_workflow_lora_sampler_clip_26
 type: Unknown Workflow
-frequency: 11
-level: weak
-coverage: 0.759818
-common_nodes: [BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, RHLLMChatNode, StringReplace, Text, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+frequency: 13
+level: moderate
+coverage: 0.925154
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, CLIPVisionLoader, DualCLIPLoader, FluxGuidance, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, StyleModelLoader, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Bernini图像编辑_2065059800358154242.json, 图片生成/图生图/Bernini图像编辑v2_2064182005436342273.json, 图片生成/文生图/Bernini-R 图像编辑_2062541633941495810.json, 图片生成/文生图/Bernini-R 文生图_2062533470706036738.json, 视频生成/图生视频/Bernini-R 单图参考成片工作流_2063268818142715906.json, 视频生成/图生视频/Bernini-R 单图参考成片工作流_2063647431069356033.json, 视频生成/图生视频/Bernini-R 单图片段（言出法随 ）_2067591064046886913.json, 视频生成/文生视频/Bernini-R 3图参考成片工作流_2062503680565403649.json, 视频生成/文生视频/Bernini-R Image-to-Video_2072998885414707200.json, 视频生成/文生视频/Bernini-R 单图参考成片工作流_2062503688601690114.json, 视频生成/文生视频/Bernini-R 文生视频_2062533464225837057.json]
+members: [图片生成/图生图/10秒一键漫画感工作流_1889889417681838082.json, 图片生成/图生图/flux-redux-创意迁移-logo设计_1950208575371173889.json, 图片生成/图生图/全能图片G 同款吉卜力风格_1909795874137145345.json, 图片生成/图生图/全能图片G-4o版吉卜力风格_1912018910508711937.json, 图片生成/图生图/全能图片G-4o版吉卜力风格_1914282497189052417.json, 图片生成/图生图/全能图片G4o同款一键定制吊卡公仔_1911777214587961345.json, 图片生成/图生图/抖音同款_治愈系儿童绘本_1914188492946010114.json, 图片生成/图生图/涂鸦手绘风格-图生图转绘_1943146154374946818.json, 图片生成/图生图/真人照片改漫画_1888207245665001474.json, 平台全量/人物转涂鸦-Flux_1959320906428526594.json, 平台全量/动漫形象_1868962191436324865.json, 平台全量/手绘新年涂鸦形象_1869302388795547650.json, 平台全量/梦幻油画风格形象_1871848089949503490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_26
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Bernini图像编辑_2065059800358154242.json、图片生成/图生图/Bernini图像编辑v2_2064182005436342273.json、图片生成/文生图/Bernini-R 图像编辑_2062541633941495810.json、图片生成/文生图/Bernini-R 文生图_2062533470706036738.json、视频生成/图生视频/Bernini-R 单图参考成片工作流_2063268818142715906.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/10秒一键漫画感工作流_1889889417681838082.json、图片生成/图生图/flux-redux-创意迁移-logo设计_1950208575371173889.json、图片生成/图生图/全能图片G 同款吉卜力风格_1909795874137145345.json、图片生成/图生图/全能图片G-4o版吉卜力风格_1912018910508711937.json、图片生成/图生图/全能图片G-4o版吉卜力风格_1914282497189052417.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：76%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BerniniConditioning`
-- `BerniniPromptEnhancer`
-- `CLIPLoader`
+全部 13 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
+- `CLIPVisionLoader`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `RHLLMChatNode`
-- `StringReplace`
-- `Text`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 9/11 个有
-- `PreviewAny` —— 9/11 个有
-- `image_scale_pixel_v2` —— 7/11 个有
-- `CreateVideo` —— 6/11 个有
-- `PrimitiveFloat` —— 6/11 个有
-- `SaveVideo` —— 6/11 个有
-- `SaveImage` —— 4/11 个有
-- `BatchImagesNode` —— 3/11 个有
-- `ImageScaleBy` —— 3/11 个有
-- `RIFE VFI` —— 3/11 个有
-- `VHS_VideoCombine` —— 3/11 个有
-- `easy cleanGpuUsed` —— 3/11 个有
-- `JWInteger` —— 2/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/11 个有
-- `easy int` —— 2/11 个有
-- `DF_Integer` —— 1/11 个有
-- `SimpleMath+` —— 1/11 个有
+- `ApplyPulidFlux` —— 12/13 个有
+- `CLIPVisionEncode` —— 12/13 个有
+- `PulidEvaClipLoader` —— 12/13 个有
+- `PulidFluxModelLoader` —— 12/13 个有
+- `PulidInsightFaceLoader` —— 12/13 个有
+- `StyleModelApplySimple` —— 12/13 个有
+- `EmptyLatentImage` —— 9/13 个有
+- `JjkText` —— 8/13 个有
+- `TextCombinerTwo` —— 8/13 个有
+- `FluxResolutionNode` —— 7/13 个有
+- `RH_Captioner` —— 7/13 个有
+- `ShowText|pysssss` —— 6/13 个有
+- `Label (rgthree)` —— 4/13 个有
+- `LayerColor: Brightness & Contrast` —— 4/13 个有
+- `ImageResizeKJ` —— 3/13 个有
+- `VAEEncode` —— 3/13 个有
+- `Anything Everywhere` —— 1/13 个有
+- `CR Text Replace` —— 1/13 个有
+- `ChinesePrompt_Mix` —— 1/13 个有
+- `DF_Get_image_size` —— 1/13 个有
+- `EmptySD3LatentImage` —— 1/13 个有
+- `ModelSamplingFlux` —— 1/13 个有
+- `RH_Prompter` —— 1/13 个有
+- `TextCombinerSix` —— 1/13 个有
+- `YC_LG_Redux` —— 1/13 个有
+- `workflow/展示文本` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 11 | 82% |
-| Prompt 约束强度(CFG) | 14 | 14 - 50 | 11 | 32% |
-| 采样算法 | 1 | 1 - 1.5 | 11 | 82% |
-| 调度器 | euler | - | 11 | 100% |
-| 重绘幅度 | simple | - | 11 | 100% |
+| 宽度 | 1024 | 512 - 1024 | 9 | 83% |
+| 高度 | 1280 | 512 - 1280 | 9 | 79% |
 
 ## 常见问题
 
@@ -74,9 +81,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，11 个样本，一致性 82%
-- Prompt 约束强度(CFG) 中位数 14，观测区间 14 - 50，11 个样本，取值分散，一致性仅 32%
-- 采样算法 中位数 1，观测区间 1 - 1.5，11 个样本，取值集中（一致性 82%）
-- 调度器 最常用 euler，11 个样本，一致性 100%
-- 重绘幅度 最常用 simple，11 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 50，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 1024，观测区间 512 - 1024，9 个样本，取值集中（一致性 83%）
+- 高度 中位数 1280，观测区间 512 - 1280，9 个样本

@@ -3,58 +3,56 @@ name: text_to_image_lora_sampler_clip_620
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.867
-common_nodes: [CLIPLoader, CLIPTextEncode, DF_Integer, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LG_Color_Match_V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RHHiddenNodes, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8235
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Muter (rgthree), JjkText, KSampler, LoraLoaderModelOnly, PreviewAny, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Moss商业级真实感放大 高光锁透亮细节精修处理工具_2114083426931400706.json, 图片生成/图生图/无损放大人像专用｜图生图细节增强画质不缩水_2110763959346360321.json]
+members: [图片生成/反推提示词/提示词反推工作流合集，反推提示词多场景覆盖工具_2106523033115643905.json, 音频生成/音频生成/视频提示词反推工具｜看片自动拆解生成可复用描述_2103089392385609730.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_620
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Moss商业级真实感放大 高光锁透亮细节精修处理工具_2114083426931400706.json、图片生成/图生图/无损放大人像专用｜图生图细节增强画质不缩水_2110763959346360321.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/提示词反推工作流合集，反推提示词多场景覆盖工具_2106523033115643905.json、音频生成/音频生成/视频提示词反推工具｜看片自动拆解生成可复用描述_2103089392385609730.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `DF_Integer`
 - `EmptyLatentImage`
-- `Image Comparer (rgthree)`
+- `Fast Groups Muter (rgthree)`
 - `JjkText`
 - `KSampler`
-- `LG_Color_Match_V2`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `SaveImage`
+- `PreviewAny`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `ImageScaleBy` —— 1/2 个有
-- `ImageUpscaleWithModel` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `JWFloat` —— 1/2 个有
-- `PainterFluxImageEdit` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `SkipLayerGuidanceDiTSimple` —— 1/2 个有
-- `UpscaleModelLoader` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `easy imageColorMatch` —— 1/2 个有
+- `LayerUtility: JoyCaption2ExtraOptions` —— 1/2 个有
+- `LayerUtility: JoyCaptionBeta1` —— 1/2 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `RH_Translator` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `ShowText|pysssss` —— 1/2 个有
+- `WD14Tagger|pysssss` —— 1/2 个有
 
 ## 典型参数
 
@@ -72,7 +70,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -83,5 +81,5 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

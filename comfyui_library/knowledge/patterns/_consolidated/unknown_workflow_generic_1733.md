@@ -3,45 +3,34 @@ name: unknown_workflow_generic_1733
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.68
-common_nodes: [DF_Text_Box, Fast Groups Muter (rgthree), LoadAudio, LoadImage, PreviewAny, PrimitiveBoolean, RH_LLMAPI_NODE, RH_Translator, SaveVideo, ShowText|pysssss, TextCombinerTwo, VHS_LoadVideoFFmpeg, WhisperSTT, easy ifElse, easy showAnything]
+coverage: 0.857
+common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage, easy promptList]
 problems: []
 missing: []
-members: [视频生成/图生视频/音频读取字幕+全能视频S 图生视频15秒_1991792893413388289.json, 视频生成/图生视频/音频读取字幕+全能视频S 图生视频15秒（10并发版）_2000383536815370241.json]
+members: [图片生成/图生图/手动镜头人物场景（最强付费模型）_2010620840915767297.json, 图片生成/图生图/🍌20260101_谷歌大香蕉 Nano banan Pro 2.0 （8K不要用）_2006202053034512385.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1733
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/音频读取字幕+全能视频S 图生视频15秒_1991792893413388289.json、视频生成/图生视频/音频读取字幕+全能视频S 图生视频15秒（10并发版）_2000383536815370241.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/手动镜头人物场景（最强付费模型）_2010620840915767297.json、图片生成/图生图/🍌20260101_谷歌大香蕉 Nano banan Pro 2.0 （8K不要用）_2006202053034512385.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：68%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `DF_Text_Box`
-- `Fast Groups Muter (rgthree)`
-- `LoadAudio`
 - `LoadImage`
-- `PreviewAny`
-- `PrimitiveBoolean`
-- `RH_LLMAPI_NODE`
-- `RH_Translator`
-- `SaveVideo`
-- `ShowText|pysssss`
-- `TextCombinerTwo`
-- `VHS_LoadVideoFFmpeg`
-- `WhisperSTT`
-- `easy ifElse`
-- `easy showAnything`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Sora2_I2V` —— 1/2 个有
-- `RH_Sora2_I2V_Batch` —— 1/2 个有
+- `QwenMultiangleCameraNode` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

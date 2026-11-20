@@ -1,41 +1,45 @@
 ---
 name: unknown_workflow_video_upscale_8
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.769
-common_nodes: [Fast Groups Bypasser (rgthree), ImageUpscaleWithModel, ImpactInt, JjkText, LTXVPromptEnhancer, LTXVPromptEnhancerLoader, LoadImage, RHBatchImages:, RIFE VFI, RunningHub_FramePack, UpscaleModelLoader, VHS_VideoCombine, easy showAnything]
+frequency: 6
+level: moderate
+coverage: 0.762
+common_nodes: [PDIMAGE_LongerSize, RTXVideoSuperResolution, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VOSR2ModelLoader, VOSR2Upscale, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/FramePack 图生长视频高效快速版｜放大高清版_1913810352075931649.json, 视频生成/图生视频/图生长视频高效快速版(FramePack+LTX提示词优化+放大插帧)_1913426661780484097.json]
+members: [平台全量/Vosr 2.0+RTX视频串联-超高清修复-minimax H3_2097507438240026626.json, 平台全量/Vosr 2.0修复视频像素视频超分修复_2097254372022505474.json, 平台全量/Vosr 2视频高清化｜极速版｜级联2K｜4K_2097096807590490113.json, 平台全量/Vosr_2视频高清化｜极速版｜级联2K｜4K_2100053709022650370.json, 平台全量/Vosr_2视频高清化｜极速版｜级联2K｜4K_2100134255883014146.json, 视频生成/文生视频/Vosr_2视频高清化｜极速版｜级联2K｜4K_2101627974746460161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_8
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FramePack 图生长视频高效快速版｜放大高清版_1913810352075931649.json、视频生成/图生视频/图生长视频高效快速版(FramePack+LTX提示词优化+放大插帧)_1913426661780484097.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Vosr 2.0+RTX视频串联-超高清修复-minimax H3_2097507438240026626.json、平台全量/Vosr 2.0修复视频像素视频超分修复_2097254372022505474.json、平台全量/Vosr 2视频高清化｜极速版｜级联2K｜4K_2097096807590490113.json、平台全量/Vosr_2视频高清化｜极速版｜级联2K｜4K_2100053709022650370.json、平台全量/Vosr_2视频高清化｜极速版｜级联2K｜4K_2100134255883014146.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `ImageUpscaleWithModel`
-- `ImpactInt`
-- `JjkText`
-- `LTXVPromptEnhancer`
-- `LTXVPromptEnhancerLoader`
-- `LoadImage`
-- `RHBatchImages:`
-- `RIFE VFI`
-- `RunningHub_FramePack`
-- `UpscaleModelLoader`
+全部 6 个 workflow 都包含：
+- `PDIMAGE_LongerSize`
+- `RTXVideoSuperResolution`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `VHS_VideoInfo`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `Int` —— 5/6 个有
+- `SimpleMath+` —— 5/6 个有
+- `孤海注释` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
+- `PreviewImage` —— 2/6 个有
+- `EmptyImage` —— 1/6 个有
+- `JindouyunShowAnything` —— 1/6 个有
 
 ## 典型参数
 
@@ -47,4 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

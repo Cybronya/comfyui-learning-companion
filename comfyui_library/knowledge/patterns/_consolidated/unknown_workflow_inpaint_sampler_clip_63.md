@@ -1,70 +1,75 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_63
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7835
-common_nodes: [CLIPLoader, CLIPTextEncode, Image Comparer (rgthree), InpaintCropImproved, InpaintModelConditioning, InpaintStitchImproved, KSampler, LoadImage, MaskToImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: strong
+coverage: 0.8485
+common_nodes: [CLIPTextEncode, DifferentialDiffusion, DualCLIPLoader, FluxGuidance, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), Image Comparer (rgthree), InpaintModelConditioning, KSampler, LoadImage, PreviewImage, SAMModelLoader (segment anything), SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Z-image-turbo面部修复_2058862267634114561.json, 图片生成/图生图/ZIT 最强换脸工作流_2012845082893885441.json]
+members: [图片生成/图生图/一键换衣-提示词方式_1901607291534065665.json, 图片生成/图生图/一键消除水印_1926110099427790849.json, 图片生成/图生图/消除水印_1937873398519500802.json, 平台全量/消除水印_1937705800100155393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_63
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Z-image-turbo面部修复_2058862267634114561.json、图片生成/图生图/ZIT 最强换脸工作流_2012845082893885441.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键换衣-提示词方式_1901607291534065665.json、图片生成/图生图/一键消除水印_1926110099427790849.json、图片生成/图生图/消除水印_1937873398519500802.json、平台全量/消除水印_1937705800100155393.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
+- `DifferentialDiffusion`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
 - `Image Comparer (rgthree)`
-- `InpaintCropImproved`
 - `InpaintModelConditioning`
-- `InpaintStitchImproved`
 - `KSampler`
 - `LoadImage`
-- `MaskToImage`
 - `PreviewImage`
+- `SAMModelLoader (segment anything)`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DifferentialDiffusion` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
+- `GrowMaskWithBlur` —— 3/4 个有
+- `Image Overlay` —— 3/4 个有
+- `LayerMask: MaskPreview` —— 3/4 个有
+- `DeepTranslatorTextNode` —— 2/4 个有
+- `GrowMask` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `MaskToImage` —— 1/4 个有
+- `Masks Combine Regions` —— 1/4 个有
+- `VAEEncodeForInpaint` —— 1/4 个有
+- `easy imageScaleDownBy` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.65 | - | 2 | 100% |
+| 采样步数 | 30 | 20 - 30 | 4 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | normal | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.65，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 30，观测区间 20 - 30，4 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 normal，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

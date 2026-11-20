@@ -1,72 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_858
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8585
-common_nodes: [BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, ConditioningZeroOut, ExtendIntermediateSigmas, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PixaromaLabel, PlaySound|pysssss, ResolutionSelector, SelfLiftAvatarH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+frequency: 3
+level: strong
+coverage: 0.939
+common_nodes: [BerniniStudio, CLIPLoader, DapaoSmartMemoryOptimizerNode, ImageSharpen, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, RIFE VFI, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy int, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 360度环绕视频+Selflift 专用高分辨率生成作流_2106000852258480129.json, 视频生成/图生视频/MiniMax H3 无限时长工作流 SelfLite版 一次30S以上_2103920884787535874.json]
+members: [视频生成/图生视频/Bernini 4步急速LORA视频编辑_2076959623524995074.json, 视频生成/图生视频/Bernini 4步急速LORA视频编辑_2083599403918643201.json, 视频生成/图生视频/Bernini 图生视频_4步极速LORA视频编辑_2078379268756828161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_858
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 360度环绕视频+Selflift 专用高分辨率生成作流_2106000852258480129.json、视频生成/图生视频/MiniMax H3 无限时长工作流 SelfLite版 一次30S以上_2103920884787535874.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Bernini 4步急速LORA视频编辑_2076959623524995074.json、视频生成/图生视频/Bernini 4步急速LORA视频编辑_2083599403918643201.json、视频生成/图生视频/Bernini 图生视频_4步极速LORA视频编辑_2078379268756828161.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
+全部 3 个 workflow 都包含：
+- `BerniniStudio`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `ConditioningZeroOut`
-- `ExtendIntermediateSigmas`
-- `KSamplerSelect`
+- `DapaoSmartMemoryOptimizerNode`
+- `ImageSharpen`
+- `KSamplerAdvanced`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PixaromaLabel`
-- `PlaySound|pysssss`
-- `ResolutionSelector`
-- `SelfLiftAvatarH3Sampler`
+- `RIFE VFI`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
+- `easy int`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioConcat` —— 1/2 个有
-- `AudioCrop` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `MiniMaxH3AddGuide` —— 1/2 个有
-- `MiniMaxH3ImageToVideo` —— 1/2 个有
-- `MiniMaxH3ReferenceToVideo` —— 1/2 个有
-- `PixaromaDuration` —— 1/2 个有
-- `PixaromaGetNode` —— 1/2 个有
-- `PixaromaGroupSwitch` —— 1/2 个有
-- `PixaromaSetNode` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `Note Plus (mtb)` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 3 | 100% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | uni_pc | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -74,4 +58,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 uni_pc，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

@@ -1,35 +1,42 @@
 ---
 name: unknown_workflow_generic_589
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8642
-common_nodes: [LoadImage, SaveImage]
+coverage: 0.8805
+common_nodes: [ImageScaleBy, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, PrimitiveFloat, SaveImage, SeedVR2, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片K Max 多图编辑_2008822643360796673.json, 图片生成/图生图/多图融合编辑工作流｜Kontext Max 最多四图_2099690030104145921.json, 图片生成/图生图/多图融合编辑工作流｜Kontext_Max_最多四图_2100388993618763777.json, 图片生成/图生图/多图融合编辑工作流｜Kontext_Max_最多四图_2100413285022658561.json, 图片生成/文生图/文生图工作流｜V7 官方模型 风格参考_2100471569687605250.json]
+members: [图片生成/图生图/高清修复+超清放大_1959455054111649793.json, 图片生成/图生图/高清修复+超清放大_1962145972216381442.json, 图片生成/文生图/高清修复（最新）_1943208890689609730.json, 平台全量/图片高清修复_1962354476722098177.json, 平台全量/图片高清修复（SeedVR2）_1961405747022204929.json, 平台全量/高清修复（最新）_1942483411519082497.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_589
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片K Max 多图编辑_2008822643360796673.json、图片生成/图生图/多图融合编辑工作流｜Kontext Max 最多四图_2099690030104145921.json、图片生成/图生图/多图融合编辑工作流｜Kontext_Max_最多四图_2100388993618763777.json、图片生成/图生图/多图融合编辑工作流｜Kontext_Max_最多四图_2100413285022658561.json、图片生成/文生图/文生图工作流｜V7 官方模型 风格参考_2100471569687605250.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/高清修复+超清放大_1959455054111649793.json、图片生成/图生图/高清修复+超清放大_1962145972216381442.json、图片生成/文生图/高清修复（最新）_1943208890689609730.json、平台全量/图片高清修复_1962354476722098177.json、平台全量/图片高清修复（SeedVR2）_1961405747022204929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `ImageScaleBy`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `MathExpression|pysssss`
+- `PrimitiveFloat`
 - `SaveImage`
+- `SeedVR2`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `RH_Flux_Kontext_Max_Multi` —— 4/5 个有
-- `RH_Midjourney` —— 1/5 个有
+- `ColorMatch` —— 5/6 个有
+- `ImageConcanate` —— 5/6 个有
+- `PreviewImage` —— 1/6 个有
 
 ## 典型参数
 

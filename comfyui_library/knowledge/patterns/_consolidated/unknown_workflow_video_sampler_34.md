@@ -1,42 +1,43 @@
 ---
 name: unknown_workflow_video_sampler_34
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8915
-common_nodes: [AniCrafterLoader, AniCrafterPreImage, AniCrafterPreText, AniCrafterPreVideo, AniCrafterSampler, LoadImage, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
+frequency: 5
+level: moderate
+coverage: 0.8948
+common_nodes: [Float to Int, GetVideoComponents, LoadImage, LoadVideo, MathExpression|pysssss, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/AniCrafter人物动作迁移_1945997546588434433.json, 视频生成/图生视频/AniCrafter人物动作迁移加速版V2_1947175186761822209.json]
+members: [视频生成/图生视频/DreamID-V视频换脸_2009253489515438082.json, 视频生成/图生视频/王炸！DreamID-V 视频换脸_2009621483731030017.json, 视频生成/图生视频/王炸！DreamID-V视频换脸加速版V3（修复报错2倍加速）_2008970047242375169.json, 视频生成/图生视频/视频换脸_2050705839849259009.json, 视频生成/图生视频/😶‍🌫️DreamID-V 最新视频换脸😶‍🌫️_2009059203486322689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_34
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/AniCrafter人物动作迁移_1945997546588434433.json、视频生成/图生视频/AniCrafter人物动作迁移加速版V2_1947175186761822209.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/DreamID-V视频换脸_2009253489515438082.json、视频生成/图生视频/王炸！DreamID-V 视频换脸_2009621483731030017.json、视频生成/图生视频/王炸！DreamID-V视频换脸加速版V3（修复报错2倍加速）_2008970047242375169.json、视频生成/图生视频/视频换脸_2050705839849259009.json、视频生成/图生视频/😶‍🌫️DreamID-V 最新视频换脸😶‍🌫️_2009059203486322689.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
+- **样本数**：5
+- **可信度**：中等可信
 - **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AniCrafterLoader`
-- `AniCrafterPreImage`
-- `AniCrafterPreText`
-- `AniCrafterPreVideo`
-- `AniCrafterSampler`
+全部 5 个 workflow 都包含：
+- `Float to Int`
+- `GetVideoComponents`
 - `LoadImage`
-- `VHS_LoadVideo`
+- `LoadVideo`
+- `MathExpression|pysssss`
+- `RunningHub_DreamID-V_Loader`
+- `RunningHub_DreamID-V_Sampler`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcanate` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `PDIMAGE_LongerSize` —— 1/2 个有
+- `JWInteger` —— 4/5 个有
+- `ImageConcatMulti` —— 2/5 个有
+- `Float` —— 1/5 个有
+- `INTConstant` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
 
 ## 典型参数
 
@@ -48,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

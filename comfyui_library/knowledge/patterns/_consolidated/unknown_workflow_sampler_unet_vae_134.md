@@ -1,74 +1,79 @@
 ---
 name: unknown_workflow_sampler_unet_vae_134
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.84975
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.905778
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json, 图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json, 图片生成/文生图/Qwen Image 2.1 文生图 _ 纯净官流40步（无PE）_2106930676925812737.json, 图片生成/文生图/Qwen Image 2.1 标准文生图工作流_2101851852332687361.json, 图片生成/文生图/Qwen-image2.1文生图3D国漫CG风格_2112960915317547010.json, 图片生成/文生图/Qwen-image2.1文生图赛璐璐平涂动漫风格_2112971703084208130.json, 图片生成/文生图/Qwen_Image_2.1_文生图_6步加速无PE_2107979311847399426.json, 图片生成/文生图/Qwen_Image_2.1_文生图_纯净官流40步无PE_2107976735823323137.json]
+members: [图片生成/图生图/Fire Red Image Edit三图参考图编辑_2028311979135344641.json, 图片生成/图生图/FireRed-Image-Edit-1.0 人物换装_2026821364107190274.json, 图片生成/图生图/FireRed-edit-单图编辑_2020792649099251713.json, 图片生成/图生图/FireRed-edit-多图编辑_2027000392680218626.json, 图片生成/图生图/FireRed-edit1.1-单图编辑_2029538924632219649.json, 图片生成/图生图/Qwen 2511最强开源图像编辑工作流_2054749060900376577.json, 图片生成/图生图/Qwen 2511最强开源图像编辑工作流_2055186368539709441.json, 图片生成/图生图/Qwen-Edit-2511-真人转动漫_2082801924931411970.json, 图片生成/图生图/千问两步编辑，手机壳图案_2084596915836116993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_134
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json、图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json、图片生成/文生图/Qwen Image 2.1 文生图 _ 纯净官流40步（无PE）_2106930676925812737.json、图片生成/文生图/Qwen Image 2.1 标准文生图工作流_2101851852332687361.json、图片生成/文生图/Qwen-image2.1文生图3D国漫CG风格_2112960915317547010.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Fire Red Image Edit三图参考图编辑_2028311979135344641.json、图片生成/图生图/FireRed-Image-Edit-1.0 人物换装_2026821364107190274.json、图片生成/图生图/FireRed-edit-单图编辑_2020792649099251713.json、图片生成/图生图/FireRed-edit-多图编辑_2027000392680218626.json、图片生成/图生图/FireRed-edit1.1-单图编辑_2029538924632219649.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `EmptyLatentImage`
 - `KSampler`
+- `LoadImage`
 - `SaveImage`
-- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 5/8 个有
-- `PrimitiveStringMultiline` —— 5/8 个有
-- `QwenImage21Cache` —— 3/8 个有
-- `EmptyImage` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `easy showAnything` —— 2/8 个有
-- `ModelAttentionBackend` —— 1/8 个有
-- `ModelSamplingFlux` —— 1/8 个有
-- `孤海注释` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 8/9 个有
+- `ConditioningZeroOut` —— 7/9 个有
+- `Image Comparer (rgthree)` —— 7/9 个有
+- `TextEncodeQwenImageEditPlus` —— 6/9 个有
+- `FluxKontextImageScale` —— 4/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/9 个有
+- `Text Multiline` —— 3/9 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 3/9 个有
+- `GetImageSize` —— 2/9 个有
+- `ImageScaleToTotalPixels` —— 1/9 个有
+- `LoraLoader` —— 1/9 个有
+- `MuyeTextEditOutput` —— 1/9 个有
+- `easy int` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1088 | 1024 - 2048 | 8 | 72% |
-| 高度 | 1512 | 1024 - 2048 | 8 | 67% |
-| 采样步数 | 17 | 6 - 40 | 8 | 32% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 75% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 512 | 512 - 1280 | 9 | 53% |
+| 高度 | 512 | 512 - 1280 | 9 | 53% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 8 | 4 - 15 | 9 | 56% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1088，观测区间 1024 - 2048，8 个样本
-- 高度 中位数 1512，观测区间 1024 - 2048，8 个样本
-- 采样步数 中位数 17，观测区间 6 - 40，8 个样本，取值分散，一致性仅 32%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 75%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（4/8 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，观测区间 512 - 1280，9 个样本
+- 高度 中位数 512，观测区间 512 - 1280，9 个样本
+- 采样步数 中位数 8，观测区间 4 - 15，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（8/9 个样本）：Steps较低可能导致细节不足

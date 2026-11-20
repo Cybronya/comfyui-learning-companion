@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_video_140
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5905
-common_nodes: [CR Text, ImageCompositeMasked, ImageToMask, LoadImage, RunningHub Deepcleaner, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [SeedVR2, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/抖音剪映同款拉幕转场视频+全节点注释_2099419111175573506.json, 视频生成/文生视频/视频叠加图片（logo）+全节点注释_2093934137269907458.json]
+members: [平台全量/SeedVR 3B视频高清放大修复工作流_1938058508694917121.json, 平台全量/SeedVR2视频放大_1938131587848671234.json, 视频生成/图生视频/全能视频S专用hd高清竖版横板_1979932001895616514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_140
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/抖音剪映同款拉幕转场视频+全节点注释_2099419111175573506.json、视频生成/文生视频/视频叠加图片（logo）+全节点注释_2093934137269907458.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/SeedVR 3B视频高清放大修复工作流_1938058508694917121.json、平台全量/SeedVR2视频放大_1938131587848671234.json、视频生成/图生视频/全能视频S专用hd高清竖版横板_1979932001895616514.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：59%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `ImageCompositeMasked`
-- `ImageToMask`
-- `LoadImage`
-- `RunningHub Deepcleaner`
+全部 3 个 workflow 都包含：
+- `SeedVR2`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `VHS_VideoInfo` —— 1/2 个有
+- `ImageConcanate` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
 
 ## 典型参数
 
@@ -44,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

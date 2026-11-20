@@ -1,99 +1,66 @@
 ---
 name: unknown_workflow_lora_sampler_clip_168
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.7165
-common_nodes: [BasicScheduler, BerniniPromptEnhancer, CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, CreateVideo, Display Any (rgthree), DualCLIPLoader, GetNode, GetVideoComponents, ImageScaleToMaxDimension, ImpactSwitch, JWInteger, KSamplerAdvanced, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchMemoryCleaner, PathchSageAttentionKJ, PrimitiveInt, RH_LLMAPI_NODE, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, SaveVideo, SetNode, StringReplace, Text, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncodeTiled, VAELoader, VAELoaderKJ, easy cleanGpuUsed]
+frequency: 5
+level: strong
+coverage: 0.9344
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyHunyuanLatentVideo, INTConstant, ImageFromBatch+, JWInteger, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, Qwen3_VQA, SDVN Any Show, TextConcat, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2064635596194271233.json, 视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2065001018898870274.json, 视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2073281054196383744.json, 视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2076389088697085954.json]
+members: [视频生成/文生视频/Comfy挑战赛8（诡影映画）-1920S 黑白恐怖文生视频（主题扩写）_1983777752908242945.json, 视频生成/文生视频/Smooth 2.2+Qwen3 VL自动文生视频V1_1982722479758163970.json, 视频生成/文生视频/wan2.2官方文生视频+Smooth 2.2动态优化+Qwen3 VL提示词优化_1983330102350114818.json, 视频生成/文生视频/（自用）Smooth 2.2+Animated 文生视频V3（双模式）_1986673673375514625.json, 视频生成/文生视频/（自用）Smooth 2.2+Qwen3 VL自动文生视频V2_1982706970622869505.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_168
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2064635596194271233.json、视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2065001018898870274.json、视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2073281054196383744.json、视频生成/图生视频/Bernini全局参考图生视频+LTX扩展+音效_2076389088697085954.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Comfy挑战赛8（诡影映画）-1920S 黑白恐怖文生视频（主题扩写）_1983777752908242945.json、视频生成/文生视频/Smooth 2.2+Qwen3 VL自动文生视频V1_1982722479758163970.json、视频生成/文生视频/wan2.2官方文生视频+Smooth 2.2动态优化+Qwen3 VL提示词优化_1983330102350114818.json、视频生成/文生视频/（自用）Smooth 2.2+Animated 文生视频V3（双模式）_1986673673375514625.json、视频生成/文生视频/（自用）Smooth 2.2+Qwen3 VL自动文生视频V2_1982706970622869505.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
-- `BerniniPromptEnhancer`
-- `CFGGuider`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Concatenate`
-- `ConditioningZeroOut`
-- `CreateVideo`
-- `Display Any (rgthree)`
-- `DualCLIPLoader`
-- `GetNode`
-- `GetVideoComponents`
-- `ImageScaleToMaxDimension`
-- `ImpactSwitch`
+- `CR Prompt Text`
+- `EmptyHunyuanLatentVideo`
+- `INTConstant`
+- `ImageFromBatch+`
 - `JWInteger`
 - `KSamplerAdvanced`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVideoMask`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `ModelPatchMemoryCleaner`
+- `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `RH_LLMAPI_NODE`
-- `RH_LLMAPI_Pro_Node`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SetNode`
-- `StringReplace`
-- `Text`
+- `Qwen3_VQA`
+- `SDVN Any Show`
+- `TextConcat`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
 - `VAELoader`
-- `VAELoaderKJ`
-- `easy cleanGpuUsed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BerniniConditioningReferenceSlots` —— 3/4 个有
-- `FrameInterpolate` —— 3/4 个有
-- `FrameInterpolationModelLoader` —— 3/4 个有
-- `HAIGC_VideoLastFrame` —— 3/4 个有
-- `RTXVideoSuperResolution` —— 3/4 个有
-- `SaveImage` —— 3/4 个有
-- `Fast Groups Muter (rgthree)` —— 2/4 个有
-- `BatchImagesNode` —— 1/4 个有
-- `BerniniConditioning` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
+- `VHS_VideoCombine` —— 3/5 个有
+- `SaveImage` —— 2/5 个有
+- `TT_img_enc` —— 2/5 个有
+- `TT_img_enc_v2` —— 2/5 个有
+- `ApplySageAttention` —— 1/5 个有
+- `ConcatTextOfUtils` —— 1/5 个有
+- `easy anythingIndexSwitch` —— 1/5 个有
+- `wanBlockSwap` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 258 | 129 - 258 | 4 | 75% |
-| 高度 | 30 | 24 - 30 | 4 | 91% |
-| 采样步数 | randomize | - | 4 | 100% |
-| Prompt 约束强度(CFG) | 7 | 4 - 10 | 4 | 57% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | euler | - | 4 | 100% |
-| 重绘幅度 | simple | - | 4 | 100% |
+| 采样步数 | fixed | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 12 | 12 - 12 | 5 | 100% |
+| 采样算法 | 1 | 1 - 1 | 5 | 100% |
+| 调度器 | uni_pc | - | 5 | 100% |
+| 重绘幅度 | beta | - | 5 | 100% |
 
 ## 常见问题
 
@@ -101,10 +68,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 258，观测区间 129 - 258，4 个样本
-- 高度 中位数 30，观测区间 24 - 30，4 个样本，取值集中（一致性 91%）
-- 采样步数 最常用 randomize，4 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 7，观测区间 4 - 10，4 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，4 个样本，一致性 100%
-- 重绘幅度 最常用 simple，4 个样本，一致性 100%
+- 采样步数 最常用 fixed，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 12，观测区间 12 - 12，5 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 uni_pc，5 个样本，一致性 100%
+- 重绘幅度 最常用 beta，5 个样本，一致性 100%

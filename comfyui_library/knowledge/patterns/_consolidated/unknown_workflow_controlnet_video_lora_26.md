@@ -1,86 +1,80 @@
 ---
 name: unknown_workflow_controlnet_video_lora_26
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.519
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GetImageSizeAndCount, GetNode, GrowMaskWithBlur, ImageBlend, ImageResizeKJv2, Int, LoadImage, MaskToImage, MemoryCleaner, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewAny, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy sam3GetObjectIds, easy sam3ModelLoader, easy sam3VideoModelExtraConfig, easy sam3VideoSegmentation, easy sam3Visualization]
+frequency: 5
+level: strong
+coverage: 0.964
+common_nodes: [ADE_AnimateDiffLoaderWithContext, ADE_StandardStaticContextOptions, AIO_Preprocessor, BNK_CLIPTextEncodeAdvanced, CLIPLoader, CLIPSetLastLayer, CheckpointLoaderSimple, CogVideoDecode, CogVideoImageEncode, CogVideoSampler, CogVideoTextEncode, ControlNetApplyAdvanced, ControlNetLoader, ControlNetLoaderAdvanced, DWPreprocessor, DownloadAndLoadCogVideoModel, FreeU_V2, GetImageSizeAndCount, ImageConcanate, ImageConcatMulti, ImageResizeKJ, ImageScale, KSamplerAdvanced //Inspire, LoadWanVideoT5TextEncoder, LoraLoader, PreviewImage, RIFE VFI, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/空白工作流_2029100592844513281.json, 数字人/数字人/wan-2.2-人物替换-V2_2058802119330852865.json, 数字人/数字人/wan-2.2-人物替换-V3_2059239614648508418.json, 视频生成/图生视频/wan-2.2-人物替换-V5_2067889293686820865.json]
+members: [平台全量/Wan2.1工作流+CogVideoX-5B生视频_2043932315499372545.json, 平台全量/视频生视频工作流（Wan2.1工作流+CogVideoX-5B工作流）_2007710160889843713.json, 视频生成/图生视频/视频生视频工作流（Wan2.1工作流+CogVideoX-5B工作流）_1986260724970389505.json, 视频生成/文生视频/文生视频  wan2.2真人转动漫_2041329650097463297.json, 视频生成/文生视频/真人转动漫 文生视频_2046502279716544514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_26
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/空白工作流_2029100592844513281.json、数字人/数字人/wan-2.2-人物替换-V2_2058802119330852865.json、数字人/数字人/wan-2.2-人物替换-V3_2059239614648508418.json、视频生成/图生视频/wan-2.2-人物替换-V5_2067889293686820865.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/Wan2.1工作流+CogVideoX-5B生视频_2043932315499372545.json、平台全量/视频生视频工作流（Wan2.1工作流+CogVideoX-5B工作流）_2007710160889843713.json、视频生成/图生视频/视频生视频工作流（Wan2.1工作流+CogVideoX-5B工作流）_1986260724970389505.json、视频生成/文生视频/文生视频  wan2.2真人转动漫_2041329650097463297.json、视频生成/文生视频/真人转动漫 文生视频_2046502279716544514.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：52%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BlockifyMask`
-- `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `DrawViTPose`
+全部 5 个 workflow 都包含：
+- `ADE_AnimateDiffLoaderWithContext`
+- `ADE_StandardStaticContextOptions`
+- `AIO_Preprocessor`
+- `BNK_CLIPTextEncodeAdvanced`
+- `CLIPLoader`
+- `CLIPSetLastLayer`
+- `CheckpointLoaderSimple`
+- `CogVideoDecode`
+- `CogVideoImageEncode`
+- `CogVideoSampler`
+- `CogVideoTextEncode`
+- `ControlNetApplyAdvanced`
+- `ControlNetLoader`
+- `ControlNetLoaderAdvanced`
+- `DWPreprocessor`
+- `DownloadAndLoadCogVideoModel`
+- `FreeU_V2`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMaskWithBlur`
-- `ImageBlend`
-- `ImageResizeKJv2`
-- `Int`
-- `LoadImage`
-- `MaskToImage`
-- `MemoryCleaner`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewAny`
+- `ImageConcanate`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `ImageScale`
+- `KSamplerAdvanced //Inspire`
+- `LoadWanVideoT5TextEncoder`
+- `LoraLoader`
 - `PreviewImage`
-- `SetNode`
+- `RIFE VFI`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
-- `WanVideoUni3C_ControlnetLoader`
-- `WanVideoUni3C_embeds`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy sam3GetObjectIds`
-- `easy sam3ModelLoader`
-- `easy sam3VideoModelExtraConfig`
-- `easy sam3VideoSegmentation`
-- `easy sam3Visualization`
-
-**可变部分**（部分 workflow 才有）：
-- `Primitive integer [Crystools]` —— 3/4 个有
-- `SimpleMath+` —— 3/4 个有
-- `ZML_AnyTypeSwitchFive` —— 3/4 个有
-- `SeedVR2` —— 2/4 个有
-- `SeedVR2BlockSwap` —— 2/4 个有
-- `SeedVR2ExtraArgs` —— 2/4 个有
-- `DuckHideNode` —— 1/4 个有
-- `SaveImage` —— 1/4 个有
-- `WanVideoLoraSelect` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 20 | 20 - 20 | 5 | 100% |
+| 采样算法 | 7 | 7 - 7 | 5 | 100% |
+| 调度器 | dpmpp_2m | - | 5 | 100% |
+| 重绘幅度 | karras | - | 5 | 100% |
+| ControlNet 权重 | 1 | 1 - 1 | 5 | 100% |
+| LoRA 模型强度 | 0.5 | 0.5 - 0.5 | 5 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -88,4 +82,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 7，观测区间 7 - 7，5 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_2m，5 个样本，一致性 100%
+- 重绘幅度 最常用 karras，5 个样本，一致性 100%
+- ControlNet 权重 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.5，观测区间 0.5 - 0.5，5 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

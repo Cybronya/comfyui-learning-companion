@@ -1,36 +1,36 @@
 ---
 name: unknown_workflow_generic_715
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.87475
-common_nodes: [BRIA_RMBG_ModelLoader_Zho, BRIA_RMBG_Zho, LoadImage, SaveImage, preview_mask]
+coverage: 0.7224
+common_nodes: [JjkText, LoadImage, RH_Jimeng4_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/RMBG一键抠图_2057714410445164545.json, 图片生成/图生图/RMBG一键抠图_2079022658536173569.json, 图片生成/图生图/RMBG一键抠图_2079402674667216898.json, 图片生成/图生图/RMBG抠图_2108788082693730305.json]
+members: [图片生成/图生图/即梦 4.0：疯狂动物城 2 大合照，一键梦想，定制你的专属 ZooTopia！_1993866503539933186.json, 图片生成/图生图/即梦4.0 豆包生图 API 双图生图_1965777990313488385.json, 图片生成/图生图/即梦版-我和疯狂动物城2大合照-一键定制你的ZooTopia！_1995854135784353794.json, 图片生成/图生图/阿华抽图工作流_1970000592376655874.json, 图片生成/图生图/🎄 即梦 圣诞感分屏写真：一键变装，生成你的专属圣诞写真！_1996120673170997249.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_715
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/RMBG一键抠图_2057714410445164545.json、图片生成/图生图/RMBG一键抠图_2079022658536173569.json、图片生成/图生图/RMBG一键抠图_2079402674667216898.json、图片生成/图生图/RMBG抠图_2108788082693730305.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/即梦 4.0：疯狂动物城 2 大合照，一键梦想，定制你的专属 ZooTopia！_1993866503539933186.json、图片生成/图生图/即梦4.0 豆包生图 API 双图生图_1965777990313488385.json、图片生成/图生图/即梦版-我和疯狂动物城2大合照-一键定制你的ZooTopia！_1995854135784353794.json、图片生成/图生图/阿华抽图工作流_1970000592376655874.json、图片生成/图生图/🎄 即梦 圣诞感分屏写真：一键变装，生成你的专属圣诞写真！_1996120673170997249.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BRIA_RMBG_ModelLoader_Zho`
-- `BRIA_RMBG_Zho`
+全部 5 个 workflow 都包含：
+- `JjkText`
 - `LoadImage`
+- `RH_Jimeng4_Image2Image`
 - `SaveImage`
-- `preview_mask`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
 
 ## 典型参数
 

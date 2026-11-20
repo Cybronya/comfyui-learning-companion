@@ -1,70 +1,77 @@
 ---
 name: unknown_workflow_sampler_clip_unet_385
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.887667
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetImageSize, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PrimitiveInt, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.988
+common_nodes: [ApplySageAttention, CFGZeroStar, CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyHunyuanLatentVideo, JWInteger, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, ModelSamplingSD3, SaveImage, SaveLatent, UNETLoader, UNetTemporalAttentionMultiply]
+problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Flux2_klein4B&9B文生图_图生图_图像编辑合集_2012078185009127425.json, 图片生成/文生图/Klein 9B单、双、多图编辑_2018506313860386818.json, 图片生成/文生图/Klein 9b 文生图&编辑  工作流_2013047540010192898.json]
+members: [视频生成/文生视频/（自用）N-WAN E20 文生视频Latent工作流V2_1930947549484789761.json, 视频生成/文生视频/（自用）N-WAN EXP14 文生视频Latent工作流V1_1937509821795209217.json, 视频生成/文生视频/（自用）N-WAN EXP14 文生视频加速版Latent工作流V1_1939614536154660866.json, 视频生成/文生视频/🦖latent大法 N-WAN （带点词）_1931163021429637122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_385
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Flux2_klein4B&9B文生图_图生图_图像编辑合集_2012078185009127425.json、图片生成/文生图/Klein 9B单、双、多图编辑_2018506313860386818.json、图片生成/文生图/Klein 9b 文生图&编辑  工作流_2013047540010192898.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/（自用）N-WAN E20 文生视频Latent工作流V2_1930947549484789761.json、视频生成/文生视频/（自用）N-WAN EXP14 文生视频Latent工作流V1_1937509821795209217.json、视频生成/文生视频/（自用）N-WAN EXP14 文生视频加速版Latent工作流V1_1939614536154660866.json、视频生成/文生视频/🦖latent大法 N-WAN （带点词）_1931163021429637122.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `ApplySageAttention`
+- `CFGZeroStar`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Prompt Text`
+- `EmptyHunyuanLatentVideo`
+- `JWInteger`
+- `KSampler`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `PrimitiveInt`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `ModelSamplingSD3`
 - `SaveImage`
+- `SaveLatent`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `UNetTemporalAttentionMultiply`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/3 个有
-- `Anything Everywhere` —— 1/3 个有
-- `CR Text` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `Text Multiline` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 3/4 个有
+- `LoadLatent` —— 2/4 个有
+- `VHS_VideoCombine` —— 2/4 个有
+- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `TeaCache` —— 1/4 个有
+- `VAEDecode` —— 1/4 个有
+- `VAELoader` —— 1/4 个有
+- `WanVideoDecode` —— 1/4 个有
+- `WanVideoVAELoader` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 5 - 20 | 4 | 60% |
+| Prompt 约束强度(CFG) | 5 | 1 - 5 | 4 | 57% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | normal | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 3/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 5 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 5，观测区间 1 - 5，4 个样本
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 normal，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 高发问题（3/4 个样本）：发现KSampler但没有VAEDecode

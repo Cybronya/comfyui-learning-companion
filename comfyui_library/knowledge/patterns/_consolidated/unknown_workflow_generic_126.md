@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_generic_126
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.966786
-common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 0.815
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/文生视频/人声克隆 + 情感克隆 Index TTS 2_1971255216429580290.json, 音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json, 音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json, 音频生成/音频生成/IndexTTS2双人对话_2043272067566538753.json, 音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json, 音频生成/音频生成/IndexTTS2语音克隆_1967824167414411265.json, 音频生成/音频生成/IndexTTs2双人对话（可以参考两个人的参考音频，可控制情绪）_2109803189796167681.json, 音频生成/音频生成/Worker IndexTTS2_1976172533944860674.json, 音频生成/音频生成/单人_双人 音频生成 Indextts2.0声音克隆 音色情绪复制  语音克隆  情感向量_文本描述_2043490627521875969.json, 音频生成/音频生成/单人、双人声音克隆+情绪控制+自定义台词_2072693468299878401.json, 音频生成/音频生成/单人音频克隆+情绪控制_1995674428849709057.json, 音频生成/音频生成/庄庄TTS2声音克隆_2072614949343547394.json, 音频生成/音频生成/音频生成Indextts2.0声音克隆 情绪复制 支持双人对话+情感向量_文本描述音色迁移_2043490508206514178.json, 音频生成/音频生成/（情绪控制）IndexTTS2_语音_音色_克隆_情绪自定义_2089690131623137281.json]
+members: [图片生成/图生图/Seedance2.0 mini图生视频_2070424978759180289.json, 图片生成/文生图/全能视频 Omni Flash 图生视频+全节点注释_2061058541888299009.json, 平台全量/Seedance2.0_mini图生视频_2117195143232180225.json, 视频生成/图生视频/Gemini Omni Flash多图生视频工作流（支持3张图）_2064374320712994817.json, 视频生成/图生视频/Omni Flash图生视频_2061328810875904001.json, 视频生成/图生视频/Omni Flash图生视频_2066774204372045825.json, 视频生成/图生视频/seedance2.0 mini图生视频_2070036008581812226.json, 视频生成/图生视频/seedance2.0 mini图生视频_2070040969587806209.json, 视频生成/图生视频/seedance2.0-Mini_图生视频_2069669860082274305.json, 视频生成/图生视频/seedance2.0mini图生视频最新图生视频_2070071367327903745.json, 视频生成/图生视频/全能视频 Omni Flash 图生视频-低价渠道版_2059980232874090498.json, 视频生成/图生视频/全能视频 Omni Flash 图生视频_2058788615504883714.json, 视频生成/文生视频/Seedance Mini-图生视频+全节点注释_2069737627246485505.json, 视频生成/文生视频/seedance2.0 mini图生视频_2070010907375259649.json, 视频生成/文生视频/seedance2.0 mini图生视频_2070038289159118850.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_126
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/人声克隆 + 情感克隆 Index TTS 2_1971255216429580290.json、音频生成/音频生成/IndexTTS2单人音频控制_1966034946299260929.json、音频生成/音频生成/IndexTTS2双人对话+_1966092354333609986.json、音频生成/音频生成/IndexTTS2双人对话_2043272067566538753.json、音频生成/音频生成/IndexTTS2文生配音_2010333106489794561.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/Seedance2.0 mini图生视频_2070424978759180289.json、图片生成/文生图/全能视频 Omni Flash 图生视频+全节点注释_2061058541888299009.json、平台全量/Seedance2.0_mini图生视频_2117195143232180225.json、视频生成/图生视频/Gemini Omni Flash多图生视频工作流（支持3张图）_2064374320712994817.json、视频生成/图生视频/Omni Flash图生视频_2061328810875904001.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
+全部 15 个 workflow 都包含：
+- `LoadImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAudio` —— 13/14 个有
-- `Text Multiline` —— 13/14 个有
-- `CR Text` —— 8/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/14 个有
-- `JjkText` —— 1/14 个有
+- `RH_RhartVideoSparkvideo20MiniImageToVideo` —— 9/15 个有
+- `CR Text` —— 8/15 个有
+- `RH_GeminiOmniFlashImageToVideo` —— 6/15 个有
 
 ## 典型参数
 

@@ -1,64 +1,63 @@
 ---
 name: unknown_workflow_video_lora_sampler_462
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.9036
-common_nodes: [GetImageSizeAndCount, ImageConcatMulti, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.912
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, SplineEditor, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/One-To-All TI2V动作迁移工作流V1 cfg_2000814945631600641.json, 视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json, 视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json, 视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json, 视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json]
+members: [视频生成/图生视频/wanvideo_WanMove_I2V_example_1998599416028258305.json, 视频生成/图生视频/【遇见AI】wan2.1 AIT轨迹控制图生视频_2071858962642857985.json, 视频生成/图生视频/【阿良绘】WanMove轨迹控制：运动示例工作流_2007470369120198658.json, 视频生成/图生视频/【阿良绘】WanMove轨迹控制：运动示例工作流_2008000096457203714.json, 视频生成/图生视频/万相ATI字节最新轨迹驱动图生视频_1929817339246624770.json, 视频生成/图生视频/图生视频 轨迹控制 稳定好玩~【wan2.1】_1999451312800624642.json, 视频生成/文生视频/Wan-Move潜在轨迹引导视频生成_1998898965116542977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_462
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/One-To-All TI2V动作迁移工作流V1 cfg_2000814945631600641.json、视频生成/图生视频/One-To-All TI2V动作迁移工作流V1_1998602211204718594.json、视频生成/图生视频/One-To-All骨骼重绑定动作迁移稳定版V1(Ref)_1998598682582900738.json、视频生成/图生视频/OneToAll大头娃娃骨骼绑定_1998516871580278785.json、视频生成/图生视频/动作迁移KJ版OneToAll骨骼绑定_1998992837641392130.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/wanvideo_WanMove_I2V_example_1998599416028258305.json、视频生成/图生视频/【遇见AI】wan2.1 AIT轨迹控制图生视频_2071858962642857985.json、视频生成/图生视频/【阿良绘】WanMove轨迹控制：运动示例工作流_2007470369120198658.json、视频生成/图生视频/【阿良绘】WanMove轨迹控制：运动示例工作流_2008000096457203714.json、视频生成/图生视频/万相ATI字节最新轨迹驱动图生视频_1929817339246624770.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageConcatMulti`
+全部 7 个 workflow 都包含：
+- `CLIPVisionLoader`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewImage`
-- `VHS_LoadVideo`
+- `SplineEditor`
 - `VHS_VideoCombine`
-- `WanVideoAddOneToAllPoseEmbeds`
-- `WanVideoAddOneToAllReferenceEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/5 个有
-- `CR Prompt Text` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `JWInteger` —— 2/5 个有
-- `LayerUtility: PurgeVRAM` —— 2/5 个有
-- `Qwen3_VQA` —— 2/5 个有
-- `WanVideoTorchCompileSettings` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `INTConstant` —— 1/5 个有
-- `MathExpression|pysssss` —— 1/5 个有
-- `WanVideoContextOptions` —— 1/5 个有
+- `LoadWanVideoT5TextEncoder` —— 6/7 个有
+- `WanVideoSetBlockSwap` —— 6/7 个有
+- `WanVideoSetLoRAs` —— 6/7 个有
+- `WanVideoTextEncode` —— 6/7 个有
+- `RepeatImageBatch` —— 5/7 个有
+- `WanVideoAddWanMoveTracks` —— 5/7 个有
+- `WanVideoWanDrawWanMoveTracks` —— 5/7 个有
+- `WanVideoTorchCompileSettings` —— 4/7 个有
+- `WanVideoATITracks` —— 2/7 个有
+- `easy showAnything` —— 2/7 个有
+- `AppendStringsToList` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/7 个有
+- `Note Plus (mtb)` —— 1/7 个有
+- `SimpleMath+` —— 1/7 个有
+- `Text Multiline` —— 1/7 个有
+- `WanVideoATITracksVisualize` —— 1/7 个有
+- `WanVideoTeaCache` —— 1/7 个有
+- `WanVideoTextEncodeCached` —— 1/7 个有
 
 ## 典型参数
 

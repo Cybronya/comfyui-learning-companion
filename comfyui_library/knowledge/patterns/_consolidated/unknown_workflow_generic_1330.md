@@ -1,34 +1,38 @@
 ---
 name: unknown_workflow_generic_1330
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [ImageScaleToTotalPixels, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage, Text Multiline]
+frequency: 3
+level: moderate
+coverage: 0.452333
+common_nodes: [ImpactSwitch, JjkText, PrimitiveInt, Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, SaveAudio, ShowText]
 problems: []
 missing: []
-members: [图片生成/图生图/-全能图片V1单图_多图工作流，图像编辑模型_1961791018268037121.json, 图片生成/图生图/-全能图片V1单图_多图工作流，最强图像编辑模型！_1961661249467695105.json]
+members: [数字人/数字人/Qwen3 TTS 声音设计_2030575107957067777.json, 数字人/数字人/自用tts2_2042080182118391810.json, 数字人/数字人/自用tts3_2050925956700876802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1330
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/-全能图片V1单图_多图工作流，图像编辑模型_1961791018268037121.json、图片生成/图生图/-全能图片V1单图_多图工作流，最强图像编辑模型！_1961661249467695105.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/Qwen3 TTS 声音设计_2030575107957067777.json、数字人/数字人/自用tts2_2042080182118391810.json、数字人/数字人/自用tts3_2050925956700876802.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：45%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageScaleToTotalPixels`
-- `LoadImage`
-- `RH_Nano_Banana_Image2Image`
-- `RH_Translator`
-- `SaveImage`
-- `Text Multiline`
+全部 3 个 workflow 都包含：
+- `ImpactSwitch`
+- `JjkText`
+- `PrimitiveInt`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceDesign`
+- `SaveAudio`
+- `ShowText`
+
+**可变部分**（部分 workflow 才有）：
+- `PrimitiveFloat` —— 1/3 个有
 
 ## 典型参数
 
@@ -40,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

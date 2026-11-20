@@ -3,17 +3,17 @@ name: unknown_workflow_generic_1105
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.889
-common_nodes: [ImageScaleDownToSize, LoadAudio, LoadImage, RH_Captioner, RunningHub OmniAvatar AllinOne, SaveVideo, Text Concatenate, Text Multiline, easy showAnything]
+coverage: 0.892667
+common_nodes: [BiRefNetRMBG, Fast Groups Bypasser (rgthree), HAIGC_SaveImagesToZip, Image_Channel_Apply, LoadImage, RHUploadZip_V2, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/omni-avatar数字人（图片+音频驱动）_1938785172315951106.json, 数字人/数字人/丰富手势动作数字人_阿里Omni-Avatar_1938439980119166978.json, 视频生成/图生视频/丰富手势动作数字人_阿里Omni-Avatar_1995047902009602050.json]
+members: [图片生成/图生图/0.1背景移除_2063993746894708738.json, 平台全量/批量背景移除-上传Zip压缩包-BiRefNet_2021515370980446210.json, 平台全量/背景移除-BiRefNet_1991527563120033793.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1105
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/omni-avatar数字人（图片+音频驱动）_1938785172315951106.json、数字人/数字人/丰富手势动作数字人_阿里Omni-Avatar_1938439980119166978.json、视频生成/图生视频/丰富手势动作数字人_阿里Omni-Avatar_1995047902009602050.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/0.1背景移除_2063993746894708738.json、平台全量/批量背景移除-上传Zip压缩包-BiRefNet_2021515370980446210.json、平台全量/背景移除-BiRefNet_1991527563120033793.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
@@ -23,15 +23,13 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `ImageScaleDownToSize`
-- `LoadAudio`
+- `BiRefNetRMBG`
+- `Fast Groups Bypasser (rgthree)`
+- `HAIGC_SaveImagesToZip`
+- `Image_Channel_Apply`
 - `LoadImage`
-- `RH_Captioner`
-- `RunningHub OmniAvatar AllinOne`
-- `SaveVideo`
-- `Text Concatenate`
-- `Text Multiline`
-- `easy showAnything`
+- `RHUploadZip_V2`
+- `SaveImage`
 
 ## 典型参数
 

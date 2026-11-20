@@ -1,115 +1,98 @@
 ---
 name: unknown_workflow_video_lora_sampler_82
 type: Unknown Workflow
-frequency: 18
-level: strong
-coverage: 0.902333
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioInfo, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Evaluate Integers, ImageBatch, ImageFromBatch, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchLoader, ModelPatchTorchSettings, PathchSageAttentionKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy forLoopEnd, easy forLoopStart, easy int, easy mathInt]
-problems: [Steps较低可能导致细节不足]
+frequency: 20
+level: moderate
+coverage: 0.7154
+common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+problems: []
 missing: []
-members: [数字人/数字人/InfiniteTalk-ComfyUI官版自循环_2019259304406159362.json, 数字人/数字人/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化-yun自用_2026705165088202753.json, 数字人/数字人/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化_2032746856781979650.json, 数字人/数字人/InfiniteTalk-ComfyUI官版自循环版（质量不劣化）_2018972622758879233.json, 数字人/数字人/InfiniteTalk-anycom_2058890249543176193.json, 数字人/数字人/InfiniteTalk-官版双人数字人自循环版（质量不劣化）_2019674131742068737.json, 数字人/数字人/InfiniteTalk-数字人官方自循环_2019377383660326913.json, 数字人/数字人/InfiniteTalki官流 长视频无衰减自循环_2019342054777688065.json, 数字人/数字人/InfiniteTalk数字人MV_2076641541761880066.json, 数字人/数字人/新InfiniteTalk-Comfyui官方魔改多图无限长视频数字人_2028667164265291777.json, 视频生成/图生视频/InfiniteTalk- 高质量图生视频 数字人MV 超长时间视频生成_2025770017006030849.json, 视频生成/图生视频/InfiniteTalk-ComfyUI官版数字人MV_2019621453360013313.json, 视频生成/图生视频/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化 +全节点注释_2056921656811147266.json, 视频生成/图生视频/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化_2024713111399309314.json, 视频生成/图生视频/InfiniteTalk-ComfyUI官版自循环版（质量不劣化）_2019616198597550082.json, 视频生成/图生视频/InfiniteTalk-官版数字人MV_多图自动连帧直出_2019582542961188866.json, 视频生成/图生视频/[🛫书墨]infinitetalk(官方单图无限for循环自动计算版)_2018961391968849921.json, 视频生成/图生视频/[🛫书墨]infinitetalk官方无限多图平均帧for循环版_2019080494813552642.json]
+members: [视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_2003025271127175169.json, 视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_uni3c_2003035793427972097.json, 视频生成/图生视频/【遇见AI】SCAIL-Pose姿势迁移，支持丝滑转身，支持双人对打_2000492359223832578.json, 视频生成/图生视频/一键SCAIL多只宠物跳舞_2014755319490023425.json, 视频生成/图生视频/丝滑动作迁移-SCAIL无限人数版_2001543214261780482.json, 视频生成/图生视频/动作迁移-丝滑转身-SCAIL_2001524857722531841.json, 视频生成/图生视频/动作迁移支持手部细节（单人）SCAIL支持丝滑转身_2000804833005367297.json, 视频生成/图生视频/动作迁移（单人）SCAIL（支持丝滑转身）2.0_2001144706195222530.json, 视频生成/图生视频/动作迁移（单人）SCAIL（支持丝滑转身）_2001092437491712001.json, 视频生成/图生视频/动作迁移（双人）SCAIL支持丝滑转身支持双人对打_2000796264725872641.json, 视频生成/图生视频/动作迁移（双人）SCAIL（支持丝滑转身、双人对打）2.0_2001142236438032385.json, 视频生成/图生视频/动作迁移（双人）SCAIL（支持丝滑转身、双人对打）_2001090043416543233.json, 视频生成/图生视频/动作运镜最强迁移-SCAIL_3D单人、多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2018306523847467009.json, 视频生成/图生视频/动作运镜最强迁移-SCAIL_3D单人、多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2023998769439711234.json, 视频生成/图生视频/单人多人动作迁移 运镜迁移 Scail-一键切换综合版_2002182497679077377.json, 视频生成/图生视频/多人动作迁移 单人动作迁移 Scail综合版_1996588683803369474.json, 视频生成/图生视频/多人动作迁移 单人动作迁移 Scail综合版_2058885569916264450.json, 视频生成/图生视频/最新SCAIL动作迁移美女跳舞，支持双人对战_2000446117890359297.json, 视频生成/图生视频/萌宠跳舞-动作运镜最强迁移-SCAIL_姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2018335059614375937.json, 视频生成/图生视频/角色动作迁移模仿-人物动物姿态驱动-骨骼对齐-运镜控制-360度旋转【公众号：70后教你做自媒体】_2066354482107207682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_82
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（数字人/数字人/InfiniteTalk-ComfyUI官版自循环_2019259304406159362.json、数字人/数字人/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化-yun自用_2026705165088202753.json、数字人/数字人/InfiniteTalk-ComfyUI官版自循环版+3分钟高速平衡优化_2032746856781979650.json、数字人/数字人/InfiniteTalk-ComfyUI官版自循环版（质量不劣化）_2018972622758879233.json、数字人/数字人/InfiniteTalk-anycom_2058890249543176193.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_2003025271127175169.json、视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_uni3c_2003035793427972097.json、视频生成/图生视频/【遇见AI】SCAIL-Pose姿势迁移，支持丝滑转身，支持双人对打_2000492359223832578.json、视频生成/图生视频/一键SCAIL多只宠物跳舞_2014755319490023425.json、视频生成/图生视频/丝滑动作迁移-SCAIL无限人数版_2001543214261780482.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：20
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioInfo`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Evaluate Integers`
-- `ImageBatch`
-- `ImageFromBatch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+全部 20 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `ModelPatchLoader`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy int`
-- `easy mathInt`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioTrim` —— 16/18 个有
-- `KSampler` —— 16/18 个有
-- `Text Multiline` —— 15/18 个有
-- `PreviewAudio` —— 12/18 个有
-- `easy showAnything` —— 12/18 个有
-- `Fast Bypasser (rgthree)` —— 8/18 个有
-- `Mute / Bypass Repeater (rgthree)` —— 8/18 个有
-- `GetImageSize` —— 5/18 个有
-- `JWFloat` —— 5/18 个有
-- `ImageBatchMulti` —— 4/18 个有
-- `MathExpression|pysssss` —— 4/18 个有
-- `PurgeVRAM_UTK` —— 3/18 个有
-- `RHHiddenNodes` —— 3/18 个有
-- `Any Switch (rgthree)` —— 2/18 个有
-- `BasicScheduler` —— 2/18 个有
-- `CFGGuider` —— 2/18 个有
-- `Fast Groups Muter (rgthree)` —— 2/18 个有
-- `KSamplerSelect` —— 2/18 个有
-- `RandomNoise` —— 2/18 个有
-- `SamplerCustomAdvanced` —— 2/18 个有
-- `AudioConcat` —— 1/18 个有
-- `AudioCrop` —— 1/18 个有
-- `AudioMerge` —— 1/18 个有
-- `BatchCount+` —— 1/18 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/18 个有
-- `Float` —— 1/18 个有
-- `Image Batch` —— 1/18 个有
-- `ImpactStringSelector` —— 1/18 个有
-- `Int` —— 1/18 个有
-- `LayerUtility: ImageMaskScaleAsV2` —— 1/18 个有
-- `PreviewImage` —— 1/18 个有
-- `PrimitiveStringMultiline` —— 1/18 个有
-- `ProcessString` —— 1/18 个有
-- `ShowText|pysssss` —— 1/18 个有
-- `easy convertAnything` —— 1/18 个有
-- `easy ifElse` —— 1/18 个有
+- `GetImageSizeAndCount` —— 19/20 个有
+- `WanVideoEncode` —— 19/20 个有
+- `WanVideoUni3C_ControlnetLoader` —— 19/20 个有
+- `WanVideoUni3C_embeds` —— 19/20 个有
+- `NLFPredict` —— 18/20 个有
+- `OnnxDetectionModelLoader` —— 18/20 个有
+- `PoseDetectionVitPoseToDWPose` —— 18/20 个有
+- `RenderNLFPoses` —— 18/20 个有
+- `GetNode` —— 17/20 个有
+- `INTConstant` —— 17/20 个有
+- `LoadWanVideoT5TextEncoder` —— 17/20 个有
+- `SetNode` —— 17/20 个有
+- `SimpleMath+` —— 17/20 个有
+- `WanVideoTextEncode` —— 17/20 个有
+- `WanVideoTorchCompileSettings` —— 17/20 个有
+- `FloatConstant` —— 15/20 个有
+- `ImageConcatMulti` —— 15/20 个有
+- `DownloadAndLoadNLFModel` —— 10/20 个有
+- `Int` —— 10/20 个有
+- `CR Text` —— 9/20 个有
+- `LoadNLFModel` —— 8/20 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 7/20 个有
+- `DWPreprocessor` —— 7/20 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/20 个有
+- `MathExpression|pysssss` —— 6/20 个有
+- `easy cleanGpuUsed` —— 5/20 个有
+- `CustomAddLabel` —— 3/20 个有
+- `JjkText` —— 3/20 个有
+- `Label (rgthree)` —— 3/20 个有
+- `PreviewImage` —— 3/20 个有
+- `TwoWaySwitch` —— 3/20 个有
+- `WanVideoTextEncodeCached` —— 3/20 个有
+- `intToFloat _O` —— 3/20 个有
+- `easy int` —— 2/20 个有
+- `Bookmark (rgthree)` —— 1/20 个有
+- `MemoryCleaner` —— 1/20 个有
+- `Seed` —— 1/20 个有
+- `SimpleCalculatorKJ` —— 1/20 个有
+- `TTResolutionSelector` —— 1/20 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | 3 - 4 | 16 | 87% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
-| 采样算法 | euler | - | 16 | 100% |
-| 调度器 | normal | - | 16 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 32/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 3 - 4，16 个样本，取值集中（一致性 87%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，16 个样本，一致性 100%
-- 调度器 最常用 normal，16 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 高发问题（32/18 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

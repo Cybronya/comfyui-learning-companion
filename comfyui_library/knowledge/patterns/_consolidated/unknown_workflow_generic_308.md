@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_generic_308
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 1
-common_nodes: [JWStringConcat, SaveImage, Text Input [Dream]]
+coverage: 0.55
+common_nodes: [JjkText, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/卖点图_2067536259005902850.json, 图片生成/图生图/参数图_2068882841676636161.json, 图片生成/图生图/场景图_2068890954798551041.json, 图片生成/图生图/洗稿_2043895902728884225.json, 图片生成/图生图/首图_2066768634512494593.json, 图片生成/图生图/首图_2068876315247333377.json, 图片生成/图生图/首图产品替换_2066794981121159169.json, 图片生成/图生图/首图产品替换_2068876600434843649.json]
+members: [图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清4K直出_2087109610242138113.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清出图_2085368034679672833.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079075930236080129.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079080462626148353.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2086704013961154562.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2088508959744421889.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2096618980592152578.json, 图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2114356047153557506.json, 图片生成/图生图/全能图片G-双图模式-支持PS插件_2047200668506656770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_308
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/卖点图_2067536259005902850.json、图片生成/图生图/参数图_2068882841676636161.json、图片生成/图生图/场景图_2068890954798551041.json、图片生成/图生图/洗稿_2043895902728884225.json、图片生成/图生图/首图_2066768634512494593.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清4K直出_2087109610242138113.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清出图_2085368034679672833.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079075930236080129.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2079080462626148353.json、图片生成/图生图/全能图片G-Image-2.0-人物面部三视图-高清直出_2086704013961154562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `JWStringConcat`
+全部 9 个 workflow 都包含：
+- `JjkText`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
-- `Text Input [Dream]`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScale` —— 7/8 个有
-- `LoadImage` —— 7/8 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 7/8 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/8 个有
+- `LoadImage` —— 8/9 个有
+- `PreviewImage` —— 8/9 个有
+- `孤海注释` —— 5/9 个有
+- `PrimitiveInt` —— 1/9 个有
+- `YK_LoadImageFromURL` —— 1/9 个有
 
 ## 典型参数
 

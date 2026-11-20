@@ -1,89 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_120
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.652667
-common_nodes: [CLIPVisionLoader, GetNode, ImageConcatMulti, ImageResizeKJv2, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+coverage: 0.548438
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, ExtendIntermediateSigmas, H3SigmaRefiner, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(单人)_2006028757395578881.json, 视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(多人)_2006202937944576001.json, 视频生成/图生视频/scail 增加晃动lora 跳舞更诱人 自带提示词-抖动_2050494894682189826.json, 视频生成/图生视频/scail 增加晃动lora_2006433739613675522.json, 视频生成/图生视频/scail多人动作迁移_2015612655679053825.json, 视频生成/图生视频/scail多人动作迁移_2031033766637998081.json, 视频生成/图生视频/wanvideo_SCAIL_basic_pose_control_workflow_2000760906177015810.json, 视频生成/图生视频/wanvideo_SCAIL_pose and camera_control_workflow_2000851201182793729.json, 视频生成/图生视频/【动迁】Wan_SCAIL动作迁移+Light2v加速_2005453601126445058.json, 视频生成/图生视频/【多人】SCAIL Video Multi-Character Motion Transfer V1_2002334338010234881.json, 视频生成/图生视频/动作运镜最强迁移-SCAIL_3D单人、多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2018306523847467009.json, 视频生成/图生视频/动作运镜最强迁移-SCAIL_3D单人、多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2023998769439711234.json, 视频生成/图生视频/萌宠跳舞-动作运镜最强迁移-SCAIL_姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2018335059614375937.json, 视频生成/图生视频/角色动作迁移模仿-人物动物姿态驱动-骨骼对齐-运镜控制-360度旋转【公众号：70后教你做自媒体】_2066354482107207682.json, 视频生成/图生视频/🐱Scail模型-单双人视频动作迁移-言灵ru😼_2002394851083730946.json]
+members: [平台全量/【角色迁移】Minimax H3换人+双采工作流【AI小王子】_2113545794325409794.json, 数字人/数字人/【MINIMAX-H3】八月最强文戏-低配版_2100034371259555842.json, 视频生成/图生视频/MINIMAX-H3-全自动打斗武戏-15秒8分钟_2097790484570796033.json, 视频生成/图生视频/MINIMAX-H3开源 最强文戏-低配版_2094767825419333634.json, 视频生成/图生视频/MiniMax H3 + VOSR2 文戏短剧（低配单采样2K）_2097340183623589889.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采-1参考图_2109836744655986690.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采-5参考图_2095824845220171777.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版-单采2_2109836609779757057.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版_2100179119110705153.json, 视频生成/图生视频/【MINIMAX-H3】八月最强文戏-低配版_2101865695603683329.json, 视频生成/图生视频/【MINIMAX-H3】最强打斗武戏双采工作流（自动提示词）_2096434163439198209.json, 视频生成/图生视频/文戏_2095407932757331970.json, 视频生成/文生视频/MINIMAX-H3全能参考-低配文戏版_2095278454672543745.json, 视频生成/文生视频/MINIMAX-H3原本fl2va分布高低解码二采_2104191255403122689.json, 视频生成/文生视频/MiniMax H3全能参考-武戏版｜可选提示词（手动输入 & 自动生成）_2095318851016806402.json, 视频生成/文生视频/MiniMax H3全能参考-武戏版｜可选提示词（手动输入 & 自动生成）_2095913508104916993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_120
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(单人)_2006028757395578881.json、视频生成/图生视频/Wan_SCAIL_视频3D动作迁移(多人)_2006202937944576001.json、视频生成/图生视频/scail 增加晃动lora 跳舞更诱人 自带提示词-抖动_2050494894682189826.json、视频生成/图生视频/scail 增加晃动lora_2006433739613675522.json、视频生成/图生视频/scail多人动作迁移_2015612655679053825.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（平台全量/【角色迁移】Minimax H3换人+双采工作流【AI小王子】_2113545794325409794.json、数字人/数字人/【MINIMAX-H3】八月最强文戏-低配版_2100034371259555842.json、视频生成/图生视频/MINIMAX-H3-全自动打斗武戏-15秒8分钟_2097790484570796033.json、视频生成/图生视频/MINIMAX-H3开源 最强文戏-低配版_2094767825419333634.json、视频生成/图生视频/MiniMax H3 + VOSR2 文戏短剧（低配单采样2K）_2097340183623589889.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
+全部 16 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `ExtendIntermediateSigmas`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `NLFPredict`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `RenderNLFPoses`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `ModelAttentionBackend`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 13/15 个有
-- `WanVideoLoraSelect` —— 13/15 个有
-- `INTConstant` —— 12/15 个有
-- `DownloadAndLoadNLFModel` —— 11/15 个有
-- `WanVideoEncode` —— 11/15 个有
-- `WanVideoUni3C_ControlnetLoader` —— 11/15 个有
-- `WanVideoUni3C_embeds` —— 11/15 个有
-- `ConvertOpenPoseKeypointsToDWPose` —— 9/15 个有
-- `DWPreprocessor` —— 9/15 个有
-- `LoadWanVideoT5TextEncoder` —— 9/15 个有
-- `SimpleMath+` —— 9/15 个有
-- `WanVideoTextEncode` —— 9/15 个有
-- `FloatConstant` —— 8/15 个有
-- `WanVideoTorchCompileSettings` —— 8/15 个有
-- `SimpleCalculatorKJ` —— 6/15 个有
-- `WanVideoTextEncodeCached` —— 6/15 个有
-- `Label (rgthree)` —— 5/15 个有
-- `LoadNLFModel` —— 4/15 个有
-- `PreviewImage` —— 4/15 个有
-- `CustomAddLabel` —— 3/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/15 个有
-- `DownloadAndLoadGIMMVFIModel` —— 2/15 个有
-- `GIMMVFI_interpolate` —— 2/15 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/15 个有
-- `Text Multiline` —— 2/15 个有
-- `WanVideoLoraSelectMulti` —— 2/15 个有
-- `CR Prompt Text` —— 1/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
-- `Int` —— 1/15 个有
-- `PrimitiveInt` —— 1/15 个有
-- `TTResolutionSelector` —— 1/15 个有
-- `easy cleanGpuUsed` —— 1/15 个有
-- `easy showAnything` —— 1/15 个有
+- `CR Prompt Text` —— 15/16 个有
+- `GetNode` —— 15/16 个有
+- `INTConstant` —— 15/16 个有
+- `PreviewImage` —— 15/16 个有
+- `SetNode` —— 15/16 个有
+- `忽略多组孤海` —— 15/16 个有
+- `LTXVConcatAVLatent` —— 14/16 个有
+- `LTXVSeparateAVLatent` —— 14/16 个有
+- `MinimaxH3LatentUpscaler3D` —— 14/16 个有
+- `RH_LLMAPI_Pro_Node` —— 4/16 个有
+- `Any Switch (rgthree)` —— 2/16 个有
+- `EmptyImage` —— 2/16 个有
+- `MuyeTextEditOutput` —— 2/16 个有
+- `PreviewAny` —— 2/16 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/16 个有
+- `ImageFromBatch` —— 1/16 个有
+- `ManualSigmas` —— 1/16 个有
+- `MiniMaxChunkFeedForward` —— 1/16 个有
+- `MiniMaxLowVRAMAttention` —— 1/16 个有
+- `PlaySound|pysssss` —— 1/16 个有
+- `PrimitiveInt` —— 1/16 个有
+- `PrimitiveStringMultiline` —— 1/16 个有
+- `Text Multiline` —— 1/16 个有
+- `VHS_LoadVideoFFmpeg` —— 1/16 个有
+- `VOSR2ModelLoader` —— 1/16 个有
+- `VOSR2Upscale` —— 1/16 个有
+- `c852b01f-c0f1-4c6a-89ab-a81efe05aea9` —— 1/16 个有
+- `easy cleanGpuUsed` —— 1/16 个有
+- `孤海注释` —— 1/16 个有
 
 ## 典型参数
 

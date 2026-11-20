@@ -1,66 +1,61 @@
 ---
 name: unknown_workflow_video_upscale_sampler_15
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.889
-common_nodes: [GetImageSizeAndCount, ImageResizeKJv2, ImageScale, ImageUpscaleWithModel, LoadImage, LoadWanVideoT5TextEncoder, MimicMotionGetPoses, PlaySound|pysssss, PreviewImage, RIFE VFI, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.929
+common_nodes: [Add Subtitles To Frames, Apply Whisper, CM_IntToBool, CosyVoiceNode, Fast Groups Bypasser (rgthree), ImageOnlyCheckpointLoader, ImageUpscaleWithModel, IndexTTSNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MathExpression|pysssss, RH_GetAudioDuration, SONICSampler, SONICTLoader, SONIC_PreData, SaveAudio, SenseVoiceNode, Switch any [Crystools], TextBox, TextNode, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy ab, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [数字人/数字人/通义万相VACE版_美女跳舞视频转绘_1933718578392948738.json, 视频生成/图生视频/Wan2.1__VACE版_美女跳舞（动作控制）_1933177373691158529.json]
+members: [视频生成/图生视频/动态 数字人 _性价比更佳_1932718442179170306.json, 视频生成/图生视频/数字人 _ SONIC（相比Float_Avatar性价比更佳）_1930929354606620674.json, 视频生成/文生视频/动态 数字人 _性价比更佳_1932740401180594177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_15
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/通义万相VACE版_美女跳舞视频转绘_1933718578392948738.json、视频生成/图生视频/Wan2.1__VACE版_美女跳舞（动作控制）_1933177373691158529.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/动态 数字人 _性价比更佳_1932718442179170306.json、视频生成/图生视频/数字人 _ SONIC（相比Float_Avatar性价比更佳）_1930929354606620674.json、视频生成/文生视频/动态 数字人 _性价比更佳_1932740401180594177.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `GetImageSizeAndCount`
-- `ImageResizeKJv2`
-- `ImageScale`
+全部 3 个 workflow 都包含：
+- `Add Subtitles To Frames`
+- `Apply Whisper`
+- `CM_IntToBool`
+- `CosyVoiceNode`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageOnlyCheckpointLoader`
 - `ImageUpscaleWithModel`
+- `IndexTTSNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MimicMotionGetPoses`
-- `PlaySound|pysssss`
-- `PreviewImage`
-- `RIFE VFI`
+- `MathExpression|pysssss`
+- `RH_GetAudioDuration`
+- `SONICSampler`
+- `SONICTLoader`
+- `SONIC_PreData`
+- `SaveAudio`
+- `SenseVoiceNode`
+- `Switch any [Crystools]`
+- `TextBox`
+- `TextNode`
 - `UpscaleModelLoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
-- `easy showAnything`
+- `VHS_VideoInfoSource`
+- `easy ab`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Florence2ModelLoader` —— 1/2 个有
-- `Florence2Run` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `OpenposePreprocessor` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `RH_Translator` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `easy anythingIndexSwitch` —— 1/2 个有
+- `Int` —— 2/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `PrimitiveBoolean` —— 1/3 个有
+- `PrimitiveString` —— 1/3 个有
 
 ## 典型参数
 
@@ -72,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_752
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.83625
-common_nodes: [LoadImage, RH_RhartImageG25FlareImageToImage, RH_RhartImageG25FlareTextToImage, RH_RhartImageG25SunburstImageToImage, RH_RhartImageG25SunburstTextToImage, SaveImage]
+coverage: 0.956
+common_nodes: [AudioCrop, AudioSeparation, CR Prompt Text, IndexTTS2Run, LoadAudio, PreviewAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G-2.5图片编辑【低价版】_2100221839200051201.json, 图片生成/文生图/全能图片G-2.5【低价版】文生图+图片编辑_2100870959111688194.json, 图片生成/文生图/全能图片G-2.5文生图高品质版【低价】_2100199087479025666.json, 图片生成/文生图/全能图片G-iamge-2.5(RH低价版）_2097696942846464001.json]
+members: [数字人/数字人/IndexTTS 2.0文本转语音声音克隆_2035233811272835073.json, 音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json, 音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json, 音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json, 音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_752
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片G-2.5图片编辑【低价版】_2100221839200051201.json、图片生成/文生图/全能图片G-2.5【低价版】文生图+图片编辑_2100870959111688194.json、图片生成/文生图/全能图片G-2.5文生图高品质版【低价】_2100199087479025666.json、图片生成/文生图/全能图片G-iamge-2.5(RH低价版）_2097696942846464001.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/IndexTTS 2.0文本转语音声音克隆_2035233811272835073.json、音频生成/音频生成/6合1 文本转语音 AI语音配音 音频生成 音色克隆 IndexTTS 2.0 影视级 文本转语音_1998278805829640193.json、音频生成/音频生成/IndexTTS 2.0文本转语音 AI语音配音 音频生成 音色克隆 影视级 6合1_2019213993767870465.json、音频生成/音频生成/IndexTTS 文本转语音_2010598815677554689.json、音频生成/音频生成/indextts2最新声音克隆天花板_1965613803322920962.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartImageG25FlareImageToImage`
-- `RH_RhartImageG25FlareTextToImage`
-- `RH_RhartImageG25SunburstImageToImage`
-- `RH_RhartImageG25SunburstTextToImage`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CR Prompt Text`
+- `IndexTTS2Run`
+- `LoadAudio`
+- `PreviewAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 3/4 个有
-- `MuyeTextEditOutput` —— 3/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `SaveAudio` —— 4/5 个有
+- `SaveAudioMP3` —— 4/5 个有
+- `CR Text` —— 3/5 个有
 
 ## 典型参数
 

@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1154
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.862667
-common_nodes: [LoadAudio, LoadImage, RH_MinimaxHailuoH3MultimodalToVideo, SaveVideo]
+coverage: 0.789333
+common_nodes: [CR Simple Image Compare, LoadImage, Note Plus (mtb), PrimitiveStringMultiline, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json, 视频生成/文生视频/海螺Hailuo H3文生视频、多图参考、视频复刻、首尾帧_2083373180177174529.json, 视频生成/文生视频/海螺Hailuo+H3文生视频、多图参考、视频参考、首尾帧_2083782686950387713.json]
+members: [图片生成/图生图/【橘子AI】FLUX KONTEXT 全能图像修改工作流（单图+多图参考）_1929757301459292161.json, 图片生成/文生图/FLUX KONTEXT 全能图像修改工作流单图_1930155063808004097.json, 平台全量/【大炮精选】FLUX-KONTEXT  上下文完美一致性感知工作流_1928591496218550274.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1154
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MiniMax-H3 多模态参考生视频_2094677698017841153.json、视频生成/文生视频/海螺Hailuo H3文生视频、多图参考、视频复刻、首尾帧_2083373180177174529.json、视频生成/文生视频/海螺Hailuo+H3文生视频、多图参考、视频参考、首尾帧_2083782686950387713.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【橘子AI】FLUX KONTEXT 全能图像修改工作流（单图+多图参考）_1929757301459292161.json、图片生成/文生图/FLUX KONTEXT 全能图像修改工作流单图_1930155063808004097.json、平台全量/【大炮精选】FLUX-KONTEXT  上下文完美一致性感知工作流_1928591496218550274.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadAudio`
+- `CR Simple Image Compare`
 - `LoadImage`
-- `RH_MinimaxHailuoH3MultimodalToVideo`
-- `SaveVideo`
+- `Note Plus (mtb)`
+- `PrimitiveStringMultiline`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 2/3 个有
-- `RH_MinimaxHailuoH3ImageToVideo` —— 2/3 个有
-- `JjkText` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `easy imageScaleDownToSize` —— 1/3 个有
 
 ## 典型参数
 

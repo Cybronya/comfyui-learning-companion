@@ -3,61 +3,76 @@ name: text_to_image_lora_sampler_clip_241
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.853125
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, ImageScaleBy, JjkText, KSampler, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip]
+coverage: 0.90025
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, Flux2Scheduler, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux-2-Klei洗图去AI感高清修复细节增强图生图处理工具_2102135996421853185.json, 图片生成/图生图/Flux-2-Klei洗图去AI感高清修复细节增强，告别塑料感图生图方案_2103562807370412034.json, 图片生成/图生图/Flux2 Klein控油图生图精修｜高清放大增强细节_2094892914123034625.json, 图片生成/图生图/Flux2 Klein洗图去AI感 高清修复细节增强告别塑料感_2099567091627155458.json, 图片生成/图生图/控油高清放大增强细节｜Flux2 Klein图生图_2092881657077526529.json, 图片生成/图生图/高清放大增强细节｜Flux2 Klein控油图生图精修_2092692856954773506.json, 图片生成/图生图/高清放大增强细节｜Flux2_Klein控油图生图精修_2094592387850002434.json, 图片生成/图生图/高清放大增强细节｜Flux2_Klein控油图生图精修_2094724625912647681.json]
+members: [图片生成/图生图/Flux2-Klein智能扩图｜图片外补全图生图工作流_2093112866625900545.json, 图片生成/图生图/Flux2Klein 4B加速版多图编辑 高效换头换脸_2098106416744722433.json, 图片生成/图生图/Flux2Klein多图编辑4B加速｜写实换头换脸图生图_2090541141182734337.json, 图片生成/图生图/Flux2Klein换内衣｜图生图服装替换_2089687838047694850.json, 图片生成/图生图/Klein 9B商业级光影融合工作流零偏移处理_2100306858379669505.json, 图片生成/图生图/PS级扩图无需参数，角色一致性图生图扩图方案_2110823025108148226.json, 图片生成/图生图/flux-2-klein-9b去文字利器｜图生图轻松抹除画面文字_2105226424310394881.json, 图片生成/图生图/皮带纹路质感优化 lora增强光感清晰度与细节_2098300203974619138.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_241
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux-2-Klei洗图去AI感高清修复细节增强图生图处理工具_2102135996421853185.json、图片生成/图生图/Flux-2-Klei洗图去AI感高清修复细节增强，告别塑料感图生图方案_2103562807370412034.json、图片生成/图生图/Flux2 Klein控油图生图精修｜高清放大增强细节_2094892914123034625.json、图片生成/图生图/Flux2 Klein洗图去AI感 高清修复细节增强告别塑料感_2099567091627155458.json、图片生成/图生图/控油高清放大增强细节｜Flux2 Klein图生图_2092881657077526529.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein智能扩图｜图片外补全图生图工作流_2093112866625900545.json、图片生成/图生图/Flux2Klein 4B加速版多图编辑 高效换头换脸_2098106416744722433.json、图片生成/图生图/Flux2Klein多图编辑4B加速｜写实换头换脸图生图_2090541141182734337.json、图片生成/图生图/Flux2Klein换内衣｜图生图服装替换_2089687838047694850.json、图片生成/图生图/Klein 9B商业级光影融合工作流零偏移处理_2100306858379669505.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `ImageScaleBy`
+- `Flux2Scheduler`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `RandomNoise`
 - `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 6/8 个有
-- `CR Prompt Text` —— 5/8 个有
-- `GetImageSize` —— 5/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
-- `PreviewImage` —— 5/8 个有
-- `RH_Captioner` —— 5/8 个有
-- `RunningHub Deepcleaner` —— 5/8 个有
-- `Float` —— 3/8 个有
-- `GetNode` —— 3/8 个有
-- `Image Comparer (rgthree)` —— 3/8 个有
-- `ImageResize+` —— 3/8 个有
-- `RHHiddenNodes` —— 3/8 个有
-- `SetNode` —— 3/8 个有
+- `ConditioningZeroOut` —— 7/8 个有
+- `EmptyFlux2LatentImage` —— 5/8 个有
+- `CR Text` —— 4/8 个有
+- `Image Comparer (rgthree)` —— 4/8 个有
+- `ImageScaleToTotalPixels` —— 4/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/8 个有
+- `GetImageSize` —— 3/8 个有
+- `ImageConcanate` —— 3/8 个有
+- `JWFloat` —— 3/8 个有
+- `ImagePadForOutpaint` —— 2/8 个有
+- `ImageSmartSharpen+` —— 2/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `Seed (rgthree)` —— 2/8 个有
+- `easy int` —— 2/8 个有
+- `CR Text Input Switch (4 way)` —— 1/8 个有
+- `DifferentialDiffusion` —— 1/8 个有
+- `ImageResize+` —— 1/8 个有
+- `ImpactSwitch` —— 1/8 个有
+- `InpaintModelConditioning` —— 1/8 个有
+- `InspyrenetRembg` —— 1/8 个有
+- `RHHiddenNodes` —— 1/8 个有
+- `ShowText` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `TextCombinerTwo` —— 1/8 个有
+- `easy imageColorMatch` —— 1/8 个有
+- `easy imageScaleDownToSize` —— 1/8 个有
+- `easy imageSize` —— 1/8 个有
 
 ## 典型参数
 
@@ -75,7 +90,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 17/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -86,4 +101,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（17/8 个样本）：Steps较低可能导致细节不足
+- 高发问题（8/8 个样本）：Steps较低可能导致细节不足

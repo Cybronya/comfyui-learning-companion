@@ -1,71 +1,81 @@
 ---
 name: unknown_workflow_lora_sampler_unet_83
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.97325
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 9
+level: moderate
+coverage: 0.844
+common_nodes: [CFGGuider, CLIPLoader, ConditioningZeroOut, EditTextEncode_EditUtils, Flux2KleinConfigPreparer_EditUtils, Flux2KleinModelConfig_EditUtils, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/反推提示词/03 hyfimage_2048365509980200962.json, 图片生成/反推提示词/36addtexttoimage_2049771863429140482.json, 图片生成/反推提示词/3jqggfppxlb_2059682402812911617.json, 图片生成/反推提示词/48dantubianji_2050122316616617985.json, 图片生成/图生图/五图编辑-rh-Qwen-Edit-2511-模板_2014144550574493697.json, 图片生成/图生图/叁图编辑-rh-Qwen-Edit-2511-模板_2013999350959054850.json, 图片生成/图生图/双图编辑-Qwen-Edit-2511-模板_2013899588947681282.json, 图片生成/图生图/四图编辑-rh-Qwen-Edit-2511-模板_2014144556878536705.json]
+members: [图片生成/图生图/Flux 2 Klein 9B 无缝扩图｜急速加强版｜指定图像比例｜指定扩图大小_2065271405024989185.json, 图片生成/图生图/[小志Jason] 一致性编辑 Klein 9B_2038069295363657729.json, 图片生成/图生图/klein模型提示词改车色_2063839522978361346.json, 图片生成/图生图/一键无缝融图---flux klein 9b_2049854541050458113.json, 图片生成/图生图/一键无缝融图——Klein_2090612316843896833.json, 图片生成/图生图/一键无缝融图——Klein_2090628254876131329.json, 图片生成/图生图/仅精修车身光影_2061258794776227841.json, 图片生成/图生图/压暗车窗_2064320626726363138.json, 平台全量/一键无缝融图——Klein_2087711239576317953.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_83
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/03 hyfimage_2048365509980200962.json、图片生成/反推提示词/36addtexttoimage_2049771863429140482.json、图片生成/反推提示词/3jqggfppxlb_2059682402812911617.json、图片生成/反推提示词/48dantubianji_2050122316616617985.json、图片生成/图生图/五图编辑-rh-Qwen-Edit-2511-模板_2014144550574493697.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Flux 2 Klein 9B 无缝扩图｜急速加强版｜指定图像比例｜指定扩图大小_2065271405024989185.json、图片生成/图生图/[小志Jason] 一致性编辑 Klein 9B_2038069295363657729.json、图片生成/图生图/klein模型提示词改车色_2063839522978361346.json、图片生成/图生图/一键无缝融图---flux klein 9b_2049854541050458113.json、图片生成/图生图/一键无缝融图——Klein_2090612316843896833.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `KSampler`
+- `EditTextEncode_EditUtils`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `Flux2KleinModelConfig_EditUtils`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/8 个有
-- `EmptySD3LatentImage` —— 5/8 个有
-- `RTXVideoSuperResolution` —— 4/8 个有
-- `SmartImageConcat` —— 4/8 个有
-- `LoadLynxResampler` —— 2/8 个有
-- `LynxEncodeFaceIP` —— 2/8 个有
-- `LynxInsightFaceCrop` —— 2/8 个有
-- `JjkText` —— 1/8 个有
-- `ShellAgentPluginOutputText` —— 1/8 个有
+- `PrimitiveInt` —— 8/9 个有
+- `CropWithPadInfo_EditUtils` —— 7/9 个有
+- `Flux2KleinOutputExtractor_EditUtils` —— 7/9 个有
+- `PrimitiveStringMultiline` —— 7/9 个有
+- `Text` —— 7/9 个有
+- `AdaptiveLongestEdge_EditUtils` —— 5/9 个有
+- `DF_Get_image_size` —— 5/9 个有
+- `GetImageSize` —— 4/9 个有
+- `easy promptReplace` —— 4/9 个有
+- `easy showAnything` —— 4/9 个有
+- `CLIPTextEncode` —— 3/9 个有
+- `CheckpointLoaderSimple` —— 3/9 个有
+- `InpaintCropImproved` —— 3/9 个有
+- `InpaintStitchImproved` —— 3/9 个有
+- `RH_Translator` —— 3/9 个有
+- `SAM3_Detect` —— 3/9 个有
+- `Int` —— 2/9 个有
+- `LayerMask: MaskPreview` —— 2/9 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `DapaoImagePadDirectionNode` —— 1/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `GetNode` —— 1/9 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/9 个有
+- `SetNode` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 4 - 8 | 8 | 70% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | sa_solver | - | 8 | 62% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 8，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，8 个样本，一致性 62%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

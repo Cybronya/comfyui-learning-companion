@@ -3,32 +3,35 @@ name: unknown_workflow_generic_1539
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [GuHaiAutoImageSplit, ImageLoader, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageG2OfficialImageToImage, SaveImage, ttN concat]
+coverage: 0.748
+common_nodes: [LoadImage, SaveImage, ShellAgentPluginOutputText, TextInput_, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/最新G image2 官方满血版电商主图批量拍摄无需提示词工作流 V1.0_2051112978983993346.json, 图片生成/文生图/南音满血版，电商主图批量制作，电影级，_2092702282516361217.json]
+members: [图片生成/反推提示词/室内-Seedance 2.0室内营销号分镜提示词生成工作流_2036075802558730241.json, 图片生成/反推提示词/建筑-Seedance 2.0自建宅营销号分镜提示词生成工作流_2036075786326777857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1539
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/最新G image2 官方满血版电商主图批量拍摄无需提示词工作流 V1.0_2051112978983993346.json、图片生成/文生图/南音满血版，电商主图批量制作，电影级，_2092702282516361217.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/室内-Seedance 2.0室内营销号分镜提示词生成工作流_2036075802558730241.json、图片生成/反推提示词/建筑-Seedance 2.0自建宅营销号分镜提示词生成工作流_2036075786326777857.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GuHaiAutoImageSplit`
-- `ImageLoader`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `RH_RhartImageG2OfficialImageToImage`
+- `LoadImage`
 - `SaveImage`
-- `ttN concat`
+- `ShellAgentPluginOutputText`
+- `TextInput_`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Comfly_LLm_API` —— 1/2 个有
+- `Gemini3MultimodalChatNode` —— 1/2 个有
 
 ## 典型参数
 

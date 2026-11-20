@@ -3,64 +3,57 @@ name: unknown_workflow_lora_sampler_clip_294
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.84
-common_nodes: [BerniniConditioning, BerniniPromptEnhancer, CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoraLoaderModelOnly, PathchSageAttentionKJ, PrimitiveInt, SaveImage, StringReplace, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy int, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.9445
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTXAddVideoICLoRAGuide, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoConditionOnly, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoaderKJ]
 problems: []
 missing: []
-members: [图片生成/文生图/Bernini + Klein放大 文生图_2064670777449996290.json, 图片生成/文生图/Bernini文生图_2064181963208093697.json]
+members: [图片生成/图生图/LTX2.5 - CQ Enhancer lora for images 图像高清修复放大工具-RH_2100842979803095041.json, 图片生成/图生图/Workflow_LTX2.5 - CQ Enhancer lora for images.json_2100773980268490754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_294
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Bernini + Klein放大 文生图_2064670777449996290.json、图片生成/文生图/Bernini文生图_2064181963208093697.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/LTX2.5 - CQ Enhancer lora for images 图像高清修复放大工具-RH_2100842979803095041.json、图片生成/图生图/Workflow_LTX2.5 - CQ Enhancer lora for images.json_2100773980268490754.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BerniniConditioning`
-- `BerniniPromptEnhancer`
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `KSamplerSelect`
+- `LTXAddVideoICLoRAGuide`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVImgToVideoConditionOnly`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ManualSigmas`
 - `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `SaveImage`
-- `StringReplace`
+- `RandomNoise`
+- `ResizeImageMaskNode`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
-- `VAELoader`
-- `easy cleanGpuUsed`
-- `easy int`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `ReferenceLatent` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImpactInt` —— 1/2 个有
+- `KOOK_SaveJPGImage` —— 1/2 个有
+- `LG_Color_Match_V2` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 27 | - | 2 | 15% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | sa_solver | - | 2 | 50% |
-| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 2 | 50% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,10 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 27，样本不足，未给区间，2 个样本，取值分散，一致性仅 15%
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 sa_solver，2 个样本，一致性 50%
-- 重绘幅度 最常用 FlowMatchEulerDiscreteScheduler，2 个样本，一致性 50%
-- 风险：Prompt 约束强度(CFG) 观测到 50，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

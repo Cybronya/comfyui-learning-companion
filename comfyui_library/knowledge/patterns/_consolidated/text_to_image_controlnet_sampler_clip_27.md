@@ -1,63 +1,70 @@
 ---
 name: text_to_image_controlnet_sampler_clip_27
 type: Text To Image
-frequency: 2
-level: weak
-coverage: 0.8125
-common_nodes: [AIO_Preprocessor, CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, EmptyLatentImage, KSampler, LoadImage, PreviewImage, RH_Captioner, SaveImage, ShowText|pysssss, VAEDecode]
+frequency: 3
+level: strong
+coverage: 0.895667
+common_nodes: [Anything Everywhere3, CLIPTextEncode, ControlNetLoader, DualCLIPLoader, EmptyLatentImage, FluxGuidance, GoogleTranslateTextNode, JoinStrings, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, String Literal, UNETLoader, VAEDecode, VAELoader, easy boolean, easy cleanGpuUsed, easy int, easy positive, easy seed]
 problems: []
 missing: []
-members: [图片生成/图生图/风格转绘_1912781124245094402.json, 图片生成/文生图/文生图（SDXL+CN）_1876832630757875714.json]
+members: [图片生成/文生图/Kontext-双人脸融合-打造新IP新角角_1943716400794046466.json, 图片生成/文生图/图生人脸一致性角色_1941829971805683714.json, 数字人/数字人/双人脸融合 人脸设计  人物面部设计 数字人生成 防撞脸 角色ip设计_2018571332446851073.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_sampler_clip_27
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/风格转绘_1912781124245094402.json、图片生成/文生图/文生图（SDXL+CN）_1876832630757875714.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Kontext-双人脸融合-打造新IP新角角_1943716400794046466.json、图片生成/文生图/图生人脸一致性角色_1941829971805683714.json、数字人/数字人/双人脸融合 人脸设计  人物面部设计 数字人生成 防撞脸 角色ip设计_2018571332446851073.json）
 
 - **类型**：Text To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：81%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AIO_Preprocessor`
+全部 3 个 workflow 都包含：
+- `Anything Everywhere3`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ControlNetApplyAdvanced`
 - `ControlNetLoader`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
+- `FluxGuidance`
+- `GoogleTranslateTextNode`
+- `JoinStrings`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Captioner`
 - `SaveImage`
-- `ShowText|pysssss`
+- `String Literal`
+- `UNETLoader`
 - `VAEDecode`
+- `VAELoader`
+- `easy boolean`
+- `easy cleanGpuUsed`
+- `easy int`
+- `easy positive`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `RH_Prompter` —— 1/2 个有
-- `SDXLPromptStyler` —— 1/2 个有
-- `TextCombinerTwo` —— 1/2 个有
+- `FaceCombine` —— 2/3 个有
+- `ImageResize+` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `ImageSmartSharpen+` —— 1/3 个有
+- `InfiniteYouApply` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 640 | - | 2 | 80% |
-| 高度 | 768 | - | 2 | 67% |
-| ControlNet 权重 | 0.7 | - | 2 | 71% |
-| 采样步数 | 15 | - | 2 | 67% |
-| Prompt 约束强度(CFG) | 4.75 | - | 2 | 32% |
-| 采样算法 | dpmpp_sde | - | 2 | 50% |
-| 调度器 | karras | - | 2 | 50% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 30 | 30 - 30 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 1024 | 512 - 1024 | 3 | 72% |
+| 高度 | 1440 | 512 - 1440 | 3 | 61% |
 
 ## 常见问题
 
@@ -65,12 +72,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 640，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- 高度 中位数 768，样本不足，未给区间，2 个样本
-- ControlNet 权重 中位数 0.7，样本不足，未给区间，2 个样本
-- 采样步数 中位数 15，样本不足，未给区间，2 个样本
-- Prompt 约束强度(CFG) 中位数 4.75，样本不足，未给区间，2 个样本，取值分散，一致性仅 32%
-- 采样算法 最常用 dpmpp_sde，2 个样本，一致性 50%
-- 调度器 最常用 karras，2 个样本，一致性 50%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 30，观测区间 30 - 30，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 512 - 1024，3 个样本
+- 高度 中位数 1440，观测区间 512 - 1440，3 个样本

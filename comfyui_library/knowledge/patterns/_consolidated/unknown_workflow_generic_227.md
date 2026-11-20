@@ -1,37 +1,43 @@
 ---
 name: unknown_workflow_generic_227
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 1
-common_nodes: [CR Prompt Text, ConcatTextOfUtils, LoadImage, SaveVideo]
+coverage: 0.815455
+common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSAudioMerge, easy indexTTSEmotionVector]
 problems: []
 missing: []
-members: [视频生成/图生视频/Seedance2.0多参（RH版）_2088693195826880513.json, 视频生成/图生视频/Seedance2.5多参视频生成15S（RH版）_2088693184313511938.json, 视频生成/图生视频/Seedance2.5多参视频生成30S（RH版）_2088693984452497409.json, 视频生成/图生视频/Seedance2.5多参视频生成（RH版）_2088161723437117442.json, 视频生成/图生视频/剧情短片丨Seedance 2.5 Global丨多图参考·环境音效_2110593359705362434.json, 视频生成/图生视频/牛来版Seedance2.5片头（RH版）_2089590549220253697.json, 视频生成/图生视频/（新片头2-自用）Seedance2.5片头（RH版）_2097963487086600194.json, 视频生成/图生视频/（新片头3-自用）Seedance2.5片头（RH版）_2099453313115836417.json, 视频生成/图生视频/（新片头3-自用）Seedance2.5片头（RH版）_2099460900435611649.json, 视频生成/图生视频/（新片头4-自用-12图）Seedance2.5片头（RH版）_2102017601940578305.json]
+members: [数字人/数字人/AI语音克隆-情绪控制_2009012667993825282.json, 数字人/数字人/Index TTS2 声音克隆_1980507389172600834.json, 数字人/数字人/▶IndexTTS2 AI语音克隆-情绪控制(带语速调节)_2010382964550537217.json, 数字人/数字人/▶IndexTTS2情绪控制_2009010120625229825.json, 数字人/数字人/多人语音克隆-情绪控制_2009008255292411906.json, 音频生成/音频生成/IndexTTS2 AI语音克隆带情绪控制_2071922886033633282.json, 音频生成/音频生成/IndexTTS2 单双人语音克隆+情感控制配音工作流_2073367262609887233.json, 音频生成/音频生成/IndexTTS2 单双人语音克隆+情感控制配音工作流_2086427785454776321.json, 音频生成/音频生成/TTS2 AI语音克隆 情感控制(带语速调节)_2019317567415914498.json, 音频生成/音频生成/▶IndexTTS2 AI语音克隆-情绪控制(快速！强大！支持多角色克隆）_2013148857244327937.json, 音频生成/音频生成/▶IndexTTS2 AI语音克隆-情绪控制_2010614046168457217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_227
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/Seedance2.0多参（RH版）_2088693195826880513.json、视频生成/图生视频/Seedance2.5多参视频生成15S（RH版）_2088693184313511938.json、视频生成/图生视频/Seedance2.5多参视频生成30S（RH版）_2088693984452497409.json、视频生成/图生视频/Seedance2.5多参视频生成（RH版）_2088161723437117442.json、视频生成/图生视频/剧情短片丨Seedance 2.5 Global丨多图参考·环境音效_2110593359705362434.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/AI语音克隆-情绪控制_2009012667993825282.json、数字人/数字人/Index TTS2 声音克隆_1980507389172600834.json、数字人/数字人/▶IndexTTS2 AI语音克隆-情绪控制(带语速调节)_2010382964550537217.json、数字人/数字人/▶IndexTTS2情绪控制_2009010120625229825.json、数字人/数字人/多人语音克隆-情绪控制_2009008255292411906.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Prompt Text`
-- `ConcatTextOfUtils`
-- `LoadImage`
-- `SaveVideo`
+全部 11 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `LoadAudio`
+- `SaveAudio`
+- `easy downloadIndexTTSAndLoadModel`
+- `easy indexTTSAudioMerge`
+- `easy indexTTSEmotionVector`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_BytedanceSeedance25GlobalTokenMultimodalVideo` —— 9/10 个有
-- `LoadAudio` —— 6/10 个有
-- `RH_BytedanceSeedance20GlobalMultimodalVideo` —— 1/10 个有
+- `SaveAudioMP3` —— 10/11 个有
+- `easy indexTTSEmotionAudio` —— 10/11 个有
+- `easy indexTTSEmotionMerge` —— 10/11 个有
+- `easy indexTTSGenerateSimple` —— 8/11 个有
+- `Label (rgthree)` —— 3/11 个有
+- `easy indexTTSGenerate` —— 3/11 个有
+- `CR Prompt Text` —— 1/11 个有
 
 ## 典型参数
 

@@ -1,45 +1,38 @@
 ---
 name: unknown_workflow_generic_1300
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.749
-common_nodes: [PreviewAny, RHBatchImages:, RHExtractImage, RHUploadZip, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageCount, easy saveText, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.635
+common_nodes: [LoadAudio, PrimitiveStringMultiline, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Qwen3 VL批量自动打标_2026894908874821633.json, 数字人/数字人/图片批量打标反推_1997013031525761026.json]
+members: [平台全量/VoxCPM2 音色克隆工作流：音频克隆声音+控制说话情绪_2118573095282888705.json, 数字人/数字人/VoxCPM2 音色克隆_2117129727453515778.json, 音频生成/音频生成/VoxCPM-粤语-有无参考切换-App_2105944422310567938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1300
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Qwen3 VL批量自动打标_2026894908874821633.json、数字人/数字人/图片批量打标反推_1997013031525761026.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/VoxCPM2 音色克隆工作流：音频克隆声音+控制说话情绪_2118573095282888705.json、数字人/数字人/VoxCPM2 音色克隆_2117129727453515778.json、音频生成/音频生成/VoxCPM-粤语-有无参考切换-App_2105944422310567938.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `PreviewAny`
-- `RHBatchImages:`
-- `RHExtractImage`
-- `RHUploadZip`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy saveText`
-- `easy showAnything`
+全部 3 个 workflow 都包含：
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 1/2 个有
-- `Bjornulf_ShowInt` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `Qwen3_VQA` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `Int` —— 1/3 个有
+- `PrimitiveBoolean` —— 1/3 个有
+- `easy anythingIndexSwitch` —— 1/3 个有
 
 ## 典型参数
 
@@ -51,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

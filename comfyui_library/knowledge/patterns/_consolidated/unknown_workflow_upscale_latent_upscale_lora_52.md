@@ -3,42 +3,41 @@ name: unknown_workflow_upscale_latent_upscale_lora_52
 type: Unknown Workflow
 frequency: 7
 level: strong
-coverage: 0.832143
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
+coverage: 0.743429
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/【LTX2.3官方工作流优化】数字人支持唱歌 音频+图片=超自然数字人 含提示词扩写模板_2034460297049677825.json, 视频生成/图生视频/【LTX2.3官方工作流优化】首尾帧控制 _含提示词扩写模板_2033785787984125953.json, 视频生成/图生视频/【图+文→生视频】飞灵AI高质量版_2067639353119174658.json, 视频生成/图生视频/万象AI真人短剧专用文_图生视频工作流（LTX2.3自动提示词优化版10秒）_2033190788460453889.json, 视频生成/图生视频/万象AI真人短剧专用文_图生视频工作流（LTX2.3自动提示词优化版10秒）自动横屏竖屏_2033053099966865410.json, 视频生成/图生视频/图生视频一镜到底_已修复_2078421854469050370.json, 视频生成/图生视频/🐱video_ITX2.3_I2V图像首尾帧生视频_2031942296714878977.json]
+members: [视频生成/图生视频/LTX-2 I2V 完整版图像转视频工作流，拆分子图-调试可运行RH在线工作流_2008987818990772225.json, 视频生成/图生视频/LTX-2 图生视频 ComfyUI官方流_2008519432749981698.json, 视频生成/图生视频/LTX-2 图生视频-音画同步-支持中英文_2008792079337529345.json, 视频生成/图生视频/LTX-2 图生视频_2009447921246281729.json, 视频生成/图生视频/LTX-2 图生视频官方版_2073297592267657218.json, 视频生成/图生视频/LTX-2.5-图生视频-数字人唱歌_对口型-可上传音频_2087430857970769922.json, 视频生成/图生视频/LTX-2.5-图生视频-数字人唱歌_对口型-可上传音频_2096779577384329217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_52
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/【LTX2.3官方工作流优化】数字人支持唱歌 音频+图片=超自然数字人 含提示词扩写模板_2034460297049677825.json、视频生成/图生视频/【LTX2.3官方工作流优化】首尾帧控制 _含提示词扩写模板_2033785787984125953.json、视频生成/图生视频/【图+文→生视频】飞灵AI高质量版_2067639353119174658.json、视频生成/图生视频/万象AI真人短剧专用文_图生视频工作流（LTX2.3自动提示词优化版10秒）_2033190788460453889.json、视频生成/图生视频/万象AI真人短剧专用文_图生视频工作流（LTX2.3自动提示词优化版10秒）自动横屏竖屏_2033053099966865410.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX-2 I2V 完整版图像转视频工作流，拆分子图-调试可运行RH在线工作流_2008987818990772225.json、视频生成/图生视频/LTX-2 图生视频 ComfyUI官方流_2008519432749981698.json、视频生成/图生视频/LTX-2 图生视频-音画同步-支持中英文_2008792079337529345.json、视频生成/图生视频/LTX-2 图生视频_2009447921246281729.json、视频生成/图生视频/LTX-2 图生视频官方版_2073297592267657218.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
+- `EmptyImage`
 - `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
 - `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
+- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
 - `LoadImage`
@@ -48,48 +47,56 @@ source: knowledge_consolidation
 - `RandomNoise`
 - `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
-- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `LTXVEmptyLatentAudio` —— 6/7 个有
-- `PrimitiveBoolean` —— 6/7 个有
-- `PrimitiveStringMultiline` —— 6/7 个有
-- `RH_LLMAPI_Pro_Node` —— 6/7 个有
-- `ResizeImageMaskNode` —— 5/7 个有
-- `easy showAnything` —— 5/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `CR Text` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
-- `LTXVImgToVideoInplaceKJ` —— 2/7 个有
+- `CreateVideo` —— 6/7 个有
+- `ImageResizeKJv2` —— 6/7 个有
+- `SaveVideo` —— 6/7 个有
+- `CheckpointLoaderSimple` —— 5/7 个有
+- `ImpactExecutionOrderController` —— 5/7 个有
+- `LTXAVTextEncoderLoader` —— 5/7 个有
+- `LTXVAudioVAELoader` —— 5/7 个有
+- `LTXVGemmaEnhancePrompt` —— 5/7 个有
+- `LTXVSpatioTemporalTiledVAEDecode` —— 5/7 个有
+- `PrimitiveFloat` —— 5/7 个有
+- `PrimitiveStringMultiline` —— 5/7 个有
+- `DF_Int_to_Float` —— 3/7 个有
+- `GetNode` —— 3/7 个有
+- `MathExpression|pysssss` —— 3/7 个有
+- `SetNode` —— 3/7 个有
+- `WanVideoImageResizeToClosest` —— 3/7 个有
+- `easy cleanGpuUsed` —— 3/7 个有
+- `easy float` —— 3/7 个有
+- `easy int` —— 3/7 个有
+- `Audio Duration (mtb)` —— 2/7 个有
+- `CLIPLoader` —— 2/7 个有
+- `LTXVAudioVAEEncode` —— 2/7 个有
+- `LTXVCropGuides` —— 2/7 个有
+- `LTXVDualCFGGuider` —— 2/7 个有
+- `LTXVGemmaCLIPModelLoader` —— 2/7 个有
 - `LoadAudio` —— 2/7 个有
-- `LoraLoader` —— 2/7 个有
-- `PlaySound|pysssss` —— 2/7 个有
-- `PreviewAny` —— 2/7 个有
-- `Text` —— 2/7 个有
-- `TextGenerateLTX2Prompt` —— 2/7 个有
-- `CR Integer To String` —— 1/7 个有
-- `Float` —— 1/7 个有
-- `GetAudioDurationFromAudio` —— 1/7 个有
-- `ImageResizeKJv2` —— 1/7 个有
-- `Int` —— 1/7 个有
-- `LTXVAudioVAEEncode` —— 1/7 个有
-- `MathExpression|pysssss` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `RH_LLMAPI_NODE` —— 1/7 个有
-- `SetLatentNoiseMask` —— 1/7 个有
-- `SolidMask` —— 1/7 个有
-- `TrimAudioDuration` —— 1/7 个有
-- `easy promptReplace` —— 1/7 个有
+- `MelBandRoFormerModelLoader` —— 2/7 个有
+- `MelBandRoFormerSampler` —— 2/7 个有
+- `SetLatentNoiseMask` —— 2/7 个有
+- `SolidMask` —— 2/7 个有
+- `TrimAudioDuration` —— 2/7 个有
+- `UNETLoader` —— 2/7 个有
+- `VAEDecode` —— 2/7 个有
+- `VAELoader` —— 2/7 个有
+- `easy boolean` —— 2/7 个有
+- `easy ifElse` —— 2/7 个有
+- `CM_FloatToInt` —— 1/7 个有
+- `CR Float To Integer` —— 1/7 个有
+- `INTConstant` —— 1/7 个有
+- `VHS_VideoCombine` —— 1/7 个有
+- `easy clearCacheAll` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
-| LoRA 模型强度 | 1 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 121 | 97 - 121 | 7 | 91% |
+| 高度 | 25 | 25 - 25 | 7 | 100% |
 
 ## 常见问题
 
@@ -97,7 +104,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 121，观测区间 97 - 121，7 个样本，取值集中（一致性 91%）
+- 高度 中位数 25，观测区间 25 - 25，7 个样本，取值集中（一致性 100%）

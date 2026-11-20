@@ -40,7 +40,7 @@ Other
 
 常见取值：
 
-- `["viduq3-mix", "sk-Tqx2fXCyvvWhuWGWn5BvHT5rKLFBTibNZ3pwq4JDItKHVwEH", "模特讲解产品", "9:16", "720p", "5", 1144197042, "random`（1 次）
+- `["viduq3-mix", "REDACTED0000000000000000000000000000000000000000000", "模特讲解产品", "9:16", "720p", "5", 1144197042, "random`（1 次）
 
 ## 可信度
 

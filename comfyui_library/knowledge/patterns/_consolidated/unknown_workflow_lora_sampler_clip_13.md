@@ -1,69 +1,91 @@
 ---
 name: unknown_workflow_lora_sampler_clip_13
 type: Unknown Workflow
-frequency: 20
-level: weak
-coverage: 0.89355
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, SaveImage, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 32
+level: moderate
+coverage: 0.708125
+common_nodes: [AILab_QwenVL, BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, ImageResizeKJv2, Int, JjkText, KSamplerSelect, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SAM3_VideoTrack, SCAIL2FitVideo, SCAIL2ReferencePack, SCAIL2ReferenceSAMBuilder, SCAIL2SimpleVideo, ShowText|pysssss, SimpleMath+, VAELoader, VHS_LoadVideo, WanChunkFeedForward]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen-image-GGUF 海报设计_2013882015992520706.json, 图片生成/文生图/Qwen_插画海报创作_1955157274396430337.json, 图片生成/文生图/Wan2.1 文生图美学去AI感_1950183203102441473.json, 图片生成/文生图/qwen-image gguf 加速版_1955880153337483265.json, 图片生成/文生图/sim▷Qwen中秋节海报特辑_1972281991481782274.json, 图片生成/文生图/【阡陌】Qwen-Image-2512 + 4步加速lora文生图工作流_2008154394784702466.json, 图片生成/文生图/千问文生图快速中文直出2512_2027699940423639041.json, 图片生成/文生图/千问真实幻想V2文生图_1987923112853442561.json, 图片生成/文生图/战双帕米什_赛琳娜 动漫特化人物固定角色-ZImage_2042282589184073730.json, 图片生成/文生图/文生图（自定义lora版）Z-image-base_2018558734011736066.json, 图片生成/文生图/自用测试工作流_2017266041059020802.json, 图片生成/文生图/（老白lokr版-贞贞124500步）Z-Image-Base文生图V1(还没拟合。。)_2019370836720885761.json, 图片生成/文生图/（老白lokr版-贞贞145000步）Z-Image-Base文生图V1(还模型到底还能拟合吗？)_2019682330843025410.json, 图片生成/文生图/（老白lokr版-贞贞165000步）Z-Image-Base文生图V1(这模型到底还能拟合吗？)_2020080899903197186.json, 图片生成/文生图/（老白lokr版-贞贞8W4）Z-Image-Base文生图V1(还没拟合。。)_2018764663516831745.json, 图片生成/文生图/（贞贞版-10W步-none测试）Z-image-base文生图_2035574223229427714.json, 图片生成/文生图/（贞贞版-12W步-none测试）Z-image-base文生图_2035732448901861377.json, 图片生成/文生图/（贞贞版-13W步-none）Z-image-base文生图_2035964999260180482.json, 图片生成/文生图/（贞贞版-15W步-none-最终版）Z-image-base文生图_2036317335383973890.json, 图片生成/文生图/（贞贞版-9W步-none测试）Z-image-base文生图_2034920751538642945.json]
+members: [图片生成/图生图/好的角色替换工作流_2100929637391101954.json, 平台全量/IP角色视频生成 动作迁移 Ai动物跳舞 Scail2萌宠图片跳舞_2078663353991524353.json, 平台全量/Scail2 双人角色替换_2077746544656347138.json, 平台全量/Scail2视频换人+单人双人！Ai角色替换！艾橘溪_2064689288712904706.json, 平台全量/【SCAIL2】一键表情迁移-让表情完美复刻工作流_2079836987103735809.json, 平台全量/动物模仿动作跳舞Scail2萌宠跳舞_2079774473905065986.json, 平台全量/单人+双人替换_2088075344233455618.json, 平台全量/好的角色替换工作流_2100153300367798274.json, 平台全量/视频换人 -单人+双人_2079154648962912257.json, 平台全量/视频换人+单人双人！角色替换！子阳_2092224004378677249.json, 数字人/数字人/全新Scail2动作模仿！  60秒Ai女友跳舞长视频生成！_2079804507982229505.json, 视频生成/图生视频/AI合成动作迁移，换人物生成_2079002206828847106.json, 视频生成/图生视频/Ai动物跳舞V5=Scail2萌宠图片跳舞=B站艾橘溪_1917146270526541826.json, 视频生成/图生视频/Ai可爱3d动物跳舞 Scail2萌宠图片 Animate视频动作迁移_2073677579319595010.json, 视频生成/图生视频/Ai可爱3d动物跳舞 Scail2萌宠图片 Animate视频动作迁移_2079088525298978817.json, 视频生成/图生视频/Ai可爱3d动物跳舞 Scail2萌宠图片 Animate视频动作迁移_2079398832160464898.json, 视频生成/图生视频/Ai可爱3d动物跳舞 Scail2萌宠图片 Animate视频动作迁移_2094979514341355521.json, 视频生成/图生视频/S2动作迁移_2082013212127621121.json, 视频生成/图生视频/Scail2 角色替换-双人视频换人_2077636977960247297.json, 视频生成/图生视频/Scail2Ai角色替换_2083001289599963137.json, 视频生成/图生视频/Scail2Ai角色替换_2091705858479706114.json, 视频生成/图生视频/Scail2人物替换_2101952140779548674.json, 视频生成/图生视频/Scail2视频换人_单人双人_2100945104092622850.json, 视频生成/图生视频/Scail2视频换人单人_双人角色替换动物迁移动作复刻跳舞模仿_2108918962233896962.json, 视频生成/图生视频/Scail2视频换人单人_双人角色替换动物迁移动作复刻跳舞模仿_2109225565583667202.json, 视频生成/图生视频/动作迁移Scail2角色替换+单人双人自由切换！视频换人！_2071830027674677249.json, 视频生成/图生视频/单人_双人 Scail2视频换人 图生视频 跳舞 唱歌 数字人  Ai角色替换！_2077927519470317586.json, 视频生成/图生视频/单人_双人 动作迁移 Scail2视频换人 图生视频 跳舞 唱歌 数字人  Ai角色替换！_2077935643409342466.json, 视频生成/图生视频/可爱3d动物跳舞 Animate视频动作迁移 Scail2萌宠图片_2073668911907827714.json, 视频生成/图生视频/图片+Animate视频动作迁移_2079079880154771457.json, 视频生成/图生视频/角色替换+单人双人视频换人Scail2_2077293957519855618.json, 视频生成/图生视频/角色替换-多人-Scail2_2079496824431403009.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_13
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/文生图/Qwen-image-GGUF 海报设计_2013882015992520706.json、图片生成/文生图/Qwen_插画海报创作_1955157274396430337.json、图片生成/文生图/Wan2.1 文生图美学去AI感_1950183203102441473.json、图片生成/文生图/qwen-image gguf 加速版_1955880153337483265.json、图片生成/文生图/sim▷Qwen中秋节海报特辑_1972281991481782274.json…）
+> 由 `engine/knowledge_consolidation` 从 32 个 workflow 归纳得出（图片生成/图生图/好的角色替换工作流_2100929637391101954.json、平台全量/IP角色视频生成 动作迁移 Ai动物跳舞 Scail2萌宠图片跳舞_2078663353991524353.json、平台全量/Scail2 双人角色替换_2077746544656347138.json、平台全量/Scail2视频换人+单人双人！Ai角色替换！艾橘溪_2064689288712904706.json、平台全量/【SCAIL2】一键表情迁移-让表情完美复刻工作流_2079836987103735809.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：32
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
+全部 32 个 workflow 都包含：
+- `AILab_QwenVL`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `ImageResizeKJv2`
+- `Int`
+- `JjkText`
+- `KSamplerSelect`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `VAEDecode`
+- `ModelSamplingSD3`
+- `PrimitiveInt`
+- `SAM3_VideoTrack`
+- `SCAIL2FitVideo`
+- `SCAIL2ReferencePack`
+- `SCAIL2ReferenceSAMBuilder`
+- `SCAIL2SimpleVideo`
+- `ShowText|pysssss`
+- `SimpleMath+`
 - `VAELoader`
+- `VHS_LoadVideo`
+- `WanChunkFeedForward`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 19/20 个有
-- `UNETLoader` —— 17/20 个有
-- `EmptySD3LatentImage` —— 15/20 个有
-- `LoadImage` —— 14/20 个有
-- `JWFloat` —— 9/20 个有
-- `LayerUtility: PurgeVRAM` —— 8/20 个有
-- `UnetLoaderGGUF` —— 5/20 个有
-- `EmptyHunyuanLatentVideo` —— 4/20 个有
-- `CR Text` —— 3/20 个有
-- `CR Text Concatenate` —— 2/20 个有
-- `EmptyUnitGenerator_UTK` —— 1/20 个有
+- `GetNode` —— 31/32 个有
+- `SetNode` —— 31/32 个有
+- `VHS_VideoCombine` —— 30/32 个有
+- `INTConstant` —— 20/32 个有
+- `ImageConcatMulti` —— 20/32 个有
+- `PreviewImage` —— 20/32 个有
+- `easy compare` —— 20/32 个有
+- `easy ifElse` —— 20/32 个有
+- `GetImageSizeAndCount` —— 10/32 个有
+- `GetVideoComponents` —— 10/32 个有
+- `OverlayVideos` —— 10/32 个有
+- `VideoToPath` —— 10/32 个有
+- `easy cleanGpuUsed` —— 10/32 个有
+- `RIFE VFI` —— 5/32 个有
+- `DownloadAndLoadGIMMVFIModel` —— 4/32 个有
+- `GIMMVFI_interpolate` —— 4/32 个有
+- `ImageColorMatch+` —— 4/32 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/32 个有
+- `CreateVideo` —— 2/32 个有
+- `SaveVideo` —— 2/32 个有
+- `孤海注释` —— 2/32 个有
+- `EmptyImage` —— 1/32 个有
+- `FlashVSRNode` —— 1/32 个有
+- `SaveImage` —— 1/32 个有
+- `Sleep` —— 1/32 个有
+- `solarL_SaveImagesToZip` —— 1/32 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 4 - 50 | 20 | 24% |
-| Prompt 约束强度(CFG) | 1.25 | 1 - 4 | 20 | 35% |
-| 采样算法 | euler | - | 20 | 70% |
-| 调度器 | simple | - | 20 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 9/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 4 - 50，20 个样本，取值分散，一致性仅 24%
-- Prompt 约束强度(CFG) 中位数 1.25，观测区间 1 - 4，20 个样本，取值分散，一致性仅 35%
-- 采样算法 最常用 euler，20 个样本，一致性 70%
-- 调度器 最常用 simple，20 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

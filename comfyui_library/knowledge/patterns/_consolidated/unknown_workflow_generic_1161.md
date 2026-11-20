@@ -3,29 +3,39 @@ name: unknown_workflow_generic_1161
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.971333
-common_nodes: [CR Text, RH_Sora2_T2V_Batch, SaveVideo]
+coverage: 0.990667
+common_nodes: [CR Text, JDCN_ListToString, LoadImage, RH_Nano_Banana2_Image2Image_Batch, SaveImage, easy int, easy string, list_ListSlice]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频S 文生视频 并发4个 竖屏_2005859667999948802.json, 视频生成/文生视频/全能视频S文生视频__批量视频高速10个并发_2001175856133308417.json, 视频生成/文生视频/全能视频S文生视频批量视频生成漫剧生成高速10并发_1998999208256528385.json]
+members: [图片生成/图生图/一键电商详情页主图套图V2 超大批量可选语言（最多20张）_2001121164858716162.json, 图片生成/图生图/一键电商详情页主图套图V2+超大批量可选语言（最多20张） (1)_2038568647987306498.json, 平台全量/一键批量主图生成_2011601980023640066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1161
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/全能视频S 文生视频 并发4个 竖屏_2005859667999948802.json、视频生成/文生视频/全能视频S文生视频__批量视频高速10个并发_2001175856133308417.json、视频生成/文生视频/全能视频S文生视频批量视频生成漫剧生成高速10并发_1998999208256528385.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键电商详情页主图套图V2 超大批量可选语言（最多20张）_2001121164858716162.json、图片生成/图生图/一键电商详情页主图套图V2+超大批量可选语言（最多20张） (1)_2038568647987306498.json、平台全量/一键批量主图生成_2011601980023640066.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CR Text`
-- `RH_Sora2_T2V_Batch`
-- `SaveVideo`
+- `JDCN_ListToString`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image_Batch`
+- `SaveImage`
+- `easy int`
+- `easy string`
+- `list_ListSlice`
+
+**可变部分**（部分 workflow 才有）：
+- `EcommercePromptGenerator` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `WLMainImageGenerator` —— 1/3 个有
 
 ## 典型参数
 

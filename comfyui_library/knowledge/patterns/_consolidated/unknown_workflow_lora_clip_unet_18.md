@@ -3,52 +3,49 @@ name: unknown_workflow_lora_clip_unet_18
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.786
-common_nodes: [CLIPTextEncode, CR Load LoRA, DualCLIPLoader, EmptyLatentImage, FluxGuidance, JjkShowText, JjkText, LoraLoader, PrimitiveInt, RH_Translator, SaveImage, UNETLoader, workflow>ace, workflow>采样]
+coverage: 0.855
+common_nodes: [Anything Everywhere, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, Int, LoraLoaderModelOnly, SaveImage, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/一致性多姿势图片生成(批量)_1980542326344957953.json, 图片生成/文生图/文生图批量一致性多姿势美女图_1995149863115534337.json]
+members: [图片生成/文生图/Flux Krea  在线 文生图_1951943157778993154.json, 图片生成/文生图/模特选妃_1904522837061767169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_clip_unet_18
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/一致性多姿势图片生成(批量)_1980542326344957953.json、图片生成/文生图/文生图批量一致性多姿势美女图_1995149863115534337.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux Krea  在线 文生图_1951943157778993154.json、图片生成/文生图/模特选妃_1904522837061767169.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Anything Everywhere`
 - `CLIPTextEncode`
-- `CR Load LoRA`
 - `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `JjkShowText`
-- `JjkText`
-- `LoraLoader`
-- `PrimitiveInt`
-- `RH_Translator`
+- `Int`
+- `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
-- `workflow>ace`
-- `workflow>采样`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/2 个有
+- `Anything Everywhere3` —— 1/2 个有
+- `FluxGuidance` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `workflow>0` —— 1/2 个有
+- `workflow>HAOTU` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | - | 2 | 100% |
-| 高度 | 1920 | - | 2 | 100% |
-| LoRA 模型强度 | 0.8 | - | 2 | 100% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
+| 宽度 | 1024 | - | 2 | 100% |
+| 高度 | 1536 | - | 2 | 100% |
 
 ## 常见问题
 
@@ -56,8 +53,6 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1536，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

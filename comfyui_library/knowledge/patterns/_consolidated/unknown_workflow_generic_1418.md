@@ -1,44 +1,35 @@
 ---
 name: unknown_workflow_generic_1418
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.7775
-common_nodes: [Fast Groups Bypasser (rgthree), ImageConcanate, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadVideo, QwenImageEditNode, QwenImageNode, QwenVideoNode, QwenVisionNode, SaveImage, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.822
+common_nodes: [CR Prompt Text, MossTTSModelLoader, SaveAudioMP3]
 problems: []
 missing: []
-members: [图片生成/图生图/qwen大模型api调用 Qwen3-VL视觉理解模型反推提示词+api调用图片生成_1992064649529192450.json, 图片生成/文生图/【阡陌】Qwen3-VL图片_视频反推Qwen-Image-Edit-2509调用免费API_1983868724254048258.json]
+members: [音频生成/音频生成/Moss TTS声音设计 ｜文生音频｜声音设计_2095852828559503361.json, 音频生成/音频生成/Moss TTS声音设计_2071775414388879361.json, 音频生成/音频生成/Moss TTS音效生成_2071776403820994562.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1418
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/qwen大模型api调用 Qwen3-VL视觉理解模型反推提示词+api调用图片生成_1992064649529192450.json、图片生成/文生图/【阡陌】Qwen3-VL图片_视频反推Qwen-Image-Edit-2509调用免费API_1983868724254048258.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Moss TTS声音设计 ｜文生音频｜声音设计_2095852828559503361.json、音频生成/音频生成/Moss TTS声音设计_2071775414388879361.json、音频生成/音频生成/Moss TTS音效生成_2071776403820994562.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcanate`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoadVideo`
-- `QwenImageEditNode`
-- `QwenImageNode`
-- `QwenVideoNode`
-- `QwenVisionNode`
-- `SaveImage`
-- `easy showAnything`
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `MossTTSModelLoader`
+- `SaveAudioMP3`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize+` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `MossTTSVoiceDesign` —— 2/3 个有
+- `MossTTSSoundEffect` —— 1/3 个有
 
 ## 典型参数
 
@@ -50,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

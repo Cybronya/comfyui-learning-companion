@@ -3,34 +3,36 @@ name: unknown_workflow_generic_1665
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.875
-common_nodes: [AudioCrop, CR Prompt Text, LoadAudio, SaveAudioAdvanced, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_SamplingConfig, 孤海注释]
+coverage: 0.4915
+common_nodes: [Image Comparer (rgthree), LoadImage, MuyeTextEditOutput, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/副业_喜马拉雅长文本口播_2088298037314674690.json, 音频生成/音频生成/副业_喜马拉雅长文本口播-8_18语速特调版_2089389108580929537.json]
+members: [图片生成/图生图/全能图片CPT-Image-2.5-图生图-官方稳定版_2101587419928809473.json, 图片生成/图生图/谷迹-flux2极致羊羔绒_2016533918656241665.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1665
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/副业_喜马拉雅长文本口播_2088298037314674690.json、音频生成/音频生成/副业_喜马拉雅长文本口播-8_18语速特调版_2089389108580929537.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片CPT-Image-2.5-图生图-官方稳定版_2101587419928809473.json、图片生成/图生图/谷迹-flux2极致羊羔绒_2016533918656241665.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudioAdvanced`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_SamplingConfig`
-- `孤海注释`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `MuyeTextEditOutput`
+- `PreviewImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/2 个有
+- `workflow>核心节点` —— 1/2 个有
+- `孤海注释` —— 1/2 个有
 
 ## 典型参数
 

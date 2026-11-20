@@ -1,44 +1,42 @@
 ---
 name: unknown_workflow_generic_767
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.83975
-common_nodes: [Image Comparer (rgthree), ImageCASharpening+, ImageResize+, LoadImage, SaveImage, SeedVR2, TTP_Image_Assy, TTP_Image_Tile_Batch, easy int]
+coverage: 0.579
+common_nodes: [DownloadVideo, LoadImage, LoadVideoFromUrl_RH, PreviewAny, PrimitiveString, SaveVideo, UploadToImageHost, VeoImage2Video, VeoQueryTask]
 problems: []
 missing: []
-members: [图片生成/图生图/图像超清4k放大_1991039297094656002.json, 图片生成/图生图/高清修复 _ 图像版  升级优化_2052223595128074242.json, 图片生成/图生图/高清修复 _ 图像版  升级优化🚀_1961635415524577281.json, 图片生成/图生图/高清修复图像版升级优化_2060314094548373506.json]
+members: [视频生成/图生视频/谷歌3.1首尾帧图生视频带货视频制作两图首尾图连续图片生成视频_2058489407870685185.json, 视频生成/图生视频/谷歌Ve03.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_2016414667429646338.json, 视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1991711088752553986.json, 视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1993215378560057346.json, 视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1996515625558228994.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_767
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/图像超清4k放大_1991039297094656002.json、图片生成/图生图/高清修复 _ 图像版  升级优化_2052223595128074242.json、图片生成/图生图/高清修复 _ 图像版  升级优化🚀_1961635415524577281.json、图片生成/图生图/高清修复图像版升级优化_2060314094548373506.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/谷歌3.1首尾帧图生视频带货视频制作两图首尾图连续图片生成视频_2058489407870685185.json、视频生成/图生视频/谷歌Ve03.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_2016414667429646338.json、视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1991711088752553986.json、视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1993215378560057346.json、视频生成/图生视频/谷歌全能视频V3.1首尾帧高清无水印8秒带货视频直出含免会员去rh水印大法_1996515625558228994.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageCASharpening+`
-- `ImageResize+`
+全部 5 个 workflow 都包含：
+- `DownloadVideo`
 - `LoadImage`
-- `SaveImage`
-- `SeedVR2`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `easy int`
+- `LoadVideoFromUrl_RH`
+- `PreviewAny`
+- `PrimitiveString`
+- `SaveVideo`
+- `UploadToImageHost`
+- `VeoImage2Video`
+- `VeoQueryTask`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 3/4 个有
-- `easy imageSizeBySide` —— 3/4 个有
-- `ColorMatch` —— 1/4 个有
-- `Get Image Size` —— 1/4 个有
-- `MathExpression|pysssss` —— 1/4 个有
+- `easy showAnything` —— 4/5 个有
+- `ShowAnything|Mie` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
 
 ## 典型参数
 

@@ -3,30 +3,32 @@ name: unknown_workflow_generic_1880
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.857
-common_nodes: [CR Text, IndexTTS2Run, LoadAudio, SaveAudio]
+coverage: 1
+common_nodes: [ImageResize+, LoadImage, RH_Nano_Banana_Image2Image, RH_Translator, RandomInt, SaveImagePlus]
 problems: []
 missing: []
-members: [音频生成/音频生成/最强语音克隆-indexTTS2可调语气_1992436857531330562.json, 音频生成/音频生成/第二代最强语音克隆-indexTTS2_1980903246602653698.json]
+members: [平台全量/AI-RH__全能图片V1_1960639703303282690.json, 平台全量/全能图片V1_1960637077799002114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1880
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/最强语音克隆-indexTTS2可调语气_1992436857531330562.json、音频生成/音频生成/第二代最强语音克隆-indexTTS2_1980903246602653698.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/AI-RH__全能图片V1_1960639703303282690.json、平台全量/全能图片V1_1960637077799002114.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudio`
+- `ImageResize+`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
+- `RandomInt`
+- `SaveImagePlus`
 
 ## 典型参数
 

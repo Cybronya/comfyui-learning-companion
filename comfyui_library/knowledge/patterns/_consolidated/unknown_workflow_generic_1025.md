@@ -1,53 +1,37 @@
 ---
 name: unknown_workflow_generic_1025
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.772
-common_nodes: [ConstrainImage|pysssss, Get Image Size, Image Comparer (rgthree), ImageFromBatch, ImageResize+, ImageScaleBy, LoadImage, PreviewImage, RHHiddenNodes, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy forLoopEnd, easy forLoopStart, easy joinImageBatch]
+coverage: 0.864
+common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/分镜切割机-2k_2008082317960552450.json, 图片生成/图生图/新年表情包一键生成器_2065144681117343746.json, 图片生成/图生图/表情包变身相机-新春贺岁_2010150238945808385.json]
+members: [视频生成/文生视频/RH 万相3.0-参考生视频_2091965985447301121.json, 视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json, 视频生成/文生视频/Wan3.0低价版-直出30秒-全能参考生视频_2093000123835052033.json, 视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1025
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/分镜切割机-2k_2008082317960552450.json、图片生成/图生图/新年表情包一键生成器_2065144681117343746.json、图片生成/图生图/表情包变身相机-新春贺岁_2010150238945808385.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/RH 万相3.0-参考生视频_2091965985447301121.json、视频生成/文生视频/Seedance2.0 Fast全能参考视频｜图片参考｜音频参考｜视频参考_2104042708477243393.json、视频生成/文生视频/Wan3.0低价版-直出30秒-全能参考生视频_2093000123835052033.json、视频生成/文生视频/【超能视频Seedance2.0 SD2.0-图视频音频生视频】工作流_2037776612212613122.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `ConstrainImage|pysssss`
-- `Get Image Size`
-- `Image Comparer (rgthree)`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImageScaleBy`
+全部 4 个 workflow 都包含：
+- `LoadAudio`
 - `LoadImage`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `SaveImage`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy joinImageBatch`
+- `LoadVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 2/3 个有
-- `JjkText` —— 2/3 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `CR Image Grid Panel` —— 1/3 个有
-- `ImageListToBatch+` —— 1/3 个有
-- `TT_img_enc` —— 1/3 个有
+- `RH_AlibabaWan30ReferenceToVideo` —— 2/4 个有
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo` —— 2/4 个有
+- `Text` —— 1/4 个有
 
 ## 典型参数
 

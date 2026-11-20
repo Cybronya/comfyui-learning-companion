@@ -1,74 +1,124 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_73
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.741333
-common_nodes: [CLIPLoader, CLIPTextEncode, ClownsharKSampler_Beta, EmptyHunyuanLatentVideo, Image Sharpen FS, KSampler, LatentUpscaleBy, LoraLoaderModelOnly, PreviewImage, SaveImage, String, Text, Text Concatenate, UnetLoaderGGUF, VAEDecode, VAELoader, easy showAnything]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: moderate
+coverage: 0.6805
+common_nodes: [ASRMW, Any To String (mtb), AudioToFPS, CFGGuider, CLIPTextEncode, CR Text, CR Text Concatenate, DualCLIPLoader, EmptyImage, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, ImpactSwitch, Int, InversionDemoLazySwitch, JWInteger, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ProcessString, Qwen3_VQA, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, ShowText|pysssss, SolidMask, SomethingToString, Switch any [Crystools], VAEDecodeTiled, VAELoaderKJ, VRAMReserver, easy boolean, easy cleanGpuUsed, easy compare]
+problems: []
 missing: []
-members: [图片生成/反推提示词/42ttoihighquality_2050047254924414978.json, 图片生成/文生图/WAN2.2高质量真实照片生成_1955155949084446721.json, 图片生成/文生图/WAN2.2高质量真实照片生成v2_1963603441133375490.json]
+members: [视频生成/图生视频/LTX2.3音频对口型【数字人】测试版本+效果如图_2039639579086561281.json, 视频生成/图生视频/LTX2.3首尾帧+音频对口型_2034072615744180226.json, 视频生成/图生视频/QwenTTS+LTX2.0角色说话_2017601157362884610.json, 视频生成/图生视频/对口型LTX【Qwen-TTS音色设计】_2019964726540771330.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_73
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/42ttoihighquality_2050047254924414978.json、图片生成/文生图/WAN2.2高质量真实照片生成_1955155949084446721.json、图片生成/文生图/WAN2.2高质量真实照片生成v2_1963603441133375490.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/LTX2.3音频对口型【数字人】测试版本+效果如图_2039639579086561281.json、视频生成/图生视频/LTX2.3首尾帧+音频对口型_2034072615744180226.json、视频生成/图生视频/QwenTTS+LTX2.0角色说话_2017601157362884610.json、视频生成/图生视频/对口型LTX【Qwen-TTS音色设计】_2019964726540771330.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：74%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
+- `ASRMW`
+- `Any To String (mtb)`
+- `AudioToFPS`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ClownsharKSampler_Beta`
-- `EmptyHunyuanLatentVideo`
-- `Image Sharpen FS`
-- `KSampler`
-- `LatentUpscaleBy`
+- `CR Text`
+- `CR Text Concatenate`
+- `DualCLIPLoader`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ImageScaleBy`
+- `ImpactSwitch`
+- `Int`
+- `InversionDemoLazySwitch`
+- `JWInteger`
+- `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SaveImage`
-- `String`
-- `Text`
-- `Text Concatenate`
-- `UnetLoaderGGUF`
-- `VAEDecode`
-- `VAELoader`
-- `easy showAnything`
+- `ManualSigmas`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ProcessString`
+- `Qwen3_VQA`
+- `RandomNoise`
+- `ResizeImagesByLongerEdge`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `ShowText|pysssss`
+- `SolidMask`
+- `SomethingToString`
+- `Switch any [Crystools]`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
+- `VRAMReserver`
+- `easy boolean`
+- `easy cleanGpuUsed`
+- `easy compare`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `RTXVideoSuperResolution` —— 1/3 个有
-- `UNETLoader` —— 1/3 个有
+- `CR String To Combo` —— 3/4 个有
+- `CheckpointLoaderSimple` —— 3/4 个有
+- `Display Any (rgthree)` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `JoinStrings` —— 3/4 个有
+- `LTXVAudioVAEDecode` —— 3/4 个有
+- `LTXVImgToVideoInplace` —— 3/4 个有
+- `PreviewAudio` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `UNETLoader` —— 3/4 个有
+- `VHS_VideoCombine` —— 3/4 个有
+- `ttN concat` —— 3/4 个有
+- `AudioCrop` —— 2/4 个有
+- `AudioDither` —— 2/4 个有
+- `AudioPad` —— 2/4 个有
+- `AudioResample` —— 2/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `CreateVideo` —— 2/4 个有
+- `LTX2_NAG` —— 2/4 个有
+- `LayerUtility: PurgeVRAM` —— 2/4 个有
+- `SaveAudio` —— 2/4 个有
+- `SaveVideo` —— 2/4 个有
+- `TextInput_` —— 2/4 个有
+- `WhisperSTT` —— 2/4 个有
+- `AudioSeparation` —— 1/4 个有
+- `FB_Qwen3TTSVoiceClone` —— 1/4 个有
+- `FB_Qwen3TTSVoiceDesign` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `JjkText` —— 1/4 个有
+- `LTXVFirstLastFrameControl_TTP` —— 1/4 个有
+- `PIP_IntegerCalculator` —— 1/4 个有
+- `PrimitiveBoolean` —— 1/4 个有
+- `SaveAudioMP3` —— 1/4 个有
+- `UnetLoaderGGUF` —— 1/4 个有
+- `easy imageConcat` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | bong_tangent | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 20 | 20 - 20 | 3 | 100% |
-| 采样算法 | 10 | 10 - 10 | 3 | 100% |
-| 调度器 | 1 | 1 - 1 | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 最常用 bong_tangent，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 10，观测区间 10 - 10，3 个样本，取值集中（一致性 100%）
-- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 风险：重绘幅度 观测到 1，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
-- 高发问题（5/3 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

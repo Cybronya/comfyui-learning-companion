@@ -1,38 +1,43 @@
 ---
 name: unknown_workflow_generic_429
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.794
-common_nodes: [Qwen3_VQA, SaveImage, easy showAnything]
+coverage: 0.892286
+common_nodes: [CR Prompt Text, LoadImage, PreviewAny, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Image2Image, SaveImage, Text, easy saveText]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Qwen3 VQA图片反推视频提示词V1_1999477689276825601.json, 图片生成/反推提示词/Qwen3 VQA首尾帧图片反推提示词_1999645493368156162.json, 图片生成/反推提示词/Qwen3+VQA图片反推JSON格式提示词_1999643010478600193.json, 图片生成/反推提示词/千问图片反推_1986006571178176514.json, 图片生成/反推提示词/图像提示词反推（超详细版）QWEN3 VL_2015765733640249346.json, 图片生成/反推提示词/视频反推提示词_2000036361459691521.json]
+members: [图片生成/图生图/Gem模型和全能XJ图片Pro_2072681794402603010.json, 图片生成/图生图/【海皮】JM角色过审三视图+多视图+去敏感词_2032796085231554562.json, 图片生成/图生图/一键多视图plus版本_2033818270687563778.json, 图片生成/文生图/【海皮】JM角色过审三视图+多视图+去敏感词_2028346843729502210.json, 图片生成/文生图/【海皮】国内全能Gem模型和全能XJ图片Pro_2029077017219571714.json, 图片生成/文生图/一键生成九宫分镜图_2043228774514298881.json, 平台全量/生成人像多视图和三视图_2064627397676326913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_429
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/Qwen3 VQA图片反推视频提示词V1_1999477689276825601.json、图片生成/反推提示词/Qwen3 VQA首尾帧图片反推提示词_1999645493368156162.json、图片生成/反推提示词/Qwen3+VQA图片反推JSON格式提示词_1999643010478600193.json、图片生成/反推提示词/千问图片反推_1986006571178176514.json、图片生成/反推提示词/图像提示词反推（超详细版）QWEN3 VL_2015765733640249346.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Gem模型和全能XJ图片Pro_2072681794402603010.json、图片生成/图生图/【海皮】JM角色过审三视图+多视图+去敏感词_2032796085231554562.json、图片生成/图生图/一键多视图plus版本_2033818270687563778.json、图片生成/文生图/【海皮】JM角色过审三视图+多视图+去敏感词_2028346843729502210.json、图片生成/文生图/【海皮】国内全能Gem模型和全能XJ图片Pro_2029077017219571714.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Qwen3_VQA`
+全部 7 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadImage`
+- `PreviewAny`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `easy showAnything`
+- `Text`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageLoader` —— 5/6 个有
-- `MultiplePathsInput` —— 3/6 个有
-- `easy cleanGpuUsed` —— 2/6 个有
-- `LoadImage` —— 1/6 个有
-- `VideoLoader` —— 1/6 个有
+- `ImageResize+` —— 4/7 个有
+- `JjkConcat` —— 4/7 个有
+- `RH_Translator` —— 4/7 个有
+- `Fast Groups Muter (rgthree)` —— 3/7 个有
+- `Label (rgthree)` —— 1/7 个有
 
 ## 典型参数
 

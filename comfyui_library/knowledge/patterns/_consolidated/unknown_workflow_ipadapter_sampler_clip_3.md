@@ -1,61 +1,57 @@
 ---
 name: unknown_workflow_ipadapter_sampler_clip_3
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9425
-common_nodes: [ApplyIPAdapterFlux, BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, IPAdapterFluxLoader, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.8465
+common_nodes: [ApplyFluxIPAdapter, CLIPTextEncodeFlux, DualCLIPLoader, EmptyLatentImage, ImageScale, LoadFluxIPAdapter, LoadImage, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, XlabsSampler]
 problems: []
 missing: []
-members: [图片生成/文生图/Flux IPadapter 有趣的风格转绘惊喜连连_1910501378597552130.json, 图片生成/文生图/Flux-ipadapter 高质量风格迁移【橘子_SJRJT】_1919985800077836289.json]
+members: [平台全量/FLUX STYLE TRANSFER (better version)_1869661957786603522.json, 平台全量/FLUX ip adapter_1879423567862657025.json, 平台全量/Flux ipadapter + CN(depth canny hed)_1836384659478573058.json, 平台全量/flux-ip-adapter-v2_1851291720024551425.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_ipadapter_sampler_clip_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Flux IPadapter 有趣的风格转绘惊喜连连_1910501378597552130.json、图片生成/文生图/Flux-ipadapter 高质量风格迁移【橘子_SJRJT】_1919985800077836289.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/FLUX STYLE TRANSFER (better version)_1869661957786603522.json、平台全量/FLUX ip adapter_1879423567862657025.json、平台全量/Flux ipadapter + CN(depth canny hed)_1836384659478573058.json、平台全量/flux-ip-adapter-v2_1851291720024551425.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ApplyIPAdapterFlux`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPTextEncode`
+全部 4 个 workflow 都包含：
+- `ApplyFluxIPAdapter`
+- `CLIPTextEncodeFlux`
 - `DualCLIPLoader`
 - `EmptyLatentImage`
-- `IPAdapterFluxLoader`
-- `KSamplerSelect`
+- `ImageScale`
+- `LoadFluxIPAdapter`
 - `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `XlabsSampler`
 
 **可变部分**（部分 workflow 才有）：
-- `ChinesePrompt_Mix` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `FluxResolutionNode` —— 1/2 个有
-- `JjkShowText` —— 1/2 个有
-- `JjkText` —— 1/2 个有
-- `JoinStrings` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `VAEEncode` —— 1/2 个有
-- `scale` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
+- `ApplyFluxControlNet` —— 2/4 个有
+- `CannyEdgePreprocessor` —— 2/4 个有
+- `DepthAnythingPreprocessor` —— 2/4 个有
+- `HEDPreprocessor` —— 2/4 个有
+- `LoadFluxControlNet` —— 2/4 个有
+- `ImageCrop` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 640 | - | 2 | 80% |
-| 高度 | 768 | - | 2 | 67% |
+| 宽度 | 1024 | 1024 - 1024 | 4 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 4 | 100% |
 
 ## 常见问题
 
@@ -63,6 +59,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 640，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- 高度 中位数 768，样本不足，未给区间，2 个样本
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，4 个样本，取值集中（一致性 100%）

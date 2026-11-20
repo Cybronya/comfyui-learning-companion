@@ -1,68 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_318
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.88425
-common_nodes: [CR Prompt Text, Float, GetImageSizeAndCount, INTConstant, JWInteger, LoadWanVideoT5TextEncoder, SaveLatent, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.875778
+common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, ImageToMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddTTMLatents, WanVideoBlockSwap, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.2 control控制_1966742439342059521.json, 视频生成/图生视频/【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_1982245487325659137.json, 视频生成/图生视频/（4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.json, 视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_1980903199232184321.json, 视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V新版高噪模型优调版图生视频V2_1978368090293555201.json, 视频生成/图生视频/（4+4）KJ版Wan2.2优调版图生视频实验版V2（LightX2v+Rcm）_1980273017576185857.json, 视频生成/文生视频/(KJ版)Wan2.2+Foley精调版文生视频V1_1970702549865164802.json, 视频生成/文生视频/Comfy挑战赛6（心跳）Wan2.2文生视频+音频_1971180956935720962.json]
+members: [平台全量/🤖Time to Move轨迹遮罩视频自动生成工具🤖_1994022952771452929.json, 视频生成/图生视频/(手动工具版)TTM路径编辑图生视频V1_1990441820280807425.json, 视频生成/图生视频/TTM-视频主体轨迹移动控制_1991157733022085121.json, 视频生成/图生视频/TTM任意编辑视频生成-Aiwood_1990244516261228546.json, 视频生成/图生视频/TTM编辑轨迹动作引导生成视频_1990327033626587137.json, 视频生成/图生视频/Time-to-Move框架：关键帧引导生成AI视频，精确控制视频元素移动！_1990969622830718977.json, 视频生成/图生视频/Wan2_2_I2V_TimeToMove 运动控制图生视频_1991333399692685313.json, 视频生成/图生视频/wanvideo2_2_I2V_A14B_TimeToMove_example_1990459550644002818.json, 视频生成/图生视频/精确版 TTM-视频主体轨迹移动控制_1999381454922579970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_318
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/wan2.2 control控制_1966742439342059521.json、视频生成/图生视频/【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_1982245487325659137.json、视频生成/图生视频/（4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.json、视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_1980903199232184321.json、视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V新版高噪模型优调版图生视频V2_1978368090293555201.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/🤖Time to Move轨迹遮罩视频自动生成工具🤖_1994022952771452929.json、视频生成/图生视频/(手动工具版)TTM路径编辑图生视频V1_1990441820280807425.json、视频生成/图生视频/TTM-视频主体轨迹移动控制_1991157733022085121.json、视频生成/图生视频/TTM任意编辑视频生成-Aiwood_1990244516261228546.json、视频生成/图生视频/TTM编辑轨迹动作引导生成视频_1990327033626587137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
 - **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
+全部 9 个 workflow 都包含：
+- `CreateCFGScheduleFloatList`
 - `GetImageSizeAndCount`
+- `GetNode`
 - `INTConstant`
-- `JWInteger`
-- `LoadWanVideoT5TextEncoder`
-- `SaveLatent`
-- `VAEEncode`
-- `VAELoader`
+- `ImageResizeKJv2`
+- `ImageToMask`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddTTMLatents`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateCFGScheduleFloatList` —— 7/8 个有
-- `HunyuanVideoFoley` —— 7/8 个有
-- `easy showAnything` —— 7/8 个有
-- `text_mul_replace` —— 7/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
-- `LoadImage` —— 6/8 个有
-- `WanVideoImageToVideoEncode` —— 6/8 个有
-- `WanVideoEmptyEmbeds` —— 2/8 个有
-- `PreviewImage` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `StringToFloatList` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
-- `WanVideoContextOptions` —— 1/8 个有
-- `WanVideoControlEmbeds` —— 1/8 个有
-- `WanVideoEncode` —— 1/8 个有
-- `easy seed` —— 1/8 个有
+- `ImageConcatMulti` —— 8/9 个有
+- `LoadImage` —— 8/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `AILab_QwenVL` —— 1/9 个有
+- `CLIPLoader` —— 1/9 个有
+- `CLIPTextEncode` —— 1/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `DownloadAndLoadGIMMVFIModel` —— 1/9 个有
+- `GIMMVFI_interpolate` —— 1/9 个有
+- `JWInteger` —— 1/9 个有
+- `Label (rgthree)` —— 1/9 个有
+- `PreviewAny` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `VHS_SelectImages` —— 1/9 个有
+- `WanVideoImageToVideoEncode_v2` —— 1/9 个有
+- `WanVideoTextEmbedBridge` —— 1/9 个有
 
 ## 典型参数
 

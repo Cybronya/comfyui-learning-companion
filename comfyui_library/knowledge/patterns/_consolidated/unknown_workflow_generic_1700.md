@@ -3,38 +3,38 @@ name: unknown_workflow_generic_1700
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.917
-common_nodes: [CR Prompt Text, LoadAudio, LoadImage, RH_MagiHumanGenerate, RH_MagiHumanModelLoader, SaveVideo, easy cleanGpuUsed, easy clearCacheAll, easy int, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader]
+coverage: 0.799
+common_nodes: [LoadImage, PreviewAny, RHLLMChatNode, RH_RhartImageG2OfficialImageToImage, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/图生视频/daVinci-MagiHuman--音色参考-音画同步_2037850701509959682.json, 视频生成/图生视频/daVinci-MagiHuman-图生视频-音色参考-音画同步_2037822164128239618.json]
+members: [图片生成/图生图/参考动作2_2064279257899159553.json, 图片生成/图生图/指定背景替换_2063893824946139137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1700
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/daVinci-MagiHuman--音色参考-音画同步_2037850701509959682.json、视频生成/图生视频/daVinci-MagiHuman-图生视频-音色参考-音画同步_2037822164128239618.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/参考动作2_2064279257899159553.json、图片生成/图生图/指定背景替换_2063893824946139137.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
 - `LoadImage`
-- `RH_MagiHumanGenerate`
-- `RH_MagiHumanModelLoader`
-- `SaveVideo`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy int`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
+- `PreviewAny`
+- `RHLLMChatNode`
+- `RH_RhartImageG2OfficialImageToImage`
+- `SaveImage`
+- `Text Multiline`
+
+**可变部分**（部分 workflow 才有）：
+- `ConstrainImage|pysssss` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ResizeAndPadImage` —— 1/2 个有
 
 ## 典型参数
 

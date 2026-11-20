@@ -187,7 +187,7 @@
 				543.5309448242188
 			],
 			"widgets_values":[
-				"{\"status\": \"success\", \"task_id\": \"908953320201138176\", \"video_url\": \"https://prod-ss-vidu.s3.cn-northwest-1.amazonaws.com.cn/infer/tasks/26/0114/09/908953320201138176/creation-01/video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARRHG6JR7EMNHVUWT%2F20260114%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Date=20260114T092839Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D86400&response-content-disposition=attachment%3Bfilename%3Dgeneral-6-2026-01-14T09%253A28%253A34Z.mp4&x-id=GetObject&X-Amz-Signature=d4246a1c3a4de630f796878a6c11afb39f0541d45a439bf6e775151a3bf5a5f9\", \"model\": \"viduq2\", \"duration\": 5, \"resolution\": \"720p\", \"aspect_ratio\": \"16:9\", \"audio\": false, \"images_count\": 2, \"seed\": 563138987}"
+				"{\"status\": \"success\", \"task_id\": \"908953320201138176\", \"video_url\": \"https://prod-ss-vidu.s3.cn-northwest-1.amazonaws.com.cn/infer/tasks/26/0114/09/908953320201138176/creation-01/video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=REDACTED000000000000%2F20260114%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Date=20260114T092839Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D86400&response-content-disposition=attachment%3Bfilename%3Dgeneral-6-2026-01-14T09%253A28%253A34Z.mp4&x-id=GetObject&X-Amz-Signature=d4246a1c3a4de630f796878a6c11afb39f0541d45a439bf6e775151a3bf5a5f9\", \"model\": \"viduq2\", \"duration\": 5, \"resolution\": \"720p\", \"aspect_ratio\": \"16:9\", \"audio\": false, \"images_count\": 2, \"seed\": 563138987}"
 			],
 			"inputs":[
 				{
@@ -408,7 +408,7 @@
 				318.0664978027344
 			],
 			"widgets_values":[
-				"https://prod-ss-vidu.s3.cn-northwest-1.amazonaws.com.cn/infer/tasks/26/0114/09/908953320201138176/creation-01/video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARRHG6JR7EMNHVUWT%2F20260114%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Date=20260114T092839Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D86400&response-content-disposition=attachment%3Bfilename%3Dgeneral-6-2026-01-14T09%253A28%253A34Z.mp4&x-id=GetObject&X-Amz-Signature=d4246a1c3a4de630f796878a6c11afb39f0541d45a439bf6e775151a3bf5a5f9"
+				"https://prod-ss-vidu.s3.cn-northwest-1.amazonaws.com.cn/infer/tasks/26/0114/09/908953320201138176/creation-01/video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=REDACTED000000000000%2F20260114%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Date=20260114T092839Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D86400&response-content-disposition=attachment%3Bfilename%3Dgeneral-6-2026-01-14T09%253A28%253A34Z.mp4&x-id=GetObject&X-Amz-Signature=d4246a1c3a4de630f796878a6c11afb39f0541d45a439bf6e775151a3bf5a5f9"
 			],
 			"inputs":[
 				{

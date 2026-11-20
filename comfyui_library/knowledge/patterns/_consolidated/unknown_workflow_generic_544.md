@@ -1,39 +1,44 @@
 ---
 name: unknown_workflow_generic_544
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8558
-common_nodes: [LoadImage, LoadVideo, RH_LLMAPI_Pro_Node, SaveImage, easy showAnything]
+coverage: 0.789667
+common_nodes: [ImageConcanate, ImageResizeKJv2, LoadImage, PreviewImage, RH_Captioner, SaveImage, ShowText|pysssss, Text Concatenate, Text Multiline, easy imageRemBg]
 problems: []
 missing: []
-members: [图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2064720603055218689.json, 图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2069025293804859393.json, 图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2074387964167282690.json, 图片生成/反推提示词/爆款视频反推_2067182431056261121.json, 视频生成/文生视频/爆款视频反推V2-提示词分析-视频脚本反推_2058553186096607233.json]
+members: [图片生成/图生图/DreamFit一键生成指定服装红毯明星_1923527076891324418.json, 图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考_1923611013999226882.json, 图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加姿势引导_1923671095390760961.json, 图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加引导_1923871881651548161.json, 图片生成/文生图/DreamFit 服装模特体验版_1920852726639693826.json, 平台全量/最全案例_一致性服装迁移Flux版DreamFit_1923382301148049409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_544
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2064720603055218689.json、图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2069025293804859393.json、图片生成/反推提示词/爆款视频反推V2-提示词分析-视频脚本反推_2074387964167282690.json、图片生成/反推提示词/爆款视频反推_2067182431056261121.json、视频生成/文生视频/爆款视频反推V2-提示词分析-视频脚本反推_2058553186096607233.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/DreamFit一键生成指定服装红毯明星_1923527076891324418.json、图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考_1923611013999226882.json、图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加姿势引导_1923671095390760961.json、图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加引导_1923871881651548161.json、图片生成/文生图/DreamFit 服装模特体验版_1920852726639693826.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `ImageConcanate`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoadVideo`
-- `RH_LLMAPI_Pro_Node`
+- `PreviewImage`
+- `RH_Captioner`
 - `SaveImage`
-- `easy showAnything`
+- `ShowText|pysssss`
+- `Text Concatenate`
+- `Text Multiline`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 4/5 个有
-- `RHHiddenNodes` —— 4/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `LayerSeparationSaveText` —— 1/5 个有
+- `RunningHub_DreamFit_Flux` —— 5/6 个有
+- `easy imageConcat` —— 3/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `RunningHub_DreamFit_SD` —— 1/6 个有
 
 ## 典型参数
 

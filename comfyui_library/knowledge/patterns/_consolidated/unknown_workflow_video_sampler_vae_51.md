@@ -1,68 +1,60 @@
 ---
 name: unknown_workflow_video_sampler_vae_51
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.713
-common_nodes: [GetNode, INTConstant, ImageResizeKJv2, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.9081
+common_nodes: [LoadImage, LoadWanVideoT5TextEncoder, Primitive integer [Crystools], Text Multiline, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE一致性角色_1922913039635419137.json, 视频生成/图生视频/Wan2.1 VACE 图生视频_1927920381506797569.json, 视频生成/图生视频/vace 图生视频_1922904256758648834.json, 视频生成/图生视频/vace+kontext创意视频-背景替换_1930513841942118401.json, 视频生成/图生视频/vace+moviigen+causvid一致性角色+动作控制_1924699214469918722.json, 视频生成/图生视频/vace一致性角色+动作控制_1922890736801386498.json, 视频生成/图生视频/vace一致性角色+双重动作控制_1931161804242923521.json, 视频生成/图生视频/vace角色替换_1922918753066172418.json, 视频生成/图生视频/用 VACE 一键视频抠图 + 背景重绘，让猫咪“躺”进玫瑰花海｜Wan2.1从入门到精通_1929011681165262850.json]
+members: [视频生成/图生视频/FusionX Vace图生视频MagCache加速版V1_1934317213807505410.json, 视频生成/图生视频/FusionX版VACE控制高质量图生视频双倍加速版V1_1933551686864781313.json, 视频生成/图生视频/FusionX高质量图生视频双倍加速版V1_1933552260817534978.json, 视频生成/图生视频/KJ版MagCache加速图生视频_1933824175960449025.json, 视频生成/图生视频/Wan2.1-FusionX图生视频_1933737212456390657.json, 视频生成/图生视频/Wan2.1-FusionX图生视频加速工作流_1934536025144238081.json, 视频生成/图生视频/【加速版】FusionX 最新图生视频工作流_1933852620643852289.json, 视频生成/图生视频/最强加速！Self Forcing图生视频1分钟81帧V1_1933192428583038978.json, 视频生成/图生视频/🦖FusionX版高质量图生视频_1934449439467794433.json, 视频生成/图生视频/🦖FusionX版高质量图生视频_1940976707774136321.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_51
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/VACE一致性角色_1922913039635419137.json、视频生成/图生视频/Wan2.1 VACE 图生视频_1927920381506797569.json、视频生成/图生视频/vace 图生视频_1922904256758648834.json、视频生成/图生视频/vace+kontext创意视频-背景替换_1930513841942118401.json、视频生成/图生视频/vace+moviigen+causvid一致性角色+动作控制_1924699214469918722.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/FusionX Vace图生视频MagCache加速版V1_1934317213807505410.json、视频生成/图生视频/FusionX版VACE控制高质量图生视频双倍加速版V1_1933551686864781313.json、视频生成/图生视频/FusionX高质量图生视频双倍加速版V1_1933552260817534978.json、视频生成/图生视频/KJ版MagCache加速图生视频_1933824175960449025.json、视频生成/图生视频/Wan2.1-FusionX图生视频_1933737212456390657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `GetNode`
-- `INTConstant`
-- `ImageResizeKJv2`
+全部 10 个 workflow 都包含：
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
-- `SetNode`
+- `Primitive integer [Crystools]`
+- `Text Multiline`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 8/9 个有
-- `WanVideoEnhanceAVideo` —— 8/9 个有
-- `WanVideoExperimentalArgs` —— 8/9 个有
-- `WanVideoSLG` —— 8/9 个有
-- `Label (rgthree)` —— 7/9 个有
-- `RMBG` —— 6/9 个有
-- `VHS_LoadVideo` —— 6/9 个有
-- `WanVideoTeaCache` —— 4/9 个有
-- `ImageResizeKJ` —— 3/9 个有
-- `MaskToImage` —— 3/9 个有
-- `Mix Color By Mask` —— 3/9 个有
-- `DownloadAndLoadSAM2Model` —— 2/9 个有
-- `GrowMaskWithBlur` —— 2/9 个有
-- `OpenposePreprocessor` —— 2/9 个有
-- `PointsEditor` —— 2/9 个有
-- `Sam2Segmentation` —— 2/9 个有
-- `WanVideoLoraSelect` —— 2/9 个有
-- `DWPreprocessor` —— 1/9 个有
-- `DepthAnythingV2Preprocessor` —— 1/9 个有
-- `ImageBatchGet` —— 1/9 个有
-- `InvertMask` —— 1/9 个有
-- `SAMLoader` —— 1/9 个有
+- `WanVideoEnhanceAVideo` —— 9/10 个有
+- `WanVideoExperimentalArgs` —— 9/10 个有
+- `WanVideoSLG` —— 9/10 个有
+- `JWInteger` —— 8/10 个有
+- `WanVideoTeaCache` —— 8/10 个有
+- `ColorMatch` —— 7/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/10 个有
+- `CLIPVisionLoader` —— 5/10 个有
+- `ImageConcanate` —— 5/10 个有
+- `WanVideoClipVisionEncode` —— 5/10 个有
+- `WanVideoImageToVideoEncode` —— 5/10 个有
+- `WanVideoVACEEncode` —— 5/10 个有
+- `WanVideoVACEStartToEndFrame` —— 5/10 个有
+- `ImageResizeKJv2` —— 2/10 个有
+- `WanVideoLoraSelect` —— 2/10 个有
+- `WanVideoMagCache` —— 2/10 个有
+- `easy cleanGpuUsed` —— 2/10 个有
+- `ImageResizeKJ` —— 1/10 个有
+- `WanVideoTorchCompileSettings` —— 1/10 个有
 
 ## 典型参数
 

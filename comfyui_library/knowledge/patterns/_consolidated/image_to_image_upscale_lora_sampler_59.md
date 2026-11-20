@@ -1,103 +1,96 @@
 ---
 name: image_to_image_upscale_lora_sampler_59
 type: Image To Image
-frequency: 3
-level: strong
-coverage: 0.705667
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, ETN_Translate, FluxGuidance, GetNode, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, KSamplerSelect, LoadImage, LoraLoader, PreviewImage, RandomNoise, SamplerCustomAdvanced, SaveImage, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
-problems: []
+frequency: 4
+level: moderate
+coverage: 0.9305
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, FluxGuidance, Image Comparer (rgthree), ImageListToImageBatch, ImageScaleToTotalPixels, ImageUpscaleWithModel, ImpactImageBatchToImageList, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/【网红洗图】Flux智能反推提示词 一键批量生图_1911677261945470977.json, 图片生成/文生图/8K放大】FLUX去除AI感，图片细化+手部修复_1902541158919122945.json, 图片生成/文生图/FLUX+JOY2反推-图生图+TTP图像放大_1909860762637271042.json]
+members: [平台全量/Klein_一致性高清放大_2066759930501230594.json, 平台全量/Klein_多角度视角切换_2069678400310177793.json, 平台全量/Klein_珠宝首饰渲染级精修_2055286499456897025.json, 平台全量/高保真一致性图片高清放大_2081624447206907905.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_59
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/【网红洗图】Flux智能反推提示词 一键批量生图_1911677261945470977.json、图片生成/文生图/8K放大】FLUX去除AI感，图片细化+手部修复_1902541158919122945.json、图片生成/文生图/FLUX+JOY2反推-图生图+TTP图像放大_1909860762637271042.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/Klein_一致性高清放大_2066759930501230594.json、平台全量/Klein_多角度视角切换_2069678400310177793.json、平台全量/Klein_珠宝首饰渲染级精修_2055286499456897025.json、平台全量/高保真一致性图片高清放大_2081624447206907905.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：71%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `ETN_Translate`
+- `ConditioningZeroOut`
 - `FluxGuidance`
-- `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageListToImageBatch`
 - `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
+- `ImpactImageBatchToImageList`
 - `KSampler`
-- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoader`
-- `PreviewImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
 - `SaveImage`
-- `SetNode`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
 - `UNETLoader`
 - `UpscaleModelLoader`
-- `VAEDecode`
 - `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionEncode` —— 2/3 个有
-- `CLIPVisionLoader` —— 2/3 个有
-- `ConditioningZeroOut` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `Joy_caption_two` —— 2/3 个有
-- `Joy_caption_two_load` —— 2/3 个有
-- `ShowText|pysssss` —— 2/3 个有
-- `StyleModelApply` —— 2/3 个有
-- `StyleModelLoader` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `Anything Everywhere` —— 1/3 个有
-- `Anything Everywhere3` —— 1/3 个有
-- `CR Latent Batch Size` —— 1/3 个有
-- `ControlNetApplyAdvanced` —— 1/3 个有
-- `ControlNetLoader` —— 1/3 个有
-- `Fast Groups Muter (rgthree)` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `ImageScale` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
+- `PrimitiveInt` —— 3/4 个有
+- `ReferenceLatent` —— 3/4 个有
+- `SZ_KleinTiledKSampler` —— 3/4 个有
+- `VAEEncodeTiled` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 2/4 个有
+- `GetImageSize+` —— 2/4 个有
+- `PainterFluxImageEdit` —— 2/4 个有
+- `VAEDecode` —— 2/4 个有
+- `DualCLIPLoader` —— 1/4 个有
+- `GrowMaskWithBlur` —— 1/4 个有
+- `ImageLoader` —— 1/4 个有
+- `JoinStrings` —— 1/4 个有
+- `LayerUtility: ImageMaskScaleAs` —— 1/4 个有
+- `LayerUtility: TextBox` —— 1/4 个有
+- `MaskToImage` —— 1/4 个有
+- `Mix Images By Mask` —— 1/4 个有
+- `PixaromaLabel` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
+- `QwenMultiangleCameraNode` —— 1/4 个有
+- `easy imageColorMatch` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 20 - 25 | 3 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | normal | - | 3 | 67% |
-| 重绘幅度 | 0.7 | 0.5 - 1 | 3 | 72% |
-| LoRA 模型强度 | 0.8 | 0.75 - 0.8 | 3 | 97% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
-| ControlNet 权重 | 0.8 | - | 1 | 100% |
+| 采样步数 | 5.5 | 5 - 6 | 4 | 91% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 4 | 96% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | kl_optimal | - | 4 | 50% |
+| 重绘幅度 | 0.7 | 0.4 - 1 | 4 | 57% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 11/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 2/4 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 20 - 25，3 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 normal，3 个样本，一致性 67%
-- 重绘幅度 中位数 0.7，观测区间 0.5 - 1，3 个样本
-- LoRA 模型强度 中位数 0.8，观测区间 0.75 - 0.8，3 个样本，取值集中（一致性 97%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 5.5，观测区间 5 - 6，4 个样本，取值集中（一致性 91%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，4 个样本，取值集中（一致性 96%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 kl_optimal，4 个样本，一致性 50%
+- 重绘幅度 中位数 0.7，观测区间 0.4 - 1，4 个样本
+- 高发问题（11/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（2/4 个样本）：发现KSampler但没有VAEDecode

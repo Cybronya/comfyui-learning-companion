@@ -1,36 +1,42 @@
 ---
 name: unknown_workflow_generic_95
 type: Unknown Workflow
-frequency: 15
+frequency: 17
 level: moderate
-coverage: 0.7866
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.770412
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/AI漫剧人物 影视场景生成_2055578950419656706.json, 图片生成/图生图/AI漫剧分镜制作-盯盯盯-V2.0六宫格制图_2012916558271619074.json, 图片生成/图生图/AI漫剧角色三视图（全能图片）盯盯盯_2011273263103610881.json, 图片生成/图生图/Ban-Pro全能改图模型_2040612004368490497.json, 图片生成/图生图/Banan2+一键换脸+首饰穿戴_1992055719101001730.json, 图片生成/图生图/YZ金鱼-全能图片Pro 角色创造、多视角、人物替换_2024633204963024898.json, 图片生成/图生图/YZ金鱼-全能图片Pro+角色创造、多视角、人物替换_2099883694013108226.json, 图片生成/图生图/人脸提取与擦除_2033496913143668737.json, 图片生成/图生图/全能2编辑图片_2016813742671007746.json, 图片生成/图生图/全能图像pro+分镜切割_2034992594631008257.json, 图片生成/图生图/全能图像pro_2031180505365876737.json, 图片生成/图生图/全能图片V1 Pro 角色创造、多视图、人物完美替换_2006997740621926401.json, 图片生成/图生图/全能图片V1 Pro-角色多视角、人物替换、角色创造_1998736974582308866.json, 图片生成/图生图/全能图片V1+Pro+角色创造、多视角、人物替换_2005176789980905474.json, 图片生成/图生图/全面模型 角色创造、多视角、人物替换_1996047673721569281.json]
+members: [图片生成/图生图/16宫格分镜图（G-Image 2.0）_2049085742894292993.json, 图片生成/图生图/4K高清 GXX V2图像编辑多图编辑 全能图片 贞贞的AI工坊  低渠道版  Chat API模式_2047482157681090561.json, 图片生成/图生图/9宫格分镜图（G-Image 2.0）_2047207511572353025.json, 图片生成/图生图/9宫格分镜图（G-Image+2.0）_2048672366338772993.json, 图片生成/图生图/9宫格剧情分镜图（G-Image+2.0）洗图 文生图+图生图  人物一致_2057622648015908865.json, 图片生成/图生图/G-Image+2.0 9宫格分镜图+洗图+低价_免费版 +全能编辑_2051865054261325826.json, 图片生成/图生图/GImage20分镜图超强_2060855586232815618.json, 图片生成/图生图/GXX V2图像编辑 4K高清 多图编辑 全能图片 贞贞的AI工坊  低渠道版  Chat API模_2047477649055948802.json, 图片生成/图生图/aidir-9宫格分镜图_2078380754589016065.json, 图片生成/图生图/aidir-角色加场景参考生成9宫格分镜图（G-Image 2.0）_2069593853795069953.json, 图片生成/图生图/image 2 - 九宫格分镜图_2049001762517950465.json, 图片生成/图生图/超好用🔥最高16宫格分镜图-可自行调整（G-Image 2.0）_2066384721466191874.json, 图片生成/文生图/9宫格分镜图 洗图 低价_免费版 G-Image 2.0 全能编辑_2049688552975372289.json, 图片生成/文生图/9宫格分镜图（G-Image 2.0）_2057092483150077953.json, 图片生成/文生图/G-Image 2.0  9宫格分镜图 洗图 全能编辑 低价_免费版_2049729755620052993.json, 平台全量/9宫格分镜图全能图片高清版+（G-Image 2.0）_2062073763683983361.json, 数字人/数字人/短剧人物场景设定 9宫格分镜图  G-Image_2096757619837984770.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_95
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/AI漫剧人物 影视场景生成_2055578950419656706.json、图片生成/图生图/AI漫剧分镜制作-盯盯盯-V2.0六宫格制图_2012916558271619074.json、图片生成/图生图/AI漫剧角色三视图（全能图片）盯盯盯_2011273263103610881.json、图片生成/图生图/Ban-Pro全能改图模型_2040612004368490497.json、图片生成/图生图/Banan2+一键换脸+首饰穿戴_1992055719101001730.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/16宫格分镜图（G-Image 2.0）_2049085742894292993.json、图片生成/图生图/4K高清 GXX V2图像编辑多图编辑 全能图片 贞贞的AI工坊  低渠道版  Chat API模式_2047482157681090561.json、图片生成/图生图/9宫格分镜图（G-Image 2.0）_2047207511572353025.json、图片生成/图生图/9宫格分镜图（G-Image+2.0）_2048672366338772993.json、图片生成/图生图/9宫格剧情分镜图（G-Image+2.0）洗图 文生图+图生图  人物一致_2057622648015908865.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 17 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
+- `RH_RhartImageG2ImageToImage`
 - `SaveImage`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 11/15 个有
-- `Text Input [DVB]` —— 1/15 个有
-- `easy imageSplitGrid` —— 1/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 16/17 个有
+- `CR Text` —— 15/17 个有
+- `RH_LLMAPI_Pro_Node` —— 15/17 个有
+- `RH_Nano_Banana2_Image2Image` —— 15/17 个有
+- `CR Prompt Text` —— 9/17 个有
+- `Comfly_api_set` —— 9/17 个有
+- `Comfly_gpt_image_2_official` —— 9/17 个有
+- `ttN concat` —— 2/17 个有
 
 ## 典型参数
 

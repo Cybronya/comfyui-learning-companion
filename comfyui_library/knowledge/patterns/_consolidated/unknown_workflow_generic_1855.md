@@ -3,40 +3,41 @@ name: unknown_workflow_generic_1855
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9775
-common_nodes: [Apply Whisper, AudioCrop, LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionVector, easy indexTTSGenerateSimple]
+coverage: 0.6075
+common_nodes: [Comfly_api_set, Comfly_nano_banana2_edit_S2A, Fast Groups Muter (rgthree), GetNode, LoadImage, NineGridMosaicNode, PreviewImage, PrimitiveString, PrimitiveStringMultiline, SaveImage, SetNode, ShowAnything|Mie, String, StringConcatenate, easy showAnything]
 problems: []
 missing: []
-members: [音频生成/音频生成/【Ai剪辑师必备】语音模型集合版Qwen3&TTSIndexTTS2【Supermate】_2018828838146416641.json, 音频生成/音频生成/语音模型集合版Qwen3&TTSIndexTTS2谁家强_2016104177868476417.json]
+members: [图片生成/文生图/唉漫剧 分镜大师_首尾帧双通道_2034274764822417410.json, 平台全量/分镜大师_2013189118838185985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1855
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【Ai剪辑师必备】语音模型集合版Qwen3&TTSIndexTTS2【Supermate】_2018828838146416641.json、音频生成/音频生成/语音模型集合版Qwen3&TTSIndexTTS2谁家强_2016104177868476417.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/唉漫剧 分镜大师_首尾帧双通道_2034274764822417410.json、平台全量/分镜大师_2013189118838185985.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSEmotionVector`
-- `easy indexTTSGenerateSimple`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
+- `Comfly_api_set`
+- `Comfly_nano_banana2_edit_S2A`
+- `Fast Groups Muter (rgthree)`
+- `GetNode`
+- `LoadImage`
+- `NineGridMosaicNode`
+- `PreviewImage`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `SaveImage`
+- `SetNode`
+- `ShowAnything|Mie`
+- `String`
+- `StringConcatenate`
+- `easy showAnything`
 
 ## 典型参数
 

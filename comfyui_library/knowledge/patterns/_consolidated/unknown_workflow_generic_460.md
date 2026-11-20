@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_460
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.956333
-common_nodes: [LoadAudio, LoadImage, LoadVideo, SaveVideo]
+coverage: 0.807143
+common_nodes: [LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan3多模态_全参工作流_2114263341400158210.json, 视频生成/图生视频/RH 万相3.0-参考生视频_2091836892085051394.json, 视频生成/图生视频/Wan3.0低价版-直出30秒-全能参考生视频_2094412237648785410.json, 视频生成/图生视频/Wan3.0低价版-直出30秒-单图_首尾帧生视频_2093004641251454977.json, 视频生成/图生视频/Wan3多模态_全参工作流_2092187009434607617.json, 视频生成/图生视频/阿里最强视频模型wan3.0多模态生视频低至0.21元_秒_2092413729613893633.json]
+members: [图片生成/图生图/全能图片F.2 Max 多图编辑_2008810195639603201.json, 图片生成/图生图/图片换背景工作流｜Flux 2 Max 一键替换场景背景_2098720723241095169.json, 图片生成/图生图/图片换背景工作流｜Flux_2_Max_一键替换场景背景_2099338477832859650.json, 图片生成/图生图/图片换背景工作流｜Flux_2_Max_一键替换场景背景_2099669964155346946.json, 图片生成/图生图/图生图工作流｜Higgsfield Soul 风格预设一键换_2100471582589280258.json, 图片生成/图生图/图生图工作流｜Higgsfield_Soul_风格预设一键换_2103664753091629058.json, 图片生成/图生图/图生图工作流｜Higgsfield_Soul_风格预设一键换_2104849539403440129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_460
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Wan3多模态_全参工作流_2114263341400158210.json、视频生成/图生视频/RH 万相3.0-参考生视频_2091836892085051394.json、视频生成/图生视频/Wan3.0低价版-直出30秒-全能参考生视频_2094412237648785410.json、视频生成/图生视频/Wan3.0低价版-直出30秒-单图_首尾帧生视频_2093004641251454977.json、视频生成/图生视频/Wan3多模态_全参工作流_2092187009434607617.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/全能图片F.2 Max 多图编辑_2008810195639603201.json、图片生成/图生图/图片换背景工作流｜Flux 2 Max 一键替换场景背景_2098720723241095169.json、图片生成/图生图/图片换背景工作流｜Flux_2_Max_一键替换场景背景_2099338477832859650.json、图片生成/图生图/图片换背景工作流｜Flux_2_Max_一键替换场景背景_2099669964155346946.json、图片生成/图生图/图生图工作流｜Higgsfield Soul 风格预设一键换_2100471582589280258.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `LoadAudio`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `LoadVideo`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_AlibabaWan30ReferenceToVideo` —— 5/6 个有
-- `Text` —— 5/6 个有
-- `PreviewImage` —— 1/6 个有
-- `RH_AlibabaWan30ImageToVideo` —— 1/6 个有
-- `easy saveText` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `RH_Flux_2_Max_Edit` —— 4/7 个有
+- `RH_HiggsfieldSoulImageToImage` —— 3/7 个有
 
 ## 典型参数
 

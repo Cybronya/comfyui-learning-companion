@@ -1,49 +1,36 @@
 ---
 name: unknown_workflow_generic_342
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.637571
-common_nodes: [CR Text Replace, ComfyMathExpression, JoinStrings, PrimitiveInt, SaveText, ShowText|pysssss, SomethingToString, Text Multiline, easy positive, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.68225
+common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/001-H3智能分镜助手-全网最强版V12.2版_2087129844428664834.json, 图片生成/反推提示词/Minimax-H3智能分镜提示词助手-强的可怕_2090346971516198913.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版V15.2.2版_2098777476104282114.json, 视频生成/文生视频/001-H3智能分镜助手-全网最强版_2085779988699238401.json]
+members: [图片生成/图生图/LLM+G-2.0图生图_2098413355869499394.json, 图片生成/图生图/【全能图片G2.0】角色资产-图生图（二次元版）_2093076942378586114.json, 图片生成/图生图/饮料瓶一键融入自然场景，产品主图自带氛围感_2058447418420719617.json, 图片生成/文生图/Gimage2.0 - 原始出图_2047159050583941122.json, 图片生成/文生图/一键生成小红书风格的卡通风格海报_2066851577717149697.json, 图片生成/文生图/全能图片G2.0----低价渠道版_2067271836173422593.json, 图片生成/文生图/图片故事版（G-2低价）_2088797546922725377.json, 图片生成/文生图/故事版生成（G-2)七图_2088814472105390082.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_342
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/001-H3智能分镜助手-全网最强版V12.2版_2087129844428664834.json、图片生成/反推提示词/Minimax-H3智能分镜提示词助手-强的可怕_2090346971516198913.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.14.2_2097710702394957825.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.2版_2089342177259380737.json、视频生成/文生视频/001-H3智能分镜助手-全网最强版V13.4.14版_2091433624322269185.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/LLM+G-2.0图生图_2098413355869499394.json、图片生成/图生图/【全能图片G2.0】角色资产-图生图（二次元版）_2093076942378586114.json、图片生成/图生图/饮料瓶一键融入自然场景，产品主图自带氛围感_2058447418420719617.json、图片生成/文生图/Gimage2.0 - 原始出图_2047159050583941122.json、图片生成/文生图/一键生成小红书风格的卡通风格海报_2066851577717149697.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：64%
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CR Text Replace`
-- `ComfyMathExpression`
-- `JoinStrings`
-- `PrimitiveInt`
-- `SaveText`
-- `ShowText|pysssss`
-- `SomethingToString`
-- `Text Multiline`
-- `easy positive`
-- `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+全部 8 个 workflow 都包含：
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 5/7 个有
-- `SetNode` —— 5/7 个有
-- `LoadImage` —— 3/7 个有
-- `Label (rgthree)` —— 2/7 个有
-- `LoadImagesFromFolderKJ` —— 2/7 个有
-- `Prompt_Edit` —— 1/7 个有
+- `JjkText` —— 7/8 个有
+- `RHLLMChatNode` —— 2/8 个有
+- `CR Text Concatenate` —— 1/8 个有
 
 ## 典型参数
 

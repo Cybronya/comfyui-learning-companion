@@ -1,77 +1,83 @@
 ---
 name: unknown_workflow_video_lora_sampler_884
 type: Unknown Workflow
-frequency: 2
+frequency: 3
 level: weak
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, LoraLoader, ModelSamplingSD3, TrimVideoLatent, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.565667
+common_nodes: [CLIPLoader, CLIPTextEncode, GetNode, INTConstant, Int, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+problems: []
 missing: []
-members: [视频生成/图生视频/VACE-GGUF官方流-14B-单图参考_1923765736194699265.json, 视频生成/图生视频/ai有娃了-Wan2.1原始节点（非KJ节点）-FusionX加速_1937704868792418306.json]
+members: [视频生成/图生视频/WAN2.2-LightX2V-图生视频，高速度、超听话（自动提示词）_1981316750769905665.json, 视频生成/图生视频/Wan2.2_Remix（首中尾帧)_2001639345427738626.json, 视频生成/图生视频/wan2.2图生视频_2001269970967330818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_884
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/VACE-GGUF官方流-14B-单图参考_1923765736194699265.json、视频生成/图生视频/ai有娃了-Wan2.1原始节点（非KJ节点）-FusionX加速_1937704868792418306.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/WAN2.2-LightX2V-图生视频，高速度、超听话（自动提示词）_1981316750769905665.json、视频生成/图生视频/Wan2.2_Remix（首中尾帧)_2001639345427738626.json、视频生成/图生视频/wan2.2图生视频_2001269970967330818.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
+- **样本数**：3
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `KSampler`
-- `LoadImage`
-- `LoraLoader`
+- `GetNode`
+- `INTConstant`
+- `Int`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
 - `ModelSamplingSD3`
-- `TrimVideoLatent`
-- `UnetLoaderGGUF`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `SetNode`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGZeroStar` —— 1/2 个有
-- `ImageResize+` —— 1/2 个有
-- `ImageResizeKJv2` —— 1/2 个有
-- `ModelPatchTorchSettings` —— 1/2 个有
-- `PathchSageAttentionKJ` —— 1/2 个有
-- `StringFunction|pysssss` —— 1/2 个有
-- `Textbox` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `LoadImage` —— 2/3 个有
+- `RIFE VFI` —— 2/3 个有
+- `WanImageToVideo` —— 2/3 个有
+- `easy cleanGpuUsed` —— 2/3 个有
+- `FlashVSRNode` —— 1/3 个有
+- `GetImageRangeFromBatch` —— 1/3 个有
+- `ImageLoader` —— 1/3 个有
+- `MuyeTextEditOutput` —— 1/3 个有
+- `Qwen3_VQA` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `SeedVR2BlockSwap` —— 1/3 个有
+- `SeedVR2GGUF` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `WanFirstMiddleLastFrameToVideo` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
+- `wanBlockSwap` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8.5 | - | 2 | 94% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | uni_pc | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
-| LoRA 模型强度 | 0.7 | - | 2 | 57% |
-| LoRA 文本强度 | 0.7 | - | 2 | 57% |
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 20 | 3 | 19% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | normal | - | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8.5，样本不足，未给区间，2 个样本，取值集中（一致性 94%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.7，样本不足，未给区间，2 个样本
-- LoRA 文本强度 中位数 0.7，样本不足，未给区间，2 个样本
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 20，3 个样本，取值分散，一致性仅 19%
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 normal，3 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

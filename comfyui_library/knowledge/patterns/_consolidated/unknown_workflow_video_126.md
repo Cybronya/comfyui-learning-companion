@@ -1,37 +1,43 @@
 ---
 name: unknown_workflow_video_126
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.867
-common_nodes: [Int, LoadImage, PreviewImage, RHHiddenNodes, VHS_LoadVideo, VHS_VideoCombine, easy indexAnything, easy mathInt, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.716667
+common_nodes: [Fast Groups Bypasser (rgthree), Gemini_Flash_200_Exp, ImageConcanate, LoadAudio, LoadImage, PreviewImage, ShowText|pysssss, VHS_LoadVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/汤姆猫特效1漫剧电商服装分镜真人_2072948538811703298.json, 视频生成/图生视频/汤姆猫特效之达文西漫剧电商服装分镜真人_2072710252314845185.json]
+members: [图片生成/图生图/🦖Gemini2.0 超级工具箱_1902969584490549250.json, 图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json, 视频生成/图生视频/谷歌Gemini2.0用嘴改图音视频分析_1902853098602409986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_126
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/汤姆猫特效1漫剧电商服装分镜真人_2072948538811703298.json、视频生成/图生视频/汤姆猫特效之达文西漫剧电商服装分镜真人_2072710252314845185.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/🦖Gemini2.0 超级工具箱_1902969584490549250.json、图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json、视频生成/图生视频/谷歌Gemini2.0用嘴改图音视频分析_1902853098602409986.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Int`
+全部 3 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
+- `Gemini_Flash_200_Exp`
+- `ImageConcanate`
+- `LoadAudio`
 - `LoadImage`
 - `PreviewImage`
-- `RHHiddenNodes`
+- `ShowText|pysssss`
 - `VHS_LoadVideo`
-- `VHS_VideoCombine`
-- `easy indexAnything`
-- `easy mathInt`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `Primitive string [Crystools]` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `MultipleImagesInput` —— 1/3 个有
+- `Note _O` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
 
 ## 典型参数
 
@@ -43,4 +49,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

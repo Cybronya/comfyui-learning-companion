@@ -3,38 +3,46 @@ name: unknown_workflow_generic_1108
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.939
-common_nodes: [CR Prompt Text, IndexTTSNode, LayerUtility: PurgeVRAM, LoadAudio, LoadVideo, RH_HeyGemNode, SaveAudio, SaveVideo]
+coverage: 0.486667
+common_nodes: [DebugTensorShape+, Float, ImageScaleBy, InvertMask, JWImageResizeByShorterSide, JoinImageWithAlpha, LayerMask: BiRefNetUltra, LayerMask: MaskPreview, LoadImage, PreviewImage, ResizeMask, SaveImage, easy imageSize, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/培训视频工作流_1937183270608257026.json, 视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json, "视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json"]
+members: [图片生成/图生图/4K以上超清大图多阶段抠图工作流V1_1952200847826563074.json, 图片生成/图生图/BenUltra 4K抠图v1_2066126877932220418.json, 图片生成/图生图/（能力层调用）抠图v1_2065999798217564162.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1108
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/培训视频工作流_1937183270608257026.json、视频生成/图生视频/V-超快HeyGem 数字人+IndexTTS快速语音克隆_1935685692900958209.json、视频生成/图生视频/超音速稳定版HeyGem 数字人+IndexTTS快速语音迁移V3(修复报错,新模型)_1925766535045156866.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/4K以上超清大图多阶段抠图工作流V1_1952200847826563074.json、图片生成/图生图/BenUltra 4K抠图v1_2066126877932220418.json、图片生成/图生图/（能力层调用）抠图v1_2065999798217564162.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `IndexTTSNode`
-- `LayerUtility: PurgeVRAM`
-- `LoadAudio`
-- `LoadVideo`
-- `RH_HeyGemNode`
-- `SaveAudio`
-- `SaveVideo`
+- `DebugTensorShape+`
+- `Float`
+- `ImageScaleBy`
+- `InvertMask`
+- `JWImageResizeByShorterSide`
+- `JoinImageWithAlpha`
+- `LayerMask: BiRefNetUltra`
+- `LayerMask: MaskPreview`
+- `LoadImage`
+- `PreviewImage`
+- `ResizeMask`
+- `SaveImage`
+- `easy imageSize`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactSwitch` —— 2/3 个有
-- `IndexTTS2BaseNode` —— 1/3 个有
+- `LayerMask: BenUltra` —— 2/3 个有
+- `LayerMask: LoadBenModel` —— 2/3 个有
+- `LayerMask: RmBgUltra V2` —— 2/3 个有
+- `PDIMAGE_LongerSize` —— 1/3 个有
 
 ## 典型参数
 

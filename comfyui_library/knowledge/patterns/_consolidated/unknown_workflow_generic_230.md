@@ -1,40 +1,35 @@
 ---
 name: unknown_workflow_generic_230
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8512
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), IndexTTS2Run, LoadAudio]
+coverage: 0.747727
+common_nodes: [CR Text, SaveVideo]
 problems: []
 missing: []
-members: [音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968590572208435201.json, 音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968860316438339585.json, 音频生成/音频生成/Index+TTS2（情绪）语音克隆_1985969734783049729.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1966753591564382209.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1990120142594035714.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_2044700131739574273.json, 音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_2097613887163166722.json, 音频生成/音频生成/TTS2声音克隆，语音模仿，可以调情绪_1965792450579206146.json, 音频生成/音频生成/TTS2声音克隆，语音模仿，可以调情绪_2041905513490812929.json, 音频生成/音频生成/indextts2_2003659335702069249.json]
+members: [视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json, 视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json, 视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json, 视频生成/文生视频/MiniMax H3文生视频_2083148193243684865.json, 视频生成/文生视频/MiniMax H3文生视频_2083209232643612673.json, 视频生成/文生视频/MiniMax H3文生视频_2083412798427717633.json, 视频生成/文生视频/MiniMax H3文生视频_2083417444428902401.json, 视频生成/文生视频/MiniMax H3文生视频_2083423068407549953.json, 视频生成/文生视频/MiniMax H3文生视频_2083426678491140097.json, 视频生成/文生视频/MiniMax+H3文生视频_2083396156163452930.json, 视频生成/文生视频/全能视频 Omni Flash 文生视频 +全节点注释_2061058565992968194.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_230
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968590572208435201.json、音频生成/音频生成/Index TTS2语音克隆（可调节情绪）_1968860316438339585.json、音频生成/音频生成/Index+TTS2（情绪）语音克隆_1985969734783049729.json、音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1966753591564382209.json、音频生成/音频生成/IndexTTS2单人语音克隆（可调节情绪）_1990120142594035714.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/MiniMax+H3文生视频_2083401268705447937.json、视频生成/文生视频/MiniMax H3文生视频+全节点注释_2083430965405380609.json、视频生成/文生视频/MiniMax H3文生视频_2083131167016050690.json、视频生成/文生视频/MiniMax H3文生视频_2083148193243684865.json、视频生成/文生视频/MiniMax H3文生视频_2083209232643612673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `IndexTTS2Run`
-- `LoadAudio`
+全部 11 个 workflow 都包含：
+- `CR Text`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Note _O` —— 9/10 个有
-- `SaveAudio` —— 9/10 个有
-- `NumberClamp` —— 2/10 个有
-- `SaveAudioMP3` —— 2/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
-- `VHS_LoadAudio` —— 1/10 个有
+- `RH_MinimaxHailuoH3TextToVideo` —— 10/11 个有
+- `LoadImage` —— 2/11 个有
+- `RH_GeminiOmniFlashTextToVideo` —— 1/11 个有
 
 ## 典型参数
 

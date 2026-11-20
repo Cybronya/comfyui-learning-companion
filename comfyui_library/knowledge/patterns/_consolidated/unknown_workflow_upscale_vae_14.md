@@ -1,48 +1,56 @@
 ---
 name: unknown_workflow_upscale_vae_14
 type: Unknown Workflow
-frequency: 9
+frequency: 11
 level: moderate
-coverage: 0.542
-common_nodes: [Image Comparer (rgthree), LoadImage, PlaySound|pysssss, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+coverage: 0.751273
+common_nodes: [ImageScaleBy, LoadImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size]
 problems: []
 missing: []
-members: [图片生成/图生图/AI展示面制作_2038086599505874945.json, 图片生成/图生图/AI短剧-分镜设计、延展 4宫格剧情 林耀2.12_2021844416759078914.json, 图片生成/图生图/AI短剧-角色多视觉创作设计 林耀2.12_2021839888609447937.json, 图片生成/图生图/EitanStudio人物定格放大_2044629981107589122.json, 图片生成/图生图/Image2.0_六视图定妆照+剧情四分镜制作_2050498779417202689.json, 图片生成/图生图/Image2.0剧情分镜制作_2050425926537756674.json, 图片生成/图生图/MJ-全能影视设计_2022134966376734722.json, 图片生成/图生图/QXL短剧人物三视图0317_2034121430341787650.json, 图片生成/图生图/最新G image2 官方满血版 数字人剧照工作流高清版 V1.0_2051463449519112193.json]
+members: [图片生成/图生图/8K极致高清放大（TTP+Seedvsr2）_2007683849572061185.json, 图片生成/图生图/AIGC人像系列04-人像超高清基于TTP+SeedVR2实现放大_2028739110755639297.json, 图片生成/图生图/B-LANSEDUONAOHE-SEEDVR2+TTP极速一亿像素放大_1992893002534244353.json, 图片生成/图生图/SeedVR2+TTP放大+0损耗压缩_2001611198548307969.json, 图片生成/图生图/九宫格电商详情高端产品分镜+放大(内置免费的全能图片通道)_2071905182362988545.json, 图片生成/图生图/动漫转真实，超低消耗_2071497174474645506.json, 图片生成/图生图/图片放大-rh-SeedVR2+TTP-模板_2013152289002885122.json, 图片生成/图生图/建筑_角色通用放大-seedvr2_2049762190231609346.json, 图片生成/图生图/建筑效果图套A0大板8k放大工作流_2011999694133665794.json, 平台全量/工作流系列03-低清图片4K_8K放大基于TTP分块+SeedVR2实现_2041384398406291457.json, 平台全量/组件系列5-图片超高清放大4K_8K-TTP+SeedVR2_2058737625791553537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_14
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/AI展示面制作_2038086599505874945.json、图片生成/图生图/AI短剧-分镜设计、延展 4宫格剧情 林耀2.12_2021844416759078914.json、图片生成/图生图/AI短剧-角色多视觉创作设计 林耀2.12_2021839888609447937.json、图片生成/图生图/EitanStudio人物定格放大_2044629981107589122.json、图片生成/图生图/Image2.0_六视图定妆照+剧情四分镜制作_2050498779417202689.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/8K极致高清放大（TTP+Seedvsr2）_2007683849572061185.json、图片生成/图生图/AIGC人像系列04-人像超高清基于TTP+SeedVR2实现放大_2028739110755639297.json、图片生成/图生图/B-LANSEDUONAOHE-SEEDVR2+TTP极速一亿像素放大_1992893002534244353.json、图片生成/图生图/SeedVR2+TTP放大+0损耗压缩_2001611198548307969.json、图片生成/图生图/九宫格电商详情高端产品分镜+放大(内置免费的全能图片通道)_2071905182362988545.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：54%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `Image Comparer (rgthree)`
+全部 11 个 workflow 都包含：
+- `ImageScaleBy`
 - `LoadImage`
-- `PlaySound|pysssss`
-- `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 8/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/9 个有
-- `TextInput_` —— 8/9 个有
-- `PreviewImage` —— 7/9 个有
-- `ImageScaleToTotalPixels` —— 5/9 个有
-- `RH_Nano_Banana2_Image2Image` —— 5/9 个有
-- `easy showAnything` —— 5/9 个有
-- `LayerUtility: TextJoin` —— 4/9 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 3/9 个有
-- `Switch` —— 3/9 个有
-- `Label (rgthree)` —— 2/9 个有
+- `Image Comparer (rgthree)` —— 10/11 个有
+- `SaveImage` —— 10/11 个有
+- `GetImageSize+` —— 9/11 个有
+- `ImageResize+` —— 9/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/11 个有
+- `easy showAnything` —— 6/11 个有
+- `KOOK_ImageCompression` —— 5/11 个有
+- `PreviewImage` —— 5/11 个有
+- `easy int` —— 5/11 个有
+- `PrimitiveFloat` —— 3/11 个有
+- `easy float` —— 3/11 个有
+- `easy mathInt` —— 3/11 个有
+- `ImageResizeKJv2` —— 2/11 个有
+- `MathExpression|pysssss` —— 2/11 个有
+- `RHHiddenNodes` —— 2/11 个有
+- `easy cleanGpuUsed` —— 2/11 个有
+- `easy imageSize` —— 2/11 个有
+- `KOOK_SaveJPGImage` —— 1/11 个有
 
 ## 典型参数
 

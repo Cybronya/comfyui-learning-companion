@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_532
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7384
-common_nodes: [ImageCompare, LoadImage, SaveImageAdvanced]
+coverage: 0.783333
+common_nodes: [LoadImage, Qwen3_VQA, ShowText|pysssss, easy saveText]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json, comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json, comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json, comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json]
+members: [图片生成/反推提示词/千府AI-反推JSON提示词-Qwen3VL_2020037405838942210.json, 图片生成/反推提示词/图片反推提示词_2051916282529894401.json, 图片生成/反推提示词/提示词反推_2044030137276043265.json, 图片生成/图生图/image.image_2069326978557235202.json, 图片生成/图生图/mage.image_2069658845688975362.json, 图片生成/图生图/图片描述_2069323228547477506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_532
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_depth_estimation.json、comfyui-workflow-templates-json/image_marigold_v2_surface_normal_estimation.json、comfyui-workflow-templates-json/image_qwen_image_2_1_background_removal.json、comfyui-workflow-templates-json/image_qwen_image_2_1_image_edit.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/千府AI-反推JSON提示词-Qwen3VL_2020037405838942210.json、图片生成/反推提示词/图片反推提示词_2051916282529894401.json、图片生成/反推提示词/提示词反推_2044030137276043265.json、图片生成/图生图/image.image_2069326978557235202.json、图片生成/图生图/mage.image_2069658845688975362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageCompare`
+全部 6 个 workflow 都包含：
 - `LoadImage`
-- `SaveImageAdvanced`
+- `Qwen3_VQA`
+- `ShowText|pysssss`
+- `easy saveText`
 
 **可变部分**（部分 workflow 才有）：
-- `790255fa-100b-4dda-9ab5-e5e1731951db` —— 3/5 个有
-- `bc1c967a-7f6a-4be9-a372-dad16e4f28e3` —— 2/5 个有
+- `easy cleanGpuUsed` —— 3/6 个有
+- `Reverse_prompt_node` —— 1/6 个有
 
 ## 典型参数
 

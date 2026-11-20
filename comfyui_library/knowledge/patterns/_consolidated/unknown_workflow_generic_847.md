@@ -3,46 +3,45 @@ name: unknown_workflow_generic_847
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.81325
-common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, RH_LLMAPI_Pro_Node, RH_RhartImageG2OfficialImageToImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, SaveImage, ShowText|pysssss]
+coverage: 0.87575
+common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, Text, easy promptConcat, easy promptLine]
 problems: []
 missing: []
-members: [视频生成/图生视频/古风汉服MV·导演级全自动视频工作流_2080979650620256257.json, 视频生成/图生视频/户外场景服装带货短视频（全自动生成）_2081231925099978753.json, 视频生成/图生视频/电商产品视频全自动生成（导演分镜故事板）_2078772405257990146.json, 视频生成/文生视频/女鞋口播带货15秒短视频（全自动制作）_2079931868077711362.json]
+members: [图片生成/图生图/G image 2.0电商详情页专用  1毛钱1张图_2051876918835851266.json, 图片生成/图生图/一键详情页_2060233305622138881.json, 图片生成/文生图/AI创意设计10张产品电商详情页生成工作流(🍌生图）_2051332952734351362.json, 平台全量/大师级电商详情页批量设计工作流_2046900764689305602.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_847
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/古风汉服MV·导演级全自动视频工作流_2080979650620256257.json、视频生成/图生视频/户外场景服装带货短视频（全自动生成）_2081231925099978753.json、视频生成/图生视频/电商产品视频全自动生成（导演分镜故事板）_2078772405257990146.json、视频生成/文生视频/女鞋口播带货15秒短视频（全自动制作）_2079931868077711362.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/G image 2.0电商详情页专用  1毛钱1张图_2051876918835851266.json、图片生成/图生图/一键详情页_2060233305622138881.json、图片生成/文生图/AI创意设计10张产品电商详情页生成工作流(🍌生图）_2051332952734351362.json、平台全量/大师级电商详情页批量设计工作流_2046900764689305602.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Label (rgthree)`
 - `LoadImage`
+- `ProcessString`
 - `RH_LLMAPI_Pro_Node`
-- `RH_RhartImageG2OfficialImageToImage`
-- `RH_RhartVideoSparkvideo20MiniMultimodalVideo`
 - `SaveImage`
-- `ShowText|pysssss`
+- `Text`
+- `easy promptConcat`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 3/4 个有
-- `SaveVideo` —— 3/4 个有
-- `Text Concatenate` —— 2/4 个有
-- `LoadAudio` —— 1/4 个有
-- `RH_SeedreamV5ProImageToImage` —— 1/4 个有
-- `RH_SeedreamV5ProTextToImage` —— 1/4 个有
-- `SaveVideoNode` —— 1/4 个有
-- `StringFunction|pysssss` —— 1/4 个有
-- `TwoWaySwitch` —— 1/4 个有
+- `ShowText` —— 3/4 个有
+- `easy showAnything` —— 3/4 个有
+- `CR Prompt Text` —— 2/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/4 个有
+- `RH_RhartImageG2ImageToImage` —— 2/4 个有
+- `ShowText|pysssss` —— 2/4 个有
+- `solarL_SaveImagesToZip` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
 
 ## 典型参数
 

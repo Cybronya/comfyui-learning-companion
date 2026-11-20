@@ -1,78 +1,61 @@
 ---
 name: unknown_workflow_sampler_unet_vae_299
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.967
-common_nodes: [BasicGuider, CLIPLoader, CreateVideo, GetImageSizeAndCount, GrowMask, ImageBlur, ImageCompositeMasked, ImageScaleToTotalPixels, ImageToMask, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoadVideoDepthAnythingModel, MaskToImage, MiniMaxH3ReferenceToVideo, MiniMaxH3VDNExecutionPlanT8Advanced, MiniMaxH3VDNModelComposerT8Advanced, PointsEditor, RandomNoise, SamplerCustomAdvanced, SaveVideo, SeCModelLoader, SeCVideoSegmentation, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VideoDepthAnythingProcess]
+frequency: 4
+level: strong
+coverage: 0.81075
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, ImageResizeKJv2, JjkText, KSampler, LoadImage, PrimitiveInt, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（Face Refine 精修版）_2106049462291492865.json, 视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（无声版）_2105985623722119170.json, 视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（标准版）_2105941709917081601.json]
+members: [图片生成/文生图/主体去背景丨Qwen Image 2.1丨透明PNG·遮罩预览_2112093034207858689.json, 图片生成/文生图/图片换人丨Qwen Image 2.1丨双图替换·保留姿态_2112093115338280962.json, 平台全量/Action Transfer人物替换+人物换装 Qwen+Image+2.1_2117423564285628418.json, 平台全量/人物换装&换背景&图像编辑_2112724441338834946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_299
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（Face Refine 精修版）_2106049462291492865.json、视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（无声版）_2105985623722119170.json、视频生成/文生视频/Mini Max H3｜角色替换_参考编辑（标准版）_2105941709917081601.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/主体去背景丨Qwen Image 2.1丨透明PNG·遮罩预览_2112093034207858689.json、图片生成/文生图/图片换人丨Qwen Image 2.1丨双图替换·保留姿态_2112093115338280962.json、平台全量/Action Transfer人物替换+人物换装 Qwen+Image+2.1_2117423564285628418.json、平台全量/人物换装&换背景&图像编辑_2112724441338834946.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
-- `CreateVideo`
-- `GetImageSizeAndCount`
-- `GrowMask`
-- `ImageBlur`
-- `ImageCompositeMasked`
-- `ImageScaleToTotalPixels`
-- `ImageToMask`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `ImageResizeKJv2`
+- `JjkText`
+- `KSampler`
 - `LoadImage`
-- `LoadVideoDepthAnythingModel`
-- `MaskToImage`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3VDNExecutionPlanT8Advanced`
-- `MiniMaxH3VDNModelComposerT8Advanced`
-- `PointsEditor`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SeCModelLoader`
-- `SeCVideoSegmentation`
-- `SetLatentNoiseMask`
-- `SolidMask`
+- `PrimitiveInt`
+- `QwenImage21Cache`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
-- `VideoDepthAnythingProcess`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 2/3 个有
-- `VHS_VideoInfoLoaded` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `GetVideoComponents` —— 1/3 个有
-- `MiniMaxH3AVDecodeT8` —— 1/3 个有
-- `MiniMaxH3AudioConditioningT8` —— 1/3 个有
-- `MiniMaxH3AudioMixT8` —— 1/3 个有
-- `MiniMaxH3FaceRefineConditioningT8Advanced` —— 1/3 个有
-- `MiniMaxH3FaceRefinePlanT8Advanced` —— 1/3 个有
-- `MiniMaxH3FaceRefineSamplerT8Advanced` —— 1/3 个有
-- `MiniMaxH3FaceRefineStitchAuditT8Advanced` —— 1/3 个有
-- `MiniMaxH3OutputTrimT8` —— 1/3 个有
-- `MiniMaxH3SafeAVSaveT8Advanced` —— 1/3 个有
+- `easy imageConcat` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageScale` —— 1/4 个有
+- `MaskToImage` —— 1/4 个有
+- `SplitImageWithAlpha` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 992 | 960 - 1024 | 4 | 97% |
+| 高度 | 1152 | 1024 - 1280 | 4 | 89% |
+| 采样步数 | 25 | 25 - 25 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -80,4 +63,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 992，观测区间 960 - 1024，4 个样本，取值集中（一致性 97%）
+- 高度 中位数 1152，观测区间 1024 - 1280，4 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

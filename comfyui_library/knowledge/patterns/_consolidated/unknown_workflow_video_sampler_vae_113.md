@@ -3,65 +3,61 @@ name: unknown_workflow_video_sampler_vae_113
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.6978
-common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
+coverage: 0.949
+common_nodes: [ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/多帧精细动作控制Wan2.1进阶工作流V1_1913228889936855042.json, 视频生成/图生视频/最新Wan2.1+Vace首尾帧  极速运行 中文注释_1912169450282647553.json, 视频生成/图生视频/模特产品互动、多人合照、 产品结合、图片结合 WAN 2.1 VACE 14b_1926293882655457281.json, 视频生成/图生视频/贞贞换发型首尾帧特效版（T8自用）_1945694756720582658.json, 视频生成/图生视频/通义万相最新VACE超级首尾帧图生视频_1908024334332342274.json]
+members: [平台全量/WAN-VACE(控制+参考)_1909069408788951042.json, 平台全量/控制+参考(Wan2.1-VACE-14B)_1923042463525892097.json, 平台全量/视频动作_1965251518830100482.json, 平台全量/视频的参考编辑(Wan2.1-VACE-14B)_1923186830479716353.json, 视频生成/文生视频/制+参考)_1937043927247540225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_113
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/多帧精细动作控制Wan2.1进阶工作流V1_1913228889936855042.json、视频生成/图生视频/最新Wan2.1+Vace首尾帧  极速运行 中文注释_1912169450282647553.json、视频生成/图生视频/模特产品互动、多人合照、 产品结合、图片结合 WAN 2.1 VACE 14b_1926293882655457281.json、视频生成/图生视频/贞贞换发型首尾帧特效版（T8自用）_1945694756720582658.json、视频生成/图生视频/通义万相最新VACE超级首尾帧图生视频_1908024334332342274.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/WAN-VACE(控制+参考)_1909069408788951042.json、平台全量/控制+参考(Wan2.1-VACE-14B)_1923042463525892097.json、平台全量/视频动作_1965251518830100482.json、平台全量/视频的参考编辑(Wan2.1-VACE-14B)_1923186830479716353.json、视频生成/文生视频/制+参考)_1937043927247540225.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AddLabel`
-- `EmptyImage`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
 - `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `MaskPreview+` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `WanVideoVACEStartToEndFrame` —— 4/5 个有
-- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `AIO_Preprocessor` —— 4/5 个有
+- `INTConstant` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `Florence2ModelLoader` —— 3/5 个有
+- `Florence2Run` —— 3/5 个有
+- `GetImageSizeAndCount` —— 3/5 个有
+- `GetNode` —— 3/5 个有
+- `WanVideoSLG` —— 3/5 个有
+- `WanVideoTeaCache` —— 3/5 个有
 - `WanVideoVACEModelSelect` —— 3/5 个有
-- `Note Plus (mtb)` —— 2/5 个有
-- `ImageBatchMulti` —— 1/5 个有
-- `ImageConcanate` —— 1/5 个有
-- `ImageFromBatch+` —— 1/5 个有
-- `InspyrenetRembg` —— 1/5 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `LayerUtility: PurgeVRAM` —— 2/5 个有
+- `GrowMaskWithBlur` —— 1/5 个有
+- `InpaintPreprocessor` —— 1/5 个有
+- `LayerMask: LoadFlorence2Model` —— 1/5 个有
+- `LayerMask: ObjectDetectorFL2` —— 1/5 个有
+- `LayerMask: SAM2Ultra` —— 1/5 个有
 - `LayerUtility: PurgeVRAM V2` —— 1/5 个有
-- `Note _O` —— 1/5 个有
-- `WanVideoLoraSelect` —— 1/5 个有
-- `WanVideoVRAMManagement` —— 1/5 个有
-- `easy imageScaleDownToSize` —— 1/5 个有
+- `TextInput_` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,34 +1,38 @@
 ---
 name: unknown_workflow_generic_1398
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.778
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), ImageConcatMulti, LoadImage, RH_SeedreamV5ProImageToImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.726
+common_nodes: [PrimitiveStringMultiline, T8_BreezeTTS_DesignRequest, T8_BreezeTTS_Generate, T8_BreezeTTS_GenerationSettings, T8_BreezeTTS_ModelLoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Seedream 5.0+Pro图像编辑 换脸换服装 换装换头换脸 双图三图多图编辑 +高清修复_2082674138115829762.json, 图片生成/图生图/Seedream+5.0+Pro图像编辑+ 换装换头换脸 Face Swap and Costume_2092433685390909441.json]
+members: [音频生成/音频生成/Breeze TTS 2 声音设计工作流-AI台词转语音_2095712396840095746.json, 音频生成/音频生成/Breeze TTS 2-声音设计-配音_2096859263791624193.json, 音频生成/音频生成/Breeze-TTS2-Design_2105912518110699521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1398
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Seedream 5.0+Pro图像编辑 换脸换服装 换装换头换脸 双图三图多图编辑 +高清修复_2082674138115829762.json、图片生成/图生图/Seedream+5.0+Pro图像编辑+ 换装换头换脸 Face Swap and Costume_2092433685390909441.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/Breeze TTS 2 声音设计工作流-AI台词转语音_2095712396840095746.json、音频生成/音频生成/Breeze TTS 2-声音设计-配音_2096859263791624193.json、音频生成/音频生成/Breeze-TTS2-Design_2105912518110699521.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `ImageConcatMulti`
-- `LoadImage`
-- `RH_SeedreamV5ProImageToImage`
-- `SaveImage`
+全部 3 个 workflow 都包含：
+- `PrimitiveStringMultiline`
+- `T8_BreezeTTS_DesignRequest`
+- `T8_BreezeTTS_Generate`
+- `T8_BreezeTTS_GenerationSettings`
+- `T8_BreezeTTS_ModelLoader`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveAudioMP3` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `SaveAudioAdvanced` —— 1/3 个有
 
 ## 典型参数
 
@@ -40,4 +44,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

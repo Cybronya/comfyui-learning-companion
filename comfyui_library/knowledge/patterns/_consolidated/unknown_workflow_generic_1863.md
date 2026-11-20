@@ -3,36 +3,44 @@ name: unknown_workflow_generic_1863
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.333
-common_nodes: [CR Text, GetNode, PrimitiveBoolean, RH_Suno_Custom, RH_Suno_Lyrics, SaveAudio, SetNode, ShowText|pysssss, Text Multiline, easy ifElse]
+coverage: 0.908
+common_nodes: [DF_Get_image_size, ImageCASharpening+, ImageResize+, ImpactMinMax, Int, LoadImage, PreviewImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [音频生成/音频生成/【音乐生成】SunoV5文生音乐（自动歌词）_2020660119901577218.json, 音频生成/音频生成/【音乐生成】SunoV5文音乐工作流 V1.0_2040530620706721793.json]
+members: [图片生成/文生图/文生图-参考人脸生成角色设计全能图片2 gemini_2064263903147806721.json, 平台全量/万能图片高清放大_2063124448043163649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1863
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/【音乐生成】SunoV5文生音乐（自动歌词）_2020660119901577218.json、音频生成/音频生成/【音乐生成】SunoV5文音乐工作流 V1.0_2040530620706721793.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/文生图-参考人脸生成角色设计全能图片2 gemini_2064263903147806721.json、平台全量/万能图片高清放大_2063124448043163649.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：33%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `GetNode`
-- `PrimitiveBoolean`
-- `RH_Suno_Custom`
-- `RH_Suno_Lyrics`
-- `SaveAudio`
-- `SetNode`
-- `ShowText|pysssss`
-- `Text Multiline`
-- `easy ifElse`
+- `DF_Get_image_size`
+- `ImageCASharpening+`
+- `ImageResize+`
+- `ImpactMinMax`
+- `Int`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
+- `SeedVR2`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `easy cleanGpuUsed`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `JjkText` —— 1/2 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/2 个有
 
 ## 典型参数
 

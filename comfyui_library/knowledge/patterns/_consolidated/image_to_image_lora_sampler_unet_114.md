@@ -1,78 +1,89 @@
 ---
 name: image_to_image_lora_sampler_unet_114
 type: Image To Image
-frequency: 6
+frequency: 7
 level: strong
-coverage: 0.890833
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.570429
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, GetNode, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/千问3D手办_1989299261110145025.json, 图片生成/图生图/千问EDIT局部修改_2048292651706884097.json, 图片生成/图生图/千问edit局部修改工作流_1954950250534506497.json, 图片生成/图生图/图生图-真人转动漫 - 真人转卡通-  真人转漫画_2062456179342798850.json, 图片生成/图生图/服装消失qwen_1960328722777894913.json, 图片生成/文生图/qwen编辑 提示词合集_1959223893091364865.json]
+members: [图片生成/图生图/qwenedit_image_自由创作分镜_2041820186872909826.json, 图片生成/图生图/【AI】产品设计及模特上身（学员练习工作流）_2026934710932348930.json, 图片生成/图生图/【AI】图像编辑控制工作流(学员练习)_2011360098072928257.json, 图片生成/图生图/【AI】图像编辑控制工作流)_2085901700283592705.json, 图片生成/图生图/【AI】图像编辑控制工作流)_2085923884175548418.json, 图片生成/图生图/一键证件照生成_2086806567952932866.json, 图片生成/图生图/课程案例演示——图像编辑控制工作流教学_2074004701275840514.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_114
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/千问3D手办_1989299261110145025.json、图片生成/图生图/千问EDIT局部修改_2048292651706884097.json、图片生成/图生图/千问edit局部修改工作流_1954950250534506497.json、图片生成/图生图/图生图-真人转动漫 - 真人转卡通-  真人转漫画_2062456179342798850.json、图片生成/图生图/服装消失qwen_1960328722777894913.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/qwenedit_image_自由创作分镜_2041820186872909826.json、图片生成/图生图/【AI】产品设计及模特上身（学员练习工作流）_2026934710932348930.json、图片生成/图生图/【AI】图像编辑控制工作流(学员练习)_2011360098072928257.json、图片生成/图生图/【AI】图像编辑控制工作流)_2085901700283592705.json、图片生成/图生图/【AI】图像编辑控制工作流)_2085923884175548418.json…）
 
 - **类型**：Image To Image
-- **样本数**：6
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetNode`
+- `Int`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `SaveImage`
-- `TextEncodeQwenImageEdit`
+- `SetNode`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `TextInput_` —— 3/6 个有
-- `ImpactInt` —— 2/6 个有
-- `JjkText` —— 2/6 个有
-- `SetLatentNoiseMask` —— 2/6 个有
-- `CLIPTextEncode` —— 1/6 个有
-- `CR Prompt List` —— 1/6 个有
-- `EmptyLatentImage` —— 1/6 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/6 个有
-- `Power Lora Loader (rgthree)` —— 1/6 个有
-- `TextEncodeQwenImageEditPlus` —— 1/6 个有
-- `easy imageConcat` —— 1/6 个有
+- `Seed (rgthree)` —— 6/7 个有
+- `TextEncodeQwenImageEdit` —— 6/7 个有
+- `TextInput_` —— 6/7 个有
+- `Image Comparer (rgthree)` —— 5/7 个有
+- `ImageConcanate` —— 5/7 个有
+- `AIO_Preprocessor` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `CR Prompt Text` —— 1/7 个有
+- `EmptyImage` —— 1/7 个有
+- `EmptySD3LatentImage` —— 1/7 个有
+- `ImpactSwitch` —— 1/7 个有
+- `RMBG` —— 1/7 个有
+- `SaveGLB` —— 1/7 个有
+- `Trellis2LoadModel` —— 1/7 个有
+- `Trellis2MeshWithVoxelGenerator` —— 1/7 个有
+- `Trellis2PostProcessAndUnWrapAndRasterizer` —— 1/7 个有
+- `Trellis2SimplifyMesh` —— 1/7 个有
+- `TrimeshToMESH` —— 1/7 个有
+- `easy promptLine` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| 宽度 | 928 | - | 1 | 100% |
-| 高度 | 1664 | - | 1 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 86% |
+| 调度器 | beta | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 86%
+- 调度器 最常用 beta，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（9/7 个样本）：Steps较低可能导致细节不足

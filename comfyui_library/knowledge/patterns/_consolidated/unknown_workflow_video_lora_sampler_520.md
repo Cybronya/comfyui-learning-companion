@@ -1,97 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_520
 type: Unknown Workflow
-frequency: 4
+frequency: 6
 level: moderate
-coverage: 0.83675
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Prompt Text, ComfyMathExpression, ImageFromBatch, ImageResizeKJv2, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3AVDecodeT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PT_H3ConcatAVLatent, PixaromaGetNode, PixaromaLabel, PixaromaResolution, PixaromaSetNode, PreviewImage, RHHiddenNodes, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, Switch any [Crystools], Text, UNETLoader, VAEDecode, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy boolean, easy cleanGpuUsed, easy imageListToImageBatch, easy seed, easy showAnything]
+coverage: 0.925167
+common_nodes: [AudioCrop, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, ImpactInt, JWIntegerToString, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein 9B 电影级分镜 + MiniMax H3 影像生成工作流_2088827135791296513.json, 视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104386310512406530.json, 视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104752656664317954.json, 视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json]
+members: [视频生成/图生视频/Multitalk数字人对口型 高覆盖对嘴型_1955928297832153090.json, 视频生成/图生视频/infinitetalk最强数字人 单人新手直出版_1958474058688053249.json, 视频生成/图生视频/multitalk图片唱歌数字人对口型_1957667803581050882.json, 视频生成/图生视频/阿喜好_照片人物在说话_最强对口型数字人_口播数字人_声音克隆_infinitetalk对口型数字人_1994726030126555137.json, 视频生成/图生视频/🥳infinitetalk最强数字人 单人新手直出版🐟_1958284606359420930.json, 视频生成/图生视频/🥳multitalk数字人对口型 完美对嘴 新手直出版🥳_1955211129968627714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_520
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 9B 电影级分镜 + MiniMax H3 影像生成工作流_2088827135791296513.json、视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104386310512406530.json、视频生成/图生视频/Flux2_Klein_9B_电影级分镜_+_MiniMax_H3_影像生成工作流_2104752656664317954.json、视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Multitalk数字人对口型 高覆盖对嘴型_1955928297832153090.json、视频生成/图生视频/infinitetalk最强数字人 单人新手直出版_1958474058688053249.json、视频生成/图生视频/multitalk图片唱歌数字人对口型_1957667803581050882.json、视频生成/图生视频/阿喜好_照片人物在说话_最强对口型数字人_口播数字人_声音克隆_infinitetalk对口型数字人_1994726030126555137.json、视频生成/图生视频/🥳infinitetalk最强数字人 单人新手直出版🐟_1958284606359420930.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `CR Prompt Text`
-- `ComfyMathExpression`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
+全部 6 个 workflow 都包含：
+- `AudioCrop`
+- `CLIPVisionLoader`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
+- `ImpactInt`
+- `JWIntegerToString`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxH3AVDecodeT8`
-- `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PT_H3ConcatAVLatent`
-- `PixaromaGetNode`
-- `PixaromaLabel`
-- `PixaromaResolution`
-- `PixaromaSetNode`
-- `PreviewImage`
-- `RHHiddenNodes`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `Switch any [Crystools]`
-- `Text`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `VAEEncodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `easy boolean`
-- `easy cleanGpuUsed`
-- `easy imageListToImageBatch`
-- `easy seed`
-- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 3/4 个有
-- `CLIPTextEncode` —— 3/4 个有
-- `CR Text` —— 3/4 个有
-- `CR Text Concatenate` —— 3/4 个有
-- `ConditioningZeroOut` —— 3/4 个有
-- `EmptyFlux2LatentImage` —— 3/4 个有
-- `Float` —— 3/4 个有
-- `Flux2Scheduler` —— 3/4 个有
-- `ModelMemoryUsageFactorOverride` —— 3/4 个有
-- `PathchSageAttentionKJ` —— 3/4 个有
-- `ProcessString` —— 3/4 个有
-- `ReferenceLatent` —— 3/4 个有
-- `ShowText|pysssss` —— 3/4 个有
-- `Text Multiline` —— 3/4 个有
-- `easy promptLine` —— 3/4 个有
-- `llama_cpp_instruct_adv` —— 3/4 个有
-- `llama_cpp_model_loader` —— 3/4 个有
-- `llama_cpp_parameters` —— 3/4 个有
-- `Images to RGB` —— 1/4 个有
-- `PrimitiveFloat` —— 1/4 个有
-- `RHLLMChatNode` —— 1/4 个有
-- `RHSettingsNode` —— 1/4 个有
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 1/4 个有
-- `easy imageSplitGrid` —— 1/4 个有
+- `LoadAudio` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 4/6 个有
+- `AudioSeparation` —— 3/6 个有
+- `easy showAnything` —— 2/6 个有
+- `Anything Everywhere` —— 1/6 个有
+- `CogVideoEnhanceAVideo` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `HyVideoBlockSwap` —— 1/6 个有
+- `ImageSizeInfo` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
+- `WanVideoExperimentalArgs` —— 1/6 个有
 
 ## 典型参数
 

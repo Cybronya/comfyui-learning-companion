@@ -3,39 +3,35 @@ name: unknown_workflow_generic_1673
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7075
-common_nodes: [HeartMuLa_Generate, PrimitiveStringMultiline, SaveAudio, SaveAudioMP3, easy saveText, easy seed, easy showAnything]
+coverage: 0.607
+common_nodes: [EmptyImage, JjkText, LoadImage, PreviewImage, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/音频-歌曲重唱-HeartMuLa_2013839748728627202.json, 音频生成/音频生成/AI一键生成歌词gemini-3-HeartMuLa_2022920245509365761.json]
+members: [图片生成/图生图/全能图片G2.0----官方稳定版_2113797260382392322.json, 图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100189843883122689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1673
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/音频-歌曲重唱-HeartMuLa_2013839748728627202.json、音频生成/音频生成/AI一键生成歌词gemini-3-HeartMuLa_2022920245509365761.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片G2.0----官方稳定版_2113797260382392322.json、图片生成/图生图/即梦4.5-图片重新渲染，装饰物添加_2100189843883122689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `PrimitiveStringMultiline`
-- `SaveAudio`
-- `SaveAudioMP3`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
+- `EmptyImage`
+- `JjkText`
+- `LoadImage`
+- `PreviewImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `HeartMuLa_Transcribe` —— 1/2 个有
-- `LoadAudio` —— 1/2 个有
-- `MemoryCleaner` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/2 个有
+- `RH_SeedreamV45ImageToImage` —— 1/2 个有
 
 ## 典型参数
 

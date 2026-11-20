@@ -3,17 +3,17 @@ name: unknown_workflow_video_sampler_vae_136
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.842
-common_nodes: [CLIPVisionLoader, CR Text, ImpactInt, LoadImage, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoVAELoader]
+coverage: 0.84275
+common_nodes: [CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, PrimitiveInt, RIFE VFI, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [视频生成/图生视频/加强逼真版图生视频lightx2加速_1936026655389306882.json, 视频生成/图生视频/图生视频-Wan-14B-i2v-FusioniX-自然动态_1985179323869052930.json, 视频生成/图生视频/电商女装男装童装带货动图_2058042457992028161.json, 视频生成/文生视频/电商女装男装童装带货动图+全节点注释_2057109561508712450.json]
+members: [图片生成/图生图/KJ版Wan2.1图生视频_1921919410783846402.json, 平台全量/Unianimate转绘跳舞视频_1926976453735272449.json, 视频生成/图生视频/360度旋转效果Wan2.1_1922551848883077121.json, 视频生成/文生视频/【丝滑补帧】Wan2.1 图生视频  KJ加强表情自然不崩脸_1927553770740146177.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_136
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/加强逼真版图生视频lightx2加速_1936026655389306882.json、视频生成/图生视频/图生视频-Wan-14B-i2v-FusioniX-自然动态_1985179323869052930.json、视频生成/图生视频/电商女装男装童装带货动图_2058042457992028161.json、视频生成/文生视频/电商女装男装童装带货动图+全节点注释_2057109561508712450.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/KJ版Wan2.1图生视频_1921919410783846402.json、平台全量/Unianimate转绘跳舞视频_1926976453735272449.json、视频生成/图生视频/360度旋转效果Wan2.1_1922551848883077121.json、视频生成/文生视频/【丝滑补帧】Wan2.1 图生视频  KJ加强表情自然不崩脸_1927553770740146177.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
@@ -24,13 +24,11 @@ source: knowledge_consolidation
 
 全部 4 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR Text`
-- `ImpactInt`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `SimpleMath+`
+- `PrimitiveInt`
+- `RIFE VFI`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
@@ -38,23 +36,28 @@ source: knowledge_consolidation
 - `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJ` —— 3/4 个有
-- `Qwen3VL_Advanced` —— 2/4 个有
-- `easy showAnything` —— 2/4 个有
-- `LayerColor: ColorAdapter` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `RHHiddenNodes` —— 1/4 个有
-- `RH_LLMAPI_NODE` —— 1/4 个有
-- `WanVideoLoraSelect` —— 1/4 个有
-- `WanVideoLoraSelectMulti` —— 1/4 个有
-- `WanVideoMagCache` —— 1/4 个有
-- `WanVideoTextEncode` —— 1/4 个有
-- `WanVideoVRAMManagement` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `ImageUpscaleWithModel` —— 3/4 个有
+- `JjkText` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
+- `UpscaleModelLoader` —— 3/4 个有
+- `WanVideoExperimentalArgs` —— 3/4 个有
+- `WanVideoSLG` —— 3/4 个有
+- `WanVideoTorchCompileSettings` —— 3/4 个有
+- `WanVideoLoraSelect` —— 2/4 个有
+- `WanVideoTeaCache` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
+- `ReActorFaceSwap` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `VHS_LoadVideo` —— 1/4 个有
+- `WanVideoUniAnimateDWPoseDetector` —— 1/4 个有
+- `WanVideoUniAnimatePoseInput` —— 1/4 个有
 
 ## 典型参数
 

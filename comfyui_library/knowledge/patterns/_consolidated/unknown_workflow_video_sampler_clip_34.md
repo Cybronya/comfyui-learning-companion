@@ -2,81 +2,91 @@
 name: unknown_workflow_video_sampler_clip_34
 type: Unknown Workflow
 frequency: 14
-level: strong
-coverage: 0.810357
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+level: moderate
+coverage: 0.986714
+common_nodes: [AudioCrop, AudioSeparation, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, ManualSigmas, MathExpression|pysssss, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy float, easy getNode, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/4步首尾帧+自动提示词（短剧专用）_2000837178416656386.json, 视频生成/图生视频/8步首帧+自动提示词（短剧专用）_2000842508747800577.json, 视频生成/图生视频/Wan2.2 14B 首尾帧_1968955228710133762.json, 视频生成/图生视频/Wan2.2 14B 首尾帧_1989350434903085058.json, 视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1 浮云_1996401587960561665.json, 视频生成/图生视频/Wan2.2加速图生视频-智能扩写提示词版_1950018329094348802.json, 视频生成/图生视频/Wan2.2加速图生视频-智能扩写提示词版_1961778127099904002.json, 视频生成/图生视频/Wan2.2官方首尾帧优化版_1953457819821506562.json, 视频生成/图生视频/【官版】Wan2.2 Moe加速图生视频--智能扩写提示词版_1978821829475340289.json, 视频生成/图生视频/【官版】Wan2.2-Lightning4步加速图生视频_1954213178995568641.json, 视频生成/图生视频/创意首尾帧视频制作 WAN2.2-LightX2V-I2V_1981037704194441217.json, 视频生成/图生视频/首尾帧Wan2.2动漫模型DaSiWa10_2053001977566638081.json, 视频生成/图生视频/首尾震·2张照片丝滑变视频_2010988628385730561.json, 视频生成/图生视频/高动态-图生视频-WAN2.2-LightX2V-I2V_1981728832514334722.json]
+members: [图片生成/图生图/LTX2.3图片数字人_2041815038444441602.json, 图片生成/图生图/图+音频生唱歌：LTX 2.3_2069371802400419841.json, 平台全量/LTX2.3图片数字人_2093721608971186177.json, 数字人/数字人/LTX2.3图片数字人_2037856663717289985.json, 数字人/数字人/LTX2.3超强一致性数字人_2044379214362714113.json, 数字人/数字人/LTX2.3超强一致性数字人_2046938947288305665.json, 数字人/数字人/LTX2.3超强一致性数字人去字幕优化版v2_2046132644798275586.json, 数字人/数字人/图片数字人(LTX2.3)_2041738934023102466.json, 视频生成/图生视频/LTX2.3 数字人_2041853931457880066.json, 视频生成/图生视频/LTX2.3单图数字人_2064665242105372674.json, 视频生成/图生视频/LTX2.3图片数字人_2069015764195176450.json, 视频生成/图生视频/LTX2.3超强一致性数字人去字幕过渡超高质量lora但速度慢v2_2046558500209299457.json, 视频生成/图生视频/LTX2.3超强一致性数字人去字幕过渡超高质量lora但速度慢v2_2048669501297790977.json, 视频生成/图生视频/LTX2.3（kj版）首帧-数字人（动效好，速度快)_2079548676040646657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_34
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/4步首尾帧+自动提示词（短剧专用）_2000837178416656386.json、视频生成/图生视频/8步首帧+自动提示词（短剧专用）_2000842508747800577.json、视频生成/图生视频/Wan2.2 14B 首尾帧_1968955228710133762.json、视频生成/图生视频/Wan2.2 14B 首尾帧_1989350434903085058.json、视频生成/图生视频/Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1 浮云_1996401587960561665.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/LTX2.3图片数字人_2041815038444441602.json、图片生成/图生图/图+音频生唱歌：LTX 2.3_2069371802400419841.json、平台全量/LTX2.3图片数字人_2093721608971186177.json、数字人/数字人/LTX2.3图片数字人_2037856663717289985.json、数字人/数字人/LTX2.3超强一致性数字人_2044379214362714113.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：81%
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `CLIPLoader`
+- `AudioCrop`
+- `AudioSeparation`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `easy float`
+- `easy getNode`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 12/14 个有
-- `RH_LLMAPI_NODE` —— 12/14 个有
-- `PathchSageAttentionKJ` —— 11/14 个有
-- `JWInteger` —— 10/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/14 个有
-- `CR Text` —— 9/14 个有
-- `GetNode` —— 9/14 个有
-- `ImpactSwitch` —— 9/14 个有
-- `MathExpression|pysssss` —— 9/14 个有
-- `SetNode` —— 9/14 个有
-- `easy showAnything` —— 9/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 8/14 个有
-- `WanFirstLastFrameToVideo` —— 7/14 个有
-- `WanImageToVideo` —— 7/14 个有
-- `CLIPVisionEncode` —— 6/14 个有
-- `CLIPVisionLoader` —— 6/14 个有
-- `ShowText|pysssss` —— 5/14 个有
-- `wanBlockSwap` —— 5/14 个有
-- `ImageConcanate` —— 4/14 个有
-- `ImageResizeKJ` —— 4/14 个有
-- `ModelPatchTorchSettings` —— 4/14 个有
-- `SaveImage` —— 2/14 个有
-- `Text Concatenate` —— 2/14 个有
-- `Wan22PromptSelector` —— 2/14 个有
-- `easy imageConcat` —— 2/14 个有
-- `GetImageSizeAndCount` —— 1/14 个有
-- `ImpactInt` —— 1/14 个有
-- `PreviewImage` —— 1/14 个有
-- `Primitive integer [Crystools]` —— 1/14 个有
-- `RH_Nano_Banana_Image2Image` —— 1/14 个有
-- `RIFE VFI` —— 1/14 个有
-- `TT_img_enc` —— 1/14 个有
-- `WanVideoNAG` —— 1/14 个有
+- `Audio Duration (mtb)` —— 13/14 个有
+- `CR Float To Integer` —— 13/14 个有
+- `DiffusionModelLoaderKJ` —— 13/14 个有
+- `easy int` —— 13/14 个有
+- `LTXVScheduler` —— 12/14 个有
+- `LatentUpscaleModelLoader` —— 12/14 个有
+- `LTXVChunkFeedForward` —— 9/14 个有
+- `LTXVImgToVideoInplace` —— 9/14 个有
+- `VRAMReserver` —— 8/14 个有
+- `LoraLoaderModelOnly` —— 6/14 个有
+- `easy showAnything` —— 6/14 个有
+- `LTXVCropGuides` —— 5/14 个有
+- `LTXVImgToVideoInplaceKJ` —— 5/14 个有
+- `JWFloat` —— 3/14 个有
+- `JWIntegerToString` —— 3/14 个有
+- `1hew_AudioDuration` —— 1/14 个有
+- `Bjornulf_FreeVRAM` —— 1/14 个有
+- `CR Text` —— 1/14 个有
+- `Fast Groups Muter (rgthree)` —— 1/14 个有
+- `FlashVSRInitPipe` —— 1/14 个有
+- `FlashVSRNodeAdv` —— 1/14 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/14 个有
+- `MelBandRoFormerModelLoader` —— 1/14 个有
+- `MelBandRoFormerSampler` —— 1/14 个有
+- `SaveAudioMP3` —— 1/14 个有
+- `TTResolutionSelector` —— 1/14 个有
+- `UNETLoader` —— 1/14 个有
+- `VHS_LoadVideo` —— 1/14 个有
+- `easy anythingIndexSwitch` —— 1/14 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 14 | 57% |
-| Prompt 约束强度(CFG) | 6 | 4 - 8 | 14 | 76% |
-| 采样算法 | 1 | 1 - 1 | 14 | 100% |
-| 调度器 | euler | - | 14 | 71% |
-| 重绘幅度 | simple | - | 14 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,8 +94,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，14 个样本，一致性 57%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 4 - 8，14 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，14 个样本，一致性 71%
-- 重绘幅度 最常用 simple，14 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,59 +1,36 @@
 ---
 name: unknown_workflow_generic_312
 type: Unknown Workflow
-frequency: 8
+frequency: 9
 level: moderate
-coverage: 0.4995
-common_nodes: [CM_IntUnaryOperation, GetImageSizeAndCount, GetNode, ImageBatchMulti, ImageLoader, ImageScaleToTotalPixels, MemoryCleaner, PreviewImage, Qwen3VL_Advanced, RH_LLMAPI_NODE, SaveImage, SetNode, SimpleMath+, StringFunction|pysssss, easy anythingIndexSwitch, easy anythingInversedSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything]
+coverage: 0.618222
+common_nodes: [RH_RhartImageG2TextToImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-全能图片G- Image 2.0_2085944675277557762.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片 pro_2006302920123355137.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2062216759503052802.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2066055875628167168.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 1.5_2008194109030277121.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 2.0_2062203582530801665.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 2.0_2066055876622217216.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片_2006195630225498113.json]
+members: [图片生成/文生图/A-2 文生图像 真实人像 2k输出 全能图片全能图片G-image2_2083586674927423490.json, 图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100196762312073217.json, 图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101872182837207042.json, 图片生成/文生图/文生图像+真实人像+2k输出+全能图片全能图片G-image2_2086637409588047874.json, 图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100874432259641346.json, 图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101139696062648322.json, 视频生成/文生视频/RH_万相3.0-图生视频_2098945972377309186.json, 视频生成/文生视频/RH_万相3.0-图生视频_2099058093874307074.json, 视频生成/文生视频/RH_万相3.0-图生视频_2099682872125906946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_312
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-全能图片G- Image 2.0_2085944675277557762.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片 pro_2006302920123355137.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2062216759503052802.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片2_2066055875628167168.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-全能图片G- Image 1.5_2008194109030277121.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/A-2 文生图像 真实人像 2k输出 全能图片全能图片G-image2_2083586674927423490.json、图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100196762312073217.json、图片生成/文生图/A-2_文生图像_真实人像_2k输出_全能图片全能图片G-image2_2101872182837207042.json、图片生成/文生图/文生图像+真实人像+2k输出+全能图片全能图片G-image2_2086637409588047874.json、图片生成/文生图/文生图像_真实人像_2k输出_全能图片全能图片G-image2_2100874432259641346.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CM_IntUnaryOperation`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageBatchMulti`
-- `ImageLoader`
-- `ImageScaleToTotalPixels`
-- `MemoryCleaner`
-- `PreviewImage`
-- `Qwen3VL_Advanced`
-- `RH_LLMAPI_NODE`
+全部 9 个 workflow 都包含：
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
-- `SetNode`
-- `SimpleMath+`
-- `StringFunction|pysssss`
-- `easy anythingIndexSwitch`
-- `easy anythingInversedSwitch`
-- `easy int`
-- `easy positive`
-- `easy saveText`
-- `easy seed`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveString` —— 7/8 个有
-- `ImageConcanate` —— 5/8 个有
-- `RH_LLMAPI_Pro_Node` —— 3/8 个有
-- `RH_RhartImageG2ImageToImage` —— 3/8 个有
-- `RH_RhartImageNG31FlashImageToImage` —— 2/8 个有
-- `RH_GPT_Image15` —— 1/8 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/8 个有
-- `RH_Nano_Banana_Image2Image` —— 1/8 个有
+- `PIP_StringConcatenation` —— 6/9 个有
+- `easy positive` —— 6/9 个有
+- `EmptyImage` —— 5/9 个有
+- `PreviewImage` —— 5/9 个有
 
 ## 典型参数
 

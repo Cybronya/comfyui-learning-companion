@@ -1,38 +1,35 @@
 ---
 name: unknown_workflow_video_39
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.97225
-common_nodes: [LatentSyncNode, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.869143
+common_nodes: [RIFE VFI, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/上传视频对口型Latentsync1.5=艾橘溪_1902669964103561217.json, 数字人/数字人/简易版快速无遮挡_少量遮挡对口型_2050875271661793281.json, 数字人/数字人/精准视频口型同步，保持脸部特征，只需一段原视频 + 一段目标音频_2046494511848755201.json, 视频生成/图生视频/精准视频口型同步，保持脸部特征，只需一段原视频 + 一段目标音频_2068726028138278913.json]
+members: [平台全量/RIFE VFI 视频补帧_1942069598047072258.json, 平台全量/RIFE插帧到50FPS_1957442274726703105.json, 平台全量/RIFE插帧到50FPS_2043588139872161794.json, 平台全量/山口组-视频补帧_1952275618396319746.json, 平台全量/视频补帧_1898596874062876674.json, 平台全量/视频补帧工具_1999743314691751938.json, 视频生成/图生视频/（2倍补帧）16帧到32帧_1978659630287048706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_39
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/上传视频对口型Latentsync1.5=艾橘溪_1902669964103561217.json、数字人/数字人/简易版快速无遮挡_少量遮挡对口型_2050875271661793281.json、数字人/数字人/精准视频口型同步，保持脸部特征，只需一段原视频 + 一段目标音频_2046494511848755201.json、视频生成/图生视频/精准视频口型同步，保持脸部特征，只需一段原视频 + 一段目标音频_2068726028138278913.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/RIFE VFI 视频补帧_1942069598047072258.json、平台全量/RIFE插帧到50FPS_1957442274726703105.json、平台全量/RIFE插帧到50FPS_2043588139872161794.json、平台全量/山口组-视频补帧_1952275618396319746.json、平台全量/视频补帧_1898596874062876674.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：97%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `LatentSyncNode`
-- `LoadAudio`
+全部 7 个 workflow 都包含：
+- `RIFE VFI`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `VideoLengthAdjuster` —— 3/4 个有
-- `JWImageResizeByLongerSide` —— 1/4 个有
-- `LayerUtility: PurgeVRAM` —— 1/4 个有
+- `Int` —— 2/7 个有
+- `VHS_VideoInfo` —— 2/7 个有
 
 ## 典型参数
 

@@ -1,89 +1,81 @@
 ---
 name: text_to_image_lora_sampler_clip_59
 type: Text To Image
-frequency: 16
+frequency: 18
 level: strong
-coverage: 0.922813
-common_nodes: [AutoCropFaces, CLIPLoader, CLIPTextEncode, EmptyLatentImage, GetNode, Image Paste Crop, ImageAndMaskPreview, KSampler, LayerMask: SegformerB2ClothesUltra, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, easy int]
+coverage: 0.835056
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z-image-指定人物换脸+换发型_2010967930858639361.json, 图片生成/图生图/Z-image图生图 抖音小唐_2062237608138338305.json, 图片生成/图生图/图生图+指定人脸+Z-image=B站艾橘溪_2010655204034744322.json, 图片生成/图生图/指定人脸文生图_2057260510957096961.json, 图片生成/文生图/Krea2指定人脸图文生图_2071804070330982401.json, 图片生成/文生图/Z-Image 指定人脸文生图_2019605439574450177.json, 图片生成/文生图/Z-image 指定人脸 文生图=B站艾橘溪_1993965350142279682.json, 图片生成/文生图/Z-image指定人脸+参考文生图_2084211147854671873.json, 图片生成/文生图/Z-image指定人脸图文生图_2019947738347085825.json, 图片生成/文生图/指定人脸文生图 Z-image+Qwen双取样 （非人物lora）_2057702162876162050.json, 图片生成/文生图/指定人脸文生图_2052270376771702786.json, 图片生成/文生图/指定人脸文生图_2059644270969180161.json, 图片生成/文生图/指定人脸文生图_2060303424956231681.json, 图片生成/文生图/指定人脸文生图_2060379645148749825.json, 图片生成/文生图/指定人脸文生图_2060940216315244546.json, 图片生成/文生图/指定人脸文生图_2061456401721028610.json]
+members: [图片生成/反推提示词/小说剧本转JSON预处理｜搭配全栈式短剧生成V4.2.1_2094006895131582465.json, 图片生成/反推提示词/小说剧本转JSON预处理｜搭配全栈式短剧生成V4.2.1_2114994520722075649.json, 图片生成/反推提示词/小说剧本转标准JSON预处理搭配全栈式短剧生成V4.2.1使用工具_2105783383883345922.json, 图片生成/反推提示词/小说剧本转标准JSON预处理｜搭配全栈式短剧生成V4.2.1_2093770324671287297.json, 图片生成/反推提示词/小说剧本转标准JSON预处理｜搭配全栈式短剧生成_2097941412695330818.json, 图片生成/反推提示词/视频反推出SKILL-LLM提示词｜看片秒拆解运镜与文案_2111279373436407809.json, 图片生成/反推提示词/视频反推出SKILL-LLM，反推提示词一键提取_2111613256925274114.json, 图片生成/图生图/AI视频变现途径汇总｜推理应用持续更新指南_2092001114597187585.json, 图片生成/图生图/Z-Image turbo文生图｜又快又好秒出高质量图片_2101537574203514882.json, 图片生成/图生图/ins风手持特写LoRA｜穿戴甲图生图重绘不翻车_2097146065999974401.json, 图片生成/图生图/九宫格角色多动作生成｜三视图参考角色表演图生图_2095588740323438593.json, 图片生成/图生图/九宫格角色部件生成｜三视图参考角色设计图生图_2095585736509714434.json, 图片生成/图生图/全能图片V2图生图官方版｜提示词优化稳定出图新手放心用_2106213567543472129.json, 图片生成/图生图/全能图片V2图生图官方稳定版提示词优化工作流，图生图处理方案_2106513907606188034.json, 图片生成/图生图/头像特写角色多表情九宫格｜三视图参考角色设计_2095590124624109570.json, 图片生成/图生图/宠物+坐骑生成器九宫格｜带参考图角色设计_2095254229475745794.json, 图片生成/图生图/角色多动作九宫格｜带角色图参考动作设计生成_2095249943421345794.json, 图片生成/图生图/角色部件九宫格生成｜带角色图参考三视图可用_2095247137901731842.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_59
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/Z-image-指定人物换脸+换发型_2010967930858639361.json、图片生成/图生图/Z-image图生图 抖音小唐_2062237608138338305.json、图片生成/图生图/图生图+指定人脸+Z-image=B站艾橘溪_2010655204034744322.json、图片生成/图生图/指定人脸文生图_2057260510957096961.json、图片生成/文生图/Krea2指定人脸图文生图_2071804070330982401.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/反推提示词/小说剧本转JSON预处理｜搭配全栈式短剧生成V4.2.1_2094006895131582465.json、图片生成/反推提示词/小说剧本转JSON预处理｜搭配全栈式短剧生成V4.2.1_2114994520722075649.json、图片生成/反推提示词/小说剧本转标准JSON预处理搭配全栈式短剧生成V4.2.1使用工具_2105783383883345922.json、图片生成/反推提示词/小说剧本转标准JSON预处理｜搭配全栈式短剧生成V4.2.1_2093770324671287297.json、图片生成/反推提示词/小说剧本转标准JSON预处理｜搭配全栈式短剧生成_2097941412695330818.json…）
 
 - **类型**：Text To Image
-- **样本数**：16
+- **样本数**：18
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `AutoCropFaces`
+全部 18 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `GetNode`
-- `Image Paste Crop`
-- `ImageAndMaskPreview`
+- `JjkText`
 - `KSampler`
-- `LayerMask: SegformerB2ClothesUltra`
-- `LayerUtility: ImageRemoveAlpha`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy int`
+- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 15/16 个有
-- `JjkText` —— 15/16 个有
-- `AILab_QwenVL` —— 3/16 个有
-- `ImageScaleDownToSize` —— 3/16 个有
-- `CR Text` —— 1/16 个有
-- `DuckQREncodeNode` —— 1/16 个有
-- `HAIGC_SaveImagesToZip` —— 1/16 个有
-- `easy showAnything` —— 1/16 个有
-- `llama_cpp_instruct_adv` —— 1/16 个有
-- `llama_cpp_model_loader` —— 1/16 个有
-- `llama_cpp_parameters` —— 1/16 个有
+- `孤海注释` —— 17/18 个有
+- `RHLLMChatNode` —— 15/18 个有
+- `PreviewAny` —— 13/18 个有
+- `SaveImage` —— 11/18 个有
+- `PrimitiveStringMultiline` —— 10/18 个有
+- `LoadImage` —— 9/18 个有
+- `1hew_ImageGridSplit` —— 6/18 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 6/18 个有
+- `SaveText` —— 5/18 个有
+- `easy saveText` —— 3/18 个有
+- `EmptySD3LatentImage` —— 2/18 个有
+- `GoohaiDisplayAny` —— 2/18 个有
+- `LoadVideo` —— 2/18 个有
+- `RH_RhartImageG2ImageToImage` —— 2/18 个有
+- `TextEncodeQwenImageEditPlus` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 6 - 10 | 16 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
-| 采样算法 | euler | - | 16 | 94% |
-| 调度器 | simple | - | 16 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
-| 宽度 | 1024 | 720 - 1024 | 16 | 93% |
-| 高度 | 1536 | 1280 - 1536 | 16 | 96% |
+| 宽度 | 80 | 80 - 80 | 18 | 100% |
+| 高度 | 80 | 80 - 80 | 18 | 100% |
+| 采样步数 | 4 | 4 - 4 | 18 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 18 | 100% |
+| 采样算法 | er_sde | - | 18 | 100% |
+| 调度器 | beta | - | 18 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 17/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 19/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 6 - 10，16 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，16 个样本，一致性 94%
-- 调度器 最常用 simple，16 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 720 - 1024，16 个样本，取值集中（一致性 93%）
-- 高度 中位数 1536，观测区间 1280 - 1536，16 个样本，取值集中（一致性 96%）
-- 高发问题（17/16 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，18 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，18 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，18 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，18 个样本，一致性 100%
+- 调度器 最常用 beta，18 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 高发问题（19/18 个样本）：Steps较低可能导致细节不足

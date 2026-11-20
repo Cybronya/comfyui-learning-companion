@@ -1,43 +1,36 @@
 ---
 name: unknown_workflow_video_7
 type: Unknown Workflow
-frequency: 9
+frequency: 11
 level: moderate
-coverage: 1
-common_nodes: [GrowMask, INTConstant, ImageBatch, ImageCompositeMasked, ImageResizeKJv2, ImageToMask, InvertMask, LayerColor: BrightnessContrastV2, LoadAudio, LoadImage, LoadImageMask, MaskBlur+, RepeatImageBatch, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.857182
+common_nodes: [RTXVideoSuperResolution, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/vlog滑屏转场_2013490499956514818.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_1959597724477894657.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2011235737471029250.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2031202509624184834.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2039877279874031617.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2050882588805480449.json, 视频生成/图生视频/抖音剪映同款滑屏转场视频_2057267742750892033.json, 视频生成/图生视频/滑屏转场视频_2059150379807494146.json, 视频生成/文生视频/抖音剪映同款滑屏转场视频_1961976286589730817.json]
+members: [图片生成/文生图/RTX_VSR_视频放大工作流_v1_2114995593851531266.json, 平台全量/(超好用秒级视频放大)RTX Video Super Resolution_2032280050338369537.json, 平台全量/MiniMax H3 RTX Video Super Resolution秒级视频放大_2084900714454802433.json, 平台全量/MiniMax H3 RTX Video Super Resolution秒级视频放大_2084915445202776065.json, 平台全量/RTX VSR 视频放大工作流 v1_2108097410663804929.json, 平台全量/RTX Video Super -视频秒级放大-ComfyUI工作流_2033591439703150593.json, 平台全量/RTX Video Super Resolution秒级视频放大_2032093104060239873.json, 平台全量/RTX视频高清放大(超快)_2034634293573586946.json, 平台全量/叨叨💗RTX视频放大工作流注释版_2097514228667211778.json, 平台全量/最好用的视频放大工具_2045681614260277249.json, 视频生成/图生视频/空白工作流_2080511384617578498.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_7
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/vlog滑屏转场_2013490499956514818.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_1959597724477894657.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2011235737471029250.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2031202509624184834.json、视频生成/图生视频/抖音剪映同款滑屏转场视频_2039877279874031617.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/RTX_VSR_视频放大工作流_v1_2114995593851531266.json、平台全量/(超好用秒级视频放大)RTX Video Super Resolution_2032280050338369537.json、平台全量/MiniMax H3 RTX Video Super Resolution秒级视频放大_2084900714454802433.json、平台全量/MiniMax H3 RTX Video Super Resolution秒级视频放大_2084915445202776065.json、平台全量/RTX VSR 视频放大工作流 v1_2108097410663804929.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `GrowMask`
-- `INTConstant`
-- `ImageBatch`
-- `ImageCompositeMasked`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `InvertMask`
-- `LayerColor: BrightnessContrastV2`
-- `LoadAudio`
-- `LoadImage`
-- `LoadImageMask`
-- `MaskBlur+`
-- `RepeatImageBatch`
+全部 11 个 workflow 都包含：
+- `RTXVideoSuperResolution`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+
+**可变部分**（部分 workflow 才有）：
+- `VHS_VideoInfo` —— 8/11 个有
+- `孤海注释` —— 3/11 个有
+- `Float` —— 2/11 个有
 
 ## 典型参数
 

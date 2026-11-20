@@ -1,82 +1,76 @@
 ---
 name: image_to_image_lora_sampler_unet_53
 type: Image To Image
-frequency: 10
-level: weak
-coverage: 0.7663
-common_nodes: [CFGNorm, CLIPLoader, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+frequency: 12
+level: strong
+coverage: 0.90475
+common_nodes: [CFGNorm, CLIPLoader, ImageStitch, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditEnhanced, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image Edit 2511 3张参考图生图_2078472969151668226.json, 图片生成/图生图/Qwen edit 2511单图多角度 短剧 动漫 专用_2041503056172425217.json, 图片生成/图生图/Qwen edit 2511单图多角度_2010230488669102081.json, 图片生成/图生图/Qwen-Camera_2068695632642142209.json, 图片生成/图生图/Qwen-Edit-2511 场景多角度工作流_2091522931443716097.json, 图片生成/图生图/firered-image-edit-1.1官方发布版_2030518527010021378.json, 图片生成/图生图/image_firered_image_edit1_图生图_2032289203324723201.json, 图片生成/图生图/一键生成多角度（八角度）+全节点注释_2053298166606376961.json, 图片生成/图生图/九宫格_2114550968254820353.json, 图片生成/图生图/人像换发工作流_8hair_2085998735972192257.json]
+members: [图片生成/图生图/多图融合Qwen-Image-Edit图像编辑_1958033725604900866.json, 图片生成/图生图/打光-Qwen-Image-Edit图像编辑_1959152314194014209.json, 图片生成/图生图/文字编辑设计-Qwen-Image-Edit图像编辑_1958318280551370754.json, 图片生成/图生图/文字编辑设计-Qwen-Image-Edit图像编辑_1973274791648038914.json, 图片生成/图生图/服装加模特-Qwen-Image-Edit图像编辑_1958680755813642241.json, 图片生成/图生图/电商手提包溶图-Put-It-Here-Qwen-8步加速版_1964254396915830786.json, 图片生成/图生图/电商手提包溶图-Put-It-Here-Qwen版_1962153400169381889.json, 图片生成/图生图/电商服装溶图-Put-It-Here-Qwen版_1962134309098471425.json, 图片生成/图生图/耳坠珠宝溶图-Put-It-Here-Qwen版_1962130346370383874.json, 图片生成/图生图/转换视角-Qwen-Image-Edit图像编辑_1957970150108577793.json, 图片生成/图生图/转绘-Qwen-Image-Edit图像编辑_1957815011857068034.json, 平台全量/千问融图lora（put it here）_1967228752080015361.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_53
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen Image Edit 2511 3张参考图生图_2078472969151668226.json、图片生成/图生图/Qwen edit 2511单图多角度 短剧 动漫 专用_2041503056172425217.json、图片生成/图生图/Qwen edit 2511单图多角度_2010230488669102081.json、图片生成/图生图/Qwen-Camera_2068695632642142209.json、图片生成/图生图/Qwen-Edit-2511 场景多角度工作流_2091522931443716097.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/多图融合Qwen-Image-Edit图像编辑_1958033725604900866.json、图片生成/图生图/打光-Qwen-Image-Edit图像编辑_1959152314194014209.json、图片生成/图生图/文字编辑设计-Qwen-Image-Edit图像编辑_1958318280551370754.json、图片生成/图生图/文字编辑设计-Qwen-Image-Edit图像编辑_1973274791648038914.json、图片生成/图生图/服装加模特-Qwen-Image-Edit图像编辑_1958680755813642241.json…）
 
 - **类型**：Image To Image
-- **样本数**：10
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `FluxKontextImageScale`
+- `ImageStitch`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditEnhanced`
 - `UNETLoader`
+- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEDecode` —— 9/10 个有
-- `ComfySwitchNode` —— 6/10 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 6/10 个有
-- `PrimitiveBoolean` —— 6/10 个有
-- `PrimitiveFloat` —— 6/10 个有
-- `PrimitiveInt` —— 6/10 个有
-- `PreviewAny` —— 4/10 个有
-- `QwenMultiangleCameraNode` —— 3/10 个有
-- `ReferenceLatent` —— 2/10 个有
-- `CR Prompt List` —— 1/10 个有
-- `CustomCombo` —— 1/10 个有
-- `ImageBatch` —— 1/10 个有
-- `JsonExtractString` —— 1/10 个有
-- `PreviewImage` —— 1/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
-- `StringConcatenate` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
-- `VAEDecodeTiled` —— 1/10 个有
+- `Text Multiline` —— 11/12 个有
+- `ImageScaleDownToSize` —— 10/12 个有
+- `TextEncodeQwenImageEdit` —— 10/12 个有
+- `FastCanvas` —— 5/12 个有
+- `FastCanvasTool` —— 5/12 个有
+- `easy imageRemBg` —— 5/12 个有
+- `PreviewImage` —— 4/12 个有
+- `Anything Everywhere3` —— 1/12 个有
+- `CR SDXL Aspect Ratio` —— 1/12 个有
+- `GetImageSizeAndCount` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
+- `PrimitiveStringMultiline` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 30 | 4 - 40 | 10 | 29% |
-| Prompt 约束强度(CFG) | 3 | 1 - 8 | 10 | 29% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 20 | 8 - 20 | 12 | 77% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 12 | 83% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 4/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 1/10 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 1/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 30，观测区间 4 - 40，10 个样本，取值分散，一致性仅 29%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 8，10 个样本，取值分散，一致性仅 29%
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 8 - 20，12 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，12 个样本，取值集中（一致性 83%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）

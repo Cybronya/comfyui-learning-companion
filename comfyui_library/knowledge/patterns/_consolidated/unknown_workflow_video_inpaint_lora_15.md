@@ -1,79 +1,90 @@
 ---
 name: unknown_workflow_video_inpaint_lora_15
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5575
-common_nodes: [Any Switch (rgthree), ApplyFaceProcessor, DWPreprocessor, DeepTranslatorTextNode, DepthAnythingV2Preprocessor, FaceProcessorLoader, Fast Groups Muter (rgthree), GetImageSizeAndCount, GetNode, INPAINT_MaskedFill, ImageResizeKJ, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PreviewImage, PrimitiveString, PrimitiveStringMultiline, RMBG, SetNode, StringConcatenate, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddStandInLatent, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy seed]
+frequency: 4
+level: moderate
+coverage: 0.6165
+common_nodes: [Any Switch (rgthree), Fast Groups Bypasser (rgthree), Florence2ModelLoader, Florence2Run, GetImageSizeAndCount, GetNode, GoogleTranslateTextNode, GrowMask, INPAINT_MaskedFill, ImageResizeKJ, InvertMask, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: SegmentAnythingUltra V2, LoadWanVideoT5TextEncoder, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader, WanVideoVRAMManagement, easy int, easy positive, easy seed]
 problems: []
 missing: []
-members: [视频生成/图生视频/姿态+深度+遮罩视频三合一Stand-IN加vace控制 人物一致性_1959568027425648642.json, 视频生成/文生视频/Stand-IN 脸部一致性+视频换脸动作模仿_1959234838102487041.json]
+members: [平台全量/VACE_14B_局部编辑_1929828983905402881.json, 平台全量/啦啦啦_1948582029391736833.json, 平台全量/电商视频换景(文字转场景)_1972191247278534658.json, 平台全量/视频完美换背景(支持3D动画_CG等)_20251010_1976540683588771841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_inpaint_lora_15
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/姿态+深度+遮罩视频三合一Stand-IN加vace控制 人物一致性_1959568027425648642.json、视频生成/文生视频/Stand-IN 脸部一致性+视频换脸动作模仿_1959234838102487041.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/VACE_14B_局部编辑_1929828983905402881.json、平台全量/啦啦啦_1948582029391736833.json、平台全量/电商视频换景(文字转场景)_1972191247278534658.json、平台全量/视频完美换背景(支持3D动画_CG等)_20251010_1976540683588771841.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `Any Switch (rgthree)`
-- `ApplyFaceProcessor`
-- `DWPreprocessor`
-- `DeepTranslatorTextNode`
-- `DepthAnythingV2Preprocessor`
-- `FaceProcessorLoader`
-- `Fast Groups Muter (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Florence2ModelLoader`
+- `Florence2Run`
 - `GetImageSizeAndCount`
 - `GetNode`
+- `GoogleTranslateTextNode`
+- `GrowMask`
 - `INPAINT_MaskedFill`
 - `ImageResizeKJ`
-- `ImageResizeKJv2`
-- `LoadImage`
+- `InvertMask`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerMask: SegmentAnythingUltra V2`
 - `LoadWanVideoT5TextEncoder`
-- `Mute / Bypass Relay (rgthree)`
-- `Mute / Bypass Repeater (rgthree)`
 - `PreviewImage`
-- `PrimitiveString`
-- `PrimitiveStringMultiline`
-- `RMBG`
 - `SetNode`
-- `StringConcatenate`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddStandInLatent`
+- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
 - `WanVideoEnhanceAVideo`
 - `WanVideoExperimentalArgs`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
+- `WanVideoVRAMManagement`
 - `easy int`
+- `easy positive`
 - `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Bookmark (rgthree)` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `Note Plus (mtb)` —— 1/2 个有
+- `DownloadAndLoadSAM2Model` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 3/4 个有
+- `GetImageSize+` —— 3/4 个有
+- `ImageFromBatch` —— 3/4 个有
+- `JoinStrings` —— 3/4 个有
+- `MaskToImage` —— 3/4 个有
+- `PointsEditor` —— 3/4 个有
+- `ResizeMask` —— 3/4 个有
+- `Sam2Segmentation` —— 3/4 个有
+- `String Literal` —— 3/4 个有
+- `Bookmark (rgthree)` —— 2/4 个有
+- `ImageConcatMulti` —— 2/4 个有
+- `ImageResizeKJv2` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `MathExpression|pysssss` —— 2/4 个有
+- `Mute / Bypass Relay (rgthree)` —— 2/4 个有
+- `Mute / Bypass Repeater (rgthree)` —— 2/4 个有
+- `DrawMaskOnImage` —— 1/4 个有
+- `Label (rgthree)` —— 1/4 个有
+- `WanVideoLoraSelectMulti` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `easy clearCacheAll` —— 1/4 个有
 
 ## 典型参数
 
@@ -85,4 +96,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

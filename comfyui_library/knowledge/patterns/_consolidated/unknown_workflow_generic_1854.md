@@ -3,33 +3,44 @@ name: unknown_workflow_generic_1854
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [IndexTTS2Run, LoadAudio, SaveAudioMP3]
+coverage: 0.906
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), Image Batch, ImageConcanate, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, Text List, ToString]
 problems: []
 missing: []
-members: [音频生成/音频生成/workflow_indextts2_2000246293031251970.json, 音频生成/音频生成/声音克隆工作流_2040843674761826305.json]
+members: [图片生成/文生图/可乐-小说剧本生成分镜提示词_2008160689906520065.json, 视频生成/图生视频/可乐-漫剧分镜生成视频_2008539333560639489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1854
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/workflow_indextts2_2000246293031251970.json、音频生成/音频生成/声音克隆工作流_2040843674761826305.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/可乐-小说剧本生成分镜提示词_2008160689906520065.json、视频生成/图生视频/可乐-漫剧分镜生成视频_2008539333560639489.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2Run`
-- `LoadAudio`
-- `SaveAudioMP3`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `Image Batch`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `PreviewImage`
+- `Text List`
+- `ToString`
 
 **可变部分**（部分 workflow 才有）：
-- `StringConstantMultiline` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `RHHiddenNodes` —— 1/2 个有
+- `RH_LLMAPI_NODE` —— 1/2 个有
+- `RH_Sora2_I2V` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `easy saveText` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,70 +1,57 @@
 ---
 name: unknown_workflow_sampler_clip_unet_348
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.927
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.9055
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein 双图_2035898098593046530.json, 图片生成/图生图/Flux2 Klein 局部重绘_2015810312481542146.json, 图片生成/图生图/Flux2 Klein 超强局部参考重绘 颜色区域_2015807913335463937.json]
+members: [图片生成/图生图/🐘Flux3_klein-图像编辑_2110934568877518850.json, 图片生成/文生图/Flux3_klein-文生图_2110997853291245569.json, 图片生成/文生图/🐘Flux3_klein-文生图_2110969244363083778.json, 平台全量/flux3_klein_多参考_2111057515210428417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_348
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 双图_2035898098593046530.json、图片生成/图生图/Flux2 Klein 局部重绘_2015810312481542146.json、图片生成/图生图/Flux2 Klein 超强局部参考重绘 颜色区域_2015807913335463937.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/🐘Flux3_klein-图像编辑_2110934568877518850.json、图片生成/文生图/Flux3_klein-文生图_2110997853291245569.json、图片生成/文生图/🐘Flux3_klein-文生图_2110969244363083778.json、平台全量/flux3_klein_多参考_2111057515210428417.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptyFlux2LatentImage`
+- `KSampler`
+- `ResolutionSelector`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 2/3 个有
-- `EmptyFlux2LatentImage` —— 2/3 个有
-- `ImpactGaussianBlurMask` —— 2/3 个有
-- `InpaintModelConditioning` —— 2/3 个有
-- `Mask Fill Holes` —— 2/3 个有
-- `MaskPreview+` —— 2/3 个有
-- `GetImageSize+` —— 1/3 个有
-- `Image Blank` —— 1/3 个有
-- `ImageCompositeMasked` —— 1/3 个有
-- `JjkText` —— 1/3 个有
-- `JoinImageWithAlpha` —— 1/3 个有
-- `LayerUtility: CropByMask V2` —— 1/3 个有
-- `Number to Float` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `Text Dictionary Get` —— 1/3 个有
-- `Text Dictionary New` —— 1/3 个有
-- `Text to Number` —— 1/3 个有
-- `easy imageSize` —— 1/3 个有
-- `scale` —— 1/3 个有
+- `Seed (rgthree)` —— 3/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `LoadImage` —— 2/4 个有
+- `ReferenceMultiLatent` —— 2/4 个有
+- `ComfySwitchNode` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `PrimitiveStringMultiline` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 16 | 16 - 16 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -72,4 +59,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 16，观测区间 16 - 16，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

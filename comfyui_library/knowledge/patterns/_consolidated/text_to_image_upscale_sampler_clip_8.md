@@ -1,31 +1,34 @@
 ---
 name: text_to_image_upscale_sampler_clip_8
 type: Text To Image
-frequency: 12
-level: moderate
-coverage: 0.86325
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
+frequency: 11
+level: weak
+coverage: 0.912182
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Image Comparer (rgthree), ImageScaleBy, KSampler, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Zimage-文生图+高清修复_2011971976901955585.json, 图片生成/文生图/Zimage_瑶光_2095722755646902273.json, 图片生成/文生图/Zimage图像修复放大_2045420770012172290.json, 图片生成/文生图/zimage图像修复放大_2032377992323801090.json, 图片生成/文生图/【短剧最佳拍档】支持场景 _ 角色【AI创客训练营】画布功能 _ 角色_2103873978132688897.json, 图片生成/文生图/【短剧最佳拍档】支持场景 _ 角色（私用）_2105937314986946562.json, 图片生成/文生图/【短剧最佳拍档】支持场景_角色_2098950780144410625.json, 图片生成/文生图/【短剧最佳拍档】支持场景_角色_2099062438128869377.json, 图片生成/文生图/【短剧最佳拍档】支持场景_角色【AI创客训练营】画布功能_角色_2114192879651479553.json, 图片生成/文生图/人物资产图_2111020921766109185.json, 图片生成/文生图/人物资产图一键生成 角色设定文生图处理生成工具_2113023431720656897.json, 图片生成/文生图/文生图写真创作工作流+4K出图_2082314053673902082.json]
+members: [图片生成/图生图/Z-IMAGE：图生图反推+高清放大_1996194694038167554.json, 图片生成/图生图/Z-Image 图生图 反推_1995485709760913410.json, 图片生成/图生图/Z-Image 图生图 反推_2005808646812565505.json, 图片生成/图生图/Z-Image+Qwen3VQA 反推图生图_1996873578433978370.json, 图片生成/图生图/Z-Image图生图反推｜人像写真提示词生成_2090906960488124417.json, 图片生成/图生图/Z-image  图生图 反推+高清放大_1997242707649183746.json, 图片生成/图生图/一键反推提示词｜Z-Image人像写真图生图_2091221735055126530.json, 图片生成/图生图/千问图像反推+Z-Image+SeedVR2 高清放大_1997203090476580866.json, 图片生成/图生图/反推提示词＋相似图片生成（图生图） 硕阳_2003404747770109954.json, 图片生成/文生图/Krea2 Turbo+RAW加速版双方案文生图处理工作流_2102150335660908546.json, 图片生成/文生图/Krea2-turbo 版+RAW加速版双方案 2026.9.20更新_2071073541021323265.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_sampler_clip_8
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/Zimage-文生图+高清修复_2011971976901955585.json、图片生成/文生图/Zimage_瑶光_2095722755646902273.json、图片生成/文生图/Zimage图像修复放大_2045420770012172290.json、图片生成/文生图/zimage图像修复放大_2032377992323801090.json、图片生成/文生图/【短剧最佳拍档】支持场景 _ 角色【AI创客训练营】画布功能 _ 角色_2103873978132688897.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Z-IMAGE：图生图反推+高清放大_1996194694038167554.json、图片生成/图生图/Z-Image 图生图 反推_1995485709760913410.json、图片生成/图生图/Z-Image 图生图 反推_2005808646812565505.json、图片生成/图生图/Z-Image+Qwen3VQA 反推图生图_1996873578433978370.json、图片生成/图生图/Z-Image图生图反推｜人像写真提示词生成_2090906960488124417.json…）
 
 - **类型**：Text To Image
-- **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：11
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 11 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `Image Comparer (rgthree)`
+- `ImageScaleBy`
 - `KSampler`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
@@ -36,53 +39,49 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 10/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 9/12 个有
-- `LoraLoaderModelOnly` —— 9/12 个有
-- `INTConstant` —— 8/12 个有
-- `ImageScaleToTotalPixels` —— 8/12 个有
-- `PreviewImage` —— 8/12 个有
-- `CR Text` —— 7/12 个有
-- `ConditioningZeroOut` —— 4/12 个有
-- `ImageScaleBy` —— 4/12 个有
-- `EmptyImage` —— 3/12 个有
-- `Text` —— 3/12 个有
-- `JjkText` —— 2/12 个有
-- `solarL_SaveImagesToZip` —— 2/12 个有
-- `孤海注释` —— 2/12 个有
-- `CLIPLoaderGGUF` —— 1/12 个有
-- `EmptySD3LatentImage` —— 1/12 个有
-- `LoadImage` —— 1/12 个有
-- `MemoryCleaner` —— 1/12 个有
-- `Resolution` —— 1/12 个有
-- `ResolutionSelector` —— 1/12 个有
-- `easy promptList` —— 1/12 个有
+- `LoadImage` —— 9/11 个有
+- `Qwen3_VQA` —— 9/11 个有
+- `ShowAnything|Mie` —— 9/11 个有
+- `VAEEncode` —— 8/11 个有
+- `GetImageSize` —— 7/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/11 个有
+- `LoraLoaderModelOnly` —— 4/11 个有
+- `Fast Groups Muter (rgthree)` —— 3/11 个有
+- `JjkText` —— 3/11 个有
+- `solarL_SaveImagesToZip` —— 3/11 个有
+- `孤海注释` —— 3/11 个有
+- `CR Text Concatenate` —— 2/11 个有
+- `PrimitiveStringMultiline` —— 2/11 个有
+- `Text` —— 2/11 个有
+- `easy clearCacheAll` —— 2/11 个有
+- `easy int` —— 2/11 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 9 | 12 | 78% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 12 | 18% |
-| 采样算法 | res_2s_ode | - | 12 | 50% |
-| 调度器 | kl_optimal | - | 12 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| 宽度 | 1080 | 80 - 1280 | 12 | 59% |
-| 高度 | 1920 | 80 - 1920 | 12 | 57% |
+| 采样步数 | 9 | 4 - 9 | 11 | 71% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 11 | 20% |
+| 采样算法 | euler | - | 11 | 55% |
+| 调度器 | simple | - | 11 | 55% |
+| 重绘幅度 | 1 | 0.9 - 1 | 11 | 97% |
+| 宽度 | 1080 | 80 - 1080 | 11 | 45% |
+| 高度 | 1920 | 80 - 1920 | 11 | 39% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 20/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 9，12 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，12 个样本，取值分散，一致性仅 18%
-- 采样算法 最常用 res_2s_ode，12 个样本，一致性 50%
-- 调度器 最常用 kl_optimal，12 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1080，观测区间 80 - 1280，12 个样本
-- 高度 中位数 1920，观测区间 80 - 1920，12 个样本
-- 高发问题（15/12 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 9，观测区间 4 - 9，11 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，11 个样本，取值分散，一致性仅 20%
+- 采样算法 最常用 euler，11 个样本，一致性 55%
+- 调度器 最常用 simple，11 个样本，一致性 55%
+- 重绘幅度 中位数 1，观测区间 0.9 - 1，11 个样本，取值集中（一致性 97%）
+- 宽度 中位数 1080，观测区间 80 - 1080，11 个样本，取值分散，一致性仅 45%
+- 高度 中位数 1920，观测区间 80 - 1920，11 个样本，取值分散，一致性仅 39%
+- 高发问题（20/11 个样本）：Steps较低可能导致细节不足

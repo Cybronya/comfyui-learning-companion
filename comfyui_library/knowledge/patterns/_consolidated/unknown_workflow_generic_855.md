@@ -3,34 +3,33 @@ name: unknown_workflow_generic_855
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.89725
-common_nodes: [LoadImage, RH_BytedanceSeedance25TokenMultimodalVideo, SaveVideo]
+coverage: 0.8875
+common_nodes: [LoadImage, PMRF, SaveImage]
 problems: []
 missing: []
-members: [视频生成/文生视频/Seedance2.5 全能视频参考模式_2086296892912263170.json, 视频生成/文生视频/Seedance2.5 全能视频参考模式_2086496516532957186.json, 视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用_2086291248247304194.json, 视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用多图参考_2089918900950622210.json]
+members: [图片生成/图生图/PMRF无损高清放大_1923636997112721410.json, 图片生成/图生图/PMRF极速高清放大_1931874084928290817.json, 平台全量/PMRF极速高清放大_2037107681281974273.json, 平台全量/啊癫 PMRF无损高清放大快速_1916497720352378882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_855
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/Seedance2.5 全能视频参考模式_2086296892912263170.json、视频生成/文生视频/Seedance2.5 全能视频参考模式_2086496516532957186.json、视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用_2086291248247304194.json、视频生成/文生视频/Seedance2.5 多模态视频 全能参考 WU电商视频专用多图参考_2089918900950622210.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/PMRF无损高清放大_1923636997112721410.json、图片生成/图生图/PMRF极速高清放大_1931874084928290817.json、平台全量/PMRF极速高清放大_2037107681281974273.json、平台全量/啊癫 PMRF无损高清放大快速_1916497720352378882.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_BytedanceSeedance25TokenMultimodalVideo`
-- `SaveVideo`
+- `PMRF`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 3/4 个有
-- `Text` —— 2/4 个有
-- `孤海注释` —— 2/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
 
 ## 典型参数
 

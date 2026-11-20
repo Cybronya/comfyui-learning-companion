@@ -1,36 +1,37 @@
 ---
 name: unknown_workflow_generic_754
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.86975
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_RhartImageNProOfficialEdit, SaveImage]
+coverage: 0.8914
+common_nodes: [CR Text, LoadAudio, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片PRO-图像编辑-图生图-官方稳定版_2076499871443542018.json, 图片生成/图生图/全能图片PRO-图像编辑（官方稳定版-RH-OpenAPI）_2081912537196617729.json, 图片生成/图生图/全能图片PRO-图生图-官方稳定版一键生成_2113651433215193089.json, 图片生成/文生图/全能图片PRO-图像编辑-图生图-官方稳定版_2075940116257927169.json]
+members: [数字人/数字人/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2071218252579172354.json, 音频生成/音频生成/VoxCPM2-音频合成-v5.0_2049766179509678081.json, 音频生成/音频生成/VoxCPM2声音克隆-用提示词控制：情绪、语气、声调_2060738565843275777.json, 音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json, 音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_754
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片PRO-图像编辑-图生图-官方稳定版_2076499871443542018.json、图片生成/图生图/全能图片PRO-图像编辑（官方稳定版-RH-OpenAPI）_2081912537196617729.json、图片生成/图生图/全能图片PRO-图生图-官方稳定版一键生成_2113651433215193089.json、图片生成/文生图/全能图片PRO-图像编辑-图生图-官方稳定版_2075940116257927169.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2071218252579172354.json、音频生成/音频生成/VoxCPM2-音频合成-v5.0_2049766179509678081.json、音频生成/音频生成/VoxCPM2声音克隆-用提示词控制：情绪、语气、声调_2060738565843275777.json、音频生成/音频生成/VoxCPM2声音控制_声音设计_声音克隆_情绪控制_语种_方言_2046975350021820418.json、音频生成/音频生成/带情绪音频生成  VoxCPM2声音克隆 用提示词控制：情绪、语气、声调_2069262410829094913.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadImage`
-- `RH_RhartImageNProOfficialEdit`
-- `SaveImage`
+全部 5 个 workflow 都包含：
+- `CR Text`
+- `LoadAudio`
+- `RunningHub_VoxCPM_Generate`
+- `RunningHub_VoxCPM_LoadModel`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 2/4 个有
-- `Text` —— 1/4 个有
+- `SaveAudioMP3` —— 2/5 个有
+- `easy boolean` —— 2/5 个有
 
 ## 典型参数
 

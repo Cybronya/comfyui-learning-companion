@@ -1,37 +1,35 @@
 ---
 name: unknown_workflow_sampler_clip_unet_380
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.771
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.96075
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX-2-klein 文生图+图片编辑汇总_2012040681329532930.json, 图片生成/文生图/FLUX2-Klein多图编辑_2042101150391996418.json, 数字人/数字人/Flux2 Klein 增强细节 动漫转真实照片_2048302003553570818.json]
+members: [平台全量/TUT-高清放大2K工作流[Klein+SeedVR2]-2026-09-20_2100321394654535682.json, 平台全量/ai追色工作流（klein）_2015024392371179521.json, 平台全量/klein产品换色工作流（指定颜色）_2020482071218626562.json, 平台全量/klein去除图片中的字幕_水印_1938640988111822849.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_380
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/FLUX-2-klein 文生图+图片编辑汇总_2012040681329532930.json、图片生成/文生图/FLUX2-Klein多图编辑_2042101150391996418.json、数字人/数字人/Flux2 Klein 增强细节 动漫转真实照片_2048302003553570818.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/TUT-高清放大2K工作流[Klein+SeedVR2]-2026-09-20_2100321394654535682.json、平台全量/ai追色工作流（klein）_2015024392371179521.json、平台全量/klein产品换色工作流（指定颜色）_2020482071218626562.json、平台全量/klein去除图片中的字幕_水印_1938640988111822849.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `Image Comparer (rgthree)`
+- `GetImageSize`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
@@ -43,18 +41,19 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `GetNode` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `FluxGuidance` —— 1/3 个有
-- `GetImageSize` —— 1/3 个有
-- `ImpactImageInfo` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `ModelPatchTorchSettings` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `PlaySound|pysssss` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 3/4 个有
+- `ttN text` —— 3/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `Text Concatenate` —— 2/4 个有
+- `easy showAnything` —— 2/4 个有
+- `AILab_QwenVL` —— 1/4 个有
+- `ConditioningZeroOut` —— 1/4 个有
+- `FL_ColorPicker` —— 1/4 个有
+- `ImageSharpen` —— 1/4 个有
+- `LayerColor: ColorAdapter` —— 1/4 个有
+- `SeedVR2` —— 1/4 个有
+- `SeedVR2BlockSwap` —— 1/4 个有
+- `SeedVR2ExtraArgs` —— 1/4 个有
 
 ## 典型参数
 

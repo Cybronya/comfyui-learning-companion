@@ -3,36 +3,29 @@ name: unknown_workflow_generic_1845
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.775
-common_nodes: [CR Prompt Text, PreviewAny, SaveAudio, YuE2Loader, YuE2Plan, YuE2Render, YuE2SamplingConfig]
+coverage: 0.667
+common_nodes: [JjkText, RH_RhartImageG2OfficialTextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/YuE2转谱改音乐工作流_2099421704312410113.json, 音频生成/音频生成/Yue2转谱修改音乐_2098277049503928321.json]
+members: [图片生成/文生图/全能图片G2.0语言驱动 • 视觉生成引擎：让想象成为可计算的现实_2047248415515484161.json, 图片生成/文生图/文生图，G-2稳定版_2086241484625506305.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1845
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/YuE2转谱改音乐工作流_2099421704312410113.json、音频生成/音频生成/Yue2转谱修改音乐_2098277049503928321.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片G2.0语言驱动 • 视觉生成引擎：让想象成为可计算的现实_2047248415515484161.json、图片生成/文生图/文生图，G-2稳定版_2086241484625506305.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `PreviewAny`
-- `SaveAudio`
-- `YuE2Loader`
-- `YuE2Plan`
-- `YuE2Render`
-- `YuE2SamplingConfig`
-
-**可变部分**（部分 workflow 才有）：
-- `ShellAgentPluginOutputText` —— 1/2 个有
+- `JjkText`
+- `RH_RhartImageG2OfficialTextToImage`
+- `SaveImage`
 
 ## 典型参数
 

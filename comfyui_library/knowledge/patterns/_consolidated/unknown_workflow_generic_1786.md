@@ -3,36 +3,34 @@ name: unknown_workflow_generic_1786
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8335
-common_nodes: [AudioCrop, LoadAudio, LoadImage, PrimitiveStringMultiline, SaveAudio, SaveAudioMP3]
+coverage: 0.7085
+common_nodes: [LoadImage, PrimitiveStringMultiline, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/DMOSpeech2声音极速克隆_1955416782771294210.json, 音频生成/音频生成/声音克隆IndexTTS2史上最强音色克隆带语气_2074293742135242753.json]
+members: [图片生成/图生图/自拍照片一键生成证件照_1964754703668137985.json, 平台全量/电商详情页工作流｜全能图片 2 产品图转详情页 卖点排版一键出图_2099304191633223682.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1786
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/DMOSpeech2声音极速克隆_1955416782771294210.json、音频生成/音频生成/声音克隆IndexTTS2史上最强音色克隆带语气_2074293742135242753.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/自拍照片一键生成证件照_1964754703668137985.json、平台全量/电商详情页工作流｜全能图片 2 产品图转详情页 卖点排版一键出图_2099304191633223682.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AudioCrop`
-- `LoadAudio`
 - `LoadImage`
 - `PrimitiveStringMultiline`
-- `SaveAudio`
-- `SaveAudioMP3`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 1/2 个有
-- `RunningHub DMOSpeech2` —— 1/2 个有
+- `PrimitiveString` —— 1/2 个有
+- `StringReplace` —— 1/2 个有
 
 ## 典型参数
 

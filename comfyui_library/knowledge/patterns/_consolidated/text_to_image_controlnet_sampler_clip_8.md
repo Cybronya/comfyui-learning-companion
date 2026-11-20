@@ -1,58 +1,67 @@
 ---
 name: text_to_image_controlnet_sampler_clip_8
 type: Text To Image
-frequency: 6
-level: strong
-coverage: 0.967
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ControlNetLoader, EmptyLatentImage, KSampler, LoadImage, SaveImage, VAEDecode, VAELoader]
+frequency: 8
+level: moderate
+coverage: 0.8505
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, EmptyLatentImage, KSampler, LoadImage, SaveImage, VAEDecode]
 problems: []
 missing: []
-members: [图片生成/图生图/根据提示词合并两张图片（简单工作流）_2068647438591807490.json, 图片生成/文生图/ComfyUI官方介绍中的控制生图工作流_1935504433507651585.json, 图片生成/文生图/ComfyUI官方示例10：混合控制ControlNet工作流 _ ComfyUI从入门到精通_1932448769386672129.json, 图片生成/文生图/ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681.json, 图片生成/文生图/ComfyUi官方介绍中的姿态控制工作流_1935513540252073985.json, 图片生成/文生图/姿态控制人像生成_1996127763935477761.json]
+members: [图片生成/图生图/【人物一致性】【洗图专用】美女换脸换衣_1908918958693429250.json, 图片生成/图生图/【角色一致性】【洗图专用】小红书抖音爆款美女_1906726533422100482.json, 图片生成/图生图/人物随意更换服装工作流_1914924421117870081.json, 图片生成/文生图/Controlnet控制_2008470287586693121.json, 图片生成/文生图/controlnet工作流_1982352014791319553.json, 图片生成/文生图/文生图基础款+ controlnet工作流_1978737989356556290.json, 平台全量/dress up games V2.0_1863853295336095746.json, 平台全量/outfit-controlnet给女主换衣服_1832119947123150849.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_controlnet_sampler_clip_8
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/根据提示词合并两张图片（简单工作流）_2068647438591807490.json、图片生成/文生图/ComfyUI官方介绍中的控制生图工作流_1935504433507651585.json、图片生成/文生图/ComfyUI官方示例10：混合控制ControlNet工作流 _ ComfyUI从入门到精通_1932448769386672129.json、图片生成/文生图/ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681.json、图片生成/文生图/ComfyUi官方介绍中的姿态控制工作流_1935513540252073985.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/【人物一致性】【洗图专用】美女换脸换衣_1908918958693429250.json、图片生成/图生图/【角色一致性】【洗图专用】小红书抖音爆款美女_1906726533422100482.json、图片生成/图生图/人物随意更换服装工作流_1914924421117870081.json、图片生成/文生图/Controlnet控制_2008470287586693121.json、图片生成/文生图/controlnet工作流_1982352014791319553.json…）
 
 - **类型**：Text To Image
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：97%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
+- `ControlNetApplyAdvanced`
 - `ControlNetLoader`
 - `EmptyLatentImage`
 - `KSampler`
 - `LoadImage`
 - `SaveImage`
 - `VAEDecode`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ControlNetApplyAdvanced` —— 5/6 个有
-- `CLIPSetLastLayer` —— 3/6 个有
-- `PreviewImage` —— 3/6 个有
-- `CLIPTextEncodeSDXL` —— 1/6 个有
-- `ControlNetApply` —— 1/6 个有
-- `LatentUpscale` —— 1/6 个有
+- `PreviewImage` —— 7/8 个有
+- `AIO_Preprocessor` —— 6/8 个有
+- `Get Image Size` —— 5/8 个有
+- `RescaleCFG` —— 5/8 个有
+- `Anything Everywhere` —— 4/8 个有
+- `LoraLoader` —— 4/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `CR Text` —— 2/8 个有
+- `CR Text Concatenate` —— 2/8 个有
+- `workflow>姿势控制` —— 2/8 个有
+- `DF_Image_scale_to_side` —— 1/8 个有
+- `RH_Prompter` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 20 | 6 | 100% |
-| Prompt 约束强度(CFG) | 7 | 6 - 8 | 6 | 90% |
-| 采样算法 | dpmpp_2m | - | 6 | 50% |
-| 调度器 | karras | - | 6 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
-| ControlNet 权重 | 1 | 0.7 - 1 | 6 | 88% |
-| 宽度 | 1024 | 768 - 1024 | 6 | 90% |
-| 高度 | 1024 | 768 - 1024 | 6 | 90% |
+| 宽度 | 512 | 512 - 1024 | 8 | 72% |
+| 高度 | 640 | 512 - 1024 | 8 | 68% |
+| 采样步数 | 20 | 15 - 30 | 8 | 76% |
+| Prompt 约束强度(CFG) | 3 | 3 - 7 | 8 | 62% |
+| 采样算法 | dpmpp_sde | - | 8 | 62% |
+| 调度器 | karras | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| ControlNet 权重 | 0.7 | 0.7 - 1 | 8 | 84% |
+| LoRA 模型强度 | 1 | 1 - 1 | 4 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -60,11 +69,13 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 7，观测区间 6 - 8，6 个样本，取值集中（一致性 90%）
-- 采样算法 最常用 dpmpp_2m，6 个样本，一致性 50%
-- 调度器 最常用 karras，6 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- ControlNet 权重 中位数 1，观测区间 0.7 - 1，6 个样本，取值集中（一致性 88%）
-- 宽度 中位数 1024，观测区间 768 - 1024，6 个样本，取值集中（一致性 90%）
-- 高度 中位数 1024，观测区间 768 - 1024，6 个样本，取值集中（一致性 90%）
+- 宽度 中位数 512，观测区间 512 - 1024，8 个样本
+- 高度 中位数 640，观测区间 512 - 1024，8 个样本
+- 采样步数 中位数 20，观测区间 15 - 30，8 个样本
+- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 7，8 个样本
+- 采样算法 最常用 dpmpp_sde，8 个样本，一致性 62%
+- 调度器 最常用 karras，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.7，观测区间 0.7 - 1，8 个样本，取值集中（一致性 84%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

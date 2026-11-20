@@ -3,78 +3,69 @@ name: text_to_image_lora_sampler_clip_551
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.626667
-common_nodes: [CLIPLoader, CLIPTextEncode, CS_Preview_Any, DF_Text_Box, EmptyLatentImage, Fast Groups Bypasser (rgthree), FastGroupsBypassSwitch, GetNode, GoohaiRatioAndResolution, GoohaiRouteBlocker, ImageScaleToTotalPixels, JWFloat, JjkText, KSampler, KSamplerAdvanced, LatentSwitch, LoadImage, LoraLoaderModelOnly, PDIMAGE_LongerSize, PreviewImage, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenImagePromptOptimizer, ReferenceLatent, RestoreQwenImage21GH, SaveImage, SetNode, ShowText|pysssss, TextEncodeQwenImage21GH, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.746333
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, GetImageSizeAndCount, GetNode, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveFloat, QwenImage21Cache, ResolutionSelector, SaveImage, SetNode, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy clearCacheAll, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1文生图图像编辑V2 GH加速版，媲美全能图片G2.5方案_2105800342549127170.json, 图片生成/文生图/QwenImage 2.1 V2 GH加速版｜文生图图像编辑 媲美全能图片G2.5_2105562013975011330.json, 图片生成/文生图/千问2.1文生图加图像编辑孤海加速版，媲美全能图片G2.5方案_2105709104563048449.json]
+members: [图片生成/图生图/QwenImage2.1 Anything2Realism任意风格转写实图像生成工作流_2108619777165062146.json, 图片生成/图生图/QwenImage2.1 Anything2Realism｜任意风格转写实图像生成_2108386828016513026.json, 图片生成/文生图/Qwen Image 2.1图像编辑加二次采样放大，去提示词增强精简版图生图方案_2103533493711106050.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_551
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图图像编辑V2 GH加速版，媲美全能图片G2.5方案_2105800342549127170.json、图片生成/文生图/QwenImage 2.1 V2 GH加速版｜文生图图像编辑 媲美全能图片G2.5_2105562013975011330.json、图片生成/文生图/千问2.1文生图加图像编辑孤海加速版，媲美全能图片G2.5方案_2105709104563048449.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/QwenImage2.1 Anything2Realism任意风格转写实图像生成工作流_2108619777165062146.json、图片生成/图生图/QwenImage2.1 Anything2Realism｜任意风格转写实图像生成_2108386828016513026.json、图片生成/文生图/Qwen Image 2.1图像编辑加二次采样放大，去提示词增强精简版图生图方案_2103533493711106050.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CS_Preview_Any`
-- `DF_Text_Box`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `FastGroupsBypassSwitch`
+- `GetImageSizeAndCount`
 - `GetNode`
-- `GoohaiRatioAndResolution`
-- `GoohaiRouteBlocker`
-- `ImageScaleToTotalPixels`
-- `JWFloat`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
-- `LatentSwitch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PDIMAGE_LongerSize`
 - `PreviewImage`
-- `QwenImage21BlockCacheT8`
-- `QwenImage21SageAttentionT8`
-- `QwenImage21SpectrumT8`
-- `QwenImagePromptOptimizer`
-- `ReferenceLatent`
-- `RestoreQwenImage21GH`
+- `PrimitiveFloat`
+- `QwenImage21Cache`
+- `ResolutionSelector`
 - `SaveImage`
 - `SetNode`
-- `ShowText|pysssss`
-- `TextEncodeQwenImage21GH`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 2/3 个有
+- `Any Switch (rgthree)` —— 2/3 个有
+- `Load Image From Url (mtb)` —— 2/3 个有
+- `RH_DLSS5Enhance` —— 2/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `Textbox` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
 | 采样步数 | 4 | 4 - 4 | 3 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
 | 采样算法 | er_sde | - | 3 | 100% |
 | 调度器 | beta | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 80 | 3 | 100% |
-| 高度 | 80 | 80 - 80 | 3 | 100% |
 
 ## 常见问题
 
@@ -84,11 +75,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，3 个样本，一致性 100%
 - 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
 - 高发问题（3/3 个样本）：Steps较低可能导致细节不足

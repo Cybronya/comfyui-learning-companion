@@ -1,67 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_341
 type: Unknown Workflow
-frequency: 7
-level: strong
-coverage: 0.996571
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CR Text, ColorMatch, Float to Int, INTConstant, ImageFromBatch, ImageResizeKJv2, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelPatchTorchSettings, PainterAI2V, PainterAudioCut, PathchSageAttentionKJ, RHHiddenNodes, RH_GetAudioDuration, SimpleMath+, SomethingToString, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WujiCleaner]
+frequency: 9
+level: moderate
+coverage: 0.835111
+common_nodes: [LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/Wan2.2+RCM对口型工作流高动态_2021028256081780738.json, 视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2017919302799724546.json, 视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2017944917347147778.json, 视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2018324382791245826.json, 视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2026965800891981825.json, 视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2027307352143171585.json, 视频生成/图生视频/Wan2.2+RCM+Infinite+Talk官方对口型工作流图生数字人_2019421530488315905.json]
+members: [视频生成/图生视频/万能通用测试万相lora_1942427410207813634.json, 视频生成/图生视频/万能通用测试万相lora_1942490603743555586.json, 视频生成/图生视频/双人2对打wan2.1万相图生视频120_1941226969910689794.json, 视频生成/图生视频/改进版360旋转万相图生视48_1941218870319595522.json, 视频生成/图生视频/环绕自下而上360镜头wan2.1万相图生视60_1941220218918301698.json, 视频生成/图生视频/环绕自下而上360镜头wan2.1万相图生视60_1941765347643125762.json, 视频生成/图生视频/补036_1944753394462674945.json, 视频生成/图生视频/通用测试lors万相_1942526282015911937.json, 视频生成/图生视频/高清版：拉近眼睛镜头万相图生视48工作流_1941194683714584578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_341
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/Wan2.2+RCM对口型工作流高动态_2021028256081780738.json、视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2017919302799724546.json、视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2017944917347147778.json、视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2018324382791245826.json、视频生成/图生视频/Wan2.2+RCM+Infinite Talk官方对口型工作流高动态图生数字人_2026965800891981825.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/万能通用测试万相lora_1942427410207813634.json、视频生成/图生视频/万能通用测试万相lora_1942490603743555586.json、视频生成/图生视频/双人2对打wan2.1万相图生视频120_1941226969910689794.json、视频生成/图生视频/改进版360旋转万相图生视48_1941218870319595522.json、视频生成/图生视频/环绕自下而上360镜头wan2.1万相图生视60_1941220218918301698.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Text`
-- `ColorMatch`
-- `Float to Int`
-- `INTConstant`
-- `ImageFromBatch`
-- `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoadAudio`
+全部 9 个 workflow 都包含：
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelPatchLoader`
-- `ModelPatchTorchSettings`
-- `PainterAI2V`
-- `PainterAudioCut`
-- `PathchSageAttentionKJ`
-- `RHHiddenNodes`
-- `RH_GetAudioDuration`
-- `SimpleMath+`
-- `SomethingToString`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WujiCleaner`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+
+**可变部分**（部分 workflow 才有）：
+- `Fast Groups Bypasser (rgthree)` —— 7/9 个有
+- `WanVideoTorchCompileSettings` —— 7/9 个有
+- `easy cleanGpuUsed` —— 5/9 个有
+- `Int` —— 4/9 个有
+- `easy showAnything` —— 4/9 个有
+- `Any Switch (rgthree)` —— 2/9 个有
+- `GetNode` —— 2/9 个有
+- `MathExpression|pysssss` —— 2/9 个有
+- `SetNode` —— 2/9 个有
+- `easy float` —— 2/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 7 | 100% |
-| Prompt 约束强度(CFG) | 4 | 4 - 4 | 7 | 100% |
-| 采样算法 | 1 | 1 - 1 | 7 | 100% |
-| 调度器 | euler | - | 7 | 100% |
-| 重绘幅度 | simple | - | 7 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -69,8 +62,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，7 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，7 个样本，一致性 100%
-- 重绘幅度 最常用 simple，7 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

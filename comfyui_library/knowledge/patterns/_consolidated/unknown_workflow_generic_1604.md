@@ -3,27 +3,33 @@ name: unknown_workflow_generic_1604
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_RhartImageNProOfficialTextToImageUltra, SaveImage]
+coverage: 0.7
+common_nodes: [CR Combine Prompt, Image Compare (mtb), JjkText, LoadImage, PreviewAny, Qwen3VL_Chat, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/NPro_OfficialTextToImageUltra_v1.0_2033838757945810945.json, 图片生成/文生图/全能图片PRO-文生图Ultra-官方稳定版_2061683897083187201.json]
+members: [图片生成/图生图/Qwen3+详情页翻译+替换logo_2082724510691844097.json, 图片生成/图生图/详情页翻译+替换logo_2042436320231956481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1604
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/NPro_OfficialTextToImageUltra_v1.0_2033838757945810945.json、图片生成/文生图/全能图片PRO-文生图Ultra-官方稳定版_2061683897083187201.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen3+详情页翻译+替换logo_2082724510691844097.json、图片生成/图生图/详情页翻译+替换logo_2042436320231956481.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_RhartImageNProOfficialTextToImageUltra`
+- `CR Combine Prompt`
+- `Image Compare (mtb)`
+- `JjkText`
+- `LoadImage`
+- `PreviewAny`
+- `Qwen3VL_Chat`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
 
 ## 典型参数

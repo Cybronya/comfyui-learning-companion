@@ -1,77 +1,76 @@
 ---
 name: unknown_workflow_video_sampler_vae_18
 type: Unknown Workflow
-frequency: 14
+frequency: 15
 level: moderate
-coverage: 0.951429
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, Int, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, SimpleMath+, ToInt, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.674733
+common_nodes: [AddLabel, EmptyImage, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJ, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/黑鲸千帆-1m左右高质量（1248幅度大）_1994344708442890242.json, 图片生成/文生图/黑鲸千帆-中质量2m内长视频（960幅度大）_1994320938558750721.json, 数字人/数字人/API-对口型-数字人-最新_2070339599389511682.json, 数字人/数字人/API-对口型-数字人_2043715361241047042.json, 数字人/数字人/API-对口型-数字人_2067238745916657666.json, 数字人/数字人/API-对口型-数字人（1280）_2057461580308238337.json, 数字人/数字人/API-对口型数字人-1280_2057455520889524226.json, 数字人/数字人/CustomerKing 数字人商品带货_2080338543561502721.json, 数字人/数字人/Infinite Talk数字人_1978415131019382786.json, 数字人/数字人/InfiniteTalk单人版数字人【超过1分钟的】_2003019304549380098.json, 数字人/数字人/InfiniteTalk图片对口型_1999422006565236738.json, 数字人/数字人/InfiniteTalk数字人-简单好用易理解_1991355341403193346.json, 数字人/数字人/Infinitetalk数字人_2006979668984991746.json, 视频生成/图生视频/Infinitetalk数字人_1989166244014198786.json]
+members: [平台全量/首尾帧参考转视频，视频风格转绘参考，非常滴稳定_1915808034642132993.json, 视频生成/图生视频/Aniwan+百变星君（原59美元LORA）丝滑变装首尾帧_1951187088609882114.json, 视频生成/图生视频/CausVid仅需3-9步极速VACE首尾帧视频加速版_1923973452506853378.json, 视频生成/图生视频/FusionX_图生视频动作迁移_1947326478251872258.json, 视频生成/图生视频/VACE14B-极致完美动作姿势迁移_1922696527037480962.json, 视频生成/图生视频/VACE14B-极致完美动作姿势迁移_1932273644485902337.json, 视频生成/图生视频/VACE14B-首尾帧视频生成_1922723230275223554.json, 视频生成/图生视频/VACE14B万相吉卜力风格转绘_1923032081754935297.json, 视频生成/图生视频/VACE14B手绘线稿风格转绘_1923004449781182465.json, 视频生成/图生视频/VACE视频编辑（图片参考视频一致性跳舞视频转绘）工作流_1922996913308954625.json, 视频生成/图生视频/wan2.1fun超强控制视频人物动作迁移丝滑不崩脸_1934538219805417473.json, 视频生成/图生视频/【直出高清】人物跳舞动作迁移_1934767007986294786.json, 视频生成/图生视频/仅需3-9步极速WanVACE动作Pose迁移(CausVid)_1923678505442136066.json, 视频生成/图生视频/加快兼质量参考视频姿势跳舞_1924138217270857730.json, 视频生成/图生视频/动作Pose迁移_1948594124155944961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_18
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/黑鲸千帆-1m左右高质量（1248幅度大）_1994344708442890242.json、图片生成/文生图/黑鲸千帆-中质量2m内长视频（960幅度大）_1994320938558750721.json、数字人/数字人/API-对口型-数字人-最新_2070339599389511682.json、数字人/数字人/API-对口型-数字人_2043715361241047042.json、数字人/数字人/API-对口型-数字人_2067238745916657666.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（平台全量/首尾帧参考转视频，视频风格转绘参考，非常滴稳定_1915808034642132993.json、视频生成/图生视频/Aniwan+百变星君（原59美元LORA）丝滑变装首尾帧_1951187088609882114.json、视频生成/图生视频/CausVid仅需3-9步极速VACE首尾帧视频加速版_1923973452506853378.json、视频生成/图生视频/FusionX_图生视频动作迁移_1947326478251872258.json、视频生成/图生视频/VACE14B-极致完美动作姿势迁移_1922696527037480962.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `Int`
+全部 15 个 workflow 都包含：
+- `AddLabel`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJ`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `MultiTalkWav2VecEmbeds`
-- `SimpleMath+`
-- `ToInt`
+- `SetNode`
 - `VHS_VideoCombine`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 13/14 个有
-- `easy showAnything` —— 13/14 个有
-- `LoadAudio` —— 12/14 个有
-- `WanVideoBlockSwap` —— 12/14 个有
-- `MultiTalkModelLoader` —— 11/14 个有
-- `WanVideoLoraSelect` —— 11/14 个有
-- `WanVideoModelLoader` —— 11/14 个有
-- `WanVideoTorchCompileSettings` —— 11/14 个有
-- `ImageResizeKJv2` —— 10/14 个有
-- `RH_GetAudioDuration` —— 10/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/14 个有
-- `easy int` —— 8/14 个有
-- `ImageUpscaleWithModel` —— 3/14 个有
-- `ImpactInt` —— 3/14 个有
-- `RHHiddenNodes` —— 3/14 个有
-- `Upscale Model Loader` —— 3/14 个有
-- `VHS_LoadAudioUpload` —— 3/14 个有
-- `CreateVideo` —— 2/14 个有
-- `GetImageRangeFromBatch` —— 2/14 个有
-- `GetImageSizeAndCount` —— 2/14 个有
-- `GetNode` —— 2/14 个有
-- `JWFloat` —— 2/14 个有
-- `PreViewVideo` —— 2/14 个有
-- `SaveAudio` —— 2/14 个有
-- `SetNode` —— 2/14 个有
-- `VHS_LoadVideo` —— 2/14 个有
-- `WanVideoEncode` —— 2/14 个有
-- `WanVideoTextEncodeCached` —— 2/14 个有
-- `Audio Duration (mtb)` —— 1/14 个有
-- `Text` —— 1/14 个有
-- `ToFloat` —— 1/14 个有
+- `WanVideoBlockSwap` —— 14/15 个有
+- `WanVideoVACEModelSelect` —— 14/15 个有
+- `Primitive integer [Crystools]` —— 13/15 个有
+- `Text Multiline` —— 13/15 个有
+- `WanVideoTorchCompileSettings` —— 13/15 个有
+- `VHS_LoadVideo` —— 12/15 个有
+- `AIO_Preprocessor` —— 11/15 个有
+- `Text Concatenate` —— 11/15 个有
+- `WanVideoSLG` —— 11/15 个有
+- `WanVideoTeaCache` —— 11/15 个有
+- `WanVideoExperimentalArgs` —— 10/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 9/15 个有
+- `ImagePadKJ` —— 9/15 个有
+- `RH_Captioner` —— 9/15 个有
+- `ShowText|pysssss` —— 8/15 个有
+- `WanVideoLoraSelect` —— 8/15 个有
+- `ColorMatch` —— 7/15 个有
+- `DepthAnything_V2` —— 6/15 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 6/15 个有
+- `GetImageRangeFromBatch` —— 5/15 个有
+- `MaskPreview+` —— 4/15 个有
+- `PreviewImage` —— 4/15 个有
+- `WanVideoVACEStartToEndFrame` —— 4/15 个有
+- `easy cleanGpuUsed` —— 4/15 个有
+- `easy imageRemBg` —— 2/15 个有
+- `Joy_caption_two` —— 1/15 个有
+- `Joy_caption_two_load` —— 1/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/15 个有
+- `WD14Tagger|pysssss` —— 1/15 个有
+- `easy int` —— 1/15 个有
 
 ## 典型参数
 

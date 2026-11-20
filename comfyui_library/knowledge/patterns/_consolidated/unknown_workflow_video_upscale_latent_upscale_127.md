@@ -3,22 +3,22 @@ name: unknown_workflow_video_upscale_latent_upscale_127
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.785333
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, Fast Groups Bypasser (rgthree), H3SigmaRefiner, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyModelAdapter, MiniMaxH3EasyOutput, MiniMaxH3EasySecondPassConditioning, MiniMaxH3MemoryEfficientSageAttentionPatch, MinimaxH3LatentUpscaler3D, RandomNoise, SamplerCustomAdvanced, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.654333
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/文生视频/MinimaxH3大全 + 自动高清 VOSR + DLSS_2098255923381882882.json, 视频生成/文生视频/最强去油全模式精简流+独立双采样 MINIMAXH3_2094672915202662401.json, 视频生成/文生视频/海螺H3！ 多模型合一！ 自动高清 VOSR + DLSS！_2098290326447415298.json]
+members: [视频生成/图生视频/Minimax H3  多图参考生视频｜Singularity  武斗专属模型+ 4步 急速 + 放大 + 双重 人脸精修_2107657989724401665.json, 视频生成/图生视频/MinimaxH3_高动态_Singularity-(新)分段采样进阶工作流_2104944269617352706.json, 视频生成/文生视频/Minimax H3 文生 & 图生视频｜FastH3 8步 急速 + 放大 + 人脸精修_2102582100221325314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_127
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/MinimaxH3大全 + 自动高清 VOSR + DLSS_2098255923381882882.json、视频生成/文生视频/最强去油全模式精简流+独立双采样 MINIMAXH3_2094672915202662401.json、视频生成/文生视频/海螺H3！ 多模型合一！ 自动高清 VOSR + DLSS！_2098290326447415298.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Minimax H3  多图参考生视频｜Singularity  武斗专属模型+ 4步 急速 + 放大 + 双重 人脸精修_2107657989724401665.json、视频生成/图生视频/MinimaxH3_高动态_Singularity-(新)分段采样进阶工作流_2104944269617352706.json、视频生成/文生视频/Minimax H3 文生 & 图生视频｜FastH3 8步 急速 + 放大 + 人脸精修_2102582100221325314.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
@@ -26,43 +26,46 @@ source: knowledge_consolidation
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `Fast Groups Bypasser (rgthree)`
-- `H3SigmaRefiner`
+- `ComfyMathExpression`
 - `KSamplerSelect`
 - `LTXVConcatAVLatent`
 - `LTXVSeparateAVLatent`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyModelAdapter`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxH3EasySecondPassConditioning`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
 - `MinimaxH3LatentUpscaler3D`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SetNode`
 - `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `GoohaiAnyExists` —— 2/3 个有
-- `IfInnerExecute` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `PDIMAGE_LongerSize` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `RH_DLSS5Enhance` —— 2/3 个有
-- `SetNode` —— 2/3 个有
+- `GetImageRangeFromBatch` —— 2/3 个有
+- `H3FaceStitch` —— 2/3 个有
+- `H3FaceTrackCrop` —— 2/3 个有
+- `H3InjectVideoLatent` —— 2/3 个有
+- `H3PerFrameDenoise` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/3 个有
+- `ModelAttentionBackend` —— 2/3 个有
 - `VOSR2ModelLoader` —— 2/3 个有
 - `VOSR2Upscale` —— 2/3 个有
-- `easy cleanGpuUsed` —— 2/3 个有
-- `忽略多组孤海` —— 2/3 个有
+- `BlockSparseAttention` —— 1/3 个有
+- `DisableNoise` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `ManualSigmas` —— 1/3 个有
+- `MiniMaxH3ImageToVideo` —— 1/3 个有
+- `MiniMaxH3NativeAudioLock` —— 1/3 个有
+- `PathchSageAttentionKJ` —— 1/3 个有
+- `StringConcatenate` —— 1/3 个有
 
 ## 典型参数
 

@@ -1,62 +1,55 @@
 ---
 name: unknown_workflow_video_sampler_vae_188
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8
-common_nodes: [Any Switch (rgthree), Anything Everywhere, Anything Everywhere3, Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, INTConstant, ImageBatchMulti, ImageResizeKJv2, ImageToMask, LayerUtility: ColorImage, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, ReplaceImagesInBatch, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy imageRemBg, easy int, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 1
+common_nodes: [AIO_Preprocessor, GetImageSizeAndCount, LoadImage, LoadWanVideoT5TextEncoder, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/VACE无限叠加时长生成物品_1925372312076623873.json, 视频生成/图生视频/VACE进阶篇_图片参考+重叠帧_1923136785528836098.json]
+members: [视频生成/图生视频/All-in-one 视频驱动图片_1965428165915103234.json, 视频生成/图生视频/wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json, 视频生成/文生视频/WAN2.2-AllInOne控制+参考_1963899111291572225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_188
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/VACE无限叠加时长生成物品_1925372312076623873.json、视频生成/图生视频/VACE进阶篇_图片参考+重叠帧_1923136785528836098.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/All-in-one 视频驱动图片_1965428165915103234.json、视频生成/图生视频/wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json、视频生成/文生视频/WAN2.2-AllInOne控制+参考_1963899111291572225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Anything Everywhere`
-- `Anything Everywhere3`
-- `Fast Groups Muter (rgthree)`
-- `GetImageRangeFromBatch`
+全部 3 个 workflow 都包含：
+- `AIO_Preprocessor`
 - `GetImageSizeAndCount`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageResizeKJv2`
-- `ImageToMask`
-- `LayerUtility: ColorImage`
 - `LoadImage`
 - `LoadWanVideoT5TextEncoder`
-- `RepeatImageBatch`
-- `ReplaceImagesInBatch`
-- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
 - `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVACEEncode`
 - `WanVideoVACEModelSelect`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy imageRemBg`
-- `easy int`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `INTConstant` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `WanVideoLoraSelect` —— 2/3 个有
+- `ColorMatch` —— 1/3 个有
+- `ImageSmartSharpen+` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `WanVideoSetLoRAs` —— 1/3 个有
 
 ## 典型参数
 
@@ -68,4 +61,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

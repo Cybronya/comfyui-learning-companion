@@ -3,78 +3,80 @@ name: unknown_workflow_video_lora_sampler_1019
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5125
-common_nodes: [AutoCropFaces, BiRefNetRMBG, Display Int (rgthree), FloatConstant, GetNode, INTConstant, ImageListToImageBatch, ImageScaleToMaxDimension, ImpactMakeImageList, LoadImage, LoadLynxResampler, LoadWanVideoT5TextEncoder, LynxEncodeFaceIP, MaskToImage, PreviewAny, PreviewImage, SetNode, SomethingToString, StringConstantMultiline, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoImageResizeToClosest, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoVAELoader, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy mathInt, easy promptLine, easy seed]
+coverage: 0.5715
+common_nodes: [AudioBeforeAfterSilence, AudioCrop, AudioSeparation, Bjornulf_ShowInt, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSize, GetNode, ImageConcanate, ImageResizeKJv2, ImpactSwitch, IndexTTS2Run, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkSilentEmbeds, MultiTalkWav2VecEmbeds, PreviewAudio, SaveAudio, SetNode, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan2.1_Vace_Lynx_无限时长_超高一致性和身份保持_1984167281481678850.json, 视频生成/文生视频/Wan2.2_Vace_Lynx_无限时长_超高一致性和人物高保真_1987615235005681665.json]
+members: [数字人/数字人/🈚️wan2.1 Infinite Talk 视频改口型_对口型_数字人_口播 视频重绘_1969616527890804738.json, 视频生成/图生视频/✅wan2.1 Infinite Talk-图片对口型_固定机位-图生视频，口播数字人_1964014354544869377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_1019
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/Wan2.1_Vace_Lynx_无限时长_超高一致性和身份保持_1984167281481678850.json、视频生成/文生视频/Wan2.2_Vace_Lynx_无限时长_超高一致性和人物高保真_1987615235005681665.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/🈚️wan2.1 Infinite Talk 视频改口型_对口型_数字人_口播 视频重绘_1969616527890804738.json、视频生成/图生视频/✅wan2.1 Infinite Talk-图片对口型_固定机位-图生视频，口播数字人_1964014354544869377.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AutoCropFaces`
-- `BiRefNetRMBG`
-- `Display Int (rgthree)`
-- `FloatConstant`
+- `AudioBeforeAfterSilence`
+- `AudioCrop`
+- `AudioSeparation`
+- `Bjornulf_ShowInt`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSize`
 - `GetNode`
-- `INTConstant`
-- `ImageListToImageBatch`
-- `ImageScaleToMaxDimension`
-- `ImpactMakeImageList`
-- `LoadImage`
-- `LoadLynxResampler`
+- `ImageConcanate`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `IndexTTS2Run`
+- `LoadAudio`
 - `LoadWanVideoT5TextEncoder`
-- `LynxEncodeFaceIP`
-- `MaskToImage`
-- `PreviewAny`
-- `PreviewImage`
+- `MultiTalkModelLoader`
+- `MultiTalkSilentEmbeds`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `SaveAudio`
 - `SetNode`
-- `SomethingToString`
-- `StringConstantMultiline`
+- `SimpleMath+`
+- `SoundFlow_GetLength`
+- `ToInt`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoExtraModelSelect`
-- `WanVideoImageResizeToClosest`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
 - `WanVideoTextEncode`
 - `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEStartToEndFrame`
 - `WanVideoVAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy indexAnything`
-- `easy lengthAnything`
-- `easy mathInt`
-- `easy promptLine`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCrop` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImpactMakeAnyList` —— 1/2 个有
-- `ImpactSelectNthItemOfAnyList` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `StringConcatenate` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
-- `easy imageCount` —— 1/2 个有
+- `Audio To Text (mtb)` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `GetImageRangeFromBatch` —— 1/2 个有
+- `ImageBatchMulti` —— 1/2 个有
+- `ImagePass` —— 1/2 个有
+- `Int` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `Load Whisper (mtb)` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `RepeatImageBatch` —— 1/2 个有
+- `ReverseImageBatch` —— 1/2 个有
+- `VHS_GetImageCount` —— 1/2 个有
+- `WanVideoEncode` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,43 +1,43 @@
 ---
 name: unknown_workflow_generic_710
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.7045
-common_nodes: [ImageScaleDownToSize, LoadImage, RH_LLMAPI_NODE, SaveImage, Text Multiline, easy showAnything]
+coverage: 0.5962
+common_nodes: [CR Text, Fast Groups Bypasser (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Nano_全能图片V1 Pro谷歌最强一致性编辑模型_1960588119382851586.json, 图片生成/图生图/【 Nano 全能图片V1 】 100种玩法，陆续加入，谷歌最强一致性编辑模型_1962181505764278274.json, 图片生成/文生图/【  全能图片V1 】 从0到N，生成IP及周边，一条龙生成_1965949778922221569.json, 图片生成/文生图/谷歌最新香蕉模型_全能图片V1_1960839505970434049.json]
+members: [图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的Y2K可爱街头风格拼贴海报_2057342885657407490.json, 图片生成/图生图/超好用🔥一键生成高质量可爱街头风格拼贴海报_2057748370378285057.json, 图片生成/文生图/image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_2054163212387528705.json, 平台全量/鸡皮提 Image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_1907600948129370114.json, 平台全量/鸡皮提 Image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款超长详情主图适配跨境电商_1930174368947585026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_710
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Nano_全能图片V1 Pro谷歌最强一致性编辑模型_1960588119382851586.json、图片生成/图生图/【 Nano 全能图片V1 】 100种玩法，陆续加入，谷歌最强一致性编辑模型_1962181505764278274.json、图片生成/文生图/【  全能图片V1 】 从0到N，生成IP及周边，一条龙生成_1965949778922221569.json、图片生成/文生图/谷歌最新香蕉模型_全能图片V1_1960839505970434049.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/全能图片模型鸡皮提 Image 2.0（低消耗）（亦可切官方稳定版）上传图一键生成高质量的Y2K可爱街头风格拼贴海报_2057342885657407490.json、图片生成/图生图/超好用🔥一键生成高质量可爱街头风格拼贴海报_2057748370378285057.json、图片生成/文生图/image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_2054163212387528705.json、平台全量/鸡皮提 Image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款详情主图支持切割单图_1907600948129370114.json、平台全量/鸡皮提 Image 2.0（低消耗）迄今超强上传产品图一键生成全套全类目爆款超长详情主图适配跨境电商_1930174368947585026.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `ImageScaleDownToSize`
+全部 5 个 workflow 都包含：
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_LLMAPI_NODE`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartImageG2ImageToImage`
+- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
-- `Text Multiline`
 - `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 3/4 个有
-- `ImpactSwitch` —— 3/4 个有
-- `RH_Nano_Banana_Image2Image` —— 3/4 个有
-- `PreviewImage` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
-- `RH_Translator` —— 1/4 个有
+- `PreviewImage` —— 4/5 个有
+- `Any Switch (rgthree)` —— 2/5 个有
+- `Text Concatenate` —— 2/5 个有
 
 ## 典型参数
 

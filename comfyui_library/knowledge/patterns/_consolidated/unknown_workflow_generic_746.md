@@ -1,37 +1,37 @@
 ---
 name: unknown_workflow_generic_746
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.9445
-common_nodes: [CR Text, LoadImage, SaveImage]
+coverage: 0.9334
+common_nodes: [LoadImage, LoadVideo, RH_SeedanceVideoRefToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片 Pro_2027286874657656834.json, 图片生成/图生图/全能图片2.0(支持10图)_2029126241206411265.json, 图片生成/图生图/全能图片2_全能图片pro_全家桶_2_2047115220635619330.json, 图片生成/图生图/超好用🔥电商产品6宫格分镜图-超实惠-可根据自己的产品洗提示词_2066378897788329985.json]
+members: [平台全量/即梦视频2.0全能视频-视频参考超能视频2.0_2036331656608489474.json, 数字人/数字人/超能视频2.0 视频参考生视频_2034441191185457154.json, 视频生成/图生视频/SeedanceVideoRefToVideo_2038487886651199489.json, 视频生成/图生视频/超能视频2.0--动作复刻_2034446656019632130.json, 视频生成/文生视频/超能视频2.0 生成汽车视频-不用排队了_2034581084469465089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_746
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片 Pro_2027286874657656834.json、图片生成/图生图/全能图片2.0(支持10图)_2029126241206411265.json、图片生成/图生图/全能图片2_全能图片pro_全家桶_2_2047115220635619330.json、图片生成/图生图/超好用🔥电商产品6宫格分镜图-超实惠-可根据自己的产品洗提示词_2066378897788329985.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/即梦视频2.0全能视频-视频参考超能视频2.0_2036331656608489474.json、数字人/数字人/超能视频2.0 视频参考生视频_2034441191185457154.json、视频生成/图生视频/SeedanceVideoRefToVideo_2038487886651199489.json、视频生成/图生视频/超能视频2.0--动作复刻_2034446656019632130.json、视频生成/文生视频/超能视频2.0 生成汽车视频-不用排队了_2034581084469465089.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
+全部 5 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
+- `LoadVideo`
+- `RH_SeedanceVideoRefToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Nano_Banana2_Gemini31Flash` —— 3/4 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/4 个有
-- `GetRandomIntegerInRange` —— 2/4 个有
-- `ImageStitch` —— 1/4 个有
+- `Make Image Batch` —— 2/5 个有
+- `RH_CinematicVideoGenerator` —— 1/5 个有
+- `easy showAnything` —— 1/5 个有
 
 ## 典型参数
 

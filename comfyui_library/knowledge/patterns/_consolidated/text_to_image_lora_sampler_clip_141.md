@@ -3,89 +3,52 @@ name: text_to_image_lora_sampler_clip_141
 type: Text To Image
 frequency: 12
 level: strong
-coverage: 0.7305
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.90025
+common_nodes: [CLIPLoader, CLIPTextEncode, CreateVideo, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, RHMiniMaxH3DecodeAV, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2103271632474300417.json, 视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2105721669728956418.json, 视频生成/图生视频/H3打斗工作流，图生视频高动态动作场景创作工具_2106489548766269442.json, 视频生成/图生视频/H3打斗工作流｜图生视频 打造拳拳到肉的打斗名场面_2105501306726207490.json, 视频生成/图生视频/H3打斗特效视频生成 武打动作画面直出方案_2110369061031989249.json, 视频生成/图生视频/MiniMax H3全能参考正式版 真实电影质感视频处理工具_2113410728010014721.json, 视频生成/图生视频/MiniMax H3全能参考真实电影质感V2，图生视频胶片感运镜直出_2114442449908228097.json, 视频生成/图生视频/MiniMax H3全能参考｜真实电影质感V2文生视频图生视频三合一_2114262759729881089.json, 视频生成/图生视频/MiniMax H3单采工作流，文生视频图生视频轻量简洁快速上手_2114479769403346945.json, 视频生成/图生视频/高质量打斗视频专用双采无加速 文生图生视频处理工具_2112970802692972545.json, 视频生成/文生视频/MiniMax H3单采V2工作流，文生视频视频生视频图生视频方案_2103619711580856322.json, 视频生成/文生视频/MiniMax H3双采工作流，文生视频视频生视频图生视频方案_2103963966656573441.json]
+members: [视频生成/图生视频/H3 FL2VA开源版图生视频 脑洞创意电影感视频生成_2099229846823063553.json, 视频生成/图生视频/开源免费MiniMax H3 FL2VA｜脑洞剧本一键开拍，电影感拉满_2099403535325679617.json, 视频生成/文生视频/FL2VA开源版文生视频｜MiniMax H3一键生成_2093264814079569922.json, 视频生成/文生视频/MiniMax H3开源版文生视频｜视频运镜提示词直出_2089449365793501185.json, 视频生成/文生视频/MiniMax H3文生视频开源版 视频运镜处理生成工具_2113360451328364546.json, 视频生成/文生视频/MiniMax H3文生视频开源版处理生成工具_2102140647884021762.json, 视频生成/文生视频/MiniMax H3文生视频开源版｜一句话生成大片级画面_2107663052278681601.json, 视频生成/文生视频/MiniMax H3文生视频开源版｜运镜丝滑300+人在用_2097177388667990017.json, 视频生成/文生视频/res_multistep 2.46×零质量损加速｜MiniMax-H3文生视频RH版_2089008529712705537.json, 视频生成/文生视频/res_multistep 2.46倍加速零质量损｜MiniMax-H3文生视频RH版含音频_2088688872459952130.json, 视频生成/文生视频/开源版文生视频MiniMax视频运镜其它视频处理_2085851653433028610.json, 视频生成/文生视频/开源版文生视频｜MiniMax H3 视频运镜自由出片_2089266759978274818.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_141
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2103271632474300417.json、视频生成/图生视频/H3打斗双采工作流，动作场景视频生视频高动态方案_2105721669728956418.json、视频生成/图生视频/H3打斗工作流，图生视频高动态动作场景创作工具_2106489548766269442.json、视频生成/图生视频/H3打斗工作流｜图生视频 打造拳拳到肉的打斗名场面_2105501306726207490.json、视频生成/图生视频/H3打斗特效视频生成 武打动作画面直出方案_2110369061031989249.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/H3 FL2VA开源版图生视频 脑洞创意电影感视频生成_2099229846823063553.json、视频生成/图生视频/开源免费MiniMax H3 FL2VA｜脑洞剧本一键开拍，电影感拉满_2099403535325679617.json、视频生成/文生视频/FL2VA开源版文生视频｜MiniMax H3一键生成_2093264814079569922.json、视频生成/文生视频/MiniMax H3开源版文生视频｜视频运镜提示词直出_2089449365793501185.json、视频生成/文生视频/MiniMax H3文生视频开源版 视频运镜处理生成工具_2113360451328364546.json…）
 
 - **类型**：Text To Image
 - **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：73%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 12 个 workflow 都包含：
-- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DirectModelLoader`
+- `RHMiniMaxH3DirectTextEncoderLoader`
+- `RHMiniMaxH3DirectVAELoader`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3T2VATarget`
+- `RHMiniMaxH3T2VATextEncode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 10/12 个有
-- `SaveImage` —— 10/12 个有
-- `SetNode` —— 10/12 个有
-- `CreateVideo` —— 9/12 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 9/12 个有
-- `MiniMaxH3SigmaShift` —— 9/12 个有
-- `ModelAttentionBackend` —— 9/12 个有
-- `SaveVideo` —— 9/12 个有
-- `BasicScheduler` —— 8/12 个有
-- `BlockSparseAttention` —— 8/12 个有
-- `ExtendIntermediateSigmas` —— 8/12 个有
-- `LoadAudio` —— 8/12 个有
-- `ModelPreviewOverrideKJ` —— 8/12 个有
-- `DisableNoise` —— 6/12 个有
-- `SplitSigmasDenoise` —— 6/12 个有
-- `easy cleanGpuUsed` —— 6/12 个有
-- `ImageScaleToTotalPixels` —— 5/12 个有
-- `ManualSigmas` —— 5/12 个有
-- `VHS_LoadVideo` —— 5/12 个有
-- `INTConstant` —— 4/12 个有
-- `ResizeShortestToNode` —— 4/12 个有
-- `SolAttnMiniMax` —— 4/12 个有
-- `GetVideoComponents` —— 3/12 个有
-- `LoadVideo` —— 3/12 个有
-- `PreviewAudio` —— 3/12 个有
-- `ResizeImageMaskNode` —— 3/12 个有
-- `Seed (rgthree)` —— 3/12 个有
-- `TrimAudioDuration` —— 3/12 个有
-- `VHS_VideoCombine` —— 3/12 个有
-- `Fast Groups Muter (rgthree)` —— 2/12 个有
-- `Text Concatenate` —— 2/12 个有
-- `easy showAnything` —— 2/12 个有
-- `ComfySwitchNode` —— 1/12 个有
-- `EmptyImage` —— 1/12 个有
-- `LTXVConcatAVLatent` —— 1/12 个有
-- `LTXVSeparateAVLatent` —— 1/12 个有
-- `MinimaxH3LatentUpscaler3D` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `SplitSigmas` —— 1/12 个有
+- `GetVideoComponents` —— 7/12 个有
+- `VHS_VideoCombine` —— 7/12 个有
+- `SaveVideo` —— 5/12 个有
+- `SaveImage` —— 3/12 个有
 
 ## 典型参数
 

@@ -3,58 +3,67 @@ name: unknown_workflow_lora_sampler_clip_307
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.65
-common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, Label (rgthree), LoraLoaderModelOnly, Note Plus (mtb), PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.837
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, Image Comparer (rgthree), KSampler (Efficient), LoadImage, LoraLoaderModelOnly, RH_Translator, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json, 图片生成/文生图/wan2.2双噪文生图-极致逼真_1951536173342773249.json]
+members: [图片生成/图生图/kontext-dev超强8步纠正场景背景透视角度匹配物体溶图重打光+可选4K高清出图_1994320561415323649.json, 平台全量/Kontext-DEV迄今超强8步出图言出法随，万物消失，背景修复超神工作流来袭✨_1942817532770496514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_307
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json、图片生成/文生图/wan2.2双噪文生图-极致逼真_1951536173342773249.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/kontext-dev超强8步纠正场景背景透视角度匹配物体溶图重打光+可选4K高清出图_1994320561415323649.json、平台全量/Kontext-DEV迄今超强8步出图言出法随，万物消失，背景修复超神工作流来袭✨_1942817532770496514.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `Label (rgthree)`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `Image Comparer (rgthree)`
+- `KSampler (Efficient)`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `Note Plus (mtb)`
-- `PreviewImage`
+- `RH_Translator`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/2 个有
-- `EmptyHunyuanLatentVideo` —— 1/2 个有
+- `CR Text` —— 1/2 个有
+- `ConstrainImage|pysssss` —— 1/2 个有
 - `EmptyLatentImage` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `ModelPassThrough` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `ImageColorMatch+` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `Text Concatenate` —— 1/2 个有
+- `easy imageSize` —— 1/2 个有
+- `workflow>高清放大` —— 1/2 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 30 | - | 2 | 100% |
-| 采样算法 | 2 | - | 2 | 50% |
-| 调度器 | res_2s | - | 2 | 100% |
-| 重绘幅度 | bong_tangent | - | 2 | 100% |
-| 宽度 | 1920 | - | 1 | 100% |
-| 高度 | 1088 | - | 1 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
+| 宽度 | 512 | - | 1 | 100% |
+| 高度 | 512 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -62,10 +71,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 30，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 2，样本不足，未给区间，2 个样本
-- 调度器 最常用 res_2s，2 个样本，一致性 100%
-- 重绘幅度 最常用 bong_tangent，2 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

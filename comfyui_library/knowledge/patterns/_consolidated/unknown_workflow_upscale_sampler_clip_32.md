@@ -1,53 +1,60 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_32
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: strong
-coverage: 0.848
-common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxSamplerParams+, Image Comparer (rgthree), SaveImage, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAEDecode, VAELoader]
+coverage: 0.756833
+common_nodes: [Anything Everywhere, CLIPLoader, CLIPTextEncode, KSampler (Efficient), ModelSamplingAuraFlow, PreviewImage, Prompts Everywhere, SaveImage, UltimateSDUpscale, UpscaleModelLoader, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/高清放大4K_2092084125342724098.json, 图片生成/图生图/高清放大4K_2092528398777282562.json, 图片生成/文生图/FLUX-fp8出图-高清放大_2004950309392838658.json, 图片生成/文生图/高清放大4K_2015373674332823554.json, 图片生成/文生图/高清放大4K_2091148212773146625.json]
+members: [图片生成/图生图/一键运行：开源 千问Qwen-image 图生图 洗图 放大_1954724218271363073.json, 图片生成/图生图/千问Qwen-image GGUF 版本  图生图 洗图 放大_1954747261731389441.json, 图片生成/文生图/一键运行：开源 千问Qwen-image GGUF  版本 文生图 洗图 放大_1954739193664684033.json, 图片生成/文生图/一键运行：开源 千问Qwen-image 文生图 洗图 放大_1954720212358709250.json, 平台全量/一键运行：开源 千问Qwen-image 局部重绘 洗图 放大_1954728412348870657.json, 平台全量/千问Qwen-image GGUF 版本 局部重绘 洗图 放大_1954788415511289857.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_32
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/高清放大4K_2092084125342724098.json、图片生成/图生图/高清放大4K_2092528398777282562.json、图片生成/文生图/FLUX-fp8出图-高清放大_2004950309392838658.json、图片生成/文生图/高清放大4K_2015373674332823554.json、图片生成/文生图/高清放大4K_2091148212773146625.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/一键运行：开源 千问Qwen-image 图生图 洗图 放大_1954724218271363073.json、图片生成/图生图/千问Qwen-image GGUF 版本  图生图 洗图 放大_1954747261731389441.json、图片生成/文生图/一键运行：开源 千问Qwen-image GGUF  版本 文生图 洗图 放大_1954739193664684033.json、图片生成/文生图/一键运行：开源 千问Qwen-image 文生图 洗图 放大_1954720212358709250.json、平台全量/一键运行：开源 千问Qwen-image 局部重绘 洗图 放大_1954728412348870657.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `Anything Everywhere`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLatentImage`
-- `FluxSamplerParams+`
-- `Image Comparer (rgthree)`
+- `KSampler (Efficient)`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `Prompts Everywhere`
 - `SaveImage`
-- `UNETLoader`
 - `UltimateSDUpscale`
 - `UpscaleModelLoader`
-- `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 4/5 个有
-- `LoraLoader` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
+- `LayerFilter: HDREffects` —— 5/6 个有
+- `LoadImage` —— 4/6 个有
+- `CLIPLoaderGGUF` —— 3/6 个有
+- `UNETLoader` —— 3/6 个有
+- `UnetLoaderGGUF` —— 3/6 个有
+- `Anything Everywhere3` —— 2/6 个有
+- `EmptySD3LatentImage` —— 2/6 个有
+- `InpaintModelConditioning` —— 2/6 个有
+- `VAEEncode` —— 2/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 5 | 100% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 2.5 | 2.5 - 2.5 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 0.75 | 0.75 - 1 | 6 | 86% |
 
 ## 常见问题
 
@@ -55,5 +62,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 2.5 - 2.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 0.75，观测区间 0.75 - 1，6 个样本，取值集中（一致性 86%）

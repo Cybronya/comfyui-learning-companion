@@ -1,74 +1,61 @@
 ---
 name: unknown_workflow_video_lora_sampler_877
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.665
-common_nodes: [Anything Everywhere3, Bjornulf_AnythingToText, CLIPVisionLoader, CR Simple Text Watermark, Compare, FL_PromptSelector, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrimitiveInt, PrimitiveStringMultiline, RegexReplace, RepeatImageBatch, SetNode, ShowText|pysssss, TextSplitByDelimiterEnhanced, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy lengthAnything, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.550667
+common_nodes: [BasicScheduler, CLIPLoader, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/SVI FILM长视频工作流_1986031148419743745.json, 视频生成/图生视频/SVI SHOT 长视频（适合变化小的）_1985646905449488386.json]
+members: [视频生成/图生视频/Minimax_h3_去油&光影保持（自用）_2102671994377560065.json, 视频生成/图生视频/poster animation_2094321304538279938.json, 视频生成/文生视频/MiniMax+H3  9 图_2085645558315831298.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_877
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SVI FILM长视频工作流_1986031148419743745.json、视频生成/图生视频/SVI SHOT 长视频（适合变化小的）_1985646905449488386.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Minimax_h3_去油&光影保持（自用）_2102671994377560065.json、视频生成/图生视频/poster animation_2094321304538279938.json、视频生成/文生视频/MiniMax+H3  9 图_2085645558315831298.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Anything Everywhere3`
-- `Bjornulf_AnythingToText`
-- `CLIPVisionLoader`
-- `CR Simple Text Watermark`
-- `Compare`
-- `FL_PromptSelector`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+全部 3 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
 - `GetNode`
-- `ImageResizeKJv2`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RegexReplace`
-- `RepeatImageBatch`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `ShowText|pysssss`
-- `TextSplitByDelimiterEnhanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy ifElse`
-- `easy lengthAnything`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `InvertMask` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `VRAM_Debug` —— 1/2 个有
-- `WanVideoVACEStartToEndFrame` —— 1/2 个有
-- `easy seed` —— 1/2 个有
+- `BasicGuider` —— 2/3 个有
+- `ComfyMathExpression` —— 2/3 个有
+- `JjkText` —— 2/3 个有
+- `Text` —— 2/3 个有
+- `CFGGuider` —— 1/3 个有
+- `CLIPTextEncode` —— 1/3 个有
+- `H3SigmaRefiner` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LayerUtility: TextJoin` —— 1/3 个有
+- `MathExpression|pysssss` —— 1/3 个有
+- `MiniMaxH3SigmaShift` —— 1/3 个有
+- `ModelAttentionBackend` —— 1/3 个有
+- `QwenH3PromptLocal` —— 1/3 个有
 
 ## 典型参数
 
@@ -80,4 +67,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

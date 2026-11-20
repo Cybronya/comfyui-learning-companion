@@ -1,52 +1,41 @@
 ---
 name: unknown_workflow_video_143
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.868
-common_nodes: [ACEStepGen, GenerationParameters, GetTextFromJson, IndexTTSRun, JWStringReplace, LayerUtility: PurgeVRAM, LoadAudio, LoadJsonFromText, LoadVideo, MultiLineLyrics, MultiLinePromptACES, PrimitiveStringMultiline, RH_HeyGemNode, RH_LLMAPI_NODE, ReplaceText, SaveAudio, SaveVideo, ShowText, Text Concatenate, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, easy saveText, easy showAnything]
+frequency: 3
+level: moderate
+coverage: 0.615
+common_nodes: [DWPreprocessor, DepthAnythingV2Preprocessor, MuyeImageBlendingMode, PreviewAny, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeyGem音乐数字人_仅需主题2分钟生成长视频数字人_1925690454367490050.json, 音频生成/音频生成/Index声音克隆+heygem视频数字人强强联合_1925755292515274753.json]
+members: [平台全量/深度视频制作-视频转深度视频_2102047280990867458.json, 平台全量/视频转深度视频_2107756043605467137.json, 视频生成/文生视频/minimax参考输入depth与openpose_2101320036567834625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_143
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/HeyGem音乐数字人_仅需主题2分钟生成长视频数字人_1925690454367490050.json、音频生成/音频生成/Index声音克隆+heygem视频数字人强强联合_1925755292515274753.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/深度视频制作-视频转深度视频_2102047280990867458.json、平台全量/视频转深度视频_2107756043605467137.json、视频生成/文生视频/minimax参考输入depth与openpose_2101320036567834625.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ACEStepGen`
-- `GenerationParameters`
-- `GetTextFromJson`
-- `IndexTTSRun`
-- `JWStringReplace`
-- `LayerUtility: PurgeVRAM`
-- `LoadAudio`
-- `LoadJsonFromText`
-- `LoadVideo`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `PrimitiveStringMultiline`
-- `RH_HeyGemNode`
-- `RH_LLMAPI_NODE`
-- `ReplaceText`
-- `SaveAudio`
-- `SaveVideo`
-- `ShowText`
-- `Text Concatenate`
-- `Text Multiline`
+全部 3 个 workflow 都包含：
+- `DWPreprocessor`
+- `DepthAnythingV2Preprocessor`
+- `MuyeImageBlendingMode`
+- `PreviewAny`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy saveText`
-- `easy showAnything`
+- `VHS_VideoInfo`
+
+**可变部分**（部分 workflow 才有）：
+- `GetNode` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `孤海注释` —— 1/3 个有
 
 ## 典型参数
 
@@ -58,4 +47,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

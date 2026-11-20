@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1891
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.7225
-common_nodes: [CR Prompt Text, IndexTTS2Run, LoadAudio, Note Plus (mtb), SaveAudio]
+coverage: 0.875
+common_nodes: [CR Prompt Text, PreviewAny, SaveAudioAdvanced, T8DramaDecode, T8DramaGenerate, T8DramaLoader, T8DramaSession]
 problems: []
 missing: []
-members: [音频生成/音频生成/🪂IndexTTS2 最强语音克隆 带情绪控制【单人版】🪂_1966003776991694849.json, 音频生成/音频生成/🪂IndexTTS2 最强语音克隆 带情绪控制【多人版】🪂_1966011585905029122.json]
+members: [平台全量/Drama3文生音频_2119772527487709185.json, 音频生成/音频生成/Drama3文生音频_2116168568160219138.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1891
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/🪂IndexTTS2 最强语音克隆 带情绪控制【单人版】🪂_1966003776991694849.json、音频生成/音频生成/🪂IndexTTS2 最强语音克隆 带情绪控制【多人版】🪂_1966011585905029122.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/Drama3文生音频_2119772527487709185.json、音频生成/音频生成/Drama3文生音频_2116168568160219138.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CR Prompt Text`
-- `IndexTTS2Run`
-- `LoadAudio`
-- `Note Plus (mtb)`
-- `SaveAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `PreviewAny`
+- `SaveAudioAdvanced`
+- `T8DramaDecode`
+- `T8DramaGenerate`
+- `T8DramaLoader`
+- `T8DramaSession`
 
 ## 典型参数
 

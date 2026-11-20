@@ -1,69 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_98
 type: Unknown Workflow
-frequency: 16
+frequency: 18
 level: moderate
-coverage: 0.984875
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.657111
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/251230002.infinitetalk图片对口型_2005797859406610434.json, 数字人/数字人/AA--数字人唱歌说话InfiniteTalk对口型图生视频_2006334086171860994.json, 数字人/数字人/AI对口型 唱歌 MV 数字人 超自然版本 InfiniTetalk_2070151514823417858.json, 数字人/数字人/IndexTTS语音克隆+Multitalk数字人对口型_2014970237870936065.json, 数字人/数字人/infinitetalk单人图片数字人_1998671281597861890.json, 数字人/数字人/infinitetalk数字人-灵影自用_1984800186230849537.json, 数字人/数字人/【数字人说话】 语音克隆音频驱动对口型_2056897514678345729.json, 数字人/数字人/数字人_1961694108299542529.json, 视频生成/图生视频/Multitalk数字人一条龙加强_1954868813227593730.json, 视频生成/图生视频/【数字人说话】 语音克隆音频驱动对口型 对口型数字人sonic【图片+音频】_1979755261789376514.json, 视频生成/图生视频/声音克隆+文字引导+图片生成数字人对口型说话-阿浩_2026920860375851010.json, 视频生成/图生视频/💂_IndexTTS语音克隆+Multitalk数字人对口型💂__1954737241992118273.json, 视频生成/文生视频/视频数字人对口 IndexTTS V2 带情绪的声音克隆 能生成一段音频，根据不同类型音调克隆声音_1994301248816037890.json, 音频生成/音频生成/IndexTTS语音克隆+Multitalk数字人对口型_1954811221523390466.json, 音频生成/音频生成/【数字人说话】 语音克隆音频驱动对口型_1957341883464871937.json, 音频生成/音频生成/【文字转音频】IndexTTS V2 带情绪的声音克隆 能生成一段音频，根据不同类型音调克隆声音_1986588000891109378.json]
+members: [视频生成/图生视频/MiniMaxH3 15秒卡点混剪工作流 像素幻想Lab_2090775624343445505.json, 视频生成/图生视频/MiniMaxH3巨构专用_图生视频_2115276904893870082.json, 视频生成/图生视频/MiniMaxH3首尾帧工作流 By 像素幻想Lab_2087128132951298049.json, 视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json, 视频生成/图生视频/Minimax H3 首尾帧_2089249903888392193.json, 视频生成/图生视频/MinimaxH3 海螺 4步lightx2v加速lora 多重提速 图生视频工作流_2084221979170795521.json, 视频生成/图生视频/【MINIMAX-H3】最强W版武戏-极速版_2111450852316770305.json, 视频生成/文生视频/15秒卡点混剪_2092720568926818306.json, 视频生成/文生视频/Minimax-H3剧情片工作台_2096851323793797122.json, 视频生成/文生视频/【MINIMAX-H3】八月最强打斗武戏-低配版_2100800495819517953.json, 视频生成/文生视频/【MINIMAX-H3】八月最强打斗武戏-高配版_2100787794460372994.json, 视频生成/文生视频/【MINIMAX-H3】八月最强打斗武戏_2094872667374571522.json, 视频生成/文生视频/【MINIMAX-H3】八月最强打斗武戏_2098355739667554306.json, 视频生成/文生视频/【MINIMAX-H3】八月最强文戏-低配版_2094683715619348482.json, 视频生成/文生视频/【MINIMAX-H3】八月最强文戏-低配版_2098599696725004290.json, 视频生成/文生视频/【MINIMAX-H3】打斗版-二采_2101165086437109761.json, 视频生成/文生视频/【二采-低配版】MinMaxh3日常短剧专用_2095180548556808193.json, 视频生成/文生视频/【二采】MinMaxh3动态打斗专用_2095187337885085698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_98
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（数字人/数字人/251230002.infinitetalk图片对口型_2005797859406610434.json、数字人/数字人/AA--数字人唱歌说话InfiniteTalk对口型图生视频_2006334086171860994.json、数字人/数字人/AI对口型 唱歌 MV 数字人 超自然版本 InfiniTetalk_2070151514823417858.json、数字人/数字人/IndexTTS语音克隆+Multitalk数字人对口型_2014970237870936065.json、数字人/数字人/infinitetalk单人图片数字人_1998671281597861890.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3 15秒卡点混剪工作流 像素幻想Lab_2090775624343445505.json、视频生成/图生视频/MiniMaxH3巨构专用_图生视频_2115276904893870082.json、视频生成/图生视频/MiniMaxH3首尾帧工作流 By 像素幻想Lab_2087128132951298049.json、视频生成/图生视频/Minimax H3 图生视频_2084264368950304769.json、视频生成/图生视频/Minimax H3 首尾帧_2089249903888392193.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `LoadAudio`
+全部 18 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `SimpleMath+` —— 15/16 个有
-- `ImpactInt` —— 14/16 个有
-- `CR Text` —— 13/16 个有
-- `WanVideoTorchCompileSettings` —— 13/16 个有
-- `Audio Duration (mtb)` —— 12/16 个有
-- `ImageResizeKJv2` —— 11/16 个有
-- `IndexTTSRun` —— 10/16 个有
-- `MultiLinePromptIndex` —— 10/16 个有
-- `SaveAudioMP3` —— 10/16 个有
-- `AudioCrop` —— 6/16 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/16 个有
-- `AudioSeparation` —— 4/16 个有
-- `JWIntegerToString` —— 2/16 个有
-- `CreateVideo` —— 1/16 个有
-- `Float to Int` —— 1/16 个有
-- `GetImageRangeFromBatch` —— 1/16 个有
-- `INTConstant` —— 1/16 个有
-- `MathExpression|pysssss` —— 1/16 个有
-- `SaveVideo` —— 1/16 个有
-- `SoundFlow_GetLength` —— 1/16 个有
-- `ToInt` —— 1/16 个有
-- `easy positive` —— 1/16 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 16/18 个有
+- `ResolutionSelector` —— 16/18 个有
+- `H3SigmaRefiner` —— 14/18 个有
+- `MiniMaxH3ReferenceToVideo` —— 13/18 个有
+- `ModelAttentionBackend` —— 13/18 个有
+- `CR Prompt Text` —— 11/18 个有
+- `ExtendIntermediateSigmas` —— 11/18 个有
+- `GetNode` —— 11/18 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/18 个有
+- `LoadAudio` —— 11/18 个有
+- `SetNode` —— 11/18 个有
+- `忽略多组孤海` —— 11/18 个有
+- `INTConstant` —— 10/18 个有
+- `LTXVConcatAVLatent` —— 9/18 个有
+- `LTXVSeparateAVLatent` —— 9/18 个有
+- `MinimaxH3LatentUpscaler3D` —— 9/18 个有
+- `PreviewImage` —— 8/18 个有
+- `MiniMaxH3ImageToVideo` —— 5/18 个有
+- `ShowText|pysssss` —— 5/18 个有
+- `llama_cpp_instruct_adv` —— 4/18 个有
+- `llama_cpp_model_loader` —— 4/18 个有
+- `llama_cpp_parameters` —— 4/18 个有
+- `MuyeTextEditOutput` —— 3/18 个有
+- `PreviewAny` —— 3/18 个有
+- `RH_LLMAPI_Pro_Node` —— 3/18 个有
+- `ImageResizeKJv2` —— 2/18 个有
+- `MiniMaxH3SigmaShift` —— 2/18 个有
+- `CR Text` —— 1/18 个有
+- `Label (rgthree)` —— 1/18 个有
+- `StariAI-MiniMaxH3-Skill` —— 1/18 个有
+- `XB_BatchImages` —— 1/18 个有
 
 ## 典型参数
 

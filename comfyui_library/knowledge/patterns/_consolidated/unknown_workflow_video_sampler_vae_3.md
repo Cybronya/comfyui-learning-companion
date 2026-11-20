@@ -1,67 +1,73 @@
 ---
 name: unknown_workflow_video_sampler_vae_3
 type: Unknown Workflow
-frequency: 35
+frequency: 63
 level: moderate
-coverage: 0.876086
-common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.83119
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/3D流体模型_海底火山立方体沙盘_FusionX 图生视频_1947497424588804097.json, 视频生成/图生视频/FusionX 图生视频_1940026331533053954.json, 视频生成/图生视频/FusionX图生视频0620_1935947628817342465.json, 视频生成/图生视频/FusioniX 加速 文生视频 质量爱了了_1934583332875509762.json, 视频生成/图生视频/WAN2.1——图生视频_2057084375598190594.json, 视频生成/图生视频/WAN2.1——图生视频_2057084731044491265.json, 视频生成/图生视频/lightx2v 4k视频加速 Wan2.1 图生视频_1935278134251933697.json, 视频生成/图生视频/低动态高级感镜头图生视频 -自动补充提示词-丰富镜头感_2055195231242473473.json, 视频生成/图生视频/低动态高级感镜头图生视频 -自动补充提示词-丰富镜头感_2056229188012609537.json, 视频生成/图生视频/低动态高级感镜头图生视频 -自动补充提示词-丰富镜头感_2079527648375689218.json, 视频生成/图生视频/低动态高级感镜头，自动补充提示词_2075860767596957698.json, 视频生成/图生视频/图生视频+大片高清镜头（1）_2068610763643777025.json, 视频生成/图生视频/图生视频_2066417001643466754.json, 视频生成/图生视频/图生视频_2067229672198467586.json, 视频生成/图生视频/图生视频低动态高级感镜头_2057085752223289345.json, 视频生成/图生视频/图生视频低动态高级感镜头_2057099932099764225.json, 视频生成/图生视频/图生视频低动态高级感镜头_2058161802457993218.json, 视频生成/图生视频/图生视频低动态高级感镜头_2058161864189759489.json, 视频生成/图生视频/图生视频低动态高级感镜头_2058214377865699330.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2053757688374407170.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2054373012950003714.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2057090521096605698.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2057702030290022402.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2059161156807389185.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2061465630519422977.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2061806642852884482.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2061848754252247041.json, 视频生成/图生视频/图生视频低动态高级感镜头，自动补充提示词_2079207279131447297.json, 视频生成/图生视频/图生视频高清镜头，大片既视感！_2060256682403516417.json, 视频生成/图生视频/图生视频高清镜头，大片既视感！_2061266083507691521.json, 视频生成/图生视频/图生视频高清镜头，大片既视感！_2068190799677972481.json, 视频生成/图生视频/高清图生视频_2066424206253973505.json, 视频生成/图生视频/高清图生视频_2069697154142269441.json, 视频生成/图生视频/🤖FusionX 图生视频  超清臻享版🤖_1934859937551949825.json, 视频生成/图生视频/🤖【Wan2.1视频】lightx2v 图生视频  超清加速版🤖_1935242546002198529.json]
+members: [视频生成/图生视频/图片对口型_2044939873613783041.json, 视频生成/图生视频/对口型新版本  唱歌MV  数字人 InfiniTetalk 超自然数字人对口型_2078771569698099202.json, 视频生成/图生视频/对口型新版本  唱歌MV  数字人 InfiniTetalk 超自然数字人对口型_2080723260165152769.json, 视频生成/图生视频/情感口播-数字人InfiniTetalk-超自然数字人对口型-最新版_2093601981502943233.json, 视频生成/图生视频/数字人   情感口播   对口型 InfiniTetalk 超自然数字人对口型_2075490794521325570.json, 视频生成/图生视频/数字人  口播对口型 情感口播   InfiniTetalk 超自然数字人对口型_2075865866260017154.json, 视频生成/图生视频/数字人  口播对口型 情感口播   InfiniTetalk 超自然数字人对口型_2079634564682702849.json, 视频生成/图生视频/数字人  对口型  图生视频 1080_2068945595565428737.json, 视频生成/图生视频/数字人  对口型  图生视频 720_2069044302919061505.json, 视频生成/图生视频/数字人  对口型 情感口播   InfiniTetalk 超自然数字人对口型_2105303397204316162.json, 视频生成/图生视频/数字人  对口型 情感口播   InfiniTetalk 超自然数字人对口型_2107864666704801793.json, 视频生成/图生视频/数字人  对口型 情感口播   InfiniTetalk_2110814481499643906.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2075613053911130113.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2076901358288072706.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2076909562518659074.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2077300395646480385.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2079609688785768450.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2083956043880689666.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2085630110836813826.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2087574736502087681.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2105010232169684994.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2105010819837812737.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2105304431507107841.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2105618429364498434.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2108123594831253506.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2110061697007439874.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2110073858035380225.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2110806719805878274.json, 视频生成/图生视频/数字人  对口型 情感口播  InfiniTetalk 超自然数字人对口型_2111008354985398273.json, 视频生成/图生视频/数字人  对口型 情感口播 InfiniTetalk 超自然数字人对口型_2105011268607369217.json, 视频生成/图生视频/数字人 对口型   带货视频  InfiniTetalk超自然数字人对口型_2047155248933904385.json, 视频生成/图生视频/数字人 对口型 InfiniTetalk 超自然数字人对口型_2078843706689540097.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2079147020828372993.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2080160925914583042.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2080178441332289538.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2080345685806895105.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2080892606984318978.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2081984448601616385.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2082351558217523201.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2082400887716278273.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2083090813088784386.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2084156651057278977.json, 视频生成/图生视频/数字人 对口型 情感口播   InfiniTetalk 超自然数字人对口型_2085638324332621826.json, 视频生成/图生视频/数字人 对口型 情感口播  InfiniTetalk 超自然数字人对口型_2105218699513909249.json, 视频生成/图生视频/数字人 对口型 情感口播  InfiniTetalk 超自然数字人对口型_2105669087748780033.json, 视频生成/图生视频/数字人 对口型 情感口播  InfiniTetalk 超自然数字人对口型_2108130030143496194.json, 视频生成/图生视频/数字人 对口型 情感口播  InfiniTetalk 超自然数字人对口型_2110061974708121602.json, 视频生成/图生视频/数字人 对口型 情感口播  InfiniTetalk 超自然数字人对口型_2111001014332641282.json, 视频生成/图生视频/数字人 对口型 情感口播  InfiniTetalk 超自然数字人对口型_2111356065777537026.json, 视频生成/图生视频/数字人 对口型 情感口播  infiniTetalk 超自然数字人对口型_2097054536786604033.json, 视频生成/图生视频/数字人 对口型 情感口播 InfiniTetalk 超自然数字人对口型_2105549234111074306.json, 视频生成/图生视频/数字人 对口型 情感口播 InfiniTetalk 超自然数字人对口型_2107876118337511425.json, 视频生成/图生视频/数字人 对口型 情感口播 InfiniTetalk 超自然数字人对口型_2108196821305741314.json, 视频生成/图生视频/数字人 对口型 情感口播 InfiniTetalk 超自然数字人对口型_2111164421484662785.json, 视频生成/图生视频/数字人 情感口播   InfiniTetalk 效果超级好数字人对口型_2081379355984490498.json, 视频生成/图生视频/数字人InfiniTetalk超自然_2070345789213331457.json, 视频生成/图生视频/数字人_2080570679388364802.json, 视频生成/图生视频/数字人单人图像_2013190934099402754.json, 视频生成/图生视频/最强数字人——InfiniTetalk（图像驱动）_2047223664793362433.json, 视频生成/图生视频/超自然数字人对口型_2040965142040547330.json, 视频生成/图生视频/超自然数字人对口型单人图像驱动_2067590324024864769.json, 视频生成/图生视频/（单人）InfiniteTalk超自然数字人对口型图像驱动_2009261993735233537.json, 视频生成/图生视频/（数字人）单图生视频+视频配口型工作流_2059508557720154113.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_3
 
-> 由 `engine/knowledge_consolidation` 从 35 个 workflow 归纳得出（视频生成/图生视频/3D流体模型_海底火山立方体沙盘_FusionX 图生视频_1947497424588804097.json、视频生成/图生视频/FusionX 图生视频_1940026331533053954.json、视频生成/图生视频/FusionX图生视频0620_1935947628817342465.json、视频生成/图生视频/FusioniX 加速 文生视频 质量爱了了_1934583332875509762.json、视频生成/图生视频/WAN2.1——图生视频_2057084375598190594.json…）
+> 由 `engine/knowledge_consolidation` 从 63 个 workflow 归纳得出（视频生成/图生视频/图片对口型_2044939873613783041.json、视频生成/图生视频/对口型新版本  唱歌MV  数字人 InfiniTetalk 超自然数字人对口型_2078771569698099202.json、视频生成/图生视频/对口型新版本  唱歌MV  数字人 InfiniTetalk 超自然数字人对口型_2080723260165152769.json、视频生成/图生视频/情感口播-数字人InfiniTetalk-超自然数字人对口型-最新版_2093601981502943233.json、视频生成/图生视频/数字人   情感口播   对口型 InfiniTetalk 超自然数字人对口型_2075490794521325570.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：35
+- **样本数**：63
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 35 个 workflow 都包含：
-- `DownloadAndLoadGIMMVFIModel`
-- `GIMMVFI_interpolate`
+全部 63 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 34/35 个有
-- `CR Text` —— 34/35 个有
-- `ImpactInt` —— 34/35 个有
-- `LoadImage` —— 34/35 个有
-- `SimpleMath+` —— 34/35 个有
-- `UpscaleModelLoader` —— 34/35 个有
-- `WanVideoClipVisionEncode` —— 34/35 个有
-- `WanVideoImageToVideoEncode` —— 34/35 个有
-- `easy showAnything` —— 34/35 个有
-- `Fast Groups Bypasser (rgthree)` —— 33/35 个有
-- `ImageResizeKJ` —— 33/35 个有
-- `PreviewImage` —— 33/35 个有
-- `Qwen3VL_Advanced` —— 28/35 个有
-- `ImageScaleToMegapixels` —— 6/35 个有
-- `Text` —— 3/35 个有
-- `Seed (rgthree)` —— 2/35 个有
-- `WanVideoLoraSelect` —— 2/35 个有
-- `WanVideoMagCache` —— 2/35 个有
-- `easy cleanGpuUsed` —— 2/35 个有
-- `ImageFromBatch+` —— 1/35 个有
-- `ImageResize+` —— 1/35 个有
-- `Note Plus (mtb)` —— 1/35 个有
-- `WanVideoEmptyEmbeds` —— 1/35 个有
-- `WanVideoSLG` —— 1/35 个有
+- `GetImageRangeFromBatch` —— 62/63 个有
+- `WanVideoLoraSelect` —— 62/63 个有
+- `Audio Duration (mtb)` —— 61/63 个有
+- `GetNode` —— 60/63 个有
+- `PlaySound|pysssss` —— 60/63 个有
+- `SetNode` —— 60/63 个有
+- `easy int` —— 9/63 个有
+- `easy showAnything` —— 8/63 个有
+- `Anything Everywhere` —— 7/63 个有
+- `PreviewAudio` —— 7/63 个有
+- `WanVideoTorchCompileSettings` —— 6/63 个有
+- `ColorCorrectOfUtils` —— 2/63 个有
+- `ImageCASharpening+` —— 2/63 个有
+- `FL_FloatToInt` —— 1/63 个有
+- `Label (rgthree)` —— 1/63 个有
+- `PreviewImage` —— 1/63 个有
+- `RH_GetAudioDuration` —— 1/63 个有
+- `SaveAudio` —— 1/63 个有
+- `Text` —— 1/63 个有
+- `WanVideoLoraSelectMulti` —— 1/63 个有
+- `WanVideoSetBlockSwap` —— 1/63 个有
+- `WanVideoSetLoRAs` —— 1/63 个有
+- `easy convertAnything` —— 1/63 个有
 
 ## 典型参数
 

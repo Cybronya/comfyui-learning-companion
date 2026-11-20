@@ -1,51 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_563
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.7465
-common_nodes: [BasicGuider, BasicScheduler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
+coverage: 0.8226
+common_nodes: [DownloadAndLoadWav2VecModel, ImageFromBatch+, Int, JWInteger, LoadAudio, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMaxH3参考图生视频_2094795058393468929.json, 视频生成/图生视频/MiniMaxH3参考图生视频_2097348758643240962.json, 视频生成/图生视频/MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2088895118051991553.json, 视频生成/图生视频/稳定性优化MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2093293369748451329.json]
+members: [图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json, 数字人/数字人/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977645629725908994.json, 数字人/数字人/顶级唱歌演讲数字人T2V+lynx配合InfiniteTalk_1977047731871064066.json, 视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json, 视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_563
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3参考图生视频_2094795058393468929.json、视频生成/图生视频/MiniMaxH3参考图生视频_2097348758643240962.json、视频生成/图生视频/MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2088895118051991553.json、视频生成/图生视频/稳定性优化MinimaxH3 Easy动作迁移人物替换1080高画质 角色替换 服装替换+全节点注释_2093293369748451329.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/T2V+lynx+InfiniteTalk+脸部参考+超强一致性_1977182802045214722.json、数字人/数字人/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977645629725908994.json、数字人/数字人/顶级唱歌演讲数字人T2V+lynx配合InfiniteTalk_1977047731871064066.json、视频生成/文生视频/(生产力)-T2V+lynx+InfiniteTalk+脸部参考+超强一致性V2_1977531647312711681.json、视频生成/文生视频/Wan2.1_T2V_lynx+InfiniteTalk数字人_1977002957059301377.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `KSamplerSelect`
+全部 5 个 workflow 都包含：
+- `DownloadAndLoadWav2VecModel`
+- `ImageFromBatch+`
+- `Int`
+- `JWInteger`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
+- `SetNode`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 2/4 个有
-- `LoadVideo` —— 2/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/4 个有
-- `ModelAttentionBackend` —— 2/4 个有
-- `PrimitiveInt` —— 2/4 个有
-- `RTXVideoSuperResolution` —— 2/4 个有
-- `TextInput_` —— 2/4 个有
-- `BiRefNetRMBG` —— 1/4 个有
+- `AudioCrop` —— 4/5 个有
+- `AudioSeparation` —— 4/5 个有
+- `CR Integer To String` —— 4/5 个有
+- `CR Text` —— 4/5 个有
+- `GetNode` —— 4/5 个有
+- `ImageConcatMulti` —— 4/5 个有
+- `ImageResize+` —— 4/5 个有
+- `ImpactSwitch` —— 4/5 个有
+- `RH_LLMAPI_NODE` —— 4/5 个有
+- `SaveAudio` —— 4/5 个有
+- `SoundFlow_GetLength` —— 4/5 个有
+- `Text Concatenate` —— 4/5 个有
+- `ToInt` —— 4/5 个有
+- `Wan22PromptSelector` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `ImageResizeKJv2` —— 1/5 个有
+- `MelBandRoFormerModelLoader` —— 1/5 个有
+- `MelBandRoFormerSampler` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `PrimitiveStringMultiline` —— 1/5 个有
+- `VideoCombine_Adv` —— 1/5 个有
 
 ## 典型参数
 

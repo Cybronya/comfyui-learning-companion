@@ -3,34 +3,48 @@ name: unknown_workflow_generic_1159
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.65
-common_nodes: [RH_Wan26_T2V, SaveVideo]
+coverage: 0.659
+common_nodes: [GoohaiUniversalSlider, ImageTile+, JjkText, LoadImage, MultiTextConcatenate, Number to Text, PreviewImage, RTXVideoSuperResolution, SaveImage, ShowText|pysssss, Text Prompt (JPS), easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, ttN concat, 孤海注释]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan 2.6 文生视频 15秒1080P_2000813490891784193.json, 视频生成/文生视频/Wan2.6- (文生视频10-15秒)，用嘴创作视频、TVC、电影，音画同步!_2000788643021193217.json, 视频生成/文生视频/Wan2.6：文生视频，指令即电影，解锁专业叙事新维度！_2000759216078024705.json]
+members: [图片生成/图生图/一键生成专业影视分镜_四宫格-九宫格_智能拆分功能【阿夕AI】_2052198284567035905.json, 图片生成/图生图/一键生成专业影视分镜_四宫格-九宫格_智能拆分功能【阿夕AI】_2116395152498585601.json, 视频生成/图生视频/一键生成专业影视分镜_四宫格-九宫格_智能拆分功能【阿夕AI】_2116377543132667906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1159
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan 2.6 文生视频 15秒1080P_2000813490891784193.json、视频生成/文生视频/Wan2.6- (文生视频10-15秒)，用嘴创作视频、TVC、电影，音画同步!_2000788643021193217.json、视频生成/文生视频/Wan2.6：文生视频，指令即电影，解锁专业叙事新维度！_2000759216078024705.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/一键生成专业影视分镜_四宫格-九宫格_智能拆分功能【阿夕AI】_2052198284567035905.json、图片生成/图生图/一键生成专业影视分镜_四宫格-九宫格_智能拆分功能【阿夕AI】_2116395152498585601.json、视频生成/图生视频/一键生成专业影视分镜_四宫格-九宫格_智能拆分功能【阿夕AI】_2116377543132667906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `RH_Wan26_T2V`
-- `SaveVideo`
+- `GoohaiUniversalSlider`
+- `ImageTile+`
+- `JjkText`
+- `LoadImage`
+- `MultiTextConcatenate`
+- `Number to Text`
+- `PreviewImage`
+- `RTXVideoSuperResolution`
+- `SaveImage`
+- `ShowText|pysssss`
+- `Text Prompt (JPS)`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `ttN concat`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `LoadAudio` —— 2/3 个有
-- `PreviewAny` —— 2/3 个有
-- `RHHiddenNodes` —— 1/3 个有
+- `RH_RhartImageNNb21ImageToImage` —— 2/3 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/3 个有
 
 ## 典型参数
 

@@ -3,68 +3,75 @@ name: text_to_image_lora_sampler_clip_232
 type: Text To Image
 frequency: 9
 level: strong
-coverage: 0.882222
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.854444
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, H3SigmaRefiner, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ResolutionSelector, SelfLiftH3Sampler, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMaxH3图生视频场景特效直出_2093415902871121922.json, 视频生成/文生视频/Minimax H3提速全节点注释｜8步增速图生视频视频生视频_2089374494271041537.json, 视频生成/文生视频/Minimax H3文生视频工作流｜高质量视频生成_2095259805958098946.json, 视频生成/文生视频/MinimaxH3文生视频4步LORA加速-文生视频工作流_2087387239872557058.json, 视频生成/文生视频/Minimax_h3超级加速文生视频｜角色一致表演流畅省币首选_2103681865688375297.json, 视频生成/文生视频/SageAttention+LoRA双重加速文生视频｜MiniMax H3文生视频工作流_2087185930007437314.json, 视频生成/文生视频/SageAttention+LoRA双重加速｜MiniMax H3文生视频_2089404463130963970.json, 视频生成/文生视频/T2V文生视频直出｜MiniMax H3高清视频一键生成_2089822887556509698.json, 视频生成/文生视频/像素幻想Lab出品｜MiniMaxH3图生视频场景特效_2093741804817567745.json]
+members: [视频生成/文生视频/MiniMax H3 SelfLift双采4步Lora6步均衡版视频处理工具_2102182079902609410.json, 视频生成/文生视频/MiniMax H3 SelfLift双采8步Lora12步质量版视频处理工具_2102183788070662146.json, 视频生成/文生视频/MiniMax H3 SelfLift工作流V1，文生视频视频生视频图生视频方案_2103940357879844865.json, 视频生成/文生视频/MiniMax H3 SelfLift版本｜768P通用生视频轻量出片｜文生视频_2099096873352126465.json, 视频生成/文生视频/MiniMax H3 SelfLift精修｜4K超清通用视频生成不糊帧｜文图双输入_2099102127078600705.json, 视频生成/文生视频/MiniMax H3 SelfLift通用生视频 768P多模态创作_2098829148855816193.json, 视频生成/文生视频/Minimax H3 self-lift双采 BF16加sage四步加速lora高质量高速_2098296538933059585.json, 视频生成/文生视频/Minimax H3 self-lift双采 sage加速二十五步最高质量版_2098297223221178370.json, 视频生成/文生视频/Self Lift双采工作流文生图生视频，文生视频图生视频高效创作方案_2105780339426816001.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_232
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/MiniMaxH3图生视频场景特效直出_2093415902871121922.json、视频生成/文生视频/Minimax H3提速全节点注释｜8步增速图生视频视频生视频_2089374494271041537.json、视频生成/文生视频/Minimax H3文生视频工作流｜高质量视频生成_2095259805958098946.json、视频生成/文生视频/MinimaxH3文生视频4步LORA加速-文生视频工作流_2087387239872557058.json、视频生成/文生视频/Minimax_h3超级加速文生视频｜角色一致表演流畅省币首选_2103681865688375297.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 SelfLift双采4步Lora6步均衡版视频处理工具_2102182079902609410.json、视频生成/文生视频/MiniMax H3 SelfLift双采8步Lora12步质量版视频处理工具_2102183788070662146.json、视频生成/文生视频/MiniMax H3 SelfLift工作流V1，文生视频视频生视频图生视频方案_2103940357879844865.json、视频生成/文生视频/MiniMax H3 SelfLift版本｜768P通用生视频轻量出片｜文生视频_2099096873352126465.json、视频生成/文生视频/MiniMax H3 SelfLift精修｜4K超清通用视频生成不糊帧｜文图双输入_2099102127078600705.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
-- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `H3SigmaRefiner`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `SelfLiftH3Sampler`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 8/9 个有
-- `KSamplerSelect` —— 8/9 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
-- `CreateVideo` —— 5/9 个有
-- `SaveVideo` —— 5/9 个有
-- `VHS_VideoCombine` —— 4/9 个有
-- `LoadImage` —— 3/9 个有
-- `LoraLoaderBypassModelOnly` —— 3/9 个有
-- `CR Text` —— 2/9 个有
-- `ShowText|pysssss` —— 2/9 个有
-- `llama_cpp_instruct_adv` —— 2/9 个有
-- `llama_cpp_model_loader` —— 2/9 个有
-- `llama_cpp_parameters` —— 2/9 个有
-- `DiffusionModelLoaderKJ` —— 1/9 个有
-- `Label (rgthree)` —— 1/9 个有
-- `MiniMaxH3DualClockSamplerT8` —— 1/9 个有
-- `MuyeTextEditOutput` —— 1/9 个有
-- `PainterVRAM` —— 1/9 个有
-- `PrimitiveStringMultiline` —— 1/9 个有
-- `easy int` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
+- `MiniMaxChunkFeedForward` —— 8/9 个有
+- `MiniMaxH3AudioConditioningT8` —— 8/9 个有
+- `MiniMaxLowVRAMAttention` —— 8/9 个有
+- `PrimitiveFloat` —— 8/9 个有
+- `PrimitiveStringMultiline` —— 8/9 个有
+- `SaveImage` —— 7/9 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/9 个有
+- `ModelAttentionBackend` —— 5/9 个有
+- `VAEDecodeAudio` —— 5/9 个有
+- `VHS_VideoCombine` —— 5/9 个有
+- `CreateVideo` —— 4/9 个有
+- `MiniMaxH3AVDecodeT8` —— 4/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/9 个有
+- `ModelPreviewOverrideKJ` —— 4/9 个有
+- `SaveVideo` —— 4/9 个有
+- `RH_DLSS5FrameInterpolation` —— 3/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
+- `GetNode` —— 2/9 个有
+- `SetNode` —— 2/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `Float` —— 1/9 个有
+- `ImageResizeKJv2` —— 1/9 个有
+- `Int` —— 1/9 个有
+- `LTXVSeparateAVLatent` —— 1/9 个有
+- `MiniMaxH3ImageToVideo` —— 1/9 个有
+- `MiniMaxH3SigmaShift` —— 1/9 个有
+- `SeedVR2` —— 1/9 个有
+- `SeedVR2BlockSwap` —— 1/9 个有
 
 ## 典型参数
 
@@ -82,7 +89,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -93,4 +100,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（10/9 个样本）：Steps较低可能导致细节不足
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

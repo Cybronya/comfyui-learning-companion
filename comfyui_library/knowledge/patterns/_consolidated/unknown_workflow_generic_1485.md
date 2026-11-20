@@ -3,36 +3,29 @@ name: unknown_workflow_generic_1485
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.882
-common_nodes: [CR Text, CR Text Concatenate, CR Text Replace, Display Any (rgthree), ImageTile+, LoadImage, PreviewImage, RH_LLMAPI_NODE, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.6
+common_nodes: [ResolutionSelector, SaveImageAdvanced, d069257b-0abc-4d5a-9a19-579e0fe5bd8d]
 problems: []
 missing: []
-members: [图片生成/图生图/分镜九宫格_2025181878906523650.json, 图片生成/文生图/分镜九宫格三段式_2027341114012864513.json]
+members: [comfyui-workflow-templates-json/image_mage_flow_t2i_int8.json, comfyui-workflow-templates-json/image_mage_flow_turbo_t2i_int8.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1485
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/分镜九宫格_2025181878906523650.json、图片生成/文生图/分镜九宫格三段式_2027341114012864513.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_mage_flow_t2i_int8.json、comfyui-workflow-templates-json/image_mage_flow_turbo_t2i_int8.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Text`
-- `CR Text Concatenate`
-- `CR Text Replace`
-- `Display Any (rgthree)`
-- `ImageTile+`
-- `LoadImage`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `RH_Nano_Banana2_Image2Image`
-- `SaveImage`
+- `ResolutionSelector`
+- `SaveImageAdvanced`
+- `d069257b-0abc-4d5a-9a19-579e0fe5bd8d`
 
 ## 典型参数
 

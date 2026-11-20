@@ -1,34 +1,37 @@
 ---
 name: unknown_workflow_sampler_clip_unet_210
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.9515
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.861571
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/02face-image（th）_2054903846115266562.json, 图片生成/反推提示词/14oldphonerestore_2049045395405283329.json, 图片生成/反推提示词/换脸_2048159102316060674.json, 图片生成/图生图/2026最新FLUX2-Klein 9B版文生图_单图多图编辑工作流_2012390556902625281.json, 图片生成/图生图/Flux2-Klein-9B双图编辑_2013423771364888578.json, 图片生成/图生图/换脸换头 Klein多图编辑 Face and Head Swap_ Klein Multi-Ima_2113063253717897218.json]
+members: [图片生成/反推提示词/30removewatermark_2049728020415520770.json, 图片生成/图生图/FLUX2 Klein 多图编辑工作流_2091477521320734722.json, 图片生成/图生图/FLUX2-Klein扩图_2044259641374281729.json, 图片生成/图生图/FLUX2Klein一次性批量扩图_2053020098847354882.json, 图片生成/图生图/FLUX2去水印万能改图单图版保持原图不变_2059054774292664321.json, 图片生成/图生图/FLUX2去水印万能改图单图版保持原图不变_2062027536372166658.json, 平台全量/FLUX2去水印+万能改图单图版（保持原图不变）_2048961797847257089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_210
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/02face-image（th）_2054903846115266562.json、图片生成/反推提示词/14oldphonerestore_2049045395405283329.json、图片生成/反推提示词/换脸_2048159102316060674.json、图片生成/图生图/2026最新FLUX2-Klein 9B版文生图_单图多图编辑工作流_2012390556902625281.json、图片生成/图生图/Flux2-Klein-9B双图编辑_2013423771364888578.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/反推提示词/30removewatermark_2049728020415520770.json、图片生成/图生图/FLUX2 Klein 多图编辑工作流_2091477521320734722.json、图片生成/图生图/FLUX2-Klein扩图_2044259641374281729.json、图片生成/图生图/FLUX2Klein一次性批量扩图_2053020098847354882.json、图片生成/图生图/FLUX2去水印万能改图单图版保持原图不变_2059054774292664321.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `Flux2Scheduler`
 - `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `PreviewImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -39,24 +42,25 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 5/6 个有
-- `CR Text` —— 4/6 个有
-- `ConditioningZeroOut` —— 4/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/6 个有
-- `GetImageSize` —— 3/6 个有
-- `ImageScaleToTotalPixels` —— 3/6 个有
-- `Int` —— 2/6 个有
-- `Any Switch (rgthree)` —— 1/6 个有
-- `DWPreprocessor` —— 1/6 个有
-- `Fast Groups Muter (rgthree)` —— 1/6 个有
-- `JWFloat` —— 1/6 个有
-- `PlaySound|pysssss` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
-- `QwenMultiangleCameraNode` —— 1/6 个有
-- `RTXVideoSuperResolution` —— 1/6 个有
-- `easy int` —— 1/6 个有
-- `easy seed` —— 1/6 个有
+- `ColorMatch` —— 6/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/7 个有
+- `GrowMaskWithBlur` —— 4/7 个有
+- `ImageCompositeMasked` —— 4/7 个有
+- `ImageCrop+` —— 4/7 个有
+- `JjkText` —— 4/7 个有
+- `LayerUtility: ImageMaskScaleAs` —— 4/7 个有
+- `SetLatentNoiseMask` —— 4/7 个有
+- `EmptyFlux2LatentImage` —— 3/7 个有
+- `Image Comparer (rgthree)` —— 3/7 个有
+- `easy imageSize` —— 3/7 个有
+- `DrawMaskOnImage` —— 2/7 个有
+- `GetImageSize` —— 2/7 个有
+- `ImagePadForOutpaint` —— 2/7 个有
+- `ImpactMakeAnyList` —— 1/7 个有
+- `LoraLoaderModelOnly` —— 1/7 个有
+- `PlaySound|pysssss` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `SetNode` —— 1/7 个有
 
 ## 典型参数
 

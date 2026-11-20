@@ -1,64 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_488
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7036
-common_nodes: [GetImageSizeAndCount, GetNode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, WanVideoAddOneToAllReferenceEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.615167
+common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/OneToAllAnimation 姿势迁移，Q版人物骨骼适配_1998982182737694722.json, 视频生成/图生视频/OneToAll视频姿势参考（骨骼绑定）_1998661075665047553.json, 视频生成/图生视频/OneToAll视频姿势参考（骨骼绑定）_1998721650784919553.json, 视频生成/图生视频/OneToAll视频姿势参考（骨骼绑定）_1999765252109631490.json, 视频生成/图生视频/OneToAll视频姿势参考（骨骼绑定）_2000385748819902466.json]
+members: [平台全量/Uni3c虚拟相机运镜_2013132244591841281.json, 平台全量/虚拟镜头视频运镜控制_1942097929782063105.json, 视频生成/图生视频/2025-06-04 wanvideo_ATI_1929480166395822081.json, 视频生成/图生视频/Z-uni3c虚拟相机工作流_1991800857396195330.json, 视频生成/图生视频/uni3c虚拟相机工作流_1941553575740993537.json, 视频生成/图生视频/模仿运镜uni3c虚拟相机_1983014964149530626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_488
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/OneToAllAnimation 姿势迁移，Q版人物骨骼适配_1998982182737694722.json、视频生成/图生视频/OneToAll视频姿势参考（骨骼绑定）_1998661075665047553.json、视频生成/图生视频/OneToAll视频姿势参考（骨骼绑定）_1998721650784919553.json、视频生成/图生视频/OneToAll视频姿势参考（骨骼绑定）_1999765252109631490.json、视频生成/图生视频/OneToAll视频姿势参考（骨骼绑定）_2000385748819902466.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Uni3c虚拟相机运镜_2013132244591841281.json、平台全量/虚拟镜头视频运镜控制_1942097929782063105.json、视频生成/图生视频/2025-06-04 wanvideo_ATI_1929480166395822081.json、视频生成/图生视频/Z-uni3c虚拟相机工作流_1991800857396195330.json、视频生成/图生视频/uni3c虚拟相机工作流_1941553575740993537.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `GetImageSizeAndCount`
+全部 6 个 workflow 都包含：
+- `CLIPVisionLoader`
 - `GetNode`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
+- `LoadWanVideoT5TextEncoder`
 - `SetNode`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddOneToAllPoseEmbeds`
-- `WanVideoAddOneToAllReferenceEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `INTConstant` —— 4/5 个有
-- `ImageConcatMulti` —— 4/5 个有
-- `ImpactInt` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `Anything Everywhere` —— 1/5 个有
-- `CR Prompt Text` —— 1/5 个有
-- `DrawViTPose` —— 1/5 个有
-- `ImageConcanate` —— 1/5 个有
-- `PoseAndFaceDetection` —— 1/5 个有
-- `PrimitiveInt` —— 1/5 个有
+- `GetImageSizeAndCount` —— 5/6 个有
+- `VHS_LoadVideo` —— 5/6 个有
+- `WanVideoEncode` —— 5/6 个有
+- `WanVideoUni3C_ControlnetLoader` —— 5/6 个有
+- `WanVideoUni3C_embeds` —— 5/6 个有
+- `AppendStringsToList` —— 1/6 个有
+- `CR SDXL Aspect Ratio` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `SplineEditor` —— 1/6 个有
+- `WanVideoATITracks` —— 1/6 个有
+- `WanVideoATITracksVisualize` —— 1/6 个有
+- `WanVideoTorchCompileSettings` —— 1/6 个有
+- `easy showAnything` —— 1/6 个有
 
 ## 典型参数
 

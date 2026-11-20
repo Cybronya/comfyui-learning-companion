@@ -1,47 +1,40 @@
 ---
 name: unknown_workflow_video_88
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, Comfly_Doubao_Seedance2_0_Asset, Comfly_api_set, CreateVideo, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveVideo, ShellAgentPluginOutputText, ShowAnything|Mie, VHS_LoadVideo, VHS_VideoInfoLoaded]
+frequency: 4
+level: moderate
+coverage: 0.6975
+common_nodes: [AILab_QwenVL, PreviewAny]
 problems: []
 missing: []
-members: [图片生成/反推提示词/（视频资产）Seedance2.0 真人ID资产库提取(贞贞的AI工坊)_2043136169650692097.json, 视频生成/图生视频/(脱敏版-支持真人)Seedance2.0满血视频参考生视频V1（贞贞的AI工坊）_2043168596234342402.json]
+members: [图片生成/反推提示词/Qwen3-VL-8B 视频反推提示词_2053010880551505922.json, 图片生成/反推提示词/视频反推Qwen3 VL 8B_2069990597007597569.json, 图片生成/反推提示词/视频反推，Qwen3 VL_2069990533380005889.json, 图片生成/文生图/Qwen3 VL电商反推图片提示词+全节点注释_2070119852093820930.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_88
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/（视频资产）Seedance2.0 真人ID资产库提取(贞贞的AI工坊)_2043136169650692097.json、视频生成/图生视频/(脱敏版-支持真人)Seedance2.0满血视频参考生视频V1（贞贞的AI工坊）_2043168596234342402.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/Qwen3-VL-8B 视频反推提示词_2053010880551505922.json、图片生成/反推提示词/视频反推Qwen3 VL 8B_2069990597007597569.json、图片生成/反推提示词/视频反推，Qwen3 VL_2069990533380005889.json、图片生成/文生图/Qwen3 VL电商反推图片提示词+全节点注释_2070119852093820930.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Comfly_Doubao_Seedance2_0_Asset`
-- `Comfly_api_set`
-- `CreateVideo`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `SaveVideo`
-- `ShellAgentPluginOutputText`
-- `ShowAnything|Mie`
-- `VHS_LoadVideo`
-- `VHS_VideoInfoLoaded`
+全部 4 个 workflow 都包含：
+- `AILab_QwenVL`
+- `PreviewAny`
 
 **可变部分**（部分 workflow 才有）：
-- `Comfly_Doubao_Seedance2_0` —— 1/2 个有
-- `Comfly_Doubao_Seedance2_0_AssetIdBundle` —— 1/2 个有
-- `GetVideoComponents` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `VHS_VideoCombine` —— 1/2 个有
+- `CR Prompt Text` —— 3/4 个有
+- `ShellAgentPluginOutputText` —— 3/4 个有
+- `VHS_LoadVideo` —— 3/4 个有
+- `ImageLoader` —— 2/4 个有
+- `SaveImage` —— 2/4 个有
+- `VHS_VideoCombine` —— 2/4 个有
+- `CR Text` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 
@@ -53,4 +46,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,35 +1,37 @@
 ---
 name: unknown_workflow_generic_1334
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 1
-common_nodes: [ImageToMask, LoadImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.889
+common_nodes: [ImageScaleDownToSize, LoadAudio, LoadImage, RH_Captioner, RunningHub OmniAvatar AllinOne, SaveVideo, Text Concatenate, Text Multiline, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/05_stage2_color_mask_composite_ui_2079176466616643586.json, 图片生成/图生图/图片去水印工作流｜LaMa 修复引擎_2095147725632393217.json]
+members: [数字人/数字人/omni-avatar数字人（图片+音频驱动）_1938785172315951106.json, 数字人/数字人/丰富手势动作数字人_阿里Omni-Avatar_1938439980119166978.json, 视频生成/图生视频/丰富手势动作数字人_阿里Omni-Avatar_1995047902009602050.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1334
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/05_stage2_color_mask_composite_ui_2079176466616643586.json、图片生成/图生图/图片去水印工作流｜LaMa 修复引擎_2095147725632393217.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/omni-avatar数字人（图片+音频驱动）_1938785172315951106.json、数字人/数字人/丰富手势动作数字人_阿里Omni-Avatar_1938439980119166978.json、视频生成/图生视频/丰富手势动作数字人_阿里Omni-Avatar_1995047902009602050.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageToMask`
+全部 3 个 workflow 都包含：
+- `ImageScaleDownToSize`
+- `LoadAudio`
 - `LoadImage`
-- `SaveImage`
-
-**可变部分**（部分 workflow 才有）：
-- `ImageCompositeMasked` —— 1/2 个有
-- `LayerUtility: LaMa` —— 1/2 个有
+- `RH_Captioner`
+- `RunningHub OmniAvatar AllinOne`
+- `SaveVideo`
+- `Text Concatenate`
+- `Text Multiline`
+- `easy showAnything`
 
 ## 典型参数
 
@@ -41,4 +43,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

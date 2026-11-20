@@ -3,35 +3,36 @@ name: unknown_workflow_generic_1879
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.739
-common_nodes: [Any Switch (rgthree), Fast Groups Muter (rgthree), IndexTTS2_Emotion, LoadAudio, SaveAudio]
+coverage: 0.7775
+common_nodes: [BiRefNetRMBG, LayerMask: Shadow & Highlight Mask, RHHiddenNodes, SDMatteApply, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆三合一_2041501277141602305.json, 音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆四合一_1967073964910632962.json]
+members: [平台全量/AI 抠图-半透明_2005991780527063041.json, 平台全量/批量 AI 抠图-半透明_2005829441517481986.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1879
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆三合一_2041501277141602305.json、音频生成/音频生成/最强情绪克隆IndexTTS2情绪音频克隆四合一_1967073964910632962.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/AI 抠图-半透明_2005991780527063041.json、平台全量/批量 AI 抠图-半透明_2005829441517481986.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：74%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Fast Groups Muter (rgthree)`
-- `IndexTTS2_Emotion`
-- `LoadAudio`
-- `SaveAudio`
+- `BiRefNetRMBG`
+- `LayerMask: Shadow & Highlight Mask`
+- `RHHiddenNodes`
+- `SDMatteApply`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/2 个有
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `CompressImages` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `RHUploadZip_V2` —— 1/2 个有
 
 ## 典型参数
 

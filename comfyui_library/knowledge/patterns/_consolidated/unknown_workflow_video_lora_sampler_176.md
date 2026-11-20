@@ -1,67 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_176
 type: Unknown Workflow
-frequency: 11
+frequency: 13
 level: moderate
-coverage: 0.586455
-common_nodes: [BasicGuider, BasicScheduler, GetNode, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3Easy, MiniMaxH3EasyLoader, MiniMaxH3EasyOutput, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, SetNode, VAEDecode, VAEDecodeAudio, VHS_VideoCombine]
+coverage: 0.625462
+common_nodes: [BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GrowMask, ImageConcatMulti, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/MinimaxH3_极简版多合一工作流_2098944049897103361.json, 图片生成/图生图/MinimaxH3_极简版多合一工作流_2099056311664201729.json, 图片生成/图生图/MinimaxH3_极简版多合一工作流_2099681052972380161.json, 图片生成/文生图/自用YZ金鱼-MinimaxH3 极简版多合一工作流_2088536818726817793.json, 数字人/数字人/Minimax H3开源版 极简版多合一工作流_2089716980113821698.json, 视频生成/图生视频/FASHION walk（自用）_2103838105584365570.json, 视频生成/图生视频/Fenglairh-MinimaxH3 极简全功能工作流_2088627150772596737.json, 视频生成/图生视频/Minimax H3开源版 极简版多l图多声音参考工作流_2108771689168457729.json, 视频生成/图生视频/Minimax H3开源版 极简版多l图多声音参考工作流_2108819302899085314.json, 视频生成/图生视频/Minimax H3开源版 极简版多合一工作流_2087847481521565698.json, 视频生成/图生视频/Minimax H3开源版 极简版多合一工作流_2087885554347233281.json]
+members: [平台全量/手动遮罩视频换装_WanAnimate2.2_1984074108189245442.json, 平台全量/最强视频换装+Animate+Wan2.2=B站艾橘溪_1985658128895225858.json, 平台全量/神气科技-视频换人 Animate Wan2.2_1992781251905998850.json, 平台全量/神气科技-视频换装 Animate Wan2.2_1991356413186277377.json, 平台全量/视频人物替换Animate_1986460629294870529.json, 平台全量/视频人物替换，动作迁移 Animate Wan2.2_2085600675559464962.json, 平台全量/视频换人 Animate Wan2.2_2000071872521924610.json, 平台全量/视频换人 Animate Wan2.2_2001286004759724034.json, 平台全量/视频换人-自动遮罩_2034239663103287297.json, 平台全量/视频换装 Animate Wan2.2_2062034069596237826.json, 数字人/数字人/人物替换Wan-Animate_1969759682535563266.json, 视频生成/图生视频/wan annimateGGUF_1970833810306801666.json, 视频生成/图生视频/人物替换，主播带货，产品展示_2041577855473160193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_176
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/MinimaxH3_极简版多合一工作流_2098944049897103361.json、图片生成/图生图/MinimaxH3_极简版多合一工作流_2099056311664201729.json、图片生成/图生图/MinimaxH3_极简版多合一工作流_2099681052972380161.json、图片生成/文生图/自用YZ金鱼-MinimaxH3 极简版多合一工作流_2088536818726817793.json、数字人/数字人/Minimax H3开源版 极简版多合一工作流_2089716980113821698.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（平台全量/手动遮罩视频换装_WanAnimate2.2_1984074108189245442.json、平台全量/最强视频换装+Animate+Wan2.2=B站艾橘溪_1985658128895225858.json、平台全量/神气科技-视频换人 Animate Wan2.2_1992781251905998850.json、平台全量/神气科技-视频换装 Animate Wan2.2_1991356413186277377.json、平台全量/视频人物替换Animate_1986460629294870529.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `GetNode`
-- `KSamplerSelect`
-- `LoadAudio`
+全部 13 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DrawMaskOnImage`
+- `FaceMaskFromPoseKeypoints`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageCropByMaskAndResize`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3Easy`
-- `MiniMaxH3EasyLoader`
-- `MiniMaxH3EasyOutput`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `PixelPerfectResolution`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 9/11 个有
-- `Text` —— 9/11 个有
-- `ImageResizeKJv2` —— 8/11 个有
-- `ResolutionSelector` —— 8/11 个有
-- `VAEEncode` —— 8/11 个有
-- `VAEEncodeAudio` —— 8/11 个有
-- `easy cleanGpuUsed` —— 8/11 个有
-- `LTXVConcatAVLatent` —— 6/11 个有
-- `PT_H3ConcatAVLatent` —— 5/11 个有
-- `EmptyImage` —— 3/11 个有
-- `LTXVSeparateAVLatent` —— 3/11 个有
-- `MinimaxH3LatentUpscaler3D` —— 3/11 个有
-- `PreviewImage` —— 3/11 个有
-- `SplitSigmas` —— 3/11 个有
-- `Float` —— 2/11 个有
-- `PrimitiveStringMultiline` —— 2/11 个有
-- `MiniMaxChunkFeedForward` —— 1/11 个有
-- `MiniMaxH3BlockCacheT8` —— 1/11 个有
-- `MiniMaxLowVRAMAttention` —— 1/11 个有
-- `ModelAttentionBackend` —— 1/11 个有
+- `GetNode` —— 12/13 个有
+- `LayerUtility: PurgeVRAM` —— 12/13 个有
+- `SetNode` —— 12/13 个有
+- `WanVideoTextEncodeCached` —— 12/13 个有
+- `WanVideoLoraSelectMulti` —— 10/13 个有
+- `JWInteger` —— 9/13 个有
+- `VHS_VideoInfo` —— 9/13 个有
+- `LayerMask: SegformerB2ClothesUltra` —— 8/13 个有
+- `easy cleanGpuUsed` —— 8/13 个有
+- `Int` —— 5/13 个有
+- `WanVideoTorchCompileSettings` —— 5/13 个有
+- `CM_IntToFloat` —— 4/13 个有
+- `GetImageSizeAndCount` —— 4/13 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 4/13 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 4/13 个有
+- `SimpleMath+` —— 4/13 个有
+- `RHHiddenNodes` —— 3/13 个有
+- `AutoNegativePrompt` —— 1/13 个有
+- `CR Prompt Text` —— 1/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
+- `Float` —— 1/13 个有
+- `GetImageRangeFromBatch` —— 1/13 个有
+- `ImageFromBatch+` —— 1/13 个有
+- `InvertMask` —— 1/13 个有
+- `Label (rgthree)` —— 1/13 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/13 个有
+- `PointsEditor` —— 1/13 个有
+- `SeCModelLoader` —— 1/13 个有
+- `SeCVideoSegmentation` —— 1/13 个有
 
 ## 典型参数
 

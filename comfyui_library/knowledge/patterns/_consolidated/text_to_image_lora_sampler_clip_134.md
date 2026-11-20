@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_134
 type: Text To Image
 frequency: 12
-level: strong
-coverage: 0.95525
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+level: weak
+coverage: 0.897
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoraLoader, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/qwen_edit-剧本场景制作-lora素材制作_1979342758429233153.json, 图片生成/图生图/qwen_edit-剧本场景制作-lora素材制作_2059284183662546945.json, 图片生成/图生图/qwen_edit_2511_最强全角度切换_2010524177542946818.json, 图片生成/图生图/qwen_edit_2511_最强生图修图拼图_2004371887692152833.json, 图片生成/图生图/qwen_image_edit_plus_multiangle_2009465484042833922.json, 图片生成/图生图/qwen_image_edit_plus_nextscene_1977038049123147778.json, 图片生成/图生图/qwen_image_edit_plus_unblur_2010375997945815041.json, 图片生成/图生图/qwen_image_edit_plus_upscale4k_1977064282565300225.json, 图片生成/图生图/qwen_image_edit_plus_use_name_1977395256004091906.json, 图片生成/图生图/图像不同角度  切换角度_2011081053884125185.json, 图片生成/图生图/图像角度控制器-qwen_image_edit_2511_2009827945770127361.json, 图片生成/图生图/测试_1988591335890403329.json]
+members: [图片生成/文生图/Qwen朋友圈海报设计V1.0文生图工具_2100273790323351553.json, 图片生成/文生图/Qwen朋友圈海报设计文生图处理生成工作流_2101019397950361601.json, 图片生成/文生图/SDXL图生图极速版 零成本快速图片风格转换_2098114830124281858.json, 图片生成/文生图/SDXL文生图工作流｜经典模型稳定出图｜入门练手必备模板_2101885301458292738.json, 图片生成/文生图/SDXL极速图生图 老树开新花零费用快速出图写实风格_2094170191398789122.json, 图片生成/文生图/SDXL极速图生图｜老树开新花写实风重绘生成_2094306606434578434.json, 图片生成/文生图/图生图老树开新花SDXL图生图极速版 快速出图方案_2109035097302327297.json, 图片生成/文生图/小腰精体态曲线塑造 文生图一键生成完美身材比例_2104343399116664834.json, 图片生成/文生图/老树开新花极速写实｜SDXL图生图零成本出图_2090826700719476738.json, 图片生成/文生图/老树开新花极速版｜SDXL图生图写实生成_2090531557399420929.json, 平台全量/Anima转ill 2.5D半写实_2093886014518554625.json, 平台全量/Anima转ill 2.5D半写实v2.0_2094353629170978818.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_134
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/qwen_edit-剧本场景制作-lora素材制作_1979342758429233153.json、图片生成/图生图/qwen_edit-剧本场景制作-lora素材制作_2059284183662546945.json、图片生成/图生图/qwen_edit_2511_最强全角度切换_2010524177542946818.json、图片生成/图生图/qwen_edit_2511_最强生图修图拼图_2004371887692152833.json、图片生成/图生图/qwen_image_edit_plus_multiangle_2009465484042833922.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/Qwen朋友圈海报设计V1.0文生图工具_2100273790323351553.json、图片生成/文生图/Qwen朋友圈海报设计文生图处理生成工作流_2101019397950361601.json、图片生成/文生图/SDXL图生图极速版 零成本快速图片风格转换_2098114830124281858.json、图片生成/文生图/SDXL文生图工作流｜经典模型稳定出图｜入门练手必备模板_2101885301458292738.json、图片生成/文生图/SDXL极速图生图 老树开新花零费用快速出图写实风格_2094170191398789122.json…）
 
 - **类型**：Text To Image
 - **样本数**：12
-- **可信度**：强结论
-- **平均知识覆盖**：96%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -27,50 +27,58 @@ source: knowledge_consolidation
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
-- `LoadImage`
+- `LoraLoader`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/12 个有
-- `CR Prompt List` —— 3/12 个有
-- `DeepTranslatorTextNode` —— 3/12 个有
-- `Get Image Size` —— 3/12 个有
-- `Text Multiline` —— 3/12 个有
-- `QwenMultiangleCameraNode` —— 2/12 个有
-- `Anything Everywhere3` —— 1/12 个有
-- `ImageResize+` —— 1/12 个有
-- `easy imageSize` —— 1/12 个有
+- `JjkText` —— 10/12 个有
+- `solarL_SaveImagesToZip` —— 10/12 个有
+- `孤海注释` —— 10/12 个有
+- `CheckpointLoaderSimple` —— 9/12 个有
+- `VAEEncode` —— 8/12 个有
+- `LoadImage` —— 6/12 个有
+- `PreviewImage` —— 5/12 个有
+- `UpscaleModelLoader` —— 5/12 个有
+- `EmptySD3LatentImage` —— 3/12 个有
+- `ImageUpscaleWithModel` —— 3/12 个有
+- `ModelSamplingAuraFlow` —— 3/12 个有
+- `ClownsharKSampler_Beta` —— 2/12 个有
+- `LatentUpscaleBy` —— 2/12 个有
+- `UltimateSDUpscale` —— 2/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 12 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| 宽度 | 1920 | 768 - 1920 | 12 | 74% |
-| 高度 | 1080 | 720 - 1080 | 12 | 83% |
+| LoRA 模型强度 | 0.3 | 0.1 - 1 | 12 | 34% |
+| LoRA 文本强度 | 0.55 | 0.3 - 1 | 12 | 48% |
+| 采样步数 | 4 | 4 - 30 | 12 | 0% |
+| Prompt 约束强度(CFG) | 4.5 | 4 - 4.5 | 12 | 96% |
+| 采样算法 | er_sde | - | 12 | 83% |
+| 调度器 | beta | - | 12 | 83% |
+| 重绘幅度 | 1 | 0.25 - 1 | 12 | 72% |
+| 宽度 | 80 | 80 - 896 | 12 | 0% |
+| 高度 | 80 | 80 - 1152 | 12 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 11/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1920，观测区间 768 - 1920，12 个样本
-- 高度 中位数 1080，观测区间 720 - 1080，12 个样本，取值集中（一致性 83%）
-- 高发问题（12/12 个样本）：Steps较低可能导致细节不足
+- LoRA 模型强度 中位数 0.3，观测区间 0.1 - 1，12 个样本，取值分散，一致性仅 34%
+- LoRA 文本强度 中位数 0.55，观测区间 0.3 - 1，12 个样本，取值分散，一致性仅 48%
+- 采样步数 中位数 4，观测区间 4 - 30，12 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4 - 4.5，12 个样本，取值集中（一致性 96%）
+- 采样算法 最常用 er_sde，12 个样本，一致性 83%
+- 调度器 最常用 beta，12 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 0.25 - 1，12 个样本
+- 宽度 中位数 80，观测区间 80 - 896，12 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1152，12 个样本，取值分散，一致性仅 0%
+- 高发问题（11/12 个样本）：Steps较低可能导致细节不足

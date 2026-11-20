@@ -3,89 +3,87 @@ name: unknown_workflow_video_lora_sampler_965
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.597
-common_nodes: [Any Switch (rgthree), CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DF_Ceil, DrawViTPose, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageConcatMulti, ImageResizeKJv2, KSampler, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PoseAndFaceDetection, PreviewImage, SetNode, SimpleMath+, SimpleMathInt+, TorchCompileModelWanVideoV2, TrimVideoLatent, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, VantageWanBlockSwap, WanAnimateToVideo, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy int, easy lengthAnything]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.7815
+common_nodes: [Florence2Run, GetImageSizeAndCount, ImageBlend, ImageFromBatch, ImageResizeKJ, LayerUtility: PurgeVRAM, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy showAnything]
+problems: []
 missing: []
-members: [视频生成/图生视频/加长版动作表情迁移，增加胸部跳动+大小调节公能功能_2029880214125289473.json, 视频生成/图生视频/动作表情迁移-15秒加长版_2029920731403915266.json]
+members: [平台全量/10s+长视频自动完整视频转绘_1913560429715517441.json, 平台全量/For循环分批次的Wan2.1-Fun视频转绘_1909861024038645762.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_965
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/加长版动作表情迁移，增加胸部跳动+大小调节公能功能_2029880214125289473.json、视频生成/图生视频/动作表情迁移-15秒加长版_2029920731403915266.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/10s+长视频自动完整视频转绘_1913560429715517441.json、平台全量/For循环分批次的Wan2.1-Fun视频转绘_1909861024038645762.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DF_Ceil`
-- `DrawViTPose`
-- `GetImageRangeFromBatch`
+- `Florence2Run`
 - `GetImageSizeAndCount`
-- `GetNode`
-- `ImageConcatMulti`
-- `ImageResizeKJv2`
-- `KSampler`
+- `ImageBlend`
+- `ImageFromBatch`
+- `ImageResizeKJ`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `OnnxDetectionModelLoader`
-- `PathchSageAttentionKJ`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `SetNode`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `SimpleMath+`
-- `SimpleMathInt+`
-- `TorchCompileModelWanVideoV2`
-- `TrimVideoLatent`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `VantageWanBlockSwap`
-- `WanAnimateToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 - `easy batchAnything`
 - `easy forLoopEnd`
 - `easy forLoopStart`
-- `easy int`
-- `easy lengthAnything`
+- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `AIO_Preprocessor` —— 1/2 个有
+- `ColorMatch` —— 1/2 个有
+- `DWPreprocessor` —— 1/2 个有
+- `DepthAnythingV2Preprocessor` —— 1/2 个有
+- `DownloadAndLoadFlorence2Model` —— 1/2 个有
+- `Florence2ModelLoader` —— 1/2 个有
+- `GetNode` —— 1/2 个有
+- `KepStringLiteral` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `SetNode` —— 1/2 个有
+- `TextCombinerTwo` —— 1/2 个有
+- `TextInput_` —— 1/2 个有
+- `VHS_BatchManager` —— 1/2 个有
+- `VHS_VideoInfoSource` —— 1/2 个有
+- `WanVideoEnhanceAVideo` —— 1/2 个有
+- `easy int` —— 1/2 个有
+- `easy promptReplace` —— 1/2 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（4/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

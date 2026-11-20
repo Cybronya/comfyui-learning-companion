@@ -1,74 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_489
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8386
-common_nodes: [AudioCrop, AudioEncoderEncode, AudioEncoderLoader, DWPreprocessor, Display Int (rgthree), INTConstant, ImageConcanate, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewImage, SimpleMath+, SoundFlow_GetLength, ToInt, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
+coverage: 0.909167
+common_nodes: [CR Prompt Text, Float, INTConstant, ImageCompositeMasked, InvertMask, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, MaskPreview, MaskToImage, PreviewImage, SolidMask, StringToFloatList, VHS_DuplicateMasks, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoExtraModelSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVACEEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/S2V+控制+Framepack+ContextWindow长视频工作流_1961914192292986881.json, 视频生成/图生视频/wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json, 视频生成/图生视频/【gen全能视频Si】s2v数字人+动作控制长视频工作流_1963163594022170625.json, 视频生成/图生视频/图片+音频+参考动作视频=mtv(无限时长音乐数字人）_1962043447869902849.json, 视频生成/图生视频/声音+图片+视频动作，S2V+控制+Framepack+ContextWindow长视频工作流_1964517302806921217.json]
+members: [平台全量/Video Subject Inpaint影片主體重繪 (WAN2.2 KJversion+Fun)_2087364991761608706.json, 平台全量/Wan2.2-Vace-主体替换_1983807545255075841.json, 平台全量/Wan2.2-Vace-局部编辑_1983813532632424449.json, 视频生成/图生视频/Wan2.2 Fun Vace视频主体参考替换_1967228508000935938.json, 视频生成/图生视频/Wan2.2 Fun Vace视频蒙版重绘V1_1966519907141791746.json, 视频生成/图生视频/Wan2.2 Fun Vace魔改版高质量视频主体参考替换V1_1966548561380978690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_489
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/S2V+控制+Framepack+ContextWindow长视频工作流_1961914192292986881.json、视频生成/图生视频/wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json、视频生成/图生视频/【gen全能视频Si】s2v数字人+动作控制长视频工作流_1963163594022170625.json、视频生成/图生视频/图片+音频+参考动作视频=mtv(无限时长音乐数字人）_1962043447869902849.json、视频生成/图生视频/声音+图片+视频动作，S2V+控制+Framepack+ContextWindow长视频工作流_1964517302806921217.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Video Subject Inpaint影片主體重繪 (WAN2.2 KJversion+Fun)_2087364991761608706.json、平台全量/Wan2.2-Vace-主体替换_1983807545255075841.json、平台全量/Wan2.2-Vace-局部编辑_1983813532632424449.json、视频生成/图生视频/Wan2.2 Fun Vace视频主体参考替换_1967228508000935938.json、视频生成/图生视频/Wan2.2 Fun Vace视频蒙版重绘V1_1966519907141791746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `DWPreprocessor`
-- `Display Int (rgthree)`
+全部 6 个 workflow 都包含：
+- `CR Prompt Text`
+- `Float`
 - `INTConstant`
-- `ImageConcanate`
-- `ImageResizeKJv2`
-- `LoadAudio`
-- `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAny`
+- `ImageCompositeMasked`
+- `InvertMask`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadWanVideoT5TextEncoder`
+- `MaskPreview`
+- `MaskToImage`
 - `PreviewImage`
-- `SimpleMath+`
-- `SoundFlow_GetLength`
-- `ToInt`
+- `SolidMask`
+- `StringToFloatList`
+- `VHS_DuplicateMasks`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddS2VEmbeds`
 - `WanVideoBlockSwap`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSigmaToStep`
+- `WanVideoTextEncode`
+- `WanVideoVACEEncode`
 - `WanVideoVAELoader`
-- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 4/5 个有
-- `GIMMVFI_interpolate` —— 4/5 个有
-- `ImageFlip+` —— 4/5 个有
-- `DepthAnythingPreprocessor` —— 1/5 个有
-- `GetImageRangeFromBatch` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `ImageFromBatch+` —— 1/5 个有
-- `PreviewAudio` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `WanVideoLoraSelect` —— 1/5 个有
+- `ImageConcatMulti` —— 5/6 个有
+- `ImageRemoveBackground+` —— 5/6 个有
+- `JWInteger` —— 5/6 个有
+- `TransparentBGSession+` —— 5/6 个有
+- `WanVideoTorchCompileSettings` —— 5/6 个有
+- `LoadImage` —— 4/6 个有
+- `PDIMAGE_LongerSize` —— 3/6 个有
+- `RH_Captioner` —— 3/6 个有
+- `VHS_VideoInfo` —— 3/6 个有
+- `easy showAnything` —— 3/6 个有
+- `GetImageSizeAndCount` —— 2/6 个有
+- `BiRefNetRMBG` —— 1/6 个有
+- `ImageFromBatch` —— 1/6 个有
+- `ImageResizeKJv2` —— 1/6 个有
+- `LayerUtility: PurgeVRAM` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
 
 ## 典型参数
 

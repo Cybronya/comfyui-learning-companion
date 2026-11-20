@@ -3,17 +3,17 @@ name: unknown_workflow_generic_884
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.94375
-common_nodes: [CR Prompt Text, LoadAudio, SaveAudio, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_Pronunciation]
+coverage: 0.9375
+common_nodes: [LoadImage, RH_Nano_Banana_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/SCAI创意分享 _ indextts2.5语音克隆 情感控制_2093694902956814338.json, 音频生成/音频生成/indextts2.5多音字语音克隆_2090280706286120962.json, 音频生成/音频生成/【数字人】IndexTTS 2.5语音克隆(多音字)_2090091691830243330.json, 音频生成/音频生成/声音克隆多音字版加情绪控制版IndexTTS2.5多音字语音克隆(中文版)_2089989930364784641.json]
+members: [图片生成/图生图/全能图片 Image0.05每次_2070463474865623042.json, 图片生成/图生图/全能图片V1 pose transfer_1960970113874890754.json, 图片生成/图生图/全能图片V1-单图编辑_1961100020743389185.json, 图片生成/图生图/全能图片V1-单图编辑_2073043159894020098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_884
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/SCAI创意分享 _ indextts2.5语音克隆 情感控制_2093694902956814338.json、音频生成/音频生成/indextts2.5多音字语音克隆_2090280706286120962.json、音频生成/音频生成/【数字人】IndexTTS 2.5语音克隆(多音字)_2090091691830243330.json、音频生成/音频生成/声音克隆多音字版加情绪控制版IndexTTS2.5多音字语音克隆(中文版)_2089989930364784641.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片 Image0.05每次_2070463474865623042.json、图片生成/图生图/全能图片V1 pose transfer_1960970113874890754.json、图片生成/图生图/全能图片V1-单图编辑_1961100020743389185.json、图片生成/图生图/全能图片V1-单图编辑_2073043159894020098.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
@@ -23,18 +23,14 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadAudio`
-- `SaveAudio`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_Pronunciation`
+- `LoadImage`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `T8_IndexTTS25_EmotionControl` —— 2/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `SaveAudioAdvanced` —— 1/4 个有
+- `SeargePromptText` —— 2/4 个有
+- `AddLabel` —— 1/4 个有
+- `Fast Groups Muter (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

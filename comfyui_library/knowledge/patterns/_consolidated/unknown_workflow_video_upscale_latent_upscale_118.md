@@ -2,99 +2,85 @@
 name: unknown_workflow_video_upscale_latent_upscale_118
 type: Unknown Workflow
 frequency: 3
-level: strong
-coverage: 0.635667
-common_nodes: [Audio Duration (mtb), AudioCrop, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfySwitchNode, EmptyLTXVLatentVideo, GetImageSize, ImageScaleBy, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoader, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAny, PreviewAudio, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SimpleMath+, SolidMask, TextGenerateLTX2Prompt, VAEDecodeTiled, VAELoader, VHS_VideoCombine, easy seed]
+level: moderate
+coverage: 0.827
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVImgToVideoInplaceKJ, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/【尺素】LTX2.3数字人音乐（反推模板 低配流畅运行）_2045415102794436609.json, 视频生成/图生视频/【尺素】LTX2.3数字人音乐（电影硬剪，无反推模板 ）_2045669408932110338.json, 视频生成/图生视频/【尺素】LTX2.3格斗工作流_2051244321340436482.json]
+members: [视频生成/图生视频/LTX2.3 _ 三图-首中尾帧 优化版_2033729811360780290.json, 视频生成/图生视频/ltx2.3首尾帧_2067597395021623297.json, 视频生成/图生视频/首尾帧图生视频 LTX2.3 优化版_2051476972135567361.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_118
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/【尺素】LTX2.3数字人音乐（反推模板 低配流畅运行）_2045415102794436609.json、视频生成/图生视频/【尺素】LTX2.3数字人音乐（电影硬剪，无反推模板 ）_2045669408932110338.json、视频生成/图生视频/【尺素】LTX2.3格斗工作流_2051244321340436482.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 _ 三图-首中尾帧 优化版_2033729811360780290.json、视频生成/图生视频/ltx2.3首尾帧_2067597395021623297.json、视频生成/图生视频/首尾帧图生视频 LTX2.3 优化版_2051476972135567361.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：64%
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
 - `CFGGuider`
 - `CLIPTextEncode`
 - `CheckpointLoaderSimple`
-- `ComfySwitchNode`
 - `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `ImageScaleBy`
 - `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVEmptyLatentAudio`
 - `LTXVImgToVideoInplace`
+- `LTXVImgToVideoInplaceKJ`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoader`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAny`
-- `PreviewAudio`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SimpleMath+`
-- `SolidMask`
-- `TextGenerateLTX2Prompt`
 - `VAEDecodeTiled`
-- `VAELoader`
 - `VHS_VideoCombine`
-- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `FloatConstant` —— 2/3 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `LTXVCropGuides` —— 2/3 个有
+- `MathExpression|pysssss` —— 2/3 个有
+- `PrimitiveInt` —— 2/3 个有
+- `ResizeImagesByLongerEdge` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `ComfyMathExpression` —— 1/3 个有
 - `GetNode` —— 1/3 个有
-- `ImageResize+` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `LayerUtility: PurgeVRAM` —— 1/3 个有
+- `PrimitiveFloat` —— 1/3 个有
+- `RH_LLMAPI_Pro_Node` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
+- `ResizeImageMaskNode` —— 1/3 个有
 - `SetNode` —— 1/3 个有
-- `SomethingToString` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
-- `llama_cpp_instruct_adv` —— 1/3 个有
-- `llama_cpp_model_loader` —— 1/3 个有
-- `llama_cpp_parameters` —— 1/3 个有
+- `ShowText|pysssss` —— 1/3 个有
+- `SimpleCalculatorKJ` —— 1/3 个有
+- `VAEDecode` —— 1/3 个有
+- `floatToInt _O` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 121 | 121 - 121 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
-| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 60 | 3 | 55% |
 
 ## 常见问题
 
@@ -102,7 +88,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 60，3 个样本

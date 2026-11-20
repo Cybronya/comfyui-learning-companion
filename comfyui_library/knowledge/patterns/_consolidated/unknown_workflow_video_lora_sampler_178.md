@@ -1,81 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_178
 type: Unknown Workflow
-frequency: 11
+frequency: 13
 level: moderate
-coverage: 0.575727
-common_nodes: [BlockifyMask, CLIPVisionLoader, DownloadAndLoadSAM2Model, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GrowMask, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PointsEditor, Sam2Segmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.708385
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, Int, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Wan2.2 Animate角色替换与修改_1932812610956136450.json, 图片生成/图生图/Wan2.2 animate 视频人物替换_1976938900721672193.json, 图片生成/图生图/万物动作迁移One2All_1998760592200585217.json, 数字人/数字人/WanAnimate 人物替换 表情迁移_1969056420173934594.json, 数字人/数字人/WanAnimate 场景二 动作+表情迁移_1970111704807993345.json, 数字人/数字人/WanAnimate-动作迁移01_1969358029953134594.json, 数字人/数字人/WanAnimate（视频角色替换_姿势迁移）_1969678871396315137.json, 数字人/数字人/wan2.2 animate 一张图片生成跳舞视频_1942136597947301890.json, 视频生成/图生视频/动漫跳舞SDPOSE+Wan Animate_1973029204331728897.json, 视频生成/图生视频/最新WanAnimate之视频换装_1971421860208558082.json, 视频生成/文生视频/Wan-Animate角色替换 (Character Replacement)_1969435322595635201.json]
+members: [视频生成/图生视频/AI女友对口型V2=图片说话唱歌+动作=InfiniTetalk=B站艾橘溪_1960951492805103618.json, 视频生成/图生视频/AI女友对口型V2=图片说话唱歌+动作_2065438787911639042.json, 视频生成/图生视频/AI女友对口型_1989024069318217729.json, 视频生成/图生视频/AI数字人对口型 角色 图片 说话唱歌 克隆动作 InfiniTetalk   内附音频生成_2006172526635917314.json, 视频生成/图生视频/Infinite Talk 人物对口型V2+图片说话唱歌+动作_2005908579766988801.json, 视频生成/图生视频/InfiniteTalk图生长视频超自然-AI漫剧口播对口型（唱歌_说话）_2015607180996644865.json, 视频生成/图生视频/InfiniteTalk数字人图生长视频-自动对口型（支持唱歌_说话）_1993207838587764737.json, 视频生成/图生视频/Infinitetalk_图片对口型_2046155816666927106.json, 视频生成/图生视频/Wanvideo_infinitetalk_图片对口型_单人工作流_1980220668019171330.json, 视频生成/图生视频/【AI代码侠土豆】I2V-InfiniteTalk数字人_1964947566926417921.json, 视频生成/图生视频/图片对口型音乐人_1995653735567261698.json, 视频生成/图生视频/图片对口型音乐人（去除背景音乐）_1983895730928713729.json, 视频生成/图生视频/数字人对口型，照片说话 （Infinitetalk+Wan2.1加速版）_1966856780053614593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_178
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Wan2.2 Animate角色替换与修改_1932812610956136450.json、图片生成/图生图/Wan2.2 animate 视频人物替换_1976938900721672193.json、图片生成/图生图/万物动作迁移One2All_1998760592200585217.json、数字人/数字人/WanAnimate 人物替换 表情迁移_1969056420173934594.json、数字人/数字人/WanAnimate 场景二 动作+表情迁移_1970111704807993345.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/AI女友对口型V2=图片说话唱歌+动作=InfiniTetalk=B站艾橘溪_1960951492805103618.json、视频生成/图生视频/AI女友对口型V2=图片说话唱歌+动作_2065438787911639042.json、视频生成/图生视频/AI女友对口型_1989024069318217729.json、视频生成/图生视频/AI数字人对口型 角色 图片 说话唱歌 克隆动作 InfiniTetalk   内附音频生成_2006172526635917314.json、视频生成/图生视频/Infinite Talk 人物对口型V2+图片说话唱歌+动作_2005908579766988801.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：13
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BlockifyMask`
+全部 13 个 workflow 都包含：
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DownloadAndLoadSAM2Model`
-- `DrawMaskOnImage`
-- `FaceMaskFromPoseKeypoints`
-- `GrowMask`
-- `ImageCropByMaskAndResize`
+- `DownloadAndLoadWav2VecModel`
 - `ImageResizeKJv2`
+- `Int`
+- `LoadAudio`
 - `LoadImage`
-- `PointsEditor`
-- `Sam2Segmentation`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 10/11 个有
-- `INTConstant` —— 10/11 个有
-- `ImageConcatMulti` —— 10/11 个有
-- `SetNode` —— 10/11 个有
-- `WanVideoSetLoRAs` —— 10/11 个有
-- `WanVideoTorchCompileSettings` —— 10/11 个有
-- `DWPreprocessor` —— 9/11 个有
-- `GetImageSizeAndCount` —— 9/11 个有
-- `PixelPerfectResolution` —— 8/11 个有
-- `WanVideoContextOptions` —— 5/11 个有
-- `easy int` —— 4/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/11 个有
-- `MathExpression|pysssss` —— 3/11 个有
-- `GroundingDinoModelLoader_SDPose` —— 2/11 个有
-- `PreviewImage` —— 2/11 个有
-- `PrimitiveStringMultiline` —— 2/11 个有
-- `SDPoseOODLoader` —— 2/11 个有
-- `SDPoseOODProcessor` —— 2/11 个有
-- `YOLOModelLoader` —— 2/11 个有
-- `Fast Groups Muter (rgthree)` —— 1/11 个有
-- `GetImageSize` —— 1/11 个有
-- `ImageFromBatch` —— 1/11 个有
-- `ImpactInt` —— 1/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
-- `OnnxDetectionModelLoader` —— 1/11 个有
-- `PoseDetectionOneToAllAnimation` —— 1/11 个有
-- `SimpleMath+` —— 1/11 个有
-- `easy showAnything` —— 1/11 个有
+- `AudioCrop` —— 12/13 个有
+- `SimpleMath+` —— 11/13 个有
+- `GetNode` —— 10/13 个有
+- `SetNode` —— 10/13 个有
+- `PrimitiveString` —— 6/13 个有
+- `GetImageSizeAndCount` —— 5/13 个有
+- `LayerUtility: PurgeVRAM` —— 5/13 个有
+- `Text Multiline` —— 5/13 个有
+- `easy cleanGpuUsed` —— 5/13 个有
+- `PreviewImage` —— 4/13 个有
+- `RH_GetAudioDuration` —— 4/13 个有
+- `Anything Everywhere` —— 3/13 个有
+- `Float to Int` —— 3/13 个有
+- `INTConstant` —— 3/13 个有
+- `SaveAudio` —— 3/13 个有
+- `ToInt` —— 3/13 个有
+- `easy showAnything` —— 3/13 个有
+- `ImageConcatMulti` —— 2/13 个有
+- `SoundFlow_GetLength` —— 2/13 个有
+- `CM_IntToFloat` —— 1/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
+- `easy int` —— 1/13 个有
 
 ## 典型参数
 

@@ -1,40 +1,42 @@
 ---
 name: unknown_workflow_upscale_vae_53
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.8
-common_nodes: [HAIGC_SaveImagesToZip, ImageScaleToTotalPixels, JoinImageWithAlpha, RHUploadZip_V2, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy cleanGpuUsed, easy clearCacheAll, easy imageSize, easy int]
+frequency: 4
+level: moderate
+coverage: 0.7915
+common_nodes: [INTConstant, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VHS_LoadVideo, VHS_VideoInfo]
 problems: []
 missing: []
-members: [图片生成/图生图/批量放大4K—ZIP格式上传批量出图，稳定版_2016504245368918018.json, 图片生成/文生图/批量放大4K—ZIP格式下载_2015323229090488321.json]
+members: [平台全量/AA--Sparkvideo2.0创作辅助--视频获取首尾帧+4K放大修复_2020909658290003970.json, 平台全量/视频高清放大_2046516018679390210.json, 视频生成/文生视频/SeedVR2.5_视频高清放大_2098341640149757954.json, 视频生成/文生视频/SeedVR2高清视频_2088119385247539202.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_53
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/批量放大4K—ZIP格式上传批量出图，稳定版_2016504245368918018.json、图片生成/文生图/批量放大4K—ZIP格式下载_2015323229090488321.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/AA--Sparkvideo2.0创作辅助--视频获取首尾帧+4K放大修复_2020909658290003970.json、平台全量/视频高清放大_2046516018679390210.json、视频生成/文生视频/SeedVR2.5_视频高清放大_2098341640149757954.json、视频生成/文生视频/SeedVR2高清视频_2088119385247539202.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：80%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `HAIGC_SaveImagesToZip`
-- `ImageScaleToTotalPixels`
-- `JoinImageWithAlpha`
-- `RHUploadZip_V2`
-- `SaveImage`
+全部 4 个 workflow 都包含：
+- `INTConstant`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy imageSize`
-- `easy int`
+- `VHS_LoadVideo`
+- `VHS_VideoInfo`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageScaleToTotalPixels` —— 3/4 个有
+- `VHS_VideoCombine` —— 3/4 个有
+- `SaveImage` —— 2/4 个有
+- `SetNode` —— 2/4 个有
+- `ImageFromBatch+` —— 1/4 个有
+- `LoadImage` —— 1/4 个有
 
 ## 典型参数
 
@@ -46,4 +48,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

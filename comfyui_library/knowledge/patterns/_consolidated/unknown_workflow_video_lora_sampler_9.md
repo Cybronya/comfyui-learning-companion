@@ -1,69 +1,86 @@
 ---
 name: unknown_workflow_video_lora_sampler_9
 type: Unknown Workflow
-frequency: 56
+frequency: 65
 level: moderate
-coverage: 0.843643
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.556138
+common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, GrowMask, LoadImage, OnnxDetectionModelLoader, PointsEditor, PoseAndFaceDetection, SeCModelLoader, SeCVideoSegmentation, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/infintetalk合成唱歌视频_1990334829420007425.json, 视频生成/图生视频/mv  唱歌  对口型  数字人 InfiniTetalk 超自然数字人对口型_2067838359027929089.json, 视频生成/图生视频/soulx合成语音+infintetalk合成数字人_1985626915035914241.json, 视频生成/图生视频/个人MV  唱歌  对口型  数字人 InfiniTetalk_2059562023511482369.json, 视频生成/图生视频/动漫对口型  数字人 InfiniTetalk 超自然数字人对口型_2080630602679803906.json, 视频生成/图生视频/口播  带货  对口型 数字人 InfiniTetalk 超自然数字人对口型_2061461382494769153.json, 视频生成/图生视频/口播  带货 数字人  对口型  InfiniTetalk 超自然数字人对口型_2061456753035923458.json, 视频生成/图生视频/口播带货  对口型  数字人 InfiniTetalk 超自然数字人对口型_2076965188426878978.json, 视频生成/图生视频/口播数字人   带货数字人   对口型 InfiniTetalk_2061428743545114626.json, 视频生成/图生视频/唱歌  MV  对口型   数字人 InfiniTetalk 超自然数字人对口型_2059627314367000578.json, 视频生成/图生视频/对口型  MV唱歌  口播  带货  数字人 InfiniTetalk_2062259761919389698.json, 视频生成/图生视频/对口型  口播  带货  数字人 InfiniTetalk 超自然数字人对口型_2061443939252658178.json, 视频生成/图生视频/对口型  口播  带货  数字人 InfiniTetalk 超自然数字人对口型_2061900190105296898.json, 视频生成/图生视频/对口型  口播  带货  数字人 InfiniTetalk 超自然数字人对口型_2062077051816996865.json, 视频生成/图生视频/对口型  口播  带货 数字人 InfiniTetalk 超自然数字人对口型_2061449421505785858.json, 视频生成/图生视频/对口型  口播  带货 数字人 InfiniTetalk 超自然数字人对口型_2062974222888161282.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2047903645135540226.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2047947713005756417.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2048060838690426881.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2051608621456338946.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052447982326427649.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052799112306798594.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052802860856954882.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052806835282952194.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052808058136481793.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2052816701720408065.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2053488993953693698.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2053505031214776322.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2053632378748325889.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2053865924784082946.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054911632928722945.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054940993836855298.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054946696412581889.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054962935566479362.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054967217581764610.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2054971133497233410.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2058286679080914945.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2059241608138280962.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2059250723224899586.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2059339620311195650.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2059723732867969026.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2060798577915551745.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2061902418593533954.json, 视频生成/图生视频/对口型  带货 数字人 InfiniTetalk 超自然数字人对口型_2062244524826652674.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk 超自然数字人对口型_2047552745707675650.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2044667020356100098.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2045755091919048705.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2045759320435986434.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2045878553421549569.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2047210506183778306.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2058279397274247169.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2058292932507160577.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2058449030316908545.json, 视频生成/图生视频/对口型  数字人 InfiniTetalk超自然数字人对口型_2059243415086395394.json, 视频生成/图生视频/对口型 唱歌 KTV 宠物_2058836866820034562.json, 音频生成/音频生成/你的数字人能说河南话，稳定的输出_1987756118204198914.json]
+members: [平台全量/-修改参数---人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2028776061948923905.json, 平台全量/Animate人物替换（无限长度）（手动遮罩1）_1979030730502213634.json, 平台全量/Wan2.2 -Animate 人物替换-视频二创_2056294860973498370.json, 平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2002081939446218754.json, 平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2033423406405787650.json, 平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2036437007580270593.json, 平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2064151879482953729.json, 平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2086723130248228865.json, 平台全量/Wan2.2 Animate 人物替换 精准替换_2011781606926721026.json, 平台全量/Wan2.2 Animate 人物替换 精准替换_2028740498470473730.json, 平台全量/Wan2.2 Animate人物替换 二创视频恶搞视频二创动漫视频形象替换 角色替换 人物更换_2056998300456411137.json, 平台全量/Wan2.2 Animate人物替换 二创视频恶搞视频二创动漫视频形象替换 角色替换 人物更换_2079906862341906434.json, 平台全量/Wan2.2 Animate人物替换舞蹈人物替换二创视频恶搞视频二创动漫视频形象替换角色替换人物更换_2012505804947070977.json, 平台全量/Wan2.2_Animate_人物替换_精准替换_二创首选_2117402267803541505.json, 平台全量/wan2.2人物替换 二创视频恶搞-二创动漫-形象替换-角色替换_2057448766336225282.json, 平台全量/wan2.2动作迁移-人物动作迁移v1_2061979901028298753.json, 平台全量/东京漂移人物替换第三段_2066451516843708418.json, 平台全量/二创作品首选_视频遮罩指定人物替换！！！_2044415587153092610.json, 平台全量/二创首选Wan2.2 Animate视频生视频 人物精准替换高质量方案_2091758878726905857.json, 平台全量/二创首选_人物精准替换_ Wan2.2 Animate_2020099629311856642.json, 平台全量/人物替换 角色替换   二创首选  Wan2.2 wan22_2045395003823890434.json, 平台全量/人物替换 角色替换 Wan 动作模仿 动作迁移 视频二创编辑_2062347380980273153.json, 平台全量/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2021476049367867394.json, 平台全量/女装穿搭原图转全身动态短视频 MoCap 动作迁移带货工作流_2069201065102364674.json, 平台全量/精准替换免费_2042940062438002690.json, 平台全量/视频人物替换-视频换人-二创专用_2031373661634043905.json, 视频生成/图生视频/Animate人物替换（不限长度）_2015018676868616194.json, 视频生成/图生视频/人物替换     角色替换    二创首选  Wan2.2 wan22_2061909733405188097.json, 视频生成/图生视频/人物替换    角色替换   二创首选  Wan2.2 wan22_2061714173691785218.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2045436584266309633.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2045756399656898561.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2047879824609386498.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2048374565356707842.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2052077583671541761.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2052089396547072002.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2053480599746293761.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2061717483219931137.json, 视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2061732736808873986.json, 视频生成/图生视频/人物替换  角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2061517996736208897.json, 视频生成/图生视频/人物替换  角色替换  Wan2.2  动作模仿 动作迁移 二创首选_2061703653236502530.json, 视频生成/图生视频/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2025383055673794562.json, 视频生成/图生视频/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2046490215514120193.json, 视频生成/图生视频/人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2054545413268615170.json, 视频生成/图生视频/女装穿搭原图转全身动态短视频 MoCap 动作迁移带货工作流_2077919550741499905.json, 视频生成/图生视频/角色替换   二创首选  Wan2.2 wan22_2041820466159034370.json, 视频生成/图生视频/角色替换   二创首选  Wan2.2 wan22_2044048099055771650.json, 视频生成/图生视频/角色替换   人物替换     二创首选  Wan2.2 wan22_2061522776120446978.json, 视频生成/图生视频/角色替换   人物替换     二创首选  Wan2.2 wan22_2061720298134786049.json, 视频生成/图生视频/角色替换   人物替换     动作模仿   二创首选  Wan2.2 wan22_2067493148099698690.json, 视频生成/图生视频/角色替换   人物替换    二创首选  Wan2.2 wan22_2061525825463341057.json, 视频生成/图生视频/角色替换   人物替换    二创首选  Wan2.2 wan22_2061706268229857282.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿  动作迁移  二创首选_2039303290109825025.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2039983104382734337.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2047944109041651714.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2047960672364929025.json, 视频生成/图生视频/角色替换  Wan2.2   动作模仿 动作迁移 二创首选_2048361532148420610.json, 视频生成/图生视频/角色替换  Wan2.2  动作模仿 动作迁移 二创首选_2039898768174223362.json, 视频生成/图生视频/角色替换  Wan2.2  图生视频_2042073520565391361.json, 视频生成/图生视频/角色替换  人物替换  Wan2.2   动作模仿 动作迁移 二创首选_2047907869110050818.json, 视频生成/图生视频/角色替换 人物替换 动作模仿 动作迁移 二创首选 Wan2.2_2053516783939801089.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2043513913018421250.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2044060077488873474.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2052436872852459521.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2052759183916843010.json, 视频生成/图生视频/角色替换 动作模仿 动作迁移 二创首选 Wan2.2_2053154685997068289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_9
 
-> 由 `engine/knowledge_consolidation` 从 56 个 workflow 归纳得出（视频生成/图生视频/infintetalk合成唱歌视频_1990334829420007425.json、视频生成/图生视频/mv  唱歌  对口型  数字人 InfiniTetalk 超自然数字人对口型_2067838359027929089.json、视频生成/图生视频/soulx合成语音+infintetalk合成数字人_1985626915035914241.json、视频生成/图生视频/个人MV  唱歌  对口型  数字人 InfiniTetalk_2059562023511482369.json、视频生成/图生视频/动漫对口型  数字人 InfiniTetalk 超自然数字人对口型_2080630602679803906.json…）
+> 由 `engine/knowledge_consolidation` 从 65 个 workflow 归纳得出（平台全量/-修改参数---人物替换_角色替换_动作模仿_动作迁移_二创首选_ Wan2.2 Animate_2028776061948923905.json、平台全量/Animate人物替换（无限长度）（手动遮罩1）_1979030730502213634.json、平台全量/Wan2.2 -Animate 人物替换-视频二创_2056294860973498370.json、平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2002081939446218754.json、平台全量/Wan2.2 Animate 人物替换 精准替换 二创首选_2033423406405787650.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：56
+- **样本数**：65
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 56 个 workflow 都包含：
-- `AudioSeparation`
+全部 65 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetNode`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GrowMask`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SetNode`
+- `OnnxDetectionModelLoader`
+- `PointsEditor`
+- `PoseAndFaceDetection`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Audio Duration (mtb)` —— 53/56 个有
-- `AudioCrop` —— 53/56 个有
-- `GetImageRangeFromBatch` —— 53/56 个有
-- `MathExpression|pysssss` —— 53/56 个有
-- `PlaySound|pysssss` —— 53/56 个有
-- `easy int` —— 50/56 个有
-- `PreviewAudio` —— 49/56 个有
-- `easy showAnything` —— 49/56 个有
-- `Float` —— 3/56 个有
-- `PrimitiveStringMultiline` —— 3/56 个有
-- `Any Switch (rgthree)` —— 2/56 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/56 个有
-- `Qwen3_VQA` —— 2/56 个有
-- `SaveAudio` —— 2/56 个有
-- `SoulXPodcastGenerate` —— 2/56 个有
-- `SoulXPodcastInputParser` —— 2/56 个有
-- `SoulXPodcastLoader` —— 2/56 个有
-- `StringConcatenate` —— 2/56 个有
+- `GetNode` —— 64/65 个有
+- `ImageResizeKJv2` —— 64/65 个有
+- `SetNode` —— 64/65 个有
+- `VHS_VideoInfo` —— 64/65 个有
+- `GetImageSizeAndCount` —— 63/65 个有
+- `ImageFromBatch+` —— 63/65 个有
+- `InvertMask` —— 63/65 个有
+- `LayerUtility: ImageBlend` —— 63/65 个有
+- `MaskToImage` —— 63/65 个有
+- `PreviewImage` —— 63/65 个有
+- `CR Text` —— 62/65 个有
+- `INTConstant` —— 62/65 个有
+- `ImageConcanate` —— 62/65 个有
+- `JWInteger` —— 54/65 个有
+- `easy cleanGpuUsed` —— 48/65 个有
+- `Int` —— 3/65 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/65 个有
+- `ImageFromBatch` —— 2/65 个有
+- `ImpactConditionalBranch` —— 2/65 个有
+- `LayerMask: MaskPreview` —— 2/65 个有
+- `PrimitiveInt` —— 2/65 个有
+- `PrimitiveStringMultiline` —— 2/65 个有
+- `WanVideoContextOptions` —— 2/65 个有
+- `WanVideoLoraSelect` —— 2/65 个有
+- `WanVideoTorchCompileSettings` —— 2/65 个有
+- `easy compare` —— 2/65 个有
+- `easy int` —— 2/65 个有
+- `CM_IntToFloat` —— 1/65 个有
+- `CreateVideo` —— 1/65 个有
+- `GetImageSize` —— 1/65 个有
+- `SaveVideo` —— 1/65 个有
+- `easy showAnything` —— 1/65 个有
 
 ## 典型参数
 

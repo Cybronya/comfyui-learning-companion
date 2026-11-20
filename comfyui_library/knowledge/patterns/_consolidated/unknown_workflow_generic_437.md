@@ -1,38 +1,36 @@
 ---
 name: unknown_workflow_generic_437
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.783
-common_nodes: [LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.724429
+common_nodes: [LoadImage, SaveImage, SeedVR2]
 problems: []
 missing: []
-members: [图片生成/图生图/4+1_2059565424248967169.json, 图片生成/图生图/4图参图像编辑PRO_2044594283658874881.json, 图片生成/图生图/DIY人物_1995858690374787074.json, 图片生成/图生图/产品精修_吊打一切_2049827708439412738.json, 图片生成/图生图/全能图片V1 2.0图像编辑_1991502787389431809.json, 图片生成/图生图/分镜头时空裂变推演工作流_2040007421787119618.json]
+members: [图片生成/图生图/SeedVR2 高清放大_1987722975048830977.json, 图片生成/图生图/SeedVR2图片高清修复工作流_2002210989393211394.json, 图片生成/图生图/SeedVR2细节增强高清放大_1980528292736487425.json, 平台全量/AI图片高清放大-1K到4K不变形工作流_2096607687306993665.json, 平台全量/SeedVR2图片放大_1938203512050483201.json, 平台全量/seedvr高清修复v1_1955515063723593729.json, 平台全量/一键无损高清放大极速_1942481961833402369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_437
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/4+1_2059565424248967169.json、图片生成/图生图/4图参图像编辑PRO_2044594283658874881.json、图片生成/图生图/DIY人物_1995858690374787074.json、图片生成/图生图/产品精修_吊打一切_2049827708439412738.json、图片生成/图生图/全能图片V1 2.0图像编辑_1991502787389431809.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/SeedVR2 高清放大_1987722975048830977.json、图片生成/图生图/SeedVR2图片高清修复工作流_2002210989393211394.json、图片生成/图生图/SeedVR2细节增强高清放大_1980528292736487425.json、平台全量/AI图片高清放大-1K到4K不变形工作流_2096607687306993665.json、平台全量/SeedVR2图片放大_1938203512050483201.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
+- `SeedVR2`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `InversionDemoLazyIndexSwitch` —— 1/6 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
-- `Text Input [DVB]` —— 1/6 个有
+- `Image Comparer (rgthree)` —— 5/7 个有
+- `PrimitiveInt` —— 3/7 个有
+- `LayerFilter: GaussianBlur` —— 1/7 个有
 
 ## 典型参数
 

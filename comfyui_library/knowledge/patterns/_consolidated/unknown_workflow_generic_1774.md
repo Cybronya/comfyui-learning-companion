@@ -3,34 +3,34 @@ name: unknown_workflow_generic_1774
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [IndexTTS2_MultiTalk, LoadAudio, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.857
+common_nodes: [CR Text, LayerUtility: CropByMask, LoadImage, RH_RhartImageG2ImageToImage, RMBG, SaveImage, easy imageConcat, ttN concat]
 problems: []
 missing: []
-members: [音频生成/音频生成/A-19 IndexTTS2 文生音频 多人配音 最多4人 各自音色_2107503689714978817.json, 音频生成/音频生成/Easy IndexTTS2多角色对话-双人配音工作流_2094746795925659650.json]
+members: [图片生成/图生图/电商主图设计-主图参考_image2低价版_2050633326385475586.json, 图片生成/文生图/电商主图设计-主图参考_i2_2053148327054725121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1774
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/A-19 IndexTTS2 文生音频 多人配音 最多4人 各自音色_2107503689714978817.json、音频生成/音频生成/Easy IndexTTS2多角色对话-双人配音工作流_2094746795925659650.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商主图设计-主图参考_image2低价版_2050633326385475586.json、图片生成/文生图/电商主图设计-主图参考_i2_2053148327054725121.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2_MultiTalk`
-- `LoadAudio`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
-
-**可变部分**（部分 workflow 才有）：
-- `IndexTTS2_ModelManager` —— 1/2 个有
-- `IndexTTS2_SpeakerEmotionConfig` —— 1/2 个有
+- `CR Text`
+- `LayerUtility: CropByMask`
+- `LoadImage`
+- `RH_RhartImageG2ImageToImage`
+- `RMBG`
+- `SaveImage`
+- `easy imageConcat`
+- `ttN concat`
 
 ## 典型参数
 

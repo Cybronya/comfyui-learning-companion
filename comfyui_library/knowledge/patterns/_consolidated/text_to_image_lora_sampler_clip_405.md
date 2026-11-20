@@ -2,94 +2,79 @@
 name: text_to_image_lora_sampler_clip_405
 type: Text To Image
 frequency: 5
-level: moderate
-coverage: 0.5254
-common_nodes: [AddLabel, CLIPLoader, CLIPTextEncode, Create Grid Image from Batch, EmptyLatentImage, GetNode, ImpactMakeImageList, Int, JoinStrings, KSampler, Lora Loader, PreviewImage, PrimitiveInt, SaveImage, Seed_, SetNode, UNETLoader, VAEDecode, VAELoader, easy convertAnything, easy imageListToImageBatch, easy rangeFloat]
+level: strong
+coverage: 0.8884
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PIP_StringConcatenation, RH_RhartImageG2TextToImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy positive, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Lora-xy测试工作流_2073237872278335489.json, 图片生成/文生图/Qwen_Lora测试工作流(V-Zion)_1997514435805790210.json, 图片生成/文生图/Z-image Base Lora-xy测试工作流_2073313146638520322.json, 图片生成/文生图/qwenlora模型文生图xy测试工作流v1_1970132982562496514.json, 图片生成/文生图/wan2.2低噪lora模型文生图xy测试工作流v2_1960228137802084354.json]
+members: [图片生成/文生图/4K写实人像一键直出｜G-image2文生图人像写真全能输出_2089015295485767681.json, 图片生成/文生图/G-Image2真实人像2K输出全能图片文生图处理工具_2101365555285544962.json, 图片生成/文生图/G-Image2真实人像2K输出全能图片文生图处理工具_2101755378726948865.json, 图片生成/文生图/G-image2全能文生图4K输出｜真实人像写真高清摄影级生成_2088694613237395458.json, 图片生成/文生图/真实人像4K输出｜全能图片G-image2文生图人像写真_2093780250059689985.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_405
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen Lora-xy测试工作流_2073237872278335489.json、图片生成/文生图/Qwen_Lora测试工作流(V-Zion)_1997514435805790210.json、图片生成/文生图/Z-image Base Lora-xy测试工作流_2073313146638520322.json、图片生成/文生图/qwenlora模型文生图xy测试工作流v1_1970132982562496514.json、图片生成/文生图/wan2.2低噪lora模型文生图xy测试工作流v2_1960228137802084354.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/4K写实人像一键直出｜G-image2文生图人像写真全能输出_2089015295485767681.json、图片生成/文生图/G-Image2真实人像2K输出全能图片文生图处理工具_2101365555285544962.json、图片生成/文生图/G-Image2真实人像2K输出全能图片文生图处理工具_2101755378726948865.json、图片生成/文生图/G-image2全能文生图4K输出｜真实人像写真高清摄影级生成_2088694613237395458.json、图片生成/文生图/真实人像4K输出｜全能图片G-image2文生图人像写真_2093780250059689985.json）
 
 - **类型**：Text To Image
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：53%
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `AddLabel`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Create Grid Image from Batch`
 - `EmptyLatentImage`
-- `GetNode`
-- `ImpactMakeImageList`
-- `Int`
-- `JoinStrings`
+- `JjkText`
 - `KSampler`
-- `Lora Loader`
-- `PreviewImage`
-- `PrimitiveInt`
+- `LoraLoaderModelOnly`
+- `PIP_StringConcatenation`
+- `RH_RhartImageG2TextToImage`
 - `SaveImage`
-- `Seed_`
-- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy convertAnything`
-- `easy imageListToImageBatch`
-- `easy rangeFloat`
+- `easy positive`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 4/5 个有
-- `LoadImage` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `ModelSamplingAuraFlow` —— 4/5 个有
-- `ReActorImageDublicator` —— 4/5 个有
-- `TextInput_` —— 3/5 个有
-- `ConstrainImage|pysssss` —— 2/5 个有
-- `GetImageSize` —— 2/5 个有
-- `JWInteger` —— 2/5 个有
-- `JjkText` —— 2/5 个有
-- `PrimitiveString` —— 2/5 个有
-- `RH_Captioner` —— 2/5 个有
-- `Text` —— 2/5 个有
-- `easy showAnything` —— 2/5 个有
-- `ModelSamplingSD3` —— 1/5 个有
-- `PMRF` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
+- `ConditioningZeroOut` —— 3/5 个有
+- `DualCLIPLoader` —— 3/5 个有
+- `FluxGuidance` —— 3/5 个有
+- `PrimitiveInt` —— 3/5 个有
+- `RH_Captioner` —— 3/5 个有
+- `SeedVR2` —— 3/5 个有
+- `SeedVR2BlockSwap` —— 3/5 个有
+- `SeedVR2ExtraArgs` —— 3/5 个有
+- `VAEEncode` —— 3/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1024 | 5 | 69% |
-| 高度 | 1024 | 512 - 1024 | 5 | 69% |
-| 采样步数 | 8 | 8 - 25 | 5 | 44% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 5 | 25% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | beta | - | 5 | 40% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 16/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1024，5 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，5 个样本
-- 采样步数 中位数 8，观测区间 8 - 25，5 个样本，取值分散，一致性仅 44%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 25%
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 beta，5 个样本，一致性 40%
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（16/5 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（8/5 个样本）：Steps较低可能导致细节不足

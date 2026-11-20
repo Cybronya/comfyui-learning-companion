@@ -1,58 +1,85 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_78
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.922
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Seed, EmptySD3LatentImage, KSamplerAdvanced, LatentUpscaleBy, LoraLoaderModelOnly, SaveImage, UnetLoaderGGUF, VAEDecodeTiled, VAELoader]
+frequency: 3
+level: moderate
+coverage: 0.641667
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyImage, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, ImageScaleBy, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SetLatentNoiseMask, SetNode, SolidMask, VAEDecodeTiled]
 problems: []
 missing: []
-members: [图片生成/文生图/2511+2512混合双打超清直出4K文生图，低显存可用_2011110586679037953.json, 图片生成/文生图/千问2512无需扩展高清4K直出，低显存可用_2010946715666354178.json]
+members: [图片生成/文生图/LTX2 科比数字人工作流 （附加显存清理）_2013098604533129218.json, 图片生成/文生图/LTX2 科比数字人工作流_2012930792564985857.json, 视频生成/文生视频/ltx-2对口型_2011736436441092097.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_78
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/2511+2512混合双打超清直出4K文生图，低显存可用_2011110586679037953.json、图片生成/文生图/千问2512无需扩展高清4K直出，低显存可用_2010946715666354178.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/LTX2 科比数字人工作流 （附加显存清理）_2013098604533129218.json、图片生成/文生图/LTX2 科比数字人工作流_2012930792564985857.json、视频生成/文生视频/ltx-2对口型_2011736436441092097.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：92%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
+全部 3 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Seed`
-- `EmptySD3LatentImage`
-- `KSamplerAdvanced`
-- `LatentUpscaleBy`
+- `CheckpointLoaderSimple`
+- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `GetNode`
+- `ImageScaleBy`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `UnetLoaderGGUF`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `PrimitiveInt`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `Seed (rgthree)`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
 - `VAEDecodeTiled`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 1/2 个有
-- `ConditioningZeroOut` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
+- `Audio Duration (mtb)` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `CreateVideo` —— 2/3 个有
+- `INTConstant` —— 2/3 个有
+- `Label (rgthree)` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `SaveVideo` —— 2/3 个有
+- `VHS_LoadAudio` —— 2/3 个有
+- `Float` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
+- `LTXVImgToVideoInplace` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `LoadImage` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `Text Multiline` —— 1/3 个有
+- `TrimAudioDuration` —— 1/3 个有
+- `VHS_VideoCombine` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 7 | - | 2 | 86% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | ddim | - | 2 | 50% |
-| 重绘幅度 | beta | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -60,9 +87,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 86%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 ddim，2 个样本，一致性 50%
-- 重绘幅度 最常用 beta，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

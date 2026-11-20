@@ -1,36 +1,33 @@
 ---
 name: unknown_workflow_generic_595
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7224
-common_nodes: [JjkText, LoadImage, RH_Jimeng4_Image2Image, SaveImage]
+coverage: 0.833333
+common_nodes: [FB_Qwen3TTSVoiceDesign, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/即梦 4.0：疯狂动物城 2 大合照，一键梦想，定制你的专属 ZooTopia！_1993866503539933186.json, 图片生成/图生图/即梦4.0 豆包生图 API 双图生图_1965777990313488385.json, 图片生成/图生图/即梦版-我和疯狂动物城2大合照-一键定制你的ZooTopia！_1995854135784353794.json, 图片生成/图生图/阿华抽图工作流_1970000592376655874.json, 图片生成/图生图/🎄 即梦 圣诞感分屏写真：一键变装，生成你的专属圣诞写真！_1996120673170997249.json]
+members: [图片生成/文生图/Qwen3_TTS语音生成_音色设计_2116658802949967874.json, 音频生成/音频生成/Qwen3 TTS语音生成 音色设计_2109115193031745537.json, 音频生成/音频生成/Qwen3 TTS语音生成_2101950046660022273.json, 音频生成/音频生成/qwen3-tts，音色创造_2099582565026975745.json, 音频生成/音频生成/【遇见AI】Qwen3-TTS声音设计_2015662094741413890.json, 音频生成/音频生成/短剧角色文字音色设计 · CN API版_2114243529307418625.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_595
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/即梦 4.0：疯狂动物城 2 大合照，一键梦想，定制你的专属 ZooTopia！_1993866503539933186.json、图片生成/图生图/即梦4.0 豆包生图 API 双图生图_1965777990313488385.json、图片生成/图生图/即梦版-我和疯狂动物城2大合照-一键定制你的ZooTopia！_1995854135784353794.json、图片生成/图生图/阿华抽图工作流_1970000592376655874.json、图片生成/图生图/🎄 即梦 圣诞感分屏写真：一键变装，生成你的专属圣诞写真！_1996120673170997249.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/Qwen3_TTS语音生成_音色设计_2116658802949967874.json、音频生成/音频生成/Qwen3 TTS语音生成 音色设计_2109115193031745537.json、音频生成/音频生成/Qwen3 TTS语音生成_2101950046660022273.json、音频生成/音频生成/qwen3-tts，音色创造_2099582565026975745.json、音频生成/音频生成/【遇见AI】Qwen3-TTS声音设计_2015662094741413890.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `RH_Jimeng4_Image2Image`
-- `SaveImage`
+全部 6 个 workflow 都包含：
+- `FB_Qwen3TTSVoiceDesign`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
-- `PreviewImage` —— 2/5 个有
+- `JjkText` —— 2/6 个有
 
 ## 典型参数
 

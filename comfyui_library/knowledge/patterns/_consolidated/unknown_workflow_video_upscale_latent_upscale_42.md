@@ -1,84 +1,102 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_42
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: strong
-coverage: 0.8547
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.520667
+common_nodes: [BasicScheduler, BlockifyMask, CFGGuider, CLIPTextEncode, ComfyMathExpression, Float to Int, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAddLatentGuide, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVideoMask, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVPreprocessMasks, LTXVSeparateAVLatent, LTXVSetVideoLatentNoiseMasks, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM, LazySwitchKJ, LoadAudio, LoraLoaderModelOnly, ManualSigmas, MaskToImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleCalculatorKJ, SolidMask, TrimAudioDuration, UNETLoader, VAEDecode, VAEEncode, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy sam3ModelLoader, easy sam3VideoSegmentation, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/图&文生视频-LTX2.3-自动提示词-稳定优化版_2030497638990225409.json, 视频生成/文生视频/文生视频  开源（2）_2046762687073357825.json, 视频生成/文生视频/最强优化  LTX2.3  图 _ 文 生视频合并版_2030179257439227905.json, 视频生成/文生视频/最强优化 LTX2.3 全自动 图生视频 文生视频_2039869978068914177.json, 视频生成/文生视频/最强优化 LTX2.3 全自动 图生视频 文生视频_2039873268945002497.json, 视频生成/文生视频/最强优化—LTX2.3全自动—图生_ 文生视频-邻家AI大女孩_2043235520297312257.json, 视频生成/文生视频/最强优化—LTX2.3全自动—图生_ 文生视频_2029868442429427713.json, 视频生成/文生视频/最强优化—LTX2.3全自动—图生_ 文生视频_2047737799259983873.json, 视频生成/文生视频/最新LTX2.3 图生&文生合并版全面优化版 V2.0_2036310266039771138.json, 视频生成/文生视频/画音同步-LTX2.3全自动-图生+文生视频-优化版_2031929220158464002.json]
+members: [平台全量/LTX2.3视频改口型加强版 视频生视频 数字人复刻短视频 复刻克隆数字人形象说话_2083900886060986369.json, 平台全量/LTX2.3视频改口型加强版视频生视频数字人复刻短视频复刻克隆数字人形象说话_2060292817875988481.json, 平台全量/LTX2.3视频改口型加强版！_2059914402396196866.json, 平台全量/视频全自动一键对口型（人脸微变化版）_2061778727511609345.json, 数字人/数字人/LTX2.3上传视频改口型！B站艾橘溪_2047297756296908801.json, 数字人/数字人/LTX2.3视频改口型加强版 视频生视频 数字人复刻短视频 复刻克隆数字人形象说话_2060596774003367937.json, 数字人/数字人/LTX2.3视频改口型加强版 视频生视频 数字人复刻短视频 复刻克隆数字人形象说话_2080257073954246658.json, 数字人/数字人/LTX2.3视频改口型加强版_2060295017062821889.json, 视频生成/图生视频/LTX2.3视频改口型加强版_2080261317948170241.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_42
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/图&文生视频-LTX2.3-自动提示词-稳定优化版_2030497638990225409.json、视频生成/文生视频/文生视频  开源（2）_2046762687073357825.json、视频生成/文生视频/最强优化  LTX2.3  图 _ 文 生视频合并版_2030179257439227905.json、视频生成/文生视频/最强优化 LTX2.3 全自动 图生视频 文生视频_2039869978068914177.json、视频生成/文生视频/最强优化 LTX2.3 全自动 图生视频 文生视频_2039873268945002497.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/LTX2.3视频改口型加强版 视频生视频 数字人复刻短视频 复刻克隆数字人形象说话_2083900886060986369.json、平台全量/LTX2.3视频改口型加强版视频生视频数字人复刻短视频复刻克隆数字人形象说话_2060292817875988481.json、平台全量/LTX2.3视频改口型加强版！_2059914402396196866.json、平台全量/视频全自动一键对口型（人脸微变化版）_2061778727511609345.json、数字人/数字人/LTX2.3上传视频改口型！B站艾橘溪_2047297756296908801.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `BasicScheduler`
+- `BlockifyMask`
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
+- `ComfyMathExpression`
+- `Float to Int`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `INTConstant`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
 - `LTXAVTextEncoderLoader`
+- `LTXVAddLatentGuide`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVideoMask`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
+- `LTXVCropGuides`
 - `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
+- `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
 - `LTXVPreprocess`
+- `LTXVPreprocessMasks`
 - `LTXVSeparateAVLatent`
+- `LTXVSetVideoLatentNoiseMasks`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+- `LayerUtility: PurgeVRAM`
+- `LazySwitchKJ`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `ModelPatchTorchSettings`
+- `MaskToImage`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
 - `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleCalculatorKJ`
+- `SolidMask`
+- `TrimAudioDuration`
+- `UNETLoader`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
+- `VAELoaderKJ`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CM_FloatToInt` —— 9/10 个有
-- `CR Text` —— 9/10 个有
-- `PrimitiveFloat` —— 9/10 个有
-- `PrimitiveInt` —— 9/10 个有
-- `PreviewAny` —— 7/10 个有
-- `RH_LLMAPI_Pro_Node` —— 7/10 个有
-- `GetNode` —— 2/10 个有
-- `SetNode` —— 2/10 个有
-- `AILab_QwenVL` —— 1/10 个有
-- `CM_IntToFloat` —— 1/10 个有
-- `FancyTimerNode` —— 1/10 个有
-- `JoinStrings` —— 1/10 个有
-- `MathExpression|pysssss` —— 1/10 个有
-- `SimpleMath+` —— 1/10 个有
-- `Text Multiline` —— 1/10 个有
-- `VRAMReserver` —— 1/10 个有
-- `easy int` —— 1/10 个有
-- `easy showAnything` —— 1/10 个有
+- `LTX2AttentionTunerPatch` —— 6/9 个有
+- `LTX2MemoryEfficientSageAttentionPatch` —— 6/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 10 | 100% |
-| 高度 | 25 | 25 - 25 | 10 | 100% |
+| 宽度 | 97 | 97 - 97 | 9 | 100% |
+| 高度 | 25 | 25 - 25 | 9 | 100% |
 
 ## 常见问题
 
@@ -86,5 +104,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，9 个样本，取值集中（一致性 100%）

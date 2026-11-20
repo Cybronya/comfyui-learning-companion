@@ -1,44 +1,43 @@
 ---
 name: unknown_workflow_generic_618
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8498
-common_nodes: [Fast Groups Bypasser (rgthree), LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign, SaveAudio]
+coverage: 0.8625
+common_nodes: [CR Text, LoadImage, RH_LLMAPI_NODE, RH_Sora2_I2V, SaveImage, SaveVideo, Text Concatenate]
 problems: []
 missing: []
-members: [数字人/数字人/Qwen3TTS-多国语言+方言_2014520754792046594.json, 音频生成/音频生成/AI口播-配音_2027202958403833858.json, 音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json, 音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json, 音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json]
+members: [视频生成/图生视频/【儿童漫画风格】—人物一致性，生图和生视频_2009960530571694081.json, 视频生成/图生视频/全能图片2 九宫格漫画_&视频生成_2021401587549216769.json, 视频生成/图生视频/双图出漫画再出视频_1993247545369493505.json, 视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1992865544131112962.json, 视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1993217506798223362.json, 视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1996601719746347010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_618
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/Qwen3TTS-多国语言+方言_2014520754792046594.json、音频生成/音频生成/AI口播-配音_2027202958403833858.json、音频生成/音频生成/QWEN3-TTS多功能语音生成（创作+克隆+自定义）_2014856799358291969.json、音频生成/音频生成/QWEN3-TTS语音克隆_2015001619615719425.json、音频生成/音频生成/qwen3声音克隆+设计+自定义_2014936147599822850.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/【儿童漫画风格】—人物一致性，生图和生视频_2009960530571694081.json、视频生成/图生视频/全能图片2 九宫格漫画_&视频生成_2021401587549216769.json、视频生成/图生视频/双图出漫画再出视频_1993247545369493505.json、视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1992865544131112962.json、视频生成/图生视频/大香蕉+全能视频S，分镜漫画+脚本视频一键生成_1993217506798223362.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
-- `SaveAudio`
+全部 6 个 workflow 都包含：
+- `CR Text`
+- `LoadImage`
+- `RH_LLMAPI_NODE`
+- `RH_Sora2_I2V`
+- `SaveImage`
+- `SaveVideo`
+- `Text Concatenate`
 
 **可变部分**（部分 workflow 才有）：
-- `Apply Whisper` —— 3/5 个有
-- `AudioCrop` —— 3/5 个有
-- `CR Text` —— 3/5 个有
-- `easy showAnything` —— 3/5 个有
-- `HeartMuLa_Transcribe` —— 2/5 个有
-- `PreviewAny` —— 2/5 个有
-- `MuyeTextEditOutput` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 5/6 个有
+- `easy showAnything` —— 5/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
+- `ShowText` —— 1/6 个有
 
 ## 典型参数
 

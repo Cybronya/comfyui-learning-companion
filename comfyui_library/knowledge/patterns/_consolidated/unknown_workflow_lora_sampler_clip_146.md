@@ -1,64 +1,62 @@
 ---
 name: unknown_workflow_lora_sampler_clip_146
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.84575
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.8264
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptySD3LatentImage, KSampler (Efficient), LayerFilter: HDREffects, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/一键人物&背景分离-FLUX-2 Klein & RMBG 2.0 自动识别主体扣图_2089912037089566722.json, 图片生成/图生图/人脸纹理细节（自然，橙黄色版）_2070005207978827778.json, 图片生成/图生图/人脸纹理细节（超自然、轻纹理）_2072296887910232066.json, 图片生成/图生图/真实人脸纹理细节_2080879332058288129.json]
+members: [图片生成/图生图/一键运行：z-image cn 2.1 ，图像控制，图形对比，图生图_2002258478611722241.json, 图片生成/图生图/一键运行：z-image 局部重绘 图像控制最新CN_2002260940475252737.json, 平台全量/一键运行：qwen image   canny  控制 、图像编辑、上色、线稿_1959862756956647426.json, 平台全量/千问 qwen image inpaint 局部重绘，图像修改，洗图_1960168822827331585.json, 平台全量/千问深度_1960162318527180802.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_146
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/一键人物&背景分离-FLUX-2 Klein & RMBG 2.0 自动识别主体扣图_2089912037089566722.json、图片生成/图生图/人脸纹理细节（自然，橙黄色版）_2070005207978827778.json、图片生成/图生图/人脸纹理细节（超自然、轻纹理）_2072296887910232066.json、图片生成/图生图/真实人脸纹理细节_2080879332058288129.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/一键运行：z-image cn 2.1 ，图像控制，图形对比，图生图_2002258478611722241.json、图片生成/图生图/一键运行：z-image 局部重绘 图像控制最新CN_2002260940475252737.json、平台全量/一键运行：qwen image   canny  控制 、图像编辑、上色、线稿_1959862756956647426.json、平台全量/千问 qwen image inpaint 局部重绘，图像修改，洗图_1960168822827331585.json、平台全量/千问深度_1960162318527180802.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
+全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `Int`
-- `KSamplerSelect`
+- `EmptySD3LatentImage`
+- `KSampler (Efficient)`
+- `LayerFilter: HDREffects`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `ModelPatchLoader`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 3/4 个有
-- `ImageScaleToTotalPixels` —— 3/4 个有
-- `AILab_MaskOverlay` —— 1/4 个有
-- `Fast Groups Muter (rgthree)` —— 1/4 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/4 个有
-- `LayerMask: MaskGrow` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `ThresholdMask` —— 1/4 个有
-- `孤海注释` —— 1/4 个有
+- `PreviewImage` —— 4/5 个有
+- `AIO_Preprocessor` —— 3/5 个有
+- `GetImageSize` —— 3/5 个有
+- `QwenImageDiffsynthControlnet` —— 3/5 个有
+- `Anything Everywhere` —— 2/5 个有
+- `Image Comparer (rgthree)` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `ZImageFunControlnet` —— 2/5 个有
+- `Prompts Everywhere` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 9 - 20 | 5 | 65% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 5 | 54% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -66,4 +64,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 9 - 20，5 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，5 个样本
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

@@ -3,43 +3,46 @@ name: unknown_workflow_video_lora_unet_3
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8285
-common_nodes: [CLIPLoader, LoraLoaderBypassModelOnly, MiniMaxH3Director, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, SolAttnMiniMax, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.9135
+common_nodes: [CLIPLoader, CreateVideo, ImageConcatMulti, LoraLoaderModelOnly, MiniMaxH3Director, ModelPreviewOverrideKJ, Note Plus (mtb), SaveVideo, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 AIMixer DSW导演台_2094439901352775681.json, 视频生成/图生视频/MiniMax-H3导演台文生图生首尾帧多参多合一视频制作_2091539822958702594.json]
+members: [平台全量/MiniMax H3 导演台加速版全能工作流-宗门神曲多人替换演示_2086298148011593730.json, 视频生成/图生视频/MiniMax H3 导演台加速版全能工作流-宗门神曲多人替换演示_2084983882264436737.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_unet_3
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 AIMixer DSW导演台_2094439901352775681.json、视频生成/图生视频/MiniMax-H3导演台文生图生首尾帧多参多合一视频制作_2091539822958702594.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/MiniMax H3 导演台加速版全能工作流-宗门神曲多人替换演示_2086298148011593730.json、视频生成/图生视频/MiniMax H3 导演台加速版全能工作流-宗门神曲多人替换演示_2084983882264436737.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
-- `LoraLoaderBypassModelOnly`
+- `CreateVideo`
+- `ImageConcatMulti`
+- `LoraLoaderModelOnly`
 - `MiniMaxH3Director`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `ModelAttentionBackend`
-- `SolAttnMiniMax`
+- `ModelPreviewOverrideKJ`
+- `Note Plus (mtb)`
+- `SaveVideo`
 - `UNETLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ManualSigmas` —— 1/2 个有
-- `MiniMaxH3DirectorRefine` —— 1/2 个有
+- `EasyCache` —— 1/2 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/2 个有
+- `PathchSageAttentionKJ` —— 1/2 个有
+- `QRCode` —— 1/2 个有
+- `SaveImage` —— 1/2 个有
+- `UploadVideoToHost` —— 1/2 个有
+- `easy showAnything` —— 1/2 个有
 
 ## 典型参数
 

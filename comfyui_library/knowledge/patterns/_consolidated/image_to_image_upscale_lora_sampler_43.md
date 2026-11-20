@@ -1,102 +1,90 @@
 ---
 name: image_to_image_upscale_lora_sampler_43
 type: Image To Image
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.928
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, ConstrainImage|pysssss, Flux2Scheduler, Image Comparer (rgthree), ImageListToImageBatch, ImageScaleToTotalPixels, ImageUpscaleWithModel, ImpactImageBatchToImageList, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9052
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, ConstrainImage|pysssss, Get Image Size, Image Comparer (rgthree), ImageResize+, ImageScaleBy, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Klein_服装3D精修_2087367024208080897.json, 图片生成/图生图/Klein_极致肤质人像一致性精修_2087367800963813378.json, 图片生成/图生图/klein_自适应纠正场景透视溶图_2087903504638758913.json, 图片生成/图生图/测试自用_2064958565051359234.json]
+members: [平台全量/移除主体、水印 并 修复放大_1943295900598870017.json, 平台全量/移除水印+图片高清放大 TTP分块 高清无损放大_2063901354850078721.json, 平台全量/移除水印+图片高清放大_TTP分块_高清无损放大_2096168366250745858.json, 平台全量/移除水印+图片高清放大_TTP分块_高清无损放大_2096401521415114754.json, 平台全量/融图 _ 千问-edit-2511_1890275420535762945.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_43
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Klein_服装3D精修_2087367024208080897.json、图片生成/图生图/Klein_极致肤质人像一致性精修_2087367800963813378.json、图片生成/图生图/klein_自适应纠正场景透视溶图_2087903504638758913.json、图片生成/图生图/测试自用_2064958565051359234.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/移除主体、水印 并 修复放大_1943295900598870017.json、平台全量/移除水印+图片高清放大 TTP分块 高清无损放大_2063901354850078721.json、平台全量/移除水印+图片高清放大_TTP分块_高清无损放大_2096168366250745858.json、平台全量/移除水印+图片高清放大_TTP分块_高清无损放大_2096401521415114754.json、平台全量/融图 _ 千问-edit-2511_1890275420535762945.json）
 
 - **类型**：Image To Image
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `ConstrainImage|pysssss`
-- `Flux2Scheduler`
+- `Get Image Size`
 - `Image Comparer (rgthree)`
-- `ImageListToImageBatch`
-- `ImageScaleToTotalPixels`
-- `ImageUpscaleWithModel`
-- `ImpactImageBatchToImageList`
+- `ImageResize+`
+- `ImageScaleBy`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
 - `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
 - `UNETLoader`
-- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `GetImageSize+` —— 3/4 个有
-- `Int` —— 3/4 个有
-- `DualCLIPLoader` —— 2/4 个有
-- `FluxGuidance` —— 2/4 个有
-- `SeedVR2LoadDiTModel` —— 2/4 个有
-- `SeedVR2LoadVAEModel` —— 2/4 个有
-- `SeedVR2VideoUpscaler` —— 2/4 个有
-- `CR Draw Shape` —— 1/4 个有
-- `EmptyFlux2LatentImage` —— 1/4 个有
-- `GetImageSize` —— 1/4 个有
-- `GetImageSizeAndCount` —— 1/4 个有
-- `Image Crop Location` —— 1/4 个有
-- `ImageCompositeMasked` —— 1/4 个有
-- `LayerMask: BiRefNetUltraV2` —— 1/4 个有
-- `LayerMask: LoadBiRefNetModelV2` —— 1/4 个有
-- `Mask Crop Region` —— 1/4 个有
-- `MaskPreview+` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `SplitImageWithAlpha` —— 1/4 个有
-- `TTP_Expand_And_Mask` —— 1/4 个有
+- `DualCLIPLoader` —— 4/5 个有
+- `FluxGuidance` —— 4/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
+- `CFGNorm` —— 2/5 个有
+- `CLIPLoader` —— 2/5 个有
+- `ImageResizeKJv2` —— 2/5 个有
+- `KSamplerAdvanced` —— 2/5 个有
+- `ModelSamplingAuraFlow` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `TextEncodeQwenImageEditPlus` —— 2/5 个有
+- `easy imageColorMatch` —— 2/5 个有
+- `FluxKontextImageScale` —— 1/5 个有
+- `GetImageSize` —— 1/5 个有
+- `GrowMaskWithBlur` —— 1/5 个有
+- `Image Overlay` —— 1/5 个有
+- `ImageScale` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 1/5 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 6 - 6 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | res_multistep | - | 4 | 50% |
-| 调度器 | simple | - | 4 | 50% |
-| 重绘幅度 | 0.24 | 0.08 - 0.4 | 4 | 33% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 5 | 25% |
+| 采样算法 | euler | - | 5 | 80% |
+| 调度器 | simple | - | 5 | 80% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 6 - 6，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_multistep，4 个样本，一致性 50%
-- 调度器 最常用 simple，4 个样本，一致性 50%
-- 重绘幅度 中位数 0.24，观测区间 0.08 - 0.4，4 个样本，取值分散，一致性仅 33%
-- 风险：重绘幅度 观测到 0.08，低于常用下限 0.1（）
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 25%
+- 采样算法 最常用 euler，5 个样本，一致性 80%
+- 调度器 最常用 simple，5 个样本，一致性 80%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

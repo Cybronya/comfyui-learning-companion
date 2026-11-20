@@ -3,34 +3,38 @@ name: unknown_workflow_generic_1446
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.379
-common_nodes: [GetNode, LoadImage, SaveImage, SetNode]
+coverage: 0.7335
+common_nodes: [GetImageSize, GetVideoComponents, LoadImage, LoadVideo, PreviewAny, SaveVideo, Video Slice]
 problems: []
 missing: []
-members: [图片生成/图生图/九图合一_2021240272025292802.json, 图片生成/图生图/全能图片pro_Neo_xlw_2028742013948010498.json]
+members: [comfyui-workflow-templates-json/api_beeble_switchx_video_edit.json, comfyui-workflow-templates-json/video_bernini_r_video_editing.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1446
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/九图合一_2021240272025292802.json、图片生成/图生图/全能图片pro_Neo_xlw_2028742013948010498.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/api_beeble_switchx_video_edit.json、comfyui-workflow-templates-json/video_bernini_r_video_editing.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：38%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `GetNode`
+- `GetImageSize`
+- `GetVideoComponents`
 - `LoadImage`
-- `SaveImage`
-- `SetNode`
+- `LoadVideo`
+- `PreviewAny`
+- `SaveVideo`
+- `Video Slice`
 
 **可变部分**（部分 workflow 才有）：
-- `NineGridMosaicNode` —— 1/2 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/2 个有
+- `69c3c422-bcfe-4955-bc23-8bac307287a8` —— 1/2 个有
+- `BatchImagesNode` —— 1/2 个有
+- `BeebleSwitchXVideoEdit` —— 1/2 个有
 
 ## 典型参数
 

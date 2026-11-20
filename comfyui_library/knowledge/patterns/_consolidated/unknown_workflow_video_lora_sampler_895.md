@@ -1,74 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_895
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.767
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, Fast Groups Muter (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageScaleBy, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PreviewAny, RIFE VFI, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, easy cleanGpuUsed, easy clearCacheAll, easy saveText, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+frequency: 3
+level: moderate
+coverage: 0.902
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, PrimitiveFloat, SimpleMath+, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Remix 电商服装展示视频_2047589071815446530.json, 视频生成/图生视频/电商服装展示视频模特走秀视频_2065831471654457346.json]
+members: [视频生成/图生视频/Wan2.2图生视频超级加速_1955793674186604546.json, 视频生成/文生视频/WAN22运动性3xKsampler高速工作流_1959177557772021762.json, 视频生成/文生视频/【老金驿站】提升WAN22运动性3xKsampler高速工作流_1965219730770546689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_895
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Remix 电商服装展示视频_2047589071815446530.json、视频生成/图生视频/电商服装展示视频模特走秀视频_2065831471654457346.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频超级加速_1955793674186604546.json、视频生成/文生视频/WAN22运动性3xKsampler高速工作流_1959177557772021762.json、视频生成/文生视频/【老金驿站】提升WAN22运动性3xKsampler高速工作流_1965219730770546689.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：77%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `Fast Groups Muter (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `ImageScaleBy`
 - `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `PreviewAny`
-- `RIFE VFI`
-- `SetNode`
+- `PrimitiveFloat`
 - `SimpleMath+`
-- `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `WanImageToVideo`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
-- `easy saveText`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 1/2 个有
-- `TT_img_enc` —— 1/2 个有
+- `PrimitiveInt` —— 2/3 个有
+- `easy int` —— 2/3 个有
+- `CLIPLoaderGGUF` —— 1/3 个有
+- `CR SDXL Aspect Ratio` —— 1/3 个有
+- `ImageConcanate` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `PrimitiveString` —— 1/3 个有
+- `RH_Translator` —— 1/3 个有
+- `UNETLoader` —— 1/3 个有
+- `WanVideoVACEStartToEndFrame` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 6 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | beta | - | 2 | 100% |
+| 采样步数 | fixed | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 7 | 6 - 7 | 3 | 93% |
+| 采样算法 | 1 | 1 - 3.5 | 3 | 36% |
+| 调度器 | euler | - | 3 | 100% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -76,9 +67,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，2 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 6，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 beta，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 7，观测区间 6 - 7，3 个样本，取值集中（一致性 93%）
+- 采样算法 中位数 1，观测区间 1 - 3.5，3 个样本，取值分散，一致性仅 36%
+- 调度器 最常用 euler，3 个样本，一致性 100%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

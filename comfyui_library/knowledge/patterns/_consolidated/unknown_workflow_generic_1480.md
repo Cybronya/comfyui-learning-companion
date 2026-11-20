@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1480
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.714
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, SaveImage]
+coverage: 0.7335
+common_nodes: [ImageScaleToTotalPixels, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片V2-Lite 图生图｜低价渠道版_2093848420694970369.json, 图片生成/图生图/全能图片V2-Lite 图生图｜官方稳定版_2093852252271366145.json]
+members: [comfyui-workflow-templates-json/image_flux2.json, comfyui-workflow-templates-json/image_qwen_image_edit.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1480
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V2-Lite 图生图｜低价渠道版_2093848420694970369.json、图片生成/图生图/全能图片V2-Lite 图生图｜官方稳定版_2093852252271366145.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（comfyui-workflow-templates-json/image_flux2.json、comfyui-workflow-templates-json/image_qwen_image_edit.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `PreviewImage`
 - `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageNG31FlashLiteImageToImage` —— 1/2 个有
-- `RH_RhartImageNG31FlashLiteOfficialImageToImage` —— 1/2 个有
+- `74a8e1e2-9cb8-4112-978e-06ce1b5793f1` —— 1/2 个有
+- `7651d2ae-5471-47b0-b064-b34ee62343c1` —— 1/2 个有
 
 ## 典型参数
 

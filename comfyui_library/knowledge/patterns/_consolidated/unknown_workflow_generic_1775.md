@@ -3,37 +3,32 @@ name: unknown_workflow_generic_1775
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8215
-common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), Qwen3TTSModelLoader, Qwen3TTSVoiceDesign, RunningHub SeedXPro Translator, SaveAudio, easy showAnything]
+coverage: 0.9545
+common_nodes: [CR Text, Int, LoadImage, RHHiddenNodes, SaveImage, 取色器_孤海]
 problems: []
 missing: []
-members: [音频生成/音频生成/AA--QWEN3 TTS声音设计-多语言翻译--translate-角色配音_有声书_2015767841215090689.json, "音频生成/音频生成/qwen3 tts,qwentts声音克隆，海外，亚马逊_2021500422707482626.json"]
+members: [图片生成/图生图/电商主图设计-自定义参考及文案_全能图片G image2廉价极速_2054081377762594818.json, 图片生成/图生图/电商主图设计-自定义文案_全能图片G image2低价极速_2090712027143692289.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1775
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AA--QWEN3 TTS声音设计-多语言翻译--translate-角色配音_有声书_2015767841215090689.json、音频生成/音频生成/qwen3 tts,qwentts声音克隆，海外，亚马逊_2021500422707482626.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商主图设计-自定义参考及文案_全能图片G image2廉价极速_2054081377762594818.json、图片生成/图生图/电商主图设计-自定义文案_全能图片G image2低价极速_2090712027143692289.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Fast Groups Bypasser (rgthree)`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceDesign`
-- `RunningHub SeedXPro Translator`
-- `SaveAudio`
-- `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `Note Plus (mtb)` —— 1/2 个有
-- `Text` —— 1/2 个有
+- `CR Text`
+- `Int`
+- `LoadImage`
+- `RHHiddenNodes`
+- `SaveImage`
+- `取色器_孤海`
 
 ## 典型参数
 

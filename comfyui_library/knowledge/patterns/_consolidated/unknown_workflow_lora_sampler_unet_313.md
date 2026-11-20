@@ -3,80 +3,58 @@ name: unknown_workflow_lora_sampler_unet_313
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.845
-common_nodes: [AdaptiveLongestEdge_EditUtils, CFGNorm, CLIPLoader, ConditioningZeroOut, CropWithPadInfo_EditUtils, EditTextEncode_EditUtils, Image Comparer (rgthree), ImageScaleBy, KSampler, Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: SaveImagePlus, LoadImage, LoadRembgByBiRefNetModel, LoraLoaderModelOnly, ModelSamplingAuraFlow, MuyeTextEditOutput, PreviewImage, PrimitiveBoolean, PrimitiveStringMultiline, ReferenceLatent, RembgByBiRefNetAdvanced, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, ZML_SwitchOutput, easy cleanGpuUsed, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, mxSlider]
+coverage: 0.701
+common_nodes: [1hew_TextListToString, CLIPLoader, ConditioningZeroOut, GetNode, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, QwenMultiangleCameraNode, SaveImage, SetNode, Text List Concatenate, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader, easy promptLine, easy promptList, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/溶图&产品（人像）背景场景生成_Edit2511_2068659231485685761.json, 图片生成/图生图/背景替换_Flux2-Klein-9B_2072283078751506433.json]
+members: [图片生成/图生图/QIANSUI+Qwen2511+多角度镜头控制_2027623266839437314.json, 图片生成/图生图/Qwen2511 可控多角度图生成_2015755427060912130.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_313
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/溶图&产品（人像）背景场景生成_Edit2511_2068659231485685761.json、图片生成/图生图/背景替换_Flux2-Klein-9B_2072283078751506433.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/QIANSUI+Qwen2511+多角度镜头控制_2027623266839437314.json、图片生成/图生图/Qwen2511 可控多角度图生成_2015755427060912130.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `AdaptiveLongestEdge_EditUtils`
-- `CFGNorm`
+- `1hew_TextListToString`
 - `CLIPLoader`
 - `ConditioningZeroOut`
-- `CropWithPadInfo_EditUtils`
-- `EditTextEncode_EditUtils`
-- `Image Comparer (rgthree)`
-- `ImageScaleBy`
+- `GetNode`
 - `KSampler`
-- `Label (rgthree)`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: SaveImagePlus`
 - `LoadImage`
-- `LoadRembgByBiRefNetModel`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `MuyeTextEditOutput`
-- `PreviewImage`
-- `PrimitiveBoolean`
 - `PrimitiveStringMultiline`
-- `ReferenceLatent`
-- `RembgByBiRefNetAdvanced`
+- `QwenEditAdaptiveLongestEdge`
+- `QwenEditConfigPreparer`
+- `QwenMultiangleCameraNode`
 - `SaveImage`
-- `ShowText|pysssss`
+- `SetNode`
+- `Text List Concatenate`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `ZML_SwitchOutput`
-- `easy cleanGpuUsed`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
-- `mxSlider`
+- `easy promptLine`
+- `easy promptList`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AIO_Preprocessor` —— 1/2 个有
-- `CR Text Concatenate` —— 1/2 个有
-- `CR Text Input Switch (4 way)` —— 1/2 个有
-- `ControlNetApplyAdvanced` —— 1/2 个有
-- `ControlNetLoader` —— 1/2 个有
-- `DF_Integer` —— 1/2 个有
-- `Fast Bypasser (rgthree)` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `Flux2KleinConfigPreparer_EditUtils` —— 1/2 个有
-- `Flux2KleinModelConfig_EditUtils` —— 1/2 个有
-- `LayerUtility: ImageReel` —— 1/2 个有
-- `LayerUtility: ImageReelComposit` —— 1/2 个有
-- `QwenConfigPreparer_EditUtils` —— 1/2 个有
-- `QwenModelConfig_EditUtils` —— 1/2 个有
-- `SetUnionControlNetType` —— 1/2 个有
-- `ZML_BooleanSwitch` —— 1/2 个有
-- `easy imageSwitch` —— 1/2 个有
-- `easy textSwitch` —— 1/2 个有
-- `孤海注释` —— 1/2 个有
+- `CompressImages` —— 1/2 个有
+- `ImageListToBatch_` —— 1/2 个有
+- `ImageScaleToTotalPixels` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `SeedVR2` —— 1/2 个有
+- `SeedVR2BlockSwap` —— 1/2 个有
+- `SeedVR2ExtraArgs` —— 1/2 个有
+- `easy cleanGpuUsed` —— 1/2 个有
 
 ## 典型参数
 
@@ -85,9 +63,8 @@ source: knowledge_consolidation
 | 采样步数 | 4 | - | 2 | 100% |
 | Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
 | 采样算法 | euler | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| ControlNet 权重 | 2 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -100,7 +77,7 @@ source: knowledge_consolidation
 - 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
 - 高发问题（2/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

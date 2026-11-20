@@ -1,54 +1,61 @@
 ---
 name: unknown_workflow_video_sampler_vae_127
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.754
-common_nodes: [CLIPVisionLoader, ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.4654
+common_nodes: [GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJ, LoadImage, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoDecode, WanVideoDiffusionForcingSampler, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoTeaCache, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/03-15-02-WAN2.1-长视频单段生成-SVI_1988253691843141633.json, 视频生成/图生视频/Wan_FusionX_i2v_wrapper_WF图生视频_1948047192052367361.json, 视频生成/图生视频/wan 2.1 图生视频首尾帧（综合拆分）_2001590814977474562.json, 视频生成/图生视频/wanvideo2.1_svi_infinite_generate_1983813929321308162.json]
+members: [视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json, 视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json, 视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json, 视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json, 视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_127
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/03-15-02-WAN2.1-长视频单段生成-SVI_1988253691843141633.json、视频生成/图生视频/Wan_FusionX_i2v_wrapper_WF图生视频_1948047192052367361.json、视频生成/图生视频/wan 2.1 图生视频首尾帧（综合拆分）_2001590814977474562.json、视频生成/图生视频/wanvideo2.1_svi_infinite_generate_1983813929321308162.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json、视频生成/图生视频/skyreels_DF一镜到底无限时长_1915438645938163713.json、视频生成/图生视频/万象SkyreelsV2无限时长工作流_1919284911071494146.json、视频生成/图生视频/通义万相无限时长Diffusion-forcing模型工作流_1914572430503833601.json、视频生成/文生视频/【突破AI视频时长限制！】SkyReels V2模型支持生成不限时长的电影视频_1923575384724393985.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `ImageResizeKJv2`
+全部 5 个 workflow 都包含：
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatchMulti`
+- `ImageResizeKJ`
 - `LoadImage`
+- `SetNode`
+- `SimpleMath+`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoDiffusionForcingSampler`
+- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoExperimentalArgs`
 - `WanVideoModelLoader`
-- `WanVideoSampler`
+- `WanVideoSLG`
+- `WanVideoTeaCache`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoT5TextEncoder` —— 3/4 个有
-- `WanVideoLoraSelectMulti` —— 3/4 个有
-- `WanVideoSetBlockSwap` —— 3/4 个有
-- `WanVideoTextEncode` —— 3/4 个有
-- `GetNode` —— 2/4 个有
-- `PreviewAny` —— 2/4 个有
-- `SetNode` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `AILab_QwenVL` —— 1/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `Qwen_VLM_API` —— 1/4 个有
-- `WanVideoSetLoRAs` —— 1/4 个有
-- `WanVideoTextEncodeCached` —— 1/4 个有
+- `CLIPLoader` —— 4/5 个有
+- `CLIPTextEncode` —— 4/5 个有
+- `WanVideoBlockSwap` —— 4/5 个有
+- `WanVideoTextEmbedBridge` —— 4/5 个有
+- `LoadWanVideoT5TextEncoder` —— 3/5 个有
+- `WanVideoTextEncode` —— 3/5 个有
+- `WanVideoTorchCompileSettings` —— 3/5 个有
+- `WanVideoVRAMManagement` —— 3/5 个有
+- `LoadImageFromUrl` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

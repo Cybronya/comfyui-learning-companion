@@ -1,45 +1,34 @@
 ---
 name: unknown_workflow_generic_962
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.883667
-common_nodes: [LoadImage, ProcessString, RH_LLMAPI_Pro_Node, SaveImage, Text, easy promptConcat, easy promptLine, easy showAnything]
+coverage: 0.429
+common_nodes: [JjkText, LoadImageNode, SaveImage, Text, easy showAnything, 孤海注释]
 problems: []
 missing: []
-members: [图片生成/图生图/G image 2.0电商详情页专用  1毛钱1张图_2051876918835851266.json, 图片生成/图生图/一键详情页_2060233305622138881.json, 图片生成/文生图/AI创意设计10张产品电商详情页生成工作流(🍌生图）_2051332952734351362.json]
+members: [平台全量/AI资源仓-单人_双人_三人_四人对口型工作流- 三人对口型_多人_2072429773770547202.json, 平台全量/AI资源仓-单人_双人_三人_四人对口型工作流- 单人对口型_多人_2070405151902486529.json, 平台全量/AI资源仓-单人_双人_三人_四人对口型工作流- 双人对口型_多人_2019058225903046658.json, 平台全量/AI资源仓-单人_双人_三人_四人对口型工作流- 四人对口型_多人_2072427844256485378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_962
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/G image 2.0电商详情页专用  1毛钱1张图_2051876918835851266.json、图片生成/图生图/一键详情页_2060233305622138881.json、图片生成/文生图/AI创意设计10张产品电商详情页生成工作流(🍌生图）_2051332952734351362.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/AI资源仓-单人_双人_三人_四人对口型工作流- 三人对口型_多人_2072429773770547202.json、平台全量/AI资源仓-单人_双人_三人_四人对口型工作流- 单人对口型_多人_2070405151902486529.json、平台全量/AI资源仓-单人_双人_三人_四人对口型工作流- 双人对口型_多人_2019058225903046658.json、平台全量/AI资源仓-单人_双人_三人_四人对口型工作流- 四人对口型_多人_2072427844256485378.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：43%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `LoadImage`
-- `ProcessString`
-- `RH_LLMAPI_Pro_Node`
+全部 4 个 workflow 都包含：
+- `JjkText`
+- `LoadImageNode`
 - `SaveImage`
 - `Text`
-- `easy promptConcat`
-- `easy promptLine`
 - `easy showAnything`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `RH_RhartImageG2ImageToImage` —— 2/3 个有
-- `ShowText` —— 2/3 个有
-- `solarL_SaveImagesToZip` —— 2/3 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/3 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
+- `孤海注释`
 
 ## 典型参数
 

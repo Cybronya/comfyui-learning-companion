@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_485
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.943667
-common_nodes: [CR Prompt Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.910143
+common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/微调模块_2057855758682902529.json, 图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json, 图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json, 图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json, 图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json, 数字人/数字人/公司简介PPT工作流_2062465007568375809.json]
+members: [平台全量/seedance2.0  直接生视频_2057380622796156930.json, 视频生成/图生视频/Seedance 2.0｜字节第三代 AI 视频｜文生视频・多镜头・音画同步｜AI 生成内容_2037893339223171074.json, 视频生成/图生视频/Seedance2.0全能参考视频_2049369386825293826.json, 视频生成/图生视频/喔嘟嘟穿越屏幕_2069412452751728642.json, 视频生成/文生视频/Seedance 2.0 多模态参考生成视频・多镜头・音画同步_2039923762027565057.json, 视频生成/文生视频/Seedance2.0全能参考_ 图_音_文_视频生视频_2045121809271496706.json, 视频生成/文生视频/Seedance图生视频+全节点注释_2055483674128338946.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_485
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/微调模块_2057855758682902529.json、图片生成/文生图/🍌2 pro+2+&+Pro+手办生成_2027193751881388033.json、图片生成/文生图/🍌2 pro+Pro2+动漫转真人+拍摄现场稳定版_2027189286327558146.json、图片生成/文生图/🍌全能图片V2 pro_2052240793787748354.json、图片生成/文生图/🍌全能图片🍌V2 pro+&+只需0.05一次，最新gemini 3.1 xiangjiao_2027179536248475649.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/seedance2.0  直接生视频_2057380622796156930.json、视频生成/图生视频/Seedance 2.0｜字节第三代 AI 视频｜文生视频・多镜头・音画同步｜AI 生成内容_2037893339223171074.json、视频生成/图生视频/Seedance2.0全能参考视频_2049369386825293826.json、视频生成/图生视频/喔嘟嘟穿越屏幕_2069412452751728642.json、视频生成/文生视频/Seedance 2.0 多模态参考生成视频・多镜头・音画同步_2039923762027565057.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Prompt Text`
+全部 7 个 workflow 都包含：
 - `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 1/6 个有
-- `Text Multiline` —— 1/6 个有
+- `MuyeTextEditOutput` —— 1/7 个有
+- `孤海注释` —— 1/7 个有
 
 ## 典型参数
 

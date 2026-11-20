@@ -3,48 +3,35 @@ name: unknown_workflow_generic_1663
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.837
-common_nodes: [CR Prompt Text, FB_Qwen3TTSCustomVoice, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClone, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, LayerUtility: PurgeVRAM V2, LoadAudio, PreviewAny, PreviewAudio, Qwen2.5, SaveAudio, VRAMReserver, WhisperSTT, easy showAnything]
+coverage: 0.758
+common_nodes: [Fast Groups Bypasser (rgthree), JjkText, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/【合集】Qwen3 TTS 声音_2015689634474369026.json, 音频生成/音频生成/【阿良绘】Qwen语音设计合集 _ 多人情感对话、音色克隆、语音设计、_2063171776045215746.json]
+members: [图片生成/图生图/全能图片2.0 单图双图多图编辑 一图生多角度 全能图片2 自由镜头  保持人物一致_2027980545220677634.json, 图片生成/文生图/新版全能图片2模型_2038810561290444801.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1663
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/【合集】Qwen3 TTS 声音_2015689634474369026.json、音频生成/音频生成/【阿良绘】Qwen语音设计合集 _ 多人情感对话、音色克隆、语音设计、_2063171776045215746.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片2.0 单图双图多图编辑 一图生多角度 全能图片2 自由镜头  保持人物一致_2027980545220677634.json、图片生成/文生图/新版全能图片2模型_2038810561290444801.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `FB_Qwen3TTSCustomVoice`
-- `FB_Qwen3TTSDialogueInference`
-- `FB_Qwen3TTSRoleBank`
-- `FB_Qwen3TTSVoiceClone`
-- `FB_Qwen3TTSVoiceClonePrompt`
-- `FB_Qwen3TTSVoiceDesign`
-- `LayerUtility: PurgeVRAM V2`
-- `LoadAudio`
-- `PreviewAny`
-- `PreviewAudio`
-- `Qwen2.5`
-- `SaveAudio`
-- `VRAMReserver`
-- `WhisperSTT`
-- `easy showAnything`
+- `Fast Groups Bypasser (rgthree)`
+- `JjkText`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `CR Text` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `QwenMultiangleCameraNode` —— 1/2 个有
+- `easy promptList` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,79 +1,90 @@
 ---
 name: image_to_image_upscale_sampler_clip_12
 type: Image To Image
-frequency: 10
-level: strong
-coverage: 0.8749
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), ImpactInt, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything]
-problems: []
+frequency: 11
+level: moderate
+coverage: 0.905182
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, ImageResize+, ImageScaleBy, KSampler, LoadImage, ReferenceLatent, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z-image 洗图 Qwen 反推 + 图生图_1994959368749768705.json, 图片生成/图生图/Z-image一键洗图+高清放大_1993969122901950466.json, 图片生成/图生图/洗图反推提示词(z-image最新模型_2069038799086247938.json, 图片生成/图生图/洗图反推提示词(z-image最新模型_2098982044742275073.json, 图片生成/图生图/洗图反推提示词(z-image最新模型_2100155875313938434.json, 图片生成/图生图/洗图反推提示词(z-image最新模型_2101492134036721666.json, 图片生成/图生图/洗图反推提示词(z-image最新模型_2102306162334068737.json, 图片生成/图生图/洗图反推提示词(z-image最新模型）_1994447944025772033.json, 图片生成/图生图/洗图反推提示词(z-image最新模型）_1995486914423750658.json, 图片生成/图生图/洗图反推提示词(z-image最新模型）_2004765981467705345.json]
+members: [图片生成/图生图/Flux2_klein_TrueV2多图编辑+SeedVR2放大_2056926047752507394.json, 图片生成/图生图/Flux2_klein_TrueV2编辑模型+SeedVR2放大_2056924292906053633.json, 图片生成/图生图/Flux2最新修复 高清放大_细节增强- 极速修复_2053278696852729857.json, 图片生成/图生图/Flux2最新修复_高清放大_细节增强-_极速修复_2053320142259531778.json, 图片生成/图生图/High-Definition Zoom_Detail Enhancement 高清放大_细节增强-_2104029734995845121.json, 图片生成/图生图/High-Definition Zoom_Detail Enhancement 高清放大_细节增强-_2114882296372355073.json, 图片生成/图生图/Kontext全能精修电商产品精修_2057766481882083329.json, 图片生成/图生图/kontext全能精修产品精修人像精修婚纱照精修全能精修_2044780452099137538.json, 图片生成/图生图/kontext全能精修产品精修电商产品精修_2054546020247326722.json, 图片生成/图生图/去水印+高清放大 Watermark Removal High-Resolution Image E_2092788122122801153.json, 图片生成/图生图/图片_Flux-Klein+SeedVR2放大_2077934290356236289.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_sampler_clip_12
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Z-image 洗图 Qwen 反推 + 图生图_1994959368749768705.json、图片生成/图生图/Z-image一键洗图+高清放大_1993969122901950466.json、图片生成/图生图/洗图反推提示词(z-image最新模型_2069038799086247938.json、图片生成/图生图/洗图反推提示词(z-image最新模型_2098982044742275073.json、图片生成/图生图/洗图反推提示词(z-image最新模型_2100155875313938434.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Flux2_klein_TrueV2多图编辑+SeedVR2放大_2056926047752507394.json、图片生成/图生图/Flux2_klein_TrueV2编辑模型+SeedVR2放大_2056924292906053633.json、图片生成/图生图/Flux2最新修复 高清放大_细节增强- 极速修复_2053278696852729857.json、图片生成/图生图/Flux2最新修复_高清放大_细节增强-_极速修复_2053320142259531778.json、图片生成/图生图/High-Definition Zoom_Detail Enhancement 高清放大_细节增强-_2104029734995845121.json…）
 
 - **类型**：Image To Image
-- **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **样本数**：11
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `CLIPLoader`
+全部 11 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
-- `ImpactInt`
+- `ImageResize+`
+- `ImageScaleBy`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 9/10 个有
-- `CR Text` —— 9/10 个有
-- `ImageScaleBy` —— 9/10 个有
-- `LayerUtility: ImageReel` —— 9/10 个有
-- `LayerUtility: ImageReelComposit` —— 9/10 个有
-- `EmptyImage` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `Qwen3VL_Advanced` —— 1/10 个有
-- `RH_LLMAPI_Pro_Node` —— 1/10 个有
-- `RepeatLatentBatch` —— 1/10 个有
-- `SeedVR2TorchCompileSettings` —— 1/10 个有
-- `easy anythingIndexSwitch` —— 1/10 个有
-- `easy cleanGpuUsed` —— 1/10 个有
+- `GetImageSize+` —— 10/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/11 个有
+- `Image Comparer (rgthree)` —— 8/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/11 个有
+- `easy cleanGpuUsed` —— 8/11 个有
+- `CLIPLoader` —— 7/11 个有
+- `LoraLoaderModelOnly` —— 6/11 个有
+- `PreviewImage` —— 6/11 个有
+- `LatentUpscaleBy` —— 5/11 个有
+- `DualCLIPLoader` —— 4/11 个有
+- `Float` —— 4/11 个有
+- `FluxGuidance` —— 4/11 个有
+- `Int` —— 3/11 个有
+- `easy imageScaleDownBy` —— 3/11 个有
+- `ResizeLongestToNode` —— 2/11 个有
+- `ChangeImageBatchSize //Inspire` —— 1/11 个有
+- `ConstrainImage|pysssss` —— 1/11 个有
+- `DepthAnything_V2` —— 1/11 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 1/11 个有
+- `Get Image Size` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 10 - 10 | 10 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 90% |
-| 调度器 | simple | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 采样步数 | 8 | 4 - 20 | 11 | 45% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 100% |
+| 重绘幅度 | 1 | 0.5 - 1 | 11 | 83% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 10 - 10，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 90%
-- 调度器 最常用 simple，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 20，11 个样本，取值分散，一致性仅 45%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.5 - 1，11 个样本，取值集中（一致性 83%）
+- 高发问题（7/11 个样本）：Steps较低可能导致细节不足

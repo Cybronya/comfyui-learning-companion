@@ -1,36 +1,38 @@
 ---
 name: unknown_workflow_generic_917
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.768667
-common_nodes: [JjkText, LoadImage, Qwen3_VQA, SaveImage, VHS_LoadVideo, VideoLoaderPlus, easy saveText, easy showAnything]
+coverage: 0.87475
+common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Huihui-Qwen3 VL-8B-爆款视频反推V2-提示词分析-视频脚本反推_2063872215459917826.json, 图片生成/反推提示词/Qwen3 VL-4B-爆款视频反推V2-提示词分析-视频脚本反推_2063861093998612481.json, 图片生成/反推提示词/Qwen3 VL-8B-爆款视频反推V2-提示词分析-视频脚本反推_2063865484524744705.json]
+members: [图片生成/图生图/服装换丰富_2064244845438390274.json, 图片生成/文生图/RH版：全能图片2极速版图像编辑-文生图-图生图_2027601398346555393.json, 图片生成/文生图/全能图片V2_2043885003909632001.json, 平台全量/自用谷歌B p or 2_1994047527953563649.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_917
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/反推提示词/Huihui-Qwen3 VL-8B-爆款视频反推V2-提示词分析-视频脚本反推_2063872215459917826.json、图片生成/反推提示词/Qwen3 VL-4B-爆款视频反推V2-提示词分析-视频脚本反推_2063861093998612481.json、图片生成/反推提示词/Qwen3 VL-8B-爆款视频反推V2-提示词分析-视频脚本反推_2063865484524744705.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/服装换丰富_2064244845438390274.json、图片生成/文生图/RH版：全能图片2极速版图像编辑-文生图-图生图_2027601398346555393.json、图片生成/文生图/全能图片V2_2043885003909632001.json、平台全量/自用谷歌B p or 2_1994047527953563649.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `JjkText`
+全部 4 个 workflow 都包含：
+- `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `Qwen3_VQA`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `VHS_LoadVideo`
-- `VideoLoaderPlus`
-- `easy saveText`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `CR Prompt Text` —— 2/4 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/4 个有
+- `RH_Nano_Banana2_Image2Image` —— 1/4 个有
+- `TextInputBasic` —— 1/4 个有
 
 ## 典型参数
 

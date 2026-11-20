@@ -1,66 +1,51 @@
 ---
 name: unknown_workflow_upscale_clip_unet_7
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4125
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Simple Text Watermark, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Bypasser (rgthree), Flux2Scheduler, GetNode, Image Comparer (rgthree), Int, PreviewImage, PrimitiveInt, SaveImage, Seed (rgthree), SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, UNETLoader, VAEDecode, VAELoader]
+frequency: 3
+level: moderate
+coverage: 0.920667
+common_nodes: [CLIPTextEncodeFlux, ConditioningZeroOut, DualCLIPLoader, LoadImage, SaveImage, UNETLoader, UltimateSDUpscale, UpscaleModelLoader, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Klein-12步超真实生图9B-True-V2-Ded-CKS_2039691867251544066.json, 图片生成/文生图/超真实生图Klein-9B-True-V2-bf16-25步_2039686701332832258.json]
+members: [图片生成/图生图/flux图像放大清晰化增加细节 人物模特清晰化_1935210187508600834.json, 平台全量/FLUX高清放大+Lora_1942154468412780545.json, 平台全量/SD高清修复_1938174548967604225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_clip_unet_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Klein-12步超真实生图9B-True-V2-Ded-CKS_2039691867251544066.json、图片生成/文生图/超真实生图Klein-9B-True-V2-bf16-25步_2039686701332832258.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/flux图像放大清晰化增加细节 人物模特清晰化_1935210187508600834.json、平台全量/FLUX高清放大+Lora_1942154468412780545.json、平台全量/SD高清修复_1938174548967604225.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：41%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CR Simple Text Watermark`
+全部 3 个 workflow 都包含：
+- `CLIPTextEncodeFlux`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `Flux2Scheduler`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `Int`
-- `PreviewImage`
-- `PrimitiveInt`
+- `DualCLIPLoader`
+- `LoadImage`
 - `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `SetNode`
 - `UNETLoader`
-- `VAEDecode`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGGuider` —— 1/2 个有
-- `ClownsharKSampler_Beta` —— 1/2 个有
-- `KSamplerSelect` —— 1/2 个有
-- `RandomNoise` —— 1/2 个有
-- `SamplerCustomAdvanced` —— 1/2 个有
+- `DeepTranslatorTextNode` —— 2/3 个有
+- `Image Comparer (rgthree)` —— 2/3 个有
+- `ControlNetApplyAdvanced` —— 1/3 个有
+- `ControlNetLoader` —— 1/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
+- `LoraLoaderModelOnly` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | sgm_uniform | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 30 | - | 1 | 100% |
-| 采样算法 | -1 | - | 1 | 100% |
-| 调度器 | 1 | - | 1 | 100% |
-| 重绘幅度 | 0.85 | - | 1 | 100% |
+| ControlNet 权重 | 0.66 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -68,5 +53,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 风险：Prompt 约束强度(CFG) 观测到 30，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

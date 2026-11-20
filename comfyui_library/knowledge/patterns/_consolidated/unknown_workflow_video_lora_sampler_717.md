@@ -1,72 +1,78 @@
 ---
 name: unknown_workflow_video_lora_sampler_717
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 0.576333
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Prompt Text, GetNode, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1, RH_LLMAPI_Pro_Node, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything]
+frequency: 4
+level: moderate
+coverage: 0.49
+common_nodes: [CLIPVisionLoader, GetNode, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Remix  V3.0  图生视频 自动提示词_2034288165581758466.json, 视频生成/图生视频/Wan2.2+VBVR+奖励lora 自动提示词-I2V_2045775730209984513.json, 视频生成/图生视频/Wan2.2_I2V_Remix V2.1+PainterI2V+VBVR奖励lora 图生视频_2025905016736845825.json]
+members: [视频生成/图生视频/Animate影视二创（单人版）V1.0_2037017744700346369.json, 视频生成/图生视频/Animate影视二创（单人面部参考版）V1.1_2037029152141877249.json, 视频生成/图生视频/Animate影视二创（多人版）V1.0_2037063850230550530.json, 视频生成/图生视频/Animate替换人物_2043495684220915714.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_717
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Remix  V3.0  图生视频 自动提示词_2034288165581758466.json、视频生成/图生视频/Wan2.2+VBVR+奖励lora 自动提示词-I2V_2045775730209984513.json、视频生成/图生视频/Wan2.2_I2V_Remix V2.1+PainterI2V+VBVR奖励lora 图生视频_2025905016736845825.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Animate影视二创（单人版）V1.0_2037017744700346369.json、视频生成/图生视频/Animate影视二创（单人面部参考版）V1.1_2037029152141877249.json、视频生成/图生视频/Animate影视二创（多人版）V1.0_2037063850230550530.json、视频生成/图生视频/Animate替换人物_2043495684220915714.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：58%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 4 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CR Prompt Text`
 - `GetNode`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`
-- `RH_LLMAPI_Pro_Node`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy showAnything`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `LayerUtility: PurgeVRAM` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `SaveImage` —— 2/3 个有
-- `easy anythingIndexSwitch` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `RH_LLMAPI_NODE` —— 1/3 个有
-- `ShellAgentPluginOutputText` —— 1/3 个有
-- `TT_img_enc_v2` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `Bookmark (rgthree)` —— 3/4 个有
+- `PlaySound|pysssss` —— 3/4 个有
+- `easy cleanGpuUsed` —— 3/4 个有
+- `BlockifyMask` —— 2/4 个有
+- `DWPreprocessor` —— 2/4 个有
+- `DrawMaskOnImage` —— 2/4 个有
+- `ResizeImageMaskNode` —— 2/4 个有
+- `easy framesEditor` —— 2/4 个有
+- `easy imageSizeBySide` —— 2/4 个有
+- `easy sam3ModelLoader` —— 2/4 个有
+- `easy sam3VideoModelExtraConfig` —— 2/4 个有
+- `easy sam3VideoSegmentation` —— 2/4 个有
+- `CR Prompt Text` —— 1/4 个有
+- `DrawViTPose` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
+- `GrowMask` —— 1/4 个有
+- `GrowMaskWithBlur` —— 1/4 个有
+- `ImageConcatMulti` —— 1/4 个有
+- `SDPoseOODLoader` —— 1/4 个有
+- `SDPoseOODProcessor` —— 1/4 个有
+- `VHS_VideoInfoLoaded` —— 1/4 个有
+- `YOLOModelLoader` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 3 | 100% |
-| Prompt 约束强度(CFG) | 8 | 4 - 8 | 3 | 72% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | euler_ancestral | - | 3 | 100% |
-| 重绘幅度 | simple | - | 3 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -74,8 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，3 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 4 - 8，3 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，3 个样本，一致性 100%
-- 重绘幅度 最常用 simple，3 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

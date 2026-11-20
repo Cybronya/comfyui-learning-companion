@@ -2,82 +2,68 @@
 name: text_to_image_lora_sampler_clip_566
 type: Text To Image
 frequency: 3
-level: weak
-coverage: 0.868333
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, DapaoGPTImage2AllroundNode, DapaoGPTLLMChatNode, DapaoImageRatioLimitNode, EmptyLatentImage, EmptySD3LatentImage, ImageResizeKJv2, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, Note Plus (mtb), PrimitiveString, SaveImage, Seed (rgthree), UNETLoader, VAEDecode, VAEEncode, VAELoader, easy showAnything, 孤海注释]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.974333
+common_nodes: [CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/文生图/▶四视图生成流+超真实人物质感生成_2095811366279008257.json, 图片生成/文生图/四视图生成流超真实｜人物质感文生图反推一步出_2096232972402905089.json, 图片生成/文生图/角色四视图生成流｜超真实人物质感文生图制作_2095945717763366913.json]
+members: [图片生成/文生图/Flux.室内效果图生成_2055177379538063361.json, 图片生成/文生图/flux+lora出图_1901871929287188482.json, 图片生成/文生图/【批量提示词】LORA模型测试_2067411590521122818.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_566
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/▶四视图生成流+超真实人物质感生成_2095811366279008257.json、图片生成/文生图/四视图生成流超真实｜人物质感文生图反推一步出_2096232972402905089.json、图片生成/文生图/角色四视图生成流｜超真实人物质感文生图制作_2095945717763366913.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Flux.室内效果图生成_2055177379538063361.json、图片生成/文生图/flux+lora出图_1901871929287188482.json、图片生成/文生图/【批量提示词】LORA模型测试_2067411590521122818.json）
 
 - **类型**：Text To Image
 - **样本数**：3
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `ConditioningZeroOut`
-- `DapaoGPTImage2AllroundNode`
-- `DapaoGPTLLMChatNode`
-- `DapaoImageRatioLimitNode`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `EmptySD3LatentImage`
-- `ImageResizeKJv2`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `Note Plus (mtb)`
-- `PrimitiveString`
 - `SaveImage`
-- `Seed (rgthree)`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy showAnything`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `solarL_SaveImagesToZip` —— 2/3 个有
+- `ConditioningZeroOut` —— 2/3 个有
+- `BaiduTranslateNode` —— 1/3 个有
+- `CLIPTextEncodeFlux` —— 1/3 个有
+- `RebatchLatents` —— 1/3 个有
+- `Text` —— 1/3 个有
+- `easy promptLine` —— 1/3 个有
+- `ttN concat` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 10 | 3 | 53% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 3 | 51% |
-| 采样算法 | er_sde | - | 3 | 67% |
-| 调度器 | beta | - | 3 | 67% |
+| 采样步数 | 20 | 20 - 25 | 3 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 67% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 1024 | 3 | 0% |
-| 高度 | 80 | 80 - 1024 | 3 | 0% |
+| 宽度 | 1024 | 768 - 1536 | 3 | 71% |
+| 高度 | 1024 | 1024 - 1536 | 3 | 80% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 10，3 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，3 个样本
-- 采样算法 最常用 er_sde，3 个样本，一致性 67%
-- 调度器 最常用 beta，3 个样本，一致性 67%
+- 采样步数 中位数 20，观测区间 20 - 25，3 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 67%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 0%
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 768 - 1536，3 个样本
+- 高度 中位数 1024，观测区间 1024 - 1536，3 个样本

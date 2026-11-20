@@ -1,58 +1,48 @@
 ---
 name: unknown_workflow_video_57
 type: Unknown Workflow
-frequency: 3
+frequency: 6
 level: moderate
-coverage: 0.948
-common_nodes: [CreateShapeMask, DF_Int_to_Float, ImageCompositeMasked, ImageRepeat, ImageResizeKJ, IntToText, JWInteger, LayerUtility: BooleanOperator, LayerUtility: GetImageSize, LoadImage, SimpleMath+, VHS_SelectImages, VHS_VideoCombine, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy ifElse]
+coverage: 0.850833
+common_nodes: [CR Integer To String, CR Text, CR Text Concatenate, Compare, FlashVSRNode, ImageResize+, Make Interpolation State List, MathExpression|pysssss, RHHiddenNodes, RIFE VFI, StringConcatenate, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy ifElse]
 problems: []
 missing: []
-members: [图片生成/图生图/工作流封面Gif_1944918409000968194.json, 图片生成/图生图/工作流封面Gif_1944921732853714945.json, 视频生成/图生视频/图片变形合成视频_1893265262676754434.json]
+members: [平台全量/【视频超清插帧】Flash Vsr（16帧插至25帧）_2058382769423740930.json, 平台全量/【视频超清插帧】FlashVSR 高清放大补帧（16帧插值25帧）_2014519085500993538.json, 平台全量/【视频超清插帧】FlashVSR-独家插帧算法（16帧插值25帧）_1981198267642011649.json, 平台全量/【视频超清插帧】FlashVSR-独家插帧算法（16帧插值25帧）_2086764868715237377.json, 视频生成/图生视频/【视频超清插帧】Flash Vsr（16帧插至25帧）_2056548182066290690.json, 视频生成/图生视频/【视频超清插帧】Flash+Vsr_2056903678707191809.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_57
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/工作流封面Gif_1944918409000968194.json、图片生成/图生图/工作流封面Gif_1944921732853714945.json、视频生成/图生视频/图片变形合成视频_1893265262676754434.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/【视频超清插帧】Flash Vsr（16帧插至25帧）_2058382769423740930.json、平台全量/【视频超清插帧】FlashVSR 高清放大补帧（16帧插值25帧）_2014519085500993538.json、平台全量/【视频超清插帧】FlashVSR-独家插帧算法（16帧插值25帧）_1981198267642011649.json、平台全量/【视频超清插帧】FlashVSR-独家插帧算法（16帧插值25帧）_2086764868715237377.json、视频生成/图生视频/【视频超清插帧】Flash Vsr（16帧插至25帧）_2056548182066290690.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CreateShapeMask`
-- `DF_Int_to_Float`
-- `ImageCompositeMasked`
-- `ImageRepeat`
-- `ImageResizeKJ`
-- `IntToText`
-- `JWInteger`
-- `LayerUtility: BooleanOperator`
-- `LayerUtility: GetImageSize`
-- `LoadImage`
-- `SimpleMath+`
-- `VHS_SelectImages`
+全部 6 个 workflow 都包含：
+- `CR Integer To String`
+- `CR Text`
+- `CR Text Concatenate`
+- `Compare`
+- `FlashVSRNode`
+- `ImageResize+`
+- `Make Interpolation State List`
+- `MathExpression|pysssss`
+- `RHHiddenNodes`
+- `RIFE VFI`
+- `StringConcatenate`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy batchAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `VHS_VideoInfoSource`
 - `easy ifElse`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerMask: MaskPreview` —— 2/3 个有
-- `CR Checker Pattern` —— 1/3 个有
-- `CR Starburst Lines` —— 1/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
-- `Float` —— 1/3 个有
-- `ImageStretch` —— 1/3 个有
-- `ImageToMask` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `LiquifyNode` —— 1/3 个有
-- `RepeatImageBatch` —— 1/3 个有
-- `Switch image [Crystools]` —— 1/3 个有
+- `GetNode` —— 5/6 个有
+- `Int` —— 5/6 个有
+- `SetNode` —— 5/6 个有
 
 ## 典型参数
 

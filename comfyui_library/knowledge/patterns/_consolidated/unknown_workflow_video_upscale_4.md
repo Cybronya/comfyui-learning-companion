@@ -1,47 +1,46 @@
 ---
 name: unknown_workflow_video_upscale_4
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.726
-common_nodes: [Image Comparer (rgthree), ImageScaleBy, ImageUpscaleWithModel, LoadImage, PreviewImage, SaveImage, SeedVR2, SeedVR2BlockSwap, UpscaleModelLoader, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 8
+level: moderate
+coverage: 0.9135
+common_nodes: [LayerFilter: GaussianBlur, RH_DLSS5Enhance, VHS_LoadVideo, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, easy cleanGpuUsed, 图像缩放V2_孤海]
 problems: []
 missing: []
-members: [图片生成/图生图/SeedVR2-V2-图片视频修复_1991874494327484418.json, 图片生成/图生图/图片超清放大SeedVR2_1971421765958320129.json]
+members: [平台全量/VOSR2 + DLSS5 4K视频超分放大_2100967801958789121.json, 平台全量/VOSR2 + DLSS5 双重视频超分与画质增强_2104817431230377986.json, 平台全量/VOSR2 + DLSS5 视频超分放大_2100223278790037506.json, 平台全量/VOSR2 + DLSS5 视频超分放大_2101714086508716033.json, 平台全量/VOSR2 + DLSS5 视频超分放大_2102331588230078465.json, 平台全量/开源最强VOSR2 + DLSS5 视频超分放大（不改变原视频不用输入提示词）_2109591428304293889.json, 平台全量/视频增强丨VOSR2＋DLSS5丨超分放大_2120418933407834113.json, 视频生成/图生视频/VOSR2_+_DLSS5_视频超分放大_2115579106124451841.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_4
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/SeedVR2-V2-图片视频修复_1991874494327484418.json、图片生成/图生图/图片超清放大SeedVR2_1971421765958320129.json）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（平台全量/VOSR2 + DLSS5 4K视频超分放大_2100967801958789121.json、平台全量/VOSR2 + DLSS5 双重视频超分与画质增强_2104817431230377986.json、平台全量/VOSR2 + DLSS5 视频超分放大_2100223278790037506.json、平台全量/VOSR2 + DLSS5 视频超分放大_2101714086508716033.json、平台全量/VOSR2 + DLSS5 视频超分放大_2102331588230078465.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：73%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Image Comparer (rgthree)`
-- `ImageScaleBy`
-- `ImageUpscaleWithModel`
-- `LoadImage`
-- `PreviewImage`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `UpscaleModelLoader`
+全部 8 个 workflow 都包含：
+- `LayerFilter: GaussianBlur`
+- `RH_DLSS5Enhance`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VOSR2ModelLoader`
+- `VOSR2Upscale`
+- `easy cleanGpuUsed`
+- `图像缩放V2_孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `ImageScaleToTotalPixels` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `PlaySound|pysssss` —— 1/2 个有
-- `SeedVR2ExtraArgs` —— 1/2 个有
+- `GH_AudioVideoMerger` —— 7/8 个有
+- `GH_ImageVideoComparer` —— 7/8 个有
+- `孤海注释` —— 7/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `Int` —— 1/8 个有
+- `SaveVideo` —— 1/8 个有
+- `SimpleMath+` —— 1/8 个有
+- `easy int` —— 1/8 个有
 
 ## 典型参数
 
@@ -53,4 +52,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

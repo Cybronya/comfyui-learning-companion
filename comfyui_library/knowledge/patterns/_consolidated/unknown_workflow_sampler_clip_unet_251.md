@@ -1,79 +1,77 @@
 ---
 name: unknown_workflow_sampler_clip_unet_251
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8654
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8355
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/ControlNet精准控制图像生成工作流_2069079255807512577.json, 图片生成/图生图/Qwen2509 人物姿态精准模仿_2015989123600883713.json, 图片生成/图生图/Qwen_模型补丁_DiffsynthControlnet_局部修复工作流1.0_1974478851558477825.json, 图片生成/图生图/Z-Image_turbo造像模型线性&深度预处理器工作流_2050181630404378626.json, 图片生成/文生图/Qwen2511+Fun+ControlNet+1.0_2080490152702603265.json]
+members: [图片生成/图生图/Flux2-Klein 图片高清化去水印去马赛克｜可选4K放大(SeedVR2.5)_2034105711289962497.json, 图片生成/图生图/Flux2-Klein9b一键产品加背景 白底产品换背景换场景_2033110402749435906.json, 图片生成/图生图/Flux2-Klein_9B_编辑_角度_光线_双图_2014310579040690177.json, 图片生成/图生图/三图编辑 Flux2-Klein_2012122566953013249.json, 图片生成/图生图/产品智能场景摆放_Flux2 Klein_2014540954375561218.json, 平台全量/Flux2 Klein 重新打光，照片过曝，光斑，上色，偏色，老照片修复，万能P图，去水印_2029451864806268929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_251
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/ControlNet精准控制图像生成工作流_2069079255807512577.json、图片生成/图生图/Qwen2509 人物姿态精准模仿_2015989123600883713.json、图片生成/图生图/Qwen_模型补丁_DiffsynthControlnet_局部修复工作流1.0_1974478851558477825.json、图片生成/图生图/Z-Image_turbo造像模型线性&深度预处理器工作流_2050181630404378626.json、图片生成/文生图/Qwen2511+Fun+ControlNet+1.0_2080490152702603265.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein 图片高清化去水印去马赛克｜可选4K放大(SeedVR2.5)_2034105711289962497.json、图片生成/图生图/Flux2-Klein9b一键产品加背景 白底产品换背景换场景_2033110402749435906.json、图片生成/图生图/Flux2-Klein_9B_编辑_角度_光线_双图_2014310579040690177.json、图片生成/图生图/三图编辑 Flux2-Klein_2012122566953013249.json、图片生成/图生图/产品智能场景摆放_Flux2 Klein_2014540954375561218.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
+- `ImageScaleToTotalPixels`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 4/5 个有
-- `ModelPatchLoader` —— 4/5 个有
-- `QwenImageDiffsynthControlnet` —— 4/5 个有
-- `AIO_Preprocessor` —— 3/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `CannyEdgePreprocessor` —— 2/5 个有
-- `DepthAnythingV2Preprocessor` —— 2/5 个有
-- `Image Comparer (rgthree)` —— 2/5 个有
-- `CR Text` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImpactInt` —— 1/5 个有
-- `InvertMask` —— 1/5 个有
-- `MaskToImage` —— 1/5 个有
-- `TextEncodeQwenImageEditPlus` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/6 个有
+- `Flux2Scheduler` —— 5/6 个有
+- `KSamplerSelect` —— 5/6 个有
+- `ImageScaleBy` —— 3/6 个有
+- `SeedVR2LoadDiTModel` —— 3/6 个有
+- `SeedVR2LoadVAEModel` —— 3/6 个有
+- `SeedVR2VideoUpscaler` —— 3/6 个有
+- `GetNode` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `RH_Translator` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `LayerUtility: ImageReel` —— 1/6 个有
+- `LayerUtility: ImageReelComposit` —— 1/6 个有
+- `LoraLoaderModelOnly` —— 1/6 个有
+- `MuyeTextEditOutput` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
+- `PrimitiveFloat` —— 1/6 个有
+- `QwenMultiangleCameraNode` —— 1/6 个有
+- `QwenMultiangleLightningNode` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `Text` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 5 | 54% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，5 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

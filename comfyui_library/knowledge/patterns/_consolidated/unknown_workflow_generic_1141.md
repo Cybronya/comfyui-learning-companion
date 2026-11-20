@@ -3,34 +3,38 @@ name: unknown_workflow_generic_1141
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_CinematicVideoGenerator, SaveImage, SaveVideo]
+coverage: 0.892667
+common_nodes: [CXH_Leffa_Viton_Load, CXH_Leffa_Viton_Run, DensePosePreprocessor, LayerMask: MaskGrow, LayerMask: SegformerB2ClothesUltra, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频sd2.0 1元1秒_2073403634406223873.json, 视频生成/图生视频/全能视频sd2.0体验版seedance2.0体验版本SD2.0不排队工作流sd2.0工作流_2034847827666411522.json, 视频生成/图生视频/全能视频sd2.0体验版超能视频2.0体验版本SD2.0不排队工作流sd2.0工作流_2034648366897963009.json]
+members: [图片生成/图生图/Segformer+Leffa服装换装-简单高效_1944954799215529986.json, 平台全量/Leffa虚拟试穿和姿势转换 virtual try-on_1874011612846624769.json, 平台全量/最简单的服装迁移，只有几个节点_1935685991740923905.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1141
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能视频sd2.0 1元1秒_2073403634406223873.json、视频生成/图生视频/全能视频sd2.0体验版seedance2.0体验版本SD2.0不排队工作流sd2.0工作流_2034847827666411522.json、视频生成/图生视频/全能视频sd2.0体验版超能视频2.0体验版本SD2.0不排队工作流sd2.0工作流_2034648366897963009.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Segformer+Leffa服装换装-简单高效_1944954799215529986.json、平台全量/Leffa虚拟试穿和姿势转换 virtual try-on_1874011612846624769.json、平台全量/最简单的服装迁移，只有几个节点_1935685991740923905.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CXH_Leffa_Viton_Load`
+- `CXH_Leffa_Viton_Run`
+- `DensePosePreprocessor`
+- `LayerMask: MaskGrow`
+- `LayerMask: SegformerB2ClothesUltra`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RH_CinematicVideoGenerator`
 - `SaveImage`
-- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 1/3 个有
-- `MuyeTextEditOutput` —— 1/3 个有
+- `MaskPreview+` —— 2/3 个有
+- `PreviewImage` —— 2/3 个有
 
 ## 典型参数
 

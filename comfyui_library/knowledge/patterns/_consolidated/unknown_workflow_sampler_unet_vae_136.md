@@ -1,79 +1,61 @@
 ---
 name: unknown_workflow_sampler_unet_vae_136
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.839625
-common_nodes: [BasicGuider, CLIPLoader, KSamplerSelect, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.806333
+common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2097993945132388353.json, 视频生成/图生视频/4-9宫图+Minimaxh3导演台（批量短剧专用）_2099703771608735745.json, 视频生成/图生视频/AI短剧制作全流程_2111223881188077570.json, 视频生成/图生视频/BUNNY_H3_单采_er_sde_手动Sigma_2109936169202049026.json, 视频生成/图生视频/H3_打斗工作流_2102828840786681857.json, 视频生成/图生视频/H3_打斗工作流_2105855489631408129.json, 视频生成/图生视频/MiniMax+H3-9.2_2095010503541215234.json, 视频生成/图生视频/黄色的大宝剑打斗流_2109476674894131202.json]
+members: [图片生成/文生图/Qwen image 2.1文生图_2101860458935439362.json, 图片生成/文生图/Qwen image 2.1文生图_2102442182849421314.json, 图片生成/文生图/Qwen image 2.1文生图_2102591785762639873.json, 图片生成/文生图/Qwen image 2.1文生图_2109473814643044353.json, 图片生成/文生图/Qwen+image+2.1文生图_2102634572138762242.json, 图片生成/文生图/Qwen-Image-2.1 文生图增强版_2116075503617667074.json, 图片生成/文生图/Qwen-Image-2.1 文生图增强版_2116095851314630657.json, 图片生成/文生图/Qwen-Image-2.1-T2I_2102034536937902081.json, 图片生成/文生图/Qwen-image2.1文生图工作流_2101888147331305473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_136
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2097993945132388353.json、视频生成/图生视频/4-9宫图+Minimaxh3导演台（批量短剧专用）_2099703771608735745.json、视频生成/图生视频/AI短剧制作全流程_2111223881188077570.json、视频生成/图生视频/BUNNY_H3_单采_er_sde_手动Sigma_2109936169202049026.json、视频生成/图生视频/H3_打斗工作流_2102828840786681857.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1文生图_2101860458935439362.json、图片生成/文生图/Qwen image 2.1文生图_2102442182849421314.json、图片生成/文生图/Qwen image 2.1文生图_2102591785762639873.json、图片生成/文生图/Qwen image 2.1文生图_2109473814643044353.json、图片生成/文生图/Qwen+image+2.1文生图_2102634572138762242.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
-- `KSamplerSelect`
-- `LoadImage`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `EmptyLatentImage`
+- `KSampler`
+- `ResolutionSelector`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 7/8 个有
-- `PrimitiveStringMultiline` —— 7/8 个有
-- `ComfyMathExpression` —— 6/8 个有
-- `LoraLoaderModelOnly` —— 6/8 个有
-- `MiniMaxH3ReferenceToVideo` —— 6/8 个有
-- `PrimitiveFloat` —— 6/8 个有
-- `ResolutionSelector` —— 6/8 个有
-- `CreateVideo` —— 5/8 个有
-- `ModelAttentionBackend` —— 5/8 个有
-- `SaveVideo` —— 5/8 个有
-- `DisableNoise` —— 4/8 个有
-- `ExtendIntermediateSigmas` —— 4/8 个有
-- `SplitSigmasDenoise` —— 4/8 个有
-- `easy cleanGpuUsed` —— 4/8 个有
-- `INTConstant` —— 3/8 个有
-- `LoadAudio` —— 3/8 个有
-- `LoraLoaderBypassModelOnly` —— 3/8 个有
-- `MiniMaxH3SigmaShift` —— 3/8 个有
-- `SolAttnMiniMax` —— 3/8 个有
-- `VHS_VideoCombine` —— 3/8 个有
-- `GetNode` —— 2/8 个有
-- `ModelPreviewOverrideKJ` —— 2/8 个有
-- `ResizeShortestToNode` —— 2/8 个有
-- `SFH3MultimodalDirector` —— 2/8 个有
-- `SetNode` —— 2/8 个有
-- `BlockSparseAttention` —— 1/8 个有
-- `CLIPTextEncode` —— 1/8 个有
-- `EmptyImage` —— 1/8 个有
-- `Fast Groups Muter (rgthree)` —— 1/8 个有
-- `ImageScaleToTotalPixels` —— 1/8 个有
-- `ManualSigmas` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `Text Concatenate` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
+- `TextGenerateLTX2Prompt` —— 7/9 个有
+- `PrimitiveStringMultiline` —— 6/9 个有
+- `Text` —— 3/9 个有
+- `孤海注释` —— 3/9 个有
+- `Seed (rgthree)` —— 2/9 个有
+- `easy showAnything` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `PreviewAny` —— 1/9 个有
+- `TextGenerate` —— 1/9 个有
+- `easy promptList` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 40 | 25 - 50 | 9 | 71% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 9 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 9 | 100% |
 
 ## 常见问题
 
@@ -81,4 +63,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 40，观测区间 25 - 50，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）

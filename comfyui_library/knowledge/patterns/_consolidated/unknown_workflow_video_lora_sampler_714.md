@@ -1,70 +1,56 @@
 ---
 name: unknown_workflow_video_lora_sampler_714
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.551333
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetNode, ImageResizeKJv2, JWInteger, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy mathInt, easy showAnything]
+coverage: 0.913
+common_nodes: [Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Animate长视频——动作迁移稳定版_1978123000795029506.json, 视频生成/图生视频/叮叮的鼓点咚咚咚_2083830136331399170.json, 视频生成/图生视频/舞蹈动作迁移_2080278150566735874.json]
+members: [视频生成/图生视频/2025-5-20-图生视频+修复脸（带反推）_1924496227268743169.json, 视频生成/图生视频/一刀两断特效，切开万物_1899035898183372801.json, 视频生成/图生视频/图生视频_1924271202037059586.json, 视频生成/文生视频/最新Wan2.1稳定图生视频可在线运行，效果非常棒棒！_1916330952719798273.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_714
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate长视频——动作迁移稳定版_1978123000795029506.json、视频生成/图生视频/叮叮的鼓点咚咚咚_2083830136331399170.json、视频生成/图生视频/舞蹈动作迁移_2080278150566735874.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/2025-5-20-图生视频+修复脸（带反推）_1924496227268743169.json、视频生成/图生视频/一刀两断特效，切开万物_1899035898183372801.json、视频生成/图生视频/图生视频_1924271202037059586.json、视频生成/文生视频/最新Wan2.1稳定图生视频可在线运行，效果非常棒棒！_1916330952719798273.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetNode`
-- `ImageResizeKJv2`
-- `JWInteger`
+全部 4 个 workflow 都包含：
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoClipVisionEncode`
+- `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageClipEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy mathInt`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/3 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
-- `VHS_VideoInfoSource` —— 2/3 个有
-- `WanAnimatePlus BlockSwap` —— 2/3 个有
-- `BatchCount+` —— 1/3 个有
-- `CM_IntToFloat` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `Int` —— 1/3 个有
-- `LazySwitch1way` —— 1/3 个有
-- `RHHiddenNodes` —— 1/3 个有
-- `WanVideoBlockSwap` —— 1/3 个有
-- `easy batchAnything` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy compare` —— 1/3 个有
-- `easy forLoopEnd` —— 1/3 个有
-- `easy forLoopStart` —— 1/3 个有
+- `Fast Bypasser (rgthree)` —— 3/4 个有
+- `Fast Groups Muter (rgthree)` —— 3/4 个有
+- `Seed Everywhere` —— 3/4 个有
+- `StringConstantMultiline` —— 3/4 个有
+- `FILM VFI` —— 1/4 个有
+- `ImageUpscaleWithModel` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
+- `ReActorFaceSwapOpt` —— 1/4 个有
+- `ShowText|pysssss` —— 1/4 个有
+- `TextInput_` —— 1/4 个有
+- `UpscaleModelLoader` —— 1/4 个有
+- `easy promptConcat` —— 1/4 个有
 
 ## 典型参数
 

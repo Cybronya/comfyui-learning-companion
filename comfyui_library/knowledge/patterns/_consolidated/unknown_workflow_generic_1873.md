@@ -3,31 +3,34 @@ name: unknown_workflow_generic_1873
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.667
-common_nodes: [LoadImage, NovelTextStructureNode, SaveImage, ShellAgentPluginOutputText, easy showAnything]
+coverage: 0.832
+common_nodes: [LoadImage, MuyeTextEditOutput, PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/小说多角色+旁白自动配音_1935603185300209665.json, 音频生成/音频生成/小说多角色配音结构化文本（搭配IndexTTS Pro使用）_1933137762927161346.json]
+members: [图片生成/文生图/顽童工作流 （1-8分镜图）_2013982090320158721.json, 视频生成/文生视频/5.3.竖屏分镜图_2031793586961915906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1873
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/小说多角色+旁白自动配音_1935603185300209665.json、音频生成/音频生成/小说多角色配音结构化文本（搭配IndexTTS Pro使用）_1933137762927161346.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/顽童工作流 （1-8分镜图）_2013982090320158721.json、视频生成/文生视频/5.3.竖屏分镜图_2031793586961915906.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `NovelTextStructureNode`
+- `MuyeTextEditOutput`
+- `PreviewImage`
+- `RH_Nano_Banana2_Image2Image`
 - `SaveImage`
-- `ShellAgentPluginOutputText`
-- `easy showAnything`
+
+**可变部分**（部分 workflow 才有）：
+- `RH_Nano_Banana2_Image2Image_Batch` —— 1/2 个有
 
 ## 典型参数
 

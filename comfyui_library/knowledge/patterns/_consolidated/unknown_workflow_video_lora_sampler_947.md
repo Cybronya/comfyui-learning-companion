@@ -1,61 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_947
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.948
-common_nodes: [BasicMath, CLIPLoader, CLIPTextEncode, FloatConstant, INTConstant, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, StringConcatenate, ToFloat, ToInt, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 3
+level: moderate
+coverage: 0.726333
+common_nodes: [ImageResizeKJv2, LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/【AI播草机】WAN2.2首帧尾帧视频生成_2031354841515171842.json, 视频生成/图生视频/【AI播草机】WAN2.2首帧视频生成_2031004369734344706.json]
+members: [视频生成/文生视频/Wan21_lynx_人物一致视频_1976007633784147970.json, 视频生成/文生视频/Wan_T2V_14B_lynx(Wrapper) - 使用参考图保持视频角色一致性！_1976302200433545218.json, 视频生成/文生视频/Wan_T2V_lynx+VACE (Wrapper) 面部参考+服装参考+视频动作驱动_1976330086129471490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_947
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/【AI播草机】WAN2.2首帧尾帧视频生成_2031354841515171842.json、视频生成/图生视频/【AI播草机】WAN2.2首帧视频生成_2031004369734344706.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan21_lynx_人物一致视频_1976007633784147970.json、视频生成/文生视频/Wan_T2V_14B_lynx(Wrapper) - 使用参考图保持视频角色一致性！_1976302200433545218.json、视频生成/文生视频/Wan_T2V_lynx+VACE (Wrapper) 面部参考+服装参考+视频动作驱动_1976330086129471490.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicMath`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `FloatConstant`
-- `INTConstant`
-- `KSamplerAdvanced`
+全部 3 个 workflow 都包含：
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `StringConcatenate`
-- `ToFloat`
-- `ToInt`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `LoadLynxResampler`
+- `LynxEncodeFaceIP`
+- `LynxInsightFaceCrop`
+- `PreviewImage`
 - `VHS_VideoCombine`
+- `WanVideoAddLynxEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoExtraModelSelect`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
-- `WanFirstLastFrameToVideo` —— 1/2 个有
-- `WanImageToVideo` —— 1/2 个有
+- `Bounded Image Crop` —— 2/3 个有
+- `Bounded Image Crop with Mask` —— 2/3 个有
+- `GetImageSizeAndCount` —— 2/3 个有
+- `GroundingDinoModelLoader (segment anything)` —— 2/3 个有
+- `GroundingDinoSAMSegment (segment anything)` —— 2/3 个有
+- `SAMModelLoader (segment anything)` —— 2/3 个有
+- `SetNode` —— 2/3 个有
+- `AIO_Preprocessor` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `GetNode` —— 1/3 个有
+- `INTConstant` —— 1/3 个有
+- `Image Crop Face` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoContextOptions` —— 1/3 个有
+- `WanVideoVACEEncode` —— 1/3 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 2 | 50% |
-| Prompt 约束强度(CFG) | 4 | - | 2 | 100% |
-| 采样算法 | 1 | - | 2 | 100% |
-| 调度器 | euler | - | 2 | 100% |
-| 重绘幅度 | simple | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -63,9 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，2 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，2 个样本，一致性 100%
-- 重绘幅度 最常用 simple，2 个样本，一致性 100%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

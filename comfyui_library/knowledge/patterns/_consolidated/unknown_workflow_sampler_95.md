@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [IndexTTS2Run, JWStringMultiline, LoadAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PreviewAudio]
+common_nodes: [CR Prompt Text, ImageConcanate, ImageGetSize, LoadImage, PDIMAGE_LongerSize, ResizeLongestToNode, RunningHub USO Loader, RunningHub USO Sampler, SaveImage]
 problems: []
 missing: []
-members: [数字人/数字人/IndexTTS-2.0声音&音色克隆实践_1965630163675435009.json, 音频生成/音频生成/IndexTTS-2音色克隆_2036450175434104833.json]
+members: [图片生成/图生图/🦖USO单风格迁移（动漫）_1963800835993194498.json, 图片生成/文生图/🦖USO双风格迁移_1962782611250757633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_95
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/IndexTTS-2.0声音&音色克隆实践_1965630163675435009.json、音频生成/音频生成/IndexTTS-2音色克隆_2036450175434104833.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/🦖USO单风格迁移（动漫）_1963800835993194498.json、图片生成/文生图/🦖USO双风格迁移_1962782611250757633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -23,17 +23,15 @@ source: knowledge_consolidation
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `IndexTTS2Run`
-- `JWStringMultiline`
-- `LoadAudio`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PreviewAudio`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `SaveAudioMP3` —— 1/2 个有
-- `SaveImage` —— 1/2 个有
+- `CR Prompt Text`
+- `ImageConcanate`
+- `ImageGetSize`
+- `LoadImage`
+- `PDIMAGE_LongerSize`
+- `ResizeLongestToNode`
+- `RunningHub USO Loader`
+- `RunningHub USO Sampler`
+- `SaveImage`
 
 ## 典型参数
 

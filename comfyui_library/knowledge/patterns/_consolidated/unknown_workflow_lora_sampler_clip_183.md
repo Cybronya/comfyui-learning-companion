@@ -1,39 +1,37 @@
 ---
 name: unknown_workflow_lora_sampler_clip_183
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.883
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, LoraLoaderModelOnly, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy setNode]
+coverage: 0.9115
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Klein-9B  极速 全自动换脸  任意姿势  图片编辑_2046208662577876994.json, 图片生成/图生图/Klein极速全自动_2065004946201866242.json, 图片生成/图生图/ZimageTurbo+Klein9b动漫转真人合集 By 像素幻想Lab_2028801108172345345.json]
+members: [图片生成/图生图/人物动作控制 最优两种方法_2055642276038234114.json, 图片生成/图生图/人物换脸，开源顶级一致性flux.2 klein_2016441047668236290.json, 图片生成/图生图/哦豁看见了-Flux2-Klein_2066548615769837570.json, 图片生成/图生图/最强！人物_万物增强细节_洗图_去AI_FLUX2KLEIN_自选出图 (1)_2063478532617101314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_183
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Klein-9B  极速 全自动换脸  任意姿势  图片编辑_2046208662577876994.json、图片生成/图生图/Klein极速全自动_2065004946201866242.json、图片生成/图生图/ZimageTurbo+Klein9b动漫转真人合集 By 像素幻想Lab_2028801108172345345.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/人物动作控制 最优两种方法_2055642276038234114.json、图片生成/图生图/人物换脸，开源顶级一致性flux.2 klein_2016441047668236290.json、图片生成/图生图/哦豁看见了-Flux2-Klein_2066548615769837570.json、图片生成/图生图/最强！人物_万物增强细节_洗图_去AI_FLUX2KLEIN_自选出图 (1)_2063478532617101314.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
-- `GetImageSize`
 - `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -42,42 +40,29 @@ source: knowledge_consolidation
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `Any Switch (rgthree)` —— 2/3 个有
-- `Anything Everywhere3` —— 2/3 个有
-- `AutoCropFaces` —— 2/3 个有
-- `DrawMaskOnImage` —— 2/3 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
-- `LayerMask: MaskGrow` —— 2/3 个有
-- `LayerMask: PersonMaskUltra V2` —— 2/3 个有
-- `LayerUtility: ImageReel` —— 2/3 个有
-- `LayerUtility: ImageReelComposit` —— 2/3 个有
-- `SeedVR2LoadDiTModel` —— 2/3 个有
-- `SeedVR2LoadVAEModel` —— 2/3 个有
-- `SeedVR2VideoUpscaler` —— 2/3 个有
-- `easy getNode` —— 2/3 个有
-- `CR Text` —— 1/3 个有
-- `GetImageSize+` —— 1/3 个有
-- `KSamplerAdvanced` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `NuiKr.OpenPoseEditor` —— 1/3 个有
-- `Qwen3_VQA` —— 1/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `Int` —— 3/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `GetImageSize` —— 2/4 个有
+- `ImageScaleToTotalPixels` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `PrimitiveBoolean` —— 2/4 个有
+- `TT_img_enc_v2` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `ZML_SwitchOutput` —— 2/4 个有
+- `Get Image Size` —— 1/4 个有
+- `OpenposePreprocessor` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/4 个有
+- `ResolutionStdSelector` —— 1/4 个有
+- `TTResolutionSelector` —— 1/4 个有
+- `TwoWaySwitch` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 1 | 100% |
-| Prompt 约束强度(CFG) | 8 | - | 1 | 100% |
-| 采样算法 | 1 | - | 1 | 100% |
-| 调度器 | euler | - | 1 | 100% |
-| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 1 | 100% |
+无可统计的参数。
 
 ## 常见问题
 

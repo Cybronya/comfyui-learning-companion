@@ -1,72 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_174
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.899167
-common_nodes: [CLIPLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 8
+level: moderate
+coverage: 0.817875
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux2-Klein-9B-人物场景迁移升级版_2019038881462624257.json, 图片生成/图生图/Flux2-Klein-9B-动作迁移（升级版）_2019758694229086210.json, 图片生成/图生图/Klein-9B-人像打光_2060940192906833921.json, 图片生成/图生图/Klein-9B-单图编辑+一致性增加lora_2036060642293063681.json, 图片生成/图生图/Klein-9B-图像人物三视图生成_2020033275313524737.json, 图片生成/图生图/Klein-9B-多人动作迁移_2058188256558272513.json]
+members: [视频生成/文生视频/1-Aiden-minimax-文生视频_2097381153186607106.json, 视频生成/文生视频/1-MiniMaxh-H3-文生视频工作流-V2_2084639097741725698.json, 视频生成/文生视频/3-MiniMax-H3-参考生视频工作流-V2_2084639172459065346.json, 视频生成/文生视频/minimax_阿里8步加速_文生视频_图生视频_全能参考三合一_2095489469662187522.json, 视频生成/文生视频/minmaxH3单采+1参考视频_2105350818894536705.json, 视频生成/文生视频/minmaxH3单采加速_2105257162896404482.json, 视频生成/文生视频/万象AI--MiniMax H3 多参生视频--基础工作流_2084961117960491010.json, 视频生成/视频生视频/FastH3 Ominiref 8步高质量视频_2113137033521754114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_174
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein-9B-人物场景迁移升级版_2019038881462624257.json、图片生成/图生图/Flux2-Klein-9B-动作迁移（升级版）_2019758694229086210.json、图片生成/图生图/Klein-9B-人像打光_2060940192906833921.json、图片生成/图生图/Klein-9B-单图编辑+一致性增加lora_2036060642293063681.json、图片生成/图生图/Klein-9B-图像人物三视图生成_2020033275313524737.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/文生视频/1-Aiden-minimax-文生视频_2097381153186607106.json、视频生成/文生视频/1-MiniMaxh-H3-文生视频工作流-V2_2084639097741725698.json、视频生成/文生视频/3-MiniMax-H3-参考生视频工作流-V2_2084639172459065346.json、视频生成/文生视频/minimax_阿里8步加速_文生视频_图生视频_全能参考三合一_2095489469662187522.json、视频生成/文生视频/minmaxH3单采+1参考视频_2105350818894536705.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：8
+- **可信度**：中等可信
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
+全部 8 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `PainterFluxImageEdit`
-- `SaveImage`
+- `ComfyMathExpression`
+- `KSamplerSelect`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/6 个有
-- `PreviewImage` —— 4/6 个有
-- `YC Color Match` —— 4/6 个有
-- `LoraLoaderModelOnly` —— 2/6 个有
-- `BBoxYOLO` —— 1/6 个有
-- `BodyRatioMapperSDPoseRender` —— 1/6 个有
-- `CheckpointLoaderSimple` —— 1/6 个有
-- `DWPreprocessor` —— 1/6 个有
-- `SDPoseKeypointExtractor` —— 1/6 个有
-- `YOLOModelLoader` —— 1/6 个有
-- `easy imageRemBg` —— 1/6 个有
+- `LoadImage` —— 6/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/8 个有
+- `MiniMaxH3SigmaShift` —— 6/8 个有
+- `ModelAttentionBackend` —— 6/8 个有
+- `CreateVideo` —— 5/8 个有
+- `PrimitiveStringMultiline` —— 5/8 个有
+- `SaveVideo` —— 5/8 个有
+- `MiniMaxH3ImageToVideo` —— 4/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/8 个有
+- `VHS_LoadVideo` —— 3/8 个有
+- `VHS_VideoCombine` —— 3/8 个有
+- `ExtendIntermediateSigmas` —— 2/8 个有
+- `MiniMaxH3ContextIR` —— 2/8 个有
+- `PreviewAny` —— 2/8 个有
+- `BlockSparseAttention` —— 1/8 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
+- `LoadAudio` —— 1/8 个有
+- `ShowText|pysssss` —— 1/8 个有
+- `VHS_LoadAudioUpload` —— 1/8 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

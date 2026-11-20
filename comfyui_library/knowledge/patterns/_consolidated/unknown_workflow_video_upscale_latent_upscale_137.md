@@ -1,93 +1,75 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_137
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.4525
-common_nodes: [AudioConcat, AudioCrop, AudioSelectNode, AudioSplitNode, CFGGuider, CLIPTextEncode, CR Text, CR Text Replace, Dapao_LlamaChat, Display Int (rgthree), DualCLIPLoader, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetNode, ImageScaleBy, ImageStringBatch, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PathchSageAttentionKJ, PreviewAudio, PreviewImage, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SelectImageString, SetLatentNoiseMask, SetNode, ShowText|pysssss, SimpleMath+, SizeSelector, SolidMask, SoundFlow_GetLength, SoundFlow_TrimAudio, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, WujiCleaner, easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy imageSize, easy int, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.630333
+common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, INTConstant, ImageResizeKJv2, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed, easy positive]
 problems: []
 missing: []
-members: [数字人/数字人/商业级多图分镜数字人-LTX-2.3 Singularity-MV、口播等_2062370324842377218.json, 视频生成/图生视频/商业级多图分镜数字人-LTX-2.3 Singularity-MV、口播等_2064156587920551937.json]
+members: [视频生成/图生视频/解说漫-LTX对话_2062249205984485378.json, 视频生成/图生视频/解说漫-LTX旁白_2062236079884947457.json, 视频生成/图生视频/解说漫-单图LTX旁白_2065767656409616386.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_137
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/商业级多图分镜数字人-LTX-2.3 Singularity-MV、口播等_2062370324842377218.json、视频生成/图生视频/商业级多图分镜数字人-LTX-2.3 Singularity-MV、口播等_2064156587920551937.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/解说漫-LTX对话_2062249205984485378.json、视频生成/图生视频/解说漫-LTX旁白_2062236079884947457.json、视频生成/图生视频/解说漫-单图LTX旁白_2065767656409616386.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：45%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：63%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioConcat`
-- `AudioCrop`
-- `AudioSelectNode`
-- `AudioSplitNode`
+全部 3 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CR Text`
-- `CR Text Replace`
-- `Dapao_LlamaChat`
-- `Display Int (rgthree)`
+- `CR Float To Integer`
 - `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `ImageScaleBy`
-- `ImageStringBatch`
+- `INTConstant`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
+- `LTXVAddGuideMulti`
 - `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
+- `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PathchSageAttentionKJ`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
+- `PrimitiveFloat`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `SelectImageString`
-- `SetLatentNoiseMask`
 - `SetNode`
-- `ShowText|pysssss`
 - `SimpleMath+`
-- `SizeSelector`
-- `SolidMask`
-- `SoundFlow_GetLength`
-- `SoundFlow_TrimAudio`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
+- `VAELoader`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WujiCleaner`
-- `easy batchAnything`
-- `easy convertAnything`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageSize`
-- `easy int`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+- `easy positive`
+
+**可变部分**（部分 workflow 才有）：
+- `1hew_AudioDuration` —— 1/3 个有
+- `Float` —— 1/3 个有
+- `LTXVAudioVAEEncode` —— 1/3 个有
+- `LoadAudio` —— 1/3 个有
+- `SetLatentNoiseMask` —— 1/3 个有
+- `SolidMask` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 3 | 100% |
+| 高度 | 25 | 25 - 25 | 3 | 100% |
 
 ## 常见问题
 
@@ -95,4 +77,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）

@@ -3,42 +3,29 @@ name: unknown_workflow_generic_1777
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9475
-common_nodes: [ACEStepGen, GenerationParameters, GetTextFromJson, LoadJsonFromText, MultiLineLyrics, MultiLinePromptACES, RH_Translator, SaveAudio, ShowText, Text Concatenate, Text Multiline]
+coverage: 1
+common_nodes: [LoadImage, SaveImage, workflow>1]
 problems: []
 missing: []
-members: [音频生成/音频生成/ACE-STEP最强开源音乐生成模型_1920236045869187073.json, 音频生成/音频生成/用音乐自由抒发心情(ACE-Step遇见LLM)_1920169949044871169.json]
+members: [图片生成/图生图/电商图反推_1957285364526411778.json, 平台全量/万物精修_1945034571063943170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1777
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/ACE-STEP最强开源音乐生成模型_1920236045869187073.json、音频生成/音频生成/用音乐自由抒发心情(ACE-Step遇见LLM)_1920169949044871169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商图反推_1957285364526411778.json、平台全量/万物精修_1945034571063943170.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `ACEStepGen`
-- `GenerationParameters`
-- `GetTextFromJson`
-- `LoadJsonFromText`
-- `MultiLineLyrics`
-- `MultiLinePromptACES`
-- `RH_Translator`
-- `SaveAudio`
-- `ShowText`
-- `Text Concatenate`
-- `Text Multiline`
-
-**可变部分**（部分 workflow 才有）：
-- `> Text Replace` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `ReplaceText` —— 1/2 个有
+- `LoadImage`
+- `SaveImage`
+- `workflow>1`
 
 ## 典型参数
 

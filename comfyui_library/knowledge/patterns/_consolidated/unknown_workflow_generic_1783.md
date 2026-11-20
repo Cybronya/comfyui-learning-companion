@@ -3,31 +3,34 @@ name: unknown_workflow_generic_1783
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.4375
-common_nodes: [CR Prompt Text, Float, RunningHubControlFoleyGenerator, RunningHubControlFoleyModelLoader, SaveAudio]
+coverage: 0.861
+common_nodes: [ImpactSwitch, LoadImage, RH_Nano_Banana2_Image2Image, SaveImage]
 problems: []
-missing: [RunningHubControlFoleyGenerator, RunningHubControlFoleyModelLoader]
-members: [音频生成/音频生成/ControlFoley 文生音效_2051169743851270146.json, 音频生成/音频生成/ControlFoley--文生音效_2051475839442796546.json]
+missing: []
+members: [图片生成/图生图/老胡一键制作爆款封面（2毛钱）_2009259774587707394.json, 图片生成/图生图/高清放大-全能图形_2051923889369956353.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1783
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/ControlFoley 文生音效_2051169743851270146.json、音频生成/音频生成/ControlFoley--文生音效_2051475839442796546.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/老胡一键制作爆款封面（2毛钱）_2009259774587707394.json、图片生成/图生图/高清放大-全能图形_2051923889369956353.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
-- `RunningHubControlFoleyGenerator`
-- `RunningHubControlFoleyModelLoader`
-- `SaveAudio`
+- `ImpactSwitch`
+- `LoadImage`
+- `RH_Nano_Banana2_Image2Image`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `TTP_text_mix` —— 1/2 个有
+- `Text Multiline` —— 1/2 个有
 
 ## 典型参数
 
@@ -39,5 +42,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：RunningHubControlFoleyGenerator、RunningHubControlFoleyModelLoader
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

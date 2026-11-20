@@ -3,52 +3,47 @@ name: text_to_image_lora_sampler_clip_680
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.6115
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.837
+common_nodes: [CLIPLoader, CLIPTextEncode, ConstrainImage|pysssss, EmptyLatentImage, ImageNoiseAugmentation, Int, JjkText, KSampler, KuwaharaBlur, LoadImage, LoraLoaderModelOnly, PreviewImage, RH_Captioner_Pro, RH_RhartImageG25SunburstImageToImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/MOSS单采双采合集工作流 文生图高速采样处理工具_2113330526638665730.json, 图片生成/文生图/image_qwen_image文生图｜千问图像模型创意出图_2107009994435686402.json]
+members: [图片生成/图生图/洗图2.5全能图片G 模特图精修局部重绘处理工具_2114121033631494146.json, 图片生成/图生图/洗图2.5来啦｜图生图一键洗图 画质细节全面提升还很自然_2105482549387685889.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_680
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/MOSS单采双采合集工作流 文生图高速采样处理工具_2113330526638665730.json、图片生成/文生图/image_qwen_image文生图｜千问图像模型创意出图_2107009994435686402.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/洗图2.5全能图片G 模特图精修局部重绘处理工具_2114121033631494146.json、图片生成/图生图/洗图2.5来啦｜图生图一键洗图 画质细节全面提升还很自然_2105482549387685889.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
+- `ConstrainImage|pysssss`
 - `EmptyLatentImage`
+- `ImageNoiseAugmentation`
+- `Int`
 - `JjkText`
 - `KSampler`
+- `KuwaharaBlur`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
-- `ResolutionSelector`
+- `PreviewImage`
+- `RH_Captioner_Pro`
+- `RH_RhartImageG25SunburstImageToImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 1/2 个有
-- `EmptySD3LatentImage` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `GetNode` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `SetNode` —— 1/2 个有
 
 ## 典型参数
 

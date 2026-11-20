@@ -2,111 +2,71 @@
 name: unknown_workflow_video_sampler_clip_35
 type: Unknown Workflow
 frequency: 14
-level: strong
-coverage: 0.626643
-common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoader, EmptyLTXVLatentVideo, GuHaiAutoImageSplit, ImageFromBatch+, ImageResizeKJv2, KSamplerSelect, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, TTResolutionSelector, Text, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy indexAnything]
+level: weak
+coverage: 0.994
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, ModelSamplingSD3, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI代码侠土豆-LTX-2.3 20宫格(2.0升级版)无限时长可调整_2050433781642866689.json, 视频生成/图生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2038477520076546049.json, 视频生成/图生视频/LTX-2.3  20宫格 直出1分钟视频_动漫_2048025601059069954.json, 视频生成/图生视频/LTX-2.3 20宫格(2.0升级版)无限时长可调整_2051228355147644930.json, 视频生成/图生视频/LTX-2.3 20宫格无限时长可 - for 循环 ComfyUI工作流_2058423071744282626.json, 视频生成/图生视频/LTX-2.3 多四宫格匹配提示词时长版_2060526792787718145.json, 视频生成/图生视频/LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2041690462200799233.json, 视频生成/图生视频/LTX-2.3批量化漫剧—五组四宫格 直出1分钟视频_2040686679291334658.json, 视频生成/图生视频/LTX2.3全自动漫剧工作流+全节点注释_2042137204117479425.json, 视频生成/图生视频/小华哥-LTX-2.3-20宫格-直出1分钟视频_2041291651959758850.json, 视频生成/图生视频/超好用🔥批量化漫剧-五组四宫格-直出1分钟视频_2056229432154705921.json, 视频生成/图生视频/超级多帧 ltx2.3  电商专用 服装展示 for循环25帧参考_2053379997733273601.json, 视频生成/文生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2043750175751020546.json, 视频生成/文生视频/LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2046021811200069633.json]
+members: [图片生成/图生图/万相图生视频_1953415257853186050.json, 图片生成/图生图/首尾帧工作流_2076180255999619073.json, 平台全量/Remix+Qwen3图生视频_1987161123160043521.json, 平台全量/SmoothMix-V2.0首尾多帧视频生成_2017039710929035265.json, 平台全量/SmoothMix首尾帧视频_1979911899015974914.json, 平台全量/Wan2.2-Remix-首尾帧视频_1988211191065526274.json, 视频生成/图生视频/Remix-V2.1-首尾多帧视频生成_2011657248396808193.json, 视频生成/图生视频/Remix-V3.0-首尾多帧视频生成_2033890243190984706.json, 视频生成/图生视频/Remix-V3.0-首尾帧视频_2033895649091002370.json, 视频生成/图生视频/SmoothMix-V2.0首尾帧视频生成_2010689825397018625.json, 视频生成/图生视频/WH-AI-Studio-Wan2.2首尾帧加速完美版_2015621042139566081.json, 视频生成/图生视频/WH-AI-Studio-Wan2.2首帧-中间帧-尾帧（加速标准版首中尾帧图生视频）_2022240074083082242.json, 视频生成/图生视频/WH-AI-Studio（短剧必备）指定人物从指定场景出现（图生视频-加速完美版）（人物一致性）_2022215823229718529.json, 视频生成/图生视频/🐳wan2.2 首尾帧 极速臻享版 🦋【官方模型】_1952542983688261634.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_35
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/AI代码侠土豆-LTX-2.3 20宫格(2.0升级版)无限时长可调整_2050433781642866689.json、视频生成/图生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2038477520076546049.json、视频生成/图生视频/LTX-2.3  20宫格 直出1分钟视频_动漫_2048025601059069954.json、视频生成/图生视频/LTX-2.3 20宫格(2.0升级版)无限时长可调整_2051228355147644930.json、视频生成/图生视频/LTX-2.3 20宫格无限时长可 - for 循环 ComfyUI工作流_2058423071744282626.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/万相图生视频_1953415257853186050.json、图片生成/图生图/首尾帧工作流_2076180255999619073.json、平台全量/Remix+Qwen3图生视频_1987161123160043521.json、平台全量/SmoothMix-V2.0首尾多帧视频生成_2017039710929035265.json、平台全量/SmoothMix首尾帧视频_1979911899015974914.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：63%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Float To Integer`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GuHaiAutoImageSplit`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
-- `LTXVAddGuideMulti`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `ManualSigmas`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `TTResolutionSelector`
-- `Text`
+- `ModelSamplingSD3`
+- `SimpleMath+`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy indexAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioConcat` —— 13/14 个有
-- `EmptyAudio` —— 13/14 个有
-- `INTConstant` —— 13/14 个有
-- `If ANY execute A else B` —— 13/14 个有
-- `PreviewImage` —— 13/14 个有
-- `SDVM Image List Repeat` —— 13/14 个有
-- `SimpleMath+` —— 13/14 个有
-- `easy batchAnything` —— 13/14 个有
-- `easy cleanGpuUsed` —— 13/14 个有
-- `easy forLoopEnd` —— 13/14 个有
-- `easy forLoopStart` —— 13/14 个有
-- `easy isNone` —— 13/14 个有
-- `easy promptList` —— 13/14 个有
-- `GetNode` —— 12/14 个有
-- `LatentUpscaleModelLoader` —— 12/14 个有
-- `SetNode` —— 12/14 个有
-- `ShowText|pysssss` —— 12/14 个有
-- `easy lengthAnything` —— 12/14 个有
-- `RH_LLMAPI_Pro_Node` —— 9/14 个有
-- `easy showAnything` —— 9/14 个有
-- `Int` —— 7/14 个有
-- `GetObjectFromJson` —— 5/14 个有
-- `GetTextFromJson` —— 5/14 个有
-- `Light-Tool: DeserializeJsonString` —— 5/14 个有
-- `LoraLoaderModelOnly` —— 5/14 个有
-- `PromptRelayEncode` —— 5/14 个有
-- `AILab_QwenVL_Advanced` —— 1/14 个有
-- `Bjornulf_ShowInt` —— 1/14 个有
-- `CR Text` —— 1/14 个有
-- `CR Text Concatenate` —— 1/14 个有
-- `Display Any (rgthree)` —— 1/14 个有
-- `IfInnerExecute` —— 1/14 个有
-- `ImageConcatMulti` —— 1/14 个有
-- `ImageListToImageBatch` —— 1/14 个有
-- `ImpactInt` —— 1/14 个有
-- `JjkText` —— 1/14 个有
-- `KOOK_SaveJPGImage` —— 1/14 个有
-- `LayerUtility: PurgeVRAM` —— 1/14 个有
-- `MathExpression|pysssss` —— 1/14 个有
-- `ProcessString` —— 1/14 个有
-- `PromptRelayEncodeTimeline` —— 1/14 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 1/14 个有
-- `ShowAnything|Mie` —— 1/14 个有
-- `easy compare` —— 1/14 个有
-- `easy imageConcat` —— 1/14 个有
-- `easy promptLine` —— 1/14 个有
+- `LoraLoaderModelOnly` —— 13/14 个有
+- `ImageResizeKJv2` —— 12/14 个有
+- `PathchSageAttentionKJ` —— 11/14 个有
+- `CLIPVisionEncode` —— 9/14 个有
+- `CLIPVisionLoader` —— 9/14 个有
+- `INTConstant` —— 9/14 个有
+- `WanFirstLastFrameToVideo` —— 7/14 个有
+- `ModelPatchTorchSettings` —— 6/14 个有
+- `CR Text` —— 5/14 个有
+- `ImpactInt` —— 5/14 个有
+- `WanFirstMiddleLastFrameToVideo` —— 5/14 个有
+- `WanVideoNAG` —— 4/14 个有
+- `ImageResizeKJ` —— 3/14 个有
+- `WanImageToVideo` —— 2/14 个有
+- `YC Color Match` —— 2/14 个有
+- `AILab_QwenVL` —— 1/14 个有
+- `GetImageRangeFromBatch` —— 1/14 个有
+- `GetImageSizeAndCount` —— 1/14 个有
+- `ImageConcanate` —— 1/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/14 个有
+- `Note Plus (mtb)` —— 1/14 个有
+- `easy imageRemBg` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 14 | 100% |
-| 高度 | 25 | 25 - 25 | 14 | 100% |
+| 采样步数 | randomize | - | 14 | 79% |
+| Prompt 约束强度(CFG) | 6 | 6 - 35 | 14 | 19% |
+| 采样算法 | 1 | 1 - 7.5 | 14 | 0% |
+| 调度器 | euler | - | 14 | 79% |
+| 重绘幅度 | simple | - | 14 | 64% |
 
 ## 常见问题
 
@@ -114,5 +74,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，14 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，14 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，14 个样本，一致性 79%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 35，14 个样本，取值分散，一致性仅 19%
+- 采样算法 中位数 1，观测区间 1 - 7.5，14 个样本，取值分散，一致性仅 0%
+- 调度器 最常用 euler，14 个样本，一致性 79%
+- 重绘幅度 最常用 simple，14 个样本，一致性 64%
+- 风险：Prompt 约束强度(CFG) 观测到 35，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

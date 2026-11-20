@@ -3,67 +3,67 @@ name: unknown_workflow_sampler_clip_unet_35
 type: Unknown Workflow
 frequency: 19
 level: moderate
-coverage: 0.854579
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.865474
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LayerMask: MaskGrow, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetLatentNoiseMask, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy positive]
 problems: []
 missing: []
-members: [图片生成/图生图/FLUX2 Klein 局部重绘工作流_2091475570843541506.json, 图片生成/图生图/FLUX2-KLEIN-局部重绘_2086451671395291138.json, 图片生成/图生图/FLUX2-Klein局部重绘_2042440525696995329.json, 图片生成/图生图/Flux2 Klein 单图编辑 超i真实_2012736153442590722.json, 图片生成/图生图/Flux2 Klein 图像编辑_2012796994577764354.json, 图片生成/图生图/Flux2+Klein+单图像编辑（单图）_2013840360472059905.json, 图片生成/图生图/Flux2+Klein+图像编辑（单图）_2013803586651693057.json, 图片生成/图生图/flux2-klein-转绘各种效果，效果好，速度快，百分百场景一致性，全能型_2018953900497313793.json, 图片生成/图生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2014522302368587778.json, 图片生成/图生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2081670375993335809.json, 图片生成/图生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2094715505419579394.json, 图片生成/图生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2111682766764077058.json, 图片生成/图生图/【超实用工作流合集】-建筑&室内&景观-可按需调整_2056623443910684673.json, 图片生成/图生图/局部修改重绘_2062470852343590914.json, 图片生成/图生图/局部重绘工作流_2095404630556631041.json, 图片生成/图生图/建筑&室内&景观FLUX2-KLEIN_指定位置替换指定物品_2081674408481083394.json, 图片生成/图生图/建筑&室内&景观FLUX2-KLEIN_指定位置替换指定物品_2097163934771015681.json, 图片生成/图生图/建筑&室内&景观FLUX2-KLEIN_指定位置替换指定物品_2097504190967926786.json, 图片生成/文生图/【建筑&室内&景观】超实用工作流合集-基于FLUX2-KLEIN_2060292542750613506.json]
+members: [图片生成/图生图/F.2klein9b一键渲染级材质替换_2054422098839392258.json, 图片生成/图生图/F.2klein9b一键渲染级材质替换_2057678216738992129.json, 图片生成/图生图/F2-Klein材质替换（局部重绘）_2055650299225886722.json, 图片生成/图生图/F2_Klein_服饰_产品材质花纹替换_局部材质替换_电商产品换材质_材质质感迁移_局部重绘_2056197943123816449.json, 图片生成/图生图/F2_Klein_服饰产品花纹替换_局部材质替换_电商产品换材质_材质迁移_局部重绘_2056537368320102402.json, 图片生成/图生图/Klein局部材质替换   比PS香多了_2031606144984158209.json, 图片生成/图生图/Klein局部材质替换_2054740088747241473.json, 图片生成/图生图/Klein局部材质替换_2054841219976572929.json, 图片生成/图生图/Klein局部材质替换_2057331878755131394.json, 图片生成/图生图/flux2-klein9b-一键渲染级材质替换_2037899783381196801.json, 图片生成/图生图/flux2klein9b一键渲染级材质替换_2044351025196306433.json, 图片生成/图生图/klein材质替换，效果好_2054807540877283329.json, 图片生成/图生图/一键局部材质替换（可指定材质）_2059874119453331457.json, 图片生成/图生图/局部材质替换+电商产品换材质+材质质感迁移+F2 Klein准确局部重绘+全节点注释_2055600232863412226.json, 图片生成/图生图/超好用🔥局部重绘-图片内指定物品材质颜色替换_2052688818792353794.json, 平台全量/F2 Klein 服饰_产品材质花纹替换 局部材质替换 电商产品换材质 材质质感迁移 准确局部重绘_2055462769981444097.json, 平台全量/flux2-klein 电商产品 服饰 家具 材质替换 材质渲染 万能迁移_2031897251978682369.json, 平台全量/局部材质替换 电商产品换材质 材质质感迁移 F2 Klein准确局部重绘_2055467748465102849.json, 平台全量/局部材质替换+电商产品换材质+材质质感迁移+F2 Klein准确局部重绘+全节点注释_2055625104754790401.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_35
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/FLUX2 Klein 局部重绘工作流_2091475570843541506.json、图片生成/图生图/FLUX2-KLEIN-局部重绘_2086451671395291138.json、图片生成/图生图/FLUX2-Klein局部重绘_2042440525696995329.json、图片生成/图生图/Flux2 Klein 单图编辑 超i真实_2012736153442590722.json、图片生成/图生图/Flux2 Klein 图像编辑_2012796994577764354.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/F.2klein9b一键渲染级材质替换_2054422098839392258.json、图片生成/图生图/F.2klein9b一键渲染级材质替换_2057678216738992129.json、图片生成/图生图/F2-Klein材质替换（局部重绘）_2055650299225886722.json、图片生成/图生图/F2_Klein_服饰_产品材质花纹替换_局部材质替换_电商产品换材质_材质质感迁移_局部重绘_2056197943123816449.json、图片生成/图生图/F2_Klein_服饰产品花纹替换_局部材质替换_电商产品换材质_材质迁移_局部重绘_2056537368320102402.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 19 个 workflow 都包含：
-- `CFGGuider`
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `Flux2Scheduler`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
 - `KSamplerSelect`
+- `LayerMask: MaskGrow`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetLatentNoiseMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 18/19 个有
-- `ImageResizeKJv2` —— 16/19 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 16/19 个有
-- `PrimitiveStringMultiline` —— 16/19 个有
-- `PlaySound|pysssss` —— 15/19 个有
-- `PreviewImage` —— 15/19 个有
-- `EmptyFlux2LatentImage` —— 14/19 个有
-- `InpaintModelConditioning` —— 14/19 个有
-- `ColorMatch` —— 13/19 个有
-- `INPAINT_ExpandMask` —— 13/19 个有
-- `ImageAndMaskPreview` —— 13/19 个有
-- `ImageCompositeMasked` —— 13/19 个有
-- `GetImageSize` —— 12/19 个有
-- `DrawMaskOnImage` —— 9/19 个有
-- `Fast Groups Bypasser (rgthree)` —— 9/19 个有
-- `ImagePadForOutpaint` —— 9/19 个有
-- `PrimitiveInt` —— 6/19 个有
-- `FluxKontextImageScale` —— 3/19 个有
-- `LayerUtility: ImageReel` —— 3/19 个有
-- `LayerUtility: ImageReelComposit` —— 3/19 个有
-- `RH_Translator` —— 2/19 个有
-- `DifferentialDiffusion` —— 1/19 个有
-- `SetNode` —— 1/19 个有
-- `easy imageConcat` —— 1/19 个有
+- `PreviewImage` —— 17/19 个有
+- `Image Comparer (rgthree)` —— 16/19 个有
+- `Mask Fill Holes` —— 16/19 个有
+- `MaskPreview` —— 16/19 个有
+- `easy imageSizeBySide` —— 16/19 个有
+- `CR Text` —— 13/19 个有
+- `Masks Add` —— 13/19 个有
+- `easy sam3ImageSegmentation` —— 13/19 个有
+- `easy sam3ModelLoader` —— 13/19 个有
+- `AIO_Preprocessor` —— 11/19 个有
+- `DeepTranslatorTextNode` —— 10/19 个有
+- `easy ifElse` —— 6/19 个有
+- `easy isMaskEmpty` —— 6/19 个有
+- `Int` —— 4/19 个有
+- `SDVN Translate` —— 3/19 个有
+- `ImageConcanate` —— 1/19 个有
+- `LoraLoaderModelOnly` —— 1/19 个有
 
 ## 典型参数
 

@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_906
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.778
-common_nodes: [GetImageSize, ImageCompare, LoadImage, ResizeImageMaskNode]
+coverage: 0.695
+common_nodes: [CR Prompt Text, Fast Groups Bypasser (rgthree), Label (rgthree), LoadImage, RH_AlibabaHappyhorse10ImageToVideo, RH_AlibabaHappyhorse10ReferenceToVideo, RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [comfyui-workflow-templates-json/api_topaz_image_enhance.json, comfyui-workflow-templates-json/image_boogu_image_0_1_edit.json, comfyui-workflow-templates-json/image_boogu_image_0_1_edit_int8.json]
+members: [图片生成/图生图/多图参考视频生成_2064592013978324994.json, 视频生成/文生视频/Happyhorse1.0多图参考视频生成_2050117172738961410.json, 视频生成/文生视频/图生视频 首尾中间帧 Happyhorse 多图参考视频生成_2059101418430226433.json, 视频生成/文生视频/极速图生视频+首尾中间帧生视频+Happyhorse+多图参考视频生成_2060230858543554561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_906
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（comfyui-workflow-templates-json/api_topaz_image_enhance.json、comfyui-workflow-templates-json/image_boogu_image_0_1_edit.json、comfyui-workflow-templates-json/image_boogu_image_0_1_edit_int8.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/多图参考视频生成_2064592013978324994.json、视频生成/文生视频/Happyhorse1.0多图参考视频生成_2050117172738961410.json、视频生成/文生视频/图生视频 首尾中间帧 Happyhorse 多图参考视频生成_2059101418430226433.json、视频生成/文生视频/极速图生视频+首尾中间帧生视频+Happyhorse+多图参考视频生成_2060230858543554561.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `GetImageSize`
-- `ImageCompare`
+全部 4 个 workflow 都包含：
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `Label (rgthree)`
 - `LoadImage`
-- `ResizeImageMaskNode`
+- `RH_AlibabaHappyhorse10ImageToVideo`
+- `RH_AlibabaHappyhorse10ReferenceToVideo`
+- `RH_AlibabaHappyhorse10TextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/3 个有
-- `fd5d0097-8a1d-4dc2-86f2-1d5869b3f0eb` —— 2/3 个有
-- `SaveImageAdvanced` —— 1/3 个有
-- `TopazImageEnhanceV2` —— 1/3 个有
+- `PreviewAny` —— 1/4 个有
+- `RH_Captioner` —— 1/4 个有
 
 ## 典型参数
 

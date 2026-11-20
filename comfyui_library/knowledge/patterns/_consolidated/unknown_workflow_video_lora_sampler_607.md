@@ -1,77 +1,60 @@
 ---
 name: unknown_workflow_video_lora_sampler_607
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.59775
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, DrawViTPose, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GetNode, GrowMask, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.9534
+common_nodes: [CLIPVisionLoader, LoadImage, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/长视频动作迁移+迁移人物_2020513230719815681.json, 视频生成/文生视频/Wan-Animate+Sa2VA多人场景角色替换_1989959828757991425.json, 视频生成/文生视频/Wan-Animate-SecNodes角色替换_1977718983715606530.json, 视频生成/文生视频/Wan-Animate多人场景角色替换_1974519641752080386.json]
+members: [视频生成/图生视频/MAGREF单图参考图生视频_1935517982800150530.json, 视频生成/图生视频/b站开源动漫视频生成模型 ani全能视频S_1944781306624397314.json, 视频生成/图生视频/wan-AccVideo-I2V图生视频_1927959918765031425.json, 视频生成/图生视频/wan2.1 MAGREF 3倍加速图生视频_1941396132272750594.json, 视频生成/图生视频/电商产品360旋转_1941330850711814145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_607
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/长视频动作迁移+迁移人物_2020513230719815681.json、视频生成/文生视频/Wan-Animate+Sa2VA多人场景角色替换_1989959828757991425.json、视频生成/文生视频/Wan-Animate-SecNodes角色替换_1977718983715606530.json、视频生成/文生视频/Wan-Animate多人场景角色替换_1974519641752080386.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MAGREF单图参考图生视频_1935517982800150530.json、视频生成/图生视频/b站开源动漫视频生成模型 ani全能视频S_1944781306624397314.json、视频生成/图生视频/wan-AccVideo-I2V图生视频_1927959918765031425.json、视频生成/图生视频/wan2.1 MAGREF 3倍加速图生视频_1941396132272750594.json、视频生成/图生视频/电商产品360旋转_1941330850711814145.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BlockifyMask`
+全部 5 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `DrawViTPose`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `GrowMask`
-- `INTConstant`
-- `ImageResizeKJv2`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 3/4 个有
-- `LayerMask: MaskInvert` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `Setter` —— 3/4 个有
-- `WanVideoTorchCompileSettings` —— 3/4 个有
-- `easy ifElse` —— 3/4 个有
-- `easy showAnything` —— 3/4 个有
-- `PointsEditor` —— 2/4 个有
-- `DownloadAndLoadSAM2Model` —— 1/4 个有
-- `FloatConstant` —— 1/4 个有
-- `ImageBlend` —— 1/4 个有
-- `ImageRemoveBackground+` —— 1/4 个有
-- `JWImageExtractFromBatch` —— 1/4 个有
-- `LayerMask: SAM2VideoUltra` —— 1/4 个有
-- `RemBGSession+` —— 1/4 个有
-- `Sa2VANodeTpl` —— 1/4 个有
-- `Sam2Segmentation` —— 1/4 个有
-- `SeCModelLoader` —— 1/4 个有
-- `SeCVideoSegmentation` —— 1/4 个有
-- `WanVideoContextOptions` —— 1/4 个有
+- `PreviewImage` —— 4/5 个有
+- `WanVideoEnhanceAVideo` —— 4/5 个有
+- `WanVideoTorchCompileSettings` —— 4/5 个有
+- `DF_Integer` —— 3/5 个有
+- `ImageResizeKJv2` —— 3/5 个有
+- `SimpleMath+` —— 3/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `WanVideoSLG` —— 2/5 个有
+- `WanVideoTeaCache` —— 2/5 个有
+- `EmptyImage` —— 1/5 个有
+- `GetImageSize` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `JjkText` —— 1/5 个有
+- `WanVideoExperimentalArgs` —— 1/5 个有
+- `easy cleanGpuUsed` —— 1/5 个有
+- `easy imageRemBg` —— 1/5 个有
+- `easy int` —— 1/5 个有
 
 ## 典型参数
 

@@ -2,81 +2,75 @@
 name: text_to_image_lora_sampler_clip_307
 type: Text To Image
 frequency: 7
-level: strong
-coverage: 0.897429
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: moderate
+coverage: 0.833
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1 Viggle 4-Step极速文生图工作流四步出图_2106210534201843714.json, 图片生成/文生图/Qwen Image 2.1 主体去背景｜透明PNG遮罩预览_2112467188685828098.json, 图片生成/文生图/Qwen Image 2.1 图片换人｜双图替换保留原姿态_2112454776331001858.json, 图片生成/文生图/Qwen Image 2.1 透明素材生成｜文生图直出透明PNG_2112462903986180098.json, 图片生成/文生图/qwen2.1文生图基础工作流 新手友好稳定出图_2104664392800489473.json, 图片生成/文生图/qwen2.1文生图基础工作流 新手友好稳定出图_2105070911778021377.json, 数字人/数字人/千问大模型驱动的数字人工作流，多功能AI生成方案_2102883846000828418.json]
+members: [图片生成/文生图/qwen image2512文生图双采样真实感增强加速_2007460875501834242.json, 图片生成/文生图/qwen+image+2512文生图基础工作流(含丰富提示词示例)_2016839544758341634.json, 图片生成/文生图/一键分镜图生图—多视图+多角度+多视角，可自行调整_2095714755485986817.json, 图片生成/文生图/千问最新2512文生图工作流（20+提示词演示）_2015617931069100033.json, 图片生成/文生图/最新qwen image 2512文生图基础工作流(含丰富提示词示例)_2013206726975164418.json, 图片生成/文生图/最新qwen image 2512文生图基础工作流(含丰富提示词示例)_2069259090022453250.json, 图片生成/文生图/最新qwen image2512文生图基础工作流_2007337522422095873.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_307
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 Viggle 4-Step极速文生图工作流四步出图_2106210534201843714.json、图片生成/文生图/Qwen Image 2.1 主体去背景｜透明PNG遮罩预览_2112467188685828098.json、图片生成/文生图/Qwen Image 2.1 图片换人｜双图替换保留原姿态_2112454776331001858.json、图片生成/文生图/Qwen Image 2.1 透明素材生成｜文生图直出透明PNG_2112462903986180098.json、图片生成/文生图/qwen2.1文生图基础工作流 新手友好稳定出图_2104664392800489473.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/qwen image2512文生图双采样真实感增强加速_2007460875501834242.json、图片生成/文生图/qwen+image+2512文生图基础工作流(含丰富提示词示例)_2016839544758341634.json、图片生成/文生图/一键分镜图生图—多视图+多角度+多视角，可自行调整_2095714755485986817.json、图片生成/文生图/千问最新2512文生图工作流（20+提示词演示）_2015617931069100033.json、图片生成/文生图/最新qwen image 2512文生图基础工作流(含丰富提示词示例)_2013206726975164418.json…）
 
 - **类型**：Text To Image
 - **样本数**：7
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 7 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 6/7 个有
-- `ComfySwitchNode` —— 5/7 个有
-- `ResolutionSelector` —— 5/7 个有
-- `LoadImage` —— 3/7 个有
-- `ImageResizeKJv2` —— 2/7 个有
-- `MaskToImage` —— 2/7 个有
-- `PrimitiveInt` —— 2/7 个有
-- `SplitImageWithAlpha` —— 2/7 个有
-- `CR Text` —— 1/7 个有
-- `ImageScale` —— 1/7 个有
-- `ModelAttentionBackend` —— 1/7 个有
-- `ModelSamplingFlux` —— 1/7 个有
-- `easy imageConcat` —— 1/7 个有
+- `CR Seed` —— 6/7 个有
+- `PreviewImage` —— 2/7 个有
+- `CheckpointLoaderSimple` —— 1/7 个有
+- `LatentUpscaleBy` —— 1/7 个有
+- `LoadImage` —— 1/7 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/7 个有
+- `basicIn_Sampler` —— 1/7 个有
+- `easy promptLine` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 7 | 100% |
-| 高度 | 80 | 80 - 80 | 7 | 100% |
-| 采样步数 | 4 | 4 - 4 | 7 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 7 | 100% |
-| 采样算法 | er_sde | - | 7 | 100% |
-| 调度器 | beta | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 25 | 4 - 25 | 7 | 58% |
+| Prompt 约束强度(CFG) | 4 | 1 - 4 | 7 | 61% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 71% |
+| 重绘幅度 | 1 | 0.35 - 1 | 7 | 75% |
+| 宽度 | 1024 | 512 - 1536 | 7 | 69% |
+| 高度 | 1024 | 512 - 1536 | 7 | 69% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，7 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，7 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，7 个样本，一致性 100%
-- 调度器 最常用 beta，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（8/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 25，观测区间 4 - 25，7 个样本
+- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，7 个样本
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 71%
+- 重绘幅度 中位数 1，观测区间 0.35 - 1，7 个样本
+- 宽度 中位数 1024，观测区间 512 - 1536，7 个样本
+- 高度 中位数 1024，观测区间 512 - 1536，7 个样本

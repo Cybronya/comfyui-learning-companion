@@ -1,65 +1,76 @@
 ---
 name: unknown_workflow_video_lora_sampler_695
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.651667
-common_nodes: [BasicGuider, BasicScheduler, FeiHouEasyH3RH, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, KSamplerSelect, LTXVConcatAVLatent, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelPreviewOverrideKJ, RandomNoise, SamplerCustomAdvanced, SetNode, UniBlockSwap, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, VRAM_Debug, easy clearCacheAll, easy ifElse]
+coverage: 0.64475
+common_nodes: [BlockifyMask, CLIPVisionLoader, ConvertAny2Int, DownloadAndLoadSAM2Model, DrawMaskOnImage, DrawViTPose, GetImageRangeFromBatch, GetImageSizeAndCount, GrowMask, ImageConcatMulti, ImageResizeKJv2, LayerUtility: ImageBlend, LoadImage, MathExpression|pysssss, OnnxDetectionModelLoader, PoseAndFaceDetection, Sam2Segmentation, SoundFlow_TrimAudio, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy float, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/MinimaxH3全能参考：电影质量V2_2095725291497938946.json, 视频生成/文生视频/MinimaxH3全能参考：电影质量V3（浅空间放大版）_2094139603556069377.json, 视频生成/文生视频/MinimaxH3全能参考：高画质电影感V2_2094095183708246018.json]
+members: [平台全量/人物替换+动作迁移+对口型（根叔）_1977242202525048833.json, 数字人/数字人/长视频wan_animate-自动人物替换+动作迁移+InfiniteTalk对口型-电商数字人_1975573542223876097.json, 数字人/数字人/长视频wan_animate-自动人物替换+动作迁移-唱歌跳舞_1972675635229446145.json, 视频生成/图生视频/wan_animate+KJ版+长视频全自动+替换人物+动作迁移+首尾帧丢弃_1972178005500030977.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_695
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MinimaxH3全能参考：电影质量V2_2095725291497938946.json、视频生成/文生视频/MinimaxH3全能参考：电影质量V3（浅空间放大版）_2094139603556069377.json、视频生成/文生视频/MinimaxH3全能参考：高画质电影感V2_2094095183708246018.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/人物替换+动作迁移+对口型（根叔）_1977242202525048833.json、数字人/数字人/长视频wan_animate-自动人物替换+动作迁移+InfiniteTalk对口型-电商数字人_1975573542223876097.json、数字人/数字人/长视频wan_animate-自动人物替换+动作迁移-唱歌跳舞_1972675635229446145.json、视频生成/图生视频/wan_animate+KJ版+长视频全自动+替换人物+动作迁移+首尾帧丢弃_1972178005500030977.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `FeiHouEasyH3RH`
-- `FeiHouEasyH3RHLoader`
-- `FeiHouEasyH3RHOutput`
-- `GetNode`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3SigmaShift`
-- `ModelPreviewOverrideKJ`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UniBlockSwap`
-- `VAEDecode`
-- `VAEDecodeAudio`
+全部 4 个 workflow 都包含：
+- `BlockifyMask`
+- `CLIPVisionLoader`
+- `ConvertAny2Int`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `DrawViTPose`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GrowMask`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageBlend`
+- `LoadImage`
+- `MathExpression|pysssss`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `Sam2Segmentation`
+- `SoundFlow_TrimAudio`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VRAM_Debug`
-- `easy clearCacheAll`
-- `easy ifElse`
+- `VHS_VideoInfoLoaded`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy float`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 2/3 个有
-- `LTXVSeparateAVLatent` —— 2/3 个有
-- `MiniMaxH3BlockCacheT8` —— 2/3 个有
-- `MiniMaxLowVRAMAttention` —— 2/3 个有
-- `MinimaxH3LatentUpscaler3D` —— 2/3 个有
-- `ModelAttentionBackend` —— 2/3 个有
-- `SplitSigmas` —— 2/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `RandomSeedNoise` —— 1/3 个有
-- `ResolutionSelector` —— 1/3 个有
-- `VAEEncode` —— 1/3 个有
-- `VAEEncodeAudio` —— 1/3 个有
-- `忽略多组孤海` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `GetNode` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `AudioCrop` —— 2/4 个有
+- `AudioSeparation` —— 2/4 个有
+- `DownloadAndLoadWav2VecModel` —— 2/4 个有
+- `MultiTalkModelLoader` —— 2/4 个有
+- `MultiTalkWav2VecEmbeds` —— 2/4 个有
+- `PreviewAudio` —— 2/4 个有
+- `WanVideoEncode` —— 2/4 个有
+- `WanVideoImageToVideoMultiTalk` —— 2/4 个有
+- `WanVideoLoraSelect` —— 2/4 个有
+- `WanVideoTorchCompileSettings` —— 2/4 个有
+- `EmptyImage` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,69 +1,54 @@
 ---
 name: unknown_workflow_sampler_clip_unet_257
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.8394
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Fast Groups Bypasser (rgthree), FluxGuidance, GetImageSize, Image Comparer (rgthree), ImageScale, ImageScaleToTotalPixels, LanPaint_KSampler, LoadImage, PrimitiveFloat, ReferenceLatent, SaveImage, SetLatentNoiseMask, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.949667
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, LoadImage, ManualSigmas, RandomNoise, ReferenceMultiLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Klein多图局部编辑无像素偏移_2013109962473480194.json, 图片生成/图生图/全自动商用级-换脸换头_2082030904230367234.json, 图片生成/图生图/商用级-全自动换脸换头_2072586310119944194.json, 图片生成/图生图/商用级-全自动换脸换头_2082644570055200769.json, 图片生成/图生图/商用级-全自动换脸换头_2082663416522690562.json]
+members: [图片生成/图生图/flux_klien3图像编辑_2110985829039558657.json, 图片生成/图生图/（4图 可以上满4张最少可以上传1张）Flux3多图编辑加速版_2111603711633092609.json, 图片生成/文生图/FLUX3.0 Klein 全套工作流精品_2112068071841157122.json, 图片生成/文生图/Flux3&多图编辑-加速版_2111293209782603777.json, 图片生成/文生图/flux_klien3单图-快速图像编辑_2110999906369490946.json, 视频生成/图生视频/Flux3加速版多图编辑V1_2110847111846780929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_257
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Klein多图局部编辑无像素偏移_2013109962473480194.json、图片生成/图生图/全自动商用级-换脸换头_2082030904230367234.json、图片生成/图生图/商用级-全自动换脸换头_2072586310119944194.json、图片生成/图生图/商用级-全自动换脸换头_2082644570055200769.json、图片生成/图生图/商用级-全自动换脸换头_2082663416522690562.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/flux_klien3图像编辑_2110985829039558657.json、图片生成/图生图/（4图 可以上满4张最少可以上传1张）Flux3多图编辑加速版_2111603711633092609.json、图片生成/文生图/FLUX3.0 Klein 全套工作流精品_2112068071841157122.json、图片生成/文生图/Flux3&多图编辑-加速版_2111293209782603777.json、图片生成/文生图/flux_klien3单图-快速图像编辑_2110999906369490946.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Fast Groups Bypasser (rgthree)`
-- `FluxGuidance`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageScale`
-- `ImageScaleToTotalPixels`
-- `LanPaint_KSampler`
+- `EmptyFlux2LatentImage`
+- `KSamplerSelect`
 - `LoadImage`
-- `PrimitiveFloat`
-- `ReferenceLatent`
+- `ManualSigmas`
+- `RandomNoise`
+- `ReferenceMultiLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetLatentNoiseMask`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfySwitchNode` —— 4/5 个有
-- `EmptyFlux2LatentImage` —— 4/5 个有
-- `ImageResizeKJv2` —— 4/5 个有
-- `KSamplerAdvanced` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 4/5 个有
-- `MaskPreview` —— 4/5 个有
-- `ResizeImageMaskNode` —— 4/5 个有
-- `easy imageColorMatch` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `ResizeMask` —— 1/5 个有
+- `GetImageSize` —— 2/6 个有
+- `PrimitiveStringMultiline` —— 2/6 个有
+- `孤海注释` —— 2/6 个有
+- `MuyeTextEditOutput` —— 1/6 个有
+- `Text` —— 1/6 个有
+- `忽略多组孤海` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 5 | 80% |
-| Prompt 约束强度(CFG) | 4 | 1 - 4 | 5 | 65% |
-| 采样算法 | 1 | 1 - 1 | 4 | 100% |
-| 调度器 | sa_solver | - | 5 | 80% |
-| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 5 | 80% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -71,8 +56,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，5 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，5 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 调度器 最常用 sa_solver，5 个样本，一致性 80%
-- 重绘幅度 最常用 FlowMatchEulerDiscreteScheduler，5 个样本，一致性 80%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

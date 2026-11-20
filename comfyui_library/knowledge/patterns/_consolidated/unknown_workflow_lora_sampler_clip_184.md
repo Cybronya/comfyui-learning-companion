@@ -1,83 +1,69 @@
 ---
 name: unknown_workflow_lora_sampler_clip_184
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.921
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, GemmaAPITextEncode, GetVideoComponents, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXFloatToInt, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LoadVideo, LoraLoaderModelOnly, ManualSigmas, PrimitiveString, RandomNoise, SamplerCustomAdvanced, SaveVideo]
+coverage: 0.58075
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, CR Text Replace, EmptySD3LatentImage, Fast Groups Bypasser (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/LTX2.3动作迁移优化_2083394351262158850.json, 视频生成/图生视频/LTX2.3人物动作迁移（视频）_2083198650917941249.json, 音频生成/音频生成/LTX-2.3_ICLoRA_Lipdub V2V 口型同步工作流_2054609608710344705.json]
+members: [图片生成/图生图/分镜-全能图片pro_2100420944752893954.json, 图片生成/图生图/多宫格分镜图生成-工作台-电影大片感分镜-全平台适用_2039535317241307137.json, 图片生成/图生图/时尚TVC电影四宫格分镜-全能图片pro_2042805070139498497.json, 视频生成/图生视频/时尚TVC电影多宫格分镜&视频生成工作流 V2.0_2068294767087276033.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_184
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/LTX2.3动作迁移优化_2083394351262158850.json、视频生成/图生视频/LTX2.3人物动作迁移（视频）_2083198650917941249.json、音频生成/音频生成/LTX-2.3_ICLoRA_Lipdub V2V 口型同步工作流_2054609608710344705.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/分镜-全能图片pro_2100420944752893954.json、图片生成/图生图/多宫格分镜图生成-工作台-电影大片感分镜-全平台适用_2039535317241307137.json、图片生成/图生图/时尚TVC电影四宫格分镜-全能图片pro_2042805070139498497.json、视频生成/图生视频/时尚TVC电影多宫格分镜&视频生成工作流 V2.0_2068294767087276033.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `GemmaAPITextEncode`
-- `GetVideoComponents`
-- `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXAddVideoICLoRAGuide`
-- `LTXFloatToInt`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
-- `LTXVTiledVAEDecode`
-- `LoadVideo`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Replace`
+- `EmptySD3LatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveString`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `ShowText|pysssss`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CannyEdgePreprocessor` —— 2/3 个有
-- `DWPreprocessor` —— 2/3 个有
-- `GetImageSize` —— 2/3 个有
-- `ImageScale` —— 2/3 个有
-- `ImageToMask` —— 2/3 个有
-- `LTXVDilateVideoMask` —— 2/3 个有
-- `LTXVImgToVideoConditionOnly` —— 2/3 个有
-- `LTXVLaplacianPyramidBlend` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `MaskToImage` —— 2/3 个有
-- `PrimitiveBoolean` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `LTXVAudioVAEEncode` —— 1/3 个有
-- `LTXVLatentUpsampler` —— 1/3 个有
-- `LTXVSetAudioRefTokens` —— 1/3 个有
-- `LatentUpscaleModelLoader` —— 1/3 个有
-- `ResizeImageMaskNode` —— 1/3 个有
+- `GetNode` —— 3/4 个有
+- `Int` —— 3/4 个有
+- `ProcessString` —— 3/4 个有
+- `RH_RhartImageNProEdit` —— 3/4 个有
+- `SetNode` —— 3/4 个有
+- `easy anythingIndexSwitch` —— 3/4 个有
+- `easy promptLine` —— 3/4 个有
+- `RH_RhartImageNG31FlashImageToImage` —— 1/4 个有
+- `RH_RhartVideoSparkvideo20MultimodalVideo` —— 1/4 个有
+- `SaveVideo` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 3 | 100% |
-| 高度 | 25 | 25 - 25 | 3 | 100% |
+| 采样步数 | 50 | 50 - 50 | 4 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 4 | 100% |
+| 采样算法 | res_multistep | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -85,5 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 50，观测区间 50 - 50，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

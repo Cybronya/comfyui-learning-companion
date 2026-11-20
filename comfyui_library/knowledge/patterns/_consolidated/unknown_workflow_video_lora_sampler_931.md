@@ -1,61 +1,65 @@
 ---
 name: unknown_workflow_video_lora_sampler_931
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.6705
-common_nodes: [Bjornulf_AnythingToText, Bjornulf_ShowInt, Bjornulf_ShowStringText, CLIPTextEncode, CR String To Boolean, CR String To Number, CR Text Input Switch (4 way), GetNode, ImpactSwitch, Int, JjkText, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, Note _O, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoVRAMManagement]
+frequency: 3
+level: moderate
+coverage: 0.914333
+common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, LayerUtility: PurgeVRAM V2, LoadAudio, LoadImage, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/wan2.1图生视频-加强版_1902736464273158146.json, 视频生成/图生视频/wan2.1图生视频-固定pose-大摆锤_1902985509671440385.json]
+members: [视频生成/文生视频/AI Video Studio PR插件专用 数字人口播(照片)工作流_2094330406354120705.json, 视频生成/文生视频/Wan2_1+infinite+数字人唱歌对口型_2064331203859279874.json, 视频生成/文生视频/数字人带货视频 数字人口播 美妆模特 主播 静态图一键生成带货_2074320987222528002.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_931
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/wan2.1图生视频-加强版_1902736464273158146.json、视频生成/图生视频/wan2.1图生视频-固定pose-大摆锤_1902985509671440385.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/AI Video Studio PR插件专用 数字人口播(照片)工作流_2094330406354120705.json、视频生成/文生视频/Wan2_1+infinite+数字人唱歌对口型_2064331203859279874.json、视频生成/文生视频/数字人带货视频 数字人口播 美妆模特 主播 静态图一键生成带货_2074320987222528002.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：67%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Bjornulf_AnythingToText`
-- `Bjornulf_ShowInt`
-- `Bjornulf_ShowStringText`
-- `CLIPTextEncode`
-- `CR String To Boolean`
-- `CR String To Number`
-- `CR Text Input Switch (4 way)`
-- `GetNode`
-- `ImpactSwitch`
-- `Int`
-- `JjkText`
+全部 3 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadAudio`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
-- `Note _O`
-- `SetNode`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `SimpleMath+`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEasyCache`
 - `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `WanVideoVRAMManagement`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_Captioner` —— 1/2 个有
-- `easy textSwitch` —— 1/2 个有
+- `Float to Int` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `RH_GetAudioDuration` —— 2/3 个有
+- `easy anythingIndexSwitch` —— 2/3 个有
+- `AudioSeparation` —— 1/3 个有
+- `ImageResizeKJ` —— 1/3 个有
+- `Int` —— 1/3 个有
+- `PrimitiveInt` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `ResolutionSelector` —— 1/3 个有
+- `SoundFlow_TrimAudio` —— 1/3 个有
+- `intToFloat _O` —— 1/3 个有
 
 ## 典型参数
 
@@ -67,4 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

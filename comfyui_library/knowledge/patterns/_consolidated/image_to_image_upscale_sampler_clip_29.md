@@ -1,71 +1,97 @@
 ---
 name: image_to_image_upscale_sampler_clip_29
 type: Image To Image
-frequency: 3
-level: weak
-coverage: 0.838333
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, Image Comparer (rgthree), KSampler, LoadImage, SaveImage, UpscaleModelLoader, VAEDecode, VAEEncode]
-problems: [Steps较低可能导致细节不足]
+frequency: 6
+level: moderate
+coverage: 0.785167
+common_nodes: [CLIPLoader, CLIPTextEncode, Image Comparer (rgthree), ImageListToImageBatch, ImageUpscaleWithModel, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEEncode, VAELoader]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/2 - 两阶放大工作流_1958760029983760385.json, 图片生成/图生图/图片放大基础工作流_中文提示词_1958048284105388034.json, 图片生成/图生图/多人合照老照片修复_1903361845489737730.json]
+members: [图片生成/图生图/千府AI二次高清放大工作流_1963484062110535681.json, 平台全量/Wan2.2 人物细节修复 人像高清放大TTP+WAN 2.2修复皮肤质感和面部细节 去AI塑料感_2022930720154456065.json, 平台全量/Wan2.2+TTP放大_零变形不油腻_1938108302855159809.json, 平台全量/flux-fill丨最强扩图_1899338400196116481.json, 平台全量/人像细节修复_2037447277056368642.json, 平台全量/全能图片V1图像编辑_高清放大_1960600808368857089.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_sampler_clip_29
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2 - 两阶放大工作流_1958760029983760385.json、图片生成/图生图/图片放大基础工作流_中文提示词_1958048284105388034.json、图片生成/图生图/多人合照老照片修复_1903361845489737730.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/千府AI二次高清放大工作流_1963484062110535681.json、平台全量/Wan2.2 人物细节修复 人像高清放大TTP+WAN 2.2修复皮肤质感和面部细节 去AI塑料感_2022930720154456065.json、平台全量/Wan2.2+TTP放大_零变形不油腻_1938108302855159809.json、平台全量/flux-fill丨最强扩图_1899338400196116481.json、平台全量/人像细节修复_2037447277056368642.json…）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：6
+- **可信度**：中等可信
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
 - `Image Comparer (rgthree)`
+- `ImageListToImageBatch`
+- `ImageUpscaleWithModel`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `ModelSamplingSD3`
 - `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UNETLoader`
 - `UpscaleModelLoader`
-- `VAEDecode`
 - `VAEEncode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleBy` —— 2/3 个有
-- `ImageUpscaleWithModel` —— 2/3 个有
-- `RH_Translator` —— 2/3 个有
-- `ChinesePrompt_Mix` —— 1/3 个有
-- `ControlNetApply` —— 1/3 个有
-- `ControlNetLoader` —— 1/3 个有
-- `Label (rgthree)` —— 1/3 个有
-- `ReActorRestoreFace` —— 1/3 个有
-- `UpscaleImageByUsingModel` —— 1/3 个有
+- `ImageScaleToTotalPixels` —— 5/6 个有
+- `PathchSageAttentionKJ` —— 5/6 个有
+- `VAEDecode` —— 5/6 个有
+- `easy cleanGpuUsed` —— 5/6 个有
+- `easy imageBatchToImageList` —— 5/6 个有
+- `GetNode` —— 4/6 个有
+- `LoraLoaderModelOnly` —— 4/6 个有
+- `PreviewImage` —— 4/6 个有
+- `SetNode` —— 4/6 个有
+- `Anything Everywhere3` —— 3/6 个有
+- `CR Text` —— 1/6 个有
+- `ConditioningZeroOut` —— 1/6 个有
+- `DifferentialDiffusion` —— 1/6 个有
+- `DualCLIPLoader` —— 1/6 个有
+- `FluxGuidance` —— 1/6 个有
+- `ImagePadForOutpaint` —— 1/6 个有
+- `ImpactImageBatchToImageList` —— 1/6 个有
+- `InpaintModelConditioning` —— 1/6 个有
+- `LayerUtility: NumberCalculatorV2` —— 1/6 个有
+- `LoraLoader` —— 1/6 个有
+- `Primitive integer [Crystools]` —— 1/6 个有
+- `PrimitiveInt` —— 1/6 个有
+- `RH_Captioner` —— 1/6 个有
+- `RH_Nano_Banana_Image2Image` —— 1/6 个有
+- `VAEDecodeTiled` —— 1/6 个有
+- `easy imageSize` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 6 - 10 | 3 | 78% |
-| Prompt 约束强度(CFG) | 3 | 2 - 5 | 3 | 63% |
-| 采样算法 | uni_pc_bh2 | - | 3 | 33% |
-| 调度器 | normal | - | 3 | 33% |
-| 重绘幅度 | 0.35 | 0.2 - 1 | 3 | 33% |
-| ControlNet 权重 | 1 | - | 1 | 100% |
+| LoRA 模型强度 | 0.4 | - | 1 | 100% |
+| LoRA 文本强度 | 0.4 | - | 1 | 100% |
+| 采样步数 | 10 | 10 - 10 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 50% |
+| 调度器 | beta | - | 6 | 83% |
+| 重绘幅度 | 0.08 | 0.06 - 0.33 | 6 | 19% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 1/6 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 6 - 10，3 个样本
-- Prompt 约束强度(CFG) 中位数 3，观测区间 2 - 5，3 个样本
-- 采样算法 最常用 uni_pc_bh2，3 个样本，一致性 33%
-- 调度器 最常用 normal，3 个样本，一致性 33%
-- 重绘幅度 中位数 0.35，观测区间 0.2 - 1，3 个样本，取值分散，一致性仅 33%
-- 高发问题（2/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 10，观测区间 10 - 10，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 50%
+- 调度器 最常用 beta，6 个样本，一致性 83%
+- 重绘幅度 中位数 0.08，观测区间 0.06 - 0.33，6 个样本，取值分散，一致性仅 19%
+- 风险：重绘幅度 观测到 0.06，低于常用下限 0.1（）

@@ -1,94 +1,81 @@
 ---
 name: image_to_image_upscale_lora_sampler_5
 type: Image To Image
-frequency: 19
-level: moderate
-coverage: 0.657316
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, GetNode, ImageScaleBy, ImageScaleToTotalPixels, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, Qwen3_VQA, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SetNode, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy clearCacheAll]
+frequency: 23
+level: strong
+coverage: 0.905739
+common_nodes: [Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/【动漫转真人】Qwen+Z-image_支持文本修改&去水印&加密_真实洗图_2030319073132814338.json, 图片生成/图生图/二次元转真人，真实感照片_2006712889599594497.json, 图片生成/图生图/二次元转真人，真实感照片aa_2050942539259232257.json, 图片生成/图生图/动漫变成了真实的人_漫画变真人_2010983846753341442.json, 图片生成/图生图/动漫转真人 真实感洗图 Qwen-image-edit +SeedVR2 高清放大_2048284125894811649.json, 图片生成/图生图/动漫转真人Qwen-Image真实感洗图 Qwen-image-edit_2048279564601794562.json, 图片生成/图生图/动漫转真人Qwen-Image真实感洗图_2033005129380667394.json, 图片生成/图生图/动漫转真人Qwen-Image真实感洗图_2038437424535179266.json, 图片生成/图生图/动漫转真人_2061420701457928194.json, 图片生成/图生图/动漫转真人_漫画生成真实的人_2011682779901206530.json, 图片生成/图生图/动漫转真人无限制Qwen+ZI真实感洗图_2025213284500115457.json, 图片生成/图生图/洗图+写实人物_2042946044908015618.json, 图片生成/图生图/超丝滑~Qwen+ZI二次元转真人！_2064229382738235394.json, 图片生成/图生图/超好用Qwen+ZI二次元转真人_2100059570327609346.json, 图片生成/图生图/超好用Qwen+ZI二次元转真人_2100752802795573250.json, 图片生成/图生图/超好用Qwen+ZI二次元转真人_2100754627636580354.json, 图片生成/图生图/（质感超强）Qwen+ZI二次元转真人，真实感转绘_2033341653011931137.json, 图片生成/图生图/（超好用）Qwen+ZI风格迁移，动漫转真人_2039899405108645890.json, 视频生成/图生视频/圆梦（二次元来现实）_2066322228135940097.json]
+members: [图片生成/图生图/Qwen 2509 特效生成_2004005512771452930.json, 图片生成/图生图/Qwen Edit Image 2511 ——空调、风扇气流等特效生成_2006280875578757122.json, 图片生成/图生图/Qwen-Edit-2509-人像光线迁移_2060994886178000897.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_1997616377580204033.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_2052216361736253441.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_2052285131456557058.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_2056196328450994178.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_2059799208827383809.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_2059802346313572353.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_2059893421149614082.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_2067061263775129601.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_2067435409872867329.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移_2067515942933975041.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移工作流_2049696687299543041.json, 图片生成/图生图/Qwen-Edit-2509-光线迁移工作流_2052705834458730497.json, 图片生成/图生图/QwenEdit-参考图像人物重打光V1.0_2008916789152976898.json, 图片生成/图生图/Zimage重绘放大_1930179095877861377.json, 图片生成/图生图/丰胸神器 一键变plump! - 千问Qwen2511_2005632117461708801.json, 图片生成/图生图/丰胸神器 一键变plump! - 千问Qwen2511_2030944455557124097.json, 图片生成/图生图/丰胸神器-胸部增大-雯雯的后宫_2075590081682960386.json, 图片生成/图生图/丰胸神器-胸部增强-胸部变大-一键变plump! Qwen2511_2077672131277705217.json, 图片生成/图生图/丰胸神器-胸部增强-胸部变大-一键变plump! Qwen2511_2077925230835748865.json, 图片生成/图生图/草图转kv海报_1998567957515132930.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler_5
 
-> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（图片生成/图生图/【动漫转真人】Qwen+Z-image_支持文本修改&去水印&加密_真实洗图_2030319073132814338.json、图片生成/图生图/二次元转真人，真实感照片_2006712889599594497.json、图片生成/图生图/二次元转真人，真实感照片aa_2050942539259232257.json、图片生成/图生图/动漫变成了真实的人_漫画变真人_2010983846753341442.json、图片生成/图生图/动漫转真人 真实感洗图 Qwen-image-edit +SeedVR2 高清放大_2048284125894811649.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/Qwen 2509 特效生成_2004005512771452930.json、图片生成/图生图/Qwen Edit Image 2511 ——空调、风扇气流等特效生成_2006280875578757122.json、图片生成/图生图/Qwen-Edit-2509-人像光线迁移_2060994886178000897.json、图片生成/图生图/Qwen-Edit-2509-光线迁移_1997616377580204033.json、图片生成/图生图/Qwen-Edit-2509-光线迁移_2052216361736253441.json…）
 
 - **类型**：Image To Image
-- **样本数**：19
-- **可信度**：中等可信
-- **平均知识覆盖**：66%
+- **样本数**：23
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 19 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `GetNode`
-- `ImageScaleBy`
-- `ImageScaleToTotalPixels`
+全部 23 个 workflow 都包含：
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `Qwen3_VQA`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `SetNode`
-- `TextEncodeQwenImageEdit`
-- `TextEncodeQwenImageEditPlus`
-- `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy clearCacheAll`
 
 **可变部分**（部分 workflow 才有）：
-- `JoinStrings` —— 18/19 个有
-- `WD14Tagger|pysssss` —— 18/19 个有
-- `easy showAnything` —— 18/19 个有
-- `ShowText|pysssss` —— 17/19 个有
-- `Fast Groups Bypasser (rgthree)` —— 15/19 个有
-- `CompressImages` —— 3/19 个有
-- `AILab_ImageStitch` —— 1/19 个有
-- `CR Text Concatenate` —— 1/19 个有
-- `DF_Text_Box` —— 1/19 个有
-- `GetImageSize` —— 1/19 个有
-- `Int` —— 1/19 个有
-- `PreviewImage` —— 1/19 个有
-- `ResizeImageNode` —— 1/19 个有
-- `TT_img_enc` —— 1/19 个有
-- `TextInput_` —— 1/19 个有
-- `easy boolean` —— 1/19 个有
-- `easy imageSwitch` —— 1/19 个有
+- `CFGNorm` —— 22/23 个有
+- `ImageScaleToTotalPixels` —— 22/23 个有
+- `TextEncodeQwenImageEditPlus` —— 22/23 个有
+- `CLIPLoader` —— 20/23 个有
+- `UNETLoader` —— 20/23 个有
+- `ImageScaleBy` —— 18/23 个有
+- `Fast Groups Muter (rgthree)` —— 5/23 个有
+- `easy cleanGpuUsed` —— 4/23 个有
+- `LoadDiffusionModelShared //Inspire` —— 3/23 个有
+- `LoadTextEncoderShared //Inspire` —— 3/23 个有
+- `easy imageSize` —— 3/23 个有
+- `CR Prompt Text` —— 2/23 个有
+- `EmptySD3LatentImage` —— 2/23 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/23 个有
+- `CLIPTextEncode` —— 1/23 个有
+- `ConstrainImage|pysssss` —— 1/23 个有
+- `PreviewImage` —— 1/23 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 5 - 10 | 19 | 85% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.6 | 19 | 76% |
-| 采样算法 | res_2m | - | 19 | 53% |
-| 调度器 | sgm_uniform | - | 19 | 53% |
-| 重绘幅度 | 1 | 0.35 - 1 | 19 | 55% |
+| 采样步数 | 8 | 8 - 10 | 23 | 95% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 23 | 100% |
+| 采样算法 | euler | - | 23 | 100% |
+| 调度器 | simple | - | 23 | 100% |
+| 重绘幅度 | 1 | 0.3 - 1 | 23 | 85% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 40/19 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 22/23 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 5 - 10，19 个样本，取值集中（一致性 85%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.6，19 个样本
-- 采样算法 最常用 res_2m，19 个样本，一致性 53%
-- 调度器 最常用 sgm_uniform，19 个样本，一致性 53%
-- 重绘幅度 中位数 1，观测区间 0.35 - 1，19 个样本
-- 高发问题（40/19 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 10，23 个样本，取值集中（一致性 95%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，23 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，23 个样本，一致性 100%
+- 调度器 最常用 simple，23 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.3 - 1，23 个样本，取值集中（一致性 85%）
+- 高发问题（22/23 个样本）：Steps较低可能导致细节不足

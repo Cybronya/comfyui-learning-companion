@@ -1,63 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_775
 type: Unknown Workflow
-frequency: 3
-level: strong
-coverage: 1
-common_nodes: [CLIPLoader, CLIPTextEncode, INTConstant, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingSD3, TrimVideoLatent, VAEDecode, VAELoader, VHS_VideoCombine, WanVaceToVideo]
+frequency: 4
+level: moderate
+coverage: 0.678
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, ImageResizeKJv2, LoadImage, SetNode, SimpleComparison+, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVAELoader, easy ifElse, easy int]
 problems: []
 missing: []
-members: [视频生成/文生视频/Wan 2.2-Fun-VACE-文生视频_1967648604473233410.json, 视频生成/文生视频/Wan 2.2-Fun-VACE-首尾帧_1967630045374287873.json, 视频生成/文生视频/Wan2.2-VACE-首尾帧_1950435330224775169.json]
+members: [视频生成/文生视频/SVI FILM 循环长视频_1984166711169581057.json, 视频生成/文生视频/SVI SHOT 长视频 循环_1984161219709992962.json, 视频生成/文生视频/SVI-SHOT 长视频 非循环_1984156029606920194.json, 视频生成/文生视频/SVI_FILM长视频生成_非循环_1984138847112069121.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_775
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/Wan 2.2-Fun-VACE-文生视频_1967648604473233410.json、视频生成/文生视频/Wan 2.2-Fun-VACE-首尾帧_1967630045374287873.json、视频生成/文生视频/Wan2.2-VACE-首尾帧_1950435330224775169.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/文生视频/SVI FILM 循环长视频_1984166711169581057.json、视频生成/文生视频/SVI SHOT 长视频 循环_1984161219709992962.json、视频生成/文生视频/SVI-SHOT 长视频 非循环_1984156029606920194.json、视频生成/文生视频/SVI_FILM长视频生成_非循环_1984138847112069121.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：100%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
 - `INTConstant`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `TrimVideoLatent`
-- `VAEDecode`
-- `VAELoader`
+- `ImageBatchMulti`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `SetNode`
+- `SimpleComparison+`
+- `SimpleMath+`
 - `VHS_VideoCombine`
-- `WanVaceToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEmbedBridge`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy ifElse`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 2/3 个有
-- `LoadImage` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `WanVideoVACEStartToEndFrame` —— 2/3 个有
-- `CFGZeroStarAndInit` —— 1/3 个有
-- `ImageResizeKJ` —— 1/3 个有
-- `ImageResizeKJv2` —— 1/3 个有
-- `PathchSageAttentionKJ` —— 1/3 个有
-- `String Literal` —— 1/3 个有
-- `UnetLoaderGGUF` —— 1/3 个有
-- `WanVideoEnhanceAVideoKJ` —— 1/3 个有
-- `easy int` —— 1/3 个有
+- `List of any [Crystools]` —— 2/4 个有
+- `PrimitiveStringMultiline` —— 2/4 个有
+- `easy forLoopEnd` —— 2/4 个有
+- `easy forLoopStart` —— 2/4 个有
+- `easy indexAnything` —— 2/4 个有
+- `easy lengthAnything` —— 2/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 3 | 67% |
-| Prompt 约束强度(CFG) | 6 | 6 - 10 | 3 | 74% |
-| 采样算法 | 1 | 1 - 1 | 3 | 100% |
-| 调度器 | sa_solver_pece | - | 3 | 33% |
-| 重绘幅度 | simple | - | 3 | 67% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -65,8 +69,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，3 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 10，3 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 调度器 最常用 sa_solver_pece，3 个样本，一致性 33%
-- 重绘幅度 最常用 simple，3 个样本，一致性 67%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

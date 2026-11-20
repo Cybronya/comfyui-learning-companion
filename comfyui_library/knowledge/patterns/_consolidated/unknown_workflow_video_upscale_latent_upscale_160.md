@@ -3,33 +3,33 @@ name: unknown_workflow_video_upscale_latent_upscale_160
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.931
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CR Text, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+coverage: 0.77
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVEnhanceAVideoKJ, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, RandomNoise, SamplerCustomAdvanced, SimpleMath+, VAEDecodeTiled, VHS_VideoCombine, easy cleanGpuUsed, easy clearCacheAll, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/文生视频/【3月】LTX2.3文生视频（高质量一致性、音效、人声）_2031003213045960706.json, 视频生成/文生视频/最强优化—LTX2.3全自动文生视频_2044381949787115521.json]
+members: [视频生成/图生视频/LTX2.3 三阶段采样（分辨率除4三采）_2036795915394093058.json, 视频生成/图生视频/ltx2.3 三采（测试版）_2035619730907734018.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_160
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/【3月】LTX2.3文生视频（高质量一致性、音效、人声）_2031003213045960706.json、视频生成/文生视频/最强优化—LTX2.3全自动文生视频_2044381949787115521.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 三阶段采样（分辨率除4三采）_2036795915394093058.json、视频生成/图生视频/ltx2.3 三采（测试版）_2035619730907734018.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CR Text`
 - `CheckpointLoaderSimple`
 - `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
 - `LTXAVTextEncoderLoader`
 - `LTXVAudioVAEDecode`
 - `LTXVAudioVAELoader`
@@ -37,31 +37,49 @@ source: knowledge_consolidation
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVEmptyLatentAudio`
+- `LTXVEnhanceAVideoKJ`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
 - `PathchSageAttentionKJ`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `PrimitiveInt`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SimpleMath+`
 - `VAEDecodeTiled`
 - `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Int_to_Float` —— 1/2 个有
-- `Float` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `JWInteger` —— 1/2 个有
-- `LTXVLatentUpsampler` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `PrimitiveFloat` —— 1/2 个有
-- `PrimitiveInt` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `easy getNode` —— 1/2 个有
-- `easy setNode` —— 1/2 个有
+- `CFGNorm` —— 1/2 个有
+- `ComfyMathExpression` —— 1/2 个有
+- `CreateVideo` —— 1/2 个有
+- `FastFilmGrain` —— 1/2 个有
+- `ImageFromBatch` —— 1/2 个有
+- `ImageSharpen` —— 1/2 个有
+- `LTXVAddGuideMulti` —— 1/2 个有
+- `LTXVCropGuides` —— 1/2 个有
+- `LTXVImgToVideoInplace` —— 1/2 个有
+- `LTXVScheduler` —— 1/2 个有
+- `PrimitiveStringMultiline` —— 1/2 个有
+- `RTXVideoSuperResolution` —— 1/2 个有
+- `ResizeImageMaskNode` —— 1/2 个有
+- `ResizeImagesByLongerEdge` —— 1/2 个有
+- `SaveVideo` —— 1/2 个有
+- `VHS_PruneOutputs` —— 1/2 个有
+- `easy seed` —— 1/2 个有
 
 ## 典型参数
 

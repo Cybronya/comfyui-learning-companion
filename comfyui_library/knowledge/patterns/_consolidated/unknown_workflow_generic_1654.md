@@ -3,32 +3,33 @@ name: unknown_workflow_generic_1654
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6
-common_nodes: [PreviewImage, RH_Nano_Banana2_Image2Image, SaveImage]
+coverage: 0.9285
+common_nodes: [GetImageRangeFromBatch, SaveImage, VHS_LoadVideo]
 problems: []
 missing: []
-members: [图片生成/文生图/🍌文生图_2017626542070833153.json, 视频生成/文生视频/2.5.主视觉图(6分镜)_2031724205212962818.json]
+members: [图片生成/图生图/一键提取视频首尾帧_2041793153333731330.json, 平台全量/视频去水印并高清放大到1080P（第一步：获取视频中的首帧静态图）_2028096131338604546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1654
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/🍌文生图_2017626542070833153.json、视频生成/文生视频/2.5.主视觉图(6分镜)_2031724205212962818.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/一键提取视频首尾帧_2041793153333731330.json、平台全量/视频去水印并高清放大到1080P（第一步：获取视频中的首帧静态图）_2028096131338604546.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PreviewImage`
-- `RH_Nano_Banana2_Image2Image`
+- `GetImageRangeFromBatch`
 - `SaveImage`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeTextEditOutput` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
+- `PreviewAny` —— 1/2 个有
 
 ## 典型参数
 

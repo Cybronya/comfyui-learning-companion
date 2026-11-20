@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_211
 type: Text To Image
 frequency: 9
-level: strong
-coverage: 0.880556
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PrimitiveBoolean, QwenImage21Cache, RegexMatch, RegexReplace, SaveImage, SplitImageWithAlpha, StringFormat, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+level: weak
+coverage: 0.902667
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, ConditioningZeroOut, EmptyLatentImage, KSampler, KSamplerSelect, LayerMask: PersonMaskUltra V2, LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, PathchSageAttentionKJ, PrimitiveInt, QwenImage21SageAttentionT8, RHHiddenNodes, ReferenceLatent, SamplerCustom, SaveImage, SeedVR2Conditioning, SeedVR2Preprocess, ShunjingAIShade, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAEEncodeTiled, VAELoader, easy compare, easy imageBatchToImageList, easy imageListToImageBatch, 长边短边]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1换装V1高一致性无偏移工作流，图生图换装处理工具_2107534818765533186.json, 图片生成/图生图/Qwen Image 2.1换装V2高一致性无偏移工作流，图生图换装处理工具_2107533328957132801.json, 图片生成/图生图/Qwen Image 2.1换装编辑后人物一致性无偏差服装光影匹配原图加LoRA工作流_2107917971644571650.json, 图片生成/图生图/Qwen-Image-2.1换装V1高一致性版｜模特服装一键替换细节不变形_2107301997392257025.json, 图片生成/图生图/Qwen-Image-2.1换装V1高一致性版｜模特服装一键替换细节不变形_2109522026326224898.json, 图片生成/图生图/Qwen-Image-2.1换装V2高一致性版｜服装替换无偏移不跑版型_2107300495013539841.json, 图片生成/图生图/Qwen-Image-2.1换装V2高一致性版｜服装替换无偏移不跑版型_2109522763051520001.json, 图片生成/图生图/Qwen-Image-2.1高一致性换装，服装展示商品替换自如_2110506858170642433.json, 图片生成/图生图/Qwen-Image-2.1高一致性换装，服装展示商品替换自如_2112347931742392321.json]
+members: [图片生成/图生图/Qwen2.1人像写真姿势套图，小红书宫格图组图分镜随心发_2111188924164042754.json, 图片生成/图生图/单图Qwen2.1八步加速全套写真｜小红书宫格组图随心发_2111789296247205889.json, 图片生成/图生图/单图Qwen2.1八步加速出全套写真，小红书宫格图组图分镜_2111971265673261058.json, 图片生成/图生图/单图直出Qwen2.1全套写真｜八步加速极速出图｜小红书宫格组图与短剧分镜全搞定_2114612418428104706.json, 图片生成/图生图/用单图Qwen2.1几秒出全套写真！八步加速版速度封神！小红书宫格图组图故事板短剧分镜随心发！_2111358108500058114.json, 图片生成/图生图/秒杀传统三视图Lora流，Qwen2.1角色资产图制作，短剧IP神器_2114187385666891778.json, 平台全量/秒杀传统三视图Lora流！Qwen2.1生成超高清超高一致性人物角色资产图分镜图设定图！短剧IP神器_2110404577534234625.json, 平台全量/秒杀传统三视图Lora流！Qwen2.1生成超高清超高一致性人物角色资产图分镜图设定图！短剧IP神器_2117756795375673345.json, 平台全量/秒杀传统三视图Lora流！Qwen2.1生成超高清超高一致性人物角色资产图分镜图设定图！短剧IP神器_2117789466944434177.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_211
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1换装V1高一致性无偏移工作流，图生图换装处理工具_2107534818765533186.json、图片生成/图生图/Qwen Image 2.1换装V2高一致性无偏移工作流，图生图换装处理工具_2107533328957132801.json、图片生成/图生图/Qwen Image 2.1换装编辑后人物一致性无偏差服装光影匹配原图加LoRA工作流_2107917971644571650.json、图片生成/图生图/Qwen-Image-2.1换装V1高一致性版｜模特服装一键替换细节不变形_2107301997392257025.json、图片生成/图生图/Qwen-Image-2.1换装V1高一致性版｜模特服装一键替换细节不变形_2109522026326224898.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Qwen2.1人像写真姿势套图，小红书宫格图组图分镜随心发_2111188924164042754.json、图片生成/图生图/单图Qwen2.1八步加速全套写真｜小红书宫格组图随心发_2111789296247205889.json、图片生成/图生图/单图Qwen2.1八步加速出全套写真，小红书宫格图组图分镜_2111971265673261058.json、图片生成/图生图/单图直出Qwen2.1全套写真｜八步加速极速出图｜小红书宫格组图与短剧分镜全搞定_2114612418428104706.json、图片生成/图生图/用单图Qwen2.1几秒出全套写真！八步加速版速度封神！小红书宫格图组图故事板短剧分镜随心发！_2111358108500058114.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
@@ -26,64 +26,93 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfySwitchNode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LayerMask: PersonMaskUltra V2`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleRestore V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PrimitiveBoolean`
-- `QwenImage21Cache`
-- `RegexMatch`
-- `RegexReplace`
+- `ManualSigmas`
+- `MathExpression|pysssss`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `QwenImage21SageAttentionT8`
+- `RHHiddenNodes`
+- `ReferenceLatent`
+- `SamplerCustom`
 - `SaveImage`
-- `SplitImageWithAlpha`
-- `StringFormat`
+- `SeedVR2Conditioning`
+- `SeedVR2Preprocess`
+- `ShunjingAIShade`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `TextEncodeQwenImage21`
-- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
+- `VAEEncode`
+- `VAEEncodeTiled`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
+- `easy compare`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
+- `长边短边`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 8/9 个有
-- `DF_Integer` —— 8/9 个有
-- `Image Compare (mtb)` —— 8/9 个有
-- `ImageScaleToTotalPixels` —— 8/9 个有
-- `JWImageResizeByLongerSide` —— 8/9 个有
-- `PreviewImage` —— 8/9 个有
-- `SeedNode` —— 8/9 个有
-- `Text` —— 8/9 个有
-- `孤海注释` —— 8/9 个有
-- `EmptyImage` —— 3/9 个有
-- `Image Comparer (rgthree)` —— 1/9 个有
-- `JjkShowText` —— 1/9 个有
+- `SimpleMath+` —— 8/9 个有
+- `easy imageSwitch` —— 8/9 个有
+- `图像缩放V2_孤海` —— 6/9 个有
+- `CR Text Concatenate` —— 5/9 个有
+- `DapaoBatchImageGrid` —— 5/9 个有
+- `HfImageToRGB` —— 5/9 个有
+- `LayerColor: Brightness & Contrast` —— 5/9 个有
+- `PrimitiveStringMultiline` —— 5/9 个有
+- `easy promptLine` —— 5/9 个有
+- `easy showAnything` —— 5/9 个有
+- `llama_cpp_instruct_adv` —— 5/9 个有
+- `llama_cpp_model_loader` —— 5/9 个有
+- `llama_cpp_parameters` —— 5/9 个有
+- `ImageConcatMulti` —— 4/9 个有
+- `PreviewImage` —— 4/9 个有
+- `SeedNode` —— 4/9 个有
+- `easy imageRemBg` —— 4/9 个有
+- `GetImageSize` —— 3/9 个有
+- `JjkText` —— 3/9 个有
+- `solarL_SaveImagesToZip` —— 3/9 个有
+- `孤海注释` —— 3/9 个有
+- `EmptyImage` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 9 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
+| 采样步数 | 1 | 1 - 4 | 9 | 29% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 9 | 24% |
 | 采样算法 | er_sde | - | 9 | 100% |
-| 调度器 | beta | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 67% |
 | 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 80 | 80 - 80 | 9 | 100% |
-| 高度 | 80 | 80 - 80 | 9 | 100% |
+| 宽度 | 1024 | 80 - 1024 | 9 | 37% |
+| 高度 | 1024 | 80 - 1024 | 9 | 37% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 21/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 1，观测区间 1 - 4，9 个样本，取值分散，一致性仅 29%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，9 个样本，取值分散，一致性仅 24%
 - 采样算法 最常用 er_sde，9 个样本，一致性 100%
-- 调度器 最常用 beta，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 67%
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
-- 高发问题（9/9 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 80 - 1024，9 个样本，取值分散，一致性仅 37%
+- 高度 中位数 1024，观测区间 80 - 1024，9 个样本，取值分散，一致性仅 37%
+- 高发问题（21/9 个样本）：Steps较低可能导致细节不足

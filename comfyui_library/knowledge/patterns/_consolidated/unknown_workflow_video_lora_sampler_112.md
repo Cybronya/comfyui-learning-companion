@@ -1,79 +1,79 @@
 ---
 name: unknown_workflow_video_lora_sampler_112
 type: Unknown Workflow
-frequency: 15
+frequency: 16
 level: moderate
-coverage: 0.598267
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.7965
+common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/MiniMax H3 Ref2VA｜6图多参考·角色一致性·Sage加速_2087595496494948354.json, 数字人/数字人/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货_2111730699559587842.json, 数字人/数字人/MiniMax-H3_数字人视频带货_2097140288111341570.json, 数字人/数字人/MiniMax-H3开源 数字人视频带货 H3多图生视频_2114678453109874689.json, 数字人/数字人/MiniMax-H3开源 数字人视频带货 H3多图生视频_2114686420479725569.json, 数字人/数字人/MiniMaxH3  数字人视频带货  H3多图生视频_2099428215952596994.json, 数字人/数字人/优化版本新版口播_2108152027493785602.json, 数字人/数字人/开源免费电商短视频带货 MiniMax-H3数字人视频带货！_2098017732544524289.json, 数字人/数字人/新版本口播_2107771154403520513.json, 数字人/数字人/电影_2105166179148066817.json, 数字人/数字人/电影_2113898825818660866.json, 数字人/数字人/视频带货+Images+into+Videos—Digital+Avatars+Drive_2111625660065206273.json, 数字人/数字人/视频编辑-替换视频中的元素_2114576787442327553.json, 视频生成/图生视频/2采五段加速流_2104580181368336385.json, 视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json]
+members: [图片生成/图生图/InfiniteTalk数字人动态加强版（对口型-唱歌）_1986084370261954561.json, 图片生成/图生图/InfiniteTalk数字人高动态（对口型-唱歌）_1986988244921421826.json, 图片生成/图生图/wanvideo_infinitetalk_单人工作流_1977379439782830082.json, 图片生成/图生图/数字人  对口型  图生视频_2062824879812071426.json, 图片生成/文生图/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112074166999539713.json, 平台全量/1.2_InfiniteTalk视频+音频对口型（效果好Z）_1958562037829890050.json, 平台全量/1.2_InfiniteTalk视频+音频对口型（效果好）_1963900839138136066.json, 平台全量/InfiniTetalk 超自然数字人对口型  情感口播  数字人 图生视频_2118657483341393922.json, 平台全量/InfiniTetalk 超自然数字人对口型  情感口播  数字人 图生视频_2118662460235403265.json, 平台全量/InfiniteTalk超自然数字人对口型单人最新版 企财盈5.13_2054124499871772674.json, 平台全量/InfiniteTalk超自然数字人对口型单人最新版 企财盈7.10_2075504787818369026.json, 数字人/数字人/1.1_infinitetalk视频双人对口型（效果最好）_1994720356055326722.json, 数字人/数字人/infinitetalk视频双人对口型_1980526429727313921.json, 数字人/数字人/infinitetalk视频对口型（hua）_1998027187120955394.json, 数字人/数字人/infinitetalk视频对口型（hua）_2006207828683395074.json, 视频生成/图生视频/InfiniteTalk图像双人对口型_1971843495331819522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_112
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/MiniMax H3 Ref2VA｜6图多参考·角色一致性·Sage加速_2087595496494948354.json、数字人/数字人/MiniMax-H3_Digital_Avatars_for_Video_E-co数字人视频带货_2111730699559587842.json、数字人/数字人/MiniMax-H3_数字人视频带货_2097140288111341570.json、数字人/数字人/MiniMax-H3开源 数字人视频带货 H3多图生视频_2114678453109874689.json、数字人/数字人/MiniMax-H3开源 数字人视频带货 H3多图生视频_2114686420479725569.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/InfiniteTalk数字人动态加强版（对口型-唱歌）_1986084370261954561.json、图片生成/图生图/InfiniteTalk数字人高动态（对口型-唱歌）_1986988244921421826.json、图片生成/图生图/wanvideo_infinitetalk_单人工作流_1977379439782830082.json、图片生成/图生图/数字人  对口型  图生视频_2062824879812071426.json、图片生成/文生图/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112074166999539713.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：16
 - **可信度**：中等可信
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `GetNode`
-- `KSamplerSelect`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAELoader`
+全部 16 个 workflow 都包含：
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 14/15 个有
-- `PrimitiveFloat` —— 14/15 个有
-- `VAEDecode` —— 14/15 个有
-- `VAEDecodeAudio` —— 14/15 个有
-- `LTXVConcatAVLatent` —— 12/15 个有
-- `LTXVSeparateAVLatent` —— 12/15 个有
-- `MinimaxH3LatentUpscaler3D` —— 12/15 个有
-- `LoadAudio` —— 8/15 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/15 个有
-- `Text` —— 8/15 个有
-- `JjkText` —— 7/15 个有
-- `ManualSigmas` —— 7/15 个有
-- `VHS_LoadVideo` —— 7/15 个有
-- `SplitSigmas` —— 5/15 个有
-- `easy float` —— 5/15 个有
-- `MiniMaxH3AddGuide` —— 4/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/15 个有
-- `ModelAttentionBackend` —— 3/15 个有
-- `忽略多组孤海` —— 3/15 个有
-- `AudioConcat` —— 2/15 个有
-- `CreateVideo` —— 2/15 个有
-- `GetImageRangeFromBatch` —— 2/15 个有
-- `ImageBatchMulti` —— 2/15 个有
-- `SaveAudio` —— 2/15 个有
-- `SaveVideo` —— 2/15 个有
-- `TrimAudioDuration` —— 2/15 个有
-- `BlockSparseAttention` —— 1/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/15 个有
-- `LayerColor: ColorAdapter` —— 1/15 个有
-- `LoadImageFromUrl` —— 1/15 个有
-- `MiniMaxH3AVDecodeT8` —— 1/15 个有
-- `MiniMaxH3SigmaShift` —— 1/15 个有
-- `PreviewImage` —— 1/15 个有
-- `PrimitiveInt` —— 1/15 个有
+- `Audio Duration (mtb)` —— 15/16 个有
+- `AudioCrop` —— 13/16 个有
+- `GetImageRangeFromBatch` —— 13/16 个有
+- `VHS_LoadVideo` —— 10/16 个有
+- `CR Text` —— 9/16 个有
+- `ImageFromBatch+` —— 9/16 个有
+- `LoadWanVideoT5TextEncoder` —— 9/16 个有
+- `PrimitiveInt` —— 9/16 个有
+- `SimpleMath+` —— 9/16 个有
+- `WanVideoEncode` —— 9/16 个有
+- `WanVideoTextEncode` —— 9/16 个有
+- `WanVideoTorchCompileSettings` —— 9/16 个有
+- `easy showAnything` —— 9/16 个有
+- `GetNode` —— 8/16 个有
+- `SetNode` —— 8/16 个有
+- `GetImageSizeAndCount` —— 7/16 个有
+- `LoadImage` —— 7/16 个有
+- `PreviewAudio` —— 7/16 个有
+- `WanVideoTextEncodeCached` —— 7/16 个有
+- `ImageResizeKJv2` —— 6/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/16 个有
+- `MathExpression|pysssss` —— 6/16 个有
+- `PlaySound|pysssss` —— 6/16 个有
+- `VHS_VideoInfo` —— 6/16 个有
+- `PreviewImage` —— 4/16 个有
+- `VHS_VideoInfoLoaded` —— 4/16 个有
+- `ImageResize+` —— 3/16 个有
+- `easy cleanGpuUsed` —— 3/16 个有
+- `Anything Everywhere` —— 2/16 个有
+- `GetAudioDurationFromAudio` —— 2/16 个有
+- `SaveImage` —— 2/16 个有
+- `easy int` —— 2/16 个有
+- `INTConstant` —— 1/16 个有
+- `JWFloat` —— 1/16 个有
 
 ## 典型参数
 

@@ -3,36 +3,28 @@ name: unknown_workflow_generic_810
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.71425
-common_nodes: [LoadAudio, easy downloadIndexTTSAndLoadModel, easy indexTTSEmotionVector, easy indexTTSGenerate]
+coverage: 0.49175
+common_nodes: [SaveImage, e5cfe5ba-2ae0-4bc4-869f-ab2228cb44d3]
 problems: []
 missing: []
-members: [数字人/数字人/AI语音克隆+情绪调节_2026959078060199938.json, 数字人/数字人/AI语音克隆+情绪调节_2056685949249216514.json, 音频生成/音频生成/IndexTTS2情绪调整克隆_1970367640868974593.json, 音频生成/音频生成/语速+情感单人INDEXTTS_2066426440756846594.json]
+members: [comfyui-workflow-templates-json/image_qwen_image.json, comfyui-workflow-templates-json/template_qwen_image_illustration_lora.json, comfyui-workflow-templates-json/template_sugar_coated_gummy_style_qwen.json, 平台全量/千问 Qwen 中文海报_商品图生成_2059170087197831170.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_810
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/AI语音克隆+情绪调节_2026959078060199938.json、数字人/数字人/AI语音克隆+情绪调节_2056685949249216514.json、音频生成/音频生成/IndexTTS2情绪调整克隆_1970367640868974593.json、音频生成/音频生成/语速+情感单人INDEXTTS_2066426440756846594.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（comfyui-workflow-templates-json/image_qwen_image.json、comfyui-workflow-templates-json/template_qwen_image_illustration_lora.json、comfyui-workflow-templates-json/template_sugar_coated_gummy_style_qwen.json、平台全量/千问 Qwen 中文海报_商品图生成_2059170087197831170.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `LoadAudio`
-- `easy downloadIndexTTSAndLoadModel`
-- `easy indexTTSEmotionVector`
-- `easy indexTTSGenerate`
-
-**可变部分**（部分 workflow 才有）：
-- `easy indexTTSEmotionMerge` —— 3/4 个有
-- `SaveAudio` —— 2/4 个有
-- `SaveAudioMP3` —— 2/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `SaveImage`
+- `e5cfe5ba-2ae0-4bc4-869f-ab2228cb44d3`
 
 ## 典型参数
 

@@ -1,48 +1,40 @@
 ---
 name: unknown_workflow_video_40
 type: Unknown Workflow
-frequency: 4
+frequency: 7
 level: moderate
-coverage: 0.438
-common_nodes: [Fast Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageScaleToTotalPixels, Int, MathExpression_UTK, Mute / Bypass Repeater (rgthree), PreviewImage, RIFE VFI, SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoSource, easy showAnything]
+coverage: 0.744
+common_nodes: [GetVideoComponents, ImageFromBatch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadVideo, PreviewAny, RH_Astra, SaveVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [数字人/数字人/图片放大自用_2085968508910919682.json, 数字人/数字人/视频高清放大+补帧：SeedVR2_2072595685005938689.json, 视频生成/文生视频/视频高清放大+补帧_SeedVR2_2098967902610354178.json, 视频生成/文生视频/视频高清放大+补帧_SeedVR2_2100163119380258817.json]
+members: [平台全量/Topaz_极速高清放大_Iris版人像_2100401385111113730.json, 平台全量/Topaz_极速高清放大_Iris版人像_2100489875375091713.json, 平台全量/视频高清放大！极速！Topaz_-_Iris版_2100402497306316801.json, 平台全量/视频高清放大！极速！Topaz_-_Iris版_2100490913058476034.json, 数字人/数字人/Topaz 极速高清放大 Iris版（人像）_2099629914403205121.json, 数字人/数字人/视频高清放大！极速！Topaz - Iris版_2099660465621258241.json, 视频生成/图生视频/视频超分_TopazIris_2099775194104684546.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_40
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/图片放大自用_2085968508910919682.json、数字人/数字人/视频高清放大+补帧：SeedVR2_2072595685005938689.json、视频生成/文生视频/视频高清放大+补帧_SeedVR2_2098967902610354178.json、视频生成/文生视频/视频高清放大+补帧_SeedVR2_2100163119380258817.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/Topaz_极速高清放大_Iris版人像_2100401385111113730.json、平台全量/Topaz_极速高清放大_Iris版人像_2100489875375091713.json、平台全量/视频高清放大！极速！Topaz_-_Iris版_2100402497306316801.json、平台全量/视频高清放大！极速！Topaz_-_Iris版_2100490913058476034.json、数字人/数字人/Topaz 极速高清放大 Iris版（人像）_2099629914403205121.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：44%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Fast Bypasser (rgthree)`
-- `GetImageSizeAndCount`
-- `GetNode`
-- `ImageScaleToTotalPixels`
+全部 7 个 workflow 都包含：
+- `GetVideoComponents`
+- `ImageFromBatch`
 - `Int`
-- `MathExpression_UTK`
-- `Mute / Bypass Repeater (rgthree)`
-- `PreviewImage`
-- `RIFE VFI`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadVideo`
+- `PreviewAny`
+- `RH_Astra`
+- `SaveVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoSource`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 2/4 个有
+- `ImageConcatMulti` —— 3/7 个有
 
 ## 典型参数
 

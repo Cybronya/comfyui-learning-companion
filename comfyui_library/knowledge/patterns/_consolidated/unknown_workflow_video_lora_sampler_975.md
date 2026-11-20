@@ -3,74 +3,68 @@ name: unknown_workflow_video_lora_sampler_975
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.8745
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CR Text, ComfyMathExpression, CreateVideo, Fast Groups Bypasser (rgthree), ImageResizeKJv2, ImageScaleBy, KSamplerSelect, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadImage, Lora Loader Stack (rgthree), LoraLoaderModelOnly, MiniMaxH3ConcatAVLatent, MiniMaxH3ContextIR, MiniMaxH3HybridLoader, MiniMaxH3ImageToVideo, MiniMaxH3MediaLoaderFantastic, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceSplitter, MiniMaxH3ReferenceToVideo, MiniMaxH3ResolutionSelector, MiniMaxH3TurboLoRA, MiniMaxH3TurboSampler, MiniMaxH3UnifiedToVideo, Minimax_H3_Context_IR, PreviewAny, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, Seed (rgthree), UNETLoader, VAEDecode, VAEDecodeAudio, VAEEncode, VAEEncodeAudio, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
+coverage: 0.4075
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DiffusionModelLoaderKJ, GetNode, ImageBatchMulti, ImageResizeKJv2, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SamplerCustom, SetNode, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanContextWindowsManual, WanSCAILToVideo, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/开源版MiniMaxH3-文生图生参考极速生视频全能精品工作流_2090239784139706369.json, 视频生成/图生视频/开源版MiniMaxH3-文生图生参考极速生视频全能精品工作流_2102564364179042306.json]
+members: [平台全量/Scail2 动作迁移（多参考图）超级加长版_2068968411945852930.json, 平台全量/官流scail2 上下文长视频(适合大显存，大内存）_2072520377162616833.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_975
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/开源版MiniMaxH3-文生图生参考极速生视频全能精品工作流_2090239784139706369.json、视频生成/图生视频/开源版MiniMaxH3-文生图生参考极速生视频全能精品工作流_2102564364179042306.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/Scail2 动作迁移（多参考图）超级加长版_2068968411945852930.json、平台全量/官流scail2 上下文长视频(适合大显存，大内存）_2072520377162616833.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：41%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CR Text`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DiffusionModelLoaderKJ`
+- `GetNode`
+- `ImageBatchMulti`
 - `ImageResizeKJv2`
-- `ImageScaleBy`
+- `Int`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM`
-- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `Lora Loader Stack (rgthree)`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ConcatAVLatent`
-- `MiniMaxH3ContextIR`
-- `MiniMaxH3HybridLoader`
-- `MiniMaxH3ImageToVideo`
-- `MiniMaxH3MediaLoaderFantastic`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceSplitter`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3ResolutionSelector`
-- `MiniMaxH3TurboLoRA`
-- `MiniMaxH3TurboSampler`
-- `MiniMaxH3UnifiedToVideo`
-- `Minimax_H3_Context_IR`
-- `PreviewAny`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `Seed (rgthree)`
-- `UNETLoader`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `SamplerCustom`
+- `SetNode`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAEEncode`
-- `VAEEncodeAudio`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `VHS_VideoInfo`
+- `WanContextWindowsManual`
+- `WanSCAILToVideo`
 - `easy showAnything`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+
+**可变部分**（部分 workflow 才有）：
+- `BatchCount+` —— 1/2 个有
+- `ColorTransfer` —— 1/2 个有
+- `ComfyMathExpression` —— 1/2 个有
+- `Float to Int` —— 1/2 个有
+- `FloatConstant` —— 1/2 个有
+- `ImageBatchExtendWithOverlap` —— 1/2 个有
+- `ImpactControlBridge` —— 1/2 个有
+- `ImpactSwitch` —— 1/2 个有
+- `LazySwitchKJ` —— 1/2 个有
+- `PrimitiveInt` —— 1/2 个有
+- `VHS_SplitImages` —— 1/2 个有
+- `WanChunkFeedForward` —— 1/2 个有
+- `easy anythingIndexSwitch` —— 1/2 个有
+- `easy compare` —— 1/2 个有
+- `easy float` —— 1/2 个有
 
 ## 典型参数
 

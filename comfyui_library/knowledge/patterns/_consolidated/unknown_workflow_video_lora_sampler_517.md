@@ -1,62 +1,82 @@
 ---
 name: unknown_workflow_video_lora_sampler_517
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.7738
-common_nodes: [CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 6
+level: strong
+coverage: 0.932333
+common_nodes: [BasicScheduler, CR Text, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, ImpactInt, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, SimpleMath+, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/文生视频/WAN2.2-文生视频_2018966000456175618.json, 视频生成/文生视频/WAN2.2文生视频_1951636109178646529.json, 视频生成/文生视频/Wan2.2_-KJ-6步加速文生视频_1950379943495647234.json, 视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2055563749574103041.json, 视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2056813400818274305.json]
+members: [视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2059081258998784002.json, 视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2080902822853435394.json, 视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成_2077018841644888066.json, 视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成【syqiangk】_2067970994802872322.json, 视频生成/图生视频/LTX2.3图生视频_2078005941840207873.json, 视频生成/图生视频/新玩意LTX2.3+sulphur 图生视频_2059322431231324161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_517
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/WAN2.2-文生视频_2018966000456175618.json、视频生成/文生视频/WAN2.2文生视频_1951636109178646529.json、视频生成/文生视频/Wan2.2_-KJ-6步加速文生视频_1950379943495647234.json、视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2055563749574103041.json、视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2056813400818274305.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2059081258998784002.json、视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2080902822853435394.json、视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成_2077018841644888066.json、视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成【syqiangk】_2067970994802872322.json、视频生成/图生视频/LTX2.3图生视频_2078005941840207873.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `LoadWanVideoT5TextEncoder`
+全部 6 个 workflow 都包含：
+- `BasicScheduler`
+- `CR Text`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `ImpactInt`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `SimpleMath+`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 3/5 个有
-- `Int` —— 3/5 个有
-- `MathExpression|pysssss` —— 3/5 个有
-- `easy seed` —— 3/5 个有
-- `ImpactInt` —— 2/5 个有
-- `JWInteger` —— 2/5 个有
-- `LoadImage` —— 2/5 个有
-- `MuyeTextEditOutput` —— 2/5 个有
-- `WanVideoScheduler` —— 2/5 个有
-- `WanVideoSigmaToStep` —— 2/5 个有
-- `DF_Integer` —— 1/5 个有
-- `Float to Int` —— 1/5 个有
-- `MathExpression_UTK` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
+- `PromptRelaySmartEncode` —— 5/6 个有
+- `ShowText|pysssss` —— 5/6 个有
+- `Dapao_LlamaChat` —— 4/6 个有
+- `孤海注释` —— 4/6 个有
+- `LoaderGGUF` —— 2/6 个有
+- `CLIPTextEncode` —— 1/6 个有
+- `CR Text Replace` —— 1/6 个有
+- `Fast Bypasser (rgthree)` —— 1/6 个有
+- `GetNode` —— 1/6 个有
+- `ImageFromBatch` —— 1/6 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `RH_LLMAPI_Pro_Node` —— 1/6 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
+- `SetNode` —— 1/6 个有
+- `VHS_LoadVideo` —— 1/6 个有
+- `easy convertAnything` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 489 | 489 - 489 | 6 | 100% |
+| 高度 | 25 | 24 - 25 | 6 | 98% |
 
 ## 常见问题
 
@@ -64,4 +84,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 489，观测区间 489 - 489，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 24 - 25，6 个样本，取值集中（一致性 98%）

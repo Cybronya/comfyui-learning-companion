@@ -1,36 +1,39 @@
 ---
 name: unknown_workflow_generic_136
 type: Unknown Workflow
-frequency: 13
+frequency: 15
 level: moderate
-coverage: 0.936846
-common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage]
+coverage: 0.986
+common_nodes: [IndexTTS2Run, LoadAudio, SaveAudio]
 problems: []
 missing: []
-members: [图片生成/图生图/四宫格新_2041098171077627906.json, 图片生成/图生图/图生图系列_2043957570422972417.json, 图片生成/图生图/摆摊小猫专用 剧照_分镜图（9_16）_2046891999151792130.json, 图片生成/图生图/最新全能图片v2 gemini-3.1-flash-image-preview_2037179049432322050.json, 图片生成/图生图/服装印花提取2k四方图_2046064231744806914.json, 图片生成/文生图/SD专用资产生成（角色+场景+三宫图+九宫图）_2037112002576912386.json, 图片生成/文生图/SD专用资产生成（角色+场景+三宫图+九宫图）_2041114050091819009.json, 图片生成/文生图/SD专用资产生成（角色+场景+三宫图+九宫图）_2044296295900254209.json, 图片生成/文生图/SD专用资产生成（角色+场景+三宫图+九宫图）_2049363873882443778.json, 图片生成/文生图/全能图像V2整合-文生图-单图-双图-多图编辑_2027198764309549058.json, 图片生成/文生图/全能图片2.0低价快速版-图生图-文生图_2051128165120135170.json, 图片生成/文生图/资产生成（3宫图）_2044691451900071938.json, 图片生成/文生图/香2出图_2038963509093994498.json]
+members: [数字人/数字人/最强语音克隆-indexTTS2_1965654319997571074.json, 数字人/数字人/音频-单人文本配音-IndexTTS2_1973651080347299841.json, 数字人/数字人/音频-双人文本配音-IndexTTS2_1973654275630960642.json, 视频生成/文生视频/tts2双人对话，单人对话带音色_2019382320083509250.json, 音频生成/音频生成/IndexTTS2-单人-情感-声音克隆_2058593812238389250.json, 音频生成/音频生成/IndexTTS2-声音克隆_1968934120409686018.json, 音频生成/音频生成/IndexTTS2-声音克隆_1979001378074955778.json, 音频生成/音频生成/IndexTTS2-声音克隆_1980084459066265601.json, 音频生成/音频生成/IndexTTS2-声音克隆_2003281991577559041.json, 音频生成/音频生成/IndexTTS2_1998361145272623105.json, 音频生成/音频生成/IndexTTS2_2015293179448266754.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2039948812336242690.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2043572634868256769.json, 音频生成/音频生成/IndexTTS2_情感向量控制+支持双人对话_2064259148337995778.json, 音频生成/音频生成/IndexTTS2_更专业的情感向量控制_语音_音色克隆_2012710824451772417.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_136
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/四宫格新_2041098171077627906.json、图片生成/图生图/图生图系列_2043957570422972417.json、图片生成/图生图/摆摊小猫专用 剧照_分镜图（9_16）_2046891999151792130.json、图片生成/图生图/最新全能图片v2 gemini-3.1-flash-image-preview_2037179049432322050.json、图片生成/图生图/服装印花提取2k四方图_2046064231744806914.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（数字人/数字人/最强语音克隆-indexTTS2_1965654319997571074.json、数字人/数字人/音频-单人文本配音-IndexTTS2_1973651080347299841.json、数字人/数字人/音频-双人文本配音-IndexTTS2_1973654275630960642.json、视频生成/文生视频/tts2双人对话，单人对话带音色_2019382320083509250.json、音频生成/音频生成/IndexTTS2-单人-情感-声音克隆_2058593812238389250.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
-- `LoadImage`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
+全部 15 个 workflow 都包含：
+- `IndexTTS2Run`
+- `LoadAudio`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 11/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 11/13 个有
-- `Text` —— 2/13 个有
+- `CR Text` —— 14/15 个有
+- `Text Multiline` —— 14/15 个有
+- `PreviewAudio` —— 11/15 个有
+- `CR Prompt Text` —— 4/15 个有
+- `SaveAudioMP3` —— 2/15 个有
+- `LoadImage` —— 1/15 个有
 
 ## 典型参数
 

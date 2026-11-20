@@ -1,38 +1,40 @@
 ---
 name: unknown_workflow_generic_426
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.837167
-common_nodes: [CR Prompt Text, LoadVideo, RH_LLMAPI_Pro_Node, SaveVideo, ShellAgentPluginOutputText]
+coverage: 0.876571
+common_nodes: [DF_Image_scale_to_side, ImageConcanate, JjkText, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModel, LoadImage, PreviewBridge, RH_ComfyFluxKontext, SaveImage]
 problems: []
 missing: []
-members: [图片生成/反推提示词/DG_视频拆析_2025467829289492481.json, 图片生成/反推提示词/SeeDance 2.0爆款视频反推_2020689534173847554.json, 图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2038520232981041153.json, 图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2044864817202208769.json, 图片生成/反推提示词/无限画布-视频反推-gemini-3_2068845275380281346.json, 图片生成/反推提示词/视频反推-复刻爆款视频脚本分析输出提示词-超能视频2.0_2022603238289182722.json]
+members: [图片生成/图生图/Flux Kontext  电商模特海报设计  手拿产品工作流 V1.0_1986739083588349953.json, 图片生成/图生图/Flux Kontext 多图融合｜电商海报_1929718057047068673.json, 图片生成/图生图/Flux Kontext 明星产品展示_1930438743898099714.json, 图片生成/图生图/Flux Kontext 明星代言｜手持产品替换_1931890647865995266.json, 图片生成/图生图/Flux Kontext 材质替换_1930568437767262209.json, 图片生成/图生图/Flux Kontext 模特眼镜大全｜产品展示_1935147224680865794.json, 图片生成/图生图/Flux Kontext 电商手持产品替换_1931909340028928001.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_426
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/DG_视频拆析_2025467829289492481.json、图片生成/反推提示词/SeeDance 2.0爆款视频反推_2020689534173847554.json、图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2038520232981041153.json、图片生成/反推提示词/gemini-3短视频JSOn精准反推视频ai提示词 SeeDance 2.0爆款视频分析高级版V2_2044864817202208769.json、图片生成/反推提示词/无限画布-视频反推-gemini-3_2068845275380281346.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Flux Kontext  电商模特海报设计  手拿产品工作流 V1.0_1986739083588349953.json、图片生成/图生图/Flux Kontext 多图融合｜电商海报_1929718057047068673.json、图片生成/图生图/Flux Kontext 明星产品展示_1930438743898099714.json、图片生成/图生图/Flux Kontext 明星代言｜手持产品替换_1931890647865995266.json、图片生成/图生图/Flux Kontext 材质替换_1930568437767262209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CR Prompt Text`
-- `LoadVideo`
-- `RH_LLMAPI_Pro_Node`
-- `SaveVideo`
-- `ShellAgentPluginOutputText`
+全部 7 个 workflow 都包含：
+- `DF_Image_scale_to_side`
+- `ImageConcanate`
+- `JjkText`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModel`
+- `LoadImage`
+- `PreviewBridge`
+- `RH_ComfyFluxKontext`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 5/6 个有
-- `LoadImage` —— 2/6 个有
-- `ShowText` —— 1/6 个有
+- `PreviewImage` —— 2/7 个有
 
 ## 典型参数
 

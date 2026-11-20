@@ -1,53 +1,69 @@
 ---
 name: unknown_workflow_sampler_clip_unet_230
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.911
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSamplerSelect, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: strong
+coverage: 0.901714
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), KSamplerAdvanced, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, SaveImage, UNETLoader, VAEDecode, VAELoader, easy promptList]
 problems: []
 missing: []
-members: [图片生成/文生图/FLUX3加速版文生图_2111042458221113346.json, 图片生成/文生图/FLUX3加速版文生图_2111059202943836161.json, 图片生成/文生图/FLUX3加速版文生图v1_2110849481448181762.json, 图片生成/文生图/FLUX3文生图sd-int8-提示词PE优化版_2111437431227641858.json, 图片生成/文生图/FLUX3文生图sd-int8-提示词pe优化版-v2_2111500134445043714.json, 图片生成/文生图/FLUX3文生图sd-int8-提示词pe优化版_2111318686400335873.json]
+members: [图片生成/文生图/Flux2-Klein-9B-True-V2 生图工作流_2038964016755773441.json, 图片生成/文生图/VividMuse CyberRealistic VS GonzaLomo ZPop VS Z-Image-Turbo_2062871268139028481.json, 图片生成/文生图/VividMuse GonzaLomo ZPop VS Z-Image-Turbo_2061802154381369345.json, 图片生成/文生图/VividMuse Z-Image MJ风格_2040326843944931330.json, 图片生成/文生图/VividMuse Z-Image MJ风格_2096074367687024642.json, 图片生成/文生图/VividMuse Z-Image-Turbo-PurpleGrainy_2043272930422956033.json, 图片生成/文生图/Z-Image VS  Qwen Image 2512 VS FLUX2. Klein_2020835344152793089.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_230
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/FLUX3加速版文生图_2111042458221113346.json、图片生成/文生图/FLUX3加速版文生图_2111059202943836161.json、图片生成/文生图/FLUX3加速版文生图v1_2110849481448181762.json、图片生成/文生图/FLUX3文生图sd-int8-提示词PE优化版_2111437431227641858.json、图片生成/文生图/FLUX3文生图sd-int8-提示词pe优化版-v2_2111500134445043714.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/Flux2-Klein-9B-True-V2 生图工作流_2038964016755773441.json、图片生成/文生图/VividMuse CyberRealistic VS GonzaLomo ZPop VS Z-Image-Turbo_2062871268139028481.json、图片生成/文生图/VividMuse GonzaLomo ZPop VS Z-Image-Turbo_2061802154381369345.json、图片生成/文生图/VividMuse Z-Image MJ风格_2040326843944931330.json、图片生成/文生图/VividMuse Z-Image MJ风格_2096074367687024642.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `KSamplerSelect`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ConditioningZeroOut`
+- `EmptyLatentImage`
+- `Fast Groups Bypasser (rgthree)`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy promptList`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 3/6 个有
-- `easy showAnything` —— 3/6 个有
-- `QwenPERewriteT8` —— 2/6 个有
-- `孤海注释` —— 2/6 个有
-- `Flux3PELoader` —— 1/6 个有
-- `Flux3PromptEnhance` —— 1/6 个有
-- `GetLatentSize` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `Seed (rgthree)` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 5/7 个有
+- `PreviewImage` —— 4/7 个有
+- `SigmasPreview` —— 4/7 个有
+- `BasicScheduler` —— 3/7 个有
+- `CFGGuider` —— 2/7 个有
+- `Flux2Scheduler` —— 2/7 个有
+- `KSamplerSelect` —— 2/7 个有
+- `RandomNoise` —— 2/7 个有
+- `SamplerCustomAdvanced` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 1/7 个有
+- `LoadImage` —— 1/7 个有
+- `VAEEncode` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 7 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 7 | 100% |
+| 采样算法 | 1 | 1 - 1 | 7 | 100% |
+| 调度器 | euler | - | 7 | 86% |
+| 重绘幅度 | FlowMatchEulerDiscreteScheduler | - | 7 | 71% |
+| 宽度 | 1536 | 1024 - 1536 | 7 | 85% |
+| 高度 | 2048 | 1536 - 2048 | 7 | 88% |
 
 ## 常见问题
 
@@ -55,4 +71,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，7 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，7 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，7 个样本，一致性 86%
+- 重绘幅度 最常用 FlowMatchEulerDiscreteScheduler，7 个样本，一致性 71%
+- 宽度 中位数 1536，观测区间 1024 - 1536，7 个样本，取值集中（一致性 85%）
+- 高度 中位数 2048，观测区间 1536 - 2048，7 个样本，取值集中（一致性 88%）

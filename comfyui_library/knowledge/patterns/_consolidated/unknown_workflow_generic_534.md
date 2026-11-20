@@ -1,40 +1,40 @@
 ---
 name: unknown_workflow_generic_534
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.825
-common_nodes: [CR Prompt Text, LoadImage, MiniMaxH3PromptEnhancerT8, PreviewAny, RH_Translator, easy saveText]
+coverage: 0.656167
+common_nodes: [CR Prompt Text, ImageConcatMulti, LoadImage, PDIMAGE_LongerSize, SaveImage, Text Concatenate, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2095714717129068546.json, 图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2108079922202890241.json, 图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json, 数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json, 视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json]
+members: [图片生成/图生图/(RH版)全能图片 Pro图九宫格分镜分组生成版V1_2021493176732749825.json, 图片生成/图生图/(同步转异步-基准0.2)全能图片 Pro图九宫格分镜分组生成版V1(贞贞AI工坊)_2021231612385562625.json, 图片生成/图生图/全能图片 Pro_九宫格分镜漫画_2021848316312559618.json, 图片生成/图生图/全能图片pro-九宫格分镜制作超能视频2.0（250214）_2022561805540790273.json, 图片生成/文生图/(RH版)全能图片 Pro九宫格短剧分镜图250212_2021633699850227713.json, 平台全量/🍌 Pro 九宫格分镜、分组_2021544762171461633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_534
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2095714717129068546.json、图片生成/反推提示词/H3提示词增强器（Qwen3.8本地版）_2108079922202890241.json、图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json、数字人/数字人/MinimaxH3提示词增强器_2099365159876784129.json、视频生成/图生视频/H3提示词增强器Qwen3.8本地版_2110911233087070210.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/(RH版)全能图片 Pro图九宫格分镜分组生成版V1_2021493176732749825.json、图片生成/图生图/(同步转异步-基准0.2)全能图片 Pro图九宫格分镜分组生成版V1(贞贞AI工坊)_2021231612385562625.json、图片生成/图生图/全能图片 Pro_九宫格分镜漫画_2021848316312559618.json、图片生成/图生图/全能图片pro-九宫格分镜制作超能视频2.0（250214）_2022561805540790273.json、图片生成/文生图/(RH版)全能图片 Pro九宫格短剧分镜图250212_2021633699850227713.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CR Prompt Text`
+- `ImageConcatMulti`
 - `LoadImage`
-- `MiniMaxH3PromptEnhancerT8`
-- `PreviewAny`
-- `RH_Translator`
-- `easy saveText`
+- `PDIMAGE_LongerSize`
+- `SaveImage`
+- `Text Concatenate`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `easy showAnything` —— 4/5 个有
-- `SaveImage` —— 3/5 个有
-- `easy imageSave` —— 2/5 个有
-- `CM_FloatToInt` —— 1/5 个有
+- `RH_Nano_Banana2_Image2Image` —— 5/6 个有
+- `Comfly_api_set` —— 1/6 个有
+- `Comfly_nano_banana2_edit_S2A` —— 1/6 个有
 
 ## 典型参数
 

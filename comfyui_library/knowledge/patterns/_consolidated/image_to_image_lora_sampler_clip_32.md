@@ -1,33 +1,36 @@
 ---
 name: image_to_image_lora_sampler_clip_32
 type: Image To Image
-frequency: 8
-level: weak
-coverage: 0.96675
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 10
+level: moderate
+coverage: 0.9418
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen2512真实人像质感御姐美女_2038803931576410113.json, 图片生成/图生图/Qwen2512真实人像质感御姐美女_2040669755073372161.json, 图片生成/图生图/Qwen2512真实人像质感御姐美女_2040674015815147522.json, 图片生成/图生图/Qwen_Image_Layerd加速分层图像【图生图】_2003447063511744514.json, 图片生成/图生图/Z-image-base-极速洗图_2021931573834158081.json, 图片生成/图生图/anima edit 2秒（提示词待优化）_2061288008342663170.json, 图片生成/图生图/psd生成器，Qwen+Layerd分层图像，生成带透明通道的图层，直接在ps使用，生成psd_2008809805498032129.json, 图片生成/图生图/新版psd生成器，Qwen+Layerd分层图像，生成带透明通道的图层，直接在ps使用，生成psd_2056225742748389377.json]
+members: [平台全量/Kontext 二次元-吉卜力-写实风格转换_1938490800030285826.json, 平台全量/Kontext 修改文字_1938542591627714561.json, 平台全量/Kontext 全部_局部擦除物体_1938501426664660993.json, 平台全量/Kontext 古风修图_1952274429877366786.json, 平台全量/Kontext 图片去水印_1938618346013446146.json, 平台全量/Kontext 扩图_图像边界外扩_1945392873346932738.json, 平台全量/Kontext 改变发色_1938534277556404226.json, 平台全量/Kontext 改变图像光线_1938552886198784001.json, 平台全量/Kontext 老照片修复_1938607359499362306.json, 平台全量/kontext扩图简化版_1946211160620457986.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_32
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen2512真实人像质感御姐美女_2038803931576410113.json、图片生成/图生图/Qwen2512真实人像质感御姐美女_2040669755073372161.json、图片生成/图生图/Qwen2512真实人像质感御姐美女_2040674015815147522.json、图片生成/图生图/Qwen_Image_Layerd加速分层图像【图生图】_2003447063511744514.json、图片生成/图生图/Z-image-base-极速洗图_2021931573834158081.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/Kontext 二次元-吉卜力-写实风格转换_1938490800030285826.json、平台全量/Kontext 修改文字_1938542591627714561.json、平台全量/Kontext 全部_局部擦除物体_1938501426664660993.json、平台全量/Kontext 古风修图_1952274429877366786.json、平台全量/Kontext 图片去水印_1938618346013446146.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：97%
+- **样本数**：10
+- **可信度**：中等可信
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
+全部 10 个 workflow 都包含：
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -35,40 +38,36 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 7/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/8 个有
-- `EmptyHunyuanLatentVideo` —— 3/8 个有
-- `LatentCutToBatch` —— 3/8 个有
-- `Note _O` —— 3/8 个有
-- `ReferenceLatent` —— 3/8 个有
-- `scale` —— 3/8 个有
-- `Float` —— 2/8 个有
-- `ImpactInt` —— 2/8 个有
-- `MathExpression|pysssss` —— 2/8 个有
-- `ApplyCosmosReferenceLatent` —— 1/8 个有
-- `JWInteger` —— 1/8 个有
+- `easy positive` —— 7/10 个有
+- `FluxKontextImageScale` —— 3/10 个有
+- `DF_Integer` —— 1/10 个有
+- `ImagePadForOutpaint` —— 1/10 个有
+- `ImagePadKJ` —— 1/10 个有
+- `ImpactSwitch` —— 1/10 个有
+- `JjkText` —— 1/10 个有
+- `easy promptConcat` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 1 - 50 | 8 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 88% |
-| 调度器 | simple | - | 8 | 62% |
-| 重绘幅度 | 0.775 | 0.5 - 1 | 8 | 68% |
+| 采样步数 | 8 | 6 - 27 | 10 | 40% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 90% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 1 - 50，8 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 88%
-- 调度器 最常用 simple，8 个样本，一致性 62%
-- 重绘幅度 中位数 0.775，观测区间 0.5 - 1，8 个样本
-- 高发问题（7/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 6 - 27，10 个样本，取值分散，一致性仅 40%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（8/10 个样本）：Steps较低可能导致细节不足

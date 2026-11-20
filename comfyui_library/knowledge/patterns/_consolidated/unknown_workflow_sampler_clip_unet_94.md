@@ -1,72 +1,73 @@
 ---
 name: unknown_workflow_sampler_clip_unet_94
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.932727
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoadImage, Qwen3_VQA, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.95575
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Z-Image 洗海报_1996173832136409090.json, 图片生成/图生图/Z-image_zimage图生图_超真实_提示词反推_洗图_2039230075119341569.json, 图片生成/图生图/z-image图像反推+高清增强_1996478328385191937.json, 图片生成/图生图/图生图_超真实_Z-image_zimage_2021100118765735937.json, 图片生成/图生图/提示词反推 洗图 图生图 Z-image zimage_2041781839127388162.json, 图片生成/图生图/提示词反推 洗图 图生图 Z-image zimage_2042084929978245121.json, 图片生成/图生图/提示词反推 洗图 图生图 Z-image zimage_2095381225857966082.json, 图片生成/图生图/提示词反推 洗图 图生图 qwen3 Z-image zimage_2043979370460614658.json, 图片生成/图生图/提示词反推_图生图_超真实_无AI感_Z-image_zimage_2021051506253893634.json, 图片生成/图生图/洗图 反推  提示词 图生图 Z-image zimage_2043316670013378562.json, 图片生成/文生图/Z image base万能真实渲染电商图_2029159843000487937.json]
+members: [图片生成/图生图/PS专用 klein 9b 扩图_2071036709902569474.json, 图片生成/图生图/Q版色稿转成品_2092805656247099393.json, 图片生成/图生图/flux 2 klein edit single image 单图编辑_2044446355933896705.json, 图片生成/图生图/flux klein单图编辑_2085594588139581442.json, 图片生成/图生图/flux klein双图编辑工作流_2085595709289623554.json, 图片生成/图生图/flux klein双图编辑工作流_2105577595982143490.json, 图片生成/图生图/flux klein双图编辑工作流_2105650140253089794.json, 图片生成/图生图/flux-2-klein-4b单图编辑_2033454491990761473.json, 图片生成/图生图/flux-2-klein-9b模型图像编辑_2094963430150201346.json, 图片生成/图生图/flux2 klein 9B 4视图_2050825970894028801.json, 图片生成/图生图/flux2 klein扩图工作流_2016349875780194305.json, 图片生成/图生图/kelin精修V2_2061361375989035010.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_94
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Z-Image 洗海报_1996173832136409090.json、图片生成/图生图/Z-image_zimage图生图_超真实_提示词反推_洗图_2039230075119341569.json、图片生成/图生图/z-image图像反推+高清增强_1996478328385191937.json、图片生成/图生图/图生图_超真实_Z-image_zimage_2021100118765735937.json、图片生成/图生图/提示词反推 洗图 图生图 Z-image zimage_2041781839127388162.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/PS专用 klein 9b 扩图_2071036709902569474.json、图片生成/图生图/Q版色稿转成品_2092805656247099393.json、图片生成/图生图/flux 2 klein edit single image 单图编辑_2044446355933896705.json、图片生成/图生图/flux klein单图编辑_2085594588139581442.json、图片生成/图生图/flux klein双图编辑工作流_2085595709289623554.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `KSamplerSelect`
 - `LoadImage`
-- `Qwen3_VQA`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 10/11 个有
-- `ShowText|pysssss` —— 9/11 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/11 个有
-- `SeedVR2` —— 2/11 个有
-- `CR Text` —— 1/11 个有
-- `ConditioningZeroOut` —— 1/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `GetImageSizeAndCount` —— 1/11 个有
-- `LoraLoaderModelOnly` —— 1/11 个有
-- `QwenVisionNode` —— 1/11 个有
-- `SeedVR2BlockSwap` —— 1/11 个有
+- `EmptyFlux2LatentImage` —— 11/12 个有
+- `ConditioningZeroOut` —— 9/12 个有
+- `Image Comparer (rgthree)` —— 5/12 个有
+- `LoraLoaderModelOnly` —— 3/12 个有
+- `PreviewImage` —— 3/12 个有
+- `String Literal` —— 3/12 个有
+- `ColorMatch` —— 2/12 个有
+- `ImageScale` —— 2/12 个有
+- `Anything Everywhere3` —— 1/12 个有
+- `CheckpointLoaderSimple` —— 1/12 个有
+- `DrawMaskOnImage` —— 1/12 个有
+- `FlexLoraLoaderModelOnly` —— 1/12 个有
+- `ImageColorMatch+` —— 1/12 个有
+- `ImagePadForOutpaint` —— 1/12 个有
+- `ImpactGaussianBlurMask` —— 1/12 个有
+- `MaskPreview+` —— 1/12 个有
+- `PixelSnapping` —— 1/12 个有
+- `TextBoxMira` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 50 | 9 - 50 | 11 | 59% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 4 | 11 | 67% |
-| 采样算法 | res_multistep | - | 11 | 82% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 9 - 50，11 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 4，11 个样本
-- 采样算法 最常用 res_multistep，11 个样本，一致性 82%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

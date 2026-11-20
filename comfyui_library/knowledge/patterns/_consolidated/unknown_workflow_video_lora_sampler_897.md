@@ -1,58 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_897
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9275
-common_nodes: [CreateCFGScheduleFloatList, Display Any (rgthree), INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy globalSeed]
+frequency: 3
+level: moderate
+coverage: 0.569
+common_nodes: [GetImageRangeFromBatch, GetNode, GrowMaskWithBlur, ImageConcanate, ImageResizeKJv2, LoadImage, MaskPreview, MochaEmbeds, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 图生视频_kj_多Lora加速版+画质调色_1965423072939491330.json, 视频生成/图生视频/wan2.2 KJ版图生视频-低显存工作流_1950109940024262657.json]
+members: [视频生成/图生视频/mocha_指定人物_1990430709800198145.json, 视频生成/图生视频/mocha单人物替换，无需标点_1983354803063562242.json, 视频生成/图生视频/mocha视频角色替换人物替换更换人物更换任意角色工作流_2055888329194917889.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_897
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频_kj_多Lora加速版+画质调色_1965423072939491330.json、视频生成/图生视频/wan2.2 KJ版图生视频-低显存工作流_1950109940024262657.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/mocha_指定人物_1990430709800198145.json、视频生成/图生视频/mocha单人物替换，无需标点_1983354803063562242.json、视频生成/图生视频/mocha视频角色替换人物替换更换人物更换任意角色工作流_2055888329194917889.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `Display Any (rgthree)`
-- `INTConstant`
+全部 3 个 workflow 都包含：
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `ImageConcanate`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
+- `MaskPreview`
+- `MochaEmbeds`
 - `PreviewImage`
+- `SetNode`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
-- `easy globalSeed`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/2 个有
-- `ColorMatch` —— 1/2 个有
-- `ImpactInt` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `MathExpression_UTK` —— 1/2 个有
-- `Text Concatenate` —— 1/2 个有
-- `Wan22PromptSelector` —— 1/2 个有
-- `WanVideoEnhanceAVideo` —— 1/2 个有
-- `WanVideoLoraSelectMulti` —— 1/2 个有
-- `WanVideoSLG` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `CM_FloatToInt` —— 2/3 个有
+- `DownloadAndLoadSAM2Model` —— 2/3 个有
+- `OnnxDetectionModelLoader` —— 2/3 个有
+- `PoseAndFaceDetection` —— 2/3 个有
+- `Sam2Segmentation` —— 2/3 个有
+- `easy float` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `PointsEditor` —— 1/3 个有
+- `PrimitiveStringMultiline` —— 1/3 个有
+- `RMBG` —— 1/3 个有
+- `Sa2VANodeTpl` —— 1/3 个有
+- `easy cleanGpuUsed` —— 1/3 个有
 
 ## 典型参数
 
@@ -64,4 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

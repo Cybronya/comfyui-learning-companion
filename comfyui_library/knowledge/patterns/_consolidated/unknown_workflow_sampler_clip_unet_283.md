@@ -2,61 +2,64 @@
 name: unknown_workflow_sampler_clip_unet_283
 type: Unknown Workflow
 frequency: 5
-level: moderate
-coverage: 0.9428
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+level: strong
+coverage: 0.873
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/【潮玩盲盒】可爱卡通黏土风_1984515249296523265.json, 图片生成/文生图/中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801.json, 图片生成/文生图/去AI味！Flux_Krea文生图_1952185609727234050.json, 图片生成/文生图/沙雕动画都市背景_1933850253839749122.json, 图片生成/文生图/特密文生图工作流_1962372606101950465.json]
+members: [comfyui-workflow-templates-json/flux_canny_model_example.json, comfyui-workflow-templates-json/flux_fill_outpaint_example.json, 图片生成/图生图/@flux-fill扩图_1959879943473803266.json, 图片生成/图生图/Flux无缝扩图V2_1955240957747740674.json, 图片生成/文生图/OneReward扩图_1989998999480487937.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_283
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/【潮玩盲盒】可爱卡通黏土风_1984515249296523265.json、图片生成/文生图/中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801.json、图片生成/文生图/去AI味！Flux_Krea文生图_1952185609727234050.json、图片生成/文生图/沙雕动画都市背景_1933850253839749122.json、图片生成/文生图/特密文生图工作流_1962372606101950465.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/flux_canny_model_example.json、comfyui-workflow-templates-json/flux_fill_outpaint_example.json、图片生成/图生图/@flux-fill扩图_1959879943473803266.json、图片生成/图生图/Flux无缝扩图V2_1955240957747740674.json、图片生成/文生图/OneReward扩图_1989998999480487937.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
 - `CLIPTextEncode`
 - `DualCLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `FluxGuidance`
+- `KSampler`
+- `LoadImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageUpscaleWithModel` —— 4/5 个有
-- `UpscaleModelLoader` —— 4/5 个有
-- `LoraLoaderModelOnly` —— 3/5 个有
-- `RH_Translator` —— 3/5 个有
-- `FluxGuidance` —— 1/5 个有
-- `ImageScaleBy` —— 1/5 个有
-- `JoinStrings` —— 1/5 个有
-- `LoraLoader` —— 1/5 个有
-- `ShowText` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `ConditioningZeroOut` —— 4/5 个有
+- `ImagePadForOutpaint` —— 4/5 个有
+- `InpaintModelConditioning` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `DifferentialDiffusion` —— 3/5 个有
+- `MaskToImage` —— 3/5 个有
+- `Canny` —— 1/5 个有
+- `FeatheredMask` —— 1/5 个有
+- `ImageCompositeMasked` —— 1/5 个有
+- `ImageConcatMulti` —— 1/5 个有
+- `ImageStitch` —— 1/5 个有
+- `InstructPixToPixConditioning` —— 1/5 个有
+- `LayerMask: MaskPreview` —— 1/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
+- `SetLatentNoiseMask` —— 1/5 个有
+- `easy imageSize` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 768 - 1344 | 5 | 78% |
-| 高度 | 1024 | 768 - 1536 | 5 | 74% |
-| LoRA 模型强度 | 0.8 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 20 | 20 - 30 | 5 | 83% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | normal | - | 5 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
@@ -64,5 +67,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 768 - 1344，5 个样本
-- 高度 中位数 1024，观测区间 768 - 1536，5 个样本
+- 采样步数 中位数 20，观测区间 20 - 30，5 个样本，取值集中（一致性 83%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 normal，5 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

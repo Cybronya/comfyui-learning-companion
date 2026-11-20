@@ -1,78 +1,58 @@
 ---
 name: unknown_workflow_video_lora_sampler_248
 type: Unknown Workflow
-frequency: 9
+frequency: 11
 level: moderate
-coverage: 0.630667
-common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.798273
+common_nodes: [BasicGuider, CLIPLoader, ComfyMathExpression, LoraLoaderBypassModelOnly, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/INFINITE talk，实现无限时长、口型精准的视频配音_1972120402749222914.json, 视频生成/图生视频/Infinitetalk-视频对口型_2073213335511846913.json, 视频生成/图生视频/打造自己的MTV数字人_1958218756659036162.json, 视频生成/图生视频/无限时长-InfiniteTalk【单人图生视频】和【视频改口型】_1961976886408757249.json, 视频生成/图生视频/视频对口型InfiniteTalk数字人（新版本非常好用）_2003771753522470913.json, 视频生成/图生视频/视频对口型InfiniteTalk数字人（新版本非常好用）_2010335855776374785.json, 视频生成/文生视频/无限时长-InfiniteTalk【单人图生视频】和【视频改口型】_1977338466017136642.json, 音频生成/音频生成/InfiniteTalkV2V 视频对口型数字人说话唱歌_2005896738135306242.json, 音频生成/音频生成/视频对口型 自用_2019776475708268545.json]
+members: [视频生成/文生视频/Minimax-H3极速4分钟出15秒480P-文生视频(双时钟-8步lora)_2086317767086665729.json, 视频生成/文生视频/Minimax-H3极速视频编辑(双时钟-8步lora)_2086326048232398850.json, 视频生成/文生视频/Minimax4步lora+双时钟-超快速工作流_2085689486171787265.json, 视频生成/文生视频/MinimaxH3 全功能加速工作流_2086320789044944897.json, 视频生成/文生视频/Minimax参考生视频(最新插件双时钟+4步lora8步高质量极速)_2085606301979209730.json, 视频生成/文生视频/Minimax双时钟图生视频加速版_2087634755666931713.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V1_2085629759433822210.json, 视频生成/文生视频/Minimax多参(双时钟8步高质量极速)V2_2093869475740344321.json, 视频生成/文生视频/Minimax文生视频（Lightx2v正式版8步lora+双时钟）_2087718430937014273.json, 视频生成/文生视频/minimaxH3文生视频（light2v8步lora+双时钟）_2087529767288524801.json, 视频生成/文生视频/人物出场-MiniMax_H3｜角色登场镜头的文生视频神器_2114695429555314690.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_248
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/INFINITE talk，实现无限时长、口型精准的视频配音_1972120402749222914.json、视频生成/图生视频/Infinitetalk-视频对口型_2073213335511846913.json、视频生成/图生视频/打造自己的MTV数字人_1958218756659036162.json、视频生成/图生视频/无限时长-InfiniteTalk【单人图生视频】和【视频改口型】_1961976886408757249.json、视频生成/图生视频/视频对口型InfiniteTalk数字人（新版本非常好用）_2003771753522470913.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/文生视频/Minimax-H3极速4分钟出15秒480P-文生视频(双时钟-8步lora)_2086317767086665729.json、视频生成/文生视频/Minimax-H3极速视频编辑(双时钟-8步lora)_2086326048232398850.json、视频生成/文生视频/Minimax4步lora+双时钟-超快速工作流_2085689486171787265.json、视频生成/文生视频/MinimaxH3 全功能加速工作流_2086320789044944897.json、视频生成/文生视频/Minimax参考生视频(最新插件双时钟+4步lora8步高质量极速)_2085606301979209730.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：63%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `AudioCrop`
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
-- `GetImageSizeAndCount`
-- `LoadAudio`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `VHS_LoadVideo`
+全部 11 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `LoraLoaderBypassModelOnly`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 8/9 个有
-- `PrimitiveInt` —— 8/9 个有
-- `SetNode` —— 8/9 个有
-- `GetImageRangeFromBatch` —— 7/9 个有
-- `ImageResizeKJv2` —— 7/9 个有
-- `LayerUtility: PurgeVRAM` —— 6/9 个有
-- `PrimitiveString` —— 6/9 个有
-- `SimpleMath+` —— 6/9 个有
-- `Audio Duration (mtb)` —— 5/9 个有
-- `INTConstant` —— 5/9 个有
-- `ImageFromBatch+` —— 4/9 个有
-- `JjkText` —— 4/9 个有
-- `WanVideoTorchCompileSettings` —— 3/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/9 个有
-- `JWIntegerToString` —— 2/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/9 个有
-- `LoadImage` —— 2/9 个有
-- `MathExpression|pysssss` —— 2/9 个有
-- `RH_Translator` —— 2/9 个有
-- `Text Concatenate` —— 2/9 个有
-- `Text Multiline` —— 2/9 个有
-- `Blur` —— 1/9 个有
-- `ImageConcatMulti` —— 1/9 个有
-- `SeedVR2GGUF` —— 1/9 个有
-- `Text` —— 1/9 个有
-- `VHS_VideoInfo` —— 1/9 个有
-- `easy int` —— 1/9 个有
+- `CR Prompt Text` —— 10/11 个有
+- `MiniMaxH3DualClockSamplerT8` —— 10/11 个有
+- `LoadImage` —— 8/11 个有
+- `ModelAttentionBackend` —— 5/11 个有
+- `VHS_LoadVideo` —— 4/11 个有
+- `GetNode` —— 2/11 个有
+- `LoadAudio` —— 2/11 个有
+- `SetNode` —— 2/11 个有
+- `ImageScaleToTotalPixels` —— 1/11 个有
+- `MiniMaxH3MultiRateSamplerEXPT8` —— 1/11 个有
+- `MiniMaxH3SigmaShift` —— 1/11 个有
+- `ModelPreviewOverrideKJ` —— 1/11 个有
+- `PrimitiveStringMultiline` —— 1/11 个有
+- `SolAttnMiniMax` —— 1/11 个有
 
 ## 典型参数
 

@@ -3,34 +3,39 @@ name: unknown_workflow_generic_1555
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.65
-common_nodes: [LoadImage, PreviewImage, SaveImage, easy imageRemBg]
+coverage: 0.775
+common_nodes: [CR Text, DisplayImageFromURL, LoadImage, PreviewImage, RHLLMChatNode, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/生图-图生成白底图-RMBG-2.0_2000595975032930305.json, 图片生成/图生图/电商修图之一键去背景_2047286262729543682.json]
+members: [图片生成/图生图/12-面料_2094954449696542721.json, 图片生成/图生图/14-单张四宫格1_2094954428771168258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1555
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/生图-图生成白底图-RMBG-2.0_2000595975032930305.json、图片生成/图生图/电商修图之一键去背景_2047286262729543682.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/12-面料_2094954449696542721.json、图片生成/图生图/14-单张四宫格1_2094954428771168258.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `CR Text`
+- `DisplayImageFromURL`
 - `LoadImage`
 - `PreviewImage`
+- `RHLLMChatNode`
+- `RH_Nano_Banana2_Gemini31Flash`
 - `SaveImage`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageConcatMulti` —— 1/2 个有
-- `MaskPreview` —— 1/2 个有
+- `CR Text Concatenate` —— 1/2 个有
+- `ImageBatchToList` —— 1/2 个有
+- `ImageGridtoBatch` —— 1/2 个有
+- `LayerUtility: TextJoin` —— 1/2 个有
 
 ## 典型参数
 

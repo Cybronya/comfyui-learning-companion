@@ -1,69 +1,73 @@
 ---
 name: unknown_workflow_video_sampler_vae_184
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.906
-common_nodes: [CR Text, DF_Integer, ImageResizeKJ, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageRemoveAlpha, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, RH_LLMAPI_NODE, ShowText|pysssss, SimpleMath+, StringToInt, Text Multiline, TextSwitchCase, VHS_LoadVideo, VHS_VideoCombine, WanVideoApplyNAG, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVAELoader, easy textSwitch]
+frequency: 3
+level: moderate
+coverage: 0.733333
+common_nodes: [BBoxesToSAM2, DownloadAndLoadQwenModel, DownloadAndLoadSAM2Model, DrawMaskOnImage, Fast Groups Bypasser (rgthree), GetNode, GrowMask, ImageCompositeMasked, ImageFromBatch, InvertMask, LayerMask: LoadFlorence2Model, LayerMask: MaskPreview, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LoadWanVideoT5TextEncoder, Mask Switch (JPS), MaskPreview+, MaskToImage, MuyeTextEditOutput, PointsEditor, PreviewImage, QwenVLDetection, RH_Translator, Sam2Segmentation, SeCModelLoader, SeCVideoSegmentation, SetNode, SolidMask, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoDecode, WanVideoEncode, WanVideoMiniMaxRemoverEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed, easy int, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/FusionX-VACE 图生视频_1934580529734066178.json, 视频生成/图生视频/FusionX-VACE姿势视频转绘_1934580534721093634.json]
+members: [平台全量/视频物件遮罩消除_2021760218622861314.json, "数字人/数字人/视频消除+遮罩合辑Sec,Sam,Florence,BBox,Qwen+Minimax_1979386554948947970.json", 数字人/数字人/视频消除，任意擦除，最强视频遮罩（Sec Sam BBox等）不同消除方式_2037359402281340929.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_184
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/FusionX-VACE 图生视频_1934580529734066178.json、视频生成/图生视频/FusionX-VACE姿势视频转绘_1934580534721093634.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/视频物件遮罩消除_2021760218622861314.json、数字人/数字人/视频消除+遮罩合辑Sec,Sam,Florence,BBox,Qwen+Minimax_1979386554948947970.json、数字人/数字人/视频消除，任意擦除，最强视频遮罩（Sec Sam BBox等）不同消除方式_2037359402281340929.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：73%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `CR Text`
-- `DF_Integer`
-- `ImageResizeKJ`
-- `LayerMask: BiRefNetUltraV2`
-- `LayerMask: LoadBiRefNetModelV2`
-- `LayerUtility: ImageRemoveAlpha`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `BBoxesToSAM2`
+- `DownloadAndLoadQwenModel`
+- `DownloadAndLoadSAM2Model`
+- `DrawMaskOnImage`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `GrowMask`
+- `ImageCompositeMasked`
+- `ImageFromBatch`
+- `InvertMask`
+- `LayerMask: LoadFlorence2Model`
+- `LayerMask: MaskPreview`
+- `LayerMask: ObjectDetectorFL2`
+- `LayerMask: SAM2Ultra`
 - `LoadWanVideoT5TextEncoder`
-- `RH_LLMAPI_NODE`
-- `ShowText|pysssss`
-- `SimpleMath+`
-- `StringToInt`
-- `Text Multiline`
-- `TextSwitchCase`
+- `Mask Switch (JPS)`
+- `MaskPreview+`
+- `MaskToImage`
+- `MuyeTextEditOutput`
+- `PointsEditor`
+- `PreviewImage`
+- `QwenVLDetection`
+- `RH_Translator`
+- `Sam2Segmentation`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `SetNode`
+- `SolidMask`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoApplyNAG`
-- `WanVideoBlockSwap`
+- `VHS_VideoInfo`
 - `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
+- `WanVideoEncode`
+- `WanVideoMiniMaxRemoverEmbeds`
 - `WanVideoModelLoader`
-- `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTextEncodeSingle`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy textSwitch`
+- `easy cleanGpuUsed`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 1/2 个有
-- `DWPreprocessor` —— 1/2 个有
-- `DepthAnything_V2` —— 1/2 个有
-- `DownloadAndLoadDepthAnythingV2Model` —— 1/2 个有
-- `EmptyImage` —— 1/2 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `ImageConcatMulti` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
+- `DiffuEraserLoader` —— 1/3 个有
+- `DiffuEraserSampler` —— 1/3 个有
 
 ## 典型参数
 
@@ -75,4 +79,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

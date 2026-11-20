@@ -1,65 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_202
 type: Unknown Workflow
-frequency: 10
+frequency: 12
 level: moderate
-coverage: 0.5907
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.904
+common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ComfyNumberConvert, ConditioningZeroOut, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxH3ReferenceToVideo, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAny, ResolutionSelector, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/常规万能流直出1080p_最高质量版_-MMH3_Selflift_2113451414457507841.json, 图片生成/图生图/短剧制作_直出1080p_最高质量版_-MMH3_Selflift_2113451009522626561.json, 视频生成/图生视频/H3-self-数字人_文字驱动_2104056713530925057.json, 视频生成/图生视频/MICAS西游_Camera_3_2107469660680708097.json, 视频生成/图生视频/MICAS西游：Camera 3_2103441968356483073.json, 视频生成/图生视频/MiniMax_二采_selflift_急速工作流_2099671590920351746.json, 视频生成/图生视频/MiniMax_二采_selflift_急速工作流自用_2105654345877512193.json, 视频生成/图生视频/常规万能流直出1080p 最高质量版 -MMH3 Selflift_2103534009916674049.json, 视频生成/图生视频/短剧制作 直出1080p 最高质量版 -MMH3 Selflift_2106389437042221057.json, 视频生成/文生视频/H3视频生成self-lift加速双采工作流_2097856577159127042.json]
+members: [视频生成/图生视频/AI音乐MV数字人工作流API_2102304757191888898.json, 视频生成/图生视频/AI音乐MV数字人新二采（Separate AV Latent+Minimax H3 Selflift）_2102301279543447554.json, 视频生成/图生视频/Minimax H3 Selflift数字人3采_2103403982399033346.json, 视频生成/图生视频/Minimax H3 Selflift数字人_2099969302521802753.json, 视频生成/图生视频/Minimax H3 Selflift数字人_2100111017245237250.json, 视频生成/图生视频/Minimax H3 王炸级数字人_2110211967460929538.json, 视频生成/图生视频/Minimax H3 高清数字人【自动提示词】_2100388567234211842.json, 视频生成/图生视频/Minimax_H3_Selflift数字人_2101084450963681281.json, 视频生成/图生视频/Minimax_H3_Selflift数字人_2110651082765590530.json, 视频生成/图生视频/Minimax_H3_Selflift数字人_2111369923728601089.json, 视频生成/图生视频/minimaxh3_Selflift数字人1080p_2100548342743916545.json, 视频生成/图生视频/一张照片生成数字人视频_2107411749451427842.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_202
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/常规万能流直出1080p_最高质量版_-MMH3_Selflift_2113451414457507841.json、图片生成/图生图/短剧制作_直出1080p_最高质量版_-MMH3_Selflift_2113451009522626561.json、视频生成/图生视频/H3-self-数字人_文字驱动_2104056713530925057.json、视频生成/图生视频/MICAS西游_Camera_3_2107469660680708097.json、视频生成/图生视频/MICAS西游：Camera 3_2103441968356483073.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/AI音乐MV数字人工作流API_2102304757191888898.json、视频生成/图生视频/AI音乐MV数字人新二采（Separate AV Latent+Minimax H3 Selflift）_2102301279543447554.json、视频生成/图生视频/Minimax H3 Selflift数字人3采_2103403982399033346.json、视频生成/图生视频/Minimax H3 Selflift数字人_2099969302521802753.json、视频生成/图生视频/Minimax H3 Selflift数字人_2100111017245237250.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
+- `ComfyNumberConvert`
 - `ConditioningZeroOut`
 - `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `MiniMaxChunkFeedForward`
 - `MiniMaxH3ReferenceToVideo`
 - `MiniMaxLowVRAMAttention`
 - `ModelAttentionBackend`
+- `PreviewAny`
 - `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelPreviewOverrideKJ` —— 8/10 个有
-- `LoadAudio` —— 7/10 个有
-- `PrimitiveStringMultiline` —— 7/10 个有
-- `SelfLiftH3Sampler` —— 7/10 个有
-- `H3SigmaRefiner` —— 5/10 个有
-- `LTXVSeparateAVLatent` —— 5/10 个有
-- `PreviewAny` —— 5/10 个有
-- `PrimitiveFloat` —— 5/10 个有
-- `SelfLiftAvatarH3Sampler` —— 4/10 个有
-- `EmptyImage` —— 3/10 个有
-- `JWStringToFloat` —— 3/10 个有
-- `PreviewImage` —— 3/10 个有
-- `VHS_LoadVideo` —— 3/10 个有
-- `CR Text` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `Int` —— 1/10 个有
-- `RHMiniMaxH3PromptOptimizerMedia` —— 1/10 个有
-- `int _O` —— 1/10 个有
+- `ModelPreviewOverrideKJ` —— 10/12 个有
+- `QwenH3PromptLocal` —— 5/12 个有
+- `RHMiniMaxH3PromptOptimizerMedia` —— 4/12 个有
+- `EmptyImage` —— 2/12 个有
+- `JjkText` —— 2/12 个有
+- `PreviewImage` —— 2/12 个有
+- `MuyeTextEditOutput` —— 1/12 个有
+- `PrimitiveFloat` —— 1/12 个有
+- `PrimitiveStringMultiline` —— 1/12 个有
+- `Text Multiline` —— 1/12 个有
+- `Textbox` —— 1/12 个有
+- `solarL_SaveImagesToZip` —— 1/12 个有
 
 ## 典型参数
 

@@ -3,37 +3,37 @@ name: unknown_workflow_generic_1179
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.5
-common_nodes: [HeartMuLa_Generate, HeartMuLa_Transcribe, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.692
+common_nodes: [LoadImage, RH_LLMAPI_Pro_Node, SaveImage, ShowText|pysssss]
 problems: []
-missing: [TextBox|fofo]
-members: [音频生成/音频生成/HeartMuLa _AI音乐生成_2013559123043950594.json, 音频生成/音频生成/HeartMula 一键歌曲生成 写歌自由  智能歌词识别_2019312009182978049.json, 音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2046412032148246529.json]
+missing: []
+members: [图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频-官方高质量快速版_2052557998316367873.json, 图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频_2050476787880214529.json, 图片生成/图生图/电商模特手持产品专用洗图——全能图片2.0  0.1元_张图_2058822031935889409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1179
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa _AI音乐生成_2013559123043950594.json、音频生成/音频生成/HeartMula 一键歌曲生成 写歌自由  智能歌词识别_2019312009182978049.json、音频生成/音频生成/HeartMula-开源AI音乐创作-每天写一首歌_2046412032148246529.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频-官方高质量快速版_2052557998316367873.json、图片生成/图生图/全能图片G2-故事板创作-视频生成利器-直接扔给sd2.0生成视频_2050476787880214529.json、图片生成/图生图/电商模特手持产品专用洗图——全能图片2.0  0.1元_张图_2058822031935889409.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
+- `LoadImage`
+- `RH_LLMAPI_Pro_Node`
+- `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
-- `LoadImage` —— 1/3 个有
-- `PrimitiveStringMultiline` —— 1/3 个有
-- `TextBox|fofo` —— 1/3 个有
+- `CR Text` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `RH_RhartImageG2ImageToImage` —— 2/3 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 2/3 个有
+- `RH_RhartImageG2TextToImage` —— 1/3 个有
 
 ## 典型参数
 
@@ -45,4 +45,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 这些节点还没有知识卡，系统对它们的理解有限：TextBox|fofo
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

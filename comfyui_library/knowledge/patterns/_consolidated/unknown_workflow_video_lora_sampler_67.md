@@ -1,66 +1,88 @@
 ---
 name: unknown_workflow_video_lora_sampler_67
 type: Unknown Workflow
-frequency: 20
+frequency: 22
 level: moderate
-coverage: 0.5916
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerAdvanced, LoraLoaderModelOnly, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+coverage: 0.622091
+common_nodes: [ControlNextGetPoses, GetImageSizeAndCount, GetNode, ImageResizeKJ, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, Primitive integer [Crystools], SetNode, SimpleMath+, Text Multiline, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoControlEmbeds, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/SVI 2.0 pro长视频分镜一致性_2007698027737255937.json, 视频生成/图生视频/SVI 2.0Pro 分段长视频_2005535565334413313.json, 视频生成/图生视频/SVI 2.0Pro 视频延长  一镜到底  效果炸裂_2007439423029383169.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2005336541939597313.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2032840589099671553.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2053665458540294145.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2068949443151491073.json, 视频生成/图生视频/SVI 2.0Pro长视频生成_2005593934388752385.json, 视频生成/图生视频/SVI+2.0Pro 一张图片一镜到底！_2066377373628592129.json, 视频生成/图生视频/SVI+2.0Pro一镜到底_2067252352830230529.json, 视频生成/图生视频/SVI+2.0Pro电影级分镜生成长视频_2005998121425522690.json, 视频生成/图生视频/SVI+2.0Pro电影级分镜生成长视频（升级版）_2006033971657842690.json, 视频生成/图生视频/SVI+2.0Pro长视频生成_2005982973738565633.json, 视频生成/图生视频/SVI+2.0Pro高质量动图_2009965288044896257.json, 视频生成/图生视频/SVI2.0Pro超长一镜到底！16S_2011274354910306306.json, 视频生成/图生视频/SVIpro视频延长-Aiwood_2005629100242993154.json, 视频生成/图生视频/顶峰--SVI+2.0Pro一镜到底！_2065196684543619074.json, 视频生成/图生视频/🐳SVI2.0PRO长视频生成 图生视频 KJ优化无限对接版 25-12-29🦋_2005505528635817986.json, 视频生成/图生视频/👾怪獸-SVI-Pro一镜到底👾_2005898003632320514.json, 视频生成/文生视频/一张图加一句话生成视频，图片文字生成视频_2066577714387177474.json]
+members: [图片生成/图生图/真实感-wan2.2+动作迁移_2115278436712402946.json, 图片生成/文生图/动作迁移_1991004865675599874.json, 平台全量/动作迁移_舞蹈克隆_不改变原图背景_真实感_wan2.2_1996729263971868674.json, 视频生成/图生视频/wan2.2+Fun Control动作迁移_1955151856064499714.json, 视频生成/图生视频/wan2.2+bro-lora+动作迁移_1968333951213416449.json, 视频生成/图生视频/wan2.2+动作迁移_1958329470274977793.json, 视频生成/图生视频/wan2.2+动作迁移_1963046419189968898.json, 视频生成/图生视频/wan2.2-动作迁移-超真实_2053734676421988353.json, 视频生成/图生视频/wan2.2-动作迁移-超真实_2054742996398157826.json, 视频生成/图生视频/wan2.2-真实感-动作迁移_2052994688696762369.json, 视频生成/图生视频/单次复刻 30s 时长！Wan2.2 动作迁移：整条视频一键操作，真实度拉满_1957271440334712833.json, 视频生成/图生视频/图生视频----真实感-wan2.2+动作迁移_2042038693006938114.json, 视频生成/图生视频/图生视频----真实感-wan2.2+动作迁移_2042491077948612610.json, 视频生成/图生视频/图生视频----真实感-wan2.2+动作迁移_2045027083465789442.json, 视频生成/图生视频/真实感-wan2.2+动作迁移_1955251500776767489.json, 视频生成/图生视频/真实感-wan2.2+动作迁移_1955471370547335170.json, 视频生成/图生视频/真实感-wan2.2+动作迁移_2058912825199906818.json, 视频生成/图生视频/真实感-wan2.2+动作迁移_2060032983922470914.json, 视频生成/图生视频/真实感-wan2.2+动作迁移_2062871890934460417.json, 视频生成/图生视频/真实感-wan2.2+动作迁移_2080550651473514498.json, 视频生成/文生视频/wan2.2  图生视频动作迁移_1956657681140473857.json, 视频生成/文生视频/【动作迁移】真实感-wan2.2_1956961863289245697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_67
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/SVI 2.0 pro长视频分镜一致性_2007698027737255937.json、视频生成/图生视频/SVI 2.0Pro 分段长视频_2005535565334413313.json、视频生成/图生视频/SVI 2.0Pro 视频延长  一镜到底  效果炸裂_2007439423029383169.json、视频生成/图生视频/SVI 2.0Pro一镜到底！_2005336541939597313.json、视频生成/图生视频/SVI 2.0Pro一镜到底！_2032840589099671553.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/真实感-wan2.2+动作迁移_2115278436712402946.json、图片生成/文生图/动作迁移_1991004865675599874.json、平台全量/动作迁移_舞蹈克隆_不改变原图背景_真实感_wan2.2_1996729263971868674.json、视频生成/图生视频/wan2.2+Fun Control动作迁移_1955151856064499714.json、视频生成/图生视频/wan2.2+bro-lora+动作迁移_1968333951213416449.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：22
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `ImageBatchExtendWithOverlap`
+全部 22 个 workflow 都包含：
+- `ControlNextGetPoses`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageResizeKJ`
 - `ImageResizeKJv2`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewImage`
+- `Primitive integer [Crystools]`
+- `SetNode`
+- `SimpleMath+`
+- `Text Multiline`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
+- `VHS_VideoInfoLoaded`
+- `WanVideoControlEmbeds`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 19/20 个有
-- `INTConstant` —— 19/20 个有
-- `LoadImage` —— 19/20 个有
-- `SetNode` —— 19/20 个有
-- `GetImageRangeFromBatch` —— 2/20 个有
-- `Primitive integer [Crystools]` —— 2/20 个有
-- `SimpleMath+` —— 2/20 个有
-- `ConditioningZeroOut` —— 1/20 个有
-- `ImpactInt` —— 1/20 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/20 个有
-- `Note Plus (mtb)` —— 1/20 个有
-- `VHS_LoadVideo` —— 1/20 个有
-- `VHS_VideoInfo` —— 1/20 个有
-- `easy imageColorMatch` —— 1/20 个有
+- `ColorMatch` —— 21/22 个有
+- `ImageConcatMulti` —— 21/22 个有
+- `ImageFromBatch` —— 21/22 个有
+- `Int` —— 21/22 个有
+- `Primitive float [Crystools]` —— 21/22 个有
+- `RHHiddenNodes` —— 21/22 个有
+- `ShowText|pysssss` —— 21/22 个有
+- `Text Concatenate` —— 21/22 个有
+- `WanVideoBlockSwap` —— 21/22 个有
+- `WanVideoSLG` —— 21/22 个有
+- `ImpactSwitch` —— 20/22 个有
+- `WanVideoSetBlockSwap` —— 20/22 个有
+- `RH_Captioner` —— 18/22 个有
+- `ImpactInt` —— 3/22 个有
+- `LayerUtility: JoyCaptionBeta1` —— 3/22 个有
+- `LayerUtility: LoadJoyCaptionBeta1Model` —— 3/22 个有
+- `easy showAnything` —— 3/22 个有
+- `WanVideoLoraSelect` —— 2/22 个有
+- `WanVideoLoraSelectMulti` —— 2/22 个有
+- `WanVideoModelLoader` —— 2/22 个有
+- `GetImageRangeFromBatch` —— 1/22 个有
+- `ImageBatchMulti` —— 1/22 个有
+- `ImageUpscaleWithModel` —— 1/22 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/22 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/22 个有
+- `RepeatImageBatch` —— 1/22 个有
+- `UpscaleModelLoader` —— 1/22 个有
+- `WanVideoEmptyEmbeds` —— 1/22 个有
+- `easy forLoopEnd` —— 1/22 个有
+- `easy forLoopStart` —— 1/22 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 20 | 80% |
-| Prompt 约束强度(CFG) | 8 | 1 - 20 | 20 | 53% |
-| 采样算法 | 1 | 1 - 1 | 20 | 100% |
-| 调度器 | euler | - | 20 | 100% |
-| 重绘幅度 | simple | - | 20 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -68,9 +90,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，20 个样本，一致性 80%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 20，20 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，20 个样本，一致性 100%
-- 重绘幅度 最常用 simple，20 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

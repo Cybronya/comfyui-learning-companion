@@ -1,78 +1,85 @@
 ---
 name: image_to_image_inpaint_lora_sampler_8
 type: Image To Image
-frequency: 3
+frequency: 4
 level: strong
-coverage: 0.856333
-common_nodes: [CFGNorm, CLIPLoader, CR Text, ConditioningZeroOut, Float, INPAINT_MaskedFill, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus_lrzjason, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.86025
+common_nodes: [ApplyPulidFlux, BboxDetectorSEGS, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, GrowMaskWithBlur, Image Comparer (rgthree), ImageColorMatch+, ImageToMask, InpaintModelConditioning, JanusImageUnderstanding, JanusModelLoader, KSampler, LayerMask: MaskPreview, LayerMask: PersonMaskUltra V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoader, MaskToImage, PreviewImage, PulidFluxEvaClipLoader, PulidFluxFaceDetector, PulidFluxInsightFaceLoader, PulidFluxModelLoader, PulidFluxOptions, SaveImage, SegsToCombinedMask, ShowText|pysssss, UNETLoader, UltralyticsDetectorProvider, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/(F2P一致性加强)QwenEdit 2509换脸V1_1983501370936500226.json, 图片生成/图生图/F2P qwen 千问换脸_1979851665991962626.json, 图片生成/图生图/千问换脸 F2P-Qwen_1982415550624210945.json]
+members: [图片生成/图生图/FLUX+PULID 人物换脸进阶版工作流_2046978360336719874.json, 图片生成/图生图/FLUX+PULID_人物换脸进阶版_2064162963505901569.json, 图片生成/图生图/FLUX+PULID_人物换脸进阶版工作流_2063086878060007426.json, 图片生成/图生图/FLUX+PULID_人物换脸进阶版工作流_2063443764861030402.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_inpaint_lora_sampler_8
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/(F2P一致性加强)QwenEdit 2509换脸V1_1983501370936500226.json、图片生成/图生图/F2P qwen 千问换脸_1979851665991962626.json、图片生成/图生图/千问换脸 F2P-Qwen_1982415550624210945.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/FLUX+PULID 人物换脸进阶版工作流_2046978360336719874.json、图片生成/图生图/FLUX+PULID_人物换脸进阶版_2064162963505901569.json、图片生成/图生图/FLUX+PULID_人物换脸进阶版工作流_2063086878060007426.json、图片生成/图生图/FLUX+PULID_人物换脸进阶版工作流_2063443764861030402.json）
 
 - **类型**：Image To Image
-- **样本数**：3
+- **样本数**：4
 - **可信度**：强结论
 - **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGNorm`
-- `CLIPLoader`
-- `CR Text`
+全部 4 个 workflow 都包含：
+- `ApplyPulidFlux`
+- `BboxDetectorSEGS`
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `Float`
-- `INPAINT_MaskedFill`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `GrowMaskWithBlur`
 - `Image Comparer (rgthree)`
+- `ImageColorMatch+`
+- `ImageToMask`
+- `InpaintModelConditioning`
+- `JanusImageUnderstanding`
+- `JanusModelLoader`
 - `KSampler`
+- `LayerMask: MaskPreview`
+- `LayerMask: PersonMaskUltra V2`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `Mask Fill Holes`
-- `ModelSamplingAuraFlow`
+- `LoraLoader`
+- `MaskToImage`
 - `PreviewImage`
+- `PulidFluxEvaClipLoader`
+- `PulidFluxFaceDetector`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `PulidFluxOptions`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
-- `TextEncodeQwenImageEditPlus_lrzjason`
+- `SegsToCombinedMask`
+- `ShowText|pysssss`
 - `UNETLoader`
+- `UltralyticsDetectorProvider`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-
-**可变部分**（部分 workflow 才有）：
-- `FluxKontextImageScale` —— 2/3 个有
-- `ImageConcanate` —— 2/3 个有
-- `面部选择器` —— 2/3 个有
-- `ACE_ImageFaceCrop` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | normal | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 20 | 20 - 20 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 0.7 | 0.7 - 0.7 | 4 | 100% |
+| LoRA 模型强度 | 0.7 | 0.7 - 0.7 | 4 | 100% |
+| LoRA 文本强度 | 0.7 | 0.7 - 0.7 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 normal，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 0.7，观测区间 0.7 - 0.7，4 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 0.7，观测区间 0.7 - 0.7，4 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 0.7，观测区间 0.7 - 0.7，4 个样本，取值集中（一致性 100%）

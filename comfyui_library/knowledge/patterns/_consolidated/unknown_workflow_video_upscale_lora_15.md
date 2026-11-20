@@ -1,74 +1,58 @@
 ---
 name: unknown_workflow_video_upscale_lora_15
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.380333
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ComfySwitchNode, Fast Groups Bypasser (rgthree), GetImage, GetNode, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PreviewAudio, PreviewImage, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ResizeImageMaskNode, ResolutionSelector, SetNode, StringConcatenate, UNETLoader, VAELoader, VHS_VideoCombine, VOSR2ModelLoader, VOSR2Upscale, YUAN_TXTJsonExtractor, YUAN_TXTJsonSwitch, YUAN_TXTPreviewContent, YUAN_TXTShotDurations, YuanAudioList, YuanAudioLoad, YuanAudioSplit, YuanImageGridComposite, YuanLoadImageOutput, YuanMultiImage, YuanPrimitive, YuanTool, Yuan_H3MotionContextTrim, Yuan_H3ProgressiveSampler, Yuan_MiniMaxH3Video]
+coverage: 0.8525
+common_nodes: [BasicScheduler, BlockSparseAttention, CLIPLoader, ExtendIntermediateSigmas, LoraLoaderModelOnly, MiniMaxH3Director, MiniMaxH3DirectorFaceRefine, MiniMaxH3DirectorRefine, MiniMaxH3DirectorSelfLift, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, PathchSageAttentionKJ, PreviewAny, PrimitiveStringMultiline, UNETLoader, UpscaleModelLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax-H3 全栈式文武戏短剧生成(SelfLift双模版)_2113455671252439042.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V11.2（宫格版）_2102198063224942594.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1（宫格版）_2105481384004505602.json]
+members: [视频生成/图生视频/B_H3五分钟_参考主体_22帧_重绘0.5_2108831912314884097.json, 视频生成/图生视频/H3长视频生成-maod-字节4步模型_2109960679385026561.json, 视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_主体参考_单图外接_2111022282851315713.json, 视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_首尾帧_单图外接_2111022898654830593.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_15
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3 全栈式文武戏短剧生成(SelfLift双模版)_2113455671252439042.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V11.2（宫格版）_2102198063224942594.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V12.1（宫格版）_2105481384004505602.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/B_H3五分钟_参考主体_22帧_重绘0.5_2108831912314884097.json、视频生成/图生视频/H3长视频生成-maod-字节4步模型_2109960679385026561.json、视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_主体参考_单图外接_2111022282851315713.json、视频生成/图生视频/允希_V8.2_闭唇正脸_一秒轻触_首尾帧_单图外接_2111022898654830593.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：38%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `BasicScheduler`
+- `BlockSparseAttention`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImage`
-- `GetNode`
-- `KSamplerSelect`
-- `LoadImage`
+- `ExtendIntermediateSigmas`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
+- `MiniMaxH3Director`
+- `MiniMaxH3DirectorFaceRefine`
+- `MiniMaxH3DirectorRefine`
+- `MiniMaxH3DirectorSelfLift`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
 - `ModelAttentionBackend`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveFloat`
-- `PrimitiveInt`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
 - `PrimitiveStringMultiline`
-- `ResizeImageMaskNode`
-- `ResolutionSelector`
-- `SetNode`
-- `StringConcatenate`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `VOSR2ModelLoader`
-- `VOSR2Upscale`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTJsonSwitch`
-- `YUAN_TXTPreviewContent`
-- `YUAN_TXTShotDurations`
-- `YuanAudioList`
-- `YuanAudioLoad`
-- `YuanAudioSplit`
-- `YuanImageGridComposite`
-- `YuanLoadImageOutput`
-- `YuanMultiImage`
-- `YuanPrimitive`
-- `YuanTool`
-- `Yuan_H3MotionContextTrim`
-- `Yuan_H3ProgressiveSampler`
-- `Yuan_MiniMaxH3Video`
 
 **可变部分**（部分 workflow 才有）：
-- `easy clearCacheAll` —— 1/3 个有
+- `LoadImage` —— 3/4 个有
+- `MiniMaxH3DirectorGroupsCombine` —— 3/4 个有
+- `CreateVideo` —— 2/4 个有
+- `MiniMaxH3DirectorGroupReferenceToVideo` —— 2/4 个有
+- `ModelPreviewOverrideKJ` —— 2/4 个有
+- `SaveVideo` —— 2/4 个有
+- `Video Slice` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `MiniMaxH3DirectorGroupImageToVideo` —— 1/4 个有
 
 ## 典型参数
 

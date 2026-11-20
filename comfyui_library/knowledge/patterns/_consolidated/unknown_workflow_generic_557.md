@@ -1,43 +1,40 @@
 ---
 name: unknown_workflow_generic_557
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.792
-common_nodes: [ImageConcanate, ImageResizeKJv2, LoadImage, PreviewImage, RH_Captioner, SaveImage, ShowText|pysssss, Text Concatenate, Text Multiline, easy imageRemBg]
+coverage: 0.921
+common_nodes: [CR Simple Image Compare, CR Text, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/图生图/DreamFit一键生成指定服装红毯明星_1923527076891324418.json, 图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考_1923611013999226882.json, 图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加姿势引导_1923671095390760961.json, 图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加引导_1923871881651548161.json, 图片生成/文生图/DreamFit 服装模特体验版_1920852726639693826.json]
+members: [图片生成/图生图/b-最强2双图编辑全能图片pro图生图_2009591611319128065.json, 图片生成/图生图/一键新年写真_2005939908176998402.json, 图片生成/图生图/一键新年四宫格写真_2005963264137854978.json, 图片生成/图生图/最新全能图片编辑模型v2图生图gemini-3.1-flash_2027286197722161154.json, 图片生成/文生图/最新全能图片编辑模型v2图生图gemini-3.1-flash_2028422472437080065.json, 图片生成/文生图/最新全能图片编辑模型v2文生图gemini-3.1-flash_2027275384085028866.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_557
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/DreamFit一键生成指定服装红毯明星_1923527076891324418.json、图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考_1923611013999226882.json、图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加姿势引导_1923671095390760961.json、图片生成/图生图/DreamFit一键生成指定服装红毯明星多图参考加引导_1923871881651548161.json、图片生成/文生图/DreamFit 服装模特体验版_1920852726639693826.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/b-最强2双图编辑全能图片pro图生图_2009591611319128065.json、图片生成/图生图/一键新年写真_2005939908176998402.json、图片生成/图生图/一键新年四宫格写真_2005963264137854978.json、图片生成/图生图/最新全能图片编辑模型v2图生图gemini-3.1-flash_2027286197722161154.json、图片生成/文生图/最新全能图片编辑模型v2图生图gemini-3.1-flash_2028422472437080065.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `ImageConcanate`
-- `ImageResizeKJv2`
+全部 6 个 workflow 都包含：
+- `CR Simple Image Compare`
+- `CR Text`
 - `LoadImage`
-- `PreviewImage`
-- `RH_Captioner`
 - `SaveImage`
-- `ShowText|pysssss`
-- `Text Concatenate`
-- `Text Multiline`
-- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `RunningHub_DreamFit_Flux` —— 4/5 个有
-- `easy imageConcat` —— 3/5 个有
-- `RunningHub_DreamFit_SD` —— 1/5 个有
+- `Image Comparer (rgthree)` —— 5/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/6 个有
+- `CR Text Replace` —— 3/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 3/6 个有
+- `RH_Nano_Banana2_Image2Image` —— 3/6 个有
+- `SeargeIntegerConstant` —— 1/6 个有
 
 ## 典型参数
 

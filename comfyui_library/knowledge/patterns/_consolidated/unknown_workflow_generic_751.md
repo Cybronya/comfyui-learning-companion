@@ -1,36 +1,41 @@
 ---
 name: unknown_workflow_generic_751
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.8445
-common_nodes: [JjkText, LoadImage, SaveImage, easy saveText]
+coverage: 1
+common_nodes: [CR Prompt Text, IndexTTSRun, LoadAudio, LoadVideo, RH_HeyGemNode, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G image2.5 flare图片模型图生图_2097890418431184897.json, 图片生成/图生图/全能图片G image2.5sunburst 图片模型图生图_2097915052593602561.json, 图片生成/图生图/全能图片G_image2.5sunburst_图片模型图生图_2101485449075322882.json, 图片生成/图生图/全能图片G_image2.5sunburst_图片模型图生图_2102216280077066242.json]
+members: [数字人/数字人/HeyGem数字人+INDEX TTS配音新版V3.0_1925857250173210626.json, 数字人/数字人/电商带货数字人带货（Heygem+IndexTTS工作流）_1958313041504976897.json, 视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json, 视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json, 音频生成/音频生成/Heygem数字人带货对口型+IndexTTS文字生成音频对口型工作流_1947687290950795266.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_751
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/全能图片G image2.5 flare图片模型图生图_2097890418431184897.json、图片生成/图生图/全能图片G image2.5sunburst 图片模型图生图_2097915052593602561.json、图片生成/图生图/全能图片G_image2.5sunburst_图片模型图生图_2101485449075322882.json、图片生成/图生图/全能图片G_image2.5sunburst_图片模型图生图_2102216280077066242.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（数字人/数字人/HeyGem数字人+INDEX TTS配音新版V3.0_1925857250173210626.json、数字人/数字人/电商带货数字人带货（Heygem+IndexTTS工作流）_1958313041504976897.json、视频生成/图生视频/HeyGem +IndexTTS_1925941668778823682.json、视频生成/图生视频/SOTA数字人-HeyGem_1927266147043856386.json、音频生成/音频生成/Heygem数字人带货对口型+IndexTTS文字生成音频对口型工作流_1947687290950795266.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `JjkText`
-- `LoadImage`
-- `SaveImage`
-- `easy saveText`
+全部 5 个 workflow 都包含：
+- `CR Prompt Text`
+- `IndexTTSRun`
+- `LoadAudio`
+- `LoadVideo`
+- `RH_HeyGemNode`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 3/4 个有
-- `RH_RhartImageG25OfficialTokenFlareEdit` —— 1/4 个有
+- `SaveAudio` —— 3/5 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/5 个有
+- `JWStringReplace` —— 1/5 个有
+- `LayerUtility: PurgeVRAM` —— 1/5 个有
+- `Note Plus (mtb)` —— 1/5 个有
 
 ## 典型参数
 

@@ -1,50 +1,71 @@
 ---
 name: unknown_workflow_video_lora_sampler_854
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9325
-common_nodes: [ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
+frequency: 3
+level: moderate
+coverage: 0.670333
+common_nodes: [Anything Everywhere, CR Prompt Text, CreateCFGScheduleFloatList, Fast Groups Muter (rgthree), FloatConstant, GetNode, INTConstant, LayerUtility: PurgeVRAM V2, LoadImage, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LongCat图生视频30秒_1985890878952747009.json, 视频生成/图生视频/【遇见AI】wan2.1 Skyreels V3 V2V视频延长_2067528007627141122.json]
+members: [视频生成/图生视频/04-05-01-WAN2.2-FUN-镜头控制-Cameral Control_1991509572473069569.json, 视频生成/图生视频/04-05-02-WAN2.2-FUN-首尾帧视频控制-INP_1990968837673787394.json, 视频生成/图生视频/04-05-03-WAN2.2-FUN-视频姿势深度控制-Control_1991503138804998145.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_854
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LongCat图生视频30秒_1985890878952747009.json、视频生成/图生视频/【遇见AI】wan2.1 Skyreels V3 V2V视频延长_2067528007627141122.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/04-05-01-WAN2.2-FUN-镜头控制-Cameral Control_1991509572473069569.json、视频生成/图生视频/04-05-02-WAN2.2-FUN-首尾帧视频控制-INP_1990968837673787394.json、视频生成/图生视频/04-05-03-WAN2.2-FUN-视频姿势深度控制-Control_1991503138804998145.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：93%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `ImageResizeKJv2`
+全部 3 个 workflow 都包含：
+- `Anything Everywhere`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `Fast Groups Muter (rgthree)`
+- `FloatConstant`
+- `GetNode`
+- `INTConstant`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `SetNode`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
+- `WanVideoSigmaToStep`
 - `WanVideoTextEncodeCached`
 - `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `GetImageRangeFromBatch` —— 1/2 个有
-- `ImageBatchExtendWithOverlap` —— 1/2 个有
-- `Label (rgthree)` —— 1/2 个有
-- `VHS_LoadVideo` —— 1/2 个有
+- `ImageResizeKJv2` —— 2/3 个有
+- `ADE_CameraPoseCombo` —— 1/3 个有
+- `CameraPoseVisualizer` —— 1/3 个有
+- `DWPreprocessor` —— 1/3 个有
+- `DepthAnythingV2Preprocessor` —— 1/3 个有
+- `GetImageSizeAndCount` —— 1/3 个有
+- `ImageBlend` —— 1/3 个有
+- `ImageResize+` —— 1/3 个有
+- `ImpactSwitch` —— 1/3 个有
+- `LoadWanVideoClipTextEncoder` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `VHS_LoadVideo` —— 1/3 个有
+- `WanVideoClipVisionEncode` —— 1/3 个有
+- `WanVideoControlEmbeds` —— 1/3 个有
+- `WanVideoEmptyEmbeds` —— 1/3 个有
+- `WanVideoEncode` —— 1/3 个有
+- `WanVideoFunCameraEmbeds` —— 1/3 个有
 
 ## 典型参数
 
@@ -56,4 +77,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

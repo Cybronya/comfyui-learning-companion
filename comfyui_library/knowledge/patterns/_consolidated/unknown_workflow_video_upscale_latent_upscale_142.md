@@ -3,104 +3,127 @@ name: unknown_workflow_video_upscale_latent_upscale_142
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5625
-common_nodes: [Any Switch (rgthree), Audio Duration (mtb), CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoaderGGUF, EmptyImage, EmptyLTXVLatentVideo, Fast Groups Bypasser (rgthree), GetImageSize, GetNode, HeartMuLa_Transcribe, ImageResizeKJv2, ImageScaleBy, ImpactExecutionOrderController, KSamplerSelect, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVScheduler, LTXVSeparateAVLatent, LTXVSpatioTemporalTiledVAEDecode, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoaderGGUF, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PathchSageAttentionKJ, PreviewAudio, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, ShowText|pysssss, SolidMask, StringReplace, TrimAudioDuration, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
-problems: []
+coverage: 0.811
+common_nodes: [AudioAdjustVolume, AudioCombine, AudioMerge, BasicScheduler, CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, CheckpointLoaderSimple, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, EmptyLatentAudio, Evaluate Integers, GetImageSize, GoogleTranslateTextNode, ImageResizeKJv2, ImageScaleToTotalPixels, Int, JWInteger, JjkText, JoinStrings, KSampler, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM V2, LayerUtility: TextJoin, LoadAudio, LoadImage, LoraLoaderModelOnly, MMAudioFeatureUtilsLoader, MMAudioModelLoader, MMAudioSampler, MathExpression|pysssss, ModelSamplingSD3, PreviewAudio, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, Qwen3_VQA, RH_Captioner, RH_Translator, RandomNoise, RunningHub Deepcleaner, SamplerCustomAdvanced, SaveAudio, SetLatentNoiseMask, SetNode, ShowAnything|Mie, SimpleMath+, SolidMask, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecodeAudio, VAELoader, VAELoaderKJ, VHS_VideoCombine, WooshLoadFlow, WooshSample, WooshTextEncode, easy showAnything]
+problems: [发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/LTX-2 + Qwer3-TTS 数字人_2016443355604983809.json, 视频生成/图生视频/LTX-2 Image2Video Heartmula 图像转视频 音频转录 - 拆分子图版高级工作流_2014681763813007362.json]
+members: [图片生成/图生图/adigital_combination.json_2072223926792581121.json, 视频生成/图生视频/digital_combination.json_2070335522396000257.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_142
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX-2 + Qwer3-TTS 数字人_2016443355604983809.json、视频生成/图生视频/LTX-2 Image2Video Heartmula 图像转视频 音频转录 - 拆分子图版高级工作流_2014681763813007362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/adigital_combination.json_2072223926792581121.json、视频生成/图生视频/digital_combination.json_2070335522396000257.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `Audio Duration (mtb)`
+- `AudioAdjustVolume`
+- `AudioCombine`
+- `AudioMerge`
+- `BasicScheduler`
 - `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Float To Integer`
-- `DualCLIPLoaderGGUF`
-- `EmptyImage`
+- `CR Prompt Text`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
-- `Fast Groups Bypasser (rgthree)`
+- `EmptyLatentAudio`
+- `Evaluate Integers`
 - `GetImageSize`
-- `GetNode`
-- `HeartMuLa_Transcribe`
+- `GoogleTranslateTextNode`
 - `ImageResizeKJv2`
-- `ImageScaleBy`
-- `ImpactExecutionOrderController`
+- `ImageScaleToTotalPixels`
+- `Int`
+- `JWInteger`
+- `JjkText`
+- `JoinStrings`
+- `KSampler`
 - `KSamplerSelect`
-- `LTXVAudioVAEDecode`
+- `LTX2_NAG`
 - `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVImgToVideoInplace`
-- `LTXVLatentUpsampler`
-- `LTXVPreprocess`
-- `LTXVScheduler`
 - `LTXVSeparateAVLatent`
-- `LTXVSpatioTemporalTiledVAEDecode`
+- `LTXVTiledVAEDecode`
 - `LatentUpscaleModelLoader`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: TextJoin`
 - `LoadAudio`
 - `LoadImage`
-- `LoaderGGUF`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
+- `MMAudioFeatureUtilsLoader`
+- `MMAudioModelLoader`
+- `MMAudioSampler`
 - `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
 - `PreviewAudio`
+- `PrimitiveBoolean`
 - `PrimitiveFloat`
 - `PrimitiveInt`
 - `PrimitiveStringMultiline`
+- `Qwen3_VQA`
+- `RH_Captioner`
+- `RH_Translator`
 - `RandomNoise`
+- `RunningHub Deepcleaner`
 - `SamplerCustomAdvanced`
+- `SaveAudio`
 - `SetLatentNoiseMask`
 - `SetNode`
-- `ShowText|pysssss`
+- `ShowAnything|Mie`
+- `SimpleMath+`
 - `SolidMask`
-- `StringReplace`
+- `SoundFlow_GetLength`
 - `TrimAudioDuration`
+- `UNETLoader`
+- `VAEDecodeAudio`
 - `VAELoader`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `WooshLoadFlow`
+- `WooshSample`
+- `WooshTextEncode`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioAdjustVolume` —— 1/2 个有
-- `CheckpointLoaderSimple` —— 1/2 个有
-- `DualCLIPLoader` —— 1/2 个有
-- `FB_Qwen3TTSVoiceClone` —— 1/2 个有
-- `FB_Qwen3TTSVoiceClonePrompt` —— 1/2 个有
-- `FB_Qwen3TTSVoiceDesign` —— 1/2 个有
-- `LTXAVTextEncoderLoader` —— 1/2 个有
-- `LTXVAudioVAELoader` —— 1/2 个有
-- `LayerUtility: PurgeVRAM` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `ReservedVRAMSetter` —— 1/2 个有
-- `ResizeImagesByLongerEdge` —— 1/2 个有
-- `UNETLoader` —— 1/2 个有
-- `easy ckptNames` —— 1/2 个有
-- `easy float` —— 1/2 个有
+- `easy downloadIndexTTSAndLoadModel` —— 1/2 个有
+- `easy indexTTSGenerateSimple` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 40 | - | 2 | 100% |
+| 高度 | 1 | - | 2 | 100% |
+| 采样步数 | 60 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 7 | - | 2 | 100% |
+| 采样算法 | dpmpp_3m_sde_gpu | - | 2 | 100% |
+| 调度器 | exponential | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 2/2 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
+- 宽度 中位数 40，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 60，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 7，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 dpmpp_3m_sde_gpu，2 个样本，一致性 100%
+- 调度器 最常用 exponential，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：发现KSampler但没有VAEDecode
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

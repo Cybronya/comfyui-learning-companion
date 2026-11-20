@@ -1,39 +1,35 @@
 ---
 name: unknown_workflow_generic_1007
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.777667
-common_nodes: [JjkText, LoadImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, SaveImage, easy showAnything]
+coverage: 0.5585
+common_nodes: [LoadImage, LoadVideo, RH_AlibabaWan27VideoEdit, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json, 数字人/数字人/全能图片2.0  多角度镜头控制 一致性风格分镜头  gemini-3.1 多角度可视化控制_2028998340662272001.json, 视频生成/图生视频/S1-1 牛叉产品特效炸裂视频，参考十六宫格底图  产品特效_2050616496979755010.json]
+members: [视频生成/图生视频/Wan2.7 视频编辑（改风格）_2046214657328816129.json, 视频生成/图生视频/Wan2.7+换装换脸动作迁移 视频编辑_2082280794994864129.json, 视频生成/图生视频/Wan2.7+视频编辑 换装换脸 人物角色替换 真实自然_2061645895619407873.json, 视频生成/图生视频/视频换脸 Video Face Swap_2096415335573446658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1007
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json、数字人/数字人/全能图片2.0  多角度镜头控制 一致性风格分镜头  gemini-3.1 多角度可视化控制_2028998340662272001.json、视频生成/图生视频/S1-1 牛叉产品特效炸裂视频，参考十六宫格底图  产品特效_2050616496979755010.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.7 视频编辑（改风格）_2046214657328816129.json、视频生成/图生视频/Wan2.7+换装换脸动作迁移 视频编辑_2082280794994864129.json、视频生成/图生视频/Wan2.7+视频编辑 换装换脸 人物角色替换 真实自然_2061645895619407873.json、视频生成/图生视频/视频换脸 Video Face Swap_2096415335573446658.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `JjkText`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_LLMAPI_Pro_Node`
-- `RH_Nano_Banana2_Gemini31Flash`
-- `SaveImage`
-- `easy showAnything`
+- `LoadVideo`
+- `RH_AlibabaWan27VideoEdit`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ProcessString` —— 2/3 个有
-- `easy promptLine` —— 2/3 个有
-- `RHHiddenNodes` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
 
 ## 典型参数
 

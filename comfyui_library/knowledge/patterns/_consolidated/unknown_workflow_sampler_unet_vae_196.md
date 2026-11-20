@@ -1,69 +1,72 @@
 ---
 name: unknown_workflow_sampler_unet_vae_196
 type: Unknown Workflow
-frequency: 6
-level: moderate
-coverage: 0.854
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 7
+level: strong
+coverage: 0.969429
+common_nodes: [CLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax H3 全能参考 自动提示词工作流_2084174326928076802.json, 视频生成/文生视频/MiniMax H3 全能参考生视频_2085373656615702530.json, 视频生成/文生视频/MiniMax H3 全能大合集工作流_2084920689999572993.json, 视频生成/文生视频/MiniMax H3 分镜成片 + IndexTTS 声音克隆配音｜剧本·角色图·分镜图一次出片（画_2087519875668471809.json, 视频生成/文生视频/MiniMax H3 多图参考成片 V2｜官方六段式提示词 · 口型自然 · IndexTTS 声音克隆配音（画音合一）_2087523744918102018.json, 视频生成/文生视频/MiniMax H3 开源版-多参考图+IndexTTS参考音生视频_2087370253885067266.json]
+members: [图片生成/图生图/ins手持特写LoRA图生图-穿戴甲重绘工作流_2095018721914998785.json, 图片生成/图生图/qwen_image_edit_api_1970688531532312578.json, 图片生成/图生图/qwen_image_edit_test_1973974361189298178.json, 图片生成/图生图/qwen_image_edit_test_1989618857050599425.json, 图片生成/图生图/【橘子AI】Qwen Image Edit Plus（不偏移）_1971481241100959746.json, 图片生成/图生图/真人转动漫多画风_2056308762197184514.json, 图片生成/图生图/高泛化性的“全能换装”——换装、换鞋、换帽同步进行_2046195318701690881.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_196
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 全能参考 自动提示词工作流_2084174326928076802.json、视频生成/文生视频/MiniMax H3 全能参考生视频_2085373656615702530.json、视频生成/文生视频/MiniMax H3 全能大合集工作流_2084920689999572993.json、视频生成/文生视频/MiniMax H3 分镜成片 + IndexTTS 声音克隆配音｜剧本·角色图·分镜图一次出片（画_2087519875668471809.json、视频生成/文生视频/MiniMax H3 多图参考成片 V2｜官方六段式提示词 · 口型自然 · IndexTTS 声音克隆配音（画音合一）_2087523744918102018.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/ins手持特写LoRA图生图-穿戴甲重绘工作流_2095018721914998785.json、图片生成/图生图/qwen_image_edit_api_1970688531532312578.json、图片生成/图生图/qwen_image_edit_test_1973974361189298178.json、图片生成/图生图/qwen_image_edit_test_1989618857050599425.json、图片生成/图生图/【橘子AI】Qwen Image Edit Plus（不偏移）_1971481241100959746.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 5/6 个有
-- `PrimitiveStringMultiline` —— 5/6 个有
-- `AudioCrop` —— 3/6 个有
-- `IndexTTS2Run` —— 3/6 个有
-- `MiniMaxH3BlockCacheT8` —— 3/6 个有
-- `MultiLinePromptIndex` —— 3/6 个有
-- `SaveAudioMP3` —— 3/6 个有
-- `VAEDecodeAudio` —— 3/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `PreviewAny` —— 1/6 个有
-- `ShowText|pysssss` —— 1/6 个有
-- `llama_cpp_instruct_adv` —— 1/6 个有
-- `llama_cpp_model_loader` —— 1/6 个有
+- `CFGNorm` —— 6/7 个有
+- `EmptySD3LatentImage` —— 6/7 个有
+- `LoraLoaderModelOnly` —— 6/7 个有
+- `ModelSamplingAuraFlow` —— 6/7 个有
+- `TextEncodeQwenImageEditPlus` —— 6/7 个有
+- `CLIPTextEncode` —— 5/7 个有
+- `FluxKontextImageScale` —— 3/7 个有
+- `Text` —— 3/7 个有
+- `GetImageSize+` —— 2/7 个有
+- `Image Comparer (rgthree)` —— 2/7 个有
+- `Int` —— 1/7 个有
+- `PrimitiveStringMultiline` —— 1/7 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/7 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 4 - 8 | 6 | 80% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 8，6 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/7 个样本）：Steps较低可能导致细节不足

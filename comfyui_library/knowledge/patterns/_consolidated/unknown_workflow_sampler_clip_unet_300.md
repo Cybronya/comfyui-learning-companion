@@ -1,63 +1,71 @@
 ---
 name: unknown_workflow_sampler_clip_unet_300
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.854
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 5
+level: strong
+coverage: 0.7804
+common_nodes: [CLIPTextEncode, ColorMatch, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, ImpactSwitch, KSampler, LoadAndResizeImage, PreviewImage, RH_Captioner, RH_Translator, ReferenceLatent, SaveImage, ShowText|pysssss, TTP_text_mix, TextInput_, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/flux-2-klein图像编辑_2013562172701413377.json, 图片生成/图生图/flux2 klein 9B极速换脸，0像素偏移，最快4步出图。_2013267509121654786.json, 图片生成/图生图/flux2klein4b内衣虚拟试衣低显存_2060710585700012034.json, 图片生成/图生图/flux2klein4b内衣试衣快速版_2062130665725980673.json]
+members: [图片生成/图生图/kontext-dev-溶图-打光-扩图_1939259159177248769.json, 图片生成/图生图/kontext-dev-溶图-打光-扩图_1949707668918804482.json, 图片生成/图生图/kontext本地版-溶图-打光-自动版_2095333006037831682.json, 图片生成/图生图/kontext本地版-溶图-打光-自动版_2095455623986106370.json, 平台全量/Flux.1-Kontext图片主体打光_1969668933903130626.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_300
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/flux-2-klein图像编辑_2013562172701413377.json、图片生成/图生图/flux2 klein 9B极速换脸，0像素偏移，最快4步出图。_2013267509121654786.json、图片生成/图生图/flux2klein4b内衣虚拟试衣低显存_2060710585700012034.json、图片生成/图生图/flux2klein4b内衣试衣快速版_2062130665725980673.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/kontext-dev-溶图-打光-扩图_1939259159177248769.json、图片生成/图生图/kontext-dev-溶图-打光-扩图_1949707668918804482.json、图片生成/图生图/kontext本地版-溶图-打光-自动版_2095333006037831682.json、图片生成/图生图/kontext本地版-溶图-打光-自动版_2095455623986106370.json、平台全量/Flux.1-Kontext图片主体打光_1969668933903130626.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
+- `ColorMatch`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
+- `ImpactSwitch`
+- `KSampler`
+- `LoadAndResizeImage`
+- `PreviewImage`
+- `RH_Captioner`
+- `RH_Translator`
 - `ReferenceLatent`
-- `SamplerCustomAdvanced`
 - `SaveImage`
+- `ShowText|pysssss`
+- `TTP_text_mix`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ImageStitch` —— 2/4 个有
-- `PathchSageAttentionKJ` —— 2/4 个有
-- `easy ifElse` —— 2/4 个有
-- `Fast Bypasser (rgthree)` —— 1/4 个有
-- `ImageConcanate` —— 1/4 个有
-- `ImageCropByMask` —— 1/4 个有
-- `Int` —— 1/4 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/4 个有
-- `RMBG` —— 1/4 个有
-- `Resize` —— 1/4 个有
+- `Primitive integer [Crystools]` —— 4/5 个有
+- `ImageConcanate` —— 3/5 个有
+- `LoraLoader` —— 3/5 个有
+- `RepeatLatentBatch` —— 3/5 个有
+- `Image Comparer (rgthree)` —— 2/5 个有
+- `ImagePadForOutpaint` —— 2/5 个有
+- `Int` —— 2/5 个有
+- `easy imageConcat` —— 2/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 20 | 20 - 20 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -65,4 +73,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 20，观测区间 20 - 20，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

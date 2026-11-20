@@ -1,73 +1,83 @@
 ---
 name: unknown_workflow_sampler_unet_vae_256
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.8415
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.7828
+common_nodes: [CM_IntToFloat, ComfyMathExpression, Image Size to Number, ImageMergeTileList, KSampler, LoadImage, Number Operation, PrimitiveInt, ResizeImageMaskNode, SaveImage, SeedVR2Conditioning, SeedVR2PostProcessing, SeedVR2Preprocess, SimpleMath+, SplitImageToTileList, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/MImaxH3工作流超强开源视频加速ENGENG_2087086399177707522.json, 视频生成/图生视频/Mini Max H3-9图参考生音视频-高质量加速版_2095466875982536706.json, 视频生成/图生视频/MiniMax H3 参考生视频lightx2v加速_2084156059366813698.json, 视频生成/图生视频/MiniMax_H3_00325_唱歌_2086448635486760962.json]
+members: [图片生成/图生图/SeedVR2官方无损超分高清放大！当前市面上最快放大模型_2097158324331573250.json, 图片生成/图生图/SeedVR2官方无损超分高清放大！当前市面上最快放大模型_2097498595476987905.json, 图片生成/图生图/SeedVR2放大_官方流_质量极高_2099307171841400833.json, 图片生成/图生图/SeedVR2放大_官方流_质量极高_2099661268289409025.json, 平台全量/SeedVR2放大 官方流 质量极高_2098319105307795457.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_256
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/MImaxH3工作流超强开源视频加速ENGENG_2087086399177707522.json、视频生成/图生视频/Mini Max H3-9图参考生音视频-高质量加速版_2095466875982536706.json、视频生成/图生视频/MiniMax H3 参考生视频lightx2v加速_2084156059366813698.json、视频生成/图生视频/MiniMax_H3_00325_唱歌_2086448635486760962.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/SeedVR2官方无损超分高清放大！当前市面上最快放大模型_2097158324331573250.json、图片生成/图生图/SeedVR2官方无损超分高清放大！当前市面上最快放大模型_2097498595476987905.json、图片生成/图生图/SeedVR2放大_官方流_质量极高_2099307171841400833.json、图片生成/图生图/SeedVR2放大_官方流_质量极高_2099661268289409025.json、平台全量/SeedVR2放大 官方流 质量极高_2098319105307795457.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
+- `CM_IntToFloat`
 - `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+- `Image Size to Number`
+- `ImageMergeTileList`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `Number Operation`
+- `PrimitiveInt`
+- `ResizeImageMaskNode`
+- `SaveImage`
+- `SeedVR2Conditioning`
+- `SeedVR2PostProcessing`
+- `SeedVR2Preprocess`
+- `SimpleMath+`
+- `SplitImageToTileList`
 - `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEDecodeTiled`
+- `VAEEncodeTiled`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 3/4 个有
-- `LoraLoaderBypassModelOnly` —— 3/4 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/4 个有
-- `PrimitiveStringMultiline` —— 3/4 个有
-- `ApplyFaceProcessor` —— 1/4 个有
-- `CR Prompt Text` —— 1/4 个有
-- `CompressImages` —— 1/4 个有
-- `FaceProcessorLoader` —— 1/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `ModelPreviewOverrideKJ` —— 1/4 个有
-- `PreviewImage` —— 1/4 个有
-- `RTXVideoSuperResolution` —— 1/4 个有
-- `ResizeImagesByLongerEdge` —— 1/4 个有
-- `SaveMP4` —— 1/4 个有
-- `SeedVR2` —— 1/4 个有
-- `SeedVR2BlockSwap` —— 1/4 个有
-- `easy showAnything` —— 1/4 个有
+- `GetNode` —— 3/5 个有
+- `Image Comparer (rgthree)` —— 3/5 个有
+- `SetNode` —— 3/5 个有
+- `easy int` —— 3/5 个有
+- `INTConstant` —— 2/5 个有
+- `LayerFilter: GaussianBlur` —— 2/5 个有
+- `PreviewImage` —— 2/5 个有
+- `easy imageConcat` —— 2/5 个有
+- `Bookmark (rgthree)` —— 1/5 个有
+- `Label (rgthree)` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1 | 1 - 1 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 5/5 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 高发问题（5/5 个样本）：发现KSampler但没有VAEDecode

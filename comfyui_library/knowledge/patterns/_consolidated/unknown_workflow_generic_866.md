@@ -3,44 +3,34 @@ name: unknown_workflow_generic_866
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.69325
-common_nodes: [CR Text, GetTextFromJson, HeartMuLa_Generate, ImpactSwitch, Int, LoadJsonFromText, RH_LLMAPI_NODE, SaveAudio, Text Concatenate, Text Find and Replace, Text Multiline, TextBox, Textbox, easy showAnything]
+coverage: 1
+common_nodes: [LoadImage, RH_SeedreamV5LiteImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014218264380973058.json, 音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014237962199900161.json, 音频生成/音频生成/HeartMuLa音乐生成_2014687206341877762.json, 音频生成/音频生成/HeartMuLa音乐生成_2026198043434950657.json]
+members: [图片生成/图生图/YJ-APP-SeedreamV5Lite_i2i_v5.0_2041382078087962626.json, 图片生成/图生图/YJ-APP-三图编辑-SeedreamV5Lite_i2i_v5.0_2042125353514180610.json, 图片生成/图生图/YJ-APP-单图编辑-SeedreamV5Lite_i2i_v5.0_2044317697139286018.json, 图片生成/图生图/YJ-APP-双图编辑-SeedreamV5Lite_i2i_v5.0_2042119252441833474.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_866
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014218264380973058.json、音频生成/音频生成/HeartMuLa最新最强开源音乐生成_2014237962199900161.json、音频生成/音频生成/HeartMuLa音乐生成_2014687206341877762.json、音频生成/音频生成/HeartMuLa音乐生成_2026198043434950657.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/YJ-APP-SeedreamV5Lite_i2i_v5.0_2041382078087962626.json、图片生成/图生图/YJ-APP-三图编辑-SeedreamV5Lite_i2i_v5.0_2042125353514180610.json、图片生成/图生图/YJ-APP-单图编辑-SeedreamV5Lite_i2i_v5.0_2044317697139286018.json、图片生成/图生图/YJ-APP-双图编辑-SeedreamV5Lite_i2i_v5.0_2042119252441833474.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `CR Text`
-- `GetTextFromJson`
-- `HeartMuLa_Generate`
-- `ImpactSwitch`
-- `Int`
-- `LoadJsonFromText`
-- `RH_LLMAPI_NODE`
-- `SaveAudio`
-- `Text Concatenate`
-- `Text Find and Replace`
-- `Text Multiline`
-- `TextBox`
-- `Textbox`
-- `easy showAnything`
+- `LoadImage`
+- `RH_SeedreamV5LiteImageToImage`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `Switch` —— 1/4 个有
 
 ## 典型参数
 

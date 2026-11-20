@@ -1,59 +1,52 @@
 ---
 name: unknown_workflow_sampler_unet_vae_32
 type: Unknown Workflow
-frequency: 17
+frequency: 18
 level: moderate
-coverage: 0.919529
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CreateVideo, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
+coverage: 0.897167
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, PathchSageAttentionKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/minimax h3图生视频_2092555129097641986.json, 视频生成/文生视频/AI视频生成v2_2089671693664083970.json, 视频生成/文生视频/MiniMax H3｜20步质量基准｜参考生视频_2098317985948721153.json, 视频生成/文生视频/MiniMax H3｜20步质量基准｜首尾帧视频_2098317999458570241.json, 视频生成/文生视频/MiniMax H3｜Larry 4步｜参考生视频_2098331637259001857.json, 视频生成/文生视频/MiniMax H3｜Larry 4步｜首尾帧_2098334091904118785.json, 视频生成/文生视频/MiniMax H3｜Larry 8步｜参考生视频_2098334052255363074.json, 视频生成/文生视频/MiniMax H3｜Larry 8步｜首尾帧_2098334066805395458.json, 视频生成/文生视频/MiniMax H3｜SageAttention｜首尾帧+参考生视频_2098331656624107522.json, 视频生成/文生视频/Minimax H3 AI萌宠视频工作流（宠物带货15秒1080P）_2092564221451132930.json, 视频生成/文生视频/Minimax H3 文生视频写实加速工作流（含提示词模版10秒1080P）_2095431233298853890.json, 视频生成/文生视频/Minimax H3 文生视频工作流（4步加速、支持15秒1080P）_2090647966460768258.json, 视频生成/文生视频/Minimax 多图参考生视频，超级好用！_2089722417114607617.json, 视频生成/文生视频/Minimax+H3+文生视频写实加速工作流（含提示词模版10秒1080P）_2092135642640769026.json, 音频生成/音频生成/AI视频模型转音频模型_2089669249060134913.json, 音频生成/音频生成/MINIMAX视频模型转音频模型_2090695139621695490.json, 音频生成/音频生成/Minimax H3-AI音乐+声音克隆工作流（超长生成、多音频参考）_2090786847566946305.json]
+members: [图片生成/图生图/MiniMax H3 图片编辑！多图编辑！B站艾橘溪_2086814028822827009.json, 图片生成/图生图/MiniMax H3 多图编辑!效果比肩G-2.0_2087007203873091586.json, 图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2087122607928864770.json, 图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2087156363926532098.json, 图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2089321212186021890.json, 图片生成/图生图/MiniMax_H3图片视频图片编辑_2087427695289397250.json, 图片生成/图生图/MiniMax_H3开源版_图片编辑_多图编辑_图片换背景_创意生图_2087429903057772545.json, 图片生成/图生图/MiniMax_H3开源版_图片编辑_多图编辑_图片换背景_创意生图_2096887206345527297.json, 图片生成/图生图/Minimax H3：双图编辑_2087112328516030466.json, 图片生成/文生图/MiniMax-H3 文生图片+全节点注释_2085181492325601281.json, 图片生成/文生图/MiniMaxH3 文生图文生图文生图文生图不是视频！2K加速版_2088278482991280130.json, 图片生成/文生图/MiniMaxH3 文生图！2K加速版！_2085238969377316866.json, 图片生成/文生图/MiniMaxH3开源 文生图文生图文生图 2K加速版_2088565003669557250.json, 图片生成/文生图/MiniMaxH3开源 文生图文生图文生图 2K加速版_2090436462390108161.json, 图片生成/文生图/MiniMaxH3开源版 文生图 2K加速版_2085323844386123777.json, 图片生成/文生图/MiniMaxH3开源版 文生图 2K加速版_2085326821125615617.json, 图片生成/文生图/MiniMax_H3 文生图-2K_2085311261709000706.json, 平台全量/MiniMax_H3开源版_图片编辑_多图编辑_图片换背景_创意生图_2097226251407806465.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_32
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/minimax h3图生视频_2092555129097641986.json、视频生成/文生视频/AI视频生成v2_2089671693664083970.json、视频生成/文生视频/MiniMax H3｜20步质量基准｜参考生视频_2098317985948721153.json、视频生成/文生视频/MiniMax H3｜20步质量基准｜首尾帧视频_2098317999458570241.json、视频生成/文生视频/MiniMax H3｜Larry 4步｜参考生视频_2098331637259001857.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/MiniMax H3 图片编辑！多图编辑！B站艾橘溪_2086814028822827009.json、图片生成/图生图/MiniMax H3 多图编辑!效果比肩G-2.0_2087007203873091586.json、图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2087122607928864770.json、图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2087156363926532098.json、图片生成/图生图/MiniMax H3开源版 图片编辑 多图编辑 图片换背景 创意生图_2089321212186021890.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：18
 - **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 18 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
-- `CreateVideo`
+- `KSamplerSelect`
+- `PathchSageAttentionKJ`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 14/17 个有
-- `KSamplerSelect` —— 13/17 个有
-- `MiniMaxH3TurboLoRA` —— 12/17 个有
-- `MiniMaxH3Easy` —— 10/17 个有
-- `MiniMaxH3EasyModelAdapter` —— 10/17 个有
-- `MiniMaxH3EasyOutput` —— 10/17 个有
-- `ModelAttentionBackend` —— 10/17 个有
-- `LoraLoaderModelOnly` —— 8/17 个有
-- `MiniMaxH3AudioConditioningT8` —— 7/17 个有
-- `SpectrumApplyMiniMaxH3` —— 6/17 个有
-- `MiniMaxH3TurboSampler` —— 4/17 个有
-- `ExtendIntermediateSigmas` —— 2/17 个有
-- `LoadAudio` —— 2/17 个有
-- `SaveAudioAdvanced` —— 2/17 个有
-- `easy promptList` —— 2/17 个有
-- `LoadVideo` —— 1/17 个有
-- `PathchSageAttentionKJ` —— 1/17 个有
-- `PreviewAudio` —— 1/17 个有
+- `EasyCache` —— 17/18 个有
+- `ImageFromBatch` —— 17/18 个有
+- `JjkText` —— 17/18 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 17/18 个有
+- `LoadImage` —— 11/18 个有
+- `MiniMaxH3ReferenceToVideo` —— 10/18 个有
+- `LayerUtility: ImageReel` —— 9/18 个有
+- `LayerUtility: ImageReelComposit` —— 9/18 个有
+- `MiniMaxH3ImageToVideo` —— 8/18 个有
+- `孤海注释` —— 1/18 个有
 
 ## 典型参数
 

@@ -1,81 +1,72 @@
 ---
 name: image_to_image_lora_sampler_unet_92
 type: Image To Image
-frequency: 7
-level: weak
-coverage: 0.893571
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.977125
+common_nodes: [CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, Krea2OstrisEditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeKrea2OstrisEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/一键换衣 OOTD 3.0【 edit 2511 最新版 】_2010296531844337665.json, 图片生成/图生图/一键换装 女装童装 小红书电商带货_2087841507427573761.json, 图片生成/图生图/千问编辑2511-人物多角度出图_2039933028406923265.json, 图片生成/图生图/千问编辑2511-人物多角度出图_2059908761376083970.json, 图片生成/图生图/图像编辑模型测试-Qwen Image Edit 2511_2110543678782664706.json, 图片生成/图生图/多图编辑-小红书FireRed-Image-edit1.1-40步原版 电商模特换装等_2030532517639495682.json, 图片生成/图生图/多图编辑-小红书FireRed-Image-edit1.1-加速版 电商模特换装等_2030120115282386945.json]
+members: [图片生成/图生图/Krea2 Edit 动漫转写实风格_2080856481674653698.json, 图片生成/图生图/Krea2 Edit 动漫转写实风格_2083388583871868930.json, 图片生成/图生图/Krea2_Edit_动漫转写实风格_2096782005672439809.json, 图片生成/图生图/Krea2_Edit_动漫转写实风格_2096882987966226434.json, 图片生成/图生图/Krea2_图生四视图_2101122733563269121.json, 图片生成/图生图/二次元转写实 Krea2-Anime2Real_2081945637884620801.json, 图片生成/文生图/Krea2_图生四视图角色设定集图像生成工作流_2101369065821528065.json, 平台全量/二次元转写实 Krea2-Anime2Real_2081755569089765377.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_92
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/一键换衣 OOTD 3.0【 edit 2511 最新版 】_2010296531844337665.json、图片生成/图生图/一键换装 女装童装 小红书电商带货_2087841507427573761.json、图片生成/图生图/千问编辑2511-人物多角度出图_2039933028406923265.json、图片生成/图生图/千问编辑2511-人物多角度出图_2059908761376083970.json、图片生成/图生图/图像编辑模型测试-Qwen Image Edit 2511_2110543678782664706.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Krea2 Edit 动漫转写实风格_2080856481674653698.json、图片生成/图生图/Krea2 Edit 动漫转写实风格_2083388583871868930.json、图片生成/图生图/Krea2_Edit_动漫转写实风格_2096782005672439809.json、图片生成/图生图/Krea2_Edit_动漫转写实风格_2096882987966226434.json、图片生成/图生图/Krea2_图生四视图_2101122733563269121.json…）
 
 - **类型**：Image To Image
-- **样本数**：7
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：89%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGNorm`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
+- `Krea2OstrisEditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeKrea2OstrisEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 4/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/7 个有
-- `ImageConcatMulti` —— 3/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `easy int` —— 3/7 个有
-- `AddLabel` —— 2/7 个有
-- `FluxKontextImageScale` —— 2/7 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 2/7 个有
-- `Image Comparer (rgthree)` —— 2/7 个有
-- `KOOK_SaveJPGImage` —— 2/7 个有
-- `CLIPTextEncode` —— 1/7 个有
-- `CR Text` —— 1/7 个有
-- `CR Text Concatenate` —— 1/7 个有
-- `EmptySD3LatentImage` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `RHHiddenNodes` —— 1/7 个有
-- `easy cleanGpuUsed` —— 1/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/8 个有
+- `FluxKontextImageScale` —— 4/8 个有
+- `Easy_QwenEdit2509` —— 3/8 个有
+- `Image Comparer (rgthree)` —— 2/8 个有
+- `ImageResizeKJv2` —— 2/8 个有
+- `Image_Resize_longsize` —— 2/8 个有
+- `Textbox` —— 1/8 个有
+- `easy imageConcat` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 5 | 4 - 40 | 7 | 0% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 7 | 27% |
-| 采样算法 | euler | - | 7 | 86% |
-| 调度器 | simple | - | 7 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
+| 采样步数 | 9 | 8 - 10 | 8 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | beta57 | - | 8 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 5，观测区间 4 - 40，7 个样本，取值分散，一致性仅 0%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，7 个样本，取值分散，一致性仅 27%
-- 采样算法 最常用 euler，7 个样本，一致性 86%
-- 调度器 最常用 simple，7 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
-- 高发问题（6/7 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 9，观测区间 8 - 10，8 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 beta57，8 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（4/8 个样本）：Steps较低可能导致细节不足

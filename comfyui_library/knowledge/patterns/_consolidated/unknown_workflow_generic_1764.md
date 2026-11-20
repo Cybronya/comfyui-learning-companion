@@ -3,29 +3,33 @@ name: unknown_workflow_generic_1764
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.5835
-common_nodes: [PrimitiveStringMultiline, RH_RhartVideoGTextToVideo, SaveVideo]
+coverage: 1
+common_nodes: [SaveImage, SeedVR2, SeedVR2ExtraArgs]
 problems: []
 missing: []
-members: [视频生成/文生视频/全能视频X--文生图(低价渠道版)_2082452945412640770.json, 视频生成/文生视频/全能视频x文生视频低价版 6-30s 仅0.03元_秒_2055113564335157249.json]
+members: [图片生成/图生图/模糊图片变高清_2011377317892857857.json, "图片生成/文生图/全能G工作流｜一键生成电影级图像,4K超清直出_2047296945349201922.json"]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1764
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/文生视频/全能视频X--文生图(低价渠道版)_2082452945412640770.json、视频生成/文生视频/全能视频x文生视频低价版 6-30s 仅0.03元_秒_2055113564335157249.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/模糊图片变高清_2011377317892857857.json、图片生成/文生图/全能G工作流｜一键生成电影级图像,4K超清直出_2047296945349201922.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `PrimitiveStringMultiline`
-- `RH_RhartVideoGTextToVideo`
-- `SaveVideo`
+- `SaveImage`
+- `SeedVR2`
+- `SeedVR2ExtraArgs`
+
+**可变部分**（部分 workflow 才有）：
+- `ImageURLLoader` —— 1/2 个有
+- `RH_RhartImageG2TextToImage` —— 1/2 个有
 
 ## 典型参数
 

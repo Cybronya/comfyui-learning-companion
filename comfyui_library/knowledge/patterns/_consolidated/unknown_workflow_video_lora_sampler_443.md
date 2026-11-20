@@ -1,78 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_443
 type: Unknown Workflow
-frequency: 5
+frequency: 7
 level: moderate
-coverage: 0.5942
-common_nodes: [Any Switch (rgthree), AutoCropFaces, BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), GetImagesFromBatchIndexed, GetNode, GetVideoComponents, ImageConcatFromBatch, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PreviewImage, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine]
+coverage: 0.880857
+common_nodes: [AudioCrop, AudioCropProcessUTK, CLIPVisionLoader, CM_FloatUnaryOperation, CM_IntToFloat, CR Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, HuMoEmbeds, INTConstant, ImageBatch, ImageFromBatch+, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LazySwitch1way, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, NormalizeAudioLoudness, PrimitiveString, SoundFlow_Concatenator, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoCombineEmbeds, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader, WhisperModelLoader, easy boolean, easy int, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/H3制作角色资产四视图角色卡1_直连修正_2102282609287065601.json, 图片生成/图生图/H3制作角色资产四视图角色卡超强一致性详拆工作流08集_2098405173931630594.json, 图片生成/图生图/Minimax H3--AI短剧人物设定多视图_2098636265678794754.json, 图片生成/图生图/Minimax h3 高一致性-人物四视图快速处理V2.0(PLUS)_2107343809830023169.json, 图片生成/图生图/角色高一致性-人物四视图 Minimax h3_2114600944641069058.json]
+members: [视频生成/图生视频/HUMO数字人-自选多分镜图生视频_2031633089117560834.json, 视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2048943364548071425.json, 视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2049741218380300290.json, 视频生成/图生视频/图生视频-数字人-单分镜_多分镜_2053646758080720898.json, 视频生成/图生视频/数字人-图生视频-单分镜_多分镜-HUMO-3_1980829225919926273.json, 视频生成/图生视频/数字人-图生视频-单分镜_多分镜-HUMO_1973235123128807426.json, 视频生成/图生视频/数字人-图生视频-多分镜-HUMO1号_1991795582006145025.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_443
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/H3制作角色资产四视图角色卡1_直连修正_2102282609287065601.json、图片生成/图生图/H3制作角色资产四视图角色卡超强一致性详拆工作流08集_2098405173931630594.json、图片生成/图生图/Minimax H3--AI短剧人物设定多视图_2098636265678794754.json、图片生成/图生图/Minimax h3 高一致性-人物四视图快速处理V2.0(PLUS)_2107343809830023169.json、图片生成/图生图/角色高一致性-人物四视图 Minimax h3_2114600944641069058.json）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/HUMO数字人-自选多分镜图生视频_2031633089117560834.json、视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2048943364548071425.json、视频生成/图生视频/图生视频-数字人-单分镜_多分镜-HUMO_2049741218380300290.json、视频生成/图生视频/图生视频-数字人-单分镜_多分镜_2053646758080720898.json、视频生成/图生视频/数字人-图生视频-单分镜_多分镜-HUMO-3_1980829225919926273.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `Any Switch (rgthree)`
-- `AutoCropFaces`
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `Fast Groups Bypasser (rgthree)`
-- `Fast Muter (rgthree)`
-- `GetImagesFromBatchIndexed`
-- `GetNode`
-- `GetVideoComponents`
-- `ImageConcatFromBatch`
-- `KSamplerSelect`
+全部 7 个 workflow 都包含：
+- `AudioCrop`
+- `AudioCropProcessUTK`
+- `CLIPVisionLoader`
+- `CM_FloatUnaryOperation`
+- `CM_IntToFloat`
+- `CR Text`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `HuMoEmbeds`
+- `INTConstant`
+- `ImageBatch`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LazySwitch1way`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `NormalizeAudioLoudness`
+- `PrimitiveString`
+- `SoundFlow_Concatenator`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoCombineEmbeds`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `WhisperModelLoader`
+- `easy boolean`
+- `easy int`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 4/5 个有
-- `SaveImage` —— 4/5 个有
-- `ResizeImageMaskNode` —— 3/5 个有
-- `ImageScaleToTotalPixels` —— 2/5 个有
-- `SeedVR2LoadDiTModel` —— 2/5 个有
-- `SeedVR2LoadVAEModel` —— 2/5 个有
-- `SeedVR2VideoUpscaler` —— 2/5 个有
-- `workflow>SeedVR放大节点` —— 2/5 个有
-- `39de0e19-7117-42df-9b3d-b677b1d4bf50` —— 1/5 个有
-- `ImageConcatMulti` —— 1/5 个有
-- `ImageScaleBy` —— 1/5 个有
-- `LayerUtility: SaveImagePlus` —— 1/5 个有
-- `SaveImageAdvanced` —— 1/5 个有
-- `VOSR2ModelLoader` —— 1/5 个有
-- `VOSR2Upscale` —— 1/5 个有
-- `easy float` —— 1/5 个有
-- `easy int` —— 1/5 个有
-- `孤海注释` —— 1/5 个有
+- `ColorMatch` —— 6/7 个有
+- `ImpactSwitch` —— 6/7 个有
+- `easy compare` —— 6/7 个有
+- `MuterSwitcher` —— 1/7 个有
+- `🎈GroupDetector` —— 1/7 个有
+- `🎈StateTransfer` —— 1/7 个有
 
 ## 典型参数
 

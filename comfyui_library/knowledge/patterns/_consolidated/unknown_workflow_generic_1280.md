@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_generic_1280
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.9
-common_nodes: [BagelImageUnderstanding, BagelModelLoader, LoadImage, SaveImage]
+frequency: 3
+level: moderate
+coverage: 0.699
+common_nodes: [PreviewImage, SaveImage, VHS_LoadVideo]
 problems: []
 missing: []
-members: [图片生成/反推提示词/Bagel反推_1926998734700236802.json, 图片生成/反推提示词/Bagel提示词反推V2（10倍加速版）_1926956885998796801.json]
+members: [平台全量/360度角色一致性大法_1990377276086902785.json, 平台全量/Comfyui节点系列64-Select Images选择图片帧节点_2060885013700370434.json, 平台全量/抽取视频指定帧_1989878636046110721.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1280
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/反推提示词/Bagel反推_1926998734700236802.json、图片生成/反推提示词/Bagel提示词反推V2（10倍加速版）_1926956885998796801.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/360度角色一致性大法_1990377276086902785.json、平台全量/Comfyui节点系列64-Select Images选择图片帧节点_2060885013700370434.json、平台全量/抽取视频指定帧_1989878636046110721.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：90%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BagelImageUnderstanding`
-- `BagelModelLoader`
-- `LoadImage`
+全部 3 个 workflow 都包含：
+- `PreviewImage`
 - `SaveImage`
+- `VHS_LoadVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `Bjornulf_ShowStringText` —— 1/2 个有
-- `ShowText|pysssss` —— 1/2 个有
+- `FL_ImageSelector` —— 1/3 个有
+- `VHS_SelectImages` —— 1/3 个有
 
 ## 典型参数
 
@@ -42,4 +41,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

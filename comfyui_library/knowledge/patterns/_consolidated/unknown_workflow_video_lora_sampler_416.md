@@ -1,64 +1,68 @@
 ---
 name: unknown_workflow_video_lora_sampler_416
 type: Unknown Workflow
-frequency: 6
+frequency: 7
 level: moderate
-coverage: 0.710333
-common_nodes: [GetImageSizeAndCount, GetNode, INTConstant, ImageBatchMulti, InvertMask, LoadImage, LoadWanVideoT5TextEncoder, RepeatImageBatch, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVACEStartToEndFrame, WanVideoVAELoader]
+coverage: 0.562
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, GetNode, ImageResizeKJv2, KSamplerSelect, Label (rgthree), LoraLoaderModelOnly, ModelSamplingSD3, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, SetNode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 + SVI2：三镜头带货lyan_2021226831017418753.json, 视频生成/图生视频/Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.json, 视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049742304176558082.json, 视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049752785217966082.json, 视频生成/文生视频/SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_1998603247713681410.json, 视频生成/文生视频/SVI-Wan22-1207超长视频生成工作流-课程同步工作流_1998388912689176577.json]
+members: [平台全量/ComfyUI SCAIL 2 Face Detailer 视频换脸 公开版_2075051126759710722.json, 平台全量/SCAIL 2 Face Detailer 视频换装_2086065069724626946.json, 视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json, 视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2107354460371636226.json, 视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2075049712163581954.json, 视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2100839392154841090.json, 视频生成/图生视频/ComfyUI SCAIL 2 极简长视频生成 单图_2100862026611519490.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_416
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 + SVI2：三镜头带货lyan_2021226831017418753.json、视频生成/图生视频/Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.json、视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049742304176558082.json、视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049752785217966082.json、视频生成/文生视频/SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_1998603247713681410.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/ComfyUI SCAIL 2 Face Detailer 视频换脸 公开版_2075051126759710722.json、平台全量/SCAIL 2 Face Detailer 视频换装_2086065069724626946.json、视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json、视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2107354460371636226.json、视频生成/图生视频/ComfyUI SCAIL 2 动作迁移极简长视频生成_2075049712163581954.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `GetImageSizeAndCount`
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple`
+- `DiffusionModelLoaderKJ`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
 - `GetNode`
-- `INTConstant`
-- `ImageBatchMulti`
-- `InvertMask`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `RepeatImageBatch`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `SCAIL2ScheduledLongVideoWithSAM`
+- `SCAIL2SegmentPlanBuilder`
 - `SetNode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEStartToEndFrame`
-- `WanVideoVAELoader`
+- `VHS_VideoInfo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 5/6 个有
-- `SimpleMath+` —— 5/6 个有
-- `ImageResizeKJv2` —— 4/6 个有
-- `CR Text` —— 2/6 个有
-- `DF_Int_to_Float` —— 2/6 个有
-- `JWInteger` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `MathExpression|pysssss` —— 2/6 个有
-- `IndexTTSRun` —— 1/6 个有
-- `LoadAudio` —— 1/6 个有
-- `MultiLinePromptIndex` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `SaveAudioMP3` —— 1/6 个有
+- `CS-MultiImageLoader` —— 6/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/7 个有
+- `PrimitiveStringMultiline` —— 6/7 个有
+- `LoadImage` —— 5/7 个有
+- `SaveImage` —— 5/7 个有
+- `GetImageSize` —— 4/7 个有
+- `PreviewImage` —— 4/7 个有
+- `PrimitiveBoolean` —— 4/7 个有
+- `PrimitiveInt` —— 4/7 个有
+- `SCAIL2AlignReferenceFaceToCrop` —— 4/7 个有
+- `SCAIL2FaceCompositeBack` —— 4/7 个有
+- `SCAIL2HeadTrackCrop` —— 4/7 个有
+- `SimpleMath+` —— 4/7 个有
+- `easy ifElse` —— 4/7 个有
+- `ComfySwitchNode` —— 3/7 个有
+- `FilmGrain` —— 3/7 个有
+- `ImageConcatMulti` —— 3/7 个有
 
 ## 典型参数
 

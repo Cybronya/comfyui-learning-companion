@@ -1,35 +1,35 @@
 ---
 name: image_to_image_sampler_clip_unet_148
 type: Image To Image
-frequency: 3
-level: moderate
-coverage: 0.921333
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, LatentCutToBatch, LoadImage, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 4
+level: strong
+coverage: 0.86875
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, GetImageSize, KSampler, LoadImage, PreviewImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/千问 Image Layered 分层助手，美工的好帮手!_2037626157163614210.json, 图片生成/图生图/千问分层 Image Layered_2002530524985999361.json, 图片生成/图生图/生图-图像分层-Qwen Image Layered_2004025316857290754.json]
+members: [图片生成/图生图/Kontext精准移除_1946136768744701953.json, 图片生成/图生图/Kontext跟Q版的自己一起跳舞_1943191400639062017.json, 图片生成/图生图/自己用：Kontext一键移除_1946240563878486017.json, 平台全量/Kontext-物品移除-_1953264341514653698.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_148
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/千问 Image Layered 分层助手，美工的好帮手!_2037626157163614210.json、图片生成/图生图/千问分层 Image Layered_2002530524985999361.json、图片生成/图生图/生图-图像分层-Qwen Image Layered_2004025316857290754.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Kontext精准移除_1946136768744701953.json、图片生成/图生图/Kontext跟Q版的自己一起跳舞_1943191400639062017.json、图片生成/图生图/自己用：Kontext一键移除_1946240563878486017.json、平台全量/Kontext-物品移除-_1953264341514653698.json）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
-- `EmptyHunyuanLatentVideo`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `GetImageSize`
 - `KSampler`
-- `LatentCutToBatch`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
+- `PreviewImage`
 - `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
@@ -38,38 +38,40 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResize+` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `easy int` —— 2/3 个有
-- `GetImageSizeAndCount` —— 1/3 个有
-- `ImageBatchMulti` —— 1/3 个有
-- `ImageScaleToTotalPixels` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `LoraLoaderModelOnly` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `easy positive` —— 1/3 个有
-- `easy seed` —— 1/3 个有
+- `Anything Everywhere3` —— 3/4 个有
+- `ChinesePrompt_Mix` —— 3/4 个有
+- `ConditioningZeroOut` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 3/4 个有
+- `ImageCompositeMasked` —— 3/4 个有
+- `JoinImageWithAlpha` —— 3/4 个有
+- `FluxKontextImageScale` —— 2/4 个有
+- `Image Blank` —— 2/4 个有
+- `Compositor3` —— 1/4 个有
+- `CompositorConfig3` —— 1/4 个有
+- `EmptyImage` —— 1/4 个有
+- `ImagePadForOutpaint` —— 1/4 个有
+- `ImageResizeKJv2` —— 1/4 个有
+- `InspyrenetRembgAdvanced` —— 1/4 个有
+- `LayerUtility: ImageRemoveAlpha` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 40 | 8 - 40 | 3 | 49% |
-| Prompt 约束强度(CFG) | 4 | 2 - 4 | 3 | 72% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 22.5 | 20 - 25 | 4 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 40，观测区间 8 - 40，3 个样本，取值分散，一致性仅 49%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 2 - 4，3 个样本
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 22.5，观测区间 20 - 25，4 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

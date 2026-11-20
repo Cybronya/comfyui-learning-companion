@@ -3,42 +3,47 @@ name: unknown_workflow_video_sampler_vae_174
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+coverage: 0.925667
+common_nodes: [CLIPVisionLoader, CreateVideo, ImageResizeKJv2, JjkText, LoadImage, SaveVideo, VHS_LoadVideo, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoImageResizeToClosest, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/文生视频/通义万相 文生图工作流-小宣喧 -RH_1894608598201204738.json, 视频生成/文生视频/通义万相Wan2.1文生视频高清补帧放大_1897231501354815489.json, 视频生成/文生视频/阿里万象文生视频_1894633919931920385.json]
+members: [图片生成/图生图/SCAIL2动作迁移-免骨架工作流_2101624513002819586.json, 平台全量/SCAIL2动作迁移-免骨架工作流_2100056752506105857.json, 平台全量/SCAIL2动作迁移-免骨架工作流_2100137506623803394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_vae_174
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/通义万相 文生图工作流-小宣喧 -RH_1894608598201204738.json、视频生成/文生视频/通义万相Wan2.1文生视频高清补帧放大_1897231501354815489.json、视频生成/文生视频/阿里万象文生视频_1894633919931920385.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/SCAIL2动作迁移-免骨架工作流_2101624513002819586.json、平台全量/SCAIL2动作迁移-免骨架工作流_2100056752506105857.json、平台全量/SCAIL2动作迁移-免骨架工作流_2100137506623803394.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadWanVideoT5TextEncoder`
-- `VHS_VideoCombine`
-- `WanVideoBlockSwap`
+- `CLIPVisionLoader`
+- `CreateVideo`
+- `ImageResizeKJv2`
+- `JjkText`
+- `LoadImage`
+- `SaveVideo`
+- `VHS_LoadVideo`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `WanVideoEmptyEmbeds`
+- `WanVideoImageResizeToClosest`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoTextEncode`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 1/3 个有
-- `CR Upscale Image` —— 1/3 个有
-- `LoadAudio` —— 1/3 个有
-- `RIFE VFI` —— 1/3 个有
-- `WanVideoTorchCompileSettings` —— 1/3 个有
+- `EmptyImage` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
 
 ## 典型参数
 

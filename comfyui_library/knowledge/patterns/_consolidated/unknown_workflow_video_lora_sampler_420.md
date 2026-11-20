@@ -1,88 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_420
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.944667
-common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CheckpointLoaderSimple, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, VHS_VideoCombine]
+frequency: 7
+level: moderate
+coverage: 0.660429
+common_nodes: [AudioSeparation, BasicGuider, BlockSparseAttention, CLIPLoader, ComfyMathExpression, Compare, ConditioningZeroOut, DF_Int_to_Float, GetNode, ImageResizeKJv2, Int, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: PurgeVRAM V2, LazySwitchKJ, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, RTXVideoFrameGeneration, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, SoundFlow_GetLength, UNETLoader, VAEDecodeTiled, VAELoader, VHS_LoadAudioUpload, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/ltxv2.3音画同步视频_2034652282570153986.json, 视频生成/图生视频/【3月】LTX2.3图生视频（高质量一致性、音效、人声）_2031229701166993409.json, 视频生成/图生视频/【CQ808】LTX-2.3 图生视频_2036741088412700673.json, 视频生成/图生视频/图生视频 LTX2.3+ 提示词自动优化版_2075032295114895362.json, 视频生成/图生视频/图生视频-LTX2.3_2032494068420317186.json, 视频生成/图生视频/💃LTX2.3 图生视频 人物一致性优化版💃_2030439938361135105.json]
+members: [平台全量/MinimaxH3-Pika动物语言无限数字人（超高清）_2117912212428910593.json, 平台全量/Pika动物开口说话唱歌！MinimaxH3 图生视频_2117564647921504258.json, 平台全量/Pika动物开口说话唱歌！MinimaxH3 图生视频_2117581755552198657.json, 平台全量/Pika动物开口说话唱歌！MinimaxH3！B站_2117758004807421954.json, 平台全量/Pika动物开口说话唱歌！MinimaxH3！B站艾橘溪_2116921625416396802.json, 平台全量/Pika动物开口说话唱歌！MinimaxH3！_2117537812378640385.json, 平台全量/动物开口说话唱歌_Pika_2117786096867303426.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_420
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/ltxv2.3音画同步视频_2034652282570153986.json、视频生成/图生视频/【3月】LTX2.3图生视频（高质量一致性、音效、人声）_2031229701166993409.json、视频生成/图生视频/【CQ808】LTX-2.3 图生视频_2036741088412700673.json、视频生成/图生视频/图生视频 LTX2.3+ 提示词自动优化版_2075032295114895362.json、视频生成/图生视频/图生视频-LTX2.3_2032494068420317186.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（平台全量/MinimaxH3-Pika动物语言无限数字人（超高清）_2117912212428910593.json、平台全量/Pika动物开口说话唱歌！MinimaxH3 图生视频_2117564647921504258.json、平台全量/Pika动物开口说话唱歌！MinimaxH3 图生视频_2117581755552198657.json、平台全量/Pika动物开口说话唱歌！MinimaxH3！B站_2117758004807421954.json、平台全量/Pika动物开口说话唱歌！MinimaxH3！B站艾橘溪_2116921625416396802.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：94%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `CM_FloatToInt`
-- `CheckpointLoaderSimple`
-- `EmptyLTXVLatentVideo`
+全部 7 个 workflow 都包含：
+- `AudioSeparation`
+- `BasicGuider`
+- `BlockSparseAttention`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `Compare`
+- `ConditioningZeroOut`
+- `DF_Int_to_Float`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
 - `KSamplerSelect`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVChunkFeedForward`
+- `LTXVAudioVAEEncode`
 - `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoConditionOnly`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LayerUtility: PurgeVRAM V2`
+- `LazySwitchKJ`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `PrimitiveBoolean`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RTXVideoFrameGeneration`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SolidMask`
+- `SoundFlow_GetLength`
+- `UNETLoader`
 - `VAEDecodeTiled`
+- `VAELoader`
+- `VHS_LoadAudioUpload`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveFloat` —— 5/6 个有
-- `SimpleMath+` —— 5/6 个有
-- `easy cleanGpuUsed` —— 5/6 个有
-- `CR Text` —— 4/6 个有
-- `Seed (rgthree)` —— 4/6 个有
-- `DapaoImageAspectRatioResizeNode` —— 3/6 个有
-- `RH_LLMAPI_Pro_Node` —— 3/6 个有
-- `easy int` —— 3/6 个有
-- `JWInteger` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `DF_Int_to_Float` —— 1/6 个有
-- `GetNode` —— 1/6 个有
-- `ImpactInt` —— 1/6 个有
-- `ImpactSwitch` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `Label (rgthree)` —— 1/6 个有
-- `LatentUpscaleModelLoader` —— 1/6 个有
-- `MathExpression|pysssss` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `RH_Translator` —— 1/6 个有
-- `ResizeImageMaskNode` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `ShowText` —— 1/6 个有
-- `TextBox` —— 1/6 个有
-- `TextInput_` —— 1/6 个有
+- `ModelPreviewOverrideKJ` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `PreviewAudio` —— 5/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 6 | 100% |
-| 高度 | 25 | 25 - 25 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -90,5 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，6 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，6 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

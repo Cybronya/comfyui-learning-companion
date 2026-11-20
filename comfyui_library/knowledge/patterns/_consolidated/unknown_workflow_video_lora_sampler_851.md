@@ -1,60 +1,64 @@
 ---
 name: unknown_workflow_video_lora_sampler_851
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.788
-common_nodes: [BasicScheduler, CLIPTextEncode, CS-LTXGridDirector, DualCLIPLoader, JjkText, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXDirectorGuide, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ModelPreviewOverrideKJ, SamplerCustom, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ, YusuLTXDirectorCropGuides, 孤海注释]
+frequency: 3
+level: moderate
+coverage: 0.852667
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, Label (rgthree), LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-角色一致性_2080617902188879873.json, 视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-角色一致性-自动剧情_2080573147191005186.json]
+members: [数字人/数字人/新4步lora三阶加速不降质音频驱动数字人-口播视频工作流 开源MiniMax H3 FL2VA_2090451028880748546.json, 视频生成/图生视频/新4步加速图生视频MiniMax H3_2090573463361773570.json, 视频生成/图生视频/超级提速不降质音频驱动数字人MV视频工作流开源MiniMax H3 Ref2VA_2086777029281796098.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_851
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-角色一致性_2080617902188879873.json、视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-角色一致性-自动剧情_2080573147191005186.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/新4步lora三阶加速不降质音频驱动数字人-口播视频工作流 开源MiniMax H3 FL2VA_2090451028880748546.json、视频生成/图生视频/新4步加速图生视频MiniMax H3_2090573463361773570.json、视频生成/图生视频/超级提速不降质音频驱动数字人MV视频工作流开源MiniMax H3 Ref2VA_2086777029281796098.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPTextEncode`
-- `CS-LTXGridDirector`
-- `DualCLIPLoader`
-- `JjkText`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXDirectorGuide`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVSeparateAVLatent`
+全部 3 个 workflow 都包含：
+- `BasicGuider`
+- `CLIPLoader`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `Label (rgthree)`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelPreviewOverrideKJ`
-- `SamplerCustom`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
-- `YusuLTXDirectorCropGuides`
-- `孤海注释`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 1/2 个有
-- `PreviewAny` —— 1/2 个有
-- `RH_LLMAPI_Pro_Node` —— 1/2 个有
-- `RH_Utils` —— 1/2 个有
-- `Text` —— 1/2 个有
-- `ttN concat` —— 1/2 个有
+- `Float` —— 2/3 个有
+- `LoadAudio` —— 2/3 个有
+- `MelBandRoFormerModelLoader` —— 2/3 个有
+- `MelBandRoFormerSampler` —— 2/3 个有
+- `MiniMaxH3AVDecodeT8` —— 2/3 个有
+- `MiniMaxH3AudioConditioningT8` —— 2/3 个有
+- `MiniMaxH3DualClockSamplerT8` —— 2/3 个有
+- `PreviewAudio` —— 2/3 个有
+- `PrimitiveFloat` —— 2/3 个有
+- `SolAttnMiniMax` —— 2/3 个有
+- `SoundFlow_GetLength` —— 2/3 个有
+- `TrimAudioDuration` —— 2/3 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/3 个有
+- `BasicScheduler` —— 1/3 个有
+- `KSamplerSelect` —— 1/3 个有
+- `MiniMaxH3ReferenceToVideo` —— 1/3 个有
+- `ModelAttentionBackend` —— 1/3 个有
+- `VAEDecode` —— 1/3 个有
+- `VAEDecodeAudio` —— 1/3 个有
 
 ## 典型参数
 
@@ -66,4 +70,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

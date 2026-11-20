@@ -3,54 +3,53 @@ name: text_to_image_lora_sampler_clip_573
 type: Text To Image
 frequency: 3
 level: strong
-coverage: 0.902667
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.891
+common_nodes: [AIO_Preprocessor, CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, GetImageSize, ImageResizeKJv2, ImageScaleBy, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, QwenImage21Cache, QwenImage21UnionApply, QwenImage21UnionLoader, ResizeImageMaskNode, ResolutionSelector, SaveImage, SeedNode, TextEncodeQwenImage21, Textbox, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/文生图｜AI一句话出图，输入描述秒变高质量图片_2099875922370449410.json, 视频生成/文生视频/Anima-2.9B官方文生图｜文生视频视频生视频图生视频_2090076387519582210.json, 视频生成/文生视频/官方文生图｜Anima-2.9B动漫图像生成直出_2089790880378081282.json]
+members: [图片生成/文生图/Qwen Image 2.1 CONTROLNET图像编辑工作流 精准控制改图_2105045185263661057.json, 图片生成/文生图/Qwen Image 2.1 ControlNet图像编辑工作流，精准控制改图图生图工具_2105806539499069442.json, 图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_573
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/文生图｜AI一句话出图，输入描述秒变高质量图片_2099875922370449410.json、视频生成/文生视频/Anima-2.9B官方文生图｜文生视频视频生视频图生视频_2090076387519582210.json、视频生成/文生视频/官方文生图｜Anima-2.9B动漫图像生成直出_2089790880378081282.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1 CONTROLNET图像编辑工作流 精准控制改图_2105045185263661057.json、图片生成/文生图/Qwen Image 2.1 ControlNet图像编辑工作流，精准控制改图图生图工具_2105806539499069442.json、图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json）
 
 - **类型**：Text To Image
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CFGGuider`
+- `AIO_Preprocessor`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
+- `GetImageSize`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `PreviewImage`
+- `QwenImage21Cache`
+- `QwenImage21UnionApply`
+- `QwenImage21UnionLoader`
+- `ResizeImageMaskNode`
+- `ResolutionSelector`
 - `SaveImage`
+- `SeedNode`
+- `TextEncodeQwenImage21`
+- `Textbox`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 2/3 个有
-- `ImpactSwitch` —— 2/3 个有
-- `KSampler Config (rgthree)` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `VAELoaderKJ` —— 2/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `EmptyFlux2LatentImage` —— 1/3 个有
-- `T8LLaDAImageCheckpointLoader` —— 1/3 个有
-- `T8LLaDAImageScheduler` —— 1/3 个有
-- `TextGenerate` —— 1/3 个有
 
 ## 典型参数
 
@@ -68,7 +67,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -79,4 +78,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，3 个样本，一致性 100%
 - 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/3 个样本）：Steps较低可能导致细节不足

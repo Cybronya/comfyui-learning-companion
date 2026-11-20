@@ -3,38 +3,31 @@ name: unknown_workflow_generic_1842
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.839
-common_nodes: [CR Prompt Text, CR Text, Fast Groups Bypasser (rgthree), LayerUtility: TextJoin, LoadAudio, RH_LLMAPI_Pro_Node, RunningHub_VoxCPM_Generate, RunningHub_VoxCPM_LoadModel, RunningHub_VoxCPM_MultiSpeaker, SaveAudio, SaveText|pysssss, easy showAnything]
+coverage: 0.763
+common_nodes: [RH_Nano_Banana2_Gemini31Flash_Batch, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/VoxCPM2 单人声音克隆生成音频_2042817341829947394.json, 音频生成/音频生成/方言和跨语言克隆之神！VoxCPM2 声音设计_声音控制克隆_多人克隆（设计）--强效6合一_2042438737400963074.json]
+members: [图片生成/文生图/全能图片2 文生图_批量8张_目前单价1毛6_张_2045084707506888705.json, 图片生成/文生图/哥哥的工作流_2041076091535757314.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1842
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/VoxCPM2 单人声音克隆生成音频_2042817341829947394.json、音频生成/音频生成/方言和跨语言克隆之神！VoxCPM2 声音设计_声音控制克隆_多人克隆（设计）--强效6合一_2042438737400963074.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/全能图片2 文生图_批量8张_目前单价1毛6_张_2045084707506888705.json、图片生成/文生图/哥哥的工作流_2041076091535757314.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `CR Text`
-- `Fast Groups Bypasser (rgthree)`
-- `LayerUtility: TextJoin`
-- `LoadAudio`
-- `RH_LLMAPI_Pro_Node`
-- `RunningHub_VoxCPM_Generate`
-- `RunningHub_VoxCPM_LoadModel`
-- `RunningHub_VoxCPM_MultiSpeaker`
-- `SaveAudio`
-- `SaveText|pysssss`
-- `easy showAnything`
+- `RH_Nano_Banana2_Gemini31Flash_Batch`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `JjkText` —— 1/2 个有
 
 ## 典型参数
 

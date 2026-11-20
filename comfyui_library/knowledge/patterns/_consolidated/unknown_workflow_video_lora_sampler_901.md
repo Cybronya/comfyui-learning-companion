@@ -1,85 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_901
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.655
-common_nodes: [AdaptiveWanVideoAnimateEmbeds, CFGGuider, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, ConditioningZeroOut, EmptyFlux2LatentImage, Fast Groups Muter (rgthree), Flux2Scheduler, GetImageSize, GetImageSizeAndCount, GetNode, ImageResizeKJv2, ImageScaleToTotalPixels, Int, KSamplerSelect, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PoseAndFaceDetection, RandomNoise, ReferenceLatent, SDPoseOODLoader, SDPoseOODProcessor, SamplerCustomAdvanced, SaveImage, SetNode, Text, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoTextEncodeCached, WanVideoVAELoader, YOLOModelLoader]
+frequency: 3
+level: strong
+coverage: 0.529667
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CR Text, GetImageRangeFromBatch, GetImageSize, GetNode, Image Comparer (rgthree), ImageResizeKJ, ImageResizeKJv2, ImpactSwitch, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, RH_Nano_Banana_Image2Image, SeedVR2, SeedVR2BlockSwap, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanFirstLastFrameToVideo, WanMoeKSampler, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2AnimateV4优化版_2027375031759671298.json, 视频生成/图生视频/动作迁移+表情迁移：Wan2.2AnimateV2+SDPose姿态识别_2017236160619220993.json]
+members: [视频生成/图生视频/wan2.2-大香蕉-首尾帧-seedVR2-循环放大_1955841213301706754.json, 视频生成/图生视频/香_蕉出图模型ai创作加wan2.2组合首尾帧频生成ai动漫视频低成本高清视频创作_2011853910419447809.json, 视频生成/图生视频/香蕉加wan2.2神仙组合首尾帧_1966882574524145666.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_901
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2AnimateV4优化版_2027375031759671298.json、视频生成/图生视频/动作迁移+表情迁移：Wan2.2AnimateV2+SDPose姿态识别_2017236160619220993.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2-大香蕉-首尾帧-seedVR2-循环放大_1955841213301706754.json、视频生成/图生视频/香_蕉出图模型ai创作加wan2.2组合首尾帧频生成ai动漫视频低成本高清视频创作_2011853910419447809.json、视频生成/图生视频/香蕉加wan2.2神仙组合首尾帧_1966882574524145666.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：66%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：53%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AdaptiveWanVideoAnimateEmbeds`
-- `CFGGuider`
+全部 3 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Fast Groups Muter (rgthree)`
-- `Flux2Scheduler`
+- `CR Text`
+- `GetImageRangeFromBatch`
 - `GetImageSize`
-- `GetImageSizeAndCount`
 - `GetNode`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJ`
 - `ImageResizeKJv2`
-- `ImageScaleToTotalPixels`
+- `ImpactSwitch`
 - `Int`
-- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `SamplerCustomAdvanced`
-- `SaveImage`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
 - `SetNode`
-- `Text`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfo`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTeaCache`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `YOLOModelLoader`
+- `WanFirstLastFrameToVideo`
+- `WanMoeKSampler`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `DuckHideNode` —— 1/2 个有
+- `INTConstant` —— 2/3 个有
+- `SaveImage` —— 2/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 3 | 100% |
+| Prompt 约束强度(CFG) | 14 | 14 - 14 | 3 | 100% |
+| 采样算法 | 3.5 | 3.5 - 3.5 | 3 | 100% |
+| 调度器 | 1 | 1 - 1 | 3 | 100% |
+| 重绘幅度 | euler | - | 3 | 100% |
 
 ## 常见问题
 
@@ -87,4 +82,9 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 randomize，3 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 14，观测区间 14 - 14，3 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 3.5，观测区间 3.5 - 3.5，3 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler，3 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 14，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

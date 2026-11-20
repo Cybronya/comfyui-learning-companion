@@ -1,39 +1,45 @@
 ---
 name: unknown_workflow_generic_1391
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.696
-common_nodes: [CR Prompt Text, Comfly_api_set, Comfly_qwen_image, SaveImage, SeedVR2, SeedVR2BlockSwap]
+frequency: 3
+level: moderate
+coverage: 0.847333
+common_nodes: [CR Prompt Text, FB_Qwen3TTSDialogueInference, FB_Qwen3TTSRoleBank, FB_Qwen3TTSVoiceClonePrompt, LayerUtility: PurgeVRAM V2, SaveAudio, VRAMReserver, easy float, easy int]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen Image 满血版API洗图高清放大流V1_1957309776436850690.json, 图片生成/文生图/Qwen Image 满血版API文生图高清放大流V1_1957311556746932225.json]
+members: [音频生成/音频生成/AA--Qwen3 TTS多人配音--声音克隆版本-三角色-漫剧_推文_有声书_2015768667132268546.json, 音频生成/音频生成/AA--Qwen3 TTS多人配音-声音设计版本--三角色-漫剧_推文_有声书_2015768802629259265.json, 音频生成/音频生成/AA--增强版Qwen3TTS-语音克隆-说话情感和断句节奏自定义-单人版本_2016508411113906178.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1391
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen Image 满血版API洗图高清放大流V1_1957309776436850690.json、图片生成/文生图/Qwen Image 满血版API文生图高清放大流V1_1957311556746932225.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（音频生成/音频生成/AA--Qwen3 TTS多人配音--声音克隆版本-三角色-漫剧_推文_有声书_2015768667132268546.json、音频生成/音频生成/AA--Qwen3 TTS多人配音-声音设计版本--三角色-漫剧_推文_有声书_2015768802629259265.json、音频生成/音频生成/AA--增强版Qwen3TTS-语音克隆-说话情感和断句节奏自定义-单人版本_2016508411113906178.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：70%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
+全部 3 个 workflow 都包含：
 - `CR Prompt Text`
-- `Comfly_api_set`
-- `Comfly_qwen_image`
-- `SaveImage`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
+- `FB_Qwen3TTSDialogueInference`
+- `FB_Qwen3TTSRoleBank`
+- `FB_Qwen3TTSVoiceClonePrompt`
+- `LayerUtility: PurgeVRAM V2`
+- `SaveAudio`
+- `VRAMReserver`
+- `easy float`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/2 个有
-- `RH_Captioner` —— 1/2 个有
-- `easy showAnything` —— 1/2 个有
+- `LoadAudio` —— 2/3 个有
+- `WhisperSTT` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `FB_Qwen3TTSVoiceDesign` —— 1/3 个有
+- `IndexTTS2Run` —— 1/3 个有
+- `LayerUtility: TextJoin` —— 1/3 个有
 
 ## 典型参数
 
@@ -45,4 +51,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

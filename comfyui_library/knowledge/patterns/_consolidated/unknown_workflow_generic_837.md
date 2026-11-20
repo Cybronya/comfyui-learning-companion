@@ -3,34 +3,34 @@ name: unknown_workflow_generic_837
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.617
-common_nodes: [LoadImage, LoadVideo, RH_AlibabaWan27VideoEdit, SaveVideo]
+coverage: 0.8665
+common_nodes: [BagelImageEdit, BagelModelLoader, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.7 视频编辑_2041454710699335681.json, 视频生成/图生视频/Wan2.7 视频编辑_2043658633333972994.json, 视频生成/图生视频/Wan2.7 视频编辑_2046662800356937729.json, 视频生成/图生视频/Wan2.7 视频编辑（改风格）_2046214657328816129.json]
+members: [图片生成/图生图/BAGEL 老照片修复_1927389841900867586.json, 图片生成/图生图/Bagel多模态模型_图像编辑_1928264819231866882.json, 图片生成/图生图/言出法随，小豆包Bagel图像处理加速版_1928639095021670402.json, 平台全量/BAGEL 老照片修复_1927540011162570754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_837
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.7 视频编辑_2041454710699335681.json、视频生成/图生视频/Wan2.7 视频编辑_2043658633333972994.json、视频生成/图生视频/Wan2.7 视频编辑_2046662800356937729.json、视频生成/图生视频/Wan2.7 视频编辑（改风格）_2046214657328816129.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/BAGEL 老照片修复_1927389841900867586.json、图片生成/图生图/Bagel多模态模型_图像编辑_1928264819231866882.json、图片生成/图生图/言出法随，小豆包Bagel图像处理加速版_1928639095021670402.json、平台全量/BAGEL 老照片修复_1927540011162570754.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
+- `BagelImageEdit`
+- `BagelModelLoader`
 - `LoadImage`
-- `LoadVideo`
-- `RH_AlibabaWan27VideoEdit`
-- `SaveVideo`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/4 个有
-- `PrimitiveStringMultiline` —— 1/4 个有
+- `Image Comparer (rgthree)` —— 2/4 个有
+- `JWImageResizeByLongerSide` —— 2/4 个有
 
 ## 典型参数
 

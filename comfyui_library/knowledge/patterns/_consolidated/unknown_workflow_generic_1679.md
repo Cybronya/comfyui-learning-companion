@@ -3,34 +3,33 @@ name: unknown_workflow_generic_1679
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.6905
-common_nodes: [LoadVideo, RH_LLMAPI_Pro_Node, ShowText|pysssss, easy positive, easy saveText]
+coverage: 1
+common_nodes: [LoadImage, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [视频生成/图生视频/Gem Pro 视频反推提示词_2033510744607694850.json, 视频生成/图生视频/Gemini 3.1 Pro效果图+视频反推提示词工作流_2030844856406384641.json]
+members: [图片生成/图生图/全能图片V1 2_2001858527134138369.json, 图片生成/图生图/最强图片文字编辑 全能图片PRO-速度超快价格超便宜_2087074589955411970.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1679
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Gem Pro 视频反推提示词_2033510744607694850.json、视频生成/图生视频/Gemini 3.1 Pro效果图+视频反推提示词工作流_2030844856406384641.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/全能图片V1 2_2001858527134138369.json、图片生成/图生图/最强图片文字编辑 全能图片PRO-速度超快价格超便宜_2087074589955411970.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `LoadVideo`
-- `RH_LLMAPI_Pro_Node`
-- `ShowText|pysssss`
-- `easy positive`
-- `easy saveText`
+- `LoadImage`
+- `SaveImage`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeLoadImage` —— 1/2 个有
+- `Comfly_nano_banana2_edit` —— 1/2 个有
+- `RH_RhartImageNProEdit` —— 1/2 个有
 
 ## 典型参数
 

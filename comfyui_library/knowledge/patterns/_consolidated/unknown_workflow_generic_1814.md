@@ -3,37 +3,31 @@ name: unknown_workflow_generic_1814
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.65
-common_nodes: [JjkText, PreviewAudio, Qwen3TTSModelLoader, Qwen3VL_Chat, SaveAudio, TDQwen3TTSVoiceDesign, easy cleanGpuUsed, easy showAnything]
+coverage: 0.8335
+common_nodes: [RH_RhartImageG4TextToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS自定义音色-润色版_2018574837786087426.json, 音频生成/音频生成/Qwen3 TTS自定义音色_2037140781361799169.json]
+members: [图片生成/文生图/G4_TextToImage_v4.0_2033740377714331649.json, 图片生成/文生图/文生图1r_次 4_text_to_image+全节点注释_2059599524271841282.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1814
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS自定义音色-润色版_2018574837786087426.json、音频生成/音频生成/Qwen3 TTS自定义音色_2037140781361799169.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/G4_TextToImage_v4.0_2033740377714331649.json、图片生成/文生图/文生图1r_次 4_text_to_image+全节点注释_2059599524271841282.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `JjkText`
-- `PreviewAudio`
-- `Qwen3TTSModelLoader`
-- `Qwen3VL_Chat`
-- `SaveAudio`
-- `TDQwen3TTSVoiceDesign`
-- `easy cleanGpuUsed`
-- `easy showAnything`
+- `RH_RhartImageG4TextToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `MuyeLoadImage` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
 
 ## 典型参数
 

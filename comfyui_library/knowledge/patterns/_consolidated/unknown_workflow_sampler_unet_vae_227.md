@@ -1,63 +1,77 @@
 ---
 name: unknown_workflow_sampler_unet_vae_227
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.988
-common_nodes: [BasicScheduler, CLIPLoader, EmptyLatentImage, KSamplerSelect, LoadImage, ModelSamplingAuraFlow, SamplerCustom, SaveImage, TextEncodeBooguEdit, UNETLoader, VAEDecode, VAELoader]
-problems: []
+frequency: 6
+level: strong
+coverage: 0.862167
+common_nodes: [CLIPLoader, CR Text, ConditioningZeroOut, CropWithPadInfo, Image Comparer (rgthree), KSampler, LoadImage, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json, 图片生成/图生图/boogu编辑图像_2069048520065245185.json, 图片生成/文生图/Boogu_Base_edit_图像编辑工作流_2069278108913594370.json, 图片生成/文生图/boogu_edit_example_2068254277000327170.json]
+members: [图片生成/图生图/Qwen-image-Edit-2511图像编辑不偏移+万物移除-增加物体 V1.0_2008472523880538113.json, 图片生成/图生图/单图编辑背景无偏移_2008730411949625346.json, 图片生成/图生图/口述改图 零偏移 无偏移 0偏移  Qwen Edit 2511_2013903660815749122.json, 图片生成/图生图/高斯泼溅任意角度编辑 林耀_2013640884365037570.json, 图片生成/文生图/Qwen Edit 2511小志版0漂移_2073296578672160769.json, 图片生成/文生图/高斯泼溅任意角度编辑_2073302227107803137.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_227
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json、图片生成/图生图/boogu编辑图像_2069048520065245185.json、图片生成/文生图/Boogu_Base_edit_图像编辑工作流_2069278108913594370.json、图片生成/文生图/boogu_edit_example_2068254277000327170.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Qwen-image-Edit-2511图像编辑不偏移+万物移除-增加物体 V1.0_2008472523880538113.json、图片生成/图生图/单图编辑背景无偏移_2008730411949625346.json、图片生成/图生图/口述改图 零偏移 无偏移 0偏移  Qwen Edit 2511_2013903660815749122.json、图片生成/图生图/高斯泼溅任意角度编辑 林耀_2013640884365037570.json、图片生成/文生图/Qwen Edit 2511小志版0漂移_2073296578672160769.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：99%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSamplerSelect`
+- `CR Text`
+- `ConditioningZeroOut`
+- `CropWithPadInfo`
+- `Image Comparer (rgthree)`
+- `KSampler`
 - `LoadImage`
-- `ModelSamplingAuraFlow`
-- `SamplerCustom`
+- `QwenEditAdaptiveLongestEdge`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
 - `SaveImage`
-- `TextEncodeBooguEdit`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Prompt Text` —— 2/4 个有
-- `DF_Get_image_size` —— 2/4 个有
-- `ImageScaleToTotalPixels` —— 2/4 个有
-- `LoraLoaderModelOnly` —— 1/4 个有
-- `PrimitiveInt` —— 1/4 个有
-- `SeedVR2LoadDiTModel` —— 1/4 个有
-- `SeedVR2LoadVAEModel` —— 1/4 个有
-- `SeedVR2VideoUpscaler` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/6 个有
+- `LoadSharpModel` —— 2/6 个有
+- `PreviewAny` —— 2/6 个有
+- `SharpPredict` —— 2/6 个有
+- `YCGaussianPreview` —— 2/6 个有
+- `EasyCache` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `Note Plus (mtb)` —— 1/6 个有
+- `Power Lora Loader (rgthree)` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1080 | 4 | 98% |
-| 高度 | 1024 | 1024 - 1920 | 4 | 69% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | beta57 | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1080，4 个样本，取值集中（一致性 98%）
-- 高度 中位数 1024，观测区间 1024 - 1920，4 个样本
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 beta57，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

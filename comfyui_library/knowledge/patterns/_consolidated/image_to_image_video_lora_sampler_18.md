@@ -1,53 +1,38 @@
 ---
 name: image_to_image_video_lora_sampler_18
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.6285
-common_nodes: [Any Switch (rgthree), CFGNorm, CLIPLoader, CLIPVisionLoader, CR Text, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, GetNode, ImageResizeKJv2, Int, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelSamplingAuraFlow, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewImage, RunningHub Deepcleaner, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy showAnything]
+frequency: 3
+level: strong
+coverage: 0.907333
+common_nodes: [CFGNorm, CLIPLoader, GetImageSizeAndCount, ImageResizeKJv2, ImageScaleToTotalPixels, KSampler, LoadImage, LoadWanVideoT5TextEncoder, ModelSamplingAuraFlow, PrimitiveInt, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/Comfyui教学第六期-数字人_2011627104890265602.json, 数字人/数字人/MV制作流程1-演唱镜头_2005162233674039298.json]
+members: [视频生成/图生视频/千问edit三分镜图+Wan2.2图生三分镜视频_1987004381801418754.json, 视频生成/图生视频/千问生成尾帧+Wan2.2首尾帧视频生成可自动提示词_1977963460321497090.json, 视频生成/图生视频/同一场景自定义姿势首尾帧视频_1971550971262398465.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_video_lora_sampler_18
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/Comfyui教学第六期-数字人_2011627104890265602.json、数字人/数字人/MV制作流程1-演唱镜头_2005162233674039298.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/千问edit三分镜图+Wan2.2图生三分镜视频_1987004381801418754.json、视频生成/图生视频/千问生成尾帧+Wan2.2首尾帧视频生成可自动提示词_1977963460321497090.json、视频生成/图生视频/同一场景自定义姿势首尾帧视频_1971550971262398465.json）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：63%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `Any Switch (rgthree)`
+全部 3 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `CLIPVisionLoader`
-- `CR Text`
-- `DownloadAndLoadWav2VecModel`
-- `Fast Groups Bypasser (rgthree)`
 - `GetImageSizeAndCount`
-- `GetNode`
 - `ImageResizeKJv2`
-- `Int`
+- `ImageScaleToTotalPixels`
 - `KSampler`
-- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
+- `LoadWanVideoT5TextEncoder`
 - `ModelSamplingAuraFlow`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewAny`
-- `PreviewImage`
-- `RunningHub Deepcleaner`
-- `SaveImage`
-- `SetNode`
+- `PrimitiveInt`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
@@ -55,64 +40,64 @@ source: knowledge_consolidation
 - `VAELoader`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy showAnything`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 1/2 个有
-- `AudioSelectNode` —— 1/2 个有
-- `AudioSplitNode` —— 1/2 个有
-- `AudioToFPS` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `FluxKontextImageScale` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImageListToBatch+` —— 1/2 个有
-- `IndexTTS2Run` —— 1/2 个有
-- `Mute / Bypass Relay (rgthree)` —— 1/2 个有
-- `Mute / Bypass Repeater (rgthree)` —— 1/2 个有
-- `PreviewAudio` —— 1/2 个有
-- `QwenMultiangleCameraNode` —— 1/2 个有
-- `RH_LLMAPI_NODE` —— 1/2 个有
-- `SimpleMath+` —— 1/2 个有
-- `TrimAudioDuration` —— 1/2 个有
-- `Wav2VecModelLoader` —— 1/2 个有
-- `ZML_ImageSelectorNode` —— 1/2 个有
-- `easy batchAnything` —— 1/2 个有
-- `easy forLoopEnd` —— 1/2 个有
-- `easy forLoopStart` —— 1/2 个有
-- `easy promptLine` —— 1/2 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 2/3 个有
+- `CLIPVisionLoader` —— 2/3 个有
+- `CR Text` —— 2/3 个有
+- `CR Text Concatenate` —— 2/3 个有
+- `ImageBatchMultiple+` —— 2/3 个有
+- `LoraLoaderModelOnly` —— 2/3 个有
+- `ShowText|pysssss` —— 2/3 个有
+- `SimpleMath+` —— 2/3 个有
+- `WanVideoClipVisionEncode` —— 2/3 个有
+- `WanVideoLoraSelect` —— 2/3 个有
+- `WanVideoTorchCompileSettings` —— 2/3 个有
+- `CR Latent Batch Size` —— 1/3 个有
+- `JWStringGetLine` —— 1/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/3 个有
+- `LoraLoader` —— 1/3 个有
+- `MaskToImage` —— 1/3 个有
+- `PreviewImage` —— 1/3 个有
+- `ProcessString` —— 1/3 个有
+- `RH_Captioner` —— 1/3 个有
+- `RH_LLMAPI_NODE` —— 1/3 个有
+- `SaveImage` —— 1/3 个有
+- `String` —— 1/3 个有
+- `easy imageChooser` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4.5 | - | 2 | 89% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 1 | - | 2 | 100% |
+| 采样步数 | 8 | 8 - 8 | 3 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
+| 采样算法 | euler | - | 3 | 100% |
+| 调度器 | beta57 | - | 3 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 模型强度 | 1 | - | 1 | 100% |
+| LoRA 文本强度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，3 个样本，一致性 100%
+- 调度器 最常用 beta57，3 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 高发问题（5/3 个样本）：Steps较低可能导致细节不足

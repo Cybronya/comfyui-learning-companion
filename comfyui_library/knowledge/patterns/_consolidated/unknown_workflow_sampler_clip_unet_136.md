@@ -1,31 +1,32 @@
 ---
 name: unknown_workflow_sampler_clip_unet_136
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.925556
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.9313
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/千府AI-Flux.2_Klein高清洗图工作流_2032316645363949570.json, 图片生成/图生图/千府AI-FluxKlein室内风格迁移工作流_2031990406266753026.json, 图片生成/图生图/千府AI-FluxKlein效果图风格转换工作流_2013475853849595906.json, 图片生成/图生图/千府AI-FluxKlein立面风格迁移工作流_2031957779518332929.json, 图片生成/图生图/漫画转欧美美女（解禁模型）：Flux2 Klein 9B_2055197694913720322.json, 图片生成/图生图/老照片修复 -｜Flux-Klein｜底模_2054444918260682753.json, 图片生成/图生图/老照片修复 -｜Flux-Klein｜底模_2069231901122056194.json, 图片生成/图生图/脱衣服穿衣服_2080345607318884353.json, 图片生成/图生图/高清放大_2072576146432159746.json]
+members: [图片生成/图生图/换装-人物换装-flux2-dev-fp8_1993947236568678401.json, 图片生成/图生图/提取服装_2034842540221927426.json, 图片生成/图生图/最新Flux 2.0多图编辑工作流（支持直接输入中文提示词）_1993527135818235906.json, 图片生成/图生图/黑森林Flux2单图编辑_1993598436635246593.json, 图片生成/图生图/黑森林Flux2双图编辑_1993606631697088514.json, 图片生成/图生图/👾怪獸-FLUX.2单图编辑👾_1993647875032891394.json, 图片生成/文生图/Flux.2-支持中文-文生图_1993529170808471553.json, 图片生成/文生图/Flux2DEV多图编辑_1993501443036479490.json, 图片生成/文生图/Flux2DEV文生图_1993507322504953858.json, 图片生成/文生图/最新Flux 2.0文生图工作流（支持直接输入中文提示词）_1993538099806404610.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_136
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/千府AI-Flux.2_Klein高清洗图工作流_2032316645363949570.json、图片生成/图生图/千府AI-FluxKlein室内风格迁移工作流_2031990406266753026.json、图片生成/图生图/千府AI-FluxKlein效果图风格转换工作流_2013475853849595906.json、图片生成/图生图/千府AI-FluxKlein立面风格迁移工作流_2031957779518332929.json、图片生成/图生图/漫画转欧美美女（解禁模型）：Flux2 Klein 9B_2055197694913720322.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/换装-人物换装-flux2-dev-fp8_1993947236568678401.json、图片生成/图生图/提取服装_2034842540221927426.json、图片生成/图生图/最新Flux 2.0多图编辑工作流（支持直接输入中文提示词）_1993527135818235906.json、图片生成/图生图/黑森林Flux2单图编辑_1993598436635246593.json、图片生成/图生图/黑森林Flux2双图编辑_1993606631697088514.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
 - **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CFGGuider`
+全部 10 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
 - `KSamplerSelect`
 - `LoadImage`
@@ -39,23 +40,21 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyFlux2LatentImage` —— 8/9 个有
-- `LoraLoaderModelOnly` —— 8/9 个有
-- `GetImageSize` —— 7/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/9 个有
-- `Image Comparer (rgthree)` —— 6/9 个有
-- `ConditioningZeroOut` —— 5/9 个有
-- `Anything Everywhere` —— 4/9 个有
-- `ModelPatchTorchSettings` —— 4/9 个有
-- `ImitationHueNode` —— 2/9 个有
-- `Text Multiline` —— 2/9 个有
-- `AIO_Preprocessor` —— 1/9 个有
-- `ImageBlend` —— 1/9 个有
-- `ImageColorMatch+` —— 1/9 个有
-- `ImageResizeKJv2` —— 1/9 个有
-- `JsonPromptNode` —— 1/9 个有
-- `LayerUtility: PurgeVRAM` —— 1/9 个有
-- `easy int` —— 1/9 个有
+- `FluxGuidance` —— 9/10 个有
+- `ImageScaleToTotalPixels` —— 9/10 个有
+- `Int` —— 5/10 个有
+- `ImageConcanate` —— 4/10 个有
+- `easy promptList` —— 4/10 个有
+- `CR Text` —— 2/10 个有
+- `GetNode` —— 2/10 个有
+- `SetNode` —— 2/10 个有
+- `AddLabel` —— 1/10 个有
+- `CR Prompt Text` —— 1/10 个有
+- `JjkText` —— 1/10 个有
+- `ModelPatchTorchSettings` —— 1/10 个有
+- `PathchSageAttentionKJ` —— 1/10 个有
+- `WanVideoImageResizeToClosest` —— 1/10 个有
+- `easy int` —— 1/10 个有
 
 ## 典型参数
 

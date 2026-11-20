@@ -1,65 +1,78 @@
 ---
 name: unknown_workflow_sampler_unet_vae_135
 type: Unknown Workflow
-frequency: 8
-level: strong
-coverage: 0.879625
-common_nodes: [CLIPLoader, KSampler, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: moderate
+coverage: 0.723667
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Qwen image 2.1 文生图_2110328458579632130.json, 图片生成/文生图/qwen-image-2.1_2101675550237614082.json, 图片生成/文生图/qwen-image-2.1多图编辑_2101799458202804226.json, 图片生成/文生图/千问iamge2.1文生图_2102716967022063618.json, 图片生成/文生图/多图编辑工作流_2105329811446124546.json, 数字人/数字人/Qwen Image 2.1 图像编辑 Image Edit_2101822303028989953.json, 数字人/数字人/千问工作流_2102229006685917186.json, 视频生成/图生视频/Qwen_image_2.1图片编辑_2104046916651798529.json]
+members: [图片生成/图生图/Minimax H3 人物替换单人版  自动反推_2099803064780812290.json, 图片生成/图生图/lightx2v 300%加速 MinimaxH3-多参生视频（图片 视频 声音）james001###_2089273278652309506.json, 图片生成/图生图/lightx2v 300%加速 MinimaxH3-文生+图生视频（支持首尾帧）james001###_2089268665731604481.json, 图片生成/文生图/MiniMax H3 FL2VA开源版-人物参考_2084833557930926081.json, 平台全量/trim fast minimax_2108240526796476417.json, 视频生成/图生视频/H3-官方长视频续接_2095155400160141314.json, 视频生成/文生视频/H3-官方长视频_2092501348708343810.json, 视频生成/文生视频/影视级minimax h3，无限长视频接续-手动版_2096601875046027266.json, 视频生成/文生视频/长视频续接+去油+高质量minimax-H3-官方版-无限延长视频-手动版_2092974453855703041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_135
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Qwen image 2.1 文生图_2110328458579632130.json、图片生成/文生图/qwen-image-2.1_2101675550237614082.json、图片生成/文生图/qwen-image-2.1多图编辑_2101799458202804226.json、图片生成/文生图/千问iamge2.1文生图_2102716967022063618.json、图片生成/文生图/多图编辑工作流_2105329811446124546.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Minimax H3 人物替换单人版  自动反推_2099803064780812290.json、图片生成/图生图/lightx2v 300%加速 MinimaxH3-多参生视频（图片 视频 声音）james001###_2089273278652309506.json、图片生成/图生图/lightx2v 300%加速 MinimaxH3-文生+图生视频（支持首尾帧）james001###_2089268665731604481.json、图片生成/文生图/MiniMax H3 FL2VA开源版-人物参考_2084833557930926081.json、平台全量/trim fast minimax_2108240526796476417.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：强结论
-- **平均知识覆盖**：88%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `KSampler`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `QwenImage21Cache` —— 7/8 个有
-- `LoadImage` —— 6/8 个有
-- `CR Text` —— 5/8 个有
-- `EmptyLatentImage` —— 5/8 个有
-- `ComfySwitchNode` —— 4/8 个有
-- `ResolutionSelector` —— 4/8 个有
-- `TextGenerateLTX2Prompt` —— 4/8 个有
-- `easy showAnything` —— 4/8 个有
-- `BatchImagesNode` —— 2/8 个有
-- `SaveImageAdvanced` —— 2/8 个有
-- `EmptyImage` —— 1/8 个有
-- `EmptySD3LatentImage` —— 1/8 个有
-- `Image Comparer (rgthree)` —— 1/8 个有
-- `ImageConcatMulti` —— 1/8 个有
-- `PreviewImage` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 8/9 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/9 个有
+- `MiniMaxH3ReferenceToVideo` —— 8/9 个有
+- `PrimitiveFloat` —— 8/9 个有
+- `SaveVideo` —— 8/9 个有
+- `VHS_LoadVideo` —— 7/9 个有
+- `LoadAudio` —— 6/9 个有
+- `easy showAnything` —— 6/9 个有
+- `ComfySwitchNode` —— 5/9 个有
+- `ExtendIntermediateSigmas` —— 5/9 个有
+- `GetImageRangeFromBatch` —— 5/9 个有
+- `ImageAddNoise` —— 5/9 个有
+- `MiniMaxH3AddGuide` —— 5/9 个有
+- `ModelPreviewOverrideKJ` —— 5/9 个有
+- `PrimitiveBoolean` —— 5/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `TrimAudioDuration` —— 3/9 个有
+- `GetNode` —— 2/9 个有
+- `JjkText` —— 2/9 个有
+- `PreviewImage` —— 2/9 个有
+- `SetNode` —— 2/9 个有
+- `孤海注释` —— 2/9 个有
+- `忽略多组孤海` —— 2/9 个有
+- `Bjornulf_ShowFloat` —— 1/9 个有
+- `JoinStrings` —— 1/9 个有
+- `MiniMaxH3ImageToVideo` —— 1/9 个有
+- `RH_LLMAPI_Pro_Node` —— 1/9 个有
+- `VHS_VideoCombine` —— 1/9 个有
+- `VHS_VideoInfoLoaded` —— 1/9 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 25 | 25 - 50 | 8 | 71% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 88% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 1024 | 1024 - 1152 | 5 | 95% |
-| 高度 | 1024 | 1024 - 1536 | 5 | 82% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,10 +80,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 50，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 88%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1152，5 个样本，取值集中（一致性 95%）
-- 高度 中位数 1024，观测区间 1024 - 1536，5 个样本，取值集中（一致性 82%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -2,62 +2,77 @@
 name: unknown_workflow_video_sampler_clip_112
 type: Unknown Workflow
 frequency: 6
-level: moderate
-coverage: 0.916
-common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+level: strong
+coverage: 1
+common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, JWInteger, KSampler, ModelSamplingSD3, PathchSageAttentionKJ, VAEDecode, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan图生视频工作流-KJ版_1894765402319159298.json, 视频生成/图生视频/Wan图生视频特效版（捏捏、挤压、切片）-KJ版_1899884316468600834.json, 视频生成/图生视频/wan镜头拉近到眼睛_1915835994845941761.json, 视频生成/图生视频/【抖音同款】抖胸舞_1922170035954188290.json, 视频生成/图生视频/【简易版】万物捏捏乐 ， 图片挤压捏爆视频特效- StarAi_1900639314223448065.json, 视频生成/图生视频/抖起来_1997177362523570178.json]
+members: [视频生成/图生视频/004.Wan视频之源003.文生视频_2035333116356726786.json, 视频生成/图生视频/004.Wan视频之源004.图生视频_2035335136459362305.json, 视频生成/图生视频/Wan2.2 All-in-one V10+CineScale 头发图生视频极速版V1  浮云_1997950428413353986.json, 视频生成/图生视频/Wan2.2 All-in-one V10图生视频极速版V2 (支持本地解码)_1967057981361807361.json, 视频生成/图生视频/Wan2.2 All-in-one V10图生视频高动态极速版V1_1962791442060062722.json, 视频生成/图生视频/Wan2.2 All-in-one V10图生视频高动态极速版_1965245831030915073.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_112
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan图生视频工作流-KJ版_1894765402319159298.json、视频生成/图生视频/Wan图生视频特效版（捏捏、挤压、切片）-KJ版_1899884316468600834.json、视频生成/图生视频/wan镜头拉近到眼睛_1915835994845941761.json、视频生成/图生视频/【抖音同款】抖胸舞_1922170035954188290.json、视频生成/图生视频/【简易版】万物捏捏乐 ， 图片挤压捏爆视频特效- StarAi_1900639314223448065.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/004.Wan视频之源003.文生视频_2035333116356726786.json、视频生成/图生视频/004.Wan视频之源004.图生视频_2035335136459362305.json、视频生成/图生视频/Wan2.2 All-in-one V10+CineScale 头发图生视频极速版V1  浮云_1997950428413353986.json、视频生成/图生视频/Wan2.2 All-in-one V10图生视频极速版V2 (支持本地解码)_1967057981361807361.json、视频生成/图生视频/Wan2.2 All-in-one V10图生视频高动态极速版V1_1962791442060062722.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
+- `JWInteger`
+- `KSampler`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `VAEDecode`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `WanVideoLoraSelect` —— 5/6 个有
-- `WanVideoTeaCache` —— 4/6 个有
-- `easy imageSize` —— 4/6 个有
-- `CR Text` —— 3/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/6 个有
-- `WanVideoTorchCompileSettings` —— 3/6 个有
-- `CR Text Replace` —— 2/6 个有
-- `ImageScaleToTotalPixels` —— 2/6 个有
-- `CropFace` —— 1/6 个有
-- `HyVideoEnhanceAVideo` —— 1/6 个有
-- `Int` —— 1/6 个有
-- `Note Plus (mtb)` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
+- `CLIPVisionEncode` —— 5/6 个有
+- `CLIPVisionLoader` —— 5/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `WanImageToVideo` —— 5/6 个有
+- `CR Prompt Text` —— 4/6 个有
+- `LoraLoaderModelOnly` —— 4/6 个有
+- `ImageFromBatch+` —— 3/6 个有
+- `wanBlockSwap` —— 3/6 个有
+- `CLIPLoader` —— 2/6 个有
+- `ModelPatchTorchSettings` —— 2/6 个有
+- `CreateVideo` —— 1/6 个有
+- `EmptyHunyuanLatentVideo` —— 1/6 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/6 个有
+- `PreViewVideo` —— 1/6 个有
+- `SaveImage` —— 1/6 个有
+- `SaveLatent` —— 1/6 个有
+- `TT_img_enc` —— 1/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | sa_solver | - | 6 | 83% |
+| 调度器 | beta | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，6 个样本，一致性 83%
+- 调度器 最常用 beta，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（6/6 个样本）：Steps较低可能导致细节不足

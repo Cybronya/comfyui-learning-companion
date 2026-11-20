@@ -1,41 +1,35 @@
 ---
 name: unknown_workflow_generic_609
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.7832
-common_nodes: [CR Prompt Text, Float, LoadAudio, PreviewAudio, SaveAudioAdvanced, YuE2GenerateCover, YuE2ModelLoader, YuE2ReferenceVoiceCover, YuE2Transcribe]
+coverage: 0.944333
+common_nodes: [MuyeTextEditOutput, RH_Nano_Banana2_Gemini31Flash, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/Yue2音色参考歌词重写音乐生成_2101875297305063426.json, 音频生成/音频生成/AI歌曲翻唱丨YuE2＋Seed-VC丨旋律重制·音色转换_2100463228756254721.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105119345918701569.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105496644690210817.json, 音频生成/音频生成/Yue2音色参考歌词重写音乐翻唱_2099767804454072322.json]
+members: [平台全量/故事版分镜图（好的）_2051884118924898306.json, 平台全量/男鞋-电商鞋子生成_2075116350388920321.json, 平台全量/真实换鞋产品迁移全能编辑 局部重绘 人物模特换脸 换装 万能迁移 自然换脸   4k画质_2048237016999006209.json, 平台全量/真实换鞋全能编辑 局部重绘 人物模特换脸 换装 万能迁移 自然换脸   4k画质_2048217860874440705.json, 平台全量/鞋子替换 【四宫格模特】_2075130008674332673.json, 平台全量/鞋子裂变【4宫格】_2075128720796512258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_609
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Yue2音色参考歌词重写音乐生成_2101875297305063426.json、音频生成/音频生成/AI歌曲翻唱丨YuE2＋Seed-VC丨旋律重制·音色转换_2100463228756254721.json、音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105119345918701569.json、音频生成/音频生成/Yue2音色参考歌词重写音乐生成_2105496644690210817.json、音频生成/音频生成/Yue2音色参考歌词重写音乐翻唱_2099767804454072322.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/故事版分镜图（好的）_2051884118924898306.json、平台全量/男鞋-电商鞋子生成_2075116350388920321.json、平台全量/真实换鞋产品迁移全能编辑 局部重绘 人物模特换脸 换装 万能迁移 自然换脸   4k画质_2048237016999006209.json、平台全量/真实换鞋全能编辑 局部重绘 人物模特换脸 换装 万能迁移 自然换脸   4k画质_2048217860874440705.json、平台全量/鞋子替换 【四宫格模特】_2075130008674332673.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CR Prompt Text`
-- `Float`
-- `LoadAudio`
-- `PreviewAudio`
-- `SaveAudioAdvanced`
-- `YuE2GenerateCover`
-- `YuE2ModelLoader`
-- `YuE2ReferenceVoiceCover`
-- `YuE2Transcribe`
+全部 6 个 workflow 都包含：
+- `MuyeTextEditOutput`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyImage` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
+- `LoadImage` —— 5/6 个有
+- `Image Comparer (rgthree)` —— 2/6 个有
 
 ## 典型参数
 

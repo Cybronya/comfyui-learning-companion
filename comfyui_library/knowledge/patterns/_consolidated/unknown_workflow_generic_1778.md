@@ -3,30 +3,37 @@ name: unknown_workflow_generic_1778
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [SaveAudio, TDQwen3TTSModelLoader, TDQwen3TTSVoiceDesign, Text]
+coverage: 0.6515
+common_nodes: [GuHaiAutoImageSplit, LoadImage, PreviewAny, PreviewImage, RH_LLMAPI_Pro_Node, RH_Nano_Banana2_Gemini31Flash, RH_RhartImageNG31FlashImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音色设计_2014646764153868290.json, 音频生成/音频生成/Qwen3 TTS 音色设计_2061734734996267010.json]
+members: [图片生成/图生图/电商服装模特--自动多姿态图（电商高品质）全能图片2_2103155478606999554.json, 平台全量/电商服装模特--自动多姿态图（电商高品质）全能图片_2103297043899969537.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1778
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/AI代码侠土豆-Qwen3 TTS 音色设计_2014646764153868290.json、音频生成/音频生成/Qwen3 TTS 音色设计_2061734734996267010.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/电商服装模特--自动多姿态图（电商高品质）全能图片2_2103155478606999554.json、平台全量/电商服装模特--自动多姿态图（电商高品质）全能图片_2103297043899969537.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：65%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `SaveAudio`
-- `TDQwen3TTSModelLoader`
-- `TDQwen3TTSVoiceDesign`
-- `Text`
+- `GuHaiAutoImageSplit`
+- `LoadImage`
+- `PreviewAny`
+- `PreviewImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_RhartImageNG31FlashImageToImage`
+- `SaveImage`
+
+**可变部分**（部分 workflow 才有）：
+- `SaveImageAdvanced` —— 1/2 个有
 
 ## 典型参数
 

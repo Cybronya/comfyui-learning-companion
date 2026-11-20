@@ -3,33 +3,36 @@ name: unknown_workflow_generic_1137
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 0.649
-common_nodes: [JjkText, LoadImage, RH_Sora2_I2V_Batch, SaveVideo]
+coverage: 0.85
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, RH_Translator, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/全能视频S 图生视频 并发4个 横屏_2005854349324681217.json, 视频生成/图生视频/全能视频S 图生视频 并发4个 竖屏_2005853627422048257.json, 视频生成/图生视频/全能视频S图生视频_1987816944705409026.json]
+members: [图片生成/图生图/RH__全能图片V1 人物替换_1965620222407360513.json, 图片生成/图生图/全能图片V1AI单图编辑，最强细节控制_1961713202230923266.json, 图片生成/图生图/全能图片V1AI双图处理，轻松合成_1961716891553349633.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1137
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/全能视频S 图生视频 并发4个 横屏_2005854349324681217.json、视频生成/图生视频/全能视频S 图生视频 并发4个 竖屏_2005853627422048257.json、视频生成/图生视频/全能视频S图生视频_1987816944705409026.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/RH__全能图片V1 人物替换_1965620222407360513.json、图片生成/图生图/全能图片V1AI单图编辑，最强细节控制_1961713202230923266.json、图片生成/图生图/全能图片V1AI双图处理，轻松合成_1961716891553349633.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：65%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `JjkText`
 - `LoadImage`
-- `RH_Sora2_I2V_Batch`
-- `SaveVideo`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 1/3 个有
+- `DrawText+` —— 1/3 个有
+- `ImagePadKJ` —— 1/3 个有
+- `ImageResizeKJv2` —— 1/3 个有
 
 ## 典型参数
 

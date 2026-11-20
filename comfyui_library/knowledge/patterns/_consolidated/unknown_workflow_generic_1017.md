@@ -1,37 +1,38 @@
 ---
 name: unknown_workflow_generic_1017
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.714
-common_nodes: [Fast Groups Bypasser (rgthree), LoadImage, PreviewImage, SaveImage]
+coverage: 0.82425
+common_nodes: [LoadImage, RH_Translator, RH_Veo3_Image2Video, SaveVideo, ShowText|pysssss]
 problems: []
 missing: []
-members: [图片生成/图生图/全能图片G2.5 Flare-图生图｜经济型｜4K画质｜超级一致性_2097831398882242561.json, 图片生成/图生图/全能图片G2.5 Sunburst-图生图｜经济型｜4K画质｜超级一致性_2097832985771991042.json, 图片生成/文生图/全能图片G-image-2.5-文生图+图像编辑_2098190214178107394.json]
+members: [视频生成/图生视频/全能视频V3.1图生视频（全自动）_2003989297176977410.json, 视频生成/图生视频/全能视频V3.1首尾帧视频（全自动）_2003836300581060609.json, 视频生成/文生视频/全能视频V3.1首尾帧 效果惊艳_2015375634314305538.json, 视频生成/文生视频/全能视频V3.1首帧-首尾帧_2015965115572555778.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1017
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全能图片G2.5 Flare-图生图｜经济型｜4K画质｜超级一致性_2097831398882242561.json、图片生成/图生图/全能图片G2.5 Sunburst-图生图｜经济型｜4K画质｜超级一致性_2097832985771991042.json、图片生成/文生图/全能图片G-image-2.5-文生图+图像编辑_2098190214178107394.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/全能视频V3.1图生视频（全自动）_2003989297176977410.json、视频生成/图生视频/全能视频V3.1首尾帧视频（全自动）_2003836300581060609.json、视频生成/文生视频/全能视频V3.1首尾帧 效果惊艳_2015375634314305538.json、视频生成/文生视频/全能视频V3.1首帧-首尾帧_2015965115572555778.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `Fast Groups Bypasser (rgthree)`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `PreviewImage`
-- `SaveImage`
+- `RH_Translator`
+- `RH_Veo3_Image2Video`
+- `SaveVideo`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25FlareImageToImage` —— 2/3 个有
-- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 1/3 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 1/3 个有
+- `CR Text` —— 3/4 个有
+- `RHHiddenNodes` —— 2/4 个有
+- `easy imageScaleDownToSize` —— 1/4 个有
 
 ## 典型参数
 

@@ -1,40 +1,33 @@
 ---
 name: unknown_workflow_generic_769
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.7875
-common_nodes: [CR Text, JjkText, LayerUtility: TextJoin, Qwen3_VQA, SaveImage, Seedream4StreamingNode, easy showAnything]
+coverage: 0.9
+common_nodes: [RH_GeminiOmniFlashTextToVideo, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/场景参考_1992762127528120322.json, 图片生成/图生图/物品增加_1992828377742594049.json, 图片生成/图生图/物品替换_1992805330686111746.json, 图片生成/文生图/单图编辑工作流_1992792485630111746.json]
+members: [视频生成/文生视频/Gemini Omni Flash 文生视频工作流_2064376105309655042.json, 视频生成/文生视频/Omni Flash 文生视频_1967512317384593409.json, 视频生成/文生视频/Omni Flash 文生视频_2066774345351000065.json, 视频生成/文生视频/全能视频 Omni Flash 文生视频-低价渠道版_2059971821507792897.json, 视频生成/文生视频/全能视频 Omni Flash 文生视频_2058786928014749698.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_769
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/场景参考_1992762127528120322.json、图片生成/图生图/物品增加_1992828377742594049.json、图片生成/图生图/物品替换_1992805330686111746.json、图片生成/文生图/单图编辑工作流_1992792485630111746.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/Gemini Omni Flash 文生视频工作流_2064376105309655042.json、视频生成/文生视频/Omni Flash 文生视频_1967512317384593409.json、视频生成/文生视频/Omni Flash 文生视频_2066774345351000065.json、视频生成/文生视频/全能视频 Omni Flash 文生视频-低价渠道版_2059971821507792897.json、视频生成/文生视频/全能视频 Omni Flash 文生视频_2058786928014749698.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CR Text`
-- `JjkText`
-- `LayerUtility: TextJoin`
-- `Qwen3_VQA`
-- `SaveImage`
-- `Seedream4StreamingNode`
-- `easy showAnything`
+全部 5 个 workflow 都包含：
+- `RH_GeminiOmniFlashTextToVideo`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageLoader` —— 3/4 个有
-- `MultiplePathsInput` —— 3/4 个有
-- `LoadImage` —— 1/4 个有
+- `Text` —— 1/5 个有
 
 ## 典型参数
 

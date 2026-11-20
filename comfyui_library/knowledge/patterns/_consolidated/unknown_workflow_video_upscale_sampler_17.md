@@ -3,63 +3,87 @@ name: unknown_workflow_video_upscale_sampler_17
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.9415
-common_nodes: [FILM VFI, ImageScale, ImageUpscaleWithModel, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader]
-problems: []
+coverage: 0.87
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyImage, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), GrowMask, ImageCompositeMasked, ImageResizeKJv2, ImageScale, ImageUpscaleWithModel, KSampler, LayerUtility: PurgeVRAM V2, LoadImage, ModelSamplingSD3, PreviewImage, SAMLoader, TrimVideoLatent, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVaceToVideo, easy cleanGpuUsed, easy imageRemBg, easy int]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/WAN2.1图生视频开源之光_1912762337353265153.json, 视频生成/图生视频/啊癫 通义万相wan2.1 超级大摆锤 图片跳舞_1914988219354574849.json]
+members: [平台全量/视频人物替换+VACE 增加人脸_1965101268379291650.json, 视频生成/图生视频/视频人物替换+VACE 14B图生视频_1927528836135817218.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/WAN2.1图生视频开源之光_1912762337353265153.json、视频生成/图生视频/啊癫 通义万相wan2.1 超级大摆锤 图片跳舞_1914988219354574849.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（平台全量/视频人物替换+VACE 增加人脸_1965101268379291650.json、视频生成/图生视频/视频人物替换+VACE 14B图生视频_1927528836135817218.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FILM VFI`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `EmptyImage`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `GrowMask`
+- `ImageCompositeMasked`
+- `ImageResizeKJv2`
 - `ImageScale`
 - `ImageUpscaleWithModel`
+- `KSampler`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
-- `LoadWanVideoT5TextEncoder`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `SAMLoader`
+- `TrimVideoLatent`
+- `UNETLoader`
 - `UpscaleModelLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEnhanceAVideo`
-- `WanVideoImageClipEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
+- `WanVaceToVideo`
+- `easy cleanGpuUsed`
+- `easy imageRemBg`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Aspect Ratio` —— 1/2 个有
-- `ImageFromBatch+` —— 1/2 个有
-- `ImageListToImageBatch` —— 1/2 个有
-- `Int` —— 1/2 个有
-- `Logic Boolean` —— 1/2 个有
-- `Number to Float` —— 1/2 个有
-- `WanVideoLoraSelect` —— 1/2 个有
-- `easy cleanGpuUsed` —— 1/2 个有
-- `easy ifElse` —— 1/2 个有
+- `ApplyFaceProcessor` —— 1/2 个有
+- `FaceProcessorLoader` —— 1/2 个有
+- `ImageConcanate` —— 1/2 个有
+- `ImageResizeKJ` —— 1/2 个有
+- `ImageSmartSharpen+` —— 1/2 个有
+- `JWInteger` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `LoraLoaderModelOnly` —— 1/2 个有
+- `MathExpression|pysssss` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 14 | - | 2 | 57% |
+| Prompt 约束强度(CFG) | 2.5 | - | 2 | 40% |
+| 采样算法 | uni_pc | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
+- 采样步数 中位数 14，样本不足，未给区间，2 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 40%
+- 采样算法 最常用 uni_pc，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（1/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

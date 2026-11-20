@@ -1,69 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_715
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.715667
-common_nodes: [AIO_Preprocessor, CR Text, CreateCFGScheduleFloatList, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, GetImageSizeAndCount, GetNode, ImageResizeKJ, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PreviewImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSigmaToStep, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoVAELoader]
+coverage: 0.45525
+common_nodes: [CFGGuider, CLIPTextEncode, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LiconMSR, LoadImage, ManualSigmas, PromptRelayEncode, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine, easy imageRemBg]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 Fun VACE 姿势深度参考转绘_1966804556082556930.json, 视频生成/图生视频/视频人物替换 Wan2.2  24G显存可以跑_1966922362283233281.json, 视频生成/图生视频/通义万相wan2.2Fun VACE视频转绘（美女跳舞姿势参考）_1967206218295074817.json]
+members: [视频生成/图生视频/AI代码侠土豆-LTX2.3-MSR多参考图V2+音频参考_2080190771210313729.json, 视频生成/图生视频/LTX2.3 MSR v2全能参考自定义音频_2079011118076481538.json, 视频生成/图生视频/MSR v2全能参考_2079026510954057729.json, 视频生成/图生视频/（测试中）LTX2.3-MSR多参考图+音频参考_2082504671247298561.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_715
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Fun VACE 姿势深度参考转绘_1966804556082556930.json、视频生成/图生视频/视频人物替换 Wan2.2  24G显存可以跑_1966922362283233281.json、视频生成/图生视频/通义万相wan2.2Fun VACE视频转绘（美女跳舞姿势参考）_1967206218295074817.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/AI代码侠土豆-LTX2.3-MSR多参考图V2+音频参考_2080190771210313729.json、视频生成/图生视频/LTX2.3 MSR v2全能参考自定义音频_2079011118076481538.json、视频生成/图生视频/MSR v2全能参考_2079026510954057729.json、视频生成/图生视频/（测试中）LTX2.3-MSR多参考图+音频参考_2082504671247298561.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AIO_Preprocessor`
-- `CR Text`
-- `CreateCFGScheduleFloatList`
-- `DepthAnything_V2`
-- `DownloadAndLoadDepthAnythingV2Model`
-- `GetImageSizeAndCount`
+全部 4 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
-- `ImageResizeKJ`
-- `ImpactSwitch`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
 - `LoadImage`
-- `PreviewImage`
+- `ManualSigmas`
+- `PromptRelayEncode`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
-- `VHS_LoadVideo`
+- `SimpleMath+`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVACEEncode`
-- `WanVideoVACEModelSelect`
-- `WanVideoVAELoader`
+- `easy imageRemBg`
 
 **可变部分**（部分 workflow 才有）：
-- `AddLabel` —— 2/3 个有
-- `EmptyImage` —— 2/3 个有
-- `ImageConcatMulti` —— 2/3 个有
-- `Primitive integer [Crystools]` —— 2/3 个有
-- `easy cleanGpuUsed` —— 1/3 个有
+- `LTXVAudioVAEEncode` —— 3/4 个有
+- `LoadAudio` —— 3/4 个有
+- `SetLatentNoiseMask` —— 3/4 个有
+- `SolidMask` —— 3/4 个有
+- `CR Text` —— 2/4 个有
+- `ComfyMathExpression` —— 2/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/4 个有
+- `Float` —— 2/4 个有
+- `INTConstant` —— 2/4 个有
+- `Int` —— 2/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `PreviewAudio` —— 2/4 个有
+- `ShowAnything|Mie` —— 2/4 个有
+- `TTResolutionSelector` —— 2/4 个有
+- `Text` —— 2/4 个有
+- `easy cleanGpuUsed` —— 2/4 个有
+- `LTXVEmptyLatentAudio` —— 1/4 个有
+- `TrimAudioDuration` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 145 | - | 1 | 100% |
+| 高度 | 24 | - | 1 | 100% |
 
 ## 常见问题
 

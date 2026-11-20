@@ -1,58 +1,81 @@
 ---
 name: unknown_workflow_video_lora_sampler_571
 type: Unknown Workflow
-frequency: 4
+frequency: 5
 level: moderate
-coverage: 0.89625
-common_nodes: [CreateCFGScheduleFloatList, GetImageSizeAndCount, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.6398
+common_nodes: [3000688f-5a2b-435a-9a09-b8b8cf4dfda5, Any Switch (rgthree), BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, Fast Bypasser (rgthree), Fast Groups Muter (rgthree), GetNode, GoohaiUniversalSlider, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3AddGuide, MiniMaxH3ReferenceToVideo, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, SaveVideo, SetNode, Text, TrimAudioDuration, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive, 忽略多组孤海]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan 2.2 图生视频（优化版）_1951564039392579586.json, 视频生成/文生视频/Wan 2.2 文生视频（优化版）_1951554035532902402.json, 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_1950555101742223362.json, 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json]
+members: [平台全量/Cc菜Minimax h3 多帧+参考+长视频+独立lora(Runninghub双段版)_2117554822529503234.json, 平台全量/Cc菜Minimax h3 多帧参考(Runninghub单段版)_2117628830977449986.json, 平台全量/Jimmy 的 Minimax h3 多帧参考(Runninghub单段版)_2118370593778262018.json, 平台全量/Jimmy 的 Minimax h3 多帧参考(Runninghub单段版)_2118527377977470978.json, 平台全量/Jimmy 的 Minimax h3 多帧参考(Runninghub单段版)_2118911339379912706.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_571
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 图生视频（优化版）_1951564039392579586.json、视频生成/文生视频/Wan 2.2 文生视频（优化版）_1951554035532902402.json、视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_1950555101742223362.json、视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/Cc菜Minimax h3 多帧+参考+长视频+独立lora(Runninghub双段版)_2117554822529503234.json、平台全量/Cc菜Minimax h3 多帧参考(Runninghub单段版)_2117628830977449986.json、平台全量/Jimmy 的 Minimax h3 多帧参考(Runninghub单段版)_2118370593778262018.json、平台全量/Jimmy 的 Minimax h3 多帧参考(Runninghub单段版)_2118527377977470978.json、平台全量/Jimmy 的 Minimax h3 多帧参考(Runninghub单段版)_2118911339379912706.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `CreateCFGScheduleFloatList`
-- `GetImageSizeAndCount`
-- `LoadWanVideoT5TextEncoder`
+全部 5 个 workflow 都包含：
+- `3000688f-5a2b-435a-9a09-b8b8cf4dfda5`
+- `Any Switch (rgthree)`
+- `BasicScheduler`
+- `CLIPLoader`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `Fast Bypasser (rgthree)`
+- `Fast Groups Muter (rgthree)`
+- `GetNode`
+- `GoohaiUniversalSlider`
+- `KSamplerSelect`
+- `LoadAudio`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SemanticBridgeApplyT8`
+- `MiniMaxH3SemanticBridgeConfigT8`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
+- `ResolutionSelector`
+- `SaveVideo`
+- `SetNode`
+- `Text`
+- `TrimAudioDuration`
+- `UNETLoader`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `VRGDG_MiniMaxH3AudioDrive`
+- `忽略多组孤海`
 
 **可变部分**（部分 workflow 才有）：
-- `MathExpression|pysssss` —— 3/4 个有
-- `RH_LLMAPI_NODE` —— 3/4 个有
-- `WanVideoEmptyEmbeds` —— 3/4 个有
-- `ImpactSwitch` —— 2/4 个有
-- `Primitive integer [Crystools]` —— 2/4 个有
-- `SeargePromptText` —— 2/4 个有
-- `ShowText` —— 2/4 个有
-- `Text Multiline` —— 2/4 个有
-- `easy cleanGpuUsed` —— 2/4 个有
-- `ImageResize+` —— 1/4 个有
-- `LoadImage` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `Wan22PromptSelector` —— 1/4 个有
-- `WanVideoImageToVideoEncode` —— 1/4 个有
+- `BasicGuider` —— 4/5 个有
+- `BlockSparseAttention` —— 4/5 个有
+- `MiniMaxChunkFeedForward` —— 4/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/5 个有
+- `MiniMaxH3SigmaShift` —— 4/5 个有
+- `MiniMaxLowVRAMAttention` —— 4/5 个有
+- `ModelAttentionBackend` —— 4/5 个有
+- `RandomNoise` —— 4/5 个有
+- `SamplerCustomAdvanced` —— 4/5 个有
+- `VAEDecode` —— 4/5 个有
+- `VAEDecodeAudio` —— 4/5 个有
+- `216f7681-5aed-48b7-a1ca-9cdceaa9cea0` —— 1/5 个有
+- `3860701b-afbc-4fc6-8627-77d475b3f0cb` —— 1/5 个有
+- `AD_video_merge` —— 1/5 个有
+- `ImageFromBatch` —— 1/5 个有
+- `VHS_LoadVideoPath` —— 1/5 个有
+- `WanEx_VideoColorMatch` —— 1/5 个有
+- `b3e2b2b0-1f68-4478-ac79-5d00ccb733ae` —— 1/5 个有
+- `c92f4563-479c-4ac9-aa17-7b8843e30c35` —— 1/5 个有
 
 ## 典型参数
 

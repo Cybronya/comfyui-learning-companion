@@ -1,40 +1,38 @@
 ---
 name: unknown_workflow_sampler_7
 type: Unknown Workflow
-frequency: 11
+frequency: 12
 level: moderate
-coverage: 0.905091
-common_nodes: [AudioPad, Get Size JK, ImageResizeKJv2, IndexTTSRun, LoadAudio, LoadImage, PrimitiveStringMultiline, ResizeImagesByShorterEdge, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveAudio, SaveVideo]
+coverage: 0.967583
+common_nodes: [LoadAudio, LoadImage, RunningHub SoulX-FlashHead Loader, RunningHub SoulX-FlashHead Sampler, SaveVideo]
 problems: []
 missing: []
-members: [数字人/数字人/FlashHead 极速数字人，图片+文字就好 简单上手效果好_2033484136492568578.json, 数字人/数字人/FlashHead极速数字人生成，只需图片+文字就好_2027210032944779265.json, 数字人/数字人/FlashHead极速数字人生成，图片+文字即刻生成_2037162777755783169.json, 数字人/数字人/极速数字人FlashHead（几十秒超低算力生成）_2027270802957148162.json, 视频生成/图生视频/FlashHead-极速数字人（超低算力）_2066412555228246018.json, 视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就好_2062698269251301377.json, 视频生成/图生视频/FlashHead极速数字人生成，只需图片+文字就搞定_2027296503793983490.json, 视频生成/图生视频/图生视频---FlashHead极速数字人生成，只需图片+文字就好_2039584123534184449.json, 视频生成/图生视频/数字人生成  图生视频_2034440610702172162.json, 视频生成/图生视频/超自然FlashHead极速数字人 只需图片+文字_2032303580274761729.json, 视频生成/文生视频/FlashHead极速数字人生成，只需图片+文字就好_2033804221602074625.json]
+members: [图片生成/图生图/Soul-FlashHead极速版数字人_2037759275770060802.json, 数字人/数字人/Soul-FlashHead高速数字人_2027110226431840257.json, 数字人/数字人/Soul-FlashHead高速数字人_2029580449688854530.json, 数字人/数字人/Soul-FlashHead高速数字人_2058927237986086913.json, 数字人/数字人/Soul-FlashHead高速数字人_2070502554315870210.json, 数字人/数字人/Soul-FlashHead高速数字人工作流_2029049303896956929.json, 视频生成/图生视频/Soul-FlashHead一键高速数字人_2029805052180828161.json, 视频生成/图生视频/Soul-FlashHead高速数字人_2027301910834843650.json, 视频生成/图生视频/Soul-FlashHead高速数字人_2027324926671200258.json, 视频生成/图生视频/Soul-FlashHead高速数字人_2058750724892352513.json, 视频生成/图生视频/急速Soul-FlashHead高速数字人生成_2029198735569326082.json, 视频生成/图生视频/高速数字人_2066724137862787074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（数字人/数字人/FlashHead 极速数字人，图片+文字就好 简单上手效果好_2033484136492568578.json、数字人/数字人/FlashHead极速数字人生成，只需图片+文字就好_2027210032944779265.json、数字人/数字人/FlashHead极速数字人生成，图片+文字即刻生成_2037162777755783169.json、数字人/数字人/极速数字人FlashHead（几十秒超低算力生成）_2027270802957148162.json、视频生成/图生视频/FlashHead-极速数字人（超低算力）_2066412555228246018.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Soul-FlashHead极速版数字人_2037759275770060802.json、数字人/数字人/Soul-FlashHead高速数字人_2027110226431840257.json、数字人/数字人/Soul-FlashHead高速数字人_2029580449688854530.json、数字人/数字人/Soul-FlashHead高速数字人_2058927237986086913.json、数字人/数字人/Soul-FlashHead高速数字人_2070502554315870210.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `AudioPad`
-- `Get Size JK`
-- `ImageResizeKJv2`
-- `IndexTTSRun`
+全部 12 个 workflow 都包含：
 - `LoadAudio`
 - `LoadImage`
-- `PrimitiveStringMultiline`
-- `ResizeImagesByShorterEdge`
 - `RunningHub SoulX-FlashHead Loader`
 - `RunningHub SoulX-FlashHead Sampler`
-- `SaveAudio`
 - `SaveVideo`
+
+**可变部分**（部分 workflow 才有）：
+- `AutoCropFaces` —— 1/12 个有
+- `PreviewImage` —— 1/12 个有
+- `scale` —— 1/12 个有
 
 ## 典型参数
 

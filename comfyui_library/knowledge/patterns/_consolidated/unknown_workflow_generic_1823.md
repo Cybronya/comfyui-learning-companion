@@ -3,31 +3,32 @@ name: unknown_workflow_generic_1823
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 0.75
-common_nodes: [FB_Qwen3TTSVoiceDesign, SaveAudioMP3]
+coverage: 1
+common_nodes: [RH_RhartImageNG31FlashTextToImage, SaveImage, Text]
 problems: []
 missing: []
-members: ["音频生成/音频生成/Qwen3-TTS音色克隆,设计音色_2040138978837401602.json", 音频生成/音频生成/Qwen3TTS声音设计-文本转语音工作流_2094559282082705410.json]
+members: [图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json, 图片生成/文生图/分镜图生成_2046068941402939394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1823
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（音频生成/音频生成/Qwen3-TTS音色克隆,设计音色_2040138978837401602.json、音频生成/音频生成/Qwen3TTS声音设计-文本转语音工作流_2094559282082705410.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/RH 全能图片V2-文生图-低价渠道版_2067526228772474882.json、图片生成/文生图/分镜图生成_2046068941402939394.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：75%
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `FB_Qwen3TTSVoiceDesign`
-- `SaveAudioMP3`
+- `RH_RhartImageNG31FlashTextToImage`
+- `SaveImage`
+- `Text`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 1/2 个有
+- `RHSettingsNode` —— 1/2 个有
 
 ## 典型参数
 

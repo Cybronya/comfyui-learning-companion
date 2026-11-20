@@ -1,39 +1,37 @@
 ---
 name: image_to_image_lora_sampler_clip_67
 type: Image To Image
-frequency: 4
-level: weak
-coverage: 0.955
-common_nodes: [Bjornulf_TextToStringAndSeed, CLIPLoader, CLIPTextEncode, ImageConcanate, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PDIMAGE_LongerSize, PMRF, PathchSageAttentionKJ, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 6
+level: strong
+coverage: 0.941333
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Joy3反推提示词+Wan2.2图生图（洗图）_1951284309107879938.json, 图片生成/图生图/Wan2.2洗图(图生图)_1951288024074276865.json, 图片生成/图生图/Wan2.2超绝真实系图生图洗图工作流_1950509604289630210.json, 图片生成/图生图/🦖Wan2.2真实风格洗图（或转绘）（自用）_1950740958910550017.json]
+members: [图片生成/图生图/服装衣物生成3D镂空图_1980917939945783297.json, 图片生成/图生图/版画艺术生成器_1996222237315309569.json, 图片生成/文生图/真人变假模_1980925614649724929.json, 平台全量/Kontext-老照片修复_1946963516941328385.json, 平台全量/Kontext老照片修复_V1.0版本_1950795927500038145.json, 平台全量/kontext一键取衣去人（去掉人物只留衣服）_1941038033233985537.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_67
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Joy3反推提示词+Wan2.2图生图（洗图）_1951284309107879938.json、图片生成/图生图/Wan2.2洗图(图生图)_1951288024074276865.json、图片生成/图生图/Wan2.2超绝真实系图生图洗图工作流_1950509604289630210.json、图片生成/图生图/🦖Wan2.2真实风格洗图（或转绘）（自用）_1950740958910550017.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/服装衣物生成3D镂空图_1980917939945783297.json、图片生成/图生图/版画艺术生成器_1996222237315309569.json、图片生成/文生图/真人变假模_1980925614649724929.json、平台全量/Kontext-老照片修复_1946963516941328385.json、平台全量/Kontext老照片修复_V1.0版本_1950795927500038145.json…）
 
 - **类型**：Image To Image
-- **样本数**：4
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：96%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `Bjornulf_TextToStringAndSeed`
-- `CLIPLoader`
+全部 6 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ImageConcanate`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PDIMAGE_LongerSize`
-- `PMRF`
-- `PathchSageAttentionKJ`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -41,35 +39,38 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DeepTranslatorTextNode` —— 1/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/4 个有
-- `LayerUtility: JoyCaptionBeta1` —— 1/4 个有
-- `LayerUtility: JoyCaptionBeta1ExtraOptions` —— 1/4 个有
-- `LayerUtility: LoadJoyCaptionBeta1Model` —— 1/4 个有
-- `ShowText|pysssss` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
+- `ShowText|pysssss` —— 5/6 个有
+- `Text Multiline` —— 5/6 个有
+- `ImageConcatMulti` —— 4/6 个有
+- `ImageStitch` —— 2/6 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 2/6 个有
+- `LayerUtility: ImageAutoCrop V2` —— 2/6 个有
+- `ConstrainImage|pysssss` —— 1/6 个有
+- `ImageResize+` —— 1/6 个有
+- `LayerUtility: CropByMask` —— 1/6 个有
+- `PrimitiveFloat` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
+- `ttN concat` —— 1/6 个有
+- `ttN text` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 13 | 6 - 20 | 4 | 46% |
-| Prompt 约束强度(CFG) | 2.25 | 1 - 3.5 | 4 | 44% |
-| 采样算法 | uni_pc | - | 4 | 50% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 0.2 | 0.15 - 0.3 | 4 | 74% |
+| 采样步数 | 20 | 20 - 20 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 13，观测区间 6 - 20，4 个样本，取值分散，一致性仅 46%
-- Prompt 约束强度(CFG) 中位数 2.25，观测区间 1 - 3.5，4 个样本，取值分散，一致性仅 44%
-- 采样算法 最常用 uni_pc，4 个样本，一致性 50%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.2，观测区间 0.15 - 0.3，4 个样本
-- 高发问题（4/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）

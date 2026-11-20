@@ -1,38 +1,37 @@
 ---
 name: unknown_workflow_generic_956
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.699333
-common_nodes: [CR Prompt Text, ImageConcanate, LoadImage, RH_ComfyFluxKontext, SaveImage, easy showAnything]
+coverage: 0.792
+common_nodes: [LoadImage, PreviewImage, RH_Nano_Banana_Image2Image, SaveImage, Text Multiline]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Kontext+DDcolor老照片修复一键自动修复老照片_1930969254500171777.json, 图片生成/图生图/Flux Kontext+老照片修复上色V5_1932291805994188802.json, 图片生成/图生图/Flux Kontext单图像编辑V3（浮动速度版）_1929143969140346882.json]
+members: [图片生成/文生图/职业商务写真_2005565941318643713.json, 平台全量/AI人像写真_1965711237147459585.json, 平台全量/去水印全能图片V1_1963627152762818561.json, 平台全量/完美清除水印 洗图 去水印 全能图片修复_2013474333196296193.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_956
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux Kontext+DDcolor老照片修复一键自动修复老照片_1930969254500171777.json、图片生成/图生图/Flux Kontext+老照片修复上色V5_1932291805994188802.json、图片生成/图生图/Flux Kontext单图像编辑V3（浮动速度版）_1929143969140346882.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/职业商务写真_2005565941318643713.json、平台全量/AI人像写真_1965711237147459585.json、平台全量/去水印全能图片V1_1963627152762818561.json、平台全量/完美清除水印 洗图 去水印 全能图片修复_2013474333196296193.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：70%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CR Prompt Text`
-- `ImageConcanate`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_ComfyFluxKontext`
+- `PreviewImage`
+- `RH_Nano_Banana_Image2Image`
 - `SaveImage`
-- `easy showAnything`
+- `Text Multiline`
 
 **可变部分**（部分 workflow 才有）：
-- `DDColor_Colorize` —— 2/3 个有
-- `PMRF` —— 1/3 个有
+- `CR Simple Image Compare` —— 2/4 个有
+- `easy isMaskEmpty` —— 2/4 个有
 
 ## 典型参数
 

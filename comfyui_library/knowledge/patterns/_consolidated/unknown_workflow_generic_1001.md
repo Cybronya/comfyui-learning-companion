@@ -1,35 +1,36 @@
 ---
 name: unknown_workflow_generic_1001
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartImageG2ImageToImage, SaveImage]
+coverage: 0.96425
+common_nodes: [LoadImage, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/产品修图-布料去褶皱_2064733467665059841.json, 图片生成/图生图/光影增强_2055229927070420993.json, 图片生成/图生图/全能 image2（25宫格故事板生成）通用图生图工作流_2058929056028123137.json]
+members: [视频生成/图生视频/Minimax H3 多模态参考生成视频｜R2V_2083099294751617025.json, 视频生成/图生视频/Minimax H3 首尾帧图生视频（2K高清）强在性价比_2083111267291717633.json, 视频生成/文生视频/Minimax H3_2083108762361098242.json, 视频生成/文生视频/minmax h3_2084101316028227586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1001
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/产品修图-布料去褶皱_2064733467665059841.json、图片生成/图生图/光影增强_2055229927070420993.json、图片生成/图生图/全能 image2（25宫格故事板生成）通用图生图工作流_2058929056028123137.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Minimax H3 多模态参考生成视频｜R2V_2083099294751617025.json、视频生成/图生视频/Minimax H3 首尾帧图生视频（2K高清）强在性价比_2083111267291717633.json、视频生成/文生视频/Minimax H3_2083108762361098242.json、视频生成/文生视频/minmax h3_2084101316028227586.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `RH_RhartImageG2ImageToImage`
-- `SaveImage`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `InspyrenetRembg` —— 1/3 个有
-- `Textbox` —— 1/3 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 3/4 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 3/4 个有
+- `Label (rgthree)` —— 2/4 个有
+- `RH_MinimaxHailuoH3TextToVideo` —— 2/4 个有
 
 ## 典型参数
 

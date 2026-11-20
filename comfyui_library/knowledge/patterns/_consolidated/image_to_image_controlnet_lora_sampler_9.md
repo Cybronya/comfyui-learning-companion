@@ -2,78 +2,84 @@
 name: image_to_image_controlnet_lora_sampler_9
 type: Image To Image
 frequency: 3
-level: strong
-coverage: 0.829
-common_nodes: [CLIPLoader, ControlNetLoader, KSampler, LayerUtility: ImageScaleByAspectRatio, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, OpenposePreprocessor, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.880333
+common_nodes: [AIO_Preprocessor, CLIPTextEncode, CR Text, CheckpointLoaderSimple, ControlNetApplyAdvanced, ControlNetLoader, ImageScale, KSampler, LoadImage, LoraLoader, PreviewImage, SaveImage, ShowText|pysssss, Text List, Text List to Text, VAEDecode, VAEEncode, WD14Tagger|pysssss]
+problems: []
 missing: []
-members: [图片生成/图生图/Qwen 姿态 深度 线稿 3合1（InstantX）_1960490317730426881.json, 图片生成/图生图/Qwen编辑 双人动作迁移_1987056306760691713.json, 图片生成/图生图/Qwen编辑 更换指定姿势_1961357667396730881.json]
+members: [图片生成/图生图/2D 转 3D 形象 ｜一键生图系列_1905621624433856514.json, 平台全量/2D转欧美卡通风格_1817495730629292033.json, 平台全量/像素画风丨风格转换v3.2_1938071151103119361.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_lora_sampler_9
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Qwen 姿态 深度 线稿 3合1（InstantX）_1960490317730426881.json、图片生成/图生图/Qwen编辑 双人动作迁移_1987056306760691713.json、图片生成/图生图/Qwen编辑 更换指定姿势_1961357667396730881.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/2D 转 3D 形象 ｜一键生图系列_1905621624433856514.json、平台全量/2D转欧美卡通风格_1817495730629292033.json、平台全量/像素画风丨风格转换v3.2_1938071151103119361.json）
 
 - **类型**：Image To Image
 - **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **可信度**：中等可信
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `CLIPLoader`
+- `AIO_Preprocessor`
+- `CLIPTextEncode`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `ControlNetApplyAdvanced`
 - `ControlNetLoader`
+- `ImageScale`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `OpenposePreprocessor`
+- `LoraLoader`
 - `PreviewImage`
 - `SaveImage`
-- `UNETLoader`
+- `ShowText|pysssss`
+- `Text List`
+- `Text List to Text`
 - `VAEDecode`
 - `VAEEncode`
-- `VAELoader`
+- `WD14Tagger|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 2/3 个有
-- `CLIPTextEncode` —— 2/3 个有
-- `ControlNetApplySD3` —— 2/3 个有
-- `AFL:QwenEditPlusFastuseV2` —— 1/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `CR Image Input Switch (4 way)` —— 1/3 个有
-- `Image Comparer (rgthree)` —— 1/3 个有
-- `ImageConcanate` —— 1/3 个有
-- `ImpactInt` —— 1/3 个有
-- `TextEncodeQwenImageEdit` —— 1/3 个有
-- `easy imageConcat` —— 1/3 个有
+- `VAELoader` —— 2/3 个有
+- `Anything Everywhere` —— 1/3 个有
+- `ControlNetLoaderAdvanced` —— 1/3 个有
+- `DepthAnything_V2` —— 1/3 个有
+- `DownloadAndLoadDepthAnythingV2Model` —— 1/3 个有
+- `FaceDetailer` —— 1/3 个有
+- `LatentUpscaleBy` —— 1/3 个有
+- `RepeatLatentBatch` —— 1/3 个有
+- `SAMLoader` —— 1/3 个有
+- `UltimateSDUpscale` —— 1/3 个有
+- `UltralyticsDetectorProvider` —— 1/3 个有
+- `UpscaleModelLoader` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | 1.15 | - | 2 | 70% |
-| 采样步数 | 8 | 8 - 8 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| ControlNet 权重 | 0.7 | 0.55 - 0.7 | 3 | 89% |
+| 采样步数 | 20 | 18 - 28 | 3 | 80% |
+| Prompt 约束强度(CFG) | 4.5 | 3 - 7.5 | 3 | 63% |
+| 采样算法 | dpmpp_2m_sde_gpu | - | 3 | 33% |
+| 调度器 | karras | - | 3 | 67% |
+| 重绘幅度 | 0.8 | 0.78 - 1 | 3 | 88% |
+| LoRA 模型强度 | 0.55 | 0.4 - 1.2 | 3 | 52% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- ControlNet 权重 中位数 1.15，样本不足，未给区间，2 个样本
-- 采样步数 中位数 8，观测区间 8 - 8，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足
+- ControlNet 权重 中位数 0.7，观测区间 0.55 - 0.7，3 个样本，取值集中（一致性 89%）
+- 采样步数 中位数 20，观测区间 18 - 28，3 个样本，取值集中（一致性 80%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 3 - 7.5，3 个样本
+- 采样算法 最常用 dpmpp_2m_sde_gpu，3 个样本，一致性 33%
+- 调度器 最常用 karras，3 个样本，一致性 67%
+- 重绘幅度 中位数 0.8，观测区间 0.78 - 1，3 个样本，取值集中（一致性 88%）
+- LoRA 模型强度 中位数 0.55，观测区间 0.4 - 1.2，3 个样本
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

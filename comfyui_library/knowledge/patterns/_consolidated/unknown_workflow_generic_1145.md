@@ -3,33 +3,41 @@ name: unknown_workflow_generic_1145
 type: Unknown Workflow
 frequency: 3
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20ImageToVideo, SaveVideo]
+coverage: 0.384333
+common_nodes: [CR Text, CR Text Concatenate, GetNode, InversionDemoLazyIndexSwitch, JjkText, RH_Jimeng4_Image2Image, SaveImage, SetNode, ShowText|pysssss, easy int]
 problems: []
 missing: []
-members: [视频生成/图生视频/地表最强超能视频2.0图生视频-支持真人工作流_2037499998518120449.json, 视频生成/图生视频/最强视频生成模型_2037444159308570625.json, 视频生成/图生视频/首帧图生视频2_2041776557408133121.json]
+members: [图片生成/图生图/jimeng4.0-多图编辑版（5张图）Multi image editing version_1967852742049935362.json, 图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json, 平台全量/Seedream 4.0 -即梦4.0多图像编辑_1966420775928573954.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1145
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/地表最强超能视频2.0图生视频-支持真人工作流_2037499998518120449.json、视频生成/图生视频/最强视频生成模型_2037444159308570625.json、视频生成/图生视频/首帧图生视频2_2041776557408133121.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/jimeng4.0-多图编辑版（5张图）Multi image editing version_1967852742049935362.json、图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json、平台全量/Seedream 4.0 -即梦4.0多图像编辑_1966420775928573954.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：38%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `LoadImage`
-- `RH_RhartVideoSparkvideo20ImageToVideo`
-- `SaveVideo`
+- `CR Text`
+- `CR Text Concatenate`
+- `GetNode`
+- `InversionDemoLazyIndexSwitch`
+- `JjkText`
+- `RH_Jimeng4_Image2Image`
+- `SaveImage`
+- `SetNode`
+- `ShowText|pysssss`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `0246.RandomInt` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LoadImage` —— 2/3 个有
 
 ## 典型参数
 

@@ -1,58 +1,57 @@
 ---
 name: unknown_workflow_controlnet_video_lora_33
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.413
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetNode, ImageResizeKJv2, Int, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, PreviewAny, PreviewImage, SaveAudio, SetNode, Text, VHS_LoadAudioUpload, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, easy seed]
+frequency: 3
+level: moderate
+coverage: 0.464
+common_nodes: [BBoxYOLO, BodyRatioMapperProportionTransfer, BodyRatioMapperSDPoseRender, CLIPVisionLoader, CR Prompt Text, CheckpointLoaderSimple, Fast Groups Bypasser (rgthree), GetNode, INTConstant, ImageConcatMulti, ImageResizeKJv2, ImpactConditionalBranch, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PurgeVRAM_UTK, SDPoseKeypointExtractor, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, WanVideoVAELoader, YOLOModelLoader, easy compare]
 problems: []
 missing: []
-members: [数字人/数字人/图片生成口播视频 可参考动作_2027996577247272961.json, 视频生成/图生视频/🈚️Wan2.2 S2V+u3c运镜+pose 唱歌数字人_动作迁移_对口型_2005645026296295426.json]
+members: [平台全量/Animate-小孩爱宠Q版萌物比例动作迁移_2047681773076746242.json, 平台全量/图片模仿视频动作-v2.0无缩放_2058872137120833537.json, 平台全量/图片模仿视频动作-v2.0自动缩放_2058898312429920258.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_controlnet_video_lora_33
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（数字人/数字人/图片生成口播视频 可参考动作_2027996577247272961.json、视频生成/图生视频/🈚️Wan2.2 S2V+u3c运镜+pose 唱歌数字人_动作迁移_对口型_2005645026296295426.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/Animate-小孩爱宠Q版萌物比例动作迁移_2047681773076746242.json、平台全量/图片模仿视频动作-v2.0无缩放_2058872137120833537.json、平台全量/图片模仿视频动作-v2.0自动缩放_2058898312429920258.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：41%
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
+全部 3 个 workflow 都包含：
+- `BBoxYOLO`
+- `BodyRatioMapperProportionTransfer`
+- `BodyRatioMapperSDPoseRender`
+- `CLIPVisionLoader`
+- `CR Prompt Text`
+- `CheckpointLoaderSimple`
 - `Fast Groups Bypasser (rgthree)`
-- `GetImageRangeFromBatch`
 - `GetNode`
+- `INTConstant`
+- `ImageConcatMulti`
 - `ImageResizeKJv2`
-- `Int`
+- `ImpactConditionalBranch`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
 - `OnnxDetectionModelLoader`
-- `PoseDetectionOneToAllAnimation`
-- `PreviewAny`
-- `PreviewImage`
-- `SaveAudio`
+- `PoseAndFaceDetection`
+- `PurgeVRAM_UTK`
+- `SDPoseKeypointExtractor`
 - `SetNode`
-- `Text`
-- `VHS_LoadAudioUpload`
+- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAddS2VEmbeds`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
 - `WanVideoEncode`
-- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoSetBlockSwap`
@@ -62,11 +61,28 @@ source: knowledge_consolidation
 - `WanVideoUni3C_ControlnetLoader`
 - `WanVideoUni3C_embeds`
 - `WanVideoVAELoader`
-- `easy seed`
+- `YOLOModelLoader`
+- `easy compare`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 1/2 个有
-- `GIMMVFI_interpolate` —— 1/2 个有
+- `Any Switch (rgthree)` —— 2/3 个有
+- `BatchCount+` —— 2/3 个有
+- `DrawViTPose` —— 2/3 个有
+- `FloatConstant` —— 2/3 个有
+- `ImageBatch` —— 2/3 个有
+- `ImageFromBatch` —— 2/3 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/3 个有
+- `RHHiddenNodes` —— 2/3 个有
+- `RTDETR_detect` —— 2/3 个有
+- `RepeatImageBatch` —— 2/3 个有
+- `SDPoseDrawKeypoints` —— 2/3 个有
+- `UNETLoader` —— 2/3 个有
+- `easy boolean` —— 2/3 个有
+- `easy ifElse` —— 2/3 个有
+- `easy showAnything` —— 2/3 个有
+- `Image Sharpen FS` —— 1/3 个有
+- `Int` —— 1/3 个有
 
 ## 典型参数
 
@@ -78,4 +94,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

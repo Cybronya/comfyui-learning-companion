@@ -1,52 +1,66 @@
 ---
 name: unknown_workflow_sampler_clip_unet_277
 type: Unknown Workflow
-frequency: 5
+frequency: 6
 level: moderate
-coverage: 0.9404
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.919667
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Kontext 单图编辑火柴人_1970786088950374402.json, 图片生成/文生图/flux-海报_1914942831851466753.json, 图片生成/文生图/企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186.json, 图片生成/文生图/企鹅腾讯flux.1-dev-SRPO文生图_2040841926462676993.json, 图片生成/文生图/最新MagCache加速-Flux文生图_1933315314153365506.json]
+members: [平台全量/Klein 9B 老照片修复+上色，一键生成_2030087735737851905.json, 平台全量/MumsAIGC-克莱因高清修复_2078337944464740353.json, 平台全量/Shoe buckle replacement_2041373347388334081.json, 平台全量/flux 抠图换背景 本地_云端都可跑  适用于 虚拟主播换场景 和 实体店引流_2055625665218654209.json, 平台全量/人像修复_2070767495530762241.json, 平台全量/电商白底图 flux2 本地云端都可跑_2055328141203263489.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_277
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Kontext 单图编辑火柴人_1970786088950374402.json、图片生成/文生图/flux-海报_1914942831851466753.json、图片生成/文生图/企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186.json、图片生成/文生图/企鹅腾讯flux.1-dev-SRPO文生图_2040841926462676993.json、图片生成/文生图/最新MagCache加速-Flux文生图_1933315314153365506.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Klein 9B 老照片修复+上色，一键生成_2030087735737851905.json、平台全量/MumsAIGC-克莱因高清修复_2078337944464740353.json、平台全量/Shoe buckle replacement_2041373347388334081.json、平台全量/flux 抠图换背景 本地_云端都可跑  适用于 虚拟主播换场景 和 实体店引流_2055625665218654209.json、平台全量/人像修复_2070767495530762241.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：6
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 6 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
+- `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR SDXL Aspect Ratio` —— 4/5 个有
-- `ModelSamplingFlux` —— 4/5 个有
-- `EmptySD3LatentImage` —— 3/5 个有
-- `RH_Translator` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
-- `MagCache` —— 1/5 个有
-- `PrimitiveStringMultiline` —— 1/5 个有
-- `ReferenceLatent` —— 1/5 个有
-- `TextInputNode` —— 1/5 个有
-- `VAEEncode` —— 1/5 个有
+- `ConditioningZeroOut` —— 5/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `GetImageSize` —— 3/6 个有
+- `Image Comparer (rgthree)` —— 3/6 个有
+- `Anything Everywhere3` —— 2/6 个有
+- `ColorMatch` —— 2/6 个有
+- `ImageSharpen` —— 2/6 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/6 个有
+- `LayerMask: LoadBiRefNetModel` —— 2/6 个有
+- `DifferentialDiffusion` —— 1/6 个有
+- `FastCanvas` —— 1/6 个有
+- `FastCanvasTool` —— 1/6 个有
+- `LayerUtility: ColorImage V2` —— 1/6 个有
+- `LayerUtility: ImageBlendAdvance` —— 1/6 个有
+- `MultiTextConcatenate` —— 1/6 个有
+- `PlaySound|pysssss` —— 1/6 个有
+- `PrimitiveStringMultiline` —— 1/6 个有
+- `RHHiddenNodes` —— 1/6 个有
+- `easy imageSize` —— 1/6 个有
 
 ## 典型参数
 

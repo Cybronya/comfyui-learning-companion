@@ -1,57 +1,57 @@
 ---
 name: unknown_workflow_upscale_vae_18
 type: Unknown Workflow
-frequency: 7
+frequency: 10
 level: moderate
-coverage: 0.825143
-common_nodes: [GetImageSize+, Image Comparer (rgthree), ImageResize+, ImageScaleBy, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size]
+coverage: 0.8829
+common_nodes: [ImageCASharpening+, ImageResize+, ImpactMinMax, LoadImage, SaveImage, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/4K高清放大_2055902054677262338.json, 图片生成/图生图/6k图像保留质感究极放大seedVR2+ttp一分钟出图_2080927672020062209.json, 图片生成/图生图/6k图像保留质感究极放大seedVR2+ttp一分钟出图_2096056787190505474.json, 图片生成/图生图/6k图像保留质感究极放大seedVR2+ttp一分钟出图_2096164231119986689.json, 图片生成/图生图/6k图像保留质感究极放大（seedVR2+ttp）一分钟出图_2048119652559097858.json, 图片生成/图生图/G-image-2 + 放大_2048576303057604609.json, 图片生成/图生图/SeedVR2 （TTP分块）4K图片高清放大_2063228339137110017.json]
+members: [图片生成/图生图/8K万物高清放大_1985157095685312513.json, 图片生成/图生图/8K高清放大_1984930957239205889.json, 图片生成/图生图/8K高清放大_2101267173766426625.json, 图片生成/图生图/8K高清放大工作流_1996028811970068482.json, 图片生成/图生图/SEED VR2 放大修复_2060278631062134785.json, 图片生成/图生图/SeedVR2 4K 高清放大_2048969468503658497.json, 图片生成/图生图/SeedVR2 万物高清放大（分块）_1998997214439559169.json, 图片生成/图生图/SeedVR2 目前最好的修复放大模型_1962453047794339841.json, 图片生成/图生图/SeedVR2 目前最好的高清修复模型_1991161332349140994.json, 图片生成/图生图/Seedvr2.5 图像变清晰_2001823950957101058.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_vae_18
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/4K高清放大_2055902054677262338.json、图片生成/图生图/6k图像保留质感究极放大seedVR2+ttp一分钟出图_2080927672020062209.json、图片生成/图生图/6k图像保留质感究极放大seedVR2+ttp一分钟出图_2096056787190505474.json、图片生成/图生图/6k图像保留质感究极放大seedVR2+ttp一分钟出图_2096164231119986689.json、图片生成/图生图/6k图像保留质感究极放大（seedVR2+ttp）一分钟出图_2048119652559097858.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/8K万物高清放大_1985157095685312513.json、图片生成/图生图/8K高清放大_1984930957239205889.json、图片生成/图生图/8K高清放大_2101267173766426625.json、图片生成/图生图/8K高清放大工作流_1996028811970068482.json、图片生成/图生图/SEED VR2 放大修复_2060278631062134785.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `GetImageSize+`
-- `Image Comparer (rgthree)`
+全部 10 个 workflow 都包含：
+- `ImageCASharpening+`
 - `ImageResize+`
-- `ImageScaleBy`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImpactMinMax`
 - `LoadImage`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
+- `SimpleMath+`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `Float` —— 4/7 个有
-- `Int` —— 4/7 个有
-- `KOOK_ImageCompression` —— 4/7 个有
-- `ImageCASharpening+` —— 3/7 个有
-- `PreviewImage` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `easy showAnything` —— 3/7 个有
-- `easy int` —— 2/7 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
-- `JjkText` —— 1/7 个有
-- `RH_RhartImageG2ImageToImage` —— 1/7 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 1/7 个有
-- `RH_RhartImageG2TextToImage` —— 1/7 个有
-- `图像缩放V2_孤海` —— 1/7 个有
+- `DF_Integer` —— 9/10 个有
+- `Get Image Size` —— 9/10 个有
+- `Image Comparer (rgthree)` —— 9/10 个有
+- `SeedVR2` —— 9/10 个有
+- `PreviewImage` —— 4/10 个有
+- `SeedVR2LoadDiTModel` —— 3/10 个有
+- `SeedVR2LoadVAEModel` —— 3/10 个有
+- `SeedVR2VideoUpscaler` —— 3/10 个有
+- `SeedVR2BlockSwap` —— 2/10 个有
+- `easy imageSize` —— 2/10 个有
+- `Fast Groups Muter (rgthree)` —— 1/10 个有
+- `ImageAddNoise` —— 1/10 个有
+- `ImageScaleBy` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `PlaySound|pysssss` —— 1/10 个有
+- `easy boolean` —— 1/10 个有
+- `easy ifElse` —— 1/10 个有
+- `easy int` —— 1/10 个有
 
 ## 典型参数
 

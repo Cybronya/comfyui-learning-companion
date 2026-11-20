@@ -1,31 +1,32 @@
 ---
 name: text_to_image_upscale_sampler_clip_20
 type: Text To Image
-frequency: 5
-level: moderate
-coverage: 0.8688
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JoinStrings, KSampler, Qwen3_VQA, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, SomethingToString, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 6
+level: strong
+coverage: 0.561667
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, ImageScaleToTotalPixels, JoinStrings, KSampler, Qwen3_VQA, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, ShowText|pysssss, SomethingToString, TextInput_, UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/Z-image-turbo基础图生图+高清放大_2063183525263798273.json, 图片生成/文生图/Anima3_动漫文生图+Qwen3工作流_2043942915990360065.json, 图片生成/文生图/Anima动漫文生图+Qwen3工作流_2019122223247794178.json, 图片生成/文生图/Anima动漫文生图-角色图像反推（支持二次元热门手游角色）_2019429862456434689.json, 图片生成/文生图/Z-image turbo 文生图 （图生图）_1995303972401557505.json]
+members: [图片生成/图生图/Anima3_动漫图生图_Qwen3反推工作流_2043988078615863297.json, 图片生成/图生图/Anima动漫图像模型—全自动图像反推生图_2047319224565108737.json, 图片生成/文生图/Anima动漫图像模型—全自动图像反推生图_2018204687069089793.json, 图片生成/文生图/Anima动漫图像模型—全自动文生图_2018013665781354497.json, 图片生成/文生图/Anima动漫图像模型：全自动图像反推生图工作流_2034605359565901825.json, 图片生成/文生图/【02.01】ANIMA动漫生图模型+二次放大_2060402251050610689.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Z-image-turbo基础图生图+高清放大_2063183525263798273.json、图片生成/文生图/Anima3_动漫文生图+Qwen3工作流_2043942915990360065.json、图片生成/文生图/Anima动漫文生图+Qwen3工作流_2019122223247794178.json、图片生成/文生图/Anima动漫文生图-角色图像反推（支持二次元热门手游角色）_2019429862456434689.json、图片生成/文生图/Z-image turbo 文生图 （图生图）_1995303972401557505.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Anima3_动漫图生图_Qwen3反推工作流_2043988078615863297.json、图片生成/图生图/Anima动漫图像模型—全自动图像反推生图_2047319224565108737.json、图片生成/文生图/Anima动漫图像模型—全自动图像反推生图_2018204687069089793.json、图片生成/文生图/Anima动漫图像模型—全自动文生图_2018013665781354497.json、图片生成/文生图/Anima动漫图像模型：全自动图像反推生图工作流_2034605359565901825.json…）
 
 - **类型**：Text To Image
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：56%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
+- `ImageScaleToTotalPixels`
 - `JoinStrings`
 - `KSampler`
 - `Qwen3_VQA`
@@ -35,47 +36,47 @@ source: knowledge_consolidation
 - `SeedVR2VideoUpscaler`
 - `ShowText|pysssss`
 - `SomethingToString`
+- `TextInput_`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 4/5 个有
-- `ImageScaleToTotalPixels` —— 3/5 个有
-- `LoadImage` —— 3/5 个有
-- `PreviewAny` —— 3/5 个有
-- `TextInput_` —— 3/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `ImageResizeKJv2` —— 2/5 个有
-- `Image Comparer (rgthree)` —— 1/5 个有
-- `LoraLoaderModelOnly` —— 1/5 个有
-- `StringConstantMultiline` —— 1/5 个有
-- `VAEEncode` —— 1/5 个有
+- `GetNode` —— 5/6 个有
+- `INTConstant` —— 5/6 个有
+- `LoadImage` —— 5/6 个有
+- `ModelSamplingAuraFlow` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `SetNode` —— 5/6 个有
+- `LayerUtility: ImageReel` —— 4/6 个有
+- `LayerUtility: ImageReelComposit` —— 4/6 个有
+- `CR Text` —— 3/6 个有
+- `Image Comparer (rgthree)` —— 2/6 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
+- `PreviewAny` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 896 | 720 - 1024 | 5 | 89% |
-| 高度 | 1152 | 1152 - 1536 | 5 | 88% |
-| 采样步数 | 30 | 8 - 30 | 5 | 49% |
-| Prompt 约束强度(CFG) | 4 | 1 - 4 | 5 | 48% |
-| 采样算法 | er_sde | - | 5 | 60% |
-| 调度器 | simple | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 30 | 30 - 30 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 1024 | 896 - 1024 | 6 | 95% |
+| 高度 | 1024 | 1024 - 1152 | 6 | 95% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 2/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 896，观测区间 720 - 1024，5 个样本，取值集中（一致性 89%）
-- 高度 中位数 1152，观测区间 1152 - 1536，5 个样本，取值集中（一致性 88%）
-- 采样步数 中位数 30，观测区间 8 - 30，5 个样本，取值分散，一致性仅 49%
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，5 个样本，取值分散，一致性仅 48%
-- 采样算法 最常用 er_sde，5 个样本，一致性 60%
-- 调度器 最常用 simple，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 30，观测区间 30 - 30，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 896 - 1024，6 个样本，取值集中（一致性 95%）
+- 高度 中位数 1024，观测区间 1024 - 1152，6 个样本，取值集中（一致性 95%）

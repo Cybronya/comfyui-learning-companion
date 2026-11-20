@@ -1,60 +1,61 @@
 ---
 name: image_to_image_sampler_clip_unet_167
 type: Image To Image
-frequency: 2
-level: weak
-coverage: 0.7945
-common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 4
+level: strong
+coverage: 0.944
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, PreviewImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen2512洗图&批量获取不同比例图_2054158368167743489.json, 图片生成/图生图/Z-image洗图图生图_1995800646467072001.json]
+members: [平台全量/清除遮罩部位_1952989060064342018.json, 平台全量/灵魂画手工作流单人版_1985414602475323394.json, 平台全量/灵魂画手工作流多人版_1986142931411226626.json, 平台全量/灵魂画手白底红唇版_1986144444078587905.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_167
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen2512洗图&批量获取不同比例图_2054158368167743489.json、图片生成/图生图/Z-image洗图图生图_1995800646467072001.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（平台全量/清除遮罩部位_1952989060064342018.json、平台全量/灵魂画手工作流单人版_1985414602475323394.json、平台全量/灵魂画手工作流多人版_1986142931411226626.json、平台全量/灵魂画手白底红唇版_1986144444078587905.json）
 
 - **类型**：Image To Image
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：79%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CLIPLoader`
+全部 4 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `PreviewImage`
+- `ReferenceLatent`
 - `SaveImage`
-- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `LoraLoaderModelOnly` —— 1/2 个有
-- `ModelSamplingAuraFlow` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `QwenImageLatentAspectRatio` —— 1/2 个有
-- `Text Multiline` —— 1/2 个有
+- `Int` —— 3/4 个有
+- `ModelSamplingFlux` —— 3/4 个有
+- `RHHiddenNodes` —— 3/4 个有
+- `ImageScaleToTotalPixels` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `PathchSageAttentionKJ` —— 1/4 个有
+- `easy cleanGpuUsed` —— 1/4 个有
+- `workflow>MaskColor` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 12.5 | - | 2 | 80% |
-| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
-| 采样算法 | euler | - | 2 | 100% |
-| 调度器 | simple | - | 2 | 100% |
-| 重绘幅度 | 0.65 | - | 2 | 46% |
+| 采样步数 | 20 | 10 - 20 | 4 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
@@ -62,9 +63,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 12.5，样本不足，未给区间，2 个样本，取值集中（一致性 80%）
-- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，2 个样本，一致性 100%
-- 调度器 最常用 simple，2 个样本，一致性 100%
-- 重绘幅度 中位数 0.65，样本不足，未给区间，2 个样本，取值分散，一致性仅 46%
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 中位数 20，观测区间 10 - 20，4 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

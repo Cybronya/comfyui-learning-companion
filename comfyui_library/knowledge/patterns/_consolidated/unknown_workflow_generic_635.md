@@ -3,29 +3,36 @@ name: unknown_workflow_generic_635
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 1
-common_nodes: [LoadImage, RH_Vidu_Reference2Video, SaveVideo]
+coverage: 0.7862
+common_nodes: [ElevenLabsInstantVoiceClone, ElevenLabsVoiceSelector, LoadAudio, RecordAudio, SaveAudioAdvanced]
 problems: []
 missing: []
-members: [视频生成/图生视频/Viduq2 多张参考图生视频(角色一致性)_2006996903858282497.json, 视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1983565386849427457.json, 视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1988300971249942530.json, 视频生成/图生视频/Viduq2+多张参考生视频(角色一致性)_1986365685037232129.json, 视频生成/图生视频/杨先生的动画课-多图参考优秀工作流VIDU_1984531859684081665.json]
+members: [comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json, comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_635
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Viduq2 多张参考图生视频(角色一致性)_2006996903858282497.json、视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1983565386849427457.json、视频生成/图生视频/Viduq2 多张参考生视频(角色一致性)_1988300971249942530.json、视频生成/图生视频/Viduq2+多张参考生视频(角色一致性)_1986365685037232129.json、视频生成/图生视频/杨先生的动画课-多图参考优秀工作流VIDU_1984531859684081665.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（comfyui-workflow-templates-json/api_elevenlabs_speech_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_text_to_speech.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_dialogue.json、comfyui-workflow-templates-json/api_elevenlabs_v4_text_to_speech.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadImage`
-- `RH_Vidu_Reference2Video`
-- `SaveVideo`
+- `ElevenLabsInstantVoiceClone`
+- `ElevenLabsVoiceSelector`
+- `LoadAudio`
+- `RecordAudio`
+- `SaveAudioAdvanced`
+
+**可变部分**（部分 workflow 才有）：
+- `ElevenLabsTextToDialogue` —— 2/5 个有
+- `ElevenLabsTextToSpeech` —— 2/5 个有
+- `ElevenLabsSpeechToSpeech` —— 1/5 个有
 
 ## 典型参数
 

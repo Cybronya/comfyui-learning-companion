@@ -1,59 +1,36 @@
 ---
 name: unknown_workflow_generic_990
 type: Unknown Workflow
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.875667
-common_nodes: [DF_Integer, Get Image Size, Image Comparer (rgthree), ImageFromBatch, ImageResize+, ImpactMinMax, LoadImage, SaveImage, SeedVR2, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageCount, easy showAnything]
+coverage: 0.7375
+common_nodes: [LoadImage, PrimitiveStringMultiline, SaveVideo]
 problems: []
 missing: []
-members: [图片生成/图生图/seedVR2 终极强化版高清工作流_1964342535374163970.json, 图片生成/图生图/一致性+全能图片V1 老照片修复_1976496032466997249.json, 数字人/数字人/seedVR2_万物高清放大（分块）_1970437657622966274.json]
+members: [数字人/数字人/Seedance 1.5Pro图生视频_文生视频_2019735887625592833.json, 视频生成/图生视频/H3图生视频工作流｜MiniMax H3 首尾帧双参 2K_2099348926460682242.json, 视频生成/图生视频/H3长片30秒工作流｜MiniMax H3 双镜拼接_2099348954860314626.json, 视频生成/图生视频/H3长片60秒工作流｜MiniMax H3 四镜拼接_2099348960589737985.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_990
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/seedVR2 终极强化版高清工作流_1964342535374163970.json、图片生成/图生图/一致性+全能图片V1 老照片修复_1976496032466997249.json、数字人/数字人/seedVR2_万物高清放大（分块）_1970437657622966274.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/Seedance 1.5Pro图生视频_文生视频_2019735887625592833.json、视频生成/图生视频/H3图生视频工作流｜MiniMax H3 首尾帧双参 2K_2099348926460682242.json、视频生成/图生视频/H3长片30秒工作流｜MiniMax H3 双镜拼接_2099348954860314626.json、视频生成/图生视频/H3长片60秒工作流｜MiniMax H3 四镜拼接_2099348960589737985.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `DF_Integer`
-- `Get Image Size`
-- `Image Comparer (rgthree)`
-- `ImageFromBatch`
-- `ImageResize+`
-- `ImpactMinMax`
+全部 4 个 workflow 都包含：
 - `LoadImage`
-- `SaveImage`
-- `SeedVR2`
-- `SimpleMath+`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `easy batchAnything`
-- `easy cleanGpuUsed`
-- `easy forLoopEnd`
-- `easy forLoopStart`
-- `easy imageCount`
-- `easy showAnything`
+- `PrimitiveStringMultiline`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageCASharpening+` —— 2/3 个有
-- `MathExpression|pysssss` —— 2/3 个有
-- `ColorMatch` —— 1/3 个有
-- `Float` —— 1/3 个有
-- `ImageScaleBy` —— 1/3 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
-- `PrimitiveFloat` —— 1/3 个有
-- `RH_Nano_Banana_Image2Image` —— 1/3 个有
-- `Textbox` —— 1/3 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 3/4 个有
+- `RH_VideoMergerUI` —— 2/4 个有
+- `RH_Doubao_Seedance_1_5_Pro` —— 1/4 个有
 
 ## 典型参数
 

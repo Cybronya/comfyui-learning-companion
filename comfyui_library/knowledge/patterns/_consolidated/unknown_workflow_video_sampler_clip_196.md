@@ -3,74 +3,75 @@ name: unknown_workflow_video_sampler_clip_196
 type: Unknown Workflow
 frequency: 3
 level: strong
-coverage: 0.666667
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, Int, KSampler, LoadImage, ModelSamplingSD3, Primitive integer [Crystools], PrimitiveStringMultiline, RH_LLMAPI_NODE, ShowText|pysssss, VAEDecode, VHS_VideoCombine, WanImageToVideo, easy textSwitch]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.944667
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetImageSizeAndCount, ImageFromBatch, ImpactInt, KSampler, LoadImage, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, TorchCompileModelWanVideo, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, VHS_VideoCombine, WanImageToVideo, WanVideoTeaCacheKJ]
+problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 图生视频 AIO-V10（简约，全面，极速）_1978104369109426178.json, "视频生成/图生视频/Wan2.2 图生视频 无lora,带手动插帧_2042939728193921025.json", 视频生成/图生视频/【AIO-V10大一统】图生视频-Wan2.2_1962869582434373634.json]
+members: [视频生成/图生视频/For循环不限时长图生视频_1901121776833675266.json, 视频生成/图生视频/Wan2.1-15秒图生视频3段扩展_1899668266204221441.json, 视频生成/图生视频/图生视频—15秒视频生成_1899809388968685570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_196
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 图生视频 AIO-V10（简约，全面，极速）_1978104369109426178.json、视频生成/图生视频/Wan2.2 图生视频 无lora,带手动插帧_2042939728193921025.json、视频生成/图生视频/【AIO-V10大一统】图生视频-Wan2.2_1962869582434373634.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/For循环不限时长图生视频_1901121776833675266.json、视频生成/图生视频/Wan2.1-15秒图生视频3段扩展_1899668266204221441.json、视频生成/图生视频/图生视频—15秒视频生成_1899809388968685570.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
 - **可信度**：强结论
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `Int`
+- `GetImageSizeAndCount`
+- `ImageFromBatch`
+- `ImpactInt`
 - `KSampler`
 - `LoadImage`
+- `MathExpression|pysssss`
 - `ModelSamplingSD3`
-- `Primitive integer [Crystools]`
-- `PrimitiveStringMultiline`
-- `RH_LLMAPI_NODE`
-- `ShowText|pysssss`
+- `PathchSageAttentionKJ`
+- `TorchCompileModelWanVideo`
+- `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
 - `WanImageToVideo`
-- `easy textSwitch`
+- `WanVideoTeaCacheKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 2/3 个有
-- `ImageScaleToTotalPixels` —— 2/3 个有
+- `ImageBatch` —— 2/3 个有
 - `PreviewImage` —— 2/3 个有
-- `SetNode` —— 2/3 个有
-- `SimpleMath+` —— 2/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `PrimitiveInt` —— 1/3 个有
-- `RIFE VFI` —— 1/3 个有
+- `String Literal` —— 1/3 个有
+- `Text Load Line From File` —— 1/3 个有
+- `easy batchAnything` —— 1/3 个有
+- `easy forLoopEnd` —— 1/3 个有
+- `easy forLoopStart` —— 1/3 个有
+- `easy showAnything` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | sa_solver | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 100% |
+| 采样步数 | 20 | 20 - 20 | 3 | 100% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 3 | 100% |
+| 采样算法 | uni_pc | - | 3 | 100% |
+| 调度器 | simple | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 100%
+- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 uni_pc，3 个样本，一致性 100%
+- 调度器 最常用 simple，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

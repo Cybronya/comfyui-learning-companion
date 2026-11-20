@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_672
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.7845
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Prompt Text, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, INTConstant, ImageScaleToTotalPixels, ImageSharpen, JjkText, KSampler, KSamplerAdvanced, KSamplerSelect, LayerUtility: PurgeVRAM V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewAny, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8165
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Text, ConditioningZeroOut, EmptyLatentImage, Flux2Scheduler, GetImageSize, GetNode, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Dark Deco暗黑装饰艺术全自动三采文生图工作流_2101047440542617602.json, 图片生成/文生图/文生图全模式｜Krea2三采直出高清图像生成_2089453263014948865.json]
+members: [图片生成/图生图/单图编辑局部重绘｜boogu_image换装图生图生成_2096337276669353986.json, 图片生成/图生图/真人转动漫｜FLUX.2.0 Klein9B 风格迁移图生图_2089363541223624706.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_672
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/Dark Deco暗黑装饰艺术全自动三采文生图工作流_2101047440542617602.json、图片生成/文生图/文生图全模式｜Krea2三采直出高清图像生成_2089453263014948865.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/单图编辑局部重绘｜boogu_image换装图生图生成_2096337276669353986.json、图片生成/图生图/真人转动漫｜FLUX.2.0 Klein9B 风格迁移图生图_2089363541223624706.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
@@ -26,43 +26,45 @@ source: knowledge_consolidation
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `ColorMatch`
+- `CR Text`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
 - `Flux2Scheduler`
 - `GetImageSize`
-- `INTConstant`
-- `ImageScaleToTotalPixels`
-- `ImageSharpen`
+- `GetNode`
 - `JjkText`
 - `KSampler`
-- `KSamplerAdvanced`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewAny`
-- `PreviewImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `easy cleanGpuUsed`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 1/2 个有
+- `ColorMatchV2` —— 1/2 个有
+- `EmptyFlux2LatentImage` —— 1/2 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/2 个有
+- `FluxKontextImageScale` —— 1/2 个有
+- `Image Comparer (rgthree)` —— 1/2 个有
+- `ImageScaleBy` —— 1/2 个有
 - `Int` —— 1/2 个有
-- `SetNode` —— 1/2 个有
+- `LayerUtility: ImageReel` —— 1/2 个有
+- `LayerUtility: ImageReelComposit` —— 1/2 个有
+- `PreviewImage` —— 1/2 个有
+- `TextEncodeBooguEdit` —— 1/2 个有
+- `VAEDecodeTiled` —— 1/2 个有
+- `easy float` —— 1/2 个有
+- `easy imageScaleDownToSize` —— 1/2 个有
 
 ## 典型参数
 

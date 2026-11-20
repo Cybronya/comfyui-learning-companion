@@ -1,62 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_275
 type: Unknown Workflow
-frequency: 8
+frequency: 10
 level: moderate
-coverage: 0.666875
-common_nodes: [LoadImage, LoadLynxResampler, LynxEncodeFaceIP, LynxInsightFaceCrop, PreviewImage, SetNode, VHS_VideoCombine, WanVideoAddLynxEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoExtraModelSelect, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.6243
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Lynx高保真IP迁移工作流升级版_2073214069175312386.json, 图片生成/图生图/人物图片代替视频lora模型--Lynx免训练ID_1976962835324522498.json, 视频生成/图生视频/无限画布工作流-嘉宾视频_1977229583860801538.json, 视频生成/文生视频/Lynx免训练ID一致性文生视频Full版V2_1975438784533762049.json, 视频生成/文生视频/Lynx免训练ID一致性文生视频Lite版V2(横版)_1975435330138542082.json, 视频生成/文生视频/Lynx免训练ID一致性文生视频Lite版V2(竖版)_1975446783209902081.json, 视频生成/文生视频/Wan2.1_T2V_Lynx人物一致性文生视频_1976584449313869825.json, 视频生成/文生视频/Wanvideo-lynx超级人物一致性文生视频_1976840032592052226.json]
+members: [数字人/数字人/infinitetalk-音频+视频数字人_1960547223945773057.json, 数字人/数字人/wanvideo_infinitetalk_小宝_2017971113397067777.json, 数字人/数字人/商用版-最强数字人视频对口型_1973158648119734274.json, 数字人/数字人/无限时长音乐数字人-InfiniteTalk单人视频到视频_1958187031639822338.json, 数字人/数字人/超真实无限时长唱歌数字人-InfiniteTalk_1986407714731552769.json, 视频生成/图生视频/InfiniteTalk+wan2.1单图片_视频生成口播数字人视频_1958754013288296450.json, 视频生成/图生视频/Y-InfiniteTalk单人图生视频_1958373813031485441.json, 视频生成/图生视频/打造自己的MTV数字人_1958218756659036162.json, 视频生成/图生视频/无限时长-InfiniteTalk【单人图生视频】和【视频改口型】_1961976886408757249.json, 视频生成/文生视频/无限时长-InfiniteTalk【单人图生视频】和【视频改口型】_1977338466017136642.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_275
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Lynx高保真IP迁移工作流升级版_2073214069175312386.json、图片生成/图生图/人物图片代替视频lora模型--Lynx免训练ID_1976962835324522498.json、视频生成/图生视频/无限画布工作流-嘉宾视频_1977229583860801538.json、视频生成/文生视频/Lynx免训练ID一致性文生视频Full版V2_1975438784533762049.json、视频生成/文生视频/Lynx免训练ID一致性文生视频Lite版V2(横版)_1975435330138542082.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（数字人/数字人/infinitetalk-音频+视频数字人_1960547223945773057.json、数字人/数字人/wanvideo_infinitetalk_小宝_2017971113397067777.json、数字人/数字人/商用版-最强数字人视频对口型_1973158648119734274.json、数字人/数字人/无限时长音乐数字人-InfiniteTalk单人视频到视频_1958187031639822338.json、数字人/数字人/超真实无限时长唱歌数字人-InfiniteTalk_1986407714731552769.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `LoadImage`
-- `LoadLynxResampler`
-- `LynxEncodeFaceIP`
-- `LynxInsightFaceCrop`
-- `PreviewImage`
-- `SetNode`
+全部 10 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `WanVideoAddLynxEmbeds`
 - `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoExtraModelSelect`
-- `WanVideoLoraSelectMulti`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 6/8 个有
-- `ImageConcatMulti` —— 5/8 个有
-- `ImageFromBatch+` —— 5/8 个有
-- `CR Prompt Text` —— 4/8 个有
-- `GetImageSizeAndCount` —— 4/8 个有
-- `WanVideoTorchCompileSettings` —— 4/8 个有
-- `CR Text` —— 3/8 个有
-- `AdvancedImageSelector` —— 1/8 个有
-- `FancyTimerNode` —— 1/8 个有
-- `INTConstant` —— 1/8 个有
-- `PrimitiveInt` —— 1/8 个有
-- `RMBG` —— 1/8 个有
-- `Text` —— 1/8 个有
+- `ImageResizeKJv2` —— 9/10 个有
+- `GetNode` —— 8/10 个有
+- `SetNode` —— 8/10 个有
+- `VHS_LoadVideo` —— 8/10 个有
+- `WanVideoTorchCompileSettings` —— 8/10 个有
+- `PrimitiveInt` —— 7/10 个有
+- `GetImageSizeAndCount` —— 6/10 个有
+- `INTConstant` —— 6/10 个有
+- `Text Multiline` —— 6/10 个有
+- `WanVideoEncode` —— 6/10 个有
+- `WanVideoTextEncodeCached` —— 6/10 个有
+- `JWIntegerToString` —— 5/10 个有
+- `PreviewAny` —— 5/10 个有
+- `LoadImage` —— 4/10 个有
+- `LoadWanVideoT5TextEncoder` —— 4/10 个有
+- `WanVideoTextEncode` —— 4/10 个有
+- `GetImageRangeFromBatch` —— 3/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
+- `ImageConcatMulti` —— 2/10 个有
+- `JWInteger` —— 2/10 个有
+- `LayerUtility: PurgeVRAM` —— 2/10 个有
+- `PrimitiveString` —— 2/10 个有
+- `RH_Translator` —— 2/10 个有
+- `SimpleMath+` —— 2/10 个有
+- `Text Concatenate` —— 2/10 个有
+- `WanVideoUni3C_ControlnetLoader` —— 2/10 个有
+- `WanVideoUni3C_embeds` —— 2/10 个有
+- `Blur` —— 1/10 个有
+- `ImageBatchMulti` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/10 个有
+- `MathExpression|pysssss` —— 1/10 个有
+- `MuyeLoadImage` —— 1/10 个有
+- `ReverseImageBatch` —— 1/10 个有
+- `SeedVR2GGUF` —— 1/10 个有
 
 ## 典型参数
 

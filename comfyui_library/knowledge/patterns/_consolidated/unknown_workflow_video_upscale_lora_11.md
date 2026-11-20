@@ -1,70 +1,111 @@
 ---
 name: unknown_workflow_video_upscale_lora_11
 type: Unknown Workflow
-frequency: 4
-level: moderate
-coverage: 0.87975
-common_nodes: [GetImageRangeFromBatch, ImageResizeKJ, ImageUpscaleWithModel, ImpactFloat, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, RIFE VFI, UpscaleModelLoader, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader, easy int]
-problems: []
+frequency: 5
+level: strong
+coverage: 0.77
+common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DWPreprocessor, DrawViTPose, Fast Groups Bypasser (rgthree), GetImageSize, GetImageSizeAndCount, GetNode, ImageFromBatch, ImageFromBatch+, ImageResize+, ImageResizeKJv2, ImageUpscaleWithModelBatched, KSampler, KepStringLiteral, LayerUtility: PurgeVRAM V2, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, OnnxDetectionModelLoader, PathchSageAttentionKJ, PixelPerfectResolution, PoseAndFaceDetection, RHHiddenNodes, RIFE VFI, SetNode, SimpleMath+, TorchCompileModelWanVideoV2, TrimVideoLatent, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanAnimateToVideo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoUniAnimatePoseInput, WanVideoVAELoader, easy int, easy showAnything, wanBlockSwap]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Wan2.1 最新 FusionX 2分钟极速出视频_1942175633449578497.json, 视频生成/图生视频/Wan图生视频-FUSION版本_1933959648057675777.json, 视频生成/图生视频/Wan图生视频急速版_1935194153187999746.json, 视频生成/图生视频/【趣味】三味真火！_1934811553910693889.json]
+members: [平台全量/跳舞动作模仿_1921256030058250241.json, 平台全量/跳舞动作模仿_2012483081613090817.json, 视频生成/图生视频/跳舞动作迁移+表情复刻 跳舞动作模仿_2056620090044534785.json, 视频生成/图生视频/跳舞动作迁移+表情复刻 跳舞动作模仿_2106004931005210625.json, 视频生成/图生视频/跳舞动作迁移+表情复刻 跳舞动作模仿_2106010414332080129.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_lora_11
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/Wan2.1 最新 FusionX 2分钟极速出视频_1942175633449578497.json、视频生成/图生视频/Wan图生视频-FUSION版本_1933959648057675777.json、视频生成/图生视频/Wan图生视频急速版_1935194153187999746.json、视频生成/图生视频/【趣味】三味真火！_1934811553910693889.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（平台全量/跳舞动作模仿_1921256030058250241.json、平台全量/跳舞动作模仿_2012483081613090817.json、视频生成/图生视频/跳舞动作迁移+表情复刻 跳舞动作模仿_2056620090044534785.json、视频生成/图生视频/跳舞动作迁移+表情复刻 跳舞动作模仿_2106004931005210625.json、视频生成/图生视频/跳舞动作迁移+表情复刻 跳舞动作模仿_2106010414332080129.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
-- `GetImageRangeFromBatch`
-- `ImageResizeKJ`
-- `ImageUpscaleWithModel`
-- `ImpactFloat`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `DWPreprocessor`
+- `DrawViTPose`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageFromBatch`
+- `ImageFromBatch+`
+- `ImageResize+`
+- `ImageResizeKJv2`
+- `ImageUpscaleWithModelBatched`
+- `KSampler`
+- `KepStringLiteral`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
+- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `OnnxDetectionModelLoader`
+- `PathchSageAttentionKJ`
+- `PixelPerfectResolution`
+- `PoseAndFaceDetection`
+- `RHHiddenNodes`
 - `RIFE VFI`
+- `SetNode`
+- `SimpleMath+`
+- `TorchCompileModelWanVideoV2`
+- `TrimVideoLatent`
+- `UNETLoader`
 - `UpscaleModelLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `WanAnimateToVideo`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
 - `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
+- `WanVideoSLG`
 - `WanVideoSampler`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoUniAnimatePoseInput`
 - `WanVideoVAELoader`
 - `easy int`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Text` —— 3/4 个有
-- `WanVideoBlockSwap` —— 3/4 个有
-- `WanVideoApplyNAG` —— 2/4 个有
-- `WanVideoMagCache` —— 2/4 个有
-- `WanVideoTextEncode` —— 2/4 个有
-- `WanVideoTextEncodeSingle` —— 2/4 个有
-- `WanVideoTorchCompileSettings` —— 2/4 个有
-- `Display Any (rgthree)` —— 1/4 个有
-- `RH_Captioner` —— 1/4 个有
-- `Text` —— 1/4 个有
-- `Text Find and Replace` —— 1/4 个有
-- `WanVideoEnhanceAVideo` —— 1/4 个有
-- `WanVideoExperimentalArgs` —— 1/4 个有
-- `WanVideoSLG` —— 1/4 个有
+- `easy showAnything`
+- `wanBlockSwap`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 3 | 3 - 3 | 5 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | sa_solver | - | 5 | 100% |
+| 调度器 | linear_quadratic | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 3，观测区间 3 - 3，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 sa_solver，5 个样本，一致性 100%
+- 调度器 最常用 linear_quadratic，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

@@ -1,76 +1,80 @@
 ---
 name: image_to_image_sampler_clip_unet_42
 type: Image To Image
-frequency: 8
-level: weak
-coverage: 0.83825
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageScaleToTotalPixels, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 11
+level: strong
+coverage: 0.942273
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed]
+problems: []
 missing: []
-members: [comfyui-workflow-templates-json/image_qwen_image_controlnet_patch.json, 图片生成/图生图/001.Z-image生图巅峰010.图生图-洗图去重_2033739991351828481.json, 图片生成/图生图/001.Z-image生图巅峰012.姿势控制洗图_2033741966416023553.json, 图片生成/图生图/Qwen Image Uinon ControlNet  lora（多合一）之 canny 工作流_1959598906571173889.json, 图片生成/图生图/qwen_image_Inpaint-4步-局部重绘_1960511806496190466.json, 图片生成/图生图/qwen_image_canny-4步_1960506014829375490.json, 图片生成/图生图/qwen_image_depth-4步-吉卜力风格_1960527308945764353.json, 图片生成/文生图/Qwen万能控制网lora版_1959874321042845698.json]
+members: [图片生成/图生图/千府AI建筑鸟瞰图一键工作流_1962384837388668930.json, 图片生成/图生图/最强真实老照片修复_1947226707453497346.json, 图片生成/图生图/老照片修复2.0版本，一键修复，可搭配去除AI感工作流使用_2027976944700104706.json, 图片生成/图生图/老照片修复，一键修复_2029503656806064129.json, 平台全量/Kontext一键卸妆反美颜_2009453940424839169.json, 平台全量/Kontext万物消除简易使用版_1953830790683611138.json, 平台全量/Kontext老照片修复_1929897844097060865.json, 平台全量/kontext一键卸妆_1949536036652752898.json, 平台全量/【真实还原老照片】Kontext老照片修复 保持一致性 老照片上色_1973907222155669505.json, 平台全量/真实人物照片转3D动漫风格_1948327719957344257.json, 平台全量/老旧底片修复为高清照片_1944447156797493249.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_42
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（comfyui-workflow-templates-json/image_qwen_image_controlnet_patch.json、图片生成/图生图/001.Z-image生图巅峰010.图生图-洗图去重_2033739991351828481.json、图片生成/图生图/001.Z-image生图巅峰012.姿势控制洗图_2033741966416023553.json、图片生成/图生图/Qwen Image Uinon ControlNet  lora（多合一）之 canny 工作流_1959598906571173889.json、图片生成/图生图/qwen_image_Inpaint-4步-局部重绘_1960511806496190466.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/千府AI建筑鸟瞰图一键工作流_1962384837388668930.json、图片生成/图生图/最强真实老照片修复_1947226707453497346.json、图片生成/图生图/老照片修复2.0版本，一键修复，可搭配去除AI感工作流使用_2027976944700104706.json、图片生成/图生图/老照片修复，一键修复_2029503656806064129.json、平台全量/Kontext一键卸妆反美颜_2009453940424839169.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：84%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
+全部 11 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ImageScaleToTotalPixels`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
 - `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelSamplingAuraFlow` —— 7/8 个有
-- `PreviewImage` —— 7/8 个有
-- `LoraLoaderModelOnly` —— 6/8 个有
-- `Canny` —— 5/8 个有
-- `ModelPatchLoader` —— 5/8 个有
-- `QwenImageDiffsynthControlnet` —— 5/8 个有
-- `AIO_Preprocessor` —— 2/8 个有
-- `ReferenceLatent` —— 2/8 个有
-- `ConditioningZeroOut` —— 1/8 个有
-- `DWPreprocessor` —— 1/8 个有
-- `DepthAnythingV2Preprocessor` —— 1/8 个有
-- `LineArtPreprocessor` —— 1/8 个有
-- `easy imageIndexSwitch` —— 1/8 个有
-- `easy imagePixelPerfect` —— 1/8 个有
+- `CR Text Concatenate` —— 10/11 个有
+- `LoraLoaderModelOnly` —— 10/11 个有
+- `RH_Translator` —— 10/11 个有
+- `CR Text` —— 9/11 个有
+- `FilmGrain` —— 8/11 个有
+- `PreviewImage` —— 7/11 个有
+- `LayerColor: Brightness & Contrast` —— 6/11 个有
+- `Image Comparer (rgthree)` —— 3/11 个有
+- `ShowText|pysssss` —— 2/11 个有
+- `DF_Image_scale_by_ratio` —— 1/11 个有
+- `ImageInvert` —— 1/11 个有
+- `KontextArchPresetMain` —— 1/11 个有
+- `NunchakuFluxDiTLoader` —— 1/11 个有
+- `NunchakuTextEncoderLoaderV2` —— 1/11 个有
+- `PrimitiveFloat` —— 1/11 个有
+- `Text` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 4 - 20 | 8 | 33% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 8 | 58% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 1 | 0.6 - 1 | 8 | 86% |
+| 采样步数 | 20 | 20 - 20 | 11 | 100% |
+| Prompt 约束强度(CFG) | 0.8 | 0.8 - 1 | 11 | 89% |
+| 采样算法 | euler | - | 11 | 100% |
+| 调度器 | simple | - | 11 | 91% |
+| 重绘幅度 | 0.95 | 0.5 - 1 | 11 | 85% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 7/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 20，8 个样本，取值分散，一致性仅 33%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，8 个样本
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 0.6 - 1，8 个样本，取值集中（一致性 86%）
-- 高发问题（7/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 20 - 20，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 0.8，观测区间 0.8 - 1，11 个样本，取值集中（一致性 89%）
+- 采样算法 最常用 euler，11 个样本，一致性 100%
+- 调度器 最常用 simple，11 个样本，一致性 91%
+- 重绘幅度 中位数 0.95，观测区间 0.5 - 1，11 个样本，取值集中（一致性 85%）
+- 风险：Prompt 约束强度(CFG) 观测到 0.8，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）

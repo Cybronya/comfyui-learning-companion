@@ -3,29 +3,36 @@ name: unknown_workflow_generic_1634
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [RH_SeedreamV5ProTextToImage, SaveImage, Text]
+coverage: 0.7085
+common_nodes: [JjkText, LayerMask: SegmentAnythingUltra V2, LayerUtility: ImageRemoveAlpha, LoadImage, SaveImage]
 problems: []
 missing: []
-members: [图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json, 图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json]
+members: [图片生成/图生图/sgm2.5抠图测试_2096796598339727362.json, 平台全量/利用提示词去除背景并添加纯色背景_1907066325334941697.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1634
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/即梦 Seedream 5.0 PRO 文生图_2075157900217118721.json、图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/sgm2.5抠图测试_2096796598339727362.json、平台全量/利用提示词去除背景并添加纯色背景_1907066325334941697.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `RH_SeedreamV5ProTextToImage`
+- `JjkText`
+- `LayerMask: SegmentAnythingUltra V2`
+- `LayerUtility: ImageRemoveAlpha`
+- `LoadImage`
 - `SaveImage`
-- `Text`
+
+**可变部分**（部分 workflow 才有）：
+- `LayerUtility: ImageCombineAlpha` —— 1/2 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
+- `SetNode` —— 1/2 个有
 
 ## 典型参数
 

@@ -1,88 +1,106 @@
 ---
 name: text_to_image_lora_sampler_clip_430
 type: Text To Image
-frequency: 4
-level: moderate
-coverage: 0.7975
-common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, ConditioningZeroOut, DepthAnythingV2Preprocessor, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, LoadImage, PreviewImage, PrimitiveBoolean, PrimitiveStringMultiline, ResolutionSelector, SaveImage, TextGenerate, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+frequency: 5
+level: strong
+coverage: 0.6126
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, GetNode, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, ModelAttentionBackend, ModelPreviewOverrideKJ, ResolutionSelector, SelfLiftH3Sampler, SetNode, Text, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2 全自动-深度图控制-反推洗图_2076972404290707458.json, 图片生成/图生图/Krea2 深度图反推洗图-高清4K_2089887292306579458.json, 图片生成/文生图/Krea2 深度图控制-全自动反推洗图-高清4K_2076852160796643329.json, 图片生成/文生图/Krea2 深度控制自动反推洗图 Depth ControlNet_2075102694674616322.json]
+members: [视频生成/图生视频/MiniMax H3 SelfLift全能流V3 VOSR速度质量兼顾工具_2113402636207742978.json, 视频生成/图生视频/Minimax H3 Ref2V最佳动作 文生视频图生视频处理工具_2113335034068422657.json, 视频生成/图生视频/Minimax H3最佳动作视频生成Ref2V参考图驱动，动作流畅自然高清直出_2114410428527894530.json, 视频生成/图生视频/YZ金鱼改MiniMax H3终极篇文武双全｜无限画布漫剧利器_2111305187406209025.json, 视频生成/图生视频/口播转动画30秒专用 说教情感知识搞笑段子图生视频工具_2113068364288585730.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_430
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Krea2 全自动-深度图控制-反推洗图_2076972404290707458.json、图片生成/图生图/Krea2 深度图反推洗图-高清4K_2089887292306579458.json、图片生成/文生图/Krea2 深度图控制-全自动反推洗图-高清4K_2076852160796643329.json、图片生成/文生图/Krea2 深度控制自动反推洗图 Depth ControlNet_2075102694674616322.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 SelfLift全能流V3 VOSR速度质量兼顾工具_2113402636207742978.json、视频生成/图生视频/Minimax H3 Ref2V最佳动作 文生视频图生视频处理工具_2113335034068422657.json、视频生成/图生视频/Minimax H3最佳动作视频生成Ref2V参考图驱动，动作流畅自然高清直出_2114410428527894530.json、视频生成/图生视频/YZ金鱼改MiniMax H3终极篇文武双全｜无限画布漫剧利器_2111305187406209025.json、视频生成/图生视频/口播转动画30秒专用 说教情感知识搞笑段子图生视频工具_2113068364288585730.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **样本数**：5
+- **可信度**：强结论
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
+- `ComfyMathExpression`
 - `ConditioningZeroOut`
-- `DepthAnythingV2Preprocessor`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
-- `GetImageSize`
+- `GetNode`
+- `JjkText`
 - `KSampler`
-- `Krea2ControlApply`
-- `Krea2ControlImageEncode`
-- `Krea2ControlLoRALoader`
+- `KSamplerSelect`
+- `LoadAudio`
 - `LoadImage`
-- `PreviewImage`
-- `PrimitiveBoolean`
-- `PrimitiveStringMultiline`
+- `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `ResolutionSelector`
-- `SaveImage`
-- `TextGenerate`
+- `SelfLiftH3Sampler`
+- `SetNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy showAnything`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Image Comparer (rgthree)` —— 3/4 个有
-- `JWImageResizeByLongerSide` —— 3/4 个有
-- `LatentUpscaleBy` —— 3/4 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `SeedVR2` —— 3/4 个有
-- `SeedVR2BlockSwap` —— 3/4 个有
-- `VAEEncode` —— 3/4 个有
-- `ModelSamplingAuraFlow` —— 1/4 个有
+- `BlockSparseAttention` —— 4/5 个有
+- `PrimitiveFloat` —— 4/5 个有
+- `SaveImage` —— 4/5 个有
+- `CreateVideo` —— 3/5 个有
+- `SaveVideo` —— 3/5 个有
+- `H3SigmaRefiner` —— 2/5 个有
+- `VHS_VideoCombine` —— 2/5 个有
+- `ComfySwitchNode` —— 1/5 个有
+- `ExtendIntermediateSigmas` —— 1/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `Float` —— 1/5 个有
+- `JWImageResizeByLongerSide` —— 1/5 个有
+- `LTXVSeparateAVLatent` —— 1/5 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/5 个有
+- `QwenH3PromptLocal` —— 1/5 个有
+- `RIFE VFI` —— 1/5 个有
+- `RTXVideoSuperResolution` —— 1/5 个有
+- `VHS_LoadVideo` —— 1/5 个有
+- `VOSR2ModelLoader` —— 1/5 个有
+- `VOSR2Upscale` —— 1/5 个有
+- `easy imageSize` —— 1/5 个有
+- `easy loraStack` —— 1/5 个有
+- `easy loraStackApply` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1024 | 4 | 75% |
-| 高度 | 1024 | 512 - 1024 | 4 | 75% |
-| 采样步数 | 7 | 6 - 8 | 4 | 86% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
-| 采样算法 | er_sde | - | 4 | 50% |
-| 调度器 | simple | - | 4 | 100% |
-| 重绘幅度 | 0.7 | 0.4 - 1 | 4 | 57% |
+| 采样步数 | 4 | 4 - 4 | 5 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
+| 采样算法 | er_sde | - | 5 | 100% |
+| 调度器 | beta | - | 5 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 宽度 | 80 | 80 - 80 | 5 | 100% |
+| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1024，4 个样本
-- 高度 中位数 1024，观测区间 512 - 1024，4 个样本
-- 采样步数 中位数 7，观测区间 6 - 8，4 个样本，取值集中（一致性 86%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，4 个样本，一致性 50%
-- 调度器 最常用 simple，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.7，观测区间 0.4 - 1，4 个样本
-- 高发问题（7/4 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，5 个样本，一致性 100%
+- 调度器 最常用 beta，5 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
+- 高发问题（5/5 个样本）：Steps较低可能导致细节不足

@@ -1,101 +1,100 @@
 ---
 name: text_to_image_video_lora_sampler_117
 type: Text To Image
-frequency: 6
+frequency: 8
 level: strong
-coverage: 0.693333
-common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, EmptyLatentImage, ImageResizeKJv2, KSampler, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewImage, SimpleMath+, VAEDecode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
+coverage: 0.8975
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, SelfLiftAvatarH3Sampler, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/AI代码侠土豆-I2V数字人一条龙合集_1999484627213484033.json, 数字人/数字人/AI代码侠土豆-I2V数字人一条龙合集王改革_2000808693069475841.json, 数字人/数字人/I2V-InfiniteTalk数字人单人_2002788498899890178.json, 数字人/数字人/I2V数字人_2002786080296452098.json, 视频生成/图生视频/-I2V数字人一条龙合集，动作，表情，肢体语言，全部到位！！！_2045983790081773570.json, 视频生成/图生视频/I2V-InfiniteTalk数字人-GGUF（加速版）_1982695660992503809.json]
+members: [视频生成/图生视频/MiniMax H3 360度环绕视频加Selflift专用高分辨率生成工作流，图生视频_2106477153318686722.json, 视频生成/图生视频/MiniMax H3 360度环绕视频｜Selflift专用高分辨率转场运镜出片_2106207397177024513.json, 视频生成/图生视频/MiniMax H3图生视频高清2K工作流，人像写真音频生成图生视频方案_2106616277656752130.json, 视频生成/图生视频/MiniMax H3锐化高清放大采样工作流，文生视频高清增强方案_2105784930222559233.json, 视频生成/图生视频/MiniMax H3锐化高清放大采样工作流，文生视频高清增强方案_2106131115126910978.json, 视频生成/图生视频/MinimaxH3图生视频高清2K版｜人像写真质感细腻出片_2106247039381233666.json, 视频生成/图生视频/Selflift加2xVAE锐化放大模型，图生视频画质增强_2111212774469758978.json, 视频生成/图生视频/selflift加2xVAE锐化放大｜图生视频画质增强方案_2105241932820738050.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_117
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/文生图/AI代码侠土豆-I2V数字人一条龙合集_1999484627213484033.json、数字人/数字人/AI代码侠土豆-I2V数字人一条龙合集王改革_2000808693069475841.json、数字人/数字人/I2V-InfiniteTalk数字人单人_2002788498899890178.json、数字人/数字人/I2V数字人_2002786080296452098.json、视频生成/图生视频/-I2V数字人一条龙合集，动作，表情，肢体语言，全部到位！！！_2045983790081773570.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 360度环绕视频加Selflift专用高分辨率生成工作流，图生视频_2106477153318686722.json、视频生成/图生视频/MiniMax H3 360度环绕视频｜Selflift专用高分辨率转场运镜出片_2106207397177024513.json、视频生成/图生视频/MiniMax H3图生视频高清2K工作流，人像写真音频生成图生视频方案_2106616277656752130.json、视频生成/图生视频/MiniMax H3锐化高清放大采样工作流，文生视频高清增强方案_2105784930222559233.json、视频生成/图生视频/MiniMax H3锐化高清放大采样工作流，文生视频高清增强方案_2106131115126910978.json…）
 
 - **类型**：Text To Image
-- **样本数**：6
+- **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioSeparation`
+全部 8 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+- `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `ImageResizeKJv2`
+- `JjkText`
 - `KSampler`
-- `LoadAudio`
+- `KSamplerSelect`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `PreviewImage`
-- `SimpleMath+`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `PrimitiveFloat`
+- `ResolutionSelector`
+- `SelfLiftAvatarH3Sampler`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/6 个有
-- `LayerUtility: PurgeVRAM` —— 4/6 个有
-- `PreviewAudio` —— 4/6 个有
-- `QZ_ResolutionPreset` —— 4/6 个有
-- `SaveImage` —— 4/6 个有
-- `Text Multiline` —— 4/6 个有
-- `UNETLoader_Any` —— 4/6 个有
-- `VAELoader_Any` —— 4/6 个有
-- `easy downloadIndexTTSAndLoadModel` —— 4/6 个有
-- `easy indexTTSGenerateSimple` —— 4/6 个有
-- `GetNode` —— 2/6 个有
-- `Power Lora Loader (rgthree)` —— 2/6 个有
-- `SetNode` —— 2/6 个有
-- `UNETLoader` —— 2/6 个有
-- `VAELoader` —— 2/6 个有
-- `Int` —— 1/6 个有
-- `SaveAudio` —— 1/6 个有
+- `H3SigmaRefiner` —— 6/8 个有
+- `LTXVSeparateAVLatent` —— 6/8 个有
+- `MiniMaxH3ReferenceToVideo` —— 6/8 个有
+- `MiniMaxH3VAEDecodeFast` —— 6/8 个有
+- `PreviewAny` —— 6/8 个有
+- `QwenH3PromptLocal` —— 6/8 个有
+- `RunningHub Deepcleaner` —— 6/8 个有
+- `Fast Groups Muter (rgthree)` —— 5/8 个有
+- `SaveImage` —— 5/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `ImageFromBatch` —— 3/8 个有
+- `CR Prompt Text` —— 2/8 个有
+- `ExtendIntermediateSigmas` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `MiniMaxH3ImageToVideo` —— 2/8 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 2/8 个有
+- `PlaySound|pysssss` —— 2/8 个有
+- `Text` —— 2/8 个有
+- `PrimitiveStringMultiline` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 512 | 512 - 1280 | 6 | 53% |
-| 高度 | 512 | 512 - 720 | 6 | 83% |
-| 采样步数 | 10 | 8 - 10 | 6 | 90% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
+| 采样算法 | er_sde | - | 8 | 100% |
+| 调度器 | beta | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 80 | 80 - 80 | 8 | 100% |
+| 高度 | 80 | 80 - 80 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 512，观测区间 512 - 1280，6 个样本
-- 高度 中位数 512，观测区间 512 - 720，6 个样本，取值集中（一致性 83%）
-- 采样步数 中位数 10，观测区间 8 - 10，6 个样本，取值集中（一致性 90%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，8 个样本，一致性 100%
+- 调度器 最常用 beta，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高发问题（9/8 个样本）：Steps较低可能导致细节不足

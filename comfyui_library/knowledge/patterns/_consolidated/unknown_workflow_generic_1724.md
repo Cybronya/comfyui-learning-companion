@@ -3,33 +3,38 @@ name: unknown_workflow_generic_1724
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo]
+coverage: 0.9145
+common_nodes: [DeepTranslatorTextNode, ImageConcatMulti, ImageResizeKJv2, ImageScaleDownToSize, LoadImage, PreviewImage, RunningHub DreamO, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/图生视频_2069316266128658434.json, 视频生成/图生视频/满血版seedance2.0图生视频_2040261393017999362.json]
+members: [图片生成/图生图/字节DreamO单图IP-图像插入_1926185937620070402.json, 图片生成/图生图/字节DreamO多图ID+IP 模特试衣_1926842299702218754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1724
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/图生视频_2069316266128658434.json、视频生成/图生视频/满血版seedance2.0图生视频_2040261393017999362.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/字节DreamO单图IP-图像插入_1926185937620070402.json、图片生成/图生图/字节DreamO多图ID+IP 模特试衣_1926842299702218754.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `DeepTranslatorTextNode`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `ImageScaleDownToSize`
 - `LoadImage`
-- `RH_RhartVideoSparkvideo20MultimodalVideo`
-- `SaveVideo`
+- `PreviewImage`
+- `RunningHub DreamO`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Text` —— 1/2 个有
-- `Textbox` —— 1/2 个有
+- `Get Image Size` —— 1/2 个有
+- `GetImageSize` —— 1/2 个有
 
 ## 典型参数
 

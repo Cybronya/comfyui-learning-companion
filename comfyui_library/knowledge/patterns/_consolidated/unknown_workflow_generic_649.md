@@ -3,35 +3,34 @@ name: unknown_workflow_generic_649
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.623
-common_nodes: [HeartMuLa_Generate, HeartMuLa_Transcribe, LoadAudio, SaveAudio, easy showAnything]
+coverage: 0.667
+common_nodes: [LoadImage, LoadVideo, SaveImage, ShowText|pysssss]
 problems: []
 missing: []
-members: [音频生成/音频生成/HeartMula写歌自由_2013510932797857794.json, 音频生成/音频生成/HeartMula写歌自由_2043629399446130690.json, 音频生成/音频生成/HeartMula开源版SUNO免费音乐生成器-歌词提取器_2072273015613775873.json, 音频生成/音频生成/开源AI音乐创作-输入歌词，内置20种参考风格_2046661538991316993.json, 音频生成/音频生成/自由写歌 创意无限 一分钟音频_2019579092227596290.json]
+members: [图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿_2035898936522706945.json, 图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020683295532523522.json, 图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020694319270727682.json, 图片生成/反推提示词/Seedance 2.0 - 即梦爆款视频反推洗稿器_2021444820882956290.json, 图片生成/反推提示词/视频反推提示词_1971893542417264641.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_649
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/HeartMula写歌自由_2013510932797857794.json、音频生成/音频生成/HeartMula写歌自由_2043629399446130690.json、音频生成/音频生成/HeartMula开源版SUNO免费音乐生成器-歌词提取器_2072273015613775873.json、音频生成/音频生成/开源AI音乐创作-输入歌词，内置20种参考风格_2046661538991316993.json、音频生成/音频生成/自由写歌 创意无限 一分钟音频_2019579092227596290.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿_2035898936522706945.json、图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020683295532523522.json、图片生成/反推提示词/SeeDance 2.0即梦爆款视频反推洗稿器_2020694319270727682.json、图片生成/反推提示词/Seedance 2.0 - 即梦爆款视频反推洗稿器_2021444820882956290.json、图片生成/反推提示词/视频反推提示词_1971893542417264641.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `HeartMuLa_Generate`
-- `HeartMuLa_Transcribe`
-- `LoadAudio`
-- `SaveAudio`
-- `easy showAnything`
+- `LoadImage`
+- `LoadVideo`
+- `SaveImage`
+- `ShowText|pysssss`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `Text Multiline` —— 1/5 个有
+- `RHHiddenNodes` —— 4/5 个有
+- `AILab_MiniCPM_4_V_Advanced` —— 1/5 个有
 
 ## 典型参数
 

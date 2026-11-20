@@ -1,87 +1,80 @@
 ---
 name: unknown_workflow_video_lora_sampler_770
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.914667
-common_nodes: [AudioSeparation, CLIPVisionLoader, CR Prompt Text, Compare, DF_Get_image_size, DiffuEraserLoader, DiffuEraserSampler, DownloadAndLoadWav2VecModel, Fast Groups Bypasser (rgthree), Float, GetImageRangeFromBatch, GetImageSizeAndCount, If ANY execute A else B, ImageFromBatch+, ImageResizeKJv2, ImpactSwitch, Int, JWImageResizeByLongerSide, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LazySwitch2way, LoadImage, LoadWanVideoT5TextEncoder, MaskToImage, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PrimitiveBoolean, RH_Sora2_I2V, RH_Sora2_T2V, RepeatImageBatch, SaveVideo, VHS_LoadVideoPath, VHS_VideoCombine, VHS_VideoInfo, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy float, easy showAnything]
+frequency: 4
+level: strong
+coverage: 0.96025
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CR Text, CheckpointLoaderSimple, DapaoImageAspectRatioResizeNode, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, RH_LLMAPI_Pro_Node, RandomNoise, SamplerCustomAdvanced, Seed (rgthree), SimpleMath+, VAEDecodeTiled, VHS_VideoCombine, easy cleanGpuUsed, easy int]
 problems: []
 missing: []
-members: [视频生成/文生视频/EPace-全能视频S一键无水印直出（带高清修复+对口型模块）_1973906564304211969.json, 视频生成/文生视频/最新全能视频S粤语输出提示词一键无水印直出高清修复对口型模块_1974092734858399746.json, 视频生成/文生视频/最新全能视频S高清输出提示词一键无水印直出高清修复对口型模块需要48gb显存_1974499706409717761.json]
+members: [视频生成/图生视频/💃LTX2.3 数字人mv 口型、运镜、动作都很赞！💃_2030910422534066178.json, 视频生成/文生视频/LTX2.3 图生视频 提示词自动优化版  数字人说话唱歌_2051094708809678850.json, 视频生成/文生视频/LTX2.3+图生视频 提示词自动优化版 数字人说话唱歌_2063795562855624705.json, 视频生成/文生视频/图生视频LTX2.3 +提示词自动优化版+数字人说话唱歌_2066319019455639554.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_770
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/文生视频/EPace-全能视频S一键无水印直出（带高清修复+对口型模块）_1973906564304211969.json、视频生成/文生视频/最新全能视频S粤语输出提示词一键无水印直出高清修复对口型模块_1974092734858399746.json、视频生成/文生视频/最新全能视频S高清输出提示词一键无水印直出高清修复对口型模块需要48gb显存_1974499706409717761.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/💃LTX2.3 数字人mv 口型、运镜、动作都很赞！💃_2030910422534066178.json、视频生成/文生视频/LTX2.3 图生视频 提示词自动优化版  数字人说话唱歌_2051094708809678850.json、视频生成/文生视频/LTX2.3+图生视频 提示词自动优化版 数字人说话唱歌_2063795562855624705.json、视频生成/文生视频/图生视频LTX2.3 +提示词自动优化版+数字人说话唱歌_2066319019455639554.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：91%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `AudioSeparation`
-- `CLIPVisionLoader`
-- `CR Prompt Text`
-- `Compare`
-- `DF_Get_image_size`
-- `DiffuEraserLoader`
-- `DiffuEraserSampler`
-- `DownloadAndLoadWav2VecModel`
-- `Fast Groups Bypasser (rgthree)`
-- `Float`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
-- `If ANY execute A else B`
-- `ImageFromBatch+`
-- `ImageResizeKJv2`
-- `ImpactSwitch`
-- `Int`
-- `JWImageResizeByLongerSide`
-- `JWInteger`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: PurgeVRAM V2`
-- `LazySwitch2way`
+全部 4 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
+- `CM_FloatToInt`
+- `CR Text`
+- `CheckpointLoaderSimple`
+- `DapaoImageAspectRatioResizeNode`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `MaskToImage`
-- `MathExpression|pysssss`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
+- `LoraLoaderModelOnly`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
 - `PrimitiveBoolean`
-- `RH_Sora2_I2V`
-- `RH_Sora2_T2V`
-- `RepeatImageBatch`
-- `SaveVideo`
-- `VHS_LoadVideoPath`
+- `PrimitiveFloat`
+- `RH_LLMAPI_Pro_Node`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `Seed (rgthree)`
+- `SimpleMath+`
+- `VAEDecodeTiled`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoImageToVideoMultiTalk`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoTextEncode`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
-- `easy batchAnything`
-- `easy float`
-- `easy showAnything`
+- `easy cleanGpuUsed`
+- `easy int`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Concatenate` —— 2/3 个有
-- `Bookmark (rgthree)` —— 1/3 个有
+- `LTXVAudioVAEEncode` —— 1/4 个有
+- `LoadAudio` —— 1/4 个有
+- `MelBandRoFormerModelLoader` —— 1/4 个有
+- `MelBandRoFormerSampler` —— 1/4 个有
+- `PreviewAny` —— 1/4 个有
+- `SetLatentNoiseMask` —— 1/4 个有
+- `SolidMask` —— 1/4 个有
+- `SoundFlow_GetLength` —— 1/4 个有
+- `TrimAudioDuration` —— 1/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 4 | 100% |
+| 高度 | 25 | 25 - 25 | 4 | 100% |
 
 ## 常见问题
 
@@ -89,4 +82,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，4 个样本，取值集中（一致性 100%）

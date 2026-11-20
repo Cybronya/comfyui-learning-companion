@@ -1,80 +1,75 @@
 ---
 name: image_to_image_sampler_unet_vae_50
 type: Image To Image
-frequency: 3
-level: strong
-coverage: 0.521
-common_nodes: [CLIPLoader, ComfyMathExpression, ComfySwitchNode, EmptyLatentImage, FB_Qwen3TTSVoiceDesign, Fast Groups Bypasser (rgthree), GetNode, KSampler, LoadImage, PrimitiveInt, PrimitiveStringMultiline, RegexExtract, ResolutionSelector, SaveAudio, SaveImage, SetNode, StringConcatenate, StringReplace, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAEEncode, VAELoader, YUAN_TXTConvertAny, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YUAN_TXTPreviewContent, YUAN_TXTReplace, YuanCustomCombo]
-problems: []
+frequency: 6
+level: weak
+coverage: 0.9495
+common_nodes: [CLIPLoader, FluxKontextMultiReferenceLatentMethod, KSampler, LoadImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2114636164119490562.json, 图片生成/文生图/资产生成-短剧拍档V16.1(Qwen2.1可编辑版)_2105476566175277057.json, 音频生成/音频生成/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2110643506917240834.json]
+members: [图片生成/图生图/成图以后再次bfs edit qwen 2511换脸_2034920099492143105.json, 图片生成/图生图/简单极速图片去水印_2027576063118811138.json, 图片生成/图生图/🔥Qwen Image Edit多角度相机控制：拖拽手柄即可生成96种摄像机角度_2010767191389507586.json, 平台全量/全量qwen edit 2512单图编辑工作流_2068303224184074241.json, 平台全量/千问图片局部修改_换背景_2059170170379268098.json, 视频生成/图生视频/Qwen  2511 去水印_2039186389039845377.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_50
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2114636164119490562.json、图片生成/文生图/资产生成-短剧拍档V16.1(Qwen2.1可编辑版)_2105476566175277057.json、音频生成/音频生成/全栈式短剧人物道具场景及参考音频生成完整工作流(Qwen2.1版)_2110643506917240834.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/成图以后再次bfs edit qwen 2511换脸_2034920099492143105.json、图片生成/图生图/简单极速图片去水印_2027576063118811138.json、图片生成/图生图/🔥Qwen Image Edit多角度相机控制：拖拽手柄即可生成96种摄像机角度_2010767191389507586.json、平台全量/全量qwen edit 2512单图编辑工作流_2068303224184074241.json、平台全量/千问图片局部修改_换背景_2059170170379268098.json…）
 
 - **类型**：Image To Image
-- **样本数**：3
-- **可信度**：强结论
-- **平均知识覆盖**：52%
+- **样本数**：6
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
+全部 6 个 workflow 都包含：
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `ComfySwitchNode`
-- `EmptyLatentImage`
-- `FB_Qwen3TTSVoiceDesign`
-- `Fast Groups Bypasser (rgthree)`
-- `GetNode`
+- `FluxKontextMultiReferenceLatentMethod`
 - `KSampler`
 - `LoadImage`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RegexExtract`
-- `ResolutionSelector`
-- `SaveAudio`
 - `SaveImage`
-- `SetNode`
-- `StringConcatenate`
-- `StringReplace`
-- `TextEncodeQwenImage21`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
-- `YUAN_TXTConvertAny`
-- `YUAN_TXTJsonExtractor`
-- `YUAN_TXTParagraphSplitter`
-- `YUAN_TXTPreviewContent`
-- `YUAN_TXTReplace`
-- `YuanCustomCombo`
+
+**可变部分**（部分 workflow 才有）：
+- `CFGNorm` —— 5/6 个有
+- `LoraLoaderModelOnly` —— 5/6 个有
+- `ModelSamplingAuraFlow` —— 5/6 个有
+- `FluxKontextImageScale` —— 4/6 个有
+- `ConditioningZeroOut` —— 3/6 个有
+- `CR Prompt Text` —— 1/6 个有
+- `ImageResize` —— 1/6 个有
+- `Label (rgthree)` —— 1/6 个有
+- `PreviewImage` —— 1/6 个有
+- `QwenMultiangleCameraNode` —— 1/6 个有
+- `RH_Nano_Banana_Image2Image` —— 1/6 个有
+- `RH_Translator` —— 1/6 个有
+- `SeargePreviewImage` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1088 | 1088 - 1088 | 3 | 100% |
-| 高度 | 1920 | 1920 - 1920 | 3 | 100% |
-| 采样步数 | 25 | 25 - 25 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 3 | 100% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
+| 采样步数 | 4 | 4 - 40 | 6 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 6 | 25% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | simple | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1088，观测区间 1088 - 1088，3 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，观测区间 1920 - 1920，3 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 25，观测区间 25 - 25，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 40，6 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，6 个样本，取值分散，一致性仅 25%
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 simple，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（5/6 个样本）：Steps较低可能导致细节不足

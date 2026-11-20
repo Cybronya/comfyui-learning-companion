@@ -1,65 +1,71 @@
 ---
 name: unknown_workflow_sampler_unet_vae_158
 type: Unknown Workflow
-frequency: 7
+frequency: 8
 level: moderate
-coverage: 0.820286
-common_nodes: [CFGGuider, CLIPLoader, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.81675
+common_nodes: [CLIPLoader, ComfySwitchNode, EmptyLatentImage, KSampler, LoadImage, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/三图编辑（解禁模型）：Flux.2 Klein 9B_2051654833320542209.json, 图片生成/图生图/仅需四步，建筑效果图一键多风格_2030610127664979970.json, 图片生成/图生图/全能人物照片编辑头发人脸衣服服装更换变装变发型图生图升级版_2074339361214255106.json, 图片生成/图生图/动漫转写实cg Klein 9b 工作流_2015973646677843969.json, 图片生成/图生图/动漫转真人Klein 9b工作流_2032463178499624961.json, 图片生成/图生图/多图编辑换装电商人物添加人物物品装饰多图合一AI重绘_2074345357949104129.json, 图片生成/图生图/服装上身与场景生成_2060636969994113025.json]
+members: [图片生成/图生图/Qwen Image 2.1 精准完美抠图｜自动修复遮挡区域_2104051381421305858.json, 图片生成/图生图/Qwen Image 2.1 ｜生图及编辑_2101865008786395137.json, 图片生成/图生图/Qwen Image 2.1多图编辑_2101702190703407106.json, 图片生成/图生图/Qwen Image 2.1自动分镜 短剧分镜_2102191085471752193.json, 图片生成/图生图/Qwen Image 2.1：图像编辑_2101818506256932866.json, 图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡_2104462379441549314.json, 图片生成/图生图/Qwen Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2104044741108260865.json, 图片生成/图生图/Qwen_Image2.1强化抠图，精准抠图，移除遮挡，完美PNG通道_2114878025723629570.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_158
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/三图编辑（解禁模型）：Flux.2 Klein 9B_2051654833320542209.json、图片生成/图生图/仅需四步，建筑效果图一键多风格_2030610127664979970.json、图片生成/图生图/全能人物照片编辑头发人脸衣服服装更换变装变发型图生图升级版_2074339361214255106.json、图片生成/图生图/动漫转写实cg Klein 9b 工作流_2015973646677843969.json、图片生成/图生图/动漫转真人Klein 9b工作流_2032463178499624961.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1 精准完美抠图｜自动修复遮挡区域_2104051381421305858.json、图片生成/图生图/Qwen Image 2.1 ｜生图及编辑_2101865008786395137.json、图片生成/图生图/Qwen Image 2.1多图编辑_2101702190703407106.json、图片生成/图生图/Qwen Image 2.1自动分镜 短剧分镜_2102191085471752193.json、图片生成/图生图/Qwen Image 2.1：图像编辑_2101818506256932866.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：8
 - **可信度**：中等可信
 - **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `KSamplerSelect`
+- `ComfySwitchNode`
+- `EmptyLatentImage`
+- `KSampler`
 - `LoadImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `QwenImage21Cache`
 - `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 6/7 个有
-- `Image Comparer (rgthree)` —— 6/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/7 个有
-- `ReferenceLatent` —— 6/7 个有
-- `VAEEncode` —— 6/7 个有
-- `EmptyFlux2LatentImage` —— 5/7 个有
-- `GetImageSize` —— 3/7 个有
-- `LoraLoaderModelOnly` —— 3/7 个有
-- `JjkText` —— 2/7 个有
-- `PlaySound|pysssss` —— 2/7 个有
-- `SetNode` —— 2/7 个有
-- `AIO_Preprocessor` —— 1/7 个有
-- `FluxKontextImageScale` —— 1/7 个有
-- `ImageInvert` —— 1/7 个有
-- `ImpactSwitch` —— 1/7 个有
-- `Label (rgthree)` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `StringReplace` —— 1/7 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/7 个有
+- `ResolutionSelector` —— 7/8 个有
+- `SaveImageAdvanced` —— 6/8 个有
+- `LoraLoaderModelOnly` —— 5/8 个有
+- `Text Multiline` —— 4/8 个有
+- `XinbaoImageStandardizer` —— 4/8 个有
+- `Image Comparer (rgthree)` —— 3/8 个有
+- `ImageConcanate` —— 3/8 个有
+- `Seed (rgthree)` —— 3/8 个有
+- `PrimitiveStringMultiline` —— 2/8 个有
+- `StringToAnyNode` —— 2/8 个有
+- `easy boolean` —— 2/8 个有
+- `easy ifElse` —— 2/8 个有
+- `ttN concat` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/8 个有
+- `PreviewAny` —— 1/8 个有
+- `Text Concatenate` —— 1/8 个有
+- `Text Find and Replace` —— 1/8 个有
+- `孤海注释` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 25 - 50 | 8 | 71% |
+| Prompt 约束强度(CFG) | 1 | 1 - 3.5 | 8 | 37% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 88% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 1024 | 1024 - 1200 | 8 | 94% |
+| 高度 | 1024 | 1024 - 1200 | 8 | 94% |
 
 ## 常见问题
 
@@ -67,4 +73,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 25 - 50，8 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3.5，8 个样本，取值分散，一致性仅 37%
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1200，8 个样本，取值集中（一致性 94%）
+- 高度 中位数 1024，观测区间 1024 - 1200，8 个样本，取值集中（一致性 94%）

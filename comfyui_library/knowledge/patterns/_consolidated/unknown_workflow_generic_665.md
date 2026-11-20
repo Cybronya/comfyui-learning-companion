@@ -3,38 +3,37 @@ name: unknown_workflow_generic_665
 type: Unknown Workflow
 frequency: 5
 level: moderate
-coverage: 0.7794
-common_nodes: [LoadAudio, Qwen3TTSCustomVoice, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, Qwen3TTSVoiceDesign]
+coverage: 0.659
+common_nodes: [EmptyImage, JjkText, LoadImage, PreviewImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json, 音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json, 音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json, 音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json]
+members: [图片生成/图生图/GP·T2.5&全能图片V2&GP·T2_2098915963252072450.json, 图片生成/图生图/GP·T2.5&全能图片V2&GP·T2_2098973770894635009.json, 图片生成/图生图/全能图片G2.0----低价渠道版_2113457809089187841.json, 图片生成/图生图/图片特效处理_2111277332471312385.json, 图片生成/图生图/故事版生成低价版_2101217281224306689.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_665
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（音频生成/音频生成/qwen-tts-voice-allinone_2015452767166402562.json、音频生成/音频生成/沐荞然-数字分身音色设计和克隆(qwen3tts)_2016349243333677057.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2081988597074448386.json、音频生成/音频生成/语音情绪控制，语音克隆，Qwen3-TTS全家桶_2082721579519270914.json、音频生成/音频生成/语音情绪设计，语音克隆，Qwen3-TTS全家桶_2014542786434961410.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/GP·T2.5&全能图片V2&GP·T2_2098915963252072450.json、图片生成/图生图/GP·T2.5&全能图片V2&GP·T2_2098973770894635009.json、图片生成/图生图/全能图片G2.0----低价渠道版_2113457809089187841.json、图片生成/图生图/图片特效处理_2111277332471312385.json、图片生成/图生图/故事版生成低价版_2101217281224306689.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：66%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `LoadAudio`
-- `Qwen3TTSCustomVoice`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
-- `Qwen3TTSVoiceDesign`
+- `EmptyImage`
+- `JjkText`
+- `LoadImage`
+- `PreviewImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
-- `SaveAudio` —— 4/5 个有
-- `Apply Whisper` —— 3/5 个有
-- `ShowText|pysssss` —— 3/5 个有
-- `SaveAudioMP3` —— 1/5 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 2/5 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 2/5 个有
+- `忽略多组孤海` —— 2/5 个有
 
 ## 典型参数
 

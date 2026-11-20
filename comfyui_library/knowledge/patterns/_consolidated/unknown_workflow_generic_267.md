@@ -1,35 +1,42 @@
 ---
 name: unknown_workflow_generic_267
 type: Unknown Workflow
-frequency: 9
+frequency: 10
 level: moderate
-coverage: 0.826889
-common_nodes: [LoadImage, RH_AlibabaWan30ImageToVideo, SaveVideo]
+coverage: 0.82
+common_nodes: [LoadAudio, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
 problems: []
 missing: []
-members: [视频生成/图生视频/RH 万相3.0-图生视频_2091857611518996481.json, 视频生成/图生视频/Wan3.0 图生视频_2091777399590576129.json, 视频生成/图生视频/Wan3.0 首尾帧生视频_2091810241842343938.json, 视频生成/图生视频/Wan3.0首尾帧_2097675921925951490.json, 视频生成/图生视频/Wan3.0首尾帧_2100172735010918401.json, 视频生成/图生视频/Wan3.0首帧_2100196132054986754.json, 视频生成/图生视频/wan3 单图_双图 视频生成 Wan3.0 首尾帧生视频_2092056558216765441.json, 视频生成/图生视频/图生视频工作流｜万相 3.0 首尾帧 最高 1080P_2100471486690713601.json, 视频生成/文生视频/Wan 3.0 文生视频 图生视频 首尾帧 女装带货模版+车内一周穿搭展示+全节点注释_2091861387894149122.json]
+members: [平台全量/Qwen3-TTS 三合一 AI 配音：声音克隆 _ 音色设计 _ 预设音色_2118571970521554945.json, 平台全量/qwen3-tts全家桶_2014535636690145281.json, 数字人/数字人/Qwen3TTS-多国语言+方言_2014520754792046594.json, 音频生成/音频生成/AI口播-配音_2027202958403833858.json, 音频生成/音频生成/Qwen3 TTS 一键音色设计_2014696736723308546.json, 音频生成/音频生成/Qwen3 TTS-声音克隆_2060674879174832129.json, 音频生成/音频生成/QwenTTS 语音克隆 音色设计_2014735687462952961.json, 音频生成/音频生成/Qwentts-声音克隆_2045469438295678977.json, 音频生成/音频生成/声音克隆&声音设计_2061665723885383682.json, 音频生成/音频生成/影视配音+游戏角色配音+有声读物+多角色+情感控制（qwen3-tts三合一）_2014646085758754818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_267
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/RH 万相3.0-图生视频_2091857611518996481.json、视频生成/图生视频/Wan3.0 图生视频_2091777399590576129.json、视频生成/图生视频/Wan3.0 首尾帧生视频_2091810241842343938.json、视频生成/图生视频/Wan3.0首尾帧_2097675921925951490.json、视频生成/图生视频/Wan3.0首尾帧_2100172735010918401.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/Qwen3-TTS 三合一 AI 配音：声音克隆 _ 音色设计 _ 预设音色_2118571970521554945.json、平台全量/qwen3-tts全家桶_2014535636690145281.json、数字人/数字人/Qwen3TTS-多国语言+方言_2014520754792046594.json、音频生成/音频生成/AI口播-配音_2027202958403833858.json、音频生成/音频生成/Qwen3 TTS 一键音色设计_2014696736723308546.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `LoadImage`
-- `RH_AlibabaWan30ImageToVideo`
-- `SaveVideo`
+全部 10 个 workflow 都包含：
+- `LoadAudio`
+- `Qwen3TTSModelLoader`
+- `Qwen3TTSVoiceClone`
+- `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `Qwen3TTSVoiceDesign` —— 9/10 个有
+- `CR Text` —— 7/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
+- `HeartMuLa_Transcribe` —— 5/10 个有
+- `Qwen3TTSCustomVoice` —— 5/10 个有
+- `easy showAnything` —— 3/10 个有
+- `LoadImage` —— 1/10 个有
+- `PreviewAudio` —— 1/10 个有
 
 ## 典型参数
 

@@ -1,85 +1,77 @@
 ---
 name: text_to_image_sampler_clip_unet_152
 type: Text To Image
-frequency: 4
-level: moderate
-coverage: 0.74925
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, JanusImageUnderstanding, JanusModelLoader, KSampler, LayerUtility: PurgeVRAM, LoadImage, SaveImage, ShowText|pysssss, UNETLoader, VAEDecode, VAELoader]
+frequency: 5
+level: weak
+coverage: 0.9096
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, EmptyLatentImage, KSampler, SaveImage, TTResolutionSelector, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/DeepseekR1+Janus-Pro模型工作流-StarAI_1891457968028917761.json, 图片生成/反推提示词/deepseek-JanusPro图片反推-FLUX图生图+LORA_1892560824442261506.json, 图片生成/文生图/Flux-文生图-图生图-加速版_2009553183344959489.json, 图片生成/文生图/Qwen-Image-Edit-文生图-图生图-加速版_2007390911692541953.json]
+members: [图片生成/文生图/全自动krea2文生图_2070721265224216578.json, 图片生成/文生图/多风格文生图｜krea2+Qwen3.5自动生成_2089836661319487489.json, 图片生成/文生图/多风格自动文生图｜Qwen3.5+krea2风格轮换生成_2093467909044658177.json, 图片生成/文生图/自动多风格文生图｜krea2+Qwen3.5一键直出_2093466592263888897.json, 视频生成/图生视频/krea2+Qwen3.5-自动多风格文生图 (1)_2085254333008007169.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_152
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/DeepseekR1+Janus-Pro模型工作流-StarAI_1891457968028917761.json、图片生成/反推提示词/deepseek-JanusPro图片反推-FLUX图生图+LORA_1892560824442261506.json、图片生成/文生图/Flux-文生图-图生图-加速版_2009553183344959489.json、图片生成/文生图/Qwen-Image-Edit-文生图-图生图-加速版_2007390911692541953.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全自动krea2文生图_2070721265224216578.json、图片生成/文生图/多风格文生图｜krea2+Qwen3.5自动生成_2089836661319487489.json、图片生成/文生图/多风格自动文生图｜Qwen3.5+krea2风格轮换生成_2093467909044658177.json、图片生成/文生图/自动多风格文生图｜krea2+Qwen3.5一键直出_2093466592263888897.json、视频生成/图生视频/krea2+Qwen3.5-自动多风格文生图 (1)_2085254333008007169.json）
 
 - **类型**：Text To Image
-- **样本数**：4
-- **可信度**：中等可信
-- **平均知识覆盖**：75%
+- **样本数**：5
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 4 个 workflow 都包含：
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JanusImageUnderstanding`
-- `JanusModelLoader`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
 - `SaveImage`
-- `ShowText|pysssss`
+- `TTResolutionSelector`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `DualCLIPLoader` —— 3/4 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/4 个有
-- `LoraLoaderModelOnly` —— 3/4 个有
-- `PreviewImage` —— 3/4 个有
-- `ArgosTranslateTextNode` —— 2/4 个有
-- `CR Text` —— 2/4 个有
-- `ConstrainImage|pysssss` —— 2/4 个有
-- `DifferentialDiffusion` —— 2/4 个有
-- `Image Compare (mtb)` —— 2/4 个有
-- `VAEEncode` —— 2/4 个有
-- `CLIPLoader` —— 1/4 个有
-- `LmcqDeepGen` —— 1/4 个有
-- `LmcqDeepLoader` —— 1/4 个有
-- `ModelSamplingAuraFlow` —— 1/4 个有
-- `Note Plus (mtb)` —— 1/4 个有
-- `easy cleanGpuUsed` —— 1/4 个有
-- `easy clearCacheAll` —— 1/4 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/5 个有
+- `LoraLoaderModelOnly` —— 4/5 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `JjkText` —— 3/5 个有
+- `Label (rgthree)` —— 3/5 个有
+- `solarL_SaveImagesToZip` —— 3/5 个有
+- `孤海注释` —— 3/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 808 | 512 - 1104 | 4 | 63% |
-| 高度 | 1120 | 768 - 1472 | 4 | 69% |
-| 采样步数 | 20 | 20 - 20 | 4 | 100% |
-| Prompt 约束强度(CFG) | 1.75 | 1 - 2.5 | 4 | 57% |
-| 采样算法 | euler | - | 4 | 100% |
-| 调度器 | normal | - | 4 | 100% |
-| 重绘幅度 | 0.8 | 0.6 - 1 | 4 | 75% |
+| 宽度 | 80 | 80 - 512 | 5 | 16% |
+| 高度 | 80 | 80 - 512 | 5 | 16% |
+| 采样步数 | 4 | 4 - 8 | 5 | 65% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 5 | 45% |
+| 采样算法 | er_sde | - | 5 | 60% |
+| 调度器 | beta | - | 5 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 808，观测区间 512 - 1104，4 个样本
-- 高度 中位数 1120，观测区间 768 - 1472，4 个样本
-- 采样步数 中位数 20，观测区间 20 - 20，4 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1.75，观测区间 1 - 2.5，4 个样本
-- 采样算法 最常用 euler，4 个样本，一致性 100%
-- 调度器 最常用 normal，4 个样本，一致性 100%
-- 重绘幅度 中位数 0.8，观测区间 0.6 - 1，4 个样本
+- 宽度 中位数 80，观测区间 80 - 512，5 个样本，取值分散，一致性仅 16%
+- 高度 中位数 80，观测区间 80 - 512，5 个样本，取值分散，一致性仅 16%
+- 采样步数 中位数 4，观测区间 4 - 8，5 个样本
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，5 个样本，取值分散，一致性仅 45%
+- 采样算法 最常用 er_sde，5 个样本，一致性 60%
+- 调度器 最常用 beta，5 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 高发问题（8/5 个样本）：Steps较低可能导致细节不足

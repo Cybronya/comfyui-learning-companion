@@ -1,97 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_38
 type: Unknown Workflow
-frequency: 25
+frequency: 28
 level: strong
-coverage: 0.71456
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, PathchSageAttentionKJ, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.775107
+common_nodes: [BasicScheduler, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3 MSR V2 +自定义声音_2067070674216251394.json, 视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图+自定义音频_2076688428426682370.json, 视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图_2076687501544218626.json, 视频生成/图生视频/LTX2.3 MSR V2 单采升级版+自定义语音_2076686212194193410.json, 视频生成/图生视频/LTX2.3 MSR V2 单采升级版_2076685195511685122.json, 视频生成/图生视频/LTX2.3 MSR V2 参考生视频_2067070625793003522.json, 视频生成/图生视频/LTX2.3 MSR V2 双采+ Customer Audio_2076574537289920514.json, 视频生成/图生视频/LTX2.3 MSR V2 双采_2076575617784569858.json, 视频生成/图生视频/LTX2.3 MSR V2 双采改版-无需上传背景图+自定义音频_2076690587205586945.json, 视频生成/图生视频/LTX2.3 MSR V2 双采改版-无需上传背景图_2076689573417144322.json, 视频生成/图生视频/LTX2.3 MSR V2 双采改版_2083450850885853185.json, 视频生成/图生视频/LTX2.3 MSR V2_2077624792404021250.json, 视频生成/图生视频/LTX2.3 MSR-V2 漫剧工作流_2078684359644762113.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-单采版+自定义语音_2078456447851130881.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-单采版_2077979824391544834.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版+自定义语音-电商带货版_2078651399650504705.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版+自定义语音_2078456551601434625.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词 V2 版_2081280741002006529.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词 V2 版_2081351747490111490.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词_2078828097239080962.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词_2078833439343726593.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词_2078835671065784322.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版_2077960603951525890.json, 视频生成/图生视频/LTX2.3-MSR-V2-多图参考自成视频-提示词自动_双采版_高清放大_2079917333656719361.json, 视频生成/图生视频/LTX2.3MSR-V2_2077234968824205313.json]
+members: [视频生成/图生视频/LTX23_v1_提示词理解测试版_2053376234775687170.json, 视频生成/图生视频/LTX23_v1_速度版_2053287053370118146.json, 视频生成/图生视频/LTX23_v2_精准版_2053287557496098818.json, 视频生成/图生视频/LTX23_v3_导演控制版_2053292180520878081.json, 视频生成/图生视频/Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json, 视频生成/图生视频/Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054471149064597506.json, 视频生成/图生视频/Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054525634252165121.json, 视频生成/图生视频/Ltx2.3 Dasiwa V3+Prompt Relay精准图生视频（最强人脸一致性）_2070413005359243266.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制V2_2054480431743021058.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制图生视频_2054510424275595265.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制图生视频_2055122108715413506.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制图生视频_2104521975828934658.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制-去字幕_2053633709424820226.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制V1_2052624355913420802.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制_2058542604932968449.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart精准控制_2054244112395710465.json, 视频生成/图生视频/Ltx2.3 Prompt Relay最强人脸一致性_数字人_2072098418612326401.json, 视频生成/图生视频/Ltx2.3 Sulphur-2+Prompt Relay分段提示词微动作_2054758964251897857.json, 视频生成/图生视频/Ltx2.3 Sulphur-2+Prompt Relay极致微表情图生视频_2054743040564178946.json, 视频生成/图生视频/Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054742077061246978.json, 视频生成/图生视频/Ltx2.3 图生视频精准控制 Prompt Relay Smart + VBVR_2052684073478434818.json, 视频生成/图生视频/Ltx2.3+Prompt+Relay+Smart+++VBVR+390K单图参考精准控制V2_2059634224981958657.json, 视频生成/图生视频/Ltx2.3--Sulphur2--VBVR--图生视频_2055899428757753858.json, 视频生成/图生视频/Ltx2.3单图生视频-多镜头逻辑控制PromptRelay+VBVR（KJ版）0506_2051845619093909505.json, 视频生成/图生视频/Ltx2.3单图生视频-多镜头逻辑控制PromptRelay+VBVR（KJ版）_2052580214886154241.json, 视频生成/图生视频/Ltx2.3单图生视频精准运镜Prompt Relay Smart + VBVR_2053103007134429186.json, 视频生成/图生视频/Ltx2.3（单图）时间精准控制+逻辑控制PromptRelay+VBVR（KJ版）_2047231171125317633.json, 视频生成/图生视频/精准控制LTX2.3图文生视频工作流（强控一致性）_2052683608971849729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_38
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 MSR V2 +自定义声音_2067070674216251394.json、视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图+自定义音频_2076688428426682370.json、视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图_2076687501544218626.json、视频生成/图生视频/LTX2.3 MSR V2 单采升级版+自定义语音_2076686212194193410.json、视频生成/图生视频/LTX2.3 MSR V2 单采升级版_2076685195511685122.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/LTX23_v1_提示词理解测试版_2053376234775687170.json、视频生成/图生视频/LTX23_v1_速度版_2053287053370118146.json、视频生成/图生视频/LTX23_v2_精准版_2053287557496098818.json、视频生成/图生视频/LTX23_v3_导演控制版_2053292180520878081.json、视频生成/图生视频/Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
+- **样本数**：28
 - **可信度**：强结论
-- **平均知识覆盖**：71%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPTextEncode`
-- `ComfyMathExpression`
+全部 28 个 workflow 都包含：
+- `BasicScheduler`
 - `DualCLIPLoader`
 - `EmptyLTXVLatentVideo`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
+- `LTX2SamplingPreviewOverride`
 - `LTXVAudioVAEDecode`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
-- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
 - `PathchSageAttentionKJ`
-- `RandomNoise`
-- `ResizeImagesByLongerEdge`
-- `SamplerCustomAdvanced`
-- `VAEDecodeTiled`
+- `SamplerCustom`
+- `VAEDecode`
 - `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM` —— 24/25 个有
-- `PrimitiveStringMultiline` —— 24/25 个有
-- `UNETLoader` —— 24/25 个有
-- `PrimitiveInt` —— 23/25 个有
-- `RTXVideoSuperResolution` —— 22/25 个有
-- `LiconMSR` —— 20/25 个有
-- `FrameInterpolate` —— 19/25 个有
-- `FrameInterpolationModelLoader` —— 19/25 个有
-- `GetNode` —— 19/25 个有
-- `SetNode` —— 19/25 个有
-- `LTXVLatentUpsampler` —— 17/25 个有
-- `LatentUpscaleModelLoader` —— 17/25 个有
-- `LTXVEmptyLatentAudio` —— 16/25 个有
-- `LTXVAddGuideMulti` —— 15/25 个有
-- `Label (rgthree)` —— 14/25 个有
-- `孤海注释` —— 11/25 个有
-- `LTXVAudioVAEEncode` —— 9/25 个有
-- `LoadAudio` —— 9/25 个有
-- `PromptRelayEncode` —— 9/25 个有
-- `SetLatentNoiseMask` —— 9/25 个有
-- `SolidMask` —— 9/25 个有
-- `TrimAudioDuration` —— 9/25 个有
-- `MelBandRoFormerModelLoader` —— 8/25 个有
-- `MelBandRoFormerSampler` —— 8/25 个有
-- `BatchImagesNode` —— 6/25 个有
-- `RepeatImageBatch` —— 6/25 个有
-- `PreviewAudio` —— 5/25 个有
-- `LTXTiledSampler` —— 4/25 个有
-- `Int` —— 3/25 个有
-- `CR Prompt Text` —— 1/25 个有
-- `ImageOnlyCheckpointLoader` —— 1/25 个有
-- `PromptRelayEncodeTimeline` —— 1/25 个有
-- `RHHiddenNodes` —— 1/25 个有
-- `RHLLMChatNode` —— 1/25 个有
-- `Text` —— 1/25 个有
-- `easy showAnything` —— 1/25 个有
+- `CR Prompt Text` —— 27/28 个有
+- `GetNode` —— 27/28 个有
+- `PreviewImage` —— 27/28 个有
+- `SetNode` —— 27/28 个有
+- `VisualizeSigmasKJ` —— 27/28 个有
+- `UNETLoader` —— 26/28 个有
+- `ConditioningZeroOut` —— 25/28 个有
+- `PromptRelaySmartEncode` —— 20/28 个有
+- `JWInteger` —— 19/28 个有
+- `Int` —— 9/28 个有
+- `SimpleMath+` —— 9/28 个有
+- `CLIPTextEncode` —— 8/28 个有
+- `PromptRelayEncode` —— 7/28 个有
+- `easy showAnything` —— 7/28 个有
+- `RH_LLMAPI_Pro_Node` —— 5/28 个有
+- `Float` —— 3/28 个有
+- `CheckpointLoaderSimple` —— 2/28 个有
+- `easy seed` —— 2/28 个有
+- `DF_Integer` —— 1/28 个有
+- `Float to Int` —— 1/28 个有
+- `MathExpression|pysssss` —— 1/28 个有
+- `PrimitiveBoolean` —— 1/28 个有
+- `PrimitiveFloat` —— 1/28 个有
+- `easy getNode` —— 1/28 个有
+- `easy ifElse` —— 1/28 个有
+- `easy positive` —— 1/28 个有
+- `easy setNode` —— 1/28 个有
+- `ttN float` —— 1/28 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 16 | 100% |
-| 高度 | 44 | 44 - 44 | 16 | 100% |
+| 宽度 | 489 | 489 - 489 | 28 | 100% |
+| 高度 | 25 | 25 - 30 | 28 | 96% |
 
 ## 常见问题
 
@@ -99,5 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，16 个样本，取值集中（一致性 100%）
-- 高度 中位数 44，观测区间 44 - 44，16 个样本，取值集中（一致性 100%）
+- 宽度 中位数 489，观测区间 489 - 489，28 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 30，28 个样本，取值集中（一致性 96%）

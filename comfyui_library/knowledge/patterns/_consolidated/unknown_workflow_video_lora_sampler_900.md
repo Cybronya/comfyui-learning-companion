@@ -1,80 +1,58 @@
 ---
 name: unknown_workflow_video_lora_sampler_900
 type: Unknown Workflow
-frequency: 2
-level: weak
-coverage: 0.5515
-common_nodes: [BBoxYOLO, BodyRatioMapperProportionTransfer, BodyRatioMapperSDPoseRender, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, ImageResizeKJv2, Int, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, PreviewImage, SDPoseKeypointExtractor, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, YOLOModelLoader]
+frequency: 3
+level: strong
+coverage: 1
+common_nodes: [CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2-Animate长视频分段队列，丝滑换装换人_2061297116642893825.json, 视频生成/图生视频/wan-Animate全能工作流_2055488451797110785.json]
+members: [视频生成/图生视频/wan2.2-i2v-org_2005191583471468545.json, 视频生成/图生视频/【ComfyUI新节点】AI视频每一帧都能自定义！Wan22FMLF控制关键帧超详细教程_1987781988037931010.json, 视频生成/图生视频/万相wan2.2首尾帧生视频（2分钟）_1980678850906603522.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_900
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Wan2.2-Animate长视频分段队列，丝滑换装换人_2061297116642893825.json、视频生成/图生视频/wan-Animate全能工作流_2055488451797110785.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/wan2.2-i2v-org_2005191583471468545.json、视频生成/图生视频/【ComfyUI新节点】AI视频每一帧都能自定义！Wan22FMLF控制关键帧超详细教程_1987781988037931010.json、视频生成/图生视频/万相wan2.2首尾帧生视频（2分钟）_1980678850906603522.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：2
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：55%
+- **样本数**：3
+- **可信度**：强结论
+- **平均知识覆盖**：100%
 
 ## 共有节点
 
-全部 2 个 workflow 都包含：
-- `BBoxYOLO`
-- `BodyRatioMapperProportionTransfer`
-- `BodyRatioMapperSDPoseRender`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `GetNode`
-- `ImageResizeKJv2`
-- `Int`
+全部 3 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `SDPoseKeypointExtractor`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `UNETLoader`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
-- `WanVideoDecode`
-- `WanVideoLoraSelectMulti`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
-- `YOLOModelLoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Anything Everywhere` —— 1/2 个有
-- `DrawViTPose` —— 1/2 个有
-- `Fast Groups Muter (rgthree)` —— 1/2 个有
-- `GetImageSizeAndCount` —— 1/2 个有
-- `INTConstant` —— 1/2 个有
-- `ImageConcanate` —— 1/2 个有
-- `ImageFromBatch` —— 1/2 个有
-- `ImpactSwitch` —— 1/2 个有
-- `MemoryCleaner` —— 1/2 个有
-- `MuyeTextEditOutput` —— 1/2 个有
-- `Primitive integer [Crystools]` —— 1/2 个有
-- `SegmentQueueRunner` —— 1/2 个有
-- `VHS_VideoInfoLoaded` —— 1/2 个有
-- `WanVideoTeaCache` —— 1/2 个有
-- `ZML_AnyTypeSwitchFive` —— 1/2 个有
-- `easy anythingIndexSwitch` —— 1/2 个有
+- `Int` —— 2/3 个有
+- `VAEDecode` —— 2/3 个有
+- `WanFirstLastFrameToVideo` —— 2/3 个有
+- `CR Text` —— 1/3 个有
+- `JWInteger` —— 1/3 个有
+- `Label (rgthree)` —— 1/3 个有
+- `SimpleMath+` —— 1/3 个有
+- `VAEDecodeTiled` —— 1/3 个有
+- `WanFourFrameReferenceUltimate` —— 1/3 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 3 | 67% |
+| Prompt 约束强度(CFG) | 5 | 4 - 8 | 3 | 70% |
+| 采样算法 | 1 | 1 - 1 | 3 | 100% |
+| 调度器 | euler | - | 3 | 67% |
+| 重绘幅度 | simple | - | 3 | 100% |
 
 ## 常见问题
 
@@ -82,4 +60,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参
+- 采样步数 最常用 fixed，3 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 5，观测区间 4 - 8，3 个样本
+- 采样算法 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，3 个样本，一致性 67%
+- 重绘幅度 最常用 simple，3 个样本，一致性 100%

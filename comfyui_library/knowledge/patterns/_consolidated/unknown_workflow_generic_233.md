@@ -1,41 +1,42 @@
 ---
 name: unknown_workflow_generic_233
 type: Unknown Workflow
-frequency: 10
+frequency: 11
 level: moderate
-coverage: 0.8535
-common_nodes: [Apply Whisper, AudioCrop, Qwen3TTSModelLoader, Qwen3TTSVoiceClone, SaveAudio]
+coverage: 0.867091
+common_nodes: [CR Prompt Text, LoadAudio, Qwen3ASRLoader, Qwen3ASRTranscribe, SaveAudio]
 problems: []
 missing: []
-members: [音频生成/音频生成/Qwen3 TTS 声音克隆_2048279794969743362.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2076897414463713282.json, 音频生成/音频生成/Qwen3 TTS 声音克隆_2109559115952517122.json, 音频生成/音频生成/Qwen3 TTS 声音克隆（单人版）_2040274745970663426.json, 音频生成/音频生成/Qwen3 TTS 声音克隆（无感情）_2015036352580034561.json, 音频生成/音频生成/Qwen3 TTS 声音完美克隆_2014978379094695938.json, 音频生成/音频生成/Qwen3 TTS 最强语音合成_2103005053178179586.json, 音频生成/音频生成/Qwen3 TTS 语音克隆_2018696714370158594.json, 音频生成/音频生成/Qwen3 TTS 音频克隆_2014828028999766018.json, 音频生成/音频生成/Qwen3 TTS语音克隆_2026220914022555650.json]
+members: [音频生成/音频生成/(600种语言-支持方言)OmniVoice语音克隆_2041421044300386306.json, 音频生成/音频生成/Alan测(600种语言-支持方言)OmniVoice语音克隆_2041777960390238209.json, 音频生成/音频生成/OmniVoice-双人语音克隆（支持方言）_2042241339672240130.json, 音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json, 音频生成/音频生成/OmniVoice最强单人语音克隆_2046481783285354498.json, 音频生成/音频生成/OmniVoice语音克隆+声音设计（支持600+语言，多种方言）_2048118551294251010.json, 音频生成/音频生成/OmniVoice语音克隆生成器-600种语言-支持方言_2041727319890468866.json, 音频生成/音频生成/OmniVoice语音克隆，omnivoice声音克隆，跨境声音，电商语音克隆_2042050604117266433.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041470375313281025.json, 音频生成/音频生成/omnivoice-tts 语音设计与多人对话_2041935163369721858.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_233
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Qwen3 TTS 声音克隆_2048279794969743362.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2076897414463713282.json、音频生成/音频生成/Qwen3 TTS 声音克隆_2109559115952517122.json、音频生成/音频生成/Qwen3 TTS 声音克隆（单人版）_2040274745970663426.json、音频生成/音频生成/Qwen3 TTS 声音克隆（无感情）_2015036352580034561.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（音频生成/音频生成/(600种语言-支持方言)OmniVoice语音克隆_2041421044300386306.json、音频生成/音频生成/Alan测(600种语言-支持方言)OmniVoice语音克隆_2041777960390238209.json、音频生成/音频生成/OmniVoice-双人语音克隆（支持方言）_2042241339672240130.json、音频生成/音频生成/OmniVoice-语音克隆（支持方言）_2042239416701292545.json、音频生成/音频生成/OmniVoice最强单人语音克隆_2044597504901124098.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：11
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `Apply Whisper`
-- `AudioCrop`
-- `Qwen3TTSModelLoader`
-- `Qwen3TTSVoiceClone`
+全部 11 个 workflow 都包含：
+- `CR Prompt Text`
+- `LoadAudio`
+- `Qwen3ASRLoader`
+- `Qwen3ASRTranscribe`
 - `SaveAudio`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 9/10 个有
-- `ShowText|pysssss` —— 9/10 个有
-- `Label (rgthree)` —— 1/10 个有
-- `PrimitiveStringMultiline` —— 1/10 个有
-- `Text _O` —— 1/10 个有
-- `VHS_LoadAudioUpload` —— 1/10 个有
+- `OmniVoiceVoiceCloneTTS` —— 8/11 个有
+- `PreviewAny` —— 7/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/11 个有
+- `OmniVoiceMultiSpeakerTTS` —— 3/11 个有
+- `OmniVoiceVoiceDesignTTS` —— 3/11 个有
+- `SaveAudioMP3` —— 3/11 个有
+- `SaveAudioOpus` —— 2/11 个有
 
 ## 典型参数
 

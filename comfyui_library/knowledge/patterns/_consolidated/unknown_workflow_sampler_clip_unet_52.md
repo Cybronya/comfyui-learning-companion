@@ -1,73 +1,58 @@
 ---
 name: unknown_workflow_sampler_clip_unet_52
 type: Unknown Workflow
-frequency: 15
+frequency: 17
 level: moderate
-coverage: 0.8766
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LayerMask: MaskGrow, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetLatentNoiseMask, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy positive]
+coverage: 0.785647
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, PrimitiveStringMultiline, SaveImage, TextGenerate, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/F.2klein9b一键渲染级材质替换_2054422098839392258.json, 图片生成/图生图/F.2klein9b一键渲染级材质替换_2057678216738992129.json, 图片生成/图生图/F2-Klein材质替换（局部重绘）_2055650299225886722.json, 图片生成/图生图/F2_Klein_服饰_产品材质花纹替换_局部材质替换_电商产品换材质_材质质感迁移_局部重绘_2056197943123816449.json, 图片生成/图生图/F2_Klein_服饰产品花纹替换_局部材质替换_电商产品换材质_材质迁移_局部重绘_2056537368320102402.json, 图片生成/图生图/Klein局部材质替换   比PS香多了_2031606144984158209.json, 图片生成/图生图/Klein局部材质替换_2054740088747241473.json, 图片生成/图生图/Klein局部材质替换_2054841219976572929.json, 图片生成/图生图/Klein局部材质替换_2057331878755131394.json, 图片生成/图生图/flux2-klein9b-一键渲染级材质替换_2037899783381196801.json, 图片生成/图生图/flux2klein9b一键渲染级材质替换_2044351025196306433.json, 图片生成/图生图/klein材质替换，效果好_2054807540877283329.json, 图片生成/图生图/一键局部材质替换（可指定材质）_2059874119453331457.json, 图片生成/图生图/局部材质替换+电商产品换材质+材质质感迁移+F2 Klein准确局部重绘+全节点注释_2055600232863412226.json, 图片生成/图生图/超好用🔥局部重绘-图片内指定物品材质颜色替换_2052688818792353794.json]
+members: [平台全量/FLUX 3 Image Klein 文生图_2120031107382071298.json, 平台全量/Moss-image Sft文生图_自动词优化版_2117525839586873345.json, 平台全量/Moss-image Sft文生图_自动词优化版_2117900748280393729.json, 平台全量/Moss-image Sft文生图_自动词优化版_2117904157385519105.json, 平台全量/Moss-image Sft文生图_自动词优化版_2117905542550216706.json, 平台全量/Moss-image Sft文生图_自动词优化版_2117907451457658881.json, 平台全量/Moss-image Sft文生图_自动词优化版_2118260696638119937.json, 平台全量/Moss-image Sft文生图_自动词优化版_2118263481702109185.json, 平台全量/Moss-image Sft文生图_自动词优化版_2119055314258583554.json, 平台全量/Moss-image_Sft文生图_自动词优化版_2117781182636183553.json, 平台全量/Moss_文生图高质量版_2119249577248382977.json, 平台全量/Moss_文生图高质量版_2119609749120573441.json, 平台全量/image_moss_image_t2i（道具）API V20261020_2117318099631427585.json, 平台全量/moss_image_t2i_scene_v20261020_2117283368663609346.json, 平台全量/moss_image_t2i【四视图】API V20261020_2117320813128011777.json, 平台全量/moss超写实模型_2120185855489957890.json, 数字人/数字人/MOSS sft Comfyui官方工作流文生图_2112066748353695746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_52
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/F.2klein9b一键渲染级材质替换_2054422098839392258.json、图片生成/图生图/F.2klein9b一键渲染级材质替换_2057678216738992129.json、图片生成/图生图/F2-Klein材质替换（局部重绘）_2055650299225886722.json、图片生成/图生图/F2_Klein_服饰_产品材质花纹替换_局部材质替换_电商产品换材质_材质质感迁移_局部重绘_2056197943123816449.json、图片生成/图生图/F2_Klein_服饰产品花纹替换_局部材质替换_电商产品换材质_材质迁移_局部重绘_2056537368320102402.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（平台全量/FLUX 3 Image Klein 文生图_2120031107382071298.json、平台全量/Moss-image Sft文生图_自动词优化版_2117525839586873345.json、平台全量/Moss-image Sft文生图_自动词优化版_2117900748280393729.json、平台全量/Moss-image Sft文生图_自动词优化版_2117904157385519105.json、平台全量/Moss-image Sft文生图_自动词优化版_2117905542550216706.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `BasicGuider`
+全部 17 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LayerMask: MaskGrow`
-- `LayerUtility: ImageBlend`
-- `LayerUtility: ImageMaskScaleAs`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptyFlux2LatentImage`
+- `KSampler`
+- `PrimitiveStringMultiline`
 - `SaveImage`
-- `SetLatentNoiseMask`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
-- `easy positive`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 14/15 个有
-- `Image Comparer (rgthree)` —— 13/15 个有
-- `Mask Fill Holes` —— 13/15 个有
-- `MaskPreview` —— 13/15 个有
-- `easy imageSizeBySide` —— 13/15 个有
-- `CR Text` —— 10/15 个有
-- `Masks Add` —— 10/15 个有
-- `easy sam3ImageSegmentation` —— 10/15 个有
-- `easy sam3ModelLoader` —— 10/15 个有
-- `AIO_Preprocessor` —— 8/15 个有
-- `DeepTranslatorTextNode` —— 8/15 个有
-- `easy ifElse` —— 5/15 个有
-- `easy isMaskEmpty` —— 5/15 个有
-- `Int` —— 4/15 个有
-- `SDVN Translate` —— 2/15 个有
-- `ImageConcanate` —— 1/15 个有
-- `LoraLoaderModelOnly` —— 1/15 个有
+- `ResolutionSelector` —— 16/17 个有
+- `PreviewAny` —— 15/17 个有
+- `SkipLayerGuidanceDiTSimple` —— 7/17 个有
+- `ComfySwitchNode` —— 4/17 个有
+- `CR Prompt Text` —— 3/17 个有
+- `MOSSMergePreset` —— 3/17 个有
+- `ConcatTextOfUtils` —— 2/17 个有
+- `ModelSamplingFlux` —— 1/17 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 25 | 16 - 50 | 17 | 63% |
+| Prompt 约束强度(CFG) | 3 | 1 - 3 | 17 | 83% |
+| 采样算法 | er_sde | - | 17 | 76% |
+| 调度器 | simple | - | 17 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
 
 ## 常见问题
 
@@ -75,4 +60,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 25，观测区间 16 - 50，17 个样本
+- Prompt 约束强度(CFG) 中位数 3，观测区间 1 - 3，17 个样本，取值集中（一致性 83%）
+- 采样算法 最常用 er_sde，17 个样本，一致性 76%
+- 调度器 最常用 simple，17 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）

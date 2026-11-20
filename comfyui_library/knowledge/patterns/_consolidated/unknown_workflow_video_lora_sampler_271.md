@@ -1,70 +1,86 @@
 ---
 name: unknown_workflow_video_lora_sampler_271
 type: Unknown Workflow
-frequency: 8
+frequency: 10
 level: moderate
-coverage: 0.89525
-common_nodes: [BasicGuider, BasicScheduler, BlockSparseAttention, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+coverage: 0.5796
+common_nodes: [CLIPVisionLoader, GetNode, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/反推提示词/H3单采_2106693127930212353.json, 图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json, 图片生成/图生图/H3官流（单采极速文戏）_2112910766088220674.json, 图片生成/图生图/H3高清快速出视频_2110660601948233729.json, 图片生成/图生图/道真数字人多场景通用版_2112188090025598978.json, 视频生成/图生视频/H3工作流最优解_2104970789329133569.json, 视频生成/图生视频/Minimax H3视频 完美人物替换！_2109512582699769858.json, 视频生成/文生视频/H3官流（终极版）_2105121771757334530.json]
+members: [平台全量/视频去水印去字幕_2041890719736012802.json, 数字人/数字人/Animate+light2x加速做动_2000076812296351745.json, 数字人/数字人/Wan Animate 2.2-角色替换-动作迁移-图生视频-许老师专用_1981594203375443969.json, 数字人/数字人/Wan Animate2.2换脸V1_2000858355855917057.json, 数字人/数字人/Wan-Animate视频表情动作模仿-人物替换_1970690946574807042.json, 数字人/数字人/wan2.2 animate 一张图片生成跳舞视频_1942136597947301890.json, 数字人/数字人/wanvideo_WanAnimate_角色替换工作流_1969720507606200322.json, 视频生成/图生视频/Animate优化人物一致性精准替换_1969765016436154369.json, 视频生成/图生视频/Animate优化人物一致性精准替换【人物动作表情背景】_1971382393225592834.json, 视频生成/图生视频/Animate优化颜色匹配精准替换人换脸_1971226836661420034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_271
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/反推提示词/H3单采_2106693127930212353.json、图片生成/反推提示词/H3官流（终极版）_2105139266958487554.json、图片生成/图生图/H3官流（单采极速文戏）_2112910766088220674.json、图片生成/图生图/H3高清快速出视频_2110660601948233729.json、图片生成/图生图/道真数字人多场景通用版_2112188090025598978.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/视频去水印去字幕_2041890719736012802.json、数字人/数字人/Animate+light2x加速做动_2000076812296351745.json、数字人/数字人/Wan Animate 2.2-角色替换-动作迁移-图生视频-许老师专用_1981594203375443969.json、数字人/数字人/Wan Animate2.2换脸V1_2000858355855917057.json、数字人/数字人/Wan-Animate视频表情动作模仿-人物替换_1970690946574807042.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `BlockSparseAttention`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `KSamplerSelect`
-- `LoadAudio`
+全部 10 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetNode`
+- `ImageResizeKJv2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelAttentionBackend`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
-- `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ManualSigmas` —— 6/8 个有
-- `PreviewAny` —— 6/8 个有
-- `PrimitiveStringMultiline` —— 6/8 个有
-- `CR Prompt Text` —— 4/8 个有
-- `BatchImagesNode` —— 2/8 个有
-- `CreateVideo` —— 2/8 个有
-- `ExtendIntermediateSigmas` —— 2/8 个有
-- `LTXVConcatAVLatent` —— 2/8 个有
-- `LTXVSeparateAVLatent` —— 2/8 个有
-- `MiniMaxH3LatentUpscaleBy32T8` —— 2/8 个有
-- `MiniMaxH3SigmaShift` —— 2/8 个有
-- `RH_LLMAPI_Pro_Node` —— 2/8 个有
-- `SaveVideo` —— 2/8 个有
-- `llama_cpp_instruct_adv` —— 2/8 个有
-- `llama_cpp_model_loader` —— 2/8 个有
-- `llama_cpp_parameters` —— 2/8 个有
-- `JjkText` —— 1/8 个有
-- `LayerUtility: TextJoin` —— 1/8 个有
+- `BlockifyMask` —— 9/10 个有
+- `DWPreprocessor` —— 9/10 个有
+- `DrawMaskOnImage` —— 9/10 个有
+- `FaceMaskFromPoseKeypoints` —— 9/10 个有
+- `ImageCropByMaskAndResize` —— 9/10 个有
+- `PixelPerfectResolution` —— 9/10 个有
+- `DownloadAndLoadSAM2Model` —— 8/10 个有
+- `GetImageSizeAndCount` —— 8/10 个有
+- `GrowMask` —— 8/10 个有
+- `PointsEditor` —— 8/10 个有
+- `Sam2Segmentation` —— 8/10 个有
+- `INTConstant` —— 7/10 个有
+- `ImageConcatMulti` —— 7/10 个有
+- `PreviewImage` —— 6/10 个有
+- `WanVideoTorchCompileSettings` —— 5/10 个有
+- `JWInteger` —— 4/10 个有
+- `Text` —— 4/10 个有
+- `VHS_VideoInfo` —— 4/10 个有
+- `easy cleanGpuUsed` —— 4/10 个有
+- `LayerUtility: PurgeVRAM` —— 3/10 个有
+- `WanVideoEncode` —— 3/10 个有
+- `WanVideoUni3C_ControlnetLoader` —— 3/10 个有
+- `WanVideoUni3C_embeds` —— 3/10 个有
+- `easy showAnything` —— 3/10 个有
+- `Int` —— 2/10 个有
+- `Bjornulf_ShowInt` —— 1/10 个有
+- `Bookmark (rgthree)` —— 1/10 个有
+- `Frame Select` —— 1/10 个有
+- `ImageBatchGet` —— 1/10 个有
+- `ImageFromBatch` —— 1/10 个有
+- `ImitationHueNode` —— 1/10 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/10 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/10 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/10 个有
+- `LoadRembgByBiRefNetModel` —— 1/10 个有
+- `Preview from image [Crystools]` —— 1/10 个有
+- `RembgByBiRefNet` —— 1/10 个有
+- `Textbox` —— 1/10 个有
 
 ## 典型参数
 

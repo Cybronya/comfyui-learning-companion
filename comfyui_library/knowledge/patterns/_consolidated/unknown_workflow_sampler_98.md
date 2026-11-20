@@ -3,36 +3,29 @@ name: unknown_workflow_sampler_98
 type: Unknown Workflow
 frequency: 2
 level: weak
-coverage: 1
-common_nodes: [CR Prompt Text, JWInteger, LoadImage, RunningHub OmniWeaving Loader, SaveVideo]
+coverage: 0.667
+common_nodes: [HiDreamSampler, JjkText, SaveImage]
 problems: []
 missing: []
-members: [视频生成/图生视频/OmniWeaving图像参考+视频编辑TIV2V_2042127554609422338.json, 视频生成/图生视频/OmniWeaving图生视频I2V_2042119826201649153.json]
+members: [图片生成/文生图/HiDream基本文生图工作流_1912467243102367745.json, 图片生成/文生图/HiDream文生图_1914140004744949761.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_98
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/OmniWeaving图像参考+视频编辑TIV2V_2042127554609422338.json、视频生成/图生视频/OmniWeaving图生视频I2V_2042119826201649153.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/文生图/HiDream基本文生图工作流_1912467243102367745.json、图片生成/文生图/HiDream文生图_1914140004744949761.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：100%
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
-- `CR Prompt Text`
-- `JWInteger`
-- `LoadImage`
-- `RunningHub OmniWeaving Loader`
-- `SaveVideo`
-
-**可变部分**（部分 workflow 才有）：
-- `LoadVideo` —— 1/2 个有
-- `RunningHub OmniWeaving Sampler(I2V)` —— 1/2 个有
-- `RunningHub OmniWeaving Sampler(TIV2V)` —— 1/2 个有
+- `HiDreamSampler`
+- `JjkText`
+- `SaveImage`
 
 ## 典型参数
 

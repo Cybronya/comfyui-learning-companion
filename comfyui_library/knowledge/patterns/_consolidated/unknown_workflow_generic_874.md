@@ -3,32 +3,35 @@ name: unknown_workflow_generic_874
 type: Unknown Workflow
 frequency: 4
 level: moderate
-coverage: 0.5835
-common_nodes: [OmniVoiceVoiceDesignTTS, PrimitiveStringMultiline, SaveAudioMP3]
+coverage: 0.70225
+common_nodes: [Image Comparer (rgthree), LoadImage, PreviewImage, RH_RhartImageG2ImageToImage, SaveImage]
 problems: []
 missing: []
-members: [音频生成/音频生成/MiniMax HD语音合成-文本转语音工作流_2094594740925845505.json, 音频生成/音频生成/MiniMax HD语音合成-文本转语音工作流_2109820538263789570.json, 音频生成/音频生成/OmniVoice声音设计（支持方言）_2041804410665308162.json, 音频生成/音频生成/豆包音频生成-文本转语音工作流_2094571254832525313.json]
+members: [图片生成/图生图/三维转平面效果（方便后续出矢量图）0806更新_2048443374671237122.json, 图片生成/图生图/修改比例1030更新_2116039747050237953.json, 图片生成/图生图/修改比例1030更新_2116129601851314178.json, 图片生成/文生图/全能图片G-2.0-图生图-低价渠道版_2063158914631430146.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_874
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（音频生成/音频生成/MiniMax HD语音合成-文本转语音工作流_2094594740925845505.json、音频生成/音频生成/MiniMax HD语音合成-文本转语音工作流_2109820538263789570.json、音频生成/音频生成/OmniVoice声音设计（支持方言）_2041804410665308162.json、音频生成/音频生成/豆包音频生成-文本转语音工作流_2094571254832525313.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/三维转平面效果（方便后续出矢量图）0806更新_2048443374671237122.json、图片生成/图生图/修改比例1030更新_2116039747050237953.json、图片生成/图生图/修改比例1030更新_2116129601851314178.json、图片生成/文生图/全能图片G-2.0-图生图-低价渠道版_2063158914631430146.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：58%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `OmniVoiceVoiceDesignTTS`
-- `PrimitiveStringMultiline`
-- `SaveAudioMP3`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `PreviewImage`
+- `RH_RhartImageG2ImageToImage`
+- `SaveImage`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 1/4 个有
+- `String Literal` —— 3/4 个有
+- `图像缩放V2_孤海` —— 2/4 个有
 
 ## 典型参数
 

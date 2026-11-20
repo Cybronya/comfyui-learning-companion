@@ -4,16 +4,16 @@ type: Unknown Workflow
 frequency: 2
 level: weak
 coverage: 1
-common_nodes: [LoadImage, RH_BytedanceSeedance20GlobalMiniImageToVideo, SaveVideo]
+common_nodes: [LoadImage, RH_Nano_Banana2_Gemini31Flash, RH_Nano_Banana2_Image2Image, RH_RhartImageNNb21ImageToImage, SaveImage, Text]
 problems: []
 missing: []
-members: [视频生成/图生视频/SD2.0Mini 图生视频_2071492495539789826.json, 视频生成/图生视频/Seedance 2.0 Global Mini 图生视频｜首尾帧视频｜支持4K_2097677456311414785.json]
+members: [图片生成/图生图/创意lookbook搭配_2116679010913701890.json, 图片生成/图生图/创意lookbook搭配_2116690023520235521.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_generic_1689
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/SD2.0Mini 图生视频_2071492495539789826.json、视频生成/图生视频/Seedance 2.0 Global Mini 图生视频｜首尾帧视频｜支持4K_2097677456311414785.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/创意lookbook搭配_2116679010913701890.json、图片生成/图生图/创意lookbook搭配_2116690023520235521.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：2
@@ -24,8 +24,11 @@ source: knowledge_consolidation
 
 全部 2 个 workflow 都包含：
 - `LoadImage`
-- `RH_BytedanceSeedance20GlobalMiniImageToVideo`
-- `SaveVideo`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `RH_Nano_Banana2_Image2Image`
+- `RH_RhartImageNNb21ImageToImage`
+- `SaveImage`
+- `Text`
 
 ## 典型参数
 

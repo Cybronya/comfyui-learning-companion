@@ -1,67 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_485
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.951
-common_nodes: [CLIPVisionLoader, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+frequency: 6
+level: strong
+coverage: 0.937167
+common_nodes: [BerniniConditioningReferenceSlots, CLIPLoader, CLIPTextEncode, CreateVideo, Evaluate Integers, GetImageRangeFromBatch, INTConstant, ImageResizeKJv2, KSamplerAdvanced, LoraLoaderModelOnly, PathchSageAttentionKJ, RHLLMChatNode, SimpleMath+, Text, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanContextWindowsManual]
 problems: []
 missing: []
-members: [视频生成/图生视频/MAGREF单图参考图生视频_1935517982800150530.json, 视频生成/图生视频/b站开源动漫视频生成模型 ani全能视频S_1944781306624397314.json, 视频生成/图生视频/wan2.1 MAGREF 3倍加速图生视频_1941396132272750594.json, 视频生成/图生视频/【遇见AI】wan2.1 MAGREF 多图参考视频_2073698688299524097.json, 视频生成/图生视频/电商产品360旋转_1941330850711814145.json]
+members: [平台全量/Bernini-视频去水印字幕_2080471697173602306.json, 平台全量/bernini全能视频编辑  提示词自动反推版_2078123633691684866.json, 平台全量/bernini视频编辑_2080476205601607682.json, 平台全量/超强bernini一键去除字幕水印 ！14b满血版_2074508004959023106.json, 平台全量/超快速bernini一键去除字幕水印 ！_2063549104537563137.json, 平台全量/超快速bernini一键去除字幕水印 ！_2073345710306902016.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_485
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MAGREF单图参考图生视频_1935517982800150530.json、视频生成/图生视频/b站开源动漫视频生成模型 ani全能视频S_1944781306624397314.json、视频生成/图生视频/wan2.1 MAGREF 3倍加速图生视频_1941396132272750594.json、视频生成/图生视频/【遇见AI】wan2.1 MAGREF 多图参考视频_2073698688299524097.json、视频生成/图生视频/电商产品360旋转_1941330850711814145.json）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（平台全量/Bernini-视频去水印字幕_2080471697173602306.json、平台全量/bernini全能视频编辑  提示词自动反推版_2078123633691684866.json、平台全量/bernini视频编辑_2080476205601607682.json、平台全量/超强bernini一键去除字幕水印 ！14b满血版_2074508004959023106.json、平台全量/超快速bernini一键去除字幕水印 ！_2063549104537563137.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：6
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `LoadImage`
+全部 6 个 workflow 都包含：
+- `BerniniConditioningReferenceSlots`
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CreateVideo`
+- `Evaluate Integers`
+- `GetImageRangeFromBatch`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `RHLLMChatNode`
+- `SimpleMath+`
+- `Text`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
+- `VHS_VideoInfoLoaded`
+- `WanContextWindowsManual`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 4/5 个有
-- `LoadWanVideoT5TextEncoder` —— 4/5 个有
-- `PreviewImage` —— 4/5 个有
-- `WanVideoEnhanceAVideo` —— 4/5 个有
-- `WanVideoTextEncode` —— 4/5 个有
-- `WanVideoTorchCompileSettings` —— 4/5 个有
-- `DF_Integer` —— 3/5 个有
-- `SimpleMath+` —— 3/5 个有
-- `WanVideoSLG` —— 3/5 个有
-- `WanVideoTeaCache` —— 3/5 个有
-- `ImageConcatMulti` —— 2/5 个有
-- `WanVideoExperimentalArgs` —— 2/5 个有
-- `easy imageRemBg` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
-- `GetImageSize` —— 1/5 个有
-- `JjkText` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `SaveImage` —— 1/5 个有
-- `WanVideoSetBlockSwap` —— 1/5 个有
-- `WanVideoSetLoRAs` —— 1/5 个有
-- `WanVideoTextEncodeCached` —— 1/5 个有
-- `easy cleanGpuUsed` —— 1/5 个有
+- `Label (rgthree)` —— 4/6 个有
+- `Seed (rgthree)` —— 4/6 个有
+- `BerniniPromptEnhancer` —— 2/6 个有
+- `GetNode` —— 2/6 个有
+- `RH_Translator` —— 2/6 个有
+- `SetNode` —— 2/6 个有
+- `StringFunction|pysssss` —— 2/6 个有
+- `TTResolutionSelector` —— 2/6 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 6 | 67% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 6 | 100% |
+| 采样算法 | 1 | 1 - 1 | 6 | 100% |
+| 调度器 | euler | - | 6 | 100% |
+| 重绘幅度 | simple | - | 6 | 100% |
 
 ## 常见问题
 
@@ -69,4 +71,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，6 个样本，一致性 67%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，6 个样本，一致性 100%
+- 重绘幅度 最常用 simple，6 个样本，一致性 100%

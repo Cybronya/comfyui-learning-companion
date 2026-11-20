@@ -1,71 +1,56 @@
 ---
 name: text_to_image_sampler_clip_unet_177
 type: Text To Image
-frequency: 3
+frequency: 4
 level: moderate
-coverage: 0.888
-common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, EmptyLatentImage, FluxGuidance, KSampler, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.97725
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux Krea + LoRA 写实 _ 动漫_1951094193005506562.json, 图片生成/图生图/商业级CAD一键彩平_1896564248325890049.json, 图片生成/文生图/Flux 文生图 两种方法对比  (1Girl 为例)_1824358791352881153.json]
+members: [图片生成/文生图/🦖可正可邪-Z-IMAGE_1993956349084188673.json, 平台全量/Anima-2.9B-preview-v1 文生图_2094062510424018946.json, 平台全量/ComfyUI模特生成工作流_电商模特_模特自由_AI模特生成器_2022529060114534402.json, 平台全量/api-z-image-qufuxiaozi_1995333151222378498.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_177
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/图生图/Flux Krea + LoRA 写实 _ 动漫_1951094193005506562.json、图片生成/图生图/商业级CAD一键彩平_1896564248325890049.json、图片生成/文生图/Flux 文生图 两种方法对比  (1Girl 为例)_1824358791352881153.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/🦖可正可邪-Z-IMAGE_1993956349084188673.json、平台全量/Anima-2.9B-preview-v1 文生图_2094062510424018946.json、平台全量/ComfyUI模特生成工作流_电商模特_模特自由_AI模特生成器_2022529060114534402.json、平台全量/api-z-image-qufuxiaozi_1995333151222378498.json）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：4
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
 - `KSampler`
-- `KSamplerSelect`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncodeFlux` —— 2/3 个有
-- `Image Comparer (rgthree)` —— 2/3 个有
-- `LoraLoader` —— 2/3 个有
-- `PreviewImage` —— 2/3 个有
-- `SDXLEmptyLatentSizePicker+` —— 2/3 个有
-- `AIO_Preprocessor` —— 1/3 个有
-- `CheckpointLoaderSimple` —— 1/3 个有
-- `ConditioningZeroOut` —— 1/3 个有
-- `ControlNetApplyAdvanced` —— 1/3 个有
-- `ControlNetLoader` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `Lora Loader Stack (rgthree)` —— 1/3 个有
+- `ConditioningZeroOut` —— 3/4 个有
+- `Int` —— 2/4 个有
+- `AnyAspectRatio` —— 1/4 个有
+- `CompressImages` —— 1/4 个有
+- `Seed (rgthree)` —— 1/4 个有
+- `Text _O` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 896x1152 (0.78) | - | 3 | 67% |
-| 高度 | 1 | 1 - 896 | 3 | 0% |
-| 采样步数 | 20 | 20 - 20 | 3 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 8 | 3 | 1% |
-| 采样算法 | euler | - | 3 | 100% |
-| 调度器 | simple | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| LoRA 模型强度 | 0.94 | - | 2 | 94% |
-| LoRA 文本强度 | 1 | - | 2 | 100% |
-| ControlNet 权重 | 0.7 | - | 1 | 100% |
+| 采样步数 | 12 | 10 - 30 | 4 | 48% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 4 | 26% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 75% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 1116 | 696 - 2416 | 4 | 52% |
+| 高度 | 1488 | 1080 - 1920 | 4 | 80% |
 
 ## 常见问题
 
@@ -73,12 +58,10 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 最常用 896x1152 (0.78)，3 个样本，一致性 67%
-- 高度 中位数 1，观测区间 1 - 896，3 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 20，观测区间 20 - 20，3 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 8，3 个样本，取值分散，一致性仅 1%
-- 采样算法 最常用 euler，3 个样本，一致性 100%
-- 调度器 最常用 simple，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 0.94，样本不足，未给区间，2 个样本，取值集中（一致性 94%）
-- LoRA 文本强度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 12，观测区间 10 - 30，4 个样本，取值分散，一致性仅 48%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，4 个样本，取值分散，一致性仅 26%
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 75%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1116，观测区间 696 - 2416，4 个样本
+- 高度 中位数 1488，观测区间 1080 - 1920，4 个样本
