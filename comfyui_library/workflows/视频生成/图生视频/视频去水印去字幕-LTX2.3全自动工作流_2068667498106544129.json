@@ -4099,7 +4099,7 @@
 			],
 			"color":"#1f1f48",
 			"widgets_values":[
-				"ltx2.3-ic-watermREDACTED000000000000000.safetensors",
+				"ltx2.3-ic-watermark-remove-general-lora.safetensors",
 				0.7
 			],
 			"inputs":[
