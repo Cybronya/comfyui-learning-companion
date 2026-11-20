@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_411
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8772
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8734
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen Image 2.1文生图与图像编辑综合工作流，一站式创作新方案_2106507657149509633.json, 图片生成/文生图/Qwen Image 2.1文生图图像编辑综合工作流，效果出色多场景覆盖方案_2105734182998728706.json, 图片生成/文生图/Qwen Image2.1综合工作流｜文生图图像编辑换背景 AI小王子出品_2105552519928836097.json, 图片生成/文生图/Qwen Image2.1重磅综合工作流｜文生图与图像编辑高效创作新纪元_2106201754592436226.json, 图片生成/文生图/图生图任意角度转换双图版｜Qwen Image2.1 多角度出图更立体_2105540395974348802.json]
+members: [视频生成/图生视频/H3双采口播工作流照片加文案自动配音数字人，图生视频数字人生成工具_2106080341093076994.json, 视频生成/图生视频/H3双采口播数字人 照片加文案自动配音视频生成_2098821076301205505.json, 视频生成/图生视频/MiniMax H3上下文参考视频加图生视频融合运镜与角色工作流方案_2106081882151669762.json, 视频生成/图生视频/商品图一键变广告视频｜Seedance 1.5 Pro运镜带货短片_2106266731076476929.json, 视频生成/文生视频/H3 MAX智能运镜工作流AI看图自动运镜，文生视频图生视频静图动态化工具_2106083477107077121.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_411
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/Qwen Image 2.1文生图与图像编辑综合工作流，一站式创作新方案_2106507657149509633.json、图片生成/文生图/Qwen Image 2.1文生图图像编辑综合工作流，效果出色多场景覆盖方案_2105734182998728706.json、图片生成/文生图/Qwen Image2.1综合工作流｜文生图图像编辑换背景 AI小王子出品_2105552519928836097.json、图片生成/文生图/Qwen Image2.1重磅综合工作流｜文生图与图像编辑高效创作新纪元_2106201754592436226.json、图片生成/文生图/图生图任意角度转换双图版｜Qwen Image2.1 多角度出图更立体_2105540395974348802.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/H3双采口播工作流照片加文案自动配音数字人，图生视频数字人生成工具_2106080341093076994.json、视频生成/图生视频/H3双采口播数字人 照片加文案自动配音视频生成_2098821076301205505.json、视频生成/图生视频/MiniMax H3上下文参考视频加图生视频融合运镜与角色工作流方案_2106081882151669762.json、视频生成/图生视频/商品图一键变广告视频｜Seedance 1.5 Pro运镜带货短片_2106266731076476929.json、视频生成/文生视频/H3 MAX智能运镜工作流AI看图自动运镜，文生视频图生视频静图动态化工具_2106083477107077121.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
@@ -30,9 +30,7 @@ source: knowledge_consolidation
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
-- `SaveImage`
-- `TextEncodeQwenImage21`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -40,15 +38,18 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `AnySwitch` —— 4/5 个有
-- `Anything Everywhere` —— 4/5 个有
-- `GetNode` —— 4/5 个有
-- `Image Comparer (rgthree)` —— 4/5 个有
-- `ImageScaleToTotalPixels` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `SetNode` —— 4/5 个有
-- `Text Multiline` —— 4/5 个有
-- `VAEEncode` —— 4/5 个有
+- `CreateVideo` —— 4/5 个有
+- `PrimitiveStringMultiline` —— 4/5 个有
+- `RHMiniMaxH3ModelLoader` —— 4/5 个有
+- `RHMiniMaxH3TextEncoderLoader` —— 4/5 个有
+- `RHMiniMaxH3VAELoader` —— 4/5 个有
+- `SaveImage` —— 4/5 个有
+- `RHMiniMaxH3RefGen` —— 3/5 个有
+- `RHMiniMaxH3VideoGen` —— 2/5 个有
+- `CR Prompt Text` —— 1/5 个有
+- `OmniVoiceVoiceDesignTTS` —— 1/5 个有
+- `RH_BytedanceDoubaoSeedAudio10` —— 1/5 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 1/5 个有
 
 ## 典型参数
 

@@ -2,97 +2,102 @@
 name: text_to_image_lora_sampler_clip_579
 type: Text To Image
 frequency: 3
-level: weak
-coverage: 0.878
-common_nodes: [Any Switch (rgthree), CFGGuider, CLIPLoader, CLIPTextEncode, CR Text Concatenate, ColorMatch, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GH_ImageVideoComparer, GetImageSize, ImageScaleToTotalPixels, ImageSharpen, JsonExtractString, KSampler, KSamplerSelect, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewAny, PreviewImage, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, Seed (rgthree), SeedVR2, SeedVR2BlockSwap, SeedVR2ExtraArgs, TTResolutionSelector, TextConcatenator, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAEEncode, VAELoader, 孤海注释]
+level: strong
+coverage: 0.939333
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CannyEdgePreprocessor, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, DWPreprocessor, EmptyLTXVLatentVideo, EmptyLatentImage, GemmaAPITextEncode, GetImageSize, GetVideoComponents, ImageScale, ImageToMask, JjkText, KSampler, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXFloatToInt, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVDilateVideoMask, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVLaplacianPyramidBlend, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LoadImage, LoadVideo, LoraLoaderModelOnly, ManualSigmas, MaskToImage, PrimitiveBoolean, PrimitiveString, RandomNoise, SamplerCustomAdvanced, SaveVideo, SimpleMath+, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen_image2.1+Z_image+Krea2三模型文生图合集工作流_2104673944501575681.json, 图片生成/文生图/Qwen_image2.1、Z_image、Krea2_文生图工作流合集_2103746262452498433.json, 图片生成/文生图/Qwen_image2.1、Z_image、Krea2文生图合集｜三大模型一站式出图_2104485822958489602.json]
+members: [视频生成/图生视频/LTX2.3图生视频人物动作迁移 高精度视频角色动态转换方案_2092548572561633282.json, 视频生成/图生视频/人物动作迁移视频LTX2.3图生视频工作流_2088387000385761281.json, 视频生成/图生视频/人物动作迁移视频｜LTX2.3图生视频工作流_2088357506513985538.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_579
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/Qwen_image2.1+Z_image+Krea2三模型文生图合集工作流_2104673944501575681.json、图片生成/文生图/Qwen_image2.1、Z_image、Krea2_文生图工作流合集_2103746262452498433.json、图片生成/文生图/Qwen_image2.1、Z_image、Krea2文生图合集｜三大模型一站式出图_2104485822958489602.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3图生视频人物动作迁移 高精度视频角色动态转换方案_2092548572561633282.json、视频生成/图生视频/人物动作迁移视频LTX2.3图生视频工作流_2088387000385761281.json、视频生成/图生视频/人物动作迁移视频｜LTX2.3图生视频工作流_2088357506513985538.json）
 
 - **类型**：Text To Image
 - **样本数**：3
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：88%
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `Any Switch (rgthree)`
 - `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text Concatenate`
-- `ColorMatch`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
+- `CannyEdgePreprocessor`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `DWPreprocessor`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `Flux2Scheduler`
-- `GH_ImageVideoComparer`
+- `GemmaAPITextEncode`
 - `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `ImageSharpen`
-- `JsonExtractString`
+- `GetVideoComponents`
+- `ImageScale`
+- `ImageToMask`
+- `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXFloatToInt`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVDilateVideoMask`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVLaplacianPyramidBlend`
+- `LTXVSeparateAVLatent`
+- `LTXVTiledVAEDecode`
+- `LoadImage`
+- `LoadVideo`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewAny`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
+- `ManualSigmas`
+- `MaskToImage`
+- `PrimitiveBoolean`
+- `PrimitiveString`
 - `RandomNoise`
-- `ReferenceLatent`
 - `SamplerCustomAdvanced`
-- `SaveImage`
-- `Seed (rgthree)`
-- `SeedVR2`
-- `SeedVR2BlockSwap`
-- `SeedVR2ExtraArgs`
-- `TTResolutionSelector`
-- `TextConcatenator`
-- `TextEncodeQwenImage21`
-- `TextGenerate`
+- `SaveVideo`
+- `SimpleMath+`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `JjkText` —— 2/3 个有
-- `solarL_SaveImagesToZip` —— 2/3 个有
-- `忽略多组孤海` —— 1/3 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 1024 | 3 | 0% |
-| 高度 | 80 | 80 - 1024 | 3 | 0% |
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 3 | 51% |
-| 采样算法 | er_sde | - | 3 | 67% |
-| 调度器 | beta | - | 3 | 67% |
+| 宽度 | 80 | 80 - 80 | 3 | 100% |
+| 高度 | 80 | 80 - 80 | 3 | 100% |
+| 采样步数 | 4 | 4 - 4 | 3 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 3 | 100% |
+| 采样算法 | er_sde | - | 3 | 100% |
+| 调度器 | beta | - | 3 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 1024，3 个样本，取值分散，一致性仅 0%
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，3 个样本
-- 采样算法 最常用 er_sde，3 个样本，一致性 67%
-- 调度器 最常用 beta，3 个样本，一致性 67%
+- 宽度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，3 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，3 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，3 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，3 个样本，一致性 100%
+- 调度器 最常用 beta，3 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 高发问题（8/3 个样本）：Steps较低可能导致细节不足
+- 高发问题（3/3 个样本）：Steps较低可能导致细节不足

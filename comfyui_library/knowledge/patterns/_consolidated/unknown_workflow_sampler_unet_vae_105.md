@@ -1,76 +1,77 @@
 ---
 name: unknown_workflow_sampler_unet_vae_105
 type: Unknown Workflow
-frequency: 11
+frequency: 10
 level: moderate
-coverage: 0.840909
-common_nodes: [BasicScheduler, CLIPLoader, ComfyMathExpression, ConditioningZeroOut, CreateVideo, KSamplerSelect, LoadImage, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+coverage: 0.8144
+common_nodes: [ConditioningZeroOut, DualCLIPLoader, EmptyAceStep1.5LatentAudio, KSampler, ModelSamplingAuraFlow, SaveAudioMP3, TextEncodeAceStepAudio1.5, UNETLoader, VAEDecodeAudio]
+problems: [发现KSampler但没有VAEDecode, Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/MiniMaxh3黑科技加速+星光2.6高清放大融合工作流_2100405446006890498.json, 平台全量/MiniMaxh3黑科技加速+星光2.6高清放大融合工作流_2100494159177150466.json, 平台全量/【MINIMAX-H3教学】SelfLift二采_2117192175418175490.json, 平台全量/【MINIMAX-H3教学】SelfLift二采（低显存兼容）_2117222656276783106.json, 视频生成/图生视频/DsiwaV2 小脸高动态selflift_2100417664513568770.json, 视频生成/图生视频/FastH3 V2 SelfLift 1080P_2100495010562134018.json, 视频生成/图生视频/超自然超细节-H3的服装展示(dasiwa)_2101210281803337729.json, 视频生成/文生视频/DsiwaV2 +selflift二采+小脸优化_2101450792984207362.json, 视频生成/文生视频/H3 dasiwaV3+高动态支持+特殊运镜_2107756287479074818.json, 视频生成/文生视频/H3 dasiwaV3+高动态支持+特殊运镜_2108505430593986562.json, 视频生成/文生视频/MiniMaxh3黑科技加速+星光2.6高清放大融合工作流_2099681234111787009.json]
+members: [音频生成/音频生成/Acestep-xl-turbo音乐歌曲生成V1_2042470485371396097.json, 音频生成/音频生成/Acestep-xl-turbo音乐歌曲生成V1_2044010905905668097.json, 音频生成/音频生成/Acestep-xl-turbo音乐歌曲自动生成器_2042813080727461890.json, 音频生成/音频生成/Acestep-xl音乐生成_2043108252040306689.json, 音频生成/音频生成/acestep-v15-xl-turbo 音乐歌曲生成  Acestep-xl-turbo 开源霸主_2042573351738155009.json, 音频生成/音频生成/audio_ace_step_1_5_split_2018991197309636610.json, 音频生成/音频生成/【遇见AI】ace-step-1.5音乐生成_2019270577105674242.json, 音频生成/音频生成/一键生成音乐，效果堪比SUNO!_2047582479183257601.json, 音频生成/音频生成/手_自动歌词-音乐歌曲生成Acestep-xl-turbo_2043000518099869697.json, 音频生成/音频生成/最新Acestep-xl-turbo音乐歌曲生成_2042652525186256898.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_105
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/MiniMaxh3黑科技加速+星光2.6高清放大融合工作流_2100405446006890498.json、平台全量/MiniMaxh3黑科技加速+星光2.6高清放大融合工作流_2100494159177150466.json、平台全量/【MINIMAX-H3教学】SelfLift二采_2117192175418175490.json、平台全量/【MINIMAX-H3教学】SelfLift二采（低显存兼容）_2117222656276783106.json、视频生成/图生视频/DsiwaV2 小脸高动态selflift_2100417664513568770.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（音频生成/音频生成/Acestep-xl-turbo音乐歌曲生成V1_2042470485371396097.json、音频生成/音频生成/Acestep-xl-turbo音乐歌曲生成V1_2044010905905668097.json、音频生成/音频生成/Acestep-xl-turbo音乐歌曲自动生成器_2042813080727461890.json、音频生成/音频生成/Acestep-xl音乐生成_2043108252040306689.json、音频生成/音频生成/acestep-v15-xl-turbo 音乐歌曲生成  Acestep-xl-turbo 开源霸主_2042573351738155009.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：10
 - **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
+全部 10 个 workflow 都包含：
 - `ConditioningZeroOut`
-- `CreateVideo`
-- `KSamplerSelect`
-- `LoadImage`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
-- `SaveVideo`
+- `DualCLIPLoader`
+- `EmptyAceStep1.5LatentAudio`
+- `KSampler`
+- `ModelSamplingAuraFlow`
+- `SaveAudioMP3`
+- `TextEncodeAceStepAudio1.5`
 - `UNETLoader`
-- `VAEDecode`
 - `VAEDecodeAudio`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 10/11 个有
-- `MiniMaxChunkFeedForward` —— 9/11 个有
-- `MiniMaxLowVRAMAttention` —— 9/11 个有
-- `ModelPreviewOverrideKJ` —— 9/11 个有
-- `H3SigmaRefiner` —— 8/11 个有
-- `MiniMaxH3ReferenceToVideo` —— 8/11 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/11 个有
-- `MiniMaxH3SigmaShift` —— 6/11 个有
-- `SelfLiftAvatarH3Sampler` —— 6/11 个有
-- `easy seed` —— 6/11 个有
-- `ModelAttentionBackend` —— 5/11 个有
-- `SelfLiftH3Sampler` —— 5/11 个有
-- `LoadAudio` —— 4/11 个有
-- `JWInteger` —— 3/11 个有
-- `MiniMaxH3TurboLoRA` —— 3/11 个有
-- `RH_Astra` —— 3/11 个有
-- `SaveVideoNode` —— 3/11 个有
-- `easy MiniMaxH3ReferenceToVideoBridge` —— 3/11 个有
-- `easy cleanGpuUsed` —— 3/11 个有
-- `BlockSparseAttention` —— 2/11 个有
-- `Int` —— 2/11 个有
-- `LoraLoaderBypassModelOnly` —— 2/11 个有
+- `VAELoader` —— 9/10 个有
+- `CR Prompt Text` —— 8/10 个有
+- `PreviewAny` —— 7/10 个有
+- `RegexExtract` —— 7/10 个有
+- `easy anythingIndexSwitch` —— 7/10 个有
+- `RH_LLMAPI_Pro_Node` —— 6/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `GetNode` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `Label (rgthree)` —— 1/10 个有
+- `RHHiddenNodes` —— 1/10 个有
+- `SetNode` —— 1/10 个有
+- `ShellAgentPluginOutputText` —— 1/10 个有
+- `easy cleanGpuUsed` —— 1/10 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 50 | 10 | 1% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.2 | 10 | 94% |
+| 采样算法 | euler | - | 10 | 90% |
+| 调度器 | simple | - | 10 | 90% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| 发现KSampler但没有VAEDecode | 10/10 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+| Steps较低可能导致细节不足 | 8/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 50，10 个样本，取值分散，一致性仅 1%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.2，10 个样本，取值集中（一致性 94%）
+- 采样算法 最常用 euler，10 个样本，一致性 90%
+- 调度器 最常用 simple，10 个样本，一致性 90%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 高发问题（10/10 个样本）：发现KSampler但没有VAEDecode
+- 高发问题（8/10 个样本）：Steps较低可能导致细节不足

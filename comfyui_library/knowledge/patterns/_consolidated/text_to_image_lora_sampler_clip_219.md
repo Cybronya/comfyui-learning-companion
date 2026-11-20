@@ -2,75 +2,80 @@
 name: text_to_image_lora_sampler_clip_219
 type: Text To Image
 frequency: 9
-level: moderate
-coverage: 0.947889
-common_nodes: [CLIPTextEncode, CR Aspect Ratio, CR Text, DualCLIPLoader, EmptyLatentImage, KSampler, LoraLoader, SaveImage, Text Load Line From File, UNETLoader, VAEDecode, VAELoader, easy forLoopEnd, easy forLoopStart]
-problems: []
+level: strong
+coverage: 0.806889
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/FLUX-批量提示词生图+高清放大_1986280122842054657.json, 图片生成/文生图/Flux 文生图（批量提示词载入）_1985473405493329922.json, 图片生成/文生图/Flux文生图批量提示词载入生成工作流_1999783577959137282.json, 图片生成/文生图/Flux文生图电商模特生成_2003068281999302658.json, 图片生成/文生图/Flux文生图（批量载入提示词，批量生成）_1962501033920446466.json, 图片生成/文生图/Flux文生图，电商模特生成_1971808932454985729.json, 图片生成/文生图/flux文生图工作流（可批量）_1981980642160320514.json, 图片生成/文生图/flux文生图工作流（可批量）_2016353965889294337.json, 图片生成/文生图/文生图_2092885896050855937.json]
+members: [图片生成/文生图/GI2.5 Sunburst文生图加图生图集合流全能图片G2.5 二合一方案_2109407073535619073.json, 图片生成/文生图/GI2.5 Sunburst文生图图生图集合流｜新奇创意一把抓，文生图图生图双模式_2100484050002735106.json, 图片生成/文生图/MJ悠船V8.2美学艺术图像模型 文生图图生图创作_2099916811176341505.json, 图片生成/文生图/全能图片G-Image-2.5 Flare轻量快速版 文生图图生图编辑_2098705852541792258.json, 图片生成/文生图/全能图片G-Image-2.5 Sunburst高精旗舰版 文生图图生图编辑_2098702467142868994.json, 图片生成/文生图/美学艺术图像V8.2｜MJ悠船文生图+图生图赛博朋克_2094046651701874690.json, 图片生成/文生图/美学艺术图像模型｜MJ悠船V8.2文生图+图生图_2093840807345348609.json, 数字人/数字人/G Image 2.5全家桶 文生图与图像编辑多功能集成_2098292790764589058.json, 数字人/数字人/G Image 2.5全能图片 高一致性美学文生图与图像编辑_2098286878167490562.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_219
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/FLUX-批量提示词生图+高清放大_1986280122842054657.json、图片生成/文生图/Flux 文生图（批量提示词载入）_1985473405493329922.json、图片生成/文生图/Flux文生图批量提示词载入生成工作流_1999783577959137282.json、图片生成/文生图/Flux文生图电商模特生成_2003068281999302658.json、图片生成/文生图/Flux文生图（批量载入提示词，批量生成）_1962501033920446466.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/文生图/GI2.5 Sunburst文生图加图生图集合流全能图片G2.5 二合一方案_2109407073535619073.json、图片生成/文生图/GI2.5 Sunburst文生图图生图集合流｜新奇创意一把抓，文生图图生图双模式_2100484050002735106.json、图片生成/文生图/MJ悠船V8.2美学艺术图像模型 文生图图生图创作_2099916811176341505.json、图片生成/文生图/全能图片G-Image-2.5 Flare轻量快速版 文生图图生图编辑_2098705852541792258.json、图片生成/文生图/全能图片G-Image-2.5 Sunburst高精旗舰版 文生图图生图编辑_2098702467142868994.json…）
 
 - **类型**：Text To Image
 - **样本数**：9
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **可信度**：强结论
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
 全部 9 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Aspect Ratio`
-- `CR Text`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
+- `JjkText`
 - `KSampler`
-- `LoraLoader`
+- `LoadImage`
+- `LoraLoaderModelOnly`
+- `PreviewImage`
 - `SaveImage`
-- `Text Load Line From File`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy forLoopEnd`
-- `easy forLoopStart`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 5/9 个有
-- `CLIPLoader` —— 1/9 个有
-- `Image Comparer (rgthree)` —— 1/9 个有
-- `UltimateSDUpscale` —— 1/9 个有
-- `UpscaleModelLoader` —— 1/9 个有
+- `PlaySound|pysssss` —— 5/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/9 个有
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 4/9 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 4/9 个有
+- `RH_RhartImageG25SunburstTextToImage` —— 4/9 个有
+- `RH_RhartImageG25OfficialTokenFlareEdit` —— 3/9 个有
+- `RH_RhartImageG25OfficialTokenSunburstEdit` —— 3/9 个有
+- `RH_YouchuanTextToImageV82Fast` —— 3/9 个有
+- `Image Comparer (rgthree)` —— 2/9 个有
+- `MuyeTextEditOutput` —— 2/9 个有
+- `RH_RhartImageG25OfficialTokenFlareTextToImage` —— 2/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 9 | 100% |
-| Prompt 约束强度(CFG) | 3.5 | 1 - 3.5 | 9 | 48% |
-| 采样算法 | dpmpp_2m | - | 9 | 89% |
-| 调度器 | sgm_uniform | - | 9 | 100% |
+| 采样步数 | 4 | 4 - 4 | 9 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 9 | 100% |
+| 采样算法 | er_sde | - | 9 | 100% |
+| 调度器 | beta | - | 9 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
-| 宽度 | 896 | 512 - 896 | 9 | 80% |
-| 高度 | 1152 | 512 - 1152 | 9 | 74% |
-| LoRA 模型强度 | 0.6 | 0.6 - 1 | 9 | 80% |
-| LoRA 文本强度 | 1 | 1 - 1 | 9 | 100% |
+| 宽度 | 80 | 80 - 80 | 9 | 100% |
+| 高度 | 80 | 80 - 80 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 9/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，9 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 3.5，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 48%
-- 采样算法 最常用 dpmpp_2m，9 个样本，一致性 89%
-- 调度器 最常用 sgm_uniform，9 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，9 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，9 个样本，一致性 100%
+- 调度器 最常用 beta，9 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 宽度 中位数 896，观测区间 512 - 896，9 个样本，取值集中（一致性 80%）
-- 高度 中位数 1152，观测区间 512 - 1152，9 个样本
-- LoRA 模型强度 中位数 0.6，观测区间 0.6 - 1，9 个样本，取值集中（一致性 80%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，9 个样本，取值集中（一致性 100%）
+- 高发问题（9/9 个样本）：Steps较低可能导致细节不足

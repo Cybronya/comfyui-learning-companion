@@ -1,90 +1,61 @@
 ---
 name: unknown_workflow_sampler_clip_unet_57
 type: Unknown Workflow
-frequency: 16
-level: strong
-coverage: 0.915625
-common_nodes: [CFGGuider, CLIPTextEncode, CR Text, DualCLIPLoader, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, ShowText|pysssss, UNETLoader, VAEDecodeTiled, VAELoaderKJ]
+frequency: 15
+level: moderate
+coverage: 0.9236
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSamplerAdvanced, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-VBVR逻辑优化-图生视频-AIGC大赏_2042489551154847745.json, 视频生成/图生视频/LTX2.3-图生视频 人物一致性大概率字幕去除增强版x3长视频生成短剧漫剧视频无限生成_2030260940695932930.json, 视频生成/图生视频/LTX2.3-图生视频 人物一致性字幕去除增强版x3长视频生成短剧视频无限生成_2030069604189474818.json, 视频生成/图生视频/LTX2.3-图生视频 字幕去除增强版 人物一致性长视频生成短剧视频无限生成_2059604648729858049.json, 视频生成/图生视频/LTX2.3-图生视频 字幕去除增强版 人物一致性长视频生成短剧视频无限生成_2080253203614097410.json, 视频生成/图生视频/LTX2.3-图生视频 高清极速优化增强版 长视频_2031233763203620866.json, 视频生成/图生视频/LTX2.3-图生视频-AIGC大赏_2033437706583281665.json, 视频生成/图生视频/LTX2.3-图生视频-去台词文字去字幕中文提示词声音配音视频图生视频_2029912263112531970.json, 视频生成/图生视频/LTX2.3-图生视频（大概率去台词文字修订版V2）_2029873778003550210.json, 视频生成/图生视频/LTX2.3-图生视频（大概率去台词文字修订版）_2029827263906193410.json, 视频生成/图生视频/LTX2.3-图生视频（强一致性，高概率去台词修订版V3）_2029951911398477826.json, 视频生成/图生视频/LTX2.3视频无限生成 人物一致性_2062874922061484033.json, 视频生成/图生视频/LTX2.3视频无限生成 人物一致性_2065072561171550210.json, 视频生成/图生视频/LTX2.3视频无限生成 人物一致性图生视频_2081278519476314114.json, 视频生成/图生视频/短视频无限生成+人物一致性（LTX2.3）_2060674924032905217.json, 视频生成/文生视频/声色俱全！LTX2.3-图生视频-匹配原图比例-高质量音视频！自定义Lora_2031651024238288898.json]
+members: [图片生成/文生图/Z-image-turbo与base模型融合文生图_2018686787765407745.json, 图片生成/文生图/Z-image-造相增强随机性-蓝色多脑盒_1999680352287326209.json, 图片生成/文生图/Z-image文生图Beyond Reality 人像写真_2003868030209826818.json, 图片生成/文生图/Z-image文生图（加强随机性）_1999686713578487809.json, 图片生成/文生图/Z-image欧美人像-文生图_2043349863571660801.json, 图片生成/文生图/krea2-感性质感文生图_2077573493826347010.json, 图片生成/文生图/krea2-成熟之美文生图_2077737335516651521.json, 图片生成/文生图/krea2-混血女模文生图，_2085359376507957250.json, 图片生成/文生图/krea2-纤姿文生图_2091439477406396417.json, 图片生成/文生图/krea2-肌肉男身段文生图_2099416655523827714.json, 图片生成/文生图/【krea2-Anima】文生图_2077588539222618113.json, 图片生成/文生图/【krea2-turbo-bf16】Bkz人像摄影应用_2082316590745477122.json, 图片生成/文生图/【krea2-turbo-bf16】Bkz人像摄影应用_2098212483956822017.json, 视频生成/文生视频/krea2-感性质感文生图_api_2077744663007682562.json, 视频生成/文生视频/krea2-黑珍珠文生图_2078481829623062530.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_57
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-VBVR逻辑优化-图生视频-AIGC大赏_2042489551154847745.json、视频生成/图生视频/LTX2.3-图生视频 人物一致性大概率字幕去除增强版x3长视频生成短剧漫剧视频无限生成_2030260940695932930.json、视频生成/图生视频/LTX2.3-图生视频 人物一致性字幕去除增强版x3长视频生成短剧视频无限生成_2030069604189474818.json、视频生成/图生视频/LTX2.3-图生视频 字幕去除增强版 人物一致性长视频生成短剧视频无限生成_2059604648729858049.json、视频生成/图生视频/LTX2.3-图生视频 字幕去除增强版 人物一致性长视频生成短剧视频无限生成_2080253203614097410.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/文生图/Z-image-turbo与base模型融合文生图_2018686787765407745.json、图片生成/文生图/Z-image-造相增强随机性-蓝色多脑盒_1999680352287326209.json、图片生成/文生图/Z-image文生图Beyond Reality 人像写真_2003868030209826818.json、图片生成/文生图/Z-image文生图（加强随机性）_1999686713578487809.json、图片生成/文生图/Z-image欧美人像-文生图_2043349863571660801.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：强结论
+- **样本数**：15
+- **可信度**：中等可信
 - **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `CFGGuider`
+全部 15 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Text`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `GetImageSize`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVChunkFeedForward`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `ManualSigmas`
-- `ModelPatchTorchSettings`
-- `PathchSageAttentionKJ`
-- `RandomNoise`
-- `ResizeImagesByLongerEdge`
-- `SamplerCustomAdvanced`
-- `ShowText|pysssss`
+- `EmptyLatentImage`
+- `KSamplerAdvanced`
+- `SaveImage`
 - `UNETLoader`
-- `VAEDecodeTiled`
-- `VAELoaderKJ`
+- `VAEDecode`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `llama_cpp_instruct_adv` —— 15/16 个有
-- `llama_cpp_model_loader` —— 15/16 个有
-- `VHS_VideoCombine` —— 14/16 个有
-- `PrimitiveInt` —— 13/16 个有
-- `ImageScale` —— 10/16 个有
-- `easy cleanGpuUsed` —— 10/16 个有
-- `GetNode` —— 7/16 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/16 个有
-- `SetNode` —— 7/16 个有
-- `LTXVCropGuides` —— 6/16 个有
-- `LTXVLatentUpsampler` —— 6/16 个有
-- `LTXVScheduler` —— 6/16 个有
-- `LatentUpscaleModelLoader` —— 6/16 个有
-- `LoraLoaderModelOnly` —— 6/16 个有
-- `ImageScaleBy` —— 4/16 个有
-- `ImpactInt` —— 4/16 个有
-- `RHHiddenNodes` —— 4/16 个有
-- `Anything Everywhere3` —— 3/16 个有
-- `CM_IntToFloat` —— 3/16 个有
-- `INTConstant` —— 3/16 个有
-- `SaveImage` —— 3/16 个有
-- `SimpleCalculatorKJ` —— 3/16 个有
-- `TT_img_enc_v2` —— 2/16 个有
-- `AILab_QwenVL` —— 1/16 个有
-- `TT_img_enc` —— 1/16 个有
-- `easy promptConcat` —— 1/16 个有
-- `孤海注释` —— 1/16 个有
+- `ConditioningZeroOut` —— 13/15 个有
+- `ModelSamplingAuraFlow` —— 12/15 个有
+- `LoraLoaderModelOnly` —— 11/15 个有
+- `JjkText` —— 10/15 个有
+- `ResolutionSelector` —— 10/15 个有
+- `solarL_SaveImagesToZip` —— 10/15 个有
+- `CR Prompt Text` —— 2/15 个有
+- `LatentUpscaleBy` —— 2/15 个有
+- `JDCN_StringToList` —— 1/15 个有
+- `ProcessString` —— 1/15 个有
+- `easy int` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 16 | 100% |
-| 高度 | 24 | 24 - 24 | 16 | 100% |
+| 宽度 | 928 | 512 - 1440 | 15 | 61% |
+| 高度 | 1664 | 512 - 2560 | 15 | 45% |
+| 采样步数 | randomize | - | 15 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 20 | 15 | 66% |
+| 采样算法 | 1 | 1 - 2 | 15 | 77% |
+| 调度器 | euler_ancestral | - | 15 | 47% |
+| 重绘幅度 | simple | - | 15 | 80% |
 
 ## 常见问题
 
@@ -92,5 +63,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，16 个样本，取值集中（一致性 100%）
-- 高度 中位数 24，观测区间 24 - 24，16 个样本，取值集中（一致性 100%）
+- 宽度 中位数 928，观测区间 512 - 1440，15 个样本
+- 高度 中位数 1664，观测区间 512 - 2560，15 个样本，取值分散，一致性仅 45%
+- 采样步数 最常用 randomize，15 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 20，15 个样本
+- 采样算法 中位数 1，观测区间 1 - 2，15 个样本
+- 调度器 最常用 euler_ancestral，15 个样本，一致性 47%
+- 重绘幅度 最常用 simple，15 个样本，一致性 80%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

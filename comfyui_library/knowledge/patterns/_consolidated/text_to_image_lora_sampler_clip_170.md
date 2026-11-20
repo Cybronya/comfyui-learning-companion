@@ -2,89 +2,86 @@
 name: text_to_image_lora_sampler_clip_170
 type: Text To Image
 frequency: 10
-level: strong
-coverage: 0.8334
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: moderate
+coverage: 0.6953
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, ConditioningZeroOut, EmptyLatentImage, KSampler, LoraLoaderModelOnly, PreviewAny, PrimitiveBoolean, PrimitiveStringMultiline, ResolutionSelector, SaveImage, StringConcatenate, TextGenerate, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image 2.1元素移除局部重绘擦除图生图处理工具_2102524212488531970.json, 图片生成/图生图/Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249.json, 图片生成/图生图/Qwen Image 2.1图像编辑 官方模板，原生2K支持图生图方案_2103547482436358146.json, 图片生成/图生图/Qwen Image 2.1图像编辑 局部修改指令式操作_2105347589154627586.json, 图片生成/图生图/Qwen Image 2.1图像编辑利器｜图生图局部修改一句话搞定_2110685195149074434.json, 图片生成/图生图/Qwen Image 2.1图像编辑｜热门IP写实图生图 修图改图全能手_2104104246579916802.json, 图片生成/图生图/Qwen Image 2.1扩图局部重绘图生图处理工具_2102522537514196994.json, 图片生成/图生图/Qwen Image 2.1扩图局部重绘｜图生图边缘补全双修｜画幅随意切换_2102291809056681986.json, 图片生成/图生图/Qwen Image 2.1智能扩图｜画面边缘自然延展｜图生图补全构图神器_2102258886488186882.json, 图片生成/图生图/写实图像编辑 Qwen Image 2.1热门IP风格改图_2104280927772958722.json]
+members: [图片生成/图生图/Krea2_turbo_t2i_2070347845965803522.json, 图片生成/图生图/Krea2_turbo_t2i_2071412507268444161.json, 图片生成/图生图/image_krea2_optimizer_workflow_2073588797480198146.json, 图片生成/图生图/image_krea2_tourbo_lora_t2i_edit_2073947059031461889.json, 图片生成/文生图/K2模特级生成_2089374387597307906.json, 图片生成/文生图/Krea2_turbo_t2i_2069610463943553025.json, 图片生成/文生图/krea2-t2i_2101830220889288705.json, 图片生成/文生图/opsv-krea2_t2i_2074897972374097921.json, 图片生成/文生图/opsv-krea2_t2i_2086450223353778178.json, 数字人/数字人/krea2_文生图_2074796223978106881.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_170
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen Image 2.1元素移除局部重绘擦除图生图处理工具_2102524212488531970.json、图片生成/图生图/Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249.json、图片生成/图生图/Qwen Image 2.1图像编辑 官方模板，原生2K支持图生图方案_2103547482436358146.json、图片生成/图生图/Qwen Image 2.1图像编辑 局部修改指令式操作_2105347589154627586.json、图片生成/图生图/Qwen Image 2.1图像编辑利器｜图生图局部修改一句话搞定_2110685195149074434.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Krea2_turbo_t2i_2070347845965803522.json、图片生成/图生图/Krea2_turbo_t2i_2071412507268444161.json、图片生成/图生图/image_krea2_optimizer_workflow_2073588797480198146.json、图片生成/图生图/image_krea2_tourbo_lora_t2i_edit_2073947059031461889.json、图片生成/文生图/K2模特级生成_2089374387597307906.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
-- **可信度**：强结论
-- **平均知识覆盖**：83%
+- **可信度**：中等可信
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfySwitchNode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `QwenImage21Cache`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveStringMultiline`
 - `ResolutionSelector`
 - `SaveImage`
-- `TextEncodeQwenImage21`
+- `StringConcatenate`
+- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImageAdvanced` —— 9/10 个有
-- `ResizeImageMaskNode` —— 7/10 个有
-- `GetNode` —— 6/10 个有
-- `SetNode` —— 6/10 个有
-- `DrawMaskOnImage` —— 5/10 个有
-- `GetImageSize` —— 5/10 个有
-- `PreviewImage` —— 5/10 个有
-- `ComfySwitchNode` —— 4/10 个有
-- `ImageCompare` —— 4/10 个有
-- `ImagePadForOutpaint` —— 3/10 个有
-- `GrowMaskWithBlur` —— 2/10 个有
-- `ModelAttentionBackend` —— 2/10 个有
-- `PrimitiveStringMultiline` —— 2/10 个有
-- `ResizeMask` —— 2/10 个有
-- `Anything Everywhere3` —— 1/10 个有
-- `CR Prompt Text` —— 1/10 个有
-- `ShowText|pysssss` —— 1/10 个有
-- `TextGenerateLTX2Prompt` —— 1/10 个有
+- `FaceDetailer` —— 6/10 个有
+- `SAMLoader` —— 6/10 个有
+- `UltralyticsDetectorProvider` —— 6/10 个有
+- `RTXVideoSuperResolution` —— 5/10 个有
+- `CustomCombo` —— 4/10 个有
+- `PrimitiveInt` —— 4/10 个有
+- `RegexExtract` —— 4/10 个有
+- `StringReplace` —— 4/10 个有
+- `RH_Translator` —— 3/10 个有
+- `CR Prompt Text` —— 2/10 个有
+- `ConditioningKrea2Rebalance` —— 1/10 个有
+- `LoadImage` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `VAEEncode` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 10 | 100% |
-| 高度 | 80 | 80 - 80 | 10 | 100% |
-| 采样步数 | 4 | 4 - 4 | 10 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 10 | 100% |
-| 采样算法 | er_sde | - | 10 | 100% |
-| 调度器 | beta | - | 10 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 2048 | 1024 - 2048 | 10 | 69% |
+| 高度 | 2048 | 1024 - 2048 | 10 | 69% |
+| 采样步数 | 5 | 2 - 8 | 10 | 40% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 50% |
+| 调度器 | simple | - | 10 | 50% |
+| 重绘幅度 | 0.475 | 0.2 - 1 | 10 | 34% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，10 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，10 个样本，一致性 100%
-- 调度器 最常用 beta，10 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（10/10 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 2048，观测区间 1024 - 2048，10 个样本
+- 高度 中位数 2048，观测区间 1024 - 2048，10 个样本
+- 采样步数 中位数 5，观测区间 2 - 8，10 个样本，取值分散，一致性仅 40%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 50%
+- 调度器 最常用 simple，10 个样本，一致性 50%
+- 重绘幅度 中位数 0.475，观测区间 0.2 - 1，10 个样本，取值分散，一致性仅 34%
+- 高发问题（15/10 个样本）：Steps较低可能导致细节不足

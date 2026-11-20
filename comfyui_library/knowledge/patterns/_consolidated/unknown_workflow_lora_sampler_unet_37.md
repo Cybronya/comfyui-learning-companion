@@ -1,81 +1,80 @@
 ---
 name: unknown_workflow_lora_sampler_unet_37
 type: Unknown Workflow
-frequency: 15
-level: moderate
-coverage: 0.957
-common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy promptLine]
+frequency: 12
+level: strong
+coverage: 0.904417
+common_nodes: [CLIPLoader, GetImageSize+, Image Comparer (rgthree), KSampler, LoraLoaderModelOnly, PainterFluxImageEdit, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/多角度一致性工作流_1987778123494305793.json, 图片生成/图生图/多角度切换qwen2511_2036795439428673538.json, 图片生成/图生图/多角度多视角分镜图生图_2061572502698156033.json, 图片生成/图生图/多角度（短剧专用）_2046748685542891521.json, 图片生成/图生图/局部重绘 图生图 洗图 图片编辑_2046875381084463105.json, 图片生成/图生图/最新多角度分镜（人物一致性）_1985310456749432834.json, 图片生成/图生图/模特分镜 套图 Qwen_Edit_2511   IP角色多视图 多视角 三视图_2041860666541219842.json, 图片生成/图生图/模特分镜 套图 Qwen_Edit_2511   IP角色多视图 多视角 三视图_2042102718298329089.json, 图片生成/图生图/角色一致性 人物一致性 分镜 角色多视图 多视角 三视图_2046882399899885570.json, 图片生成/图生图/角色多视图_多角度_多视角_Qwen_Edit_2511_2047214356101865473.json, 图片生成/图生图/角色多视图_多角度_多视角_Qwen_Edit_2511_2047503648166514689.json, 图片生成/图生图/角色多视图_多角度_多视角_Qwen_Edit_2511_2047585223679942658.json, 图片生成/图生图/角色表演   分镜图生图  多视图  多角度  多视角  Qwen_Edit_2511_2075597201874706433.json, 图片生成/文生图/Qwen_Edit_2511&分镜& 短剧分镜& 漫剧分镜_2044021959486349314.json, 图片生成/文生图/电商模特多镜头多视角生图工作流_2002650110460850177.json]
+members: [图片生成/图生图/FLUX.2 Klein9B电商产品换背景_2058110770403176449.json, 图片生成/图生图/FLUX.2+Klein9B单图_2105504127831855106.json, 图片生成/图生图/FLUX.2+Klein9B单图_2105650210314743809.json, 图片生成/图生图/FLUX2_Klein去除ai感_2035190919212834818.json, 图片生成/图生图/Klein_4步自适应光照溶图打光_2087360495371251714.json, 图片生成/图生图/Klein_万能产品改色支持色值改色_2087362725247803393.json, 图片生成/图生图/Klein_产品换背景_2087364324204564481.json, 图片生成/图生图/最新产品换背景-Klein_2063910955804880897.json, 图片生成/图生图/白底产品换背景(零偏移)——Klein-9B_2071872504309837826.json, 图片生成/图生图/蒜香卡普klein9b白底转家具现代美式经典风格支持2048px_2050820159954272257.json, 图片生成/文生图/Klein-9B 电商产品换背景(零偏移)_2049738363753779201.json, 图片生成/文生图/klein9b白底转家具现代美式经典风格支持2048px_2055481736271802370.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_37
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/多角度一致性工作流_1987778123494305793.json、图片生成/图生图/多角度切换qwen2511_2036795439428673538.json、图片生成/图生图/多角度多视角分镜图生图_2061572502698156033.json、图片生成/图生图/多角度（短剧专用）_2046748685542891521.json、图片生成/图生图/局部重绘 图生图 洗图 图片编辑_2046875381084463105.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/FLUX.2 Klein9B电商产品换背景_2058110770403176449.json、图片生成/图生图/FLUX.2+Klein9B单图_2105504127831855106.json、图片生成/图生图/FLUX.2+Klein9B单图_2105650210314743809.json、图片生成/图生图/FLUX2_Klein去除ai感_2035190919212834818.json、图片生成/图生图/Klein_4步自适应光照溶图打光_2087360495371251714.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CFGNorm`
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
-- `ConditioningZeroOut`
+- `GetImageSize+`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `PainterFluxImageEdit`
 - `SaveImage`
-- `Text Multiline`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 14/15 个有
-- `Any Switch (rgthree)` —— 3/15 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/15 个有
-- `INTConstant` —— 3/15 个有
-- `ShowText|pysssss` —— 3/15 个有
-- `String Literal` —— 3/15 个有
-- `Text Load Line From File` —— 3/15 个有
-- `ImageConcatMulti` —— 1/15 个有
-- `ImageFromBatch+` —— 1/15 个有
-- `ImageListToBatch+` —— 1/15 个有
-- `ImageScaleBy` —— 1/15 个有
-- `SeedVR2LoadDiTModel` —— 1/15 个有
-- `SeedVR2LoadVAEModel` —— 1/15 个有
-- `SeedVR2VideoUpscaler` —— 1/15 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 1/15 个有
-- `easy imageScaleToNormPixels` —— 1/15 个有
+- `CR Text` —— 11/12 个有
+- `ConstrainImage|pysssss` —— 11/12 个有
+- `ImageLoader` —— 11/12 个有
+- `JoinStrings` —— 10/12 个有
+- `AILab_ColorInput` —— 9/12 个有
+- `RMBG` —— 9/12 个有
+- `ShowText|pysssss` —— 5/12 个有
+- `PreviewImage` —— 4/12 个有
+- `easy imageDetailTransfer` —— 4/12 个有
+- `ImagePadForOutpaint` —— 3/12 个有
+- `Flux2KleinColorAnchor` —— 2/12 个有
+- `Int` —— 2/12 个有
+- `LoadImage` —— 2/12 个有
+- `ReferenceLatent` —— 2/12 个有
+- `AILab_QwenVL` —— 1/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/12 个有
+- `ImageStitch` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 15 | 62% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 15 | 66% |
-| 采样算法 | euler | - | 15 | 100% |
-| 调度器 | simple | - | 15 | 93% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+| 采样步数 | 4 | 4 - 8 | 12 | 68% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1.1 | 12 | 97% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 15/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，15 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，15 个样本
-- 采样算法 最常用 euler，15 个样本，一致性 100%
-- 调度器 最常用 simple，15 个样本，一致性 93%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 高发问题（14/15 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.1，12 个样本，取值集中（一致性 97%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（15/12 个样本）：Steps较低可能导致细节不足

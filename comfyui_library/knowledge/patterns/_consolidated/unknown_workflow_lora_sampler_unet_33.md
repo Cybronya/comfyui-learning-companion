@@ -1,79 +1,75 @@
 ---
 name: unknown_workflow_lora_sampler_unet_33
 type: Unknown Workflow
-frequency: 15
+frequency: 14
 level: strong
-coverage: 0.850333
-common_nodes: [CLIPLoader, CR Prompt Text, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2KleinEditTextEncode_EditUtils, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.830929
+common_nodes: [CFGNorm, CLIPLoader, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, TextEncodeQwenImageEdit, Textbox, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/F.2Klein自动换装一致性强_2054482149025296386.json, 图片生成/图生图/F.2Klein自动换装一致性强_2057732864199970817.json, 图片生成/图生图/F.2Klein超强换头换脸保持一致性_2053780349318115330.json, 图片生成/图生图/F.2Klein超强换头换脸保持一致性_2056207288049913858.json, 图片生成/图生图/F.2Klein超强换头换脸保持一致性_2057630170105864194.json, 图片生成/图生图/F.2Klein超强换头换脸保持一致性_2058141247566606337.json, 图片生成/图生图/F.2Klein超强换头换脸保持一致性_2058378118825594881.json, 图片生成/图生图/Flux+2+Klein全自动换头换脸_2016496929932316674.json, 图片生成/图生图/Flux+2+Klein换装，一致性强_2016528431097319425.json, 图片生成/图生图/Flux2 Klein 超强换头换脸保持一致性_2031951766127906818.json, 图片生成/图生图/Flux2Klein模特换头一致性_2048606266485907457.json, 图片生成/图生图/Flux2Klein模特换头换脸一致性_2051141990913462274.json, 图片生成/图生图/Flux2Klein自动换装一致性强_2042957317364260865.json, 图片生成/图生图/kelin 换头_2071892281627594754.json, 平台全量/F.2Klein模特换头一致性_2058418893626101761.json]
+members: [图片生成/图生图/QwenEdit Plus人物姿态迁移_1971077216199155713.json, 图片生成/图生图/QwenEdit Plus新版双图编辑人物互动偏移修正版V1_1971376025932382209.json, 图片生成/图生图/QwenEdit Plus新版双图编辑人物互动偏移修正版V2_1970891254328397826.json, 图片生成/图生图/QwenEdit Plus新版双图编辑人物套装更换偏移修正版V1_1971379271564509186.json, 图片生成/图生图/QwenEdit Plus新版双图编辑人物套装更换偏移修正版V2_1970880365474811906.json, 图片生成/图生图/QwenEdit Plus新版双图编辑人物套装更换偏移修正版V3(Lora加强)_1971921027959812098.json, 图片生成/图生图/QwenEdit Plus新版双图编辑人物姿态参考偏移修正版V1_1971373771607195649.json, 图片生成/图生图/QwenEdit Plus新版双图编辑人物姿态参考偏移修正版V2_1970881798769123329.json, 图片生成/图生图/QwenEdit Plus新版双图编辑双人交互偏移修正版V1_1971375270219464705.json, 图片生成/图生图/QwenEdit Plus新版双图编辑双人交互偏移修正版V2_1970888766275624961.json, 图片生成/图生图/优化偏移-人物一致性image Plus三图融合_1970522423198162945.json, 图片生成/图生图/千问QwenEdit 2511一致性双图编辑_2003756229585477634.json, 图片生成/图生图/千问QwenEdit plus一致性双图编辑_1970887152890482689.json, 图片生成/图生图/🦖QwenEdit Plus姿势迁移_1971109381418979329.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_33
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/F.2Klein自动换装一致性强_2054482149025296386.json、图片生成/图生图/F.2Klein自动换装一致性强_2057732864199970817.json、图片生成/图生图/F.2Klein超强换头换脸保持一致性_2053780349318115330.json、图片生成/图生图/F.2Klein超强换头换脸保持一致性_2056207288049913858.json、图片生成/图生图/F.2Klein超强换头换脸保持一致性_2057630170105864194.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/QwenEdit Plus人物姿态迁移_1971077216199155713.json、图片生成/图生图/QwenEdit Plus新版双图编辑人物互动偏移修正版V1_1971376025932382209.json、图片生成/图生图/QwenEdit Plus新版双图编辑人物互动偏移修正版V2_1970891254328397826.json、图片生成/图生图/QwenEdit Plus新版双图编辑人物套装更换偏移修正版V1_1971379271564509186.json、图片生成/图生图/QwenEdit Plus新版双图编辑人物套装更换偏移修正版V2_1970880365474811906.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 14 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `CR Prompt Text`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2KleinEditTextEncode_EditUtils`
 - `Image Comparer (rgthree)`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
 - `SaveImage`
+- `TextEncodeQwenImageEdit`
+- `Textbox`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `Int` —— 9/15 个有
-- `RMBG` —— 8/15 个有
-- `ImpactInt` —— 6/15 个有
-- `LoadRembgByBiRefNetModel` —— 6/15 个有
-- `RembgByBiRefNet` —— 6/15 个有
-- `SolidMask` —— 6/15 个有
-- `easy ifElse` —— 6/15 个有
-- `easy isMaskEmpty` —— 6/15 个有
-- `ClothesSegment` —— 3/15 个有
-- `easy imageConcat` —— 3/15 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 1/15 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/15 个有
+- `ImageStitch` —— 13/14 个有
+- `Text Concatenate` —— 11/14 个有
+- `TextEncodeQwenImageEditPlus_lrzjason` —— 11/14 个有
+- `easy showAnything` —— 11/14 个有
+- `DF_Get_image_size` —— 10/14 个有
+- `EmptySD3LatentImage` —— 10/14 个有
+- `RH_Captioner` —— 7/14 个有
+- `DWPreprocessor` —— 5/14 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 3/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 5 | 15 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
-| 采样算法 | euler | - | 15 | 100% |
-| 调度器 | simple | - | 15 | 80% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+| 采样步数 | 8 | 8 - 8 | 14 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
+| 采样算法 | euler | - | 14 | 100% |
+| 调度器 | simple | - | 14 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 14/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 5，15 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，15 个样本，一致性 100%
-- 调度器 最常用 simple，15 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 高发问题（15/15 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 8 - 8，14 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，14 个样本，一致性 100%
+- 调度器 最常用 simple，14 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 高发问题（14/14 个样本）：Steps较低可能导致细节不足

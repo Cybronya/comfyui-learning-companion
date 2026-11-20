@@ -1,71 +1,80 @@
 ---
 name: unknown_workflow_sampler_vae_31
 type: Unknown Workflow
-frequency: 12
-level: moderate
-coverage: 0.834083
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 11
+level: strong
+coverage: 0.976545
+common_nodes: [EmptyLatentImage, GetImageSizeAndCount, ImageScaleToTotalPixels, KSampler, LoadImage, SaveImage, Text Multiline, TextEncodeQwenImageEditPlus, VAEDecode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/新手短剧｜MiniMax H3 多参考视频生成工作流 v1.0_2106283115156172802.json, 视频生成/图生视频/海螺H3 图生视频（8步加速LoRA）_2085286347509686274.json, 视频生成/图生视频/海螺H3 多参视频（加速节点-加速版）768P_2085282734813044738.json, 视频生成/图生视频/海螺H3八步极速生成全能参考生视频_2087529254698446850.json, 视频生成/图生视频/海螺H3多图生视频（低价高清）_2084274860859150337.json, 视频生成/图生视频/海螺H3多宫格图生视频场景图生成短视频角色卡片图生成短视频_2086761370988662785.json, 视频生成/图生视频/海螺H3多宫格图生视频场景图生成短视频角色卡片图生成短视频_2088873597015252993.json, 视频生成/图生视频/短剧漫剧参考图生视频_2103117172716429314.json, 视频生成/图生视频/自我介绍_2110222353635561474.json, 视频生成/图生视频/自用版 Minimax H3 全能多参生视频_2085256791130202114.json, 视频生成/图生视频/走秀_2110212966074376193.json, 视频生成/文生视频/260818002. MiniMax-H3 全能参考速生视频_2089370236645634050.json]
+members: [图片生成/图生图/Qwen Edit 2511三图编辑V1_2004063684311826433.json, 图片生成/图生图/Qwen Edit 2511三图编辑_2007451400346804226.json, 图片生成/图生图/Qwen Edit 2511三图编辑_2013275595538440193.json, 图片生成/图生图/Qwen Edit 2511双图编辑-{姿势迁移}_2004097691007238145.json, 图片生成/图生图/Qwen Edit 2511双图编辑-{姿势迁移}_2004110460536406018.json, 图片生成/图生图/Qwen Edit 2511双图编辑V1（姿势迁移-高成功率版）_2003814602951540738.json, 图片生成/图生图/Qwen Edit 2511四视图草图化Lora对比_2004170555572035586.json, 图片生成/图生图/Qwen-Edit Aio V4模型双图编辑（姿势迁移）_1977742904007557121.json, 图片生成/图生图/Qwen-Edit Aio V5模型双图编辑（姿势迁移）_1978125750916243457.json, 图片生成/图生图/Qwen-Edit Aio V7模型双图编辑（姿势迁移）_1985328636607741953.json, 图片生成/图生图/Qwen动作迁移+SeedVR2_2031548094671753217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_31
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/新手短剧｜MiniMax H3 多参考视频生成工作流 v1.0_2106283115156172802.json、视频生成/图生视频/海螺H3 图生视频（8步加速LoRA）_2085286347509686274.json、视频生成/图生视频/海螺H3 多参视频（加速节点-加速版）768P_2085282734813044738.json、视频生成/图生视频/海螺H3八步极速生成全能参考生视频_2087529254698446850.json、视频生成/图生视频/海螺H3多图生视频（低价高清）_2084274860859150337.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/Qwen Edit 2511三图编辑V1_2004063684311826433.json、图片生成/图生图/Qwen Edit 2511三图编辑_2007451400346804226.json、图片生成/图生图/Qwen Edit 2511三图编辑_2013275595538440193.json、图片生成/图生图/Qwen Edit 2511双图编辑-{姿势迁移}_2004097691007238145.json、图片生成/图生图/Qwen Edit 2511双图编辑-{姿势迁移}_2004110460536406018.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：12
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：98%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
+全部 11 个 workflow 都包含：
+- `EmptyLatentImage`
+- `GetImageSizeAndCount`
+- `ImageScaleToTotalPixels`
+- `KSampler`
 - `LoadImage`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
+- `Text Multiline`
+- `TextEncodeQwenImageEditPlus`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 11/12 个有
-- `LoraLoaderModelOnly` —— 7/12 个有
-- `PathchSageAttentionKJ` —— 7/12 个有
-- `PrimitiveStringMultiline` —— 7/12 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 6/12 个有
-- `CR Text` —— 4/12 个有
-- `AnyBooleanSwitch` —— 1/12 个有
-- `DiffusionModelLoaderKJ` —— 1/12 个有
-- `Load Lora` —— 1/12 个有
-- `MiniMaxH3BlockCacheT8` —— 1/12 个有
-- `ModelPreviewOverrideKJ` —— 1/12 个有
-- `PrimitiveBoolean` —— 1/12 个有
-- `Seed (rgthree)` —— 1/12 个有
-- `VHS_LoadAudioUpload` —— 1/12 个有
-- `VHS_LoadVideo` —— 1/12 个有
-- `孤海注释` —— 1/12 个有
+- `CLIPLoader` —— 8/11 个有
+- `ImageConcatMulti` —— 8/11 个有
+- `LoraLoaderModelOnly` —— 8/11 个有
+- `UNETLoader` —— 8/11 个有
+- `VAELoader` —— 8/11 个有
+- `DWPreprocessor` —— 7/11 个有
+- `PDIMAGE_LongerSize` —— 7/11 个有
+- `CheckpointLoaderSimple` —— 3/11 个有
+- `PreviewImage` —— 3/11 个有
+- `AddLabel` —— 1/11 个有
+- `INTConstant` —— 1/11 个有
+- `Image Comparer (rgthree)` —— 1/11 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/11 个有
+- `SeedVR2` —— 1/11 个有
+- `SeedVR2BlockSwap` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 11 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
+| 采样算法 | euler | - | 11 | 73% |
+| 调度器 | beta57 | - | 11 | 64% |
+| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
+| 宽度 | 768 | 768 - 768 | 11 | 100% |
+| 高度 | 768 | 768 - 768 | 11 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，11 个样本，一致性 73%
+- 调度器 最常用 beta57，11 个样本，一致性 64%
+- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
+- 宽度 中位数 768，观测区间 768 - 768，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 768，观测区间 768 - 768，11 个样本，取值集中（一致性 100%）
+- 高发问题（12/11 个样本）：Steps较低可能导致细节不足

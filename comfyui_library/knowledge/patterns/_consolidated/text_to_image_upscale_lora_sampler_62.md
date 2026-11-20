@@ -1,86 +1,101 @@
 ---
 name: text_to_image_upscale_lora_sampler_62
 type: Text To Image
-frequency: 5
+frequency: 4
 level: strong
-coverage: 0.7152
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, INTConstant, ImageScale, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, Text, UNETLoader, VAEDecode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize, easy imageSizeBySide]
+coverage: 0.891
+common_nodes: [CLIPLoader, CLIPTextEncode, DF_Integer, EmptyLatentImage, Image Comparer (rgthree), ImageUpscaleWithModel, Int, JWFloat, JjkText, KSampler, LG_Color_Match_V2, LoadImage, LoraLoaderModelOnly, PreviewImage, RHHiddenNodes, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/超广角低角度摄影 夸张角度写实拍摄 Z-Image极速生图版 高清放大 SeedVR反推提示词_2063454144324792321.json, 图片生成/文生图/Z-Image 超广角低角度摄影_2060698009343713282.json, 图片生成/文生图/古装 _ 现代短剧高级氛围感美图_2054026317141692417.json, 图片生成/文生图/文生图+高清放大+电商高级氛围感美图+全节点注释_2054058582009761794.json, 图片生成/文生图/文生图-高清放大--电商高级氛围感美图-全节点注释_2054872415896915969.json]
+members: [图片生成/反推提示词/产品专用无损放大｜反推提示词图生图｜商品细节放大不糊_2104814989918953474.json, 图片生成/图生图/人像专用无损放大｜图生图细节增强｜皮肤纹理不失真_2104786485156339714.json, 图片生成/图生图/无损放大人像专用图生图处理生成工作流工具_2102174442712555522.json, 图片生成/图生图/杂志级精修修图工作流，图生图质感高清还原_2111553319327064066.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_62
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/超广角低角度摄影 夸张角度写实拍摄 Z-Image极速生图版 高清放大 SeedVR反推提示词_2063454144324792321.json、图片生成/文生图/Z-Image 超广角低角度摄影_2060698009343713282.json、图片生成/文生图/古装 _ 现代短剧高级氛围感美图_2054026317141692417.json、图片生成/文生图/文生图+高清放大+电商高级氛围感美图+全节点注释_2054058582009761794.json、图片生成/文生图/文生图-高清放大--电商高级氛围感美图-全节点注释_2054872415896915969.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/反推提示词/产品专用无损放大｜反推提示词图生图｜商品细节放大不糊_2104814989918953474.json、图片生成/图生图/人像专用无损放大｜图生图细节增强｜皮肤纹理不失真_2104786485156339714.json、图片生成/图生图/无损放大人像专用图生图处理生成工作流工具_2102174442712555522.json、图片生成/图生图/杂志级精修修图工作流，图生图质感高清还原_2111553319327064066.json）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `DF_Integer`
 - `EmptyLatentImage`
-- `INTConstant`
-- `ImageScale`
+- `Image Comparer (rgthree)`
+- `ImageUpscaleWithModel`
+- `Int`
+- `JWFloat`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LG_Color_Match_V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
+- `RHHiddenNodes`
 - `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
-- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageBatchToImageList`
-- `easy imageListToImageBatch`
-- `easy imageSize`
-- `easy imageSizeBySide`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 3/5 个有
-- `Image Comparer (rgthree)` —— 3/5 个有
-- `LoadImage` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `ImageScaleToTotalPixels` —— 1/5 个有
-- `PreviewAny` —— 1/5 个有
-- `RH_Captioner` —— 1/5 个有
+- `GrowMask` —— 3/4 个有
+- `InvertMask` —— 3/4 个有
+- `JoinImageWithAlpha` —— 3/4 个有
+- `LayerMask: BiRefNetUltraV2` —— 3/4 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 3/4 个有
+- `Upscale Model Loader` —— 3/4 个有
+- `ConditioningZeroOut` —— 2/4 个有
+- `GetImageSize+` —— 2/4 个有
+- `Latent Noise Injection` —— 2/4 个有
+- `ModelSamplingAuraFlow` —— 2/4 个有
+- `ResizeAndPadImage` —— 2/4 个有
+- `SeedVR2LoadDiTModel` —— 2/4 个有
+- `SeedVR2LoadVAEModel` —— 2/4 个有
+- `SeedVR2VideoUpscaler` —— 2/4 个有
+- `TTP_Image_Assy` —— 2/4 个有
+- `TTP_Image_Tile_Batch` —— 2/4 个有
+- `TTP_Tile_image_size` —— 2/4 个有
+- `UpscaleModelLoader` —— 2/4 个有
+- `VAEEncode` —— 2/4 个有
+- `YUAN_TXTConvertAny` —— 2/4 个有
+- `easy boolean` —— 2/4 个有
+- `easy ifElse` —— 2/4 个有
+- `easy imageBatchToImageList` —— 2/4 个有
+- `easy imageScaleDownBy` —— 2/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 1080 - 1080 | 5 | 100% |
-| 高度 | 1920 | 1920 - 1920 | 5 | 100% |
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | res_2s_ode | - | 5 | 100% |
-| 调度器 | kl_optimal | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 80 | 80 - 80 | 4 | 100% |
+| 高度 | 80 | 80 - 80 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 1080 - 1080，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，观测区间 1920 - 1920，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 res_2s_ode，5 个样本，一致性 100%
-- 调度器 最常用 kl_optimal，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高发问题（6/4 个样本）：Steps较低可能导致细节不足

@@ -3,83 +3,98 @@ name: text_to_image_inpaint_lora_sampler_7
 type: Text To Image
 frequency: 2
 level: weak
-coverage: 0.907
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, EmptyLatentImage, FluxGuidance, ImagePadForOutpaint, InpaintModelConditioning, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.481
+common_nodes: [Any Switch (rgthree), CFGGuider, CFGNorm, CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text, ConditioningZeroOut, Easy_QwenEdit2509, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, GetNode, INPAINT_ExpandMask, ImageScaleToTotalPixels, InpaintCropImproved, JDCN_StringToList, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelSamplingAuraFlow, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, PreviewImage, PrimitiveInt, PrimitiveString, PrimitiveStringMultiline, ProcessString, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, StringConcatenate, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy bookmark]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux-fill-Oneward超强扩图｜原图无损延展画布，边缘自然过渡_2104497360385695745.json, 图片生成/图生图/图像扩图处理工作流｜画幅外延智能补全图生图生成_2096330021316153345.json]
+members: [图片生成/图生图/【单人图片训练集】转自AIGC特异点_2044577931774664706.json, 数字人/数字人/AIGC特异点_一键生成【脸模训练集】_2044339023572901890.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_inpaint_lora_sampler_7
 
-> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Flux-fill-Oneward超强扩图｜原图无损延展画布，边缘自然过渡_2104497360385695745.json、图片生成/图生图/图像扩图处理工作流｜画幅外延智能补全图生图生成_2096330021316153345.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/【单人图片训练集】转自AIGC特异点_2044577931774664706.json、数字人/数字人/AIGC特异点_一键生成【脸模训练集】_2044339023572901890.json）
 
 - **类型**：Text To Image
 - **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：48%
 
 ## 共有节点
 
 全部 2 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `CFGGuider`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `CR Text`
 - `ConditioningZeroOut`
-- `DifferentialDiffusion`
-- `DualCLIPLoader`
+- `Easy_QwenEdit2509`
+- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `ImagePadForOutpaint`
-- `InpaintModelConditioning`
-- `JjkText`
+- `Flux2Scheduler`
+- `GetImageSize`
+- `GetNode`
+- `INPAINT_ExpandMask`
+- `ImageScaleToTotalPixels`
+- `InpaintCropImproved`
+- `JDCN_StringToList`
 - `KSampler`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `ModelSamplingAuraFlow`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `PrimitiveInt`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `ProcessString`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
+- `StringConcatenate`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `GrowMaskWithBlur` —— 1/2 个有
-- `Image Comparer (rgthree)` —— 1/2 个有
-- `ImageComposite+` —— 1/2 个有
-- `KSamplerAdvanced` —— 1/2 个有
-- `LayerMask: MaskGrow` —— 1/2 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/2 个有
-- `PreviewImage` —— 1/2 个有
-- `SetLatentNoiseMask` —— 1/2 个有
-- `图像缩放范围孤海` —— 1/2 个有
+- `easy bookmark`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | - | 2 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | - | 2 | 100% |
-| 采样算法 | er_sde | - | 2 | 100% |
-| 调度器 | beta | - | 2 | 100% |
+| 采样步数 | 8 | - | 2 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
 | 重绘幅度 | 1 | - | 2 | 100% |
-| 宽度 | 80 | - | 2 | 100% |
-| 高度 | 80 | - | 2 | 100% |
+| 宽度 | 1080 | - | 2 | 100% |
+| 高度 | 1472 | - | 2 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 32/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，2 个样本，一致性 100%
-- 调度器 最常用 beta，2 个样本，一致性 100%
+- 采样步数 中位数 8，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
 - 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1080，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 1472，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（32/2 个样本）：Steps较低可能导致细节不足
 - 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

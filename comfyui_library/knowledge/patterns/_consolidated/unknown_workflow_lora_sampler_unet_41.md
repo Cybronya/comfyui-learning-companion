@@ -1,77 +1,81 @@
 ---
 name: unknown_workflow_lora_sampler_unet_41
 type: Unknown Workflow
-frequency: 14
-level: moderate
-coverage: 0.962357
-common_nodes: [CLIPLoader, KSampler, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader]
+frequency: 12
+level: strong
+coverage: 0.6765
+common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Qwen-Edit-2511文生图3D国漫CG风格_2079515568432046082.json, 图片生成/文生图/Qwen-Edit手机上的3D城市_2032281919450255362.json, 图片生成/文生图/Qwen-Image Edit Plus换装双人同框_1994201692587622402.json, 图片生成/文生图/Qwen_Edit_2509古书上的3D插画_1989311154684129281.json, 图片生成/文生图/Qwen_Edit_2509微缩城市鸟瞰_1988774900942909442.json, 图片生成/文生图/Qwen_Edit_2509手机上的3D人物_1989695013087047682.json, 图片生成/文生图/Qwen_Edit_2509手机上的3D城市_1989171870014517249.json, 图片生成/文生图/Qwen_Edit_2509手机上的3D城市_2046760188522274818.json, 图片生成/文生图/Qwen_Edit_2509手机上的3D城市_2082741081346764801.json, 图片生成/文生图/Qwen_Edit_2509胶囊城市_1988927261430648834.json, 图片生成/文生图/Qwen_Edit_3D城市3D微景观_2011800399782617090.json, 图片生成/文生图/上传图片+手动输入提示词来生成下一场景+全节点注释_2055618848560295937.json, 图片生成/文生图/换装同服装双人或者多人同框_1994237410244493314.json, 平台全量/图片转手绘 Qwen Image Edit 2509 真实图片转漫画卡通风格_1993150543153610753.json]
+members: [图片生成/图生图/QwenEdit2509真人风格转换_1991357384436088834.json, 图片生成/图生图/QwenEdit2511风格转写实（一致性）_2010967343677054977.json, 图片生成/图生图/QwenEditUtils 2.2 Optional Mask换装-(适合全身换)_1992103898848751617.json, 图片生成/图生图/Qwen换装-图生图-衣物迁移_1992841662271647746.json, 图片生成/图生图/qwen-edit-2511电商服饰替换_2093978256927182850.json, 图片生成/图生图/【全自动换装+超强一致性】_2040251598290558978.json, 图片生成/图生图/一键换装增强版：完美替换衣物，人物一致性_2086810156494577666.json, 图片生成/图生图/全自动换装+超强一致性_1994552832286134274.json, 图片生成/图生图/千问 无遮罩控制 全自动换装_2000220845391872001.json, 图片生成/图生图/千问2511高清4k换装，全自动换装+超强一致性（单图35Mb）_2026664684333568001.json, 图片生成/图生图/千问换装【全自动换装+超强一致性】_1990256833518596097.json, 图片生成/文生图/千问【全自动换装+超强一致性】_2000213218951917569.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_41
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/文生图/Qwen-Edit-2511文生图3D国漫CG风格_2079515568432046082.json、图片生成/文生图/Qwen-Edit手机上的3D城市_2032281919450255362.json、图片生成/文生图/Qwen-Image Edit Plus换装双人同框_1994201692587622402.json、图片生成/文生图/Qwen_Edit_2509古书上的3D插画_1989311154684129281.json、图片生成/文生图/Qwen_Edit_2509微缩城市鸟瞰_1988774900942909442.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/QwenEdit2509真人风格转换_1991357384436088834.json、图片生成/图生图/QwenEdit2511风格转写实（一致性）_2010967343677054977.json、图片生成/图生图/QwenEditUtils 2.2 Optional Mask换装-(适合全身换)_1992103898848751617.json、图片生成/图生图/Qwen换装-图生图-衣物迁移_1992841662271647746.json、图片生成/图生图/qwen-edit-2511电商服饰替换_2093978256927182850.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：96%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：68%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
+- `ConditioningZeroOut`
 - `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 13/14 个有
-- `EmptyLatentImage` —— 13/14 个有
-- `ModelSamplingAuraFlow` —— 13/14 个有
-- `ImageScaleToTotalPixels` —— 4/14 个有
-- `LoadImage` —— 4/14 个有
-- `ConstrainImage|pysssss` —— 3/14 个有
-- `BiRefNetRMBG` —— 2/14 个有
-- `LayerUtility: ExtendCanvas` —— 2/14 个有
-- `CR Latent Input Switch` —— 1/14 个有
-- `CR SDXL Aspect Ratio` —— 1/14 个有
-- `CR Text` —— 1/14 个有
-- `Image Comparer (rgthree)` —— 1/14 个有
-- `RH_Translator` —— 1/14 个有
+- `CropWithPadInfo` —— 10/12 个有
+- `Image Comparer (rgthree)` —— 10/12 个有
+- `PrimitiveStringMultiline` —— 10/12 个有
+- `QwenEditAdaptiveLongestEdge` —— 9/12 个有
+- `GetNode` —— 8/12 个有
+- `ImageScaleBy` —— 8/12 个有
+- `SetNode` —— 8/12 个有
+- `Seed (rgthree)` —— 7/12 个有
+- `CFGNorm` —— 2/12 个有
+- `ImageScaleToTotalPixels` —— 2/12 个有
+- `ModelSamplingAuraFlow` —— 2/12 个有
+- `SeedVR2` —— 2/12 个有
+- `SeedVR2BlockSwap` —— 2/12 个有
+- `SeedVR2ExtraArgs` —— 2/12 个有
+- `ImageUpscaleWithModel` —— 1/12 个有
+- `UpscaleModelLoader` —— 1/12 个有
+- `easy imageConcat` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 720 - 1920 | 13 | 77% |
-| 高度 | 1280 | 720 - 1920 | 13 | 68% |
-| 采样步数 | 4 | 4 - 8 | 14 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | euler | - | 14 | 100% |
-| 调度器 | simple | - | 14 | 86% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 采样步数 | 8 | 4 - 8 | 12 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | beta57 | - | 12 | 92% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 17/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 720 - 1920，13 个样本
-- 高度 中位数 1280，观测区间 720 - 1920，13 个样本
-- 采样步数 中位数 4，观测区间 4 - 8，14 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，14 个样本，一致性 100%
-- 调度器 最常用 simple，14 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 高发问题（17/14 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 8，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 beta57，12 个样本，一致性 92%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

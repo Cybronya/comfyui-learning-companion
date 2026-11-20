@@ -2,75 +2,92 @@
 name: unknown_workflow_upscale_lora_sampler_39
 type: Unknown Workflow
 frequency: 6
-level: strong
-coverage: 0.661333
-common_nodes: [CLIPLoader, ConditioningZeroOut, Fast Groups Muter (rgthree), GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, PainterFluxImageEdit, PreviewImage, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy loraStack, easy loraStackApply]
-problems: [Steps较低可能导致细节不足]
+level: moderate
+coverage: 0.642833
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, GetImage, If ANY execute A else B, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, YUAN_TXTJsonExtractor, YUAN_TXTParagraphSplitter, YUAN_TXTShotReplace, YuanMultiImage, YuanTool, Yuan_H3MotionContext, Yuan_H3MotionContextLoadLatent, Yuan_H3MotionContextTrim, Yuan_MiniMaxH3Video, Yuan_RTXVideoUpscaleH3]
+problems: []
 missing: []
-members: [图片生成/图生图/Flux2 klein 产品改色工作流_2053122385259311106.json, 图片生成/图生图/Flux2 klein 建筑图稿转设计图工作流_2053478078432722946.json, 图片生成/图生图/Flux2 klein 老照片高清修复工作流_2053482390542143489.json, 图片生成/图生图/Flux2 klein 设计线稿图转实物_2058728637213536257.json, 图片生成/图生图/Flux2klein设计线稿图转实物_2063617771497410562.json, 图片生成/图生图/超好用🔥建筑图稿线稿转设计图-描述词参数可按需调整_2054847570601627650.json]
+members: [视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2.2 短剧版本直出1分钟_2091886599092133889.json, 视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2.2_2092157971756310530.json, 视频生成/图生视频/全栈式短剧生成｜MiniMax-H3一分钟直出_2091350303965794305.json, 视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2（短剧版本直出1分钟）+全节点注释_2097626909663383553.json, 视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2（短剧版本直出1分钟）+全节点注释_2104462985950486530.json, 视频生成/文生视频/🔥AIGC大赛🔥MiniMax-H3全栈式短剧生成V4.2.2（短剧版本直出1分钟）+全节点注释_2097297028450709506.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_39
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux2 klein 产品改色工作流_2053122385259311106.json、图片生成/图生图/Flux2 klein 建筑图稿转设计图工作流_2053478078432722946.json、图片生成/图生图/Flux2 klein 老照片高清修复工作流_2053482390542143489.json、图片生成/图生图/Flux2 klein 设计线稿图转实物_2058728637213536257.json、图片生成/图生图/Flux2klein设计线稿图转实物_2063617771497410562.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2.2 短剧版本直出1分钟_2091886599092133889.json、视频生成/图生视频/MiniMax-H3全栈式短剧生成V4.2.2_2092157971756310530.json、视频生成/图生视频/全栈式短剧生成｜MiniMax-H3一分钟直出_2091350303965794305.json、视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2（短剧版本直出1分钟）+全节点注释_2097626909663383553.json、视频生成/文生视频/MiniMax-H3全栈式短剧生成V4.2.2（短剧版本直出1分钟）+全节点注释_2104462985950486530.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：66%
+- **可信度**：中等可信
+- **平均知识覆盖**：64%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `ConditioningZeroOut`
-- `Fast Groups Muter (rgthree)`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
-- `KSampler`
-- `LoadImage`
+- `GetImage`
+- `If ANY execute A else B`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `PainterFluxImageEdit`
-- `PreviewImage`
-- `SaveImage`
-- `SeedVR2LoadDiTModel`
-- `SeedVR2LoadVAEModel`
-- `SeedVR2VideoUpscaler`
-- `Text Multiline`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `easy loraStack`
-- `easy loraStackApply`
+- `YUAN_TXTJsonExtractor`
+- `YUAN_TXTParagraphSplitter`
+- `YUAN_TXTShotReplace`
+- `YuanMultiImage`
+- `YuanTool`
+- `Yuan_H3MotionContext`
+- `Yuan_H3MotionContextLoadLatent`
+- `Yuan_H3MotionContextTrim`
+- `Yuan_MiniMaxH3Video`
+- `Yuan_RTXVideoUpscaleH3`
 
 **可变部分**（部分 workflow 才有）：
-- `Label (rgthree)` —— 3/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `CR Text Concatenate` —— 2/6 个有
+- `AudioConcat` —— 5/6 个有
+- `EmptyAudio` —— 5/6 个有
+- `Int` —— 5/6 个有
+- `PreviewImage` —— 5/6 个有
+- `VHS_VideoCombine` —— 5/6 个有
+- `easy batchAnything` —— 5/6 个有
+- `easy forLoopEnd` —— 5/6 个有
+- `easy forLoopStart` —— 5/6 个有
+- `easy isNone` —— 5/6 个有
+- `ComfyMathExpression` —— 3/6 个有
+- `CreateVideo` —— 3/6 个有
+- `MathExpression|pysssss` —— 3/6 个有
+- `PrimitiveFloat` —— 3/6 个有
+- `SaveVideo` —— 3/6 个有
+- `ShowText|pysssss` —— 3/6 个有
+- `YuanPrimitive` —— 3/6 个有
+- `easy mathInt` —— 3/6 个有
+- `easy showAnything` —— 3/6 个有
+- `PrimitiveBoolean` —— 2/6 个有
+- `PrimitiveInt` —— 2/6 个有
+- `RH_LLMAPI_Pro_Node` —— 2/6 个有
+- `CM_IntUnaryOperation` —— 1/6 个有
+- `DisTorchPurgeVRAMV2` —— 1/6 个有
+- `LoadImage` —— 1/6 个有
+- `MultiMergeVideos` —— 1/6 个有
+- `easy cleanGpuUsed` —— 1/6 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 5 | 5 - 5 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 5，观测区间 5 - 5，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

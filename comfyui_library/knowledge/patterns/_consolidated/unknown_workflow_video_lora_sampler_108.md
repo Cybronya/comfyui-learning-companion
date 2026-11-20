@@ -1,64 +1,73 @@
 ---
 name: unknown_workflow_video_lora_sampler_108
 type: Unknown Workflow
-frequency: 17
+frequency: 15
 level: moderate
-coverage: 0.594353
-common_nodes: [CLIPLoader, CLIPTextEncode, DiffusionModelLoaderKJ, ImageBatchExtendWithOverlap, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro]
+coverage: 0.859533
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/SVI 2.0 pro长视频分镜一致性_2007698027737255937.json, 视频生成/图生视频/SVI 2.0Pro 分段长视频_2005535565334413313.json, 视频生成/图生视频/SVI 2.0Pro 视频延长  一镜到底  效果炸裂_2007439423029383169.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2005336541939597313.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2032840589099671553.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2053665458540294145.json, 视频生成/图生视频/SVI 2.0Pro一镜到底！_2068949443151491073.json, 视频生成/图生视频/SVI 2.0Pro长视频生成_2005593934388752385.json, 视频生成/图生视频/SVI+2.0Pro 一张图片一镜到底！_2066377373628592129.json, 视频生成/图生视频/SVI+2.0Pro一镜到底_2067252352830230529.json, 视频生成/图生视频/SVI+2.0Pro电影级分镜生成长视频_2005998121425522690.json, 视频生成/图生视频/SVI+2.0Pro电影级分镜生成长视频（升级版）_2006033971657842690.json, 视频生成/图生视频/SVI+2.0Pro长视频生成_2005982973738565633.json, 视频生成/图生视频/SVI+2.0Pro高质量动图_2009965288044896257.json, 视频生成/图生视频/SVI2.0Pro超长一镜到底！16S_2011274354910306306.json, 视频生成/图生视频/SVI全自动长视频生成工作流_2005886076633968641.json, 视频生成/文生视频/一张图加一句话生成视频，图片文字生成视频_2066577714387177474.json]
+members: [图片生成/反推提示词/20digitalaiimagesing_2046911030814576641.json, 图片生成/文生图/720_1280+InfiniteTalk数字人+全节点注释_2056685770030796801.json, 数字人/数字人/Infinitetalk数字人双人口播工作流_2015446612071424001.json, 数字人/数字人/ai数字人-A_2048966325199966209.json, 数字人/数字人/infinitetalk图片数字人（最新优化版）_1995520508559032322.json, 数字人/数字人/infinitetalk数字人（最新优化版）_2039519062346178561.json, 视频生成/图生视频/80.Infinitetalk图片数字人（最新优化版）_2096966651764895746.json, 视频生成/图生视频/Infinitetalk单图数字人2_2089512344698314754.json, 视频生成/图生视频/Infinitetalk单图数字人_2089339073877073921.json, 视频生成/图生视频/Infinitetalk图片数字人1_2097958322732355585.json, 视频生成/图生视频/Infinitetalk图片数字人2_2098027802682548226.json, 视频生成/图生视频/Wan2.1+MultiTalk 极速音频驱动数字人（优化版）_2104770455717634049.json, 视频生成/图生视频/infinitetalk图片数字人优化版_2086755737535082498.json, 视频生成/图生视频/音乐MV制作(照片制作MV)_2039237537125896193.json, 视频生成/图生视频/音乐唱歌数字人（歌曲+数字人+infinite talk唱歌）_2026556385185505281.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_108
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（视频生成/图生视频/SVI 2.0 pro长视频分镜一致性_2007698027737255937.json、视频生成/图生视频/SVI 2.0Pro 分段长视频_2005535565334413313.json、视频生成/图生视频/SVI 2.0Pro 视频延长  一镜到底  效果炸裂_2007439423029383169.json、视频生成/图生视频/SVI 2.0Pro一镜到底！_2005336541939597313.json、视频生成/图生视频/SVI 2.0Pro一镜到底！_2032840589099671553.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/反推提示词/20digitalaiimagesing_2046911030814576641.json、图片生成/文生图/720_1280+InfiniteTalk数字人+全节点注释_2056685770030796801.json、数字人/数字人/Infinitetalk数字人双人口播工作流_2015446612071424001.json、数字人/数字人/ai数字人-A_2048966325199966209.json、数字人/数字人/infinitetalk图片数字人（最新优化版）_1995520508559032322.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `DiffusionModelLoaderKJ`
-- `ImageBatchExtendWithOverlap`
+全部 15 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `INTConstant`
 - `ImageResizeKJv2`
-- `KSamplerAdvanced`
+- `LoadAudio`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
-- `VHS_VideoCombine`
-- `WanImageToVideoSVIPro`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 16/17 个有
-- `INTConstant` —— 16/17 个有
-- `SetNode` —— 16/17 个有
-- `Primitive integer [Crystools]` —— 2/17 个有
-- `Anything Everywhere` —— 1/17 个有
-- `CRT_StringSplitter` —— 1/17 个有
-- `ConditioningZeroOut` —— 1/17 个有
-- `Label (rgthree)` —— 1/17 个有
-- `PreviewAny` —— 1/17 个有
-- `RH_LLMAPI_Pro_Node` —— 1/17 个有
-- `Text` —— 1/17 个有
+- `VHS_VideoCombine` —— 13/15 个有
+- `Anything Everywhere` —— 11/15 个有
+- `ttN text` —— 4/15 个有
+- `CreateVideo` —— 2/15 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/15 个有
+- `RH_Nano_Banana2_Image2Image` —— 2/15 个有
+- `SaveImage` —— 2/15 个有
+- `SaveVideo` —— 2/15 个有
+- `CR Prompt Text` —— 1/15 个有
+- `Label (rgthree)` —— 1/15 个有
+- `PlaySound|pysssss` —— 1/15 个有
+- `RHHiddenNodes` —— 1/15 个有
+- `RH_Suno_Custom` —— 1/15 个有
+- `SaveAudio` —— 1/15 个有
+- `SaveAudioMP3` —— 1/15 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 17 | 76% |
-| Prompt 约束强度(CFG) | 8 | 1 - 20 | 17 | 49% |
-| 采样算法 | 1 | 1 - 1 | 17 | 100% |
-| 调度器 | euler | - | 17 | 100% |
-| 重绘幅度 | simple | - | 17 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -66,9 +75,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，17 个样本，一致性 76%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 1 - 20，17 个样本，取值分散，一致性仅 49%
-- 采样算法 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，17 个样本，一致性 100%
-- 重绘幅度 最常用 simple，17 个样本，一致性 100%
-- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

@@ -1,91 +1,80 @@
 ---
 name: text_to_image_upscale_lora_sampler_16
 type: Text To Image
-frequency: 12
+frequency: 10
 level: strong
-coverage: 0.9345
-common_nodes: [CLIPTextEncode, CR Latent Batch Size, CR Latent Input Switch, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, FluxKontextImageScale, ImageUpscaleWithModel, KSampler, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.856
+common_nodes: [CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX.1 Kontext商业级印花_纹理提取工作_2055163655582429186.json, 图片生成/图生图/印花提取_kontext_1955092292547874818.json, 图片生成/图生图/服装产品提取_kontext_1972140716925382657.json, 图片生成/图生图/服装提取_kontext_1955086376859570177.json, 图片生成/图生图/线稿提取_kontext_1955083266447609857.json, 图片生成/文生图/服装提取_1989951791611736065.json, 图片生成/文生图/服装提取_内部用_1967455597295702017.json, 平台全量/f1—服装印花提取_2030556712482119682.json, 平台全量/kontext商业级印花提取_2038879255320334338.json, 平台全量/提取纹理extract_texture 电商印花提取  kontext商业级印花提取工作流_1990989119348252674.json, 平台全量/服装提取_获取服装白底图_1964888284965031938.json, 数字人/数字人/服装提取_1990665799004282882.json]
+members: [图片生成/图生图/Qwen-controlnet线稿上色【含加速lora】_2066817304670855169.json, 图片生成/图生图/Qwen-controlnet线稿上色【含加速lora】_2067059788407721986.json, 图片生成/图生图/Qwen千问controlnet【加速 LoRA 提速版】：原版 fp8_e4m3f+低配 GGUF_1986439176663035905.json, 图片生成/图生图/Qwen千问controlnet【加速 LoRA 提速版】：原版 fp8_e4m3f+低配 GGUF_2003016885039951873.json, 图片生成/图生图/千问控制_2011334569835896833.json, 图片生成/图生图/千问控制工作流_2005606054086012929.json, 图片生成/图生图/千问控制工作流_2011336744066621442.json, 图片生成/图生图/千问版contronet工作流_1988909676433641473.json, 图片生成/文生图/Qwen千问文生图【含加速 LoRA 提速版】：原版 fp8_e4m3f + 低配 GGUF_2006697843498684418.json, 图片生成/文生图/千问文生图ControlNet控制+加速+电影感_1981575575947091970.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_16
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/FLUX.1 Kontext商业级印花_纹理提取工作_2055163655582429186.json、图片生成/图生图/印花提取_kontext_1955092292547874818.json、图片生成/图生图/服装产品提取_kontext_1972140716925382657.json、图片生成/图生图/服装提取_kontext_1955086376859570177.json、图片生成/图生图/线稿提取_kontext_1955083266447609857.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen-controlnet线稿上色【含加速lora】_2066817304670855169.json、图片生成/图生图/Qwen-controlnet线稿上色【含加速lora】_2067059788407721986.json、图片生成/图生图/Qwen千问controlnet【加速 LoRA 提速版】：原版 fp8_e4m3f+低配 GGUF_1986439176663035905.json、图片生成/图生图/Qwen千问controlnet【加速 LoRA 提速版】：原版 fp8_e4m3f+低配 GGUF_2003016885039951873.json、图片生成/图生图/千问控制_2011334569835896833.json…）
 
 - **类型**：Text To Image
-- **样本数**：12
+- **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 12 个 workflow 都包含：
+全部 10 个 workflow 都包含：
+- `CFGNorm`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Latent Batch Size`
-- `CR Latent Input Switch`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `FluxGuidance`
-- `FluxKontextImageScale`
 - `ImageUpscaleWithModel`
 - `KSampler`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImpactInt` —— 11/12 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 11/12 个有
-- `LayerUtility: CropByMask V2` —— 11/12 个有
-- `PreviewImage` —— 10/12 个有
-- `LayerUtility: PurgeVRAM` —— 6/12 个有
-- `ResizeLongestToNode` —— 6/12 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
-- `LayerUtility: ImageAutoCrop V2` —— 2/12 个有
-- `1hew_AnySwitchSelect` —— 1/12 个有
-- `GetNode` —— 1/12 个有
-- `GoogleTranslateTextNode` —— 1/12 个有
-- `ImageSaveNode_孤海` —— 1/12 个有
-- `Int` —— 1/12 个有
-- `JjkText` —— 1/12 个有
-- `PreviewAny` —— 1/12 个有
-- `PurgeVRAM_UTK` —— 1/12 个有
-- `RH_Translator` —— 1/12 个有
-- `SetNode` —— 1/12 个有
-- `Text` —— 1/12 个有
+- `AIO_Preprocessor` —— 9/10 个有
+- `ControlNetApplyAdvanced` —— 9/10 个有
+- `ControlNetLoader` —— 9/10 个有
+- `ImageScaleToTotalPixels` —— 9/10 个有
+- `LoadImage` —— 9/10 个有
+- `PreviewImage` —— 9/10 个有
+- `UnetLoaderGGUF` —— 7/10 个有
+- `CLIPLoaderGGUF` —— 2/10 个有
+- `Image Comparer (rgthree)` —— 1/10 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 12 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
-| 采样算法 | euler | - | 12 | 100% |
-| 调度器 | simple | - | 12 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
-| 宽度 | 768 | 768 - 1440 | 12 | 72% |
-| 高度 | 1024 | 1024 - 1440 | 12 | 86% |
+| 宽度 | 1536 | 1024 - 1536 | 10 | 83% |
+| 高度 | 1024 | 1024 - 1536 | 10 | 82% |
+| 采样步数 | 8 | 4 - 12 | 10 | 72% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
+| 采样算法 | euler | - | 10 | 100% |
+| 调度器 | simple | - | 10 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| ControlNet 权重 | 0.8 | 0.8 - 0.8 | 9 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，12 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，12 个样本，一致性 100%
-- 调度器 最常用 simple，12 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
-- 宽度 中位数 768，观测区间 768 - 1440，12 个样本
-- 高度 中位数 1024，观测区间 1024 - 1440，12 个样本，取值集中（一致性 86%）
+- 宽度 中位数 1536，观测区间 1024 - 1536，10 个样本，取值集中（一致性 83%）
+- 高度 中位数 1024，观测区间 1024 - 1536，10 个样本，取值集中（一致性 82%）
+- 采样步数 中位数 8，观测区间 4 - 12，10 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，10 个样本，一致性 100%
+- 调度器 最常用 simple，10 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- ControlNet 权重 中位数 0.8，观测区间 0.8 - 0.8，9 个样本，取值集中（一致性 100%）
+- 高发问题（7/10 个样本）：Steps较低可能导致细节不足

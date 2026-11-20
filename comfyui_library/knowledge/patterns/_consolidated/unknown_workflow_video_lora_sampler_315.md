@@ -1,78 +1,86 @@
 ---
 name: unknown_workflow_video_lora_sampler_315
 type: Unknown Workflow
-frequency: 9
+frequency: 8
 level: moderate
-coverage: 0.384222
-common_nodes: [BOOLConstant, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, GetNode, INTConstant, ImageResizeKJv2, LoadImage, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus Sampler, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus TorchCompileSettings, WanAnimatePlus VAELoader]
+coverage: 0.52075
+common_nodes: [CLIPVisionLoader, INTConstant, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, Seed (rgthree), VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/SCAIL2优化版+多图参考 By 像素幻想Lab_2067599527623872514.json, 平台全量/SCAIL2优化版+多图参考 By 像素自用_2105315594722701314.json, 视频生成/图生视频/81.SCAIL2优化版+多图参考_2096980051706339330.json, 视频生成/图生视频/SCAIL2 动作迁移（多图参考）_2079086131693572098.json, 视频生成/图生视频/SCAIL2 角色替换&动作迁移_2076542724727201794.json, 视频生成/图生视频/SCAIL2+深度图动作参考（自然表情）降低原视频细节干扰方案_2081964333583654914.json, 视频生成/图生视频/SCAIL2人物替换+重打光lora 优化版工作流（清晰布局_小白适用_效果超夯）_2078736579782340610.json, 视频生成/图生视频/SCAIL2人物替换+首帧自动姿态对齐（一键自动工作流）_2079575491580878850.json, 视频生成/图生视频/SCAIL2系列优化版--动作迁移专用工作流（清晰布局_小白适用_效果超夯）_2075772380282187777.json]
+members: [视频生成/图生视频/qy-简化_2035638502787911682.json, 视频生成/图生视频/啊癫【丝滑变装】&【动作迁移】&【人物替换】Wan2.2 Animate 分段队列_2062892652022030338.json, 视频生成/图生视频/图生视频-【丝滑变装】-【动作迁移】-【人物替换】Wan2.2 Animate 分段队列_2063193185219858434.json, 视频生成/图生视频/美女穿搭一键换衣 变装 +动作迁移 +动作模仿_2066425187536564226.json, 视频生成/图生视频/顶级视频换人（变装跳舞专用）_2099576921075052545.json, 视频生成/图生视频/🔥角色替换+动作迁移+面部表情=爆款复刻  无加密节点_2109231949574402050.json, 视频生成/图生视频/🔥角色替换+动作迁移+面部表情=爆款复刻 9月15日 无加密节点_2099712198623981570.json, 视频生成/文生视频/【丝滑变装】&【动作迁移】&【人物替换】_2100616978972102658.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_315
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（平台全量/SCAIL2优化版+多图参考 By 像素幻想Lab_2067599527623872514.json、平台全量/SCAIL2优化版+多图参考 By 像素自用_2105315594722701314.json、视频生成/图生视频/81.SCAIL2优化版+多图参考_2096980051706339330.json、视频生成/图生视频/SCAIL2 动作迁移（多图参考）_2079086131693572098.json、视频生成/图生视频/SCAIL2 角色替换&动作迁移_2076542724727201794.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/qy-简化_2035638502787911682.json、视频生成/图生视频/啊癫【丝滑变装】&【动作迁移】&【人物替换】Wan2.2 Animate 分段队列_2062892652022030338.json、视频生成/图生视频/图生视频-【丝滑变装】-【动作迁移】-【人物替换】Wan2.2 Animate 分段队列_2063193185219858434.json、视频生成/图生视频/美女穿搭一键换衣 变装 +动作迁移 +动作模仿_2066425187536564226.json、视频生成/图生视频/顶级视频换人（变装跳舞专用）_2099576921075052545.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：8
 - **可信度**：中等可信
-- **平均知识覆盖**：38%
+- **平均知识覆盖**：52%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BOOLConstant`
-- `CLIPTextEncode`
+全部 8 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `GetNode`
 - `INTConstant`
 - `ImageResizeKJv2`
 - `LoadImage`
-- `PreviewImage`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SetNode`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `Seed (rgthree)`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus Sampler`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus TorchCompileSettings`
-- `WanAnimatePlus VAELoader`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `easy imageRemBg` —— 7/9 个有
-- `Fast Groups Bypasser (rgthree)` —— 5/9 个有
-- `ImageBatchMulti` —— 5/9 个有
-- `ImageConcanate` —— 5/9 个有
-- `ImageConcatMulti` —— 5/9 个有
-- `Switch any [Crystools]` —— 5/9 个有
-- `ComfyNumberConvert` —— 4/9 个有
-- `PrimitiveBoolean` —— 4/9 个有
-- `PrimitiveInt` —— 4/9 个有
-- `PrimitiveStringMultiline` —— 4/9 个有
-- `Label (rgthree)` —— 3/9 个有
-- `AIO_Preprocessor` —— 1/9 个有
-- `BiRefNet_Hugo` —— 1/9 个有
-- `CR Prompt Text` —— 1/9 个有
-- `ImageScaleToTotalPixels` —— 1/9 个有
-- `RH_RhartImageG2ImageToImage` —— 1/9 个有
-- `SaveImage` —— 1/9 个有
-- `Seed (rgthree)` —— 1/9 个有
-- `SeedVR2LoadDiTModel` —— 1/9 个有
-- `SeedVR2LoadVAEModel` —— 1/9 个有
-- `SeedVR2VideoUpscaler` —— 1/9 个有
-- `VideoFrameSelector` —— 1/9 个有
+- `BodyRatioMapperSDPoseRender` —— 7/8 个有
+- `CheckpointLoaderSimple` —— 7/8 个有
+- `SDPoseKeypointExtractor` —— 7/8 个有
+- `WanVideoContextOptions` —— 7/8 个有
+- `BlockifyMask` —— 6/8 个有
+- `CLIPTextEncode` —— 6/8 个有
+- `DrawMaskOnImage` —— 6/8 个有
+- `GetNode` —— 6/8 个有
+- `GrowMaskWithBlur` —— 6/8 个有
+- `PlaySound|pysssss` —— 6/8 个有
+- `PreviewImage` —— 6/8 个有
+- `SAM3_Detect` —— 6/8 个有
+- `SetNode` —— 6/8 个有
+- `BBoxYOLO` —— 5/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/8 个有
+- `SegmentQueueRunner` —— 5/8 个有
+- `YOLOModelLoader` —— 5/8 个有
+- `ImageBlend` —— 4/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/8 个有
+- `MaskToImage` —— 4/8 个有
+- `WanVideoEncode` —— 4/8 个有
+- `WanVideoUni3C_ControlnetLoader` —— 4/8 个有
+- `WanVideoUni3C_embeds` —— 4/8 个有
+- `Primitive integer [Crystools]` —— 3/8 个有
+- `SimpleMath+` —— 3/8 个有
+- `CR Text` —— 1/8 个有
+- `FastUnsharpSharpen` —— 1/8 个有
+- `Label (rgthree)` —— 1/8 个有
+- `RTXVideoSuperResolution` —— 1/8 个有
+- `SDPoseOODLoader` —— 1/8 个有
+- `SDPoseOODProcessor` —— 1/8 个有
+- `Text` —— 1/8 个有
+- `easy showAnything` —— 1/8 个有
 
 ## 典型参数
 

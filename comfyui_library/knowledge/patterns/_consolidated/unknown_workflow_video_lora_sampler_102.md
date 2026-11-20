@@ -1,88 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_102
 type: Unknown Workflow
-frequency: 17
+frequency: 16
 level: strong
-coverage: 0.834588
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, SCAIL2ScheduledLongVideoWithSAM, SCAIL2SegmentPlanBuilder, ShowText|pysssss, UNETLoader, VAELoader, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, easy showAnything]
+coverage: 0.9035
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, BerniniS2VConditioning, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ComfyNumberConvert, Float, KSamplerAdvanced, LoadAudio, LoadImage, LoraLoaderModelOnly, PrimitiveStringMultiline, SoundFlow_GetLength, TrimAudioDuration, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/Scail2 TTP多参+内循环+面部强化 动作迁移_2071189847569682434.json, 平台全量/Scail2 TTP多参+内循环+面部强化 动作迁移_2071200515316342786.json, 平台全量/Scail2 TTP多参+内循环+面部强化_2071174951872327682.json, 平台全量/Scail2 TTP小脸修复_2073454459241451521.json, 平台全量/Scail2 动作迁移TTP多参+内循环+面部强化_2071782842991996929.json, 平台全量/scail2完美复刻！！！【拒绝面部崩坏】！！再次进化_2075996318547398658.json, 数字人/数字人/Scail2 TTP多参+内循环_2071752283070754818.json, 数字人/数字人/Scail2 长视频内循环人物角色替换迁移面部一致优化_2074324647696490497.json, 视频生成/图生视频/Scail2 TTP多参+内循环+面部强化_2071860174570221570.json, 视频生成/图生视频/Scail2 TTP多参+内循环+面部强化_2072501093262774273.json, 视频生成/图生视频/Scail2 TTP多参+内循环+面部强化人物角色替换_2071400172424351746.json, 视频生成/图生视频/Scail2 多图参考+面部修复 全身跳舞面部不崩 内部自循环 长视频直出_2072215231262191617.json, 视频生成/图生视频/Scail2+动作迁移+多参面+部强化+内循环长视频_2072162271043870721.json, 视频生成/图生视频/Scail2+角色替换+多参面+内循环长视频_2072986209936297986.json, 视频生成/图生视频/Scail2+角色替换+多参面+内循环长视频_2073313220749967360.json, 视频生成/图生视频/Scail2-多图参考+面部修复-全身视频面部不崩-循环长视频直出_2073299453481668610.json, 视频生成/图生视频/Scail2-脸部自适应-姿势迁移-重打光_2071800002871123969.json]
+members: [视频生成/图生视频/Bernini 人物+场景+音频合成_2076950547332161538.json, 视频生成/图生视频/bernini丰富表情动作数字人_2081275038845726722.json, 视频生成/图生视频/bernini人物对口型_2079327737751359489.json, 视频生成/图生视频/bernini人物开口说话_2077628506321805314.json, 视频生成/图生视频/bernini人物开口说话视频_2077569166571294722.json, 视频生成/图生视频/bernini人物开口说话视频_2079048469997772802.json, 视频生成/图生视频/bernini人物开口说话视频_2079366355974975489.json, 视频生成/图生视频/bernini人物行走中开口说话_2081361413834108929.json, 视频生成/图生视频/bernini数字人开口说话视频图生视频_2077701219740639233.json, 视频生成/图生视频/bernini数字人开口说话视频图生视频_2077741026973937666.json, 视频生成/图生视频/bernini数字人开口说话视频图生视频_2088247090945286146.json, 视频生成/图生视频/bernini角色开口唱歌_2077570082494050305.json, 视频生成/图生视频/bernini高清动态数字人_2081346958836461570.json, 视频生成/图生视频/bernini高清画质人物开口说话_2081307306670776321.json, 视频生成/图生视频/人物开口说话视频-bernini_2080089032889036801.json, 视频生成/图生视频/（1图 1音频）WAN2.2  Bernini人物开口说话视频_2111395780270575618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_102
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（平台全量/Scail2 TTP多参+内循环+面部强化 动作迁移_2071189847569682434.json、平台全量/Scail2 TTP多参+内循环+面部强化 动作迁移_2071200515316342786.json、平台全量/Scail2 TTP多参+内循环+面部强化_2071174951872327682.json、平台全量/Scail2 TTP小脸修复_2073454459241451521.json、平台全量/Scail2 动作迁移TTP多参+内循环+面部强化_2071782842991996929.json…）
+> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/Bernini 人物+场景+音频合成_2076950547332161538.json、视频生成/图生视频/bernini丰富表情动作数字人_2081275038845726722.json、视频生成/图生视频/bernini人物对口型_2079327737751359489.json、视频生成/图生视频/bernini人物开口说话_2077628506321805314.json、视频生成/图生视频/bernini人物开口说话视频_2077569166571294722.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
+- **样本数**：16
 - **可信度**：强结论
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `BasicScheduler`
+全部 16 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `AudioSeparation`
+- `BerniniS2VConditioning`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ImageResizeKJv2`
-- `KSamplerSelect`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `Float`
+- `KSamplerAdvanced`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `SCAIL2ScheduledLongVideoWithSAM`
-- `SCAIL2SegmentPlanBuilder`
-- `ShowText|pysssss`
+- `PrimitiveStringMultiline`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfo`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 15/17 个有
-- `ImageConcatMulti` —— 15/17 个有
-- `MaskToImage` —— 15/17 个有
-- `PreviewImage` —— 15/17 个有
-- `SCAIL2AlignReferenceFaceToCrop` —— 15/17 个有
-- `SCAIL2FaceCompositeBack` —— 15/17 个有
-- `SCAIL2HeadTrackCrop` —— 15/17 个有
-- `SCAIL2ChunkKeyframeExtractor` —— 12/17 个有
-- `SCAIL2KeyframeMatrixViewer` —— 12/17 个有
-- `CR Text` —— 6/17 个有
-- `SimpleMath+` —— 6/17 个有
-- `Int` —— 5/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/17 个有
-- `GetNode` —— 3/17 个有
-- `RH_Nano_Banana2_Image2Image` —— 3/17 个有
-- `RH_RhartImageG2ImageToImage` —— 3/17 个有
-- `SaveImage` —— 3/17 个有
-- `SetNode` —— 3/17 个有
-- `TTResolutionSelector` —— 3/17 个有
-- `easy int` —— 3/17 个有
-- `CreateVideo` —— 2/17 个有
-- `FlashVSR_SM_KSampler` —— 2/17 个有
-- `FlashVSR_SM_Model` —— 2/17 个有
-- `SaveVideo` —— 2/17 个有
-- `孤海注释` —— 2/17 个有
-- `Note Plus (mtb)` —— 1/17 个有
-- `PathchSageAttentionKJ` —— 1/17 个有
-- `PrimitiveStringMultiline` —— 1/17 个有
-- `WanAnimatePlus LoraSelectMulti` —— 1/17 个有
+- `Int` —— 15/16 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 15/16 个有
+- `RHHiddenNodes` —— 15/16 个有
+- `RIFEInterpolation` —— 15/16 个有
+- `Text` —— 15/16 个有
+- `PreviewAny` —— 11/16 个有
+- `PreviewImage` —— 4/16 个有
+- `CR Text` —— 1/16 个有
+- `ImageResizeKJv2` —— 1/16 个有
+- `ImpactFloat` —— 1/16 个有
+- `Note Plus (mtb)` —— 1/16 个有
+- `PreviewAudio` —— 1/16 个有
+- `RIFE VFI` —— 1/16 个有
+- `easy int` —— 1/16 个有
+- `孤海注释` —— 1/16 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 1.34378e+09 | - | 2 | 82% |
-| Prompt 约束强度(CFG) | randomize | - | 2 | 100% |
-| 采样算法 | 2 | - | 2 | 100% |
-| 调度器 | 3.5 | - | 2 | 100% |
-| 重绘幅度 | 11 | - | 2 | 100% |
+| 采样步数 | fixed | - | 16 | 94% |
+| Prompt 约束强度(CFG) | 4 | 4 - 4 | 16 | 100% |
+| 采样算法 | 1 | 1 - 1 | 16 | 100% |
+| 调度器 | dpmpp_2m_sde | - | 16 | 100% |
+| 重绘幅度 | sgm_uniform | - | 16 | 100% |
 
 ## 常见问题
 
@@ -90,10 +77,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 1.34378e+09，样本不足，未给区间，2 个样本，取值集中（一致性 82%）
-- Prompt 约束强度(CFG) 最常用 randomize，2 个样本，一致性 100%
-- 采样算法 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.59208e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 采样步数 最常用 fixed，16 个样本，一致性 94%
+- Prompt 约束强度(CFG) 中位数 4，观测区间 4 - 4，16 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 调度器 最常用 dpmpp_2m_sde，16 个样本，一致性 100%
+- 重绘幅度 最常用 sgm_uniform，16 个样本，一致性 100%

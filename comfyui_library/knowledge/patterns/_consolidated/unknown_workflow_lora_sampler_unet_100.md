@@ -1,81 +1,96 @@
 ---
 name: unknown_workflow_lora_sampler_unet_100
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.878
-common_nodes: [CFGNorm, CLIPLoader, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 7
+level: weak
+coverage: 0.685286
+common_nodes: [CFGNorm, CLIPLoader, CropWithPadInfo, Image Comparer (rgthree), ImageResizeKJv2, ImageScaleBy, KSampler, LayerMask: MaskGrow, LayerUtility: CropByMask V2, LayerUtility: RestoreCropBox, LoadImage, LoraLoaderModelOnly, MaskPreview, ModelSamplingAuraFlow, PreviewImage, PrimitiveStringMultiline, QwenEditAdaptiveLongestEdge, QwenEditConfigPreparer, QwenEditOutputExtractor, SaveImage, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/02-02-01-QwenEdit-双图编辑-原生_2006652720903622658.json, 图片生成/图生图/10岁LoRA——Qwen-Image-Edit应用_1963222883298414594.json, 图片生成/图生图/70岁LoRA——Qwen-Image-Edit应用_1961782664925790210.json, 图片生成/图生图/Mad裂变资产-1_1989310590176948226.json, 图片生成/图生图/Qwen Edit 2509单图编辑_1993590123661115394.json, 图片生成/图生图/Qwen 编辑 生成 三视图_1962408297523449858.json, 图片生成/图生图/Qwen+编辑+表情包_1964221766015045634.json, 图片生成/图生图/Qwen-Edit-2511人物角色三视图3D国漫CG风格（图生图）_2083446869669277698.json]
+members: [图片生成/图生图/Qwen 2511 局部角色替换工作流_2042594620185513986.json, 图片生成/图生图/Qwen2511+Sam3.1万物迁移-精准迁移_2056243822400729090.json, 图片生成/图生图/Qwen2511+Sam3.1局部重绘-精准重绘_2056243804398772226.json, 图片生成/文生图/2511无痕换头重绘贴回大师版_2027381547103424514.json, 图片生成/文生图/重绘贴回-2511局部重绘-万物迁移_2017885601479004162.json, 图片生成/文生图/重绘贴回-2511局部重绘_2018213964676603905.json, 视频生成/文生视频/Qwen 2511 局部角色替换工作流_2041678315030843394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_100
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/02-02-01-QwenEdit-双图编辑-原生_2006652720903622658.json、图片生成/图生图/10岁LoRA——Qwen-Image-Edit应用_1963222883298414594.json、图片生成/图生图/70岁LoRA——Qwen-Image-Edit应用_1961782664925790210.json、图片生成/图生图/Mad裂变资产-1_1989310590176948226.json、图片生成/图生图/Qwen Edit 2509单图编辑_1993590123661115394.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/Qwen 2511 局部角色替换工作流_2042594620185513986.json、图片生成/图生图/Qwen2511+Sam3.1万物迁移-精准迁移_2056243822400729090.json、图片生成/图生图/Qwen2511+Sam3.1局部重绘-精准重绘_2056243804398772226.json、图片生成/文生图/2511无痕换头重绘贴回大师版_2027381547103424514.json、图片生成/文生图/重绘贴回-2511局部重绘-万物迁移_2017885601479004162.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **样本数**：7
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
-- `EmptyLatentImage`
+- `CropWithPadInfo`
+- `Image Comparer (rgthree)`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
 - `KSampler`
+- `LayerMask: MaskGrow`
+- `LayerUtility: CropByMask V2`
+- `LayerUtility: RestoreCropBox`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `MaskPreview`
 - `ModelSamplingAuraFlow`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `QwenEditAdaptiveLongestEdge`
+- `QwenEditConfigPreparer`
+- `QwenEditOutputExtractor`
 - `SaveImage`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `TextEncodeQwenImageEditPlus` —— 6/8 个有
-- `TextEncodeQwenImageEdit` —— 4/8 个有
-- `JjkText` —— 2/8 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `easy imageConcat` —— 2/8 个有
-- `CR Text Concatenate` —— 1/8 个有
-- `GetImageSize` —— 1/8 个有
-- `GetImageSizeAndCount` —— 1/8 个有
-- `ImageScaleToTotalPixels` —— 1/8 个有
-- `ImageTile+` —— 1/8 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/8 个有
-- `Text Multiline` —— 1/8 个有
-- `ttN concat` —— 1/8 个有
+- `ConditioningZeroOut` —— 6/7 个有
+- `LayerUtility: ImageReel` —— 6/7 个有
+- `LayerUtility: ImageReelComposit` —— 6/7 个有
+- `MaskToImage` —— 6/7 个有
+- `QwenEditAny2Image` —— 6/7 个有
+- `QwenEditListExtractor` —— 6/7 个有
+- `TTP_Expand_And_Mask` —— 6/7 个有
+- `Image Rembg (Remove Background)` —— 5/7 个有
+- `Mask To Image (mtb)` —— 5/7 个有
+- `PreviewAny` —— 5/7 个有
+- `PrimitiveInt` —— 5/7 个有
+- `CLIPTextEncode` —— 3/7 个有
+- `Any Switch (rgthree)` —— 2/7 个有
+- `CheckpointLoaderSimple` —— 2/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `SAM3_Detect` —— 2/7 个有
+- `JWImageExtractFromBatch` —— 1/7 个有
+- `RMBG` —— 1/7 个有
+- `VHS_LoadVideo` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1360 | 768 - 1664 | 8 | 77% |
-| 高度 | 1024 | 720 - 1920 | 8 | 67% |
-| 采样步数 | 6 | 4 - 8 | 8 | 67% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 4 | 4 - 25 | 7 | 0% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 7 | 57% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | sgm_uniform | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 6/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1360，观测区间 768 - 1664，8 个样本
-- 高度 中位数 1024，观测区间 720 - 1920，8 个样本
-- 采样步数 中位数 6，观测区间 4 - 8，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（14/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 25，7 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，7 个样本
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（6/7 个样本）：Steps较低可能导致细节不足

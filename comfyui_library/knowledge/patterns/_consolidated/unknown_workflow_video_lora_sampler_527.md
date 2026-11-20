@@ -1,75 +1,92 @@
 ---
 name: unknown_workflow_video_lora_sampler_527
 type: Unknown Workflow
-frequency: 6
-level: strong
-coverage: 0.955167
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJ, ImageResizeKJv2, ImpactInt, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanFirstLastFrameToVideo, WanVideoNAG]
+frequency: 4
+level: moderate
+coverage: 0.707
+common_nodes: [CLIPVisionLoader, CR Batch Images From List, DownloadAndLoadWav2VecModel, FloatConstant, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageBatch, ImageListToImageBatch, ImageResizeKJv2, ImpactExecutionOrderController, InfiniteTalkEmbedsSlice, InfiniteTalkMultiImage, LayerUtility: BooleanOperatorV2, LoadImage, LoadImageListFromDir //Inspire, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PreviewAny, PreviewImage, PrimitiveBoolean, PrimitiveFloat, SaveAudio, SetNode, ShowText|pysssss, SimpleMath+, String Replace (mtb), StringReplace, Text Concatenate (JPS), TextInput_, VHS_DuplicateImages, VHS_LoadAudioUpload, VHS_VideoCombine, VideoFromPathsAndAudio, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoVAELoader, easy batchAnything, easy boolean, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy ifElse, easy indexAnything, easy lengthAnything, easy showAnything]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2 首尾帧 +自动扩词【官方极速版】v1_1955930393901977601.json, 视频生成/图生视频/wan2.2 首尾帧 极速版_1952583825614409730.json, 视频生成/图生视频/wan2.2 首尾帧视频 lightx2v 加速_1995400759510544385.json, 视频生成/图生视频/万相首尾帧_1953403463789150209.json, 视频生成/图生视频/官方万相wan2.2 首尾帧 极速版+自动扩词_1953122188666802177.json, 视频生成/图生视频/首尾帧生视频_自动提示词_1955867522656555010.json]
+members: [图片生成/图生图/（多图版）InfiniteTalk循环数字人（音乐MV）V2_2035644315086622722.json, 视频生成/图生视频/InfiniteTalk 图片数字人--多图 制作MV  低显存版本 24G 可跑无限_2000967114590650369.json, 视频生成/图生视频/InfiniteTalk 图片数字人--多图 制作MV_1999117473494560769.json, 视频生成/图生视频/（多图版）InfiniteTalk循环数字人（音乐MV）V2_1999823638662610945.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_527
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 首尾帧 +自动扩词【官方极速版】v1_1955930393901977601.json、视频生成/图生视频/wan2.2 首尾帧 极速版_1952583825614409730.json、视频生成/图生视频/wan2.2 首尾帧视频 lightx2v 加速_1995400759510544385.json、视频生成/图生视频/万相首尾帧_1953403463789150209.json、视频生成/图生视频/官方万相wan2.2 首尾帧 极速版+自动扩词_1953122188666802177.json…）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/（多图版）InfiniteTalk循环数字人（音乐MV）V2_2035644315086622722.json、视频生成/图生视频/InfiniteTalk 图片数字人--多图 制作MV  低显存版本 24G 可跑无限_2000967114590650369.json、视频生成/图生视频/InfiniteTalk 图片数字人--多图 制作MV_1999117473494560769.json、视频生成/图生视频/（多图版）InfiniteTalk循环数字人（音乐MV）V2_1999823638662610945.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
-- **可信度**：强结论
-- **平均知识覆盖**：96%
+- **样本数**：4
+- **可信度**：中等可信
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 4 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `ImageResizeKJ`
+- `CR Batch Images From List`
+- `DownloadAndLoadWav2VecModel`
+- `FloatConstant`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `INTConstant`
+- `ImageBatch`
+- `ImageListToImageBatch`
 - `ImageResizeKJv2`
-- `ImpactInt`
-- `KSamplerAdvanced`
+- `ImpactExecutionOrderController`
+- `InfiniteTalkEmbedsSlice`
+- `InfiniteTalkMultiImage`
+- `LayerUtility: BooleanOperatorV2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
+- `LoadImageListFromDir //Inspire`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAny`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `SaveAudio`
+- `SetNode`
+- `ShowText|pysssss`
 - `SimpleMath+`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `String Replace (mtb)`
+- `StringReplace`
+- `Text Concatenate (JPS)`
+- `TextInput_`
+- `VHS_DuplicateImages`
+- `VHS_LoadAudioUpload`
 - `VHS_VideoCombine`
-- `WanFirstLastFrameToVideo`
-- `WanVideoNAG`
+- `VideoFromPathsAndAudio`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoPassImagesFromSamples`
+- `WanVideoSampler`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy batchAnything`
+- `easy boolean`
+- `easy convertAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy ifElse`
+- `easy indexAnything`
+- `easy lengthAnything`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 5/6 个有
-- `RH_LLMAPI_NODE` —— 3/6 个有
-- `CR Prompt Text` —— 2/6 个有
-- `Fast Groups Muter (rgthree)` —— 2/6 个有
-- `JWStringConcat` —— 2/6 个有
-- `PIP_StringConcatenation` —— 2/6 个有
-- `RH_Captioner` —— 2/6 个有
-- `TextConcat` —— 2/6 个有
-- `Wan22PromptSelector` —— 2/6 个有
-- `CreateVideo` —— 1/6 个有
-- `DeepTranslatorTextNode` —— 1/6 个有
-- `Joy_caption_two` —— 1/6 个有
-- `Joy_caption_two_load` —— 1/6 个有
-- `LayerUtility: TextJoin` —— 1/6 个有
-- `PreViewVideo` —— 1/6 个有
-- `PrimitiveStringMultiline` —— 1/6 个有
+- `1hew_ListCustomString` —— 2/4 个有
+- `ListCustomString` —— 2/4 个有
+- `Note Plus (mtb)` —— 2/4 个有
+- `WanVideoBlockSwap` —— 1/4 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 6 | 83% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 6 | 100% |
-| 采样算法 | 1 | 1 - 1 | 6 | 100% |
-| 调度器 | lcm | - | 6 | 100% |
-| 重绘幅度 | simple | - | 6 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -77,8 +94,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，6 个样本，一致性 83%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，6 个样本，一致性 100%
-- 重绘幅度 最常用 simple，6 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

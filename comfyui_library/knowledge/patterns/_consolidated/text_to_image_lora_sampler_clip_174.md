@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_174
 type: Text To Image
 frequency: 10
 level: strong
-coverage: 0.8995
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.9069
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/图片后期四合一套餐｜加文字加水印手动溶图指定放置_2101519901524578306.json, 图片生成/图生图/图生图AIGC Image 2.5九图工作流，高质量图像到图像处理方案_2107238746419716097.json, 图片生成/图生图/图生图手办创建工作流，人像照片秒变潮玩模型摆件_2112347977149927425.json, 图片生成/图生图/多场景图生成工作流， 一次产出多种场景效果_2102863110943105026.json, 图片生成/图生图/多场景图生成工作流，_一次产出多种场景效果_2105512418687414273.json, 图片生成/图生图/正面全身去头强制右侧高清特写面部特征文生图处理工具_2102164933382332417.json, 图片生成/图生图/特点图提取生成工作流， 快速提取画面关键特征_2102858541479583746.json, 图片生成/图生图/特点图提取生成工作流，_快速提取画面关键特征_2105516637746196481.json, 图片生成/图生图/适用步骤图生成工作流， 拆解操作流程可视化呈现_2102860066134257665.json, 图片生成/图生图/适用步骤图生成工作流，_拆解操作流程可视化呈现_2105515184944140289.json]
+members: [图片生成/图生图/千问3.5 LLAMA大模型对话工作流｜接入指南附飞书文档_2111267612377309186.json, 图片生成/图生图/千问3.5 LLAMA接入工作流｜大模型能力加持其他场景｜玩法自由拓展_2102276173383421953.json, 图片生成/图生图/千问3.5 LLAMA本地推理，动画剧本辅助生成_2111519934110064642.json, 图片生成/图生图/图生图实用重绘工具｜全能图片2.0一键出图_2090818490918854657.json, 图片生成/图生图/埃及饰品海报图生图方案｜古埃及风饰品宣传图批量产出_2099164243470938113.json, 图片生成/图生图/墨西哥风格饰品海报生成 适配海外营销活动审美_2098842391431176193.json, 图片生成/图生图/墨西哥饰品海报批量出图｜图生图一键生成异域风电商素材_2099157197157658626.json, 图片生成/图生图/多视角衣物4张图输入｜服装多角度还原细节不糊_2111814232412086274.json, 图片生成/图生图/沙特饰品海报工作流｜图生图批量做沙特风珠宝宣传图_2099161734425694210.json, 图片生成/图生图/西班牙饰品海报制作神器｜图生图欧式风情饰品海报量产_2099166819130105858.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_174
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/图片后期四合一套餐｜加文字加水印手动溶图指定放置_2101519901524578306.json、图片生成/图生图/图生图AIGC Image 2.5九图工作流，高质量图像到图像处理方案_2107238746419716097.json、图片生成/图生图/图生图手办创建工作流，人像照片秒变潮玩模型摆件_2112347977149927425.json、图片生成/图生图/多场景图生成工作流， 一次产出多种场景效果_2102863110943105026.json、图片生成/图生图/多场景图生成工作流，_一次产出多种场景效果_2105512418687414273.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/千问3.5 LLAMA大模型对话工作流｜接入指南附飞书文档_2111267612377309186.json、图片生成/图生图/千问3.5 LLAMA接入工作流｜大模型能力加持其他场景｜玩法自由拓展_2102276173383421953.json、图片生成/图生图/千问3.5 LLAMA本地推理，动画剧本辅助生成_2111519934110064642.json、图片生成/图生图/图生图实用重绘工具｜全能图片2.0一键出图_2090818490918854657.json、图片生成/图生图/埃及饰品海报图生图方案｜古埃及风饰品宣传图批量产出_2099164243470938113.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
@@ -30,24 +30,23 @@ source: knowledge_consolidation
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG25SunburstImageToImage` —— 9/10 个有
-- `孤海注释` —— 7/10 个有
-- `JWStringConcat` —— 6/10 个有
-- `Text` —— 6/10 个有
-- `PreviewImage` —— 3/10 个有
-- `CR Prompt Text` —— 2/10 个有
-- `BiRefNetRMBG` —— 1/10 个有
-- `CR Text` —— 1/10 个有
-- `EmptyImage` —— 1/10 个有
-- `FastCanvas` —— 1/10 个有
-- `FastCanvasTool` —— 1/10 个有
+- `SaveImage` —— 8/10 个有
+- `RH_RhartImageG2ImageToImage` —— 7/10 个有
+- `RH_RhartImageG2OfficialImageToImage` —— 3/10 个有
+- `easy saveText` —— 3/10 个有
+- `llama_cpp_instruct_adv` —— 3/10 个有
+- `llama_cpp_model_loader` —— 3/10 个有
+- `llama_cpp_parameters` —— 3/10 个有
+- `BatchImagesNode` —— 2/10 个有
+- `ImpactMakeImageList` —— 1/10 个有
+- `PrimitiveStringMultiline` —— 1/10 个有
 
 ## 典型参数
 
@@ -65,7 +64,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -76,4 +75,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，10 个样本，一致性 100%
 - 调度器 最常用 beta，10 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 高发问题（11/10 个样本）：Steps较低可能导致细节不足
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

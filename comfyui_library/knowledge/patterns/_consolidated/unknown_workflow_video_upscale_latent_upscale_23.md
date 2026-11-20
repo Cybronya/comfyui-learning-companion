@@ -1,81 +1,75 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_23
 type: Unknown Workflow
-frequency: 13
+frequency: 12
 level: moderate
-coverage: 0.875
-common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3LearnedTwoPassParityPlanT8Advanced, MiniMaxH3TwoPassDetailMixerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
+coverage: 0.924
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderBypassModelOnly, ManualSigmas, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3LatentUpscaleBy32T8, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, PreviewAny, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, SolAttnMiniMax, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/02_H3首帧对白视频_1至5人_2101612649518813185.json, 视频生成/图生视频/02_H3首帧对白视频_1至5人_2113238126385778690.json, 视频生成/图生视频/MiniMax H3-不油文剧工作流_2096934850723926018.json, 视频生成/图生视频/MiniMax H3参考生视频-10Eros turbo动态叙事工作流_2095011453865652225.json, 视频生成/图生视频/MiniMax H3参考生视频-武戏战斗版_2098232096543297537.json, 视频生成/图生视频/MiniMax H3双采参考生视频-8步turbo分镜叙事工作流_2095007873272209409.json, 视频生成/图生视频/MiniMax H3双采参考生视频支持参考音频和视频_2102401654355218433.json, 视频生成/图生视频/MiniMax H3双采参考生视频格莱美慢镜头_2103902789440196610.json, 视频生成/图生视频/MiniMax H3双采多图参考生视频_2104183600680890369.json, 视频生成/图生视频/（可调节动态-均衡版+高清化）MiniMax H3双采参考生视频V1_2103917510214119426.json, 视频生成/图生视频/（可调节动态-均衡版）MiniMax H3双采参考生视频V1_2102340152520699905.json, 视频生成/文生视频/OrbTv全能模型_优化版_2104845409087746049.json, 视频生成/文生视频/orb全能模型_2098320359996092418.json]
+members: [数字人/数字人/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092206996211724289.json, 数字人/数字人/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092231431488622593.json, 数字人/数字人/（0901）Minimax参考生视频V3_2094657495255048194.json, 视频生成/图生视频/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092676059840991233.json, 视频生成/图生视频/Minimax参考生视频V3_2091389333650628610.json, 视频生成/图生视频/Minimax参考生视频V3_2091443515422236674.json, 视频生成/图生视频/（0824）Minimax参考生视频V3_2091726026987626498.json, 视频生成/图生视频/（0828）Minimax参考生视频V3_2093315459616694273.json, 视频生成/图生视频/（0830）Minimax参考生视频V3_2094357571929989121.json, 视频生成/图生视频/（0913）Minimax参考生视频V3_2099142712363667458.json, 视频生成/文生视频/10.09新工作流_2108550820999553026.json, 视频生成/文生视频/（0930）Minimax参考生视频V3_2105122969159815169.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_23
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（视频生成/图生视频/02_H3首帧对白视频_1至5人_2101612649518813185.json、视频生成/图生视频/02_H3首帧对白视频_1至5人_2113238126385778690.json、视频生成/图生视频/MiniMax H3-不油文剧工作流_2096934850723926018.json、视频生成/图生视频/MiniMax H3参考生视频-10Eros turbo动态叙事工作流_2095011453865652225.json、视频生成/图生视频/MiniMax H3参考生视频-武戏战斗版_2098232096543297537.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092206996211724289.json、数字人/数字人/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092231431488622593.json、数字人/数字人/（0901）Minimax参考生视频V3_2094657495255048194.json、视频生成/图生视频/8.25Minimax H3+双采+加速+Lantent Upscaler参考生视频_2092676059840991233.json、视频生成/图生视频/Minimax参考生视频V3_2091389333650628610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：13
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `BasicGuider`
 - `CLIPLoader`
 - `CR Prompt Text`
 - `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
+- `LoraLoaderBypassModelOnly`
+- `ManualSigmas`
 - `MiniMaxH3AVDecodeT8`
 - `MiniMaxH3AudioConditioningT8`
 - `MiniMaxH3DualClockSamplerT8`
-- `MiniMaxH3LearnedLatentUpscaleT8Advanced`
-- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced`
-- `MiniMaxH3TwoPassDetailMixerT8Advanced`
-- `MiniMaxH3TwoPassLatentReconcileT8Advanced`
+- `MiniMaxH3LatentUpscaleBy32T8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `PreviewAny`
 - `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
+- `SolAttnMiniMax`
 - `UNETLoader`
+- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderBypassModelOnly` —— 11/13 个有
-- `ModelAttentionBackend` —— 11/13 个有
-- `ResolutionSelector` —— 11/13 个有
-- `SolAttnMiniMax` —— 11/13 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 10/13 个有
-- `ConcatTextOfUtils` —— 8/13 个有
-- `LoraLoaderModelOnly` —— 8/13 个有
-- `Float` —— 7/13 个有
-- `easy anythingIndexSwitch` —— 7/13 个有
-- `LoadAudio` —— 5/13 个有
-- `MiniMaxH3SemanticBridgeApplyT8` —— 5/13 个有
-- `MiniMaxH3SemanticBridgeConfigT8` —— 5/13 个有
-- `VHS_LoadVideo` —— 5/13 个有
-- `ImpactInt` —— 4/13 个有
-- `ImpactSwitch` —— 4/13 个有
-- `CR Text Concatenate` —— 2/13 个有
-- `GetImageSize` —— 2/13 个有
-- `ImageScaleToTotalPixels` —— 2/13 个有
-- `MiniMaxH3DurationPlannerT8` —— 2/13 个有
-- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 2/13 个有
-- `workflow><Picture 2>` —— 2/13 个有
-- `workflow><Picture 3>` —— 2/13 个有
-- `workflow><Picture 4>` —— 2/13 个有
-- `workflow><Picture 5>` —— 2/13 个有
-- `workflow><Picture 6>` —— 2/13 个有
-- `Fast Muter (rgthree)` —— 1/13 个有
-- `ImageCrop` —— 1/13 个有
-- `ImageFromBatch` —— 1/13 个有
-- `PrimitiveInt` —— 1/13 个有
-- `TrimAudioDuration` —— 1/13 个有
-- `workflow><Picture 7>` —— 1/13 个有
-- `workflow><Picture 8>` —— 1/13 个有
-- `workflow><Picture 9>` —— 1/13 个有
+- `Any To String (mtb)` —— 11/12 个有
+- `JoinStringMulti` —— 11/12 个有
+- `LoadAudio` —— 11/12 个有
+- `StringConcatenate` —— 11/12 个有
+- `BatchImagesNode` —— 10/12 个有
+- `llama_cpp_instruct_adv` —— 10/12 个有
+- `llama_cpp_model_loader` —— 10/12 个有
+- `llama_cpp_parameters` —— 10/12 个有
+- `LoraLoaderModelOnly` —— 8/12 个有
+- `MiniMaxH3HybridLoader` —— 8/12 个有
+- `ModelPreviewOverrideKJ` —— 8/12 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 3/12 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 3/12 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 3/12 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 3/12 个有
+- `MiniMaxH3PromptEnhancerT8` —— 2/12 个有
+- `JjkText` —— 1/12 个有
 
 ## 典型参数
 

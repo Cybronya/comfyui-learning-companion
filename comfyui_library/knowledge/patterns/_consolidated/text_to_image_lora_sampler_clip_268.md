@@ -3,41 +3,33 @@ name: text_to_image_lora_sampler_clip_268
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.904125
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, ModelPreviewOverrideKJ, PrimitiveStringMultiline, ResolutionSelector, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.841875
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/minimax h3长视频人物替换加动作迁移，内部循环视频生视频_2111516810670600194.json, 视频生成/图生视频/DsiwaV2小脸高动态SelfLift图生视频处理工具_2101035152284676097.json, 视频生成/图生视频/FastH3 V2 SelfLift 1080P｜图生视频数字人快速出片_2100893504040955905.json, 视频生成/图生视频/Minimax H3加速双采self-lift流｜两次采样提质量，速度还不打折_2099494675802583042.json, 视频生成/图生视频/Minimax H3加速双采｜self-lift工作流高效出片_2101155630626201602.json, 视频生成/文生视频/H3 dasiwaV3加高动态支持加特殊运镜工作流，文生视频图生视频处理方案_2108257601246027778.json, 视频生成/文生视频/海螺H3融合模型加速双采｜self-lift文生视频工作流_2097819718035001346.json, 视频生成/文生视频/黑科技加速双采self-lift工作流｜文生视频快速生成_2097773293859328001.json]
+members: [视频生成/图生视频/MiniMax H3 上下文参考视频+图生视频｜融合运镜与角色_2096868508067000322.json, 视频生成/图生视频/MiniMax H3上下文多参考生视频 多图融合创作_2098822713052844033.json, 视频生成/图生视频/MiniMax H3两段式管线｜图生视频高清直出_2098701054606135298.json, 视频生成/图生视频/MiniMax_H3上下文参考视频加图生视频｜融合运镜与角色一致性_2101908397733011457.json, 视频生成/图生视频/上下文参考视频融合运镜｜MiniMax H3角色一致性图生视频_2096676491013742593.json, 视频生成/图生视频/动作迁移角色替换AI视频换人｜免改骨架直接换主角｜图生视频_2101892897812606978.json, 视频生成/文生视频/全能参考生视频2K版｜海螺MiniMaxH3官方多图音视频参考_2088745519744110594.json, 视频生成/文生视频/视频生成2KMiniMaxH3版ENG海螺_2087117391724634114.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_268
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（数字人/数字人/minimax h3长视频人物替换加动作迁移，内部循环视频生视频_2111516810670600194.json、视频生成/图生视频/DsiwaV2小脸高动态SelfLift图生视频处理工具_2101035152284676097.json、视频生成/图生视频/FastH3 V2 SelfLift 1080P｜图生视频数字人快速出片_2100893504040955905.json、视频生成/图生视频/Minimax H3加速双采self-lift流｜两次采样提质量，速度还不打折_2099494675802583042.json、视频生成/图生视频/Minimax H3加速双采｜self-lift工作流高效出片_2101155630626201602.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 上下文参考视频+图生视频｜融合运镜与角色_2096868508067000322.json、视频生成/图生视频/MiniMax H3上下文多参考生视频 多图融合创作_2098822713052844033.json、视频生成/图生视频/MiniMax H3两段式管线｜图生视频高清直出_2098701054606135298.json、视频生成/图生视频/MiniMax_H3上下文参考视频加图生视频｜融合运镜与角色一致性_2101908397733011457.json、视频生成/图生视频/上下文参考视频融合运镜｜MiniMax H3角色一致性图生视频_2096676491013742593.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveStringMultiline`
-- `ResolutionSelector`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -45,43 +37,30 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 7/8 个有
-- `H3SigmaRefiner` —— 7/8 个有
-- `MiniMaxChunkFeedForward` —— 7/8 个有
-- `MiniMaxLowVRAMAttention` —— 7/8 个有
-- `PrimitiveFloat` —— 7/8 个有
-- `VAEDecodeAudio` —— 7/8 个有
-- `ModelAttentionBackend` —— 6/8 个有
-- `SaveVideo` —— 6/8 个有
-- `MiniMaxH3SigmaShift` —— 4/8 个有
-- `SaveImage` —— 4/8 个有
-- `SelfLiftH3Sampler` —— 4/8 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/8 个有
-- `SelfLiftAvatarH3Sampler` —— 3/8 个有
-- `VHS_VideoCombine` —— 3/8 个有
-- `easy seed` —— 3/8 个有
-- `LoraLoaderBypassModelOnly` —— 2/8 个有
-- `BlockSparseAttention` —— 1/8 个有
-- `ImageConcatMulti` —— 1/8 个有
-- `MiniMaxH3LongVideoSampler-solarL` —— 1/8 个有
-- `MiniMaxH3TurboLoRA` —— 1/8 个有
-- `PreviewAny` —— 1/8 个有
-- `PrimitiveBoolean` —— 1/8 个有
-- `VHS_LoadVideo` —— 1/8 个有
-- `easy float` —— 1/8 个有
-- `easy int` —— 1/8 个有
+- `LoadImage` —— 6/8 个有
+- `RH_MinimaxHailuoH3MultimodalToVideo` —— 6/8 个有
+- `LoadVideo` —— 4/8 个有
+- `PrimitiveStringMultiline` —— 4/8 个有
+- `RH_MinimaxHailuoH3ContextIrMultimodal` —— 4/8 个有
+- `EmptyImage` —— 2/8 个有
+- `LoadAudio` —— 2/8 个有
+- `PlaySound|pysssss` —— 2/8 个有
+- `PreviewImage` —— 2/8 个有
+- `RHBerniniFullReferenceVideoToVideo` —— 1/8 个有
+- `RH_MinimaxHailuoH3ImageToVideo` —— 1/8 个有
+- `RH_TopazLabs_VideoUpscale` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
+| 宽度 | 80 | 80 - 80 | 8 | 100% |
+| 高度 | 80 | 80 - 80 | 8 | 100% |
 | 采样步数 | 4 | 4 - 4 | 8 | 100% |
 | Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 8 | 100% |
 | 采样算法 | er_sde | - | 8 | 100% |
 | 调度器 | beta | - | 8 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
-| 宽度 | 80 | 80 - 80 | 8 | 100% |
-| 高度 | 80 | 80 - 80 | 8 | 100% |
 
 ## 常见问题
 
@@ -91,11 +70,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
+- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，8 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 er_sde，8 个样本，一致性 100%
 - 调度器 最常用 beta，8 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 高发问题（8/8 个样本）：Steps较低可能导致细节不足

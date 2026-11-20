@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_244
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.889
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, EmptySD3LatentImage, JjkText, KSampler, Krea2EditGroundedEncode, Krea2EditModelPatch, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8865
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2四视图角色资产库 角色卡人物卡片设计工具_2099202764437024770.json, 图片生成/图生图/Krea2四视图角色资产库 角色卡人物卡片设计工具_2099570188235657217.json, 图片生成/图生图/Krea2多风格单图编辑｜图生图风格转换_2089711798994948098.json, 图片生成/图生图/一键动态角色设计表｜Krea2全能图生图生成_2090550347252191234.json, 图片生成/图生图/动态角色设计表一键出｜Krea2全能图生图_2090850864838823937.json, 图片生成/图生图/四视图生成 角色设定图批量产出高效稳定出图_2109076636594434049.json, 图片生成/图生图/四视图生成模板｜MiniMaxH3图生图角色设计_2090230844425326594.json, 图片生成/图生图/四视图角色资产库｜Krea2图生图MiniMaxH3、Seedance视频参考专用_2092546636454125569.json]
+members: [图片生成/图生图/Kontext人像修图调色 清新色调图生图精修处理_2099220069216776194.json, 图片生成/图生图/kontext一键去水印带前后对比｜图生图无痕修复，老照片旧图拯救_2107311794724364289.json, 图片生成/图生图/qwen_image_edit_2511三视图｜角色一致性设计图生成_2093135891593256962.json, 图片生成/图生图/人像光影融合｜MAGIC-K-V1打光换背景生成_2093877817636376577.json, 图片生成/图生图/人像光影融合｜MAGIC-K-V1打光换背景生成_2093901151463890945.json, 图片生成/图生图/图生图图片编辑多图编辑 多张输入精准改图_2109786356653322241.json, 图片生成/图生图/开源玩法大全｜FLUX_Kontext商品换背景角色一致性_2091226009478717441.json, 图片生成/文生图/Kontext一键去水印前后对比工作流，文生图图生图去水印处理工具_2107559098299535361.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_244
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Krea2四视图角色资产库 角色卡人物卡片设计工具_2099202764437024770.json、图片生成/图生图/Krea2四视图角色资产库 角色卡人物卡片设计工具_2099570188235657217.json、图片生成/图生图/Krea2多风格单图编辑｜图生图风格转换_2089711798994948098.json、图片生成/图生图/一键动态角色设计表｜Krea2全能图生图生成_2090550347252191234.json、图片生成/图生图/动态角色设计表一键出｜Krea2全能图生图_2090850864838823937.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Kontext人像修图调色 清新色调图生图精修处理_2099220069216776194.json、图片生成/图生图/kontext一键去水印带前后对比｜图生图无痕修复，老照片旧图拯救_2107311794724364289.json、图片生成/图生图/qwen_image_edit_2511三视图｜角色一致性设计图生成_2093135891593256962.json、图片生成/图生图/人像光影融合｜MAGIC-K-V1打光换背景生成_2093877817636376577.json、图片生成/图生图/人像光影融合｜MAGIC-K-V1打光换背景生成_2093901151463890945.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
@@ -25,36 +25,36 @@ source: knowledge_consolidation
 全部 8 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `EmptySD3LatentImage`
 - `JjkText`
 - `KSampler`
-- `Krea2EditGroundedEncode`
-- `Krea2EditModelPatch`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 5/8 个有
-- `CheckpointLoaderSimple` —— 3/8 个有
-- `PrimitiveStringMultiline` —— 3/8 个有
-- `WujiCleaner` —— 3/8 个有
-- `WujiSampler` —— 3/8 个有
-- `WujiUpscaler` —— 3/8 个有
-- `PreviewAny` —— 2/8 个有
-- `TextGenerate` —— 2/8 个有
-- `ConditioningKrea2Rebalance` —— 1/8 个有
-- `Label (rgthree)` —— 1/8 个有
-- `PrimitiveInt` —— 1/8 个有
-- `ResizeImageMaskNode` —— 1/8 个有
-- `easy stylesSelector` —— 1/8 个有
+- `ReferenceLatent` —— 7/8 个有
+- `VAEEncode` —— 7/8 个有
+- `DualCLIPLoader` —— 6/8 个有
+- `FluxGuidance` —— 6/8 个有
+- `Image Comparer (rgthree)` —— 6/8 个有
+- `孤海注释` —— 6/8 个有
+- `PreviewImage` —— 5/8 个有
+- `FluxKontextImageScale` —— 4/8 个有
+- `CFGNorm` —— 2/8 个有
+- `ModelSamplingAuraFlow` —— 2/8 个有
+- `TextEncodeQwenImageEditPlus` —— 2/8 个有
+- `easy positive` —— 2/8 个有
+- `Anything Everywhere3` —— 1/8 个有
+- `ConstrainImage|pysssss` —— 1/8 个有
+- `EmptySD3LatentImage` —— 1/8 个有
+- `Image Levels Adjustment` —— 1/8 个有
+- `ImageStitch` —— 1/8 个有
 
 ## 典型参数
 
@@ -72,7 +72,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -83,4 +83,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，8 个样本，取值集中（一致性 100%）
-- 高发问题（8/8 个样本）：Steps较低可能导致细节不足
+- 高发问题（12/8 个样本）：Steps较低可能导致细节不足

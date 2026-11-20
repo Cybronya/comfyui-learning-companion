@@ -1,29 +1,28 @@
 ---
 name: text_to_image_sampler_clip_vae_6
 type: Text To Image
-frequency: 17
-level: strong
-coverage: 0.946353
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
+frequency: 18
+level: moderate
+coverage: 0.9455
+common_nodes: [CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/Nunchaku-Qwen-Image文生图lora版_1982417831478345730.json, 图片生成/文生图/Z-Image文生图_2094304743563812866.json, 图片生成/文生图/Z-Image文生图基础工作流_2004808008284733442.json, 图片生成/文生图/Z-image + LoRA 文生图工作流_2058875529981415425.json, 图片生成/文生图/Z-image 全能模型_1994451694316625922.json, 图片生成/文生图/Z-image 文生图工作流（含加速器）_2046950465908252673.json, 图片生成/文生图/Z-image-MJ风格图像生成_2041506818840596482.json, 图片生成/文生图/Z-image-turbo 2.5D奶油风格生图Lora_2055258113829294081.json, 图片生成/文生图/Z-image-turbo基础文生图【用于绘世comfyui批量管理系统】_2089190207693344769.json, 图片生成/文生图/Z-image文生图V2（Lora）_2026213692454477825.json, 图片生成/文生图/Z_image_turbo快速文生图 自用版_2097176754392756226.json, 图片生成/文生图/Z_image_turbo快速文生图_2051577152918835202.json, 图片生成/文生图/ki_krea2人物四视图_2107463809878282242.json, 图片生成/文生图/krea2 Lora文生图加英伟达rtx nodes高清放大_2074689431730221057.json, 图片生成/文生图/krea2基础文生图_2098922890111574018.json, 图片生成/文生图/krea2基础文生图_2098981510849327105.json, 图片生成/文生图/krea2基础文生图_2099657569232056322.json]
+members: [图片生成/文生图/1650 4G 文生图_Z-image量化 低显存_2061641168311640065.json, 图片生成/文生图/2029960172382195714.json, 图片生成/文生图/2030697459789336578.json, 图片生成/文生图/47_anima文生图3lora工作流_2062720329054773250.json, 图片生成/文生图/48_anima文生图3lora工作流_2_2063974322926088193.json, 图片生成/文生图/87time # 30  通义千问 QW 中文生成_1938456564812414977.json, 图片生成/文生图/A1、文生图千问2.5高保真 - 和风_1984067041122516994.json, 图片生成/文生图/KREA2-CC人像版_2095722389442224130.json, 图片生成/文生图/Z-Image-Engineer-V4--文生图_2028091411702222850.json, 图片生成/文生图/Z-Image-Turbo 身材优化+丰满LoRA_2001971849082859521.json, 图片生成/文生图/Z-image D-OPSD文生图_2056614357865418754.json, 图片生成/文生图/Z-image D-OPSD文生图_2056619453462441985.json, 图片生成/文生图/Z-image D-OPSD文生图_2057839881359020034.json, 图片生成/文生图/Z-image Qwen3 4B Vs Qwen3 4b Z-image Engineer V4_2027773457253011458.json, 图片生成/文生图/Z-image-Turbo电影质感文生图_2056911427314737153.json, 图片生成/文生图/Z-image-turbo Vs flow-dpo对比_2026971124013207554.json, 图片生成/文生图/Z-image-turbo Vs flow-dpo对比工作流 林耀2.27_2027214097611231233.json, 图片生成/文生图/（贞贞Lora）Z-image同丹不同配方Lora对比测试_1996261458461736961.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_vae_6
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/Nunchaku-Qwen-Image文生图lora版_1982417831478345730.json、图片生成/文生图/Z-Image文生图_2094304743563812866.json、图片生成/文生图/Z-Image文生图基础工作流_2004808008284733442.json、图片生成/文生图/Z-image + LoRA 文生图工作流_2058875529981415425.json、图片生成/文生图/Z-image 全能模型_1994451694316625922.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/文生图/1650 4G 文生图_Z-image量化 低显存_2061641168311640065.json、图片生成/文生图/2029960172382195714.json、图片生成/文生图/2030697459789336578.json、图片生成/文生图/47_anima文生图3lora工作流_2062720329054773250.json、图片生成/文生图/48_anima文生图3lora工作流_2_2063974322926088193.json…）
 
 - **类型**：Text To Image
-- **样本数**：17
-- **可信度**：强结论
+- **样本数**：18
+- **可信度**：中等可信
 - **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `CLIPLoader`
+全部 18 个 workflow 都包含：
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `KSampler`
@@ -32,43 +31,47 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `UNETLoader` —— 16/17 个有
-- `ConditioningZeroOut` —— 13/17 个有
-- `LoraLoaderModelOnly` —— 10/17 个有
-- `PreviewImage` —— 10/17 个有
-- `RTXVideoSuperResolution` —— 5/17 个有
-- `EmptyImage` —— 4/17 个有
-- `Fast Groups Muter (rgthree)` —— 1/17 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/17 个有
-- `NunchakuQwenImageDiTLoader` —— 1/17 个有
-- `NunchakuQwenImageLoraLoader` —— 1/17 个有
-- `NunchakuQwenImageLoraStack` —— 1/17 个有
+- `UNETLoader` —— 17/18 个有
+- `CLIPLoader` —— 15/18 个有
+- `LoraLoaderModelOnly` —— 15/18 个有
+- `CR Prompt Text` —— 10/18 个有
+- `ConditioningZeroOut` —— 10/18 个有
+- `easy seed` —— 8/18 个有
+- `AddLabel` —— 4/18 个有
+- `CLIPLoaderGGUF` —— 4/18 个有
+- `ImageConcanate` —— 4/18 个有
+- `PreviewImage` —— 3/18 个有
+- `Label (rgthree)` —— 2/18 个有
+- `Seed (rgthree)` —— 2/18 个有
+- `Int` —— 1/18 个有
+- `PDIMAGE_LongerSize` —— 1/18 个有
+- `UnetLoaderGGUF` —— 1/18 个有
+- `easy promptLine` —— 1/18 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 8 - 10 | 17 | 89% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 17 | 100% |
-| 采样算法 | euler | - | 17 | 76% |
-| 调度器 | simple | - | 17 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
-| 宽度 | 1024 | 512 - 1920 | 17 | 69% |
-| 高度 | 1536 | 512 - 2048 | 17 | 69% |
+| 宽度 | 1080 | 304 - 1920 | 18 | 68% |
+| 高度 | 1920 | 304 - 1984 | 18 | 67% |
+| 采样步数 | 10 | 8 - 25 | 18 | 56% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 18 | 29% |
+| 采样算法 | euler | - | 18 | 89% |
+| 调度器 | simple | - | 18 | 94% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 9/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 8 - 10，17 个样本，取值集中（一致性 89%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，17 个样本，一致性 76%
-- 调度器 最常用 simple，17 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 512 - 1920，17 个样本
-- 高度 中位数 1536，观测区间 512 - 2048，17 个样本
-- 高发问题（9/17 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1080，观测区间 304 - 1920，18 个样本
+- 高度 中位数 1920，观测区间 304 - 1984，18 个样本
+- 采样步数 中位数 10，观测区间 8 - 25，18 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，18 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 euler，18 个样本，一致性 89%
+- 调度器 最常用 simple，18 个样本，一致性 94%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）

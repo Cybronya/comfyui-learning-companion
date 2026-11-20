@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_239
 type: Text To Image
 frequency: 8
 level: strong
-coverage: 0.87825
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.889125
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Fish Audio S2 TTS｜单人语音克隆实操｜录一段声音就能让他替你说话_2102571193546133506.json, 图片生成/图生图/Index TTS2声音克隆史上最强音色克隆带语气，音频生成工具_2106132641341861889.json, 图片生成/图生图/配音声音克隆IndexTTS2工作流｜高质量语音复刻生成_2097059623751733250.json, 数字人/数字人/IndexTTS2史上最强声音克隆｜音色语气双还原｜数字人配音新选择_2102280819787255810.json, 数字人/数字人/情绪角色配音生成｜数字人语音音频克隆直出_2093828167814443010.json, 数字人/数字人/音色克隆带语气｜IndexTTS2 史上最强声音克隆_2089347718471831553.json, 音频生成/音频生成/Index TTS2加Qwen3 TTS声音克隆二合一，音色语气情感控制音频生成_2105746631021916162.json, 音频生成/音频生成/声音克隆二合一｜Index TTS2+Qwen3 TTS音色参考情感控制_2095297314482118657.json]
+members: [图片生成/图生图/Boogu Edit图像编辑优化版图生图工作流，局部重绘图生图处理工具_2103988876833542145.json, 图片生成/图生图/Boogu Edit图像编辑优化版图生图工作流，局部重绘图生图处理方案_2103990521432731649.json, 图片生成/图生图/Boogu+VR2.5光学眼镜场景｜OpticScene质感写真｜镜片反光都真实_2102607039821336578.json, 图片生成/图生图/boogu edit优化改图工作流｜上传图输提示词精准局部重绘_2103692889040707585.json, 图片生成/图生图/boogu edit优化版图像编辑，图生图局部重绘稳出图_2112332507399147522.json, 图片生成/图生图/boogu edit图像编辑优化版｜图生图局部重绘多用途｜日常修图好帮手_2112055812716843010.json, 图片生成/图生图/boogu edit图像编辑优化版｜局部重绘图生图细致改图_2103691242205966338.json, 图片生成/图生图/图像4K超清放大工作流｜SeedVR2图生图画质增强处理_2097387593599115266.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_239
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Fish Audio S2 TTS｜单人语音克隆实操｜录一段声音就能让他替你说话_2102571193546133506.json、图片生成/图生图/Index TTS2声音克隆史上最强音色克隆带语气，音频生成工具_2106132641341861889.json、图片生成/图生图/配音声音克隆IndexTTS2工作流｜高质量语音复刻生成_2097059623751733250.json、数字人/数字人/IndexTTS2史上最强声音克隆｜音色语气双还原｜数字人配音新选择_2102280819787255810.json、数字人/数字人/情绪角色配音生成｜数字人语音音频克隆直出_2093828167814443010.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Boogu Edit图像编辑优化版图生图工作流，局部重绘图生图处理工具_2103988876833542145.json、图片生成/图生图/Boogu Edit图像编辑优化版图生图工作流，局部重绘图生图处理方案_2103990521432731649.json、图片生成/图生图/Boogu+VR2.5光学眼镜场景｜OpticScene质感写真｜镜片反光都真实_2102607039821336578.json、图片生成/图生图/boogu edit优化改图工作流｜上传图输提示词精准局部重绘_2103692889040707585.json、图片生成/图生图/boogu edit优化版图像编辑，图生图局部重绘稳出图_2112332507399147522.json…）
 
 - **类型**：Text To Image
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -28,8 +28,9 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
@@ -37,21 +38,21 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `IndexTTS2Run` —— 7/8 个有
-- `PrimitiveStringMultiline` —— 6/8 个有
-- `SaveAudioMP3` —— 6/8 个有
-- `AudioCrop` —— 5/8 个有
-- `SaveAudio` —— 3/8 个有
-- `Text` —— 3/8 个有
-- `Apply Whisper` —— 2/8 个有
-- `FB_Qwen3TTSVoiceClone` —— 2/8 个有
-- `PreviewAudio` —— 2/8 个有
-- `CR Text` —— 1/8 个有
-- `FishS2VoiceCloneTTS` —— 1/8 个有
-- `LoadWhisperModel_` —— 1/8 个有
-- `SaveAudioAdvanced` —— 1/8 个有
-- `WhisperTranscribe_` —— 1/8 个有
-- `忽略多组孤海` —— 1/8 个有
+- `BasicScheduler` —— 7/8 个有
+- `CR Prompt Text` —— 7/8 个有
+- `DF_Get_image_size` —— 7/8 个有
+- `ImageScaleToTotalPixels` —— 7/8 个有
+- `KSamplerSelect` —— 7/8 个有
+- `ModelSamplingAuraFlow` —— 7/8 个有
+- `SamplerCustom` —— 7/8 个有
+- `TextEncodeBooguEdit` —— 7/8 个有
+- `ImageConcanate` —— 6/8 个有
+- `PreviewImage` —— 6/8 个有
+- `easy cleanGpuUsed` —— 6/8 个有
+- `PrimitiveInt` —— 2/8 个有
+- `SeedVR2LoadDiTModel` —— 2/8 个有
+- `SeedVR2LoadVAEModel` —— 2/8 个有
+- `SeedVR2VideoUpscaler` —— 2/8 个有
 
 ## 典型参数
 

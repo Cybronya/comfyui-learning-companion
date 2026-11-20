@@ -1,50 +1,53 @@
 ---
 name: unknown_workflow_sampler_vae_10
 type: Unknown Workflow
-frequency: 28
+frequency: 23
 level: moderate
-coverage: 0.944036
-common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3Ref2VAEncode, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAVAELoader]
+coverage: 0.843957
+common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3FL2VAEncode, RHMiniMaxH3FL2VAModelLoader, RHMiniMaxH3FL2VATarget, RHMiniMaxH3FL2VATextEncoderLoader, RHMiniMaxH3FL2VAVAELoader, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/MiniMax H3 AI提示词润色｜双角色有声微短剧｜两图一句话_2087013189312667650.json, 视频生成/图生视频/MiniMax H3 FL2VA-多图参考生视频（满血开源版）_2084557552133693442.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084117309760823297.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084144674947821569.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084151102215385090.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084162730432483330.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084171021527109634.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084171609983774722.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084176457605140481.json, 视频生成/图生视频/MiniMax H3 Ref2VA开源版-多图参考生视频_2084117546877407233.json, 视频生成/图生视频/MiniMax-H3-多图参考生视频_2084575868277575681.json, 视频生成/图生视频/MiniMax_H3_开源版_多图参考生视频_高质版_2114731982155501570.json, 视频生成/图生视频/【MiniMax H3】 FL2VA开源版-多图参考生视频_2099311045549584385.json, 视频生成/图生视频/多图参考生视频_2084141825941659649.json, 视频生成/图生视频/最强开源多图参考生视频-MiniMax H3 FL2VA开源版_2084469254153392130.json, 视频生成/图生视频/海螺Hailuo H3全能参考-视频生成（开源版）_2084157382300626945.json, 视频生成/图生视频/海螺MiniMax H3 -多图参考生视频_2084144047043731457.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-多图参考生视频-超低积分消耗_2084193397664997378.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2094357329327251457.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2095336216827883522.json, 视频生成/文生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2099754651586486273.json, 视频生成/文生视频/MiniMax H3 Ref2VA开源版-多图参考生视频_2084165309996560385.json, 视频生成/文生视频/MiniMax H3 多图参考 开源版_2084461028041121794.json, 视频生成/文生视频/MiniMax H3 多图参考生视频｜角色·产品·场景一致性｜原生音视频_2095451145740316674.json, 视频生成/文生视频/MiniMax H3 开源版 多图参考生视频 高质版_2084534967345963010.json, 视频生成/文生视频/MiniMax H3 开源版 多图参考生视频_2084814126689382402.json, 视频生成/文生视频/MiniMax H3 开源版-多图参考、图生视频_2084218663955156994.json, 视频生成/文生视频/MiniMax+H3+Ref2VA开源版-多图参考生视频_2084176553600180226.json]
+members: [视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084138964008660993.json, 视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084171989127880706.json, 视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084489209519362049.json, 视频生成/图生视频/MiniMax H3 尾帧参考生视频（适用于电商广告生成宣传视频）_2086010679311552514.json, 视频生成/图生视频/MiniMax H3 开源版 首帧图生视频_2084116833204002817.json, 视频生成/图生视频/MiniMax H3 开源版-首尾帧参考生视频_2084116862950006785.json, 视频生成/图生视频/MiniMax H3 首帧参考生视频_2084126354357968897.json, 视频生成/图生视频/MiniMax H3-图生视频_2084472539518164994.json, 视频生成/图生视频/MiniMax H3-首尾帧参考生视频（中文提示词）_2084256715142426625.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-尾帧参考生视频_2110971476173213697.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-首尾帧参考生视频_2110973759195799553.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-首帧参考生视频_2110966496859082754.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-尾帧参考生视频_2098933933139382274.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-尾帧参考生视频_2098991696456544257.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-尾帧参考生视频_2099667209504251906.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首尾帧参考生视频_2098935729991802881.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首尾帧参考生视频_2098993555862810625.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首尾帧参考生视频_2099668959648894977.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首帧参考生视频_2098936811023327233.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首帧参考生视频_2098994491230347266.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-首帧参考生视频_2099669900225761282.json, 视频生成/图生视频/图生视频尾帧MiniMax+H3+FL2VA开源版-尾帧参考生视频_2084131204399452161.json, 视频生成/文生视频/MiniMax+H3+FL2VA开源版-尾帧参考生视频_2084183815051894786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_10
 
-> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 AI提示词润色｜双角色有声微短剧｜两图一句话_2087013189312667650.json、视频生成/图生视频/MiniMax H3 FL2VA-多图参考生视频（满血开源版）_2084557552133693442.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084117309760823297.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084144674947821569.json、视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2084151102215385090.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084138964008660993.json、视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084171989127880706.json、视频生成/图生视频/MiniMax H3 尾帧参考生视频_2084489209519362049.json、视频生成/图生视频/MiniMax H3 尾帧参考生视频（适用于电商广告生成宣传视频）_2086010679311552514.json、视频生成/图生视频/MiniMax H3 开源版 首帧图生视频_2084116833204002817.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：28
+- **样本数**：23
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 28 个 workflow 都包含：
+全部 23 个 workflow 都包含：
 - `CreateVideo`
 - `LoadImage`
 - `RHMiniMaxH3DecodeAV`
 - `RHMiniMaxH3DualSigmaSampler`
 - `RHMiniMaxH3EmptyAVLatent`
-- `RHMiniMaxH3Ref2VAEncode`
-- `RHMiniMaxH3Ref2VAImageReference`
-- `RHMiniMaxH3Ref2VAModelLoader`
-- `RHMiniMaxH3Ref2VATarget`
-- `RHMiniMaxH3Ref2VATextEncoderLoader`
-- `RHMiniMaxH3Ref2VAVAELoader`
+- `RHMiniMaxH3FL2VAEncode`
+- `RHMiniMaxH3FL2VAModelLoader`
+- `RHMiniMaxH3FL2VATarget`
+- `RHMiniMaxH3FL2VATextEncoderLoader`
+- `RHMiniMaxH3FL2VAVAELoader`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveVideo` —— 27/28 个有
-- `JjkText` —— 4/28 个有
-- `CLIPLoader` —— 1/28 个有
-- `CR Prompt Text` —— 1/28 个有
-- `GetVideoComponents` —— 1/28 个有
-- `PrimitiveStringMultiline` —— 1/28 个有
-- `StringConcatenate` —— 1/28 个有
-- `TextGenerate` —— 1/28 个有
-- `VHS_VideoCombine` —— 1/28 个有
+- `ImageResize+` —— 20/23 个有
+- `ImpactSwitch` —— 19/23 个有
+- `Int` —— 19/23 个有
+- `PreviewImage` —— 18/23 个有
+- `RHMiniMaxH3FL2VAFirstFrameCondition` —— 14/23 个有
+- `EmptyImage` —— 9/23 个有
+- `RHMiniMaxH3FL2VALastFrameCondition` —— 9/23 个有
+- `MuyeTextEditOutput` —— 3/23 个有
+- `MultiTextConcatenate` —— 2/23 个有
+- `PrimitiveStringMultiline` —— 2/23 个有
+- `RH_Translator` —— 2/23 个有
+- `RH_OneShot_Prompter` —— 1/23 个有
 
 ## 典型参数
 

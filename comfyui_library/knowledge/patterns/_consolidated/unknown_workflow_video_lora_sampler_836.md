@@ -1,79 +1,99 @@
 ---
 name: unknown_workflow_video_lora_sampler_836
 type: Unknown Workflow
-frequency: 3
-level: moderate
-coverage: 0.548
-common_nodes: [CLIPVisionLoader, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJv2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, SetNode, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoPassImagesFromSamples, WanVideoSampler, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+frequency: 2
+level: weak
+coverage: 0.867
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateCFGScheduleFloatList, EmptySD3LatentImage, GetImageSizeAndCount, INTConstant, ImageFromBatch+, JWInteger, JWStringConcat, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM V2, LoadAudio, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, ModelSamplingAuraFlow, Note _O, RH_Captioner, RH_LLMAPI_NODE, SaveImage, SaveLatent, ShowText|pysssss, TextConcat, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, Wan22PromptSelector, WanVideoBlockSwap, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/720x1280_solo_singing_MV_无运镜_2059587273380941826.json, 数字人/数字人/InifiniteTalk 数字人一键生成_2009171549823180801.json, 数字人/数字人/【长时数字人口播】wanvideo_InfiniteTalk_2115534592798183426.json]
+members: [视频生成/图生视频/Comfy挑战赛第二期自动化图生视频《坠落》（每周100美金）V2_1960956953470144513.json, 视频生成/文生视频/Comfy挑战赛5（无限飞行）Wan2.2文生视频多镜头自动创意（100美元奖金）_1968641050535501826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_836
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（数字人/数字人/720x1280_solo_singing_MV_无运镜_2059587273380941826.json、数字人/数字人/InifiniteTalk 数字人一键生成_2009171549823180801.json、数字人/数字人/【长时数字人口播】wanvideo_InfiniteTalk_2115534592798183426.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（视频生成/图生视频/Comfy挑战赛第二期自动化图生视频《坠落》（每周100美金）V2_1960956953470144513.json、视频生成/文生视频/Comfy挑战赛5（无限飞行）Wan2.2文生视频多镜头自动创意（100美元奖金）_1968641050535501826.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：55%
+- **样本数**：2
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DownloadAndLoadWav2VecModel`
+全部 2 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `EmptySD3LatentImage`
 - `GetImageSizeAndCount`
-- `GetNode`
 - `INTConstant`
-- `ImageResizeKJv2`
+- `ImageFromBatch+`
+- `JWInteger`
+- `JWStringConcat`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadAudio`
-- `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `MultiTalkModelLoader`
-- `MultiTalkWav2VecEmbeds`
-- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
+- `Note _O`
+- `RH_Captioner`
+- `RH_LLMAPI_NODE`
+- `SaveImage`
+- `SaveLatent`
+- `ShowText|pysssss`
+- `TextConcat`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
+- `Wan22PromptSelector`
 - `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoImageToVideoMultiTalk`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoPassImagesFromSamples`
 - `WanVideoSampler`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
 - `WanVideoVAELoader`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 2/3 个有
-- `Wav2VecModelLoader` —— 2/3 个有
-- `Audio Duration (mtb)` —— 1/3 个有
-- `AudioCrop` —— 1/3 个有
-- `CR Prompt Text` —— 1/3 个有
-- `GetAudioDurationFromAudio` —— 1/3 个有
-- `MathExpression|pysssss` —— 1/3 个有
-- `RH_LLMAPI_Pro_Node` —— 1/3 个有
-- `ShowAnything|Mie` —— 1/3 个有
-- `SimpleMath+` —— 1/3 个有
-- `TextInput_` —— 1/3 个有
-- `WanVideoEasyCache` —— 1/3 个有
-- `WanVideoEnhanceAVideo` —— 1/3 个有
-- `WanVideoExperimentalArgs` —— 1/3 个有
-- `WanVideoSLG` —— 1/3 个有
-- `easy showAnything` —— 1/3 个有
+- `HunyuanVideoFoley` —— 1/2 个有
+- `LoadImage` —— 1/2 个有
+- `ShellAgentPluginInputText` —— 1/2 个有
+- `ShellAgentPluginSaveVideoVHS` —— 1/2 个有
+- `VAEEncode` —— 1/2 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 6 | - | 2 | 67% |
+| Prompt 约束强度(CFG) | 1 | - | 2 | 100% |
+| 采样算法 | euler | - | 2 | 50% |
+| 调度器 | normal | - | 2 | 50% |
+| 重绘幅度 | 1 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 6，样本不足，未给区间，2 个样本
+- Prompt 约束强度(CFG) 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，2 个样本，一致性 50%
+- 调度器 最常用 normal，2 个样本，一致性 50%
+- 重绘幅度 中位数 1，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

@@ -1,81 +1,67 @@
 ---
 name: unknown_workflow_video_lora_sampler_135
 type: Unknown Workflow
-frequency: 15
-level: moderate
-coverage: 0.608733
-common_nodes: [CLIPVisionLoader, DrawViTPose, GetImageRangeFromBatch, GetNode, ImageResizeKJv2, LoadImage, OnnxDetectionModelLoader, PoseAndFaceDetection, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoVAELoader]
+frequency: 13
+level: strong
+coverage: 0.879923
+common_nodes: [CLIPLoader, CLIPTextEncode, LoadImage, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, PlaySound|pysssss, PreviewImage, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanMoeKSampler]
 problems: []
 missing: []
-members: [平台全量/动作迁移视频生视频_2042064025676156929.json, 平台全量/最新动作迁移动物美女舞蹈必备 超强一致性_2042037980784762881.json, 数字人/数字人/最新SteadyDancer动作迁移动物美女舞蹈必备 超强一致性_1996288612700397569.json, 视频生成/图生视频/SteadDancer （KJ版）视频姿势参考_1996519049599270913.json, 视频生成/图生视频/SteadDancer动作迁移_1996568841872351234.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移_1995783729840787458.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2039879176072732673.json, 视频生成/图生视频/SteadDancer自适应骨骼绑定动作迁移，超级Nice!好用到爆!_2046114909657763841.json, 视频生成/图生视频/SteadDancer视频姿势参考（KJ）_1996528847946399745.json, 视频生成/图生视频/SteadDancer视频自适应绑定动作迁移_1996396266479296514.json, 视频生成/图生视频/SteadyDancer动作迁移_1995679581803778050.json, 视频生成/图生视频/SteadyDancer动作迁移_2073284965781032961.json, 视频生成/图生视频/SteadyDancer动作迁移视频生视频_1996042760450981890.json, 视频生成/图生视频/SteadyDancer动作迁移视频生视频_2069666439010807809.json, 视频生成/图生视频/动作模仿-动作迁移-和谐连贯的人像动画与首帧保留_1996439442132975617.json]
+members: [图片生成/图生图/YZ金鱼-Wan2.2 图文生视频&首尾帧3合1加速版v1_2060019371350777858.json, 视频生成/图生视频/WAN2.2极致细节图生视频工作流（首尾帧）_2055131714812432386.json, 视频生成/图生视频/Wan2.2 light I2V 4步图文生视频&首尾帧v1_1982433270455508994.json, 视频生成/图生视频/Wan2.2 图文生视频&首尾帧_2017048287710289922.json, 视频生成/图生视频/Wan2.2 图生视频 团子专用_2063160454893096961.json, 视频生成/图生视频/YZ金鱼-Wan2.2 图文生视频&首尾帧3合1加速版v1_1980667060764233730.json, 视频生成/图生视频/首尾帧_图生视频 真实感还原_2010604596271521794.json, 视频生成/图生视频/首尾帧_图生视频漫剧生成器_2029383179194339329.json, 视频生成/图生视频/首尾帧_图生视频漫剧生成器_2056287070284505090.json, 视频生成/文生视频/1022Alan自用-Wan2.2 图文生视频&首尾帧3合1加速版v1_1980828355211776002.json, 视频生成/文生视频/1023Alan自用-Wan2.2 图文生视频&首尾帧3合1加速版v1_1981047822306918402.json, 视频生成/文生视频/Wan2.2 首尾帧3合1加速版v1_2066350014036791297.json, 视频生成/文生视频/首尾帧_图生视频LightX2V快速流_2010388092464664578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_135
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（平台全量/动作迁移视频生视频_2042064025676156929.json、平台全量/最新动作迁移动物美女舞蹈必备 超强一致性_2042037980784762881.json、数字人/数字人/最新SteadyDancer动作迁移动物美女舞蹈必备 超强一致性_1996288612700397569.json、视频生成/图生视频/SteadDancer （KJ版）视频姿势参考_1996519049599270913.json、视频生成/图生视频/SteadDancer动作迁移_1996568841872351234.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/YZ金鱼-Wan2.2 图文生视频&首尾帧3合1加速版v1_2060019371350777858.json、视频生成/图生视频/WAN2.2极致细节图生视频工作流（首尾帧）_2055131714812432386.json、视频生成/图生视频/Wan2.2 light I2V 4步图文生视频&首尾帧v1_1982433270455508994.json、视频生成/图生视频/Wan2.2 图文生视频&首尾帧_2017048287710289922.json、视频生成/图生视频/Wan2.2 图生视频 团子专用_2063160454893096961.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
-- **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **样本数**：13
+- **可信度**：强结论
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DrawViTPose`
-- `GetImageRangeFromBatch`
-- `GetNode`
-- `ImageResizeKJv2`
+全部 13 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
 - `LoadImage`
-- `OnnxDetectionModelLoader`
-- `PoseAndFaceDetection`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PlaySound|pysssss`
+- `PreviewImage`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddSteadyDancerEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoEncode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoVAELoader`
+- `WanMoeKSampler`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSizeAndCount` —— 14/15 个有
-- `WanVideoContextOptions` —— 14/15 个有
-- `WanVideoScheduler` —— 13/15 个有
-- `WanVideoTextEncodeCached` —— 13/15 个有
-- `WanVideoTorchCompileSettings` —— 12/15 个有
-- `INTConstant` —— 10/15 个有
-- `ImageConcatMulti` —— 10/15 个有
-- `WanVideoSetBlockSwap` —— 10/15 个有
-- `WanVideoSetLoRAs` —— 10/15 个有
-- `easy cleanGpuUsed` —— 6/15 个有
-- `easy clearCacheAll` —— 6/15 个有
-- `PreviewImage` —— 4/15 个有
-- `AddLabel` —— 2/15 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/15 个有
-- `LoadWanVideoT5TextEncoder` —— 2/15 个有
-- `MathExpression|pysssss` —— 2/15 个有
-- `WanVideoTextEncode` —— 2/15 个有
-- `Anything Everywhere3` —— 1/15 个有
-- `DF_Int_to_Float` —— 1/15 个有
-- `ImageConcanate` —— 1/15 个有
-- `ImpactInt` —— 1/15 个有
-- `PrimitiveInt` —— 1/15 个有
-- `ToFloat` —— 1/15 个有
-- `WanVideoImageResizeToClosest` —— 1/15 个有
-- `easy int` —— 1/15 个有
+- `WanFirstLastFrameToVideo` —— 11/13 个有
+- `CLIPVisionEncode` —— 10/13 个有
+- `CLIPVisionLoader` —— 10/13 个有
+- `WanImageToVideo` —— 9/13 个有
+- `DownloadAndLoadGIMMVFIModel` —— 8/13 个有
+- `EmptyHunyuanLatentVideo` —— 8/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 8/13 个有
+- `GIMMVFI_interpolate` —— 8/13 个有
+- `wanBlockSwap` —— 8/13 个有
+- `ImageResizeKJv2` —— 7/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/13 个有
+- `FL_RIFE` —— 5/13 个有
+- `easy int` —— 4/13 个有
+- `Fast Groups Muter (rgthree)` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 13 | 92% |
+| Prompt 约束强度(CFG) | 6 | 3 - 8 | 13 | 82% |
+| 采样算法 | 1 | 1 - 1 | 13 | 100% |
+| 调度器 | 1 | 1 - 1 | 13 | 100% |
+| 重绘幅度 | euler | - | 13 | 62% |
 
 ## 常见问题
 
@@ -83,4 +69,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，13 个样本，一致性 92%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 3 - 8，13 个样本，取值集中（一致性 82%）
+- 采样算法 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 调度器 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 重绘幅度 最常用 euler，13 个样本，一致性 62%

@@ -2,73 +2,69 @@
 name: unknown_workflow_sampler_clip_unet_44
 type: Unknown Workflow
 frequency: 17
-level: moderate
-coverage: 0.903294
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+level: weak
+coverage: 0.966294
+common_nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux-2-Klein 动漫转真人_2073666905835130882.json, 图片生成/图生图/Flux-Klein--去水印移除物体_2028367858878648322.json, 图片生成/图生图/Flux-Klein--模特融背景_2028368955097747457.json, 图片生成/图生图/Flux-Klein-姿势控制_2070702060726738946.json, 图片生成/图生图/Flux-Klein-深度姿势控制_2070700152016433154.json, 图片生成/图生图/Flux-Klein-线稿上色_2070705518980722689.json, 图片生成/图生图/Flux.2：90年代港风风格化_2079049505210724353.json, 图片生成/图生图/Klein 9B线稿参考上色_2070582629883269121.json, 图片生成/图生图/Klein 9B线稿参考上色_2070762276864487425.json, 图片生成/图生图/Klein 9B线稿参考上色_2070873331376676865.json, 图片生成/图生图/Klein9B深度+线稿+法线+硬边缘控制图片编辑_2070582560786313218.json, 图片生成/图生图/Klein9B深度+线稿+法线+硬边缘控制图片编辑图生图工作流_2083137344915460098.json, 图片生成/图生图/Klein9B深度+线稿+法线+硬边缘控制图片编辑工作流_2071184794939125761.json, 图片生成/图生图/Klein9B深度+线稿+法线+硬边缘控制图片编辑工作流_2071950437573545986.json, 图片生成/图生图/（Supermate收藏）Klein9B深度+线稿+法线+硬边缘控制图片编辑_2082068130804887553.json, 图片生成/图生图/🦄Klein9B姿态变换🎯天下无腰_2092246348958617602.json, 图片生成/文生图/Flux2-Klein 多图编辑工作流_2012031209374748673.json]
+members: [图片生成/文生图/ZIMAGE-Turbo文生图+写实光影LORA+Engineer大师模式_2015980476426620929.json, 图片生成/文生图/ZImageBase文生图亮亮丝袜美女_2063529324246036482.json, 图片生成/文生图/ZImageBase文生图美女丝袜_2064861858766614530.json, 图片生成/文生图/ZImage女神_2063571918896328705.json, 图片生成/文生图/Z_image2512文生图_2055512539395567617.json, 图片生成/文生图/Z_image_tubf16全量模型出图_2055504260586065921.json, 图片生成/文生图/Z_image_turbo_文生图_1998723273162641410.json, 图片生成/文生图/Z_image_turbo出图_2055508247259435010.json, 图片生成/文生图/Z_image_turbo即梦生图免费版_1998032212584988673.json, 图片生成/文生图/Z_image_turbo工作流_1994234495897452546.json, 图片生成/文生图/Z_image文生图标准版_2064278139861299201.json, 图片生成/文生图/Zimage-Turbo文生图+写实光影+Engineer大师模式_2042080099603845121.json, 图片生成/文生图/Zimage文成图V1.0_2061670898217873409.json, 图片生成/文生图/qwen-image 4步极速生图_1954932387395223553.json, 图片生成/文生图/qwen-image 8步快速生图_1954932461516963842.json, 图片生成/文生图/qwen-image 极速生图_1956936946464296962.json, 图片生成/文生图/文生图+写实光影LORA+Engineer大师模式_2029093017558196225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_44
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Flux-2-Klein 动漫转真人_2073666905835130882.json、图片生成/图生图/Flux-Klein--去水印移除物体_2028367858878648322.json、图片生成/图生图/Flux-Klein--模特融背景_2028368955097747457.json、图片生成/图生图/Flux-Klein-姿势控制_2070702060726738946.json、图片生成/图生图/Flux-Klein-深度姿势控制_2070700152016433154.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/ZIMAGE-Turbo文生图+写实光影LORA+Engineer大师模式_2015980476426620929.json、图片生成/文生图/ZImageBase文生图亮亮丝袜美女_2063529324246036482.json、图片生成/文生图/ZImageBase文生图美女丝袜_2064861858766614530.json、图片生成/文生图/ZImage女神_2063571918896328705.json、图片生成/文生图/Z_image2512文生图_2055512539395567617.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：17
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：97%
 
 ## 共有节点
 
 全部 17 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
-- `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `EmptySD3LatentImage`
+- `KSampler`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 15/17 个有
-- `PreviewImage` —— 15/17 个有
-- `ImageConcatMulti` —— 13/17 个有
-- `AIO_Preprocessor` —— 10/17 个有
-- `ConditioningZeroOut` —— 8/17 个有
-- `ImageConcanate` —— 3/17 个有
-- `AddLabel` —— 2/17 个有
-- `ControlNetLoader` —— 1/17 个有
-- `FluxUnionControlNetApply` —— 1/17 个有
-- `ImagePadForOutpaint` —— 1/17 个有
-- `Label (rgthree)` —— 1/17 个有
-- `PreviewAny` —— 1/17 个有
-- `RHHiddenNodes` —— 1/17 个有
-- `SetUnionControlNetType` —— 1/17 个有
-- `TextBox` —— 1/17 个有
-- `TextGenerate` —— 1/17 个有
+- `CLIPLoader` —— 14/17 个有
+- `LoraLoaderModelOnly` —— 11/17 个有
+- `CR Text` —— 6/17 个有
+- `CR SDXL Aspect Ratio` —— 3/17 个有
+- `CLIPLoaderGGUF` —— 2/17 个有
+- `ClipLoaderGGUF` —— 1/17 个有
+- `Float` —— 1/17 个有
+- `Int` —— 1/17 个有
+- `PreviewImage` —— 1/17 个有
+- `TTResolutionSelector` —— 1/17 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| ControlNet 权重 | canny | - | 1 | 100% |
+| 采样步数 | 8 | 4 - 30 | 17 | 33% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4 | 17 | 29% |
+| 采样算法 | euler | - | 17 | 59% |
+| 调度器 | simple | - | 17 | 94% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 4 - 30，17 个样本，取值分散，一致性仅 33%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，17 个样本，取值分散，一致性仅 29%
+- 采样算法 最常用 euler，17 个样本，一致性 59%
+- 调度器 最常用 simple，17 个样本，一致性 94%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 高发问题（12/17 个样本）：Steps较低可能导致细节不足

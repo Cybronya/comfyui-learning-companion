@@ -2,79 +2,72 @@
 name: image_to_image_lora_sampler_clip_16
 type: Image To Image
 frequency: 11
-level: weak
-coverage: 0.906182
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LatentCutToBatch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.892091
+common_nodes: [CLIPTextEncode, CR Prompt Text, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, FluxKontextImageScale, KSampler, LoadImage, LoraLoaderModelOnly, RH_Sora2_I2V, ReferenceLatent, SaveImage, SaveVideo, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/(10倍加速版)Qwen Layerd分层图像图生图_2002222132568440833.json, 图片生成/图生图/(10倍加速版)Qwen Layerd分层图像图生图_2004883562950258689.json, 图片生成/图生图/01-12-01-QwenImage-Qwen-Layerd分层图像图生图_2004832173045805058.json, 图片生成/图生图/65.tonnie-layered图像分层（效果不好）_2009437356616585218.json, 图片生成/图生图/PSD生成器，Qwen+Layerd分层图像，直接在PS使用，生成psd_2061362779352817665.json, 图片生成/图生图/Qwen Image Layerd 图像智能分层（加速版）｜保存PSD_2091058647039307777.json, 图片生成/图生图/Qwen Image Layerd 图像智能分层（加速版）｜保存PSD_2110550275323949057.json, 图片生成/图生图/Qwen Layerd-图生图-分层（加速版）_2002729003507150850.json, 图片生成/图生图/psd生成器，Qwen+Layerd分层图像，生成带透明通道的图层，直接在ps使用，生成psd_2008809805498032129.json, 图片生成/图生图/新版psd生成器，Qwen+Layerd分层图像，生成带透明通道的图层，直接在ps使用，生成psd_2056225742748389377.json, 图片生成/图生图/（PSD分层）Qwen Image Layerd 图像智能分层（加速版）｜保存PSD_2111802213214547970.json]
+members: [图片生成/图生图/全能视频S 突破真人图像加载hd高清版_1976967687794499585.json, 视频生成/图生视频/全能视频S 真人图片带货视频高清修复版支持hd高清竖版横板seedvr2二次高清视频_1979019890944282626.json, 视频生成/图生视频/全能视频S 真人版丨突破真人限制高清图生视频！！！_1980175140845686785.json, 视频生成/图生视频/全能视频S 真人版带货版突破真人限制无水印带货视频直出_1981394099058155522.json, 视频生成/图生视频/全能视频S 真人突破高清修复版支持hd高清竖版横板_1976662868592676865.json, 视频生成/图生视频/全能视频S+真人突破高清修复版支持hd高清竖版横板_1987128422977703937.json, 视频生成/图生视频/全能视频S真人图片直出视频二次高清版图生视频支持竖版9_16和横版16_9及hd版真人视频_1974791386690097154.json, 视频生成/图生视频/全能视频S真人图片直出视频二次高清版图生视频支持竖版9_16和横版16_9及hd版真人视频_1977406898737684481.json, 视频生成/图生视频/顶配 全能视频S 真人突破版hd高清竖版横板_1976679775987290113.json, 视频生成/文生视频/全能视频S  突破真人_1987944719135256577.json, 视频生成/文生视频/全能视频S 突破真人，高清版_1984183574075211778.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_16
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/(10倍加速版)Qwen Layerd分层图像图生图_2002222132568440833.json、图片生成/图生图/(10倍加速版)Qwen Layerd分层图像图生图_2004883562950258689.json、图片生成/图生图/01-12-01-QwenImage-Qwen-Layerd分层图像图生图_2004832173045805058.json、图片生成/图生图/65.tonnie-layered图像分层（效果不好）_2009437356616585218.json、图片生成/图生图/PSD生成器，Qwen+Layerd分层图像，直接在PS使用，生成psd_2061362779352817665.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/全能视频S 突破真人图像加载hd高清版_1976967687794499585.json、视频生成/图生视频/全能视频S 真人图片带货视频高清修复版支持hd高清竖版横板seedvr2二次高清视频_1979019890944282626.json、视频生成/图生视频/全能视频S 真人版丨突破真人限制高清图生视频！！！_1980175140845686785.json、视频生成/图生视频/全能视频S 真人版带货版突破真人限制无水印带货视频直出_1981394099058155522.json、视频生成/图生视频/全能视频S 真人突破高清修复版支持hd高清竖版横板_1976662868592676865.json…）
 
 - **类型**：Image To Image
 - **样本数**：11
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：91%
+- **可信度**：强结论
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 11 个 workflow 都包含：
-- `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `FluxKontextImageScale`
 - `KSampler`
-- `LatentCutToBatch`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
+- `RH_Sora2_I2V`
 - `ReferenceLatent`
 - `SaveImage`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyHunyuanLatentVideo` —— 10/11 个有
-- `MathExpression|pysssss` —— 10/11 个有
-- `Float` —— 6/11 个有
-- `ImpactInt` —— 6/11 个有
-- `JWInteger` —— 5/11 个有
-- `Int` —— 4/11 个有
-- `HAIGC_CombineUnits` —— 3/11 个有
-- `HAIGC_Layer` —— 3/11 个有
-- `HAIGC_SavePSD` —— 3/11 个有
-- `VHS_VideoCombine` —— 3/11 个有
-- `孤海注释` —— 3/11 个有
-- `EmptyHunyuanVideo15Latent` —— 1/11 个有
-- `INTConstant` —— 1/11 个有
-- `LatentFromBatch` —— 1/11 个有
+- `easy cleanGpuUsed` —— 10/11 个有
+- `easy showAnything` —— 10/11 个有
+- `VHS_LoadVideoPath` —— 7/11 个有
+- `VHS_VideoCombine` —— 7/11 个有
+- `SeedVR2` —— 6/11 个有
+- `Bookmark (rgthree)` —— 2/11 个有
+- `SeedVR2GGUF` —— 1/11 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 1 - 50 | 11 | 20% |
-| Prompt 约束强度(CFG) | 1 | 1 - 4 | 11 | 27% |
+| 采样步数 | 30 | 30 - 30 | 11 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
 | 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 100% |
+| 调度器 | beta | - | 11 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 1 - 50，11 个样本，取值分散，一致性仅 20%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4，11 个样本，取值分散，一致性仅 27%
+- 采样步数 中位数 30，观测区间 30 - 30，11 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 100%
+- 调度器 最常用 beta，11 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（6/11 个样本）：Steps较低可能导致细节不足

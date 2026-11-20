@@ -1,122 +1,101 @@
 ---
 name: text_to_image_upscale_lora_sampler_112
 type: Text To Image
-frequency: 3
+frequency: 2
 level: weak
-coverage: 0.691
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, CR Seed, CR Upscale Image, CheckpointLoaderSimple, ConditioningAverage, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Florence2ModelLoader, Florence2Run, Flux2Scheduler, GenerateNoise, GetImageSize, GetImageSize+, GetNode, Image Comparer (rgthree), ImageCompositeMasked, ImageScaleToTotalPixels, Int, KSampler, KSamplerSelect, LCSColorAnchor, LCSLoadData, LCSSharpnessCalibrate, LCSSharpnessIntervene, LGNoiseInjectionLatent, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, RandomNoise, ReferenceLatent, ResizeMask, SamplerCustomAdvanced, SaveImage, SetNode, UNETLoader, UltimateSDUpscaleNoUpscale, VAEDecode, VAEEncode, VAELoader, VRAM_Debug, easy sam3ImageSegmentation, easy sam3ModelLoader, 孤海注释, 忽略多组孤海]
+coverage: 0.905
+common_nodes: [AIO_Preprocessor, CFGNorm, CLIPLoader, CLIPTextEncode, CR Text, CR Text Concatenate, ConditioningZeroOut, DualCLIPLoader, EmptyLatentImage, FluxGuidance, Image Comparer (rgthree), Image Tiled, ImageConcanateOfUtils, ImageFromBatch, ImageListToBatch+, ImageScaleBy, ImageUpscaleWithModel, Images to RGB, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, PrimitiveInt, ReferenceLatent, SaveImage, SeedVR2, SeedVR2BlockSwap, ShowText|pysssss, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, TeaCache, TextEncodeQwenImageEditPlus, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageBatchToImageList]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/三采专业洗图｜Krea 2+Flux2+zimage真实度提升版_2090941537101369346.json, 图片生成/文生图/自用版 Krea 2 +Flux2 图像高清放大修复工作流V2.0提高图_2089243311126179841.json, 图片生成/文生图/高清放大修复V2.0｜Krea 2+Flux2自用版图像画质提高_2089480954074193922.json]
+members: [图片生成/图生图/Qwen Image Edit Plus 分块高清放大 多参考图像编辑工作流 -StarAI_1970737085378404353.json, 图片生成/图生图/Qwen Image Edit Plus 多参考图像编辑工作流-test_2046780751697420289.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_upscale_lora_sampler_112
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（图片生成/文生图/三采专业洗图｜Krea 2+Flux2+zimage真实度提升版_2090941537101369346.json、图片生成/文生图/自用版 Krea 2 +Flux2 图像高清放大修复工作流V2.0提高图_2089243311126179841.json、图片生成/文生图/高清放大修复V2.0｜Krea 2+Flux2自用版图像画质提高_2089480954074193922.json）
+> 由 `engine/knowledge_consolidation` 从 2 个 workflow 归纳得出（图片生成/图生图/Qwen Image Edit Plus 分块高清放大 多参考图像编辑工作流 -StarAI_1970737085378404353.json、图片生成/图生图/Qwen Image Edit Plus 多参考图像编辑工作流-test_2046780751697420289.json）
 
 - **类型**：Text To Image
-- **样本数**：3
+- **样本数**：2
 - **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：69%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 3 个 workflow 都包含：
-- `CFGGuider`
+全部 2 个 workflow 都包含：
+- `AIO_Preprocessor`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Seed`
-- `CR Upscale Image`
-- `CheckpointLoaderSimple`
-- `ConditioningAverage`
+- `CR Text`
+- `CR Text Concatenate`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
+- `DualCLIPLoader`
 - `EmptyLatentImage`
-- `Florence2ModelLoader`
-- `Florence2Run`
-- `Flux2Scheduler`
-- `GenerateNoise`
-- `GetImageSize`
-- `GetImageSize+`
-- `GetNode`
+- `FluxGuidance`
 - `Image Comparer (rgthree)`
-- `ImageCompositeMasked`
-- `ImageScaleToTotalPixels`
+- `Image Tiled`
+- `ImageConcanateOfUtils`
+- `ImageFromBatch`
+- `ImageListToBatch+`
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
+- `Images to RGB`
 - `Int`
 - `KSampler`
-- `KSamplerSelect`
-- `LCSColorAnchor`
-- `LCSLoadData`
-- `LCSSharpnessCalibrate`
-- `LCSSharpnessIntervene`
-- `LGNoiseInjectionLatent`
-- `LoraLoaderBypassModelOnly`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
+- `PrimitiveInt`
 - `ReferenceLatent`
-- `ResizeMask`
-- `SamplerCustomAdvanced`
 - `SaveImage`
-- `SetNode`
+- `SeedVR2`
+- `SeedVR2BlockSwap`
+- `ShowText|pysssss`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `TeaCache`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
-- `UltimateSDUpscaleNoUpscale`
+- `UpscaleModelLoader`
 - `VAEDecode`
+- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
-- `VRAM_Debug`
-- `easy sam3ImageSegmentation`
-- `easy sam3ModelLoader`
-- `孤海注释`
-- `忽略多组孤海`
-
-**可变部分**（部分 workflow 才有）：
-- `CR Text Concatenate` —— 2/3 个有
-- `ConditioningKrea2Rebalance` —— 2/3 个有
-- `JjkText` —— 2/3 个有
-- `MaskPreview+` —— 2/3 个有
-- `ResolutionSelector` —— 2/3 个有
-- `solarL_SaveImagesToZip` —— 2/3 个有
-- `DepthAnythingV2Preprocessor` —— 1/3 个有
-- `EditTextEncode_EditUtils` —— 1/3 个有
-- `Krea2EditApply_EditUtils` —— 1/3 个有
-- `Krea2ModelConfig_EditUtils` —— 1/3 个有
-- `LayerUtility: ImageReel` —— 1/3 个有
-- `LayerUtility: ImageReelComposit` —— 1/3 个有
-- `LoadImage` —— 1/3 个有
-- `QwenConfigPreparer_EditUtils` —— 1/3 个有
-- `ShowText|pysssss` —— 1/3 个有
-- `easy promptConcat` —— 1/3 个有
-- `llama_cpp_instruct_adv` —— 1/3 个有
-- `llama_cpp_model_loader` —— 1/3 个有
+- `easy cleanGpuUsed`
+- `easy imageBatchToImageList`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 3 | 65% |
-| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 3 | 51% |
-| 采样算法 | er_sde | - | 3 | 100% |
-| 调度器 | beta | - | 3 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 3 | 100% |
-| 宽度 | 80 | 80 - 1280 | 3 | 0% |
-| 高度 | 80 | 80 - 720 | 3 | 0% |
+| 宽度 | 512 | - | 2 | 100% |
+| 高度 | 512 | - | 2 | 100% |
+| 采样步数 | 16.5 | - | 2 | 48% |
+| Prompt 约束强度(CFG) | 1.05 | - | 2 | 95% |
+| 采样算法 | euler | - | 2 | 100% |
+| 调度器 | simple | - | 2 | 100% |
+| 重绘幅度 | 0.575 | - | 2 | 26% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/3 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/2 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，3 个样本
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，3 个样本
-- 采样算法 最常用 er_sde，3 个样本，一致性 100%
-- 调度器 最常用 beta，3 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 1280，3 个样本，取值分散，一致性仅 0%
-- 高度 中位数 80，观测区间 80 - 720，3 个样本，取值分散，一致性仅 0%
-- 高发问题（5/3 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 512，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 16.5，样本不足，未给区间，2 个样本，取值分散，一致性仅 48%
+- Prompt 约束强度(CFG) 中位数 1.05，样本不足，未给区间，2 个样本，取值集中（一致性 95%）
+- 采样算法 最常用 euler，2 个样本，一致性 100%
+- 调度器 最常用 simple，2 个样本，一致性 100%
+- 重绘幅度 中位数 0.575，样本不足，未给区间，2 个样本，取值分散，一致性仅 26%
+- 高发问题（2/2 个样本）：Steps较低可能导致细节不足
+- 注意：仅 2 个样本，上述结论仅供参考，建议积累到 5 个以上再据此调参

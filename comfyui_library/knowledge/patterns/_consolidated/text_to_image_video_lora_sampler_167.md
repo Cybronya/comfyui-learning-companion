@@ -3,69 +3,61 @@ name: text_to_image_video_lora_sampler_167
 type: Text To Image
 frequency: 4
 level: strong
-coverage: 0.42675
-common_nodes: [Any2ListNode, Audio Duration (mtb), AudioCrop, AudioEncoderEncode, AudioEncoderLoader, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, DiffusionModelLoaderKJ, EmptyLatentImage, GetNode, ImageBatch, ImageFromBatch, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelPatchLoader, PreviewAny, PreviewAudio, PreviewImage, PrimitiveFloat, SetNode, TextInput_, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanInfiniteTalkToVideo, easy indexAnything, easy int, easy promptLine, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.89775
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateCFGScheduleFloatList, EmptyLatentImage, GetImageSizeAndCount, INTConstant, ImageFromBatch, JWInteger, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, RHHiddenNodes, RH_LLMAPI_Pro_Node, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy boolean, easy forLoopEnd, easy forLoopStart, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/InfiniteTalk数字人单人图像驱动32秒版本，数字人生成工作流_2103248055586873346.json, 数字人/数字人/InfiniteTalk数字人图像驱动 32秒单人视频生成工具_2114059597593010177.json, 数字人/数字人/鼎子InfiniteTalk数字人单人图像驱动｜32秒版本_2114011264488927234.json, 视频生成/图生视频/YZ金鱼单人InfiniteTalk官方版｜图生视频对口型驱动_2110726337492250626.json]
+members: [视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json, 视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json, 视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json, 视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2114183955657351169.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_167
 
-> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（数字人/数字人/InfiniteTalk数字人单人图像驱动32秒版本，数字人生成工作流_2103248055586873346.json、数字人/数字人/InfiniteTalk数字人图像驱动 32秒单人视频生成工具_2114059597593010177.json、数字人/数字人/鼎子InfiniteTalk数字人单人图像驱动｜32秒版本_2114011264488927234.json、视频生成/图生视频/YZ金鱼单人InfiniteTalk官方版｜图生视频对口型驱动_2110726337492250626.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（视频生成/图生视频/动态表情包滤镜特效创意形象图生视频_2087416229165355009.json、视频生成/图生视频/动态表情包生成｜滤镜特效创意形象图生视频_2092382929543589889.json、视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2110435574405492737.json、视频生成/图生视频/图生视频一键制作动态表情包，创意形象自带滤镜特效_2114183955657351169.json）
 
 - **类型**：Text To Image
 - **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：43%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 4 个 workflow 都包含：
-- `Any2ListNode`
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `DiffusionModelLoaderKJ`
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
 - `EmptyLatentImage`
-- `GetNode`
-- `ImageBatch`
+- `GetImageSizeAndCount`
+- `INTConstant`
 - `ImageFromBatch`
+- `JWInteger`
 - `JjkText`
 - `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MathExpression|pysssss`
-- `ModelPatchLoader`
-- `PreviewAny`
-- `PreviewAudio`
-- `PreviewImage`
-- `PrimitiveFloat`
-- `SetNode`
-- `TextInput_`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `WanInfiniteTalkToVideo`
-- `easy indexAnything`
-- `easy int`
-- `easy promptLine`
-- `easy showAnything`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy boolean`
+- `easy forLoopEnd`
+- `easy forLoopStart`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `SaveImage` —— 2/4 个有
+- `孤海注释` —— 3/4 个有
+- `EmptyImage` —— 1/4 个有
+- `PreviewImage` —— 1/4 个有
 
 ## 典型参数
 
@@ -83,7 +75,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 34/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -94,4 +86,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
-- 高发问题（34/4 个样本）：Steps较低可能导致细节不足
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

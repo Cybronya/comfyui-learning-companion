@@ -3,17 +3,17 @@ name: text_to_image_lora_sampler_clip_408
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.895
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, Float, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_SamplingConfig, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.8898
+common_nodes: [CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, QwenPERewriteT8, ResolutionSelector, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/IndexTTS_2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2109099878965137409.json, 数字人/数字人/Index TTS 2.5情感文本控制语音克隆工作流，单人语音生成工具_2106152553548443650.json, 数字人/数字人/IndexTTS 2.5文本控制情感语音克隆｜数字人配音_2105831291030687746.json, 音频生成/音频生成/2608情感文本控制｜IndexTTS 2.5语音克隆音频生成_2095098000753385473.json, 音频生成/音频生成/IndexTTS 2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2106887580888428546.json]
+members: [图片生成/文生图/服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954.json, 图片生成/文生图/稳定加速Tao版 Qwen Image 2.1 PE文生图加图生图编辑_2104352509451137025.json, 视频生成/图生视频/Qwen Image 2.1参考人物姿势，图生视频姿势参考生成方案_2103578331991068673.json, 视频生成/图生视频/Qwen_Image_2.1_PE图像编辑工作流，人像写真图生图其它图片处理方案_2109526005462421506.json, 视频生成/图生视频/Remove模型Qwen_Image_2.1_PE姿势编辑工作流，人物类特效擦除图生图_2108739961490071554.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_408
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/IndexTTS_2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2109099878965137409.json、数字人/数字人/Index TTS 2.5情感文本控制语音克隆工作流，单人语音生成工具_2106152553548443650.json、数字人/数字人/IndexTTS 2.5文本控制情感语音克隆｜数字人配音_2105831291030687746.json、音频生成/音频生成/2608情感文本控制｜IndexTTS 2.5语音克隆音频生成_2095098000753385473.json、音频生成/音频生成/IndexTTS 2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2106887580888428546.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954.json、图片生成/文生图/稳定加速Tao版 Qwen Image 2.1 PE文生图加图生图编辑_2104352509451137025.json、视频生成/图生视频/Qwen Image 2.1参考人物姿势，图生视频姿势参考生成方案_2103578331991068673.json、视频生成/图生视频/Qwen_Image_2.1_PE图像编辑工作流，人像写真图生图其它图片处理方案_2109526005462421506.json、视频生成/图生视频/Remove模型Qwen_Image_2.1_PE姿势编辑工作流，人物类特效擦除图生图_2108739961490071554.json）
 
 - **类型**：Text To Image
 - **样本数**：5
@@ -25,34 +25,37 @@ source: knowledge_consolidation
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
+- `ComfySwitchNode`
 - `EmptyLatentImage`
-- `Float`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `T8_IndexTTS25_EmotionControl`
-- `T8_IndexTTS25_Generate`
-- `T8_IndexTTS25_ModelLoader`
-- `T8_IndexTTS25_SamplingConfig`
+- `QwenPERewriteT8`
+- `ResolutionSelector`
+- `SaveImage`
+- `TextEncodeQwenImage21`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 4/5 个有
-- `SaveAudio` —— 3/5 个有
-- `PixaromaGroupSwitch` —— 2/5 个有
-- `PreviewAudio` —— 2/5 个有
-- `SaveAudioAdvanced` —— 2/5 个有
-- `T8_IndexTTS25_DialogueGenerate` —— 2/5 个有
-- `T8_IndexTTS25_DialogueScript` —— 2/5 个有
-- `T8_IndexTTS25_RoleLibrary` —— 2/5 个有
-- `T8_IndexTTS25_VoiceProfile` —— 2/5 个有
-- `EmptyImage` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
+- `CR Prompt Text` —— 4/5 个有
+- `QwenImage21BlockCacheT8` —— 4/5 个有
+- `QwenImage21Cache` —— 4/5 个有
+- `QwenImage21SageAttentionT8` —— 4/5 个有
+- `QwenImage21SpectrumT8` —— 4/5 个有
+- `easy cleanGpuUsed` —— 4/5 个有
+- `easy showAnything` —— 4/5 个有
+- `EmptyImage` —— 3/5 个有
+- `PreviewImage` —— 3/5 个有
+- `孤海注释` —— 3/5 个有
+- `AIO_Preprocessor` —— 1/5 个有
+- `Display Any (rgthree)` —— 1/5 个有
+- `ImageStitch` —— 1/5 个有
+- `Text Multiline` —— 1/5 个有
+- `easy seed` —— 1/5 个有
 
 ## 典型参数
 

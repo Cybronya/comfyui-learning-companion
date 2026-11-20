@@ -1,99 +1,83 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale_32
 type: Unknown Workflow
-frequency: 10
-level: moderate
-coverage: 0.4334
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, MiniMaxH3SigmaShift, MinimaxH3LatentUpscaler3D, ModelPreviewOverrideKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SetNode, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
+frequency: 11
+level: strong
+coverage: 0.466727
+common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, ImageResizeKJv2, KSamplerSelect, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SetNode, UNETLoader, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/MiniMax-H3_全能参考_长视频_2108379264335831041.json, 视频生成/图生视频/MINIMAX-H3 显存终极优化工作流_2090382657434767361.json, 视频生成/图生视频/MINIMAX-H3 武打戏特化工作流_2091850926716973058.json, 视频生成/图生视频/MiniMax-H3_全能参考_长视频_2085702104550825985.json, 视频生成/图生视频/MiniMax-H3_全能参考_长视频_2105590333219364866.json, 视频生成/图生视频/MiniMax-H3_全能参考_长视频_2108378852060913666.json, 视频生成/图生视频/MiniMax-H3_全能参考_长视频_2116305572885782530.json, 视频生成/图生视频/MiniMax-H3_全能参考_长视频_2116387251621023746.json, 视频生成/文生视频/MiniMax-H3_全能参考_长视频_2085702104550825985.json, 视频生成/视频生视频/MiniMax-H3_全能参考_长视频_2085702104550825985.json]
+members: [视频生成/图生视频/Best_faceid V1 for ltx2.3_2082528336852635649.json, 视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083500149866848258.json, 视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083534814229127169.json, 视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2099063135738097666.json, 视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2114326994199601154.json, 视频生成/图生视频/LTX2.3 超高人脸一致性与角色保持 LoRA_2083496691566727169.json, 视频生成/图生视频/LTX2.3-best_faceid_charsheet-人脸高一致性_2083089483041427458.json, 视频生成/图生视频/LTX2.3-best_faceid_ganloss-人脸高一致性_2083196415471345666.json, 视频生成/图生视频/video_ltx2_3_best_charactor_sheet_ganloss_2080574328030191617.json, 视频生成/图生视频/video_ltx2_3_best_faceid_charsheet_ganloss_upscale_2080581115986931714.json, 视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_upscale_2080566370382729217.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_32
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/MiniMax-H3_全能参考_长视频_2108379264335831041.json、视频生成/图生视频/MINIMAX-H3 显存终极优化工作流_2090382657434767361.json、视频生成/图生视频/MINIMAX-H3 武打戏特化工作流_2091850926716973058.json、视频生成/图生视频/MiniMax-H3_全能参考_长视频_2085702104550825985.json、视频生成/图生视频/MiniMax-H3_全能参考_长视频_2105590333219364866.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Best_faceid V1 for ltx2.3_2082528336852635649.json、视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083500149866848258.json、视频生成/图生视频/LTX 2.3 打造的人脸一致性与角色保持 LoRA_2083534814229127169.json、视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2099063135738097666.json、视频生成/图生视频/LTX2.3 Edit Anything编辑万物编辑视频任何元素视频替换视频修改视频编辑动作迁移_2114326994199601154.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：43%
+- **样本数**：11
+- **可信度**：强结论
+- **平均知识覆盖**：47%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
-- `CLIPLoader`
+全部 11 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPTextEncode`
 - `ComfyMathExpression`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
+- `ImageResizeKJv2`
 - `KSamplerSelect`
 - `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
 - `LTXVSeparateAVLatent`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
-- `LoadImage`
+- `LatentUpscaleModelLoader`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `MiniMaxH3SigmaShift`
-- `MinimaxH3LatentUpscaler3D`
-- `ModelPreviewOverrideKJ`
-- `PrimitiveFloat`
+- `ManualSigmas`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `SetNode`
-- `SplitSigmas`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
-- `VAELoader`
-- `VHS_LoadVideo`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ModelAttentionBackend` —— 9/10 个有
-- `Any Switch (rgthree)` —— 8/10 个有
-- `ExtendIntermediateSigmas` —— 8/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 8/10 个有
-- `GetImageRangeFromBatch` —— 8/10 个有
-- `INTConstant` —— 8/10 个有
-- `ImageAddNoise` —— 8/10 个有
-- `ImageFromBatch` —— 8/10 个有
-- `MiniMaxH3AddGuide` —— 8/10 个有
-- `Seed (rgthree)` —— 8/10 个有
-- `TrimAudioDuration` —— 8/10 个有
-- `VHS_VideoInfoLoaded` —— 8/10 个有
-- `BatchImagesNode` —— 7/10 个有
-- `BlockSparseAttention` —— 5/10 个有
-- `GetImagesFromBatchIndexed` —— 5/10 个有
-- `PreviewAny` —— 5/10 个有
-- `easy forLoopEnd` —— 5/10 个有
-- `easy forLoopStart` —— 5/10 个有
-- `easy ifElse` —— 5/10 个有
-- `easy isNone` —— 5/10 个有
-- `easy lengthAnything` —— 5/10 个有
-- `easy promptConcat` —— 5/10 个有
-- `easy showAnything` —— 4/10 个有
-- `RepeatImageBatch` —— 3/10 个有
-- `ComfySwitchNode` —— 2/10 个有
-- `ConditioningZeroOut` —— 2/10 个有
-- `H3SigmaRefiner` —— 2/10 个有
-- `ImageScaleToTotalPixels` —— 2/10 个有
-- `MiniMaxChunkFeedForward` —— 2/10 个有
-- `MiniMaxLowVRAMAttention` —— 2/10 个有
-- `PreviewImage` —— 2/10 个有
-- `SelfLiftH3Sampler` —— 2/10 个有
-- `忽略多组孤海` —— 2/10 个有
-- `ColorTransfer` —— 1/10 个有
-- `PrimitiveBoolean` —— 1/10 个有
+- `LTXIdentityOverlapConditioning` —— 9/11 个有
+- `LoadImage` —— 9/11 个有
+- `PreviewImage` —— 9/11 个有
+- `PrimitiveBoolean` —— 9/11 个有
+- `PrimitiveInt` —— 9/11 个有
+- `RMBG` —— 9/11 个有
+- `BasicScheduler` —— 8/11 个有
+- `LTXVAudioVAEDecode` —— 8/11 个有
+- `LTXVCropGuides` —— 8/11 个有
+- `VAEDecodeTiled` —— 8/11 个有
+- `LTXTiledSampler` —— 6/11 个有
+- `LTXVLatentUpsamplerTiled` —— 6/11 个有
+- `SimpleMath+` —— 4/11 个有
+- `GetImageRangeFromBatch` —— 2/11 个有
+- `ImageConcanate` —— 2/11 个有
+- `Int` —— 2/11 个有
+- `LTXVAddGuideMulti` —— 2/11 个有
+- `LTXVImgToVideoInplace` —— 2/11 个有
+- `LTXVLatentUpsampler` —— 2/11 个有
+- `VAEEncode` —— 2/11 个有
+- `VHS_LoadVideo` —— 2/11 个有
+- `孤海注释` —— 2/11 个有
+- `Label (rgthree)` —— 1/11 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 11 | 100% |
+| 高度 | 25 | 25 - 25 | 11 | 100% |
 
 ## 常见问题
 
@@ -101,4 +85,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，11 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，11 个样本，取值集中（一致性 100%）

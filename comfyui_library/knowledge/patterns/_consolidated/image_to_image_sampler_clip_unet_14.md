@@ -1,32 +1,34 @@
 ---
 name: image_to_image_sampler_clip_unet_14
 type: Image To Image
-frequency: 17
-level: strong
-coverage: 0.959471
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 13
+level: moderate
+coverage: 0.957923
+common_nodes: [CLIPLoader, CLIPTextEncode, ImageScaleToTotalPixels, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2-Klein图生图_2012141948076826625.json, 图片生成/图生图/Flux2-Klein真实人像质感御姐美女_2040676390156115969.json, 图片生成/图生图/Flux2-klein单图编辑_2012160766627028993.json, 图片生成/图生图/Flux2-klein单图编辑快速改图改动作改头发改衣服动画改图修复图片30秒完成_2012164663273852929.json, 图片生成/图生图/Flux2-klein材质替换_2012507605150736386.json, 图片生成/图生图/Flux2-klein洗图真实人像质感美女_2038109616621490178.json, 图片生成/图生图/Flux2_Klein_9B印花提取V8_2104445424978452481.json, 图片生成/图生图/HL_2071329763985285121.json, 图片生成/图生图/flux一分钟快速换脸工作流图片换脸人脸变换_2089571788379475970.json, 图片生成/图生图/flux一分钟快速换脸工作流图片换脸人脸变换图生图_2089674597674344449.json, 图片生成/图生图/ht_2076413527618838529.json, 图片生成/图生图/klein9b 换头1_2033166861201842178.json, 图片生成/图生图/pipiai换脸神器_2034967727894437889.json, 图片生成/图生图/人物换脸换头-黑兽Klein 9B BFS_2036793996411936770.json, 图片生成/图生图/史上最强换脸工作流 黑兽Klein 9B BFS换脸V1 林耀3.26_2037080557837881346.json, 图片生成/图生图/土狗002_2043476116144394242.json, 图片生成/图生图/土狗0425API更新版_2046545303985201154.json]
+members: [图片生成/反推提示词/54bejingxiaoshi_2051276423373045762.json, 图片生成/图生图/3-Flux 2 Klein（图像编辑）Flux 2 Klein 9B Edit_2053399496402456578.json, 图片生成/图生图/B妮B妳-N_S_F_W_系列-DarkBeast-Klein9b-BFS_2033122326463651841.json, 图片生成/图生图/Qwen-Image-Layered图像分层_2017069015822245890.json, 图片生成/图生图/Qwen-Image-Layered图像分层_拆分图层_2030837051507089409.json, 图片生成/图生图/Qwen-Image-Layered图像分层_拆分图层_2096516146404085762.json, 图片生成/图生图/Qwen-Image-Layered图像分层_拆分图层_2096873987820310529.json, 图片生成/图生图/Qwen-Image-Layered图像分层多个 RGBA 图层_2021876336322678785.json, 图片生成/图生图/Qwen-Image-Layered图像分层工作流_2038849289849409537.json, 图片生成/图生图/Qwen-Image-Layered图像分层，将图片拆成多个 RGBA 图层_2002281908631400449.json, 图片生成/图生图/Qwen图像分层，将图片拆成多个+RGBA+图层_2017122772144627713.json, 图片生成/图生图/背景消失术：一键实现人物与海报文字的完美分离_2008910987314864130.json, 图片生成/图生图/🦖Image-Layered图片拆分图层_2010567440442331137.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_14
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/Flux2-Klein图生图_2012141948076826625.json、图片生成/图生图/Flux2-Klein真实人像质感御姐美女_2040676390156115969.json、图片生成/图生图/Flux2-klein单图编辑_2012160766627028993.json、图片生成/图生图/Flux2-klein单图编辑快速改图改动作改头发改衣服动画改图修复图片30秒完成_2012164663273852929.json、图片生成/图生图/Flux2-klein材质替换_2012507605150736386.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/反推提示词/54bejingxiaoshi_2051276423373045762.json、图片生成/图生图/3-Flux 2 Klein（图像编辑）Flux 2 Klein 9B Edit_2053399496402456578.json、图片生成/图生图/B妮B妳-N_S_F_W_系列-DarkBeast-Klein9b-BFS_2033122326463651841.json、图片生成/图生图/Qwen-Image-Layered图像分层_2017069015822245890.json、图片生成/图生图/Qwen-Image-Layered图像分层_拆分图层_2030837051507089409.json…）
 
 - **类型**：Image To Image
-- **样本数**：17
-- **可信度**：强结论
+- **样本数**：13
+- **可信度**：中等可信
 - **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 13 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
+- `ReferenceLatent`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -34,50 +36,40 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 16/17 个有
-- `ImageScaleToTotalPixels` —— 14/17 个有
-- `ReferenceLatent` —— 14/17 个有
-- `EmptyFlux2LatentImage` —— 11/17 个有
-- `GetImageSize` —— 11/17 个有
-- `ImageConcatMulti` —— 10/17 个有
-- `LayerUtility: PurgeVRAM V2` —— 10/17 个有
-- `easy imageConcat` —— 10/17 个有
-- `Image Comparer (rgthree)` —— 9/17 个有
-- `AddLabel` —— 8/17 个有
-- `LoraLoader` —— 4/17 个有
-- `PIP_图像联结` —— 3/17 个有
-- `scale` —— 3/17 个有
-- `AutoCropFaces` —— 2/17 个有
-- `CR Prompt Text` —— 2/17 个有
-- `CR Text` —— 2/17 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/17 个有
-- `RH_Nano_Banana2_Image2Image` —— 2/17 个有
+- `GetImageSize` —— 12/13 个有
+- `EmptyQwenImageLayeredLatentImage` —— 11/13 个有
+- `JWInteger` —— 11/13 个有
+- `LatentCutToBatch` —— 11/13 个有
+- `ModelSamplingAuraFlow` —— 11/13 个有
+- `PreviewImage` —— 7/13 个有
+- `ConditioningZeroOut` —— 2/13 个有
+- `EmptyFlux2LatentImage` —— 2/13 个有
+- `GetImageSize+` —— 1/13 个有
+- `HAIGC_SaveImagesToZip` —— 1/13 个有
+- `Image Comparer (rgthree)` —— 1/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 4 - 10 | 17 | 69% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 17 | 100% |
-| 采样算法 | euler | - | 17 | 100% |
-| 调度器 | simple | - | 17 | 82% |
-| 重绘幅度 | 1 | 0.3 - 1 | 17 | 70% |
-| LoRA 模型强度 | 0.8 | 0.8 - 1 | 4 | 90% |
-| LoRA 文本强度 | 1 | 1 - 1 | 4 | 100% |
+| 采样步数 | 20 | 4 - 20 | 13 | 68% |
+| Prompt 约束强度(CFG) | 2.5 | 0.5 - 2.5 | 13 | 66% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 2/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 10，17 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，17 个样本，一致性 100%
-- 调度器 最常用 simple，17 个样本，一致性 82%
-- 重绘幅度 中位数 1，观测区间 0.3 - 1，17 个样本
-- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 1，4 个样本，取值集中（一致性 90%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
-- 高发问题（15/17 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 4 - 20，13 个样本
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 0.5 - 2.5，13 个样本
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 风险：Prompt 约束强度(CFG) 观测到 0.5，低于常用下限 1（CFG 过低可能导致 Prompt 约束不足、结果偏离描述）

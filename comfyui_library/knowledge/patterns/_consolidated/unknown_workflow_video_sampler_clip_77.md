@@ -2,74 +2,85 @@
 name: unknown_workflow_video_sampler_clip_77
 type: Unknown Workflow
 frequency: 8
-level: moderate
-coverage: 0.495375
-common_nodes: [CLIPLoader, CLIPTextEncode, GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageResizeKJ, LoadImage, SetNode, SimpleMath+, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoDiffusionForcingSampler, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoExperimentalArgs, WanVideoModelLoader, WanVideoSLG, WanVideoTeaCache, WanVideoTextEmbedBridge, WanVideoTorchCompileSettings, WanVideoVAELoader]
+level: strong
+coverage: 0.553625
+common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [图片生成/图生图/AI电影一镜到底无限时长——skyreels_DF_1914826098448789506.json, 平台全量/视频变长（实测5秒变30秒）SkyReels V2_1916394711811031041.json, 视频生成/图生视频/25-04-25 skyreels_df_生成超长视频_1915096994971586561.json, 视频生成/图生视频/For循环无限长度视频生成-SkyReels-V2_1915667745395118081.json, 视频生成/图生视频/SkyReels DF 14B扩散强制模型长视频生成V1_1914710497503997953.json, 视频生成/图生视频/SkyReels DF 14B扩散强制模型长视频生成_1914972676837048321.json, 视频生成/图生视频/SkyReels V2突破AI视频5秒魔咒-无限时长电影级视频_1914635301778616321.json, 视频生成/图生视频/SkyReels V2视频生成_1914863994480357378.json]
+members: [视频生成/图生视频/AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(带运镜版)_2068875713587007490.json, 视频生成/图生视频/AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2068905830182899714.json, 视频生成/图生视频/LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(带运镜版)_2069697861658435586.json, 视频生成/图生视频/LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2069688707870978050.json, 视频生成/图生视频/LTX-2.3 漫剧视频（四宫格V2.0-单采稳定）_2067017376826216450.json, 视频生成/图生视频/LTX-2.3+4宫格V3.0+红果短剧特调版+运镜_2069616746276937729.json, 视频生成/图生视频/LTX2.3 单图_双图_三_四_五图 图生视频 整合版  V1.0_2043556476085604353.json, 视频生成/图生视频/LTX2.3 图生视频 整合版  单图_双图_三_四_五_2041885580006526978.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_77
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/AI电影一镜到底无限时长——skyreels_DF_1914826098448789506.json、平台全量/视频变长（实测5秒变30秒）SkyReels V2_1916394711811031041.json、视频生成/图生视频/25-04-25 skyreels_df_生成超长视频_1915096994971586561.json、视频生成/图生视频/For循环无限长度视频生成-SkyReels-V2_1915667745395118081.json、视频生成/图生视频/SkyReels DF 14B扩散强制模型长视频生成V1_1914710497503997953.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(带运镜版)_2068875713587007490.json、视频生成/图生视频/AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2068905830182899714.json、视频生成/图生视频/LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(带运镜版)_2069697861658435586.json、视频生成/图生视频/LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2069688707870978050.json、视频生成/图生视频/LTX-2.3 漫剧视频（四宫格V2.0-单采稳定）_2067017376826216450.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：50%
+- **可信度**：强结论
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CLIPLoader`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `CR Float To Integer`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `GetNode`
-- `INTConstant`
-- `ImageResizeKJ`
+- `KSamplerSelect`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
+- `ManualSigmas`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SetNode`
 - `SimpleMath+`
+- `UNETLoader`
+- `VAEDecodeTiled`
+- `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoDiffusionForcingSampler`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoExperimentalArgs`
-- `WanVideoModelLoader`
-- `WanVideoSLG`
-- `WanVideoTeaCache`
-- `WanVideoTextEmbedBridge`
-- `WanVideoTorchCompileSettings`
-- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageBatchMulti` —— 7/8 个有
-- `VHS_LoadVideo` —— 7/8 个有
-- `LoadWanVideoT5TextEncoder` —— 6/8 个有
-- `WanVideoTextEncode` —— 6/8 个有
-- `WanVideoVRAMManagement` —— 5/8 个有
-- `PreviewImage` —— 3/8 个有
-- `Primitive integer [Crystools]` —— 2/8 个有
-- `easy clearCacheAll` —— 2/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
-- `Note Plus (mtb)` —— 1/8 个有
-- `SaveImage` —— 1/8 个有
-- `String Literal` —— 1/8 个有
-- `Text Load Line From File` —— 1/8 个有
-- `VHS_VideoInfo` —— 1/8 个有
-- `easy batchAnything` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
-- `easy forLoopEnd` —— 1/8 个有
-- `easy forLoopStart` —— 1/8 个有
+- `LatentUpscaleModelLoader` —— 7/8 个有
+- `TTResolutionSelector` —— 6/8 个有
+- `JWString` —— 5/8 个有
+- `ParseJsonNode` —— 5/8 个有
+- `ShowText|pysssss` —— 5/8 个有
+- `TD_LTXVAddGuideFromGrid` —— 5/8 个有
+- `INTConstant` —— 3/8 个有
+- `ImageFromBatch+` —— 3/8 个有
+- `LTXVAddGuideMulti` —— 3/8 个有
+- `LoraLoaderModelOnly` —— 3/8 个有
+- `Text` —— 3/8 个有
+- `Any To Any` —— 2/8 个有
+- `BatchCount+` —— 2/8 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
+- `ImageResize+` —— 2/8 个有
+- `Int` —— 2/8 个有
+- `LTXVImgToVideoInplace` —— 2/8 个有
+- `LTXVLatentUpsampler` —— 2/8 个有
+- `Make Image Batch` —— 2/8 个有
+- `MathExpression|pysssss` —— 2/8 个有
+- `easy imageSize` —— 2/8 个有
+- `ImageResizeKJv2` —— 1/8 个有
+- `JWStringToInteger` —— 1/8 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 97 | 97 - 97 | 8 | 100% |
+| 高度 | 25 | 25 - 25 | 8 | 100% |
 
 ## 常见问题
 
@@ -77,4 +88,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 97，观测区间 97 - 97，8 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）

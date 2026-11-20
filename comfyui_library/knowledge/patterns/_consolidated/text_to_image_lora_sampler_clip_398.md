@@ -3,56 +3,64 @@ name: text_to_image_lora_sampler_clip_398
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8372
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8478
+common_nodes: [AddMask, CLIPLoader, CLIPTextEncode, ColorMatchPro, EmptyLatentImage, GetImageSize, GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), GrowMaskWithBlur, Image Paste Crop by Location, ImageCompositeMasked, ImageCropV2, ImageScale, InvertMask, JjkText, KSampler, LayerMask: MaskPreview, LayerUtility: ImageAutoCrop, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveBoundingBox, RH_Nano_Banana2_Gemini31Flash, ResolutionSelector, SAMLoader, SaveImage, SegmentV2, SimpleMath+, StringMergeNode, Text, UNETLoader, VAEDecode, VAELoader, YCMaskDirectionExpand, solarL_SaveImagesToZip, 图像缩放V2_孤海, 孤海图像裁剪按比例, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/九宫格分镜图切割高清放大图生图处理工作流工具_2101039744347099138.json, 图片生成/图生图/全能图片G 2.0去脏去噪｜精修图生图电商处理_2090660175639310337.json, 图片生成/图生图/图像4K超清放大工作流｜SeedVR2图生图画质增强处理_2097387593599115266.json, 图片生成/图生图/图生图高清放大｜seedvr 2 轻松把图片拉到4K超清画质_2097847522336268290.json, 图片生成/文生图/SeedVr2图片放大 图片分辨率提升方案_2109410150871289858.json]
+members: [图片生成/图生图/自动化换脸方案一 一键面部替换保持原画面质感_2104768665513193473.json, 图片生成/图生图/自动化换脸方案三 批量面部替换高效出片一键搞定_2104677188711829506.json, 图片生成/图生图/自动化换脸第1版｜图生图全自动换脸，省时省力稳定出图_2104527348396806145.json, 图片生成/图生图/自动化换脸第2版｜全自动图生图换脸，新手也能一键上手_2104517875368288258.json, 图片生成/图生图/自动化换脸第3弹｜图生图一键换脸，流程全自动省心出片_2104516167573532674.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_398
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/九宫格分镜图切割高清放大图生图处理工作流工具_2101039744347099138.json、图片生成/图生图/全能图片G 2.0去脏去噪｜精修图生图电商处理_2090660175639310337.json、图片生成/图生图/图像4K超清放大工作流｜SeedVR2图生图画质增强处理_2097387593599115266.json、图片生成/图生图/图生图高清放大｜seedvr 2 轻松把图片拉到4K超清画质_2097847522336268290.json、图片生成/文生图/SeedVr2图片放大 图片分辨率提升方案_2109410150871289858.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/自动化换脸方案一 一键面部替换保持原画面质感_2104768665513193473.json、图片生成/图生图/自动化换脸方案三 批量面部替换高效出片一键搞定_2104677188711829506.json、图片生成/图生图/自动化换脸第1版｜图生图全自动换脸，省时省力稳定出图_2104527348396806145.json、图片生成/图生图/自动化换脸第2版｜全自动图生图换脸，新手也能一键上手_2104517875368288258.json、图片生成/图生图/自动化换脸第3弹｜图生图一键换脸，流程全自动省心出片_2104516167573532674.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `AddMask`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ColorMatchPro`
 - `EmptyLatentImage`
+- `GetImageSize`
+- `GroundingDinoModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `GrowMaskWithBlur`
+- `Image Paste Crop by Location`
+- `ImageCompositeMasked`
+- `ImageCropV2`
+- `ImageScale`
+- `InvertMask`
 - `JjkText`
 - `KSampler`
+- `LayerMask: MaskPreview`
+- `LayerUtility: ImageAutoCrop`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `PreviewImage`
+- `PrimitiveBoundingBox`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `ResolutionSelector`
+- `SAMLoader`
 - `SaveImage`
+- `SegmentV2`
+- `SimpleMath+`
+- `StringMergeNode`
+- `Text`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `YCMaskDirectionExpand`
 - `solarL_SaveImagesToZip`
+- `图像缩放V2_孤海`
+- `孤海图像裁剪按比例`
 - `孤海注释`
-
-**可变部分**（部分 workflow 才有）：
-- `SeedVR2LoadDiTModel` —— 4/5 个有
-- `SeedVR2LoadVAEModel` —— 4/5 个有
-- `SeedVR2VideoUpscaler` —— 4/5 个有
-- `PrimitiveInt` —— 3/5 个有
-- `Image Comparer (rgthree)` —— 2/5 个有
-- `Int` —— 2/5 个有
-- `ComfyMathExpression` —— 1/5 个有
-- `ComfySwitchNode` —— 1/5 个有
-- `GetImageSize` —— 1/5 个有
-- `GuHaiAutoImageSplit` —— 1/5 个有
-- `ImpactSwitch` —— 1/5 个有
-- `LayerUtility: Integer` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `PrimitiveBoolean` —— 1/5 个有
-- `RH_RhartImageNProEdit` —— 1/5 个有
 
 ## 典型参数
 

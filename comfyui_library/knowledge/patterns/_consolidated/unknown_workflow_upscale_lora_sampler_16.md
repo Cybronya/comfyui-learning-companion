@@ -2,95 +2,71 @@
 name: unknown_workflow_upscale_lora_sampler_16
 type: Unknown Workflow
 frequency: 13
-level: moderate
-coverage: 0.843385
-common_nodes: [CLIPTextEncode, CheckpointLoaderSimple, ConditioningZeroOut, EmptyLatentImage, GetImageSize+, ImageCASharpening+, ImageResize+, ImageScaleBy, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, easy cleanGpuUsed, easy int]
-problems: []
+level: strong
+coverage: 0.794308
+common_nodes: [CLIPLoader, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/反推提示词/z-image+qwen3.8  文生图+洗图双切换_2116426410230378498.json, 图片生成/图生图/大炮V5_2061711762688397314.json, 图片生成/图生图/大炮V5自选lora_2061723320797720578.json, 图片生成/图生图/🥳随机美女孵蛋器 V5升级版 随机+洗图双切换【绅士模式】_2061281616344997890.json, 图片生成/文生图/260816001.自动优化提示词文生图+洗图_2089003471939923969.json, 图片生成/文生图/4K大炮V5CCD氛围感增强_2064895128690577409.json, 图片生成/文生图/Z-Image-文生图-超高清放大_2101279706992697346.json, 图片生成/文生图/大炮V5CCD一次四张横屏_2065332767617015810.json, 图片生成/文生图/大炮V5CCD一次四张竖屏_2065319074950893570.json, 图片生成/文生图/大炮v5-CCD-V2.0_2066696865017581570.json, 图片生成/文生图/大炮v5-CCD-V4.1_2066779112580149250.json, 平台全量/美女生成器_2104536034028642306.json, 平台全量/随机美女生成V5版 随机+洗图双切换_2061993896393138178.json]
+members: [图片生成/图生图/FireRed‑Image‑Edit衣服替换_2098222393721446402.json, 图片生成/图生图/FireRed‑Image‑Edit衣服替换换装_2097171417648427010.json, 图片生成/图生图/FireRed‑Image‑Edit衣服替换换装_2097510318359535618.json, 图片生成/图生图/一键换装   换装   一键换衣  换衣   电商服装展示_2059835700102651906.json, 图片生成/图生图/心然·寻源-FireRed‑Image‑Edit衣服替换_2091484811545370625.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2063873263129944066.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2063975044883238914.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064223586767958017.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064244296605323266.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064318549887377410.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064419023038799873.json, 图片生成/图生图/换装 换衣  服装展示 电商模特_2064646568548069377.json, 图片生成/图生图/换装+换衣++服装展示+电商模特+_2066700930946527234.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_16
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/反推提示词/z-image+qwen3.8  文生图+洗图双切换_2116426410230378498.json、图片生成/图生图/大炮V5_2061711762688397314.json、图片生成/图生图/大炮V5自选lora_2061723320797720578.json、图片生成/图生图/🥳随机美女孵蛋器 V5升级版 随机+洗图双切换【绅士模式】_2061281616344997890.json、图片生成/文生图/260816001.自动优化提示词文生图+洗图_2089003471939923969.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/FireRed‑Image‑Edit衣服替换_2098222393721446402.json、图片生成/图生图/FireRed‑Image‑Edit衣服替换换装_2097171417648427010.json、图片生成/图生图/FireRed‑Image‑Edit衣服替换换装_2097510318359535618.json、图片生成/图生图/一键换装   换装   一键换衣  换衣   电商服装展示_2059835700102651906.json、图片生成/图生图/心然·寻源-FireRed‑Image‑Edit衣服替换_2091484811545370625.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：84%
+- **可信度**：强结论
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CLIPLoader`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `GetImageSize+`
-- `ImageCASharpening+`
-- `ImageResize+`
-- `ImageScaleBy`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Image Comparer (rgthree)`
+- `KSampler`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2VideoUpscaler`
-- `TTP_Image_Assy`
-- `TTP_Image_Tile_Batch`
-- `TTP_Tile_image_size`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
-- `easy cleanGpuUsed`
-- `easy int`
+- `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DapaoImageAspectRatioResizeNode` —— 12/13 个有
-- `DapaoImageCompressionNode` —— 12/13 个有
-- `DapaoImageRatioLimitNode` —— 12/13 个有
-- `Dapao_LlamaChat` —— 12/13 个有
-- `ImpactSwitch` —— 12/13 个有
-- `Int` —— 12/13 个有
-- `LoadImage` —— 12/13 个有
-- `Seed (rgthree)` —— 12/13 个有
-- `easy positive` —— 12/13 个有
-- `easy showAnything` —— 12/13 个有
-- `孤海注释` —— 12/13 个有
-- `忽略多组孤海` —— 12/13 个有
-- `Note Plus (mtb)` —— 8/13 个有
-- `easy saveText` —— 5/13 个有
-- `RepeatLatentBatch` —— 4/13 个有
-- `CR Prompt List` —— 2/13 个有
-- `DapaoSafeSaveImage` —— 2/13 个有
-- `PreviewImage` —— 2/13 个有
-- `String Literal` —— 2/13 个有
-- `Text Concatenate (JPS)` —— 2/13 个有
+- `PreviewImage` —— 9/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 4/13 个有
+- `GetNode` —— 4/13 个有
+- `SetNode` —— 4/13 个有
+- `Text` —— 4/13 个有
+- `easy imageSizeBySide` —— 4/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 1024 - 1024 | 13 | 100% |
-| 高度 | 1536 | 1536 - 1536 | 13 | 100% |
-| 采样步数 | fixed | - | 13 | 85% |
-| Prompt 约束强度(CFG) | 3 | 3 - 12 | 13 | 35% |
-| 采样算法 | 1 | 1 - 1 | 13 | 100% |
-| 调度器 | euler | - | 13 | 100% |
-| 重绘幅度 | simple | - | 13 | 100% |
+| 采样步数 | 4 | 4 - 4 | 13 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
+| 采样算法 | euler | - | 13 | 100% |
+| 调度器 | simple | - | 13 | 69% |
+| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 1024 - 1024，13 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，观测区间 1536 - 1536，13 个样本，取值集中（一致性 100%）
-- 采样步数 最常用 fixed，13 个样本，一致性 85%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 12，13 个样本，取值分散，一致性仅 35%
-- 采样算法 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，13 个样本，一致性 100%
-- 重绘幅度 最常用 simple，13 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，13 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，13 个样本，一致性 100%
+- 调度器 最常用 simple，13 个样本，一致性 69%
+- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 高发问题（13/13 个样本）：Steps较低可能导致细节不足

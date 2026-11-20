@@ -1,74 +1,99 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_21
 type: Unknown Workflow
-frequency: 8
+frequency: 5
 level: strong
-coverage: 0.909875
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DifferentialDiffusion, FluxGuidance, InpaintModelConditioning, KSampler, MaskBlur+, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.8438
+common_nodes: [CLIPTextEncode, CLIPVisionLoader, DeepTranslatorTextNode, DualCLIPLoader, FluxGuidance, GetImageSize+, ImageConcanate, ImageCrop+, ImageResizeKJ, ImageToMask, InpaintModelConditioning, KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskGrow, LayerStyle: ColorOverlay V2, LayerUtility: ColorImage V2, LoadImage, PreviewImage, SaveImage, StyleModelLoader, Switch any [Crystools], UNETLoader, VAEDecode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/z-image输入base64工作流_2008785069535666178.json, 图片生成/图生图/z-image输入base64工作流_2008825724299386882.json, 图片生成/图生图/zimage重绘_2044459125228179458.json, 图片生成/图生图/局部重绘_2001620631345065986.json, 图片生成/图生图/局部重绘_Z-image_Base_万能迁移_局部重绘_极速版_真实自然无痕_2116134172938031106.json, 图片生成/图生图/极简Z-image局部重绘_1999059377522868226.json, 图片生成/图生图/画面修改 局部重绘  Z-image_2019615234633240578.json, 图片生成/文生图/Z_mage局部重绘_1995377541710012417.json]
+members: [图片生成/图生图/FLUX FILL自动遮罩换装_1956561807777431554.json, 图片生成/图生图/【丙丙版哪吒】最强换头术，太乙真人换哪吒_1898375384982081537.json, 图片生成/图生图/【很强】电商产品迁移指定场景细节版_1942158807361601537.json, 图片生成/图生图/【电商】产品迁移指定场景plus完美细节版_1904379336580046850.json, 图片生成/图生图/【电商】电商产品指定场景【手机壳版】_1904358996265050114.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_21
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/z-image输入base64工作流_2008785069535666178.json、图片生成/图生图/z-image输入base64工作流_2008825724299386882.json、图片生成/图生图/zimage重绘_2044459125228179458.json、图片生成/图生图/局部重绘_2001620631345065986.json、图片生成/图生图/局部重绘_Z-image_Base_万能迁移_局部重绘_极速版_真实自然无痕_2116134172938031106.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/FLUX FILL自动遮罩换装_1956561807777431554.json、图片生成/图生图/【丙丙版哪吒】最强换头术，太乙真人换哪吒_1898375384982081537.json、图片生成/图生图/【很强】电商产品迁移指定场景细节版_1942158807361601537.json、图片生成/图生图/【电商】产品迁移指定场景plus完美细节版_1904379336580046850.json、图片生成/图生图/【电商】电商产品指定场景【手机壳版】_1904358996265050114.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：91%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
+全部 5 个 workflow 都包含：
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `DifferentialDiffusion`
+- `CLIPVisionLoader`
+- `DeepTranslatorTextNode`
+- `DualCLIPLoader`
 - `FluxGuidance`
+- `GetImageSize+`
+- `ImageConcanate`
+- `ImageCrop+`
+- `ImageResizeKJ`
+- `ImageToMask`
 - `InpaintModelConditioning`
 - `KSampler`
-- `MaskBlur+`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerMask: MaskGrow`
+- `LayerStyle: ColorOverlay V2`
+- `LayerUtility: ColorImage V2`
+- `LoadImage`
+- `PreviewImage`
 - `SaveImage`
+- `StyleModelLoader`
+- `Switch any [Crystools]`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 6/8 个有
-- `ETN_LoadImageBase64` —— 2/8 个有
-- `ETN_LoadMaskBase64` —— 2/8 个有
-- `Image Comparer (rgthree)` —— 2/8 个有
-- `PreviewImage` —— 2/8 个有
-- `GetNode` —— 1/8 个有
-- `ImageScaleToTotalPixels` —— 1/8 个有
-- `ImageStitch` —— 1/8 个有
-- `MaskPreview` —— 1/8 个有
-- `SetNode` —— 1/8 个有
-- `TextInput_` —— 1/8 个有
+- `LayerUtility: ColorPicker` —— 4/5 个有
+- `MaskPreview+` —— 4/5 个有
+- `MaskToImage` —— 4/5 个有
+- `JjkText` —— 3/5 个有
+- `LayerMask: SegmentAnythingUltra V2` —— 3/5 个有
+- `LayerUtility: CropByMask V2` —— 3/5 个有
+- `LayerUtility: ImageScaleRestore V2` —— 3/5 个有
+- `LoraLoaderModelOnly` —— 3/5 个有
+- `ReduxAdvanced` —— 3/5 个有
+- `TeaCache` —— 3/5 个有
+- `InpaintCrop` —— 2/5 个有
+- `InpaintStitch` —— 2/5 个有
+- `LayerMask: ObjectDetectorYOLO8` —— 2/5 个有
+- `LayerMask: SAM2Ultra` —— 2/5 个有
+- `LayerUtility: GetImageSize` —— 2/5 个有
+- `RHHiddenNodes` —— 2/5 个有
+- `AddMask` —— 1/5 个有
+- `Display Any (rgthree)` —— 1/5 个有
+- `LayerMask: PersonMaskUltra` —— 1/5 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/5 个有
+- `LayerUtility: CropByMask` —— 1/5 个有
+- `LayerUtility: RestoreCropBox` —— 1/5 个有
+- `Mask Threshold Region` —— 1/5 个有
+- `SimpleMath+` —— 1/5 个有
+- `SubtractMask` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 10 | 9 - 10 | 8 | 97% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 0.85 | 0.85 - 0.87 | 8 | 99% |
+| 采样步数 | 26 | 25 - 26 | 5 | 98% |
+| Prompt 约束强度(CFG) | 1.5 | 1 - 2 | 5 | 79% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | sgm_uniform | - | 5 | 60% |
+| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 1/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 10，观测区间 9 - 10，8 个样本，取值集中（一致性 97%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 0.85，观测区间 0.85 - 0.87，8 个样本，取值集中（一致性 99%）
+- 采样步数 中位数 26，观测区间 25 - 26，5 个样本，取值集中（一致性 98%）
+- Prompt 约束强度(CFG) 中位数 1.5，观测区间 1 - 2，5 个样本
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，5 个样本，一致性 60%
+- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）

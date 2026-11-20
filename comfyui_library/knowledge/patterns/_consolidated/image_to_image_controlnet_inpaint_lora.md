@@ -1,38 +1,35 @@
 ---
 name: image_to_image_controlnet_inpaint_lora
 type: Image To Image
-frequency: 13
-level: moderate
-coverage: 0.849
-common_nodes: [CLIPLoader, CLIPTextEncode, ControlNetInpaintingAliMamaApply, ControlNetLoader, ImageAndMaskPreview, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 12
+level: strong
+coverage: 0.874167
+common_nodes: [CLIPLoader, CLIPTextEncode, ControlNetInpaintingAliMamaApply, ControlNetLoader, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/中文文字重绘-QWen-Image-Instantx-Controlnet_1966363579702259713.json, 图片生成/图生图/人物换背景-QWen-Image-Instantx-Controlnet_1966295550452822018.json, 图片生成/图生图/千问局部重绘工作流_2005603751757053954.json, 图片生成/图生图/千问局部重绘工作流_2010317606443552769.json, 图片生成/图生图/局部重绘-QWen-Image-Instantx-Controlnet_1966292208708128769.json, 图片生成/图生图/局部重绘-QWen-Image-Instantx-Controlnet_1971006146779717633.json, 图片生成/图生图/局部重绘-QWen-Image-Instantx-Controlnet_2028275236034060289.json, 图片生成/图生图/局部重绘-QWen-Image【Instantx-Controlnet】_1966421780745400322.json, 图片生成/图生图/扩图重绘-QWen-Image-Instantx-Controlnet_1966296641936461825.json, 图片生成/图生图/扩图重绘-千问-Image-【Instantx-Controlnet】_1966428766404816897.json, 图片生成/图生图/调色局部重绘-QWen-Image-Instantx-Controlnet_2026552365544902657.json, 图片生成/文生图/局部重绘_1968599107654832130.json, 平台全量/Qwen-Image扩图（可以要求扩图后的效果）_1966393040736825345.json]
+members: [图片生成/图生图/Qwen-局部重绘-简单好用_1992207282454810626.json, 图片生成/图生图/Qwen-局部重绘超简单_1991433574167629825.json, 图片生成/图生图/Qwen千问扩图【加速 LoRA 提速版】：原版 fp8_e4m3f + 低配 GGUF_1986436217229242370.json, 图片生成/图生图/Qwen局部重绘【加速 LoRA 提速版】：原版 fp8_e4m3f + 低配 GGUF_1986430416326426625.json, 图片生成/图生图/Qwen局部重绘【加速 LoRA 提速版】：原版 fp8_e4m3f + 低配 GGUF_2006612109051830274.json, 图片生成/图生图/Qwen局部重绘【加速_LoRA_提速版】_原版_fp8_e4m3f_+_低配_GGUF_2063623655715860481.json, 图片生成/图生图/qwen image fp8-局部重绘_1986852657413468162.json, 图片生成/图生图/一键扩图！Qwen image InstanX_1990241554310852609.json, 图片生成/图生图/千问局部重绘 (1)_2009523394458423297.json, 图片生成/图生图/千问局部重绘 (1)_2047649278096576514.json, 图片生成/图生图/千问扩图工作流 (1)_2009525416305893378.json, 图片生成/文生图/千问局部重绘工作流_1989153552679448577.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_controlnet_inpaint_lora
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/中文文字重绘-QWen-Image-Instantx-Controlnet_1966363579702259713.json、图片生成/图生图/人物换背景-QWen-Image-Instantx-Controlnet_1966295550452822018.json、图片生成/图生图/千问局部重绘工作流_2005603751757053954.json、图片生成/图生图/千问局部重绘工作流_2010317606443552769.json、图片生成/图生图/局部重绘-QWen-Image-Instantx-Controlnet_1966292208708128769.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen-局部重绘-简单好用_1992207282454810626.json、图片生成/图生图/Qwen-局部重绘超简单_1991433574167629825.json、图片生成/图生图/Qwen千问扩图【加速 LoRA 提速版】：原版 fp8_e4m3f + 低配 GGUF_1986436217229242370.json、图片生成/图生图/Qwen局部重绘【加速 LoRA 提速版】：原版 fp8_e4m3f + 低配 GGUF_1986430416326426625.json、图片生成/图生图/Qwen局部重绘【加速 LoRA 提速版】：原版 fp8_e4m3f + 低配 GGUF_2006612109051830274.json…）
 
 - **类型**：Image To Image
-- **样本数**：13
-- **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **样本数**：12
+- **可信度**：强结论
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 13 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ControlNetInpaintingAliMamaApply`
 - `ControlNetLoader`
-- `ImageAndMaskPreview`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `PreviewImage`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
@@ -40,36 +37,43 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageStitch` —— 10/13 个有
-- `ImagePadForOutpaint` —— 3/13 个有
-- `ConditioningZeroOut` —— 2/13 个有
-- `PDImageResizeV2` —— 2/13 个有
-- `DF_Float` —— 1/13 个有
-- `ImageScaleToTotalPixels` —— 1/13 个有
-- `InvertMask` —— 1/13 个有
-- `MaskPreview` —— 1/13 个有
-- `easy imageRemBg` —— 1/13 个有
+- `PreviewImage` —— 11/12 个有
+- `PDImageResizeV2` —— 10/12 个有
+- `ConditioningZeroOut` —— 9/12 个有
+- `ImageAndMaskPreview` —— 8/12 个有
+- `UnetLoaderGGUF` —— 8/12 个有
+- `ModelSamplingAuraFlow` —— 5/12 个有
+- `CLIPLoaderGGUF` —— 4/12 个有
+- `ImagePadForOutpaint` —— 3/12 个有
+- `LayerUtility: PurgeVRAM` —— 2/12 个有
+- `MuyeTextEditOutput` —— 2/12 个有
+- `Anything Everywhere3` —— 1/12 个有
+- `CR Text` —— 1/12 个有
+- `Image Comparer (rgthree)` —— 1/12 个有
+- `ImageResizeKJv2` —— 1/12 个有
+- `PrimitiveInt` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 8 - 20 | 13 | 71% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 13 | 71% |
-| 采样算法 | euler | - | 13 | 100% |
-| 调度器 | simple | - | 13 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
+| 采样步数 | 8 | 4 - 8 | 12 | 83% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 92% |
+| 重绘幅度 | 1 | 0.8 - 1 | 12 | 92% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 3/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 8 - 20，13 个样本
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，13 个样本
-- 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 simple，13 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 8，12 个样本，取值集中（一致性 83%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 92%
+- 重绘幅度 中位数 1，观测区间 0.8 - 1，12 个样本，取值集中（一致性 92%）
+- 高发问题（12/12 个样本）：Steps较低可能导致细节不足

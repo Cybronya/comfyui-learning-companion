@@ -1,65 +1,81 @@
 ---
 name: unknown_workflow_sampler_unet_vae_65
 type: Unknown Workflow
-frequency: 14
-level: strong
-coverage: 0.889714
-common_nodes: [CLIPLoader, EmptyLatentImage, KSampler, QwenImage21Cache, ResolutionSelector, SaveImage, TextEncodeQwenImage21, TextGenerateLTX2Prompt, UNETLoader, VAEDecode, VAELoader]
+frequency: 12
+level: moderate
+coverage: 0.7485
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LoadImage, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/【API】Qwen-Image2.1图像编辑（提示词反推）_2111987132129701889.json, 图片生成/图生图/一键扩图！电商必备！超快！_2103068831634771970.json, 图片生成/图生图/多图编辑 Multi-Image Editing Qwen+Image+2.1_2102556544050225153.json, 图片生成/图生图/多图编辑 Multi-Image Editing Qwen+Image+2.1_2105647767073935362.json, 图片生成/图生图/多图编辑 Multi-Image Editing Qwen+Image+2.1_2105680844940734465.json, 图片生成/图生图/换头换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2104737905183903746.json, 图片生成/图生图/换头换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2105235774793928705.json, 图片生成/图生图/换头换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2105274061088706562.json, 图片生成/图生图/换头换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2111625667644317697.json, 图片生成/图生图/换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2102936104516280321.json, 图片生成/图生图/模特换装 Model Outfit Changes Qwen+Image+2.1+图片换装_2105094118673309698.json, 图片生成/文生图/Qwen Image 2.1多图编辑多人合成合照单人合成_2108894186039762945.json, 图片生成/文生图/【API】Qwen-Image2.1文生图（提示词反推）_2111987215688622081.json, 视频生成/图生视频/换头换脸Face+Swap++Qwen-Image-2.1模特换头+换脸_2115289142136492033.json]
+members: [图片生成/图生图/Minimax H3 人物替换单人版  自动反推_2099803064780812290.json, 图片生成/图生图/lightx2v 300%加速 MinimaxH3-多参生视频（图片 视频 声音）james001###_2089273278652309506.json, 图片生成/图生图/lightx2v 300%加速 MinimaxH3-文生+图生视频（支持首尾帧）james001###_2089268665731604481.json, 数字人/数字人/H3.736_1280_2085040704841146370.json, 数字人/数字人/MINIMAX H3-多功能工作流_2084805925134757889.json, 数字人/数字人/MiniMax H3 R2V-8步 comfyorg_2087907718676959234.json, 视频生成/图生视频/H3-官方长视频续接_2095155400160141314.json, 视频生成/图生视频/Minimax H3 人物替换 单人稳定版_2086341252592783361.json, 视频生成/图生视频/Minimax H3 动作迁移 单人稳定版_2085382065066958850.json, 视频生成/文生视频/H3-官方长视频_2092501348708343810.json, 视频生成/文生视频/影视级minimax h3，无限长视频接续-手动版_2096601875046027266.json, 视频生成/文生视频/长视频续接+去油+高质量minimax-H3-官方版-无限延长视频-手动版_2092974453855703041.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_65
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/【API】Qwen-Image2.1图像编辑（提示词反推）_2111987132129701889.json、图片生成/图生图/一键扩图！电商必备！超快！_2103068831634771970.json、图片生成/图生图/多图编辑 Multi-Image Editing Qwen+Image+2.1_2102556544050225153.json、图片生成/图生图/多图编辑 Multi-Image Editing Qwen+Image+2.1_2105647767073935362.json、图片生成/图生图/多图编辑 Multi-Image Editing Qwen+Image+2.1_2105680844940734465.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Minimax H3 人物替换单人版  自动反推_2099803064780812290.json、图片生成/图生图/lightx2v 300%加速 MinimaxH3-多参生视频（图片 视频 声音）james001###_2089273278652309506.json、图片生成/图生图/lightx2v 300%加速 MinimaxH3-文生+图生视频（支持首尾帧）james001###_2089268665731604481.json、数字人/数字人/H3.736_1280_2085040704841146370.json、数字人/数字人/MINIMAX H3-多功能工作流_2084805925134757889.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：75%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
-- `EmptyLatentImage`
-- `KSampler`
-- `QwenImage21Cache`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `KSamplerSelect`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
 - `ResolutionSelector`
-- `SaveImage`
-- `TextEncodeQwenImage21`
-- `TextGenerateLTX2Prompt`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BatchImagesNode` —— 13/14 个有
-- `ComfySwitchNode` —— 13/14 个有
-- `LoadImage` —— 13/14 个有
-- `JjkText` —— 12/14 个有
-- `easy imageConcat` —— 4/14 个有
-- `CR Prompt Text` —— 2/14 个有
-- `PlaySound|pysssss` —— 2/14 个有
-- `easy cleanGpuUsed` —— 2/14 个有
-- `Label (rgthree)` —— 1/14 个有
-- `easy showAnything` —— 1/14 个有
-- `孤海注释` —— 1/14 个有
-- `忽略多组孤海` —— 1/14 个有
+- `MiniMaxH3ReferenceToVideo` —— 11/12 个有
+- `SaveVideo` —— 11/12 个有
+- `VHS_LoadVideo` —— 11/12 个有
+- `LoraLoaderModelOnly` —— 10/12 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 10/12 个有
+- `PrimitiveFloat` —— 9/12 个有
+- `LoadAudio` —— 7/12 个有
+- `easy showAnything` —— 7/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/12 个有
+- `ComfySwitchNode` —— 4/12 个有
+- `ExtendIntermediateSigmas` —— 4/12 个有
+- `GetImageRangeFromBatch` —— 4/12 个有
+- `ImageAddNoise` —— 4/12 个有
+- `MiniMaxH3AddGuide` —— 4/12 个有
+- `ModelPreviewOverrideKJ` —— 4/12 个有
+- `PrimitiveBoolean` —— 4/12 个有
+- `Bjornulf_ShowFloat` —— 3/12 个有
+- `JjkText` —— 3/12 个有
+- `JoinStrings` —— 3/12 个有
+- `MiniMaxH3ImageToVideo` —— 3/12 个有
+- `RH_LLMAPI_Pro_Node` —— 3/12 个有
+- `VHS_VideoInfoLoaded` —— 3/12 个有
+- `Any Switch (rgthree)` —— 2/12 个有
+- `EasyCache` —— 2/12 个有
+- `GetNode` —— 2/12 个有
+- `PreviewImage` —— 2/12 个有
+- `SetNode` —— 2/12 个有
+- `TrimAudioDuration` —— 2/12 个有
+- `孤海注释` —— 2/12 个有
+- `忽略多组孤海` —— 2/12 个有
+- `VHS_VideoCombine` —— 1/12 个有
+- `VideoFrameSelector` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 50 | 40 - 50 | 14 | 93% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | euler | - | 14 | 100% |
-| 调度器 | simple | - | 14 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
-| 宽度 | 1024 | 1024 - 1024 | 14 | 100% |
-| 高度 | 1024 | 1024 - 1024 | 14 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -67,10 +83,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 50，观测区间 40 - 50，14 个样本，取值集中（一致性 93%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，14 个样本，一致性 100%
-- 调度器 最常用 simple，14 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 宽度 中位数 1024，观测区间 1024 - 1024，14 个样本，取值集中（一致性 100%）
-- 高度 中位数 1024，观测区间 1024 - 1024，14 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

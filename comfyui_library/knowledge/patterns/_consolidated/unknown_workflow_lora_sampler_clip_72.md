@@ -1,76 +1,96 @@
 ---
 name: unknown_workflow_lora_sampler_clip_72
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.868875
-common_nodes: [CLIPLoader, CLIPTextEncode, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: strong
+coverage: 0.838286
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, Int, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecodeTiled]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen-Image-Pruning版本更低显存质量一致_1968866874069065729.json, 图片生成/文生图/QwenImage 4K高清大图DyPE直出_2000788947687141378.json, 图片生成/文生图/Z-Image-Turbo 4K高清大图DyPE直出_2000758971898134529.json, 图片生成/文生图/Z-image-base文生图8部加速版_2033075055076319234.json, 图片生成/文生图/zimage base 加速高质量lora最高20倍提速_2021771055412547585.json, 图片生成/文生图/小说推文古风小说推文抖音超火_1991148887255920641.json, 图片生成/文生图/沙雕动漫修仙玄幻人物三视图（加速版）_1988478076659130370.json, 图片生成/文生图/沙雕动漫怪兽神兽多视图三视图（加速版）_2002568995201007617.json]
+members: [视频生成/图生视频/7-LTX2.3_首尾帧 视频工作流_2038606312925306881.json, 视频生成/图生视频/Dasiwa V2+Prompt Relay精准控制表情_2055852806652874753.json, 视频生成/图生视频/LTX 2.3 三种机甲变身(lora) 流_2041514210315735041.json, 视频生成/图生视频/LTX 2.3 变身特效（亦诚视觉原创）_2041734587340038146.json, 视频生成/图生视频/LTX 2.3 多图引导生视频_2082120324979716097.json, 视频生成/图生视频/LTX 2.3 紫色生物机甲变身(lora)_2038207302813097986.json, 视频生成/图生视频/Sulphur 2+Prompt Relay精准控制表情_2054898098463354882.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_72
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Qwen-Image-Pruning版本更低显存质量一致_1968866874069065729.json、图片生成/文生图/QwenImage 4K高清大图DyPE直出_2000788947687141378.json、图片生成/文生图/Z-Image-Turbo 4K高清大图DyPE直出_2000758971898134529.json、图片生成/文生图/Z-image-base文生图8部加速版_2033075055076319234.json、图片生成/文生图/zimage base 加速高质量lora最高20倍提速_2021771055412547585.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/7-LTX2.3_首尾帧 视频工作流_2038606312925306881.json、视频生成/图生视频/Dasiwa V2+Prompt Relay精准控制表情_2055852806652874753.json、视频生成/图生视频/LTX 2.3 三种机甲变身(lora) 流_2041514210315735041.json、视频生成/图生视频/LTX 2.3 变身特效（亦诚视觉原创）_2041734587340038146.json、视频生成/图生视频/LTX 2.3 多图引导生视频_2082120324979716097.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：87%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `KSampler`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `Int`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `ManualSigmas`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
+- `VAEDecodeTiled`
 
 **可变部分**（部分 workflow 才有）：
-- `Text Multiline` —— 6/8 个有
-- `SDXLEmptyLatentSizePicker+` —— 5/8 个有
-- `RMBG` —— 4/8 个有
-- `EmptySD3LatentImage` —— 3/8 个有
-- `CR Text Concatenate` —— 2/8 个有
-- `ConditioningZeroOut` —— 2/8 个有
-- `DyPE_FLUX` —— 2/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/8 个有
-- `easy promptConcat` —— 2/8 个有
-- `CR Text` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `PrimitiveInt` —— 6/7 个有
+- `LTXVCropGuides` —— 5/7 个有
+- `LTXVLatentUpsampler` —— 5/7 个有
+- `LatentUpscaleModelLoader` —— 5/7 个有
+- `PrimitiveStringMultiline` —— 5/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 4/7 个有
+- `PrimitiveBoolean` —— 4/7 个有
+- `ResizeImagesByLongerEdge` —— 4/7 个有
+- `ResizeImageMaskNode` —— 3/7 个有
+- `YC_textReplaceNode` —— 3/7 个有
+- `GetNode` —— 2/7 个有
+- `LayerUtility: TextBox` —— 2/7 个有
+- `PathchSageAttentionKJ` —— 2/7 个有
+- `PromptRelaySmartEncode` —— 2/7 个有
+- `SetNode` —— 2/7 个有
+- `UNETLoader` —— 2/7 个有
+- `VAELoaderKJ` —— 2/7 个有
+- `easy getNode` —— 2/7 个有
+- `easy setNode` —— 2/7 个有
+- `Float` —— 1/7 个有
+- `ImageResizeKJ` —— 1/7 个有
+- `LTXVAddGuideMulti` —— 1/7 个有
+- `LTXVImgToVideoInplaceKJ` —— 1/7 个有
+- `MathExpression|pysssss` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `SimpleMath+` —— 1/7 个有
+- `YC_ShowText` —— 1/7 个有
+- `YC_SingleTextNode` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 832x1152 (0.72) | - | 5 | 40% |
-| 高度 | 1 | 1 - 1 | 5 | 100% |
-| 采样步数 | 6 | 4 - 20 | 8 | 34% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 8 | 58% |
-| 采样算法 | euler | - | 8 | 75% |
-| 调度器 | simple | - | 8 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 宽度 | 97 | 97 - 97 | 7 | 100% |
+| 高度 | 25 | 25 - 25 | 7 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 6/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 最常用 832x1152 (0.72)，5 个样本，一致性 40%
-- 高度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 6，观测区间 4 - 20，8 个样本，取值分散，一致性仅 34%
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，8 个样本
-- 采样算法 最常用 euler，8 个样本，一致性 75%
-- 调度器 最常用 simple，8 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（6/8 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 97，观测区间 97 - 97，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，7 个样本，取值集中（一致性 100%）

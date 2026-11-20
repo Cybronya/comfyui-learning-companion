@@ -1,80 +1,93 @@
 ---
 name: image_to_image_sampler_clip_unet_36
 type: Image To Image
-frequency: 11
-level: strong
-coverage: 0.903818
-common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 9
+level: moderate
+coverage: 0.806889
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, GetNode, ImageScaleDownToSize, Int, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, PainterFluxImageEdit, Qwen3_VQA, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SetNode, ShowText|pysssss, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX-kontext-产品精修_1950600662713307138.json, 图片生成/图生图/FLUX-kontext-产品精修_1953099483317997569.json, 图片生成/图生图/Flux-kontext溶图_2108481679651328001.json, 图片生成/图生图/Flux-kontext溶图打光｜1536与2048两种尺寸直出_2114721487092535298.json, 图片生成/图生图/Kontext dev 动漫转真人 减少模型欧美人物影响_1943510897216135169.json, 图片生成/图生图/Kontext 人像精修工作流_2091472960262598658.json, 图片生成/图生图/Kontext_人像精修工作流_2099054173085069313.json, 图片生成/图生图/Kontext_人像精修工作流_2099659188644433921.json, 图片生成/图生图/Kontext超强动漫转真人_1956571286262697986.json, 平台全量/箱包_鞋类产品精修，kontext工业渲染级别质感_2007699136056926210.json, 平台全量/质感还原 箱包_鞋类产品精修，服装 箱包 鞋除皱精修 产品精修 去除褶皱背包修图 kontext工业_2009820910844387330.json]
+members: [图片生成/反推提示词/Flux2-Klein 图生图+洗图+线稿  文生图_图生图反推提示词 写实光影_2028305897730084865.json, 图片生成/反推提示词/图生图+洗图+线稿 Flux2-Klein  文生图_图生图反推提示词 写实光影_2028280625148465153.json, 图片生成/图生图/Klein图生图+洗图+线稿+线稿上色_2031931837576122370.json, 图片生成/图生图/Klein图生图+洗图+线稿+线稿上色_2044302454275186690.json, 图片生成/图生图/Klein图生图+洗图+线稿=B站艾橘溪_2028089884472254465.json, 图片生成/图生图/指定人脸+Flux2 klein图生图工作流_2038164410010705921.json, 图片生成/图生图/指定人脸+Klein图生图=B站艾橘溪_2012373696018653186.json, 图片生成/图生图/最新指定人脸换脸高清补光影+Klein图生图＋高清写实 2_2099689034640617474.json, 图片生成/图生图/模特仿图 flux2_2030183259241451521.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_36
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/图生图/FLUX-kontext-产品精修_1950600662713307138.json、图片生成/图生图/FLUX-kontext-产品精修_1953099483317997569.json、图片生成/图生图/Flux-kontext溶图_2108481679651328001.json、图片生成/图生图/Flux-kontext溶图打光｜1536与2048两种尺寸直出_2114721487092535298.json、图片生成/图生图/Kontext dev 动漫转真人 减少模型欧美人物影响_1943510897216135169.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/反推提示词/Flux2-Klein 图生图+洗图+线稿  文生图_图生图反推提示词 写实光影_2028305897730084865.json、图片生成/反推提示词/图生图+洗图+线稿 Flux2-Klein  文生图_图生图反推提示词 写实光影_2028280625148465153.json、图片生成/图生图/Klein图生图+洗图+线稿+线稿上色_2031931837576122370.json、图片生成/图生图/Klein图生图+洗图+线稿+线稿上色_2044302454275186690.json、图片生成/图生图/Klein图生图+洗图+线稿=B站艾橘溪_2028089884472254465.json…）
 
 - **类型**：Image To Image
-- **样本数**：11
-- **可信度**：强结论
-- **平均知识覆盖**：90%
+- **样本数**：9
+- **可信度**：中等可信
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `GetNode`
+- `ImageScaleDownToSize`
+- `Int`
 - `KSampler`
+- `KSamplerSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `PainterFluxImageEdit`
+- `Qwen3_VQA`
+- `RandomNoise`
 - `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
+- `SetNode`
+- `ShowText|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ConditioningZeroOut` —— 9/11 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/11 个有
-- `Image Comparer (rgthree)` —— 8/11 个有
-- `LoraLoader` —— 6/11 个有
-- `easy hiresFix` —— 5/11 个有
-- `PreviewImage` —— 3/11 个有
-- `easy imageConcat` —— 3/11 个有
-- `easy int` —— 3/11 个有
-- `Anything Everywhere` —— 2/11 个有
-- `FluxKontextImageScale` —— 2/11 个有
-- `ImageStitch` —— 2/11 个有
-- `RHHiddenNodes` —— 2/11 个有
-- `Checkpoint Loader (Simple)` —— 1/11 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/11 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/11 个有
-- `LoraLoaderModelOnly` —— 1/11 个有
+- `CR Text` —— 3/9 个有
+- `LayerMask: PersonMaskUltra V2` —— 3/9 个有
+- `LayerUtility: CropBoxResolve` —— 3/9 个有
+- `LayerUtility: CropByMask V2` —— 3/9 个有
+- `RH_Captioner` —— 3/9 个有
+- `SolidMask` —— 3/9 个有
+- `easy mathInt` —— 3/9 个有
+- `ttN concat` —— 3/9 个有
+- `Image Comparer (rgthree)` —— 1/9 个有
+- `ImageScale` —— 1/9 个有
+- `LoraLoader` —— 1/9 个有
+- `LoraLoaderModelOnly` —— 1/9 个有
+- `PhotoShakeNode` —— 1/9 个有
+- `RHHiddenNodes` —— 1/9 个有
+- `easy imageConcat` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 12 - 30 | 11 | 77% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 11 | 100% |
-| 采样算法 | euler | - | 11 | 100% |
-| 调度器 | simple | - | 11 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 11 | 100% |
-| LoRA 模型强度 | 1 | 0.82 - 1 | 6 | 91% |
-| LoRA 文本强度 | 1 | 1 - 1 | 6 | 100% |
+| 采样步数 | 5 | 5 - 8 | 9 | 82% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | euler | - | 9 | 100% |
+| 调度器 | simple | - | 9 | 100% |
+| 重绘幅度 | 1 | 0.2 - 1 | 9 | 62% |
+| LoRA 模型强度 | 0.5 | - | 1 | 100% |
+| LoRA 文本强度 | 0.6 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 12/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 12 - 30，11 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，11 个样本，一致性 100%
-- 调度器 最常用 simple，11 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- LoRA 模型强度 中位数 1，观测区间 0.82 - 1，6 个样本，取值集中（一致性 91%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 5，观测区间 5 - 8，9 个样本，取值集中（一致性 82%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，9 个样本，一致性 100%
+- 调度器 最常用 simple，9 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 0.2 - 1，9 个样本
+- 高发问题（12/9 个样本）：Steps较低可能导致细节不足

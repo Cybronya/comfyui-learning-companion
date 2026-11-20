@@ -1,79 +1,93 @@
 ---
 name: unknown_workflow_video_lora_sampler_500
 type: Unknown Workflow
-frequency: 6
+frequency: 5
 level: moderate
-coverage: 0.721833
-common_nodes: [AudioEncoderEncode, AudioEncoderLoader, DWPreprocessor, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, MelBandRoFormerModelLoader, MelBandRoFormerSampler, NormalizeAudioLoudness, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddS2VEmbeds, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoEncode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
+coverage: 0.487
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Seed, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, ImageBatchMulti, ImageFromBatch, ImageResizeKJv2, KSamplerAdvanced, Label (rgthree), LoadImage, LoraLoaderModelOnly, MathExpression|pysssss, ModelSamplingSD3, PathchSageAttentionKJ, PreviewImage, PrimitiveInt, PrimitiveStringMultiline, SetNode, TorchCompileModel, UNETLoader, VAEDecode, VAELoader, VHS_GetImageCount, VHS_VideoCombine, easy forLoopEnd, easy forLoopStart, easy showAnything]
 problems: []
 missing: []
-members: [数字人/数字人/04-06-02-WAN2.2-数字人-S2V-姿势控制数字人-kijai_1990969037591093249.json, 数字人/数字人/s2v姿势控制数字人视频生成_1963631931462225922.json, 视频生成/图生视频/Wan2.2 S2V+FramePack姿态控制数字人_2073345449498603522.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V+FramePack全身姿态控制数字人V2_1962399732356222977.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V全身姿势控制数字人V1_1962399741415919617.json, 视频生成/图生视频/（KJ版）Wan2.2 S2V头部姿势控制数字人V2_1962391778080985089.json]
+members: [视频生成/图生视频/Wan2.2三阶采样图生视频+图生视频批量循环无限时长_1968927593699450881.json, 视频生成/图生视频/Wan2.2图生视频无限版_1967394231394373634.json, 视频生成/图生视频/大楠—无限生成视频-wan2.2-i2v-三采样-for循环_1966805388979056641.json, 视频生成/图生视频/最燃Wan2.2一镜到底！三级采样无限可控循环！超长无衰减完整版_1964217924158373889.json, 视频生成/文生视频/AI帮你实现不一样的人生之旅！Wan2.2延长术生成长视频教程_1966178940819771393.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_500
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（数字人/数字人/04-06-02-WAN2.2-数字人-S2V-姿势控制数字人-kijai_1990969037591093249.json、数字人/数字人/s2v姿势控制数字人视频生成_1963631931462225922.json、视频生成/图生视频/Wan2.2 S2V+FramePack姿态控制数字人_2073345449498603522.json、视频生成/图生视频/（KJ版）Wan2.2 S2V+FramePack全身姿态控制数字人V2_1962399732356222977.json、视频生成/图生视频/（KJ版）Wan2.2 S2V全身姿势控制数字人V1_1962399741415919617.json…）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/Wan2.2三阶采样图生视频+图生视频批量循环无限时长_1968927593699450881.json、视频生成/图生视频/Wan2.2图生视频无限版_1967394231394373634.json、视频生成/图生视频/大楠—无限生成视频-wan2.2-i2v-三采样-for循环_1966805388979056641.json、视频生成/图生视频/最燃Wan2.2一镜到底！三级采样无限可控循环！超长无衰减完整版_1964217924158373889.json、视频生成/文生视频/AI帮你实现不一样的人生之旅！Wan2.2延长术生成长视频教程_1966178940819771393.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：6
+- **样本数**：5
 - **可信度**：中等可信
-- **平均知识覆盖**：72%
+- **平均知识覆盖**：49%
 
 ## 共有节点
 
-全部 6 个 workflow 都包含：
-- `AudioEncoderEncode`
-- `AudioEncoderLoader`
-- `DWPreprocessor`
+全部 5 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Seed`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageBatchMulti`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadAudio`
+- `KSamplerAdvanced`
+- `Label (rgthree)`
 - `LoadImage`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `NormalizeAudioLoudness`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `SetNode`
+- `TorchCompileModel`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `VHS_GetImageCount`
 - `VHS_VideoCombine`
-- `WanVideoAddS2VEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
-- `WanVideoEncode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoVAELoader`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 5/6 个有
-- `ColorMatch` —— 5/6 个有
-- `GetImageRangeFromBatch` —— 5/6 个有
-- `PreviewAny` —— 5/6 个有
-- `WanVideoLoraSelectMulti` —— 5/6 个有
-- `easy anythingIndexSwitch` —— 5/6 个有
-- `CR Prompt Text` —— 4/6 个有
-- `GetNode` —— 4/6 个有
-- `JWInteger` —— 4/6 个有
-- `WanVideoContextOptions` —— 4/6 个有
-- `WanVideoTextEncodeCached` —— 4/6 个有
-- `GetImageSizeAndCount` —— 3/6 个有
-- `ImageConcatMulti` —— 3/6 个有
-- `LoadWanVideoT5TextEncoder` —— 2/6 个有
-- `WanVideoTextEncode` —— 2/6 个有
-- `ACE_AudioCrop` —— 1/6 个有
-- `Anything Everywhere` —— 1/6 个有
-- `INTConstant` —— 1/6 个有
-- `JWString` —— 1/6 个有
-- `JjkText` —— 1/6 个有
-- `PreviewImage` —— 1/6 个有
-- `SetNode` —— 1/6 个有
-- `WanVideoLoraSelect` —— 1/6 个有
+- `LayerColor: BrightnessContrastV2` —— 4/5 个有
+- `RIFE VFI` —— 4/5 个有
+- `WanImageToVideo` —— 4/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
+- `PrimitiveFloat` —— 3/5 个有
+- `easy promptLine` —— 3/5 个有
+- `ImpactInt` —— 2/5 个有
+- `RH_Captioner` —— 2/5 个有
+- `Text Concatenate` —— 2/5 个有
+- `Text Multiline` —— 2/5 个有
+- `UnetLoaderGGUF` —— 2/5 个有
+- `easy seed` —— 2/5 个有
+- `wanBlockSwap` —— 2/5 个有
+- `CR Prompt List` —— 1/5 个有
+- `CR Text` —— 1/5 个有
+- `Display Any (rgthree)` —— 1/5 个有
+- `FromListGet1String` —— 1/5 个有
+- `ImageColorMatch+` —— 1/5 个有
+- `LoadUpscalerTensorrtModel` —— 1/5 个有
+- `ShowText` —— 1/5 个有
+- `UpscalerTensorrt` —— 1/5 个有
+- `WanFirstLastFrameToVideo` —— 1/5 个有
+- `string_util_StrSplit` —— 1/5 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | fixed | - | 5 | 100% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 5 | 100% |
+| 采样算法 | 1 | 1 - 4 | 5 | 25% |
+| 调度器 | euler | - | 5 | 60% |
+| 重绘幅度 | simple | - | 5 | 100% |
 
 ## 常见问题
 
@@ -81,4 +95,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 fixed，5 个样本，一致性 100%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 4，5 个样本，取值分散，一致性仅 25%
+- 调度器 最常用 euler，5 个样本，一致性 60%
+- 重绘幅度 最常用 simple，5 个样本，一致性 100%

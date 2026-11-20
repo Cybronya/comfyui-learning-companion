@@ -1,33 +1,36 @@
 ---
 name: unknown_workflow_video_lora_sampler_265
 type: Unknown Workflow
-frequency: 10
+frequency: 9
 level: moderate
-coverage: 0.9547
-common_nodes: [AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+coverage: 0.774556
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, CR Prompt Text, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, JWInteger, LoadImage, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/infinitetalk_视频改口型工作流_1993958117922848769.json, 数字人/数字人/InfiniteTalk-多人无限时长数字人生成工作流_1957766648377831426.json, 数字人/数字人/全网首发——Aiwood-infinitetalk_视频改口型工作流_1958066987350052865.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957818036982050817.json, 视频生成/图生视频/MultiTalk 单人+运镜_1936573145107304450.json, 视频生成/图生视频/MultiTalk对口型（万相实现）+uni3C运镜控制_1937801479434735618.json, 视频生成/图生视频/MultiTalk对口型（万相实现）_1937838193955749889.json, 视频生成/图生视频/PT娃导单图运镜控制串联版_1941554640133767170.json, 视频生成/图生视频/PT娃导单图运镜控制流单节点版_1941548722545442818.json, 视频生成/图生视频/WAN2.1+数字人运镜控制+视频放大_1947456088879828994.json]
+members: [视频生成/图生视频/图生视频V1_2047405386377990145.json, 视频生成/图生视频/大明动画风格 长时间讲话 带音频_1970454235139743746.json, 视频生成/图生视频/对口型数字人Infinite+Talk 音色克隆带语气情感_2039589897626984450.json, 视频生成/图生视频/对口型数字人Infinite+Talk_2052766629263618049.json, 视频生成/图生视频/数字人_音画同步_对口型 Infinite Talk_2004160279342686209.json, 视频生成/图生视频/百组动态！Infinite Talk极速高质量提示词调度动作控制图生视频KTV数字人V2_1960048260402589698.json, 视频生成/图生视频/稳定的唱歌对口型_2029971317079937026.json, 视频生成/图生视频/视频-图生视频+数字人对口型_1960792886629601281.json, 视频生成/图生视频/超强数字人生成40秒无压力_1980834296959291394.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_265
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（平台全量/infinitetalk_视频改口型工作流_1993958117922848769.json、数字人/数字人/InfiniteTalk-多人无限时长数字人生成工作流_1957766648377831426.json、数字人/数字人/全网首发——Aiwood-infinitetalk_视频改口型工作流_1958066987350052865.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957818036982050817.json、视频生成/图生视频/MultiTalk 单人+运镜_1936573145107304450.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/图生视频V1_2047405386377990145.json、视频生成/图生视频/大明动画风格 长时间讲话 带音频_1970454235139743746.json、视频生成/图生视频/对口型数字人Infinite+Talk 音色克隆带语气情感_2039589897626984450.json、视频生成/图生视频/对口型数字人Infinite+Talk_2052766629263618049.json、视频生成/图生视频/数字人_音画同步_对口型 Infinite Talk_2004160279342686209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：10
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
+- `AudioCrop`
 - `AudioSeparation`
 - `CLIPVisionLoader`
+- `CR Prompt Text`
 - `DownloadAndLoadWav2VecModel`
-- `ImageResizeKJv2`
-- `LoadAudio`
+- `GetImageSizeAndCount`
+- `JWInteger`
+- `LoadImage`
 - `LoadWanVideoT5TextEncoder`
 - `MultiTalkModelLoader`
 - `MultiTalkWav2VecEmbeds`
@@ -35,49 +38,47 @@ source: knowledge_consolidation
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
 - `WanVideoSampler`
 - `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `AudioCrop` —— 9/10 个有
-- `WanVideoImageToVideoEncode` —— 8/10 个有
-- `WanVideoUni3C_ControlnetLoader` —— 7/10 个有
-- `WanVideoUni3C_embeds` —— 7/10 个有
-- `INTConstant` —— 6/10 个有
-- `LoadImage` —— 6/10 个有
-- `VHS_LoadVideo` —— 6/10 个有
-- `WanVideoContextOptions` —— 6/10 个有
-- `WanVideoEncode` —— 6/10 个有
-- `WanVideoImageToVideoMultiTalk` —— 4/10 个有
-- `CreateCFGScheduleFloatList` —— 3/10 个有
-- `PT_KeyframeCamera` —— 3/10 个有
-- `PreviewImage` —— 3/10 个有
-- `RepeatImageBatch` —— 3/10 个有
-- `Display Any (rgthree)` —— 2/10 个有
-- `Display Int (rgthree)` —— 2/10 个有
-- `ImageConcatMulti` —— 2/10 个有
-- `SimpleMath+` —— 2/10 个有
-- `SoundFlow_GetLength` —— 2/10 个有
-- `ToInt` —— 2/10 个有
-- `easy int` —— 2/10 个有
-- `GetImagesFromBatchIndexed` —— 1/10 个有
-- `ImageBatch` —— 1/10 个有
-- `ImageResizeKJ` —— 1/10 个有
-- `ImageUpscaleWithModel` —— 1/10 个有
-- `RIFE VFI` —— 1/10 个有
-- `UpscaleModelLoader` —— 1/10 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 8/9 个有
+- `LoadAudio` —— 8/9 个有
+- `PreviewAny` —— 8/9 个有
+- `GetNode` —— 2/9 个有
+- `CLIPTextEncode` —— 1/9 个有
+- `CM_FloatToInt` —— 1/9 个有
+- `ConcatTextOfUtils` —— 1/9 个有
+- `ImageBatch` —— 1/9 个有
+- `ImageFromBatch` —— 1/9 个有
+- `KSampler` —— 1/9 个有
+- `SetNode` —— 1/9 个有
+- `VAEDecode` —— 1/9 个有
+- `VHS_LoadAudioUpload` —— 1/9 个有
+- `VRGDG_AudioCropTime` —— 1/9 个有
+- `WanInfiniteTalkToVideo` —— 1/9 个有
+- `easy indexAnything` —— 1/9 个有
+- `easy mathInt` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 4 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | 1 | - | 1 | 100% |
+| 采样算法 | euler | - | 1 | 100% |
+| 调度器 | normal | - | 1 | 100% |
+| 重绘幅度 | 1 | - | 1 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 1/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 

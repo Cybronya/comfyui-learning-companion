@@ -1,78 +1,98 @@
 ---
 name: unknown_workflow_lora_sampler_clip_73
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.90225
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+frequency: 7
+level: strong
+coverage: 0.671857
+common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, GetImageSize, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXSequencer, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LazySwitchKJ, LoraLoaderModelOnly, MultiImageLoader, PrimitiveBoolean, RandomNoise, SamplerCustomAdvanced, SaveVideo, VAEDecode, VAEDecodeTiled, VAELoaderKJ]
+problems: []
 missing: []
-members: [图片生成/文生图/Qwen-Image-文生图4步3秒一张图_1955060284899692545.json, 图片生成/文生图/Qwen-Image的8步加速_1954463793558515714.json, 图片生成/文生图/Qwen-image 8步极速生图_1954559302579187713.json, 图片生成/文生图/Qwen-image-2512 文生图_2009132641324376066.json, 图片生成/文生图/Qwen-image中式插画_1965257014656028674.json, 图片生成/文生图/Qwen-text-360_2080631673103937538.json, 图片生成/文生图/工作流基础系列8-QwenImage2512文生图工作流-基础向讲解此工作流_2044339209980354561.json, 平台全量/工作流基础系列9-QwenImage2512重绘放大_高清放大工作流-基础向讲解此工作流_2045649524496011266.json]
+members: [视频生成/图生视频/LTX2.3 I2V 多图生视频（2采）_2059948094514618369.json, 视频生成/图生视频/LTX2.3 I2V多图生视频（3采）_2059920310899662850.json, 视频生成/图生视频/LTX2.3+I2V+多图+自定义音频工作流（2采）_2059193500587094017.json, 视频生成/图生视频/Ltx2.3-Multi Image-自定义语音-图生视频_2063202881095954433.json, 视频生成/图生视频/视频生成-自定义配音_2059401786028544001.json, 视频生成/图生视频/音乐mv生产力版自用_2075878057012977666.json, 视频生成/文生视频/LTX I2V 多图生视频_2059954460599865345.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_73
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/文生图/Qwen-Image-文生图4步3秒一张图_1955060284899692545.json、图片生成/文生图/Qwen-Image的8步加速_1954463793558515714.json、图片生成/文生图/Qwen-image 8步极速生图_1954559302579187713.json、图片生成/文生图/Qwen-image-2512 文生图_2009132641324376066.json、图片生成/文生图/Qwen-image中式插画_1965257014656028674.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 I2V 多图生视频（2采）_2059948094514618369.json、视频生成/图生视频/LTX2.3 I2V多图生视频（3采）_2059920310899662850.json、视频生成/图生视频/LTX2.3+I2V+多图+自定义音频工作流（2采）_2059193500587094017.json、视频生成/图生视频/Ltx2.3-Multi Image-自定义语音-图生视频_2063202881095954433.json、视频生成/图生视频/视频生成-自定义配音_2059401786028544001.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：90%
+- **样本数**：7
+- **可信度**：强结论
+- **平均知识覆盖**：67%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
+全部 7 个 workflow 都包含：
+- `BasicScheduler`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptySD3LatentImage`
-- `KSampler`
+- `CheckpointLoaderSimple`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXAVTextEncoderLoader`
+- `LTXSequencer`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LazySwitchKJ`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
-- `UNETLoader`
+- `MultiImageLoader`
+- `PrimitiveBoolean`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 - `VAEDecode`
-- `VAELoader`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `VAEEncode` —— 4/8 个有
-- `ImageUpscaleWithModel` —— 3/8 个有
-- `PreviewImage` —— 3/8 个有
-- `UpscaleModelLoader` —— 3/8 个有
-- `Image Comparer (rgthree)` —— 2/8 个有
-- `ImageScaleBy` —— 2/8 个有
-- `Seed (rgthree)` —— 2/8 个有
-- `easy promptList` —— 2/8 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/8 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/8 个有
-- `PrimitiveStringMultiline` —— 1/8 个有
-- `SeedVR2LoadDiTModel` —— 1/8 个有
-- `SeedVR2LoadVAEModel` —— 1/8 个有
-- `SeedVR2VideoUpscaler` —— 1/8 个有
-- `easy cleanGpuUsed` —— 1/8 个有
-- `easy positive` —— 1/8 个有
+- `GetNode` —— 6/7 个有
+- `ImageScaleBy` —— 6/7 个有
+- `Int` —— 6/7 个有
+- `LTXVLatentUpsampler` —— 6/7 个有
+- `LatentUpscaleModelLoader` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `PrimitiveInt` —— 5/7 个有
+- `CM_IntToFloat` —— 4/7 个有
+- `ConditioningZeroOut` —— 4/7 个有
+- `LTXVAudioVAEEncode` —— 4/7 个有
+- `LoadAudioUI` —— 4/7 个有
+- `PrimitiveStringMultiline` —— 4/7 个有
+- `SetLatentNoiseMask` —— 4/7 个有
+- `SolidMask` —— 4/7 个有
+- `easy mathInt` —— 4/7 个有
+- `MathExpression|pysssss` —— 3/7 个有
+- `Text` —— 3/7 个有
+- `Float to Int` —— 2/7 个有
+- `PrimitiveFloat` —— 2/7 个有
+- `DF_Int_to_Float` —— 1/7 个有
+- `LTXVChunkFeedForward` —— 1/7 个有
+- `LoadImage` —— 1/7 个有
+- `ModelPatchTorchSettings` —— 1/7 个有
+- `PathchSageAttentionKJ` —— 1/7 个有
+- `PreviewImage` —— 1/7 个有
+- `easy getNode` —— 1/7 个有
+- `easy imageInsetCrop` —— 1/7 个有
+- `easy setNode` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 6 | 4 - 8 | 8 | 67% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1.52 | 8 | 84% |
-| 采样算法 | euler | - | 8 | 100% |
-| 调度器 | simple | - | 8 | 75% |
-| 重绘幅度 | 1 | 0.1 - 1 | 8 | 53% |
+| 宽度 | 1 | 1 - 1 | 7 | 100% |
+| 高度 | 24 | 24 - 24 | 7 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 25/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 6，观测区间 4 - 8，8 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1.52，8 个样本，取值集中（一致性 84%）
-- 采样算法 最常用 euler，8 个样本，一致性 100%
-- 调度器 最常用 simple，8 个样本，一致性 75%
-- 重绘幅度 中位数 1，观测区间 0.1 - 1，8 个样本
-- 高发问题（25/8 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，7 个样本，取值集中（一致性 100%）

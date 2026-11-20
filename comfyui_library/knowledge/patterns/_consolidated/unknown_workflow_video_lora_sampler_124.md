@@ -1,87 +1,69 @@
 ---
 name: unknown_workflow_video_lora_sampler_124
 type: Unknown Workflow
-frequency: 16
+frequency: 15
 level: moderate
-coverage: 0.890875
-common_nodes: [Any To Any, BerniniConditioning, CLIPLoader, CLIPTextEncode, CR Prompt Text, CreateVideo, GetVideoComponents, HunyuanVideoFoley, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, Qwen3_VQA, UNETLoader, VAEDecode, VAELoader, VHS_SelectFilename, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.801
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Bemini图生视频_2065427279056031745.json, 视频生成/图生视频/Bernini  电商视频 生成  只消耗 RH币  开plus 运行_2073849977520087042.json, 视频生成/图生视频/Bernini参考人物图生视频+音效V整理版（转自T8大佬）_2073573407953874946.json, 视频生成/图生视频/Bernini图生视频+YC Foley音效  音视频生成  数字人说话唱歌 带运镜参考_2065620056792457217.json, 视频生成/图生视频/Bernini图生视频+YC Foley音效音视频生成_2065776899741278209.json, 视频生成/图生视频/Bernini图生视频+YC Foley音效（一站式音视频生成方案）_2065425977529950209.json, 视频生成/图生视频/Bernini图生视频+配音音效V2+自动提示词_2064963434780905474.json, 视频生成/图生视频/Bernini图生视频+音效V2_2065053728595599362.json, 视频生成/图生视频/Bernini图生视频+音效V3_2064182035551440898.json, 视频生成/图生视频/Bernini图生视频+音效【开源Seedance】_2064632452102053889.json, 视频生成/图生视频/Bernini多图参考生视频+音效V3_2064237198987321346.json, 视频生成/图生视频/Bernini自动提示词图生视频+音效V3_2064364509602603010.json, 视频生成/图生视频/Images to Video Bernini图生视频+YC+Foley音效Sound Effect_2097160102343172098.json, 视频生成/图生视频/Images to Video+Bernini图生视频+YC+Foley音效Sound+Effect_2104029726410100737.json, 视频生成/图生视频/开源最强全模态图生视频：背景音效+单人内心独白_2073970025681219585.json, 视频生成/图生视频/（4步加速版）Bernini多图参考生视频+音效V4_2073466320544423937.json]
+members: [视频生成/文生视频/Wan2.2 文生视频加速KJ版+提示词选取_1951130910374699010.json, 视频生成/文生视频/Wan2.2 文生视频加速KJ版+运镜_1950408991886196738.json, 视频生成/文生视频/Wan2.2 文生视频加速KJ版_1950100642577694721.json, 视频生成/文生视频/Wan2.2 自动手动文生视频（UnifiedReward+VBVR逻辑增强）-二次元赛琳娜版_2029097055917969409.json, 视频生成/文生视频/Wan2.2+Skyreels 5分镜提示词扩写文生无限长视频V1_1957481859263426562.json, 视频生成/文生视频/Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V1(贞贞版2000步)_1951167781284851713.json, 视频生成/文生视频/Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V4(高质量横屏720P贞贞版)_1951179698393034754.json, 视频生成/文生视频/Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V4(高质量竖屏720P贞贞版)_1953444312275144706.json, 视频生成/文生视频/t2vV3_1956721780875300866.json, 视频生成/文生视频/wan2.2palingenesis智能提示词文生视频横屏版（包含自训练脸模lora保持角色一致性）_1973017295171751938.json, 视频生成/文生视频/wan2.2智能提示词文生视频竖屏版直出2k（包含自训练脸模lora保持角色一致性）_1968733813188829186.json, 视频生成/文生视频/✅Wan2.2-Lightx-文生视频-KJ版-720p_1950738636969021442.json, 视频生成/文生视频/（1+3四步版本）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V5_1972112233536876545.json, 视频生成/文生视频/（KJ版2+2极速）Wan2.2自动镜头新版lightning0928文生视频V3_1972282645650534402.json, 视频生成/文生视频/（电影质感版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V5_1972106036679208961.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_124
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（视频生成/图生视频/Bemini图生视频_2065427279056031745.json、视频生成/图生视频/Bernini  电商视频 生成  只消耗 RH币  开plus 运行_2073849977520087042.json、视频生成/图生视频/Bernini参考人物图生视频+音效V整理版（转自T8大佬）_2073573407953874946.json、视频生成/图生视频/Bernini图生视频+YC Foley音效  音视频生成  数字人说话唱歌 带运镜参考_2065620056792457217.json、视频生成/图生视频/Bernini图生视频+YC Foley音效音视频生成_2065776899741278209.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/文生视频/Wan2.2 文生视频加速KJ版+提示词选取_1951130910374699010.json、视频生成/文生视频/Wan2.2 文生视频加速KJ版+运镜_1950408991886196738.json、视频生成/文生视频/Wan2.2 文生视频加速KJ版_1950100642577694721.json、视频生成/文生视频/Wan2.2 自动手动文生视频（UnifiedReward+VBVR逻辑增强）-二次元赛琳娜版_2029097055917969409.json、视频生成/文生视频/Wan2.2+Skyreels 5分镜提示词扩写文生无限长视频V1_1957481859263426562.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：80%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `Any To Any`
-- `BerniniConditioning`
-- `CLIPLoader`
-- `CLIPTextEncode`
+全部 15 个 workflow 都包含：
 - `CR Prompt Text`
-- `CreateVideo`
-- `GetVideoComponents`
-- `HunyuanVideoFoley`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `Qwen3_VQA`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
-- `VHS_SelectFilename`
+- `CreateCFGScheduleFloatList`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `BerniniPromptEnhancer` —— 15/16 个有
-- `StringReplace` —— 15/16 个有
-- `easy showAnything` —— 15/16 个有
-- `PrimitiveInt` —— 14/16 个有
-- `SaveVideo` —— 14/16 个有
-- `Text` —— 14/16 个有
-- `RHLLMChatNode` —— 13/16 个有
-- `BatchImagesNode` —— 3/16 个有
-- `ImageResizeKJv2` —— 3/16 个有
-- `SimpleMath+` —— 3/16 个有
-- `Int` —— 2/16 个有
-- `RH_LLMAPI_NODE` —— 2/16 个有
-- `ACE_AudioCrop` —— 1/16 个有
-- `AdjustAudio` —— 1/16 个有
-- `Audio Add Silence` —— 1/16 个有
-- `AudioCombine` —— 1/16 个有
-- `GetNode` —— 1/16 个有
-- `JjkText` —— 1/16 个有
-- `Label (rgthree)` —— 1/16 个有
-- `LoadAudio` —— 1/16 个有
-- `Primitive integer [Crystools]` —— 1/16 个有
-- `RH_Translator` —— 1/16 个有
-- `RunningHub_VoxCPM_Generate` —— 1/16 个有
-- `RunningHub_VoxCPM_LoadModel` —— 1/16 个有
-- `SaveAudio` —— 1/16 个有
-- `SetNode` —— 1/16 个有
+- `GetImageSizeAndCount` —— 14/15 个有
+- `ShowText|pysssss` —— 13/15 个有
+- `INTConstant` —— 12/15 个有
+- `JWStringConcat` —— 12/15 个有
+- `RH_LLMAPI_NODE` —— 12/15 个有
+- `Wan22PromptSelector` —— 12/15 个有
+- `WanVideoTorchCompileSettings` —— 12/15 个有
+- `easy showAnything` —— 12/15 个有
+- `JWInteger` —— 11/15 个有
+- `TextConcat` —— 11/15 个有
+- `ImageFromBatch+` —— 3/15 个有
+- `Bjornulf_ShowInt` —— 2/15 个有
+- `SimpleMath+` —— 2/15 个有
+- `CR Text` —— 1/15 个有
+- `GetNode` —— 1/15 个有
+- `Int` —— 1/15 个有
+- `JWFloat` —— 1/15 个有
+- `KepStringLiteral` —— 1/15 个有
+- `SetNode` —— 1/15 个有
+- `TTResolutionSelector` —— 1/15 个有
+- `easy seed` —— 1/15 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 16 | 100% |
-| Prompt 约束强度(CFG) | 10 | 4 - 10 | 16 | 69% |
-| 采样算法 | 1 | 1 - 1 | 16 | 100% |
-| 调度器 | euler | - | 16 | 100% |
-| 重绘幅度 | simple | - | 16 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -89,8 +71,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，16 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 4 - 10，16 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，16 个样本，一致性 100%
-- 重绘幅度 最常用 simple，16 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

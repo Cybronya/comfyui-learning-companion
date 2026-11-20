@@ -1,96 +1,94 @@
 ---
 name: text_to_image_lora_sampler_clip_433
 type: Text To Image
-frequency: 5
+frequency: 4
 level: strong
-coverage: 0.9278
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.882
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Image Comparer (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/SBAPI MinimaxH3三分镜参考生成视频工作流 多模态输入_2109723354918907905.json, 视频生成/图生视频/SBAPI_MinimaxH3三分镜参考，文生视频图生视频联动_2111195384482721793.json, 视频生成/图生视频/SBAPI_MinimaxH3三连分镜参考出片｜文生视频图生视频一条龙_2111053464666206209.json, 视频生成/图生视频/h3 r2v runninghub tts v2｜图生视频音频驱动生成_2091306513502654466.json, 视频生成/图生视频/多参考图生视频｜MiniMax_H3可本地运行场景特效_2089811445595860993.json]
+members: [图片生成/图生图/Qwen 2.1智能抠图，图生图主体分离干净利落_2111554948935806977.json, 图片生成/图生图/Qwen Image2.1强化抠图 精准移除遮挡输出完美PNG通道_2104659451750993922.json, 图片生成/图生图/Qwen Image2.1精准抠图移除遮挡 透明背景精准生成_2105404738362757121.json, 图片生成/图生图/磨皮工作流｜图生图人像美化｜皮肤细腻不过度磨皮_2104804426841157633.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_433
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/SBAPI MinimaxH3三分镜参考生成视频工作流 多模态输入_2109723354918907905.json、视频生成/图生视频/SBAPI_MinimaxH3三分镜参考，文生视频图生视频联动_2111195384482721793.json、视频生成/图生视频/SBAPI_MinimaxH3三连分镜参考出片｜文生视频图生视频一条龙_2111053464666206209.json、视频生成/图生视频/h3 r2v runninghub tts v2｜图生视频音频驱动生成_2091306513502654466.json、视频生成/图生视频/多参考图生视频｜MiniMax_H3可本地运行场景特效_2089811445595860993.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/Qwen 2.1智能抠图，图生图主体分离干净利落_2111554948935806977.json、图片生成/图生图/Qwen Image2.1强化抠图 精准移除遮挡输出完美PNG通道_2104659451750993922.json、图片生成/图生图/Qwen Image2.1精准抠图移除遮挡 透明背景精准生成_2105404738362757121.json、图片生成/图生图/磨皮工作流｜图生图人像美化｜皮肤细腻不过度磨皮_2104804426841157633.json）
 
 - **类型**：Text To Image
-- **样本数**：5
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 4 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `CreateVideo`
 - `EmptyLatentImage`
+- `Image Comparer (rgthree)`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_String_Concatenate` —— 3/5 个有
-- `DF_Text_Box` —— 3/5 个有
-- `JWStringGetLine` —— 3/5 个有
-- `JjkConcat` —— 3/5 个有
-- `JjkShowText` —— 3/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 3/5 个有
-- `MiniMaxH3MultiRateSamplerEXPT8` —— 3/5 个有
-- `ReplaceString` —— 3/5 个有
-- `StringConstant` —— 3/5 个有
-- `SaveImage` —— 2/5 个有
-- `LoadAudio` —— 1/5 个有
-- `MiniMaxH3AudioLatentControlT8` —— 1/5 个有
-- `easy downloadIndexTTSAndLoadModel` —— 1/5 个有
-- `easy indexTTSAudioMerge` —— 1/5 个有
-- `easy indexTTSGenerate` —— 1/5 个有
+- `ComfySwitchNode` —— 3/4 个有
+- `ImageConcanate` —— 3/4 个有
+- `QwenImage21Cache` —— 3/4 个有
+- `ResolutionSelector` —— 3/4 个有
+- `SaveImageAdvanced` —— 3/4 个有
+- `Seed (rgthree)` —— 3/4 个有
+- `Text Multiline` —— 3/4 个有
+- `TextEncodeQwenImage21` —— 3/4 个有
+- `GrowMask` —— 2/4 个有
+- `ImageUpscaleWithModel` —— 2/4 个有
+- `InvertMask` —— 2/4 个有
+- `JoinImageWithAlpha` —— 2/4 个有
+- `LayerMask: BiRefNetUltraV2` —— 2/4 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 2/4 个有
+- `PreviewImage` —— 2/4 个有
+- `Upscale Model Loader` —— 2/4 个有
+- `XinbaoImageStandardizer` —— 2/4 个有
+- `YUAN_TXTConvertAny` —— 2/4 个有
+- `DF_Integer` —— 1/4 个有
+- `ImageInvert` —— 1/4 个有
+- `Int` —— 1/4 个有
+- `LG_Color_Match_V2` —— 1/4 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 1/4 个有
+- `RHHiddenNodes` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
+| 采样步数 | 4 | 4 - 4 | 4 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 4 | 100% |
+| 采样算法 | er_sde | - | 4 | 100% |
+| 调度器 | beta | - | 4 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
+| 宽度 | 80 | 80 - 80 | 4 | 100% |
+| 高度 | 80 | 80 - 80 | 4 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 4/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，4 个样本，一致性 100%
+- 调度器 最常用 beta，4 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，4 个样本，取值集中（一致性 100%）
+- 高发问题（4/4 个样本）：Steps较低可能导致细节不足

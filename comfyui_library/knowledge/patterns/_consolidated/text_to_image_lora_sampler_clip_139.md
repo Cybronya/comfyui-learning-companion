@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_139
 type: Text To Image
 frequency: 12
 level: strong
-coverage: 0.921
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, SaveVideo, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.88625
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [数字人/数字人/数字人口型同步神器｜口型语音精准对齐不穿帮_2106622328892379137.json, 视频生成/图生视频/MiniMax H3全能参考｜图音视频多素材再生工作流_2095255547141509121.json, 视频生成/图生视频/Wan3.0参考生视频｜数字人动作迁移图生视频_2092056807425531906.json, 视频生成/图生视频/Wan3万相多模态全参工作流｜图生视频视频生视频双模式_2108017535508639745.json, 视频生成/图生视频/Wan3多模态全参工作流 文生视频图生视频全能创作_2099201072412848129.json, 视频生成/图生视频/Wan3多模态全参工作流 文生视频图生视频全能创作_2099599137611272193.json, 视频生成/图生视频/Wan3多模态全参工作流 视频生视频图生视频处理工具_2113376426140454913.json, 视频生成/图生视频/Wan3多模态全参工作流_2109966575624351745.json, 视频生成/图生视频/Wan3多模态全参工作流，视频生视频图生视频全覆盖方案_2106855204628025346.json, 视频生成/图生视频/Wan3多模态全参工作流，视频生视频图生视频全覆盖方案_2110206029798662146.json, 视频生成/图生视频/Wan3多模态全参工作流｜视频生视频图生视频_2095092856275951617.json, 视频生成/图生视频/Wan3多模态全参工作流｜视频生视频图生视频多模态上阵_2114247022919376897.json]
+members: [图片生成/文生图/G-image-2.5文生图极速API版｜秒级出图效率拉满_2098732116275195905.json, 图片生成/文生图/G-image-2.5文生图高品质API版｜出图质感在线_2098726914138664961.json, 图片生成/文生图/G-image-2.5文生图高品质版 文本到图像精细生成_2098294330913021954.json, 图片生成/文生图/G-image2全能真实人像文生图｜2K输出摄影级写实人像写真_2088691697495662593.json, 图片生成/文生图/G2 文生图低价版｜省币跑图更划算的文生图选择_2096890572521951233.json, 图片生成/文生图/Image-2.5九图文生图版本 批量高质量生成_2098303034546806785.json, 图片生成/文生图/aigc-image-2.5文生图九图连出｜太平风格批量出图_2106953497185972225.json, 图片生成/文生图/text to Image 2.0 RH性价比版全能图片G2文生图工作流_2088373457695363074.json, 图片生成/文生图/text to Image 2.0 RH性价比版文生图｜全能图片G2图片生成工作流_2088342587194302465.json, 图片生成/文生图/场景道具图单图文生图（真实感）_2106398654545358849.json, 图片生成/文生图/场景道具图批量文生图｜布景陈设素材一键出全套_2103107503109263362.json, 图片生成/文生图/真实人像2K输出｜全能图片G-image2文生图人像写真_2093778848361046017.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_139
 
-> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/数字人口型同步神器｜口型语音精准对齐不穿帮_2106622328892379137.json、视频生成/图生视频/MiniMax H3全能参考｜图音视频多素材再生工作流_2095255547141509121.json、视频生成/图生视频/Wan3.0参考生视频｜数字人动作迁移图生视频_2092056807425531906.json、视频生成/图生视频/Wan3万相多模态全参工作流｜图生视频视频生视频双模式_2108017535508639745.json、视频生成/图生视频/Wan3多模态全参工作流 文生视频图生视频全能创作_2099201072412848129.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/文生图/G-image-2.5文生图极速API版｜秒级出图效率拉满_2098732116275195905.json、图片生成/文生图/G-image-2.5文生图高品质API版｜出图质感在线_2098726914138664961.json、图片生成/文生图/G-image-2.5文生图高品质版 文本到图像精细生成_2098294330913021954.json、图片生成/文生图/G-image2全能真实人像文生图｜2K输出摄影级写实人像写真_2088691697495662593.json、图片生成/文生图/G2 文生图低价版｜省币跑图更划算的文生图选择_2096890572521951233.json…）
 
 - **类型**：Text To Image
 - **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -28,30 +28,24 @@ source: knowledge_consolidation
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
-- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `SaveVideo`
+- `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 11/12 个有
-- `LoadVideo` —— 11/12 个有
-- `RH_AlibabaWan30ReferenceToVideo` —— 10/12 个有
-- `孤海注释` —— 10/12 个有
-- `Text` —— 9/12 个有
-- `SaveImage` —— 6/12 个有
-- `PrimitiveStringMultiline` —— 2/12 个有
-- `CreateVideo` —— 1/12 个有
-- `EmptyImage` —— 1/12 个有
-- `FL_CosyVoice3_ModelLoader` —— 1/12 个有
-- `FL_CosyVoice3_ZeroShot` —— 1/12 个有
-- `GetVideoComponents` —— 1/12 个有
-- `LatentSyncNode` —— 1/12 个有
-- `PreviewImage` —— 1/12 个有
-- `RH_MinimaxHailuoH3RegenerationMultimodalToVideo` —— 1/12 个有
+- `孤海注释` —— 11/12 个有
+- `RH_RhartImageG2TextToImage` —— 7/12 个有
+- `CR Prompt Text` —— 6/12 个有
+- `PIP_StringConcatenation` —— 2/12 个有
+- `RH_RhartImageG25OfficialTokenSunburstTextToImage` —— 2/12 个有
+- `RH_RhartImageG25SunburstTextToImage` —— 2/12 个有
+- `ShowAnything|Mie` —— 2/12 个有
+- `easy positive` —— 2/12 个有
+- `RH_RhartImageG25OfficialTokenFlareTextToImage` —— 1/12 个有
+- `TextInput` —— 1/12 个有
 
 ## 典型参数
 

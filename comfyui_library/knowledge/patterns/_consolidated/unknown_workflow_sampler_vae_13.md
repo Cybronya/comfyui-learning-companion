@@ -1,92 +1,62 @@
 ---
 name: unknown_workflow_sampler_vae_13
 type: Unknown Workflow
-frequency: 22
+frequency: 20
 level: moderate
-coverage: 0.828091
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, PreviewImage, RH_LLMAPI_NODE, SaveImage, Text Multiline, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9645
+common_nodes: [CreateVideo, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3Ref2VAEncode, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAVAELoader, SaveVideo]
+problems: []
 missing: []
-members: [图片生成/图生图/Nunchaku-千问Edit2509图像编辑-单图_1971195509471952898.json, 图片生成/图生图/Nunchaku-千问Edit2509图像编辑-多图融合_1971196973699284993.json, 图片生成/图生图/Qwen Image Edit 2511-单图编辑-提示词优化_2003833825832648705.json, 图片生成/图生图/Qwen Image Edit 2511-多图编辑-提示词优化_2003830071397892098.json, 图片生成/图生图/Qwen_image_Edit_2511千问图片编辑-单图_2003744147611762690.json, 图片生成/图生图/【Supermate】千问Edit2511图像编辑-脸部融合_2003714145767833601.json, 图片生成/图生图/千问Edit2509-单图-效果图转换手绘_1974725230688120833.json, 图片生成/图生图/千问Edit2509图像编辑-单图_1970831316243648513.json, 图片生成/图生图/千问Edit2509图像编辑-多图融合_1970858618352504834.json, 图片生成/图生图/千问Edit2509配合lora-单图-效果图转换手绘_1981990651577409537.json, 图片生成/图生图/千问Edit2511图像编辑-单图_2003636801959043074.json, 图片生成/图生图/千问Edit2511图像编辑-单图_2071099776166350849.json, 图片生成/图生图/千问Edit2511图像编辑-单图_2071102894794960897.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2003558265445335041.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2003625306432913410.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2003650176382345217.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2065079427427557377.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2065096059185098753.json, 图片生成/图生图/千问Edit2511图像编辑-多图融合_2065416364688502786.json, 图片生成/图生图/千问Edit2511图像编辑_2003705719016833025.json, 图片生成/图生图/千问Edit2511多图编辑_2003716186049290242.json, 图片生成/图生图/老照片修复·超强悍_2010981023328243714.json]
+members: [视频生成/图生视频/MiniMax H3 Ref2VA开源版（视频+音频）-多图参考生视频_2084117625445113858.json, 视频生成/图生视频/MiniMax H3 全能参考 - 多图参考 视频生成-非API 漫剧专用工作流 目前开源最强模型！_2084194781378473986.json, 视频生成/图生视频/MiniMax H3 图像+音频参考生视频_2084204849603899393.json, 视频生成/图生视频/MiniMax H3 图像+音频参考生视频_2084635764322820097.json, 视频生成/图生视频/MiniMax H3 多参生视频_2084176760207400962.json, 视频生成/图生视频/MiniMax H3 多图参考生视频_2084173404218941442.json, 视频生成/图生视频/MiniMax H3 多图参考生视频_2084494853341270018.json, 视频生成/图生视频/MiniMax H3 多图参考生视频_2084918147903217665.json, 视频生成/图生视频/MiniMax H3 多图参考生视频【电商带货】_2088055399927869442.json, 视频生成/图生视频/MiniMax H3 开源版 音频图像参考生视频_2084144635793985538.json, 视频生成/图生视频/MiniMax H3-多图参考生视频_2084171436985511938.json, 视频生成/图生视频/MiniMax H3图片+音频音色参考生视频_2084175274538790914.json, 视频生成/图生视频/MiniMax H3图片+音频音色参考生视频_2084520687598923777.json, 视频生成/图生视频/MiniMax H3多参工作流（多音频）_2084207606410858498.json, 视频生成/图生视频/MiniMax H3开源版-多图参考视频工作流V1.0_2084146583087702018.json, 视频生成/图生视频/MiniMax+H3+FL2VA开源版-图像+音频参考生视频_2086516913043230721.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098932120847732737.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2098989849817731073.json, 视频生成/图生视频/MiniMax_H3_FL2VA开源版-图像_音频参考生视频_2099665472349364225.json, 视频生成/图生视频/Minimax H3 6图 全能参考_2084613636659695617.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_13
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/Nunchaku-千问Edit2509图像编辑-单图_1971195509471952898.json、图片生成/图生图/Nunchaku-千问Edit2509图像编辑-多图融合_1971196973699284993.json、图片生成/图生图/Qwen Image Edit 2511-单图编辑-提示词优化_2003833825832648705.json、图片生成/图生图/Qwen Image Edit 2511-多图编辑-提示词优化_2003830071397892098.json、图片生成/图生图/Qwen_image_Edit_2511千问图片编辑-单图_2003744147611762690.json…）
+> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 Ref2VA开源版（视频+音频）-多图参考生视频_2084117625445113858.json、视频生成/图生视频/MiniMax H3 全能参考 - 多图参考 视频生成-非API 漫剧专用工作流 目前开源最强模型！_2084194781378473986.json、视频生成/图生视频/MiniMax H3 图像+音频参考生视频_2084204849603899393.json、视频生成/图生视频/MiniMax H3 图像+音频参考生视频_2084635764322820097.json、视频生成/图生视频/MiniMax H3 多参生视频_2084176760207400962.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
+- **样本数**：20
 - **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `KSampler`
-- `LoadImage`
-- `PreviewImage`
-- `RH_LLMAPI_NODE`
-- `SaveImage`
-- `Text Multiline`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
-- `VAEDecode`
-- `VAELoader`
+全部 20 个 workflow 都包含：
+- `CreateVideo`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3Ref2VAEncode`
+- `RHMiniMaxH3Ref2VAModelLoader`
+- `RHMiniMaxH3Ref2VATarget`
+- `RHMiniMaxH3Ref2VATextEncoderLoader`
+- `RHMiniMaxH3Ref2VAVAELoader`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `EmptyLatentImage` —— 21/22 个有
-- `UNETLoader` —— 21/22 个有
-- `FluxKontextImageScale` —— 20/22 个有
-- `LoraLoaderModelOnly` —— 20/22 个有
-- `easy showAnything` —— 20/22 个有
-- `FluxResolutionNode` —— 19/22 个有
-- `LayerUtility: ImageReel` —— 12/22 个有
-- `LayerUtility: ImageReelComposit` —— 12/22 个有
-- `ImageConcanate` —— 11/22 个有
-- `ImpactSwitch` —— 10/22 个有
-- `Image Comparer (rgthree)` —— 3/22 个有
-- `AIO_Preprocessor` —— 2/22 个有
-- `AddLabel` —— 2/22 个有
-- `GetNode` —— 2/22 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/22 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/22 个有
-- `NunchakuQwenImageDiTLoader` —— 2/22 个有
-- `PrimitiveInt` —— 2/22 个有
-- `SetNode` —— 2/22 个有
-- `ShowText|pysssss` —— 2/22 个有
-- `Int` —— 1/22 个有
-- `OpenposePreprocessor` —— 1/22 个有
-- `TextInputBasic` —— 1/22 个有
-- `easy promptLine` —— 1/22 个有
-- `workflow>面部修复` —— 1/22 个有
+- `LoadImage` —— 19/20 个有
+- `RHMiniMaxH3Ref2VAImageReference` —— 19/20 个有
+- `LoadAudio` —— 11/20 个有
+- `RHMiniMaxH3Ref2VAAudioReference` —— 11/20 个有
+- `EmptyImage` —— 3/20 个有
+- `PreviewImage` —— 3/20 个有
+- `LoadVideo` —— 2/20 个有
+- `RHMiniMaxH3Ref2VAVideoReference` —— 2/20 个有
+- `MuyeLoadImage` —— 1/20 个有
+- `PreviewAny` —— 1/20 个有
+- `RH_LLMAPI_Pro_Node` —— 1/20 个有
+- `Text` —— 1/20 个有
+- `孤海注释` —— 1/20 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 8 | 8 - 20 | 22 | 62% |
-| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 22 | 62% |
-| 采样算法 | euler | - | 22 | 95% |
-| 调度器 | simple | - | 22 | 59% |
-| 重绘幅度 | 1 | 1 - 1 | 22 | 100% |
-| 宽度 | 512 | 512 - 512 | 21 | 100% |
-| 高度 | 512 | 512 - 512 | 21 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 20/22 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 20，22 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，22 个样本
-- 采样算法 最常用 euler，22 个样本，一致性 95%
-- 调度器 最常用 simple，22 个样本，一致性 59%
-- 重绘幅度 中位数 1，观测区间 1 - 1，22 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，观测区间 512 - 512，21 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，21 个样本，取值集中（一致性 100%）
-- 高发问题（20/22 个样本）：Steps较低可能导致细节不足
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

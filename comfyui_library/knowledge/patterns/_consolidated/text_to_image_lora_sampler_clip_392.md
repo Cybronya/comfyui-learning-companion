@@ -2,70 +2,74 @@
 name: text_to_image_lora_sampler_clip_392
 type: Text To Image
 frequency: 5
-level: strong
-coverage: 0.8238
-common_nodes: [BatchImagesNode, CLIPLoader, CLIPTextEncode, ComfySwitchNode, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImage21, TextGenerate, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: weak
+coverage: 0.7068
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, EmptyLatentImage, Fast Groups Bypasser (rgthree), GetImageSize, Image Comparer (rgthree), KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, QwenImage21Cache, SaveImage, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader, easy showAnything, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Image2.1姿势迁移 人物姿态精准控制_2108663641737351170.json, 图片生成/图生图/Qwen2.1 Image图片编辑工作流，指令式修图快速精准高效出图_2115012462922780674.json, 图片生成/图生图/Qwen_Image2.1姿势迁移，局部重绘动作迁移图生图_2111949159719849985.json, 图片生成/图生图/换姿势QwenImage2.1原生controlNet 姿态精准控制_2108672987565223937.json, 图片生成/文生图/AI换装Qwen Image 2.1双图试穿智能提示词 服装展示方案_2108655915309289474.json]
+members: [图片生成/图生图/ki_人物四视图合集_2114476716134584321.json, 图片生成/文生图/Qwen Image 2.1全能工作流，文生图反推提示词图生图多合一_2102880404171739138.json, 图片生成/文生图/Qwen image2.1全能工作流 文生图人像写真一站搞定_2104332186555080705.json, 图片生成/文生图/Qwen image2.1全能工作流｜文生图人像写真 图生图一套全包_2104107604501942274.json, 视频生成/图生视频/Qwen_Image_2.1全能工作流，文生图反推提示词图生图多合一_2105118701145120770.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_392
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen Image2.1姿势迁移 人物姿态精准控制_2108663641737351170.json、图片生成/图生图/Qwen2.1 Image图片编辑工作流，指令式修图快速精准高效出图_2115012462922780674.json、图片生成/图生图/Qwen_Image2.1姿势迁移，局部重绘动作迁移图生图_2111949159719849985.json、图片生成/图生图/换姿势QwenImage2.1原生controlNet 姿态精准控制_2108672987565223937.json、图片生成/文生图/AI换装Qwen Image 2.1双图试穿智能提示词 服装展示方案_2108655915309289474.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/ki_人物四视图合集_2114476716134584321.json、图片生成/文生图/Qwen Image 2.1全能工作流，文生图反推提示词图生图多合一_2102880404171739138.json、图片生成/文生图/Qwen image2.1全能工作流 文生图人像写真一站搞定_2104332186555080705.json、图片生成/文生图/Qwen image2.1全能工作流｜文生图人像写真 图生图一套全包_2104107604501942274.json、视频生成/图生视频/Qwen_Image_2.1全能工作流，文生图反推提示词图生图多合一_2105118701145120770.json）
 
 - **类型**：Text To Image
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：82%
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：71%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
-- `BatchImagesNode`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfySwitchNode`
+- `CR Text`
 - `EmptyLatentImage`
-- `JjkText`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSize`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `QwenImage21Cache`
 - `SaveImage`
 - `TextEncodeQwenImage21`
-- `TextGenerate`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewAny` —— 4/5 个有
-- `QwenImage21Cache` —— 4/5 个有
-- `CR Text Concatenate` —— 3/5 个有
-- `EmptySD3LatentImage` —— 3/5 个有
-- `Int` —— 3/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/5 个有
-- `OpenposePreprocessor` —— 3/5 个有
-- `PreviewImage` —— 3/5 个有
-- `kkGetImage` —— 3/5 个有
-- `PrimitiveStringMultiline` —— 2/5 个有
-- `ResolutionSelector` —— 2/5 个有
-- `JsonExtractString` —— 1/5 个有
+- `AIO_Preprocessor` —— 4/5 个有
+- `CR Text Concatenate` —— 4/5 个有
+- `GetNode` —— 4/5 个有
+- `JjkText` —— 4/5 个有
+- `PreviewImage` —— 4/5 个有
+- `SetNode` —— 4/5 个有
+- `ki_宫格拼图简易版` —— 4/5 个有
+- `solarL_SaveImagesToZip` —— 4/5 个有
+- `孤海注释` —— 3/5 个有
+- `ConditioningZeroOut` —— 1/5 个有
+- `EmptyImage` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
+| 宽度 | 80 | 80 - 2048 | 5 | 0% |
+| 高度 | 80 | 80 - 1024 | 5 | 0% |
+| 采样步数 | 4 | 4 - 40 | 5 | 0% |
+| Prompt 约束强度(CFG) | 4.5 | 1 - 4.5 | 5 | 63% |
+| 采样算法 | er_sde | - | 5 | 80% |
+| 调度器 | beta | - | 5 | 80% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
 
 ## 常见问题
 
@@ -75,11 +79,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
+- 宽度 中位数 80，观测区间 80 - 2048，5 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 80 - 1024，5 个样本，取值分散，一致性仅 0%
+- 采样步数 中位数 4，观测区间 4 - 40，5 个样本，取值分散，一致性仅 0%
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 1 - 4.5，5 个样本
+- 采样算法 最常用 er_sde，5 个样本，一致性 80%
+- 调度器 最常用 beta，5 个样本，一致性 80%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
 - 高发问题（5/5 个样本）：Steps较低可能导致细节不足

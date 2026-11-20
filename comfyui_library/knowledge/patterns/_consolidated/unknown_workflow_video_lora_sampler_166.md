@@ -1,66 +1,75 @@
 ---
 name: unknown_workflow_video_lora_sampler_166
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: moderate
-coverage: 0.9355
-common_nodes: [CLIPVisionLoader, LoadImage, VHS_VideoCombine, WanVideoAddWanMoveTracks, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
+coverage: 0.761083
+common_nodes: [BasicScheduler, CLIPLoader, ConditioningZeroOut, H3SigmaRefiner, KSamplerSelect, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan-Move：编辑曲线轨迹精准控制物体移动_1999379075955294209.json, 视频生成/图生视频/Wan-Move：编辑点轨迹控制动态和静态_1999823566369587201.json, 视频生成/图生视频/Wan-Move：通过潜在轨迹引导实现可控运动的视频生成_2000407963032485890.json, 视频生成/图生视频/Wan2.1：Wanmove 图生视频，轨迹控制运动_1999283559233974273.json, 视频生成/图生视频/WanMove-轨迹引导运动_1999719285188685825.json, 视频生成/图生视频/WanMove图生视频动作编辑_1999827613361242114.json, 视频生成/图生视频/WanMove运动轨迹控制V1（创意玩法）_2000263694896558082.json, 视频生成/图生视频/Wanmove+Fill Nodes动与静轨迹控制V1（扭曲艺术）_1999117506138828801.json, 视频生成/图生视频/Wanmove_轨迹运动_图生视频_1999179098159185922.json, 视频生成/图生视频/Wanmove图生视频轨迹控制运动_1999117926080933890.json, 视频生成/图生视频/Wanmove图生视频轨迹控制运动_1999366459300212737.json, 视频生成/图生视频/Wanmove轨迹控制_2000380802502455298.json, 视频生成/图生视频/Wanmove轨迹控制运动_1999041056794628098.json, 视频生成/图生视频/Wanmove轨迹控制运动_1999430361350275074.json]
+members: [视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json, 视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json, 视频生成/图生视频/绘影-Minimax H3-参考生视频-self-lift双采-1080P-V1.2_2099315406128369665.json, 视频生成/图生视频/黑科技加速双采-self-lift-Heng_2100234461106499585.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流-3图1音_2102289015847350274.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流-4图1音_2102284106150273026.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流-5图1音_2108825320408309761.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流-6图1音_2108828857859141634.json, 视频生成/图生视频/黑科技加速双采-self-lift工作流_2097859473883881474.json, 视频生成/图生视频/（修脸极速）黑科技加速minimax h3 self-lift双采多参生视频_2098223404263497730.json, 视频生成/文生视频/MiniMaxH3-极速多参视频制作_2099705642452865026.json, 视频生成/视频生视频/MiniMaxH3-极速多参视频制作_2099705642452865026.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_166
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Wan-Move：编辑曲线轨迹精准控制物体移动_1999379075955294209.json、视频生成/图生视频/Wan-Move：编辑点轨迹控制动态和静态_1999823566369587201.json、视频生成/图生视频/Wan-Move：通过潜在轨迹引导实现可控运动的视频生成_2000407963032485890.json、视频生成/图生视频/Wan2.1：Wanmove 图生视频，轨迹控制运动_1999283559233974273.json、视频生成/图生视频/WanMove-轨迹引导运动_1999719285188685825.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/Minimax-H3-双采数字人(Unified节点简洁版)_2109215715042611202.json、视频生成/图生视频/Minimax-H3-双采数字人_2109270106537816065.json、视频生成/图生视频/绘影-Minimax H3-参考生视频-self-lift双采-1080P-V1.2_2099315406128369665.json、视频生成/图生视频/黑科技加速双采-self-lift-Heng_2100234461106499585.json、视频生成/图生视频/黑科技加速双采-self-lift工作流-3图1音_2102289015847350274.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：中等可信
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：76%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `LoadImage`
+全部 12 个 workflow 都包含：
+- `BasicScheduler`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `H3SigmaRefiner`
+- `KSamplerSelect`
+- `LoraLoaderModelOnly`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoAddWanMoveTracks`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadWanVideoT5TextEncoder` —— 13/14 个有
-- `SplineEditor` —— 13/14 个有
-- `WanVideoSetBlockSwap` —— 13/14 个有
-- `WanVideoSetLoRAs` —— 13/14 个有
-- `WanVideoTextEncode` —— 13/14 个有
-- `WanVideoWanDrawWanMoveTracks` —— 13/14 个有
-- `RepeatImageBatch` —— 11/14 个有
-- `INTConstant` —— 10/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/14 个有
-- `ImageConcanate` —— 7/14 个有
-- `WanVideoTorchCompileSettings` —— 7/14 个有
-- `easy showAnything` —— 6/14 个有
-- `ImageResizeKJv2` —— 5/14 个有
-- `CR Prompt Text` —— 3/14 个有
-- `FL_PathAnimator` —— 3/14 个有
-- `Text Multiline` —— 3/14 个有
-- `Anything Everywhere3` —— 1/14 个有
-- `GetNode` —— 1/14 个有
-- `HAIGC_VideoLoader` —— 1/14 个有
-- `LayerUtility: ImageScaleByAspectRatio` —— 1/14 个有
-- `LazySwitchKJ` —— 1/14 个有
-- `SetNode` —— 1/14 个有
-- `Text` —— 1/14 个有
-- `WanVideoTextEncodeCached` —— 1/14 个有
+- `ComfyMathExpression` —— 11/12 个有
+- `MiniMaxH3ReferenceToVideo` —— 11/12 个有
+- `PrimitiveFloat` —— 11/12 个有
+- `ResolutionSelector` —— 11/12 个有
+- `PrimitiveStringMultiline` —— 10/12 个有
+- `VAEDecodeAudio` —— 10/12 个有
+- `CreateVideo` —— 9/12 个有
+- `SelfLiftH3Sampler` —— 9/12 个有
+- `LoadImage` —— 7/12 个有
+- `LoadAudio` —— 5/12 个有
+- `Int` —— 4/12 个有
+- `SDVN Load Image Url` —— 4/12 个有
+- `VHS_LoadAudio` —— 4/12 个有
+- `VHS_LoadVideo` —— 4/12 个有
+- `GetNode` —— 3/12 个有
+- `SelfLiftAvatarH3Sampler` —— 3/12 个有
+- `SetNode` —— 3/12 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/12 个有
+- `LTXVSeparateAVLatent` —— 2/12 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 2/12 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 2/12 个有
+- `MiniMaxH3VAEDecodeFast` —— 2/12 个有
+- `RunningHub Deepcleaner` —— 2/12 个有
+- `SaveVideo` —— 2/12 个有
+- `VHS_VideoInfoLoaded` —— 2/12 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 2/12 个有
+- `easy showAnything` —— 2/12 个有
+- `MiniMaxH3SigmaShift` —— 1/12 个有
+- `MiniMaxH3Unified` —— 1/12 个有
+- `TrimAudioDuration` —— 1/12 个有
+- `easy float` —— 1/12 个有
 
 ## 典型参数
 

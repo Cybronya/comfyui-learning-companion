@@ -1,51 +1,73 @@
 ---
 name: unknown_workflow_sampler_unet_vae_160
 type: Unknown Workflow
-frequency: 8
+frequency: 7
 level: strong
-coverage: 0.98
-common_nodes: [BasicGuider, CLIPLoader, RandomNoise, SamplerCustomAdvanced, TextEncodeQwenImage21, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.461714
+common_nodes: [CLIPLoader, CM_IntUnaryOperation, GetImageSizeAndCount, GetNode, ImageBatchMulti, ImageLoader, ImageScaleToTotalPixels, KSampler, MemoryCleaner, PreviewImage, SaveImage, SetNode, SimpleMath+, StringFunction|pysssss, UNETLoader, VAEDecode, VAELoader, easy anythingIndexSwitch, easy anythingInversedSwitch, easy int, easy positive, easy saveText, easy seed, easy showAnything]
 problems: []
 missing: []
-members: [图片生成/图生图/Qwen2.1-单图编辑_2106941936392294401.json, 图片生成/图生图/Qwen2.1-双图组合_2106944403725185025.json, 图片生成/图生图/Qwen2.1-透明抠图_2106946708730105858.json, 图片生成/文生图/Qwen2.1-文生图_2106946374871904257.json, 平台全量/Qwen Image 2.1 Turbo 分镜生图（场景） V20261018_2117325048951431169.json, 平台全量/Qwen Image 2.1 Turbo 分镜生图（角色+场景） V20261018_2117325895718498305.json, 平台全量/Qwen Image 2.1 Turbo 单图编辑 V20261018_2117486305058836481.json, 平台全量/Qwen Image 2.1 Turbo 多图编辑 1080P（原映射）V20261027_2117329747205255170.json]
+members: [图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-Qwen-Image-2.1_2104090966184517633.json, 图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-qwen-edit-2511_2085948961461985282.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-Qwen-Image-2.1_2104076531101425666.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-Qwen-Image-2.1_2105574372848263169.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-Qwen-Image-2.1_2108011209747423234.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-qwen-edit-2511_2006056375931113474.json, 图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-qwen-edit-2511_2066055878555791360.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_unet_vae_160
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Qwen2.1-单图编辑_2106941936392294401.json、图片生成/图生图/Qwen2.1-双图组合_2106944403725185025.json、图片生成/图生图/Qwen2.1-透明抠图_2106946708730105858.json、图片生成/文生图/Qwen2.1-文生图_2106946374871904257.json、平台全量/Qwen Image 2.1 Turbo 分镜生图（场景） V20261018_2117325048951431169.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-Qwen-Image-2.1_2104090966184517633.json、图片生成/图生图/生图-任意数量编辑多宫格自动(5图以内)-qwen-edit-2511_2085948961461985282.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-Qwen-Image-2.1_2104076531101425666.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-Qwen-Image-2.1_2105574372848263169.json、图片生成/图生图/生图-任意数量编辑融合自动(5图以内)-Qwen-Image-2.1_2108011209747423234.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：46%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `BasicGuider`
+全部 7 个 workflow 都包含：
 - `CLIPLoader`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `TextEncodeQwenImage21`
+- `CM_IntUnaryOperation`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `ImageBatchMulti`
+- `ImageLoader`
+- `ImageScaleToTotalPixels`
+- `KSampler`
+- `MemoryCleaner`
+- `PreviewImage`
+- `SaveImage`
+- `SetNode`
+- `SimpleMath+`
+- `StringFunction|pysssss`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy anythingIndexSwitch`
+- `easy anythingInversedSwitch`
+- `easy int`
+- `easy positive`
+- `easy saveText`
+- `easy seed`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 7/8 个有
-- `SaveImage` —— 6/8 个有
-- `SaveImageAdvanced` —— 6/8 个有
-- `EmptyLatentImage` —— 5/8 个有
-- `CR Prompt Text` —— 4/8 个有
-- `KSamplerSelect` —— 4/8 个有
-- `ManualSigmas` —— 4/8 个有
-- `QwenImage21FunPDDLoader` —— 4/8 个有
-- `easy int` —— 4/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `PrimitiveInt` —— 2/8 个有
-- `ImageScale` —— 1/8 个有
-- `QwenImage21Cache` —— 1/8 个有
+- `llama_cpp_instruct_adv` —— 6/7 个有
+- `llama_cpp_model_loader` —— 6/7 个有
+- `llama_cpp_parameters` —— 6/7 个有
+- `EmptyImage` —— 5/7 个有
+- `EmptyLatentImage` —— 5/7 个有
+- `ImpactInt` —— 4/7 个有
+- `TextEncodeQwenImage21` —— 4/7 个有
+- `TextGenerateLTX2Prompt` —— 4/7 个有
+- `CFGNorm` —— 3/7 个有
+- `ConditioningZeroOut` —— 3/7 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 3/7 个有
+- `ImageConcatMulti` —— 3/7 个有
+- `LoraLoaderModelOnly` —— 3/7 个有
+- `ModelSamplingAuraFlow` —— 3/7 个有
+- `TextEncodeQwenImageEditPlus` —— 3/7 个有
+- `VAEEncode` —— 3/7 个有
+- `Qwen3VL_Advanced` —— 1/7 个有
+- `RH_LLMAPI_NODE` —— 1/7 个有
+- `ResolutionSelector` —— 1/7 个有
 
 ## 典型参数
 
@@ -53,6 +75,11 @@ source: knowledge_consolidation
 |---|---|---|---|---|
 | 宽度 | 1024 | 1024 - 1024 | 5 | 100% |
 | 高度 | 1024 | 1024 - 1024 | 5 | 100% |
+| 采样步数 | 40 | 10 - 40 | 7 | 45% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | simple | - | 7 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
@@ -62,3 +89,8 @@ source: knowledge_consolidation
 
 - 宽度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
 - 高度 中位数 1024，观测区间 1024 - 1024，5 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 40，观测区间 10 - 40，7 个样本，取值分散，一致性仅 45%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 simple，7 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）

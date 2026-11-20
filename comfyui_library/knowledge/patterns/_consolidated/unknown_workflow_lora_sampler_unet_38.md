@@ -1,72 +1,84 @@
 ---
 name: unknown_workflow_lora_sampler_unet_38
 type: Unknown Workflow
-frequency: 14
+frequency: 12
 level: strong
-coverage: 0.963286
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.780417
+common_nodes: [CLIPLoader, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI短剧角色换装换动作 Qwen-image-edit2511+SeedVR2高清多图参考图生图_2018199405492441089.json, 图片生成/图生图/FireRed-Image-Edit 换装神器｜电商服装展示_2104411613049741314.json, 图片生成/图生图/Qwen Edit Plus 多图编辑_1970549322146344962.json, 图片生成/图生图/rick and morty_2002342394169311234.json, 图片生成/图生图/动漫短剧角色换装换动作 Qwen-image-edit2511多图参考图生图_2015042670699220994.json, 图片生成/图生图/去水印-Qwen-Edit-2511 图片去水印_2036840450740457474.json, 图片生成/图生图/去水印-图片去水印-Qwen-Edit-2511-图像编辑_2025387125960613889.json, 图片生成/图生图/去水印-图片去水印-Qwen-Edit-2511-图像编辑_2026918010535026689.json, 图片生成/图生图/图片去水印极速版-阿浩_2031530848842944514.json, 图片生成/图生图/老照片修复-Qwen-Edit-2511-图像编辑_2003754424059240449.json, 图片生成/文生图/Qwen-Edit-2511-三图融合-一致性加强版本_2026276649716682754.json, 平台全量/QwenEdit2511去除图片水印高清放大_2060880774278242305.json, 平台全量/QwenEdit2511去除图片水印高清放大_优化版本_2087891848307236865.json, 平台全量/一键去除图片水印（高清放大）-Qwen-Edit-2511_2058450928906366978.json]
+members: [图片生成/图生图/Qwen 2509 anything2real 动漫转真实-八步生图-娱乐向_1989715291422814210.json, 图片生成/图生图/Qwen 2511 anything2real 动漫转真实_2009089869389242369.json, 图片生成/图生图/Qwen 2511 人物一致性动作迁移 _ 加速版_2076166581280919554.json, 图片生成/图生图/Qwen 2511 换背景+局部重绘+单图编辑背景无偏移_2008885767828934658.json, 图片生成/图生图/Qwen Edit 2511 动漫风格转换V1_2005633486033743874.json, 图片生成/图生图/Qwen Edit 2511 双图编辑V1（一致性加强版）_2003801552768933889.json, 图片生成/图生图/Qwen Edit 2511 双图编辑【一致性加强版】电商_摄影等_2004002137615048706.json, 图片生成/图生图/Qwen Edit 2511蒙版+图像编辑V1(无偏移)_2003798966443646977.json, 图片生成/图生图/Qwen+Edit+2511+双图编辑【一致性加强版】电商_2005266637362266113.json, 图片生成/图生图/Qwen-Edit-2509 Utils 2.2 Optional Mask（局部重绘+遮罩）_1989853315464916993.json, 图片生成/图生图/Qwen2509无遮罩换装 一致性_1990289777809387521.json, 图片生成/图生图/千问换装【全自动换装+超强一致性_带遮罩】_2042926037226491906.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_38
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/AI短剧角色换装换动作 Qwen-image-edit2511+SeedVR2高清多图参考图生图_2018199405492441089.json、图片生成/图生图/FireRed-Image-Edit 换装神器｜电商服装展示_2104411613049741314.json、图片生成/图生图/Qwen Edit Plus 多图编辑_1970549322146344962.json、图片生成/图生图/rick and morty_2002342394169311234.json、图片生成/图生图/动漫短剧角色换装换动作 Qwen-image-edit2511多图参考图生图_2015042670699220994.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/Qwen 2509 anything2real 动漫转真实-八步生图-娱乐向_1989715291422814210.json、图片生成/图生图/Qwen 2511 anything2real 动漫转真实_2009089869389242369.json、图片生成/图生图/Qwen 2511 人物一致性动作迁移 _ 加速版_2076166581280919554.json、图片生成/图生图/Qwen 2511 换背景+局部重绘+单图编辑背景无偏移_2008885767828934658.json、图片生成/图生图/Qwen Edit 2511 动漫风格转换V1_2005633486033743874.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：96%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
+全部 12 个 workflow 都包含：
 - `CLIPLoader`
 - `ConditioningZeroOut`
+- `Image Comparer (rgthree)`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 11/14 个有
-- `Int` —— 11/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 10/14 个有
-- `EmptySD3LatentImage` —— 9/14 个有
-- `Image Comparer (rgthree)` —— 4/14 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/14 个有
-- `PrimitiveStringMultiline` —— 2/14 个有
-- `JjkText` —— 1/14 个有
-- `Label (rgthree)` —— 1/14 个有
-- `SeedVR2GGUF` —— 1/14 个有
+- `PrimitiveStringMultiline` —— 11/12 个有
+- `QwenEditConfigPreparer` —— 11/12 个有
+- `TextEncodeQwenImageEditPlusCustom_lrzjason` —— 11/12 个有
+- `CropWithPadInfo` —— 10/12 个有
+- `QwenEditAdaptiveLongestEdge` —— 10/12 个有
+- `QwenEditOutputExtractor` —— 10/12 个有
+- `ImageScaleBy` —— 8/12 个有
+- `PreviewImage` —— 7/12 个有
+- `ImageConcanate` —— 3/12 个有
+- `GetNode` —— 2/12 个有
+- `Seed (rgthree)` —— 2/12 个有
+- `SetNode` —— 2/12 个有
+- `easy cleanGpuUsed` —— 2/12 个有
+- `AIO_Preprocessor` —— 1/12 个有
+- `CR Text` —— 1/12 个有
+- `GrowMask` —— 1/12 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/12 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
+- `MaskPreview` —— 1/12 个有
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 1/12 个有
+- `easy imageConcat` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 4 - 20 | 14 | 61% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | sa_solver | - | 14 | 64% |
-| 调度器 | simple | - | 14 | 79% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
+| 采样步数 | 8 | 4 - 8 | 12 | 75% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 92% |
+| 调度器 | beta57 | - | 12 | 83% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 13/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 4 - 20，14 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 sa_solver，14 个样本，一致性 64%
-- 调度器 最常用 simple，14 个样本，一致性 79%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 高发问题（13/14 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 8，12 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 92%
+- 调度器 最常用 beta57，12 个样本，一致性 83%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（13/12 个样本）：Steps较低可能导致细节不足

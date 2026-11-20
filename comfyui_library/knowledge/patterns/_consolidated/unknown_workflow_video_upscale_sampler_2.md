@@ -1,75 +1,62 @@
 ---
 name: unknown_workflow_video_upscale_sampler_2
 type: Unknown Workflow
-frequency: 22
+frequency: 14
 level: moderate
-coverage: 0.820864
-common_nodes: [CM_IntToNumber, CM_NumberToInt, CR String To Number, ImageResize+, ImageResizeAdvanced, ImageUpscaleWithModel, ImpactSwitch, Int, JjkText, LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, MathExpression|pysssss, PrimitiveInt, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoTeaCache, WanVideoTextEncode, WanVideoVAELoader, easy cleanGpuUsed]
+coverage: 0.949
+common_nodes: [DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, ImageResizeKJ, ImageScaleToMegapixels, ImageSmartSharpen+, LoadImage, LoadWanVideoT5TextEncoder, PreviewImage, UpscaleModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoSLG, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/文生图/Wan 2.1 万相图生视频，王炸效果_1922826056431013890.json, 图片生成/文生图/图生万物视频，效果炸雷_1938593355519418370.json, 视频生成/图生视频/KJ版 WAN2.1-加速高清放大补帧720P图生视频基础工作流 -Starai_1894638096829317121.json, 视频生成/图生视频/Painting into a Moving Scroll   丹青化影卷_1982013169939955713.json, 视频生成/图生视频/WAN2.1 万相图生视频_1926968695568912386.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂_1894610227340181506.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂_1976926157406932994.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂_2044597335015038978.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂_2053734513896902657.json, 视频生成/图生视频/WAN2.1 万相图生视频，效果炸裂！_2038804340802064386.json, 视频生成/图生视频/WAN2.2 万相图生视频｜完美效果_1952903876091514881.json, 视频生成/图生视频/万相图生视频，就问你怕不怕_1913918881457733633.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2041692917349224449.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2042065465006104577.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2046394891109933057.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2052558625096388610.json, 视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2077563193140006913.json, 视频生成/图生视频/图生视频----WAN2.1+万相图生视频_2053667111112851458.json, 视频生成/图生视频/图生视频----WAN2.1+万相图生视频_2054018452377088002.json, 视频生成/图生视频/最新 万相图生视频_1919003466109222914.json, 视频生成/文生视频/【粒子生成】WAN2.1 万物粒子生成视频特效_1929695219774603265.json, 视频生成/文生视频/【美女背影】wan2.1 I2V 14Bi2v 走路背影_1929716786508500994.json]
+members: [视频生成/图生视频/ani全能视频S专业动漫2.0模型版图生视频_1944587037297266689.json, 视频生成/图生视频/fusionx 图生视频提速补版又爱了+lora_1934580843572862978.json, 视频生成/图生视频/wan2.1 + ani全能视频S 动漫版图生视频工作流_1945723173868359681.json, 视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG_1933771102806003714.json, 视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG，上传图片点击运行工作流即可！_2040762237102592001.json, 视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG，上传图片点击运行工作流即可！_2046787167770382338.json, 视频生成/图生视频/万相Skyreels V2突破81帧魔咒工作流_1913991140356620289.json, 视频生成/图生视频/像素风格2.0模型版图生视频_2056181586005110785.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2055177930787041282.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2056263992364060673.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2056548681435926530.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2056904231692627969.json, 视频生成/图生视频/全能视频S专业动漫2.0模型版图生视频_2059187455856832514.json, 视频生成/图生视频/全能视频专业动漫2.0-图生视频-最新_2056273124878016513.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/文生图/Wan 2.1 万相图生视频，王炸效果_1922826056431013890.json、图片生成/文生图/图生万物视频，效果炸雷_1938593355519418370.json、视频生成/图生视频/KJ版 WAN2.1-加速高清放大补帧720P图生视频基础工作流 -Starai_1894638096829317121.json、视频生成/图生视频/Painting into a Moving Scroll   丹青化影卷_1982013169939955713.json、视频生成/图生视频/WAN2.1 万相图生视频_1926968695568912386.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/ani全能视频S专业动漫2.0模型版图生视频_1944587037297266689.json、视频生成/图生视频/fusionx 图生视频提速补版又爱了+lora_1934580843572862978.json、视频生成/图生视频/wan2.1 + ani全能视频S 动漫版图生视频工作流_1945723173868359681.json、视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG_1933771102806003714.json、视频生成/图生视频/wan2.1 720p图生视频fusionX+NAG，上传图片点击运行工作流即可！_2040762237102592001.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：22
+- **样本数**：14
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 22 个 workflow 都包含：
-- `CM_IntToNumber`
-- `CM_NumberToInt`
-- `CR String To Number`
-- `ImageResize+`
-- `ImageResizeAdvanced`
-- `ImageUpscaleWithModel`
-- `ImpactSwitch`
-- `Int`
-- `JjkText`
+全部 14 个 workflow 都包含：
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `ImageResizeKJ`
+- `ImageScaleToMegapixels`
+- `ImageSmartSharpen+`
 - `LoadImage`
-- `LoadWanVideoClipTextEncoder`
 - `LoadWanVideoT5TextEncoder`
-- `MathExpression|pysssss`
-- `PrimitiveInt`
+- `PreviewImage`
 - `UpscaleModelLoader`
 - `VHS_VideoCombine`
 - `WanVideoBlockSwap`
 - `WanVideoDecode`
 - `WanVideoEnhanceAVideo`
-- `WanVideoExperimentalArgs`
-- `WanVideoImageClipEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoModelLoader`
 - `WanVideoSLG`
 - `WanVideoSampler`
-- `WanVideoTeaCache`
-- `WanVideoTextEncode`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `FILM VFI` —— 21/22 个有
-- `ImageResizeKJ` —— 21/22 个有
-- `easy showAnything` —— 21/22 个有
-- `easy textSwitch` —— 21/22 个有
-- `RH_Captioner` —— 19/22 个有
-- `Bjornulf_ShowStringText` —— 18/22 个有
-- `Note _O` —— 18/22 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/22 个有
-- `WanVideoLoraSelect` —— 3/22 个有
-- `ShowText|pysssss` —— 2/22 个有
-- `WD14Tagger|pysssss` —— 2/22 个有
-- `Fast Muter (rgthree)` —— 1/22 个有
-- `Label (rgthree)` —— 1/22 个有
-- `LayerUtility: PurgeVRAM` —— 1/22 个有
-- `Note Plus (mtb)` —— 1/22 个有
-- `WanVideoTorchCompileSettings` —— 1/22 个有
-- `easy imageSize` —— 1/22 个有
+- `WanVideoTorchCompileSettings` —— 11/14 个有
+- `WanVideoLoraSelect` —— 10/14 个有
+- `WanVideoTextEncode` —— 10/14 个有
+- `RH_Translator` —— 9/14 个有
+- `WanVideoApplyNAG` —— 4/14 个有
+- `WanVideoTextEncodeSingle` —— 4/14 个有
+- `CLIPVisionLoader` —— 1/14 个有
+- `CR Text` —— 1/14 个有
+- `ImageUpscaleWithModel` —— 1/14 个有
+- `Int` —— 1/14 个有
+- `SimpleMath+` —— 1/14 个有
+- `WanVideoClipVisionEncode` —— 1/14 个有
+- `WanVideoTeaCache` —— 1/14 个有
+- `easy showAnything` —— 1/14 个有
 
 ## 典型参数
 

@@ -1,98 +1,56 @@
 ---
 name: unknown_workflow_sampler_vae_9
 type: Unknown Workflow
-frequency: 28
-level: strong
-coverage: 0.7775
-common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoadImage, SamplerCustom, VAEDecode, VAELoaderKJ, VisualizeSigmasKJ]
+frequency: 23
+level: moderate
+coverage: 0.964261
+common_nodes: [CreateVideo, LoadImage, RHMiniMaxH3DecodeAV, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3Ref2VAEncode, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAVAELoader, SaveVideo]
 problems: []
 missing: []
-members: [视频生成/图生视频/LTX2.3-PromptRelay-图生视频_2084829161968984065.json, 视频生成/图生视频/LTX2.3_PromptRelay图生视频模型和工作流_2111402430121472002.json, 视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2047152091981942785.json, 视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2070818205395931138.json, 视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2082777967612223489.json, 视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2082793220383264770.json, 视频生成/图生视频/LTX2.3音频图片视频工作流_2084178470162223105.json, 视频生成/图生视频/Ltx2.3 图生视频时间分段剪辑 细化多镜头时间+逻辑控制PromptRelay+VBVR（KJ版_2051822918727938049.json, 视频生成/图生视频/Ltx2.3-多镜头-PromptRelay控制时间（KJ版）_2046850819689029634.json, 视频生成/图生视频/Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2046813603185037314.json, 视频生成/图生视频/Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2046869684942802945.json, 视频生成/图生视频/Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2047251956011372546.json, 视频生成/图生视频/Ltx2.3多镜头时间+逻辑控制V1（KJ版）--B站：wangyi AI_2047251992128528386.json, 视频生成/图生视频/Ltx2.3多镜头精准时间控制PromptRelay（KJ版）_2046812792329609218.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2056233662454222849.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2056368359754780674.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2056620885733363713.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2057015136241668097.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2057105862644297729.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2058724424081305602.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2067168001845194753.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2098717431224168449.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2098745841820459009.json, 视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频人物一致性_2079524853648019458.json, 视频生成/图生视频/Sulphur-极致微表情图生视频 丰富表情控制_2056004828781916162.json, 视频生成/图生视频/大丝袜ltx2.3卡通人物绝佳一致性_2071039400221433858.json, 视频生成/图生视频/最新LTX2.3+Gemma4本地自动化运行_2052786138674409473.json, 视频生成/图生视频/最新ltx2.3V1_2053359877090758657.json]
+members: [图片生成/图生图/MiniMax H3｜多模态参考原生有声视频｜双图15秒自媒体导演台_2085345429079810049.json, 图片生成/文生图/海螺H3全能多图参考{音频参考}视频生成开源版_2084210980640350210.json, 数字人/数字人/MiniMax+H3+FL2VA开源版-多图参考生视频_2084476749886353409.json, 数字人/数字人/多参数字人(v2)_2086287100747534337.json, 数字人/数字人/多参数字人_2084324686141411330.json, 数字人/数字人/多参数字人_2084523509530849281.json, 视频生成/图生视频/MiniMax H3  图生视频  多图生视频_2084914452868194306.json, 视频生成/图生视频/MiniMax H3  音频参考生视频_2084184320499085313.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-图像 音频参考生视频_2084124735289520130.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-图像 音频参考生视频_2084444621870026754.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-图像 音频参考生视频_2085050440319852545.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-图像 音频参考生视频_2087342773396660225.json, 视频生成/图生视频/MiniMax H3 FL2VA开源版-多图参考生视频_2087744764446863362.json, 视频生成/图生视频/MiniMax H3｜多模态单图15秒急速_2085393570013474817.json, 视频生成/图生视频/MiniMax H3｜多模态参考原生有声视频｜双图15秒自媒体导演台 优化版_2086558677456216065.json, 视频生成/图生视频/MiniMax H3｜多模态参考原生有声视频｜双图15秒自媒体导演台_2084281246422753281.json, 视频生成/图生视频/h3开源版Minimax H3视频全能多图片参考音频参考视频生成短剧视频生成_2086773074040545281.json, 视频生成/图生视频/h3开源版Minimax H3视频全能多图片参考音频参考视频生成短剧视频生成_2089300474951462913.json, 视频生成/图生视频/h3开源版Minimax H3视频全能多图片参考音频参考视频生成短剧视频生成_2089710451344101377.json, 视频生成/图生视频/minimax_h3_视频创作-初版_2084810099176071169.json, 视频生成/文生视频/biaozhun_2084917593449783298.json, 视频生成/文生视频/biaozhun_2_2084988119547473922.json, 视频生成/文生视频/h3开源版Minimax H3视频全能多图片参考音频参考视频生成短剧视频生成_2086684981392396290.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_vae_9
 
-> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/LTX2.3-PromptRelay-图生视频_2084829161968984065.json、视频生成/图生视频/LTX2.3_PromptRelay图生视频模型和工作流_2111402430121472002.json、视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）_2047152091981942785.json、视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2070818205395931138.json、视频生成/图生视频/LTX2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）图文生视频_2082777967612223489.json…）
+> 由 `engine/knowledge_consolidation` 从 23 个 workflow 归纳得出（图片生成/图生图/MiniMax H3｜多模态参考原生有声视频｜双图15秒自媒体导演台_2085345429079810049.json、图片生成/文生图/海螺H3全能多图参考{音频参考}视频生成开源版_2084210980640350210.json、数字人/数字人/MiniMax+H3+FL2VA开源版-多图参考生视频_2084476749886353409.json、数字人/数字人/多参数字人(v2)_2086287100747534337.json、数字人/数字人/多参数字人_2084324686141411330.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：28
-- **可信度**：强结论
-- **平均知识覆盖**：78%
+- **样本数**：23
+- **可信度**：中等可信
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 28 个 workflow 都包含：
-- `BasicScheduler`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
+全部 23 个 workflow 都包含：
+- `CreateVideo`
 - `LoadImage`
-- `SamplerCustom`
-- `VAEDecode`
-- `VAELoaderKJ`
-- `VisualizeSigmasKJ`
+- `RHMiniMaxH3DecodeAV`
+- `RHMiniMaxH3DualSigmaSampler`
+- `RHMiniMaxH3EmptyAVLatent`
+- `RHMiniMaxH3Ref2VAEncode`
+- `RHMiniMaxH3Ref2VAImageReference`
+- `RHMiniMaxH3Ref2VAModelLoader`
+- `RHMiniMaxH3Ref2VATarget`
+- `RHMiniMaxH3Ref2VATextEncoderLoader`
+- `RHMiniMaxH3Ref2VAVAELoader`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 27/28 个有
-- `LTXVConditioning` —— 27/28 个有
-- `LTXVPreprocess` —— 27/28 个有
-- `LoraLoaderModelOnly` —— 27/28 个有
-- `PathchSageAttentionKJ` —— 27/28 个有
-- `PreviewImage` —— 27/28 个有
-- `SetNode` —— 27/28 个有
-- `UNETLoader` —— 27/28 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 26/28 个有
-- `VHS_VideoCombine` —— 26/28 个有
-- `JWInteger` —— 25/28 个有
-- `PromptRelayEncode` —— 23/28 个有
-- `CR Prompt Text` —— 22/28 个有
-- `PreviewAny` —— 8/28 个有
-- `RegexExtract` —— 7/28 个有
-- `RH_LLMAPI_Pro_Node` —— 4/28 个有
-- `easy mathInt` —— 4/28 个有
-- `ComfyNumberConvert` —— 3/28 个有
-- `PromptRelayEncodeTimeline` —— 3/28 个有
-- `SaveImage` —— 3/28 个有
-- `StringReplace` —— 3/28 个有
-- `Text` —— 3/28 个有
-- `FlashVSR_SM_KSampler` —— 2/28 个有
-- `FlashVSR_SM_Model` —— 2/28 个有
-- `GetImageRangeFromBatch` —— 2/28 个有
-- `GetImageSize` —— 2/28 个有
-- `INTConstant` —— 2/28 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/28 个有
-- `PromptRelaySmartEncode` —— 2/28 个有
-- `RH_Captioner` —— 2/28 个有
-- `TSVideoCombineNoMetadata` —— 2/28 个有
-- `CheckpointLoaderSimple` —— 1/28 个有
-- `LTX2MemoryEfficientSageAttentionPatch` —— 1/28 个有
-- `LTXVAddGuide` —— 1/28 个有
-- `TextConcatenate_UTK` —— 1/28 个有
-- `easy int` —— 1/28 个有
-- `easy showAnything` —— 1/28 个有
-- `llama_cpp_instruct_adv` —— 1/28 个有
-- `llama_cpp_model_loader` —— 1/28 个有
-- `llama_cpp_parameters` —— 1/28 个有
+- `LoadAudio` —— 17/23 个有
+- `RHMiniMaxH3Ref2VAAudioReference` —— 17/23 个有
+- `JoinStrings` —— 5/23 个有
+- `LayerUtility: PurgeVRAM V2` —— 5/23 个有
+- `StringConstantMultiline` —— 5/23 个有
+- `LogicBypasser` —— 3/23 个有
+- `PrimitiveBoolean` —— 3/23 个有
+- `easy showAnything` —— 3/23 个有
+- `孤海注释` —— 3/23 个有
+- `MmuuaiGroupBypass` —— 1/23 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 489 | 97 - 489 | 28 | 78% |
-| 高度 | 25 | 25 - 25 | 28 | 100% |
-| 采样步数 | 1.34123e+09 | - | 2 | 47% |
-| Prompt 约束强度(CFG) | randomize | - | 2 | 100% |
-| 采样算法 | 2 | - | 2 | 100% |
-| 调度器 | 3.5 | - | 2 | 100% |
-| 重绘幅度 | 11 | - | 2 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -100,12 +58,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 489，观测区间 97 - 489，28 个样本
-- 高度 中位数 25，观测区间 25 - 25，28 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 1.34123e+09，样本不足，未给区间，2 个样本，取值分散，一致性仅 47%
-- Prompt 约束强度(CFG) 最常用 randomize，2 个样本，一致性 100%
-- 采样算法 中位数 2，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 2.05601e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

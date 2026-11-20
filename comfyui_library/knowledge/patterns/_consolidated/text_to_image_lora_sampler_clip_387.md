@@ -2,23 +2,23 @@
 name: text_to_image_lora_sampler_clip_387
 type: Text To Image
 frequency: 5
-level: strong
-coverage: 0.8678
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+level: moderate
+coverage: 0.8546
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/MiniMax H3全能图像编辑低显存故事板四视图处理工具_2102494252348563457.json, 图片生成/图生图/Qwen Image 2.1一键换脸｜图生图人物面部替换神器_2103027527827677185.json, 图片生成/图生图/Qwen Image 2.1换脸工作流，一键面部替换的图生图处理工具_2103172786389864449.json, 图片生成/图生图/Qwen Image 2.1精准扩图｜按25%或300像素延展画布，一键扩展16_9_2104507613303107585.json, 图片生成/图生图/minimax H3全能图像编辑｜低显存也能跑的图生图｜改图换景都拿手_2102235515952132097.json]
+members: [图片生成/图生图/Qwen-Image 电商海报+详情页洗图_1984093020838625282.json, 图片生成/图生图/【电商海报洗图仿图】Qwen+8步快速生成 电商首图详情页自动反推洗图仿图 海报平面设计_1984158037869002754.json, 图片生成/图生图/【阡陌】Qwen-Image Canny ControlNet提示词反推精准控图工作流_1959553457558597634.json, 图片生成/图生图/【阡陌】Qwen-Image Depth ControlNet 提示词反推精准控图工作流_1959643499979288577.json, 图片生成/图生图/跨境电商自动反推洗图仿图-Qwen 8步快速_1959442541798174721.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_387
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/MiniMax H3全能图像编辑低显存故事板四视图处理工具_2102494252348563457.json、图片生成/图生图/Qwen Image 2.1一键换脸｜图生图人物面部替换神器_2103027527827677185.json、图片生成/图生图/Qwen Image 2.1换脸工作流，一键面部替换的图生图处理工具_2103172786389864449.json、图片生成/图生图/Qwen Image 2.1精准扩图｜按25%或300像素延展画布，一键扩展16_9_2104507613303107585.json、图片生成/图生图/minimax H3全能图像编辑｜低显存也能跑的图生图｜改图换景都拿手_2102235515952132097.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/Qwen-Image 电商海报+详情页洗图_1984093020838625282.json、图片生成/图生图/【电商海报洗图仿图】Qwen+8步快速生成 电商首图详情页自动反推洗图仿图 海报平面设计_1984158037869002754.json、图片生成/图生图/【阡陌】Qwen-Image Canny ControlNet提示词反推精准控图工作流_1959553457558597634.json、图片生成/图生图/【阡陌】Qwen-Image Depth ControlNet 提示词反推精准控图工作流_1959643499979288577.json、图片生成/图生图/跨境电商自动反推洗图仿图-Qwen 8步快速_1959442541798174721.json）
 
 - **类型**：Text To Image
 - **样本数**：5
-- **可信度**：强结论
-- **平均知识覆盖**：87%
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
@@ -26,57 +26,57 @@ source: knowledge_consolidation
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
-- `JjkText`
 - `KSampler`
-- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
+- `ModelSamplingAuraFlow`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `DrawMaskOnImage` —— 3/5 个有
-- `TextEncodeQwenImage21` —— 3/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/5 个有
-- `MaskFillHoles` —— 2/5 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/5 个有
-- `Text` —— 2/5 个有
-- `ImpactSwitch` —— 1/5 个有
-- `easy imageSizeByLongerSide` —— 1/5 个有
-- `easy int` —— 1/5 个有
-- `孤海外补画板按方向` —— 1/5 个有
+- `PreviewImage` —— 4/5 个有
+- `ShowText|pysssss` —— 4/5 个有
+- `JanusImage2Text` —— 3/5 个有
+- `LayerUtility: PurgeVRAM` —— 3/5 个有
+- `LayerUtility: TextJoin` —— 3/5 个有
+- `LoadJanusModel` —— 3/5 个有
+- `TextInput_` —— 3/5 个有
+- `easy showAnything` —— 3/5 个有
+- `JanusImageUnderstanding` —— 2/5 个有
+- `JanusModelLoader` —— 2/5 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/5 个有
+- `workflow>controlnet` —— 2/5 个有
+- `ConditioningZeroOut` —— 1/5 个有
+- `DownloadAndLoadQwen2_5_VLModel` —— 1/5 个有
+- `Qwen2_5_VL_Run_Advanced` —— 1/5 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 5 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 5 | 100% |
-| 采样算法 | er_sde | - | 5 | 100% |
-| 调度器 | beta | - | 5 | 100% |
+| 采样步数 | 8 | 4 - 35 | 5 | 15% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
+| 采样算法 | euler | - | 5 | 100% |
+| 调度器 | simple | - | 5 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 80 | 80 - 80 | 5 | 100% |
-| 高度 | 80 | 80 - 80 | 5 | 100% |
+| 宽度 | 1024 | 768 - 1024 | 5 | 86% |
+| 高度 | 1232 | 1024 - 1680 | 5 | 81% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 7/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 3/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，5 个样本，一致性 100%
-- 调度器 最常用 beta，5 个样本，一致性 100%
+- 采样步数 中位数 8，观测区间 4 - 35，5 个样本，取值分散，一致性仅 15%
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，5 个样本，一致性 100%
+- 调度器 最常用 simple，5 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，5 个样本，取值集中（一致性 100%）
-- 高发问题（7/5 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1024，观测区间 768 - 1024，5 个样本，取值集中（一致性 86%）
+- 高度 中位数 1232，观测区间 1024 - 1680，5 个样本，取值集中（一致性 81%）
+- 高发问题（3/5 个样本）：Steps较低可能导致细节不足

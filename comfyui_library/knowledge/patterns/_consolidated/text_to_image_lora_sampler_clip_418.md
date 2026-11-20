@@ -3,50 +3,66 @@ name: text_to_image_lora_sampler_clip_418
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8872
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
+coverage: 0.903
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/全能图片G2文生图0.1元版处理生成工具_2102486415719362562.json, 图片生成/文生图/全能图片V2_2087481707606929409.json, 图片生成/文生图/全能图片文生图，多风格题材一workflow通吃_2112307328287596546.json, 图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2102221155263406081.json, 图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2104049104883118081.json]
+members: [视频生成/文生视频/文生图生视频通用工作流｜多模式视频快速生成_2097522046669508609.json, 视频生成/文生视频/文生视频｜720P双时钟高质量加速0.8 图生视频视频生视频全能直出_2089415507794550786.json, 视频生成/文生视频/最新8步增速5分钟出10秒｜Minimax H3文生视频+视频放大_2089036367534845953.json, 视频生成/文生视频/最新最快4步8步增速工作流Minimax H3文生视频图生视频_2088410988835074049.json, 视频生成/文生视频/最新最快4步和8步增速｜Minimax H3文生图生视频工作流_2088388313551040514.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_418
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/全能图片G2文生图0.1元版处理生成工具_2102486415719362562.json、图片生成/文生图/全能图片V2_2087481707606929409.json、图片生成/文生图/全能图片文生图，多风格题材一workflow通吃_2112307328287596546.json、图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2102221155263406081.json、图片生成/文生图/地表最强全能图片G2文生图｜GP-T-Image-2单次0.1元｜性价比拉满_2104049104883118081.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/文生视频/文生图生视频通用工作流｜多模式视频快速生成_2097522046669508609.json、视频生成/文生视频/文生视频｜720P双时钟高质量加速0.8 图生视频视频生视频全能直出_2089415507794550786.json、视频生成/文生视频/最新8步增速5分钟出10秒｜Minimax H3文生视频+视频放大_2089036367534845953.json、视频生成/文生视频/最新最快4步8步增速工作流Minimax H3文生视频图生视频_2088410988835074049.json、视频生成/文生视频/最新最快4步和8步增速｜Minimax H3文生图生视频工作流_2088388313551040514.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `LoraLoaderModelOnly`
-- `SaveImage`
+- `MiniMaxH3DualClockSamplerT8`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 4/5 个有
-- `Float` —— 3/5 个有
-- `RH_RhartImageG2TextToImage` —— 3/5 个有
-- `RTXVideoSuperResolution` —— 3/5 个有
-- `Text` —— 3/5 个有
-- `RH_Nano_Banana2_Gemini31Flash` —— 2/5 个有
-- `AspectRatioSelect` —— 1/5 个有
-- `EmptyImage` —— 1/5 个有
-- `LoadImage` —— 1/5 个有
-- `PreviewImage` —— 1/5 个有
-- `TextInput_` —— 1/5 个有
+- `ComfyMathExpression` —— 4/5 个有
+- `LoraLoaderBypassModelOnly` —— 4/5 个有
+- `PrimitiveFloat` —— 4/5 个有
+- `VAEDecodeAudio` —— 4/5 个有
+- `CreateVideo` —— 3/5 个有
+- `LoadImage` —— 3/5 个有
+- `MiniMaxH3ImageToVideo` —— 3/5 个有
+- `SaveVideo` —— 3/5 个有
+- `CR Float To Integer` —— 2/5 个有
+- `CR Text` —— 2/5 个有
+- `GetVideoComponents` —— 2/5 个有
+- `LoadAudio` —— 2/5 个有
+- `LoadVideo` —— 2/5 个有
+- `MiniMaxH3AVDecodeT8` —— 2/5 个有
+- `MiniMaxH3ReferenceToVideo` —— 2/5 个有
+- `VHS_VideoCombine` —— 2/5 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
+- `MiniMaxH3AudioConditioningT8` —— 1/5 个有
+- `MiniMaxH3Unified` —— 1/5 个有
+- `PathchSageAttentionKJ` —— 1/5 个有
+- `SaveImage` —— 1/5 个有
 
 ## 典型参数
 

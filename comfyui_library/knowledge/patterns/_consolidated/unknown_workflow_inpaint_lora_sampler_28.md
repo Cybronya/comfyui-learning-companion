@@ -1,84 +1,103 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_28
 type: Unknown Workflow
-frequency: 5
+frequency: 4
 level: strong
-coverage: 0.7584
-common_nodes: [CLIPLoader, ColorMatch, ConditioningZeroOut, EmptyLatentImage, ImageAndMaskPreview, ImageConcanate, InpaintCrop, InpaintStitch, KSampler, LayerMask: SegmentAnythingUltra V2, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy imageSize, easy isMaskEmpty]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.50675
+common_nodes: [Any Switch (rgthree), Bookmark (rgthree), CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ClothesSegment, ConditioningZeroOut, DifferentialDiffusion, DualCLIPLoader, Fast Groups Muter (rgthree), FluxGuidance, GetNode, ImageCrop+, ImageResizeKJv2, ImageToMask, InpaintModelConditioning, InpaintStitch, KSampler, Label (rgthree), LayerUtility: CropByMask V2, LoadImage, Mask Fill Holes, MaskToImage, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, PreviewImage, PrimitiveString, PrimitiveStringMultiline, RHHiddenNodes, RH_Translator, RMBG, SaveImage, SetNode, StringConcatenate, StyleModelApply, StyleModelLoader, UNETLoader, VAEDecode, VAELoader, easy ifElse, easy int, easy isMaskEmpty, easy makeImageForICLora, easy seed]
+problems: []
 missing: []
-members: [图片生成/图生图/QwenEdit2509自动修手方案_1976107106363420674.json, 图片生成/图生图/QwenEdit2509自动修手方案_1977327662769295361.json, 图片生成/图生图/QwenEdit2511自动修手方案V1_2004929724948377602.json, 平台全量/【QwenEdit2509自动修手】千问-完美修手 手部修复 Qwen-lmage-Edit 千问模_1994325736379138049.json, 数字人/数字人/QwenEdit2509修复烂脚丫子_1995737246269583362.json]
+members: [图片生成/图生图/万物迁移 全功能V2-OneReward_1946894036416520193.json, 图片生成/图生图/最新OneReward全面万物迁移_1967256410645991425.json, 图片生成/文生图/万物迁移 全功能工作流 （Fill- OneReward）_1968918299654410242.json, 数字人/数字人/人物换装换脸-阿浩_2026856637570490369.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_28
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/QwenEdit2509自动修手方案_1976107106363420674.json、图片生成/图生图/QwenEdit2509自动修手方案_1977327662769295361.json、图片生成/图生图/QwenEdit2511自动修手方案V1_2004929724948377602.json、平台全量/【QwenEdit2509自动修手】千问-完美修手 手部修复 Qwen-lmage-Edit 千问模_1994325736379138049.json、数字人/数字人/QwenEdit2509修复烂脚丫子_1995737246269583362.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/图生图/万物迁移 全功能V2-OneReward_1946894036416520193.json、图片生成/图生图/最新OneReward全面万物迁移_1967256410645991425.json、图片生成/文生图/万物迁移 全功能工作流 （Fill- OneReward）_1968918299654410242.json、数字人/数字人/人物换装换脸-阿浩_2026856637570490369.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
+- **样本数**：4
 - **可信度**：强结论
-- **平均知识覆盖**：76%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
-- `CLIPLoader`
-- `ColorMatch`
+全部 4 个 workflow 都包含：
+- `Any Switch (rgthree)`
+- `Bookmark (rgthree)`
+- `CLIPTextEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ClothesSegment`
 - `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `ImageAndMaskPreview`
-- `ImageConcanate`
-- `InpaintCrop`
+- `DifferentialDiffusion`
+- `DualCLIPLoader`
+- `Fast Groups Muter (rgthree)`
+- `FluxGuidance`
+- `GetNode`
+- `ImageCrop+`
+- `ImageResizeKJv2`
+- `ImageToMask`
+- `InpaintModelConditioning`
 - `InpaintStitch`
 - `KSampler`
-- `LayerMask: SegmentAnythingUltra V2`
+- `Label (rgthree)`
+- `LayerUtility: CropByMask V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `Mask Fill Holes`
+- `MaskToImage`
+- `NunchakuFluxDiTLoader`
+- `NunchakuTextEncoderLoader`
 - `PreviewImage`
+- `PrimitiveString`
+- `PrimitiveStringMultiline`
+- `RHHiddenNodes`
+- `RH_Translator`
+- `RMBG`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `SetNode`
+- `StringConcatenate`
+- `StyleModelApply`
+- `StyleModelLoader`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `easy ifElse`
-- `easy imageSize`
+- `easy int`
 - `easy isMaskEmpty`
+- `easy makeImageForICLora`
+- `easy seed`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 4/5 个有
-- `Text Multiline` —— 4/5 个有
-- `easy showAnything` —— 4/5 个有
-- `RH_Jimeng4_Image2Image` —— 3/5 个有
-- `RH_Nano_Banana_Image2Image` —— 2/5 个有
-- `LayerUtility: ImageMaskScaleAs` —— 1/5 个有
-- `RH_Nano_Banana2_Image2Image` —— 1/5 个有
+- `Mute / Bypass Relay (rgthree)` —— 3/4 个有
+- `Image Comparer (rgthree)` —— 1/4 个有
+- `ImageAndMaskPreview` —— 1/4 个有
+- `LayerMask: MaskPreview` —— 1/4 个有
+- `LayerMask: MaskStroke` —— 1/4 个有
+- `LayerUtility: ImageReel` —— 1/4 个有
+- `LayerUtility: ImageReelComposit` —— 1/4 个有
+- `LoraLoaderModelOnly` —— 1/4 个有
+- `Mute / Bypass Repeater (rgthree)` —— 1/4 个有
+- `NunchakuFluxLoraLoader` —— 1/4 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 8 | 8 - 8 | 5 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 5 | 100% |
-| 采样算法 | euler | - | 5 | 80% |
-| 调度器 | beta57 | - | 5 | 60% |
-| 重绘幅度 | 1 | 1 - 1 | 5 | 100% |
-| 宽度 | 512 | 512 - 512 | 5 | 100% |
-| 高度 | 512 | 512 - 512 | 5 | 100% |
+| 采样步数 | 22.5 | 20 - 25 | 4 | 89% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 75% |
+| 调度器 | simple | - | 4 | 50% |
+| 重绘幅度 | 1 | 1 - 1 | 4 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 5/5 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 8，观测区间 8 - 8，5 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，5 个样本，一致性 80%
-- 调度器 最常用 beta57，5 个样本，一致性 60%
-- 重绘幅度 中位数 1，观测区间 1 - 1，5 个样本，取值集中（一致性 100%）
-- 宽度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
-- 高度 中位数 512，观测区间 512 - 512，5 个样本，取值集中（一致性 100%）
-- 高发问题（5/5 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 22.5，观测区间 20 - 25，4 个样本，取值集中（一致性 89%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 75%
+- 调度器 最常用 simple，4 个样本，一致性 50%
+- 重绘幅度 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）

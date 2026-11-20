@@ -1,81 +1,59 @@
 ---
 name: unknown_workflow_video_sampler_clip_22
 type: Unknown Workflow
-frequency: 18
+frequency: 19
 level: moderate
-coverage: 0.594222
-common_nodes: [Audio Duration (mtb), AudioCrop, Bool, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, Float, GetNode, ImageResizeKJv2, Int, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LoadAudio, LoadImage, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SolidMask, TTResolutionSelector, VAELoaderKJ, VHS_VideoCombine]
+coverage: 0.957737
+common_nodes: [LoadImage, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoImageClipEncode, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [数字人/数字人/AI代码侠土豆-LTX2.3数字人-商用版_2044277660150403073.json, 数字人/数字人/AI代码侠土豆-LTX2.3数字人-普通版_2044299704820834306.json, 数字人/数字人/LTX2.3多场景数字人_2080282380560060417.json, 数字人/数字人/LTX2.3数字人-普通版_2046941117588967426.json, 数字人/数字人/LTX2.3音乐口播数字人-无字幕稳定版_2044749202474930178.json, 视频生成/图生视频/AI代码侠土豆-LTX2.3多场景数字人_2061288687094296578.json, 视频生成/图生视频/LTX2.3 真人表情数字人配音版_2068632962953998337.json, 视频生成/图生视频/LTX2.3MV长视频稳定版无字幕_2050749407863291905.json, 视频生成/图生视频/LTX2.3口播数字人长视频稳定版无字幕_2045113328795652098.json, 视频生成/图生视频/LTX2.3口播数字人长视频稳定版无字幕图生视频图生短视频加速版15秒3分钟_2060321086079852545.json, 视频生成/图生视频/LTX2.3数字人-极速版_2044577721174462465.json, 视频生成/图生视频/LTX2.3数字人口播长视频无字幕稳定版 图生视频加速版_2060608799806939138.json, 视频生成/图生视频/LTX2.3数字人口播长视频稳定版 图生视频加速版_2080264185350541313.json, 视频生成/图生视频/LTX2.3数字人口播长视频稳定版 图生视频加速版_2102355217873461250.json, 视频生成/图生视频/LTX2.3数字人口播长视频稳定版 图生视频加速版_2102375069661097985.json, 视频生成/图生视频/LTX2.3音乐唱歌MV多场景数字人_2061791872632311809.json, 视频生成/图生视频/LTX2.3音乐唱歌MV多场景数字人图生视频_2081270735473045505.json, 视频生成/图生视频/官流，顶级丝滑 数字人-普通版_2045962670691590145.json]
+members: [视频生成/图生视频/WANI2V彩色烟雾视频制作器-彩烟特效ZYP原创_1907459006556999682.json, 视频生成/图生视频/WAN复杂动作防崩图生视频工作流_1895519547200307202.json, 视频生成/图生视频/Wan2.1阿里通义万相图生视频工作流_1894957699035693057.json, 视频生成/图生视频/Wan图生视频高精度FP32版480P模型V1_1894619685634355201.json, 视频生成/图生视频/Wan图生视频高质量BF16版720P模型V1_1894653329455362049.json, 视频生成/图生视频/wan2.1通义万相图生视频蹦蹦跳跳工作流_1899811031231639553.json, 视频生成/图生视频/一键泄气特效-万相wan2.1新玩意_1899415692570181634.json, 视频生成/图生视频/万物被捏扁特效-万相wan2.1新玩意_1899312280767516673.json, 视频生成/图生视频/万相WAN2.1，美女一键跳舞！_1910726225436864514.json, 视频生成/图生视频/万相WAN2.1，美女一键跳舞！_1911140460969062401.json, 视频生成/图生视频/冲锋枪射击特效-万相wan2.1新玩意_1899671568367177729.json, 视频生成/图生视频/女子搏击，香香的粉拳-万相wan2.1_1900467836874301442.json, 视频生成/图生视频/摇摆舞蹈-Wan2.1_1955654165034930178.json, 视频生成/图生视频/新版360度旋转特效-万相wan_1899699069881860097.json, 视频生成/图生视频/新版360度旋转特效-万相wan_2005178859836370946.json, 视频生成/图生视频/火爆全网解压神器一起来切水果_1937513955088580610.json, 视频生成/图生视频/街霸特效超级波动拳-万相wan2.1_1899332733573746689.json, 视频生成/图生视频/被压扁特效-万相wan2.1新玩意_1899672945285877762.json, 视频生成/图生视频/解压神器，一起来切水晶--万相WAN2.1_1899288956402356225.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_22
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（数字人/数字人/AI代码侠土豆-LTX2.3数字人-商用版_2044277660150403073.json、数字人/数字人/AI代码侠土豆-LTX2.3数字人-普通版_2044299704820834306.json、数字人/数字人/LTX2.3多场景数字人_2080282380560060417.json、数字人/数字人/LTX2.3数字人-普通版_2046941117588967426.json、数字人/数字人/LTX2.3音乐口播数字人-无字幕稳定版_2044749202474930178.json…）
+> 由 `engine/knowledge_consolidation` 从 19 个 workflow 归纳得出（视频生成/图生视频/WANI2V彩色烟雾视频制作器-彩烟特效ZYP原创_1907459006556999682.json、视频生成/图生视频/WAN复杂动作防崩图生视频工作流_1895519547200307202.json、视频生成/图生视频/Wan2.1阿里通义万相图生视频工作流_1894957699035693057.json、视频生成/图生视频/Wan图生视频高精度FP32版480P模型V1_1894619685634355201.json、视频生成/图生视频/Wan图生视频高质量BF16版720P模型V1_1894653329455362049.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：18
+- **样本数**：19
 - **可信度**：中等可信
-- **平均知识覆盖**：59%
+- **平均知识覆盖**：96%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `AudioCrop`
-- `Bool`
-- `CFGGuider`
-- `CLIPTextEncode`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `Float`
-- `GetNode`
-- `ImageResizeKJv2`
-- `Int`
-- `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVImgToVideoInplace`
-- `LTXVSeparateAVLatent`
-- `LoadAudio`
+全部 19 个 workflow 都包含：
 - `LoadImage`
-- `ManualSigmas`
-- `MathExpression|pysssss`
-- `MelBandRoFormerModelLoader`
-- `MelBandRoFormerSampler`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SetLatentNoiseMask`
-- `SetNode`
-- `SolidMask`
-- `TTResolutionSelector`
-- `VAELoaderKJ`
+- `LoadWanVideoClipTextEncoder`
+- `LoadWanVideoT5TextEncoder`
 - `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `DiffusionModelLoaderKJ` —— 17/18 个有
-- `LTXVLatentUpsampler` —— 12/18 个有
-- `LatentUpscaleModelLoader` —— 12/18 个有
-- `VAEDecodeTiled` —— 11/18 个有
-- `LoraLoaderModelOnly` —— 8/18 个有
-- `LTXVSpatioTemporalTiledVAEDecode` —— 7/18 个有
-- `JWString` —— 5/18 个有
-- `RHHiddenNodes` —— 4/18 个有
-- `Text` —— 4/18 个有
-- `CR Prompt Text` —— 1/18 个有
-- `CR Text` —— 1/18 个有
-- `ConcatTextOfUtils` —— 1/18 个有
-- `LTX2AttentionTunerPatch` —— 1/18 个有
-- `LTXVChunkFeedForward` —— 1/18 个有
-- `ModelPatchTorchSettings` —— 1/18 个有
-- `PathchSageAttentionKJ` —— 1/18 个有
-- `RH_LLMAPI_Pro_Node` —— 1/18 个有
-- `UNETLoader` —— 1/18 个有
+- `LayerUtility: PurgeVRAM` —— 15/19 个有
+- `WanVideoEnhanceAVideo` —— 15/19 个有
+- `WanVideoLoraSelect` —— 15/19 个有
+- `Note Plus (mtb)` —— 13/19 个有
+- `ImageUpscaleWithModel` —— 12/19 个有
+- `UpscaleModelLoader` —— 12/19 个有
+- `Int` —— 11/19 个有
+- `WanVideoTeaCache` —— 11/19 个有
+- `WanVideoTorchCompileSettings` —— 8/19 个有
+- `GetImageSizeAndCount` —— 3/19 个有
+- `Primitive integer [Crystools]` —— 2/19 个有
+- `Primitive string [Crystools]` —— 2/19 个有
+- `PrimitiveStringMultiline` —— 2/19 个有
+- `LoadAudio` —— 1/19 个有
+- `RHHiddenNodes` —— 1/19 个有
+- `SaveLatent` —— 1/19 个有
+- `SimpleMath+` —— 1/19 个有
+- `WanVideoFreeInitArgs` —— 1/19 个有
 
 ## 典型参数
 

@@ -1,79 +1,85 @@
 ---
 name: unknown_workflow_inpaint_sampler_clip_4
 type: Unknown Workflow
-frequency: 16
-level: strong
-coverage: 0.888125
-common_nodes: [CLIPTextEncode, CLIPVisionEncode, DualCLIPLoader, FluxGuidance, ImageConcanate, ImageToMask, InpaintModelConditioning, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskToImage, PreviewImage, SaveImage, StyleModelApply, StyleModelLoader, VAEDecode, VAELoader]
+frequency: 13
+level: moderate
+coverage: 0.831692
+common_nodes: [BasicGuider, BlockifyMask, Bool, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), ImageScale, ImpactMakeAnyList, ImpactNeg, InpaintCropImproved, Int, KSamplerSelect, LayerColor: BrightnessContrastV2, LayerMask: MaskGrow, LayerUtility: ColorImage V2, LayerUtility: ImageBlend, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Mask Fill Holes, MaskPreview, PreviewImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, SmartColorMatch, Text Multiline, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy ifElse, easy imageSize, easy isMaskEmpty, 取色器_孤海, 图像接缝]
 problems: []
 missing: []
-members: [平台全量/512万物迁移修罗9号_1946863438452940802.json, 平台全量/CG迷-ACE++人物指定轮廓迁移工作流_1927314967697973249.json, 平台全量/CG迷-ACE++物体指定控制生成工作流_1927309854770368514.json, 平台全量/CG迷-Flux  512版本万物迁移工作流_1927355519273426946.json, 平台全量/Comfyui + FLUX 模特角色一键换装工作流_1901164939678228482.json, 平台全量/FLUX Redux 万物迁移_1925463022809042945.json, 平台全量/FLUX.1_fill+redux万物迁移工作流_1881348712072114178.json, 平台全量/FLUX万物迁移工作流-一键全自动流程_1930080830574727170.json, 平台全量/FLUX万物迁移工作流-全自动流程FLUX万物迁移工作流_1961689722097745922.json, 平台全量/FLUX万物迁移工作流_1896448618712924161.json, 平台全量/Flux_物件遷移換裝_1893943766074458114.json, 平台全量/Flux产品迁移工作流_1969764327609802754.json, 平台全量/Flux的Fill+Redux万物迁移工作流，可换装、换产品_1902896962012884994.json, 平台全量/Redux Fill万物迁移(M）_1904107318798094337.json, 平台全量/nunchakuFLUX万物迁移工作流_1910921368362516481.json, 平台全量/万物迁服装双融合工作_1916343454522081281.json]
+members: [图片生成/图生图/26.04最佳换装工作流_klein局部换装_bole_2046967301148250113.json, 图片生成/图生图/F.2klein换装工作流局部换装_2057786570861793281.json, 图片生成/图生图/Flux2-klein-万物迁移-添加物品-局部重绘_2038900975137726465.json, 图片生成/图生图/Flux2-klein-小批量万物迁移（零偏移）_2015214215778275330.json, 图片生成/图生图/Flux2-klein-小批量最强万物迁移生图工作流_2053011716950249474.json, 图片生成/图生图/Flux2-klein-小批量最强万物迁移生图工作流_2053089255521570817.json, 图片生成/图生图/Flux2-klein-小物件迁移贴身衣物换装等（零偏移）_2074896943041564674.json, 图片生成/图生图/Flux2-klein-小物件迁移贴身衣物换装等（零偏移）_2082289012022267905.json, 图片生成/图生图/Klein万物迁移（零偏移）_2049015744599433217.json, 图片生成/图生图/一致性换装工作流klein局部换装_2047879539073748994.json, 图片生成/图生图/万物迁移-添加物品-局部重绘_2039149753463742465.json, 图片生成/图生图/超好用🔥批量万物迁移-提高工作效率_2053480818001104897.json, 图片生成/图生图/超好用🔥批量万物迁移-提高工作效率_2063909849330708481.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_sampler_clip_4
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（平台全量/512万物迁移修罗9号_1946863438452940802.json、平台全量/CG迷-ACE++人物指定轮廓迁移工作流_1927314967697973249.json、平台全量/CG迷-ACE++物体指定控制生成工作流_1927309854770368514.json、平台全量/CG迷-Flux  512版本万物迁移工作流_1927355519273426946.json、平台全量/Comfyui + FLUX 模特角色一键换装工作流_1901164939678228482.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/26.04最佳换装工作流_klein局部换装_bole_2046967301148250113.json、图片生成/图生图/F.2klein换装工作流局部换装_2057786570861793281.json、图片生成/图生图/Flux2-klein-万物迁移-添加物品-局部重绘_2038900975137726465.json、图片生成/图生图/Flux2-klein-小批量万物迁移（零偏移）_2015214215778275330.json、图片生成/图生图/Flux2-klein-小批量最强万物迁移生图工作流_2053011716950249474.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
+全部 13 个 workflow 都包含：
+- `BasicGuider`
+- `BlockifyMask`
+- `Bool`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `DualCLIPLoader`
-- `FluxGuidance`
-- `ImageConcanate`
-- `ImageToMask`
-- `InpaintModelConditioning`
-- `KSampler`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `Image Comparer (rgthree)`
+- `ImageScale`
+- `ImpactMakeAnyList`
+- `ImpactNeg`
+- `InpaintCropImproved`
+- `Int`
+- `KSamplerSelect`
+- `LayerColor: BrightnessContrastV2`
+- `LayerMask: MaskGrow`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageMaskScaleAs`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `MaskToImage`
+- `Mask Fill Holes`
+- `MaskPreview`
 - `PreviewImage`
+- `RandomNoise`
+- `ReferenceLatent`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `StyleModelApply`
-- `StyleModelLoader`
+- `SmartColorMatch`
+- `Text Multiline`
+- `UNETLoader`
 - `VAEDecode`
+- `VAEEncode`
 - `VAELoader`
+- `easy ifElse`
+- `easy imageSize`
+- `easy isMaskEmpty`
+- `取色器_孤海`
+- `图像接缝`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPVisionLoader` —— 15/16 个有
-- `UNETLoader` —— 15/16 个有
-- `DifferentialDiffusion` —— 14/16 个有
-- `EmptyImage` —— 11/16 个有
-- `ImageCrop` —— 7/16 个有
-- `ImageResize+` —— 7/16 个有
-- `Image Blank` —— 5/16 个有
-- `easy int` —— 5/16 个有
-- `GetImageSize+` —— 4/16 个有
-- `ImpactInt` —— 4/16 个有
-- `RMBG` —— 4/16 个有
-- `LoraLoaderModelOnly` —— 3/16 个有
-- `ConditioningZeroOut` —— 2/16 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/16 个有
-- `AdvancedVisionLoader` —— 1/16 个有
-- `AutoDownloadBiRefNetModel` —— 1/16 个有
-- `DF_Image_scale_to_side` —— 1/16 个有
-- `ImpactGaussianBlurMask` —— 1/16 个有
-- `LayerUtility: ImageRemoveAlpha` —— 1/16 个有
-- `NunchakuFluxDiTLoader` —— 1/16 个有
-- `RembgByBiRefNet` —— 1/16 个有
-- `SUPIR_Upscale` —— 1/16 个有
+- `easy compare` —— 11/13 个有
+- `easy imageSizeBySide` —— 11/13 个有
+- `easy int` —— 11/13 个有
+- `Fast Groups Bypasser (rgthree)` —— 10/13 个有
+- `CR Text` —— 8/13 个有
+- `ConditioningRebalanceKrea2` —— 2/13 个有
+- `ImageConcatMulti` —— 2/13 个有
+- `LayerMask: MaskPreview` —— 2/13 个有
+- `LoraLoaderModelOnly` —— 2/13 个有
+- `Preview from image [Crystools]` —— 2/13 个有
+- `YuanColorMatch` —— 2/13 个有
+- `孤海注释` —— 2/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | 28 | 20 - 30 | 16 | 81% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
-| 采样算法 | euler | - | 16 | 100% |
-| 调度器 | normal | - | 16 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 16 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -81,8 +87,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 中位数 28，观测区间 20 - 30，16 个样本，取值集中（一致性 81%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，16 个样本，一致性 100%
-- 调度器 最常用 normal，16 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

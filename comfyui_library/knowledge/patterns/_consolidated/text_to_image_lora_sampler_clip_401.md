@@ -3,51 +3,56 @@ name: text_to_image_lora_sampler_clip_401
 type: Text To Image
 frequency: 5
 level: strong
-coverage: 0.8108
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Fast Groups Bypasser (rgthree), JjkText, KSampler, LoadImage, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.895
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, EmptyLatentImage, Float, JjkText, KSampler, LoadAudio, LoraLoaderModelOnly, T8_IndexTTS25_EmotionControl, T8_IndexTTS25_Generate, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_SamplingConfig, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/图像颜色匹配处理｜图生图色调统一工作流制作_2096325676101099521.json, 图片生成/图生图/服装模特换装多图融合官方稳定版工作流，服装展示图生图处理工具_2107211199963295745.json, 图片生成/图生图/服装模特换装多图融合｜官方稳定版服装展示图生图_2106968194085904385.json, 图片生成/文生图/官方稳定版超强一致性｜全能图片G-2.0图生图直出_2093812472296853505.json, 图片生成/文生图/超强一致性官方稳定版｜全能图片G-2.0图生图替换_2094031047418802178.json]
+members: [图片生成/文生图/IndexTTS_2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2109099878965137409.json, 数字人/数字人/Index TTS 2.5情感文本控制语音克隆工作流，单人语音生成工具_2106152553548443650.json, 数字人/数字人/IndexTTS 2.5文本控制情感语音克隆｜数字人配音_2105831291030687746.json, 音频生成/音频生成/2608情感文本控制｜IndexTTS 2.5语音克隆音频生成_2095098000753385473.json, 音频生成/音频生成/IndexTTS 2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2106887580888428546.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_401
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/图生图/图像颜色匹配处理｜图生图色调统一工作流制作_2096325676101099521.json、图片生成/图生图/服装模特换装多图融合官方稳定版工作流，服装展示图生图处理工具_2107211199963295745.json、图片生成/图生图/服装模特换装多图融合｜官方稳定版服装展示图生图_2106968194085904385.json、图片生成/文生图/官方稳定版超强一致性｜全能图片G-2.0图生图直出_2093812472296853505.json、图片生成/文生图/超强一致性官方稳定版｜全能图片G-2.0图生图替换_2094031047418802178.json）
+> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（图片生成/文生图/IndexTTS_2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2109099878965137409.json、数字人/数字人/Index TTS 2.5情感文本控制语音克隆工作流，单人语音生成工具_2106152553548443650.json、数字人/数字人/IndexTTS 2.5文本控制情感语音克隆｜数字人配音_2105831291030687746.json、音频生成/音频生成/2608情感文本控制｜IndexTTS 2.5语音克隆音频生成_2095098000753385473.json、音频生成/音频生成/IndexTTS 2.5单人双人情感语音克隆中英文日西语工作流，音频生成_2106887580888428546.json）
 
 - **类型**：Text To Image
 - **样本数**：5
 - **可信度**：强结论
-- **平均知识覆盖**：81%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
 全部 5 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR Prompt Text`
 - `EmptyLatentImage`
-- `Fast Groups Bypasser (rgthree)`
+- `Float`
 - `JjkText`
 - `KSampler`
-- `LoadImage`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `SaveImage`
+- `T8_IndexTTS25_EmotionControl`
+- `T8_IndexTTS25_Generate`
+- `T8_IndexTTS25_ModelLoader`
+- `T8_IndexTTS25_SamplingConfig`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_RhartImageG2OfficialImageToImage` —— 4/5 个有
-- `PreviewImage` —— 2/5 个有
-- `RH_RhartImageNProOfficialEdit` —— 2/5 个有
-- `ColorMatchPro` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `InvertMask` —— 1/5 个有
-- `RMBG` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `区域颜色匹配` —— 1/5 个有
+- `孤海注释` —— 4/5 个有
+- `SaveAudio` —— 3/5 个有
+- `PixaromaGroupSwitch` —— 2/5 个有
+- `PreviewAudio` —— 2/5 个有
+- `SaveAudioAdvanced` —— 2/5 个有
+- `T8_IndexTTS25_DialogueGenerate` —— 2/5 个有
+- `T8_IndexTTS25_DialogueScript` —— 2/5 个有
+- `T8_IndexTTS25_RoleLibrary` —— 2/5 个有
+- `T8_IndexTTS25_VoiceProfile` —— 2/5 个有
+- `EmptyImage` —— 1/5 个有
+- `PreviewImage` —— 1/5 个有
 
 ## 典型参数
 

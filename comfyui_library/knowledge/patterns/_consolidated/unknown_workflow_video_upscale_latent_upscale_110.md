@@ -2,93 +2,109 @@
 name: unknown_workflow_video_upscale_latent_upscale_110
 type: Unknown Workflow
 frequency: 3
-level: moderate
-coverage: 0.512
-common_nodes: [BasicScheduler, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyImage, Fast Groups Bypasser (rgthree), GetImageRangeFromBatch, GetImageSizeAndCount, GetNode, INTConstant, ImageConcatMulti, ImageToMask, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVChunkFeedForward, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVPreprocess, LTXVPreprocessMasks, LTXVSetVideoLatentNoiseMasks, LatentUpscaleModelLoader, LoraLoaderModelOnly, ManualSigmas, ModelSamplingSD3, PrimitiveFloat, RandomNoise, ResizeImageMaskNode, ResizeImagesByLongerEdge, SamplerCustomAdvanced, SetNode, SimpleCalculatorKJ, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, VAELoaderKJ, VHS_LoadVideo, VHS_VideoCombine]
+level: strong
+coverage: 0.389667
+common_nodes: [Any Switch (rgthree), AudioInfoNode, AudioMerge, CFGGuider, CLIPTextEncode, CR Text Concatenate, CheckpointLoaderSimple, ComfyMathExpression, ComfySwitchNode, ConvertAny2Int, Dapao_LlamaChat, Display Any (rgthree), DualCLIPLoader, EmptyLTXVLatentVideo, ExtractLinesByIndex, Fast Groups Bypasser (rgthree), Float, GetImageSize, GetNode, ImageResizeKJv2, ImageScaleBy, Int, IntToString, IntegerComparison, JjkText, JoinStringMulti, JoinStrings, KSamplerSelect, LTX2SamplingPreviewOverride, LTXAVTextEncoderLoader, LTXVAddGuideMulti, LTXVAudioVAEDecode, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTXVScheduler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoadImage, LoraLoaderModelOnly, ManualSigmas, MathExpression|pysssss, MelBandRoFormerModelLoader, MelBandRoFormerSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewAny, PreviewAudio, PrimitiveFloat, PrimitiveInt, PrimitiveStringMultiline, ProcessString, PromptRelayAdvancedOptions, PromptRelayEncode, PurgeVRAM_UTK, RandomNoise, SamplerCustomAdvanced, SaveAudioMP3, SeedVCRun, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, SomethingToString, VAEDecode, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy mathFloat, easy showAnything]
 problems: []
 missing: []
-members: [平台全量/LTX2.3 一键去水印 _ 字幕 _ 修复模糊 _ 高清放大_2055116069148348417.json, 平台全量/LTX2.3 一键去水印 _ 字幕 _ 修复模糊 _ 高清放大_2065365562129207298.json, 视频生成/图生视频/视频去水印去字幕-LTX2.3全自动工作流_2068667498106544129.json]
+members: [视频生成/图生视频/LTX2.3 多帧参考-参考音色-AddGuide-V2_2061644573146968066.json, 视频生成/图生视频/LTX2.3 多帧参考-参考音色_2066854552296579074.json, 视频生成/图生视频/aidir-LTX2.3 四图参考-参考音色_2069621183007510529.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale_110
 
-> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（平台全量/LTX2.3 一键去水印 _ 字幕 _ 修复模糊 _ 高清放大_2055116069148348417.json、平台全量/LTX2.3 一键去水印 _ 字幕 _ 修复模糊 _ 高清放大_2065365562129207298.json、视频生成/图生视频/视频去水印去字幕-LTX2.3全自动工作流_2068667498106544129.json）
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 多帧参考-参考音色-AddGuide-V2_2061644573146968066.json、视频生成/图生视频/LTX2.3 多帧参考-参考音色_2066854552296579074.json、视频生成/图生视频/aidir-LTX2.3 四图参考-参考音色_2069621183007510529.json）
 
 - **类型**：Unknown Workflow
 - **样本数**：3
-- **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **可信度**：强结论
+- **平均知识覆盖**：39%
 
 ## 共有节点
 
 全部 3 个 workflow 都包含：
-- `BasicScheduler`
+- `Any Switch (rgthree)`
+- `AudioInfoNode`
+- `AudioMerge`
 - `CFGGuider`
 - `CLIPTextEncode`
+- `CR Text Concatenate`
+- `CheckpointLoaderSimple`
+- `ComfyMathExpression`
+- `ComfySwitchNode`
+- `ConvertAny2Int`
+- `Dapao_LlamaChat`
+- `Display Any (rgthree)`
 - `DualCLIPLoader`
-- `EmptyImage`
+- `EmptyLTXVLatentVideo`
+- `ExtractLinesByIndex`
 - `Fast Groups Bypasser (rgthree)`
-- `GetImageRangeFromBatch`
-- `GetImageSizeAndCount`
+- `Float`
+- `GetImageSize`
 - `GetNode`
-- `INTConstant`
-- `ImageConcatMulti`
-- `ImageToMask`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `Int`
+- `IntToString`
+- `IntegerComparison`
+- `JjkText`
+- `JoinStringMulti`
+- `JoinStrings`
 - `KSamplerSelect`
 - `LTX2SamplingPreviewOverride`
-- `LTX2_NAG`
-- `LTXAddVideoICLoRAGuide`
-- `LTXICLoRALoaderModelOnly`
-- `LTXVChunkFeedForward`
+- `LTXAVTextEncoderLoader`
+- `LTXVAddGuideMulti`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVImgToVideoInplace`
-- `LTXVPreprocess`
-- `LTXVPreprocessMasks`
-- `LTXVSetVideoLatentNoiseMasks`
+- `LTXVEmptyLatentAudio`
+- `LTXVLatentUpsampler`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
+- `LoadAudio`
+- `LoadImage`
 - `LoraLoaderModelOnly`
 - `ManualSigmas`
-- `ModelSamplingSD3`
+- `MathExpression|pysssss`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewAny`
+- `PreviewAudio`
 - `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `ProcessString`
+- `PromptRelayAdvancedOptions`
+- `PromptRelayEncode`
+- `PurgeVRAM_UTK`
 - `RandomNoise`
-- `ResizeImageMaskNode`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
+- `SaveAudioMP3`
+- `SeedVCRun`
+- `SetLatentNoiseMask`
 - `SetNode`
-- `SimpleCalculatorKJ`
+- `SimpleMath+`
+- `SolidMask`
+- `SomethingToString`
 - `VAEDecode`
 - `VAEDecodeTiled`
-- `VAEEncode`
-- `VAELoader`
 - `VAELoaderKJ`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-
-**可变部分**（部分 workflow 才有）：
-- `CR String To Combo` —— 2/3 个有
-- `DualCLIPLoaderGGUF` —— 2/3 个有
-- `FL_VideoTrim` —— 2/3 个有
-- `ImpactStringSelector` —— 2/3 个有
-- `LTX2AttentionTunerPatch` —— 2/3 个有
-- `LTX2MemoryEfficientSageAttentionPatch` —— 2/3 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/3 个有
-- `PathchSageAttentionKJ` —— 2/3 个有
-- `PrimitiveInt` —— 2/3 个有
-- `SplitStringByDelimiter` —— 2/3 个有
-- `Text Multiline` —— 2/3 个有
-- `UNETLoader` —— 2/3 个有
-- `UnetLoaderGGUF` —— 2/3 个有
-- `VHS_LoadVideoFFmpeg` —— 2/3 个有
-- `easy showAnything` —— 2/3 个有
-- `CheckpointLoaderSimple` —— 1/3 个有
-- `ColorMatchV2` —— 1/3 个有
-- `PreviewImage` —— 1/3 个有
+- `easy mathFloat`
+- `easy showAnything`
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 121 | 121 - 121 | 3 | 100% |
+| 高度 | 24 | 24 - 24 | 3 | 100% |
 
 ## 常见问题
 
@@ -96,4 +112,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 121，观测区间 121 - 121，3 个样本，取值集中（一致性 100%）
+- 高度 中位数 24，观测区间 24 - 24，3 个样本，取值集中（一致性 100%）

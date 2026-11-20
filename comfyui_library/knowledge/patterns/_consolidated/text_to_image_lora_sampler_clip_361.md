@@ -3,68 +3,59 @@ name: text_to_image_lora_sampler_clip_361
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.864667
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8315
+common_nodes: [AudioCrop, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, FlashVSRNode, JjkText, KSampler, LoadAudio, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MultiTextConcatenate, PrimitiveStringMultiline, ProcessString, SaveAudioAdvanced, SaveImage, SimpleMath+, Sleep, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/H3图片换头 图生视频人物替换处理生成工具_2100269102773395458.json, 视频生成/图生视频/H3图片换头生视频 图生视频创作处理工具_2100267469515608066.json, 视频生成/图生视频/Minimax H3多参数Lightx2v加速图生视频生成_2088183351814479874.json, 视频生成/图生视频/漫剧林辰图生视频｜短剧角色动起来 图生视频一键成片_2104102680842039298.json, 视频生成/图生视频/漫剧林辰角色动态演绎 图生视频一键生成流畅画面_2104279422512754690.json, 视频生成/图生视频/短剧漫剧参考图生视频工作流，图生视频短剧制作方案_2103604319982542850.json]
+members: [音频生成/音频生成/H3 声音克隆工作流｜上传音频文本即可复刻同款嗓音_2096851493616967681.json, 音频生成/音频生成/H3声音克隆批量版本工作流，音频生成语音克隆批量处理工具_2107972747690332162.json, 音频生成/音频生成/H3声音克隆生成｜音频克隆一键合成高质量语音_2094733831185199106.json, 音频生成/音频生成/H3声音克隆语音复刻｜高保真音频生成制作工具_2096663251756085249.json, 音频生成/音频生成/H3纯声音克隆｜上传音频加文本直接合成音频生成_2088703674741772290.json, 音频生成/音频生成/声音克隆纯音频生成｜H3上传音频内容即可复刻_2089032310741094402.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_361
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/H3图片换头 图生视频人物替换处理生成工具_2100269102773395458.json、视频生成/图生视频/H3图片换头生视频 图生视频创作处理工具_2100267469515608066.json、视频生成/图生视频/Minimax H3多参数Lightx2v加速图生视频生成_2088183351814479874.json、视频生成/图生视频/漫剧林辰图生视频｜短剧角色动起来 图生视频一键成片_2104102680842039298.json、视频生成/图生视频/漫剧林辰角色动态演绎 图生视频一键生成流畅画面_2104279422512754690.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（音频生成/音频生成/H3 声音克隆工作流｜上传音频文本即可复刻同款嗓音_2096851493616967681.json、音频生成/音频生成/H3声音克隆批量版本工作流，音频生成语音克隆批量处理工具_2107972747690332162.json、音频生成/音频生成/H3声音克隆生成｜音频克隆一键合成高质量语音_2094733831185199106.json、音频生成/音频生成/H3声音克隆语音复刻｜高保真音频生成制作工具_2096663251756085249.json、音频生成/音频生成/H3纯声音克隆｜上传音频加文本直接合成音频生成_2088703674741772290.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+- `AudioCrop`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
+- `FlashVSRNode`
 - `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LoadImage`
+- `LoadAudio`
+- `LoraLoaderBypassModelOnly`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `MiniMaxH3ReferenceToVideo`
+- `MultiTextConcatenate`
+- `PrimitiveStringMultiline`
+- `ProcessString`
+- `SaveAudioAdvanced`
+- `SaveImage`
+- `SimpleMath+`
+- `Sleep`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
+- `easy showAnything`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 5/6 个有
-- `MiniMaxH3ReferenceToVideo` —— 5/6 个有
-- `SaveVideo` —— 5/6 个有
-- `CR Text` —— 4/6 个有
-- `PrimitiveFloat` —— 4/6 个有
-- `ResolutionSelector` —— 4/6 个有
-- `SaveImage` —— 4/6 个有
-- `PathchSageAttentionKJ` —— 3/6 个有
-- `PreviewAny` —— 3/6 个有
-- `RH_LLMAPI_Pro_Node` —— 3/6 个有
-- `CR Color Panel` —— 2/6 个有
-- `GetImageSize` —— 2/6 个有
-- `ImageCompositeMasked` —— 2/6 个有
-- `Int` —— 2/6 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
-- `PreviewImage` —— 2/6 个有
-- `Text Multiline` —— 2/6 个有
-- `LoadAudio` —— 1/6 个有
-- `easy MiniMaxH3ReferenceToVideoBridge` —— 1/6 个有
-- `easy saveVideo` —— 1/6 个有
+- `PreviewAudio` —— 5/6 个有
+- `CR Prompt List` —— 1/6 个有
+- `easy forLoopEnd` —— 1/6 个有
+- `easy forLoopStart` —— 1/6 个有
 
 ## 典型参数
 
@@ -82,7 +73,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 6/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 8/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -93,4 +84,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
-- 高发问题（6/6 个样本）：Steps较低可能导致细节不足
+- 高发问题（8/6 个样本）：Steps较低可能导致细节不足

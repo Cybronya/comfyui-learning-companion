@@ -1,100 +1,81 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_3
 type: Unknown Workflow
-frequency: 20
+frequency: 13
 level: strong
-coverage: 0.84855
-common_nodes: [CLIPLoader, ConditioningZeroOut, CropWithPadInfo, FluxKontextMultiReferenceLatentMethod, GetNode, Image Comparer (rgthree), ImageAndMaskPreview, InpaintStitchImproved, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, QwenEditOutputExtractor, RHHiddenNodes, SaveImage, SetNode, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, easy imageConcat, easy int]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.861231
+common_nodes: [CLIPTextEncode, DualCLIPLoader, FluxGuidance, GetImageSizeAndCount, ImageCrop, InpaintModelConditioning, KSamplerAdvanced, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, SaveImage, SolidMask, Text Multiline, UNETLoader, VAEDecode, VAELoader, easy imageScaleDownToSize, easy makeImageForICLora]
+problems: []
 missing: []
-members: [图片生成/图生图/万物迁移局部重绘+4K高清+_2094586188085682177.json, 图片生成/图生图/万物迁移局部重绘+4K高清+_2097131655344508929.json, 图片生成/图生图/万物迁移局部重绘+4K高清+_2097230454498881537.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2019308573083312129.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2056986344089542658.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2084074874313728002.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2084537756524564482.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2084903756356997122.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2084995717353000962.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2085203465571229698.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2085207817744642050.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2085888011966959617.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2086649145699422210.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2088505371513151490.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2094318355120476161.json, 平台全量/万物迁移局部重绘+4K高清_2084463851592048641.json, 平台全量/万物迁移局部重绘+4K高清_2084475898748821505.json, 平台全量/万物迁移局部重绘+4K高清_2084846206882246658.json, 平台全量/万物迁移局部重绘+4K高清_2090266363129581569.json, 平台全量/迄今超强万物迁移（保留文字细节）涂抹遮罩精细化改图零偏移局部重绘+可选极速4K高清放大来袭✨_1943596581436485634.json]
+members: [图片生成/图生图/ICEdit 人物图像编辑_1920459393798701058.json, 图片生成/图生图/ICEdit-MoE 人物一致性换装_1918978007225008130.json, 图片生成/图生图/Prompt 修图｜IC-Edit 图像风格化_1920797981845422082.json, 图片生成/图生图/Prompt修图｜IC-EdIT 人物换服装_1920796011718184962.json, 图片生成/图生图/【relight】秒级ICEdit-MoE超强人物一致性图像编辑_1918660687436906498.json, 图片生成/图生图/【一键玩转ICEdit-MoE】人物简易换装_1921009794025721857.json, 图片生成/图生图/【媲美全能图片G4o】ICEdit-MoE图像编辑｜人物一致性编辑_1918948791171616769.json, 图片生成/图生图/【最新开源】ICEdit-MoE超强人物一致性图像编辑_1918663248131067906.json, 图片生成/图生图/人物一致性指令控制变化_1918897515356426241.json, 图片生成/图生图/啊癫 ICEdit图像编辑超越全能图片G4O_1921928761250365442.json, 图片生成/图生图/对标4O图片编辑ICEdit_1920513716566032385.json, 图片生成/图生图/换发型 + 人物一致性｜IC-Edit图像编辑_1920797233758015490.json, 图片生成/文生图/秒级ICEdit超强人物一致性图像编辑_1918129785032081409.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_3
 
-> 由 `engine/knowledge_consolidation` 从 20 个 workflow 归纳得出（图片生成/图生图/万物迁移局部重绘+4K高清+_2094586188085682177.json、图片生成/图生图/万物迁移局部重绘+4K高清+_2097131655344508929.json、图片生成/图生图/万物迁移局部重绘+4K高清+_2097230454498881537.json、图片生成/图生图/万物迁移局部重绘+4K高清_2019308573083312129.json、图片生成/图生图/万物迁移局部重绘+4K高清_2056986344089542658.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/ICEdit 人物图像编辑_1920459393798701058.json、图片生成/图生图/ICEdit-MoE 人物一致性换装_1918978007225008130.json、图片生成/图生图/Prompt 修图｜IC-Edit 图像风格化_1920797981845422082.json、图片生成/图生图/Prompt修图｜IC-EdIT 人物换服装_1920796011718184962.json、图片生成/图生图/【relight】秒级ICEdit-MoE超强人物一致性图像编辑_1918660687436906498.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：20
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：86%
 
 ## 共有节点
 
-全部 20 个 workflow 都包含：
-- `CLIPLoader`
-- `ConditioningZeroOut`
-- `CropWithPadInfo`
-- `FluxKontextMultiReferenceLatentMethod`
-- `GetNode`
-- `Image Comparer (rgthree)`
-- `ImageAndMaskPreview`
-- `InpaintStitchImproved`
-- `KSampler`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+全部 13 个 workflow 都包含：
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `FluxGuidance`
+- `GetImageSizeAndCount`
+- `ImageCrop`
+- `InpaintModelConditioning`
+- `KSamplerAdvanced`
+- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `QwenEditOutputExtractor`
-- `RHHiddenNodes`
 - `SaveImage`
-- `SetNode`
-- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `SolidMask`
+- `Text Multiline`
 - `UNETLoader`
-- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
-- `easy imageConcat`
-- `easy int`
+- `easy imageScaleDownToSize`
+- `easy makeImageForICLora`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGNorm` —— 19/20 个有
-- `ModelSamplingAuraFlow` —— 19/20 个有
-- `DF_Integer` —— 1/20 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/20 个有
-- `ImageCASharpening+` —— 1/20 个有
-- `ImageListToImageBatch` —— 1/20 个有
-- `ImpactMinMax` —— 1/20 个有
-- `SeedVR2BlockSwap` —— 1/20 个有
-- `SeedVR2ExtraArgs` —— 1/20 个有
-- `SeedVR2GGUF` —— 1/20 个有
-- `SeedVR2LoadDiTModel` —— 1/20 个有
-- `SeedVR2LoadVAEModel` —— 1/20 个有
-- `SeedVR2VideoUpscaler` —— 1/20 个有
-- `TTP_Image_Assy` —— 1/20 个有
-- `TTP_Image_Tile_Batch` —— 1/20 个有
-- `TTP_Tile_image_size` —— 1/20 个有
-- `easy cleanGpuUsed` —— 1/20 个有
-- `easy clearCacheAll` —— 1/20 个有
-- `easy imageBatchToImageList` —— 1/20 个有
-- `easy imageSize` —— 1/20 个有
-- `easy showAnything` —— 1/20 个有
+- `ImageUpscaleTiled` —— 11/13 个有
+- `MaskPreview+` —— 11/13 个有
+- `ShowText` —— 11/13 个有
+- `easy seed` —— 11/13 个有
+- `CR Upscale Image` —— 9/13 个有
+- `Text Concatenate` —— 9/13 个有
+- `ReplaceText` —— 4/13 个有
+- `Float` —— 2/13 个有
+- `PMRF` —— 2/13 个有
+- `PreviewImage` —— 2/13 个有
+- `UpscaleImageByUsingModel` —— 2/13 个有
+- `UpscaleModelLoader` —— 2/13 个有
+- `LayerMask: MaskPreview` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 20 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 20 | 100% |
-| 采样算法 | euler | - | 20 | 100% |
-| 调度器 | simple | - | 20 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 20 | 100% |
+| 采样步数 | fixed | - | 13 | 85% |
+| Prompt 约束强度(CFG) | 20 | 20 - 20 | 13 | 100% |
+| 采样算法 | 1 | 1 - 1 | 13 | 100% |
+| 调度器 | euler | - | 13 | 100% |
+| 重绘幅度 | beta | - | 13 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 20/20 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，20 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，20 个样本，一致性 100%
-- 调度器 最常用 simple，20 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，20 个样本，取值集中（一致性 100%）
-- 高发问题（20/20 个样本）：Steps较低可能导致细节不足
+- 采样步数 最常用 fixed，13 个样本，一致性 85%
+- Prompt 约束强度(CFG) 中位数 20，观测区间 20 - 20，13 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler，13 个样本，一致性 100%
+- 重绘幅度 最常用 beta，13 个样本，一致性 100%
+- 风险：Prompt 约束强度(CFG) 观测到 20，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））

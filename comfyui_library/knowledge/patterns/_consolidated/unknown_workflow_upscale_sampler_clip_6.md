@@ -1,76 +1,84 @@
 ---
 name: unknown_workflow_upscale_sampler_clip_6
 type: Unknown Workflow
-frequency: 16
+frequency: 14
 level: strong
-coverage: 0.903875
-common_nodes: [AILab_QwenVL, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), ImageResizeKJv2, ImageScaleBy, ImageUpscaleWithModel, KSampler, LatentNoised, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, SaveImage, Seed (rgthree), ShowText|pysssss, UNETLoader, VAEDecodeTiled, VAEEncodeTiled, VAELoader]
-problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
+coverage: 0.877143
+common_nodes: [BasicGuider, BasicScheduler, CLIPTextEncode, DualCLIPLoader, ImageListToImageBatch, ImageUpscaleWithModel, KSamplerSelect, LoadImage, RandomNoise, SamplerCustomAdvanced, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UpscaleModelLoader, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList]
+problems: []
 missing: []
-members: [图片生成/图生图/图片质感修复 细节增强 I2I+高清修复+去除AI感 Z-image+_2086630330550804481.json, 图片生成/图生图/细节增强 I2I+高清修复+去除AI感 Z-image+_2084816177175556098.json, 图片生成/图生图/细节增强+I2I+高清修复+去除AI感+Z-image+_2088063933524566017.json, 图片生成/图生图/细节增强+I2I+高清修复+去除AI感+Z-image+_2091700703575236610.json, 图片生成/图生图/细节增强+I2I+高清修复+去除AI感+Z-image+_2091832452590424065.json, 图片生成/图生图/细节增强_I2I+高清修复+去除AI感_Z-image+_2084909208365002754.json, 图片生成/图生图/细节增强_I2I+高清修复+去除AI感_Z-image+_2084913885353701377.json, 图片生成/图生图/细节增强_I2I+高清修复+去除AI感_Z-image+_2088520442444341249.json, 图片生成/图生图/细节增强_Z-image I2I 高清修复 去除AI感_2006290972799406082.json, 图片生成/图生图/细节增强_高清放大修复+去除AI感_Z-image_SeedVR2_2077568734268583938.json, 图片生成/图生图/细节增强_高清放大修复+去除AI感_Z-image_SeedVR2_2077933739077885954.json, 平台全量/人像美化 添加真实感细节 高清修复+去除AI感_2059523088219467778.json, 平台全量/去除AI感+细节增强_高清修复_2055491745915383810.json, 平台全量/细节增强 Z-image 图像添加细节 高清修复 去除AI感_2057690878684258305.json, 平台全量/细节增强 去除AI感 增加写实感 Z-image 图像添加细节 高清修复_2058001226293403650.json, 平台全量/细节增强 高清放大修复+去除AI感 _Z-image SeedVR2_2076903882948702210.json]
+members: [图片生成/图生图/FLUX.  高清.修复.放大v5_1897313990823858178.json, 图片生成/图生图/flux图片高清放大_1915659288834932737.json, 图片生成/图生图/flux高清放大+Lora_1952609311073742849.json, 图片生成/图生图/flux高清放大-在线生图_1974848985930272769.json, 图片生成/图生图/「全网最强升级版」flux无损放大放大+修复_1882767903618486274.json, 图片生成/图生图/一键放大照片工作流_1920420645321248770.json, 图片生成/图生图/图像TTP分块放大 增加真实细节  高清修复放大-TTP放大 写实4K 万物通用版v1.0_2094731786977890306.json, 图片生成/图生图/图像超分-10.23-flux-tile放大_1981552116315635713.json, 图片生成/图生图/场景图8K高清修复放大_2071474028497428482.json, 图片生成/图生图/汽车图片8K放大+lora修复车身加速版_2056945533108973570.json, 图片生成/图生图/电商高清放大  精修处理_2015156106552676353.json, 图片生成/图生图/高清放大  精修处理_2004411744959295490.json, 图片生成/图生图/高清放大_1902741134769074178.json, 图片生成/图生图/🦖TTP 保细节放大_1894331074686922754.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_sampler_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 16 个 workflow 归纳得出（图片生成/图生图/图片质感修复 细节增强 I2I+高清修复+去除AI感 Z-image+_2086630330550804481.json、图片生成/图生图/细节增强 I2I+高清修复+去除AI感 Z-image+_2084816177175556098.json、图片生成/图生图/细节增强+I2I+高清修复+去除AI感+Z-image+_2088063933524566017.json、图片生成/图生图/细节增强+I2I+高清修复+去除AI感+Z-image+_2091700703575236610.json、图片生成/图生图/细节增强+I2I+高清修复+去除AI感+Z-image+_2091832452590424065.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/FLUX.  高清.修复.放大v5_1897313990823858178.json、图片生成/图生图/flux图片高清放大_1915659288834932737.json、图片生成/图生图/flux高清放大+Lora_1952609311073742849.json、图片生成/图生图/flux高清放大-在线生图_1974848985930272769.json、图片生成/图生图/「全网最强升级版」flux无损放大放大+修复_1882767903618486274.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：16
+- **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 16 个 workflow 都包含：
-- `AILab_QwenVL`
-- `CLIPLoader`
+全部 14 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `Image Comparer (rgthree)`
-- `ImageResizeKJv2`
-- `ImageScaleBy`
+- `DualCLIPLoader`
+- `ImageListToImageBatch`
 - `ImageUpscaleWithModel`
-- `KSampler`
-- `LatentNoised`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
+- `KSamplerSelect`
 - `LoadImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `Seed (rgthree)`
-- `ShowText|pysssss`
-- `UNETLoader`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `UpscaleModelLoader`
 - `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEEncode`
 - `VAELoader`
+- `easy imageBatchToImageList`
 
 **可变部分**（部分 workflow 才有）：
-- `UpscaleModelLoader` —— 9/16 个有
-- `Upscale Model Loader` —— 7/16 个有
+- `LoraLoader` —— 13/14 个有
+- `UNETLoader` —— 13/14 个有
+- `FluxGuidance` —— 12/14 个有
+- `Image Comparer (rgthree)` —— 12/14 个有
+- `ImageScaleToTotalPixels` —— 12/14 个有
+- `PreviewImage` —— 10/14 个有
+- `ImageResize+` —— 6/14 个有
+- `ImageResizeKJ` —— 5/14 个有
+- `CLIPTextEncodeFlux` —— 3/14 个有
+- `ConditioningCombine` —— 3/14 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/14 个有
+- `LoraLoaderModelOnly` —— 3/14 个有
+- `CR Simple Image Compare` —— 2/14 个有
+- `ConditioningZeroOut` —— 2/14 个有
+- `Joy_caption` —— 2/14 个有
+- `Joy_caption_load` —— 2/14 个有
+- `PlaySound|pysssss` —— 2/14 个有
+- `StringFunction|pysssss` —— 2/14 个有
+- `easy cleanGpuUsed` —— 2/14 个有
+- `easy showAnything` —— 2/14 个有
+- `RH_Captioner` —— 1/14 个有
+- `workflow/model` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 3 | 3 - 3 | 16 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 16 | 100% |
-| 采样算法 | euler | - | 16 | 100% |
-| 调度器 | simple | - | 16 | 100% |
-| 重绘幅度 | 0.15 | 0.15 - 0.15 | 16 | 100% |
+| LoRA 模型强度 | 1 | 0.8 - 1 | 13 | 94% |
+| LoRA 文本强度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 16/16 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
-| 发现KSampler但没有VAEDecode | 16/16 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 3，观测区间 3 - 3，16 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，16 个样本，一致性 100%
-- 调度器 最常用 simple，16 个样本，一致性 100%
-- 重绘幅度 中位数 0.15，观测区间 0.15 - 0.15，16 个样本，取值集中（一致性 100%）
-- 高发问题（16/16 个样本）：Steps较低可能导致细节不足
-- 高发问题（16/16 个样本）：发现KSampler但没有VAEDecode
+- LoRA 模型强度 中位数 1，观测区间 0.8 - 1，13 个样本，取值集中（一致性 94%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）

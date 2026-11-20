@@ -1,78 +1,77 @@
 ---
 name: image_to_image_sampler_unet_vae_8
 type: Image To Image
-frequency: 17
+frequency: 15
 level: moderate
-coverage: 0.983824
-common_nodes: [CFGNorm, CLIPLoader, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.846133
+common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEdit, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/【遇见AI】QWen-image-edit-2511 Qwen Multiangle Camera_2009873163982737410.json, 图片生成/图生图/【遇见AI】Qwen-image-edit 图生图基础_2051187067786407937.json, 图片生成/图生图/人物视角转换_2009456601119334402.json, 图片生成/图生图/人物视角转换_2065426763504775169.json, 图片生成/图生图/人物转3D手办Qwen-Image-Edit图像编辑_1998633582274994178.json, 图片生成/图生图/人物转3D手办Qwen-Image-Edit图像编辑_2013877879095955458.json, 图片生成/图生图/人物转3D手办Qwen-Image-Edit图像编辑_2070417457063485442.json, 图片生成/图生图/千问-3D转绘_1995785923046543362.json, 图片生成/图生图/多角度分镜-qwen edit 2511_2009893386551037953.json, 图片生成/图生图/换脸换装FireRed人物一致性_2031960497838366722.json, 图片生成/图生图/换装换脸FireRed人物一致性_2031963984508751873.json, 图片生成/图生图/超强2D转3D-Qwen-Image-Edit_2020677263766855681.json, 图片生成/文生图/3D转绘-Qwen-Image-Edit图像编辑-Comfy官方_1986720327151595522.json, 图片生成/文生图/3D转绘-Qwen-Image-Edit图像编辑-Comfy官方_1986721390671949825.json, 平台全量/3D转绘-Qwen-Image-Edit_2018861981977026562.json, 平台全量/单图_双图编辑 换装换脸FireRed-Image-Edit  局部重绘 万物迁移_2032278487364538369.json, 平台全量/单图_双图编辑 换装换脸FireRed-Image-Edit  局部重绘 万物迁移_2055090325395386369.json]
+members: [图片生成/图生图/QWEN图像编辑lora加速版_1958348241307910145.json, "图片生成/图生图/Qwen Edit 3模型对比（Meitu,原版,R1）_1982061261863174146.json", "图片生成/图生图/Qwen Edit 3模型对比（Meitu,原版,R1）_1982359589297496065.json", 图片生成/图生图/Qwen Edit 4步 加速 图像编辑_1967372813134913537.json, 图片生成/图生图/Qwen Edit 8步加速 图像编辑_1967376109622976514.json, 图片生成/图生图/Qwen Edit MeiTu 图像美学及指令遵从增加图像编辑V1_1982105490522030081.json, 图片生成/图生图/Qwen Edit MeiTu 图像美学及指令遵从增加图像编辑V1_1984427493174165506.json, 图片生成/图生图/Qwen Edit 图像编辑_1966322447366696961.json, 图片生成/图生图/Qwen Edit-R1 Diffusion负感知微调图像编辑V1_1982107681945198593.json, 图片生成/图生图/Qwen Edit8步加速版（自用）（换装前置）_1965400072588546049.json, 图片生成/图生图/Qwen Edit万 8步加速版2（换装前置）_1965423005448945665.json, 图片生成/图生图/Qwen Edit二阶段+换装8步加速（自用）_1965408134586056705.json, 图片生成/图生图/Qwen Edit图像编辑4步新版LighningV2超级加速版_1965777502977306626.json, 图片生成/图生图/Qwen Edit多种分辨率修正方式主体编辑稳定性测试_1960007479117688833.json, 图片生成/图生图/（自用）Qwen Edit8步加速版3（换装前置）_1965423190451343362.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_8
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/【遇见AI】QWen-image-edit-2511 Qwen Multiangle Camera_2009873163982737410.json、图片生成/图生图/【遇见AI】Qwen-image-edit 图生图基础_2051187067786407937.json、图片生成/图生图/人物视角转换_2009456601119334402.json、图片生成/图生图/人物视角转换_2065426763504775169.json、图片生成/图生图/人物转3D手办Qwen-Image-Edit图像编辑_1998633582274994178.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/QWEN图像编辑lora加速版_1958348241307910145.json、图片生成/图生图/Qwen Edit 3模型对比（Meitu,原版,R1）_1982061261863174146.json、图片生成/图生图/Qwen Edit 3模型对比（Meitu,原版,R1）_1982359589297496065.json、图片生成/图生图/Qwen Edit 4步 加速 图像编辑_1967372813134913537.json、图片生成/图生图/Qwen Edit 8步加速 图像编辑_1967376109622976514.json…）
 
 - **类型**：Image To Image
-- **样本数**：17
+- **样本数**：15
 - **可信度**：中等可信
-- **平均知识覆盖**：98%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
+全部 15 个 workflow 都包含：
 - `CFGNorm`
 - `CLIPLoader`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
-- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEdit`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoaderModelOnly` —— 15/17 个有
-- `ConditioningZeroOut` —— 14/17 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/17 个有
-- `Text Multiline` —— 9/17 个有
-- `ImageStitch` —— 7/17 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 5/17 个有
-- `CR Text` —— 4/17 个有
-- `Int` —— 4/17 个有
-- `Image Comparer (rgthree)` —— 3/17 个有
-- `ImageConcanate` —— 3/17 个有
-- `QwenMultiangleCameraNode` —— 3/17 个有
-- `Anything Everywhere3` —— 1/17 个有
-- `CR Prompt List` —— 1/17 个有
-- `LoraLoader` —— 1/17 个有
+- `LoraLoaderModelOnly` —— 14/15 个有
+- `CR Prompt Text` —— 11/15 个有
+- `PreviewImage` —— 11/15 个有
+- `ImageConcanate` —— 10/15 个有
+- `TT_img_enc` —— 5/15 个有
+- `AddLabel` —— 4/15 个有
+- `JjkText` —— 3/15 个有
+- `ImageResize+` —— 1/15 个有
+- `ImageResizeKJv2` —— 1/15 个有
+- `Label (rgthree)` —— 1/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/15 个有
+- `Note Plus (mtb)` —— 1/15 个有
+- `TextInput_` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 4 - 40 | 17 | 25% |
-| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 17 | 58% |
-| 采样算法 | euler | - | 17 | 88% |
-| 调度器 | simple | - | 17 | 88% |
-| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
-| LoRA 模型强度 | 1 | - | 1 | 100% |
-| LoRA 文本强度 | 1 | - | 1 | 100% |
+| 采样步数 | 8 | 4 - 20 | 15 | 51% |
+| Prompt 约束强度(CFG) | 1 | 1 - 2.5 | 15 | 58% |
+| 采样算法 | euler | - | 15 | 100% |
+| 调度器 | simple | - | 15 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 17/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 4 - 40，17 个样本，取值分散，一致性仅 25%
-- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，17 个样本
-- 采样算法 最常用 euler，17 个样本，一致性 88%
-- 调度器 最常用 simple，17 个样本，一致性 88%
-- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 8，观测区间 4 - 20，15 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 2.5，15 个样本
+- 采样算法 最常用 euler，15 个样本，一致性 100%
+- 调度器 最常用 simple，15 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（17/15 个样本）：Steps较低可能导致细节不足

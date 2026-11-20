@@ -1,82 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_163
 type: Unknown Workflow
-frequency: 14
-level: strong
-coverage: 0.792357
-common_nodes: [BasicScheduler, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVSeparateAVLatent, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, VAEDecode, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
+frequency: 12
+level: moderate
+coverage: 0.900167
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, ImageResizeKJv2, LoadAudio, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/(文生视频)Ltx2.3多镜头精准时间控制PromptRelay（KJ版）_2046802828332634114.json, 视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2057262111021158401.json, 视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2089602214410149889.json, 视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版1)_2059827902316900354.json, 视频生成/图生视频/KJ版+图生视频时间分段剪辑++逻辑控制PromptRe (1)_2063798363463704577.json, 视频生成/图生视频/LTX2.3 GGUF promptrelay 时序长效_2047485702841049089.json, 视频生成/图生视频/LTX2.3-时间线分镜-PromptRelay-图生视频_2054823248579317761.json, 视频生成/图生视频/LTX2.3图生视频PromptRelay Timeline_2050993375851106306.json, 视频生成/图生视频/Ltx2.3_2052745658586677250.json, 视频生成/图生视频/图生视频 分镜控制 Ltx2.3 -PromptRelay Timeline 可视化控制V2_2050032331129405442.json, 视频生成/图生视频/图生视频 分镜控制 Ltx2.3 -PromptRelay_2046957180640829441.json, 视频生成/图生视频/图生视频 节奏控制 Ltx2.3 -PromptRelay Timeline可视化控制 V2_2050043137099350017.json, 视频生成/图生视频/图生视频Ltx2.3+-PromptRelay_2047122187932409857.json, 视频生成/文生视频/LTX2.3图生视频 -时间线分镜-PromptRelay-服装模特带货短视频_2055106849938132994.json]
+members: [视频生成/图生视频/InfiniteTalk+wan2.1单图片_视频生成口播数字人视频_1958754013288296450.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957818036982050817.json, 视频生成/图生视频/InfiniteTalk单人数字人工作流_1957977430084481025.json, 视频生成/图生视频/InfiniteTalk对口型_1958082253886803970.json, 视频生成/图生视频/InfiniteTalk数字人+MegaTTS3语音克隆_1963516764331266050.json, 视频生成/图生视频/InfiniteTalk数字人动态加强版（对口型-唱歌）_2015692807259824129.json, 视频生成/图生视频/InfiniteTalk数字人唱歌口播长视频生成_1980248252606013441.json, 视频生成/图生视频/InfiniteTalk数字人长视频（唱歌-对口型）_1957840696807096321.json, 视频生成/图生视频/Y-InfiniteTalk单人图生视频_1958373813031485441.json, 视频生成/图生视频/数字人长视频（唱歌-对口型）_2028126776630710273.json, 视频生成/图生视频/目前最新最火InfiniteTalk数字人对口型，适合口播唱歌 V2.0_1968840482644217858.json, 音频生成/音频生成/InfiniteTalk单人视频到视频_1958736757212753921.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_163
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/(文生视频)Ltx2.3多镜头精准时间控制PromptRelay（KJ版）_2046802828332634114.json、视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2057262111021158401.json、视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版+图生视频时间分段剪辑++逻辑控制PromptRe_2089602214410149889.json、视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版1)_2059827902316900354.json、视频生成/图生视频/KJ版+图生视频时间分段剪辑++逻辑控制PromptRe (1)_2063798363463704577.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk+wan2.1单图片_视频生成口播数字人视频_1958754013288296450.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957818036982050817.json、视频生成/图生视频/InfiniteTalk单人数字人工作流_1957977430084481025.json、视频生成/图生视频/InfiniteTalk对口型_1958082253886803970.json、视频生成/图生视频/InfiniteTalk数字人+MegaTTS3语音克隆_1963516764331266050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：79%
+- **样本数**：12
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicScheduler`
-- `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
-- `KSamplerSelect`
-- `LTX2SamplingPreviewOverride`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVEmptyLatentAudio`
-- `LTXVImgToVideoInplaceKJ`
-- `LTXVSeparateAVLatent`
-- `LoraLoaderModelOnly`
-- `PathchSageAttentionKJ`
-- `SamplerCustom`
-- `VAEDecode`
-- `VAELoaderKJ`
+全部 12 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
+- `ImageResizeKJv2`
+- `LoadAudio`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `VisualizeSigmasKJ`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 13/14 个有
-- `JWInteger` —— 13/14 个有
-- `LTXVPreprocess` —— 13/14 个有
-- `LoadImage` —— 13/14 个有
-- `SetNode` —— 13/14 个有
-- `UNETLoader` —— 13/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/14 个有
-- `PreviewAny` —— 9/14 个有
-- `PromptRelayEncode` —— 9/14 个有
-- `RH_LLMAPI_Pro_Node` —— 9/14 个有
-- `RegexExtract` —— 9/14 个有
-- `CM_IntToFloat` —— 8/14 个有
-- `SimpleMath+` —— 8/14 个有
-- `Text` —— 8/14 个有
-- `PreviewImage` —— 6/14 个有
-- `CR Prompt Text` —— 5/14 个有
-- `PromptRelayEncodeTimeline` —— 5/14 个有
-- `AudioCrop` —— 1/14 个有
-- `INTConstant` —— 1/14 个有
-- `LTXVAudioVAEEncode` —— 1/14 个有
-- `LoadAudio` —— 1/14 个有
-- `SetLatentNoiseMask` —— 1/14 个有
-- `SolidMask` —— 1/14 个有
-- `UnetLoaderGGUF` —— 1/14 个有
-- `easy cleanGpuUsed` —— 1/14 个有
-- `easy ifElse` —— 1/14 个有
+- `LoadImage` —— 9/12 个有
+- `PrimitiveInt` —— 8/12 个有
+- `WanVideoTorchCompileSettings` —— 8/12 个有
+- `Audio Duration (mtb)` —— 6/12 个有
+- `CR Text` —— 6/12 个有
+- `SimpleMath+` —— 6/12 个有
+- `VHS_LoadVideo` —— 6/12 个有
+- `ImageFromBatch+` —— 5/12 个有
+- `JWInteger` —— 4/12 个有
+- `JWIntegerToString` —— 4/12 个有
+- `INTConstant` —— 3/12 个有
+- `Text Multiline` —— 3/12 个有
+- `CR Prompt Text` —— 2/12 个有
+- `WanVideoEncode` —— 2/12 个有
+- `WanVideoUni3C_ControlnetLoader` —— 2/12 个有
+- `WanVideoUni3C_embeds` —— 2/12 个有
+- `GetImageSizeAndCount` —— 1/12 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/12 个有
+- `MegaTTS3Run` —— 1/12 个有
+- `SaveAudio` —— 1/12 个有
+- `easy anythingIndexSwitch` —— 1/12 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 宽度 | 489 | 409 - 489 | 14 | 96% |
-| 高度 | 25 | 25 - 25 | 14 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -84,5 +76,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 489，观测区间 409 - 489，14 个样本，取值集中（一致性 96%）
-- 高度 中位数 25，观测区间 25 - 25，14 个样本，取值集中（一致性 100%）
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

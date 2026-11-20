@@ -1,80 +1,84 @@
 ---
 name: image_to_image_sampler_unet_vae_20
 type: Image To Image
-frequency: 10
-level: moderate
-coverage: 0.8635
-common_nodes: [CLIPLoader, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+frequency: 8
+level: strong
+coverage: 0.834625
+common_nodes: [CLIPLoader, CR Text, GetImageSize, GetNode, GrowMaskWithBlur, Image Comparer (rgthree), KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MaskPreview+, PainterFluxImageEdit, ReferenceLatent, SaveImage, SetNode, UNETLoader, VAEDecode, VAEEncode, VAELoader, easy imageConcat, 孤海-遮罩混合运算]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX板块：FLUX.2-Klein图洗图工作流_2049795289871073281.json, 图片生成/图生图/FireRed_图生图_2029829360181583873.json, 图片生成/图生图/Flux-2 Klein 双图编辑_2093268073829724161.json, 图片生成/图生图/Flux-2-Kelin 图片编辑（PS专用）_2100760099030654978.json, 图片生成/图生图/Flux-2-Kelin 无痕扩图+图片编辑 二合一工作流_2080106637305663489.json, 图片生成/图生图/Flux-2-Kelin_二合一工作流_无痕扩图+图片编辑_2080930449978912770.json, 图片生成/图生图/Flux-2-Kelin_无痕扩图+图片编辑_二合一工作流_2085547621497794561.json, 图片生成/图生图/Flux-2-Kelin_无痕扩图+图片编辑_二合一工作流_2085562425901928450.json, 图片生成/图生图/Flux-klein 9b 加速版三合一人物证件照工作流 V1.0_2038078453303484418.json, 图片生成/图生图/flux-klein 9b 人物证件照双方案生成 更新2026.3.22_2033449471559868418.json]
+members: [图片生成/图生图/Flux2产品换背景_自由调整位置_2089149943289307137.json, 图片生成/图生图/产品背景合成+融图打光（自动版）_2022663606793408513.json, 图片生成/图生图/合成打光-场景融合-flux2 klein产品场景合成_2020204898721206274.json, 图片生成/图生图/溶图合成打光-flux2最新全流程_2021815536040026114.json, 图片生成/图生图/溶图合成打光-flux2最新全流程_2096807788579213314.json, 图片生成/图生图/溶图合成打光-flux2最新全流程_2097153012191031297.json, 图片生成/图生图/电商产品溶图合成打光-flux2最新全流程_2029363862591512577.json, 图片生成/图生图/电商换背景_flux2最新溶图工作流_2031610323630825473.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_unet_vae_20
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/FLUX板块：FLUX.2-Klein图洗图工作流_2049795289871073281.json、图片生成/图生图/FireRed_图生图_2029829360181583873.json、图片生成/图生图/Flux-2 Klein 双图编辑_2093268073829724161.json、图片生成/图生图/Flux-2-Kelin 图片编辑（PS专用）_2100760099030654978.json、图片生成/图生图/Flux-2-Kelin 无痕扩图+图片编辑 二合一工作流_2080106637305663489.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Flux2产品换背景_自由调整位置_2089149943289307137.json、图片生成/图生图/产品背景合成+融图打光（自动版）_2022663606793408513.json、图片生成/图生图/合成打光-场景融合-flux2 klein产品场景合成_2020204898721206274.json、图片生成/图生图/溶图合成打光-flux2最新全流程_2021815536040026114.json、图片生成/图生图/溶图合成打光-flux2最新全流程_2096807788579213314.json…）
 
 - **类型**：Image To Image
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：86%
+- **样本数**：8
+- **可信度**：强结论
+- **平均知识覆盖**：83%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 8 个 workflow 都包含：
 - `CLIPLoader`
+- `CR Text`
+- `GetImageSize`
+- `GetNode`
+- `GrowMaskWithBlur`
+- `Image Comparer (rgthree)`
 - `KSampler`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
+- `MaskPreview+`
+- `PainterFluxImageEdit`
+- `ReferenceLatent`
 - `SaveImage`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
+- `easy imageConcat`
+- `孤海-遮罩混合运算`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 9/10 个有
-- `ConditioningZeroOut` —— 9/10 个有
-- `Image Comparer (rgthree)` —— 9/10 个有
-- `LoraLoaderModelOnly` —— 8/10 个有
-- `ReferenceLatent` —— 8/10 个有
-- `MuyeTextEditOutput` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
-- `Any Switch (rgthree)` —— 5/10 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/10 个有
-- `DapaoImagePadDirectionNode` —— 4/10 个有
-- `ImpactInt` —— 4/10 个有
-- `EmptyFlux2LatentImage` —— 3/10 个有
-- `Int` —— 3/10 个有
-- `ImageScaleToTotalPixels` —— 2/10 个有
-- `ModelSamplingAuraFlow` —— 2/10 个有
-- `easy cleanGpuUsed` —— 2/10 个有
-- `easy imageInsetCrop` —— 2/10 个有
-- `CR Prompt Text` —— 1/10 个有
-- `TextEncodeQwenImageEditPlus` —— 1/10 个有
-- `忽略多组孤海` —— 1/10 个有
+- `JoinStrings` —— 7/8 个有
+- `LoraLoaderModelOnly` —— 7/8 个有
+- `PreviewImage` —— 7/8 个有
+- `RH_Captioner` —— 7/8 个有
+- `SolidMask` —— 7/8 个有
+- `easy imageDetailTransfer` —— 7/8 个有
+- `CR Color Panel` —— 6/8 个有
+- `FastCanvas` —— 6/8 个有
+- `FastCanvasTool` —— 6/8 个有
+- `easy imageRemBg` —— 6/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 10 | 67% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 10 | 100% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 80% |
-| 重绘幅度 | 1 | 0.25 - 1 | 10 | 57% |
+| 采样步数 | 4 | 4 - 4 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 100% |
+| 调度器 | simple | - | 8 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 12/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，10 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 80%
-- 重绘幅度 中位数 1，观测区间 0.25 - 1，10 个样本
-- 高发问题（12/10 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 100%
+- 调度器 最常用 simple，8 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（16/8 个样本）：Steps较低可能导致细节不足

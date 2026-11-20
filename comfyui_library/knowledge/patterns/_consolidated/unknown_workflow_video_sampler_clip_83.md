@@ -3,84 +3,83 @@ name: unknown_workflow_video_sampler_clip_83
 type: Unknown Workflow
 frequency: 8
 level: strong
-coverage: 0.553625
-common_nodes: [CFGGuider, CLIPTextEncode, CR Float To Integer, DualCLIPLoader, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LoadImage, ManualSigmas, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SetNode, SimpleMath+, UNETLoader, VAEDecodeTiled, VAELoader, VAELoaderKJ, VHS_VideoCombine, easy cleanGpuUsed]
+coverage: 0.81975
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, Fast Groups Bypasser (rgthree), GetNode, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, RIFE VFI, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2GGUF, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy showAnything, wanBlockSwap]
 problems: []
 missing: []
-members: [视频生成/图生视频/AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(带运镜版)_2068875713587007490.json, 视频生成/图生视频/AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2068905830182899714.json, 视频生成/图生视频/LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(带运镜版)_2069697861658435586.json, 视频生成/图生视频/LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2069688707870978050.json, 视频生成/图生视频/LTX-2.3 漫剧视频（四宫格V2.0-单采稳定）_2067017376826216450.json, 视频生成/图生视频/LTX-2.3+4宫格V3.0+红果短剧特调版+运镜_2069616746276937729.json, 视频生成/图生视频/LTX2.3 单图_双图_三_四_五图 图生视频 整合版  V1.0_2043556476085604353.json, 视频生成/图生视频/LTX2.3 图生视频 整合版  单图_双图_三_四_五_2041885580006526978.json]
+members: [视频生成/图生视频/Wan_2.2_FMLF多帧首尾帧_2067206177418727425.json, 视频生成/图生视频/Wan_2.2_FMLF多帧首尾帧视频_1988612935910121474.json, 视频生成/图生视频/嘟嘟-Wan_2.2_FMLF多帧首尾帧_1988086364040310785.json, 视频生成/图生视频/图生视频 Wan2.2 Remix 高画质高动态_1987454672774565889.json, 视频生成/图生视频/图生视频工作流_2050780959615791106.json, 视频生成/图生视频/图生视频工作流_2054015321224302593.json, 视频生成/图生视频/最强Wan2.2动漫模型DaSiWa-首尾帧视频_2008457370875207681.json, 视频生成/图生视频/最强Wan2.2模型DaSiWa-首尾帧视频_2009267956248748034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_83
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(带运镜版)_2068875713587007490.json、视频生成/图生视频/AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2068905830182899714.json、视频生成/图生视频/LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(带运镜版)_2069697861658435586.json、视频生成/图生视频/LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2069688707870978050.json、视频生成/图生视频/LTX-2.3 漫剧视频（四宫格V2.0-单采稳定）_2067017376826216450.json…）
+> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（视频生成/图生视频/Wan_2.2_FMLF多帧首尾帧_2067206177418727425.json、视频生成/图生视频/Wan_2.2_FMLF多帧首尾帧视频_1988612935910121474.json、视频生成/图生视频/嘟嘟-Wan_2.2_FMLF多帧首尾帧_1988086364040310785.json、视频生成/图生视频/图生视频 Wan2.2 Remix 高画质高动态_1987454672774565889.json、视频生成/图生视频/图生视频工作流_2050780959615791106.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：8
 - **可信度**：强结论
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 8 个 workflow 都包含：
-- `CFGGuider`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Float To Integer`
-- `DualCLIPLoader`
-- `EmptyLTXVLatentVideo`
+- `CR Text`
+- `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `KSamplerSelect`
-- `LTXVAudioVAEDecode`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVSeparateAVLatent`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `ManualSigmas`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `MathExpression|pysssss`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `RIFE VFI`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `SeedVR2GGUF`
 - `SetNode`
-- `SimpleMath+`
 - `UNETLoader`
-- `VAEDecodeTiled`
+- `VAEDecode`
 - `VAELoader`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
+- `easy showAnything`
+- `wanBlockSwap`
 
 **可变部分**（部分 workflow 才有）：
-- `LatentUpscaleModelLoader` —— 7/8 个有
-- `TTResolutionSelector` —— 6/8 个有
-- `JWString` —— 5/8 个有
-- `ParseJsonNode` —— 5/8 个有
-- `ShowText|pysssss` —— 5/8 个有
-- `TD_LTXVAddGuideFromGrid` —— 5/8 个有
-- `INTConstant` —— 3/8 个有
-- `ImageFromBatch+` —— 3/8 个有
-- `LTXVAddGuideMulti` —— 3/8 个有
-- `LoraLoaderModelOnly` —— 3/8 个有
-- `Text` —— 3/8 个有
-- `Any To Any` —— 2/8 个有
-- `BatchCount+` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `ImageResize+` —— 2/8 个有
-- `Int` —— 2/8 个有
-- `LTXVImgToVideoInplace` —— 2/8 个有
-- `LTXVLatentUpsampler` —— 2/8 个有
-- `Make Image Batch` —— 2/8 个有
-- `MathExpression|pysssss` —— 2/8 个有
-- `easy imageSize` —— 2/8 个有
-- `ImageResizeKJv2` —— 1/8 个有
-- `JWStringToInteger` —— 1/8 个有
+- `LoraLoaderModelOnly` —— 6/8 个有
+- `RH_LLMAPI_NODE` —— 6/8 个有
+- `CLIPVisionEncode` —— 5/8 个有
+- `CLIPVisionLoader` —— 5/8 个有
+- `ImageConcanate` —— 5/8 个有
+- `ImageResizeKJ` —— 5/8 个有
+- `ImpactSwitch` —— 5/8 个有
+- `ImageBatchMulti` —— 3/8 个有
+- `ImageConcatMulti` —— 3/8 个有
+- `ImageScaleToTotalPixels` —— 3/8 个有
+- `LayerUtility: PurgeVRAM V2` —— 3/8 个有
+- `WanFirstMiddleLastFrameToVideo` —— 3/8 个有
+- `WanImageToVideo` —— 3/8 个有
+- `WanMultiFrameRefToVideo` —— 3/8 个有
+- `AILab_QwenVL` —— 2/8 个有
+- `CR Text Input Switch (4 way)` —— 2/8 个有
+- `CombinationText` —— 2/8 个有
+- `RHHiddenNodes` —— 2/8 个有
+- `WanFirstLastFrameToVideo` —— 2/8 个有
+- `easy cleanGpuUsed` —— 2/8 个有
+- `easy textSwitch` —— 1/8 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 8 | 100% |
-| 高度 | 25 | 25 - 25 | 8 | 100% |
+| 采样步数 | randomize | - | 8 | 62% |
+| Prompt 约束强度(CFG) | 6 | 6 - 6 | 8 | 100% |
+| 采样算法 | 1 | 1 - 1 | 8 | 100% |
+| 调度器 | euler_ancestral | - | 8 | 75% |
+| 重绘幅度 | simple | - | 8 | 100% |
 
 ## 常见问题
 
@@ -88,5 +87,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，8 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，8 个样本，取值集中（一致性 100%）
+- 采样步数 最常用 randomize，8 个样本，一致性 62%
+- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 6，8 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 调度器 最常用 euler_ancestral，8 个样本，一致性 75%
+- 重绘幅度 最常用 simple，8 个样本，一致性 100%

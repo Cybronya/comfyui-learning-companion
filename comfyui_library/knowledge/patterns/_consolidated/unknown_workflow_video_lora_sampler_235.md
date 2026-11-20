@@ -1,46 +1,37 @@
 ---
 name: unknown_workflow_video_lora_sampler_235
 type: Unknown Workflow
-frequency: 11
+frequency: 9
 level: moderate
-coverage: 0.610636
-common_nodes: [Audio Duration (mtb), BlockifyMask, CLIPVisionLoader, DWPreprocessor, DrawMaskOnImage, FaceMaskFromPoseKeypoints, GetNode, GrowMask, ImageCropByMaskAndResize, ImageFromBatch+, ImageResizeKJv2, JWInteger, LayerUtility: PurgeVRAM, MaskToImage, PixelPerfectResolution, PrimitiveInt, SetNode, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed, easy sam3ModelLoader, easy sam3VideoSegmentation]
+coverage: 0.596778
+common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, ImageResizeKJv2, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/【定制专用】图片压缩包批量视频换装工作流_2050317426197311490.json, 平台全量/【定制专用】批量更换视频人物_服装+视频换背景_2054914231476203522.json, 视频生成/图生视频/Wan animate视频人物替换 效果极佳_2009640204046442497.json, 视频生成/图生视频/Wan+animate视频人物替换+效果极佳_2010983716067217410.json, 视频生成/图生视频/sam语义分割 最强视频换脸+换头_2014336980489871362.json, 视频生成/图生视频/旅拍视频模板换脸-Wan高质量版-VideoFaceSwap_2071227855530455041.json, 视频生成/图生视频/最强视频换脸+换头 Animate Wan2.2_2021386632020103169.json, 视频生成/图生视频/最强视频换脸+换头 Animate Wan2.2_2041848671586750465.json, 视频生成/图生视频/最强视频换脸+换头 Animate Wan2.2（懒人版）_2067973490745106434.json, 视频生成/图生视频/最强视频换脸换头不换背景适合平台美女跳舞动作迁移复刻动作一致_2073689074594050049.json, 视频生成/图生视频/视频换头_2041098212999700482.json]
+members: [数字人/数字人/AI在学抛媚眼？眼神训练挑战！Wan2.2 Animate数字人教程_1969659436019163137.json, 数字人/数字人/AI模仿mean girl表情打量别人，Wan-Animate数字人初体验_1969328742353039362.json, 数字人/数字人/Animate+light2x加速做动_2000076812296351745.json, 数字人/数字人/Wan Animate2.2 主体替换2_1970810037335695361.json, 数字人/数字人/Wan Animate2.2换脸V1_2000858355855917057.json, 数字人/数字人/Wan-Animate视频表情动作模仿-人物替换_1970690946574807042.json, 视频生成/图生视频/Animate优化人物一致性精准替换_1969765016436154369.json, 视频生成/图生视频/Animate优化人物一致性精准替换【人物动作表情背景】_1971382393225592834.json, 视频生成/图生视频/Animate优化颜色匹配精准替换人换脸_1971226836661420034.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_235
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（平台全量/【定制专用】图片压缩包批量视频换装工作流_2050317426197311490.json、平台全量/【定制专用】批量更换视频人物_服装+视频换背景_2054914231476203522.json、视频生成/图生视频/Wan animate视频人物替换 效果极佳_2009640204046442497.json、视频生成/图生视频/Wan+animate视频人物替换+效果极佳_2010983716067217410.json、视频生成/图生视频/sam语义分割 最强视频换脸+换头_2014336980489871362.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（数字人/数字人/AI在学抛媚眼？眼神训练挑战！Wan2.2 Animate数字人教程_1969659436019163137.json、数字人/数字人/AI模仿mean girl表情打量别人，Wan-Animate数字人初体验_1969328742353039362.json、数字人/数字人/Animate+light2x加速做动_2000076812296351745.json、数字人/数字人/Wan Animate2.2 主体替换2_1970810037335695361.json、数字人/数字人/Wan Animate2.2换脸V1_2000858355855917057.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：61%
+- **平均知识覆盖**：60%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `Audio Duration (mtb)`
-- `BlockifyMask`
+全部 9 个 workflow 都包含：
 - `CLIPVisionLoader`
 - `DWPreprocessor`
-- `DrawMaskOnImage`
 - `FaceMaskFromPoseKeypoints`
 - `GetNode`
-- `GrowMask`
 - `ImageCropByMaskAndResize`
-- `ImageFromBatch+`
 - `ImageResizeKJv2`
-- `JWInteger`
-- `LayerUtility: PurgeVRAM`
-- `MaskToImage`
+- `LoadImage`
 - `PixelPerfectResolution`
-- `PrimitiveInt`
 - `SetNode`
-- `SimpleMath+`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
 - `WanVideoAnimateEmbeds`
@@ -54,39 +45,43 @@ source: knowledge_consolidation
 - `WanVideoSetLoRAs`
 - `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
-- `easy cleanGpuUsed`
-- `easy sam3ModelLoader`
-- `easy sam3VideoSegmentation`
 
 **可变部分**（部分 workflow 才有）：
-- `DownloadAndLoadGIMMVFIModel` —— 10/11 个有
-- `GIMMVFI_interpolate` —— 10/11 个有
-- `LoadImage` —— 10/11 个有
-- `GetImageRangeFromBatch` —— 9/11 个有
-- `GetImageSizeAndCount` —— 9/11 个有
-- `JjkText` —— 9/11 个有
-- `Int` —— 6/11 个有
-- `Text` —— 4/11 个有
-- `PreviewImage` —— 3/11 个有
-- `Bjornulf_ShowInt` —— 2/11 个有
-- `CR Prompt Text` —— 2/11 个有
-- `RHBatchImages:` —— 2/11 个有
-- `RHExtractImage` —— 2/11 个有
-- `RHHiddenNodes` —— 2/11 个有
-- `RHUploadZip` —— 2/11 个有
-- `WanVideoTorchCompileSettings` —— 2/11 个有
-- `easy forLoopEnd` —— 2/11 个有
-- `easy forLoopStart` —— 2/11 个有
-- `easy imageCount` —— 2/11 个有
-- `easy showAnything` —— 2/11 个有
-- `AutoCropFaces` —— 1/11 个有
-- `FlashVSRNode` —— 1/11 个有
-- `LayerUtility: ImageBlendAdvance` —— 1/11 个有
-- `LayerUtility: ImageCombineAlpha` —— 1/11 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/11 个有
-- `RH_Translator` —— 1/11 个有
-- `RIFE VFI` —— 1/11 个有
-- `RMBG` —— 1/11 个有
+- `BlockifyMask` —— 8/9 个有
+- `DrawMaskOnImage` —— 8/9 个有
+- `GetImageSizeAndCount` —— 8/9 个有
+- `PreviewImage` —— 8/9 个有
+- `DownloadAndLoadSAM2Model` —— 7/9 个有
+- `GrowMask` —— 7/9 个有
+- `INTConstant` —— 7/9 个有
+- `PointsEditor` —— 7/9 个有
+- `Sam2Segmentation` —— 7/9 个有
+- `WanVideoTorchCompileSettings` —— 6/9 个有
+- `ImageConcatMulti` —— 5/9 个有
+- `JWInteger` —— 5/9 个有
+- `easy cleanGpuUsed` —— 5/9 个有
+- `Text` —— 4/9 个有
+- `WanVideoEncode` —— 4/9 个有
+- `WanVideoUni3C_ControlnetLoader` —— 4/9 个有
+- `WanVideoUni3C_embeds` —— 4/9 个有
+- `Bjornulf_ShowInt` —— 3/9 个有
+- `LayerUtility: PurgeVRAM` —— 3/9 个有
+- `VHS_VideoInfo` —— 3/9 个有
+- `easy showAnything` —— 3/9 个有
+- `Label (rgthree)` —— 2/9 个有
+- `Anything Everywhere` —— 1/9 个有
+- `CR Prompt Text` —— 1/9 个有
+- `GetImageRangeFromBatch` —— 1/9 个有
+- `ImageBatchGet` —— 1/9 个有
+- `ImageFromBatch` —— 1/9 个有
+- `ImageFromBatch+` —— 1/9 个有
+- `ImitationHueNode` —— 1/9 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 1/9 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 1/9 个有
+- `LoadRembgByBiRefNetModel` —— 1/9 个有
+- `Manual XY Entry Info` —— 1/9 个有
+- `Preview from image [Crystools]` —— 1/9 个有
+- `RembgByBiRefNet` —— 1/9 个有
 
 ## 典型参数
 

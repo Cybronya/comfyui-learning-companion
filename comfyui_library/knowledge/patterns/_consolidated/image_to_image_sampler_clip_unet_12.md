@@ -1,74 +1,78 @@
 ---
 name: image_to_image_sampler_clip_unet_12
 type: Image To Image
-frequency: 18
+frequency: 15
 level: strong
-coverage: 0.918111
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, KSampler, LoadImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.9486
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LoadImage, ReferenceLatent, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: []
 missing: []
-members: [图片生成/图生图/快速局部洗图_2064549413913194497.json, 图片生成/图生图/性感女讲师Flux2-Klein真实人像质感御姐美女_2040763565157654529.json, 图片生成/图生图/性感有韵味Flux2-Klein真实人像质感御姐美女_2040761141458116610.json, 图片生成/图生图/成熟有气质Flux2-Klein真实人像质感御姐美女_2040715025081438209.json, 图片生成/图生图/旗袍系列Flux2-Klein图生图真实人像质感御姐美女_2051608781892661250.json, 图片生成/图生图/昏暗灯光Flux2-Klein真实人像质感御姐美女_2040744156737310722.json, 图片生成/图生图/晚礼服Flux2-Klein真实人像质感御姐美女_2040741370549248002.json, 图片生成/图生图/欧式美女Flux2-Klein真实人像质感御姐美女_2040718407485628417.json, 图片生成/图生图/泳装系列Flux2-Klein真实人像质感御姐美女_2040441076468682754.json, 图片生成/图生图/现代客厅美女Flux2-Klein真实人像质感御姐美女_2040738759880216577.json, 图片生成/图生图/真实人像质感御姐美女_2040672256346562561.json, 图片生成/图生图/短裤Flux2-Klein真实人像质感御姐美女_2040682552553381889.json, 图片生成/图生图/立体立绘Flux2-Klein真实人像质感御姐美女_2040764640174542850.json, 图片生成/图生图/粉色长发Flux2-Klein真实人像质感御姐美女_2040766562637975553.json, 图片生成/图生图/系列Flux2-Klein真实人像质感御姐美女_2040668510103277570.json, 图片生成/图生图/美女写真图Flux2-Klein真实人像质感御姐美女_2040710445329289217.json, 图片生成/图生图/蕾丝内衣Flux2-Klein真实人像质感御姐美女_2040700533031309313.json, 图片生成/文生图/FLUX2-klein-水墨画油画2K出图_2013976365732728834.json]
+members: [图片生成/图生图/dou音斑驳光影特效_1955605349857312769.json, 图片生成/图生图/flux kontext动漫转真人、3D立体_1942222658639441922.json, 图片生成/图生图/flux kontext图像转素描风格_1942221766645452802.json, 图片生成/图生图/flux kontext毛坯转效果图_1946906636578353153.json, 图片生成/图生图/flux1_kontext局部重绘，修改背景_2087011874389970946.json, 图片生成/图生图/kontext_全能溶图打光_1987723006002794498.json, 图片生成/图生图/kontext_全能精修丨产品精修_1947203500150300673.json, 图片生成/图生图/kontext人像草图处理v2_2058796047136288769.json, 图片生成/图生图/一年前的老照片修复技术_1942854549231349761.json, 图片生成/图生图/图片转夜景_1955593052024967169.json, 图片生成/图生图/已知最强老照片修复 高清上色修复 精准还原_2011432965464662017.json, 图片生成/图生图/老照片修复(全能)_2041505459147902978.json, 图片生成/图生图/老照片修复_1992160042147270657.json, 图片生成/图生图/老照片修复_Kontext-DEV开源ComfyUI官方版_1938389131972247553.json, 图片生成/文生图/老照片修复(实用)_1942547476778037249.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_sampler_clip_unet_12
 
-> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/快速局部洗图_2064549413913194497.json、图片生成/图生图/性感女讲师Flux2-Klein真实人像质感御姐美女_2040763565157654529.json、图片生成/图生图/性感有韵味Flux2-Klein真实人像质感御姐美女_2040761141458116610.json、图片生成/图生图/成熟有气质Flux2-Klein真实人像质感御姐美女_2040715025081438209.json、图片生成/图生图/旗袍系列Flux2-Klein图生图真实人像质感御姐美女_2051608781892661250.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/dou音斑驳光影特效_1955605349857312769.json、图片生成/图生图/flux kontext动漫转真人、3D立体_1942222658639441922.json、图片生成/图生图/flux kontext图像转素描风格_1942221766645452802.json、图片生成/图生图/flux kontext毛坯转效果图_1946906636578353153.json、图片生成/图生图/flux1_kontext局部重绘，修改背景_2087011874389970946.json…）
 
 - **类型**：Image To Image
-- **样本数**：18
+- **样本数**：15
 - **可信度**：强结论
-- **平均知识覆盖**：92%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
-全部 18 个 workflow 都包含：
-- `CLIPLoader`
+全部 15 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `FluxGuidance`
 - `KSampler`
 - `LoadImage`
-- `SaveImage`
+- `ReferenceLatent`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoraLoader` —— 16/18 个有
-- `scale` —— 16/18 个有
-- `ImageResize+` —— 2/18 个有
-- `ImageCompare` —— 1/18 个有
-- `ImpactSwitch` —— 1/18 个有
-- `LatentUpscaleBy` —— 1/18 个有
-- `PrimitiveString` —— 1/18 个有
-- `ReferenceLatent` —— 1/18 个有
+- `SaveImage` —— 14/15 个有
+- `LoraLoaderModelOnly` —— 13/15 个有
+- `FluxKontextImageScale` —— 12/15 个有
+- `Text Multiline` —— 9/15 个有
+- `ShowText|pysssss` —— 7/15 个有
+- `ImageConcatMulti` —— 6/15 个有
+- `GoogleTranslateTextNode` —— 5/15 个有
+- `ImageStitch` —— 5/15 个有
+- `Image Comparer (rgthree)` —— 4/15 个有
+- `PreviewImage` —— 4/15 个有
+- `RepeatLatentBatch` —— 4/15 个有
+- `DetailTransfer` —— 2/15 个有
+- `GetImageSize+` —— 2/15 个有
+- `ImageScale` —— 2/15 个有
+- `CompressImages` —— 1/15 个有
+- `LoadLatentEXR` —— 1/15 个有
+- `LoaderGGUF` —— 1/15 个有
+- `SaveLatent` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 18 | 78% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
-| 采样算法 | euler | - | 18 | 100% |
-| 调度器 | beta | - | 18 | 89% |
-| 重绘幅度 | 0.3 | 0.3 - 1 | 18 | 53% |
-| LoRA 模型强度 | 0.8 | 0.8 - 0.8 | 16 | 100% |
-| LoRA 文本强度 | 1 | 1 - 1 | 16 | 100% |
+| 采样步数 | 20 | 12 - 30 | 15 | 84% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
+| 采样算法 | euler | - | 15 | 100% |
+| 调度器 | simple | - | 15 | 67% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 18/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，18 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，18 个样本，一致性 100%
-- 调度器 最常用 beta，18 个样本，一致性 89%
-- 重绘幅度 中位数 0.3，观测区间 0.3 - 1，18 个样本
-- LoRA 模型强度 中位数 0.8，观测区间 0.8 - 0.8，16 个样本，取值集中（一致性 100%）
-- LoRA 文本强度 中位数 1，观测区间 1 - 1，16 个样本，取值集中（一致性 100%）
-- 高发问题（18/18 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 20，观测区间 12 - 30，15 个样本，取值集中（一致性 84%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，15 个样本，一致性 100%
+- 调度器 最常用 simple，15 个样本，一致性 67%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）

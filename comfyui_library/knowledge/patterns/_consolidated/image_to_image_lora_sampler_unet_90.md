@@ -1,94 +1,89 @@
 ---
 name: image_to_image_lora_sampler_unet_90
 type: Image To Image
-frequency: 8
+frequency: 7
 level: strong
-coverage: 0.77975
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.570429
+common_nodes: [CFGNorm, CLIPLoader, FluxKontextMultiReferenceLatentMethod, GetNode, Int, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, SaveImage, SetNode, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FireRed-Image-Edit 换衣换装服装展示_2062294033308938242.json, 图片生成/图生图/Qwen+Edit-2511图案提取_2032070399328002049.json, 图片生成/图生图/Qwen-Edit-2511-单图编辑版_2005473838425141249.json, 图片生成/图生图/Qwen-Edit-2511多图编辑版_2005543074220699649.json, 图片生成/图生图/QwenEdit2509服装白底图提取_1993628856821235713.json, 图片生成/图生图/qwen-edit-2511-单图编辑版_2008375703594602498.json, 图片生成/图生图/模特融合生成-qwen2511场景图生成指定模特，合成完美融合_2011029108976787458.json, 图片生成/图生图/🤗老许：Qwen-Edit-2511-全编辑丨四大常用工作流+两种放大工作流合集_2005940430791475202.json]
+members: [图片生成/图生图/qwenedit_image_自由创作分镜_2041820186872909826.json, 图片生成/图生图/【AI】产品设计及模特上身（学员练习工作流）_2026934710932348930.json, 图片生成/图生图/【AI】图像编辑控制工作流(学员练习)_2011360098072928257.json, 图片生成/图生图/【AI】图像编辑控制工作流)_2085901700283592705.json, 图片生成/图生图/【AI】图像编辑控制工作流)_2085923884175548418.json, 图片生成/图生图/一键证件照生成_2086806567952932866.json, 图片生成/图生图/课程案例演示——图像编辑控制工作流教学_2074004701275840514.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_90
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/FireRed-Image-Edit 换衣换装服装展示_2062294033308938242.json、图片生成/图生图/Qwen+Edit-2511图案提取_2032070399328002049.json、图片生成/图生图/Qwen-Edit-2511-单图编辑版_2005473838425141249.json、图片生成/图生图/Qwen-Edit-2511多图编辑版_2005543074220699649.json、图片生成/图生图/QwenEdit2509服装白底图提取_1993628856821235713.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/图生图/qwenedit_image_自由创作分镜_2041820186872909826.json、图片生成/图生图/【AI】产品设计及模特上身（学员练习工作流）_2026934710932348930.json、图片生成/图生图/【AI】图像编辑控制工作流(学员练习)_2011360098072928257.json、图片生成/图生图/【AI】图像编辑控制工作流)_2085901700283592705.json、图片生成/图生图/【AI】图像编辑控制工作流)_2085923884175548418.json…）
 
 - **类型**：Image To Image
-- **样本数**：8
+- **样本数**：7
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：57%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
+全部 7 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `ConditioningZeroOut`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetNode`
+- `Int`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
 - `SaveImage`
+- `SetNode`
+- `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/8 个有
-- `CFGNorm` —— 6/8 个有
-- `Image Comparer (rgthree)` —— 6/8 个有
-- `TextEncodeQwenImageEditPlus` —— 6/8 个有
-- `LayerUtility: ImageReel` —— 5/8 个有
-- `LayerUtility: ImageReelComposit` —— 5/8 个有
-- `ModelSamplingAuraFlow` —— 5/8 个有
-- `ReferenceLatent` —— 5/8 个有
-- `GetNode` —— 4/8 个有
-- `SetNode` —— 4/8 个有
-- `ImageScaleToTotalPixels` —— 3/8 个有
-- `SeedVR2LoadDiTModel` —— 3/8 个有
-- `SeedVR2LoadVAEModel` —— 3/8 个有
-- `SeedVR2VideoUpscaler` —— 3/8 个有
-- `easy cleanGpuUsed` —— 3/8 个有
-- `CR Text` —— 2/8 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/8 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/8 个有
-- `CR SDXL Aspect Ratio` —— 1/8 个有
-- `DWPreprocessor` —— 1/8 个有
-- `FluxKontextImageScale` —— 1/8 个有
-- `FluxKontextMultiReferenceLatentMethod` —— 1/8 个有
-- `GrowMaskWithBlur` —— 1/8 个有
-- `ImageConcanate` —— 1/8 个有
-- `Int` —— 1/8 个有
-- `JjkText` —— 1/8 个有
-- `LayerColor: ColorAdapter` —— 1/8 个有
-- `PlaySound|pysssss` —— 1/8 个有
-- `SetLatentNoiseMask` —— 1/8 个有
-- `Text Multiline` —— 1/8 个有
-- `easy promptLine` —— 1/8 个有
+- `Seed (rgthree)` —— 6/7 个有
+- `TextEncodeQwenImageEdit` —— 6/7 个有
+- `TextInput_` —— 6/7 个有
+- `Image Comparer (rgthree)` —— 5/7 个有
+- `ImageConcanate` —— 5/7 个有
+- `AIO_Preprocessor` —— 4/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/7 个有
+- `CR Prompt Text` —— 1/7 个有
+- `EmptyImage` —— 1/7 个有
+- `EmptySD3LatentImage` —— 1/7 个有
+- `ImpactSwitch` —— 1/7 个有
+- `RMBG` —— 1/7 个有
+- `SaveGLB` —— 1/7 个有
+- `Trellis2LoadModel` —— 1/7 个有
+- `Trellis2MeshWithVoxelGenerator` —— 1/7 个有
+- `Trellis2PostProcessAndUnWrapAndRasterizer` —— 1/7 个有
+- `Trellis2SimplifyMesh` —— 1/7 个有
+- `TrimeshToMESH` —— 1/7 个有
+- `easy promptLine` —— 1/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 6 | 8 | 84% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
-| 采样算法 | euler | - | 8 | 50% |
-| 调度器 | simple | - | 8 | 50% |
-| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
+| 采样步数 | 4 | 4 - 4 | 7 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 7 | 100% |
+| 采样算法 | euler | - | 7 | 86% |
+| 调度器 | beta | - | 7 | 86% |
+| 重绘幅度 | 1 | 1 - 1 | 7 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 15/8 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 9/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 6，8 个样本，取值集中（一致性 84%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，8 个样本，一致性 50%
-- 调度器 最常用 simple，8 个样本，一致性 50%
-- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 高发问题（15/8 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，7 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，7 个样本，一致性 86%
+- 调度器 最常用 beta，7 个样本，一致性 86%
+- 重绘幅度 中位数 1，观测区间 1 - 1，7 个样本，取值集中（一致性 100%）
+- 高发问题（9/7 个样本）：Steps较低可能导致细节不足

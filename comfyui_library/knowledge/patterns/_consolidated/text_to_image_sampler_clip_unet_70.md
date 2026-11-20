@@ -1,80 +1,79 @@
 ---
 name: text_to_image_sampler_clip_unet_70
 type: Text To Image
-frequency: 10
-level: moderate
-coverage: 0.8869
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, LayerUtility: PurgeVRAM, LoadImage, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader]
+frequency: 9
+level: strong
+coverage: 0.915778
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, KSampler, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen-image广告海报设计_1956984376598913026.json, 图片生成/图生图/Qwen-image洗图模仿海报_1982385126329982978.json, 图片生成/图生图/Qwen-image海报洗图_2034524062973698049.json, 图片生成/图生图/Qwen图生图（仿图）V1.0_1971583463797223426.json, 图片生成/图生图/qwen-洗图仿图海报模仿-8步快速出图_1962417242996609026.json, 图片生成/图生图/【电商仿图】Qwen海报设计图生图 电商产品平面设计编辑图片_1979055932632109058.json, 图片生成/图生图/洗图模仿海报风格，效果稳定_1992790546683064322.json, 图片生成/文生图/Qwen-image洗图模仿海报_风格等_1955802388865191937.json, 图片生成/文生图/奶茶产品宣传图_1975922379924877314.json, 平台全量/Qwen-image洗图模仿海报_风格等_1954019308215291905.json]
+members: [图片生成/图生图/Krea2双图风格融合V1_2069784344645947394.json, 图片生成/图生图/boogu+image+turbo-hotfix版-极速文生图-euler与ddim_2074395054931800065.json, 图片生成/图生图/boogu极致美学+image+turbo-hotfix版-极速文生图-euler与ddim_2076512872733167617.json, 图片生成/图生图/极速洗图仿图-boogu image turbo-hotfix版_2073347665429098497.json, 图片生成/图生图/极速洗图仿图-boogu image turbo-hotfix版_2073444834572070913.json, 图片生成/文生图/boogu Turbo Hotfix修复版极速文生图_2072876509190254594.json, 图片生成/文生图/boogu image turbo-hotfix版-极速文生图-euler与ddim_2073336372441739265.json, 图片生成/文生图/boogu image turbo-hotfix版-极速文生图-euler与ddim_2073991622328668161.json, 图片生成/文生图/boogu image turbo-hotfix版-极速文生图-euler与ddim_2074374671864258562.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_70
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（图片生成/图生图/Qwen-image广告海报设计_1956984376598913026.json、图片生成/图生图/Qwen-image洗图模仿海报_1982385126329982978.json、图片生成/图生图/Qwen-image海报洗图_2034524062973698049.json、图片生成/图生图/Qwen图生图（仿图）V1.0_1971583463797223426.json、图片生成/图生图/qwen-洗图仿图海报模仿-8步快速出图_1962417242996609026.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（图片生成/图生图/Krea2双图风格融合V1_2069784344645947394.json、图片生成/图生图/boogu+image+turbo-hotfix版-极速文生图-euler与ddim_2074395054931800065.json、图片生成/图生图/boogu极致美学+image+turbo-hotfix版-极速文生图-euler与ddim_2076512872733167617.json、图片生成/图生图/极速洗图仿图-boogu image turbo-hotfix版_2073347665429098497.json、图片生成/图生图/极速洗图仿图-boogu image turbo-hotfix版_2073444834572070913.json…）
 
 - **类型**：Text To Image
-- **样本数**：10
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：9
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 10 个 workflow 都包含：
+全部 9 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
-- `ModelSamplingAuraFlow`
+- `ResolutionSelector`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 9/10 个有
-- `JanusImageUnderstanding` —— 8/10 个有
-- `JanusModelLoader` —— 8/10 个有
-- `ShowText|pysssss` —— 8/10 个有
-- `LoraLoaderModelOnly` —— 3/10 个有
-- `FluxResolutionNode` —— 2/10 个有
-- `RH_LLMAPI_NODE` —— 2/10 个有
-- `easy imageConcat` —— 2/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
-- `GetNode` —— 1/10 个有
-- `ImageUpscaleWithModel` —— 1/10 个有
-- `SetNode` —— 1/10 个有
-- `UpscaleModelLoader` —— 1/10 个有
+- `easy cleanGpuUsed` —— 8/9 个有
+- `easy seed` —— 8/9 个有
+- `CR Prompt Text` —— 7/9 个有
+- `PreviewAny` —— 7/9 个有
+- `QwenImageEngineer` —— 6/9 个有
+- `LoadImage` —— 4/9 个有
+- `RH_LLMAPI_Pro_Node` —— 3/9 个有
+- `CR Text` —— 2/9 个有
+- `easy imageConcat` —— 2/9 个有
+- `easy showAnything` —— 2/9 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/9 个有
+- `PrimitiveStringMultiline` —— 1/9 个有
+- `RH_Captioner` —— 1/9 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 768 | 512 - 768 | 10 | 86% |
-| 高度 | 1024 | 512 - 1024 | 10 | 78% |
-| 采样步数 | 35 | 8 - 35 | 10 | 75% |
-| Prompt 约束强度(CFG) | 4 | 1 - 4 | 10 | 76% |
-| 采样算法 | euler | - | 10 | 100% |
-| 调度器 | simple | - | 10 | 90% |
-| 重绘幅度 | 1 | 1 - 1 | 10 | 100% |
+| 宽度 | 1024 | 1024 - 1024 | 9 | 100% |
+| 高度 | 1024 | 1024 - 1024 | 9 | 100% |
+| 采样步数 | 4 | 4 - 8 | 9 | 72% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 9 | 100% |
+| 采样算法 | ddim | - | 9 | 89% |
+| 调度器 | beta57 | - | 9 | 89% |
+| 重绘幅度 | 1 | 1 - 1 | 9 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 1/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 16/9 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 768，观测区间 512 - 768，10 个样本，取值集中（一致性 86%）
-- 高度 中位数 1024，观测区间 512 - 1024，10 个样本
-- 采样步数 中位数 35，观测区间 8 - 35，10 个样本
-- Prompt 约束强度(CFG) 中位数 4，观测区间 1 - 4，10 个样本
-- 采样算法 最常用 euler，10 个样本，一致性 100%
-- 调度器 最常用 simple，10 个样本，一致性 90%
-- 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
+- 宽度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）
+- 高度 中位数 1024，观测区间 1024 - 1024，9 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 8，9 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 ddim，9 个样本，一致性 89%
+- 调度器 最常用 beta57，9 个样本，一致性 89%
+- 重绘幅度 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
+- 高发问题（16/9 个样本）：Steps较低可能导致细节不足

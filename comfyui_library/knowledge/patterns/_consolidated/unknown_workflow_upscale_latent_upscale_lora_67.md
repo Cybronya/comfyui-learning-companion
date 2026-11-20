@@ -1,85 +1,103 @@
 ---
 name: unknown_workflow_upscale_latent_upscale_lora_67
 type: Unknown Workflow
-frequency: 5
-level: moderate
-coverage: 0.8316
-common_nodes: [CLIPLoader, ComfyMathExpression, CreateVideo, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, MinimaxH3LatentUpscaler3D, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, SaveVideo, SplitSigmas, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader]
-problems: []
+frequency: 4
+level: strong
+coverage: 0.908
+common_nodes: [BooleanPrimitive, CLIPLoader, CLIPTextEncode, ComfyUI-Krea2T-Enhancer, ConditioningKrea2Rebalance, ConditioningZeroOut, DA3Inference, DA3Render, GetImageSizeAndCount, INTConstant, ImageScale, ImageUpscaleWithModel, KSampler, Krea2ControlApply, Krea2ControlImageEncode, Krea2ControlLoRALoader, LatentUpscale, LazySwitchKJ, LoadDA3Model, MathExpression|pysssss, PreviewImage, PrimitiveStringMultiline, Qwen3VLProcessor, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEEncode, VAELoader, easy batchAnything, easy forLoopEnd, easy showAnything]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMaxH3_图生视频_双采CFG0.5_1.5_SAGE_2110265220198395905.json, 视频生成/图生视频/iniMax H3 六图可选图生视频｜混合模型 潜空间高清直出_2095018141456879618.json, 视频生成/图生视频/minimax_h3_双采去油去噪_2113985494651588610.json, 视频生成/图生视频/minimaxh3-多参+latent二采_2098875416437157889.json, 视频生成/文生视频/MiniMax-H3 极限复杂大动态与人脸去油腻工作流_2096278728602112001.json]
+members: [图片生成/文生图/Krea 2 本地批量洗图_2080681468573085697.json, 图片生成/文生图/Krea 2 线上批量洗图_2080681462248071170.json, 图片生成/文生图/Krea 2线上批量洗图_2078868414222913537.json, 图片生成/文生图/Krea+2本地批量洗图 (仅本地使用)_2079244095242981378.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_latent_upscale_lora_67
 
-> 由 `engine/knowledge_consolidation` 从 5 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3_图生视频_双采CFG0.5_1.5_SAGE_2110265220198395905.json、视频生成/图生视频/iniMax H3 六图可选图生视频｜混合模型 潜空间高清直出_2095018141456879618.json、视频生成/图生视频/minimax_h3_双采去油去噪_2113985494651588610.json、视频生成/图生视频/minimaxh3-多参+latent二采_2098875416437157889.json、视频生成/文生视频/MiniMax-H3 极限复杂大动态与人脸去油腻工作流_2096278728602112001.json）
+> 由 `engine/knowledge_consolidation` 从 4 个 workflow 归纳得出（图片生成/文生图/Krea 2 本地批量洗图_2080681468573085697.json、图片生成/文生图/Krea 2 线上批量洗图_2080681462248071170.json、图片生成/文生图/Krea 2线上批量洗图_2078868414222913537.json、图片生成/文生图/Krea+2本地批量洗图 (仅本地使用)_2079244095242981378.json）
 
 - **类型**：Unknown Workflow
-- **样本数**：5
-- **可信度**：中等可信
-- **平均知识覆盖**：83%
+- **样本数**：4
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 5 个 workflow 都包含：
+全部 4 个 workflow 都包含：
+- `BooleanPrimitive`
 - `CLIPLoader`
-- `ComfyMathExpression`
-- `CreateVideo`
-- `KSamplerSelect`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
-- `LoadImage`
-- `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `MinimaxH3LatentUpscaler3D`
-- `PrimitiveFloat`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
-- `SaveVideo`
-- `SplitSigmas`
+- `CLIPTextEncode`
+- `ComfyUI-Krea2T-Enhancer`
+- `ConditioningKrea2Rebalance`
+- `ConditioningZeroOut`
+- `DA3Inference`
+- `DA3Render`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageScale`
+- `ImageUpscaleWithModel`
+- `KSampler`
+- `Krea2ControlApply`
+- `Krea2ControlImageEncode`
+- `Krea2ControlLoRALoader`
+- `LatentUpscale`
+- `LazySwitchKJ`
+- `LoadDA3Model`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `Qwen3VLProcessor`
+- `SaveImage`
 - `UNETLoader`
+- `UpscaleModelLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
+- `VAEEncode`
 - `VAELoader`
+- `easy batchAnything`
+- `easy forLoopEnd`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicGuider` —— 4/5 个有
-- `BasicScheduler` —— 4/5 个有
-- `PrimitiveStringMultiline` —— 4/5 个有
-- `ResolutionSelector` —— 4/5 个有
-- `MiniMaxH3SigmaShift` —— 3/5 个有
-- `ModelAttentionBackend` —— 3/5 个有
-- `ConditioningZeroOut` —— 2/5 个有
-- `MiniMaxChunkFeedForward` —— 2/5 个有
-- `MiniMaxLowVRAMAttention` —— 2/5 个有
-- `ModelPreviewOverrideKJ` —— 2/5 个有
-- `VRAM_Debug` —— 2/5 个有
-- `BlockSparseAttention` —— 1/5 个有
-- `CFGGuider` —— 1/5 个有
-- `ComfySwitchNode` —— 1/5 个有
-- `ExtendIntermediateSigmas` —— 1/5 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/5 个有
-- `GetNode` —— 1/5 个有
-- `H3SigmaRefiner` —— 1/5 个有
-- `Label (rgthree)` —— 1/5 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/5 个有
-- `ManualSigmas` —— 1/5 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 1/5 个有
-- `PathchSageAttentionKJ` —— 1/5 个有
-- `SetNode` —— 1/5 个有
-- `UniBlockSwap` —— 1/5 个有
-- `easy int` —— 1/5 个有
-- `布尔孤海` —— 1/5 个有
+- `RH_LLMAPI_Pro_Node` —— 3/4 个有
+- `BasicScheduler` —— 2/4 个有
+- `CFGGuider` —— 2/4 个有
+- `IntToText` —— 2/4 个有
+- `JWInteger` —— 2/4 个有
+- `JWStringConcat` —— 2/4 个有
+- `JjkText` —— 2/4 个有
+- `JsonExtractString` —— 2/4 个有
+- `LoraLoaderModelOnly` —— 2/4 个有
+- `RHBatchImages:` —— 2/4 个有
+- `RHUploadZip` —— 2/4 个有
+- `RH_ExtractImage` —— 2/4 个有
+- `RandomNoise` —— 2/4 个有
+- `SamplerCustomAdvanced` —— 2/4 个有
+- `SamplerEulerAncestral` —— 2/4 个有
+- `SplitSigmas` —— 2/4 个有
+- `easy forLoopStart` —— 2/4 个有
+- `easy loadImagesForLoop` —— 2/4 个有
+- `easy mathInt` —— 2/4 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 4 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 4 | 100% |
+| 采样算法 | euler | - | 4 | 100% |
+| 调度器 | simple | - | 4 | 100% |
+| 重绘幅度 | 0.95 | 0.92 - 0.95 | 4 | 99% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/4 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，4 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，4 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，4 个样本，一致性 100%
+- 调度器 最常用 simple，4 个样本，一致性 100%
+- 重绘幅度 中位数 0.95，观测区间 0.92 - 0.95，4 个样本，取值集中（一致性 99%）
+- 高发问题（8/4 个样本）：Steps较低可能导致细节不足

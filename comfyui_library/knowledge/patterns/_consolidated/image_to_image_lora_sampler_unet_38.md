@@ -1,30 +1,31 @@
 ---
 name: image_to_image_lora_sampler_unet_38
 type: Image To Image
-frequency: 15
+frequency: 12
 level: strong
-coverage: 0.887
-common_nodes: [CLIPLoader, EmptySD3LatentImage, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: [Steps较低可能导致细节不足]
+coverage: 0.73925
+common_nodes: [CFGNorm, CLIPLoader, ImageScaleToTotalPixels, KSampler, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, TextEncodeQwenImageEditPlus, UNETLoader, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [图片生成/图生图/qwen2511一键人头部多角度_2057125039929118722.json, 图片生成/图生图/qwen2511一键人头部多角度_2060165198916448257.json, 图片生成/图生图/qwen2511美女多角度美图生成_2061363062426398721.json, 图片生成/图生图/一键人物多角度qwen-edit-2511_1995447122415824897.json, 图片生成/图生图/人物表情迁移_2003532219891261442.json, 图片生成/图生图/千问编辑2511-人物多角度出图_2003744366952890369.json, 图片生成/图生图/千问编辑2511-人物多角度出图_2041116912347783169.json, 图片生成/图生图/图片多角度镜头调度qwen-image-edit-2509_2054884995881283585.json, 图片生成/图生图/图片多角度镜头调度qwen-image-edit-2509_2056222385287778305.json, 图片生成/图生图/图片多角度镜头调度qwen-image-edit-2509_2090260862845149185.json, 图片生成/图生图/图片多角度镜头调度qwen-image-edit-2509_2090607346560094210.json, 图片生成/图生图/图片多角度镜头调度qwen-image-edit-2509_2090624833217458178.json, 图片生成/图生图/图生图+qwen2511+一键人头部多角度_2059435976203784193.json, 平台全量/一键角色多角度_2061328198817894401.json, 平台全量/镜头调度qwen-image-edit-2509_2001898906076233730.json]
+members: [图片生成/图生图/42. 专业级证件照生成，参数区输入证件照模版和处理图片+背景+服装+领带，即可出单张和9张图片_1974772408315940866.json, 图片生成/图生图/GS-多视角人物场景都可_2061465943561293825.json, 图片生成/图生图/QWEN一键单图直出多角度场景图生图_2061991338425536513.json, 图片生成/图生图/QWEN快速换装秒出图_1985441625268699137.json, 图片生成/图生图/Qwen去水印+高清处理_2011600241761456129.json, 图片生成/图生图/人物动作迁移 保持一致性 Qwen-edit多图编辑_1973243474298449922.json, 图片生成/图生图/人物动作迁移_2004095655121436673.json, 图片生成/图生图/人物换衣服_2095498989033578497.json, 图片生成/图生图/人物换衣服加速版qwen edit plus+全节点注释_2055626898692157442.json, 图片生成/图生图/人物换衣服加速版qwen+edit+plus+全节点注释_2060616197187657729.json, 图片生成/图生图/人物生成换装工作流_2065382569604116482.json, 图片生成/文生图/人物换衣服加速版qwen edit plus+全节点注释_2055669100139040769.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_unet_38
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/qwen2511一键人头部多角度_2057125039929118722.json、图片生成/图生图/qwen2511一键人头部多角度_2060165198916448257.json、图片生成/图生图/qwen2511美女多角度美图生成_2061363062426398721.json、图片生成/图生图/一键人物多角度qwen-edit-2511_1995447122415824897.json、图片生成/图生图/人物表情迁移_2003532219891261442.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（图片生成/图生图/42. 专业级证件照生成，参数区输入证件照模版和处理图片+背景+服装+领带，即可出单张和9张图片_1974772408315940866.json、图片生成/图生图/GS-多视角人物场景都可_2061465943561293825.json、图片生成/图生图/QWEN一键单图直出多角度场景图生图_2061991338425536513.json、图片生成/图生图/QWEN快速换装秒出图_1985441625268699137.json、图片生成/图生图/Qwen去水印+高清处理_2011600241761456129.json…）
 
 - **类型**：Image To Image
-- **样本数**：15
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：89%
+- **平均知识覆盖**：74%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 12 个 workflow 都包含：
+- `CFGNorm`
 - `CLIPLoader`
-- `EmptySD3LatentImage`
+- `ImageScaleToTotalPixels`
 - `KSampler`
 - `LoadImage`
 - `LoraLoaderModelOnly`
@@ -32,46 +33,47 @@ source: knowledge_consolidation
 - `SaveImage`
 - `TextEncodeQwenImageEditPlus`
 - `UNETLoader`
-- `VAEDecode`
 - `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 14/15 个有
-- `LayerUtility: PurgeVRAM` —— 13/15 个有
-- `PreviewImage` —— 13/15 个有
-- `CFGNorm` —— 10/15 个有
-- `easy promptLine` —— 9/15 个有
-- `Text Multiline` —— 7/15 个有
-- `PreviewAny` —— 6/15 个有
-- `TextCombinerSix` —— 6/15 个有
-- `ImageBatchMulti` —— 5/15 个有
-- `ImageFromBatch+` —— 5/15 个有
-- `ImpactImageBatchToImageList` —— 5/15 个有
-- `ResizeImagesByLongerEdge` —— 5/15 个有
-- `ImageScaleBy` —— 1/15 个有
+- `PrimitiveStringMultiline` —— 11/12 个有
+- `VAEDecode` —— 11/12 个有
+- `ConditioningZeroOut` —— 10/12 个有
+- `easy imageConcat` —— 7/12 个有
+- `CR Simple Image Compare` —— 6/12 个有
+- `PreviewImage` —— 5/12 个有
+- `DWPreprocessor` —— 2/12 个有
+- `RHHiddenNodes` —— 2/12 个有
+- `CLIPTextEncode` —— 1/12 个有
+- `CompressImages` —— 1/12 个有
+- `EmptyHunyuanLatentVideo` —— 1/12 个有
+- `PathchSageAttentionKJ` —— 1/12 个有
+- `PrimitiveString` —— 1/12 个有
+- `RBGImageStitchPlus` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 9 | 4 - 10 | 15 | 77% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
-| 采样算法 | euler_ancestral | - | 15 | 73% |
-| 调度器 | simple | - | 15 | 67% |
-| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
+| 采样步数 | 4 | 4 - 5 | 12 | 93% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 12 | 100% |
+| 采样算法 | euler | - | 12 | 100% |
+| 调度器 | simple | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 8/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 27/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 1/12 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 采样步数 中位数 9，观测区间 4 - 10，15 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，15 个样本，一致性 73%
-- 调度器 最常用 simple，15 个样本，一致性 67%
-- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
-- 高发问题（8/15 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 5，12 个样本，取值集中（一致性 93%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，12 个样本，一致性 100%
+- 调度器 最常用 simple，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 高发问题（27/12 个样本）：Steps较低可能导致细节不足

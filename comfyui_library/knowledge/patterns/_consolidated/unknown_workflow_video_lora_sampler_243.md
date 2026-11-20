@@ -1,72 +1,74 @@
 ---
 name: unknown_workflow_video_lora_sampler_243
 type: Unknown Workflow
-frequency: 11
+frequency: 9
 level: moderate
-coverage: 0.782727
-common_nodes: [GetNode, LoadImage, LoadWanVideoT5TextEncoder, SetNode, String Literal, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetRadialAttention, WanVideoSigmaToStep, WanVideoTextEncode, WanVideoVAELoader, easy globalSeed, easy seed]
+coverage: 0.875556
+common_nodes: [CLIPLoader, CLIPTextEncode, CR Text, DiffusionModelLoaderKJ, ImageBatchExtendWithOverlap, Int, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, SimpleMath+, VAEDecode, VAEEncode, VAELoader, VHS_VideoCombine, WanImageToVideoSVIPro, easy forLoopEnd, easy forLoopStart, easy promptLine]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan2.2图生视频增益加速V4_2001919692862308354.json, 视频生成/图生视频/Wan2.2图生视频极致加速V5+lynx_1979417916649148417.json, 视频生成/图生视频/Wan2.2图生视频网感十足_2019227457009750018.json, 视频生成/图生视频/效果拉满V5-1022顶配图生视频_1981374201879773186.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_1973043672696623106.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V4_1978022050193362945.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5+lynx_1978408031887233025.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1022版_1981325230595629057.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1030-非人_1984904372494680065.json, 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-moe-人物适用_1978390766324224001.json, 视频生成/文生视频/Wan2.2文生视频性价比极致加速V5+lynx_1978411441667592194.json]
+members: [视频生成/图生视频/(循环)SVI 2 Pro长视频动态强化版V1_2005541494670983170.json, 视频生成/图生视频/(循环)Smooth 2.1高噪 SVI 2 Pro长视频动态强化版V1_2011030476026286081.json, 视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix 2.1长视频动态强化版V1_2010957164097052674.json, 视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix图生长视频V3(动态逻辑强化)_2035643056212414465.json, 视频生成/图生视频/(循环-动漫版)SVI 2 Pro Dasiwa V9长视频手动提示词动态强化版V1_2011772862205534209.json, 视频生成/图生视频/(循环-动漫版)SVI 2 Pro Dasiwa V9长视频自动提示词动态强化版V1_2011765719033188353.json, 视频生成/图生视频/(循环-（自用）-动漫版)SVI 2 Pro Dasiwa V9长视频自动提示词动态强化版V1_2011775856401715201.json, 视频生成/图生视频/(（自用）肢体增强)SVI 2 Pro Smooth V2长视频动态强化版V1_2010976996687351810.json, 视频生成/图生视频/动漫专用-循环-长视频自动提示词-SVI 2 Pro Dasiwa V9_2012053341018263553.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_243
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/Wan2.2图生视频增益加速V4_2001919692862308354.json、视频生成/图生视频/Wan2.2图生视频极致加速V5+lynx_1979417916649148417.json、视频生成/图生视频/Wan2.2图生视频网感十足_2019227457009750018.json、视频生成/图生视频/效果拉满V5-1022顶配图生视频_1981374201879773186.json、视频生成/文生视频/Wan2.2图生视频性价比极致加速V3_1973043672696623106.json…）
+> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/(循环)SVI 2 Pro长视频动态强化版V1_2005541494670983170.json、视频生成/图生视频/(循环)Smooth 2.1高噪 SVI 2 Pro长视频动态强化版V1_2011030476026286081.json、视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix 2.1长视频动态强化版V1_2010957164097052674.json、视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix图生长视频V3(动态逻辑强化)_2035643056212414465.json、视频生成/图生视频/(循环-动漫版)SVI 2 Pro Dasiwa V9长视频手动提示词动态强化版V1_2011772862205534209.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：11
+- **样本数**：9
 - **可信度**：中等可信
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 11 个 workflow 都包含：
-- `GetNode`
+全部 9 个 workflow 都包含：
+- `CLIPLoader`
+- `CLIPTextEncode`
+- `CR Text`
+- `DiffusionModelLoaderKJ`
+- `ImageBatchExtendWithOverlap`
+- `Int`
+- `JWInteger`
+- `KSamplerAdvanced`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `SetNode`
-- `String Literal`
+- `LoraLoaderModelOnly`
+- `SimpleMath+`
+- `VAEDecode`
+- `VAEEncode`
+- `VAELoader`
 - `VHS_VideoCombine`
-- `WanVideoBlockSwap`
-- `WanVideoDecode`
-- `WanVideoLoraSelect`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoScheduler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoSetRadialAttention`
-- `WanVideoSigmaToStep`
-- `WanVideoTextEncode`
-- `WanVideoVAELoader`
-- `easy globalSeed`
-- `easy seed`
+- `WanImageToVideoSVIPro`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `easy promptLine`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 10/11 个有
-- `Int` —— 10/11 个有
-- `PreviewImage` —— 10/11 个有
-- `WanVideoImageToVideoEncode` —— 10/11 个有
-- `WanVideoTorchCompileSettings` —— 10/11 个有
-- `easy showAnything` —— 10/11 个有
-- `LoadLynxResampler` —— 6/11 个有
-- `LynxEncodeFaceIP` —— 6/11 个有
-- `LynxInsightFaceCrop` —— 6/11 个有
-- `RH_Captioner` —— 6/11 个有
-- `WanVideoAddLynxEmbeds` —— 6/11 个有
-- `WanVideoExtraModelSelect` —— 6/11 个有
-- `WanVideoTextEncodeCached` —— 6/11 个有
-- `WanVideoEmptyEmbeds` —— 1/11 个有
-- `WanVideoVACEEncode` —— 1/11 个有
-- `WanVideoVACEModelSelect` —— 1/11 个有
-- `easy float` —— 1/11 个有
-- `easy int` —— 1/11 个有
+- `> Text Replace` —— 4/9 个有
+- `CR Prompt Text` —— 4/9 个有
+- `CR Text Concatenate` —— 4/9 个有
+- `ProcessString` —— 4/9 个有
+- `Qwen3_VQA` —— 4/9 个有
+- `TextPreview` —— 4/9 个有
+- `easy showAnything` —— 4/9 个有
+- `SomethingToString` —— 3/9 个有
+- `Split String` —— 3/9 个有
+- `DuckHideNode` —— 2/9 个有
+- `SaveImage` —— 2/9 个有
+- `TT_img_enc` —— 2/9 个有
+- `TT_img_enc_v2` —— 2/9 个有
+- `easy cleanGpuUsed` —— 1/9 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | randomize | - | 9 | 56% |
+| Prompt 约束强度(CFG) | 8 | 8 - 8 | 9 | 100% |
+| 采样算法 | 3.5 | 1 - 3.5 | 9 | 48% |
+| 调度器 | euler | - | 9 | 100% |
+| 重绘幅度 | simple | - | 9 | 100% |
 
 ## 常见问题
 
@@ -74,4 +76,8 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 最常用 randomize，9 个样本，一致性 56%
+- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，9 个样本，取值集中（一致性 100%）
+- 采样算法 中位数 3.5，观测区间 1 - 3.5，9 个样本，取值分散，一致性仅 48%
+- 调度器 最常用 euler，9 个样本，一致性 100%
+- 重绘幅度 最常用 simple，9 个样本，一致性 100%

@@ -3,33 +3,36 @@ name: image_to_image_lora_sampler_clip_10
 type: Image To Image
 frequency: 13
 level: strong
-coverage: 0.931154
-common_nodes: [CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, FluxGuidance, KSampler, LayerUtility: HLFrequencyDetailRestore, LayerUtility: ImageMaskScaleAs, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.946231
+common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Image Comparer (rgthree), KSampler, LayerMask: BiRefNetUltraV2, LayerMask: LoadBiRefNetModelV2, LayerMask: MaskGrow, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ReferenceLatent, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Product Integration into Background電商工作流(Kontext)_2087376665625321473.json, 图片生成/图生图/kontext 光影融合_2044313699082571778.json, 图片生成/图生图/产品溶图 色彩变动小_2073969942722076673.json, 图片生成/图生图/光影融合工作流出.4.0_皮肤质感不变_2054854751262650369.json, 图片生成/图生图/文字去除_2056744378412130306.json, 图片生成/图生图/文字去除_2084124655224451073.json, 图片生成/图生图/融图 方式2_1960990249864368130.json, 图片生成/图生图/零偏移加投影-光影融合-文字细节图片尺寸不变_2075857386061000706.json, 平台全量/AI人像换背景_1971968703522926593.json, 平台全量/Kontext 产品迁移光影融合还原材质细节_1969044737183391746.json, 平台全量/Kontext 光影融合(自用)_1959529564726833154.json, 平台全量/Kontext 无损光影打光融合_1959204688077991938.json, 平台全量/kontexe-产品光影融合_1972139362794270722.json]
+members: [图片生成/图生图/PS专用溶图流_2080460737826344962.json, 图片生成/图生图/PS专用溶图流_2081930794498617346.json, 图片生成/图生图/PS专用溶图流_2081982051393302529.json, 图片生成/图生图/PS专用溶图流_2082013615124733954.json, 图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein——电商产品光影融合溶图打光_2018488925819506690.json, 图片生成/图生图/主图万物电商产品光影融合溶图打光产品场景合成阴影生成细节迁移海报合成_2072999532249567233.json, 图片生成/图生图/亚马逊光影融合1.0_2037456527702888450.json, 图片生成/图生图/溶图+打光_2098231532556210177.json, 图片生成/图生图/溶图打光-F.2_Klein人像细节迁移_2096170592125939714.json, 图片生成/图生图/溶图打光-F.2_Klein人像细节迁移_2096405298079686657.json, 图片生成/图生图/电商产品打光换背景光影溶图细节迁移保持细节尺寸不变_2073002986959364097.json, 图片生成/图生图/通道ID图2.0_2060658643808382978.json, 图片生成/文生图/产品融图打光（产品标贴一致性）_2037437084016844802.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_lora_sampler_clip_10
 
-> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/Product Integration into Background電商工作流(Kontext)_2087376665625321473.json、图片生成/图生图/kontext 光影融合_2044313699082571778.json、图片生成/图生图/产品溶图 色彩变动小_2073969942722076673.json、图片生成/图生图/光影融合工作流出.4.0_皮肤质感不变_2054854751262650369.json、图片生成/图生图/文字去除_2056744378412130306.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/PS专用溶图流_2080460737826344962.json、图片生成/图生图/PS专用溶图流_2081930794498617346.json、图片生成/图生图/PS专用溶图流_2081982051393302529.json、图片生成/图生图/PS专用溶图流_2082013615124733954.json、图片生成/图生图/⭐️⭐️⭐️⭐️⭐️Klein——电商产品光影融合溶图打光_2018488925819506690.json…）
 
 - **类型**：Image To Image
 - **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：95%
 
 ## 共有节点
 
 全部 13 个 workflow 都包含：
+- `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `DualCLIPLoader`
-- `FluxGuidance`
+- `Image Comparer (rgthree)`
 - `KSampler`
-- `LayerUtility: HLFrequencyDetailRestore`
+- `LayerMask: BiRefNetUltraV2`
+- `LayerMask: LoadBiRefNetModelV2`
+- `LayerMask: MaskGrow`
 - `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
 - `ReferenceLatent`
@@ -40,45 +43,39 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `InspyrenetRembg` —— 12/13 个有
-- `LayerMask: MaskGrow` —— 12/13 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/13 个有
-- `Image Comparer (rgthree)` —— 10/13 个有
-- `FastCanvas` —— 7/13 个有
-- `FastCanvasTool` —— 7/13 个有
-- `LayerUtility: FluxKontextImageScale` —— 7/13 个有
-- `ImpactInt` —— 6/13 个有
-- `PreviewImage` —— 6/13 个有
-- `LayerUtility: AnyRerouter` —— 5/13 个有
-- `Anything Everywhere` —— 2/13 个有
-- `Label (rgthree)` —— 2/13 个有
-- `RBGImageStitchPlus` —— 2/13 个有
-- `easy cleanGpuUsed` —— 2/13 个有
-- `ConstrainImage|pysssss` —— 1/13 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/13 个有
-- `HAIGC_SaveImagesToZip` —— 1/13 个有
-- `PMRF` —— 1/13 个有
-- `RHUploadZip_V2` —— 1/13 个有
-- `easy imageRemBg` —— 1/13 个有
+- `LayerUtility: HLFrequencyDetailRestore` —— 12/13 个有
+- `ImpactInt` —— 7/13 个有
+- `FastCanvas` —— 2/13 个有
+- `FastCanvasTool` —— 2/13 个有
+- `ImageCropper` —— 2/13 个有
+- `easy imageRemBg` —— 2/13 个有
+- `Int` —— 1/13 个有
+- `LayerStyle: ColorOverlay V2` —— 1/13 个有
+- `MaskPreview+` —— 1/13 个有
+- `Preview from image [Crystools]` —— 1/13 个有
+- `Switch any [Crystools]` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 20 | 20 - 30 | 13 | 81% |
+| 采样步数 | 4 | 4 - 4 | 13 | 100% |
 | Prompt 约束强度(CFG) | 1 | 1 - 1 | 13 | 100% |
 | 采样算法 | euler | - | 13 | 100% |
-| 调度器 | beta | - | 13 | 54% |
+| 调度器 | simple | - | 13 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 13 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 13/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 20，观测区间 20 - 30，13 个样本，取值集中（一致性 81%）
+- 采样步数 中位数 4，观测区间 4 - 4，13 个样本，取值集中（一致性 100%）
 - Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
 - 采样算法 最常用 euler，13 个样本，一致性 100%
-- 调度器 最常用 beta，13 个样本，一致性 54%
+- 调度器 最常用 simple，13 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，13 个样本，取值集中（一致性 100%）
+- 高发问题（13/13 个样本）：Steps较低可能导致细节不足

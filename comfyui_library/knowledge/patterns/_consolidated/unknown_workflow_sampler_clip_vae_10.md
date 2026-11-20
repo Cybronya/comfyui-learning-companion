@@ -1,62 +1,85 @@
 ---
 name: unknown_workflow_sampler_clip_vae_10
 type: Unknown Workflow
-frequency: 14
-level: moderate
-coverage: 0.915571
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, FluxGuidance, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, VAEDecode, VAEEncode, VAELoader]
+frequency: 13
+level: strong
+coverage: 0.936846
+common_nodes: [BasicScheduler, CLIPTextEncode, CreateVideo, EmptyLTXVLatentVideo, INTConstant, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, PathchSageAttentionKJ, SamplerCustom, SaveVideo, SimpleMath+, VAEDecodeTiled, VAELoaderKJ]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2图像编辑上线_1994235957700476930.json, 图片生成/图生图/Flux2图生图工作流_1954841342910316546.json, 图片生成/图生图/Flux2最新图像多图编辑（支持中文的flux）_1993556016021389313.json, 图片生成/图生图/Y-FLUX.2 Klein 9B 单图编辑_2012793735624527873.json, 图片生成/图生图/flux2-dev-fp8-mixed 双图编辑_2008366363550687234.json, 图片生成/图生图/flux2-dev-fp8-mixed 多图编辑_2008381017370923010.json, 图片生成/图生图/【GUGU】FLUX2.0单图编辑_多图编辑_1993506477314949121.json, 图片生成/图生图/🦖Flux2DEV多图编辑_2007631030517239810.json, 图片生成/文生图/3D人物编辑器应用系列之二——FLUX-2-klein-9B文生图_2020299327251423234.json, 图片生成/文生图/FLUX-2-klein-9B_动作精准设计之二工作流_2016865671568691202.json, 图片生成/文生图/FLUX-2-klein-9b_动作精准设计之一工作流_2013405319954702338.json, 图片生成/文生图/FLUX2 混合模型_1993527380123860994.json, 图片生成/文生图/Flux2-TurboV2加速_2007448172402057217.json, "视频生成/文生视频/谁与争锋 Flux2 Z-image,  多图编辑 挑战 Qwen Edit_1994227326332370945.json"]
+members: [图片生成/文生图/（黑鹤UP主的）▶▶LTX23-文生视频流_2051306835285692417.json, 视频生成/图生视频/(黑鹤UP）LTX23-单多图分段控制(任意图数)2_2055789826540097537.json, 视频生成/图生视频/GS-LTX2.3单图生视频效果超棒工作流_2058253695313342465.json, 视频生成/图生视频/LTX2.3 图生视频作流_2060545124828016642.json, 视频生成/图生视频/LTX2.3 图生视频超快工作流-8G可用_2058345686520909825.json, 视频生成/图生视频/LTX2.3-单采样-4图慢剧视频_2053077492440809473.json, 视频生成/图生视频/LTX2.3-单采样-5图叙事慢剧视频_2053390831737950210.json, 视频生成/图生视频/LTX2.3图生视频_2066483566602702849.json, 视频生成/图生视频/LTX23-单图生视频流_2057441452547993601.json, 视频生成/图生视频/▶▶LTX23--情绪强化-单图生视频_2057121441094651906.json, 视频生成/图生视频/▶▶LTX23--情绪强化-单图生视频_2060978714996994050.json, 视频生成/图生视频/（黑鹤UP主的）▶▶LTX23-单图生视频流_2051306841547788290.json, 视频生成/图生视频/（黑鹤UP主的）▶▶LTX23-首尾帧视频(双图)_2051306846396399618.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_vae_10
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Flux2图像编辑上线_1994235957700476930.json、图片生成/图生图/Flux2图生图工作流_1954841342910316546.json、图片生成/图生图/Flux2最新图像多图编辑（支持中文的flux）_1993556016021389313.json、图片生成/图生图/Y-FLUX.2 Klein 9B 单图编辑_2012793735624527873.json、图片生成/图生图/flux2-dev-fp8-mixed 双图编辑_2008366363550687234.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/文生图/（黑鹤UP主的）▶▶LTX23-文生视频流_2051306835285692417.json、视频生成/图生视频/(黑鹤UP）LTX23-单多图分段控制(任意图数)2_2055789826540097537.json、视频生成/图生视频/GS-LTX2.3单图生视频效果超棒工作流_2058253695313342465.json、视频生成/图生视频/LTX2.3 图生视频作流_2060545124828016642.json、视频生成/图生视频/LTX2.3 图生视频超快工作流-8G可用_2058345686520909825.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：中等可信
-- **平均知识覆盖**：92%
+- **样本数**：13
+- **可信度**：强结论
+- **平均知识覆盖**：94%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicGuider`
-- `CLIPLoader`
+全部 13 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `FluxGuidance`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
 - `KSamplerSelect`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
-- `SaveImage`
-- `VAEDecode`
-- `VAEEncode`
-- `VAELoader`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `SaveVideo`
+- `SimpleMath+`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageScaleToTotalPixels` —— 13/14 个有
-- `UNETLoader` —— 13/14 个有
-- `ImageConcanate` —— 3/14 个有
-- `LoraLoaderModelOnly` —— 3/14 个有
-- `easy int` —— 3/14 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/14 个有
-- `PrimitiveStringMultiline` —— 2/14 个有
-- `EmptySD3LatentImage` —— 1/14 个有
-- `GetImageSize+` —— 1/14 个有
-- `Int Literal` —— 1/14 个有
-- `PathchSageAttentionKJ` —— 1/14 个有
-- `Text Multiline` —— 1/14 个有
-- `UnetLoaderGGUF` —— 1/14 个有
+- `LoraLoaderModelOnly` —— 12/13 个有
+- `VisualizeSigmasKJ` —— 12/13 个有
+- `LTXVImgToVideoInplaceKJ` —— 11/13 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/13 个有
+- `LTXVPreprocess` —— 10/13 个有
+- `LoadImage` —— 10/13 个有
+- `DualCLIPLoaderGGUF` —— 9/13 个有
+- `UNETLoader` —— 9/13 个有
+- `PreviewImage` —— 8/13 个有
+- `DualCLIPLoader` —— 7/13 个有
+- `UnetLoaderGGUF` —— 7/13 个有
+- `Power Lora Loader (rgthree)` —— 4/13 个有
+- `VHS_VideoCombine` —— 4/13 个有
+- `ImageResizeKJv2` —— 3/13 个有
+- `StringConstantMultiline` —— 3/13 个有
+- `Label (rgthree)` —— 2/13 个有
+- `ComfyMathExpression` —— 1/13 个有
+- `DuckHideNode` —— 1/13 个有
+- `ImageFromBatch` —— 1/13 个有
+- `LTXSequencer` —— 1/13 个有
+- `MultiImageLoader` —— 1/13 个有
+- `MuyeTextEditOutput` —— 1/13 个有
+- `PromptRelayEncodeTimeline` —— 1/13 个有
+- `SaveImage` —— 1/13 个有
+- `VHS_SelectImages` —— 1/13 个有
+- `VRAM_Debug` —— 1/13 个有
+- `easy cleanGpuUsed` —— 1/13 个有
+- `easy showAnything` —— 1/13 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 361 | 97 - 361 | 13 | 79% |
+| 高度 | 25 | 25 - 25 | 13 | 100% |
 
 ## 常见问题
 
@@ -64,4 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 361，观测区间 97 - 361，13 个样本
+- 高度 中位数 25，观测区间 25 - 25，13 个样本，取值集中（一致性 100%）

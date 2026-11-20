@@ -3,77 +3,68 @@ name: unknown_workflow_sampler_clip_unet_43
 type: Unknown Workflow
 frequency: 17
 level: moderate
-coverage: 0.793765
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, Image Comparer (rgthree), KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+coverage: 0.930824
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/003.FLUX.2智能综合008.局部重绘-手动遮罩_2035253833063993346.json, 图片生成/图生图/AI扩图_2046771337133297665.json, 图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2074792058958729218.json, 图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727296331669505.json, 图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727975360126978.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2089629118886404097.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2091716631025250306.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2092058726743240706.json, 图片生成/图生图/F2K亚秒级商业产品白底精修V2.0｜带扣图开关_2092609760863543297.json, 图片生成/图生图/Flux-2-Kelin亚秒级商业产品白底精修V2.0｜带扣图开关_2113822790381035521.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图带扣图开关_2097139554640814081.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图带扣图开关_2097236497970851841.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图（带扣图开关）_2091113137687846913.json, 图片生成/图生图/Flux2-Klein亚秒级商业产品白底精修生图（带扣图开关）_2091132661388632065.json, 图片生成/图生图/flux2-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2085639645777453057.json, 图片生成/图生图/星绘-Flux2+Klein整合_2013197385870090242.json, 平台全量/flux2-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2085628894824198145.json]
+members: [图片生成/文生图/FLUX 2 文生图_1993689182549770241.json, 图片生成/文生图/FLUX 3 高质量文生图_2114203882040680450.json, 图片生成/文生图/FLUX.2-Klein多模态文生图工作流_2068581821109071873.json, 图片生成/文生图/FLUX.2-Klein文生图工作流_2015679953211232258.json, 图片生成/文生图/FLUX.2-文生图工作流-支持中文输入_1993696439157063682.json, 图片生成/文生图/FLUX.2万物生成高质感_2069427067028074497.json, 图片生成/文生图/FLUX3 Image Klein 文生图_2111346567927123970.json, 图片生成/文生图/FLUX3 Image Klein 文生图（修复版·中文繁体招牌王）_2111323705954623489.json, 图片生成/文生图/Flux 2 txt2img 2K Image Generation_2037040628390957058.json, 图片生成/文生图/Flux 3_Image_Klein开源版-文生图_2111064999098671105.json, 图片生成/文生图/Flux2-4步文生图_2007026656766074882.json, 图片生成/文生图/Flux2文生图工作流_1993542491129446401.json, 图片生成/文生图/KOOK-MOSS-SFT-观澜_2112403091164319745.json, 图片生成/文生图/MOSS IMAGE 文生图_2113649019552624641.json, 图片生成/文生图/MOSS Text-to-Image 2K Turbo Edition 图生图2K极速版_2113063260466536449.json, 图片生成/文生图/MOSS优化版-文生图工作流_2113902662948311042.json, 图片生成/文生图/自动词优化Moss-image Sft fixed文生图-低显存版_2112824054842486786.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_43
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/003.FLUX.2智能综合008.局部重绘-手动遮罩_2035253833063993346.json、图片生成/图生图/AI扩图_2046771337133297665.json、图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2074792058958729218.json、图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727296331669505.json、图片生成/图生图/F2K-渲染级产品精修V5版｜零偏移｜自动白底｜可选扣图_2089727975360126978.json…）
+> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/文生图/FLUX 2 文生图_1993689182549770241.json、图片生成/文生图/FLUX 3 高质量文生图_2114203882040680450.json、图片生成/文生图/FLUX.2-Klein多模态文生图工作流_2068581821109071873.json、图片生成/文生图/FLUX.2-Klein文生图工作流_2015679953211232258.json、图片生成/文生图/FLUX.2-文生图工作流-支持中文输入_1993696439157063682.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：17
 - **可信度**：中等可信
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
 全部 17 个 workflow 都包含：
-- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
 - `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `Image Comparer (rgthree)`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageSize` —— 16/17 个有
-- `SetNode` —— 16/17 个有
-- `Fast Groups Bypasser (rgthree)` —— 15/17 个有
-- `LoraLoaderModelOnly` —— 15/17 个有
-- `GetNode` —— 14/17 个有
-- `ImpactInt` —— 9/17 个有
-- `孤海注释` —— 9/17 个有
-- `LayerMask: BiRefNetUltra` —— 8/17 个有
-- `PreviewImage` —— 7/17 个有
-- `CR Prompt Text` —— 5/17 个有
-- `CR Text Input Switch (4 way)` —— 5/17 个有
-- `LayerMask: BiRefNetUltraV2` —— 5/17 个有
-- `LayerMask: LoadBiRefNetModel` —— 5/17 个有
-- `easy int` —— 5/17 个有
-- `DifferentialDiffusion` —— 3/17 个有
-- `InpaintModelConditioning` —— 3/17 个有
-- `GrowMaskWithBlur` —— 2/17 个有
-- `ImagePadForOutpaint` —— 2/17 个有
-- `LanPaint_MaskBlend` —— 2/17 个有
-- `PlaySound|pysssss` —— 2/17 个有
-- `CR SDXL Aspect Ratio` —— 1/17 个有
-- `easy imageRemBg` —— 1/17 个有
+- `ResolutionSelector` —— 9/17 个有
+- `LoraLoaderModelOnly` —— 6/17 个有
+- `PrimitiveStringMultiline` —— 6/17 个有
+- `ConditioningZeroOut` —— 5/17 个有
+- `FluxGuidance` —— 5/17 个有
+- `LoadImage` —— 3/17 个有
+- `SkipLayerGuidanceDiTSimple` —— 3/17 个有
+- `PreviewAny` —— 2/17 个有
+- `PreviewImage` —— 1/17 个有
+- `RH_LLMAPI_Pro_Node` —— 1/17 个有
+- `TextGenerate` —— 1/17 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 16 | 6 - 25 | 17 | 58% |
+| Prompt 约束强度(CFG) | 1 | 1 - 3 | 17 | 43% |
+| 采样算法 | euler | - | 17 | 71% |
+| 调度器 | simple | - | 17 | 88% |
+| 重绘幅度 | 1 | 1 - 1 | 17 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 5/17 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 16，观测区间 6 - 25，17 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 3，17 个样本，取值分散，一致性仅 43%
+- 采样算法 最常用 euler，17 个样本，一致性 71%
+- 调度器 最常用 simple，17 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）

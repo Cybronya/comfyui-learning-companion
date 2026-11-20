@@ -3,82 +3,73 @@ name: text_to_image_lora_sampler_clip_322
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.896333
-common_nodes: [CFGGuider, CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, EmptyLatentImage, Flux2Scheduler, GetImageSize, Image Comparer (rgthree), ImageScaleToTotalPixels, KSampler, KSamplerSelect, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.836333
+common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, PrimitiveStringMultiline, ResolutionSelector, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Flux2 Klein 9B图像编辑+Lora-单图 浮云2.9_2020706923749842945.json, 图片生成/图生图/Flux2 Klein 9B图像编辑对比-单图 浮云2.7_2017520141579325442.json, 图片生成/图生图/Flux2 Klein 图像编辑对比-单图_2012134645369933826.json, 图片生成/图生图/Flux2 Klein 图像编辑对比-多图_2012149655513075714.json, 图片生成/图生图/千问2511 图像编辑对比-单图 浮云2.7_2020065708322856962.json, 图片生成/文生图/Flux2-Klein文生图_单图编辑_多图融合工作流合集_2014665385068466178.json]
+members: [图片生成/反推提示词/MOSS image提示增强反推风格参考｜文生图全能流_2114038286766403585.json, 图片生成/反推提示词/Moss image SFT高质量加速V2 文生图反推处理工具_2113418743924744193.json, 图片生成/反推提示词/Moss-image三模式文生图，Sft+Fixed组合反推提示词出图_2112601764338946050.json, 图片生成/反推提示词/Moss全流程文生图 提示词优化反推图像生成工具_2113381718588739585.json, 图片生成/反推提示词/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json, 图片生成/图生图/MOSS Image布局控制图像设计 SFT双模式图生图工具_2113052080075268097.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_322
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 9B图像编辑+Lora-单图 浮云2.9_2020706923749842945.json、图片生成/图生图/Flux2 Klein 9B图像编辑对比-单图 浮云2.7_2017520141579325442.json、图片生成/图生图/Flux2 Klein 图像编辑对比-单图_2012134645369933826.json、图片生成/图生图/Flux2 Klein 图像编辑对比-多图_2012149655513075714.json、图片生成/图生图/千问2511 图像编辑对比-单图 浮云2.7_2020065708322856962.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/反推提示词/MOSS image提示增强反推风格参考｜文生图全能流_2114038286766403585.json、图片生成/反推提示词/Moss image SFT高质量加速V2 文生图反推处理工具_2113418743924744193.json、图片生成/反推提示词/Moss-image三模式文生图，Sft+Fixed组合反推提示词出图_2112601764338946050.json、图片生成/反推提示词/Moss全流程文生图 提示词优化反推图像生成工具_2113381718588739585.json、图片生成/反推提示词/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
-- `CFGGuider`
-- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
 - `EmptyLatentImage`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `Image Comparer (rgthree)`
-- `ImageScaleToTotalPixels`
+- `JjkText`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageReel`
-- `LayerUtility: ImageReelComposit`
-- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `FluxKontextMultiReferenceLatentMethod` —— 5/6 个有
-- `FluxResolutionNode` —— 5/6 个有
-- `ImpactInt` —— 5/6 个有
-- `ImpactSwitch` —— 5/6 个有
-- `KOOK_ImageCompression` —— 5/6 个有
-- `RH_LLMAPI_NODE` —— 5/6 个有
-- `Text Multiline` —— 5/6 个有
-- `TextEncodeQwenImageEditPlus` —— 5/6 个有
-- `easy showAnything` —— 5/6 个有
-- `LayerUtility: PurgeVRAM` —— 3/6 个有
-- `ImageConcanate` —— 2/6 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 2/6 个有
-- `CR Prompt Text` —— 1/6 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/6 个有
-- `INTConstant` —— 1/6 个有
-- `easy cleanGpuUsed` —— 1/6 个有
+- `ComfySwitchNode` —— 5/6 个有
+- `EmptyFlux2LatentImage` —— 5/6 个有
+- `PreviewAny` —— 5/6 个有
+- `TextGenerate` —— 5/6 个有
+- `LoadImage` —— 4/6 个有
+- `PrimitiveBoolean` —— 4/6 个有
+- `SkipLayerGuidanceDiTSimple` —— 2/6 个有
+- `easy showAnything` —— 2/6 个有
+- `CreateBoundingBoxes` —— 1/6 个有
+- `ImageCompare` —— 1/6 个有
+- `MOSSImageBlockCacheT8` —— 1/6 个有
+- `MOSSImageLayoutPrompt` —— 1/6 个有
+- `MOSSImagePromptEnhancerT8` —— 1/6 个有
+- `QwenImage21Cache` —— 1/6 个有
+- `SaveImageAdvanced` —— 1/6 个有
+- `SeedNode` —— 1/6 个有
+- `StringConcatenate` —— 1/6 个有
+- `TextEncodeQwenImage21` —— 1/6 个有
+- `Textbox` —— 1/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 616 | 512 - 720 | 6 | 83% |
-| 高度 | 896 | 512 - 1280 | 6 | 57% |
-| 采样步数 | 8 | 8 - 8 | 6 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
-| 采样算法 | euler | - | 6 | 100% |
-| 调度器 | simple | - | 6 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 6 | 100% |
+| 采样算法 | er_sde | - | 6 | 100% |
+| 调度器 | beta | - | 6 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
+| 宽度 | 80 | 80 - 80 | 6 | 100% |
+| 高度 | 80 | 80 - 80 | 6 | 100% |
 
 ## 常见问题
 
@@ -88,11 +79,11 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 宽度 中位数 616，观测区间 512 - 720，6 个样本，取值集中（一致性 83%）
-- 高度 中位数 896，观测区间 512 - 1280，6 个样本
-- 采样步数 中位数 8，观测区间 8 - 8，6 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，6 个样本，一致性 100%
-- 调度器 最常用 simple，6 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，6 个样本，一致性 100%
+- 调度器 最常用 beta，6 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，6 个样本，取值集中（一致性 100%）
 - 高发问题（8/6 个样本）：Steps较低可能导致细节不足

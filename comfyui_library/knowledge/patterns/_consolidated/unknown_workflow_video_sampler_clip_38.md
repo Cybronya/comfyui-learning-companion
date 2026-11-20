@@ -1,84 +1,92 @@
 ---
 name: unknown_workflow_video_sampler_clip_38
 type: Unknown Workflow
-frequency: 14
-level: strong
-coverage: 0.767429
-common_nodes: [CLIPLoader, CLIPTextEncode, ImageScaleBy, JWInteger, KSamplerAdvanced, MathExpression|pysssss, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, Pick From Batch (mtb), PrimitiveStringMultiline, RIFE VFI, Seed (rgthree), UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, easy showAnything, wanBlockSwap]
+frequency: 13
+level: moderate
+coverage: 0.986462
+common_nodes: [AudioCrop, AudioSeparation, CFGGuider, CLIPTextEncode, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, KSamplerSelect, LTX2_NAG, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVConditioning, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LoadAudio, LoadImage, ManualSigmas, MathExpression|pysssss, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SolidMask, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine, easy float, easy getNode, easy setNode]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan 2.2 Smooth Mix + Foley：图生视频（音画同步）_2036101580507844609.json, 视频生成/图生视频/Wan 2.2 Smooth Mix：图生视频（动作流畅，无色差）_1986816558620209154.json, 视频生成/图生视频/【Wan2.2】丝滑图生视频 Smooth Mix Wan 2.2_1979770513943859201.json, 视频生成/图生视频/【图生视频】Smooth Mix Wan 2.2_1979752163389902850.json, 视频生成/图生视频/【图生视频】Wan 2.2_2046037420713451522.json, 视频生成/图生视频/首尾帧驱动，AI自动补全叙事(Smooth Mix Wan 2.2)_1987142608080318466.json, 视频生成/图生视频/首尾帧驱动，AI自动补全叙事(Smooth Mix Wan 2.2)_2059074218825965569.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频_1989368083322163201.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频（流畅如丝，内置补帧）_1984903672830312450.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，流畅如丝，细节如画！_1979696533400621058.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，流畅如丝，细节如画！_2013566157537681410.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，流畅如丝，细节如画！_2013815011306643457.json, 视频生成/文生视频/Smooth Mix Wan 2.2：文生视频，高质量生成_2006002817242447874.json, 视频生成/文生视频/Smooth+Mix+Wan+2.2：文生视频，高质量 流畅视频_2009979362870824961.json]
+members: [图片生成/图生图/LTX2.3图片数字人_2041815038444441602.json, 图片生成/图生图/图+音频生唱歌：LTX 2.3_2069371802400419841.json, 数字人/数字人/LTX2.3图片数字人_2037856663717289985.json, 数字人/数字人/LTX2.3超强一致性数字人_2044379214362714113.json, 数字人/数字人/LTX2.3超强一致性数字人_2046938947288305665.json, 数字人/数字人/LTX2.3超强一致性数字人去字幕优化版v2_2046132644798275586.json, 数字人/数字人/图片数字人(LTX2.3)_2041738934023102466.json, 视频生成/图生视频/LTX2.3 数字人_2041853931457880066.json, 视频生成/图生视频/LTX2.3单图数字人_2064665242105372674.json, 视频生成/图生视频/LTX2.3图片数字人_2069015764195176450.json, 视频生成/图生视频/LTX2.3超强一致性数字人去字幕过渡超高质量lora但速度慢v2_2046558500209299457.json, 视频生成/图生视频/LTX2.3超强一致性数字人去字幕过渡超高质量lora但速度慢v2_2048669501297790977.json, 视频生成/图生视频/LTX2.3（kj版）首帧-数字人（动效好，速度快)_2079548676040646657.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_38
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/图生视频/Wan 2.2 Smooth Mix + Foley：图生视频（音画同步）_2036101580507844609.json、视频生成/图生视频/Wan 2.2 Smooth Mix：图生视频（动作流畅，无色差）_1986816558620209154.json、视频生成/图生视频/【Wan2.2】丝滑图生视频 Smooth Mix Wan 2.2_1979770513943859201.json、视频生成/图生视频/【图生视频】Smooth Mix Wan 2.2_1979752163389902850.json、视频生成/图生视频/【图生视频】Wan 2.2_2046037420713451522.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/LTX2.3图片数字人_2041815038444441602.json、图片生成/图生图/图+音频生唱歌：LTX 2.3_2069371802400419841.json、数字人/数字人/LTX2.3图片数字人_2037856663717289985.json、数字人/数字人/LTX2.3超强一致性数字人_2044379214362714113.json、数字人/数字人/LTX2.3超强一致性数字人_2046938947288305665.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：14
-- **可信度**：强结论
-- **平均知识覆盖**：77%
+- **样本数**：13
+- **可信度**：中等可信
+- **平均知识覆盖**：99%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `CLIPLoader`
+全部 13 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ImageScaleBy`
-- `JWInteger`
-- `KSamplerAdvanced`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `ImageResizeKJv2`
+- `KSamplerSelect`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVLatentUpsampler`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `LoadImage`
+- `ManualSigmas`
 - `MathExpression|pysssss`
-- `ModelPatchTorchSettings`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `Pick From Batch (mtb)`
-- `PrimitiveStringMultiline`
-- `RIFE VFI`
-- `Seed (rgthree)`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `VAEDecodeTiled`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `easy cleanGpuUsed`
-- `easy showAnything`
-- `wanBlockSwap`
+- `easy float`
+- `easy getNode`
+- `easy setNode`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 13/14 个有
-- `SaveImage` —— 13/14 个有
-- `ImpactSwitch` —— 12/14 个有
-- `RH_LLMAPI_NODE` —— 12/14 个有
-- `Text Concatenate` —— 12/14 个有
-- `Wan22PromptSelector` —— 12/14 个有
-- `WanImageToVideo` —— 12/14 个有
-- `Label (rgthree)` —— 8/14 个有
-- `LoadImage` —— 8/14 个有
-- `CLIPVisionEncode` —— 7/14 个有
-- `CLIPVisionLoader` —— 7/14 个有
-- `LogicGateNegateValue` —— 7/14 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 5/14 个有
-- `ShowText` —— 5/14 个有
-- `ImageResizeKJv2` —— 2/14 个有
-- `WanFirstLastFrameToVideo` —— 2/14 个有
-- `AudioAdjustVolume` —— 1/14 个有
-- `Bool` —— 1/14 个有
-- `ConvertAny2Float` —— 1/14 个有
-- `EmptyAudio` —— 1/14 个有
-- `HunyuanVideoFoley` —— 1/14 个有
-- `PreviewAudio` —— 1/14 个有
-- `RH_Translator` —— 1/14 个有
-- `easy ifElse` —— 1/14 个有
+- `Audio Duration (mtb)` —— 12/13 个有
+- `CR Float To Integer` —— 12/13 个有
+- `DiffusionModelLoaderKJ` —— 12/13 个有
+- `easy int` —— 12/13 个有
+- `LTXVScheduler` —— 11/13 个有
+- `LatentUpscaleModelLoader` —— 11/13 个有
+- `LTXVChunkFeedForward` —— 8/13 个有
+- `LTXVImgToVideoInplace` —— 8/13 个有
+- `VRAMReserver` —— 7/13 个有
+- `LoraLoaderModelOnly` —— 6/13 个有
+- `easy showAnything` —— 6/13 个有
+- `LTXVCropGuides` —— 5/13 个有
+- `LTXVImgToVideoInplaceKJ` —— 5/13 个有
+- `JWFloat` —— 3/13 个有
+- `JWIntegerToString` —— 3/13 个有
+- `1hew_AudioDuration` —— 1/13 个有
+- `Bjornulf_FreeVRAM` —— 1/13 个有
+- `CR Text` —— 1/13 个有
+- `Fast Groups Muter (rgthree)` —— 1/13 个有
+- `FlashVSRInitPipe` —— 1/13 个有
+- `FlashVSRNodeAdv` —— 1/13 个有
+- `LayerUtility: PurgeVRAM V2` —— 1/13 个有
+- `MelBandRoFormerModelLoader` —— 1/13 个有
+- `MelBandRoFormerSampler` —— 1/13 个有
+- `SaveAudioMP3` —— 1/13 个有
+- `TTResolutionSelector` —— 1/13 个有
+- `UNETLoader` —— 1/13 个有
+- `VHS_LoadVideo` —— 1/13 个有
+- `easy anythingIndexSwitch` —— 1/13 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | randomize | - | 14 | 50% |
-| Prompt 约束强度(CFG) | 10 | 10 - 10 | 14 | 100% |
-| 采样算法 | 1 | 1 - 1 | 14 | 100% |
-| 调度器 | euler_ancestral | - | 14 | 100% |
-| 重绘幅度 | simple | - | 14 | 100% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -86,8 +94,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，14 个样本，一致性 50%
-- Prompt 约束强度(CFG) 中位数 10，观测区间 10 - 10，14 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler_ancestral，14 个样本，一致性 100%
-- 重绘幅度 最常用 simple，14 个样本，一致性 100%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

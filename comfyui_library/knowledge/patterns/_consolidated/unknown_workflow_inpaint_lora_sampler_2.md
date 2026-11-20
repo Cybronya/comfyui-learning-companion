@@ -1,106 +1,79 @@
 ---
 name: unknown_workflow_inpaint_lora_sampler_2
 type: Unknown Workflow
-frequency: 25
+frequency: 15
 level: strong
-coverage: 0.90248
-common_nodes: [AddMask, BlendInpaint, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CM_IntBinaryOperation, CM_NumberToInt, CachePreviewBridge, ColorMatch, ConditioningZeroOut, CutForInpaint, DifferentialDiffusion, DownloadAndLoadFlorence2Model, Florence2Run, FluxGuidance, Get Image Size, GrowMaskWithBlur, ImageAndMaskPreview, ImageConcanate, ImageCrop+, ImageMaskSwitch, ImageToMask, InpaintModelConditioning, Int Literal, IsMaskEmpty, KSampler, LayerMask: PersonMaskUltra V2, LayerUtility: ColorImage V2, LayerUtility: CropByMask V2, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LoadImage, LoraLoaderModelOnly, Mask Fill Holes, MaskToImage, PreviewImage, RHHiddenNodes, RepeatLatentBatch, SaveImage, StyleModelApply, StyleModelLoader, SubtractMask, UNETLoader, VAEDecode, VAELoader, easy cleanGpuUsed, easy mathInt, workflow>123, workflow>zz]
-problems: []
+coverage: 0.853
+common_nodes: [CFGNorm, CLIPLoader, ConditioningZeroOut, CropWithPadInfo, FluxKontextMultiReferenceLatentMethod, GetNode, Image Comparer (rgthree), ImageAndMaskPreview, InpaintStitchImproved, KSampler, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, PreviewImage, PrimitiveStringMultiline, QwenEditOutputExtractor, RHHiddenNodes, SaveImage, SetNode, TextEncodeQwenImageEditPlusCustom_lrzjason, UNETLoader, UnetLoaderGGUF, VAEDecode, VAELoader, easy imageConcat, easy int]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/AI换脸丨FLUX Fill＋Redux丨妆容眼镜迁移_2099780352662401025.json, 图片生成/图生图/Face and Head Swap 换脸换头+表情复刻+妆容迁移_2097132475427414017.json, 图片生成/图生图/Face_and_Head_Swap_换脸换头+表情复刻+妆容迁移_2098904543428960258.json, 图片生成/图生图/Face_and_Head_Swap_换脸换头+表情复刻+妆容迁移_2098970368957575170.json, 图片生成/图生图/【CQ808】换脸-V2_2037468637665169409.json, 图片生成/图生图/一键换脸-支持眼镜、妆容-后期搭配动作迁移、人物替换无敌！_2034916228472512514.json, 图片生成/图生图/人物换脸【支持眼镜、妆容】_1988437528309096450.json, 图片生成/图生图/换脸-支持眼镜、妆容Face Swap—Supports Glasses and Makeup_2094977915917266946.json, 图片生成/图生图/换脸-支持眼镜、妆容Face Swap—Supports Glasses and Makeup_2095757267034525698.json, 图片生成/图生图/换脸-支持眼镜、妆容Face Swap—Supports Glasses and Makeup_2096845139057664001.json, 图片生成/图生图/换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2098978249643749378.json, 图片生成/图生图/换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2099135250055131138.json, 图片生成/图生图/换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2100074137111846913.json, 图片生成/图生图/换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2101491472297189378.json, 图片生成/图生图/换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2102305436341985281.json, 图片生成/图生图/换脸_1986649960412282882.json, 图片生成/图生图/最新无痕换脸换头+表情复刻+妆容迁移+眼镜_2080111188746264578.json, 图片生成/图生图/最新无痕换脸换头+表情复刻+妆容迁移+眼镜图生图_2078064288127868929.json, 平台全量/换脸-支持眼镜、妆容Face Swap—Supports Glasses and Makeup_2118146943733026818.json, 平台全量/换脸-支持眼镜、妆容_1905270593074434049.json, 平台全量/换脸-支持眼镜、妆容_1977345096058327042.json, 平台全量/换脸-支持眼镜、妆容_2040048249863671809.json, 平台全量/换脸换头 表情复刻 妆容迁移 眼镜_2072566174403092481.json, 平台全量/无偏色偏差换脸真实无痕高还原度换头_2077922151742656513.json, 平台全量/最新无痕换脸换头+表情复刻+妆容迁移+眼镜_2077581481265946626.json]
+members: [图片生成/图生图/万物迁移局部重绘+4K高清+_2094586188085682177.json, 图片生成/图生图/万物迁移局部重绘+4K高清+_2097131655344508929.json, 图片生成/图生图/万物迁移局部重绘+4K高清+_2097230454498881537.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2019308573083312129.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2056986344089542658.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2084074874313728002.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2084537756524564482.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2084903756356997122.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2084995717353000962.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2085203465571229698.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2085207817744642050.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2085888011966959617.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2086649145699422210.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2088505371513151490.json, 图片生成/图生图/万物迁移局部重绘+4K高清_2094318355120476161.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_inpaint_lora_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/图生图/AI换脸丨FLUX Fill＋Redux丨妆容眼镜迁移_2099780352662401025.json、图片生成/图生图/Face and Head Swap 换脸换头+表情复刻+妆容迁移_2097132475427414017.json、图片生成/图生图/Face_and_Head_Swap_换脸换头+表情复刻+妆容迁移_2098904543428960258.json、图片生成/图生图/Face_and_Head_Swap_换脸换头+表情复刻+妆容迁移_2098970368957575170.json、图片生成/图生图/【CQ808】换脸-V2_2037468637665169409.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/万物迁移局部重绘+4K高清+_2094586188085682177.json、图片生成/图生图/万物迁移局部重绘+4K高清+_2097131655344508929.json、图片生成/图生图/万物迁移局部重绘+4K高清+_2097230454498881537.json、图片生成/图生图/万物迁移局部重绘+4K高清_2019308573083312129.json、图片生成/图生图/万物迁移局部重绘+4K高清_2056986344089542658.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
+- **样本数**：15
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `AddMask`
-- `BlendInpaint`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CM_IntBinaryOperation`
-- `CM_NumberToInt`
-- `CachePreviewBridge`
-- `ColorMatch`
+全部 15 个 workflow 都包含：
+- `CFGNorm`
+- `CLIPLoader`
 - `ConditioningZeroOut`
-- `CutForInpaint`
-- `DifferentialDiffusion`
-- `DownloadAndLoadFlorence2Model`
-- `Florence2Run`
-- `FluxGuidance`
-- `Get Image Size`
-- `GrowMaskWithBlur`
+- `CropWithPadInfo`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetNode`
+- `Image Comparer (rgthree)`
 - `ImageAndMaskPreview`
-- `ImageConcanate`
-- `ImageCrop+`
-- `ImageMaskSwitch`
-- `ImageToMask`
-- `InpaintModelConditioning`
-- `Int Literal`
-- `IsMaskEmpty`
+- `InpaintStitchImproved`
 - `KSampler`
-- `LayerMask: PersonMaskUltra V2`
-- `LayerUtility: ColorImage V2`
-- `LayerUtility: CropByMask V2`
-- `LayerUtility: ImageBlend`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `LayerUtility: ImageScaleRestore V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `Mask Fill Holes`
-- `MaskToImage`
+- `ModelSamplingAuraFlow`
 - `PreviewImage`
+- `PrimitiveStringMultiline`
+- `QwenEditOutputExtractor`
 - `RHHiddenNodes`
-- `RepeatLatentBatch`
 - `SaveImage`
-- `StyleModelApply`
-- `StyleModelLoader`
-- `SubtractMask`
+- `SetNode`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
 - `UNETLoader`
+- `UnetLoaderGGUF`
 - `VAEDecode`
 - `VAELoader`
-- `easy cleanGpuUsed`
-- `easy mathInt`
-- `workflow>123`
-- `workflow>zz`
-
-**可变部分**（部分 workflow 才有）：
-- `ImpactInt` —— 24/25 个有
-- `ImageScale` —— 22/25 个有
-- `easy imageSize` —— 22/25 个有
-- `EmptyImage` —— 5/25 个有
-- `ImageResizeKJ` —— 3/25 个有
-- `GetNode` —— 1/25 个有
-- `SetNode` —— 1/25 个有
+- `easy imageConcat`
+- `easy int`
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 25 | 25 - 25 | 25 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 25 | 100% |
-| 采样算法 | euler | - | 25 | 100% |
-| 调度器 | beta | - | 25 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 25 | 100% |
+| 采样步数 | 4 | 4 - 4 | 15 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 15 | 100% |
+| 采样算法 | euler | - | 15 | 100% |
+| 调度器 | simple | - | 15 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 15 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 15/15 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 25，观测区间 25 - 25，25 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，25 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，25 个样本，一致性 100%
-- 调度器 最常用 beta，25 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，25 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，15 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，15 个样本，一致性 100%
+- 调度器 最常用 simple，15 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，15 个样本，取值集中（一致性 100%）
+- 高发问题（15/15 个样本）：Steps较低可能导致细节不足

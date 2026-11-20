@@ -3,32 +3,33 @@ name: unknown_workflow_sampler_clip_unet_26
 type: Unknown Workflow
 frequency: 22
 level: moderate
-coverage: 0.926
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, KSamplerSelect, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
+coverage: 0.900318
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/Flux2 Klein 商业级人像精修｜超强一致性_2085535726921404417.json, 图片生成/图生图/Flux2 Klein_转精致3D建模风格_2041871546448351234.json, 图片生成/图生图/Flux2 Klein_转精致3D建模风格_2042590574431182849.json, 图片生成/图生图/Flux2 Klein｜1 图像编辑（终极版V3：角色一致性，保留角色全身特征）_2052041548086427649.json, 图片生成/图生图/Flux2 Sun Direction LoRA 精确控制‌图片光影_2087880030058795010.json, 图片生成/图生图/Flux2 klein 单图编辑_2062060544747728897.json, 图片生成/图生图/Flux2 klein 双图编辑_2062063724688658433.json, 图片生成/图生图/Flux2 klein 图生图+高清放大_2062043788545191938.json, 图片生成/图生图/Flux2 klein 多图编辑_2062073276687540225.json, 图片生成/图生图/Flux2+Klein9b全能图像编辑：超强一致性全能图像模型_2031926623477436417.json, 图片生成/图生图/Flux2Klein9b万物迁移_2065953597262749698.json, 图片生成/图生图/Flux2_Klein_商业级人像精修｜超强一致性_2085908338545614849.json, 图片生成/图生图/Flux2_Klein_商业级人像精修｜超强一致性_2085926483779997698.json, 图片生成/图生图/Flux2_Sun_Direction_LoRA_精确控制‌图片光影_2091354005774622721.json, 图片生成/图生图/Flux2_Sun_Direction_LoRA_精确控制‌图片光影_2091821134911201281.json, 图片生成/图生图/Flux2_Sun_Direction_LoRA_精确控制‌图片光影_2092610607378944002.json, 图片生成/图生图/Flux2_klein_图生图+高清放大_2072851483212734466.json, 图片生成/图生图/Klein细节修复+SeedVR2图像放大_2031519082889093121.json, 图片生成/图生图/Klein细节修复+SeedVR2图像放大_2116710198713872385.json, 图片生成/图生图/Klein细节修复+SeedVR2图像放大_2116724754924265473.json, "图片生成/图生图/电商神器flux-2-klein+SeedVR2细节增强+4倍放大模型,适用人物皮肤服饰面料纹理_2034815871520083969.json", "图片生成/图生图/电商神器flux-2-klein+SeedVR2细节增强+4倍放大模型,适用人物皮肤服饰面料纹理_2037006862268239874.json"]
+members: [图片生成/图生图/FLUX 2 一键洗图 去水印 提升画面质感 调色融图_1994453323245817857.json, 图片生成/图生图/FLUX-2-klein-4B_精准换头LoRA_2012004120126824449.json, 图片生成/图生图/FLUX-2-klein-4b-fp8_4步9秒出图工作流_2007647082005405697.json, 图片生成/图生图/FLUX-2-klein-4b-fp8_卡通LoRA_2014135720021069826.json, 图片生成/图生图/FLUX-2-klein-9B_人物关键点图LoRA动作设计_2017766958040616962.json, 图片生成/图生图/FLUX.2 单图修改来了！支持中文改图！保持一致性_1993497390741209090.json, 图片生成/图生图/FLUX.2 双图融合_1993494554741587970.json, 图片生成/图生图/FLUX.2 最新改图模型！支持中文改图！保持一致性！_1993507040419053570.json, 图片生成/图生图/FLUX2-双图融合_1994060636019769346.json, 图片生成/图生图/Flux Klein 9b FP8 多图参考 极简工作流_2015303258776014849.json, 图片生成/图生图/Flux Klein 9b FP8 多角度参考图生成 极简工作流_2015300779183181825.json, 图片生成/图生图/Flux Klein 9b fp8 单图编辑_2012792860650774529.json, 图片生成/图生图/Flux2 Dev 单图编辑_1999318601045770242.json, 图片生成/图生图/Flux2 Dev 双图编辑_1999317364070023170.json, 图片生成/图生图/Flux2 单图编辑加速版V2（加强版）_1993502440953675777.json, 图片生成/图生图/Flux2 双图编辑加速版V1（增强版）_1993501397798895618.json, 图片生成/图生图/Flux2+电商产品换背景_1993605861067210753.json, 图片生成/图生图/Flux2+电商产品换背景_1996101439929925633.json, 图片生成/图生图/Flux2_FP8 工作流 5080可以跑_1994454939474726914.json, 图片生成/图生图/Flux2一键换脸_1993565462101508097.json, 图片生成/图生图/Flux2可控视角多角度控制V1_2006048912230064130.json, 图片生成/图生图/flux2 dev单图编辑【全能图片V1平替】_1999825664515731458.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_26
 
-> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/Flux2 Klein 商业级人像精修｜超强一致性_2085535726921404417.json、图片生成/图生图/Flux2 Klein_转精致3D建模风格_2041871546448351234.json、图片生成/图生图/Flux2 Klein_转精致3D建模风格_2042590574431182849.json、图片生成/图生图/Flux2 Klein｜1 图像编辑（终极版V3：角色一致性，保留角色全身特征）_2052041548086427649.json、图片生成/图生图/Flux2 Sun Direction LoRA 精确控制‌图片光影_2087880030058795010.json…）
+> 由 `engine/knowledge_consolidation` 从 22 个 workflow 归纳得出（图片生成/图生图/FLUX 2 一键洗图 去水印 提升画面质感 调色融图_1994453323245817857.json、图片生成/图生图/FLUX-2-klein-4B_精准换头LoRA_2012004120126824449.json、图片生成/图生图/FLUX-2-klein-4b-fp8_4步9秒出图工作流_2007647082005405697.json、图片生成/图生图/FLUX-2-klein-4b-fp8_卡通LoRA_2014135720021069826.json、图片生成/图生图/FLUX-2-klein-9B_人物关键点图LoRA动作设计_2017766958040616962.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：22
 - **可信度**：中等可信
-- **平均知识覆盖**：93%
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
 全部 22 个 workflow 都包含：
-- `CFGGuider`
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
+- `EmptyFlux2LatentImage`
 - `Flux2Scheduler`
 - `KSamplerSelect`
+- `LoadImage`
 - `RandomNoise`
 - `ReferenceLatent`
 - `SamplerCustomAdvanced`
@@ -39,29 +40,24 @@ source: knowledge_consolidation
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadImage` —— 20/22 个有
-- `EmptyFlux2LatentImage` —— 19/22 个有
-- `GetImageSize` —— 17/22 个有
-- `Image Comparer (rgthree)` —— 17/22 个有
-- `LoraLoaderModelOnly` —— 15/22 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 14/22 个有
-- `ImageScaleToTotalPixels` —— 13/22 个有
-- `SeedVR2LoadDiTModel` —— 12/22 个有
-- `SeedVR2LoadVAEModel` —— 12/22 个有
-- `SeedVR2VideoUpscaler` —— 12/22 个有
-- `CR Text` —— 9/22 个有
-- `Anything Everywhere` —— 5/22 个有
-- `ColorMatch` —— 5/22 个有
-- `ImageSharpen` —— 5/22 个有
-- `easy int` —— 5/22 个有
-- `SphereLightNode` —— 4/22 个有
+- `FluxGuidance` —— 19/22 个有
+- `ImageScaleToTotalPixels` —— 19/22 个有
+- `ModelPatchTorchSettings` —— 13/22 个有
+- `PathchSageAttentionKJ` —— 13/22 个有
+- `CR Prompt Text` —— 8/22 个有
+- `EasyCache` —— 7/22 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/22 个有
+- `PrimitiveInt` —— 6/22 个有
+- `LoraLoaderModelOnly` —— 4/22 个有
+- `UnetLoaderGGUF` —— 4/22 个有
 - `GetImageSize+` —— 3/22 个有
-- `Int` —— 3/22 个有
 - `PreviewImage` —— 3/22 个有
-- `Fast Groups Muter (rgthree)` —— 2/22 个有
-- `MuyeLoadImage` —— 2/22 个有
-- `HAIGC_SavePSD` —— 1/22 个有
-- `IdentityFeatureTransferV3` —— 1/22 个有
+- `Image Comparer (rgthree)` —— 2/22 个有
+- `INTConstant` —— 1/22 个有
+- `ImageConcatMulti` —— 1/22 个有
+- `LayerMask: PersonMaskUltra V2` —— 1/22 个有
+- `MaskColorize` —— 1/22 个有
+- `QwenMultiangleCameraNode` —— 1/22 个有
 
 ## 典型参数
 

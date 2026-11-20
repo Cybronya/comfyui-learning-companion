@@ -1,86 +1,85 @@
 ---
 name: unknown_workflow_upscale_lora_sampler_29
 type: Unknown Workflow
-frequency: 8
-level: moderate
-coverage: 0.88775
-common_nodes: [CLIPLoader, EmptyLatentImage, ImageBlend, ImageScale, ImageScaleBy, ImageUpscaleWithModel, KSamplerAdvanced, LoraLoaderModelOnly, PreviewImage, ResolutionSelector, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader]
-problems: []
+frequency: 7
+level: weak
+coverage: 0.849429
+common_nodes: [CLIPTextEncode, DualCLIPLoader, Image Comparer (rgthree), ImageUpscaleWithModel, KSampler, LoraLoaderModelOnly, PreviewImage, SaveImage, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageBatchToImageList, easy imageListToImageBatch]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Krea2 高清质感修复_2094422883429871618.json, 图片生成/图生图/Krea2_高清质感修复_2096519510642749441.json, 图片生成/图生图/Krea2_高清质感修复_2096878666562236418.json, 图片生成/文生图/Krea2_文生图直出4K高清工作流_2086439888332873729.json, 图片生成/文生图/Krea2_文生图直出4K高清工作流_2087386381529210881.json, 图片生成/文生图/krea2-UE5法相_2095537231166529537.json, 图片生成/文生图/krea2-中秋_2101322859917438977.json, 数字人/数字人/krea2-UE5角色定妆照_2090840952448573441.json]
+members: [图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_2K高清放大工作流-可在线或线下运行_1951953561489977345.json, 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json, 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD标准版_2K高清放大工作流-可在线和本地使用_1951946483614560258.json, 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD标准版_4K高清放大工作流-可在线和本地使用_1951977232698953729.json, 图片生成/文生图/Flux Krea-文生图+ttp高清放大_1967396109779865602.json, 图片生成/文生图/【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json, 图片生成/文生图/混元HUNYUAN2.1文生图+TTP高清修复_1977247385053208578.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_upscale_lora_sampler_29
 
-> 由 `engine/knowledge_consolidation` 从 8 个 workflow 归纳得出（图片生成/图生图/Krea2 高清质感修复_2094422883429871618.json、图片生成/图生图/Krea2_高清质感修复_2096519510642749441.json、图片生成/图生图/Krea2_高清质感修复_2096878666562236418.json、图片生成/文生图/Krea2_文生图直出4K高清工作流_2086439888332873729.json、图片生成/文生图/Krea2_文生图直出4K高清工作流_2087386381529210881.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_2K高清放大工作流-可在线或线下运行_1951953561489977345.json、图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json、图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD标准版_2K高清放大工作流-可在线和本地使用_1951946483614560258.json、图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD标准版_4K高清放大工作流-可在线和本地使用_1951977232698953729.json、图片生成/文生图/Flux Krea-文生图+ttp高清放大_1967396109779865602.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：8
-- **可信度**：中等可信
-- **平均知识覆盖**：89%
+- **样本数**：7
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 8 个 workflow 都包含：
-- `CLIPLoader`
-- `EmptyLatentImage`
-- `ImageBlend`
-- `ImageScale`
-- `ImageScaleBy`
+全部 7 个 workflow 都包含：
+- `CLIPTextEncode`
+- `DualCLIPLoader`
+- `Image Comparer (rgthree)`
 - `ImageUpscaleWithModel`
-- `KSamplerAdvanced`
+- `KSampler`
 - `LoraLoaderModelOnly`
 - `PreviewImage`
-- `ResolutionSelector`
 - `SaveImage`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `UpscaleModelLoader`
 - `VAEDecode`
 - `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
+- `easy imageBatchToImageList`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 5/8 个有
-- `ConditioningZeroOut` —— 3/8 个有
-- `Image Comparer (rgthree)` —— 3/8 个有
-- `Krea2EditGroundedEncode` —— 3/8 个有
-- `Krea2EditModelPatch` —— 3/8 个有
-- `LoadImage` —— 3/8 个有
-- `PrimitiveStringMultiline` —— 3/8 个有
-- `easy imageColorMatch` —— 3/8 个有
-- `easy mathInt` —— 3/8 个有
-- `llama_cpp_instruct_adv` —— 3/8 个有
-- `llama_cpp_model_loader` —— 3/8 个有
-- `Lora Loader Stack (rgthree)` —— 2/8 个有
-- `PreviewAny` —— 1/8 个有
-- `Seed (rgthree)` —— 1/8 个有
-- `easy promptList` —— 1/8 个有
-- `easy showAnything` —— 1/8 个有
+- `ConditioningZeroOut` —— 6/7 个有
+- `EmptySD3LatentImage` —— 5/7 个有
+- `ImageResizeKJ` —— 5/7 个有
+- `ImageSmartSharpen+` —— 5/7 个有
+- `Fast Groups Muter (rgthree)` —— 4/7 个有
+- `Anything Everywhere3` —— 3/7 个有
+- `EmptyHunyuanImageLatent` —— 2/7 个有
+- `FluxResolutionNode` —— 2/7 个有
+- `HunyuanRefinerLatent` —— 2/7 个有
+- `ImageCASharpening+` —— 2/7 个有
+- `ImageScaleBy` —— 2/7 个有
+- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
+- `RH_Translator` —— 2/7 个有
+- `VAEEncodeTiled` —— 2/7 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1024 | 512 - 1024 | 8 | 70% |
-| 高度 | 1536 | 512 - 1536 | 8 | 57% |
-| 采样步数 | fixed | - | 8 | 75% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 8 | 100% |
-| 采样算法 | 1 | 1 - 1 | 8 | 100% |
-| 调度器 | euler | - | 8 | 75% |
-| 重绘幅度 | simple | - | 8 | 100% |
+| 采样步数 | 4 | 2 - 30 | 7 | 8% |
+| Prompt 约束强度(CFG) | 2.5 | 1 - 2.5 | 7 | 67% |
+| 采样算法 | euler | - | 7 | 100% |
+| 调度器 | sgm_uniform | - | 7 | 43% |
+| 重绘幅度 | 0.3 | 0.3 - 1 | 7 | 37% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 7/7 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1024，观测区间 512 - 1024，8 个样本
-- 高度 中位数 1536，观测区间 512 - 1536，8 个样本
-- 采样步数 最常用 fixed，8 个样本，一致性 75%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，8 个样本，一致性 75%
-- 重绘幅度 最常用 simple，8 个样本，一致性 100%
+- 采样步数 中位数 4，观测区间 2 - 30，7 个样本，取值分散，一致性仅 8%
+- Prompt 约束强度(CFG) 中位数 2.5，观测区间 1 - 2.5，7 个样本
+- 采样算法 最常用 euler，7 个样本，一致性 100%
+- 调度器 最常用 sgm_uniform，7 个样本，一致性 43%
+- 重绘幅度 中位数 0.3，观测区间 0.3 - 1，7 个样本，取值分散，一致性仅 37%
+- 高发问题（7/7 个样本）：Steps较低可能导致细节不足

@@ -3,56 +3,53 @@ name: text_to_image_lora_sampler_clip_323
 type: Text To Image
 frequency: 6
 level: strong
-coverage: 0.5965
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, JoinStringMulti, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, PrimitiveStringMultiline, RHHiddenNodes, RH_RhartImageG2ImageToImage, RH_RhartImageG2OfficialImageToImage, SaveImage, ShowText|pysssss, TextSplitByDelimiterEnhanced, UNETLoader, VAEDecode, VAELoader, easy int, easy promptConcat, easy showAnything, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.878667
+common_nodes: [CLIPLoader, CLIPTextEncode, CR String To Combo, EmptyLatentImage, JjkText, KSampler, LoadImagesFromURL, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/G-image-2.5产品图一键生成电商详情页_2098279391313883138.json, 图片生成/图生图/G-image-2.5详情页出图，电商图生图排版利器_2112338628948094977.json, 图片生成/图生图/一键生成电商主图｜平面设计图生图商品展示直出_2092344213185851393.json, 图片生成/图生图/电商主图一键生成 AI产品图快速制作批量出图神器_2098285412715417601.json, 图片生成/图生图/电商主图一键生成｜图生图平面设计电商产品出图_2092595881425063937.json, 视频生成/图生视频/短剧漫剧人物一致分镜衔接｜Minimax H3长视频导演台_2092708059238977537.json]
+members: [图片生成/图生图/Auto-Generate-Goods-Detail单图生成，API自动化出图_2110536704212946946.json, 图片生成/图生图/Auto-Generate-Goods-Detail单图生成，API自动化出图_2110894692589195266.json, 图片生成/图生图/Auto-Generate-Goods-Detail单图编辑，API调用图生图_2110533545289674753.json, 图片生成/图生图/Auto-Generate-Goods-Detail单图编辑，API调用图生图_2111268644561973250.json, 图片生成/图生图/单图编辑API调用工作流｜Auto-Generate-Goods-Detail生成_2097091421084938241.json, 图片生成/图生图/自动生成产品详情页单图版｜API调用图生图_2095274171667402753.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_323
 
-> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/G-image-2.5产品图一键生成电商详情页_2098279391313883138.json、图片生成/图生图/G-image-2.5详情页出图，电商图生图排版利器_2112338628948094977.json、图片生成/图生图/一键生成电商主图｜平面设计图生图商品展示直出_2092344213185851393.json、图片生成/图生图/电商主图一键生成 AI产品图快速制作批量出图神器_2098285412715417601.json、图片生成/图生图/电商主图一键生成｜图生图平面设计电商产品出图_2092595881425063937.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（图片生成/图生图/Auto-Generate-Goods-Detail单图生成，API自动化出图_2110536704212946946.json、图片生成/图生图/Auto-Generate-Goods-Detail单图生成，API自动化出图_2110894692589195266.json、图片生成/图生图/Auto-Generate-Goods-Detail单图编辑，API调用图生图_2110533545289674753.json、图片生成/图生图/Auto-Generate-Goods-Detail单图编辑，API调用图生图_2111268644561973250.json、图片生成/图生图/单图编辑API调用工作流｜Auto-Generate-Goods-Detail生成_2097091421084938241.json…）
 
 - **类型**：Text To Image
 - **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
 全部 6 个 workflow 都包含：
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CR String To Combo`
 - `EmptyLatentImage`
 - `JjkText`
-- `JoinStringMulti`
 - `KSampler`
-- `LoadImage`
+- `LoadImagesFromURL`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `PrimitiveStringMultiline`
-- `RHHiddenNodes`
-- `RH_RhartImageG2ImageToImage`
-- `RH_RhartImageG2OfficialImageToImage`
 - `SaveImage`
-- `ShowText|pysssss`
-- `TextSplitByDelimiterEnhanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `easy int`
-- `easy promptConcat`
-- `easy showAnything`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `RHLLMChatNode` —— 4/6 个有
-- `RH_RhartImageG25FlareImageToImage` —— 3/6 个有
-- `RH_RhartImageG25SunburstImageToImage` —— 3/6 个有
-- `RH_LLMAPI_Pro_Node` —— 2/6 个有
+- `孤海注释` —— 4/6 个有
+- `LoadMultiImage` —— 3/6 个有
+- `MUTOU_SmartAspectRatio` —— 3/6 个有
+- `PrimitiveString` —— 3/6 个有
+- `PrimitiveStringMultiline` —— 3/6 个有
+- `Text Multiline` —— 3/6 个有
+- `EmptyImage` —— 2/6 个有
+- `PreviewImage` —— 2/6 个有
+- `RH_RhartImageG25SunburstImageToImage` —— 2/6 个有
+- `RH_RhartImageNNb21ImageToImage` —— 2/6 个有
+- `RH_Nano_Banana2_Gemini31Flash` —— 1/6 个有
+- `RH_RhartImageG2ImageToImage` —— 1/6 个有
 
 ## 典型参数
 

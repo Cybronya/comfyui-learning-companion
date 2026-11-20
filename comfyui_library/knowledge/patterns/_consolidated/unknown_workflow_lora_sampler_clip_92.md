@@ -1,95 +1,86 @@
 ---
 name: unknown_workflow_lora_sampler_clip_92
 type: Unknown Workflow
-frequency: 7
+frequency: 6
 level: strong
-coverage: 0.790571
-common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, RandomNoise, SamplerCustomAdvanced, SaveVideo]
-problems: []
+coverage: 0.606333
+common_nodes: [AudioEncoderEncode, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, CreateVideo, ImageBatch, ImageFromBatch, KSampler, LoadAudio, LoadImage, LoraLoaderModelOnly, ModelPatchLoader, PrimitiveInt, SaveVideo, UNETLoader, VAEDecode, VAELoader, WanInfiniteTalkToVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/首尾帧ltx2_3_style_transition+全节点注释_2057807645574254594.json, 视频生成/图生视频/6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json, 视频生成/图生视频/7-LTX2.3_首尾帧 视频工作流_2038606312925306881.json, 视频生成/图生视频/HS-template_ltx2_3_style_transition_2042083663428460545.json, 视频生成/图生视频/Heishen-video_ltx2_3_id_lora_2041874975627415554.json, 视频生成/图生视频/LTX 2.3 首尾帧_2031685383376867330.json, 视频生成/图生视频/LTX 2.3 首尾帧生成视频-调用版_2031928343846723586.json]
+members: [视频生成/图生视频/InfiniteTalk_图生视频_双人对话-对口型_2019310713029791745.json, 视频生成/图生视频/InfiniteTalk_数字人（单人）_2019342958109134850.json, 视频生成/图生视频/infinitetalk官方版双人Loop循环流(手动遮罩版）_2073309678620209153.json, 视频生成/图生视频/infinitetalk官方版双人Loop循环流(自动遮罩版）_2073309877631541249.json, 视频生成/图生视频/目前最强双人数字人infinitetalk官方版 循环流(自动遮罩版） 林耀2.6_2019770784713023490.json, 视频生成/图生视频/音频驱动 最强双人数字人视频生成 infinitetalk官方  循环流(自动遮罩版）_2021071474643177473.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_92
 
-> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（图片生成/文生图/首尾帧ltx2_3_style_transition+全节点注释_2057807645574254594.json、视频生成/图生视频/6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json、视频生成/图生视频/7-LTX2.3_首尾帧 视频工作流_2038606312925306881.json、视频生成/图生视频/HS-template_ltx2_3_style_transition_2042083663428460545.json、视频生成/图生视频/Heishen-video_ltx2_3_id_lora_2041874975627415554.json…）
+> 由 `engine/knowledge_consolidation` 从 6 个 workflow 归纳得出（视频生成/图生视频/InfiniteTalk_图生视频_双人对话-对口型_2019310713029791745.json、视频生成/图生视频/InfiniteTalk_数字人（单人）_2019342958109134850.json、视频生成/图生视频/infinitetalk官方版双人Loop循环流(手动遮罩版）_2073309678620209153.json、视频生成/图生视频/infinitetalk官方版双人Loop循环流(自动遮罩版）_2073309877631541249.json、视频生成/图生视频/目前最强双人数字人infinitetalk官方版 循环流(自动遮罩版） 林耀2.6_2019770784713023490.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：7
+- **样本数**：6
 - **可信度**：强结论
-- **平均知识覆盖**：79%
+- **平均知识覆盖**：61%
 
 ## 共有节点
 
-全部 7 个 workflow 都包含：
-- `CFGGuider`
+全部 6 个 workflow 都包含：
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `CreateVideo`
-- `EmptyLTXVLatentVideo`
-- `LTXAVTextEncoderLoader`
-- `LTXVAudioVAEDecode`
-- `LTXVAudioVAELoader`
-- `LTXVConcatAVLatent`
-- `LTXVConditioning`
-- `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
-- `LTXVPreprocess`
-- `LTXVSeparateAVLatent`
+- `ImageBatch`
+- `ImageFromBatch`
+- `KSampler`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `ModelPatchLoader`
+- `PrimitiveInt`
 - `SaveVideo`
+- `UNETLoader`
+- `VAEDecode`
+- `VAELoader`
+- `WanInfiniteTalkToVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `PrimitiveInt` —— 6/7 个有
-- `VAEDecodeTiled` —— 6/7 个有
-- `KSamplerSelect` —— 5/7 个有
-- `LTXVLatentUpsampler` —— 5/7 个有
-- `LatentUpscaleModelLoader` —— 5/7 个有
-- `ResizeImageMaskNode` —— 5/7 个有
-- `LTXVImgToVideoInplace` —— 4/7 个有
-- `ResizeImagesByLongerEdge` —— 4/7 个有
-- `ImageResizeKJv2` —— 3/7 个有
-- `Int` —— 3/7 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/7 个有
-- `PrimitiveStringMultiline` —— 3/7 个有
-- `easy cleanGpuUsed` —— 3/7 个有
-- `GetImageSize` —— 2/7 个有
-- `LTXVAddGuide` —— 2/7 个有
-- `LTXVFirstLastFrameControl_TTP` —— 2/7 个有
-- `LTXVImgToVideoInplaceKJ` —— 2/7 个有
-- `LTXVMiddleFrame_TTP` —— 2/7 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/7 个有
-- `PrimitiveBoolean` —— 2/7 个有
-- `SamplerEulerAncestral` —— 2/7 个有
-- `easy mathInt` —— 2/7 个有
-- `LTXVReferenceAudio` —— 1/7 个有
-- `LoadAudio` —— 1/7 个有
-- `PreviewImage` —— 1/7 个有
-- `PrimitiveFloat` —— 1/7 个有
-- `RecordAudio` —— 1/7 个有
-- `SimpleMath+` —— 1/7 个有
-- `SolidMask` —— 1/7 个有
-- `VAEDecode` —— 1/7 个有
-- `easy clearCacheAll` —— 1/7 个有
+- `AudioConcat` —— 5/6 个有
+- `Audio Duration (mtb)` —— 4/6 个有
+- `SimpleCalculatorKJ` —— 4/6 个有
+- `VHS_VideoCombine` —— 4/6 个有
+- `easy forLoopEnd` —— 4/6 个有
+- `easy forLoopStart` —— 4/6 个有
+- `MaskPreview` —— 3/6 个有
+- `SegmentV2` —— 3/6 个有
+- `ShowAnything|Mie` —— 3/6 个有
+- `ZML_MaskSeparateDistance` —— 3/6 个有
+- `GetNode` —— 2/6 个有
+- `JWInteger` —— 2/6 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/6 个有
+- `PreviewAudio` —— 2/6 个有
+- `SetNode` —— 2/6 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 7 | 100% |
-| 高度 | 25 | 25 - 25 | 7 | 100% |
+| 采样步数 | 4 | 4 - 4 | 6 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 6 | 100% |
+| 采样算法 | euler | - | 6 | 100% |
+| 调度器 | normal | - | 6 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 6 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 17/6 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，7 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 25，7 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，6 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，6 个样本，一致性 100%
+- 调度器 最常用 normal，6 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，6 个样本，取值集中（一致性 100%）
+- 高发问题（17/6 个样本）：Steps较低可能导致细节不足

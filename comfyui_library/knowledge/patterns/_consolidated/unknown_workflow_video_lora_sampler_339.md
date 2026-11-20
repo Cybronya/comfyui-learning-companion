@@ -1,72 +1,97 @@
 ---
 name: unknown_workflow_video_lora_sampler_339
 type: Unknown Workflow
-frequency: 9
-level: strong
-coverage: 0.483556
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, ImageResizeKJv2, KSamplerAdvanced, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 7
+level: moderate
+coverage: 0.577
+common_nodes: [CLIPVisionLoader, GetNode, ImageConcatMulti, ImageFromBatch, ImageResizeKJv2, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/Wan_2.2_FMLFrame2V 首中尾帧生视频_1988481610276323329.json, 视频生成/图生视频/Wan_2.2_FMLF首帧+中帧+尾帧视频工作流_1987819748182396929.json, 视频生成/图生视频/video_wan2_2_14B_i2v_Wan22FMLF-首帧+中间帧+尾帧-图生视频_1988567771254579202.json, 视频生成/图生视频/video_wan2_2_14B_i2v_Wan22FMLF_1987191585169453057.json, 视频生成/图生视频/video_wan2_2_14B_i2v_moremotion_prompt_2011733044515835905.json, 视频生成/图生视频/video_wan2_2_14B_i2v_moremotion_高动态_2014746421920014337.json, 视频生成/图生视频/video_wan2_2_14B_i2v_vbvr-model_2035400286210105346.json, 视频生成/图生视频/video_wan2_2_14B_i2v_vbvr_lora_2034928021357989889.json, 视频生成/图生视频/video_wan2_2_with_skill_prompt_2013644132241121282.json]
+members: [数字人/数字人/SeC整合版：1.WanAnimate+Sec 一键换头_1985857562799218689.json, 数字人/数字人/姿势迁移V2_2002454631311634433.json, 视频生成/图生视频/24号特工：快速版舞蹈视频人物替换+节约RH币+节约时间+性价比拉满_2030543201047678977.json, 视频生成/图生视频/KJ版【 主体替换 + 姿势参考 】 Wan2.2+Animate_1970037279043579906.json, 视频生成/图生视频/Nuash版-Wan Animation 数字人+视频人物替换_1969961202665332737.json, 视频生成/图生视频/Wan-Animate 完美复刻官方效果-调参升级版_1969938728464621569.json, 视频生成/图生视频/主体替换调参版本_转身_1980181283542306818.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_339
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/Wan_2.2_FMLFrame2V 首中尾帧生视频_1988481610276323329.json、视频生成/图生视频/Wan_2.2_FMLF首帧+中帧+尾帧视频工作流_1987819748182396929.json、视频生成/图生视频/video_wan2_2_14B_i2v_Wan22FMLF-首帧+中间帧+尾帧-图生视频_1988567771254579202.json、视频生成/图生视频/video_wan2_2_14B_i2v_Wan22FMLF_1987191585169453057.json、视频生成/图生视频/video_wan2_2_14B_i2v_moremotion_prompt_2011733044515835905.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/SeC整合版：1.WanAnimate+Sec 一键换头_1985857562799218689.json、数字人/数字人/姿势迁移V2_2002454631311634433.json、视频生成/图生视频/24号特工：快速版舞蹈视频人物替换+节约RH币+节约时间+性价比拉满_2030543201047678977.json、视频生成/图生视频/KJ版【 主体替换 + 姿势参考 】 Wan2.2+Animate_1970037279043579906.json、视频生成/图生视频/Nuash版-Wan Animation 数字人+视频人物替换_1969961202665332737.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
-- **可信度**：强结论
-- **平均知识覆盖**：48%
+- **样本数**：7
+- **可信度**：中等可信
+- **平均知识覆盖**：58%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 7 个 workflow 都包含：
 - `CLIPVisionLoader`
 - `GetNode`
+- `ImageConcatMulti`
+- `ImageFromBatch`
 - `ImageResizeKJv2`
-- `KSamplerAdvanced`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
 - `SetNode`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `CFGZeroStar` —— 7/9 个有
-- `WanVideoNAG` —— 7/9 个有
-- `INTConstant` —— 6/9 个有
-- `WanImageToVideo` —— 5/9 个有
-- `WanFirstMiddleLastFrameToVideo` —— 4/9 个有
-- `FloatConstant` —— 2/9 个有
-- `Label (rgthree)` —— 2/9 个有
-- `LayerUtility: PurgeVRAM` —— 2/9 个有
-- `PreviewImage` —— 2/9 个有
-- `PrimitiveInt` —— 2/9 个有
-- `Int` —— 1/9 个有
-- `JjkText` —— 1/9 个有
-- `RH_LLMAPI_Pro_Node` —— 1/9 个有
-- `WanFirstLastFrameToVideo` —— 1/9 个有
-- `easy showAnything` —— 1/9 个有
-- `wanBlockSwap` —— 1/9 个有
+- `BlockifyMask` —— 6/7 个有
+- `DrawMaskOnImage` —— 6/7 个有
+- `ImpactInt` —— 6/7 个有
+- `MathExpression|pysssss` —— 6/7 个有
+- `PreviewImage` —— 6/7 个有
+- `WanVideoSetBlockSwap` —— 6/7 个有
+- `WanVideoTextEncodeCached` —— 6/7 个有
+- `GrowMask` —— 5/7 个有
+- `OnnxDetectionModelLoader` —— 5/7 个有
+- `PoseAndFaceDetection` —— 5/7 个有
+- `Textbox` —— 5/7 个有
+- `DWPreprocessor` —— 4/7 个有
+- `FaceMaskFromPoseKeypoints` —— 4/7 个有
+- `ImageCropByMaskAndResize` —— 4/7 个有
+- `DownloadAndLoadSAM2Model` —— 3/7 个有
+- `DrawViTPose` —— 3/7 个有
+- `LayerMask: LoadSegmentAnythingModels` —— 3/7 个有
+- `LayerMask: SegmentAnythingUltra V3` —— 3/7 个有
+- `Sam2Segmentation` —— 3/7 个有
+- `VHS_VideoInfo` —— 3/7 个有
+- `easy showAnything` —— 3/7 个有
+- `BBoxesToSAM2` —— 2/7 个有
+- `CR String To Number` —— 2/7 个有
+- `DownloadAndLoadQwenModel` —— 2/7 个有
+- `GetImagesFromBatchIndexed` —— 2/7 个有
+- `ImpactSwitch` —— 2/7 个有
+- `LayerMask: SAM2VideoUltra` —— 2/7 个有
+- `QwenVLDetection` —— 2/7 个有
+- `TextBoxNode_UTK` —— 2/7 个有
+- `WanVideoLoraSelect` —— 2/7 个有
+- `CLIPLoader` —— 1/7 个有
+- `CLIPTextEncode` —— 1/7 个有
+- `CR Prompt Text` —— 1/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/7 个有
+- `GetImageSizeAndCount` —— 1/7 个有
+- `GrowMaskWithBlur` —— 1/7 个有
+- `INTConstant` —— 1/7 个有
+- `Image Stitch` —— 1/7 个有
+- `MaskToImage` —— 1/7 个有
+- `SeCModelLoader` —— 1/7 个有
+- `SeCVideoSegmentation` —— 1/7 个有
+- `WanVideoTextEmbedBridge` —— 1/7 个有
 
 ## 典型参数
 
-| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
-|---|---|---|---|---|
-| 采样步数 | fixed | - | 9 | 67% |
-| Prompt 约束强度(CFG) | 6 | 6 - 8 | 9 | 86% |
-| 采样算法 | 1 | 1 - 1 | 9 | 100% |
-| 调度器 | lcm | - | 9 | 56% |
-| 重绘幅度 | simple | - | 9 | 78% |
+无可统计的参数。
 
 ## 常见问题
 
@@ -74,8 +99,4 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，9 个样本，一致性 67%
-- Prompt 约束强度(CFG) 中位数 6，观测区间 6 - 8，9 个样本，取值集中（一致性 86%）
-- 采样算法 中位数 1，观测区间 1 - 1，9 个样本，取值集中（一致性 100%）
-- 调度器 最常用 lcm，9 个样本，一致性 56%
-- 重绘幅度 最常用 simple，9 个样本，一致性 78%
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

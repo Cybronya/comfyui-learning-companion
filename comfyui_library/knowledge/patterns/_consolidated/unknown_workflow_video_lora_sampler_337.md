@@ -1,104 +1,98 @@
 ---
 name: unknown_workflow_video_lora_sampler_337
 type: Unknown Workflow
-frequency: 9
+frequency: 7
 level: moderate
-coverage: 0.512111
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, ComfyMathExpression, DiffusionModelLoaderKJ, DownloadAndLoadGIMMVFIModel, EmptyImage, GIMMVFI_interpolate, GetImageRangeFromBatch, GetImageSize, ImageCompositeMasked, ImageResizeKJv2, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewAny, PreviewImage, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, TensorLoopClose, TensorLoopOpen, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo]
+coverage: 0.722286
+common_nodes: [CLIPVisionLoader, GetImageSizeAndCount, ImageResizeKJv2, LoadImage, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, RenderNLFPoses, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader]
 problems: []
 missing: []
-members: [视频生成/图生视频/SCAIL2替换视频中的单个人物漫剧电商服装分镜真人_2071782259115511810.json, 视频生成/图生视频/SCAIL2替换视频人物漫剧电商服装分镜真人_2071786306396573698.json, 视频生成/图生视频/Scail  2 双人互动替换_2066357363409510402.json, 视频生成/图生视频/Scail2-人物360度动作迁移_2067529633486168065.json, 视频生成/图生视频/Scail2-动作迁移（单人+多人版）_2065351817646661633.json, 视频生成/图生视频/Scail2全自动单人角色替换工作流_2065037170393575426.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换_2067503598057123841.json, 视频生成/图生视频/scail 2 单人电商带货 人物产品替换自动版_2067564547317264386.json, 视频生成/图生视频/scail 2双人互动异步动作迁移_2067087693439397890.json]
+members: [数字人/数字人/SCAIL动作迁移：多人同框互动迁移_2013194857988235266.json, 数字人/数字人/SCAIL多人_单人--动作迁移_2001571883931824129.json, 数字人/数字人/SCAIL视频姿势参考支持多人_2019650977418186753.json, 数字人/数字人/Scail 一键跳舞！骨骼完美驱动！_2003096928302899201.json, 数字人/数字人/动作迁移-SCAIL_2000447654070976513.json, 数字人/数字人/萌宠跳舞-动作运镜最强迁移-SCAIL_3D单人多人姿态驱动+自动对齐骨骼+镜头控制+人物360旋转_2019072391724408834.json, 数字人/数字人/视频-动作迁移单人-wan2.1-SCAIL-KJ_2011817884372180993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_337
 
-> 由 `engine/knowledge_consolidation` 从 9 个 workflow 归纳得出（视频生成/图生视频/SCAIL2替换视频中的单个人物漫剧电商服装分镜真人_2071782259115511810.json、视频生成/图生视频/SCAIL2替换视频人物漫剧电商服装分镜真人_2071786306396573698.json、视频生成/图生视频/Scail  2 双人互动替换_2066357363409510402.json、视频生成/图生视频/Scail2-人物360度动作迁移_2067529633486168065.json、视频生成/图生视频/Scail2-动作迁移（单人+多人版）_2065351817646661633.json…）
+> 由 `engine/knowledge_consolidation` 从 7 个 workflow 归纳得出（数字人/数字人/SCAIL动作迁移：多人同框互动迁移_2013194857988235266.json、数字人/数字人/SCAIL多人_单人--动作迁移_2001571883931824129.json、数字人/数字人/SCAIL视频姿势参考支持多人_2019650977418186753.json、数字人/数字人/Scail 一键跳舞！骨骼完美驱动！_2003096928302899201.json、数字人/数字人/动作迁移-SCAIL_2000447654070976513.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：9
+- **样本数**：7
 - **可信度**：中等可信
-- **平均知识覆盖**：51%
+- **平均知识覆盖**：72%
 
 ## 共有节点
 
-全部 9 个 workflow 都包含：
-- `BasicScheduler`
-- `BatchImagesNode`
-- `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPVisionEncode`
+全部 7 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
-- `ComfyMathExpression`
-- `DiffusionModelLoaderKJ`
-- `DownloadAndLoadGIMMVFIModel`
-- `EmptyImage`
-- `GIMMVFI_interpolate`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `ImageCompositeMasked`
+- `GetImageSizeAndCount`
 - `ImageResizeKJv2`
-- `KSamplerSelect`
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewAny`
-- `PreviewImage`
-- `SAM3_TrackToMask`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `TensorLoopClose`
-- `TensorLoopOpen`
-- `VAEDecode`
-- `VAELoader`
+- `NLFPredict`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionVitPoseToDWPose`
+- `RenderNLFPoses`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoEmptyEmbeds`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSamplerExtraArgs`
+- `WanVideoSamplerv2`
+- `WanVideoSchedulerv2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetNode` —— 8/9 个有
-- `PrimitiveInt` —— 8/9 个有
-- `SetNode` —— 8/9 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 6/9 个有
-- `RH_Captioner` —— 6/9 个有
-- `VHS_VideoInfoSource` —— 6/9 个有
-- `easy imageCount` —— 6/9 个有
-- `easy showAnything` —— 6/9 个有
-- `JWInteger` —— 5/9 个有
-- `Text` —— 5/9 个有
-- `ImageConcatMulti` —— 4/9 个有
-- `Int` —— 4/9 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 4/9 个有
-- `ResizeImageMaskNode` —— 4/9 个有
-- `easy indexAnything` —— 4/9 个有
-- `DrawMaskOnImage` —— 3/9 个有
-- `InvertMask` —— 3/9 个有
-- `TextConcatenate_UTK` —— 3/9 个有
-- `1hew_MaskMathOps` —— 2/9 个有
-- `ColorPickerMW` —— 2/9 个有
-- `FillMaskWithColor` —— 2/9 个有
-- `Switch` —— 2/9 个有
-- `Text Multiline` —— 2/9 个有
-- `easy mathInt` —— 2/9 个有
-- `Bjornulf_ShowInt` —— 1/9 个有
-- `ComfySwitchNode` —— 1/9 个有
-- `ImageCrop` —— 1/9 个有
-- `ImageFromBatch` —— 1/9 个有
-- `JjkText` —— 1/9 个有
-- `PointsEditor` —— 1/9 个有
-- `PrimitiveBoolean` —— 1/9 个有
-- `RH_Translator` —— 1/9 个有
-- `ReActorFaceSwap` —— 1/9 个有
-- `RemoveWatermarks_LoadModel` —— 1/9 个有
-- `RemoveWatermarks_Run` —— 1/9 个有
-- `SeCModelLoader` —— 1/9 个有
-- `SeCVideoSegmentation` —— 1/9 个有
-- `SimpleMath+` —— 1/9 个有
-- `easy cleanGpuUsed` —— 1/9 个有
-- `string_util_StrConcat` —— 1/9 个有
+- `DownloadAndLoadNLFModel` —— 6/7 个有
+- `GetNode` —— 6/7 个有
+- `ImageConcatMulti` —— 6/7 个有
+- `SetNode` —— 6/7 个有
+- `SimpleMath+` —— 6/7 个有
+- `WanVideoEncode` —— 6/7 个有
+- `WanVideoTorchCompileSettings` —— 6/7 个有
+- `WanVideoUni3C_ControlnetLoader` —— 6/7 个有
+- `WanVideoUni3C_embeds` —— 6/7 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 5/7 个有
+- `DWPreprocessor` —— 5/7 个有
+- `INTConstant` —— 5/7 个有
+- `LoadWanVideoT5TextEncoder` —— 5/7 个有
+- `WanVideoTextEncode` —— 5/7 个有
+- `FloatConstant` —— 4/7 个有
+- `PreviewImage` —— 3/7 个有
+- `Fast Groups Bypasser (rgthree)` —— 2/7 个有
+- `ImageFromBatch+` —— 2/7 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/7 个有
+- `Text Multiline` —— 2/7 个有
+- `VHS_VideoInfoLoaded` —— 2/7 个有
+- `WanVideoTextEncodeCached` —— 2/7 个有
+- `easy anythingIndexSwitch` —— 2/7 个有
+- `easy int` —— 2/7 个有
+- `Any Switch (rgthree)` —— 1/7 个有
+- `CM_IntToFloat` —— 1/7 个有
+- `CR Text` —— 1/7 个有
+- `CustomAddLabel` —— 1/7 个有
+- `Florence2ModelLoader` —— 1/7 个有
+- `Florence2Run` —— 1/7 个有
+- `ImageFromBatch` —— 1/7 个有
+- `ImpactInt` —— 1/7 个有
+- `Int` —— 1/7 个有
+- `JWInteger` —— 1/7 个有
+- `Label (rgthree)` —— 1/7 个有
+- `LoadNLFModel` —— 1/7 个有
+- `Manual XY Entry Info` —— 1/7 个有
+- `MathExpression|pysssss` —— 1/7 个有
+- `ShowText|pysssss` —— 1/7 个有
+- `SimpleCalculatorKJ` —— 1/7 个有
+- `easy positive` —— 1/7 个有
+- `easy seed` —— 1/7 个有
+- `easy showAnything` —— 1/7 个有
 
 ## 典型参数
 
