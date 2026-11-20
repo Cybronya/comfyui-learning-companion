@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_158
 type: Text To Image
 frequency: 11
 level: strong
-coverage: 0.844273
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.889818
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, MiniMaxH3ImageToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/R2V参考生视频加速版｜5060Ti 16G本地极速跑_2103045635455938561.json, 视频生成/图生视频/REF2V图生视频生成｜地表最强开源Minimax H3运镜_2096664623201218561.json, 视频生成/图生视频/h3参考生视频方案，图生视频多参考精准还原_2110861891965902849.json, 视频生成/图生视频/minimax_h3多图参考生视频｜图生视频高质量生成工作流_2097783512152760321.json, 视频生成/图生视频/三图版全能参考｜MiniMax H3图生视频一键生成_2094737971634335745.json, 视频生成/图生视频/全能参考图生视频美少女｜miniMAXH3视频生成工作流_2088145573164707841.json, 视频生成/图生视频/全能多参生视频自用版｜Minimax H3 人物场景类特效_2089349057071378433.json, 视频生成/图生视频/参考生视频玩法升级｜MiniMax H3 视频生视频双通道_2096253067581812737.json, 视频生成/图生视频/双图版全能参考｜MiniMax H3图生视频高质量生成_2094740772443738114.json, 视频生成/图生视频/地表最强开源 Minimax H3 REF2V｜角色一致性图生视频运镜_2096852990467592194.json, 视频生成/图生视频/多图参考直出｜MiniMax H3图生视频一致性生成_2090271687425220609.json]
+members: [图片生成/文生图/三合一效率王｜海螺H3文图首尾帧视频极速生成_2096540420510666754.json, 图片生成/文生图/极速4分钟10秒视频｜海螺H3文图首尾帧三合一_2091014133742399489.json, 图片生成/文生图/极速6分钟1.5M 10秒视频｜海螺H3文图首尾帧三合一标准模式_2092012939061579778.json, 图片生成/文生图/海螺H3文图首尾帧三合一｜10秒视频极速生成工作流_2096473366650777601.json, 图片生成/文生图/海螺H3极速6分钟生成1.5M10秒视频｜文图首尾帧三合一_2097943009395560450.json, 图片生成/文生图/海螺H3极速6分钟视频工作流｜文图首尾帧3合一生成_2097764538979536898.json, 视频生成/图生视频/MiniMax H3图生视频fastH3加速 trim latent放大增强_2110250634422341633.json, 视频生成/图生视频/MiniMax H3图生视频fastH3加速 trim latent放大增强_2110365841622659073.json, 视频生成/图生视频/minimax h3 i2v Latent Upscaler｜图生视频潜空间放大_2092084924617674753.json, 视频生成/图生视频/minimax h3 i2v Latent Upscaler｜图生视频潜空间放大_2092377938405707778.json, 视频生成/文生视频/H3全能视频｜vibex文生图生首尾帧通吃，二阶高清更细腻_2099860995895291906.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_158
 
-> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（视频生成/图生视频/R2V参考生视频加速版｜5060Ti 16G本地极速跑_2103045635455938561.json、视频生成/图生视频/REF2V图生视频生成｜地表最强开源Minimax H3运镜_2096664623201218561.json、视频生成/图生视频/h3参考生视频方案，图生视频多参考精准还原_2110861891965902849.json、视频生成/图生视频/minimax_h3多图参考生视频｜图生视频高质量生成工作流_2097783512152760321.json、视频生成/图生视频/三图版全能参考｜MiniMax H3图生视频一键生成_2094737971634335745.json…）
+> 由 `engine/knowledge_consolidation` 从 11 个 workflow 归纳得出（图片生成/文生图/三合一效率王｜海螺H3文图首尾帧视频极速生成_2096540420510666754.json、图片生成/文生图/极速4分钟10秒视频｜海螺H3文图首尾帧三合一_2091014133742399489.json、图片生成/文生图/极速6分钟1.5M 10秒视频｜海螺H3文图首尾帧三合一标准模式_2092012939061579778.json、图片生成/文生图/海螺H3文图首尾帧三合一｜10秒视频极速生成工作流_2096473366650777601.json、图片生成/文生图/海螺H3极速6分钟生成1.5M10秒视频｜文图首尾帧三合一_2097943009395560450.json…）
 
 - **类型**：Text To Image
 - **样本数**：11
 - **可信度**：强结论
-- **平均知识覆盖**：84%
+- **平均知识覆盖**：89%
 
 ## 共有节点
 
@@ -32,12 +32,17 @@ source: knowledge_consolidation
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
+- `ManualSigmas`
+- `MiniMaxH3ImageToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
-- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -46,29 +51,34 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CreateVideo` —— 10/11 个有
-- `ResolutionSelector` —— 10/11 个有
-- `PrimitiveFloat` —— 9/11 个有
-- `PrimitiveStringMultiline` —— 9/11 个有
-- `PrimitiveInt` —— 8/11 个有
-- `ComfySwitchNode` —— 7/11 个有
+- `MinimaxH3LatentUpscaler3D` —— 10/11 个有
+- `VHS_VideoCombine` —— 10/11 个有
+- `Fast Groups Bypasser (rgthree)` —— 7/11 个有
+- `PathchSageAttentionKJ` —— 7/11 个有
 - `PrimitiveBoolean` —— 7/11 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/11 个有
+- `AnyBooleanSwitch` —— 6/11 个有
+- `EmptyImage` —— 6/11 个有
+- `GetImageSize` —— 6/11 个有
+- `ImageScaleToTotalPixels` —— 6/11 个有
+- `MiniMaxChunkFeedForward` —— 6/11 个有
+- `MiniMaxLowVRAMAttention` —— 6/11 个有
+- `MiniMaxH3SigmaShift` —— 5/11 个有
+- `SplitSigmas` —— 5/11 个有
+- `easy imageIndexSwitch` —— 5/11 个有
+- `ModelAttentionBackend` —— 4/11 个有
 - `SaveImage` —— 4/11 个有
-- `LoadAudio` —— 3/11 个有
-- `PathchSageAttentionKJ` —— 3/11 个有
-- `EasyCache` —— 2/11 个有
-- `ImpactSwitch` —— 2/11 个有
-- `Int` —— 2/11 个有
-- `TextBox` —— 2/11 个有
-- `easy showAnything` —— 2/11 个有
-- `Fast Bypasser (rgthree)` —— 1/11 个有
-- `Load Lora` —— 1/11 个有
-- `MiniMaxH3AddGuide` —— 1/11 个有
-- `MiniMaxH3QwenReferencePrefixCacheT8Advanced` —— 1/11 个有
-- `ModelAttentionBackend` —— 1/11 个有
-- `VideoCombineV2` —— 1/11 个有
-- `XB_ReferenceAny` —— 1/11 个有
+- `ModelPreviewOverrideKJ` —— 3/11 个有
+- `BlockSparseAttention` —— 2/11 个有
+- `ImageResizeKJv2` —— 2/11 个有
+- `CM_BoolBinaryOperation` —— 1/11 个有
+- `ComfySwitchNode` —— 1/11 个有
+- `CreateVideo` —— 1/11 个有
+- `ImpactConditionalBranch` —— 1/11 个有
+- `SaveVideo` —— 1/11 个有
+- `SpectrumApplyMiniMaxH3` —— 1/11 个有
+- `Switch image [Crystools]` —— 1/11 个有
+- `VRAM_Debug` —— 1/11 个有
+- `easy float` —— 1/11 个有
 
 ## 典型参数
 
@@ -86,7 +96,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 12/11 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -97,4 +107,4 @@ source: knowledge_consolidation
 - 采样算法 最常用 er_sde，11 个样本，一致性 100%
 - 调度器 最常用 beta，11 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，11 个样本，取值集中（一致性 100%）
-- 高发问题（11/11 个样本）：Steps较低可能导致细节不足
+- 高发问题（12/11 个样本）：Steps较低可能导致细节不足

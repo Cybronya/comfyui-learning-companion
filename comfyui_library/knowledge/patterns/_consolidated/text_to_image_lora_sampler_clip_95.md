@@ -3,81 +3,107 @@ name: text_to_image_lora_sampler_clip_95
 type: Text To Image
 frequency: 14
 level: strong
-coverage: 0.883357
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt Text, CR Text Replace, ConditioningZeroOut, EmptyLatentImage, JDCN_StringToList, KSampler, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, ProcessString, SaveImage, Seed (rgthree), Text Concatenate, VAEDecode, VAELoader]
-problems: []
+coverage: 0.907357
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, ModelPreviewOverrideKJ, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Z-image主体一致性反推生分镜_2008852899228557314.json, 图片生成/图生图/快速洗图版v22_1999381371757920257.json, 图片生成/图生图/（大网渔网袜量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1995173381853130754.json, 图片生成/图生图/（小情绪量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1999760613897367553.json, 图片生成/图生图/（贞贞-量贩版）Z-Image-Turbo D-OPSD美少女文生图V1_2056788439630176258.json, 图片生成/图生图/🏇超快速美女孵蛋器超然洗图版V1🏇_1995386236758110209.json, 图片生成/文生图/Red Z-Image Vs Z-image Turbo对比_1998113383687839745.json, 图片生成/文生图/Z-Image-Turbo  D-OPSD美少女文生图_2058718122760302593.json, 图片生成/文生图/Z-Image-Turbo D-OPSD美少女文生图V1_2058219333456842754.json, 图片生成/文生图/Z-image 超快速美女孵蛋器超然升级版V1_1995339133893718018.json, 图片生成/文生图/redimage量贩美女图（全自动，批量，极速）_1998274589451018242.json, 图片生成/文生图/🏇超快速美女孵蛋器超然升级版V1🏇_1995296859344318466.json, 图片生成/文生图/🏇超快速美女孵蛋器超然升级版【本地版】🏇_1995302605654044674.json, 平台全量/Z-image主体一致性+Qwen3vl反推生成九张图故事分镜_1996790467767455746.json]
+members: [视频生成/文生视频/H3八步二采视频｜文生图生视频生视频三模输出_2094567815121563650.json, 视频生成/文生视频/H3单采视频生成｜高质量文生图生视频工作流_2095961287233728513.json, 视频生成/文生视频/H3四步二采视频加速｜三模输出一键生成工作流_2094569314924974082.json, 视频生成/文生视频/H3模型视频生成工作流，文生视频图生视频单采方案_2103235249256886274.json, 视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3｜文图视频一体化全搞定_2099405729106055169.json, 视频生成/文生视频/MiniMax H3全能插件音频设计视频生成处理工作流_2101366594571169793.json, 视频生成/文生视频/MiniMax H3全能插件｜音频设计加持视频创作_2101173506313637890.json, 视频生成/文生视频/MiniMax H3多参Taomate 3步Lora二采视频生成处理工具_2101407475479179265.json, 视频生成/文生视频/MiniMax H3多参角色替换LoRA二采放大工作流，文生视频视频生视频图生视频_2106867673660485633.json, 视频生成/文生视频/Minimax H3多参二采生视频｜Taomate 3 steplora助力_2101149197461446657.json, 视频生成/文生视频/MinimaxH3文生视频双采样加速版｜文生视频提速_2090442867549499394.json, 视频生成/文生视频/Ref2VA多参考全能生成｜MiniMax H3文生图生视频工作流_2093072782388187137.json, 视频生成/文生视频/Ref2VA多参考｜MiniMax H3全能视频生成直出_2090570005984407553.json, 视频生成/文生视频/多参考全能生成｜MiniMax H3 Ref2VA视频处理_2093230903848947714.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_95
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（图片生成/图生图/Z-image主体一致性反推生分镜_2008852899228557314.json、图片生成/图生图/快速洗图版v22_1999381371757920257.json、图片生成/图生图/（大网渔网袜量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1995173381853130754.json、图片生成/图生图/（小情绪量贩版）Z-Image Eyes Deatailed美少女自动扩写文生图V3_1999760613897367553.json、图片生成/图生图/（贞贞-量贩版）Z-Image-Turbo D-OPSD美少女文生图V1_2056788439630176258.json…）
+> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/H3八步二采视频｜文生图生视频生视频三模输出_2094567815121563650.json、视频生成/文生视频/H3单采视频生成｜高质量文生图生视频工作流_2095961287233728513.json、视频生成/文生视频/H3四步二采视频加速｜三模输出一键生成工作流_2094569314924974082.json、视频生成/文生视频/H3模型视频生成工作流，文生视频图生视频单采方案_2103235249256886274.json、视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3｜文图视频一体化全搞定_2099405729106055169.json…）
 
 - **类型**：Text To Image
 - **样本数**：14
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
 全部 14 个 workflow 都包含：
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt Text`
-- `CR Text Replace`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `JDCN_StringToList`
+- `JjkText`
 - `KSampler`
-- `LayerUtility: PurgeVRAM`
+- `KSamplerSelect`
 - `LoraLoaderModelOnly`
-- `ProcessString`
-- `SaveImage`
-- `Seed (rgthree)`
-- `Text Concatenate`
+- `ModelPreviewOverrideKJ`
+- `RandomNoise`
+- `ResolutionSelector`
+- `SamplerCustomAdvanced`
+- `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 13/14 个有
-- `UNETLoader` —— 13/14 个有
-- `RH_LLMAPI_Pro_Node` —— 11/14 个有
-- `easy showAnything` —— 9/14 个有
-- `ImpactInt` —— 7/14 个有
-- `LoadImage` —— 5/14 个有
-- `Note Plus (mtb)` —— 4/14 个有
-- `Qwen3VL_Chat` —— 3/14 个有
-- `easy anythingIndexSwitch` —— 3/14 个有
-- `CheckpointLoaderSimple` —— 2/14 个有
-- `PreviewImage` —— 2/14 个有
-- `图像缩放V2_孤海` —— 2/14 个有
-- `AddLabel` —— 1/14 个有
-- `ImageConcatMulti` —— 1/14 个有
+- `BasicScheduler` —— 12/14 个有
+- `MiniMaxH3SigmaShift` —— 12/14 个有
+- `LTXVConcatAVLatent` —— 11/14 个有
+- `LTXVSeparateAVLatent` —— 11/14 个有
+- `ModelAttentionBackend` —— 11/14 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 10/14 个有
+- `H3SigmaRefiner` —— 9/14 个有
+- `MinimaxH3LatentUpscaler3D` —— 9/14 个有
+- `SplitSigmas` —— 9/14 个有
+- `VHS_VideoCombine` —— 9/14 个有
+- `ComfyMathExpression` —— 8/14 个有
+- `LoadImage` —— 8/14 个有
+- `MiniMaxH3ReferenceToVideo` —— 8/14 个有
+- `MiniMaxH3Unified` —— 8/14 个有
+- `PrimitiveFloat` —— 8/14 个有
+- `VAEDecodeAudio` —— 8/14 个有
+- `CR Text` —— 6/14 个有
+- `CreateVideo` —— 6/14 个有
+- `MiniMaxH3AVDecodeT8` —— 6/14 个有
+- `SaveVideo` —— 6/14 个有
+- `PrimitiveStringMultiline` —— 5/14 个有
+- `SaveImage` —— 4/14 个有
+- `VHS_LoadVideo` —— 4/14 个有
+- `AudioCrop` —— 3/14 个有
+- `Fast Groups Bypasser (rgthree)` —— 3/14 个有
+- `LoadAudio` —— 3/14 个有
+- `ManualSigmas` —— 3/14 个有
+- `SolAttnMiniMax` —— 3/14 个有
+- `StringFunction|pysssss` —— 3/14 个有
+- `Text` —— 3/14 个有
+- `easy showAnything` —— 3/14 个有
+- `ClownsharKSampler_Beta` —— 2/14 个有
+- `ConditioningZeroOut` —— 2/14 个有
+- `MinimaxH3LatentUpscalerNode3D` —— 2/14 个有
+- `SeedGenerator` —— 2/14 个有
+- `ImageResizeKJv2` —— 1/14 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 1080 | 1080 - 1080 | 14 | 100% |
-| 高度 | 1920 | 1920 - 1920 | 14 | 100% |
-| 采样步数 | 10 | 10 - 10 | 14 | 100% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 14 | 100% |
-| 采样算法 | euler_ancestral | - | 14 | 50% |
-| 调度器 | sgm_uniform | - | 14 | 50% |
+| 宽度 | 80 | 80 - 80 | 14 | 100% |
+| 高度 | 80 | 80 - 80 | 14 | 100% |
+| 采样步数 | 4 | 4 - 4 | 14 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 14 | 100% |
+| 采样算法 | er_sde | - | 14 | 100% |
+| 调度器 | beta | - | 14 | 100% |
 | 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 16/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 1080，观测区间 1080 - 1080，14 个样本，取值集中（一致性 100%）
-- 高度 中位数 1920，观测区间 1920 - 1920，14 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 10，观测区间 10 - 10，14 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，14 个样本，一致性 50%
-- 调度器 最常用 sgm_uniform，14 个样本，一致性 50%
+- 宽度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，14 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，14 个样本，一致性 100%
+- 调度器 最常用 beta，14 个样本，一致性 100%
 - 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
+- 高发问题（16/14 个样本）：Steps较低可能导致细节不足

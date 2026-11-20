@@ -1,117 +1,103 @@
 ---
 name: unknown_workflow_video_lora_sampler_51
 type: Unknown Workflow
-frequency: 25
+frequency: 21
 level: moderate
-coverage: 0.47608
-common_nodes: [BlockifyMask, CLIPVisionLoader, DrawMaskOnImage, FastUnsharpSharpen, GrowMaskWithBlur, INTConstant, ImageBlend, ImageResizeKJv2, LoadImage, MaskToImage, OnnxDetectionModelLoader, PlaySound|pysssss, PoseAndFaceDetection, PreviewImage, SDPoseOODLoader, SDPoseOODProcessor, Seed (rgthree), VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfoLoaded, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy sam3ModelLoader, easy sam3VideoModelExtraConfig, easy sam3VideoSegmentation, easy sam3Visualization]
+coverage: 0.697857
+common_nodes: [AudioCrop, AudioSeparation, CLIPVisionLoader, DownloadAndLoadWav2VecModel, LoadAudio, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, VHS_VideoCombine, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoVAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2012171919730151426.json, 平台全量/12_2030475237279670273.json, 平台全量/1_2025804905465778177.json, 平台全量/2-【视频人物替换】人物完美替换，视频背景不变-单人wan22animate_2062006149762863106.json, 平台全量/Animate人物替换&姿态迁移_2016344990846291969.json, 平台全量/LV-物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2062546508771323906.json, 平台全量/WanAnimate Sam3+SD-Pose 动作迁移加补帧_2033184384840372225.json, 平台全量/WanAnimate Sam3+SD-Pose 物替换&姿态迁移 最强工作流!!_2063871020251041794.json, 平台全量/人物替换&产品保留  !!  升级_2012337529864851457.json, 平台全量/人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2088933414220161026.json, 平台全量/动作迁移+模仿+运镜_2058374840121389058.json, 平台全量/升级版-舞蹈迁移-或武打动作迁移人物一致性高清电影级Animate超长视频1_2065084729581465601.json, 平台全量/升级版-舞蹈迁移-或武打动作迁移人物一致性高清电影级Animate超长视频_2052981761461768194.json, 平台全量/姿态迁移_2065311344274001922.json, 平台全量/替换人物-自动人物替换电影视频-舞蹈视频-完美版_2019248634579128322.json, 平台全量/自用 人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2026259741655175170.json, 平台全量/超超人物替换工作流_2014309866751401985.json, 视频生成/图生视频/0219人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2024420468635209729.json, 视频生成/图生视频/GS-人物替换姿态迁移_2058803362686136321.json, 视频生成/图生视频/WanAnimate Sam3+SD-Pose  人物替换+姿态迁移_2078667744270180354.json, 视频生成/图生视频/WanAnimate+Sam3+SD-Pose+物替换&姿态迁移+最强工作流!!+_2064168504852566018.json, 视频生成/图生视频/人物替换&姿态迁移 WanAnimate Sam3+SD-Pose_2015028362657406978.json, 视频生成/图生视频/人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2064313461764612097.json, 视频生成/图生视频/人物替换&姿态迁移_2044048131473547266.json, 视频生成/图生视频/舞蹈迁移-自用_2062211912280137730.json]
+members: [图片生成/图生图/InfiniteTalk数字人动态加强版（对口型-唱歌）_1986084370261954561.json, 图片生成/图生图/InfiniteTalk数字人高动态（对口型-唱歌）_1986988244921421826.json, 图片生成/图生图/wanvideo_infinitetalk_单人工作流_1977379439782830082.json, 图片生成/图生图/数字人  对口型  图生视频_2062824879812071426.json, 图片生成/文生图/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112074166999539713.json, 数字人/数字人/03-10-02-WAN2.1-数字人-InfiniteTalk-两人_1989933552500436993.json, 数字人/数字人/03-10-03-WAN2.1-数字人-InfiniteTalk-长视频_1989933594921586689.json, 数字人/数字人/03-10-04-WAN2.1-数字人-InfiniteTalk-长视频-百组动态提示词_1989933698369941505.json, 数字人/数字人/5分钟图片生视频对口型+情感口播++数字人+InfiniTetalk+超自然数字人对口型_2093607637110837250.json, 数字人/数字人/Infinite Talk极速i2v数字人_2004371161725235201.json, 数字人/数字人/【CQ808】单人视频对口型工作流_2012015791977271298.json, 数字人/数字人/单人对口型New_2001319672345657346.json, 数字人/数字人/单人对口型_2002722406730985474.json, 数字人/数字人/视频对口型 自用_2034144635550965761.json, 数字人/数字人/视频对口型InfiniteTalkV2V数字人说话唱歌! B站艾橘溪_1961385278642569218.json, 数字人/数字人/视频对口型InfiniteTalk数字人_2011318591227961346.json, 数字人/数字人/视频对口型InfiniteTalk数字人（新版本非常好用）_2006294001602797570.json, 数字人/数字人/视频对口型InfiniteTalk数字人（新版本非常好用）_2055455568445362178.json, 数字人/数字人/视频语音对口型 InfiniteTalk-Wan2.1_2027827389857796097.json, 视频生成/图生视频/数字人-InfiniteTalk单人视频对口型_2021869907490639874.json, 视频生成/图生视频/视频全流程工作流合集  企财盈5.11_2053653016187813890.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_51
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/图生图/人物替换&姿态迁移 最强工作流!! WanAnimate Sam3+SD-Pose_2012171919730151426.json、平台全量/12_2030475237279670273.json、平台全量/1_2025804905465778177.json、平台全量/2-【视频人物替换】人物完美替换，视频背景不变-单人wan22animate_2062006149762863106.json、平台全量/Animate人物替换&姿态迁移_2016344990846291969.json…）
+> 由 `engine/knowledge_consolidation` 从 21 个 workflow 归纳得出（图片生成/图生图/InfiniteTalk数字人动态加强版（对口型-唱歌）_1986084370261954561.json、图片生成/图生图/InfiniteTalk数字人高动态（对口型-唱歌）_1986988244921421826.json、图片生成/图生图/wanvideo_infinitetalk_单人工作流_1977379439782830082.json、图片生成/图生图/数字人  对口型  图生视频_2062824879812071426.json、图片生成/文生图/对口型 情感口播  数字人 InfiniTetalk 超自然数字人对口型_2112074166999539713.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
+- **样本数**：21
 - **可信度**：中等可信
-- **平均知识覆盖**：48%
+- **平均知识覆盖**：70%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `BlockifyMask`
+全部 21 个 workflow 都包含：
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPVisionLoader`
-- `DrawMaskOnImage`
-- `FastUnsharpSharpen`
-- `GrowMaskWithBlur`
-- `INTConstant`
-- `ImageBlend`
-- `ImageResizeKJv2`
-- `LoadImage`
-- `MaskToImage`
-- `OnnxDetectionModelLoader`
-- `PlaySound|pysssss`
-- `PoseAndFaceDetection`
-- `PreviewImage`
-- `SDPoseOODLoader`
-- `SDPoseOODProcessor`
-- `Seed (rgthree)`
-- `VHS_LoadVideo`
+- `DownloadAndLoadWav2VecModel`
+- `LoadAudio`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanVideoAnimateEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerFromSettings`
-- `WanVideoSamplerSettings`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoTorchCompileSettings`
+- `WanVideoSampler`
 - `WanVideoVAELoader`
-- `easy sam3ModelLoader`
-- `easy sam3VideoModelExtraConfig`
-- `easy sam3VideoSegmentation`
-- `easy sam3Visualization`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 24/25 个有
-- `GetNode` —— 24/25 个有
-- `ImageConcatMulti` —— 24/25 个有
-- `PreviewAny` —— 24/25 个有
-- `SetNode` —— 24/25 个有
-- `WanVideoEncode` —— 24/25 个有
-- `WanVideoLoraSelectMulti` —— 24/25 个有
-- `WanVideoUni3C_ControlnetLoader` —— 24/25 个有
-- `WanVideoUni3C_embeds` —— 24/25 个有
-- `YOLOModelLoader` —— 24/25 个有
-- `easy framesEditor` —— 24/25 个有
-- `easy sam3GetObjectIds` —— 24/25 个有
-- `easy sam3GetObjectMask` —— 24/25 个有
-- `ImageFlip` —— 23/25 个有
-- `LayerUtility: PurgeVRAM` —— 23/25 个有
-- `WanVideoContextOptions` —— 21/25 个有
-- `Label (rgthree)` —— 7/25 个有
-- `LamCommonPrint` —— 6/25 个有
-- `RHHiddenNodes` —— 5/25 个有
-- `SimpleMath+` —— 5/25 个有
-- `DF_Int_to_Float` —— 4/25 个有
-- `ImageResizeKJ` —— 4/25 个有
-- `JWInteger` —— 4/25 个有
-- `LayerUtility: PurgeVRAM V2` —— 4/25 个有
-- `RH_Captioner` —— 4/25 个有
-- `Text Concatenate` —— 4/25 个有
-- `Text Multiline` —— 4/25 个有
-- `ImageUpscaleWithModel` —— 3/25 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/25 个有
-- `UpscaleModelLoader` —— 3/25 个有
-- `孤海注释` —— 3/25 个有
-- `Int` —— 2/25 个有
-- `BodyRatioMapperSDPoseRender` —— 1/25 个有
-- `CR Image Input Switch` —— 1/25 个有
-- `CR Text` —— 1/25 个有
-- `Float` —— 1/25 个有
-- `ImpactConditionalBranch` —— 1/25 个有
-- `MemoryCleaner` —— 1/25 个有
-- `PointsEditor` —— 1/25 个有
-- `PrimitiveInt` —— 1/25 个有
-- `RIFE VFI` —— 1/25 个有
-- `SaveImage` —— 1/25 个有
-- `TT_img_enc` —— 1/25 个有
-- `Tensor Batch to Image` —— 1/25 个有
-- `easy compare` —— 1/25 个有
-- `easy float` —— 1/25 个有
-- `easy int` —— 1/25 个有
+- `Audio Duration (mtb)` —— 18/21 个有
+- `GetNode` —— 18/21 个有
+- `SetNode` —— 18/21 个有
+- `ImageResizeKJv2` —— 15/21 个有
+- `GetImageRangeFromBatch` —— 14/21 个有
+- `GetImageSizeAndCount` —— 14/21 个有
+- `PreviewAny` —— 14/21 个有
+- `ImageFromBatch+` —— 13/21 个有
+- `JjkText` —— 13/21 个有
+- `PrimitiveInt` —— 13/21 个有
+- `SimpleMath+` —— 13/21 个有
+- `VHS_LoadVideo` —— 12/21 个有
+- `LayerUtility: PurgeVRAM` —— 11/21 个有
+- `LoadWanVideoT5TextEncoder` —— 11/21 个有
+- `WanVideoEncode` —— 11/21 个有
+- `WanVideoTextEncode` —— 11/21 个有
+- `WanVideoTextEncodeCached` —— 11/21 个有
+- `LoadImage` —— 10/21 个有
+- `PrimitiveString` —— 10/21 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 7/21 个有
+- `MathExpression|pysssss` —— 6/21 个有
+- `INTConstant` —— 5/21 个有
+- `CR Prompt Text` —— 3/21 个有
+- `CR Text` —— 3/21 个有
+- `JWInteger` —— 3/21 个有
+- `PlaySound|pysssss` —— 3/21 个有
+- `JWIntegerToString` —— 2/21 个有
+- `VHS_VideoInfoLoaded` —— 2/21 个有
+- `Anything Everywhere` —— 1/21 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/21 个有
+- `FlashVSRNode` —— 1/21 个有
+- `FlashVSR_SM_KSampler` —— 1/21 个有
+- `FlashVSR_SM_Model` —— 1/21 个有
+- `GetAudioDurationFromAudio` —— 1/21 个有
+- `Image Comparer (rgthree)` —— 1/21 个有
+- `ImageScaleToTotalPixels` —— 1/21 个有
+- `JWFloat` —— 1/21 个有
+- `OmniVoiceLongformTTS` —— 1/21 个有
+- `OmniVoiceWhisperLoader` —— 1/21 个有
+- `RH_LLMAPI_Pro_Node` —— 1/21 个有
+- `SaveAudio` —— 1/21 个有
+- `SaveImage` —— 1/21 个有
+- `SeedVR2LoadDiTModel` —— 1/21 个有
+- `SeedVR2LoadVAEModel` —— 1/21 个有
+- `SeedVR2VideoUpscaler` —— 1/21 个有
+- `VHS_VideoInfo` —— 1/21 个有
+- `easy showAnything` —— 1/21 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 1.13217e+08 | - | 1 | 100% |
+| Prompt 约束强度(CFG) | randomize | - | 1 | 100% |
+| 采样算法 | 2 | - | 1 | 100% |
+| 调度器 | 3.5 | - | 1 | 100% |
+| 重绘幅度 | 11 | - | 1 | 100% |
 
 ## 常见问题
 
@@ -119,4 +105,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 风险：采样步数 观测到 1.13217e+08，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

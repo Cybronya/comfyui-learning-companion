@@ -1,54 +1,76 @@
 ---
 name: unknown_workflow_sampler_checkpoint_vae
 type: Unknown Workflow
-frequency: 25
-level: moderate
-coverage: 0.95004
-common_nodes: [CFGGuider, EmptyFlux2LatentImage, RandomNoise, SamplerCustomAdvanced, SaveImage, T8LLaDAImageCheckpointLoader, T8LLaDAImageScheduler, VAEDecode]
-problems: []
+frequency: 18
+level: strong
+coverage: 0.896333
+common_nodes: [CheckpointLoaderSimple, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, ModelSamplingAuraFlow, RHHiddenNodes, SaveImage, TextEncodeQwenImageEdit, TextEncodeQwenImageEditPlusAdvance_lrzjason, VAEDecode]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/文生图/AI一句话出二次元少女工作流_2099688939119534082.json, 图片生成/文生图/AI一句话出像素画工作流_2099689128639156225.json, 图片生成/文生图/AI一句话出图工作流_2099483718917382145.json, 图片生成/文生图/AI一句话出宠物写真工作流_2099673253303373825.json, 图片生成/文生图/AI一句话出服装模特图工作流_2099661996517056513.json, 图片生成/文生图/AI一句话出标志设计工作流_2099662212171390978.json, 图片生成/文生图/AI一句话出油画水彩工作流_2099689510945779714.json, 图片生成/文生图/AI一句话出竖版封面工作流_2099496937639727106.json, 图片生成/文生图/AI一句话出素描线稿工作流_2099689319828115458.json, 图片生成/文生图/AI一句话出角色立绘工作流_2099497044703531010.json, 图片生成/文生图/AI一句话出风景壁纸工作流_2099662102616166402.json, 图片生成/文生图/LLaDA-Image-文生图-全扩散架构_2098224508950896642.json, 图片生成/文生图/LLaDA-Image文字海报工作流_2099392086859673602.json, 图片生成/文生图/Llada Image Base VQ文生图_2096898925117657089.json, 图片生成/文生图/Llada Image Base文生图_2096898914665451522.json, 图片生成/文生图/Llada Image Turbo VQ文生图_2096898952783294465.json, 图片生成/文生图/Llada Image Turbo文生图_2096898945132879874.json, 平台全量/AI一句话出儿童写真工作流_2099673603972354049.json, 平台全量/AI一句话出古风人像工作流_2099673426058371073.json, 平台全量/AI一句话出室内设计图工作流_2099673069190213634.json, 平台全量/AI一句话出电商主图工作流_2099496719020023809.json, 平台全量/AI一句话出绘本插画工作流_2099496828789149697.json, 平台全量/AI一句话出美食图工作流_2099661883732217857.json, 平台全量/AI古风人像·LLaDA插画·一句话出图工作流_2099719717979254786.json, 平台全量/AI电商主图·LLaDA插画·一句话出图工作流_2099719519613841409.json]
+members: [图片生成/图生图/IP写真九宫格变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2509影楼写真_2035995310027186177.json, 图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2038273363747016706.json, 图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2038966204118867970.json, 图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2038968878218350593.json, 图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2043160913494155266.json, 图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2043526191616888834.json, 图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2055577841693151233.json, 图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）——影楼写真_2044395056760623105.json, 图片生成/图生图/IP文创九宫格变现利器Qwen-image-edit AIO_1993970158179991553.json, 图片生成/图生图/Qwen-Rapid-AIO V18 角色IP九宫格_1983502476076851201.json, 图片生成/图生图/图生图-明星写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511_2048962586577735682.json, 图片生成/图生图/水果专用九宫格qwan-image-edit_1993299515430076418.json, 图片生成/文生图/2031187599389364226.json, 图片生成/文生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image影楼写真_2038867949926223873.json, 图片生成/文生图/专为SeeDance 2.0AI短剧漫剧专用超真实感资产道具库QwenRapidAIO V23_2027230287247187970.json, 图片生成/文生图/十六宫变现利器（Qwen-image-edit2511写真）_2045435852054073345.json, 图片生成/文生图/超真实感道具生成_2027209573307785218.json, 图片生成/文生图/道具库QwenRapidAIO+V23_2027221533550190594.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_checkpoint_vae
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（图片生成/文生图/AI一句话出二次元少女工作流_2099688939119534082.json、图片生成/文生图/AI一句话出像素画工作流_2099689128639156225.json、图片生成/文生图/AI一句话出图工作流_2099483718917382145.json、图片生成/文生图/AI一句话出宠物写真工作流_2099673253303373825.json、图片生成/文生图/AI一句话出服装模特图工作流_2099661996517056513.json…）
+> 由 `engine/knowledge_consolidation` 从 18 个 workflow 归纳得出（图片生成/图生图/IP写真九宫格变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2509影楼写真_2035995310027186177.json、图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2038273363747016706.json、图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2038966204118867970.json、图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2038968878218350593.json、图片生成/图生图/IP写真十六宫变现利器（人物、动漫、宠物、拟人全类型）Qwen-image-edit2511影楼写真_2043160913494155266.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
-- **可信度**：中等可信
-- **平均知识覆盖**：95%
+- **样本数**：18
+- **可信度**：强结论
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `CFGGuider`
-- `EmptyFlux2LatentImage`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+全部 18 个 workflow 都包含：
+- `CheckpointLoaderSimple`
+- `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `ModelSamplingAuraFlow`
+- `RHHiddenNodes`
 - `SaveImage`
-- `T8LLaDAImageCheckpointLoader`
-- `T8LLaDAImageScheduler`
+- `TextEncodeQwenImageEdit`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `VAEDecode`
 
 **可变部分**（部分 workflow 才有）：
-- `CLIPTextEncode` —— 23/25 个有
-- `CR Prompt Text` —— 23/25 个有
-- `KSamplerSelect` —— 23/25 个有
-- `CLIPLoader` —— 19/25 个有
-- `TextGenerate` —— 19/25 个有
-- `T8LLaDAImageVQConditioning` —— 2/25 个有
-- `T8SamplerLLaDAImageTurbo` —— 2/25 个有
+- `ImageLoader` —— 16/18 个有
+- `LoraLoaderModelOnly` —— 15/18 个有
+- `PrimitiveStringMultiline` —— 13/18 个有
+- `easy showAnything` —— 13/18 个有
+- `easy imageRemBg` —— 7/18 个有
+- `CR Text` —— 4/18 个有
+- `EmptyLatentImage` —— 2/18 个有
+- `ImpactInt` —— 2/18 个有
+- `LoadImage` —— 1/18 个有
+- `TextConcat` —— 1/18 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 8 | 8 - 8 | 18 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 18 | 100% |
+| 采样算法 | er_sde | - | 18 | 100% |
+| 调度器 | beta57 | - | 18 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 18 | 100% |
+| 宽度 | 600 | - | 2 | 100% |
+| 高度 | 800 | - | 2 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 18/18 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 8，观测区间 8 - 8，18 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，18 个样本，一致性 100%
+- 调度器 最常用 beta57，18 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，18 个样本，取值集中（一致性 100%）
+- 宽度 中位数 600，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高度 中位数 800，样本不足，未给区间，2 个样本，取值集中（一致性 100%）
+- 高发问题（18/18 个样本）：Steps较低可能导致细节不足

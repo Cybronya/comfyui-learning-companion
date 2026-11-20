@@ -462,7 +462,7 @@
 			],
 			"color":"#332922",
 			"widgets_values":[
-				"https://prod-ss-vidu.s3.cn-northwest-1.amazonaws.com.cn/infer/tasks/25/1130/10/892667276887609344/creation-01/video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=REDACTED000000000000%2F20251130%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Date=20251130T105332Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D86400&response-content-disposition=attachment%3Bfilename%3Dgeneral-6-2025-11-30T10%253A53%253A25Z.mp4&x-id=GetObject&X-Amz-Signature=bc790d2dcdb7252c1310d62793e2541ab33d87a71e1947e32ad099181047127e"
+				"https://prod-ss-vidu.s3.cn-northwest-1.amazonaws.com.cn/infer/tasks/25/1130/10/892667276887609344/creation-01/video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARRHG6JR7EMNHVUWT%2F20251130%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Date=20251130T105332Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D86400&response-content-disposition=attachment%3Bfilename%3Dgeneral-6-2025-11-30T10%253A53%253A25Z.mp4&x-id=GetObject&X-Amz-Signature=bc790d2dcdb7252c1310d62793e2541ab33d87a71e1947e32ad099181047127e"
 			],
 			"inputs":[
 				{
@@ -515,7 +515,7 @@
 			],
 			"color":"#332922",
 			"widgets_values":[
-				"{\"status\": \"success\", \"task_id\": \"892667276887609344\", \"video_url\": \"https://prod-ss-vidu.s3.cn-northwest-1.amazonaws.com.cn/infer/tasks/25/1130/10/892667276887609344/creation-01/video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=REDACTED000000000000%2F20251130%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Date=20251130T105332Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D86400&response-content-disposition=attachment%3Bfilename%3Dgeneral-6-2025-11-30T10%253A53%253A25Z.mp4&x-id=GetObject&X-Amz-Signature=bc790d2dcdb7252c1310d62793e2541ab33d87a71e1947e32ad099181047127e\", \"model\": \"viduq2-turbo\", \"duration\": 5, \"resolution\": \"720p\", \"seed\": 2018078736, \"voice_language\": \"N/A\", \"voice_id\": \"N/A\"}"
+				"{\"status\": \"success\", \"task_id\": \"892667276887609344\", \"video_url\": \"https://prod-ss-vidu.s3.cn-northwest-1.amazonaws.com.cn/infer/tasks/25/1130/10/892667276887609344/creation-01/video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARRHG6JR7EMNHVUWT%2F20251130%2Fcn-northwest-1%2Fs3%2Faws4_request&X-Amz-Date=20251130T105332Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D86400&response-content-disposition=attachment%3Bfilename%3Dgeneral-6-2025-11-30T10%253A53%253A25Z.mp4&x-id=GetObject&X-Amz-Signature=bc790d2dcdb7252c1310d62793e2541ab33d87a71e1947e32ad099181047127e\", \"model\": \"viduq2-turbo\", \"duration\": 5, \"resolution\": \"720p\", \"seed\": 2018078736, \"voice_language\": \"N/A\", \"voice_id\": \"N/A\"}"
 			],
 			"inputs":[
 				{

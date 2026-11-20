@@ -1,104 +1,123 @@
 ---
 name: text_to_image_video_lora_sampler_10
 type: Text To Image
-frequency: 33
-level: strong
-coverage: 0.88703
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, Float to Int, GetVideoComponents, ImageConcatenate_UTK, ImageFromBatch, Int, JjkText, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadVideo, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveFloat, RHHiddenNodes, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, Video Duration Calculator, easy MiniMaxH3ReferenceToVideoBridge, easy imageCount, easy mathInt, easy showAnything, solarL_SaveImagesToZip]
+frequency: 34
+level: weak
+coverage: 0.846471
+common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, EmptyLTXVLatentVideo, EmptyLatentImage, INTConstant, KSampler, KSamplerSelect, LTXAVTextEncoderLoader, LTXAddVideoICLoRAGuide, LTXICLoRALoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LiconMSR, LoadImage, LoraLoaderModelOnly, LowVRAMCheckpointLoader, ManualSigmas, PreviewImage, RandomNoise, SamplerCustomAdvanced, Text, VAEDecode, VAELoader, VHS_VideoCombine, easy indexAnything, easy showAnything]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/H3全参模式角色替换 视频处理工具_2100634529659711490.json, 图片生成/图生图/H3视频参考编辑人物换装处理生成工具包集_2100281577153585154.json, 图片生成/图生图/H3视频编辑去除人物 视频处理生成工具包_2100283161178624002.json, 图片生成/图生图/MiniMax H3视频参考编辑人物替换工作流，其它视频处理人物替换工具_2107176958315552769.json, 图片生成/图生图/MiniMaxH3视频参考编辑｜人物换装视频处理_2095566743472271362.json, 图片生成/图生图/MiniMaxH3视频编辑去人物｜擦除人物视频处理_2095565407036985345.json, 图片生成/图生图/Minimax3全参模式角色替换｜其它视频处理也能这么玩，换脸换人一气呵成_2100429176577806338.json, 图片生成/图生图/Minimax3全参模式角色替换｜参考图加原视频视频处理_2088763480580120578.json, 图片生成/图生图/Minimax3全参模式｜视频角色替换高质量处理_2095928159500857346.json, 图片生成/图生图/MinimaxH3视频参考编辑人物替换T1｜其它视频处理利器_2106972577502679041.json, 图片生成/图生图/MinimaxH3视频编辑V1｜一键去除视频背景里多余人物｜画面瞬间干净_2099118326118174721.json, 图片生成/图生图/MinimaxH3视频编辑去除人物2｜视频处理一键擦除_2100793280198955009.json, 图片生成/图生图/minimaxH3视频编辑复刻｜抖音热门特效V1直出_2092010345916354562.json, 图片生成/图生图/人物替换T1｜MinimaxH3视频参考编辑，换主角不影响背景_2099916510587351042.json, 图片生成/图生图/人物替换参考视频编辑｜MinimaxH3视频处理T1版_2095797239611478017.json, 图片生成/图生图/全参模式角色替换实操｜Minimax3 视频处理新玩法_2096202523513286657.json, 图片生成/图生图/全参模式角色替换｜Minimax3其它视频处理_2092565834769190913.json, 图片生成/图生图/抖音热门特效V1复刻｜minimaxH3视频编辑轻松上手_2096212199453847553.json, 图片生成/图生图/背景人物一键去除｜MinimaxH3视频编辑V1_2091162669549182978.json, 图片生成/图生图/背景人物去除编辑｜MinimaxH3视频V1处理工作流_2095133128032612354.json, 图片生成/图生图/视频参考编辑人物换装｜MinimaxH3其它视频处理工作流_2087192449147031554.json, 图片生成/图生图/视频参考编辑人物替换T1｜MinimaxH3其它视频处理工作流_2087196055795490818.json, 图片生成/图生图/视频参考编辑人物替换｜MinimaxH3视频处理T1直出_2091586865601277954.json, 图片生成/图生图/视频杂物清道夫｜MinimaxH3一键去除多余人物元素_2096518368504410114.json, 图片生成/图生图/视频编辑一键去除人物｜MinimaxH3其它视频处理_2095793371834048514.json, 图片生成/图生图/视频编辑去人物2｜MinimaxH3其它视频处理_2092909484829134850.json, 图片生成/图生图/视频编辑去除多余人物｜MinimaxH3画面擦除处理_2096293888435769346.json, 平台全量/水印字幕图标一键去除｜MinimaxH3人物替换V1视频编辑_2091755686706368513.json, 视频生成/图生视频/MiniMax_H3去水印字幕图标加人物替换工作流，去水印其它视频处理方案_2109444784137003010.json, 视频生成/图生视频/MiniMax_H3视频参考编辑人物替换工作流，其它视频处理人物替换工具_2109455488231497729.json, 视频生成/图生视频/MinimaxH3 参考编辑人物替换 角色一致性更强_2104987281709953025.json, 视频生成/图生视频/MinimaxH3视频参考编辑T1版｜动作迁移人物替换一键搞定｜视频风格随心换_2104744951228755970.json, 视频生成/图生视频/MinimaxH3视频参考编辑人物替换T1｜视频图生视频换主角_2101905285496524802.json]
+members: [图片生成/图生图/Gemma4开源版2｜LTX-2.3_MSR V2视频处理生成_2095064005294514177.json, 图片生成/图生图/LTX 2.3 MSR V2 Gemma4开源版2工作流，其它视频处理方案_2106454518350307330.json, 图片生成/图生图/LTX-2.3 MSR V2 Gemma4开源版2-其它视频处理工作流_2087338246153003009.json, 图片生成/图生图/LTX-2.3 MSR V2 Gemma4开源版2｜视频处理新选择_2106259370370748417.json, 图片生成/图生图/LTX-2.3 MSR V2 Gemma4开源版2｜视频处理长镜头稳定不掉帧_2099122238648832002.json, 图片生成/图生图/LTX-2.3_MSR+V2漫剧自动多参分镜_2083110121860849666.json, 图片生成/图生图/MSR V2 Gemma4开源版｜LTX-2.3视频处理直出_2090880480139898882.json, 图片生成/图生图/开源Gemma4加持｜LTX-2.3 MSR V2参考图生视频处理_2091158499739914241.json, 视频生成/图生视频/3分镜图生视频｜image2+LTX-MSR多参运镜，出片更有戏_2099909158635139074.json, 视频生成/图生视频/3分镜多参图生视频｜image2+LTX-MSR组合生成_2095484514092015618.json, 视频生成/图生视频/Image2加LTX多参数三分镜图生视频 多角色分镜创作_2099916907792130050.json, 视频生成/图生视频/LTX-2.3_MSR V2 Gemma4开源版_2083136188516491265.json, 视频生成/图生视频/LTX-2.3_MSR V2多参分镜自动扩展提示词1_2079756676873408513.json, 视频生成/图生视频/LTX-2.3_MSR V2多参漫剧长镜头1_2083106849519398914.json, 视频生成/图生视频/LTX-2.3_MSR V2漫剧短剧自动多参分镜图生视频_2080241011628007425.json, 视频生成/图生视频/LTX-2.3_MSR V2漫剧短剧自动多参分镜图生视频_2081010266782912513.json, 视频生成/图生视频/LTX-2.3_MSR V2漫剧自动多参分镜_2079758603824750594.json, 视频生成/图生视频/LTX-2.3_MSR V2漫剧自动多参分镜_2080572501062672386.json, 视频生成/图生视频/LTX-2.3_MSR+V2漫剧自动多参分镜_2095747117393473538.json, 视频生成/图生视频/LTX-MSR多参3分镜图生视频image2_2087478149268459522.json, 视频生成/图生视频/MRS自动分镜提示词1_2079459174697754625.json, 视频生成/图生视频/ltx23-mrsv2自动多分镜视频_2080283230909063170.json, 视频生成/图生视频/ltx漫剧多参_2072609363512094721.json, 视频生成/图生视频/最新版 LTX 无API漫剧多参视频漫剧电商服装分镜真人_2072967530607632385.json, 视频生成/图生视频/最新版LTX多参图生视频漫剧分镜电商服装1_2074307864331636737.json, 视频生成/图生视频/最新版LTX多参图生视频漫剧分镜电商服装2_2074307850519797761.json, 视频生成/图生视频/最新版LTX多参图生视频漫剧分镜电商服装3_2074345334553268226.json, 视频生成/图生视频/最新版LTX多参图生视频漫剧分镜电商服装_2074181237513744385.json, 视频生成/图生视频/最新版LTX多参图生视频漫剧电商服装分镜真人_2074184483884064769.json, 视频生成/图生视频/最新版LTX漫剧多参视频无API版漫剧_2074365914375614466.json, 视频生成/图生视频/最新版LTX漫剧多参视频无API版漫剧电商服装分镜真人_2072600045387599874.json, 视频生成/图生视频/最新版LTX漫剧多参视频无API版漫剧电商服装分镜真人_2074366376860545025.json, 视频生成/图生视频/漫剧场景缤纷世界_2079795396607565825.json, 视频生成/图生视频/漫剧多参分镜自动扩展提示词1_2079483993136918530.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_10
 
-> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/图生图/H3全参模式角色替换 视频处理工具_2100634529659711490.json、图片生成/图生图/H3视频参考编辑人物换装处理生成工具包集_2100281577153585154.json、图片生成/图生图/H3视频编辑去除人物 视频处理生成工具包_2100283161178624002.json、图片生成/图生图/MiniMax H3视频参考编辑人物替换工作流，其它视频处理人物替换工具_2107176958315552769.json、图片生成/图生图/MiniMaxH3视频参考编辑｜人物换装视频处理_2095566743472271362.json…）
+> 由 `engine/knowledge_consolidation` 从 34 个 workflow 归纳得出（图片生成/图生图/Gemma4开源版2｜LTX-2.3_MSR V2视频处理生成_2095064005294514177.json、图片生成/图生图/LTX 2.3 MSR V2 Gemma4开源版2工作流，其它视频处理方案_2106454518350307330.json、图片生成/图生图/LTX-2.3 MSR V2 Gemma4开源版2-其它视频处理工作流_2087338246153003009.json、图片生成/图生图/LTX-2.3 MSR V2 Gemma4开源版2｜视频处理新选择_2106259370370748417.json、图片生成/图生图/LTX-2.3 MSR V2 Gemma4开源版2｜视频处理长镜头稳定不掉帧_2099122238648832002.json…）
 
 - **类型**：Text To Image
-- **样本数**：33
-- **可信度**：强结论
-- **平均知识覆盖**：89%
+- **样本数**：34
+- **可信度**：弱结论（样本不足）
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 33 个 workflow 都包含：
-- `BasicGuider`
-- `BasicScheduler`
+全部 34 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
 - `EmptyLatentImage`
-- `Float to Int`
-- `GetVideoComponents`
-- `ImageConcatenate_UTK`
-- `ImageFromBatch`
-- `Int`
-- `JjkText`
+- `INTConstant`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadVideo`
+- `LTXAVTextEncoderLoader`
+- `LTXAddVideoICLoRAGuide`
+- `LTXICLoRALoaderModelOnly`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVCropGuides`
+- `LTXVEmptyLatentAudio`
+- `LTXVSeparateAVLatent`
+- `LiconMSR`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `PrimitiveFloat`
-- `RHHiddenNodes`
+- `LowVRAMCheckpointLoader`
+- `ManualSigmas`
+- `PreviewImage`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
+- `Text`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
 - `VHS_VideoCombine`
-- `Video Duration Calculator`
-- `easy MiniMaxH3ReferenceToVideoBridge`
-- `easy imageCount`
-- `easy mathInt`
+- `easy indexAnything`
 - `easy showAnything`
-- `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 32/33 个有
-- `Text` —— 25/33 个有
-- `PreviewImage` —— 24/33 个有
-- `ExtractStoryboards_xuhuan1024` —— 23/33 个有
-- `LoadImage` —— 23/33 个有
-- `easy indexAnything` —— 13/33 个有
-- `CR Image Grid Panel` —— 10/33 个有
-- `FlashVSR_SM_KSampler` —— 10/33 个有
-- `FlashVSR_SM_Model` —— 10/33 个有
-- `InspyrenetRembg` —— 10/33 个有
-- `JWInteger` —— 10/33 个有
-- `LayerUtility: PurgeVRAM V2` —— 10/33 个有
-- `SaveImage` —— 6/33 个有
-- `EmptyImage` —— 3/33 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 3/33 个有
+- `TextConcatenate_UTK` —— 31/34 个有
+- `ConditioningZeroOut` —— 30/34 个有
+- `EnhancedLoadDiffusionModel` —— 30/34 个有
+- `FluxKontextMultiReferenceLatentMethod` —— 30/34 个有
+- `Int` —— 30/34 个有
+- `LayerUtility: PurgeVRAM V2` —— 30/34 个有
+- `RH_Captioner` —— 30/34 个有
+- `RandomInt` —— 30/34 个有
+- `StringReplace` —— 30/34 个有
+- `TextEncodeQwenImageEditPlus` —— 30/34 个有
+- `easy batchAnything` —— 30/34 个有
+- `easy forLoopEnd` —— 30/34 个有
+- `easy forLoopStart` —— 30/34 个有
+- `Split String by Commas` —— 26/34 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 25/34 个有
+- `ImageConcatenate_UTK` —— 24/34 个有
+- `CR Float To Integer` —— 20/34 个有
+- `CR Prompt Text` —— 20/34 个有
+- `FloatConstant` —— 20/34 个有
+- `LTX2_NAG` —— 20/34 个有
+- `PromptRelayEncode` —— 20/34 个有
+- `SimpleMath+` —— 20/34 个有
+- `JjkText` —— 11/34 个有
+- `UNETLoader` —— 11/34 个有
+- `solarL_SaveImagesToZip` —— 11/34 个有
+- `孤海注释` —— 11/34 个有
+- `llama_cpp_instruct_adv` —— 8/34 个有
+- `llama_cpp_model_loader` —— 8/34 个有
+- `llama_cpp_parameters` —— 8/34 个有
+- `ImageScaleToTotalPixels` —— 4/34 个有
+- `RHHiddenNodes` —— 4/34 个有
+- `RH_RhartImageG2ImageToImage` —— 4/34 个有
+- `SetNode` —— 4/34 个有
+- `easy imageSplitGrid` —— 4/34 个有
+- `SaveImage` —— 2/34 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 33 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 33 | 100% |
-| 采样算法 | er_sde | - | 33 | 100% |
-| 调度器 | beta | - | 33 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 33 | 100% |
-| 宽度 | 80 | 80 - 80 | 33 | 100% |
-| 高度 | 80 | 80 - 80 | 33 | 100% |
+| 采样步数 | 8 | 4 - 8 | 34 | 72% |
+| Prompt 约束强度(CFG) | 1 | 1 - 4.5 | 34 | 23% |
+| 采样算法 | euler | - | 34 | 68% |
+| 调度器 | simple | - | 34 | 68% |
+| 重绘幅度 | 1 | 1 - 1 | 34 | 100% |
+| 宽度 | 241 | 80 - 1280 | 34 | 0% |
+| 高度 | 80 | 50 - 720 | 34 | 0% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 33/33 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 41/34 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，33 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，33 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，33 个样本，一致性 100%
-- 调度器 最常用 beta，33 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，33 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，33 个样本，取值集中（一致性 100%）
-- 高发问题（33/33 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 8，观测区间 4 - 8，34 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 4.5，34 个样本，取值分散，一致性仅 23%
+- 采样算法 最常用 euler，34 个样本，一致性 68%
+- 调度器 最常用 simple，34 个样本，一致性 68%
+- 重绘幅度 中位数 1，观测区间 1 - 1，34 个样本，取值集中（一致性 100%）
+- 宽度 中位数 241，观测区间 80 - 1280，34 个样本，取值分散，一致性仅 0%
+- 高度 中位数 80，观测区间 50 - 720，34 个样本，取值分散，一致性仅 0%
+- 高发问题（41/34 个样本）：Steps较低可能导致细节不足

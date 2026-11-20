@@ -1,94 +1,85 @@
 ---
 name: unknown_workflow_video_lora_sampler_27
 type: Unknown Workflow
-frequency: 35
-level: moderate
-coverage: 0.623143
-common_nodes: [CLIPVisionLoader, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageCropByMaskAndResize, LoadImage, PixelPerfectResolution, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+frequency: 28
+level: strong
+coverage: 0.775107
+common_nodes: [BasicScheduler, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, PathchSageAttentionKJ, SamplerCustom, VAEDecode, VAELoaderKJ, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/Wan2.2-Animate-视频换脸+换装工作流_1999771320256786434.json, 平台全量/Wan2.2_Animate 最强动作表情迁移_1970873910147354625.json, 平台全量/[众馨]换头_1989168137448861698.json, 平台全量/asdfasdfasfdafaaa_2018932712517672961.json, 平台全量/wan Animate sam3.0语义分割人物替换_2080861597412712449.json, 平台全量/【维尼】人物替换工作流_1996932528210657281.json, 平台全量/人物视频换装 （支持生成10秒）替换动作迁移 Wan万相 换装人物_2047135452813074434.json, 平台全量/人物视频换装 （支持生成10秒）替换动作迁移 Wan万相 换装人物_2055149768137027586.json, 平台全量/人物视频换装 （最长可10秒）Wan万相 换装人物 替换动作迁移_2047136483181596673.json, 平台全量/动作模仿动作迁移图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上） (1)_2026731459997868033.json, 平台全量/动作模仿动作迁移图生视频动作迁移视频换装Wan2.2人物替换动作迁移（支持10s以上） (1)_2033978370362445825.json, 平台全量/动作迁移 视频换人 （固定视频动作换人）_2060930525300346881.json, 平台全量/商用版—视频换装_1976286528752230402.json, 平台全量/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移支持10s以上_2100047923588452354.json, 平台全量/换脸图生视频动作迁移视频换装Wan2.2人物替换动作迁移支持10s以上_2100125787537108994.json, 平台全量/换脸视频+动作迁移视频Wan2.2_1997227928914169858.json, 平台全量/换脸视频+动作迁移视频Wan2.2_2067197085480480770.json, 平台全量/换装换脸+动作迁移 超长时间 视频动作迁移 支持生成10s以上 Wan2.2人物替换动作迁移_2043855441813315586.json, 平台全量/换装视频换装Wan2.2换装人物替换动作迁移（支持10s）_1972851274611904513.json, 平台全量/换装视频换装Wan2.2换装人物替换动作迁移（支持10s）_2045102828380758018.json, 平台全量/视频动作迁移换装换脸+动作迁移 超长时间  支持生成10s以上 Wan2.2人物替换动作迁移_2043852070972825601.json, 平台全量/视频换脸 视频换脸换发型-人物角色替换_2049288382852894722.json, 平台全量/视频换脸换发型- 真实自然 视频换脸+人物角色替换_2051890294647468034.json, 平台全量/视频换脸换头换发型 真实自然+视频换脸+人物角色替换 虚拟美女模特_2059472940214870017.json, 平台全量/视频换脸换头换发型+人物角色替换  真实自然_2059804277857673217.json, 平台全量/视频换脸换头换发型-+真实自然+视频换脸+人物角色替换 虚拟美女模特_2058803042585243649.json, 平台全量/视频换脸自定时长 高清视频换脸换发型++真实自然++人物角色替换_2054451154356064257.json, 平台全量/视频自定义换脸换头_2063159400059199490.json, 平台全量/高清视频换脸换发型+自定时长+真实自然+视频换脸+人物角色替换_2054447334959927298.json, 平台全量/高清视频换脸换发型+自定时长+真实自然+视频换脸+人物角色替换_2061818626449166337.json, 平台全量/高清视频换脸换发型+自定时长+真实自然+视频换脸+人物角色替换_2074473065647529985.json, 平台全量/高清视频换脸换发型+自定时长+真实自然+视频换脸+人物角色替换_2074530122836824066.json, 视频生成/图生视频/人物替换，SAM3自动分割_2046159964988776450.json, 视频生成/图生视频/换脸+换装+换人多合一（换脸换装换人）图生视频动作迁移视频换装Wan2.2人物替换动作迁移_2001911262554537986.json, 视频生成/图生视频/视频换脸换装换人多合一（48g换脸换装换人）图生视频动作迁移视频换装_2001967162547924993.json]
+members: [视频生成/图生视频/LTX23_v1_提示词理解测试版_2053376234775687170.json, 视频生成/图生视频/LTX23_v1_速度版_2053287053370118146.json, 视频生成/图生视频/LTX23_v2_精准版_2053287557496098818.json, 视频生成/图生视频/LTX23_v3_导演控制版_2053292180520878081.json, 视频生成/图生视频/Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json, 视频生成/图生视频/Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054471149064597506.json, 视频生成/图生视频/Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054525634252165121.json, 视频生成/图生视频/Ltx2.3 Dasiwa V3+Prompt Relay精准图生视频（最强人脸一致性）_2070413005359243266.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制V2_2054480431743021058.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制图生视频_2054510424275595265.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制图生视频_2055122108715413506.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR 390K单图参考精准控制图生视频_2104521975828934658.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制-去字幕_2053633709424820226.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制V1_2052624355913420802.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制_2058542604932968449.json, 视频生成/图生视频/Ltx2.3 Prompt Relay Smart精准控制_2054244112395710465.json, 视频生成/图生视频/Ltx2.3 Prompt Relay最强人脸一致性_数字人_2072098418612326401.json, 视频生成/图生视频/Ltx2.3 Sulphur-2+Prompt Relay分段提示词微动作_2054758964251897857.json, 视频生成/图生视频/Ltx2.3 Sulphur-2+Prompt Relay极致微表情图生视频_2054743040564178946.json, 视频生成/图生视频/Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054742077061246978.json, 视频生成/图生视频/Ltx2.3 图生视频精准控制 Prompt Relay Smart + VBVR_2052684073478434818.json, 视频生成/图生视频/Ltx2.3+Prompt+Relay+Smart+++VBVR+390K单图参考精准控制V2_2059634224981958657.json, 视频生成/图生视频/Ltx2.3--Sulphur2--VBVR--图生视频_2055899428757753858.json, 视频生成/图生视频/Ltx2.3单图生视频-多镜头逻辑控制PromptRelay+VBVR（KJ版）0506_2051845619093909505.json, 视频生成/图生视频/Ltx2.3单图生视频-多镜头逻辑控制PromptRelay+VBVR（KJ版）_2052580214886154241.json, 视频生成/图生视频/Ltx2.3单图生视频精准运镜Prompt Relay Smart + VBVR_2053103007134429186.json, 视频生成/图生视频/Ltx2.3（单图）时间精准控制+逻辑控制PromptRelay+VBVR（KJ版）_2047231171125317633.json, 视频生成/图生视频/精准控制LTX2.3图文生视频工作流（强控一致性）_2052683608971849729.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_27
 
-> 由 `engine/knowledge_consolidation` 从 35 个 workflow 归纳得出（平台全量/Wan2.2-Animate-视频换脸+换装工作流_1999771320256786434.json、平台全量/Wan2.2_Animate 最强动作表情迁移_1970873910147354625.json、平台全量/[众馨]换头_1989168137448861698.json、平台全量/asdfasdfasfdafaaa_2018932712517672961.json、平台全量/wan Animate sam3.0语义分割人物替换_2080861597412712449.json…）
+> 由 `engine/knowledge_consolidation` 从 28 个 workflow 归纳得出（视频生成/图生视频/LTX23_v1_提示词理解测试版_2053376234775687170.json、视频生成/图生视频/LTX23_v1_速度版_2053287053370118146.json、视频生成/图生视频/LTX23_v2_精准版_2053287557496098818.json、视频生成/图生视频/LTX23_v3_导演控制版_2053292180520878081.json、视频生成/图生视频/Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：35
-- **可信度**：中等可信
-- **平均知识覆盖**：62%
+- **样本数**：28
+- **可信度**：强结论
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 35 个 workflow 都包含：
-- `CLIPVisionLoader`
-- `DWPreprocessor`
-- `FaceMaskFromPoseKeypoints`
-- `GetNode`
-- `ImageCropByMaskAndResize`
+全部 28 个 workflow 都包含：
+- `BasicScheduler`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `PixelPerfectResolution`
-- `SetNode`
-- `VHS_LoadVideo`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `SamplerCustom`
+- `VAEDecode`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
-- `WanVideoAnimateEmbeds`
-- `WanVideoBlockSwap`
-- `WanVideoClipVisionEncode`
-- `WanVideoDecode`
-- `WanVideoModelLoader`
-- `WanVideoSampler`
-- `WanVideoSetBlockSwap`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
-- `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `ImageResizeKJv2` —— 34/35 个有
-- `JWInteger` —— 34/35 个有
-- `LayerUtility: PurgeVRAM` —— 34/35 个有
-- `easy cleanGpuUsed` —— 34/35 个有
-- `BlockifyMask` —— 33/35 个有
-- `DrawMaskOnImage` —— 33/35 个有
-- `GrowMask` —— 33/35 个有
-- `WanVideoLoraSelectMulti` —— 33/35 个有
-- `VHS_VideoInfo` —— 32/35 个有
-- `LayerMask: SegformerB2ClothesUltra` —— 31/35 个有
-- `CR Text` —— 30/35 个有
-- `ImageConcatMulti` —— 30/35 个有
-- `Int` —— 30/35 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 29/35 个有
-- `MathExpression|pysssss` —— 28/35 个有
-- `LayerUtility: PurgeVRAM V2` —— 27/35 个有
-- `PreviewImage` —— 25/35 个有
-- `EmptyImage` —— 5/35 个有
-- `easy sam3ModelLoader` —— 4/35 个有
-- `easy sam3VideoSegmentation` —— 4/35 个有
-- `MemoryCleaner` —— 3/35 个有
-- `RMBG` —— 3/35 个有
-- `SaveImage` —— 3/35 个有
-- `LoadSAM3Model` —— 2/35 个有
-- `MaskListToMaskBatch` —— 2/35 个有
-- `MaskToImage` —— 2/35 个有
-- `RH_Translator` —— 2/35 个有
-- `SAM3Segmentation` —— 2/35 个有
-- `TT_img_enc_v2` —— 2/35 个有
-- `WanVideoLoraSelect` —— 2/35 个有
-- `easy imageBatchToImageList` —— 2/35 个有
-- `easy imageListToImageBatch` —— 2/35 个有
-- `easy sam3VideoModelExtraConfig` —— 2/35 个有
-- `easy sam3Visualization` —— 2/35 个有
-- `DownloadAndLoadGIMMVFIModel` —— 1/35 个有
-- `GIMMVFI_interpolate` —— 1/35 个有
-- `PrimitiveBoolean` —— 1/35 个有
-- `Prompt_Text` —— 1/35 个有
-- `easy framesEditor` —— 1/35 个有
-- `easy showAnything` —— 1/35 个有
+- `CR Prompt Text` —— 27/28 个有
+- `GetNode` —— 27/28 个有
+- `PreviewImage` —— 27/28 个有
+- `SetNode` —— 27/28 个有
+- `VisualizeSigmasKJ` —— 27/28 个有
+- `UNETLoader` —— 26/28 个有
+- `ConditioningZeroOut` —— 25/28 个有
+- `PromptRelaySmartEncode` —— 20/28 个有
+- `JWInteger` —— 19/28 个有
+- `Int` —— 9/28 个有
+- `SimpleMath+` —— 9/28 个有
+- `CLIPTextEncode` —— 8/28 个有
+- `PromptRelayEncode` —— 7/28 个有
+- `easy showAnything` —— 7/28 个有
+- `RH_LLMAPI_Pro_Node` —— 5/28 个有
+- `Float` —— 3/28 个有
+- `CheckpointLoaderSimple` —— 2/28 个有
+- `easy seed` —— 2/28 个有
+- `DF_Integer` —— 1/28 个有
+- `Float to Int` —— 1/28 个有
+- `MathExpression|pysssss` —— 1/28 个有
+- `PrimitiveBoolean` —— 1/28 个有
+- `PrimitiveFloat` —— 1/28 个有
+- `easy getNode` —— 1/28 个有
+- `easy ifElse` —— 1/28 个有
+- `easy positive` —— 1/28 个有
+- `easy setNode` —— 1/28 个有
+- `ttN float` —— 1/28 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 宽度 | 489 | 489 - 489 | 28 | 100% |
+| 高度 | 25 | 25 - 30 | 28 | 96% |
 
 ## 常见问题
 
@@ -96,4 +87,5 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 宽度 中位数 489，观测区间 489 - 489，28 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 30，28 个样本，取值集中（一致性 96%）

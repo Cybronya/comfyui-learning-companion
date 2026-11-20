@@ -1,122 +1,124 @@
 ---
 name: text_to_image_video_lora_sampler_11
 type: Text To Image
-frequency: 33
+frequency: 34
 level: strong
-coverage: 0.553636
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionLoader, CheckpointLoaderSimple, EmptyLatentImage, GetNode, ImageResizeKJv2, Int, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, PlaySound|pysssss, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMaskV2, SetNode, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VHS_VideoInfoLoaded, WanAnimatePlus BlockSwap, WanAnimatePlus ClipVisionEncode V2, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SCAIL_2 Embeds, WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus SamplerFromSettings, WanAnimatePlus SamplerSettings, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus VAELoader, WanVideoTextEncodeCached, solarL_SaveImagesToZip]
+coverage: 0.685941
+common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, ComfyMathExpression, EmptyLatentImage, GetImageRangeFromBatch, GetImageSize, ImageResizeKJv2, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, TensorLoopClose, TensorLoopOpen, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [平台全量/Scail-2 Plus V4.1高阶版 人物替换长视频动作迁移背景替换_2096746592534622210.json, 平台全量/Scail-2 Plus V4.1高阶版 人物替换长视频动作迁移背景替换_2098653368922230786.json, 平台全量/Scail-2 Plus V4.1高阶版 人物替换长视频动作迁移背景替换_2100368773474775041.json, 平台全量/Scail-2高阶Plus V4.1版 长视频动作迁移背景替换人物替换_2097830432246157314.json, 平台全量/Scail-2高阶Plus V4.1版 长视频动作迁移背景替换人物替换_2101453743094067202.json, 数字人/数字人/Scail2高阶工作流Plus V4.1版人物替换长视频动作迁移背景替换_2100677048300818433.json, 视频生成/图生视频/AI舞蹈动作模仿神器｜上传视频一键复刻同款舞姿｜图生视频视频生视频_2099092870555848706.json, 视频生成/图生视频/Scail 2高阶工作流Plus V4版长视频加多图参考加动作迁移，图生视频方案_2107921047751315457.json, 视频生成/图生视频/Scail-2人物替换 简单几步换掉视频中的人_2096740903728803841.json, 视频生成/图生视频/Scail-2人物替换 简单几步换掉视频中的人_2098648284570144770.json, 视频生成/图生视频/Scail-2人物替换 简单几步换掉视频中的人_2100363189539131393.json, 视频生成/图生视频/Scail-2人物替换高阶工作流Plus V4.1｜动作迁移背景替换_2100820014902366210.json, 视频生成/图生视频/Scail-2动作复刻神器｜长视频迁移与背景替换实测_2097204671491428354.json, 视频生成/图生视频/Scail-2动作迁移动作复刻｜长视频背景替换图生视频_2091729594511609858.json, 视频生成/图生视频/Scail-2动作迁移动作复刻｜长视频背景替换处理_2095571202466209793.json, 视频生成/图生视频/Scail-2动作迁移复刻工作流｜长视频背景替换视频生成_2097075469312159745.json, 视频生成/图生视频/Scail-2动作迁移复刻｜长视频背景替换一步搞定_2097200849033453569.json, 视频生成/图生视频/Scail-2动作迁移复刻｜长视频背景替换生成_2095572428113145857.json, 视频生成/图生视频/Scail-2经典动作迁移 视频动作复刻剪辑利器_2096739586310492162.json, 视频生成/图生视频/Scail-2经典动作迁移 视频动作复刻剪辑利器_2098647045899898882.json, 视频生成/图生视频/Scail-2经典动作迁移 视频动作复刻剪辑利器_2100373797672148994.json, 视频生成/图生视频/Scail-2高阶Plus_V4.1版_长视频动作迁移背景替换人物替换_2109092542255026177.json, 视频生成/图生视频/动作复刻长视频背景替换｜Scail-2视频动作迁移生成_2095821509133692929.json, 视频生成/图生视频/舞蹈动作模仿 图生视频人物动态跟随 动作迁移工具_2098867114407972865.json, 视频生成/图生视频/跳舞_2110885441183502337.json, 视频生成/图生视频/跳舞女孩动态视频 图生视频人物动作生成 舞蹈特效_2098865375722172418.json, 视频生成/图生视频/跳舞的女孩第1弹｜图生视频一键让静态人像舞动起来_2099113102162878465.json, 视频生成/图生视频/跳舞视频一键生成｜视频生视频舞姿跟着节奏走_2111336759203291138.json, 视频生成/图生视频/长视频动作复刻背景替换｜Scail-2动作迁移视频生视频_2095815237009240066.json, 视频生成/图生视频/长视频动作复刻｜Scail-2背景替换人物特效迁移_2091777063823953922.json, 视频生成/图生视频/长视频背景替换 Scail-2动作复刻迁移全都能做_2096745184041197569.json, 视频生成/图生视频/长视频背景替换 Scail-2动作复刻迁移全都能做_2098652089533681665.json, 视频生成/图生视频/长视频背景替换 Scail-2动作复刻迁移全都能做_2100367372585623553.json]
+members: [视频生成/图生视频/Scail2动作迁移低配置 长续航单人多人视频处理工具_2113363617755262977.json, 视频生成/图生视频/Scail2动作迁移低配置长续航版工作流，数字人图生视频写实风格处理方案_2107981765909499905.json, 视频生成/图生视频/Scail2动作迁移升级版｜单人和多人场景全覆盖｜视频生视频轻松换动作_2102596091110838274.json, 视频生成/图生视频/Scail2动作迁移单人多人双版本｜视频角色动作替换_2105128302477398018.json, 视频生成/图生视频/Scail2动作迁移单人多人版 视频生视频图生视频_2100297305340596226.json, 视频生成/图生视频/Scail2动作迁移单人多人版，视频生视频与图生视频实现动态姿势迁移_2102822444510834689.json, 视频生成/图生视频/Scail2动作迁移单人多人版，视频生视频与图生视频实现动态姿势迁移_2106547829790560257.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2106898397432213506.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2106912137393303553.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2107576153123942401.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2108372496239128578.json, 视频生成/图生视频/Scail2动作迁移无限时长版｜视频动作完整复刻_2098721885197524993.json, 视频生成/图生视频/Scail2动作迁移｜单人多人版视频图生视频_2092341382097752066.json, 视频生成/图生视频/Scail2单人多人动作迁移 视频动作复刻方案_2110359254958952449.json, 视频生成/图生视频/Scail2单人多人动作迁移 视频生成动作复刻处理工具_2113365217785765889.json, 视频生成/图生视频/Scail2复刻动作无限时长｜视频生视频动作迁移_2098747334107680770.json, 视频生成/图生视频/Scail2循环动作迁移超长视频人物替换高清处理工具_2101038221638590466.json, 视频生成/图生视频/Scail2循环动作迁移超长视频人物替换高清处理工具_2101404525457395713.json, 视频生成/图生视频/Scail2循环动作迁移超长视频人物角色替换高清长视频_2100281582610370562.json, 视频生成/图生视频/Scail2循环动作迁移超长视频人物角色替换高清长视频_2100648955267866625.json, 视频生成/图生视频/Scail2循环动作迁移超长视频｜人物角色替换+高清长视频，视频生视频一次跑完_2100459002353246209.json, 视频生成/图生视频/Scail2循环动作迁移高清长视频｜视频生视频人物角色替换，超长片单一循环到底_2100470356879429634.json, 视频生成/图生视频/Scail2角色替换动作迁移 高清补帧图生视频处理工具_2114113214412836866.json, 视频生成/图生视频/Scail2角色替换动作迁移高清补帧｜视频三合一套餐_2114076412540973057.json, 视频生成/图生视频/lite无限时长低显存｜Scail2动作迁移复刻跳舞视频_2093792459687026690.json, 视频生成/图生视频/lite无限时长低显存｜Scail2跳舞动作复刻迁移视频_2094015557204008961.json, 视频生成/图生视频/不限时长动作迁移国内版｜pipi-SCAIL2视频生视频_2095573827723022337.json, 视频生成/图生视频/单人+多人动作迁移｜Scail2图生视频视频生视频_2092590570073055234.json, 视频生成/图生视频/双人互动一键替换｜Scail 2视频图生视频生成_2091161243632627714.json, 视频生成/图生视频/双人互动替换｜Scail 2视频生视频图生视频生成_2095067096408481794.json, 视频生成/图生视频/虚拟IP打造专用工作流｜图生视频形象生成_2092024189837463553.json, 视频生成/图生视频/跳舞动作不限时长复刻 SCAIL2单人图生视频迁移方案_2104357540426502145.json, 视频生成/图生视频/跳舞动作复刻视频lite无限时长低显存 Scail2动作迁移图片复制方案_2094026121233920002.json, 视频生成/图生视频/跳舞动作复刻视频lite无限时长低显存 Scail2动作迁移图片复制方案_2097105682641285121.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_11
 
-> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（平台全量/Scail-2 Plus V4.1高阶版 人物替换长视频动作迁移背景替换_2096746592534622210.json、平台全量/Scail-2 Plus V4.1高阶版 人物替换长视频动作迁移背景替换_2098653368922230786.json、平台全量/Scail-2 Plus V4.1高阶版 人物替换长视频动作迁移背景替换_2100368773474775041.json、平台全量/Scail-2高阶Plus V4.1版 长视频动作迁移背景替换人物替换_2097830432246157314.json、平台全量/Scail-2高阶Plus V4.1版 长视频动作迁移背景替换人物替换_2101453743094067202.json…）
+> 由 `engine/knowledge_consolidation` 从 34 个 workflow 归纳得出（视频生成/图生视频/Scail2动作迁移低配置 长续航单人多人视频处理工具_2113363617755262977.json、视频生成/图生视频/Scail2动作迁移低配置长续航版工作流，数字人图生视频写实风格处理方案_2107981765909499905.json、视频生成/图生视频/Scail2动作迁移升级版｜单人和多人场景全覆盖｜视频生视频轻松换动作_2102596091110838274.json、视频生成/图生视频/Scail2动作迁移单人多人双版本｜视频角色动作替换_2105128302477398018.json、视频生成/图生视频/Scail2动作迁移单人多人版 视频生视频图生视频_2100297305340596226.json…）
 
 - **类型**：Text To Image
-- **样本数**：33
+- **样本数**：34
 - **可信度**：强结论
-- **平均知识覆盖**：55%
+- **平均知识覆盖**：69%
 
 ## 共有节点
 
-全部 33 个 workflow 都包含：
+全部 34 个 workflow 都包含：
+- `BasicScheduler`
+- `BatchImagesNode`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `CLIPVisionEncode`
 - `CLIPVisionLoader`
 - `CheckpointLoaderSimple`
+- `ColorTransfer`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
+- `GetImageRangeFromBatch`
+- `GetImageSize`
 - `ImageResizeKJv2`
-- `Int`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PlaySound|pysssss`
+- `ModelSamplingSD3`
 - `PreviewImage`
 - `SAM3_VideoTrack`
-- `SCAIL2ColoredMaskV2`
-- `SetNode`
+- `SCAIL2ColoredMask`
+- `SamplerCustom`
+- `TensorLoopClose`
+- `TensorLoopOpen`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VHS_VideoInfoLoaded`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus ClipVisionEncode V2`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SCAIL_2 Embeds`
-- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
-- `WanAnimatePlus SamplerFromSettings`
-- `WanAnimatePlus SamplerSettings`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus VAELoader`
-- `WanVideoTextEncodeCached`
+- `WanSCAILToVideo`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 31/33 个有
-- `Fast Groups Bypasser (rgthree)` —— 29/33 个有
-- `FastGroupsBypassSwitch` —— 29/33 个有
-- `INTConstant` —— 29/33 个有
-- `Image Blank` —— 29/33 个有
-- `ImageCompositeMasked` —— 29/33 个有
-- `RepeatImageBatch` —— 29/33 个有
-- `SAM3_TrackToMask` —— 29/33 个有
-- `Seed (rgthree)` —— 29/33 个有
-- `VHS_LoadVideo` —— 29/33 个有
-- `WanAnimatePlus ContextOptions` —— 29/33 个有
-- `WanAnimatePlus LoraSelect` —— 29/33 个有
-- `PrimitiveStringMultiline` —— 6/33 个有
-- `SaveImage` —— 5/33 个有
-- `BatchImagesNode` —— 4/33 个有
-- `ImageBatchMulti` —— 4/33 个有
-- `ImageBatchMultiV2` —— 4/33 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 4/33 个有
-- `LayerUtility: PurgeVRAM` —— 4/33 个有
-- `PrimitiveBoolean` —— 4/33 个有
-- `SimpleMath+` —— 4/33 个有
-- `VHS_LoadVideoFFmpeg` —— 4/33 个有
-- `WanVideoEncode` —— 4/33 个有
-- `WanVideoTorchCompileSettings` —— 4/33 个有
-- `WanVideoUni3C_ControlnetLoader` —— 4/33 个有
-- `WanVideoUni3C_embeds` —— 4/33 个有
-- `easy cleanGpuUsed` —— 4/33 个有
-- `easy clearCacheAll` —— 4/33 个有
-- `easy mathInt` —— 4/33 个有
-- `EmptyImage` —— 1/33 个有
+- `EmptyImage` —— 32/34 个有
+- `ImageCompositeMasked` —— 32/34 个有
+- `ImageConcatMulti` —— 32/34 个有
+- `PreviewAny` —— 32/34 个有
+- `ResizeImageMaskNode` —— 32/34 个有
+- `SAM3_TrackToMask` —— 32/34 个有
+- `孤海注释` —— 32/34 个有
+- `DownloadAndLoadGIMMVFIModel` —— 31/34 个有
+- `GIMMVFI_interpolate` —— 31/34 个有
+- `JWInteger` —— 27/34 个有
+- `PrimitiveInt` —— 25/34 个有
+- `CR Text` —— 21/34 个有
+- `GetNode` —— 20/34 个有
+- `SetNode` —— 20/34 个有
+- `DiffusionModelLoaderKJ` —— 19/34 个有
+- `SaveImage` —— 17/34 个有
+- `Int` —— 10/34 个有
+- `Bjornulf_ShowInt` —— 6/34 个有
+- `ImageStitch` —— 6/34 个有
+- `LayerUtility: ImageScaleByAspectRatio` —— 6/34 个有
+- `MathExpression|pysssss` —— 6/34 个有
+- `CR Prompt Text` —— 2/34 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/34 个有
+- `Seed (rgthree)` —— 2/34 个有
+- `ShowAnything|Mie` —— 2/34 个有
+- `VHS_VideoInfo` —— 2/34 个有
+- `VHS_VideoInfoSource` —— 2/34 个有
+- `WanChunkFeedForward` —— 2/34 个有
+- `easy cleanGpuUsed` —— 2/34 个有
+- `easy imageCount` —— 2/34 个有
+- `easy showAnything` —— 2/34 个有
+- `DapaoImageAspectRatioResizeNode` —— 1/34 个有
+- `ImpactInt` —— 1/34 个有
+- `RIFE VFI` —— 1/34 个有
+- `SimpleMath+` —— 1/34 个有
+- `easy int` —— 1/34 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 33 | 100% |
-| 高度 | 80 | 80 - 80 | 33 | 100% |
-| 采样步数 | 4 | 4 - 4 | 33 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 33 | 100% |
-| 采样算法 | er_sde | - | 33 | 100% |
-| 调度器 | beta | - | 33 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 33 | 100% |
+| 采样步数 | 4 | 4 - 4 | 34 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 34 | 100% |
+| 采样算法 | er_sde | - | 34 | 100% |
+| 调度器 | beta | - | 34 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 34 | 100% |
+| 宽度 | 80 | 80 - 80 | 34 | 100% |
+| 高度 | 80 | 80 - 80 | 34 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 34/33 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 37/34 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，33 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，33 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，33 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，33 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，33 个样本，一致性 100%
-- 调度器 最常用 beta，33 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，33 个样本，取值集中（一致性 100%）
-- 高发问题（34/33 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，34 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，34 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，34 个样本，一致性 100%
+- 调度器 最常用 beta，34 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，34 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，34 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，34 个样本，取值集中（一致性 100%）
+- 高发问题（37/34 个样本）：Steps较低可能导致细节不足

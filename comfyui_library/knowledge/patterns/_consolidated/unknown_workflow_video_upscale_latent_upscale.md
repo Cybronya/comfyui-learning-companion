@@ -1,101 +1,118 @@
 ---
 name: unknown_workflow_video_upscale_latent_upscale
 type: Unknown Workflow
-frequency: 52
+frequency: 51
 level: strong
-coverage: 0.666135
-common_nodes: [CFGGuider, CLIPTextEncode, ComfyMathExpression, DualCLIPLoader, EmptyLTXVLatentVideo, KSamplerSelect, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVPreprocess, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ManualSigmas, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, ResizeImagesByLongerEdge, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoaderKJ, VHS_VideoCombine]
-problems: []
+coverage: 0.780608
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, EmptyLTXVLatentVideo, GetNode, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVCropGuides, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LoadAudio, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SetLatentNoiseMask, SetNode, SimpleMath+, SolidMask, VAEDecodeTiled, VHS_VideoCombine]
+problems: [Steps较低可能导致细节不足, 发现KSampler但没有VAEDecode]
 missing: []
-members: [视频生成/图生视频/LTX2.3 人物角色丝滑转场 首尾帧+转场优化版！Plus版！_2081282783539982338.json, 视频生成/图生视频/LTX2.3 完美人物一致性_2064713194668650497.json, 视频生成/图生视频/LTX2.3 自用优化版 I2V_2063969422162882561.json, 视频生成/图生视频/LTX2.3-首尾帧_2066426984464470018.json, 视频生成/图生视频/LTX2.3首中尾3帧生成视频-v2自动推理多主体参考静态演绎_2069944025561522177.json, 视频生成/图生视频/LTX2.3首中尾3帧生成视频-v2自动推理多主体参考静态演绎new_2072942377869860866.json, 视频生成/图生视频/LTX2.3首中尾三帧参考视频优化版_2045481334251986946.json, 视频生成/图生视频/LTX2.3首中尾三帧参考视频优化版_2045505520009744386.json, 视频生成/图生视频/LTX2.3首中尾三帧图生视频工作流_2042469093080571906.json, 视频生成/图生视频/LTX2.3首中尾三帧图生视频工作流_2045403711186407426.json, 视频生成/图生视频/LTX2.3首中尾三帧生成视频_2042892469901201410.json, 视频生成/图生视频/LTX2.3首中尾帧生成视频_2071232637397725185.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场! Plus版!_2041326474241773570.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场! Plus版!_2042051563090354178.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场Plus版工作流_2038467452480262145.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场Plus版工作流_2038577702764027906.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场Plus版工作流_2041376335397916674.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场_2086699476626006017.json, 视频生成/图生视频/LTX2.3首尾帧+丝滑转场！优化版！B站艾橘溪_2038230398714519554.json, 视频生成/图生视频/LTX2.3首尾帧Plus版!_丝滑转场+反推提示词_2038474821650096129.json, 视频生成/图生视频/LTX2.3首尾帧_2039618764668407810.json, 视频生成/图生视频/LTX2.3首尾帧_2044662433935003650.json, 视频生成/图生视频/LTX2.3首尾帧_2059929448035733506.json, 视频生成/图生视频/LTX2.3首尾帧生成视频！_2068982005395714049.json, 视频生成/图生视频/LTX2.3首尾帧生成视频！_2069303960590176257.json, 视频生成/图生视频/LTX2.3首尾帧生成视频！_2069660228970442753.json, 视频生成/图生视频/LTX2.3首尾帧视频_丝滑转场! Plus版!_2044964717164236802.json, 视频生成/图生视频/LTX2.3首尾帧视频优化版_2045475305707540481.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频 (1)_2069977331783004161.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频 -纯真少女_2093228189911965697.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频 -美少女战士_2093174680067858433.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2017306880212738050.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2064883776349622273.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2065244596543770625.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2065358131965816834.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2066334174407122945.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2066861973899407362.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2067851835871948802.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频_2068834094393417729.json, 视频生成/图生视频/LTX2.3首尾帧！首中尾3帧生成视频！B站艾橘溪_2040629154688802817.json, 视频生成/图生视频/Ltx2.3首尾一致视频生成_2077628906508742658.json, 视频生成/图生视频/aidir-LTX2.3-首尾帧_2069589332670894081.json, 视频生成/图生视频/ltx2.3首中尾帧图生视频_2072296894507872257.json, 视频生成/图生视频/一键生成 --图生视频--LTX2.3首尾帧+丝滑转场! Plus版!_2049398756143009794.json, 视频生成/图生视频/三图衔接视频生成_2066073219391643650.json, 视频生成/图生视频/图生视频 LTX2.3首尾帧+丝滑转场!加强版!_2041022779121733633.json, 视频生成/图生视频/图生视频plus版丝滑转场+反推提示词_2044978107093884930.json, 视频生成/图生视频/最新3.0首尾帧！首中尾3帧生成视频自动衔接_2065418792381014017.json, 视频生成/图生视频/最新LTX2.6首尾帧！首中尾3帧生成视频_2067259559454007298.json, 视频生成/图生视频/超好用🔥首中尾3帧生成视频-动漫-真人-各种场景_2066446454369112065.json, 视频生成/文生视频/LTX2.3图生视频 优化首尾帧Plus版 版 全自动提示词  丝滑转场 模块化调优版_2054366634822905858.json, 视频生成/文生视频/图生视频 LTX2.3首尾帧Plus版! 丝滑转场+反推提示词_2044281548878385153.json]
+members: [图片生成/图生图/LTX2.3 模型 数字人说话唱歌对口型工作流_2070144070256775169.json, 图片生成/图生图/LTX2.3+Org版++最新数字人说话唱歌对口型++_2072135073440296962.json, 数字人/数字人/Alan 测LTX2.3 图生视频 数字音乐人 图音双驱动_2038571803991347201.json, 数字人/数字人/LTX2.3 数字人 唱歌对口型！_2055660997586767874.json, 数字人/数字人/LTX2.3 数字人说话唱歌对口型！_2042404876277260290.json, 数字人/数字人/LTX2.3数字人无字幕版_2031615343537430529.json, 数字人/数字人/数字人说话 超长视频_2042512190678245378.json, 视频生成/图生视频/005.LTX2.3音视融合002.LTX2.3图或文+音生视频_2035354663842746370.json, 视频生成/图生视频/LTX LTX2.3 文生视频 文生MV_2041707361903058945.json, 视频生成/图生视频/LTX2.3 Org版 图片说话唱歌精确对口型 图生视频_2082459555551858689.json, 视频生成/图生视频/LTX2.3 Org版 图片说话唱歌精确对口型_2068287878093955073.json, 视频生成/图生视频/LTX2.3 Org版 图片说话唱歌精确对口型_2069026282452639746.json, 视频生成/图生视频/LTX2.3 Org版 图片说话唱歌精确对口型_2103431205076168706.json, 视频生成/图生视频/LTX2.3 Org版 图片说话唱歌精确对口型_2103455782971990018.json, 视频生成/图生视频/LTX2.3 Org版 图片说话唱歌精确对口型图生视频_2081696395232370690.json, 视频生成/图生视频/LTX2.3 Org版！数字人说话唱歌对口型！B站艾橘溪_2068218768014274561.json, 视频生成/图生视频/LTX2.3 Org版！数字人说话唱歌对口型！_2068294782593626113.json, 视频生成/图生视频/LTX2.3 Org版！数字人说话唱歌对口型！高动态，丝滑运镜！_2068288834533675009.json, 视频生成/图生视频/LTX2.3 图生视频 数字音乐人 图音双驱动_2036255760610496514.json, 视频生成/图生视频/LTX2.3 数字人唱歌 图生视频 智能对口型 极速版  图片音频双驱动_2035160184418471938.json, 视频生成/图生视频/LTX2.3 数字人说话唱歌对口型！_2052644596936650754.json, 视频生成/图生视频/LTX2.3 数字人说话唱歌对口型！_2052992002366689281.json, 视频生成/图生视频/LTX2.3 数字人说话唱歌对口型！_2055189140328722433.json, 视频生成/图生视频/LTX2.3 数字人说话唱歌对口型！_2058724589433352194.json, 视频生成/图生视频/LTX2.3 数字人说话唱歌对口型！_2059186368546430977.json, 视频生成/图生视频/LTX2.3 数字人说话唱歌对口型！_2059884088110174209.json, 视频生成/图生视频/LTX2.3 数字人说话唱歌对口型！_2062789190563225602.json, 视频生成/图生视频/LTX2.3+Org 加长图生视频High-Quality Image-to-Video_2093890735903956994.json, 视频生成/图生视频/LTX2.3+Org版  最新数字人说话唱歌对口型_2071781935793393665.json, 视频生成/图生视频/LTX2.3单图+音频对口型无字幕_2040333916862685186.json, 视频生成/图生视频/LTX2.3去字幕无字幕版数字人视频说话唱歌对口型ai数字人视频短剧对话数字人视频_2042076729832906754.json, 视频生成/图生视频/LTX2.3对口型 数字人说话唱歌 去字幕+无字幕版_2040953875372445698.json, 视频生成/图生视频/LTX2.3数字人说话唱歌对口型 去字幕+无字幕版_2039930544166805506.json, 视频生成/图生视频/LTX2.3文生MV工作流_2030898825140899842.json, 视频生成/图生视频/LTX2.3文生视频长视频制作文本生成视频mv制作口播视频生成_2037756141316345857.json, 视频生成/图生视频/图生视频-LTX2.3 数字人说话唱歌对口型_2065027141875621889.json, 视频生成/图生视频/数字人直播+虚拟美女模特+LTX2.3数字人++图生视频极速版LTX2.3+数字人话+唱歌_2046755636465115137.json, 视频生成/图生视频/数字人话 LTX2.3唱歌对口型_2042466020870332417.json, 视频生成/图生视频/最新数字人说话唱歌对口型  LTX2.3+Org版_2071796898314407937.json, 视频生成/图生视频/最新数字人说话唱歌对口型 LTX2.3+Org版_2076471205808394241.json, 视频生成/文生视频/LTX LTX2.3 文生视频 文生MV_2041828761359880193.json, 视频生成/文生视频/LTX2.3 数字人唱歌说话 对口型 图生视频 智能极速版  图片音频双驱动_2035153850771968001.json, 视频生成/文生视频/LTX2.3数字人无字幕版 数字人直播 虚拟美女模特   图生视频极速版LTX2.3 数字人话 唱歌_2044970741254332418.json, 视频生成/文生视频/LTX2.3文生MV工作流_2030727534442188801.json, 视频生成/文生视频/LTX2.3文生MV工作流_2032463287467642882.json, 视频生成/文生视频/LTX2.3文生MV工作流_2034249600609034241.json, 视频生成/文生视频/LTX2.3文生MV工作流_2035257169087569922.json, 视频生成/文生视频/【最新加速版】数字人话 LTX2.3唱歌对口型_2043952711799934977.json, 视频生成/文生视频/数字人直播 虚拟美女模特 LTX2.3数字人无字幕版  图生视频极速版LTX2.3 数字人话 唱歌对_2044685431765213185.json, 视频生成/文生视频/数字人话 LTX2.3唱歌对口型【最新加速版】_2042470118726311937.json, 音频生成/音频生成/LTX2.3 数字人说话唱歌对口型_2043490102965440514.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_upscale_latent_upscale
 
-> 由 `engine/knowledge_consolidation` 从 52 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 人物角色丝滑转场 首尾帧+转场优化版！Plus版！_2081282783539982338.json、视频生成/图生视频/LTX2.3 完美人物一致性_2064713194668650497.json、视频生成/图生视频/LTX2.3 自用优化版 I2V_2063969422162882561.json、视频生成/图生视频/LTX2.3-首尾帧_2066426984464470018.json、视频生成/图生视频/LTX2.3首中尾3帧生成视频-v2自动推理多主体参考静态演绎_2069944025561522177.json…）
+> 由 `engine/knowledge_consolidation` 从 51 个 workflow 归纳得出（图片生成/图生图/LTX2.3 模型 数字人说话唱歌对口型工作流_2070144070256775169.json、图片生成/图生图/LTX2.3+Org版++最新数字人说话唱歌对口型++_2072135073440296962.json、数字人/数字人/Alan 测LTX2.3 图生视频 数字音乐人 图音双驱动_2038571803991347201.json、数字人/数字人/LTX2.3 数字人 唱歌对口型！_2055660997586767874.json、数字人/数字人/LTX2.3 数字人说话唱歌对口型！_2042404876277260290.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：52
+- **样本数**：51
 - **可信度**：强结论
-- **平均知识覆盖**：67%
+- **平均知识覆盖**：78%
 
 ## 共有节点
 
-全部 52 个 workflow 都包含：
+全部 51 个 workflow 都包含：
 - `CFGGuider`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
-- `DualCLIPLoader`
+- `CheckpointLoaderSimple`
 - `EmptyLTXVLatentVideo`
+- `GetNode`
 - `KSamplerSelect`
-- `LTX2_NAG`
-- `LTXVAudioVAEDecode`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEEncode`
+- `LTXVAudioVAELoader`
 - `LTXVConcatAVLatent`
 - `LTXVConditioning`
 - `LTXVCropGuides`
-- `LTXVEmptyLatentAudio`
 - `LTXVImgToVideoInplace`
 - `LTXVLatentUpsampler`
-- `LTXVPreprocess`
 - `LTXVSeparateAVLatent`
 - `LatentUpscaleModelLoader`
-- `LayerUtility: PurgeVRAM`
-- `LoadImage`
+- `LoadAudio`
 - `LoraLoaderModelOnly`
-- `ManualSigmas`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
 - `RandomNoise`
-- `ResizeImagesByLongerEdge`
 - `SamplerCustomAdvanced`
-- `UNETLoader`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SimpleMath+`
+- `SolidMask`
 - `VAEDecodeTiled`
-- `VAELoaderKJ`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `AILab_QwenVL_Advanced` —— 50/52 个有
-- `GetNode` —— 50/52 个有
-- `Image Stitch` —— 50/52 个有
-- `ImageResizeKJv2` —— 50/52 个有
-- `ImageScaleDownToSize` —— 50/52 个有
-- `LTX2SamplingPreviewOverride` —— 50/52 个有
-- `LTXVAddGuideMulti` —— 50/52 个有
-- `LayerUtility: BooleanOperator` —— 50/52 个有
-- `LayerUtility: If ` —— 50/52 个有
-- `PrimitiveBoolean` —— 50/52 个有
-- `SetNode` —— 50/52 个有
-- `SimpleMath+` —— 50/52 个有
-- `easy positive` —— 50/52 个有
-- `ShowText|pysssss` —— 49/52 个有
-- `ResizeImageMaskNode` —— 23/52 个有
-- `SaveImage` —— 22/52 个有
-- `TT_img_enc` —— 22/52 个有
-- `ConcatTextOfUtils` —— 3/52 个有
-- `LTXTiledSampler` —— 2/52 个有
-- `LTXVChunkFeedForward` —— 2/52 个有
-- `ModelPatchTorchSettings` —— 2/52 个有
-- `PathchSageAttentionKJ` —— 2/52 个有
-- `PreviewAny` —— 2/52 个有
-- `PromptRelayEncode` —— 2/52 个有
-- `easy promptConcat` —— 2/52 个有
-- `CR Prompt Text` —— 1/52 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/52 个有
-- `easy saveText` —— 1/52 个有
+- `BasicScheduler` —— 47/51 个有
+- `Int` —— 47/51 个有
+- `KSampler` —— 47/51 个有
+- `LTX2SamplingPreviewOverride` —— 47/51 个有
+- `LTXVPreprocess` —— 47/51 个有
+- `MelBandRoFormerModelLoader` —— 47/51 个有
+- `MelBandRoFormerSampler` —— 47/51 个有
+- `LoadImage` —— 43/51 个有
+- `PrimitiveBoolean` —— 41/51 个有
+- `DF_Int_to_Float` —— 38/51 个有
+- `ImageResizeKJv2` —— 38/51 个有
+- `LTX2_NAG` —— 38/51 个有
+- `PrimitiveInt` —— 38/51 个有
+- `PrimitiveStringMultiline` —— 38/51 个有
+- `JoinStrings` —— 34/51 个有
+- `SoundFlow_GetLength` —— 34/51 个有
+- `CM_FloatToInt` —— 33/51 个有
+- `ResizeImagesByLongerEdge` —— 30/51 个有
+- `TrimAudioDuration` —— 30/51 个有
+- `PreviewAudio` —— 28/51 个有
+- `ComfyMathExpression` —— 21/51 个有
+- `NormalizeAudioLoudness` —— 21/51 个有
+- `LTXVAudioVAEDecode` —— 20/51 个有
+- `ManualSigmas` —— 20/51 个有
+- `ImageAndMaskResizeNode` —— 17/51 个有
+- `LayerUtility: PurgeVRAM` —— 17/51 个有
+- `PrimitiveFloat` —— 15/51 个有
+- `INTConstant` —— 13/51 个有
+- `PathchSageAttentionKJ` —— 13/51 个有
+- `easy showAnything` —— 13/51 个有
+- `ImageSharpen` —— 9/51 个有
+- `easy cleanGpuUsed` —— 9/51 个有
+- `ResizeImageMaskNode` —— 8/51 个有
+- `Compare` —— 6/51 个有
+- `InversionDemoLazySwitch` —— 6/51 个有
+- `AudioCrop` —— 4/51 个有
+- `ImageCASharpening+` —— 4/51 个有
+- `RunningHub Deepcleaner` —— 4/51 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 97 | 97 - 97 | 52 | 100% |
-| 高度 | 25 | 25 - 44 | 52 | 86% |
+| 采样步数 | 4 | 4 - 6 | 47 | 93% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 47 | 100% |
+| 采样算法 | euler | - | 47 | 64% |
+| 调度器 | simple | - | 47 | 100% |
+| 重绘幅度 | 0.4 | 0.4 - 0.4 | 47 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 47/51 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| 发现KSampler但没有VAEDecode | 47/51 | high | 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换 |
 
 ## 建议与风险
 
-- 宽度 中位数 97，观测区间 97 - 97，52 个样本，取值集中（一致性 100%）
-- 高度 中位数 25，观测区间 25 - 44，52 个样本，取值集中（一致性 86%）
+- 采样步数 中位数 4，观测区间 4 - 6，47 个样本，取值集中（一致性 93%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，47 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，47 个样本，一致性 64%
+- 调度器 最常用 simple，47 个样本，一致性 100%
+- 重绘幅度 中位数 0.4，观测区间 0.4 - 0.4，47 个样本，取值集中（一致性 100%）
+- 高发问题（47/51 个样本）：Steps较低可能导致细节不足
+- 高发问题（47/51 个样本）：发现KSampler但没有VAEDecode

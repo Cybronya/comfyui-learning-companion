@@ -1,85 +1,88 @@
 ---
 name: unknown_workflow_video_sampler_clip_12
 type: Unknown Workflow
-frequency: 25
-level: strong
-coverage: 0.75888
-common_nodes: [CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJv2, JWInteger, KSamplerAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ModelSamplingSD3, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+frequency: 26
+level: moderate
+coverage: 0.896
+common_nodes: [BasicScheduler, CLIPTextEncode, ConditioningZeroOut, DualCLIPLoader, EmptyLTXVLatentVideo, ImageResizeKJv2, Int, KSamplerSelect, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVAudioVAEDecode, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVPreprocess, LTXVSeparateAVLatent, LoadImage, SamplerCustom, VAEDecode, VAELoader, VAELoaderKJ, VHS_VideoCombine, VisualizeSigmasKJ]
 problems: []
 missing: []
-members: [视频生成/图生视频/Dasiwa I2V图生视频工作流 浮云1.28 更新_2016499156017221633.json, 视频生成/图生视频/Dasiwa I2V图生视频工作流 浮云1.28_2016457012112007170.json, 视频生成/图生视频/Remix V2 PainterI2V Plus版  浮云 头发动画 图生视频 12.11_1998932620186673154.json, 视频生成/图生视频/Remix V2 VS  Smooth图生视频对比工作流V4（PainterI2V Plus版）_1990820621133225985.json, 视频生成/图生视频/Remix V2 VS Lightx2v 1030 VS  Smooth图生视频对比工作流V1_1986358473883582465.json, 视频生成/图生视频/Remix V2 VS Lightx2v 1030 头发动画图生视频对比工作流V1 次用 浮云12_1998939454473691137.json, 视频生成/图生视频/Remix V2+PainterI2V图生视频自动提示词工作流V1（动态加强）_1987947016699449345.json, 视频生成/图生视频/Remix V2+PainterI2V图生视频自动提示词工作流V4（动态加强）_1991088759945146369.json, 视频生成/图生视频/Remix V2+PainterI2V图生视频（动态加强）1080P 5S 约14分开Plus48G_2001883203667390466.json, 视频生成/图生视频/Remix V2+PainterI2V高动态图生视频自动提示词_1993272567492444161.json, 视频生成/图生视频/Remix V2.1 UnifiedReward+VBVR多重对比I2V_2028082455047053313.json, 视频生成/图生视频/Remix V2.1+PainterI2V图生视频自动提示词工作流V1（一致性加强版）_2010957966706479106.json, 视频生成/图生视频/Remix V2.1+PainterI2V图生视频自动提示词工作流（一致性加强版）_2020428290829328386.json, 视频生成/图生视频/Remix V2.1图生视频V1（UnifiedReward+VBVR逻辑加强）_2028397486544527362.json, 视频生成/图生视频/Remix V2.1图生视频V1（UnifiedReward+VBVR逻辑加强）_2028678704204881921.json, 视频生成/图生视频/Remix V2.1图生视频V1（UnifiedReward+VBVR逻辑加强）_2028683653529735169.json, 视频生成/图生视频/Remix V2.1图生视频V1（UnifiedReward运动加强）_2028399847149146114.json, 视频生成/图生视频/Smooth +PainterI2V图生视频自动提示词工作流V2（Plus版）_1991085974646272001.json, 视频生成/图生视频/Smooth Mix+PainterI2V图生视频自动提示词工作流V1（动态加强）_1987947024861564930.json, 视频生成/图生视频/Wan2.2 VBVR精准逻辑推理图生视频V1_2025914003163189250.json, 视频生成/图生视频/【阿良绘】动漫强化图生视频_ Dasiwa V9+PainterI2V（简化）_2012167741138018306.json, 视频生成/图生视频/横版Remix V2 VS  Smooth图生视频对比工作流V2（PainterI2V Plus）_1991074720969891842.json, 视频生成/图生视频/视频-Remix V2.1建筑图生视频V1工作流_2029118702054023169.json, 视频生成/图生视频/（自用）Remix V2.1+PainterI2V图生视频自动提示词工作流V1（一致性加强版）_2011779085244047362.json, 视频生成/图生视频/（自用）Wan 2.2 Dasiwa +Animated 图生视频V1（双模式）_1991472801660018689.json]
+members: [视频生成/图生视频/LTX2.3 图生视频 极速版_2042418624685674498.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2092571026797453313.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2092584125730476033.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2099066175509585921.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2099072254075301890.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2111420172920778753.json, 视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2111422384841510913.json, 视频生成/图生视频/LTX2.3图生视频 (2)_2071780309431046145.json, 视频生成/图生视频/LTX2.3图生视频 (3)_2072121169825849346.json, 视频生成/图生视频/LTX2.3图生视频+KJ版+参数化_2064535572395413505.json, 视频生成/图生视频/LTX2.3图生视频-带语音生成-大摆锤_2061114920523100161.json, 视频生成/图生视频/LTX2.3图生视频-带语音生成-摇动版_2066720677041893378.json, 视频生成/图生视频/LTX2.3图生视频-带语音生成-肚皮舞_2068388063612588033.json, 视频生成/图生视频/LTX2.3图生视频KJ优化版！_2031926967917879297.json, 视频生成/图生视频/LTX2.3图生视频_2069312715050545153.json, 视频生成/图生视频/LTX2.3图生视频_2069666481859809281.json, 视频生成/图生视频/LTX2.3图生视频_2070475201506267137.json, 视频生成/图生视频/LTX2.3图生视频_2070488766795567105.json, 视频生成/图生视频/LTX2.3图生视频_2071517701243232258.json, 视频生成/图生视频/LTX2.3图生视频_2071771339505094657.json, 视频生成/图生视频/LTX2.3图生视频_2071776844537487361.json, 视频生成/图生视频/LTX2.3自动生成视频图生视频_2083152160174465025.json, 视频生成/图生视频/图生视频  LTX2.3_KJ版_参数化_2064509785923473409.json, 视频生成/图生视频/图生视频-LTX2.3_KJ版_参数化_2064262517840502785.json, 视频生成/图生视频/图生视频-LTX2.3_KJ版_参数化_2064971642878644225.json, 视频生成/图生视频/音画同步图生视频 LTX2.3图生视频KJ优化版_2032301702237392897.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_clip_12
 
-> 由 `engine/knowledge_consolidation` 从 25 个 workflow 归纳得出（视频生成/图生视频/Dasiwa I2V图生视频工作流 浮云1.28 更新_2016499156017221633.json、视频生成/图生视频/Dasiwa I2V图生视频工作流 浮云1.28_2016457012112007170.json、视频生成/图生视频/Remix V2 PainterI2V Plus版  浮云 头发动画 图生视频 12.11_1998932620186673154.json、视频生成/图生视频/Remix V2 VS  Smooth图生视频对比工作流V4（PainterI2V Plus版）_1990820621133225985.json、视频生成/图生视频/Remix V2 VS Lightx2v 1030 VS  Smooth图生视频对比工作流V1_1986358473883582465.json…）
+> 由 `engine/knowledge_consolidation` 从 26 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 图生视频 极速版_2042418624685674498.json、视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2092571026797453313.json、视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2092584125730476033.json、视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2099066175509585921.json、视频生成/图生视频/LTX2.3一键自动生成视频图生视频_2099072254075301890.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：25
-- **可信度**：强结论
-- **平均知识覆盖**：76%
+- **样本数**：26
+- **可信度**：中等可信
+- **平均知识覆盖**：90%
 
 ## 共有节点
 
-全部 25 个 workflow 都包含：
-- `CLIPLoader`
+全部 26 个 workflow 都包含：
+- `BasicScheduler`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
+- `ConditioningZeroOut`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
 - `ImageResizeKJv2`
-- `JWInteger`
-- `KSamplerAdvanced`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Int`
+- `KSamplerSelect`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LTXVAudioVAEDecode`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
-- `ModelSamplingSD3`
-- `UNETLoader`
+- `SamplerCustom`
 - `VAEDecode`
 - `VAELoader`
+- `VAELoaderKJ`
 - `VHS_VideoCombine`
+- `VisualizeSigmasKJ`
 
 **可变部分**（部分 workflow 才有）：
-- `ColorMatch` —— 23/25 个有
-- `ImageScaleBy` —— 23/25 个有
-- `LayerUtility: PurgeVRAM` —— 23/25 个有
-- `PathchSageAttentionKJ` —— 23/25 个有
-- `Pick From Batch (mtb)` —— 23/25 个有
-- `Seed (rgthree)` —— 23/25 个有
-- `easy cleanGpuUsed` —— 23/25 个有
-- `CR Prompt Text` —— 22/25 个有
-- `PreviewImage` —— 22/25 个有
-- `SaveImage` —— 22/25 个有
-- `AILab_QwenVL` —— 20/25 个有
-- `RunningHub Deepcleaner` —— 20/25 个有
-- `easy showAnything` —— 20/25 个有
-- `PainterI2V` —— 19/25 个有
-- `RH_LLMAPI_NODE` —— 19/25 个有
-- `Float` —— 18/25 个有
-- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1` —— 18/25 个有
-- `easy anythingIndexSwitch` —— 17/25 个有
-- `ImageFromBatch+` —— 14/25 个有
-- `LoraLoaderModelOnly` —— 13/25 个有
-- `MathExpression|pysssss` —— 13/25 个有
-- `WanImageToVideo` —— 7/25 个有
-- `AddLabel` —— 4/25 个有
-- `ImageConcanate` —— 4/25 个有
-- `PDIMAGE_LongerSize` —— 4/25 个有
-- `Int` —— 2/25 个有
-- `TT_img_enc` —— 2/25 个有
-- `TT_img_enc_v2` —— 2/25 个有
-- `ConcatTextOfUtils` —— 1/25 个有
-- `DuckHideNode` —— 1/25 个有
-- `ImageConcatMulti` —— 1/25 个有
+- `AILab_QwenVL_Advanced` —— 25/26 个有
+- `ModelSamplingSD3` —— 25/26 个有
+- `ShowText|pysssss` —— 25/26 个有
+- `StringFunction|pysssss` —— 25/26 个有
+- `UNETLoader` —— 25/26 个有
+- `JjkText` —— 20/26 个有
+- `MathExpression|pysssss` —— 20/26 个有
+- `DF_Int_to_Float` —— 6/26 个有
+- `SimpleMath+` —— 6/26 个有
+- `GetNode` —— 5/26 个有
+- `PathchSageAttentionKJ` —— 5/26 个有
+- `PrimitiveInt` —— 5/26 个有
+- `SetNode` —— 5/26 个有
+- `easy positive` —— 5/26 个有
+- `LoraLoader|pysssss` —— 3/26 个有
+- `PrimitiveBoolean` —— 3/26 个有
+- `SaveImage` —— 3/26 个有
+- `TT_img_enc_v2` —— 3/26 个有
+- `ZML_SwitchOutput` —— 3/26 个有
+- `easy cleanGpuUsed` —— 3/26 个有
+- `text-util-prompt-join` —— 2/26 个有
+- `PreviewAny` —— 1/26 个有
+- `RHHiddenNodes` —— 1/26 个有
+- `Text` —— 1/26 个有
+- `TextGenerateLTX2Prompt` —— 1/26 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | fixed | - | 25 | 92% |
-| Prompt 约束强度(CFG) | 8 | 8 - 8 | 25 | 100% |
-| 采样算法 | 1 | 1 - 1.5 | 25 | 87% |
-| 调度器 | euler_ancestral | - | 25 | 88% |
-| 重绘幅度 | simple | - | 25 | 100% |
+| 宽度 | 97 | 97 - 305 | 26 | 40% |
+| 高度 | 25 | 24 - 25 | 26 | 98% |
+| LoRA 模型强度 | 1 | 1 - 1 | 3 | 100% |
+| LoRA 文本强度 | 1 | 1 - 1 | 3 | 100% |
 
 ## 常见问题
 
@@ -87,8 +90,7 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 fixed，25 个样本，一致性 92%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 8 - 8，25 个样本，取值集中（一致性 100%）
-- 采样算法 中位数 1，观测区间 1 - 1.5，25 个样本，取值集中（一致性 87%）
-- 调度器 最常用 euler_ancestral，25 个样本，一致性 88%
-- 重绘幅度 最常用 simple，25 个样本，一致性 100%
+- 宽度 中位数 97，观测区间 97 - 305，26 个样本，取值分散，一致性仅 40%
+- 高度 中位数 25，观测区间 24 - 25，26 个样本，取值集中（一致性 98%）
+- LoRA 模型强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）
+- LoRA 文本强度 中位数 1，观测区间 1 - 1，3 个样本，取值集中（一致性 100%）

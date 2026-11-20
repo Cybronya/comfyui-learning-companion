@@ -1,36 +1,35 @@
 ---
 name: unknown_workflow_video_sampler_unet_3
 type: Unknown Workflow
-frequency: 44
+frequency: 33
 level: moderate
-coverage: 0.850659
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, LoadAudio, LoadImage, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, VRGDG_MiniMaxH3AudioDrive]
+coverage: 0.808576
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine]
 problems: []
 missing: []
-members: [图片生成/图生图/MiniMaxH3 音频驱动&图片-数字人_2094029923441799170.json, 图片生成/图生图/MiniMax_H3-数字人_2115436032324886529.json, 图片生成/图生图/MiniMax_H3-数字人_2115661181137547265.json, 图片生成/图生图/数字人对口型_人工智能张老师_2114723593312624642.json, 图片生成/图生图/数字人对口型_人工智能张老师_2115626250906726402.json, 图片生成/图生图/数字人对口型_人工智能张老师_2115671798909063169.json, 平台全量/minimaxH3音频驱动视频（数字人）_2117178135740506114.json, 数字人/数字人/H3数字人单人可做MV、口播等_2084869137700052993.json, 数字人/数字人/MiniMAX3参考音频对口型-8月8日版_2086535599267344386.json, 数字人/数字人/MiniMax H3-数字人_2084880448492228609.json, 数字人/数字人/MiniMax H3-数字人_2111474246617751554.json, 数字人/数字人/MiniMax H3-数字人_2114738539081592834.json, 数字人/数字人/MiniMax_H3-数字人_2116676985895346177.json, 数字人/数字人/Minimax H3 数字人 支持单人&双人_2084819750131163138.json, 数字人/数字人/Minimax H3全能参考数字人双人_多人_2085721182447427585.json, 数字人/数字人/Minimax H3数字人三人_2093592345018195970.json, 数字人/数字人/Minimax H3数字人双人_多人（Lightx2v加速）_2084818471610839041.json, 数字人/数字人/MinimaxH3音频驱动数字人单人版_2084824920000909313.json, 数字人/数字人/MinimaxH3音频驱动数字人单人版lightx2v加速_2116023920951390209.json, 数字人/数字人/MinimaxH3音频驱动数字人单人版（lightx2v加速）_2084814218431385601.json, 数字人/数字人/MinimaxH3音频驱动数字人单人版（lightx2v加速）_2115837269767708673.json, 数字人/数字人/音频驱动数字人对口型-张老师_2089026075883040769.json, 视频生成/图生视频/H3_全能参考_2107892757984538626.json, 视频生成/图生视频/H3全能多参&音频驱动_2093425873709002754.json, 视频生成/图生视频/MiniMax H3-数字人 唱歌 口播_2089931741619380225.json, 视频生成/图生视频/MiniMax_H3_数字人_双人版_2113599051936649218.json, 视频生成/图生视频/Minimax H3 乐器表演MV极速版_2084906264412381186.json, 视频生成/图生视频/Minimax H3 乐器表演MV极速版_2100432995860697090.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2085324362105835522.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2087800628679630849.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2089292719402348545.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2090338216959373313.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2090621488088047618.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2092061086244753409.json, 视频生成/图生视频/Minimax H3 音频驱动数字人对口型_2097490216427810818.json, 视频生成/图生视频/Minimax H3开源 音频驱动数字人对口型 图生视频_2089311171798192129.json, 视频生成/图生视频/Minimax H3开源版 数字人双人_多人对话视频生成_2084955772458459137.json, 视频生成/图生视频/Minimax H3开源版 数字人双人_多人对话视频生成_2084990595327676418.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2084872893997076481.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2087072390349156353.json, 视频生成/图生视频/Minimax H3数字人双人_多人_2089718644019388418.json, 视频生成/图生视频/Minimax H3数字人唱歌🎤+全节点注释_2084950406886678530.json, 视频生成/图生视频/MinimaxH3 一键MV（单人数字人） 不限时长_2092508260711624706.json, 视频生成/图生视频/MinimaxH3音频+图片=口播数字人+全节点注释_2095797295269892098.json]
+members: [图片生成/图生图/MiniMaxH3开源版 自动尺寸动作模仿 动作迁移 复刻动作_2085727011011649537.json, 图片生成/图生图/interactive video2_2092871532694556673.json, 数字人/数字人/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099294863396261889.json, 数字人/数字人/H3+Video+Costume+Changes!+H3+Video H3视频换装！H3视频编辑_2109550806524579841.json, 数字人/数字人/MiniMaxH3视频换背景-视频编辑换背景_2109229133493530625.json, 数字人/数字人/人物场景替换工作流_2097197529950674946.json, 数字人/数字人/最新MiniMax-H3视频换人！视频编辑！_2086278232344719361.json, 视频生成/图生视频/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099801459780055042.json, 视频生成/图生视频/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099848381286928385.json, 视频生成/图生视频/H3+Video+Costume+Changes!+H3+Video_H3视频换装！H3视频编辑_2104434230909554690.json, 视频生成/图生视频/MiniMax H3 动作迁移解决方案｜视频动作迁移一键生成工作流_2101538902334074882.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2087995933471633410.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2089394180136202241.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2090724049633767426.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2091927476283990018.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2093930850265165825.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2094468104112918529.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2096641134952017922.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2099727783529377793.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2102293136897822721.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2104441196906106882.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2108197816526008322.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2110435950810722306.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2113455433640923138.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2113892922319007745.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2114409257784397825.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑_2114610429753384961.json, 视频生成/图生视频/MiniMaxH3  视频换背景   视频编辑支持上传参考图_2100941400337633282.json, 视频生成/图生视频/MiniMaxH3 人物一致性动作模仿&动作迁移_2087460746010648577.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！B站艾橘溪_2085579704077217793.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！_2091762306387628033.json, 视频生成/图生视频/MiniMaxH3 动作模仿&动作迁移！_2095427085866192898.json, 视频生成/图生视频/MiniMaxH3 视频编辑 视频添加物品_2090730748214071297.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_3
 
-> 由 `engine/knowledge_consolidation` 从 44 个 workflow 归纳得出（图片生成/图生图/MiniMaxH3 音频驱动&图片-数字人_2094029923441799170.json、图片生成/图生图/MiniMax_H3-数字人_2115436032324886529.json、图片生成/图生图/MiniMax_H3-数字人_2115661181137547265.json、图片生成/图生图/数字人对口型_人工智能张老师_2114723593312624642.json、图片生成/图生图/数字人对口型_人工智能张老师_2115626250906726402.json…）
+> 由 `engine/knowledge_consolidation` 从 33 个 workflow 归纳得出（图片生成/图生图/MiniMaxH3开源版 自动尺寸动作模仿 动作迁移 复刻动作_2085727011011649537.json、图片生成/图生图/interactive video2_2092871532694556673.json、数字人/数字人/H3 Video Costume Changes! H3 Video EH3视频换装！H3视频编辑_2099294863396261889.json、数字人/数字人/H3+Video+Costume+Changes!+H3+Video H3视频换装！H3视频编辑_2109550806524579841.json、数字人/数字人/MiniMaxH3视频换背景-视频编辑换背景_2109229133493530625.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：44
+- **样本数**：33
 - **可信度**：中等可信
-- **平均知识覆盖**：85%
+- **平均知识覆盖**：81%
 
 ## 共有节点
 
-全部 44 个 workflow 都包含：
+全部 33 个 workflow 都包含：
 - `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `ComfyMathExpression`
 - `KSamplerSelect`
-- `LoadAudio`
-- `LoadImage`
 - `MiniMaxH3ReferenceToVideo`
+- `PathchSageAttentionKJ`
 - `PrimitiveFloat`
 - `PrimitiveStringMultiline`
 - `RandomNoise`
@@ -38,31 +37,36 @@ source: knowledge_consolidation
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `VRGDG_MiniMaxH3AudioDrive`
 
 **可变部分**（部分 workflow 才有）：
-- `ResolutionSelector` —— 43/44 个有
-- `SoundFlow_GetLength` —— 43/44 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 41/44 个有
-- `AudioCrop` —— 38/44 个有
-- `PreviewAudio` —— 38/44 个有
-- `PathchSageAttentionKJ` —— 30/44 个有
-- `AudioConcat` —— 23/44 个有
-- `EmptyAudio` —— 23/44 个有
-- `LoraLoaderModelOnly` —— 13/44 个有
-- `ModelAttentionBackend` —— 10/44 个有
-- `ModelPreviewOverrideKJ` —— 8/44 个有
-- `TrimAudioDuration` —— 6/44 个有
-- `CR Text` —— 2/44 个有
-- `GetImageSizeAndCount` —— 1/44 个有
-- `GetNode` —— 1/44 个有
-- `ImageResizeKJv2` —— 1/44 个有
-- `SaveAudio` —— 1/44 个有
-- `SetNode` —— 1/44 个有
-- `SpectrumApplyMiniMaxH3` —— 1/44 个有
-- `VHS_LoadVideo` —— 1/44 个有
-- `easy int` —— 1/44 个有
+- `LoraLoaderModelOnly` —— 32/33 个有
+- `VAEDecodeAudio` —— 32/33 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 31/33 个有
+- `ImageConcanate` —— 26/33 个有
+- `GetNode` —— 20/33 个有
+- `LayerUtility: PurgeVRAM V2` —— 20/33 个有
+- `ResolutionSelector` —— 20/33 个有
+- `SetNode` —— 20/33 个有
+- `VRAM_Debug` —— 19/33 个有
+- `LoadImage` —— 16/33 个有
+- `AILab_QwenVL` —— 13/33 个有
+- `DF_Int_to_Float` —— 13/33 个有
+- `ImageResizeKJv2` —— 13/33 个有
+- `JoinStrings` —— 13/33 个有
+- `PrimitiveInt` —— 13/33 个有
+- `Label (rgthree)` —— 2/33 个有
+- `easy imageRemBg` —— 2/33 个有
+- `EasyCache` —— 1/33 个有
+- `EmptyImage` —— 1/33 个有
+- `FlashVSRNode` —— 1/33 个有
+- `Int` —— 1/33 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 1/33 个有
+- `LoadAudio` —— 1/33 个有
+- `LoadVideo` —— 1/33 个有
+- `PainterVRAM` —— 1/33 个有
+- `PreviewImage` —— 1/33 个有
 
 ## 典型参数
 

@@ -3,78 +3,72 @@ name: text_to_image_video_lora_sampler_53
 type: Text To Image
 frequency: 15
 level: strong
-coverage: 0.781133
-common_nodes: [AILab_QwenVL, BasicScheduler, CLIPLoader, CLIPTextEncode, CheckpointLoaderSimple, DiffusionModelLoaderKJ, EmptyLatentImage, GetNode, ImageResizeKJv2, Int, JjkText, KSampler, KSamplerSelect, LayerUtility: PurgeVRAM, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PrimitiveInt, SAM3_VideoTrack, SCAIL2FitVideo, SCAIL2ReferencePack, SCAIL2ReferenceSAMBuilder, SCAIL2SimpleVideo, SetNode, ShowText|pysssss, SimpleMath+, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanChunkFeedForward, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.8412
+common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/好用的角色替换工作流｜图生图换角色自然不穿帮_2101524617474174977.json, 数字人/数字人/S2动作迁移工作流｜数字人动作复刻视频生成_2097520692454576129.json, 视频生成/图生视频/Scail2一键表情迁移复刻 AI表情模仿图生视频_2098867038323298306.json, 视频生成/图生视频/Scail2数字人视频换人 图生视频支持跳舞唱歌的角色替换动作迁移_2095066924060332034.json, 视频生成/图生视频/Scail2数字人视频换人 图生视频支持跳舞唱歌的角色替换动作迁移_2097463724142587905.json, 视频生成/图生视频/Scail2数字人视频换人 图生视频支持跳舞唱歌的角色替换动作迁移_2106523439917002753.json, 视频生成/图生视频/Scail2数字人视频换人唱歌跳舞 图生视频角色替换动作迁移方案_2094356341321195522.json, 视频生成/图生视频/Scail2视频换人动作迁移角色替换图生视频处理工具_2101359118161367042.json, 视频生成/图生视频/Scail2视频换人单人双人角色替换动物迁移动作复刻跳舞模仿_2109339405835132930.json, 视频生成/图生视频/Scail2视频换人单人双人角色替换动物迁移动作复刻跳舞模仿_2109768730392752130.json, 视频生成/图生视频/Scail2视频换人单双人都行｜动作迁移换脸不崩戏_2103716490397700098.json, 视频生成/图生视频/Scail2视频换人绝了｜跳舞唱歌数字人角色替换动作迁移_2101141456789528577.json, 视频生成/图生视频/Scail2视频换人｜动作迁移跳舞唱歌数字人角色替换_2094330368626348034.json, 视频生成/图生视频/scail2一键AI表情复刻模仿｜表情迁移让照片活起来｜图生视频_2099123625453510658.json, 视频生成/图生视频/全新AI表情迁移上线｜scail2表情复刻加模仿一气呵成｜视频生视频_2099130899462971393.json]
+members: [视频生成/图生视频/润哥教育IP数字人H3参考生视频｜声音克隆口型自动对齐_2111277682607607809.json, 视频生成/图生视频/满血int8单采八步加速｜MinimaxH3 Sigma版V4生成_2093254483198439425.json, 视频生成/图生视频/竖屏640p H3官流无lora12步 视频生成官方最佳方案_2109698060283629570.json, 视频生成/图生视频/竖屏768p H3官流 视频生成官方最佳方案_2108614995943710722.json, 视频生成/图生视频/竖屏H3官方流LoRA十步加速图生视频，强化动作API 640p快速出片_2114430192012849154.json, 视频生成/图生视频/老李多参生视频 多参考图输入视频生成方案_2104710161666498561.json, 视频生成/图生视频/自动提示词全能参考生视频REF2VA开源版MiniMax_2086806647741177857.json, 视频生成/图生视频/自定义歌曲MV视频生成｜MiniMax音频驱动图生视频直出_2091736922677932033.json, 视频生成/图生视频/自定义歌曲一键出片｜MiniMax MV音乐视频音频生成_2091752275076272130.json, 视频生成/图生视频/自定义歌曲音乐MV｜MiniMax音频图生视频生成工作流_2090222178607386626.json, 视频生成/图生视频/自用H3官流终极版工作流｜视频生视频图生视频全能_2108409143555088385.json, 视频生成/图生视频/高动态打斗模型生成｜Minimax H3更稳更有冲击力图生视频_2096705144170835969.json, 视频生成/文生视频/3视频)3音频全能参考(9图H3加速优化版MiniMax_2086537090464047105.json, 视频生成/文生视频/MiniMax H3 新ref V1.0 Lora 阿里8步版｜多参考生视频工作流_2096839668997382146.json, 视频生成/文生视频/MiniMax H3多参考工作流｜全接口开放内部开发版_2095279663810695169.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_53
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（图片生成/图生图/好用的角色替换工作流｜图生图换角色自然不穿帮_2101524617474174977.json、数字人/数字人/S2动作迁移工作流｜数字人动作复刻视频生成_2097520692454576129.json、视频生成/图生视频/Scail2一键表情迁移复刻 AI表情模仿图生视频_2098867038323298306.json、视频生成/图生视频/Scail2数字人视频换人 图生视频支持跳舞唱歌的角色替换动作迁移_2095066924060332034.json、视频生成/图生视频/Scail2数字人视频换人 图生视频支持跳舞唱歌的角色替换动作迁移_2097463724142587905.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/润哥教育IP数字人H3参考生视频｜声音克隆口型自动对齐_2111277682607607809.json、视频生成/图生视频/满血int8单采八步加速｜MinimaxH3 Sigma版V4生成_2093254483198439425.json、视频生成/图生视频/竖屏640p H3官流无lora12步 视频生成官方最佳方案_2109698060283629570.json、视频生成/图生视频/竖屏768p H3官流 视频生成官方最佳方案_2108614995943710722.json、视频生成/图生视频/竖屏H3官方流LoRA十步加速图生视频，强化动作API 640p快速出片_2114430192012849154.json…）
 
 - **类型**：Text To Image
 - **样本数**：15
 - **可信度**：强结论
-- **平均知识覆盖**：78%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
 全部 15 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicScheduler`
+- `BasicGuider`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CheckpointLoaderSimple`
-- `DiffusionModelLoaderKJ`
+- `ComfyMathExpression`
 - `EmptyLatentImage`
-- `GetNode`
-- `ImageResizeKJv2`
-- `Int`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LayerUtility: PurgeVRAM`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PrimitiveInt`
-- `SAM3_VideoTrack`
-- `SCAIL2FitVideo`
-- `SCAIL2ReferencePack`
-- `SCAIL2ReferenceSAMBuilder`
-- `SCAIL2SimpleVideo`
-- `SetNode`
-- `ShowText|pysssss`
-- `SimpleMath+`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
+- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanChunkFeedForward`
 - `solarL_SaveImagesToZip`
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 11/15 个有
-- `CLIPVisionLoader` —— 8/15 个有
-- `RHHiddenNodes` —— 7/15 个有
-- `SaveImage` —— 5/15 个有
-- `INTConstant` —— 4/15 个有
-- `ImageConcatMulti` —— 4/15 个有
-- `easy compare` —— 4/15 个有
-- `easy ifElse` —— 4/15 个有
-- `DownloadAndLoadGIMMVFIModel` —— 3/15 个有
-- `GIMMVFI_interpolate` —— 3/15 个有
-- `EmptyImage` —— 1/15 个有
-- `GetImageSizeAndCount` —— 1/15 个有
-- `GetVideoComponents` —— 1/15 个有
-- `ImageColorMatch+` —— 1/15 个有
-- `OverlayVideos` —— 1/15 个有
-- `VideoToPath` —— 1/15 个有
+- `BasicScheduler` —— 14/15 个有
+- `ResolutionSelector` —— 14/15 个有
+- `PrimitiveStringMultiline` —— 13/15 个有
+- `LoadAudio` —— 11/15 个有
+- `ModelAttentionBackend` —— 7/15 个有
+- `ModelPreviewOverrideKJ` —— 7/15 个有
+- `PathchSageAttentionKJ` —— 7/15 个有
+- `GetNode` —— 6/15 个有
+- `MiniMaxH3SigmaShift` —— 6/15 个有
+- `SetNode` —— 6/15 个有
+- `VHS_LoadVideo` —— 6/15 个有
+- `BlockSparseAttention` —— 5/15 个有
+- `ManualSigmas` —— 5/15 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 4/15 个有
+- `SaveImage` —— 4/15 个有
+- `ImageResizeKJv2` —— 3/15 个有
+- `TrimAudioDuration` —— 3/15 个有
+- `Fast Groups Muter (rgthree)` —— 1/15 个有
+- `H3SigmaRefiner` —— 1/15 个有
+- `LoadVideo` —— 1/15 个有
+- `RTXVideoSuperResolution` —— 1/15 个有
+- `Text` —— 1/15 个有
+- `Text Multiline` —— 1/15 个有
 - `easy cleanGpuUsed` —— 1/15 个有
 
 ## 典型参数

@@ -3,95 +3,84 @@ name: text_to_image_video_lora_sampler_17
 type: Text To Image
 frequency: 27
 level: strong
-coverage: 0.561407
-common_nodes: [BasicScheduler, BatchImagesNode, CLIPLoader, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, CheckpointLoaderSimple, ColorTransfer, ComfyMathExpression, DownloadAndLoadGIMMVFIModel, EmptyImage, EmptyLatentImage, GIMMVFI_interpolate, GetImageRangeFromBatch, GetImageSize, ImageCompositeMasked, ImageResizeKJv2, JWInteger, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, ModelSamplingSD3, PreviewImage, PrimitiveInt, SAM3_TrackToMask, SAM3_VideoTrack, SCAIL2ColoredMask, SamplerCustom, TensorLoopClose, TensorLoopOpen, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanSCAILToVideo, solarL_SaveImagesToZip]
+coverage: 0.82363
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/Scail 2单人电商带货人物产品替换图生视频处理工具_2101736999525896194.json, 视频生成/图生视频/Scail 2双人互动替换工作流｜视频里两个人物随心互换｜图生视频_2099119654894657538.json, 视频生成/图生视频/Scail 2双人互动替换｜视频图生视频一键生成_2090883066775556098.json, 视频生成/图生视频/Scail2低显存动作复刻｜视频动作迁移加长无限时长_2106645828902408193.json, 视频生成/图生视频/Scail2动作迁移lite版｜复刻跳舞动作无限时长低显存_2106596717176123393.json, 视频生成/图生视频/Scail2动作迁移低配置长续航版工作流，数字人图生视频写实风格处理方案_2107981765909499905.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2106898397432213506.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2106912137393303553.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2107576153123942401.json, 视频生成/图生视频/Scail2动作迁移复刻动作视频图片复制跳舞动作无限时长低显存版，图生视频_2108372496239128578.json, 视频生成/图生视频/Scail2动作迁移无限时长版｜视频动作完整复刻_2098721885197524993.json, 视频生成/图生视频/Scail2复刻动作无限时长｜视频生视频动作迁移_2098747334107680770.json, 视频生成/图生视频/Scail2角色替换动作迁移 高清补帧图生视频处理工具_2114113214412836866.json, 视频生成/图生视频/Scail2角色替换动作迁移高清补帧｜视频三合一套餐_2114076412540973057.json, 视频生成/图生视频/lite无限时长低显存｜Scail2动作迁移复刻跳舞视频_2093792459687026690.json, 视频生成/图生视频/lite无限时长低显存｜Scail2跳舞动作复刻迁移视频_2094015557204008961.json, 视频生成/图生视频/scail 2 电商带货｜单人出镜人物产品随意替换视频生视频_2097516340285362178.json, 视频生成/图生视频/scail 2单人电商带货｜人物产品替换自动版_2097926408709427201.json, 视频生成/图生视频/scail 2电商带货利器｜单人视频里人物产品一键替换_2101491690153533442.json, 视频生成/图生视频/人物产品替换｜scail 2单人电商带货视频生成_2094004023534907393.json, 视频生成/图生视频/单人电商带货自动版｜Scail 2人物产品替换视频_2093764609831424001.json, 视频生成/图生视频/单人电商带货自动版｜scail 2人物产品替换视频生成_2093994662599155714.json, 视频生成/图生视频/双人互动一键替换｜Scail 2视频图生视频生成_2091161243632627714.json, 视频生成/图生视频/双人互动替换｜Scail 2视频生视频图生视频生成_2095067096408481794.json, 视频生成/图生视频/跳舞动作复刻视频lite无限时长低显存 Scail2动作迁移图片复制方案_2094026121233920002.json, 视频生成/图生视频/跳舞动作复刻视频lite无限时长低显存 Scail2动作迁移图片复制方案_2097105682641285121.json, 视频生成/图生视频/高配2k迁移无阉割纯血统长续航版｜图生视频不降规格，长片一跑到底_2100489274977251330.json]
+members: [图片生成/图生图/MiniMax H3音乐数字人 音频驱动对口型视频生成工具_2113772784173277185.json, 数字人/数字人/MiniMax H3音乐数字人 无限分段长视频音频驱动处理工具_2113013746007371778.json, 数字人/数字人/MinimaxH3音乐数字人分段长视频版｜角色表演连贯不跳戏｜一致性稳如老狗_2104752849640058882.json, 数字人/数字人/MinimaxH3音乐数字人无限分段｜长视频角色一致性表演｜数字人唱歌不打断_2104748069731520513.json, 数字人/数字人/Selflift数字人开口说话｜一张照片一段音频就开演_2111320781878808578.json, 数字人/数字人/慕斯AI MiniMaxH3数字人口播｜图生视频带货口播直出_2112859987381936129.json, 视频生成/图生视频/AI音乐MV数字人二采方案，Separate AV Latent加Minimax H3 Selfli_2110790463421763585.json, 视频生成/图生视频/AI音乐MV数字人新二采Separate AV Latent加Minimax H3 Selflift_2105763503423442946.json, 视频生成/图生视频/MiniMax H3 SelfLift数字人1080p图生视频处理工具_2101012772418052098.json, 视频生成/图生视频/MiniMax H3单图数字人SelfLift无限分段长视频工作流，数字人图生视频方案_2107539277377794049.json, 视频生成/图生视频/MiniMax H3音乐数字人无限分段长视频处理生成工具_2102121536076472321.json, 视频生成/图生视频/MiniMax H3高清数字人自动提示词图生视频处理工具_2101031617153290241.json, 视频生成/图生视频/Minimax H3 Selflift数字人三采｜角色一致画质再进阶_2103707327995138049.json, 视频生成/图生视频/Minimax H3 Selflift数字人｜口播带货数字人轻松做_2111136546035421186.json, 视频生成/图生视频/Minimax H3单图数字人selflift无限分段｜一张照片变身长视频主播_2107348289380241409.json, 视频生成/图生视频/Minimax-H3音乐数字人工作流｜无限分段长视频｜音频驱动口播_2101882039300612097.json, 视频生成/图生视频/Minimax-H3音乐数字人无限分段长视频｜音频驱动图生视频演唱_2101917400844300290.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频 数字人口播方案_2109432298180534273.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频 数字人口播方案_2109743708005556226.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频修复报错 数字人口播方案_2109394122141425666.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频修复报错 数字人口播方案_2109416523596132354.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段，长视频图生视频方案_2111270412171698177.json, 视频生成/图生视频/MinimaxH3音乐数字人长视频｜无限分段连播不断档_2111133304434028545.json, 视频生成/图生视频/MinimaxH3音乐数字人｜无限分段长视频直出｜唱歌视频一键到底_2102654919030427649.json, 视频生成/图生视频/minimaxh3 Selflift数字人1080p｜超自然对口型图生视频_2100775766433816577.json, 视频生成/文生视频/AI音乐MV数字人Singualarith与MiniMax H3视频生成工具_2101005333526302721.json, 视频生成/文生视频/AI音乐MV数字人新二采｜Minimax H3 Selflift联动出片_2100782399897554945.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_17
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（视频生成/图生视频/Scail 2单人电商带货人物产品替换图生视频处理工具_2101736999525896194.json、视频生成/图生视频/Scail 2双人互动替换工作流｜视频里两个人物随心互换｜图生视频_2099119654894657538.json、视频生成/图生视频/Scail 2双人互动替换｜视频图生视频一键生成_2090883066775556098.json、视频生成/图生视频/Scail2低显存动作复刻｜视频动作迁移加长无限时长_2106645828902408193.json、视频生成/图生视频/Scail2动作迁移lite版｜复刻跳舞动作无限时长低显存_2106596717176123393.json…）
+> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/MiniMax H3音乐数字人 音频驱动对口型视频生成工具_2113772784173277185.json、数字人/数字人/MiniMax H3音乐数字人 无限分段长视频音频驱动处理工具_2113013746007371778.json、数字人/数字人/MinimaxH3音乐数字人分段长视频版｜角色表演连贯不跳戏｜一致性稳如老狗_2104752849640058882.json、数字人/数字人/MinimaxH3音乐数字人无限分段｜长视频角色一致性表演｜数字人唱歌不打断_2104748069731520513.json、数字人/数字人/Selflift数字人开口说话｜一张照片一段音频就开演_2111320781878808578.json…）
 
 - **类型**：Text To Image
 - **样本数**：27
 - **可信度**：强结论
-- **平均知识覆盖**：56%
+- **平均知识覆盖**：82%
 
 ## 共有节点
 
 全部 27 个 workflow 都包含：
 - `BasicScheduler`
-- `BatchImagesNode`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CLIPVisionEncode`
-- `CLIPVisionLoader`
-- `CheckpointLoaderSimple`
-- `ColorTransfer`
 - `ComfyMathExpression`
-- `DownloadAndLoadGIMMVFIModel`
-- `EmptyImage`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `GIMMVFI_interpolate`
-- `GetImageRangeFromBatch`
-- `GetImageSize`
-- `ImageCompositeMasked`
-- `ImageResizeKJv2`
-- `JWInteger`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LTXVAudioVAEEncode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `PrimitiveInt`
-- `SAM3_TrackToMask`
-- `SAM3_VideoTrack`
-- `SCAIL2ColoredMask`
-- `SamplerCustom`
-- `TensorLoopClose`
-- `TensorLoopOpen`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `SelfLiftAvatarH3Sampler`
+- `SetLatentNoiseMask`
+- `SolidMask`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanSCAILToVideo`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `孤海注释` —— 26/27 个有
-- `GetNode` —— 25/27 个有
-- `PreviewAny` —— 25/27 个有
-- `SetNode` —— 25/27 个有
-- `ImageConcatMulti` —— 20/27 个有
-- `ResizeImageMaskNode` —— 20/27 个有
-- `CR Text` —— 16/27 个有
-- `DiffusionModelLoaderKJ` —— 11/27 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/27 个有
-- `VHS_VideoInfoSource` —— 11/27 个有
-- `easy imageCount` —— 11/27 个有
-- `easy showAnything` —— 11/27 个有
-- `1hew_MaskMathOps` —— 7/27 个有
-- `ColorPickerMW` —— 7/27 个有
-- `DrawMaskOnImage` —— 7/27 个有
-- `FillMaskWithColor` —— 7/27 个有
-- `InvertMask` —— 7/27 个有
-- `RH_Captioner` —— 7/27 个有
-- `RH_RhartImageG2OfficialImageToImage` —— 7/27 个有
-- `SaveImage` —— 7/27 个有
-- `Switch` —— 7/27 个有
-- `Text` —— 7/27 个有
-- `easy indexAnything` —— 7/27 个有
-- `ImageFromBatch` —— 4/27 个有
-- `PointsEditor` —— 4/27 个有
-- `SeCModelLoader` —— 4/27 个有
-- `SeCVideoSegmentation` —— 4/27 个有
-- `easy cleanGpuUsed` —— 2/27 个有
+- `MiniMaxH3ReferenceToVideo` —— 26/27 个有
+- `SoundFlow_GetLength` —— 26/27 个有
+- `ModelPreviewOverrideKJ` —— 21/27 个有
+- `PrimitiveFloat` —— 18/27 个有
+- `PrimitiveStringMultiline` —— 18/27 个有
+- `AudioSeparation` —— 16/27 个有
+- `DF_Int_to_Float` —— 16/27 个有
+- `ImageResizeKJv2` —— 16/27 个有
+- `PrimitiveInt` —— 16/27 个有
+- `VHS_LoadAudioUpload` —— 16/27 个有
+- `GetNode` —— 15/27 个有
+- `SetNode` —— 15/27 个有
+- `PreviewAudio` —— 14/27 个有
+- `PreviewImage` —— 14/27 个有
+- `SaveImage` —— 14/27 个有
+- `Compare` —— 13/27 个有
+- `Int` —— 13/27 个有
+- `InversionDemoLazySwitch` —— 13/27 个有
+- `LoadAudio` —— 13/27 个有
+- `PreviewAny` —— 13/27 个有
+- `ComfyNumberConvert` —— 11/27 个有
+- `ResolutionSelector` —— 11/27 个有
+- `TrimAudioDuration` —— 11/27 个有
+- `QwenH3PromptLocal` —— 4/27 个有
+- `FlashVSRNode` —— 2/27 个有
+- `RHMiniMaxH3PromptOptimizerMedia` —— 2/27 个有
+- `Text Multiline` —— 2/27 个有
+- `Textbox` —— 2/27 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/27 个有
+- `MiniMaxH3ImageToVideo` —— 1/27 个有
 
 ## 典型参数
 

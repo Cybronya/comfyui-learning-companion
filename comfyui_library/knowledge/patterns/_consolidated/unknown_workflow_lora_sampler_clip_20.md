@@ -1,67 +1,101 @@
 ---
 name: unknown_workflow_lora_sampler_clip_20
 type: Unknown Workflow
-frequency: 17
-level: moderate
-coverage: 0.817235
-common_nodes: [CLIPLoader, CLIPTextEncode, EmptyLatentImage, Int, KSamplerAdvanced, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+frequency: 15
+level: strong
+coverage: 0.918067
+common_nodes: [CFGGuider, CLIPTextEncode, CM_FloatToInt, CR Text, EmptyLTXVLatentVideo, JWInteger, KSamplerSelect, LTX2AttentionTunerPatch, LTX2_NAG, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, ManualSigmas, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveFloat, RandomNoise, ResizeImageMaskNode, SamplerCustomAdvanced, UNETLoader, VAEDecodeTiled, VAELoader]
 problems: []
 missing: []
-members: [图片生成/图生图/多样性超写实文生图_2052917098942349314.json, 图片生成/文生图/AI电影海报一键生成_2016027708911788033.json, 图片生成/文生图/AI电影海报速成大师_2014963614515470338.json, 图片生成/文生图/Z-image Base+Turbo 双采样 文生图 高级工作流_2041740734788800513.json, 图片生成/文生图/Z-image Base+Turbo 双采样 文生图_2041332481936334850.json, 图片生成/文生图/Z-image base 三阶采样 多样性超写实 文生图_2055553152094621698.json, 图片生成/文生图/ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图 图生图洗图_2044650703913750529.json, 图片生成/文生图/ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图_2051833405628788738.json, 图片生成/文生图/ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图_2052294300981047298.json, 图片生成/文生图/ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图_2052366719192186882.json, 图片生成/文生图/ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图_2052581391463927810.json, 图片生成/文生图/万能图像生成器  文生图  + Z-image base+turbo 三阶采样 多样性_2051125465544437762.json, 图片生成/文生图/三阶采样+多样性超写实+文生图 (1)_2054399447311888386.json, 图片生成/文生图/多样性超写实文生图_2052923543083597826.json, 图片生成/文生图/文生图Z-image base等三阶采样、超真实_2052635800872996865.json, 图片生成/文生图/文生图Z-image+base+_2051840571873996802.json, 图片生成/文生图/超写实文生图ernie turbo + Z-image base+turbo 三种风格任选_2052659897422102530.json]
+members: [视频生成/图生视频/Dasiwa LTX2.3 超强一致性工作i流，宽审核！_2073670944987635714.json, 视频生成/图生视频/LTX2.3 图生视频 自动提示词 一致性最新模型改进版_2045468289630998529.json, 视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070413012745412609.json, 视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070799952854474753.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2051501055195791361.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2053052230592409601.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2051614845358886913.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2052714455703801858.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2074073783828307970.json, 视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词工作流_2075903253178572801.json, 视频生成/图生视频/Ltx 2.3图生视频自动提示词一致性改进版V2（新版模型）_2043901634517929985.json, 视频生成/图生视频/Ltx 2.3图生视频自动提示词一致性改进版（转自T8大佬）_2044013454645796866.json, 视频生成/图生视频/Ltx+2.3_Dasiwa图生视频+高清_2051956185665949698.json, 视频生成/图生视频/【阿良绘】Ltx 2.3图生视频 _ 自动提示词 改进版V2（新版模型）_2047130634124005377.json, 视频生成/图生视频/电商Ltx 2.3 Dasiwa V3最强人脸一致性-图生视频-自动提示词_2071794248864845826.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_20
 
-> 由 `engine/knowledge_consolidation` 从 17 个 workflow 归纳得出（图片生成/图生图/多样性超写实文生图_2052917098942349314.json、图片生成/文生图/AI电影海报一键生成_2016027708911788033.json、图片生成/文生图/AI电影海报速成大师_2014963614515470338.json、图片生成/文生图/Z-image Base+Turbo 双采样 文生图 高级工作流_2041740734788800513.json、图片生成/文生图/Z-image Base+Turbo 双采样 文生图_2041332481936334850.json…）
+> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/Dasiwa LTX2.3 超强一致性工作i流，宽审核！_2073670944987635714.json、视频生成/图生视频/LTX2.3 图生视频 自动提示词 一致性最新模型改进版_2045468289630998529.json、视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070413012745412609.json、视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070799952854474753.json、视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2051501055195791361.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：17
-- **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **样本数**：15
+- **可信度**：强结论
+- **平均知识覆盖**：92%
 
 ## 共有节点
 
-全部 17 个 workflow 都包含：
-- `CLIPLoader`
+全部 15 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `EmptyLatentImage`
-- `Int`
-- `KSamplerAdvanced`
+- `CM_FloatToInt`
+- `CR Text`
+- `EmptyLTXVLatentVideo`
+- `JWInteger`
+- `KSamplerSelect`
+- `LTX2AttentionTunerPatch`
+- `LTX2_NAG`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVChunkFeedForward`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVSeparateAVLatent`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `ModelSamplingAuraFlow`
-- `SaveImage`
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PrimitiveBoolean`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ResizeImageMaskNode`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
+- `VAEDecodeTiled`
 - `VAELoader`
-- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `RH_LLMAPI_NODE` —— 16/17 个有
-- `Text` —— 16/17 个有
-- `CR Text` —— 15/17 个有
-- `CheckpointLoaderSimple` —— 15/17 个有
-- `InversionDemoLazyIndexSwitch` —— 15/17 个有
-- `PreviewImage` —— 15/17 个有
-- `RH_LLMAPI_Pro_Node` —— 15/17 个有
-- `VAEEncode` —— 15/17 个有
-- `ImpactSwitch` —— 2/17 个有
-- `LatentFrequencyEnhancer_lrzjason` —— 2/17 个有
-- `LayerFilter: HDREffects` —— 2/17 个有
-- `AILab_QwenVL` —— 1/17 个有
-- `LoadImage` —— 1/17 个有
+- `CR Prompt Text` —— 14/15 个有
+- `ConcatTextOfUtils` —— 14/15 个有
+- `RH_LLMAPI_Pro_Node` —— 14/15 个有
+- `VHS_VideoCombine` —— 14/15 个有
+- `easy cleanGpuUsed` —— 14/15 个有
+- `CreateVideo` —— 13/15 个有
+- `LTXVPreprocess` —— 13/15 个有
+- `LatentUpscaleModelLoader` —— 13/15 个有
+- `SaveVideo` —— 13/15 个有
+- `FlashVSR_SM_KSampler` —— 12/15 个有
+- `FlashVSR_SM_Model` —— 12/15 个有
+- `Float` —— 12/15 个有
+- `ImageFromBatch+` —— 12/15 个有
+- `LTXVLatentUpsampler` —— 12/15 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 12/15 个有
+- `GetNode` —— 2/15 个有
+- `Int` —— 2/15 个有
+- `LTXICLoRALoaderModelOnly` —— 2/15 个有
+- `SetNode` —— 2/15 个有
+- `SimpleMath+` —— 2/15 个有
+- `孤海注释` —— 2/15 个有
+- `GetImageSize` —— 1/15 个有
+- `ImageScaleBy` —— 1/15 个有
+- `PreviewAny` —— 1/15 个有
+- `Qwen3_VQA` —— 1/15 个有
+- `ShowAnything|Mie` —— 1/15 个有
+- `TextListSplit` —— 1/15 个有
+- `easy promptConcat` —— 1/15 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 17 | 100% |
-| Prompt 约束强度(CFG) | 8 | 3 - 15 | 17 | 60% |
-| 采样算法 | 1 | 1 - 1 | 17 | 100% |
-| 调度器 | euler | - | 17 | 100% |
-| 重绘幅度 | simple | - | 17 | 100% |
-| 宽度 | 960 | 512 - 1536 | 17 | 78% |
-| 高度 | 1536 | 512 - 1536 | 17 | 75% |
+| 宽度 | 97 | 97 - 97 | 15 | 100% |
+| 高度 | 25 | 25 - 25 | 15 | 100% |
+| 采样步数 | 1.59005e+09 | 1.01555e+07 - 2.01633e+09 | 12 | 41% |
+| Prompt 约束强度(CFG) | randomize | - | 12 | 100% |
+| 采样算法 | 2 | 2 - 2 | 12 | 100% |
+| 调度器 | 3.5 | 3.5 - 3.5 | 12 | 100% |
+| 重绘幅度 | 11 | 11 - 11 | 12 | 100% |
 
 ## 常见问题
 
@@ -69,11 +103,12 @@ source: knowledge_consolidation
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，17 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 8，观测区间 3 - 15，17 个样本
-- 采样算法 中位数 1，观测区间 1 - 1，17 个样本，取值集中（一致性 100%）
-- 调度器 最常用 euler，17 个样本，一致性 100%
-- 重绘幅度 最常用 simple，17 个样本，一致性 100%
-- 宽度 中位数 960，观测区间 512 - 1536，17 个样本
-- 高度 中位数 1536，观测区间 512 - 1536，17 个样本
-- 风险：Prompt 约束强度(CFG) 观测到 15，超出安全上限 12（CFG 偏高容易出现过度约束（如脸部异常、过饱和））
+- 宽度 中位数 97，观测区间 97 - 97，15 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 25 - 25，15 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 1.59005e+09，观测区间 1.01555e+07 - 2.01633e+09，12 个样本，取值分散，一致性仅 41%
+- Prompt 约束强度(CFG) 最常用 randomize，12 个样本，一致性 100%
+- 采样算法 中位数 2，观测区间 2 - 2，12 个样本，取值集中（一致性 100%）
+- 调度器 中位数 3.5，观测区间 3.5 - 3.5，12 个样本，取值集中（一致性 100%）
+- 重绘幅度 中位数 11，观测区间 11 - 11，12 个样本，取值集中（一致性 100%）
+- 风险：采样步数 观测到 2.01633e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
+- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）

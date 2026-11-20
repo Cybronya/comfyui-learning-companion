@@ -1,97 +1,107 @@
 ---
 name: unknown_workflow_video_lora_sampler_139
 type: Unknown Workflow
-frequency: 15
+frequency: 13
 level: strong
-coverage: 0.942733
-common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, INTConstant, ImageResizeKJv2, LoadImage, LoadWanVideoT5TextEncoder, NLFPredict, OnnxDetectionModelLoader, PoseDetectionVitPoseToDWPose, PreviewImage, RenderNLFPoses, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerExtraArgs, WanVideoSamplerv2, WanVideoSchedulerv2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoTorchCompileSettings, WanVideoVAELoader]
-problems: []
+coverage: 0.618538
+common_nodes: [CLIPVisionLoader, DrawViTPose, GetImageRangeFromBatch, ImageResizeKJv2, OnnxDetectionModelLoader, PoseAndFaceDetection, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSteadyDancerEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoEncode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSamplerFromSettings, WanVideoSamplerSettings, WanVideoScheduler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/cosplay度量の広いお姉さん_2064553319145754626.json, 视频生成/图生视频/scail 多人跳舞_2008441362764537857.json, 视频生成/图生视频/【AI小王子】85.Scail+一键跳舞！骨骼完美驱动！(视频和图片需要选择自己本地的）_2048661829873831938.json, 视频生成/图生视频/【最推荐，完美动作迁移】Scail 一键跳舞！骨骼完美驱动！_2009625455447515138.json, 视频生成/图生视频/【最推荐，完美动作迁移，动态增强】Scail 一键跳舞！骨骼完美驱动！_2009854933348130817.json, 视频生成/图生视频/人类动作迁移到动物_2071446981473562626.json, 视频生成/图生视频/卡通人物动作迁移_2070753501143191553.json, 视频生成/图生视频/搞笑动物跳舞视频_2071262215709220866.json, 视频生成/图生视频/本地开源免费，emergency_2054436990401171457.json, 视频生成/图生视频/本地开源免费，tiktok dancing_2055881333670457346.json, 视频生成/图生视频/本地开源免费，tiktok dancing_2055906585632878593.json, 视频生成/图生视频/本地开源免费，倒车请注意_2054373065324277762.json, 视频生成/图生视频/本地开源免费，倒车请注意_2055687460432171009.json, 视频生成/图生视频/本地开源免费，好汉歌_2055881301147824129.json, 视频生成/图生视频/本地开源免费，道士小曲_2056247693923672065.json]
+members: [图片生成/图生图/真人视频转动漫风格_1996554877067214849.json, 视频生成/图生视频/SteadDancer大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿_2011517668532162561.json, 视频生成/图生视频/SteadDancer真人视频转3D可爱风格_2064169491482894338.json, 视频生成/图生视频/SteadDancer视频自适应绑定动作迁移_1996396266479296514.json, 视频生成/图生视频/SteadyDancer动作迁移_1995679581803778050.json, 视频生成/图生视频/SteadyDancer动作迁移_2073284965781032961.json, 视频生成/图生视频/动物跳舞_1997949647484256258.json, 视频生成/图生视频/图生视频 _ 专业舞蹈_ 自动姿态矫正 _ SteadyDancer_1996237432284651521.json, 视频生成/图生视频/真人视频真人转动漫风格 真人转动画视频3.0_2068694345024360450.json, 视频生成/图生视频/真人视频转3D可爱风格=SteadDancer=B站艾橘溪_1996110517959868418.json, 视频生成/图生视频/真人视频转3D可爱风格=SteadDancer，超丝滑顺畅！值得推荐_2037499475232559105.json, 视频生成/图生视频/真人视频转3D可爱风格=SteadDancer，超丝滑顺畅！值得推荐_2049292828706086913.json, 视频生成/图生视频/真人视频转动漫风格=SteadDancer_1996562415049383938.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_139
 
-> 由 `engine/knowledge_consolidation` 从 15 个 workflow 归纳得出（视频生成/图生视频/cosplay度量の広いお姉さん_2064553319145754626.json、视频生成/图生视频/scail 多人跳舞_2008441362764537857.json、视频生成/图生视频/【AI小王子】85.Scail+一键跳舞！骨骼完美驱动！(视频和图片需要选择自己本地的）_2048661829873831938.json、视频生成/图生视频/【最推荐，完美动作迁移】Scail 一键跳舞！骨骼完美驱动！_2009625455447515138.json、视频生成/图生视频/【最推荐，完美动作迁移，动态增强】Scail 一键跳舞！骨骼完美驱动！_2009854933348130817.json…）
+> 由 `engine/knowledge_consolidation` 从 13 个 workflow 归纳得出（图片生成/图生图/真人视频转动漫风格_1996554877067214849.json、视频生成/图生视频/SteadDancer大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿_2011517668532162561.json、视频生成/图生视频/SteadDancer真人视频转3D可爱风格_2064169491482894338.json、视频生成/图生视频/SteadDancer视频自适应绑定动作迁移_1996396266479296514.json、视频生成/图生视频/SteadyDancer动作迁移_1995679581803778050.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：15
+- **样本数**：13
 - **可信度**：强结论
-- **平均知识覆盖**：94%
+- **平均知识覆盖**：62%
 
 ## 共有节点
 
-全部 15 个 workflow 都包含：
+全部 13 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `DownloadAndLoadNLFModel`
-- `INTConstant`
+- `DrawViTPose`
+- `GetImageRangeFromBatch`
 - `ImageResizeKJv2`
-- `LoadImage`
-- `LoadWanVideoT5TextEncoder`
-- `NLFPredict`
 - `OnnxDetectionModelLoader`
-- `PoseDetectionVitPoseToDWPose`
-- `PreviewImage`
-- `RenderNLFPoses`
-- `SimpleMath+`
+- `PoseAndFaceDetection`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanVideoAddSCAILPoseEmbeds`
-- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoAddSteadyDancerEmbeds`
 - `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
 - `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoEmptyEmbeds`
+- `WanVideoEncode`
+- `WanVideoImageToVideoEncode`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSamplerExtraArgs`
-- `WanVideoSamplerv2`
-- `WanVideoSchedulerv2`
+- `WanVideoSamplerFromSettings`
+- `WanVideoSamplerSettings`
+- `WanVideoScheduler`
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
-- `WanVideoTextEncode`
-- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: PurgeVRAM V2` —— 11/15 个有
-- `FlashVSR_SM_KSampler` —— 9/15 个有
-- `FlashVSR_SM_Model` —— 9/15 个有
-- `GetImageRangeFromBatch` —— 9/15 个有
-- `GetImageSize` —— 9/15 个有
-- `JWInteger` —— 9/15 个有
-- `easy indexAnything` —— 9/15 个有
-- `FloatConstant` —— 4/15 个有
-- `GetImageSizeAndCount` —— 4/15 个有
-- `ImageConcatMulti` —— 4/15 个有
-- `LoadAudio` —— 2/15 个有
-- `HypernetworkLoader` —— 1/15 个有
-- `VHS_VideoInfo` —— 1/15 个有
-- `WanAnimatePlus LoraSelect` —— 1/15 个有
-- `easy showAnything` —— 1/15 个有
+- `GetImageSizeAndCount` —— 12/13 个有
+- `GetNode` —— 12/13 个有
+- `SetNode` —— 12/13 个有
+- `JWInteger` —— 10/13 个有
+- `WanVideoTorchCompileSettings` —— 10/13 个有
+- `LayerUtility: PurgeVRAM` —— 9/13 个有
+- `PrimitiveInt` —— 9/13 个有
+- `SimpleMath+` —— 9/13 个有
+- `ttN float` —— 9/13 个有
+- `CheckpointLoaderSimple` —— 8/13 个有
+- `EmptyLatentImage` —— 8/13 个有
+- `ImageConcatMulti` —— 8/13 个有
+- `KSampler` —— 8/13 个有
+- `TextEncodeQwenImageEditPlus` —— 8/13 个有
+- `VAEDecode` —— 8/13 个有
+- `ImageFromBatch+` —— 7/13 个有
+- `JjkText` —— 7/13 个有
+- `LoraLoaderModelOnly` —— 7/13 个有
+- `SaveImage` —— 7/13 个有
+- `LoadImage` —— 6/13 个有
+- `Text` —— 4/13 个有
+- `Text Concatenate` —— 4/13 个有
+- `Text Multiline` —— 4/13 个有
+- `easy anythingIndexSwitch` —— 4/13 个有
+- `DF_Int_to_Float` —— 1/13 个有
+- `PreviewImage` —— 1/13 个有
+- `TT_img_enc` —— 1/13 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 1.12116e+09 | 2.80175e+08 - 1.91868e+09 | 9 | 56% |
-| Prompt 约束强度(CFG) | randomize | - | 9 | 100% |
-| 采样算法 | 2 | 2 - 2 | 9 | 100% |
-| 调度器 | 3.5 | 3.5 - 3.5 | 9 | 100% |
-| 重绘幅度 | 11 | 11 - 11 | 9 | 100% |
+| 宽度 | 720 | 720 - 768 | 8 | 98% |
+| 高度 | 1280 | 768 - 1280 | 8 | 86% |
+| 采样步数 | 8 | 8 - 8 | 8 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 8 | 100% |
+| 采样算法 | euler | - | 8 | 88% |
+| 调度器 | simple | - | 8 | 88% |
+| 重绘幅度 | 1 | 1 - 1 | 8 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 8/13 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 1.12116e+09，观测区间 2.80175e+08 - 1.91868e+09，9 个样本
-- Prompt 约束强度(CFG) 最常用 randomize，9 个样本，一致性 100%
-- 采样算法 中位数 2，观测区间 2 - 2，9 个样本，取值集中（一致性 100%）
-- 调度器 中位数 3.5，观测区间 3.5 - 3.5，9 个样本，取值集中（一致性 100%）
-- 重绘幅度 中位数 11，观测区间 11 - 11，9 个样本，取值集中（一致性 100%）
-- 风险：采样步数 观测到 1.91868e+09，超出安全上限 60（steps 偏高收益递减且显著增加耗时）
-- 风险：重绘幅度 观测到 11，超出安全上限 1（denoise 接近 1.0 时接近重新生成，初始潜空间影响被抹平）
+- 宽度 中位数 720，观测区间 720 - 768，8 个样本，取值集中（一致性 98%）
+- 高度 中位数 1280，观测区间 768 - 1280，8 个样本，取值集中（一致性 86%）
+- 采样步数 中位数 8，观测区间 8 - 8，8 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，8 个样本，一致性 88%
+- 调度器 最常用 simple，8 个样本，一致性 88%
+- 重绘幅度 中位数 1，观测区间 1 - 1，8 个样本，取值集中（一致性 100%）
+- 高发问题（8/13 个样本）：Steps较低可能导致细节不足

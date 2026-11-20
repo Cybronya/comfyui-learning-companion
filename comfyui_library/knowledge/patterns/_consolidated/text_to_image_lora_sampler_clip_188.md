@@ -3,22 +3,22 @@ name: text_to_image_lora_sampler_clip_188
 type: Text To Image
 frequency: 10
 level: strong
-coverage: 0.8668
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.7651
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, CreateVideo, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, SaveVideo, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/MiniMax H3 Native vs DMAD文生视频工作流，文生视频图生视频方案_2106848580148482050.json, 视频生成/文生视频/MiniMax H3文生视频 官方全模态立体声生成_2098835843896139777.json, 视频生成/文生视频/MiniMax H3文生视频V2版｜提示词一键生成视频_2089409853189091329.json, 视频生成/文生视频/MiniMax H3文生视频加速版 官方Turbo加速出片_2099198028581265410.json, 视频生成/文生视频/MiniMax H3文生视频双采latent放大｜修复鬼影重影问题_2090417255657066498.json, 视频生成/文生视频/双采latent放大｜MiniMax H3文生视频修复鬼影重影_2090542462141034498.json, 视频生成/文生视频/多参双采latent放大｜MiniMax H3三模视频生成_2091816029914746881.json, 视频生成/文生视频/多参双采latent放大｜MiniMax H3文生图生视频直出_2091651697952247809.json, 视频生成/文生视频/文生视频双采latent放大｜MiniMax H3直出生成_2091650435424808961.json, 视频生成/文生视频/文生视频双采放大｜MiniMax H3 latent高清生成_2091814698722357250.json]
+members: [视频生成/图生视频/H3官方长视频续接｜图生视频无缝延长生成_2095203720807145474.json, 视频生成/图生视频/Kitchen Attention图生视频 600步EMA模型工具_2114139959656538113.json, 视频生成/图生视频/MiniMax H3全能参考三图版｜三图输入视频生成_2094516324448948226.json, 视频生成/图生视频/MiniMax H3全能参考双图版｜双图输入视频生成_2094519227574218754.json, 视频生成/图生视频/MiniMax H3全能参考四图版｜多图输入视频生成_2094508021375397889.json, 视频生成/图生视频/MiniMax H3参考生视频 官方全能多模态创作工具_2098824046145269762.json, 视频生成/图生视频/MiniMax H3多图参考｜图生视频多图生成_2090449654759645186.json, 视频生成/图生视频/MiniMax R2V多参考图生视频 参考音频视频混合生成处理工具_2112964584029118465.json, 视频生成/图生视频/MiniMax视频续写多帧插入 latent保存图生视频处理工具_2112962732864659458.json, 视频生成/图生视频/Minimax多帧插入视频续写，视频生视频拉长片段神器_2110489536747884545.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_188
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/MiniMax H3 Native vs DMAD文生视频工作流，文生视频图生视频方案_2106848580148482050.json、视频生成/文生视频/MiniMax H3文生视频 官方全模态立体声生成_2098835843896139777.json、视频生成/文生视频/MiniMax H3文生视频V2版｜提示词一键生成视频_2089409853189091329.json、视频生成/文生视频/MiniMax H3文生视频加速版 官方Turbo加速出片_2099198028581265410.json、视频生成/文生视频/MiniMax H3文生视频双采latent放大｜修复鬼影重影问题_2090417255657066498.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/H3官方长视频续接｜图生视频无缝延长生成_2095203720807145474.json、视频生成/图生视频/Kitchen Attention图生视频 600步EMA模型工具_2114139959656538113.json、视频生成/图生视频/MiniMax H3全能参考三图版｜三图输入视频生成_2094516324448948226.json、视频生成/图生视频/MiniMax H3全能参考双图版｜双图输入视频生成_2094519227574218754.json、视频生成/图生视频/MiniMax H3全能参考四图版｜多图输入视频生成_2094508021375397889.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：87%
+- **平均知识覆盖**：77%
 
 ## 共有节点
 
@@ -27,13 +27,20 @@ source: knowledge_consolidation
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
+- `ComfyMathExpression`
+- `CreateVideo`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `PrimitiveStringMultiline`
 - `RandomNoise`
 - `SamplerCustomAdvanced`
+- `SaveVideo`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
@@ -42,39 +49,49 @@ source: knowledge_consolidation
 - `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 9/10 个有
-- `PrimitiveFloat` —— 9/10 个有
+- `ComfySwitchNode` —— 9/10 个有
+- `PrimitiveBoolean` —— 9/10 个有
 - `ResolutionSelector` —— 9/10 个有
-- `SaveImage` —— 9/10 个有
-- `MiniMaxH3ImageToVideo` —— 8/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
-- `VHS_VideoCombine` —— 8/10 个有
-- `DiffusionModelLoaderKJ` —— 7/10 个有
-- `LTXVSeparateAVLatent` —— 7/10 个有
-- `PrimitiveStringMultiline` —— 7/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 6/10 个有
-- `LTXVConcatAVLatent` —— 6/10 个有
-- `LoadImage` —— 6/10 个有
-- `RHMiniMaxH3PromptOptimizerMedia` —— 6/10 个有
-- `ShowText|fofo` —— 6/10 个有
-- `UniBlockSwap` —— 6/10 个有
-- `MinimaxH3LatentUpscaler3D` —— 4/10 个有
-- `CreateVideo` —— 3/10 个有
-- `SaveVideo` —— 3/10 个有
-- `CS-MultiImageLoader` —— 2/10 个有
-- `Label (rgthree)` —— 2/10 个有
-- `LoadAudio` —— 2/10 个有
-- `ManualSigmas` —— 2/10 个有
-- `MiniMaxH3ReferenceToVideo` —— 2/10 个有
-- `MinimaxH3LatentUpscalerNode3D` —— 2/10 个有
-- `VHS_LoadVideo` —— 2/10 个有
-- `AddLabel` —— 1/10 个有
-- `ComfySwitchNode` —— 1/10 个有
-- `ImageConcanate` —— 1/10 个有
-- `MiniMaxH3SigmaShift` —— 1/10 个有
-- `PrimitiveBoolean` —— 1/10 个有
-- `PrimitiveInt` —— 1/10 个有
-- `Seed (rgthree)` —— 1/10 个有
+- `PrimitiveInt` —— 8/10 个有
+- `LoadAudio` —— 7/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
+- `SaveImage` —— 5/10 个有
+- `VHS_LoadVideo` —— 5/10 个有
+- `TrimAudioDuration` —— 4/10 个有
+- `AudioConcat` —— 3/10 个有
+- `GetImageRangeFromBatch` —— 3/10 个有
+- `GetNode` —— 3/10 个有
+- `ImageAddNoise` —— 3/10 个有
+- `MiniMaxH3AddGuide` —— 3/10 个有
+- `ModelAttentionBackend` —— 3/10 个有
+- `SetNode` —— 3/10 个有
+- `easy minimaxH3AudioLock` —— 3/10 个有
+- `AudioInfo` —— 2/10 个有
+- `ColorMatchV2` —— 2/10 个有
+- `EmptyAudio` —— 2/10 个有
+- `ExtendIntermediateSigmas` —— 2/10 个有
+- `INTConstant` —— 2/10 个有
+- `Image Batch` —— 2/10 个有
+- `ImageFromBatch` —— 2/10 个有
+- `ImageScale` —— 2/10 个有
+- `MiniMaxH3SaveLatent` —— 2/10 个有
+- `MiniMaxH3SigmaShift` —— 2/10 个有
+- `AnyIsEmpty` —— 1/10 个有
+- `AudioCrop` —— 1/10 个有
+- `Fast Bypasser (rgthree)` —— 1/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/10 个有
+- `Float` —— 1/10 个有
+- `Int` —— 1/10 个有
+- `LLAIDownloadVideo` —— 1/10 个有
+- `MiniMaxH3LoadLatent` —— 1/10 个有
+- `MiniMaxH3LoopTrim` —— 1/10 个有
+- `MiniMaxH3TurboLoRA` —— 1/10 个有
+- `MiniMaxH3VideoExtender` —— 1/10 个有
+- `MiniMaxH3VideoMerge` —— 1/10 个有
+- `ModelPreviewOverrideKJ` —— 1/10 个有
+- `ShowAnything|Mie` —— 1/10 个有
+- `VHS_VideoInfo` —— 1/10 个有
+- `easy showAnything` —— 1/10 个有
 
 ## 典型参数
 
@@ -92,7 +109,7 @@ source: knowledge_consolidation
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 11/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 10/10 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
@@ -103,4 +120,4 @@ source: knowledge_consolidation
 - 重绘幅度 中位数 1，观测区间 1 - 1，10 个样本，取值集中（一致性 100%）
 - 宽度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
 - 高度 中位数 80，观测区间 80 - 80，10 个样本，取值集中（一致性 100%）
-- 高发问题（11/10 个样本）：Steps较低可能导致细节不足
+- 高发问题（10/10 个样本）：Steps较低可能导致细节不足

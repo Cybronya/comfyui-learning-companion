@@ -1,67 +1,72 @@
 ---
 name: unknown_workflow_video_sampler_unet_2
 type: Unknown Workflow
-frequency: 48
+frequency: 42
 level: moderate
-coverage: 0.800375
-common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, KSamplerSelect, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine]
+coverage: 0.86981
+common_nodes: [BasicGuider, CLIPLoader, CR Prompt Text, ComfyMathExpression, LoadImage, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAELoader, VHS_VideoCombine]
 problems: []
 missing: []
-members: [平台全量/MiniMaxH3视频人物替换_2113107137437196290.json, 平台全量/MiniMaxH3视频添加物品 - 视频编辑_2091870056627138562.json, 平台全量/MiniMaxH3视频添加物品 视频编辑_2099873518228955137.json, 平台全量/MiniMaxH3视频添加物品_视频编辑_2105589465212346369.json, 平台全量/MiniMaxH3视频添加物品_视频编辑_2108377586832338945.json, 平台全量/MiniMaxH3（效果很稳定） 视频换背景 视频编辑_2117080856266362881.json, 平台全量/丝滑穿梭 视频编辑_2119806089637224450.json, 平台全量/视频  MiniMaxH3  视频换背景   视频编辑_2097966090277187585.json, 平台全量/视频  MiniMaxH3  视频换背景   视频编辑_2104446039926329345.json, 平台全量/视频处理  MiniMaxH3  视频换背景   视频编辑_2098119086235541505.json, 平台全量/视频处理  MiniMaxH3  视频换背景   视频编辑_2104610814215933953.json, 平台全量/视频处理  MiniMaxH3  视频换背景   视频编辑_2117221183073640449.json, 平台全量/视频处理 MiniMaxH3  视频换背景   视频编辑_2098119824001028098.json, 平台全量/视频处理 MiniMaxH3  视频换背景   视频编辑_2104610419062173698.json, 平台全量/视频处理 MiniMaxH3 视频换背景 视频编辑_2103349537652953089.json, 平台全量/视频扩图 更改分辨率 尺寸MiniMaxH3 ！视频编辑！_2088108632864022529.json, 平台全量/视频换背景换装MiniMaxH3！视频编辑！_2090623498149519362.json, 平台全量/视频编辑   MiniMaxH3  视频换背景_2090315515318333442.json, 平台全量/视频编辑  MiniMaxH3  视频万能编辑 换人｜换背景｜换衣服_2101501735842963458.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2089033725504999425.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2090346154587410433.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2092663677852938241.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2096848701057748994.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2097050897070256130.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2097057582052626433.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2099200151708585986.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2099532375020625922.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2099533428352966658.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2099899096428539905.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2100867577462484993.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2102079898205642754.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2102106582845841409.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2107876430200786945.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2108265122488733698.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2110055355685367810.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2117580684280815617.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2117672065007439874.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2117672405966610434.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2118248228402585601.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2119664062723350530.json, 平台全量/视频编辑  MiniMaxH3  视频换背景_2120036030278623234.json, 平台全量/视频编辑  服装修改 MiniMaxH3  视频换背景_2096843460698529794.json, 平台全量/视频编辑  视频修改  视频换装  MiniMaxH3  视频换背景_2111015808544624642.json, 平台全量/视频编辑 视频修改  MiniMaxH3  视频换背景_2117536277091405825.json, 平台全量/视频编辑 视频换背景_2101533336954040322.json, 数字人/数字人/MiniMaxH3视频换背景-视频编辑换背景_2109229133493530625.json, 数字人/数字人/人物场景替换工作流_2097197529950674946.json, 视频生成/图生视频/MiniMax MV 自定义歌曲音乐+MV视频生成工作流_2089775026592641025.json]
+members: [视频生成/图生视频/(Exp)FastH3 VSA参考生视频优化版V1_2096256162093158402.json, 视频生成/图生视频/(Lightx2v T8转化版-4步极速)Minimax双时钟图生视频V1_2085728350001254402.json, 视频生成/图生视频/(Lightx2v T8转化版-4步极速)Minimax双时钟图生视频V1_2086155974188027905.json, 视频生成/图生视频/(Lightx2v T8转化版-4步极速)Minimax双时钟图生视频V1_2086318035668918273.json, 视频生成/图生视频/(Lightx2v正式版-4步极速)Minimax双时钟参考生视频V2_2087201782895300610.json, 视频生成/图生视频/(Lightx2v正式版-4步极速)Minimax双时钟参考生视频V2_2087458313847009281.json, 视频生成/图生视频/(Lightx2v正式版-4步极速)Minimax双时钟图生视频V2_2087198369235165185.json, 视频生成/图生视频/(Lightx2v正式版-4步极速)Minimax双时钟图生视频V2_2087457886111879170.json, 视频生成/图生视频/(Lightx2v正式版-8步去油)Minimax双时钟参考生视频V2_2087202057206980610.json, 视频生成/图生视频/(Lightx2v正式版-8步去油)Minimax双时钟参考生视频V2_2087458357828476929.json, 视频生成/图生视频/(Lightx2v正式版-8步去油)Minimax双时钟参考生视频V2_2087471046260772866.json, 视频生成/图生视频/(Lightx2v正式版-8步去油)Minimax双时钟参考生视频V2_2087473095438331905.json, 视频生成/图生视频/(Lightx2v正式版-8步去油)Minimax双时钟参考生视频V2_2087479898322587649.json, 视频生成/图生视频/(Lightx2v正式版-8步去油)Minimax双时钟图生视频V1_2087199059655356418.json, 视频生成/图生视频/(Lightx2v正式版-8步去油)Minimax双时钟图生视频V1_2087458366355492866.json, 视频生成/图生视频/(Lightx2v正式版-8步去油)Minimax双时钟图生视频V1_2087478222513598466.json, 视频生成/图生视频/(SLA脸部动作稳定版)Minimax-H3开源 参考生视频_2091459862701101057.json, 视频生成/图生视频/(SLA脸部动作稳定版)Minimax-H3开源 参考生视频_2091504849526542337.json, 视频生成/图生视频/(SLA脸部动作稳定版)Minimax-H3开源 参考生视频_2097672335238193153.json, 视频生成/图生视频/(SLA脸部动作稳定版)Minimax参考生视频V1_2091100470646501378.json, 视频生成/图生视频/(Singularity)MiniMax H3双采参考生视频V2_2096484642307264513.json, 视频生成/图生视频/(b25-49+ema600)MiniMax H3参考生视频V1_2094781624750796801.json, 视频生成/图生视频/(b25-49+ema600)MiniMax H3数字人加速版V1_2094796122115108866.json, 视频生成/图生视频/(fused+ema600)MiniMax H3参考生视频V1_2094806658798145538.json, 视频生成/图生视频/(fused+ema600)MiniMax H3双采数字人_2094827148858183681.json, 视频生成/图生视频/(文武双修均衡版)MiniMax H3双采参考生视频V2_2095853288209084417.json, 视频生成/图生视频/(文武双修均衡版)MiniMax H3双采参考生视频V2_2095945721018142722.json, 视频生成/图生视频/(文武双修均衡版)MiniMax H3双采参考生视频V2_2110514293845352449.json, 视频生成/图生视频/(文武双修均衡版)MiniMax_H3双采参考生视频V2_2098906181715718145.json, 视频生成/图生视频/(最佳动态)MiniMax H3参考生视频V1_2093046223942012930.json, 视频生成/图生视频/(最佳动态-双参战斗版V2)MiniMax H3参考生视频_2095560786205827074.json, 视频生成/图生视频/(最佳动态-新版战斗V2)MiniMax H3参考生视频_2095539890866970625.json, 视频生成/图生视频/(最佳动态自动化版)MiniMax H3参考生视频V1_2093667307930345474.json, 视频生成/图生视频/2段合成-T8双时钟双采加速Lantent Upscaler公共参考-超真实minmaxh3_2093604508910833665.json, 视频生成/图生视频/3段合成-T8双时钟双采加速Lantent Upscaler公共参考-超真实minmaxh3_2093605369749794817.json, 视频生成/图生视频/4段合成-T8双时钟双采加速Lantent Upscaler公共参考-超真实minmaxh3_2093624760705044482.json, 视频生成/图生视频/5段合成-T8双时钟双采加速Lantent Upscaler公共参考-超真实minmaxh3_2093631803813879809.json, 视频生成/图生视频/6段合成-T8双时钟双采加速Lantent Upscaler公共参考-超真实minmaxh3_2093640422131326978.json, 视频生成/图生视频/MiniMax_H3双采参考生视频V2_2098958673912619010.json, 视频生成/图生视频/MiniMax‑H3‑Remix+双采+加速+Lantent Upscaler参考生视频_2093178030909906946.json, 视频生成/图生视频/Minimax H3 边跳边换装版_2097658452012265473.json, 视频生成/文生视频/银河系小王-多功能1至6段-全能minmaxh3_2094507442725023746.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_sampler_unet_2
 
-> 由 `engine/knowledge_consolidation` 从 48 个 workflow 归纳得出（平台全量/MiniMaxH3视频人物替换_2113107137437196290.json、平台全量/MiniMaxH3视频添加物品 - 视频编辑_2091870056627138562.json、平台全量/MiniMaxH3视频添加物品 视频编辑_2099873518228955137.json、平台全量/MiniMaxH3视频添加物品_视频编辑_2105589465212346369.json、平台全量/MiniMaxH3视频添加物品_视频编辑_2108377586832338945.json…）
+> 由 `engine/knowledge_consolidation` 从 42 个 workflow 归纳得出（视频生成/图生视频/(Exp)FastH3 VSA参考生视频优化版V1_2096256162093158402.json、视频生成/图生视频/(Lightx2v T8转化版-4步极速)Minimax双时钟图生视频V1_2085728350001254402.json、视频生成/图生视频/(Lightx2v T8转化版-4步极速)Minimax双时钟图生视频V1_2086155974188027905.json、视频生成/图生视频/(Lightx2v T8转化版-4步极速)Minimax双时钟图生视频V1_2086318035668918273.json、视频生成/图生视频/(Lightx2v正式版-4步极速)Minimax双时钟参考生视频V2_2087201782895300610.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：48
+- **样本数**：42
 - **可信度**：中等可信
-- **平均知识覆盖**：80%
+- **平均知识覆盖**：87%
 
 ## 共有节点
 
-全部 48 个 workflow 都包含：
+全部 42 个 workflow 都包含：
 - `BasicGuider`
-- `BasicScheduler`
 - `CLIPLoader`
-- `KSamplerSelect`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveStringMultiline`
+- `CR Prompt Text`
+- `ComfyMathExpression`
+- `LoadImage`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3AudioConditioningT8`
+- `PrimitiveFloat`
 - `RandomNoise`
+- `ResolutionSelector`
 - `SamplerCustomAdvanced`
 - `UNETLoader`
-- `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 
 **可变部分**（部分 workflow 才有）：
-- `ComfyMathExpression` —— 47/48 个有
-- `LoraLoaderModelOnly` —— 47/48 个有
-- `ResolutionSelector` —— 47/48 个有
-- `VAEDecodeAudio` —— 47/48 个有
-- `VHS_LoadVideo` —— 47/48 个有
-- `GetNode` —— 46/48 个有
-- `LayerUtility: PurgeVRAM V2` —— 46/48 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 46/48 个有
-- `PrimitiveFloat` —— 46/48 个有
-- `SetNode` —— 46/48 个有
-- `VRAM_Debug` —— 45/48 个有
-- `ImageConcanate` —— 44/48 个有
-- `LoadImage` —— 9/48 个有
-- `LoadAudio` —— 2/48 个有
-- `MiniMaxH3SigmaShift` —— 2/48 个有
-- `PrimitiveInt` —— 2/48 个有
-- `H3SigmaRefiner` —— 1/48 个有
-- `ImageFromBatch` —— 1/48 个有
-- `ImageResizeKJv2` —— 1/48 个有
-- `ImageStitch` —— 1/48 个有
-- `Label (rgthree)` —— 1/48 个有
-- `LoadVideo` —— 1/48 个有
-- `TrimAudioDuration` —— 1/48 个有
-- `VHS_VideoInfo` —— 1/48 个有
+- `MiniMaxH3DualClockSamplerT8` —— 41/42 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 41/42 个有
+- `LoraLoaderBypassModelOnly` —— 40/42 个有
+- `ModelAttentionBackend` —— 35/42 个有
+- `SolAttnMiniMax` —— 26/42 个有
+- `MiniMaxH3LearnedLatentUpscaleT8Advanced` —— 21/42 个有
+- `MiniMaxH3LearnedTwoPassParityPlanT8Advanced` —— 21/42 个有
+- `MiniMaxH3TwoPassDetailMixerT8Advanced` —— 21/42 个有
+- `MiniMaxH3TwoPassLatentReconcileT8Advanced` —— 21/42 个有
+- `LoraLoaderModelOnly` —— 13/42 个有
+- `LoadAudio` —— 9/42 个有
+- `孤海注释` —— 8/42 个有
+- `AudioConcat` —— 6/42 个有
+- `ImageBatch` —— 6/42 个有
+- `MiniMaxH3MotionContext` —— 6/42 个有
+- `MiniMaxH3MotionContextTrim` —— 6/42 个有
+- `EmptyImage` —— 2/42 个有
+- `PreviewImage` —— 2/42 个有
+- `PrimitiveStringMultiline` —— 2/42 个有
+- `ImpactConditionalBranch` —— 1/42 个有
+- `ImpactControlBridge` —— 1/42 个有
+- `LoadVideo` —— 1/42 个有
+- `MiniMaxH3FastH34StepSetupT8Advanced` —— 1/42 个有
+- `MiniMaxH3LoRACompatibilityLoaderT8Advanced` —— 1/42 个有
+- `PreviewAny` —— 1/42 个有
+- `PrimitiveInt` —— 1/42 个有
+- `RH_LLMAPI_Pro_Node` —— 1/42 个有
+- `StariAI-MiniMaxH3-Skill` —— 1/42 个有
 
 ## 典型参数
 

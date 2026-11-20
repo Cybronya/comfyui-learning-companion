@@ -1,66 +1,87 @@
 ---
 name: unknown_workflow_video_lora_sampler_14
 type: Unknown Workflow
-frequency: 51
+frequency: 46
 level: moderate
-coverage: 0.819137
-common_nodes: [INTConstant, JjkText, SimpleMath+, VHS_LoadVideo, VHS_VideoCombine, WanAnimatePlus Bernini, WanAnimatePlus BlockSwap, WanAnimatePlus Decode, WanAnimatePlus LoraSelectMulti, WanAnimatePlus ModelLoader, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus Samplerv2, WanAnimatePlus Schedulerv2, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, WanAnimatePlus TextEncodeCached, WanAnimatePlus VAELoader]
+coverage: 0.513913
+common_nodes: [CLIPVisionLoader, GetNode, ImageResizeKJv2, Int, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, VHS_VideoInfo, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader, easy cleanGpuUsed]
 problems: []
 missing: []
-members: [平台全量/Bernini去除豆包水印_2076540435383799810.json, 平台全量/Bernini消除字幕和视频物品！Bernini视频编辑！_2064701110346141698.json, 平台全量/Bernini消除字幕和视频物品！Bernini视频编辑！_2074413068406321154.json, 平台全量/Bernini消除视频字幕水印和物品！Bernini视频编辑！艾橘溪_2062388205718171649.json, 平台全量/Bernini消除视频物品和字幕水印等视频编辑工作流_2063278728146415617.json, 平台全量/Bernini视频一键去水印字幕_2082305674545033218.json, 平台全量/Bernini视频编辑_2067477507682689026.json, 平台全量/Bernini视频编辑_2067816224272248834.json, 平台全量/Bernini视频编辑_2070493894885855234.json, 平台全量/Bernini视频编辑！_2064471982942539777.json, 平台全量/Bernini视频角色替换_2062871513090584577.json, 平台全量/Bernini贝尔尼尼视频编辑_2069300593511981057.json, 平台全量/beinini视频人物编辑_2068513578289815553.json, 平台全量/bernini物体消除漫剧电商服装分镜真人_2071585461872709633.json, 平台全量/bernini视频换装工作流_2066441622111477761.json, 平台全量/bernini视频编辑改变衣服漫剧电商服装分镜真人_2071399498496176130.json, 平台全量/一键修改视频背景环境和天气！Bernini提示词P视频！艾橘溪_2063874885302181890.json, 平台全量/一键修改视频背景环境和天气！_2073569898441297921.json, 平台全量/低价Bernini提示词P视频！_2103060816076562434.json, 平台全量/修改视频环境和天气！（懒人版）_2065432084281389058.json, 平台全量/去除豆包移动水印_2076298718562840578.json, 平台全量/去除豆包视频水印_2076701636566806529.json, 平台全量/字节开源-Bernini消除字幕和视频物品！_2063898650471915521.json, 平台全量/字节开源Bernini+视频换人(角色替换)！Bernini+视频编辑！_2065256968603922434.json, 平台全量/最新3.0 视频换背景！（懒人版）_2065435142600085505.json, 平台全量/电商带货Bernini编辑视频人物消除_2068373864278745090.json, 平台全量/电商带货替换主播手中产品_2100041791696363521.json, 平台全量/肥波换人_2085920490648068097.json, 平台全量/视频_Bernini 一键去水印字幕_2082298918129459202.json, 平台全量/视频修改_2079080966630498305.json, 平台全量/视频去水印 Bernini消除视频字幕水印和物品 Bernini视频编辑_2079019431103127554.json, 平台全量/视频去水印 Bernini消除视频字幕水印和物品 一键Bernini视频编辑_2073943972858388482.json, 平台全量/视频去水印Video Watermark Removal_2093895239852453889.json, 平台全量/视频去水印Video Watermark Removal_2100555070130708482.json, 平台全量/视频去水印_2080821823939371009.json, 平台全量/视频去水印、视频去字幕、视频去logo无痕天花板-Bernini高清视频编辑模型AI视频水印去文字_2084095315568848898.json, 平台全量/视频去水印、视频去字幕、视频去logo无痕天花板-Bernini高清视频编辑模型AI视频水印去文字及_2082661585683832833.json, 平台全量/视频去水印视频去字幕(高清通用加速版)Bernini视频编辑模型常用视频比例豆包AI视频水印去文字及_2074691669148131330.json, 平台全量/视频去水印视频去字幕_2076679992024588290.json, 平台全量/视频换人(角色替换)！Bernini 视频编辑！_2063146021089271809.json, 平台全量/视频换人(角色替换)！懒人版_2065158747911180290.json, 平台全量/视频换人(角色替换)！懒人版_2065747096459894785.json, 平台全量/视频换装 Bernini+视频编辑！_2081217388305010690.json, 平台全量/视频添加_删除物品 Bernini消除视频字幕水印和物品 Bernini视频编辑！_2079808990934036481.json, 平台全量/视频编辑（消除文字水印工作流）_2067467276990894082.json, 平台全量/超级稳视频换背景！1_2118209881219096577.json, 数字人/数字人/Bernini视频换装！视频一键换装 人物一致_2080498072253190146.json, 视频生成/图生视频/电商_视频  替换背景  只消耗RH币_2073836975819419649.json, 视频生成/图生视频/电商带货bernini 局部衣服修改_2068734338539286529.json, 视频生成/图生视频/电商带货替换主播手中产品_2068745697402380290.json, 视频生成/图生视频/电商带货替换主播手中产品_2099785685107568641.json]
+members: [视频生成/图生视频/Wan2.2 Animate动作迁移(抖动+放大)_2017562279276974081.json, 视频生成/图生视频/Wan2.2 Animate动作迁移（操作方便）_2019075587062636545.json, 视频生成/图生视频/Wan2.2+Animate动作迁移 实现20秒以上视频生成 支持多人动作 脸部表情迁移高质量输出_2073705930453245954.json, 视频生成/图生视频/Wan2.2+Animate实现20秒以上视频生成，支持多人动作 脸部表情迁移高质量输出_2017135847610519553.json, 视频生成/图生视频/Wan2.2+Animate循环长视频_2003473617683922946.json, 视频生成/图生视频/Wan2.2+Animate支持20秒+支持多人动作迁移高质量_2006380310623162369.json, 视频生成/图生视频/Wan2.2+Animate支持20秒+支持多人动作迁移高质量_2053406061868138498.json, 视频生成/图生视频/Wan2.2+Animate支持5秒+支持多人动作迁移速度慢但是高质量_2007482787619672065.json, 视频生成/图生视频/Wan2.2结合Animate实现20秒以上视频生成，支持多人动作 脸部表情迁移高质量输出_2017109030061219842.json, 视频生成/图生视频/Wan高精细的用这个动作迁移，动作高仿，需要高显存跑_2057669238491537409.json, 视频生成/图生视频/changge zhufu_2094680904781352962.json, 视频生成/图生视频/greeting video_2089174015540817921.json, 视频生成/图生视频/li_2033034553987702785.json, 视频生成/图生视频/wan motion control_2057856312750465025.json, 视频生成/图生视频/【推荐，动作迁移不变色】WanAnimate动作迁移升级版_2020604766358872065.json, 视频生成/图生视频/一键生成超精细动作迁移 单双人舞蹈动作模仿 各种动作复刻参考图生视频_2087865873062256642.json, 视频生成/图生视频/万相Wan2.2动作复刻，视频复刻，动作模仿_迁移_2046484614713188353.json, 视频生成/图生视频/人物精细高质量动作迁移 复刻动作 高级强化版_2083510108717408257.json, 视频生成/图生视频/人物精细高质量动作迁移 复刻动作 高级强化版_2083521883307339778.json, 视频生成/图生视频/人物精细高质量动作迁移 高级强化版_2083363876598534146.json, 视频生成/图生视频/动作模仿高精细1_1复刻的动作迁移_2078312802099482626.json, 视频生成/图生视频/动作迁移(超能抖)+随意调节+动作复刻_2039672616482508802.json, 视频生成/图生视频/动作迁移(超能抖)+随意调节+动作复刻_2039992227572748290.json, 视频生成/图生视频/动作迁移(超能抖)+随意调节+动作复刻_2109524936074293249.json, 视频生成/图生视频/欧派视频生成_副本_2058093873213296642.json, 视频生成/图生视频/精细化高标准动作迁移复刻舞蹈复制_2075200788628070401.json, 视频生成/图生视频/舞蹈动作迁移_2040058944869113857.json, 视频生成/图生视频/视频动作迁移好用丝滑_2031729739819393025.json, 视频生成/图生视频/超强 动作迁移 高精细动作模仿 需要plus_2084240017639170050.json, 视频生成/图生视频/超精准动作模仿，只模仿动作，1_1复刻人物动作_2078317675809431553.json, 视频生成/图生视频/超精细动作迁移 舞蹈动作模仿 各种动作复刻参考图生视频_2056347634981494785.json, 视频生成/图生视频/超精细动作迁移 舞蹈动作模仿 各种动作复刻参考图生视频_2079900208376410113.json, 视频生成/图生视频/超高一致性动作迁移 +姿势迁移+动作模仿+人物姿势+ 高清输出_2079451577068384257.json, 视频生成/图生视频/跑高精细的动作迁移（高清版）_2060595760235892737.json, 视频生成/图生视频/跑高精细的动作迁移（高清版）_2062202323358806018.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059569545886654466.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059625693083951106.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059626029299359746.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059651380591284225.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059655800087465986.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059655902189412353.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2059659749129543682.json, 视频生成/图生视频/跑高精细的动作迁移，动作高仿（高清版）_2060328341084921857.json, 视频生成/图生视频/跑高精细的用这个动作迁移【可抖X】高显存跑_2043400679816962049.json, 视频生成/图生视频/跑高精细的用这个动作迁移，动作高仿，需要高显存跑_2052270190972420097.json, 视频生成/图生视频/跑高精细的用这个动作迁移，动作高仿，需要高显存跑_2056605663723352066.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_sampler_14
 
-> 由 `engine/knowledge_consolidation` 从 51 个 workflow 归纳得出（平台全量/Bernini去除豆包水印_2076540435383799810.json、平台全量/Bernini消除字幕和视频物品！Bernini视频编辑！_2064701110346141698.json、平台全量/Bernini消除字幕和视频物品！Bernini视频编辑！_2074413068406321154.json、平台全量/Bernini消除视频字幕水印和物品！Bernini视频编辑！艾橘溪_2062388205718171649.json、平台全量/Bernini消除视频物品和字幕水印等视频编辑工作流_2063278728146415617.json…）
+> 由 `engine/knowledge_consolidation` 从 46 个 workflow 归纳得出（视频生成/图生视频/Wan2.2 Animate动作迁移(抖动+放大)_2017562279276974081.json、视频生成/图生视频/Wan2.2 Animate动作迁移（操作方便）_2019075587062636545.json、视频生成/图生视频/Wan2.2+Animate动作迁移 实现20秒以上视频生成 支持多人动作 脸部表情迁移高质量输出_2073705930453245954.json、视频生成/图生视频/Wan2.2+Animate实现20秒以上视频生成，支持多人动作 脸部表情迁移高质量输出_2017135847610519553.json、视频生成/图生视频/Wan2.2+Animate循环长视频_2003473617683922946.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：51
+- **样本数**：46
 - **可信度**：中等可信
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：51%
 
 ## 共有节点
 
-全部 51 个 workflow 都包含：
-- `INTConstant`
-- `JjkText`
-- `SimpleMath+`
+全部 46 个 workflow 都包含：
+- `CLIPVisionLoader`
+- `GetNode`
+- `ImageResizeKJv2`
+- `Int`
+- `LoadImage`
+- `SetNode`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
-- `WanAnimatePlus Bernini`
-- `WanAnimatePlus BlockSwap`
-- `WanAnimatePlus Decode`
-- `WanAnimatePlus LoraSelectMulti`
-- `WanAnimatePlus ModelLoader`
-- `WanAnimatePlus SamplerExtraArgs`
-- `WanAnimatePlus Samplerv2`
-- `WanAnimatePlus Schedulerv2`
-- `WanAnimatePlus SetBlockSwap`
-- `WanAnimatePlus SetLoRAs`
-- `WanAnimatePlus TextEncodeCached`
-- `WanAnimatePlus VAELoader`
+- `VHS_VideoInfo`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
 
 **可变部分**（部分 workflow 才有）：
-- `WanAnimatePlus ContextOptions` —— 50/51 个有
-- `VHS_VideoInfoLoaded` —— 49/51 个有
-- `Seed` —— 47/51 个有
-- `ImageResizeKJv2` —— 40/51 个有
-- `TextCombinerSix` —— 40/51 个有
-- `GetNode` —— 35/51 个有
-- `SetNode` —— 35/51 个有
-- `ImageConcanate` —— 30/51 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 11/51 个有
-- `LoadImage` —— 11/51 个有
-- `easy showAnything` —— 11/51 个有
-- `AILab_QwenVL` —— 4/51 个有
-- `ShowText|pysssss` —— 3/51 个有
-- `VHS_VideoInfoSource` —— 2/51 个有
-- `ImageConcatenate_UTK` —— 1/51 个有
-- `Int` —— 1/51 个有
-- `RHHiddenNodes` —— 1/51 个有
-- `easy cleanGpuUsed` —— 1/51 个有
-- `孤海注释` —— 1/51 个有
+- `BatchCount+` —— 45/46 个有
+- `ImageBatch` —— 45/46 个有
+- `ImageFromBatch` —— 45/46 个有
+- `PoseAndFaceDetection` —— 45/46 个有
+- `PreviewImage` —— 45/46 个有
+- `RHHiddenNodes` —— 45/46 个有
+- `RepeatImageBatch` —— 45/46 个有
+- `easy mathInt` —— 45/46 个有
+- `DrawViTPose` —— 40/46 个有
+- `OnnxDetectionModelLoader` —— 40/46 个有
+- `WanVideoModelLoader` —— 39/46 个有
+- `WanVideoLoraSelectMulti` —— 38/46 个有
+- `VRAMReserver` —— 37/46 个有
+- `WanVideoContextOptions` —— 37/46 个有
+- `WanVideoLoraSelect` —— 37/46 个有
+- `easy showAnything` —— 37/46 个有
+- `easy float` —— 36/46 个有
+- `MemoryCleaner` —— 30/46 个有
+- `LazySwitch1way` —— 7/46 个有
+- `WanVideoTeaCache` —— 7/46 个有
+- `easy compare` —— 7/46 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/46 个有
+- `CR Text` —— 1/46 个有
+- `ComfyMathExpression` —— 1/46 个有
+- `CompressImages` —— 1/46 个有
+- `FlashVSRNode` —— 1/46 个有
+- `GemmaAPITextEncode` —— 1/46 个有
+- `GetImageSize+` —— 1/46 个有
+- `GetImageSizeAndCount` —— 1/46 个有
+- `ImageScale` —— 1/46 个有
+- `ImageUpscaleWithModel` —— 1/46 个有
+- `LoadVideo` —— 1/46 个有
+- `MathExpression|pysssss` —— 1/46 个有
+- `UpscaleModelLoader` —— 1/46 个有
+- `VHS_SelectFilename` —— 1/46 个有
+- `WanVideoEasyCache` —— 1/46 个有
+- `easy int` —— 1/46 个有
+- `孤海注释` —— 1/46 个有
 
 ## 典型参数
 

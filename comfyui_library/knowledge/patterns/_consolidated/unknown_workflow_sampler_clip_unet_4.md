@@ -1,77 +1,77 @@
 ---
 name: unknown_workflow_sampler_clip_unet_4
 type: Unknown Workflow
-frequency: 46
-level: moderate
-coverage: 0.769957
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyFlux2LatentImage, Flux2Scheduler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, VAEDecode, VAEEncode, VAELoader]
-problems: []
+frequency: 64
+level: strong
+coverage: 0.9145
+common_nodes: [CLIPTextEncode, ConditioningZeroOut, ImpactInt, KSampler, SaveImage, UNETLoader, VAEDecode, VAELoader]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/FLUX2-Klein一风格迁移 灵感复刻_2014662073736765441.json, 图片生成/图生图/FLUX2-Klein单图编辑_2039986533473718273.json, 图片生成/图生图/Flux-klein 风格迁移_2018920960144973825.json, 图片生成/图生图/Flux2-Klein-9B【双图编辑】_2013840348065308673.json, 图片生成/图生图/Flux2-Klein-9B双图效果图洗图_2018610383409389569.json, 图片生成/图生图/Klein——万能风格迁移_2019601401692823553.json, 图片生成/图生图/Klein——风格迁移+双_单图编辑_2018852424991121410.json, 图片生成/图生图/可指定画风风格化（超强一致性！）_2046767735614480385.json, 图片生成/图生图/可自定义画风风格化_2064967690242056193.json, 图片生成/图生图/可自定义画风风格化_2068565579887366145.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2042446491167498242.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2043203800374190081.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2076664239967784962.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2107037189610762241.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2107090731931361281.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2112486356432801793.json, 图片生成/图生图/图片风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入生成器_2112533124335890434.json, 图片生成/图生图/图生图----风格迁移转化  灵感造像师_2052926761675051009.json, 图片生成/图生图/图生图----风格迁移转化 • 灵感造像师_2049381376520097793.json, 图片生成/图生图/图生图----风格迁移转化 • 灵感造像师_2049391706843389954.json, 图片生成/图生图/图生图----风格迁移转化 • 灵感造像师_2052297466539720706.json, 图片生成/图生图/灵感融合术（指定风格化融图超好用）_2020691247077269506.json, 图片生成/图生图/绝了！引入视觉大模型，将参考图提取为高纯度的结构化 Prompt，打造极具艺术感染力的跨次元视觉大片_2019300070507683841.json, 图片生成/图生图/绝了！引入视觉大模型，将参考图提取为高纯度的结构化 Prompt，打造极具艺术感染力的跨次元视觉大片_2042483597461950466.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2061369234403454978.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2062082688223367169.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2062331669251715074.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2062344944022544385.json, 图片生成/图生图/自定义画风风格化（超强一致性！）_2062434507504046081.json, 图片生成/图生图/风格转换 灵感生成_2018208081129246722.json, 图片生成/图生图/风格迁移_灵感复刻_2030582400455020545.json, 图片生成/图生图/风格迁移转化 -完美复刻大师级的艺术灵魂与色彩空间_2015687392249782274.json, 图片生成/图生图/风格迁移转化 -完美复刻大师级的艺术灵魂与色彩空间_2043960294732468226.json, 图片生成/图生图/风格迁移转化 -完美复刻大师级的艺术灵魂与色彩空间_2046401457825521665.json, 图片生成/图生图/风格迁移转化 • 实现灵感与灵魂的碰撞_2026481944992681985.json, 图片生成/图生图/风格迁移转化 • 灵感造像师_2043643917916184577.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2014552598229032961.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2015050060953821186.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2016108350341124098.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2025764218640801793.json, 图片生成/图生图/风格迁移转化 • 灵感造像师：实现像素级保留与灵魂级风格注入_2030825387453849601.json, 图片生成/图生图/风格迁移转化_•_灵感造像师_实现像素级保留与灵魂级风格注入_2097886544148393986.json, 图片生成/图生图/风格迁移转化_•_灵感造像师_实现像素级保留与灵魂级风格注入_2099414767009099778.json, 图片生成/文生图/克莱因9B风格迁移 林耀2.24_2026184088469639169.json, 平台全量/万能的风格迁移转化—实现像素级保留_2016510796750135298.json, 平台全量/风格迁移  现实+灵感融合图_2016758056704544769.json]
+members: [图片生成/反推提示词/Z‑Image EngineerV4 全套画质增强_2086731595234504705.json, 图片生成/图生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2067156255042527234.json, 图片生成/图生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2064547489570705410.json, 图片生成/文生图/Krea2 + SeedVR 放大 写实增强 直出4K_2077727494152740865.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2094706313803681793.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2096861977632137217.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2099766179282907138.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2100179369921695745.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2100196545147793410.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2100876697150246914.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2109550664492863489.json, 图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2110259628457160705.json, 图片生成/文生图/Krea2 写实增强｜SeedVR精修版_2098721284262817793.json, 图片生成/文生图/Krea2_+_SeedVR_放大+_4K写实增强_2098920437689446402.json, 图片生成/文生图/Krea2_+_SeedVR_放大+_4K写实增强_2098978991087636482.json, 图片生成/文生图/Krea2_+_SeedVR_放大+_4K写实增强_2099654567163162625.json, 图片生成/文生图/Krea2_turbo文生图 Seedvr 放大 直出 4K_2071527505537884162.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2054947907597553665.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2057060412415369217.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2065648471201378306.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2065687597992730625.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2066786549341179905.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2066790536954073090.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2067159224349708289.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2067633456959541249.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2068726348704731137.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2070778346149072898.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2071109512853020673.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2071151687594762242.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2073417416134193153.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2073722152225951746.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2086815831304007681.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2028637596619902977.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2041690424309452802.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2044296993815662593.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2047480172508614657.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2049369729567035394.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2054738492026048513.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2054824506321055746.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2063916266800369665.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2063923158561943553.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+fdpo光影优化+Kook极致写实+Seedvr放大_2067528669467336705.json, 图片生成/文生图/Z-Image+EngineerV4提示词优化+极致写实+Seedvr放大_2060351325401083906.json, 图片生成/文生图/Z-Image+seedvr2.5.1 极致写实文生图 直生4K_2031894322475442178.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_1996411256145846273.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2039625855659417602.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2042523979340062722.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2046398245986897922.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2046486116416626690.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2048650706206330882.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2063788565154324481.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2078834871178452994.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2084812679537061889.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2085279417445740545.json, 图片生成/文生图/Z-Image+seedvr2.5.1放大电影级文生图+画质色彩增强版_1996033169059201026.json, 图片生成/文生图/Z-Image-turbo + seedvr放大 极致写实文生图 直出4K_2041436013444210690.json, 图片生成/文生图/krea2 turbo + SeedVR 放大+文生图=直出4K_2071467996278771714.json, 图片生成/文生图/krea2 turbo + SeedVR 放大+文生图=直出4K_2071509896452984834.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2069968514529718274.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2069978394510581762.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2070026560844951554.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2071588617667047426.json, 图片生成/文生图/krea2_turbo + SeedVR 放大 文生图 极致美学 直出4K_2076507182232858625.json, 图片生成/文生图/z-image_超级写实效果。_2047565472735956993.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_sampler_clip_unet_4
 
-> 由 `engine/knowledge_consolidation` 从 46 个 workflow 归纳得出（图片生成/图生图/FLUX2-Klein一风格迁移 灵感复刻_2014662073736765441.json、图片生成/图生图/FLUX2-Klein单图编辑_2039986533473718273.json、图片生成/图生图/Flux-klein 风格迁移_2018920960144973825.json、图片生成/图生图/Flux2-Klein-9B【双图编辑】_2013840348065308673.json、图片生成/图生图/Flux2-Klein-9B双图效果图洗图_2018610383409389569.json…）
+> 由 `engine/knowledge_consolidation` 从 64 个 workflow 归纳得出（图片生成/反推提示词/Z‑Image EngineerV4 全套画质增强_2086731595234504705.json、图片生成/图生图/Z-Image+EngineerV4提示词优化+Kook极致写实+Seedvr放大_2067156255042527234.json、图片生成/图生图/Z-Image+seedvr2.5.1放大 极致写实文生图 直生4K_2064547489570705410.json、图片生成/文生图/Krea2 + SeedVR 放大 写实增强 直出4K_2077727494152740865.json、图片生成/文生图/Krea2 + SeedVR 放大+ 4K写实增强_2094706313803681793.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：46
-- **可信度**：中等可信
-- **平均知识覆盖**：77%
+- **样本数**：64
+- **可信度**：强结论
+- **平均知识覆盖**：91%
 
 ## 共有节点
 
-全部 46 个 workflow 都包含：
-- `CFGGuider`
-- `CLIPLoader`
+全部 64 个 workflow 都包含：
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `EmptyFlux2LatentImage`
-- `Flux2Scheduler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
-- `LoadImage`
-- `RandomNoise`
-- `ReferenceLatent`
-- `SamplerCustomAdvanced`
+- `ImpactInt`
+- `KSampler`
 - `SaveImage`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEEncode`
 - `VAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `PreviewImage` —— 45/46 个有
-- `CR Text Concatenate` —— 43/46 个有
-- `ImageColorMatch+` —— 43/46 个有
-- `LayerUtility: ImageReel` —— 43/46 个有
-- `LayerUtility: ImageReelComposit` —— 43/46 个有
-- `PreviewAny` —— 43/46 个有
-- `Image Comparer (rgthree)` —— 42/46 个有
-- `JjkText` —— 42/46 个有
-- `Qwen3VL_Chat` —— 42/46 个有
-- `PlaySound|pysssss` —— 41/46 个有
-- `easy imageConcat` —— 40/46 个有
-- `Fast Groups Bypasser (rgthree)` —— 3/46 个有
-- `easy int` —— 3/46 个有
-- `Anything Everywhere3` —— 2/46 个有
-- `CR Text` —— 2/46 个有
-- `ImageScaleToTotalPixels` —— 2/46 个有
-- `AILab_QwenVL` —— 1/46 个有
-- `Int` —— 1/46 个有
-- `LayerMask: RemBgUltra` —— 1/46 个有
-- `Text` —— 1/46 个有
-- `easy seed` —— 1/46 个有
+- `CR Text Concatenate` —— 63/64 个有
+- `ModelSamplingAuraFlow` —— 63/64 个有
+- `PreviewImage` —— 63/64 个有
+- `SeedVR2LoadDiTModel` —— 63/64 个有
+- `SeedVR2LoadVAEModel` —— 63/64 个有
+- `SeedVR2VideoUpscaler` —— 63/64 个有
+- `Text` —— 63/64 个有
+- `LayerUtility: PurgeVRAM V2` —— 62/64 个有
+- `Lora Loader Stack (rgthree)` —— 55/64 个有
+- `CR SDXL Aspect Ratio` —— 42/64 个有
+- `CLIPLoader` —— 35/64 个有
+- `CLIPLoaderGGUF` —— 29/64 个有
+- `EmptySD3LatentImage` —— 22/64 个有
+- `孤海注释` —— 12/64 个有
+- `EmptyImage` —— 3/64 个有
+- `LoadImage` —— 3/64 个有
+- `LoraLoaderModelOnly` —— 1/64 个有
 
 ## 典型参数
 
-无可统计的参数。
+| 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
+|---|---|---|---|---|
+| 采样步数 | 9 | 8 - 10 | 64 | 94% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 64 | 100% |
+| 采样算法 | res_multistep | - | 64 | 64% |
+| 调度器 | sgm_uniform | - | 64 | 62% |
+| 重绘幅度 | 1 | 1 - 1 | 64 | 100% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 63/64 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 样本量不足且无参数可统计，暂无法归纳出可靠结论
+- 采样步数 中位数 9，观测区间 8 - 10，64 个样本，取值集中（一致性 94%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，64 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_multistep，64 个样本，一致性 64%
+- 调度器 最常用 sgm_uniform，64 个样本，一致性 62%
+- 重绘幅度 中位数 1，观测区间 1 - 1，64 个样本，取值集中（一致性 100%）
+- 高发问题（63/64 个样本）：Steps较低可能导致细节不足

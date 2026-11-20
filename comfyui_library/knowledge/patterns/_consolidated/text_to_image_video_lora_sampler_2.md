@@ -1,99 +1,106 @@
 ---
 name: text_to_image_video_lora_sampler_2
 type: Text To Image
-frequency: 51
+frequency: 61
 level: strong
-coverage: 0.860784
-common_nodes: [AILab_QwenVL, BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, ImageResizeKJv2, JjkText, JoinStrings, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, PrimitiveInt, PrimitiveStringMultiline, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.934836
+common_nodes: [BlockifyMask, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, ClothesSegment, DrawMaskOnImage, DrawViTPose, EmptyLatentImage, Evaluate Integers, GetImageSizeAndCount, GrowMask, ImageBlend, ImageConcatMulti, ImageFromBatch, JjkText, KSampler, LayerUtility: ImageMaskScaleAsV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, OnnxDetectionModelLoader, PoseAndFaceDetection, SeCModelLoader, SeCVideoSegmentation, UNETLoader, VAEDecode, VAELoader, VHS_LoadVideo, VHS_VideoCombine, WanVideoAnimateEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoTorchCompileSettings, WanVideoVAELoader, easy int, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/图生视频/MiniMax H3动作迁移方案｜视频动作迁移一键生成｜图生视频跟拍神器_2102273180428759042.json, 视频生成/图生视频/MiniMax H3动作迁移解决方案一键生成图生视频处理工具_2102511481890889729.json, 视频生成/图生视频/MiniMaxH3动作模仿迁移｜高质量视频生成_2095592289065332737.json, 视频生成/图生视频/MiniMaxH3动作迁移 人物角色替换_2105103613914865665.json, 视频生成/图生视频/MiniMaxH3动作迁移神器｜一键套用动作出片超简单_2111088198364516353.json, 视频生成/图生视频/MiniMaxH3同款白模动作迁移｜depth深度图参考复刻_2098746044422115330.json, 视频生成/图生视频/MiniMaxH3抠图结合动作替换 视频人物动作迁移_2098278006069485569.json, 视频生成/图生视频/MiniMaxH3文生图生视频 一键复刻舞蹈动作超简单_2095812664512573441.json, 视频生成/图生视频/MiniMaxH3文生图生视频 一键复刻舞蹈动作超简单_2100009440132030465.json, 视频生成/图生视频/MiniMaxH3文生图生视频 一键复刻舞蹈动作超简单_2104531516956176386.json, 视频生成/图生视频/MiniMaxH3文生图生视频 一键复刻舞蹈动作超简单_2114537906739179522.json, 视频生成/图生视频/MiniMaxH3文生图生视频_一键复刻舞蹈动作超简单_2101090308246302722.json, 视频生成/图生视频/MiniMaxH3视频换装H3视频编辑人物视频换装带货视频穿衣展示_2109413140835430401.json, 视频生成/图生视频/MiniMaxH3视频换装H3视频编辑人物视频换装带货视频穿衣展示_2109795508863721474.json, 视频生成/图生视频/MiniMaxH3视频换装编辑，人物带货穿衣展示视频生视频_2110544266983464962.json, 视频生成/图生视频/MiniMaxH3视频换装编辑，人物带货穿衣展示视频生视频_2110885208022151169.json, 视频生成/图生视频/h3动作迁移一键复刻｜MiniMaxH3文生图生视频舞蹈复制动作复刻_2092880064873590785.json, 视频生成/图生视频/一键复刻舞蹈动作｜MiniMaxH3开源图生视频动作迁移_2093085743286677506.json, 视频生成/图生视频/动作复刻一键复刻｜MiniMaxH3文生图生视频舞蹈迁移_2093106895971241985.json, 视频生成/图生视频/动作模仿动作迁移｜MiniMaxH3图生视频一键复刻_2095844151005896706.json, 视频生成/图生视频/动作模仿动作迁移｜MiniMaxH3视频生成直出_2092055473158713345.json, 视频生成/图生视频/动作迁移图生视频深度图参考 MiniMaxH3同款白模复刻_2098729137824428033.json, 视频生成/图生视频/动作迁移图生视频白模深度图 Depth maps参考MiniMaxH3同款_2098648451306315777.json, 视频生成/图生视频/动作迁移图生视频｜MiniMaxH3同款复刻白模动作迁移_2092992012160167937.json, 视频生成/图生视频/动作迁移图生视频｜MiniMaxH3同款复刻白模动作迁移depth maps深度图视频参考Depth_2098317631580364802.json, 视频生成/图生视频/动作迁移图生视频｜MiniMaxH3同款复刻白模动作迁移depth maps深度图视频参考Depth_2098366827305979905.json, 视频生成/图生视频/动作迁移图生视频｜MiniMaxH3雯雯的后宫同款复刻_2089045064176721921.json, 视频生成/图生视频/开源版h3白模视频生视频｜MiniMaxH3同款复刻白模动作视频迁移复刻深度图视频完美复刻动作迁移_2096048664287465473.json, 视频生成/图生视频/白模复刻动作迁移｜开源h3深度图视频生视频_2096627629435740161.json, 视频生成/图生视频/白模视频生视频复刻｜MiniMaxH3同款动作迁移深度图_2096338693530411009.json, 视频生成/图生视频/舞蹈动作模仿复制｜MiniMaxH3动作迁移复刻图生视频_2093099917047848962.json, 视频生成/图生视频/舞蹈复刻动作模仿｜MiniMaxH3一键动作迁移图生视频_2093244455661953026.json, 视频生成/文生视频/MiniMax H3动作迁移工作流，文生视频视频生视频图生视频全覆盖方案_2106827915295019009.json, 视频生成/文生视频/MiniMax H3动作迁移工作流｜人物动作无缝搬运神器_2108030146396639234.json, 视频生成/文生视频/MiniMaxH3动作迁移 动作复刻视频生成方案_2105362836003319809.json, 视频生成/文生视频/MiniMaxH3动作迁移 视频驱动参考图人物同步起舞_2104269835420135425.json, 视频生成/文生视频/MiniMaxH3动作迁移实战｜人物动作一键复刻视频生成_2105122030113873921.json, 视频生成/文生视频/MiniMaxH3动作迁移工作流 文生视频图生视频双模式处理_2098654365807628290.json, 视频生成/文生视频/MiniMaxH3动作迁移｜文生视频图生视频人物动作复刻_2088730649774608385.json, 视频生成/文生视频/MiniMaxH3动作迁移｜视频换动作一键生成工作流_2094752449214111745.json, 视频生成/文生视频/MiniMaxH3动作迁移｜视频生视频图生视频 人物动作一键复刻_2104048100565413889.json, 视频生成/文生视频/MiniMaxH3视频编辑一键换人｜视频生视频直接替换主角_2097171113183899650.json, 视频生成/文生视频/一键视频换人视频编辑｜MiniMaxH3文生图生视频生视频工作流_2088320406729084930.json, 视频生成/文生视频/一键视频换人｜MiniMaxH3 视频编辑 人物替换就是这么简单_2105488518867931137.json, 视频生成/文生视频/全能导演工作台｜文生视频视频生成三合一工具_2092374939268640769.json, 视频生成/文生视频/动作迁移一键复刻｜MiniMaxH3文生图生视频_2092061779160551426.json, 视频生成/文生视频/动作迁移一键复刻｜MiniMaxH3文生图生视频_2092399030159634433.json, 视频生成/文生视频/动作迁移一键复刻｜MiniMaxH3视频生成_2091767491612729346.json, 视频生成/文生视频/动作迁移视频生成｜MiniMaxH3文生图生视频直出_2091595967886872577.json, 视频生成/视频生视频/MiniMax H3视频编辑一键视频换人，文生视频视频生视频图生视频方案_2105718458825666561.json, 视频生成/视频生视频/MiniMaxH3动作迁移｜角色动作复刻视频生成利器_2106614000522973186.json]
+members: [图片生成/图生图/动作模仿加动作迁移｜wan2.2角色人物替换图生图_2101163103001071617.json, 数字人/数字人/数字人动作模仿人物替换｜视频换脸三合一图生视频_2110749144238350337.json, 视频生成/图生视频/ENG人物替换角色wan2.2替换动作模仿动作迁移_2087140768371798018.json, 视频生成/图生视频/WAN2.2人物替换角色替换动作迁移 图生视频人物类特效一站式_2092550993358704641.json, 视频生成/图生视频/Wan 2.2动作迁移动作模仿角色替换人物替换处理工具_2101379827570921473.json, 视频生成/图生视频/Wan2.2动作迁移与角色替换 人物动作模仿视频生成_2098305496951386113.json, 视频生成/图生视频/Wan2.2动作迁移动作模仿工作流，角色替换人物替换图生视频一步搞定_2114425136911835137.json, 视频生成/图生视频/Wan2.2动作迁移模仿工作流，角色人物替换自由换角图生视频高清输出_2114428470406242306.json, 视频生成/图生视频/Wan2.2动作迁移模仿工作流｜角色人物替换图生视频_2097511676454199298.json, 视频生成/图生视频/Wan2.2动作迁移模仿工作流｜角色人物替换图生视频_2097818284166049794.json, 视频生成/图生视频/wan2.2一键动作迁移与动作模仿 人物替换角色替换图生视频方案_2094353665523011585.json, 视频生成/图生视频/wan2.2人物替换与角色替换教程 动作模仿动作迁移一体化图生视频_2094349601905135618.json, 视频生成/图生视频/wan2.2人物替换角色替换动作迁移模仿 人物类特效图生视频方案_2090072709312106498.json, 视频生成/图生视频/wan2.2人物替换｜动作迁移模仿角色替换图生视频直出_2089493847763152897.json, 视频生成/图生视频/wan2.2人物角色替换｜动作模仿迁移运镜生成_2095960547039735810.json, 视频生成/图生视频/wan2.2人物角色替换｜动作迁移模仿视频运镜特效_2090878056847208450.json, 视频生成/图生视频/wan2.2动作模仿与动作迁移双引擎 人物角色一键替换出片神器_2110372492945739777.json, 视频生成/图生视频/wan2.2动作模仿人物替换风格迁移版｜角色动作全复刻，替换更自然_2107346767099551746.json, 视频生成/图生视频/wan2.2动作模仿动作迁移合一 角色替换人物替换视频生成工作流_2094351003167580161.json, 视频生成/图生视频/wan2.2动作模仿动作迁移｜角色替换人物替换 图生视频人物类特效_2104058029187624961.json, 视频生成/图生视频/wan2.2动作模仿替换｜人物类特效图生视频多合一_2096242324014723074.json, 视频生成/图生视频/wan2.2动作模仿角色替换｜人物替换动作迁移视频生成_2094912843920527362.json, 视频生成/图生视频/wan2.2动作模仿迁移 人物替换图案迁移视频处理工具_2114103479349370882.json, 视频生成/图生视频/wan2.2动作模仿迁移角色替换，人物替换图生视频工作流_2103204404974407681.json, 视频生成/图生视频/wan2.2动作模仿迁移｜角色人物替换一键搞定_2105133232651063298.json, 视频生成/图生视频/wan2.2动作模仿迁移｜角色人物替换视频生成_2095954196150444034.json, 视频生成/图生视频/wan2.2动作迁移人物替换工作流｜动作模仿角色替换_2108424009510637570.json, 视频生成/图生视频/wan2.2动作迁移人物替换指南 动作模仿角色替换视频生成工作流_2094360266480898049.json, 视频生成/图生视频/wan2.2动作迁移动作模仿 角色人物替换动态视频方案_2104670634361057282.json, 视频生成/图生视频/wan2.2动作迁移动作模仿 角色替换人物替换视频生成_2104669014986420226.json, 视频生成/图生视频/wan2.2动作迁移动作模仿｜角色人物替换一步到位_2111350273263362050.json, 视频生成/图生视频/wan2.2动作迁移动作模仿｜角色人物替换视频生成全能_2113589354248630274.json, 视频生成/图生视频/wan2.2动作迁移动作模仿｜角色替换人物替换生成_2094907009807241218.json, 视频生成/图生视频/wan2.2动作迁移模仿 角色人物替换图生视频处理工具_2113066780599083010.json, 视频生成/图生视频/wan2.2动作迁移模仿 角色人物替换图生视频处理工具_2113748708142706690.json, 视频生成/图生视频/wan2.2动作迁移模仿角色人物替换｜人物类特效图生视频工作流_2088363530448883714.json, 视频生成/图生视频/wan2.2动作迁移模仿，角色人物替换图生视频一体_2110883760819494913.json, 视频生成/图生视频/wan2.2动作迁移模仿｜角色人物替换图生视频特效_2094477161511084033.json, 视频生成/图生视频/wan2.2图生视频实战｜动作迁移模仿角色人物替换_2101164583993044994.json, 视频生成/图生视频/wan2.2角色替换人物替换全流程 动作迁移动作模仿视频生成工具_2094352325329641473.json, 视频生成/图生视频/动作模仿动作迁移人物替换角色替换wan2.2_2086208012355723266.json, 视频生成/图生视频/动作模仿动作迁移角色替换人物替换Wan2.2工作流，动作迁移图生视频方案_2107602459110756354.json, 视频生成/图生视频/动作模仿动作迁移角色替换人物替换Wan2.2工作流，风格迁移动作迁移图生视频_2107619585267687426.json, 视频生成/图生视频/动作模仿角色人物替换｜wan2.2动作迁移图生视频_2093474311372886017.json, 视频生成/图生视频/动作模仿角色替换人物替换｜wan2.2动作迁移图生视频_2095499768305901569.json, 视频生成/图生视频/动作模仿迁移角色替换人物替换 wan2.2图生视频_2100298903009710081.json, 视频生成/图生视频/动作模仿迁移角色替换人物替换 wan2.2图生视频工具_2099546481299640322.json, 视频生成/图生视频/动作模仿迁移角色替换人物替换 wan2.2图生视频工具_2100263941950763009.json, 视频生成/图生视频/动作模仿迁移角色替换人物替换 wan2.2工具_2099551194178998274.json, 视频生成/图生视频/动作模仿迁移角色替换人物替换 wan2.2工具_2099595748441677825.json, 视频生成/图生视频/动作迁移动作模仿角色替换人物替换 wan2.2视频生成方案_2108608845772845058.json, 视频生成/图生视频/动作迁移动作模仿角色替换人物替换wan2.2 动作复刻视频生成_2109356340471746561.json, 视频生成/图生视频/动作迁移动作模仿角色替换人物替换wan2.2 动作复刻视频生成_2109756242532061185.json, 视频生成/图生视频/动作迁移动作模仿角色替换人物替换wan2.2｜图生视频人物特效_2114288102717091842.json, 视频生成/图生视频/动作迁移动作模仿角色替换｜wan2.2人物替换图案迁移_2113999376136888322.json, 视频生成/图生视频/动作迁移模仿角色替换人物替换 wan2.2图生视频_2099576637871443970.json, 视频生成/图生视频/动作迁移模仿角色替换人物替换 wan2.2图生视频_2099951545298276353.json, 视频生成/图生视频/动作迁移模仿角色替换人物替换 wan2.2工具_2100315094390493186.json, 视频生成/图生视频/动作迁移模仿角色替换人物替换_wan2.2图生视频_2100188918057619457.json, 视频生成/图生视频/动作迁移模仿角色替换人物替换_wan2.2图生视频_2100923284266242049.json, 视频生成/图生视频/老孙wan2.2动作迁移复刻版｜动作模仿人物替换同款_2111351870403997698.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_2
 
-> 由 `engine/knowledge_consolidation` 从 51 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3动作迁移方案｜视频动作迁移一键生成｜图生视频跟拍神器_2102273180428759042.json、视频生成/图生视频/MiniMax H3动作迁移解决方案一键生成图生视频处理工具_2102511481890889729.json、视频生成/图生视频/MiniMaxH3动作模仿迁移｜高质量视频生成_2095592289065332737.json、视频生成/图生视频/MiniMaxH3动作迁移 人物角色替换_2105103613914865665.json、视频生成/图生视频/MiniMaxH3动作迁移神器｜一键套用动作出片超简单_2111088198364516353.json…）
+> 由 `engine/knowledge_consolidation` 从 61 个 workflow 归纳得出（图片生成/图生图/动作模仿加动作迁移｜wan2.2角色人物替换图生图_2101163103001071617.json、数字人/数字人/数字人动作模仿人物替换｜视频换脸三合一图生视频_2110749144238350337.json、视频生成/图生视频/ENG人物替换角色wan2.2替换动作模仿动作迁移_2087140768371798018.json、视频生成/图生视频/WAN2.2人物替换角色替换动作迁移 图生视频人物类特效一站式_2092550993358704641.json、视频生成/图生视频/Wan 2.2动作迁移动作模仿角色替换人物替换处理工具_2101379827570921473.json…）
 
 - **类型**：Text To Image
-- **样本数**：51
+- **样本数**：61
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 51 个 workflow 都包含：
-- `AILab_QwenVL`
-- `BasicGuider`
-- `BasicScheduler`
+全部 61 个 workflow 都包含：
+- `BlockifyMask`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `CLIPVisionLoader`
+- `ClothesSegment`
+- `DrawMaskOnImage`
+- `DrawViTPose`
 - `EmptyLatentImage`
-- `ImageResizeKJv2`
+- `Evaluate Integers`
+- `GetImageSizeAndCount`
+- `GrowMask`
+- `ImageBlend`
+- `ImageConcatMulti`
+- `ImageFromBatch`
 - `JjkText`
-- `JoinStrings`
 - `KSampler`
-- `KSamplerSelect`
+- `LayerUtility: ImageMaskScaleAsV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3MemoryEfficientSageAttentionPatch`
-- `MiniMaxH3ReferenceToVideo`
-- `PathchSageAttentionKJ`
-- `PrimitiveInt`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `SamplerCustomAdvanced`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoContextOptions`
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncodeCached`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `easy int`
 - `solarL_SaveImagesToZip`
 
 **可变部分**（部分 workflow 才有）：
-- `DF_Int_to_Float` —— 50/51 个有
-- `PrimitiveFloat` —— 50/51 个有
-- `VAEDecodeAudio` —— 49/51 个有
-- `孤海注释` —— 48/51 个有
-- `ImageConcanate` —— 43/51 个有
-- `easy imageRemBg` —— 39/51 个有
-- `SaveImage` —— 13/51 个有
-- `EmptyImage` —— 3/51 个有
-- `PreviewImage` —— 3/51 个有
-- `FlashVSRNode` —— 2/51 个有
-- `Int` —— 2/51 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 2/51 个有
-- `ImageCompositeMasked` —— 1/51 个有
-- `LoadBackgroundRemovalModel` —— 1/51 个有
-- `RemoveBackground` —— 1/51 个有
-- `easy cleanGpuUsed` —— 1/51 个有
+- `孤海注释` —— 59/61 个有
+- `VHS_VideoInfoLoaded` —— 49/61 个有
+- `easy showAnything` —— 32/61 个有
+- `SaveImage` —— 30/61 个有
+- `PreviewImage` —— 4/61 个有
+- `EmptyImage` —— 3/61 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 80 | 80 - 80 | 51 | 100% |
-| 高度 | 80 | 80 - 80 | 51 | 100% |
-| 采样步数 | 4 | 4 - 4 | 51 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 51 | 100% |
-| 采样算法 | er_sde | - | 51 | 100% |
-| 调度器 | beta | - | 51 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 51 | 100% |
+| 宽度 | 80 | 80 - 80 | 61 | 100% |
+| 高度 | 80 | 80 - 80 | 61 | 100% |
+| 采样步数 | 4 | 4 - 4 | 61 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 61 | 100% |
+| 采样算法 | er_sde | - | 61 | 100% |
+| 调度器 | beta | - | 61 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 61 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 72/51 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 62/61 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 宽度 中位数 80，观测区间 80 - 80，51 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，51 个样本，取值集中（一致性 100%）
-- 采样步数 中位数 4，观测区间 4 - 4，51 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，51 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，51 个样本，一致性 100%
-- 调度器 最常用 beta，51 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，51 个样本，取值集中（一致性 100%）
-- 高发问题（72/51 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，61 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，61 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，61 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，61 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，61 个样本，一致性 100%
+- 调度器 最常用 beta，61 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，61 个样本，取值集中（一致性 100%）
+- 高发问题（62/61 个样本）：Steps较低可能导致细节不足

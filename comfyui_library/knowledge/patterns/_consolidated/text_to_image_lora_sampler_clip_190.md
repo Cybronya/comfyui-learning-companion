@@ -3,67 +3,88 @@ name: text_to_image_lora_sampler_clip_190
 type: Text To Image
 frequency: 10
 level: strong
-coverage: 0.8765
-common_nodes: [BasicGuider, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, PrimitiveFloat, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.7876
+common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, ModelPreviewOverrideKJ, PrimitiveFloat, ResolutionSelector, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/多合一加速修复｜MiniMax H3热门IP模糊视频高清处理_2090232166843240449.json, 视频生成/文生视频/开源版文生视频｜MiniMax-H3提示词一键出片_2089012717008023553.json, 视频生成/文生视频/开源版文生视频｜MiniMax-H3纯文本生成视频开源工作流_2088773720985923585.json, 视频生成/文生视频/文生视频直出｜MiniMax H3高清一键生成_2089797615142658050.json, 视频生成/文生视频/文生视频｜MiniMax H3 SageAttention+LoRA 双重加速_2089249506813636609.json, 视频生成/文生视频/文生视频｜MiniMax H3 SageAttention+LoRA 双重加速刘神_2094117560072626177.json, 视频生成/文生视频/最新8步增速5分钟出10秒｜Minimax H3文生视频+视频放大_2089036367534845953.json, 视频生成/文生视频/超级加速文生视频｜Minimax_h3角色一致性表演生成_2093781650823012354.json, 视频生成/文生视频/超级加速文生视频｜Minimax_h3角色表演一致性_2093447912754860034.json, 视频生成/文生视频/首尾帧生视频｜MiniMax-H3文生视频图生视频全能_2089683499384135682.json]
+members: [视频生成/图生视频/MiniMax H3 360度环绕视频加Selflift专用高分辨率生成工作流，图生视频_2106477153318686722.json, 视频生成/图生视频/MiniMax H3 360度环绕视频｜Selflift专用高分辨率转场运镜出片_2106207397177024513.json, 视频生成/图生视频/MiniMax H3 SelfLift加速双采参考生视频｜武戏动态强_2108458056047742978.json, 视频生成/图生视频/MiniMax H3 SelfLift加速双采武戏动态强参考生视频方案_2108644932058697730.json, 视频生成/图生视频/MiniMax H3 SelfLift加速双采｜武戏动态强的参考生视频_2111123791060496385.json, 视频生成/图生视频/MiniMax H3加速双采SelfLift图生视频处理工作流_2101363088590196738.json, 视频生成/图生视频/MiniMaxH3极速多参视频制作 多模态输入高效生成_2108989902074499074.json, 视频生成/图生视频/MiniMax_H3极速多参视频制作工作流，文生视频视频生视频图生视频_2109450817471344642.json, 视频生成/文生视频/7分钟内生成H3视频工作流，免费每天使用文生视频图生视频方案_2103889611805257730.json, 视频生成/文生视频/MiniMax H3极速多参视频制作工作流，文生视频视频生视频图生视频_2107193111117131778.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_lora_sampler_clip_190
 
-> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/文生视频/多合一加速修复｜MiniMax H3热门IP模糊视频高清处理_2090232166843240449.json、视频生成/文生视频/开源版文生视频｜MiniMax-H3提示词一键出片_2089012717008023553.json、视频生成/文生视频/开源版文生视频｜MiniMax-H3纯文本生成视频开源工作流_2088773720985923585.json、视频生成/文生视频/文生视频直出｜MiniMax H3高清一键生成_2089797615142658050.json、视频生成/文生视频/文生视频｜MiniMax H3 SageAttention+LoRA 双重加速_2089249506813636609.json…）
+> 由 `engine/knowledge_consolidation` 从 10 个 workflow 归纳得出（视频生成/图生视频/MiniMax H3 360度环绕视频加Selflift专用高分辨率生成工作流，图生视频_2106477153318686722.json、视频生成/图生视频/MiniMax H3 360度环绕视频｜Selflift专用高分辨率转场运镜出片_2106207397177024513.json、视频生成/图生视频/MiniMax H3 SelfLift加速双采参考生视频｜武戏动态强_2108458056047742978.json、视频生成/图生视频/MiniMax H3 SelfLift加速双采武戏动态强参考生视频方案_2108644932058697730.json、视频生成/图生视频/MiniMax H3 SelfLift加速双采｜武戏动态强的参考生视频_2111123791060496385.json…）
 
 - **类型**：Text To Image
 - **样本数**：10
 - **可信度**：强结论
-- **平均知识覆盖**：88%
+- **平均知识覆盖**：79%
 
 ## 共有节点
 
 全部 10 个 workflow 都包含：
-- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
+- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
+- `KSamplerSelect`
+- `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ImageToVideo`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `ModelPreviewOverrideKJ`
 - `PrimitiveFloat`
-- `RandomNoise`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAEDecodeAudio`
 - `VAELoader`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `BasicScheduler` —— 9/10 个有
-- `KSamplerSelect` —— 9/10 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/10 个有
-- `CreateVideo` —— 7/10 个有
+- `孤海注释` —— 9/10 个有
+- `CreateVideo` —— 8/10 个有
+- `MiniMaxH3ReferenceToVideo` —— 8/10 个有
+- `PrimitiveStringMultiline` —— 8/10 个有
+- `SaveImage` —— 7/10 个有
 - `SaveVideo` —— 7/10 个有
-- `CR Text` —— 4/10 个有
+- `SelfLiftH3Sampler` —— 7/10 个有
+- `VHS_VideoCombine` —— 6/10 个有
+- `easy showAnything` —— 6/10 个有
+- `ExtendIntermediateSigmas` —— 5/10 个有
+- `Fast Groups Bypasser (rgthree)` —— 5/10 个有
+- `H3SigmaRefiner` —— 5/10 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 5/10 个有
+- `GetNode` —— 4/10 个有
+- `LoadAudio` —— 4/10 个有
+- `MiniMaxH3SemanticBridgeApplyT8` —— 4/10 个有
+- `MiniMaxH3SemanticBridgeConfigT8` —— 4/10 个有
+- `SetNode` —— 4/10 个有
+- `VHS_LoadVideo` —— 4/10 个有
+- `LTXVSeparateAVLatent` —— 3/10 个有
 - `LoraLoaderBypassModelOnly` —— 3/10 个有
-- `VHS_VideoCombine` —— 3/10 个有
-- `Fast Groups Bypasser (rgthree)` —— 2/10 个有
-- `LoadImage` —— 2/10 个有
-- `MiniMaxH3DualClockSamplerT8` —— 2/10 个有
-- `PainterVRAM` —— 2/10 个有
-- `Any Switch (rgthree)` —— 1/10 个有
-- `CR Prompt Text` —— 1/10 个有
-- `GetImageSize` —— 1/10 个有
-- `ImageScaleToTotalPixels` —— 1/10 个有
-- `ImpactConditionalBranch` —— 1/10 个有
-- `PathchSageAttentionKJ` —— 1/10 个有
-- `Seed (rgthree)` —— 1/10 个有
-- `easy boolean` —— 1/10 个有
+- `MiniMaxH3VAEDecodeFast` —— 3/10 个有
+- `RunningHub Deepcleaner` —— 3/10 个有
+- `SelfLiftAvatarH3Sampler` —— 3/10 个有
+- `SolAttnMiniMax` —— 3/10 个有
+- `VHS_VideoInfoLoaded` —— 3/10 个有
+- `CR Prompt Text` —— 2/10 个有
+- `MiniMaxH3ImageToVideo` —— 2/10 个有
+- `PlaySound|pysssss` —— 2/10 个有
+- `Float` —— 1/10 个有
+- `ImageResizeKJv2` —— 1/10 个有
+- `MemoryManager` —— 1/10 个有
+- `PreviewAudio` —— 1/10 个有
+- `PreviewImage` —— 1/10 个有
+- `RH_IndexTTS25_Loader` —— 1/10 个有
+- `RH_IndexTTS25_Synthesize` —— 1/10 个有
+- `ResizeShortestToNode` —— 1/10 个有
+- `easy clearCacheAll` —— 1/10 个有
 
 ## 典型参数
 

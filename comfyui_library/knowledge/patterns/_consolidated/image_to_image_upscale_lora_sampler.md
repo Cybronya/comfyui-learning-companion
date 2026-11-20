@@ -1,114 +1,124 @@
 ---
 name: image_to_image_upscale_lora_sampler
 type: Image To Image
-frequency: 40
-level: strong
-coverage: 0.911775
-common_nodes: [CFGGuider, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, Flux2Scheduler, GetImageSize, ImageScaleToTotalPixels, ImageUpscaleWithModel, KSampler, KSamplerSelect, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoraLoaderModelOnly, RandomNoise, ReferenceLatent, SamplerCustomAdvanced, SaveImage, UNETLoader, UpscaleModelLoader, VAEDecode, VAEDecodeTiled, VAEEncode, VAELoader, easy imageColorMatch]
+frequency: 35
+level: moderate
+coverage: 0.850686
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, DisableNoise, FlipSigmas, Float, FluxDeGuidance, FluxForwardODESampler, FluxReverseODESampler, Get resolution [Crystools], Image Comparer (rgthree), ImageResize+, ImageScaleBy, ImageUpscaleWithModel, InFluxModelSamplingPred, JWFloat, KSampler, Latent Noise Injection, LayerUtility: PurgeVRAM V2, LoadImage, LoraLoaderModelOnly, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, OutFluxModelSamplingPred, PreviewImage, SamplerCustomAdvanced, SaveImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, Upscale Model Loader, VAEDecode, VAEEncode, VAELoader, easy cleanGpuUsed, easy imageColorMatch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/2026人像高清放大_2111016233243078658.json, 图片生成/图生图/4k细节高清修复放大 Krea2  4K High-Definition Restoratio_2093175048554237954.json, 图片生成/图生图/4k细节高清修复放大+-Krea2最新工作流_2076831204363558913.json, 图片生成/图生图/4k细节高清修复放大+-Krea2最新工作流_2077204887024263169.json, 图片生成/图生图/4k细节高清修复放大+-Krea2最新工作流_2077214375592681474.json, 图片生成/图生图/4k细节高清修复放大_Krea2_4K_High-Definition_Restoratio_2116666165421498370.json, 图片生成/图生图/Flux2‑Klein 画质修复｜控油 + 超分放大 + 细节增强_2089341242424516609.json, 图片生成/图生图/GM全能放大_2081984953218330626.json, 图片生成/图生图/GM场景放大_2079047148741681153.json, 图片生成/图生图/GM角色放大2_2079076481115971586.json, 图片生成/图生图/Klein 9B 渲染级产品精修V5版 自动白底+自动对齐_2072518037533712385.json, 图片生成/图生图/Krea2 最新工作流｜一键 4K 极致细节修复_2089365154176782337.json, 图片生成/图生图/Krea2+klein 双采样高清放大 工作流_2107666827190030337.json, 图片生成/图生图/Krea2高清修复+4k细节 去除AI塑料感-_2090250245597908993.json, 图片生成/图生图/Krea2高清修复+4k细节 去除AI塑料感-最新工作流_2079391952835006466.json, 图片生成/图生图/Krea2高清修复+4k细节_去除AI塑料感-_2090617473048604674.json, 图片生成/图生图/Krea2高清修复+4k细节_去除AI塑料感-_2090632524371423233.json, 图片生成/图生图/Krea2高清修复+4k细节_去除AI塑料感-最新工作流_2081980031391322114.json, 图片生成/图生图/Krea2高清修复+4k细节_去除AI塑料感-最新工作流_2095796380165033985.json, 图片生成/图生图/Krea2高清修复+4k细节_去除AI塑料感-最新工作流_2096152026144133121.json, 图片生成/图生图/Krea2高清修复4k细节最新工作流_2079017345418354689.json, 图片生成/图生图/Krea2高清修复4k细节最新工作流_2079876925773926402.json, 图片生成/图生图/Krea2高清修复_4k细节最新工作流_2075388724048912386.json, 图片生成/图生图/Krea2高清修复_4k细节最新工作流_2075398450363064322.json, 图片生成/图生图/flux-2-klein 9b高清修复_4k细节-Krea2最新工作流_2081987882591547393.json, 图片生成/图生图/krea2高清修复工作流_2089631544880230401.json, 图片生成/图生图/人像精修皮肤质感后再SeedVR2二段超分，高清放大纹理自然真实不假面_2115605126567256066.json, 图片生成/图生图/人像精修皮肤质感后再SeedVR2二段超分，高清放大纹理自然真实不假面_2115941665654530049.json, 图片生成/图生图/高清修复 4k细节-Krea2最新工作流_2074820750917328897.json, 图片生成/图生图/高清修复 4k细节-Krea2最新工作流_2077028032933613569.json, 图片生成/图生图/高清修复 4k细节-Krea2最新工作流_2077343497681727490.json, 图片生成/图生图/高清修复 4k细节-Krea2最新工作流_2077826236499456001.json, 图片生成/图生图/高清修复 4k细节-Krea2最新工作流_2078025500471160834.json, 图片生成/图生图/高清修复 4k细节-Krea2最新工作流_2078073501503811585.json, 图片生成/图生图/高清修复+4k细节-Krea2 自然真实 修复细节 最新工作流 极致美学_2076542796521099266.json, 图片生成/图生图/高清修复4k细节_2076124143707312129.json, 图片生成/图生图/高清修复_4k细节-Krea2最新工作流_2092621636909486081.json, 图片生成/图生图/高清细节修复 去除AI感_2087433012127555586.json, 平台全量/Krea2最新 4K 细节高清修复拉满_2086072873881526274.json, 平台全量/洗图修复2.0_2077086906856337409.json]
+members: [图片生成/图生图/SeedVR2去ai感商业级真实感放大2.0KleinZ-image_2085537946291228673.json, 图片生成/图生图/SeedVR2去ai感商业级真实感放大2.0KleinZ-image_2085549602685669378.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2054771273582039041.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056329181260242945.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056345221847404545.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056345572193427458.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056380965597044737.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2065636354414956546.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2065642554388992002.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2069739143986503682.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2069748397896196097.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2070426951579422722.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2070427218920173569.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2075189192073764866.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2076147006128607233.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2076210246317596674.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2098721853920604162.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2099337725139832834.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2099669224871514113.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0图生图_2074025290006880258.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0图生图_2074857235167141890.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0图生图_2075035762504060929.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级真实感放大2.0_2019785205631946754.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级真实感放大2.0_2096862565203795969.json, 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级真实感放大2.0_2097156992153505793.json, 图片生成/图生图/z-image+klein+seedvr2放大原始版本_2073353536687132674.json, 图片生成/图生图/商业级高清放大 Z-image+Klein+SeedVR2去ai感商业级图片真实感放大_2076193850191859713.json, 图片生成/图生图/最强商业级真实感图片放大工作流_2046104834587234305.json, 图片生成/图生图/最真实的高清放大工作流_2059536367583059970.json, 图片生成/图生图/最真实的高清放大工作流_2096170630549954561.json, 图片生成/图生图/最真实的高清放大工作流_2096408189825798145.json, 图片生成/图生图/最真实的高清放大工作流_2096591789057728513.json, 图片生成/图生图/超好用🔥去ai感商业级真实感高清放大-最新_2054855654153695233.json, 图片生成/图生图/通用放大2.0_2052628160168116226.json]
 source: knowledge_consolidation
 ---
 
 # image_to_image_upscale_lora_sampler
 
-> 由 `engine/knowledge_consolidation` 从 40 个 workflow 归纳得出（图片生成/图生图/2026人像高清放大_2111016233243078658.json、图片生成/图生图/4k细节高清修复放大 Krea2  4K High-Definition Restoratio_2093175048554237954.json、图片生成/图生图/4k细节高清修复放大+-Krea2最新工作流_2076831204363558913.json、图片生成/图生图/4k细节高清修复放大+-Krea2最新工作流_2077204887024263169.json、图片生成/图生图/4k细节高清修复放大+-Krea2最新工作流_2077214375592681474.json…）
+> 由 `engine/knowledge_consolidation` 从 35 个 workflow 归纳得出（图片生成/图生图/SeedVR2去ai感商业级真实感放大2.0KleinZ-image_2085537946291228673.json、图片生成/图生图/SeedVR2去ai感商业级真实感放大2.0KleinZ-image_2085549602685669378.json、图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2054771273582039041.json、图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410.json、图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2056329181260242945.json…）
 
 - **类型**：Image To Image
-- **样本数**：40
-- **可信度**：强结论
-- **平均知识覆盖**：91%
+- **样本数**：35
+- **可信度**：中等可信
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 40 个 workflow 都包含：
-- `CFGGuider`
+全部 35 个 workflow 都包含：
+- `BasicGuider`
+- `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `Flux2Scheduler`
-- `GetImageSize`
-- `ImageScaleToTotalPixels`
+- `DisableNoise`
+- `FlipSigmas`
+- `Float`
+- `FluxDeGuidance`
+- `FluxForwardODESampler`
+- `FluxReverseODESampler`
+- `Get resolution [Crystools]`
+- `Image Comparer (rgthree)`
+- `ImageResize+`
+- `ImageScaleBy`
 - `ImageUpscaleWithModel`
+- `InFluxModelSamplingPred`
+- `JWFloat`
 - `KSampler`
-- `KSamplerSelect`
-- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Latent Noise Injection`
+- `LayerUtility: PurgeVRAM V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `RandomNoise`
-- `ReferenceLatent`
+- `NunchakuFluxDiTLoader`
+- `NunchakuTextEncoderLoader`
+- `OutFluxModelSamplingPred`
+- `PreviewImage`
 - `SamplerCustomAdvanced`
 - `SaveImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
-- `UpscaleModelLoader`
+- `Upscale Model Loader`
 - `VAEDecode`
-- `VAEDecodeTiled`
 - `VAEEncode`
 - `VAELoader`
+- `easy cleanGpuUsed`
 - `easy imageColorMatch`
 
 **可变部分**（部分 workflow 才有）：
-- `EditTextEncode_EditUtils` —— 39/40 个有
-- `Flux2KleinConfigPreparer_EditUtils` —— 39/40 个有
-- `Flux2KleinModelConfig_EditUtils` —— 39/40 个有
-- `FluxKVCache` —— 39/40 个有
-- `PrimitiveFloat` —— 39/40 个有
-- `VAEEncodeTiled` —— 39/40 个有
-- `easy cleanGpuUsed` —— 39/40 个有
-- `Image Comparer (rgthree)` —— 38/40 个有
-- `Flux2KleinOutputExtractor_EditUtils` —— 37/40 个有
-- `Anything Everywhere3` —— 30/40 个有
-- `LatentColorMatchSimple` —— 28/40 个有
-- `PreviewImage` —— 8/40 个有
-- `ImageListToImageBatch` —— 5/40 个有
-- `TTP_Image_Assy` —— 5/40 个有
-- `TTP_Image_Tile_Batch` —— 5/40 个有
-- `TTP_Tile_image_size` —— 5/40 个有
-- `easy imageBatchToImageList` —— 4/40 个有
-- `PrimitiveStringMultiline` —— 3/40 个有
-- `SeedVR2LoadDiTModel` —— 3/40 个有
-- `SeedVR2LoadVAEModel` —— 3/40 个有
-- `SeedVR2VideoUpscaler` —— 3/40 个有
-- `DualCLIPLoader` —— 2/40 个有
-- `EmptyFlux2LatentImage` —— 1/40 个有
-- `Float` —— 1/40 个有
-- `FluxGuidance` —— 1/40 个有
-- `ImageResize+` —— 1/40 个有
-- `ImageScaleBy` —— 1/40 个有
-- `ImpactImageBatchToImageList` —— 1/40 个有
-- `ImpactInt` —— 1/40 个有
-- `ImpactMinMax` —— 1/40 个有
-- `Joy_caption_two` —— 1/40 个有
-- `Joy_caption_two_load` —— 1/40 个有
-- `PreviewAny` —— 1/40 个有
-- `ResizeImagesByLongerEdge` —— 1/40 个有
-- `SDVN Load Image Url` —— 1/40 个有
-- `SimpleMath+` —— 1/40 个有
-- `easy imageSize` —— 1/40 个有
-- `easy int` —— 1/40 个有
+- `AdvancedLyingSigmaSampler` —— 34/35 个有
+- `CR Text` —— 34/35 个有
+- `KSamplerSelect` —— 34/35 个有
+- `SimpleMath+` —— 34/35 个有
+- `UltimateSDUpscaleCustomSample` —— 34/35 个有
+- `UpscaleModelLoader` —— 34/35 个有
+- `easy int` —— 34/35 个有
+- `ModelSamplingAuraFlow` —— 30/35 个有
+- `AILab_QwenVL` —— 29/35 个有
+- `ReferenceLatent` —— 29/35 个有
+- `ShowText|pysssss` —— 29/35 个有
+- `UNETLoader_Any` —— 29/35 个有
+- `LayerColor: RGB` —— 10/35 个有
+- `RHHiddenNodes` —— 7/35 个有
+- `llama_cpp_instruct_adv` —— 6/35 个有
+- `llama_cpp_model_loader` —— 6/35 个有
+- `DisTorchPurgeVRAMV2` —— 5/35 个有
+- `GroupExecutor` —— 5/35 个有
+- `Int` —— 5/35 个有
+- `LayerColor: Color of Shadow & Highlight` —— 5/35 个有
+- `MemoryCleaner` —— 5/35 个有
+- `PrimitiveFloat` —— 5/35 个有
+- `easy showAnything` —— 5/35 个有
+- `GrowMask` —— 1/35 个有
+- `InvertMask` —— 1/35 个有
+- `JoinImageWithAlpha` —— 1/35 个有
+- `LG_Color_Match_V2` —— 1/35 个有
+- `LayerMask: BiRefNetUltraV2` —— 1/35 个有
+- `LayerMask: LoadBiRefNetModelV2` —— 1/35 个有
+- `llama_cpp_parameters` —— 1/35 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 3 - 6 | 40 | 91% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 40 | 100% |
-| 采样算法 | euler_ancestral | - | 40 | 98% |
-| 调度器 | kl_optimal | - | 40 | 100% |
-| 重绘幅度 | 0.4 | 0.4 - 0.6 | 40 | 87% |
+| 采样步数 | 4 | 3 - 4 | 35 | 87% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 35 | 100% |
+| 采样算法 | euler | - | 35 | 69% |
+| 调度器 | simple | - | 35 | 69% |
+| 重绘幅度 | 1 | 0.4 - 1 | 35 | 66% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 41/40 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 99/35 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 3 - 6，40 个样本，取值集中（一致性 91%）
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，40 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler_ancestral，40 个样本，一致性 98%
-- 调度器 最常用 kl_optimal，40 个样本，一致性 100%
-- 重绘幅度 中位数 0.4，观测区间 0.4 - 0.6，40 个样本，取值集中（一致性 87%）
-- 高发问题（41/40 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 3 - 4，35 个样本，取值集中（一致性 87%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，35 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，35 个样本，一致性 69%
+- 调度器 最常用 simple，35 个样本，一致性 69%
+- 重绘幅度 中位数 1，观测区间 0.4 - 1，35 个样本
+- 高发问题（99/35 个样本）：Steps较低可能导致细节不足

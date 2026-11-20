@@ -1,78 +1,114 @@
 ---
 name: unknown_workflow_lora_sampler_clip_6
 type: Unknown Workflow
-frequency: 44
+frequency: 34
 level: strong
-coverage: 0.602227
-common_nodes: [CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, INTConstant, Int, KSamplerAdvanced, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, VAELoader]
-problems: []
+coverage: 0.933647
+common_nodes: [CFGGuider, CLIPTextEncode, CheckpointLoaderSimple, CreateVideo, EmptyLTXVLatentVideo, KSamplerSelect, LTXAVTextEncoderLoader, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVConditioning, LTXVEmptyLatentAudio, LTXVScheduler, LTXVSeparateAVLatent, LoraLoaderModelOnly, RandomNoise, SamplerCustomAdvanced, SaveVideo]
+problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/生成短剧主角漫剧人物设计生成文生图多类型_2071420655257612289.json, 图片生成/图生图/短剧人物主角设计（多类型） (1)_2062357966392750081.json, 图片生成/图生图/短剧人物主角设计（多类型） (2)_2066334506541477889.json, 图片生成/图生图/短剧人物主角设计（多类型）_2082998596236042242.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2069938360893919233.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2070043504960692225.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2070049405985705986.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2071472509312126977.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2071753469089898497.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2072142783133077506.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2072151163943874561.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2072885548615815169.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2072971635572961282.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2074016651602907137.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2075377836457811969.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2077560894900498433.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2078334750082822145.json, 图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2084440543282683906.json, 图片生成/文生图/【Supermate】Zimage双采图像生成Zimage Dual-Capture_2036602147382497281.json, 图片生成/文生图/云信短剧角色设计-华丽_2086010830499438593.json, 图片生成/文生图/云信短剧角色设计-海外剧_2087981200827838466.json, 图片生成/文生图/云信短剧角色设计-素雅_2086011291952566273.json, 图片生成/文生图/奇思妙绘_2077586400236621826.json, 图片生成/文生图/生成短剧主角漫剧人物设计生成文生图多类型_2069448276759367682.json, 图片生成/文生图/短剧人物主角设计_2044686905534582786.json, 图片生成/文生图/短剧人物主角设计（多类型）_2061151168889442306.json, 图片生成/文生图/短剧人物主角设计（多类型）_2061688689390084098.json, 图片生成/文生图/短剧人物主角设计（多类型）_2062448009497112578.json, 图片生成/文生图/短剧人物主角设计（多类型）_2062519473797685250.json, 图片生成/文生图/短剧人物主角设计（多类型）_2062553022697394177.json, 图片生成/文生图/短剧人物主角设计（多类型）_2062564865948086273.json, 图片生成/文生图/短剧人物主角设计（多类型）_2062708053849501697.json, 图片生成/文生图/短剧人物主角设计（多类型）_2064517984848277505.json, 图片生成/文生图/短剧人物主角设计（多类型）_2064520709744971778.json, 图片生成/文生图/短剧人物主角设计（多类型）_2064522731156234242.json, 图片生成/文生图/短剧人物主角设计（多类型）_2064952417019588610.json, 图片生成/文生图/短剧人物主角设计（多类型）_2066359977970851841.json, 图片生成/文生图/短剧人物主角设计（多类型）_2067574971538432001.json, 图片生成/文生图/短剧人物主角设计（多类型）_2068047803007463425.json, 图片生成/文生图/短剧人物主角设计（多类型）_2071580204794994690.json, 图片生成/文生图/短剧人物主角设计（多类型）_2071584658076299265.json, 图片生成/文生图/短剧人物主角设计（附带提示词）_2106392829131055106.json, 图片生成/文生图/短剧人物角色设计_2077566563032588290.json, 平台全量/英文动物涂鸦标_2085524519325888513.json]
+members: [视频生成/图生视频/LTX2.3 图生视频极速版_2039676993360367617.json, 视频生成/图生视频/LTX2.3 视频生成  图生视频  最强开源_2076010082961281026.json, 视频生成/图生视频/LTX2.3 视频生成  图生视频 最强开源_2076893159560400897.json, 视频生成/图生视频/LTX2.3 视频生成  图生视频 最强开源_2078358572626436098.json, 视频生成/图生视频/LTX2.3 视频生成 图生视频 最强开源_2076924327534092290.json, 视频生成/图生视频/LTX2.3 视频生成 图生视频 最强开源_2076943198865412098.json, 视频生成/图生视频/LTX2.3 视频生成 图生视频 最强开源_2078072773007724545.json, 视频生成/图生视频/LTX2.3 视频生成 图生视频 最强开源_2078080157293826049.json, 视频生成/图生视频/LTX2.3 超强图生视频 最强开源_2046116877214158850.json, 视频生成/图生视频/LTX2.3 超强图生视频 最强开源_2046154956708777986.json, 视频生成/图生视频/LTX2.3 超强图生视频 最强开源_2046402792507576321.json, 视频生成/图生视频/LTX2.3 超强图生视频 最强开源_2046547736006234113.json, 视频生成/图生视频/LTX2.3 超强图生视频 最强开源_2046799074531217409.json, 视频生成/图生视频/LTX2.3 超强图生视频 最强开源_2047721004167860225.json, 视频生成/图生视频/LTX2.3 超强图生视频 最强开源_2048019971762032641.json, 视频生成/图生视频/LTX2.3& qwen3.6提示词图生视频_2089610911387574273.json, 视频生成/图生视频/LTX2.3+++图生视频+最强开源 (1)_2064178415359586305.json, 视频生成/图生视频/LTX2.3+++图生视频+最强开源 (2)_2065262381550358529.json, 视频生成/图生视频/LTX2.3++图生视频++视频生成+++最强开源_2087381685796167681.json, 视频生成/图生视频/LTX2.3+图生视频+最强开源_2066688936931581953.json, 视频生成/图生视频/LTX2.3+图生视频+最强开源_2067242779092279297.json, 视频生成/图生视频/LTX2.3--图生音视频_2029780080481800193.json, 视频生成/图生视频/LTX2.3-图生视频_2066084809260224514.json, 视频生成/图生视频/LTX2.3-图生视频升级版（自动提示词）_2030630367857741826.json, 视频生成/图生视频/LTX2.3图生视频 (1)_2056932845310009346.json, 视频生成/图生视频/LTX2.3图生视频-有人声极速版_2070027759010795521.json, 视频生成/图生视频/LTX2.3图生视频-生成音画同步的视频_2030232084618420226.json, 视频生成/图生视频/LTX2.3图生视频Sparkvideo2.0平替短剧漫剧短视频工作流_2029890967838400513.json, 视频生成/图生视频/LTX2.3图生视频Sparkvideo2.0平替短剧漫剧短视频工作流_2031942517490458625.json, 视频生成/图生视频/【Supermate】LTX2.3& qwen3.5提示词图生视频_2033924678502322178.json, 视频生成/图生视频/【Supermate】LTX2.3& qwen3.6提示词图生视频Plus_2049272623229571073.json, 视频生成/图生视频/【Supermate】LTX2.3单图视频(Gemma4））-还在调整_2048744630820278273.json, 视频生成/图生视频/【Supermate】LTX2.3单图视频(无反推）_2042871628979249154.json, 视频生成/文生视频/LTX2.3文生视频-生成音画同步的视频_2029767452879491074.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_clip_6
 
-> 由 `engine/knowledge_consolidation` 从 44 个 workflow 归纳得出（图片生成/图生图/生成短剧主角漫剧人物设计生成文生图多类型_2071420655257612289.json、图片生成/图生图/短剧人物主角设计（多类型） (1)_2062357966392750081.json、图片生成/图生图/短剧人物主角设计（多类型） (2)_2066334506541477889.json、图片生成/图生图/短剧人物主角设计（多类型）_2082998596236042242.json、图片生成/文生图/Z-image生成短剧主角漫剧人物设计_2069938360893919233.json…）
+> 由 `engine/knowledge_consolidation` 从 34 个 workflow 归纳得出（视频生成/图生视频/LTX2.3 图生视频极速版_2039676993360367617.json、视频生成/图生视频/LTX2.3 视频生成  图生视频  最强开源_2076010082961281026.json、视频生成/图生视频/LTX2.3 视频生成  图生视频 最强开源_2076893159560400897.json、视频生成/图生视频/LTX2.3 视频生成  图生视频 最强开源_2078358572626436098.json、视频生成/图生视频/LTX2.3 视频生成 图生视频 最强开源_2076924327534092290.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：44
+- **样本数**：34
 - **可信度**：强结论
-- **平均知识覆盖**：60%
+- **平均知识覆盖**：93%
 
 ## 共有节点
 
-全部 44 个 workflow 都包含：
-- `CLIPLoader`
+全部 34 个 workflow 都包含：
+- `CFGGuider`
 - `CLIPTextEncode`
-- `ConditioningZeroOut`
-- `EmptyLatentImage`
-- `INTConstant`
-- `Int`
-- `KSamplerAdvanced`
+- `CheckpointLoaderSimple`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEDecode`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio`
+- `LTXVScheduler`
+- `LTXVSeparateAVLatent`
 - `LoraLoaderModelOnly`
-- `SaveImage`
-- `UNETLoader`
-- `VAEDecode`
-- `VAELoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
+- `SaveVideo`
 
 **可变部分**（部分 workflow 才有）：
-- `CR Text` —— 43/44 个有
-- `GetNode` —— 43/44 个有
-- `ModelSamplingAuraFlow` —— 43/44 个有
-- `SetNode` —— 43/44 个有
-- `Text Multiline` —— 42/44 个有
-- `AILab_QwenVL` —— 41/44 个有
-- `Text Concatenate` —— 41/44 个有
-- `RH_LLMAPI_Pro_Node` —— 2/44 个有
-- `ImageScaleToTotalPixels` —— 1/44 个有
-- `ImpactSwitch` —— 1/44 个有
-- `Label (rgthree)` —— 1/44 个有
-- `LoadImage` —— 1/44 个有
-- `VAEEncode` —— 1/44 个有
+- `EmptyImage` —— 33/34 个有
+- `GetImageSize` —— 33/34 个有
+- `ImageScaleBy` —— 33/34 个有
+- `LTXVCropGuides` —— 33/34 个有
+- `LTXVImgToVideoInplace` —— 33/34 个有
+- `LTXVLatentUpsampler` —— 33/34 个有
+- `LTXVPreprocess` —— 33/34 个有
+- `LatentUpscaleModelLoader` —— 33/34 个有
+- `LoadImage` —— 33/34 个有
+- `PrimitiveInt` —— 33/34 个有
+- `VAEDecode` —— 33/34 个有
+- `KSampler` —— 32/34 个有
+- `ResizeImagesByLongerEdge` —— 32/34 个有
+- `PreviewAny` —— 31/34 个有
+- `ResizeImageMaskNode` —— 31/34 个有
+- `DualCLIPLoader` —— 28/34 个有
+- `TextGenerateLTX2Prompt` —— 28/34 个有
+- `Int` —— 10/34 个有
+- `Text` —— 10/34 个有
+- `llama_cpp_instruct_adv` —— 6/34 个有
+- `llama_cpp_model_loader` —— 6/34 个有
+- `easy saveText` —— 5/34 个有
+- `llama_cpp_parameters` —— 5/34 个有
+- `easy cleanGpuUsed` —— 3/34 个有
+- `CustomAddLabel` —— 2/34 个有
+- `ImageResizeKJv2` —— 2/34 个有
+- `Label (rgthree)` —— 2/34 个有
+- `PrimitiveFloat` —— 2/34 个有
+- `VAEDecodeTiled` —— 2/34 个有
+- `VHS_VideoCombine` —— 2/34 个有
+- `easy showAnything` —— 2/34 个有
+- `数学运算_孤海` —— 2/34 个有
+- `INTConstant` —— 1/34 个有
+- `JWFloat` —— 1/34 个有
+- `JjkText` —— 1/34 个有
+- `SeargeIntegerMath` —— 1/34 个有
+- `ShowText|pysssss` —— 1/34 个有
+- `SimpleMath+` —— 1/34 个有
+- `llama_cpp_unload_model` —— 1/34 个有
+- `ttN int` —— 1/34 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | randomize | - | 44 | 100% |
-| Prompt 约束强度(CFG) | 3 | 3 - 8 | 44 | 76% |
-| 采样算法 | 2 | 1 - 2 | 44 | 89% |
-| 调度器 | euler | - | 44 | 98% |
-| 重绘幅度 | simple | - | 44 | 98% |
-| 宽度 | 1024 | 1024 - 1024 | 44 | 100% |
-| 高度 | 1536 | 1536 - 1536 | 44 | 100% |
+| 宽度 | 97 | 97 - 97 | 34 | 100% |
+| 高度 | 25 | 24 - 25 | 34 | 99% |
+| 采样步数 | 4 | 4 - 4 | 32 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 32 | 100% |
+| 采样算法 | euler | - | 32 | 100% |
+| 调度器 | simple | - | 32 | 100% |
+| 重绘幅度 | 0.35 | 0.35 - 0.4 | 32 | 98% |
 
 ## 常见问题
 
-参数体检未发现问题。
+| 问题 | 出现次数 | 严重度 | 示例 |
+|---|---|---|---|
+| Steps较低可能导致细节不足 | 32/34 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 最常用 randomize，44 个样本，一致性 100%
-- Prompt 约束强度(CFG) 中位数 3，观测区间 3 - 8，44 个样本
-- 采样算法 中位数 2，观测区间 1 - 2，44 个样本，取值集中（一致性 89%）
-- 调度器 最常用 euler，44 个样本，一致性 98%
-- 重绘幅度 最常用 simple，44 个样本，一致性 98%
-- 宽度 中位数 1024，观测区间 1024 - 1024，44 个样本，取值集中（一致性 100%）
-- 高度 中位数 1536，观测区间 1536 - 1536，44 个样本，取值集中（一致性 100%）
+- 宽度 中位数 97，观测区间 97 - 97，34 个样本，取值集中（一致性 100%）
+- 高度 中位数 25，观测区间 24 - 25，34 个样本，取值集中（一致性 99%）
+- 采样步数 中位数 4，观测区间 4 - 4，32 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，32 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，32 个样本，一致性 100%
+- 调度器 最常用 simple，32 个样本，一致性 100%
+- 重绘幅度 中位数 0.35，观测区间 0.35 - 0.4，32 个样本，取值集中（一致性 98%）
+- 高发问题（32/34 个样本）：Steps较低可能导致细节不足

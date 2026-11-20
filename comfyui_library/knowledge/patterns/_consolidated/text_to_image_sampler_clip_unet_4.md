@@ -2,94 +2,85 @@
 name: text_to_image_sampler_clip_unet_4
 type: Text To Image
 frequency: 36
-level: weak
-coverage: 0.869861
-common_nodes: [CLIPLoader, CLIPTextEncode, CR Prompt List, CR Text, ConditioningZeroOut, EmptyLatentImage, ImpactInt, KSampler, LoadImage, RegexReplace, SaveImage, String Literal, UNETLoader, VAEDecode, VAELoader, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters]
-problems: [Steps较低可能导致细节不足]
+level: strong
+coverage: 0.548222
+common_nodes: [AILab_QwenVL, CFGNorm, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, EmptyLatentImage, Fast Groups Bypasser (rgthree), FluxGuidance, JjkText, JoinStrings, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SaveImage, UNETLoader, VAEDecode, VAELoader, easy showAnything]
+problems: []
 missing: []
-members: [图片生成/反推提示词/图片反推生图｜Qwen本地模型版_2098721934610624513.json, 图片生成/图生图/Gemma4+Zimage-turbo反推文生图_2044345054734589954.json, 图片生成/图生图/Gemma4+Zimage-turbo反推文生图_2100871042855165954.json, 图片生成/图生图/Gemma4+Zimage-turbo反推文生图_2101137925164593154.json, 图片生成/图生图/Gemma4+Zimage-turbo反推文生图_2105192952220966913.json, 图片生成/图生图/Gemma4加Zimage-turbo反推文生图，服装模特产品展示图一键出_2115009251449065474.json, 图片生成/图生图/Krea 2 turbo一键反推生图_2096860809161957377.json, 图片生成/图生图/Krea 2 turbo一键反推生图_2096866546353266690.json, 图片生成/图生图/Krea 2 turbo一键反推生图_2096883382834778113.json, 图片生成/图生图/Krea 2 turbo一键反推生图_2096886273872064514.json, 图片生成/图生图/Krea_2_turbo一键反推生图_2099778012253347842.json, 图片生成/图生图/Krea_2_turbo一键反推生图_2100037977606025217.json, 图片生成/图生图/Various Angles and Poses 人物多角度不同姿势qwen3.5+Z-image_2104737920220483586.json, 图片生成/图生图/qwen3.5+Z-image反推生图_2038868462088495105.json, 图片生成/图生图/人物写真 高度一致性 Krea+2+turbo  Character Portraits_ High_2101844900349308929.json, 图片生成/图生图/人物写真 高度一致性 Krea+2+turbo  Character Portraits_ High_2115252208089522177.json, 图片生成/图生图/图片裂变特写qwen3.5+Z-image批量洗图+反推提示词+图生图_2066850786193264642.json, 图片生成/图生图/洗图 指定模特姿势 动作迁移 去油腻修复皮肤质感+高Gemma4+Zimage-turbo反推文生图_2090233124142800897.json, 图片生成/图生图/电商服装模特展示图生成｜Gemma4+Zimage-turbo反推_2095926642286878721.json, 图片生成/图生图/电商模特反推文生图Gemma4+Zimage-turbo_2096236577545609217.json, 图片生成/图生图/高度一致性人物写真 +Krea+2+turbo++Character+Portraits_+High_2107627484991803394.json, 图片生成/文生图/Gemma4+Zimage-turbo反推文生图｜写实高质量出图_2095248453407432706.json, 图片生成/文生图/Gemma4+Zimage-turbo反推生成保暖内衣_2054902666865717249.json, 图片生成/文生图/Krea 2 Turbo一键反推文生图处理工具_2101015778685440001.json, 图片生成/文生图/Krea 2 turbo一键反推生图_2073390634911748097.json, 图片生成/文生图/Krea 2 turbo一键反推生图｜写实图像生成_2095238362029449218.json, 图片生成/文生图/Krea 2 turbo一键反推生图｜写实艺术性图片生成_2100891841871835137.json, 图片生成/文生图/Krea2 Turbo一键反推生图 超高艺术性图片生成_2099945358976704514.json, 图片生成/文生图/Krea2 turbo一键反推提示词生图 高艺术性图片创作_2098283975210000385.json, 图片生成/文生图/一键反推写实生图｜Krea 2 turbo文生图图生图_2095511411060461570.json, 图片生成/文生图/人物写真_高度一致性_Krea+2+turbo_Character_Portraits_High_2115590691727429633.json, 图片生成/文生图/反推文生图写实生成｜Gemma4+Zimage-turbo图生图_2095587120143495169.json, 平台全量/Gemma4+Zimage-turbo反推文生图_2095887639374290945.json, 平台全量/qwen3.5+Z-image批量洗图 反推提示词 图生图_2054722508221370370.json, 平台全量/图片裂变特写qwen3.5+Z-image批量洗图+反推提示词+图生图_2064584411697471490.json, 视频生成/图生视频/Krea2_Turbo一键反推生图_超高艺术性图片生成_2101078290697117697.json]
+members: [图片生成/反推提示词/Zimage 真实皮肤 文生图+图生图（反推）_2058378880301486082.json, 图片生成/图生图/CCD HAO（参考图生图）_2064552087815544833.json, 图片生成/图生图/MILA素人美女生成高清工作流（图片反推）_2056285998161678337.json, 图片生成/图生图/Z-image 真实感高光增强_2053870064310472706.json, 图片生成/图生图/Z-image 真实皮肤 文生图+图生图（反推）_2057276173826215938.json, 图片生成/图生图/Zimage 无滤真实_v2 + kook真实幻想 - 图生图（反推）工作流_2030257489924591618.json, 图片生成/图生图/Zimage 真实皮肤 文生图+图生图（反推）_2058111952785858562.json, 图片生成/图生图/Zimage 真实皮肤 文生图+图生图（反推）_2058129500814270465.json, 图片生成/图生图/Zimage+真实皮肤+文生图+图生图（反推）_2060700896849391617.json, 图片生成/图生图/Zimage｜真实皮肤质感｜图生图反推_2088280501143564289.json, 图片生成/图生图/极致真实_v2 + kook真实幻想 - 图生图（反推）_2032056978872213505.json, 图片生成/文生图/HAO- CCD加强3张竖屏（反推_文生）_2066047288212025346.json, 图片生成/文生图/HAO-CCD-V2_2066852559930871809.json, 图片生成/文生图/HAO-CCD氛围感_2066058829959360514.json, 图片生成/文生图/Z-image Turbo_原生真实质感v1_（适配脸模，人像_场景通用写实）文生图+图生图工作流_2043618137500815362.json, 图片生成/文生图/Zimage lora_虚拟素人_李恩珠（脸模）文生图+反推工作流_2036338772652072961.json, 图片生成/文生图/Zimage 无滤真实_v2 文生图+图生图（反推）工作流_2027172387564822530.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2058137530037522433.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2065623548969971714.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2068187611491028993.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2068189551646035969.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2069450536801361922.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2070426110814408705.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2073779891207761921.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2075240742649421825.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2077031681701277697.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2078869906430447618.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2080265618636492801.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2080326234017460226.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2080330261774028801.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2080631287123107842.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）_2080681183788224514.json, 图片生成/文生图/Zimage 真实皮肤 文生图+图生图（反推）工作流_2056945900718739457.json, 图片生成/文生图/Zimage增强真实皮肤文生图图生图反推_2064505010330890241.json, 图片生成/文生图/Zimage真实皮肤文生图图生图反推_2063478682601222146.json, 数字人/数字人/Zimage+真实皮肤+文生图+图生图（反推）_2091817479264886785.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_sampler_clip_unet_4
 
-> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（图片生成/反推提示词/图片反推生图｜Qwen本地模型版_2098721934610624513.json、图片生成/图生图/Gemma4+Zimage-turbo反推文生图_2044345054734589954.json、图片生成/图生图/Gemma4+Zimage-turbo反推文生图_2100871042855165954.json、图片生成/图生图/Gemma4+Zimage-turbo反推文生图_2101137925164593154.json、图片生成/图生图/Gemma4+Zimage-turbo反推文生图_2105192952220966913.json…）
+> 由 `engine/knowledge_consolidation` 从 36 个 workflow 归纳得出（图片生成/反推提示词/Zimage 真实皮肤 文生图+图生图（反推）_2058378880301486082.json、图片生成/图生图/CCD HAO（参考图生图）_2064552087815544833.json、图片生成/图生图/MILA素人美女生成高清工作流（图片反推）_2056285998161678337.json、图片生成/图生图/Z-image 真实感高光增强_2053870064310472706.json、图片生成/图生图/Z-image 真实皮肤 文生图+图生图（反推）_2057276173826215938.json…）
 
 - **类型**：Text To Image
 - **样本数**：36
-- **可信度**：弱结论（样本不足）
-- **平均知识覆盖**：87%
+- **可信度**：强结论
+- **平均知识覆盖**：55%
 
 ## 共有节点
 
 全部 36 个 workflow 都包含：
+- `AILab_QwenVL`
+- `CFGNorm`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `CR Prompt List`
-- `CR Text`
 - `ConditioningZeroOut`
 - `EmptyLatentImage`
-- `ImpactInt`
+- `Fast Groups Bypasser (rgthree)`
+- `FluxGuidance`
+- `JjkText`
+- `JoinStrings`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `RegexReplace`
 - `SaveImage`
-- `String Literal`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
-- `llama_cpp_instruct_adv`
-- `llama_cpp_model_loader`
-- `llama_cpp_parameters`
+- `easy showAnything`
 
 **可变部分**（部分 workflow 才有）：
-- `Fast Groups Bypasser (rgthree)` —— 35/36 个有
-- `easy showAnything` —— 35/36 个有
-- `LoraLoaderModelOnly` —— 31/36 个有
-- `Dapao_LlamaCaption` —— 30/36 个有
-- `Dapao_LlamaCaptionOptions` —— 30/36 个有
-- `CR Batch Images From List` —— 18/36 个有
-- `ImageConcatMulti` —— 18/36 个有
-- `ImageFromBatch` —— 18/36 个有
-- `easy cleanGpuUsed` —— 17/36 个有
-- `Image Comparer (rgthree)` —— 14/36 个有
-- `SeedVR2LoadDiTModel` —— 14/36 个有
-- `SeedVR2LoadVAEModel` —— 14/36 个有
-- `SeedVR2VideoUpscaler` —— 14/36 个有
-- `JjkText` —— 11/36 个有
-- `solarL_SaveImagesToZip` —— 11/36 个有
-- `孤海注释` —— 10/36 个有
-- `PixaromaLoraLoader` —— 7/36 个有
-- `ExecutionBlocker` —— 5/36 个有
+- `GetNode` —— 35/36 个有
+- `SetNode` —— 35/36 个有
+- `Anything Everywhere` —— 34/36 个有
+- `LayerColor: AutoAdjust` —— 34/36 个有
+- `Lora Loader` —— 34/36 个有
+- `Float` —— 28/36 个有
+- `TT_img_enc` —— 25/36 个有
+- `孤海注释` —— 25/36 个有
+- `easy saveText` —— 6/36 个有
 - `Int` —— 3/36 个有
-- `EmptyImage` —— 1/36 个有
-- `PreviewImage` —— 1/36 个有
+- `Anything Everywhere3` —— 2/36 个有
+- `GetImageSize` —— 2/36 个有
+- `ImpactSwitch` —— 2/36 个有
+- `LoraLoaderModelOnly` —— 2/36 个有
+- `easy seed` —— 2/36 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 宽度 | 720 | 80 - 1280 | 36 | 33% |
-| 高度 | 720 | 80 - 1280 | 36 | 33% |
-| 采样步数 | 8 | 4 - 15 | 36 | 51% |
-| Prompt 约束强度(CFG) | 1.1 | 1 - 4.5 | 36 | 24% |
-| 采样算法 | er_sde | - | 36 | 61% |
-| 调度器 | beta | - | 36 | 31% |
+| 采样步数 | 15 | 15 - 15 | 36 | 100% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 36 | 100% |
+| 采样算法 | res_2s | - | 36 | 81% |
+| 调度器 | FlowMatchEulerDiscreteScheduler | - | 36 | 81% |
 | 重绘幅度 | 1 | 1 - 1 | 36 | 100% |
+| 宽度 | 1536 | 1080 - 1536 | 36 | 89% |
+| 高度 | 1960 | 960 - 1960 | 36 | 91% |
 
 ## 常见问题
 
-| 问题 | 出现次数 | 严重度 | 示例 |
-|---|---|---|---|
-| Steps较低可能导致细节不足 | 29/36 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+参数体检未发现问题。
 
 ## 建议与风险
 
-- 宽度 中位数 720，观测区间 80 - 1280，36 个样本，取值分散，一致性仅 33%
-- 高度 中位数 720，观测区间 80 - 1280，36 个样本，取值分散，一致性仅 33%
-- 采样步数 中位数 8，观测区间 4 - 15，36 个样本
-- Prompt 约束强度(CFG) 中位数 1.1，观测区间 1 - 4.5，36 个样本，取值分散，一致性仅 24%
-- 采样算法 最常用 er_sde，36 个样本，一致性 61%
-- 调度器 最常用 beta，36 个样本，一致性 31%
+- 采样步数 中位数 15，观测区间 15 - 15，36 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，36 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 res_2s，36 个样本，一致性 81%
+- 调度器 最常用 FlowMatchEulerDiscreteScheduler，36 个样本，一致性 81%
 - 重绘幅度 中位数 1，观测区间 1 - 1，36 个样本，取值集中（一致性 100%）
-- 高发问题（29/36 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 1536，观测区间 1080 - 1536，36 个样本，取值集中（一致性 89%）
+- 高度 中位数 1960，观测区间 960 - 1960，36 个样本，取值集中（一致性 91%）

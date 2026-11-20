@@ -1,112 +1,100 @@
 ---
 name: text_to_image_video_lora_sampler_15
 type: Text To Image
-frequency: 27
+frequency: 29
 level: strong
-coverage: 0.82363
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, ConditioningZeroOut, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LTXVAudioVAEEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoraLoaderModelOnly, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, ModelAttentionBackend, SelfLiftAvatarH3Sampler, SetLatentNoiseMask, SolidMask, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip, 孤海注释]
+coverage: 0.846241
+common_nodes: [BasicGuider, BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, KSamplerSelect, LoadAudio, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, RandomNoise, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/MiniMax H3音乐数字人 音频驱动对口型视频生成工具_2113772784173277185.json, 数字人/数字人/MiniMax H3音乐数字人 无限分段长视频音频驱动处理工具_2113013746007371778.json, 数字人/数字人/MinimaxH3音乐数字人分段长视频版｜角色表演连贯不跳戏｜一致性稳如老狗_2104752849640058882.json, 数字人/数字人/MinimaxH3音乐数字人无限分段｜长视频角色一致性表演｜数字人唱歌不打断_2104748069731520513.json, 数字人/数字人/Selflift数字人开口说话｜一张照片一段音频就开演_2111320781878808578.json, 数字人/数字人/慕斯AI MiniMaxH3数字人口播｜图生视频带货口播直出_2112859987381936129.json, 视频生成/图生视频/AI音乐MV数字人二采方案，Separate AV Latent加Minimax H3 Selfli_2110790463421763585.json, 视频生成/图生视频/AI音乐MV数字人新二采Separate AV Latent加Minimax H3 Selflift_2105763503423442946.json, 视频生成/图生视频/MiniMax H3 SelfLift数字人1080p图生视频处理工具_2101012772418052098.json, 视频生成/图生视频/MiniMax H3单图数字人SelfLift无限分段长视频工作流，数字人图生视频方案_2107539277377794049.json, 视频生成/图生视频/MiniMax H3音乐数字人无限分段长视频处理生成工具_2102121536076472321.json, 视频生成/图生视频/MiniMax H3高清数字人自动提示词图生视频处理工具_2101031617153290241.json, 视频生成/图生视频/Minimax H3 Selflift数字人三采｜角色一致画质再进阶_2103707327995138049.json, 视频生成/图生视频/Minimax H3 Selflift数字人｜口播带货数字人轻松做_2111136546035421186.json, 视频生成/图生视频/Minimax H3单图数字人selflift无限分段｜一张照片变身长视频主播_2107348289380241409.json, 视频生成/图生视频/Minimax-H3音乐数字人工作流｜无限分段长视频｜音频驱动口播_2101882039300612097.json, 视频生成/图生视频/Minimax-H3音乐数字人无限分段长视频｜音频驱动图生视频演唱_2101917400844300290.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频 数字人口播方案_2109432298180534273.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频 数字人口播方案_2109743708005556226.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频修复报错 数字人口播方案_2109394122141425666.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段长视频修复报错 数字人口播方案_2109416523596132354.json, 视频生成/图生视频/MinimaxH3音乐数字人无限分段，长视频图生视频方案_2111270412171698177.json, 视频生成/图生视频/MinimaxH3音乐数字人长视频｜无限分段连播不断档_2111133304434028545.json, 视频生成/图生视频/MinimaxH3音乐数字人｜无限分段长视频直出｜唱歌视频一键到底_2102654919030427649.json, 视频生成/图生视频/minimaxh3 Selflift数字人1080p｜超自然对口型图生视频_2100775766433816577.json, 视频生成/文生视频/AI音乐MV数字人Singualarith与MiniMax H3视频生成工具_2101005333526302721.json, 视频生成/文生视频/AI音乐MV数字人新二采｜Minimax H3 Selflift联动出片_2100782399897554945.json]
+members: [视频生成/图生视频/MiniMaxH3开源版音频驱动数字人-说话唱歌对口型MV生成加速版_2087383420715487233.json, 视频生成/图生视频/MiniMaxH3开源音频驱动数字人｜说话唱歌对口型MV加速版_2094877180009476098.json, 视频生成/图生视频/MiniMaxH3开源音频驱动数字人｜说话唱歌对口型MV生成_2094880039287476225.json, 视频生成/图生视频/Minimax H3多参音视频生成开源版（9图3视频3音频）_2086034301048680450.json, 视频生成/图生视频/Minimax H3开源版数字人｜说话唱歌口播一条龙免费跑_2111083053400547329.json, 视频生成/图生视频/Minimax H3开源版数字人｜说话唱歌视频都能做_2106615667175804930.json, 视频生成/图生视频/Minimax H3音频驱动数字人对口型人物类特效图生视频_2088195742426030081.json, 视频生成/图生视频/MinimaxH3多参音视频生成开源版（9图3视频3音频）ENGENG_2087124578177998850.json, 视频生成/图生视频/对口型音频驱动MiniMax H3数字人唱歌工作流，一张图一段音频生成视频_2106864466716614658.json, 视频生成/图生视频/数字人单人极速版｜Minimax H3角色一致图生视频_2092026882165403650.json, 视频生成/图生视频/数字人唱歌口播｜MiniMax H3图生视频一键直出_2090220837587742722.json, 视频生成/图生视频/数字人说话唱歌MV｜MiniMaxH3开源版音频驱动对口型加速生成_2090848011483172865.json, 视频生成/图生视频/海螺H3全能参考生视频加速开源版 9图3视频3音频多模态输入_2105370711207538690.json, 视频生成/图生视频/海螺H3全能参考生视频开源加速版｜9图3视频3音频全支持_2105262580620161026.json, 视频生成/图生视频/让效果图动起来_2102598028669579265.json, 视频生成/图生视频/音频驱动对口型MV｜MiniMaxH3开源数字人加速版_2095079699335700481.json, 视频生成/图生视频/音频驱动对口型｜Minimax H3数字人人物特效图生视频_2089446222766624769.json, 视频生成/图生视频/音频驱动数字人MV｜MiniMaxH3开源版 说话唱歌对口型加速生成_2105524576473141249.json, 视频生成/图生视频/音频驱动数字人对口型｜MiniMaxH3开源版说话唱歌MV生成加速_2090840855216222210.json, 视频生成/图生视频/音频驱动数字人｜MiniMaxH3说话唱歌对口型MV加速版_2090544996637302786.json, 视频生成/文生视频/H3多参音视频生成开源版（9图3视频3音频）Minimax_2085422971736383489.json, 视频生成/文生视频/H3多参音视频生成开源版（9图3视频3音频）Minimax_2085791756154654721.json, 视频生成/文生视频/MiniMax H3开源版数字人说话唱歌音频驱动图生视频处理工具_2102519299419230209.json, 视频生成/文生视频/MiniMax H3开源版数字人｜音频驱动说话唱歌全能出镜_2108025468082540546.json, 视频生成/文生视频/Minimax H3开源数字人说话唱歌｜文生视频生成_2094523338252181506.json, 视频生成/文生视频/Minimax H3开源版数字人说话唱歌工作流，文生视频数字人图生视频方案_2108269811766751233.json, 视频生成/文生视频/Minimax H3开源版数字人｜说话唱歌口型同步｜文生视频图生视频都行_2102288689492746241.json, 视频生成/文生视频/MinimaxH3数字人说话唱歌开源版ENGENG_2087131139222892545.json, 视频生成/文生视频/MinimaxH3音频驱动数字人单人版｜文生视频数字人图生视频_2090448002296147970.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_15
 
-> 由 `engine/knowledge_consolidation` 从 27 个 workflow 归纳得出（图片生成/图生图/MiniMax H3音乐数字人 音频驱动对口型视频生成工具_2113772784173277185.json、数字人/数字人/MiniMax H3音乐数字人 无限分段长视频音频驱动处理工具_2113013746007371778.json、数字人/数字人/MinimaxH3音乐数字人分段长视频版｜角色表演连贯不跳戏｜一致性稳如老狗_2104752849640058882.json、数字人/数字人/MinimaxH3音乐数字人无限分段｜长视频角色一致性表演｜数字人唱歌不打断_2104748069731520513.json、数字人/数字人/Selflift数字人开口说话｜一张照片一段音频就开演_2111320781878808578.json…）
+> 由 `engine/knowledge_consolidation` 从 29 个 workflow 归纳得出（视频生成/图生视频/MiniMaxH3开源版音频驱动数字人-说话唱歌对口型MV生成加速版_2087383420715487233.json、视频生成/图生视频/MiniMaxH3开源音频驱动数字人｜说话唱歌对口型MV加速版_2094877180009476098.json、视频生成/图生视频/MiniMaxH3开源音频驱动数字人｜说话唱歌对口型MV生成_2094880039287476225.json、视频生成/图生视频/Minimax H3多参音视频生成开源版（9图3视频3音频）_2086034301048680450.json、视频生成/图生视频/Minimax H3开源版数字人｜说话唱歌口播一条龙免费跑_2111083053400547329.json…）
 
 - **类型**：Text To Image
-- **样本数**：27
+- **样本数**：29
 - **可信度**：强结论
-- **平均知识覆盖**：82%
+- **平均知识覆盖**：85%
 
 ## 共有节点
 
-全部 27 个 workflow 都包含：
+全部 29 个 workflow 都包含：
+- `BasicGuider`
 - `BasicScheduler`
 - `CLIPLoader`
 - `CLIPTextEncode`
 - `ComfyMathExpression`
-- `ConditioningZeroOut`
 - `EmptyLatentImage`
 - `JjkText`
 - `KSampler`
 - `KSamplerSelect`
-- `LTXVAudioVAEEncode`
-- `LTXVConcatAVLatent`
-- `LTXVSeparateAVLatent`
+- `LoadAudio`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `MiniMaxChunkFeedForward`
-- `MiniMaxLowVRAMAttention`
-- `ModelAttentionBackend`
-- `SelfLiftAvatarH3Sampler`
-- `SetLatentNoiseMask`
-- `SolidMask`
+- `MiniMaxH3ReferenceToVideo`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `SamplerCustomAdvanced`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
 - `VHS_VideoCombine`
 - `solarL_SaveImagesToZip`
-- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `MiniMaxH3ReferenceToVideo` —— 26/27 个有
-- `SoundFlow_GetLength` —— 26/27 个有
-- `ModelPreviewOverrideKJ` —— 21/27 个有
-- `PrimitiveFloat` —— 18/27 个有
-- `PrimitiveStringMultiline` —— 18/27 个有
-- `AudioSeparation` —— 16/27 个有
-- `DF_Int_to_Float` —— 16/27 个有
-- `ImageResizeKJv2` —— 16/27 个有
-- `PrimitiveInt` —— 16/27 个有
-- `VHS_LoadAudioUpload` —— 16/27 个有
-- `GetNode` —— 15/27 个有
-- `SetNode` —— 15/27 个有
-- `PreviewAudio` —— 14/27 个有
-- `PreviewImage` —— 14/27 个有
-- `SaveImage` —— 14/27 个有
-- `Compare` —— 13/27 个有
-- `Int` —— 13/27 个有
-- `InversionDemoLazySwitch` —— 13/27 个有
-- `LoadAudio` —— 13/27 个有
-- `PreviewAny` —— 13/27 个有
-- `ComfyNumberConvert` —— 11/27 个有
-- `ResolutionSelector` —— 11/27 个有
-- `TrimAudioDuration` —— 11/27 个有
-- `QwenH3PromptLocal` —— 4/27 个有
-- `FlashVSRNode` —— 2/27 个有
-- `RHMiniMaxH3PromptOptimizerMedia` —— 2/27 个有
-- `Text Multiline` —— 2/27 个有
-- `Textbox` —— 2/27 个有
-- `Fast Groups Bypasser (rgthree)` —— 1/27 个有
-- `MiniMaxH3ImageToVideo` —— 1/27 个有
+- `PathchSageAttentionKJ` —— 28/29 个有
+- `PrimitiveStringMultiline` —— 28/29 个有
+- `孤海注释` —— 25/29 个有
+- `AudioCrop` —— 22/29 个有
+- `PreviewAudio` —— 22/29 个有
+- `SoundFlow_GetLength` —— 22/29 个有
+- `VRGDG_MiniMaxH3AudioDrive` —— 22/29 个有
+- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 14/29 个有
+- `ResolutionSelector` —— 13/29 个有
+- `LayerUtility: ImageScaleByAspectRatio V2` —— 9/29 个有
+- `Any To String (mtb)` —— 8/29 个有
+- `GetNode` —— 8/29 个有
+- `ImageResizeKJv2` —— 8/29 个有
+- `Int` —— 8/29 个有
+- `PreviewImage` —— 8/29 个有
+- `PrimitiveInt` —— 8/29 个有
+- `SetNode` —— 8/29 个有
+- `PainterVRAM` —— 7/29 个有
+- `VAEDecodeAudio` —— 7/29 个有
+- `VHS_LoadVideo` —— 7/29 个有
+- `SaveImage` —— 4/29 个有
+- `AudioConcat` —— 2/29 个有
+- `EmptyAudio` —— 2/29 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 27 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 27 | 100% |
-| 采样算法 | er_sde | - | 27 | 100% |
-| 调度器 | beta | - | 27 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 27 | 100% |
-| 宽度 | 80 | 80 - 80 | 27 | 100% |
-| 高度 | 80 | 80 - 80 | 27 | 100% |
+| 宽度 | 80 | 80 - 80 | 29 | 100% |
+| 高度 | 80 | 80 - 80 | 29 | 100% |
+| 采样步数 | 4 | 4 - 4 | 29 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 29 | 100% |
+| 采样算法 | er_sde | - | 29 | 100% |
+| 调度器 | beta | - | 29 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 29 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 28/27 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 29/29 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，27 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，27 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，27 个样本，一致性 100%
-- 调度器 最常用 beta，27 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，27 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，27 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，27 个样本，取值集中（一致性 100%）
-- 高发问题（28/27 个样本）：Steps较低可能导致细节不足
+- 宽度 中位数 80，观测区间 80 - 80，29 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，29 个样本，取值集中（一致性 100%）
+- 采样步数 中位数 4，观测区间 4 - 4，29 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，29 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，29 个样本，一致性 100%
+- 调度器 最常用 beta，29 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，29 个样本，取值集中（一致性 100%）
+- 高发问题（29/29 个样本）：Steps较低可能导致细节不足

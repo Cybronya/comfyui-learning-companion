@@ -1,73 +1,90 @@
 ---
 name: unknown_workflow_lora_sampler_unet_11
 type: Unknown Workflow
-frequency: 37
+frequency: 31
 level: strong
-coverage: 0.862378
-common_nodes: [CLIPLoader, ConditioningZeroOut, KSampler, LoadImage, LoraLoaderModelOnly, PreviewImage, SaveImage, UNETLoader, VAEDecode, VAELoader]
+coverage: 0.839935
+common_nodes: [CLIPLoader, ConditioningZeroOut, Flux2KleinEditTextEncode_EditUtils, GetImageSize, INTConstant, KSampler, LCSColorAnchor, LCSLoadData, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LoadImage, LoraLoaderModelOnly, SimpleMath+, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, UNETLoader, VAEDecode, VAELoader, easy imageBatchToImageList, easy imageColorMatch, easy imageListToImageBatch]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [图片生成/图生图/Qwen Edit 换装_1970442865207898113.json, 图片生成/图生图/Qwen edit 2509 去文留品_1988996832837636098.json, 图片生成/图生图/Qwen-Edit-2509一键人物Cosplay_1985270643656638466.json, 图片生成/图生图/Qwen-Edit-2509一键人物Cosplay_2074520361219219457.json, 图片生成/图生图/Qwen-Edit-2509一键人物Cosplay_2074524503245418498.json, 图片生成/图生图/Qwen-edit-plus_2509-不偏移-效果贼好v4_1971872696873185281.json, 图片生成/图生图/一键快速变装_2064244909992927233.json, 图片生成/图生图/一键换衣  换衣  一键换装 电商服装展示  服装展示  服饰展示_2076177800918290433.json, 图片生成/图生图/一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2043171766897483778.json, 图片生成/图生图/一键换衣 FireRed-Image-Edit 小红书 换衣服_2041752816024293377.json, 图片生成/图生图/一键换衣 换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2058456213083480066.json, 图片生成/图生图/一键换衣 换装 模特展示 服装展示 FireRed-Image-Edit_2039670432802021378.json, 图片生成/图生图/一键换衣 换装 模特展示 服装展示 FireRed-Image-Edit_2042616641678221314.json, 图片生成/图生图/一键换衣 换装 模特展示 服装展示 FireRed-Image-Edit_2043172746301018114.json, 图片生成/图生图/一键换衣 换装 模特展示 服装展示 FireRed-Image-Edit_2043245681439150081.json, 图片生成/图生图/一键换衣 换装 模特展示 服装展示 FireRed-Image-Edit_2046783543984001026.json, 图片生成/图生图/一键换衣 换装 模特展示 服装展示 FireRed-Image-Edit_2057935684836610049.json, 图片生成/图生图/一键换装   换装   一键换衣  换衣  电商服装展示_2059624028989640706.json, 图片生成/图生图/一键换装   换装   一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2059275495174393858.json, 图片生成/图生图/一键换装  一键换衣   换装 换衣  电商服装展示_2060087579428614145.json, 图片生成/图生图/一键换装  换装  一键换衣   换衣  电商服装展示_2059606813187862529.json, 图片生成/图生图/一键换装 +换衣 + 电商服装展示 FireRed-Image-Edit_2059791649173233665.json, 图片生成/图生图/一键换装 一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2075493235102928897.json, 图片生成/图生图/一键换装 一键换衣  电商服装展示 FireRed-Image-Edit 小红书_2076588607246262273.json, 图片生成/图生图/一键换装 一键换衣 FireRed-Image-Edit 小红书_2039934719076339713.json, 图片生成/图生图/一键换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2075457433375428609.json, 图片生成/图生图/一键换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2076533225496862722.json, 图片生成/图生图/一键换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2076924751913771009.json, 图片生成/图生图/一键换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2080950328421347329.json, 图片生成/图生图/一键换装 换衣  电商服装展示 FireRed-Image-Edit 小红书_2082911442872913922.json, 图片生成/图生图/一键换装_+换衣_+_电商服装展示_FireRed-Image-Edit_2059910298127126529.json, 图片生成/图生图/一键换装_+换衣_+_电商服装展示_FireRed-Image-Edit_2060170775730151425.json, 图片生成/图生图/一键换装_电商服装展示_2060292641534861314.json, 图片生成/图生图/妆容+换衣换装-电商服装展示 +FireRed-Image-Edit_2064164610667798530.json, 图片生成/图生图/小红书  FireRed-Image-Edit 服装展示 一键换衣_2039323666583916545.json, 图片生成/图生图/小红书+换头模型_2072206280365793281.json, 平台全量/Qwen edit 2509 图像编辑-单图_1988853999740784642.json]
+members: [图片生成/图生图/4K零变形高清修复Klein+TTP+ 去除AI感_2081195988076810242.json, 图片生成/图生图/4K高清修复  Klein+TTP 去除AI塑料感_2075023047899303937.json, 图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2093321576824528898.json, 图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2097162390164041730.json, 图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2097502199990538242.json, 图片生成/图生图/HD Restoration图片高清放大变清晰分块放大SeedVR2.5+++TTP_2098214253705650177.json, 图片生成/图生图/High-Definition Restorati4K零变形高清修复Klein+TTP++去除AI感_2094242010805919745.json, 图片生成/图生图/Klein+TTP 零变形高清修复 4K_2061263969981124609.json, 图片生成/图生图/Klein+TTP 零变形高清修复 4K_2061390459804667905.json, 图片生成/图生图/Klein+TTP 零变形高清修复 4K_2064903373018714114.json, 图片生成/图生图/Klein+TTP 高清修复 4K_2060227055467450370.json, 图片生成/图生图/Klein+TTP+零变形高清修复+4K (1)_2067496500036464641.json, 图片生成/图生图/Klein+TTP+零变形高清修复+4K_2061256324096286722.json, 图片生成/图生图/Klein+TTP_零变形高清修复_4K_2060902117925277698.json, 图片生成/图生图/Klein+TTP_零变形高清修复_4K_2061257595431768066.json, 图片生成/图生图/TPP人像精修_2079206858736365570.json, 图片生成/图生图/TPP人像精修_2081983712404787202.json, 图片生成/图生图/TPP高清放大-人像精修_2082288270473523201.json, 图片生成/图生图/TPP高清放大-人像精修_2082295189032497154.json, 图片生成/图生图/klein+TTP放大_2066751659522478081.json, 图片生成/图生图/修到4K脸却变了？这套零变形方案，毛孔都清晰人还不走样_2060418252785934337.json, 图片生成/图生图/图片超清放大（ZLTD）_2069606120322330625.json, 图片生成/图生图/图片高清！_去AI感去油！Klein+TTP！_2100194646679969793.json, 图片生成/图生图/图片高清！_去AI感去油！Klein+TTP！_2100855956463767553.json, 图片生成/图生图/图片高清！_去AI感去油！Klein+TTP！_2101126416896188418.json, 图片生成/图生图/放大去AI感_增加皮肤纹理_Klein+TTP+零变形高清修复+4K_2072593896399532034.json, 图片生成/图生图/放大去AI感_增加皮肤纹理_Klein+TTP+零变形高清修复+4K_2072950870114918402.json, 图片生成/图生图/放大去AI感_增加皮肤纹理_Klein+TTP+零变形高清修复4K_2073222622690758657.json, 图片生成/图生图/无变形高清修复 4K_2071616768271011842.json, 图片生成/图生图/超好用🔥零变形高清放大修复-4K-最新_2066457945453453314.json, 数字人/数字人/图片高清！ 去AI感去油！Klein+TTP！_2100028593916170242.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_lora_sampler_unet_11
 
-> 由 `engine/knowledge_consolidation` 从 37 个 workflow 归纳得出（图片生成/图生图/Qwen Edit 换装_1970442865207898113.json、图片生成/图生图/Qwen edit 2509 去文留品_1988996832837636098.json、图片生成/图生图/Qwen-Edit-2509一键人物Cosplay_1985270643656638466.json、图片生成/图生图/Qwen-Edit-2509一键人物Cosplay_2074520361219219457.json、图片生成/图生图/Qwen-Edit-2509一键人物Cosplay_2074524503245418498.json…）
+> 由 `engine/knowledge_consolidation` 从 31 个 workflow 归纳得出（图片生成/图生图/4K零变形高清修复Klein+TTP+ 去除AI感_2081195988076810242.json、图片生成/图生图/4K高清修复  Klein+TTP 去除AI塑料感_2075023047899303937.json、图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2093321576824528898.json、图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2097162390164041730.json、图片生成/图生图/Flux-2-Klein-9B去AI感人像精修+高清放大+-去油腻修复皮肤质感+去除脏污+噪点+油腻_2097502199990538242.json…）
 
 - **类型**：Unknown Workflow
-- **样本数**：37
+- **样本数**：31
 - **可信度**：强结论
-- **平均知识覆盖**：86%
+- **平均知识覆盖**：84%
 
 ## 共有节点
 
-全部 37 个 workflow 都包含：
+全部 31 个 workflow 都包含：
 - `CLIPLoader`
 - `ConditioningZeroOut`
+- `Flux2KleinEditTextEncode_EditUtils`
+- `GetImageSize`
+- `INTConstant`
 - `KSampler`
+- `LCSColorAnchor`
+- `LCSLoadData`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleRestore V2`
 - `LoadImage`
 - `LoraLoaderModelOnly`
-- `PreviewImage`
-- `SaveImage`
+- `SimpleMath+`
+- `TTP_Image_Assy`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
 - `UNETLoader`
 - `VAEDecode`
 - `VAELoader`
+- `easy imageBatchToImageList`
+- `easy imageColorMatch`
+- `easy imageListToImageBatch`
 
 **可变部分**（部分 workflow 才有）：
-- `LayerUtility: ImageReel` —— 35/37 个有
-- `LayerUtility: ImageReelComposit` —— 35/37 个有
-- `Image Comparer (rgthree)` —— 34/37 个有
-- `TextEncodeQwenImageEditPlusAdvance_lrzjason` —— 34/37 个有
-- `TextEncodeQwenImageEditPlus_lrzjason` —— 3/37 个有
-- `ConstrainImage|pysssss` —— 2/37 个有
-- `LayerUtility: PurgeVRAM V2` —— 2/37 个有
-- `CLIPTextEncode` —— 1/37 个有
-- `ImageBlend` —— 1/37 个有
-- `ImageConcanate` —— 1/37 个有
-- `PrimitiveStringMultiline` —— 1/37 个有
+- `GetNode` —— 30/31 个有
+- `Image Comparer (rgthree)` —— 30/31 个有
+- `MemoryCleaner` —— 30/31 个有
+- `PreviewImage` —— 30/31 个有
+- `SaveImage` —— 30/31 个有
+- `SetNode` —— 30/31 个有
+- `MathExpression|pysssss` —— 25/31 个有
+- `LCSSharpnessCalibrate` —— 11/31 个有
+- `LCSSharpnessIntervene` —— 11/31 个有
+- `GoohaiAnyExists` —— 2/31 个有
+- `EmptyImage` —— 1/31 个有
+- `JjkText` —— 1/31 个有
+- `KOOK_ImageCompression` —— 1/31 个有
+- `KOOK_SaveJPGImage` —— 1/31 个有
+- `RHHiddenNodes` —— 1/31 个有
+- `easy showAnything` —— 1/31 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 8 | 37 | 66% |
-| Prompt 约束强度(CFG) | 1 | 1 - 1 | 37 | 100% |
-| 采样算法 | euler | - | 37 | 97% |
-| 调度器 | simple | - | 37 | 86% |
-| 重绘幅度 | 1 | 1 - 1 | 37 | 100% |
+| 采样步数 | 4 | 4 - 8 | 31 | 70% |
+| Prompt 约束强度(CFG) | 1 | 1 - 1 | 31 | 100% |
+| 采样算法 | euler | - | 31 | 90% |
+| 调度器 | simple | - | 31 | 84% |
+| 重绘幅度 | 1 | 1 - 1 | 31 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 37/37 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 31/31 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 8，37 个样本
-- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，37 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 euler，37 个样本，一致性 97%
-- 调度器 最常用 simple，37 个样本，一致性 86%
-- 重绘幅度 中位数 1，观测区间 1 - 1，37 个样本，取值集中（一致性 100%）
-- 高发问题（37/37 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 8，31 个样本
+- Prompt 约束强度(CFG) 中位数 1，观测区间 1 - 1，31 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 euler，31 个样本，一致性 90%
+- 调度器 最常用 simple，31 个样本，一致性 84%
+- 重绘幅度 中位数 1，观测区间 1 - 1，31 个样本，取值集中（一致性 100%）
+- 高发问题（31/31 个样本）：Steps较低可能导致细节不足

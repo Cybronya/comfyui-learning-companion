@@ -1,100 +1,112 @@
 ---
 name: text_to_image_video_lora_sampler_62
 type: Text To Image
-frequency: 14
+frequency: 12
 level: strong
-coverage: 0.903786
-common_nodes: [BasicScheduler, CLIPLoader, CLIPTextEncode, ComfyMathExpression, EmptyLatentImage, JjkText, KSampler, LoadImage, LoraLoaderModelOnly, MiniMaxH3ReferenceToVideo, PrimitiveFloat, PrimitiveStringMultiline, RandomNoise, ResolutionSelector, SamplerCustomAdvanced, UNETLoader, VAEDecode, VAEDecodeAudio, VAELoader, VHS_VideoCombine, solarL_SaveImagesToZip]
+coverage: 0.8795
+common_nodes: [Audio Duration (mtb), AudioCrop, AudioSeparation, CLIPLoader, CLIPTextEncode, CLIPVisionLoader, DownloadAndLoadWav2VecModel, EmptyLatentImage, GetImageRangeFromBatch, GetNode, JjkText, KSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadAudio, LoadImage, LoadWanVideoT5TextEncoder, LoraLoaderModelOnly, MathExpression|pysssss, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, PlaySound|pysssss, SetNode, UNETLoader, VAEDecode, VAELoader, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, solarL_SaveImagesToZip, 孤海注释]
 problems: [Steps较低可能导致细节不足]
 missing: []
-members: [视频生成/文生视频/H3多图参考加速工作流 单采不油腻不破音_2099563905008889858.json, 视频生成/文生视频/H3官方流程单采极速文戏｜文生视频图生视频快速生成_2106986232776585218.json, 视频生成/文生视频/H3官流mpov版不用加速LoRA工作流，文生视频视频生视频图生视频方案_2107987502211620866.json, 视频生成/文生视频/H3官流单采极速文戏工作流，文生视频图生视频高效创作方案_2107179960334114818.json, 视频生成/文生视频/H3官流单采极速文戏工作流，文生视频图生视频高效创作方案_2107462612324806657.json, 视频生成/文生视频/H3官流终极版 视频生成官方最佳方案稳定出片_2105387723480719362.json, 视频生成/文生视频/MiniMax H3多图参考加速工作流 单采不油腻不破音_2099185147278090242.json, 视频生成/文生视频/Minimax_H3多图参考加速版｜文图视频都能喂，出视频又快又稳_2099527126897745922.json, 视频生成/文生视频/多图参考一键提速｜Minimax_H3 加速工作流三模支持_2096218441563860994.json, 视频生成/文生视频/多图参考加速工作流｜Minimax H3文生图生视频_2092060324655620097.json, 视频生成/文生视频/多图参考加速流｜Minimax_H3文生图生视频生成_2093424367945478146.json, 视频生成/文生视频/多图参考加速生成｜Minimax H3高质量视频工作流_2095931904716533761.json, 视频生成/文生视频/多图参考加速｜Minimax_H3三模视频生成工作流_2093754246821928961.json, 视频生成/文生视频/氛围感短视频生成｜H3文生视频光影情绪渲染_2096675059892047874.json]
+members: [数字人/数字人/终版视频口播带货工作流｜数字人快速生成制作_2096735921801617409.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播人物特效_2108413955092865026.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播人物特效图生视频_2090439293465612289.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播嘴型不违和_2111344640648634370.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播自然逼真不出戏_2106217891178831874.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播视频一步到位_2111104461941858305.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播视频生成_2097816767069507586.json, 视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播视频运镜_2097979213222604801.json, 视频生成/图生视频/InfiniTetalk超自然数字人｜对口型情感口播生成_2094908442413723649.json, 视频生成/图生视频/InfiniteTalk超自然数字人对口型情感口播工作流，图生视频数字人工具_2106150910039781377.json, 视频生成/图生视频/InfiniteTalk超自然数字人对口型情感口播工作流，图生视频数字人工具_2106480253395881985.json, 视频生成/图生视频/InfiniteTalk超自然数字人对口型情感口播工作流，图生视频数字人方案_2106502944366616577.json]
 source: knowledge_consolidation
 ---
 
 # text_to_image_video_lora_sampler_62
 
-> 由 `engine/knowledge_consolidation` 从 14 个 workflow 归纳得出（视频生成/文生视频/H3多图参考加速工作流 单采不油腻不破音_2099563905008889858.json、视频生成/文生视频/H3官方流程单采极速文戏｜文生视频图生视频快速生成_2106986232776585218.json、视频生成/文生视频/H3官流mpov版不用加速LoRA工作流，文生视频视频生视频图生视频方案_2107987502211620866.json、视频生成/文生视频/H3官流单采极速文戏工作流，文生视频图生视频高效创作方案_2107179960334114818.json、视频生成/文生视频/H3官流单采极速文戏工作流，文生视频图生视频高效创作方案_2107462612324806657.json…）
+> 由 `engine/knowledge_consolidation` 从 12 个 workflow 归纳得出（数字人/数字人/终版视频口播带货工作流｜数字人快速生成制作_2096735921801617409.json、视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播人物特效_2108413955092865026.json、视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播人物特效图生视频_2090439293465612289.json、视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播嘴型不违和_2111344640648634370.json、视频生成/图生视频/InfiniTetalk超自然数字人对口型｜情感口播自然逼真不出戏_2106217891178831874.json…）
 
 - **类型**：Text To Image
-- **样本数**：14
+- **样本数**：12
 - **可信度**：强结论
-- **平均知识覆盖**：90%
+- **平均知识覆盖**：88%
 
 ## 共有节点
 
-全部 14 个 workflow 都包含：
-- `BasicScheduler`
+全部 12 个 workflow 都包含：
+- `Audio Duration (mtb)`
+- `AudioCrop`
+- `AudioSeparation`
 - `CLIPLoader`
 - `CLIPTextEncode`
-- `ComfyMathExpression`
+- `CLIPVisionLoader`
+- `DownloadAndLoadWav2VecModel`
 - `EmptyLatentImage`
+- `GetImageRangeFromBatch`
+- `GetNode`
 - `JjkText`
 - `KSampler`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadAudio`
 - `LoadImage`
+- `LoadWanVideoT5TextEncoder`
 - `LoraLoaderModelOnly`
-- `MiniMaxH3ReferenceToVideo`
-- `PrimitiveFloat`
-- `PrimitiveStringMultiline`
-- `RandomNoise`
-- `ResolutionSelector`
-- `SamplerCustomAdvanced`
+- `MathExpression|pysssss`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `PlaySound|pysssss`
+- `SetNode`
 - `UNETLoader`
 - `VAEDecode`
-- `VAEDecodeAudio`
 - `VAELoader`
-- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoDecode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
 - `solarL_SaveImagesToZip`
+- `孤海注释`
 
 **可变部分**（部分 workflow 才有）：
-- `LoadAudio` —— 13/14 个有
-- `孤海注释` —— 13/14 个有
-- `ModelAttentionBackend` —— 10/14 个有
-- `KSamplerSelect` —— 9/14 个有
-- `CFGGuider` —— 8/14 个有
-- `ConditioningZeroOut` —— 8/14 个有
-- `MiniMaxH3MemoryEfficientSageAttentionPatch` —— 8/14 个有
-- `MiniMaxH3TurboSampler` —— 8/14 个有
-- `BasicGuider` —— 6/14 个有
-- `MiniMaxH3SigmaShift` —— 6/14 个有
-- `ModelPreviewOverrideKJ` —— 6/14 个有
-- `SaveImage` —— 6/14 个有
-- `BlockSparseAttention` —— 5/14 个有
-- `MiniMaxH3TurboLoRA` —— 5/14 个有
-- `VHS_LoadVideo` —— 5/14 个有
-- `ExtendIntermediateSigmas` —— 3/14 个有
-- `H3AudioRefineSampler` —— 3/14 个有
-- `H3FrozenVideoCache` —— 3/14 个有
-- `ManualSigmas` —— 3/14 个有
-- `PreviewAny` —— 3/14 个有
-- `SolAttnPatch` —— 3/14 个有
-- `EmptyImage` —— 1/14 个有
-- `PreviewImage` —— 1/14 个有
+- `VHS_VideoCombine` —— 11/12 个有
+- `SaveImage` —— 4/12 个有
+- `CFGNorm` —— 1/12 个有
+- `CR Prompt Text` —— 1/12 个有
+- `CR Text` —— 1/12 个有
+- `CreateVideo` —— 1/12 个有
+- `EmptySD3LatentImage` —— 1/12 个有
+- `Int` —— 1/12 个有
+- `LTXVConcatAVLatent` —— 1/12 个有
+- `LTXVSeparateAVLatent` —— 1/12 个有
+- `MiniMaxH3LatentUpscaleBy32T8` —— 1/12 个有
+- `ModelSamplingAuraFlow` —— 1/12 个有
+- `Qwen3ASRLoader` —— 1/12 个有
+- `Qwen3ASRTranscribe` —— 1/12 个有
+- `RunningHub_VoxCPM_Generate` —— 1/12 个有
+- `RunningHub_VoxCPM_LoadModel` —— 1/12 个有
+- `SaveAudio` —— 1/12 个有
+- `SaveVideo` —— 1/12 个有
+- `TextEncodeQwenImageEdit` —— 1/12 个有
+- `TextEncodeQwenImageEditPlus` —— 1/12 个有
 
 ## 典型参数
 
 | 参数 | 中位数/常用 | 区间 | 样本 | 一致性 |
 |---|---|---|---|---|
-| 采样步数 | 4 | 4 - 4 | 14 | 100% |
-| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 14 | 100% |
-| 采样算法 | er_sde | - | 14 | 100% |
-| 调度器 | beta | - | 14 | 100% |
-| 重绘幅度 | 1 | 1 - 1 | 14 | 100% |
-| 宽度 | 80 | 80 - 80 | 14 | 100% |
-| 高度 | 80 | 80 - 80 | 14 | 100% |
+| 采样步数 | 4 | 4 - 4 | 12 | 100% |
+| Prompt 约束强度(CFG) | 4.5 | 4.5 - 4.5 | 12 | 100% |
+| 采样算法 | er_sde | - | 12 | 100% |
+| 调度器 | beta | - | 12 | 100% |
+| 重绘幅度 | 1 | 1 - 1 | 12 | 100% |
+| 宽度 | 80 | 80 - 80 | 12 | 100% |
+| 高度 | 80 | 80 - 80 | 12 | 100% |
 
 ## 常见问题
 
 | 问题 | 出现次数 | 严重度 | 示例 |
 |---|---|---|---|
-| Steps较低可能导致细节不足 | 14/14 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
+| Steps较低可能导致细节不足 | 13/12 | medium | Steps较低，可能导致细节不足 → 建议增加到20-30 |
 
 ## 建议与风险
 
-- 采样步数 中位数 4，观测区间 4 - 4，14 个样本，取值集中（一致性 100%）
-- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，14 个样本，取值集中（一致性 100%）
-- 采样算法 最常用 er_sde，14 个样本，一致性 100%
-- 调度器 最常用 beta，14 个样本，一致性 100%
-- 重绘幅度 中位数 1，观测区间 1 - 1，14 个样本，取值集中（一致性 100%）
-- 宽度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 高度 中位数 80，观测区间 80 - 80，14 个样本，取值集中（一致性 100%）
-- 高发问题（14/14 个样本）：Steps较低可能导致细节不足
+- 采样步数 中位数 4，观测区间 4 - 4，12 个样本，取值集中（一致性 100%）
+- Prompt 约束强度(CFG) 中位数 4.5，观测区间 4.5 - 4.5，12 个样本，取值集中（一致性 100%）
+- 采样算法 最常用 er_sde，12 个样本，一致性 100%
+- 调度器 最常用 beta，12 个样本，一致性 100%
+- 重绘幅度 中位数 1，观测区间 1 - 1，12 个样本，取值集中（一致性 100%）
+- 宽度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 高度 中位数 80，观测区间 80 - 80，12 个样本，取值集中（一致性 100%）
+- 高发问题（13/12 个样本）：Steps较低可能导致细节不足

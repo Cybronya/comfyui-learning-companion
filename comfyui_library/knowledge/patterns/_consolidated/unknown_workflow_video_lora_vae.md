@@ -3,17 +3,17 @@ name: unknown_workflow_video_lora_vae
 type: Unknown Workflow
 frequency: 35
 level: moderate
-coverage: 0.6604
-common_nodes: [CLIPVisionLoader, GetNode, ImageConcatMulti, ImageResizeKJv2, LoadImage, SetNode, VHS_LoadVideo, VHS_VideoCombine, WanVideoClipVisionEncode, WanVideoContextOptions, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSetLoRAs, WanVideoTextEncodeCached, WanVideoVAELoader]
+coverage: 0.658371
+common_nodes: [CLIPVisionLoader, DownloadAndLoadNLFModel, ImageResizeKJv2, NLFPredict, RenderNLFPoses, VHS_LoadVideo, VHS_VideoCombine, WanVideoAddSCAILPoseEmbeds, WanVideoAddSCAILReferenceEmbeds, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoDecode, WanVideoEmptyEmbeds, WanVideoLoraSelect, WanVideoModelLoader, WanVideoVAELoader]
 problems: []
 missing: []
-members: [平台全量/SteadyDance动作迁移_2017510588259246082.json, 平台全量/Wan2.1_I2V_FantasyPortrait_表情迁移_2011699230167011330.json, 平台全量/wan2.2 动作迁移 动作模仿_2067485874400620546.json, 平台全量/动作迁移_SteadyDancer_2020014954606239745.json, 平台全量/动作迁移_SteadyDancer_2020827042966671361.json, 平台全量/动作迁移_动作模仿_SteadyDancer_2022207158321942530.json, 平台全量/动作迁移_角色替换_人物替换_SteadyDancer_2021482331579621377.json, 平台全量/动作迁移舞蹈迁移 SteadyDancer_2004449699404939265.json, 平台全量/动漫角色SteadyDancer动作迁移_2017134089286983682.json, 平台全量/智绘SteadyDancer_动作迁移_2011009731539771394.json, 平台全量/最新优化ViTPose+OneToAll+SteadyDancer版动作精准迁移工作流_2050807185831145473.json, 平台全量/超好用🔥一键复刻跳舞视频-动作迁移-不限时长版-表情复刻-最新_2061091818770620417.json, 视频生成/图生视频/26年3月SteadyDancer_骨骼迁移_不限时长版_2032112165968154626.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2077823494326415362.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2078124326972383233.json, 视频生成/图生视频/SteadyDancer  动作迁移 动作模仿  wan wan22 wan2.2_2087040327587815426.json, 视频生成/图生视频/SteadyDancer 动作迁移 动作模仿_2037367887756795905.json, 视频生成/图生视频/SteadyDancer_动作迁移_2006750635965812737.json, 视频生成/图生视频/SteadyDancer_动作迁移_2010972602436685825.json, 视频生成/图生视频/SteadyDancer_动作迁移_2037770591301804034.json, 视频生成/图生视频/SteadyDancer_动作迁移_2046393095314477058.json, 视频生成/图生视频/SteadyDancer_动作迁移_2055193205628514306.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2057001718025641986.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2064279641464066050.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2065426639923802113.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2104169238754844673.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2104188287391977474.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2107018826129960962.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2116118093993959426.json, 视频生成/图生视频/SteadyDancer_动作迁移_不限时长版_表情复刻_单人跳舞_2116142082422300673.json, 视频生成/图生视频/SteadyDancer骨骼迁移~不限时长版，绝！_2049307460728524802.json, 视频生成/图生视频/SteadyDancer骨骼迁移~不限时长版，绝！_2049678404324208642.json, 视频生成/图生视频/SteadyDance最强人物一致性迁移工作流_1999779350897717249.json, 视频生成/图生视频/WAN SteadyDancer  舞蹈生成 动作姿态迁移 （不限时长版）_2004915777457319937.json, 视频生成/图生视频/最新优化SteadyDancer版动作精准迁移工作流_2039288865713823746.json]
+members: [视频生成/图生视频/SCAIL动作迁移-支持多人(二创必选)_2000467442830897154.json, 视频生成/图生视频/SCAIL动作迁移，单人，双人，多人，_2001114629822705666.json, 视频生成/图生视频/SCAIL动作迁移：多人同框互动迁移_2002634251973607426.json, 视频生成/图生视频/SCAIL动作迁移：支持复杂运动+比例自适应调整（单人版）_2001969039012446209.json, 视频生成/图生视频/SCAIL单人动作迁移！_2002968528913350658.json, 视频生成/图生视频/SCAIL单人工作流(丝滑转身)_2000600692651945986.json, 视频生成/图生视频/SCAIL多人动作迁移_2000399886270988289.json, 视频生成/图生视频/SCAIL多人动作迁移，丝滑转场！_2005557624877838338.json, 视频生成/图生视频/SCAIL多人支持达成！！_2000993380874190849.json, 视频生成/图生视频/SCAIL多人支持达成！！多人跳舞动作迁移_2067304320042889217.json, 视频生成/图生视频/SCAIL多人支持达成！！多人跳舞随便生成！！_2029588365741400065.json, 视频生成/图生视频/SCAIL多人迁移工作流_2001174211215454210.json, 视频生成/图生视频/SCAIL大模型：一键图生AI跳舞视频，支持多人同时跳舞！_2033149801218445314.json, 视频生成/图生视频/SCAIL大模型：一键生成AI跳舞视频，支持多人同时跳舞_2034849971790417922.json, 视频生成/图生视频/SCAIL大模型：一键生成AI跳舞视频，支持多人同时跳舞，让你开跳胜利之舞！_2012336078342070273.json, 视频生成/图生视频/SCAIL大模型：一键生成AI跳舞视频，支持多人同时跳舞，让你开跳胜利之舞！_2013828137846579202.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2011155503241498626.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2011274698348306434.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2012844488661671938.json, 视频生成/图生视频/SCAIL大模型：一键生成动物小猫小狗人物跳舞视频多人多动物同时跳舞多人舞蹈模仿scail动作舞蹈模_2014244087540490242.json, 视频生成/图生视频/SCAIL超强动作迁移，单人_双人自由切换_2001265311133429761.json, 视频生成/图生视频/SCAIL超强动作迁移，支持双人-课程同步工作流_2000519506155929601.json, 视频生成/图生视频/SCAIL，丝滑转身，支持双人对打，支持单人_2015057760655773697.json, 视频生成/图生视频/SCAIL，动作迁移_2000401352083767297.json, 视频生成/图生视频/SCAIL，支持丝滑转身，支持双人对打_2000311901097783298.json, 视频生成/图生视频/SCAIL：重新定义 AI 姿势迁移_2008532893487861762.json, 视频生成/图生视频/Scail 单人跳舞_2006276580754071554.json, 视频生成/图生视频/Scail 多人v2_2004474067589754881.json, 视频生成/图生视频/Scail_KJ_动作迁移_2008813540995502081.json, 视频生成/图生视频/Wan SCAIL 支持单人_双人角色替换_2000383741266624513.json, 视频生成/图生视频/Wan Scail 姿势复刻_2000390740419244034.json, 视频生成/图生视频/WanSCAIL动作迁移，双人对打_2001862842288599042.json, 视频生成/图生视频/单人动作迁移_2002405950176804865.json, 视频生成/图生视频/双人对打_2058542921317699585.json, 视频生成/图生视频/影视剧替换人物第二步：视频驱动图片（可多人）_2013510010877251586.json]
 source: knowledge_consolidation
 ---
 
 # unknown_workflow_video_lora_vae
 
-> 由 `engine/knowledge_consolidation` 从 35 个 workflow 归纳得出（平台全量/SteadyDance动作迁移_2017510588259246082.json、平台全量/Wan2.1_I2V_FantasyPortrait_表情迁移_2011699230167011330.json、平台全量/wan2.2 动作迁移 动作模仿_2067485874400620546.json、平台全量/动作迁移_SteadyDancer_2020014954606239745.json、平台全量/动作迁移_SteadyDancer_2020827042966671361.json…）
+> 由 `engine/knowledge_consolidation` 从 35 个 workflow 归纳得出（视频生成/图生视频/SCAIL动作迁移-支持多人(二创必选)_2000467442830897154.json、视频生成/图生视频/SCAIL动作迁移，单人，双人，多人，_2001114629822705666.json、视频生成/图生视频/SCAIL动作迁移：多人同框互动迁移_2002634251973607426.json、视频生成/图生视频/SCAIL动作迁移：支持复杂运动+比例自适应调整（单人版）_2001969039012446209.json、视频生成/图生视频/SCAIL单人动作迁移！_2002968528913350658.json…）
 
 - **类型**：Unknown Workflow
 - **样本数**：35
@@ -24,53 +24,67 @@ source: knowledge_consolidation
 
 全部 35 个 workflow 都包含：
 - `CLIPVisionLoader`
-- `GetNode`
-- `ImageConcatMulti`
+- `DownloadAndLoadNLFModel`
 - `ImageResizeKJv2`
-- `LoadImage`
-- `SetNode`
+- `NLFPredict`
+- `RenderNLFPoses`
 - `VHS_LoadVideo`
 - `VHS_VideoCombine`
+- `WanVideoAddSCAILPoseEmbeds`
+- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoBlockSwap`
 - `WanVideoClipVisionEncode`
-- `WanVideoContextOptions`
 - `WanVideoDecode`
-- `WanVideoImageToVideoEncode`
+- `WanVideoEmptyEmbeds`
 - `WanVideoLoraSelect`
 - `WanVideoModelLoader`
-- `WanVideoSetLoRAs`
-- `WanVideoTextEncodeCached`
 - `WanVideoVAELoader`
 
 **可变部分**（部分 workflow 才有）：
-- `GetImageRangeFromBatch` —— 34/35 个有
-- `GetImageSizeAndCount` —— 34/35 个有
+- `LoadImage` —— 34/35 个有
 - `OnnxDetectionModelLoader` —— 34/35 个有
-- `PoseDetectionOneToAllAnimation` —— 34/35 个有
-- `WanVideoAddSteadyDancerEmbeds` —— 34/35 个有
-- `WanVideoEncode` —— 34/35 个有
-- `PreviewImage` —— 33/35 个有
-- `WanVideoSamplerFromSettings` —— 32/35 个有
-- `WanVideoSamplerSettings` —— 32/35 个有
-- `WanVideoScheduler` —— 32/35 个有
-- `Int` —— 23/35 个有
-- `TextInput_` —— 21/35 个有
-- `WanVideoBlockSwap` —— 14/35 个有
-- `WanVideoSetBlockSwap` —— 14/35 个有
-- `CR Prompt Text` —— 7/35 个有
-- `WanVideoTorchCompileSettings` —— 5/35 个有
-- `LayerUtility: ImageScaleByAspectRatio V2` —— 3/35 个有
-- `VHS_VideoInfoLoaded` —— 3/35 个有
-- `WanVideoSampler` —— 3/35 个有
-- `easy cleanGpuUsed` —— 3/35 个有
+- `PoseDetectionVitPoseToDWPose` —— 34/35 个有
+- `WanVideoSetBlockSwap` —— 34/35 个有
+- `WanVideoSetLoRAs` —— 34/35 个有
+- `GetImageSizeAndCount` —— 33/35 个有
+- `WanVideoContextOptions` —— 33/35 个有
+- `WanVideoSamplerExtraArgs` —— 33/35 个有
+- `WanVideoSamplerv2` —— 33/35 个有
+- `WanVideoSchedulerv2` —— 33/35 个有
+- `WanVideoTorchCompileSettings` —— 32/35 个有
+- `GetNode` —— 31/35 个有
+- `INTConstant` —— 31/35 个有
+- `SetNode` —— 31/35 个有
+- `ImageConcatMulti` —— 30/35 个有
+- `WanVideoEncode` —— 29/35 个有
+- `WanVideoUni3C_ControlnetLoader` —— 29/35 个有
+- `WanVideoUni3C_embeds` —— 29/35 个有
+- `FloatConstant` —— 28/35 个有
+- `LoadWanVideoT5TextEncoder` —— 24/35 个有
+- `SimpleMath+` —— 24/35 个有
+- `WanVideoTextEncode` —— 24/35 个有
+- `ConvertOpenPoseKeypointsToDWPose` —— 19/35 个有
+- `DWPreprocessor` —— 19/35 个有
+- `SimpleCalculatorKJ` —— 11/35 个有
+- `WanVideoTextEncodeCached` —— 11/35 个有
+- `Int` —— 5/35 个有
+- `PreviewImage` —— 5/35 个有
+- `Label (rgthree)` —— 3/35 个有
+- `ConvertAny2Float` —— 2/35 个有
+- `Fast Groups Muter (rgthree)` —— 2/35 个有
+- `Text` —— 2/35 个有
+- `WanVideoSampler` —— 2/35 个有
+- `WanVideoScheduler` —— 2/35 个有
 - `easy showAnything` —— 2/35 个有
-- `CR SDXL Aspect Ratio` —— 1/35 个有
-- `FantasyPortraitFaceDetector` —— 1/35 个有
-- `FantasyPortraitModelLoader` —— 1/35 个有
-- `INTConstant` —— 1/35 个有
-- `Label (rgthree)` —— 1/35 个有
-- `LayerUtility: PurgeVRAM V2` —— 1/35 个有
-- `WanVideoAddFantasyPortrait` —— 1/35 个有
-- `ttN text` —— 1/35 个有
+- `Fast Groups Bypasser (rgthree)` —— 1/35 个有
+- `GetImage` —— 1/35 个有
+- `ImageLoader` —— 1/35 个有
+- `ImpactSwitch` —— 1/35 个有
+- `JWInteger` —— 1/35 个有
+- `PrimitiveStringMultiline` —— 1/35 个有
+- `SDPoseOODLoader` —— 1/35 个有
+- `TextInput_` —— 1/35 个有
+- `easy cleanGpuUsed` —— 1/35 个有
 
 ## 典型参数
 
